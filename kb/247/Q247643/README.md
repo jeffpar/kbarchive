@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247643: HTTP/1.1 Error 501 - Not Implemented"
-permalink: kb/247/Q247643/
+permalink: /kb/247/Q247643/
 ---
 
 ## Q247643: HTTP/1.1 Error 501 - Not Implemented

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163203: Dial-Up Networking Autodial Manager Fails For Subsequent Logons"
-permalink: kb/163/Q163203/
+permalink: /kb/163/Q163203/
 ---
 
 ## Q163203: Dial-Up Networking Autodial Manager Fails For Subsequent Logons

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157659: SMS: Remote Control Doesn't Connect to 16-Bit SMS Clients"
-permalink: kb/157/Q157659/
+permalink: /kb/157/Q157659/
 ---
 
 ## Q157659: SMS: Remote Control Doesn't Connect to 16-Bit SMS Clients

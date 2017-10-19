@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235932: FIX: Memory Exception Receiving Messages from AS400"
-permalink: kb/235/Q235932/
+permalink: /kb/235/Q235932/
 ---
 
 ## Q235932: FIX: Memory Exception Receiving Messages from AS400

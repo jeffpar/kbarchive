@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q52206: MS-DOS Hangs when &quot;Relative&quot; PATH Is Used"
-permalink: kb/052/Q52206/
+permalink: /kb/052/Q52206/
 ---
 
 ## Q52206: MS-DOS Hangs when &quot;Relative&quot; PATH Is Used

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135345: Compaq NetFlex-L Fails To Start/Windows NT Hangs During Shutdown"
-permalink: kb/135/Q135345/
+permalink: /kb/135/Q135345/
 ---
 
 ## Q135345: Compaq NetFlex-L Fails To Start/Windows NT Hangs During Shutdown

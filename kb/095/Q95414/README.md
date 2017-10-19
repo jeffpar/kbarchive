@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95414: PRB: INVOKE Pushes SS to Convert NEAR PTR to FAR PTR"
-permalink: kb/095/Q95414/
+permalink: /kb/095/Q95414/
 ---
 
 ## Q95414: PRB: INVOKE Pushes SS to Convert NEAR PTR to FAR PTR

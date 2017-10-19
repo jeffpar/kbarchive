@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161961: Display Problems, Errors, or Computer Locks When Starting Game"
-permalink: kb/161/Q161961/
+permalink: /kb/161/Q161961/
 ---
 
 ## Q161961: Display Problems, Errors, or Computer Locks When Starting Game

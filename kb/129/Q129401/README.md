@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129401: Using Low-Level I/O to Remove Leading CR/LF Created by LIST"
-permalink: kb/129/Q129401/
+permalink: /kb/129/Q129401/
 ---
 
 ## Q129401: Using Low-Level I/O to Remove Leading CR/LF Created by LIST

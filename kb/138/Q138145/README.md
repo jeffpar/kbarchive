@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138145: BUG: Different TAB &amp; SHIFT+TAB Behavior in Visual FoxPro Popup"
-permalink: kb/138/Q138145/
+permalink: /kb/138/Q138145/
 ---
 
 ## Q138145: BUG: Different TAB &amp; SHIFT+TAB Behavior in Visual FoxPro Popup

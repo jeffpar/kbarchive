@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260538: XADM: Service Pack Unsuccessful with &quot;LODCTR DSACTRS.INI&quot; Error"
-permalink: kb/260/Q260538/
+permalink: /kb/260/Q260538/
 ---
 
 ## Q260538: XADM: Service Pack Unsuccessful with &quot;LODCTR DSACTRS.INI&quot; Error

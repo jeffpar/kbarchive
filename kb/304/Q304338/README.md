@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304338: XADM: OL OST Sync Fails If Large Number of Items in Exchange PF"
-permalink: kb/304/Q304338/
+permalink: /kb/304/Q304338/
 ---
 
 ## Q304338: XADM: OL OST Sync Fails If Large Number of Items in Exchange PF

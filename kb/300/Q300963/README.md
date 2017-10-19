@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300963: Games: Description of Error Reporting Tool"
-permalink: kb/300/Q300963/
+permalink: /kb/300/Q300963/
 ---
 
 ## Q300963: Games: Description of Error Reporting Tool

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128519: PC Forms: Err Msg: Bad Command Line (on Delivery)"
-permalink: kb/128/Q128519/
+permalink: /kb/128/Q128519/
 ---
 
 ## Q128519: PC Forms: Err Msg: Bad Command Line (on Delivery)

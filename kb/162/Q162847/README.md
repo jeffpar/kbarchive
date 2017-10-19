@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162847: Troubleshooting PPTP Connectivity Issues in Windows NT 4.0"
-permalink: kb/162/Q162847/
+permalink: /kb/162/Q162847/
 ---
 
 ## Q162847: Troubleshooting PPTP Connectivity Issues in Windows NT 4.0

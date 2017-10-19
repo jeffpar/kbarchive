@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101302: How to Prevent &quot;Source Is out of Date&quot; Error Message"
-permalink: kb/101/Q101302/
+permalink: /kb/101/Q101302/
 ---
 
 ## Q101302: How to Prevent &quot;Source Is out of Date&quot; Error Message

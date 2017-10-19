@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161053: FIX: CALCULATE SUM() on Currency Field Gives Illegal Operation"
-permalink: kb/161/Q161053/
+permalink: /kb/161/Q161053/
 ---
 
 ## Q161053: FIX: CALCULATE SUM() on Currency Field Gives Illegal Operation

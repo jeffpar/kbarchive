@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35857: PRB: Some Windows GDI Functions Fail on Banding Printers"
-permalink: kb/035/Q35857/
+permalink: /kb/035/Q35857/
 ---
 
 ## Q35857: PRB: Some Windows GDI Functions Fail on Banding Printers

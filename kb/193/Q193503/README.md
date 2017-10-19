@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193503: PRB: TABLEUPDATE() Returns .T. When View's SendUpdates is False"
-permalink: kb/193/Q193503/
+permalink: /kb/193/Q193503/
 ---
 
 ## Q193503: PRB: TABLEUPDATE() Returns .T. When View's SendUpdates is False

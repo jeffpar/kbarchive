@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161877: Event 0 Source 0: ExIfStart Registry Key for Server Not Found 2l"
-permalink: kb/161/Q161877/
+permalink: /kb/161/Q161877/
 ---
 
 ## Q161877: Event 0 Source 0: ExIfStart Registry Key for Server Not Found 2l

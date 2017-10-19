@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119567: Cannot Distribute Access 2.0 ODBC Driver with ADT Apps"
-permalink: kb/119/Q119567/
+permalink: /kb/119/Q119567/
 ---
 
 ## Q119567: Cannot Distribute Access 2.0 ODBC Driver with ADT Apps

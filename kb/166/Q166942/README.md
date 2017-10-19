@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166942: WD97: Bullets and Numbers Styles Convert Incorrectly to 6.x/7.x"
-permalink: kb/166/Q166942/
+permalink: /kb/166/Q166942/
 ---
 
 ## Q166942: WD97: Bullets and Numbers Styles Convert Incorrectly to 6.x/7.x

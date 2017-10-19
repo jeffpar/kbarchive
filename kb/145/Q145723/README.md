@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145723: HOWTO: Modify SWDEPEND.INI for Your OLE Custom Control"
-permalink: kb/145/Q145723/
+permalink: /kb/145/Q145723/
 ---
 
 ## Q145723: HOWTO: Modify SWDEPEND.INI for Your OLE Custom Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287510: Combat Flight Simulator 2: Game Controller Forces Do Not Work"
-permalink: kb/287/Q287510/
+permalink: /kb/287/Q287510/
 ---
 
 ## Q287510: Combat Flight Simulator 2: Game Controller Forces Do Not Work

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191888: Y2K: Dispatch Incorrectly Displays Year"
-permalink: kb/191/Q191888/
+permalink: /kb/191/Q191888/
 ---
 
 ## Q191888: Y2K: Dispatch Incorrectly Displays Year

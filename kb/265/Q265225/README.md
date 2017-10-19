@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265225: INF: HIS2000 AD Client Is Slow to Find Restarted Server"
-permalink: kb/265/Q265225/
+permalink: /kb/265/Q265225/
 ---
 
 ## Q265225: INF: HIS2000 AD Client Is Slow to Find Restarted Server

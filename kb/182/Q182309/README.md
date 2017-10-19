@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182309: How to Use the Microsoft Mail for PC Networks Serializer"
-permalink: kb/182/Q182309/
+permalink: /kb/182/Q182309/
 ---
 
 ## Q182309: How to Use the Microsoft Mail for PC Networks Serializer

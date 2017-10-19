@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159090: Delphi 2.00 and 2.01 Users Encounter Error 998"
-permalink: kb/159/Q159090/
+permalink: /kb/159/Q159090/
 ---
 
 ## Q159090: Delphi 2.00 and 2.01 Users Encounter Error 998

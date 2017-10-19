@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321020: &quot;May Not Remove Local Logon Right&quot; Err Msg Editing User Rights"
-permalink: kb/321/Q321020/
+permalink: /kb/321/Q321020/
 ---
 
 ## Q321020: &quot;May Not Remove Local Logon Right&quot; Err Msg Editing User Rights

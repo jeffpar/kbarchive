@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131433: Macintosh Encarta 1995: Manual Installation Instructions"
-permalink: kb/131/Q131433/
+permalink: /kb/131/Q131433/
 ---
 
 ## Q131433: Macintosh Encarta 1995: Manual Installation Instructions

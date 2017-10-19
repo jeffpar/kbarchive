@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175966: BUG: SQL_PRESERVE_CURSORS Fails on Reuse of a Connection Handle"
-permalink: kb/175/Q175966/
+permalink: /kb/175/Q175966/
 ---
 
 ## Q175966: BUG: SQL_PRESERVE_CURSORS Fails on Reuse of a Connection Handle

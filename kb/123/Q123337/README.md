@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123337: HOWTO: How SNA Server Communicates with Other SNA Server Compute"
-permalink: kb/123/Q123337/
+permalink: /kb/123/Q123337/
 ---
 
 ## Q123337: HOWTO: How SNA Server Communicates with Other SNA Server Compute

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191804: Cannot Resize MSN Program Viewer at 640 x 480 Screen Resolution"
-permalink: kb/191/Q191804/
+permalink: /kb/191/Q191804/
 ---
 
 ## Q191804: Cannot Resize MSN Program Viewer at 640 x 480 Screen Resolution

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237866: XADM: Event ID 5004 Generating Offline Address Book"
-permalink: kb/237/Q237866/
+permalink: /kb/237/Q237866/
 ---
 
 ## Q237866: XADM: Event ID 5004 Generating Offline Address Book

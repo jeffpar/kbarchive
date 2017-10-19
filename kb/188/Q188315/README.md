@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188315: Stop Error Message in Sfmsrv.sys"
-permalink: kb/188/Q188315/
+permalink: /kb/188/Q188315/
 ---
 
 ## Q188315: Stop Error Message in Sfmsrv.sys

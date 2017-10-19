@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137927: Int21 Random Write Fails Under Windows NT"
-permalink: kb/137/Q137927/
+permalink: /kb/137/Q137927/
 ---
 
 ## Q137927: Int21 Random Write Fails Under Windows NT

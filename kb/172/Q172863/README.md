@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172863: SMSINST: Using 'Execute Path' in Install.log File May Fail"
-permalink: kb/172/Q172863/
+permalink: /kb/172/Q172863/
 ---
 
 ## Q172863: SMSINST: Using 'Execute Path' in Install.log File May Fail

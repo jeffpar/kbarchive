@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134893: 3D OpenGL Screen Saver Restores Windows NT 3.51 Help"
-permalink: kb/134/Q134893/
+permalink: /kb/134/Q134893/
 ---
 
 ## Q134893: 3D OpenGL Screen Saver Restores Windows NT 3.51 Help

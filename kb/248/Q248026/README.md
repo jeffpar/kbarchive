@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248026: HTTP Error 410 - Permanently Not Available"
-permalink: kb/248/Q248026/
+permalink: /kb/248/Q248026/
 ---
 
 ## Q248026: HTTP Error 410 - Permanently Not Available

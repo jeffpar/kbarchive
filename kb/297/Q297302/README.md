@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297302: STOP 0x00000050 After Installing PCAnywhere 8.0"
-permalink: kb/297/Q297302/
+permalink: /kb/297/Q297302/
 ---
 
 ## Q297302: STOP 0x00000050 After Installing PCAnywhere 8.0

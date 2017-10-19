@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70749: Debug: &quot;U 0 FFFF&quot; Produces Incorrect Results"
-permalink: kb/070/Q70749/
+permalink: /kb/070/Q70749/
 ---
 
 ## Q70749: Debug: &quot;U 0 FFFF&quot; Produces Incorrect Results

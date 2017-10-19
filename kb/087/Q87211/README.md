@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87211: PROFS: The Difference Between Direct and Indirect Gateways"
-permalink: kb/087/Q87211/
+permalink: /kb/087/Q87211/
 ---
 
 ## Q87211: PROFS: The Difference Between Direct and Indirect Gateways

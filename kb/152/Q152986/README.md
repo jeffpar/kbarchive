@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152986: CSNW Does Not Report Directory Restrictions"
-permalink: kb/152/Q152986/
+permalink: /kb/152/Q152986/
 ---
 
 ## Q152986: CSNW Does Not Report Directory Restrictions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167149: WD97: Invalid Page Fault on NT 4.0 After Opening More Than 2000"
-permalink: kb/167/Q167149/
+permalink: /kb/167/Q167149/
 ---
 
 ## Q167149: WD97: Invalid Page Fault on NT 4.0 After Opening More Than 2000

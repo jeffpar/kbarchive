@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161313: Msbatch.inf Parameters: Setting Up the Paging File"
-permalink: kb/161/Q161313/
+permalink: /kb/161/Q161313/
 ---
 
 ## Q161313: Msbatch.inf Parameters: Setting Up the Paging File

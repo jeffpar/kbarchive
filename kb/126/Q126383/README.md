@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126383: RAS Callback Via ISDN Uses Only One Channel"
-permalink: kb/126/Q126383/
+permalink: /kb/126/Q126383/
 ---
 
 ## Q126383: RAS Callback Via ISDN Uses Only One Channel

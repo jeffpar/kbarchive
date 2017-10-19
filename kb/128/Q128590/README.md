@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128590: How to Size, Minimize, or Define a READ Form Window"
-permalink: kb/128/Q128590/
+permalink: /kb/128/Q128590/
 ---
 
 ## Q128590: How to Size, Minimize, or Define a READ Form Window

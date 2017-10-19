@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300509: IIS5: Hardware Load Balance Does Not Detect a Stopped Web Site"
-permalink: kb/300/Q300509/
+permalink: /kb/300/Q300509/
 ---
 
 ## Q300509: IIS5: Hardware Load Balance Does Not Detect a Stopped Web Site

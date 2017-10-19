@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155295: Games: Machine Hangs While Changing Resolution"
-permalink: kb/155/Q155295/
+permalink: /kb/155/Q155295/
 ---
 
 ## Q155295: Games: Machine Hangs While Changing Resolution

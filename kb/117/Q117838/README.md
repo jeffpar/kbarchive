@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117838: FIX: SETUP.EXE Does Not Check for Available Disk Space"
-permalink: kb/117/Q117838/
+permalink: /kb/117/Q117838/
 ---
 
 ## Q117838: FIX: SETUP.EXE Does Not Check for Available Disk Space

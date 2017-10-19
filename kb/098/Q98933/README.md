@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98933: Description of TetraVex"
-permalink: kb/098/Q98933/
+permalink: /kb/098/Q98933/
 ---
 
 ## Q98933: Description of TetraVex

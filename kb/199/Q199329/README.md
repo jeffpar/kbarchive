@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199329: SMS: &quot;Machine Merge Failed&quot;  when Attempting to Merge History"
-permalink: kb/199/Q199329/
+permalink: /kb/199/Q199329/
 ---
 
 ## Q199329: SMS: &quot;Machine Merge Failed&quot;  when Attempting to Merge History

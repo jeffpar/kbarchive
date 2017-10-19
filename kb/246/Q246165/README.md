@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246165: BUG: CDatabase::ExecuteSQL() Function Does Not Throw Exception w"
-permalink: kb/246/Q246165/
+permalink: /kb/246/Q246165/
 ---
 
 ## Q246165: BUG: CDatabase::ExecuteSQL() Function Does Not Throw Exception w

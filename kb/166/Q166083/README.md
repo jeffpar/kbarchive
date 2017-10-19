@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166083: INF: How to Enable Connection Pooling in an OLE DB Application"
-permalink: kb/166/Q166083/
+permalink: /kb/166/Q166083/
 ---
 
 ## Q166083: INF: How to Enable Connection Pooling in an OLE DB Application

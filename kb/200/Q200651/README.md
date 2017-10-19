@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200651: XIMS: Exchange Server and POP3: Top 10 Issues and Solutions"
-permalink: kb/200/Q200651/
+permalink: /kb/200/Q200651/
 ---
 
 ## Q200651: XIMS: Exchange Server and POP3: Top 10 Issues and Solutions

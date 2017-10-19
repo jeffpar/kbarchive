@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309414: SNACFG Fails to Create Host Security Domain If HS Groups Exist"
-permalink: kb/309/Q309414/
+permalink: /kb/309/Q309414/
 ---
 
 ## Q309414: SNACFG Fails to Create Host Security Domain If HS Groups Exist

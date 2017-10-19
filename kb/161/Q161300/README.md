@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161300: HOWTO: Determine the Type of Drive Using Win32"
-permalink: kb/161/Q161300/
+permalink: /kb/161/Q161300/
 ---
 
 ## Q161300: HOWTO: Determine the Type of Drive Using Win32

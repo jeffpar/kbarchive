@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122989: SMS Err Msg: PowerPoint Could Not Locate or Start the Quick...."
-permalink: kb/122/Q122989/
+permalink: /kb/122/Q122989/
 ---
 
 ## Q122989: SMS Err Msg: PowerPoint Could Not Locate or Start the Quick....

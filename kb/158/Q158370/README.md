@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158370: Err Msg: Another Program Is Using the Selected Telephony..."
-permalink: kb/158/Q158370/
+permalink: /kb/158/Q158370/
 ---
 
 ## Q158370: Err Msg: Another Program Is Using the Selected Telephony...

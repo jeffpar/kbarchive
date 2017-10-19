@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139659: MSB Ocean: ErrMsg: CD Audio MCI Driver Not Installed"
-permalink: kb/139/Q139659/
+permalink: /kb/139/Q139659/
 ---
 
 ## Q139659: MSB Ocean: ErrMsg: CD Audio MCI Driver Not Installed

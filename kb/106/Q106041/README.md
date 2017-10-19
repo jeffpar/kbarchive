@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106041: WFWG Chat Err Msg: No Connection to &lt;Computername&gt;"
-permalink: kb/106/Q106041/
+permalink: /kb/106/Q106041/
 ---
 
 ## Q106041: WFWG Chat Err Msg: No Connection to &lt;Computername&gt;

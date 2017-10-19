@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148732: XADM: Setting TCP/IP Port Numbers for Internet Firewalls"
-permalink: kb/148/Q148732/
+permalink: /kb/148/Q148732/
 ---
 
 ## Q148732: XADM: Setting TCP/IP Port Numbers for Internet Firewalls

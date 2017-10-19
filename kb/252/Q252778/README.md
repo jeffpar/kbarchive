@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252778: SNA Win9x Host Account Manager Unable to Locate MDB Domain"
-permalink: kb/252/Q252778/
+permalink: /kb/252/Q252778/
 ---
 
 ## Q252778: SNA Win9x Host Account Manager Unable to Locate MDB Domain

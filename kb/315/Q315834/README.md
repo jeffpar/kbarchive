@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315834: SMS: Remote Control Events Not Listed in Security Event Log"
-permalink: kb/315/Q315834/
+permalink: /kb/315/Q315834/
 ---
 
 ## Q315834: SMS: Remote Control Events Not Listed in Security Event Log

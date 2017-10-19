@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249861: XCON: Connector for Novell GroupWise Can't Process NDR"
-permalink: kb/249/Q249861/
+permalink: /kb/249/Q249861/
 ---
 
 ## Q249861: XCON: Connector for Novell GroupWise Can't Process NDR

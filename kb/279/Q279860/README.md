@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279860: XFOR: How to Stop IMS from Relaying Junk E-mail"
-permalink: kb/279/Q279860/
+permalink: /kb/279/Q279860/
 ---
 
 ## Q279860: XFOR: How to Stop IMS from Relaying Junk E-mail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130081: KeyPress Event in Check Box Allows Y or N"
-permalink: kb/130/Q130081/
+permalink: /kb/130/Q130081/
 ---
 
 ## Q130081: KeyPress Event in Check Box Allows Y or N

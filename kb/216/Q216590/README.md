@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216590: Using Attachmate Advanced Function Adapter On Multidrop Line"
-permalink: kb/216/Q216590/
+permalink: /kb/216/Q216590/
 ---
 
 ## Q216590: Using Attachmate Advanced Function Adapter On Multidrop Line

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179495: WD97: Different Date Formats Listed on Insert Date and Time List"
-permalink: kb/179/Q179495/
+permalink: /kb/179/Q179495/
 ---
 
 ## Q179495: WD97: Different Date Formats Listed on Insert Date and Time List

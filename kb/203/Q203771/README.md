@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203771: Encarta Encyclopedia: Error Message When Starting Virtual Tour"
-permalink: kb/203/Q203771/
+permalink: /kb/203/Q203771/
 ---
 
 ## Q203771: Encarta Encyclopedia: Error Message When Starting Virtual Tour

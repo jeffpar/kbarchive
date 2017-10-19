@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88780: SMTP: Definition of the IMPORT Utility"
-permalink: kb/088/Q88780/
+permalink: /kb/088/Q88780/
 ---
 
 ## Q88780: SMTP: Definition of the IMPORT Utility

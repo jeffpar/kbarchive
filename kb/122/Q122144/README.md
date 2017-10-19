@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122144: Word for Windows NT Err Msg in Windows 95: Out of Memory"
-permalink: kb/122/Q122144/
+permalink: /kb/122/Q122144/
 ---
 
 ## Q122144: Word for Windows NT Err Msg in Windows 95: Out of Memory

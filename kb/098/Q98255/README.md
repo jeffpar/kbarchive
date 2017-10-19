@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98255: PC WFW: 3.0 Modem Scripts Disk [3.5, 720K]"
-permalink: kb/098/Q98255/
+title: "Q98255: PC WFW: 3.0 Modem Scripts Disk &#91;3.5, 720K&#93;"
+permalink: /kb/098/Q98255/
 ---
 
-## Q98255: PC WFW: 3.0 Modem Scripts Disk [3.5, 720K]
+## Q98255: PC WFW: 3.0 Modem Scripts Disk &#91;3.5, 720K&#93;
 
 	Article: Q98255
 	Product(s): Microsoft Mail For PC Networks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133071: FIX: Exception Specification in Template causes C2961 Error"
-permalink: kb/133/Q133071/
+permalink: /kb/133/Q133071/
 ---
 
 ## Q133071: FIX: Exception Specification in Template causes C2961 Error

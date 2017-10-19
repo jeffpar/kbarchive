@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218750: HOWTO: Simulate a Modal Form in Visual Basic CE 6.0"
-permalink: kb/218/Q218750/
+permalink: /kb/218/Q218750/
 ---
 
 ## Q218750: HOWTO: Simulate a Modal Form in Visual Basic CE 6.0

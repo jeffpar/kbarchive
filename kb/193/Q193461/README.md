@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193461: 3.51: Problems in Date/Time after Choosing Feb 29 in Leap Year"
-permalink: kb/193/Q193461/
+permalink: /kb/193/Q193461/
 ---
 
 ## Q193461: 3.51: Problems in Date/Time after Choosing Feb 29 in Leap Year

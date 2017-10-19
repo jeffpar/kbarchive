@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169561: Unable to View Subdirectory if Parent Directory has NO ACCESS"
-permalink: kb/169/Q169561/
+permalink: /kb/169/Q169561/
 ---
 
 ## Q169561: Unable to View Subdirectory if Parent Directory has NO ACCESS

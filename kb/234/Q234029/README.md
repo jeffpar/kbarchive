@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234029: Err Msg: &quot;Temp Directory Not Accessible&quot; After Applying TSE SP4"
-permalink: kb/234/Q234029/
+permalink: /kb/234/Q234029/
 ---
 
 ## Q234029: Err Msg: &quot;Temp Directory Not Accessible&quot; After Applying TSE SP4

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158179: GEX: Improving Speed and Display Performance"
-permalink: kb/158/Q158179/
+permalink: /kb/158/Q158179/
 ---
 
 ## Q158179: GEX: Improving Speed and Display Performance

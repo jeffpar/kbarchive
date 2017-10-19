@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197199: WD97: Word 6.0 Document Objects Cropped When Embedded/Pasted"
-permalink: kb/197/Q197199/
+permalink: /kb/197/Q197199/
 ---
 
 ## Q197199: WD97: Word 6.0 Document Objects Cropped When Embedded/Pasted

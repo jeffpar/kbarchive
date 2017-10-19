@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88442: Windows Err Msg: Cannot Find File..."
-permalink: kb/088/Q88442/
+permalink: /kb/088/Q88442/
 ---
 
 ## Q88442: Windows Err Msg: Cannot Find File...

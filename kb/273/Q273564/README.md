@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273564: How to change call waiting settings in MSN Companion"
-permalink: kb/273/Q273564/
+permalink: /kb/273/Q273564/
 ---
 
 ## Q273564: How to change call waiting settings in MSN Companion

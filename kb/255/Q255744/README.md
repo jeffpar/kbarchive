@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255744: HOWTO: Obtain a Device Context Handle for a Print Device"
-permalink: kb/255/Q255744/
+permalink: /kb/255/Q255744/
 ---
 
 ## Q255744: HOWTO: Obtain a Device Context Handle for a Print Device

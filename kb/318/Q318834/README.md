@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318834: SMS Package Source Versions May Be Reported Incorrectly"
-permalink: kb/318/Q318834/
+permalink: /kb/318/Q318834/
 ---
 
 ## Q318834: SMS Package Source Versions May Be Reported Incorrectly

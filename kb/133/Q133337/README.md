@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133337: Automate Setup to Configure TCP/IP for Static Addressing Fails"
-permalink: kb/133/Q133337/
+permalink: /kb/133/Q133337/
 ---
 
 ## Q133337: Automate Setup to Configure TCP/IP for Static Addressing Fails

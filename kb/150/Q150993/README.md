@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150993: Complete Gardening: Printout of Shopping List Truncated"
-permalink: kb/150/Q150993/
+permalink: /kb/150/Q150993/
 ---
 
 ## Q150993: Complete Gardening: Printout of Shopping List Truncated

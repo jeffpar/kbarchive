@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115287: DPT SCSI Controllers with Windows NT"
-permalink: kb/115/Q115287/
+permalink: /kb/115/Q115287/
 ---
 
 ## Q115287: DPT SCSI Controllers with Windows NT

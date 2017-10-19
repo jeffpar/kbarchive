@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139494: Multiple CRC Errors and Hardware Overruns Using RAS"
-permalink: kb/139/Q139494/
+permalink: /kb/139/Q139494/
 ---
 
 ## Q139494: Multiple CRC Errors and Hardware Overruns Using RAS

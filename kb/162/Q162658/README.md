@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162658: XCLN: Exchange Setup for Windows NT Fails on Emsmdb32.dll"
-permalink: kb/162/Q162658/
+permalink: /kb/162/Q162658/
 ---
 
 ## Q162658: XCLN: Exchange Setup for Windows NT Fails on Emsmdb32.dll

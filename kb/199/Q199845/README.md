@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199845: XWEB: Cannot Access Additional Tabs in Custom Form"
-permalink: kb/199/Q199845/
+permalink: /kb/199/Q199845/
 ---
 
 ## Q199845: XWEB: Cannot Access Additional Tabs in Custom Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170867: INFO: Unattended Install of IIS 2.0"
-permalink: kb/170/Q170867/
+permalink: /kb/170/Q170867/
 ---
 
 ## Q170867: INFO: Unattended Install of IIS 2.0

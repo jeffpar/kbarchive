@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72391: BUG: Cannot Open MASM 6.0 Sample Programs from PWB Online Help"
-permalink: kb/072/Q72391/
+permalink: /kb/072/Q72391/
 ---
 
 ## Q72391: BUG: Cannot Open MASM 6.0 Sample Programs from PWB Online Help

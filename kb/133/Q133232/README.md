@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133232: Dogs: Pressing Enter in Find List Doesn't Jump to Page"
-permalink: kb/133/Q133232/
+permalink: /kb/133/Q133232/
 ---
 
 ## Q133232: Dogs: Pressing Enter in Find List Doesn't Jump to Page

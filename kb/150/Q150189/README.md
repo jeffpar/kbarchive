@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150189: BUG: vbCFRTF Clipboard Constant Stored Incorrectly"
-permalink: kb/150/Q150189/
+permalink: /kb/150/Q150189/
 ---
 
 ## Q150189: BUG: vbCFRTF Clipboard Constant Stored Incorrectly

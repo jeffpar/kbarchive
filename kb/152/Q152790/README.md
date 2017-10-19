@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152790: Clicking Tools Menu Hangs Microsoft Exchange"
-permalink: kb/152/Q152790/
+permalink: /kb/152/Q152790/
 ---
 
 ## Q152790: Clicking Tools Menu Hangs Microsoft Exchange

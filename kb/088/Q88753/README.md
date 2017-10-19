@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88753: Windows Err Msg: Unable to Install TrueType Fonts"
-permalink: kb/088/Q88753/
+permalink: /kb/088/Q88753/
 ---
 
 ## Q88753: Windows Err Msg: Unable to Install TrueType Fonts

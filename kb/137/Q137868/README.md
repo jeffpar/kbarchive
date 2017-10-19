@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137868: Changing Modem for DUN Connectoid Restores Default Settings"
-permalink: kb/137/Q137868/
+permalink: /kb/137/Q137868/
 ---
 
 ## Q137868: Changing Modem for DUN Connectoid Restores Default Settings

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132663: Windows 95 Hangs When You Start It Again After Setup"
-permalink: kb/132/Q132663/
+permalink: /kb/132/Q132663/
 ---
 
 ## Q132663: Windows 95 Hangs When You Start It Again After Setup

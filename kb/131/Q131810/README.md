@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131810: Internet Newsgroups Shown as Bulletin Board Type"
-permalink: kb/131/Q131810/
+permalink: /kb/131/Q131810/
 ---
 
 ## Q131810: Internet Newsgroups Shown as Bulletin Board Type

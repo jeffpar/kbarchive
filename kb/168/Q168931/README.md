@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168931: Err Msg: Setup Was Unable to Verify Your &lt;X&gt;: Drive"
-permalink: kb/168/Q168931/
+permalink: /kb/168/Q168931/
 ---
 
 ## Q168931: Err Msg: Setup Was Unable to Verify Your &lt;X&gt;: Drive

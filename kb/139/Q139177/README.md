@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139177: Windows NT Automatic Setup: Language Version"
-permalink: kb/139/Q139177/
+permalink: /kb/139/Q139177/
 ---
 
 ## Q139177: Windows NT Automatic Setup: Language Version

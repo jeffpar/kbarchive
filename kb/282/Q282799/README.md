@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282799: MPPE Attribute Required When Using Radius Server with RRAS"
-permalink: kb/282/Q282799/
+permalink: /kb/282/Q282799/
 ---
 
 ## Q282799: MPPE Attribute Required When Using Radius Server with RRAS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76415: HOWTO: Creating a Progress Dialog with a Cancel Option"
-permalink: kb/076/Q76415/
+permalink: /kb/076/Q76415/
 ---
 
 ## Q76415: HOWTO: Creating a Progress Dialog with a Cancel Option

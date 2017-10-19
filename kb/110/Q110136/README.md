@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110136: Default Settings and Behavior or NbtKeepAlive and TcpKeepCnt"
-permalink: kb/110/Q110136/
+permalink: /kb/110/Q110136/
 ---
 
 ## Q110136: Default Settings and Behavior or NbtKeepAlive and TcpKeepCnt

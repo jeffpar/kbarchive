@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250576: XADM: Error Message While Exmerge Reads Server Recipients List"
-permalink: kb/250/Q250576/
+permalink: /kb/250/Q250576/
 ---
 
 ## Q250576: XADM: Error Message While Exmerge Reads Server Recipients List

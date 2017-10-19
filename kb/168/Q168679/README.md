@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168679: MSN Viewer Does Not Maximize 1600 x 1200 Video Resolution"
-permalink: kb/168/Q168679/
+permalink: /kb/168/Q168679/
 ---
 
 ## Q168679: MSN Viewer Does Not Maximize 1600 x 1200 Video Resolution

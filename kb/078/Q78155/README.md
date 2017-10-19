@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78155: INFO: Introduction to Nonpreemptive Multitasking in Windows"
-permalink: kb/078/Q78155/
+permalink: /kb/078/Q78155/
 ---
 
 ## Q78155: INFO: Introduction to Nonpreemptive Multitasking in Windows

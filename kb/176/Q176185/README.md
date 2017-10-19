@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176185: XFOR: 1251 Character Sets Not Preserved on Incoming IMS Message"
-permalink: kb/176/Q176185/
+permalink: /kb/176/Q176185/
 ---
 
 ## Q176185: XFOR: 1251 Character Sets Not Preserved on Incoming IMS Message

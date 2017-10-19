@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143003: Description of Microsoft Windows 95 Service Pack 1 Updates"
-permalink: kb/143/Q143003/
+permalink: /kb/143/Q143003/
 ---
 
 ## Q143003: Description of Microsoft Windows 95 Service Pack 1 Updates

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195107: XCLN: Comma Separator if Contact is Listed by Only First Name"
-permalink: kb/195/Q195107/
+permalink: /kb/195/Q195107/
 ---
 
 ## Q195107: XCLN: Comma Separator if Contact is Listed by Only First Name

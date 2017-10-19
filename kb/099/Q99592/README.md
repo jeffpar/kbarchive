@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99592: Three Conditions Affecting Maynstream OS/2 Software"
-permalink: kb/099/Q99592/
+permalink: /kb/099/Q99592/
 ---
 
 ## Q99592: Three Conditions Affecting Maynstream OS/2 Software

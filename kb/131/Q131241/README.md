@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131241: FTPSVC Orphans Connections, Uses Up Virtual Memory"
-permalink: kb/131/Q131241/
+permalink: /kb/131/Q131241/
 ---
 
 ## Q131241: FTPSVC Orphans Connections, Uses Up Virtual Memory

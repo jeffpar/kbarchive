@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119017: PC DirSync: Err Msg: Possible Database Corruption Detected..."
-permalink: kb/119/Q119017/
+permalink: /kb/119/Q119017/
 ---
 
 ## Q119017: PC DirSync: Err Msg: Possible Database Corruption Detected...

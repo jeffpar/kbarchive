@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75141: Using SMARTDRV.SYS and RAMDRIVE.SYS with QEMM's QEXT.SYS"
-permalink: kb/075/Q75141/
+permalink: /kb/075/Q75141/
 ---
 
 ## Q75141: Using SMARTDRV.SYS and RAMDRIVE.SYS with QEMM's QEXT.SYS

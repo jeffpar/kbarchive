@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135643: INFO: Basic Troubleshooting Converting from Delta to SourceSafe"
-permalink: kb/135/Q135643/
+permalink: /kb/135/Q135643/
 ---
 
 ## Q135643: INFO: Basic Troubleshooting Converting from Delta to SourceSafe

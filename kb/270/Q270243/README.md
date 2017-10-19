@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270243: Age of Empires: First Punic War Campaign Quits Unexpectedly"
-permalink: kb/270/Q270243/
+permalink: /kb/270/Q270243/
 ---
 
 ## Q270243: Age of Empires: First Punic War Campaign Quits Unexpectedly

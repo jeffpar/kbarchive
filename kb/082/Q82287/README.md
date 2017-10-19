@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82287: FIX: MASM 6.0 Does Not Align on Page Boundary"
-permalink: kb/082/Q82287/
+permalink: /kb/082/Q82287/
 ---
 
 ## Q82287: FIX: MASM 6.0 Does Not Align on Page Boundary

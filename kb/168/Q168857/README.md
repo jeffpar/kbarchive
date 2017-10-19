@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168857: XFOR: Err Msg: MSMI Service Returned Service-Specific Error 105"
-permalink: kb/168/Q168857/
+permalink: /kb/168/Q168857/
 ---
 
 ## Q168857: XFOR: Err Msg: MSMI Service Returned Service-Specific Error 105

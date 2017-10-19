@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134478: Incorrect &quot;Invalid Path&quot; Error Message Returned by XCOPY"
-permalink: kb/134/Q134478/
+permalink: /kb/134/Q134478/
 ---
 
 ## Q134478: Incorrect &quot;Invalid Path&quot; Error Message Returned by XCOPY

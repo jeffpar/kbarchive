@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172520: Access Denied Error When Trying to Access a Shared CD-ROM"
-permalink: kb/172/Q172520/
+permalink: /kb/172/Q172520/
 ---
 
 ## Q172520: Access Denied Error When Trying to Access a Shared CD-ROM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242571: How To Manually Uninstall SNA Server 4.0"
-permalink: kb/242/Q242571/
+permalink: /kb/242/Q242571/
 ---
 
 ## Q242571: How To Manually Uninstall SNA Server 4.0

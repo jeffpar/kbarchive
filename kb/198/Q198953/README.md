@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198953: HOWTO: Expand An Array Pointer in the Visual C++ Debugger"
-permalink: kb/198/Q198953/
+permalink: /kb/198/Q198953/
 ---
 
 ## Q198953: HOWTO: Expand An Array Pointer in the Visual C++ Debugger

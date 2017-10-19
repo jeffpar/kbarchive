@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97994: Flag Borders Missing in Microsoft Bookshelf for Windows"
-permalink: kb/097/Q97994/
+permalink: /kb/097/Q97994/
 ---
 
 ## Q97994: Flag Borders Missing in Microsoft Bookshelf for Windows

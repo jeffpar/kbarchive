@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116012: SFM: Err Msg: Address Error"
-permalink: kb/116/Q116012/
+permalink: /kb/116/Q116012/
 ---
 
 ## Q116012: SFM: Err Msg: Address Error

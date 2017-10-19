@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173441: DOC: Running NT Server 4.0: FPNW not available on Internet"
-permalink: kb/173/Q173441/
+permalink: /kb/173/Q173441/
 ---
 
 ## Q173441: DOC: Running NT Server 4.0: FPNW not available on Internet

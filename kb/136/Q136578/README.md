@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136578: Code Samples Demonstrate How to Use the Outline Control"
-permalink: kb/136/Q136578/
+permalink: /kb/136/Q136578/
 ---
 
 ## Q136578: Code Samples Demonstrate How to Use the Outline Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169247: PPT7: Action Items/Speaker Notes Not Saved After Slide Show"
-permalink: kb/169/Q169247/
+permalink: /kb/169/Q169247/
 ---
 
 ## Q169247: PPT7: Action Items/Speaker Notes Not Saved After Slide Show

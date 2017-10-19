@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88667: Creating a Running Calculation Using the Report Writer"
-permalink: kb/088/Q88667/
+permalink: /kb/088/Q88667/
 ---
 
 ## Q88667: Creating a Running Calculation Using the Report Writer

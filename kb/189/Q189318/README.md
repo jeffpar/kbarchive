@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189318: Scheduled Fax ThatIncludes Files Is Never Sent"
-permalink: kb/189/Q189318/
+permalink: /kb/189/Q189318/
 ---
 
 ## Q189318: Scheduled Fax ThatIncludes Files Is Never Sent

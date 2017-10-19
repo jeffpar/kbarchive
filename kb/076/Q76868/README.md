@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76868: Authoring Device-Independent MIDI Files"
-permalink: kb/076/Q76868/
+permalink: /kb/076/Q76868/
 ---
 
 ## Q76868: Authoring Device-Independent MIDI Files

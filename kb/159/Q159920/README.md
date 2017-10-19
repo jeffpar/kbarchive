@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159920: FP: Part of the Data Transferred with &quot;Publish Web&quot; Command"
-permalink: kb/159/Q159920/
+permalink: /kb/159/Q159920/
 ---
 
 ## Q159920: FP: Part of the Data Transferred with &quot;Publish Web&quot; Command

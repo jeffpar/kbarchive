@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176895: BUG: FOR EACH Fails to Remove All Objects"
-permalink: kb/176/Q176895/
+permalink: /kb/176/Q176895/
 ---
 
 ## Q176895: BUG: FOR EACH Fails to Remove All Objects

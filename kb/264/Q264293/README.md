@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264293: How Streets &amp; Trips 2001 Recognizes Geographic Information"
-permalink: kb/264/Q264293/
+permalink: /kb/264/Q264293/
 ---
 
 ## Q264293: How Streets &amp; Trips 2001 Recognizes Geographic Information

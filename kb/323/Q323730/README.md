@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323730: XCCC: Err Msg: &quot;System Cannot Find File Specified&quot; (0xc0020002)"
-permalink: kb/323/Q323730/
+permalink: /kb/323/Q323730/
 ---
 
 ## Q323730: XCCC: Err Msg: &quot;System Cannot Find File Specified&quot; (0xc0020002)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174266: &quot;Print Screen&quot; from MS-DOS Application May Print Twice"
-permalink: kb/174/Q174266/
+permalink: /kb/174/Q174266/
 ---
 
 ## Q174266: &quot;Print Screen&quot; from MS-DOS Application May Print Twice

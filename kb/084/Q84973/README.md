@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84973: Artisoft Sounding Board Installation Conflicts with PC-Speaker"
-permalink: kb/084/Q84973/
+permalink: /kb/084/Q84973/
 ---
 
 ## Q84973: Artisoft Sounding Board Installation Conflicts with PC-Speaker

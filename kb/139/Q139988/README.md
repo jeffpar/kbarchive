@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139988: Maximum for Compression Agent UltraPack Setting is 999 Days"
-permalink: kb/139/Q139988/
+permalink: /kb/139/Q139988/
 ---
 
 ## Q139988: Maximum for Compression Agent UltraPack Setting is 999 Days

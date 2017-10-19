@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241104: COM Internet Services Causes Memory Leaks in IIS"
-permalink: kb/241/Q241104/
+permalink: /kb/241/Q241104/
 ---
 
 ## Q241104: COM Internet Services Causes Memory Leaks in IIS

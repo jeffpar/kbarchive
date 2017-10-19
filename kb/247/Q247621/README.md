@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247621: Blue Screen with Garbled Text During Windows NT Installation"
-permalink: kb/247/Q247621/
+permalink: /kb/247/Q247621/
 ---
 
 ## Q247621: Blue Screen with Garbled Text During Windows NT Installation

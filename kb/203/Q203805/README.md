@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203805: How to Map a Client Certificate to a Windows NT User Account"
-permalink: kb/203/Q203805/
+permalink: /kb/203/Q203805/
 ---
 
 ## Q203805: How to Map a Client Certificate to a Windows NT User Account

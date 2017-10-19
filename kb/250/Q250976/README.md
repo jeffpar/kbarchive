@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250976: SMS: Software Metering Does Not Use Original Program Name Policy"
-permalink: kb/250/Q250976/
+permalink: /kb/250/Q250976/
 ---
 
 ## Q250976: SMS: Software Metering Does Not Use Original Program Name Policy

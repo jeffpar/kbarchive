@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196824: SMS: SQL Server 7.0 Not Recommended or Supported with SMS 1.2"
-permalink: kb/196/Q196824/
+permalink: /kb/196/Q196824/
 ---
 
 ## Q196824: SMS: SQL Server 7.0 Not Recommended or Supported with SMS 1.2

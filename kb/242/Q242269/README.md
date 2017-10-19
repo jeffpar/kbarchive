@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242269: XCLN: Moderators don't receive new items posted by some users"
-permalink: kb/242/Q242269/
+permalink: /kb/242/Q242269/
 ---
 
 ## Q242269: XCLN: Moderators don't receive new items posted by some users

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123074: MSB Human: MIDI Mapper Does Not Appear in Control Panel"
-permalink: kb/123/Q123074/
+permalink: /kb/123/Q123074/
 ---
 
 ## Q123074: MSB Human: MIDI Mapper Does Not Appear in Control Panel

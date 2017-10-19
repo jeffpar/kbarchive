@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234241: XCLN: Reply To Address Differs from From in Outlook/OE"
-permalink: kb/234/Q234241/
+permalink: /kb/234/Q234241/
 ---
 
 ## Q234241: XCLN: Reply To Address Differs from From in Outlook/OE

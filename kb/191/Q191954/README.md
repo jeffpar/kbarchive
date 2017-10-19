@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191954: PRB: OLE DLL with Exposed Objects Returns Incorrect Description"
-permalink: kb/191/Q191954/
+permalink: /kb/191/Q191954/
 ---
 
 ## Q191954: PRB: OLE DLL with Exposed Objects Returns Incorrect Description

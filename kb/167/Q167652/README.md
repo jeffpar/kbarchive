@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167652: New Installation of Windows NT 4.0 Results in STOP 0x00000050"
-permalink: kb/167/Q167652/
+permalink: /kb/167/Q167652/
 ---
 
 ## Q167652: New Installation of Windows NT 4.0 Results in STOP 0x00000050

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228773: Baseball 2000: Cannot See Player Photos in General Manager"
-permalink: kb/228/Q228773/
+permalink: /kb/228/Q228773/
 ---
 
 ## Q228773: Baseball 2000: Cannot See Player Photos in General Manager

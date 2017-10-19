@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176762: XCLN: Shiva Remote Setup for Outlook Icon Missing"
-permalink: kb/176/Q176762/
+permalink: /kb/176/Q176762/
 ---
 
 ## Q176762: XCLN: Shiva Remote Setup for Outlook Icon Missing

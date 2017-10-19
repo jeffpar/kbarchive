@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94001: Houston Instruments Plotter Driver"
-permalink: kb/094/Q94001/
+permalink: /kb/094/Q94001/
 ---
 
 ## Q94001: Houston Instruments Plotter Driver

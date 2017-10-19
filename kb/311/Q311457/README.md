@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311457: SMS: How to Obtain and Install SMS 2.0 SP4"
-permalink: kb/311/Q311457/
+permalink: /kb/311/Q311457/
 ---
 
 ## Q311457: SMS: How to Obtain and Install SMS 2.0 SP4

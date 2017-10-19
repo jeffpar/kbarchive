@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138393: Clipart Gallery: Can Only Add One Picture at a Time on Win NT"
-permalink: kb/138/Q138393/
+permalink: /kb/138/Q138393/
 ---
 
 ## Q138393: Clipart Gallery: Can Only Add One Picture at a Time on Win NT

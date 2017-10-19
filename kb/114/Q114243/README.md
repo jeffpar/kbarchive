@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114243: System Hang During Setup on IBM PS/ValuePoint P60/D Machine"
-permalink: kb/114/Q114243/
+permalink: /kb/114/Q114243/
 ---
 
 ## Q114243: System Hang During Setup on IBM PS/ValuePoint P60/D Machine

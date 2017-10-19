@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145995: BUG: Changes to Remote Project Files Not Detected"
-permalink: kb/145/Q145995/
+permalink: /kb/145/Q145995/
 ---
 
 ## Q145995: BUG: Changes to Remote Project Files Not Detected

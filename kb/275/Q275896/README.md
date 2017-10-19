@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275896: SNA Server Rejects TN3270 Client Data with Sense Code 200D"
-permalink: kb/275/Q275896/
+permalink: /kb/275/Q275896/
 ---
 
 ## Q275896: SNA Server Rejects TN3270 Client Data with Sense Code 200D

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185611: WD97: Track Changes Tracks Only the Last Change Made to Text"
-permalink: kb/185/Q185611/
+permalink: /kb/185/Q185611/
 ---
 
 ## Q185611: WD97: Track Changes Tracks Only the Last Change Made to Text

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119871: FIX: Optimization Bug Using Shift Operators and outp()"
-permalink: kb/119/Q119871/
+permalink: /kb/119/Q119871/
 ---
 
 ## Q119871: FIX: Optimization Bug Using Shift Operators and outp()

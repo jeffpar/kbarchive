@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217140: Computer Does Not Boot When Tracking Memory Usage with Pool Tags"
-permalink: kb/217/Q217140/
+permalink: /kb/217/Q217140/
 ---
 
 ## Q217140: Computer Does Not Boot When Tracking Memory Usage with Pool Tags

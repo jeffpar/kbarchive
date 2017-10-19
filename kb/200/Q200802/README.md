@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200802: SMS: Cannot Connect to SQL Server If Default Protocol Is Changed"
-permalink: kb/200/Q200802/
+permalink: /kb/200/Q200802/
 ---
 
 ## Q200802: SMS: Cannot Connect to SQL Server If Default Protocol Is Changed

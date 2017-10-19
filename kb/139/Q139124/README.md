@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139124: Uplodprf Aborts When Copying CPL.CFG"
-permalink: kb/139/Q139124/
+permalink: /kb/139/Q139124/
 ---
 
 ## Q139124: Uplodprf Aborts When Copying CPL.CFG

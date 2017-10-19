@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122566: Default Printer Changed to Bootup Value if Spooler Restarted"
-permalink: kb/122/Q122566/
+permalink: /kb/122/Q122566/
 ---
 
 ## Q122566: Default Printer Changed to Bootup Value if Spooler Restarted

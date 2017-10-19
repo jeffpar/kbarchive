@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142301: IPX Routing With MPR Requires Manual Frame Type"
-permalink: kb/142/Q142301/
+permalink: /kb/142/Q142301/
 ---
 
 ## Q142301: IPX Routing With MPR Requires Manual Frame Type

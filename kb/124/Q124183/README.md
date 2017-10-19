@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124183: ADT2: Setup Wizard Templates Are Lost Installing Service Pack"
-permalink: kb/124/Q124183/
+permalink: /kb/124/Q124183/
 ---
 
 ## Q124183: ADT2: Setup Wizard Templates Are Lost Installing Service Pack

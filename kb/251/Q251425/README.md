@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251425: STOP 0x1E When Session Shadowing Another Session Is Disconnected"
-permalink: kb/251/Q251425/
+permalink: /kb/251/Q251425/
 ---
 
 ## Q251425: STOP 0x1E When Session Shadowing Another Session Is Disconnected

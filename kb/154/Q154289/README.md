@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154289: HOWTO: Identify the Symptoms of File Corruption Problems"
-permalink: kb/154/Q154289/
+permalink: /kb/154/Q154289/
 ---
 
 ## Q154289: HOWTO: Identify the Symptoms of File Corruption Problems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313880: Index Server Does Not Correctly Track UNC Directory Name Changes"
-permalink: kb/313/Q313880/
+permalink: /kb/313/Q313880/
 ---
 
 ## Q313880: Index Server Does Not Correctly Track UNC Directory Name Changes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297534: ReceiveAny Thread Generates &quot;RPC_S_OUT_OF_MEMORY&quot; Error"
-permalink: kb/297/Q297534/
+permalink: /kb/297/Q297534/
 ---
 
 ## Q297534: ReceiveAny Thread Generates &quot;RPC_S_OUT_OF_MEMORY&quot; Error

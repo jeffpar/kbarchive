@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221721: FIX: Mismatched Pushjmp/Popjmp With DataToClip( ) On Big Table"
-permalink: kb/221/Q221721/
+permalink: /kb/221/Q221721/
 ---
 
 ## Q221721: FIX: Mismatched Pushjmp/Popjmp With DataToClip( ) On Big Table

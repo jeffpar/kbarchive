@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131167: PRB: Modal Form in Form Set Behaves as a Modeless Form"
-permalink: kb/131/Q131167/
+permalink: /kb/131/Q131167/
 ---
 
 ## Q131167: PRB: Modal Form in Form Set Behaves as a Modeless Form

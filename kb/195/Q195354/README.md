@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195354: LU3 Print Sessions Don't Support Transparent Print Sections"
-permalink: kb/195/Q195354/
+permalink: /kb/195/Q195354/
 ---
 
 ## Q195354: LU3 Print Sessions Don't Support Transparent Print Sections

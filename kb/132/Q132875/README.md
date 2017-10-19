@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132875: MS Exchange Setup Wizard Loses Information When Backing Up"
-permalink: kb/132/Q132875/
+permalink: /kb/132/Q132875/
 ---
 
 ## Q132875: MS Exchange Setup Wizard Loses Information When Backing Up

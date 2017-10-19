@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305291: ENC2002: &quot;I/O Operation Has Been Aborted&quot; Err Msg"
-permalink: kb/305/Q305291/
+permalink: /kb/305/Q305291/
 ---
 
 ## Q305291: ENC2002: &quot;I/O Operation Has Been Aborted&quot; Err Msg

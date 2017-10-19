@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85002: Media Player Can't Open CDAudio After Opening CD-ROM File"
-permalink: kb/085/Q85002/
+permalink: /kb/085/Q85002/
 ---
 
 ## Q85002: Media Player Can't Open CDAudio After Opening CD-ROM File

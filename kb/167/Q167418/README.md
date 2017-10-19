@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167418: Access Violation When Configuring a Printer from a MAC Client"
-permalink: kb/167/Q167418/
+permalink: /kb/167/Q167418/
 ---
 
 ## Q167418: Access Violation When Configuring a Printer from a MAC Client

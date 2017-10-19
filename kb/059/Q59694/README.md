@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59694: Okidata 24-Pin Driver Lacks Accelerators"
-permalink: kb/059/Q59694/
+permalink: /kb/059/Q59694/
 ---
 
 ## Q59694: Okidata 24-Pin Driver Lacks Accelerators

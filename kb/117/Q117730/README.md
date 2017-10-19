@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117730: Customer Letter Included with TrueType Font Pack Version 1.0a"
-permalink: kb/117/Q117730/
+permalink: /kb/117/Q117730/
 ---
 
 ## Q117730: Customer Letter Included with TrueType Font Pack Version 1.0a

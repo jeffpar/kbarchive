@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60839: File Manager Loses Keyboard Focus"
-permalink: kb/060/Q60839/
+permalink: /kb/060/Q60839/
 ---
 
 ## Q60839: File Manager Loses Keyboard Focus

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167956: HOWTO: Detect IE's STOP Button Click in ActiveX Control"
-permalink: kb/167/Q167956/
+permalink: /kb/167/Q167956/
 ---
 
 ## Q167956: HOWTO: Detect IE's STOP Button Click in ActiveX Control

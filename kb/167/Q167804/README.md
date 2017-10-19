@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167804: BUG: Source Profiler in Visual C++ Does Not Execute"
-permalink: kb/167/Q167804/
+permalink: /kb/167/Q167804/
 ---
 
 ## Q167804: BUG: Source Profiler in Visual C++ Does Not Execute

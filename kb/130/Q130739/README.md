@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130739: Print Jobs From Pagemaker for Macintosh Fail"
-permalink: kb/130/Q130739/
+permalink: /kb/130/Q130739/
 ---
 
 ## Q130739: Print Jobs From Pagemaker for Macintosh Fail

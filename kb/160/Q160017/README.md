@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160017: FIX: Access Violation Using deque class"
-permalink: kb/160/Q160017/
+permalink: /kb/160/Q160017/
 ---
 
 ## Q160017: FIX: Access Violation Using deque class

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137779: Dell Latitude: Installing both Xircom TR and Ethernet PCMCIA"
-permalink: kb/137/Q137779/
+permalink: /kb/137/Q137779/
 ---
 
 ## Q137779: Dell Latitude: Installing both Xircom TR and Ethernet PCMCIA

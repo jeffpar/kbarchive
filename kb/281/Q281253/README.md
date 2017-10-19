@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281253: File Change Notifications Are Lost When Content Is on UNC Share"
-permalink: kb/281/Q281253/
+permalink: /kb/281/Q281253/
 ---
 
 ## Q281253: File Change Notifications Are Lost When Content Is on UNC Share

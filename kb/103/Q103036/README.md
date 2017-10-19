@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103036: BUG: AddAtom Causes Divide by Zero Error"
-permalink: kb/103/Q103036/
+permalink: /kb/103/Q103036/
 ---
 
 ## Q103036: BUG: AddAtom Causes Divide by Zero Error

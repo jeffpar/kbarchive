@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253714: Dr. Watson Error Message in Tcpsvcs.exe When Printing from UNIX"
-permalink: kb/253/Q253714/
+permalink: /kb/253/Q253714/
 ---
 
 ## Q253714: Dr. Watson Error Message in Tcpsvcs.exe When Printing from UNIX

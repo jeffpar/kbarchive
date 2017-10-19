@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190942: BUG: OLE DB AppWizard Generates Wrong SQL Statement"
-permalink: kb/190/Q190942/
+permalink: /kb/190/Q190942/
 ---
 
 ## Q190942: BUG: OLE DB AppWizard Generates Wrong SQL Statement

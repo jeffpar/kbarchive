@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86182: PC WSPlus: Margins Off When Printing on HP LaserJet III"
-permalink: kb/086/Q86182/
+permalink: /kb/086/Q86182/
 ---
 
 ## Q86182: PC WSPlus: Margins Off When Printing on HP LaserJet III

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176782: Err Msg: Multicast Detector Failed Initialization"
-permalink: kb/176/Q176782/
+permalink: /kb/176/Q176782/
 ---
 
 ## Q176782: Err Msg: Multicast Detector Failed Initialization

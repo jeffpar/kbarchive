@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102690: FIX: No Include Dependencies for &#36;INCLUDE Metacommand Contents"
-permalink: kb/102/Q102690/
+permalink: /kb/102/Q102690/
 ---
 
 ## Q102690: FIX: No Include Dependencies for &#36;INCLUDE Metacommand Contents

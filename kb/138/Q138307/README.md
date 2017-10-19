@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138307: PPT7: How to Run a Slide Show Within a Window (Undocumented)"
-permalink: kb/138/Q138307/
+permalink: /kb/138/Q138307/
 ---
 
 ## Q138307: PPT7: How to Run a Slide Show Within a Window (Undocumented)

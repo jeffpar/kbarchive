@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159755: FIX: REPORT FORM TO PRINT PROMPT with Landscape FRX Broken"
-permalink: kb/159/Q159755/
+permalink: /kb/159/Q159755/
 ---
 
 ## Q159755: FIX: REPORT FORM TO PRINT PROMPT with Landscape FRX Broken

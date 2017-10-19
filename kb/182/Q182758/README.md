@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182758: XCON: X.25 Cards Supported Through Direct Hardware Interface"
-permalink: kb/182/Q182758/
+permalink: /kb/182/Q182758/
 ---
 
 ## Q182758: XCON: X.25 Cards Supported Through Direct Hardware Interface

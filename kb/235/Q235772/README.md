@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235772: SMS: DHCP Server Has Unlimited Leases NetDisc Fails to Retrieve"
-permalink: kb/235/Q235772/
+permalink: /kb/235/Q235772/
 ---
 
 ## Q235772: SMS: DHCP Server Has Unlimited Leases NetDisc Fails to Retrieve

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150377: After You Run Arcade, Quitting Norton Desktop Hangs Computer"
-permalink: kb/150/Q150377/
+permalink: /kb/150/Q150377/
 ---
 
 ## Q150377: After You Run Arcade, Quitting Norton Desktop Hangs Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317208: Cannot Download Microsoft Office Documents from IIS Server"
-permalink: kb/317/Q317208/
+permalink: /kb/317/Q317208/
 ---
 
 ## Q317208: Cannot Download Microsoft Office Documents from IIS Server

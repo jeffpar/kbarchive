@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186412: SMS: How to Disable the Restart Now/Don't Restart Now Message"
-permalink: kb/186/Q186412/
+permalink: /kb/186/Q186412/
 ---
 
 ## Q186412: SMS: How to Disable the Restart Now/Don't Restart Now Message

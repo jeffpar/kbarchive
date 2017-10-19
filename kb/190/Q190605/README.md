@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190605: PRB: Binding Hierarchical Recordset in Data Environment"
-permalink: kb/190/Q190605/
+permalink: /kb/190/Q190605/
 ---
 
 ## Q190605: PRB: Binding Hierarchical Recordset in Data Environment

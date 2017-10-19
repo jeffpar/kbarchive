@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271463: Golf 2001 Edition: Minimum System Requirements"
-permalink: kb/271/Q271463/
+permalink: /kb/271/Q271463/
 ---
 
 ## Q271463: Golf 2001 Edition: Minimum System Requirements

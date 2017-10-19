@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74453: Load NEC CD-ROM Driver 2.1 and Earlier Before HIMEM.SYS"
-permalink: kb/074/Q74453/
+permalink: /kb/074/Q74453/
 ---
 
 ## Q74453: Load NEC CD-ROM Driver 2.1 and Earlier Before HIMEM.SYS

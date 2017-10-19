@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127136: Direct Cable Connection Fails with Only NetBEUI Loaded"
-permalink: kb/127/Q127136/
+permalink: /kb/127/Q127136/
 ---
 
 ## Q127136: Direct Cable Connection Fails with Only NetBEUI Loaded

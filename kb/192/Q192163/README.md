@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192163: &quot;Stop 0x7B&quot; During Hardware Detection Portion of Setup"
-permalink: kb/192/Q192163/
+permalink: /kb/192/Q192163/
 ---
 
 ## Q192163: &quot;Stop 0x7B&quot; During Hardware Detection Portion of Setup

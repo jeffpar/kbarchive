@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192350: When You Quit MSN You Are Not Prompted to Disconnect"
-permalink: kb/192/Q192350/
+permalink: /kb/192/Q192350/
 ---
 
 ## Q192350: When You Quit MSN You Are Not Prompted to Disconnect

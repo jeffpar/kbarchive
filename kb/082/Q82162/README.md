@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82162: Incorrect Fonts Are Displayed in MS-DOS Window Using Graphics"
-permalink: kb/082/Q82162/
+permalink: /kb/082/Q82162/
 ---
 
 ## Q82162: Incorrect Fonts Are Displayed in MS-DOS Window Using Graphics

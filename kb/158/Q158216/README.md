@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158216: Unable to Directly Access Any Applet In Control Panel"
-permalink: kb/158/Q158216/
+permalink: /kb/158/Q158216/
 ---
 
 ## Q158216: Unable to Directly Access Any Applet In Control Panel

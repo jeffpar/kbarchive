@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95745: Err Msg with Iomega: 'MS-DOS 6 Cannot Be Installed...'"
-permalink: kb/095/Q95745/
+permalink: /kb/095/Q95745/
 ---
 
 ## Q95745: Err Msg with Iomega: 'MS-DOS 6 Cannot Be Installed...'

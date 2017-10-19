@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140045: Creating a PCL Separator File That Creates No Printed Output"
-permalink: kb/140/Q140045/
+permalink: /kb/140/Q140045/
 ---
 
 ## Q140045: Creating a PCL Separator File That Creates No Printed Output

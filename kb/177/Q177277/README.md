@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177277: How to Share a Network Printer to Novell and Microsoft Clients"
-permalink: kb/177/Q177277/
+permalink: /kb/177/Q177277/
 ---
 
 ## Q177277: How to Share a Network Printer to Novell and Microsoft Clients

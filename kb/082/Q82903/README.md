@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82903: Code Displays 256-Color DIB on Standard VGA"
-permalink: kb/082/Q82903/
+permalink: /kb/082/Q82903/
 ---
 
 ## Q82903: Code Displays 256-Color DIB on Standard VGA

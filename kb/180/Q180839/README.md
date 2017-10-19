@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180839: FIX: In-line Comments Parsed by Microsoft Oracle Driver"
-permalink: kb/180/Q180839/
+permalink: /kb/180/Q180839/
 ---
 
 ## Q180839: FIX: In-line Comments Parsed by Microsoft Oracle Driver

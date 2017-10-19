@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103033: Network Trash Folder While Running SFM"
-permalink: kb/103/Q103033/
+permalink: /kb/103/Q103033/
 ---
 
 ## Q103033: Network Trash Folder While Running SFM

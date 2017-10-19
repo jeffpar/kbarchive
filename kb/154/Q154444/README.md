@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154444: EPS Files Larger Than Page Fail to Print"
-permalink: kb/154/Q154444/
+permalink: /kb/154/Q154444/
 ---
 
 ## Q154444: EPS Files Larger Than Page Fail to Print

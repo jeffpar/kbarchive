@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255844: Default Document Is Not Compressed When Compression Is Enabled"
-permalink: kb/255/Q255844/
+permalink: /kb/255/Q255844/
 ---
 
 ## Q255844: Default Document Is Not Compressed When Compression Is Enabled

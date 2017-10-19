@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198841: XFOR: Store Notification for CALCON May Stop"
-permalink: kb/198/Q198841/
+permalink: /kb/198/Q198841/
 ---
 
 ## Q198841: XFOR: Store Notification for CALCON May Stop

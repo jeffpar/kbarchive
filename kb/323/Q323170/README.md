@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323170: HOW TO: Backup, Edit, and Restore the Registry in Windows NT 4.0"
-permalink: kb/323/Q323170/
+permalink: /kb/323/Q323170/
 ---
 
 ## Q323170: HOW TO: Backup, Edit, and Restore the Registry in Windows NT 4.0

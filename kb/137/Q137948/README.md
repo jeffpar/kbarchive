@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137948: FIX: Report Writer Left-Aligns Numeric Fields Added w/ Toolbar"
-permalink: kb/137/Q137948/
+permalink: /kb/137/Q137948/
 ---
 
 ## Q137948: FIX: Report Writer Left-Aligns Numeric Fields Added w/ Toolbar

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158857: PRB: Setup Wizard Restarts Using Template (.vbz) File"
-permalink: kb/158/Q158857/
+permalink: /kb/158/Q158857/
 ---
 
 ## Q158857: PRB: Setup Wizard Restarts Using Template (.vbz) File

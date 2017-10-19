@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216254: User Global Object Mistakenly Created as System Global Object"
-permalink: kb/216/Q216254/
+permalink: /kb/216/Q216254/
 ---
 
 ## Q216254: User Global Object Mistakenly Created as System Global Object

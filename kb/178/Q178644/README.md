@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178644: DirectX: Cannot Uninstall or Remove DirectX"
-permalink: kb/178/Q178644/
+permalink: /kb/178/Q178644/
 ---
 
 ## Q178644: DirectX: Cannot Uninstall or Remove DirectX

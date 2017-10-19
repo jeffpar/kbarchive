@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134388: Disk Administrator Does Not Appear When Run For The First Time"
-permalink: kb/134/Q134388/
+permalink: /kb/134/Q134388/
 ---
 
 ## Q134388: Disk Administrator Does Not Appear When Run For The First Time

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228276: SMS: Foreground App Performance Degrades During SW Inventory"
-permalink: kb/228/Q228276/
+permalink: /kb/228/Q228276/
 ---
 
 ## Q228276: SMS: Foreground App Performance Degrades During SW Inventory

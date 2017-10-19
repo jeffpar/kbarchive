@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87208: PROFS: How Much Address Conversion Is Done by the Gateway?"
-permalink: kb/087/Q87208/
+permalink: /kb/087/Q87208/
 ---
 
 ## Q87208: PROFS: How Much Address Conversion Is Done by the Gateway?

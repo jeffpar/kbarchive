@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198417: Message &quot;At Least One Service Failed...&quot; After Running Sysprep"
-permalink: kb/198/Q198417/
+permalink: /kb/198/Q198417/
 ---
 
 ## Q198417: Message &quot;At Least One Service Failed...&quot; After Running Sysprep

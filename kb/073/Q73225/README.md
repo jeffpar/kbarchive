@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73225: Everex EGA Card Hangs When Running MS-DOS Apps"
-permalink: kb/073/Q73225/
+permalink: /kb/073/Q73225/
 ---
 
 ## Q73225: Everex EGA Card Hangs When Running MS-DOS Apps

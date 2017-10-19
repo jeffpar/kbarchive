@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276328: Classic Board Games: Reversi: Player Must Pass if Unable to Move"
-permalink: kb/276/Q276328/
+permalink: /kb/276/Q276328/
 ---
 
 ## Q276328: Classic Board Games: Reversi: Player Must Pass if Unable to Move

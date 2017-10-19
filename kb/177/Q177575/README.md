@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177575: PRB: ActiveX Controls Passing Variant&#42; Back to VFP Cause Error"
-permalink: kb/177/Q177575/
+permalink: /kb/177/Q177575/
 ---
 
 ## Q177575: PRB: ActiveX Controls Passing Variant&#42; Back to VFP Cause Error

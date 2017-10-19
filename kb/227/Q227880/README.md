@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227880: Modifying TCP/IP Fields May Disable DHCP Relay Agent Service"
-permalink: kb/227/Q227880/
+permalink: /kb/227/Q227880/
 ---
 
 ## Q227880: Modifying TCP/IP Fields May Disable DHCP Relay Agent Service

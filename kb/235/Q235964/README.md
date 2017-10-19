@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235964: Recovery Operation for Certificate Server May Invalidate Keys"
-permalink: kb/235/Q235964/
+permalink: /kb/235/Q235964/
 ---
 
 ## Q235964: Recovery Operation for Certificate Server May Invalidate Keys

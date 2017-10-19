@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194199: FIX: Not All Setup Wizard Options Are Saved in Wzsetup.ini"
-permalink: kb/194/Q194199/
+permalink: /kb/194/Q194199/
 ---
 
 ## Q194199: FIX: Not All Setup Wizard Options Are Saved in Wzsetup.ini

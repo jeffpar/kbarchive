@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89171: Using the Invisible Network with Windows"
-permalink: kb/089/Q89171/
+permalink: /kb/089/Q89171/
 ---
 
 ## Q89171: Using the Invisible Network with Windows

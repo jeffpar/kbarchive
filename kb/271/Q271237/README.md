@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271237: Magic School Bus: Sound Is Not Played in Program"
-permalink: kb/271/Q271237/
+permalink: /kb/271/Q271237/
 ---
 
 ## Q271237: Magic School Bus: Sound Is Not Played in Program

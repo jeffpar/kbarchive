@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88272: DOCERR: DSKLAYT2.EXE /V (Verbose) Switch Not Documented"
-permalink: kb/088/Q88272/
+permalink: /kb/088/Q88272/
 ---
 
 ## Q88272: DOCERR: DSKLAYT2.EXE /V (Verbose) Switch Not Documented

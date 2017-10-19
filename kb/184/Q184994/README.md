@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184994: XFOR: How to Send SMTP Mail to cc:Mail's SMTP Gateway"
-permalink: kb/184/Q184994/
+permalink: /kb/184/Q184994/
 ---
 
 ## Q184994: XFOR: How to Send SMTP Mail to cc:Mail's SMTP Gateway

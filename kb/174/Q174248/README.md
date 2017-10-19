@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174248: Index Server 1.1 Does Not Index German Compound Words"
-permalink: kb/174/Q174248/
+permalink: /kb/174/Q174248/
 ---
 
 ## Q174248: Index Server 1.1 Does Not Index German Compound Words

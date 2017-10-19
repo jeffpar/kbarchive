@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192590: Encarta: What Happens When You Score 20,000 Points in MindMaze"
-permalink: kb/192/Q192590/
+permalink: /kb/192/Q192590/
 ---
 
 ## Q192590: Encarta: What Happens When You Score 20,000 Points in MindMaze

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148476: Intermittent Swing Problems in Microsoft Golf"
-permalink: kb/148/Q148476/
+permalink: /kb/148/Q148476/
 ---
 
 ## Q148476: Intermittent Swing Problems in Microsoft Golf

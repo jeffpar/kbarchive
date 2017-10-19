@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163479: MSB Dinos: Name Game: Close Captioning Doesn't Match Crystals"
-permalink: kb/163/Q163479/
+permalink: /kb/163/Q163479/
 ---
 
 ## Q163479: MSB Dinos: Name Game: Close Captioning Doesn't Match Crystals

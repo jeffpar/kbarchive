@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100454: Mac Srv: Definition of Mail Server Threads"
-permalink: kb/100/Q100454/
+permalink: /kb/100/Q100454/
 ---
 
 ## Q100454: Mac Srv: Definition of Mail Server Threads

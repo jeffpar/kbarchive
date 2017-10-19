@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310573: Train Simulator: You Cannot Open the Train Simulator Manual"
-permalink: kb/310/Q310573/
+permalink: /kb/310/Q310573/
 ---
 
 ## Q310573: Train Simulator: You Cannot Open the Train Simulator Manual

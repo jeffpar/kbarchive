@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126054: Location of Windows NT Multimedia Drivers in the Registry"
-permalink: kb/126/Q126054/
+permalink: /kb/126/Q126054/
 ---
 
 ## Q126054: Location of Windows NT Multimedia Drivers in the Registry

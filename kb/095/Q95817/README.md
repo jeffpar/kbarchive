@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95817: PPT: Scaling Lines and Arrowheads"
-permalink: kb/095/Q95817/
+permalink: /kb/095/Q95817/
 ---
 
 ## Q95817: PPT: Scaling Lines and Arrowheads

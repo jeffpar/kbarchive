@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92394: HOWTO: Filter Keystrokes in Controls Derived from CEdit Class"
-permalink: kb/092/Q92394/
+permalink: /kb/092/Q92394/
 ---
 
 ## Q92394: HOWTO: Filter Keystrokes in Controls Derived from CEdit Class

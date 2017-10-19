@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194409: SAMPLE: RESFILE.EXE Stores Any File Type in a Resource File"
-permalink: kb/194/Q194409/
+permalink: /kb/194/Q194409/
 ---
 
 ## Q194409: SAMPLE: RESFILE.EXE Stores Any File Type in a Resource File

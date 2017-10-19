@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172887: FIX: Debugger Cannot Safely Change Current Location"
-permalink: kb/172/Q172887/
+permalink: /kb/172/Q172887/
 ---
 
 ## Q172887: FIX: Debugger Cannot Safely Change Current Location

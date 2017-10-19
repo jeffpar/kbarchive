@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94940: Interlnk Cannot Access CD-ROM Drives or Network Drives"
-permalink: kb/094/Q94940/
+permalink: /kb/094/Q94940/
 ---
 
 ## Q94940: Interlnk Cannot Access CD-ROM Drives or Network Drives

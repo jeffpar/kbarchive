@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158237: SAMPLE: Vfpie3.exe Shows How to Automate Internet Explorer 3.0"
-permalink: kb/158/Q158237/
+permalink: /kb/158/Q158237/
 ---
 
 ## Q158237: SAMPLE: Vfpie3.exe Shows How to Automate Internet Explorer 3.0

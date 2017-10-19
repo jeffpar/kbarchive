@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115314: File Manager Error Copying Files to Write-Protected Disk"
-permalink: kb/115/Q115314/
+permalink: /kb/115/Q115314/
 ---
 
 ## Q115314: File Manager Error Copying Files to Write-Protected Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146747: XCLN: Subject Not Changed When Forwarding Message"
-permalink: kb/146/Q146747/
+permalink: /kb/146/Q146747/
 ---
 
 ## Q146747: XCLN: Subject Not Changed When Forwarding Message

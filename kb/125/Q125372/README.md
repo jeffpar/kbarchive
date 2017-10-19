@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125372: How To Check for a Floppy Disk Using FOXTOOLS"
-permalink: kb/125/Q125372/
+permalink: /kb/125/Q125372/
 ---
 
 ## Q125372: How To Check for a Floppy Disk Using FOXTOOLS

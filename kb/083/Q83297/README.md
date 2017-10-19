@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83297: Using a CGA Display Adapter with Windows"
-permalink: kb/083/Q83297/
+permalink: /kb/083/Q83297/
 ---
 
 ## Q83297: Using a CGA Display Adapter with Windows

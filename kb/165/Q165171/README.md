@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165171: DOC: USE Command Incorrectly Documented in Help File &amp; Manual"
-permalink: kb/165/Q165171/
+permalink: /kb/165/Q165171/
 ---
 
 ## Q165171: DOC: USE Command Incorrectly Documented in Help File &amp; Manual

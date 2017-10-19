@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139314: CONN: Err Msg: Ambiguous Address: More than One Recipient..."
-permalink: kb/139/Q139314/
+permalink: /kb/139/Q139314/
 ---
 
 ## Q139314: CONN: Err Msg: Ambiguous Address: More than One Recipient...

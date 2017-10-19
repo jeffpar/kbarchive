@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87314: TrueType Problems with PS388 PostScript Board"
-permalink: kb/087/Q87314/
+permalink: /kb/087/Q87314/
 ---
 
 ## Q87314: TrueType Problems with PS388 PostScript Board

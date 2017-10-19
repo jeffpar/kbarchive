@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312941: PRB: IIS May Hang If You Enable ASP Server-Side Script Debugging"
-permalink: kb/312/Q312941/
+permalink: /kb/312/Q312941/
 ---
 
 ## Q312941: PRB: IIS May Hang If You Enable ASP Server-Side Script Debugging

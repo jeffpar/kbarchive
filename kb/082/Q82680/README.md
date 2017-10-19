@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82680: SCSI Controllers and Swap Files Under Windows 3.1"
-permalink: kb/082/Q82680/
+permalink: /kb/082/Q82680/
 ---
 
 ## Q82680: SCSI Controllers and Swap Files Under Windows 3.1

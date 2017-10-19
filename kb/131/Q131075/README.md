@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131075: Mac Wkst: Default User Preferences"
-permalink: kb/131/Q131075/
+permalink: /kb/131/Q131075/
 ---
 
 ## Q131075: Mac Wkst: Default User Preferences

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309654: STREETS: Err Msg: The Main Application Cannot Be Launched"
-permalink: kb/309/Q309654/
+permalink: /kb/309/Q309654/
 ---
 
 ## Q309654: STREETS: Err Msg: The Main Application Cannot Be Launched

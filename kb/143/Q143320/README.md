@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143320: INFO: List of Problems Solved by Visual FoxPro 3.0 for Windows"
-permalink: kb/143/Q143320/
+permalink: /kb/143/Q143320/
 ---
 
 ## Q143320: INFO: List of Problems Solved by Visual FoxPro 3.0 for Windows

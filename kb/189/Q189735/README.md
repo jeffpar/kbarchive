@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189735: BUG: Removing Collection Elements Takes Longer Than Expected"
-permalink: kb/189/Q189735/
+permalink: /kb/189/Q189735/
 ---
 
 ## Q189735: BUG: Removing Collection Elements Takes Longer Than Expected

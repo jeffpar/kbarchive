@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253536: Modifying the HTML Search Results Page in MMS"
-permalink: kb/253/Q253536/
+permalink: /kb/253/Q253536/
 ---
 
 ## Q253536: Modifying the HTML Search Results Page in MMS

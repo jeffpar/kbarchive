@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246214: XADM: Directory Logging 1349 GUID Changed Events When RPC Errors"
-permalink: kb/246/Q246214/
+permalink: /kb/246/Q246214/
 ---
 
 ## Q246214: XADM: Directory Logging 1349 GUID Changed Events When RPC Errors

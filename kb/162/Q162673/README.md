@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162673: FIX: ASCAN() Fails to Find Integer Value when Called in a Loop"
-permalink: kb/162/Q162673/
+permalink: /kb/162/Q162673/
 ---
 
 ## Q162673: FIX: ASCAN() Fails to Find Integer Value when Called in a Loop

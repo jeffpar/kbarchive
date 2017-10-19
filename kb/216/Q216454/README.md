@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216454: Print Jobs Formatted Incorrectly If Using &quot;No Line Formatting&quot;"
-permalink: kb/216/Q216454/
+permalink: /kb/216/Q216454/
 ---
 
 ## Q216454: Print Jobs Formatted Incorrectly If Using &quot;No Line Formatting&quot;

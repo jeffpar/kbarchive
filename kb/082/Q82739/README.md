@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82739: SUN PC-NFS Version 3.5C and Windows 3.1"
-permalink: kb/082/Q82739/
+permalink: /kb/082/Q82739/
 ---
 
 ## Q82739: SUN PC-NFS Version 3.5C and Windows 3.1

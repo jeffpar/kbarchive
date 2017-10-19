@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246144: FS2000: Computer Stops Responding the First Time You Play Game"
-permalink: kb/246/Q246144/
+permalink: /kb/246/Q246144/
 ---
 
 ## Q246144: FS2000: Computer Stops Responding the First Time You Play Game

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143176: How to Compile IIS MIB Files"
-permalink: kb/143/Q143176/
+permalink: /kb/143/Q143176/
 ---
 
 ## Q143176: How to Compile IIS MIB Files

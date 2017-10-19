@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258921: XADM: ILS Servername and ILS Username Attributes in Exchange"
-permalink: kb/258/Q258921/
+permalink: /kb/258/Q258921/
 ---
 
 ## Q258921: XADM: ILS Servername and ILS Username Attributes in Exchange

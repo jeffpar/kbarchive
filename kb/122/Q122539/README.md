@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122539: BUG: C4786 or C1067 Caused by Long Identifier and /Zi"
-permalink: kb/122/Q122539/
+permalink: /kb/122/Q122539/
 ---
 
 ## Q122539: BUG: C4786 or C1067 Caused by Long Identifier and /Zi

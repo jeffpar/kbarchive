@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194033: PRB: Treeview Node Visible Property Still True When Not Viewable"
-permalink: kb/194/Q194033/
+permalink: /kb/194/Q194033/
 ---
 
 ## Q194033: PRB: Treeview Node Visible Property Still True When Not Viewable

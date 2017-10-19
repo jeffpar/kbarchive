@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99205: PC WSPlus: Err Msg: Not Enough Memory to Display Dialog Box"
-permalink: kb/099/Q99205/
+permalink: /kb/099/Q99205/
 ---
 
 ## Q99205: PC WSPlus: Err Msg: Not Enough Memory to Display Dialog Box

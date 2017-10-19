@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193379: HOWTO: Print Preview in Visual Basic Applications"
-permalink: kb/193/Q193379/
+permalink: /kb/193/Q193379/
 ---
 
 ## Q193379: HOWTO: Print Preview in Visual Basic Applications

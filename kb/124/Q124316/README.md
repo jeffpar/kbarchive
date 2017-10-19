@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124316: BUG: Use of Vertical Bar (&#124;) Generates Syntax Error"
-permalink: kb/124/Q124316/
+permalink: /kb/124/Q124316/
 ---
 
 ## Q124316: BUG: Use of Vertical Bar (&#124;) Generates Syntax Error

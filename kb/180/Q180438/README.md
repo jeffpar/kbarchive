@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180438: Problems If Screen Saver Password Is More Than 14 Characters"
-permalink: kb/180/Q180438/
+permalink: /kb/180/Q180438/
 ---
 
 ## Q180438: Problems If Screen Saver Password Is More Than 14 Characters

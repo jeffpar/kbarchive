@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157613: WD97: Bullet Symbol Changes After Roundtrip Conversion"
-permalink: kb/157/Q157613/
+permalink: /kb/157/Q157613/
 ---
 
 ## Q157613: WD97: Bullet Symbol Changes After Roundtrip Conversion

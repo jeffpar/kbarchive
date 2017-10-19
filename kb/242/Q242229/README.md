@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242229: HOWTO: Create An OCX View with the MMC Snap-in Designer for VB"
-permalink: kb/242/Q242229/
+permalink: /kb/242/Q242229/
 ---
 
 ## Q242229: HOWTO: Create An OCX View with the MMC Snap-in Designer for VB

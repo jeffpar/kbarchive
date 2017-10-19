@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85358: FAX: How Dir-Sync Affects the Fax Gateway Address List"
-permalink: kb/085/Q85358/
+permalink: /kb/085/Q85358/
 ---
 
 ## Q85358: FAX: How Dir-Sync Affects the Fax Gateway Address List

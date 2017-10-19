@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60230: How MS-DOS Communicates with Serial Ports"
-permalink: kb/060/Q60230/
+permalink: /kb/060/Q60230/
 ---
 
 ## Q60230: How MS-DOS Communicates with Serial Ports

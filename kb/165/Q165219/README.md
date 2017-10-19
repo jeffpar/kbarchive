@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165219: SNA Manager Status Bar Panes Don't Adjust for Non-Default Font"
-permalink: kb/165/Q165219/
+permalink: /kb/165/Q165219/
 ---
 
 ## Q165219: SNA Manager Status Bar Panes Don't Adjust for Non-Default Font

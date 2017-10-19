@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141270: Day Starts/Ends At Settings Rounded to 30 Minutes"
-permalink: kb/141/Q141270/
+permalink: /kb/141/Q141270/
 ---
 
 ## Q141270: Day Starts/Ends At Settings Rounded to 30 Minutes

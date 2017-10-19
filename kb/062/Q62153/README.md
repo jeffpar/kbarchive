@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62153: Schweizer 2-32 Sailplane Performance Specifications"
-permalink: kb/062/Q62153/
+permalink: /kb/062/Q62153/
 ---
 
 ## Q62153: Schweizer 2-32 Sailplane Performance Specifications

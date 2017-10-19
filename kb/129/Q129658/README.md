@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129658: Reading and Writing Aldus Placeable Metafiles"
-permalink: kb/129/Q129658/
+permalink: /kb/129/Q129658/
 ---
 
 ## Q129658: Reading and Writing Aldus Placeable Metafiles

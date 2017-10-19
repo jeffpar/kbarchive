@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84989: Access for Windows 3270 Does Not Support TrueType"
-permalink: kb/084/Q84989/
+permalink: /kb/084/Q84989/
 ---
 
 ## Q84989: Access for Windows 3270 Does Not Support TrueType

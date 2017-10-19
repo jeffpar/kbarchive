@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95943: PC Win: Offline Symbol Appears in Status Bar"
-permalink: kb/095/Q95943/
+permalink: /kb/095/Q95943/
 ---
 
 ## Q95943: PC Win: Offline Symbol Appears in Status Bar

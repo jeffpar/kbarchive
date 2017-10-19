@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74797: FormEdit.exe Implements Sizable Form Fields in Windows"
-permalink: kb/074/Q74797/
+permalink: /kb/074/Q74797/
 ---
 
 ## Q74797: FormEdit.exe Implements Sizable Form Fields in Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133023: How to List Number of Records in Each Group of a SQL Group By"
-permalink: kb/133/Q133023/
+permalink: /kb/133/Q133023/
 ---
 
 ## Q133023: How to List Number of Records in Each Group of a SQL Group By

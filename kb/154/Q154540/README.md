@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154540: Printer Setup Looks for Drivers on Network Share"
-permalink: kb/154/Q154540/
+permalink: /kb/154/Q154540/
 ---
 
 ## Q154540: Printer Setup Looks for Drivers on Network Share

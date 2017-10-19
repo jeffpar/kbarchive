@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136688: FIX: Class Browser: Multiple Control Boxes with Maximized .VCX"
-permalink: kb/136/Q136688/
+permalink: /kb/136/Q136688/
 ---
 
 ## Q136688: FIX: Class Browser: Multiple Control Boxes with Maximized .VCX

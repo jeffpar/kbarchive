@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165994: Cinemania 96: Film Clips Do Not Play When Clicked"
-permalink: kb/165/Q165994/
+permalink: /kb/165/Q165994/
 ---
 
 ## Q165994: Cinemania 96: Film Clips Do Not Play When Clicked

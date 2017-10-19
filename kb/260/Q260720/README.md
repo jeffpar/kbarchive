@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260720: How to Create a Modemlog.txt File"
-permalink: kb/260/Q260720/
+permalink: /kb/260/Q260720/
 ---
 
 ## Q260720: How to Create a Modemlog.txt File

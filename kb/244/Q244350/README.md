@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244350: Memory Leaks in &quot;Drsd&quot; Tag When Printing to Generic Text Printer"
-permalink: kb/244/Q244350/
+permalink: /kb/244/Q244350/
 ---
 
 ## Q244350: Memory Leaks in &quot;Drsd&quot; Tag When Printing to Generic Text Printer

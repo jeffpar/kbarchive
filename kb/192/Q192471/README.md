@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192471: DOCERR: SMS Resource Guide Lists Wrong Option for PREINST"
-permalink: kb/192/Q192471/
+permalink: /kb/192/Q192471/
 ---
 
 ## Q192471: DOCERR: SMS Resource Guide Lists Wrong Option for PREINST

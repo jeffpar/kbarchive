@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128742: PC MAPI: Custom Messages Do Not Work with IPC Messages"
-permalink: kb/128/Q128742/
+permalink: /kb/128/Q128742/
 ---
 
 ## Q128742: PC MAPI: Custom Messages Do Not Work with IPC Messages

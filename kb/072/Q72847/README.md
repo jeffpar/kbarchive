@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72847: PC Win: Win Client Creates Shared Folders Without Privileges"
-permalink: kb/072/Q72847/
+permalink: /kb/072/Q72847/
 ---
 
 ## Q72847: PC Win: Win Client Creates Shared Folders Without Privileges

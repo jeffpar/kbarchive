@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186515: Do Not Run Terminal Server in Installation Mode"
-permalink: kb/186/Q186515/
+permalink: /kb/186/Q186515/
 ---
 
 ## Q186515: Do Not Run Terminal Server in Installation Mode

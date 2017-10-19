@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89381: Install HP Ultra VGA and Appian Rendition as Standard VGA"
-permalink: kb/089/Q89381/
+permalink: /kb/089/Q89381/
 ---
 
 ## Q89381: Install HP Ultra VGA and Appian Rendition as Standard VGA

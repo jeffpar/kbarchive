@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152879: Schedule+ 7.0 is Unable to Write to Schedule+ 1.0 CAL"
-permalink: kb/152/Q152879/
+permalink: /kb/152/Q152879/
 ---
 
 ## Q152879: Schedule+ 7.0 is Unable to Write to Schedule+ 1.0 CAL

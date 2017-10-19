@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274622: Combat Flight Simulator 2: Slow Performance on High-End Computer"
-permalink: kb/274/Q274622/
+permalink: /kb/274/Q274622/
 ---
 
 ## Q274622: Combat Flight Simulator 2: Slow Performance on High-End Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116250: Windows 95 Err Msg: Registry File Was Not Found"
-permalink: kb/116/Q116250/
+permalink: /kb/116/Q116250/
 ---
 
 ## Q116250: Windows 95 Err Msg: Registry File Was Not Found

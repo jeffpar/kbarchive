@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81813: Hooking Interrupt 21h Before Windows"
-permalink: kb/081/Q81813/
+permalink: /kb/081/Q81813/
 ---
 
 ## Q81813: Hooking Interrupt 21h Before Windows

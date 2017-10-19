@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258424: Distmgr.log Shows Errors If Distribution Pt Is Updated"
-permalink: kb/258/Q258424/
+permalink: /kb/258/Q258424/
 ---
 
 ## Q258424: Distmgr.log Shows Errors If Distribution Pt Is Updated

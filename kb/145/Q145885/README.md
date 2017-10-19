@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145885: Running 16-bit 3270/FMI Applications on Windows NT &amp; Windows 95"
-permalink: kb/145/Q145885/
+permalink: /kb/145/Q145885/
 ---
 
 ## Q145885: Running 16-bit 3270/FMI Applications on Windows NT &amp; Windows 95

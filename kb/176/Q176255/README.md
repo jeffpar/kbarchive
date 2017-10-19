@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176255: Bookshelf 98: Hard to tell Focus Box from Window Background"
-permalink: kb/176/Q176255/
+permalink: /kb/176/Q176255/
 ---
 
 ## Q176255: Bookshelf 98: Hard to tell Focus Box from Window Background

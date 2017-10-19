@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129297: Cannot Connect to The Microsoft Network in Safe Mode"
-permalink: kb/129/Q129297/
+permalink: /kb/129/Q129297/
 ---
 
 ## Q129297: Cannot Connect to The Microsoft Network in Safe Mode

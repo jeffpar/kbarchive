@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154645: INF: ODBC Desktop Driver Pack 2.0 Does Not Install ODBCADM"
-permalink: kb/154/Q154645/
+permalink: /kb/154/Q154645/
 ---
 
 ## Q154645: INF: ODBC Desktop Driver Pack 2.0 Does Not Install ODBCADM

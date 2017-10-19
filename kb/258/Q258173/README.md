@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258173: BUG: Chart Control Axis Label's WordWrap Property Does Not Work"
-permalink: kb/258/Q258173/
+permalink: /kb/258/Q258173/
 ---
 
 ## Q258173: BUG: Chart Control Axis Label's WordWrap Property Does Not Work

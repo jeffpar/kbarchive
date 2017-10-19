@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129884: PRB: HWNDs on OLE Controls Are Not Persistent"
-permalink: kb/129/Q129884/
+permalink: /kb/129/Q129884/
 ---
 
 ## Q129884: PRB: HWNDs on OLE Controls Are Not Persistent

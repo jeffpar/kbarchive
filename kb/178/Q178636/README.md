@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178636: Directory Listing Not Correct When Using Russian Characters"
-permalink: kb/178/Q178636/
+permalink: /kb/178/Q178636/
 ---
 
 ## Q178636: Directory Listing Not Correct When Using Russian Characters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301513: Ads Do Not Appear When Going Online From Offline Mode With &quot;My S"
-permalink: kb/301/Q301513/
+permalink: /kb/301/Q301513/
 ---
 
 ## Q301513: Ads Do Not Appear When Going Online From Offline Mode With &quot;My S

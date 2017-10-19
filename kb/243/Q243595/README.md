@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243595: XADM: Resetting Default &amp; Anonymous Permissions on Public Folder"
-permalink: kb/243/Q243595/
+permalink: /kb/243/Q243595/
 ---
 
 ## Q243595: XADM: Resetting Default &amp; Anonymous Permissions on Public Folder

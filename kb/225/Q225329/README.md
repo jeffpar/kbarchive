@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225329: Access Violation in Resource Monitor (Resrcmon.exe)"
-permalink: kb/225/Q225329/
+permalink: /kb/225/Q225329/
 ---
 
 ## Q225329: Access Violation in Resource Monitor (Resrcmon.exe)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235801: SMS: ODPSYS Refreshes Every 60 Minutes Regardless of Interval"
-permalink: kb/235/Q235801/
+permalink: /kb/235/Q235801/
 ---
 
 ## Q235801: SMS: ODPSYS Refreshes Every 60 Minutes Regardless of Interval

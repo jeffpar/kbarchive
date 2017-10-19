@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119150: FIX: Memory Leak with ODBC Driver Manager During Connection"
-permalink: kb/119/Q119150/
+permalink: /kb/119/Q119150/
 ---
 
 ## Q119150: FIX: Memory Leak with ODBC Driver Manager During Connection

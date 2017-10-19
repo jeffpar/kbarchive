@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157466: WD: WordArt Object Missing, Changes After Conversion"
-permalink: kb/157/Q157466/
+permalink: /kb/157/Q157466/
 ---
 
 ## Q157466: WD: WordArt Object Missing, Changes After Conversion

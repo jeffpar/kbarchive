@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138570: PRB: LIST STRUCTURE Command Truncates Long Field Names"
-permalink: kb/138/Q138570/
+permalink: /kb/138/Q138570/
 ---
 
 ## Q138570: PRB: LIST STRUCTURE Command Truncates Long Field Names

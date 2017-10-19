@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248326: Automap: Stops Responding When You Start Program"
-permalink: kb/248/Q248326/
+permalink: /kb/248/Q248326/
 ---
 
 ## Q248326: Automap: Stops Responding When You Start Program

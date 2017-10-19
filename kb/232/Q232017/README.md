@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232017: HOWTO: Add Text to Toolbar Buttons"
-permalink: kb/232/Q232017/
+permalink: /kb/232/Q232017/
 ---
 
 ## Q232017: HOWTO: Add Text to Toolbar Buttons

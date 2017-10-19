@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300065: Tips That Help Keep Passport User Data Safe"
-permalink: kb/300/Q300065/
+permalink: /kb/300/Q300065/
 ---
 
 ## Q300065: Tips That Help Keep Passport User Data Safe

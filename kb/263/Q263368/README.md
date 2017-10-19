@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263368: Membership of User and User Group Collections Is Not Updated"
-permalink: kb/263/Q263368/
+permalink: /kb/263/Q263368/
 ---
 
 ## Q263368: Membership of User and User Group Collections Is Not Updated

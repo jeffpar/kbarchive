@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62352: Windows 3.0 Enhanced Mode Hangs at Startup on Super VGA"
-permalink: kb/062/Q62352/
+permalink: /kb/062/Q62352/
 ---
 
 ## Q62352: Windows 3.0 Enhanced Mode Hangs at Startup on Super VGA

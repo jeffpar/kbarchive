@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260865: StarLancer: Video Clips Are Not Played Smoothly"
-permalink: kb/260/Q260865/
+permalink: /kb/260/Q260865/
 ---
 
 ## Q260865: StarLancer: Video Clips Are Not Played Smoothly

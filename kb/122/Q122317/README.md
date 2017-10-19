@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122317: TCP/IP-32 May Fail on Token Ring Network with Source Routing"
-permalink: kb/122/Q122317/
+permalink: /kb/122/Q122317/
 ---
 
 ## Q122317: TCP/IP-32 May Fail on Token Ring Network with Source Routing

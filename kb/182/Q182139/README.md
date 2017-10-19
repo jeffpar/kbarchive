@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182139: LUA Pool Cannot Be Assigned to Two TN3270 Servers"
-permalink: kb/182/Q182139/
+permalink: /kb/182/Q182139/
 ---
 
 ## Q182139: LUA Pool Cannot Be Assigned to Two TN3270 Servers

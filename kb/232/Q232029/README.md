@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232029: XFOR: Scheduled Dirsync Retries when Import Container Missing"
-permalink: kb/232/Q232029/
+permalink: /kb/232/Q232029/
 ---
 
 ## Q232029: XFOR: Scheduled Dirsync Retries when Import Container Missing

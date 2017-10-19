@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107169: GI_BOTADDR Documented Incorrectly"
-permalink: kb/107/Q107169/
+permalink: /kb/107/Q107169/
 ---
 
 ## Q107169: GI_BOTADDR Documented Incorrectly

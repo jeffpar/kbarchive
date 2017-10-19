@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280325: XCON: Text Wraps Unexpectedly in P772 Message"
-permalink: kb/280/Q280325/
+permalink: /kb/280/Q280325/
 ---
 
 ## Q280325: XCON: Text Wraps Unexpectedly in P772 Message

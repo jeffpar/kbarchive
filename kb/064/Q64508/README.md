@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64508: Novell XMSNETx.COM and EMSNETx.COM with Windows"
-permalink: kb/064/Q64508/
+permalink: /kb/064/Q64508/
 ---
 
 ## Q64508: Novell XMSNETx.COM and EMSNETx.COM with Windows

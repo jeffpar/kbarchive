@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197260: Encarta 99: Natural Language Search Disk Space Requirements"
-permalink: kb/197/Q197260/
+permalink: /kb/197/Q197260/
 ---
 
 ## Q197260: Encarta 99: Natural Language Search Disk Space Requirements

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185276: Err Msg: Error Writing to LPTx. The System Cannot Find..."
-permalink: kb/185/Q185276/
+permalink: /kb/185/Q185276/
 ---
 
 ## Q185276: Err Msg: Error Writing to LPTx. The System Cannot Find...

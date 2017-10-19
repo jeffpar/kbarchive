@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75276: OFFSET Always Returns the END of a Segment Name"
-permalink: kb/075/Q75276/
+permalink: /kb/075/Q75276/
 ---
 
 ## Q75276: OFFSET Always Returns the END of a Segment Name

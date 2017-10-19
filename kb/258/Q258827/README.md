@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258827: INFO: Visual Basic Object Browser Cannot See the Default Interfa"
-permalink: kb/258/Q258827/
+permalink: /kb/258/Q258827/
 ---
 
 ## Q258827: INFO: Visual Basic Object Browser Cannot See the Default Interfa

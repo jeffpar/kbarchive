@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181556: SMS: Cannot Query on Historical Inventory with SmsView.exe"
-permalink: kb/181/Q181556/
+permalink: /kb/181/Q181556/
 ---
 
 ## Q181556: SMS: Cannot Query on Historical Inventory with SmsView.exe

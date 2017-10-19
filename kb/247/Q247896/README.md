@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247896: SMS: Setup May Not Install All Components"
-permalink: kb/247/Q247896/
+permalink: /kb/247/Q247896/
 ---
 
 ## Q247896: SMS: Setup May Not Install All Components

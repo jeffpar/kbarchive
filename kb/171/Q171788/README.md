@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171788: Windows NT SP2 Replaces NTFS File Permissions on SP2 Files"
-permalink: kb/171/Q171788/
+permalink: /kb/171/Q171788/
 ---
 
 ## Q171788: Windows NT SP2 Replaces NTFS File Permissions on SP2 Files

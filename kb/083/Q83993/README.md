@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83993: PRB: No Files Copied Installing Windows SDK 3.1"
-permalink: kb/083/Q83993/
+permalink: /kb/083/Q83993/
 ---
 
 ## Q83993: PRB: No Files Copied Installing Windows SDK 3.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113063: FIX: Visual C++ Setup Messages for File Copying Errors"
-permalink: kb/113/Q113063/
+permalink: /kb/113/Q113063/
 ---
 
 ## Q113063: FIX: Visual C++ Setup Messages for File Copying Errors

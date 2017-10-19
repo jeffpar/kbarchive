@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266422: SMS: Remote Control May Not Work with Matrox G400 Video Adapters"
-permalink: kb/266/Q266422/
+permalink: /kb/266/Q266422/
 ---
 
 ## Q266422: SMS: Remote Control May Not Work with Matrox G400 Video Adapters

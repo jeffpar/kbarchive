@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300972: Unchecked Buffer in ISAPI Extension Can Cause Server Compromise"
-permalink: kb/300/Q300972/
+permalink: /kb/300/Q300972/
 ---
 
 ## Q300972: Unchecked Buffer in ISAPI Extension Can Cause Server Compromise

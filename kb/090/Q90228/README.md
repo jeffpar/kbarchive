@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90228: Primary File Server Suggested MS-DOS Configuration Changes"
-permalink: kb/090/Q90228/
+permalink: /kb/090/Q90228/
 ---
 
 ## Q90228: Primary File Server Suggested MS-DOS Configuration Changes

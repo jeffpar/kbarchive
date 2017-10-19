@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195819: AS/400 APPC Printing Lost Spool File Attributes"
-permalink: kb/195/Q195819/
+permalink: /kb/195/Q195819/
 ---
 
 ## Q195819: AS/400 APPC Printing Lost Spool File Attributes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303007: Sounds Do Not Play In MSN Explorer"
-permalink: kb/303/Q303007/
+permalink: /kb/303/Q303007/
 ---
 
 ## Q303007: Sounds Do Not Play In MSN Explorer

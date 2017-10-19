@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231743: WD97: Dot Leaders Do Not Print Correctly"
-permalink: kb/231/Q231743/
+permalink: /kb/231/Q231743/
 ---
 
 ## Q231743: WD97: Dot Leaders Do Not Print Correctly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67021: Fontware Installation Kit Unable to Use Bitstream SoftFonts"
-permalink: kb/067/Q67021/
+permalink: /kb/067/Q67021/
 ---
 
 ## Q67021: Fontware Installation Kit Unable to Use Bitstream SoftFonts

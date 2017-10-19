@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75742: Display Driver Compatibility"
-permalink: kb/075/Q75742/
+permalink: /kb/075/Q75742/
 ---
 
 ## Q75742: Display Driver Compatibility

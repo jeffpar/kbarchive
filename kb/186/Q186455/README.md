@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186455: Mgmtapi.dll Opens Trap Socket in Exclusive Mode"
-permalink: kb/186/Q186455/
+permalink: /kb/186/Q186455/
 ---
 
 ## Q186455: Mgmtapi.dll Opens Trap Socket in Exclusive Mode

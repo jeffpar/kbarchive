@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193598: IP Conflict After Installing Windows NT Load Balancing Service"
-permalink: kb/193/Q193598/
+permalink: /kb/193/Q193598/
 ---
 
 ## Q193598: IP Conflict After Installing Windows NT Load Balancing Service

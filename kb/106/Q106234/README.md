@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106234: Mail Does Not Remember Password"
-permalink: kb/106/Q106234/
+permalink: /kb/106/Q106234/
 ---
 
 ## Q106234: Mail Does Not Remember Password

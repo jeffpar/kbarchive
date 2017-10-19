@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151614: Differences in Dhcpcmd.exe in WinNT 3.5, 3.51, and 4.0"
-permalink: kb/151/Q151614/
+permalink: /kb/151/Q151614/
 ---
 
 ## Q151614: Differences in Dhcpcmd.exe in WinNT 3.5, 3.51, and 4.0

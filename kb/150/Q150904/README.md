@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150904: DDE Link Stops Updating After Closing Another Link"
-permalink: kb/150/Q150904/
+permalink: /kb/150/Q150904/
 ---
 
 ## Q150904: DDE Link Stops Updating After Closing Another Link

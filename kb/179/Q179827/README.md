@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179827: Registry Handle Leak Causes Random Blue Screens"
-permalink: kb/179/Q179827/
+permalink: /kb/179/Q179827/
 ---
 
 ## Q179827: Registry Handle Leak Causes Random Blue Screens

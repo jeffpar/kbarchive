@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175104: XFOR: AppleDouble Attachments Lost When Message Converts"
-permalink: kb/175/Q175104/
+permalink: /kb/175/Q175104/
 ---
 
 ## Q175104: XFOR: AppleDouble Attachments Lost When Message Converts

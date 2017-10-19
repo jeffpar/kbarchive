@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154925: Copy Disk Command Missing from Floppy Disk Drive Context Menu"
-permalink: kb/154/Q154925/
+permalink: /kb/154/Q154925/
 ---
 
 ## Q154925: Copy Disk Command Missing from Floppy Disk Drive Context Menu

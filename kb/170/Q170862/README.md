@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170862: Virtual Servers and HOST Name Resolution"
-permalink: kb/170/Q170862/
+permalink: /kb/170/Q170862/
 ---
 
 ## Q170862: Virtual Servers and HOST Name Resolution

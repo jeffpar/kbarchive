@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176538: XADM: Display Name Missing for RFC 822 &quot;Group:;&quot; Address"
-permalink: kb/176/Q176538/
+permalink: /kb/176/Q176538/
 ---
 
 ## Q176538: XADM: Display Name Missing for RFC 822 &quot;Group:;&quot; Address

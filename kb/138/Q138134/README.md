@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138134: RPLDISK.SYS Error on 3Com 3Station Remoteboot Workstation"
-permalink: kb/138/Q138134/
+permalink: /kb/138/Q138134/
 ---
 
 ## Q138134: RPLDISK.SYS Error on 3Com 3Station Remoteboot Workstation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295040: SMS: How to Enable SQL Cache Logging in SMS Provider"
-permalink: kb/295/Q295040/
+permalink: /kb/295/Q295040/
 ---
 
 ## Q295040: SMS: How to Enable SQL Cache Logging in SMS Provider

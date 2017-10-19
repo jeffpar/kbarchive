@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133133: USER32.DBG Link Date Does Not Match USER32.DLL"
-permalink: kb/133/Q133133/
+permalink: /kb/133/Q133133/
 ---
 
 ## Q133133: USER32.DBG Link Date Does Not Match USER32.DLL

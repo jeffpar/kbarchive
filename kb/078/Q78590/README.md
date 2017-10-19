@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78590: Xerox XC 6060 Computer Hangs with MS-DOS ANSI.SYS"
-permalink: kb/078/Q78590/
+permalink: /kb/078/Q78590/
 ---
 
 ## Q78590: Xerox XC 6060 Computer Hangs with MS-DOS ANSI.SYS

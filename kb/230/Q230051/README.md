@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230051: XFOR: Internet Mail Connector Dial-Up Connection Stops Working"
-permalink: kb/230/Q230051/
+permalink: /kb/230/Q230051/
 ---
 
 ## Q230051: XFOR: Internet Mail Connector Dial-Up Connection Stops Working

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164369: PRB: View Designer Rewrites WHERE Clause"
-permalink: kb/164/Q164369/
+permalink: /kb/164/Q164369/
 ---
 
 ## Q164369: PRB: View Designer Rewrites WHERE Clause

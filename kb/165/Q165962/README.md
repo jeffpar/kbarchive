@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165962: WinNT Spooler Service Verifies Printer Drivers Are Correct"
-permalink: kb/165/Q165962/
+permalink: /kb/165/Q165962/
 ---
 
 ## Q165962: WinNT Spooler Service Verifies Printer Drivers Are Correct

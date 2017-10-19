@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198128: PRB: Accessing WINMODEM with MSComm Control Can Hang Application"
-permalink: kb/198/Q198128/
+permalink: /kb/198/Q198128/
 ---
 
 ## Q198128: PRB: Accessing WINMODEM with MSComm Control Can Hang Application

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132654: Setup Error Message: You Need to Run Setup from MS-DOS Mode"
-permalink: kb/132/Q132654/
+permalink: /kb/132/Q132654/
 ---
 
 ## Q132654: Setup Error Message: You Need to Run Setup from MS-DOS Mode

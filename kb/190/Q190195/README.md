@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190195: HOWTO: Extract Information from Excel Sheet with DAO"
-permalink: kb/190/Q190195/
+permalink: /kb/190/Q190195/
 ---
 
 ## Q190195: HOWTO: Extract Information from Excel Sheet with DAO

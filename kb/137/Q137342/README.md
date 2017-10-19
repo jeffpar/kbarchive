@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137342: Incorrect Drive Size Reported Using Compaq SmartSCSI Array"
-permalink: kb/137/Q137342/
+permalink: /kb/137/Q137342/
 ---
 
 ## Q137342: Incorrect Drive Size Reported Using Compaq SmartSCSI Array

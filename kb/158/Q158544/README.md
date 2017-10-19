@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158544: IBM Multiprotocol SDLC Adapter Not Work on HP Vectra XU 6/15"
-permalink: kb/158/Q158544/
+permalink: /kb/158/Q158544/
 ---
 
 ## Q158544: IBM Multiprotocol SDLC Adapter Not Work on HP Vectra XU 6/15

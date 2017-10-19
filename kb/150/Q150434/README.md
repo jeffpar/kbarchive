@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150434: PRB: Field Width Increases When Use Visual FoxPro ODBC Driver"
-permalink: kb/150/Q150434/
+permalink: /kb/150/Q150434/
 ---
 
 ## Q150434: PRB: Field Width Increases When Use Visual FoxPro ODBC Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169545: WD97: GetSpellingSuggestions Method Causes Errors"
-permalink: kb/169/Q169545/
+permalink: /kb/169/Q169545/
 ---
 
 ## Q169545: WD97: GetSpellingSuggestions Method Causes Errors

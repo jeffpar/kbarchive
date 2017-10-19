@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238756: XFOR: Migration Fails w/Attached Appt. in GroupWise 5.x Msgs."
-permalink: kb/238/Q238756/
+permalink: /kb/238/Q238756/
 ---
 
 ## Q238756: XFOR: Migration Fails w/Attached Appt. in GroupWise 5.x Msgs.

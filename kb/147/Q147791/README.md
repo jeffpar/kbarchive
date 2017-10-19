@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147791: Small Outbound RU Size Causes Access Violations on TN3270"
-permalink: kb/147/Q147791/
+permalink: /kb/147/Q147791/
 ---
 
 ## Q147791: Small Outbound RU Size Causes Access Violations on TN3270

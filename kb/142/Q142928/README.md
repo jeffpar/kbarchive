@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142928: PRB: Bound ListBox Doesn't Show List Item When MultiSelect = 2"
-permalink: kb/142/Q142928/
+permalink: /kb/142/Q142928/
 ---
 
 ## Q142928: PRB: Bound ListBox Doesn't Show List Item When MultiSelect = 2

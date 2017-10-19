@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196037: AFTP Server Displays Incorrect Date for Files after 1999"
-permalink: kb/196/Q196037/
+permalink: /kb/196/Q196037/
 ---
 
 ## Q196037: AFTP Server Displays Incorrect Date for Files after 1999

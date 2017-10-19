@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119308: PROFS: Gateway Export Generates Two Notes to PROFS/OV UserID"
-permalink: kb/119/Q119308/
+permalink: /kb/119/Q119308/
 ---
 
 ## Q119308: PROFS: Gateway Export Generates Two Notes to PROFS/OV UserID

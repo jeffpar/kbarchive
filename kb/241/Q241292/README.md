@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241292: XADM: Collabra Migration Objects - File Attachments Not Visible"
-permalink: kb/241/Q241292/
+permalink: /kb/241/Q241292/
 ---
 
 ## Q241292: XADM: Collabra Migration Objects - File Attachments Not Visible

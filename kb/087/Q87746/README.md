@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87746: WordPerfect Loads Slowly After Installing CorelDRAW 3.0"
-permalink: kb/087/Q87746/
+permalink: /kb/087/Q87746/
 ---
 
 ## Q87746: WordPerfect Loads Slowly After Installing CorelDRAW 3.0

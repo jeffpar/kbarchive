@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138990: No Ball on Table in 3D Pinball"
-permalink: kb/138/Q138990/
+permalink: /kb/138/Q138990/
 ---
 
 ## Q138990: No Ball on Table in 3D Pinball

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130456: Comparing Visual FoxPro to Other Programming Languages"
-permalink: kb/130/Q130456/
+permalink: /kb/130/Q130456/
 ---
 
 ## Q130456: Comparing Visual FoxPro to Other Programming Languages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199466: SMS: How to Set Up SQL Server Integrated Security For Use w/ SMS"
-permalink: kb/199/Q199466/
+permalink: /kb/199/Q199466/
 ---
 
 ## Q199466: SMS: How to Set Up SQL Server Integrated Security For Use w/ SMS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149918: BUG: SQLState S1011 on SQL_AUTOCOMMIT_OFF with Active Results"
-permalink: kb/149/Q149918/
+permalink: /kb/149/Q149918/
 ---
 
 ## Q149918: BUG: SQLState S1011 on SQL_AUTOCOMMIT_OFF with Active Results

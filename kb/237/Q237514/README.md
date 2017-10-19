@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237514: Encarta Encyclopedia: Unable to Copy or Print Images"
-permalink: kb/237/Q237514/
+permalink: /kb/237/Q237514/
 ---
 
 ## Q237514: Encarta Encyclopedia: Unable to Copy or Print Images

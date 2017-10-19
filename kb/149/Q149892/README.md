@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149892: XCON: Web Client Cannot Post Reply to Public Folder on IPM.Note"
-permalink: kb/149/Q149892/
+permalink: /kb/149/Q149892/
 ---
 
 ## Q149892: XCON: Web Client Cannot Post Reply to Public Folder on IPM.Note

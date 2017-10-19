@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81987: Windows 3.1 May Prompt for System Disk During Network Setup"
-permalink: kb/081/Q81987/
+permalink: /kb/081/Q81987/
 ---
 
 ## Q81987: Windows 3.1 May Prompt for System Disk During Network Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112337: PRB: /MD Causes C4273 Warning When Replacing _matherr"
-permalink: kb/112/Q112337/
+permalink: /kb/112/Q112337/
 ---
 
 ## Q112337: PRB: /MD Causes C4273 Warning When Replacing _matherr

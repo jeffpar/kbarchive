@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174174: XADM: Incorrect Error Message When Configuring MSMAIL Connector"
-permalink: kb/174/Q174174/
+permalink: /kb/174/Q174174/
 ---
 
 ## Q174174: XADM: Incorrect Error Message When Configuring MSMAIL Connector

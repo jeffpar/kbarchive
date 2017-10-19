@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248817: Bookshelf 2000: Error Message When Using QuickSynonym in Word"
-permalink: kb/248/Q248817/
+permalink: /kb/248/Q248817/
 ---
 
 ## Q248817: Bookshelf 2000: Error Message When Using QuickSynonym in Word

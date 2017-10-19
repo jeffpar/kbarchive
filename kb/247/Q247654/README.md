@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247654: XADM: Directory Replication Doesn't Work, Event 1171"
-permalink: kb/247/Q247654/
+permalink: /kb/247/Q247654/
 ---
 
 ## Q247654: XADM: Directory Replication Doesn't Work, Event 1171

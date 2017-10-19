@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221429: XFOR: Continuous Retry Of Dirsync If Options Tab Not Configured"
-permalink: kb/221/Q221429/
+permalink: /kb/221/Q221429/
 ---
 
 ## Q221429: XFOR: Continuous Retry Of Dirsync If Options Tab Not Configured

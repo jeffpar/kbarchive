@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158978: FIX: SQL Debugger Stops Working"
-permalink: kb/158/Q158978/
+permalink: /kb/158/Q158978/
 ---
 
 ## Q158978: FIX: SQL Debugger Stops Working

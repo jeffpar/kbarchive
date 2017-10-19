@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200645: SMS: Dumpsend.exe: Display Send Request for SMS 2.0"
-permalink: kb/200/Q200645/
+permalink: /kb/200/Q200645/
 ---
 
 ## Q200645: SMS: Dumpsend.exe: Display Send Request for SMS 2.0

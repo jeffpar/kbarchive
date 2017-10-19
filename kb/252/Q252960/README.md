@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252960: Asheron's Call: How to Retrieve Items After Your Character Dies"
-permalink: kb/252/Q252960/
+permalink: /kb/252/Q252960/
 ---
 
 ## Q252960: Asheron's Call: How to Retrieve Items After Your Character Dies

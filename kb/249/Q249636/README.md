@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249636: HOWTO: Use the CoSetProxyBlanket Function in Visual Basic"
-permalink: kb/249/Q249636/
+permalink: /kb/249/Q249636/
 ---
 
 ## Q249636: HOWTO: Use the CoSetProxyBlanket Function in Visual Basic

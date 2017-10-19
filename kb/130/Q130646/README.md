@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130646: PRB: DAO References Not Enabled When Porting an Older VB App"
-permalink: kb/130/Q130646/
+permalink: /kb/130/Q130646/
 ---
 
 ## Q130646: PRB: DAO References Not Enabled When Porting an Older VB App

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87976: HOWTO: Creating a Foundation Classes Dialog Box with Custom Icon"
-permalink: kb/087/Q87976/
+permalink: /kb/087/Q87976/
 ---
 
 ## Q87976: HOWTO: Creating a Foundation Classes Dialog Box with Custom Icon

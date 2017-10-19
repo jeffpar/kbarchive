@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163543: XCLN: Getting Started Guide Graphics Display Fuzzy on Macintosh"
-permalink: kb/163/Q163543/
+permalink: /kb/163/Q163543/
 ---
 
 ## Q163543: XCLN: Getting Started Guide Graphics Display Fuzzy on Macintosh

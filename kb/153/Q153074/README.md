@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153074: Administrators Can't Remove All Users from Built-in Groups"
-permalink: kb/153/Q153074/
+permalink: /kb/153/Q153074/
 ---
 
 ## Q153074: Administrators Can't Remove All Users from Built-in Groups

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183563: Error Msg: &quot;Invalid Bookmark&quot; Accessing Mainframe Files"
-permalink: kb/183/Q183563/
+permalink: /kb/183/Q183563/
 ---
 
 ## Q183563: Error Msg: &quot;Invalid Bookmark&quot; Accessing Mainframe Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154820: FIX: Common Dialog May Not Display the Current Font"
-permalink: kb/154/Q154820/
+permalink: /kb/154/Q154820/
 ---
 
 ## Q154820: FIX: Common Dialog May Not Display the Current Font

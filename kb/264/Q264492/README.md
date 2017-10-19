@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264492: Heap Corruption Occurs When DHCP Is Restarted"
-permalink: kb/264/Q264492/
+permalink: /kb/264/Q264492/
 ---
 
 ## Q264492: Heap Corruption Occurs When DHCP Is Restarted

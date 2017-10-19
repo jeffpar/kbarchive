@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136926: HOWTO: Improve Performance of SQL Queries"
-permalink: kb/136/Q136926/
+permalink: /kb/136/Q136926/
 ---
 
 ## Q136926: HOWTO: Improve Performance of SQL Queries

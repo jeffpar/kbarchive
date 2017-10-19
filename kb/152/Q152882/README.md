@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152882: XCON: Unnecessary Files Left in Work Directory"
-permalink: kb/152/Q152882/
+permalink: /kb/152/Q152882/
 ---
 
 ## Q152882: XCON: Unnecessary Files Left in Work Directory

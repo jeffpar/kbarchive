@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158227: Mac Encarta 97: Pasting Text into Search Box Finds Nothing"
-permalink: kb/158/Q158227/
+permalink: /kb/158/Q158227/
 ---
 
 ## Q158227: Mac Encarta 97: Pasting Text into Search Box Finds Nothing

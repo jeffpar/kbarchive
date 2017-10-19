@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123346: FILE: Migrat.exe Contains the FoxPro Migration Tool"
-permalink: kb/123/Q123346/
+permalink: /kb/123/Q123346/
 ---
 
 ## Q123346: FILE: Migrat.exe Contains the FoxPro Migration Tool

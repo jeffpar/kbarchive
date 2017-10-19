@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199471: XCLN: ODK Silent Installation Prompts if IE 4.01 is Installed"
-permalink: kb/199/Q199471/
+permalink: /kb/199/Q199471/
 ---
 
 ## Q199471: XCLN: ODK Silent Installation Prompts if IE 4.01 is Installed

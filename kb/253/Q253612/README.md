@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253612: BUG: Printers Collection May Not Contain All Printers in Folder"
-permalink: kb/253/Q253612/
+permalink: /kb/253/Q253612/
 ---
 
 ## Q253612: BUG: Printers Collection May Not Contain All Printers in Folder

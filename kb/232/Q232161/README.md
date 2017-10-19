@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232161: Changing the Location of Your Certificate Revocation List (CRL)"
-permalink: kb/232/Q232161/
+permalink: /kb/232/Q232161/
 ---
 
 ## Q232161: Changing the Location of Your Certificate Revocation List (CRL)

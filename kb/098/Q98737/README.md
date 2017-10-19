@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98737: Cannot Run MS-DOS Compatibility Box"
-permalink: kb/098/Q98737/
+permalink: /kb/098/Q98737/
 ---
 
 ## Q98737: Cannot Run MS-DOS Compatibility Box

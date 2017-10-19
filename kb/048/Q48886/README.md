@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48886: Mac Wkst: Chime Sounds When Volume Set to Zero"
-permalink: kb/048/Q48886/
+permalink: /kb/048/Q48886/
 ---
 
 ## Q48886: Mac Wkst: Chime Sounds When Volume Set to Zero

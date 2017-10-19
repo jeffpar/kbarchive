@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194993: Calling Card Settings Ignored by Phone Dialer"
-permalink: kb/194/Q194993/
+permalink: /kb/194/Q194993/
 ---
 
 ## Q194993: Calling Card Settings Ignored by Phone Dialer

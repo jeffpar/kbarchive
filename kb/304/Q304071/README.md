@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304071: BUG: WebClass Application with Japanese Templates May Fail"
-permalink: kb/304/Q304071/
+permalink: /kb/304/Q304071/
 ---
 
 ## Q304071: BUG: WebClass Application with Japanese Templates May Fail

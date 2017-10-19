@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102870: Reading the Boot Sector of a Drive"
-permalink: kb/102/Q102870/
+permalink: /kb/102/Q102870/
 ---
 
 ## Q102870: Reading the Boot Sector of a Drive

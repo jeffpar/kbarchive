@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166206: WD97: Month, Day Transposed After Updating Form Field"
-permalink: kb/166/Q166206/
+permalink: /kb/166/Q166206/
 ---
 
 ## Q166206: WD97: Month, Day Transposed After Updating Form Field

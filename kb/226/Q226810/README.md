@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226810: Can't Type Backward Slash in Remote Control w/German Keyboard"
-permalink: kb/226/Q226810/
+permalink: /kb/226/Q226810/
 ---
 
 ## Q226810: Can't Type Backward Slash in Remote Control w/German Keyboard

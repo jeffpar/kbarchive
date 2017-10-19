@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174263: MP Tutor Preschool &amp; Kindergarten: Minimum System Requirements"
-permalink: kb/174/Q174263/
+permalink: /kb/174/Q174263/
 ---
 
 ## Q174263: MP Tutor Preschool &amp; Kindergarten: Minimum System Requirements

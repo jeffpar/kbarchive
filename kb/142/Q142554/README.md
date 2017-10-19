@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142554: How to Use the Box Method to Create a Shadow Effect"
-permalink: kb/142/Q142554/
+permalink: /kb/142/Q142554/
 ---
 
 ## Q142554: How to Use the Box Method to Create a Shadow Effect

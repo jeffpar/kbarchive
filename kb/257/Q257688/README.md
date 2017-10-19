@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257688: FIX: Printer Object Fails to Track Default Printer"
-permalink: kb/257/Q257688/
+permalink: /kb/257/Q257688/
 ---
 
 ## Q257688: FIX: Printer Object Fails to Track Default Printer

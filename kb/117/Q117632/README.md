@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117632: Column Delimiter Options Toggle Incorrectly"
-permalink: kb/117/Q117632/
+permalink: /kb/117/Q117632/
 ---
 
 ## Q117632: Column Delimiter Options Toggle Incorrectly

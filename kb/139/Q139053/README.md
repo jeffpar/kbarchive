@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139053: BUG: Can't Set Some Background/Foreground Colors in InfoViewer"
-permalink: kb/139/Q139053/
+permalink: /kb/139/Q139053/
 ---
 
 ## Q139053: BUG: Can't Set Some Background/Foreground Colors in InfoViewer

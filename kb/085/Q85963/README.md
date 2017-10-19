@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85963: Lotus 1-2-3 for Windows Allows Spaces in Filenames"
-permalink: kb/085/Q85963/
+permalink: /kb/085/Q85963/
 ---
 
 ## Q85963: Lotus 1-2-3 for Windows Allows Spaces in Filenames

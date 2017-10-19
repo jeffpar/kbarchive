@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183576: Problems Using Visual Basic Sample Program (ado_vb)"
-permalink: kb/183/Q183576/
+permalink: /kb/183/Q183576/
 ---
 
 ## Q183576: Problems Using Visual Basic Sample Program (ado_vb)

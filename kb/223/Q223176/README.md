@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223176: Manual Installation of Compression Filter Fails"
-permalink: kb/223/Q223176/
+permalink: /kb/223/Q223176/
 ---
 
 ## Q223176: Manual Installation of Compression Filter Fails

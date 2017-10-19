@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189900: PRB: HyperLink Object Does Not Support Moving to FILE: URL"
-permalink: kb/189/Q189900/
+permalink: /kb/189/Q189900/
 ---
 
 ## Q189900: PRB: HyperLink Object Does Not Support Moving to FILE: URL

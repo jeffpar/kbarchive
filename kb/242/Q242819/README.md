@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242819: Flight Simulator 2000: How to Refuel Your Aircraft"
-permalink: kb/242/Q242819/
+permalink: /kb/242/Q242819/
 ---
 
 ## Q242819: Flight Simulator 2000: How to Refuel Your Aircraft

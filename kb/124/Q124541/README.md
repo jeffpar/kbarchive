@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124541: Use UPTOMP.EXE to Upgrade Single-Processor to Multiprocessor"
-permalink: kb/124/Q124541/
+permalink: /kb/124/Q124541/
 ---
 
 ## Q124541: Use UPTOMP.EXE to Upgrade Single-Processor to Multiprocessor

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86455: WINFILE.INI with Hidden or System Attibute Causes GP Fault"
-permalink: kb/086/Q86455/
+permalink: /kb/086/Q86455/
 ---
 
 ## Q86455: WINFILE.INI with Hidden or System Attibute Causes GP Fault

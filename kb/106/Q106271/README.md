@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106271: WINVER.EXE Reports Incorrect Version"
-permalink: kb/106/Q106271/
+permalink: /kb/106/Q106271/
 ---
 
 ## Q106271: WINVER.EXE Reports Incorrect Version

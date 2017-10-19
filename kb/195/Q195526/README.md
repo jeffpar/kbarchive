@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195526: HOWTO: Retrieve Primary Keys for SQL Server Tables"
-permalink: kb/195/Q195526/
+permalink: /kb/195/Q195526/
 ---
 
 ## Q195526: HOWTO: Retrieve Primary Keys for SQL Server Tables

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92363: Problems Printing Graphs from Quattro Pro for Windows"
-permalink: kb/092/Q92363/
+permalink: /kb/092/Q92363/
 ---
 
 ## Q92363: Problems Printing Graphs from Quattro Pro for Windows

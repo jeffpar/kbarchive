@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107756: PC Win: Err Msg: Mail System Error. Mail Could Not Read..."
-permalink: kb/107/Q107756/
+permalink: /kb/107/Q107756/
 ---
 
 ## Q107756: PC Win: Err Msg: Mail System Error. Mail Could Not Read...

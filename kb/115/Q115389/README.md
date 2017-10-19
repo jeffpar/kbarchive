@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115389: Obtaining Knowledge Base Articles on the Internet"
-permalink: kb/115/Q115389/
+permalink: /kb/115/Q115389/
 ---
 
 ## Q115389: Obtaining Knowledge Base Articles on the Internet

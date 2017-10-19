@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297869: Issues After You Modify Kerberos MaxTokenSize Registry Value"
-permalink: kb/297/Q297869/
+permalink: /kb/297/Q297869/
 ---
 
 ## Q297869: Issues After You Modify Kerberos MaxTokenSize Registry Value

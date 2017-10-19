@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141983: XCLN: Msg: Do You Want to Save Changes to This Item?"
-permalink: kb/141/Q141983/
+permalink: /kb/141/Q141983/
 ---
 
 ## Q141983: XCLN: Msg: Do You Want to Save Changes to This Item?

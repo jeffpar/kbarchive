@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319467: Flight Simulator 2002: Documentation Errors in Help"
-permalink: kb/319/Q319467/
+permalink: /kb/319/Q319467/
 ---
 
 ## Q319467: Flight Simulator 2002: Documentation Errors in Help

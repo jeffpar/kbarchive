@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153733: PRB: Wrong Mfc40.dll and Msvcrt40.dll from ActiveX CD-ROM Disc"
-permalink: kb/153/Q153733/
+permalink: /kb/153/Q153733/
 ---
 
 ## Q153733: PRB: Wrong Mfc40.dll and Msvcrt40.dll from ActiveX CD-ROM Disc

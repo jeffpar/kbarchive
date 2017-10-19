@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88450: Golf: Gender Selected Automatically When Using Keyboard"
-permalink: kb/088/Q88450/
+permalink: /kb/088/Q88450/
 ---
 
 ## Q88450: Golf: Gender Selected Automatically When Using Keyboard

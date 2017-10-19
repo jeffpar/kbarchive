@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260065: XIMS: STARTTLS Unavailable When Connecting To Loopback"
-permalink: kb/260/Q260065/
+permalink: /kb/260/Q260065/
 ---
 
 ## Q260065: XIMS: STARTTLS Unavailable When Connecting To Loopback

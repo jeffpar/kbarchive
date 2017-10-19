@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89399: Double-Clicking Multimedia Icon Does Not Start Program"
-permalink: kb/089/Q89399/
+permalink: /kb/089/Q89399/
 ---
 
 ## Q89399: Double-Clicking Multimedia Icon Does Not Start Program

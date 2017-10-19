@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157214: XCON: Deleting a &quot;Bad&quot; Message from the MTA Queue"
-permalink: kb/157/Q157214/
+permalink: /kb/157/Q157214/
 ---
 
 ## Q157214: XCON: Deleting a &quot;Bad&quot; Message from the MTA Queue

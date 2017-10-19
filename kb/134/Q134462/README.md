@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134462: Fonts May Be Listed Twice in Contents Tab of Properties"
-permalink: kb/134/Q134462/
+permalink: /kb/134/Q134462/
 ---
 
 ## Q134462: Fonts May Be Listed Twice in Contents Tab of Properties

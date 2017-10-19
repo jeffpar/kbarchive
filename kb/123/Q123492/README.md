@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123492: FIX: Link /SECTION Option Does Not Check for Name Errors"
-permalink: kb/123/Q123492/
+permalink: /kb/123/Q123492/
 ---
 
 ## Q123492: FIX: Link /SECTION Option Does Not Check for Name Errors

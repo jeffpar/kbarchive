@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123161: BUG: ios::internal Adds No Fill Characters for int and long"
-permalink: kb/123/Q123161/
+permalink: /kb/123/Q123161/
 ---
 
 ## Q123161: BUG: ios::internal Adds No Fill Characters for int and long

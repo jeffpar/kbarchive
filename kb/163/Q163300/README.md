@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163300: WD97: Differences Between Word and FrontPage for Web Authoring"
-permalink: kb/163/Q163300/
+permalink: /kb/163/Q163300/
 ---
 
 ## Q163300: WD97: Differences Between Word and FrontPage for Web Authoring

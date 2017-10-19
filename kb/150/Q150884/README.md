@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150884: FIX: C1001 Fatal Error in File Main.c, Line 413 for /O1 or /O2"
-permalink: kb/150/Q150884/
+permalink: /kb/150/Q150884/
 ---
 
 ## Q150884: FIX: C1001 Fatal Error in File Main.c, Line 413 for /O1 or /O2

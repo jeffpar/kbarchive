@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150195: FIX: Hidden MDIChild Form Can Still Be Active Form"
-permalink: kb/150/Q150195/
+permalink: /kb/150/Q150195/
 ---
 
 ## Q150195: FIX: Hidden MDIChild Form Can Still Be Active Form

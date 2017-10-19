@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130541: PCMCIA Modem Does Not Emit Sound When Dialing"
-permalink: kb/130/Q130541/
+permalink: /kb/130/Q130541/
 ---
 
 ## Q130541: PCMCIA Modem Does Not Emit Sound When Dialing

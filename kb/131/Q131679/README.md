@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131679: PC NTMMTA: Detecting Memory Bottlenecks"
-permalink: kb/131/Q131679/
+permalink: /kb/131/Q131679/
 ---
 
 ## Q131679: PC NTMMTA: Detecting Memory Bottlenecks

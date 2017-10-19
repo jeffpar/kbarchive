@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158095: XCLN: Using ShivaRemote with Exchange (Win 3.x/LanMan NetBEUI)"
-permalink: kb/158/Q158095/
+permalink: /kb/158/Q158095/
 ---
 
 ## Q158095: XCLN: Using ShivaRemote with Exchange (Win 3.x/LanMan NetBEUI)

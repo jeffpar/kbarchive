@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125043: DCA DFT Link Service Fails (Event ID 252)"
-permalink: kb/125/Q125043/
+permalink: /kb/125/Q125043/
 ---
 
 ## Q125043: DCA DFT Link Service Fails (Event ID 252)

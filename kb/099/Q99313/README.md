@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99313: Password Duration Parameters and Update Procedures"
-permalink: kb/099/Q99313/
+permalink: /kb/099/Q99313/
 ---
 
 ## Q99313: Password Duration Parameters and Update Procedures

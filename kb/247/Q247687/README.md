@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247687: Incorrect Partition Size Reported After Creating Volume Set"
-permalink: kb/247/Q247687/
+permalink: /kb/247/Q247687/
 ---
 
 ## Q247687: Incorrect Partition Size Reported After Creating Volume Set

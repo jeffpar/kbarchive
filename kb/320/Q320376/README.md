@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320376: PRB: SAK Error Scheduling Disk Reports"
-permalink: kb/320/Q320376/
+permalink: /kb/320/Q320376/
 ---
 
 ## Q320376: PRB: SAK Error Scheduling Disk Reports

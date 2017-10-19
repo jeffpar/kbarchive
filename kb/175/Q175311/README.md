@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175311: Bookshelf 98: Copyright Information Not Printed with Articles"
-permalink: kb/175/Q175311/
+permalink: /kb/175/Q175311/
 ---
 
 ## Q175311: Bookshelf 98: Copyright Information Not Printed with Articles

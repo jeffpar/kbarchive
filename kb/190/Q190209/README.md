@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190209: BUG: Seek Returns Unexpected Value When File Opened for Append"
-permalink: kb/190/Q190209/
+permalink: /kb/190/Q190209/
 ---
 
 ## Q190209: BUG: Seek Returns Unexpected Value When File Opened for Append

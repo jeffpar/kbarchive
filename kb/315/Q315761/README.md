@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315761: FIX: SQLTables() with a Server-Side Cursor Returns No Data"
-permalink: kb/315/Q315761/
+permalink: /kb/315/Q315761/
 ---
 
 ## Q315761: FIX: SQLTables() with a Server-Side Cursor Returns No Data

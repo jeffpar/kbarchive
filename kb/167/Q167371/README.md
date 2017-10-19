@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167371: WD97: Changing Orientation After Changing Columns Causes Error"
-permalink: kb/167/Q167371/
+permalink: /kb/167/Q167371/
 ---
 
 ## Q167371: WD97: Changing Orientation After Changing Columns Causes Error

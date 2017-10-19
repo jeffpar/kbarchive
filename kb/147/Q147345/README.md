@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147345: Error Message: The Search Could Not Be Started"
-permalink: kb/147/Q147345/
+permalink: /kb/147/Q147345/
 ---
 
 ## Q147345: Error Message: The Search Could Not Be Started

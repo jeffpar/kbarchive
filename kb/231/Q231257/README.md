@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231257: SMS: Software Metering Does Not Reserve License When Checked Out"
-permalink: kb/231/Q231257/
+permalink: /kb/231/Q231257/
 ---
 
 ## Q231257: SMS: Software Metering Does Not Reserve License When Checked Out

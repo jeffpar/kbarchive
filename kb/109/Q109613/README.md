@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109613: How to Run Another Application from FoxPro for Macintosh"
-permalink: kb/109/Q109613/
+permalink: /kb/109/Q109613/
 ---
 
 ## Q109613: How to Run Another Application from FoxPro for Macintosh

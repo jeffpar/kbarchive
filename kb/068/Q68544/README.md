@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68544: How to Hide and Unhide Subdirectories in File Manager"
-permalink: kb/068/Q68544/
+permalink: /kb/068/Q68544/
 ---
 
 ## Q68544: How to Hide and Unhide Subdirectories in File Manager

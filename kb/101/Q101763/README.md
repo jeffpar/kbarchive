@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101763: MS-DOS Err Msg: &quot;Unrecoverable Error&quot; Returning to MS-DOS 5.x"
-permalink: kb/101/Q101763/
+permalink: /kb/101/Q101763/
 ---
 
 ## Q101763: MS-DOS Err Msg: &quot;Unrecoverable Error&quot; Returning to MS-DOS 5.x

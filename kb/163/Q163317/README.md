@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163317: MS-DOS Compatibility Mode When Booting from Removable Disk"
-permalink: kb/163/Q163317/
+permalink: /kb/163/Q163317/
 ---
 
 ## Q163317: MS-DOS Compatibility Mode When Booting from Removable Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136621: Description of Full, Incremental, and Differential Backups"
-permalink: kb/136/Q136621/
+permalink: /kb/136/Q136621/
 ---
 
 ## Q136621: Description of Full, Incremental, and Differential Backups

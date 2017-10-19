@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323732: ENSO:XADM: Cannot Access the Public Folder Data"
-permalink: kb/323/Q323732/
+permalink: /kb/323/Q323732/
 ---
 
 ## Q323732: ENSO:XADM: Cannot Access the Public Folder Data

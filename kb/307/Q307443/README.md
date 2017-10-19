@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307443: INFO: 16-Bit Version of Visual C++ Articles Are Archived"
-permalink: kb/307/Q307443/
+permalink: /kb/307/Q307443/
 ---
 
 ## Q307443: INFO: 16-Bit Version of Visual C++ Articles Are Archived

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163170: Kids Plus!: PolEdit and Protect It! Interfere with Start Menu"
-permalink: kb/163/Q163170/
+permalink: /kb/163/Q163170/
 ---
 
 ## Q163170: Kids Plus!: PolEdit and Protect It! Interfere with Start Menu

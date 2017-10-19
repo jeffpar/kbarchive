@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238191: Partial Replication May Take a Long Time with Very Large Groups"
-permalink: kb/238/Q238191/
+permalink: /kb/238/Q238191/
 ---
 
 ## Q238191: Partial Replication May Take a Long Time with Very Large Groups

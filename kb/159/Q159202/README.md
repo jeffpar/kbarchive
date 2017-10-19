@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159202: SMS: Deleted User Groups Are Not Removed from the SMS Database"
-permalink: kb/159/Q159202/
+permalink: /kb/159/Q159202/
 ---
 
 ## Q159202: SMS: Deleted User Groups Are Not Removed from the SMS Database

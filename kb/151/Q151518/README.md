@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151518: SNADS and PROFS Addresses Have Wrong Gateway Information"
-permalink: kb/151/Q151518/
+permalink: /kb/151/Q151518/
 ---
 
 ## Q151518: SNADS and PROFS Addresses Have Wrong Gateway Information

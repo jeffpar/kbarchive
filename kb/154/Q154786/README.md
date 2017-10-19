@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154786: Cannot Launch New Campaign with ATI Mach8 Display Driver"
-permalink: kb/154/Q154786/
+permalink: /kb/154/Q154786/
 ---
 
 ## Q154786: Cannot Launch New Campaign with ATI Mach8 Display Driver

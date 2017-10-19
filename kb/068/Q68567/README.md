@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68567: Default Environment Size for MS-DOS 5.0 and Later"
-permalink: kb/068/Q68567/
+permalink: /kb/068/Q68567/
 ---
 
 ## Q68567: Default Environment Size for MS-DOS 5.0 and Later

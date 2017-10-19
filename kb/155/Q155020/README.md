@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155020: Cannot Boot Windows NT from CD-ROM"
-permalink: kb/155/Q155020/
+permalink: /kb/155/Q155020/
 ---
 
 ## Q155020: Cannot Boot Windows NT from CD-ROM

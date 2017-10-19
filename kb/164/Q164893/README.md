@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164893: SNA Server Client Can Overwrite SNA Server Installation"
-permalink: kb/164/Q164893/
+permalink: /kb/164/Q164893/
 ---
 
 ## Q164893: SNA Server Client Can Overwrite SNA Server Installation

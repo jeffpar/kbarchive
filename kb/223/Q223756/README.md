@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223756: IRDP Client Support Added to Windows NT 4.0"
-permalink: kb/223/Q223756/
+permalink: /kb/223/Q223756/
 ---
 
 ## Q223756: IRDP Client Support Added to Windows NT 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68748: Set Up IBM DOS LAN Requester as LAN Manager 2.0 Enhanced"
-permalink: kb/068/Q68748/
+permalink: /kb/068/Q68748/
 ---
 
 ## Q68748: Set Up IBM DOS LAN Requester as LAN Manager 2.0 Enhanced

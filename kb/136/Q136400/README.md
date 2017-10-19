@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136400: INFO: Changing Visual SourceSafe User Name in Visual Basic"
-permalink: kb/136/Q136400/
+permalink: /kb/136/Q136400/
 ---
 
 ## Q136400: INFO: Changing Visual SourceSafe User Name in Visual Basic

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254711: XADM: Certificate Renewal Occurs Right After Clicking Renew All"
-permalink: kb/254/Q254711/
+permalink: /kb/254/Q254711/
 ---
 
 ## Q254711: XADM: Certificate Renewal Occurs Right After Clicking Renew All

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165325: Cybex Switch Boxes Fails to Recognize Mouse After Upgrade"
-permalink: kb/165/Q165325/
+permalink: /kb/165/Q165325/
 ---
 
 ## Q165325: Cybex Switch Boxes Fails to Recognize Mouse After Upgrade

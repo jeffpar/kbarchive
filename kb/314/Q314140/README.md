@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314140: Flight Simulator 2002: Performance Is Slow and Choppy"
-permalink: kb/314/Q314140/
+permalink: /kb/314/Q314140/
 ---
 
 ## Q314140: Flight Simulator 2002: Performance Is Slow and Choppy

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302572: Supported Printers"
-permalink: kb/302/Q302572/
+permalink: /kb/302/Q302572/
 ---
 
 ## Q302572: Supported Printers

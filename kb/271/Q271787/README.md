@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271787: PRB: Application.Lock and Application.UnLock Hangs IIS 5.0"
-permalink: kb/271/Q271787/
+permalink: /kb/271/Q271787/
 ---
 
 ## Q271787: PRB: Application.Lock and Application.UnLock Hangs IIS 5.0

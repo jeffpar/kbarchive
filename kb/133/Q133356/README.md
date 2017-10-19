@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133356: Form Wizard Makes EditBox for Fields Longer Than 45 Characters"
-permalink: kb/133/Q133356/
+permalink: /kb/133/Q133356/
 ---
 
 ## Q133356: Form Wizard Makes EditBox for Fields Longer Than 45 Characters

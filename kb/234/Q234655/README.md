@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234655: Err Msg: Unable to Log You on Because the Netlogon Service..."
-permalink: kb/234/Q234655/
+permalink: /kb/234/Q234655/
 ---
 
 ## Q234655: Err Msg: Unable to Log You on Because the Netlogon Service...

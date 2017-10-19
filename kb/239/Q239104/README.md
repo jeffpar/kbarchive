@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239104: Jet Expression Can Execute Unsafe VBA Functions"
-permalink: kb/239/Q239104/
+permalink: /kb/239/Q239104/
 ---
 
 ## Q239104: Jet Expression Can Execute Unsafe VBA Functions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131432: MAC Encarta 1995: Encarta and Memory Readme Contents"
-permalink: kb/131/Q131432/
+permalink: /kb/131/Q131432/
 ---
 
 ## Q131432: MAC Encarta 1995: Encarta and Memory Readme Contents

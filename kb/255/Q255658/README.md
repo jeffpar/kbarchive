@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255658: SMS: Manage SMS Users Does Not Remove Users from SMS Admins"
-permalink: kb/255/Q255658/
+permalink: /kb/255/Q255658/
 ---
 
 ## Q255658: SMS: Manage SMS Users Does Not Remove Users from SMS Admins

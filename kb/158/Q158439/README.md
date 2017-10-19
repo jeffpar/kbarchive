@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158439: Files with Long Extensions Bypass the Recycle Bin When Deleted"
-permalink: kb/158/Q158439/
+permalink: /kb/158/Q158439/
 ---
 
 ## Q158439: Files with Long Extensions Bypass the Recycle Bin When Deleted

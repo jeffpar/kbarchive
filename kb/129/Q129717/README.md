@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129717: Err Msg: Cannot Rename Folder: Cannot Find the Specified..."
-permalink: kb/129/Q129717/
+permalink: /kb/129/Q129717/
 ---
 
 ## Q129717: Err Msg: Cannot Rename Folder: Cannot Find the Specified...

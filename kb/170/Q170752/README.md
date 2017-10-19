@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170752: PRB: The Internet Transfer Control Causes &quot;Invalid Callee&quot; Error"
-permalink: kb/170/Q170752/
+permalink: /kb/170/Q170752/
 ---
 
 ## Q170752: PRB: The Internet Transfer Control Causes &quot;Invalid Callee&quot; Error

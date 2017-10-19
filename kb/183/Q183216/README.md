@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183216: PRB: AtlAdvise() Returns 80004002, 80040200, or 80040202 Errors"
-permalink: kb/183/Q183216/
+permalink: /kb/183/Q183216/
 ---
 
 ## Q183216: PRB: AtlAdvise() Returns 80004002, 80040200, or 80040202 Errors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154576: HOWTO: Write to the Windows NT Event Log from Visual Basic"
-permalink: kb/154/Q154576/
+permalink: /kb/154/Q154576/
 ---
 
 ## Q154576: HOWTO: Write to the Windows NT Event Log from Visual Basic

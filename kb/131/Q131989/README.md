@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131989: PRB: PreCreateWindow() Not Called for CFormView"
-permalink: kb/131/Q131989/
+permalink: /kb/131/Q131989/
 ---
 
 ## Q131989: PRB: PreCreateWindow() Not Called for CFormView

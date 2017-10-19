@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257772: FIX: Updates to Textbox Bound to MSRDC Fail, rdUseClientBatch"
-permalink: kb/257/Q257772/
+permalink: /kb/257/Q257772/
 ---
 
 ## Q257772: FIX: Updates to Textbox Bound to MSRDC Fail, rdUseClientBatch

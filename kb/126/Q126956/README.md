@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126956: How to Return a Value from a Form"
-permalink: kb/126/Q126956/
+permalink: /kb/126/Q126956/
 ---
 
 ## Q126956: How to Return a Value from a Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270854: How to Install Microsoft Reader in Safe Mode"
-permalink: kb/270/Q270854/
+permalink: /kb/270/Q270854/
 ---
 
 ## Q270854: How to Install Microsoft Reader in Safe Mode

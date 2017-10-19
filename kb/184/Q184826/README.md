@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184826: Symbol Checksum Error Reported When Kernel Debugging"
-permalink: kb/184/Q184826/
+permalink: /kb/184/Q184826/
 ---
 
 ## Q184826: Symbol Checksum Error Reported When Kernel Debugging

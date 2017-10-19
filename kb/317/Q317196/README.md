@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317196: MS02-018: Patch for Service Denial Through FTP Status Request"
-permalink: kb/317/Q317196/
+permalink: /kb/317/Q317196/
 ---
 
 ## Q317196: MS02-018: Patch for Service Denial Through FTP Status Request

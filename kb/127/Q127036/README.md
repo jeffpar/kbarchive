@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127036: FoxPro Advisor Magazine Articles July 1994"
-permalink: kb/127/Q127036/
+permalink: /kb/127/Q127036/
 ---
 
 ## Q127036: FoxPro Advisor Magazine Articles July 1994

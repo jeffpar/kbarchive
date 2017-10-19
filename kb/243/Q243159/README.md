@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243159: SMS: Long Path Causes &quot;Access Violation&quot; in Invwin32.exe"
-permalink: kb/243/Q243159/
+permalink: /kb/243/Q243159/
 ---
 
 ## Q243159: SMS: Long Path Causes &quot;Access Violation&quot; in Invwin32.exe

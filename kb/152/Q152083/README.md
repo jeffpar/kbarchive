@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152083: Replicator Service Failed Due to Improper Login Account"
-permalink: kb/152/Q152083/
+permalink: /kb/152/Q152083/
 ---
 
 ## Q152083: Replicator Service Failed Due to Improper Login Account

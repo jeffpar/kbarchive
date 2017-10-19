@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172173: BUG: Stopping IIS WWW Service Causes Application Error"
-permalink: kb/172/Q172173/
+permalink: /kb/172/Q172173/
 ---
 
 ## Q172173: BUG: Stopping IIS WWW Service Causes Application Error

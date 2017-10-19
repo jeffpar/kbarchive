@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135290: Troubleshooting Application Exception Error in File Manager"
-permalink: kb/135/Q135290/
+permalink: /kb/135/Q135290/
 ---
 
 ## Q135290: Troubleshooting Application Exception Error in File Manager

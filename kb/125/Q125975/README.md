@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125975: Automating Remote RAS Logons Using SWITCH.INF Scripts"
-permalink: kb/125/Q125975/
+permalink: /kb/125/Q125975/
 ---
 
 ## Q125975: Automating Remote RAS Logons Using SWITCH.INF Scripts

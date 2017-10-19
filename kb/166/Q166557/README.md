@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166557: XCLN: More Secure Launching of Attachments, Freedocs and URL's"
-permalink: kb/166/Q166557/
+permalink: /kb/166/Q166557/
 ---
 
 ## Q166557: XCLN: More Secure Launching of Attachments, Freedocs and URL's

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142412: Problems with Automated Installation of Msdlc32"
-permalink: kb/142/Q142412/
+permalink: /kb/142/Q142412/
 ---
 
 ## Q142412: Problems with Automated Installation of Msdlc32

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173449: XWEB: Clicking on Outlook Bar Before View Totally Refreshes"
-permalink: kb/173/Q173449/
+permalink: /kb/173/Q173449/
 ---
 
 ## Q173449: XWEB: Clicking on Outlook Bar Before View Totally Refreshes

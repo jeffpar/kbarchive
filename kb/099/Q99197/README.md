@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99197: Model 95 Traps with Trap00D, Trap00C, Duplicate Name etc."
-permalink: kb/099/Q99197/
+permalink: /kb/099/Q99197/
 ---
 
 ## Q99197: Model 95 Traps with Trap00D, Trap00C, Duplicate Name etc.

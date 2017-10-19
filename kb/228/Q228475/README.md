@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228475: XFOR: Event ID 115 Error Starting SMTP Relay Host Service"
-permalink: kb/228/Q228475/
+permalink: /kb/228/Q228475/
 ---
 
 ## Q228475: XFOR: Event ID 115 Error Starting SMTP Relay Host Service

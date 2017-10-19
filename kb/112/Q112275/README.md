@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112275: Mac Wkst: Address Error at _CopyRgn"
-permalink: kb/112/Q112275/
+permalink: /kb/112/Q112275/
 ---
 
 ## Q112275: Mac Wkst: Address Error at _CopyRgn

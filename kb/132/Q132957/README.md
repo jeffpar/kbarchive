@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132957: Removable-Media Drives Not Automatically Mounted at Startup"
-permalink: kb/132/Q132957/
+permalink: /kb/132/Q132957/
 ---
 
 ## Q132957: Removable-Media Drives Not Automatically Mounted at Startup

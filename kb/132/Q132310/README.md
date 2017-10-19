@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132310: Cannot Detect New Hardware with Windows 3.1 Drivers Installed"
-permalink: kb/132/Q132310/
+permalink: /kb/132/Q132310/
 ---
 
 ## Q132310: Cannot Detect New Hardware with Windows 3.1 Drivers Installed

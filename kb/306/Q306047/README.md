@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306047: ENC2002: Status Bar at 100% When Copying to Hard Drive"
-permalink: kb/306/Q306047/
+permalink: /kb/306/Q306047/
 ---
 
 ## Q306047: ENC2002: Status Bar at 100% When Copying to Hard Drive

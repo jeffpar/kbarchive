@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186608: Single-Application Sharing with Terminal Server"
-permalink: kb/186/Q186608/
+permalink: /kb/186/Q186608/
 ---
 
 ## Q186608: Single-Application Sharing with Terminal Server

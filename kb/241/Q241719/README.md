@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241719: Incorrect Analysis Information for Security Options in SCE"
-permalink: kb/241/Q241719/
+permalink: /kb/241/Q241719/
 ---
 
 ## Q241719: Incorrect Analysis Information for Security Options in SCE

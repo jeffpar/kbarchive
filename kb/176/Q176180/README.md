@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176180: XADM: Deferred Delivery Settings Not Effective"
-permalink: kb/176/Q176180/
+permalink: /kb/176/Q176180/
 ---
 
 ## Q176180: XADM: Deferred Delivery Settings Not Effective

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133455: How to Create an Array of Structures in Visual FoxPro"
-permalink: kb/133/Q133455/
+permalink: /kb/133/Q133455/
 ---
 
 ## Q133455: How to Create an Array of Structures in Visual FoxPro

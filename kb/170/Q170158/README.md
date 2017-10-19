@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170158: INFO: VB 6.0 Readme Part 7: Error Message Issues"
-permalink: kb/170/Q170158/
+permalink: /kb/170/Q170158/
 ---
 
 ## Q170158: INFO: VB 6.0 Readme Part 7: Error Message Issues

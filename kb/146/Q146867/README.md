@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146867: Cannot Load User Profiles from Windows NT-Based Computer"
-permalink: kb/146/Q146867/
+permalink: /kb/146/Q146867/
 ---
 
 ## Q146867: Cannot Load User Profiles from Windows NT-Based Computer

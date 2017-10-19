@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161823: HOWTO: Use Build Tags to Exclude Topics from a Help File"
-permalink: kb/161/Q161823/
+permalink: /kb/161/Q161823/
 ---
 
 ## Q161823: HOWTO: Use Build Tags to Exclude Topics from a Help File

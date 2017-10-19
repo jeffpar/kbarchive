@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218858: USB Device Listed Under the Other Devices Section in Device Mgr"
-permalink: kb/218/Q218858/
+permalink: /kb/218/Q218858/
 ---
 
 ## Q218858: USB Device Listed Under the Other Devices Section in Device Mgr

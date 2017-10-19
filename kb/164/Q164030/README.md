@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164030: WD97: Define and Lookup Reference Unavailable in Word"
-permalink: kb/164/Q164030/
+permalink: /kb/164/Q164030/
 ---
 
 ## Q164030: WD97: Define and Lookup Reference Unavailable in Word

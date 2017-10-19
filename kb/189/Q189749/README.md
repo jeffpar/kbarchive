@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189749: IAS: USR/3Com Total Control Radius Logging Not Working"
-permalink: kb/189/Q189749/
+permalink: /kb/189/Q189749/
 ---
 
 ## Q189749: IAS: USR/3Com Total Control Radius Logging Not Working

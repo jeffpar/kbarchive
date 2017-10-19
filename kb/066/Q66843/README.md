@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66843: ASD: 747 Panel Checklist Is Stuck on an Action"
-permalink: kb/066/Q66843/
+permalink: /kb/066/Q66843/
 ---
 
 ## Q66843: ASD: 747 Panel Checklist Is Stuck on an Action

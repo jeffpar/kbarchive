@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88514: Swing Stalls When Sounds Play in Golf"
-permalink: kb/088/Q88514/
+permalink: /kb/088/Q88514/
 ---
 
 ## Q88514: Swing Stalls When Sounds Play in Golf

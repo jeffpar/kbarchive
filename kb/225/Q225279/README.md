@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225279: Unable to Start Internet Services Manager (HTML) Tool"
-permalink: kb/225/Q225279/
+permalink: /kb/225/Q225279/
 ---
 
 ## Q225279: Unable to Start Internet Services Manager (HTML) Tool

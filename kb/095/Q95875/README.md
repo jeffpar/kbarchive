@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95875: WFWG Err Msg: &quot;No Response from File Server&quot; with ROUTE.COM"
-permalink: kb/095/Q95875/
+permalink: /kb/095/Q95875/
 ---
 
 ## Q95875: WFWG Err Msg: &quot;No Response from File Server&quot; with ROUTE.COM

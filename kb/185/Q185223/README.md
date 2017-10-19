@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185223: HOW TO: Manually Uninstall Visual Basic CE Programs"
-permalink: kb/185/Q185223/
+permalink: /kb/185/Q185223/
 ---
 
 ## Q185223: HOW TO: Manually Uninstall Visual Basic CE Programs

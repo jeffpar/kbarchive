@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307742: Exchange SDK HrCreateDirEntryID Does Not Work w/Outlook 2002"
-permalink: kb/307/Q307742/
+permalink: /kb/307/Q307742/
 ---
 
 ## Q307742: Exchange SDK HrCreateDirEntryID Does Not Work w/Outlook 2002

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216446: Damaged Paging File Results in Stop Error Message"
-permalink: kb/216/Q216446/
+permalink: /kb/216/Q216446/
 ---
 
 ## Q216446: Damaged Paging File Results in Stop Error Message

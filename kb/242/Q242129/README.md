@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242129: Event ID 12288 with Low Disk Space on Primary Domain Controller"
-permalink: kb/242/Q242129/
+permalink: /kb/242/Q242129/
 ---
 
 ## Q242129: Event ID 12288 with Low Disk Space on Primary Domain Controller

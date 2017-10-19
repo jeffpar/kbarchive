@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192756: Modem Does Not Disconnect When Connection Is Inactive"
-permalink: kb/192/Q192756/
+permalink: /kb/192/Q192756/
 ---
 
 ## Q192756: Modem Does Not Disconnect When Connection Is Inactive

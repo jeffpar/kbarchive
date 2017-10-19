@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96446: Error Message: The NETWARE.DLL File Cannot Be Located"
-permalink: kb/096/Q96446/
+permalink: /kb/096/Q96446/
 ---
 
 ## Q96446: Error Message: The NETWARE.DLL File Cannot Be Located

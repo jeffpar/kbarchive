@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140662: World Atlas 96: Ess Sound Card Causes System to Hang"
-permalink: kb/140/Q140662/
+permalink: /kb/140/Q140662/
 ---
 
 ## Q140662: World Atlas 96: Ess Sound Card Causes System to Hang

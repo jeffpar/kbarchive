@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129661: Fax Cover Page Editor Cannot Undo Multiple Text Entries"
-permalink: kb/129/Q129661/
+permalink: /kb/129/Q129661/
 ---
 
 ## Q129661: Fax Cover Page Editor Cannot Undo Multiple Text Entries

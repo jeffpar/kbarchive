@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129830: How To Install Printer Drivers From A Trusted Print Server"
-permalink: kb/129/Q129830/
+permalink: /kb/129/Q129830/
 ---
 
 ## Q129830: How To Install Printer Drivers From A Trusted Print Server

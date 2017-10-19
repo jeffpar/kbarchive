@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118872: Manual Install Instructions for Viewer 2.0"
-permalink: kb/118/Q118872/
+permalink: /kb/118/Q118872/
 ---
 
 ## Q118872: Manual Install Instructions for Viewer 2.0

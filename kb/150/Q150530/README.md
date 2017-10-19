@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150530: Event ID 529 Unknown User Name Or Bad Password"
-permalink: kb/150/Q150530/
+permalink: /kb/150/Q150530/
 ---
 
 ## Q150530: Event ID 529 Unknown User Name Or Bad Password

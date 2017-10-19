@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95522: PC MAPI: Simple MAPI Version 3.2.0.4081 Update"
-permalink: kb/095/Q95522/
+permalink: /kb/095/Q95522/
 ---
 
 ## Q95522: PC MAPI: Simple MAPI Version 3.2.0.4081 Update

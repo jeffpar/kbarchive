@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q25259: How to Enable Math Coprocessor Instructions"
-permalink: kb/025/Q25259/
+permalink: /kb/025/Q25259/
 ---
 
 ## Q25259: How to Enable Math Coprocessor Instructions

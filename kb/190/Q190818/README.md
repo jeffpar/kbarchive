@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190818: HOWTO: Programmatically Scroll a Visual FoxPro Form"
-permalink: kb/190/Q190818/
+permalink: /kb/190/Q190818/
 ---
 
 ## Q190818: HOWTO: Programmatically Scroll a Visual FoxPro Form

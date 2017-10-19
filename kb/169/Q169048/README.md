@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169048: Full Court Press: New Season Game Patches Are Available"
-permalink: kb/169/Q169048/
+permalink: /kb/169/Q169048/
 ---
 
 ## Q169048: Full Court Press: New Season Game Patches Are Available

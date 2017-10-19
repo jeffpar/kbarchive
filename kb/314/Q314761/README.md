@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314761: RRAS Drops the First Route That Is Added By Using Routemon.exe"
-permalink: kb/314/Q314761/
+permalink: /kb/314/Q314761/
 ---
 
 ## Q314761: RRAS Drops the First Route That Is Added By Using Routemon.exe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151921: PRB: LoadBitmap GPFaults on Compressed Bitmaps in Windows 3.1"
-permalink: kb/151/Q151921/
+permalink: /kb/151/Q151921/
 ---
 
 ## Q151921: PRB: LoadBitmap GPFaults on Compressed Bitmaps in Windows 3.1

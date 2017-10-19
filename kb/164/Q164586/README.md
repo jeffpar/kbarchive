@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164586: INF: How to Use OLE DB Sample Text Provider in ADO"
-permalink: kb/164/Q164586/
+permalink: /kb/164/Q164586/
 ---
 
 ## Q164586: INF: How to Use OLE DB Sample Text Provider in ADO

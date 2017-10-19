@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270760: ELL: Program Hangs When You Record in Virtual Challenge"
-permalink: kb/270/Q270760/
+permalink: /kb/270/Q270760/
 ---
 
 ## Q270760: ELL: Program Hangs When You Record in Virtual Challenge

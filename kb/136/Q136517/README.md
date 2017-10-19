@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136517: How the Recycle Bin Stores Files"
-permalink: kb/136/Q136517/
+permalink: /kb/136/Q136517/
 ---
 
 ## Q136517: How the Recycle Bin Stores Files

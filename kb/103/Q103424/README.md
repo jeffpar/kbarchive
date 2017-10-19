@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103424: X400: Err Msg: Address Mapping Contains the Character X..."
-permalink: kb/103/Q103424/
+permalink: /kb/103/Q103424/
 ---
 
 ## Q103424: X400: Err Msg: Address Mapping Contains the Character X...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103794: PC Forms: No Save As Command in Routing Form"
-permalink: kb/103/Q103794/
+permalink: /kb/103/Q103794/
 ---
 
 ## Q103794: PC Forms: No Save As Command in Routing Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136278: BUG: Error When Using @ SAY to Play Sounds from General Field"
-permalink: kb/136/Q136278/
+permalink: /kb/136/Q136278/
 ---
 
 ## Q136278: BUG: Error When Using @ SAY to Play Sounds from General Field

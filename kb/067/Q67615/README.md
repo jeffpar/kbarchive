@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67615: FIX: Protection Violation When Structure Element Used in OPEN"
-permalink: kb/067/Q67615/
+permalink: /kb/067/Q67615/
 ---
 
 ## Q67615: FIX: Protection Violation When Structure Element Used in OPEN

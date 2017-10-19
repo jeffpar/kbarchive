@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114630: PRB: ODBC SQL Server Driver and Access Violation on SQL Server"
-permalink: kb/114/Q114630/
+permalink: /kb/114/Q114630/
 ---
 
 ## Q114630: PRB: ODBC SQL Server Driver and Access Violation on SQL Server

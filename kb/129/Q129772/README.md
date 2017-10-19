@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129772: FIX: &quot;Attempt to load required component ODBC32.DLL failed&quot;"
-permalink: kb/129/Q129772/
+permalink: /kb/129/Q129772/
 ---
 
 ## Q129772: FIX: &quot;Attempt to load required component ODBC32.DLL failed&quot;

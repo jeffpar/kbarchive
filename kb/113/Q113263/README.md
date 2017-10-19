@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113263: Printing Multiple Topics from Viewer"
-permalink: kb/113/Q113263/
+permalink: /kb/113/Q113263/
 ---
 
 ## Q113263: Printing Multiple Topics from Viewer

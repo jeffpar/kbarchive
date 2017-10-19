@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168093: SMS: Group Class Is Not Re-Created After Being Deleted"
-permalink: kb/168/Q168093/
+permalink: /kb/168/Q168093/
 ---
 
 ## Q168093: SMS: Group Class Is Not Re-Created After Being Deleted

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154751: XCLN: Corrupt Reminder.dat Causes Errors with Preview Pane"
-permalink: kb/154/Q154751/
+permalink: /kb/154/Q154751/
 ---
 
 ## Q154751: XCLN: Corrupt Reminder.dat Causes Errors with Preview Pane

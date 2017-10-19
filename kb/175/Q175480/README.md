@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175480: XADM: ERR: Unable to Generate an E-mail Address for Type ccMail"
-permalink: kb/175/Q175480/
+permalink: /kb/175/Q175480/
 ---
 
 ## Q175480: XADM: ERR: Unable to Generate an E-mail Address for Type ccMail

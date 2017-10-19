@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194873: HOWTO: Access a Visual Basic ActiveX DLL from Visual C++"
-permalink: kb/194/Q194873/
+permalink: /kb/194/Q194873/
 ---
 
 ## Q194873: HOWTO: Access a Visual Basic ActiveX DLL from Visual C++

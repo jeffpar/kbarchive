@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104458: Dinosaurs: Pteranodon and Diplodocus Missing from Word List"
-permalink: kb/104/Q104458/
+permalink: /kb/104/Q104458/
 ---
 
 ## Q104458: Dinosaurs: Pteranodon and Diplodocus Missing from Word List

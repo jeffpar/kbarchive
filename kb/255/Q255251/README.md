@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255251: XADM: Cannot View Free and Busy Consistently"
-permalink: kb/255/Q255251/
+permalink: /kb/255/Q255251/
 ---
 
 ## Q255251: XADM: Cannot View Free and Busy Consistently

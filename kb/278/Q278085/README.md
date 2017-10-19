@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278085: HOWTO: Retrieve Word Document Information from Visual FoxPro"
-permalink: kb/278/Q278085/
+permalink: /kb/278/Q278085/
 ---
 
 ## Q278085: HOWTO: Retrieve Word Document Information from Visual FoxPro

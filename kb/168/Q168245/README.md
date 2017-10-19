@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168245: XFOR: POP3 Clients Unable to Download All Msgs"
-permalink: kb/168/Q168245/
+permalink: /kb/168/Q168245/
 ---
 
 ## Q168245: XFOR: POP3 Clients Unable to Download All Msgs

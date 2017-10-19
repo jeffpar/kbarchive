@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90524: Installing WFWG over Existing Mail 3.0 and Schedule+ 1.0"
-permalink: kb/090/Q90524/
+permalink: /kb/090/Q90524/
 ---
 
 ## Q90524: Installing WFWG over Existing Mail 3.0 and Schedule+ 1.0

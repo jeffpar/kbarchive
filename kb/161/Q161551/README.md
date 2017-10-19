@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161551: WD97: AutoSummarize Doesn't Find Some Text to Summarize"
-permalink: kb/161/Q161551/
+permalink: /kb/161/Q161551/
 ---
 
 ## Q161551: WD97: AutoSummarize Doesn't Find Some Text to Summarize

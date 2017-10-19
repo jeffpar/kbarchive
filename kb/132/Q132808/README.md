@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132808: Error Message Attempting to Add Users in Network Dialog Box."
-permalink: kb/132/Q132808/
+permalink: /kb/132/Q132808/
 ---
 
 ## Q132808: Error Message Attempting to Add Users in Network Dialog Box.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247973: PRB: Missing Oracle File SQLNET.ora May Cause Access Violation"
-permalink: kb/247/Q247973/
+permalink: /kb/247/Q247973/
 ---
 
 ## Q247973: PRB: Missing Oracle File SQLNET.ora May Cause Access Violation

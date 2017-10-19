@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98106: Windows Expand Utility Doesn't Correctly Expand MS-DOS Files"
-permalink: kb/098/Q98106/
+permalink: /kb/098/Q98106/
 ---
 
 ## Q98106: Windows Expand Utility Doesn't Correctly Expand MS-DOS Files

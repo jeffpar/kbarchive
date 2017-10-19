@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158796: Macintosh Clients Connected to WinNT Server Appear to Hang"
-permalink: kb/158/Q158796/
+permalink: /kb/158/Q158796/
 ---
 
 ## Q158796: Macintosh Clients Connected to WinNT Server Appear to Hang

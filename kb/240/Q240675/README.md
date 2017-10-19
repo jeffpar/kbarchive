@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240675: SMS: IBM Client Access Software May Cause SMS Client to Hang"
-permalink: kb/240/Q240675/
+permalink: /kb/240/Q240675/
 ---
 
 ## Q240675: SMS: IBM Client Access Software May Cause SMS Client to Hang

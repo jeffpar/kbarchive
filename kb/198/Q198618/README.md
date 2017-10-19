@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198618: MCSE Readiness Review Windows NT Workstation Corrections"
-permalink: kb/198/Q198618/
+permalink: /kb/198/Q198618/
 ---
 
 ## Q198618: MCSE Readiness Review Windows NT Workstation Corrections

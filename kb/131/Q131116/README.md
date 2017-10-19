@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131116: PC Ext: Err Msg: Mail Was Received...Addressed to Unknown..."
-permalink: kb/131/Q131116/
+permalink: /kb/131/Q131116/
 ---
 
 ## Q131116: PC Ext: Err Msg: Mail Was Received...Addressed to Unknown...

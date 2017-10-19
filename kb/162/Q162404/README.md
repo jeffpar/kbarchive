@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162404: Service Pack 5 Breaks Microsoft Mail Shared Using FPNW"
-permalink: kb/162/Q162404/
+permalink: /kb/162/Q162404/
 ---
 
 ## Q162404: Service Pack 5 Breaks Microsoft Mail Shared Using FPNW

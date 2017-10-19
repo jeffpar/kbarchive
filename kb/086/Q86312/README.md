@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86312: Communications Program for the Deaf or Hard of Hearing"
-permalink: kb/086/Q86312/
+permalink: /kb/086/Q86312/
 ---
 
 ## Q86312: Communications Program for the Deaf or Hard of Hearing

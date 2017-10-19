@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314507: FS2002: Err Msg: System Is Not Able to Use Hardware Acceleration"
-permalink: kb/314/Q314507/
+permalink: /kb/314/Q314507/
 ---
 
 ## Q314507: FS2002: Err Msg: System Is Not Able to Use Hardware Acceleration

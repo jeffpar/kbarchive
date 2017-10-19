@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184450: Running Microsoft Access 97 Comments and Corrections"
-permalink: kb/184/Q184450/
+permalink: /kb/184/Q184450/
 ---
 
 ## Q184450: Running Microsoft Access 97 Comments and Corrections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107576: WFWG Mail Will Not Cache a Blank Password"
-permalink: kb/107/Q107576/
+permalink: /kb/107/Q107576/
 ---
 
 ## Q107576: WFWG Mail Will Not Cache a Blank Password

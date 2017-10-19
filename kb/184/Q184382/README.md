@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184382: INFO: Information Available on Using RDS in Visual C++"
-permalink: kb/184/Q184382/
+permalink: /kb/184/Q184382/
 ---
 
 ## Q184382: INFO: Information Available on Using RDS in Visual C++

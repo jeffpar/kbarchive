@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299521: McAfee NetShield Service Conflicts with Shared Folder Service"
-permalink: kb/299/Q299521/
+permalink: /kb/299/Q299521/
 ---
 
 ## Q299521: McAfee NetShield Service Conflicts with Shared Folder Service

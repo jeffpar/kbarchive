@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104959: INFO: Types of System Modal Message Boxes"
-permalink: kb/104/Q104959/
+permalink: /kb/104/Q104959/
 ---
 
 ## Q104959: INFO: Types of System Modal Message Boxes

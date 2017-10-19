@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143310: Ancient Lands for the Macintosh System Requirements"
-permalink: kb/143/Q143310/
+permalink: /kb/143/Q143310/
 ---
 
 ## Q143310: Ancient Lands for the Macintosh System Requirements

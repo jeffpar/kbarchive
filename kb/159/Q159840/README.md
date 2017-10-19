@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159840: Access Violation in Services.exe Clearing Event Log"
-permalink: kb/159/Q159840/
+permalink: /kb/159/Q159840/
 ---
 
 ## Q159840: Access Violation in Services.exe Clearing Event Log

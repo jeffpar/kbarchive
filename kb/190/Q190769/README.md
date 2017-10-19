@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190769: HOWTO: Use STRTOFILE() to Send Output to a Printer"
-permalink: kb/190/Q190769/
+permalink: /kb/190/Q190769/
 ---
 
 ## Q190769: HOWTO: Use STRTOFILE() to Send Output to a Printer

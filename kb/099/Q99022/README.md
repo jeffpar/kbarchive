@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99022: INFO: Foundation Class Debug Library Detects Memory Leaks"
-permalink: kb/099/Q99022/
+permalink: /kb/099/Q99022/
 ---
 
 ## Q99022: INFO: Foundation Class Debug Library Detects Memory Leaks

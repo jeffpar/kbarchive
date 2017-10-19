@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257540: DCOM Program Does Not Work After Suspend or Docking Change"
-permalink: kb/257/Q257540/
+permalink: /kb/257/Q257540/
 ---
 
 ## Q257540: DCOM Program Does Not Work After Suspend or Docking Change

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136251: System Log Event 5705 with &gt; 500 Security Object Changes"
-permalink: kb/136/Q136251/
+permalink: /kb/136/Q136251/
 ---
 
 ## Q136251: System Log Event 5705 with &gt; 500 Security Object Changes

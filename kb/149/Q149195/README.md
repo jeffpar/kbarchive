@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149195: Err Msg:  Could Not Connect.  Invalid Member ID or Password"
-permalink: kb/149/Q149195/
+permalink: /kb/149/Q149195/
 ---
 
 ## Q149195: Err Msg:  Could Not Connect.  Invalid Member ID or Password

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150080: Win2w95.exe Run from &#92;MSTEST Directory"
-permalink: kb/150/Q150080/
+permalink: /kb/150/Q150080/
 ---
 
 ## Q150080: Win2w95.exe Run from &#92;MSTEST Directory

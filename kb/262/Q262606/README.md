@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262606: IIS Access Violations Occur with DBCS Trail Byte Truncated URL"
-permalink: kb/262/Q262606/
+permalink: /kb/262/Q262606/
 ---
 
 ## Q262606: IIS Access Violations Occur with DBCS Trail Byte Truncated URL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107096: PROFS: File Format for Semi-Auto Address List Request Token"
-permalink: kb/107/Q107096/
+permalink: /kb/107/Q107096/
 ---
 
 ## Q107096: PROFS: File Format for Semi-Auto Address List Request Token

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187429: Connection Configuration Advanced Settings Dialog Too Big"
-permalink: kb/187/Q187429/
+permalink: /kb/187/Q187429/
 ---
 
 ## Q187429: Connection Configuration Advanced Settings Dialog Too Big

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246814: INFO: New Features of Visual SourceSafe 6.0"
-permalink: kb/246/Q246814/
+permalink: /kb/246/Q246814/
 ---
 
 ## Q246814: INFO: New Features of Visual SourceSafe 6.0

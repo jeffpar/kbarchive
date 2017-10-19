@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136101: Err Msg: Receiver(s) Not Valid for Binary Message"
-permalink: kb/136/Q136101/
+permalink: /kb/136/Q136101/
 ---
 
 ## Q136101: Err Msg: Receiver(s) Not Valid for Binary Message

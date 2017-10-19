@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96936: LABEL Truncates Multiple Spaces in Disk Label"
-permalink: kb/096/Q96936/
+permalink: /kb/096/Q96936/
 ---
 
 ## Q96936: LABEL Truncates Multiple Spaces in Disk Label

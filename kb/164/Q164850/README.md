@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164850: XFOR: Message Loop between Exchange and Microsoft Mail"
-permalink: kb/164/Q164850/
+permalink: /kb/164/Q164850/
 ---
 
 ## Q164850: XFOR: Message Loop between Exchange and Microsoft Mail

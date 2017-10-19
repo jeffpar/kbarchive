@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104993: MS-DOS Includes MSD.COM and MSD.EXE"
-permalink: kb/104/Q104993/
+permalink: /kb/104/Q104993/
 ---
 
 ## Q104993: MS-DOS Includes MSD.COM and MSD.EXE

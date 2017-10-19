@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151039: FP: Unexpected Pink Lines Appear in Link View Field"
-permalink: kb/151/Q151039/
+permalink: /kb/151/Q151039/
 ---
 
 ## Q151039: FP: Unexpected Pink Lines Appear in Link View Field

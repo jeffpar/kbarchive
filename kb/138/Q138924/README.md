@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138924: FTP, WWW, and Telnet Fail over RAS Even Though Ping Works"
-permalink: kb/138/Q138924/
+permalink: /kb/138/Q138924/
 ---
 
 ## Q138924: FTP, WWW, and Telnet Fail over RAS Even Though Ping Works

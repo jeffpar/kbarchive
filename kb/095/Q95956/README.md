@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95956: MSCDEX Doesn't Load with Trantor CD-ROM Driver"
-permalink: kb/095/Q95956/
+permalink: /kb/095/Q95956/
 ---
 
 ## Q95956: MSCDEX Doesn't Load with Trantor CD-ROM Driver

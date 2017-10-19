@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156175: PRB: Cannot Advance in Setup Wizard Step 4"
-permalink: kb/156/Q156175/
+permalink: /kb/156/Q156175/
 ---
 
 ## Q156175: PRB: Cannot Advance in Setup Wizard Step 4

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226816: SMS: Installation Issues in Foreign Language Environments"
-permalink: kb/226/Q226816/
+permalink: /kb/226/Q226816/
 ---
 
 ## Q226816: SMS: Installation Issues in Foreign Language Environments

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182503: XADM: LDAP Displays Directory Name"
-permalink: kb/182/Q182503/
+permalink: /kb/182/Q182503/
 ---
 
 ## Q182503: XADM: LDAP Displays Directory Name

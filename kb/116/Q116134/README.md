@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116134: FIX: Visual Workbench Ignores Request Not to Rebuild Project"
-permalink: kb/116/Q116134/
+permalink: /kb/116/Q116134/
 ---
 
 ## Q116134: FIX: Visual Workbench Ignores Request Not to Rebuild Project

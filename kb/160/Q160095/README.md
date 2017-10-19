@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160095: DUN Client May Not Be Able to Ping Remote Host by Name"
-permalink: kb/160/Q160095/
+permalink: /kb/160/Q160095/
 ---
 
 ## Q160095: DUN Client May Not Be Able to Ping Remote Host by Name

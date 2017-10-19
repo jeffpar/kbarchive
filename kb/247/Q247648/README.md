@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247648: FS 2000: Sounds in the Program Are Cut Off or Break Up"
-permalink: kb/247/Q247648/
+permalink: /kb/247/Q247648/
 ---
 
 ## Q247648: FS 2000: Sounds in the Program Are Cut Off or Break Up

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172918: WD97: Dot or Dash Border Lost Opening Word 6.x, 7.x Document"
-permalink: kb/172/Q172918/
+permalink: /kb/172/Q172918/
 ---
 
 ## Q172918: WD97: Dot or Dash Border Lost Opening Word 6.x, 7.x Document

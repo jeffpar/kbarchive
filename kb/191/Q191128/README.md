@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191128: BUG: GetItem and SetItem Do Not Have an Indent Parameter"
-permalink: kb/191/Q191128/
+permalink: /kb/191/Q191128/
 ---
 
 ## Q191128: BUG: GetItem and SetItem Do Not Have an Indent Parameter

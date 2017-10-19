@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154828: PRB: Visual Basic Module Shuffle Looks Like Entire File Change"
-permalink: kb/154/Q154828/
+permalink: /kb/154/Q154828/
 ---
 
 ## Q154828: PRB: Visual Basic Module Shuffle Looks Like Entire File Change

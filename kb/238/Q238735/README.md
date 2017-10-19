@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238735: STOP 0x7F When Using Filter Drivers"
-permalink: kb/238/Q238735/
+permalink: /kb/238/Q238735/
 ---
 
 ## Q238735: STOP 0x7F When Using Filter Drivers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245828: FS2000: Handbook Incorrectly States to Insert Disc 1"
-permalink: kb/245/Q245828/
+permalink: /kb/245/Q245828/
 ---
 
 ## Q245828: FS2000: Handbook Incorrectly States to Insert Disc 1

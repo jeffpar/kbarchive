@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171805: FIX: Problems Binding Controls to Nonexistent Data Control"
-permalink: kb/171/Q171805/
+permalink: /kb/171/Q171805/
 ---
 
 ## Q171805: FIX: Problems Binding Controls to Nonexistent Data Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245195: Event ID 12288 with Windows NT Server 3.51"
-permalink: kb/245/Q245195/
+permalink: /kb/245/Q245195/
 ---
 
 ## Q245195: Event ID 12288 with Windows NT Server 3.51

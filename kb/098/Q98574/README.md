@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98574: PC WSPlus: Cannot View Another User's Notes"
-permalink: kb/098/Q98574/
+permalink: /kb/098/Q98574/
 ---
 
 ## Q98574: PC WSPlus: Cannot View Another User's Notes

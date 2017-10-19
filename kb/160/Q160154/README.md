@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160154: Change Code Page for Scheduler Service"
-permalink: kb/160/Q160154/
+permalink: /kb/160/Q160154/
 ---
 
 ## Q160154: Change Code Page for Scheduler Service

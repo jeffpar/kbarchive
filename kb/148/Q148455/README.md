@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148455: BUG: CSharedFile::Detach() Does Not Call GlobalUnlock()"
-permalink: kb/148/Q148455/
+permalink: /kb/148/Q148455/
 ---
 
 ## Q148455: BUG: CSharedFile::Detach() Does Not Call GlobalUnlock()

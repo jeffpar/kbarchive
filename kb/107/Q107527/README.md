@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107527: Dinosaur Movies Are Garbled on COMPAQ 486C Portable"
-permalink: kb/107/Q107527/
+permalink: /kb/107/Q107527/
 ---
 
 ## Q107527: Dinosaur Movies Are Garbled on COMPAQ 486C Portable

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130716: Write Fault Error Printing from MS-DOS-Based Programs"
-permalink: kb/130/Q130716/
+permalink: /kb/130/Q130716/
 ---
 
 ## Q130716: Write Fault Error Printing from MS-DOS-Based Programs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237734: NFL Fever 2000: Unable to Add Plays to Playbook During Season"
-permalink: kb/237/Q237734/
+permalink: /kb/237/Q237734/
 ---
 
 ## Q237734: NFL Fever 2000: Unable to Add Plays to Playbook During Season

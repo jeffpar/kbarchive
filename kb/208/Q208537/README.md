@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q208537: Err Msg: Error in Deskcp16.dll Missing Entry..."
-permalink: kb/208/Q208537/
+permalink: /kb/208/Q208537/
 ---
 
 ## Q208537: Err Msg: Error in Deskcp16.dll Missing Entry...

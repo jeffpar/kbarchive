@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135541: Windows 95 CD-ROM Directory Listing (5 of 5)"
-permalink: kb/135/Q135541/
+permalink: /kb/135/Q135541/
 ---
 
 ## Q135541: Windows 95 CD-ROM Directory Listing (5 of 5)

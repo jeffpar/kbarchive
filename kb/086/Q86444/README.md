@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86444: PPT: How to Create More Than One Notes Page Per Slide"
-permalink: kb/086/Q86444/
+permalink: /kb/086/Q86444/
 ---
 
 ## Q86444: PPT: How to Create More Than One Notes Page Per Slide

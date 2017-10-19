@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272114: BUG: EndPage() Fails with Large Spool Files"
-permalink: kb/272/Q272114/
+permalink: /kb/272/Q272114/
 ---
 
 ## Q272114: BUG: EndPage() Fails with Large Spool Files

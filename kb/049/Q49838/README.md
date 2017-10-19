@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49838: PRB: GlobalUnlock() Can Cause Fatal Exit 0x02F0"
-permalink: kb/049/Q49838/
+permalink: /kb/049/Q49838/
 ---
 
 ## Q49838: PRB: GlobalUnlock() Can Cause Fatal Exit 0x02F0

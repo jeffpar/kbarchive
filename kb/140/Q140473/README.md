@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140473: Observed Versus Described Behavior of P-NODE Name Resolution"
-permalink: kb/140/Q140473/
+permalink: /kb/140/Q140473/
 ---
 
 ## Q140473: Observed Versus Described Behavior of P-NODE Name Resolution

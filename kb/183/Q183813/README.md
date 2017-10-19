@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183813: FIX: Developer Studio Macro Constants Not Defined"
-permalink: kb/183/Q183813/
+permalink: /kb/183/Q183813/
 ---
 
 ## Q183813: FIX: Developer Studio Macro Constants Not Defined

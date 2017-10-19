@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138327: WD97: Properties Contents Tab Is Blank"
-permalink: kb/138/Q138327/
+permalink: /kb/138/Q138327/
 ---
 
 ## Q138327: WD97: Properties Contents Tab Is Blank

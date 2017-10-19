@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122543: BUG: Incorrect Code When Increment Pointer Based on a Pointer"
-permalink: kb/122/Q122543/
+permalink: /kb/122/Q122543/
 ---
 
 ## Q122543: BUG: Incorrect Code When Increment Pointer Based on a Pointer

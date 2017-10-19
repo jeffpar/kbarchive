@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167106: BUG: Rich Text Box Control Does Not Word Wrap"
-permalink: kb/167/Q167106/
+permalink: /kb/167/Q167106/
 ---
 
 ## Q167106: BUG: Rich Text Box Control Does Not Word Wrap

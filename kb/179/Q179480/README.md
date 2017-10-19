@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179480: FIX: Temp Environment Variable Causes Unusual Behavior in VFP"
-permalink: kb/179/Q179480/
+permalink: /kb/179/Q179480/
 ---
 
 ## Q179480: FIX: Temp Environment Variable Causes Unusual Behavior in VFP

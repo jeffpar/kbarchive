@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221638: FIX: Setup Does Not Install Label Wizard Requests Definitions"
-permalink: kb/221/Q221638/
+permalink: /kb/221/Q221638/
 ---
 
 ## Q221638: FIX: Setup Does Not Install Label Wizard Requests Definitions

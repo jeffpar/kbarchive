@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185461: PRB: UseSafeSubset Allows Non-Safe Objects to Be Called"
-permalink: kb/185/Q185461/
+permalink: /kb/185/Q185461/
 ---
 
 ## Q185461: PRB: UseSafeSubset Allows Non-Safe Objects to Be Called

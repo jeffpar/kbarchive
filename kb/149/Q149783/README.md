@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149783: INFO: ISAM Settings and Jet 3.0"
-permalink: kb/149/Q149783/
+permalink: /kb/149/Q149783/
 ---
 
 ## Q149783: INFO: ISAM Settings and Jet 3.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128233: Comparison of Windows NT Network Protocols"
-permalink: kb/128/Q128233/
+permalink: /kb/128/Q128233/
 ---
 
 ## Q128233: Comparison of Windows NT Network Protocols

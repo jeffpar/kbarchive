@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254436: MapPoint 2001: Unable to Start Trial Version"
-permalink: kb/254/Q254436/
+permalink: /kb/254/Q254436/
 ---
 
 ## Q254436: MapPoint 2001: Unable to Start Trial Version

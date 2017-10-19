@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158908: XCLN: Options Not Available in Forms Designer"
-permalink: kb/158/Q158908/
+permalink: /kb/158/Q158908/
 ---
 
 ## Q158908: XCLN: Options Not Available in Forms Designer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114791: PRB: SET COLOR TO Results in Differing Shades of Gray"
-permalink: kb/114/Q114791/
+permalink: /kb/114/Q114791/
 ---
 
 ## Q114791: PRB: SET COLOR TO Results in Differing Shades of Gray

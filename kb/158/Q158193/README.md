@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158193: Windows 95 OEM Service Release 2 CD-ROM Directory (5 of 6)"
-permalink: kb/158/Q158193/
+permalink: /kb/158/Q158193/
 ---
 
 ## Q158193: Windows 95 OEM Service Release 2 CD-ROM Directory (5 of 6)

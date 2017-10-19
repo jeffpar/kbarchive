@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302534: Broadband User Wants To Use Dial-up Access"
-permalink: kb/302/Q302534/
+permalink: /kb/302/Q302534/
 ---
 
 ## Q302534: Broadband User Wants To Use Dial-up Access

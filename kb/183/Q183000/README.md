@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183000: WD97: Invalid Page Fault When You Insert Equation Editor Object"
-permalink: kb/183/Q183000/
+permalink: /kb/183/Q183000/
 ---
 
 ## Q183000: WD97: Invalid Page Fault When You Insert Equation Editor Object

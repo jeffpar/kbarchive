@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150009: WinNT System Shutdown/Power Off Causes Boot-Sector Corruption"
-permalink: kb/150/Q150009/
+permalink: /kb/150/Q150009/
 ---
 
 ## Q150009: WinNT System Shutdown/Power Off Causes Boot-Sector Corruption

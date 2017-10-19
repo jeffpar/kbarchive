@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223770: Mciavi32.dll Handle Leak When Opening an AVI File"
-permalink: kb/223/Q223770/
+permalink: /kb/223/Q223770/
 ---
 
 ## Q223770: Mciavi32.dll Handle Leak When Opening an AVI File

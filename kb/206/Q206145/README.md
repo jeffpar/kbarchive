@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q206145: Random Characters Appear in Network Adapters List"
-permalink: kb/206/Q206145/
+permalink: /kb/206/Q206145/
 ---
 
 ## Q206145: Random Characters Appear in Network Adapters List

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250989: XADM: Installing ADC on Windows 2000 DC w/Exchange Server"
-permalink: kb/250/Q250989/
+permalink: /kb/250/Q250989/
 ---
 
 ## Q250989: XADM: Installing ADC on Windows 2000 DC w/Exchange Server

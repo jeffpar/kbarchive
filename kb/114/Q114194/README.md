@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114194: PRB: Cannot Access Selected Table"
-permalink: kb/114/Q114194/
+permalink: /kb/114/Q114194/
 ---
 
 ## Q114194: PRB: Cannot Access Selected Table

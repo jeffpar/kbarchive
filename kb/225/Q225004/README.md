@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225004: WSAEMSGSIZE - Error 10040 in Winsock 2.0"
-permalink: kb/225/Q225004/
+permalink: /kb/225/Q225004/
 ---
 
 ## Q225004: WSAEMSGSIZE - Error 10040 in Winsock 2.0

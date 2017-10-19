@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156909: FP: OLE Errors When Working with FrontPage"
-permalink: kb/156/Q156909/
+permalink: /kb/156/Q156909/
 ---
 
 ## Q156909: FP: OLE Errors When Working with FrontPage

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67063: Inserting Right Justified Text in a Menu in Windows"
-permalink: kb/067/Q67063/
+permalink: /kb/067/Q67063/
 ---
 
 ## Q67063: Inserting Right Justified Text in a Menu in Windows

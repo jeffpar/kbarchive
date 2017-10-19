@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88841: Windows Err Msg: An Old Version of UNIDRV.DLL Is Installed..."
-permalink: kb/088/Q88841/
+permalink: /kb/088/Q88841/
 ---
 
 ## Q88841: Windows Err Msg: An Old Version of UNIDRV.DLL Is Installed...

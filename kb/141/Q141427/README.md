@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141427: Bookshelf: Custom Installation Option Missing with AutoRun"
-permalink: kb/141/Q141427/
+permalink: /kb/141/Q141427/
 ---
 
 ## Q141427: Bookshelf: Custom Installation Option Missing with AutoRun

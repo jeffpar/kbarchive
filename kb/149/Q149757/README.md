@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149757: Err Msg: The NetWare Compatible Shell Is Not Available"
-permalink: kb/149/Q149757/
+permalink: /kb/149/Q149757/
 ---
 
 ## Q149757: Err Msg: The NetWare Compatible Shell Is Not Available

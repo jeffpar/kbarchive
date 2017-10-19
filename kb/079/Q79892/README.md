@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79892: MS-DOS LABEL Command May Truncate Spaces"
-permalink: kb/079/Q79892/
+permalink: /kb/079/Q79892/
 ---
 
 ## Q79892: MS-DOS LABEL Command May Truncate Spaces

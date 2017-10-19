@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189211: Computer User's Dictionary: Web Address for Updates Is Incorrect"
-permalink: kb/189/Q189211/
+permalink: /kb/189/Q189211/
 ---
 
 ## Q189211: Computer User's Dictionary: Web Address for Updates Is Incorrect

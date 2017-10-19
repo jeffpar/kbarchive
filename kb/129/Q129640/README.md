@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129640: How to Determine What Relations Exist in a .DBC"
-permalink: kb/129/Q129640/
+permalink: /kb/129/Q129640/
 ---
 
 ## Q129640: How to Determine What Relations Exist in a .DBC

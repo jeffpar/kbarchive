@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129930: PRB: Compile-Time Error Occurs Instead of Run-Time Error"
-permalink: kb/129/Q129930/
+permalink: /kb/129/Q129930/
 ---
 
 ## Q129930: PRB: Compile-Time Error Occurs Instead of Run-Time Error

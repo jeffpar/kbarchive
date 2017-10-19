@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263436: Offer Summarizer Needs a Large Amount of Time to Replicate"
-permalink: kb/263/Q263436/
+permalink: /kb/263/Q263436/
 ---
 
 ## Q263436: Offer Summarizer Needs a Large Amount of Time to Replicate

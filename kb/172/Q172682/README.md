@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172682: SNA Server Online Support URL Is Incorrect in SNA Manager"
-permalink: kb/172/Q172682/
+permalink: /kb/172/Q172682/
 ---
 
 ## Q172682: SNA Server Online Support URL Is Incorrect in SNA Manager

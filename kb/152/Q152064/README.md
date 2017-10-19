@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152064: How to Install an Internal Modem in Windows 95"
-permalink: kb/152/Q152064/
+permalink: /kb/152/Q152064/
 ---
 
 ## Q152064: How to Install an Internal Modem in Windows 95

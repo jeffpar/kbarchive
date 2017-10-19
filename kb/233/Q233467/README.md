@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233467: Business Planner: PID Is Not Required to Start Program"
-permalink: kb/233/Q233467/
+permalink: /kb/233/Q233467/
 ---
 
 ## Q233467: Business Planner: PID Is Not Required to Start Program

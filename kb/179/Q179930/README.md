@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179930: XCLN: Exchange Help Starts Outlook Help File"
-permalink: kb/179/Q179930/
+permalink: /kb/179/Q179930/
 ---
 
 ## Q179930: XCLN: Exchange Help Starts Outlook Help File

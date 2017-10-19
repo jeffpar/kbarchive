@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162218: Unable to Rename WinNT Root Dir After Upgrade to WinNT 4.0"
-permalink: kb/162/Q162218/
+permalink: /kb/162/Q162218/
 ---
 
 ## Q162218: Unable to Rename WinNT Root Dir After Upgrade to WinNT 4.0

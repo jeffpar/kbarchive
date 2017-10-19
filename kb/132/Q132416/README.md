@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132416: PRB: Visual FoxPro Does Not Run Under OS/2"
-permalink: kb/132/Q132416/
+permalink: /kb/132/Q132416/
 ---
 
 ## Q132416: PRB: Visual FoxPro Does Not Run Under OS/2

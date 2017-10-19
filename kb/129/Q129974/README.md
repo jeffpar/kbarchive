@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129974: BUG: Winsock--Lost FD_WRITE Notifications"
-permalink: kb/129/Q129974/
+permalink: /kb/129/Q129974/
 ---
 
 ## Q129974: BUG: Winsock--Lost FD_WRITE Notifications

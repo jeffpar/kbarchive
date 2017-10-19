@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76880: Information Needed Before Setup of Multimedia Extensions"
-permalink: kb/076/Q76880/
+permalink: /kb/076/Q76880/
 ---
 
 ## Q76880: Information Needed Before Setup of Multimedia Extensions

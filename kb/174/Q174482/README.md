@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174482: Performance Monitor Chart View Limited to 100 Data Points"
-permalink: kb/174/Q174482/
+permalink: /kb/174/Q174482/
 ---
 
 ## Q174482: Performance Monitor Chart View Limited to 100 Data Points

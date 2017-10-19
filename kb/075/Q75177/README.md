@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75177: FIX: Subtracting Two Externs Gives Incorrect Results"
-permalink: kb/075/Q75177/
+permalink: /kb/075/Q75177/
 ---
 
 ## Q75177: FIX: Subtracting Two Externs Gives Incorrect Results

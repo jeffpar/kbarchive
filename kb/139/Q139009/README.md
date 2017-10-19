@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139009: Mastering Visual FoxPro Demo Videos Play Incorrectly"
-permalink: kb/139/Q139009/
+permalink: /kb/139/Q139009/
 ---
 
 ## Q139009: Mastering Visual FoxPro Demo Videos Play Incorrectly

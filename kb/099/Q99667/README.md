@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99667: PC WSPlus: Err Msg: Schedule Transport DLL Does Not Support..."
-permalink: kb/099/Q99667/
+permalink: /kb/099/Q99667/
 ---
 
 ## Q99667: PC WSPlus: Err Msg: Schedule Transport DLL Does Not Support...

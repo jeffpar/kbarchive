@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168745: PPT7: &quot;The File Cannot Be Removed...&quot; Error Running Pack And Go"
-permalink: kb/168/Q168745/
+permalink: /kb/168/Q168745/
 ---
 
 ## Q168745: PPT7: &quot;The File Cannot Be Removed...&quot; Error Running Pack And Go

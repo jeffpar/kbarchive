@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162987: WD97: Supported Non-Word File Formats"
-permalink: kb/162/Q162987/
+permalink: /kb/162/Q162987/
 ---
 
 ## Q162987: WD97: Supported Non-Word File Formats

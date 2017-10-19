@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73416: Uninstall Disk Must Be the Same Media as Drive A"
-permalink: kb/073/Q73416/
+permalink: /kb/073/Q73416/
 ---
 
 ## Q73416: Uninstall Disk Must Be the Same Media as Drive A

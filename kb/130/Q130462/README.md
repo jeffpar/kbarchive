@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130462: INFO: Difference Between REQUERY and REFRESH in Visual FoxPro"
-permalink: kb/130/Q130462/
+permalink: /kb/130/Q130462/
 ---
 
 ## Q130462: INFO: Difference Between REQUERY and REFRESH in Visual FoxPro

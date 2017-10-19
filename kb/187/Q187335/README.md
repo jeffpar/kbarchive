@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187335: SMS: Clients Not Re-mapped After DOMAIN:SITECODE Change"
-permalink: kb/187/Q187335/
+permalink: /kb/187/Q187335/
 ---
 
 ## Q187335: SMS: Clients Not Re-mapped After DOMAIN:SITECODE Change

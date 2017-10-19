@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151224: Inconsistent CRC or Checksum Values on Large Applications"
-permalink: kb/151/Q151224/
+permalink: /kb/151/Q151224/
 ---
 
 ## Q151224: Inconsistent CRC or Checksum Values on Large Applications

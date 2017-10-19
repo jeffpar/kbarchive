@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192786: Event ID 11 Changed to an Informational Message"
-permalink: kb/192/Q192786/
+permalink: /kb/192/Q192786/
 ---
 
 ## Q192786: Event ID 11 Changed to an Informational Message

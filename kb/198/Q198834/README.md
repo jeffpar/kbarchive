@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198834: PRB: ATL Server with Singleton Object Never Unloads from Memory"
-permalink: kb/198/Q198834/
+permalink: /kb/198/Q198834/
 ---
 
 ## Q198834: PRB: ATL Server with Singleton Object Never Unloads from Memory

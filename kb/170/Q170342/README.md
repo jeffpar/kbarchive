@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170342: WD97: How to Add Templates to the Letter Wizard"
-permalink: kb/170/Q170342/
+permalink: /kb/170/Q170342/
 ---
 
 ## Q170342: WD97: How to Add Templates to the Letter Wizard

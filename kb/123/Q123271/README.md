@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123271: Chinese and Japanese Sorting"
-permalink: kb/123/Q123271/
+permalink: /kb/123/Q123271/
 ---
 
 ## Q123271: Chinese and Japanese Sorting

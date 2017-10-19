@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184596: Outwars: Additional Programs and Updates Included on CD-ROM"
-permalink: kb/184/Q184596/
+permalink: /kb/184/Q184596/
 ---
 
 ## Q184596: Outwars: Additional Programs and Updates Included on CD-ROM

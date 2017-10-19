@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193685: Sending E-mail from a Command Prompt Using IIS SMTP Service"
-permalink: kb/193/Q193685/
+permalink: /kb/193/Q193685/
 ---
 
 ## Q193685: Sending E-mail from a Command Prompt Using IIS SMTP Service

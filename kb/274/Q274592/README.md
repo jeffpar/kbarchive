@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274592: SMS: Office 2000 SMS 1.2 Fix May Cause Programs to Not Install"
-permalink: kb/274/Q274592/
+permalink: /kb/274/Q274592/
 ---
 
 ## Q274592: SMS: Office 2000 SMS 1.2 Fix May Cause Programs to Not Install

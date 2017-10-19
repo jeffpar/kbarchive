@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175083: HOWTO: Print Line-by-Line to a Printer"
-permalink: kb/175/Q175083/
+permalink: /kb/175/Q175083/
 ---
 
 ## Q175083: HOWTO: Print Line-by-Line to a Printer

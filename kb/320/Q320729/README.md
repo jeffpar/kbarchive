@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320729: Network+ Certification Training Kit Comments And Corrections"
-permalink: kb/320/Q320729/
+permalink: /kb/320/Q320729/
 ---
 
 ## Q320729: Network+ Certification Training Kit Comments And Corrections

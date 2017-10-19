@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149522: System Error 71 and License Manager"
-permalink: kb/149/Q149522/
+permalink: /kb/149/Q149522/
 ---
 
 ## Q149522: System Error 71 and License Manager

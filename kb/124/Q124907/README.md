@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124907: How to Identify the CD Sampler Version Number"
-permalink: kb/124/Q124907/
+permalink: /kb/124/Q124907/
 ---
 
 ## Q124907: How to Identify the CD Sampler Version Number

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170686: WD97: Text Not Visible, Even When Selected"
-permalink: kb/170/Q170686/
+permalink: /kb/170/Q170686/
 ---
 
 ## Q170686: WD97: Text Not Visible, Even When Selected

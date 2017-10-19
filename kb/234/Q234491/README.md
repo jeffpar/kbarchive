@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234491: XFOR: Configuring Notes Application Connector as WinNT Service"
-permalink: kb/234/Q234491/
+permalink: /kb/234/Q234491/
 ---
 
 ## Q234491: XFOR: Configuring Notes Application Connector as WinNT Service

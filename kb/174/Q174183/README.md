@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174183: XADM: Cannot Get Member List of DLs in Offline Address Book"
-permalink: kb/174/Q174183/
+permalink: /kb/174/Q174183/
 ---
 
 ## Q174183: XADM: Cannot Get Member List of DLs in Offline Address Book

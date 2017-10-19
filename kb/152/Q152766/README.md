@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152766: WD: Error Message: &quot;WordMail Initialization Has Failed&quot;"
-permalink: kb/152/Q152766/
+permalink: /kb/152/Q152766/
 ---
 
 ## Q152766: WD: Error Message: &quot;WordMail Initialization Has Failed&quot;

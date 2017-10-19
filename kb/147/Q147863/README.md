@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147863: MSB Ocean and MSB Earth: Problems Starting in Windows 3.x"
-permalink: kb/147/Q147863/
+permalink: /kb/147/Q147863/
 ---
 
 ## Q147863: MSB Ocean and MSB Earth: Problems Starting in Windows 3.x

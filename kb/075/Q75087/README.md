@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75087: 3.5-inch MS-DOS 5 Upgrade May Fail with Early DOS Versions"
-permalink: kb/075/Q75087/
+permalink: /kb/075/Q75087/
 ---
 
 ## Q75087: 3.5-inch MS-DOS 5 Upgrade May Fail with Early DOS Versions

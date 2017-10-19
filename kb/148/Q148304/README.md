@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148304: INFO: Frequently Encountered MFC 3.x to 4.0 Porting Issues"
-permalink: kb/148/Q148304/
+permalink: /kb/148/Q148304/
 ---
 
 ## Q148304: INFO: Frequently Encountered MFC 3.x to 4.0 Porting Issues

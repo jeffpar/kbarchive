@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173498: Renaming MSN Connections Prevents Access to MSN"
-permalink: kb/173/Q173498/
+permalink: /kb/173/Q173498/
 ---
 
 ## Q173498: Renaming MSN Connections Prevents Access to MSN

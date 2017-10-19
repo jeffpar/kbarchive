@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94775: Disks Created by MS-DOS 6 Upgrade Using SETUP /F"
-permalink: kb/094/Q94775/
+permalink: /kb/094/Q94775/
 ---
 
 ## Q94775: Disks Created by MS-DOS 6 Upgrade Using SETUP /F

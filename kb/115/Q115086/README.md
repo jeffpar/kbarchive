@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115086: PRB: Misuse of ASSERT Causes Problems for MFC Apps"
-permalink: kb/115/Q115086/
+permalink: /kb/115/Q115086/
 ---
 
 ## Q115086: PRB: Misuse of ASSERT Causes Problems for MFC Apps

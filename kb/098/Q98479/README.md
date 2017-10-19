@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98479: DOC: CHKBOOK.CLW File Documents ExtraDDX Lines Incorrectly"
-permalink: kb/098/Q98479/
+permalink: /kb/098/Q98479/
 ---
 
 ## Q98479: DOC: CHKBOOK.CLW File Documents ExtraDDX Lines Incorrectly

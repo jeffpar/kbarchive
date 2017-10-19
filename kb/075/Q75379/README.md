@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75379: Minimal Install Does Not Set COMSPEC to Upgraded COMMAND.COM"
-permalink: kb/075/Q75379/
+permalink: /kb/075/Q75379/
 ---
 
 ## Q75379: Minimal Install Does Not Set COMSPEC to Upgraded COMMAND.COM

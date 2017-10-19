@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131885: AMI BIOS Upgrade Needed for Adaptec 2940 PCI SCSI Controller"
-permalink: kb/131/Q131885/
+permalink: /kb/131/Q131885/
 ---
 
 ## Q131885: AMI BIOS Upgrade Needed for Adaptec 2940 PCI SCSI Controller

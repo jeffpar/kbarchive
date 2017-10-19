@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241432: NFS Server Performance Tuning Parameters for Services for UNIX"
-permalink: kb/241/Q241432/
+permalink: /kb/241/Q241432/
 ---
 
 ## Q241432: NFS Server Performance Tuning Parameters for Services for UNIX

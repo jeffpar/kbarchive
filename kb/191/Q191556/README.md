@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191556: Urban Assault Does Not Start After Introductory Movie Is Played"
-permalink: kb/191/Q191556/
+permalink: /kb/191/Q191556/
 ---
 
 ## Q191556: Urban Assault Does Not Start After Introductory Movie Is Played

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129139: XCLN: Exchange Forms Designer Must Run Locally"
-permalink: kb/129/Q129139/
+permalink: /kb/129/Q129139/
 ---
 
 ## Q129139: XCLN: Exchange Forms Designer Must Run Locally

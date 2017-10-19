@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202765: XIMS: Using IMS Mail: &quot;503 Sender Already Specied&quot;"
-permalink: kb/202/Q202765/
+permalink: /kb/202/Q202765/
 ---
 
 ## Q202765: XIMS: Using IMS Mail: &quot;503 Sender Already Specied&quot;

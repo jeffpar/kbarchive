@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117522: Workgroup Add-On for MS-DOS: Drive Light on w/Shared Printer"
-permalink: kb/117/Q117522/
+permalink: /kb/117/Q117522/
 ---
 
 ## Q117522: Workgroup Add-On for MS-DOS: Drive Light on w/Shared Printer

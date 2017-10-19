@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132228: Why Combobox Style Properties Have Discontinous Values"
-permalink: kb/132/Q132228/
+permalink: /kb/132/Q132228/
 ---
 
 ## Q132228: Why Combobox Style Properties Have Discontinous Values

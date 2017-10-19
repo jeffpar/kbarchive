@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90560: Hearts Requires EGA (or Above) and Mouse"
-permalink: kb/090/Q90560/
+permalink: /kb/090/Q90560/
 ---
 
 ## Q90560: Hearts Requires EGA (or Above) and Mouse

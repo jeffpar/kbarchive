@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240628: SMS: Install May Not Assign Client to a Site"
-permalink: kb/240/Q240628/
+permalink: /kb/240/Q240628/
 ---
 
 ## Q240628: SMS: Install May Not Assign Client to a Site

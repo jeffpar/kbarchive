@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246515: STOP Message When Backing Up Long File Names from Novell Server"
-permalink: kb/246/Q246515/
+permalink: /kb/246/Q246515/
 ---
 
 ## Q246515: STOP Message When Backing Up Long File Names from Novell Server

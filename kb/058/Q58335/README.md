@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q58335: Windows 3.0 WIN.INI [fonts] Section"
-permalink: kb/058/Q58335/
+title: "Q58335: Windows 3.0 WIN.INI &#91;fonts&#93; Section"
+permalink: /kb/058/Q58335/
 ---
 
-## Q58335: Windows 3.0 WIN.INI [fonts] Section
+## Q58335: Windows 3.0 WIN.INI &#91;fonts&#93; Section
 
 	Article: Q58335
 	Product(s): Microsoft Windows 95.x Retail Product

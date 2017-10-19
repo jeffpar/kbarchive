@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315645: FIX: Docked Watch Window or Toolbar Causes Error"
-permalink: kb/315/Q315645/
+permalink: /kb/315/Q315645/
 ---
 
 ## Q315645: FIX: Docked Watch Window or Toolbar Causes Error

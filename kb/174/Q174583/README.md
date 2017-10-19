@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174583: Error: Unable to Read Drive A: For Some Step By Step Disks"
-permalink: kb/174/Q174583/
+permalink: /kb/174/Q174583/
 ---
 
 ## Q174583: Error: Unable to Read Drive A: For Some Step By Step Disks

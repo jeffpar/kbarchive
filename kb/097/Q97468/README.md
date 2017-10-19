@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97468: PC WRmt: Mail Does Not Display Friendly Names from Headers"
-permalink: kb/097/Q97468/
+permalink: /kb/097/Q97468/
 ---
 
 ## Q97468: PC WRmt: Mail Does Not Display Friendly Names from Headers

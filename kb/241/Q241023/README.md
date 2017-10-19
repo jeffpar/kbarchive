@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241023: NBA Inside Drive 2000: Game Is Not Displayed Correctly"
-permalink: kb/241/Q241023/
+permalink: /kb/241/Q241023/
 ---
 
 ## Q241023: NBA Inside Drive 2000: Game Is Not Displayed Correctly

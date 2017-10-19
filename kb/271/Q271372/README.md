@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271372: XCLN: Rules to Move Messages to Public Folders Are Client-Only"
-permalink: kb/271/Q271372/
+permalink: /kb/271/Q271372/
 ---
 
 ## Q271372: XCLN: Rules to Move Messages to Public Folders Are Client-Only

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149494: SMS Inventory Has a Limit of 16 Environment Variables"
-permalink: kb/149/Q149494/
+permalink: /kb/149/Q149494/
 ---
 
 ## Q149494: SMS Inventory Has a Limit of 16 Environment Variables

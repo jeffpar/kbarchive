@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120818: Explanation of WFW&lt;nn&gt; Files in Windows for Workgroups 3.11"
-permalink: kb/120/Q120818/
+permalink: /kb/120/Q120818/
 ---
 
 ## Q120818: Explanation of WFW&lt;nn&gt; Files in Windows for Workgroups 3.11

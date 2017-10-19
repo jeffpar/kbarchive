@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126932: Scenes 2.0: Will Not Close Under Windows NT"
-permalink: kb/126/Q126932/
+permalink: /kb/126/Q126932/
 ---
 
 ## Q126932: Scenes 2.0: Will Not Close Under Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q36068: INFO: IEEE Floating-Point Representation and MS Languages"
-permalink: kb/036/Q36068/
+permalink: /kb/036/Q36068/
 ---
 
 ## Q36068: INFO: IEEE Floating-Point Representation and MS Languages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156840: FP: FrontPage Editor Doesn't Support &quot;border=0&quot; Table Attribute"
-permalink: kb/156/Q156840/
+permalink: /kb/156/Q156840/
 ---
 
 ## Q156840: FP: FrontPage Editor Doesn't Support &quot;border=0&quot; Table Attribute

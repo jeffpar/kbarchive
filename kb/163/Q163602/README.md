@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163602: WD97: Temporary Parameter for Control Does Not Work"
-permalink: kb/163/Q163602/
+permalink: /kb/163/Q163602/
 ---
 
 ## Q163602: WD97: Temporary Parameter for Control Does Not Work

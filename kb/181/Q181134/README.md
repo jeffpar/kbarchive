@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181134: The Service Pack Uninstall Does Not Check for Active Processes"
-permalink: kb/181/Q181134/
+permalink: /kb/181/Q181134/
 ---
 
 ## Q181134: The Service Pack Uninstall Does Not Check for Active Processes

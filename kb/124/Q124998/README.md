@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124998: INF: Change in Behavior of SQLSetPOS on Empty Result Set"
-permalink: kb/124/Q124998/
+permalink: /kb/124/Q124998/
 ---
 
 ## Q124998: INF: Change in Behavior of SQLSetPOS on Empty Result Set

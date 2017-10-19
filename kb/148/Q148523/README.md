@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148523: ADT/ODE: Run-time Application Error with Exit Button"
-permalink: kb/148/Q148523/
+permalink: /kb/148/Q148523/
 ---
 
 ## Q148523: ADT/ODE: Run-time Application Error with Exit Button

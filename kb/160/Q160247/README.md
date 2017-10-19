@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160247: Using Large Fonts Causes MSN Display Problems"
-permalink: kb/160/Q160247/
+permalink: /kb/160/Q160247/
 ---
 
 ## Q160247: Using Large Fonts Causes MSN Display Problems

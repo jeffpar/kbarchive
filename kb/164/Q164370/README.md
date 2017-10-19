@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164370: WD97: Word Development Tools and White Papers"
-permalink: kb/164/Q164370/
+permalink: /kb/164/Q164370/
 ---
 
 ## Q164370: WD97: Word Development Tools and White Papers

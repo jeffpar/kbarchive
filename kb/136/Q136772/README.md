@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136772: INFO: General Information on the Visual FoxPro Upsizing Wizard"
-permalink: kb/136/Q136772/
+permalink: /kb/136/Q136772/
 ---
 
 ## Q136772: INFO: General Information on the Visual FoxPro Upsizing Wizard

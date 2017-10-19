@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151032: GENSPLIT Putting a Generic CWnd in a Splitter Pane"
-permalink: kb/151/Q151032/
+permalink: /kb/151/Q151032/
 ---
 
 ## Q151032: GENSPLIT Putting a Generic CWnd in a Splitter Pane

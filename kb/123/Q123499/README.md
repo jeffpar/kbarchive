@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123499: PCMDUMP and Package Command Manager Instruction Files"
-permalink: kb/123/Q123499/
+permalink: /kb/123/Q123499/
 ---
 
 ## Q123499: PCMDUMP and Package Command Manager Instruction Files

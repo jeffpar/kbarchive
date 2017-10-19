@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233082: Windows Terminal Server Clients May Randomly Hang for 35 Seconds"
-permalink: kb/233/Q233082/
+permalink: /kb/233/Q233082/
 ---
 
 ## Q233082: Windows Terminal Server Clients May Randomly Hang for 35 Seconds

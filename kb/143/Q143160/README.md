@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143160: Enterprise Server Stops During Print Spooling"
-permalink: kb/143/Q143160/
+permalink: /kb/143/Q143160/
 ---
 
 ## Q143160: Enterprise Server Stops During Print Spooling

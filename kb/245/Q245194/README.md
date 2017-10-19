@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245194: DHCP and WINS Do Not Start with Command AntiVirus Version 4.54."
-permalink: kb/245/Q245194/
+permalink: /kb/245/Q245194/
 ---
 
 ## Q245194: DHCP and WINS Do Not Start with Command AntiVirus Version 4.54.

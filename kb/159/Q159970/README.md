@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159970: Slow List of Folders and Files with CSNW"
-permalink: kb/159/Q159970/
+permalink: /kb/159/Q159970/
 ---
 
 ## Q159970: Slow List of Folders and Files with CSNW

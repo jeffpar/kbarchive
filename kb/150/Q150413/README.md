@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150413: Using Netscape Navigator with The Microsoft Network"
-permalink: kb/150/Q150413/
+permalink: /kb/150/Q150413/
 ---
 
 ## Q150413: Using Netscape Navigator with The Microsoft Network

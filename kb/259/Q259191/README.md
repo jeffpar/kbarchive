@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259191: CFS/FS98: Aircraft Unexpectedly Stops Nose Down in Midair"
-permalink: kb/259/Q259191/
+permalink: /kb/259/Q259191/
 ---
 
 ## Q259191: CFS/FS98: Aircraft Unexpectedly Stops Nose Down in Midair

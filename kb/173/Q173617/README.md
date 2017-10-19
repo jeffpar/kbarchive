@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173617: Print Server Application Exception in Function AimOpenPrinter"
-permalink: kb/173/Q173617/
+permalink: /kb/173/Q173617/
 ---
 
 ## Q173617: Print Server Application Exception in Function AimOpenPrinter

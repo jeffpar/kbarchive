@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152447: WINMSD Reports Incorrect Free Space on 4.1-GB NTFS Volume"
-permalink: kb/152/Q152447/
+permalink: /kb/152/Q152447/
 ---
 
 ## Q152447: WINMSD Reports Incorrect Free Space on 4.1-GB NTFS Volume

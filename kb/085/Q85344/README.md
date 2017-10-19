@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85344: FAX: Questions That Need to Be Answered During Installation"
-permalink: kb/085/Q85344/
+permalink: /kb/085/Q85344/
 ---
 
 ## Q85344: FAX: Questions That Need to Be Answered During Installation

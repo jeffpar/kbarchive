@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126272: How to Delete Records Having Identical ID Nums from Two Tables"
-permalink: kb/126/Q126272/
+permalink: /kb/126/Q126272/
 ---
 
 ## Q126272: How to Delete Records Having Identical ID Nums from Two Tables

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153108: Errors in Appman.log After Running NADRESET"
-permalink: kb/153/Q153108/
+permalink: /kb/153/Q153108/
 ---
 
 ## Q153108: Errors in Appman.log After Running NADRESET

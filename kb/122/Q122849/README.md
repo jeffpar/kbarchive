@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122849: CONN: Adding PC Addresses to Mac Address List Via a Text File"
-permalink: kb/122/Q122849/
+permalink: /kb/122/Q122849/
 ---
 
 ## Q122849: CONN: Adding PC Addresses to Mac Address List Via a Text File

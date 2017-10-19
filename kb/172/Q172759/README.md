@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172759: Advanced Windows 3rd Ed. Project Crashes VC++ 5.0"
-permalink: kb/172/Q172759/
+permalink: /kb/172/Q172759/
 ---
 
 ## Q172759: Advanced Windows 3rd Ed. Project Crashes VC++ 5.0

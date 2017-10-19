@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177289: WD97: Why Are Two Word 6.0/95 Converters Listed in Save As Type?"
-permalink: kb/177/Q177289/
+permalink: /kb/177/Q177289/
 ---
 
 ## Q177289: WD97: Why Are Two Word 6.0/95 Converters Listed in Save As Type?

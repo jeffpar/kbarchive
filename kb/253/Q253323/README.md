@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253323: Y2K: Where.exe Displays Incorrect Date After 1999"
-permalink: kb/253/Q253323/
+permalink: /kb/253/Q253323/
 ---
 
 ## Q253323: Y2K: Where.exe Displays Incorrect Date After 1999

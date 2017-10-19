@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175588: XFOR: Microsoft Exchange DX Returns Event ID 220 or 221"
-permalink: kb/175/Q175588/
+permalink: /kb/175/Q175588/
 ---
 
 ## Q175588: XFOR: Microsoft Exchange DX Returns Event ID 220 or 221

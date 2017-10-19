@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191597: XWEB: Multiple Attachments Appear As Untitled And Single Item"
-permalink: kb/191/Q191597/
+permalink: /kb/191/Q191597/
 ---
 
 ## Q191597: XWEB: Multiple Attachments Appear As Untitled And Single Item

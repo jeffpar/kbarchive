@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154081: HOWTO: Use a Template for Comments When Checking In Files"
-permalink: kb/154/Q154081/
+permalink: /kb/154/Q154081/
 ---
 
 ## Q154081: HOWTO: Use a Template for Comments When Checking In Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174095: IGMP Query Times Out in Windows 95 with Winsock2 Update"
-permalink: kb/174/Q174095/
+permalink: /kb/174/Q174095/
 ---
 
 ## Q174095: IGMP Query Times Out in Windows 95 with Winsock2 Update

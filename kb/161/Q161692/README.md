@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161692: WD97: Problems With Float Over Text Objects"
-permalink: kb/161/Q161692/
+permalink: /kb/161/Q161692/
 ---
 
 ## Q161692: WD97: Problems With Float Over Text Objects

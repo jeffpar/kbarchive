@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149103: MSN Interactive Teen: How to Send Suggestions"
-permalink: kb/149/Q149103/
+permalink: /kb/149/Q149103/
 ---
 
 ## Q149103: MSN Interactive Teen: How to Send Suggestions

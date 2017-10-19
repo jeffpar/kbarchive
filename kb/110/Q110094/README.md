@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110094: PC Forms: Errors When Opening E-Forms Under Windows NT"
-permalink: kb/110/Q110094/
+permalink: /kb/110/Q110094/
 ---
 
 ## Q110094: PC Forms: Errors When Opening E-Forms Under Windows NT

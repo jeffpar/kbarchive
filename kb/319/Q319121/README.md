@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319121: Cannot Remove MSN Explorer User Tile(s) In Windows XP--Deleted T"
-permalink: kb/319/Q319121/
+permalink: /kb/319/Q319121/
 ---
 
 ## Q319121: Cannot Remove MSN Explorer User Tile(s) In Windows XP--Deleted T

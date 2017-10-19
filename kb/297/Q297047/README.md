@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297047: Microsoft Office 2000 Expert Companion Comments And Corrections"
-permalink: kb/297/Q297047/
+permalink: /kb/297/Q297047/
 ---
 
 ## Q297047: Microsoft Office 2000 Expert Companion Comments And Corrections

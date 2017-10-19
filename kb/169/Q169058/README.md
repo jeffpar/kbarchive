@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169058: OFF97: IPF in Module KERNEL32.DLL Saving File with Long Name"
-permalink: kb/169/Q169058/
+permalink: /kb/169/Q169058/
 ---
 
 ## Q169058: OFF97: IPF in Module KERNEL32.DLL Saving File with Long Name

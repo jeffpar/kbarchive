@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177675: SMS: Inventory Based on String Value at Offset Incorrect"
-permalink: kb/177/Q177675/
+permalink: /kb/177/Q177675/
 ---
 
 ## Q177675: SMS: Inventory Based on String Value at Offset Incorrect

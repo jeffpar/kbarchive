@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177424: HOWTO: Convert Multiple Projects in Visual C++ 5.0 and 6.0"
-permalink: kb/177/Q177424/
+permalink: /kb/177/Q177424/
 ---
 
 ## Q177424: HOWTO: Convert Multiple Projects in Visual C++ 5.0 and 6.0

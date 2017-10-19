@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136270: How to Expand or Collapse an Outline Control Programmatically"
-permalink: kb/136/Q136270/
+permalink: /kb/136/Q136270/
 ---
 
 ## Q136270: How to Expand or Collapse an Outline Control Programmatically

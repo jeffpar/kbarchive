@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134712: DIR /C Returns Compression Ratio for Uncompressed Files"
-permalink: kb/134/Q134712/
+permalink: /kb/134/Q134712/
 ---
 
 ## Q134712: DIR /C Returns Compression Ratio for Uncompressed Files

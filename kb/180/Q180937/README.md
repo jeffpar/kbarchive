@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180937: Reset Button Problems in Print Session Properties"
-permalink: kb/180/Q180937/
+permalink: /kb/180/Q180937/
 ---
 
 ## Q180937: Reset Button Problems in Print Session Properties

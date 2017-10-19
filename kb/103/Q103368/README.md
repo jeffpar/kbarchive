@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103368: From Command Prompt: &quot;The Name Specified Is Not Recognized...&quot;"
-permalink: kb/103/Q103368/
+permalink: /kb/103/Q103368/
 ---
 
 ## Q103368: From Command Prompt: &quot;The Name Specified Is Not Recognized...&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47516: Mac Wkst: Read Window Keyboard Shortcuts"
-permalink: kb/047/Q47516/
+permalink: /kb/047/Q47516/
 ---
 
 ## Q47516: Mac Wkst: Read Window Keyboard Shortcuts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117509: Windows 95 Setup Err Msg: The Path Is Invalid"
-permalink: kb/117/Q117509/
+permalink: /kb/117/Q117509/
 ---
 
 ## Q117509: Windows 95 Setup Err Msg: The Path Is Invalid

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126048: Writer: Difficulty Printing Cards on Epson Stylus"
-permalink: kb/126/Q126048/
+permalink: /kb/126/Q126048/
 ---
 
 ## Q126048: Writer: Difficulty Printing Cards on Epson Stylus

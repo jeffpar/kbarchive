@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232227: SMS: Inaccurate Installation Date Is Reported in the Inventory"
-permalink: kb/232/Q232227/
+permalink: /kb/232/Q232227/
 ---
 
 ## Q232227: SMS: Inaccurate Installation Date Is Reported in the Inventory

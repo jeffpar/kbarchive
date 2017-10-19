@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124034: OpenGL Interface in Windows NT 3.5"
-permalink: kb/124/Q124034/
+permalink: /kb/124/Q124034/
 ---
 
 ## Q124034: OpenGL Interface in Windows NT 3.5

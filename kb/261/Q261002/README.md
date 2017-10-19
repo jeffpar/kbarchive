@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261002: How to Move the Default Web Site to a Different Drive in IIS 5.0"
-permalink: kb/261/Q261002/
+permalink: /kb/261/Q261002/
 ---
 
 ## Q261002: How to Move the Default Web Site to a Different Drive in IIS 5.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230013: Error Message After You Install Intel Pro/100 Network Adapter"
-permalink: kb/230/Q230013/
+permalink: /kb/230/Q230013/
 ---
 
 ## Q230013: Error Message After You Install Intel Pro/100 Network Adapter

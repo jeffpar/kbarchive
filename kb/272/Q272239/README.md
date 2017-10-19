@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272239: Programs in Run Key or Startup Group May Not Run"
-permalink: kb/272/Q272239/
+permalink: /kb/272/Q272239/
 ---
 
 ## Q272239: Programs in Run Key or Startup Group May Not Run

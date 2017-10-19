@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179591: Cinemania: Monthly Update Files Are No Longer Available"
-permalink: kb/179/Q179591/
+permalink: /kb/179/Q179591/
 ---
 
 ## Q179591: Cinemania: Monthly Update Files Are No Longer Available

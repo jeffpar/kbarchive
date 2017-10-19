@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122054: Information: PCMCIA Slot Specifications and Types"
-permalink: kb/122/Q122054/
+permalink: /kb/122/Q122054/
 ---
 
 ## Q122054: Information: PCMCIA Slot Specifications and Types

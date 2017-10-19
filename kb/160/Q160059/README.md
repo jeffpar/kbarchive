@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160059: WD97: Macros to Move to Beginning, End of Paragraph"
-permalink: kb/160/Q160059/
+permalink: /kb/160/Q160059/
 ---
 
 ## Q160059: WD97: Macros to Move to Beginning, End of Paragraph

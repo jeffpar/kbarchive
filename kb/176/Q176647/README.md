@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176647: XADM: Latency Reading Alternate Recipient Information"
-permalink: kb/176/Q176647/
+permalink: /kb/176/Q176647/
 ---
 
 ## Q176647: XADM: Latency Reading Alternate Recipient Information

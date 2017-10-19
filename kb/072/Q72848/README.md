@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72848: How to Use Int 20h to Terminate an .EXE Program"
-permalink: kb/072/Q72848/
+permalink: /kb/072/Q72848/
 ---
 
 ## Q72848: How to Use Int 20h to Terminate an .EXE Program

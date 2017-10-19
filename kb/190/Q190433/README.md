@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190433: XWEB: Err Msg: Current Password Is About to Expire in 0 Days"
-permalink: kb/190/Q190433/
+permalink: /kb/190/Q190433/
 ---
 
 ## Q190433: XWEB: Err Msg: Current Password Is About to Expire in 0 Days

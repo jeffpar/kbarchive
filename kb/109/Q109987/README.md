@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109987: PROFS: Err Msg: IN_FORM ID Gets Out of Sequence Error"
-permalink: kb/109/Q109987/
+permalink: /kb/109/Q109987/
 ---
 
 ## Q109987: PROFS: Err Msg: IN_FORM ID Gets Out of Sequence Error

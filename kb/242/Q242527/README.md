@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242527: PRB: #import Wrapper Methods May Cause Access Violation"
-permalink: kb/242/Q242527/
+permalink: /kb/242/Q242527/
 ---
 
 ## Q242527: PRB: #import Wrapper Methods May Cause Access Violation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168950: WD97: Bookmark at End of Document Lost After Save"
-permalink: kb/168/Q168950/
+permalink: /kb/168/Q168950/
 ---
 
 ## Q168950: WD97: Bookmark at End of Document Lost After Save

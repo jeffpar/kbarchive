@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99134: BUG: Application Errors From Long Text in the Dialog Editor"
-permalink: kb/099/Q99134/
+permalink: /kb/099/Q99134/
 ---
 
 ## Q99134: BUG: Application Errors From Long Text in the Dialog Editor

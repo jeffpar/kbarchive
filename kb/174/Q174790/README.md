@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174790: IIS Hangs When Querying a FoxPro Database w/ ASP or IDC/HTX"
-permalink: kb/174/Q174790/
+permalink: /kb/174/Q174790/
 ---
 
 ## Q174790: IIS Hangs When Querying a FoxPro Database w/ ASP or IDC/HTX

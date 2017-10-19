@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302946: Train Sim: Err Msg Cmd Create Mpeg32 Task_cmd Was Not Successful"
-permalink: kb/302/Q302946/
+permalink: /kb/302/Q302946/
 ---
 
 ## Q302946: Train Sim: Err Msg Cmd Create Mpeg32 Task_cmd Was Not Successful

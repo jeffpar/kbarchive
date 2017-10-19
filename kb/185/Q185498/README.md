@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185498: Vfphtml.exe Demonstrates HTML Help in VFP 3.0 and 5.0"
-permalink: kb/185/Q185498/
+permalink: /kb/185/Q185498/
 ---
 
 ## Q185498: Vfphtml.exe Demonstrates HTML Help in VFP 3.0 and 5.0

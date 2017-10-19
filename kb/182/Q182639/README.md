@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182639: Host Security Domain Listed When Installed on NT Workstation"
-permalink: kb/182/Q182639/
+permalink: /kb/182/Q182639/
 ---
 
 ## Q182639: Host Security Domain Listed When Installed on NT Workstation

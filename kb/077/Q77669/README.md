@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77669: PC OS2: Install Fails If Windows Ported Application Is Active"
-permalink: kb/077/Q77669/
+permalink: /kb/077/Q77669/
 ---
 
 ## Q77669: PC OS2: Install Fails If Windows Ported Application Is Active

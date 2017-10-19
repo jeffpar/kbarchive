@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178274: No Authentication Using Non-Domain Controller for RAS Server"
-permalink: kb/178/Q178274/
+permalink: /kb/178/Q178274/
 ---
 
 ## Q178274: No Authentication Using Non-Domain Controller for RAS Server

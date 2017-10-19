@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201314: XFOR: Exchange Internet Mail Pickup Directory Usage"
-permalink: kb/201/Q201314/
+permalink: /kb/201/Q201314/
 ---
 
 ## Q201314: XFOR: Exchange Internet Mail Pickup Directory Usage

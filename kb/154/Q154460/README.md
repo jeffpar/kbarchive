@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154460: Denial of Service Attack Against WinNT Simple TCP/IP Services"
-permalink: kb/154/Q154460/
+permalink: /kb/154/Q154460/
 ---
 
 ## Q154460: Denial of Service Attack Against WinNT Simple TCP/IP Services

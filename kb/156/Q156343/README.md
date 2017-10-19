@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156343: PRB: Unknown Member Error Using Thisformset.ActiveControl"
-permalink: kb/156/Q156343/
+permalink: /kb/156/Q156343/
 ---
 
 ## Q156343: PRB: Unknown Member Error Using Thisformset.ActiveControl

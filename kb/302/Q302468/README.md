@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302468: Encarta: Err Msg When You Use Links in Encarta Web Center"
-permalink: kb/302/Q302468/
+permalink: /kb/302/Q302468/
 ---
 
 ## Q302468: Encarta: Err Msg When You Use Links in Encarta Web Center

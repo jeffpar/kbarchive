@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142302: Information About the WINSDMP.EXE Utility"
-permalink: kb/142/Q142302/
+permalink: /kb/142/Q142302/
 ---
 
 ## Q142302: Information About the WINSDMP.EXE Utility

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170527: WD97: Objects Print Incorrectly on Non-Square Resolutions"
-permalink: kb/170/Q170527/
+permalink: /kb/170/Q170527/
 ---
 
 ## Q170527: WD97: Objects Print Incorrectly on Non-Square Resolutions

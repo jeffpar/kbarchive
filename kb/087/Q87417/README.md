@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87417: PC DB: Rebuilding an MBG File"
-permalink: kb/087/Q87417/
+permalink: /kb/087/Q87417/
 ---
 
 ## Q87417: PC DB: Rebuilding an MBG File

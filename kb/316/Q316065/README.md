@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316065: PRB: Emulator Connection Is Lost if SNA Host Printer Is Added"
-permalink: kb/316/Q316065/
+permalink: /kb/316/Q316065/
 ---
 
 ## Q316065: PRB: Emulator Connection Is Lost if SNA Host Printer Is Added

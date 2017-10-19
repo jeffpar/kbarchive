@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183588: XFOR: cc:Mail User Receives NDR When replying to POP3 Sender"
-permalink: kb/183/Q183588/
+permalink: /kb/183/Q183588/
 ---
 
 ## Q183588: XFOR: cc:Mail User Receives NDR When replying to POP3 Sender

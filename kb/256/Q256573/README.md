@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256573: Services for UNIX 2.0 NFS Gateway &quot;About&quot; Command Shows Nothing"
-permalink: kb/256/Q256573/
+permalink: /kb/256/Q256573/
 ---
 
 ## Q256573: Services for UNIX 2.0 NFS Gateway &quot;About&quot; Command Shows Nothing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230250: XFOR:Internet Mail Service Failed to Deliver Message, Error 4117"
-permalink: kb/230/Q230250/
+permalink: /kb/230/Q230250/
 ---
 
 ## Q230250: XFOR:Internet Mail Service Failed to Deliver Message, Error 4117

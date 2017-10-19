@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135618: BUG: View Designer Doesn't Properly Display Crosstab"
-permalink: kb/135/Q135618/
+permalink: /kb/135/Q135618/
 ---
 
 ## Q135618: BUG: View Designer Doesn't Properly Display Crosstab

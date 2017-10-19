@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108412: Exabyte 8200-EXB Streamer Time-Outs During Backup"
-permalink: kb/108/Q108412/
+permalink: /kb/108/Q108412/
 ---
 
 ## Q108412: Exabyte 8200-EXB Streamer Time-Outs During Backup

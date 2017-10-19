@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95878: WFWG: Screen Fonts May Display Incorrectly with Chat"
-permalink: kb/095/Q95878/
+permalink: /kb/095/Q95878/
 ---
 
 ## Q95878: WFWG: Screen Fonts May Display Incorrectly with Chat

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169481: XADM: MTA Doesn't Start After Upgrading 4.0 SP3 to 5.0"
-permalink: kb/169/Q169481/
+permalink: /kb/169/Q169481/
 ---
 
 ## Q169481: XADM: MTA Doesn't Start After Upgrading 4.0 SP3 to 5.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157270: How to Set Up Motorola BitSurfr Pro for Single-Channel ISDN"
-permalink: kb/157/Q157270/
+permalink: /kb/157/Q157270/
 ---
 
 ## Q157270: How to Set Up Motorola BitSurfr Pro for Single-Channel ISDN

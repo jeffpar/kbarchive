@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80898: Windows 3.1 Application Compatibility (part 3 of 7)"
-permalink: kb/080/Q80898/
+permalink: /kb/080/Q80898/
 ---
 
 ## Q80898: Windows 3.1 Application Compatibility (part 3 of 7)

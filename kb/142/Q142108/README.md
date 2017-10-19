@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142108: 3D Movie Maker: Animation Stops While Credits Box Scrolls"
-permalink: kb/142/Q142108/
+permalink: /kb/142/Q142108/
 ---
 
 ## Q142108: 3D Movie Maker: Animation Stops While Credits Box Scrolls

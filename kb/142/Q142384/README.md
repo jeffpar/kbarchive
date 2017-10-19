@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142384: HOWTO: How to Create Accelerators for CPropertyPages"
-permalink: kb/142/Q142384/
+permalink: /kb/142/Q142384/
 ---
 
 ## Q142384: HOWTO: How to Create Accelerators for CPropertyPages

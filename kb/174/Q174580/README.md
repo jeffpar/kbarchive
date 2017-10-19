@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174580: Where to Find Information about Deleting Data Files"
-permalink: kb/174/Q174580/
+permalink: /kb/174/Q174580/
 ---
 
 ## Q174580: Where to Find Information about Deleting Data Files

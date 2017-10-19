@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79800: PRB: Pen-Based Computer Unavailable While Running AfterDark"
-permalink: kb/079/Q79800/
+permalink: /kb/079/Q79800/
 ---
 
 ## Q79800: PRB: Pen-Based Computer Unavailable While Running AfterDark

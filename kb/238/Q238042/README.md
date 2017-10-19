@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238042: Research Organizer: Program Is Listed Twice in Control Panel"
-permalink: kb/238/Q238042/
+permalink: /kb/238/Q238042/
 ---
 
 ## Q238042: Research Organizer: Program Is Listed Twice in Control Panel

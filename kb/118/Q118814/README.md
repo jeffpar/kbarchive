@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118814: DOCERR: Win32 APIs Callable from a QuickWin Application"
-permalink: kb/118/Q118814/
+permalink: /kb/118/Q118814/
 ---
 
 ## Q118814: DOCERR: Win32 APIs Callable from a QuickWin Application

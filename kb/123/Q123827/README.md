@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123827: SMTP: Err Msg: Error (119) Network Write Error"
-permalink: kb/123/Q123827/
+permalink: /kb/123/Q123827/
 ---
 
 ## Q123827: SMTP: Err Msg: Error (119) Network Write Error

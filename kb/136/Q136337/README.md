@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136337: Troubleshooting Windows 95 Startup Problems and Error Messages"
-permalink: kb/136/Q136337/
+permalink: /kb/136/Q136337/
 ---
 
 ## Q136337: Troubleshooting Windows 95 Startup Problems and Error Messages

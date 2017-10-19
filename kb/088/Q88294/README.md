@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88294: PRB: Screen Generator Causes &quot;File Not Found&quot; Error"
-permalink: kb/088/Q88294/
+permalink: /kb/088/Q88294/
 ---
 
 ## Q88294: PRB: Screen Generator Causes &quot;File Not Found&quot; Error

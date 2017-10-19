@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132835: Brief 3.0 Behaves Erratically with Long PATH Variable"
-permalink: kb/132/Q132835/
+permalink: /kb/132/Q132835/
 ---
 
 ## Q132835: Brief 3.0 Behaves Erratically with Long PATH Variable

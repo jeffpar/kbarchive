@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66579: Purpose of the M-bit and FRAME DATUM Fields"
-permalink: kb/066/Q66579/
+permalink: /kb/066/Q66579/
 ---
 
 ## Q66579: Purpose of the M-bit and FRAME DATUM Fields

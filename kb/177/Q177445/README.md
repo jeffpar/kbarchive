@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177445: Use LoadLibraryEx When Loading Printer Drivers"
-permalink: kb/177/Q177445/
+permalink: /kb/177/Q177445/
 ---
 
 ## Q177445: Use LoadLibraryEx When Loading Printer Drivers

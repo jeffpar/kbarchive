@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187433: Messages Sent From TSAdmin Display While Session Is Locked"
-permalink: kb/187/Q187433/
+permalink: /kb/187/Q187433/
 ---
 
 ## Q187433: Messages Sent From TSAdmin Display While Session Is Locked

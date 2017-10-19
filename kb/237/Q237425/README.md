@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237425: Modem No Longer Dials After Approximately Two Days"
-permalink: kb/237/Q237425/
+permalink: /kb/237/Q237425/
 ---
 
 ## Q237425: Modem No Longer Dials After Approximately Two Days

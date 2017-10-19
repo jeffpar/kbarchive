@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185506: WD97: Numbering Reset When Frame Is Anchored to Paragraph"
-permalink: kb/185/Q185506/
+permalink: /kb/185/Q185506/
 ---
 
 ## Q185506: WD97: Numbering Reset When Frame Is Anchored to Paragraph

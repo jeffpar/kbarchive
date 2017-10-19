@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165683: INFO: Visual C++ 5.0 Readme, ActiveX Control Issues"
-permalink: kb/165/Q165683/
+permalink: /kb/165/Q165683/
 ---
 
 ## Q165683: INFO: Visual C++ 5.0 Readme, ActiveX Control Issues

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249825: XWEB: Calendar Date Doesn't Change if Date Selected w/Scroll Bar"
-permalink: kb/249/Q249825/
+permalink: /kb/249/Q249825/
 ---
 
 ## Q249825: XWEB: Calendar Date Doesn't Change if Date Selected w/Scroll Bar

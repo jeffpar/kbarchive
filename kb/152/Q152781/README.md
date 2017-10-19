@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152781: FIX: Incorrect Return Values from COleDateTime Members"
-permalink: kb/152/Q152781/
+permalink: /kb/152/Q152781/
 ---
 
 ## Q152781: FIX: Incorrect Return Values from COleDateTime Members

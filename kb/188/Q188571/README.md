@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188571: STOP 0x0000000A in Netbt.sys Caused by Invalid DNS Record"
-permalink: kb/188/Q188571/
+permalink: /kb/188/Q188571/
 ---
 
 ## Q188571: STOP 0x0000000A in Netbt.sys Caused by Invalid DNS Record

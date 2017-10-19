@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243054: Data Corruption in RPC Causes Tight Loop with RPC Programs"
-permalink: kb/243/Q243054/
+permalink: /kb/243/Q243054/
 ---
 
 ## Q243054: Data Corruption in RPC Causes Tight Loop with RPC Programs

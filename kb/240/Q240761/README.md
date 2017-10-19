@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240761: LUA Security Does Not Apply to TN3270 LUA LUs"
-permalink: kb/240/Q240761/
+permalink: /kb/240/Q240761/
 ---
 
 ## Q240761: LUA Security Does Not Apply to TN3270 LUA LUs

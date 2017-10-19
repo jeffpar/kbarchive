@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249240: Soccer 2000 Err Msg: Does Not Support This Resolution Mode..."
-permalink: kb/249/Q249240/
+permalink: /kb/249/Q249240/
 ---
 
 ## Q249240: Soccer 2000 Err Msg: Does Not Support This Resolution Mode...

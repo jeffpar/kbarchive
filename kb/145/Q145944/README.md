@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145944: X.400: Using X400adm.exe to Configure Settings"
-permalink: kb/145/Q145944/
+permalink: /kb/145/Q145944/
 ---
 
 ## Q145944: X.400: Using X400adm.exe to Configure Settings

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159453: SNA Server 3.0 5250 Applet Numeric Pad Function Keys Don't Work"
-permalink: kb/159/Q159453/
+permalink: /kb/159/Q159453/
 ---
 
 ## Q159453: SNA Server 3.0 5250 Applet Numeric Pad Function Keys Don't Work

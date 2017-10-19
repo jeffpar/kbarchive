@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124244: Using Quotes with DEL may Delete Wrong Directory Files"
-permalink: kb/124/Q124244/
+permalink: /kb/124/Q124244/
 ---
 
 ## Q124244: Using Quotes with DEL may Delete Wrong Directory Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94800: WSS Voice Pilot Deactivated When Playing Waveform (.WAV) Files"
-permalink: kb/094/Q94800/
+permalink: /kb/094/Q94800/
 ---
 
 ## Q94800: WSS Voice Pilot Deactivated When Playing Waveform (.WAV) Files

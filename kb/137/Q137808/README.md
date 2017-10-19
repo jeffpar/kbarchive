@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137808: FIX: Empty Error Log File Created with the Converter"
-permalink: kb/137/Q137808/
+permalink: /kb/137/Q137808/
 ---
 
 ## Q137808: FIX: Empty Error Log File Created with the Converter

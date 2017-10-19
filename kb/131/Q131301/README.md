@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131301: PRB: Pressing ESC Key Clears Contents of Text Box in a Toolbar"
-permalink: kb/131/Q131301/
+permalink: /kb/131/Q131301/
 ---
 
 ## Q131301: PRB: Pressing ESC Key Clears Contents of Text Box in a Toolbar

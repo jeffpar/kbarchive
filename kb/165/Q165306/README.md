@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165306: PRB: Error &quot;File c:&#92;.dbc does not exist&quot; in Visual FoxPro"
-permalink: kb/165/Q165306/
+permalink: /kb/165/Q165306/
 ---
 
 ## Q165306: PRB: Error &quot;File c:&#92;.dbc does not exist&quot; in Visual FoxPro

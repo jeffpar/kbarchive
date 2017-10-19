@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60430: Security Issues with LAN Manager 2.0 and 2.1"
-permalink: kb/060/Q60430/
+permalink: /kb/060/Q60430/
 ---
 
 ## Q60430: Security Issues with LAN Manager 2.0 and 2.1

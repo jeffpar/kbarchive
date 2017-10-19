@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117586: FIX: &quot;Cannot Activate OLE Server&quot;; Graphic Doesn't Print"
-permalink: kb/117/Q117586/
+permalink: /kb/117/Q117586/
 ---
 
 ## Q117586: FIX: &quot;Cannot Activate OLE Server&quot;; Graphic Doesn't Print

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236449: Net LocalGroup Command May Cause Access Violation"
-permalink: kb/236/Q236449/
+permalink: /kb/236/Q236449/
 ---
 
 ## Q236449: Net LocalGroup Command May Cause Access Violation

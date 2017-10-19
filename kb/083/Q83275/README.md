@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83275: Using Extended ASCII Characters (Not Found on Keyboard)"
-permalink: kb/083/Q83275/
+permalink: /kb/083/Q83275/
 ---
 
 ## Q83275: Using Extended ASCII Characters (Not Found on Keyboard)

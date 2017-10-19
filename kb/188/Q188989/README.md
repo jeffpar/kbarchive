@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188989: XADM: IS Stops Unexpectedly Formatting a Binary Property Value"
-permalink: kb/188/Q188989/
+permalink: /kb/188/Q188989/
 ---
 
 ## Q188989: XADM: IS Stops Unexpectedly Formatting a Binary Property Value

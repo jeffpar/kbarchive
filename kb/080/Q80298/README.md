@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80298: AST Premium Exec Notebook May Need Reverse Video"
-permalink: kb/080/Q80298/
+permalink: /kb/080/Q80298/
 ---
 
 ## Q80298: AST Premium Exec Notebook May Need Reverse Video

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147224: Shared Icon Does Not Appear After Sharing a Folder with a LFN"
-permalink: kb/147/Q147224/
+permalink: /kb/147/Q147224/
 ---
 
 ## Q147224: Shared Icon Does Not Appear After Sharing a Folder with a LFN

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326884: MCAD/MCSD Self-Paced Training Kit: Developing Web Applications w"
-permalink: kb/326/Q326884/
+permalink: /kb/326/Q326884/
 ---
 
 ## Q326884: MCAD/MCSD Self-Paced Training Kit: Developing Web Applications w

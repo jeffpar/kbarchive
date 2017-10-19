@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285320: MechWarrior 4 Err Msg: STOP: Cannot Create 'Resource&#92;Variants..."
-permalink: kb/285/Q285320/
+permalink: /kb/285/Q285320/
 ---
 
 ## Q285320: MechWarrior 4 Err Msg: STOP: Cannot Create 'Resource&#92;Variants...

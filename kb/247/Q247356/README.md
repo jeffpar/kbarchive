@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247356: HOWTO: Execute a SQL Server 7.0 DTS Package from Visual FoxPro"
-permalink: kb/247/Q247356/
+permalink: /kb/247/Q247356/
 ---
 
 ## Q247356: HOWTO: Execute a SQL Server 7.0 DTS Package from Visual FoxPro

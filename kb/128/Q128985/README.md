@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128985: INFO: Comparing SNA client TCP/IP named pipes vs sockets"
-permalink: kb/128/Q128985/
+permalink: /kb/128/Q128985/
 ---
 
 ## Q128985: INFO: Comparing SNA client TCP/IP named pipes vs sockets

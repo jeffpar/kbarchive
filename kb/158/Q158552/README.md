@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158552: PRB: CPropertySheet::DoModal() or Create() Causes an Exception"
-permalink: kb/158/Q158552/
+permalink: /kb/158/Q158552/
 ---
 
 ## Q158552: PRB: CPropertySheet::DoModal() or Create() Causes an Exception

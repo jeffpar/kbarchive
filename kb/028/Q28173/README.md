@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q28173: C Run-time Library History and Naming Conventions"
-permalink: kb/028/Q28173/
+permalink: /kb/028/Q28173/
 ---
 
 ## Q28173: C Run-time Library History and Naming Conventions

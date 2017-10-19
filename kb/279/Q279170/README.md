@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279170: Problem with Command-Line FTP Client and Long File Names"
-permalink: kb/279/Q279170/
+permalink: /kb/279/Q279170/
 ---
 
 ## Q279170: Problem with Command-Line FTP Client and Long File Names

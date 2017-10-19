@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154749: Get_LUA_Return_Code Not Defined in WINSLI32.DLL File"
-permalink: kb/154/Q154749/
+permalink: /kb/154/Q154749/
 ---
 
 ## Q154749: Get_LUA_Return_Code Not Defined in WINSLI32.DLL File

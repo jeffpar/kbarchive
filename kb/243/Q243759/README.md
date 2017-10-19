@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243759: XCON: MTA May Stop on 9405 Errors with Access Violation"
-permalink: kb/243/Q243759/
+permalink: /kb/243/Q243759/
 ---
 
 ## Q243759: XCON: MTA May Stop on 9405 Errors with Access Violation

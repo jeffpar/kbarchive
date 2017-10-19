@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128414: Failure during Setup of Localized Version of NT"
-permalink: kb/128/Q128414/
+permalink: /kb/128/Q128414/
 ---
 
 ## Q128414: Failure during Setup of Localized Version of NT

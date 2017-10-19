@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102933: Mac Srv: User Name Retained in Group After User Is Removed"
-permalink: kb/102/Q102933/
+permalink: /kb/102/Q102933/
 ---
 
 ## Q102933: Mac Srv: User Name Retained in Group After User Is Removed

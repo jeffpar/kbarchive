@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141369: Cannot Change Service Type While Connected to MSN"
-permalink: kb/141/Q141369/
+permalink: /kb/141/Q141369/
 ---
 
 ## Q141369: Cannot Change Service Type While Connected to MSN

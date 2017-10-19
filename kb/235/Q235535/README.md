@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235535: Smsman Requires Logon Installation or Discovery to Be Enabled"
-permalink: kb/235/Q235535/
+permalink: /kb/235/Q235535/
 ---
 
 ## Q235535: Smsman Requires Logon Installation or Discovery to Be Enabled

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154607: XCLN: Folder Deleted From Offline Store Removes Online Folder"
-permalink: kb/154/Q154607/
+permalink: /kb/154/Q154607/
 ---
 
 ## Q154607: XCLN: Folder Deleted From Offline Store Removes Online Folder

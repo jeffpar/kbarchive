@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66326: Windows 3.0 Productivity Pack 1.0 Disk Directories"
-permalink: kb/066/Q66326/
+permalink: /kb/066/Q66326/
 ---
 
 ## Q66326: Windows 3.0 Productivity Pack 1.0 Disk Directories

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84421: High Granularity Setting May Cause Problems Moving Windows"
-permalink: kb/084/Q84421/
+permalink: /kb/084/Q84421/
 ---
 
 ## Q84421: High Granularity Setting May Cause Problems Moving Windows

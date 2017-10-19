@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140899: BUG: GPF When RecordSource Property is Blank at Design-Time"
-permalink: kb/140/Q140899/
+permalink: /kb/140/Q140899/
 ---
 
 ## Q140899: BUG: GPF When RecordSource Property is Blank at Design-Time

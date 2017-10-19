@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124551: INFO: Configuring Parsing of the AUTOEXEC.BAT File"
-permalink: kb/124/Q124551/
+permalink: /kb/124/Q124551/
 ---
 
 ## Q124551: INFO: Configuring Parsing of the AUTOEXEC.BAT File

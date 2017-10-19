@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69563: Maximum Line Length and Count for Batch Files &amp; CONFIG.SYS"
-permalink: kb/069/Q69563/
+permalink: /kb/069/Q69563/
 ---
 
 ## Q69563: Maximum Line Length and Count for Batch Files &amp; CONFIG.SYS

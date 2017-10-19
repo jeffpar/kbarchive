@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183069: Ensoniq PCI Sound Card Experiences Static When Disk Is Accessed"
-permalink: kb/183/Q183069/
+permalink: /kb/183/Q183069/
 ---
 
 ## Q183069: Ensoniq PCI Sound Card Experiences Static When Disk Is Accessed

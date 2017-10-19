@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105081: PRB: &quot;Warning: Calling DestroyWindow in CWnd::~CWnd&quot; Message"
-permalink: kb/105/Q105081/
+permalink: /kb/105/Q105081/
 ---
 
 ## Q105081: PRB: &quot;Warning: Calling DestroyWindow in CWnd::~CWnd&quot; Message

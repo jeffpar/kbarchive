@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129997: PC Win: Mail SCHEDMSG.DLL Version 3.2.4086 Update"
-permalink: kb/129/Q129997/
+permalink: /kb/129/Q129997/
 ---
 
 ## Q129997: PC Win: Mail SCHEDMSG.DLL Version 3.2.4086 Update

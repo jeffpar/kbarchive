@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97550: Cable Considerations for Network Installations"
-permalink: kb/097/Q97550/
+permalink: /kb/097/Q97550/
 ---
 
 ## Q97550: Cable Considerations for Network Installations

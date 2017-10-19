@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196732: HOWTO: Set a User's Default Local Printer with a Logon Script"
-permalink: kb/196/Q196732/
+permalink: /kb/196/Q196732/
 ---
 
 ## Q196732: HOWTO: Set a User's Default Local Printer with a Logon Script

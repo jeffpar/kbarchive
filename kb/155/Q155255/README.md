@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155255: IDC Queries to Access Fail from IIS 2.0"
-permalink: kb/155/Q155255/
+permalink: /kb/155/Q155255/
 ---
 
 ## Q155255: IDC Queries to Access Fail from IIS 2.0

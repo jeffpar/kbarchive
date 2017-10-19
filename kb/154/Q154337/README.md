@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154337: XCON: MTA Fails to Start with 9405 Error Message"
-permalink: kb/154/Q154337/
+permalink: /kb/154/Q154337/
 ---
 
 ## Q154337: XCON: MTA Fails to Start with 9405 Error Message

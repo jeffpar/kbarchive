@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217048: Lmsdk/Netwksta: Programmatically Log Off Domain from Win95/98"
-permalink: kb/217/Q217048/
+permalink: /kb/217/Q217048/
 ---
 
 ## Q217048: Lmsdk/Netwksta: Programmatically Log Off Domain from Win95/98

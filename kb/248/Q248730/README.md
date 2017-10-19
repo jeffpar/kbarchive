@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248730: Terminal Server Reboots 15 Minutes After Being Shut Down"
-permalink: kb/248/Q248730/
+permalink: /kb/248/Q248730/
 ---
 
 ## Q248730: Terminal Server Reboots 15 Minutes After Being Shut Down

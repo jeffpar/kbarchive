@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111290: PRB: Pink System Highlight Causes FoxPro for Mac to Turn Pink"
-permalink: kb/111/Q111290/
+permalink: /kb/111/Q111290/
 ---
 
 ## Q111290: PRB: Pink System Highlight Causes FoxPro for Mac to Turn Pink

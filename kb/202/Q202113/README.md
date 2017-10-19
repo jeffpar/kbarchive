@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202113: XCON: Connectors in Standard &amp; Enterprise Exchange Server 5.5"
-permalink: kb/202/Q202113/
+permalink: /kb/202/Q202113/
 ---
 
 ## Q202113: XCON: Connectors in Standard &amp; Enterprise Exchange Server 5.5

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165169: PRB: Using ARROW Keys Ignores Page Deactivate Event NODEFAULT"
-permalink: kb/165/Q165169/
+permalink: /kb/165/Q165169/
 ---
 
 ## Q165169: PRB: Using ARROW Keys Ignores Page Deactivate Event NODEFAULT

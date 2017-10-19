@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196254: XFOR: MMC Must Be Closed and Reopened after a Net Stop"
-permalink: kb/196/Q196254/
+permalink: /kb/196/Q196254/
 ---
 
 ## Q196254: XFOR: MMC Must Be Closed and Reopened after a Net Stop

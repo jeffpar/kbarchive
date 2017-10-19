@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172177: PRB: Alpha Platform Not Available When Adding Configurations"
-permalink: kb/172/Q172177/
+permalink: /kb/172/Q172177/
 ---
 
 ## Q172177: PRB: Alpha Platform Not Available When Adding Configurations

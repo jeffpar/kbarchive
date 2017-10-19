@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161935: XADM: Message Tracking Error 5007 Caused by Missing &#42;.Arc Files"
-permalink: kb/161/Q161935/
+permalink: /kb/161/Q161935/
 ---
 
 ## Q161935: XADM: Message Tracking Error 5007 Caused by Missing &#42;.Arc Files

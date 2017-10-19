@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129867: How to Debug Typelib Shadowing"
-permalink: kb/129/Q129867/
+permalink: /kb/129/Q129867/
 ---
 
 ## Q129867: How to Debug Typelib Shadowing

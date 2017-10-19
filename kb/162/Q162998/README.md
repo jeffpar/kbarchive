@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162998: XADM: Mailbox Is Empty Following Move Mailbox Command"
-permalink: kb/162/Q162998/
+permalink: /kb/162/Q162998/
 ---
 
 ## Q162998: XADM: Mailbox Is Empty Following Move Mailbox Command

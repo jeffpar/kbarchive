@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130444: HOWTO: Calculating Years, Months, and Days Between Two Dates"
-permalink: kb/130/Q130444/
+permalink: /kb/130/Q130444/
 ---
 
 ## Q130444: HOWTO: Calculating Years, Months, and Days Between Two Dates

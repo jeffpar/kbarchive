@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323570: MSN Explorer remains in High Contrast after changing the Appeara"
-permalink: kb/323/Q323570/
+permalink: /kb/323/Q323570/
 ---
 
 ## Q323570: MSN Explorer remains in High Contrast after changing the Appeara

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66338: Flight Simulator: Proper Display Option for VGA LCD Display"
-permalink: kb/066/Q66338/
+permalink: /kb/066/Q66338/
 ---
 
 ## Q66338: Flight Simulator: Proper Display Option for VGA LCD Display

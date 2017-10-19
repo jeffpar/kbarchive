@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96824: Using a Common UNDELETE.INI File with Undelete"
-permalink: kb/096/Q96824/
+permalink: /kb/096/Q96824/
 ---
 
 ## Q96824: Using a Common UNDELETE.INI File with Undelete

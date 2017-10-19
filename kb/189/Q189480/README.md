@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189480: PRB: RichTextBox Control Saves Locale Setting When Created"
-permalink: kb/189/Q189480/
+permalink: /kb/189/Q189480/
 ---
 
 ## Q189480: PRB: RichTextBox Control Saves Locale Setting When Created

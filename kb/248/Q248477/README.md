@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248477: FIX: Deadlock Using STL Map or Set in Multithreaded Application"
-permalink: kb/248/Q248477/
+permalink: /kb/248/Q248477/
 ---
 
 ## Q248477: FIX: Deadlock Using STL Map or Set in Multithreaded Application

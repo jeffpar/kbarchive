@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75294: The Netlogon Service and How It Works"
-permalink: kb/075/Q75294/
+permalink: /kb/075/Q75294/
 ---
 
 ## Q75294: The Netlogon Service and How It Works

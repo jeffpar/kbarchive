@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163020: XFOR: MSMail Connector NDR Message with Event ID 2117"
-permalink: kb/163/Q163020/
+permalink: /kb/163/Q163020/
 ---
 
 ## Q163020: XFOR: MSMail Connector NDR Message with Event ID 2117

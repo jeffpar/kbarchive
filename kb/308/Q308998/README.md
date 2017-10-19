@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308998: Print Server Access Violation in Function MonitorThread"
-permalink: kb/308/Q308998/
+permalink: /kb/308/Q308998/
 ---
 
 ## Q308998: Print Server Access Violation in Function MonitorThread

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163412: FIX: Web Browser Position is Wrong on Pageframe Page"
-permalink: kb/163/Q163412/
+permalink: /kb/163/Q163412/
 ---
 
 ## Q163412: FIX: Web Browser Position is Wrong on Pageframe Page

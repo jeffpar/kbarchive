@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123358: When TCP/IP-32 Under Stress, MS-DOS Command Prompt GP Faults"
-permalink: kb/123/Q123358/
+permalink: /kb/123/Q123358/
 ---
 
 ## Q123358: When TCP/IP-32 Under Stress, MS-DOS Command Prompt GP Faults

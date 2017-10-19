@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192712: SBS Err Msg: Unable to Display This Folder"
-permalink: kb/192/Q192712/
+permalink: /kb/192/Q192712/
 ---
 
 ## Q192712: SBS Err Msg: Unable to Display This Folder

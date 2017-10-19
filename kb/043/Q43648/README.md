@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43648: Returning Control to CodeView"
-permalink: kb/043/Q43648/
+permalink: /kb/043/Q43648/
 ---
 
 ## Q43648: Returning Control to CodeView

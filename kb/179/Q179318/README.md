@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179318: ACC97: How to Simulate Office Features in an ODE Application"
-permalink: kb/179/Q179318/
+permalink: /kb/179/Q179318/
 ---
 
 ## Q179318: ACC97: How to Simulate Office Features in an ODE Application

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141903: Text Missing from Bottom of Page Viewing Fax with Fax Viewer"
-permalink: kb/141/Q141903/
+permalink: /kb/141/Q141903/
 ---
 
 ## Q141903: Text Missing from Bottom of Page Viewing Fax with Fax Viewer

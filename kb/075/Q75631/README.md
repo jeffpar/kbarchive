@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75631: XLTABLE Clipboard Format Documentation Available"
-permalink: kb/075/Q75631/
+permalink: /kb/075/Q75631/
 ---
 
 ## Q75631: XLTABLE Clipboard Format Documentation Available

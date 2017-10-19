@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137500: SLI Interface Returns Truncated Data on SSCP-LU Session"
-permalink: kb/137/Q137500/
+permalink: /kb/137/Q137500/
 ---
 
 ## Q137500: SLI Interface Returns Truncated Data on SSCP-LU Session

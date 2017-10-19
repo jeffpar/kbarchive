@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97041: 32-Bit Disk Access Can Degrade Hard Drive Performance"
-permalink: kb/097/Q97041/
+permalink: /kb/097/Q97041/
 ---
 
 ## Q97041: 32-Bit Disk Access Can Degrade Hard Drive Performance

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q97892: PC WRmt: 3.2 Mail Remote for Windows Disk 3 [3.5] - U.S."
-permalink: kb/097/Q97892/
+title: "Q97892: PC WRmt: 3.2 Mail Remote for Windows Disk 3 &#91;3.5&#93; - U.S."
+permalink: /kb/097/Q97892/
 ---
 
-## Q97892: PC WRmt: 3.2 Mail Remote for Windows Disk 3 [3.5] - U.S.
+## Q97892: PC WRmt: 3.2 Mail Remote for Windows Disk 3 &#91;3.5&#93; - U.S.
 
 	Article: Q97892
 	Product(s): Microsoft Mail For PC Networks

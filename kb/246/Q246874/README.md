@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246874: INFO: Visual SourceSafe 6.0 Installation From Visual C++ 6.0"
-permalink: kb/246/Q246874/
+permalink: /kb/246/Q246874/
 ---
 
 ## Q246874: INFO: Visual SourceSafe 6.0 Installation From Visual C++ 6.0

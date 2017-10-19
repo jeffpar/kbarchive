@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98201: HOWTO: Change Dialog Box Background Color in MFC 2.0 or Later"
-permalink: kb/098/Q98201/
+permalink: /kb/098/Q98201/
 ---
 
 ## Q98201: HOWTO: Change Dialog Box Background Color in MFC 2.0 or Later

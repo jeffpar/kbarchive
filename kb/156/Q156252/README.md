@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156252: MSB Dinosaurs: Long Text Strings Are Truncated on Past Cards"
-permalink: kb/156/Q156252/
+permalink: /kb/156/Q156252/
 ---
 
 ## Q156252: MSB Dinosaurs: Long Text Strings Are Truncated on Past Cards

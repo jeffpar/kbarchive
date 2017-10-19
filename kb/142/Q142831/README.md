@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142831: PRB: DBList Shrinks When Toggling Appearance Property"
-permalink: kb/142/Q142831/
+permalink: /kb/142/Q142831/
 ---
 
 ## Q142831: PRB: DBList Shrinks When Toggling Appearance Property

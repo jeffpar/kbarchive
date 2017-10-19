@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153077: LAN Manager and WinNT Servers Running Remoteboot Cannot Coexist"
-permalink: kb/153/Q153077/
+permalink: /kb/153/Q153077/
 ---
 
 ## Q153077: LAN Manager and WinNT Servers Running Remoteboot Cannot Coexist

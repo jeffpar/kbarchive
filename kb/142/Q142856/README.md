@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142856: Error 3095 and 3096 with Intel EtherExpress MCA &amp; MCA/TP"
-permalink: kb/142/Q142856/
+permalink: /kb/142/Q142856/
 ---
 
 ## Q142856: Error 3095 and 3096 with Intel EtherExpress MCA &amp; MCA/TP

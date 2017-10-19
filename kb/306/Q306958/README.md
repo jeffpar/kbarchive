@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306958: XCON: MTA Stops with Large IMCData Archive Folders"
-permalink: kb/306/Q306958/
+permalink: /kb/306/Q306958/
 ---
 
 ## Q306958: XCON: MTA Stops with Large IMCData Archive Folders

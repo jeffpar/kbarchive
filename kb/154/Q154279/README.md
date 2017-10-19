@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154279: PRB: Visual SourceSafe Status Truncates Filenames to 20 Char"
-permalink: kb/154/Q154279/
+permalink: /kb/154/Q154279/
 ---
 
 ## Q154279: PRB: Visual SourceSafe Status Truncates Filenames to 20 Char

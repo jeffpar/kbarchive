@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137139: HOWTO: Optimize the Reactivation of In-Place Active Servers"
-permalink: kb/137/Q137139/
+permalink: /kb/137/Q137139/
 ---
 
 ## Q137139: HOWTO: Optimize the Reactivation of In-Place Active Servers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195904: NTVDM Is Not Initialized After TCP/IP Removal"
-permalink: kb/195/Q195904/
+permalink: /kb/195/Q195904/
 ---
 
 ## Q195904: NTVDM Is Not Initialized After TCP/IP Removal

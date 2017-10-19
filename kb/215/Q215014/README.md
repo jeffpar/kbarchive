@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215014: SMS: APM16 Does Not Run Batch File Without Extension in Cmd Line"
-permalink: kb/215/Q215014/
+permalink: /kb/215/Q215014/
 ---
 
 ## Q215014: SMS: APM16 Does Not Run Batch File Without Extension in Cmd Line

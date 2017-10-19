@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228920: Citrix ICA Connected Client File Access is Slow the First Time"
-permalink: kb/228/Q228920/
+permalink: /kb/228/Q228920/
 ---
 
 ## Q228920: Citrix ICA Connected Client File Access is Slow the First Time

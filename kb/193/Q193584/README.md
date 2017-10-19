@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193584: FIX: Files Always Opened with Default Visual SourceSafe Viewer"
-permalink: kb/193/Q193584/
+permalink: /kb/193/Q193584/
 ---
 
 ## Q193584: FIX: Files Always Opened with Default Visual SourceSafe Viewer

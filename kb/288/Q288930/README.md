@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288930: PRB: PDW Raises Error &quot;Filename Must Contain Text&quot;"
-permalink: kb/288/Q288930/
+permalink: /kb/288/Q288930/
 ---
 
 ## Q288930: PRB: PDW Raises Error &quot;Filename Must Contain Text&quot;

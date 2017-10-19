@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177900: AS/400 Prompts for Sign-on When SNA Server Is Enabled for SSO"
-permalink: kb/177/Q177900/
+permalink: /kb/177/Q177900/
 ---
 
 ## Q177900: AS/400 Prompts for Sign-on When SNA Server Is Enabled for SSO

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158916: TI TravelMate TM4000M Notebook Computer May Hang"
-permalink: kb/158/Q158916/
+permalink: /kb/158/Q158916/
 ---
 
 ## Q158916: TI TravelMate TM4000M Notebook Computer May Hang

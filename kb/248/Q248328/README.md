@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248328: Fighter Ace II: Ground Textures Appear Coarse or Blocky"
-permalink: kb/248/Q248328/
+permalink: /kb/248/Q248328/
 ---
 
 ## Q248328: Fighter Ace II: Ground Textures Appear Coarse or Blocky

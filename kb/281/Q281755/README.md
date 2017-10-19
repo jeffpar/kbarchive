@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281755: HOWTO: Connect to FileMaker Pro from Visual Basic with ODBC"
-permalink: kb/281/Q281755/
+permalink: /kb/281/Q281755/
 ---
 
 ## Q281755: HOWTO: Connect to FileMaker Pro from Visual Basic with ODBC

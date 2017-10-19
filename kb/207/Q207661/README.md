@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207661: SMS Installer Watch Doesn't Support Command Line Arguments"
-permalink: kb/207/Q207661/
+permalink: /kb/207/Q207661/
 ---
 
 ## Q207661: SMS Installer Watch Doesn't Support Command Line Arguments

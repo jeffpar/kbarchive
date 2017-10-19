@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138557: PRB: Golf 2.0 Overwrites WIN32s Files"
-permalink: kb/138/Q138557/
+permalink: /kb/138/Q138557/
 ---
 
 ## Q138557: PRB: Golf 2.0 Overwrites WIN32s Files

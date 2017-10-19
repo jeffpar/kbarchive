@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225520: SMS Installer Uses Short-Date Format from Regional Settings"
-permalink: kb/225/Q225520/
+permalink: /kb/225/Q225520/
 ---
 
 ## Q225520: SMS Installer Uses Short-Date Format from Regional Settings

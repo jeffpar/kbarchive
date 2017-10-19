@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81645: BlueMAX Install May Hang System with Windows 3.1"
-permalink: kb/081/Q81645/
+permalink: /kb/081/Q81645/
 ---
 
 ## Q81645: BlueMAX Install May Hang System with Windows 3.1

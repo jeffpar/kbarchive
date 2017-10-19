@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67007: Executing a Function From the Command or Watch Window"
-permalink: kb/067/Q67007/
+permalink: /kb/067/Q67007/
 ---
 
 ## Q67007: Executing a Function From the Command or Watch Window

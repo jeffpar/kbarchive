@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136657: Obtaining Files for Installing the SNA Win95 Client"
-permalink: kb/136/Q136657/
+permalink: /kb/136/Q136657/
 ---
 
 ## Q136657: Obtaining Files for Installing the SNA Win95 Client

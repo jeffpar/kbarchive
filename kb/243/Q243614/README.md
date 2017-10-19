@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243614: Screen Appears out of Alignment After Installing MSN 5.0"
-permalink: kb/243/Q243614/
+permalink: /kb/243/Q243614/
 ---
 
 ## Q243614: Screen Appears out of Alignment After Installing MSN 5.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120754: WINS Managers Fails to Delete All Selected Static Mappings"
-permalink: kb/120/Q120754/
+permalink: /kb/120/Q120754/
 ---
 
 ## Q120754: WINS Managers Fails to Delete All Selected Static Mappings

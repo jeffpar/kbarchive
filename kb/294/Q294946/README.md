@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294946: Forcing New Dial-up Number Selection Or &quot;Poptimization&quot;"
-permalink: kb/294/Q294946/
+permalink: /kb/294/Q294946/
 ---
 
 ## Q294946: Forcing New Dial-up Number Selection Or &quot;Poptimization&quot;

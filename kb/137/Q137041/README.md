@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137041: SMTP: Recommended Environments for the SMTP Gateway"
-permalink: kb/137/Q137041/
+permalink: /kb/137/Q137041/
 ---
 
 ## Q137041: SMTP: Recommended Environments for the SMTP Gateway

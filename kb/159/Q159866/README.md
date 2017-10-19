@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159866: WD97: How to Set Table Width to Percentage of Browser Window"
-permalink: kb/159/Q159866/
+permalink: /kb/159/Q159866/
 ---
 
 ## Q159866: WD97: How to Set Table Width to Percentage of Browser Window

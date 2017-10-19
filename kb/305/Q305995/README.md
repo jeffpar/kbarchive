@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305995: PRB: Error When You Connect to a Jet Database on a Novell Server"
-permalink: kb/305/Q305995/
+permalink: /kb/305/Q305995/
 ---
 
 ## Q305995: PRB: Error When You Connect to a Jet Database on a Novell Server

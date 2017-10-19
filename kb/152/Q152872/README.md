@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152872: Err Msg: The New Item Could Not be Inserted"
-permalink: kb/152/Q152872/
+permalink: /kb/152/Q152872/
 ---
 
 ## Q152872: Err Msg: The New Item Could Not be Inserted

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166570: XFOR: IMS May Crash When Receiving Message from Pegasus Mail"
-permalink: kb/166/Q166570/
+permalink: /kb/166/Q166570/
 ---
 
 ## Q166570: XFOR: IMS May Crash When Receiving Message from Pegasus Mail

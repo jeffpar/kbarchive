@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313364: OpenGL-Based Program Causes Access Violation in Windows NT"
-permalink: kb/313/Q313364/
+permalink: /kb/313/Q313364/
 ---
 
 ## Q313364: OpenGL-Based Program Causes Access Violation in Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162121: PPT: Sample Code to Animate All Graph 8.0 Objects"
-permalink: kb/162/Q162121/
+permalink: /kb/162/Q162121/
 ---
 
 ## Q162121: PPT: Sample Code to Animate All Graph 8.0 Objects

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172506: Step By Step Setup Cannot Find Installation Directory On Disk"
-permalink: kb/172/Q172506/
+permalink: /kb/172/Q172506/
 ---
 
 ## Q172506: Step By Step Setup Cannot Find Installation Directory On Disk

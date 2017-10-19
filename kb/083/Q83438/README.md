@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83438: Printer Driver and Version Supplied in Windows SDL"
-permalink: kb/083/Q83438/
+permalink: /kb/083/Q83438/
 ---
 
 ## Q83438: Printer Driver and Version Supplied in Windows SDL

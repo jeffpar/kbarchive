@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140330: Cannot Remote Control if Client Computer Name is in Lower Case"
-permalink: kb/140/Q140330/
+permalink: /kb/140/Q140330/
 ---
 
 ## Q140330: Cannot Remote Control if Client Computer Name is in Lower Case

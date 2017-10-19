@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215947: XFOR: SNADS: Bad In-body Addresses Cause NDRs to Stop Lsdiamex"
-permalink: kb/215/Q215947/
+permalink: /kb/215/Q215947/
 ---
 
 ## Q215947: XFOR: SNADS: Bad In-body Addresses Cause NDRs to Stop Lsdiamex

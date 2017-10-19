@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137960: Wine Guide 1.0: Incorrect BACK Functionality in Encyclopedia"
-permalink: kb/137/Q137960/
+permalink: /kb/137/Q137960/
 ---
 
 ## Q137960: Wine Guide 1.0: Incorrect BACK Functionality in Encyclopedia

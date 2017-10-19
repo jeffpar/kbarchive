@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226837: SMS: Crystal Reports Location Is Displayed Incorrectly"
-permalink: kb/226/Q226837/
+permalink: /kb/226/Q226837/
 ---
 
 ## Q226837: SMS: Crystal Reports Location Is Displayed Incorrectly

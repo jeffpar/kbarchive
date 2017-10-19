@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257224: SMS: Remote Control Reinstalled During Periodic Component Verify"
-permalink: kb/257/Q257224/
+permalink: /kb/257/Q257224/
 ---
 
 ## Q257224: SMS: Remote Control Reinstalled During Periodic Component Verify

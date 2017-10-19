@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148501: Preventing PCI Resource Conflicts on Intel-Based Computers"
-permalink: kb/148/Q148501/
+permalink: /kb/148/Q148501/
 ---
 
 ## Q148501: Preventing PCI Resource Conflicts on Intel-Based Computers

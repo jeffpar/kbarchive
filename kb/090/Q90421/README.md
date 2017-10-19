@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90421: WFWG Err Msg: Error Loading MMTLHI.DRV... with ET 4000 Video"
-permalink: kb/090/Q90421/
+permalink: /kb/090/Q90421/
 ---
 
 ## Q90421: WFWG Err Msg: Error Loading MMTLHI.DRV... with ET 4000 Video

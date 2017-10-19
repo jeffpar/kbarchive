@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97695: Complete Communicator Software May Need to Be on Host Drive"
-permalink: kb/097/Q97695/
+permalink: /kb/097/Q97695/
 ---
 
 ## Q97695: Complete Communicator Software May Need to Be on Host Drive

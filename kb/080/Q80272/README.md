@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80272: PC Ext: Diagnostics Produced by the -Q2z Parameter on External"
-permalink: kb/080/Q80272/
+permalink: /kb/080/Q80272/
 ---
 
 ## Q80272: PC Ext: Diagnostics Produced by the -Q2z Parameter on External

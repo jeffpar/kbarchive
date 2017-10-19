@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249872: Cannot Remotely Edit Windows 95/98 Registry with Regedit/Poledit"
-permalink: kb/249/Q249872/
+permalink: /kb/249/Q249872/
 ---
 
 ## Q249872: Cannot Remotely Edit Windows 95/98 Registry with Regedit/Poledit

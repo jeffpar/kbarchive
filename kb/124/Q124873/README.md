@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124873: Disabling System Hard Error Message Dialog Boxes"
-permalink: kb/124/Q124873/
+permalink: /kb/124/Q124873/
 ---
 
 ## Q124873: Disabling System Hard Error Message Dialog Boxes

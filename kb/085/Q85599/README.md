@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85599: No Duplex Printing Options on HP IID PostScript Driver"
-permalink: kb/085/Q85599/
+permalink: /kb/085/Q85599/
 ---
 
 ## Q85599: No Duplex Printing Options on HP IID PostScript Driver

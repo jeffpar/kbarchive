@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94612: DOCERR: Name of Standard Help Menu Incorrect for InsertItem"
-permalink: kb/094/Q94612/
+permalink: /kb/094/Q94612/
 ---
 
 ## Q94612: DOCERR: Name of Standard Help Menu Incorrect for InsertItem

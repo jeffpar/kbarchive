@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304186: BETA-INFO: FTP Security Accounts Add/Remove Buttons Unavailable"
-permalink: kb/304/Q304186/
+permalink: /kb/304/Q304186/
 ---
 
 ## Q304186: BETA-INFO: FTP Security Accounts Add/Remove Buttons Unavailable

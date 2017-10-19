@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241151: MMC: All Sites Are Stopped and Opening a Web Site Causes Error"
-permalink: kb/241/Q241151/
+permalink: /kb/241/Q241151/
 ---
 
 ## Q241151: MMC: All Sites Are Stopped and Opening a Web Site Causes Error

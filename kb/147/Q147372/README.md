@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147372: Problem Using Full Tape Backup Requiring More than One Tape"
-permalink: kb/147/Q147372/
+permalink: /kb/147/Q147372/
 ---
 
 ## Q147372: Problem Using Full Tape Backup Requiring More than One Tape

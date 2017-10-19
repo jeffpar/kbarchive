@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q96641: PC DB: 3.0 Server Disk 3 [3.5, 5.25]"
-permalink: kb/096/Q96641/
+title: "Q96641: PC DB: 3.0 Server Disk 3 &#91;3.5, 5.25&#93;"
+permalink: /kb/096/Q96641/
 ---
 
-## Q96641: PC DB: 3.0 Server Disk 3 [3.5, 5.25]
+## Q96641: PC DB: 3.0 Server Disk 3 &#91;3.5, 5.25&#93;
 
 	Article: Q96641
 	Product(s): Microsoft Mail For PC Networks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199771: XFOR: Event ID 4106 and 4037 When Starting IMS with Dial-up"
-permalink: kb/199/Q199771/
+permalink: /kb/199/Q199771/
 ---
 
 ## Q199771: XFOR: Event ID 4106 and 4037 When Starting IMS with Dial-up

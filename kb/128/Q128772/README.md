@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128772: PRB: Tools Options Does Not Reset Buffering for Current Table"
-permalink: kb/128/Q128772/
+permalink: /kb/128/Q128772/
 ---
 
 ## Q128772: PRB: Tools Options Does Not Reset Buffering for Current Table

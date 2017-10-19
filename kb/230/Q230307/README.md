@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230307: Slow Performance in TCP/IP When Reconnecting"
-permalink: kb/230/Q230307/
+permalink: /kb/230/Q230307/
 ---
 
 ## Q230307: Slow Performance in TCP/IP When Reconnecting

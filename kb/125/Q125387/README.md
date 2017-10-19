@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125387: SMS Inventory on Serial Mouse Hardware Takes a Long Time"
-permalink: kb/125/Q125387/
+permalink: /kb/125/Q125387/
 ---
 
 ## Q125387: SMS Inventory on Serial Mouse Hardware Takes a Long Time

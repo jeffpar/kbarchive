@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97017: Tandon Pacs: DoubleSpace Requires Updated DPACCESS.SYS"
-permalink: kb/097/Q97017/
+permalink: /kb/097/Q97017/
 ---
 
 ## Q97017: Tandon Pacs: DoubleSpace Requires Updated DPACCESS.SYS

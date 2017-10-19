@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242459: BUG: DAO Recordset Update Method Fails Silently"
-permalink: kb/242/Q242459/
+permalink: /kb/242/Q242459/
 ---
 
 ## Q242459: BUG: DAO Recordset Update Method Fails Silently

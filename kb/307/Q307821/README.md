@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307821: Permissions Lost When Shared Folders Service Is Restarted"
-permalink: kb/307/Q307821/
+permalink: /kb/307/Q307821/
 ---
 
 ## Q307821: Permissions Lost When Shared Folders Service Is Restarted

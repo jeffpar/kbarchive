@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59700: Unloading TSRs Manually; Still Get TSR Support Message"
-permalink: kb/059/Q59700/
+permalink: /kb/059/Q59700/
 ---
 
 ## Q59700: Unloading TSRs Manually; Still Get TSR Support Message

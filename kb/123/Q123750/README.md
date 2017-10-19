@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123750: Debugging Windows NT Setup STOP Screens"
-permalink: kb/123/Q123750/
+permalink: /kb/123/Q123750/
 ---
 
 ## Q123750: Debugging Windows NT Setup STOP Screens

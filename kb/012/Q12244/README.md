@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q12244: Fatal Error Messages 0x0140 and 0x0240"
-permalink: kb/012/Q12244/
+permalink: /kb/012/Q12244/
 ---
 
 ## Q12244: Fatal Error Messages 0x0140 and 0x0240

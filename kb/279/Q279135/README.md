@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279135: FIX: Stored Proc Used w/ SQLEXEC Embeds NULL as Last Char"
-permalink: kb/279/Q279135/
+permalink: /kb/279/Q279135/
 ---
 
 ## Q279135: FIX: Stored Proc Used w/ SQLEXEC Embeds NULL as Last Char

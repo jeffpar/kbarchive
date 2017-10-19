@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254120: SMS: Following Service Account Name Change, HMAN, &amp; DDM Fail"
-permalink: kb/254/Q254120/
+permalink: /kb/254/Q254120/
 ---
 
 ## Q254120: SMS: Following Service Account Name Change, HMAN, &amp; DDM Fail

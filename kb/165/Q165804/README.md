@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165804: INFO: Comparing RDS Technology to RDO and DAO"
-permalink: kb/165/Q165804/
+permalink: /kb/165/Q165804/
 ---
 
 ## Q165804: INFO: Comparing RDS Technology to RDO and DAO

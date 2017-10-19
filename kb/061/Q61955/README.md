@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61955: PWB Generates SYS0002 If MSHELP.DLL Not Installed Properly"
-permalink: kb/061/Q61955/
+permalink: /kb/061/Q61955/
 ---
 
 ## Q61955: PWB Generates SYS0002 If MSHELP.DLL Not Installed Properly

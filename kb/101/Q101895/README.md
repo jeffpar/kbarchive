@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101895: Macintosh Files on MS-DOS Disks May Not Work"
-permalink: kb/101/Q101895/
+permalink: /kb/101/Q101895/
 ---
 
 ## Q101895: Macintosh Files on MS-DOS Disks May Not Work

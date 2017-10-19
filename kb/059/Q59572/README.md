@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59572: Flt Sim: Kraft Multispeed Programmable Joystick Adapter Card"
-permalink: kb/059/Q59572/
+permalink: /kb/059/Q59572/
 ---
 
 ## Q59572: Flt Sim: Kraft Multispeed Programmable Joystick Adapter Card

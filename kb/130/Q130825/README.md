@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130825: Tools Available with Visual FoxPro 3.0 Professional"
-permalink: kb/130/Q130825/
+permalink: /kb/130/Q130825/
 ---
 
 ## Q130825: Tools Available with Visual FoxPro 3.0 Professional

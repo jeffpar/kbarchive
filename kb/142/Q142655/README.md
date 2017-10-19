@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142655: Stop Message Appears After Deleting ProductOption Registry Key"
-permalink: kb/142/Q142655/
+permalink: /kb/142/Q142655/
 ---
 
 ## Q142655: Stop Message Appears After Deleting ProductOption Registry Key

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157470: XFOR: IMC: Connectors Missing from MSDN"
-permalink: kb/157/Q157470/
+permalink: /kb/157/Q157470/
 ---
 
 ## Q157470: XFOR: IMC: Connectors Missing from MSDN

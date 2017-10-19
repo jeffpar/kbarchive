@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151099: Content of Readme.hlp File Shipped w/FoxPro for Macintosh"
-permalink: kb/151/Q151099/
+permalink: /kb/151/Q151099/
 ---
 
 ## Q151099: Content of Readme.hlp File Shipped w/FoxPro for Macintosh

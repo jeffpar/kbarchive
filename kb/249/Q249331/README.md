@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249331: Advertisements Received by Clients Outside Targeted Collections"
-permalink: kb/249/Q249331/
+permalink: /kb/249/Q249331/
 ---
 
 ## Q249331: Advertisements Received by Clients Outside Targeted Collections

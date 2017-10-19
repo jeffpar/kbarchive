@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141339: XCLN: Err Msg: Form You Selected Could Not be Displayed"
-permalink: kb/141/Q141339/
+permalink: /kb/141/Q141339/
 ---
 
 ## Q141339: XCLN: Err Msg: Form You Selected Could Not be Displayed

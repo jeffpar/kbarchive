@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259701: Extra Lines Appear in LU3 Print Job When You Use PDT"
-permalink: kb/259/Q259701/
+permalink: /kb/259/Q259701/
 ---
 
 ## Q259701: Extra Lines Appear in LU3 Print Job When You Use PDT

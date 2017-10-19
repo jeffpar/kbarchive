@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q21581: Shrinking Heap Space"
-permalink: kb/021/Q21581/
+permalink: /kb/021/Q21581/
 ---
 
 ## Q21581: Shrinking Heap Space

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180621: Symbol Files for 5250 Applet Not Available with SNA Server 3.0"
-permalink: kb/180/Q180621/
+permalink: /kb/180/Q180621/
 ---
 
 ## Q180621: Symbol Files for 5250 Applet Not Available with SNA Server 3.0

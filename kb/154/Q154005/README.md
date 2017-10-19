@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154005: HOWTO: Delete a File into the Win95/98/Me Recycle Bin"
-permalink: kb/154/Q154005/
+permalink: /kb/154/Q154005/
 ---
 
 ## Q154005: HOWTO: Delete a File into the Win95/98/Me Recycle Bin

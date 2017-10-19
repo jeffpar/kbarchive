@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191624: INFO: Do Visual FoxPro Datasources Work Under MTS?"
-permalink: kb/191/Q191624/
+permalink: /kb/191/Q191624/
 ---
 
 ## Q191624: INFO: Do Visual FoxPro Datasources Work Under MTS?

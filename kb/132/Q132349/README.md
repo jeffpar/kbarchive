@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132349: STOP Message 0xFACEFEED on Alpha Computers"
-permalink: kb/132/Q132349/
+permalink: /kb/132/Q132349/
 ---
 
 ## Q132349: STOP Message 0xFACEFEED on Alpha Computers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309004: Academic Learning Series Microsoft Windows 2000 Professional Com"
-permalink: kb/309/Q309004/
+permalink: /kb/309/Q309004/
 ---
 
 ## Q309004: Academic Learning Series Microsoft Windows 2000 Professional Com

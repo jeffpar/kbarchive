@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240104: BUG: Schema Calls to DB2 on OS/400 V4R4 Cause 100% CPU Spin"
-permalink: kb/240/Q240104/
+permalink: /kb/240/Q240104/
 ---
 
 ## Q240104: BUG: Schema Calls to DB2 on OS/400 V4R4 Cause 100% CPU Spin

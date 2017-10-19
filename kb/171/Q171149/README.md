@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171149: Running MS Office 97 CD-ROM: D:&#92;Samples&#92;Setup.exe Not Present"
-permalink: kb/171/Q171149/
+permalink: /kb/171/Q171149/
 ---
 
 ## Q171149: Running MS Office 97 CD-ROM: D:&#92;Samples&#92;Setup.exe Not Present

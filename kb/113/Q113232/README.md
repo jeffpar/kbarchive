@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113232: Printing Problems with WPS and MS-DOS-Based Downloadable Fonts"
-permalink: kb/113/Q113232/
+permalink: /kb/113/Q113232/
 ---
 
 ## Q113232: Printing Problems with WPS and MS-DOS-Based Downloadable Fonts

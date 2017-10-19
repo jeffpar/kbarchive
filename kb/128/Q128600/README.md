@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128600: BUG: Redefinition of Enum Data Type Does Not Cause an Error"
-permalink: kb/128/Q128600/
+permalink: /kb/128/Q128600/
 ---
 
 ## Q128600: BUG: Redefinition of Enum Data Type Does Not Cause an Error

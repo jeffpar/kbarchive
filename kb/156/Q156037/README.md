@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156037: HOWTO: Determine the Requirements for ActiveX Controls in VFP"
-permalink: kb/156/Q156037/
+permalink: /kb/156/Q156037/
 ---
 
 ## Q156037: HOWTO: Determine the Requirements for ActiveX Controls in VFP

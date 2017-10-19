@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163123: Setup Error Message: Unable to Copy a File ..."
-permalink: kb/163/Q163123/
+permalink: /kb/163/Q163123/
 ---
 
 ## Q163123: Setup Error Message: Unable to Copy a File ...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q11997: HOWTO: Modify the Environment for a Spawned Process"
-permalink: kb/011/Q11997/
+permalink: /kb/011/Q11997/
 ---
 
 ## Q11997: HOWTO: Modify the Environment for a Spawned Process

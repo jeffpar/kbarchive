@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81679: Sound Blaster JUKEBOX.EXE Not Compatible with Windows 3.1"
-permalink: kb/081/Q81679/
+permalink: /kb/081/Q81679/
 ---
 
 ## Q81679: Sound Blaster JUKEBOX.EXE Not Compatible with Windows 3.1

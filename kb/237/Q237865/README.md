@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237865: Changes Made to a Folder Are Not Retained in Other Folders"
-permalink: kb/237/Q237865/
+permalink: /kb/237/Q237865/
 ---
 
 ## Q237865: Changes Made to a Folder Are Not Retained in Other Folders

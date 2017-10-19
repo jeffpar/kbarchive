@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261036: MCM2: Textures of the Motorcycles and Riders Appear Distorted"
-permalink: kb/261/Q261036/
+permalink: /kb/261/Q261036/
 ---
 
 ## Q261036: MCM2: Textures of the Motorcycles and Riders Appear Distorted

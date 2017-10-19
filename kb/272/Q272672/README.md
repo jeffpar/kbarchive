@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272672: XIMS: Internet Mail Service Does Not Generate NDR Message"
-permalink: kb/272/Q272672/
+permalink: /kb/272/Q272672/
 ---
 
 ## Q272672: XIMS: Internet Mail Service Does Not Generate NDR Message

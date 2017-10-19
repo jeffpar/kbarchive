@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224493: XADM: Using ISSCAN to Remove Virus-Affected Messages/Attachments"
-permalink: kb/224/Q224493/
+permalink: /kb/224/Q224493/
 ---
 
 ## Q224493: XADM: Using ISSCAN to Remove Virus-Affected Messages/Attachments

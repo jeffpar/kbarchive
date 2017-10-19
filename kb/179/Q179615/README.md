@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179615: HOWTO: Specify or Change a Remote Server's Location at Run Time"
-permalink: kb/179/Q179615/
+permalink: /kb/179/Q179615/
 ---
 
 ## Q179615: HOWTO: Specify or Change a Remote Server's Location at Run Time

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146815: Using Internet Information Server with Windows NT Authentication"
-permalink: kb/146/Q146815/
+permalink: /kb/146/Q146815/
 ---
 
 ## Q146815: Using Internet Information Server with Windows NT Authentication

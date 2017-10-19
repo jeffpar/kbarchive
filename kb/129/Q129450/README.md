@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129450: PRB: &quot;For Each&quot; Behavior on Dynamically Changing Control Array"
-permalink: kb/129/Q129450/
+permalink: /kb/129/Q129450/
 ---
 
 ## Q129450: PRB: &quot;For Each&quot; Behavior on Dynamically Changing Control Array

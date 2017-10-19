@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178230: INFO: Summary List: Visual C++ Version 4.2 Known Problems"
-permalink: kb/178/Q178230/
+permalink: /kb/178/Q178230/
 ---
 
 ## Q178230: INFO: Summary List: Visual C++ Version 4.2 Known Problems

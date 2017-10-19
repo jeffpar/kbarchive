@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97821: How Encrypted Passwords Are Validated from Workstations"
-permalink: kb/097/Q97821/
+permalink: /kb/097/Q97821/
 ---
 
 ## Q97821: How Encrypted Passwords Are Validated from Workstations

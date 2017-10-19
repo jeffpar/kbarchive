@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98460: Using SyQuest Removable Drives and Tape Drives with MS-DOS 6"
-permalink: kb/098/Q98460/
+permalink: /kb/098/Q98460/
 ---
 
 ## Q98460: Using SyQuest Removable Drives and Tape Drives with MS-DOS 6

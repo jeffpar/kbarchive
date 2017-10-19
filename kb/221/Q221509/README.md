@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221509: How to Set Default Autocreated Printer with Terminal Server"
-permalink: kb/221/Q221509/
+permalink: /kb/221/Q221509/
 ---
 
 ## Q221509: How to Set Default Autocreated Printer with Terminal Server

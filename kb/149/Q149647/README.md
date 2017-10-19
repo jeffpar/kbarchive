@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149647: Voice Features Limited By a Program's Abilities"
-permalink: kb/149/Q149647/
+permalink: /kb/149/Q149647/
 ---
 
 ## Q149647: Voice Features Limited By a Program's Abilities

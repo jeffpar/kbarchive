@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141272: XCLN: How Exchange Clients Use MSMAIL.INI and SHARED.INI"
-permalink: kb/141/Q141272/
+permalink: /kb/141/Q141272/
 ---
 
 ## Q141272: XCLN: How Exchange Clients Use MSMAIL.INI and SHARED.INI

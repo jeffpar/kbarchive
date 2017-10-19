@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153401: User Profile Editor Does Not Save System Default Profiles"
-permalink: kb/153/Q153401/
+permalink: /kb/153/Q153401/
 ---
 
 ## Q153401: User Profile Editor Does Not Save System Default Profiles

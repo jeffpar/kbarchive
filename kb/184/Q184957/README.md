@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184957: XCLN: Outlook &amp; Exchange One-Off SMTP &amp; Display Name Parsing"
-permalink: kb/184/Q184957/
+permalink: /kb/184/Q184957/
 ---
 
 ## Q184957: XCLN: Outlook &amp; Exchange One-Off SMTP &amp; Display Name Parsing

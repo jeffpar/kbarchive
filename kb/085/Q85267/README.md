@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85267: FastBack Plus Err Msg: WARNING #31 FastBack Plus Was"
-permalink: kb/085/Q85267/
+permalink: /kb/085/Q85267/
 ---
 
 ## Q85267: FastBack Plus Err Msg: WARNING #31 FastBack Plus Was

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231429: XFOR: Can Send But Cannot Receive Inbound Internet Mail"
-permalink: kb/231/Q231429/
+permalink: /kb/231/Q231429/
 ---
 
 ## Q231429: XFOR: Can Send But Cannot Receive Inbound Internet Mail

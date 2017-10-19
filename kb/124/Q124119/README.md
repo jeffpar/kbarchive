@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124119: Running Windows NT 3.5 on a ASUSTECH Dual Pentium Computer"
-permalink: kb/124/Q124119/
+permalink: /kb/124/Q124119/
 ---
 
 ## Q124119: Running Windows NT 3.5 on a ASUSTECH Dual Pentium Computer

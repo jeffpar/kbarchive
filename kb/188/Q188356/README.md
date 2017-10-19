@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188356: DSMN Synchronization Problem Causes Application Event 8020"
-permalink: kb/188/Q188356/
+permalink: /kb/188/Q188356/
 ---
 
 ## Q188356: DSMN Synchronization Problem Causes Application Event 8020

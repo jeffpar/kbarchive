@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224302: HOWTO: Suppress a TextBox Control's Popup Menu"
-permalink: kb/224/Q224302/
+permalink: /kb/224/Q224302/
 ---
 
 ## Q224302: HOWTO: Suppress a TextBox Control's Popup Menu

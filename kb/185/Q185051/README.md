@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185051: Restarting Cluster Service Causes Services.exe to Crash"
-permalink: kb/185/Q185051/
+permalink: /kb/185/Q185051/
 ---
 
 ## Q185051: Restarting Cluster Service Causes Services.exe to Crash

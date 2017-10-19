@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192984: PRB: ATL Classes Are Not Compatible With ClassWizard"
-permalink: kb/192/Q192984/
+permalink: /kb/192/Q192984/
 ---
 
 ## Q192984: PRB: ATL Classes Are Not Compatible With ClassWizard

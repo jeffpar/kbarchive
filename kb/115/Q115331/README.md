@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115331: BUG: Page Eject Before/After Doesn't Work w/ Command Window"
-permalink: kb/115/Q115331/
+permalink: /kb/115/Q115331/
 ---
 
 ## Q115331: BUG: Page Eject Before/After Doesn't Work w/ Command Window

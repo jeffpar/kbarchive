@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77126: INFO: Raster and Stroke Fonts; GDI and Device Fonts"
-permalink: kb/077/Q77126/
+permalink: /kb/077/Q77126/
 ---
 
 ## Q77126: INFO: Raster and Stroke Fonts; GDI and Device Fonts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77450: 84-Key Keyboard Support for Special Character Set (Code Page)"
-permalink: kb/077/Q77450/
+permalink: /kb/077/Q77450/
 ---
 
 ## Q77450: 84-Key Keyboard Support for Special Character Set (Code Page)

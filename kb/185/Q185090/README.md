@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185090: HOWTO: Create Multicolored Items in a Combo Box"
-permalink: kb/185/Q185090/
+permalink: /kb/185/Q185090/
 ---
 
 ## Q185090: HOWTO: Create Multicolored Items in a Combo Box

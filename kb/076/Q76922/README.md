@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76922: ROM and RAM Error Codes Explained"
-permalink: kb/076/Q76922/
+permalink: /kb/076/Q76922/
 ---
 
 ## Q76922: ROM and RAM Error Codes Explained

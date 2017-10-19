@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69687: Unable to Start the Windows Task List"
-permalink: kb/069/Q69687/
+permalink: /kb/069/Q69687/
 ---
 
 ## Q69687: Unable to Start the Windows Task List

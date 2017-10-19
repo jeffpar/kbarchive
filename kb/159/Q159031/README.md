@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159031: Zone: Network Ports Required to Play"
-permalink: kb/159/Q159031/
+permalink: /kb/159/Q159031/
 ---
 
 ## Q159031: Zone: Network Ports Required to Play

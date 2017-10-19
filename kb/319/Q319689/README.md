@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319689: Streets &amp; Trips 2002: Err Msg: Cannot Find Pocket Streets"
-permalink: kb/319/Q319689/
+permalink: /kb/319/Q319689/
 ---
 
 ## Q319689: Streets &amp; Trips 2002: Err Msg: Cannot Find Pocket Streets

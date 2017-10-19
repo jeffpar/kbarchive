@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192503: Running Office 97, Page xxxvi: Incorrect Setup Path for E-Book"
-permalink: kb/192/Q192503/
+permalink: /kb/192/Q192503/
 ---
 
 ## Q192503: Running Office 97, Page xxxvi: Incorrect Setup Path for E-Book

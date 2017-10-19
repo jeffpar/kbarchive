@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172635: Event 567, RC =10048 When Restarting SNA Server"
-permalink: kb/172/Q172635/
+permalink: /kb/172/Q172635/
 ---
 
 ## Q172635: Event 567, RC =10048 When Restarting SNA Server

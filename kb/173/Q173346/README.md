@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173346: XADM: Upgrading Exchange 5.0 Evaluation Copy to Release Version"
-permalink: kb/173/Q173346/
+permalink: /kb/173/Q173346/
 ---
 
 ## Q173346: XADM: Upgrading Exchange 5.0 Evaluation Copy to Release Version

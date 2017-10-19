@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97929: DoubleSpace on DTC 3280 SCSI Hangs System"
-permalink: kb/097/Q97929/
+permalink: /kb/097/Q97929/
 ---
 
 ## Q97929: DoubleSpace on DTC 3280 SCSI Hangs System

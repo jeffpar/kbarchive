@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176976: Wrong Return Value from MkParseDisplayName"
-permalink: kb/176/Q176976/
+permalink: /kb/176/Q176976/
 ---
 
 ## Q176976: Wrong Return Value from MkParseDisplayName

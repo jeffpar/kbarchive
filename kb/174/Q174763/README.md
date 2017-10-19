@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174763: XADM: Propagate These Properties... Option Does Not Appear"
-permalink: kb/174/Q174763/
+permalink: /kb/174/Q174763/
 ---
 
 ## Q174763: XADM: Propagate These Properties... Option Does Not Appear

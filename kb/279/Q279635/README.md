@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279635: CTL on Destination Node Does Not Work after Replicatication"
-permalink: kb/279/Q279635/
+permalink: /kb/279/Q279635/
 ---
 
 ## Q279635: CTL on Destination Node Does Not Work after Replicatication

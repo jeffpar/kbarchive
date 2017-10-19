@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152489: Inventory Fails to Inventory a Package"
-permalink: kb/152/Q152489/
+permalink: /kb/152/Q152489/
 ---
 
 ## Q152489: Inventory Fails to Inventory a Package

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259276: PC Win: Personal Name Field in nNw PAB Entry Cannot Be Modified"
-permalink: kb/259/Q259276/
+permalink: /kb/259/Q259276/
 ---
 
 ## Q259276: PC Win: Personal Name Field in nNw PAB Entry Cannot Be Modified

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147720: Non-critical Error Attempting To Install TCP/IP After RAS"
-permalink: kb/147/Q147720/
+permalink: /kb/147/Q147720/
 ---
 
 ## Q147720: Non-critical Error Attempting To Install TCP/IP After RAS

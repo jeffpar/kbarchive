@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241525: Duplicate Transactional Messages Sent by MSMQ"
-permalink: kb/241/Q241525/
+permalink: /kb/241/Q241525/
 ---
 
 ## Q241525: Duplicate Transactional Messages Sent by MSMQ

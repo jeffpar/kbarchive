@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92540: Is DdePostAdvise Synchronous?"
-permalink: kb/092/Q92540/
+permalink: /kb/092/Q92540/
 ---
 
 ## Q92540: Is DdePostAdvise Synchronous?

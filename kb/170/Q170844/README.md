@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170844: Msbatch.inf Parameters: Installing PCMCIA Network Adapter Driver"
-permalink: kb/170/Q170844/
+permalink: /kb/170/Q170844/
 ---
 
 ## Q170844: Msbatch.inf Parameters: Installing PCMCIA Network Adapter Driver

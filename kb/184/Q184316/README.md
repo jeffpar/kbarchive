@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184316: Unable to Return Custom HTML Properties in Result Set"
-permalink: kb/184/Q184316/
+permalink: /kb/184/Q184316/
 ---
 
 ## Q184316: Unable to Return Custom HTML Properties in Result Set

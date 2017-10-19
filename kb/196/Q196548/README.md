@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196548: Y2K Update for Windows NT Server 4.0, Terminal Server Edition"
-permalink: kb/196/Q196548/
+permalink: /kb/196/Q196548/
 ---
 
 ## Q196548: Y2K Update for Windows NT Server 4.0, Terminal Server Edition

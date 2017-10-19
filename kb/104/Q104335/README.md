@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104335: Windows Err Msg: Not Enough Space in Windows Temporary..."
-permalink: kb/104/Q104335/
+permalink: /kb/104/Q104335/
 ---
 
 ## Q104335: Windows Err Msg: Not Enough Space in Windows Temporary...

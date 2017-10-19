@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145731: BUG: Z-Order Behavior Different with OLE (.OCX) Controls"
-permalink: kb/145/Q145731/
+permalink: /kb/145/Q145731/
 ---
 
 ## Q145731: BUG: Z-Order Behavior Different with OLE (.OCX) Controls

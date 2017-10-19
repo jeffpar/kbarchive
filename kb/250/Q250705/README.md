@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250705: No Internet Explorer Installation When Shdocvw.dll in Windows"
-permalink: kb/250/Q250705/
+permalink: /kb/250/Q250705/
 ---
 
 ## Q250705: No Internet Explorer Installation When Shdocvw.dll in Windows

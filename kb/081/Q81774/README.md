@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81774: SUBST Command Doesn't Work with CD-ROM Drive"
-permalink: kb/081/Q81774/
+permalink: /kb/081/Q81774/
 ---
 
 ## Q81774: SUBST Command Doesn't Work with CD-ROM Drive

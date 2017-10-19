@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191323: BUG: &quot;Member OPTION3 Is a Class Member&quot; Error"
-permalink: kb/191/Q191323/
+permalink: /kb/191/Q191323/
 ---
 
 ## Q191323: BUG: &quot;Member OPTION3 Is a Class Member&quot; Error

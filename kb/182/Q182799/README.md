@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182799: SAMPLE: MMCTRL.EXE Demonstrates Using Multiple Sound Cards"
-permalink: kb/182/Q182799/
+permalink: /kb/182/Q182799/
 ---
 
 ## Q182799: SAMPLE: MMCTRL.EXE Demonstrates Using Multiple Sound Cards

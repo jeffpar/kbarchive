@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159658: Mac Encarta 97 Err Msg: Required Files Are Missing..."
-permalink: kb/159/Q159658/
+permalink: /kb/159/Q159658/
 ---
 
 ## Q159658: Mac Encarta 97 Err Msg: Required Files Are Missing...

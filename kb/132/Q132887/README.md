@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132887: Err Msg: Unable to Start WinPopup Because No Compatible..."
-permalink: kb/132/Q132887/
+permalink: /kb/132/Q132887/
 ---
 
 ## Q132887: Err Msg: Unable to Start WinPopup Because No Compatible...

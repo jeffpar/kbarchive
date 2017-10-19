@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174164: MTG: PC DIRSYNC"
-permalink: kb/174/Q174164/
+permalink: /kb/174/Q174164/
 ---
 
 ## Q174164: MTG: PC DIRSYNC

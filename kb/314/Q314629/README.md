@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314629: FIX: Object Referenced by Property with ASSIGN Cannot Be Closed"
-permalink: kb/314/Q314629/
+permalink: /kb/314/Q314629/
 ---
 
 ## Q314629: FIX: Object Referenced by Property with ASSIGN Cannot Be Closed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238036: Encarta Reference Suite 2000: Cannot Install Individual Program"
-permalink: kb/238/Q238036/
+permalink: /kb/238/Q238036/
 ---
 
 ## Q238036: Encarta Reference Suite 2000: Cannot Install Individual Program

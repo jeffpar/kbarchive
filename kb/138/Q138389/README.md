@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138389: SNA Win 3.x Client (WNAP.EXE) Hogs CPU, Affects Some Apps"
-permalink: kb/138/Q138389/
+permalink: /kb/138/Q138389/
 ---
 
 ## Q138389: SNA Win 3.x Client (WNAP.EXE) Hogs CPU, Affects Some Apps

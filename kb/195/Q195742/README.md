@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195742: XCON: Conversion Error When Receiving General-Text Message"
-permalink: kb/195/Q195742/
+permalink: /kb/195/Q195742/
 ---
 
 ## Q195742: XCON: Conversion Error When Receiving General-Text Message

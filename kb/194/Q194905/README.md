@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194905: XFOR: CCMC: Attachments from cc:Mail Version 7 Appear Corrupt"
-permalink: kb/194/Q194905/
+permalink: /kb/194/Q194905/
 ---
 
 ## Q194905: XFOR: CCMC: Attachments from cc:Mail Version 7 Appear Corrupt

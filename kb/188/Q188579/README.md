@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188579: BUG: Memory Leak with Jet 3.51 and Remote ODBC Data Sources"
-permalink: kb/188/Q188579/
+permalink: /kb/188/Q188579/
 ---
 
 ## Q188579: BUG: Memory Leak with Jet 3.51 and Remote ODBC Data Sources

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183230: Stop:0x00000082 with InocuLAN 4.0"
-permalink: kb/183/Q183230/
+permalink: /kb/183/Q183230/
 ---
 
 ## Q183230: Stop:0x00000082 with InocuLAN 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242312: HOWTO: Distribute an ADOCE 2.0 Application to a PsPC Device"
-permalink: kb/242/Q242312/
+permalink: /kb/242/Q242312/
 ---
 
 ## Q242312: HOWTO: Distribute an ADOCE 2.0 Application to a PsPC Device

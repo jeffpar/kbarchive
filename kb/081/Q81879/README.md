@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81879: BUG: BIND Error U1253 Opening DOSCALLS.LIB"
-permalink: kb/081/Q81879/
+permalink: /kb/081/Q81879/
 ---
 
 ## Q81879: BUG: BIND Error U1253 Opening DOSCALLS.LIB

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244488: FDIRSYNC: GroupWise Gateway to MS Mail From Novell Won't Dirsync"
-permalink: kb/244/Q244488/
+permalink: /kb/244/Q244488/
 ---
 
 ## Q244488: FDIRSYNC: GroupWise Gateway to MS Mail From Novell Won't Dirsync

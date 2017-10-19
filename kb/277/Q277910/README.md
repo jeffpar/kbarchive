@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277910: Patch Available for &quot;Terminal Server Login Buffer Overflow&quot;"
-permalink: kb/277/Q277910/
+permalink: /kb/277/Q277910/
 ---
 
 ## Q277910: Patch Available for &quot;Terminal Server Login Buffer Overflow&quot;

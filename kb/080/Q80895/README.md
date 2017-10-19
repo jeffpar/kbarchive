@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80895: Mac MSPlus: User Distribution Settings Not Working"
-permalink: kb/080/Q80895/
+permalink: /kb/080/Q80895/
 ---
 
 ## Q80895: Mac MSPlus: User Distribution Settings Not Working

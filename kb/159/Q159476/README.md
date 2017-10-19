@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159476: WD97: How to Enable, Disable Microsoft Word as the E-Mail Editor"
-permalink: kb/159/Q159476/
+permalink: /kb/159/Q159476/
 ---
 
 ## Q159476: WD97: How to Enable, Disable Microsoft Word as the E-Mail Editor

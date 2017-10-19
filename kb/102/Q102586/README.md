@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102586: PRB: Unable to Find Proc./Func. &lt;Name&gt;"
-permalink: kb/102/Q102586/
+permalink: /kb/102/Q102586/
 ---
 
 ## Q102586: PRB: Unable to Find Proc./Func. &lt;Name&gt;

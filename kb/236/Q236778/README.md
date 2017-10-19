@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236778: BUG: Focus Events not triggered in ActiveX Doc with Acc Keys"
-permalink: kb/236/Q236778/
+permalink: /kb/236/Q236778/
 ---
 
 ## Q236778: BUG: Focus Events not triggered in ActiveX Doc with Acc Keys

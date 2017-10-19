@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248037: Error Message: HTTP Error 500-13 - Server Too Busy"
-permalink: kb/248/Q248037/
+permalink: /kb/248/Q248037/
 ---
 
 ## Q248037: Error Message: HTTP Error 500-13 - Server Too Busy

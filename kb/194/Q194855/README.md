@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194855: X400: Recv.log File Is Not Updated when -MR Option Is Used"
-permalink: kb/194/Q194855/
+permalink: /kb/194/Q194855/
 ---
 
 ## Q194855: X400: Recv.log File Is Not Updated when -MR Option Is Used

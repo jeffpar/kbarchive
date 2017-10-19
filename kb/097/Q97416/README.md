@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97416: MS-DOS 6 Upgrade Setup May Delete CONFIG.SYS and AUTOEXEC.BAT"
-permalink: kb/097/Q97416/
+permalink: /kb/097/Q97416/
 ---
 
 ## Q97416: MS-DOS 6 Upgrade Setup May Delete CONFIG.SYS and AUTOEXEC.BAT

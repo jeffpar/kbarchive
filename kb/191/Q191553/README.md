@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191553: Urban Assault Hangs After Introductory Movie Is Played"
-permalink: kb/191/Q191553/
+permalink: /kb/191/Q191553/
 ---
 
 ## Q191553: Urban Assault Hangs After Introductory Movie Is Played

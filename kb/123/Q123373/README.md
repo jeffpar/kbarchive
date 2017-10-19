@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123373: PC DOS: DrivesNovell Not Support Novell 4.0 Special Characters"
-permalink: kb/123/Q123373/
+permalink: /kb/123/Q123373/
 ---
 
 ## Q123373: PC DOS: DrivesNovell Not Support Novell 4.0 Special Characters

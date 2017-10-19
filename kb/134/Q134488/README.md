@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134488: Xircom CE2 PCMCIA Network Adapter Card Problems"
-permalink: kb/134/Q134488/
+permalink: /kb/134/Q134488/
 ---
 
 ## Q134488: Xircom CE2 PCMCIA Network Adapter Card Problems

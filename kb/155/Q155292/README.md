@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155292: FIX: Destructor Not Called When DEBUG_NEW Is Defined"
-permalink: kb/155/Q155292/
+permalink: /kb/155/Q155292/
 ---
 
 ## Q155292: FIX: Destructor Not Called When DEBUG_NEW Is Defined

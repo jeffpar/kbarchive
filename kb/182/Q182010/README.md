@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182010: XADM: Auto Receipt Is Always from POSTMASTER@&lt;local_domain.ext&gt;"
-permalink: kb/182/Q182010/
+permalink: /kb/182/Q182010/
 ---
 
 ## Q182010: XADM: Auto Receipt Is Always from POSTMASTER@&lt;local_domain.ext&gt;

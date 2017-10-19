@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323949: Dungeon Siege: You Cannot Save a Multiplayer Game"
-permalink: kb/323/Q323949/
+permalink: /kb/323/Q323949/
 ---
 
 ## Q323949: Dungeon Siege: You Cannot Save a Multiplayer Game

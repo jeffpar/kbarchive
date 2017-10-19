@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99637: Mac Wkst: On Cue Modifies Enclosure Save Dialog Box"
-permalink: kb/099/Q99637/
+permalink: /kb/099/Q99637/
 ---
 
 ## Q99637: Mac Wkst: On Cue Modifies Enclosure Save Dialog Box

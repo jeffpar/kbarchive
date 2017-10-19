@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186350: DirectX: List of Files Installed by the DirectX 5.2 Update File"
-permalink: kb/186/Q186350/
+permalink: /kb/186/Q186350/
 ---
 
 ## Q186350: DirectX: List of Files Installed by the DirectX 5.2 Update File

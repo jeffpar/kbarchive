@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285345: PRB: Error with DSN-Less Connection to FoxPro Table Through DAO"
-permalink: kb/285/Q285345/
+permalink: /kb/285/Q285345/
 ---
 
 ## Q285345: PRB: Error with DSN-Less Connection to FoxPro Table Through DAO

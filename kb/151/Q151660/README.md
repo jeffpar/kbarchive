@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151660: Reinstalling Causes Loss of MS Exchange Client Functions"
-permalink: kb/151/Q151660/
+permalink: /kb/151/Q151660/
 ---
 
 ## Q151660: Reinstalling Causes Loss of MS Exchange Client Functions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q45100: PIFEDIT.EXE Allows Invalid Filenames"
-permalink: kb/045/Q45100/
+permalink: /kb/045/Q45100/
 ---
 
 ## Q45100: PIFEDIT.EXE Allows Invalid Filenames

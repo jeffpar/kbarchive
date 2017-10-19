@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306959: XCON: X.400 Connectors Not Working Between Two Exchange Servers"
-permalink: kb/306/Q306959/
+permalink: /kb/306/Q306959/
 ---
 
 ## Q306959: XCON: X.400 Connectors Not Working Between Two Exchange Servers

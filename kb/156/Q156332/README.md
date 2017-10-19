@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156332: Low Free Conventional Memory with OEM Service Release 2"
-permalink: kb/156/Q156332/
+permalink: /kb/156/Q156332/
 ---
 
 ## Q156332: Low Free Conventional Memory with OEM Service Release 2

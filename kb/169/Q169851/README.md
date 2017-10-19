@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169851: XCLN: Post Button Enabled Even If User Doesn't Have Permissions"
-permalink: kb/169/Q169851/
+permalink: /kb/169/Q169851/
 ---
 
 ## Q169851: XCLN: Post Button Enabled Even If User Doesn't Have Permissions

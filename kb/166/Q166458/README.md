@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166458: BUG: &quot;One-time Only&quot; Tracing Option Does Not Stop Automatically"
-permalink: kb/166/Q166458/
+permalink: /kb/166/Q166458/
 ---
 
 ## Q166458: BUG: &quot;One-time Only&quot; Tracing Option Does Not Stop Automatically

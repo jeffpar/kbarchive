@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76452: PRB: Global TSR Pop-ups Incompatible with Windows"
-permalink: kb/076/Q76452/
+permalink: /kb/076/Q76452/
 ---
 
 ## Q76452: PRB: Global TSR Pop-ups Incompatible with Windows

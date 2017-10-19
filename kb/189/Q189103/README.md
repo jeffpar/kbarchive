@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189103: DHCP Manager in Server Tools Does Not List Superscopes Option"
-permalink: kb/189/Q189103/
+permalink: /kb/189/Q189103/
 ---
 
 ## Q189103: DHCP Manager in Server Tools Does Not List Superscopes Option

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125307: EPP and ECP Bi-Directional Port Support"
-permalink: kb/125/Q125307/
+permalink: /kb/125/Q125307/
 ---
 
 ## Q125307: EPP and ECP Bi-Directional Port Support

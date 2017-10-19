@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188906: PRB: No Command Line Equivalent for Move...File"
-permalink: kb/188/Q188906/
+permalink: /kb/188/Q188906/
 ---
 
 ## Q188906: PRB: No Command Line Equivalent for Move...File

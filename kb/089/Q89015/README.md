@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89015: Phoenix BIOS: Latest Versions and How to Identify Them"
-permalink: kb/089/Q89015/
+permalink: /kb/089/Q89015/
 ---
 
 ## Q89015: Phoenix BIOS: Latest Versions and How to Identify Them

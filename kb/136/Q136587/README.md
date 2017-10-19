@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136587: List of Sample Applications that Include Source Code"
-permalink: kb/136/Q136587/
+permalink: /kb/136/Q136587/
 ---
 
 ## Q136587: List of Sample Applications that Include Source Code

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272751: WD97: Macros Are Enabled When Word Automatically Opens ASD Files"
-permalink: kb/272/Q272751/
+permalink: /kb/272/Q272751/
 ---
 
 ## Q272751: WD97: Macros Are Enabled When Word Automatically Opens ASD Files

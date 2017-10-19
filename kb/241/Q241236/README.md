@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241236: Running Microsoft Office 2000 Indexes Contain Errors"
-permalink: kb/241/Q241236/
+permalink: /kb/241/Q241236/
 ---
 
 ## Q241236: Running Microsoft Office 2000 Indexes Contain Errors

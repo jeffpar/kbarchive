@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133164: HOWTO: Define Multiple-Line Grid Headers"
-permalink: kb/133/Q133164/
+permalink: /kb/133/Q133164/
 ---
 
 ## Q133164: HOWTO: Define Multiple-Line Grid Headers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171555: FIX: More Than One Sub Main May Cause EXE to Crash"
-permalink: kb/171/Q171555/
+permalink: /kb/171/Q171555/
 ---
 
 ## Q171555: FIX: More Than One Sub Main May Cause EXE to Crash

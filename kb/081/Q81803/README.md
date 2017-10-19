@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81803: Windows Err Msg: WDCTRL Cannot Load Due to Conflict"
-permalink: kb/081/Q81803/
+permalink: /kb/081/Q81803/
 ---
 
 ## Q81803: Windows Err Msg: WDCTRL Cannot Load Due to Conflict

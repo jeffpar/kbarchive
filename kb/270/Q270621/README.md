@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270621: EWED: New Browser Window Opens When You Use QuickDefine"
-permalink: kb/270/Q270621/
+permalink: /kb/270/Q270621/
 ---
 
 ## Q270621: EWED: New Browser Window Opens When You Use QuickDefine

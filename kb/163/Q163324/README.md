@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163324: XCON: Application Protocol Data Unit (APDU) Logs (BF0.LOG)"
-permalink: kb/163/Q163324/
+permalink: /kb/163/Q163324/
 ---
 
 ## Q163324: XCON: Application Protocol Data Unit (APDU) Logs (BF0.LOG)

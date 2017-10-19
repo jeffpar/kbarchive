@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179655: XADM: How to Export All Users on a Particular Server"
-permalink: kb/179/Q179655/
+permalink: /kb/179/Q179655/
 ---
 
 ## Q179655: XADM: How to Export All Users on a Particular Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299007: Memory Leak Triggering Event to an eMbedded Visual Basic Program"
-permalink: kb/299/Q299007/
+permalink: /kb/299/Q299007/
 ---
 
 ## Q299007: Memory Leak Triggering Event to an eMbedded Visual Basic Program

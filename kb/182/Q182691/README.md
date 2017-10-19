@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182691: Event 730 Can Return Garbled Characters for Local LU Name"
-permalink: kb/182/Q182691/
+permalink: /kb/182/Q182691/
 ---
 
 ## Q182691: Event 730 Can Return Garbled Characters for Local LU Name

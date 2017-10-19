@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87313: Mac Srv: Server Connection Log Inconsistent"
-permalink: kb/087/Q87313/
+permalink: /kb/087/Q87313/
 ---
 
 ## Q87313: Mac Srv: Server Connection Log Inconsistent

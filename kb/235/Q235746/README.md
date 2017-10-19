@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235746: SMS: URLs Listed in Product Compliance Database Are Incorrect"
-permalink: kb/235/Q235746/
+permalink: /kb/235/Q235746/
 ---
 
 ## Q235746: SMS: URLs Listed in Product Compliance Database Are Incorrect

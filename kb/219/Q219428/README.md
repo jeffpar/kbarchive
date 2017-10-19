@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219428: Cluster Server Returns SCSI Port Errors After Installing SP3"
-permalink: kb/219/Q219428/
+permalink: /kb/219/Q219428/
 ---
 
 ## Q219428: Cluster Server Returns SCSI Port Errors After Installing SP3

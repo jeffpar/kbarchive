@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105957: PC WRmt: Entering Addresses Directly on the TO: Line"
-permalink: kb/105/Q105957/
+permalink: /kb/105/Q105957/
 ---
 
 ## Q105957: PC WRmt: Entering Addresses Directly on the TO: Line

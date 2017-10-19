@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58780: Mac AL GW: Installing the AppleLink Gateway for Microsoft Mail"
-permalink: kb/058/Q58780/
+permalink: /kb/058/Q58780/
 ---
 
 ## Q58780: Mac AL GW: Installing the AppleLink Gateway for Microsoft Mail

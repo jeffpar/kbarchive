@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81419: PC Win: No Split Menu Item When Message Finder Is Open"
-permalink: kb/081/Q81419/
+permalink: /kb/081/Q81419/
 ---
 
 ## Q81419: PC Win: No Split Menu Item When Message Finder Is Open

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171824: FIX: Crash in INET Control Downloading Page Multiple Times"
-permalink: kb/171/Q171824/
+permalink: /kb/171/Q171824/
 ---
 
 ## Q171824: FIX: Crash in INET Control Downloading Page Multiple Times

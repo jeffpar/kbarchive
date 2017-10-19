@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62240: Mac Hyp: Suggested Possible Uses for the HyperCard API"
-permalink: kb/062/Q62240/
+permalink: /kb/062/Q62240/
 ---
 
 ## Q62240: Mac Hyp: Suggested Possible Uses for the HyperCard API

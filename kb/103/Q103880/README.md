@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103880: Overview: Protocol Drivers"
-permalink: kb/103/Q103880/
+permalink: /kb/103/Q103880/
 ---
 
 ## Q103880: Overview: Protocol Drivers

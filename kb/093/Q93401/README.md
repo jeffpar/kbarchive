@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93401: PRB: C2279: Braces Not Valid in Function Default Argument List"
-permalink: kb/093/Q93401/
+permalink: /kb/093/Q93401/
 ---
 
 ## Q93401: PRB: C2279: Braces Not Valid in Function Default Argument List

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77209: Moving the DOSSHELL.INI File to a Network Drive"
-permalink: kb/077/Q77209/
+permalink: /kb/077/Q77209/
 ---
 
 ## Q77209: Moving the DOSSHELL.INI File to a Network Drive

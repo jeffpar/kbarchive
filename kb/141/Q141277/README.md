@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141277: HOWTO: Override an Interface in an MFC Application"
-permalink: kb/141/Q141277/
+permalink: /kb/141/Q141277/
 ---
 
 ## Q141277: HOWTO: Override an Interface in an MFC Application

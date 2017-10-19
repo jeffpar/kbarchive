@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195613: HOWTO: Create a Simple Context-Sensitive HTML Help File"
-permalink: kb/195/Q195613/
+permalink: /kb/195/Q195613/
 ---
 
 ## Q195613: HOWTO: Create a Simple Context-Sensitive HTML Help File

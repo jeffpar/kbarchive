@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80261: PC Gen: Contents of Modem Script File NULLMODM.MDM"
-permalink: kb/080/Q80261/
+permalink: /kb/080/Q80261/
 ---
 
 ## Q80261: PC Gen: Contents of Modem Script File NULLMODM.MDM

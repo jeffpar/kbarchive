@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140924: SMS Senders Stops if Estimated Bandwidth is Set to a High Value"
-permalink: kb/140/Q140924/
+permalink: /kb/140/Q140924/
 ---
 
 ## Q140924: SMS Senders Stops if Estimated Bandwidth is Set to a High Value

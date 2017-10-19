@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129207: PRB: &quot;Property Not Found&quot; Occurs When Running Form"
-permalink: kb/129/Q129207/
+permalink: /kb/129/Q129207/
 ---
 
 ## Q129207: PRB: &quot;Property Not Found&quot; Occurs When Running Form

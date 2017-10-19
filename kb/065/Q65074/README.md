@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65074: MSDOS.EXE Loads Full Screen Instead of as an Icon in Windows"
-permalink: kb/065/Q65074/
+permalink: /kb/065/Q65074/
 ---
 
 ## Q65074: MSDOS.EXE Loads Full Screen Instead of as an Icon in Windows

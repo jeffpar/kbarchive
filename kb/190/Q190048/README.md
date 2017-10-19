@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190048: BUG: DHTML Project's MsgBox Statement Appears Behind Browser"
-permalink: kb/190/Q190048/
+permalink: /kb/190/Q190048/
 ---
 
 ## Q190048: BUG: DHTML Project's MsgBox Statement Appears Behind Browser

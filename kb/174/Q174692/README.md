@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174692: OLE Objects Don't Display Correctly on Macintosh Clients"
-permalink: kb/174/Q174692/
+permalink: /kb/174/Q174692/
 ---
 
 ## Q174692: OLE Objects Don't Display Correctly on Macintosh Clients

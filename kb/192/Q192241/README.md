@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192241: DOS Remote Mail Incorrectly Changes Date/Time after Year 2000"
-permalink: kb/192/Q192241/
+permalink: /kb/192/Q192241/
 ---
 
 ## Q192241: DOS Remote Mail Incorrectly Changes Date/Time after Year 2000

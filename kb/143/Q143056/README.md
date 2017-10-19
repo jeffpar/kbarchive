@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143056: MSN Mail Header and Routing Problems"
-permalink: kb/143/Q143056/
+permalink: /kb/143/Q143056/
 ---
 
 ## Q143056: MSN Mail Header and Routing Problems

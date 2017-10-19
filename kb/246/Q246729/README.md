@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246729: Access Violations in Spooler Service Printing Long Named Job"
-permalink: kb/246/Q246729/
+permalink: /kb/246/Q246729/
 ---
 
 ## Q246729: Access Violations in Spooler Service Printing Long Named Job

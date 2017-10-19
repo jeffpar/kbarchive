@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152900: XCON: MTA Event Id 248: Too Many ECBs Processed in One Thread"
-permalink: kb/152/Q152900/
+permalink: /kb/152/Q152900/
 ---
 
 ## Q152900: XCON: MTA Event Id 248: Too Many ECBs Processed in One Thread

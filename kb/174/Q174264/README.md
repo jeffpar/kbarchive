@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174264: WinNT ERR: INVALID LINE...IN INF FILE during Windows NT Setup"
-permalink: kb/174/Q174264/
+permalink: /kb/174/Q174264/
 ---
 
 ## Q174264: WinNT ERR: INVALID LINE...IN INF FILE during Windows NT Setup

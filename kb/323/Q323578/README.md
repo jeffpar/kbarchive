@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323578: Microsoft Windows XP Inside Out Comments and Corrections"
-permalink: kb/323/Q323578/
+permalink: /kb/323/Q323578/
 ---
 
 ## Q323578: Microsoft Windows XP Inside Out Comments and Corrections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89411: PROTMAN.DOS Hangs Computer with DR DOS Version 6.0"
-permalink: kb/089/Q89411/
+permalink: /kb/089/Q89411/
 ---
 
 ## Q89411: PROTMAN.DOS Hangs Computer with DR DOS Version 6.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q30296: When Can a Call to GlobalLock() Fail?"
-permalink: kb/030/Q30296/
+permalink: /kb/030/Q30296/
 ---
 
 ## Q30296: When Can a Call to GlobalLock() Fail?

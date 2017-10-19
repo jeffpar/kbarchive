@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93438: Installing XNS on LAN Man Workstation from a 3Server"
-permalink: kb/093/Q93438/
+permalink: /kb/093/Q93438/
 ---
 
 ## Q93438: Installing XNS on LAN Man Workstation from a 3Server

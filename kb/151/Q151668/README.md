@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151668: XFOR: An Error Occurred While Processing an E-mail Address"
-permalink: kb/151/Q151668/
+permalink: /kb/151/Q151668/
 ---
 
 ## Q151668: XFOR: An Error Occurred While Processing an E-mail Address

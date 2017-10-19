@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161951: XADM: WinDbg Hits Breakpoint During DN Conversion"
-permalink: kb/161/Q161951/
+permalink: /kb/161/Q161951/
 ---
 
 ## Q161951: XADM: WinDbg Hits Breakpoint During DN Conversion

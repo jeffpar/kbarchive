@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174944: How to Use the /debug Option for Cluster Service"
-permalink: kb/174/Q174944/
+permalink: /kb/174/Q174944/
 ---
 
 ## Q174944: How to Use the /debug Option for Cluster Service

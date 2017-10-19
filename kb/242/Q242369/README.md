@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242369: HOWTO: Distribute an MMC SnapIn Project With the PDW"
-permalink: kb/242/Q242369/
+permalink: /kb/242/Q242369/
 ---
 
 ## Q242369: HOWTO: Distribute an MMC SnapIn Project With the PDW

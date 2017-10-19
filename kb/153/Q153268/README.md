@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153268: Cannot Install V-Chat Update While Running V-Chat"
-permalink: kb/153/Q153268/
+permalink: /kb/153/Q153268/
 ---
 
 ## Q153268: Cannot Install V-Chat Update While Running V-Chat

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119863: Fatal Error on Drive 1 with Quantum ProDrive 1080s"
-permalink: kb/119/Q119863/
+permalink: /kb/119/Q119863/
 ---
 
 ## Q119863: Fatal Error on Drive 1 with Quantum ProDrive 1080s

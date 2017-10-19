@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71844: Scroll Bars Not Displaying in Program Manager in Windows"
-permalink: kb/071/Q71844/
+permalink: /kb/071/Q71844/
 ---
 
 ## Q71844: Scroll Bars Not Displaying in Program Manager in Windows

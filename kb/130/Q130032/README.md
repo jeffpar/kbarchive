@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130032: XCLN: Duplicate Address Types When Creating Entry in PAB"
-permalink: kb/130/Q130032/
+permalink: /kb/130/Q130032/
 ---
 
 ## Q130032: XCLN: Duplicate Address Types When Creating Entry in PAB

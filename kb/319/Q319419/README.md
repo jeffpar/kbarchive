@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319419: Unable to Log On to Host Computer When You Use 3270 SSO"
-permalink: kb/319/Q319419/
+permalink: /kb/319/Q319419/
 ---
 
 ## Q319419: Unable to Log On to Host Computer When You Use 3270 SSO

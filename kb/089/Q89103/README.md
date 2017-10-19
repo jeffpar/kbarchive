@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89103: RAMDrive Icon Replaced with Network Drive Icon in Windows"
-permalink: kb/089/Q89103/
+permalink: /kb/089/Q89103/
 ---
 
 ## Q89103: RAMDrive Icon Replaced with Network Drive Icon in Windows

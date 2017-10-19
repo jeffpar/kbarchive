@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74301: Information About Headings and Labels in HEAPWALK"
-permalink: kb/074/Q74301/
+permalink: /kb/074/Q74301/
 ---
 
 ## Q74301: Information About Headings and Labels in HEAPWALK

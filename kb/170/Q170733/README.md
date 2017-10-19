@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170733: WD97: Sample Macro Code to Select Table Columns and Rows"
-permalink: kb/170/Q170733/
+permalink: /kb/170/Q170733/
 ---
 
 ## Q170733: WD97: Sample Macro Code to Select Table Columns and Rows

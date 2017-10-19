@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141023: How to Display Multiple Foreground Text Colors in VB List Box"
-permalink: kb/141/Q141023/
+permalink: /kb/141/Q141023/
 ---
 
 ## Q141023: How to Display Multiple Foreground Text Colors in VB List Box

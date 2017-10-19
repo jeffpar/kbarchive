@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183852: DOC: PRINTER_DEFAULTS Contains an Incorrectly Typed Member"
-permalink: kb/183/Q183852/
+permalink: /kb/183/Q183852/
 ---
 
 ## Q183852: DOC: PRINTER_DEFAULTS Contains an Incorrectly Typed Member

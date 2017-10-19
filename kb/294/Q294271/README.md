@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294271: INFO: ASP Error Codes"
-permalink: kb/294/Q294271/
+permalink: /kb/294/Q294271/
 ---
 
 ## Q294271: INFO: ASP Error Codes

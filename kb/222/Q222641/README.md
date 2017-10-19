@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222641: XCON: Content Conversion Error Sending Contact as an Attachment"
-permalink: kb/222/Q222641/
+permalink: /kb/222/Q222641/
 ---
 
 ## Q222641: XCON: Content Conversion Error Sending Contact as an Attachment

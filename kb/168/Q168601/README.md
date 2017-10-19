@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168601: SMSINST: Dialog Boxes Are Sized by the First Dialog Box"
-permalink: kb/168/Q168601/
+permalink: /kb/168/Q168601/
 ---
 
 ## Q168601: SMSINST: Dialog Boxes Are Sized by the First Dialog Box

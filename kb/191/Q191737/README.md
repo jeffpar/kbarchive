@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191737: PRB: DAO MDB on Read-Only Media Must Be Opened Exclusively"
-permalink: kb/191/Q191737/
+permalink: /kb/191/Q191737/
 ---
 
 ## Q191737: PRB: DAO MDB on Read-Only Media Must Be Opened Exclusively

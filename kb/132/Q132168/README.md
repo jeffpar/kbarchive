@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132168: Applications Run From the AT Schedule Service Cannot Print"
-permalink: kb/132/Q132168/
+permalink: /kb/132/Q132168/
 ---
 
 ## Q132168: Applications Run From the AT Schedule Service Cannot Print

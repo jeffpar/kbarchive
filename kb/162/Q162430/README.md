@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162430: XCON: Exchange Content Type Encoding"
-permalink: kb/162/Q162430/
+permalink: /kb/162/Q162430/
 ---
 
 ## Q162430: XCON: Exchange Content Type Encoding

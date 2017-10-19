@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158850: Cannot Compress Write-Protected Removable Media"
-permalink: kb/158/Q158850/
+permalink: /kb/158/Q158850/
 ---
 
 ## Q158850: Cannot Compress Write-Protected Removable Media

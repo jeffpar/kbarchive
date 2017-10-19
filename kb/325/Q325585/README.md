@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325585: SMS: Software Inventory May Be Discarded from Offline Clients"
-permalink: kb/325/Q325585/
+permalink: /kb/325/Q325585/
 ---
 
 ## Q325585: SMS: Software Inventory May Be Discarded from Offline Clients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139205: &quot;Path Not Found&quot; Using DIR Command on NetWare Volume"
-permalink: kb/139/Q139205/
+permalink: /kb/139/Q139205/
 ---
 
 ## Q139205: &quot;Path Not Found&quot; Using DIR Command on NetWare Volume

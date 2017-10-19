@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121908: Unable to Browse or Connect to Microsoft Networking Print Server"
-permalink: kb/121/Q121908/
+permalink: /kb/121/Q121908/
 ---
 
 ## Q121908: Unable to Browse or Connect to Microsoft Networking Print Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173363: Earlier MSN Sign-In Screen Appears When You Connect to the Web"
-permalink: kb/173/Q173363/
+permalink: /kb/173/Q173363/
 ---
 
 ## Q173363: Earlier MSN Sign-In Screen Appears When You Connect to the Web

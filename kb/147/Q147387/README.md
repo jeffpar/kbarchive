@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147387: Err Msg: &quot;Invalid Property Value&quot; Modifying Role"
-permalink: kb/147/Q147387/
+permalink: /kb/147/Q147387/
 ---
 
 ## Q147387: Err Msg: &quot;Invalid Property Value&quot; Modifying Role

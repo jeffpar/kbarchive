@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127789: LAN Manager Clients Cannot See Windows NT Computers"
-permalink: kb/127/Q127789/
+permalink: /kb/127/Q127789/
 ---
 
 ## Q127789: LAN Manager Clients Cannot See Windows NT Computers

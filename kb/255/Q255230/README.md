@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255230: FIX: Memory Leak in OLE Automation for Visual SourceSafe"
-permalink: kb/255/Q255230/
+permalink: /kb/255/Q255230/
 ---
 
 ## Q255230: FIX: Memory Leak in OLE Automation for Visual SourceSafe

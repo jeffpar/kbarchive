@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181871: XADM: PR_MESSAGE_FLAGS MSGFLAG_UNMODIFIED Bit Not Set Correctly"
-permalink: kb/181/Q181871/
+permalink: /kb/181/Q181871/
 ---
 
 ## Q181871: XADM: PR_MESSAGE_FLAGS MSGFLAG_UNMODIFIED Bit Not Set Correctly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274475: Messenger No Longer Works After Upgrading to Windows 2000"
-permalink: kb/274/Q274475/
+permalink: /kb/274/Q274475/
 ---
 
 ## Q274475: Messenger No Longer Works After Upgrading to Windows 2000

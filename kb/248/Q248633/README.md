@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248633: Objects May Be Incorrectly Joined When MA Is in Reflector Mode"
-permalink: kb/248/Q248633/
+permalink: /kb/248/Q248633/
 ---
 
 ## Q248633: Objects May Be Incorrectly Joined When MA Is in Reflector Mode

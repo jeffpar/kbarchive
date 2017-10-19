@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177761: XADM: ESE97 Error Codes"
-permalink: kb/177/Q177761/
+permalink: /kb/177/Q177761/
 ---
 
 ## Q177761: XADM: ESE97 Error Codes

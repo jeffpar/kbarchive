@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299256: IIS: Error w/Attempt to Log on to FTP Server with Guest Account"
-permalink: kb/299/Q299256/
+permalink: /kb/299/Q299256/
 ---
 
 ## Q299256: IIS: Error w/Attempt to Log on to FTP Server with Guest Account

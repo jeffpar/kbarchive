@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109988: PROFS: Err Msg: Data Exception - LISTFILE: re-ipl"
-permalink: kb/109/Q109988/
+permalink: /kb/109/Q109988/
 ---
 
 ## Q109988: PROFS: Err Msg: Data Exception - LISTFILE: re-ipl

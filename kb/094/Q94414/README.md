@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94414: OLD_DOS.x Directory Created Even if You Can't Uninstall"
-permalink: kb/094/Q94414/
+permalink: /kb/094/Q94414/
 ---
 
 ## Q94414: OLD_DOS.x Directory Created Even if You Can't Uninstall

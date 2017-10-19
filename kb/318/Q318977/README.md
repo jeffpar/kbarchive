@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318977: FIX: The CDATA Section of CURSORTOXML( ) May Format Characters"
-permalink: kb/318/Q318977/
+permalink: /kb/318/Q318977/
 ---
 
 ## Q318977: FIX: The CDATA Section of CURSORTOXML( ) May Format Characters

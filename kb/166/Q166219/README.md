@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166219: Script Selection in Printer Properties Doesn't Take Effect"
-permalink: kb/166/Q166219/
+permalink: /kb/166/Q166219/
 ---
 
 ## Q166219: Script Selection in Printer Properties Doesn't Take Effect

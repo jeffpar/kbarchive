@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218619: Taskpads Let Web Sites Invoke Executables on a User's Computer"
-permalink: kb/218/Q218619/
+permalink: /kb/218/Q218619/
 ---
 
 ## Q218619: Taskpads Let Web Sites Invoke Executables on a User's Computer

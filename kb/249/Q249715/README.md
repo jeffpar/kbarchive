@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249715: Soccer 2000: Minimum System Requirements"
-permalink: kb/249/Q249715/
+permalink: /kb/249/Q249715/
 ---
 
 ## Q249715: Soccer 2000: Minimum System Requirements

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170332: Windows NT Workstation Banner on Start Menu Is Truncated"
-permalink: kb/170/Q170332/
+permalink: /kb/170/Q170332/
 ---
 
 ## Q170332: Windows NT Workstation Banner on Start Menu Is Truncated

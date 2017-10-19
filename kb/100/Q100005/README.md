@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100005: Drive Letters Unavailable for Interlnk with MS-DOS 6.0"
-permalink: kb/100/Q100005/
+permalink: /kb/100/Q100005/
 ---
 
 ## Q100005: Drive Letters Unavailable for Interlnk with MS-DOS 6.0

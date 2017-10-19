@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137949: FIX: Microsoft Excel Worksheets w/ Formulas Import Incorrectly"
-permalink: kb/137/Q137949/
+permalink: /kb/137/Q137949/
 ---
 
 ## Q137949: FIX: Microsoft Excel Worksheets w/ Formulas Import Incorrectly

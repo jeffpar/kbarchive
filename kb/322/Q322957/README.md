@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322957: INFO: Formulate an Alert Category ID"
-permalink: kb/322/Q322957/
+permalink: /kb/322/Q322957/
 ---
 
 ## Q322957: INFO: Formulate an Alert Category ID

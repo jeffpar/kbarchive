@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69415: WD97: Preventing Page Breaks in Tables"
-permalink: kb/069/Q69415/
+permalink: /kb/069/Q69415/
 ---
 
 ## Q69415: WD97: Preventing Page Breaks in Tables

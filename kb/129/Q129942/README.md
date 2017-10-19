@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129942: PRB: Using TypeOf as Part of an If Statement Fails"
-permalink: kb/129/Q129942/
+permalink: /kb/129/Q129942/
 ---
 
 ## Q129942: PRB: Using TypeOf as Part of an If Statement Fails

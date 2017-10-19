@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151670: XFOR: Using the Mapisend.exeUtility with the AT Scheduler"
-permalink: kb/151/Q151670/
+permalink: /kb/151/Q151670/
 ---
 
 ## Q151670: XFOR: Using the Mapisend.exeUtility with the AT Scheduler

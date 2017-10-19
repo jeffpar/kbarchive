@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88557: INFO: CFrameWnd Objects Can Destroy Themselves"
-permalink: kb/088/Q88557/
+permalink: /kb/088/Q88557/
 ---
 
 ## Q88557: INFO: CFrameWnd Objects Can Destroy Themselves

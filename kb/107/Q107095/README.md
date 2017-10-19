@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107095: PROFS: Incorrect Time and Date Stamp on Gateway Mail"
-permalink: kb/107/Q107095/
+permalink: /kb/107/Q107095/
 ---
 
 ## Q107095: PROFS: Incorrect Time and Date Stamp on Gateway Mail

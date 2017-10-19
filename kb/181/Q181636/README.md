@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181636: XFOR: Rule For Forwarding To Internet Address Does Not Work"
-permalink: kb/181/Q181636/
+permalink: /kb/181/Q181636/
 ---
 
 ## Q181636: XFOR: Rule For Forwarding To Internet Address Does Not Work

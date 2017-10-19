@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q46767: PPT: Text In Slide Master Does Not Appear On Every Slide"
-permalink: kb/046/Q46767/
+permalink: /kb/046/Q46767/
 ---
 
 ## Q46767: PPT: Text In Slide Master Does Not Appear On Every Slide

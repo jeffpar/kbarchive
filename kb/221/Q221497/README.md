@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221497: RRAS: RIP Routing Stops When System Time Is Changed"
-permalink: kb/221/Q221497/
+permalink: /kb/221/Q221497/
 ---
 
 ## Q221497: RRAS: RIP Routing Stops When System Time Is Changed

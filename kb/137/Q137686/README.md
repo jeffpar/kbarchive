@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137686: PPT: Superscript and Subscript Text Built Improperly"
-permalink: kb/137/Q137686/
+permalink: /kb/137/Q137686/
 ---
 
 ## Q137686: PPT: Superscript and Subscript Text Built Improperly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302481: FIX: Persistent Storage Manager Disallows Access to Snapshots"
-permalink: kb/302/Q302481/
+permalink: /kb/302/Q302481/
 ---
 
 ## Q302481: FIX: Persistent Storage Manager Disallows Access to Snapshots

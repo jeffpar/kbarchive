@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83541: Mac Fax: FaxGate Gateway Error Messages"
-permalink: kb/083/Q83541/
+permalink: /kb/083/Q83541/
 ---
 
 ## Q83541: Mac Fax: FaxGate Gateway Error Messages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84418: Bookshelf: Low-Memory Situation; Unable to Display Picture"
-permalink: kb/084/Q84418/
+permalink: /kb/084/Q84418/
 ---
 
 ## Q84418: Bookshelf: Low-Memory Situation; Unable to Display Picture

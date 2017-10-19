@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139438: PRB: 3D Effect Does Not Appear If Object Is too Small"
-permalink: kb/139/Q139438/
+permalink: /kb/139/Q139438/
 ---
 
 ## Q139438: PRB: 3D Effect Does Not Appear If Object Is too Small

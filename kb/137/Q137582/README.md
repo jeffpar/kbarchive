@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137582: Using WINSCL.EXE"
-permalink: kb/137/Q137582/
+permalink: /kb/137/Q137582/
 ---
 
 ## Q137582: Using WINSCL.EXE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140444: FIX: UNC File Names Cause Remote Debugging to Fail"
-permalink: kb/140/Q140444/
+permalink: /kb/140/Q140444/
 ---
 
 ## Q140444: FIX: UNC File Names Cause Remote Debugging to Fail

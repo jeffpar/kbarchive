@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154166: PRB: ActiveX Control Painting Problems in Visual C++ 4.2"
-permalink: kb/154/Q154166/
+permalink: /kb/154/Q154166/
 ---
 
 ## Q154166: PRB: ActiveX Control Painting Problems in Visual C++ 4.2

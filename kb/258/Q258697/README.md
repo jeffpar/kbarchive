@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258697: INFO: Single SQL Connection Supports Only One Active Firehose"
-permalink: kb/258/Q258697/
+permalink: /kb/258/Q258697/
 ---
 
 ## Q258697: INFO: Single SQL Connection Supports Only One Active Firehose

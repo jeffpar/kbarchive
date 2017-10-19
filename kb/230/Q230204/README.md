@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230204: SNA Server Fails Due to Access Violation in SNADMOD!RpcRouteProc"
-permalink: kb/230/Q230204/
+permalink: /kb/230/Q230204/
 ---
 
 ## Q230204: SNA Server Fails Due to Access Violation in SNADMOD!RpcRouteProc

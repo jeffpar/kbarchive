@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126133: Windows NT Setup Hangs when Upgrading a Compaq Proliant"
-permalink: kb/126/Q126133/
+permalink: /kb/126/Q126133/
 ---
 
 ## Q126133: Windows NT Setup Hangs when Upgrading a Compaq Proliant

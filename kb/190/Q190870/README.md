@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190870: PRB: TITLEBAR = 0 Does Not Carry Over from Base Class"
-permalink: kb/190/Q190870/
+permalink: /kb/190/Q190870/
 ---
 
 ## Q190870: PRB: TITLEBAR = 0 Does Not Carry Over from Base Class

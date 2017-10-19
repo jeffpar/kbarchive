@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173799: WD97: Macro to List Custom Tab Stops in a Paragraph"
-permalink: kb/173/Q173799/
+permalink: /kb/173/Q173799/
 ---
 
 ## Q173799: WD97: Macro to List Custom Tab Stops in a Paragraph

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112620: Incorrect Network Card Detected During Setup with Novell ODI"
-permalink: kb/112/Q112620/
+permalink: /kb/112/Q112620/
 ---
 
 ## Q112620: Incorrect Network Card Detected During Setup with Novell ODI

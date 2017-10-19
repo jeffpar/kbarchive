@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92366: Changing MS-DOS Command Prompt Under Windows"
-permalink: kb/092/Q92366/
+permalink: /kb/092/Q92366/
 ---
 
 ## Q92366: Changing MS-DOS Command Prompt Under Windows

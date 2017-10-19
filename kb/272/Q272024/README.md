@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272024: BUG: Release Calls When Using _ATL_DEBUG_INTEFACES May Crash"
-permalink: kb/272/Q272024/
+permalink: /kb/272/Q272024/
 ---
 
 ## Q272024: BUG: Release Calls When Using _ATL_DEBUG_INTEFACES May Crash

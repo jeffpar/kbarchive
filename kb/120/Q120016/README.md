@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120016: TCP/IP-32: ARP -S Switch Fails on First Entry Added to ARP Cache"
-permalink: kb/120/Q120016/
+permalink: /kb/120/Q120016/
 ---
 
 ## Q120016: TCP/IP-32: ARP -S Switch Fails on First Entry Added to ARP Cache

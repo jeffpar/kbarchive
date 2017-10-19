@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156717: PRB: Rollback of Shared File Forces a Branch"
-permalink: kb/156/Q156717/
+permalink: /kb/156/Q156717/
 ---
 
 ## Q156717: PRB: Rollback of Shared File Forces a Branch

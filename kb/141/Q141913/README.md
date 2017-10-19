@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141913: PRB: Error 1915 - Collating Sequence &quot;&lt;Name&gt;&quot; is not found"
-permalink: kb/141/Q141913/
+permalink: /kb/141/Q141913/
 ---
 
 ## Q141913: PRB: Error 1915 - Collating Sequence &quot;&lt;Name&gt;&quot; is not found

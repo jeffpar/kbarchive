@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58340: Contents of Windows 3.0 SYSINI.TXT"
-permalink: kb/058/Q58340/
+permalink: /kb/058/Q58340/
 ---
 
 ## Q58340: Contents of Windows 3.0 SYSINI.TXT

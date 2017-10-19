@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130381: MHS: Err Msg: Inpost General I/O"
-permalink: kb/130/Q130381/
+permalink: /kb/130/Q130381/
 ---
 
 ## Q130381: MHS: Err Msg: Inpost General I/O

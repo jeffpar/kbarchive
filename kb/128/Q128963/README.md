@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128963: PC MAPI: How To Determine if a Mail Session Already Exists"
-permalink: kb/128/Q128963/
+permalink: /kb/128/Q128963/
 ---
 
 ## Q128963: PC MAPI: How To Determine if a Mail Session Already Exists

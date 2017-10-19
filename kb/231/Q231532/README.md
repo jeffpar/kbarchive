@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231532: MapPoint: Unable to Install on a NetWare Server"
-permalink: kb/231/Q231532/
+permalink: /kb/231/Q231532/
 ---
 
 ## Q231532: MapPoint: Unable to Install on a NetWare Server

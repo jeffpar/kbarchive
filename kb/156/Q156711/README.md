@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156711: XCLN: Exchange Win95 Client with DNS Polls for New Mail"
-permalink: kb/156/Q156711/
+permalink: /kb/156/Q156711/
 ---
 
 ## Q156711: XCLN: Exchange Win95 Client with DNS Polls for New Mail

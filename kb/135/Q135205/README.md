@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135205: UNC Connection Causes Failed Program Installation"
-permalink: kb/135/Q135205/
+permalink: /kb/135/Q135205/
 ---
 
 ## Q135205: UNC Connection Causes Failed Program Installation

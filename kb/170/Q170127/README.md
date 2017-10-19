@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170127: HOWTO: Add Tables in a Database to Source Control"
-permalink: kb/170/Q170127/
+permalink: /kb/170/Q170127/
 ---
 
 ## Q170127: HOWTO: Add Tables in a Database to Source Control

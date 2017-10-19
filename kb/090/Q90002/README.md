@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90002: No Volume Control with MS-DOS Application on WSS"
-permalink: kb/090/Q90002/
+permalink: /kb/090/Q90002/
 ---
 
 ## Q90002: No Volume Control with MS-DOS Application on WSS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314758: OOP with Microsoft Visual Basic .NET and Microsoft Visual C# .NE"
-permalink: kb/314/Q314758/
+permalink: /kb/314/Q314758/
 ---
 
 ## Q314758: OOP with Microsoft Visual Basic .NET and Microsoft Visual C# .NE

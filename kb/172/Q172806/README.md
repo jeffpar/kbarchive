@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172806: Creating a WinNT Boot Floppy for DEC ALPHA RISC Computers"
-permalink: kb/172/Q172806/
+permalink: /kb/172/Q172806/
 ---
 
 ## Q172806: Creating a WinNT Boot Floppy for DEC ALPHA RISC Computers

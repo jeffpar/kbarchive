@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136277: FIX: FormCount Property Does Not Count Toolbars in a Form Set"
-permalink: kb/136/Q136277/
+permalink: /kb/136/Q136277/
 ---
 
 ## Q136277: FIX: FormCount Property Does Not Count Toolbars in a Form Set

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149454: Cannot Access Network When Connected to Dial-Up Server"
-permalink: kb/149/Q149454/
+permalink: /kb/149/Q149454/
 ---
 
 ## Q149454: Cannot Access Network When Connected to Dial-Up Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181455: XADM: PFADMIN v1.1.2 Does Not Support Exchange 5.0 Permissions"
-permalink: kb/181/Q181455/
+permalink: /kb/181/Q181455/
 ---
 
 ## Q181455: XADM: PFADMIN v1.1.2 Does Not Support Exchange 5.0 Permissions

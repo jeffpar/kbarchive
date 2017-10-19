@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155056: IIS Security Concern Using Batch Files for CGI"
-permalink: kb/155/Q155056/
+permalink: /kb/155/Q155056/
 ---
 
 ## Q155056: IIS Security Concern Using Batch Files for CGI

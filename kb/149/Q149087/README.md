@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149087: HOWTO: Using CDaoRecordset::Seek"
-permalink: kb/149/Q149087/
+permalink: /kb/149/Q149087/
 ---
 
 ## Q149087: HOWTO: Using CDaoRecordset::Seek

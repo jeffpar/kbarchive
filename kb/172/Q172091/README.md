@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172091: Mastering Internet Development: Contents of Readme.wri"
-permalink: kb/172/Q172091/
+permalink: /kb/172/Q172091/
 ---
 
 ## Q172091: Mastering Internet Development: Contents of Readme.wri

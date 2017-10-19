@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171491: FIX: Mouse Button Value Is Always 4 in MouseUp Event of SSTab"
-permalink: kb/171/Q171491/
+permalink: /kb/171/Q171491/
 ---
 
 ## Q171491: FIX: Mouse Button Value Is Always 4 in MouseUp Event of SSTab

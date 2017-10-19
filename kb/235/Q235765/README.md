@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235765: SMS: Local Groups Cannot Write Queries Even With Full Rights"
-permalink: kb/235/Q235765/
+permalink: /kb/235/Q235765/
 ---
 
 ## Q235765: SMS: Local Groups Cannot Write Queries Even With Full Rights

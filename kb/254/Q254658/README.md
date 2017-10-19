@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254658: Problems Using ISM (HTML) to Create &amp; View Virtual Directory"
-permalink: kb/254/Q254658/
+permalink: /kb/254/Q254658/
 ---
 
 ## Q254658: Problems Using ISM (HTML) to Create &amp; View Virtual Directory

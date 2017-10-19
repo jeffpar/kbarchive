@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66732: Windows Err Msg: Error Building WIN.COM"
-permalink: kb/066/Q66732/
+permalink: /kb/066/Q66732/
 ---
 
 ## Q66732: Windows Err Msg: Error Building WIN.COM

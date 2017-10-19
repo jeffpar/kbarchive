@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141022: How to Change the Setup Application Name"
-permalink: kb/141/Q141022/
+permalink: /kb/141/Q141022/
 ---
 
 ## Q141022: How to Change the Setup Application Name

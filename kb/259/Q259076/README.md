@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259076: Cannot Add Groups as Operators in Default FTP &amp; Default Web Site"
-permalink: kb/259/Q259076/
+permalink: /kb/259/Q259076/
 ---
 
 ## Q259076: Cannot Add Groups as Operators in Default FTP &amp; Default Web Site

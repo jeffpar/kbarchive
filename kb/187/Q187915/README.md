@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187915: XCON: MTA Routes Mail to EDK Connector when Other Route Exists"
-permalink: kb/187/Q187915/
+permalink: /kb/187/Q187915/
 ---
 
 ## Q187915: XCON: MTA Routes Mail to EDK Connector when Other Route Exists

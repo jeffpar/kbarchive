@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146301: XCLN: Exchange Form Label Minimum Value Is 300"
-permalink: kb/146/Q146301/
+permalink: /kb/146/Q146301/
 ---
 
 ## Q146301: XCLN: Exchange Form Label Minimum Value Is 300

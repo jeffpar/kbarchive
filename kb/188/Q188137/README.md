@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188137: Tutor: Computer Hangs When Playing Game in Preschool Workshop"
-permalink: kb/188/Q188137/
+permalink: /kb/188/Q188137/
 ---
 
 ## Q188137: Tutor: Computer Hangs When Playing Game in Preschool Workshop

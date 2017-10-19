@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130504: PRB: Connection Dialog Box Doesn't Show Data Source Choices"
-permalink: kb/130/Q130504/
+permalink: /kb/130/Q130504/
 ---
 
 ## Q130504: PRB: Connection Dialog Box Doesn't Show Data Source Choices

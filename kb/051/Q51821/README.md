@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51821: Instruction: Incorrect Cross Controls in Slip Lesson"
-permalink: kb/051/Q51821/
+permalink: /kb/051/Q51821/
 ---
 
 ## Q51821: Instruction: Incorrect Cross Controls in Slip Lesson

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133073: Err Msg: Sound Recorder Cannot Record or Play Back..."
-permalink: kb/133/Q133073/
+permalink: /kb/133/Q133073/
 ---
 
 ## Q133073: Err Msg: Sound Recorder Cannot Record or Play Back...

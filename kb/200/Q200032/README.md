@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200032: XFOR:Typo in French cc:Mail Connector Read Receipt Token String"
-permalink: kb/200/Q200032/
+permalink: /kb/200/Q200032/
 ---
 
 ## Q200032: XFOR:Typo in French cc:Mail Connector Read Receipt Token String

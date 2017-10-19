@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149670: How to Run Multiple SQL Statements w/ the VFP ODBC Driver"
-permalink: kb/149/Q149670/
+permalink: /kb/149/Q149670/
 ---
 
 ## Q149670: How to Run Multiple SQL Statements w/ the VFP ODBC Driver

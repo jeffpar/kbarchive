@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239534: SMS: Data Loader Cannot Process MIF Date Above Year 2030"
-permalink: kb/239/Q239534/
+permalink: /kb/239/Q239534/
 ---
 
 ## Q239534: SMS: Data Loader Cannot Process MIF Date Above Year 2030

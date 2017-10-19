@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235999: Savedump Does Not Write Event Log Message with Event ID 1000"
-permalink: kb/235/Q235999/
+permalink: /kb/235/Q235999/
 ---
 
 ## Q235999: Savedump Does Not Write Event Log Message with Event ID 1000

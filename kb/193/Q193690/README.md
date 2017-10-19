@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193690: Wildcard Certificate Rule Mappings Disappear"
-permalink: kb/193/Q193690/
+permalink: /kb/193/Q193690/
 ---
 
 ## Q193690: Wildcard Certificate Rule Mappings Disappear

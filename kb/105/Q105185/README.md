@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105185: DoubleSpace Shows Wrong Drive Highlighted During Uncompress"
-permalink: kb/105/Q105185/
+permalink: /kb/105/Q105185/
 ---
 
 ## Q105185: DoubleSpace Shows Wrong Drive Highlighted During Uncompress

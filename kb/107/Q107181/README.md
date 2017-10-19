@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107181: Contents of the Windows Sound System 2.0 README.TXT"
-permalink: kb/107/Q107181/
+permalink: /kb/107/Q107181/
 ---
 
 ## Q107181: Contents of the Windows Sound System 2.0 README.TXT

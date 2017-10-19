@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167369: WD97: Cannot Print After Canceling Using HPDJ820CXi Driver"
-permalink: kb/167/Q167369/
+permalink: /kb/167/Q167369/
 ---
 
 ## Q167369: WD97: Cannot Print After Canceling Using HPDJ820CXi Driver

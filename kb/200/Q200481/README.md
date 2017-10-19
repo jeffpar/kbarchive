@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200481: Encarta 99: Insufficient Hard Disk Space to Complete Setup"
-permalink: kb/200/Q200481/
+permalink: /kb/200/Q200481/
 ---
 
 ## Q200481: Encarta 99: Insufficient Hard Disk Space to Complete Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116251: PC2X 8-Bit Bernoulli Controller May Cause System to Hang"
-permalink: kb/116/Q116251/
+permalink: /kb/116/Q116251/
 ---
 
 ## Q116251: PC2X 8-Bit Bernoulli Controller May Cause System to Hang

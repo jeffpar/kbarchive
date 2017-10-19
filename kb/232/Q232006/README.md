@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232006: XADM: How to Delete a Confidential Message From Exchange Server"
-permalink: kb/232/Q232006/
+permalink: /kb/232/Q232006/
 ---
 
 ## Q232006: XADM: How to Delete a Confidential Message From Exchange Server

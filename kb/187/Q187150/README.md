@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187150: Icons Appear Too Large on System Desktop"
-permalink: kb/187/Q187150/
+permalink: /kb/187/Q187150/
 ---
 
 ## Q187150: Icons Appear Too Large on System Desktop

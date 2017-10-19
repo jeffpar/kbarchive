@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214783: Iissync.exe Fails with Error Code 64"
-permalink: kb/214/Q214783/
+permalink: /kb/214/Q214783/
 ---
 
 ## Q214783: Iissync.exe Fails with Error Code 64

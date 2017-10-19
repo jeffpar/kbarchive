@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99689: Mac Adm: Lost Details of GWRecips in PAB"
-permalink: kb/099/Q99689/
+permalink: /kb/099/Q99689/
 ---
 
 ## Q99689: Mac Adm: Lost Details of GWRecips in PAB

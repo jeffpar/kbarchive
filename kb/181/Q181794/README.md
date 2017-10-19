@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181794: Stop 0x00000050 Caused by Remotely Possible Software"
-permalink: kb/181/Q181794/
+permalink: /kb/181/Q181794/
 ---
 
 ## Q181794: Stop 0x00000050 Caused by Remotely Possible Software

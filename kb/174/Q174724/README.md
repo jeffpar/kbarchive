@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174724: XWEB: Language of the Template and Message Content Don't Match"
-permalink: kb/174/Q174724/
+permalink: /kb/174/Q174724/
 ---
 
 ## Q174724: XWEB: Language of the Template and Message Content Don't Match

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134489: Cannot Start a Windows-Based Program from MS-DOS Prompt"
-permalink: kb/134/Q134489/
+permalink: /kb/134/Q134489/
 ---
 
 ## Q134489: Cannot Start a Windows-Based Program from MS-DOS Prompt

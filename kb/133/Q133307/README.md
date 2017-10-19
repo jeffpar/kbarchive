@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133307: HOWTO: How to Detect If a CFormView Has Changed"
-permalink: kb/133/Q133307/
+permalink: /kb/133/Q133307/
 ---
 
 ## Q133307: HOWTO: How to Detect If a CFormView Has Changed

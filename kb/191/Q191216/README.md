@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191216: DOC: CallByName Documentation Error"
-permalink: kb/191/Q191216/
+permalink: /kb/191/Q191216/
 ---
 
 ## Q191216: DOC: CallByName Documentation Error

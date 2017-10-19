@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271960: XADM: Address Book Search Takes Longer Than Expected"
-permalink: kb/271/Q271960/
+permalink: /kb/271/Q271960/
 ---
 
 ## Q271960: XADM: Address Book Search Takes Longer Than Expected

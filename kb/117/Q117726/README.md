@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117726: Server Operator Cannot Unlock Workstation"
-permalink: kb/117/Q117726/
+permalink: /kb/117/Q117726/
 ---
 
 ## Q117726: Server Operator Cannot Unlock Workstation

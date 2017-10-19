@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308225: Error Message: Windows Installer Internal Error 2889_ISAPATHDLG"
-permalink: kb/308/Q308225/
+permalink: /kb/308/Q308225/
 ---
 
 ## Q308225: Error Message: Windows Installer Internal Error 2889_ISAPATHDLG

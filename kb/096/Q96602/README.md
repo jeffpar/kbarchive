@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96602: Video Problems with ATI Mach 32 Series Drivers"
-permalink: kb/096/Q96602/
+permalink: /kb/096/Q96602/
 ---
 
 ## Q96602: Video Problems with ATI Mach 32 Series Drivers

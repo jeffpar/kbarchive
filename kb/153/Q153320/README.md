@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153320: Cannot Manually Add Package Source Directory"
-permalink: kb/153/Q153320/
+permalink: /kb/153/Q153320/
 ---
 
 ## Q153320: Cannot Manually Add Package Source Directory

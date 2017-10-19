@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276593: PRB: Error: &quot;NMAKE : Fatal Error U1045: Spawn Failed&quot; When You A"
-permalink: kb/276/Q276593/
+permalink: /kb/276/Q276593/
 ---
 
 ## Q276593: PRB: Error: &quot;NMAKE : Fatal Error U1045: Spawn Failed&quot; When You A

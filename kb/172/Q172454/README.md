@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172454: Err Msg: An Error Occurred While Windows Was Working with..."
-permalink: kb/172/Q172454/
+permalink: /kb/172/Q172454/
 ---
 
 ## Q172454: Err Msg: An Error Occurred While Windows Was Working with...

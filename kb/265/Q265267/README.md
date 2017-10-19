@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265267: XIMS: Chat Server Causes AV w/Chat Server Extension, MIC Client"
-permalink: kb/265/Q265267/
+permalink: /kb/265/Q265267/
 ---
 
 ## Q265267: XIMS: Chat Server Causes AV w/Chat Server Extension, MIC Client

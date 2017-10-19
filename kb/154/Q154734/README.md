@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154734: Quantum DLT 2000 and 4000 Tape Device Support"
-permalink: kb/154/Q154734/
+permalink: /kb/154/Q154734/
 ---
 
 ## Q154734: Quantum DLT 2000 and 4000 Tape Device Support

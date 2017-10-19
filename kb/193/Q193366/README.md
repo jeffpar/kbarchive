@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193366: INFO: CAB Files Distributed with Visual Basic 6.0"
-permalink: kb/193/Q193366/
+permalink: /kb/193/Q193366/
 ---
 
 ## Q193366: INFO: CAB Files Distributed with Visual Basic 6.0

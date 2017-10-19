@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234658: STOP Error in CSRSS After Attempting to Free a Screen Buffer"
-permalink: kb/234/Q234658/
+permalink: /kb/234/Q234658/
 ---
 
 ## Q234658: STOP Error in CSRSS After Attempting to Free a Screen Buffer

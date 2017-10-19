@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115203: MS-DOS Setup Deletes 3 Files from &#92;DOS on Stacker Host Drive"
-permalink: kb/115/Q115203/
+permalink: /kb/115/Q115203/
 ---
 
 ## Q115203: MS-DOS Setup Deletes 3 Files from &#92;DOS on Stacker Host Drive

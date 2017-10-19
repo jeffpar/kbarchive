@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175798: Error Message Appears When Creating a Demand Dial Interface"
-permalink: kb/175/Q175798/
+permalink: /kb/175/Q175798/
 ---
 
 ## Q175798: Error Message Appears When Creating a Demand Dial Interface

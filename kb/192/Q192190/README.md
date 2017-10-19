@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192190: MS-DOS Window Does Not Allow Full-Screen Option"
-permalink: kb/192/Q192190/
+permalink: /kb/192/Q192190/
 ---
 
 ## Q192190: MS-DOS Window Does Not Allow Full-Screen Option

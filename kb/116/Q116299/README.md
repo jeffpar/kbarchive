@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116299: FIX: Print Preview Problems for Chars with ASCII Values &gt; 127"
-permalink: kb/116/Q116299/
+permalink: /kb/116/Q116299/
 ---
 
 ## Q116299: FIX: Print Preview Problems for Chars with ASCII Values &gt; 127

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281210: CPU Usage on Computer or Client Reaches 100 Percent"
-permalink: kb/281/Q281210/
+permalink: /kb/281/Q281210/
 ---
 
 ## Q281210: CPU Usage on Computer or Client Reaches 100 Percent

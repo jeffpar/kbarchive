@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224583: Unable to Submit Expense Web Form from Client Computer"
-permalink: kb/224/Q224583/
+permalink: /kb/224/Q224583/
 ---
 
 ## Q224583: Unable to Submit Expense Web Form from Client Computer

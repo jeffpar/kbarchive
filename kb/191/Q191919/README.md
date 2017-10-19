@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191919: BUG: DataGrid Doesn't Handle Special Filter Constants Correctly"
-permalink: kb/191/Q191919/
+permalink: /kb/191/Q191919/
 ---
 
 ## Q191919: BUG: DataGrid Doesn't Handle Special Filter Constants Correctly

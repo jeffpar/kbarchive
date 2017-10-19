@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131041: PRB: Programs Crash After Installing Visual FoxPro"
-permalink: kb/131/Q131041/
+permalink: /kb/131/Q131041/
 ---
 
 ## Q131041: PRB: Programs Crash After Installing Visual FoxPro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164957: FIX: Failure to Load Odbccr32.dll on Alpha Machine"
-permalink: kb/164/Q164957/
+permalink: /kb/164/Q164957/
 ---
 
 ## Q164957: FIX: Failure to Load Odbccr32.dll on Alpha Machine

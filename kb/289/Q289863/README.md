@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289863: Data May Not Be Saved to Node When Cluster Cannot Communicate"
-permalink: kb/289/Q289863/
+permalink: /kb/289/Q289863/
 ---
 
 ## Q289863: Data May Not Be Saved to Node When Cluster Cannot Communicate

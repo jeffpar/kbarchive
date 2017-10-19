@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170530: FIX: AppWizard Project Cannot Open Include File .rc2"
-permalink: kb/170/Q170530/
+permalink: /kb/170/Q170530/
 ---
 
 ## Q170530: FIX: AppWizard Project Cannot Open Include File .rc2

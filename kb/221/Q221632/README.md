@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221632: FIX: Web Publishing Wizard Gives RunCode Runtime Error"
-permalink: kb/221/Q221632/
+permalink: /kb/221/Q221632/
 ---
 
 ## Q221632: FIX: Web Publishing Wizard Gives RunCode Runtime Error

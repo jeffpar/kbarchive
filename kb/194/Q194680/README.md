@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194680: Blue Screen in KMODE_EXCEPTION_NOT_HANDLED with Compaq Driver"
-permalink: kb/194/Q194680/
+permalink: /kb/194/Q194680/
 ---
 
 ## Q194680: Blue Screen in KMODE_EXCEPTION_NOT_HANDLED with Compaq Driver

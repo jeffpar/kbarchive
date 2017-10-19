@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271271: Microsoft Reader: Cannot Read eBook That You Purchased Online"
-permalink: kb/271/Q271271/
+permalink: /kb/271/Q271271/
 ---
 
 ## Q271271: Microsoft Reader: Cannot Read eBook That You Purchased Online

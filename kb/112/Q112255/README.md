@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112255: PC Ext: Session Log File Maintenance"
-permalink: kb/112/Q112255/
+permalink: /kb/112/Q112255/
 ---
 
 ## Q112255: PC Ext: Session Log File Maintenance

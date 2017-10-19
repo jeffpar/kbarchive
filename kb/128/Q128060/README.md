@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128060: PRB: Cannot Open a General Field from a FoxPro 2.x Table"
-permalink: kb/128/Q128060/
+permalink: /kb/128/Q128060/
 ---
 
 ## Q128060: PRB: Cannot Open a General Field from a FoxPro 2.x Table

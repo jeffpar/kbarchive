@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173023: Err Msg: The Filename, Directory, or Volume Label Syntax Is..."
-permalink: kb/173/Q173023/
+permalink: /kb/173/Q173023/
 ---
 
 ## Q173023: Err Msg: The Filename, Directory, or Volume Label Syntax Is...

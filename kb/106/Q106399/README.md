@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106399: INFO: Using the Development Studio or Visual Workbench with MASM"
-permalink: kb/106/Q106399/
+permalink: /kb/106/Q106399/
 ---
 
 ## Q106399: INFO: Using the Development Studio or Visual Workbench with MASM

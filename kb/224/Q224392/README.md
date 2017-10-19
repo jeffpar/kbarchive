@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224392: Error Message: The System Call Level Is Not Correct"
-permalink: kb/224/Q224392/
+permalink: /kb/224/Q224392/
 ---
 
 ## Q224392: Error Message: The System Call Level Is Not Correct

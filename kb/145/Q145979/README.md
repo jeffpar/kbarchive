@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145979: XCLN: Unable to Open Attachments Without File Extensions"
-permalink: kb/145/Q145979/
+permalink: /kb/145/Q145979/
 ---
 
 ## Q145979: XCLN: Unable to Open Attachments Without File Extensions

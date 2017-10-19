@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112137: ADT2: Overview of MS Access Developer's Toolkit Version 2.0"
-permalink: kb/112/Q112137/
+permalink: /kb/112/Q112137/
 ---
 
 ## Q112137: ADT2: Overview of MS Access Developer's Toolkit Version 2.0

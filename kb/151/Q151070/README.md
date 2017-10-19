@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151070: FIX: DYNAMIC_DOWNCAST &amp; STATIC_DOWNCAST Causes Stack Overflow"
-permalink: kb/151/Q151070/
+permalink: /kb/151/Q151070/
 ---
 
 ## Q151070: FIX: DYNAMIC_DOWNCAST &amp; STATIC_DOWNCAST Causes Stack Overflow

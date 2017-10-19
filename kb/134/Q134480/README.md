@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134480: &quot;Wizardry - Crusaders of the Dark Savant&quot; Game Terminated"
-permalink: kb/134/Q134480/
+permalink: /kb/134/Q134480/
 ---
 
 ## Q134480: &quot;Wizardry - Crusaders of the Dark Savant&quot; Game Terminated

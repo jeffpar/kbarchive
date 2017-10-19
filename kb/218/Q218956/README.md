@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218956: WD97: Overtype Mode Turned Off When You Quit Word"
-permalink: kb/218/Q218956/
+permalink: /kb/218/Q218956/
 ---
 
 ## Q218956: WD97: Overtype Mode Turned Off When You Quit Word

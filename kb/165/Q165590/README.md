@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165590: File Errors from 16-bit OLE Applications"
-permalink: kb/165/Q165590/
+permalink: /kb/165/Q165590/
 ---
 
 ## Q165590: File Errors from 16-bit OLE Applications

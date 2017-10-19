@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149439: Err Msg: &quot;STOP 0x0000007B&quot; on DEC AXP 2100 Setup"
-permalink: kb/149/Q149439/
+permalink: /kb/149/Q149439/
 ---
 
 ## Q149439: Err Msg: &quot;STOP 0x0000007B&quot; on DEC AXP 2100 Setup

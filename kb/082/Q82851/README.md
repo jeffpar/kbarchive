@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82851: Extra Extended for MS-DOS version 2.3 requried for Windows 3.1"
-permalink: kb/082/Q82851/
+permalink: /kb/082/Q82851/
 ---
 
 ## Q82851: Extra Extended for MS-DOS version 2.3 requried for Windows 3.1

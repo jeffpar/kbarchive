@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314139: Flight Simulator 2002: Cannot Use the Mouse as Flight Yoke"
-permalink: kb/314/Q314139/
+permalink: /kb/314/Q314139/
 ---
 
 ## Q314139: Flight Simulator 2002: Cannot Use the Mouse as Flight Yoke

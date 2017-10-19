@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74422: MS-DOS Does Not Upgrade from Compaq DOS 2.11"
-permalink: kb/074/Q74422/
+permalink: /kb/074/Q74422/
 ---
 
 ## Q74422: MS-DOS Does Not Upgrade from Compaq DOS 2.11

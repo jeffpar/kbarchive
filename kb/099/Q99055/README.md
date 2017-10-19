@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99055: PC Forms: Mail Message Displays Name in Single Quotation Marks"
-permalink: kb/099/Q99055/
+permalink: /kb/099/Q99055/
 ---
 
 ## Q99055: PC Forms: Mail Message Displays Name in Single Quotation Marks

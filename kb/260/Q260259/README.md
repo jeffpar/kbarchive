@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260259: INFO: Undocumented {PAUSE} Option for KEYBOARD Command"
-permalink: kb/260/Q260259/
+permalink: /kb/260/Q260259/
 ---
 
 ## Q260259: INFO: Undocumented {PAUSE} Option for KEYBOARD Command

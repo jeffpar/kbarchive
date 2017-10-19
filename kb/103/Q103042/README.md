@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103042: Event Msg: The Browser Has Forced an Election..."
-permalink: kb/103/Q103042/
+permalink: /kb/103/Q103042/
 ---
 
 ## Q103042: Event Msg: The Browser Has Forced an Election...

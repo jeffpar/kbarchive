@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299823: MapPoint: &quot;Runtime Error: 16398&quot; Err Msg When You Start MapPoint"
-permalink: kb/299/Q299823/
+permalink: /kb/299/Q299823/
 ---
 
 ## Q299823: MapPoint: &quot;Runtime Error: 16398&quot; Err Msg When You Start MapPoint

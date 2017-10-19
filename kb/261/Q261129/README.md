@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261129: DLC Connection Stays Pending Due to Bit-Flipped TEST Poll"
-permalink: kb/261/Q261129/
+permalink: /kb/261/Q261129/
 ---
 
 ## Q261129: DLC Connection Stays Pending Due to Bit-Flipped TEST Poll

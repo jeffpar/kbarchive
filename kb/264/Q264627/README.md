@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264627: SMS: Video Acceleration and NetMeeting Cause Error Message"
-permalink: kb/264/Q264627/
+permalink: /kb/264/Q264627/
 ---
 
 ## Q264627: SMS: Video Acceleration and NetMeeting Cause Error Message

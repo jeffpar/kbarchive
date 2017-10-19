@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129904: Baseball 1995: All-Star Break Causes Gap in Full Season"
-permalink: kb/129/Q129904/
+permalink: /kb/129/Q129904/
 ---
 
 ## Q129904: Baseball 1995: All-Star Break Causes Gap in Full Season

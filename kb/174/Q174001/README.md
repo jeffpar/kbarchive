@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174001: The Microsoft Network Stops Responding After Initial Sign-In"
-permalink: kb/174/Q174001/
+permalink: /kb/174/Q174001/
 ---
 
 ## Q174001: The Microsoft Network Stops Responding After Initial Sign-In

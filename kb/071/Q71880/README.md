@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71880: Cannot Find File _DEFAULT.BAT"
-permalink: kb/071/Q71880/
+permalink: /kb/071/Q71880/
 ---
 
 ## Q71880: Cannot Find File _DEFAULT.BAT

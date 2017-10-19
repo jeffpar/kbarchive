@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160969: SMS: How the SNMP Trap ID Relates to a Windows NT Event"
-permalink: kb/160/Q160969/
+permalink: /kb/160/Q160969/
 ---
 
 ## Q160969: SMS: How the SNMP Trap ID Relates to a Windows NT Event

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170355: New Tools Included with Zero Administration Kit"
-permalink: kb/170/Q170355/
+permalink: /kb/170/Q170355/
 ---
 
 ## Q170355: New Tools Included with Zero Administration Kit

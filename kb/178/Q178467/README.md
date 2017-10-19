@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178467: XADM: CD Key for Exchange 5.5 Missing"
-permalink: kb/178/Q178467/
+permalink: /kb/178/Q178467/
 ---
 
 ## Q178467: XADM: CD Key for Exchange 5.5 Missing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59919: Mac Hyp: disposeMessageList Releases Memory in Server"
-permalink: kb/059/Q59919/
+permalink: /kb/059/Q59919/
 ---
 
 ## Q59919: Mac Hyp: disposeMessageList Releases Memory in Server

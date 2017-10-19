@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141142: FIX: Distributed Application Allows Setup /a"
-permalink: kb/141/Q141142/
+permalink: /kb/141/Q141142/
 ---
 
 ## Q141142: FIX: Distributed Application Allows Setup /a

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183722: Password Synchronization and Local User Accounts Information"
-permalink: kb/183/Q183722/
+permalink: /kb/183/Q183722/
 ---
 
 ## Q183722: Password Synchronization and Local User Accounts Information

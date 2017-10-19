@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194848: SDLC Connection Fails with Event 23, Qualifier X'002E'"
-permalink: kb/194/Q194848/
+permalink: /kb/194/Q194848/
 ---
 
 ## Q194848: SDLC Connection Fails with Event 23, Qualifier X'002E'

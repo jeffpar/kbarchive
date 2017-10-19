@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136046: PC WRmt: Possible Misdirected Mail When Upgrading Address List"
-permalink: kb/136/Q136046/
+permalink: /kb/136/Q136046/
 ---
 
 ## Q136046: PC WRmt: Possible Misdirected Mail When Upgrading Address List

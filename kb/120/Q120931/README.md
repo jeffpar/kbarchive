@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120931: Incorrect Syntax for FTP in Help File"
-permalink: kb/120/Q120931/
+permalink: /kb/120/Q120931/
 ---
 
 ## Q120931: Incorrect Syntax for FTP in Help File

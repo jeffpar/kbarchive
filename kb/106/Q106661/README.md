@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106661: How to Determine the Shape of the Mouse Cursor"
-permalink: kb/106/Q106661/
+permalink: /kb/106/Q106661/
 ---
 
 ## Q106661: How to Determine the Shape of the Mouse Cursor

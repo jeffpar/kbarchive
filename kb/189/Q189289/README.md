@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189289: XADM: Reinstall of Exchange Server Fails"
-permalink: kb/189/Q189289/
+permalink: /kb/189/Q189289/
 ---
 
 ## Q189289: XADM: Reinstall of Exchange Server Fails

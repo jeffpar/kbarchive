@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193304: INFO: Status Bar Shows Currently Selected Object in Designers"
-permalink: kb/193/Q193304/
+permalink: /kb/193/Q193304/
 ---
 
 ## Q193304: INFO: Status Bar Shows Currently Selected Object in Designers

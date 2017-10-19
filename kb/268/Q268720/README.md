@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268720: AoE II Expansion: Invalid Page Fault in Age2x_1.exe"
-permalink: kb/268/Q268720/
+permalink: /kb/268/Q268720/
 ---
 
 ## Q268720: AoE II Expansion: Invalid Page Fault in Age2x_1.exe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239639: XADM: How to View Deleted (Tombstoned) Objects"
-permalink: kb/239/Q239639/
+permalink: /kb/239/Q239639/
 ---
 
 ## Q239639: XADM: How to View Deleted (Tombstoned) Objects

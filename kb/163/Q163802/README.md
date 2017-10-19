@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163802: HOWTO: Retrieve Contact Names from Schedule+ Tasks"
-permalink: kb/163/Q163802/
+permalink: /kb/163/Q163802/
 ---
 
 ## Q163802: HOWTO: Retrieve Contact Names from Schedule+ Tasks

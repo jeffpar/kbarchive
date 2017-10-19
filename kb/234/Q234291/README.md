@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234291: XFOR: Canceling Notes/SNADS/PROFS/GW Setup Breaks Connector"
-permalink: kb/234/Q234291/
+permalink: /kb/234/Q234291/
 ---
 
 ## Q234291: XFOR: Canceling Notes/SNADS/PROFS/GW Setup Breaks Connector

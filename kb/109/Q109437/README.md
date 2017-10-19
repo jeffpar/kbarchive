@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109437: Moving Workgroup Postoffice and Changing Postoffice Manager"
-permalink: kb/109/Q109437/
+permalink: /kb/109/Q109437/
 ---
 
 ## Q109437: Moving Workgroup Postoffice and Changing Postoffice Manager

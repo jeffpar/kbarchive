@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74332: INFO: Actions Prohibited in System Modal Dialog Boxes"
-permalink: kb/074/Q74332/
+permalink: /kb/074/Q74332/
 ---
 
 ## Q74332: INFO: Actions Prohibited in System Modal Dialog Boxes

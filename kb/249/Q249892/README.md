@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249892: XCLN: User in Trusted Domain Cannot Log On to Exchange Server"
-permalink: kb/249/Q249892/
+permalink: /kb/249/Q249892/
 ---
 
 ## Q249892: XCLN: User in Trusted Domain Cannot Log On to Exchange Server

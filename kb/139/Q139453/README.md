@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139453: NET TIME Does Not Report Correct Remote Time in Windows NT"
-permalink: kb/139/Q139453/
+permalink: /kb/139/Q139453/
 ---
 
 ## Q139453: NET TIME Does Not Report Correct Remote Time in Windows NT

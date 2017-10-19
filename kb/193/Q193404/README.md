@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193404: INFO: IntelliSense and Visual FoxPro 6.0"
-permalink: kb/193/Q193404/
+permalink: /kb/193/Q193404/
 ---
 
 ## Q193404: INFO: IntelliSense and Visual FoxPro 6.0

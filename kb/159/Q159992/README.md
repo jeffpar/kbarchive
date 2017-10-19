@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159992: System Policy Editor Error Opening Policy Template File"
-permalink: kb/159/Q159992/
+permalink: /kb/159/Q159992/
 ---
 
 ## Q159992: System Policy Editor Error Opening Policy Template File

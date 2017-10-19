@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270641: MCSE Training Kit: Upgrading To Windows 2000 Comments and Correc"
-permalink: kb/270/Q270641/
+permalink: /kb/270/Q270641/
 ---
 
 ## Q270641: MCSE Training Kit: Upgrading To Windows 2000 Comments and Correc

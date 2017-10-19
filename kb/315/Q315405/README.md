@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315405: SEND State Error When Using ODBC/OLEDB DB2 Providers with Two-Ph"
-permalink: kb/315/Q315405/
+permalink: /kb/315/Q315405/
 ---
 
 ## Q315405: SEND State Error When Using ODBC/OLEDB DB2 Providers with Two-Ph

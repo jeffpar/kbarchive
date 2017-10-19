@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184996: Incomplete List of NetWare Server Volumes with CSNW/GSNW"
-permalink: kb/184/Q184996/
+permalink: /kb/184/Q184996/
 ---
 
 ## Q184996: Incomplete List of NetWare Server Volumes with CSNW/GSNW

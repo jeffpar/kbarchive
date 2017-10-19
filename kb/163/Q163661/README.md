@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163661: Remove Old Device Drivers Before Installing Windows NT 4.0"
-permalink: kb/163/Q163661/
+permalink: /kb/163/Q163661/
 ---
 
 ## Q163661: Remove Old Device Drivers Before Installing Windows NT 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158768: WD97: Sample VB Code to Set, Retrieve Summary Information"
-permalink: kb/158/Q158768/
+permalink: /kb/158/Q158768/
 ---
 
 ## Q158768: WD97: Sample VB Code to Set, Retrieve Summary Information

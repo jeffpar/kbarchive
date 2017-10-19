@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256236: SYSDIFF.INF: Not Included With Resource Kit"
-permalink: kb/256/Q256236/
+permalink: /kb/256/Q256236/
 ---
 
 ## Q256236: SYSDIFF.INF: Not Included With Resource Kit

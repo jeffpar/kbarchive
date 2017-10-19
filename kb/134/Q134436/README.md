@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134436: FIX: After Removing Text in Grid Other Data Appears Truncated"
-permalink: kb/134/Q134436/
+permalink: /kb/134/Q134436/
 ---
 
 ## Q134436: FIX: After Removing Text in Grid Other Data Appears Truncated

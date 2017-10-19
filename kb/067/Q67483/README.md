@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67483: PWB Hangs with Novell Netware"
-permalink: kb/067/Q67483/
+permalink: /kb/067/Q67483/
 ---
 
 ## Q67483: PWB Hangs with Novell Netware

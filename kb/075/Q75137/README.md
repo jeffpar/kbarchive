@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75137: AT&amp;T 6386E Hangs with RAM Option on EMM386"
-permalink: kb/075/Q75137/
+permalink: /kb/075/Q75137/
 ---
 
 ## Q75137: AT&amp;T 6386E Hangs with RAM Option on EMM386

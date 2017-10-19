@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108429: How to Use PostMessage() with FOXTOOLS"
-permalink: kb/108/Q108429/
+permalink: /kb/108/Q108429/
 ---
 
 ## Q108429: How to Use PostMessage() with FOXTOOLS

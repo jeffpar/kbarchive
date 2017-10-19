@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82049: &quot;No COM Ports Available&quot; Error on IBM PS/2 Computer"
-permalink: kb/082/Q82049/
+permalink: /kb/082/Q82049/
 ---
 
 ## Q82049: &quot;No COM Ports Available&quot; Error on IBM PS/2 Computer

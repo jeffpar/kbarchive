@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138791: SCSI Printing Devices Requiring Wide SCSI May Fail"
-permalink: kb/138/Q138791/
+permalink: /kb/138/Q138791/
 ---
 
 ## Q138791: SCSI Printing Devices Requiring Wide SCSI May Fail

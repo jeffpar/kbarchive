@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160035: Memory Leak in SNMP Subagents"
-permalink: kb/160/Q160035/
+permalink: /kb/160/Q160035/
 ---
 
 ## Q160035: Memory Leak in SNMP Subagents

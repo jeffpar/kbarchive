@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177333: XCLN: NIW Required to Customize Outlook Client Install Point"
-permalink: kb/177/Q177333/
+permalink: /kb/177/Q177333/
 ---
 
 ## Q177333: XCLN: NIW Required to Customize Outlook Client Install Point

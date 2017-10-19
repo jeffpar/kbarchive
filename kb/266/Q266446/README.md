@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266446: Roaming Profiles Do Not Load, Generate Errors 18 and 1009"
-permalink: kb/266/Q266446/
+permalink: /kb/266/Q266446/
 ---
 
 ## Q266446: Roaming Profiles Do Not Load, Generate Errors 18 and 1009

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122421: Server Service Hangs, Event 2000, with Madge Adapter"
-permalink: kb/122/Q122421/
+permalink: /kb/122/Q122421/
 ---
 
 ## Q122421: Server Service Hangs, Event 2000, with Madge Adapter

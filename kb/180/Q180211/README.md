@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180211: BUG: Synonyms Do Not Work with Oracle Stored Procedures"
-permalink: kb/180/Q180211/
+permalink: /kb/180/Q180211/
 ---
 
 ## Q180211: BUG: Synonyms Do Not Work with Oracle Stored Procedures

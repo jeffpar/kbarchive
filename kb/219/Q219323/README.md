@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219323: IPX Router Does Not Increase Transport Control Field"
-permalink: kb/219/Q219323/
+permalink: /kb/219/Q219323/
 ---
 
 ## Q219323: IPX Router Does Not Increase Transport Control Field

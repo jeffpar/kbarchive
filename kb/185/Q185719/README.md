@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185719: Removing Host Security Option Causes Trap in SNA Manager"
-permalink: kb/185/Q185719/
+permalink: /kb/185/Q185719/
 ---
 
 ## Q185719: Removing Host Security Option Causes Trap in SNA Manager

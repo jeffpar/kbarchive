@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244265: FS 2000: No Landing Gear to Surface Interaction Sounds"
-permalink: kb/244/Q244265/
+permalink: /kb/244/Q244265/
 ---
 
 ## Q244265: FS 2000: No Landing Gear to Surface Interaction Sounds

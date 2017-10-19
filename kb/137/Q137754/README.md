@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137754: Attachment Types Supported in Microsoft Exchange"
-permalink: kb/137/Q137754/
+permalink: /kb/137/Q137754/
 ---
 
 ## Q137754: Attachment Types Supported in Microsoft Exchange

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170911: XADM: Clean Mailbox Utility Deletes Msgs Not Archived"
-permalink: kb/170/Q170911/
+permalink: /kb/170/Q170911/
 ---
 
 ## Q170911: XADM: Clean Mailbox Utility Deletes Msgs Not Archived

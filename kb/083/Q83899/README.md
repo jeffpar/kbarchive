@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83899: SYSADMIN.WRI Information Was Incorporated into the WRK"
-permalink: kb/083/Q83899/
+permalink: /kb/083/Q83899/
 ---
 
 ## Q83899: SYSADMIN.WRI Information Was Incorporated into the WRK

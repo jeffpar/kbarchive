@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149328: FIX: Selecting Invisible Tab Can Cause GPF with SSTab Control"
-permalink: kb/149/Q149328/
+permalink: /kb/149/Q149328/
 ---
 
 ## Q149328: FIX: Selecting Invisible Tab Can Cause GPF with SSTab Control

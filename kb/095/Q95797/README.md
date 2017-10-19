@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95797: RAS and TCPIP_HUB Conflict on One Server"
-permalink: kb/095/Q95797/
+permalink: /kb/095/Q95797/
 ---
 
 ## Q95797: RAS and TCPIP_HUB Conflict on One Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266743: PostScript Printer Does Not Print Duplex"
-permalink: kb/266/Q266743/
+permalink: /kb/266/Q266743/
 ---
 
 ## Q266743: PostScript Printer Does Not Print Duplex

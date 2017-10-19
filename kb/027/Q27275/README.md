@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q27275: IBM Quietwriter Support in Windows"
-permalink: kb/027/Q27275/
+permalink: /kb/027/Q27275/
 ---
 
 ## Q27275: IBM Quietwriter Support in Windows

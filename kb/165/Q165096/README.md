@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165096: WD97: Cannot Record Macro to Set Options in Customize Dialog Box"
-permalink: kb/165/Q165096/
+permalink: /kb/165/Q165096/
 ---
 
 ## Q165096: WD97: Cannot Record Macro to Set Options in Customize Dialog Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176844: Bookshelf Setup Does Not Continue After Removing Older Version"
-permalink: kb/176/Q176844/
+permalink: /kb/176/Q176844/
 ---
 
 ## Q176844: Bookshelf Setup Does Not Continue After Removing Older Version

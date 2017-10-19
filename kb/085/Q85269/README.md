@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85269: Intensity Control May Cause Gray Images to Print as Black"
-permalink: kb/085/Q85269/
+permalink: /kb/085/Q85269/
 ---
 
 ## Q85269: Intensity Control May Cause Gray Images to Print as Black

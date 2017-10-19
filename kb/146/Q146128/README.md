@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146128: XADM: Cannot Disable Proxy Address Generators"
-permalink: kb/146/Q146128/
+permalink: /kb/146/Q146128/
 ---
 
 ## Q146128: XADM: Cannot Disable Proxy Address Generators

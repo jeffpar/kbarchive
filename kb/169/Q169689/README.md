@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169689: XADM: Store.exe May Access Violate While Replicating PFs"
-permalink: kb/169/Q169689/
+permalink: /kb/169/Q169689/
 ---
 
 ## Q169689: XADM: Store.exe May Access Violate While Replicating PFs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183270: XCON: X400 Address Replaces SMTP Address When Resending Message"
-permalink: kb/183/Q183270/
+permalink: /kb/183/Q183270/
 ---
 
 ## Q183270: XCON: X400 Address Replaces SMTP Address When Resending Message

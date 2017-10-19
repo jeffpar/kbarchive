@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158411: Deactivation of MSN-Only Access Phone Numbers"
-permalink: kb/158/Q158411/
+permalink: /kb/158/Q158411/
 ---
 
 ## Q158411: Deactivation of MSN-Only Access Phone Numbers

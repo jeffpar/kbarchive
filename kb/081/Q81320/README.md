@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81320: Mouse Problems with Windows on KLH and Premier Computers"
-permalink: kb/081/Q81320/
+permalink: /kb/081/Q81320/
 ---
 
 ## Q81320: Mouse Problems with Windows on KLH and Premier Computers

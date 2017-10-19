@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271846: Event 5170 Occurs If Backup Server Is Unavailable During Upgrade"
-permalink: kb/271/Q271846/
+permalink: /kb/271/Q271846/
 ---
 
 ## Q271846: Event 5170 Occurs If Backup Server Is Unavailable During Upgrade

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271955: STOP 0x4E, STOP 0x1A, STOP 0x50, and STOP 0xA Errors Occur When"
-permalink: kb/271/Q271955/
+permalink: /kb/271/Q271955/
 ---
 
 ## Q271955: STOP 0x4E, STOP 0x1A, STOP 0x50, and STOP 0xA Errors Occur When

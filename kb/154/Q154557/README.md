@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154557: Cache Icon Does Not Appear in DNS Manager"
-permalink: kb/154/Q154557/
+permalink: /kb/154/Q154557/
 ---
 
 ## Q154557: Cache Icon Does Not Appear in DNS Manager

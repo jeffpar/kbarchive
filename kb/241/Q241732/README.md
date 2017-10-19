@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241732: Error Message Is Displayed in Terminal Server Audit Log"
-permalink: kb/241/Q241732/
+permalink: /kb/241/Q241732/
 ---
 
 ## Q241732: Error Message Is Displayed in Terminal Server Audit Log

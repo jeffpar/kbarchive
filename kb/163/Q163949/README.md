@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163949: Workstation Using LMHosts Fails to Logon if DC Unavailable"
-permalink: kb/163/Q163949/
+permalink: /kb/163/Q163949/
 ---
 
 ## Q163949: Workstation Using LMHosts Fails to Logon if DC Unavailable

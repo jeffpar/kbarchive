@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89814: IBM Quietwriter III: Minimum Right Margin Is 1.679 Inches"
-permalink: kb/089/Q89814/
+permalink: /kb/089/Q89814/
 ---
 
 ## Q89814: IBM Quietwriter III: Minimum Right Margin Is 1.679 Inches

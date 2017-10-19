@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302723: If No Internet Connection Is Configured In MSN Explorer 6.1, App"
-permalink: kb/302/Q302723/
+permalink: /kb/302/Q302723/
 ---
 
 ## Q302723: If No Internet Connection Is Configured In MSN Explorer 6.1, App

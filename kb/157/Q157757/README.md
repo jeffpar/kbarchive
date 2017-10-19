@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157757: WD97: Background Color Won't Print"
-permalink: kb/157/Q157757/
+permalink: /kb/157/Q157757/
 ---
 
 ## Q157757: WD97: Background Color Won't Print

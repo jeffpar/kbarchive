@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241136: MprAdminConnectionGetInfo() Reports Wrong IP Address for Server"
-permalink: kb/241/Q241136/
+permalink: /kb/241/Q241136/
 ---
 
 ## Q241136: MprAdminConnectionGetInfo() Reports Wrong IP Address for Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140084: Permissions Error Creating an LPR Printer"
-permalink: kb/140/Q140084/
+permalink: /kb/140/Q140084/
 ---
 
 ## Q140084: Permissions Error Creating an LPR Printer

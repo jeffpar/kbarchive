@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85239: Windows 3.1 May Erroneously Offer the Tutorial as an Option"
-permalink: kb/085/Q85239/
+permalink: /kb/085/Q85239/
 ---
 
 ## Q85239: Windows 3.1 May Erroneously Offer the Tutorial as an Option

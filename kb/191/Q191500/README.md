@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191500: INFO: Where to Find the Wizard Applications' Source Files"
-permalink: kb/191/Q191500/
+permalink: /kb/191/Q191500/
 ---
 
 ## Q191500: INFO: Where to Find the Wizard Applications' Source Files

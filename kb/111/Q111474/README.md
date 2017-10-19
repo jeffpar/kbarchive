@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111474: PRB: Usage of an ORG Directive in a STRUCT Declaration"
-permalink: kb/111/Q111474/
+permalink: /kb/111/Q111474/
 ---
 
 ## Q111474: PRB: Usage of an ORG Directive in a STRUCT Declaration

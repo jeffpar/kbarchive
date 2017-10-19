@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164144: Perl Engine Does Not Allow Spaces in Directory or Script Name"
-permalink: kb/164/Q164144/
+permalink: /kb/164/Q164144/
 ---
 
 ## Q164144: Perl Engine Does Not Allow Spaces in Directory or Script Name

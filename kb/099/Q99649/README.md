@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99649: Amstrad Notebook Computer Hangs at &quot;Starting MS-DOS...&quot; Prompt"
-permalink: kb/099/Q99649/
+permalink: /kb/099/Q99649/
 ---
 
 ## Q99649: Amstrad Notebook Computer Hangs at &quot;Starting MS-DOS...&quot; Prompt

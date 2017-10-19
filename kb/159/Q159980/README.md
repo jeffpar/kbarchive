@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159980: Remote Link Doesn't Reconnect After Event 23 Outage 0x000A"
-permalink: kb/159/Q159980/
+permalink: /kb/159/Q159980/
 ---
 
 ## Q159980: Remote Link Doesn't Reconnect After Event 23 Outage 0x000A

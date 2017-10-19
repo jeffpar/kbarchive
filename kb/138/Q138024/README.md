@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138024: Problems Printing to NewGen Turbo PS Printers"
-permalink: kb/138/Q138024/
+permalink: /kb/138/Q138024/
 ---
 
 ## Q138024: Problems Printing to NewGen Turbo PS Printers

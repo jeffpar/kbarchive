@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168006: TN3270 Fails with Access Violation in ntdll!RtlFreeHeap"
-permalink: kb/168/Q168006/
+permalink: /kb/168/Q168006/
 ---
 
 ## Q168006: TN3270 Fails with Access Violation in ntdll!RtlFreeHeap

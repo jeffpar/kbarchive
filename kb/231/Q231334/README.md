@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231334: Err Msg: Unable to Connect to the Active Directory Service..."
-permalink: kb/231/Q231334/
+permalink: /kb/231/Q231334/
 ---
 
 ## Q231334: Err Msg: Unable to Connect to the Active Directory Service...

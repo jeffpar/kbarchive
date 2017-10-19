@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262211: XCON: How to Manually Flush MTA Distribution List Cache"
-permalink: kb/262/Q262211/
+permalink: /kb/262/Q262211/
 ---
 
 ## Q262211: XCON: How to Manually Flush MTA Distribution List Cache

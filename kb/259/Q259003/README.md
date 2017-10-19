@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259003: How and Why to Perform a Parallel Installation of Windows NT 4.0"
-permalink: kb/259/Q259003/
+permalink: /kb/259/Q259003/
 ---
 
 ## Q259003: How and Why to Perform a Parallel Installation of Windows NT 4.0

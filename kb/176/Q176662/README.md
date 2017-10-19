@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176662: Cannot View Tool Box, Color Box, or Thumbnail Tool in Paint"
-permalink: kb/176/Q176662/
+permalink: /kb/176/Q176662/
 ---
 
 ## Q176662: Cannot View Tool Box, Color Box, or Thumbnail Tool in Paint

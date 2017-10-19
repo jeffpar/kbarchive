@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175954: XADM: Restoring a Deleted Proxy Address Type"
-permalink: kb/175/Q175954/
+permalink: /kb/175/Q175954/
 ---
 
 ## Q175954: XADM: Restoring a Deleted Proxy Address Type

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151291: Top Articles on Windows 95 General Information"
-permalink: kb/151/Q151291/
+permalink: /kb/151/Q151291/
 ---
 
 ## Q151291: Top Articles on Windows 95 General Information

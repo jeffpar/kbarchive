@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232076: XFOR: Notes Connector AV when Address Is 256 Bytes Long"
-permalink: kb/232/Q232076/
+permalink: /kb/232/Q232076/
 ---
 
 ## Q232076: XFOR: Notes Connector AV when Address Is 256 Bytes Long

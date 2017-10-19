@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160590: XFOR: PCMTA: The Status Could Not Be Logged"
-permalink: kb/160/Q160590/
+permalink: /kb/160/Q160590/
 ---
 
 ## Q160590: XFOR: PCMTA: The Status Could Not Be Logged

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176182: XADM: Information Store Crash Due to Incorrect Caching"
-permalink: kb/176/Q176182/
+permalink: /kb/176/Q176182/
 ---
 
 ## Q176182: XADM: Information Store Crash Due to Incorrect Caching

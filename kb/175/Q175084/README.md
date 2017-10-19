@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175084: SAMPLE: PRTLGPCT.EXE: Print a Large Bitmap on Multiple Pages"
-permalink: kb/175/Q175084/
+permalink: /kb/175/Q175084/
 ---
 
 ## Q175084: SAMPLE: PRTLGPCT.EXE: Print a Large Bitmap on Multiple Pages

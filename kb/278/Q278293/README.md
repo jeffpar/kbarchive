@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278293: XADM: Dr. Watson Message on store!OMSG::EcMakeRTFFromBody"
-permalink: kb/278/Q278293/
+permalink: /kb/278/Q278293/
 ---
 
 ## Q278293: XADM: Dr. Watson Message on store!OMSG::EcMakeRTFFromBody

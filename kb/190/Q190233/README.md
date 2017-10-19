@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190233: Terminal Licensing Failed with the Specific Error 3221487623"
-permalink: kb/190/Q190233/
+permalink: /kb/190/Q190233/
 ---
 
 ## Q190233: Terminal Licensing Failed with the Specific Error 3221487623

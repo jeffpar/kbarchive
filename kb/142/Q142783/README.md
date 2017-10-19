@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142783: XCLN: Toolbar Buttons Require Mouse Click to Show Status"
-permalink: kb/142/Q142783/
+permalink: /kb/142/Q142783/
 ---
 
 ## Q142783: XCLN: Toolbar Buttons Require Mouse Click to Show Status

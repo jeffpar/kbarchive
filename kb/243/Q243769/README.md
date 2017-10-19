@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243769: XADM: Store.exe Crashes Converting TNEF Data"
-permalink: kb/243/Q243769/
+permalink: /kb/243/Q243769/
 ---
 
 ## Q243769: XADM: Store.exe Crashes Converting TNEF Data

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168810: WD97: Cannot Type in Floating Text Box with Protected Document"
-permalink: kb/168/Q168810/
+permalink: /kb/168/Q168810/
 ---
 
 ## Q168810: WD97: Cannot Type in Floating Text Box with Protected Document

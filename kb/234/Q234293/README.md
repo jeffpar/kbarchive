@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234293: XFOR: Setup Problems Upgrading GW/Notes/SNADS/PROFS Connectors"
-permalink: kb/234/Q234293/
+permalink: /kb/234/Q234293/
 ---
 
 ## Q234293: XFOR: Setup Problems Upgrading GW/Notes/SNADS/PROFS Connectors

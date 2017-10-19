@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274099: PRB: Page Size of Embedded Word File Changes When Edited"
-permalink: kb/274/Q274099/
+permalink: /kb/274/Q274099/
 ---
 
 ## Q274099: PRB: Page Size of Embedded Word File Changes When Edited

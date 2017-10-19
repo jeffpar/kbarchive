@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186818: RPC Server Unavailable When Joining a Domain with NETDOM"
-permalink: kb/186/Q186818/
+permalink: /kb/186/Q186818/
 ---
 
 ## Q186818: RPC Server Unavailable When Joining a Domain with NETDOM

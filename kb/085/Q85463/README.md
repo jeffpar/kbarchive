@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85463: GP Fault with Packaged WAV in Word for Windows"
-permalink: kb/085/Q85463/
+permalink: /kb/085/Q85463/
 ---
 
 ## Q85463: GP Fault with Packaged WAV in Word for Windows

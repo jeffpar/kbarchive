@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121208: SAMPLE: SNDPLAY Sample Plays a Sound File"
-permalink: kb/121/Q121208/
+permalink: /kb/121/Q121208/
 ---
 
 ## Q121208: SAMPLE: SNDPLAY Sample Plays a Sound File

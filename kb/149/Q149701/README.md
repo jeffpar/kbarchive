@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149701: DOCERR: Insert Method Does Not Exist for Columns Collection"
-permalink: kb/149/Q149701/
+permalink: /kb/149/Q149701/
 ---
 
 ## Q149701: DOCERR: Insert Method Does Not Exist for Columns Collection

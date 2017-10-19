@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179065: XADM: Changes to Primary Windows NT Account Do Not Take Effect"
-permalink: kb/179/Q179065/
+permalink: /kb/179/Q179065/
 ---
 
 ## Q179065: XADM: Changes to Primary Windows NT Account Do Not Take Effect

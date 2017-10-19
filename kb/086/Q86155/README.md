@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86155: PROFS: What to Do When Communication with LAN Ceases"
-permalink: kb/086/Q86155/
+permalink: /kb/086/Q86155/
 ---
 
 ## Q86155: PROFS: What to Do When Communication with LAN Ceases

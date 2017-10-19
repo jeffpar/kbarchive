@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193035: XFOR: Ability to Restrict Size of Headers Contained in Message"
-permalink: kb/193/Q193035/
+permalink: /kb/193/Q193035/
 ---
 
 ## Q193035: XFOR: Ability to Restrict Size of Headers Contained in Message

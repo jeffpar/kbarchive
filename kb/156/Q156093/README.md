@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156093: XADM: An Error Occurred While Processing an E-mail Address"
-permalink: kb/156/Q156093/
+permalink: /kb/156/Q156093/
 ---
 
 ## Q156093: XADM: An Error Occurred While Processing an E-mail Address

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185526: Golf 98: Computer Hangs at Random Intervals"
-permalink: kb/185/Q185526/
+permalink: /kb/185/Q185526/
 ---
 
 ## Q185526: Golf 98: Computer Hangs at Random Intervals

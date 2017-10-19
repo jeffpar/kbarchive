@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157454: PRB: Get Info Settings Not Reflected on Other WorkStations"
-permalink: kb/157/Q157454/
+permalink: /kb/157/Q157454/
 ---
 
 ## Q157454: PRB: Get Info Settings Not Reflected on Other WorkStations

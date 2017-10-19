@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163411: BUG: Class Based on Grid Does Not Maintain FontBold Property"
-permalink: kb/163/Q163411/
+permalink: /kb/163/Q163411/
 ---
 
 ## Q163411: BUG: Class Based on Grid Does Not Maintain FontBold Property

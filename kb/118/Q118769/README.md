@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118769: Norton Utilities NDOS Claims It Is Running Under Windows 3"
-permalink: kb/118/Q118769/
+permalink: /kb/118/Q118769/
 ---
 
 ## Q118769: Norton Utilities NDOS Claims It Is Running Under Windows 3

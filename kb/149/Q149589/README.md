@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149589: How to Ensure that Custom Icons Show Up in Windows 95 Explorer"
-permalink: kb/149/Q149589/
+permalink: /kb/149/Q149589/
 ---
 
 ## Q149589: How to Ensure that Custom Icons Show Up in Windows 95 Explorer

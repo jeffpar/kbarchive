@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161372: How to Enable SMB Signing in Windows NT"
-permalink: kb/161/Q161372/
+permalink: /kb/161/Q161372/
 ---
 
 ## Q161372: How to Enable SMB Signing in Windows NT

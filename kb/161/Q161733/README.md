@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161733: Err Msg: Unable to Locate NWAPI32.DLL with IntranetWare Client"
-permalink: kb/161/Q161733/
+permalink: /kb/161/Q161733/
 ---
 
 ## Q161733: Err Msg: Unable to Locate NWAPI32.DLL with IntranetWare Client

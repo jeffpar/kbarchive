@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179497: HOWTO: Select a Directory Without the Common Dialog Control"
-permalink: kb/179/Q179497/
+permalink: /kb/179/Q179497/
 ---
 
 ## Q179497: HOWTO: Select a Directory Without the Common Dialog Control

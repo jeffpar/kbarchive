@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131254: How to Manipulate DateTime Fields in a Grid"
-permalink: kb/131/Q131254/
+permalink: /kb/131/Q131254/
 ---
 
 ## Q131254: How to Manipulate DateTime Fields in a Grid

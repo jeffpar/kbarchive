@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194580: HOWTO: Print a Composite Image From a RichTextBox"
-permalink: kb/194/Q194580/
+permalink: /kb/194/Q194580/
 ---
 
 ## Q194580: HOWTO: Print a Composite Image From a RichTextBox

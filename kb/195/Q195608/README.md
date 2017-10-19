@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195608: WD97: How to Set Up Page with Set Number of Characters Per Line"
-permalink: kb/195/Q195608/
+permalink: /kb/195/Q195608/
 ---
 
 ## Q195608: WD97: How to Set Up Page with Set Number of Characters Per Line

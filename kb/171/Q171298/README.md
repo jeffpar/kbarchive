@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171298: SMS: Win95 Clients May Get a GPF Logging on to a NetWare Server"
-permalink: kb/171/Q171298/
+permalink: /kb/171/Q171298/
 ---
 
 ## Q171298: SMS: Win95 Clients May Get a GPF Logging on to a NetWare Server

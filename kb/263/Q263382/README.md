@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263382: SMS: Logical Disk Has Two Instances of Each Drive After Upgrade"
-permalink: kb/263/Q263382/
+permalink: /kb/263/Q263382/
 ---
 
 ## Q263382: SMS: Logical Disk Has Two Instances of Each Drive After Upgrade

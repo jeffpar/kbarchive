@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314271: SMS: Windows Explorer May Consume CPU Resources"
-permalink: kb/314/Q314271/
+permalink: /kb/314/Q314271/
 ---
 
 ## Q314271: SMS: Windows Explorer May Consume CPU Resources

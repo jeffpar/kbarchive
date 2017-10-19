@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156747: INFO: STL Sample for the reverse Function"
-permalink: kb/156/Q156747/
+permalink: /kb/156/Q156747/
 ---
 
 ## Q156747: INFO: STL Sample for the reverse Function

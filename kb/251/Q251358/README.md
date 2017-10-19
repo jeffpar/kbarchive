@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251358: Encarta 2000: Cannot Run the Exercise and Calories Interactivity"
-permalink: kb/251/Q251358/
+permalink: /kb/251/Q251358/
 ---
 
 ## Q251358: Encarta 2000: Cannot Run the Exercise and Calories Interactivity

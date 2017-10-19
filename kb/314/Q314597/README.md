@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314597: Streets &amp; Trips 2002: Msg About Office XP During Installation"
-permalink: kb/314/Q314597/
+permalink: /kb/314/Q314597/
 ---
 
 ## Q314597: Streets &amp; Trips 2002: Msg About Office XP During Installation

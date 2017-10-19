@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258556: HOWTO: Read a REG_SZ Value From the Registry"
-permalink: kb/258/Q258556/
+permalink: /kb/258/Q258556/
 ---
 
 ## Q258556: HOWTO: Read a REG_SZ Value From the Registry

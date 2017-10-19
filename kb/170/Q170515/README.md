@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170515: FIX: RTTI and Incremental Link Options Incorrectly Disabled"
-permalink: kb/170/Q170515/
+permalink: /kb/170/Q170515/
 ---
 
 ## Q170515: FIX: RTTI and Incremental Link Options Incorrectly Disabled

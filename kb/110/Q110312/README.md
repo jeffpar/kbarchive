@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110312: Full Screen Graphics and Viewer Startup Screen"
-permalink: kb/110/Q110312/
+permalink: /kb/110/Q110312/
 ---
 
 ## Q110312: Full Screen Graphics and Viewer Startup Screen

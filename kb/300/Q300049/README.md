@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300049: Passport User Ticket Data is Never Refreshed"
-permalink: kb/300/Q300049/
+permalink: /kb/300/Q300049/
 ---
 
 ## Q300049: Passport User Ticket Data is Never Refreshed

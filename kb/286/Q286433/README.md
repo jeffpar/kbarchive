@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286433: ASP Performance Monitor Counters Fail from Terminal Session"
-permalink: kb/286/Q286433/
+permalink: /kb/286/Q286433/
 ---
 
 ## Q286433: ASP Performance Monitor Counters Fail from Terminal Session

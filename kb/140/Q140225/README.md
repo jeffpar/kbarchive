@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140225: PRB: Error &quot;File Does Not Exist&quot; When Appending from a Cursor"
-permalink: kb/140/Q140225/
+permalink: /kb/140/Q140225/
 ---
 
 ## Q140225: PRB: Error &quot;File Does Not Exist&quot; When Appending from a Cursor

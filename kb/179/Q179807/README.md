@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179807: Prompted to Install Printer During Msbatch.inf Setup"
-permalink: kb/179/Q179807/
+permalink: /kb/179/Q179807/
 ---
 
 ## Q179807: Prompted to Install Printer During Msbatch.inf Setup

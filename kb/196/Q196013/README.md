@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196013: Virtual Globe 99: Video Continues to Play After You Press CTRL+S"
-permalink: kb/196/Q196013/
+permalink: /kb/196/Q196013/
 ---
 
 ## Q196013: Virtual Globe 99: Video Continues to Play After You Press CTRL+S

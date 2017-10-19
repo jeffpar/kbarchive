@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184539: SMS: PGC Shows Long Delay Before Completing Normal Process Cycle"
-permalink: kb/184/Q184539/
+permalink: /kb/184/Q184539/
 ---
 
 ## Q184539: SMS: PGC Shows Long Delay Before Completing Normal Process Cycle

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q205405: WD97: Undo or Redo Button on Menu Bar May Cause Stack Fault"
-permalink: kb/205/Q205405/
+permalink: /kb/205/Q205405/
 ---
 
 ## Q205405: WD97: Undo or Redo Button on Menu Bar May Cause Stack Fault

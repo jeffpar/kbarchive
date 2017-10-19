@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221200: AddPrinter() API Call Allows Invalid Data Type"
-permalink: kb/221/Q221200/
+permalink: /kb/221/Q221200/
 ---
 
 ## Q221200: AddPrinter() API Call Allows Invalid Data Type

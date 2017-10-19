@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193023: EVG99: Cannot Distinguish Between Features Shown in Map Legend"
-permalink: kb/193/Q193023/
+permalink: /kb/193/Q193023/
 ---
 
 ## Q193023: EVG99: Cannot Distinguish Between Features Shown in Map Legend

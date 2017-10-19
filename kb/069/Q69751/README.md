@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69751: How to Make a Library File a Dependent of the Target in PWB"
-permalink: kb/069/Q69751/
+permalink: /kb/069/Q69751/
 ---
 
 ## Q69751: How to Make a Library File a Dependent of the Target in PWB

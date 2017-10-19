@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169257: INFO: Actions That Perform an Implicit GET"
-permalink: kb/169/Q169257/
+permalink: /kb/169/Q169257/
 ---
 
 ## Q169257: INFO: Actions That Perform an Implicit GET

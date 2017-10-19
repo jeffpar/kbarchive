@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155528: HOWTO: Set Up an Offline View in Visual FoxPro 5.0"
-permalink: kb/155/Q155528/
+permalink: /kb/155/Q155528/
 ---
 
 ## Q155528: HOWTO: Set Up an Offline View in Visual FoxPro 5.0

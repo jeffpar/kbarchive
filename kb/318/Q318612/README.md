@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318612: How to Associate TN3270 Display LUs with TN3270 Printer LUs"
-permalink: kb/318/Q318612/
+permalink: /kb/318/Q318612/
 ---
 
 ## Q318612: How to Associate TN3270 Display LUs with TN3270 Printer LUs

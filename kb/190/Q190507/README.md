@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190507: BUG: No Incompatibility Error When Interface Changes"
-permalink: kb/190/Q190507/
+permalink: /kb/190/Q190507/
 ---
 
 ## Q190507: BUG: No Incompatibility Error When Interface Changes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161965: FP: Java Applet Doesn't Function if Class File Is Moved"
-permalink: kb/161/Q161965/
+permalink: /kb/161/Q161965/
 ---
 
 ## Q161965: FP: Java Applet Doesn't Function if Class File Is Moved

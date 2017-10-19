@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137683: Duplicate .fon Files Installed During Setup"
-permalink: kb/137/Q137683/
+permalink: /kb/137/Q137683/
 ---
 
 ## Q137683: Duplicate .fon Files Installed During Setup

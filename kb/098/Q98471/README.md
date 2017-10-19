@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98471: No Continue Button from Practice Range in Golf"
-permalink: kb/098/Q98471/
+permalink: /kb/098/Q98471/
 ---
 
 ## Q98471: No Continue Button from Practice Range in Golf

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196836: PRB: MFC Socket Functions Fail from ExitInstance"
-permalink: kb/196/Q196836/
+permalink: /kb/196/Q196836/
 ---
 
 ## Q196836: PRB: MFC Socket Functions Fail from ExitInstance

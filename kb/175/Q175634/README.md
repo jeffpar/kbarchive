@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175634: XWEB: Text in Subject Line Removed when Replying or Forwarding"
-permalink: kb/175/Q175634/
+permalink: /kb/175/Q175634/
 ---
 
 ## Q175634: XWEB: Text in Subject Line Removed when Replying or Forwarding

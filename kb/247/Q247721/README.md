@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247721: Fighter Ace II: Black Lines Appear Around Ground Textures"
-permalink: kb/247/Q247721/
+permalink: /kb/247/Q247721/
 ---
 
 ## Q247721: Fighter Ace II: Black Lines Appear Around Ground Textures

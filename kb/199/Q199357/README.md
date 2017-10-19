@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199357: SMS: Common Issues and Resolutions for Crystal Info Reports"
-permalink: kb/199/Q199357/
+permalink: /kb/199/Q199357/
 ---
 
 ## Q199357: SMS: Common Issues and Resolutions for Crystal Info Reports

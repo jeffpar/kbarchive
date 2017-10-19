@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121388: Controlling LM and NT Logon Script Configurations with SMS"
-permalink: kb/121/Q121388/
+permalink: /kb/121/Q121388/
 ---
 
 ## Q121388: Controlling LM and NT Logon Script Configurations with SMS

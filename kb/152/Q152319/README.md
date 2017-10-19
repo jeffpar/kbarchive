@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152319: FIX: ReadString Gives Wrong Result Reading Long Strings"
-permalink: kb/152/Q152319/
+permalink: /kb/152/Q152319/
 ---
 
 ## Q152319: FIX: ReadString Gives Wrong Result Reading Long Strings

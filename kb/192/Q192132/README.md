@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192132: STA Threads Lose Thread Token"
-permalink: kb/192/Q192132/
+permalink: /kb/192/Q192132/
 ---
 
 ## Q192132: STA Threads Lose Thread Token

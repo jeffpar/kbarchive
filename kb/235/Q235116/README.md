@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235116: XCLN: The Message Interface Has Returned an Unknown Error"
-permalink: kb/235/Q235116/
+permalink: /kb/235/Q235116/
 ---
 
 ## Q235116: XCLN: The Message Interface Has Returned an Unknown Error

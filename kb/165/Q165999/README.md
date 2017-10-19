@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165999: X.25 &quot;Delay After Failure&quot; Dialog Box Has Illegal Values"
-permalink: kb/165/Q165999/
+permalink: /kb/165/Q165999/
 ---
 
 ## Q165999: X.25 &quot;Delay After Failure&quot; Dialog Box Has Illegal Values

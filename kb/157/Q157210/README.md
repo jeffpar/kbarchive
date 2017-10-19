@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157210: XCLN: Invalid Procedure Call from Mefbrows.exe"
-permalink: kb/157/Q157210/
+permalink: /kb/157/Q157210/
 ---
 
 ## Q157210: XCLN: Invalid Procedure Call from Mefbrows.exe

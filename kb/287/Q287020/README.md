@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287020: Clear Screen Saver Does Not Work On Multi-Monitor Workstations"
-permalink: kb/287/Q287020/
+permalink: /kb/287/Q287020/
 ---
 
 ## Q287020: Clear Screen Saver Does Not Work On Multi-Monitor Workstations

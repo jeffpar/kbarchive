@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173657: XCLN: Outlook Auto Upgrade Fails to Start"
-permalink: kb/173/Q173657/
+permalink: /kb/173/Q173657/
 ---
 
 ## Q173657: XCLN: Outlook Auto Upgrade Fails to Start

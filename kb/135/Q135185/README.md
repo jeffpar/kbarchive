@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135185: Cannot View NetWare Server Files with Arcada Backup Exec 3.58"
-permalink: kb/135/Q135185/
+permalink: /kb/135/Q135185/
 ---
 
 ## Q135185: Cannot View NetWare Server Files with Arcada Backup Exec 3.58

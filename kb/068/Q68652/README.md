@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68652: Printing to Windows LPT1.OS2 or LPT1.DOS Port"
-permalink: kb/068/Q68652/
+permalink: /kb/068/Q68652/
 ---
 
 ## Q68652: Printing to Windows LPT1.OS2 or LPT1.DOS Port

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235637: SMS: Remote Control Agent Is Uninstalled on Windows NT Clients"
-permalink: kb/235/Q235637/
+permalink: /kb/235/Q235637/
 ---
 
 ## Q235637: SMS: Remote Control Agent Is Uninstalled on Windows NT Clients

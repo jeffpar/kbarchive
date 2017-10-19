@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89562: SAMPLE: BttnCur.exe Contains Buttons and Cursors Doc and Sample"
-permalink: kb/089/Q89562/
+permalink: /kb/089/Q89562/
 ---
 
 ## Q89562: SAMPLE: BttnCur.exe Contains Buttons and Cursors Doc and Sample

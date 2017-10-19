@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129169: PRB: Excel Chart Wizard Crashes When Accessed from a Form"
-permalink: kb/129/Q129169/
+permalink: /kb/129/Q129169/
 ---
 
 ## Q129169: PRB: Excel Chart Wizard Crashes When Accessed from a Form

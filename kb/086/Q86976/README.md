@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86976: X400: Choosing Postoffice Mapping"
-permalink: kb/086/Q86976/
+permalink: /kb/086/Q86976/
 ---
 
 ## Q86976: X400: Choosing Postoffice Mapping

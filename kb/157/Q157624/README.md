@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157624: Error Recording Opening Template with WordBasic Macro"
-permalink: kb/157/Q157624/
+permalink: /kb/157/Q157624/
 ---
 
 ## Q157624: Error Recording Opening Template with WordBasic Macro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185576: XFOR: Incorrect Help For Internet Mail Service Sub Dialog Box"
-permalink: kb/185/Q185576/
+permalink: /kb/185/Q185576/
 ---
 
 ## Q185576: XFOR: Incorrect Help For Internet Mail Service Sub Dialog Box

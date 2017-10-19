@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93915: INFO: MFC Application Idle Processing and Power Consumption"
-permalink: kb/093/Q93915/
+permalink: /kb/093/Q93915/
 ---
 
 ## Q93915: INFO: MFC Application Idle Processing and Power Consumption

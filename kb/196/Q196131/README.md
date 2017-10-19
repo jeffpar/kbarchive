@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196131: BUG: Dynamic Private UserControl Extender Events Do Not Show"
-permalink: kb/196/Q196131/
+permalink: /kb/196/Q196131/
 ---
 
 ## Q196131: BUG: Dynamic Private UserControl Extender Events Do Not Show

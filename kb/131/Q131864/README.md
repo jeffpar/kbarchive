@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131864: Mail Err Msg: The Postoffice is Already Being Managed By..."
-permalink: kb/131/Q131864/
+permalink: /kb/131/Q131864/
 ---
 
 ## Q131864: Mail Err Msg: The Postoffice is Already Being Managed By...

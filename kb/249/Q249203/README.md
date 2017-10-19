@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249203: Site Attachment Fails or Causes Damaged Data at the Parent Site"
-permalink: kb/249/Q249203/
+permalink: /kb/249/Q249203/
 ---
 
 ## Q249203: Site Attachment Fails or Causes Damaged Data at the Parent Site

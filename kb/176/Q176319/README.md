@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176319: Docfile Standard Marshalling Returns 0x800706f4"
-permalink: kb/176/Q176319/
+permalink: /kb/176/Q176319/
 ---
 
 ## Q176319: Docfile Standard Marshalling Returns 0x800706f4

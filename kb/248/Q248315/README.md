@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248315: PRB: Memo Fields No Longer Stretch with Overflow"
-permalink: kb/248/Q248315/
+permalink: /kb/248/Q248315/
 ---
 
 ## Q248315: PRB: Memo Fields No Longer Stretch with Overflow

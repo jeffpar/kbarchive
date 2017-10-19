@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139171: Compaq System Hangs with Incomplete IRP Running Cpqarray"
-permalink: kb/139/Q139171/
+permalink: /kb/139/Q139171/
 ---
 
 ## Q139171: Compaq System Hangs with Incomplete IRP Running Cpqarray

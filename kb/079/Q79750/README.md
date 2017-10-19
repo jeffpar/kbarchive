@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79750: WD97: Using Bookmarks in a Table of Contents"
-permalink: kb/079/Q79750/
+permalink: /kb/079/Q79750/
 ---
 
 ## Q79750: WD97: Using Bookmarks in a Table of Contents

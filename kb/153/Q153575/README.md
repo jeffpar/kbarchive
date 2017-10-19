@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153575: PGC Prompts Twice When You Cancel a Change in NetWare Clients"
-permalink: kb/153/Q153575/
+permalink: /kb/153/Q153575/
 ---
 
 ## Q153575: PGC Prompts Twice When You Cancel a Change in NetWare Clients

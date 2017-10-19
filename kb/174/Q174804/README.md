@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174804: Whitepaper: Creating Highly-Scalable Server-Side Components"
-permalink: kb/174/Q174804/
+permalink: /kb/174/Q174804/
 ---
 
 ## Q174804: Whitepaper: Creating Highly-Scalable Server-Side Components

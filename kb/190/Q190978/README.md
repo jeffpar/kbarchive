@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190978: PRB: Missing Dependency Information Dialog in PDW"
-permalink: kb/190/Q190978/
+permalink: /kb/190/Q190978/
 ---
 
 ## Q190978: PRB: Missing Dependency Information Dialog in PDW

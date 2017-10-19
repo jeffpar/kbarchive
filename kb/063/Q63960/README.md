@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63960: Enabling the Windows 3.0 PostScript Error Handler"
-permalink: kb/063/Q63960/
+permalink: /kb/063/Q63960/
 ---
 
 ## Q63960: Enabling the Windows 3.0 PostScript Error Handler

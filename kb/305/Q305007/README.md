@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305007: XCON: You Cannot Send SMTP Mail Through a Firewall"
-permalink: kb/305/Q305007/
+permalink: /kb/305/Q305007/
 ---
 
 ## Q305007: XCON: You Cannot Send SMTP Mail Through a Firewall

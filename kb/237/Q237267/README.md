@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237267: Encarta 2000: Cannot Start Program After Upgrade to Windows 2000"
-permalink: kb/237/Q237267/
+permalink: /kb/237/Q237267/
 ---
 
 ## Q237267: Encarta 2000: Cannot Start Program After Upgrade to Windows 2000

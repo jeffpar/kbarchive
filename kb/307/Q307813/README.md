@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307813: SMS: Systems Management Server and Storage Area Network"
-permalink: kb/307/Q307813/
+permalink: /kb/307/Q307813/
 ---
 
 ## Q307813: SMS: Systems Management Server and Storage Area Network

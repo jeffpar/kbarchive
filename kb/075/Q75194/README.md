@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75194: Zoom In Feature Disabled After Minimizing PaintBrush"
-permalink: kb/075/Q75194/
+permalink: /kb/075/Q75194/
 ---
 
 ## Q75194: Zoom In Feature Disabled After Minimizing PaintBrush

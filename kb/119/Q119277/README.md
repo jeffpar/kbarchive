@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119277: Err Msg: &quot;Access denied&quot; Running MS-Mail SMTP Gateway in VDM"
-permalink: kb/119/Q119277/
+permalink: /kb/119/Q119277/
 ---
 
 ## Q119277: Err Msg: &quot;Access denied&quot; Running MS-Mail SMTP Gateway in VDM

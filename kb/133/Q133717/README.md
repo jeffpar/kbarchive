@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133717: Windows 95/98: How to Find a File"
-permalink: kb/133/Q133717/
+permalink: /kb/133/Q133717/
 ---
 
 ## Q133717: Windows 95/98: How to Find a File

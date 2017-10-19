@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200946: SMS: How to Check RC Status on 32-bit Client Computers"
-permalink: kb/200/Q200946/
+permalink: /kb/200/Q200946/
 ---
 
 ## Q200946: SMS: How to Check RC Status on 32-bit Client Computers

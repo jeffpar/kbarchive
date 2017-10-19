@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165802: WD97: Run-Time Error Setting Borders.InsideLineWidth"
-permalink: kb/165/Q165802/
+permalink: /kb/165/Q165802/
 ---
 
 ## Q165802: WD97: Run-Time Error Setting Borders.InsideLineWidth

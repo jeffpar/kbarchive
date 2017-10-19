@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109861: Flight Simulator: Runway at Half Moon Bay Is Not Solid"
-permalink: kb/109/Q109861/
+permalink: /kb/109/Q109861/
 ---
 
 ## Q109861: Flight Simulator: Runway at Half Moon Bay Is Not Solid

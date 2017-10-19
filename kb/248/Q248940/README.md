@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248940: Error on the Microsoft Year 2000 Resource CD-ROM Cover"
-permalink: kb/248/Q248940/
+permalink: /kb/248/Q248940/
 ---
 
 ## Q248940: Error on the Microsoft Year 2000 Resource CD-ROM Cover

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195015: Option Pack Installation Conflicts with Service Pack 4"
-permalink: kb/195/Q195015/
+permalink: /kb/195/Q195015/
 ---
 
 ## Q195015: Option Pack Installation Conflicts with Service Pack 4

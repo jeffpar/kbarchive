@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65078: Using the Texas Instruments TI 865 with Windows 3.0"
-permalink: kb/065/Q65078/
+permalink: /kb/065/Q65078/
 ---
 
 ## Q65078: Using the Texas Instruments TI 865 with Windows 3.0

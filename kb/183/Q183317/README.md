@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183317: Download File List for Unimodem V (Unimodv.exe)"
-permalink: kb/183/Q183317/
+permalink: /kb/183/Q183317/
 ---
 
 ## Q183317: Download File List for Unimodem V (Unimodv.exe)

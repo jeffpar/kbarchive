@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156399: XADM: JET Asserts on Heavily Used Multivalued Columns in the DS"
-permalink: kb/156/Q156399/
+permalink: /kb/156/Q156399/
 ---
 
 ## Q156399: XADM: JET Asserts on Heavily Used Multivalued Columns in the DS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234511: FIX: VC++ 6.0 Compiler Does Not Remove Unneeded Instructions"
-permalink: kb/234/Q234511/
+permalink: /kb/234/Q234511/
 ---
 
 ## Q234511: FIX: VC++ 6.0 Compiler Does Not Remove Unneeded Instructions

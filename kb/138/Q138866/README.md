@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138866: HOWTO: How to Set Default Values for Stock Properties in OLE Con"
-permalink: kb/138/Q138866/
+permalink: /kb/138/Q138866/
 ---
 
 ## Q138866: HOWTO: How to Set Default Values for Stock Properties in OLE Con

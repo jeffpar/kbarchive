@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172142: Event ID 4129 May Appear When Using Compaq Insight Manager"
-permalink: kb/172/Q172142/
+permalink: /kb/172/Q172142/
 ---
 
 ## Q172142: Event ID 4129 May Appear When Using Compaq Insight Manager

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223450: TCP Initial Retransmission Timer Adjustment Added to Windows NT"
-permalink: kb/223/Q223450/
+permalink: /kb/223/Q223450/
 ---
 
 ## Q223450: TCP Initial Retransmission Timer Adjustment Added to Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118472: PRB: SelectClipRgn() Cannot Grow Clip Region in WM_PAINT"
-permalink: kb/118/Q118472/
+permalink: /kb/118/Q118472/
 ---
 
 ## Q118472: PRB: SelectClipRgn() Cannot Grow Clip Region in WM_PAINT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173250: Cannot Read Help Files Due To Missing Winhlp32.exe"
-permalink: kb/173/Q173250/
+permalink: /kb/173/Q173250/
 ---
 
 ## Q173250: Cannot Read Help Files Due To Missing Winhlp32.exe

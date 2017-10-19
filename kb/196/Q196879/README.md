@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196879: WD97: Ampersand in File Name Not Included When Added to Menu"
-permalink: kb/196/Q196879/
+permalink: /kb/196/Q196879/
 ---
 
 ## Q196879: WD97: Ampersand in File Name Not Included When Added to Menu

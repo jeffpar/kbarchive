@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175101: XADM: Long Site and Organization Names Cause Setup Problems"
-permalink: kb/175/Q175101/
+permalink: /kb/175/Q175101/
 ---
 
 ## Q175101: XADM: Long Site and Organization Names Cause Setup Problems

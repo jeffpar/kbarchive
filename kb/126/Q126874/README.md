@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126874: PRB: Modal Dialog Box Prevents Calls to PreTranslateMessage"
-permalink: kb/126/Q126874/
+permalink: /kb/126/Q126874/
 ---
 
 ## Q126874: PRB: Modal Dialog Box Prevents Calls to PreTranslateMessage

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166680: PRB: Read-Only Visual SourceSafe User Can Modify Web Projects"
-permalink: kb/166/Q166680/
+permalink: /kb/166/Q166680/
 ---
 
 ## Q166680: PRB: Read-Only Visual SourceSafe User Can Modify Web Projects

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171590: Fatal Error 127 during Windows NT Upgrade"
-permalink: kb/171/Q171590/
+permalink: /kb/171/Q171590/
 ---
 
 ## Q171590: Fatal Error 127 during Windows NT Upgrade

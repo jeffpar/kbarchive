@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103414: Windows Err Msg: Error: W311US - Setup Failed!"
-permalink: kb/103/Q103414/
+permalink: /kb/103/Q103414/
 ---
 
 ## Q103414: Windows Err Msg: Error: W311US - Setup Failed!

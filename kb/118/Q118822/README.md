@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118822: Novell NetWare Utilities That Do Not Work with Windows 95"
-permalink: kb/118/Q118822/
+permalink: /kb/118/Q118822/
 ---
 
 ## Q118822: Novell NetWare Utilities That Do Not Work with Windows 95

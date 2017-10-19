@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86380: PC WSPlus: Problem Sending Mail Does Not Update Appointment"
-permalink: kb/086/Q86380/
+permalink: /kb/086/Q86380/
 ---
 
 ## Q86380: PC WSPlus: Problem Sending Mail Does Not Update Appointment

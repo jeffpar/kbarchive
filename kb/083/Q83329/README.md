@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83329: GP Faults when Printing over Banyan Vines 4.11"
-permalink: kb/083/Q83329/
+permalink: /kb/083/Q83329/
 ---
 
 ## Q83329: GP Faults when Printing over Banyan Vines 4.11

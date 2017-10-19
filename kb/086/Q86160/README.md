@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86160: PROFS: How to Increase Virtual Storage and Disk Space"
-permalink: kb/086/Q86160/
+permalink: /kb/086/Q86160/
 ---
 
 ## Q86160: PROFS: How to Increase Virtual Storage and Disk Space

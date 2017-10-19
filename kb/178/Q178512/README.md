@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178512: FIX: C1001 in Third-Party STL Code Using Visual Studio 97 SP3"
-permalink: kb/178/Q178512/
+permalink: /kb/178/Q178512/
 ---
 
 ## Q178512: FIX: C1001 in Third-Party STL Code Using Visual Studio 97 SP3

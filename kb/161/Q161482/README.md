@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161482: XCON: A Directory Name Object Allocation Command Failed"
-permalink: kb/161/Q161482/
+permalink: /kb/161/Q161482/
 ---
 
 ## Q161482: XCON: A Directory Name Object Allocation Command Failed

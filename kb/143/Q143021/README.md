@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143021: PPT7: Error Saving Presentation as PowerPoint 4.0 File"
-permalink: kb/143/Q143021/
+permalink: /kb/143/Q143021/
 ---
 
 ## Q143021: PPT7: Error Saving Presentation as PowerPoint 4.0 File

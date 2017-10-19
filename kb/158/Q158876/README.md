@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158876: Msbatch.inf Parameters: Remove the Welcome To Windows Box"
-permalink: kb/158/Q158876/
+permalink: /kb/158/Q158876/
 ---
 
 ## Q158876: Msbatch.inf Parameters: Remove the Welcome To Windows Box

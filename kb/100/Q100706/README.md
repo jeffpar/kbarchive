@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100706: SMTP: Err Msg: Read: (52) Network Dropped Connection or Reset"
-permalink: kb/100/Q100706/
+permalink: /kb/100/Q100706/
 ---
 
 ## Q100706: SMTP: Err Msg: Read: (52) Network Dropped Connection or Reset

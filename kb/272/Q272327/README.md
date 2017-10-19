@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272327: Cluster Admin Stops Responding When Renaming File Share Name"
-permalink: kb/272/Q272327/
+permalink: /kb/272/Q272327/
 ---
 
 ## Q272327: Cluster Admin Stops Responding When Renaming File Share Name

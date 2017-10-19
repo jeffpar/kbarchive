@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86290: Microsoft Windows 3.1 &amp; MS-DOS 5 Upgrade"
-permalink: kb/086/Q86290/
+permalink: /kb/086/Q86290/
 ---
 
 ## Q86290: Microsoft Windows 3.1 &amp; MS-DOS 5 Upgrade

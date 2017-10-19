@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103200: Archive 2800 Supported Media"
-permalink: kb/103/Q103200/
+permalink: /kb/103/Q103200/
 ---
 
 ## Q103200: Archive 2800 Supported Media

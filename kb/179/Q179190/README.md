@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179190: NWRDR May Send Excessive GetNearestServer Requests"
-permalink: kb/179/Q179190/
+permalink: /kb/179/Q179190/
 ---
 
 ## Q179190: NWRDR May Send Excessive GetNearestServer Requests

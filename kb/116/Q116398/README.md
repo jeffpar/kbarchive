@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116398: Removing LaserTools PrintCache from Windows"
-permalink: kb/116/Q116398/
+permalink: /kb/116/Q116398/
 ---
 
 ## Q116398: Removing LaserTools PrintCache from Windows

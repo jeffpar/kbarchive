@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158620: STL Sample for the vector::(push_back, pop_back) Functions"
-permalink: kb/158/Q158620/
+permalink: /kb/158/Q158620/
 ---
 
 ## Q158620: STL Sample for the vector::(push_back, pop_back) Functions

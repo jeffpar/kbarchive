@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187140: Client Num Lock Key Is Not Turned On by Keybd_event Function"
-permalink: kb/187/Q187140/
+permalink: /kb/187/Q187140/
 ---
 
 ## Q187140: Client Num Lock Key Is Not Turned On by Keybd_event Function

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304135: Double-Byte Field Name is Improperly Encoded When Using UTF-8"
-permalink: kb/304/Q304135/
+permalink: /kb/304/Q304135/
 ---
 
 ## Q304135: Double-Byte Field Name is Improperly Encoded When Using UTF-8

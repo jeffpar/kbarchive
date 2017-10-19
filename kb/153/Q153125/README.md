@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153125: BUG: Printer Object Font Information is Lost After Printing"
-permalink: kb/153/Q153125/
+permalink: /kb/153/Q153125/
 ---
 
 ## Q153125: BUG: Printer Object Font Information is Lost After Printing

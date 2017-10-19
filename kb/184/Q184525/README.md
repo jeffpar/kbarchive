@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184525: HOWTO: Use API Functions to Set and Check File Attributes"
-permalink: kb/184/Q184525/
+permalink: /kb/184/Q184525/
 ---
 
 ## Q184525: HOWTO: Use API Functions to Set and Check File Attributes

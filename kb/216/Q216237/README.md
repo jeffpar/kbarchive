@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216237: Cluster Server Won't Start If Cluster Log Directory Not Created"
-permalink: kb/216/Q216237/
+permalink: /kb/216/Q216237/
 ---
 
 ## Q216237: Cluster Server Won't Start If Cluster Log Directory Not Created

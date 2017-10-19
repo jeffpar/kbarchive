@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116049: Baseball: Abnormal Program Termination Error on Startup"
-permalink: kb/116/Q116049/
+permalink: /kb/116/Q116049/
 ---
 
 ## Q116049: Baseball: Abnormal Program Termination Error on Startup

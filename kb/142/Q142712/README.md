@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142712: Definition of Time Field in IIS Log File"
-permalink: kb/142/Q142712/
+permalink: /kb/142/Q142712/
 ---
 
 ## Q142712: Definition of Time Field in IIS Log File

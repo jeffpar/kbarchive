@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108742: Documentation Errors in RAS Manuals"
-permalink: kb/108/Q108742/
+permalink: /kb/108/Q108742/
 ---
 
 ## Q108742: Documentation Errors in RAS Manuals

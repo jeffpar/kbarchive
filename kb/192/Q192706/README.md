@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192706: WD97: Year 2000 Date Parsing Improvements in SR-2"
-permalink: kb/192/Q192706/
+permalink: /kb/192/Q192706/
 ---
 
 ## Q192706: WD97: Year 2000 Date Parsing Improvements in SR-2

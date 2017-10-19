@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186336: INFO: Unattend.txt Options That Are Used During an Unattended Up"
-permalink: kb/186/Q186336/
+permalink: /kb/186/Q186336/
 ---
 
 ## Q186336: INFO: Unattend.txt Options That Are Used During an Unattended Up

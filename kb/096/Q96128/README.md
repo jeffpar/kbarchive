@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96128: How Setup, MemMaker, and DoubleSpace Find Windows"
-permalink: kb/096/Q96128/
+permalink: /kb/096/Q96128/
 ---
 
 ## Q96128: How Setup, MemMaker, and DoubleSpace Find Windows

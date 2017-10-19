@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243707: MapPoint Err Msg: Failed to Open Default Map Templates..."
-permalink: kb/243/Q243707/
+permalink: /kb/243/Q243707/
 ---
 
 ## Q243707: MapPoint Err Msg: Failed to Open Default Map Templates...

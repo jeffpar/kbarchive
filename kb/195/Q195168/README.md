@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195168: SNACFG Doesn't Output Complete Data for the ADDPARTNER Option"
-permalink: kb/195/Q195168/
+permalink: /kb/195/Q195168/
 ---
 
 ## Q195168: SNACFG Doesn't Output Complete Data for the ADDPARTNER Option

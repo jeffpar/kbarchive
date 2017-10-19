@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146209: XCLN: Printing Excel Attachments Requires User Input"
-permalink: kb/146/Q146209/
+permalink: /kb/146/Q146209/
 ---
 
 ## Q146209: XCLN: Printing Excel Attachments Requires User Input

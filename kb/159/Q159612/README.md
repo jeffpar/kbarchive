@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159612: WD: Creating a Password-Style Macro Dialog Text Box"
-permalink: kb/159/Q159612/
+permalink: /kb/159/Q159612/
 ---
 
 ## Q159612: WD: Creating a Password-Style Macro Dialog Text Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125514: TCP/IP-32 Client Cannot Obtain DHCP Lease"
-permalink: kb/125/Q125514/
+permalink: /kb/125/Q125514/
 ---
 
 ## Q125514: TCP/IP-32 Client Cannot Obtain DHCP Lease

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141446: HOWTO: Download &quot;Mastering&quot; KB Articles from the Internet"
-permalink: kb/141/Q141446/
+permalink: /kb/141/Q141446/
 ---
 
 ## Q141446: HOWTO: Download &quot;Mastering&quot; KB Articles from the Internet

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240938: Access Violation in Lsass.exe on Domain Controllers"
-permalink: kb/240/Q240938/
+permalink: /kb/240/Q240938/
 ---
 
 ## Q240938: Access Violation in Lsass.exe on Domain Controllers

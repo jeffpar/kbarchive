@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97875: Support for Locking at Byte, Field, Record and File Level"
-permalink: kb/097/Q97875/
+permalink: /kb/097/Q97875/
 ---
 
 ## Q97875: Support for Locking at Byte, Field, Record and File Level

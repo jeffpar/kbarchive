@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168053: HOWTO: Use VFP Automation Servers with Active Server Pages"
-permalink: kb/168/Q168053/
+permalink: /kb/168/Q168053/
 ---
 
 ## Q168053: HOWTO: Use VFP Automation Servers with Active Server Pages

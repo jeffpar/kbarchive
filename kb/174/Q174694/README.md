@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174694: XFOR: OV/VM Connector &quot;Waiting for NJE Signon&quot; After BIND"
-permalink: kb/174/Q174694/
+permalink: /kb/174/Q174694/
 ---
 
 ## Q174694: XFOR: OV/VM Connector &quot;Waiting for NJE Signon&quot; After BIND

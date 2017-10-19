@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102734: PRB: GET Objects w/ MS Sans Serif Font Look Strange in Win 3.0"
-permalink: kb/102/Q102734/
+permalink: /kb/102/Q102734/
 ---
 
 ## Q102734: PRB: GET Objects w/ MS Sans Serif Font Look Strange in Win 3.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129797: HOWTO: Launch a Win32 Application from Visual Basic"
-permalink: kb/129/Q129797/
+permalink: /kb/129/Q129797/
 ---
 
 ## Q129797: HOWTO: Launch a Win32 Application from Visual Basic

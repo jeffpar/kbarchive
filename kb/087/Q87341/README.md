@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87341: DOC: Do Not Use MB_NOFOCUS Flag with MessageBox Function"
-permalink: kb/087/Q87341/
+permalink: /kb/087/Q87341/
 ---
 
 ## Q87341: DOC: Do Not Use MB_NOFOCUS Flag with MessageBox Function

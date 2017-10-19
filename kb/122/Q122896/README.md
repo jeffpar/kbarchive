@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122896: MSB Human: How to Change Installation Directory"
-permalink: kb/122/Q122896/
+permalink: /kb/122/Q122896/
 ---
 
 ## Q122896: MSB Human: How to Change Installation Directory

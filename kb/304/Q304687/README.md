@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304687: HOWTO: SSAFE: Select Nondefault Database Location"
-permalink: kb/304/Q304687/
+permalink: /kb/304/Q304687/
 ---
 
 ## Q304687: HOWTO: SSAFE: Select Nondefault Database Location

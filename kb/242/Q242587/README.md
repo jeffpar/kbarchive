@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242587: Narrow Font When Printing from Access with Japanese Windows NT"
-permalink: kb/242/Q242587/
+permalink: /kb/242/Q242587/
 ---
 
 ## Q242587: Narrow Font When Printing from Access with Japanese Windows NT

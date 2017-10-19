@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85910: IBM LSP Drivers Err Msg: Invalid Shared RAM Address"
-permalink: kb/085/Q85910/
+permalink: /kb/085/Q85910/
 ---
 
 ## Q85910: IBM LSP Drivers Err Msg: Invalid Shared RAM Address

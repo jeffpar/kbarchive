@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233438: MSBP: Unable to Select or Print Text in Personal Interviewer"
-permalink: kb/233/Q233438/
+permalink: /kb/233/Q233438/
 ---
 
 ## Q233438: MSBP: Unable to Select or Print Text in Personal Interviewer

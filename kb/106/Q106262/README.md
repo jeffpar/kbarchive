@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106262: FIX: Direction Flag Is Not Cleared When an Exception Occurs"
-permalink: kb/106/Q106262/
+permalink: /kb/106/Q106262/
 ---
 
 ## Q106262: FIX: Direction Flag Is Not Cleared When an Exception Occurs

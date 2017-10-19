@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171921: Error Message: Error Loading Nwserver - Error 6260"
-permalink: kb/171/Q171921/
+permalink: /kb/171/Q171921/
 ---
 
 ## Q171921: Error Message: Error Loading Nwserver - Error 6260

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86018: Windows 3.1 Has Limited Support for VCPI"
-permalink: kb/086/Q86018/
+permalink: /kb/086/Q86018/
 ---
 
 ## Q86018: Windows 3.1 Has Limited Support for VCPI

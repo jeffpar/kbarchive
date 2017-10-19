@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148765: Availability of DLC Update for MSDLC32 Protocol"
-permalink: kb/148/Q148765/
+permalink: /kb/148/Q148765/
 ---
 
 ## Q148765: Availability of DLC Update for MSDLC32 Protocol

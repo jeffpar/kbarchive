@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216108: Memory Leak and STOP Screens Using Intermediate NDIS Drivers"
-permalink: kb/216/Q216108/
+permalink: /kb/216/Q216108/
 ---
 
 ## Q216108: Memory Leak and STOP Screens Using Intermediate NDIS Drivers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192597: Official Microsoft Bookshelf Internet Directory: Support Options"
-permalink: kb/192/Q192597/
+permalink: /kb/192/Q192597/
 ---
 
 ## Q192597: Official Microsoft Bookshelf Internet Directory: Support Options

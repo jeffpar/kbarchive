@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135126: Server Manager/User Manager for Domains Do Not Run in SMS Admin"
-permalink: kb/135/Q135126/
+permalink: /kb/135/Q135126/
 ---
 
 ## Q135126: Server Manager/User Manager for Domains Do Not Run in SMS Admin

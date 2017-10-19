@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191595: Compatible Versions of Exchange Server and Outlook"
-permalink: kb/191/Q191595/
+permalink: /kb/191/Q191595/
 ---
 
 ## Q191595: Compatible Versions of Exchange Server and Outlook

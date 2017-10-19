@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241331: Default (GMT) Time Zone Changes During Service Pack Upgrades"
-permalink: kb/241/Q241331/
+permalink: /kb/241/Q241331/
 ---
 
 ## Q241331: Default (GMT) Time Zone Changes During Service Pack Upgrades

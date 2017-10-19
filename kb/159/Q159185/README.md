@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159185: Exchange X.400 MTA over TP4 Sends Only 2 Queued Messages, Stops"
-permalink: kb/159/Q159185/
+permalink: /kb/159/Q159185/
 ---
 
 ## Q159185: Exchange X.400 MTA over TP4 Sends Only 2 Queued Messages, Stops

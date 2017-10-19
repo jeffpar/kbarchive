@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136671: DOCERR: &quot;Refreshing One-to-Many Display&quot; Help Topic Incomplete"
-permalink: kb/136/Q136671/
+permalink: /kb/136/Q136671/
 ---
 
 ## Q136671: DOCERR: &quot;Refreshing One-to-Many Display&quot; Help Topic Incomplete

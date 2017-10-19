@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85573: Pen-Compatible DIP Switch Settings for Wacom 510C Tablet"
-permalink: kb/085/Q85573/
+permalink: /kb/085/Q85573/
 ---
 
 ## Q85573: Pen-Compatible DIP Switch Settings for Wacom 510C Tablet

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180604: Windows NT Installation on Laptops with PCI Docking Station"
-permalink: kb/180/Q180604/
+permalink: /kb/180/Q180604/
 ---
 
 ## Q180604: Windows NT Installation on Laptops with PCI Docking Station

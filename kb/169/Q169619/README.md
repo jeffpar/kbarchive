@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169619: SMS: SMS 1.2 SP2 Does Not Prompt for a Restart of Windows NT"
-permalink: kb/169/Q169619/
+permalink: /kb/169/Q169619/
 ---
 
 ## Q169619: SMS: SMS 1.2 SP2 Does Not Prompt for a Restart of Windows NT

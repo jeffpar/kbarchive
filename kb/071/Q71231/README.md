@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71231: Mac Srv: Pyro! 4.0 Must Load Before Mail Server"
-permalink: kb/071/Q71231/
+permalink: /kb/071/Q71231/
 ---
 
 ## Q71231: Mac Srv: Pyro! 4.0 Must Load Before Mail Server

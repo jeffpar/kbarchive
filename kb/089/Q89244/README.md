@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89244: Banyan VINES 4.0 Does Not Support File Manager 3.0 Drags"
-permalink: kb/089/Q89244/
+permalink: /kb/089/Q89244/
 ---
 
 ## Q89244: Banyan VINES 4.0 Does Not Support File Manager 3.0 Drags

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257657: FIX: Update Fails for Text Column w/CursorDriver at rdUseODBC"
-permalink: kb/257/Q257657/
+permalink: /kb/257/Q257657/
 ---
 
 ## Q257657: FIX: Update Fails for Text Column w/CursorDriver at rdUseODBC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302797: Connection Error After Deleting All Users And Going through setu"
-permalink: kb/302/Q302797/
+permalink: /kb/302/Q302797/
 ---
 
 ## Q302797: Connection Error After Deleting All Users And Going through setu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131753: Private Data Sessions Require Additional File Handles"
-permalink: kb/131/Q131753/
+permalink: /kb/131/Q131753/
 ---
 
 ## Q131753: Private Data Sessions Require Additional File Handles

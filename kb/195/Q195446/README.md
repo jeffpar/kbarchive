@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195446: How to Obtain the System Preparation Tool for Windows NT 4.0"
-permalink: kb/195/Q195446/
+permalink: /kb/195/Q195446/
 ---
 
 ## Q195446: How to Obtain the System Preparation Tool for Windows NT 4.0

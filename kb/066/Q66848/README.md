@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66848: ASD: Items Saved in the CONFIG.AD1 File"
-permalink: kb/066/Q66848/
+permalink: /kb/066/Q66848/
 ---
 
 ## Q66848: ASD: Items Saved in the CONFIG.AD1 File

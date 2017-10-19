@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151683: FIX: MFC ODBC Exceptions Using the SQL Server 6.5 Driver"
-permalink: kb/151/Q151683/
+permalink: /kb/151/Q151683/
 ---
 
 ## Q151683: FIX: MFC ODBC Exceptions Using the SQL Server 6.5 Driver

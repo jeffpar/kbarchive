@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145585: XADM: Migrated MS Mail 3.x X400 PAB Entries NDR w/ Bad Address"
-permalink: kb/145/Q145585/
+permalink: /kb/145/Q145585/
 ---
 
 ## Q145585: XADM: Migrated MS Mail 3.x X400 PAB Entries NDR w/ Bad Address

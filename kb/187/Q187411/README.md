@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187411: Some Desktop Icons Cannot Be Moved with Right Mouse Button"
-permalink: kb/187/Q187411/
+permalink: /kb/187/Q187411/
 ---
 
 ## Q187411: Some Desktop Icons Cannot Be Moved with Right Mouse Button

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138466: Disk Space Reported Incorrectly When Dspace Tool Is Used"
-permalink: kb/138/Q138466/
+permalink: /kb/138/Q138466/
 ---
 
 ## Q138466: Disk Space Reported Incorrectly When Dspace Tool Is Used

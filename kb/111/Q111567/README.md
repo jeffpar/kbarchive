@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111567: WFWG Setup with HP Ethertwist Cards: No Network Installed"
-permalink: kb/111/Q111567/
+permalink: /kb/111/Q111567/
 ---
 
 ## Q111567: WFWG Setup with HP Ethertwist Cards: No Network Installed

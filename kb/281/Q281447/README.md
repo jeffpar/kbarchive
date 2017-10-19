@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281447: USB Keyboard does not work properly with Compaq IA-2"
-permalink: kb/281/Q281447/
+permalink: /kb/281/Q281447/
 ---
 
 ## Q281447: USB Keyboard does not work properly with Compaq IA-2

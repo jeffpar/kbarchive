@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116397: MS-DOS 6.22 SCANDISK.INI File"
-permalink: kb/116/Q116397/
+permalink: /kb/116/Q116397/
 ---
 
 ## Q116397: MS-DOS 6.22 SCANDISK.INI File

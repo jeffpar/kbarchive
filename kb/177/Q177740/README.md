@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177740: FIX: Scale Method Results in a Number of Blank Pages Printed"
-permalink: kb/177/Q177740/
+permalink: /kb/177/Q177740/
 ---
 
 ## Q177740: FIX: Scale Method Results in a Number of Blank Pages Printed

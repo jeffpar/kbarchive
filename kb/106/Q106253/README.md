@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106253: Program Priority and Multithreaded Applications"
-permalink: kb/106/Q106253/
+permalink: /kb/106/Q106253/
 ---
 
 ## Q106253: Program Priority and Multithreaded Applications

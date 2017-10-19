@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91189: File Manager: Five Extensions Maximum"
-permalink: kb/091/Q91189/
+permalink: /kb/091/Q91189/
 ---
 
 ## Q91189: File Manager: Five Extensions Maximum

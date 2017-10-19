@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255244: XCLN: How to Remove Journal Entries from Outlook"
-permalink: kb/255/Q255244/
+permalink: /kb/255/Q255244/
 ---
 
 ## Q255244: XCLN: How to Remove Journal Entries from Outlook

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147260: XCLN: Printing with Print Icon Does Not Use Default Printer"
-permalink: kb/147/Q147260/
+permalink: /kb/147/Q147260/
 ---
 
 ## Q147260: XCLN: Printing with Print Icon Does Not Use Default Printer

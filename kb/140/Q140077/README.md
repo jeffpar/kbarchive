@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140077: Mac Adm: Definition of Last seen in Mail Network Administrator"
-permalink: kb/140/Q140077/
+permalink: /kb/140/Q140077/
 ---
 
 ## Q140077: Mac Adm: Definition of Last seen in Mail Network Administrator

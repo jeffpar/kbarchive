@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q42061: DumpDesc.exe Shows How to Read .exe File Headers"
-permalink: kb/042/Q42061/
+permalink: /kb/042/Q42061/
 ---
 
 ## Q42061: DumpDesc.exe Shows How to Read .exe File Headers

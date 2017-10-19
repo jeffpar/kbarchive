@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160984: Cannot Connect To Newsgroups On Netnews.msn.com News Server"
-permalink: kb/160/Q160984/
+permalink: /kb/160/Q160984/
 ---
 
 ## Q160984: Cannot Connect To Newsgroups On Netnews.msn.com News Server

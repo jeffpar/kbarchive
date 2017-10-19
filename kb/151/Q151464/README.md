@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151464: Mastering Microsoft Exchange Development: System Requirements"
-permalink: kb/151/Q151464/
+permalink: /kb/151/Q151464/
 ---
 
 ## Q151464: Mastering Microsoft Exchange Development: System Requirements

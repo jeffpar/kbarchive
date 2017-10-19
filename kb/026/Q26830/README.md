@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q26830: FIX: Code Segment Defined within a Procedure"
-permalink: kb/026/Q26830/
+permalink: /kb/026/Q26830/
 ---
 
 ## Q26830: FIX: Code Segment Defined within a Procedure

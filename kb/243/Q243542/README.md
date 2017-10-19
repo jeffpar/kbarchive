@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243542: PRB: File() Function Ignores Path if Given in Parameter"
-permalink: kb/243/Q243542/
+permalink: /kb/243/Q243542/
 ---
 
 ## Q243542: PRB: File() Function Ignores Path if Given in Parameter

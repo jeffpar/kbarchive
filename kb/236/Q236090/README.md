@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236090: XCLN: Optional Attendee Displayed as Required to Delegate"
-permalink: kb/236/Q236090/
+permalink: /kb/236/Q236090/
 ---
 
 ## Q236090: XCLN: Optional Attendee Displayed as Required to Delegate

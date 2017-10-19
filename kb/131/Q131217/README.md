@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131217: REPORT FORM Command Uses Temp File for Unsaved Report"
-permalink: kb/131/Q131217/
+permalink: /kb/131/Q131217/
 ---
 
 ## Q131217: REPORT FORM Command Uses Temp File for Unsaved Report

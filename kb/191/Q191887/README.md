@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191887: Y2K: Srvmain.exe Displays Incorrect Date after 1999"
-permalink: kb/191/Q191887/
+permalink: /kb/191/Q191887/
 ---
 
 ## Q191887: Y2K: Srvmain.exe Displays Incorrect Date after 1999

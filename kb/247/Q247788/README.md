@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247788: XADM: Internet Mail Service and Info. Store Hang w. Antivirus"
-permalink: kb/247/Q247788/
+permalink: /kb/247/Q247788/
 ---
 
 ## Q247788: XADM: Internet Mail Service and Info. Store Hang w. Antivirus

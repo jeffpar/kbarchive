@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231431: Raptor CIFS Firewall Disables Access to Network Monitor Agents"
-permalink: kb/231/Q231431/
+permalink: /kb/231/Q231431/
 ---
 
 ## Q231431: Raptor CIFS Firewall Disables Access to Network Monitor Agents

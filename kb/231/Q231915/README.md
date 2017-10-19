@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231915: XFOR: T-shooting Data Migration with Notes Application Connector"
-permalink: kb/231/Q231915/
+permalink: /kb/231/Q231915/
 ---
 
 ## Q231915: XFOR: T-shooting Data Migration with Notes Application Connector

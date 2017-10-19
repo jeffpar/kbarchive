@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114588: Library Return Codes"
-permalink: kb/114/Q114588/
+permalink: /kb/114/Q114588/
 ---
 
 ## Q114588: Library Return Codes

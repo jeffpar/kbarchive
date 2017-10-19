@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163489: WD97: &quot;For Each...Next&quot; Loop Gives Wrong Result with Endnotes"
-permalink: kb/163/Q163489/
+permalink: /kb/163/Q163489/
 ---
 
 ## Q163489: WD97: &quot;For Each...Next&quot; Loop Gives Wrong Result with Endnotes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136855: When to Use Buffering, Referential Integrity, and Triggers"
-permalink: kb/136/Q136855/
+permalink: /kb/136/Q136855/
 ---
 
 ## Q136855: When to Use Buffering, Referential Integrity, and Triggers

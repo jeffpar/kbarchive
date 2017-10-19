@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q38108: WordPerfect Library Program Causes Windows to Hang"
-permalink: kb/038/Q38108/
+permalink: /kb/038/Q38108/
 ---
 
 ## Q38108: WordPerfect Library Program Causes Windows to Hang

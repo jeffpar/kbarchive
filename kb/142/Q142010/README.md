@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142010: BUG: Bad Message Appears When Promoting Domain Controllers"
-permalink: kb/142/Q142010/
+permalink: /kb/142/Q142010/
 ---
 
 ## Q142010: BUG: Bad Message Appears When Promoting Domain Controllers

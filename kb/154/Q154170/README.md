@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154170: BUG: @...SAY Prints Gray Background"
-permalink: kb/154/Q154170/
+permalink: /kb/154/Q154170/
 ---
 
 ## Q154170: BUG: @...SAY Prints Gray Background

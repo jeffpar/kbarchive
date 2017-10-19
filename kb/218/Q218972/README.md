@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218972: SAMPLE: How to Load and Display Graphics Files with LOADPIC.EXE"
-permalink: kb/218/Q218972/
+permalink: /kb/218/Q218972/
 ---
 
 ## Q218972: SAMPLE: How to Load and Display Graphics Files with LOADPIC.EXE

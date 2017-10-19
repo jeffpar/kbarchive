@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102728: Manual Installation of the UAM"
-permalink: kb/102/Q102728/
+permalink: /kb/102/Q102728/
 ---
 
 ## Q102728: Manual Installation of the UAM

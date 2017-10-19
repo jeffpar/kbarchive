@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159053: NTFS Stream Limitation in Windows NT 4.0"
-permalink: kb/159/Q159053/
+permalink: /kb/159/Q159053/
 ---
 
 ## Q159053: NTFS Stream Limitation in Windows NT 4.0

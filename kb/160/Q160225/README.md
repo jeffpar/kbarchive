@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160225: FP97: Memory Leak in FP Extensions on MS Personal Web Server"
-permalink: kb/160/Q160225/
+permalink: /kb/160/Q160225/
 ---
 
 ## Q160225: FP97: Memory Leak in FP Extensions on MS Personal Web Server

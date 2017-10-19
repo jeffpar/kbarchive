@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304024: XADM: Information Store Stops with Malformed Content-Type"
-permalink: kb/304/Q304024/
+permalink: /kb/304/Q304024/
 ---
 
 ## Q304024: XADM: Information Store Stops with Malformed Content-Type

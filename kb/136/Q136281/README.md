@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136281: FIX: GridBuilder Gives Data Type Error After Fields Rearranged"
-permalink: kb/136/Q136281/
+permalink: /kb/136/Q136281/
 ---
 
 ## Q136281: FIX: GridBuilder Gives Data Type Error After Fields Rearranged

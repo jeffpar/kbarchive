@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171549: FIX: Cached Class Factorys Get Released by Illegal Thread"
-permalink: kb/171/Q171549/
+permalink: /kb/171/Q171549/
 ---
 
 ## Q171549: FIX: Cached Class Factorys Get Released by Illegal Thread

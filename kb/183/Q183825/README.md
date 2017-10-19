@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183825: XCLN: GPF Viewing Multiple Schedules, Leaving Schedule+ Running"
-permalink: kb/183/Q183825/
+permalink: /kb/183/Q183825/
 ---
 
 ## Q183825: XCLN: GPF Viewing Multiple Schedules, Leaving Schedule+ Running

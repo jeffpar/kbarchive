@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126140: Frank Lloyd Wright Icon Changes to Default Icon"
-permalink: kb/126/Q126140/
+permalink: /kb/126/Q126140/
 ---
 
 ## Q126140: Frank Lloyd Wright Icon Changes to Default Icon

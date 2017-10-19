@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282060: Resources for Securing Internet Information Services"
-permalink: kb/282/Q282060/
+permalink: /kb/282/Q282060/
 ---
 
 ## Q282060: Resources for Securing Internet Information Services

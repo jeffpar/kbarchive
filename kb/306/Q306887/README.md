@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306887: Perfproc.dll Logs Event 2002 Errors in Win 2K Application Log"
-permalink: kb/306/Q306887/
+permalink: /kb/306/Q306887/
 ---
 
 ## Q306887: Perfproc.dll Logs Event 2002 Errors in Win 2K Application Log

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184218: Formexit.exe EXIT Command May Leave Form Object Visible"
-permalink: kb/184/Q184218/
+permalink: /kb/184/Q184218/
 ---
 
 ## Q184218: Formexit.exe EXIT Command May Leave Form Object Visible

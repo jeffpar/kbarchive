@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75232: Saving Files over the Network on Novell v2.15"
-permalink: kb/075/Q75232/
+permalink: /kb/075/Q75232/
 ---
 
 ## Q75232: Saving Files over the Network on Novell v2.15

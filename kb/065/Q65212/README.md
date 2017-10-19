@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65212: Mac Form: Form Icon Appears Garbled When Form Is Compiled"
-permalink: kb/065/Q65212/
+permalink: /kb/065/Q65212/
 ---
 
 ## Q65212: Mac Form: Form Icon Appears Garbled When Form Is Compiled

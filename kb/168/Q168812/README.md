@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168812: Dr Watson Exception Violation C0000005 Occurs After Install SP3"
-permalink: kb/168/Q168812/
+permalink: /kb/168/Q168812/
 ---
 
 ## Q168812: Dr Watson Exception Violation C0000005 Occurs After Install SP3

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86191: System Resources Leak with After Dark 2.0 Randomizer"
-permalink: kb/086/Q86191/
+permalink: /kb/086/Q86191/
 ---
 
 ## Q86191: System Resources Leak with After Dark 2.0 Randomizer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92717: WFWG: Windows for Workgroups 3.1 Hardware Compatibility List"
-permalink: kb/092/Q92717/
+permalink: /kb/092/Q92717/
 ---
 
 ## Q92717: WFWG: Windows for Workgroups 3.1 Hardware Compatibility List

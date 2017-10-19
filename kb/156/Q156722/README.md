@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156722: XCON: Invalid Parameters When Using X.121 Field in X.400 Address"
-permalink: kb/156/Q156722/
+permalink: /kb/156/Q156722/
 ---
 
 ## Q156722: XCON: Invalid Parameters When Using X.121 Field in X.400 Address

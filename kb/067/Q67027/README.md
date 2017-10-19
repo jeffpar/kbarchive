@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67027: Bitstream Fontware 3.0 Installation Kit Description"
-permalink: kb/067/Q67027/
+permalink: /kb/067/Q67027/
 ---
 
 ## Q67027: Bitstream Fontware 3.0 Installation Kit Description

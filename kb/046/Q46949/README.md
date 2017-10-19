@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q46949: Using CodeView /2, Hercules Graphics Cards and Libraries"
-permalink: kb/046/Q46949/
+permalink: /kb/046/Q46949/
 ---
 
 ## Q46949: Using CodeView /2, Hercules Graphics Cards and Libraries

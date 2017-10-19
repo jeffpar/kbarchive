@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150731: Deleting Single Entries From Static Multihomed Box Fails w/ Sp4"
-permalink: kb/150/Q150731/
+permalink: /kb/150/Q150731/
 ---
 
 ## Q150731: Deleting Single Entries From Static Multihomed Box Fails w/ Sp4

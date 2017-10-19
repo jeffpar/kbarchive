@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82813: OLE: How Windows 3.1 Searches for Server Applications"
-permalink: kb/082/Q82813/
+permalink: /kb/082/Q82813/
 ---
 
 ## Q82813: OLE: How Windows 3.1 Searches for Server Applications

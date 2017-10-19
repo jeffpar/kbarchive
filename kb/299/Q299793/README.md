@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299793: FIX: More than 255 Chars in Coverage Dialog Causes Crash"
-permalink: kb/299/Q299793/
+permalink: /kb/299/Q299793/
 ---
 
 ## Q299793: FIX: More than 255 Chars in Coverage Dialog Causes Crash

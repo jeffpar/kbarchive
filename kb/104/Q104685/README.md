@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q104685: How to Retrieve Hidden/System Files Using Dir[&#36;]() Function"
-permalink: kb/104/Q104685/
+title: "Q104685: How to Retrieve Hidden/System Files Using Dir&#91;&#36;&#93;() Function"
+permalink: /kb/104/Q104685/
 ---
 
-## Q104685: How to Retrieve Hidden/System Files Using Dir[&#36;]() Function
+## Q104685: How to Retrieve Hidden/System Files Using Dir&#91;&#36;&#93;() Function
 
 	Article: Q104685
 	Product(s): Microsoft Visual Basic for Windows

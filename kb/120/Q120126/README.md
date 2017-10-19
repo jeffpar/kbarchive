@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120126: PowerPoint Cannot Locate Its Spelling Checker"
-permalink: kb/120/Q120126/
+permalink: /kb/120/Q120126/
 ---
 
 ## Q120126: PowerPoint Cannot Locate Its Spelling Checker

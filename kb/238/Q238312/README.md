@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238312: Fire TabStrip's Click Event When Using Msgbox in BeforeClick"
-permalink: kb/238/Q238312/
+permalink: /kb/238/Q238312/
 ---
 
 ## Q238312: Fire TabStrip's Click Event When Using Msgbox in BeforeClick

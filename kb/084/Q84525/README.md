@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84525: Err Msg: &quot;There is a Multiple Entry...&quot; w/  TI Travelmate 3000"
-permalink: kb/084/Q84525/
+permalink: /kb/084/Q84525/
 ---
 
 ## Q84525: Err Msg: &quot;There is a Multiple Entry...&quot; w/  TI Travelmate 3000

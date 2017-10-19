@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178232: How to Set IIS 3.0 Authentication from the Registry"
-permalink: kb/178/Q178232/
+permalink: /kb/178/Q178232/
 ---
 
 ## Q178232: How to Set IIS 3.0 Authentication from the Registry

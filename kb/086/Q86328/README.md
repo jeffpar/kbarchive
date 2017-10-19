@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86328: PC Win: Err Msg: The New Folder Could Not Be Created"
-permalink: kb/086/Q86328/
+permalink: /kb/086/Q86328/
 ---
 
 ## Q86328: PC Win: Err Msg: The New Folder Could Not Be Created

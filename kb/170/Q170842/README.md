@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170842: Setup.exe Causes Errors When Logging on"
-permalink: kb/170/Q170842/
+permalink: /kb/170/Q170842/
 ---
 
 ## Q170842: Setup.exe Causes Errors When Logging on

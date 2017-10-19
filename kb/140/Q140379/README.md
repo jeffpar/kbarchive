@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140379: MainStream Exabyte Tape Drives Need Firmware Upgrade"
-permalink: kb/140/Q140379/
+permalink: /kb/140/Q140379/
 ---
 
 ## Q140379: MainStream Exabyte Tape Drives Need Firmware Upgrade

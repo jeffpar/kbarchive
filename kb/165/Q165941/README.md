@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165941: RAS Fails w/ Error 1068 &quot;RIP for NWLINK Failed to Start&quot;"
-permalink: kb/165/Q165941/
+permalink: /kb/165/Q165941/
 ---
 
 ## Q165941: RAS Fails w/ Error 1068 &quot;RIP for NWLINK Failed to Start&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235680: FIX: Msdev.exe Crash in Devshl.dll During Command-Line Build"
-permalink: kb/235/Q235680/
+permalink: /kb/235/Q235680/
 ---
 
 ## Q235680: FIX: Msdev.exe Crash in Devshl.dll During Command-Line Build

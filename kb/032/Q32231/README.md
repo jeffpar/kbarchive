@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32231: The Purpose of the AUTOEXEC.FS3 or AUTOEXEC.FS4 File"
-permalink: kb/032/Q32231/
+permalink: /kb/032/Q32231/
 ---
 
 ## Q32231: The Purpose of the AUTOEXEC.FS3 or AUTOEXEC.FS4 File

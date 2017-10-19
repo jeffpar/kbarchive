@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187674: HOWTO: Find Undocumented Constants Used by Windows API Functions"
-permalink: kb/187/Q187674/
+permalink: /kb/187/Q187674/
 ---
 
 ## Q187674: HOWTO: Find Undocumented Constants Used by Windows API Functions

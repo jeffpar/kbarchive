@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169557: SMS: Remote Chat Session Closes Unexpectedly"
-permalink: kb/169/Q169557/
+permalink: /kb/169/Q169557/
 ---
 
 ## Q169557: SMS: Remote Chat Session Closes Unexpectedly

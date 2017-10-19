@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112352: How to Emulate Function Keys in FoxPro for Macintosh"
-permalink: kb/112/Q112352/
+permalink: /kb/112/Q112352/
 ---
 
 ## Q112352: How to Emulate Function Keys in FoxPro for Macintosh

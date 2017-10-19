@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189061: Repeated Regsavekey/Regrestorekey Actions Corrupt Registry Hive"
-permalink: kb/189/Q189061/
+permalink: /kb/189/Q189061/
 ---
 
 ## Q189061: Repeated Regsavekey/Regrestorekey Actions Corrupt Registry Hive

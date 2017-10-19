@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136021: HOWTO: Move or Rename Files Used with Visual C++"
-permalink: kb/136/Q136021/
+permalink: /kb/136/Q136021/
 ---
 
 ## Q136021: HOWTO: Move or Rename Files Used with Visual C++

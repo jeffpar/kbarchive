@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130418: Write Caching on Boot Floppy Drive Causes WINNT.EXE to Fail"
-permalink: kb/130/Q130418/
+permalink: /kb/130/Q130418/
 ---
 
 ## Q130418: Write Caching on Boot Floppy Drive Causes WINNT.EXE to Fail

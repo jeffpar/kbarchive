@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161832: HOWTO: Export an Embedded .bmp Image into a File"
-permalink: kb/161/Q161832/
+permalink: /kb/161/Q161832/
 ---
 
 ## Q161832: HOWTO: Export an Embedded .bmp Image into a File

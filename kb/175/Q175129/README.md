@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175129: XADM: Wrong OFL Deleted in Forms Administrator"
-permalink: kb/175/Q175129/
+permalink: /kb/175/Q175129/
 ---
 
 ## Q175129: XADM: Wrong OFL Deleted in Forms Administrator

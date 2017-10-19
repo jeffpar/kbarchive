@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190369: BUG: RDO LastModified Is Not Consistent After Moving EOF"
-permalink: kb/190/Q190369/
+permalink: /kb/190/Q190369/
 ---
 
 ## Q190369: BUG: RDO LastModified Is Not Consistent After Moving EOF

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155803: DOC: Cross-Tab Query Help Example is Incorrect"
-permalink: kb/155/Q155803/
+permalink: /kb/155/Q155803/
 ---
 
 ## Q155803: DOC: Cross-Tab Query Help Example is Incorrect

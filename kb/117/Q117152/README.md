@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117152: PC Ext: MTA Not Report LAN Man User-Level Security Problems"
-permalink: kb/117/Q117152/
+permalink: /kb/117/Q117152/
 ---
 
 ## Q117152: PC Ext: MTA Not Report LAN Man User-Level Security Problems

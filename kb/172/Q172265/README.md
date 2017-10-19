@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172265: Running Microsoft Excel 97 Comments and Corrections"
-permalink: kb/172/Q172265/
+permalink: /kb/172/Q172265/
 ---
 
 ## Q172265: Running Microsoft Excel 97 Comments and Corrections

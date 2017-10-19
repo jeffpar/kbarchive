@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140707: File Not Listed Using DIR Command with OS/2 Name Space"
-permalink: kb/140/Q140707/
+permalink: /kb/140/Q140707/
 ---
 
 ## Q140707: File Not Listed Using DIR Command with OS/2 Name Space

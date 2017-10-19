@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258704: XIMS: SMTP Proxy Adds Trailing Period (.) for Template"
-permalink: kb/258/Q258704/
+permalink: /kb/258/Q258704/
 ---
 
 ## Q258704: XIMS: SMTP Proxy Adds Trailing Period (.) for Template

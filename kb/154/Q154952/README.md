@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154952: Remote Admin Can Access a File for Which Everyone Has No Access"
-permalink: kb/154/Q154952/
+permalink: /kb/154/Q154952/
 ---
 
 ## Q154952: Remote Admin Can Access a File for Which Everyone Has No Access

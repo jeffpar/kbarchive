@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254443: MapPoint 2001: &quot;Error 1305&quot; When You Install Program"
-permalink: kb/254/Q254443/
+permalink: /kb/254/Q254443/
 ---
 
 ## Q254443: MapPoint 2001: &quot;Error 1305&quot; When You Install Program

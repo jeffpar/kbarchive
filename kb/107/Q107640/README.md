@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107640: Documentation Error on Installing Remote Access Software"
-permalink: kb/107/Q107640/
+permalink: /kb/107/Q107640/
 ---
 
 ## Q107640: Documentation Error on Installing Remote Access Software

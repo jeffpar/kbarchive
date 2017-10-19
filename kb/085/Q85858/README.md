@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85858: Misleading Error When Renaming Read-Only File on Novell"
-permalink: kb/085/Q85858/
+permalink: /kb/085/Q85858/
 ---
 
 ## Q85858: Misleading Error When Renaming Read-Only File on Novell

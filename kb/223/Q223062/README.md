@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223062: FIX: DataGrid Will Not Add a New Record if Fields Set in Code"
-permalink: kb/223/Q223062/
+permalink: /kb/223/Q223062/
 ---
 
 ## Q223062: FIX: DataGrid Will Not Add a New Record if Fields Set in Code

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314783: HOW TO: Plan SQL Server CE Security for Mobile Devices in IIS"
-permalink: kb/314/Q314783/
+permalink: /kb/314/Q314783/
 ---
 
 ## Q314783: HOW TO: Plan SQL Server CE Security for Mobile Devices in IIS

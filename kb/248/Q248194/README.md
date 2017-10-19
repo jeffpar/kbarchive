@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248194: BUG: get_Version Returns S_OK Even if the Version Does Not Exist"
-permalink: kb/248/Q248194/
+permalink: /kb/248/Q248194/
 ---
 
 ## Q248194: BUG: get_Version Returns S_OK Even if the Version Does Not Exist

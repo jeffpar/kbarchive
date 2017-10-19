@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253716: Event ID 8020: DSMN Cannot Synchronize Users on a NetWare Server"
-permalink: kb/253/Q253716/
+permalink: /kb/253/Q253716/
 ---
 
 ## Q253716: Event ID 8020: DSMN Cannot Synchronize Users on a NetWare Server

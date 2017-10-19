@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166299: How to Remove Dial-Up Networking from My Computer"
-permalink: kb/166/Q166299/
+permalink: /kb/166/Q166299/
 ---
 
 ## Q166299: How to Remove Dial-Up Networking from My Computer

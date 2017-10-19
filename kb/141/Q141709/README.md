@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141709: Limit of 49 Named Pipe Connections from a Single Workstation"
-permalink: kb/141/Q141709/
+permalink: /kb/141/Q141709/
 ---
 
 ## Q141709: Limit of 49 Named Pipe Connections from a Single Workstation

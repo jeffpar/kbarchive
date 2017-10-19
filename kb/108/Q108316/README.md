@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108316: DOC: Incorrect Hard-Coded Values in SDK BITMAP.C Sample"
-permalink: kb/108/Q108316/
+permalink: /kb/108/Q108316/
 ---
 
 ## Q108316: DOC: Incorrect Hard-Coded Values in SDK BITMAP.C Sample

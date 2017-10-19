@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264159: XADM: Uninstalling Mailbox Manager Service Leaves Mailbox"
-permalink: kb/264/Q264159/
+permalink: /kb/264/Q264159/
 ---
 
 ## Q264159: XADM: Uninstalling Mailbox Manager Service Leaves Mailbox

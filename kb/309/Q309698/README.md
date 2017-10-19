@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309698: Bicycle Games: Minimum System Requirements"
-permalink: kb/309/Q309698/
+permalink: /kb/309/Q309698/
 ---
 
 ## Q309698: Bicycle Games: Minimum System Requirements

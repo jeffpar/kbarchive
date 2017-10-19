@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201491: XWEB: OWA Does Not Display RTF Text in Contacts"
-permalink: kb/201/Q201491/
+permalink: /kb/201/Q201491/
 ---
 
 ## Q201491: XWEB: OWA Does Not Display RTF Text in Contacts

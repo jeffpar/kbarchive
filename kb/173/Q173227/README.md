@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173227: How to Cancel Your MSN Account"
-permalink: kb/173/Q173227/
+permalink: /kb/173/Q173227/
 ---
 
 ## Q173227: How to Cancel Your MSN Account

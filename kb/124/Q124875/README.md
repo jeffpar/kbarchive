@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124875: SMS: Spell Checker for Shared Version of Word Does Not Work"
-permalink: kb/124/Q124875/
+permalink: /kb/124/Q124875/
 ---
 
 ## Q124875: SMS: Spell Checker for Shared Version of Word Does Not Work

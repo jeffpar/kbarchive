@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138208: How to Create a Flight Simulator Shortcut in Windows 95/98"
-permalink: kb/138/Q138208/
+permalink: /kb/138/Q138208/
 ---
 
 ## Q138208: How to Create a Flight Simulator Shortcut in Windows 95/98

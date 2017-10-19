@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159219: NWLink Binding Cannot Be Disabled for Specific Services"
-permalink: kb/159/Q159219/
+permalink: /kb/159/Q159219/
 ---
 
 ## Q159219: NWLink Binding Cannot Be Disabled for Specific Services

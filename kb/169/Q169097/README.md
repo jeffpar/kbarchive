@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169097: FP: How to Create Invisible Frames in FrontPage"
-permalink: kb/169/Q169097/
+permalink: /kb/169/Q169097/
 ---
 
 ## Q169097: FP: How to Create Invisible Frames in FrontPage

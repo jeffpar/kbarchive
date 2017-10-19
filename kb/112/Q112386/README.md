@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112386: BUG: GetTimerResolution Not in LibW.lib"
-permalink: kb/112/Q112386/
+permalink: /kb/112/Q112386/
 ---
 
 ## Q112386: BUG: GetTimerResolution Not in LibW.lib

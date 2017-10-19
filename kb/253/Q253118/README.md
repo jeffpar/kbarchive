@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253118: SMS: The &quot;Gold Key&quot; Button May Not Respond"
-permalink: kb/253/Q253118/
+permalink: /kb/253/Q253118/
 ---
 
 ## Q253118: SMS: The &quot;Gold Key&quot; Button May Not Respond

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198660: DOC: Additional Jet Database Record Size Information"
-permalink: kb/198/Q198660/
+permalink: /kb/198/Q198660/
 ---
 
 ## Q198660: DOC: Additional Jet Database Record Size Information

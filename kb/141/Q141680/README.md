@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141680: BUG: Error Occurs When Printing a Form Stored in an Array"
-permalink: kb/141/Q141680/
+permalink: /kb/141/Q141680/
 ---
 
 ## Q141680: BUG: Error Occurs When Printing a Form Stored in an Array

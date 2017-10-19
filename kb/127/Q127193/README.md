@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127193: SAMPLE: DLGDB CDialog Sharing a CRecordset Object"
-permalink: kb/127/Q127193/
+permalink: /kb/127/Q127193/
 ---
 
 ## Q127193: SAMPLE: DLGDB CDialog Sharing a CRecordset Object

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180962: How to Identify When the System Preparation Tool Is Used"
-permalink: kb/180/Q180962/
+permalink: /kb/180/Q180962/
 ---
 
 ## Q180962: How to Identify When the System Preparation Tool Is Used

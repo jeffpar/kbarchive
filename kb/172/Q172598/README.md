@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172598: Client Profile Setup Utility Obsolete"
-permalink: kb/172/Q172598/
+permalink: /kb/172/Q172598/
 ---
 
 ## Q172598: Client Profile Setup Utility Obsolete

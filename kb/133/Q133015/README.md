@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133015: BUG: Use of Apostrophes in DSN Setup Not Allowed"
-permalink: kb/133/Q133015/
+permalink: /kb/133/Q133015/
 ---
 
 ## Q133015: BUG: Use of Apostrophes in DSN Setup Not Allowed

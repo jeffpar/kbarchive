@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260015: PC DirSync: Dispatch Does Not Work on Windows 2000"
-permalink: kb/260/Q260015/
+permalink: /kb/260/Q260015/
 ---
 
 ## Q260015: PC DirSync: Dispatch Does Not Work on Windows 2000

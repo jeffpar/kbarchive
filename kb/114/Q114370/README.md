@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114370: WFWG Err Msg: Error 58 on Protocol 0"
-permalink: kb/114/Q114370/
+permalink: /kb/114/Q114370/
 ---
 
 ## Q114370: WFWG Err Msg: Error 58 on Protocol 0

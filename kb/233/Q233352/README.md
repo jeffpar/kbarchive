@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233352: Mac Encarta 98: AppleScript Is Not Loaded on Mac OS 8.5 or Later"
-permalink: kb/233/Q233352/
+permalink: /kb/233/Q233352/
 ---
 
 ## Q233352: Mac Encarta 98: AppleScript Is Not Loaded on Mac OS 8.5 or Later

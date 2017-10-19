@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177462: INFO: Troubleshooting Cmdlines.txt During an Unattended Setup"
-permalink: kb/177/Q177462/
+permalink: /kb/177/Q177462/
 ---
 
 ## Q177462: INFO: Troubleshooting Cmdlines.txt During an Unattended Setup

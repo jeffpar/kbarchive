@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181166: XFOR: Missing Attachments When Sending to Notes Users"
-permalink: kb/181/Q181166/
+permalink: /kb/181/Q181166/
 ---
 
 ## Q181166: XFOR: Missing Attachments When Sending to Notes Users

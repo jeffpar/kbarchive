@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121407: List of Printers Supported by PRINTER.SYS"
-permalink: kb/121/Q121407/
+permalink: /kb/121/Q121407/
 ---
 
 ## Q121407: List of Printers Supported by PRINTER.SYS

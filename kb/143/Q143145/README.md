@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143145: IIS FTP Annotation Files Display One Line"
-permalink: kb/143/Q143145/
+permalink: /kb/143/Q143145/
 ---
 
 ## Q143145: IIS FTP Annotation Files Display One Line

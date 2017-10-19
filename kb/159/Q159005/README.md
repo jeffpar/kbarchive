@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159005: CardBus PCMCIA Controller Disabled After Second Boot"
-permalink: kb/159/Q159005/
+permalink: /kb/159/Q159005/
 ---
 
 ## Q159005: CardBus PCMCIA Controller Disabled After Second Boot

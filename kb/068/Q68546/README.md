@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68546: Disabling Call Waiting in Terminal"
-permalink: kb/068/Q68546/
+permalink: /kb/068/Q68546/
 ---
 
 ## Q68546: Disabling Call Waiting in Terminal

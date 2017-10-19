@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146896: WD97: Word Ignores First Record in Excel Data Source"
-permalink: kb/146/Q146896/
+permalink: /kb/146/Q146896/
 ---
 
 ## Q146896: WD97: Word Ignores First Record in Excel Data Source

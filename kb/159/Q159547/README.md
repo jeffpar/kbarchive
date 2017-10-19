@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159547: WD97: Retrieving Settings from Word Dialog Boxes Using OLE"
-permalink: kb/159/Q159547/
+permalink: /kb/159/Q159547/
 ---
 
 ## Q159547: WD97: Retrieving Settings from Word Dialog Boxes Using OLE

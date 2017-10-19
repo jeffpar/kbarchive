@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184562: Internet Information Server ResKit Comments and Corrections"
-permalink: kb/184/Q184562/
+permalink: /kb/184/Q184562/
 ---
 
 ## Q184562: Internet Information Server ResKit Comments and Corrections

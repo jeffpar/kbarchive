@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295038: SMS: Remote Provider Account Not Removed When Site Uninstalled"
-permalink: kb/295/Q295038/
+permalink: /kb/295/Q295038/
 ---
 
 ## Q295038: SMS: Remote Provider Account Not Removed When Site Uninstalled

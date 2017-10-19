@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306201: Contact Added To Hotmail Address Book Appears As Messenger Conta"
-permalink: kb/306/Q306201/
+permalink: /kb/306/Q306201/
 ---
 
 ## Q306201: Contact Added To Hotmail Address Book Appears As Messenger Conta

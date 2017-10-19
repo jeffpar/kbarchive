@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156124: XFOR: How to Use a Resync.glb with an Exchange Requestor"
-permalink: kb/156/Q156124/
+permalink: /kb/156/Q156124/
 ---
 
 ## Q156124: XFOR: How to Use a Resync.glb with an Exchange Requestor

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82225: Removing Windows Files to Increase Disk Space"
-permalink: kb/082/Q82225/
+permalink: /kb/082/Q82225/
 ---
 
 ## Q82225: Removing Windows Files to Increase Disk Space

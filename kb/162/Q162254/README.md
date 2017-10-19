@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162254: BUG: Container in Grid Column Fires Wrong Event"
-permalink: kb/162/Q162254/
+permalink: /kb/162/Q162254/
 ---
 
 ## Q162254: BUG: Container in Grid Column Fires Wrong Event

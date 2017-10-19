@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104764: IRQ Conflicts on Gateway 2000 Computers"
-permalink: kb/104/Q104764/
+permalink: /kb/104/Q104764/
 ---
 
 ## Q104764: IRQ Conflicts on Gateway 2000 Computers

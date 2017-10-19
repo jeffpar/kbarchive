@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149746: BUG: Access Violation Calling Exported Subroutine in DLL"
-permalink: kb/149/Q149746/
+permalink: /kb/149/Q149746/
 ---
 
 ## Q149746: BUG: Access Violation Calling Exported Subroutine in DLL

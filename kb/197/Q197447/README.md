@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197447: %Username% Resolved in GUI but Not at Command Line"
-permalink: kb/197/Q197447/
+permalink: /kb/197/Q197447/
 ---
 
 ## Q197447: %Username% Resolved in GUI but Not at Command Line

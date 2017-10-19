@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126847: How to Change the Title for an MS-DOS-Based Application"
-permalink: kb/126/Q126847/
+permalink: /kb/126/Q126847/
 ---
 
 ## Q126847: How to Change the Title for an MS-DOS-Based Application

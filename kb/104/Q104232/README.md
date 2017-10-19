@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104232: Windows NT Remote Access Client Information"
-permalink: kb/104/Q104232/
+permalink: /kb/104/Q104232/
 ---
 
 ## Q104232: Windows NT Remote Access Client Information

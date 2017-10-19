@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157862: FIX: Memo Field Display Problems in the Debugger Watch Window"
-permalink: kb/157/Q157862/
+permalink: /kb/157/Q157862/
 ---
 
 ## Q157862: FIX: Memo Field Display Problems in the Debugger Watch Window

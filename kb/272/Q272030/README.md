@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272030: Encarta 2001: &quot;La Mome Piaf&quot; Tour Stop Does Not Have Audio"
-permalink: kb/272/Q272030/
+permalink: /kb/272/Q272030/
 ---
 
 ## Q272030: Encarta 2001: &quot;La Mome Piaf&quot; Tour Stop Does Not Have Audio

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65896: Mislabeled Windows 3.00 Disk"
-permalink: kb/065/Q65896/
+permalink: /kb/065/Q65896/
 ---
 
 ## Q65896: Mislabeled Windows 3.00 Disk

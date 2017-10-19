@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196626: XFOR: Restricting Routing in the Internet Mail Service"
-permalink: kb/196/Q196626/
+permalink: /kb/196/Q196626/
 ---
 
 ## Q196626: XFOR: Restricting Routing in the Internet Mail Service

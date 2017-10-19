@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189400: BUG: VBComponents Add Method Cannot Add a Form"
-permalink: kb/189/Q189400/
+permalink: /kb/189/Q189400/
 ---
 
 ## Q189400: BUG: VBComponents Add Method Cannot Add a Form

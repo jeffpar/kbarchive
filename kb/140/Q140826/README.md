@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140826: TN3270 Server Rejects First Data RU After Host's CLEAR Message"
-permalink: kb/140/Q140826/
+permalink: /kb/140/Q140826/
 ---
 
 ## Q140826: TN3270 Server Rejects First Data RU After Host's CLEAR Message

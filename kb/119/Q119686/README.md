@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119686: DRIVER.SYS Message: Please Insert a Diskette for Drive X:..."
-permalink: kb/119/Q119686/
+permalink: /kb/119/Q119686/
 ---
 
 ## Q119686: DRIVER.SYS Message: Please Insert a Diskette for Drive X:...

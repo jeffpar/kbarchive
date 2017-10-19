@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276502: FP: Server Error: Unable to Retrieve the List of Record Sources"
-permalink: kb/276/Q276502/
+permalink: /kb/276/Q276502/
 ---
 
 ## Q276502: FP: Server Error: Unable to Retrieve the List of Record Sources

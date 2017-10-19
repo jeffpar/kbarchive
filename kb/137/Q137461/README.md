@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137461: Mac Encarta 95: Some Sounds Do Not Play"
-permalink: kb/137/Q137461/
+permalink: /kb/137/Q137461/
 ---
 
 ## Q137461: Mac Encarta 95: Some Sounds Do Not Play

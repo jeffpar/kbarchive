@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76855: Sound Driver Plays Portion of Sound, Then Stops"
-permalink: kb/076/Q76855/
+permalink: /kb/076/Q76855/
 ---
 
 ## Q76855: Sound Driver Plays Portion of Sound, Then Stops

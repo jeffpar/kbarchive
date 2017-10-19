@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106723: BUG: Redirection of Input to a Spawned PowerStation App Fails"
-permalink: kb/106/Q106723/
+permalink: /kb/106/Q106723/
 ---
 
 ## Q106723: BUG: Redirection of Input to a Spawned PowerStation App Fails

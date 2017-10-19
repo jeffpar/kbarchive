@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143139: Screen Captures From ProComm Plus"
-permalink: kb/143/Q143139/
+permalink: /kb/143/Q143139/
 ---
 
 ## Q143139: Screen Captures From ProComm Plus

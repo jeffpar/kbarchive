@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107085: PROFS: Using CMS Peek Command to Troubleshoot"
-permalink: kb/107/Q107085/
+permalink: /kb/107/Q107085/
 ---
 
 ## Q107085: PROFS: Using CMS Peek Command to Troubleshoot

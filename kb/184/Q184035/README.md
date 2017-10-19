@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184035: WD97: Case Change in Spelling Checker Causes Constant Recheck"
-permalink: kb/184/Q184035/
+permalink: /kb/184/Q184035/
 ---
 
 ## Q184035: WD97: Case Change in Spelling Checker Causes Constant Recheck

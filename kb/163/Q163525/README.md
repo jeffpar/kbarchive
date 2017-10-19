@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163525: Delay When Saving Word File to Windows NT 4.0 Server"
-permalink: kb/163/Q163525/
+permalink: /kb/163/Q163525/
 ---
 
 ## Q163525: Delay When Saving Word File to Windows NT 4.0 Server

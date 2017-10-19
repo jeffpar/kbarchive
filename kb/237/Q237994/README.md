@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237994: INFO: MDAC Upgrade Issues with Access ODBC Driver"
-permalink: kb/237/Q237994/
+permalink: /kb/237/Q237994/
 ---
 
 ## Q237994: INFO: MDAC Upgrade Issues with Access ODBC Driver

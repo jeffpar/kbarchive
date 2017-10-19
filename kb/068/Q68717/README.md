@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68717: ASD: Scenery Library Menu Is Blank or Corrupted"
-permalink: kb/068/Q68717/
+permalink: /kb/068/Q68717/
 ---
 
 ## Q68717: ASD: Scenery Library Menu Is Blank or Corrupted

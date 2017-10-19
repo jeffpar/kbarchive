@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167595: FP: How to Create a Script for the Marquee Control"
-permalink: kb/167/Q167595/
+permalink: /kb/167/Q167595/
 ---
 
 ## Q167595: FP: How to Create a Script for the Marquee Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171874: Link Service Title Cannot be Modified for DFT Link Services"
-permalink: kb/171/Q171874/
+permalink: /kb/171/Q171874/
 ---
 
 ## Q171874: Link Service Title Cannot be Modified for DFT Link Services

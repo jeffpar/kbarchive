@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321279: Dungeon Siege: &quot;Needs to Close&quot; Err Msg When You Start the Game"
-permalink: kb/321/Q321279/
+permalink: /kb/321/Q321279/
 ---
 
 ## Q321279: Dungeon Siege: &quot;Needs to Close&quot; Err Msg When You Start the Game

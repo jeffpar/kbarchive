@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164566: XCLN: Message Marked Private Can't Be Edited"
-permalink: kb/164/Q164566/
+permalink: /kb/164/Q164566/
 ---
 
 ## Q164566: XCLN: Message Marked Private Can't Be Edited

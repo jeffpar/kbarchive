@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238919: SMS: Distributing SMS Network Monitor"
-permalink: kb/238/Q238919/
+permalink: /kb/238/Q238919/
 ---
 
 ## Q238919: SMS: Distributing SMS Network Monitor

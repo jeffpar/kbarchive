@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213095: SMS: SMS Icons Don't Appear After Windows NT 4 Client Discovery"
-permalink: kb/213/Q213095/
+permalink: /kb/213/Q213095/
 ---
 
 ## Q213095: SMS: SMS Icons Don't Appear After Windows NT 4 Client Discovery

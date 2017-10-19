@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235195: SMS: Shared SQL Server Backup Can Corrupt Backup Files"
-permalink: kb/235/Q235195/
+permalink: /kb/235/Q235195/
 ---
 
 ## Q235195: SMS: Shared SQL Server Backup Can Corrupt Backup Files

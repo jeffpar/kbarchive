@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176275: How to Find MSN Support on the World Wide Web"
-permalink: kb/176/Q176275/
+permalink: /kb/176/Q176275/
 ---
 
 ## Q176275: How to Find MSN Support on the World Wide Web

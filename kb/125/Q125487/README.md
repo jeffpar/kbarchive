@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125487: SMS Administrator Unable To Retrieve Machine List"
-permalink: kb/125/Q125487/
+permalink: /kb/125/Q125487/
 ---
 
 ## Q125487: SMS Administrator Unable To Retrieve Machine List

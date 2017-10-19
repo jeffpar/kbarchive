@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243399: FIX: .FRM files Not Converted with MODIFY REPORT Command"
-permalink: kb/243/Q243399/
+permalink: /kb/243/Q243399/
 ---
 
 ## Q243399: FIX: .FRM files Not Converted with MODIFY REPORT Command

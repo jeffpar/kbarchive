@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107655: Writer: Borders Don't Print on PostScript Printer"
-permalink: kb/107/Q107655/
+permalink: /kb/107/Q107655/
 ---
 
 ## Q107655: Writer: Borders Don't Print on PostScript Printer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72228: BUG: Installing MASM 6.0 for OS/2 May Result in a Setup Error"
-permalink: kb/072/Q72228/
+permalink: /kb/072/Q72228/
 ---
 
 ## Q72228: BUG: Installing MASM 6.0 for OS/2 May Result in a Setup Error

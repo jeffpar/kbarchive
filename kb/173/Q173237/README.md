@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173237: FIX: Barcode Font Does Not Display or Print Correctly"
-permalink: kb/173/Q173237/
+permalink: /kb/173/Q173237/
 ---
 
 ## Q173237: FIX: Barcode Font Does Not Display or Print Correctly

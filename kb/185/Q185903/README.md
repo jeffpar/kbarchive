@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185903: Kids Plus!: Documentation Error in Paint It! Help"
-permalink: kb/185/Q185903/
+permalink: /kb/185/Q185903/
 ---
 
 ## Q185903: Kids Plus!: Documentation Error in Paint It! Help

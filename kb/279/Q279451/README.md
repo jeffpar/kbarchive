@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279451: MSN Companion sends but cannot receive e-mail"
-permalink: kb/279/Q279451/
+permalink: /kb/279/Q279451/
 ---
 
 ## Q279451: MSN Companion sends but cannot receive e-mail

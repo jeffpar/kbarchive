@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175321: SNA Client Sessions Hang Until SNA Server Is Restarted"
-permalink: kb/175/Q175321/
+permalink: /kb/175/Q175321/
 ---
 
 ## Q175321: SNA Client Sessions Hang Until SNA Server Is Restarted

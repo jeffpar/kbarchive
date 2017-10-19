@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163519: DSPU Reconnect Failure After An Outage"
-permalink: kb/163/Q163519/
+permalink: /kb/163/Q163519/
 ---
 
 ## Q163519: DSPU Reconnect Failure After An Outage

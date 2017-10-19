@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242499: HOWTO: Install ADOCE When Windows CE Services Is Not Present"
-permalink: kb/242/Q242499/
+permalink: /kb/242/Q242499/
 ---
 
 ## Q242499: HOWTO: Install ADOCE When Windows CE Services Is Not Present

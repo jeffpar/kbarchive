@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171499: FIX: IDE Doesn't Show Topics of OCX Help Files Correctly"
-permalink: kb/171/Q171499/
+permalink: /kb/171/Q171499/
 ---
 
 ## Q171499: FIX: IDE Doesn't Show Topics of OCX Help Files Correctly

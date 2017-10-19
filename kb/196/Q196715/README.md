@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196715: WD97: How to Add a Graphic or Logo to Every Label on a Page"
-permalink: kb/196/Q196715/
+permalink: /kb/196/Q196715/
 ---
 
 ## Q196715: WD97: How to Add a Graphic or Logo to Every Label on a Page

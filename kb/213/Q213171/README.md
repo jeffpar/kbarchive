@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213171: SMS: Unable to Schedule Software Metering Table Maintenance"
-permalink: kb/213/Q213171/
+permalink: /kb/213/Q213171/
 ---
 
 ## Q213171: SMS: Unable to Schedule Software Metering Table Maintenance

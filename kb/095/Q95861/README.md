@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95861: RAMDRIVE.SYS Should Precede DBLSPACE.SYS in CONFIG.SYS"
-permalink: kb/095/Q95861/
+permalink: /kb/095/Q95861/
 ---
 
 ## Q95861: RAMDRIVE.SYS Should Precede DBLSPACE.SYS in CONFIG.SYS

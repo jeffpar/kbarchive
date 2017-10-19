@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196437: WD97: Cannot Cancel Find Record Search"
-permalink: kb/196/Q196437/
+permalink: /kb/196/Q196437/
 ---
 
 ## Q196437: WD97: Cannot Cancel Find Record Search

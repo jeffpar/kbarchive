@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276681: HAC Does Not Start If Database Key Does Not Exist"
-permalink: kb/276/Q276681/
+permalink: /kb/276/Q276681/
 ---
 
 ## Q276681: HAC Does Not Start If Database Key Does Not Exist

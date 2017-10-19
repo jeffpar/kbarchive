@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272733: E-mail on the MSN Companion"
-permalink: kb/272/Q272733/
+permalink: /kb/272/Q272733/
 ---
 
 ## Q272733: E-mail on the MSN Companion

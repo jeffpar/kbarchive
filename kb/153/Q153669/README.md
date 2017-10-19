@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153669: DOC: Documented Properties Do Not Exist on DBGrid"
-permalink: kb/153/Q153669/
+permalink: /kb/153/Q153669/
 ---
 
 ## Q153669: DOC: Documented Properties Do Not Exist on DBGrid

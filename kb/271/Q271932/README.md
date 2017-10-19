@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271932: XCON: Event ID 2253: Directory Operation Failed"
-permalink: kb/271/Q271932/
+permalink: /kb/271/Q271932/
 ---
 
 ## Q271932: XCON: Event ID 2253: Directory Operation Failed

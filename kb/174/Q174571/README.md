@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174571: INFO: Making the Alerter Service Automatic during Unattended Set"
-permalink: kb/174/Q174571/
+permalink: /kb/174/Q174571/
 ---
 
 ## Q174571: INFO: Making the Alerter Service Automatic during Unattended Set

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48881: Mac Gen: Cannot Use Clipboard with Send Mail Command"
-permalink: kb/048/Q48881/
+permalink: /kb/048/Q48881/
 ---
 
 ## Q48881: Mac Gen: Cannot Use Clipboard with Send Mail Command

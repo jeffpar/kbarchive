@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234057: XFOR: Command-Line Migration to Exchange Server Causes Error"
-permalink: kb/234/Q234057/
+permalink: /kb/234/Q234057/
 ---
 
 ## Q234057: XFOR: Command-Line Migration to Exchange Server Causes Error

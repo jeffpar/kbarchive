@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126851: Error Changing To Directory with Spaces Using /D Switch"
-permalink: kb/126/Q126851/
+permalink: /kb/126/Q126851/
 ---
 
 ## Q126851: Error Changing To Directory with Spaces Using /D Switch

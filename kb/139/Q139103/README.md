@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139103: Replication to Import Computers in a WAN Environment"
-permalink: kb/139/Q139103/
+permalink: /kb/139/Q139103/
 ---
 
 ## Q139103: Replication to Import Computers in a WAN Environment

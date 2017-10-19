@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152672: XFOR: No Macintosh File Support in the IMC"
-permalink: kb/152/Q152672/
+permalink: /kb/152/Q152672/
 ---
 
 ## Q152672: XFOR: No Macintosh File Support in the IMC

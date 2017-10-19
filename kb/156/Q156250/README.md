@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156250: SMS: Job Status Remains Active When Sent to Entire Site"
-permalink: kb/156/Q156250/
+permalink: /kb/156/Q156250/
 ---
 
 ## Q156250: SMS: Job Status Remains Active When Sent to Entire Site

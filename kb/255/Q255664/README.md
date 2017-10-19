@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255664: Installation Problem Due to SQL 7.0 Quoted_Identifier Attribute"
-permalink: kb/255/Q255664/
+permalink: /kb/255/Q255664/
 ---
 
 ## Q255664: Installation Problem Due to SQL 7.0 Quoted_Identifier Attribute

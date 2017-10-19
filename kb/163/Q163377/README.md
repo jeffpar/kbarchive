@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163377: XADM: Messages Forwarded from All-In-One Have Wrong Sent Date"
-permalink: kb/163/Q163377/
+permalink: /kb/163/Q163377/
 ---
 
 ## Q163377: XADM: Messages Forwarded from All-In-One Have Wrong Sent Date

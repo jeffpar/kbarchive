@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90680: Mac Srv: Determining Who Your Network Manager Is"
-permalink: kb/090/Q90680/
+permalink: /kb/090/Q90680/
 ---
 
 ## Q90680: Mac Srv: Determining Who Your Network Manager Is

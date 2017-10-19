@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160594: HOWTO: Use Report File Units"
-permalink: kb/160/Q160594/
+permalink: /kb/160/Q160594/
 ---
 
 ## Q160594: HOWTO: Use Report File Units

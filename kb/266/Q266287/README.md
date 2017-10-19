@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266287: SMS: Network Discovery Properties Hangs on Subnets Tab"
-permalink: kb/266/Q266287/
+permalink: /kb/266/Q266287/
 ---
 
 ## Q266287: SMS: Network Discovery Properties Hangs on Subnets Tab

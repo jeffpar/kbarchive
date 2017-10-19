@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293844: SMS: Troubleshooting &quot;outstanding devices in our presence&quot; when"
-permalink: kb/293/Q293844/
+permalink: /kb/293/Q293844/
 ---
 
 ## Q293844: SMS: Troubleshooting &quot;outstanding devices in our presence&quot; when

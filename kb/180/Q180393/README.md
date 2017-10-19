@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180393: High CPU Use if History Log Limit Exceeds Subscription Number"
-permalink: kb/180/Q180393/
+permalink: /kb/180/Q180393/
 ---
 
 ## Q180393: High CPU Use if History Log Limit Exceeds Subscription Number

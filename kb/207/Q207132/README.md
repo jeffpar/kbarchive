@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207132: INFO: How Regsvr32.exe Registers and Unregisters COM DLLs"
-permalink: kb/207/Q207132/
+permalink: /kb/207/Q207132/
 ---
 
 ## Q207132: INFO: How Regsvr32.exe Registers and Unregisters COM DLLs

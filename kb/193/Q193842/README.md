@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193842: XFOR: DXA Does Not Handle Long MAC Mail Addresses Properly"
-permalink: kb/193/Q193842/
+permalink: /kb/193/Q193842/
 ---
 
 ## Q193842: XFOR: DXA Does Not Handle Long MAC Mail Addresses Properly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168773: SMSINST: Changes to Wizard Dialogs Do Not Appear Immediately"
-permalink: kb/168/Q168773/
+permalink: /kb/168/Q168773/
 ---
 
 ## Q168773: SMSINST: Changes to Wizard Dialogs Do Not Appear Immediately

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102116: How to Manually Delete Print Shares or Printers"
-permalink: kb/102/Q102116/
+permalink: /kb/102/Q102116/
 ---
 
 ## Q102116: How to Manually Delete Print Shares or Printers

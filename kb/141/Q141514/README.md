@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141514: Wrong IP Address Chosen from WINS Server"
-permalink: kb/141/Q141514/
+permalink: /kb/141/Q141514/
 ---
 
 ## Q141514: Wrong IP Address Chosen from WINS Server

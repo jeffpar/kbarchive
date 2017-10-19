@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125974: MS DOS 6.2 STEP BY STEP: Corrections and Comments"
-permalink: kb/125/Q125974/
+permalink: /kb/125/Q125974/
 ---
 
 ## Q125974: MS DOS 6.2 STEP BY STEP: Corrections and Comments

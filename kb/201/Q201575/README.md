@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201575: How to Configure the Telnet Server to Use the Korn Shell"
-permalink: kb/201/Q201575/
+permalink: /kb/201/Q201575/
 ---
 
 ## Q201575: How to Configure the Telnet Server to Use the Korn Shell

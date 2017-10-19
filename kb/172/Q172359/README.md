@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172359: PPT7: Error Editing Graph in PowerPoint 95 &amp; 97 Dual Format File"
-permalink: kb/172/Q172359/
+permalink: /kb/172/Q172359/
 ---
 
 ## Q172359: PPT7: Error Editing Graph in PowerPoint 95 &amp; 97 Dual Format File

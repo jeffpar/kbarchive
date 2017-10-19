@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223025: HOWTO: Call GetNetworkParams/GetAdaptersInfo From Visual Basic"
-permalink: kb/223/Q223025/
+permalink: /kb/223/Q223025/
 ---
 
 ## Q223025: HOWTO: Call GetNetworkParams/GetAdaptersInfo From Visual Basic

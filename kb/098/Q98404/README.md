@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98404: Using MS Undelete to Restore Files with Existing Filenames"
-permalink: kb/098/Q98404/
+permalink: /kb/098/Q98404/
 ---
 
 ## Q98404: Using MS Undelete to Restore Files with Existing Filenames

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194789: HOWTO: Determine Available PaperBins wth DeviceCapabilities API"
-permalink: kb/194/Q194789/
+permalink: /kb/194/Q194789/
 ---
 
 ## Q194789: HOWTO: Determine Available PaperBins wth DeviceCapabilities API

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224327: XCON: Inetinfo Stops with ASP Event 5 in CDO!EcDecompressData"
-permalink: kb/224/Q224327/
+permalink: /kb/224/Q224327/
 ---
 
 ## Q224327: XCON: Inetinfo Stops with ASP Event 5 in CDO!EcDecompressData

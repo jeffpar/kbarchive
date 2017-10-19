@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169947: HOWTO: DDX - DDV for 64-Bit Numbers"
-permalink: kb/169/Q169947/
+permalink: /kb/169/Q169947/
 ---
 
 ## Q169947: HOWTO: DDX - DDV for 64-Bit Numbers

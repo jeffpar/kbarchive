@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152667: NTFS Uses CPU 100% While Allocating File Space"
-permalink: kb/152/Q152667/
+permalink: /kb/152/Q152667/
 ---
 
 ## Q152667: NTFS Uses CPU 100% While Allocating File Space

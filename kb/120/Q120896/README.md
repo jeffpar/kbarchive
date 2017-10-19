@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120896: TCP/IP-32 LMHOSTS #INCLUDE Not Working at Logon"
-permalink: kb/120/Q120896/
+permalink: /kb/120/Q120896/
 ---
 
 ## Q120896: TCP/IP-32 LMHOSTS #INCLUDE Not Working at Logon

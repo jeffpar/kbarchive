@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245814: Interix Software Development Kit Libraries"
-permalink: kb/245/Q245814/
+permalink: /kb/245/Q245814/
 ---
 
 ## Q245814: Interix Software Development Kit Libraries

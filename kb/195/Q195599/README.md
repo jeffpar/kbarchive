@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195599: Games: Acceleration Unavailable w/ 3Dfx Voodoo Display Adapter"
-permalink: kb/195/Q195599/
+permalink: /kb/195/Q195599/
 ---
 
 ## Q195599: Games: Acceleration Unavailable w/ 3Dfx Voodoo Display Adapter

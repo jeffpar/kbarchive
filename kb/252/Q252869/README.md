@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252869: XADM: Preventing Mail Loss When Move Mailbox Is Unsuccessful"
-permalink: kb/252/Q252869/
+permalink: /kb/252/Q252869/
 ---
 
 ## Q252869: XADM: Preventing Mail Loss When Move Mailbox Is Unsuccessful

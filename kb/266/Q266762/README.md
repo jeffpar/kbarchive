@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266762: Err Msg: STOP 0x00000050 0xe2000000 0x00000000 0x00000000..."
-permalink: kb/266/Q266762/
+permalink: /kb/266/Q266762/
 ---
 
 ## Q266762: Err Msg: STOP 0x00000050 0xe2000000 0x00000000 0x00000000...

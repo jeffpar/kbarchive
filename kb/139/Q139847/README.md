@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139847: Cannot Connect Using NET Command with Dial-Up Networking"
-permalink: kb/139/Q139847/
+permalink: /kb/139/Q139847/
 ---
 
 ## Q139847: Cannot Connect Using NET Command with Dial-Up Networking

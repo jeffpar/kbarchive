@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120269: WFWG NetBEUI Differences Running on Token Ring Network"
-permalink: kb/120/Q120269/
+permalink: /kb/120/Q120269/
 ---
 
 ## Q120269: WFWG NetBEUI Differences Running on Token Ring Network

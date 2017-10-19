@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137061: DOCERR: DO FORM LINKED Clause Does Not Require a Variable"
-permalink: kb/137/Q137061/
+permalink: /kb/137/Q137061/
 ---
 
 ## Q137061: DOCERR: DO FORM LINKED Clause Does Not Require a Variable

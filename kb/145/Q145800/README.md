@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145800: Pregnancy: &quot;Find&quot; Tips and Tricks"
-permalink: kb/145/Q145800/
+permalink: /kb/145/Q145800/
 ---
 
 ## Q145800: Pregnancy: &quot;Find&quot; Tips and Tricks

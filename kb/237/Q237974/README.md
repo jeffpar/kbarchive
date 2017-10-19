@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237974: Unable to Activate a DCOM Server from WTS Client Session"
-permalink: kb/237/Q237974/
+permalink: /kb/237/Q237974/
 ---
 
 ## Q237974: Unable to Activate a DCOM Server from WTS Client Session

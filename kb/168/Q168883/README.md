@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168883: XFOR: 4037 Event Starting Internet Mail Service, 1067 IMC Error"
-permalink: kb/168/Q168883/
+permalink: /kb/168/Q168883/
 ---
 
 ## Q168883: XFOR: 4037 Event Starting Internet Mail Service, 1067 IMC Error

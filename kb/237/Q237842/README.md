@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237842: NTVDM May Switch to Uppercase After Running a 32-Bit Program"
-permalink: kb/237/Q237842/
+permalink: /kb/237/Q237842/
 ---
 
 ## Q237842: NTVDM May Switch to Uppercase After Running a 32-Bit Program

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103889: Trace Utilities Isolate Data Flow Problems Between Stations"
-permalink: kb/103/Q103889/
+permalink: /kb/103/Q103889/
 ---
 
 ## Q103889: Trace Utilities Isolate Data Flow Problems Between Stations

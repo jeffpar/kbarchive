@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77707: Turbo XT BIOS, Floppy Drives, and MS-DOS 3.3 and Later"
-permalink: kb/077/Q77707/
+permalink: /kb/077/Q77707/
 ---
 
 ## Q77707: Turbo XT BIOS, Floppy Drives, and MS-DOS 3.3 and Later

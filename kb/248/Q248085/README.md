@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248085: Err Msg: HTTP 401.5 - Unauthorized: Authorization by ISAPI ..."
-permalink: kb/248/Q248085/
+permalink: /kb/248/Q248085/
 ---
 
 ## Q248085: Err Msg: HTTP 401.5 - Unauthorized: Authorization by ISAPI ...

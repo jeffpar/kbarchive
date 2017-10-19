@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108877: PC Gen: PODIAG.EXE Toolbar Icon Descriptions"
-permalink: kb/108/Q108877/
+permalink: /kb/108/Q108877/
 ---
 
 ## Q108877: PC Gen: PODIAG.EXE Toolbar Icon Descriptions

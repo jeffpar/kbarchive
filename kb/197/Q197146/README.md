@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197146: DNS Fails to Start w/ Event 1000 and 1004 and SCM 7023"
-permalink: kb/197/Q197146/
+permalink: /kb/197/Q197146/
 ---
 
 ## Q197146: DNS Fails to Start w/ Event 1000 and 1004 and SCM 7023

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142353: Scenes 2.0: ErrMsg: Illegal Instruction In Module MSSCMN.DLL"
-permalink: kb/142/Q142353/
+permalink: /kb/142/Q142353/
 ---
 
 ## Q142353: Scenes 2.0: ErrMsg: Illegal Instruction In Module MSSCMN.DLL

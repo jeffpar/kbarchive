@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168854: Puzzle Collection: Canceling Setup Will Corrupt Program Files"
-permalink: kb/168/Q168854/
+permalink: /kb/168/Q168854/
 ---
 
 ## Q168854: Puzzle Collection: Canceling Setup Will Corrupt Program Files

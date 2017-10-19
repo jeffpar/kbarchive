@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158702: INFO: How ANALYZE Passes Work"
-permalink: kb/158/Q158702/
+permalink: /kb/158/Q158702/
 ---
 
 ## Q158702: INFO: How ANALYZE Passes Work

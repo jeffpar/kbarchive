@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67824: Flight Simulator: Sensitive Stall Warning on Cessna"
-permalink: kb/067/Q67824/
+permalink: /kb/067/Q67824/
 ---
 
 ## Q67824: Flight Simulator: Sensitive Stall Warning on Cessna

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192768: FIX: Ambiguous Date/Datetime Constant Error"
-permalink: kb/192/Q192768/
+permalink: /kb/192/Q192768/
 ---
 
 ## Q192768: FIX: Ambiguous Date/Datetime Constant Error

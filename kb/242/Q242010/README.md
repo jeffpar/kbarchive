@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242010: FIX: The Data Form Wizard May Not Open an Access 2000 Database"
-permalink: kb/242/Q242010/
+permalink: /kb/242/Q242010/
 ---
 
 ## Q242010: FIX: The Data Form Wizard May Not Open an Access 2000 Database

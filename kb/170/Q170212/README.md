@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170212: WD97: Cutting Object wth Document Map Showing Hangs Word"
-permalink: kb/170/Q170212/
+permalink: /kb/170/Q170212/
 ---
 
 ## Q170212: WD97: Cutting Object wth Document Map Showing Hangs Word

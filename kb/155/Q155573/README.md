@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155573: &quot;Stop 0x50&quot; Transferring Files over RAS with Windows NT 4.0"
-permalink: kb/155/Q155573/
+permalink: /kb/155/Q155573/
 ---
 
 ## Q155573: &quot;Stop 0x50&quot; Transferring Files over RAS with Windows NT 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114727: Quicken: GP Fault in QW.EXE During Transaction"
-permalink: kb/114/Q114727/
+permalink: /kb/114/Q114727/
 ---
 
 ## Q114727: Quicken: GP Fault in QW.EXE During Transaction

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193106: Filesystem Filter Drivers May Unload Unexpectedly"
-permalink: kb/193/Q193106/
+permalink: /kb/193/Q193106/
 ---
 
 ## Q193106: Filesystem Filter Drivers May Unload Unexpectedly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112621: How to Use Workgroup Add-On and WFWG 3.11 on Same Computer"
-permalink: kb/112/Q112621/
+permalink: /kb/112/Q112621/
 ---
 
 ## Q112621: How to Use Workgroup Add-On and WFWG 3.11 on Same Computer

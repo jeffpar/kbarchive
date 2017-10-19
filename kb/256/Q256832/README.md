@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256832: MapPoint 2001: File Size of Map Increases Unexpectedly"
-permalink: kb/256/Q256832/
+permalink: /kb/256/Q256832/
 ---
 
 ## Q256832: MapPoint 2001: File Size of Map Increases Unexpectedly

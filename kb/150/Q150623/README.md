@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150623: Mac Bookshelf '96-'97: Startup Screen Appears Fuzzy or Blurry"
-permalink: kb/150/Q150623/
+permalink: /kb/150/Q150623/
 ---
 
 ## Q150623: Mac Bookshelf '96-'97: Startup Screen Appears Fuzzy or Blurry

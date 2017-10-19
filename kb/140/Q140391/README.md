@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140391: NT3.51 SP2 Driver Conflict w/ Diamond Viper PCI and Video Spigot"
-permalink: kb/140/Q140391/
+permalink: /kb/140/Q140391/
 ---
 
 ## Q140391: NT3.51 SP2 Driver Conflict w/ Diamond Viper PCI and Video Spigot

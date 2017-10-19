@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224271: Streets and Trips 2000: Route Hash Marks Are Not Visible"
-permalink: kb/224/Q224271/
+permalink: /kb/224/Q224271/
 ---
 
 ## Q224271: Streets and Trips 2000: Route Hash Marks Are Not Visible

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143086: FIX: CFile::GetFileName() Always Returns CString w/Zero Length"
-permalink: kb/143/Q143086/
+permalink: /kb/143/Q143086/
 ---
 
 ## Q143086: FIX: CFile::GetFileName() Always Returns CString w/Zero Length

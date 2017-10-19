@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133243: How to Determine Which Key the User Pressed in a Grid"
-permalink: kb/133/Q133243/
+permalink: /kb/133/Q133243/
 ---
 
 ## Q133243: How to Determine Which Key the User Pressed in a Grid

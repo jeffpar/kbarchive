@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141841: Restore Windows Files Option Missing from Setup"
-permalink: kb/141/Q141841/
+permalink: /kb/141/Q141841/
 ---
 
 ## Q141841: Restore Windows Files Option Missing from Setup

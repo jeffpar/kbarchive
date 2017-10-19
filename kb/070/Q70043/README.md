@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70043: Tandy 2800HD Unable to Run Windows in Standard Mode"
-permalink: kb/070/Q70043/
+permalink: /kb/070/Q70043/
 ---
 
 ## Q70043: Tandy 2800HD Unable to Run Windows in Standard Mode

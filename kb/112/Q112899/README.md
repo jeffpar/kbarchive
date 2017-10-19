@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112899: PC WRmt: Problems Mixing Language Versions of Mail"
-permalink: kb/112/Q112899/
+permalink: /kb/112/Q112899/
 ---
 
 ## Q112899: PC WRmt: Problems Mixing Language Versions of Mail

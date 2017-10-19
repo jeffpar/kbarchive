@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125449: Arranging Icons by Type Does Not Sort by Extension"
-permalink: kb/125/Q125449/
+permalink: /kb/125/Q125449/
 ---
 
 ## Q125449: Arranging Icons by Type Does Not Sort by Extension

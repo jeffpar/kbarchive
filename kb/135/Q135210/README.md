@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135210: Setup May Hang Detecting MV Premium 3-D SCSI Adapter"
-permalink: kb/135/Q135210/
+permalink: /kb/135/Q135210/
 ---
 
 ## Q135210: Setup May Hang Detecting MV Premium 3-D SCSI Adapter

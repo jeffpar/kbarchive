@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149278: FIX: TreeView.Visible = False at Design-Time Causes Problems"
-permalink: kb/149/Q149278/
+permalink: /kb/149/Q149278/
 ---
 
 ## Q149278: FIX: TreeView.Visible = False at Design-Time Causes Problems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182284: WD97: Cannot Cross-reference to Caption in Text Box"
-permalink: kb/182/Q182284/
+permalink: /kb/182/Q182284/
 ---
 
 ## Q182284: WD97: Cannot Cross-reference to Caption in Text Box

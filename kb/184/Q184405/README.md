@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184405: FP: Wrapping Text Around an Image in FrontPage Editor"
-permalink: kb/184/Q184405/
+permalink: /kb/184/Q184405/
 ---
 
 ## Q184405: FP: Wrapping Text Around an Image in FrontPage Editor

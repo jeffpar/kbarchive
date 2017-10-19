@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241734: SMS: MMC Stack Overflow in User Security Wizard"
-permalink: kb/241/Q241734/
+permalink: /kb/241/Q241734/
 ---
 
 ## Q241734: SMS: MMC Stack Overflow in User Security Wizard

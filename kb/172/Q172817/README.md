@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172817: SNATRACE Unable to Purge Trace Files on Remote System"
-permalink: kb/172/Q172817/
+permalink: /kb/172/Q172817/
 ---
 
 ## Q172817: SNATRACE Unable to Purge Trace Files on Remote System

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177771: XADM: Error 0x8004010f Occurred In Function EcConfigMsgToSend"
-permalink: kb/177/Q177771/
+permalink: /kb/177/Q177771/
 ---
 
 ## Q177771: XADM: Error 0x8004010f Occurred In Function EcConfigMsgToSend

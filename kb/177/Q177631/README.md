@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177631: Comdlg32 Fails to Display Drives Mapped by SUBST Command"
-permalink: kb/177/Q177631/
+permalink: /kb/177/Q177631/
 ---
 
 ## Q177631: Comdlg32 Fails to Display Drives Mapped by SUBST Command

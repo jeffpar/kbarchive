@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154301: XCON: MTA X.400 Connector Problems on Slow Links"
-permalink: kb/154/Q154301/
+permalink: /kb/154/Q154301/
 ---
 
 ## Q154301: XCON: MTA X.400 Connector Problems on Slow Links

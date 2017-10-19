@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221926: TCP/IP Forwarding Buffer Grows to Use Available Kernel Memory"
-permalink: kb/221/Q221926/
+permalink: /kb/221/Q221926/
 ---
 
 ## Q221926: TCP/IP Forwarding Buffer Grows to Use Available Kernel Memory

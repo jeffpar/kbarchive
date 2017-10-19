@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107666: SP2b NTDETECT Doesn't Recognize Submodel Bytes of IBM Thinkpad"
-permalink: kb/107/Q107666/
+permalink: /kb/107/Q107666/
 ---
 
 ## Q107666: SP2b NTDETECT Doesn't Recognize Submodel Bytes of IBM Thinkpad

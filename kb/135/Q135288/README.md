@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135288: Network Monitor Msg: Driver Does Not Support Promiscuous Mode"
-permalink: kb/135/Q135288/
+permalink: /kb/135/Q135288/
 ---
 
 ## Q135288: Network Monitor Msg: Driver Does Not Support Promiscuous Mode

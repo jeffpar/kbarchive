@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165824: ADT/ODE: End Statement in Run-Time Application Causes Error"
-permalink: kb/165/Q165824/
+permalink: /kb/165/Q165824/
 ---
 
 ## Q165824: ADT/ODE: End Statement in Run-Time Application Causes Error

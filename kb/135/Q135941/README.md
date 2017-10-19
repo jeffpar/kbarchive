@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135941: Write Protection Error Message with DriveSpace 3"
-permalink: kb/135/Q135941/
+permalink: /kb/135/Q135941/
 ---
 
 ## Q135941: Write Protection Error Message with DriveSpace 3

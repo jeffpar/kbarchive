@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169565: PRB: Type Mismatch Using OLE Automation to Word 97"
-permalink: kb/169/Q169565/
+permalink: /kb/169/Q169565/
 ---
 
 ## Q169565: PRB: Type Mismatch Using OLE Automation to Word 97

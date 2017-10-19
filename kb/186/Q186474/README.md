@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186474: Java Applets Will Not Run on Terminal Server"
-permalink: kb/186/Q186474/
+permalink: /kb/186/Q186474/
 ---
 
 ## Q186474: Java Applets Will Not Run on Terminal Server

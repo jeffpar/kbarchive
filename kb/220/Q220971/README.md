@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220971: SAMPLE: VSSAddin.exe Notifies Administrator of SourceSafe Events"
-permalink: kb/220/Q220971/
+permalink: /kb/220/Q220971/
 ---
 
 ## Q220971: SAMPLE: VSSAddin.exe Notifies Administrator of SourceSafe Events

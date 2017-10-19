@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186198: PRB: ClassWizard Binds Fields in Incorrect Order Causing Errors"
-permalink: kb/186/Q186198/
+permalink: /kb/186/Q186198/
 ---
 
 ## Q186198: PRB: ClassWizard Binds Fields in Incorrect Order Causing Errors

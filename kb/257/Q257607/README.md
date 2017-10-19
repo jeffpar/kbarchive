@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257607: Programming Applications for Microsoft Windows Comments and Corr"
-permalink: kb/257/Q257607/
+permalink: /kb/257/Q257607/
 ---
 
 ## Q257607: Programming Applications for Microsoft Windows Comments and Corr

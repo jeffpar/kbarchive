@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120700: Flight Simulator: Definition of Terms for Weather Areas"
-permalink: kb/120/Q120700/
+permalink: /kb/120/Q120700/
 ---
 
 ## Q120700: Flight Simulator: Definition of Terms for Weather Areas

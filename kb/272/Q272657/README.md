@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272657: Golf 2001: Error Message When You Add New Player to Game"
-permalink: kb/272/Q272657/
+permalink: /kb/272/Q272657/
 ---
 
 ## Q272657: Golf 2001: Error Message When You Add New Player to Game

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157635: PRB: COPY FILE &lt;filename&gt; TO LPT1 Causes Invalid Seek Offset"
-permalink: kb/157/Q157635/
+permalink: /kb/157/Q157635/
 ---
 
 ## Q157635: PRB: COPY FILE &lt;filename&gt; TO LPT1 Causes Invalid Seek Offset

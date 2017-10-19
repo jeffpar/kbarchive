@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231828: Midtown 1.0/2.0: Description of the Troubleshooting Shortcuts"
-permalink: kb/231/Q231828/
+permalink: /kb/231/Q231828/
 ---
 
 ## Q231828: Midtown 1.0/2.0: Description of the Troubleshooting Shortcuts

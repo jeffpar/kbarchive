@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163959: FIX: .dct File Grows Larger After Each Compile"
-permalink: kb/163/Q163959/
+permalink: /kb/163/Q163959/
 ---
 
 ## Q163959: FIX: .dct File Grows Larger After Each Compile

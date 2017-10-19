@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179980: XFOR: DBCS Messages Not Migrated Correctly from GroupWise"
-permalink: kb/179/Q179980/
+permalink: /kb/179/Q179980/
 ---
 
 ## Q179980: XFOR: DBCS Messages Not Migrated Correctly from GroupWise

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256056: FIX: DllMain Throws Unhandled Exception with DLL_THREAD_DETACH"
-permalink: kb/256/Q256056/
+permalink: /kb/256/Q256056/
 ---
 
 ## Q256056: FIX: DllMain Throws Unhandled Exception with DLL_THREAD_DETACH

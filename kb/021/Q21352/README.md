@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q21352: Setting the COM, NAV, and OBI"
-permalink: kb/021/Q21352/
+permalink: /kb/021/Q21352/
 ---
 
 ## Q21352: Setting the COM, NAV, and OBI

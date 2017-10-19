@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164963: Form Feed at End of Job When the Last Item Is a Blank Line"
-permalink: kb/164/Q164963/
+permalink: /kb/164/Q164963/
 ---
 
 ## Q164963: Form Feed at End of Job When the Last Item Is a Blank Line

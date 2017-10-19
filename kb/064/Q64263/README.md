@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64263: Toshiba T1200XE Needs /M:toshiba for Standard-Mode Windows"
-permalink: kb/064/Q64263/
+permalink: /kb/064/Q64263/
 ---
 
 ## Q64263: Toshiba T1200XE Needs /M:toshiba for Standard-Mode Windows

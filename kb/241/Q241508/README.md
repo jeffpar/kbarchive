@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241508: WD97: ParagraphFormat.Shading Shades Cells Black"
-permalink: kb/241/Q241508/
+permalink: /kb/241/Q241508/
 ---
 
 ## Q241508: WD97: ParagraphFormat.Shading Shades Cells Black

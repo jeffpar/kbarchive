@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196512: WD97: Frame Does Not Copy from One Column to Another"
-permalink: kb/196/Q196512/
+permalink: /kb/196/Q196512/
 ---
 
 ## Q196512: WD97: Frame Does Not Copy from One Column to Another

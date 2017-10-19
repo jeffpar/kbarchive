@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63595: Windows 3.0: Installing Video Seven's High-Resolution Drivers"
-permalink: kb/063/Q63595/
+permalink: /kb/063/Q63595/
 ---
 
 ## Q63595: Windows 3.0: Installing Video Seven's High-Resolution Drivers

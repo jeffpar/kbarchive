@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276273: Remote Administration Is Not Supported in Multiple Master Domain"
-permalink: kb/276/Q276273/
+permalink: /kb/276/Q276273/
 ---
 
 ## Q276273: Remote Administration Is Not Supported in Multiple Master Domain

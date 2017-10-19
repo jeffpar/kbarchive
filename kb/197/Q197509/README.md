@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197509: XFOR: Notes Connector May &quot;Timeout on resource lock&quot; on Startup"
-permalink: kb/197/Q197509/
+permalink: /kb/197/Q197509/
 ---
 
 ## Q197509: XFOR: Notes Connector May &quot;Timeout on resource lock&quot; on Startup

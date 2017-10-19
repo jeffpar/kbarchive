@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130680: Service, Protocol, and Adapter Lists Can Appear Blank in NCPA"
-permalink: kb/130/Q130680/
+permalink: /kb/130/Q130680/
 ---
 
 ## Q130680: Service, Protocol, and Adapter Lists Can Appear Blank in NCPA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184351: FP: Cell Background Color Doesn't Appear w/ Transparent Image"
-permalink: kb/184/Q184351/
+permalink: /kb/184/Q184351/
 ---
 
 ## Q184351: FP: Cell Background Color Doesn't Appear w/ Transparent Image

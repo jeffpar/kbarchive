@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121688: Using the ThrustMaster WCS with Space Simulator"
-permalink: kb/121/Q121688/
+permalink: /kb/121/Q121688/
 ---
 
 ## Q121688: Using the ThrustMaster WCS with Space Simulator

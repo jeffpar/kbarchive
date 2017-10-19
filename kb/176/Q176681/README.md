@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176681: XGEN: Description of Microsoft Exchange Server 5.5"
-permalink: kb/176/Q176681/
+permalink: /kb/176/Q176681/
 ---
 
 ## Q176681: XGEN: Description of Microsoft Exchange Server 5.5

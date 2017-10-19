@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190079: BUG: Procedure Declaration Does Not Match Description of Event"
-permalink: kb/190/Q190079/
+permalink: /kb/190/Q190079/
 ---
 
 ## Q190079: BUG: Procedure Declaration Does Not Match Description of Event

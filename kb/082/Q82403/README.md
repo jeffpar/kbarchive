@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82403: Attachmate 3.21 Font Lists Multiple Times"
-permalink: kb/082/Q82403/
+permalink: /kb/082/Q82403/
 ---
 
 ## Q82403: Attachmate 3.21 Font Lists Multiple Times

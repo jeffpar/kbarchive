@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184576: SNAPRINT: 3270 Order, Program Tab Randomly Prints Two Spaces"
-permalink: kb/184/Q184576/
+permalink: /kb/184/Q184576/
 ---
 
 ## Q184576: SNAPRINT: 3270 Order, Program Tab Randomly Prints Two Spaces

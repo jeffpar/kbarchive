@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111467: Error 6101 &amp; 6102: The String Specified by the Workgroup..."
-permalink: kb/111/Q111467/
+permalink: /kb/111/Q111467/
 ---
 
 ## Q111467: Error 6101 &amp; 6102: The String Specified by the Workgroup...

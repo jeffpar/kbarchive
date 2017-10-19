@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195010: Activate_session/Deactivate_session Unavailable in SNA Server"
-permalink: kb/195/Q195010/
+permalink: /kb/195/Q195010/
 ---
 
 ## Q195010: Activate_session/Deactivate_session Unavailable in SNA Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156132: DOC: Registration Card Reports Wrong Support Policy"
-permalink: kb/156/Q156132/
+permalink: /kb/156/Q156132/
 ---
 
 ## Q156132: DOC: Registration Card Reports Wrong Support Policy

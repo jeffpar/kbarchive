@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198770: SMS: Floppy Drive Spins During Hardware Inventory Scans"
-permalink: kb/198/Q198770/
+permalink: /kb/198/Q198770/
 ---
 
 ## Q198770: SMS: Floppy Drive Spins During Hardware Inventory Scans

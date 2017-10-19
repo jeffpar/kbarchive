@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185166: WD97: EnableCancelKey Fails to Reset After Macro Completion"
-permalink: kb/185/Q185166/
+permalink: /kb/185/Q185166/
 ---
 
 ## Q185166: WD97: EnableCancelKey Fails to Reset After Macro Completion

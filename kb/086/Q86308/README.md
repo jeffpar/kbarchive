@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86308: Unable to Test Idlewild Screen Savers from Control Panel"
-permalink: kb/086/Q86308/
+permalink: /kb/086/Q86308/
 ---
 
 ## Q86308: Unable to Test Idlewild Screen Savers from Control Panel

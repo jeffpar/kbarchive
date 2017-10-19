@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128064: Data Loader Fails to Recover Partial Inventory Transfer"
-permalink: kb/128/Q128064/
+permalink: /kb/128/Q128064/
 ---
 
 ## Q128064: Data Loader Fails to Recover Partial Inventory Transfer

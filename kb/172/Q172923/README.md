@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172923: FIX: Copy To ... Type SDF Causes Error Message in Visual FoxPro"
-permalink: kb/172/Q172923/
+permalink: /kb/172/Q172923/
 ---
 
 ## Q172923: FIX: Copy To ... Type SDF Causes Error Message in Visual FoxPro

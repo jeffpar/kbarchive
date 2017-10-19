@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152643: Netmon Does Not Capture Outbound Frames"
-permalink: kb/152/Q152643/
+permalink: /kb/152/Q152643/
 ---
 
 ## Q152643: Netmon Does Not Capture Outbound Frames

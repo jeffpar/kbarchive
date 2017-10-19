@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307976: FP: Error When Using FrontPage with URLScan"
-permalink: kb/307/Q307976/
+permalink: /kb/307/Q307976/
 ---
 
 ## Q307976: FP: Error When Using FrontPage with URLScan

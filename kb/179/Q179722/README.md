@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179722: XCLN: Internet User Cannot Display Form Sent via Mail Connector"
-permalink: kb/179/Q179722/
+permalink: /kb/179/Q179722/
 ---
 
 ## Q179722: XCLN: Internet User Cannot Display Form Sent via Mail Connector

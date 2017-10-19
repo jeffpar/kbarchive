@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89615: Hauppauge Win/TV and Windows"
-permalink: kb/089/Q89615/
+permalink: /kb/089/Q89615/
 ---
 
 ## Q89615: Hauppauge Win/TV and Windows

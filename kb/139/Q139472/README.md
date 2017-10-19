@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139472: ESS488 Sound Card Cannot Be Configured for IRQ 10"
-permalink: kb/139/Q139472/
+permalink: /kb/139/Q139472/
 ---
 
 ## Q139472: ESS488 Sound Card Cannot Be Configured for IRQ 10

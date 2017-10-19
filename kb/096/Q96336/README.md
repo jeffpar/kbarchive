@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96336: &quot;Call to Undefined Dynalink&quot; Errors"
-permalink: kb/096/Q96336/
+permalink: /kb/096/Q96336/
 ---
 
 ## Q96336: &quot;Call to Undefined Dynalink&quot; Errors

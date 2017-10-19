@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192143: BUG: Data Control NoMatch Equals True Returns Error"
-permalink: kb/192/Q192143/
+permalink: /kb/192/Q192143/
 ---
 
 ## Q192143: BUG: Data Control NoMatch Equals True Returns Error

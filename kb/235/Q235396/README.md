@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235396: XADM: How to Determine the First Exchange Server in the Site"
-permalink: kb/235/Q235396/
+permalink: /kb/235/Q235396/
 ---
 
 ## Q235396: XADM: How to Determine the First Exchange Server in the Site

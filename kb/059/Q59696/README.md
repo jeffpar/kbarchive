@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59696: Write Not Printing Graphics in Draft Mode"
-permalink: kb/059/Q59696/
+permalink: /kb/059/Q59696/
 ---
 
 ## Q59696: Write Not Printing Graphics in Draft Mode

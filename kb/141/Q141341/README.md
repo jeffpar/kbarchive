@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141341: XCLN: No Print Option When Using EFD on Windows NT"
-permalink: kb/141/Q141341/
+permalink: /kb/141/Q141341/
 ---
 
 ## Q141341: XCLN: No Print Option When Using EFD on Windows NT

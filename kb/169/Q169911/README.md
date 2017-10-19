@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169911: Incorrect Print Output If AHM Is Contained in 5250 Datastream"
-permalink: kb/169/Q169911/
+permalink: /kb/169/Q169911/
 ---
 
 ## Q169911: Incorrect Print Output If AHM Is Contained in 5250 Datastream

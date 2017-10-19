@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272495: How to change account information with MSN Companion"
-permalink: kb/272/Q272495/
+permalink: /kb/272/Q272495/
 ---
 
 ## Q272495: How to change account information with MSN Companion

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181490: Causes of Elevated CPU Utilization with TAPI 2.0 and RAS"
-permalink: kb/181/Q181490/
+permalink: /kb/181/Q181490/
 ---
 
 ## Q181490: Causes of Elevated CPU Utilization with TAPI 2.0 and RAS

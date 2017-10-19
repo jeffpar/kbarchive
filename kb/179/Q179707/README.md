@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179707: BUG: Pressing TAB Key on Form Does Not Change Focus"
-permalink: kb/179/Q179707/
+permalink: /kb/179/Q179707/
 ---
 
 ## Q179707: BUG: Pressing TAB Key on Form Does Not Change Focus

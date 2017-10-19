@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150949: PRB: Setup Wizard Fails to Recognize Disk Drive Selections"
-permalink: kb/150/Q150949/
+permalink: /kb/150/Q150949/
 ---
 
 ## Q150949: PRB: Setup Wizard Fails to Recognize Disk Drive Selections

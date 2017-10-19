@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162399: WD97: Unexpected Name in &quot;File Name&quot; Box After Macro Change"
-permalink: kb/162/Q162399/
+permalink: /kb/162/Q162399/
 ---
 
 ## Q162399: WD97: Unexpected Name in &quot;File Name&quot; Box After Macro Change

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247035: HOWTO: Automate Visual C++"
-permalink: kb/247/Q247035/
+permalink: /kb/247/Q247035/
 ---
 
 ## Q247035: HOWTO: Automate Visual C++

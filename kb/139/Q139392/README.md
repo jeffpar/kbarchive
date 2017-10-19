@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139392: Mac MM: How to Run Program Without CD-ROM"
-permalink: kb/139/Q139392/
+permalink: /kb/139/Q139392/
 ---
 
 ## Q139392: Mac MM: How to Run Program Without CD-ROM

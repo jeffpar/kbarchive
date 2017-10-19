@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86748: Windows: Virtual Printer Memory Defined"
-permalink: kb/086/Q86748/
+permalink: /kb/086/Q86748/
 ---
 
 ## Q86748: Windows: Virtual Printer Memory Defined

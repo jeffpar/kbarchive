@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198615: MCM: Program Quits and You Are Returned to the Windows Desktop"
-permalink: kb/198/Q198615/
+permalink: /kb/198/Q198615/
 ---
 
 ## Q198615: MCM: Program Quits and You Are Returned to the Windows Desktop

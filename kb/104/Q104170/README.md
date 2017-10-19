@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104170: PC Win: Dynamic Data Exchange Is Not Supported"
-permalink: kb/104/Q104170/
+permalink: /kb/104/Q104170/
 ---
 
 ## Q104170: PC Win: Dynamic Data Exchange Is Not Supported

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84285: Linotronic User Defined Paper Size Buttons Reversed"
-permalink: kb/084/Q84285/
+permalink: /kb/084/Q84285/
 ---
 
 ## Q84285: Linotronic User Defined Paper Size Buttons Reversed

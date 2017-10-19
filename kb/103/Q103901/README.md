@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103901: PC Adm: Minimum NetWare Trustee Assignments for Mail Database"
-permalink: kb/103/Q103901/
+permalink: /kb/103/Q103901/
 ---
 
 ## Q103901: PC Adm: Minimum NetWare Trustee Assignments for Mail Database

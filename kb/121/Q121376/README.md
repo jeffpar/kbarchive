@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121376: PC Win: Inbox Missing on Login"
-permalink: kb/121/Q121376/
+permalink: /kb/121/Q121376/
 ---
 
 ## Q121376: PC Win: Inbox Missing on Login

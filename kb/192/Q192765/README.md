@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192765: STOP 0x0000000A on SMP Computers"
-permalink: kb/192/Q192765/
+permalink: /kb/192/Q192765/
 ---
 
 ## Q192765: STOP 0x0000000A on SMP Computers

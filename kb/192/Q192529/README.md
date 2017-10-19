@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192529: MSN Mail Account in Outlook Express Restored to Default Settings"
-permalink: kb/192/Q192529/
+permalink: /kb/192/Q192529/
 ---
 
 ## Q192529: MSN Mail Account in Outlook Express Restored to Default Settings

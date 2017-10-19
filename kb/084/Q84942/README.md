@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84942: ZEOS OEM Windows 3.1 Causes Error on Network Install"
-permalink: kb/084/Q84942/
+permalink: /kb/084/Q84942/
 ---
 
 ## Q84942: ZEOS OEM Windows 3.1 Causes Error on Network Install

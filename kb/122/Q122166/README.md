@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122166: InfoMover PCMCIA Card in AST Laptop Fails to Work Under WFWG"
-permalink: kb/122/Q122166/
+permalink: /kb/122/Q122166/
 ---
 
 ## Q122166: InfoMover PCMCIA Card in AST Laptop Fails to Work Under WFWG

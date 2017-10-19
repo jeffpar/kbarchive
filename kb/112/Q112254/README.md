@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112254: PC MAPI: MAPIReadMail Doesn't Send Return-Receipt Message"
-permalink: kb/112/Q112254/
+permalink: /kb/112/Q112254/
 ---
 
 ## Q112254: PC MAPI: MAPIReadMail Doesn't Send Return-Receipt Message

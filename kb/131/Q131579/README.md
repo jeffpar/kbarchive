@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131579: Using Lotus Organizer Cost/Customer Codes Under Windows NT"
-permalink: kb/131/Q131579/
+permalink: /kb/131/Q131579/
 ---
 
 ## Q131579: Using Lotus Organizer Cost/Customer Codes Under Windows NT

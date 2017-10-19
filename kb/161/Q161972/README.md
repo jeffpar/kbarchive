@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161972: PRB: Displaying a Modal Form Causes the SSTab Control to Blank"
-permalink: kb/161/Q161972/
+permalink: /kb/161/Q161972/
 ---
 
 ## Q161972: PRB: Displaying a Modal Form Causes the SSTab Control to Blank

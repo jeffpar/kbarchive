@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138766: Removing Default Items from Custom Network Neighborhood"
-permalink: kb/138/Q138766/
+permalink: /kb/138/Q138766/
 ---
 
 ## Q138766: Removing Default Items from Custom Network Neighborhood

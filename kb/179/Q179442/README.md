@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179442: How to Configure a Firewall for Domains and Trusts"
-permalink: kb/179/Q179442/
+permalink: /kb/179/Q179442/
 ---
 
 ## Q179442: How to Configure a Firewall for Domains and Trusts

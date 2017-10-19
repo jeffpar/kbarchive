@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300466: FP: Clicking Reset on Search Results Page Does Not Clear Form"
-permalink: kb/300/Q300466/
+permalink: /kb/300/Q300466/
 ---
 
 ## Q300466: FP: Clicking Reset on Search Results Page Does Not Clear Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168074: XADM: Err Msg When Creating New Custom Recipient"
-permalink: kb/168/Q168074/
+permalink: /kb/168/Q168074/
 ---
 
 ## Q168074: XADM: Err Msg When Creating New Custom Recipient

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263095: SMS: Error Message When Removing Many Machine History Records"
-permalink: kb/263/Q263095/
+permalink: /kb/263/Q263095/
 ---
 
 ## Q263095: SMS: Error Message When Removing Many Machine History Records

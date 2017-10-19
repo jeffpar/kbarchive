@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191942: PC Ext: External.exe Displays Dates Incorrectly after 1999"
-permalink: kb/191/Q191942/
+permalink: /kb/191/Q191942/
 ---
 
 ## Q191942: PC Ext: External.exe Displays Dates Incorrectly after 1999

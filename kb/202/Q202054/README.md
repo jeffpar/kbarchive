@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202054: XWEB: Outlook Web Access Does Not Reply To an Optional Address"
-permalink: kb/202/Q202054/
+permalink: /kb/202/Q202054/
 ---
 
 ## Q202054: XWEB: Outlook Web Access Does Not Reply To an Optional Address

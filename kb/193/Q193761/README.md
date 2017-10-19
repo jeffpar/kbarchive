@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193761: XFOR: cc:Mail Connector Doesn't Deliver NDRs from Certain ADMDs"
-permalink: kb/193/Q193761/
+permalink: /kb/193/Q193761/
 ---
 
 ## Q193761: XFOR: cc:Mail Connector Doesn't Deliver NDRs from Certain ADMDs

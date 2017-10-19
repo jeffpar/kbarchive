@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184143: WD97: Some Characters Missing/Cut Off When Displayed on Screen"
-permalink: kb/184/Q184143/
+permalink: /kb/184/Q184143/
 ---
 
 ## Q184143: WD97: Some Characters Missing/Cut Off When Displayed on Screen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221767: XADM: PF InterOrg Replication Does Not Work with Different Lang"
-permalink: kb/221/Q221767/
+permalink: /kb/221/Q221767/
 ---
 
 ## Q221767: XADM: PF InterOrg Replication Does Not Work with Different Lang

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121619: ARP Cache Commands May Not Work Correctly"
-permalink: kb/121/Q121619/
+permalink: /kb/121/Q121619/
 ---
 
 ## Q121619: ARP Cache Commands May Not Work Correctly

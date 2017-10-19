@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315687: XCON: How to Prevent Mail Relay in Exchange 5.5 SP1 or Later"
-permalink: kb/315/Q315687/
+permalink: /kb/315/Q315687/
 ---
 
 ## Q315687: XCON: How to Prevent Mail Relay in Exchange 5.5 SP1 or Later

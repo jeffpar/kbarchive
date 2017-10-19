@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182967: Windows 95 Year 2000 Problems with DATE and DIR Commands"
-permalink: kb/182/Q182967/
+permalink: /kb/182/Q182967/
 ---
 
 ## Q182967: Windows 95 Year 2000 Problems with DATE and DIR Commands

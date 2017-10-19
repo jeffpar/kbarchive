@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319899: VSS Show Differences Option Incorrectly Marks Files as Different"
-permalink: kb/319/Q319899/
+permalink: /kb/319/Q319899/
 ---
 
 ## Q319899: VSS Show Differences Option Incorrectly Marks Files as Different

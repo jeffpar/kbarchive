@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184232: DCOMCNFG Saves Incorrect Display Name in Services"
-permalink: kb/184/Q184232/
+permalink: /kb/184/Q184232/
 ---
 
 ## Q184232: DCOMCNFG Saves Incorrect Display Name in Services

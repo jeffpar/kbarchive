@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128325: XADM: Reclaiming Disk Space for the Information Store"
-permalink: kb/128/Q128325/
+permalink: /kb/128/Q128325/
 ---
 
 ## Q128325: XADM: Reclaiming Disk Space for the Information Store

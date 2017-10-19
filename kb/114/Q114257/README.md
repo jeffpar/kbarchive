@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114257: BUG:Index Tag Not Found w/SET COMPATIBLE ON &amp; DELETE TAG ALL"
-permalink: kb/114/Q114257/
+permalink: /kb/114/Q114257/
 ---
 
 ## Q114257: BUG:Index Tag Not Found w/SET COMPATIBLE ON &amp; DELETE TAG ALL

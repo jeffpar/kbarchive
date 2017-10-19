@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195141: WD97: Soft Page Breaks Appear Misplaced in Tables in Normal View"
-permalink: kb/195/Q195141/
+permalink: /kb/195/Q195141/
 ---
 
 ## Q195141: WD97: Soft Page Breaks Appear Misplaced in Tables in Normal View

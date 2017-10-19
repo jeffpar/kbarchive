@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219419: XADM: Information Store Stops Unexpectedly, Cannot Be Repaired"
-permalink: kb/219/Q219419/
+permalink: /kb/219/Q219419/
 ---
 
 ## Q219419: XADM: Information Store Stops Unexpectedly, Cannot Be Repaired

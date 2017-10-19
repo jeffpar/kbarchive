@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128792: Dataloader Fails Binary Dump when There are SQL Problems"
-permalink: kb/128/Q128792/
+permalink: /kb/128/Q128792/
 ---
 
 ## Q128792: Dataloader Fails Binary Dump when There are SQL Problems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241290: Can't Install Windows NT to Compaq 6000 Computer 1/29/99 BIOS"
-permalink: kb/241/Q241290/
+permalink: /kb/241/Q241290/
 ---
 
 ## Q241290: Can't Install Windows NT to Compaq 6000 Computer 1/29/99 BIOS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171836: FIX: Crash When Viewing API Properties in Object Browser"
-permalink: kb/171/Q171836/
+permalink: /kb/171/Q171836/
 ---
 
 ## Q171836: FIX: Crash When Viewing API Properties in Object Browser

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171486: FIX: Crash Sometimes Occurs with Cursor over Toolbox"
-permalink: kb/171/Q171486/
+permalink: /kb/171/Q171486/
 ---
 
 ## Q171486: FIX: Crash Sometimes Occurs with Cursor over Toolbox

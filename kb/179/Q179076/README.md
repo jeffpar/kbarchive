@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179076: WD97: Visio Object Background Turns Black When Doc Saved as HTML"
-permalink: kb/179/Q179076/
+permalink: /kb/179/Q179076/
 ---
 
 ## Q179076: WD97: Visio Object Background Turns Black When Doc Saved as HTML

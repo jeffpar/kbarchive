@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119282: COM Ports Remain in Device Manager After Modem Is Removed"
-permalink: kb/119/Q119282/
+permalink: /kb/119/Q119282/
 ---
 
 ## Q119282: COM Ports Remain in Device Manager After Modem Is Removed

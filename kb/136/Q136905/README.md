@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136905: Ventura Does Not Launch After Installing Multimedia"
-permalink: kb/136/Q136905/
+permalink: /kb/136/Q136905/
 ---
 
 ## Q136905: Ventura Does Not Launch After Installing Multimedia

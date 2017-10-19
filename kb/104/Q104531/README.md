@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104531: DoubleSpace Fails to Mount Compressed Disk in BackPack Drive"
-permalink: kb/104/Q104531/
+permalink: /kb/104/Q104531/
 ---
 
 ## Q104531: DoubleSpace Fails to Mount Compressed Disk in BackPack Drive

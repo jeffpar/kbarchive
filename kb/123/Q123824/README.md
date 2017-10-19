@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123824: X400: Err Msg: ERROR 1 (TRAN): Invalid TPDU 70 in State 4"
-permalink: kb/123/Q123824/
+permalink: /kb/123/Q123824/
 ---
 
 ## Q123824: X400: Err Msg: ERROR 1 (TRAN): Invalid TPDU 70 in State 4

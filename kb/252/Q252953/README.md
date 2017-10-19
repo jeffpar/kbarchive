@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252953: SMS:Use of Only Last Static IP Addrs on Mult IP Address w/ 1 NIC"
-permalink: kb/252/Q252953/
+permalink: /kb/252/Q252953/
 ---
 
 ## Q252953: SMS:Use of Only Last Static IP Addrs on Mult IP Address w/ 1 NIC

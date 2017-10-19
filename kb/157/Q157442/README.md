@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157442: Cannot Issue Second Allocate from a CPI-C Application"
-permalink: kb/157/Q157442/
+permalink: /kb/157/Q157442/
 ---
 
 ## Q157442: Cannot Issue Second Allocate from a CPI-C Application

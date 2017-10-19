@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192045: XADM: Upgrading MSDN Exchange to a Production Version"
-permalink: kb/192/Q192045/
+permalink: /kb/192/Q192045/
 ---
 
 ## Q192045: XADM: Upgrading MSDN Exchange to a Production Version

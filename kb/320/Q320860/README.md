@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320860: PRB: &quot;Operation Could Not Be Completed&quot; Err Msg"
-permalink: kb/320/Q320860/
+permalink: /kb/320/Q320860/
 ---
 
 ## Q320860: PRB: &quot;Operation Could Not Be Completed&quot; Err Msg

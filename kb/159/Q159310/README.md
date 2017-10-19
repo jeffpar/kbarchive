@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159310: Updated Version of Dns.exe Fixes Several Problems"
-permalink: kb/159/Q159310/
+permalink: /kb/159/Q159310/
 ---
 
 ## Q159310: Updated Version of Dns.exe Fixes Several Problems

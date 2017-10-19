@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32680: ValidateFreeSpaces(), GlobalCompact(), and Wild Pointers"
-permalink: kb/032/Q32680/
+permalink: /kb/032/Q32680/
 ---
 
 ## Q32680: ValidateFreeSpaces(), GlobalCompact(), and Wild Pointers

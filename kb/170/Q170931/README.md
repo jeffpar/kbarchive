@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170931: Japanese MSN Program Viewer Menus Displayed in English"
-permalink: kb/170/Q170931/
+permalink: /kb/170/Q170931/
 ---
 
 ## Q170931: Japanese MSN Program Viewer Menus Displayed in English

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260352: PRB: Delay in Receiving Final Report Using Routing Wizard"
-permalink: kb/260/Q260352/
+permalink: /kb/260/Q260352/
 ---
 
 ## Q260352: PRB: Delay in Receiving Final Report Using Routing Wizard

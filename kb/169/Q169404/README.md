@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169404: NTFS Directory Corruption with Frequent File Creation"
-permalink: kb/169/Q169404/
+permalink: /kb/169/Q169404/
 ---
 
 ## Q169404: NTFS Directory Corruption with Frequent File Creation

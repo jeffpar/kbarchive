@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162417: RPC Error Opening .evt File on Windows 95 Computer"
-permalink: kb/162/Q162417/
+permalink: /kb/162/Q162417/
 ---
 
 ## Q162417: RPC Error Opening .evt File on Windows 95 Computer

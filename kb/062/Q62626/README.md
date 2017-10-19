@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62626: Passing a Pointer to a Structure from C to Assembly"
-permalink: kb/062/Q62626/
+permalink: /kb/062/Q62626/
 ---
 
 ## Q62626: Passing a Pointer to a Structure from C to Assembly

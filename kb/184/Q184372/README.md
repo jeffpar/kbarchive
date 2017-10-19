@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184372: Setup Unable to Install Internet Authentication Services (IAS)"
-permalink: kb/184/Q184372/
+permalink: /kb/184/Q184372/
 ---
 
 ## Q184372: Setup Unable to Install Internet Authentication Services (IAS)

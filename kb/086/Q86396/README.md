@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86396: PC OS2: Many Attachments May Cause Display Problems"
-permalink: kb/086/Q86396/
+permalink: /kb/086/Q86396/
 ---
 
 ## Q86396: PC OS2: Many Attachments May Cause Display Problems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311861: IIS: Error Message When You Try to Open the ISM Locally"
-permalink: kb/311/Q311861/
+permalink: /kb/311/Q311861/
 ---
 
 ## Q311861: IIS: Error Message When You Try to Open the ISM Locally

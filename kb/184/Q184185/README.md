@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184185: XFOR: Older Versions of Exchange Server Cannot Send ETRN Command"
-permalink: kb/184/Q184185/
+permalink: /kb/184/Q184185/
 ---
 
 ## Q184185: XFOR: Older Versions of Exchange Server Cannot Send ETRN Command

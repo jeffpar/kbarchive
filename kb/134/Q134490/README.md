@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134490: GP Fault with PowerBuilder 4.0 Sample Applications"
-permalink: kb/134/Q134490/
+permalink: /kb/134/Q134490/
 ---
 
 ## Q134490: GP Fault with PowerBuilder 4.0 Sample Applications

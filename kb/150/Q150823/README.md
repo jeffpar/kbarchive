@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150823: Trap 0xA When Token Ring Source Routing Data Exceeds 18 Bytes"
-permalink: kb/150/Q150823/
+permalink: /kb/150/Q150823/
 ---
 
 ## Q150823: Trap 0xA When Token Ring Source Routing Data Exceeds 18 Bytes

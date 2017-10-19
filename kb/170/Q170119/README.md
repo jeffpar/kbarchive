@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170119: DOC: New Record Not Inserted to the End of Recordset"
-permalink: kb/170/Q170119/
+permalink: /kb/170/Q170119/
 ---
 
 ## Q170119: DOC: New Record Not Inserted to the End of Recordset

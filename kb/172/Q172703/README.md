@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172703: WD97: Letter Wizard Second Page Header Contains Date/Page Number"
-permalink: kb/172/Q172703/
+permalink: /kb/172/Q172703/
 ---
 
 ## Q172703: WD97: Letter Wizard Second Page Header Contains Date/Page Number

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256869: SMS: Network Printers for Windows NT Clients Are Not Reported"
-permalink: kb/256/Q256869/
+permalink: /kb/256/Q256869/
 ---
 
 ## Q256869: SMS: Network Printers for Windows NT Clients Are Not Reported

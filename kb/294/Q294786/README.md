@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294786: SMS: How to Use a Non-Domain Administrator Service Account"
-permalink: kb/294/Q294786/
+permalink: /kb/294/Q294786/
 ---
 
 ## Q294786: SMS: How to Use a Non-Domain Administrator Service Account

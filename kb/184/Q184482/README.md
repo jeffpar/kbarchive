@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184482: WD97: Unable to Show UserForms in Other Projects"
-permalink: kb/184/Q184482/
+permalink: /kb/184/Q184482/
 ---
 
 ## Q184482: WD97: Unable to Show UserForms in Other Projects

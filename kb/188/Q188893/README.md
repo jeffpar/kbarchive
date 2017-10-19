@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188893: SnaBase Hangs When 256th Process Added to Internal Process Table"
-permalink: kb/188/Q188893/
+permalink: /kb/188/Q188893/
 ---
 
 ## Q188893: SnaBase Hangs When 256th Process Added to Internal Process Table

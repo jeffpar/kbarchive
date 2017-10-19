@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138944: Cannot Add Components from Floppy Disks or CD-ROM"
-permalink: kb/138/Q138944/
+permalink: /kb/138/Q138944/
 ---
 
 ## Q138944: Cannot Add Components from Floppy Disks or CD-ROM

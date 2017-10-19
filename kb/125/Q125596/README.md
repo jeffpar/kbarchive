@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125596: PGC Status Dialog Displayed Under Windows 95 Taskbar"
-permalink: kb/125/Q125596/
+permalink: /kb/125/Q125596/
 ---
 
 ## Q125596: PGC Status Dialog Displayed Under Windows 95 Taskbar

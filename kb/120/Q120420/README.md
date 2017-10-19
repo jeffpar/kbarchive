@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120420: Unable to Print Multiple Quattro Pro Spreadsheets"
-permalink: kb/120/Q120420/
+permalink: /kb/120/Q120420/
 ---
 
 ## Q120420: Unable to Print Multiple Quattro Pro Spreadsheets

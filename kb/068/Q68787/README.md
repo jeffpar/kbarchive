@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68787: Appending a Line to a File with COPY Con or ECHO"
-permalink: kb/068/Q68787/
+permalink: /kb/068/Q68787/
 ---
 
 ## Q68787: Appending a Line to a File with COPY Con or ECHO

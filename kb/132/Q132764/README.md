@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132764: Sound Card Is Not Detected If Network Card Uses Same Address"
-permalink: kb/132/Q132764/
+permalink: /kb/132/Q132764/
 ---
 
 ## Q132764: Sound Card Is Not Detected If Network Card Uses Same Address

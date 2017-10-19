@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160806: Problems Running Iomega Jaz Tools"
-permalink: kb/160/Q160806/
+permalink: /kb/160/Q160806/
 ---
 
 ## Q160806: Problems Running Iomega Jaz Tools

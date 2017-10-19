@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39371: Procedures With Arguments Require a Specified Language"
-permalink: kb/039/Q39371/
+permalink: /kb/039/Q39371/
 ---
 
 ## Q39371: Procedures With Arguments Require a Specified Language

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188831: How to Use the Special Pool Feature to Isolate Pool Damage"
-permalink: kb/188/Q188831/
+permalink: /kb/188/Q188831/
 ---
 
 ## Q188831: How to Use the Special Pool Feature to Isolate Pool Damage

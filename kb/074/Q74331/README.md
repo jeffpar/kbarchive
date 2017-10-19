@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74331: Compaq 132-Column Mode and EDIT.COM"
-permalink: kb/074/Q74331/
+permalink: /kb/074/Q74331/
 ---
 
 ## Q74331: Compaq 132-Column Mode and EDIT.COM

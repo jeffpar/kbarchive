@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245271: Memory Leak in Remodbc.exe for Software Metering Component"
-permalink: kb/245/Q245271/
+permalink: /kb/245/Q245271/
 ---
 
 ## Q245271: Memory Leak in Remodbc.exe for Software Metering Component

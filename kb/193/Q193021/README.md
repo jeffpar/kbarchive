@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193021: BUG: SSTab Focus Given to a Control on a Non-Visible Tab"
-permalink: kb/193/Q193021/
+permalink: /kb/193/Q193021/
 ---
 
 ## Q193021: BUG: SSTab Focus Given to a Control on a Non-Visible Tab

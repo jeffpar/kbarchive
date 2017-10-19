@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245006: Error 1219 After WNetCancelConnection2"
-permalink: kb/245/Q245006/
+permalink: /kb/245/Q245006/
 ---
 
 ## Q245006: Error 1219 After WNetCancelConnection2

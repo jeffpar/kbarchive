@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252307: Games: How to Troubleshoot CD Audio Playback"
-permalink: kb/252/Q252307/
+permalink: /kb/252/Q252307/
 ---
 
 ## Q252307: Games: How to Troubleshoot CD Audio Playback

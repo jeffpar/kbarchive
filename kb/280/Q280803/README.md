@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280803: PRB: CoCreateInstance Stops and Creates Many ATL Objects"
-permalink: kb/280/Q280803/
+permalink: /kb/280/Q280803/
 ---
 
 ## Q280803: PRB: CoCreateInstance Stops and Creates Many ATL Objects

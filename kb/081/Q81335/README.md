@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81335: Code Demonstrates Multiple Instance DLL"
-permalink: kb/081/Q81335/
+permalink: /kb/081/Q81335/
 ---
 
 ## Q81335: Code Demonstrates Multiple Instance DLL

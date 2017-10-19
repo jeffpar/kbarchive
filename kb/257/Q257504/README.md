@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257504: Errors Applying Permissions with Security Configuration Editor"
-permalink: kb/257/Q257504/
+permalink: /kb/257/Q257504/
 ---
 
 ## Q257504: Errors Applying Permissions with Security Configuration Editor

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120391: Err Msg Sharing ClipBook: ClipBook Viewer Cannot Currently..."
-permalink: kb/120/Q120391/
+permalink: /kb/120/Q120391/
 ---
 
 ## Q120391: Err Msg Sharing ClipBook: ClipBook Viewer Cannot Currently...

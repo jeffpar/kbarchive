@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222584: BUG: Blue Screen Occurs When Disabling a USB Controller"
-permalink: kb/222/Q222584/
+permalink: /kb/222/Q222584/
 ---
 
 ## Q222584: BUG: Blue Screen Occurs When Disabling a USB Controller

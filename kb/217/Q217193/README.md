@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217193: XCON: First Character in Line Is Deleted When Sending Message"
-permalink: kb/217/Q217193/
+permalink: /kb/217/Q217193/
 ---
 
 ## Q217193: XCON: First Character in Line Is Deleted When Sending Message

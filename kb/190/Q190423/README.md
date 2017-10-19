@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190423: XFOR: MS Mail Migration Does Not Migrate New Messages"
-permalink: kb/190/Q190423/
+permalink: /kb/190/Q190423/
 ---
 
 ## Q190423: XFOR: MS Mail Migration Does Not Migrate New Messages

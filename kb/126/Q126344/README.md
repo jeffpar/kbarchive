@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126344: Mac RAM Doubler Suppresses Sound"
-permalink: kb/126/Q126344/
+permalink: /kb/126/Q126344/
 ---
 
 ## Q126344: Mac RAM Doubler Suppresses Sound

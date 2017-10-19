@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159272: RESKIT: RConsole Leaks Process Handles"
-permalink: kb/159/Q159272/
+permalink: /kb/159/Q159272/
 ---
 
 ## Q159272: RESKIT: RConsole Leaks Process Handles

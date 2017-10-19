@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310303: PRB: Package and Deployment Wizard Does Not Distribute MDAC 2.6"
-permalink: kb/310/Q310303/
+permalink: /kb/310/Q310303/
 ---
 
 ## Q310303: PRB: Package and Deployment Wizard Does Not Distribute MDAC 2.6

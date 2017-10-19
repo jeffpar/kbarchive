@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195641: Btrieve, IPX, and Event ID 2012"
-permalink: kb/195/Q195641/
+permalink: /kb/195/Q195641/
 ---
 
 ## Q195641: Btrieve, IPX, and Event ID 2012

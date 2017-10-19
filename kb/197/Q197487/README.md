@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197487: BUG: MSChart EditCopy Sends Incorrect Legends To Clipboard"
-permalink: kb/197/Q197487/
+permalink: /kb/197/Q197487/
 ---
 
 ## Q197487: BUG: MSChart EditCopy Sends Incorrect Legends To Clipboard

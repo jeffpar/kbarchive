@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70467: Windows Err Msg: Cannot Find KRNLxxx.EXE"
-permalink: kb/070/Q70467/
+permalink: /kb/070/Q70467/
 ---
 
 ## Q70467: Windows Err Msg: Cannot Find KRNLxxx.EXE

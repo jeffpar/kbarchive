@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73253: Removing Ontrack Disk Manager Partitions"
-permalink: kb/073/Q73253/
+permalink: /kb/073/Q73253/
 ---
 
 ## Q73253: Removing Ontrack Disk Manager Partitions

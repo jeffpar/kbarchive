@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214468: WD97: &quot;Print to File&quot; Option Set After Printing from Binder"
-permalink: kb/214/Q214468/
+permalink: /kb/214/Q214468/
 ---
 
 ## Q214468: WD97: &quot;Print to File&quot; Option Set After Printing from Binder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170463: WD97: Photo Editor Appears to Hang on Low-Memory Computer"
-permalink: kb/170/Q170463/
+permalink: /kb/170/Q170463/
 ---
 
 ## Q170463: WD97: Photo Editor Appears to Hang on Low-Memory Computer

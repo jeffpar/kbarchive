@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99389: FIX: RW2002 Error From Long Resource Identifier"
-permalink: kb/099/Q99389/
+permalink: /kb/099/Q99389/
 ---
 
 ## Q99389: FIX: RW2002 Error From Long Resource Identifier

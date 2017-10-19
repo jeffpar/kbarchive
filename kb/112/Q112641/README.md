@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112641: Using ExtDeviceMode() to Modify Printer Settings"
-permalink: kb/112/Q112641/
+permalink: /kb/112/Q112641/
 ---
 
 ## Q112641: Using ExtDeviceMode() to Modify Printer Settings

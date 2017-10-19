@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238850: XFOR: Migration Fails with Error Message and Event 6003"
-permalink: kb/238/Q238850/
+permalink: /kb/238/Q238850/
 ---
 
 ## Q238850: XFOR: Migration Fails with Error Message and Event 6003

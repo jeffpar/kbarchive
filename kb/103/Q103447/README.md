@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103447: PC Ext: Home Postoffice Must Be on Direct Drive"
-permalink: kb/103/Q103447/
+permalink: /kb/103/Q103447/
 ---
 
 ## Q103447: PC Ext: Home Postoffice Must Be on Direct Drive

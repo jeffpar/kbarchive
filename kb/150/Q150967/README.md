@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150967: Bookshelf 96-97: Description of Colored Item Boxes"
-permalink: kb/150/Q150967/
+permalink: /kb/150/Q150967/
 ---
 
 ## Q150967: Bookshelf 96-97: Description of Colored Item Boxes

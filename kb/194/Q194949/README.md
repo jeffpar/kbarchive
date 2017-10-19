@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194949: XADM: The Default Setting for Canceling Schema is Wrong"
-permalink: kb/194/Q194949/
+permalink: /kb/194/Q194949/
 ---
 
 ## Q194949: XADM: The Default Setting for Canceling Schema is Wrong

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123942: Invalid User Names Causes Memory Leak"
-permalink: kb/123/Q123942/
+permalink: /kb/123/Q123942/
 ---
 
 ## Q123942: Invalid User Names Causes Memory Leak

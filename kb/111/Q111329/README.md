@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111329: How to Create Setup Floppy Disks for Viewer Title"
-permalink: kb/111/Q111329/
+permalink: /kb/111/Q111329/
 ---
 
 ## Q111329: How to Create Setup Floppy Disks for Viewer Title

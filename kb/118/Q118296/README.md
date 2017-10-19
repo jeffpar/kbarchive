@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118296: ANNOUNCE and ANNDELTA Entries in Registry are Ignored"
-permalink: kb/118/Q118296/
+permalink: /kb/118/Q118296/
 ---
 
 ## Q118296: ANNOUNCE and ANNDELTA Entries in Registry are Ignored

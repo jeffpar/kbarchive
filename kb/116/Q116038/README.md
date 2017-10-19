@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116038: Resource Type, Creator, &amp; Date for FoxPro for Mac and DK"
-permalink: kb/116/Q116038/
+permalink: /kb/116/Q116038/
 ---
 
 ## Q116038: Resource Type, Creator, &amp; Date for FoxPro for Mac and DK

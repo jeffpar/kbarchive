@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314730: Access Violation in SNMP Running GETNEXT Queries Against OSPF"
-permalink: kb/314/Q314730/
+permalink: /kb/314/Q314730/
 ---
 
 ## Q314730: Access Violation in SNMP Running GETNEXT Queries Against OSPF

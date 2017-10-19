@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228758: Office 97 Small Business Edition Starts Here States Publisher 97"
-permalink: kb/228/Q228758/
+permalink: /kb/228/Q228758/
 ---
 
 ## Q228758: Office 97 Small Business Edition Starts Here States Publisher 97

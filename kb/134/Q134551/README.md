@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134551: Hardware Suspend Button Hangs AcerNote 782 Computer"
-permalink: kb/134/Q134551/
+permalink: /kb/134/Q134551/
 ---
 
 ## Q134551: Hardware Suspend Button Hangs AcerNote 782 Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173367: Non-Administrators Not Allowed Access to Change Log Settings"
-permalink: kb/173/Q173367/
+permalink: /kb/173/Q173367/
 ---
 
 ## Q173367: Non-Administrators Not Allowed Access to Change Log Settings

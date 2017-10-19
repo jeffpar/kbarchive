@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191958: SMS: SMS_Site_Config_Manager Appears to Stop Responding"
-permalink: kb/191/Q191958/
+permalink: /kb/191/Q191958/
 ---
 
 ## Q191958: SMS: SMS_Site_Config_Manager Appears to Stop Responding

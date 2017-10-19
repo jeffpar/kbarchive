@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113637: MS-DOS 6.21 Upgrade Listings for 5.25-Inch 1.2 MB Set"
-permalink: kb/113/Q113637/
+permalink: /kb/113/Q113637/
 ---
 
 ## Q113637: MS-DOS 6.21 Upgrade Listings for 5.25-Inch 1.2 MB Set

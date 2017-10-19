@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98821: PROFS: 3.3 Host Access Disk [5.25, 1.22 MB]"
-permalink: kb/098/Q98821/
+title: "Q98821: PROFS: 3.3 Host Access Disk &#91;5.25, 1.22 MB&#93;"
+permalink: /kb/098/Q98821/
 ---
 
-## Q98821: PROFS: 3.3 Host Access Disk [5.25, 1.22 MB]
+## Q98821: PROFS: 3.3 Host Access Disk &#91;5.25, 1.22 MB&#93;
 
 	Article: Q98821
 	Product(s): Microsoft Mail For PC Networks

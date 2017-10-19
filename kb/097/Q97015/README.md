@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97015: Setup Does Not Correctly Update Windows .INI Files"
-permalink: kb/097/Q97015/
+permalink: /kb/097/Q97015/
 ---
 
 ## Q97015: Setup Does Not Correctly Update Windows .INI Files

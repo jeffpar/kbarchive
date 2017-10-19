@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133382: Unable to Detect Storage Devices on Compaq Proliant 4500"
-permalink: kb/133/Q133382/
+permalink: /kb/133/Q133382/
 ---
 
 ## Q133382: Unable to Detect Storage Devices on Compaq Proliant 4500

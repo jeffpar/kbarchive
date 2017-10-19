@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133016: PRB: Dynamically Changing Buffering Mode Doesn't Work"
-permalink: kb/133/Q133016/
+permalink: /kb/133/Q133016/
 ---
 
 ## Q133016: PRB: Dynamically Changing Buffering Mode Doesn't Work

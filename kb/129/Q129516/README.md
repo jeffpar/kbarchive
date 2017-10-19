@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129516: Exclusive Mode Mouse Setting Prevents Resizing a Window"
-permalink: kb/129/Q129516/
+permalink: /kb/129/Q129516/
 ---
 
 ## Q129516: Exclusive Mode Mouse Setting Prevents Resizing a Window

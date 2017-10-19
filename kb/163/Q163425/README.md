@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163425: WD97: Macro Programming Resources"
-permalink: kb/163/Q163425/
+permalink: /kb/163/Q163425/
 ---
 
 ## Q163425: WD97: Macro Programming Resources

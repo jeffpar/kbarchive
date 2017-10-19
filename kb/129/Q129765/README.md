@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129765: ProShare 1.8 Does Not Work with Windows 95 TCP/IP"
-permalink: kb/129/Q129765/
+permalink: /kb/129/Q129765/
 ---
 
 ## Q129765: ProShare 1.8 Does Not Work with Windows 95 TCP/IP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122046: BUG: Custom Menu Option Disabled in the Edit Menu"
-permalink: kb/122/Q122046/
+permalink: /kb/122/Q122046/
 ---
 
 ## Q122046: BUG: Custom Menu Option Disabled in the Edit Menu

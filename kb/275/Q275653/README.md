@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275653: XCON: MTA Terminates Unexpectedly in SNPUPUTN()"
-permalink: kb/275/Q275653/
+permalink: /kb/275/Q275653/
 ---
 
 ## Q275653: XCON: MTA Terminates Unexpectedly in SNPUPUTN()

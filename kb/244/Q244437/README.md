@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244437: WD97: Splitting Rightmost Cell in Table Loses Some Format"
-permalink: kb/244/Q244437/
+permalink: /kb/244/Q244437/
 ---
 
 ## Q244437: WD97: Splitting Rightmost Cell in Table Loses Some Format

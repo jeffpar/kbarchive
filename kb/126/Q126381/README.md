@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126381: RAM Disk Support in Windows NT"
-permalink: kb/126/Q126381/
+permalink: /kb/126/Q126381/
 ---
 
 ## Q126381: RAM Disk Support in Windows NT

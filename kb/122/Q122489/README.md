@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122489: How to Disable Default Pushbutton Handling for MFC Dialog"
-permalink: kb/122/Q122489/
+permalink: /kb/122/Q122489/
 ---
 
 ## Q122489: How to Disable Default Pushbutton Handling for MFC Dialog

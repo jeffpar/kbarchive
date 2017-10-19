@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179927: XADM: KCC Site Teardown Blocked by Site-Proxy-Space Attribute"
-permalink: kb/179/Q179927/
+permalink: /kb/179/Q179927/
 ---
 
 ## Q179927: XADM: KCC Site Teardown Blocked by Site-Proxy-Space Attribute

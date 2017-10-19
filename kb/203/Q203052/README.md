@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203052: Poor Program and Service Performance During Crash Dump Transfer"
-permalink: kb/203/Q203052/
+permalink: /kb/203/Q203052/
 ---
 
 ## Q203052: Poor Program and Service Performance During Crash Dump Transfer

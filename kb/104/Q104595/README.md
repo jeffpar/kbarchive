@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104595: TSR to Force Creation of Temporary Files in Current Directory"
-permalink: kb/104/Q104595/
+permalink: /kb/104/Q104595/
 ---
 
 ## Q104595: TSR to Force Creation of Temporary Files in Current Directory

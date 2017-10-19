@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122671: Scandisk: Privileged Operation Error #2 or System Reboots"
-permalink: kb/122/Q122671/
+permalink: /kb/122/Q122671/
 ---
 
 ## Q122671: Scandisk: Privileged Operation Error #2 or System Reboots

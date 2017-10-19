@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174910: Bookshelf 98: How to Get 360 Views Zoom Support Within Program"
-permalink: kb/174/Q174910/
+permalink: /kb/174/Q174910/
 ---
 
 ## Q174910: Bookshelf 98: How to Get 360 Views Zoom Support Within Program

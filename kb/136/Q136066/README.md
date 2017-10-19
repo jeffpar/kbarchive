@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136066: PC MAPI: Files Required to Access a Mail for PC Networks PO"
-permalink: kb/136/Q136066/
+permalink: /kb/136/Q136066/
 ---
 
 ## Q136066: PC MAPI: Files Required to Access a Mail for PC Networks PO

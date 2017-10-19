@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85411: MS-DOS 5.0a Upgrade README.TXT: Documentation"
-permalink: kb/085/Q85411/
+permalink: /kb/085/Q85411/
 ---
 
 ## Q85411: MS-DOS 5.0a Upgrade README.TXT: Documentation

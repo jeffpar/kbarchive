@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113125: DLC Printing Limited to One Network Adapter in Windows NT"
-permalink: kb/113/Q113125/
+permalink: /kb/113/Q113125/
 ---
 
 ## Q113125: DLC Printing Limited to One Network Adapter in Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202296: SMS: Cannot Modify Time of Day in Software Metering Graph Wizard"
-permalink: kb/202/Q202296/
+permalink: /kb/202/Q202296/
 ---
 
 ## Q202296: SMS: Cannot Modify Time of Day in Software Metering Graph Wizard

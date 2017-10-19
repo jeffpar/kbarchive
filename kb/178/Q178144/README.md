@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178144: Encarta: Pasting Text into Empty Word Document Resets Paper Size"
-permalink: kb/178/Q178144/
+permalink: /kb/178/Q178144/
 ---
 
 ## Q178144: Encarta: Pasting Text into Empty Word Document Resets Paper Size

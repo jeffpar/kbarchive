@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151428: Cannot Rename Disk in DBCS Windows 95"
-permalink: kb/151/Q151428/
+permalink: /kb/151/Q151428/
 ---
 
 ## Q151428: Cannot Rename Disk in DBCS Windows 95

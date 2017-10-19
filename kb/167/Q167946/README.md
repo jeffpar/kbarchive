@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167946: FIX: ATL Service EXE Doesn't Build in Release Build"
-permalink: kb/167/Q167946/
+permalink: /kb/167/Q167946/
 ---
 
 ## Q167946: FIX: ATL Service EXE Doesn't Build in Release Build

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241324: XFOR: DocErr: Filter Rules Only Support EQ and NE Operators"
-permalink: kb/241/Q241324/
+permalink: /kb/241/Q241324/
 ---
 
 ## Q241324: XFOR: DocErr: Filter Rules Only Support EQ and NE Operators

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115457: PROFS: Message Format for Version 3.4"
-permalink: kb/115/Q115457/
+permalink: /kb/115/Q115457/
 ---
 
 ## Q115457: PROFS: Message Format for Version 3.4

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113602: Less Conventional Memory After Installing MS-DOS 6.21"
-permalink: kb/113/Q113602/
+permalink: /kb/113/Q113602/
 ---
 
 ## Q113602: Less Conventional Memory After Installing MS-DOS 6.21

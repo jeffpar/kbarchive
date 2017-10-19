@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224504: Modem Sharing Installs the Netmodem Tool"
-permalink: kb/224/Q224504/
+permalink: /kb/224/Q224504/
 ---
 
 ## Q224504: Modem Sharing Installs the Netmodem Tool

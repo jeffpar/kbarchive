@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262341: SMS: SMSClitoknAcct&amp; Account Lockout When HINV Is Run"
-permalink: kb/262/Q262341/
+permalink: /kb/262/Q262341/
 ---
 
 ## Q262341: SMS: SMSClitoknAcct&amp; Account Lockout When HINV Is Run

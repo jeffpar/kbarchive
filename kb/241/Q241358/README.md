@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241358: PRB: The GetGlyphOutlineW Function Fails on Windows 95/98/Me"
-permalink: kb/241/Q241358/
+permalink: /kb/241/Q241358/
 ---
 
 ## Q241358: PRB: The GetGlyphOutlineW Function Fails on Windows 95/98/Me

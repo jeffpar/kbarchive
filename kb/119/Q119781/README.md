@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119781: Err Msg: There Is a Problem Loading Unicode Tables"
-permalink: kb/119/Q119781/
+permalink: /kb/119/Q119781/
 ---
 
 ## Q119781: Err Msg: There Is a Problem Loading Unicode Tables

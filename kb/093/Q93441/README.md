@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93441: Microsoft TCP/IP 2.1a with Windows for Workgroups"
-permalink: kb/093/Q93441/
+permalink: /kb/093/Q93441/
 ---
 
 ## Q93441: Microsoft TCP/IP 2.1a with Windows for Workgroups

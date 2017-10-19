@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104688: PC Win: File Associations for WordPerfect Attachments"
-permalink: kb/104/Q104688/
+permalink: /kb/104/Q104688/
 ---
 
 ## Q104688: PC Win: File Associations for WordPerfect Attachments

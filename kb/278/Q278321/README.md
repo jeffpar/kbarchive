@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278321: HOWTO: Force a Particular Internet Encoding by Using MAPI"
-permalink: kb/278/Q278321/
+permalink: /kb/278/Q278321/
 ---
 
 ## Q278321: HOWTO: Force a Particular Internet Encoding by Using MAPI

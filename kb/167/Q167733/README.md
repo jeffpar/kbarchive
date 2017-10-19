@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167733: PRB: Operator New Doesn't Throw bad_alloc Exception on Failure"
-permalink: kb/167/Q167733/
+permalink: /kb/167/Q167733/
 ---
 
 ## Q167733: PRB: Operator New Doesn't Throw bad_alloc Exception on Failure

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73764: Mac Form: Voice Form ReadMe File"
-permalink: kb/073/Q73764/
+permalink: /kb/073/Q73764/
 ---
 
 ## Q73764: Mac Form: Voice Form ReadMe File

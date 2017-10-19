@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187936: Application May Hang Calling LogonUser() API"
-permalink: kb/187/Q187936/
+permalink: /kb/187/Q187936/
 ---
 
 ## Q187936: Application May Hang Calling LogonUser() API

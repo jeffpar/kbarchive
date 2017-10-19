@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189447: Virtual Globe 98: How to Submit Comments on Geographical Errors"
-permalink: kb/189/Q189447/
+permalink: /kb/189/Q189447/
 ---
 
 ## Q189447: Virtual Globe 98: How to Submit Comments on Geographical Errors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161035: GetAddressByName API Causes SAP Broadcast"
-permalink: kb/161/Q161035/
+permalink: /kb/161/Q161035/
 ---
 
 ## Q161035: GetAddressByName API Causes SAP Broadcast

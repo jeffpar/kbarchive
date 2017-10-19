@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176400: HOWTO: Print the WebBrowser Control"
-permalink: kb/176/Q176400/
+permalink: /kb/176/Q176400/
 ---
 
 ## Q176400: HOWTO: Print the WebBrowser Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135769: SMS: Error 313 SCHEDULER Reports Out of Sync on Slow Link"
-permalink: kb/135/Q135769/
+permalink: /kb/135/Q135769/
 ---
 
 ## Q135769: SMS: Error 313 SCHEDULER Reports Out of Sync on Slow Link

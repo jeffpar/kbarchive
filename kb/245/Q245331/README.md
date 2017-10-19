@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245331: IIS: HTMLA Allows the Selection of Require Client Certificates"
-permalink: kb/245/Q245331/
+permalink: /kb/245/Q245331/
 ---
 
 ## Q245331: IIS: HTMLA Allows the Selection of Require Client Certificates

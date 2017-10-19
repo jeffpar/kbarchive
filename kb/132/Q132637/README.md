@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132637: MORE Program Does Not Support Long Filenames"
-permalink: kb/132/Q132637/
+permalink: /kb/132/Q132637/
 ---
 
 ## Q132637: MORE Program Does Not Support Long Filenames

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101285: WFWG Err Msg: STOP! You Must Type a Full Path Including..."
-permalink: kb/101/Q101285/
+permalink: /kb/101/Q101285/
 ---
 
 ## Q101285: WFWG Err Msg: STOP! You Must Type a Full Path Including...

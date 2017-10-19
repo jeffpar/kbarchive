@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136773: How to Change the Connection UserId Programmatically"
-permalink: kb/136/Q136773/
+permalink: /kb/136/Q136773/
 ---
 
 ## Q136773: How to Change the Connection UserId Programmatically

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288566: SLI App. May Hang If Asynchronous Verb Returns Synchronously"
-permalink: kb/288/Q288566/
+permalink: /kb/288/Q288566/
 ---
 
 ## Q288566: SLI App. May Hang If Asynchronous Verb Returns Synchronously

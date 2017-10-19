@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129763: Cannot Select 32-Bit Program Area with Intel ProShare 1.8"
-permalink: kb/129/Q129763/
+permalink: /kb/129/Q129763/
 ---
 
 ## Q129763: Cannot Select 32-Bit Program Area with Intel ProShare 1.8

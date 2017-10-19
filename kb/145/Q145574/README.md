@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145574: FIX: IDE Appears to Hang If Browse Key (F11 or F12) Is Pressed"
-permalink: kb/145/Q145574/
+permalink: /kb/145/Q145574/
 ---
 
 ## Q145574: FIX: IDE Appears to Hang If Browse Key (F11 or F12) Is Pressed

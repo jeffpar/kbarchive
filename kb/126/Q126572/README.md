@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126572: DELTREE Command Does Not Remove DIR000&lt;x&gt; Directory"
-permalink: kb/126/Q126572/
+permalink: /kb/126/Q126572/
 ---
 
 ## Q126572: DELTREE Command Does Not Remove DIR000&lt;x&gt; Directory

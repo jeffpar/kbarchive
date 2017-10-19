@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290861: No Error Message When Copying to Full Samba Volume"
-permalink: kb/290/Q290861/
+permalink: /kb/290/Q290861/
 ---
 
 ## Q290861: No Error Message When Copying to Full Samba Volume

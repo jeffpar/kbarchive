@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176186: PRB: File Name Extension Needed to Run Exe from Support Library"
-permalink: kb/176/Q176186/
+permalink: /kb/176/Q176186/
 ---
 
 ## Q176186: PRB: File Name Extension Needed to Run Exe from Support Library

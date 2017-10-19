@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152807: INFO: Error Messages from Analyze Tool of Visual SourceSafe"
-permalink: kb/152/Q152807/
+permalink: /kb/152/Q152807/
 ---
 
 ## Q152807: INFO: Error Messages from Analyze Tool of Visual SourceSafe

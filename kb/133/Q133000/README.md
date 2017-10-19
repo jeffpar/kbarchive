@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133000: BUG: Graphical Help Won t Run When EXE Installed on a Network"
-permalink: kb/133/Q133000/
+permalink: /kb/133/Q133000/
 ---
 
 ## Q133000: BUG: Graphical Help Won t Run When EXE Installed on a Network

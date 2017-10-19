@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251170: Malformed Argument in Hit-Highlighting Allows Access to Server"
-permalink: kb/251/Q251170/
+permalink: /kb/251/Q251170/
 ---
 
 ## Q251170: Malformed Argument in Hit-Highlighting Allows Access to Server

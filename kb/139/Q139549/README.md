@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139549: BUG: Using RUN to Shell to MS-DOS Results in ICE Error"
-permalink: kb/139/Q139549/
+permalink: /kb/139/Q139549/
 ---
 
 ## Q139549: BUG: Using RUN to Shell to MS-DOS Results in ICE Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q40160: PRB: C2001: Newline in Constant for a String on Multiple Lines"
-permalink: kb/040/Q40160/
+permalink: /kb/040/Q40160/
 ---
 
 ## Q40160: PRB: C2001: Newline in Constant for a String on Multiple Lines

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255820: SMS: SMS_NT_Logon_Server_Manager Component Is Now Multithreaded"
-permalink: kb/255/Q255820/
+permalink: /kb/255/Q255820/
 ---
 
 ## Q255820: SMS: SMS_NT_Logon_Server_Manager Component Is Now Multithreaded

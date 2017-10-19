@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153500: HOWTO: Recover Disk Space in Visual SourceSafe"
-permalink: kb/153/Q153500/
+permalink: /kb/153/Q153500/
 ---
 
 ## Q153500: HOWTO: Recover Disk Space in Visual SourceSafe

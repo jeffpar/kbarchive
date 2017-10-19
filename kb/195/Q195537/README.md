@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195537: HOWTO: Copy Table Structures and Data From SQL Server"
-permalink: kb/195/Q195537/
+permalink: /kb/195/Q195537/
 ---
 
 ## Q195537: HOWTO: Copy Table Structures and Data From SQL Server

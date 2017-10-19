@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320282: FP: No Option to Use Passive-Mode FTP in FrontPage Publishing"
-permalink: kb/320/Q320282/
+permalink: /kb/320/Q320282/
 ---
 
 ## Q320282: FP: No Option to Use Passive-Mode FTP in FrontPage Publishing

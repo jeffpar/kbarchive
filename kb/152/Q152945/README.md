@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152945: XCON: Microsoft Exchange Server MTA Not Responding"
-permalink: kb/152/Q152945/
+permalink: /kb/152/Q152945/
 ---
 
 ## Q152945: XCON: Microsoft Exchange Server MTA Not Responding

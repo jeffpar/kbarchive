@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221653: FIX: APPEND FROM TYPE CSV Does Not Include Extension by Default"
-permalink: kb/221/Q221653/
+permalink: /kb/221/Q221653/
 ---
 
 ## Q221653: FIX: APPEND FROM TYPE CSV Does Not Include Extension by Default

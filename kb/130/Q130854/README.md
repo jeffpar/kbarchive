@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130854: Automating the SNA Server Win 3.x Client Login Process"
-permalink: kb/130/Q130854/
+permalink: /kb/130/Q130854/
 ---
 
 ## Q130854: Automating the SNA Server Win 3.x Client Login Process

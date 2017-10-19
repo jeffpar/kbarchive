@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156144: Full Court Press: Enhancing Performance"
-permalink: kb/156/Q156144/
+permalink: /kb/156/Q156144/
 ---
 
 ## Q156144: Full Court Press: Enhancing Performance

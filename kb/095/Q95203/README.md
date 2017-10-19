@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95203: Err Msg: SmartMon Unable to Save the New Cache Settings"
-permalink: kb/095/Q95203/
+permalink: /kb/095/Q95203/
 ---
 
 ## Q95203: Err Msg: SmartMon Unable to Save the New Cache Settings

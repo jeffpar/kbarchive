@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165801: WD97: &quot;Activate As&quot; Word Picture Activates Object as Word Docume"
-permalink: kb/165/Q165801/
+permalink: /kb/165/Q165801/
 ---
 
 ## Q165801: WD97: &quot;Activate As&quot; Word Picture Activates Object as Word Docume

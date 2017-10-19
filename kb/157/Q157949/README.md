@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157949: Slow Keyboard Response on Some Windows 95-Based Computers"
-permalink: kb/157/Q157949/
+permalink: /kb/157/Q157949/
 ---
 
 ## Q157949: Slow Keyboard Response on Some Windows 95-Based Computers

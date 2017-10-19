@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186504: Terminal Server Commands: CHANGE"
-permalink: kb/186/Q186504/
+permalink: /kb/186/Q186504/
 ---
 
 ## Q186504: Terminal Server Commands: CHANGE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222956: AV When Adding Demand-dial Interfaces in RRAS Admin"
-permalink: kb/222/Q222956/
+permalink: /kb/222/Q222956/
 ---
 
 ## Q222956: AV When Adding Demand-dial Interfaces in RRAS Admin

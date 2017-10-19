@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100852: Can't Delete Setup Filename with MWBACKUP"
-permalink: kb/100/Q100852/
+permalink: /kb/100/Q100852/
 ---
 
 ## Q100852: Can't Delete Setup Filename with MWBACKUP

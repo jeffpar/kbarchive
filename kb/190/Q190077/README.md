@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190077: HOWTO: Set Number of .CAB's in Setup.lst After Repackaging"
-permalink: kb/190/Q190077/
+permalink: /kb/190/Q190077/
 ---
 
 ## Q190077: HOWTO: Set Number of .CAB's in Setup.lst After Repackaging

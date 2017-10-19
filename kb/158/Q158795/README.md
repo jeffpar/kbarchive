@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158795: Win95 Client Cannot Rename Directory on Korean WinNT 3.5 Share"
-permalink: kb/158/Q158795/
+permalink: /kb/158/Q158795/
 ---
 
 ## Q158795: Win95 Client Cannot Rename Directory on Korean WinNT 3.5 Share

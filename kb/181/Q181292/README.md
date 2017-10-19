@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181292: WD97: InsertSymbol Result Not Translated Between Mac and ANSI"
-permalink: kb/181/Q181292/
+permalink: /kb/181/Q181292/
 ---
 
 ## Q181292: WD97: InsertSymbol Result Not Translated Between Mac and ANSI

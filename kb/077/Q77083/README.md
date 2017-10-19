@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77083: Optimizing Your Use of Upper Memory Blocks"
-permalink: kb/077/Q77083/
+permalink: /kb/077/Q77083/
 ---
 
 ## Q77083: Optimizing Your Use of Upper Memory Blocks

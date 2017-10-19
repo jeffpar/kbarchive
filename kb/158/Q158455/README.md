@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158455: Supported Network Adapters for Remoteboot Clients and WinNT 4.0"
-permalink: kb/158/Q158455/
+permalink: /kb/158/Q158455/
 ---
 
 ## Q158455: Supported Network Adapters for Remoteboot Clients and WinNT 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262231: SMS: Site Server Installation on Windows 2000 Terminal Server"
-permalink: kb/262/Q262231/
+permalink: /kb/262/Q262231/
 ---
 
 ## Q262231: SMS: Site Server Installation on Windows 2000 Terminal Server

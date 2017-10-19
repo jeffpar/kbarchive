@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239928: Where Do You Find COMTI Error Messages?"
-permalink: kb/239/Q239928/
+permalink: /kb/239/Q239928/
 ---
 
 ## Q239928: Where Do You Find COMTI Error Messages?

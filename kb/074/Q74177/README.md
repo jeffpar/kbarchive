@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74177: Troubleshooting Problems with MS-DOS Shell"
-permalink: kb/074/Q74177/
+permalink: /kb/074/Q74177/
 ---
 
 ## Q74177: Troubleshooting Problems with MS-DOS Shell

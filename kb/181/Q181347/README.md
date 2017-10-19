@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181347: Configuring RRAS Filters to Permit a One-Way Ping"
-permalink: kb/181/Q181347/
+permalink: /kb/181/Q181347/
 ---
 
 ## Q181347: Configuring RRAS Filters to Permit a One-Way Ping

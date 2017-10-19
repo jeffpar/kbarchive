@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136596: Curves And Colors Screen Saver Takes Long Time to Clear Screen"
-permalink: kb/136/Q136596/
+permalink: /kb/136/Q136596/
 ---
 
 ## Q136596: Curves And Colors Screen Saver Takes Long Time to Clear Screen

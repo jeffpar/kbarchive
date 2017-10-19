@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294735: SAMPLE: Override the Server Name in the Response Header Field"
-permalink: kb/294/Q294735/
+permalink: /kb/294/Q294735/
 ---
 
 ## Q294735: SAMPLE: Override the Server Name in the Response Header Field

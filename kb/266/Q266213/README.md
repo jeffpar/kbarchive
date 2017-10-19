@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266213: Event id:7 service failed to start"
-permalink: kb/266/Q266213/
+permalink: /kb/266/Q266213/
 ---
 
 ## Q266213: Event id:7 service failed to start

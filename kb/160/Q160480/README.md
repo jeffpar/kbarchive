@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160480: Encarta 97: &quot;Dynalink&quot; Error Message Starting Word or Excel"
-permalink: kb/160/Q160480/
+permalink: /kb/160/Q160480/
 ---
 
 ## Q160480: Encarta 97: &quot;Dynalink&quot; Error Message Starting Word or Excel

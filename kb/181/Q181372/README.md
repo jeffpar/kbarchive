@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181372: HttpMon.exe Does Not Write to CSV File"
-permalink: kb/181/Q181372/
+permalink: /kb/181/Q181372/
 ---
 
 ## Q181372: HttpMon.exe Does Not Write to CSV File

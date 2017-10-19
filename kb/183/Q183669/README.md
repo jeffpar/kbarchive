@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183669: XADM: Troubleshooting Intersite Directory Replication"
-permalink: kb/183/Q183669/
+permalink: /kb/183/Q183669/
 ---
 
 ## Q183669: XADM: Troubleshooting Intersite Directory Replication

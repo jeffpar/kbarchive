@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238294: Server Comment Set with SNMP Is Not Retained After Restart"
-permalink: kb/238/Q238294/
+permalink: /kb/238/Q238294/
 ---
 
 ## Q238294: Server Comment Set with SNMP Is Not Retained After Restart

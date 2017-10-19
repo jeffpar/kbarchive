@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167306: FIX: Initializer for Empty Struct Causes C2059 or C1001"
-permalink: kb/167/Q167306/
+permalink: /kb/167/Q167306/
 ---
 
 ## Q167306: FIX: Initializer for Empty Struct Causes C2059 or C1001

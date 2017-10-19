@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243626: XADM: DRs Not Properly Routed to MTA, Causing 2006 Events"
-permalink: kb/243/Q243626/
+permalink: /kb/243/Q243626/
 ---
 
 ## Q243626: XADM: DRs Not Properly Routed to MTA, Causing 2006 Events

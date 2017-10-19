@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166908: FIX: ScaleMode for Printer Object Can't Create Custom Scale"
-permalink: kb/166/Q166908/
+permalink: /kb/166/Q166908/
 ---
 
 ## Q166908: FIX: ScaleMode for Printer Object Can't Create Custom Scale

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87923: FIX: CVW 4.0 Does Not Always Stop on Breakpoints in DLL"
-permalink: kb/087/Q87923/
+permalink: /kb/087/Q87923/
 ---
 
 ## Q87923: FIX: CVW 4.0 Does Not Always Stop on Breakpoints in DLL

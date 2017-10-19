@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247775: XADM: Exchange Server Unavailable at Regular Intervals"
-permalink: kb/247/Q247775/
+permalink: /kb/247/Q247775/
 ---
 
 ## Q247775: XADM: Exchange Server Unavailable at Regular Intervals

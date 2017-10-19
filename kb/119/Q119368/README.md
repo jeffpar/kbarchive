@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119368: WD 8514/a Fails to Load in 8514/a High-Resolution Mode"
-permalink: kb/119/Q119368/
+permalink: /kb/119/Q119368/
 ---
 
 ## Q119368: WD 8514/a Fails to Load in 8514/a High-Resolution Mode

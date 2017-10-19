@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252299: RAS Service Cannot Receive Calls over the COM Port"
-permalink: kb/252/Q252299/
+permalink: /kb/252/Q252299/
 ---
 
 ## Q252299: RAS Service Cannot Receive Calls over the COM Port

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173213: FIX: JPG in Image or PictureBox Control Doesn't Display Properly"
-permalink: kb/173/Q173213/
+permalink: /kb/173/Q173213/
 ---
 
 ## Q173213: FIX: JPG in Image or PictureBox Control Doesn't Display Properly

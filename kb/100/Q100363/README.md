@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100363: HOWTO: How to Use Network DDE"
-permalink: kb/100/Q100363/
+permalink: /kb/100/Q100363/
 ---
 
 ## Q100363: HOWTO: How to Use Network DDE

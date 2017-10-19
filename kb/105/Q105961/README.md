@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105961: PC Win: Failure to Connect to SHARED.INI Skips MSMAIL.INI"
-permalink: kb/105/Q105961/
+permalink: /kb/105/Q105961/
 ---
 
 ## Q105961: PC Win: Failure to Connect to SHARED.INI Skips MSMAIL.INI

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195334: Shutdown of TS from Client Session w/o Reboot Results in Reboot"
-permalink: kb/195/Q195334/
+permalink: /kb/195/Q195334/
 ---
 
 ## Q195334: Shutdown of TS from Client Session w/o Reboot Results in Reboot

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135942: DoubleSpace Driver in Memory After Drive is Uncompressed"
-permalink: kb/135/Q135942/
+permalink: /kb/135/Q135942/
 ---
 
 ## Q135942: DoubleSpace Driver in Memory After Drive is Uncompressed

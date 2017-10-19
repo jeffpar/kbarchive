@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246491: 'No Access' When Printing to LPT1 or LPT2 Port on HP4000 Printer"
-permalink: kb/246/Q246491/
+permalink: /kb/246/Q246491/
 ---
 
 ## Q246491: 'No Access' When Printing to LPT1 or LPT2 Port on HP4000 Printer

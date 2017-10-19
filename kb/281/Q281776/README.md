@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281776: FIX: SET COLLATE TO &quot;General&quot; Causes Problem with SQL SELECT"
-permalink: kb/281/Q281776/
+permalink: /kb/281/Q281776/
 ---
 
 ## Q281776: FIX: SET COLLATE TO &quot;General&quot; Causes Problem with SQL SELECT

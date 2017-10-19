@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196912: WD97: Syntax Error in Formula Field That Uses Comma Separator"
-permalink: kb/196/Q196912/
+permalink: /kb/196/Q196912/
 ---
 
 ## Q196912: WD97: Syntax Error in Formula Field That Uses Comma Separator

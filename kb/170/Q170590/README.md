@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170590: RIP Announcements Are Not Sent After Installing MPR"
-permalink: kb/170/Q170590/
+permalink: /kb/170/Q170590/
 ---
 
 ## Q170590: RIP Announcements Are Not Sent After Installing MPR

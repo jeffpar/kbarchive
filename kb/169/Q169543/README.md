@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169543: WD97: Cover Sheet Missing When Merging to Fax"
-permalink: kb/169/Q169543/
+permalink: /kb/169/Q169543/
 ---
 
 ## Q169543: WD97: Cover Sheet Missing When Merging to Fax

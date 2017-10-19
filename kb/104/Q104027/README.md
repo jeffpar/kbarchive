@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104027: PC Ext: External Runs on 2.1 Postoffices"
-permalink: kb/104/Q104027/
+permalink: /kb/104/Q104027/
 ---
 
 ## Q104027: PC Ext: External Runs on 2.1 Postoffices

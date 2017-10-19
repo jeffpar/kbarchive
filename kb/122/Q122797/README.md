@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122797: Standard Template Files Restrict Word Backward Compatibility"
-permalink: kb/122/Q122797/
+permalink: /kb/122/Q122797/
 ---
 
 ## Q122797: Standard Template Files Restrict Word Backward Compatibility

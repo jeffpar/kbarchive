@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163645: PC 97 Hardware Design Guide Corrections and Comments"
-permalink: kb/163/Q163645/
+permalink: /kb/163/Q163645/
 ---
 
 ## Q163645: PC 97 Hardware Design Guide Corrections and Comments

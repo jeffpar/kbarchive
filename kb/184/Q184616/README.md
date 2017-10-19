@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184616: Error 51201 Occurred. Error Message Not Found"
-permalink: kb/184/Q184616/
+permalink: /kb/184/Q184616/
 ---
 
 ## Q184616: Error 51201 Occurred. Error Message Not Found

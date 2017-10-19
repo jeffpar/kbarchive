@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143153: Event ID 8003, 8009 and 8019 Appear If Subnet Mask Incorrect"
-permalink: kb/143/Q143153/
+permalink: /kb/143/Q143153/
 ---
 
 ## Q143153: Event ID 8003, 8009 and 8019 Appear If Subnet Mask Incorrect

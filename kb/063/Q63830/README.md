@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63830: PRB: Incomplete Printing of File Using File Print Option"
-permalink: kb/063/Q63830/
+permalink: /kb/063/Q63830/
 ---
 
 ## Q63830: PRB: Incomplete Printing of File Using File Print Option

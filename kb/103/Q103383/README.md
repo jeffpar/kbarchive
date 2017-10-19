@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103383: PC Ext: Missing .XTN File Causes Errors in External 3.2"
-permalink: kb/103/Q103383/
+permalink: /kb/103/Q103383/
 ---
 
 ## Q103383: PC Ext: Missing .XTN File Causes Errors in External 3.2

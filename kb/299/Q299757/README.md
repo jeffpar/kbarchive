@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299757: Train Simulator: Can't Restore Minimized Window w/Double-Click"
-permalink: kb/299/Q299757/
+permalink: /kb/299/Q299757/
 ---
 
 ## Q299757: Train Simulator: Can't Restore Minimized Window w/Double-Click

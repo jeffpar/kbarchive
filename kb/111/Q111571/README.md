@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111571: Video Corruption with Diamond Stealth and WFWG VGA Driver"
-permalink: kb/111/Q111571/
+permalink: /kb/111/Q111571/
 ---
 
 ## Q111571: Video Corruption with Diamond Stealth and WFWG VGA Driver

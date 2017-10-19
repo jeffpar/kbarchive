@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198586: How to Preload the Property Cache"
-permalink: kb/198/Q198586/
+permalink: /kb/198/Q198586/
 ---
 
 ## Q198586: How to Preload the Property Cache

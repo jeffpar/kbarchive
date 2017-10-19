@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129146: Sony CDU-31a CD-ROM on Fusion 16 Sound Card Not Detected"
-permalink: kb/129/Q129146/
+permalink: /kb/129/Q129146/
 ---
 
 ## Q129146: Sony CDU-31a CD-ROM on Fusion 16 Sound Card Not Detected

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223329: XADM: Setting Server Monitor to Monitor Remote Computers"
-permalink: kb/223/Q223329/
+permalink: /kb/223/Q223329/
 ---
 
 ## Q223329: XADM: Setting Server Monitor to Monitor Remote Computers

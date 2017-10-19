@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117924: Clipper Err Msg: ERROR: Invalid Extended Handle 65535..."
-permalink: kb/117/Q117924/
+permalink: /kb/117/Q117924/
 ---
 
 ## Q117924: Clipper Err Msg: ERROR: Invalid Extended Handle 65535...

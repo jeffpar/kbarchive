@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162667: System Files on Floppy Disk May Have Incorrect Date and Time"
-permalink: kb/162/Q162667/
+permalink: /kb/162/Q162667/
 ---
 
 ## Q162667: System Files on Floppy Disk May Have Incorrect Date and Time

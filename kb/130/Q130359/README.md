@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130359: Windows NT 3.5 RAS: Buying a Supported 28,800 bps Modem"
-permalink: kb/130/Q130359/
+permalink: /kb/130/Q130359/
 ---
 
 ## Q130359: Windows NT 3.5 RAS: Buying a Supported 28,800 bps Modem

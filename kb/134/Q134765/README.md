@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134765: Unknown Software Exception When Application Calls OpenGL"
-permalink: kb/134/Q134765/
+permalink: /kb/134/Q134765/
 ---
 
 ## Q134765: Unknown Software Exception When Application Calls OpenGL

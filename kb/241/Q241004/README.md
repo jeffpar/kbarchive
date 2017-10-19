@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241004: Network Programming for MS Windows Comments and Corrections"
-permalink: kb/241/Q241004/
+permalink: /kb/241/Q241004/
 ---
 
 ## Q241004: Network Programming for MS Windows Comments and Corrections

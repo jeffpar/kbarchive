@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246248: XWEB: Diagnostic Logging Levels for OWA Defined in Admin.exe"
-permalink: kb/246/Q246248/
+permalink: /kb/246/Q246248/
 ---
 
 ## Q246248: XWEB: Diagnostic Logging Levels for OWA Defined in Admin.exe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317189: Err Msg: Stop c000021a {Fatal System Error} The Session..."
-permalink: kb/317/Q317189/
+permalink: /kb/317/Q317189/
 ---
 
 ## Q317189: Err Msg: Stop c000021a {Fatal System Error} The Session...

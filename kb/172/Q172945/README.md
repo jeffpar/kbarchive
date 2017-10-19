@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172945: How To View A Remote Printer in Windows NT 4.0"
-permalink: kb/172/Q172945/
+permalink: /kb/172/Q172945/
 ---
 
 ## Q172945: How To View A Remote Printer in Windows NT 4.0

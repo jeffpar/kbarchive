@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122441: STOP 7B When Not Updating File Systems for Windows NT 3.1"
-permalink: kb/122/Q122441/
+permalink: /kb/122/Q122441/
 ---
 
 ## Q122441: STOP 7B When Not Updating File Systems for Windows NT 3.1

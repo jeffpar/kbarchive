@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223791: Spooler Service LPR Monitor Leaks Memory with Each Event 2004"
-permalink: kb/223/Q223791/
+permalink: /kb/223/Q223791/
 ---
 
 ## Q223791: Spooler Service LPR Monitor Leaks Memory with Each Event 2004

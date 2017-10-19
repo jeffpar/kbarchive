@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110191: Cannot Find NONET.DRV with WordPerfect 6.0 for Windows"
-permalink: kb/110/Q110191/
+permalink: /kb/110/Q110191/
 ---
 
 ## Q110191: Cannot Find NONET.DRV with WordPerfect 6.0 for Windows

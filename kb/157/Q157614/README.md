@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157614: WD97: Word Document Objects Scale When Cropped"
-permalink: kb/157/Q157614/
+permalink: /kb/157/Q157614/
 ---
 
 ## Q157614: WD97: Word Document Objects Scale When Cropped

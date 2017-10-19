@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70360: PRB: LINK Does Not Generate L2041 Error with /NOD and /DOSSEG"
-permalink: kb/070/Q70360/
+permalink: /kb/070/Q70360/
 ---
 
 ## Q70360: PRB: LINK Does Not Generate L2041 Error with /NOD and /DOSSEG

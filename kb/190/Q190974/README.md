@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190974: PRB: Function Prototypes Do Not Generate Parameter Info"
-permalink: kb/190/Q190974/
+permalink: /kb/190/Q190974/
 ---
 
 ## Q190974: PRB: Function Prototypes Do Not Generate Parameter Info

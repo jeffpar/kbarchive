@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171531: FIX: IPF When Changing Project Name with Binary Compatibility"
-permalink: kb/171/Q171531/
+permalink: /kb/171/Q171531/
 ---
 
 ## Q171531: FIX: IPF When Changing Project Name with Binary Compatibility

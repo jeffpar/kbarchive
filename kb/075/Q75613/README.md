@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75613: In CodeView, Strings Not Watchable Beyond Null (0) Character"
-permalink: kb/075/Q75613/
+permalink: /kb/075/Q75613/
 ---
 
 ## Q75613: In CodeView, Strings Not Watchable Beyond Null (0) Character

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192354: PRB: Error Saving a Form With ATL Control"
-permalink: kb/192/Q192354/
+permalink: /kb/192/Q192354/
 ---
 
 ## Q192354: PRB: Error Saving a Form With ATL Control

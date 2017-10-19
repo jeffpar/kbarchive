@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131726: PC Win: Err Msg: ...Too Many Entries Selected to Complete..."
-permalink: kb/131/Q131726/
+permalink: /kb/131/Q131726/
 ---
 
 ## Q131726: PC Win: Err Msg: ...Too Many Entries Selected to Complete...

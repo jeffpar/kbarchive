@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166473: PRB: CScrollView Scroll Range Limited to 32K"
-permalink: kb/166/Q166473/
+permalink: /kb/166/Q166473/
 ---
 
 ## Q166473: PRB: CScrollView Scroll Range Limited to 32K

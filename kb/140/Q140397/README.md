@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140397: DocErr: No SNMP Available for Windows for Workgroups"
-permalink: kb/140/Q140397/
+permalink: /kb/140/Q140397/
 ---
 
 ## Q140397: DocErr: No SNMP Available for Windows for Workgroups

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124958: NTFS Integrity Problems with Large Stripe Sets"
-permalink: kb/124/Q124958/
+permalink: /kb/124/Q124958/
 ---
 
 ## Q124958: NTFS Integrity Problems with Large Stripe Sets

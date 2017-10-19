@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286650: XFOR: Notes E-mail Addrs. Randomly Ass. to Public Folders &amp; DLs"
-permalink: kb/286/Q286650/
+permalink: /kb/286/Q286650/
 ---
 
 ## Q286650: XFOR: Notes E-mail Addrs. Randomly Ass. to Public Folders &amp; DLs

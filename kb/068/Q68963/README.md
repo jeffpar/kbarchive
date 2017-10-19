@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68963: Unrecoverable Application Error with Z-Soft Soft Type Fonts"
-permalink: kb/068/Q68963/
+permalink: /kb/068/Q68963/
 ---
 
 ## Q68963: Unrecoverable Application Error with Z-Soft Soft Type Fonts

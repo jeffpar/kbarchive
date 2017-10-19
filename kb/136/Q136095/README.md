@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136095: 802.2 Link Service Hangs APPC Program or Causes Event ID 592"
-permalink: kb/136/Q136095/
+permalink: /kb/136/Q136095/
 ---
 
 ## Q136095: 802.2 Link Service Hangs APPC Program or Causes Event ID 592

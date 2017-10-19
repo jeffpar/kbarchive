@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248655: BUG: ATL Composite Controls Do Not Meet Windows 2000 Logo"
-permalink: kb/248/Q248655/
+permalink: /kb/248/Q248655/
 ---
 
 ## Q248655: BUG: ATL Composite Controls Do Not Meet Windows 2000 Logo

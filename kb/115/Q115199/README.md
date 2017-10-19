@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115199: Too Many Files in Root Directory Generates DriveSpace Err Msgs"
-permalink: kb/115/Q115199/
+permalink: /kb/115/Q115199/
 ---
 
 ## Q115199: Too Many Files in Root Directory Generates DriveSpace Err Msgs

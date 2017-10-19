@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275280: Workstation Definitions That Use MAC Addresses Fail on Win 2000"
-permalink: kb/275/Q275280/
+permalink: /kb/275/Q275280/
 ---
 
 ## Q275280: Workstation Definitions That Use MAC Addresses Fail on Win 2000

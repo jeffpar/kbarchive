@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194885: PRB: Hiding and Showing Forms in Modal Formset Only Works Once"
-permalink: kb/194/Q194885/
+permalink: /kb/194/Q194885/
 ---
 
 ## Q194885: PRB: Hiding and Showing Forms in Modal Formset Only Works Once

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226914: SMS: Status Message Query Fails Due to Insufficient Tempdb Space"
-permalink: kb/226/Q226914/
+permalink: /kb/226/Q226914/
 ---
 
 ## Q226914: SMS: Status Message Query Fails Due to Insufficient Tempdb Space

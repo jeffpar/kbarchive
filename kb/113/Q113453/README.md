@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113453: PC DirSync: Export Required If Server Restored from Backup"
-permalink: kb/113/Q113453/
+permalink: /kb/113/Q113453/
 ---
 
 ## Q113453: PC DirSync: Export Required If Server Restored from Backup

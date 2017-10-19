@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155179: WD97: How to Use Microsoft Excel Data Source for Word Mail Merge"
-permalink: kb/155/Q155179/
+permalink: /kb/155/Q155179/
 ---
 
 ## Q155179: WD97: How to Use Microsoft Excel Data Source for Word Mail Merge

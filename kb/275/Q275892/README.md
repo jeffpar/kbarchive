@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275892: XADM: Error c103073a When Starting the Administrator Program"
-permalink: kb/275/Q275892/
+permalink: /kb/275/Q275892/
 ---
 
 ## Q275892: XADM: Error c103073a When Starting the Administrator Program

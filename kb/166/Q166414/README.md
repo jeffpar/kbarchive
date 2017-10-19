@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166414: DCA SDLC and DCA X.25 Links Don't Start When SNA Server Starts"
-permalink: kb/166/Q166414/
+permalink: /kb/166/Q166414/
 ---
 
 ## Q166414: DCA SDLC and DCA X.25 Links Don't Start When SNA Server Starts

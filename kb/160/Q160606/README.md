@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160606: Performance Enhancements for SQL Server Under Windows NT"
-permalink: kb/160/Q160606/
+permalink: /kb/160/Q160606/
 ---
 
 ## Q160606: Performance Enhancements for SQL Server Under Windows NT

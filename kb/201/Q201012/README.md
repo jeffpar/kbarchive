@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201012: XADM: Error Accessing Properties of Mailbox Cleanup Agent"
-permalink: kb/201/Q201012/
+permalink: /kb/201/Q201012/
 ---
 
 ## Q201012: XADM: Error Accessing Properties of Mailbox Cleanup Agent

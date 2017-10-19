@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73822: SysEdit Uses Incorrect AUTOEXEC.BAT and CONFIG.SYS"
-permalink: kb/073/Q73822/
+permalink: /kb/073/Q73822/
 ---
 
 ## Q73822: SysEdit Uses Incorrect AUTOEXEC.BAT and CONFIG.SYS

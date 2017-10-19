@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130628: IPCONFIG Error: Couldn't Locate Windows Installation"
-permalink: kb/130/Q130628/
+permalink: /kb/130/Q130628/
 ---
 
 ## Q130628: IPCONFIG Error: Couldn't Locate Windows Installation

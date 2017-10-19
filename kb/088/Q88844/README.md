@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88844: QMS ColorScript 100 Has No Legal Size Option"
-permalink: kb/088/Q88844/
+permalink: /kb/088/Q88844/
 ---
 
 ## Q88844: QMS ColorScript 100 Has No Legal Size Option

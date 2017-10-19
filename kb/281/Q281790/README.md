@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281790: Flight Simulator 2000: Known Video Issues"
-permalink: kb/281/Q281790/
+permalink: /kb/281/Q281790/
 ---
 
 ## Q281790: Flight Simulator 2000: Known Video Issues

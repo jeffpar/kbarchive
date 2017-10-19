@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93262: Not All HP IIISi Printers Can Print Duplex"
-permalink: kb/093/Q93262/
+permalink: /kb/093/Q93262/
 ---
 
 ## Q93262: Not All HP IIISi Printers Can Print Duplex

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302725: &quot;Must restart computer&quot; Message When Signing In To MSN Explorer"
-permalink: kb/302/Q302725/
+permalink: /kb/302/Q302725/
 ---
 
 ## Q302725: &quot;Must restart computer&quot; Message When Signing In To MSN Explorer

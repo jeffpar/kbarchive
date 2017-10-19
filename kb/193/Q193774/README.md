@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193774: HOWTO: Change a Drive's Volume Label Programmatically"
-permalink: kb/193/Q193774/
+permalink: /kb/193/Q193774/
 ---
 
 ## Q193774: HOWTO: Change a Drive's Volume Label Programmatically

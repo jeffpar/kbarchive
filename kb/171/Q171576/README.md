@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171576: FIX: RISC: AddressOf Doesn't Behave Properly in IDE/PCode Exe"
-permalink: kb/171/Q171576/
+permalink: /kb/171/Q171576/
 ---
 
 ## Q171576: FIX: RISC: AddressOf Doesn't Behave Properly in IDE/PCode Exe

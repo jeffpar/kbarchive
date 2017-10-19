@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190206: Unattended NT Option Pack Installation Ignores Some Parameters"
-permalink: kb/190/Q190206/
+permalink: /kb/190/Q190206/
 ---
 
 ## Q190206: Unattended NT Option Pack Installation Ignores Some Parameters

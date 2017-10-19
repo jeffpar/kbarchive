@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183903: HOWTO: Display the Find All Files Dialog Box"
-permalink: kb/183/Q183903/
+permalink: /kb/183/Q183903/
 ---
 
 ## Q183903: HOWTO: Display the Find All Files Dialog Box

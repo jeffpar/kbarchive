@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151976: TN3270E Users Do Not Need Windows NT User Accounts"
-permalink: kb/151/Q151976/
+permalink: /kb/151/Q151976/
 ---
 
 ## Q151976: TN3270E Users Do Not Need Windows NT User Accounts

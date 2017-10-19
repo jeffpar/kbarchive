@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306218: Err Msg: &quot;Message too large&quot; When Sending Attachments Smaller Th"
-permalink: kb/306/Q306218/
+permalink: /kb/306/Q306218/
 ---
 
 ## Q306218: Err Msg: &quot;Message too large&quot; When Sending Attachments Smaller Th

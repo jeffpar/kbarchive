@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77456: NET5.COM Requires /C= Switch to Use SHELL.CFG"
-permalink: kb/077/Q77456/
+permalink: /kb/077/Q77456/
 ---
 
 ## Q77456: NET5.COM Requires /C= Switch to Use SHELL.CFG

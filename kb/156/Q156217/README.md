@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156217: XCLN: SP2 NT Client Adds WORD Tab to Options"
-permalink: kb/156/Q156217/
+permalink: /kb/156/Q156217/
 ---
 
 ## Q156217: XCLN: SP2 NT Client Adds WORD Tab to Options

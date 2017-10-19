@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171284: Problems Enumerating CardBus Devices with No Free IRQs"
-permalink: kb/171/Q171284/
+permalink: /kb/171/Q171284/
 ---
 
 ## Q171284: Problems Enumerating CardBus Devices with No Free IRQs

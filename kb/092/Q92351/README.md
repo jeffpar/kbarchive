@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92351: Using the JOIN Command in FoxBASE+"
-permalink: kb/092/Q92351/
+permalink: /kb/092/Q92351/
 ---
 
 ## Q92351: Using the JOIN Command in FoxBASE+

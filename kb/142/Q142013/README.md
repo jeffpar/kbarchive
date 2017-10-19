@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142013: Adaptec AHA2940 Related Problems"
-permalink: kb/142/Q142013/
+permalink: /kb/142/Q142013/
 ---
 
 ## Q142013: Adaptec AHA2940 Related Problems

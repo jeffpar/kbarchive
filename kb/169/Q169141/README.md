@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169141: NetBIOS and Hostname Resolution for MS-Client and LM 2.2c"
-permalink: kb/169/Q169141/
+permalink: /kb/169/Q169141/
 ---
 
 ## Q169141: NetBIOS and Hostname Resolution for MS-Client and LM 2.2c

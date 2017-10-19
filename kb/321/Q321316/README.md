@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321316: BUG: The EnableDNS Method May Return Error Code 94"
-permalink: kb/321/Q321316/
+permalink: /kb/321/Q321316/
 ---
 
 ## Q321316: BUG: The EnableDNS Method May Return Error Code 94

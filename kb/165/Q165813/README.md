@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165813: 16-bit Applications Cause Access Violation in NTDLL.DLL"
-permalink: kb/165/Q165813/
+permalink: /kb/165/Q165813/
 ---
 
 ## Q165813: 16-bit Applications Cause Access Violation in NTDLL.DLL

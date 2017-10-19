@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216231: FIX: VB6 App Setup Errors While Copying Files"
-permalink: kb/216/Q216231/
+permalink: /kb/216/Q216231/
 ---
 
 ## Q216231: FIX: VB6 App Setup Errors While Copying Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39523: How to Declare Externals in MASM"
-permalink: kb/039/Q39523/
+permalink: /kb/039/Q39523/
 ---
 
 ## Q39523: How to Declare Externals in MASM

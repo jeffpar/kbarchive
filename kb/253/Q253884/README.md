@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253884: BUG: Printing to a Non-Default Printer May Cause an Error"
-permalink: kb/253/Q253884/
+permalink: /kb/253/Q253884/
 ---
 
 ## Q253884: BUG: Printing to a Non-Default Printer May Cause an Error

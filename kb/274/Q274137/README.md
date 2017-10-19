@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274137: XCLN: GetAssociatedAppointment CDO Method Returns Error"
-permalink: kb/274/Q274137/
+permalink: /kb/274/Q274137/
 ---
 
 ## Q274137: XCLN: GetAssociatedAppointment CDO Method Returns Error

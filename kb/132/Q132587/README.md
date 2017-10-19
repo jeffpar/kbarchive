@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132587: Verify Mode Setup Asks for Files that Are Already Present"
-permalink: kb/132/Q132587/
+permalink: /kb/132/Q132587/
 ---
 
 ## Q132587: Verify Mode Setup Asks for Files that Are Already Present

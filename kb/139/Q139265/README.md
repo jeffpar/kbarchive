@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139265: Times Matching on DHCP Clients and Servers"
-permalink: kb/139/Q139265/
+permalink: /kb/139/Q139265/
 ---
 
 ## Q139265: Times Matching on DHCP Clients and Servers

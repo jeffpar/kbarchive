@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110508: HOWTO: Create Tables with Foundation Database Classes"
-permalink: kb/110/Q110508/
+permalink: /kb/110/Q110508/
 ---
 
 ## Q110508: HOWTO: Create Tables with Foundation Database Classes

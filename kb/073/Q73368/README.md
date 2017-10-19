@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73368: BUG: H2INC 1.0 Does Not Support _syscall or _stdcall"
-permalink: kb/073/Q73368/
+permalink: /kb/073/Q73368/
 ---
 
 ## Q73368: BUG: H2INC 1.0 Does Not Support _syscall or _stdcall

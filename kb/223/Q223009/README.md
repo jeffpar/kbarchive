@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223009: SMS: Long Paths Make Audit Create a MIF That Cannot Be Processed"
-permalink: kb/223/Q223009/
+permalink: /kb/223/Q223009/
 ---
 
 ## Q223009: SMS: Long Paths Make Audit Create a MIF That Cannot Be Processed

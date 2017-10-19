@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157443: INFO: Testing TN3270 Server Using DEMO Link Services"
-permalink: kb/157/Q157443/
+permalink: /kb/157/Q157443/
 ---
 
 ## Q157443: INFO: Testing TN3270 Server Using DEMO Link Services

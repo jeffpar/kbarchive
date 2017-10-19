@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137071: Xircom PE3 Network Adapter Card Hangs on HP Omnibook 600"
-permalink: kb/137/Q137071/
+permalink: /kb/137/Q137071/
 ---
 
 ## Q137071: Xircom PE3 Network Adapter Card Hangs on HP Omnibook 600

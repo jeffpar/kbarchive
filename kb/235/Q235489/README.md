@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235489: How to Use RIP over RRAS Demand-Dial and VPN Connections"
-permalink: kb/235/Q235489/
+permalink: /kb/235/Q235489/
 ---
 
 ## Q235489: How to Use RIP over RRAS Demand-Dial and VPN Connections

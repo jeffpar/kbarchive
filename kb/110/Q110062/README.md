@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110062: Print Manager Shows Hidden Printer Shares"
-permalink: kb/110/Q110062/
+permalink: /kb/110/Q110062/
 ---
 
 ## Q110062: Print Manager Shows Hidden Printer Shares

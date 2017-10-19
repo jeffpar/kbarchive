@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152225: .Gid File Location Determined by .Cnt File Location in Help"
-permalink: kb/152/Q152225/
+permalink: /kb/152/Q152225/
 ---
 
 ## Q152225: .Gid File Location Determined by .Cnt File Location in Help

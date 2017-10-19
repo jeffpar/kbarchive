@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137441: Why the UIEnable Event Does Not Exist for All Controls"
-permalink: kb/137/Q137441/
+permalink: /kb/137/Q137441/
 ---
 
 ## Q137441: Why the UIEnable Event Does Not Exist for All Controls

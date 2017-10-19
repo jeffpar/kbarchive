@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176082: RRAS Server Updates Link State Database but Not Route Table"
-permalink: kb/176/Q176082/
+permalink: /kb/176/Q176082/
 ---
 
 ## Q176082: RRAS Server Updates Link State Database but Not Route Table

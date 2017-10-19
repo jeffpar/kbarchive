@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126112: Sky Appears Beneath the Earth in the Modeling Module"
-permalink: kb/126/Q126112/
+permalink: /kb/126/Q126112/
 ---
 
 ## Q126112: Sky Appears Beneath the Earth in the Modeling Module

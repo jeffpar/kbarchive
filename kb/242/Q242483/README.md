@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242483: FIX: Error 486 or 482 Occurs When Using PrintForm"
-permalink: kb/242/Q242483/
+permalink: /kb/242/Q242483/
 ---
 
 ## Q242483: FIX: Error 486 or 482 Occurs When Using PrintForm

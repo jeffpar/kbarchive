@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140648: Microsoft File Transfer Available for Floppy Disk Users"
-permalink: kb/140/Q140648/
+permalink: /kb/140/Q140648/
 ---
 
 ## Q140648: Microsoft File Transfer Available for Floppy Disk Users

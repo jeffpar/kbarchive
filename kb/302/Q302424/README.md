@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302424: FP: Error Message or Active Server Pages Stop Responding (Hang)"
-permalink: kb/302/Q302424/
+permalink: /kb/302/Q302424/
 ---
 
 ## Q302424: FP: Error Message or Active Server Pages Stop Responding (Hang)

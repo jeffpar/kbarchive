@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186317: Subscriptions Fail Transferring DB2 CHAR and VARCHAR Datatype"
-permalink: kb/186/Q186317/
+permalink: /kb/186/Q186317/
 ---
 
 ## Q186317: Subscriptions Fail Transferring DB2 CHAR and VARCHAR Datatype

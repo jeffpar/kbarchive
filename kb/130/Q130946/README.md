@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130946: Troubleshooting Windows 95 Backup"
-permalink: kb/130/Q130946/
+permalink: /kb/130/Q130946/
 ---
 
 ## Q130946: Troubleshooting Windows 95 Backup

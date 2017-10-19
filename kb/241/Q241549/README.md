@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241549: Callback Numbers May Not Work Properly"
-permalink: kb/241/Q241549/
+permalink: /kb/241/Q241549/
 ---
 
 ## Q241549: Callback Numbers May Not Work Properly

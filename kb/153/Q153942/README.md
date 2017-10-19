@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153942: Saving Key in RegEdt32 May Cause Access Denied Error"
-permalink: kb/153/Q153942/
+permalink: /kb/153/Q153942/
 ---
 
 ## Q153942: Saving Key in RegEdt32 May Cause Access Denied Error

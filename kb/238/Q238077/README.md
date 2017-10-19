@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238077: HOWTO: Set Blank Date as Initial Value for Date Time Control"
-permalink: kb/238/Q238077/
+permalink: /kb/238/Q238077/
 ---
 
 ## Q238077: HOWTO: Set Blank Date as Initial Value for Date Time Control

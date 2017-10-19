@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155263: ErrMsg: This Application Is Not Supported by Microsoft Windows"
-permalink: kb/155/Q155263/
+permalink: /kb/155/Q155263/
 ---
 
 ## Q155263: ErrMsg: This Application Is Not Supported by Microsoft Windows

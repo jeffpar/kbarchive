@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120193: PRB: U1150 Error From the LIB Utility"
-permalink: kb/120/Q120193/
+permalink: /kb/120/Q120193/
 ---
 
 ## Q120193: PRB: U1150 Error From the LIB Utility

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185005: XADM: How To Restore a 4.0 Directory To a 5.0 Server"
-permalink: kb/185/Q185005/
+permalink: /kb/185/Q185005/
 ---
 
 ## Q185005: XADM: How To Restore a 4.0 Directory To a 5.0 Server

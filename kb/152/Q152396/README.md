@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152396: How To Determine if QuickDraw GX Is Loaded Using SYS Function"
-permalink: kb/152/Q152396/
+permalink: /kb/152/Q152396/
 ---
 
 ## Q152396: How To Determine if QuickDraw GX Is Loaded Using SYS Function

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184426: Internet Information Server Training Comments and Corrections"
-permalink: kb/184/Q184426/
+permalink: /kb/184/Q184426/
 ---
 
 ## Q184426: Internet Information Server Training Comments and Corrections

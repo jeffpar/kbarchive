@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105158: Schedule Service Doesn't Run on Sundays"
-permalink: kb/105/Q105158/
+permalink: /kb/105/Q105158/
 ---
 
 ## Q105158: Schedule Service Doesn't Run on Sundays

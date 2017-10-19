@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151804: PRB: Dynamic Creation of Redistributable Control Fails"
-permalink: kb/151/Q151804/
+permalink: /kb/151/Q151804/
 ---
 
 ## Q151804: PRB: Dynamic Creation of Redistributable Control Fails

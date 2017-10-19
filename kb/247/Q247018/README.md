@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247018: XFOR: Using DBCS with the Exchange Connector for Lotus cc:Mail"
-permalink: kb/247/Q247018/
+permalink: /kb/247/Q247018/
 ---
 
 ## Q247018: XFOR: Using DBCS with the Exchange Connector for Lotus cc:Mail

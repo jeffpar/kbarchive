@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151715: How to Toggle the CAPS LOCK and NUM LOCK Keys"
-permalink: kb/151/Q151715/
+permalink: /kb/151/Q151715/
 ---
 
 ## Q151715: How to Toggle the CAPS LOCK and NUM LOCK Keys

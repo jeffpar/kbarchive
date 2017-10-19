@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59666: Control Panel: Desktop Pattern/Color Scheme Not Saved"
-permalink: kb/059/Q59666/
+permalink: /kb/059/Q59666/
 ---
 
 ## Q59666: Control Panel: Desktop Pattern/Color Scheme Not Saved

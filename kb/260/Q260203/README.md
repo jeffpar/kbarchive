@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260203: SMS: NetWare Client 4.7 Redirector May Cause Problems in Windows"
-permalink: kb/260/Q260203/
+permalink: /kb/260/Q260203/
 ---
 
 ## Q260203: SMS: NetWare Client 4.7 Redirector May Cause Problems in Windows

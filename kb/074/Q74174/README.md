@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74174: Invalid SET TEMP Prevents Operation of Task Swapper"
-permalink: kb/074/Q74174/
+permalink: /kb/074/Q74174/
 ---
 
 ## Q74174: Invalid SET TEMP Prevents Operation of Task Swapper

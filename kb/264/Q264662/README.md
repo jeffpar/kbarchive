@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264662: Leftover SPL, SHD, and TMP Files Remain in the Spool Directory A"
-permalink: kb/264/Q264662/
+permalink: /kb/264/Q264662/
 ---
 
 ## Q264662: Leftover SPL, SHD, and TMP Files Remain in the Spool Directory A

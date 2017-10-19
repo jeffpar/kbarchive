@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149288: XCLN: Copy of a Message Will Not Paste as a Link"
-permalink: kb/149/Q149288/
+permalink: /kb/149/Q149288/
 ---
 
 ## Q149288: XCLN: Copy of a Message Will Not Paste as a Link

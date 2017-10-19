@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226360: Incorrect Time Format When Using HTMLA Web Administration Forms"
-permalink: kb/226/Q226360/
+permalink: /kb/226/Q226360/
 ---
 
 ## Q226360: Incorrect Time Format When Using HTMLA Web Administration Forms

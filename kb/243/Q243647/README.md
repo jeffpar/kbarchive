@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243647: &quot;Error Communicating with Component&quot; Querying for Service Status"
-permalink: kb/243/Q243647/
+permalink: /kb/243/Q243647/
 ---
 
 ## Q243647: &quot;Error Communicating with Component&quot; Querying for Service Status

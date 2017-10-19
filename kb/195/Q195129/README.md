@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195129: WD97: WordPerfect Table Formulas Are Not Retained in Word"
-permalink: kb/195/Q195129/
+permalink: /kb/195/Q195129/
 ---
 
 ## Q195129: WD97: WordPerfect Table Formulas Are Not Retained in Word

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89839: WFWG Err Msg: Memory Is Insufficient to Run KRNL386.EXE"
-permalink: kb/089/Q89839/
+permalink: /kb/089/Q89839/
 ---
 
 ## Q89839: WFWG Err Msg: Memory Is Insufficient to Run KRNL386.EXE

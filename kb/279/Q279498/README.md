@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279498: SMS Sender Reschedules Send Request with No Instruction File"
-permalink: kb/279/Q279498/
+permalink: /kb/279/Q279498/
 ---
 
 ## Q279498: SMS Sender Reschedules Send Request with No Instruction File

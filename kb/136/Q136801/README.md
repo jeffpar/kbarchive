@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136801: XCLN: Err Msg: The File Could Not Be Saved"
-permalink: kb/136/Q136801/
+permalink: /kb/136/Q136801/
 ---
 
 ## Q136801: XCLN: Err Msg: The File Could Not Be Saved

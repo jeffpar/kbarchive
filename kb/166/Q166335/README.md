@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166335: XADM: Error -1022 When Starting the Directory"
-permalink: kb/166/Q166335/
+permalink: /kb/166/Q166335/
 ---
 
 ## Q166335: XADM: Error -1022 When Starting the Directory

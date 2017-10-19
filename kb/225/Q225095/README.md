@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225095: Spooler Rollup Fix to Address Memory Leaks"
-permalink: kb/225/Q225095/
+permalink: /kb/225/Q225095/
 ---
 
 ## Q225095: Spooler Rollup Fix to Address Memory Leaks

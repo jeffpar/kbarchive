@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157177: Server Takes a Very Long Time to Shut Down"
-permalink: kb/157/Q157177/
+permalink: /kb/157/Q157177/
 ---
 
 ## Q157177: Server Takes a Very Long Time to Shut Down

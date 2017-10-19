@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166039: Kids Plus!: Protect It! MS-DOS Applications Won't Start"
-permalink: kb/166/Q166039/
+permalink: /kb/166/Q166039/
 ---
 
 ## Q166039: Kids Plus!: Protect It! MS-DOS Applications Won't Start

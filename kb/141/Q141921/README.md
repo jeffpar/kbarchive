@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141921: HOWTO: How to Support Two File Extensions per MFC Document Type"
-permalink: kb/141/Q141921/
+permalink: /kb/141/Q141921/
 ---
 
 ## Q141921: HOWTO: How to Support Two File Extensions per MFC Document Type

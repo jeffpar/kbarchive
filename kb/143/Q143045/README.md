@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143045: HOWTO: Use SetCapture and WindowFromPoint to Select a Window"
-permalink: kb/143/Q143045/
+permalink: /kb/143/Q143045/
 ---
 
 ## Q143045: HOWTO: Use SetCapture and WindowFromPoint to Select a Window

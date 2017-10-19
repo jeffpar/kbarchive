@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71941: Path or File Not Found Error With Windows MS-DOS Prompt"
-permalink: kb/071/Q71941/
+permalink: /kb/071/Q71941/
 ---
 
 ## Q71941: Path or File Not Found Error With Windows MS-DOS Prompt

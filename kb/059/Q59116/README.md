@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59116: Mac Form: Err Msg: &quot;Not Enough Memory&quot; While Compiling Form"
-permalink: kb/059/Q59116/
+permalink: /kb/059/Q59116/
 ---
 
 ## Q59116: Mac Form: Err Msg: &quot;Not Enough Memory&quot; While Compiling Form

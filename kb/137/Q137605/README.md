@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137605: INFO: Viruses Known to Interfere with Visual FoxPro Installation"
-permalink: kb/137/Q137605/
+permalink: /kb/137/Q137605/
 ---
 
 ## Q137605: INFO: Viruses Known to Interfere with Visual FoxPro Installation

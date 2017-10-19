@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157718: INFO: VSS 5.0 Readme: Sec. 3, New Features in Visual SourceSafe"
-permalink: kb/157/Q157718/
+permalink: /kb/157/Q157718/
 ---
 
 ## Q157718: INFO: VSS 5.0 Readme: Sec. 3, New Features in Visual SourceSafe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80281: PRB: Combining Multiple Compiled Resource Files Fails"
-permalink: kb/080/Q80281/
+permalink: /kb/080/Q80281/
 ---
 
 ## Q80281: PRB: Combining Multiple Compiled Resource Files Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202184: Event 5701 Problems with Netlogon Service"
-permalink: kb/202/Q202184/
+permalink: /kb/202/Q202184/
 ---
 
 ## Q202184: Event 5701 Problems with Netlogon Service

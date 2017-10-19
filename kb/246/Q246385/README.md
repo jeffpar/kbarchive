@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246385: XFOR: Directory Entries Not Imported From Novell GroupWise"
-permalink: kb/246/Q246385/
+permalink: /kb/246/Q246385/
 ---
 
 ## Q246385: XFOR: Directory Entries Not Imported From Novell GroupWise

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244185: PRB: Cannot Use FileCopy() to Copy a File to a Printer"
-permalink: kb/244/Q244185/
+permalink: /kb/244/Q244185/
 ---
 
 ## Q244185: PRB: Cannot Use FileCopy() to Copy a File to a Printer

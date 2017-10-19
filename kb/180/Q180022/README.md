@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180022: MSB Solar: Sound Suddenly Stops After You Click an Object"
-permalink: kb/180/Q180022/
+permalink: /kb/180/Q180022/
 ---
 
 ## Q180022: MSB Solar: Sound Suddenly Stops After You Click an Object

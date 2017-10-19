@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168500: Router Identification Designation in OSPF"
-permalink: kb/168/Q168500/
+permalink: /kb/168/Q168500/
 ---
 
 ## Q168500: Router Identification Designation in OSPF

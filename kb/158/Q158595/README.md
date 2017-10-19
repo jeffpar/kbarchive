@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158595: Mac Encarta 97: Readme.txt: Memory Use"
-permalink: kb/158/Q158595/
+permalink: /kb/158/Q158595/
 ---
 
 ## Q158595: Mac Encarta 97: Readme.txt: Memory Use

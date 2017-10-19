@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257586: Description of Client Authentication Process During SSLHandshake"
-permalink: kb/257/Q257586/
+permalink: /kb/257/Q257586/
 ---
 
 ## Q257586: Description of Client Authentication Process During SSLHandshake

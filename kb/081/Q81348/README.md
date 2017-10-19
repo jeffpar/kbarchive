@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81348: CMOS Setup Information for the CompuAdd 386"
-permalink: kb/081/Q81348/
+permalink: /kb/081/Q81348/
 ---
 
 ## Q81348: CMOS Setup Information for the CompuAdd 386

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85058: FFAPI: What Files FFAPI Accesses in the PC Mail Database"
-permalink: kb/085/Q85058/
+permalink: /kb/085/Q85058/
 ---
 
 ## Q85058: FFAPI: What Files FFAPI Accesses in the PC Mail Database

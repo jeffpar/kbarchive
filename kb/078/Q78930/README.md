@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78930: PRB: Unresolved Externals Remain When Libraries Share a Name"
-permalink: kb/078/Q78930/
+permalink: /kb/078/Q78930/
 ---
 
 ## Q78930: PRB: Unresolved Externals Remain When Libraries Share a Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277876: Status Message 10002 on the Client When Distributing Software"
-permalink: kb/277/Q277876/
+permalink: /kb/277/Q277876/
 ---
 
 ## Q277876: Status Message 10002 on the Client When Distributing Software

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110880: Encarta 94: Copyright Information Doesn't Paste Into Write"
-permalink: kb/110/Q110880/
+permalink: /kb/110/Q110880/
 ---
 
 ## Q110880: Encarta 94: Copyright Information Doesn't Paste Into Write

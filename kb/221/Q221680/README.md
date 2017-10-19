@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221680: FIX:C0000005 Fatal Error With TRANSFORM() on Long Strings"
-permalink: kb/221/Q221680/
+permalink: /kb/221/Q221680/
 ---
 
 ## Q221680: FIX:C0000005 Fatal Error With TRANSFORM() on Long Strings

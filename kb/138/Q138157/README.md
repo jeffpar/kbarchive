@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138157: Windows 3.x Help File May Not Work Correctly in Windows 95"
-permalink: kb/138/Q138157/
+permalink: /kb/138/Q138157/
 ---
 
 ## Q138157: Windows 3.x Help File May Not Work Correctly in Windows 95

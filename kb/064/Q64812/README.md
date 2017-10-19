@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64812: Numeric Keypad &quot;&#42;&quot; Key Doesn't Work in Some MS-DOS Apps"
-permalink: kb/064/Q64812/
+permalink: /kb/064/Q64812/
 ---
 
 ## Q64812: Numeric Keypad &quot;&#42;&quot; Key Doesn't Work in Some MS-DOS Apps

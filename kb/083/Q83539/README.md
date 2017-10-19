@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83539: Mac Fax: Fax Transmissions Are Scaled"
-permalink: kb/083/Q83539/
+permalink: /kb/083/Q83539/
 ---
 
 ## Q83539: Mac Fax: Fax Transmissions Are Scaled

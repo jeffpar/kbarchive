@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112622: WFWG Err Msg: The Compressed Disk...Is Not Set Up Correctly"
-permalink: kb/112/Q112622/
+permalink: /kb/112/Q112622/
 ---
 
 ## Q112622: WFWG Err Msg: The Compressed Disk...Is Not Set Up Correctly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73616: Tentime SCSI Host Adapter in UMA"
-permalink: kb/073/Q73616/
+permalink: /kb/073/Q73616/
 ---
 
 ## Q73616: Tentime SCSI Host Adapter in UMA

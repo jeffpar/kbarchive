@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242278: Service Pack 6 Setup Replaces 3Com EtherLink 905B Driver"
-permalink: kb/242/Q242278/
+permalink: /kb/242/Q242278/
 ---
 
 ## Q242278: Service Pack 6 Setup Replaces 3Com EtherLink 905B Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q11833: Finding Size of Program"
-permalink: kb/011/Q11833/
+permalink: /kb/011/Q11833/
 ---
 
 ## Q11833: Finding Size of Program

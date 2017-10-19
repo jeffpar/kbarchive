@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154722: SMS: Administrator and Guest Accounts Are Not Modified"
-permalink: kb/154/Q154722/
+permalink: /kb/154/Q154722/
 ---
 
 ## Q154722: SMS: Administrator and Guest Accounts Are Not Modified

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183709: Printing from Xerox 3006 May Cause Paper Jams"
-permalink: kb/183/Q183709/
+permalink: /kb/183/Q183709/
 ---
 
 ## Q183709: Printing from Xerox 3006 May Cause Paper Jams

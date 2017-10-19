@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110886: System Requirements for Golf 1.0"
-permalink: kb/110/Q110886/
+permalink: /kb/110/Q110886/
 ---
 
 ## Q110886: System Requirements for Golf 1.0

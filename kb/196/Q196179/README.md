@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196179: XADM: Move Server Wizard Errors when Connectors are Installed"
-permalink: kb/196/Q196179/
+permalink: /kb/196/Q196179/
 ---
 
 ## Q196179: XADM: Move Server Wizard Errors when Connectors are Installed

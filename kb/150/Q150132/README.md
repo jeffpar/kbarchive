@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150132: PRB: Undefined Pointer Assignment Causes Application Error"
-permalink: kb/150/Q150132/
+permalink: /kb/150/Q150132/
 ---
 
 ## Q150132: PRB: Undefined Pointer Assignment Causes Application Error

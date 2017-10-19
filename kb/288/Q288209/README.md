@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288209: MechWarrior 4: Mech Torso Does Not Center Correctly"
-permalink: kb/288/Q288209/
+permalink: /kb/288/Q288209/
 ---
 
 ## Q288209: MechWarrior 4: Mech Torso Does Not Center Correctly

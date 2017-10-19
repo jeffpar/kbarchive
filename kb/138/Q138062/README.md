@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138062: How to Specify the Base Address of a VB OLE Server DLL"
-permalink: kb/138/Q138062/
+permalink: /kb/138/Q138062/
 ---
 
 ## Q138062: How to Specify the Base Address of a VB OLE Server DLL

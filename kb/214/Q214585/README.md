@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214585: Close Combat III: Computer Hangs When You Quit Game"
-permalink: kb/214/Q214585/
+permalink: /kb/214/Q214585/
 ---
 
 ## Q214585: Close Combat III: Computer Hangs When You Quit Game

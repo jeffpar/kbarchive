@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104728: DoubleGuard Message Includes &quot;Press Any Key to Continue&quot;"
-permalink: kb/104/Q104728/
+permalink: /kb/104/Q104728/
 ---
 
 ## Q104728: DoubleGuard Message Includes &quot;Press Any Key to Continue&quot;

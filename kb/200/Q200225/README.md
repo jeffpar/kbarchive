@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200225: XFOR: Requirements for the Exchange Server Connection Agent"
-permalink: kb/200/Q200225/
+permalink: /kb/200/Q200225/
 ---
 
 ## Q200225: XFOR: Requirements for the Exchange Server Connection Agent

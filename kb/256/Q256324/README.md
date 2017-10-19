@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256324: PRB: Visual C++ Displays Error for Shsql.dll and Eeswt.dll Files"
-permalink: kb/256/Q256324/
+permalink: /kb/256/Q256324/
 ---
 
 ## Q256324: PRB: Visual C++ Displays Error for Shsql.dll and Eeswt.dll Files

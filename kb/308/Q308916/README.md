@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308916: Generic/Text Only Drivers Don't Correctly Print Eastern European"
-permalink: kb/308/Q308916/
+permalink: /kb/308/Q308916/
 ---
 
 ## Q308916: Generic/Text Only Drivers Don't Correctly Print Eastern European

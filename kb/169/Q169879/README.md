@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169879: WD97: MS Excel Text Formatting May Not Convert Properly to Word"
-permalink: kb/169/Q169879/
+permalink: /kb/169/Q169879/
 ---
 
 ## Q169879: WD97: MS Excel Text Formatting May Not Convert Properly to Word

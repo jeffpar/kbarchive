@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196861: WD97:Numbering Displays in Outline View with Show Formatting Off"
-permalink: kb/196/Q196861/
+permalink: /kb/196/Q196861/
 ---
 
 ## Q196861: WD97:Numbering Displays in Outline View with Show Formatting Off

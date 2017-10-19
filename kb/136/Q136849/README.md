@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136849: Invalid Object Member Types"
-permalink: kb/136/Q136849/
+permalink: /kb/136/Q136849/
 ---
 
 ## Q136849: Invalid Object Member Types

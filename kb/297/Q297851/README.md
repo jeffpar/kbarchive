@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297851: FIX: Syntax Error in Startup Program Causes Fatal Exception"
-permalink: kb/297/Q297851/
+permalink: /kb/297/Q297851/
 ---
 
 ## Q297851: FIX: Syntax Error in Startup Program Causes Fatal Exception

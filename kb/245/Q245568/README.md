@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245568: XFOR: Workgroup Postoffice Migration to Exchange Server May Hang"
-permalink: kb/245/Q245568/
+permalink: /kb/245/Q245568/
 ---
 
 ## Q245568: XFOR: Workgroup Postoffice Migration to Exchange Server May Hang

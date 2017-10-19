@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191299: SMS: PCMDOS Cannot Regain Control After Running a Package"
-permalink: kb/191/Q191299/
+permalink: /kb/191/Q191299/
 ---
 
 ## Q191299: SMS: PCMDOS Cannot Regain Control After Running a Package

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168401: WD97: Invalid Page Fault Error When You Click Links Command"
-permalink: kb/168/Q168401/
+permalink: /kb/168/Q168401/
 ---
 
 ## Q168401: WD97: Invalid Page Fault Error When You Click Links Command

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163371: Rdisk Initialization Failed During Unattended Installation"
-permalink: kb/163/Q163371/
+permalink: /kb/163/Q163371/
 ---
 
 ## Q163371: Rdisk Initialization Failed During Unattended Installation

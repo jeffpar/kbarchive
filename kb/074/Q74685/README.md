@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74685: Problems Running Rbase 2.11 from MS-DOS Shell"
-permalink: kb/074/Q74685/
+permalink: /kb/074/Q74685/
 ---
 
 ## Q74685: Problems Running Rbase 2.11 from MS-DOS Shell

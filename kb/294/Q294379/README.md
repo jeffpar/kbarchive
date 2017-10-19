@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294379: Addressees Appear in Body of SMTP Message Instead of the Header"
-permalink: kb/294/Q294379/
+permalink: /kb/294/Q294379/
 ---
 
 ## Q294379: Addressees Appear in Body of SMTP Message Instead of the Header

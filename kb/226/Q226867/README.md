@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226867: SMS: Time Zone Is Not Registered for Licensed Programs"
-permalink: kb/226/Q226867/
+permalink: /kb/226/Q226867/
 ---
 
 ## Q226867: SMS: Time Zone Is Not Registered for Licensed Programs

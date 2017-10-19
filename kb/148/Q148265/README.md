@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148265: Dangerous Creatures: Minimum System Requirements"
-permalink: kb/148/Q148265/
+permalink: /kb/148/Q148265/
 ---
 
 ## Q148265: Dangerous Creatures: Minimum System Requirements

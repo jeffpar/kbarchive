@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138982: 3D Movie Maker: Minimum System Requirements"
-permalink: kb/138/Q138982/
+permalink: /kb/138/Q138982/
 ---
 
 ## Q138982: 3D Movie Maker: Minimum System Requirements

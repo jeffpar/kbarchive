@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198901: SAMPLE: PageSet.exe Programmatically Changes Default Printer"
-permalink: kb/198/Q198901/
+permalink: /kb/198/Q198901/
 ---
 
 ## Q198901: SAMPLE: PageSet.exe Programmatically Changes Default Printer

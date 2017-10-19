@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150312: HOWTO: Install an ISAPI Filter Dynamic-Link Library"
-permalink: kb/150/Q150312/
+permalink: /kb/150/Q150312/
 ---
 
 ## Q150312: HOWTO: Install an ISAPI Filter Dynamic-Link Library

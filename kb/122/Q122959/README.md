@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122959: Bus-Mastering SCSI Controller Problem with Etherlink 16/16TP"
-permalink: kb/122/Q122959/
+permalink: /kb/122/Q122959/
 ---
 
 ## Q122959: Bus-Mastering SCSI Controller Problem with Etherlink 16/16TP

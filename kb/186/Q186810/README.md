@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186810: Event ID 115 When Using Host Headers With IIS"
-permalink: kb/186/Q186810/
+permalink: /kb/186/Q186810/
 ---
 
 ## Q186810: Event ID 115 When Using Host Headers With IIS

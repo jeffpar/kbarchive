@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105443: PRB: MetaFile Displays Incorrectly in Print Preview"
-permalink: kb/105/Q105443/
+permalink: /kb/105/Q105443/
 ---
 
 ## Q105443: PRB: MetaFile Displays Incorrectly in Print Preview

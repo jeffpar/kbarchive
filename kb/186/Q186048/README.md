@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186048: XCON: MTA Closes Improperly After Repeated Stops and Restarts"
-permalink: kb/186/Q186048/
+permalink: /kb/186/Q186048/
 ---
 
 ## Q186048: XCON: MTA Closes Improperly After Repeated Stops and Restarts

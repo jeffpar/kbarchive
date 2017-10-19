@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177682: Images Not Displayed Correctly After Installing Service Pack 3"
-permalink: kb/177/Q177682/
+permalink: /kb/177/Q177682/
 ---
 
 ## Q177682: Images Not Displayed Correctly After Installing Service Pack 3

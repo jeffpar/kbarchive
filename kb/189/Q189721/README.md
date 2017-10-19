@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189721: BUG: ZOOM WINDOW MIN Does Not Minimize User-Defined Window"
-permalink: kb/189/Q189721/
+permalink: /kb/189/Q189721/
 ---
 
 ## Q189721: BUG: ZOOM WINDOW MIN Does Not Minimize User-Defined Window

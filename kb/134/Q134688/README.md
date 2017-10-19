@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134688: SNA Server Does Not Allow Configuration of LU Address 255"
-permalink: kb/134/Q134688/
+permalink: /kb/134/Q134688/
 ---
 
 ## Q134688: SNA Server Does Not Allow Configuration of LU Address 255

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247701: FILE: Updated Grid Control for H/PC Pro and PsPC Platforms"
-permalink: kb/247/Q247701/
+permalink: /kb/247/Q247701/
 ---
 
 ## Q247701: FILE: Updated Grid Control for H/PC Pro and PsPC Platforms

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130407: How to Customize Icons &amp; Mouse Pointers in Forms Designer"
-permalink: kb/130/Q130407/
+permalink: /kb/130/Q130407/
 ---
 
 ## Q130407: How to Customize Icons &amp; Mouse Pointers in Forms Designer

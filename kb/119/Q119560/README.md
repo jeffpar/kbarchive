@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119560: PC DOS: How to Use One-Off Addressing"
-permalink: kb/119/Q119560/
+permalink: /kb/119/Q119560/
 ---
 
 ## Q119560: PC DOS: How to Use One-Off Addressing

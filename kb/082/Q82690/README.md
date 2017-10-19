@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82690: Novell IPX 3.1 Required for Windows 3.1 Enhanced Mode"
-permalink: kb/082/Q82690/
+permalink: /kb/082/Q82690/
 ---
 
 ## Q82690: Novell IPX 3.1 Required for Windows 3.1 Enhanced Mode

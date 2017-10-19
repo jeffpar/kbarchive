@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115518: FFAPI: Memory Usage for MS-DOS Get and Put Executable Files"
-permalink: kb/115/Q115518/
+permalink: /kb/115/Q115518/
 ---
 
 ## Q115518: FFAPI: Memory Usage for MS-DOS Get and Put Executable Files

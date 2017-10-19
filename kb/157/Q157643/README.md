@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157643: XCLN: Installing the Microsoft Exchange MS-DOS Client"
-permalink: kb/157/Q157643/
+permalink: /kb/157/Q157643/
 ---
 
 ## Q157643: XCLN: Installing the Microsoft Exchange MS-DOS Client

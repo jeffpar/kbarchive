@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149421: Using Detailed Logging to Debug SNMP Issues"
-permalink: kb/149/Q149421/
+permalink: /kb/149/Q149421/
 ---
 
 ## Q149421: Using Detailed Logging to Debug SNMP Issues

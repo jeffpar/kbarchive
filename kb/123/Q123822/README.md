@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123822: PC Win: First Tab Prints As a Space"
-permalink: kb/123/Q123822/
+permalink: /kb/123/Q123822/
 ---
 
 ## Q123822: PC Win: First Tab Prints As a Space

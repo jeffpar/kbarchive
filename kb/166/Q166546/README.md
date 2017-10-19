@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166546: XCLN: POP3 Attachments Do Not Decode"
-permalink: kb/166/Q166546/
+permalink: /kb/166/Q166546/
 ---
 
 ## Q166546: XCLN: POP3 Attachments Do Not Decode

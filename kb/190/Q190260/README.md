@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190260: BUG: View Window Responds Incorrectly to Double-Click"
-permalink: kb/190/Q190260/
+permalink: /kb/190/Q190260/
 ---
 
 ## Q190260: BUG: View Window Responds Incorrectly to Double-Click

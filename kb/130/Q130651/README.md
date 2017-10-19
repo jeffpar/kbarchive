@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130651: PC-NFS and Client for Microsoft Networks Cannot Connect"
-permalink: kb/130/Q130651/
+permalink: /kb/130/Q130651/
 ---
 
 ## Q130651: PC-NFS and Client for Microsoft Networks Cannot Connect

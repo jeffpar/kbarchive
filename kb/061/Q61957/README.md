@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61957: Err Msg: No Hard Drives on System (SMARTDrive)"
-permalink: kb/061/Q61957/
+permalink: /kb/061/Q61957/
 ---
 
 ## Q61957: Err Msg: No Hard Drives on System (SMARTDrive)

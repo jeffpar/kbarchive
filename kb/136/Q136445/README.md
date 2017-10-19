@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136445: Error Using SyQuest 5110 88MB-C Removable Drive In Windows NT"
-permalink: kb/136/Q136445/
+permalink: /kb/136/Q136445/
 ---
 
 ## Q136445: Error Using SyQuest 5110 88MB-C Removable Drive In Windows NT

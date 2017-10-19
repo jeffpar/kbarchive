@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185915: SMS: Background Bitmaps Slow WinNT Remote Control Performance"
-permalink: kb/185/Q185915/
+permalink: /kb/185/Q185915/
 ---
 
 ## Q185915: SMS: Background Bitmaps Slow WinNT Remote Control Performance

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148341: Do-it-Yourself Guide: Minimum System Requirements"
-permalink: kb/148/Q148341/
+permalink: /kb/148/Q148341/
 ---
 
 ## Q148341: Do-it-Yourself Guide: Minimum System Requirements

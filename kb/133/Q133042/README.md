@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133042: HOWTO: Pass IDispatch Pointer and Avoid an Application Error"
-permalink: kb/133/Q133042/
+permalink: /kb/133/Q133042/
 ---
 
 ## Q133042: HOWTO: Pass IDispatch Pointer and Avoid an Application Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179931: How to Use Walls in Age of Empires to Gain an Advantage"
-permalink: kb/179/Q179931/
+permalink: /kb/179/Q179931/
 ---
 
 ## Q179931: How to Use Walls in Age of Empires to Gain an Advantage

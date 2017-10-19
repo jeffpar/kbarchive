@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236399: HOWTO: Troubleshoot Visual C++ Performance Problems"
-permalink: kb/236/Q236399/
+permalink: /kb/236/Q236399/
 ---
 
 ## Q236399: HOWTO: Troubleshoot Visual C++ Performance Problems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170615: INFO: Microsoft Sponsored Exchange NNTP Newsgroups"
-permalink: kb/170/Q170615/
+permalink: /kb/170/Q170615/
 ---
 
 ## Q170615: INFO: Microsoft Sponsored Exchange NNTP Newsgroups

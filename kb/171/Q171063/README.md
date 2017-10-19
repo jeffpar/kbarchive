@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171063: WD97: Merged Table Cells and Rows Do Not Print Bottom Border"
-permalink: kb/171/Q171063/
+permalink: /kb/171/Q171063/
 ---
 
 ## Q171063: WD97: Merged Table Cells and Rows Do Not Print Bottom Border

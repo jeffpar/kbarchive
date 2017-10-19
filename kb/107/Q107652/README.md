@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107652: Writer: Necessary Lantastic Network User Rights"
-permalink: kb/107/Q107652/
+permalink: /kb/107/Q107652/
 ---
 
 ## Q107652: Writer: Necessary Lantastic Network User Rights

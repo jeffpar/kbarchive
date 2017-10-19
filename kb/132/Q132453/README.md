@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132453: SET Statements in Dosstart.bat File Ignored"
-permalink: kb/132/Q132453/
+permalink: /kb/132/Q132453/
 ---
 
 ## Q132453: SET Statements in Dosstart.bat File Ignored

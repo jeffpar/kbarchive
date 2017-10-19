@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123447: Err Msg: STOP Message in DLC.SYS"
-permalink: kb/123/Q123447/
+permalink: /kb/123/Q123447/
 ---
 
 ## Q123447: Err Msg: STOP Message in DLC.SYS

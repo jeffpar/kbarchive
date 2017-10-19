@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115764: INFO: Windows for Workgroups SDK"
-permalink: kb/115/Q115764/
+permalink: /kb/115/Q115764/
 ---
 
 ## Q115764: INFO: Windows for Workgroups SDK

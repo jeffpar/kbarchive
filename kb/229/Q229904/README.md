@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229904: PRB: CAxWindow Members Can Cause a Memory Leak"
-permalink: kb/229/Q229904/
+permalink: /kb/229/Q229904/
 ---
 
 ## Q229904: PRB: CAxWindow Members Can Cause a Memory Leak

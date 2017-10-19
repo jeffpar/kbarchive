@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115177: Incorrect Qemm READ.ME Reference to MemMaker"
-permalink: kb/115/Q115177/
+permalink: /kb/115/Q115177/
 ---
 
 ## Q115177: Incorrect Qemm READ.ME Reference to MemMaker

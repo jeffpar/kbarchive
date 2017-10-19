@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201114: PRB: Windows 95 PCs Unable to Browse Remote Domain Across Router"
-permalink: kb/201/Q201114/
+permalink: /kb/201/Q201114/
 ---
 
 ## Q201114: PRB: Windows 95 PCs Unable to Browse Remote Domain Across Router

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140834: Username/Password Support in SNA Server Win95 Client Registry"
-permalink: kb/140/Q140834/
+permalink: /kb/140/Q140834/
 ---
 
 ## Q140834: Username/Password Support in SNA Server Win95 Client Registry

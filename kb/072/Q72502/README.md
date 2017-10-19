@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72502: Converting Programs from GW-Basic to QBasic"
-permalink: kb/072/Q72502/
+permalink: /kb/072/Q72502/
 ---
 
 ## Q72502: Converting Programs from GW-Basic to QBasic

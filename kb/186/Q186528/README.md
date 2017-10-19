@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186528: Document Window Problem in 16-Bit Internet Explorer 3.x"
-permalink: kb/186/Q186528/
+permalink: /kb/186/Q186528/
 ---
 
 ## Q186528: Document Window Problem in 16-Bit Internet Explorer 3.x

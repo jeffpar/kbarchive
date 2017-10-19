@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266784: XADM: Administrator Program Doesn't Start with Error 0xc0020002"
-permalink: kb/266/Q266784/
+permalink: /kb/266/Q266784/
 ---
 
 ## Q266784: XADM: Administrator Program Doesn't Start with Error 0xc0020002

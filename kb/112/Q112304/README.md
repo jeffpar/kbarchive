@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112304: PC Win: MOVEUSER.EXE Err Msg: Export User Failed"
-permalink: kb/112/Q112304/
+permalink: /kb/112/Q112304/
 ---
 
 ## Q112304: PC Win: MOVEUSER.EXE Err Msg: Export User Failed

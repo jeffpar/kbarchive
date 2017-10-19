@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176505: Values for WINS Manager Server Configuration Settings"
-permalink: kb/176/Q176505/
+permalink: /kb/176/Q176505/
 ---
 
 ## Q176505: Values for WINS Manager Server Configuration Settings

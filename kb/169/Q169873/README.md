@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169873: WD97: Object in Header Causes Object in Document to Reposition"
-permalink: kb/169/Q169873/
+permalink: /kb/169/Q169873/
 ---
 
 ## Q169873: WD97: Object in Header Causes Object in Document to Reposition

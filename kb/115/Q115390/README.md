@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115390: LAN Manager Upgrade Release Notes - README.TXT"
-permalink: kb/115/Q115390/
+permalink: /kb/115/Q115390/
 ---
 
 ## Q115390: LAN Manager Upgrade Release Notes - README.TXT

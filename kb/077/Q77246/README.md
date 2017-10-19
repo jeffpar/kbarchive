@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77246: System Clock Speeds Up When Using Task Swapper"
-permalink: kb/077/Q77246/
+permalink: /kb/077/Q77246/
 ---
 
 ## Q77246: System Clock Speeds Up When Using Task Swapper

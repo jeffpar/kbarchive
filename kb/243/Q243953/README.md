@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243953: HOWTO: Limit 32-bit Applications to One Instance Using C++"
-permalink: kb/243/Q243953/
+permalink: /kb/243/Q243953/
 ---
 
 ## Q243953: HOWTO: Limit 32-bit Applications to One Instance Using C++

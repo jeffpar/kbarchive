@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239471: Jet 4.0 Text IISAM Allows User to Append Lines to System Files"
-permalink: kb/239/Q239471/
+permalink: /kb/239/Q239471/
 ---
 
 ## Q239471: Jet 4.0 Text IISAM Allows User to Append Lines to System Files

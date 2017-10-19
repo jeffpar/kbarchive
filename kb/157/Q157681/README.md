@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157681: SMS: IP Address Missing from Client Inventory"
-permalink: kb/157/Q157681/
+permalink: /kb/157/Q157681/
 ---
 
 ## Q157681: SMS: IP Address Missing from Client Inventory

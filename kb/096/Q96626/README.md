@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96626: Uninstall Does Not Remove DEFAULT.&#42;, DOSBACK.&#42; and .INI Files"
-permalink: kb/096/Q96626/
+permalink: /kb/096/Q96626/
 ---
 
 ## Q96626: Uninstall Does Not Remove DEFAULT.&#42;, DOSBACK.&#42; and .INI Files

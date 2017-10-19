@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265686: IPCONFIG Returns &quot;Fatal Error: Inconsistent Registry Contents&quot;"
-permalink: kb/265/Q265686/
+permalink: /kb/265/Q265686/
 ---
 
 ## Q265686: IPCONFIG Returns &quot;Fatal Error: Inconsistent Registry Contents&quot;

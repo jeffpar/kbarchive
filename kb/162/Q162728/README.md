@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162728: SMS: Remote Chat Only Works One-Way with Windows NT Clients"
-permalink: kb/162/Q162728/
+permalink: /kb/162/Q162728/
 ---
 
 ## Q162728: SMS: Remote Chat Only Works One-Way with Windows NT Clients

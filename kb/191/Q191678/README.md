@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191678: MCM: Game Screen Appears Distorted or Scrambled"
-permalink: kb/191/Q191678/
+permalink: /kb/191/Q191678/
 ---
 
 ## Q191678: MCM: Game Screen Appears Distorted or Scrambled

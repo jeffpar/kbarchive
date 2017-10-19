@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221989: XADM: Buffer Overrun in Exchange Server 5.5 LDAP Service"
-permalink: kb/221/Q221989/
+permalink: /kb/221/Q221989/
 ---
 
 ## Q221989: XADM: Buffer Overrun in Exchange Server 5.5 LDAP Service

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135049: FIX: Rebuilding .CLW File Does Not Restore Link to ODL File"
-permalink: kb/135/Q135049/
+permalink: /kb/135/Q135049/
 ---
 
 ## Q135049: FIX: Rebuilding .CLW File Does Not Restore Link to ODL File

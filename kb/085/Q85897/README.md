@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85897: WDEB386-Compatible Timing Card Available"
-permalink: kb/085/Q85897/
+permalink: /kb/085/Q85897/
 ---
 
 ## Q85897: WDEB386-Compatible Timing Card Available

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155397: XCLN: Values for Role Field Are Stored in Seven Habits Tool"
-permalink: kb/155/Q155397/
+permalink: /kb/155/Q155397/
 ---
 
 ## Q155397: XCLN: Values for Role Field Are Stored in Seven Habits Tool

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139511: FIX: Text Data Truncated When Using optimizeBulkAdd"
-permalink: kb/139/Q139511/
+permalink: /kb/139/Q139511/
 ---
 
 ## Q139511: FIX: Text Data Truncated When Using optimizeBulkAdd

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265445: Password Notification Hangs Handling Multiple Password Expiratio"
-permalink: kb/265/Q265445/
+permalink: /kb/265/Q265445/
 ---
 
 ## Q265445: Password Notification Hangs Handling Multiple Password Expiratio

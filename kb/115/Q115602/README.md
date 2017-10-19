@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115602: Cannot Input Unicode Characters &gt;256 into Dialog Edit Field"
-permalink: kb/115/Q115602/
+permalink: /kb/115/Q115602/
 ---
 
 ## Q115602: Cannot Input Unicode Characters &gt;256 into Dialog Edit Field

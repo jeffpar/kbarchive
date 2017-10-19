@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108109: Comprehensive List of WFWG 3.11 Resource Kit Doc Errors"
-permalink: kb/108/Q108109/
+permalink: /kb/108/Q108109/
 ---
 
 ## Q108109: Comprehensive List of WFWG 3.11 Resource Kit Doc Errors

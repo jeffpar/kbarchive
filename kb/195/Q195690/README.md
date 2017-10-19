@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195690: WD97: No Response When Selecting Form Letters for Mail Merge"
-permalink: kb/195/Q195690/
+permalink: /kb/195/Q195690/
 ---
 
 ## Q195690: WD97: No Response When Selecting Form Letters for Mail Merge

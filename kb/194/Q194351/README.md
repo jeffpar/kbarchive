@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194351: Read Errors After Primary Member of Mirror Set Fails"
-permalink: kb/194/Q194351/
+permalink: /kb/194/Q194351/
 ---
 
 ## Q194351: Read Errors After Primary Member of Mirror Set Fails

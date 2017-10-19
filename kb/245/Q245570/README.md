@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245570: SMSINST: Repackaged REG_MULTI_SZ Values May Be Truncated"
-permalink: kb/245/Q245570/
+permalink: /kb/245/Q245570/
 ---
 
 ## Q245570: SMSINST: Repackaged REG_MULTI_SZ Values May Be Truncated

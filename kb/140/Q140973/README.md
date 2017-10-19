@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140973: Inaccessible Floppy Disk Drive on Toshiba Portege 610CT"
-permalink: kb/140/Q140973/
+permalink: /kb/140/Q140973/
 ---
 
 ## Q140973: Inaccessible Floppy Disk Drive on Toshiba Portege 610CT

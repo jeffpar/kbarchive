@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151030: PRB: Data Corruption with LBS_SORT and CCheckListBox on Win32s"
-permalink: kb/151/Q151030/
+permalink: /kb/151/Q151030/
 ---
 
 ## Q151030: PRB: Data Corruption with LBS_SORT and CCheckListBox on Win32s

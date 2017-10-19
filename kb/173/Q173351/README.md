@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173351: BUG: Custom OCX Not Unloaded When Client Application Ends"
-permalink: kb/173/Q173351/
+permalink: /kb/173/Q173351/
 ---
 
 ## Q173351: BUG: Custom OCX Not Unloaded When Client Application Ends

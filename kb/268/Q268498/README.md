@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268498: Error Message: Stop 0x0000001E - KMODE_EXCEPTION_NOT_HANDLED"
-permalink: kb/268/Q268498/
+permalink: /kb/268/Q268498/
 ---
 
 ## Q268498: Error Message: Stop 0x0000001E - KMODE_EXCEPTION_NOT_HANDLED

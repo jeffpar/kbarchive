@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181625: Event ID 29 While Using Compaq Netelligent Token Ring Adapter"
-permalink: kb/181/Q181625/
+permalink: /kb/181/Q181625/
 ---
 
 ## Q181625: Event ID 29 While Using Compaq Netelligent Token Ring Adapter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156034: HOWTO: Retrieve Information from SQL Server on Rows Affected"
-permalink: kb/156/Q156034/
+permalink: /kb/156/Q156034/
 ---
 
 ## Q156034: HOWTO: Retrieve Information from SQL Server on Rows Affected

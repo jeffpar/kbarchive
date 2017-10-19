@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279415: XCON: MSEXCHANGEMTA 9321 Err Msg When Attempting to Start MTA"
-permalink: kb/279/Q279415/
+permalink: /kb/279/Q279415/
 ---
 
 ## Q279415: XCON: MSEXCHANGEMTA 9321 Err Msg When Attempting to Start MTA

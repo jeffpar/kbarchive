@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138073: Saved Fury3 Game Does Not Save the Window Size"
-permalink: kb/138/Q138073/
+permalink: /kb/138/Q138073/
 ---
 
 ## Q138073: Saved Fury3 Game Does Not Save the Window Size

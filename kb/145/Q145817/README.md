@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145817: HOWTO: Formatting a Date or Time Value to Query an SQL Table"
-permalink: kb/145/Q145817/
+permalink: /kb/145/Q145817/
 ---
 
 ## Q145817: HOWTO: Formatting a Date or Time Value to Query an SQL Table

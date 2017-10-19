@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161410: How to Set Up a Private Network Over the Internet Using PPTP"
-permalink: kb/161/Q161410/
+permalink: /kb/161/Q161410/
 ---
 
 ## Q161410: How to Set Up a Private Network Over the Internet Using PPTP

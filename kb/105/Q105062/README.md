@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105062: MS-DOS Err Msg with DiscTec: Unrecoverable Disk Error"
-permalink: kb/105/Q105062/
+permalink: /kb/105/Q105062/
 ---
 
 ## Q105062: MS-DOS Err Msg with DiscTec: Unrecoverable Disk Error

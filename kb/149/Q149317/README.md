@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149317: SMS: IP Address Not Reported for NetWare Clients"
-permalink: kb/149/Q149317/
+permalink: /kb/149/Q149317/
 ---
 
 ## Q149317: SMS: IP Address Not Reported for NetWare Clients

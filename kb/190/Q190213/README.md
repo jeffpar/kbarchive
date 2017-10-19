@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190213: BUG: Type Mismatch Error Comparing String With Byte Array"
-permalink: kb/190/Q190213/
+permalink: /kb/190/Q190213/
 ---
 
 ## Q190213: BUG: Type Mismatch Error Comparing String With Byte Array

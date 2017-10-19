@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195178: INFO: Setting the IPX Internal Network Number During Unattended"
-permalink: kb/195/Q195178/
+permalink: /kb/195/Q195178/
 ---
 
 ## Q195178: INFO: Setting the IPX Internal Network Number During Unattended

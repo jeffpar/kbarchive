@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171069: SMS: Unable to Inventory Macintosh Files w/ Trademark Character"
-permalink: kb/171/Q171069/
+permalink: /kb/171/Q171069/
 ---
 
 ## Q171069: SMS: Unable to Inventory Macintosh Files w/ Trademark Character

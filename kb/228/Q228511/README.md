@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228511: Baseball 2000: Screen Is Redrawn Several Times During Game Play"
-permalink: kb/228/Q228511/
+permalink: /kb/228/Q228511/
 ---
 
 ## Q228511: Baseball 2000: Screen Is Redrawn Several Times During Game Play

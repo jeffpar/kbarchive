@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247913: Replace a BDC with a New Computer But Use the Same Name"
-permalink: kb/247/Q247913/
+permalink: /kb/247/Q247913/
 ---
 
 ## Q247913: Replace a BDC with a New Computer But Use the Same Name

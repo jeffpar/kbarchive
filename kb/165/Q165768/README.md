@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165768: FIX: Treeview Control ItemTips Fail on Windows NT 4.0"
-permalink: kb/165/Q165768/
+permalink: /kb/165/Q165768/
 ---
 
 ## Q165768: FIX: Treeview Control ItemTips Fail on Windows NT 4.0

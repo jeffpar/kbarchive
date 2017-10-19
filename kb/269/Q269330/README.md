@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269330: HOWTO: Troubleshoot DCOM for VB Client/Server Applications"
-permalink: kb/269/Q269330/
+permalink: /kb/269/Q269330/
 ---
 
 ## Q269330: HOWTO: Troubleshoot DCOM for VB Client/Server Applications

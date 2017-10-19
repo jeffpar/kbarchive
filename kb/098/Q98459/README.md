@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98459: Determining Which Files to Back Up When You Use DoubleSpace"
-permalink: kb/098/Q98459/
+permalink: /kb/098/Q98459/
 ---
 
 ## Q98459: Determining Which Files to Back Up When You Use DoubleSpace

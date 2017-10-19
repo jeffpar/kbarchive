@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103536: Defrag Returns Errorlevel 1 When It Finds Allocation Errors"
-permalink: kb/103/Q103536/
+permalink: /kb/103/Q103536/
 ---
 
 ## Q103536: Defrag Returns Errorlevel 1 When It Finds Allocation Errors

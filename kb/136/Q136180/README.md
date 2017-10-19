@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136180: Sorry, This Presentation Contains Open Embedded Objects..."
-permalink: kb/136/Q136180/
+permalink: /kb/136/Q136180/
 ---
 
 ## Q136180: Sorry, This Presentation Contains Open Embedded Objects...

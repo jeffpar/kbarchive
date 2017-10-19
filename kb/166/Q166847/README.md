@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166847: XFOR: AS/400 DXA on RISC Computer"
-permalink: kb/166/Q166847/
+permalink: /kb/166/Q166847/
 ---
 
 ## Q166847: XFOR: AS/400 DXA on RISC Computer

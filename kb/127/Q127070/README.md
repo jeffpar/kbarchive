@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127070: Unable to Play Composer Titles on Pioneer Multi-Disk CD"
-permalink: kb/127/Q127070/
+permalink: /kb/127/Q127070/
 ---
 
 ## Q127070: Unable to Play Composer Titles on Pioneer Multi-Disk CD

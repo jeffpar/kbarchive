@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99145: RAS RemoteListen Parameter"
-permalink: kb/099/Q99145/
+permalink: /kb/099/Q99145/
 ---
 
 ## Q99145: RAS RemoteListen Parameter

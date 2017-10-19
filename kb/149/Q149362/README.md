@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149362: XADM: Using Local Groups to Assign Permissions in Exchange"
-permalink: kb/149/Q149362/
+permalink: /kb/149/Q149362/
 ---
 
 ## Q149362: XADM: Using Local Groups to Assign Permissions in Exchange

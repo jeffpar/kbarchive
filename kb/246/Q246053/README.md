@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246053: Why Default.asp is Not Created in the Default Web Site of IIS5"
-permalink: kb/246/Q246053/
+permalink: /kb/246/Q246053/
 ---
 
 ## Q246053: Why Default.asp is Not Created in the Default Web Site of IIS5

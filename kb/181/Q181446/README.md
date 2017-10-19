@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181446: Games: Buttons Disabled on CH Virtual Pilot Pro or Combatstick"
-permalink: kb/181/Q181446/
+permalink: /kb/181/Q181446/
 ---
 
 ## Q181446: Games: Buttons Disabled on CH Virtual Pilot Pro or Combatstick

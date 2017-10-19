@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140247: PC WRmt: Err Msg: A TPL File Is Missing from your Server..."
-permalink: kb/140/Q140247/
+permalink: /kb/140/Q140247/
 ---
 
 ## Q140247: PC WRmt: Err Msg: A TPL File Is Missing from your Server...

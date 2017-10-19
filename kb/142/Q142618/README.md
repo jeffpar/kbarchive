@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142618: NCP Client Stops Responding When Saving File"
-permalink: kb/142/Q142618/
+permalink: /kb/142/Q142618/
 ---
 
 ## Q142618: NCP Client Stops Responding When Saving File

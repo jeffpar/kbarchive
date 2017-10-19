@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113006: BUG: &quot;Code Page Not Found&quot; Caused by SET CPCOMPILE to 0"
-permalink: kb/113/Q113006/
+permalink: /kb/113/Q113006/
 ---
 
 ## Q113006: BUG: &quot;Code Page Not Found&quot; Caused by SET CPCOMPILE to 0

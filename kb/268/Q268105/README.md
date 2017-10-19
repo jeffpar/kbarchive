@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268105: XADM: Mailbox Manager May Access Violate Cleaning a Container"
-permalink: kb/268/Q268105/
+permalink: /kb/268/Q268105/
 ---
 
 ## Q268105: XADM: Mailbox Manager May Access Violate Cleaning a Container

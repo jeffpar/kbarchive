@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148512: INFO:Description of the Properties/About Command Line Commands"
-permalink: kb/148/Q148512/
+permalink: /kb/148/Q148512/
 ---
 
 ## Q148512: INFO:Description of the Properties/About Command Line Commands

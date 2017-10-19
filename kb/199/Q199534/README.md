@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199534: XFOR: MS Mail Users Can't Send to Users in Remote Exchange Sites"
-permalink: kb/199/Q199534/
+permalink: /kb/199/Q199534/
 ---
 
 ## Q199534: XFOR: MS Mail Users Can't Send to Users in Remote Exchange Sites

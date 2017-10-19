@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43943: Mac Wkst: Using the Address Mail Window"
-permalink: kb/043/Q43943/
+permalink: /kb/043/Q43943/
 ---
 
 ## Q43943: Mac Wkst: Using the Address Mail Window

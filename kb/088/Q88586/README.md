@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88586: Using Dexxa Mice in Windows 3.0 and 3.1"
-permalink: kb/088/Q88586/
+permalink: /kb/088/Q88586/
 ---
 
 ## Q88586: Using Dexxa Mice in Windows 3.0 and 3.1

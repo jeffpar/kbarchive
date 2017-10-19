@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48873: Mac Wkst: Text Limitation for Body of a Message"
-permalink: kb/048/Q48873/
+permalink: /kb/048/Q48873/
 ---
 
 ## Q48873: Mac Wkst: Text Limitation for Body of a Message

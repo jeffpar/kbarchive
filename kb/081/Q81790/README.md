@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81790: 'VM ERROR' from Lotus 1-2-3 Release 3.1"
-permalink: kb/081/Q81790/
+permalink: /kb/081/Q81790/
 ---
 
 ## Q81790: 'VM ERROR' from Lotus 1-2-3 Release 3.1

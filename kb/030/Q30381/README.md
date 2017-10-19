@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q30381: FIX: Command Line Option /E Generates a Bad Fixup Record"
-permalink: kb/030/Q30381/
+permalink: /kb/030/Q30381/
 ---
 
 ## Q30381: FIX: Command Line Option /E Generates a Bad Fixup Record

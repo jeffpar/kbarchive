@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69238: Mac Srv Wkst: Mail and Public Folder Incompatibility"
-permalink: kb/069/Q69238/
+permalink: /kb/069/Q69238/
 ---
 
 ## Q69238: Mac Srv Wkst: Mail and Public Folder Incompatibility

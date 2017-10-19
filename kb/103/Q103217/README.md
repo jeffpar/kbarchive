@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103217: SAMPLE: Synchronizing Applications with CD Audio"
-permalink: kb/103/Q103217/
+permalink: /kb/103/Q103217/
 ---
 
 ## Q103217: SAMPLE: Synchronizing Applications with CD Audio

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39300: Mac DOS: No Error Message if Invalid Value in MAIL.INI"
-permalink: kb/039/Q39300/
+permalink: /kb/039/Q39300/
 ---
 
 ## Q39300: Mac DOS: No Error Message if Invalid Value in MAIL.INI

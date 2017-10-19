@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216485: HOW TO: Limit the Number of Trusted Certification Authorities"
-permalink: kb/216/Q216485/
+permalink: /kb/216/Q216485/
 ---
 
 ## Q216485: HOW TO: Limit the Number of Trusted Certification Authorities

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186531: Error Message: &quot;Cannot find &#42;.ini. Please Re-run Setup&quot;"
-permalink: kb/186/Q186531/
+permalink: /kb/186/Q186531/
 ---
 
 ## Q186531: Error Message: &quot;Cannot find &#42;.ini. Please Re-run Setup&quot;

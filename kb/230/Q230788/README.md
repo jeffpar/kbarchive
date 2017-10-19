@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230788: XADM: Using DSEXPORT to Obtain MTA Configuration Information"
-permalink: kb/230/Q230788/
+permalink: /kb/230/Q230788/
 ---
 
 ## Q230788: XADM: Using DSEXPORT to Obtain MTA Configuration Information

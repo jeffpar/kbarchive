@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202197: BUG: Freeing Resource DLLs in ExitInstance Causes Error"
-permalink: kb/202/Q202197/
+permalink: /kb/202/Q202197/
 ---
 
 ## Q202197: BUG: Freeing Resource DLLs in ExitInstance Causes Error

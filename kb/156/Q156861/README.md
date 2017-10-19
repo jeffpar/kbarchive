@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156861: FP: Words That Are Ignored by the WebBot Search Component"
-permalink: kb/156/Q156861/
+permalink: /kb/156/Q156861/
 ---
 
 ## Q156861: FP: Words That Are Ignored by the WebBot Search Component

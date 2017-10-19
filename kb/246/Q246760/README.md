@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246760: Connection to Internet Sporadic Using Cable Modem"
-permalink: kb/246/Q246760/
+permalink: /kb/246/Q246760/
 ---
 
 ## Q246760: Connection to Internet Sporadic Using Cable Modem

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184717: AspEnableParentPaths MetaBase Property Should Be Set To False"
-permalink: kb/184/Q184717/
+permalink: /kb/184/Q184717/
 ---
 
 ## Q184717: AspEnableParentPaths MetaBase Property Should Be Set To False

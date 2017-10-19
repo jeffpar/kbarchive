@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142859: Configuring Internet Server Gopher Searches"
-permalink: kb/142/Q142859/
+permalink: /kb/142/Q142859/
 ---
 
 ## Q142859: Configuring Internet Server Gopher Searches

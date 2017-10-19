@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96556: MS-DOS: How to Return to Main Menu from Multi-Config Submenu"
-permalink: kb/096/Q96556/
+permalink: /kb/096/Q96556/
 ---
 
 ## Q96556: MS-DOS: How to Return to Main Menu from Multi-Config Submenu

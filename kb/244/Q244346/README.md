@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244346: XCON: Routing Restrictions Don't Work with % Addresses RFC 1123"
-permalink: kb/244/Q244346/
+permalink: /kb/244/Q244346/
 ---
 
 ## Q244346: XCON: Routing Restrictions Don't Work with % Addresses RFC 1123

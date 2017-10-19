@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q212788: XFOR: Connector for cc:Mail Stops, No Errors Appear in Event Log"
-permalink: kb/212/Q212788/
+permalink: /kb/212/Q212788/
 ---
 
 ## Q212788: XFOR: Connector for cc:Mail Stops, No Errors Appear in Event Log

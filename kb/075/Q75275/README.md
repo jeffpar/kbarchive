@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75275: FIX: Assembling with /Sg May Cause A2075 Error"
-permalink: kb/075/Q75275/
+permalink: /kb/075/Q75275/
 ---
 
 ## Q75275: FIX: Assembling with /Sg May Cause A2075 Error

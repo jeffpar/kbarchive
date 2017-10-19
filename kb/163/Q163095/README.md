@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163095: WD97: Pictures Lost Saving a Web Page in Word"
-permalink: kb/163/Q163095/
+permalink: /kb/163/Q163095/
 ---
 
 ## Q163095: WD97: Pictures Lost Saving a Web Page in Word

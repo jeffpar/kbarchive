@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201644: SMS: SMSTrace Fails To Open SMSPROV.LOG and BOOTSTRAP.LOG"
-permalink: kb/201/Q201644/
+permalink: /kb/201/Q201644/
 ---
 
 ## Q201644: SMS: SMSTrace Fails To Open SMSPROV.LOG and BOOTSTRAP.LOG

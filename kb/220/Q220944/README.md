@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220944: SMS: Error Message When Using Healthmon on a Secondary Site"
-permalink: kb/220/Q220944/
+permalink: /kb/220/Q220944/
 ---
 
 ## Q220944: SMS: Error Message When Using Healthmon on a Secondary Site

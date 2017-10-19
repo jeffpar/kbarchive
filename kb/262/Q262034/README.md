@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262034: SMS: How to Manage the Deletion of Aged Status Messages"
-permalink: kb/262/Q262034/
+permalink: /kb/262/Q262034/
 ---
 
 ## Q262034: SMS: How to Manage the Deletion of Aged Status Messages

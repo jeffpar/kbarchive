@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194146: SMS: Scandinavian SQL Server Sort Orders Cause Inventory Probs."
-permalink: kb/194/Q194146/
+permalink: /kb/194/Q194146/
 ---
 
 ## Q194146: SMS: Scandinavian SQL Server Sort Orders Cause Inventory Probs.

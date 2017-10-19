@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215407: DOC: Index Property Incorrectly Defined"
-permalink: kb/215/Q215407/
+permalink: /kb/215/Q215407/
 ---
 
 ## Q215407: DOC: Index Property Incorrectly Defined

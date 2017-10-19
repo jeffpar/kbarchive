@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61636: Saving Compiler Results File in the PWB"
-permalink: kb/061/Q61636/
+permalink: /kb/061/Q61636/
 ---
 
 ## Q61636: Saving Compiler Results File in the PWB

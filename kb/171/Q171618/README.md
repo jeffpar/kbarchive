@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171618: Unattended Install of WinNT SP May Leave System Unbootable"
-permalink: kb/171/Q171618/
+permalink: /kb/171/Q171618/
 ---
 
 ## Q171618: Unattended Install of WinNT SP May Leave System Unbootable

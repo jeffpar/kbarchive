@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257377: Allegiance: Purple Veins Appear on Objects at High Resolutions"
-permalink: kb/257/Q257377/
+permalink: /kb/257/Q257377/
 ---
 
 ## Q257377: Allegiance: Purple Veins Appear on Objects at High Resolutions

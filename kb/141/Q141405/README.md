@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141405: Mac Encarta 96: Images with Text Don't Paste"
-permalink: kb/141/Q141405/
+permalink: /kb/141/Q141405/
 ---
 
 ## Q141405: Mac Encarta 96: Images with Text Don't Paste

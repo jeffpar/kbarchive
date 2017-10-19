@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198979: PRB: Mastering Series: 32 KB Limit on Size of a Notebook File"
-permalink: kb/198/Q198979/
+permalink: /kb/198/Q198979/
 ---
 
 ## Q198979: PRB: Mastering Series: 32 KB Limit on Size of a Notebook File

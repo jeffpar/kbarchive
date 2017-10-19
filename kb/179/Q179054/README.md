@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179054: XCLN: GPF in Access 2.0 When Viewing New Message Properties"
-permalink: kb/179/Q179054/
+permalink: /kb/179/Q179054/
 ---
 
 ## Q179054: XCLN: GPF in Access 2.0 When Viewing New Message Properties

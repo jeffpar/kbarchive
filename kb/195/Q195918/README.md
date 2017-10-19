@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195918: XADM: Slow Intersite Directory Replication"
-permalink: kb/195/Q195918/
+permalink: /kb/195/Q195918/
 ---
 
 ## Q195918: XADM: Slow Intersite Directory Replication

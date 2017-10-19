@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85653: IBM QuickWriter Missing Paper Sources"
-permalink: kb/085/Q85653/
+permalink: /kb/085/Q85653/
 ---
 
 ## Q85653: IBM QuickWriter Missing Paper Sources

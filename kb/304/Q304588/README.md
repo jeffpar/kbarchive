@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304588: SMS: No Mouse or Keyboard When You Remotely Control SMS Client"
-permalink: kb/304/Q304588/
+permalink: /kb/304/Q304588/
 ---
 
 ## Q304588: SMS: No Mouse or Keyboard When You Remotely Control SMS Client

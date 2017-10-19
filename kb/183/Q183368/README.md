@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183368: Requirements to Browse Network with Dial-Up Networking"
-permalink: kb/183/Q183368/
+permalink: /kb/183/Q183368/
 ---
 
 ## Q183368: Requirements to Browse Network with Dial-Up Networking

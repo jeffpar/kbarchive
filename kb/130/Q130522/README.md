@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130522: Internal Memory Management in Visual FoxPro"
-permalink: kb/130/Q130522/
+permalink: /kb/130/Q130522/
 ---
 
 ## Q130522: Internal Memory Management in Visual FoxPro

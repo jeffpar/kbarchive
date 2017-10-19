@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118346: Printer Driver Imaging Options Do Not Function Properly"
-permalink: kb/118/Q118346/
+permalink: /kb/118/Q118346/
 ---
 
 ## Q118346: Printer Driver Imaging Options Do Not Function Properly

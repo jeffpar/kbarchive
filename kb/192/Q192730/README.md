@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192730: Errors Performing Backup on IDE Device"
-permalink: kb/192/Q192730/
+permalink: /kb/192/Q192730/
 ---
 
 ## Q192730: Errors Performing Backup on IDE Device

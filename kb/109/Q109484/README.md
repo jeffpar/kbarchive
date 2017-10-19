@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109484: BUG: Running Macintosh Project in Windows Causes Error"
-permalink: kb/109/Q109484/
+permalink: /kb/109/Q109484/
 ---
 
 ## Q109484: BUG: Running Macintosh Project in Windows Causes Error

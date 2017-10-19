@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134283: FIX: Undocking Toolbar May Disappear When Removed from Dockbar"
-permalink: kb/134/Q134283/
+permalink: /kb/134/Q134283/
 ---
 
 ## Q134283: FIX: Undocking Toolbar May Disappear When Removed from Dockbar

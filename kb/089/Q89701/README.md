@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89701: Using Both the Retail and Debug Kernel of Windows"
-permalink: kb/089/Q89701/
+permalink: /kb/089/Q89701/
 ---
 
 ## Q89701: Using Both the Retail and Debug Kernel of Windows

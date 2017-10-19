@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72096: Reporting Illegal Sales of MS-DOS"
-permalink: kb/072/Q72096/
+permalink: /kb/072/Q72096/
 ---
 
 ## Q72096: Reporting Illegal Sales of MS-DOS

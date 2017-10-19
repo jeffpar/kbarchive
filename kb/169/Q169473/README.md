@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169473: BUG: Cannot Load FTSRCH.DLL When Using &quot;Find&quot; Tab of Help Dialog"
-permalink: kb/169/Q169473/
+permalink: /kb/169/Q169473/
 ---
 
 ## Q169473: BUG: Cannot Load FTSRCH.DLL When Using &quot;Find&quot; Tab of Help Dialog

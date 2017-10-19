@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243274: XCON: GWART Does Not Contain All Possible Routes"
-permalink: kb/243/Q243274/
+permalink: /kb/243/Q243274/
 ---
 
 ## Q243274: XCON: GWART Does Not Contain All Possible Routes

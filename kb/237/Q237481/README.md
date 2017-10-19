@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237481: XADM: Event 1023 Using Mailbox Manager w. Clean Remote Mailbox"
-permalink: kb/237/Q237481/
+permalink: /kb/237/Q237481/
 ---
 
 ## Q237481: XADM: Event 1023 Using Mailbox Manager w. Clean Remote Mailbox

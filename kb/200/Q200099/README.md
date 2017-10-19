@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200099: PRB: Owner-Drawn List Control in 68K App Crashes Macintosh"
-permalink: kb/200/Q200099/
+permalink: /kb/200/Q200099/
 ---
 
 ## Q200099: PRB: Owner-Drawn List Control in 68K App Crashes Macintosh

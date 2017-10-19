@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117891: Cinemania/Encarta: Installation Hangs on Macintosh Performa"
-permalink: kb/117/Q117891/
+permalink: /kb/117/Q117891/
 ---
 
 ## Q117891: Cinemania/Encarta: Installation Hangs on Macintosh Performa

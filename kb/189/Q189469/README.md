@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189469: Cluster Administrator Can Connect to All NetBIOS Names"
-permalink: kb/189/Q189469/
+permalink: /kb/189/Q189469/
 ---
 
 ## Q189469: Cluster Administrator Can Connect to All NetBIOS Names

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169828: FP: TAB Key Doesn't Work As Expected in FrontPage Editor"
-permalink: kb/169/Q169828/
+permalink: /kb/169/Q169828/
 ---
 
 ## Q169828: FP: TAB Key Doesn't Work As Expected in FrontPage Editor

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253475: SMCLIENT.EXE: Doesn't Logon to Server"
-permalink: kb/253/Q253475/
+permalink: /kb/253/Q253475/
 ---
 
 ## Q253475: SMCLIENT.EXE: Doesn't Logon to Server

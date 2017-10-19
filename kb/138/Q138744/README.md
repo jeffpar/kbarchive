@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138744: Policy Editor Adds Incorrect Value for NetWare Search Mode"
-permalink: kb/138/Q138744/
+permalink: /kb/138/Q138744/
 ---
 
 ## Q138744: Policy Editor Adds Incorrect Value for NetWare Search Mode

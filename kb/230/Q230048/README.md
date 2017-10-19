@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230048: Microsoft Excel 2000/Visual Basic for Applications Fundamentals"
-permalink: kb/230/Q230048/
+permalink: /kb/230/Q230048/
 ---
 
 ## Q230048: Microsoft Excel 2000/Visual Basic for Applications Fundamentals

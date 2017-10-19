@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47724: INFO: No Network License Agreements on MS Language Products"
-permalink: kb/047/Q47724/
+permalink: /kb/047/Q47724/
 ---
 
 ## Q47724: INFO: No Network License Agreements on MS Language Products

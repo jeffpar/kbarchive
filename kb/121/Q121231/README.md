@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121231: Net Watcher Isn't Displaying an Open File from Another Machine"
-permalink: kb/121/Q121231/
+permalink: /kb/121/Q121231/
 ---
 
 ## Q121231: Net Watcher Isn't Displaying an Open File from Another Machine

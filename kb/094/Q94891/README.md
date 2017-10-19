@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94891: Using MemMaker with MS-DOS Multiple Configuration Menus"
-permalink: kb/094/Q94891/
+permalink: /kb/094/Q94891/
 ---
 
 ## Q94891: Using MemMaker with MS-DOS Multiple Configuration Menus

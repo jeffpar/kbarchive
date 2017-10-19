@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279423: XADM: How to Use the DSAdiag Utility"
-permalink: kb/279/Q279423/
+permalink: /kb/279/Q279423/
 ---
 
 ## Q279423: XADM: How to Use the DSAdiag Utility

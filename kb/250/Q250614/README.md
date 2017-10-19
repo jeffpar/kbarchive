@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250614: HOWTO: Sort Items in a CListCtrl in Report View"
-permalink: kb/250/Q250614/
+permalink: /kb/250/Q250614/
 ---
 
 ## Q250614: HOWTO: Sort Items in a CListCtrl in Report View

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179973: WD97: DMM: Errors Using Word to Create Mail Merge Document"
-permalink: kb/179/Q179973/
+permalink: /kb/179/Q179973/
 ---
 
 ## Q179973: WD97: DMM: Errors Using Word to Create Mail Merge Document

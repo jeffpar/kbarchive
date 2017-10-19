@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92791: File Manager Does Not Allow Copying of Open Files"
-permalink: kb/092/Q92791/
+permalink: /kb/092/Q92791/
 ---
 
 ## Q92791: File Manager Does Not Allow Copying of Open Files

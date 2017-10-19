@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142088: WD97: Merge to Fax Not Available"
-permalink: kb/142/Q142088/
+permalink: /kb/142/Q142088/
 ---
 
 ## Q142088: WD97: Merge to Fax Not Available

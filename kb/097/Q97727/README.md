@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97727: WFWG: NET START Prompts for Logon on 80286-Based Computers"
-permalink: kb/097/Q97727/
+permalink: /kb/097/Q97727/
 ---
 
 ## Q97727: WFWG: NET START Prompts for Logon on 80286-Based Computers

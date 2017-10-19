@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148407: PRB: Error: Cannot load ODBC Library Odbc32.dll"
-permalink: kb/148/Q148407/
+permalink: /kb/148/Q148407/
 ---
 
 ## Q148407: PRB: Error: Cannot load ODBC Library Odbc32.dll

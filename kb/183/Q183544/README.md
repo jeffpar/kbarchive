@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183544: HOWTO: Call CLSID And ProgID Related COM APIs in Visual Basic"
-permalink: kb/183/Q183544/
+permalink: /kb/183/Q183544/
 ---
 
 ## Q183544: HOWTO: Call CLSID And ProgID Related COM APIs in Visual Basic

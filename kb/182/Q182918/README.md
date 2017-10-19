@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182918: Account Lockout Event Also Stored in Security Event Log on DC"
-permalink: kb/182/Q182918/
+permalink: /kb/182/Q182918/
 ---
 
 ## Q182918: Account Lockout Event Also Stored in Security Event Log on DC

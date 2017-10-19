@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74741: Novell Network Hangs on IPX File with EMM386.EXE"
-permalink: kb/074/Q74741/
+permalink: /kb/074/Q74741/
 ---
 
 ## Q74741: Novell Network Hangs on IPX File with EMM386.EXE

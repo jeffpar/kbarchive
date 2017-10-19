@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161096: XADM: Unable to Export Hidden Mailboxes via Command Line"
-permalink: kb/161/Q161096/
+permalink: /kb/161/Q161096/
 ---
 
 ## Q161096: XADM: Unable to Export Hidden Mailboxes via Command Line

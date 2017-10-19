@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67221: Changing Decks in Solitaire with the Keyboard"
-permalink: kb/067/Q67221/
+permalink: /kb/067/Q67221/
 ---
 
 ## Q67221: Changing Decks in Solitaire with the Keyboard

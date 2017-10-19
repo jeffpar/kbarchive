@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172266: Microsoft FrontPage 97 Step by Step Comments and Corrections"
-permalink: kb/172/Q172266/
+permalink: /kb/172/Q172266/
 ---
 
 ## Q172266: Microsoft FrontPage 97 Step by Step Comments and Corrections

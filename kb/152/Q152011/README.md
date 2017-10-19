@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152011: Requirements for Using WinAPPCStartup and WinAPPCCleanup."
-permalink: kb/152/Q152011/
+permalink: /kb/152/Q152011/
 ---
 
 ## Q152011: Requirements for Using WinAPPCStartup and WinAPPCCleanup.

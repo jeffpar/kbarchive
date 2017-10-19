@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114463: Hiding the Last Logged On Username in the Logon Dialog"
-permalink: kb/114/Q114463/
+permalink: /kb/114/Q114463/
 ---
 
 ## Q114463: Hiding the Last Logged On Username in the Logon Dialog

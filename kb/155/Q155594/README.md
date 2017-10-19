@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155594: XADM: Generic Import Format to Add SMTP Secondary Proxy Address"
-permalink: kb/155/Q155594/
+permalink: /kb/155/Q155594/
 ---
 
 ## Q155594: XADM: Generic Import Format to Add SMTP Secondary Proxy Address

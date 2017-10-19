@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123957: Error Updating PowerPoint 4.0 File Using CSNW/GSNW"
-permalink: kb/123/Q123957/
+permalink: /kb/123/Q123957/
 ---
 
 ## Q123957: Error Updating PowerPoint 4.0 File Using CSNW/GSNW

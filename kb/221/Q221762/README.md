@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221762: Error Message Using the CALL Command in Windows NT Logon Script"
-permalink: kb/221/Q221762/
+permalink: /kb/221/Q221762/
 ---
 
 ## Q221762: Error Message Using the CALL Command in Windows NT Logon Script

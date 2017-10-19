@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163080: XFOR: Event 4081 Occurs When IMC Encounters Invalid Code Page"
-permalink: kb/163/Q163080/
+permalink: /kb/163/Q163080/
 ---
 
 ## Q163080: XFOR: Event 4081 Occurs When IMC Encounters Invalid Code Page

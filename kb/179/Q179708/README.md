@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179708: WD97: Custom &quot;Page Design&quot; Changes Not Used by Letter Wizard"
-permalink: kb/179/Q179708/
+permalink: /kb/179/Q179708/
 ---
 
 ## Q179708: WD97: Custom &quot;Page Design&quot; Changes Not Used by Letter Wizard

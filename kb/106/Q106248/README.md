@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106248: 32-Bit File Access Requires MS-DOS 6.2 DoubleSpace"
-permalink: kb/106/Q106248/
+permalink: /kb/106/Q106248/
 ---
 
 ## Q106248: 32-Bit File Access Requires MS-DOS 6.2 DoubleSpace

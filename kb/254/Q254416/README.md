@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254416: MapPoint 2001 Error Message: An Unexpected Failure Has Occurred"
-permalink: kb/254/Q254416/
+permalink: /kb/254/Q254416/
 ---
 
 ## Q254416: MapPoint 2001 Error Message: An Unexpected Failure Has Occurred

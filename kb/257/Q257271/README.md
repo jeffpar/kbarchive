@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257271: SMS: Client Does Not Run Advertisement of Same Package/Program"
-permalink: kb/257/Q257271/
+permalink: /kb/257/Q257271/
 ---
 
 ## Q257271: SMS: Client Does Not Run Advertisement of Same Package/Program

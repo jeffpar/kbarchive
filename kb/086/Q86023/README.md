@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86023: Control Panel .CPL Files and Icon Installation"
-permalink: kb/086/Q86023/
+permalink: /kb/086/Q86023/
 ---
 
 ## Q86023: Control Panel .CPL Files and Icon Installation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111811: PRB: FoxPro for Macintosh Won't Display &gt; 5 Levels of Submenus"
-permalink: kb/111/Q111811/
+permalink: /kb/111/Q111811/
 ---
 
 ## Q111811: PRB: FoxPro for Macintosh Won't Display &gt; 5 Levels of Submenus

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194624: TN3270 Server Traps When TN3270 Session Load Is Under 30K"
-permalink: kb/194/Q194624/
+permalink: /kb/194/Q194624/
 ---
 
 ## Q194624: TN3270 Server Traps When TN3270 Session Load Is Under 30K

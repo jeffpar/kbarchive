@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124376: Spry RAS Connection to Windows NT RAS Server Fails"
-permalink: kb/124/Q124376/
+permalink: /kb/124/Q124376/
 ---
 
 ## Q124376: Spry RAS Connection to Windows NT RAS Server Fails

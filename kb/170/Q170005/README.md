@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170005: XCON: MTA Fails to Start with WinNT Event ID 137"
-permalink: kb/170/Q170005/
+permalink: /kb/170/Q170005/
 ---
 
 ## Q170005: XCON: MTA Fails to Start with WinNT Event ID 137

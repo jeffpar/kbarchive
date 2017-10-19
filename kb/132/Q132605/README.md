@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132605: Channels Reversed on Sound Galaxy Washington 16 Sound Card"
-permalink: kb/132/Q132605/
+permalink: /kb/132/Q132605/
 ---
 
 ## Q132605: Channels Reversed on Sound Galaxy Washington 16 Sound Card

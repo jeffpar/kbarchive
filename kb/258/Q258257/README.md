@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258257: XADM: How to Verify Object-Version When Troubleshooting DIR_REP"
-permalink: kb/258/Q258257/
+permalink: /kb/258/Q258257/
 ---
 
 ## Q258257: XADM: How to Verify Object-Version When Troubleshooting DIR_REP

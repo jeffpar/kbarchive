@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122422: Example of Remote Logon with Windows NT Server"
-permalink: kb/122/Q122422/
+permalink: /kb/122/Q122422/
 ---
 
 ## Q122422: Example of Remote Logon with Windows NT Server

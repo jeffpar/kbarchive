@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158470: WD97: VB Code to Switch a Document to Two-Page View"
-permalink: kb/158/Q158470/
+permalink: /kb/158/Q158470/
 ---
 
 ## Q158470: WD97: VB Code to Switch a Document to Two-Page View

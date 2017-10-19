@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299495: Explanation of Passport Certificate Dialog Boxes from Browser"
-permalink: kb/299/Q299495/
+permalink: /kb/299/Q299495/
 ---
 
 ## Q299495: Explanation of Passport Certificate Dialog Boxes from Browser

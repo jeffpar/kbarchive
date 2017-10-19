@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83532: Kurta Tablet Requires New Driver for Windows 3.1"
-permalink: kb/083/Q83532/
+permalink: /kb/083/Q83532/
 ---
 
 ## Q83532: Kurta Tablet Requires New Driver for Windows 3.1

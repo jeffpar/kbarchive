@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146255: XCLN: Hidden Recipient Names Are Not Resolved"
-permalink: kb/146/Q146255/
+permalink: /kb/146/Q146255/
 ---
 
 ## Q146255: XCLN: Hidden Recipient Names Are Not Resolved

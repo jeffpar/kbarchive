@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126747: Print Manager Does Not Start Automatically with Shared Printer"
-permalink: kb/126/Q126747/
+permalink: /kb/126/Q126747/
 ---
 
 ## Q126747: Print Manager Does Not Start Automatically with Shared Printer

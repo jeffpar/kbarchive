@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128438: SMTP: Err Msg: Sockets Error: the Value for Key Host Name..."
-permalink: kb/128/Q128438/
+permalink: /kb/128/Q128438/
 ---
 
 ## Q128438: SMTP: Err Msg: Sockets Error: the Value for Key Host Name...

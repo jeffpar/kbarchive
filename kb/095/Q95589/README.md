@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95589: PRB: Problems Using SET PRINTER TO &#92;&#92;SPOOLER on Novell Network"
-permalink: kb/095/Q95589/
+permalink: /kb/095/Q95589/
 ---
 
 ## Q95589: PRB: Problems Using SET PRINTER TO &#92;&#92;SPOOLER on Novell Network

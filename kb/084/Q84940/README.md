@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84940: Setup Error: File xxx.xxx Open/Creation Access Denied"
-permalink: kb/084/Q84940/
+permalink: /kb/084/Q84940/
 ---
 
 ## Q84940: Setup Error: File xxx.xxx Open/Creation Access Denied

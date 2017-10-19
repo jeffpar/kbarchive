@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175298: XADM: System Attendant Started After Running Restore"
-permalink: kb/175/Q175298/
+permalink: /kb/175/Q175298/
 ---
 
 ## Q175298: XADM: System Attendant Started After Running Restore

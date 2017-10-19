@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172813: XADM:Troubleshooting High CPU Utilization By Store.exe"
-permalink: kb/172/Q172813/
+permalink: /kb/172/Q172813/
 ---
 
 ## Q172813: XADM:Troubleshooting High CPU Utilization By Store.exe

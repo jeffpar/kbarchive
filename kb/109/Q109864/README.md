@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109864: Writer 1: Text Missing, Jumbled, or Overlapping"
-permalink: kb/109/Q109864/
+permalink: /kb/109/Q109864/
 ---
 
 ## Q109864: Writer 1: Text Missing, Jumbled, or Overlapping

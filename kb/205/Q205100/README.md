@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q205100: Event IDs 4318 and 4224: WINS Database Missing or Corrupt"
-permalink: kb/205/Q205100/
+permalink: /kb/205/Q205100/
 ---
 
 ## Q205100: Event IDs 4318 and 4224: WINS Database Missing or Corrupt

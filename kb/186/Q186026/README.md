@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186026: Baseball 3D: Minimum System Requirements"
-permalink: kb/186/Q186026/
+permalink: /kb/186/Q186026/
 ---
 
 ## Q186026: Baseball 3D: Minimum System Requirements

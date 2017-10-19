@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270749: ELL: Windows Taskbar Covers Encarta Language Learning Window"
-permalink: kb/270/Q270749/
+permalink: /kb/270/Q270749/
 ---
 
 ## Q270749: ELL: Windows Taskbar Covers Encarta Language Learning Window

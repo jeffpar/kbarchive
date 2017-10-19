@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161515: WD97: Macro Virus Warning Displayed When No Macros Exist in File"
-permalink: kb/161/Q161515/
+permalink: /kb/161/Q161515/
 ---
 
 ## Q161515: WD97: Macro Virus Warning Displayed When No Macros Exist in File

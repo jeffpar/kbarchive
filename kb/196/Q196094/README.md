@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196094: How to Manually Install Small Business Server Clients"
-permalink: kb/196/Q196094/
+permalink: /kb/196/Q196094/
 ---
 
 ## Q196094: How to Manually Install Small Business Server Clients

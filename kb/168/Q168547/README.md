@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168547: DSMN Errors in Event Viewer with Netware Servers"
-permalink: kb/168/Q168547/
+permalink: /kb/168/Q168547/
 ---
 
 ## Q168547: DSMN Errors in Event Viewer with Netware Servers

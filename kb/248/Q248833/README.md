@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248833: PRB: Data Control Only Displays Updated Data When Single-Step"
-permalink: kb/248/Q248833/
+permalink: /kb/248/Q248833/
 ---
 
 ## Q248833: PRB: Data Control Only Displays Updated Data When Single-Step

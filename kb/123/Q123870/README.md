@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123870: INFO: Portable DLL Example Using _declspec() and _export"
-permalink: kb/123/Q123870/
+permalink: /kb/123/Q123870/
 ---
 
 ## Q123870: INFO: Portable DLL Example Using _declspec() and _export

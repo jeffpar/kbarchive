@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303020: Train Simulator 2000: &quot;Dsound.dll Was Not Found&quot; Err Msg Appears"
-permalink: kb/303/Q303020/
+permalink: /kb/303/Q303020/
 ---
 
 ## Q303020: Train Simulator 2000: &quot;Dsound.dll Was Not Found&quot; Err Msg Appears

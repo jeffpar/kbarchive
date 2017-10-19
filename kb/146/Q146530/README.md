@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146530: XCLN: Modified OLE Obj. Reverts to Original After Copied"
-permalink: kb/146/Q146530/
+permalink: /kb/146/Q146530/
 ---
 
 ## Q146530: XCLN: Modified OLE Obj. Reverts to Original After Copied

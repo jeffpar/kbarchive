@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111948: X400: Err Msg: ERROR 8 (layer): Initialization Failed...MEMORY"
-permalink: kb/111/Q111948/
+permalink: /kb/111/Q111948/
 ---
 
 ## Q111948: X400: Err Msg: ERROR 8 (layer): Initialization Failed...MEMORY

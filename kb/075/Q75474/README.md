@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75474: Western Digital ViaNet Is Incompatible with MS-DOS 4.x, 5.0"
-permalink: kb/075/Q75474/
+permalink: /kb/075/Q75474/
 ---
 
 ## Q75474: Western Digital ViaNet Is Incompatible with MS-DOS 4.x, 5.0

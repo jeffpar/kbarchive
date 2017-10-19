@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139501: VB CPIC Application Returns CM_PRODUCT_SPECIFIC_ERROR (20)"
-permalink: kb/139/Q139501/
+permalink: /kb/139/Q139501/
 ---
 
 ## Q139501: VB CPIC Application Returns CM_PRODUCT_SPECIFIC_ERROR (20)

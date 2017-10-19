@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238214: Asheron's Call: How to Enable or Disable 3D Acceleration"
-permalink: kb/238/Q238214/
+permalink: /kb/238/Q238214/
 ---
 
 ## Q238214: Asheron's Call: How to Enable or Disable 3D Acceleration

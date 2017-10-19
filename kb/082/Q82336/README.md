@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82336: Windows 3.1: Okidata OL-400/800 Font Cards Not Supported"
-permalink: kb/082/Q82336/
+permalink: /kb/082/Q82336/
 ---
 
 ## Q82336: Windows 3.1: Okidata OL-400/800 Font Cards Not Supported

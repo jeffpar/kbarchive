@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137045: X400: Using a 3Com Etherlink II Network Card for TP4/CLNS"
-permalink: kb/137/Q137045/
+permalink: /kb/137/Q137045/
 ---
 
 ## Q137045: X400: Using a 3Com Etherlink II Network Card for TP4/CLNS

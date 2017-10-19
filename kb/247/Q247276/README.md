@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247276: XFOR: Error Message: Extension MS Could Not Be Loaded"
-permalink: kb/247/Q247276/
+permalink: /kb/247/Q247276/
 ---
 
 ## Q247276: XFOR: Error Message: Extension MS Could Not Be Loaded

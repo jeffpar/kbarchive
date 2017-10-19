@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116183: BUG: Step-After-Return in CodeView &quot;Hangs&quot; in a Large Function"
-permalink: kb/116/Q116183/
+permalink: /kb/116/Q116183/
 ---
 
 ## Q116183: BUG: Step-After-Return in CodeView &quot;Hangs&quot; in a Large Function

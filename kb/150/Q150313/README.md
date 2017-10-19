@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150313: Renaming or Deleting Microsoft Phone Voice Commands"
-permalink: kb/150/Q150313/
+permalink: /kb/150/Q150313/
 ---
 
 ## Q150313: Renaming or Deleting Microsoft Phone Voice Commands

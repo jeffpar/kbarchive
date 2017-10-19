@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176165: XADM: Setup Error Message: This version of setup is older..."
-permalink: kb/176/Q176165/
+permalink: /kb/176/Q176165/
 ---
 
 ## Q176165: XADM: Setup Error Message: This version of setup is older...

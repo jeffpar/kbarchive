@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83702: UltraStor 22CA ESDI Controller Needs /Double_Buffer+ Line"
-permalink: kb/083/Q83702/
+permalink: /kb/083/Q83702/
 ---
 
 ## Q83702: UltraStor 22CA ESDI Controller Needs /Double_Buffer+ Line

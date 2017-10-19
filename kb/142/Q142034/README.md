@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142034: Domain Controllers Unable to Communicate Over IPX Token-Ring WAN"
-permalink: kb/142/Q142034/
+permalink: /kb/142/Q142034/
 ---
 
 ## Q142034: Domain Controllers Unable to Communicate Over IPX Token-Ring WAN

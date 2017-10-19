@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188420: XADM: Adding Recipients To a Form May Change Display Name"
-permalink: kb/188/Q188420/
+permalink: /kb/188/Q188420/
 ---
 
 ## Q188420: XADM: Adding Recipients To a Form May Change Display Name

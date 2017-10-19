@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244495: HOWTO: Implement Thread-Pooled, Apartment Model COM Svr in ATL"
-permalink: kb/244/Q244495/
+permalink: /kb/244/Q244495/
 ---
 
 ## Q244495: HOWTO: Implement Thread-Pooled, Apartment Model COM Svr in ATL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138305: Cannot Configure Windows 95 to Use Default Hardware Profile"
-permalink: kb/138/Q138305/
+permalink: /kb/138/Q138305/
 ---
 
 ## Q138305: Cannot Configure Windows 95 to Use Default Hardware Profile

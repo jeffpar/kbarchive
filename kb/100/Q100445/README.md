@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100445: BUG: Character Field Appears as Date in Microsoft Graph"
-permalink: kb/100/Q100445/
+permalink: /kb/100/Q100445/
 ---
 
 ## Q100445: BUG: Character Field Appears as Date in Microsoft Graph

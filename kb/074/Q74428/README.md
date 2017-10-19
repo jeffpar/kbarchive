@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74428: Golden Bow VOpt Requires Version 3.0x for MS-DOS 5.0"
-permalink: kb/074/Q74428/
+permalink: /kb/074/Q74428/
 ---
 
 ## Q74428: Golden Bow VOpt Requires Version 3.0x for MS-DOS 5.0

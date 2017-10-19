@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229314: XFOR: cc:Mail Migration Fails; PO Name Has Non-AlphaNumeric Char"
-permalink: kb/229/Q229314/
+permalink: /kb/229/Q229314/
 ---
 
 ## Q229314: XFOR: cc:Mail Migration Fails; PO Name Has Non-AlphaNumeric Char

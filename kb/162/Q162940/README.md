@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162940: WD97: WordBasic.EditGoTo Does Not Go to Bookmark"
-permalink: kb/162/Q162940/
+permalink: /kb/162/Q162940/
 ---
 
 ## Q162940: WD97: WordBasic.EditGoTo Does Not Go to Bookmark

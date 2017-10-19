@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235468: XCLN: Wrong Language Pack Causes Error Message with OWA Calendar"
-permalink: kb/235/Q235468/
+permalink: /kb/235/Q235468/
 ---
 
 ## Q235468: XCLN: Wrong Language Pack Causes Error Message with OWA Calendar

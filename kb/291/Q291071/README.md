@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291071: Sending File Attachments With MSN Explorer's Online Buddies Or W"
-permalink: kb/291/Q291071/
+permalink: /kb/291/Q291071/
 ---
 
 ## Q291071: Sending File Attachments With MSN Explorer's Online Buddies Or W

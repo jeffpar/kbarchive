@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187465: Error 0x906 SL_ERR_SECCTXTINITFAILED"
-permalink: kb/187/Q187465/
+permalink: /kb/187/Q187465/
 ---
 
 ## Q187465: Error 0x906 SL_ERR_SECCTXTINITFAILED

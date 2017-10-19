@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257703: FIX: ListView Control Still Active After Opening Modal Form"
-permalink: kb/257/Q257703/
+permalink: /kb/257/Q257703/
 ---
 
 ## Q257703: FIX: ListView Control Still Active After Opening Modal Form

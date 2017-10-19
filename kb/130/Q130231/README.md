@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130231: PC NTMMTA: External Command Line Options Not Used with NT MMTA"
-permalink: kb/130/Q130231/
+permalink: /kb/130/Q130231/
 ---
 
 ## Q130231: PC NTMMTA: External Command Line Options Not Used with NT MMTA

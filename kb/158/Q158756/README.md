@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158756: BUG: Double Data Type Does Not Display Small Values Correctly"
-permalink: kb/158/Q158756/
+permalink: /kb/158/Q158756/
 ---
 
 ## Q158756: BUG: Double Data Type Does Not Display Small Values Correctly

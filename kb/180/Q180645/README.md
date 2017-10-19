@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180645: FIX: Cannot Change Page Settings During Print Job"
-permalink: kb/180/Q180645/
+permalink: /kb/180/Q180645/
 ---
 
 ## Q180645: FIX: Cannot Change Page Settings During Print Job

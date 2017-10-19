@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178635: Can Not Change Domain in Windows After You Use NETDOM"
-permalink: kb/178/Q178635/
+permalink: /kb/178/Q178635/
 ---
 
 ## Q178635: Can Not Change Domain in Windows After You Use NETDOM

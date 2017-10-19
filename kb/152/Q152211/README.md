@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152211: FIX: Constructor Gets Called Multiple Times on the Same Object"
-permalink: kb/152/Q152211/
+permalink: /kb/152/Q152211/
 ---
 
 ## Q152211: FIX: Constructor Gets Called Multiple Times on the Same Object

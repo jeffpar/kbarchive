@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190567: BUG: GotFocus() Sets Commandbutton Default to Initial Setting"
-permalink: kb/190/Q190567/
+permalink: /kb/190/Q190567/
 ---
 
 ## Q190567: BUG: GotFocus() Sets Commandbutton Default to Initial Setting

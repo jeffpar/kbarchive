@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190698: Microsoft Key Management Server Event ID 5058"
-permalink: kb/190/Q190698/
+permalink: /kb/190/Q190698/
 ---
 
 ## Q190698: Microsoft Key Management Server Event ID 5058

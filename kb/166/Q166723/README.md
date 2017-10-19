@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166723: FIX: ATL Object Wizard Prevents Undo Changes"
-permalink: kb/166/Q166723/
+permalink: /kb/166/Q166723/
 ---
 
 ## Q166723: FIX: ATL Object Wizard Prevents Undo Changes

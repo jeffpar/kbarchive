@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101615: PC WSPlus: Command-Line Parameters for Schedule+ Reminders"
-permalink: kb/101/Q101615/
+permalink: /kb/101/Q101615/
 ---
 
 ## Q101615: PC WSPlus: Command-Line Parameters for Schedule+ Reminders

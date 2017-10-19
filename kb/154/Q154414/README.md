@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154414: WINS Default Configuration Value Changes for Windows NT 4.0"
-permalink: kb/154/Q154414/
+permalink: /kb/154/Q154414/
 ---
 
 ## Q154414: WINS Default Configuration Value Changes for Windows NT 4.0

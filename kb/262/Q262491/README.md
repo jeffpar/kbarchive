@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262491: XADM: Information Store Crashes When Using Antivirus Application"
-permalink: kb/262/Q262491/
+permalink: /kb/262/Q262491/
 ---
 
 ## Q262491: XADM: Information Store Crashes When Using Antivirus Application

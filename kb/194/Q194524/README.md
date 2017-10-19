@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194524: PRB: APPEND PROCEDURE FROM Does Not Bring Procs in for Viewing"
-permalink: kb/194/Q194524/
+permalink: /kb/194/Q194524/
 ---
 
 ## Q194524: PRB: APPEND PROCEDURE FROM Does Not Bring Procs in for Viewing

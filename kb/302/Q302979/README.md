@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302979: When Adding A Paying Hotmail.com Account, Phone Number Pages Ski"
-permalink: kb/302/Q302979/
+permalink: /kb/302/Q302979/
 ---
 
 ## Q302979: When Adding A Paying Hotmail.com Account, Phone Number Pages Ski

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177255: Cannot Change the Default MSN E-mail Program to Outlook Express"
-permalink: kb/177/Q177255/
+permalink: /kb/177/Q177255/
 ---
 
 ## Q177255: Cannot Change the Default MSN E-mail Program to Outlook Express

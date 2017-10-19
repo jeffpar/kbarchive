@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218930: DirectX: Mismatched DirectX Files After You Reinstall Windows 98"
-permalink: kb/218/Q218930/
+permalink: /kb/218/Q218930/
 ---
 
 ## Q218930: DirectX: Mismatched DirectX Files After You Reinstall Windows 98

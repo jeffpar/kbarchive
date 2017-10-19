@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181696: XCLN: Configuring E-Mail Clients for Multiple Local Users"
-permalink: kb/181/Q181696/
+permalink: /kb/181/Q181696/
 ---
 
 ## Q181696: XCLN: Configuring E-Mail Clients for Multiple Local Users

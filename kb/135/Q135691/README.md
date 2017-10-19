@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135691: SMS: Invmac Hangs After Cold-Boot on Quadra 800 or Centra 650"
-permalink: kb/135/Q135691/
+permalink: /kb/135/Q135691/
 ---
 
 ## Q135691: SMS: Invmac Hangs After Cold-Boot on Quadra 800 or Centra 650

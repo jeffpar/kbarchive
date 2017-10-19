@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50682: FltSim 4.00: Incorrect Straight and Level Instruction"
-permalink: kb/050/Q50682/
+permalink: /kb/050/Q50682/
 ---
 
 ## Q50682: FltSim 4.00: Incorrect Straight and Level Instruction

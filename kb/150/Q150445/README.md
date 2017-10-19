@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150445: Windows 95 Service Pack 1 Floppy Disk Directory Listing"
-permalink: kb/150/Q150445/
+permalink: /kb/150/Q150445/
 ---
 
 ## Q150445: Windows 95 Service Pack 1 Floppy Disk Directory Listing

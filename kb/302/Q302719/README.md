@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302719: New Password Not Accepted In &quot;Add New User&quot; Or &quot;Offline E-mail&quot;"
-permalink: kb/302/Q302719/
+permalink: /kb/302/Q302719/
 ---
 
 ## Q302719: New Password Not Accepted In &quot;Add New User&quot; Or &quot;Offline E-mail&quot;

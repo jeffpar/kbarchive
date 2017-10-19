@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130983: Removing Faxes from the Microsoft Fax Queue"
-permalink: kb/130/Q130983/
+permalink: /kb/130/Q130983/
 ---
 
 ## Q130983: Removing Faxes from the Microsoft Fax Queue

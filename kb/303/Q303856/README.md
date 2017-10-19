@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303856: CFS2: Err Msg: K Mode Exception ....Physical Memory Stack Dump"
-permalink: kb/303/Q303856/
+permalink: /kb/303/Q303856/
 ---
 
 ## Q303856: CFS2: Err Msg: K Mode Exception ....Physical Memory Stack Dump

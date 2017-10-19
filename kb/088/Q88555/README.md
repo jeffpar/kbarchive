@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88555: HOWTO: Obtain Width and Height of a CBitmap Object"
-permalink: kb/088/Q88555/
+permalink: /kb/088/Q88555/
 ---
 
 ## Q88555: HOWTO: Obtain Width and Height of a CBitmap Object

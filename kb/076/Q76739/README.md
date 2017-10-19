@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76739: Updating Backup Files with NMAKE &amp; ALL Target-Dependency"
-permalink: kb/076/Q76739/
+permalink: /kb/076/Q76739/
 ---
 
 ## Q76739: Updating Backup Files with NMAKE &amp; ALL Target-Dependency

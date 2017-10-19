@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239047: Err Msg: A Help File Was Not Specified (138)"
-permalink: kb/239/Q239047/
+permalink: /kb/239/Q239047/
 ---
 
 ## Q239047: Err Msg: A Help File Was Not Specified (138)

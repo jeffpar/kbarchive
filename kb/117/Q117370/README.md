@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117370: NCC Err Msg: IPX Initialize Failure"
-permalink: kb/117/Q117370/
+permalink: /kb/117/Q117370/
 ---
 
 ## Q117370: NCC Err Msg: IPX Initialize Failure

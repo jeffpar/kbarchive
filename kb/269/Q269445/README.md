@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269445: FIX: Unloading Form from Control Array Event Causes Error"
-permalink: kb/269/Q269445/
+permalink: /kb/269/Q269445/
 ---
 
 ## Q269445: FIX: Unloading Form from Control Array Event Causes Error

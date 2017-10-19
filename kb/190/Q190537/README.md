@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190537: PRB: Adding Active Document to the Office Binder Fails"
-permalink: kb/190/Q190537/
+permalink: /kb/190/Q190537/
 ---
 
 ## Q190537: PRB: Adding Active Document to the Office Binder Fails

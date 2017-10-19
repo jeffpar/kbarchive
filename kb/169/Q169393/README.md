@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169393: XFOR: Messages Containing Doclinks Are Stuck in Exchange.box"
-permalink: kb/169/Q169393/
+permalink: /kb/169/Q169393/
 ---
 
 ## Q169393: XFOR: Messages Containing Doclinks Are Stuck in Exchange.box

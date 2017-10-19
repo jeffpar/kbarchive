@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157631: XFOR: Cannot Import Bulletin Board Information from cc:Mail"
-permalink: kb/157/Q157631/
+permalink: /kb/157/Q157631/
 ---
 
 ## Q157631: XFOR: Cannot Import Bulletin Board Information from cc:Mail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110800: FIX: CEditView in Splitter Window Doesn't Update Document"
-permalink: kb/110/Q110800/
+permalink: /kb/110/Q110800/
 ---
 
 ## Q110800: FIX: CEditView in Splitter Window Doesn't Update Document

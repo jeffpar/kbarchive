@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78408: Erratic Behavior with MS-DOS 5.0 and Phillips BIOS"
-permalink: kb/078/Q78408/
+permalink: /kb/078/Q78408/
 ---
 
 ## Q78408: Erratic Behavior with MS-DOS 5.0 and Phillips BIOS

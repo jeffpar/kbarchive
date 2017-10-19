@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155681: Troubleshooting Display Problems in Windows NT 4.0"
-permalink: kb/155/Q155681/
+permalink: /kb/155/Q155681/
 ---
 
 ## Q155681: Troubleshooting Display Problems in Windows NT 4.0

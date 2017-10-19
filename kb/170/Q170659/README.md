@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170659: Can't Open Multiple TN3270 Sessions"
-permalink: kb/170/Q170659/
+permalink: /kb/170/Q170659/
 ---
 
 ## Q170659: Can't Open Multiple TN3270 Sessions

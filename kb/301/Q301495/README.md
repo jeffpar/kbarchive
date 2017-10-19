@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301495: E-mail: How to Block a Sender"
-permalink: kb/301/Q301495/
+permalink: /kb/301/Q301495/
 ---
 
 ## Q301495: E-mail: How to Block a Sender

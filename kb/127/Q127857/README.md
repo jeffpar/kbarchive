@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127857: Required Number of SQL Connections Needed for SMS"
-permalink: kb/127/Q127857/
+permalink: /kb/127/Q127857/
 ---
 
 ## Q127857: Required Number of SQL Connections Needed for SMS

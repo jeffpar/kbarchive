@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58279: ETAP Displays Not Supported in Windows"
-permalink: kb/058/Q58279/
+permalink: /kb/058/Q58279/
 ---
 
 ## Q58279: ETAP Displays Not Supported in Windows

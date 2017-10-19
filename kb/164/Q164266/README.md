@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164266: PUB: Rulers Disappear When Inserting, Editing Object"
-permalink: kb/164/Q164266/
+permalink: /kb/164/Q164266/
 ---
 
 ## Q164266: PUB: Rulers Disappear When Inserting, Editing Object

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241628: WD97: Using Selection.Cells in a Loop Gives Incorrect Results"
-permalink: kb/241/Q241628/
+permalink: /kb/241/Q241628/
 ---
 
 ## Q241628: WD97: Using Selection.Cells in a Loop Gives Incorrect Results

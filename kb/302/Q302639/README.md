@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302639: Zone Transfers from BIND Version 9.x DNS Servers Do Not Work"
-permalink: kb/302/Q302639/
+permalink: /kb/302/Q302639/
 ---
 
 ## Q302639: Zone Transfers from BIND Version 9.x DNS Servers Do Not Work

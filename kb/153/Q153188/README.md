@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153188: XCON: Description of MTA Diagnostics Logging Options"
-permalink: kb/153/Q153188/
+permalink: /kb/153/Q153188/
 ---
 
 ## Q153188: XCON: Description of MTA Diagnostics Logging Options

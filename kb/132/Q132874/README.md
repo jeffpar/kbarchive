@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132874: INFO: Tips for Improving Performance of VCMac Applications"
-permalink: kb/132/Q132874/
+permalink: /kb/132/Q132874/
 ---
 
 ## Q132874: INFO: Tips for Improving Performance of VCMac Applications

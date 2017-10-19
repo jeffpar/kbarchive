@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178931: XADM: Database Size After Offline Defrag Not Same as Total K"
-permalink: kb/178/Q178931/
+permalink: /kb/178/Q178931/
 ---
 
 ## Q178931: XADM: Database Size After Offline Defrag Not Same as Total K

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106169: Windows NT and HP LAN Manager/X Version 1.4 Interoperability"
-permalink: kb/106/Q106169/
+permalink: /kb/106/Q106169/
 ---
 
 ## Q106169: Windows NT and HP LAN Manager/X Version 1.4 Interoperability

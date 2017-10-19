@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216181: FIX: Incorrect Code Generated with /Og Optimization"
-permalink: kb/216/Q216181/
+permalink: /kb/216/Q216181/
 ---
 
 ## Q216181: FIX: Incorrect Code Generated with /Og Optimization

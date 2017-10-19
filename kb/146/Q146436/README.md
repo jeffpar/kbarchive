@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146436: XCLN: Offline Address Book Files Not Removed w/ Remove All"
-permalink: kb/146/Q146436/
+permalink: /kb/146/Q146436/
 ---
 
 ## Q146436: XCLN: Offline Address Book Files Not Removed w/ Remove All

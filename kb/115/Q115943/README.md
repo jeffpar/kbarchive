@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115943: How to Determine Amount of Available Disk Space on a Mac"
-permalink: kb/115/Q115943/
+permalink: /kb/115/Q115943/
 ---
 
 ## Q115943: How to Determine Amount of Available Disk Space on a Mac

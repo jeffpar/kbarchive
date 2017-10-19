@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155154: Encarta 96: Contents of the April 1996 Yearbook Update"
-permalink: kb/155/Q155154/
+permalink: /kb/155/Q155154/
 ---
 
 ## Q155154: Encarta 96: Contents of the April 1996 Yearbook Update

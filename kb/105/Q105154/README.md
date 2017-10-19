@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105154: How AppleTalk Routers Function in Internet Communications"
-permalink: kb/105/Q105154/
+permalink: /kb/105/Q105154/
 ---
 
 ## Q105154: How AppleTalk Routers Function in Internet Communications

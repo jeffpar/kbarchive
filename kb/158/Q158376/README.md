@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158376: &quot;Stop 0xc000021a&quot; During Setup"
-permalink: kb/158/Q158376/
+permalink: /kb/158/Q158376/
 ---
 
 ## Q158376: &quot;Stop 0xc000021a&quot; During Setup

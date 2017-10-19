@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169553: Allowed Network Protocols Section Missing in Dial-Up Networking"
-permalink: kb/169/Q169553/
+permalink: /kb/169/Q169553/
 ---
 
 ## Q169553: Allowed Network Protocols Section Missing in Dial-Up Networking

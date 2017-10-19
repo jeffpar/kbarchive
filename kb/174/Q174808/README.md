@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174808: PRB: Poor Performance with the GoSub Statement"
-permalink: kb/174/Q174808/
+permalink: /kb/174/Q174808/
 ---
 
 ## Q174808: PRB: Poor Performance with the GoSub Statement

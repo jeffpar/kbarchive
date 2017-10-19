@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103519: CVF Internal Errors: System Fails to Clean/Interactive Boot"
-permalink: kb/103/Q103519/
+permalink: /kb/103/Q103519/
 ---
 
 ## Q103519: CVF Internal Errors: System Fails to Clean/Interactive Boot

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306180: Client Certificate Window Doesn't Display All Certificates"
-permalink: kb/306/Q306180/
+permalink: /kb/306/Q306180/
 ---
 
 ## Q306180: Client Certificate Window Doesn't Display All Certificates

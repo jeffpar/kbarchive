@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198387: Chips &amp; Technologies Video Driver Causes Error in Control Panel"
-permalink: kb/198/Q198387/
+permalink: /kb/198/Q198387/
 ---
 
 ## Q198387: Chips &amp; Technologies Video Driver Causes Error in Control Panel

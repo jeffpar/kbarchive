@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250381: SMS: Package Share Comment Date Displays Year as 100"
-permalink: kb/250/Q250381/
+permalink: /kb/250/Q250381/
 ---
 
 ## Q250381: SMS: Package Share Comment Date Displays Year as 100

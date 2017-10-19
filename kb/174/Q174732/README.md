@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174732: XFOR: Changing cc:Mail Import Container Does Not Remove cc:Mail"
-permalink: kb/174/Q174732/
+permalink: /kb/174/Q174732/
 ---
 
 ## Q174732: XFOR: Changing cc:Mail Import Container Does Not Remove cc:Mail

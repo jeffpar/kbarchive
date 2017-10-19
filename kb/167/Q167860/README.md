@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167860: FP97: Cannot Choose Collate or Selection in Print Dialog Box"
-permalink: kb/167/Q167860/
+permalink: /kb/167/Q167860/
 ---
 
 ## Q167860: FP97: Cannot Choose Collate or Selection in Print Dialog Box

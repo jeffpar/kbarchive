@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142929: INFO: Comparing DAO and RDO in Visual Basic 4.0"
-permalink: kb/142/Q142929/
+permalink: /kb/142/Q142929/
 ---
 
 ## Q142929: INFO: Comparing DAO and RDO in Visual Basic 4.0

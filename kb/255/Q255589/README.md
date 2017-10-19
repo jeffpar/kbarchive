@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255589: Common Name Connector Space Is Not Synchronized with the Connect"
-permalink: kb/255/Q255589/
+permalink: /kb/255/Q255589/
 ---
 
 ## Q255589: Common Name Connector Space Is Not Synchronized with the Connect

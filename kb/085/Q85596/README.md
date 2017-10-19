@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85596: BUG: SETCOLORTABLE Escape Disables Dithering"
-permalink: kb/085/Q85596/
+permalink: /kb/085/Q85596/
 ---
 
 ## Q85596: BUG: SETCOLORTABLE Escape Disables Dithering

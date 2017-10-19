@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186069: Distributed File System Client Does Not Connect to Another Share"
-permalink: kb/186/Q186069/
+permalink: /kb/186/Q186069/
 ---
 
 ## Q186069: Distributed File System Client Does Not Connect to Another Share

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228930: How to Replace Currently Locked Files with Inuse.exe"
-permalink: kb/228/Q228930/
+permalink: /kb/228/Q228930/
 ---
 
 ## Q228930: How to Replace Currently Locked Files with Inuse.exe

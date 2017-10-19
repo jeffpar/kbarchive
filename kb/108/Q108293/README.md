@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108293: DOC: LIBRARY Statement Documented Incorrectly"
-permalink: kb/108/Q108293/
+permalink: /kb/108/Q108293/
 ---
 
 ## Q108293: DOC: LIBRARY Statement Documented Incorrectly

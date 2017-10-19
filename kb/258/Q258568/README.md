@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258568: Baseball 2001: Problems Using SideWinder Plug &amp; Play Game Pad"
-permalink: kb/258/Q258568/
+permalink: /kb/258/Q258568/
 ---
 
 ## Q258568: Baseball 2001: Problems Using SideWinder Plug &amp; Play Game Pad

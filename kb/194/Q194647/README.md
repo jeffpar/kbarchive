@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194647: XCLN: OWA Jscript Error Accessing Inbox After Public Calendar"
-permalink: kb/194/Q194647/
+permalink: /kb/194/Q194647/
 ---
 
 ## Q194647: XCLN: OWA Jscript Error Accessing Inbox After Public Calendar

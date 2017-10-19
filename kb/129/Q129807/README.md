@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129807: Running Non-Latin Based Version of Windows Application"
-permalink: kb/129/Q129807/
+permalink: /kb/129/Q129807/
 ---
 
 ## Q129807: Running Non-Latin Based Version of Windows Application

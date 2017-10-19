@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94579: INFO: Creating a Function Pointer to a C++ Member Function"
-permalink: kb/094/Q94579/
+permalink: /kb/094/Q94579/
 ---
 
 ## Q94579: INFO: Creating a Function Pointer to a C++ Member Function

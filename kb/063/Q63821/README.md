@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63821: Problems with Word 5.0 in Windows 3.0"
-permalink: kb/063/Q63821/
+permalink: /kb/063/Q63821/
 ---
 
 ## Q63821: Problems with Word 5.0 in Windows 3.0

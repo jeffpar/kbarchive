@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178438: Microsoft FrontPage 98 Step by Step Comments and Corrections"
-permalink: kb/178/Q178438/
+permalink: /kb/178/Q178438/
 ---
 
 ## Q178438: Microsoft FrontPage 98 Step by Step Comments and Corrections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194780: HOWTO: Requery a SQL-Select Only Changing a Variable"
-permalink: kb/194/Q194780/
+permalink: /kb/194/Q194780/
 ---
 
 ## Q194780: HOWTO: Requery a SQL-Select Only Changing a Variable

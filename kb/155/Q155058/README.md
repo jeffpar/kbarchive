@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155058: IIS May Stop Responding after Processing Several Client Queries"
-permalink: kb/155/Q155058/
+permalink: /kb/155/Q155058/
 ---
 
 ## Q155058: IIS May Stop Responding after Processing Several Client Queries

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160076: Encarta Err Msg: No New Update/Download Files Found"
-permalink: kb/160/Q160076/
+permalink: /kb/160/Q160076/
 ---
 
 ## Q160076: Encarta Err Msg: No New Update/Download Files Found

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152838: Mail Could Not Connect To Your Mail Server"
-permalink: kb/152/Q152838/
+permalink: /kb/152/Q152838/
 ---
 
 ## Q152838: Mail Could Not Connect To Your Mail Server

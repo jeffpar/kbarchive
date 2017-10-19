@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99710: Four HP Printer Problems Associated with LAN Manager"
-permalink: kb/099/Q99710/
+permalink: /kb/099/Q99710/
 ---
 
 ## Q99710: Four HP Printer Problems Associated with LAN Manager

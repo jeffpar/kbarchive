@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121851: Windows NT 3.5 Drivers for Compaq Devices"
-permalink: kb/121/Q121851/
+permalink: /kb/121/Q121851/
 ---
 
 ## Q121851: Windows NT 3.5 Drivers for Compaq Devices

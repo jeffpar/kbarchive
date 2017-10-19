@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320097: XADM: Installation of Service Pack 4 Stops with Files in Use Err"
-permalink: kb/320/Q320097/
+permalink: /kb/320/Q320097/
 ---
 
 ## Q320097: XADM: Installation of Service Pack 4 Stops with Files in Use Err

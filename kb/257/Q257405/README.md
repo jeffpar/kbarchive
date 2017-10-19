@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257405: FILE: Ramdisk.sys Sample Driver for Windows 2000"
-permalink: kb/257/Q257405/
+permalink: /kb/257/Q257405/
 ---
 
 ## Q257405: FILE: Ramdisk.sys Sample Driver for Windows 2000

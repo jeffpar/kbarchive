@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129591: MAC Bookshelf 1994: CloseView Control Panel Freezes System"
-permalink: kb/129/Q129591/
+permalink: /kb/129/Q129591/
 ---
 
 ## Q129591: MAC Bookshelf 1994: CloseView Control Panel Freezes System

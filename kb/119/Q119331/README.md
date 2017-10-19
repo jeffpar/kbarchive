@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119331: INFO: Compiler Errors with Win32 APIs Ending in &quot;A&quot; or &quot;W&quot;"
-permalink: kb/119/Q119331/
+permalink: /kb/119/Q119331/
 ---
 
 ## Q119331: INFO: Compiler Errors with Win32 APIs Ending in &quot;A&quot; or &quot;W&quot;

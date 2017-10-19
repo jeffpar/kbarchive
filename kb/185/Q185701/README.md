@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185701: Virtual Globe: Location Sensor or Measure Tool Is Not Displayed"
-permalink: kb/185/Q185701/
+permalink: /kb/185/Q185701/
 ---
 
 ## Q185701: Virtual Globe: Location Sensor or Measure Tool Is Not Displayed

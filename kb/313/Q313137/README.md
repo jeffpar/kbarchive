@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313137: COMTI/OTMA Error When App. Returns Unbounded Recordset"
-permalink: kb/313/Q313137/
+permalink: /kb/313/Q313137/
 ---
 
 ## Q313137: COMTI/OTMA Error When App. Returns Unbounded Recordset

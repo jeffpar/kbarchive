@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114558: Err Msg: Could Not Set the Device Mode for this Printer"
-permalink: kb/114/Q114558/
+permalink: /kb/114/Q114558/
 ---
 
 ## Q114558: Err Msg: Could Not Set the Device Mode for this Printer

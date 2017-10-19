@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103234: Windows NT Err Msg: MSWORD/PP3 Caused Segment Load Failure..."
-permalink: kb/103/Q103234/
+permalink: /kb/103/Q103234/
 ---
 
 ## Q103234: Windows NT Err Msg: MSWORD/PP3 Caused Segment Load Failure...

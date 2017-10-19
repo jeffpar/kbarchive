@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133054: HOWTO: Detect and Fix Database Corruption Errors in SSafe"
-permalink: kb/133/Q133054/
+permalink: /kb/133/Q133054/
 ---
 
 ## Q133054: HOWTO: Detect and Fix Database Corruption Errors in SSafe

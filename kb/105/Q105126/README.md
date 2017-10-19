@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105126: PC Win: Shortcut for Entering New Friendly Name in PAB"
-permalink: kb/105/Q105126/
+permalink: /kb/105/Q105126/
 ---
 
 ## Q105126: PC Win: Shortcut for Entering New Friendly Name in PAB

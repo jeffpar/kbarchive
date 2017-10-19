@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99747: Connectivity Issues About SQL Server for LAN Manager"
-permalink: kb/099/Q99747/
+permalink: /kb/099/Q99747/
 ---
 
 ## Q99747: Connectivity Issues About SQL Server for LAN Manager

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88987: How to Calculate the Approximate Size of a .DBF File"
-permalink: kb/088/Q88987/
+permalink: /kb/088/Q88987/
 ---
 
 ## Q88987: How to Calculate the Approximate Size of a .DBF File

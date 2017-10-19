@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140344: WD97: How to Convert Data in One Column to a Table for Merging"
-permalink: kb/140/Q140344/
+permalink: /kb/140/Q140344/
 ---
 
 ## Q140344: WD97: How to Convert Data in One Column to a Table for Merging

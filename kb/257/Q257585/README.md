@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257585: RAS DCC with Null Modem Cable Always Uses 1 Stop Bit"
-permalink: kb/257/Q257585/
+permalink: /kb/257/Q257585/
 ---
 
 ## Q257585: RAS DCC with Null Modem Cable Always Uses 1 Stop Bit

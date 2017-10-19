@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196731: Application That Requires Schedule Service Fails"
-permalink: kb/196/Q196731/
+permalink: /kb/196/Q196731/
 ---
 
 ## Q196731: Application That Requires Schedule Service Fails

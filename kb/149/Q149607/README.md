@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149607: Must Restart After Installing Microsoft Phone on Presario"
-permalink: kb/149/Q149607/
+permalink: /kb/149/Q149607/
 ---
 
 ## Q149607: Must Restart After Installing Microsoft Phone on Presario

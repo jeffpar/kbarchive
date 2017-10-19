@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143082: FIX: Wrong Pointer Value When Nested Classes Have Same Name"
-permalink: kb/143/Q143082/
+permalink: /kb/143/Q143082/
 ---
 
 ## Q143082: FIX: Wrong Pointer Value When Nested Classes Have Same Name

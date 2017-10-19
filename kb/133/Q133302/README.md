@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133302: FIX: Application Fails But Gives No Error Message"
-permalink: kb/133/Q133302/
+permalink: /kb/133/Q133302/
 ---
 
 ## Q133302: FIX: Application Fails But Gives No Error Message

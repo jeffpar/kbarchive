@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89151: Golf: Aiming Marker Not Readjusted after Maximizing Main View"
-permalink: kb/089/Q89151/
+permalink: /kb/089/Q89151/
 ---
 
 ## Q89151: Golf: Aiming Marker Not Readjusted after Maximizing Main View

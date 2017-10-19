@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104545: MemMaker Does Not Recognize All Netroom Drivers"
-permalink: kb/104/Q104545/
+permalink: /kb/104/Q104545/
 ---
 
 ## Q104545: MemMaker Does Not Recognize All Netroom Drivers

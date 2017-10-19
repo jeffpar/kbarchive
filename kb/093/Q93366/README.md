@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93366: EMM386.EXE: ALTBOOT Parameter"
-permalink: kb/093/Q93366/
+permalink: /kb/093/Q93366/
 ---
 
 ## Q93366: EMM386.EXE: ALTBOOT Parameter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157017: XADM: Attempting to Open Public Folder Might Return Error"
-permalink: kb/157/Q157017/
+permalink: /kb/157/Q157017/
 ---
 
 ## Q157017: XADM: Attempting to Open Public Folder Might Return Error

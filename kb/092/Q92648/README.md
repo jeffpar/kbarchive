@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92648: PRB: Linear Addr Mode Display Driver &amp; MS-DOS Virtual Machines"
-permalink: kb/092/Q92648/
+permalink: /kb/092/Q92648/
 ---
 
 ## Q92648: PRB: Linear Addr Mode Display Driver &amp; MS-DOS Virtual Machines

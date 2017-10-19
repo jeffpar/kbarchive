@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173544: XADM: Security Keys Cannot Be Used Without Rich Text Format"
-permalink: kb/173/Q173544/
+permalink: /kb/173/Q173544/
 ---
 
 ## Q173544: XADM: Security Keys Cannot Be Used Without Rich Text Format

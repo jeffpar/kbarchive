@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232609: XADM:  How to Verify the Integrity of a Key Management Server DB"
-permalink: kb/232/Q232609/
+permalink: /kb/232/Q232609/
 ---
 
 ## Q232609: XADM:  How to Verify the Integrity of a Key Management Server DB

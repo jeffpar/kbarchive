@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122857: RDISK /S and RDISK /S- Options in Windows NT"
-permalink: kb/122/Q122857/
+permalink: /kb/122/Q122857/
 ---
 
 ## Q122857: RDISK /S and RDISK /S- Options in Windows NT

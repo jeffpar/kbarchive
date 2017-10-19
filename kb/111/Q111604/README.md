@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111604: BUG: Explicitly Loaded Modules Not Removed from Memory"
-permalink: kb/111/Q111604/
+permalink: /kb/111/Q111604/
 ---
 
 ## Q111604: BUG: Explicitly Loaded Modules Not Removed from Memory

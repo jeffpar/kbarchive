@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291987: MCSE Training Kit Designing Windows 2000 Network Security Commen"
-permalink: kb/291/Q291987/
+permalink: /kb/291/Q291987/
 ---
 
 ## Q291987: MCSE Training Kit Designing Windows 2000 Network Security Commen

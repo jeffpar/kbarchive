@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129671: Problems Using Real-Mode Compression Driver in Windows 95"
-permalink: kb/129/Q129671/
+permalink: /kb/129/Q129671/
 ---
 
 ## Q129671: Problems Using Real-Mode Compression Driver in Windows 95

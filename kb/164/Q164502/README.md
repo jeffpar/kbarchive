@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164502: WD97: Some Files Remain After &quot;Remove All&quot;"
-permalink: kb/164/Q164502/
+permalink: /kb/164/Q164502/
 ---
 
 ## Q164502: WD97: Some Files Remain After &quot;Remove All&quot;

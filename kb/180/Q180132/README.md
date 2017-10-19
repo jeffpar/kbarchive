@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180132: Kids Plus!: You Cannot Remove a Family Member in Protect It!"
-permalink: kb/180/Q180132/
+permalink: /kb/180/Q180132/
 ---
 
 ## Q180132: Kids Plus!: You Cannot Remove a Family Member in Protect It!

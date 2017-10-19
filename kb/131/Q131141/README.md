@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131141: DEC Alpha AXP Firmware Upgrade Required for Windows NT"
-permalink: kb/131/Q131141/
+permalink: /kb/131/Q131141/
 ---
 
 ## Q131141: DEC Alpha AXP Firmware Upgrade Required for Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84535: Roland MPU IMC Sound Card Driver Not Available"
-permalink: kb/084/Q84535/
+permalink: /kb/084/Q84535/
 ---
 
 ## Q84535: Roland MPU IMC Sound Card Driver Not Available

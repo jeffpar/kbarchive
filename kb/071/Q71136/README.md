@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71136: Upper Tray Option on Toshiba Pagelaser12 Setup Doesn't Work"
-permalink: kb/071/Q71136/
+permalink: /kb/071/Q71136/
 ---
 
 ## Q71136: Upper Tray Option on Toshiba Pagelaser12 Setup Doesn't Work

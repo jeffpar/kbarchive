@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72158: Using run= and load= with Command Line Parameters in Windows"
-permalink: kb/072/Q72158/
+permalink: /kb/072/Q72158/
 ---
 
 ## Q72158: Using run= and load= with Command Line Parameters in Windows

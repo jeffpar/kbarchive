@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161354: BUG: SQLGetInfo Gives Incorrect Result for SQL_DRIVER_HSTMT"
-permalink: kb/161/Q161354/
+permalink: /kb/161/Q161354/
 ---
 
 ## Q161354: BUG: SQLGetInfo Gives Incorrect Result for SQL_DRIVER_HSTMT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256245: XADM: Mailbox Manager Deletes All Recurring Calendar Items"
-permalink: kb/256/Q256245/
+permalink: /kb/256/Q256245/
 ---
 
 ## Q256245: XADM: Mailbox Manager Deletes All Recurring Calendar Items

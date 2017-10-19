@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230640: SMS: Setup Sets &quot;Restrict filegrowth&quot; on SQL 7.0 Databases"
-permalink: kb/230/Q230640/
+permalink: /kb/230/Q230640/
 ---
 
 ## Q230640: SMS: Setup Sets &quot;Restrict filegrowth&quot; on SQL 7.0 Databases

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130332: Installed Files for a Laptop Setup"
-permalink: kb/130/Q130332/
+permalink: /kb/130/Q130332/
 ---
 
 ## Q130332: Installed Files for a Laptop Setup

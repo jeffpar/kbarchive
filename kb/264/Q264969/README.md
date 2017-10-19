@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264969: SMS: Restart Windows 9x Computers to Complete Upgrade to SP2"
-permalink: kb/264/Q264969/
+permalink: /kb/264/Q264969/
 ---
 
 ## Q264969: SMS: Restart Windows 9x Computers to Complete Upgrade to SP2

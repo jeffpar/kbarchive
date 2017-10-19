@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130867: FIX: Link Paste Update Causes ASSERT in AFXWIN1.INL"
-permalink: kb/130/Q130867/
+permalink: /kb/130/Q130867/
 ---
 
 ## Q130867: FIX: Link Paste Update Causes ASSERT in AFXWIN1.INL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166067: WV: Can't Use CTRL+C in Word Viewer to Close Full Screen View"
-permalink: kb/166/Q166067/
+permalink: /kb/166/Q166067/
 ---
 
 ## Q166067: WV: Can't Use CTRL+C in Word Viewer to Close Full Screen View

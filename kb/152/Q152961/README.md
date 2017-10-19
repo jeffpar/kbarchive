@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152961: How to Install TP4 Components on Windows NT 4.0"
-permalink: kb/152/Q152961/
+permalink: /kb/152/Q152961/
 ---
 
 ## Q152961: How to Install TP4 Components on Windows NT 4.0

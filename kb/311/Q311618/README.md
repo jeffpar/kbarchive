@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311618: Unknown HTTP Verbs Generate a 405 Error Message Instead of a 501"
-permalink: kb/311/Q311618/
+permalink: /kb/311/Q311618/
 ---
 
 ## Q311618: Unknown HTTP Verbs Generate a 405 Error Message Instead of a 501

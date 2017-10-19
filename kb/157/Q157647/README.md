@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157647: XADM: Can't Change Location of IS Log Files if IS Not Running"
-permalink: kb/157/Q157647/
+permalink: /kb/157/Q157647/
 ---
 
 ## Q157647: XADM: Can't Change Location of IS Log Files if IS Not Running

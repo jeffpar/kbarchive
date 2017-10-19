@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153399: Add-in Display Adapters and Motorola Powerstack Computers"
-permalink: kb/153/Q153399/
+permalink: /kb/153/Q153399/
 ---
 
 ## Q153399: Add-in Display Adapters and Motorola Powerstack Computers

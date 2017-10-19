@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77193: Xerox 4020 Color Inkjet Printer and Windows"
-permalink: kb/077/Q77193/
+permalink: /kb/077/Q77193/
 ---
 
 ## Q77193: Xerox 4020 Color Inkjet Printer and Windows

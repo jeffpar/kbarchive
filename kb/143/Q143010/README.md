@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143010: Slide Colors Change When Editing Graph or Organization Chart"
-permalink: kb/143/Q143010/
+permalink: /kb/143/Q143010/
 ---
 
 ## Q143010: Slide Colors Change When Editing Graph or Organization Chart

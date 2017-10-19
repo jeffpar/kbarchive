@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247955: SMS: Wuser32.exe Does Not Shut Down Upon Client Shutdown"
-permalink: kb/247/Q247955/
+permalink: /kb/247/Q247955/
 ---
 
 ## Q247955: SMS: Wuser32.exe Does Not Shut Down Upon Client Shutdown

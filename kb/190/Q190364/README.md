@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190364: File Searching Limited to 16,000 on FPNW Volumes"
-permalink: kb/190/Q190364/
+permalink: /kb/190/Q190364/
 ---
 
 ## Q190364: File Searching Limited to 16,000 on FPNW Volumes

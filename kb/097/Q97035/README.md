@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97035: 4DOS and NDOS are not Fully Compatible with MemMaker"
-permalink: kb/097/Q97035/
+permalink: /kb/097/Q97035/
 ---
 
 ## Q97035: 4DOS and NDOS are not Fully Compatible with MemMaker

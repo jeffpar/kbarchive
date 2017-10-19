@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90322: Persistent Connections and Windows for Workgroups"
-permalink: kb/090/Q90322/
+permalink: /kb/090/Q90322/
 ---
 
 ## Q90322: Persistent Connections and Windows for Workgroups

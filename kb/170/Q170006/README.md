@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170006: XCON: Event 9234 Reports Sockets Error 10038"
-permalink: kb/170/Q170006/
+permalink: /kb/170/Q170006/
 ---
 
 ## Q170006: XCON: Event 9234 Reports Sockets Error 10038

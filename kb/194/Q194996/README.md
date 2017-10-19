@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194996: FS98: Airport/Facility Directory Window Is Black"
-permalink: kb/194/Q194996/
+permalink: /kb/194/Q194996/
 ---
 
 ## Q194996: FS98: Airport/Facility Directory Window Is Black

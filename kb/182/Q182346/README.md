@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182346: XFOR: Cannot Start or Create Internet Mail Service, Event 4087"
-permalink: kb/182/Q182346/
+permalink: /kb/182/Q182346/
 ---
 
 ## Q182346: XFOR: Cannot Start or Create Internet Mail Service, Event 4087

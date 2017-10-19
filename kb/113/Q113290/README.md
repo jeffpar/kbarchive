@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113290: Epson ESCP/2 EPESCP2.DRV v. 1.60 Release Notes"
-permalink: kb/113/Q113290/
+permalink: /kb/113/Q113290/
 ---
 
 ## Q113290: Epson ESCP/2 EPESCP2.DRV v. 1.60 Release Notes

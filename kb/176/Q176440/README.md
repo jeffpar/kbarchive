@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176440: XCON: Exchange Server MTA Blocked by Very Large Message"
-permalink: kb/176/Q176440/
+permalink: /kb/176/Q176440/
 ---
 
 ## Q176440: XCON: Exchange Server MTA Blocked by Very Large Message

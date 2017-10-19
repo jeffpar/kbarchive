@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65616: Windows 3.0 Disk Directories (5.25 Inch, 360K)"
-permalink: kb/065/Q65616/
+permalink: /kb/065/Q65616/
 ---
 
 ## Q65616: Windows 3.0 Disk Directories (5.25 Inch, 360K)

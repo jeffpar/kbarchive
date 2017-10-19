@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168216: XADM: DSAMAIN.EXE Maxes CPU When Connecting with a Browser"
-permalink: kb/168/Q168216/
+permalink: /kb/168/Q168216/
 ---
 
 ## Q168216: XADM: DSAMAIN.EXE Maxes CPU When Connecting with a Browser

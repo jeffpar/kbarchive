@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317021: &quot;Device Name Is Already In Use&quot;  Err Msg Saving to Mapped Drive"
-permalink: kb/317/Q317021/
+permalink: /kb/317/Q317021/
 ---
 
 ## Q317021: &quot;Device Name Is Already In Use&quot;  Err Msg Saving to Mapped Drive

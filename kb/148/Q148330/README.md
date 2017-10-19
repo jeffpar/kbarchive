@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148330: BUG: ODBC: SQLGetProp Causes IC Error in Debug Window"
-permalink: kb/148/Q148330/
+permalink: /kb/148/Q148330/
 ---
 
 ## Q148330: BUG: ODBC: SQLGetProp Causes IC Error in Debug Window

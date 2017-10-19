@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172678: WD97: Changes in Word SR-2 Spelling and Thesaurus"
-permalink: kb/172/Q172678/
+permalink: /kb/172/Q172678/
 ---
 
 ## Q172678: WD97: Changes in Word SR-2 Spelling and Thesaurus

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105232: Using RAS 1.1a Client with Workgroup Connection for MS-DOS"
-permalink: kb/105/Q105232/
+permalink: /kb/105/Q105232/
 ---
 
 ## Q105232: Using RAS 1.1a Client with Workgroup Connection for MS-DOS

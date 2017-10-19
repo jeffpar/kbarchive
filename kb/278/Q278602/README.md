@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278602: Error Message &quot;SChannel error = 80090304&quot;"
-permalink: kb/278/Q278602/
+permalink: /kb/278/Q278602/
 ---
 
 ## Q278602: Error Message &quot;SChannel error = 80090304&quot;

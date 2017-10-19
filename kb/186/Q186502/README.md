@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186502: Using Blinking Cursors with Terminal Server"
-permalink: kb/186/Q186502/
+permalink: /kb/186/Q186502/
 ---
 
 ## Q186502: Using Blinking Cursors with Terminal Server

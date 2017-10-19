@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164360: FIX: Error &quot;OLE Error Code 0x80080005 Server Execution Failed&quot;"
-permalink: kb/164/Q164360/
+permalink: /kb/164/Q164360/
 ---
 
 ## Q164360: FIX: Error &quot;OLE Error Code 0x80080005 Server Execution Failed&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169761: XADM: Sample CSVs Not Included on Exchange Server 5.0 or 5.5 CD"
-permalink: kb/169/Q169761/
+permalink: /kb/169/Q169761/
 ---
 
 ## Q169761: XADM: Sample CSVs Not Included on Exchange Server 5.0 or 5.5 CD

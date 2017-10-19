@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136682: Sharing Violation Accessing an Executable on an NTFS MAC Volume"
-permalink: kb/136/Q136682/
+permalink: /kb/136/Q136682/
 ---
 
 ## Q136682: Sharing Violation Accessing an Executable on an NTFS MAC Volume

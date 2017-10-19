@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150086: Map.exe Problem When FPNW and NetWare Server Names Are Similar"
-permalink: kb/150/Q150086/
+permalink: /kb/150/Q150086/
 ---
 
 ## Q150086: Map.exe Problem When FPNW and NetWare Server Names Are Similar

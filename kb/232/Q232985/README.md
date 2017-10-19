@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232985: Remotely Administering IIS 4.0 with MMC Returns Access Denied"
-permalink: kb/232/Q232985/
+permalink: /kb/232/Q232985/
 ---
 
 ## Q232985: Remotely Administering IIS 4.0 with MMC Returns Access Denied

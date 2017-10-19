@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65438: Low-System Memory Messages in Virtual Machines of Windows"
-permalink: kb/065/Q65438/
+permalink: /kb/065/Q65438/
 ---
 
 ## Q65438: Low-System Memory Messages in Virtual Machines of Windows

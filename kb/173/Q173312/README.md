@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173312: DEC Pathworks 32 7.0 May Cause Windows NT 4.0 to Hang"
-permalink: kb/173/Q173312/
+permalink: /kb/173/Q173312/
 ---
 
 ## Q173312: DEC Pathworks 32 7.0 May Cause Windows NT 4.0 to Hang

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279803: DirectX Diagnostic Tool Lists Debug Version of Files"
-permalink: kb/279/Q279803/
+permalink: /kb/279/Q279803/
 ---
 
 ## Q279803: DirectX Diagnostic Tool Lists Debug Version of Files

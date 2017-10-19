@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266671: XADM: Exmerge Won't Work on Windows 2000 Terminal Server Comp."
-permalink: kb/266/Q266671/
+permalink: /kb/266/Q266671/
 ---
 
 ## Q266671: XADM: Exmerge Won't Work on Windows 2000 Terminal Server Comp.

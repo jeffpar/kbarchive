@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266782: Access Violation Error Message in Cluster.exe Moving Groups"
-permalink: kb/266/Q266782/
+permalink: /kb/266/Q266782/
 ---
 
 ## Q266782: Access Violation Error Message in Cluster.exe Moving Groups

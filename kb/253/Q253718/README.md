@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253718: XCON: Message Transfer Agent Event IDs 2110, 2171"
-permalink: kb/253/Q253718/
+permalink: /kb/253/Q253718/
 ---
 
 ## Q253718: XCON: Message Transfer Agent Event IDs 2110, 2171

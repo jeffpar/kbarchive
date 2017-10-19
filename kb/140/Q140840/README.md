@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140840: 2 Connections Using Same Link Service and Destination Address"
-permalink: kb/140/Q140840/
+permalink: /kb/140/Q140840/
 ---
 
 ## Q140840: 2 Connections Using Same Link Service and Destination Address

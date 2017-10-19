@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207952: PRB: Active Documents Flash and Disappear When Run"
-permalink: kb/207/Q207952/
+permalink: /kb/207/Q207952/
 ---
 
 ## Q207952: PRB: Active Documents Flash and Disappear When Run

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134373: FIX: Win32(80x86) Release Target Not Displayed in Windows 95"
-permalink: kb/134/Q134373/
+permalink: /kb/134/Q134373/
 ---
 
 ## Q134373: FIX: Win32(80x86) Release Target Not Displayed in Windows 95

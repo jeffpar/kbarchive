@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101292: How to Create a WordPerfect Merge File"
-permalink: kb/101/Q101292/
+permalink: /kb/101/Q101292/
 ---
 
 ## Q101292: How to Create a WordPerfect Merge File

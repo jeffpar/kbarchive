@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207523: Error Occurs During SSL Connection"
-permalink: kb/207/Q207523/
+permalink: /kb/207/Q207523/
 ---
 
 ## Q207523: Error Occurs During SSL Connection

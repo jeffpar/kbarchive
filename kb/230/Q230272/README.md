@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230272: XFOR: How to Re-add Extensions to Exchange for SNADS Connector"
-permalink: kb/230/Q230272/
+permalink: /kb/230/Q230272/
 ---
 
 ## Q230272: XFOR: How to Re-add Extensions to Exchange for SNADS Connector

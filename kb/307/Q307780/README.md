@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307780: INFO: Administrator Changes Not Reflected Until App Restarted"
-permalink: kb/307/Q307780/
+permalink: /kb/307/Q307780/
 ---
 
 ## Q307780: INFO: Administrator Changes Not Reflected Until App Restarted

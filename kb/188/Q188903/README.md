@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188903: Event Viewer Does Not Show IUSR_machinename Account Logon"
-permalink: kb/188/Q188903/
+permalink: /kb/188/Q188903/
 ---
 
 ## Q188903: Event Viewer Does Not Show IUSR_machinename Account Logon

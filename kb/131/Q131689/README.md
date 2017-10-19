@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131689: Postscript Jobs Do Not Print Correctly Over SFM and AppleTalk"
-permalink: kb/131/Q131689/
+permalink: /kb/131/Q131689/
 ---
 
 ## Q131689: Postscript Jobs Do Not Print Correctly Over SFM and AppleTalk

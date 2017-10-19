@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117565: HOWTO: Getting the Current Printer Settings in MFC"
-permalink: kb/117/Q117565/
+permalink: /kb/117/Q117565/
 ---
 
 ## Q117565: HOWTO: Getting the Current Printer Settings in MFC

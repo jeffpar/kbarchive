@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165414: Error Message: Internal MAPI Error"
-permalink: kb/165/Q165414/
+permalink: /kb/165/Q165414/
 ---
 
 ## Q165414: Error Message: Internal MAPI Error

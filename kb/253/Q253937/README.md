@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253937: FS2000: Program Hangs When You Fly Over San Francisco"
-permalink: kb/253/Q253937/
+permalink: /kb/253/Q253937/
 ---
 
 ## Q253937: FS2000: Program Hangs When You Fly Over San Francisco

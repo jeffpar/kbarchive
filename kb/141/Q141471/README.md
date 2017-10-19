@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141471: Err Msg: No Such File or Directory Using FC.EXE"
-permalink: kb/141/Q141471/
+permalink: /kb/141/Q141471/
 ---
 
 ## Q141471: Err Msg: No Such File or Directory Using FC.EXE

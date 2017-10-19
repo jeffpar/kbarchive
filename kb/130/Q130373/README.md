@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130373: Obtaining Package ID from Within a Microsoft Test Script"
-permalink: kb/130/Q130373/
+permalink: /kb/130/Q130373/
 ---
 
 ## Q130373: Obtaining Package ID from Within a Microsoft Test Script

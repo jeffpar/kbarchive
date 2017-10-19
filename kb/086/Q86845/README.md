@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86845: Cannot Print ANSI Characters with Microtek TrueLaser"
-permalink: kb/086/Q86845/
+permalink: /kb/086/Q86845/
 ---
 
 ## Q86845: Cannot Print ANSI Characters with Microtek TrueLaser

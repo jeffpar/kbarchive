@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58277: EGA Support Under Windows 3.0 and 3.1"
-permalink: kb/058/Q58277/
+permalink: /kb/058/Q58277/
 ---
 
 ## Q58277: EGA Support Under Windows 3.0 and 3.1

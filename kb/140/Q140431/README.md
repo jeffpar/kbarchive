@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140431: Compression Agent Detects Errors Even After Running ScanDisk"
-permalink: kb/140/Q140431/
+permalink: /kb/140/Q140431/
 ---
 
 ## Q140431: Compression Agent Detects Errors Even After Running ScanDisk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107996: WFWG 3.11: Real-Mode Redirector and Direct Hosting"
-permalink: kb/107/Q107996/
+permalink: /kb/107/Q107996/
 ---
 
 ## Q107996: WFWG 3.11: Real-Mode Redirector and Direct Hosting

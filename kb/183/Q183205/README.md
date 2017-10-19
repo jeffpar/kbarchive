@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183205: XADM: Cannot View Connector Properties If Permissions Incorrect"
-permalink: kb/183/Q183205/
+permalink: /kb/183/Q183205/
 ---
 
 ## Q183205: XADM: Cannot View Connector Properties If Permissions Incorrect

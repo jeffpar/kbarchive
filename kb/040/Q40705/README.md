@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q40705: MS-DOS: Reassignment Buffer Size of ANSI.SYS"
-permalink: kb/040/Q40705/
+permalink: /kb/040/Q40705/
 ---
 
 ## Q40705: MS-DOS: Reassignment Buffer Size of ANSI.SYS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282939: XFOR: Installation of Lotus Notes E-mail Address Generator Fails"
-permalink: kb/282/Q282939/
+permalink: /kb/282/Q282939/
 ---
 
 ## Q282939: XFOR: Installation of Lotus Notes E-mail Address Generator Fails

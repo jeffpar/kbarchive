@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186118: HOWTO: Use FileSystemObject with Visual Basic"
-permalink: kb/186/Q186118/
+permalink: /kb/186/Q186118/
 ---
 
 ## Q186118: HOWTO: Use FileSystemObject with Visual Basic

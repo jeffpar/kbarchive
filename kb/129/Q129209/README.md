@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129209: HOWTO: Convert 10-Byte Long Doubles to 8-Byte Doubles"
-permalink: kb/129/Q129209/
+permalink: /kb/129/Q129209/
 ---
 
 ## Q129209: HOWTO: Convert 10-Byte Long Doubles to 8-Byte Doubles

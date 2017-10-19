@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129456: PC MMTA: Err Msg: Mail Bag Is Locked by: F:P1&#92;&lt;hex&gt;.0LK"
-permalink: kb/129/Q129456/
+permalink: /kb/129/Q129456/
 ---
 
 ## Q129456: PC MMTA: Err Msg: Mail Bag Is Locked by: F:P1&#92;&lt;hex&gt;.0LK

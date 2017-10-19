@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317143: STOP 0x0000001E When You Use Lexmark Optra Printer Drivers"
-permalink: kb/317/Q317143/
+permalink: /kb/317/Q317143/
 ---
 
 ## Q317143: STOP 0x0000001E When You Use Lexmark Optra Printer Drivers

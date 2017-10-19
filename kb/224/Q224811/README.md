@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224811: XADM: How to Designate the Home of Subfolders"
-permalink: kb/224/Q224811/
+permalink: /kb/224/Q224811/
 ---
 
 ## Q224811: XADM: How to Designate the Home of Subfolders

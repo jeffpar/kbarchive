@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151659: Bookshelf '96-'97: Bookshelf Not Added to Shortcut Bar"
-permalink: kb/151/Q151659/
+permalink: /kb/151/Q151659/
 ---
 
 ## Q151659: Bookshelf '96-'97: Bookshelf Not Added to Shortcut Bar

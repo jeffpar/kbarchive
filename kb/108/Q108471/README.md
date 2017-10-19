@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108471: Scripts Timeout for Large Transfers or over Slow Links"
-permalink: kb/108/Q108471/
+permalink: /kb/108/Q108471/
 ---
 
 ## Q108471: Scripts Timeout for Large Transfers or over Slow Links

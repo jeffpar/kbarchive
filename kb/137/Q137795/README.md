@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137795: Program Names Do Not Appear in Remote MS-DOS Client Diagnostics"
-permalink: kb/137/Q137795/
+permalink: /kb/137/Q137795/
 ---
 
 ## Q137795: Program Names Do Not Appear in Remote MS-DOS Client Diagnostics

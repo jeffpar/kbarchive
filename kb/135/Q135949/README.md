@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135949: Mouse Pointer Moves Erratically with Matrox Video Card"
-permalink: kb/135/Q135949/
+permalink: /kb/135/Q135949/
 ---
 
 ## Q135949: Mouse Pointer Moves Erratically with Matrox Video Card

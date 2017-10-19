@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153654: SMS Leaks SQL Connections"
-permalink: kb/153/Q153654/
+permalink: /kb/153/Q153654/
 ---
 
 ## Q153654: SMS Leaks SQL Connections

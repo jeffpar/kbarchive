@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155821: BUG: &quot;Feature Not Available&quot; Printing to File with GX Printer"
-permalink: kb/155/Q155821/
+permalink: /kb/155/Q155821/
 ---
 
 ## Q155821: BUG: &quot;Feature Not Available&quot; Printing to File with GX Printer

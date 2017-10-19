@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93916: INFO: Calling MFC MDI Base Class Message Handlers"
-permalink: kb/093/Q93916/
+permalink: /kb/093/Q93916/
 ---
 
 ## Q93916: INFO: Calling MFC MDI Base Class Message Handlers

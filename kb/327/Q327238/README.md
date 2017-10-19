@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q327238: Programming Microsoft SQL Server 2000 with Visual Basic .Net Com"
-permalink: kb/327/Q327238/
+permalink: /kb/327/Q327238/
 ---
 
 ## Q327238: Programming Microsoft SQL Server 2000 with Visual Basic .Net Com

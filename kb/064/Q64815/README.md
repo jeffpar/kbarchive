@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64815: Pasting Information to MS-DOS Apps in Real and Standard"
-permalink: kb/064/Q64815/
+permalink: /kb/064/Q64815/
 ---
 
 ## Q64815: Pasting Information to MS-DOS Apps in Real and Standard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199281: XWEB: New Message is Lost When Connection to Web Server is Lost"
-permalink: kb/199/Q199281/
+permalink: /kb/199/Q199281/
 ---
 
 ## Q199281: XWEB: New Message is Lost When Connection to Web Server is Lost

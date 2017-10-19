@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139696: BUG: WinHelp Called Twice"
-permalink: kb/139/Q139696/
+permalink: /kb/139/Q139696/
 ---
 
 ## Q139696: BUG: WinHelp Called Twice

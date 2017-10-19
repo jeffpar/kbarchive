@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264106: SMS: Err Msg: A DB Could Not Be Found with the Name Supplied"
-permalink: kb/264/Q264106/
+permalink: /kb/264/Q264106/
 ---
 
 ## Q264106: SMS: Err Msg: A DB Could Not Be Found with the Name Supplied

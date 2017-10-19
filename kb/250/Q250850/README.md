@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250850: SMS: Systems Management Server 2.0 SP1 Server Hotfix Bundle"
-permalink: kb/250/Q250850/
+permalink: /kb/250/Q250850/
 ---
 
 ## Q250850: SMS: Systems Management Server 2.0 SP1 Server Hotfix Bundle

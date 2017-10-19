@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177559: How to Connect to MSN Using a Third-Party ISP"
-permalink: kb/177/Q177559/
+permalink: /kb/177/Q177559/
 ---
 
 ## Q177559: How to Connect to MSN Using a Third-Party ISP

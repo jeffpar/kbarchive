@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233199: BUG: Duplicate Control Boxes on MDI Form"
-permalink: kb/233/Q233199/
+permalink: /kb/233/Q233199/
 ---
 
 ## Q233199: BUG: Duplicate Control Boxes on MDI Form

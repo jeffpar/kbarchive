@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89233: Novell Login Script, Mapping Drives, and Pathing with Windows"
-permalink: kb/089/Q89233/
+permalink: /kb/089/Q89233/
 ---
 
 ## Q89233: Novell Login Script, Mapping Drives, and Pathing with Windows

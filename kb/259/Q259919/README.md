@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259919: Remote Control May Not Work If Similar Program Was Installed"
-permalink: kb/259/Q259919/
+permalink: /kb/259/Q259919/
 ---
 
 ## Q259919: Remote Control May Not Work If Similar Program Was Installed

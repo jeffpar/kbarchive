@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130243: How to Create Persistent Relations Using ALTER TABLE SQL"
-permalink: kb/130/Q130243/
+permalink: /kb/130/Q130243/
 ---
 
 ## Q130243: How to Create Persistent Relations Using ALTER TABLE SQL

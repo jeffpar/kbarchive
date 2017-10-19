@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98611: PC WSPlus: Changing the Calendar Font Color in Schedule+"
-permalink: kb/098/Q98611/
+permalink: /kb/098/Q98611/
 ---
 
 ## Q98611: PC WSPlus: Changing the Calendar Font Color in Schedule+

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293826: Pattern-Matching Function Causes Access Violation on FTP Server"
-permalink: kb/293/Q293826/
+permalink: /kb/293/Q293826/
 ---
 
 ## Q293826: Pattern-Matching Function Causes Access Violation on FTP Server

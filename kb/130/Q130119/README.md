@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130119: DHCP Requests Not Returned by TokenRing Routers"
-permalink: kb/130/Q130119/
+permalink: /kb/130/Q130119/
 ---
 
 ## Q130119: DHCP Requests Not Returned by TokenRing Routers

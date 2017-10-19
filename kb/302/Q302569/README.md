@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302569: Printer Stops Printing If Document Is Too Long"
-permalink: kb/302/Q302569/
+permalink: /kb/302/Q302569/
 ---
 
 ## Q302569: Printer Stops Printing If Document Is Too Long

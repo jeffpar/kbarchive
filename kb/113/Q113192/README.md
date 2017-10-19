@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113192: STOP Message: 0x0000000A with ARROW.SYS Driver"
-permalink: kb/113/Q113192/
+permalink: /kb/113/Q113192/
 ---
 
 ## Q113192: STOP Message: 0x0000000A with ARROW.SYS Driver

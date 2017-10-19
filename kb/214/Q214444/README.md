@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214444: Delay in Displaying NetWare Server in Network Neighborhood"
-permalink: kb/214/Q214444/
+permalink: /kb/214/Q214444/
 ---
 
 ## Q214444: Delay in Displaying NetWare Server in Network Neighborhood

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158950: Auto Detection of Identical Network Adapters Finds Only One"
-permalink: kb/158/Q158950/
+permalink: /kb/158/Q158950/
 ---
 
 ## Q158950: Auto Detection of Identical Network Adapters Finds Only One

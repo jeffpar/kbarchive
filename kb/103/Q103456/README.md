@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103456: PC Win: Mail Will Not Start Minimized from Word Macro"
-permalink: kb/103/Q103456/
+permalink: /kb/103/Q103456/
 ---
 
 ## Q103456: PC Win: Mail Will Not Start Minimized from Word Macro

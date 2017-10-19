@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77551: INFO: Using ExtDeviceMode() with DM_COPY"
-permalink: kb/077/Q77551/
+permalink: /kb/077/Q77551/
 ---
 
 ## Q77551: INFO: Using ExtDeviceMode() with DM_COPY

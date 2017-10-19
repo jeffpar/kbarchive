@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156813: HOWTO: Controlling Which Accessories Are Installed in Unattended"
-permalink: kb/156/Q156813/
+permalink: /kb/156/Q156813/
 ---
 
 ## Q156813: HOWTO: Controlling Which Accessories Are Installed in Unattended

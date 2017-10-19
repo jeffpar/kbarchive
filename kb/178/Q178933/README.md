@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178933: XADM: Using Non-U.S. Clients on Domestic (U.S.) Server"
-permalink: kb/178/Q178933/
+permalink: /kb/178/Q178933/
 ---
 
 ## Q178933: XADM: Using Non-U.S. Clients on Domestic (U.S.) Server

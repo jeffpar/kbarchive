@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201169: WD97: Tabs May Be Removed Running Spelling and Grammar Check"
-permalink: kb/201/Q201169/
+permalink: /kb/201/Q201169/
 ---
 
 ## Q201169: WD97: Tabs May Be Removed Running Spelling and Grammar Check

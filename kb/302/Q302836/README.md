@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302836: SMS: Cannot Increase APM Polling Interval to More Than 1,440"
-permalink: kb/302/Q302836/
+permalink: /kb/302/Q302836/
 ---
 
 ## Q302836: SMS: Cannot Increase APM Polling Interval to More Than 1,440

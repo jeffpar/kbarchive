@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150832: Unable to Connect to a Lotus Notes Server Over Router"
-permalink: kb/150/Q150832/
+permalink: /kb/150/Q150832/
 ---
 
 ## Q150832: Unable to Connect to a Lotus Notes Server Over Router

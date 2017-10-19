@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216476: FFAPI: Messages Get Duplicated when Sending Across FFAPI Gateway"
-permalink: kb/216/Q216476/
+permalink: /kb/216/Q216476/
 ---
 
 ## Q216476: FFAPI: Messages Get Duplicated when Sending Across FFAPI Gateway

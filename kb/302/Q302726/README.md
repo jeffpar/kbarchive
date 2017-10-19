@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302726: &quot;Unable to process request&quot; Error When Using &quot;Forgot Your Passwo"
-permalink: kb/302/Q302726/
+permalink: /kb/302/Q302726/
 ---
 
 ## Q302726: &quot;Unable to process request&quot; Error When Using &quot;Forgot Your Passwo

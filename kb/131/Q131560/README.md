@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131560: BUG: Creating a Header Class Definition in a VCX Causes Error"
-permalink: kb/131/Q131560/
+permalink: /kb/131/Q131560/
 ---
 
 ## Q131560: BUG: Creating a Header Class Definition in a VCX Causes Error

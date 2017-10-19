@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155232: BUG: Access Driver Ignores Pagetimeout in Datasources"
-permalink: kb/155/Q155232/
+permalink: /kb/155/Q155232/
 ---
 
 ## Q155232: BUG: Access Driver Ignores Pagetimeout in Datasources

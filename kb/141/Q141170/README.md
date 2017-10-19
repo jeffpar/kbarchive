@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141170: PRB: DBGrid Has No Default Property"
-permalink: kb/141/Q141170/
+permalink: /kb/141/Q141170/
 ---
 
 ## Q141170: PRB: DBGrid Has No Default Property

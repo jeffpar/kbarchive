@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188697: Disconnecting Network Printer Leaves Registry Settings"
-permalink: kb/188/Q188697/
+permalink: /kb/188/Q188697/
 ---
 
 ## Q188697: Disconnecting Network Printer Leaves Registry Settings

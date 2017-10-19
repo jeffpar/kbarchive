@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167881: WD97: IPF Clicking Next Section in Binder Print Preview"
-permalink: kb/167/Q167881/
+permalink: /kb/167/Q167881/
 ---
 
 ## Q167881: WD97: IPF Clicking Next Section in Binder Print Preview

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188646: XADM: Unable to Back Up Exchange Server 5.5 with Event ID 105"
-permalink: kb/188/Q188646/
+permalink: /kb/188/Q188646/
 ---
 
 ## Q188646: XADM: Unable to Back Up Exchange Server 5.5 with Event ID 105

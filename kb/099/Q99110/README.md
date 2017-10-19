@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99110: BUG: ETO_CLIPPED Does Not Clip Rotated Text"
-permalink: kb/099/Q99110/
+permalink: /kb/099/Q99110/
 ---
 
 ## Q99110: BUG: ETO_CLIPPED Does Not Clip Rotated Text

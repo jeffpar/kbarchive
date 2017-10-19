@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82547: Gupta's Quest GP Faults When Importing dBASE/CSV"
-permalink: kb/082/Q82547/
+permalink: /kb/082/Q82547/
 ---
 
 ## Q82547: Gupta's Quest GP Faults When Importing dBASE/CSV

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58260: Mouse Lost Under IBM DisplayWrite IV"
-permalink: kb/058/Q58260/
+permalink: /kb/058/Q58260/
 ---
 
 ## Q58260: Mouse Lost Under IBM DisplayWrite IV

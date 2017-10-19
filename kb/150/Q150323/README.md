@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150323: Computer Appears to Stop Responding Restarting in MS-DOS Mode"
-permalink: kb/150/Q150323/
+permalink: /kb/150/Q150323/
 ---
 
 ## Q150323: Computer Appears to Stop Responding Restarting in MS-DOS Mode

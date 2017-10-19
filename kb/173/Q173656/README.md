@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173656: XFOR: How to Troubleshoot Authenticated IMS Logons w/ Base64.exe"
-permalink: kb/173/Q173656/
+permalink: /kb/173/Q173656/
 ---
 
 ## Q173656: XFOR: How to Troubleshoot Authenticated IMS Logons w/ Base64.exe

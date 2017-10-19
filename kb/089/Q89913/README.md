@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89913: Cannot Modify and Save Read-Only Files in Quick Recorder"
-permalink: kb/089/Q89913/
+permalink: /kb/089/Q89913/
 ---
 
 ## Q89913: Cannot Modify and Save Read-Only Files in Quick Recorder

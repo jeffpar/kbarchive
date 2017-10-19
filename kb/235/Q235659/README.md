@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235659: XFOR:Lsmexnts Access Violation Sending Recurring Meeting Request"
-permalink: kb/235/Q235659/
+permalink: /kb/235/Q235659/
 ---
 
 ## Q235659: XFOR:Lsmexnts Access Violation Sending Recurring Meeting Request

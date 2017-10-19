@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164448: Error Message: Load Needed DLLs for Kernel"
-permalink: kb/164/Q164448/
+permalink: /kb/164/Q164448/
 ---
 
 ## Q164448: Error Message: Load Needed DLLs for Kernel

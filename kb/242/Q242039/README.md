@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242039: PRB: NT Perms for Distribution List when Owner Set ADSI/LDAP"
-permalink: kb/242/Q242039/
+permalink: /kb/242/Q242039/
 ---
 
 ## Q242039: PRB: NT Perms for Distribution List when Owner Set ADSI/LDAP

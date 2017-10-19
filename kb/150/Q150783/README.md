@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150783: INF: Testing ODBC Connectivity to Oracle 7.x"
-permalink: kb/150/Q150783/
+permalink: /kb/150/Q150783/
 ---
 
 ## Q150783: INF: Testing ODBC Connectivity to Oracle 7.x

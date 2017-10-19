@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259062: Contents Are Lost Saving Management Agent Scripts or Templates"
-permalink: kb/259/Q259062/
+permalink: /kb/259/Q259062/
 ---
 
 ## Q259062: Contents Are Lost Saving Management Agent Scripts or Templates

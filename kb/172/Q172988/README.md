@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172988: SAMPLE: CLSNMMBR.EXE Retrieves Members of a DLL Class"
-permalink: kb/172/Q172988/
+permalink: /kb/172/Q172988/
 ---
 
 ## Q172988: SAMPLE: CLSNMMBR.EXE Retrieves Members of a DLL Class

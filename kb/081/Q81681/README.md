@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81681: Windows 3.1 32-Bit Disk Access Not Compatible with DISCTEC"
-permalink: kb/081/Q81681/
+permalink: /kb/081/Q81681/
 ---
 
 ## Q81681: Windows 3.1 32-Bit Disk Access Not Compatible with DISCTEC

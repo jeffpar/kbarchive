@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87269: Windows Err Msg: Unable to Start Enhanced Mode...Back Fill"
-permalink: kb/087/Q87269/
+permalink: /kb/087/Q87269/
 ---
 
 ## Q87269: Windows Err Msg: Unable to Start Enhanced Mode...Back Fill

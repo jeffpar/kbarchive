@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116484: PC WSPlus: AM/PM Missing in Day Start/End Times"
-permalink: kb/116/Q116484/
+permalink: /kb/116/Q116484/
 ---
 
 ## Q116484: PC WSPlus: AM/PM Missing in Day Start/End Times

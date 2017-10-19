@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166283: Cannot Install RIP for Internet Protocol"
-permalink: kb/166/Q166283/
+permalink: /kb/166/Q166283/
 ---
 
 ## Q166283: Cannot Install RIP for Internet Protocol

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171042: WD97: Red Box Prints Behind WordArt Object on Canon BJC 4550"
-permalink: kb/171/Q171042/
+permalink: /kb/171/Q171042/
 ---
 
 ## Q171042: WD97: Red Box Prints Behind WordArt Object on Canon BJC 4550

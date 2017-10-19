@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149201: XCLN: '!' at End of URL Not Incorporated into Shortcut"
-permalink: kb/149/Q149201/
+permalink: /kb/149/Q149201/
 ---
 
 ## Q149201: XCLN: '!' at End of URL Not Incorporated into Shortcut

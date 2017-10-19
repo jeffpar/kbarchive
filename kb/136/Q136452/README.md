@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136452: Context-Sensitive Help Appears Only Briefly After Pressing F1"
-permalink: kb/136/Q136452/
+permalink: /kb/136/Q136452/
 ---
 
 ## Q136452: Context-Sensitive Help Appears Only Briefly After Pressing F1

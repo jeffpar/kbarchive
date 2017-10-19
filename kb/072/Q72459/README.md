@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72459: Shorthand Notation for Memory Allocation Flags"
-permalink: kb/072/Q72459/
+permalink: /kb/072/Q72459/
 ---
 
 ## Q72459: Shorthand Notation for Memory Allocation Flags

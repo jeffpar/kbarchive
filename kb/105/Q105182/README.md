@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105182: Undelete May Not Correctly Update AUTOEXEC.BAT &amp; UNDELETE.INI"
-permalink: kb/105/Q105182/
+permalink: /kb/105/Q105182/
 ---
 
 ## Q105182: Undelete May Not Correctly Update AUTOEXEC.BAT &amp; UNDELETE.INI

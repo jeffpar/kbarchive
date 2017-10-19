@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136023: Batch Files Stop Executing with Windows NT version 3.51"
-permalink: kb/136/Q136023/
+permalink: /kb/136/Q136023/
 ---
 
 ## Q136023: Batch Files Stop Executing with Windows NT version 3.51

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131151: PC DirSync: Removing Users from Directory Synchronization"
-permalink: kb/131/Q131151/
+permalink: /kb/131/Q131151/
 ---
 
 ## Q131151: PC DirSync: Removing Users from Directory Synchronization

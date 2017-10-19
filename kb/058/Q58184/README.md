@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58184: Mac Srv: How Serial Numbers Work in Microsoft Mail"
-permalink: kb/058/Q58184/
+permalink: /kb/058/Q58184/
 ---
 
 ## Q58184: Mac Srv: How Serial Numbers Work in Microsoft Mail

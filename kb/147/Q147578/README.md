@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147578: CWnd Derived MFC Objects and Multi-threaded Applications"
-permalink: kb/147/Q147578/
+permalink: /kb/147/Q147578/
 ---
 
 ## Q147578: CWnd Derived MFC Objects and Multi-threaded Applications

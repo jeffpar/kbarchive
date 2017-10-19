@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89119: DOC: Avoid GDI Object Private Clipboard Formats"
-permalink: kb/089/Q89119/
+permalink: /kb/089/Q89119/
 ---
 
 ## Q89119: DOC: Avoid GDI Object Private Clipboard Formats

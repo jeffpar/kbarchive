@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142274: BUG: Assertion Failure When Handling xN_SETFOCUS in CFormView"
-permalink: kb/142/Q142274/
+permalink: /kb/142/Q142274/
 ---
 
 ## Q142274: BUG: Assertion Failure When Handling xN_SETFOCUS in CFormView

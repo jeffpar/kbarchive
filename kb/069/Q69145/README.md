@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69145: PWB Ignores Certain Compiler Switches in Additional Options"
-permalink: kb/069/Q69145/
+permalink: /kb/069/Q69145/
 ---
 
 ## Q69145: PWB Ignores Certain Compiler Switches in Additional Options

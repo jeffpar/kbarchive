@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114127: PC Win: Can Create Subfolder in a Read-Only Shared Folder"
-permalink: kb/114/Q114127/
+permalink: /kb/114/Q114127/
 ---
 
 ## Q114127: PC Win: Can Create Subfolder in a Read-Only Shared Folder

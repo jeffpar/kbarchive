@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180905: WD97: Errors Saving File with Low Hard Disk Space"
-permalink: kb/180/Q180905/
+permalink: /kb/180/Q180905/
 ---
 
 ## Q180905: WD97: Errors Saving File with Low Hard Disk Space

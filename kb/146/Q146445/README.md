@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146445: PRB: istream::seekg() Does Not Reset EOF State"
-permalink: kb/146/Q146445/
+permalink: /kb/146/Q146445/
 ---
 
 ## Q146445: PRB: istream::seekg() Does Not Reset EOF State

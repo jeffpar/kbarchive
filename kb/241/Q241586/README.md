@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241586: WD97: Bullets Not Vertically Centered in Word Document Object"
-permalink: kb/241/Q241586/
+permalink: /kb/241/Q241586/
 ---
 
 ## Q241586: WD97: Bullets Not Vertically Centered in Word Document Object

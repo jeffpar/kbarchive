@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238945: FIX: Repeatedly Manipulating Data in Edit Box Causes Error Msg"
-permalink: kb/238/Q238945/
+permalink: /kb/238/Q238945/
 ---
 
 ## Q238945: FIX: Repeatedly Manipulating Data in Edit Box Causes Error Msg

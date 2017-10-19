@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251269: XCLN: Cannot Bcc Recipients Using Rules Wizard"
-permalink: kb/251/Q251269/
+permalink: /kb/251/Q251269/
 ---
 
 ## Q251269: XCLN: Cannot Bcc Recipients Using Rules Wizard

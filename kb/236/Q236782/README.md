@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236782: Mapi32.dll File Is Not Included in Service Pack 4 or Later"
-permalink: kb/236/Q236782/
+permalink: /kb/236/Q236782/
 ---
 
 ## Q236782: Mapi32.dll File Is Not Included in Service Pack 4 or Later

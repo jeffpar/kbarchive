@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162717: Autodial Settings Lost When Using Roaming Profiles"
-permalink: kb/162/Q162717/
+permalink: /kb/162/Q162717/
 ---
 
 ## Q162717: Autodial Settings Lost When Using Roaming Profiles

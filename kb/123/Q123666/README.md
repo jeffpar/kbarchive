@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123666: BUG: LINK Error L1101 with Public Weak Extern"
-permalink: kb/123/Q123666/
+permalink: /kb/123/Q123666/
 ---
 
 ## Q123666: BUG: LINK Error L1101 with Public Weak Extern

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180112: XADM: How To Export the Creation Date"
-permalink: kb/180/Q180112/
+permalink: /kb/180/Q180112/
 ---
 
 ## Q180112: XADM: How To Export the Creation Date

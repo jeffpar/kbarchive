@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77243: BUG: LinkTimeOut of -1 Waits Only 6553.5 Secs Before Time Out"
-permalink: kb/077/Q77243/
+permalink: /kb/077/Q77243/
 ---
 
 ## Q77243: BUG: LinkTimeOut of -1 Waits Only 6553.5 Secs Before Time Out

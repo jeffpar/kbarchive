@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176101: Err Msg: Unable to Get the Dial-Up Networking Connection..."
-permalink: kb/176/Q176101/
+permalink: /kb/176/Q176101/
 ---
 
 ## Q176101: Err Msg: Unable to Get the Dial-Up Networking Connection...

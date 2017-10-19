@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141128: Windows 95 Self-Help and Online Support Options"
-permalink: kb/141/Q141128/
+permalink: /kb/141/Q141128/
 ---
 
 ## Q141128: Windows 95 Self-Help and Online Support Options

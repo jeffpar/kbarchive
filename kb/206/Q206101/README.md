@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q206101: SMS: Shared DLLs Are Not Removed During a Silent Uninstall"
-permalink: kb/206/Q206101/
+permalink: /kb/206/Q206101/
 ---
 
 ## Q206101: SMS: Shared DLLs Are Not Removed During a Silent Uninstall

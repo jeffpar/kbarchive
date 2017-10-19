@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123655: PRB: Printing with QuickDraw GX Doesn't Work"
-permalink: kb/123/Q123655/
+permalink: /kb/123/Q123655/
 ---
 
 ## Q123655: PRB: Printing with QuickDraw GX Doesn't Work

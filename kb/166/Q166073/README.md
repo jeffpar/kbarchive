@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166073: Adding Connections/Link Services Causes Event 5167 and 5166"
-permalink: kb/166/Q166073/
+permalink: /kb/166/Q166073/
 ---
 
 ## Q166073: Adding Connections/Link Services Causes Event 5167 and 5166

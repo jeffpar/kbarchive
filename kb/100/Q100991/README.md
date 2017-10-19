@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100991: Microsoft SoundBits Browser Does Not Show Collections"
-permalink: kb/100/Q100991/
+permalink: /kb/100/Q100991/
 ---
 
 ## Q100991: Microsoft SoundBits Browser Does Not Show Collections

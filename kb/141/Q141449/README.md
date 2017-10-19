@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141449: BUG: Drag &amp; Drop From DE to Grid Causes Error or FoxPro Quits"
-permalink: kb/141/Q141449/
+permalink: /kb/141/Q141449/
 ---
 
 ## Q141449: BUG: Drag &amp; Drop From DE to Grid Causes Error or FoxPro Quits

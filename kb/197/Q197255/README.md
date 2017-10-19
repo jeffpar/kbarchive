@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197255: XFOR: Changing Site Address is not Updated in cc:Mail Directory"
-permalink: kb/197/Q197255/
+permalink: /kb/197/Q197255/
 ---
 
 ## Q197255: XFOR: Changing Site Address is not Updated in cc:Mail Directory

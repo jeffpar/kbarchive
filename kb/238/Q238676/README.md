@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238676: PRB: Shared DLL Removal in SQL Makes VB Add-ins Unloadable"
-permalink: kb/238/Q238676/
+permalink: /kb/238/Q238676/
 ---
 
 ## Q238676: PRB: Shared DLL Removal in SQL Makes VB Add-ins Unloadable

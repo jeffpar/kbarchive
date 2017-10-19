@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176087: LPRMON Status Strings Are No Longer Localized on German Version"
-permalink: kb/176/Q176087/
+permalink: /kb/176/Q176087/
 ---
 
 ## Q176087: LPRMON Status Strings Are No Longer Localized on German Version

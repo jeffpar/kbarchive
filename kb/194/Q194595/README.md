@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194595: FP98: Permissions Not Retained When Web Is Renamed"
-permalink: kb/194/Q194595/
+permalink: /kb/194/Q194595/
 ---
 
 ## Q194595: FP98: Permissions Not Retained When Web Is Renamed

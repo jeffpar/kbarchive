@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193078: BUG: Scrollable Form Displays Improperly on Resize or Scroll"
-permalink: kb/193/Q193078/
+permalink: /kb/193/Q193078/
 ---
 
 ## Q193078: BUG: Scrollable Form Displays Improperly on Resize or Scroll

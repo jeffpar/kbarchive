@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156641: BUG: GETCOLOR Function Does Not Return Focus to Custom Color"
-permalink: kb/156/Q156641/
+permalink: /kb/156/Q156641/
 ---
 
 ## Q156641: BUG: GETCOLOR Function Does Not Return Focus to Custom Color

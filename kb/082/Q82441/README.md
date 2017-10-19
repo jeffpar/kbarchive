@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82441: Using the Generic PostScript Printer Driver under Windows 3.1"
-permalink: kb/082/Q82441/
+permalink: /kb/082/Q82441/
 ---
 
 ## Q82441: Using the Generic PostScript Printer Driver under Windows 3.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173026: PRB: Message-Handlers for ActiveX Control Aren't Called"
-permalink: kb/173/Q173026/
+permalink: /kb/173/Q173026/
 ---
 
 ## Q173026: PRB: Message-Handlers for ActiveX Control Aren't Called

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171839: FIX: Crash When Compiling a Call to a UserControl Function"
-permalink: kb/171/Q171839/
+permalink: /kb/171/Q171839/
 ---
 
 ## Q171839: FIX: Crash When Compiling a Call to a UserControl Function

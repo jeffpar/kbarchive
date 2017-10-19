@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215431: BUG: Cannot Get TreeView Property or Method Topics from the IDE"
-permalink: kb/215/Q215431/
+permalink: /kb/215/Q215431/
 ---
 
 ## Q215431: BUG: Cannot Get TreeView Property or Method Topics from the IDE

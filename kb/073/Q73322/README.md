@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73322: Backfill for EMM386.EXE Cannot Be Disabled"
-permalink: kb/073/Q73322/
+permalink: /kb/073/Q73322/
 ---
 
 ## Q73322: Backfill for EMM386.EXE Cannot Be Disabled

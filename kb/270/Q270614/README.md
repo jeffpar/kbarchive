@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270614: PRB: Exchange Server 5.5 Rejects POP3 Messages in Base64"
-permalink: kb/270/Q270614/
+permalink: /kb/270/Q270614/
 ---
 
 ## Q270614: PRB: Exchange Server 5.5 Rejects POP3 Messages in Base64

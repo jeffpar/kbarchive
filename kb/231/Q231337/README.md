@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231337: Netdde.exe Does Not Relay WM_DDE_TERMINATE to Remote Clients"
-permalink: kb/231/Q231337/
+permalink: /kb/231/Q231337/
 ---
 
 ## Q231337: Netdde.exe Does Not Relay WM_DDE_TERMINATE to Remote Clients

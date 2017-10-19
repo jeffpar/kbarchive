@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163698: IDC Fails to Execute When Access to Httpodbc.dll Is Denied"
-permalink: kb/163/Q163698/
+permalink: /kb/163/Q163698/
 ---
 
 ## Q163698: IDC Fails to Execute When Access to Httpodbc.dll Is Denied

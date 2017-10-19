@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112824: Mac Client Does Not Allow Auto Reconnect at Startup"
-permalink: kb/112/Q112824/
+permalink: /kb/112/Q112824/
 ---
 
 ## Q112824: Mac Client Does Not Allow Auto Reconnect at Startup

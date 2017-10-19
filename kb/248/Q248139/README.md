@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248139: BUG:MSHFlexGrid Control Empty w/ DataEnvironment Parameter Query"
-permalink: kb/248/Q248139/
+permalink: /kb/248/Q248139/
 ---
 
 ## Q248139: BUG:MSHFlexGrid Control Empty w/ DataEnvironment Parameter Query

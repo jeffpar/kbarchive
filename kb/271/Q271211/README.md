@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271211: Deleted Users Repeatedly Processed"
-permalink: kb/271/Q271211/
+permalink: /kb/271/Q271211/
 ---
 
 ## Q271211: Deleted Users Repeatedly Processed

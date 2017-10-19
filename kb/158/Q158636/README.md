@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158636: STOP 0x1E in Win32k.sys Upgrading from WinNT 3.51 to WinNT 4.0"
-permalink: kb/158/Q158636/
+permalink: /kb/158/Q158636/
 ---
 
 ## Q158636: STOP 0x1E in Win32k.sys Upgrading from WinNT 3.51 to WinNT 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183002: WD97: Third Automatic Bullet or Number Is Left-Aligned"
-permalink: kb/183/Q183002/
+permalink: /kb/183/Q183002/
 ---
 
 ## Q183002: WD97: Third Automatic Bullet or Number Is Left-Aligned

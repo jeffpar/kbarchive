@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149664: Verifying Domain Netlogon Synchronization"
-permalink: kb/149/Q149664/
+permalink: /kb/149/Q149664/
 ---
 
 ## Q149664: Verifying Domain Netlogon Synchronization

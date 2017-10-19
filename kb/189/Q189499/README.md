@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189499: FIX: VB5.EXE Application Error with UserControls in Project"
-permalink: kb/189/Q189499/
+permalink: /kb/189/Q189499/
 ---
 
 ## Q189499: FIX: VB5.EXE Application Error with UserControls in Project

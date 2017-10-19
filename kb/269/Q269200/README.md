@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269200: An Error Message Is Displayed After Renaming User"
-permalink: kb/269/Q269200/
+permalink: /kb/269/Q269200/
 ---
 
 ## Q269200: An Error Message Is Displayed After Renaming User

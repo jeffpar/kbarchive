@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158869: ScanDisk May Not Fix the Media Descriptor Byte"
-permalink: kb/158/Q158869/
+permalink: /kb/158/Q158869/
 ---
 
 ## Q158869: ScanDisk May Not Fix the Media Descriptor Byte

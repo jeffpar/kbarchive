@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201131: BUG: Mixed Case Option Does Not Function Properly in Beautify"
-permalink: kb/201/Q201131/
+permalink: /kb/201/Q201131/
 ---
 
 ## Q201131: BUG: Mixed Case Option Does Not Function Properly in Beautify

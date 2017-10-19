@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146361: XCLN: Attachments Not Showing in Schedule+ 1.0"
-permalink: kb/146/Q146361/
+permalink: /kb/146/Q146361/
 ---
 
 ## Q146361: XCLN: Attachments Not Showing in Schedule+ 1.0

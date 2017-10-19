@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129147: Some Compaq Computers Boot Slowly with AutoMount Enabled"
-permalink: kb/129/Q129147/
+permalink: /kb/129/Q129147/
 ---
 
 ## Q129147: Some Compaq Computers Boot Slowly with AutoMount Enabled

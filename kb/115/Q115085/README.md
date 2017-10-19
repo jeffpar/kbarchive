@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115085: Win32s Files that Must Ship with Win32 Applications"
-permalink: kb/115/Q115085/
+permalink: /kb/115/Q115085/
 ---
 
 ## Q115085: Win32s Files that Must Ship with Win32 Applications

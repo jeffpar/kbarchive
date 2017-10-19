@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275306: Encarta 2001: Photographs Not Displayed When You View Articles"
-permalink: kb/275/Q275306/
+permalink: /kb/275/Q275306/
 ---
 
 ## Q275306: Encarta 2001: Photographs Not Displayed When You View Articles

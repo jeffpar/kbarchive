@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189205: Running MS BackOffice Small Business Server Corrections"
-permalink: kb/189/Q189205/
+permalink: /kb/189/Q189205/
 ---
 
 ## Q189205: Running MS BackOffice Small Business Server Corrections

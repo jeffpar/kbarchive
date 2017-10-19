@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248635: XADM: Recommended Install Order for Exchange, Cluster, and SP's"
-permalink: kb/248/Q248635/
+permalink: /kb/248/Q248635/
 ---
 
 ## Q248635: XADM: Recommended Install Order for Exchange, Cluster, and SP's

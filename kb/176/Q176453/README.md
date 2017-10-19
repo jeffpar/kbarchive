@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176453: XCON: Problems with Attachments Using Boldon James Encoding"
-permalink: kb/176/Q176453/
+permalink: /kb/176/Q176453/
 ---
 
 ## Q176453: XCON: Problems with Attachments Using Boldon James Encoding

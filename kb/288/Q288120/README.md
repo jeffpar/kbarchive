@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288120: Combat Flight Simulator: No Bombs or Rockets in Multiplayer Mode"
-permalink: kb/288/Q288120/
+permalink: /kb/288/Q288120/
 ---
 
 ## Q288120: Combat Flight Simulator: No Bombs or Rockets in Multiplayer Mode

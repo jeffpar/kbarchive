@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61916: PPT: How to Create (Format) a Default Presentation"
-permalink: kb/061/Q61916/
+permalink: /kb/061/Q61916/
 ---
 
 ## Q61916: PPT: How to Create (Format) a Default Presentation

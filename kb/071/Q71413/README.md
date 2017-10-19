@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71413: DOC: SetClipboardData Function Documentation Incomplete"
-permalink: kb/071/Q71413/
+permalink: /kb/071/Q71413/
 ---
 
 ## Q71413: DOC: SetClipboardData Function Documentation Incomplete

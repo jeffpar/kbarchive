@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57642: SYSTEM.INI Entries Required for Everex Step 386/25"
-permalink: kb/057/Q57642/
+permalink: /kb/057/Q57642/
 ---
 
 ## Q57642: SYSTEM.INI Entries Required for Everex Step 386/25

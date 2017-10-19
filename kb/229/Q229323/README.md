@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229323: Err Msg: The Client Could Not Connect to Terminal Server"
-permalink: kb/229/Q229323/
+permalink: /kb/229/Q229323/
 ---
 
 ## Q229323: Err Msg: The Client Could Not Connect to Terminal Server

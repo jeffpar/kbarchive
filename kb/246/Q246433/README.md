@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246433: How to Disable Remote Control Acceleration on Selected Clients"
-permalink: kb/246/Q246433/
+permalink: /kb/246/Q246433/
 ---
 
 ## Q246433: How to Disable Remote Control Acceleration on Selected Clients

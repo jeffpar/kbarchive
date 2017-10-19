@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193049: XCON: MTA Stops; Events 2110, 2171, &amp; 9299 Appear in Event Log"
-permalink: kb/193/Q193049/
+permalink: /kb/193/Q193049/
 ---
 
 ## Q193049: XCON: MTA Stops; Events 2110, 2171, &amp; 9299 Appear in Event Log

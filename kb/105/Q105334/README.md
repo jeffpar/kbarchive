@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105334: MemMaker Removes Question Mark Characters from CONFIG.SYS"
-permalink: kb/105/Q105334/
+permalink: /kb/105/Q105334/
 ---
 
 ## Q105334: MemMaker Removes Question Mark Characters from CONFIG.SYS

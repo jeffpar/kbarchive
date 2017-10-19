@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288567: SMS: Collection Evaluator Does Not Include Subcollection Data"
-permalink: kb/288/Q288567/
+permalink: /kb/288/Q288567/
 ---
 
 ## Q288567: SMS: Collection Evaluator Does Not Include Subcollection Data

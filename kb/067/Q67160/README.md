@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67160: PRB: CXX0004: Syntax Error Can Be Caused by a Leading Zero"
-permalink: kb/067/Q67160/
+permalink: /kb/067/Q67160/
 ---
 
 ## Q67160: PRB: CXX0004: Syntax Error Can Be Caused by a Leading Zero

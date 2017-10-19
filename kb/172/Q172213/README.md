@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172213: MS SQL Server Training Corrections and Comments"
-permalink: kb/172/Q172213/
+permalink: /kb/172/Q172213/
 ---
 
 ## Q172213: MS SQL Server Training Corrections and Comments

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130379: Repeating ALT+TAB, ALT+ENTER, or ALT+ESC Corrupts Display"
-permalink: kb/130/Q130379/
+permalink: /kb/130/Q130379/
 ---
 
 ## Q130379: Repeating ALT+TAB, ALT+ENTER, or ALT+ESC Corrupts Display

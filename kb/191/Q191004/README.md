@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191004: Crystal Reports 4.5: Allows Only One User Access"
-permalink: kb/191/Q191004/
+permalink: /kb/191/Q191004/
 ---
 
 ## Q191004: Crystal Reports 4.5: Allows Only One User Access

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82738: Using Central Point Backup with Windows 3.1"
-permalink: kb/082/Q82738/
+permalink: /kb/082/Q82738/
 ---
 
 ## Q82738: Using Central Point Backup with Windows 3.1

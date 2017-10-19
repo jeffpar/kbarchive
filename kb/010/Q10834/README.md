@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q10834: INFO: GDI Simulation Routines and Device Drivers for Windows"
-permalink: kb/010/Q10834/
+permalink: /kb/010/Q10834/
 ---
 
 ## Q10834: INFO: GDI Simulation Routines and Device Drivers for Windows

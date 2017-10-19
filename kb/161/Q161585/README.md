@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161585: XADM: Cannot Get Properties on a Newly Created Folder"
-permalink: kb/161/Q161585/
+permalink: /kb/161/Q161585/
 ---
 
 ## Q161585: XADM: Cannot Get Properties on a Newly Created Folder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128390: Different Ways a Macintosh Can Connect Through SNA Server"
-permalink: kb/128/Q128390/
+permalink: /kb/128/Q128390/
 ---
 
 ## Q128390: Different Ways a Macintosh Can Connect Through SNA Server

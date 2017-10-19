@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105433: PC WSPlus: Archive Progress Indicator Starts at 50 Percent"
-permalink: kb/105/Q105433/
+permalink: /kb/105/Q105433/
 ---
 
 ## Q105433: PC WSPlus: Archive Progress Indicator Starts at 50 Percent

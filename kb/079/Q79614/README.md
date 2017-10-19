@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79614: Windows: PATH Command Searches All Entries"
-permalink: kb/079/Q79614/
+permalink: /kb/079/Q79614/
 ---
 
 ## Q79614: Windows: PATH Command Searches All Entries

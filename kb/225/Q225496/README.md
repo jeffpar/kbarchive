@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225496: PRB: Cannot Execute Stored Procedures with More Than 60 Params"
-permalink: kb/225/Q225496/
+permalink: /kb/225/Q225496/
 ---
 
 ## Q225496: PRB: Cannot Execute Stored Procedures with More Than 60 Params

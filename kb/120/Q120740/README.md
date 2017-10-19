@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120740: Avoid Creating Macintosh Filenames that are NT Device Names"
-permalink: kb/120/Q120740/
+permalink: /kb/120/Q120740/
 ---
 
 ## Q120740: Avoid Creating Macintosh Filenames that are NT Device Names

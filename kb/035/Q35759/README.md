@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35759: Don't Change Disks during a Critical Error"
-permalink: kb/035/Q35759/
+permalink: /kb/035/Q35759/
 ---
 
 ## Q35759: Don't Change Disks during a Critical Error

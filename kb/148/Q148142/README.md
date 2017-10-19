@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148142: Macintosh Cinemania 96: Cinemania 1996 ReadMe Contents"
-permalink: kb/148/Q148142/
+permalink: /kb/148/Q148142/
 ---
 
 ## Q148142: Macintosh Cinemania 96: Cinemania 1996 ReadMe Contents

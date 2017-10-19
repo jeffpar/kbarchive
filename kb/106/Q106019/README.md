@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106019: SoundScapes: Playing Sounds from Any Directory Using WSS 1.0x"
-permalink: kb/106/Q106019/
+permalink: /kb/106/Q106019/
 ---
 
 ## Q106019: SoundScapes: Playing Sounds from Any Directory Using WSS 1.0x

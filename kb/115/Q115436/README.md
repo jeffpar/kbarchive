@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115436: MSBACKUP Does Not Correctly Read MWBACKUP .SET Files"
-permalink: kb/115/Q115436/
+permalink: /kb/115/Q115436/
 ---
 
 ## Q115436: MSBACKUP Does Not Correctly Read MWBACKUP .SET Files

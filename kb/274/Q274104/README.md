@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274104: Metal Gear Solid: Minimum System Requirements"
-permalink: kb/274/Q274104/
+permalink: /kb/274/Q274104/
 ---
 
 ## Q274104: Metal Gear Solid: Minimum System Requirements

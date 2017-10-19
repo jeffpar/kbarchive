@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280726: XADM: How to Use Mdbview to Remove Mailbox Event Scripts"
-permalink: kb/280/Q280726/
+permalink: /kb/280/Q280726/
 ---
 
 ## Q280726: XADM: How to Use Mdbview to Remove Mailbox Event Scripts

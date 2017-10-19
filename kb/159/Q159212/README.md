@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159212: Office 95 Used on Windows NT or Windows 95 with Profiles"
-permalink: kb/159/Q159212/
+permalink: /kb/159/Q159212/
 ---
 
 ## Q159212: Office 95 Used on Windows NT or Windows 95 with Profiles

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90011: ClipBook Viewer: Page-Sharing Problems"
-permalink: kb/090/Q90011/
+permalink: /kb/090/Q90011/
 ---
 
 ## Q90011: ClipBook Viewer: Page-Sharing Problems

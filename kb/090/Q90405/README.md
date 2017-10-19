@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90405: PC MAPI: How to Mail Enable/Disable Excel 4.0"
-permalink: kb/090/Q90405/
+permalink: /kb/090/Q90405/
 ---
 
 ## Q90405: PC MAPI: How to Mail Enable/Disable Excel 4.0

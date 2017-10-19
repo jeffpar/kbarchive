@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135106: Changing Billing Address Does Not Change Address Book"
-permalink: kb/135/Q135106/
+permalink: /kb/135/Q135106/
 ---
 
 ## Q135106: Changing Billing Address Does Not Change Address Book

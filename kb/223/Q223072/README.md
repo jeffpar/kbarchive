@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223072: FIX: DataReport Boolean TextBox Non-Blank Null Value Causes Erro"
-permalink: kb/223/Q223072/
+permalink: /kb/223/Q223072/
 ---
 
 ## Q223072: FIX: DataReport Boolean TextBox Non-Blank Null Value Causes Erro

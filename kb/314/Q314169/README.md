@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314169: SMS: &quot;Connection Failed&quot; Error Message w/Administrator Console"
-permalink: kb/314/Q314169/
+permalink: /kb/314/Q314169/
 ---
 
 ## Q314169: SMS: &quot;Connection Failed&quot; Error Message w/Administrator Console

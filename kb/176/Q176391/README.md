@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176391: HOWTO: Programmatically Close a Separate Application"
-permalink: kb/176/Q176391/
+permalink: /kb/176/Q176391/
 ---
 
 ## Q176391: HOWTO: Programmatically Close a Separate Application

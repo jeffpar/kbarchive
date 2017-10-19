@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66415: Installing the Driver for Pacific Data 25inOne! Font Cartridge"
-permalink: kb/066/Q66415/
+permalink: /kb/066/Q66415/
 ---
 
 ## Q66415: Installing the Driver for Pacific Data 25inOne! Font Cartridge

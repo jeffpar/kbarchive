@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181960: XCLN: Macintosh Does Not Correctly Support Adobe.pdf Attachments"
-permalink: kb/181/Q181960/
+permalink: /kb/181/Q181960/
 ---
 
 ## Q181960: XCLN: Macintosh Does Not Correctly Support Adobe.pdf Attachments

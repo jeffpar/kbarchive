@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78505: No Warning Beep with MS-DOS 4.x, 5.0 BACKUP Utility"
-permalink: kb/078/Q78505/
+permalink: /kb/078/Q78505/
 ---
 
 ## Q78505: No Warning Beep with MS-DOS 4.x, 5.0 BACKUP Utility

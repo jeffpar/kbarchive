@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258080: Digital Drives and Drive Letters Disappear with Clustered Server"
-permalink: kb/258/Q258080/
+permalink: /kb/258/Q258080/
 ---
 
 ## Q258080: Digital Drives and Drive Letters Disappear with Clustered Server

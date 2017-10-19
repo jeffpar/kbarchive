@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184827: Paste Link Function Is Not Available Between WordPad Documents"
-permalink: kb/184/Q184827/
+permalink: /kb/184/Q184827/
 ---
 
 ## Q184827: Paste Link Function Is Not Available Between WordPad Documents

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267908: HOWTO: Enumerate the Subkeys of an Open Registry Key"
-permalink: kb/267/Q267908/
+permalink: /kb/267/Q267908/
 ---
 
 ## Q267908: HOWTO: Enumerate the Subkeys of an Open Registry Key

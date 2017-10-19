@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172899: SMS: Despooler Instruction (.SNI) Files Are Not Processed"
-permalink: kb/172/Q172899/
+permalink: /kb/172/Q172899/
 ---
 
 ## Q172899: SMS: Despooler Instruction (.SNI) Files Are Not Processed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184433: BUG: Escape Seq in Params to Stored Procs Are Incorrectly Parsed"
-permalink: kb/184/Q184433/
+permalink: /kb/184/Q184433/
 ---
 
 ## Q184433: BUG: Escape Seq in Params to Stored Procs Are Incorrectly Parsed

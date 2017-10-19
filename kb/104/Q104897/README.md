@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104897: BUG: Syntax Error in Makefile with Projects &gt; 511 Files"
-permalink: kb/104/Q104897/
+permalink: /kb/104/Q104897/
 ---
 
 ## Q104897: BUG: Syntax Error in Makefile with Projects &gt; 511 Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149477: BUG: Run-Time Error F6511 - Variable Name Not Found"
-permalink: kb/149/Q149477/
+permalink: /kb/149/Q149477/
 ---
 
 ## Q149477: BUG: Run-Time Error F6511 - Variable Name Not Found

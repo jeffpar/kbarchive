@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175062: How To Determine from Which Computer a User Logged On"
-permalink: kb/175/Q175062/
+permalink: /kb/175/Q175062/
 ---
 
 ## Q175062: How To Determine from Which Computer a User Logged On

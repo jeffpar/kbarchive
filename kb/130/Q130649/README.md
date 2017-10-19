@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130649: Writer/Artist: ErrMsg: There Isn't Enough Space to Setup"
-permalink: kb/130/Q130649/
+permalink: /kb/130/Q130649/
 ---
 
 ## Q130649: Writer/Artist: ErrMsg: There Isn't Enough Space to Setup

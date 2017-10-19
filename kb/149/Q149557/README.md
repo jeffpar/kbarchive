@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149557: 16 Bit Windows Applications Only Scheduled Under System"
-permalink: kb/149/Q149557/
+permalink: /kb/149/Q149557/
 ---
 
 ## Q149557: 16 Bit Windows Applications Only Scheduled Under System

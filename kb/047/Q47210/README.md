@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47210: Flight Simulator: Definition of Aspect Ratio"
-permalink: kb/047/Q47210/
+permalink: /kb/047/Q47210/
 ---
 
 ## Q47210: Flight Simulator: Definition of Aspect Ratio

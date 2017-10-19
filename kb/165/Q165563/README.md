@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165563: INFO: GetRecordCount May Not Return Correct Number of Records"
-permalink: kb/165/Q165563/
+permalink: /kb/165/Q165563/
 ---
 
 ## Q165563: INFO: GetRecordCount May Not Return Correct Number of Records

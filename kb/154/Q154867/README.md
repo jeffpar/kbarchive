@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154867: DBWEB: How to Create a Custom Update DBX"
-permalink: kb/154/Q154867/
+permalink: /kb/154/Q154867/
 ---
 
 ## Q154867: DBWEB: How to Create a Custom Update DBX

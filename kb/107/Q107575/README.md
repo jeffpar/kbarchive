@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107575: WFWG: Adapter Media Type Information Is Incorrect"
-permalink: kb/107/Q107575/
+permalink: /kb/107/Q107575/
 ---
 
 ## Q107575: WFWG: Adapter Media Type Information Is Incorrect

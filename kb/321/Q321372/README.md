@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321372: SMS: SMS SP3 Support of  Windows XP Professional"
-permalink: kb/321/Q321372/
+permalink: /kb/321/Q321372/
 ---
 
 ## Q321372: SMS: SMS SP3 Support of  Windows XP Professional

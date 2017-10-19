@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143194: World Wide Web Server Monitor Counters"
-permalink: kb/143/Q143194/
+permalink: /kb/143/Q143194/
 ---
 
 ## Q143194: World Wide Web Server Monitor Counters

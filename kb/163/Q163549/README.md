@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163549: WD97: Downloads and Updates Available from Microsoft"
-permalink: kb/163/Q163549/
+permalink: /kb/163/Q163549/
 ---
 
 ## Q163549: WD97: Downloads and Updates Available from Microsoft

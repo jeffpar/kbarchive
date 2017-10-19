@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112480: How to Find the Hard Disk Drive Name Using FoxBASE+/Mac"
-permalink: kb/112/Q112480/
+permalink: /kb/112/Q112480/
 ---
 
 ## Q112480: How to Find the Hard Disk Drive Name Using FoxBASE+/Mac

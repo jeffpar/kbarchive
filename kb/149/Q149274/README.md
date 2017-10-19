@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149274: FIX: SSTab Is Locked When on Modal Form Shown at Load Time"
-permalink: kb/149/Q149274/
+permalink: /kb/149/Q149274/
 ---
 
 ## Q149274: FIX: SSTab Is Locked When on Modal Form Shown at Load Time

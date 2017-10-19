@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184186: XADM: Recovering Exchange from a Corrupted Directory"
-permalink: kb/184/Q184186/
+permalink: /kb/184/Q184186/
 ---
 
 ## Q184186: XADM: Recovering Exchange from a Corrupted Directory

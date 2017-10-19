@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198809: XIMS: Invisible Users Become Visible When Joining a Channel"
-permalink: kb/198/Q198809/
+permalink: /kb/198/Q198809/
 ---
 
 ## Q198809: XIMS: Invisible Users Become Visible When Joining a Channel

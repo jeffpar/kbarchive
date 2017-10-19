@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118815: BUG: M6101 Drawing a Line Outside Screen Coordinates"
-permalink: kb/118/Q118815/
+permalink: /kb/118/Q118815/
 ---
 
 ## Q118815: BUG: M6101 Drawing a Line Outside Screen Coordinates

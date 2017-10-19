@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177763: XADM: Troubleshooting Failure to Generate Offline Address Book"
-permalink: kb/177/Q177763/
+permalink: /kb/177/Q177763/
 ---
 
 ## Q177763: XADM: Troubleshooting Failure to Generate Offline Address Book

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245063: Games Error Message: Setup Failed to Extract Files From..."
-permalink: kb/245/Q245063/
+permalink: /kb/245/Q245063/
 ---
 
 ## Q245063: Games Error Message: Setup Failed to Extract Files From...

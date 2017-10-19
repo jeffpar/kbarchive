@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147838: Cannot Access Folders with Long File Names on NetWare Servers"
-permalink: kb/147/Q147838/
+permalink: /kb/147/Q147838/
 ---
 
 ## Q147838: Cannot Access Folders with Long File Names on NetWare Servers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196333: PRB: Not Null Field Returns Error Using VFPODBC SQL Insert"
-permalink: kb/196/Q196333/
+permalink: /kb/196/Q196333/
 ---
 
 ## Q196333: PRB: Not Null Field Returns Error Using VFPODBC SQL Insert

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169574: PPT: EPS Graphic with Clipping Path Not Supported"
-permalink: kb/169/Q169574/
+permalink: /kb/169/Q169574/
 ---
 
 ## Q169574: PPT: EPS Graphic with Clipping Path Not Supported

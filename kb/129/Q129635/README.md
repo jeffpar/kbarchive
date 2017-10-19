@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129635: INFO: User-Defined Collections Are 1-Based Not 0-Based"
-permalink: kb/129/Q129635/
+permalink: /kb/129/Q129635/
 ---
 
 ## Q129635: INFO: User-Defined Collections Are 1-Based Not 0-Based

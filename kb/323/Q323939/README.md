@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323939: FIX: &quot;Not Enough Memory&quot; Err Msg  When You Retrieve a NULL Date"
-permalink: kb/323/Q323939/
+permalink: /kb/323/Q323939/
 ---
 
 ## Q323939: FIX: &quot;Not Enough Memory&quot; Err Msg  When You Retrieve a NULL Date

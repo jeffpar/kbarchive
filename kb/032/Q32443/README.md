@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32443: MS-DOS CHKDSK Program Not Designed to Work with Windows"
-permalink: kb/032/Q32443/
+permalink: /kb/032/Q32443/
 ---
 
 ## Q32443: MS-DOS CHKDSK Program Not Designed to Work with Windows

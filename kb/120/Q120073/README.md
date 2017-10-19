@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120073: How to Rotate a Pen Windows Application"
-permalink: kb/120/Q120073/
+permalink: /kb/120/Q120073/
 ---
 
 ## Q120073: How to Rotate a Pen Windows Application

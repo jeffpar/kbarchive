@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201638: Multiple Event Viewer ID 1003 Messages from Counters"
-permalink: kb/201/Q201638/
+permalink: /kb/201/Q201638/
 ---
 
 ## Q201638: Multiple Event Viewer ID 1003 Messages from Counters

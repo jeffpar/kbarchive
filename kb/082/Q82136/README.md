@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82136: Troubleshooting Communications Under Windows 3.0"
-permalink: kb/082/Q82136/
+permalink: /kb/082/Q82136/
 ---
 
 ## Q82136: Troubleshooting Communications Under Windows 3.0

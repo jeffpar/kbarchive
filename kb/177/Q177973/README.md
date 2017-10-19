@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177973: XADM: AutoReply Attributes Do Not Affect Out Of Office Option"
-permalink: kb/177/Q177973/
+permalink: /kb/177/Q177973/
 ---
 
 ## Q177973: XADM: AutoReply Attributes Do Not Affect Out Of Office Option

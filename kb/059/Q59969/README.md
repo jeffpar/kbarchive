@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59969: Mac Hyp: Releasing Memory Used by Message Reference"
-permalink: kb/059/Q59969/
+permalink: /kb/059/Q59969/
 ---
 
 ## Q59969: Mac Hyp: Releasing Memory Used by Message Reference

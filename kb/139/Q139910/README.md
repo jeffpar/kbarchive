@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139910: Error 6118: &quot;The List of Servers for This Workgroup...&quot;"
-permalink: kb/139/Q139910/
+permalink: /kb/139/Q139910/
 ---
 
 ## Q139910: Error 6118: &quot;The List of Servers for This Workgroup...&quot;

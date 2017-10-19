@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262048: XCON: Instances Don't Appear in MSExchangeMTA Connections Object"
-permalink: kb/262/Q262048/
+permalink: /kb/262/Q262048/
 ---
 
 ## Q262048: XCON: Instances Don't Appear in MSExchangeMTA Connections Object

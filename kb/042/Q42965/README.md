@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q42965: Banking in Slow Flight Causes Climb in Flight Simulator"
-permalink: kb/042/Q42965/
+permalink: /kb/042/Q42965/
 ---
 
 ## Q42965: Banking in Slow Flight Causes Climb in Flight Simulator

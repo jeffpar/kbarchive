@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157813: FIX: Branch or Rollback of Shared File May Cause Corruption"
-permalink: kb/157/Q157813/
+permalink: /kb/157/Q157813/
 ---
 
 ## Q157813: FIX: Branch or Rollback of Shared File May Cause Corruption

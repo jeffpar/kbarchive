@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256212: Software Metering Client Agent Can Lock Out Domain User Account"
-permalink: kb/256/Q256212/
+permalink: /kb/256/Q256212/
 ---
 
 ## Q256212: Software Metering Client Agent Can Lock Out Domain User Account

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149640: XCLN: Private Sensitivity Ignored When Using WordMail"
-permalink: kb/149/Q149640/
+permalink: /kb/149/Q149640/
 ---
 
 ## Q149640: XCLN: Private Sensitivity Ignored When Using WordMail

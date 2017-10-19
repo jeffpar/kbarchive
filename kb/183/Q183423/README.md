@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183423: Dr.Watson Error When Renaming Printers Remotely on WinNT 3.51"
-permalink: kb/183/Q183423/
+permalink: /kb/183/Q183423/
 ---
 
 ## Q183423: Dr.Watson Error When Renaming Printers Remotely on WinNT 3.51

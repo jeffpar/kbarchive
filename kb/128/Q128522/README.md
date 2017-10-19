@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128522: Replacing Carriage Return &amp; Line Feeds with Other Characters"
-permalink: kb/128/Q128522/
+permalink: /kb/128/Q128522/
 ---
 
 ## Q128522: Replacing Carriage Return &amp; Line Feeds with Other Characters

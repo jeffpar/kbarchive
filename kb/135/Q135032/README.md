@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135032: PC NTMMTA: Cannot Run as an Automatic Service w/ Banyan Vines"
-permalink: kb/135/Q135032/
+permalink: /kb/135/Q135032/
 ---
 
 ## Q135032: PC NTMMTA: Cannot Run as an Automatic Service w/ Banyan Vines

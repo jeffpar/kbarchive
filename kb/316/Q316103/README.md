@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316103: MCSE Training Kit Microsoft BizTalk Server 2000 Comments And Cor"
-permalink: kb/316/Q316103/
+permalink: /kb/316/Q316103/
 ---
 
 ## Q316103: MCSE Training Kit Microsoft BizTalk Server 2000 Comments And Cor

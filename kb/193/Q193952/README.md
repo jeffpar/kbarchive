@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193952: HOWTO: Troubleshoot to Resolve Suspected Corruption"
-permalink: kb/193/Q193952/
+permalink: /kb/193/Q193952/
 ---
 
 ## Q193952: HOWTO: Troubleshoot to Resolve Suspected Corruption

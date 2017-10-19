@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174700: XFOR: Error Opening Notes Database 'Foreign.nsf'"
-permalink: kb/174/Q174700/
+permalink: /kb/174/Q174700/
 ---
 
 ## Q174700: XFOR: Error Opening Notes Database 'Foreign.nsf'

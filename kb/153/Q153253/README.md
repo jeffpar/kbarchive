@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153253: SNA Server 3270 Sessions Not Recovered with Eicon WAN Server"
-permalink: kb/153/Q153253/
+permalink: /kb/153/Q153253/
 ---
 
 ## Q153253: SNA Server 3270 Sessions Not Recovered with Eicon WAN Server

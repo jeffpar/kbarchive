@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246685: Err Msg: Limit Reached on Number of Objects of this Type"
-permalink: kb/246/Q246685/
+permalink: /kb/246/Q246685/
 ---
 
 ## Q246685: Err Msg: Limit Reached on Number of Objects of this Type

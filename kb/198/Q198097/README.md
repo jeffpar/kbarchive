@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198097: WD97: Errors, Problem Inserting CMYK JPEG Image"
-permalink: kb/198/Q198097/
+permalink: /kb/198/Q198097/
 ---
 
 ## Q198097: WD97: Errors, Problem Inserting CMYK JPEG Image

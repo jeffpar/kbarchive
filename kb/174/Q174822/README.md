@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174822: XCLN: Item Selection Does Not Work as Expected with SHIFT Key"
-permalink: kb/174/Q174822/
+permalink: /kb/174/Q174822/
 ---
 
 ## Q174822: XCLN: Item Selection Does Not Work as Expected with SHIFT Key

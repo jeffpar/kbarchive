@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74765: Corruption of the SETVER Table"
-permalink: kb/074/Q74765/
+permalink: /kb/074/Q74765/
 ---
 
 ## Q74765: Corruption of the SETVER Table

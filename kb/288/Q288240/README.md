@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288240: XADM: Header Line of Message Autoforwarded by Rule Is Too Long"
-permalink: kb/288/Q288240/
+permalink: /kb/288/Q288240/
 ---
 
 ## Q288240: XADM: Header Line of Message Autoforwarded by Rule Is Too Long

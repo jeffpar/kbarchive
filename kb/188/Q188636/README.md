@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188636: XADM: Error Generating OAB from Large Containers"
-permalink: kb/188/Q188636/
+permalink: /kb/188/Q188636/
 ---
 
 ## Q188636: XADM: Error Generating OAB from Large Containers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150415: FPNW Printing Causes File Cache to Grow"
-permalink: kb/150/Q150415/
+permalink: /kb/150/Q150415/
 ---
 
 ## Q150415: FPNW Printing Causes File Cache to Grow

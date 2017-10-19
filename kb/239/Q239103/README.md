@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239103: PRB: Synonyms of DBLinked Tables Do Not Show in Data View Window"
-permalink: kb/239/Q239103/
+permalink: /kb/239/Q239103/
 ---
 
 ## Q239103: PRB: Synonyms of DBLinked Tables Do Not Show in Data View Window

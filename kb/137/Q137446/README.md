@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137446: Differences Between FoxPro and Visual FoxPro Setup Wizard"
-permalink: kb/137/Q137446/
+permalink: /kb/137/Q137446/
 ---
 
 ## Q137446: Differences Between FoxPro and Visual FoxPro Setup Wizard

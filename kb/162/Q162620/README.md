@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162620: BUG: Setup Incorrectly Prompts to Overwrite Existing Files"
-permalink: kb/162/Q162620/
+permalink: /kb/162/Q162620/
 ---
 
 ## Q162620: BUG: Setup Incorrectly Prompts to Overwrite Existing Files

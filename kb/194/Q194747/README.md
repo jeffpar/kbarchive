@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194747: WD97: Mail Merge Tutorial and Help File Available"
-permalink: kb/194/Q194747/
+permalink: /kb/194/Q194747/
 ---
 
 ## Q194747: WD97: Mail Merge Tutorial and Help File Available

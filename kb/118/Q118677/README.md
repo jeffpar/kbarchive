@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118677: PC Gen: Bound Applications That Work with MMTA"
-permalink: kb/118/Q118677/
+permalink: /kb/118/Q118677/
 ---
 
 ## Q118677: PC Gen: Bound Applications That Work with MMTA

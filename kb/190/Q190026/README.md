@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190026: XFOR: SMTP Protocol Log Only Shows Connection Established Else"
-permalink: kb/190/Q190026/
+permalink: /kb/190/Q190026/
 ---
 
 ## Q190026: XFOR: SMTP Protocol Log Only Shows Connection Established Else

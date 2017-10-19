@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182778: TN3270 Service Logs Event 702 Messages"
-permalink: kb/182/Q182778/
+permalink: /kb/182/Q182778/
 ---
 
 ## Q182778: TN3270 Service Logs Event 702 Messages

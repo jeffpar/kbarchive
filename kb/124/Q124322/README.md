@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124322: BUG: SQLNumResultCols on a Prepared SELECT with ORDER in Name"
-permalink: kb/124/Q124322/
+permalink: /kb/124/Q124322/
 ---
 
 ## Q124322: BUG: SQLNumResultCols on a Prepared SELECT with ORDER in Name

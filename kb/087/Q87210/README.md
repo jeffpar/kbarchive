@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87210: PROFS: Effects of DirSync on Gateway Address Lists"
-permalink: kb/087/Q87210/
+permalink: /kb/087/Q87210/
 ---
 
 ## Q87210: PROFS: Effects of DirSync on Gateway Address Lists

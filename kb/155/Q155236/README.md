@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155236: Ntbackup Error: No Uncataloged Sets Were Found on Tape"
-permalink: kb/155/Q155236/
+permalink: /kb/155/Q155236/
 ---
 
 ## Q155236: Ntbackup Error: No Uncataloged Sets Were Found on Tape

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151416: Microsoft DNS Compatibility w/BIND Versions Earlier Than 4.9.4"
-permalink: kb/151/Q151416/
+permalink: /kb/151/Q151416/
 ---
 
 ## Q151416: Microsoft DNS Compatibility w/BIND Versions Earlier Than 4.9.4

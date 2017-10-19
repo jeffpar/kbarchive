@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198306: FS98/2000: Flight Simulator Starts Minimized"
-permalink: kb/198/Q198306/
+permalink: /kb/198/Q198306/
 ---
 
 ## Q198306: FS98/2000: Flight Simulator Starts Minimized

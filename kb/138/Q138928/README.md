@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138928: FIX: Custom Key Assignments May Not Work as Expected"
-permalink: kb/138/Q138928/
+permalink: /kb/138/Q138928/
 ---
 
 ## Q138928: FIX: Custom Key Assignments May Not Work as Expected

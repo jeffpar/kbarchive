@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139049: How to Make Combo or List Boxes Hold More than 255 Characters"
-permalink: kb/139/Q139049/
+permalink: /kb/139/Q139049/
 ---
 
 ## Q139049: How to Make Combo or List Boxes Hold More than 255 Characters

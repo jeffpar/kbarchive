@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266512: Encarta Researcher: Keyboard Shortcuts Launch IE Commands"
-permalink: kb/266/Q266512/
+permalink: /kb/266/Q266512/
 ---
 
 ## Q266512: Encarta Researcher: Keyboard Shortcuts Launch IE Commands

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164640: SNA 3.0 Manager Does Not Show APPC/CPI-C Application Name"
-permalink: kb/164/Q164640/
+permalink: /kb/164/Q164640/
 ---
 
 ## Q164640: SNA 3.0 Manager Does Not Show APPC/CPI-C Application Name

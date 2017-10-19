@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196042: WD97: Can't Insert Address with Netscape Communicator Installed"
-permalink: kb/196/Q196042/
+permalink: /kb/196/Q196042/
 ---
 
 ## Q196042: WD97: Can't Insert Address with Netscape Communicator Installed

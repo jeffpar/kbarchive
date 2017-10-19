@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182958: PRB: RDO RowsAffected Property Does Not Return Correct Value"
-permalink: kb/182/Q182958/
+permalink: /kb/182/Q182958/
 ---
 
 ## Q182958: PRB: RDO RowsAffected Property Does Not Return Correct Value

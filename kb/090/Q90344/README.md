@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90344: NDOS Can Cause Windows to Exit Unexpectedly"
-permalink: kb/090/Q90344/
+permalink: /kb/090/Q90344/
 ---
 
 ## Q90344: NDOS Can Cause Windows to Exit Unexpectedly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304617: Services for Macintosh Breaks SFU 2.0 Password Synchronization"
-permalink: kb/304/Q304617/
+permalink: /kb/304/Q304617/
 ---
 
 ## Q304617: Services for Macintosh Breaks SFU 2.0 Password Synchronization

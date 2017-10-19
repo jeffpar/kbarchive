@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251097: XIMS: Troubleshooting POP3/IMAP 13002 Errors w. SSL on Exchange"
-permalink: kb/251/Q251097/
+permalink: /kb/251/Q251097/
 ---
 
 ## Q251097: XIMS: Troubleshooting POP3/IMAP 13002 Errors w. SSL on Exchange

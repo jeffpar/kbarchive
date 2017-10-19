@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141271: XADM: Changing Recipient Alias Does Not Change Proxy"
-permalink: kb/141/Q141271/
+permalink: /kb/141/Q141271/
 ---
 
 ## Q141271: XADM: Changing Recipient Alias Does Not Change Proxy

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184311: Remote Key Request Generation Affected by Schannel.dll"
-permalink: kb/184/Q184311/
+permalink: /kb/184/Q184311/
 ---
 
 ## Q184311: Remote Key Request Generation Affected by Schannel.dll

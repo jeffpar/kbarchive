@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133384: Event ID 2019: Nonpaged Memory Pool Empty"
-permalink: kb/133/Q133384/
+permalink: /kb/133/Q133384/
 ---
 
 ## Q133384: Event ID 2019: Nonpaged Memory Pool Empty

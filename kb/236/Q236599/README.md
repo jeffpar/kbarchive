@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236599: Win32 SLI Application Ends Unexpectedly with No Errors"
-permalink: kb/236/Q236599/
+permalink: /kb/236/Q236599/
 ---
 
 ## Q236599: Win32 SLI Application Ends Unexpectedly with No Errors

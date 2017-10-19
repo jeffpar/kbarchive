@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93700: WFWG: Error Attempting to Move Local Schedule+ .CAL File"
-permalink: kb/093/Q93700/
+permalink: /kb/093/Q93700/
 ---
 
 ## Q93700: WFWG: Error Attempting to Move Local Schedule+ .CAL File

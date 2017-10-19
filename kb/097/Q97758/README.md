@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97758: Registering a Class in a DLL"
-permalink: kb/097/Q97758/
+permalink: /kb/097/Q97758/
 ---
 
 ## Q97758: Registering a Class in a DLL

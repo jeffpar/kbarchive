@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135552: SNA Server Administrator Does Not Expose Administrator APIs"
-permalink: kb/135/Q135552/
+permalink: /kb/135/Q135552/
 ---
 
 ## Q135552: SNA Server Administrator Does Not Expose Administrator APIs

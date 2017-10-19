@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100209: Windows NT 3.5 Driver Library"
-permalink: kb/100/Q100209/
+permalink: /kb/100/Q100209/
 ---
 
 ## Q100209: Windows NT 3.5 Driver Library

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157521: WD97: Agenda Wizard Table Cells Misaligned"
-permalink: kb/157/Q157521/
+permalink: /kb/157/Q157521/
 ---
 
 ## Q157521: WD97: Agenda Wizard Table Cells Misaligned

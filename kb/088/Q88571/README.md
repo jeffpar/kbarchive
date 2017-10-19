@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88571: DTC 3290 SCSI Controller and Windows 3.1"
-permalink: kb/088/Q88571/
+permalink: /kb/088/Q88571/
 ---
 
 ## Q88571: DTC 3290 SCSI Controller and Windows 3.1

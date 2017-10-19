@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274350: Crimson Skies: Known Video Issues in Crimson Skies"
-permalink: kb/274/Q274350/
+permalink: /kb/274/Q274350/
 ---
 
 ## Q274350: Crimson Skies: Known Video Issues in Crimson Skies

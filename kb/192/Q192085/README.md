@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192085: MHS: Incorrect Date Recorded in Sent.log and Recv.log Files"
-permalink: kb/192/Q192085/
+permalink: /kb/192/Q192085/
 ---
 
 ## Q192085: MHS: Incorrect Date Recorded in Sent.log and Recv.log Files

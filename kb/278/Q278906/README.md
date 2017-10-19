@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278906: MSN Companion Supported Printers"
-permalink: kb/278/Q278906/
+permalink: /kb/278/Q278906/
 ---
 
 ## Q278906: MSN Companion Supported Printers

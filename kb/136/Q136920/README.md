@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136920: HOWTO: Use Universal Naming Conventions (UNC) w/ Visual FoxPro"
-permalink: kb/136/Q136920/
+permalink: /kb/136/Q136920/
 ---
 
 ## Q136920: HOWTO: Use Universal Naming Conventions (UNC) w/ Visual FoxPro

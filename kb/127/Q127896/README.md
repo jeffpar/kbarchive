@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127896: Multimedia: General MIDI Troubleshooting In Windows 3.x"
-permalink: kb/127/Q127896/
+permalink: /kb/127/Q127896/
 ---
 
 ## Q127896: Multimedia: General MIDI Troubleshooting In Windows 3.x

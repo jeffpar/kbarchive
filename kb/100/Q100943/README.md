@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100943: Modifying WIN.INI to Print to the Same File Each Time"
-permalink: kb/100/Q100943/
+permalink: /kb/100/Q100943/
 ---
 
 ## Q100943: Modifying WIN.INI to Print to the Same File Each Time

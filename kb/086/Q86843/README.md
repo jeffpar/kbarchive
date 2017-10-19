@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86843: PC WSPlus: Appending to Existing Archive File"
-permalink: kb/086/Q86843/
+permalink: /kb/086/Q86843/
 ---
 
 ## Q86843: PC WSPlus: Appending to Existing Archive File

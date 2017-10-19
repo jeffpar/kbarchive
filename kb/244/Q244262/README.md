@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244262: OLE DB Provider/ODBC Driver for DB2 May Break Jet Applications"
-permalink: kb/244/Q244262/
+permalink: /kb/244/Q244262/
 ---
 
 ## Q244262: OLE DB Provider/ODBC Driver for DB2 May Break Jet Applications

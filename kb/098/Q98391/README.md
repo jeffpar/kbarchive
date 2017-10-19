@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98391: PC WRmt: 3.2 Mail Remote for Windows Disk 3 [5.25] - U.S."
-permalink: kb/098/Q98391/
+title: "Q98391: PC WRmt: 3.2 Mail Remote for Windows Disk 3 &#91;5.25&#93; - U.S."
+permalink: /kb/098/Q98391/
 ---
 
-## Q98391: PC WRmt: 3.2 Mail Remote for Windows Disk 3 [5.25] - U.S.
+## Q98391: PC WRmt: 3.2 Mail Remote for Windows Disk 3 &#91;5.25&#93; - U.S.
 
 	Article: Q98391
 	Product(s): Microsoft Mail For PC Networks

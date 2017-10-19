@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175156: PRB: Class Not Registered Error and Empty Components Dialog"
-permalink: kb/175/Q175156/
+permalink: /kb/175/Q175156/
 ---
 
 ## Q175156: PRB: Class Not Registered Error and Empty Components Dialog

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146098: XCLN: ClipArt Converted as Embedded Object Disappears"
-permalink: kb/146/Q146098/
+permalink: /kb/146/Q146098/
 ---
 
 ## Q146098: XCLN: ClipArt Converted as Embedded Object Disappears

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238044: Encarta Dictionary 2000: Comparison with Bookshelf 99"
-permalink: kb/238/Q238044/
+permalink: /kb/238/Q238044/
 ---
 
 ## Q238044: Encarta Dictionary 2000: Comparison with Bookshelf 99

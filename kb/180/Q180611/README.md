@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180611: PRB: Cannot Set Default Value for Access (Jet) Text Fields"
-permalink: kb/180/Q180611/
+permalink: /kb/180/Q180611/
 ---
 
 ## Q180611: PRB: Cannot Set Default Value for Access (Jet) Text Fields

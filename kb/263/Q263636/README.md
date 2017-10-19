@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263636: Unable to Promote BDC to PDC Event ID 5516 and 3096"
-permalink: kb/263/Q263636/
+permalink: /kb/263/Q263636/
 ---
 
 ## Q263636: Unable to Promote BDC to PDC Event ID 5516 and 3096

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264079: Runtime Library Error Message When You Install or Start Encarta"
-permalink: kb/264/Q264079/
+permalink: /kb/264/Q264079/
 ---
 
 ## Q264079: Runtime Library Error Message When You Install or Start Encarta

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93124: Setting up WfW with TCP Manually: Resource Kit Manual Error"
-permalink: kb/093/Q93124/
+permalink: /kb/093/Q93124/
 ---
 
 ## Q93124: Setting up WfW with TCP Manually: Resource Kit Manual Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q34669: PRB: L1087: &quot;Unexpected End-of-File on Scratch File&quot;"
-permalink: kb/034/Q34669/
+permalink: /kb/034/Q34669/
 ---
 
 ## Q34669: PRB: L1087: &quot;Unexpected End-of-File on Scratch File&quot;

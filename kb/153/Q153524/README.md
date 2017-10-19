@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153524: Immediate CMRCV Response Also Trace the Buffer"
-permalink: kb/153/Q153524/
+permalink: /kb/153/Q153524/
 ---
 
 ## Q153524: Immediate CMRCV Response Also Trace the Buffer

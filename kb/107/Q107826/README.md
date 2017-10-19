@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107826: PRB: COMMAND+W and CTRL+W Do Not Close All Windows"
-permalink: kb/107/Q107826/
+permalink: /kb/107/Q107826/
 ---
 
 ## Q107826: PRB: COMMAND+W and CTRL+W Do Not Close All Windows

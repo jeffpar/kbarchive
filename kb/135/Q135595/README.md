@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135595: IPCONFIG Does Not Display Domain Name if Assigned Via DHCP"
-permalink: kb/135/Q135595/
+permalink: /kb/135/Q135595/
 ---
 
 ## Q135595: IPCONFIG Does Not Display Domain Name if Assigned Via DHCP

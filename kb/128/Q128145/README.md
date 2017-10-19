@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128145: Cannot Remote Control Windows IPX/NetBIOS Client"
-permalink: kb/128/Q128145/
+permalink: /kb/128/Q128145/
 ---
 
 ## Q128145: Cannot Remote Control Windows IPX/NetBIOS Client

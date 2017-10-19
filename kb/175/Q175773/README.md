@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175773: SNACFG Does Not Add an LUA Pool to a TN3270 Server"
-permalink: kb/175/Q175773/
+permalink: /kb/175/Q175773/
 ---
 
 ## Q175773: SNACFG Does Not Add an LUA Pool to a TN3270 Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188445: PRB: Marisa.dll Causes Movie Clip Errors in Mastering Series"
-permalink: kb/188/Q188445/
+permalink: /kb/188/Q188445/
 ---
 
 ## Q188445: PRB: Marisa.dll Causes Movie Clip Errors in Mastering Series

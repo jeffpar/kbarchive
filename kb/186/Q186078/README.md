@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186078: Name Resolution May Fail If NetBios Name Has ASCII Character"
-permalink: kb/186/Q186078/
+permalink: /kb/186/Q186078/
 ---
 
 ## Q186078: Name Resolution May Fail If NetBios Name Has ASCII Character

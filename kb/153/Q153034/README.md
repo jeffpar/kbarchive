@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153034: ACC95: Table Is Not Exported Using the Upsizing Tools"
-permalink: kb/153/Q153034/
+permalink: /kb/153/Q153034/
 ---
 
 ## Q153034: ACC95: Table Is Not Exported Using the Upsizing Tools

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108364: BUG: Resolutions for DBWIN Utility Continuous Beeping"
-permalink: kb/108/Q108364/
+permalink: /kb/108/Q108364/
 ---
 
 ## Q108364: BUG: Resolutions for DBWIN Utility Continuous Beeping

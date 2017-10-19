@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85659: Removing Unnecessary Sound Drivers in Windows 3.1"
-permalink: kb/085/Q85659/
+permalink: /kb/085/Q85659/
 ---
 
 ## Q85659: Removing Unnecessary Sound Drivers in Windows 3.1

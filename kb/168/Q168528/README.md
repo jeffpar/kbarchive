@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168528: PRB: Add Method/Add Property Adds To All Interfaces"
-permalink: kb/168/Q168528/
+permalink: /kb/168/Q168528/
 ---
 
 ## Q168528: PRB: Add Method/Add Property Adds To All Interfaces

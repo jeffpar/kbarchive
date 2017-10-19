@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278886: XADM: Prompted to Overwrite Fradm32 Upgrading to Exchange 2000"
-permalink: kb/278/Q278886/
+permalink: /kb/278/Q278886/
 ---
 
 ## Q278886: XADM: Prompted to Overwrite Fradm32 Upgrading to Exchange 2000

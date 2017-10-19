@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142679: Windows NT Fails to Locate the NE2000 Compatible Drivers"
-permalink: kb/142/Q142679/
+permalink: /kb/142/Q142679/
 ---
 
 ## Q142679: Windows NT Fails to Locate the NE2000 Compatible Drivers

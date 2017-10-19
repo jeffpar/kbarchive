@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142544: Windows 95/98 Win.com Command-Line Switches"
-permalink: kb/142/Q142544/
+permalink: /kb/142/Q142544/
 ---
 
 ## Q142544: Windows 95/98 Win.com Command-Line Switches

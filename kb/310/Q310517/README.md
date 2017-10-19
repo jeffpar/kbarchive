@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310517: Event 1301 Logged During Host-Initiated Password Change"
-permalink: kb/310/Q310517/
+permalink: /kb/310/Q310517/
 ---
 
 ## Q310517: Event 1301 Logged During Host-Initiated Password Change

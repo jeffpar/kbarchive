@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154177: IBM Model 320 Microchannel Does Not Utilize Multiprocessor"
-permalink: kb/154/Q154177/
+permalink: /kb/154/Q154177/
 ---
 
 ## Q154177: IBM Model 320 Microchannel Does Not Utilize Multiprocessor

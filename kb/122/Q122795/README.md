@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122795: BNC Problems with 3C507 and 3C509 NICs"
-permalink: kb/122/Q122795/
+permalink: /kb/122/Q122795/
 ---
 
 ## Q122795: BNC Problems with 3C507 and 3C509 NICs

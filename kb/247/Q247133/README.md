@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247133: XCON: List of KB Articles on MTA Concepts and Troubleshooting"
-permalink: kb/247/Q247133/
+permalink: /kb/247/Q247133/
 ---
 
 ## Q247133: XCON: List of KB Articles on MTA Concepts and Troubleshooting

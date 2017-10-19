@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237813: Err: &quot;INF Install Failure&quot; When Non-administrator Logs On"
-permalink: kb/237/Q237813/
+permalink: /kb/237/Q237813/
 ---
 
 ## Q237813: Err: &quot;INF Install Failure&quot; When Non-administrator Logs On

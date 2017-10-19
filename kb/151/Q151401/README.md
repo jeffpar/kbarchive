@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151401: Err Msg: &quot;Bad Command or Filename&quot; on Windows NT Login Script"
-permalink: kb/151/Q151401/
+permalink: /kb/151/Q151401/
 ---
 
 ## Q151401: Err Msg: &quot;Bad Command or Filename&quot; on Windows NT Login Script

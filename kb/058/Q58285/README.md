@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58285: &quot;Ugly&quot; Colors on 512K 8514 Adapter"
-permalink: kb/058/Q58285/
+permalink: /kb/058/Q58285/
 ---
 
 ## Q58285: &quot;Ugly&quot; Colors on 512K 8514 Adapter

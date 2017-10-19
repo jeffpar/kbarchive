@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297722: COM Server May Not Be Started from the Login Script"
-permalink: kb/297/Q297722/
+permalink: /kb/297/Q297722/
 ---
 
 ## Q297722: COM Server May Not Be Started from the Login Script

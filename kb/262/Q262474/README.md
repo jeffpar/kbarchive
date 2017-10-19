@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262474: Kerberos Security with SNA Server/Host Integration Server 2000"
-permalink: kb/262/Q262474/
+permalink: /kb/262/Q262474/
 ---
 
 ## Q262474: Kerberos Security with SNA Server/Host Integration Server 2000

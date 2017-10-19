@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142606: ErrMsg: Procedure Entry Point Could Not Be Located"
-permalink: kb/142/Q142606/
+permalink: /kb/142/Q142606/
 ---
 
 ## Q142606: ErrMsg: Procedure Entry Point Could Not Be Located

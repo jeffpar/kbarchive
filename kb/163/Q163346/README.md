@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163346: ACC97: Linked Table Manager Doesn't Prompt You to Check Out Data"
-permalink: kb/163/Q163346/
+permalink: /kb/163/Q163346/
 ---
 
 ## Q163346: ACC97: Linked Table Manager Doesn't Prompt You to Check Out Data

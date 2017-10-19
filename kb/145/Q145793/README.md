@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145793: SUR and 16-bit Clients Must Run Separate Versions of TEST"
-permalink: kb/145/Q145793/
+permalink: /kb/145/Q145793/
 ---
 
 ## Q145793: SUR and 16-bit Clients Must Run Separate Versions of TEST

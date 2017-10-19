@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73339: Printer Echo Command in Terminal"
-permalink: kb/073/Q73339/
+permalink: /kb/073/Q73339/
 ---
 
 ## Q73339: Printer Echo Command in Terminal

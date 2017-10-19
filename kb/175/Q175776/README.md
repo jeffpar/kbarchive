@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175776: PRB: Problem with VisData Print Structure and Indexes"
-permalink: kb/175/Q175776/
+permalink: /kb/175/Q175776/
 ---
 
 ## Q175776: PRB: Problem with VisData Print Structure and Indexes

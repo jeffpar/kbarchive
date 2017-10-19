@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131402: Windows NT Server Appears to Hang (NETBT.SYS is Looping)"
-permalink: kb/131/Q131402/
+permalink: /kb/131/Q131402/
 ---
 
 ## Q131402: Windows NT Server Appears to Hang (NETBT.SYS is Looping)

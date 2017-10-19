@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86398: PC OS2: Double-Click on Control Box Doesn't Close Window"
-permalink: kb/086/Q86398/
+permalink: /kb/086/Q86398/
 ---
 
 ## Q86398: PC OS2: Double-Click on Control Box Doesn't Close Window

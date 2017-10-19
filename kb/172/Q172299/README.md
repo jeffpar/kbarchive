@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172299: Snacfg.exe &quot;USER /INSERT&quot; Fails Adding Additional LU"
-permalink: kb/172/Q172299/
+permalink: /kb/172/Q172299/
 ---
 
 ## Q172299: Snacfg.exe &quot;USER /INSERT&quot; Fails Adding Additional LU

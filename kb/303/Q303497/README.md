@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303497: Links 2001: Cameras Do Not Work as Expected"
-permalink: kb/303/Q303497/
+permalink: /kb/303/Q303497/
 ---
 
 ## Q303497: Links 2001: Cameras Do Not Work as Expected

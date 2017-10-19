@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134563: MS-DOS Prompt Does Not Shut Down with Third-Party TSRs"
-permalink: kb/134/Q134563/
+permalink: /kb/134/Q134563/
 ---
 
 ## Q134563: MS-DOS Prompt Does Not Shut Down with Third-Party TSRs

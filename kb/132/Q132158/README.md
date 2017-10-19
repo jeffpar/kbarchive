@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132158: Third Port Detected with CMD PCI Dual Port IDE Controller"
-permalink: kb/132/Q132158/
+permalink: /kb/132/Q132158/
 ---
 
 ## Q132158: Third Port Detected with CMD PCI Dual Port IDE Controller

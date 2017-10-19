@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155240: Err Msg: Some Control Panel or Device Settings Have Changed..."
-permalink: kb/155/Q155240/
+permalink: /kb/155/Q155240/
 ---
 
 ## Q155240: Err Msg: Some Control Panel or Device Settings Have Changed...

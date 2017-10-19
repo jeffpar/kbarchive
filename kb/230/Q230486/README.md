@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230486: PRB: Cannot Have Secondary Y Axis with MSChart XY Scatterchart"
-permalink: kb/230/Q230486/
+permalink: /kb/230/Q230486/
 ---
 
 ## Q230486: PRB: Cannot Have Secondary Y Axis with MSChart XY Scatterchart

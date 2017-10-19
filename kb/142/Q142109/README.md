@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142109: Writer: ErrMsg: Integer Divide by Zero with STB Vision"
-permalink: kb/142/Q142109/
+permalink: /kb/142/Q142109/
 ---
 
 ## Q142109: Writer: ErrMsg: Integer Divide by Zero with STB Vision

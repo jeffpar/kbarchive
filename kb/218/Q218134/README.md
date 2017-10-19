@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218134: Error: SysTray.exe - DLL Initialization Failed After NT SP4 Inst"
-permalink: kb/218/Q218134/
+permalink: /kb/218/Q218134/
 ---
 
 ## Q218134: Error: SysTray.exe - DLL Initialization Failed After NT SP4 Inst

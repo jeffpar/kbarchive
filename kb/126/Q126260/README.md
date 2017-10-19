@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126260: Writer: Borders Cut Off on HP DeskJet Series"
-permalink: kb/126/Q126260/
+permalink: /kb/126/Q126260/
 ---
 
 ## Q126260: Writer: Borders Cut Off on HP DeskJet Series

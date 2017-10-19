@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177395: FILE: Vfpmsuwz.hqx: New Setup Wizard/Visual FoxPro Using OS 8"
-permalink: kb/177/Q177395/
+permalink: /kb/177/Q177395/
 ---
 
 ## Q177395: FILE: Vfpmsuwz.hqx: New Setup Wizard/Visual FoxPro Using OS 8

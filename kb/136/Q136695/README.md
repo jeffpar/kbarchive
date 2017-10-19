@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136695: How to Use the Load, Init, Destroy, and Unload Events"
-permalink: kb/136/Q136695/
+permalink: /kb/136/Q136695/
 ---
 
 ## Q136695: How to Use the Load, Init, Destroy, and Unload Events

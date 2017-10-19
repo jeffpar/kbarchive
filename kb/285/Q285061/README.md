@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285061: Flight Simulator 2000: How to Configure CH Products Yoke/Pedals"
-permalink: kb/285/Q285061/
+permalink: /kb/285/Q285061/
 ---
 
 ## Q285061: Flight Simulator 2000: How to Configure CH Products Yoke/Pedals

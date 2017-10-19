@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199997: SMS: Software Metering Doesn't Meter Some Applications"
-permalink: kb/199/Q199997/
+permalink: /kb/199/Q199997/
 ---
 
 ## Q199997: SMS: Software Metering Doesn't Meter Some Applications

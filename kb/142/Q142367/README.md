@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142367: MS-DOS Clients Cannot Log On Across Router with TCP/IP"
-permalink: kb/142/Q142367/
+permalink: /kb/142/Q142367/
 ---
 
 ## Q142367: MS-DOS Clients Cannot Log On Across Router with TCP/IP

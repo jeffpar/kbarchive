@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221178: WD97: Unable to Use Mail Merge with Outlook Address Book"
-permalink: kb/221/Q221178/
+permalink: /kb/221/Q221178/
 ---
 
 ## Q221178: WD97: Unable to Use Mail Merge with Outlook Address Book

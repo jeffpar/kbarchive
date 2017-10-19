@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121720: Error 6103: The String Specified by the COMPUTERNAME..."
-permalink: kb/121/Q121720/
+permalink: /kb/121/Q121720/
 ---
 
 ## Q121720: Error 6103: The String Specified by the COMPUTERNAME...

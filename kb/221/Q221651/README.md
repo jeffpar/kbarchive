@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221651: FIX: FFCs - Error Log Dialog Cuts Off Vertical Scroll Bar"
-permalink: kb/221/Q221651/
+permalink: /kb/221/Q221651/
 ---
 
 ## Q221651: FIX: FFCs - Error Log Dialog Cuts Off Vertical Scroll Bar

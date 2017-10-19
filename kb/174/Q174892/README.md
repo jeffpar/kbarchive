@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174892: Ultimate Climb: Err Msg: Cannot Find Msacm32.dll"
-permalink: kb/174/Q174892/
+permalink: /kb/174/Q174892/
 ---
 
 ## Q174892: Ultimate Climb: Err Msg: Cannot Find Msacm32.dll

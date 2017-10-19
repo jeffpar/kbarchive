@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254796: FILE: Updated Grid Control for Handheld PC Platform"
-permalink: kb/254/Q254796/
+permalink: /kb/254/Q254796/
 ---
 
 ## Q254796: FILE: Updated Grid Control for Handheld PC Platform

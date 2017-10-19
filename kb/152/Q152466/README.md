@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152466: SMS: Restoring SMS Services to the Registry"
-permalink: kb/152/Q152466/
+permalink: /kb/152/Q152466/
 ---
 
 ## Q152466: SMS: Restoring SMS Services to the Registry

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151420: Fury3: AVI Music Turns Off When Resizing Window"
-permalink: kb/151/Q151420/
+permalink: /kb/151/Q151420/
 ---
 
 ## Q151420: Fury3: AVI Music Turns Off When Resizing Window

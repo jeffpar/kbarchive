@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88147: Data Files Without Extensions Cause Command-Line Fault"
-permalink: kb/088/Q88147/
+permalink: /kb/088/Q88147/
 ---
 
 ## Q88147: Data Files Without Extensions Cause Command-Line Fault

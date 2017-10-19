@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39179: Using a Debugging Terminal with CodeView"
-permalink: kb/039/Q39179/
+permalink: /kb/039/Q39179/
 ---
 
 ## Q39179: Using a Debugging Terminal with CodeView

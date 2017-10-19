@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136177: PPT7: Shared Files Installed to &#92;Msapps Folder on WinNT 3.51"
-permalink: kb/136/Q136177/
+permalink: /kb/136/Q136177/
 ---
 
 ## Q136177: PPT7: Shared Files Installed to &#92;Msapps Folder on WinNT 3.51

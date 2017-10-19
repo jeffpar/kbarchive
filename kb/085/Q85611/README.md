@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85611: FAX: Changes Summary"
-permalink: kb/085/Q85611/
+permalink: /kb/085/Q85611/
 ---
 
 ## Q85611: FAX: Changes Summary

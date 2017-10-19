@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201397: SMSINST: Custom Dialogs May Contain Blank Controls"
-permalink: kb/201/Q201397/
+permalink: /kb/201/Q201397/
 ---
 
 ## Q201397: SMSINST: Custom Dialogs May Contain Blank Controls

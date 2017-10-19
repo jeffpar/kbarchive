@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101173: Files Modified by Workgroup Connections Setup Program"
-permalink: kb/101/Q101173/
+permalink: /kb/101/Q101173/
 ---
 
 ## Q101173: Files Modified by Workgroup Connections Setup Program

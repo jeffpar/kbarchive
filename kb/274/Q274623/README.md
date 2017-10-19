@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274623: PRB: W2K Help System Update Breaks Install of MSDN Library"
-permalink: kb/274/Q274623/
+permalink: /kb/274/Q274623/
 ---
 
 ## Q274623: PRB: W2K Help System Update Breaks Install of MSDN Library

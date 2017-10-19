@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135115: PRB: VAL() Does Not Return Error When Number Is Out of Range"
-permalink: kb/135/Q135115/
+permalink: /kb/135/Q135115/
 ---
 
 ## Q135115: PRB: VAL() Does Not Return Error When Number Is Out of Range

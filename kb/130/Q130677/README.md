@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130677: TCP/IP Generates Frames with Loopback Address as Source Address"
-permalink: kb/130/Q130677/
+permalink: /kb/130/Q130677/
 ---
 
 ## Q130677: TCP/IP Generates Frames with Loopback Address as Source Address

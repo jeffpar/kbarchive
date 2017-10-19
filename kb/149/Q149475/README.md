@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149475: Unable to Start Services Using User Account"
-permalink: kb/149/Q149475/
+permalink: /kb/149/Q149475/
 ---
 
 ## Q149475: Unable to Start Services Using User Account

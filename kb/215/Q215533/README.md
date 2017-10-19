@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215533: XADM: Directory Export Sends OBJ-DIST-NAME Instead of Directory"
-permalink: kb/215/Q215533/
+permalink: /kb/215/Q215533/
 ---
 
 ## Q215533: XADM: Directory Export Sends OBJ-DIST-NAME Instead of Directory

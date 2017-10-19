@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138664: DOC: GetClientRect() May Assert in OLE Controls"
-permalink: kb/138/Q138664/
+permalink: /kb/138/Q138664/
 ---
 
 ## Q138664: DOC: GetClientRect() May Assert in OLE Controls

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222553: XFOR: IMC Events 4020, 4007 with Error 10048"
-permalink: kb/222/Q222553/
+permalink: /kb/222/Q222553/
 ---
 
 ## Q222553: XFOR: IMC Events 4020, 4007 with Error 10048

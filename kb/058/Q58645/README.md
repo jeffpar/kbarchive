@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58645: UB Drivers Specified in LANMAN.INI/AUTOEXEC.BAT Truncated"
-permalink: kb/058/Q58645/
+permalink: /kb/058/Q58645/
 ---
 
 ## Q58645: UB Drivers Specified in LANMAN.INI/AUTOEXEC.BAT Truncated

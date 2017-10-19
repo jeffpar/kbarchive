@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136644: Icon Spacing Not Updated Using Large Icons in Microsoft Plus!"
-permalink: kb/136/Q136644/
+permalink: /kb/136/Q136644/
 ---
 
 ## Q136644: Icon Spacing Not Updated Using Large Icons in Microsoft Plus!

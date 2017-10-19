@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165406: WD97: HTML Page w/Style Tag Doesn't Display in Internet Explorer"
-permalink: kb/165/Q165406/
+permalink: /kb/165/Q165406/
 ---
 
 ## Q165406: WD97: HTML Page w/Style Tag Doesn't Display in Internet Explorer

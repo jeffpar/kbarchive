@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139954: PRB: Unable to Run Setup Wizard From Shared Network Install"
-permalink: kb/139/Q139954/
+permalink: /kb/139/Q139954/
 ---
 
 ## Q139954: PRB: Unable to Run Setup Wizard From Shared Network Install

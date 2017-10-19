@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128532: FPNW: The Bindery Library Could Not Access the PDC for Write"
-permalink: kb/128/Q128532/
+permalink: /kb/128/Q128532/
 ---
 
 ## Q128532: FPNW: The Bindery Library Could Not Access the PDC for Write

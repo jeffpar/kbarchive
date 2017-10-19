@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237798: BUG: SSRESTOR Fails with &quot;Error reading from file&quot;"
-permalink: kb/237/Q237798/
+permalink: /kb/237/Q237798/
 ---
 
 ## Q237798: BUG: SSRESTOR Fails with &quot;Error reading from file&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99718: SMTP: Determining Total Time-Out Period with -Q and -W"
-permalink: kb/099/Q99718/
+permalink: /kb/099/Q99718/
 ---
 
 ## Q99718: SMTP: Determining Total Time-Out Period with -Q and -W

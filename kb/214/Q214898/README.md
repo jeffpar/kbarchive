@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214898: SMS: PCM May Not Detect FoxPro Program Terminations"
-permalink: kb/214/Q214898/
+permalink: /kb/214/Q214898/
 ---
 
 ## Q214898: SMS: PCM May Not Detect FoxPro Program Terminations

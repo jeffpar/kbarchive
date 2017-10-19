@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124397: HP 4V, 4MV, &amp; Epson Stylus Drivers Don't Install Off Floppy Disk"
-permalink: kb/124/Q124397/
+permalink: /kb/124/Q124397/
 ---
 
 ## Q124397: HP 4V, 4MV, &amp; Epson Stylus Drivers Don't Install Off Floppy Disk

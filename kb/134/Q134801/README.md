@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134801: Help Not Available for WINS Manager Import Static Mappings"
-permalink: kb/134/Q134801/
+permalink: /kb/134/Q134801/
 ---
 
 ## Q134801: Help Not Available for WINS Manager Import Static Mappings

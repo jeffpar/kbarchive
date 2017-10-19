@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201084: XFOR: Error 'C1030B35' Configuring Exchange as DirSync Requestor"
-permalink: kb/201/Q201084/
+permalink: /kb/201/Q201084/
 ---
 
 ## Q201084: XFOR: Error 'C1030B35' Configuring Exchange as DirSync Requestor

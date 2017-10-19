@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195551: PRB: SP4 Detects BackOffice Small Business Server"
-permalink: kb/195/Q195551/
+permalink: /kb/195/Q195551/
 ---
 
 ## Q195551: PRB: SP4 Detects BackOffice Small Business Server

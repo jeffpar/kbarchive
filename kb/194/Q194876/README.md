@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194876: MSN Err Msg: Modem Is Busy or Cannot Be Found"
-permalink: kb/194/Q194876/
+permalink: /kb/194/Q194876/
 ---
 
 ## Q194876: MSN Err Msg: Modem Is Busy or Cannot Be Found

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122701: RAS Clients Select the Beginning Address in Static Pool"
-permalink: kb/122/Q122701/
+permalink: /kb/122/Q122701/
 ---
 
 ## Q122701: RAS Clients Select the Beginning Address in Static Pool

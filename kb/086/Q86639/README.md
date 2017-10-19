@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86639: Norton Smartcan Beeps When Windows Deletes Files"
-permalink: kb/086/Q86639/
+permalink: /kb/086/Q86639/
 ---
 
 ## Q86639: Norton Smartcan Beeps When Windows Deletes Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110781: BUG: Window Controls Are Blank When Using Multiple Monitors"
-permalink: kb/110/Q110781/
+permalink: /kb/110/Q110781/
 ---
 
 ## Q110781: BUG: Window Controls Are Blank When Using Multiple Monitors

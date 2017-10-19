@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145673: How Much Does Pregnancy and Child Care Cost?"
-permalink: kb/145/Q145673/
+permalink: /kb/145/Q145673/
 ---
 
 ## Q145673: How Much Does Pregnancy and Child Care Cost?

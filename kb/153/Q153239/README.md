@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153239: BUG: Multiple CRichEditView::PrintInsideRect's Are Distorted"
-permalink: kb/153/Q153239/
+permalink: /kb/153/Q153239/
 ---
 
 ## Q153239: BUG: Multiple CRichEditView::PrintInsideRect's Are Distorted

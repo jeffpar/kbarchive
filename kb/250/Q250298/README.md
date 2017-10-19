@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250298: Computer Hangs When You Add Input Locales in Regional Options"
-permalink: kb/250/Q250298/
+permalink: /kb/250/Q250298/
 ---
 
 ## Q250298: Computer Hangs When You Add Input Locales in Regional Options

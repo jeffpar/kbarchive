@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161669: WD97: Can't Open Selected Doc Using Dialogs FileFind Constant"
-permalink: kb/161/Q161669/
+permalink: /kb/161/Q161669/
 ---
 
 ## Q161669: WD97: Can't Open Selected Doc Using Dialogs FileFind Constant

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229769: How Discovery Data Manager Determines When to Generate a CCR"
-permalink: kb/229/Q229769/
+permalink: /kb/229/Q229769/
 ---
 
 ## Q229769: How Discovery Data Manager Determines When to Generate a CCR

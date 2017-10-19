@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164278: FP: Error Installing FP Server Extensions if Directory Mapped"
-permalink: kb/164/Q164278/
+permalink: /kb/164/Q164278/
 ---
 
 ## Q164278: FP: Error Installing FP Server Extensions if Directory Mapped

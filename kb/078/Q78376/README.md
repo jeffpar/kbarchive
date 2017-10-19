@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78376: Paradise 8514/A Combo and Windows Needs EMMEXCLUDE"
-permalink: kb/078/Q78376/
+permalink: /kb/078/Q78376/
 ---
 
 ## Q78376: Paradise 8514/A Combo and Windows Needs EMMEXCLUDE

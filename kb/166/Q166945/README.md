@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166945: DocErr: Microsoft BackOffice Resource Kit"
-permalink: kb/166/Q166945/
+permalink: /kb/166/Q166945/
 ---
 
 ## Q166945: DocErr: Microsoft BackOffice Resource Kit

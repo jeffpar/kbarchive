@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160511: Regsec.exe Gives Strange Results for Non-Administrator"
-permalink: kb/160/Q160511/
+permalink: /kb/160/Q160511/
 ---
 
 ## Q160511: Regsec.exe Gives Strange Results for Non-Administrator

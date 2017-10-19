@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191503: FIX: Unexpected Results Display With Input Mask"
-permalink: kb/191/Q191503/
+permalink: /kb/191/Q191503/
 ---
 
 ## Q191503: FIX: Unexpected Results Display With Input Mask

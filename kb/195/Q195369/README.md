@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195369: WD97: Plus Sign Causes Incorrect Result in Formula"
-permalink: kb/195/Q195369/
+permalink: /kb/195/Q195369/
 ---
 
 ## Q195369: WD97: Plus Sign Causes Incorrect Result in Formula

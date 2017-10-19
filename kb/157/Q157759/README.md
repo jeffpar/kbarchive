@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157759: FIX: Calendar Control Help File Contains an Invalid Jump"
-permalink: kb/157/Q157759/
+permalink: /kb/157/Q157759/
 ---
 
 ## Q157759: FIX: Calendar Control Help File Contains an Invalid Jump

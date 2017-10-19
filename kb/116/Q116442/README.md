@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116442: BUG: C1001 Generated Using typedef for Member Functions"
-permalink: kb/116/Q116442/
+permalink: /kb/116/Q116442/
 ---
 
 ## Q116442: BUG: C1001 Generated Using typedef for Member Functions

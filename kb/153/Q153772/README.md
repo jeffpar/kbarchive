@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153772: Bookshelf Err Msg: ACME Setup Caused a GP Fault in VER.DLL"
-permalink: kb/153/Q153772/
+permalink: /kb/153/Q153772/
 ---
 
 ## Q153772: Bookshelf Err Msg: ACME Setup Caused a GP Fault in VER.DLL

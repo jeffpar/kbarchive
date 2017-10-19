@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197870: XFOR: Exchange Notes Connector Stops on Corrupted Message"
-permalink: kb/197/Q197870/
+permalink: /kb/197/Q197870/
 ---
 
 ## Q197870: XFOR: Exchange Notes Connector Stops on Corrupted Message

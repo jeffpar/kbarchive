@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177601: Microsoft File and Print Services for NetWare Readme.txt"
-permalink: kb/177/Q177601/
+permalink: /kb/177/Q177601/
 ---
 
 ## Q177601: Microsoft File and Print Services for NetWare Readme.txt

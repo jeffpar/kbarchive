@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150488: 3D Movie Maker: How to Record Sounds and/or Dialog"
-permalink: kb/150/Q150488/
+permalink: /kb/150/Q150488/
 ---
 
 ## Q150488: 3D Movie Maker: How to Record Sounds and/or Dialog

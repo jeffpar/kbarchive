@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198990: SMSINST: Cannot View Large Script Completely in 16-bit Installer"
-permalink: kb/198/Q198990/
+permalink: /kb/198/Q198990/
 ---
 
 ## Q198990: SMSINST: Cannot View Large Script Completely in 16-bit Installer

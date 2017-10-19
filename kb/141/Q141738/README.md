@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141738: FIX: Report Form to ASCII Truncates Data After Page 11&quot; Mark"
-permalink: kb/141/Q141738/
+permalink: /kb/141/Q141738/
 ---
 
 ## Q141738: FIX: Report Form to ASCII Truncates Data After Page 11&quot; Mark

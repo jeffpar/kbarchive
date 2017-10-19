@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82436: DynaComm Elite Version 3.2 Hangs in Standard Mode"
-permalink: kb/082/Q82436/
+permalink: /kb/082/Q82436/
 ---
 
 ## Q82436: DynaComm Elite Version 3.2 Hangs in Standard Mode

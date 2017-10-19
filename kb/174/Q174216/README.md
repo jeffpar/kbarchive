@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174216: PRB: TransparentPaint Backstyle Option Unavailable"
-permalink: kb/174/Q174216/
+permalink: /kb/174/Q174216/
 ---
 
 ## Q174216: PRB: TransparentPaint Backstyle Option Unavailable

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239916: FIX: ATL ActiveX Fails on Win95 when Hosting ActiveX Controls"
-permalink: kb/239/Q239916/
+permalink: /kb/239/Q239916/
 ---
 
 ## Q239916: FIX: ATL ActiveX Fails on Win95 when Hosting ActiveX Controls

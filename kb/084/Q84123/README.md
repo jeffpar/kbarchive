@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84123: V7VGA.DRV Not Updated in Windows 3.1 Upgrade"
-permalink: kb/084/Q84123/
+permalink: /kb/084/Q84123/
 ---
 
 ## Q84123: V7VGA.DRV Not Updated in Windows 3.1 Upgrade

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164573: SNA Manager Traps When Deleting Symbolic Destination Name"
-permalink: kb/164/Q164573/
+permalink: /kb/164/Q164573/
 ---
 
 ## Q164573: SNA Manager Traps When Deleting Symbolic Destination Name

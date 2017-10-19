@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290620: HOWTO: Create an Alert to Automatically Generate a Dump Heap Log"
-permalink: kb/290/Q290620/
+permalink: /kb/290/Q290620/
 ---
 
 ## Q290620: HOWTO: Create an Alert to Automatically Generate a Dump Heap Log

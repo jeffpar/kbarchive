@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238665: Errors After Creating/Modifying Application, Directory, or Site"
-permalink: kb/238/Q238665/
+permalink: /kb/238/Q238665/
 ---
 
 ## Q238665: Errors After Creating/Modifying Application, Directory, or Site

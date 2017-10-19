@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194113: ErrMsg: Microsoft Internet Explorer 4.0 Setup - Some Services..."
-permalink: kb/194/Q194113/
+permalink: /kb/194/Q194113/
 ---
 
 ## Q194113: ErrMsg: Microsoft Internet Explorer 4.0 Setup - Some Services...

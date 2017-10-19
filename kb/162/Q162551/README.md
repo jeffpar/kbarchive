@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162551: FIX: TOBROWSER Error when Closing Class Browser Window"
-permalink: kb/162/Q162551/
+permalink: /kb/162/Q162551/
 ---
 
 ## Q162551: FIX: TOBROWSER Error when Closing Class Browser Window

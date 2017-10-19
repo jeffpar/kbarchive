@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150343: Error Writing to Port in AutoCAD"
-permalink: kb/150/Q150343/
+permalink: /kb/150/Q150343/
 ---
 
 ## Q150343: Error Writing to Port in AutoCAD

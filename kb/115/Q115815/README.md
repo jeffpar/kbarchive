@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115815: How to Use the Backslash Character in AppleScript Script"
-permalink: kb/115/Q115815/
+permalink: /kb/115/Q115815/
 ---
 
 ## Q115815: How to Use the Backslash Character in AppleScript Script

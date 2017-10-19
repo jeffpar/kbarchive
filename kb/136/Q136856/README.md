@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136856: Classes You Can Create in Code but Not a Designer &amp; Vice Versa"
-permalink: kb/136/Q136856/
+permalink: /kb/136/Q136856/
 ---
 
 ## Q136856: Classes You Can Create in Code but Not a Designer &amp; Vice Versa

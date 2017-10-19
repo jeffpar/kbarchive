@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173992: HOWTO: Uninstall VFP Application Installed by Setup Wizard"
-permalink: kb/173/Q173992/
+permalink: /kb/173/Q173992/
 ---
 
 ## Q173992: HOWTO: Uninstall VFP Application Installed by Setup Wizard

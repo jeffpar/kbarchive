@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274426: Windows 2000 Security Technical Reference Comments And Correctio"
-permalink: kb/274/Q274426/
+permalink: /kb/274/Q274426/
 ---
 
 ## Q274426: Windows 2000 Security Technical Reference Comments And Correctio

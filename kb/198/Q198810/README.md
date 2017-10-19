@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198810: XWEB: Mail Doesn't Get Sent to Contacts w/SMTP in E-mail Address"
-permalink: kb/198/Q198810/
+permalink: /kb/198/Q198810/
 ---
 
 ## Q198810: XWEB: Mail Doesn't Get Sent to Contacts w/SMTP in E-mail Address

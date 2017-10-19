@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147870: 3D Movie Maker: Program Hangs When Playing MIDI"
-permalink: kb/147/Q147870/
+permalink: /kb/147/Q147870/
 ---
 
 ## Q147870: 3D Movie Maker: Program Hangs When Playing MIDI

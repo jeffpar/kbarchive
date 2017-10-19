@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126395: Ways to Increase the Number of AS/400 LU6.2 Sessions"
-permalink: kb/126/Q126395/
+permalink: /kb/126/Q126395/
 ---
 
 ## Q126395: Ways to Increase the Number of AS/400 LU6.2 Sessions

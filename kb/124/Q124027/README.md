@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124027: Changing Focus from QuickWin Using the Windows API"
-permalink: kb/124/Q124027/
+permalink: /kb/124/Q124027/
 ---
 
 ## Q124027: Changing Focus from QuickWin Using the Windows API

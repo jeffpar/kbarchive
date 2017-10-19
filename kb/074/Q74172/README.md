@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74172: Beep in PWB 1.0 and 1.1 Cannot Be Controlled By User"
-permalink: kb/074/Q74172/
+permalink: /kb/074/Q74172/
 ---
 
 ## Q74172: Beep in PWB 1.0 and 1.1 Cannot Be Controlled By User

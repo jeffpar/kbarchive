@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279335: Cannot Add the Same Workstation Restrictions to Multiple TN3270"
-permalink: kb/279/Q279335/
+permalink: /kb/279/Q279335/
 ---
 
 ## Q279335: Cannot Add the Same Workstation Restrictions to Multiple TN3270

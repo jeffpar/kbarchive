@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133338: Automating DLC Installation"
-permalink: kb/133/Q133338/
+permalink: /kb/133/Q133338/
 ---
 
 ## Q133338: Automating DLC Installation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141169: Writer: Cannot Apply Backgrounds in Writing Studio"
-permalink: kb/141/Q141169/
+permalink: /kb/141/Q141169/
 ---
 
 ## Q141169: Writer: Cannot Apply Backgrounds in Writing Studio

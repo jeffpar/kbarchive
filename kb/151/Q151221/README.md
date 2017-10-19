@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151221: How Remote Control Registers with WINS Server"
-permalink: kb/151/Q151221/
+permalink: /kb/151/Q151221/
 ---
 
 ## Q151221: How Remote Control Registers with WINS Server

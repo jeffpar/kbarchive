@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82268: PC Win: Meeting Request Subject Incorrect in Shared Folder"
-permalink: kb/082/Q82268/
+permalink: /kb/082/Q82268/
 ---
 
 ## Q82268: PC Win: Meeting Request Subject Incorrect in Shared Folder

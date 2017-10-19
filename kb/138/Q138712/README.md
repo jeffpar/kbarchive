@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138712: Command Window Does Not Close When TSR Issues INT5c For DLC"
-permalink: kb/138/Q138712/
+permalink: /kb/138/Q138712/
 ---
 
 ## Q138712: Command Window Does Not Close When TSR Issues INT5c For DLC

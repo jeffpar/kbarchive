@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251413: XADM: How to Export the Directory Schema"
-permalink: kb/251/Q251413/
+permalink: /kb/251/Q251413/
 ---
 
 ## Q251413: XADM: How to Export the Directory Schema

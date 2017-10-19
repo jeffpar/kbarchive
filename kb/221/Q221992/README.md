@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221992: HOWTO: Add Support for Hosting VBScript to Your MFC Application"
-permalink: kb/221/Q221992/
+permalink: /kb/221/Q221992/
 ---
 
 ## Q221992: HOWTO: Add Support for Hosting VBScript to Your MFC Application

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122259: FIX: ClassWizard Reports Invalid Filename When Importing Class"
-permalink: kb/122/Q122259/
+permalink: /kb/122/Q122259/
 ---
 
 ## Q122259: FIX: ClassWizard Reports Invalid Filename When Importing Class

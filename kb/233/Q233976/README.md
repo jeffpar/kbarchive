@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233976: Cannot Retrieve UserName Property in Windows Script Host"
-permalink: kb/233/Q233976/
+permalink: /kb/233/Q233976/
 ---
 
 ## Q233976: Cannot Retrieve UserName Property in Windows Script Host

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68133: Primage Daisy-Wheel Printers and Windows 3.00"
-permalink: kb/068/Q68133/
+permalink: /kb/068/Q68133/
 ---
 
 ## Q68133: Primage Daisy-Wheel Printers and Windows 3.00

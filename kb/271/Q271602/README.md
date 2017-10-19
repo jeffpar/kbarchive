@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271602: SMS: MSI Packages May Not Work When Distributed by SMS"
-permalink: kb/271/Q271602/
+permalink: /kb/271/Q271602/
 ---
 
 ## Q271602: SMS: MSI Packages May Not Work When Distributed by SMS

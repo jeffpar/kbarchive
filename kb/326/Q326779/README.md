@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326779: Supported IIS Configurations for Use with Sysprep"
-permalink: kb/326/Q326779/
+permalink: /kb/326/Q326779/
 ---
 
 ## Q326779: Supported IIS Configurations for Use with Sysprep

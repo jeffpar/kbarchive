@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152870: XADM: Event 2024 Logged When Not Necessary"
-permalink: kb/152/Q152870/
+permalink: /kb/152/Q152870/
 ---
 
 ## Q152870: XADM: Event 2024 Logged When Not Necessary

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263702: XFOR: Service Pack Update Does Not Upgrade All Connectors"
-permalink: kb/263/Q263702/
+permalink: /kb/263/Q263702/
 ---
 
 ## Q263702: XFOR: Service Pack Update Does Not Upgrade All Connectors

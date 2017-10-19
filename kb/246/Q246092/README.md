@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246092: XADM: How to Modify Outlook LDAP for Foreign Systems"
-permalink: kb/246/Q246092/
+permalink: /kb/246/Q246092/
 ---
 
 ## Q246092: XADM: How to Modify Outlook LDAP for Foreign Systems

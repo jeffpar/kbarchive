@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95704: PRB: ? Command Drops Carriage Return/Linefeed"
-permalink: kb/095/Q95704/
+permalink: /kb/095/Q95704/
 ---
 
 ## Q95704: PRB: ? Command Drops Carriage Return/Linefeed

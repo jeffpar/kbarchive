@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295281: HowTo Renew/Create New CSR While Another Certificate Installed"
-permalink: kb/295/Q295281/
+permalink: /kb/295/Q295281/
 ---
 
 ## Q295281: HowTo Renew/Create New CSR While Another Certificate Installed

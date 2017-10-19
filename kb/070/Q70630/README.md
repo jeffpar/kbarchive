@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70630: Availability of Dithered Colors from the Control Panel"
-permalink: kb/070/Q70630/
+permalink: /kb/070/Q70630/
 ---
 
 ## Q70630: Availability of Dithered Colors from the Control Panel

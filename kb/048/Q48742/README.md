@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48742: Mac DOS: Requirements for Mail and TOPS/DOS 2.1"
-permalink: kb/048/Q48742/
+permalink: /kb/048/Q48742/
 ---
 
 ## Q48742: Mac DOS: Requirements for Mail and TOPS/DOS 2.1

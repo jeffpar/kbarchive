@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152136: HOWTO: Know if Large/Small Font Is in Use Under Win95/98/Me/NT"
-permalink: kb/152/Q152136/
+permalink: /kb/152/Q152136/
 ---
 
 ## Q152136: HOWTO: Know if Large/Small Font Is in Use Under Win95/98/Me/NT

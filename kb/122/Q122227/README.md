@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122227: FIX: Incremental Link Fails to Change the Subsystem Version"
-permalink: kb/122/Q122227/
+permalink: /kb/122/Q122227/
 ---
 
 ## Q122227: FIX: Incremental Link Fails to Change the Subsystem Version

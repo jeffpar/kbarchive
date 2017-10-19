@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311184: HOW TO: Perform Security Planning for IIS 5.0"
-permalink: kb/311/Q311184/
+permalink: /kb/311/Q311184/
 ---
 
 ## Q311184: HOW TO: Perform Security Planning for IIS 5.0

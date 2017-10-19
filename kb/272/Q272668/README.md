@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272668: Golf 2001: Game Does Not Start"
-permalink: kb/272/Q272668/
+permalink: /kb/272/Q272668/
 ---
 
 ## Q272668: Golf 2001: Game Does Not Start

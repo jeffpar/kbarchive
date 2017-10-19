@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181891: BUG: OLE Drag Disabled When ListBox Has Multiple Columns"
-permalink: kb/181/Q181891/
+permalink: /kb/181/Q181891/
 ---
 
 ## Q181891: BUG: OLE Drag Disabled When ListBox Has Multiple Columns

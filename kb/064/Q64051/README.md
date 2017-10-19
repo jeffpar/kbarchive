@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64051: Stopping Winpopup Can Produce Unpredictable Results"
-permalink: kb/064/Q64051/
+permalink: /kb/064/Q64051/
 ---
 
 ## Q64051: Stopping Winpopup Can Produce Unpredictable Results

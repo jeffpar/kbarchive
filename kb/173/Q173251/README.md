@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173251: Running Outlook 97  CD Will not Load with IE 4.0 Beta"
-permalink: kb/173/Q173251/
+permalink: /kb/173/Q173251/
 ---
 
 ## Q173251: Running Outlook 97  CD Will not Load with IE 4.0 Beta

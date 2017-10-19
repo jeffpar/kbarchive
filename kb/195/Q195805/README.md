@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195805: XWEB: 24-Hour Clock does not Convert 2359 Hours Correctly in OWA"
-permalink: kb/195/Q195805/
+permalink: /kb/195/Q195805/
 ---
 
 ## Q195805: XWEB: 24-Hour Clock does not Convert 2359 Hours Correctly in OWA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234888: Cannot Install &quot;Character Map&quot; in Add/Remove Programs"
-permalink: kb/234/Q234888/
+permalink: /kb/234/Q234888/
 ---
 
 ## Q234888: Cannot Install &quot;Character Map&quot; in Add/Remove Programs

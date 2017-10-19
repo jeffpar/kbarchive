@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179558: WD97: Tab Stop Count Returns Incorrect Count"
-permalink: kb/179/Q179558/
+permalink: /kb/179/Q179558/
 ---
 
 ## Q179558: WD97: Tab Stop Count Returns Incorrect Count

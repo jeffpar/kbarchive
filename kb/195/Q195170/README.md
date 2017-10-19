@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195170: SNA Server Sends an Incorrect Sequence Number in BIND Response"
-permalink: kb/195/Q195170/
+permalink: /kb/195/Q195170/
 ---
 
 ## Q195170: SNA Server Sends an Incorrect Sequence Number in BIND Response

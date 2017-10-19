@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153793: How To Check for a Remote Access Service Connection"
-permalink: kb/153/Q153793/
+permalink: /kb/153/Q153793/
 ---
 
 ## Q153793: How To Check for a Remote Access Service Connection

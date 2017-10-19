@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264630: SMS 2.0 SP1 and SP2 Interoperability Issues Without Updates"
-permalink: kb/264/Q264630/
+permalink: /kb/264/Q264630/
 ---
 
 ## Q264630: SMS 2.0 SP1 and SP2 Interoperability Issues Without Updates

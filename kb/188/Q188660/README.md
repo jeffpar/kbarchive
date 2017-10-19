@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188660: PRB: Troubleshooting Active Movie Problems in Mastering Series"
-permalink: kb/188/Q188660/
+permalink: /kb/188/Q188660/
 ---
 
 ## Q188660: PRB: Troubleshooting Active Movie Problems in Mastering Series

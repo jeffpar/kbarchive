@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321775: Error Loading Gdi.exe Connecting to Terminal Server"
-permalink: kb/321/Q321775/
+permalink: /kb/321/Q321775/
 ---
 
 ## Q321775: Error Loading Gdi.exe Connecting to Terminal Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154110: Mastering Visual C++: Windows 95 Registry Entries"
-permalink: kb/154/Q154110/
+permalink: /kb/154/Q154110/
 ---
 
 ## Q154110: Mastering Visual C++: Windows 95 Registry Entries

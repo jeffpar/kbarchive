@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149411: Using Append.exe with Windows 95"
-permalink: kb/149/Q149411/
+permalink: /kb/149/Q149411/
 ---
 
 ## Q149411: Using Append.exe with Windows 95

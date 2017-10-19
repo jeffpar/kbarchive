@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150883: XCLN: Error 0x1b5a During ChangePasswordOnPDC"
-permalink: kb/150/Q150883/
+permalink: /kb/150/Q150883/
 ---
 
 ## Q150883: XCLN: Error 0x1b5a During ChangePasswordOnPDC

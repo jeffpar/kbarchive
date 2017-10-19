@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172421: Verisign Certificate Password Not Accepted in Key Manager"
-permalink: kb/172/Q172421/
+permalink: /kb/172/Q172421/
 ---
 
 ## Q172421: Verisign Certificate Password Not Accepted in Key Manager

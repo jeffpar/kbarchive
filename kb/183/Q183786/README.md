@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183786: TN3270 Server Keeps SNA Session Open When TN3270 Client Rebooted"
-permalink: kb/183/Q183786/
+permalink: /kb/183/Q183786/
 ---
 
 ## Q183786: TN3270 Server Keeps SNA Session Open When TN3270 Client Rebooted

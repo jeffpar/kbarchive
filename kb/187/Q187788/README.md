@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187788: BUG: &quot;No Result&quot; Error Saving Oracle Parameterized View"
-permalink: kb/187/Q187788/
+permalink: /kb/187/Q187788/
 ---
 
 ## Q187788: BUG: &quot;No Result&quot; Error Saving Oracle Parameterized View

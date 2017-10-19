@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168934: FIX: Multiple Errors Compiling Std C++ Library Headers with /Za"
-permalink: kb/168/Q168934/
+permalink: /kb/168/Q168934/
 ---
 
 ## Q168934: FIX: Multiple Errors Compiling Std C++ Library Headers with /Za

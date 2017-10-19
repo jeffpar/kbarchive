@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196542: WD97: Edit Find/Replace Doesn't Find Text Formatted as All Caps"
-permalink: kb/196/Q196542/
+permalink: /kb/196/Q196542/
 ---
 
 ## Q196542: WD97: Edit Find/Replace Doesn't Find Text Formatted as All Caps

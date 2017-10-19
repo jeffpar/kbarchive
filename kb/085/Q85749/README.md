@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85749: WRK Translation Buffer Information Is Incorrect"
-permalink: kb/085/Q85749/
+permalink: /kb/085/Q85749/
 ---
 
 ## Q85749: WRK Translation Buffer Information Is Incorrect

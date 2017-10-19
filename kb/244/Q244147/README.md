@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244147: FS2000: Aircraft and Building Shadows Are Not Displayed"
-permalink: kb/244/Q244147/
+permalink: /kb/244/Q244147/
 ---
 
 ## Q244147: FS2000: Aircraft and Building Shadows Are Not Displayed

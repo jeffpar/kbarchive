@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112287: PC WFW: Err Msg: This PostOffice Cannot Be Updated..."
-permalink: kb/112/Q112287/
+permalink: /kb/112/Q112287/
 ---
 
 ## Q112287: PC WFW: Err Msg: This PostOffice Cannot Be Updated...

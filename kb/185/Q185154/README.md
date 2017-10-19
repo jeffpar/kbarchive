@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185154: XCON: Cannot Start Exchange MTA Service With Error 2140"
-permalink: kb/185/Q185154/
+permalink: /kb/185/Q185154/
 ---
 
 ## Q185154: XCON: Cannot Start Exchange MTA Service With Error 2140

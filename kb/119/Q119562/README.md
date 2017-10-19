@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119562: PC Forms: Working with Multiple-Selection List Boxes"
-permalink: kb/119/Q119562/
+permalink: /kb/119/Q119562/
 ---
 
 ## Q119562: PC Forms: Working with Multiple-Selection List Boxes

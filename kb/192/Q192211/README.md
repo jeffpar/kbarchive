@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192211: PRB: Controls Not Getting Focus After Clicking IE Address Area"
-permalink: kb/192/Q192211/
+permalink: /kb/192/Q192211/
 ---
 
 ## Q192211: PRB: Controls Not Getting Focus After Clicking IE Address Area

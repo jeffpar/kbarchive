@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290051: HOWTO: Determine If SSL Connectivity Is Failing on the WebServer"
-permalink: kb/290/Q290051/
+permalink: /kb/290/Q290051/
 ---
 
 ## Q290051: HOWTO: Determine If SSL Connectivity Is Failing on the WebServer

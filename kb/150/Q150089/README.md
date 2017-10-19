@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150089: InstallShield3 Closes Connection Prematurely"
-permalink: kb/150/Q150089/
+permalink: /kb/150/Q150089/
 ---
 
 ## Q150089: InstallShield3 Closes Connection Prematurely

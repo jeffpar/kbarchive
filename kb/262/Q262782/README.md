@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262782: XIMS: Unable to Reach a Particular Host Using Domain Name System"
-permalink: kb/262/Q262782/
+permalink: /kb/262/Q262782/
 ---
 
 ## Q262782: XIMS: Unable to Reach a Particular Host Using Domain Name System

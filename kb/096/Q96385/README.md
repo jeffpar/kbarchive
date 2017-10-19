@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96385: CTRL+BREAK Hangs System If Running CHKDSK with BREAK=ON Line"
-permalink: kb/096/Q96385/
+permalink: /kb/096/Q96385/
 ---
 
 ## Q96385: CTRL+BREAK Hangs System If Running CHKDSK with BREAK=ON Line

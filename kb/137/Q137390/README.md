@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137390: System Agent Does Not Detect Joystick Activity"
-permalink: kb/137/Q137390/
+permalink: /kb/137/Q137390/
 ---
 
 ## Q137390: System Agent Does Not Detect Joystick Activity

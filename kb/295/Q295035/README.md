@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295035: SMS: Charting in Web Reporting Tool Requires Office Run Locally"
-permalink: kb/295/Q295035/
+permalink: /kb/295/Q295035/
 ---
 
 ## Q295035: SMS: Charting in Web Reporting Tool Requires Office Run Locally

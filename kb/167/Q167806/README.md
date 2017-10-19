@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167806: Explanation of Advanced Options in WINS Manager"
-permalink: kb/167/Q167806/
+permalink: /kb/167/Q167806/
 ---
 
 ## Q167806: Explanation of Advanced Options in WINS Manager

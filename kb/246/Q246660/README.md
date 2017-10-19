@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246660: PRB: Certain Commands &amp; Functions Removed from Visual FoxPro ODB"
-permalink: kb/246/Q246660/
+permalink: /kb/246/Q246660/
 ---
 
 ## Q246660: PRB: Certain Commands &amp; Functions Removed from Visual FoxPro ODB

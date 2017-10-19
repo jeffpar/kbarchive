@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140566: FIX: Click Event Of Straight Line Not Firing"
-permalink: kb/140/Q140566/
+permalink: /kb/140/Q140566/
 ---
 
 ## Q140566: FIX: Click Event Of Straight Line Not Firing

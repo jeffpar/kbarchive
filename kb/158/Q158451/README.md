@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158451: HOWTO: How To Call Automation Methods with Variable Argument Lis"
-permalink: kb/158/Q158451/
+permalink: /kb/158/Q158451/
 ---
 
 ## Q158451: HOWTO: How To Call Automation Methods with Variable Argument Lis

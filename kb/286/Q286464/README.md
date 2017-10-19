@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286464: PRB: Error 7008 Occurs When Using DB2OLEDB Provider with DB2/400"
-permalink: kb/286/Q286464/
+permalink: /kb/286/Q286464/
 ---
 
 ## Q286464: PRB: Error 7008 Occurs When Using DB2OLEDB Provider with DB2/400

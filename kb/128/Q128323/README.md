@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128323: PC WRmt: MCI Credit Card Calling /Modem Script"
-permalink: kb/128/Q128323/
+permalink: /kb/128/Q128323/
 ---
 
 ## Q128323: PC WRmt: MCI Credit Card Calling /Modem Script

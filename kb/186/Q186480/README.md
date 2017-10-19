@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186480: Terminal Server Commands: MSG"
-permalink: kb/186/Q186480/
+permalink: /kb/186/Q186480/
 ---
 
 ## Q186480: Terminal Server Commands: MSG

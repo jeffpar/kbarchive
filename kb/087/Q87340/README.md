@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87340: PRB: Chinese Windows Setup Prompts for Printer Driver Disk"
-permalink: kb/087/Q87340/
+permalink: /kb/087/Q87340/
 ---
 
 ## Q87340: PRB: Chinese Windows Setup Prompts for Printer Driver Disk

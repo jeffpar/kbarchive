@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258237: All Logs in ISA Server Use GMT (UTC) Times"
-permalink: kb/258/Q258237/
+permalink: /kb/258/Q258237/
 ---
 
 ## Q258237: All Logs in ISA Server Use GMT (UTC) Times

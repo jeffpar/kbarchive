@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176961: SMS: Wuser32 Fails to Initiate Administrator Quick Viewer"
-permalink: kb/176/Q176961/
+permalink: /kb/176/Q176961/
 ---
 
 ## Q176961: SMS: Wuser32 Fails to Initiate Administrator Quick Viewer

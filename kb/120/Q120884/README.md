@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120884: Setup Using SETUP.SHH File with Windows for Workgroups 3.11"
-permalink: kb/120/Q120884/
+permalink: /kb/120/Q120884/
 ---
 
 ## Q120884: Setup Using SETUP.SHH File with Windows for Workgroups 3.11

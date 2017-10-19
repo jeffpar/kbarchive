@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114582: X400: Attachments Show Up as BDYx.P00"
-permalink: kb/114/Q114582/
+permalink: /kb/114/Q114582/
 ---
 
 ## Q114582: X400: Attachments Show Up as BDYx.P00

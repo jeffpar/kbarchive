@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163184: ODE97: Setup Wizard Warning When Including ActiveX Controls"
-permalink: kb/163/Q163184/
+permalink: /kb/163/Q163184/
 ---
 
 ## Q163184: ODE97: Setup Wizard Warning When Including ActiveX Controls

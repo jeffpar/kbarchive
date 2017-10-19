@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138810: Using RASCOPY.BAT To Install Remote Access Service 1.1a"
-permalink: kb/138/Q138810/
+permalink: /kb/138/Q138810/
 ---
 
 ## Q138810: Using RASCOPY.BAT To Install Remote Access Service 1.1a

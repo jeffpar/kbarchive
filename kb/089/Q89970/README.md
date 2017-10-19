@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89970: How to Determine Interrupt, I/O, and DMA Channel Conflicts"
-permalink: kb/089/Q89970/
+permalink: /kb/089/Q89970/
 ---
 
 ## Q89970: How to Determine Interrupt, I/O, and DMA Channel Conflicts

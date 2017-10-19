@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223275: Computer Hangs Due to Large System Environment Variable Values"
-permalink: kb/223/Q223275/
+permalink: /kb/223/Q223275/
 ---
 
 ## Q223275: Computer Hangs Due to Large System Environment Variable Values

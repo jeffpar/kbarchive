@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84202: Restoring Groups in Norton Desktop for Windows"
-permalink: kb/084/Q84202/
+permalink: /kb/084/Q84202/
 ---
 
 ## Q84202: Restoring Groups in Norton Desktop for Windows

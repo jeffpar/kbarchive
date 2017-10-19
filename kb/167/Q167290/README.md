@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167290: HOWTO: Enable Visual SourceSafe Locking"
-permalink: kb/167/Q167290/
+permalink: /kb/167/Q167290/
 ---
 
 ## Q167290: HOWTO: Enable Visual SourceSafe Locking

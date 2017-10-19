@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241142: WD97: Unable to Edit OrgChart 2.0 Object"
-permalink: kb/241/Q241142/
+permalink: /kb/241/Q241142/
 ---
 
 ## Q241142: WD97: Unable to Edit OrgChart 2.0 Object

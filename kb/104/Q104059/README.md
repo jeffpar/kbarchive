@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104059: PC WSPlus: Local .CAL Misplaced Moving to Empty Floppy Drive"
-permalink: kb/104/Q104059/
+permalink: /kb/104/Q104059/
 ---
 
 ## Q104059: PC WSPlus: Local .CAL Misplaced Moving to Empty Floppy Drive

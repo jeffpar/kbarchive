@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112919: PC WSPlus: Errors Importing Data Files"
-permalink: kb/112/Q112919/
+permalink: /kb/112/Q112919/
 ---
 
 ## Q112919: PC WSPlus: Errors Importing Data Files

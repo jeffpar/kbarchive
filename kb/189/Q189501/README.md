@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189501: X.25 PU Passthrough Drops Transmission Header"
-permalink: kb/189/Q189501/
+permalink: /kb/189/Q189501/
 ---
 
 ## Q189501: X.25 PU Passthrough Drops Transmission Header

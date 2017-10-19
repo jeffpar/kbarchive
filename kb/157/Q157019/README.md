@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157019: XADM: Changing X400 Country Code Toggles Between SE and SG"
-permalink: kb/157/Q157019/
+permalink: /kb/157/Q157019/
 ---
 
 ## Q157019: XADM: Changing X400 Country Code Toggles Between SE and SG

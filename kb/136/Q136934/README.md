@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136934: Event ID 7000 and 7001 Appear When You Use HTTP and GSNW"
-permalink: kb/136/Q136934/
+permalink: /kb/136/Q136934/
 ---
 
 ## Q136934: Event ID 7000 and 7001 Appear When You Use HTTP and GSNW

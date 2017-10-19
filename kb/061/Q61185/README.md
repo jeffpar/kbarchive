@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61185: Instruction: The Loop Rear View Is Confusing"
-permalink: kb/061/Q61185/
+permalink: /kb/061/Q61185/
 ---
 
 ## Q61185: Instruction: The Loop Rear View Is Confusing

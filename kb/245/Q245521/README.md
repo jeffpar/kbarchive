@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245521: French Accented Characters Are Not Displayed in Uppercase"
-permalink: kb/245/Q245521/
+permalink: /kb/245/Q245521/
 ---
 
 ## Q245521: French Accented Characters Are Not Displayed in Uppercase

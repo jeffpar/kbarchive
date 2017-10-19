@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174332: How to Add Additional Cluster Administrators"
-permalink: kb/174/Q174332/
+permalink: /kb/174/Q174332/
 ---
 
 ## Q174332: How to Add Additional Cluster Administrators

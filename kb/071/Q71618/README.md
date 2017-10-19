@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71618: Windows Drivers for Summagraphics Digitizing Tablets"
-permalink: kb/071/Q71618/
+permalink: /kb/071/Q71618/
 ---
 
 ## Q71618: Windows Drivers for Summagraphics Digitizing Tablets

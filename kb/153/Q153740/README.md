@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153740: Debugging WINS Server Service Event ID 4179"
-permalink: kb/153/Q153740/
+permalink: /kb/153/Q153740/
 ---
 
 ## Q153740: Debugging WINS Server Service Event ID 4179

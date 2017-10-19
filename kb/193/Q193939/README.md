@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193939: HOWTO: Use a Project and File Object's SCC PEMs"
-permalink: kb/193/Q193939/
+permalink: /kb/193/Q193939/
 ---
 
 ## Q193939: HOWTO: Use a Project and File Object's SCC PEMs

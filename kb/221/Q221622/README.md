@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221622: FIX: Hang When Resizing a ToolBar With ASELOBJ at Design-Time"
-permalink: kb/221/Q221622/
+permalink: /kb/221/Q221622/
 ---
 
 ## Q221622: FIX: Hang When Resizing a ToolBar With ASELOBJ at Design-Time

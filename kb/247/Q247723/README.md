@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247723: BUG: VBCE Control Manager Only Recognizes First Control in DLL"
-permalink: kb/247/Q247723/
+permalink: /kb/247/Q247723/
 ---
 
 ## Q247723: BUG: VBCE Control Manager Only Recognizes First Control in DLL

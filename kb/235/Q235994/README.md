@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235994: How Windows NT Saves Window Size and Location Parameters"
-permalink: kb/235/Q235994/
+permalink: /kb/235/Q235994/
 ---
 
 ## Q235994: How Windows NT Saves Window Size and Location Parameters

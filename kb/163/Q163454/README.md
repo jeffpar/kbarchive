@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163454: PRB: Problem Using Visual C++ v4.2b OLE Controls in VB v4.0"
-permalink: kb/163/Q163454/
+permalink: /kb/163/Q163454/
 ---
 
 ## Q163454: PRB: Problem Using Visual C++ v4.2b OLE Controls in VB v4.0

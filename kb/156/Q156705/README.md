@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156705: XADM: Site Tear-Down Causes Public Folders to be Re-homed"
-permalink: kb/156/Q156705/
+permalink: /kb/156/Q156705/
 ---
 
 ## Q156705: XADM: Site Tear-Down Causes Public Folders to be Re-homed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252297: BUG: Calling GetPageInfo Can Give Unhandled Exception"
-permalink: kb/252/Q252297/
+permalink: /kb/252/Q252297/
 ---
 
 ## Q252297: BUG: Calling GetPageInfo Can Give Unhandled Exception

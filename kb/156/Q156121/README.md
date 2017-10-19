@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156121: Manic Marbles Trial Version: Playing Field Descriptions"
-permalink: kb/156/Q156121/
+permalink: /kb/156/Q156121/
 ---
 
 ## Q156121: Manic Marbles Trial Version: Playing Field Descriptions

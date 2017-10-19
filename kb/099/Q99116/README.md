@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99116: PC WRmt: Incorrect Sorting by Subject"
-permalink: kb/099/Q99116/
+permalink: /kb/099/Q99116/
 ---
 
 ## Q99116: PC WRmt: Incorrect Sorting by Subject

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98555: NET MOVE, NET COPY, and File Permissions"
-permalink: kb/098/Q98555/
+permalink: /kb/098/Q98555/
 ---
 
 ## Q98555: NET MOVE, NET COPY, and File Permissions

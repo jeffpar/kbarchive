@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q11509: Definition of Different Types of Libraries in Windows"
-permalink: kb/011/Q11509/
+permalink: /kb/011/Q11509/
 ---
 
 ## Q11509: Definition of Different Types of Libraries in Windows

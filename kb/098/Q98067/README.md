@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98067: SMTP: Explanation of FROM Field wit"
-permalink: kb/098/Q98067/
+permalink: /kb/098/Q98067/
 ---
 
 ## Q98067: SMTP: Explanation of FROM Field wit

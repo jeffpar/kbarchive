@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117518: MS-DOS 6.22 Upgrade Directory Listings for 3.5-Inch 720K Set"
-permalink: kb/117/Q117518/
+permalink: /kb/117/Q117518/
 ---
 
 ## Q117518: MS-DOS 6.22 Upgrade Directory Listings for 3.5-Inch 720K Set

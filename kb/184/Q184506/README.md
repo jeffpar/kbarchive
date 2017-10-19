@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184506: Err Msg: MSN Requires a Previous Version of Internet Explorer"
-permalink: kb/184/Q184506/
+permalink: /kb/184/Q184506/
 ---
 
 ## Q184506: Err Msg: MSN Requires a Previous Version of Internet Explorer

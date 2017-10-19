@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131337: STOP Msg: 0x0000007B w/ Quantum Empire Drive and Adaptec 2940"
-permalink: kb/131/Q131337/
+permalink: /kb/131/Q131337/
 ---
 
 ## Q131337: STOP Msg: 0x0000007B w/ Quantum Empire Drive and Adaptec 2940

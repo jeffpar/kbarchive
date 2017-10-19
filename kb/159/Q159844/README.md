@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159844: XADM: Setup Editor Cannot Create Some Services in Default.prf"
-permalink: kb/159/Q159844/
+permalink: /kb/159/Q159844/
 ---
 
 ## Q159844: XADM: Setup Editor Cannot Create Some Services in Default.prf

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243337: PRB: Errors with Integration After Enabling P &amp; M"
-permalink: kb/243/Q243337/
+permalink: /kb/243/Q243337/
 ---
 
 ## Q243337: PRB: Errors with Integration After Enabling P &amp; M

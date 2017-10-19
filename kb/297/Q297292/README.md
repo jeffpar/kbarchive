@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297292: HOWTO: Use RegObji.exe to Copy a Registry Key Programmatically"
-permalink: kb/297/Q297292/
+permalink: /kb/297/Q297292/
 ---
 
 ## Q297292: HOWTO: Use RegObji.exe to Copy a Registry Key Programmatically

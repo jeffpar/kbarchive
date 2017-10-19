@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124882: PC Win: Err Msg: The Following Name Did Not Resolve..."
-permalink: kb/124/Q124882/
+permalink: /kb/124/Q124882/
 ---
 
 ## Q124882: PC Win: Err Msg: The Following Name Did Not Resolve...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129735: When You Paste to FIND, 500 Nations Jumps to Northeast Nations"
-permalink: kb/129/Q129735/
+permalink: /kb/129/Q129735/
 ---
 
 ## Q129735: When You Paste to FIND, 500 Nations Jumps to Northeast Nations

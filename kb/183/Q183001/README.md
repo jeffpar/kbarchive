@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183001: Retrieving Output Parameters From Stored Procedure"
-permalink: kb/183/Q183001/
+permalink: /kb/183/Q183001/
 ---
 
 ## Q183001: Retrieving Output Parameters From Stored Procedure

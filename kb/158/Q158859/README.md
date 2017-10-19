@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158859: Cannot Create Extended ASCII Characters with MouseKeys Enabled"
-permalink: kb/158/Q158859/
+permalink: /kb/158/Q158859/
 ---
 
 ## Q158859: Cannot Create Extended ASCII Characters with MouseKeys Enabled

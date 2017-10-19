@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69686: Disabling Screen Saver on Leading Edge D/LT386SX Portable"
-permalink: kb/069/Q69686/
+permalink: /kb/069/Q69686/
 ---
 
 ## Q69686: Disabling Screen Saver on Leading Edge D/LT386SX Portable

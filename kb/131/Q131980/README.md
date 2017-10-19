@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131980: PC Win: Truncated Addresses in To: Line When Printing Message"
-permalink: kb/131/Q131980/
+permalink: /kb/131/Q131980/
 ---
 
 ## Q131980: PC Win: Truncated Addresses in To: Line When Printing Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156277: Windows NT Stops When Using Matrox Millennium Driver"
-permalink: kb/156/Q156277/
+permalink: /kb/156/Q156277/
 ---
 
 ## Q156277: Windows NT Stops When Using Matrox Millennium Driver

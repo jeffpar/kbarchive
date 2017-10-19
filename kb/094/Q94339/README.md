@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94339: Using FoxPro to Check for Existence of a Directory"
-permalink: kb/094/Q94339/
+permalink: /kb/094/Q94339/
 ---
 
 ## Q94339: Using FoxPro to Check for Existence of a Directory

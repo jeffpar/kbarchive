@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198095: Combat Flight Simulator: Game Controller Does Not Work Properly"
-permalink: kb/198/Q198095/
+permalink: /kb/198/Q198095/
 ---
 
 ## Q198095: Combat Flight Simulator: Game Controller Does Not Work Properly

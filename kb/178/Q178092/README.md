@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178092: XADM: Modifying Cross-Posted Message Crashes Information Store"
-permalink: kb/178/Q178092/
+permalink: /kb/178/Q178092/
 ---
 
 ## Q178092: XADM: Modifying Cross-Posted Message Crashes Information Store

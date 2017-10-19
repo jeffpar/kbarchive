@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200769: SMS: Logon Servers Are Not Receiving Updates"
-permalink: kb/200/Q200769/
+permalink: /kb/200/Q200769/
 ---
 
 ## Q200769: SMS: Logon Servers Are Not Receiving Updates

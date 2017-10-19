@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64435: PWB Hangs When Run with Some Communication Programs"
-permalink: kb/064/Q64435/
+permalink: /kb/064/Q64435/
 ---
 
 ## Q64435: PWB Hangs When Run with Some Communication Programs

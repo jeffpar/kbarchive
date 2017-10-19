@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99075: NWLink--Network Numbers, and &quot;Seeing&quot; Netware File"
-permalink: kb/099/Q99075/
+permalink: /kb/099/Q99075/
 ---
 
 ## Q99075: NWLink--Network Numbers, and &quot;Seeing&quot; Netware File

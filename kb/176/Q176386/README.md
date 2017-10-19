@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176386: Cinemania: No Sound When You Play Film Clips"
-permalink: kb/176/Q176386/
+permalink: /kb/176/Q176386/
 ---
 
 ## Q176386: Cinemania: No Sound When You Play Film Clips

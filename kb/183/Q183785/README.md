@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183785: FP: How to Play Background Sound in Netscape Navigator"
-permalink: kb/183/Q183785/
+permalink: /kb/183/Q183785/
 ---
 
 ## Q183785: FP: How to Play Background Sound in Netscape Navigator

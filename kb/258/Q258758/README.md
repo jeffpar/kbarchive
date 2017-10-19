@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258758: XADM: Understanding How and When Mailbox Manager Processes Items"
-permalink: kb/258/Q258758/
+permalink: /kb/258/Q258758/
 ---
 
 ## Q258758: XADM: Understanding How and When Mailbox Manager Processes Items

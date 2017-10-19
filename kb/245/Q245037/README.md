@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245037: Exchange MA May Not Run When Zoomit Starts with Local System"
-permalink: kb/245/Q245037/
+permalink: /kb/245/Q245037/
 ---
 
 ## Q245037: Exchange MA May Not Run When Zoomit Starts with Local System

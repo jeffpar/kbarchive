@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235507: FIX: DAO 3.6 Causes Debug Errors in MFC DAO Non-Unicode Builds"
-permalink: kb/235/Q235507/
+permalink: /kb/235/Q235507/
 ---
 
 ## Q235507: FIX: DAO 3.6 Causes Debug Errors in MFC DAO Non-Unicode Builds

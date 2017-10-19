@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107669: Writer: Speller Does Not Spell Check Document"
-permalink: kb/107/Q107669/
+permalink: /kb/107/Q107669/
 ---
 
 ## Q107669: Writer: Speller Does Not Spell Check Document

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323756: Redirection Response Contains Garbage Characters with Long URL"
-permalink: kb/323/Q323756/
+permalink: /kb/323/Q323756/
 ---
 
 ## Q323756: Redirection Response Contains Garbage Characters with Long URL

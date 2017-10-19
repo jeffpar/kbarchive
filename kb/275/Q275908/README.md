@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275908: COMTI: Need to Define a Decimal Data Type w/ More Than 18 Digits"
-permalink: kb/275/Q275908/
+permalink: /kb/275/Q275908/
 ---
 
 ## Q275908: COMTI: Need to Define a Decimal Data Type w/ More Than 18 Digits

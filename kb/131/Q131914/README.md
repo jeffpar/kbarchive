@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131914: PC Gen: Using the DEC Redirector Slows Mail"
-permalink: kb/131/Q131914/
+permalink: /kb/131/Q131914/
 ---
 
 ## Q131914: PC Gen: Using the DEC Redirector Slows Mail

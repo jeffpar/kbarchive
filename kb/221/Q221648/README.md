@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221648: FIX: RI Code Not Selecting Right Work Area After Cascaded Delete"
-permalink: kb/221/Q221648/
+permalink: /kb/221/Q221648/
 ---
 
 ## Q221648: FIX: RI Code Not Selecting Right Work Area After Cascaded Delete

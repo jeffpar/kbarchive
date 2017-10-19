@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66054: HOWTO: Create Static Overlays with Macro Assembler"
-permalink: kb/066/Q66054/
+permalink: /kb/066/Q66054/
 ---
 
 ## Q66054: HOWTO: Create Static Overlays with Macro Assembler

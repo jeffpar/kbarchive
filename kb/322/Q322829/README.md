@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322829: XADM: Internet Mail Service Does Not Start Successfully"
-permalink: kb/322/Q322829/
+permalink: /kb/322/Q322829/
 ---
 
 ## Q322829: XADM: Internet Mail Service Does Not Start Successfully

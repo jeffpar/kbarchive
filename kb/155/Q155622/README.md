@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155622: FIX: IDE Debugger Truncates Floating Point Numbers"
-permalink: kb/155/Q155622/
+permalink: /kb/155/Q155622/
 ---
 
 ## Q155622: FIX: IDE Debugger Truncates Floating Point Numbers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259244: BUG: Internal Compiler Error C1001 When You Call &#95;&#95;assume()"
-permalink: kb/259/Q259244/
+permalink: /kb/259/Q259244/
 ---
 
 ## Q259244: BUG: Internal Compiler Error C1001 When You Call &#95;&#95;assume()

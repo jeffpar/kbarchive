@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166454: Using FDISK /MBR for Troubleshooting Windows NT Boot Problems"
-permalink: kb/166/Q166454/
+permalink: /kb/166/Q166454/
 ---
 
 ## Q166454: Using FDISK /MBR for Troubleshooting Windows NT Boot Problems

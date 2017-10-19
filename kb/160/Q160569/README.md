@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160569: SMS: Inventory &amp; Audit Differences &amp; How to Perform an Audit"
-permalink: kb/160/Q160569/
+permalink: /kb/160/Q160569/
 ---
 
 ## Q160569: SMS: Inventory &amp; Audit Differences &amp; How to Perform an Audit

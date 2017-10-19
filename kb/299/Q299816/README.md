@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299816: Train Simulator: Screen Flickers in Local Service Activity"
-permalink: kb/299/Q299816/
+permalink: /kb/299/Q299816/
 ---
 
 ## Q299816: Train Simulator: Screen Flickers in Local Service Activity

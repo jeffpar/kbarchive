@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137847: Number of Shortcuts on the Start Menu Limited"
-permalink: kb/137/Q137847/
+permalink: /kb/137/Q137847/
 ---
 
 ## Q137847: Number of Shortcuts on the Start Menu Limited

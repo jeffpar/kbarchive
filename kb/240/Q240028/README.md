@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240028: NBA Inside Drive 2000: How to Enable 3D Hardware Acceleration"
-permalink: kb/240/Q240028/
+permalink: /kb/240/Q240028/
 ---
 
 ## Q240028: NBA Inside Drive 2000: How to Enable 3D Hardware Acceleration

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180120: WD97: Word Setup Does Not Install ODBC Drivers"
-permalink: kb/180/Q180120/
+permalink: /kb/180/Q180120/
 ---
 
 ## Q180120: WD97: Word Setup Does Not Install ODBC Drivers

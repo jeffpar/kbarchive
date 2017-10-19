@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82923: Methods to Detect a Boot-Sector Virus"
-permalink: kb/082/Q82923/
+permalink: /kb/082/Q82923/
 ---
 
 ## Q82923: Methods to Detect a Boot-Sector Virus

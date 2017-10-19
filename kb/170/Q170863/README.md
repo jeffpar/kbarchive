@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170863: Error in Event Log after Deleting the Anonymous User Account"
-permalink: kb/170/Q170863/
+permalink: /kb/170/Q170863/
 ---
 
 ## Q170863: Error in Event Log after Deleting the Anonymous User Account

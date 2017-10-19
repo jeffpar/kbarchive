@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128199: HOWTO: Use _declspec(dllexport) in an MFC Extension DLL"
-permalink: kb/128/Q128199/
+permalink: /kb/128/Q128199/
 ---
 
 ## Q128199: HOWTO: Use _declspec(dllexport) in an MFC Extension DLL

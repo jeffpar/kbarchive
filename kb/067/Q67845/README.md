@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67845: Calling a DLL Written for Windows from a TSR for MS-DOS"
-permalink: kb/067/Q67845/
+permalink: /kb/067/Q67845/
 ---
 
 ## Q67845: Calling a DLL Written for Windows from a TSR for MS-DOS

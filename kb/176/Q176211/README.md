@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176211: Console-mode Apps May Run Slowly on Multiprocessor Computers"
-permalink: kb/176/Q176211/
+permalink: /kb/176/Q176211/
 ---
 
 ## Q176211: Console-mode Apps May Run Slowly on Multiprocessor Computers

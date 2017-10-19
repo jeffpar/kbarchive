@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178403: FS98: Fuel Pump Located on Center of Kankakee Runway"
-permalink: kb/178/Q178403/
+permalink: /kb/178/Q178403/
 ---
 
 ## Q178403: FS98: Fuel Pump Located on Center of Kankakee Runway

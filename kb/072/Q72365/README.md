@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72365: PC-Kwik Disk Cache Requires VirtualHDIRQ=False"
-permalink: kb/072/Q72365/
+permalink: /kb/072/Q72365/
 ---
 
 ## Q72365: PC-Kwik Disk Cache Requires VirtualHDIRQ=False

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264437: XADM: Event 1088 and Error 1276 Occur After Reinstalling w. DN"
-permalink: kb/264/Q264437/
+permalink: /kb/264/Q264437/
 ---
 
 ## Q264437: XADM: Event 1088 and Error 1276 Occur After Reinstalling w. DN

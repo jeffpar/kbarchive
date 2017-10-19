@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237873: Err Msg: Overlapped I/O Error"
-permalink: kb/237/Q237873/
+permalink: /kb/237/Q237873/
 ---
 
 ## Q237873: Err Msg: Overlapped I/O Error

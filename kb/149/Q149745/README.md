@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149745: XCLN: Dr. Watson Crash When Windows NT Client is Installed"
-permalink: kb/149/Q149745/
+permalink: /kb/149/Q149745/
 ---
 
 ## Q149745: XCLN: Dr. Watson Crash When Windows NT Client is Installed

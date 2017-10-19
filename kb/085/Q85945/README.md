@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85945: Windows Paintbrush Does Not Print to a Plotter"
-permalink: kb/085/Q85945/
+permalink: /kb/085/Q85945/
 ---
 
 ## Q85945: Windows Paintbrush Does Not Print to a Plotter

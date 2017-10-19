@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171148: Automating Detection of Logon Failures In a Windows NT Domain"
-permalink: kb/171/Q171148/
+permalink: /kb/171/Q171148/
 ---
 
 ## Q171148: Automating Detection of Logon Failures In a Windows NT Domain

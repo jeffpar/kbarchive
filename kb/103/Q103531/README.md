@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103531: DoubleSpace Reports ScanDisk Found Disk Errors (Low Memory)"
-permalink: kb/103/Q103531/
+permalink: /kb/103/Q103531/
 ---
 
 ## Q103531: DoubleSpace Reports ScanDisk Found Disk Errors (Low Memory)

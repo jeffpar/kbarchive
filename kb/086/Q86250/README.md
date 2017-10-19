@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86250: Calendar's Alarm May Not Interrupt Screen Saver"
-permalink: kb/086/Q86250/
+permalink: /kb/086/Q86250/
 ---
 
 ## Q86250: Calendar's Alarm May Not Interrupt Screen Saver

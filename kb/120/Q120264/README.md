@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120264: Excessive Flicker on Fast Computers Using 320 x 400 Resolution"
-permalink: kb/120/Q120264/
+permalink: /kb/120/Q120264/
 ---
 
 ## Q120264: Excessive Flicker on Fast Computers Using 320 x 400 Resolution

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59092: Oakland Runway Disappears on Landing Approach"
-permalink: kb/059/Q59092/
+permalink: /kb/059/Q59092/
 ---
 
 ## Q59092: Oakland Runway Disappears on Landing Approach

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129280: HOWTO: Change the Color of the Active Cell in a Grid"
-permalink: kb/129/Q129280/
+permalink: /kb/129/Q129280/
 ---
 
 ## Q129280: HOWTO: Change the Color of the Active Cell in a Grid

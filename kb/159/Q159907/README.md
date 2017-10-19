@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159907: PRB: Missing Window Buttons if Form ControlBox Property False"
-permalink: kb/159/Q159907/
+permalink: /kb/159/Q159907/
 ---
 
 ## Q159907: PRB: Missing Window Buttons if Form ControlBox Property False

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128201: How to Put a Null Value in a Field"
-permalink: kb/128/Q128201/
+permalink: /kb/128/Q128201/
 ---
 
 ## Q128201: How to Put a Null Value in a Field

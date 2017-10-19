@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252788: Midtown Madness: Randomly Colored Shapes Displayed on Screen"
-permalink: kb/252/Q252788/
+permalink: /kb/252/Q252788/
 ---
 
 ## Q252788: Midtown Madness: Randomly Colored Shapes Displayed on Screen

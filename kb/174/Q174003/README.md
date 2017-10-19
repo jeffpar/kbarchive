@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174003: MSN Prompts You to Install Rifff Files from CD-ROM"
-permalink: kb/174/Q174003/
+permalink: /kb/174/Q174003/
 ---
 
 ## Q174003: MSN Prompts You to Install Rifff Files from CD-ROM

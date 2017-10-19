@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247293: SMS: Server Discovery DDRs Flood Sites"
-permalink: kb/247/Q247293/
+permalink: /kb/247/Q247293/
 ---
 
 ## Q247293: SMS: Server Discovery DDRs Flood Sites

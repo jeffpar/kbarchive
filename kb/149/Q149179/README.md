@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149179: SMS 1.2 and SQL Server Upgrade"
-permalink: kb/149/Q149179/
+permalink: /kb/149/Q149179/
 ---
 
 ## Q149179: SMS 1.2 and SQL Server Upgrade

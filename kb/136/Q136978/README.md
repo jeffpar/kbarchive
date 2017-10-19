@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136978: How to Refresh a Formset by Using Commands Outside of the Form"
-permalink: kb/136/Q136978/
+permalink: /kb/136/Q136978/
 ---
 
 ## Q136978: How to Refresh a Formset by Using Commands Outside of the Form

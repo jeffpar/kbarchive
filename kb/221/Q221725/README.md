@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221725: FIX: DATE() Function Does Not Propagate NULLs Properly"
-permalink: kb/221/Q221725/
+permalink: /kb/221/Q221725/
 ---
 
 ## Q221725: FIX: DATE() Function Does Not Propagate NULLs Properly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118427: Schubert: Insufficient Resources Error After Bookshelf Set Up"
-permalink: kb/118/Q118427/
+permalink: /kb/118/Q118427/
 ---
 
 ## Q118427: Schubert: Insufficient Resources Error After Bookshelf Set Up

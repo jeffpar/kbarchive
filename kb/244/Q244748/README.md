@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244748: 14 Character Password Limitation in IMS Logon Information"
-permalink: kb/244/Q244748/
+permalink: /kb/244/Q244748/
 ---
 
 ## Q244748: 14 Character Password Limitation in IMS Logon Information

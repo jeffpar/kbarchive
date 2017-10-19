@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168039: PRB: Lockscreen with Assert Dialog Causes Problems with Controls"
-permalink: kb/168/Q168039/
+permalink: /kb/168/Q168039/
 ---
 
 ## Q168039: PRB: Lockscreen with Assert Dialog Causes Problems with Controls

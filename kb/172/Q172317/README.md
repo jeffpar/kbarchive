@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172317: WD97: Automatic Numbered List Doesn't Work If Text Contains Tabs"
-permalink: kb/172/Q172317/
+permalink: /kb/172/Q172317/
 ---
 
 ## Q172317: WD97: Automatic Numbered List Doesn't Work If Text Contains Tabs

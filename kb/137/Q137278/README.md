@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137278: PRB: Trigger Fails with One-to-Many Form Wizard and RI Builder"
-permalink: kb/137/Q137278/
+permalink: /kb/137/Q137278/
 ---
 
 ## Q137278: PRB: Trigger Fails with One-to-Many Form Wizard and RI Builder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270580: &quot;Unable to Create Mapping&quot; Error Message Re-creating DFS Share"
-permalink: kb/270/Q270580/
+permalink: /kb/270/Q270580/
 ---
 
 ## Q270580: &quot;Unable to Create Mapping&quot; Error Message Re-creating DFS Share

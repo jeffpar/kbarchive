@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74706: PRB: NMAKE Does Not Parse Escape Character Correctly"
-permalink: kb/074/Q74706/
+permalink: /kb/074/Q74706/
 ---
 
 ## Q74706: PRB: NMAKE Does Not Parse Escape Character Correctly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138363: Err Msg: The Registration Wizard Was Unable to Locate..."
-permalink: kb/138/Q138363/
+permalink: /kb/138/Q138363/
 ---
 
 ## Q138363: Err Msg: The Registration Wizard Was Unable to Locate...

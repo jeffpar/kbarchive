@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184265: HOWTO: Distribute ADO with the VB5 Application Setup Wizard"
-permalink: kb/184/Q184265/
+permalink: /kb/184/Q184265/
 ---
 
 ## Q184265: HOWTO: Distribute ADO with the VB5 Application Setup Wizard

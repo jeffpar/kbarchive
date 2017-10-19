@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290522: DNR Local Network Priority Sorting Does Not Work"
-permalink: kb/290/Q290522/
+permalink: /kb/290/Q290522/
 ---
 
 ## Q290522: DNR Local Network Priority Sorting Does Not Work

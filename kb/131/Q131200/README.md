@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131200: How to Print a Report When No Records Are Involved"
-permalink: kb/131/Q131200/
+permalink: /kb/131/Q131200/
 ---
 
 ## Q131200: How to Print a Report When No Records Are Involved

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191187: PRB: Do Not Modify ASP File That Is Created by WebClass Designer"
-permalink: kb/191/Q191187/
+permalink: /kb/191/Q191187/
 ---
 
 ## Q191187: PRB: Do Not Modify ASP File That Is Created by WebClass Designer

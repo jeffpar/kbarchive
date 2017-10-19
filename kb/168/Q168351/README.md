@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168351: WD97: Word for Alpha Crashes Converting Some WP Graphics"
-permalink: kb/168/Q168351/
+permalink: /kb/168/Q168351/
 ---
 
 ## Q168351: WD97: Word for Alpha Crashes Converting Some WP Graphics

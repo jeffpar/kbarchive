@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177743: HOWTO: Scroll the TreeView When Dragging and Dropping a Node"
-permalink: kb/177/Q177743/
+permalink: /kb/177/Q177743/
 ---
 
 ## Q177743: HOWTO: Scroll the TreeView When Dragging and Dropping a Node

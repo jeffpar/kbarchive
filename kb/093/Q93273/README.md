@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93273: VFW: Setup - Run-time Installation Changes to Windows"
-permalink: kb/093/Q93273/
+permalink: /kb/093/Q93273/
 ---
 
 ## Q93273: VFW: Setup - Run-time Installation Changes to Windows

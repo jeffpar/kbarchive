@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173242: PRB: Use Masks to Set/Get Item States in CListCtrl"
-permalink: kb/173/Q173242/
+permalink: /kb/173/Q173242/
 ---
 
 ## Q173242: PRB: Use Masks to Set/Get Item States in CListCtrl

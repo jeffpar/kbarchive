@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188253: PRB: Calling _Htmltag Class Results in Memory Error"
-permalink: kb/188/Q188253/
+permalink: /kb/188/Q188253/
 ---
 
 ## Q188253: PRB: Calling _Htmltag Class Results in Memory Error

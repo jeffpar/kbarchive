@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140418: Detailed Explanation of FAT Boot Sector"
-permalink: kb/140/Q140418/
+permalink: /kb/140/Q140418/
 ---
 
 ## Q140418: Detailed Explanation of FAT Boot Sector

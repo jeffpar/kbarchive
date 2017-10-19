@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238019: Multimedia Err Msg: Video Not Available..."
-permalink: kb/238/Q238019/
+permalink: /kb/238/Q238019/
 ---
 
 ## Q238019: Multimedia Err Msg: Video Not Available...

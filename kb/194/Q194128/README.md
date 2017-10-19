@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194128: XFOR: Exchange 5.5 SP1 Upgrade Fails on Cluster Server"
-permalink: kb/194/Q194128/
+permalink: /kb/194/Q194128/
 ---
 
 ## Q194128: XFOR: Exchange 5.5 SP1 Upgrade Fails on Cluster Server

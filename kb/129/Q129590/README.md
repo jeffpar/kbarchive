@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129590: Multimedia Strauss: BETA Misprinted Under Copyright Text"
-permalink: kb/129/Q129590/
+permalink: /kb/129/Q129590/
 ---
 
 ## Q129590: Multimedia Strauss: BETA Misprinted Under Copyright Text

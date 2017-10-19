@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101875: How to Enable ANSI.SYS in a Command Window"
-permalink: kb/101/Q101875/
+permalink: /kb/101/Q101875/
 ---
 
 ## Q101875: How to Enable ANSI.SYS in a Command Window

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78183: Fish! Causes Recorder Errors with Windows"
-permalink: kb/078/Q78183/
+permalink: /kb/078/Q78183/
 ---
 
 ## Q78183: Fish! Causes Recorder Errors with Windows

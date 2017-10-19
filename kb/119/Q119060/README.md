@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119060: Writer/Artist: Starts in Black and White"
-permalink: kb/119/Q119060/
+permalink: /kb/119/Q119060/
 ---
 
 ## Q119060: Writer/Artist: Starts in Black and White

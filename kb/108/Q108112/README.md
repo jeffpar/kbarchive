@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108112: HOWTO: View the Call Stack After an MFC ASSERT"
-permalink: kb/108/Q108112/
+permalink: /kb/108/Q108112/
 ---
 
 ## Q108112: HOWTO: View the Call Stack After an MFC ASSERT

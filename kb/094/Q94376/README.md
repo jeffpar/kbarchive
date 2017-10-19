@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94376: WRK Shows Incorrect Network Setting Dialog Box"
-permalink: kb/094/Q94376/
+permalink: /kb/094/Q94376/
 ---
 
 ## Q94376: WRK Shows Incorrect Network Setting Dialog Box

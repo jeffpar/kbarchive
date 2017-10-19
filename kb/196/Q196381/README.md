@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196381: XCON: Messages Queue Over X.400 Connectors Through Firewall"
-permalink: kb/196/Q196381/
+permalink: /kb/196/Q196381/
 ---
 
 ## Q196381: XCON: Messages Queue Over X.400 Connectors Through Firewall

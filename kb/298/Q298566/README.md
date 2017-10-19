@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298566: &quot;Stop 0x0000000A&quot; Err Msg When You Use Nwfs.sys Redirector"
-permalink: kb/298/Q298566/
+permalink: /kb/298/Q298566/
 ---
 
 ## Q298566: &quot;Stop 0x0000000A&quot; Err Msg When You Use Nwfs.sys Redirector

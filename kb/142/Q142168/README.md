@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142168: PRB: Connectivity Error: Illegal reference in query"
-permalink: kb/142/Q142168/
+permalink: /kb/142/Q142168/
 ---
 
 ## Q142168: PRB: Connectivity Error: Illegal reference in query

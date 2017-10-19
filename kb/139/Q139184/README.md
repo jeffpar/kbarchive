@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139184: DOCERR: Picture Property Cannot Be Set to a General Field"
-permalink: kb/139/Q139184/
+permalink: /kb/139/Q139184/
 ---
 
 ## Q139184: DOCERR: Picture Property Cannot Be Set to a General Field

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225016: XADM: How to Change the Recipients Container for PF Mailboxes"
-permalink: kb/225/Q225016/
+permalink: /kb/225/Q225016/
 ---
 
 ## Q225016: XADM: How to Change the Recipients Container for PF Mailboxes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125462: How to Dial Number in the Same Area Code as Long Distance"
-permalink: kb/125/Q125462/
+permalink: /kb/125/Q125462/
 ---
 
 ## Q125462: How to Dial Number in the Same Area Code as Long Distance

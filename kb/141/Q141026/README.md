@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141026: How to Fill a List Box with Snapshot When Contents are Unknown"
-permalink: kb/141/Q141026/
+permalink: /kb/141/Q141026/
 ---
 
 ## Q141026: How to Fill a List Box with Snapshot When Contents are Unknown

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163910: WD97: Returned Height for Inline Shape Different from Specified"
-permalink: kb/163/Q163910/
+permalink: /kb/163/Q163910/
 ---
 
 ## Q163910: WD97: Returned Height for Inline Shape Different from Specified

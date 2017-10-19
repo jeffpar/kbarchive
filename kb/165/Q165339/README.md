@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165339: Non-administrator Users Cannot Remotely Monitor IIS"
-permalink: kb/165/Q165339/
+permalink: /kb/165/Q165339/
 ---
 
 ## Q165339: Non-administrator Users Cannot Remotely Monitor IIS

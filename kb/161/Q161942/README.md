@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161942: XADM: Setup or Update Fails to Upgrade Admin-Only Computer"
-permalink: kb/161/Q161942/
+permalink: /kb/161/Q161942/
 ---
 
 ## Q161942: XADM: Setup or Update Fails to Upgrade Admin-Only Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126963: Error 5123: The Computer Name You Specified Is Already in Use"
-permalink: kb/126/Q126963/
+permalink: /kb/126/Q126963/
 ---
 
 ## Q126963: Error 5123: The Computer Name You Specified Is Already in Use

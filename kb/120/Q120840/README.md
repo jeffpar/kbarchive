@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120840: PRB: Setup Does Not Detect Existing FoxPro Installation"
-permalink: kb/120/Q120840/
+permalink: /kb/120/Q120840/
 ---
 
 ## Q120840: PRB: Setup Does Not Detect Existing FoxPro Installation

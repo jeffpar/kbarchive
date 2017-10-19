@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191688: intraNetWare Client Does Not Synchronize Windows 95 Password"
-permalink: kb/191/Q191688/
+permalink: /kb/191/Q191688/
 ---
 
 ## Q191688: intraNetWare Client Does Not Synchronize Windows 95 Password

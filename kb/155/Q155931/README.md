@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155931: INFO: Project File Structure Changes in Visual FoxPro 5.0"
-permalink: kb/155/Q155931/
+permalink: /kb/155/Q155931/
 ---
 
 ## Q155931: INFO: Project File Structure Changes in Visual FoxPro 5.0

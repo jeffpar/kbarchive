@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276364: LU-LU Test Fails with Active AS/400 Connection"
-permalink: kb/276/Q276364/
+permalink: /kb/276/Q276364/
 ---
 
 ## Q276364: LU-LU Test Fails with Active AS/400 Connection

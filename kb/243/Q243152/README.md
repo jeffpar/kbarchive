@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243152: XADM: Joining Exchange Server Site Does Not Work with c1030b37"
-permalink: kb/243/Q243152/
+permalink: /kb/243/Q243152/
 ---
 
 ## Q243152: XADM: Joining Exchange Server Site Does Not Work with c1030b37

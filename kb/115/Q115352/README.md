@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115352: X400: Invalid Routing Entry Syntax Causes PANIC Error, Exit"
-permalink: kb/115/Q115352/
+permalink: /kb/115/Q115352/
 ---
 
 ## Q115352: X400: Invalid Routing Entry Syntax Causes PANIC Error, Exit

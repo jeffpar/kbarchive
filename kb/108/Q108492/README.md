@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108492: MS-DOS 6.0 &amp; 6.2 Not Supported on Tandy 1000 and 1200HD"
-permalink: kb/108/Q108492/
+permalink: /kb/108/Q108492/
 ---
 
 ## Q108492: MS-DOS 6.0 &amp; 6.2 Not Supported on Tandy 1000 and 1200HD

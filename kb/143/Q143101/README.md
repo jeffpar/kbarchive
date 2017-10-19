@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143101: FP: Using FrontPage Without the Server Extensions"
-permalink: kb/143/Q143101/
+permalink: /kb/143/Q143101/
 ---
 
 ## Q143101: FP: Using FrontPage Without the Server Extensions

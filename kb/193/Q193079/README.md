@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193079: FIX: &quot;Syntax Error&quot; with EVAL of ALL or LTRIM in SELECT-SQL"
-permalink: kb/193/Q193079/
+permalink: /kb/193/Q193079/
 ---
 
 ## Q193079: FIX: &quot;Syntax Error&quot; with EVAL of ALL or LTRIM in SELECT-SQL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85747: Using an HP LaserJet III on a LANtastic Network with Windows"
-permalink: kb/085/Q85747/
+permalink: /kb/085/Q85747/
 ---
 
 ## Q85747: Using an HP LaserJet III on a LANtastic Network with Windows

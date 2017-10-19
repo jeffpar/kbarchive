@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198371: WD97: How to Use STYLEREF Field to Place Chapter Info in Header"
-permalink: kb/198/Q198371/
+permalink: /kb/198/Q198371/
 ---
 
 ## Q198371: WD97: How to Use STYLEREF Field to Place Chapter Info in Header

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190789: PRB: Access Method Fires for Properties that Do Not Exist"
-permalink: kb/190/Q190789/
+permalink: /kb/190/Q190789/
 ---
 
 ## Q190789: PRB: Access Method Fires for Properties that Do Not Exist

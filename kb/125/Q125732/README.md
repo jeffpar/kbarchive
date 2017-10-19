@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125732: Cursor Created by User or ODBC Has EXCLUSIVE Status"
-permalink: kb/125/Q125732/
+permalink: /kb/125/Q125732/
 ---
 
 ## Q125732: Cursor Created by User or ODBC Has EXCLUSIVE Status

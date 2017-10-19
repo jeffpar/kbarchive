@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136697: How to Set Page Breaks in Visual FoxPro Reports"
-permalink: kb/136/Q136697/
+permalink: /kb/136/Q136697/
 ---
 
 ## Q136697: How to Set Page Breaks in Visual FoxPro Reports

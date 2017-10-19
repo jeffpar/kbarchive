@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129712: PRB: Capitalization in Visual Basic 4.0 Differs from 3.0"
-permalink: kb/129/Q129712/
+permalink: /kb/129/Q129712/
 ---
 
 ## Q129712: PRB: Capitalization in Visual Basic 4.0 Differs from 3.0

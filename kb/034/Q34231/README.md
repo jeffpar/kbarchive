@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q34231: Keys Used to Replace SCROLL LOCK Key on Tandy 1000 Keyboards"
-permalink: kb/034/Q34231/
+permalink: /kb/034/Q34231/
 ---
 
 ## Q34231: Keys Used to Replace SCROLL LOCK Key on Tandy 1000 Keyboards

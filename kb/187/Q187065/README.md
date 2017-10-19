@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187065: Problem Setting Pagefile to 0 on Alpha"
-permalink: kb/187/Q187065/
+permalink: /kb/187/Q187065/
 ---
 
 ## Q187065: Problem Setting Pagefile to 0 on Alpha

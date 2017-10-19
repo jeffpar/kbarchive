@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305543: MELL: Installing SQL Database for Step by Step Interactive Versi"
-permalink: kb/305/Q305543/
+permalink: /kb/305/Q305543/
 ---
 
 ## Q305543: MELL: Installing SQL Database for Step by Step Interactive Versi

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74925: FIX: A1010 from Unclosed Segment in MASM @ShowStr Macro"
-permalink: kb/074/Q74925/
+permalink: /kb/074/Q74925/
 ---
 
 ## Q74925: FIX: A1010 from Unclosed Segment in MASM @ShowStr Macro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83824: SoundBlaster MCV Sound Card Not Supported by Windows 3.1"
-permalink: kb/083/Q83824/
+permalink: /kb/083/Q83824/
 ---
 
 ## Q83824: SoundBlaster MCV Sound Card Not Supported by Windows 3.1

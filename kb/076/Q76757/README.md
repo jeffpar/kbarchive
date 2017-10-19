@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76757: Sound Blaster: 11-Voice FM Music Feature"
-permalink: kb/076/Q76757/
+permalink: /kb/076/Q76757/
 ---
 
 ## Q76757: Sound Blaster: 11-Voice FM Music Feature

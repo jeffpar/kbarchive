@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229255: 16-bit Programs Print Monochrome Instead of Color"
-permalink: kb/229/Q229255/
+permalink: /kb/229/Q229255/
 ---
 
 ## Q229255: 16-bit Programs Print Monochrome Instead of Color

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113675: FIX: App Studio for Windows GP Faults Under Windows NT"
-permalink: kb/113/Q113675/
+permalink: /kb/113/Q113675/
 ---
 
 ## Q113675: FIX: App Studio for Windows GP Faults Under Windows NT

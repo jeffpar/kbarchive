@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126413: Empty Program Groups Created on 16-bit Windows Clients"
-permalink: kb/126/Q126413/
+permalink: /kb/126/Q126413/
 ---
 
 ## Q126413: Empty Program Groups Created on 16-bit Windows Clients

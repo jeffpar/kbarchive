@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75266: WD97: Creating White Text on Dark Background"
-permalink: kb/075/Q75266/
+permalink: /kb/075/Q75266/
 ---
 
 ## Q75266: WD97: Creating White Text on Dark Background

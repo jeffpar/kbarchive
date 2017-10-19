@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71123: Display Driver Version 1.06 for NEC Graphics Engine (DGIS)"
-permalink: kb/071/Q71123/
+permalink: /kb/071/Q71123/
 ---
 
 ## Q71123: Display Driver Version 1.06 for NEC Graphics Engine (DGIS)

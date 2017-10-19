@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138425: PRB: No Visual Clue to Number of Lines Edit or Text Box Holds"
-permalink: kb/138/Q138425/
+permalink: /kb/138/Q138425/
 ---
 
 ## Q138425: PRB: No Visual Clue to Number of Lines Edit or Text Box Holds

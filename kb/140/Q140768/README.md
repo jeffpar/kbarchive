@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140768: MSB: Game in Progress Is Not Saved"
-permalink: kb/140/Q140768/
+permalink: /kb/140/Q140768/
 ---
 
 ## Q140768: MSB: Game in Progress Is Not Saved

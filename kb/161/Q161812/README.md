@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161812: TN3270 Server Does Not Send All Data to Host"
-permalink: kb/161/Q161812/
+permalink: /kb/161/Q161812/
 ---
 
 ## Q161812: TN3270 Server Does Not Send All Data to Host

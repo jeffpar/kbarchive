@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76923: The Control Menu in Write Works Incorrectly in Windows"
-permalink: kb/076/Q76923/
+permalink: /kb/076/Q76923/
 ---
 
 ## Q76923: The Control Menu in Write Works Incorrectly in Windows

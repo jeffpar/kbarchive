@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181504: PRB: Developer Studio Macro's ExecuteCommand Requires Quotes"
-permalink: kb/181/Q181504/
+permalink: /kb/181/Q181504/
 ---
 
 ## Q181504: PRB: Developer Studio Macro's ExecuteCommand Requires Quotes

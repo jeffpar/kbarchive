@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179574: How to Update Access Numbers for MSN 2.0"
-permalink: kb/179/Q179574/
+permalink: /kb/179/Q179574/
 ---
 
 ## Q179574: How to Update Access Numbers for MSN 2.0

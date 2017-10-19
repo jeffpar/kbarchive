@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82730: Why the Swap File is Written to at Startup in Windows 3.1"
-permalink: kb/082/Q82730/
+permalink: /kb/082/Q82730/
 ---
 
 ## Q82730: Why the Swap File is Written to at Startup in Windows 3.1

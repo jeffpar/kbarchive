@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123612: Support for CD-ROM Changers in Windows 95"
-permalink: kb/123/Q123612/
+permalink: /kb/123/Q123612/
 ---
 
 ## Q123612: Support for CD-ROM Changers in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233054: XFOR: Migration Wizard Stops Processing Messages Too Soon"
-permalink: kb/233/Q233054/
+permalink: /kb/233/Q233054/
 ---
 
 ## Q233054: XFOR: Migration Wizard Stops Processing Messages Too Soon

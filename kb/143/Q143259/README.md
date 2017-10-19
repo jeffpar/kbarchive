@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143259: INFO: Remote Callback Works Only with 32-Bit Clients"
-permalink: kb/143/Q143259/
+permalink: /kb/143/Q143259/
 ---
 
 ## Q143259: INFO: Remote Callback Works Only with 32-Bit Clients

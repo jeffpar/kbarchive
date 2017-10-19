@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172084: PRB: CALCULATE STD--Standard Deviation--Gives Numeric Overflow"
-permalink: kb/172/Q172084/
+permalink: /kb/172/Q172084/
 ---
 
 ## Q172084: PRB: CALCULATE STD--Standard Deviation--Gives Numeric Overflow

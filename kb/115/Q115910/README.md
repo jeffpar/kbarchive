@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115910: Moving Windows TrueType Fonts to Another Directory"
-permalink: kb/115/Q115910/
+permalink: /kb/115/Q115910/
 ---
 
 ## Q115910: Moving Windows TrueType Fonts to Another Directory

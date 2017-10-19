@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198989: FIX: ATL Local Server Wizard-Generated Code Doesn't Call Term"
-permalink: kb/198/Q198989/
+permalink: /kb/198/Q198989/
 ---
 
 ## Q198989: FIX: ATL Local Server Wizard-Generated Code Doesn't Call Term

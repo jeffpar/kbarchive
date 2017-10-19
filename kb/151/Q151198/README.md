@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151198: XADM: How to Set Up a Search for a Custom Attribute"
-permalink: kb/151/Q151198/
+permalink: /kb/151/Q151198/
 ---
 
 ## Q151198: XADM: How to Set Up a Search for a Custom Attribute

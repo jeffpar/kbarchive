@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176181: XCON: NDRs Dropped on Message to Recipient w/ Multiple DDAs"
-permalink: kb/176/Q176181/
+permalink: /kb/176/Q176181/
 ---
 
 ## Q176181: XCON: NDRs Dropped on Message to Recipient w/ Multiple DDAs

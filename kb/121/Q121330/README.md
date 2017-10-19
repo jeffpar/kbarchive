@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121330: BUG: MCIWndClass Popup Window Palette Flashes"
-permalink: kb/121/Q121330/
+permalink: /kb/121/Q121330/
 ---
 
 ## Q121330: BUG: MCIWndClass Popup Window Palette Flashes

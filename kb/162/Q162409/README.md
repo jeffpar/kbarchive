@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162409: SMS: Remote Control Windows Corrupted with Cirrus 5446 Chipset"
-permalink: kb/162/Q162409/
+permalink: /kb/162/Q162409/
 ---
 
 ## Q162409: SMS: Remote Control Windows Corrupted with Cirrus 5446 Chipset

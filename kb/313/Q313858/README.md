@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313858: ENC 2002: Installation Quits Unexpectedly After Displaying EULA"
-permalink: kb/313/Q313858/
+permalink: /kb/313/Q313858/
 ---
 
 ## Q313858: ENC 2002: Installation Quits Unexpectedly After Displaying EULA

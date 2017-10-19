@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103959: PC Forms: Reply from PROFS Loses Form Data"
-permalink: kb/103/Q103959/
+permalink: /kb/103/Q103959/
 ---
 
 ## Q103959: PC Forms: Reply from PROFS Loses Form Data

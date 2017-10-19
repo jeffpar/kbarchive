@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128723: HOWTO: Reference a Time on the Command Line"
-permalink: kb/128/Q128723/
+permalink: /kb/128/Q128723/
 ---
 
 ## Q128723: HOWTO: Reference a Time on the Command Line

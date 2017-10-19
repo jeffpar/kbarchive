@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97737: Running Windows for Workgroups on a DEC Pathworks Network"
-permalink: kb/097/Q97737/
+permalink: /kb/097/Q97737/
 ---
 
 ## Q97737: Running Windows for Workgroups on a DEC Pathworks Network

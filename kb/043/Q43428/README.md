@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43428: INFO: Storage of Environment Variables"
-permalink: kb/043/Q43428/
+permalink: /kb/043/Q43428/
 ---
 
 ## Q43428: INFO: Storage of Environment Variables

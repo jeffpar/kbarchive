@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80395: TurboCom and Windows"
-permalink: kb/080/Q80395/
+permalink: /kb/080/Q80395/
 ---
 
 ## Q80395: TurboCom and Windows

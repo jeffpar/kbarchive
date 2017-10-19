@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163574: WD97: DisplayAlerts=wdAlertsNone Fails to Suppress Print Error"
-permalink: kb/163/Q163574/
+permalink: /kb/163/Q163574/
 ---
 
 ## Q163574: WD97: DisplayAlerts=wdAlertsNone Fails to Suppress Print Error

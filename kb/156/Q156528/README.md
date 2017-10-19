@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156528: Selecting Shortcut in Online Viewer Opens Different Shortcut"
-permalink: kb/156/Q156528/
+permalink: /kb/156/Q156528/
 ---
 
 ## Q156528: Selecting Shortcut in Online Viewer Opens Different Shortcut

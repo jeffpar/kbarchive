@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82308: Using SMARTDrive 4.0 with QuarterDecks DesqView"
-permalink: kb/082/Q82308/
+permalink: /kb/082/Q82308/
 ---
 
 ## Q82308: Using SMARTDrive 4.0 with QuarterDecks DesqView

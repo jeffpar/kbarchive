@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128633: How Inheritance Affects PROTECTED Methods and Properties"
-permalink: kb/128/Q128633/
+permalink: /kb/128/Q128633/
 ---
 
 ## Q128633: How Inheritance Affects PROTECTED Methods and Properties

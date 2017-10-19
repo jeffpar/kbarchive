@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224553: IIS Server Instance Parameters Window Is Missing"
-permalink: kb/224/Q224553/
+permalink: /kb/224/Q224553/
 ---
 
 ## Q224553: IIS Server Instance Parameters Window Is Missing

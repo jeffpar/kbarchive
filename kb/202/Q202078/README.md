@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202078: SMS: Controlling IDMIF/NOIDMIF Processing"
-permalink: kb/202/Q202078/
+permalink: /kb/202/Q202078/
 ---
 
 ## Q202078: SMS: Controlling IDMIF/NOIDMIF Processing

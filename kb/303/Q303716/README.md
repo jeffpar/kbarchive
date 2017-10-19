@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303716: FP: Error Publishing/Saving File to Server Using Web Storage Sys"
-permalink: kb/303/Q303716/
+permalink: /kb/303/Q303716/
 ---
 
 ## Q303716: FP: Error Publishing/Saving File to Server Using Web Storage Sys

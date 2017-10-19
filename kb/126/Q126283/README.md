@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126283: SMS Hierarchy Manager Fails Due to Stack Overflow"
-permalink: kb/126/Q126283/
+permalink: /kb/126/Q126283/
 ---
 
 ## Q126283: SMS Hierarchy Manager Fails Due to Stack Overflow

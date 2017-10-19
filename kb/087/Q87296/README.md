@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87296: Microsoft Write: Incorrect Page Breaks on Panasonic Printer"
-permalink: kb/087/Q87296/
+permalink: /kb/087/Q87296/
 ---
 
 ## Q87296: Microsoft Write: Incorrect Page Breaks on Panasonic Printer

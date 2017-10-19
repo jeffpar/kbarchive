@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163875: Group Policies Not Applied If DC Name Is More Than 13 Characters"
-permalink: kb/163/Q163875/
+permalink: /kb/163/Q163875/
 ---
 
 ## Q163875: Group Policies Not Applied If DC Name Is More Than 13 Characters

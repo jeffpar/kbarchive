@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146039: Second Time Zone May Display Incorrectly"
-permalink: kb/146/Q146039/
+permalink: /kb/146/Q146039/
 ---
 
 ## Q146039: Second Time Zone May Display Incorrectly

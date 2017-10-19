@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71285: INFO: strtok() Needs No Additional Space to Insert Nulls"
-permalink: kb/071/Q71285/
+permalink: /kb/071/Q71285/
 ---
 
 ## Q71285: INFO: strtok() Needs No Additional Space to Insert Nulls

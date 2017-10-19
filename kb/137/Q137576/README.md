@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137576: SNACFG.EXE Fails with Spaces in Username Parameter"
-permalink: kb/137/Q137576/
+permalink: /kb/137/Q137576/
 ---
 
 ## Q137576: SNACFG.EXE Fails with Spaces in Username Parameter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37929: Mac DOS: Description and Features of MS-DOS Mail Client"
-permalink: kb/037/Q37929/
+permalink: /kb/037/Q37929/
 ---
 
 ## Q37929: Mac DOS: Description and Features of MS-DOS Mail Client

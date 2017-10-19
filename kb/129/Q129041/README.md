@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129041: Word for Windows NT Prints Slowly When Project 4.0 is Running"
-permalink: kb/129/Q129041/
+permalink: /kb/129/Q129041/
 ---
 
 ## Q129041: Word for Windows NT Prints Slowly When Project 4.0 is Running

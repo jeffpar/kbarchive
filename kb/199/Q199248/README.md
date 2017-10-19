@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199248: SMS: Limited Support for Dual Boot Clients"
-permalink: kb/199/Q199248/
+permalink: /kb/199/Q199248/
 ---
 
 ## Q199248: SMS: Limited Support for Dual Boot Clients

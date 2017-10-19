@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82321: Playing Beethoven with Windows Media Player"
-permalink: kb/082/Q82321/
+permalink: /kb/082/Q82321/
 ---
 
 ## Q82321: Playing Beethoven with Windows Media Player

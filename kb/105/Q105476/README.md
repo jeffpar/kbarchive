@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105476: Windows NT 5.25 Inch Disk Contents (511)"
-permalink: kb/105/Q105476/
+permalink: /kb/105/Q105476/
 ---
 
 ## Q105476: Windows NT 5.25 Inch Disk Contents (511)

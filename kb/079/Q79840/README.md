@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79840: Remote Drives Overwrite Local Drives"
-permalink: kb/079/Q79840/
+permalink: /kb/079/Q79840/
 ---
 
 ## Q79840: Remote Drives Overwrite Local Drives

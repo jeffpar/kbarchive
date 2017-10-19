@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177648: RAS Error: TCP/IP CP Reported Error 733: The PPP Control..."
-permalink: kb/177/Q177648/
+permalink: /kb/177/Q177648/
 ---
 
 ## Q177648: RAS Error: TCP/IP CP Reported Error 733: The PPP Control...

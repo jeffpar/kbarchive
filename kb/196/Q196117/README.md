@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196117: Files Are Replicated Even When No Sync Appears in Status"
-permalink: kb/196/Q196117/
+permalink: /kb/196/Q196117/
 ---
 
 ## Q196117: Files Are Replicated Even When No Sync Appears in Status

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154510: HOWTO: Get More Information on the ODBC Call Failed Error"
-permalink: kb/154/Q154510/
+permalink: /kb/154/Q154510/
 ---
 
 ## Q154510: HOWTO: Get More Information on the ODBC Call Failed Error

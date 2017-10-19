@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243602: SMS: How to Change the SMS Service Account Password"
-permalink: kb/243/Q243602/
+permalink: /kb/243/Q243602/
 ---
 
 ## Q243602: SMS: How to Change the SMS Service Account Password

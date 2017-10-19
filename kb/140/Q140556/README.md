@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140556: Securing SNA Server to Not Require Everyone:Read Access"
-permalink: kb/140/Q140556/
+permalink: /kb/140/Q140556/
 ---
 
 ## Q140556: Securing SNA Server to Not Require Everyone:Read Access

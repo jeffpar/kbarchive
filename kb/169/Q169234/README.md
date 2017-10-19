@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169234: Cannot Set Separator in Regional Settings Tool to Null"
-permalink: kb/169/Q169234/
+permalink: /kb/169/Q169234/
 ---
 
 ## Q169234: Cannot Set Separator in Regional Settings Tool to Null

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86147: PROFS: Information Required to Troubleshoot Gateway Problems"
-permalink: kb/086/Q86147/
+permalink: /kb/086/Q86147/
 ---
 
 ## Q86147: PROFS: Information Required to Troubleshoot Gateway Problems

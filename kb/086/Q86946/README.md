@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86946: 3COM: Valid Options for the GATEWAY.INI File"
-permalink: kb/086/Q86946/
+permalink: /kb/086/Q86946/
 ---
 
 ## Q86946: 3COM: Valid Options for the GATEWAY.INI File

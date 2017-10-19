@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171734: Error Message: The Selected Branch Does Not Exist..."
-permalink: kb/171/Q171734/
+permalink: /kb/171/Q171734/
 ---
 
 ## Q171734: Error Message: The Selected Branch Does Not Exist...

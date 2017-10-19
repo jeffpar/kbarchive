@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317151: Non-Paged Pool Memory Leak with Emulex Fibre SCSI Driver"
-permalink: kb/317/Q317151/
+permalink: /kb/317/Q317151/
 ---
 
 ## Q317151: Non-Paged Pool Memory Leak with Emulex Fibre SCSI Driver

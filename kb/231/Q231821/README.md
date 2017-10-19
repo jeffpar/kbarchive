@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231821: SMS: Getdisk and 95Getdsk Display Messages When Verbose Mode Off"
-permalink: kb/231/Q231821/
+permalink: /kb/231/Q231821/
 ---
 
 ## Q231821: SMS: Getdisk and 95Getdsk Display Messages When Verbose Mode Off

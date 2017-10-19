@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106373: Troubleshooting Event Log Error Messages 11 and 12"
-permalink: kb/106/Q106373/
+permalink: /kb/106/Q106373/
 ---
 
 ## Q106373: Troubleshooting Event Log Error Messages 11 and 12

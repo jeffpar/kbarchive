@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194570: PRB: TypeOf Operator Does Not Recognize Form Object"
-permalink: kb/194/Q194570/
+permalink: /kb/194/Q194570/
 ---
 
 ## Q194570: PRB: TypeOf Operator Does Not Recognize Form Object

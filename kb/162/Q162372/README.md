@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162372: UT95: Upsizing Wizard Fails When Out of Disk Space on SQL Server"
-permalink: kb/162/Q162372/
+permalink: /kb/162/Q162372/
 ---
 
 ## Q162372: UT95: Upsizing Wizard Fails When Out of Disk Space on SQL Server

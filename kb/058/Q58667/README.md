@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58667: HOWTO: Redirect stdout to and from a File Using C"
-permalink: kb/058/Q58667/
+permalink: /kb/058/Q58667/
 ---
 
 ## Q58667: HOWTO: Redirect stdout to and from a File Using C

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219315: WINS Service Will Not Start with Inconsistent Database"
-permalink: kb/219/Q219315/
+permalink: /kb/219/Q219315/
 ---
 
 ## Q219315: WINS Service Will Not Start with Inconsistent Database

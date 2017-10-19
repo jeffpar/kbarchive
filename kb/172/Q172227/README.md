@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172227: Network Address Translators Can Block Netlogon Traffic"
-permalink: kb/172/Q172227/
+permalink: /kb/172/Q172227/
 ---
 
 ## Q172227: Network Address Translators Can Block Netlogon Traffic

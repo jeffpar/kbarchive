@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73187: Using Huge Memory Model and Huge Arrays in MASM"
-permalink: kb/073/Q73187/
+permalink: /kb/073/Q73187/
 ---
 
 ## Q73187: Using Huge Memory Model and Huge Arrays in MASM

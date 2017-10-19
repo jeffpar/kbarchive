@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151122: Error Message: The Printer Command Is Invalid"
-permalink: kb/151/Q151122/
+permalink: /kb/151/Q151122/
 ---
 
 ## Q151122: Error Message: The Printer Command Is Invalid

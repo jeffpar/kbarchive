@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139379: Cannot Load Lucida Typewriter Font"
-permalink: kb/139/Q139379/
+permalink: /kb/139/Q139379/
 ---
 
 ## Q139379: Cannot Load Lucida Typewriter Font

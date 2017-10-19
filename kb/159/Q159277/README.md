@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159277: TN3270:Trace Files Show Wrong Time Delay"
-permalink: kb/159/Q159277/
+permalink: /kb/159/Q159277/
 ---
 
 ## Q159277: TN3270:Trace Files Show Wrong Time Delay

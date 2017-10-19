@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137567: Configuring RPC in Windows 95"
-permalink: kb/137/Q137567/
+permalink: /kb/137/Q137567/
 ---
 
 ## Q137567: Configuring RPC in Windows 95

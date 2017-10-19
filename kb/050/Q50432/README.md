@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50432: Mac Hyp: Write-Protected Stacks in HyperCard"
-permalink: kb/050/Q50432/
+permalink: /kb/050/Q50432/
 ---
 
 ## Q50432: Mac Hyp: Write-Protected Stacks in HyperCard

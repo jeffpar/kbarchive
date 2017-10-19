@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302923: Using Wrong Case In Password Allows Sign-in To MSN Explorer 6.0,"
-permalink: kb/302/Q302923/
+permalink: /kb/302/Q302923/
 ---
 
 ## Q302923: Using Wrong Case In Password Allows Sign-in To MSN Explorer 6.0,

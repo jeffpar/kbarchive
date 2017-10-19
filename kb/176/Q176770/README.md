@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176770: Error Message: Encarta Encyclopedia Cannot Start..."
-permalink: kb/176/Q176770/
+permalink: /kb/176/Q176770/
 ---
 
 ## Q176770: Error Message: Encarta Encyclopedia Cannot Start...

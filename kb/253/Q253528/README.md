@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253528: Using the &#36;Search() Function in a Management Agent of MMS"
-permalink: kb/253/Q253528/
+permalink: /kb/253/Q253528/
 ---
 
 ## Q253528: Using the &#36;Search() Function in a Management Agent of MMS

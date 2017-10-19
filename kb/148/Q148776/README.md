@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148776: How to Use the New API Functions in Visual FoxPro Version 3.0b"
-permalink: kb/148/Q148776/
+permalink: /kb/148/Q148776/
 ---
 
 ## Q148776: How to Use the New API Functions in Visual FoxPro Version 3.0b

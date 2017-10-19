@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189497: BUG: Visual C++ Does Not Recognize Animated Cursor Types"
-permalink: kb/189/Q189497/
+permalink: /kb/189/Q189497/
 ---
 
 ## Q189497: BUG: Visual C++ Does Not Recognize Animated Cursor Types

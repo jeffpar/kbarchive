@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106366: WFWG Hangs at Startup with Future Domain 32-Bit Disk Access"
-permalink: kb/106/Q106366/
+permalink: /kb/106/Q106366/
 ---
 
 ## Q106366: WFWG Hangs at Startup with Future Domain 32-Bit Disk Access

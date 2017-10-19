@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117850: MS-DOS 6.22 COUNTRY.TXT File"
-permalink: kb/117/Q117850/
+permalink: /kb/117/Q117850/
 ---
 
 ## Q117850: MS-DOS 6.22 COUNTRY.TXT File

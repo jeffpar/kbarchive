@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140450: FIX: &quot;Failed to (or don't know how to) build&quot; Warning"
-permalink: kb/140/Q140450/
+permalink: /kb/140/Q140450/
 ---
 
 ## Q140450: FIX: &quot;Failed to (or don't know how to) build&quot; Warning

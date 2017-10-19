@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133323: List of Fixed Bugs in Windows NT Version 3.51"
-permalink: kb/133/Q133323/
+permalink: /kb/133/Q133323/
 ---
 
 ## Q133323: List of Fixed Bugs in Windows NT Version 3.51

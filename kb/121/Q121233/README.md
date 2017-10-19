@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121233: Printer Form May Not Print to Correct Paper Path"
-permalink: kb/121/Q121233/
+permalink: /kb/121/Q121233/
 ---
 
 ## Q121233: Printer Form May Not Print to Correct Paper Path

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64819: Windows Can't Install on NCR 486-25 with Internal Cache"
-permalink: kb/064/Q64819/
+permalink: /kb/064/Q64819/
 ---
 
 ## Q64819: Windows Can't Install on NCR 486-25 with Internal Cache

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171978: INFO: Non-Modal Form Support in Visual Basic DLLs"
-permalink: kb/171/Q171978/
+permalink: /kb/171/Q171978/
 ---
 
 ## Q171978: INFO: Non-Modal Form Support in Visual Basic DLLs

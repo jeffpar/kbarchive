@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84921: FTP VxD Causes Network Communications Problems"
-permalink: kb/084/Q84921/
+permalink: /kb/084/Q84921/
 ---
 
 ## Q84921: FTP VxD Causes Network Communications Problems

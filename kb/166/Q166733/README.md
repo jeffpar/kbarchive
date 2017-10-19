@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166733: SMSINST: Access Violation When Adding a Large Number of Files"
-permalink: kb/166/Q166733/
+permalink: /kb/166/Q166733/
 ---
 
 ## Q166733: SMSINST: Access Violation When Adding a Large Number of Files

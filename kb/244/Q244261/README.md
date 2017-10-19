@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244261: PRB:Printer.Print May Use Different Fonts on Different Computers"
-permalink: kb/244/Q244261/
+permalink: /kb/244/Q244261/
 ---
 
 ## Q244261: PRB:Printer.Print May Use Different Fonts on Different Computers

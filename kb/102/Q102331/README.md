@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102331: BUG: Problems Viewing Protected-Mode Application Memory"
-permalink: kb/102/Q102331/
+permalink: /kb/102/Q102331/
 ---
 
 ## Q102331: BUG: Problems Viewing Protected-Mode Application Memory

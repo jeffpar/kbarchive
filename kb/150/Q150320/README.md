@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150320: Bookshelf '96-'97: No Sound or Setup Using UNC Path"
-permalink: kb/150/Q150320/
+permalink: /kb/150/Q150320/
 ---
 
 ## Q150320: Bookshelf '96-'97: No Sound or Setup Using UNC Path

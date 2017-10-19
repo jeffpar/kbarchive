@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118628: Windows 95 Does Not Recognize Your Computer as Plug and Play"
-permalink: kb/118/Q118628/
+permalink: /kb/118/Q118628/
 ---
 
 ## Q118628: Windows 95 Does Not Recognize Your Computer as Plug and Play

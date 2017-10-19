@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195582: FPNW Leaks Memory in BindLibGetInfo"
-permalink: kb/195/Q195582/
+permalink: /kb/195/Q195582/
 ---
 
 ## Q195582: FPNW Leaks Memory in BindLibGetInfo

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130524: BUG: COPY TO ARRAY Behaves Differently from dBASE"
-permalink: kb/130/Q130524/
+permalink: /kb/130/Q130524/
 ---
 
 ## Q130524: BUG: COPY TO ARRAY Behaves Differently from dBASE

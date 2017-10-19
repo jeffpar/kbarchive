@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101651: Can Delete Directory and Files When Files Read-Only"
-permalink: kb/101/Q101651/
+permalink: /kb/101/Q101651/
 ---
 
 ## Q101651: Can Delete Directory and Files When Files Read-Only

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130707: HOWTO: Use Criteria to Limit Records Displayed in a Grid"
-permalink: kb/130/Q130707/
+permalink: /kb/130/Q130707/
 ---
 
 ## Q130707: HOWTO: Use Criteria to Limit Records Displayed in a Grid

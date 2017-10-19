@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119638: ERR: Unexpected Error; File Too Large to Compress..."
-permalink: kb/119/Q119638/
+permalink: /kb/119/Q119638/
 ---
 
 ## Q119638: ERR: Unexpected Error; File Too Large to Compress...

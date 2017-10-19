@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171051: How to Bypass the Recycle Bin When Deleting Files"
-permalink: kb/171/Q171051/
+permalink: /kb/171/Q171051/
 ---
 
 ## Q171051: How to Bypass the Recycle Bin When Deleting Files

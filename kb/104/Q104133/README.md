@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104133: PC Win: Err Msg: Some Information Could Not Be Written..."
-permalink: kb/104/Q104133/
+permalink: /kb/104/Q104133/
 ---
 
 ## Q104133: PC Win: Err Msg: Some Information Could Not Be Written...

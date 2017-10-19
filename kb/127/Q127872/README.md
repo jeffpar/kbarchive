@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127872: APM Does Not Function with NDIS 2 Adapter Driver"
-permalink: kb/127/Q127872/
+permalink: /kb/127/Q127872/
 ---
 
 ## Q127872: APM Does Not Function with NDIS 2 Adapter Driver

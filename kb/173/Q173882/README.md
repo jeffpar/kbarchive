@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173882: Netlogon Synchronization Errors"
-permalink: kb/173/Q173882/
+permalink: /kb/173/Q173882/
 ---
 
 ## Q173882: Netlogon Synchronization Errors

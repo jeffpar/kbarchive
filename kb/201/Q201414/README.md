@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201414: XADM: Restored Directory Not Replicating Out to Other Servers"
-permalink: kb/201/Q201414/
+permalink: /kb/201/Q201414/
 ---
 
 ## Q201414: XADM: Restored Directory Not Replicating Out to Other Servers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59707: PIF Editor Advanced Button Not Working"
-permalink: kb/059/Q59707/
+permalink: /kb/059/Q59707/
 ---
 
 ## Q59707: PIF Editor Advanced Button Not Working

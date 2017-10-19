@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159431: FP97: WWW Links to Current Web Lose &quot;http://&quot; Prefix"
-permalink: kb/159/Q159431/
+permalink: /kb/159/Q159431/
 ---
 
 ## Q159431: FP97: WWW Links to Current Web Lose &quot;http://&quot; Prefix

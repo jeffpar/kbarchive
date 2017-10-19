@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232495: XFOR:Important Files When Relocating OV/VM Connector to another"
-permalink: kb/232/Q232495/
+permalink: /kb/232/Q232495/
 ---
 
 ## Q232495: XFOR:Important Files When Relocating OV/VM Connector to another

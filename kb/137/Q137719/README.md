@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137719: Program Manager Disappears After Running XTree Uninstall"
-permalink: kb/137/Q137719/
+permalink: /kb/137/Q137719/
 ---
 
 ## Q137719: Program Manager Disappears After Running XTree Uninstall

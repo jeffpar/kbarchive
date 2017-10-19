@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255951: HTTP Compression Methods and Files Used by IIS 5.0"
-permalink: kb/255/Q255951/
+permalink: /kb/255/Q255951/
 ---
 
 ## Q255951: HTTP Compression Methods and Files Used by IIS 5.0

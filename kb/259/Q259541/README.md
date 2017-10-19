@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259541: XADM: Store Hangs During Move Mailbox Process"
-permalink: kb/259/Q259541/
+permalink: /kb/259/Q259541/
 ---
 
 ## Q259541: XADM: Store Hangs During Move Mailbox Process

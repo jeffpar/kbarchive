@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146195: Only Text Can Be Pasted into a Meeting Request"
-permalink: kb/146/Q146195/
+permalink: /kb/146/Q146195/
 ---
 
 ## Q146195: Only Text Can Be Pasted into a Meeting Request

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126977: Audit Policy Not Replicating Correctly to BDC"
-permalink: kb/126/Q126977/
+permalink: /kb/126/Q126977/
 ---
 
 ## Q126977: Audit Policy Not Replicating Correctly to BDC

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84858: Masque Blackjack for Windows Screen Redraw Problem"
-permalink: kb/084/Q84858/
+permalink: /kb/084/Q84858/
 ---
 
 ## Q84858: Masque Blackjack for Windows Screen Redraw Problem

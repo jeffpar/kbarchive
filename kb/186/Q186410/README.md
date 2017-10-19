@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186410: SMS: 16-bit Background Job Causes WOW VDM Error Message"
-permalink: kb/186/Q186410/
+permalink: /kb/186/Q186410/
 ---
 
 ## Q186410: SMS: 16-bit Background Job Causes WOW VDM Error Message

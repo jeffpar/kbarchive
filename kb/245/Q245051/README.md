@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245051: Updated Collections Go to Every Child Site with New Child Site"
-permalink: kb/245/Q245051/
+permalink: /kb/245/Q245051/
 ---
 
 ## Q245051: Updated Collections Go to Every Child Site with New Child Site

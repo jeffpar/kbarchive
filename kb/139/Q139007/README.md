@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139007: &quot;Unable to Find&quot; Mastering Visual FoxPro Error Upon Startup"
-permalink: kb/139/Q139007/
+permalink: /kb/139/Q139007/
 ---
 
 ## Q139007: &quot;Unable to Find&quot; Mastering Visual FoxPro Error Upon Startup

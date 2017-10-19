@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181186: XFOR: CCMC Doesn't Work w/ Exchange Installed to Long Directory"
-permalink: kb/181/Q181186/
+permalink: /kb/181/Q181186/
 ---
 
 ## Q181186: XFOR: CCMC Doesn't Work w/ Exchange Installed to Long Directory

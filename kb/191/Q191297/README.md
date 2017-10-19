@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191297: SMS: SMSEXEC May Dr Watson If a Distribution Server Is Inactive"
-permalink: kb/191/Q191297/
+permalink: /kb/191/Q191297/
 ---
 
 ## Q191297: SMS: SMSEXEC May Dr Watson If a Distribution Server Is Inactive

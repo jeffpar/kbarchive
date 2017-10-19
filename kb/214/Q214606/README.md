@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214606: Dr. Watson Does Not Return Proper Exit Code for an Application"
-permalink: kb/214/Q214606/
+permalink: /kb/214/Q214606/
 ---
 
 ## Q214606: Dr. Watson Does Not Return Proper Exit Code for an Application

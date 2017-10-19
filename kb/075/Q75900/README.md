@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75900: Second Hard Disk Inaccessible Using SMARTDrive in Enhanced"
-permalink: kb/075/Q75900/
+permalink: /kb/075/Q75900/
 ---
 
 ## Q75900: Second Hard Disk Inaccessible Using SMARTDrive in Enhanced

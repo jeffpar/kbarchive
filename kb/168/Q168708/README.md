@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168708: HOWTO: Performing Transactions with SQL Server 6.x"
-permalink: kb/168/Q168708/
+permalink: /kb/168/Q168708/
 ---
 
 ## Q168708: HOWTO: Performing Transactions with SQL Server 6.x

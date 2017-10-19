@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183484: WD97: List Styles Start at Zero After Saving as 6.0/95 or RTF"
-permalink: kb/183/Q183484/
+permalink: /kb/183/Q183484/
 ---
 
 ## Q183484: WD97: List Styles Start at Zero After Saving as 6.0/95 or RTF

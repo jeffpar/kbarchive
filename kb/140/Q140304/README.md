@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140304: How to Remove Objects from a Container at Run Time"
-permalink: kb/140/Q140304/
+permalink: /kb/140/Q140304/
 ---
 
 ## Q140304: How to Remove Objects from a Container at Run Time

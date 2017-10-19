@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139737: STOP 0xC0000221 After Upgrading to SP3 on Compaq Proliant"
-permalink: kb/139/Q139737/
+permalink: /kb/139/Q139737/
 ---
 
 ## Q139737: STOP 0xC0000221 After Upgrading to SP3 on Compaq Proliant

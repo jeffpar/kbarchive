@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72016: Loading Networks into UMBs with MS-DOS 5.0"
-permalink: kb/072/Q72016/
+permalink: /kb/072/Q72016/
 ---
 
 ## Q72016: Loading Networks into UMBs with MS-DOS 5.0

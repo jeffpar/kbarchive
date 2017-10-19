@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234334: SMSINST: System32 Directory Remains Open After User Login"
-permalink: kb/234/Q234334/
+permalink: /kb/234/Q234334/
 ---
 
 ## Q234334: SMSINST: System32 Directory Remains Open After User Login

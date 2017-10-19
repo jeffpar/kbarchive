@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180569: XADM: Counting Age in Clean Mailbox"
-permalink: kb/180/Q180569/
+permalink: /kb/180/Q180569/
 ---
 
 ## Q180569: XADM: Counting Age in Clean Mailbox

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301445: FP: Error Message When You Install Personal Web Server"
-permalink: kb/301/Q301445/
+permalink: /kb/301/Q301445/
 ---
 
 ## Q301445: FP: Error Message When You Install Personal Web Server

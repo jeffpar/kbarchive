@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105634: PRB: Records from Other Platforms Remain in .SCX/.FRX"
-permalink: kb/105/Q105634/
+permalink: /kb/105/Q105634/
 ---
 
 ## Q105634: PRB: Records from Other Platforms Remain in .SCX/.FRX

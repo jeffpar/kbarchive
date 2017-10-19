@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186150: NetBEUI May Hang When Using Arcnet Under Heavy Network Traffic"
-permalink: kb/186/Q186150/
+permalink: /kb/186/Q186150/
 ---
 
 ## Q186150: NetBEUI May Hang When Using Arcnet Under Heavy Network Traffic

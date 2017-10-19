@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142558: Adding Mime Types to Internet Information Server"
-permalink: kb/142/Q142558/
+permalink: /kb/142/Q142558/
 ---
 
 ## Q142558: Adding Mime Types to Internet Information Server

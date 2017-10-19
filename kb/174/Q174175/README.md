@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174175: XFOR: Some Exchange Server Non-Delivery Report Codes"
-permalink: kb/174/Q174175/
+permalink: /kb/174/Q174175/
 ---
 
 ## Q174175: XFOR: Some Exchange Server Non-Delivery Report Codes

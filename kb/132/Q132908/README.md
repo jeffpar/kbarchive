@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132908: Error Message: Could Not Start Print Job"
-permalink: kb/132/Q132908/
+permalink: /kb/132/Q132908/
 ---
 
 ## Q132908: Error Message: Could Not Start Print Job

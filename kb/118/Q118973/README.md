@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118973: Err Msg: Login Failure Account Restriction w/ NetWare Gateway"
-permalink: kb/118/Q118973/
+permalink: /kb/118/Q118973/
 ---
 
 ## Q118973: Err Msg: Login Failure Account Restriction w/ NetWare Gateway

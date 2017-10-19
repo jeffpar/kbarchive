@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258301: XADM: Running Isinteg -t When Isinteg Fails For Lack of Space"
-permalink: kb/258/Q258301/
+permalink: /kb/258/Q258301/
 ---
 
 ## Q258301: XADM: Running Isinteg -t When Isinteg Fails For Lack of Space

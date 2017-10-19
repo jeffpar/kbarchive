@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263376: SMS: Distribution Manager Deletes Entire Source in Shared Folder"
-permalink: kb/263/Q263376/
+permalink: /kb/263/Q263376/
 ---
 
 ## Q263376: SMS: Distribution Manager Deletes Entire Source in Shared Folder

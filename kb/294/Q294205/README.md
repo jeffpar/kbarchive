@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294205: Additional SNA Services Not Functional After Restoring Com.cfg"
-permalink: kb/294/Q294205/
+permalink: /kb/294/Q294205/
 ---
 
 ## Q294205: Additional SNA Services Not Functional After Restoring Com.cfg

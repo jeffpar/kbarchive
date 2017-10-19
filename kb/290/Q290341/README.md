@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290341: IIS5 OWA: Configuring Internet Authentication in Exchange 2000"
-permalink: kb/290/Q290341/
+permalink: /kb/290/Q290341/
 ---
 
 ## Q290341: IIS5 OWA: Configuring Internet Authentication in Exchange 2000

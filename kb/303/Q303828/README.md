@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303828: BUG: Installing MSDN Does Not Enable MDSN Help Bars in VFP 7.0"
-permalink: kb/303/Q303828/
+permalink: /kb/303/Q303828/
 ---
 
 ## Q303828: BUG: Installing MSDN Does Not Enable MDSN Help Bars in VFP 7.0

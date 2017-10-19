@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132611: System Performance Slow When Windows 95 Starts the First Time"
-permalink: kb/132/Q132611/
+permalink: /kb/132/Q132611/
 ---
 
 ## Q132611: System Performance Slow When Windows 95 Starts the First Time

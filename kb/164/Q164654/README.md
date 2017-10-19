@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164654: SMS: SystemRole May Be Either &quot;Workstation&quot; or &quot;WorkStation&quot;"
-permalink: kb/164/Q164654/
+permalink: /kb/164/Q164654/
 ---
 
 ## Q164654: SMS: SystemRole May Be Either &quot;Workstation&quot; or &quot;WorkStation&quot;

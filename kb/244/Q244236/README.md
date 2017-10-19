@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244236: HOWTO: Use the System Color on ScrollBars Under Windows NT"
-permalink: kb/244/Q244236/
+permalink: /kb/244/Q244236/
 ---
 
 ## Q244236: HOWTO: Use the System Color on ScrollBars Under Windows NT

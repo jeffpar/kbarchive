@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197948: HOWTO: Get Domain Information Using ADSI"
-permalink: kb/197/Q197948/
+permalink: /kb/197/Q197948/
 ---
 
 ## Q197948: HOWTO: Get Domain Information Using ADSI

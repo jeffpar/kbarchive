@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230373: XIMS: IMAP4 Login to MCIS Fails; Can't Find Mail Account"
-permalink: kb/230/Q230373/
+permalink: /kb/230/Q230373/
 ---
 
 ## Q230373: XIMS: IMAP4 Login to MCIS Fails; Can't Find Mail Account

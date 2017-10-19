@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263307: MS00-036: Excessive Browser Announcements May Force Computer Shu"
-permalink: kb/263/Q263307/
+permalink: /kb/263/Q263307/
 ---
 
 ## Q263307: MS00-036: Excessive Browser Announcements May Force Computer Shu

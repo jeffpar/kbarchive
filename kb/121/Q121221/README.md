@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121221: Money: Modem Troubleshooting Guide for Windows 3.x"
-permalink: kb/121/Q121221/
+permalink: /kb/121/Q121221/
 ---
 
 ## Q121221: Money: Modem Troubleshooting Guide for Windows 3.x

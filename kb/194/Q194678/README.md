@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194678: HOWTO: SQL Server Identity, OLE DB Templates and OLE DB for ODBC"
-permalink: kb/194/Q194678/
+permalink: /kb/194/Q194678/
 ---
 
 ## Q194678: HOWTO: SQL Server Identity, OLE DB Templates and OLE DB for ODBC

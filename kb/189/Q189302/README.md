@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189302: BUG: RequestTimeout = 0 Does Not Work Within ITC"
-permalink: kb/189/Q189302/
+permalink: /kb/189/Q189302/
 ---
 
 ## Q189302: BUG: RequestTimeout = 0 Does Not Work Within ITC

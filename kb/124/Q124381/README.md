@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124381: WIN.INI Not Found by SETLS from DOS on LAN Manager Clients"
-permalink: kb/124/Q124381/
+permalink: /kb/124/Q124381/
 ---
 
 ## Q124381: WIN.INI Not Found by SETLS from DOS on LAN Manager Clients

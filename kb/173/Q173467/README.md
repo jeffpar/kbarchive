@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173467: MSN Error Message: Potential Safety Violation Avoided"
-permalink: kb/173/Q173467/
+permalink: /kb/173/Q173467/
 ---
 
 ## Q173467: MSN Error Message: Potential Safety Violation Avoided

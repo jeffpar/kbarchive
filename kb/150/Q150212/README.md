@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150212: FIX: Wrong Help Topic Context for IntegralHeight Property"
-permalink: kb/150/Q150212/
+permalink: /kb/150/Q150212/
 ---
 
 ## Q150212: FIX: Wrong Help Topic Context for IntegralHeight Property

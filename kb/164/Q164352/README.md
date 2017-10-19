@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164352: Stop 0x00000050 in Tcpip.sys Caused by Winsock Applications"
-permalink: kb/164/Q164352/
+permalink: /kb/164/Q164352/
 ---
 
 ## Q164352: Stop 0x00000050 in Tcpip.sys Caused by Winsock Applications

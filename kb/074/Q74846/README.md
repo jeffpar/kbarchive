@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74846: Microsoft's Works 2.0a Does Not Run in a Window"
-permalink: kb/074/Q74846/
+permalink: /kb/074/Q74846/
 ---
 
 ## Q74846: Microsoft's Works 2.0a Does Not Run in a Window

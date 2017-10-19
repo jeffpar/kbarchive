@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253788: Unable to Open Images in Same Window"
-permalink: kb/253/Q253788/
+permalink: /kb/253/Q253788/
 ---
 
 ## Q253788: Unable to Open Images in Same Window

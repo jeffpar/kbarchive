@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164585: FIX: VSS Log Files Not Deleted Correctly on NetWare"
-permalink: kb/164/Q164585/
+permalink: /kb/164/Q164585/
 ---
 
 ## Q164585: FIX: VSS Log Files Not Deleted Correctly on NetWare

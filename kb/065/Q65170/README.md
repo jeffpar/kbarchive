@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65170: Problems with Zenith 286 Desktop Systems with 84-Key Keyboards"
-permalink: kb/065/Q65170/
+permalink: /kb/065/Q65170/
 ---
 
 ## Q65170: Problems with Zenith 286 Desktop Systems with 84-Key Keyboards

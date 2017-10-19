@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297358: Mac Outlook Err Msg About MS OLE Base Library"
-permalink: kb/297/Q297358/
+permalink: /kb/297/Q297358/
 ---
 
 ## Q297358: Mac Outlook Err Msg About MS OLE Base Library

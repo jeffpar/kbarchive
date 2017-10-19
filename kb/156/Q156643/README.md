@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156643: PRB: Company Name Does Not Appear in Version Dialog"
-permalink: kb/156/Q156643/
+permalink: /kb/156/Q156643/
 ---
 
 ## Q156643: PRB: Company Name Does Not Appear in Version Dialog

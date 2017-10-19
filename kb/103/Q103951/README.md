@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103951: OSI Model: Vertical Interface Terminology"
-permalink: kb/103/Q103951/
+permalink: /kb/103/Q103951/
 ---
 
 ## Q103951: OSI Model: Vertical Interface Terminology

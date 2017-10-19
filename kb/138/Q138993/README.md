@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138993: PRB: Print Break in MFC App Running in Windows NT 3.51 Checked"
-permalink: kb/138/Q138993/
+permalink: /kb/138/Q138993/
 ---
 
 ## Q138993: PRB: Print Break in MFC App Running in Windows NT 3.51 Checked

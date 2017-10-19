@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217012: HOWTO: Format Strings to Right-Justify When Printing"
-permalink: kb/217/Q217012/
+permalink: /kb/217/Q217012/
 ---
 
 ## Q217012: HOWTO: Format Strings to Right-Justify When Printing

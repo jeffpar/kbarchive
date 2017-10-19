@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169536: XFOR: cc:Mail DB8 Migration Creates Randomized Password"
-permalink: kb/169/Q169536/
+permalink: /kb/169/Q169536/
 ---
 
 ## Q169536: XFOR: cc:Mail DB8 Migration Creates Randomized Password

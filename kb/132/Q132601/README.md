@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132601: Shortcut to MS-DOS-Based Program on Network Drive Fails"
-permalink: kb/132/Q132601/
+permalink: /kb/132/Q132601/
 ---
 
 ## Q132601: Shortcut to MS-DOS-Based Program on Network Drive Fails

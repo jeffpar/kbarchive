@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244906: Deny Access to Programs with Software Metering in Offline Mode"
-permalink: kb/244/Q244906/
+permalink: /kb/244/Q244906/
 ---
 
 ## Q244906: Deny Access to Programs with Software Metering in Offline Mode

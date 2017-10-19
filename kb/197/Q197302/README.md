@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197302: How to Install MS Loopback with Unattended Installations"
-permalink: kb/197/Q197302/
+permalink: /kb/197/Q197302/
 ---
 
 ## Q197302: How to Install MS Loopback with Unattended Installations

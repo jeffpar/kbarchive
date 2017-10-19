@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164834: XADM: Empty Notification-Requests Bitstring Causes Error"
-permalink: kb/164/Q164834/
+permalink: /kb/164/Q164834/
 ---
 
 ## Q164834: XADM: Empty Notification-Requests Bitstring Causes Error

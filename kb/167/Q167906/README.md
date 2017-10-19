@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167906: PRB: Access 7.0 Database Corrupt After Calling RepairDatabase"
-permalink: kb/167/Q167906/
+permalink: /kb/167/Q167906/
 ---
 
 ## Q167906: PRB: Access 7.0 Database Corrupt After Calling RepairDatabase

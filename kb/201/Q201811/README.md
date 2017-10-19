@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201811: XADM: Arcserve User Account Affects Database Restore"
-permalink: kb/201/Q201811/
+permalink: /kb/201/Q201811/
 ---
 
 ## Q201811: XADM: Arcserve User Account Affects Database Restore

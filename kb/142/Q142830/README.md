@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142830: BUG: Gauge OCX Has Problems with 256-Color Bitmaps"
-permalink: kb/142/Q142830/
+permalink: /kb/142/Q142830/
 ---
 
 ## Q142830: BUG: Gauge OCX Has Problems with 256-Color Bitmaps

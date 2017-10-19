@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248116: HOWTO: Use the Session Class to Provide a Private Data Session"
-permalink: kb/248/Q248116/
+permalink: /kb/248/Q248116/
 ---
 
 ## Q248116: HOWTO: Use the Session Class to Provide a Private Data Session

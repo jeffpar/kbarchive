@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170583: Zero Length RU Causes a Blank Page to be Printed"
-permalink: kb/170/Q170583/
+permalink: /kb/170/Q170583/
 ---
 
 ## Q170583: Zero Length RU Causes a Blank Page to be Printed

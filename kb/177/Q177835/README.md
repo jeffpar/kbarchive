@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177835: XFOR: Extended Characters on Addresses Are Not Recognized"
-permalink: kb/177/Q177835/
+permalink: /kb/177/Q177835/
 ---
 
 ## Q177835: XFOR: Extended Characters on Addresses Are Not Recognized

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268977: StarLancer: Does Not Recognize Disc 1 After Mission 15"
-permalink: kb/268/Q268977/
+permalink: /kb/268/Q268977/
 ---
 
 ## Q268977: StarLancer: Does Not Recognize Disc 1 After Mission 15

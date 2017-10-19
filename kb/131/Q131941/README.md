@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131941: PRB: Class Browser Does Not Recognize Inheritance"
-permalink: kb/131/Q131941/
+permalink: /kb/131/Q131941/
 ---
 
 ## Q131941: PRB: Class Browser Does Not Recognize Inheritance

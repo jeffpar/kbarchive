@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63219: &quot;386 Display Type Mismatch&quot; Error Starting MS-DOS Apps"
-permalink: kb/063/Q63219/
+permalink: /kb/063/Q63219/
 ---
 
 ## Q63219: &quot;386 Display Type Mismatch&quot; Error Starting MS-DOS Apps

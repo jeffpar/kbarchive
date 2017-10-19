@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132629: ScanDisk Does Not List Correct Drives"
-permalink: kb/132/Q132629/
+permalink: /kb/132/Q132629/
 ---
 
 ## Q132629: ScanDisk Does Not List Correct Drives

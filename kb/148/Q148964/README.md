@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148964: Windows 95 Running Server Tools Sets Incorrect Permissions"
-permalink: kb/148/Q148964/
+permalink: /kb/148/Q148964/
 ---
 
 ## Q148964: Windows 95 Running Server Tools Sets Incorrect Permissions

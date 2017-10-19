@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163488: SMS: PCM Processes .Ins File Only When .Ins File Is Modified"
-permalink: kb/163/Q163488/
+permalink: /kb/163/Q163488/
 ---
 
 ## Q163488: SMS: PCM Processes .Ins File Only When .Ins File Is Modified

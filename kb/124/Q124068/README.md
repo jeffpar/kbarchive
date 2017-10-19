@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124068: SMS Sender Properties Help Incorrectly References HERMSRHx"
-permalink: kb/124/Q124068/
+permalink: /kb/124/Q124068/
 ---
 
 ## Q124068: SMS Sender Properties Help Incorrectly References HERMSRHx

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76792: MS-DOS Setup Repeatedly Asks for the Same Disk"
-permalink: kb/076/Q76792/
+permalink: /kb/076/Q76792/
 ---
 
 ## Q76792: MS-DOS Setup Repeatedly Asks for the Same Disk

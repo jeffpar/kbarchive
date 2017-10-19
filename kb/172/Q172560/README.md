@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172560: HOWTO: Switch Focus to a Visual FoxPro Application"
-permalink: kb/172/Q172560/
+permalink: /kb/172/Q172560/
 ---
 
 ## Q172560: HOWTO: Switch Focus to a Visual FoxPro Application

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163329: Fatal Exception 0E in WSIPX Using Windows Sockets Program"
-permalink: kb/163/Q163329/
+permalink: /kb/163/Q163329/
 ---
 
 ## Q163329: Fatal Exception 0E in WSIPX Using Windows Sockets Program

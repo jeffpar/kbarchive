@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177273: Err Msg: The Server Name You Specified Cannot Be Found..."
-permalink: kb/177/Q177273/
+permalink: /kb/177/Q177273/
 ---
 
 ## Q177273: Err Msg: The Server Name You Specified Cannot Be Found...

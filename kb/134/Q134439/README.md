@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134439: Mastering Series Titles: Error Viewing .Avi Files"
-permalink: kb/134/Q134439/
+permalink: /kb/134/Q134439/
 ---
 
 ## Q134439: Mastering Series Titles: Error Viewing .Avi Files

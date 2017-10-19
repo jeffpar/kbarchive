@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130080: Error Messages with MS Exchange and Novell Post Office"
-permalink: kb/130/Q130080/
+permalink: /kb/130/Q130080/
 ---
 
 ## Q130080: Error Messages with MS Exchange and Novell Post Office

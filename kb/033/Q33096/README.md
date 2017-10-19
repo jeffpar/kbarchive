@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q33096: INFO: Drawing Outside a Window's Client Area"
-permalink: kb/033/Q33096/
+permalink: /kb/033/Q33096/
 ---
 
 ## Q33096: INFO: Drawing Outside a Window's Client Area

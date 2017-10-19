@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151491: FIX: copy() Member of _bstr_t in comutl.h Doesn't Copy"
-permalink: kb/151/Q151491/
+permalink: /kb/151/Q151491/
 ---
 
 ## Q151491: FIX: copy() Member of _bstr_t in comutl.h Doesn't Copy

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180004: Public Folder Permissions Are Cumulative"
-permalink: kb/180/Q180004/
+permalink: /kb/180/Q180004/
 ---
 
 ## Q180004: Public Folder Permissions Are Cumulative

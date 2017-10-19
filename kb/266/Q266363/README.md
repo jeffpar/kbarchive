@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266363: BUG: Fatal Error When Closing Forms That Use DHTML Edit Control"
-permalink: kb/266/Q266363/
+permalink: /kb/266/Q266363/
 ---
 
 ## Q266363: BUG: Fatal Error When Closing Forms That Use DHTML Edit Control

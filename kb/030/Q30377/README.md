@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q30377: FIX: Error Message A2051 Incorrectly Generated"
-permalink: kb/030/Q30377/
+permalink: /kb/030/Q30377/
 ---
 
 ## Q30377: FIX: Error Message A2051 Incorrectly Generated

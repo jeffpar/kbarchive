@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124851: MSB Human: Program Hangs in Classroom"
-permalink: kb/124/Q124851/
+permalink: /kb/124/Q124851/
 ---
 
 ## Q124851: MSB Human: Program Hangs in Classroom

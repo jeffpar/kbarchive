@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158818: FP97: Help Topic Does Not Exist in Groups Tab of Web Permissions"
-permalink: kb/158/Q158818/
+permalink: /kb/158/Q158818/
 ---
 
 ## Q158818: FP97: Help Topic Does Not Exist in Groups Tab of Web Permissions

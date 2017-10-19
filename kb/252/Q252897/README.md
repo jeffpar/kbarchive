@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252897: TAMA Does Not Run Update Script for Management Agent"
-permalink: kb/252/Q252897/
+permalink: /kb/252/Q252897/
 ---
 
 ## Q252897: TAMA Does Not Run Update Script for Management Agent

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132615: Details Tab Incorrectly Selected After Invalid Separator Page"
-permalink: kb/132/Q132615/
+permalink: /kb/132/Q132615/
 ---
 
 ## Q132615: Details Tab Incorrectly Selected After Invalid Separator Page

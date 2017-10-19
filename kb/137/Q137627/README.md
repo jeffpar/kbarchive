@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137627: HOWTO: Change the Mouse Pointer to Any .CUR or .ANI File"
-permalink: kb/137/Q137627/
+permalink: /kb/137/Q137627/
 ---
 
 ## Q137627: HOWTO: Change the Mouse Pointer to Any .CUR or .ANI File

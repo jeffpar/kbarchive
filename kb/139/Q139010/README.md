@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139010: DEC Alpha STOP C000000143 on AlphaServer 1000"
-permalink: kb/139/Q139010/
+permalink: /kb/139/Q139010/
 ---
 
 ## Q139010: DEC Alpha STOP C000000143 on AlphaServer 1000

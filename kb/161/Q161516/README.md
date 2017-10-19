@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161516: Troubleshooting Modem Problems Under Windows NT 4.0"
-permalink: kb/161/Q161516/
+permalink: /kb/161/Q161516/
 ---
 
 ## Q161516: Troubleshooting Modem Problems Under Windows NT 4.0

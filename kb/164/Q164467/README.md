@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164467: XCLN: Chinese Translation of ShivaRemote Message Is Wrong"
-permalink: kb/164/Q164467/
+permalink: /kb/164/Q164467/
 ---
 
 ## Q164467: XCLN: Chinese Translation of ShivaRemote Message Is Wrong

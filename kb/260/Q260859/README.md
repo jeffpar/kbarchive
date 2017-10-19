@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260859: StarLancer: Computer Hangs When You Start Instant Action Mission"
-permalink: kb/260/Q260859/
+permalink: /kb/260/Q260859/
 ---
 
 ## Q260859: StarLancer: Computer Hangs When You Start Instant Action Mission

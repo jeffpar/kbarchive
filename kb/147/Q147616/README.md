@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147616: Current History Registry Key Is Not Updated Properly"
-permalink: kb/147/Q147616/
+permalink: /kb/147/Q147616/
 ---
 
 ## Q147616: Current History Registry Key Is Not Updated Properly

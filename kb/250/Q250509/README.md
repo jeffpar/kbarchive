@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250509: XADM: Using Userdump.exe to Capture State of Information Store"
-permalink: kb/250/Q250509/
+permalink: /kb/250/Q250509/
 ---
 
 ## Q250509: XADM: Using Userdump.exe to Capture State of Information Store

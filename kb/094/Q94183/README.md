@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94183: PC WSPlus: Schedule Distribution Command-Line Parameters"
-permalink: kb/094/Q94183/
+permalink: /kb/094/Q94183/
 ---
 
 ## Q94183: PC WSPlus: Schedule Distribution Command-Line Parameters

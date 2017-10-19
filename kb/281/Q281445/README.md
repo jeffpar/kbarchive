@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281445: WINS PersonaNonGrata Key Doesn't Restrict IPs During Replication"
-permalink: kb/281/Q281445/
+permalink: /kb/281/Q281445/
 ---
 
 ## Q281445: WINS PersonaNonGrata Key Doesn't Restrict IPs During Replication

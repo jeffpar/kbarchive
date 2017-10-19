@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88784: Using the LaserMaster Print Card and Windows"
-permalink: kb/088/Q88784/
+permalink: /kb/088/Q88784/
 ---
 
 ## Q88784: Using the LaserMaster Print Card and Windows

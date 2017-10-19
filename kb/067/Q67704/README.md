@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67704: Program Manager Doesn't Shrink Group to Program Item Icon"
-permalink: kb/067/Q67704/
+permalink: /kb/067/Q67704/
 ---
 
 ## Q67704: Program Manager Doesn't Shrink Group to Program Item Icon

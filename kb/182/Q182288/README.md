@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182288: RPC May Cause System to Stop Responding during Shutdown"
-permalink: kb/182/Q182288/
+permalink: /kb/182/Q182288/
 ---
 
 ## Q182288: RPC May Cause System to Stop Responding during Shutdown

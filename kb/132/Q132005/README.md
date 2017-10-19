@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132005: DOCERR: AllocSelector &amp; FreeSelector Documentation Incomplete"
-permalink: kb/132/Q132005/
+permalink: /kb/132/Q132005/
 ---
 
 ## Q132005: DOCERR: AllocSelector &amp; FreeSelector Documentation Incomplete

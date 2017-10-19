@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99277: PC Win: Err Msg: Your Message File Could Not Be Opened..."
-permalink: kb/099/Q99277/
+permalink: /kb/099/Q99277/
 ---
 
 ## Q99277: PC Win: Err Msg: Your Message File Could Not Be Opened...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114359: Problems Installing MS-DOS 6.21 Upgrade over Novell DOS 7"
-permalink: kb/114/Q114359/
+permalink: /kb/114/Q114359/
 ---
 
 ## Q114359: Problems Installing MS-DOS 6.21 Upgrade over Novell DOS 7

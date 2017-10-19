@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304664: SMS: SMS Client May Log Exceptions and Report Status Message 669"
-permalink: kb/304/Q304664/
+permalink: /kb/304/Q304664/
 ---
 
 ## Q304664: SMS: SMS Client May Log Exceptions and Report Status Message 669

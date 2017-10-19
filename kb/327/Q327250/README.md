@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q327250: DirectDraw May Not Work After You Install Windows Installer 2.0"
-permalink: kb/327/Q327250/
+permalink: /kb/327/Q327250/
 ---
 
 ## Q327250: DirectDraw May Not Work After You Install Windows Installer 2.0

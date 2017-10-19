@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231242: SMS: &quot;Right Now&quot; Crystal Reports Schedule Incorrectly"
-permalink: kb/231/Q231242/
+permalink: /kb/231/Q231242/
 ---
 
 ## Q231242: SMS: &quot;Right Now&quot; Crystal Reports Schedule Incorrectly

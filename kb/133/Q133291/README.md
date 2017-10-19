@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133291: Windows 95: How to Change an Audio Driver"
-permalink: kb/133/Q133291/
+permalink: /kb/133/Q133291/
 ---
 
 ## Q133291: Windows 95: How to Change an Audio Driver

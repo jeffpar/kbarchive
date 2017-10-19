@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73184: BUG: Crash with frexp() in Small or Medium Model DLL"
-permalink: kb/073/Q73184/
+permalink: /kb/073/Q73184/
 ---
 
 ## Q73184: BUG: Crash with frexp() in Small or Medium Model DLL

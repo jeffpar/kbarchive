@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84779: DOC: Don't Call Destroy Function on Loaded Cursor or Icon"
-permalink: kb/084/Q84779/
+permalink: /kb/084/Q84779/
 ---
 
 ## Q84779: DOC: Don't Call Destroy Function on Loaded Cursor or Icon

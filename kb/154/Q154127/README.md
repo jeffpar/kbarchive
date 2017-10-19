@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154127: Only One Font Available in HyperTerminal"
-permalink: kb/154/Q154127/
+permalink: /kb/154/Q154127/
 ---
 
 ## Q154127: Only One Font Available in HyperTerminal

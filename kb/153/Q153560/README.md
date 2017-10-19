@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153560: SMS: Cannot Distinguish Long Package Command Strings"
-permalink: kb/153/Q153560/
+permalink: /kb/153/Q153560/
 ---
 
 ## Q153560: SMS: Cannot Distinguish Long Package Command Strings

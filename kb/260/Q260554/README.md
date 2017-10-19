@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260554: XFOR: Microsoft Mail Connector Leaks Memory on Windows 2000"
-permalink: kb/260/Q260554/
+permalink: /kb/260/Q260554/
 ---
 
 ## Q260554: XFOR: Microsoft Mail Connector Leaks Memory on Windows 2000

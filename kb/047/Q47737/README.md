@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47737: INFO: filelength() Includes EOF Character in Return Value"
-permalink: kb/047/Q47737/
+permalink: /kb/047/Q47737/
 ---
 
 ## Q47737: INFO: filelength() Includes EOF Character in Return Value

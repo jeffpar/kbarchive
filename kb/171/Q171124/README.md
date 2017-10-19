@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171124: SMS: 3COM Network Card May Cause Audit16 to Fail on Win95 Client"
-permalink: kb/171/Q171124/
+permalink: /kb/171/Q171124/
 ---
 
 ## Q171124: SMS: 3COM Network Card May Cause Audit16 to Fail on Win95 Client

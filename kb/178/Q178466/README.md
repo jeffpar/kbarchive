@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178466: XCLN: Folder Visible Option Not Available"
-permalink: kb/178/Q178466/
+permalink: /kb/178/Q178466/
 ---
 
 ## Q178466: XCLN: Folder Visible Option Not Available

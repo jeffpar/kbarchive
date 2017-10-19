@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115492: SMTP: Troubleshooting the TCP/IP Layer of the Mail Gateway"
-permalink: kb/115/Q115492/
+permalink: /kb/115/Q115492/
 ---
 
 ## Q115492: SMTP: Troubleshooting the TCP/IP Layer of the Mail Gateway

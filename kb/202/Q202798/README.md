@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202798: PRB: Browser Stops When Calling a Desktop Application from ASP"
-permalink: kb/202/Q202798/
+permalink: /kb/202/Q202798/
 ---
 
 ## Q202798: PRB: Browser Stops When Calling a Desktop Application from ASP

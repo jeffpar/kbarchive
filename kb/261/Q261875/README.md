@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261875: XADM: Original Domain Controller Needed for New User Attribubtes"
-permalink: kb/261/Q261875/
+permalink: /kb/261/Q261875/
 ---
 
 ## Q261875: XADM: Original Domain Controller Needed for New User Attribubtes

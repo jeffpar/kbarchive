@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175576: MSN 2.51 Retail Release Uninstal.txt File Contents"
-permalink: kb/175/Q175576/
+permalink: /kb/175/Q175576/
 ---
 
 ## Q175576: MSN 2.51 Retail Release Uninstal.txt File Contents

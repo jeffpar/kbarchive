@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85807: Dragging Icon in Object Packager Causes &quot;Divide by Zero&quot; Error"
-permalink: kb/085/Q85807/
+permalink: /kb/085/Q85807/
 ---
 
 ## Q85807: Dragging Icon in Object Packager Causes &quot;Divide by Zero&quot; Error

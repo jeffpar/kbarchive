@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157463: WD97: How to Use Calculate on Exit in a Forms Document"
-permalink: kb/157/Q157463/
+permalink: /kb/157/Q157463/
 ---
 
 ## Q157463: WD97: How to Use Calculate on Exit in a Forms Document

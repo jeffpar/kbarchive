@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134591: Games Using the PC Speaker May Run Slowly or Hang"
-permalink: kb/134/Q134591/
+permalink: /kb/134/Q134591/
 ---
 
 ## Q134591: Games Using the PC Speaker May Run Slowly or Hang

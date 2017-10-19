@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89336: &quot;Write Protected Disk&quot; Errors in WinLogin SETUP"
-permalink: kb/089/Q89336/
+permalink: /kb/089/Q89336/
 ---
 
 ## Q89336: &quot;Write Protected Disk&quot; Errors in WinLogin SETUP

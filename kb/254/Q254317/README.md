@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254317: MapPoint: How to Export and Copy Maps to Pocket Streets"
-permalink: kb/254/Q254317/
+permalink: /kb/254/Q254317/
 ---
 
 ## Q254317: MapPoint: How to Export and Copy Maps to Pocket Streets

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267869: Windows NT 4.0 SP 6 May Make Empty Folder Structure C:&#92;Inetpub"
-permalink: kb/267/Q267869/
+permalink: /kb/267/Q267869/
 ---
 
 ## Q267869: Windows NT 4.0 SP 6 May Make Empty Folder Structure C:&#92;Inetpub

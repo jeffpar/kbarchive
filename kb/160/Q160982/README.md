@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160982: Files Installed with Microsoft NetWare Directory Services"
-permalink: kb/160/Q160982/
+permalink: /kb/160/Q160982/
 ---
 
 ## Q160982: Files Installed with Microsoft NetWare Directory Services

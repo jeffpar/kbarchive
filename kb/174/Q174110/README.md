@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174110: Error Message: CCAPI.DLL Error"
-permalink: kb/174/Q174110/
+permalink: /kb/174/Q174110/
 ---
 
 ## Q174110: Error Message: CCAPI.DLL Error

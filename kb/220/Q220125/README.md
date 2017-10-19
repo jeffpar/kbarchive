@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220125: FP2000: DHTML Effects Don't Work When Font Color Applied to Text"
-permalink: kb/220/Q220125/
+permalink: /kb/220/Q220125/
 ---
 
 ## Q220125: FP2000: DHTML Effects Don't Work When Font Color Applied to Text

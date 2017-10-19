@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269007: XADM: Issues While Running Multiple Link Monitor Sessions"
-permalink: kb/269/Q269007/
+permalink: /kb/269/Q269007/
 ---
 
 ## Q269007: XADM: Issues While Running Multiple Link Monitor Sessions

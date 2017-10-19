@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103399: SAMPLE: NSetup.exe Reboots an MSSetup Script on User Request"
-permalink: kb/103/Q103399/
+permalink: /kb/103/Q103399/
 ---
 
 ## Q103399: SAMPLE: NSetup.exe Reboots an MSSetup Script on User Request

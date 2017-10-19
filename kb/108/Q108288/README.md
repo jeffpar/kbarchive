@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108288: How CodeView Locates Source Files"
-permalink: kb/108/Q108288/
+permalink: /kb/108/Q108288/
 ---
 
 ## Q108288: How CodeView Locates Source Files

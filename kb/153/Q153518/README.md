@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153518: Font Display/Screen Redraw Problems w/ WUSER on Compaq Qvision"
-permalink: kb/153/Q153518/
+permalink: /kb/153/Q153518/
 ---
 
 ## Q153518: Font Display/Screen Redraw Problems w/ WUSER on Compaq Qvision

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165534: Link Service Not Configured with Short Length of Service Title"
-permalink: kb/165/Q165534/
+permalink: /kb/165/Q165534/
 ---
 
 ## Q165534: Link Service Not Configured with Short Length of Service Title

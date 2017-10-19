@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116338: PRB: Problem Entering Footnotes in Word for Windows 6.0"
-permalink: kb/116/Q116338/
+permalink: /kb/116/Q116338/
 ---
 
 ## Q116338: PRB: Problem Entering Footnotes in Word for Windows 6.0

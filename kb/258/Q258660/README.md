@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258660: Baseball 2001: Unable to Start the Game"
-permalink: kb/258/Q258660/
+permalink: /kb/258/Q258660/
 ---
 
 ## Q258660: Baseball 2001: Unable to Start the Game

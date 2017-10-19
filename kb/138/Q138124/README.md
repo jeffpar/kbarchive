@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138124: DHCPADMN.EXE Reports Incorrect Server Configuration"
-permalink: kb/138/Q138124/
+permalink: /kb/138/Q138124/
 ---
 
 ## Q138124: DHCPADMN.EXE Reports Incorrect Server Configuration

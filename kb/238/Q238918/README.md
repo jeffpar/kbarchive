@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238918: Availability of Microsoft Office Document Open Confirmation Tool"
-permalink: kb/238/Q238918/
+permalink: /kb/238/Q238918/
 ---
 
 ## Q238918: Availability of Microsoft Office Document Open Confirmation Tool

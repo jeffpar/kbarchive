@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108699: File Manager Error: &quot;Directory Does Not Exist&quot;"
-permalink: kb/108/Q108699/
+permalink: /kb/108/Q108699/
 ---
 
 ## Q108699: File Manager Error: &quot;Directory Does Not Exist&quot;

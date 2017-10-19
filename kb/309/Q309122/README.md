@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309122: PRB: VFP 6 Application Framework Class Doesn't Compile in  VFP 7"
-permalink: kb/309/Q309122/
+permalink: /kb/309/Q309122/
 ---
 
 ## Q309122: PRB: VFP 6 Application Framework Class Doesn't Compile in  VFP 7

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219341: Access Violation in Explorer When Using an Alternate Shell"
-permalink: kb/219/Q219341/
+permalink: /kb/219/Q219341/
 ---
 
 ## Q219341: Access Violation in Explorer When Using an Alternate Shell

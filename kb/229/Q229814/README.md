@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229814: Configuring IIS to Handle Heavy Usage"
-permalink: kb/229/Q229814/
+permalink: /kb/229/Q229814/
 ---
 
 ## Q229814: Configuring IIS to Handle Heavy Usage

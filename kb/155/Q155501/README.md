@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155501: WINS Client Stops Querying or Renewing with WINS"
-permalink: kb/155/Q155501/
+permalink: /kb/155/Q155501/
 ---
 
 ## Q155501: WINS Client Stops Querying or Renewing with WINS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76875: Audio Option and Windows with Multimedia Extensions Setup"
-permalink: kb/076/Q76875/
+permalink: /kb/076/Q76875/
 ---
 
 ## Q76875: Audio Option and Windows with Multimedia Extensions Setup

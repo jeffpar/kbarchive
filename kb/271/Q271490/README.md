@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271490: NETSET.EXE Cannot Change Machine Name And Join Domain Simultaneo"
-permalink: kb/271/Q271490/
+permalink: /kb/271/Q271490/
 ---
 
 ## Q271490: NETSET.EXE Cannot Change Machine Name And Join Domain Simultaneo

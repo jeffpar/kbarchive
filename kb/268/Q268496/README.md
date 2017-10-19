@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268496: XFOR: Migration Wizard Dr. Watson Migrating from GroupWise 5.5"
-permalink: kb/268/Q268496/
+permalink: /kb/268/Q268496/
 ---
 
 ## Q268496: XFOR: Migration Wizard Dr. Watson Migrating from GroupWise 5.5

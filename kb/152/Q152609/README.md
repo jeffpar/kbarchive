@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152609: PRB: Visual Basic Program Does Not Run on Other Computers"
-permalink: kb/152/Q152609/
+permalink: /kb/152/Q152609/
 ---
 
 ## Q152609: PRB: Visual Basic Program Does Not Run on Other Computers

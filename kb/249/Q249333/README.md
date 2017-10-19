@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249333: SMS: LSM Performs a Full Work Cycle on SMS Executive Restart"
-permalink: kb/249/Q249333/
+permalink: /kb/249/Q249333/
 ---
 
 ## Q249333: SMS: LSM Performs a Full Work Cycle on SMS Executive Restart

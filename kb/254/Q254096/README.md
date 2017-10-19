@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254096: OEM Support Tools Phase 2 Service Release 2 Availability"
-permalink: kb/254/Q254096/
+permalink: /kb/254/Q254096/
 ---
 
 ## Q254096: OEM Support Tools Phase 2 Service Release 2 Availability

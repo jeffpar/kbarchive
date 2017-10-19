@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85969: PC Win: Multiple Update Prompts with OLE Objects"
-permalink: kb/085/Q85969/
+permalink: /kb/085/Q85969/
 ---
 
 ## Q85969: PC Win: Multiple Update Prompts with OLE Objects

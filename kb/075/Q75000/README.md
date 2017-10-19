@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75000: PRB: Windows SDK Tools Group Icons Incorrect"
-permalink: kb/075/Q75000/
+permalink: /kb/075/Q75000/
 ---
 
 ## Q75000: PRB: Windows SDK Tools Group Icons Incorrect

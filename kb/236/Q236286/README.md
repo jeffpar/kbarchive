@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236286: PRB: Out of Memory Error Message Using the Rich Textbox Control"
-permalink: kb/236/Q236286/
+permalink: /kb/236/Q236286/
 ---
 
 ## Q236286: PRB: Out of Memory Error Message Using the Rich Textbox Control

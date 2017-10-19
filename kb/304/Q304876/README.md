@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304876: NNTP Service in Windows NT 4.0 Contains Memory Leak"
-permalink: kb/304/Q304876/
+permalink: /kb/304/Q304876/
 ---
 
 ## Q304876: NNTP Service in Windows NT 4.0 Contains Memory Leak

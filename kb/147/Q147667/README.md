@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147667: PRB: 'Invalid Picture' Error When Setting Metafile (WMF)"
-permalink: kb/147/Q147667/
+permalink: /kb/147/Q147667/
 ---
 
 ## Q147667: PRB: 'Invalid Picture' Error When Setting Metafile (WMF)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136653: PRB: SQLGetData w/ SQL_C_BINARY Causes GPF in 16-bit ODBC Test"
-permalink: kb/136/Q136653/
+permalink: /kb/136/Q136653/
 ---
 
 ## Q136653: PRB: SQLGetData w/ SQL_C_BINARY Causes GPF in 16-bit ODBC Test

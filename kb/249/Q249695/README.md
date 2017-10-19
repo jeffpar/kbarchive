@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249695: Encarta 2000: How to Install Entire CD-ROM or DVD-ROM Contents t"
-permalink: kb/249/Q249695/
+permalink: /kb/249/Q249695/
 ---
 
 ## Q249695: Encarta 2000: How to Install Entire CD-ROM or DVD-ROM Contents t

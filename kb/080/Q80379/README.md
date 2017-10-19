@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80379: Stepping Through Self-Modifying Code in CodeView"
-permalink: kb/080/Q80379/
+permalink: /kb/080/Q80379/
 ---
 
 ## Q80379: Stepping Through Self-Modifying Code in CodeView

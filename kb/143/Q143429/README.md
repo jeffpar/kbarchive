@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143429: FIX: Developer Studio Causes an Alignment Fault"
-permalink: kb/143/Q143429/
+permalink: /kb/143/Q143429/
 ---
 
 ## Q143429: FIX: Developer Studio Causes an Alignment Fault

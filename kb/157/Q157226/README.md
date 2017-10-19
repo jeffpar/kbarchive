@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157226: WD97: Can't Use Back, Forward Buttons After View HTML Source"
-permalink: kb/157/Q157226/
+permalink: /kb/157/Q157226/
 ---
 
 ## Q157226: WD97: Can't Use Back, Forward Buttons After View HTML Source

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117651: PC Forms: Err Msg: Invalid Package When Sending an E-Form"
-permalink: kb/117/Q117651/
+permalink: /kb/117/Q117651/
 ---
 
 ## Q117651: PC Forms: Err Msg: Invalid Package When Sending an E-Form

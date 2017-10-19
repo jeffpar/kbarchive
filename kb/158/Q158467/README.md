@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158467: WD97: Description of Options for Conversion Wizard"
-permalink: kb/158/Q158467/
+permalink: /kb/158/Q158467/
 ---
 
 ## Q158467: WD97: Description of Options for Conversion Wizard

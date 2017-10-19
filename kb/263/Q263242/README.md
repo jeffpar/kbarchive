@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263242: Encarta 2000 Error Message: Windows Cannot Find Program.exe"
-permalink: kb/263/Q263242/
+permalink: /kb/263/Q263242/
 ---
 
 ## Q263242: Encarta 2000 Error Message: Windows Cannot Find Program.exe

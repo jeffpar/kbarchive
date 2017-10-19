@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175473: Bookshelf 98: Remove All Deletes Internet Directory 96 Updates"
-permalink: kb/175/Q175473/
+permalink: /kb/175/Q175473/
 ---
 
 ## Q175473: Bookshelf 98: Remove All Deletes Internet Directory 96 Updates

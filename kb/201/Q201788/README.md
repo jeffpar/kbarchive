@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201788: PC DB: Can't Send Microsoft Mail in Inbox of Outlook or Exchange"
-permalink: kb/201/Q201788/
+permalink: /kb/201/Q201788/
 ---
 
 ## Q201788: PC DB: Can't Send Microsoft Mail in Inbox of Outlook or Exchange

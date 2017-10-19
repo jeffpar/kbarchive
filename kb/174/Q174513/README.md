@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174513: WD97: Nonbreaking Space Missing Using French Language"
-permalink: kb/174/Q174513/
+permalink: /kb/174/Q174513/
 ---
 
 ## Q174513: WD97: Nonbreaking Space Missing Using French Language

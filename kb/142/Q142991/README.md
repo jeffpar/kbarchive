@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142991: Using Wildcard Characters with the Find Command on MSN"
-permalink: kb/142/Q142991/
+permalink: /kb/142/Q142991/
 ---
 
 ## Q142991: Using Wildcard Characters with the Find Command on MSN

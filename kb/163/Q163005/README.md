@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163005: Compaq Advanced Network Control Utility Fails w/ WinNT 4.0 SP2"
-permalink: kb/163/Q163005/
+permalink: /kb/163/Q163005/
 ---
 
 ## Q163005: Compaq Advanced Network Control Utility Fails w/ WinNT 4.0 SP2

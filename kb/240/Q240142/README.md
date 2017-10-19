@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240142: How to Prevent User Validation on a Specific Domain Controller"
-permalink: kb/240/Q240142/
+permalink: /kb/240/Q240142/
 ---
 
 ## Q240142: How to Prevent User Validation on a Specific Domain Controller

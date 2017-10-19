@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126497: XADM: Limiting the Number of Recipients of a Message"
-permalink: kb/126/Q126497/
+permalink: /kb/126/Q126497/
 ---
 
 ## Q126497: XADM: Limiting the Number of Recipients of a Message

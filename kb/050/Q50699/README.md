@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50699: Resetting the Screen to Graphics Mode in Flight Simulator"
-permalink: kb/050/Q50699/
+permalink: /kb/050/Q50699/
 ---
 
 ## Q50699: Resetting the Screen to Graphics Mode in Flight Simulator

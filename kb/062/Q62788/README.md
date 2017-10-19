@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62788: Setup Does Not Give You a Directory Choice"
-permalink: kb/062/Q62788/
+permalink: /kb/062/Q62788/
 ---
 
 ## Q62788: Setup Does Not Give You a Directory Choice

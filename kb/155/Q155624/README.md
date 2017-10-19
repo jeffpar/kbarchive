@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155624: Cannot Print Gray Scale to LexMark Optrac PS Printer"
-permalink: kb/155/Q155624/
+permalink: /kb/155/Q155624/
 ---
 
 ## Q155624: Cannot Print Gray Scale to LexMark Optrac PS Printer

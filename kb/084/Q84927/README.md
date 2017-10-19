@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84927: Print TrueType As Graphics Check Box Is Grayed"
-permalink: kb/084/Q84927/
+permalink: /kb/084/Q84927/
 ---
 
 ## Q84927: Print TrueType As Graphics Check Box Is Grayed

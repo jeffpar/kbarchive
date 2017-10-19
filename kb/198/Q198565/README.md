@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198565: XCLN: Application Conversion Assistant May Crash with Dr. Watson"
-permalink: kb/198/Q198565/
+permalink: /kb/198/Q198565/
 ---
 
 ## Q198565: XCLN: Application Conversion Assistant May Crash with Dr. Watson

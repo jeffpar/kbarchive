@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158832: Personal Web Server Cannot Be Used as a Gopher Server"
-permalink: kb/158/Q158832/
+permalink: /kb/158/Q158832/
 ---
 
 ## Q158832: Personal Web Server Cannot Be Used as a Gopher Server

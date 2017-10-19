@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229895: Err Msg: Setup Was Unable to Copy the Following File Cdrom.sys"
-permalink: kb/229/Q229895/
+permalink: /kb/229/Q229895/
 ---
 
 ## Q229895: Err Msg: Setup Was Unable to Copy the Following File Cdrom.sys

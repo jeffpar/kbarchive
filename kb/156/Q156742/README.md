@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156742: INFO: STL Sample for the replace_copy Function"
-permalink: kb/156/Q156742/
+permalink: /kb/156/Q156742/
 ---
 
 ## Q156742: INFO: STL Sample for the replace_copy Function

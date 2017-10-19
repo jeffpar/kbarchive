@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71126: Windows Only Supports Okidata LaserLine 6 with 512K Memory"
-permalink: kb/071/Q71126/
+permalink: /kb/071/Q71126/
 ---
 
 ## Q71126: Windows Only Supports Okidata LaserLine 6 with 512K Memory

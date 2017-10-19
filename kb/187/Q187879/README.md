@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187879: Networking Essentials 2nd. Ed. Corrections Part 2"
-permalink: kb/187/Q187879/
+permalink: /kb/187/Q187879/
 ---
 
 ## Q187879: Networking Essentials 2nd. Ed. Corrections Part 2

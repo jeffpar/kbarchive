@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266038: BB2001: Cannot Start Program After You Enable 3D Acceleration"
-permalink: kb/266/Q266038/
+permalink: /kb/266/Q266038/
 ---
 
 ## Q266038: BB2001: Cannot Start Program After You Enable 3D Acceleration

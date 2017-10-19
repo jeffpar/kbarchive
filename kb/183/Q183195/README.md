@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183195: WD97: Opening an Equation Editor Object Gives Error Message"
-permalink: kb/183/Q183195/
+permalink: /kb/183/Q183195/
 ---
 
 ## Q183195: WD97: Opening an Equation Editor Object Gives Error Message

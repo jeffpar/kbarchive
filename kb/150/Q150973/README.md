@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150973: PRB: OLE Error 0x80040113 Invalid Class String with MSGraph"
-permalink: kb/150/Q150973/
+permalink: /kb/150/Q150973/
 ---
 
 ## Q150973: PRB: OLE Error 0x80040113 Invalid Class String with MSGraph

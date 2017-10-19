@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180118: XADM: Information Available in the Offline Address Book"
-permalink: kb/180/Q180118/
+permalink: /kb/180/Q180118/
 ---
 
 ## Q180118: XADM: Information Available in the Offline Address Book

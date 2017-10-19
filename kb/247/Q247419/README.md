@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247419: XCON: TCP/IP Control Block Shortage Event ID 9156"
-permalink: kb/247/Q247419/
+permalink: /kb/247/Q247419/
 ---
 
 ## Q247419: XCON: TCP/IP Control Block Shortage Event ID 9156

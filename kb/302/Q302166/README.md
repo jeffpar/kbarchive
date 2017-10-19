@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302166: Error Message When an Account Operator Creates a Home Path"
-permalink: kb/302/Q302166/
+permalink: /kb/302/Q302166/
 ---
 
 ## Q302166: Error Message When an Account Operator Creates a Home Path

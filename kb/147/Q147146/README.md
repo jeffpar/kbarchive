@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147146: XCLN: Win: Encrypted Messages Do Not Display Attachment Icon"
-permalink: kb/147/Q147146/
+permalink: /kb/147/Q147146/
 ---
 
 ## Q147146: XCLN: Win: Encrypted Messages Do Not Display Attachment Icon

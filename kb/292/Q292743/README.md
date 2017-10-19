@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q292743: Error Message: ERROR_PPP_TIMEOUT"
-permalink: kb/292/Q292743/
+permalink: /kb/292/Q292743/
 ---
 
 ## Q292743: Error Message: ERROR_PPP_TIMEOUT

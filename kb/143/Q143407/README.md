@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143407: FIX: Buttons On Wrappable Toolbar Do Not Appear"
-permalink: kb/143/Q143407/
+permalink: /kb/143/Q143407/
 ---
 
 ## Q143407: FIX: Buttons On Wrappable Toolbar Do Not Appear

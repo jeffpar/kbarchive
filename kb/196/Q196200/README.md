@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196200: XWEB: CDO Does Incorrect Time Zone Correction"
-permalink: kb/196/Q196200/
+permalink: /kb/196/Q196200/
 ---
 
 ## Q196200: XWEB: CDO Does Incorrect Time Zone Correction

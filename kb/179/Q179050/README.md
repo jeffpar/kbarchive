@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179050: XADM: WinNT Account Becomes Domain&#92;&#92;User When Output by Export"
-permalink: kb/179/Q179050/
+permalink: /kb/179/Q179050/
 ---
 
 ## Q179050: XADM: WinNT Account Becomes Domain&#92;&#92;User When Output by Export

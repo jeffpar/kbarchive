@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223105: FIX: DllUnregisterServer Fails on msvbvm60.dll w/Error H80029C4A"
-permalink: kb/223/Q223105/
+permalink: /kb/223/Q223105/
 ---
 
 ## Q223105: FIX: DllUnregisterServer Fails on msvbvm60.dll w/Error H80029C4A

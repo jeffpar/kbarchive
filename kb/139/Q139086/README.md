@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139086: How to Update Files in Use by Windows"
-permalink: kb/139/Q139086/
+permalink: /kb/139/Q139086/
 ---
 
 ## Q139086: How to Update Files in Use by Windows

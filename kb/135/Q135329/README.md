@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135329: BUG: Pressing PAGE UP or PAGE DOWN Moves to New Code Window"
-permalink: kb/135/Q135329/
+permalink: /kb/135/Q135329/
 ---
 
 ## Q135329: BUG: Pressing PAGE UP or PAGE DOWN Moves to New Code Window

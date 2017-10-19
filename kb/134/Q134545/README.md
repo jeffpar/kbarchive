@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134545: Restart Problems When Running Ssmode.exe"
-permalink: kb/134/Q134545/
+permalink: /kb/134/Q134545/
 ---
 
 ## Q134545: Restart Problems When Running Ssmode.exe

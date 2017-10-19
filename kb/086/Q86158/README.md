@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86158: PROFS: DCA Comm Server and the PROFS Gateway"
-permalink: kb/086/Q86158/
+permalink: /kb/086/Q86158/
 ---
 
 ## Q86158: PROFS: DCA Comm Server and the PROFS Gateway

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193589: HOWTO: Create Transparent Images From Bitmaps"
-permalink: kb/193/Q193589/
+permalink: /kb/193/Q193589/
 ---
 
 ## Q193589: HOWTO: Create Transparent Images From Bitmaps

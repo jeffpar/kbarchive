@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84515: Using the Okidata 192 Series Printers with Windows"
-permalink: kb/084/Q84515/
+permalink: /kb/084/Q84515/
 ---
 
 ## Q84515: Using the Okidata 192 Series Printers with Windows

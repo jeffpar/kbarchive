@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268239: BUG: C2084 on Overloading Function Templates"
-permalink: kb/268/Q268239/
+permalink: /kb/268/Q268239/
 ---
 
 ## Q268239: BUG: C2084 on Overloading Function Templates

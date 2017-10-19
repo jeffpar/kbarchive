@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142798: True Type Font Corruption After Applying Service Pack 3"
-permalink: kb/142/Q142798/
+permalink: /kb/142/Q142798/
 ---
 
 ## Q142798: True Type Font Corruption After Applying Service Pack 3

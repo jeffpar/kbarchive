@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150844: NetWare Client Buffer-Size Limitation of FPNW Sent Messages"
-permalink: kb/150/Q150844/
+permalink: /kb/150/Q150844/
 ---
 
 ## Q150844: NetWare Client Buffer-Size Limitation of FPNW Sent Messages

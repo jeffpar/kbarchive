@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195330: WD97: How to Change Default Tabs Stops Globally"
-permalink: kb/195/Q195330/
+permalink: /kb/195/Q195330/
 ---
 
 ## Q195330: WD97: How to Change Default Tabs Stops Globally

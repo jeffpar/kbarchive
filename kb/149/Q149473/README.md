@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149473: BUG: FOR4265 Warning Not Generated for Undefined Argument"
-permalink: kb/149/Q149473/
+permalink: /kb/149/Q149473/
 ---
 
 ## Q149473: BUG: FOR4265 Warning Not Generated for Undefined Argument

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88429: Problems with Swan Video Drivers and Utilities and Windows"
-permalink: kb/088/Q88429/
+permalink: /kb/088/Q88429/
 ---
 
 ## Q88429: Problems with Swan Video Drivers and Utilities and Windows

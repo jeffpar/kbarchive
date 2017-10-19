@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94307: FastBack Plus Windows Changes VDMAD.386 to &#42;VDMAD with WFWG"
-permalink: kb/094/Q94307/
+permalink: /kb/094/Q94307/
 ---
 
 ## Q94307: FastBack Plus Windows Changes VDMAD.386 to &#42;VDMAD with WFWG

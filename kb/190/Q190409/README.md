@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190409: BUG: Font Changes After Open Stored Procedure in Data View"
-permalink: kb/190/Q190409/
+permalink: /kb/190/Q190409/
 ---
 
 ## Q190409: BUG: Font Changes After Open Stored Procedure in Data View

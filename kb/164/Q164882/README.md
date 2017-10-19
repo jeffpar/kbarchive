@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164882: Practical Recommendations for Securing Internet-Connections"
-permalink: kb/164/Q164882/
+permalink: /kb/164/Q164882/
 ---
 
 ## Q164882: Practical Recommendations for Securing Internet-Connections

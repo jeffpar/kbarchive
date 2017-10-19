@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172089: Cinemania 97:  Why Does the Year Filter Stop at 1996?"
-permalink: kb/172/Q172089/
+permalink: /kb/172/Q172089/
 ---
 
 ## Q172089: Cinemania 97:  Why Does the Year Filter Stop at 1996?

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198469: XCLN: How to Rename the Inbox in Outlook"
-permalink: kb/198/Q198469/
+permalink: /kb/198/Q198469/
 ---
 
 ## Q198469: XCLN: How to Rename the Inbox in Outlook

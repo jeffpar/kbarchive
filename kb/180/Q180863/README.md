@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180863: Print Server May Experience Occasional Performance Degradation"
-permalink: kb/180/Q180863/
+permalink: /kb/180/Q180863/
 ---
 
 ## Q180863: Print Server May Experience Occasional Performance Degradation

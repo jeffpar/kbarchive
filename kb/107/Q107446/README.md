@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107446: FFAPI: Application-Put Executables 3.04.1 Update"
-permalink: kb/107/Q107446/
+permalink: /kb/107/Q107446/
 ---
 
 ## Q107446: FFAPI: Application-Put Executables 3.04.1 Update

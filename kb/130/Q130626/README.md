@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130626: MHS: MHSINP.EXE Version 3.0.9 Update"
-permalink: kb/130/Q130626/
+permalink: /kb/130/Q130626/
 ---
 
 ## Q130626: MHS: MHSINP.EXE Version 3.0.9 Update

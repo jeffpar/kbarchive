@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258137: 2nd Hex Character Overwrites 1st in Binary Value w/ MetaEdit 2.0"
-permalink: kb/258/Q258137/
+permalink: /kb/258/Q258137/
 ---
 
 ## Q258137: 2nd Hex Character Overwrites 1st in Binary Value w/ MetaEdit 2.0

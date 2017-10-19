@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155966: Using Elsa Microlink ISDN/TLV34 to Connect to MSN"
-permalink: kb/155/Q155966/
+permalink: /kb/155/Q155966/
 ---
 
 ## Q155966: Using Elsa Microlink ISDN/TLV34 to Connect to MSN

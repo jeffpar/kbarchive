@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235606: FIX: Errors from Project Differences Window"
-permalink: kb/235/Q235606/
+permalink: /kb/235/Q235606/
 ---
 
 ## Q235606: FIX: Errors from Project Differences Window

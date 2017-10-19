@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163881: Windows NT Does not Display Some Fonts"
-permalink: kb/163/Q163881/
+permalink: /kb/163/Q163881/
 ---
 
 ## Q163881: Windows NT Does not Display Some Fonts

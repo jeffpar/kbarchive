@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103477: ProComm Plus Downloads Slowly Using Zmodem in Windows NT"
-permalink: kb/103/Q103477/
+permalink: /kb/103/Q103477/
 ---
 
 ## Q103477: ProComm Plus Downloads Slowly Using Zmodem in Windows NT

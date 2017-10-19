@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299853: HOWTO: Modify the Default Web Browser and E-mail Client"
-permalink: kb/299/Q299853/
+permalink: /kb/299/Q299853/
 ---
 
 ## Q299853: HOWTO: Modify the Default Web Browser and E-mail Client

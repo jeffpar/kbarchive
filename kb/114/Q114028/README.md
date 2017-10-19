@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114028: PC Forms: Run Minimized Property Doesn't Function in E-form"
-permalink: kb/114/Q114028/
+permalink: /kb/114/Q114028/
 ---
 
 ## Q114028: PC Forms: Run Minimized Property Doesn't Function in E-form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238600: Multiple Connection Requests Promote Denial of Service Attack"
-permalink: kb/238/Q238600/
+permalink: /kb/238/Q238600/
 ---
 
 ## Q238600: Multiple Connection Requests Promote Denial of Service Attack

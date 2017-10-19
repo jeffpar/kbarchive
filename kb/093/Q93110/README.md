@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93110: HP DJ500 Draft Mode Required to Print TrueType Fonts in Draft"
-permalink: kb/093/Q93110/
+permalink: /kb/093/Q93110/
 ---
 
 ## Q93110: HP DJ500 Draft Mode Required to Print TrueType Fonts in Draft

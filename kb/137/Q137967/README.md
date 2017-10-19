@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137967: STOP 0x00000077 with Two MYLEX DAC 960 in the Same Computer"
-permalink: kb/137/Q137967/
+permalink: /kb/137/Q137967/
 ---
 
 ## Q137967: STOP 0x00000077 with Two MYLEX DAC 960 in the Same Computer

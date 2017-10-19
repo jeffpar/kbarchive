@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67676: DOCERR: Doc Errors for DeferWindowPos and SetWindowPos"
-permalink: kb/067/Q67676/
+permalink: /kb/067/Q67676/
 ---
 
 ## Q67676: DOCERR: Doc Errors for DeferWindowPos and SetWindowPos

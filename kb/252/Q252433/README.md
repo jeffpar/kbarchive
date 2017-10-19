@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252433: XCON: Configuring MTA to Route Messages Based on Content Type"
-permalink: kb/252/Q252433/
+permalink: /kb/252/Q252433/
 ---
 
 ## Q252433: XCON: Configuring MTA to Route Messages Based on Content Type

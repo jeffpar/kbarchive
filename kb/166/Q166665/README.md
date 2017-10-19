@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166665: XCLN: Troubleshooting AppleTalk Connection"
-permalink: kb/166/Q166665/
+permalink: /kb/166/Q166665/
 ---
 
 ## Q166665: XCLN: Troubleshooting AppleTalk Connection

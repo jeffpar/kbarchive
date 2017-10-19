@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146857: XCLN: Moving Shared Folders Changes Ownership and Permissions"
-permalink: kb/146/Q146857/
+permalink: /kb/146/Q146857/
 ---
 
 ## Q146857: XCLN: Moving Shared Folders Changes Ownership and Permissions

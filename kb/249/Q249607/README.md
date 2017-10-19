@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249607: FIX: UserControl in Excel Does Not Print or Print Preview"
-permalink: kb/249/Q249607/
+permalink: /kb/249/Q249607/
 ---
 
 ## Q249607: FIX: UserControl in Excel Does Not Print or Print Preview

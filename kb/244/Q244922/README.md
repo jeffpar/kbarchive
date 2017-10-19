@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244922: &quot;STOP 0x00000050&quot; in Rdr.sys with Special Pool Enabled"
-permalink: kb/244/Q244922/
+permalink: /kb/244/Q244922/
 ---
 
 ## Q244922: &quot;STOP 0x00000050&quot; in Rdr.sys with Special Pool Enabled

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199267: SMS: SMS 1.2 and SMS 2.0 Logon Scripts Coexistence"
-permalink: kb/199/Q199267/
+permalink: /kb/199/Q199267/
 ---
 
 ## Q199267: SMS: SMS 1.2 and SMS 2.0 Logon Scripts Coexistence

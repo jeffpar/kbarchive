@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312987: Write Operations Slow Using Windows Services for UNIX 2.2"
-permalink: kb/312/Q312987/
+permalink: /kb/312/Q312987/
 ---
 
 ## Q312987: Write Operations Slow Using Windows Services for UNIX 2.2

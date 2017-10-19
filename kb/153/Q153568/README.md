@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153568: HOWTO: Optimize Remote OLE Automation Performance"
-permalink: kb/153/Q153568/
+permalink: /kb/153/Q153568/
 ---
 
 ## Q153568: HOWTO: Optimize Remote OLE Automation Performance

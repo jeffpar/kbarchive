@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135103: Description of &quot;&#42;DisplayFallback=&quot; Entry in System.ini File"
-permalink: kb/135/Q135103/
+permalink: /kb/135/Q135103/
 ---
 
 ## Q135103: Description of &quot;&#42;DisplayFallback=&quot; Entry in System.ini File

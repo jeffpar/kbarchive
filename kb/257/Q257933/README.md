@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257933: ODBC Connection to DB2 Breaks When You Update to OS/400 V4R4"
-permalink: kb/257/Q257933/
+permalink: /kb/257/Q257933/
 ---
 
 ## Q257933: ODBC Connection to DB2 Breaks When You Update to OS/400 V4R4

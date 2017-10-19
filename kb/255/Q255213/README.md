@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255213: Hewlett-Packard HP4000 Print Drivers May Hang the Print Queue"
-permalink: kb/255/Q255213/
+permalink: /kb/255/Q255213/
 ---
 
 ## Q255213: Hewlett-Packard HP4000 Print Drivers May Hang the Print Queue

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134605: Doom 2 Loses IRQ Setting When Closed with CTRL+ALT+DELETE"
-permalink: kb/134/Q134605/
+permalink: /kb/134/Q134605/
 ---
 
 ## Q134605: Doom 2 Loses IRQ Setting When Closed with CTRL+ALT+DELETE

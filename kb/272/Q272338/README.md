@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272338: HOWTO: Use VFP and ADO Stream Object to Retrieve Binary Data"
-permalink: kb/272/Q272338/
+permalink: /kb/272/Q272338/
 ---
 
 ## Q272338: HOWTO: Use VFP and ADO Stream Object to Retrieve Binary Data

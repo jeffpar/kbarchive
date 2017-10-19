@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127845: PRB: Property is Ignored Under Program Control"
-permalink: kb/127/Q127845/
+permalink: /kb/127/Q127845/
 ---
 
 ## Q127845: PRB: Property is Ignored Under Program Control

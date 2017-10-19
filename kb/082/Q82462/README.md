@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82462: Using WindowsTools with Windows 3.1 and 3.11"
-permalink: kb/082/Q82462/
+permalink: /kb/082/Q82462/
 ---
 
 ## Q82462: Using WindowsTools with Windows 3.1 and 3.11

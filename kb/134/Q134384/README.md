@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134384: Configuring for Additional Sessions under IPX/SPX"
-permalink: kb/134/Q134384/
+permalink: /kb/134/Q134384/
 ---
 
 ## Q134384: Configuring for Additional Sessions under IPX/SPX

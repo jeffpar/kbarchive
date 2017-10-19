@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170769: PRB: &quot;ODBC Resource DLL Is a Different Version Than ...&quot; Error"
-permalink: kb/170/Q170769/
+permalink: /kb/170/Q170769/
 ---
 
 ## Q170769: PRB: &quot;ODBC Resource DLL Is a Different Version Than ...&quot; Error

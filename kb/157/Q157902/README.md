@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157902: XCON: Can't Communicate w/ MTA via French X.25 Network"
-permalink: kb/157/Q157902/
+permalink: /kb/157/Q157902/
 ---
 
 ## Q157902: XCON: Can't Communicate w/ MTA via French X.25 Network

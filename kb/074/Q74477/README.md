@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74477: &quot;Profiler VM Terminated Abnormally&quot; Message Causes"
-permalink: kb/074/Q74477/
+permalink: /kb/074/Q74477/
 ---
 
 ## Q74477: &quot;Profiler VM Terminated Abnormally&quot; Message Causes

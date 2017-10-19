@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148657: Err Msg: &quot;The network name was deleted&quot; w/ DIR in Batch File"
-permalink: kb/148/Q148657/
+permalink: /kb/148/Q148657/
 ---
 
 ## Q148657: Err Msg: &quot;The network name was deleted&quot; w/ DIR in Batch File

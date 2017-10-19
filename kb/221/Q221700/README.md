@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221700: FIX: CommandTargetExec Ignores Return Value"
-permalink: kb/221/Q221700/
+permalink: /kb/221/Q221700/
 ---
 
 ## Q221700: FIX: CommandTargetExec Ignores Return Value

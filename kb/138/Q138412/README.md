@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138412: FIX: AppWiz Samples Fail to Build from Command Line"
-permalink: kb/138/Q138412/
+permalink: /kb/138/Q138412/
 ---
 
 ## Q138412: FIX: AppWiz Samples Fail to Build from Command Line

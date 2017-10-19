@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302729: &quot;We were unable to sign you in&quot; Error When Protocols Are Not Ena"
-permalink: kb/302/Q302729/
+permalink: /kb/302/Q302729/
 ---
 
 ## Q302729: &quot;We were unable to sign you in&quot; Error When Protocols Are Not Ena

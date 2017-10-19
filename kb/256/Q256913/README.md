@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256913: SMS: Cannot Connect to SMS Database After Upgrading SMS"
-permalink: kb/256/Q256913/
+permalink: /kb/256/Q256913/
 ---
 
 ## Q256913: SMS: Cannot Connect to SMS Database After Upgrading SMS

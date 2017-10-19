@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75043: QEMM and 386MAX: Functionality and Compatibility with CV"
-permalink: kb/075/Q75043/
+permalink: /kb/075/Q75043/
 ---
 
 ## Q75043: QEMM and 386MAX: Functionality and Compatibility with CV

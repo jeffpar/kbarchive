@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59765: ISAMCVT.EXE Fails to Convert db/LIB File, Try Packing First"
-permalink: kb/059/Q59765/
+permalink: /kb/059/Q59765/
 ---
 
 ## Q59765: ISAMCVT.EXE Fails to Convert db/LIB File, Try Packing First

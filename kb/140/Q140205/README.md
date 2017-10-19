@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140205: BUG: Status of Project Window Is Not Saved with .vbp File"
-permalink: kb/140/Q140205/
+permalink: /kb/140/Q140205/
 ---
 
 ## Q140205: BUG: Status of Project Window Is Not Saved with .vbp File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215109: Express Setup Repeatedly Prompts You to Swap SQL and SMS CD-ROMs"
-permalink: kb/215/Q215109/
+permalink: /kb/215/Q215109/
 ---
 
 ## Q215109: Express Setup Repeatedly Prompts You to Swap SQL and SMS CD-ROMs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161276: Error Message Installing GSNW in a NetWare 4.x Environment"
-permalink: kb/161/Q161276/
+permalink: /kb/161/Q161276/
 ---
 
 ## Q161276: Error Message Installing GSNW in a NetWare 4.x Environment

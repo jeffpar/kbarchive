@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272693: 0x80004005 ASP Error Occurs with Crystal Reports 8"
-permalink: kb/272/Q272693/
+permalink: /kb/272/Q272693/
 ---
 
 ## Q272693: 0x80004005 ASP Error Occurs with Crystal Reports 8

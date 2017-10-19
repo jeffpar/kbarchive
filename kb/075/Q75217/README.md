@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75217: Xerox Ventura Publisher Behaves Erratically"
-permalink: kb/075/Q75217/
+permalink: /kb/075/Q75217/
 ---
 
 ## Q75217: Xerox Ventura Publisher Behaves Erratically

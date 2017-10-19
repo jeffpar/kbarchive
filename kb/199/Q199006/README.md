@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199006: BUG: Issuing PACK &lt;table name&gt; Causes Fatal Error"
-permalink: kb/199/Q199006/
+permalink: /kb/199/Q199006/
 ---
 
 ## Q199006: BUG: Issuing PACK &lt;table name&gt; Causes Fatal Error

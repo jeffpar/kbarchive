@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245458: XCON: Notes Delegate Cannot See Meetings from Outlook User"
-permalink: kb/245/Q245458/
+permalink: /kb/245/Q245458/
 ---
 
 ## Q245458: XCON: Notes Delegate Cannot See Meetings from Outlook User

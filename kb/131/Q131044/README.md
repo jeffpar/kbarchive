@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131044: FIX: ClassWizard Incorrectly Reads LPDISPATCH Params from .TLB"
-permalink: kb/131/Q131044/
+permalink: /kb/131/Q131044/
 ---
 
 ## Q131044: FIX: ClassWizard Incorrectly Reads LPDISPATCH Params from .TLB

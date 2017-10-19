@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186530: Printing to Local Printer on Tektronix Windows-Based Terminal"
-permalink: kb/186/Q186530/
+permalink: /kb/186/Q186530/
 ---
 
 ## Q186530: Printing to Local Printer on Tektronix Windows-Based Terminal

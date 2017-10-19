@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183713: XADM: How To Use Filever.exe To Verify File Versions"
-permalink: kb/183/Q183713/
+permalink: /kb/183/Q183713/
 ---
 
 ## Q183713: XADM: How To Use Filever.exe To Verify File Versions

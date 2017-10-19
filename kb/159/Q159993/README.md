@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159993: Unable to Administer Macintosh Volumes from Windows NT Explorer"
-permalink: kb/159/Q159993/
+permalink: /kb/159/Q159993/
 ---
 
 ## Q159993: Unable to Administer Macintosh Volumes from Windows NT Explorer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118564: SMTP: Maintaining Config and Addresses On Re-Install, Upgrade"
-permalink: kb/118/Q118564/
+permalink: /kb/118/Q118564/
 ---
 
 ## Q118564: SMTP: Maintaining Config and Addresses On Re-Install, Upgrade

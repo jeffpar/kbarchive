@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192822: START Priority Class Arguments Ignored for WOW Applications"
-permalink: kb/192/Q192822/
+permalink: /kb/192/Q192822/
 ---
 
 ## Q192822: START Priority Class Arguments Ignored for WOW Applications

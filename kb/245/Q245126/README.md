@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245126: How to Export the Contents of a DHCP Database to a Text File"
-permalink: kb/245/Q245126/
+permalink: /kb/245/Q245126/
 ---
 
 ## Q245126: How to Export the Contents of a DHCP Database to a Text File

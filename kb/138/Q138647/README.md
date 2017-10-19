@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138647: How to Check for a Missing Table in a Database Container"
-permalink: kb/138/Q138647/
+permalink: /kb/138/Q138647/
 ---
 
 ## Q138647: How to Check for a Missing Table in a Database Container

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139760: Baseball 1995: Ballpark Scrolling in Alphabetical Order Only"
-permalink: kb/139/Q139760/
+permalink: /kb/139/Q139760/
 ---
 
 ## Q139760: Baseball 1995: Ballpark Scrolling in Alphabetical Order Only

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120492: Periodic Polling Causes Problems with Removable Media"
-permalink: kb/120/Q120492/
+permalink: /kb/120/Q120492/
 ---
 
 ## Q120492: Periodic Polling Causes Problems with Removable Media

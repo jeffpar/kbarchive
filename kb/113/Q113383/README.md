@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113383: X400: Non-Delivery and Confirmed-Delivery Notification"
-permalink: kb/113/Q113383/
+permalink: /kb/113/Q113383/
 ---
 
 ## Q113383: X400: Non-Delivery and Confirmed-Delivery Notification

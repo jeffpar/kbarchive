@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74447: MS-DOS Shell Version Check on Mouse Drivers"
-permalink: kb/074/Q74447/
+permalink: /kb/074/Q74447/
 ---
 
 ## Q74447: MS-DOS Shell Version Check on Mouse Drivers

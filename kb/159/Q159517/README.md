@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159517: Encarta 97 Err Msg: File &lt;Filename&gt; Could Not be Opened..."
-permalink: kb/159/Q159517/
+permalink: /kb/159/Q159517/
 ---
 
 ## Q159517: Encarta 97 Err Msg: File &lt;Filename&gt; Could Not be Opened...

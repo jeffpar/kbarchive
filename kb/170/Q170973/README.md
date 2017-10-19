@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170973: Finding the Number of Active Users Per Server"
-permalink: kb/170/Q170973/
+permalink: /kb/170/Q170973/
 ---
 
 ## Q170973: Finding the Number of Active Users Per Server

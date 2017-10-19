@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196030: XCLN: The Attachment Is a Type That Is Not Yet Supported"
-permalink: kb/196/Q196030/
+permalink: /kb/196/Q196030/
 ---
 
 ## Q196030: XCLN: The Attachment Is a Type That Is Not Yet Supported

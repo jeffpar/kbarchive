@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149141: BUG: Hanging Indents Not Preserved in Developer Studio Editor"
-permalink: kb/149/Q149141/
+permalink: /kb/149/Q149141/
 ---
 
 ## Q149141: BUG: Hanging Indents Not Preserved in Developer Studio Editor

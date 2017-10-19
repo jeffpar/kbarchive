@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199182: IIS: Name Field in Default Application May be Blank"
-permalink: kb/199/Q199182/
+permalink: /kb/199/Q199182/
 ---
 
 ## Q199182: IIS: Name Field in Default Application May be Blank

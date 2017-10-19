@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106686: Encarta GP Fault: Printing with Universal and Thirdparty Video"
-permalink: kb/106/Q106686/
+permalink: /kb/106/Q106686/
 ---
 
 ## Q106686: Encarta GP Fault: Printing with Universal and Thirdparty Video

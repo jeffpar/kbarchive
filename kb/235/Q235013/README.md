@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235013: PRB: Mastering Series Needs Installation of Internet Explorer 3"
-permalink: kb/235/Q235013/
+permalink: /kb/235/Q235013/
 ---
 
 ## Q235013: PRB: Mastering Series Needs Installation of Internet Explorer 3

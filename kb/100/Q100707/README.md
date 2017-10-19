@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100707: SMTP: Err Msg: Write: (57) Socket is Not Connected"
-permalink: kb/100/Q100707/
+permalink: /kb/100/Q100707/
 ---
 
 ## Q100707: SMTP: Err Msg: Write: (57) Socket is Not Connected

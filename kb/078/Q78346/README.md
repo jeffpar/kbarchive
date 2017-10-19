@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78346: Windows: Maximum Valid Size for REG.DAT and .INI Files"
-permalink: kb/078/Q78346/
+permalink: /kb/078/Q78346/
 ---
 
 ## Q78346: Windows: Maximum Valid Size for REG.DAT and .INI Files

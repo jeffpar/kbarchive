@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198751: SMS: Query Statement Window Displays Maximum of 3,955 Characters"
-permalink: kb/198/Q198751/
+permalink: /kb/198/Q198751/
 ---
 
 ## Q198751: SMS: Query Statement Window Displays Maximum of 3,955 Characters

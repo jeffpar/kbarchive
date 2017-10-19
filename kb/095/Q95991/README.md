@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95991: Printing PostScript Takes Longer in Windows 3.1 and WFWG"
-permalink: kb/095/Q95991/
+permalink: /kb/095/Q95991/
 ---
 
 ## Q95991: Printing PostScript Takes Longer in Windows 3.1 and WFWG

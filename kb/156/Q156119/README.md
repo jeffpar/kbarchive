@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156119: Manic Marbles Trial Version: Characters Summary"
-permalink: kb/156/Q156119/
+permalink: /kb/156/Q156119/
 ---
 
 ## Q156119: Manic Marbles Trial Version: Characters Summary

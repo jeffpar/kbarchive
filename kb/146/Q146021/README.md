@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146021: PRB: Double-Clicking a Check Box Does Not Change Its Value"
-permalink: kb/146/Q146021/
+permalink: /kb/146/Q146021/
 ---
 
 ## Q146021: PRB: Double-Clicking a Check Box Does Not Change Its Value

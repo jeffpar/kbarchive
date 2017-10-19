@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139423: Downstream Connection Should Default to Incoming Calls"
-permalink: kb/139/Q139423/
+permalink: /kb/139/Q139423/
 ---
 
 ## Q139423: Downstream Connection Should Default to Incoming Calls

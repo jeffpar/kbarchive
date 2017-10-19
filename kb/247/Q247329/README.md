@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247329: Process Generates Stop 0x50 Error Message in ExpCopyProcessInfo"
-permalink: kb/247/Q247329/
+permalink: /kb/247/Q247329/
 ---
 
 ## Q247329: Process Generates Stop 0x50 Error Message in ExpCopyProcessInfo

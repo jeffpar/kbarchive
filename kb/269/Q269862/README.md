@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269862: MS00-057: Patch Released for Canonicalization Error Issue"
-permalink: kb/269/Q269862/
+permalink: /kb/269/Q269862/
 ---
 
 ## Q269862: MS00-057: Patch Released for Canonicalization Error Issue

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196949: WD97: No Table Headings Following Next Page Section Break"
-permalink: kb/196/Q196949/
+permalink: /kb/196/Q196949/
 ---
 
 ## Q196949: WD97: No Table Headings Following Next Page Section Break

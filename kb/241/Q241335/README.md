@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241335: FtpBrowseShowLongDate Only Operates at Master Property Level"
-permalink: kb/241/Q241335/
+permalink: /kb/241/Q241335/
 ---
 
 ## Q241335: FtpBrowseShowLongDate Only Operates at Master Property Level

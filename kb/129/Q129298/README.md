@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129298: Windows NT 3.51 Generic / Text Only Driver Halftoning Option"
-permalink: kb/129/Q129298/
+permalink: /kb/129/Q129298/
 ---
 
 ## Q129298: Windows NT 3.51 Generic / Text Only Driver Halftoning Option

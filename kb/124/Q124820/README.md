@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124820: PPT: Cannot Copy or Paste Objects in PowerPoint"
-permalink: kb/124/Q124820/
+permalink: /kb/124/Q124820/
 ---
 
 ## Q124820: PPT: Cannot Copy or Paste Objects in PowerPoint

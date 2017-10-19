@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q289573: PRB: Configuring DSNs with SQL Server Net-Libraries"
-permalink: kb/289/Q289573/
+permalink: /kb/289/Q289573/
 ---
 
 ## Q289573: PRB: Configuring DSNs with SQL Server Net-Libraries

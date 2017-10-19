@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130152: Windows Applications Fail When Using LMHosts File with NetBIOS"
-permalink: kb/130/Q130152/
+permalink: /kb/130/Q130152/
 ---
 
 ## Q130152: Windows Applications Fail When Using LMHosts File with NetBIOS

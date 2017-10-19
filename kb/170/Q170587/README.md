@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170587: XCLN: Schedule+ Always Prompts for Shared Schedule Password"
-permalink: kb/170/Q170587/
+permalink: /kb/170/Q170587/
 ---
 
 ## Q170587: XCLN: Schedule+ Always Prompts for Shared Schedule Password

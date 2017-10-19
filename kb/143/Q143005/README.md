@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143005: Limited Printing Capabilities of 32-bit PowerPoint Viewer."
-permalink: kb/143/Q143005/
+permalink: /kb/143/Q143005/
 ---
 
 ## Q143005: Limited Printing Capabilities of 32-bit PowerPoint Viewer.

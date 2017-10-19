@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124775: How to Play an .AVI File Using FoxPro for Windows"
-permalink: kb/124/Q124775/
+permalink: /kb/124/Q124775/
 ---
 
 ## Q124775: How to Play an .AVI File Using FoxPro for Windows

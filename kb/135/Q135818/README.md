@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135818: How to List Available Drives from Visual FoxPro"
-permalink: kb/135/Q135818/
+permalink: /kb/135/Q135818/
 ---
 
 ## Q135818: How to List Available Drives from Visual FoxPro

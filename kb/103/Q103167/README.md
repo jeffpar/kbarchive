@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103167: SYSEDIT Err Msg: Cannot Open This File"
-permalink: kb/103/Q103167/
+permalink: /kb/103/Q103167/
 ---
 
 ## Q103167: SYSEDIT Err Msg: Cannot Open This File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146276: XCLN: Sectool.exe Loses Message Body Information"
-permalink: kb/146/Q146276/
+permalink: /kb/146/Q146276/
 ---
 
 ## Q146276: XCLN: Sectool.exe Loses Message Body Information

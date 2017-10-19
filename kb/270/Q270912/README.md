@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270912: SMS: &quot;#&#36;#&#36;#&#36;#&#36;#&#36; ERROR&quot; Appears in Clisvc.log File"
-permalink: kb/270/Q270912/
+permalink: /kb/270/Q270912/
 ---
 
 ## Q270912: SMS: &quot;#&#36;#&#36;#&#36;#&#36;#&#36; ERROR&quot; Appears in Clisvc.log File

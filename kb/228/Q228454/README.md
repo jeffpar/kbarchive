@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228454: PATCH: ML614.exe 6.14 Patch Available"
-permalink: kb/228/Q228454/
+permalink: /kb/228/Q228454/
 ---
 
 ## Q228454: PATCH: ML614.exe 6.14 Patch Available

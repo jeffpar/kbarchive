@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93573: PC Win: No Beep When Requested for New Mail"
-permalink: kb/093/Q93573/
+permalink: /kb/093/Q93573/
 ---
 
 ## Q93573: PC Win: No Beep When Requested for New Mail

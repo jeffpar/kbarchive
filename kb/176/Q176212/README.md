@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176212: Service Pack 3 May Render Office Application Fonts Too Large"
-permalink: kb/176/Q176212/
+permalink: /kb/176/Q176212/
 ---
 
 ## Q176212: Service Pack 3 May Render Office Application Fonts Too Large

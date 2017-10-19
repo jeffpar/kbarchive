@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237927: XIMS: Messages Sent to Encapsulated SMTP Address Are Rerouted"
-permalink: kb/237/Q237927/
+permalink: /kb/237/Q237927/
 ---
 
 ## Q237927: XIMS: Messages Sent to Encapsulated SMTP Address Are Rerouted

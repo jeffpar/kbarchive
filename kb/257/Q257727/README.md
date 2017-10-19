@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257727: XCON: Slow Mail Flow Across X.400 with 289 and 1294 Warnings"
-permalink: kb/257/Q257727/
+permalink: /kb/257/Q257727/
 ---
 
 ## Q257727: XCON: Slow Mail Flow Across X.400 with 289 and 1294 Warnings

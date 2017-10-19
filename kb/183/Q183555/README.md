@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183555: Size Of Dynamic Output Array Always Set to Maximum"
-permalink: kb/183/Q183555/
+permalink: /kb/183/Q183555/
 ---
 
 ## Q183555: Size Of Dynamic Output Array Always Set to Maximum

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137150: List of Fixed Bugs in Systems Management Server Version 1.1"
-permalink: kb/137/Q137150/
+permalink: /kb/137/Q137150/
 ---
 
 ## Q137150: List of Fixed Bugs in Systems Management Server Version 1.1

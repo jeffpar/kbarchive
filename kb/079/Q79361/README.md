@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79361: IBM Quietwriter III Printer Switches"
-permalink: kb/079/Q79361/
+permalink: /kb/079/Q79361/
 ---
 
 ## Q79361: IBM Quietwriter III Printer Switches

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148700: DRWTSN32.EXE Causes STOP 0x0000001E"
-permalink: kb/148/Q148700/
+permalink: /kb/148/Q148700/
 ---
 
 ## Q148700: DRWTSN32.EXE Causes STOP 0x0000001E

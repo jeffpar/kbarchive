@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314284: Windows NT May Drop Fragmented IP Packets During RAS"
-permalink: kb/314/Q314284/
+permalink: /kb/314/Q314284/
 ---
 
 ## Q314284: Windows NT May Drop Fragmented IP Packets During RAS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287056: XFOR: Event ID 1027 During cc:Mail to Exchange Server 5.5 Migr."
-permalink: kb/287/Q287056/
+permalink: /kb/287/Q287056/
 ---
 
 ## Q287056: XFOR: Event ID 1027 During cc:Mail to Exchange Server 5.5 Migr.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234069: Computer Stops Responding After You Install Drivers"
-permalink: kb/234/Q234069/
+permalink: /kb/234/Q234069/
 ---
 
 ## Q234069: Computer Stops Responding After You Install Drivers

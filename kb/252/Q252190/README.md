@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252190: WINS Resolution Disabled by Default Viewing Network Properties"
-permalink: kb/252/Q252190/
+permalink: /kb/252/Q252190/
 ---
 
 ## Q252190: WINS Resolution Disabled by Default Viewing Network Properties

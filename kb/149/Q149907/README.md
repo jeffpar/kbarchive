@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149907: Browsing a Remote Network from a DUN Client Using Only TCP/IP"
-permalink: kb/149/Q149907/
+permalink: /kb/149/Q149907/
 ---
 
 ## Q149907: Browsing a Remote Network from a DUN Client Using Only TCP/IP

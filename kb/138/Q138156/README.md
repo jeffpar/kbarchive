@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138156: Problems Setting Up Carmen Sandiego from CD-ROM"
-permalink: kb/138/Q138156/
+permalink: /kb/138/Q138156/
 ---
 
 ## Q138156: Problems Setting Up Carmen Sandiego from CD-ROM

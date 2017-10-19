@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86015: Star Gemini 10x Printer and Windows"
-permalink: kb/086/Q86015/
+permalink: /kb/086/Q86015/
 ---
 
 ## Q86015: Star Gemini 10x Printer and Windows

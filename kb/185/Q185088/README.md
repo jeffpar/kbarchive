@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185088: Web Links on Favorites Menu Connect You to Random Web Pages"
-permalink: kb/185/Q185088/
+permalink: /kb/185/Q185088/
 ---
 
 ## Q185088: Web Links on Favorites Menu Connect You to Random Web Pages

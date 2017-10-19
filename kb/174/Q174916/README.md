@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174916: PRB: APPEND PROCEDURES Causes &quot;Feature Not Available&quot; in Runtime"
-permalink: kb/174/Q174916/
+permalink: /kb/174/Q174916/
 ---
 
 ## Q174916: PRB: APPEND PROCEDURES Causes &quot;Feature Not Available&quot; in Runtime

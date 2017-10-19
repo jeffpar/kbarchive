@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92487: Windows 3.x and Hardcard Drivers"
-permalink: kb/092/Q92487/
+permalink: /kb/092/Q92487/
 ---
 
 ## Q92487: Windows 3.x and Hardcard Drivers

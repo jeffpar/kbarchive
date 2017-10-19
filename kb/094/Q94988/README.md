@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94988: Slow Keyboard Repeat Rate with the AnyKey Keyboard"
-permalink: kb/094/Q94988/
+permalink: /kb/094/Q94988/
 ---
 
 ## Q94988: Slow Keyboard Repeat Rate with the AnyKey Keyboard

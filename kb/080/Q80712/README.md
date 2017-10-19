@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80712: RAS Manual Dial"
-permalink: kb/080/Q80712/
+permalink: /kb/080/Q80712/
 ---
 
 ## Q80712: RAS Manual Dial

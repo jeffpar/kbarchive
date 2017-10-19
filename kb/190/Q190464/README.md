@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190464: HOWTO: Get to the Visual FoxPro Registration Wizard"
-permalink: kb/190/Q190464/
+permalink: /kb/190/Q190464/
 ---
 
 ## Q190464: HOWTO: Get to the Visual FoxPro Registration Wizard

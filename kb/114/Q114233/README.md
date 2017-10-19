@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114233: Flight Simulator 5.0a README.DOC Contents"
-permalink: kb/114/Q114233/
+permalink: /kb/114/Q114233/
 ---
 
 ## Q114233: Flight Simulator 5.0a README.DOC Contents

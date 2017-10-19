@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147144: XCLN: ESC Key Does Not Close Profiles Window"
-permalink: kb/147/Q147144/
+permalink: /kb/147/Q147144/
 ---
 
 ## Q147144: XCLN: ESC Key Does Not Close Profiles Window

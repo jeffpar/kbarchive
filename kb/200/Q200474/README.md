@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200474: XADM: Unable to Create More than One Server Location"
-permalink: kb/200/Q200474/
+permalink: /kb/200/Q200474/
 ---
 
 ## Q200474: XADM: Unable to Create More than One Server Location

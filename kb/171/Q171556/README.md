@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171556: FIX: VB5 IDE Causes Exception Violation During Unload of Form"
-permalink: kb/171/Q171556/
+permalink: /kb/171/Q171556/
 ---
 
 ## Q171556: FIX: VB5 IDE Causes Exception Violation During Unload of Form

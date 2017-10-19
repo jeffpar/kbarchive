@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234912: SMS: Y2K Queries Use Large Amounts of Tempdb &amp; Fail to Complete"
-permalink: kb/234/Q234912/
+permalink: /kb/234/Q234912/
 ---
 
 ## Q234912: SMS: Y2K Queries Use Large Amounts of Tempdb &amp; Fail to Complete

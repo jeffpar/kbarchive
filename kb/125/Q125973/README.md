@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125973: Animation Techniques in Win32 Corrections and Comments"
-permalink: kb/125/Q125973/
+permalink: /kb/125/Q125973/
 ---
 
 ## Q125973: Animation Techniques in Win32 Corrections and Comments

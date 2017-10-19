@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180358: SNA User Information Not Updated On Windows NT Member Server"
-permalink: kb/180/Q180358/
+permalink: /kb/180/Q180358/
 ---
 
 ## Q180358: SNA User Information Not Updated On Windows NT Member Server

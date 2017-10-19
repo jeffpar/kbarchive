@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167667: SNA Server Rejects LU6.2 BIND over 2nd Connection"
-permalink: kb/167/Q167667/
+permalink: /kb/167/Q167667/
 ---
 
 ## Q167667: SNA Server Rejects LU6.2 BIND over 2nd Connection

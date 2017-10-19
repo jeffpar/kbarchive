@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128461: PROFS: Out-of-Memory Conditions in MS-GATE, MS-CSM, MS-GRF"
-permalink: kb/128/Q128461/
+permalink: /kb/128/Q128461/
 ---
 
 ## Q128461: PROFS: Out-of-Memory Conditions in MS-GATE, MS-CSM, MS-GRF

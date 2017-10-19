@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78444: Incompatible COMMAND.COM with Solomon III Versions Before 7.0"
-permalink: kb/078/Q78444/
+permalink: /kb/078/Q78444/
 ---
 
 ## Q78444: Incompatible COMMAND.COM with Solomon III Versions Before 7.0

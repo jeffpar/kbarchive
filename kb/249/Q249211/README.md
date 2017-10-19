@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249211: FS2000: Scenery Colors Distorted When Using an ATI Video Adapter"
-permalink: kb/249/Q249211/
+permalink: /kb/249/Q249211/
 ---
 
 ## Q249211: FS2000: Scenery Colors Distorted When Using an ATI Video Adapter

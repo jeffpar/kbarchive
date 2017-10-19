@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276038: Encarta 2001 DVD: Menus and Pinpointer Are Not on Home Screen"
-permalink: kb/276/Q276038/
+permalink: /kb/276/Q276038/
 ---
 
 ## Q276038: Encarta 2001 DVD: Menus and Pinpointer Are Not on Home Screen

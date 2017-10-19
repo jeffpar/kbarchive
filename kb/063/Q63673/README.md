@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63673: Setup Doesn't Modify Configuration Files with OS/2"
-permalink: kb/063/Q63673/
+permalink: /kb/063/Q63673/
 ---
 
 ## Q63673: Setup Doesn't Modify Configuration Files with OS/2

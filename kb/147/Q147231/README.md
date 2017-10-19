@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147231: Adding Program Groups and Items During Unattended Setup"
-permalink: kb/147/Q147231/
+permalink: /kb/147/Q147231/
 ---
 
 ## Q147231: Adding Program Groups and Items During Unattended Setup

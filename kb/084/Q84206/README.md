@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84206: CAPS LOCK Does Not Function Correctly on Toshiba T2000 SXE"
-permalink: kb/084/Q84206/
+permalink: /kb/084/Q84206/
 ---
 
 ## Q84206: CAPS LOCK Does Not Function Correctly on Toshiba T2000 SXE

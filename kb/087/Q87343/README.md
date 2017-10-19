@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87343: Creating a Glossary Button in Windows Help"
-permalink: kb/087/Q87343/
+permalink: /kb/087/Q87343/
 ---
 
 ## Q87343: Creating a Glossary Button in Windows Help

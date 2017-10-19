@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185821: Ident.exe Retrieves @@IDENTITY From ODBC Inserts"
-permalink: kb/185/Q185821/
+permalink: /kb/185/Q185821/
 ---
 
 ## Q185821: Ident.exe Retrieves @@IDENTITY From ODBC Inserts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199060: PRB: ATL Service Run from the IDE Doesn't Log Events to Console"
-permalink: kb/199/Q199060/
+permalink: /kb/199/Q199060/
 ---
 
 ## Q199060: PRB: ATL Service Run from the IDE Doesn't Log Events to Console

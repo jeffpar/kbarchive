@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156365: Hidden Shares Are Not Available After Using System Policy Editor"
-permalink: kb/156/Q156365/
+permalink: /kb/156/Q156365/
 ---
 
 ## Q156365: Hidden Shares Are Not Available After Using System Policy Editor

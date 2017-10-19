@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96496: Err Msg: SYS Is Unable to Operate on Target Drive"
-permalink: kb/096/Q96496/
+permalink: /kb/096/Q96496/
 ---
 
 ## Q96496: Err Msg: SYS Is Unable to Operate on Target Drive

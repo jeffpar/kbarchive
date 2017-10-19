@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194737: PC Adm: Admin Hangs When Listing Over 200 Postoffices"
-permalink: kb/194/Q194737/
+permalink: /kb/194/Q194737/
 ---
 
 ## Q194737: PC Adm: Admin Hangs When Listing Over 200 Postoffices

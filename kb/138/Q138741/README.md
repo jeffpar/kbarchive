@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138741: Intermittent System Hangs with OPTI-495SLC Chipset"
-permalink: kb/138/Q138741/
+permalink: /kb/138/Q138741/
 ---
 
 ## Q138741: Intermittent System Hangs with OPTI-495SLC Chipset

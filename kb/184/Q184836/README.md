@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184836: Application Access Violates When Session Is Terminated"
-permalink: kb/184/Q184836/
+permalink: /kb/184/Q184836/
 ---
 
 ## Q184836: Application Access Violates When Session Is Terminated

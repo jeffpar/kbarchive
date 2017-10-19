@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215554: XADM: How to Change the POP3-Download Order"
-permalink: kb/215/Q215554/
+permalink: /kb/215/Q215554/
 ---
 
 ## Q215554: XADM: How to Change the POP3-Download Order

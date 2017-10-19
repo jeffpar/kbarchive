@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323941: Zoo Tycoon Err Msg: Cannot Locate File Ws2_32.dll or Ws2help.dll"
-permalink: kb/323/Q323941/
+permalink: /kb/323/Q323941/
 ---
 
 ## Q323941: Zoo Tycoon Err Msg: Cannot Locate File Ws2_32.dll or Ws2help.dll

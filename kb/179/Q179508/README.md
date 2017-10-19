@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179508: Encarta 98: Incorrect Items in Media Gallery Time Filter"
-permalink: kb/179/Q179508/
+permalink: /kb/179/Q179508/
 ---
 
 ## Q179508: Encarta 98: Incorrect Items in Media Gallery Time Filter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139820: Moving or Removing Disks &amp; Fault Tolerant Drive Configurations"
-permalink: kb/139/Q139820/
+permalink: /kb/139/Q139820/
 ---
 
 ## Q139820: Moving or Removing Disks &amp; Fault Tolerant Drive Configurations

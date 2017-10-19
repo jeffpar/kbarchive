@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280349: XADM: &quot;Account information Is Incorrect&quot; Message During Setup"
-permalink: kb/280/Q280349/
+permalink: /kb/280/Q280349/
 ---
 
 ## Q280349: XADM: &quot;Account information Is Incorrect&quot; Message During Setup

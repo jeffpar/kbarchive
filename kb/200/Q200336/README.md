@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200336: SMS: PCM Application Pauses Using a Novell Distribution Server"
-permalink: kb/200/Q200336/
+permalink: /kb/200/Q200336/
 ---
 
 ## Q200336: SMS: PCM Application Pauses Using a Novell Distribution Server

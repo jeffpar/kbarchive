@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q324717: PRB: Connection Stays Pending for AS/400 with Gigabit Adapter"
-permalink: kb/324/Q324717/
+permalink: /kb/324/Q324717/
 ---
 
 ## Q324717: PRB: Connection Stays Pending for AS/400 with Gigabit Adapter

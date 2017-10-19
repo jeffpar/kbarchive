@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182407: SMS: Remote Control Quick Viewer Freezes If Minimized"
-permalink: kb/182/Q182407/
+permalink: /kb/182/Q182407/
 ---
 
 ## Q182407: SMS: Remote Control Quick Viewer Freezes If Minimized

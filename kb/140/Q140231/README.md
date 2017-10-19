@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140231: Changing Boot Partition from NTFS to FAT Hangs Setup"
-permalink: kb/140/Q140231/
+permalink: /kb/140/Q140231/
 ---
 
 ## Q140231: Changing Boot Partition from NTFS to FAT Hangs Setup

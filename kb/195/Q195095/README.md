@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195095: CG3: Previews on Network Drive Error with Clip Gallery 3.0"
-permalink: kb/195/Q195095/
+permalink: /kb/195/Q195095/
 ---
 
 ## Q195095: CG3: Previews on Network Drive Error with Clip Gallery 3.0

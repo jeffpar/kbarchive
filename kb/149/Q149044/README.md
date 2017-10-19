@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149044: DNS Host Name Substitutes &quot;-&quot; for Invalid Characters"
-permalink: kb/149/Q149044/
+permalink: /kb/149/Q149044/
 ---
 
 ## Q149044: DNS Host Name Substitutes &quot;-&quot; for Invalid Characters

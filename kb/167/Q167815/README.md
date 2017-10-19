@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167815: Mapping Operation Attempted on Non-NetWare Drive"
-permalink: kb/167/Q167815/
+permalink: /kb/167/Q167815/
 ---
 
 ## Q167815: Mapping Operation Attempted on Non-NetWare Drive

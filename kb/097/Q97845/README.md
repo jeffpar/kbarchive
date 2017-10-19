@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97845: Text Copied from Bookshelf to Word Formatted Incorrectly"
-permalink: kb/097/Q97845/
+permalink: /kb/097/Q97845/
 ---
 
 ## Q97845: Text Copied from Bookshelf to Word Formatted Incorrectly

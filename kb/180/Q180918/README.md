@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180918: SMSINST: Guidelines for Using SMS Installer"
-permalink: kb/180/Q180918/
+permalink: /kb/180/Q180918/
 ---
 
 ## Q180918: SMSINST: Guidelines for Using SMS Installer

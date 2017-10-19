@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277020: Encarta: How to Order Headset Replacement Parts"
-permalink: kb/277/Q277020/
+permalink: /kb/277/Q277020/
 ---
 
 ## Q277020: Encarta: How to Order Headset Replacement Parts

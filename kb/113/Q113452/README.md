@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113452: PC Adm: Files Written to Remote User Data Disk"
-permalink: kb/113/Q113452/
+permalink: /kb/113/Q113452/
 ---
 
 ## Q113452: PC Adm: Files Written to Remote User Data Disk

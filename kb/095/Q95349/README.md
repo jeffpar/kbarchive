@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95349: Cannot Open More Than One File at a Time with EXPAND"
-permalink: kb/095/Q95349/
+permalink: /kb/095/Q95349/
 ---
 
 ## Q95349: Cannot Open More Than One File at a Time with EXPAND

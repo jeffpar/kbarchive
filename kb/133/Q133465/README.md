@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133465: Wine Guide for the Macintosh: Movie Control Buttons Missing"
-permalink: kb/133/Q133465/
+permalink: /kb/133/Q133465/
 ---
 
 ## Q133465: Wine Guide for the Macintosh: Movie Control Buttons Missing

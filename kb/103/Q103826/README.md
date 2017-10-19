@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103826: User Authentication Fails on LAN Manager Client"
-permalink: kb/103/Q103826/
+permalink: /kb/103/Q103826/
 ---
 
 ## Q103826: User Authentication Fails on LAN Manager Client

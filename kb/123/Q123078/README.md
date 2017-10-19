@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123078: IDE E-Z Raid-1 Driver Doesn't Load; Uses Real-Mode Drivers"
-permalink: kb/123/Q123078/
+permalink: /kb/123/Q123078/
 ---
 
 ## Q123078: IDE E-Z Raid-1 Driver Doesn't Load; Uses Real-Mode Drivers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94604: Incorrect SMARTDrive BufferSize Setting Hangs System"
-permalink: kb/094/Q94604/
+permalink: /kb/094/Q94604/
 ---
 
 ## Q94604: Incorrect SMARTDrive BufferSize Setting Hangs System

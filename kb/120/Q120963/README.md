@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120963: PRB: ON KEY LABEL CMD+&lt;Key_Name&gt; Causes &quot;Syntax Error&quot;"
-permalink: kb/120/Q120963/
+permalink: /kb/120/Q120963/
 ---
 
 ## Q120963: PRB: ON KEY LABEL CMD+&lt;Key_Name&gt; Causes &quot;Syntax Error&quot;

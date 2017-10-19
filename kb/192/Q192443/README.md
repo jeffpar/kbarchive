@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192443: PRB: Error 438 Using TabOrder Sample Add-in"
-permalink: kb/192/Q192443/
+permalink: /kb/192/Q192443/
 ---
 
 ## Q192443: PRB: Error 438 Using TabOrder Sample Add-in

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194107: Cannot Connect to Newsgroups on Msnnews.msn.com News Server"
-permalink: kb/194/Q194107/
+permalink: /kb/194/Q194107/
 ---
 
 ## Q194107: Cannot Connect to Newsgroups on Msnnews.msn.com News Server

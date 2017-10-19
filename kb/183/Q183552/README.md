@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183552: SNA DDM Service Terminates; Type Mismatch Errors"
-permalink: kb/183/Q183552/
+permalink: /kb/183/Q183552/
 ---
 
 ## Q183552: SNA DDM Service Terminates; Type Mismatch Errors

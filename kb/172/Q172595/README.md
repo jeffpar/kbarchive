@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172595: WinNT Err: Stop 0x0000007F in Netbt.sys Due to #INCLUDE"
-permalink: kb/172/Q172595/
+permalink: /kb/172/Q172595/
 ---
 
 ## Q172595: WinNT Err: Stop 0x0000007F in Netbt.sys Due to #INCLUDE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190207: INFO: Satellite DLL Directory Search Patterns"
-permalink: kb/190/Q190207/
+permalink: /kb/190/Q190207/
 ---
 
 ## Q190207: INFO: Satellite DLL Directory Search Patterns

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94722: Running MemMaker to Optimize a Startup Floppy Disk"
-permalink: kb/094/Q94722/
+permalink: /kb/094/Q94722/
 ---
 
 ## Q94722: Running MemMaker to Optimize a Startup Floppy Disk

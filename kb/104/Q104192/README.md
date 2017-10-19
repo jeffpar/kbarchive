@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104192: MS-DOS 6.0 File List With Expanded File Names/Sizes"
-permalink: kb/104/Q104192/
+permalink: /kb/104/Q104192/
 ---
 
 ## Q104192: MS-DOS 6.0 File List With Expanded File Names/Sizes

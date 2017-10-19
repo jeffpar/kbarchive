@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132786: Known Issues with MS Print Agent for NetWare (MSPSRV)"
-permalink: kb/132/Q132786/
+permalink: /kb/132/Q132786/
 ---
 
 ## Q132786: Known Issues with MS Print Agent for NetWare (MSPSRV)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152233: XADM: This Is a Special Version of Microsoft Exchange"
-permalink: kb/152/Q152233/
+permalink: /kb/152/Q152233/
 ---
 
 ## Q152233: XADM: This Is a Special Version of Microsoft Exchange

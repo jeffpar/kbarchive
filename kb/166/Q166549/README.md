@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166549: XCLN: Can't Access Proptags in Other Propsets Via Fields.Item()"
-permalink: kb/166/Q166549/
+permalink: /kb/166/Q166549/
 ---
 
 ## Q166549: XCLN: Can't Access Proptags in Other Propsets Via Fields.Item()

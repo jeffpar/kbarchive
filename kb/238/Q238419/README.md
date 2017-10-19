@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238419: XADM: Information Store Stops Responding When Delivering an NDR"
-permalink: kb/238/Q238419/
+permalink: /kb/238/Q238419/
 ---
 
 ## Q238419: XADM: Information Store Stops Responding When Delivering an NDR

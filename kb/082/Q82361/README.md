@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82361: Norton Desktop Hangs When Canceling Browse and Refresh"
-permalink: kb/082/Q82361/
+permalink: /kb/082/Q82361/
 ---
 
 ## Q82361: Norton Desktop Hangs When Canceling Browse and Refresh

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231512: MapPoint 2000: Data Import Wizard Assigns ZIP Heading to Column"
-permalink: kb/231/Q231512/
+permalink: /kb/231/Q231512/
 ---
 
 ## Q231512: MapPoint 2000: Data Import Wizard Assigns ZIP Heading to Column

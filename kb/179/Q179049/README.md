@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179049: XADM: DSAMain Stops on DSAMAIN!PutDistName"
-permalink: kb/179/Q179049/
+permalink: /kb/179/Q179049/
 ---
 
 ## Q179049: XADM: DSAMain Stops on DSAMAIN!PutDistName

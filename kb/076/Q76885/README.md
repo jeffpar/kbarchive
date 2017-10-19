@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76885: Graphics: The Edit Copy Command Is Dimmed in Bookshelf"
-permalink: kb/076/Q76885/
+permalink: /kb/076/Q76885/
 ---
 
 ## Q76885: Graphics: The Edit Copy Command Is Dimmed in Bookshelf

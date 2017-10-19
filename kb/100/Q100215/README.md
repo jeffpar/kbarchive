@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100215: Err Msg: Not Enough Memory to Run Word"
-permalink: kb/100/Q100215/
+permalink: /kb/100/Q100215/
 ---
 
 ## Q100215: Err Msg: Not Enough Memory to Run Word

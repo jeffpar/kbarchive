@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154485: Disabling Keep Alive Connections in IIS 1.0"
-permalink: kb/154/Q154485/
+permalink: /kb/154/Q154485/
 ---
 
 ## Q154485: Disabling Keep Alive Connections in IIS 1.0

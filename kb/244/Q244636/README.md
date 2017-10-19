@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244636: Intermittent Delays or Missing Domain Option in Logon"
-permalink: kb/244/Q244636/
+permalink: /kb/244/Q244636/
 ---
 
 ## Q244636: Intermittent Delays or Missing Domain Option in Logon

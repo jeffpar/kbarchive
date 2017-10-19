@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235607: XADM: HTML in Subject Field Is Not Converted Properly"
-permalink: kb/235/Q235607/
+permalink: /kb/235/Q235607/
 ---
 
 ## Q235607: XADM: HTML in Subject Field Is Not Converted Properly

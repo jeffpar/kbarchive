@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163804: Filer.exe Contains Filer.dll for Visual FoxPro 5.0"
-permalink: kb/163/Q163804/
+permalink: /kb/163/Q163804/
 ---
 
 ## Q163804: Filer.exe Contains Filer.dll for Visual FoxPro 5.0

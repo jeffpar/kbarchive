@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171023: Program Viewer Menus Do Not Function Properly"
-permalink: kb/171/Q171023/
+permalink: /kb/171/Q171023/
 ---
 
 ## Q171023: Program Viewer Menus Do Not Function Properly

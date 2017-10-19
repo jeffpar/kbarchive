@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108590: Flight Simulator 5.0: Hang During Splash Startup Screen"
-permalink: kb/108/Q108590/
+permalink: /kb/108/Q108590/
 ---
 
 ## Q108590: Flight Simulator 5.0: Hang During Splash Startup Screen

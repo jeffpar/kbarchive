@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125794: PRB: Calling CDatabase::Open in a USRDLL Causes CDBException"
-permalink: kb/125/Q125794/
+permalink: /kb/125/Q125794/
 ---
 
 ## Q125794: PRB: Calling CDatabase::Open in a USRDLL Causes CDBException

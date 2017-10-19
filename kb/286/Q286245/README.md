@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286245: PRB: Error Updating Records w/DB2OLEDB &amp; Server-Side ADO Cursor"
-permalink: kb/286/Q286245/
+permalink: /kb/286/Q286245/
 ---
 
 ## Q286245: PRB: Error Updating Records w/DB2OLEDB &amp; Server-Side ADO Cursor

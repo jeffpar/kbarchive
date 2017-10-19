@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197153: WD97: Reveal Formatting Does Not Work Inside a Text Box"
-permalink: kb/197/Q197153/
+permalink: /kb/197/Q197153/
 ---
 
 ## Q197153: WD97: Reveal Formatting Does Not Work Inside a Text Box

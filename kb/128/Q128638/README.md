@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128638: User Logs On To a Blank Windows NT Screen"
-permalink: kb/128/Q128638/
+permalink: /kb/128/Q128638/
 ---
 
 ## Q128638: User Logs On To a Blank Windows NT Screen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74873: Device Conflict Error Message in 386 Enhanced Mode"
-permalink: kb/074/Q74873/
+permalink: /kb/074/Q74873/
 ---
 
 ## Q74873: Device Conflict Error Message in 386 Enhanced Mode

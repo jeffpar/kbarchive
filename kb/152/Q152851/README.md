@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152851: Cannot Change System File Attribute in Windows Explorer"
-permalink: kb/152/Q152851/
+permalink: /kb/152/Q152851/
 ---
 
 ## Q152851: Cannot Change System File Attribute in Windows Explorer

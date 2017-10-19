@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127194: FIX: CMap Template Class Leaks Non-Primitive KEY Objects"
-permalink: kb/127/Q127194/
+permalink: /kb/127/Q127194/
 ---
 
 ## Q127194: FIX: CMap Template Class Leaks Non-Primitive KEY Objects

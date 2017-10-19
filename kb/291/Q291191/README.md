@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291191: HOWTO: Use the ENTER Key to Navigate in Visual Basic DataGrid"
-permalink: kb/291/Q291191/
+permalink: /kb/291/Q291191/
 ---
 
 ## Q291191: HOWTO: Use the ENTER Key to Navigate in Visual Basic DataGrid

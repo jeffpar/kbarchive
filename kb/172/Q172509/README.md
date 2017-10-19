@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172509: Explorer Erroneously Generates Event 560 - Write Failures"
-permalink: kb/172/Q172509/
+permalink: /kb/172/Q172509/
 ---
 
 ## Q172509: Explorer Erroneously Generates Event 560 - Write Failures

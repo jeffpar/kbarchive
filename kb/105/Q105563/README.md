@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105563: Mozart: Mozart Hangs when Restored from Program Manager Icon"
-permalink: kb/105/Q105563/
+permalink: /kb/105/Q105563/
 ---
 
 ## Q105563: Mozart: Mozart Hangs when Restored from Program Manager Icon

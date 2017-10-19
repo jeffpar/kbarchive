@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248034: IIS Error: 404.1 Web Site Not Found"
-permalink: kb/248/Q248034/
+permalink: /kb/248/Q248034/
 ---
 
 ## Q248034: IIS Error: 404.1 Web Site Not Found

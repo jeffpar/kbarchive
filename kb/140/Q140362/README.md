@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140362: BUG: PVCS_SS Does Not Work with PVCS for Windows NT"
-permalink: kb/140/Q140362/
+permalink: /kb/140/Q140362/
 ---
 
 ## Q140362: BUG: PVCS_SS Does Not Work with PVCS for Windows NT

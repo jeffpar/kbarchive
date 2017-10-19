@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141730: Music Central/Cinemania: Names With Punctuation Not Found"
-permalink: kb/141/Q141730/
+permalink: /kb/141/Q141730/
 ---
 
 ## Q141730: Music Central/Cinemania: Names With Punctuation Not Found

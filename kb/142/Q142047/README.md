@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142047: Bad Network Packet May Cause Access Violation (AV) on DNS Server"
-permalink: kb/142/Q142047/
+permalink: /kb/142/Q142047/
 ---
 
 ## Q142047: Bad Network Packet May Cause Access Violation (AV) on DNS Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90928: MSIPX and NETX Command Line Switches with WFWG"
-permalink: kb/090/Q90928/
+permalink: /kb/090/Q90928/
 ---
 
 ## Q90928: MSIPX and NETX Command Line Switches with WFWG

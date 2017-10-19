@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172496: Windows 95 Client Config Utility Incorrectly Updates Check Box"
-permalink: kb/172/Q172496/
+permalink: /kb/172/Q172496/
 ---
 
 ## Q172496: Windows 95 Client Config Utility Incorrectly Updates Check Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155926: Media Player Does Not Recognize Multiple CD-ROM Drives"
-permalink: kb/155/Q155926/
+permalink: /kb/155/Q155926/
 ---
 
 ## Q155926: Media Player Does Not Recognize Multiple CD-ROM Drives

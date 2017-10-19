@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196353: Starts Here: Desktop Flashes After Load"
-permalink: kb/196/Q196353/
+permalink: /kb/196/Q196353/
 ---
 
 ## Q196353: Starts Here: Desktop Flashes After Load

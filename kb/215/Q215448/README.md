@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215448: BUG: ComboBox Scroll Event Might Not Fire"
-permalink: kb/215/Q215448/
+permalink: /kb/215/Q215448/
 ---
 
 ## Q215448: BUG: ComboBox Scroll Event Might Not Fire

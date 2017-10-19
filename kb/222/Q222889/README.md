@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222889: How to Copy the Msdun13.exe File from Another Computer"
-permalink: kb/222/Q222889/
+permalink: /kb/222/Q222889/
 ---
 
 ## Q222889: How to Copy the Msdun13.exe File from Another Computer

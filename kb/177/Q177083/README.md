@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177083: How to Verify the Internet Mail Enhancement Patch Is Installed"
-permalink: kb/177/Q177083/
+permalink: /kb/177/Q177083/
 ---
 
 ## Q177083: How to Verify the Internet Mail Enhancement Patch Is Installed

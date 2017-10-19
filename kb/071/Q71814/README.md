@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71814: PostScript Driver and Printer Resolution"
-permalink: kb/071/Q71814/
+permalink: /kb/071/Q71814/
 ---
 
 ## Q71814: PostScript Driver and Printer Resolution

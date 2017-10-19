@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188700: Screensaver Password Works Even if Account Is Locked Out"
-permalink: kb/188/Q188700/
+permalink: /kb/188/Q188700/
 ---
 
 ## Q188700: Screensaver Password Works Even if Account Is Locked Out

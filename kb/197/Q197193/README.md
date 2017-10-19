@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197193: FIX: Application Error in Locals Window with Specific Variables"
-permalink: kb/197/Q197193/
+permalink: /kb/197/Q197193/
 ---
 
 ## Q197193: FIX: Application Error in Locals Window with Specific Variables

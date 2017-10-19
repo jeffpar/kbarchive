@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86361: NETWORKS.TXT: Microsoft Windows &amp; MS-DOS 5 Upgrade Part B"
-permalink: kb/086/Q86361/
+permalink: /kb/086/Q86361/
 ---
 
 ## Q86361: NETWORKS.TXT: Microsoft Windows &amp; MS-DOS 5 Upgrade Part B

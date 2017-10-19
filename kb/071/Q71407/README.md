@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71407: Mac Hyp: Changing the Mail Server"
-permalink: kb/071/Q71407/
+permalink: /kb/071/Q71407/
 ---
 
 ## Q71407: Mac Hyp: Changing the Mail Server

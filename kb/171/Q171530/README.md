@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171530: FIX: Crash on Data Tip After Enum Name Changed"
-permalink: kb/171/Q171530/
+permalink: /kb/171/Q171530/
 ---
 
 ## Q171530: FIX: Crash on Data Tip After Enum Name Changed

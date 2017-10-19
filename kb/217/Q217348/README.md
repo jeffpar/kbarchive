@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217348: Combat FS: Game Is Not Displayed Properly in Full Screen Mode"
-permalink: kb/217/Q217348/
+permalink: /kb/217/Q217348/
 ---
 
 ## Q217348: Combat FS: Game Is Not Displayed Properly in Full Screen Mode

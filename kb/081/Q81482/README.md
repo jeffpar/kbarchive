@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81482: Windows: Tandy 2102 Prints Sixes or Random Characters"
-permalink: kb/081/Q81482/
+permalink: /kb/081/Q81482/
 ---
 
 ## Q81482: Windows: Tandy 2102 Prints Sixes or Random Characters

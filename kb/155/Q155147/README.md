@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155147: Writer 2: Spaces to the Right of Right Margin Behave Strangely"
-permalink: kb/155/Q155147/
+permalink: /kb/155/Q155147/
 ---
 
 ## Q155147: Writer 2: Spaces to the Right of Right Margin Behave Strangely

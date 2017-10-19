@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156773: PRB: COPY TO TYPE DELIMITED Differs in Various FP Versions"
-permalink: kb/156/Q156773/
+permalink: /kb/156/Q156773/
 ---
 
 ## Q156773: PRB: COPY TO TYPE DELIMITED Differs in Various FP Versions

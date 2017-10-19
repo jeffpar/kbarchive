@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97491: Duplicate LOGON Names Can Disrupt Messenger Service"
-permalink: kb/097/Q97491/
+permalink: /kb/097/Q97491/
 ---
 
 ## Q97491: Duplicate LOGON Names Can Disrupt Messenger Service

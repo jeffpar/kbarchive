@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161280: Unable to Change Previously Used FPNW Server Name"
-permalink: kb/161/Q161280/
+permalink: /kb/161/Q161280/
 ---
 
 ## Q161280: Unable to Change Previously Used FPNW Server Name

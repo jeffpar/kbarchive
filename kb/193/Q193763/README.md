@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193763: GetFileAttributes API May Return Invalid Return Code"
-permalink: kb/193/Q193763/
+permalink: /kb/193/Q193763/
 ---
 
 ## Q193763: GetFileAttributes API May Return Invalid Return Code

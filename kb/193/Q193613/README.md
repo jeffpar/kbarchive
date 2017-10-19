@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193613: ADSI Paths Greater than 80 Characters Causes Access Violation"
-permalink: kb/193/Q193613/
+permalink: /kb/193/Q193613/
 ---
 
 ## Q193613: ADSI Paths Greater than 80 Characters Causes Access Violation

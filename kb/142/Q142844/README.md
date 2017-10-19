@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142844: Location of Stored Favorite Web Pages in Internet Explorer"
-permalink: kb/142/Q142844/
+permalink: /kb/142/Q142844/
 ---
 
 ## Q142844: Location of Stored Favorite Web Pages in Internet Explorer

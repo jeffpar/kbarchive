@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167775: Spool32.exe Error When Printing on a Network"
-permalink: kb/167/Q167775/
+permalink: /kb/167/Q167775/
 ---
 
 ## Q167775: Spool32.exe Error When Printing on a Network

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159575: DOC: SendTime Sample Needs DCOM to Work"
-permalink: kb/159/Q159575/
+permalink: /kb/159/Q159575/
 ---
 
 ## Q159575: DOC: SendTime Sample Needs DCOM to Work

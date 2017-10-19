@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96362: PRB: &quot;Chosen Printer Not Supported&quot; When Page Size Is Chosen"
-permalink: kb/096/Q96362/
+permalink: /kb/096/Q96362/
 ---
 
 ## Q96362: PRB: &quot;Chosen Printer Not Supported&quot; When Page Size Is Chosen

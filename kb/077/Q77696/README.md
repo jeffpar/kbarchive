@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77696: &quot;Close Waveaudio&quot; Command Closes Open Waveaudio Device"
-permalink: kb/077/Q77696/
+permalink: /kb/077/Q77696/
 ---
 
 ## Q77696: &quot;Close Waveaudio&quot; Command Closes Open Waveaudio Device

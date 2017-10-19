@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288207: IISSYNC May Fail If SSL Is Enabled on IIS5/Windows 2000 Cluster"
-permalink: kb/288/Q288207/
+permalink: /kb/288/Q288207/
 ---
 
 ## Q288207: IISSYNC May Fail If SSL Is Enabled on IIS5/Windows 2000 Cluster

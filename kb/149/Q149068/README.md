@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149068: FIX: Reprint Group Header on Each Page Malfunctions"
-permalink: kb/149/Q149068/
+permalink: /kb/149/Q149068/
 ---
 
 ## Q149068: FIX: Reprint Group Header on Each Page Malfunctions

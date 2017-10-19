@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301386: HOW TO: Install MetaEdit 2.2 on Windows NT 4.0 or Windows 2000"
-permalink: kb/301/Q301386/
+permalink: /kb/301/Q301386/
 ---
 
 ## Q301386: HOW TO: Install MetaEdit 2.2 on Windows NT 4.0 or Windows 2000

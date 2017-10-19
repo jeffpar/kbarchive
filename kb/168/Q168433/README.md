@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168433: FIX: Error Using _ttoi64 with Non-Unicode Applications"
-permalink: kb/168/Q168433/
+permalink: /kb/168/Q168433/
 ---
 
 ## Q168433: FIX: Error Using _ttoi64 with Non-Unicode Applications

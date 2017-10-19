@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239909: BUG: ATL Registrar Code Does Not Handle DBCS Correctly"
-permalink: kb/239/Q239909/
+permalink: /kb/239/Q239909/
 ---
 
 ## Q239909: BUG: ATL Registrar Code Does Not Handle DBCS Correctly

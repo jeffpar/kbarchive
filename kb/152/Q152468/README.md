@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152468: Troubleshooting Dr. Watson Errors in SMSEXEC"
-permalink: kb/152/Q152468/
+permalink: /kb/152/Q152468/
 ---
 
 ## Q152468: Troubleshooting Dr. Watson Errors in SMSEXEC

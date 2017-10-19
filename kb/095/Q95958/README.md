@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95958: DoubleSpace: Serious Disk Error Occurred Writing to Drive &lt;x&gt;"
-permalink: kb/095/Q95958/
+permalink: /kb/095/Q95958/
 ---
 
 ## Q95958: DoubleSpace: Serious Disk Error Occurred Writing to Drive &lt;x&gt;

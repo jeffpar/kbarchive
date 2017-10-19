@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221738: FIX:  Memory Leak With SET SYSMENU OFF"
-permalink: kb/221/Q221738/
+permalink: /kb/221/Q221738/
 ---
 
 ## Q221738: FIX:  Memory Leak With SET SYSMENU OFF

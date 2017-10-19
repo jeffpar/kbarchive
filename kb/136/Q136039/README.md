@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136039: Installing Windows NT on a Hard Disk Configured with EZ-Drive"
-permalink: kb/136/Q136039/
+permalink: /kb/136/Q136039/
 ---
 
 ## Q136039: Installing Windows NT on a Hard Disk Configured with EZ-Drive

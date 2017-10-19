@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172805: Access Violations in Rasphone.exe When Attempting RAS Connection"
-permalink: kb/172/Q172805/
+permalink: /kb/172/Q172805/
 ---
 
 ## Q172805: Access Violations in Rasphone.exe When Attempting RAS Connection

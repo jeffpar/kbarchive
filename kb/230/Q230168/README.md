@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230168: Terminal Server Does Not Support User- Mode Printer Drivers"
-permalink: kb/230/Q230168/
+permalink: /kb/230/Q230168/
 ---
 
 ## Q230168: Terminal Server Does Not Support User- Mode Printer Drivers

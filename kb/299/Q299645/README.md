@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299645: BUG: Error &quot;Unable to Register MSADO15.TLB&quot; If You Use PDW Pkg."
-permalink: kb/299/Q299645/
+permalink: /kb/299/Q299645/
 ---
 
 ## Q299645: BUG: Error &quot;Unable to Register MSADO15.TLB&quot; If You Use PDW Pkg.

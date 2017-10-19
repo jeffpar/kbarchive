@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169645: XCON: MTA Event ID 9996 Occurs"
-permalink: kb/169/Q169645/
+permalink: /kb/169/Q169645/
 ---
 
 ## Q169645: XCON: MTA Event ID 9996 Occurs

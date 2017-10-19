@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189287: Exchange Server Databases Not Sent To Recycle Bin When Deleted"
-permalink: kb/189/Q189287/
+permalink: /kb/189/Q189287/
 ---
 
 ## Q189287: Exchange Server Databases Not Sent To Recycle Bin When Deleted

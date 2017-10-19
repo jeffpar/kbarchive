@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191266: HP LaserJet 4 Plus Miniport Driver Mixes Lower and Upper Tray"
-permalink: kb/191/Q191266/
+permalink: /kb/191/Q191266/
 ---
 
 ## Q191266: HP LaserJet 4 Plus Miniport Driver Mixes Lower and Upper Tray

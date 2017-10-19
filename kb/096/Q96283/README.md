@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96283: Guidelines for Running FoxBASE+/Mac on a Network"
-permalink: kb/096/Q96283/
+permalink: /kb/096/Q96283/
 ---
 
 ## Q96283: Guidelines for Running FoxBASE+/Mac on a Network

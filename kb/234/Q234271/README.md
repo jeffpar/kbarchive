@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234271: INFO: Installing a VeriSign SGC Certificate on IIS 4.0"
-permalink: kb/234/Q234271/
+permalink: /kb/234/Q234271/
 ---
 
 ## Q234271: INFO: Installing a VeriSign SGC Certificate on IIS 4.0

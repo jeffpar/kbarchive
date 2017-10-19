@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165427: Convlog.exe May Cause Access Violation"
-permalink: kb/165/Q165427/
+permalink: /kb/165/Q165427/
 ---
 
 ## Q165427: Convlog.exe May Cause Access Violation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174200: How to Install The Microsoft Network Version 2.5"
-permalink: kb/174/Q174200/
+permalink: /kb/174/Q174200/
 ---
 
 ## Q174200: How to Install The Microsoft Network Version 2.5

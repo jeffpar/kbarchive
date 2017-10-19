@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87385: PC DB: Which Programs Access the CONTROL.GLB File"
-permalink: kb/087/Q87385/
+permalink: /kb/087/Q87385/
 ---
 
 ## Q87385: PC DB: Which Programs Access the CONTROL.GLB File

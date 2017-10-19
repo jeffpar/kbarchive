@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186770: Windows NT Hangs Trying to Access SuperDisk SLS-120 Disk Drive"
-permalink: kb/186/Q186770/
+permalink: /kb/186/Q186770/
 ---
 
 ## Q186770: Windows NT Hangs Trying to Access SuperDisk SLS-120 Disk Drive

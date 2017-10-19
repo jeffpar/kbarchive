@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159981: Adding LUs to TN3270 Admin Leads to Server Performance Problems"
-permalink: kb/159/Q159981/
+permalink: /kb/159/Q159981/
 ---
 
 ## Q159981: Adding LUs to TN3270 Admin Leads to Server Performance Problems

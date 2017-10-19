@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159010: Cinemania/Music Central 97 Err Msg: Win32s - Error"
-permalink: kb/159/Q159010/
+permalink: /kb/159/Q159010/
 ---
 
 ## Q159010: Cinemania/Music Central 97 Err Msg: Win32s - Error

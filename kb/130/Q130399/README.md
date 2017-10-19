@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130399: ADT2: ADT Apps from Win 95 Cause Err in Win 3.1 and WFW 3.11"
-permalink: kb/130/Q130399/
+permalink: /kb/130/Q130399/
 ---
 
 ## Q130399: ADT2: ADT Apps from Win 95 Cause Err in Win 3.1 and WFW 3.11

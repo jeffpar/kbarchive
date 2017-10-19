@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190030: BUG: FillStyle Pattern Not Visible for Shape on UserControl"
-permalink: kb/190/Q190030/
+permalink: /kb/190/Q190030/
 ---
 
 ## Q190030: BUG: FillStyle Pattern Not Visible for Shape on UserControl

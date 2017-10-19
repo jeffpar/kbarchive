@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51897: Using Flight Simulator Version 3.00 Logbook with Version 4.00"
-permalink: kb/051/Q51897/
+permalink: /kb/051/Q51897/
 ---
 
 ## Q51897: Using Flight Simulator Version 3.00 Logbook with Version 4.00

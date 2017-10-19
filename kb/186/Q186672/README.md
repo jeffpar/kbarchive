@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186672: XFOR: Russian Outlook MS Mail User Gets NDR Sending to Exchange"
-permalink: kb/186/Q186672/
+permalink: /kb/186/Q186672/
 ---
 
 ## Q186672: XFOR: Russian Outlook MS Mail User Gets NDR Sending to Exchange

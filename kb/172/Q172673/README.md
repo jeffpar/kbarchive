@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172673: BUG: Control Unexpectedly Gains Focus When Made Visible"
-permalink: kb/172/Q172673/
+permalink: /kb/172/Q172673/
 ---
 
 ## Q172673: BUG: Control Unexpectedly Gains Focus When Made Visible

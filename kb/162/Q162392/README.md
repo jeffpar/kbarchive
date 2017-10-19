@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162392: XCLN: Exchange Server Service Not Available in Outlook"
-permalink: kb/162/Q162392/
+permalink: /kb/162/Q162392/
 ---
 
 ## Q162392: XCLN: Exchange Server Service Not Available in Outlook

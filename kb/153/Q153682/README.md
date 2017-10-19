@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153682: BUG: MaskedEdit Control Misbehaves When DragMode Set to 1"
-permalink: kb/153/Q153682/
+permalink: /kb/153/Q153682/
 ---
 
 ## Q153682: BUG: MaskedEdit Control Misbehaves When DragMode Set to 1

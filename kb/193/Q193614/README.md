@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193614: Viewing Computer from MMC Causes Access Violation to Occur"
-permalink: kb/193/Q193614/
+permalink: /kb/193/Q193614/
 ---
 
 ## Q193614: Viewing Computer from MMC Causes Access Violation to Occur

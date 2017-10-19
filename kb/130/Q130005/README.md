@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130005: HOWTO: Use a Custom Class to Encrypt Passwords"
-permalink: kb/130/Q130005/
+permalink: /kb/130/Q130005/
 ---
 
 ## Q130005: HOWTO: Use a Custom Class to Encrypt Passwords

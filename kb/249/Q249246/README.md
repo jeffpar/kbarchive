@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249246: PC MMTA: Drive Is Either Local, Used, or Greater Than Lastdrive"
-permalink: kb/249/Q249246/
+permalink: /kb/249/Q249246/
 ---
 
 ## Q249246: PC MMTA: Drive Is Either Local, Used, or Greater Than Lastdrive

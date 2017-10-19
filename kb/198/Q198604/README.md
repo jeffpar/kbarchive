@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198604: Cannot Change the Default MSN E-mail Program to Outlook 98"
-permalink: kb/198/Q198604/
+permalink: /kb/198/Q198604/
 ---
 
 ## Q198604: Cannot Change the Default MSN E-mail Program to Outlook 98

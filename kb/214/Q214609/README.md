@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214609: Routemon.exe Does Not Properly Set the Metric Option"
-permalink: kb/214/Q214609/
+permalink: /kb/214/Q214609/
 ---
 
 ## Q214609: Routemon.exe Does Not Properly Set the Metric Option

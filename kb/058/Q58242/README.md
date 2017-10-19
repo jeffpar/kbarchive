@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58242: FORMAT.COM Cannot Be Directly Run with Parameters"
-permalink: kb/058/Q58242/
+permalink: /kb/058/Q58242/
 ---
 
 ## Q58242: FORMAT.COM Cannot Be Directly Run with Parameters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231313: Screensaver Does Not Work After 14 Times on WTS Client"
-permalink: kb/231/Q231313/
+permalink: /kb/231/Q231313/
 ---
 
 ## Q231313: Screensaver Does Not Work After 14 Times on WTS Client

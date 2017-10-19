@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159953: XADM: Error After Move Mailbox Operation When Client Logged On"
-permalink: kb/159/Q159953/
+permalink: /kb/159/Q159953/
 ---
 
 ## Q159953: XADM: Error After Move Mailbox Operation When Client Logged On

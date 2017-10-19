@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226851: SMS: Initial Site Control File Rejection Doesn't Confgure Client"
-permalink: kb/226/Q226851/
+permalink: /kb/226/Q226851/
 ---
 
 ## Q226851: SMS: Initial Site Control File Rejection Doesn't Confgure Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131202: HOWTO: Perform Programmatic Logon from Windows for Workgroups"
-permalink: kb/131/Q131202/
+permalink: /kb/131/Q131202/
 ---
 
 ## Q131202: HOWTO: Perform Programmatic Logon from Windows for Workgroups

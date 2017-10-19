@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89700: Setting a Swap File on a RAM Drive"
-permalink: kb/089/Q89700/
+permalink: /kb/089/Q89700/
 ---
 
 ## Q89700: Setting a Swap File on a RAM Drive

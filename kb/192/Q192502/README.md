@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192502: CD Key Incorrect for Visual Basic Deluxe Learning Edition"
-permalink: kb/192/Q192502/
+permalink: /kb/192/Q192502/
 ---
 
 ## Q192502: CD Key Incorrect for Visual Basic Deluxe Learning Edition

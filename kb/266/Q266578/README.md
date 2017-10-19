@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266578: Encarta Err Msg: Please Make Sure the &lt;Encarta&gt; Installation..."
-permalink: kb/266/Q266578/
+permalink: /kb/266/Q266578/
 ---
 
 ## Q266578: Encarta Err Msg: Please Make Sure the &lt;Encarta&gt; Installation...

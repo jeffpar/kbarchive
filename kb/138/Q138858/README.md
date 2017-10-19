@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138858: TN3270 User Session Is Lost Unexpectedly"
-permalink: kb/138/Q138858/
+permalink: /kb/138/Q138858/
 ---
 
 ## Q138858: TN3270 User Session Is Lost Unexpectedly

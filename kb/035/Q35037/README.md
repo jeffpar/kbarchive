@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35037: INFO: How C Interprets Integer Constants with Leading Zeroes"
-permalink: kb/035/Q35037/
+permalink: /kb/035/Q35037/
 ---
 
 ## Q35037: INFO: How C Interprets Integer Constants with Leading Zeroes

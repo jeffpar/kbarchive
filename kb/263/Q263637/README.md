@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263637: BUG: Class Access Specifier Ignored When Creating Temp Objects"
-permalink: kb/263/Q263637/
+permalink: /kb/263/Q263637/
 ---
 
 ## Q263637: BUG: Class Access Specifier Ignored When Creating Temp Objects

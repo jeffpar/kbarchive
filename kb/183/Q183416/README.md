@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183416: WD97: Envelope Prints Blank After Upgrading to SR-1"
-permalink: kb/183/Q183416/
+permalink: /kb/183/Q183416/
 ---
 
 ## Q183416: WD97: Envelope Prints Blank After Upgrading to SR-1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255654: IIS Performance Counters Not Available in TS Client Session"
-permalink: kb/255/Q255654/
+permalink: /kb/255/Q255654/
 ---
 
 ## Q255654: IIS Performance Counters Not Available in TS Client Session

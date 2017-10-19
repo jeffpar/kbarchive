@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125747: Paradox for DOS Over CSNW Causes Windows NT to Hang"
-permalink: kb/125/Q125747/
+permalink: /kb/125/Q125747/
 ---
 
 ## Q125747: Paradox for DOS Over CSNW Causes Windows NT to Hang

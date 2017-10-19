@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104743: PC DirSync: Cannot Remove Dir-Sync Requestor After Install"
-permalink: kb/104/Q104743/
+permalink: /kb/104/Q104743/
 ---
 
 ## Q104743: PC DirSync: Cannot Remove Dir-Sync Requestor After Install

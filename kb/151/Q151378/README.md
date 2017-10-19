@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151378: PRB: CStatic::SetBitmap Doesn't Display Bitmap on Win NT 3.51"
-permalink: kb/151/Q151378/
+permalink: /kb/151/Q151378/
 ---
 
 ## Q151378: PRB: CStatic::SetBitmap Doesn't Display Bitmap on Win NT 3.51

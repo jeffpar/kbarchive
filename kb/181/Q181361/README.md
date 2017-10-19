@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181361: WD97: Text/Table Disappears Following Check Box Form Field"
-permalink: kb/181/Q181361/
+permalink: /kb/181/Q181361/
 ---
 
 ## Q181361: WD97: Text/Table Disappears Following Check Box Form Field

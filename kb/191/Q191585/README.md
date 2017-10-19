@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191585: PRB: File Collections' Add Method Closes Table"
-permalink: kb/191/Q191585/
+permalink: /kb/191/Q191585/
 ---
 
 ## Q191585: PRB: File Collections' Add Method Closes Table

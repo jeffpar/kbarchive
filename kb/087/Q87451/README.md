@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87451: PRB: 386MAX May Conflict with Profiler When Running PLIST"
-permalink: kb/087/Q87451/
+permalink: /kb/087/Q87451/
 ---
 
 ## Q87451: PRB: 386MAX May Conflict with Profiler When Running PLIST

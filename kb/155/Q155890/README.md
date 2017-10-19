@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155890: PRB: FoxPro for Mac's Setup Wizard Can't Copy Source Files"
-permalink: kb/155/Q155890/
+permalink: /kb/155/Q155890/
 ---
 
 ## Q155890: PRB: FoxPro for Mac's Setup Wizard Can't Copy Source Files

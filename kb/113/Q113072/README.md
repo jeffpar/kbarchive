@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113072: PC Win: Check Names Fails to Find Direct Match"
-permalink: kb/113/Q113072/
+permalink: /kb/113/Q113072/
 ---
 
 ## Q113072: PC Win: Check Names Fails to Find Direct Match

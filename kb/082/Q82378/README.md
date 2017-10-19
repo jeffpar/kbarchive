@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82378: 24-Bit DIBs Draw Very Slowly When Running on an 8514"
-permalink: kb/082/Q82378/
+permalink: /kb/082/Q82378/
 ---
 
 ## Q82378: 24-Bit DIBs Draw Very Slowly When Running on an 8514

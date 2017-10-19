@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104586: PC DB: Quick Check for Enhanced Security"
-permalink: kb/104/Q104586/
+permalink: /kb/104/Q104586/
 ---
 
 ## Q104586: PC DB: Quick Check for Enhanced Security

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193985: Encarta: Computer Hangs at 21 Percent When Installing Program"
-permalink: kb/193/Q193985/
+permalink: /kb/193/Q193985/
 ---
 
 ## Q193985: Encarta: Computer Hangs at 21 Percent When Installing Program

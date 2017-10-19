@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193102: FIX: Assert in Appui1.cpp Line 215 in MFC SDI/MDI Application"
-permalink: kb/193/Q193102/
+permalink: /kb/193/Q193102/
 ---
 
 ## Q193102: FIX: Assert in Appui1.cpp Line 215 in MFC SDI/MDI Application

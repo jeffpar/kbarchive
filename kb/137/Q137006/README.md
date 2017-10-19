@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137006: No Hard Disk Light on Compaq DeskPro When Using Windows 95"
-permalink: kb/137/Q137006/
+permalink: /kb/137/Q137006/
 ---
 
 ## Q137006: No Hard Disk Light on Compaq DeskPro When Using Windows 95

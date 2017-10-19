@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174933: SMS: PCM Service Job Does Not Log Failure If Not Mandatory"
-permalink: kb/174/Q174933/
+permalink: /kb/174/Q174933/
 ---
 
 ## Q174933: SMS: PCM Service Job Does Not Log Failure If Not Mandatory

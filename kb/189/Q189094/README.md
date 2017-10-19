@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189094: FIX: Calling CHttpFile::ErrorDlg Function Causes Errors 127 &amp; 2"
-permalink: kb/189/Q189094/
+permalink: /kb/189/Q189094/
 ---
 
 ## Q189094: FIX: Calling CHttpFile::ErrorDlg Function Causes Errors 127 &amp; 2

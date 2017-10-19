@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248802: PRB: Vcvars32.bat Generates Out of Environment Message"
-permalink: kb/248/Q248802/
+permalink: /kb/248/Q248802/
 ---
 
 ## Q248802: PRB: Vcvars32.bat Generates Out of Environment Message

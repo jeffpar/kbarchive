@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118932: PC Adm: Err Msg: Notice 2 Error Updating MASTER.GLB"
-permalink: kb/118/Q118932/
+permalink: /kb/118/Q118932/
 ---
 
 ## Q118932: PC Adm: Err Msg: Notice 2 Error Updating MASTER.GLB

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164846: XCLN: Schedule+ Invitees Are Not Informed When Removed from Appt"
-permalink: kb/164/Q164846/
+permalink: /kb/164/Q164846/
 ---
 
 ## Q164846: XCLN: Schedule+ Invitees Are Not Informed When Removed from Appt

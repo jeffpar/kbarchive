@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191086: XFOR: NDR Not Sent When &quot;Report to DL Owner&quot; Option Checked"
-permalink: kb/191/Q191086/
+permalink: /kb/191/Q191086/
 ---
 
 ## Q191086: XFOR: NDR Not Sent When &quot;Report to DL Owner&quot; Option Checked

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221083: BUG:Can't Insert CE ActiveX Control on Dialog in Resource Editor"
-permalink: kb/221/Q221083/
+permalink: /kb/221/Q221083/
 ---
 
 ## Q221083: BUG:Can't Insert CE ActiveX Control on Dialog in Resource Editor

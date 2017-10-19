@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104990: Problems Using DoubleSpace on Disk Manager Partitioned Drive"
-permalink: kb/104/Q104990/
+permalink: /kb/104/Q104990/
 ---
 
 ## Q104990: Problems Using DoubleSpace on Disk Manager Partitioned Drive

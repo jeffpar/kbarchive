@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186604: Terminal Server Client Error 193"
-permalink: kb/186/Q186604/
+permalink: /kb/186/Q186604/
 ---
 
 ## Q186604: Terminal Server Client Error 193

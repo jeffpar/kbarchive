@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170423: SNA Server's Use of SNASERV, COMLOGS, and COMCFG Sharenames"
-permalink: kb/170/Q170423/
+permalink: /kb/170/Q170423/
 ---
 
 ## Q170423: SNA Server's Use of SNASERV, COMLOGS, and COMCFG Sharenames

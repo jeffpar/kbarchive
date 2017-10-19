@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170902: SMS: Printed SMS Query Results Do Not Match Screen Results"
-permalink: kb/170/Q170902/
+permalink: /kb/170/Q170902/
 ---
 
 ## Q170902: SMS: Printed SMS Query Results Do Not Match Screen Results

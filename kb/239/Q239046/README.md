@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239046: Error Connecting to &lt;Server&gt;, Unexpected Error 0x800740002 ..."
-permalink: kb/239/Q239046/
+permalink: /kb/239/Q239046/
 ---
 
 ## Q239046: Error Connecting to &lt;Server&gt;, Unexpected Error 0x800740002 ...

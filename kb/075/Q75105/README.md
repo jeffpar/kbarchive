@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75105: Award BIOS Earlier than 3.1 Not Compatible with MS-DOS"
-permalink: kb/075/Q75105/
+permalink: /kb/075/Q75105/
 ---
 
 ## Q75105: Award BIOS Earlier than 3.1 Not Compatible with MS-DOS

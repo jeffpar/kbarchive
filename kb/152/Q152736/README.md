@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152736: XCLN: No Read Receipts Sent When Auto-Accepting Meetings"
-permalink: kb/152/Q152736/
+permalink: /kb/152/Q152736/
 ---
 
 ## Q152736: XCLN: No Read Receipts Sent When Auto-Accepting Meetings

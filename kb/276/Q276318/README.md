@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276318: MapPoint 2001: Incorrect Routing on One-Way Streets"
-permalink: kb/276/Q276318/
+permalink: /kb/276/Q276318/
 ---
 
 ## Q276318: MapPoint 2001: Incorrect Routing on One-Way Streets

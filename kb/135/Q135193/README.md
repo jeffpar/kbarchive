@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135193: Q&amp;E Version 2.6.2 Causes Lost Network Functionality"
-permalink: kb/135/Q135193/
+permalink: /kb/135/Q135193/
 ---
 
 ## Q135193: Q&amp;E Version 2.6.2 Causes Lost Network Functionality

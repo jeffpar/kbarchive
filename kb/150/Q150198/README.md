@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150198: Bus Contention and PCI, EISA, and ISA"
-permalink: kb/150/Q150198/
+permalink: /kb/150/Q150198/
 ---
 
 ## Q150198: Bus Contention and PCI, EISA, and ISA

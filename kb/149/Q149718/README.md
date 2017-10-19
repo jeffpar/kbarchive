@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149718: How to Change SPIDs in Windows 95"
-permalink: kb/149/Q149718/
+permalink: /kb/149/Q149718/
 ---
 
 ## Q149718: How to Change SPIDs in Windows 95

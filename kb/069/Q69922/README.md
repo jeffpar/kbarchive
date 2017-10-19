@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69922: Monochrome Limitations with IBM 8514/a Video Card"
-permalink: kb/069/Q69922/
+permalink: /kb/069/Q69922/
 ---
 
 ## Q69922: Monochrome Limitations with IBM 8514/a Video Card

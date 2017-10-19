@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166619: XCON: DR Contains only DN in Non-Replicated Exchange Environment"
-permalink: kb/166/Q166619/
+permalink: /kb/166/Q166619/
 ---
 
 ## Q166619: XCON: DR Contains only DN in Non-Replicated Exchange Environment

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150138: BUG: FOR3199 Error in Host Association of Internal Variable"
-permalink: kb/150/Q150138/
+permalink: /kb/150/Q150138/
 ---
 
 ## Q150138: BUG: FOR3199 Error in Host Association of Internal Variable

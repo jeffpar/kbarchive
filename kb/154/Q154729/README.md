@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154729: Close Combat: How to Set Up Modem-to-Modem Play"
-permalink: kb/154/Q154729/
+permalink: /kb/154/Q154729/
 ---
 
 ## Q154729: Close Combat: How to Set Up Modem-to-Modem Play

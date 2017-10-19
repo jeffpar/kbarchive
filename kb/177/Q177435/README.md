@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177435: PRB: Resolving DEVBCPX: Required file cannot be loaded Error"
-permalink: kb/177/Q177435/
+permalink: /kb/177/Q177435/
 ---
 
 ## Q177435: PRB: Resolving DEVBCPX: Required file cannot be loaded Error

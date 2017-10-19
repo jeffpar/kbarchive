@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130035: PC Win: Troubleshooting Segment Load Failures in Mail"
-permalink: kb/130/Q130035/
+permalink: /kb/130/Q130035/
 ---
 
 ## Q130035: PC Win: Troubleshooting Segment Load Failures in Mail

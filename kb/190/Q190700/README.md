@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190700: XADM: The Services Required When Creating a New Mailbox"
-permalink: kb/190/Q190700/
+permalink: /kb/190/Q190700/
 ---
 
 ## Q190700: XADM: The Services Required When Creating a New Mailbox

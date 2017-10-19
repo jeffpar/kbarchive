@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229018: SMS: APM Re-Executes Some Advertisements"
-permalink: kb/229/Q229018/
+permalink: /kb/229/Q229018/
 ---
 
 ## Q229018: SMS: APM Re-Executes Some Advertisements

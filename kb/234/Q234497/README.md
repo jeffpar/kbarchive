@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234497: HOW TO: Specify Additional Document Types for HTTP Compression"
-permalink: kb/234/Q234497/
+permalink: /kb/234/Q234497/
 ---
 
 ## Q234497: HOW TO: Specify Additional Document Types for HTTP Compression

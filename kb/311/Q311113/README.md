@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311113: IIS Lockdown Wizard Undo Doesn't Restore Uninstalled Services"
-permalink: kb/311/Q311113/
+permalink: /kb/311/Q311113/
 ---
 
 ## Q311113: IIS Lockdown Wizard Undo Doesn't Restore Uninstalled Services

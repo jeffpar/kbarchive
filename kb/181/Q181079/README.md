@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181079: WD97: What to Do If You Have a Macro Virus"
-permalink: kb/181/Q181079/
+permalink: /kb/181/Q181079/
 ---
 
 ## Q181079: WD97: What to Do If You Have a Macro Virus

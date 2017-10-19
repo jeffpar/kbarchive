@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167054: Mac Encarta 97: How To Download Updates Using AOL"
-permalink: kb/167/Q167054/
+permalink: /kb/167/Q167054/
 ---
 
 ## Q167054: Mac Encarta 97: How To Download Updates Using AOL

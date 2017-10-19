@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74052: Setup Hangs on a Sharp PC6200 Series Notebook Computer"
-permalink: kb/074/Q74052/
+permalink: /kb/074/Q74052/
 ---
 
 ## Q74052: Setup Hangs on a Sharp PC6200 Series Notebook Computer

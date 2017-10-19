@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85347: FAX: How to Test the Fax Hardware and Software"
-permalink: kb/085/Q85347/
+permalink: /kb/085/Q85347/
 ---
 
 ## Q85347: FAX: How to Test the Fax Hardware and Software

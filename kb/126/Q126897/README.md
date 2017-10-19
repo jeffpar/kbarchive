@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126897: HOWTO: How to Change Default Printer Settings in an MFC Applicat"
-permalink: kb/126/Q126897/
+permalink: /kb/126/Q126897/
 ---
 
 ## Q126897: HOWTO: How to Change Default Printer Settings in an MFC Applicat

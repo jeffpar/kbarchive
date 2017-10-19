@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119065: Stop Msg: 0001:9A03 When 16-bit App Calls TASKFINDHANDLE"
-permalink: kb/119/Q119065/
+permalink: /kb/119/Q119065/
 ---
 
 ## Q119065: Stop Msg: 0001:9A03 When 16-bit App Calls TASKFINDHANDLE

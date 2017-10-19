@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100400: Musical Instruments: Pop-Ups Disappear When You Switch Away"
-permalink: kb/100/Q100400/
+permalink: /kb/100/Q100400/
 ---
 
 ## Q100400: Musical Instruments: Pop-Ups Disappear When You Switch Away

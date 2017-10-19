@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319749: XCON: Error 1824 in Exchange Internet Mail Service"
-permalink: kb/319/Q319749/
+permalink: /kb/319/Q319749/
 ---
 
 ## Q319749: XCON: Error 1824 in Exchange Internet Mail Service

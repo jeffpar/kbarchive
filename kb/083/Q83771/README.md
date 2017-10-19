@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83771: Missing .WPD File Causes Incorrect Tray and Size"
-permalink: kb/083/Q83771/
+permalink: /kb/083/Q83771/
 ---
 
 ## Q83771: Missing .WPD File Causes Incorrect Tray and Size

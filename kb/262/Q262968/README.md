@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262968: XADM: Distribution List Is Not Displayed in Address Book View"
-permalink: kb/262/Q262968/
+permalink: /kb/262/Q262968/
 ---
 
 ## Q262968: XADM: Distribution List Is Not Displayed in Address Book View

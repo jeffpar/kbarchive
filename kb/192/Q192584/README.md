@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192584: Tutor: Online Registration Wizard Does Not Start"
-permalink: kb/192/Q192584/
+permalink: /kb/192/Q192584/
 ---
 
 ## Q192584: Tutor: Online Registration Wizard Does Not Start

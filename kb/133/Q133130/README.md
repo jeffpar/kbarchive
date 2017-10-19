@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133130: Multiple Master Fonts Not Printed Correctly"
-permalink: kb/133/Q133130/
+permalink: /kb/133/Q133130/
 ---
 
 ## Q133130: Multiple Master Fonts Not Printed Correctly

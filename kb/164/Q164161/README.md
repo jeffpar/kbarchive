@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164161: NTBACKUP Fails to Back up Microsoft Exchange Server Data"
-permalink: kb/164/Q164161/
+permalink: /kb/164/Q164161/
 ---
 
 ## Q164161: NTBACKUP Fails to Back up Microsoft Exchange Server Data

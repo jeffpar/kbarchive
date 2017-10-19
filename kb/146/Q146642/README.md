@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146642: How to Undelete a File Deleted by the Project Manager"
-permalink: kb/146/Q146642/
+permalink: /kb/146/Q146642/
 ---
 
 ## Q146642: How to Undelete a File Deleted by the Project Manager

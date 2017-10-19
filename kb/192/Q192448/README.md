@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192448: WD97: Errors Saving and Opening Files on a Novell 4.11 Server"
-permalink: kb/192/Q192448/
+permalink: /kb/192/Q192448/
 ---
 
 ## Q192448: WD97: Errors Saving and Opening Files on a Novell 4.11 Server

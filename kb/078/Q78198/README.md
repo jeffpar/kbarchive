@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78198: Move'Em Memory Manager from Qualitas"
-permalink: kb/078/Q78198/
+permalink: /kb/078/Q78198/
 ---
 
 ## Q78198: Move'Em Memory Manager from Qualitas

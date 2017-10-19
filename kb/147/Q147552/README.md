@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147552: Backup Always Reports Time as PM"
-permalink: kb/147/Q147552/
+permalink: /kb/147/Q147552/
 ---
 
 ## Q147552: Backup Always Reports Time as PM

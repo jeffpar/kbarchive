@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65673: Explanation of Device Development Kit (DDK)"
-permalink: kb/065/Q65673/
+permalink: /kb/065/Q65673/
 ---
 
 ## Q65673: Explanation of Device Development Kit (DDK)

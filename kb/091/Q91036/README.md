@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91036: PC Ext: Uninstall Enhanced Security Message Not Required"
-permalink: kb/091/Q91036/
+permalink: /kb/091/Q91036/
 ---
 
 ## Q91036: PC Ext: Uninstall Enhanced Security Message Not Required

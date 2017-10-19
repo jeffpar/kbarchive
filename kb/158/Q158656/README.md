@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158656: Mac Encarta 97: Print Output Differs From Expected"
-permalink: kb/158/Q158656/
+permalink: /kb/158/Q158656/
 ---
 
 ## Q158656: Mac Encarta 97: Print Output Differs From Expected

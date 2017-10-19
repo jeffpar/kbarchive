@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153743: Joining a Domain During Automated Setup Fails"
-permalink: kb/153/Q153743/
+permalink: /kb/153/Q153743/
 ---
 
 ## Q153743: Joining a Domain During Automated Setup Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254432: MapPoint 2001: Unable to Successfully Import Data from Excel"
-permalink: kb/254/Q254432/
+permalink: /kb/254/Q254432/
 ---
 
 ## Q254432: MapPoint 2001: Unable to Successfully Import Data from Excel

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91108: PROTOCOL.INI Backup Name Same as WFWG Directory Name"
-permalink: kb/091/Q91108/
+permalink: /kb/091/Q91108/
 ---
 
 ## Q91108: PROTOCOL.INI Backup Name Same as WFWG Directory Name

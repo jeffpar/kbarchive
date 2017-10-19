@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240397: INFO: Adding a VCCE ActiveX Control to a VBCE Form"
-permalink: kb/240/Q240397/
+permalink: /kb/240/Q240397/
 ---
 
 ## Q240397: INFO: Adding a VCCE ActiveX Control to a VBCE Form

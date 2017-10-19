@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236035: SMSINST: SMS Installer Cannot Directly Call Windows API Function"
-permalink: kb/236/Q236035/
+permalink: /kb/236/Q236035/
 ---
 
 ## Q236035: SMSINST: SMS Installer Cannot Directly Call Windows API Function

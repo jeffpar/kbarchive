@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157869: STL Sample for Predicate Version of next_permutation Function"
-permalink: kb/157/Q157869/
+permalink: /kb/157/Q157869/
 ---
 
 ## Q157869: STL Sample for Predicate Version of next_permutation Function

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101878: Windows NT RAS Server Port Reset"
-permalink: kb/101/Q101878/
+permalink: /kb/101/Q101878/
 ---
 
 ## Q101878: Windows NT RAS Server Port Reset

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256215: SMS: Client Reports Advertisement Status Messages to Wrong Sites"
-permalink: kb/256/Q256215/
+permalink: /kb/256/Q256215/
 ---
 
 ## Q256215: SMS: Client Reports Advertisement Status Messages to Wrong Sites

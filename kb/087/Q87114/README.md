@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87114: Packing List: Windows 3.1 SDK Part 1 (3.5-Inch Disks)"
-permalink: kb/087/Q87114/
+permalink: /kb/087/Q87114/
 ---
 
 ## Q87114: Packing List: Windows 3.1 SDK Part 1 (3.5-Inch Disks)

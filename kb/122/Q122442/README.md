@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122442: PRB: stdout/stderr May Not Be In Sync When Using Redirection"
-permalink: kb/122/Q122442/
+permalink: /kb/122/Q122442/
 ---
 
 ## Q122442: PRB: stdout/stderr May Not Be In Sync When Using Redirection

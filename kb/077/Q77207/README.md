@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77207: Using Math Works MATLAB with MS-DOS 5.0"
-permalink: kb/077/Q77207/
+permalink: /kb/077/Q77207/
 ---
 
 ## Q77207: Using Math Works MATLAB with MS-DOS 5.0

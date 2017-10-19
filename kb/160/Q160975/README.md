@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160975: Photo Editor: Problems Controlling Resolution of PCD File"
-permalink: kb/160/Q160975/
+permalink: /kb/160/Q160975/
 ---
 
 ## Q160975: Photo Editor: Problems Controlling Resolution of PCD File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170970: WD97: Macro to Generate List of Available Fonts in Word"
-permalink: kb/170/Q170970/
+permalink: /kb/170/Q170970/
 ---
 
 ## Q170970: WD97: Macro to Generate List of Available Fonts in Word

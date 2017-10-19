@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92411: BUG: Cannot Map TT Font to Same Name PostScript Device Font"
-permalink: kb/092/Q92411/
+permalink: /kb/092/Q92411/
 ---
 
 ## Q92411: BUG: Cannot Map TT Font to Same Name PostScript Device Font

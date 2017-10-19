@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161853: Writer 2: Problems Spell Checking"
-permalink: kb/161/Q161853/
+permalink: /kb/161/Q161853/
 ---
 
 ## Q161853: Writer 2: Problems Spell Checking

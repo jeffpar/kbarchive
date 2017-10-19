@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247616: XADM: Error 1025 Appears Approximately Every 15 Seconds"
-permalink: kb/247/Q247616/
+permalink: /kb/247/Q247616/
 ---
 
 ## Q247616: XADM: Error 1025 Appears Approximately Every 15 Seconds

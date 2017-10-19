@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238010: XADM: Mailbox Manager Setup Installs i386 &amp; Alpha Extension DLL"
-permalink: kb/238/Q238010/
+permalink: /kb/238/Q238010/
 ---
 
 ## Q238010: XADM: Mailbox Manager Setup Installs i386 &amp; Alpha Extension DLL

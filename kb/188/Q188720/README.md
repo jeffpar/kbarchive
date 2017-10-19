@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188720: PRB: Error Executing ~vcecho!Compiling"
-permalink: kb/188/Q188720/
+permalink: /kb/188/Q188720/
 ---
 
 ## Q188720: PRB: Error Executing ~vcecho!Compiling

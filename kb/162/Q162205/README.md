@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162205: &quot;Stop 0x1E&quot; Message Reinstalling Windows NT with SP3 and RAS"
-permalink: kb/162/Q162205/
+permalink: /kb/162/Q162205/
 ---
 
 ## Q162205: &quot;Stop 0x1E&quot; Message Reinstalling Windows NT with SP3 and RAS

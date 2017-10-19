@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249611: FIX: The HENV Isn't Accessible When You Use MFC ODBC Classes"
-permalink: kb/249/Q249611/
+permalink: /kb/249/Q249611/
 ---
 
 ## Q249611: FIX: The HENV Isn't Accessible When You Use MFC ODBC Classes

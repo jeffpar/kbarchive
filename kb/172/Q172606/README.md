@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172606: SNA Server Access Violation When Receiving Invalid XID Frames"
-permalink: kb/172/Q172606/
+permalink: /kb/172/Q172606/
 ---
 
 ## Q172606: SNA Server Access Violation When Receiving Invalid XID Frames

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147514: Stopping SNA Server Service Causes Perpetual &quot;Stopping&quot; Status"
-permalink: kb/147/Q147514/
+permalink: /kb/147/Q147514/
 ---
 
 ## Q147514: Stopping SNA Server Service Causes Perpetual &quot;Stopping&quot; Status

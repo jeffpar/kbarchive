@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135125: German File Transfer Window on Clients Has English Text"
-permalink: kb/135/Q135125/
+permalink: /kb/135/Q135125/
 ---
 
 ## Q135125: German File Transfer Window on Clients Has English Text

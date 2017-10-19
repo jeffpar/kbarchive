@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109536: Err Msg Running MS-DOS-Based Apps: Cannot Start Application"
-permalink: kb/109/Q109536/
+permalink: /kb/109/Q109536/
 ---
 
 ## Q109536: Err Msg Running MS-DOS-Based Apps: Cannot Start Application

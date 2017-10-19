@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271503: Golf 2001 Edition: Help Documentation Error"
-permalink: kb/271/Q271503/
+permalink: /kb/271/Q271503/
 ---
 
 ## Q271503: Golf 2001 Edition: Help Documentation Error

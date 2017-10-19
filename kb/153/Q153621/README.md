@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153621: Cannot Set Default File Location to NetWare 4.1 Network Drive"
-permalink: kb/153/Q153621/
+permalink: /kb/153/Q153621/
 ---
 
 ## Q153621: Cannot Set Default File Location to NetWare 4.1 Network Drive

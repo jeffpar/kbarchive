@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80437: Description of the Map File Microsoft LINK Creates"
-permalink: kb/080/Q80437/
+permalink: /kb/080/Q80437/
 ---
 
 ## Q80437: Description of the Map File Microsoft LINK Creates

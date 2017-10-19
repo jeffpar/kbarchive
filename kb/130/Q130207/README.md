@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130207: Changes Made in Control Panel System for BOOT.INI Are Ignored"
-permalink: kb/130/Q130207/
+permalink: /kb/130/Q130207/
 ---
 
 ## Q130207: Changes Made in Control Panel System for BOOT.INI Are Ignored

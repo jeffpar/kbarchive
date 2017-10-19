@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297108: BUG: VB SendKeys Causes Incorrect Keyboard Status or Freeze"
-permalink: kb/297/Q297108/
+permalink: /kb/297/Q297108/
 ---
 
 ## Q297108: BUG: VB SendKeys Causes Incorrect Keyboard Status or Freeze

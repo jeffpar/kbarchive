@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171375: 3270 Applet Does Not Return to a Normal State"
-permalink: kb/171/Q171375/
+permalink: /kb/171/Q171375/
 ---
 
 ## Q171375: 3270 Applet Does Not Return to a Normal State

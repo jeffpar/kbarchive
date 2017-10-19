@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271552: Stop 0x0a in zzzDesktopThread() When Computer Shuts Down"
-permalink: kb/271/Q271552/
+permalink: /kb/271/Q271552/
 ---
 
 ## Q271552: Stop 0x0a in zzzDesktopThread() When Computer Shuts Down

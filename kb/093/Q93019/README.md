@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93019: No Drop Cables Allowed from Thin Ethernet T-Connector to NIC"
-permalink: kb/093/Q93019/
+permalink: /kb/093/Q93019/
 ---
 
 ## Q93019: No Drop Cables Allowed from Thin Ethernet T-Connector to NIC

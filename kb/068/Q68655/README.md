@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68655: Windows 3.0 Enhanced Mode Requires WINA20.386"
-permalink: kb/068/Q68655/
+permalink: /kb/068/Q68655/
 ---
 
 ## Q68655: Windows 3.0 Enhanced Mode Requires WINA20.386

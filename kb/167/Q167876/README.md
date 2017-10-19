@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167876: WD97: Documents Collection Fails When Document Is Closed"
-permalink: kb/167/Q167876/
+permalink: /kb/167/Q167876/
 ---
 
 ## Q167876: WD97: Documents Collection Fails When Document Is Closed

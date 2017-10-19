@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197727: XFOR: NotesCal Returns Warning Event 2001"
-permalink: kb/197/Q197727/
+permalink: /kb/197/Q197727/
 ---
 
 ## Q197727: XFOR: NotesCal Returns Warning Event 2001

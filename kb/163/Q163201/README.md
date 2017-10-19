@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163201: XCLN: Illegal Operation Err Msg When Form Minimized"
-permalink: kb/163/Q163201/
+permalink: /kb/163/Q163201/
 ---
 
 ## Q163201: XCLN: Illegal Operation Err Msg When Form Minimized

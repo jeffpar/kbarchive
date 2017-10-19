@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182522: XADM: Administrator Program Corrupts the IMC Routing Table"
-permalink: kb/182/Q182522/
+permalink: /kb/182/Q182522/
 ---
 
 ## Q182522: XADM: Administrator Program Corrupts the IMC Routing Table

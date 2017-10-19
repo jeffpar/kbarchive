@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293115: Viewing .ema Or .email Attachments In MSN Explorer"
-permalink: kb/293/Q293115/
+permalink: /kb/293/Q293115/
 ---
 
 ## Q293115: Viewing .ema Or .email Attachments In MSN Explorer

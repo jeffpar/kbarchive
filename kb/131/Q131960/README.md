@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131960: Aztech Sound Galaxy Basic 16 Sound Card Detected Incorrectly"
-permalink: kb/131/Q131960/
+permalink: /kb/131/Q131960/
 ---
 
 ## Q131960: Aztech Sound Galaxy Basic 16 Sound Card Detected Incorrectly

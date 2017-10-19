@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143313: FIX: CToolTipCtrl Stops Working After Dialog Is Displayed"
-permalink: kb/143/Q143313/
+permalink: /kb/143/Q143313/
 ---
 
 ## Q143313: FIX: CToolTipCtrl Stops Working After Dialog Is Displayed

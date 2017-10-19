@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194922: INFO: Receiving Data Using the MSComm Control's OnComm Event"
-permalink: kb/194/Q194922/
+permalink: /kb/194/Q194922/
 ---
 
 ## Q194922: INFO: Receiving Data Using the MSComm Control's OnComm Event

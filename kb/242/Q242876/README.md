@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242876: Access Violation in SNA Host Account Cache (SNAUDB) Service"
-permalink: kb/242/Q242876/
+permalink: /kb/242/Q242876/
 ---
 
 ## Q242876: Access Violation in SNA Host Account Cache (SNAUDB) Service

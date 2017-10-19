@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159249: INSIDE VISUAL C++ VER 4 (3RD ED) Corrections and Comments"
-permalink: kb/159/Q159249/
+permalink: /kb/159/Q159249/
 ---
 
 ## Q159249: INSIDE VISUAL C++ VER 4 (3RD ED) Corrections and Comments

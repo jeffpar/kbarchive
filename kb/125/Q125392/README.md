@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125392: Windows Stops Responding When Moving or Resizing a Window"
-permalink: kb/125/Q125392/
+permalink: /kb/125/Q125392/
 ---
 
 ## Q125392: Windows Stops Responding When Moving or Resizing a Window

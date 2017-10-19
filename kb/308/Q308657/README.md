@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308657: MCSE Training Kit Designing Highly Available Web Solutions with"
-permalink: kb/308/Q308657/
+permalink: /kb/308/Q308657/
 ---
 
 ## Q308657: MCSE Training Kit Designing Highly Available Web Solutions with

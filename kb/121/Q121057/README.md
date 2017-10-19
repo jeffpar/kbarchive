@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121057: 20 Second Delay in Keystrokes and Mouse Movements in TCP/IP-32"
-permalink: kb/121/Q121057/
+permalink: /kb/121/Q121057/
 ---
 
 ## Q121057: 20 Second Delay in Keystrokes and Mouse Movements in TCP/IP-32

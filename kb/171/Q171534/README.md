@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171534: FIX: Source Code Control Integration Holds .dat Files Open"
-permalink: kb/171/Q171534/
+permalink: /kb/171/Q171534/
 ---
 
 ## Q171534: FIX: Source Code Control Integration Holds .dat Files Open

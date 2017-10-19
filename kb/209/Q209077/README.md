@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q209077: PRB: CommCtl: No &quot;OK&quot; Received When Using Some Modems"
-permalink: kb/209/Q209077/
+permalink: /kb/209/Q209077/
 ---
 
 ## Q209077: PRB: CommCtl: No &quot;OK&quot; Received When Using Some Modems

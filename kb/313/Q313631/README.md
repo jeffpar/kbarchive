@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313631: BUG: Debugger Does Not Expand Variable Of C Structure Type"
-permalink: kb/313/Q313631/
+permalink: /kb/313/Q313631/
 ---
 
 ## Q313631: BUG: Debugger Does Not Expand Variable Of C Structure Type

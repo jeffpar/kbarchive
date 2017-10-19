@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245431: XFOR: Zero Byte Files in GroupWise API Gateway API_OUT Folder"
-permalink: kb/245/Q245431/
+permalink: /kb/245/Q245431/
 ---
 
 ## Q245431: XFOR: Zero Byte Files in GroupWise API Gateway API_OUT Folder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235162: SMS: Operating System Install Time/Date Is Inaccurate"
-permalink: kb/235/Q235162/
+permalink: /kb/235/Q235162/
 ---
 
 ## Q235162: SMS: Operating System Install Time/Date Is Inaccurate

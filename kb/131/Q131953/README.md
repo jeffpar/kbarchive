@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131953: Flight Simulator 5.1: Disk 4 (Setup) Contents (3.5 1.44 MB)"
-permalink: kb/131/Q131953/
+permalink: /kb/131/Q131953/
 ---
 
 ## Q131953: Flight Simulator 5.1: Disk 4 (Setup) Contents (3.5 1.44 MB)

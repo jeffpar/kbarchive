@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137878: PowerPoint for Windows 95 CD Does Not Use DMF Compression"
-permalink: kb/137/Q137878/
+permalink: /kb/137/Q137878/
 ---
 
 ## Q137878: PowerPoint for Windows 95 CD Does Not Use DMF Compression

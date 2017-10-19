@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153109: Error Installing WFW Client from DEC OEM NT Server 3.51 CD"
-permalink: kb/153/Q153109/
+permalink: /kb/153/Q153109/
 ---
 
 ## Q153109: Error Installing WFW Client from DEC OEM NT Server 3.51 CD

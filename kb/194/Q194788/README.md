@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194788: Windows NT Service Pack 4 and Client Certificates"
-permalink: kb/194/Q194788/
+permalink: /kb/194/Q194788/
 ---
 
 ## Q194788: Windows NT Service Pack 4 and Client Certificates

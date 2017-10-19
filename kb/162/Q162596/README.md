@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162596: WD97: Products That Qualify for the Word Upgrade"
-permalink: kb/162/Q162596/
+permalink: /kb/162/Q162596/
 ---
 
 ## Q162596: WD97: Products That Qualify for the Word Upgrade

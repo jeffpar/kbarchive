@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174503: SMS: TRAPMON Is Not on the BackOffice Resource Kit CD"
-permalink: kb/174/Q174503/
+permalink: /kb/174/Q174503/
 ---
 
 ## Q174503: SMS: TRAPMON Is Not on the BackOffice Resource Kit CD

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235691: FIX: The MSMQ - MQSeries Bridge Will Discard the EPSend Message"
-permalink: kb/235/Q235691/
+permalink: /kb/235/Q235691/
 ---
 
 ## Q235691: FIX: The MSMQ - MQSeries Bridge Will Discard the EPSend Message

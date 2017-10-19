@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272407: PATCH: Access Violation in VB Snap-in Designer Run Time DLL"
-permalink: kb/272/Q272407/
+permalink: /kb/272/Q272407/
 ---
 
 ## Q272407: PATCH: Access Violation in VB Snap-in Designer Run Time DLL

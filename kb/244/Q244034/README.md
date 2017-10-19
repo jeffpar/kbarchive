@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244034: SMS: Window 95/98 Clients Hang Opening E-mail Attachments"
-permalink: kb/244/Q244034/
+permalink: /kb/244/Q244034/
 ---
 
 ## Q244034: SMS: Window 95/98 Clients Hang Opening E-mail Attachments

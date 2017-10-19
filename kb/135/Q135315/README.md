@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135315: CD-ROM Extras for Microsoft Windows 95 Upgrade"
-permalink: kb/135/Q135315/
+permalink: /kb/135/Q135315/
 ---
 
 ## Q135315: CD-ROM Extras for Microsoft Windows 95 Upgrade

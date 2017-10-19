@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157947: HOWTO: Create a Report Based on a Query"
-permalink: kb/157/Q157947/
+permalink: /kb/157/Q157947/
 ---
 
 ## Q157947: HOWTO: Create a Report Based on a Query

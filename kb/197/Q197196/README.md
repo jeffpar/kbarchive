@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197196: Controls Not Displayed in VB 6.0 on Alpha-Based Computers"
-permalink: kb/197/Q197196/
+permalink: /kb/197/Q197196/
 ---
 
 ## Q197196: Controls Not Displayed in VB 6.0 on Alpha-Based Computers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121951: PC DOS Win: PAB Retains Old Address of a Moved User"
-permalink: kb/121/Q121951/
+permalink: /kb/121/Q121951/
 ---
 
 ## Q121951: PC DOS Win: PAB Retains Old Address of a Moved User

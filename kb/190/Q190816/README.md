@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190816: PRB: Component Gallery - Installed ActiveX Controls Refresh"
-permalink: kb/190/Q190816/
+permalink: /kb/190/Q190816/
 ---
 
 ## Q190816: PRB: Component Gallery - Installed ActiveX Controls Refresh

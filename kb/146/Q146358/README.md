@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146358: No Update to Recurring Meetings with Mixed Versions"
-permalink: kb/146/Q146358/
+permalink: /kb/146/Q146358/
 ---
 
 ## Q146358: No Update to Recurring Meetings with Mixed Versions

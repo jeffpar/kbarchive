@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197478: HOWTO: How to Detect and Remove Inactive Machine Accounts"
-permalink: kb/197/Q197478/
+permalink: /kb/197/Q197478/
 ---
 
 ## Q197478: HOWTO: How to Detect and Remove Inactive Machine Accounts

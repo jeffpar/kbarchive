@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134391: INFO: List of References That Discuss ODBC"
-permalink: kb/134/Q134391/
+permalink: /kb/134/Q134391/
 ---
 
 ## Q134391: INFO: List of References That Discuss ODBC

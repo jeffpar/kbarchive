@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248385: XIMS: Netscape 4.7 Does Not Display the Message Body"
-permalink: kb/248/Q248385/
+permalink: /kb/248/Q248385/
 ---
 
 ## Q248385: XIMS: Netscape 4.7 Does Not Display the Message Body

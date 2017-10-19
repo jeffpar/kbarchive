@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269078: Domain Names Are Not Displayed in the Accounting Log"
-permalink: kb/269/Q269078/
+permalink: /kb/269/Q269078/
 ---
 
 ## Q269078: Domain Names Are Not Displayed in the Accounting Log

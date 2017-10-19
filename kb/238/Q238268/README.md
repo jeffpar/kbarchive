@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238268: FIPS-Compliant Browser and Web Server For Windows NT 4.0"
-permalink: kb/238/Q238268/
+permalink: /kb/238/Q238268/
 ---
 
 ## Q238268: FIPS-Compliant Browser and Web Server For Windows NT 4.0

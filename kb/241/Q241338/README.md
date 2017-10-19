@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241338: Windows NT Lan Manager 3 Logon Prevents Other Logon Activity"
-permalink: kb/241/Q241338/
+permalink: /kb/241/Q241338/
 ---
 
 ## Q241338: Windows NT Lan Manager 3 Logon Prevents Other Logon Activity

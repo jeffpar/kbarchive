@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135945: Error Message: Setup Error 907 with Microsoft Plus!"
-permalink: kb/135/Q135945/
+permalink: /kb/135/Q135945/
 ---
 
 ## Q135945: Error Message: Setup Error 907 with Microsoft Plus!

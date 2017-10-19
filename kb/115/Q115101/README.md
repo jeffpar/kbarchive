@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115101: IP Counter Disappears from Performance Monitor"
-permalink: kb/115/Q115101/
+permalink: /kb/115/Q115101/
 ---
 
 ## Q115101: IP Counter Disappears from Performance Monitor

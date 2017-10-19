@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161047: Compaq Insight Manager may Cause TN3270 Event ID 903"
-permalink: kb/161/Q161047/
+permalink: /kb/161/Q161047/
 ---
 
 ## Q161047: Compaq Insight Manager may Cause TN3270 Event ID 903

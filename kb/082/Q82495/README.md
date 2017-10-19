@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82495: TrueType Clipping Related to Complex Clipping Regions"
-permalink: kb/082/Q82495/
+permalink: /kb/082/Q82495/
 ---
 
 ## Q82495: TrueType Clipping Related to Complex Clipping Regions

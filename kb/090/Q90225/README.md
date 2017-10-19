@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90225: No Network Detection During Setup"
-permalink: kb/090/Q90225/
+permalink: /kb/090/Q90225/
 ---
 
 ## Q90225: No Network Detection During Setup

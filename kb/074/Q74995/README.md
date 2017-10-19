@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74995: Using Batch Files to Start with Different Configurations"
-permalink: kb/074/Q74995/
+permalink: /kb/074/Q74995/
 ---
 
 ## Q74995: Using Batch Files to Start with Different Configurations

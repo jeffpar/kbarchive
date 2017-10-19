@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235533: XIMS: Refreshing MTS-OUT Queue Causes Application Error"
-permalink: kb/235/Q235533/
+permalink: /kb/235/Q235533/
 ---
 
 ## Q235533: XIMS: Refreshing MTS-OUT Queue Causes Application Error

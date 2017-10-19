@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103067: Error Messages When Using MSUAM and Apple UAM"
-permalink: kb/103/Q103067/
+permalink: /kb/103/Q103067/
 ---
 
 ## Q103067: Error Messages When Using MSUAM and Apple UAM

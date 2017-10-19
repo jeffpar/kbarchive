@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185933: XADM: Directory Service May Stop Unexpectedly During Exception H"
-permalink: kb/185/Q185933/
+permalink: /kb/185/Q185933/
 ---
 
 ## Q185933: XADM: Directory Service May Stop Unexpectedly During Exception H

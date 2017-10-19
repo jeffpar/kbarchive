@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220339: WD97: STYLEREF Field in Header Causes Word to Stop Responding"
-permalink: kb/220/Q220339/
+permalink: /kb/220/Q220339/
 ---
 
 ## Q220339: WD97: STYLEREF Field in Header Causes Word to Stop Responding

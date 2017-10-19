@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272122: Error Message: &quot;Username not found&quot; when trying to logon on fro"
-permalink: kb/272/Q272122/
+permalink: /kb/272/Q272122/
 ---
 
 ## Q272122: Error Message: &quot;Username not found&quot; when trying to logon on fro

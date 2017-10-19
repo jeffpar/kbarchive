@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143377: XADM: Cannot Open Custom Recipient in Administrator"
-permalink: kb/143/Q143377/
+permalink: /kb/143/Q143377/
 ---
 
 ## Q143377: XADM: Cannot Open Custom Recipient in Administrator

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191293: SMS: PCMSVC32 Does Not Recover from a Logon Server Failure"
-permalink: kb/191/Q191293/
+permalink: /kb/191/Q191293/
 ---
 
 ## Q191293: SMS: PCMSVC32 Does Not Recover from a Logon Server Failure

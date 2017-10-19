@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138374: PRB: Can't Undo After Dragging from One Window to Another"
-permalink: kb/138/Q138374/
+permalink: /kb/138/Q138374/
 ---
 
 ## Q138374: PRB: Can't Undo After Dragging from One Window to Another

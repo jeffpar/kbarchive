@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37638: Unassigning Assigned Disk Drives in MS-DOS"
-permalink: kb/037/Q37638/
+permalink: /kb/037/Q37638/
 ---
 
 ## Q37638: Unassigning Assigned Disk Drives in MS-DOS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316049: PRB: Default Image Error When You Start Pocket PC 2002 Emulation"
-permalink: kb/316/Q316049/
+permalink: /kb/316/Q316049/
 ---
 
 ## Q316049: PRB: Default Image Error When You Start Pocket PC 2002 Emulation

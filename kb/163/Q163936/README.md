@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163936: CLOCK Hangs and Consumes 90% CPU When Set to Digital Display"
-permalink: kb/163/Q163936/
+permalink: /kb/163/Q163936/
 ---
 
 ## Q163936: CLOCK Hangs and Consumes 90% CPU When Set to Digital Display

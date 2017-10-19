@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84698: Windows Err Msg: Directory &lt;dir&gt; Does Not Exist..."
-permalink: kb/084/Q84698/
+permalink: /kb/084/Q84698/
 ---
 
 ## Q84698: Windows Err Msg: Directory &lt;dir&gt; Does Not Exist...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81854: Using Edlin to Edit Files Too Large to Fit in Memory"
-permalink: kb/081/Q81854/
+permalink: /kb/081/Q81854/
 ---
 
 ## Q81854: Using Edlin to Edit Files Too Large to Fit in Memory

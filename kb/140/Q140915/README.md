@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140915: XNF List Box Only Shows 2 Entries"
-permalink: kb/140/Q140915/
+permalink: /kb/140/Q140915/
 ---
 
 ## Q140915: XNF List Box Only Shows 2 Entries

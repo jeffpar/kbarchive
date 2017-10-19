@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177189: Err Msg: Guide.exe Is Linked to Missing Export Mcm.dll"
-permalink: kb/177/Q177189/
+permalink: /kb/177/Q177189/
 ---
 
 ## Q177189: Err Msg: Guide.exe Is Linked to Missing Export Mcm.dll

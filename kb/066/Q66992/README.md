@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66992: DropShad.exe Draws Custom Border Around Control Window"
-permalink: kb/066/Q66992/
+permalink: /kb/066/Q66992/
 ---
 
 ## Q66992: DropShad.exe Draws Custom Border Around Control Window

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117648: PC Gen: ErrMsg: Unexplained Mail Message From &#42;SPECIAL"
-permalink: kb/117/Q117648/
+permalink: /kb/117/Q117648/
 ---
 
 ## Q117648: PC Gen: ErrMsg: Unexplained Mail Message From &#42;SPECIAL

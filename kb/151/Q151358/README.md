@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151358: Disk Administrator Does Not Set System Partitions Correctly"
-permalink: kb/151/Q151358/
+permalink: /kb/151/Q151358/
 ---
 
 ## Q151358: Disk Administrator Does Not Set System Partitions Correctly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267633: &quot;Modification Error&quot; Message Displayed When Creating MAs"
-permalink: kb/267/Q267633/
+permalink: /kb/267/Q267633/
 ---
 
 ## Q267633: &quot;Modification Error&quot; Message Displayed When Creating MAs

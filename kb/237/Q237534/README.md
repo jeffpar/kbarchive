@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237534: Encarta 2000: Error Message When You Use Shortcut to Install NLQ"
-permalink: kb/237/Q237534/
+permalink: /kb/237/Q237534/
 ---
 
 ## Q237534: Encarta 2000: Error Message When You Use Shortcut to Install NLQ

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277896: Transition From MSN E-mail To MSN Explorer E-mail"
-permalink: kb/277/Q277896/
+permalink: /kb/277/Q277896/
 ---
 
 ## Q277896: Transition From MSN E-mail To MSN Explorer E-mail

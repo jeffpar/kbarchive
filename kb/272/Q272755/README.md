@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272755: INFO: Visual C++ Is Not Supported on Terminal Server 4.0"
-permalink: kb/272/Q272755/
+permalink: /kb/272/Q272755/
 ---
 
 ## Q272755: INFO: Visual C++ Is Not Supported on Terminal Server 4.0

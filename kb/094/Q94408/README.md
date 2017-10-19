@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94408: FIX: A2138 Error--Structure Member Span-Dependent Equate"
-permalink: kb/094/Q94408/
+permalink: /kb/094/Q94408/
 ---
 
 ## Q94408: FIX: A2138 Error--Structure Member Span-Dependent Equate

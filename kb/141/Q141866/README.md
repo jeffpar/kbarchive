@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141866: FIX: App Error While Changing Install Dir for Visual C++"
-permalink: kb/141/Q141866/
+permalink: /kb/141/Q141866/
 ---
 
 ## Q141866: FIX: App Error While Changing Install Dir for Visual C++

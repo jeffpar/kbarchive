@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159514: Encarta 97: Error Messages When Launching Collages"
-permalink: kb/159/Q159514/
+permalink: /kb/159/Q159514/
 ---
 
 ## Q159514: Encarta 97: Error Messages When Launching Collages

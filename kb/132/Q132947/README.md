@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132947: HOWTO: Suppress the Initial Dialog Box in a Parameterized View"
-permalink: kb/132/Q132947/
+permalink: /kb/132/Q132947/
 ---
 
 ## Q132947: HOWTO: Suppress the Initial Dialog Box in a Parameterized View

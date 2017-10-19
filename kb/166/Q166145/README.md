@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166145: Ultimate Climb: Minimum System Requirements"
-permalink: kb/166/Q166145/
+permalink: /kb/166/Q166145/
 ---
 
 ## Q166145: Ultimate Climb: Minimum System Requirements

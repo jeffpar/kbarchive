@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65385: Mac Srv: SAM Intercept Causes Mail Server to Hang"
-permalink: kb/065/Q65385/
+permalink: /kb/065/Q65385/
 ---
 
 ## Q65385: Mac Srv: SAM Intercept Causes Mail Server to Hang

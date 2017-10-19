@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251321: BUG: ScrollBar Controls Exhibit Paint Problems In Change Event"
-permalink: kb/251/Q251321/
+permalink: /kb/251/Q251321/
 ---
 
 ## Q251321: BUG: ScrollBar Controls Exhibit Paint Problems In Change Event

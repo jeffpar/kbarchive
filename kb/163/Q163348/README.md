@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163348: ACC97: Tables That Appear to Be Checked In in VSS Are Not"
-permalink: kb/163/Q163348/
+permalink: /kb/163/Q163348/
 ---
 
 ## Q163348: ACC97: Tables That Appear to Be Checked In in VSS Are Not

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q10213: INFO: Window Handles of Global Objects"
-permalink: kb/010/Q10213/
+permalink: /kb/010/Q10213/
 ---
 
 ## Q10213: INFO: Window Handles of Global Objects

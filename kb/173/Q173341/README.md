@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173341: SNA Manager Fails to Open Backup Config File."
-permalink: kb/173/Q173341/
+permalink: /kb/173/Q173341/
 ---
 
 ## Q173341: SNA Manager Fails to Open Backup Config File.

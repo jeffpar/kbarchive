@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152213: Flight Simulator: Cannot Open PID File During Setup"
-permalink: kb/152/Q152213/
+permalink: /kb/152/Q152213/
 ---
 
 ## Q152213: Flight Simulator: Cannot Open PID File During Setup

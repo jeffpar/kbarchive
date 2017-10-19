@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85498: PRB: /Tp and /Tc Show Unexpected Behavior with Wildcards"
-permalink: kb/085/Q85498/
+permalink: /kb/085/Q85498/
 ---
 
 ## Q85498: PRB: /Tp and /Tc Show Unexpected Behavior with Wildcards

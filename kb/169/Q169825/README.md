@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169825: FIX: Upsizing Multiple Memo Fields to Oracle May Cause Data Loss"
-permalink: kb/169/Q169825/
+permalink: /kb/169/Q169825/
 ---
 
 ## Q169825: FIX: Upsizing Multiple Memo Fields to Oracle May Cause Data Loss

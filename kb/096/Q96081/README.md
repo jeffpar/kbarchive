@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96081: Windows Functions Poorly After Renaming Windows Directory"
-permalink: kb/096/Q96081/
+permalink: /kb/096/Q96081/
 ---
 
 ## Q96081: Windows Functions Poorly After Renaming Windows Directory

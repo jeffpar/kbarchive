@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178030: FS98/2000: Tips About Flying Adventures and Lessons"
-permalink: kb/178/Q178030/
+permalink: /kb/178/Q178030/
 ---
 
 ## Q178030: FS98/2000: Tips About Flying Adventures and Lessons

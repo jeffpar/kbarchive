@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170288: CMWAIT Returns Incorrectly After Canceling CMALLC"
-permalink: kb/170/Q170288/
+permalink: /kb/170/Q170288/
 ---
 
 ## Q170288: CMWAIT Returns Incorrectly After Canceling CMALLC

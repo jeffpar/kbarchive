@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226808: SMS: Remote Control of Client in MS-DOS Full Screen Mode Fails"
-permalink: kb/226/Q226808/
+permalink: /kb/226/Q226808/
 ---
 
 ## Q226808: SMS: Remote Control of Client in MS-DOS Full Screen Mode Fails

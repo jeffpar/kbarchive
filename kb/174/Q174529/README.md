@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174529: Installing Updated NetFlex 3 Drivers During Unattended Install"
-permalink: kb/174/Q174529/
+permalink: /kb/174/Q174529/
 ---
 
 ## Q174529: Installing Updated NetFlex 3 Drivers During Unattended Install

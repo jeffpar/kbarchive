@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111062: Flight Simulator 5.0 Setup Cannot Copy SETUP.EXE"
-permalink: kb/111/Q111062/
+permalink: /kb/111/Q111062/
 ---
 
 ## Q111062: Flight Simulator 5.0 Setup Cannot Copy SETUP.EXE

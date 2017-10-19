@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219286: Appointments Are Not Deleted from OWA When Using Netscape"
-permalink: kb/219/Q219286/
+permalink: /kb/219/Q219286/
 ---
 
 ## Q219286: Appointments Are Not Deleted from OWA When Using Netscape

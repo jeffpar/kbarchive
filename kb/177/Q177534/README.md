@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177534: XFOR: LME-PROFS-MEXDIA Crashes Processing a Long File Extension"
-permalink: kb/177/Q177534/
+permalink: /kb/177/Q177534/
 ---
 
 ## Q177534: XFOR: LME-PROFS-MEXDIA Crashes Processing a Long File Extension

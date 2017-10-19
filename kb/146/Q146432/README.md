@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146432: Bookshelf 95: How to Register Online After Setup Completes"
-permalink: kb/146/Q146432/
+permalink: /kb/146/Q146432/
 ---
 
 ## Q146432: Bookshelf 95: How to Register Online After Setup Completes

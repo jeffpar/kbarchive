@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276287: PRB: SET FORMAT File Scrolls to End of Table in Visual FoxPro"
-permalink: kb/276/Q276287/
+permalink: /kb/276/Q276287/
 ---
 
 ## Q276287: PRB: SET FORMAT File Scrolls to End of Table in Visual FoxPro

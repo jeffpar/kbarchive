@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172009: WINS Server Experiences Slow Performance"
-permalink: kb/172/Q172009/
+permalink: /kb/172/Q172009/
 ---
 
 ## Q172009: WINS Server Experiences Slow Performance

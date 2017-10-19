@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q284849: Permissions Are Incorrect After Installing SCM"
-permalink: kb/284/Q284849/
+permalink: /kb/284/Q284849/
 ---
 
 ## Q284849: Permissions Are Incorrect After Installing SCM

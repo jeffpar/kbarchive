@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104322: How to Troubleshoot WFWG Network Connection Problems"
-permalink: kb/104/Q104322/
+permalink: /kb/104/Q104322/
 ---
 
 ## Q104322: How to Troubleshoot WFWG Network Connection Problems

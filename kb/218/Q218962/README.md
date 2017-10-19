@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218962: XADM: MTSIDs Generated w/ 2 Different Characters as Delimiters"
-permalink: kb/218/Q218962/
+permalink: /kb/218/Q218962/
 ---
 
 ## Q218962: XADM: MTSIDs Generated w/ 2 Different Characters as Delimiters

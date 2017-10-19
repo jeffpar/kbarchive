@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235818: SMS: Network Discovery May Time Out On Slow Network"
-permalink: kb/235/Q235818/
+permalink: /kb/235/Q235818/
 ---
 
 ## Q235818: SMS: Network Discovery May Time Out On Slow Network

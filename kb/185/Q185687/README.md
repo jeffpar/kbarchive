@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185687: CPU Utilization Randomly Goes to 100 Percent on SNA Print Server"
-permalink: kb/185/Q185687/
+permalink: /kb/185/Q185687/
 ---
 
 ## Q185687: CPU Utilization Randomly Goes to 100 Percent on SNA Print Server

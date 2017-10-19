@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152943: XCLN: Error When Receiving Schedule+ Confirmation Message"
-permalink: kb/152/Q152943/
+permalink: /kb/152/Q152943/
 ---
 
 ## Q152943: XCLN: Error When Receiving Schedule+ Confirmation Message

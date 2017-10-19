@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145932: Scenes 2.0: Personal Collection Disk Contents"
-permalink: kb/145/Q145932/
+permalink: /kb/145/Q145932/
 ---
 
 ## Q145932: Scenes 2.0: Personal Collection Disk Contents

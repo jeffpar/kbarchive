@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69077: IsDialog.exe - Simulates a Dialog Box"
-permalink: kb/069/Q69077/
+permalink: /kb/069/Q69077/
 ---
 
 ## Q69077: IsDialog.exe - Simulates a Dialog Box

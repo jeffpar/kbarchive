@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93648: FIX: Program Hangs at Startup When 109 Segments in Application"
-permalink: kb/093/Q93648/
+permalink: /kb/093/Q93648/
 ---
 
 ## Q93648: FIX: Program Hangs at Startup When 109 Segments in Application

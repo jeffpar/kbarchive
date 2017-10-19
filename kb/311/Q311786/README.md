@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311786: XML And SOAP Programming For BizTalk Servers Comments And Correc"
-permalink: kb/311/Q311786/
+permalink: /kb/311/Q311786/
 ---
 
 ## Q311786: XML And SOAP Programming For BizTalk Servers Comments And Correc

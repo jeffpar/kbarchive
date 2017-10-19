@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130542: PCMCIA Modem Fails When Set to Windows NT Default"
-permalink: kb/130/Q130542/
+permalink: /kb/130/Q130542/
 ---
 
 ## Q130542: PCMCIA Modem Fails When Set to Windows NT Default

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313185: INFO: SQL Server Driver for JDBC Does Not Support HTTP Tunneling"
-permalink: kb/313/Q313185/
+permalink: /kb/313/Q313185/
 ---
 
 ## Q313185: INFO: SQL Server Driver for JDBC Does Not Support HTTP Tunneling

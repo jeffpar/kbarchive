@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136419: PPT7: Unexpected Results Overlapping Two Semi-Transparent Object"
-permalink: kb/136/Q136419/
+permalink: /kb/136/Q136419/
 ---
 
 ## Q136419: PPT7: Unexpected Results Overlapping Two Semi-Transparent Object

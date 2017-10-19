@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69193: Mac Srv: Macintosh II Server Hangs Occasionally"
-permalink: kb/069/Q69193/
+permalink: /kb/069/Q69193/
 ---
 
 ## Q69193: Mac Srv: Macintosh II Server Hangs Occasionally

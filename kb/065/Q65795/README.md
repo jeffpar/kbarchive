@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65795: Using the AST Fastboard with Windows 3.0"
-permalink: kb/065/Q65795/
+permalink: /kb/065/Q65795/
 ---
 
 ## Q65795: Using the AST Fastboard with Windows 3.0

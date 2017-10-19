@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194918: XCOPY /D Uses Universal Time, Not Local Time, to Filter Files"
-permalink: kb/194/Q194918/
+permalink: /kb/194/Q194918/
 ---
 
 ## Q194918: XCOPY /D Uses Universal Time, Not Local Time, to Filter Files

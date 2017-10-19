@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83783: Adding Sound Functions and a Sound Icon to Control Panel"
-permalink: kb/083/Q83783/
+permalink: /kb/083/Q83783/
 ---
 
 ## Q83783: Adding Sound Functions and a Sound Icon to Control Panel

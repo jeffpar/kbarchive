@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192939: XFOR: Event 4123; Message Not Delivered"
-permalink: kb/192/Q192939/
+permalink: /kb/192/Q192939/
 ---
 
 ## Q192939: XFOR: Event 4123; Message Not Delivered

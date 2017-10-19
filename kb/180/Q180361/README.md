@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180361: &quot;Failure to Initialize Modem Session&quot; When Restarting External"
-permalink: kb/180/Q180361/
+permalink: /kb/180/Q180361/
 ---
 
 ## Q180361: &quot;Failure to Initialize Modem Session&quot; When Restarting External

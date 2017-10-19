@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129206: PRB: Running .EXE Gives &quot;Can't Find FOXUT16.DLL&quot; Error"
-permalink: kb/129/Q129206/
+permalink: /kb/129/Q129206/
 ---
 
 ## Q129206: PRB: Running .EXE Gives &quot;Can't Find FOXUT16.DLL&quot; Error

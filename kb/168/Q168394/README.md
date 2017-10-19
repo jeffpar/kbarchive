@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168394: Kids Plus: What Is The &quot;.Default&quot; User?"
-permalink: kb/168/Q168394/
+permalink: /kb/168/Q168394/
 ---
 
 ## Q168394: Kids Plus: What Is The &quot;.Default&quot; User?

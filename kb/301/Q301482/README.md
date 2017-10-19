@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301482: Connection Error: e12"
-permalink: kb/301/Q301482/
+permalink: /kb/301/Q301482/
 ---
 
 ## Q301482: Connection Error: e12

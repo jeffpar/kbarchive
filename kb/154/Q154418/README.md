@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154418: Cannot Upgrade Windows 95 to Windows NT Workstation 4.0"
-permalink: kb/154/Q154418/
+permalink: /kb/154/Q154418/
 ---
 
 ## Q154418: Cannot Upgrade Windows 95 to Windows NT Workstation 4.0

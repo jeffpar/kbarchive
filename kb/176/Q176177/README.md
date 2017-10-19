@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176177: XADM: Outlook Client Connects to Remote Public Folder Servers"
-permalink: kb/176/Q176177/
+permalink: /kb/176/Q176177/
 ---
 
 ## Q176177: XADM: Outlook Client Connects to Remote Public Folder Servers

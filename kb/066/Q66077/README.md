@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66077: Windows Err Msg: Icon Extraction Error/Group File Error"
-permalink: kb/066/Q66077/
+permalink: /kb/066/Q66077/
 ---
 
 ## Q66077: Windows Err Msg: Icon Extraction Error/Group File Error

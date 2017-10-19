@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178629: XCLN: How To Set the Maximize Property of an Exchange Form"
-permalink: kb/178/Q178629/
+permalink: /kb/178/Q178629/
 ---
 
 ## Q178629: XCLN: How To Set the Maximize Property of an Exchange Form

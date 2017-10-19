@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310686: Train Simulator: Mprofile Appears, then Train Simulator Quits"
-permalink: kb/310/Q310686/
+permalink: /kb/310/Q310686/
 ---
 
 ## Q310686: Train Simulator: Mprofile Appears, then Train Simulator Quits

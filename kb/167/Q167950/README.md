@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167950: FIX: DAO Internet Component Download Fails to Install"
-permalink: kb/167/Q167950/
+permalink: /kb/167/Q167950/
 ---
 
 ## Q167950: FIX: DAO Internet Component Download Fails to Install

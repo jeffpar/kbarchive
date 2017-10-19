@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255236: Windows NT 4.0 Does Not Start and a STOP Error Message Appears"
-permalink: kb/255/Q255236/
+permalink: /kb/255/Q255236/
 ---
 
 ## Q255236: Windows NT 4.0 Does Not Start and a STOP Error Message Appears

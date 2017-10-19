@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70044: Loading a File in Paintbrush Doesn't Update Image Attributes"
-permalink: kb/070/Q70044/
+permalink: /kb/070/Q70044/
 ---
 
 ## Q70044: Loading a File in Paintbrush Doesn't Update Image Attributes

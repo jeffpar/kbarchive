@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197492: XADM: Information Store Crashes Processing Rules in Public Store"
-permalink: kb/197/Q197492/
+permalink: /kb/197/Q197492/
 ---
 
 ## Q197492: XADM: Information Store Crashes Processing Rules in Public Store

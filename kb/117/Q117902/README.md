@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117902: FIX: D2030 Internal Compiler Error with /Ox"
-permalink: kb/117/Q117902/
+permalink: /kb/117/Q117902/
 ---
 
 ## Q117902: FIX: D2030 Internal Compiler Error with /Ox

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155604: INF: Unable to Load ODBCCP32.DLL in Custom ODBC Setup Programs"
-permalink: kb/155/Q155604/
+permalink: /kb/155/Q155604/
 ---
 
 ## Q155604: INF: Unable to Load ODBCCP32.DLL in Custom ODBC Setup Programs

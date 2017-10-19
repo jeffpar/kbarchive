@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189799: FP: Frequently Asked Questions About the Fpexedll.dll"
-permalink: kb/189/Q189799/
+permalink: /kb/189/Q189799/
 ---
 
 ## Q189799: FP: Frequently Asked Questions About the Fpexedll.dll

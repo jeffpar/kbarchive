@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147427: DOC: Description of C2354 Error Is Unclear"
-permalink: kb/147/Q147427/
+permalink: /kb/147/Q147427/
 ---
 
 ## Q147427: DOC: Description of C2354 Error Is Unclear

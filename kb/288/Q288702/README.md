@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288702: SNA Manager Disappears When Using the LU Creation Wizard"
-permalink: kb/288/Q288702/
+permalink: /kb/288/Q288702/
 ---
 
 ## Q288702: SNA Manager Disappears When Using the LU Creation Wizard

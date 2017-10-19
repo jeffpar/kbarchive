@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124417: Display Problems or Computer Hangs When You Play Video Clips"
-permalink: kb/124/Q124417/
+permalink: /kb/124/Q124417/
 ---
 
 ## Q124417: Display Problems or Computer Hangs When You Play Video Clips

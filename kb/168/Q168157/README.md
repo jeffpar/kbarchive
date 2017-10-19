@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168157: FIX: Problems Binding Multiple Controls to RDC 2.0"
-permalink: kb/168/Q168157/
+permalink: /kb/168/Q168157/
 ---
 
 ## Q168157: FIX: Problems Binding Multiple Controls to RDC 2.0

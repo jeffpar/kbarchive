@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154449: BUG: Error #202 In Makestf when Running VFP/Mac Setup Wizard"
-permalink: kb/154/Q154449/
+permalink: /kb/154/Q154449/
 ---
 
 ## Q154449: BUG: Error #202 In Makestf when Running VFP/Mac Setup Wizard

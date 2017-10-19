@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q205738: OFF97: Multiple General Tabs in New File Dialog Box"
-permalink: kb/205/Q205738/
+permalink: /kb/205/Q205738/
 ---
 
 ## Q205738: OFF97: Multiple General Tabs in New File Dialog Box

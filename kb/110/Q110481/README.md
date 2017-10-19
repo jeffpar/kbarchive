@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110481: Backup Doesn't Back Up Entire Hard Disk or Create Log File"
-permalink: kb/110/Q110481/
+permalink: /kb/110/Q110481/
 ---
 
 ## Q110481: Backup Doesn't Back Up Entire Hard Disk or Create Log File

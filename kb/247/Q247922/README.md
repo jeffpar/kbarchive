@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247922: Server Logs Netlogon Event 5719 When Starting"
-permalink: kb/247/Q247922/
+permalink: /kb/247/Q247922/
 ---
 
 ## Q247922: Server Logs Netlogon Event 5719 When Starting

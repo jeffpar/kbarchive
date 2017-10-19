@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147276: MSB: How to Run Programs Via Multiple CD Changer"
-permalink: kb/147/Q147276/
+permalink: /kb/147/Q147276/
 ---
 
 ## Q147276: MSB: How to Run Programs Via Multiple CD Changer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146426: Pregnancy and Child Care Minimum System Requirements"
-permalink: kb/146/Q146426/
+permalink: /kb/146/Q146426/
 ---
 
 ## Q146426: Pregnancy and Child Care Minimum System Requirements

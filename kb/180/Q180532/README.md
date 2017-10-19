@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180532: Xircom PC Card Fails to Function"
-permalink: kb/180/Q180532/
+permalink: /kb/180/Q180532/
 ---
 
 ## Q180532: Xircom PC Card Fails to Function

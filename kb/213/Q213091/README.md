@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213091: SMS: Connection Failure Gives Wrong Software Metering Msg"
-permalink: kb/213/Q213091/
+permalink: /kb/213/Q213091/
 ---
 
 ## Q213091: SMS: Connection Failure Gives Wrong Software Metering Msg

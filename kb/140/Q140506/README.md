@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140506: Print Jobs Sent to SFM Printer Hang in Spooler After Printing"
-permalink: kb/140/Q140506/
+permalink: /kb/140/Q140506/
 ---
 
 ## Q140506: Print Jobs Sent to SFM Printer Hang in Spooler After Printing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126593: Err Msg: Error Reading Spooler Temp File"
-permalink: kb/126/Q126593/
+permalink: /kb/126/Q126593/
 ---
 
 ## Q126593: Err Msg: Error Reading Spooler Temp File

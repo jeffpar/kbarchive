@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146399: XGEN: README.TXT: Microsoft Exchange 4.0 U.S. Service Pack 1"
-permalink: kb/146/Q146399/
+permalink: /kb/146/Q146399/
 ---
 
 ## Q146399: XGEN: README.TXT: Microsoft Exchange 4.0 U.S. Service Pack 1

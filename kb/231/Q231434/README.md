@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231434: Encarta Encyclopedia: Problems When Running on Windows 2000"
-permalink: kb/231/Q231434/
+permalink: /kb/231/Q231434/
 ---
 
 ## Q231434: Encarta Encyclopedia: Problems When Running on Windows 2000

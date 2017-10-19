@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90032: PRB: COPY FILE Command Gives &quot;File Access Denied&quot; Error"
-permalink: kb/090/Q90032/
+permalink: /kb/090/Q90032/
 ---
 
 ## Q90032: PRB: COPY FILE Command Gives &quot;File Access Denied&quot; Error

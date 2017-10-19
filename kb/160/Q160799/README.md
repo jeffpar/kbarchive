@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160799: XCLN: How to Add the Read Receipt Property in a Folder View"
-permalink: kb/160/Q160799/
+permalink: /kb/160/Q160799/
 ---
 
 ## Q160799: XCLN: How to Add the Read Receipt Property in a Folder View

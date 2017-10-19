@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226114: SMS: Ads Fail when Sent to Win9x Users in More than 10 Groups"
-permalink: kb/226/Q226114/
+permalink: /kb/226/Q226114/
 ---
 
 ## Q226114: SMS: Ads Fail when Sent to Win9x Users in More than 10 Groups

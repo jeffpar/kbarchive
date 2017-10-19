@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87188: PROFS: Attachment File Handling"
-permalink: kb/087/Q87188/
+permalink: /kb/087/Q87188/
 ---
 
 ## Q87188: PROFS: Attachment File Handling

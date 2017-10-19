@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142463: FIX: Non-SourceSafe Visual Test Files Show Up as Checked Out"
-permalink: kb/142/Q142463/
+permalink: /kb/142/Q142463/
 ---
 
 ## Q142463: FIX: Non-SourceSafe Visual Test Files Show Up as Checked Out

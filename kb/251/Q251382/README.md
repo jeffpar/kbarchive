@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251382: PPTP Connection Does Not Transfer Any Data over the Connection"
-permalink: kb/251/Q251382/
+permalink: /kb/251/Q251382/
 ---
 
 ## Q251382: PPTP Connection Does Not Transfer Any Data over the Connection

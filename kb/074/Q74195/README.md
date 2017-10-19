@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74195: Can't Install MS-DOS 5.0 Upgrade on Tandon Pac 286"
-permalink: kb/074/Q74195/
+permalink: /kb/074/Q74195/
 ---
 
 ## Q74195: Can't Install MS-DOS 5.0 Upgrade on Tandon Pac 286

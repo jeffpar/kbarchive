@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155606: Windows NT Setup Hangs with NE2000 Installed at Port 340"
-permalink: kb/155/Q155606/
+permalink: /kb/155/Q155606/
 ---
 
 ## Q155606: Windows NT Setup Hangs with NE2000 Installed at Port 340

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138876: New Features in Compaq NT SSD Version 1.16"
-permalink: kb/138/Q138876/
+permalink: /kb/138/Q138876/
 ---
 
 ## Q138876: New Features in Compaq NT SSD Version 1.16

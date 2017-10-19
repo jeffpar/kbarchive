@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143205: How to Use the GETPEM() Function"
-permalink: kb/143/Q143205/
+permalink: /kb/143/Q143205/
 ---
 
 ## Q143205: How to Use the GETPEM() Function

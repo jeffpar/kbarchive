@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165763: Windows NT Does Not Recognize a Space in a Registry Value"
-permalink: kb/165/Q165763/
+permalink: /kb/165/Q165763/
 ---
 
 ## Q165763: Windows NT Does Not Recognize a Space in a Registry Value

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220962: XWEB: Adding Non-Existent Attachment in OWA Creates New File"
-permalink: kb/220/Q220962/
+permalink: /kb/220/Q220962/
 ---
 
 ## Q220962: XWEB: Adding Non-Existent Attachment in OWA Creates New File

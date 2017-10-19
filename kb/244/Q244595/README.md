@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244595: XADM: How to Create Mailboxes by Means of a .csv File"
-permalink: kb/244/Q244595/
+permalink: /kb/244/Q244595/
 ---
 
 ## Q244595: XADM: How to Create Mailboxes by Means of a .csv File

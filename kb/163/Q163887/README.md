@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163887: Zone: System Requirements"
-permalink: kb/163/Q163887/
+permalink: /kb/163/Q163887/
 ---
 
 ## Q163887: Zone: System Requirements

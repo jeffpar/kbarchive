@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153267: Deadly Tide Trial Version: Minimum Requirements for Windows"
-permalink: kb/153/Q153267/
+permalink: /kb/153/Q153267/
 ---
 
 ## Q153267: Deadly Tide Trial Version: Minimum Requirements for Windows

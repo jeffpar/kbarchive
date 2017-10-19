@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257624: Clear Report TAG, TAG2, and  EXPR Fields Using .pjx Hooks"
-permalink: kb/257/Q257624/
+permalink: /kb/257/Q257624/
 ---
 
 ## Q257624: Clear Report TAG, TAG2, and  EXPR Fields Using .pjx Hooks

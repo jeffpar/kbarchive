@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120200: PPT: Summary of TAB Key Usage with Text and Objects"
-permalink: kb/120/Q120200/
+permalink: /kb/120/Q120200/
 ---
 
 ## Q120200: PPT: Summary of TAB Key Usage with Text and Objects

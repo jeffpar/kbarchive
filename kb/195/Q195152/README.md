@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195152: XCLN: Tasks Clients Should Perform to Complete the Server Move"
-permalink: kb/195/Q195152/
+permalink: /kb/195/Q195152/
 ---
 
 ## Q195152: XCLN: Tasks Clients Should Perform to Complete the Server Move

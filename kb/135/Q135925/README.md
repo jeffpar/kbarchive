@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135925: Peachtree Complete Accounting Setup Guide for Windows NT 3.5x"
-permalink: kb/135/Q135925/
+permalink: /kb/135/Q135925/
 ---
 
 ## Q135925: Peachtree Complete Accounting Setup Guide for Windows NT 3.5x

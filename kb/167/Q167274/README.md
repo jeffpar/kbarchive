@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167274: FIX: Analyze May Hang When Running on Large Databases"
-permalink: kb/167/Q167274/
+permalink: /kb/167/Q167274/
 ---
 
 ## Q167274: FIX: Analyze May Hang When Running on Large Databases

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171361: Default Document Not Have .Asp Extension w/ Only Execute Access"
-permalink: kb/171/Q171361/
+permalink: /kb/171/Q171361/
 ---
 
 ## Q171361: Default Document Not Have .Asp Extension w/ Only Execute Access

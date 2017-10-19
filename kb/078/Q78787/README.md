@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78787: Printing Directories from Windows 3.0 and 3.0a"
-permalink: kb/078/Q78787/
+permalink: /kb/078/Q78787/
 ---
 
 ## Q78787: Printing Directories from Windows 3.0 and 3.0a

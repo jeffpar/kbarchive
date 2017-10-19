@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114406: SNADS: First Contact Form for SNADS Gateway"
-permalink: kb/114/Q114406/
+permalink: /kb/114/Q114406/
 ---
 
 ## Q114406: SNADS: First Contact Form for SNADS Gateway

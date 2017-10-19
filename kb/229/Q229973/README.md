@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229973: SMS: SINV Does Not Report Last Accessed Date or Modified Date"
-permalink: kb/229/Q229973/
+permalink: /kb/229/Q229973/
 ---
 
 ## Q229973: SMS: SINV Does Not Report Last Accessed Date or Modified Date

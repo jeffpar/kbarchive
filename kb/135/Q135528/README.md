@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135528: Event ID 1999 Appears When Using Compaq Insight Manager"
-permalink: kb/135/Q135528/
+permalink: /kb/135/Q135528/
 ---
 
 ## Q135528: Event ID 1999 Appears When Using Compaq Insight Manager

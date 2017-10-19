@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221235: XADM: Attachments in a Binhex Message Are Empty"
-permalink: kb/221/Q221235/
+permalink: /kb/221/Q221235/
 ---
 
 ## Q221235: XADM: Attachments in a Binhex Message Are Empty

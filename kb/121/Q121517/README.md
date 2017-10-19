@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121517: How to Recover From a Corrupt NTFS Boot Sector"
-permalink: kb/121/Q121517/
+permalink: /kb/121/Q121517/
 ---
 
 ## Q121517: How to Recover From a Corrupt NTFS Boot Sector

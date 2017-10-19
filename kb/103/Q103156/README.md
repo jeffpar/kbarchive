@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103156: Install Hangs on Gateway 2000 486/66V and IDE Disks"
-permalink: kb/103/Q103156/
+permalink: /kb/103/Q103156/
 ---
 
 ## Q103156: Install Hangs on Gateway 2000 486/66V and IDE Disks

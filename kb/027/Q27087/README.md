@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q27087: File: Paste Command Is Dimmed After a Copy"
-permalink: kb/027/Q27087/
+permalink: /kb/027/Q27087/
 ---
 
 ## Q27087: File: Paste Command Is Dimmed After a Copy

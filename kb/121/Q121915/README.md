@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121915: CONN: Err Msg: Exiting on (date time) with Status 70  (118)"
-permalink: kb/121/Q121915/
+permalink: /kb/121/Q121915/
 ---
 
 ## Q121915: CONN: Err Msg: Exiting on (date time) with Status 70  (118)

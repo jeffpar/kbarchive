@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q22734: Sending Binary Files to a Printer After Print to File"
-permalink: kb/022/Q22734/
+permalink: /kb/022/Q22734/
 ---
 
 ## Q22734: Sending Binary Files to a Printer After Print to File

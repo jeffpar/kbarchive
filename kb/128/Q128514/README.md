@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128514: How to Place Fields an Equal Distance Apart on a Form"
-permalink: kb/128/Q128514/
+permalink: /kb/128/Q128514/
 ---
 
 ## Q128514: How to Place Fields an Equal Distance Apart on a Form

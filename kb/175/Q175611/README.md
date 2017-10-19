@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175611: Error When Searching Using &quot;Browse All Of MSN&quot; Search Page"
-permalink: kb/175/Q175611/
+permalink: /kb/175/Q175611/
 ---
 
 ## Q175611: Error When Searching Using &quot;Browse All Of MSN&quot; Search Page

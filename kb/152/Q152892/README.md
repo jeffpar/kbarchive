@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152892: XADM: Err Msg: Unable to Write Delivery Log"
-permalink: kb/152/Q152892/
+permalink: /kb/152/Q152892/
 ---
 
 ## Q152892: XADM: Err Msg: Unable to Write Delivery Log

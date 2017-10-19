@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81682: Windows 3.1 Setup Replaces _DEFAULT.PIF and DOSPRMPT.PIF"
-permalink: kb/081/Q81682/
+permalink: /kb/081/Q81682/
 ---
 
 ## Q81682: Windows 3.1 Setup Replaces _DEFAULT.PIF and DOSPRMPT.PIF

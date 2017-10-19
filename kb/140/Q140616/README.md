@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140616: MFCDISP: Replacing MFC IDispatch Implementation"
-permalink: kb/140/Q140616/
+permalink: /kb/140/Q140616/
 ---
 
 ## Q140616: MFCDISP: Replacing MFC IDispatch Implementation

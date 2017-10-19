@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130238: PRB: Macro Substitution Won't Work in Expression Builder"
-permalink: kb/130/Q130238/
+permalink: /kb/130/Q130238/
 ---
 
 ## Q130238: PRB: Macro Substitution Won't Work in Expression Builder

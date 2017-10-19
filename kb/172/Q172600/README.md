@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172600: Error 234 in Showmbrs.exe"
-permalink: kb/172/Q172600/
+permalink: /kb/172/Q172600/
 ---
 
 ## Q172600: Error 234 in Showmbrs.exe

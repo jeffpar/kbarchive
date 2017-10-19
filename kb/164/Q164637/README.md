@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164637: Unknown Demo Link Service Script Found"
-permalink: kb/164/Q164637/
+permalink: /kb/164/Q164637/
 ---
 
 ## Q164637: Unknown Demo Link Service Script Found

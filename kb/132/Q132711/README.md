@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132711: Configuring Windows NT for WWW Clients To Browse FTP Server"
-permalink: kb/132/Q132711/
+permalink: /kb/132/Q132711/
 ---
 
 ## Q132711: Configuring Windows NT for WWW Clients To Browse FTP Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237265: Encarta 2000: How Creation Dates Are Affected During Setup"
-permalink: kb/237/Q237265/
+permalink: /kb/237/Q237265/
 ---
 
 ## Q237265: Encarta 2000: How Creation Dates Are Affected During Setup

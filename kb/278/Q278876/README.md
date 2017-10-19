@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278876: Motocross Madness 2: Game Stops Responding on Startup Screen"
-permalink: kb/278/Q278876/
+permalink: /kb/278/Q278876/
 ---
 
 ## Q278876: Motocross Madness 2: Game Stops Responding on Startup Screen

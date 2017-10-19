@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126854: NetWare Servers On FDDI Ring with Windows NT 3.5 May Fail"
-permalink: kb/126/Q126854/
+permalink: /kb/126/Q126854/
 ---
 
 ## Q126854: NetWare Servers On FDDI Ring with Windows NT 3.5 May Fail

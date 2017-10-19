@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325880: Zoo Tycoon: Troubleshoot Performance Issues"
-permalink: kb/325/Q325880/
+permalink: /kb/325/Q325880/
 ---
 
 ## Q325880: Zoo Tycoon: Troubleshoot Performance Issues

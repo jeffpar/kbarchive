@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148970: How to Configure SNA Service TPs in the Registry"
-permalink: kb/148/Q148970/
+permalink: /kb/148/Q148970/
 ---
 
 ## Q148970: How to Configure SNA Service TPs in the Registry

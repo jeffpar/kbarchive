@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136963: Installation of Cisco CDDI/FDDI EISA Adapter Fails"
-permalink: kb/136/Q136963/
+permalink: /kb/136/Q136963/
 ---
 
 ## Q136963: Installation of Cisco CDDI/FDDI EISA Adapter Fails

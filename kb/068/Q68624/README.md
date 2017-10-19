@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68624: Profiling Time Between OutputDebugString and FatalExit"
-permalink: kb/068/Q68624/
+permalink: /kb/068/Q68624/
 ---
 
 ## Q68624: Profiling Time Between OutputDebugString and FatalExit

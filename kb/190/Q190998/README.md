@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190998: DOC: Help for Dir and Files Macros Missing in Project Settings"
-permalink: kb/190/Q190998/
+permalink: /kb/190/Q190998/
 ---
 
 ## Q190998: DOC: Help for Dir and Files Macros Missing in Project Settings

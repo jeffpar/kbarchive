@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140025: HOWTO: Add an Outline Control to a Form and Populate It"
-permalink: kb/140/Q140025/
+permalink: /kb/140/Q140025/
 ---
 
 ## Q140025: HOWTO: Add an Outline Control to a Form and Populate It

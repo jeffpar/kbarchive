@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110345: Word 2.0: Blank Items in File List Boxes and Missing Letters"
-permalink: kb/110/Q110345/
+permalink: /kb/110/Q110345/
 ---
 
 ## Q110345: Word 2.0: Blank Items in File List Boxes and Missing Letters

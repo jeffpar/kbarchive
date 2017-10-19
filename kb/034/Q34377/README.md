@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q34377: How to Implement a Function Pointer in MASM"
-permalink: kb/034/Q34377/
+permalink: /kb/034/Q34377/
 ---
 
 ## Q34377: How to Implement a Function Pointer in MASM

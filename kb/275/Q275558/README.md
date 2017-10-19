@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275558: WD97: Runtime Error '4198' Running Macro to Paste Excel Object"
-permalink: kb/275/Q275558/
+permalink: /kb/275/Q275558/
 ---
 
 ## Q275558: WD97: Runtime Error '4198' Running Macro to Paste Excel Object

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106393: FIX: Print Footer Options Reset to &amp;P in Visual Workbench"
-permalink: kb/106/Q106393/
+permalink: /kb/106/Q106393/
 ---
 
 ## Q106393: FIX: Print Footer Options Reset to &amp;P in Visual Workbench

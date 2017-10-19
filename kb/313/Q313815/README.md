@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313815: XCCC: You Are Unable to Delete E-mail Messages Using OWA"
-permalink: kb/313/Q313815/
+permalink: /kb/313/Q313815/
 ---
 
 ## Q313815: XCCC: You Are Unable to Delete E-mail Messages Using OWA

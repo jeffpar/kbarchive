@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241855: XADM: Information Store Does Not Start with Event ID 145"
-permalink: kb/241/Q241855/
+permalink: /kb/241/Q241855/
 ---
 
 ## Q241855: XADM: Information Store Does Not Start with Event ID 145

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113430: Flight Simulator: Slow Video Frame Rate"
-permalink: kb/113/Q113430/
+permalink: /kb/113/Q113430/
 ---
 
 ## Q113430: Flight Simulator: Slow Video Frame Rate

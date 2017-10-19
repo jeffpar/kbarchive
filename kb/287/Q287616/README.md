@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287616: FTP Error 550 Occurs When You Use Put and Append Commands"
-permalink: kb/287/Q287616/
+permalink: /kb/287/Q287616/
 ---
 
 ## Q287616: FTP Error 550 Occurs When You Use Put and Append Commands

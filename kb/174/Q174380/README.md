@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174380: XADM: Setup Marks Mapi32.dll and Exchmem.dll as System"
-permalink: kb/174/Q174380/
+permalink: /kb/174/Q174380/
 ---
 
 ## Q174380: XADM: Setup Marks Mapi32.dll and Exchmem.dll as System

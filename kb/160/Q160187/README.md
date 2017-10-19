@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160187: Packet Burst Protocol"
-permalink: kb/160/Q160187/
+permalink: /kb/160/Q160187/
 ---
 
 ## Q160187: Packet Burst Protocol

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76523: PC Shell Requires LOADFIX with MS-DOS in the HMA"
-permalink: kb/076/Q76523/
+permalink: /kb/076/Q76523/
 ---
 
 ## Q76523: PC Shell Requires LOADFIX with MS-DOS in the HMA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82543: SMARTDrive 4.0: Third-Party Disk Partitioning Software"
-permalink: kb/082/Q82543/
+permalink: /kb/082/Q82543/
 ---
 
 ## Q82543: SMARTDrive 4.0: Third-Party Disk Partitioning Software

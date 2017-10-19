@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196289: PRB: SP3 Clients Cannot Change Passwords - Error C00000BE"
-permalink: kb/196/Q196289/
+permalink: /kb/196/Q196289/
 ---
 
 ## Q196289: PRB: SP3 Clients Cannot Change Passwords - Error C00000BE

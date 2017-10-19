@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192125: XCON: Messages Set for Delayed Delivery Sent at Wrong Time"
-permalink: kb/192/Q192125/
+permalink: /kb/192/Q192125/
 ---
 
 ## Q192125: XCON: Messages Set for Delayed Delivery Sent at Wrong Time

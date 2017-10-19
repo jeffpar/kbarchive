@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138119: Windows 95 Readme.txt File in Drivers&#92;Other&#92;Creative&#92;Sb16-awe"
-permalink: kb/138/Q138119/
+permalink: /kb/138/Q138119/
 ---
 
 ## Q138119: Windows 95 Readme.txt File in Drivers&#92;Other&#92;Creative&#92;Sb16-awe

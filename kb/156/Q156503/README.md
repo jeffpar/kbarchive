@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156503: BUG: Error When Deleting a Record Using the Apex Grid Control"
-permalink: kb/156/Q156503/
+permalink: /kb/156/Q156503/
 ---
 
 ## Q156503: BUG: Error When Deleting a Record Using the Apex Grid Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195836: PRB: Visual C++ Integration: &quot;Specify Working Directory&quot; Dialog"
-permalink: kb/195/Q195836/
+permalink: /kb/195/Q195836/
 ---
 
 ## Q195836: PRB: Visual C++ Integration: &quot;Specify Working Directory&quot; Dialog

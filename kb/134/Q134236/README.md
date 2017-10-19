@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134236: PC WRmt: Mail in the Outbox May Not Be Sent"
-permalink: kb/134/Q134236/
+permalink: /kb/134/Q134236/
 ---
 
 ## Q134236: PC WRmt: Mail in the Outbox May Not Be Sent

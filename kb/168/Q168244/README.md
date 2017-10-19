@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168244: XCLN: &quot;Locate Link Browser&quot; Displayed When You Click URLs"
-permalink: kb/168/Q168244/
+permalink: /kb/168/Q168244/
 ---
 
 ## Q168244: XCLN: &quot;Locate Link Browser&quot; Displayed When You Click URLs

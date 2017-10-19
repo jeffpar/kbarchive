@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97342: Utilizing High Color Resolution Devices"
-permalink: kb/097/Q97342/
+permalink: /kb/097/Q97342/
 ---
 
 ## Q97342: Utilizing High Color Resolution Devices

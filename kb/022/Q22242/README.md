@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q22242: PRB: Area Around Text and Remainder of Window Different Colors"
-permalink: kb/022/Q22242/
+permalink: /kb/022/Q22242/
 ---
 
 ## Q22242: PRB: Area Around Text and Remainder of Window Different Colors

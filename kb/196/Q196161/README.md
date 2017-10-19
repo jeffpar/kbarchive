@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196161: XADM: Cannot Install Key Management Server in Site"
-permalink: kb/196/Q196161/
+permalink: /kb/196/Q196161/
 ---
 
 ## Q196161: XADM: Cannot Install Key Management Server in Site

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77395: Large Unprintable Region at Bottom of Page with Canon BJ-10e"
-permalink: kb/077/Q77395/
+permalink: /kb/077/Q77395/
 ---
 
 ## Q77395: Large Unprintable Region at Bottom of Page with Canon BJ-10e

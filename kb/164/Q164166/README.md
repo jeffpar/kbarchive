@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164166: PRB: Assert in Wincore.cpp with MFC in a Windows NT Service"
-permalink: kb/164/Q164166/
+permalink: /kb/164/Q164166/
 ---
 
 ## Q164166: PRB: Assert in Wincore.cpp with MFC in a Windows NT Service

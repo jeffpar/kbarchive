@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238743: Err Msg: &quot;Setup Needs the File Msie&#42;.exe from CD Internet...&quot;"
-permalink: kb/238/Q238743/
+permalink: /kb/238/Q238743/
 ---
 
 ## Q238743: Err Msg: &quot;Setup Needs the File Msie&#42;.exe from CD Internet...&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75634: Percent Signs Stripped from Batch File Text"
-permalink: kb/075/Q75634/
+permalink: /kb/075/Q75634/
 ---
 
 ## Q75634: Percent Signs Stripped from Batch File Text

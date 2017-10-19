@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234144: DNS Boot File Directives and Configuration for Windows NT 4.0"
-permalink: kb/234/Q234144/
+permalink: /kb/234/Q234144/
 ---
 
 ## Q234144: DNS Boot File Directives and Configuration for Windows NT 4.0

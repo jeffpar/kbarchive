@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127947: Application Error with Logging Enabled in FTP Server Service"
-permalink: kb/127/Q127947/
+permalink: /kb/127/Q127947/
 ---
 
 ## Q127947: Application Error with Logging Enabled in FTP Server Service

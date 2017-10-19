@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175341: Multipage LU3 Print Jobs Don't Form Feed Correctly"
-permalink: kb/175/Q175341/
+permalink: /kb/175/Q175341/
 ---
 
 ## Q175341: Multipage LU3 Print Jobs Don't Form Feed Correctly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171589: SMS: SMSRUN16 Seems to Stop When Selecting a Logon Server"
-permalink: kb/171/Q171589/
+permalink: /kb/171/Q171589/
 ---
 
 ## Q171589: SMS: SMSRUN16 Seems to Stop When Selecting a Logon Server

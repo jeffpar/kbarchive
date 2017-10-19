@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154038: FPNW Needs GSNW for RPC SAP Services"
-permalink: kb/154/Q154038/
+permalink: /kb/154/Q154038/
 ---
 
 ## Q154038: FPNW Needs GSNW for RPC SAP Services

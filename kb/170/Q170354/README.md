@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170354: WD97: Error Installing Updated Word 6.0/95 Export Converter"
-permalink: kb/170/Q170354/
+permalink: /kb/170/Q170354/
 ---
 
 ## Q170354: WD97: Error Installing Updated Word 6.0/95 Export Converter

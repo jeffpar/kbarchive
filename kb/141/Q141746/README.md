@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141746: MAC Art Gallery: Screen Flickers with Animations"
-permalink: kb/141/Q141746/
+permalink: /kb/141/Q141746/
 ---
 
 ## Q141746: MAC Art Gallery: Screen Flickers with Animations

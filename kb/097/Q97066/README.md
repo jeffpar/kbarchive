@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97066: HOWTO: Index a Combined Date and Character Field"
-permalink: kb/097/Q97066/
+permalink: /kb/097/Q97066/
 ---
 
 ## Q97066: HOWTO: Index a Combined Date and Character Field

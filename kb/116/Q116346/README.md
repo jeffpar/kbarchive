@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116346: Bookshelf: Pressing OPTION Key Makes No Difference"
-permalink: kb/116/Q116346/
+permalink: /kb/116/Q116346/
 ---
 
 ## Q116346: Bookshelf: Pressing OPTION Key Makes No Difference

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173648: HOWTO: Updating an Oracle Table Using DBGrid and RDO"
-permalink: kb/173/Q173648/
+permalink: /kb/173/Q173648/
 ---
 
 ## Q173648: HOWTO: Updating an Oracle Table Using DBGrid and RDO

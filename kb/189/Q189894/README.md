@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189894: WD97: Cannot Find Thesaurus Error After Installing Works 4.5a"
-permalink: kb/189/Q189894/
+permalink: /kb/189/Q189894/
 ---
 
 ## Q189894: WD97: Cannot Find Thesaurus Error After Installing Works 4.5a

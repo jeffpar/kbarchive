@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166257: Applications Using OpenGL Cause Access Violation in OPENGL.DLL"
-permalink: kb/166/Q166257/
+permalink: /kb/166/Q166257/
 ---
 
 ## Q166257: Applications Using OpenGL Cause Access Violation in OPENGL.DLL

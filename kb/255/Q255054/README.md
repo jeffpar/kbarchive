@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255054: COM+ Does Not Reach SetMaxThreads for the Package"
-permalink: kb/255/Q255054/
+permalink: /kb/255/Q255054/
 ---
 
 ## Q255054: COM+ Does Not Reach SetMaxThreads for the Package

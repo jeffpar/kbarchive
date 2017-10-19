@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142620: Access Violation in Nwssvc.exe"
-permalink: kb/142/Q142620/
+permalink: /kb/142/Q142620/
 ---
 
 ## Q142620: Access Violation in Nwssvc.exe

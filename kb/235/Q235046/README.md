@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235046: Microsoft Publisher 2000 Step by Step Comments and Corrections"
-permalink: kb/235/Q235046/
+permalink: /kb/235/Q235046/
 ---
 
 ## Q235046: Microsoft Publisher 2000 Step by Step Comments and Corrections

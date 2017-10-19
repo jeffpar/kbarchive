@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191211: SMSINST: &quot;Could Not Open Install.log File&quot;"
-permalink: kb/191/Q191211/
+permalink: /kb/191/Q191211/
 ---
 
 ## Q191211: SMSINST: &quot;Could Not Open Install.log File&quot;

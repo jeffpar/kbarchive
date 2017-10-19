@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114364: Novell Compressed Drives Inaccessible Under MS-DOS 6.21"
-permalink: kb/114/Q114364/
+permalink: /kb/114/Q114364/
 ---
 
 ## Q114364: Novell Compressed Drives Inaccessible Under MS-DOS 6.21

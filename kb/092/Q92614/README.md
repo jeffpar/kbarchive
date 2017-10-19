@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92614: INFO: Initializing const Member Data"
-permalink: kb/092/Q92614/
+permalink: /kb/092/Q92614/
 ---
 
 ## Q92614: INFO: Initializing const Member Data

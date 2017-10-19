@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132855: Mac Wkst: Err Msg: A Field Was Not Large Enough..."
-permalink: kb/132/Q132855/
+permalink: /kb/132/Q132855/
 ---
 
 ## Q132855: Mac Wkst: Err Msg: A Field Was Not Large Enough...

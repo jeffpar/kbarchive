@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175660: The Microsoft Network 2.51 CD-ROM Directory Contents"
-permalink: kb/175/Q175660/
+permalink: /kb/175/Q175660/
 ---
 
 ## Q175660: The Microsoft Network 2.51 CD-ROM Directory Contents

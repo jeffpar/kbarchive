@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92954: PRB: PWB Hangs Pasting Text from Windowed MS-DOS System Menu"
-permalink: kb/092/Q92954/
+permalink: /kb/092/Q92954/
 ---
 
 ## Q92954: PRB: PWB Hangs Pasting Text from Windowed MS-DOS System Menu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259933: HOWTO: Use an MSChart Control with Visual FoxPro"
-permalink: kb/259/Q259933/
+permalink: /kb/259/Q259933/
 ---
 
 ## Q259933: HOWTO: Use an MSChart Control with Visual FoxPro

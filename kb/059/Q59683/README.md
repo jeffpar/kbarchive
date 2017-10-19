@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59683: No Default Saved for Disk Format Options"
-permalink: kb/059/Q59683/
+permalink: /kb/059/Q59683/
 ---
 
 ## Q59683: No Default Saved for Disk Format Options

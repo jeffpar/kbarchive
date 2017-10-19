@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255725: PRB: Error Message Accessing Objects Added to Visual FoxPro COM"
-permalink: kb/255/Q255725/
+permalink: /kb/255/Q255725/
 ---
 
 ## Q255725: PRB: Error Message Accessing Objects Added to Visual FoxPro COM

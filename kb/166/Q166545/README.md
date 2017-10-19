@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166545: XFOR: Exchange 5.0 DXA Appends 001 Only When Needed"
-permalink: kb/166/Q166545/
+permalink: /kb/166/Q166545/
 ---
 
 ## Q166545: XFOR: Exchange 5.0 DXA Appends 001 Only When Needed

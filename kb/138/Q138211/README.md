@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138211: Bookshelf 1995: Pictures Display an Inverse Image"
-permalink: kb/138/Q138211/
+permalink: /kb/138/Q138211/
 ---
 
 ## Q138211: Bookshelf 1995: Pictures Display an Inverse Image

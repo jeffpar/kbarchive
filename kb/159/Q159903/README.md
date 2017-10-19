@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159903: Chip's Challenge: No Cosmic Chip Socket in Level 20"
-permalink: kb/159/Q159903/
+permalink: /kb/159/Q159903/
 ---
 
 ## Q159903: Chip's Challenge: No Cosmic Chip Socket in Level 20

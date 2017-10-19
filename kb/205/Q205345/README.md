@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q205345: CMD.exe Err w/ Path or File Name Exceeding Max_Path / 256 Char's"
-permalink: kb/205/Q205345/
+permalink: /kb/205/Q205345/
 ---
 
 ## Q205345: CMD.exe Err w/ Path or File Name Exceeding Max_Path / 256 Char's

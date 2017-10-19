@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141972: How to Use the SYS(1270) Function"
-permalink: kb/141/Q141972/
+permalink: /kb/141/Q141972/
 ---
 
 ## Q141972: How to Use the SYS(1270) Function

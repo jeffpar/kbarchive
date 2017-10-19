@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153544: Starting 16-Bit WOW Subsystem on Windows NT Server"
-permalink: kb/153/Q153544/
+permalink: /kb/153/Q153544/
 ---
 
 ## Q153544: Starting 16-Bit WOW Subsystem on Windows NT Server

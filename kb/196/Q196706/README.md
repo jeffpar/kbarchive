@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196706: INFO: Files Installed in WINNT&#92;SYSTEM32 Folder for MSDN"
-permalink: kb/196/Q196706/
+permalink: /kb/196/Q196706/
 ---
 
 ## Q196706: INFO: Files Installed in WINNT&#92;SYSTEM32 Folder for MSDN

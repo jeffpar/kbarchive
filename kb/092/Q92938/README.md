@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92938: Packard Bell Packmate Requires HIMEM.SYS /m:1"
-permalink: kb/092/Q92938/
+permalink: /kb/092/Q92938/
 ---
 
 ## Q92938: Packard Bell Packmate Requires HIMEM.SYS /m:1

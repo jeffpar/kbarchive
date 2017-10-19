@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220835: HOWTO: Change the Code Page of Project Files"
-permalink: kb/220/Q220835/
+permalink: /kb/220/Q220835/
 ---
 
 ## Q220835: HOWTO: Change the Code Page of Project Files

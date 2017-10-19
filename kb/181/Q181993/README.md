@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181993: WD97: How to Show Access Check Boxes During a Mail Merge"
-permalink: kb/181/Q181993/
+permalink: /kb/181/Q181993/
 ---
 
 ## Q181993: WD97: How to Show Access Check Boxes During a Mail Merge

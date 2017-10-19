@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67018: Fontware Installation Kit Adding Typefaces Warning"
-permalink: kb/067/Q67018/
+permalink: /kb/067/Q67018/
 ---
 
 ## Q67018: Fontware Installation Kit Adding Typefaces Warning

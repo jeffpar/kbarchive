@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215492: XFOR: Message Flow Through the Notes Connector"
-permalink: kb/215/Q215492/
+permalink: /kb/215/Q215492/
 ---
 
 ## Q215492: XFOR: Message Flow Through the Notes Connector

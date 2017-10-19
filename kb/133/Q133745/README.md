@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133745: Automap Streets: How to Find Street Addresses"
-permalink: kb/133/Q133745/
+permalink: /kb/133/Q133745/
 ---
 
 ## Q133745: Automap Streets: How to Find Street Addresses

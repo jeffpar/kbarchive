@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138607: BUG: Can't Enter Period in a Text Box with Scientific Notation"
-permalink: kb/138/Q138607/
+permalink: /kb/138/Q138607/
 ---
 
 ## Q138607: BUG: Can't Enter Period in a Text Box with Scientific Notation

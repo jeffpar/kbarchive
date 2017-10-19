@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275865: COMTI Event 104 HRESULT 0x8007000e When You Use Recordsets"
-permalink: kb/275/Q275865/
+permalink: /kb/275/Q275865/
 ---
 
 ## Q275865: COMTI Event 104 HRESULT 0x8007000e When You Use Recordsets

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152929: XCLN: WordPad and Exchange Crash When Run on Non-English NT 3.51"
-permalink: kb/152/Q152929/
+permalink: /kb/152/Q152929/
 ---
 
 ## Q152929: XCLN: WordPad and Exchange Crash When Run on Non-English NT 3.51

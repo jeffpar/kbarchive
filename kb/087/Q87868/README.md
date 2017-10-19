@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87868: Copy Picture and Copy Audio Unavailable After Search"
-permalink: kb/087/Q87868/
+permalink: /kb/087/Q87868/
 ---
 
 ## Q87868: Copy Picture and Copy Audio Unavailable After Search

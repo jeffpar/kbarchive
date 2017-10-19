@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170153: FIX: Excel Automation Samples Cause Errors with Excel 97"
-permalink: kb/170/Q170153/
+permalink: /kb/170/Q170153/
 ---
 
 ## Q170153: FIX: Excel Automation Samples Cause Errors with Excel 97

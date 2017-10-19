@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174621: Margin Setting In Custom Forms are Ignored"
-permalink: kb/174/Q174621/
+permalink: /kb/174/Q174621/
 ---
 
 ## Q174621: Margin Setting In Custom Forms are Ignored

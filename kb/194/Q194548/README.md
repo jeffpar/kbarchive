@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194548: X400: Message with Long Free-Form Name Cannot Be Delivered"
-permalink: kb/194/Q194548/
+permalink: /kb/194/Q194548/
 ---
 
 ## Q194548: X400: Message with Long Free-Form Name Cannot Be Delivered

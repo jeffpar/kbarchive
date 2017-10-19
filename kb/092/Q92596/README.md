@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92596: WFWG Upgrade Can't Find Windows When Automated Setup is Used"
-permalink: kb/092/Q92596/
+permalink: /kb/092/Q92596/
 ---
 
 ## Q92596: WFWG Upgrade Can't Find Windows When Automated Setup is Used

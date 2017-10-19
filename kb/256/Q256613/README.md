@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256613: MapPoint: Currency Values Are Not Displayed Properly"
-permalink: kb/256/Q256613/
+permalink: /kb/256/Q256613/
 ---
 
 ## Q256613: MapPoint: Currency Values Are Not Displayed Properly

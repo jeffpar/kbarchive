@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124997: HP PC LAN Adapters Not Listed in Network Client Version 3.0"
-permalink: kb/124/Q124997/
+permalink: /kb/124/Q124997/
 ---
 
 ## Q124997: HP PC LAN Adapters Not Listed in Network Client Version 3.0

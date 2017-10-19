@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174625: Environment Variables May Prevent Logging On"
-permalink: kb/174/Q174625/
+permalink: /kb/174/Q174625/
 ---
 
 ## Q174625: Environment Variables May Prevent Logging On

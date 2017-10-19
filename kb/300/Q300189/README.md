@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300189: PRB: Paradox ISAM Does Not Support Some Paradox 4.x Types"
-permalink: kb/300/Q300189/
+permalink: /kb/300/Q300189/
 ---
 
 ## Q300189: PRB: Paradox ISAM Does Not Support Some Paradox 4.x Types

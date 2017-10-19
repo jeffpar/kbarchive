@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272538: Summary of Online Help for MSN Companion"
-permalink: kb/272/Q272538/
+permalink: /kb/272/Q272538/
 ---
 
 ## Q272538: Summary of Online Help for MSN Companion

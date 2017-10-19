@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162159: SAMPLE:TREESCRL Scrolls in a Tree Control During Drag-and-Drop"
-permalink: kb/162/Q162159/
+permalink: /kb/162/Q162159/
 ---
 
 ## Q162159: SAMPLE:TREESCRL Scrolls in a Tree Control During Drag-and-Drop

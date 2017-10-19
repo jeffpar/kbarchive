@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140036: Slow Network Printing from MS-DOS-Based Programs"
-permalink: kb/140/Q140036/
+permalink: /kb/140/Q140036/
 ---
 
 ## Q140036: Slow Network Printing from MS-DOS-Based Programs

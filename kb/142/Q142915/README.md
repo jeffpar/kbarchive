@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142915: Unattended Installation of Windows NT 3.51 Service Pack 3"
-permalink: kb/142/Q142915/
+permalink: /kb/142/Q142915/
 ---
 
 ## Q142915: Unattended Installation of Windows NT 3.51 Service Pack 3

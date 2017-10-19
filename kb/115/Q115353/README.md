@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115353: X400: Setting Include Special Attachment Removes WINMAIL.DAT"
-permalink: kb/115/Q115353/
+permalink: /kb/115/Q115353/
 ---
 
 ## Q115353: X400: Setting Include Special Attachment Removes WINMAIL.DAT

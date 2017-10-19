@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161867: Arrow Keys Not Functioning Properly in the Hardware Profile Menu"
-permalink: kb/161/Q161867/
+permalink: /kb/161/Q161867/
 ---
 
 ## Q161867: Arrow Keys Not Functioning Properly in the Hardware Profile Menu

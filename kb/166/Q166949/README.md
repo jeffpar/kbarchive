@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166949: WD97: Unable to Fax When You Start Word the First Time"
-permalink: kb/166/Q166949/
+permalink: /kb/166/Q166949/
 ---
 
 ## Q166949: WD97: Unable to Fax When You Start Word the First Time

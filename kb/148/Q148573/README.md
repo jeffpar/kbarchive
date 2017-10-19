@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148573: PPT7: Saving PowerPoint 7.0 File as PowerPoint 3.0 File"
-permalink: kb/148/Q148573/
+permalink: /kb/148/Q148573/
 ---
 
 ## Q148573: PPT7: Saving PowerPoint 7.0 File as PowerPoint 3.0 File

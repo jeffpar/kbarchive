@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258609: WLBS Cluster Appears to Stop Servicing Clients"
-permalink: kb/258/Q258609/
+permalink: /kb/258/Q258609/
 ---
 
 ## Q258609: WLBS Cluster Appears to Stop Servicing Clients

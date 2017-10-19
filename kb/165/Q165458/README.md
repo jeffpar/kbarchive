@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165458: List of Bugs Fixed in SNA Server 3.0 Service Pack 1"
-permalink: kb/165/Q165458/
+permalink: /kb/165/Q165458/
 ---
 
 ## Q165458: List of Bugs Fixed in SNA Server 3.0 Service Pack 1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142598: Err Msg: Session Management Module Is Invalid"
-permalink: kb/142/Q142598/
+permalink: /kb/142/Q142598/
 ---
 
 ## Q142598: Err Msg: Session Management Module Is Invalid

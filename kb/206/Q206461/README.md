@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q206461: PRB: Query Designer Expression Builder Uses Wrong MIN() / MAX()"
-permalink: kb/206/Q206461/
+permalink: /kb/206/Q206461/
 ---
 
 ## Q206461: PRB: Query Designer Expression Builder Uses Wrong MIN() / MAX()

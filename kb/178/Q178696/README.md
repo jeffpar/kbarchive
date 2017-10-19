@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178696: Age of Empires: List of Civilizations and Wonders"
-permalink: kb/178/Q178696/
+permalink: /kb/178/Q178696/
 ---
 
 ## Q178696: Age of Empires: List of Civilizations and Wonders

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214970: WMI Error Message: Installation Aborted! Internal Error"
-permalink: kb/214/Q214970/
+permalink: /kb/214/Q214970/
 ---
 
 ## Q214970: WMI Error Message: Installation Aborted! Internal Error

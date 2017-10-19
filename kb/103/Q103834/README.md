@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103834: Style Metacharacter Not for Use with Main Menu Bar"
-permalink: kb/103/Q103834/
+permalink: /kb/103/Q103834/
 ---
 
 ## Q103834: Style Metacharacter Not for Use with Main Menu Bar

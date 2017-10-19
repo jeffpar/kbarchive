@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280801: INFO: Avoid WS_CLIPCHILDREN and ActiveX Control Painting Problem"
-permalink: kb/280/Q280801/
+permalink: /kb/280/Q280801/
 ---
 
 ## Q280801: INFO: Avoid WS_CLIPCHILDREN and ActiveX Control Painting Problem

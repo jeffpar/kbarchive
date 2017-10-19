@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145592: I/O Channel Ready Settings on the Intel EtherExpress 16"
-permalink: kb/145/Q145592/
+permalink: /kb/145/Q145592/
 ---
 
 ## Q145592: I/O Channel Ready Settings on the Intel EtherExpress 16

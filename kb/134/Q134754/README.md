@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134754: PC Gen: README.TXT: Mail 3.5 Supplementary Modem Scripts"
-permalink: kb/134/Q134754/
+permalink: /kb/134/Q134754/
 ---
 
 ## Q134754: PC Gen: README.TXT: Mail 3.5 Supplementary Modem Scripts

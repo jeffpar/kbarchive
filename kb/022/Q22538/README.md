@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q22538: Information About Clipping, GetDeviceCaps() and GDI"
-permalink: kb/022/Q22538/
+permalink: /kb/022/Q22538/
 ---
 
 ## Q22538: Information About Clipping, GetDeviceCaps() and GDI

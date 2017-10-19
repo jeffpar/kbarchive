@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156035: PRB: Control in Grid w/ When Returning .F. Passes Keys to Form"
-permalink: kb/156/Q156035/
+permalink: /kb/156/Q156035/
 ---
 
 ## Q156035: PRB: Control in Grid w/ When Returning .F. Passes Keys to Form

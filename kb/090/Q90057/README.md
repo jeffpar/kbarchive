@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90057: Microsoft-Supplied Monospaced TrueType Fonts"
-permalink: kb/090/Q90057/
+permalink: /kb/090/Q90057/
 ---
 
 ## Q90057: Microsoft-Supplied Monospaced TrueType Fonts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48759: Paine Field Runway Labled Incorrectly in Flight Simulator 4.00"
-permalink: kb/048/Q48759/
+permalink: /kb/048/Q48759/
 ---
 
 ## Q48759: Paine Field Runway Labled Incorrectly in Flight Simulator 4.00

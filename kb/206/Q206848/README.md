@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q206848: Windows NT Service Pack 4.0 Tools Not Included on CD-ROM"
-permalink: kb/206/Q206848/
+permalink: /kb/206/Q206848/
 ---
 
 ## Q206848: Windows NT Service Pack 4.0 Tools Not Included on CD-ROM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194636: HOWTO: Manually Register a VB Remote Component Using CLIREG32"
-permalink: kb/194/Q194636/
+permalink: /kb/194/Q194636/
 ---
 
 ## Q194636: HOWTO: Manually Register a VB Remote Component Using CLIREG32

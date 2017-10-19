@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142204: CSNW Drive Mappings Incorrect"
-permalink: kb/142/Q142204/
+permalink: /kb/142/Q142204/
 ---
 
 ## Q142204: CSNW Drive Mappings Incorrect

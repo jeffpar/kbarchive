@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110480: Table &amp; Alias Names Not Always the Same in FoxPro for Mac"
-permalink: kb/110/Q110480/
+permalink: /kb/110/Q110480/
 ---
 
 ## Q110480: Table &amp; Alias Names Not Always the Same in FoxPro for Mac

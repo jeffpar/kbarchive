@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159196: XADM: Tasks Controlled by the IS Maintenance Schedule"
-permalink: kb/159/Q159196/
+permalink: /kb/159/Q159196/
 ---
 
 ## Q159196: XADM: Tasks Controlled by the IS Maintenance Schedule

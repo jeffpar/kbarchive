@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134401: Windows 95 Resource Kit Readme.txt File"
-permalink: kb/134/Q134401/
+permalink: /kb/134/Q134401/
 ---
 
 ## Q134401: Windows 95 Resource Kit Readme.txt File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95998: SmartMon Incorrectly Reports Cache Status on Compressed Drive"
-permalink: kb/095/Q95998/
+permalink: /kb/095/Q95998/
 ---
 
 ## Q95998: SmartMon Incorrectly Reports Cache Status on Compressed Drive

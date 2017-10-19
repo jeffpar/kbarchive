@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87392: PC DB: Which Programs Access the GLOBAL.GLB File"
-permalink: kb/087/Q87392/
+permalink: /kb/087/Q87392/
 ---
 
 ## Q87392: PC DB: Which Programs Access the GLOBAL.GLB File

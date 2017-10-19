@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176714: Troubleshooting Joystick Problems in Flight Simulator 98"
-permalink: kb/176/Q176714/
+permalink: /kb/176/Q176714/
 ---
 
 ## Q176714: Troubleshooting Joystick Problems in Flight Simulator 98

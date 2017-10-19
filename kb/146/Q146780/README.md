@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146780: XCLN: Setup Is Unable to Create Item In Program Manager Group"
-permalink: kb/146/Q146780/
+permalink: /kb/146/Q146780/
 ---
 
 ## Q146780: XCLN: Setup Is Unable to Create Item In Program Manager Group

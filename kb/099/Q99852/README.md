@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99852: SMTP: Err Msg: ERROR Connect: (121) Network Error"
-permalink: kb/099/Q99852/
+permalink: /kb/099/Q99852/
 ---
 
 ## Q99852: SMTP: Err Msg: ERROR Connect: (121) Network Error

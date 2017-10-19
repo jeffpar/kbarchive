@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185519: FILE: Vbinet.exe WinInet API Declarations for Visual Basic"
-permalink: kb/185/Q185519/
+permalink: /kb/185/Q185519/
 ---
 
 ## Q185519: FILE: Vbinet.exe WinInet API Declarations for Visual Basic

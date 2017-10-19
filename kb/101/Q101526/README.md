@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101526: RAS 1.X with NETBIOSTIMEOUT and NETBIOSRETRIES"
-permalink: kb/101/Q101526/
+permalink: /kb/101/Q101526/
 ---
 
 ## Q101526: RAS 1.X with NETBIOSTIMEOUT and NETBIOSRETRIES

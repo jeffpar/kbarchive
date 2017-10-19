@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159625: WD97: Docerr: Message Box Refers to Multilevel Not Outline List"
-permalink: kb/159/Q159625/
+permalink: /kb/159/Q159625/
 ---
 
 ## Q159625: WD97: Docerr: Message Box Refers to Multilevel Not Outline List

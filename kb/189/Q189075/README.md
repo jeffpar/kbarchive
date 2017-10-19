@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189075: MTM2: How to Remove Player Names from the Driver Check-In List"
-permalink: kb/189/Q189075/
+permalink: /kb/189/Q189075/
 ---
 
 ## Q189075: MTM2: How to Remove Player Names from the Driver Check-In List

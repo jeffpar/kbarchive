@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77255: INFO: wsprintf() Buffer Limit in Windows"
-permalink: kb/077/Q77255/
+permalink: /kb/077/Q77255/
 ---
 
 ## Q77255: INFO: wsprintf() Buffer Limit in Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192161: WD97:Squares Appear in Text Form Field Inserted from Userform"
-permalink: kb/192/Q192161/
+permalink: /kb/192/Q192161/
 ---
 
 ## Q192161: WD97:Squares Appear in Text Form Field Inserted from Userform

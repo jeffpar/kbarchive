@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264286: PC DirSync: Exch. Postoffice Not in MS Mail Global Address List"
-permalink: kb/264/Q264286/
+permalink: /kb/264/Q264286/
 ---
 
 ## Q264286: PC DirSync: Exch. Postoffice Not in MS Mail Global Address List

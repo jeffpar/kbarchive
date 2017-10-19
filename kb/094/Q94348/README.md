@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94348: PRB: Resolving FoxPro &quot;Memo File Is Missing/Invalid&quot; Error"
-permalink: kb/094/Q94348/
+permalink: /kb/094/Q94348/
 ---
 
 ## Q94348: PRB: Resolving FoxPro &quot;Memo File Is Missing/Invalid&quot; Error

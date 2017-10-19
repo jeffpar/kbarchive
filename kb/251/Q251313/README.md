@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251313: How to Configure SNA Server for PU Passthrough"
-permalink: kb/251/Q251313/
+permalink: /kb/251/Q251313/
 ---
 
 ## Q251313: How to Configure SNA Server for PU Passthrough

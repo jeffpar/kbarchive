@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59110: Mac Form: Components of Mail Custom Forms"
-permalink: kb/059/Q59110/
+permalink: /kb/059/Q59110/
 ---
 
 ## Q59110: Mac Form: Components of Mail Custom Forms

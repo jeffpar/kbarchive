@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78461: Flashing Mouse Cursor in Windows 3.0 on AST Premium Exec"
-permalink: kb/078/Q78461/
+permalink: /kb/078/Q78461/
 ---
 
 ## Q78461: Flashing Mouse Cursor in Windows 3.0 on AST Premium Exec

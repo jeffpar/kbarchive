@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249111: XFOR: Exchange Connector for Lotus cc:Mail Not Supporting Korean"
-permalink: kb/249/Q249111/
+permalink: /kb/249/Q249111/
 ---
 
 ## Q249111: XFOR: Exchange Connector for Lotus cc:Mail Not Supporting Korean

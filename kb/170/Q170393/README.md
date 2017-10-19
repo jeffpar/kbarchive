@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170393: HOWTO: Prevent Word Printing Error with OLE Automation"
-permalink: kb/170/Q170393/
+permalink: /kb/170/Q170393/
 ---
 
 ## Q170393: HOWTO: Prevent Word Printing Error with OLE Automation

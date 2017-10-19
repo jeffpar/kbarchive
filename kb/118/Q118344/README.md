@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118344: Setup Incorrectly Detects Multiple Floppy Drive Controllers"
-permalink: kb/118/Q118344/
+permalink: /kb/118/Q118344/
 ---
 
 ## Q118344: Setup Incorrectly Detects Multiple Floppy Drive Controllers

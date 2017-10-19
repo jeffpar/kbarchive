@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163037: FIX: Label Properties Cause Illegal Operation"
-permalink: kb/163/Q163037/
+permalink: /kb/163/Q163037/
 ---
 
 ## Q163037: FIX: Label Properties Cause Illegal Operation

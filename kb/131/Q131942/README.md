@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131942: Erratic Mouse Pointer Behavior on Laptop Computers"
-permalink: kb/131/Q131942/
+permalink: /kb/131/Q131942/
 ---
 
 ## Q131942: Erratic Mouse Pointer Behavior on Laptop Computers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137135: STOP Msg: 0x0000001E Running DEC Pathworks Version 4.1b"
-permalink: kb/137/Q137135/
+permalink: /kb/137/Q137135/
 ---
 
 ## Q137135: STOP Msg: 0x0000001E Running DEC Pathworks Version 4.1b

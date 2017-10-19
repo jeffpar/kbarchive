@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191284: STOP 0x0000001E in Netbt.sys"
-permalink: kb/191/Q191284/
+permalink: /kb/191/Q191284/
 ---
 
 ## Q191284: STOP 0x0000001E in Netbt.sys

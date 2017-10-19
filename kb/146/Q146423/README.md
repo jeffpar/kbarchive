@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146423: How to Change the .BMP Picture On a Command Button at Run Time"
-permalink: kb/146/Q146423/
+permalink: /kb/146/Q146423/
 ---
 
 ## Q146423: How to Change the .BMP Picture On a Command Button at Run Time

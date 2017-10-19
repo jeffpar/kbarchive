@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164869: FIX: SET COLLATE TO &quot;GENERAL&quot; May Affect Search Results"
-permalink: kb/164/Q164869/
+permalink: /kb/164/Q164869/
 ---
 
 ## Q164869: FIX: SET COLLATE TO &quot;GENERAL&quot; May Affect Search Results

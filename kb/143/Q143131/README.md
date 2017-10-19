@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143131: PROBE Utilities Not Included in Windows NT 3.51 Resource Kit"
-permalink: kb/143/Q143131/
+permalink: /kb/143/Q143131/
 ---
 
 ## Q143131: PROBE Utilities Not Included in Windows NT 3.51 Resource Kit

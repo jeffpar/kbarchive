@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66145: AutoLoad Feature in IdleWild Causes Multiple WIN.INI Entries"
-permalink: kb/066/Q66145/
+permalink: /kb/066/Q66145/
 ---
 
 ## Q66145: AutoLoad Feature in IdleWild Causes Multiple WIN.INI Entries

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109441: Windows NT Resource Kit Includes Incorrect Definition of LSN"
-permalink: kb/109/Q109441/
+permalink: /kb/109/Q109441/
 ---
 
 ## Q109441: Windows NT Resource Kit Includes Incorrect Definition of LSN

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195987: Snatrace Won't Start if &quot;Background Thread&quot; = &quot;Below normal&quot;"
-permalink: kb/195/Q195987/
+permalink: /kb/195/Q195987/
 ---
 
 ## Q195987: Snatrace Won't Start if &quot;Background Thread&quot; = &quot;Below normal&quot;

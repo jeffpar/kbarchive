@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86532: Canon LBP-8 II Printer Err Msg: 21 Complex Data"
-permalink: kb/086/Q86532/
+permalink: /kb/086/Q86532/
 ---
 
 ## Q86532: Canon LBP-8 II Printer Err Msg: 21 Complex Data

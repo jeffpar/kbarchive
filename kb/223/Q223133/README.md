@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223133: FIX: Private Enum Statements Cause an Application Error"
-permalink: kb/223/Q223133/
+permalink: /kb/223/Q223133/
 ---
 
 ## Q223133: FIX: Private Enum Statements Cause an Application Error

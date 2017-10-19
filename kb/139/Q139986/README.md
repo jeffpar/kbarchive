@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139986: CD-ROM Drive Not Recognized After Installing Windows NT"
-permalink: kb/139/Q139986/
+permalink: /kb/139/Q139986/
 ---
 
 ## Q139986: CD-ROM Drive Not Recognized After Installing Windows NT

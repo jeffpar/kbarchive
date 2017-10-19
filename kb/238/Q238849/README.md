@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238849: PRB: Numbered Positioned Updates Against Oracle8i DB Server Fail"
-permalink: kb/238/Q238849/
+permalink: /kb/238/Q238849/
 ---
 
 ## Q238849: PRB: Numbered Positioned Updates Against Oracle8i DB Server Fail

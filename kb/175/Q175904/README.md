@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175904: BUG: Multiple threads Cause Connection Busy Error in the Driver"
-permalink: kb/175/Q175904/
+permalink: /kb/175/Q175904/
 ---
 
 ## Q175904: BUG: Multiple threads Cause Connection Busy Error in the Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119466: Microsoft TCP/IP-32 and Sockets Support"
-permalink: kb/119/Q119466/
+permalink: /kb/119/Q119466/
 ---
 
 ## Q119466: Microsoft TCP/IP-32 and Sockets Support

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241395: Client Configuration for SNA Server Client Does Not Save Changes"
-permalink: kb/241/Q241395/
+permalink: /kb/241/Q241395/
 ---
 
 ## Q241395: Client Configuration for SNA Server Client Does Not Save Changes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264691: Creating OLE DB Connection String for Access Database from ASP"
-permalink: kb/264/Q264691/
+permalink: /kb/264/Q264691/
 ---
 
 ## Q264691: Creating OLE DB Connection String for Access Database from ASP

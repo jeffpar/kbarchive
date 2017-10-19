@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153753: XCLN: Schedule+ 1.0 and 7.0 Interoperability in MS Mail"
-permalink: kb/153/Q153753/
+permalink: /kb/153/Q153753/
 ---
 
 ## Q153753: XCLN: Schedule+ 1.0 and 7.0 Interoperability in MS Mail

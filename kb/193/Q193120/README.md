@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193120: XCLN: JScript Error Using &quot;Open Link in New Window&quot; in OWA"
-permalink: kb/193/Q193120/
+permalink: /kb/193/Q193120/
 ---
 
 ## Q193120: XCLN: JScript Error Using &quot;Open Link in New Window&quot; in OWA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114355: INFO: Single-Tier Drivers Don't Support Asynchronous Processing"
-permalink: kb/114/Q114355/
+permalink: /kb/114/Q114355/
 ---
 
 ## Q114355: INFO: Single-Tier Drivers Don't Support Asynchronous Processing

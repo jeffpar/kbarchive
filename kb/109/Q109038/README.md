@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109038: Art Gallery: Manual Installation Instructions"
-permalink: kb/109/Q109038/
+permalink: /kb/109/Q109038/
 ---
 
 ## Q109038: Art Gallery: Manual Installation Instructions

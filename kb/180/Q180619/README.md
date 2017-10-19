@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180619: SNA Server Stops After Logging Event 684 and 685."
-permalink: kb/180/Q180619/
+permalink: /kb/180/Q180619/
 ---
 
 ## Q180619: SNA Server Stops After Logging Event 684 and 685.

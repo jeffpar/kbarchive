@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142660: Upgrade from Uni- to Multiprocessor (Uptomp.exe) and Win32k.sys"
-permalink: kb/142/Q142660/
+permalink: /kb/142/Q142660/
 ---
 
 ## Q142660: Upgrade from Uni- to Multiprocessor (Uptomp.exe) and Win32k.sys

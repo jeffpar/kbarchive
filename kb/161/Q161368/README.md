@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161368: Service Pack 2 May Cause Loss of Connectivity in Remote Access"
-permalink: kb/161/Q161368/
+permalink: /kb/161/Q161368/
 ---
 
 ## Q161368: Service Pack 2 May Cause Loss of Connectivity in Remote Access

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73033: Workarounds for the MS-DOS 1024-Cylinder Limit"
-permalink: kb/073/Q73033/
+permalink: /kb/073/Q73033/
 ---
 
 ## Q73033: Workarounds for the MS-DOS 1024-Cylinder Limit

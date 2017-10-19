@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169278: ACC97: MS Access Hangs Adding DB to VSS While in Break Mode"
-permalink: kb/169/Q169278/
+permalink: /kb/169/Q169278/
 ---
 
 ## Q169278: ACC97: MS Access Hangs Adding DB to VSS While in Break Mode

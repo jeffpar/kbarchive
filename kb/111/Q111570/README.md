@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111570: System Hangs Using Super VGA Driver with Compaq QVision"
-permalink: kb/111/Q111570/
+permalink: /kb/111/Q111570/
 ---
 
 ## Q111570: System Hangs Using Super VGA Driver with Compaq QVision

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186575: NetWare User Access for Terminal Server"
-permalink: kb/186/Q186575/
+permalink: /kb/186/Q186575/
 ---
 
 ## Q186575: NetWare User Access for Terminal Server

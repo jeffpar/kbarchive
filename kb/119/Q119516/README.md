@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119516: Find Source: Please Enter the Path for MFC"
-permalink: kb/119/Q119516/
+permalink: /kb/119/Q119516/
 ---
 
 ## Q119516: Find Source: Please Enter the Path for MFC

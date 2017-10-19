@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155153: Writer 2: Paste Using Keyboard and Menu Behave Differently"
-permalink: kb/155/Q155153/
+permalink: /kb/155/Q155153/
 ---
 
 ## Q155153: Writer 2: Paste Using Keyboard and Menu Behave Differently

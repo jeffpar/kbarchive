@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96387: Virus-Protection Program Reports CONFIG.SYS Is Infected"
-permalink: kb/096/Q96387/
+permalink: /kb/096/Q96387/
 ---
 
 ## Q96387: Virus-Protection Program Reports CONFIG.SYS Is Infected

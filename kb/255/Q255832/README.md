@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255832: HTTP Compressed Files Not Created in Temporary Folder"
-permalink: kb/255/Q255832/
+permalink: /kb/255/Q255832/
 ---
 
 ## Q255832: HTTP Compressed Files Not Created in Temporary Folder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245178: Cannot Print to HP 6P Printer, Terminal Server Stops Responding."
-permalink: kb/245/Q245178/
+permalink: /kb/245/Q245178/
 ---
 
 ## Q245178: Cannot Print to HP 6P Printer, Terminal Server Stops Responding.

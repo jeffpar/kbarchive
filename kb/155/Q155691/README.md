@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155691: &quot;Fatal Exception Error 06&quot; with Sharp Mebius"
-permalink: kb/155/Q155691/
+permalink: /kb/155/Q155691/
 ---
 
 ## Q155691: &quot;Fatal Exception Error 06&quot; with Sharp Mebius

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241733: HOWTO: Obtain Location of Special Folders for Migration DLL"
-permalink: kb/241/Q241733/
+permalink: /kb/241/Q241733/
 ---
 
 ## Q241733: HOWTO: Obtain Location of Special Folders for Migration DLL

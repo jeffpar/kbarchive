@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181548: Event ID 4119 and 4311 After Removal of Remote Access Service"
-permalink: kb/181/Q181548/
+permalink: /kb/181/Q181548/
 ---
 
 ## Q181548: Event ID 4119 and 4311 After Removal of Remote Access Service

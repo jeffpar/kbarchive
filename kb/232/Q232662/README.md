@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232662: Problems Accessing Secured Site with Czech WinNT SP4 and IE 5"
-permalink: kb/232/Q232662/
+permalink: /kb/232/Q232662/
 ---
 
 ## Q232662: Problems Accessing Secured Site with Czech WinNT SP4 and IE 5

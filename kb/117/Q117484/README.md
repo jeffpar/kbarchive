@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117484: Disks Created by MS-DOS 6.21 Upgrade SETUP /F"
-permalink: kb/117/Q117484/
+permalink: /kb/117/Q117484/
 ---
 
 ## Q117484: Disks Created by MS-DOS 6.21 Upgrade SETUP /F

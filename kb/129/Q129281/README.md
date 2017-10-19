@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129281: How to Implement a RELEASE Method"
-permalink: kb/129/Q129281/
+permalink: /kb/129/Q129281/
 ---
 
 ## Q129281: How to Implement a RELEASE Method

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163589: XCLN: Restoring from an OST after Deleting the Mailbox"
-permalink: kb/163/Q163589/
+permalink: /kb/163/Q163589/
 ---
 
 ## Q163589: XCLN: Restoring from an OST after Deleting the Mailbox

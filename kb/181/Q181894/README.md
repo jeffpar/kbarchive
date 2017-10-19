@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181894: PRB: &quot;The Remote Procedure Call Failed&quot; During OLE Automation"
-permalink: kb/181/Q181894/
+permalink: /kb/181/Q181894/
 ---
 
 ## Q181894: PRB: &quot;The Remote Procedure Call Failed&quot; During OLE Automation

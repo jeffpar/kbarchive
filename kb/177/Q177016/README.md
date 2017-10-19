@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177016: Err Msg: Cannot Find the File Signup.exe..."
-permalink: kb/177/Q177016/
+permalink: /kb/177/Q177016/
 ---
 
 ## Q177016: Err Msg: Cannot Find the File Signup.exe...

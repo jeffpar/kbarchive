@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177986: FS98: Auto-Coordination Not Available for Bell 206B JetRanger"
-permalink: kb/177/Q177986/
+permalink: /kb/177/Q177986/
 ---
 
 ## Q177986: FS98: Auto-Coordination Not Available for Bell 206B JetRanger

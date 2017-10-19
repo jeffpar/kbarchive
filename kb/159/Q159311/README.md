@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159311: Instantiating Remote Components in MTS and IIS"
-permalink: kb/159/Q159311/
+permalink: /kb/159/Q159311/
 ---
 
 ## Q159311: Instantiating Remote Components in MTS and IIS

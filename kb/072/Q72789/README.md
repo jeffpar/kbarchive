@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72789: Building .COM File with Main Language = None Causes L1127"
-permalink: kb/072/Q72789/
+permalink: /kb/072/Q72789/
 ---
 
 ## Q72789: Building .COM File with Main Language = None Causes L1127

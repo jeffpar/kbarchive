@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169395: PRB: Thread Safety for DAO/Jet"
-permalink: kb/169/Q169395/
+permalink: /kb/169/Q169395/
 ---
 
 ## Q169395: PRB: Thread Safety for DAO/Jet

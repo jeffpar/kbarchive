@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252820: XADM: Store Stops Responding When an Orphan User Logs On"
-permalink: kb/252/Q252820/
+permalink: /kb/252/Q252820/
 ---
 
 ## Q252820: XADM: Store Stops Responding When an Orphan User Logs On

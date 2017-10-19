@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175881: XADM: View Only Admin can Modify MS Mail Connector Properties"
-permalink: kb/175/Q175881/
+permalink: /kb/175/Q175881/
 ---
 
 ## Q175881: XADM: View Only Admin can Modify MS Mail Connector Properties

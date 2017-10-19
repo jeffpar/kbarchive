@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153523: CMINIT May Fail with PRODUCT_SPECIFIC_ERROR(20) After a CMCANC"
-permalink: kb/153/Q153523/
+permalink: /kb/153/Q153523/
 ---
 
 ## Q153523: CMINIT May Fail with PRODUCT_SPECIFIC_ERROR(20) After a CMCANC

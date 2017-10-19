@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288738: Queries with Periods in Document Name Fail to Find Text in Files"
-permalink: kb/288/Q288738/
+permalink: /kb/288/Q288738/
 ---
 
 ## Q288738: Queries with Periods in Document Name Fail to Find Text in Files

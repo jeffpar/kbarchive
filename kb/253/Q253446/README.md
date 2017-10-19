@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253446: Allegiance Err Msg: Invalid Page Fault in Module &lt;Unknown&gt;"
-permalink: kb/253/Q253446/
+permalink: /kb/253/Q253446/
 ---
 
 ## Q253446: Allegiance Err Msg: Invalid Page Fault in Module &lt;Unknown&gt;

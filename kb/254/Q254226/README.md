@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254226: BUG: Bad Code Generation with Global Optimization"
-permalink: kb/254/Q254226/
+permalink: /kb/254/Q254226/
 ---
 
 ## Q254226: BUG: Bad Code Generation with Global Optimization

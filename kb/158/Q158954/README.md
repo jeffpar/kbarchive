@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158954: Fd8xx.sys Times Out Repeatedly with Quantum xp32150"
-permalink: kb/158/Q158954/
+permalink: /kb/158/Q158954/
 ---
 
 ## Q158954: Fd8xx.sys Times Out Repeatedly with Quantum xp32150

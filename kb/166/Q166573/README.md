@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166573: XFOR: Two Attachments Created When Filename Has a Path"
-permalink: kb/166/Q166573/
+permalink: /kb/166/Q166573/
 ---
 
 ## Q166573: XFOR: Two Attachments Created When Filename Has a Path

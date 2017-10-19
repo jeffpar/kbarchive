@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107697: BUG: Sharing IRQ with COM1 Causes System to Reboot"
-permalink: kb/107/Q107697/
+permalink: /kb/107/Q107697/
 ---
 
 ## Q107697: BUG: Sharing IRQ with COM1 Causes System to Reboot

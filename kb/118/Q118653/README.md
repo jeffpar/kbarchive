@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118653: NET Commands Available in Microsoft Network Clients"
-permalink: kb/118/Q118653/
+permalink: /kb/118/Q118653/
 ---
 
 ## Q118653: NET Commands Available in Microsoft Network Clients

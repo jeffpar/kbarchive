@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178748: SMS: SATAN Causes High Memory Utilization in WUSER32"
-permalink: kb/178/Q178748/
+permalink: /kb/178/Q178748/
 ---
 
 ## Q178748: SMS: SATAN Causes High Memory Utilization in WUSER32

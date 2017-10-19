@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189601: PRB: Numeric Values Shift in Grid Column Containing NULL Values"
-permalink: kb/189/Q189601/
+permalink: /kb/189/Q189601/
 ---
 
 ## Q189601: PRB: Numeric Values Shift in Grid Column Containing NULL Values

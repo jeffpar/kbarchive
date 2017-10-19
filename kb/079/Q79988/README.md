@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79988: CE_OVERRUN Errors with Serial Communications"
-permalink: kb/079/Q79988/
+permalink: /kb/079/Q79988/
 ---
 
 ## Q79988: CE_OVERRUN Errors with Serial Communications

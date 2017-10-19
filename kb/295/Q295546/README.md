@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295546: FP: Names and Hex Values for the 16 Common Colors used in HTML"
-permalink: kb/295/Q295546/
+permalink: /kb/295/Q295546/
 ---
 
 ## Q295546: FP: Names and Hex Values for the 16 Common Colors used in HTML

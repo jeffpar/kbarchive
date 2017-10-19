@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242576: Err: MSBackup Has Encountered a Serious Error in List Manager"
-permalink: kb/242/Q242576/
+permalink: /kb/242/Q242576/
 ---
 
 ## Q242576: Err: MSBackup Has Encountered a Serious Error in List Manager

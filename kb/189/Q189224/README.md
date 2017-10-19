@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189224: TCP/IP Printing Service Hangs If Started Before Spooler Service"
-permalink: kb/189/Q189224/
+permalink: /kb/189/Q189224/
 ---
 
 ## Q189224: TCP/IP Printing Service Hangs If Started Before Spooler Service

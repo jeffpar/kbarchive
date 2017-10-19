@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87207: PROFS: How VM Addresses Are Converted to MS Mail Addresses"
-permalink: kb/087/Q87207/
+permalink: /kb/087/Q87207/
 ---
 
 ## Q87207: PROFS: How VM Addresses Are Converted to MS Mail Addresses

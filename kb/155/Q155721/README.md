@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155721: FIX: Access Violation in RFX_Date If CTime Not Initialized"
-permalink: kb/155/Q155721/
+permalink: /kb/155/Q155721/
 ---
 
 ## Q155721: FIX: Access Violation in RFX_Date If CTime Not Initialized

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182983: SAMPLE: PLAYWAVE.EXE Demonstrates How To Play a Sound File"
-permalink: kb/182/Q182983/
+permalink: /kb/182/Q182983/
 ---
 
 ## Q182983: SAMPLE: PLAYWAVE.EXE Demonstrates How To Play a Sound File

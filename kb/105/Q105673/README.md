@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105673: Media Player: Err Msg: There Is an Undetectable Problem..."
-permalink: kb/105/Q105673/
+permalink: /kb/105/Q105673/
 ---
 
 ## Q105673: Media Player: Err Msg: There Is an Undetectable Problem...

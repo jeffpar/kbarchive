@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234922: Upgrading to IIS 5.0 Shows Home Page from Previous IIS Version"
-permalink: kb/234/Q234922/
+permalink: /kb/234/Q234922/
 ---
 
 ## Q234922: Upgrading to IIS 5.0 Shows Home Page from Previous IIS Version

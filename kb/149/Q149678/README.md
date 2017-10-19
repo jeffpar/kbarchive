@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149678: BUG: File Dates Do Not Change After a Rollback"
-permalink: kb/149/Q149678/
+permalink: /kb/149/Q149678/
 ---
 
 ## Q149678: BUG: File Dates Do Not Change After a Rollback

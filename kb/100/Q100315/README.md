@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100315: Steps Performed by the Emergency Repair Disk"
-permalink: kb/100/Q100315/
+permalink: /kb/100/Q100315/
 ---
 
 ## Q100315: Steps Performed by the Emergency Repair Disk

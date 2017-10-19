@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248661: IIS Does Not Start, Dependency Error Message"
-permalink: kb/248/Q248661/
+permalink: /kb/248/Q248661/
 ---
 
 ## Q248661: IIS Does Not Start, Dependency Error Message

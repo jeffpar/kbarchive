@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156276: Cmd.exe Does Not Support UNC Names as the Current Directory"
-permalink: kb/156/Q156276/
+permalink: /kb/156/Q156276/
 ---
 
 ## Q156276: Cmd.exe Does Not Support UNC Names as the Current Directory

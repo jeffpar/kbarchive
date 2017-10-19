@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154711: HP Scanners Not Detected by Deskscan Program"
-permalink: kb/154/Q154711/
+permalink: /kb/154/Q154711/
 ---
 
 ## Q154711: HP Scanners Not Detected by Deskscan Program

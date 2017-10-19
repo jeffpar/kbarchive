@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238871: PCI Resource Conflicts When You Resume from Suspend Mode"
-permalink: kb/238/Q238871/
+permalink: /kb/238/Q238871/
 ---
 
 ## Q238871: PCI Resource Conflicts When You Resume from Suspend Mode

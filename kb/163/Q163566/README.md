@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163566: PPT: Sample VB Code to Group Objects Together"
-permalink: kb/163/Q163566/
+permalink: /kb/163/Q163566/
 ---
 
 ## Q163566: PPT: Sample VB Code to Group Objects Together

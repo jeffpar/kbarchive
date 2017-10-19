@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159438: FP97: Page Fault When 1.1 Server Administrator Run on FP Web"
-permalink: kb/159/Q159438/
+permalink: /kb/159/Q159438/
 ---
 
 ## Q159438: FP97: Page Fault When 1.1 Server Administrator Run on FP Web

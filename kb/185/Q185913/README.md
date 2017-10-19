@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185913: SMS: MIF Attribute Case Change May Cause MIF to Be Rejected"
-permalink: kb/185/Q185913/
+permalink: /kb/185/Q185913/
 ---
 
 ## Q185913: SMS: MIF Attribute Case Change May Cause MIF to Be Rejected

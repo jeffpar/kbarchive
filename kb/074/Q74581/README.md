@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74581: General Information About MS-DOS 5.0 and Intel Boards"
-permalink: kb/074/Q74581/
+permalink: /kb/074/Q74581/
 ---
 
 ## Q74581: General Information About MS-DOS 5.0 and Intel Boards

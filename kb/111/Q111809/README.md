@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111809: How SROWS() and SCOLS() Behave in FoxPro for Macintosh"
-permalink: kb/111/Q111809/
+permalink: /kb/111/Q111809/
 ---
 
 ## Q111809: How SROWS() and SCOLS() Behave in FoxPro for Macintosh

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185446: TN3270 Server LUA Pool Use Should Load Balance Across Servers"
-permalink: kb/185/Q185446/
+permalink: /kb/185/Q185446/
 ---
 
 ## Q185446: TN3270 Server LUA Pool Use Should Load Balance Across Servers

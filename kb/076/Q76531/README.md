@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76531: Windows Err Msg: Cannot Connect Printers..."
-permalink: kb/076/Q76531/
+permalink: /kb/076/Q76531/
 ---
 
 ## Q76531: Windows Err Msg: Cannot Connect Printers...

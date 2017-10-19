@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156527: &quot;STOP: 0x00000093&quot; with Novell NetWare Client Services"
-permalink: kb/156/Q156527/
+permalink: /kb/156/Q156527/
 ---
 
 ## Q156527: &quot;STOP: 0x00000093&quot; with Novell NetWare Client Services

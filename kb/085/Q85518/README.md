@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85518: INFO: Correct Use of the SetFont() Function in MFC"
-permalink: kb/085/Q85518/
+permalink: /kb/085/Q85518/
 ---
 
 ## Q85518: INFO: Correct Use of the SetFont() Function in MFC

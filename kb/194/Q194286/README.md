@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194286: Virtual Globe 99: Cannot Print Map or Map Is Printed Very Slowly"
-permalink: kb/194/Q194286/
+permalink: /kb/194/Q194286/
 ---
 
 ## Q194286: Virtual Globe 99: Cannot Print Map or Map Is Printed Very Slowly

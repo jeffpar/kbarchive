@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105964: PC MAPI: Simple MAPI Common Technical Questions and Answers"
-permalink: kb/105/Q105964/
+permalink: /kb/105/Q105964/
 ---
 
 ## Q105964: PC MAPI: Simple MAPI Common Technical Questions and Answers

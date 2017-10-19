@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266786: Error Message Appears After Installation of pcAnywhere"
-permalink: kb/266/Q266786/
+permalink: /kb/266/Q266786/
 ---
 
 ## Q266786: Error Message Appears After Installation of pcAnywhere

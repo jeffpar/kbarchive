@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207671: HOW TO: Access Network Files from IIS Applications"
-permalink: kb/207/Q207671/
+permalink: /kb/207/Q207671/
 ---
 
 ## Q207671: HOW TO: Access Network Files from IIS Applications

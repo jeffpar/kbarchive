@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107995: NDIS2 Drivers Load but NDIS3 Drivers Don't--Errors 6200 &amp; 58"
-permalink: kb/107/Q107995/
+permalink: /kb/107/Q107995/
 ---
 
 ## Q107995: NDIS2 Drivers Load but NDIS3 Drivers Don't--Errors 6200 &amp; 58

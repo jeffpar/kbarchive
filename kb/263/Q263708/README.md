@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263708: SMS: Event ID 7016 with Remotely Possible or ControlIT Software"
-permalink: kb/263/Q263708/
+permalink: /kb/263/Q263708/
 ---
 
 ## Q263708: SMS: Event ID 7016 with Remotely Possible or ControlIT Software

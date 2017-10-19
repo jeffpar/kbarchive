@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306957: XADM: Mail Sent to Exchange Server with CDONTS ASP Not Delivered"
-permalink: kb/306/Q306957/
+permalink: /kb/306/Q306957/
 ---
 
 ## Q306957: XADM: Mail Sent to Exchange Server with CDONTS ASP Not Delivered

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77931: Sample Help File Demonstrates Win 3.1 Help Macros"
-permalink: kb/077/Q77931/
+permalink: /kb/077/Q77931/
 ---
 
 ## Q77931: Sample Help File Demonstrates Win 3.1 Help Macros

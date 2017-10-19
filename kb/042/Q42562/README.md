@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q42562: PRB: C4057 or C4133 Occur Unexpectedly"
-permalink: kb/042/Q42562/
+permalink: /kb/042/Q42562/
 ---
 
 ## Q42562: PRB: C4057 or C4133 Occur Unexpectedly

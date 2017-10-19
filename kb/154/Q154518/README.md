@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154518: FIX: MDI Child Windows Control Box Affected by Parent Toolbars"
-permalink: kb/154/Q154518/
+permalink: /kb/154/Q154518/
 ---
 
 ## Q154518: FIX: MDI Child Windows Control Box Affected by Parent Toolbars

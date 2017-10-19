@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178255: SNA Server May Fail to Log Event 624 and Create Snadump.log"
-permalink: kb/178/Q178255/
+permalink: /kb/178/Q178255/
 ---
 
 ## Q178255: SNA Server May Fail to Log Event 624 and Create Snadump.log

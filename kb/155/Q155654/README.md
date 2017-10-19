@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155654: Monster Trucks: Cannot Switch to Full Screen When Running Word"
-permalink: kb/155/Q155654/
+permalink: /kb/155/Q155654/
 ---
 
 ## Q155654: Monster Trucks: Cannot Switch to Full Screen When Running Word

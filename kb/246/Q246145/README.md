@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246145: Changes to the W32Time and TimeServ Utilities"
-permalink: kb/246/Q246145/
+permalink: /kb/246/Q246145/
 ---
 
 ## Q246145: Changes to the W32Time and TimeServ Utilities

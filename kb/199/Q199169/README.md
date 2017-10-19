@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199169: SMS: Secondary Site Has Status Messages From NetWare Components"
-permalink: kb/199/Q199169/
+permalink: /kb/199/Q199169/
 ---
 
 ## Q199169: SMS: Secondary Site Has Status Messages From NetWare Components

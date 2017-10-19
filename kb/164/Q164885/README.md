@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164885: Default Services Required for IIS Services"
-permalink: kb/164/Q164885/
+permalink: /kb/164/Q164885/
 ---
 
 ## Q164885: Default Services Required for IIS Services

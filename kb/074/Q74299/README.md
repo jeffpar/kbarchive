@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74299: INFO: Calculating The Logical Height and Point Size of a Font"
-permalink: kb/074/Q74299/
+permalink: /kb/074/Q74299/
 ---
 
 ## Q74299: INFO: Calculating The Logical Height and Point Size of a Font

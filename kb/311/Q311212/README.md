@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311212: SMS: Missing Advertisement Status Messages"
-permalink: kb/311/Q311212/
+permalink: /kb/311/Q311212/
 ---
 
 ## Q311212: SMS: Missing Advertisement Status Messages

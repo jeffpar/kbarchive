@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117762: PC MAPI: README: Messaging Applications Development Tools Disk"
-permalink: kb/117/Q117762/
+permalink: /kb/117/Q117762/
 ---
 
 ## Q117762: PC MAPI: README: Messaging Applications Development Tools Disk

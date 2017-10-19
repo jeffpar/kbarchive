@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142363: Xircom PE3 Network Adapter Not Loaded on Compaq Contura"
-permalink: kb/142/Q142363/
+permalink: /kb/142/Q142363/
 ---
 
 ## Q142363: Xircom PE3 Network Adapter Not Loaded on Compaq Contura

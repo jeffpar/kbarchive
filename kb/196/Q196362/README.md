@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196362: XFOR: AV in ExchINS with Very Long MessageID"
-permalink: kb/196/Q196362/
+permalink: /kb/196/Q196362/
 ---
 
 ## Q196362: XFOR: AV in ExchINS with Very Long MessageID

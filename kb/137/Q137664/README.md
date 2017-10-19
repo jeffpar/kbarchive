@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137664: BUG: Number of Lines on First Page of Listing File Incorrect"
-permalink: kb/137/Q137664/
+permalink: /kb/137/Q137664/
 ---
 
 ## Q137664: BUG: Number of Lines on First Page of Listing File Incorrect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178717: INF: Excel ODBC Driver and Text ODBC Driver Notes"
-permalink: kb/178/Q178717/
+permalink: /kb/178/Q178717/
 ---
 
 ## Q178717: INF: Excel ODBC Driver and Text ODBC Driver Notes

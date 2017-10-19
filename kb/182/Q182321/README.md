@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182321: XADM: Event ID 1025 Occurs When Search Folders Are Added To Back"
-permalink: kb/182/Q182321/
+permalink: /kb/182/Q182321/
 ---
 
 ## Q182321: XADM: Event ID 1025 Occurs When Search Folders Are Added To Back

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79959: Standard Mode with Windows on a Unisys (Sperry) Micro IT"
-permalink: kb/079/Q79959/
+permalink: /kb/079/Q79959/
 ---
 
 ## Q79959: Standard Mode with Windows on a Unisys (Sperry) Micro IT

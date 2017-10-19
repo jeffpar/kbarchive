@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195280: Visual J++ 6.0 Developer's Workshop Comments and Corrections"
-permalink: kb/195/Q195280/
+permalink: /kb/195/Q195280/
 ---
 
 ## Q195280: Visual J++ 6.0 Developer's Workshop Comments and Corrections

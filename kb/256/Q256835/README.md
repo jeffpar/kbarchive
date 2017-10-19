@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256835: MapPoint 2001: Finish Button Is Unvailable When You Import Data"
-permalink: kb/256/Q256835/
+permalink: /kb/256/Q256835/
 ---
 
 ## Q256835: MapPoint 2001: Finish Button Is Unvailable When You Import Data

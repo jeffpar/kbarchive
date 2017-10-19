@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66574: ASD: 747-400 Separate Engine Control"
-permalink: kb/066/Q66574/
+permalink: /kb/066/Q66574/
 ---
 
 ## Q66574: ASD: 747-400 Separate Engine Control

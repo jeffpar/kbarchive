@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276495: SMS: RC Disabled When Client Upgraded During Move"
-permalink: kb/276/Q276495/
+permalink: /kb/276/Q276495/
 ---
 
 ## Q276495: SMS: RC Disabled When Client Upgraded During Move

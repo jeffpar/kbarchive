@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120493: NWLink with Ethernet_II Frame Type Corrupt Packets"
-permalink: kb/120/Q120493/
+permalink: /kb/120/Q120493/
 ---
 
 ## Q120493: NWLink with Ethernet_II Frame Type Corrupt Packets

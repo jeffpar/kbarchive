@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97637: Using Memory Variable Files (.MEM) in FoxPro"
-permalink: kb/097/Q97637/
+permalink: /kb/097/Q97637/
 ---
 
 ## Q97637: Using Memory Variable Files (.MEM) in FoxPro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177794: XADM: Log Files Generated During Backup with Circular Logging"
-permalink: kb/177/Q177794/
+permalink: /kb/177/Q177794/
 ---
 
 ## Q177794: XADM: Log Files Generated During Backup with Circular Logging

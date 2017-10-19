@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155412: DBWEB: How to Install dbWeb 1.0 with Microsoft IIS"
-permalink: kb/155/Q155412/
+permalink: /kb/155/Q155412/
 ---
 
 ## Q155412: DBWEB: How to Install dbWeb 1.0 with Microsoft IIS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192920: SMS: Site Attachment Fails When Adding Custom Architectures"
-permalink: kb/192/Q192920/
+permalink: /kb/192/Q192920/
 ---
 
 ## Q192920: SMS: Site Attachment Fails When Adding Custom Architectures

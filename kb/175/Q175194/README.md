@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175194: Err Msg: FLTSIM98 Caused an Exception &#42;num&#42; in Module Panels.dll"
-permalink: kb/175/Q175194/
+permalink: /kb/175/Q175194/
 ---
 
 ## Q175194: Err Msg: FLTSIM98 Caused an Exception &#42;num&#42; in Module Panels.dll

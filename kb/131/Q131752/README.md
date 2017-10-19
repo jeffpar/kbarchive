@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131752: PRB: Form Variable Unknown After Running Form Inside App"
-permalink: kb/131/Q131752/
+permalink: /kb/131/Q131752/
 ---
 
 ## Q131752: PRB: Form Variable Unknown After Running Form Inside App

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239042: Invalid IP Address Entered Using HTML Web Administration Forms"
-permalink: kb/239/Q239042/
+permalink: /kb/239/Q239042/
 ---
 
 ## Q239042: Invalid IP Address Entered Using HTML Web Administration Forms

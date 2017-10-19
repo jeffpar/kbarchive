@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252371: Stop 0x00000050 in Win32k.sys When Changing Keyboard Layout"
-permalink: kb/252/Q252371/
+permalink: /kb/252/Q252371/
 ---
 
 ## Q252371: Stop 0x00000050 in Win32k.sys When Changing Keyboard Layout

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153503: BUG: Fonts are Corrupt or Extremely Large in Windows 95"
-permalink: kb/153/Q153503/
+permalink: /kb/153/Q153503/
 ---
 
 ## Q153503: BUG: Fonts are Corrupt or Extremely Large in Windows 95

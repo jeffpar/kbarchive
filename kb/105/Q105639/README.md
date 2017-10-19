@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105639: WD97: Formula in Table Includes Number from Heading Row"
-permalink: kb/105/Q105639/
+permalink: /kb/105/Q105639/
 ---
 
 ## Q105639: WD97: Formula in Table Includes Number from Heading Row

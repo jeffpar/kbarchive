@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61785: END.DATAGRAM Returning Undocumented Error"
-permalink: kb/061/Q61785/
+permalink: /kb/061/Q61785/
 ---
 
 ## Q61785: END.DATAGRAM Returning Undocumented Error

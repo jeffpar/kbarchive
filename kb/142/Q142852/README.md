@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142852: Unable to Install Digiboard PC 8e (8k) Adapter"
-permalink: kb/142/Q142852/
+permalink: /kb/142/Q142852/
 ---
 
 ## Q142852: Unable to Install Digiboard PC 8e (8k) Adapter

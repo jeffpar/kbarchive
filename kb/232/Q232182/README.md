@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232182: XCON: MTA Problems w/High Network Use on Low Bandwidth WAN Link"
-permalink: kb/232/Q232182/
+permalink: /kb/232/Q232182/
 ---
 
 ## Q232182: XCON: MTA Problems w/High Network Use on Low Bandwidth WAN Link

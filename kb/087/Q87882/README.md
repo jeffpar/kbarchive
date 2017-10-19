@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87882: Using SHARE.EXE and Sharing Violations with WinLogin"
-permalink: kb/087/Q87882/
+permalink: /kb/087/Q87882/
 ---
 
 ## Q87882: Using SHARE.EXE and Sharing Violations with WinLogin

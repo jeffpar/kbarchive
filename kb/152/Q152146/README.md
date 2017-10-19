@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152146: SMS Admin Query Operators Not Available in Localized Versions"
-permalink: kb/152/Q152146/
+permalink: /kb/152/Q152146/
 ---
 
 ## Q152146: SMS Admin Query Operators Not Available in Localized Versions

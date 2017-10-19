@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237804: BUG: Deploying Shadow Files to a Live Web Site Fails"
-permalink: kb/237/Q237804/
+permalink: /kb/237/Q237804/
 ---
 
 ## Q237804: BUG: Deploying Shadow Files to a Live Web Site Fails

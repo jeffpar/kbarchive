@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230338: Inbox and Internet Explorer Icons Disabled with Appsec.exe"
-permalink: kb/230/Q230338/
+permalink: /kb/230/Q230338/
 ---
 
 ## Q230338: Inbox and Internet Explorer Icons Disabled with Appsec.exe

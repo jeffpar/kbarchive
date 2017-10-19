@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232003: HOWTO: Determine the Version of DCOM 95/98 Using Visual Basic"
-permalink: kb/232/Q232003/
+permalink: /kb/232/Q232003/
 ---
 
 ## Q232003: HOWTO: Determine the Version of DCOM 95/98 Using Visual Basic

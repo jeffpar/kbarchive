@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136901: How to Determine the Firing Order of Form and Object Events"
-permalink: kb/136/Q136901/
+permalink: /kb/136/Q136901/
 ---
 
 ## Q136901: How to Determine the Firing Order of Form and Object Events

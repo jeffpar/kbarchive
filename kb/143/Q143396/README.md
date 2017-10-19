@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143396: Cannot Add Address Book Entries to Personal Address Book"
-permalink: kb/143/Q143396/
+permalink: /kb/143/Q143396/
 ---
 
 ## Q143396: Cannot Add Address Book Entries to Personal Address Book

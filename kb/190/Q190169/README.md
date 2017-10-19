@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190169: Zone: How to Change or Reset a Forgotten Password"
-permalink: kb/190/Q190169/
+permalink: /kb/190/Q190169/
 ---
 
 ## Q190169: Zone: How to Change or Reset a Forgotten Password

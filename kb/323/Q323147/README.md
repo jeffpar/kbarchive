@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323147: Applied Microsoft .NET Framework Programming Comments and Correc"
-permalink: kb/323/Q323147/
+permalink: /kb/323/Q323147/
 ---
 
 ## Q323147: Applied Microsoft .NET Framework Programming Comments and Correc

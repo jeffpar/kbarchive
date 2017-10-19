@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186498: Terminal Server Application Integration Information"
-permalink: kb/186/Q186498/
+permalink: /kb/186/Q186498/
 ---
 
 ## Q186498: Terminal Server Application Integration Information

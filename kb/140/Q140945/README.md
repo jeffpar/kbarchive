@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140945: XCON: MTA Error ID 251"
-permalink: kb/140/Q140945/
+permalink: /kb/140/Q140945/
 ---
 
 ## Q140945: XCON: MTA Error ID 251

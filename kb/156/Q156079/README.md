@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156079: STL Sample for the Generate Function"
-permalink: kb/156/Q156079/
+permalink: /kb/156/Q156079/
 ---
 
 ## Q156079: STL Sample for the Generate Function

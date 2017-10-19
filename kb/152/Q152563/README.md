@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152563: How to Back Up and Restore Files with Microsoft Backup"
-permalink: kb/152/Q152563/
+permalink: /kb/152/Q152563/
 ---
 
 ## Q152563: How to Back Up and Restore Files with Microsoft Backup

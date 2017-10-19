@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281155: PRB: HDN_XXX Notifications Incorrectly Generated for CListView"
-permalink: kb/281/Q281155/
+permalink: /kb/281/Q281155/
 ---
 
 ## Q281155: PRB: HDN_XXX Notifications Incorrectly Generated for CListView

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225127: No Remote Access Functionality with Same User and Domain Name"
-permalink: kb/225/Q225127/
+permalink: /kb/225/Q225127/
 ---
 
 ## Q225127: No Remote Access Functionality with Same User and Domain Name

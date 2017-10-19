@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256048: SMS: Error When Adding User/Group Name to Permitted Viewers List"
-permalink: kb/256/Q256048/
+permalink: /kb/256/Q256048/
 ---
 
 ## Q256048: SMS: Error When Adding User/Group Name to Permitted Viewers List

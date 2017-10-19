@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90231: Central Point Backup Confidence Test Fails in WFWG"
-permalink: kb/090/Q90231/
+permalink: /kb/090/Q90231/
 ---
 
 ## Q90231: Central Point Backup Confidence Test Fails in WFWG

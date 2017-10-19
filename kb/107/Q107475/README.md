@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107475: Total Number of Workgroups That Can Be Displayed"
-permalink: kb/107/Q107475/
+permalink: /kb/107/Q107475/
 ---
 
 ## Q107475: Total Number of Workgroups That Can Be Displayed

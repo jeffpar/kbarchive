@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142772: Setup Hangs on Compaq Laptop After Running Add Printer Wizard"
-permalink: kb/142/Q142772/
+permalink: /kb/142/Q142772/
 ---
 
 ## Q142772: Setup Hangs on Compaq Laptop After Running Add Printer Wizard

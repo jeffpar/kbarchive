@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184899: PRB: SelPrint Method Issues an EndDoc When Printing"
-permalink: kb/184/Q184899/
+permalink: /kb/184/Q184899/
 ---
 
 ## Q184899: PRB: SelPrint Method Issues an EndDoc When Printing

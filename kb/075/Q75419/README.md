@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75419: Create a Bootable Floppy Disk Without Running Setup"
-permalink: kb/075/Q75419/
+permalink: /kb/075/Q75419/
 ---
 
 ## Q75419: Create a Bootable Floppy Disk Without Running Setup

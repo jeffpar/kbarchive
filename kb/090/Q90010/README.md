@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90010: WD97: Use of ASK and FILLIN Fields and &#92;o Switch"
-permalink: kb/090/Q90010/
+permalink: /kb/090/Q90010/
 ---
 
 ## Q90010: WD97: Use of ASK and FILLIN Fields and &#92;o Switch

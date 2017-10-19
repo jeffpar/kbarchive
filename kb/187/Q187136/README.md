@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187136: NetDDE Error Messages During Logon"
-permalink: kb/187/Q187136/
+permalink: /kb/187/Q187136/
 ---
 
 ## Q187136: NetDDE Error Messages During Logon

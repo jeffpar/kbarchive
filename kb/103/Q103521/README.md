@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103521: DEVICEHIGH Uses UMB from Previous DEVICEHIGH Command"
-permalink: kb/103/Q103521/
+permalink: /kb/103/Q103521/
 ---
 
 ## Q103521: DEVICEHIGH Uses UMB from Previous DEVICEHIGH Command

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177638: BUG: Upgrading Exchange to 5.5 Causes Reference Problems in VB"
-permalink: kb/177/Q177638/
+permalink: /kb/177/Q177638/
 ---
 
 ## Q177638: BUG: Upgrading Exchange to 5.5 Causes Reference Problems in VB

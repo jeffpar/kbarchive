@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232349: XFOR:Meeting Updates Cause Multiple Meeting Requests w/GWC"
-permalink: kb/232/Q232349/
+permalink: /kb/232/Q232349/
 ---
 
 ## Q232349: XFOR:Meeting Updates Cause Multiple Meeting Requests w/GWC

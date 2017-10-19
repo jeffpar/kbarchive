@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190007: Location of Instructions on How to Debug ISAPI Extensions"
-permalink: kb/190/Q190007/
+permalink: /kb/190/Q190007/
 ---
 
 ## Q190007: Location of Instructions on How to Debug ISAPI Extensions

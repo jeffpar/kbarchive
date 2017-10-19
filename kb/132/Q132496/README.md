@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132496: Err Msg: Invalid VxD Dynamic Link Call to Device Number 0005"
-permalink: kb/132/Q132496/
+permalink: /kb/132/Q132496/
 ---
 
 ## Q132496: Err Msg: Invalid VxD Dynamic Link Call to Device Number 0005

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155848: PRB: ODBC Error When Using CRecordset Without Deriving From It"
-permalink: kb/155/Q155848/
+permalink: /kb/155/Q155848/
 ---
 
 ## Q155848: PRB: ODBC Error When Using CRecordset Without Deriving From It

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121226: Network Install Needs DRVLIB and Platform Directories Shared"
-permalink: kb/121/Q121226/
+permalink: /kb/121/Q121226/
 ---
 
 ## Q121226: Network Install Needs DRVLIB and Platform Directories Shared

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191698: BUG: View Parameter Cannot Be Removed From Parameters List"
-permalink: kb/191/Q191698/
+permalink: /kb/191/Q191698/
 ---
 
 ## Q191698: BUG: View Parameter Cannot Be Removed From Parameters List

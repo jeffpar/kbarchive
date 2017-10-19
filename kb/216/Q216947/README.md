@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216947: How Special Characters in the Name Field Effect Certificates"
-permalink: kb/216/Q216947/
+permalink: /kb/216/Q216947/
 ---
 
 ## Q216947: How Special Characters in the Name Field Effect Certificates

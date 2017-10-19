@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85593: BUG: Buttons Painted Incorrectly After Color Changed"
-permalink: kb/085/Q85593/
+permalink: /kb/085/Q85593/
 ---
 
 ## Q85593: BUG: Buttons Painted Incorrectly After Color Changed

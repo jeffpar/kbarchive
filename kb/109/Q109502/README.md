@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109502: README.WRI from Windows for Workgroups 3.11 (Part 1 of 4)"
-permalink: kb/109/Q109502/
+permalink: /kb/109/Q109502/
 ---
 
 ## Q109502: README.WRI from Windows for Workgroups 3.11 (Part 1 of 4)

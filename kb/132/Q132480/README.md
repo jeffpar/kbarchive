@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132480: BUG: Aliases in View Window Are Listed in Reverse Order"
-permalink: kb/132/Q132480/
+permalink: /kb/132/Q132480/
 ---
 
 ## Q132480: BUG: Aliases in View Window Are Listed in Reverse Order

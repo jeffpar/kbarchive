@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133170: Encarta: Incorrect Font is Displayed"
-permalink: kb/133/Q133170/
+permalink: /kb/133/Q133170/
 ---
 
 ## Q133170: Encarta: Incorrect Font is Displayed

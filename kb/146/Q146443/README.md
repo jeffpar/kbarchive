@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146443: PRB: Msmask32.ocx Does Not Work Properly in MFC Containers"
-permalink: kb/146/Q146443/
+permalink: /kb/146/Q146443/
 ---
 
 ## Q146443: PRB: Msmask32.ocx Does Not Work Properly in MFC Containers

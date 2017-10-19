@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261091: XADM: &quot;The Directory Is Busy. Wait a Few Minutes and Try Again&quot;"
-permalink: kb/261/Q261091/
+permalink: /kb/261/Q261091/
 ---
 
 ## Q261091: XADM: &quot;The Directory Is Busy. Wait a Few Minutes and Try Again&quot;

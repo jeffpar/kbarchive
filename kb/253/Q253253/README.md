@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253253: Proxy: WSP Clients Cannot Reach Remote Segments of the LAN"
-permalink: kb/253/Q253253/
+permalink: /kb/253/Q253253/
 ---
 
 ## Q253253: Proxy: WSP Clients Cannot Reach Remote Segments of the LAN

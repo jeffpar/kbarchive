@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173878: PRB: Field Mapping Lost When Project Moved to Different Drive"
-permalink: kb/173/Q173878/
+permalink: /kb/173/Q173878/
 ---
 
 ## Q173878: PRB: Field Mapping Lost When Project Moved to Different Drive

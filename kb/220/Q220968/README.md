@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220968: Microsoft Windows Language Versions Supported by DirectX 6.1"
-permalink: kb/220/Q220968/
+permalink: /kb/220/Q220968/
 ---
 
 ## Q220968: Microsoft Windows Language Versions Supported by DirectX 6.1

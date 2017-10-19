@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122335: FAX: Subject Line Limited to 40 Characters"
-permalink: kb/122/Q122335/
+permalink: /kb/122/Q122335/
 ---
 
 ## Q122335: FAX: Subject Line Limited to 40 Characters

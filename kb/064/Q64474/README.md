@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64474: Problems with HPPCL Driver Printing Boxes in Windows 3.00"
-permalink: kb/064/Q64474/
+permalink: /kb/064/Q64474/
 ---
 
 ## Q64474: Problems with HPPCL Driver Printing Boxes in Windows 3.00

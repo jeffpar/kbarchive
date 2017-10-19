@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67795: EXE File Checksum Incorrect If LINK /CO or /E Option Used"
-permalink: kb/067/Q67795/
+permalink: /kb/067/Q67795/
 ---
 
 ## Q67795: EXE File Checksum Incorrect If LINK /CO or /E Option Used

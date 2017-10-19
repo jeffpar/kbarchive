@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51625: Flight Simulator Version 4.00 Hangs on AT&amp;T 6300"
-permalink: kb/051/Q51625/
+permalink: /kb/051/Q51625/
 ---
 
 ## Q51625: Flight Simulator Version 4.00 Hangs on AT&amp;T 6300

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97166: How to Compile a FoxBASE+ Program"
-permalink: kb/097/Q97166/
+permalink: /kb/097/Q97166/
 ---
 
 ## Q97166: How to Compile a FoxBASE+ Program

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309138: Audio synchronization problems in French Interactive Training"
-permalink: kb/309/Q309138/
+permalink: /kb/309/Q309138/
 ---
 
 ## Q309138: Audio synchronization problems in French Interactive Training

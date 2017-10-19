@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179013: XADM: IS Stops in _mapises&#92;notifysrv.cxx During Shutdown"
-permalink: kb/179/Q179013/
+permalink: /kb/179/Q179013/
 ---
 
 ## Q179013: XADM: IS Stops in _mapises&#92;notifysrv.cxx During Shutdown

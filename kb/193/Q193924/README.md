@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193924: XFOR: Non-Delivery Report: Unknown Or Illegal User"
-permalink: kb/193/Q193924/
+permalink: /kb/193/Q193924/
 ---
 
 ## Q193924: XFOR: Non-Delivery Report: Unknown Or Illegal User

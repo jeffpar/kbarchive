@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122120: DriveSpace Err Msg After Installing over PC-DOS 6.1 or 6.3"
-permalink: kb/122/Q122120/
+permalink: /kb/122/Q122120/
 ---
 
 ## Q122120: DriveSpace Err Msg After Installing over PC-DOS 6.1 or 6.3

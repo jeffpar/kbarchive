@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266286: XCLN: IMAP Clients Unable to See Attachments"
-permalink: kb/266/Q266286/
+permalink: /kb/266/Q266286/
 ---
 
 ## Q266286: XCLN: IMAP Clients Unable to See Attachments

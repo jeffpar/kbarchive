@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192196: BUG: Unable to Tab Through Controls on UserControl"
-permalink: kb/192/Q192196/
+permalink: /kb/192/Q192196/
 ---
 
 ## Q192196: BUG: Unable to Tab Through Controls on UserControl

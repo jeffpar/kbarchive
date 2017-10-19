@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257170: SMS: Collection Evaluator May Not Manage Custom MIF Files"
-permalink: kb/257/Q257170/
+permalink: /kb/257/Q257170/
 ---
 
 ## Q257170: SMS: Collection Evaluator May Not Manage Custom MIF Files

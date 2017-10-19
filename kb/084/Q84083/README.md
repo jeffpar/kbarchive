@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84083: Extra Characters Print with WP for Windows &amp; OmniLaser Driver"
-permalink: kb/084/Q84083/
+permalink: /kb/084/Q84083/
 ---
 
 ## Q84083: Extra Characters Print with WP for Windows &amp; OmniLaser Driver

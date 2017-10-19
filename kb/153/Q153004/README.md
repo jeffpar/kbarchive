@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153004: PRB: Error C2065: '&#95;&#95;emul/&#95;&#95;emulu' : Undeclared Identifier"
-permalink: kb/153/Q153004/
+permalink: /kb/153/Q153004/
 ---
 
 ## Q153004: PRB: Error C2065: '&#95;&#95;emul/&#95;&#95;emulu' : Undeclared Identifier

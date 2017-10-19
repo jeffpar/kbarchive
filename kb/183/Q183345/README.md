@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183345: FIX: ORA-00000 Error Message with ASP, MTS, and Connection Pooli"
-permalink: kb/183/Q183345/
+permalink: /kb/183/Q183345/
 ---
 
 ## Q183345: FIX: ORA-00000 Error Message with ASP, MTS, and Connection Pooli

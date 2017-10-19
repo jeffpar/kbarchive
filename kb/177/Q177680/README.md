@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177680: With GSNW, WinNT Client Cannot See All Files on NetWare Server"
-permalink: kb/177/Q177680/
+permalink: /kb/177/Q177680/
 ---
 
 ## Q177680: With GSNW, WinNT Client Cannot See All Files on NetWare Server

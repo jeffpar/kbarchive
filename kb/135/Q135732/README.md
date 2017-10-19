@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135732: PC NTMMTA: Doc Err: No WINNT Directory Created at Setup"
-permalink: kb/135/Q135732/
+permalink: /kb/135/Q135732/
 ---
 
 ## Q135732: PC NTMMTA: Doc Err: No WINNT Directory Created at Setup

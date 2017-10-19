@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169683: XFOR: New IMS Routing Functionality in Exchange Server 5.0 SP2"
-permalink: kb/169/Q169683/
+permalink: /kb/169/Q169683/
 ---
 
 ## Q169683: XFOR: New IMS Routing Functionality in Exchange Server 5.0 SP2

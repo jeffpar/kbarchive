@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119366: Drawing Object Does Not Cover Text When Printing in Word 6.0a"
-permalink: kb/119/Q119366/
+permalink: /kb/119/Q119366/
 ---
 
 ## Q119366: Drawing Object Does Not Cover Text When Printing in Word 6.0a

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101229: How to Restore Windows NT Over an Existing Installation"
-permalink: kb/101/Q101229/
+permalink: /kb/101/Q101229/
 ---
 
 ## Q101229: How to Restore Windows NT Over an Existing Installation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100397: SoundBits: Sounds from Two Schemes Are Merged"
-permalink: kb/100/Q100397/
+permalink: /kb/100/Q100397/
 ---
 
 ## Q100397: SoundBits: Sounds from Two Schemes Are Merged

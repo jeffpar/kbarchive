@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91675: Inactive DOS Window After Exiting Non-Windows Application"
-permalink: kb/091/Q91675/
+permalink: /kb/091/Q91675/
 ---
 
 ## Q91675: Inactive DOS Window After Exiting Non-Windows Application

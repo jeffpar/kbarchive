@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274791: PRB: ON KEY LABEL ALT+F6 Doesn't Work In Windows 95, 98, or Me"
-permalink: kb/274/Q274791/
+permalink: /kb/274/Q274791/
 ---
 
 ## Q274791: PRB: ON KEY LABEL ALT+F6 Doesn't Work In Windows 95, 98, or Me

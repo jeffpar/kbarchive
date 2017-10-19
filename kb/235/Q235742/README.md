@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235742: SMS: Hardware Inventory  Raises Exception When Processing Class"
-permalink: kb/235/Q235742/
+permalink: /kb/235/Q235742/
 ---
 
 ## Q235742: SMS: Hardware Inventory  Raises Exception When Processing Class

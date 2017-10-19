@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90490: WFWG Err Msg: An Error Occurred While Trying to Reconnect..."
-permalink: kb/090/Q90490/
+permalink: /kb/090/Q90490/
 ---
 
 ## Q90490: WFWG Err Msg: An Error Occurred While Trying to Reconnect...

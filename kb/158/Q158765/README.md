@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158765: INFO: NODUALINTERFACE Entry is Placed in Registry by VFP 5.0"
-permalink: kb/158/Q158765/
+permalink: /kb/158/Q158765/
 ---
 
 ## Q158765: INFO: NODUALINTERFACE Entry is Placed in Registry by VFP 5.0

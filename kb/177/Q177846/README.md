@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177846: Kids Plus!: Desktop Themes Wallpaper Is Not Displayed"
-permalink: kb/177/Q177846/
+permalink: /kb/177/Q177846/
 ---
 
 ## Q177846: Kids Plus!: Desktop Themes Wallpaper Is Not Displayed

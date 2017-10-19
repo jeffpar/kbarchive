@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96539: FOXTOOLS.FLL Calls to GetDC, GetDeviceCaps and ReleaseDC"
-permalink: kb/096/Q96539/
+permalink: /kb/096/Q96539/
 ---
 
 ## Q96539: FOXTOOLS.FLL Calls to GetDC, GetDeviceCaps and ReleaseDC

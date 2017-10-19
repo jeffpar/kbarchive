@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182311: WD97: How to Change Delivery or Return Address Formatting"
-permalink: kb/182/Q182311/
+permalink: /kb/182/Q182311/
 ---
 
 ## Q182311: WD97: How to Change Delivery or Return Address Formatting

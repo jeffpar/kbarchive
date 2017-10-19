@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112614: WFWG: Add/Remove Windows Components Option Unavailable"
-permalink: kb/112/Q112614/
+permalink: /kb/112/Q112614/
 ---
 
 ## Q112614: WFWG: Add/Remove Windows Components Option Unavailable

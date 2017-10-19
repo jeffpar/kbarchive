@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287425: SMS: Successfully Using NetworkLoginProfile Class in Sms_def.mof"
-permalink: kb/287/Q287425/
+permalink: /kb/287/Q287425/
 ---
 
 ## Q287425: SMS: Successfully Using NetworkLoginProfile Class in Sms_def.mof

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163413: Upgrade to Windows NT 4.0 May Not Keep All Registry Settings"
-permalink: kb/163/Q163413/
+permalink: /kb/163/Q163413/
 ---
 
 ## Q163413: Upgrade to Windows NT 4.0 May Not Keep All Registry Settings

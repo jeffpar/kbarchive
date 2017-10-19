@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240112: NBA 2000: Pointer Is Frozen When Startup Screen Is Displayed"
-permalink: kb/240/Q240112/
+permalink: /kb/240/Q240112/
 ---
 
 ## Q240112: NBA 2000: Pointer Is Frozen When Startup Screen Is Displayed

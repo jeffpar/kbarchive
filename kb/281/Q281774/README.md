@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281774: Install Eicon S-51 Link Service in Windows 2000"
-permalink: kb/281/Q281774/
+permalink: /kb/281/Q281774/
 ---
 
 ## Q281774: Install Eicon S-51 Link Service in Windows 2000

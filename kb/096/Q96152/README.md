@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96152: Setup Adds MS-DOS Directory to Every PATH Statement"
-permalink: kb/096/Q96152/
+permalink: /kb/096/Q96152/
 ---
 
 ## Q96152: Setup Adds MS-DOS Directory to Every PATH Statement

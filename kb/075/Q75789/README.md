@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75789: Setup Hangs on Uninstall Disk with JRAM Board Installed"
-permalink: kb/075/Q75789/
+permalink: /kb/075/Q75789/
 ---
 
 ## Q75789: Setup Hangs on Uninstall Disk with JRAM Board Installed

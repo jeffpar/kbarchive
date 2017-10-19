@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122794: FTP Command ! Does Not Work with TCP/IP-32"
-permalink: kb/122/Q122794/
+permalink: /kb/122/Q122794/
 ---
 
 ## Q122794: FTP Command ! Does Not Work with TCP/IP-32

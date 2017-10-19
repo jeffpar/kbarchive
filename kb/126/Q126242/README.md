@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126242: PC Win: New Mail Interval Does Not Accept White Space"
-permalink: kb/126/Q126242/
+permalink: /kb/126/Q126242/
 ---
 
 ## Q126242: PC Win: New Mail Interval Does Not Accept White Space

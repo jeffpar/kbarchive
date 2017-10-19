@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194695: How to Configure Host Security for a Multi-Domain Environment"
-permalink: kb/194/Q194695/
+permalink: /kb/194/Q194695/
 ---
 
 ## Q194695: How to Configure Host Security for a Multi-Domain Environment

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171006: XCLN: ErrMsg When Attemtping to Import Another Schedule File"
-permalink: kb/171/Q171006/
+permalink: /kb/171/Q171006/
 ---
 
 ## Q171006: XCLN: ErrMsg When Attemtping to Import Another Schedule File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77216: Unable to Edit Shell Program with 23 Character Title"
-permalink: kb/077/Q77216/
+permalink: /kb/077/Q77216/
 ---
 
 ## Q77216: Unable to Edit Shell Program with 23 Character Title

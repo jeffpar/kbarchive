@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149435: AST Bravo LC 4/100 Requires BIOS Version 1.02"
-permalink: kb/149/Q149435/
+permalink: /kb/149/Q149435/
 ---
 
 ## Q149435: AST Bravo LC 4/100 Requires BIOS Version 1.02

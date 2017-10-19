@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49868: Microsoft International Subsidiary Technical Support"
-permalink: kb/049/Q49868/
+permalink: /kb/049/Q49868/
 ---
 
 ## Q49868: Microsoft International Subsidiary Technical Support

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84118: TrueType Fonts Not Printing Correctly on Panasonic KX-P4450i"
-permalink: kb/084/Q84118/
+permalink: /kb/084/Q84118/
 ---
 
 ## Q84118: TrueType Fonts Not Printing Correctly on Panasonic KX-P4450i

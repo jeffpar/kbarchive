@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127840: Info Provided by the Version() Function in Visual FoxPro"
-permalink: kb/127/Q127840/
+permalink: /kb/127/Q127840/
 ---
 
 ## Q127840: Info Provided by the Version() Function in Visual FoxPro

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173494: Cannot Send Messages Using WinPopup"
-permalink: kb/173/Q173494/
+permalink: /kb/173/Q173494/
 ---
 
 ## Q173494: Cannot Send Messages Using WinPopup

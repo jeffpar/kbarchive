@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156588: STOP: 3COM El59x.sys Driver May Cause a STOP 0x0000000A"
-permalink: kb/156/Q156588/
+permalink: /kb/156/Q156588/
 ---
 
 ## Q156588: STOP: 3COM El59x.sys Driver May Cause a STOP 0x0000000A

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172773: Problems Using LS/120 Floppy Disk Drive with Windows NT Setup"
-permalink: kb/172/Q172773/
+permalink: /kb/172/Q172773/
 ---
 
 ## Q172773: Problems Using LS/120 Floppy Disk Drive with Windows NT Setup

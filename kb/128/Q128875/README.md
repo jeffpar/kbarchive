@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128875: UT1x: No Referential Integrity Triggers Using Upsizing Tools"
-permalink: kb/128/Q128875/
+permalink: /kb/128/Q128875/
 ---
 
 ## Q128875: UT1x: No Referential Integrity Triggers Using Upsizing Tools

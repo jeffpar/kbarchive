@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170392: PRB: SYS(17) Function Returns Incorrect Processor Type"
-permalink: kb/170/Q170392/
+permalink: /kb/170/Q170392/
 ---
 
 ## Q170392: PRB: SYS(17) Function Returns Incorrect Processor Type

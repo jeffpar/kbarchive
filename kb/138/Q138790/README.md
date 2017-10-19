@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138790: Envelopes Printed Incorrectly on HP DeskJet 540 Printer"
-permalink: kb/138/Q138790/
+permalink: /kb/138/Q138790/
 ---
 
 ## Q138790: Envelopes Printed Incorrectly on HP DeskJet 540 Printer

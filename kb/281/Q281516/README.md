@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281516: APPC/CPI-C Applications Cannot Get APPC Sessions"
-permalink: kb/281/Q281516/
+permalink: /kb/281/Q281516/
 ---
 
 ## Q281516: APPC/CPI-C Applications Cannot Get APPC Sessions

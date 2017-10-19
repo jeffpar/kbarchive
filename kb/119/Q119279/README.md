@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119279: FIX: Include Files May Be Incorrectly Added as a Dependency"
-permalink: kb/119/Q119279/
+permalink: /kb/119/Q119279/
 ---
 
 ## Q119279: FIX: Include Files May Be Incorrectly Added as a Dependency

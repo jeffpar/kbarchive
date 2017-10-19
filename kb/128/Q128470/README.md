@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128470: PROFS: Err Msg: PWABFUP Unable to Spool PUNCH to MSCAL..."
-permalink: kb/128/Q128470/
+permalink: /kb/128/Q128470/
 ---
 
 ## Q128470: PROFS: Err Msg: PWABFUP Unable to Spool PUNCH to MSCAL...

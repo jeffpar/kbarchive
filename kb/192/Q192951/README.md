@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192951: HOWTO: Install an ActiveX Control for Design-Time Use"
-permalink: kb/192/Q192951/
+permalink: /kb/192/Q192951/
 ---
 
 ## Q192951: HOWTO: Install an ActiveX Control for Design-Time Use

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114484: WD97: Delivery Point Bar Code Option Unavailable Envelope Merge"
-permalink: kb/114/Q114484/
+permalink: /kb/114/Q114484/
 ---
 
 ## Q114484: WD97: Delivery Point Bar Code Option Unavailable Envelope Merge

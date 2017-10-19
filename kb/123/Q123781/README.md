@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123781: BUG: Additional DLLs Invalid in Debug Project Settings"
-permalink: kb/123/Q123781/
+permalink: /kb/123/Q123781/
 ---
 
 ## Q123781: BUG: Additional DLLs Invalid in Debug Project Settings

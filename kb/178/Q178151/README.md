@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178151: Err Msg: This Version of Windows Does Not Run on MS-DOS 7.00"
-permalink: kb/178/Q178151/
+permalink: /kb/178/Q178151/
 ---
 
 ## Q178151: Err Msg: This Version of Windows Does Not Run on MS-DOS 7.00

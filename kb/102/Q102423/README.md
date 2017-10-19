@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102423: Mac Form: Adding Hidden Text Feature to Fields"
-permalink: kb/102/Q102423/
+permalink: /kb/102/Q102423/
 ---
 
 ## Q102423: Mac Form: Adding Hidden Text Feature to Fields

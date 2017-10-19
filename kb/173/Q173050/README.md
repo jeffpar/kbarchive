@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173050: ODBCTXT.EXE: ODBC API Declare Statements Text File"
-permalink: kb/173/Q173050/
+permalink: /kb/173/Q173050/
 ---
 
 ## Q173050: ODBCTXT.EXE: ODBC API Declare Statements Text File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192672: SMS: Network Monitor: &quot;Bad Month Format&quot;"
-permalink: kb/192/Q192672/
+permalink: /kb/192/Q192672/
 ---
 
 ## Q192672: SMS: Network Monitor: &quot;Bad Month Format&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131197: PRB: Can't Edit/Select Converted Screen Objects by Clicking"
-permalink: kb/131/Q131197/
+permalink: /kb/131/Q131197/
 ---
 
 ## Q131197: PRB: Can't Edit/Select Converted Screen Objects by Clicking

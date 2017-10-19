@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136921: Guidelines for Creating Unique and Sequential Keys"
-permalink: kb/136/Q136921/
+permalink: /kb/136/Q136921/
 ---
 
 ## Q136921: Guidelines for Creating Unique and Sequential Keys

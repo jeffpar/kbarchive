@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137266: Problems Reinstalling Microsoft Plus!"
-permalink: kb/137/Q137266/
+permalink: /kb/137/Q137266/
 ---
 
 ## Q137266: Problems Reinstalling Microsoft Plus!

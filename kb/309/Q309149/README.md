@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309149: XADM: Exchange Server 5.5 Post-SP4 JET Fixes Available"
-permalink: kb/309/Q309149/
+permalink: /kb/309/Q309149/
 ---
 
 ## Q309149: XADM: Exchange Server 5.5 Post-SP4 JET Fixes Available

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105060: Cannot Access Floppy Disk with MS-DOS-Based Lotus 1-2-3"
-permalink: kb/105/Q105060/
+permalink: /kb/105/Q105060/
 ---
 
 ## Q105060: Cannot Access Floppy Disk with MS-DOS-Based Lotus 1-2-3

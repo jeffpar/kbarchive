@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254539: INFO: HLP Files Not Supported on 64-Bit Windows"
-permalink: kb/254/Q254539/
+permalink: /kb/254/Q254539/
 ---
 
 ## Q254539: INFO: HLP Files Not Supported on 64-Bit Windows

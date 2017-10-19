@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242106: XIMS: Chat Transcription Logs Created in Incorrect Location"
-permalink: kb/242/Q242106/
+permalink: /kb/242/Q242106/
 ---
 
 ## Q242106: XIMS: Chat Transcription Logs Created in Incorrect Location

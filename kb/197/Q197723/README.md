@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197723: XFOR: Understanding Message Flow for New GroupWise Connector"
-permalink: kb/197/Q197723/
+permalink: /kb/197/Q197723/
 ---
 
 ## Q197723: XFOR: Understanding Message Flow for New GroupWise Connector

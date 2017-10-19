@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129659: Wrong Port for PCMCIA Modem Shown in Modem Properties"
-permalink: kb/129/Q129659/
+permalink: /kb/129/Q129659/
 ---
 
 ## Q129659: Wrong Port for PCMCIA Modem Shown in Modem Properties

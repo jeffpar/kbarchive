@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130937: Manual Installation of INVWIN32 on Windows NT Workstation"
-permalink: kb/130/Q130937/
+permalink: /kb/130/Q130937/
 ---
 
 ## Q130937: Manual Installation of INVWIN32 on Windows NT Workstation

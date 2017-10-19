@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266051: XADM: Microsoft Exchange Server Performance Optimizer WP"
-permalink: kb/266/Q266051/
+permalink: /kb/266/Q266051/
 ---
 
 ## Q266051: XADM: Microsoft Exchange Server Performance Optimizer WP

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126856: PC Win: Windows Client Loses Access to MMF on LMX Server"
-permalink: kb/126/Q126856/
+permalink: /kb/126/Q126856/
 ---
 
 ## Q126856: PC Win: Windows Client Loses Access to MMF on LMX Server

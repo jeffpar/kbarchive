@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265394: XFOR:Windows NNTP Service Does Not Support DefaultLogonDomain"
-permalink: kb/265/Q265394/
+permalink: /kb/265/Q265394/
 ---
 
 ## Q265394: XFOR:Windows NNTP Service Does Not Support DefaultLogonDomain

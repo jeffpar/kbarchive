@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309637: Bicycle Casino 1.5: Minimum System Requirements"
-permalink: kb/309/Q309637/
+permalink: /kb/309/Q309637/
 ---
 
 ## Q309637: Bicycle Casino 1.5: Minimum System Requirements

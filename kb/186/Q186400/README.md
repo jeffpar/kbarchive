@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186400: SMS: Msapps32.pdf Does Not Support Windows NT Clients"
-permalink: kb/186/Q186400/
+permalink: /kb/186/Q186400/
 ---
 
 ## Q186400: SMS: Msapps32.pdf Does Not Support Windows NT Clients

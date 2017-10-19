@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150037: IIS Fails to Install Some Components"
-permalink: kb/150/Q150037/
+permalink: /kb/150/Q150037/
 ---
 
 ## Q150037: IIS Fails to Install Some Components

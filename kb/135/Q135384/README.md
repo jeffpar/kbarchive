@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135384: FIX: Unbalanced Parentheses in IF Condition Not Seen by Parser"
-permalink: kb/135/Q135384/
+permalink: /kb/135/Q135384/
 ---
 
 ## Q135384: FIX: Unbalanced Parentheses in IF Condition Not Seen by Parser

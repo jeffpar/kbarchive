@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238453: Data in Route Pointer Field Can Bypass Source Routing Disable"
-permalink: kb/238/Q238453/
+permalink: /kb/238/Q238453/
 ---
 
 ## Q238453: Data in Route Pointer Field Can Bypass Source Routing Disable

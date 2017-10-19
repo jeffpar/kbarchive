@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202840: Client Connected to Ethernet Switch May Receive Logon Errors"
-permalink: kb/202/Q202840/
+permalink: /kb/202/Q202840/
 ---
 
 ## Q202840: Client Connected to Ethernet Switch May Receive Logon Errors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231330: IBM Client Access Causes STOP 0x0000001e"
-permalink: kb/231/Q231330/
+permalink: /kb/231/Q231330/
 ---
 
 ## Q231330: IBM Client Access Causes STOP 0x0000001e

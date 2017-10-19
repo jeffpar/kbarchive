@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126699: Wright: Cannot Use ALT+TAB in Modeling Wright Module"
-permalink: kb/126/Q126699/
+permalink: /kb/126/Q126699/
 ---
 
 ## Q126699: Wright: Cannot Use ALT+TAB in Modeling Wright Module

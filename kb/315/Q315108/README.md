@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315108: Combat Flight Simulator 2: Game Appears to Stop Responding"
-permalink: kb/315/Q315108/
+permalink: /kb/315/Q315108/
 ---
 
 ## Q315108: Combat Flight Simulator 2: Game Appears to Stop Responding

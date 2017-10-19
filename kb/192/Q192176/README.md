@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192176: XADM: Restoring a Private IS Only with Arcserve6.x"
-permalink: kb/192/Q192176/
+permalink: /kb/192/Q192176/
 ---
 
 ## Q192176: XADM: Restoring a Private IS Only with Arcserve6.x

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62061: Format of Import Network Drivers Disk in OS/2 LAN Man 2.0"
-permalink: kb/062/Q62061/
+permalink: /kb/062/Q62061/
 ---
 
 ## Q62061: Format of Import Network Drivers Disk in OS/2 LAN Man 2.0

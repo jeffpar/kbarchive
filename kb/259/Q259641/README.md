@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259641: Wang Image Edit Control May Not Work During Copy and Paste Opera"
-permalink: kb/259/Q259641/
+permalink: /kb/259/Q259641/
 ---
 
 ## Q259641: Wang Image Edit Control May Not Work During Copy and Paste Opera

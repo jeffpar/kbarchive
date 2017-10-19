@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131366: Event Error 5712 with Status Access Denied"
-permalink: kb/131/Q131366/
+permalink: /kb/131/Q131366/
 ---
 
 ## Q131366: Event Error 5712 with Status Access Denied

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257819: HOWTO: Use ADO with Excel Data from Visual Basic or VBA"
-permalink: kb/257/Q257819/
+permalink: /kb/257/Q257819/
 ---
 
 ## Q257819: HOWTO: Use ADO with Excel Data from Visual Basic or VBA

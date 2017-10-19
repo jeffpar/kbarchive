@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297681: Err Msg: This Security Certificate Was Issued by a Company..."
-permalink: kb/297/Q297681/
+permalink: /kb/297/Q297681/
 ---
 
 ## Q297681: Err Msg: This Security Certificate Was Issued by a Company...

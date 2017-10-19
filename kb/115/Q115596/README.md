@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115596: Problems with TrueType Fonts and Diamond Video Drivers"
-permalink: kb/115/Q115596/
+permalink: /kb/115/Q115596/
 ---
 
 ## Q115596: Problems with TrueType Fonts and Diamond Video Drivers

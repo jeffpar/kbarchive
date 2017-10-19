@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191594: XCON: Site Connector Not Usable Through a Firewall"
-permalink: kb/191/Q191594/
+permalink: /kb/191/Q191594/
 ---
 
 ## Q191594: XCON: Site Connector Not Usable Through a Firewall

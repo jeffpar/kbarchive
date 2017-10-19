@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115441: X400: Cursor Disappears When Tabbing From Facilities to Help"
-permalink: kb/115/Q115441/
+permalink: /kb/115/Q115441/
 ---
 
 ## Q115441: X400: Cursor Disappears When Tabbing From Facilities to Help

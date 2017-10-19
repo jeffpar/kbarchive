@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198882: Script Debugger Is Not Unicode Compatible"
-permalink: kb/198/Q198882/
+permalink: /kb/198/Q198882/
 ---
 
 ## Q198882: Script Debugger Is Not Unicode Compatible

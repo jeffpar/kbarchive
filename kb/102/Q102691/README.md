@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102691: PRB: LNK2133 Size Mismatch on Common Block During Link"
-permalink: kb/102/Q102691/
+permalink: /kb/102/Q102691/
 ---
 
 ## Q102691: PRB: LNK2133 Size Mismatch on Common Block During Link

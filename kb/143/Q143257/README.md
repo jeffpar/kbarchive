@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143257: Microsoft Plus! Requires Minimal Space on Windows 95 Drive"
-permalink: kb/143/Q143257/
+permalink: /kb/143/Q143257/
 ---
 
 ## Q143257: Microsoft Plus! Requires Minimal Space on Windows 95 Drive

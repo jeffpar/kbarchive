@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168925: Err Msg: The WIN16 Subsystem Was Unable to Enter Protected Mode"
-permalink: kb/168/Q168925/
+permalink: /kb/168/Q168925/
 ---
 
 ## Q168925: Err Msg: The WIN16 Subsystem Was Unable to Enter Protected Mode

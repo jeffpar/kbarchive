@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92537: SAMPLE: Windows Application Produces Stack Trace"
-permalink: kb/092/Q92537/
+permalink: /kb/092/Q92537/
 ---
 
 ## Q92537: SAMPLE: Windows Application Produces Stack Trace

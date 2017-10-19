@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171938: Bookshelf 98: No Ambient Music in 360 Degree Views"
-permalink: kb/171/Q171938/
+permalink: /kb/171/Q171938/
 ---
 
 ## Q171938: Bookshelf 98: No Ambient Music in 360 Degree Views

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304375: XCCC: Outlook Users Can't Log on in Address Book View Config"
-permalink: kb/304/Q304375/
+permalink: /kb/304/Q304375/
 ---
 
 ## Q304375: XCCC: Outlook Users Can't Log on in Address Book View Config

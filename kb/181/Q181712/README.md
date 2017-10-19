@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181712: XCLN: How to Use the Universal Client Setup (Ucsetup.exe)"
-permalink: kb/181/Q181712/
+permalink: /kb/181/Q181712/
 ---
 
 ## Q181712: XCLN: How to Use the Universal Client Setup (Ucsetup.exe)

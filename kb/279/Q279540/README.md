@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279540: MSN Companion Compaq IA-2 err msg &quot;Missing operating system&quot;"
-permalink: kb/279/Q279540/
+permalink: /kb/279/Q279540/
 ---
 
 ## Q279540: MSN Companion Compaq IA-2 err msg &quot;Missing operating system&quot;

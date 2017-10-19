@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85707: Changing the Default COM Port and Baud Rate in Terminal"
-permalink: kb/085/Q85707/
+permalink: /kb/085/Q85707/
 ---
 
 ## Q85707: Changing the Default COM Port and Baud Rate in Terminal

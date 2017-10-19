@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103463: PC OS2: F1 Does Not Display Help When Menu Name Is Selected"
-permalink: kb/103/Q103463/
+permalink: /kb/103/Q103463/
 ---
 
 ## Q103463: PC OS2: F1 Does Not Display Help When Menu Name Is Selected

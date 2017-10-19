@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141741: Macintosh Dinosaurs 1.0: Files Installed During Installation"
-permalink: kb/141/Q141741/
+permalink: /kb/141/Q141741/
 ---
 
 ## Q141741: Macintosh Dinosaurs 1.0: Files Installed During Installation

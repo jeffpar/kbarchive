@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179338: WD97: Programmatically Unlinking Field Makes Word Stop"
-permalink: kb/179/Q179338/
+permalink: /kb/179/Q179338/
 ---
 
 ## Q179338: WD97: Programmatically Unlinking Field Makes Word Stop

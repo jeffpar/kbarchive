@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156483: Support for Diamond Stealth64 Graphics 2001 Series Video Card"
-permalink: kb/156/Q156483/
+permalink: /kb/156/Q156483/
 ---
 
 ## Q156483: Support for Diamond Stealth64 Graphics 2001 Series Video Card

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123322: No Access to COM Ports with SuperVoice 2.0b &amp; RHICOMM.DRV"
-permalink: kb/123/Q123322/
+permalink: /kb/123/Q123322/
 ---
 
 ## Q123322: No Access to COM Ports with SuperVoice 2.0b &amp; RHICOMM.DRV

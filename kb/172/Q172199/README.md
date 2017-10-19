@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172199: HOWTO: Optimize Queries in Visual Basic"
-permalink: kb/172/Q172199/
+permalink: /kb/172/Q172199/
 ---
 
 ## Q172199: HOWTO: Optimize Queries in Visual Basic

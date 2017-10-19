@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311055: Programs That Call DsGetDcName() on the SRP May Not Work"
-permalink: kb/311/Q311055/
+permalink: /kb/311/Q311055/
 ---
 
 ## Q311055: Programs That Call DsGetDcName() on the SRP May Not Work

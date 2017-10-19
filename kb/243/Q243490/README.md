@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243490: Asheron's Call: Other Players Cannot See Monster on Your Screen"
-permalink: kb/243/Q243490/
+permalink: /kb/243/Q243490/
 ---
 
 ## Q243490: Asheron's Call: Other Players Cannot See Monster on Your Screen

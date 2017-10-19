@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138051: Undo Command in Paint Does Not Restore Text"
-permalink: kb/138/Q138051/
+permalink: /kb/138/Q138051/
 ---
 
 ## Q138051: Undo Command in Paint Does Not Restore Text

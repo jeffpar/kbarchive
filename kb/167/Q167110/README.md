@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167110: WinNT Err. Msg: Stop 0x1E in Fpnwsrv.sys"
-permalink: kb/167/Q167110/
+permalink: /kb/167/Q167110/
 ---
 
 ## Q167110: WinNT Err. Msg: Stop 0x1E in Fpnwsrv.sys

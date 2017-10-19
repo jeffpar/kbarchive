@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100351: Steps to Complete NPREP on a 3Com 3Server"
-permalink: kb/100/Q100351/
+permalink: /kb/100/Q100351/
 ---
 
 ## Q100351: Steps to Complete NPREP on a 3Com 3Server

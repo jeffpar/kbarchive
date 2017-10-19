@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89902: MIDI Sequencing Software Issues with Windows Sound System"
-permalink: kb/089/Q89902/
+permalink: /kb/089/Q89902/
 ---
 
 ## Q89902: MIDI Sequencing Software Issues with Windows Sound System

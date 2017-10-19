@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107869: CD Golf Error: There Is No Driver Installed on Your System"
-permalink: kb/107/Q107869/
+permalink: /kb/107/Q107869/
 ---
 
 ## Q107869: CD Golf Error: There Is No Driver Installed on Your System

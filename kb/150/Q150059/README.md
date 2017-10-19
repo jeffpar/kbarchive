@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150059: Cannot Perform a NET VIEW Across RAS to Windows 95 Client"
-permalink: kb/150/Q150059/
+permalink: /kb/150/Q150059/
 ---
 
 ## Q150059: Cannot Perform a NET VIEW Across RAS to Windows 95 Client

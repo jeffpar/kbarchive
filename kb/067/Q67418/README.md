@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67418: PIF Files Created by Windows 3.0 Setup S to Z"
-permalink: kb/067/Q67418/
+permalink: /kb/067/Q67418/
 ---
 
 ## Q67418: PIF Files Created by Windows 3.0 Setup S to Z

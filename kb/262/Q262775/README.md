@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262775: Installing MSN 5.1 prompts the user to call technical support if"
-permalink: kb/262/Q262775/
+permalink: /kb/262/Q262775/
 ---
 
 ## Q262775: Installing MSN 5.1 prompts the user to call technical support if

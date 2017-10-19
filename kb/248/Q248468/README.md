@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248468: Installing Microsoft SNA Server Data Providers for TCP/IP Only"
-permalink: kb/248/Q248468/
+permalink: /kb/248/Q248468/
 ---
 
 ## Q248468: Installing Microsoft SNA Server Data Providers for TCP/IP Only

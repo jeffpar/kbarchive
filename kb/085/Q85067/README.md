@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85067: Data World NB325 Cannot Run MS-DOS Prompt in Enhanced Mode"
-permalink: kb/085/Q85067/
+permalink: /kb/085/Q85067/
 ---
 
 ## Q85067: Data World NB325 Cannot Run MS-DOS Prompt in Enhanced Mode

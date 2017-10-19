@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59100: Mac Srv: Case Sensitivity of Sign-In Username and Password"
-permalink: kb/059/Q59100/
+permalink: /kb/059/Q59100/
 ---
 
 ## Q59100: Mac Srv: Case Sensitivity of Sign-In Username and Password

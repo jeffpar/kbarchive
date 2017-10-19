@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139588: SMS Views Created By SMSVIEW Have Incorrect Results"
-permalink: kb/139/Q139588/
+permalink: /kb/139/Q139588/
 ---
 
 ## Q139588: SMS Views Created By SMSVIEW Have Incorrect Results

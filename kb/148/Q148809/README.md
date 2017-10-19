@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148809: PC NTMMTA: Mail Service Manager Monitor Flashes &amp; Disappears"
-permalink: kb/148/Q148809/
+permalink: /kb/148/Q148809/
 ---
 
 ## Q148809: PC NTMMTA: Mail Service Manager Monitor Flashes &amp; Disappears

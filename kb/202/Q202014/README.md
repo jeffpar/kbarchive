@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202014: Placing HTTPEXT.DLL in the &#42; Scriptmaps Causes 500 Error"
-permalink: kb/202/Q202014/
+permalink: /kb/202/Q202014/
 ---
 
 ## Q202014: Placing HTTPEXT.DLL in the &#42; Scriptmaps Causes 500 Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170815: WD97: AutoCorrect Entry Formatted with Capital Letter"
-permalink: kb/170/Q170815/
+permalink: /kb/170/Q170815/
 ---
 
 ## Q170815: WD97: AutoCorrect Entry Formatted with Capital Letter

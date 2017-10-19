@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128995: PRB: Unrecognized Command Verb Error When Instantiate Object"
-permalink: kb/128/Q128995/
+permalink: /kb/128/Q128995/
 ---
 
 ## Q128995: PRB: Unrecognized Command Verb Error When Instantiate Object

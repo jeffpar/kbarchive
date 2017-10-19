@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119828: PC WSPlus: Standalone Install Login Name Shouldn't Have Spaces"
-permalink: kb/119/Q119828/
+permalink: /kb/119/Q119828/
 ---
 
 ## Q119828: PC WSPlus: Standalone Install Login Name Shouldn't Have Spaces

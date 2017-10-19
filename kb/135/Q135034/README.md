@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135034: SMTP: Postmaster Account Important to Track Mail Errors"
-permalink: kb/135/Q135034/
+permalink: /kb/135/Q135034/
 ---
 
 ## Q135034: SMTP: Postmaster Account Important to Track Mail Errors

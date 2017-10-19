@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130589: Error Message &quot;Access Is Denied&quot; Renaming Directory"
-permalink: kb/130/Q130589/
+permalink: /kb/130/Q130589/
 ---
 
 ## Q130589: Error Message &quot;Access Is Denied&quot; Renaming Directory

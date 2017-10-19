@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278451: PRB: Editing Any String Table Item Changes the First Item"
-permalink: kb/278/Q278451/
+permalink: /kb/278/Q278451/
 ---
 
 ## Q278451: PRB: Editing Any String Table Item Changes the First Item

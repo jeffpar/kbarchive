@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136310: How to Expand a Combo Box Programmatically"
-permalink: kb/136/Q136310/
+permalink: /kb/136/Q136310/
 ---
 
 ## Q136310: How to Expand a Combo Box Programmatically

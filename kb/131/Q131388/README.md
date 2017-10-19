@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131388: STOP Msg: C000021A Accessing PostScript Printer Driver"
-permalink: kb/131/Q131388/
+permalink: /kb/131/Q131388/
 ---
 
 ## Q131388: STOP Msg: C000021A Accessing PostScript Printer Driver

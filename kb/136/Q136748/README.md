@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136748: PPT7: Unable to Link Only a Portion of a Presentation"
-permalink: kb/136/Q136748/
+permalink: /kb/136/Q136748/
 ---
 
 ## Q136748: PPT7: Unable to Link Only a Portion of a Presentation

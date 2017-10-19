@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147735: FIX: ClassWizard Quits If Class Twice Derived from CRecord"
-permalink: kb/147/Q147735/
+permalink: /kb/147/Q147735/
 ---
 
 ## Q147735: FIX: ClassWizard Quits If Class Twice Derived from CRecord

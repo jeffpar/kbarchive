@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192824: SMS: WinNT Clients Not Supported Under NetWare Logon Servers"
-permalink: kb/192/Q192824/
+permalink: /kb/192/Q192824/
 ---
 
 ## Q192824: SMS: WinNT Clients Not Supported Under NetWare Logon Servers

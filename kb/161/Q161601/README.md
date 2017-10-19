@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161601: XADM: Public Folder Replication Set to Every 15 Minutes"
-permalink: kb/161/Q161601/
+permalink: /kb/161/Q161601/
 ---
 
 ## Q161601: XADM: Public Folder Replication Set to Every 15 Minutes

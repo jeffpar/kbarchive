@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159291: XADM: Single Forward Slash Treated as Delimiter in DDA Value"
-permalink: kb/159/Q159291/
+permalink: /kb/159/Q159291/
 ---
 
 ## Q159291: XADM: Single Forward Slash Treated as Delimiter in DDA Value

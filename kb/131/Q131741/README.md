@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131741: Interrupted Disk Defragmenter Causes Lost Clusters"
-permalink: kb/131/Q131741/
+permalink: /kb/131/Q131741/
 ---
 
 ## Q131741: Interrupted Disk Defragmenter Causes Lost Clusters

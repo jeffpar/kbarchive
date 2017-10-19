@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159411: PRB: &quot;Invalid Line in Setup Information File&quot; Error Message"
-permalink: kb/159/Q159411/
+permalink: /kb/159/Q159411/
 ---
 
 ## Q159411: PRB: &quot;Invalid Line in Setup Information File&quot; Error Message

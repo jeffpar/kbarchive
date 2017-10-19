@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246325: System Administration of File and Directory Access in Interix"
-permalink: kb/246/Q246325/
+permalink: /kb/246/Q246325/
 ---
 
 ## Q246325: System Administration of File and Directory Access in Interix

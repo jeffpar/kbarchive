@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193273: BUG: FTP Creates Recursive Subfolders When Deploying"
-permalink: kb/193/Q193273/
+permalink: /kb/193/Q193273/
 ---
 
 ## Q193273: BUG: FTP Creates Recursive Subfolders When Deploying

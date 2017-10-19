@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280814: SMS: SMS_LOGON_DISCOVERY_AGENT Does Not Start on Windows 2000"
-permalink: kb/280/Q280814/
+permalink: /kb/280/Q280814/
 ---
 
 ## Q280814: SMS: SMS_LOGON_DISCOVERY_AGENT Does Not Start on Windows 2000

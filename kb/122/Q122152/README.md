@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122152: PC MTA: Read Error During Data Exchange"
-permalink: kb/122/Q122152/
+permalink: /kb/122/Q122152/
 ---
 
 ## Q122152: PC MTA: Read Error During Data Exchange

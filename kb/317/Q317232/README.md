@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317232: Errors After You Change the Cluster Service Account Password"
-permalink: kb/317/Q317232/
+permalink: /kb/317/Q317232/
 ---
 
 ## Q317232: Errors After You Change the Cluster Service Account Password

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230558: Terminal Server Hangs and Continuously Loops in Win32k.sys"
-permalink: kb/230/Q230558/
+permalink: /kb/230/Q230558/
 ---
 
 ## Q230558: Terminal Server Hangs and Continuously Loops in Win32k.sys

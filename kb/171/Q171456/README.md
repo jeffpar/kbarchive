@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171456: PRB: Run-time error -2147023071 (80070721) using WithEvents"
-permalink: kb/171/Q171456/
+permalink: /kb/171/Q171456/
 ---
 
 ## Q171456: PRB: Run-time error -2147023071 (80070721) using WithEvents

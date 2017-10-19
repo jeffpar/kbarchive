@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85185: Disabling Setup from Prompting CONFIG.SYS, AUTOEXEC.BAT Save"
-permalink: kb/085/Q85185/
+permalink: /kb/085/Q85185/
 ---
 
 ## Q85185: Disabling Setup from Prompting CONFIG.SYS, AUTOEXEC.BAT Save

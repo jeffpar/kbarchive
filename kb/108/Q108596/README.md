@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108596: Mac Flight Simulator: View 1 Is Solid Color"
-permalink: kb/108/Q108596/
+permalink: /kb/108/Q108596/
 ---
 
 ## Q108596: Mac Flight Simulator: View 1 Is Solid Color

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129473: 500 Nations: Copy Picture Not Working in Picture Gallery"
-permalink: kb/129/Q129473/
+permalink: /kb/129/Q129473/
 ---
 
 ## Q129473: 500 Nations: Copy Picture Not Working in Picture Gallery

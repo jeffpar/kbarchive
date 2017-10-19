@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60845: Source Level Routing and OpenAdapter Issues"
-permalink: kb/060/Q60845/
+permalink: /kb/060/Q60845/
 ---
 
 ## Q60845: Source Level Routing and OpenAdapter Issues

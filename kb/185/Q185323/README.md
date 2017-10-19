@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185323: Pool NonPaged Bytes Not Accurately Calculated for User Mode"
-permalink: kb/185/Q185323/
+permalink: /kb/185/Q185323/
 ---
 
 ## Q185323: Pool NonPaged Bytes Not Accurately Calculated for User Mode

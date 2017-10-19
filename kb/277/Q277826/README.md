@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277826: Err Msg: The Currently Selected Display Resolution Is Invalid"
-permalink: kb/277/Q277826/
+permalink: /kb/277/Q277826/
 ---
 
 ## Q277826: Err Msg: The Currently Selected Display Resolution Is Invalid

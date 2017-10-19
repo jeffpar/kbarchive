@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170917: PRB: &quot;Error 1709&quot; When Several Users Are Using the Same Database"
-permalink: kb/170/Q170917/
+permalink: /kb/170/Q170917/
 ---
 
 ## Q170917: PRB: &quot;Error 1709&quot; When Several Users Are Using the Same Database

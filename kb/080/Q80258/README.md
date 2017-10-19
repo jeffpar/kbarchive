@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80258: PC Gen: Contents of Modem Script File IBM5853.MDM"
-permalink: kb/080/Q80258/
+permalink: /kb/080/Q80258/
 ---
 
 ## Q80258: PC Gen: Contents of Modem Script File IBM5853.MDM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60878: /y Parameter Added to MOUSE.SYS During Windows 3.00 Setup"
-permalink: kb/060/Q60878/
+permalink: /kb/060/Q60878/
 ---
 
 ## Q60878: /y Parameter Added to MOUSE.SYS During Windows 3.00 Setup

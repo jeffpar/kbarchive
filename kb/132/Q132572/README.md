@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132572: Media Player Error Message Seeking to End of Audio CD"
-permalink: kb/132/Q132572/
+permalink: /kb/132/Q132572/
 ---
 
 ## Q132572: Media Player Error Message Seeking to End of Audio CD

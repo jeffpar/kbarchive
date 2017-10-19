@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182415: Access Violation with Multiple PU Passthrough Connections"
-permalink: kb/182/Q182415/
+permalink: /kb/182/Q182415/
 ---
 
 ## Q182415: Access Violation with Multiple PU Passthrough Connections

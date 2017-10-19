@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235260: Microsoft Excel 2000 Step by Step Comments and Corrections"
-permalink: kb/235/Q235260/
+permalink: /kb/235/Q235260/
 ---
 
 ## Q235260: Microsoft Excel 2000 Step by Step Comments and Corrections

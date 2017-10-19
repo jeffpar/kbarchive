@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150921: Mastering Exchange Development: Contents of README.WRI"
-permalink: kb/150/Q150921/
+permalink: /kb/150/Q150921/
 ---
 
 ## Q150921: Mastering Exchange Development: Contents of README.WRI

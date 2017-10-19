@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172799: Extra Form Feed Printed With LU3 Print Job"
-permalink: kb/172/Q172799/
+permalink: /kb/172/Q172799/
 ---
 
 ## Q172799: Extra Form Feed Printed With LU3 Print Job

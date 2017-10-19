@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232910: Error 1044 When Attempting to Create a New Cluster"
-permalink: kb/232/Q232910/
+permalink: /kb/232/Q232910/
 ---
 
 ## Q232910: Error 1044 When Attempting to Create a New Cluster

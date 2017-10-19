@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265840: XFOR: Error Message &quot;The System Cannot Find the File Specified&quot;"
-permalink: kb/265/Q265840/
+permalink: /kb/265/Q265840/
 ---
 
 ## Q265840: XFOR: Error Message &quot;The System Cannot Find the File Specified&quot;

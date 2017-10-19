@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245822: XGEN: Troubleshooting Exchange w Antivirus Installed"
-permalink: kb/245/Q245822/
+permalink: /kb/245/Q245822/
 ---
 
 ## Q245822: XGEN: Troubleshooting Exchange w Antivirus Installed

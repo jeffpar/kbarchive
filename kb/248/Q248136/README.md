@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248136: An Error Occurred Reading or Setting a Configuration Parameter"
-permalink: kb/248/Q248136/
+permalink: /kb/248/Q248136/
 ---
 
 ## Q248136: An Error Occurred Reading or Setting a Configuration Parameter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105017: X400: Description of X400ADM.EXE Program"
-permalink: kb/105/Q105017/
+permalink: /kb/105/Q105017/
 ---
 
 ## Q105017: X400: Description of X400ADM.EXE Program

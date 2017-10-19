@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177772: XADM: Removing Stranded Mailboxes In Mailbox Resources"
-permalink: kb/177/Q177772/
+permalink: /kb/177/Q177772/
 ---
 
 ## Q177772: XADM: Removing Stranded Mailboxes In Mailbox Resources

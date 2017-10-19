@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250625: MS00-024: Default Registry Key Permissions May Allow Privilege E"
-permalink: kb/250/Q250625/
+permalink: /kb/250/Q250625/
 ---
 
 ## Q250625: MS00-024: Default Registry Key Permissions May Allow Privilege E

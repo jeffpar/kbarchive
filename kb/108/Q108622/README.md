@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108622: How to Use AppleScript Scripts to Return Values to FoxPro"
-permalink: kb/108/Q108622/
+permalink: /kb/108/Q108622/
 ---
 
 ## Q108622: How to Use AppleScript Scripts to Return Values to FoxPro

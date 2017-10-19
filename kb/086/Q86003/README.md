@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86003: PC Win: Space Requirements Incorrect on Custom Setup"
-permalink: kb/086/Q86003/
+permalink: /kb/086/Q86003/
 ---
 
 ## Q86003: PC Win: Space Requirements Incorrect on Custom Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248416: FIX: Wrong TreeView Node Selected When SingleSel Property = True"
-permalink: kb/248/Q248416/
+permalink: /kb/248/Q248416/
 ---
 
 ## Q248416: FIX: Wrong TreeView Node Selected When SingleSel Property = True

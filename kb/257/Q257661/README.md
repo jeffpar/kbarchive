@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257661: FIX: Form Double-Click Event May Fire SSTab Events"
-permalink: kb/257/Q257661/
+permalink: /kb/257/Q257661/
 ---
 
 ## Q257661: FIX: Form Double-Click Event May Fire SSTab Events

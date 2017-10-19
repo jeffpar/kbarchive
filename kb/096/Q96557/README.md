@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96557: MSAV Detects a Boot-Sector Virus but Fails to Clean It"
-permalink: kb/096/Q96557/
+permalink: /kb/096/Q96557/
 ---
 
 ## Q96557: MSAV Detects a Boot-Sector Virus but Fails to Clean It

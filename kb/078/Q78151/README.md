@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78151: Using the Interrupt 2Fh Critical Section Services"
-permalink: kb/078/Q78151/
+permalink: /kb/078/Q78151/
 ---
 
 ## Q78151: Using the Interrupt 2Fh Critical Section Services

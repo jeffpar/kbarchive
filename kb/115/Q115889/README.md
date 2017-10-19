@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115889: CONFIG.FPM Settings for Behavior Similar to Fox/Windows"
-permalink: kb/115/Q115889/
+permalink: /kb/115/Q115889/
 ---
 
 ## Q115889: CONFIG.FPM Settings for Behavior Similar to Fox/Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168554: FIX: Resource Drain with PictureBox on Form"
-permalink: kb/168/Q168554/
+permalink: /kb/168/Q168554/
 ---
 
 ## Q168554: FIX: Resource Drain with PictureBox on Form

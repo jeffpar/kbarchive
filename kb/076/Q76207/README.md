@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76207: Preserving Compaq DOS Keyboard Click Feature"
-permalink: kb/076/Q76207/
+permalink: /kb/076/Q76207/
 ---
 
 ## Q76207: Preserving Compaq DOS Keyboard Click Feature

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121246: Detailed Description of INTERLNK Parallel Cable Pinouts"
-permalink: kb/121/Q121246/
+permalink: /kb/121/Q121246/
 ---
 
 ## Q121246: Detailed Description of INTERLNK Parallel Cable Pinouts

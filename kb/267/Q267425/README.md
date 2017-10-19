@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267425: XADM: Hiding Address Book Views During Address Book View Storms"
-permalink: kb/267/Q267425/
+permalink: /kb/267/Q267425/
 ---
 
 ## Q267425: XADM: Hiding Address Book Views During Address Book View Storms

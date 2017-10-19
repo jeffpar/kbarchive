@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241850: PRB: Call to CToolBarCtrl::Customize() Does Not Keep Dialog Box"
-permalink: kb/241/Q241850/
+permalink: /kb/241/Q241850/
 ---
 
 ## Q241850: PRB: Call to CToolBarCtrl::Customize() Does Not Keep Dialog Box

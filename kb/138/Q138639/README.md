@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138639: &quot;Slides From Outline&quot; Command Causes &quot;Currently In Use&quot; Error"
-permalink: kb/138/Q138639/
+permalink: /kb/138/Q138639/
 ---
 
 ## Q138639: &quot;Slides From Outline&quot; Command Causes &quot;Currently In Use&quot; Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65456: Everex EV-673 Requires Everex VDD for Enhanced Mode"
-permalink: kb/065/Q65456/
+permalink: /kb/065/Q65456/
 ---
 
 ## Q65456: Everex EV-673 Requires Everex VDD for Enhanced Mode

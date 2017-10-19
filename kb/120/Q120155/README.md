@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120155: PRB: Error A2068 Using REP Prefix with CMPS Instructions"
-permalink: kb/120/Q120155/
+permalink: /kb/120/Q120155/
 ---
 
 ## Q120155: PRB: Error A2068 Using REP Prefix with CMPS Instructions

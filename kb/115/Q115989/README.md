@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115989: Elapsed Time Example Involving Different Days"
-permalink: kb/115/Q115989/
+permalink: /kb/115/Q115989/
 ---
 
 ## Q115989: Elapsed Time Example Involving Different Days

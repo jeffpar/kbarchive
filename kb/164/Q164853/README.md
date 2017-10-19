@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164853: XADM: Incorrect Spanish on Microsoft Exchange Server"
-permalink: kb/164/Q164853/
+permalink: /kb/164/Q164853/
 ---
 
 ## Q164853: XADM: Incorrect Spanish on Microsoft Exchange Server

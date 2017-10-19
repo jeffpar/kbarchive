@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155673: DBWEB: How to Create a Dynamic Combo Box in a dbWeb Custom DBX"
-permalink: kb/155/Q155673/
+permalink: /kb/155/Q155673/
 ---
 
 ## Q155673: DBWEB: How to Create a Dynamic Combo Box in a dbWeb Custom DBX

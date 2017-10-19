@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231232: SMS: Performance Issues for CCIM Working on a 23-Hour Cycle"
-permalink: kb/231/Q231232/
+permalink: /kb/231/Q231232/
 ---
 
 ## Q231232: SMS: Performance Issues for CCIM Working on a 23-Hour Cycle

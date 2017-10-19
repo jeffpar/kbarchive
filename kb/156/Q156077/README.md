@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156077: XADM: How to Specify Where New Public Folders Are Stored"
-permalink: kb/156/Q156077/
+permalink: /kb/156/Q156077/
 ---
 
 ## Q156077: XADM: How to Specify Where New Public Folders Are Stored

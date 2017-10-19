@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154028: 100% CPU Usage When FTP Clients Connect to IIS"
-permalink: kb/154/Q154028/
+permalink: /kb/154/Q154028/
 ---
 
 ## Q154028: 100% CPU Usage When FTP Clients Connect to IIS

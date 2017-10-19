@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142600: MSN Mail Not Delivered: No Transport Provider Available"
-permalink: kb/142/Q142600/
+permalink: /kb/142/Q142600/
 ---
 
 ## Q142600: MSN Mail Not Delivered: No Transport Provider Available

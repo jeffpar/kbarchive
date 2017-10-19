@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143427: FIX: Cannot Programmatically Select Items in ListView"
-permalink: kb/143/Q143427/
+permalink: /kb/143/Q143427/
 ---
 
 ## Q143427: FIX: Cannot Programmatically Select Items in ListView

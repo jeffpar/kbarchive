@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134960: How to Install CSNW or GSNW From Floppy Disks"
-permalink: kb/134/Q134960/
+permalink: /kb/134/Q134960/
 ---
 
 ## Q134960: How to Install CSNW or GSNW From Floppy Disks

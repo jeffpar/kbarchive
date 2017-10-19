@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88465: Golf: Rattle Sound Not Heard When Ball Enters Hole"
-permalink: kb/088/Q88465/
+permalink: /kb/088/Q88465/
 ---
 
 ## Q88465: Golf: Rattle Sound Not Heard When Ball Enters Hole

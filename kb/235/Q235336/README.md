@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235336: MapPoint 2000 Err Msg: Too Many Fields Defined"
-permalink: kb/235/Q235336/
+permalink: /kb/235/Q235336/
 ---
 
 ## Q235336: MapPoint 2000 Err Msg: Too Many Fields Defined

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95778: VidCap: Not Capturing Full Frames with Video Blaster"
-permalink: kb/095/Q95778/
+permalink: /kb/095/Q95778/
 ---
 
 ## Q95778: VidCap: Not Capturing Full Frames with Video Blaster

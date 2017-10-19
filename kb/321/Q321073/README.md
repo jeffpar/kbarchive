@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321073: Index Service Stops Responding When Filtering Japanese ExcelFile"
-permalink: kb/321/Q321073/
+permalink: /kb/321/Q321073/
 ---
 
 ## Q321073: Index Service Stops Responding When Filtering Japanese ExcelFile

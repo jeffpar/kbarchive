@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197378: XCON: MTA Generates 9301 Events on Incoming Connections"
-permalink: kb/197/Q197378/
+permalink: /kb/197/Q197378/
 ---
 
 ## Q197378: XCON: MTA Generates 9301 Events on Incoming Connections

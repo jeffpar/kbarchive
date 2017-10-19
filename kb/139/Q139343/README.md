@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139343: How To Promote BDC to PDC Through RAS"
-permalink: kb/139/Q139343/
+permalink: /kb/139/Q139343/
 ---
 
 ## Q139343: How To Promote BDC to PDC Through RAS

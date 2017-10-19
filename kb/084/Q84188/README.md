@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84188: Idlewild May Cause Desktop Screen Saver Option Not to Save"
-permalink: kb/084/Q84188/
+permalink: /kb/084/Q84188/
 ---
 
 ## Q84188: Idlewild May Cause Desktop Screen Saver Option Not to Save

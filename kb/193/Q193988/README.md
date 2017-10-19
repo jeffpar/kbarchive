@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193988: APPC/CPIC Application May Fail When Using Remote APPC LU Name"
-permalink: kb/193/Q193988/
+permalink: /kb/193/Q193988/
 ---
 
 ## Q193988: APPC/CPIC Application May Fail When Using Remote APPC LU Name

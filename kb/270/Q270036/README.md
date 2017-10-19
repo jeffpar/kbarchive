@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270036: SMS: Multiple TCP/IP Addresses Cause Incorrect Discovery Data"
-permalink: kb/270/Q270036/
+permalink: /kb/270/Q270036/
 ---
 
 ## Q270036: SMS: Multiple TCP/IP Addresses Cause Incorrect Discovery Data

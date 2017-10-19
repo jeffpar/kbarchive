@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137108: PC NTMMTA: Running NT MMTA on PC-NFS Client"
-permalink: kb/137/Q137108/
+permalink: /kb/137/Q137108/
 ---
 
 ## Q137108: PC NTMMTA: Running NT MMTA on PC-NFS Client

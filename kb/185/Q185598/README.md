@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185598: XFOR: RTF Messages Not Displayed Correctly in Lotus Notes Client"
-permalink: kb/185/Q185598/
+permalink: /kb/185/Q185598/
 ---
 
 ## Q185598: XFOR: RTF Messages Not Displayed Correctly in Lotus Notes Client

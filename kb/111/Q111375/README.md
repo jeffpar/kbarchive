@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111375: PC Forms: Doc Err: Making a Check Box Read-Only"
-permalink: kb/111/Q111375/
+permalink: /kb/111/Q111375/
 ---
 
 ## Q111375: PC Forms: Doc Err: Making a Check Box Read-Only

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241012: NBA Inside Drive 2000: Introductory Video Is Not Played Properly"
-permalink: kb/241/Q241012/
+permalink: /kb/241/Q241012/
 ---
 
 ## Q241012: NBA Inside Drive 2000: Introductory Video Is Not Played Properly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139818: Event 24 Is Logged w/ Severity Levels Information and Warning"
-permalink: kb/139/Q139818/
+permalink: /kb/139/Q139818/
 ---
 
 ## Q139818: Event 24 Is Logged w/ Severity Levels Information and Warning

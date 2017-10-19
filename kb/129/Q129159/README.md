@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129159: How to Fill an Array Used as the Rowsource of a Combo Box"
-permalink: kb/129/Q129159/
+permalink: /kb/129/Q129159/
 ---
 
 ## Q129159: How to Fill an Array Used as the Rowsource of a Combo Box

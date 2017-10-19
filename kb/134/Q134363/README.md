@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134363: Windows 95 Support Assistant Available"
-permalink: kb/134/Q134363/
+permalink: /kb/134/Q134363/
 ---
 
 ## Q134363: Windows 95 Support Assistant Available

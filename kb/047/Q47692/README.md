@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47692: INFO: Some errno Values Do Not Apply to MS-DOS, Windows NT"
-permalink: kb/047/Q47692/
+permalink: /kb/047/Q47692/
 ---
 
 ## Q47692: INFO: Some errno Values Do Not Apply to MS-DOS, Windows NT

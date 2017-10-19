@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134792: FIX: Pointer in Drop-Down Combo Box Not at the Beginning"
-permalink: kb/134/Q134792/
+permalink: /kb/134/Q134792/
 ---
 
 ## Q134792: FIX: Pointer in Drop-Down Combo Box Not at the Beginning

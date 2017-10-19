@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163209: SNA Server Fails to Send STSN Error from SLI Application"
-permalink: kb/163/Q163209/
+permalink: /kb/163/Q163209/
 ---
 
 ## Q163209: SNA Server Fails to Send STSN Error from SLI Application

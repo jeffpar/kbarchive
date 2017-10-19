@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166625: Host Print Service Stops Responding After Invalid SCS Code"
-permalink: kb/166/Q166625/
+permalink: /kb/166/Q166625/
 ---
 
 ## Q166625: Host Print Service Stops Responding After Invalid SCS Code

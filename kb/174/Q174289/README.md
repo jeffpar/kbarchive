@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174289: FIX: Memory Leak Occurs After Form is Unloaded"
-permalink: kb/174/Q174289/
+permalink: /kb/174/Q174289/
 ---
 
 ## Q174289: FIX: Memory Leak Occurs After Form is Unloaded

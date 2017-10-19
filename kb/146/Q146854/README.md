@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146854: XCLN: Viewing Message Properties Prompts to Save Changes"
-permalink: kb/146/Q146854/
+permalink: /kb/146/Q146854/
 ---
 
 ## Q146854: XCLN: Viewing Message Properties Prompts to Save Changes

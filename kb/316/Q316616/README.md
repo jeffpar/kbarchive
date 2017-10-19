@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316616: &quot;Event ID 4018&quot; Error Message When You Try to Send E-Mail"
-permalink: kb/316/Q316616/
+permalink: /kb/316/Q316616/
 ---
 
 ## Q316616: &quot;Event ID 4018&quot; Error Message When You Try to Send E-Mail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299525: HOWTO: Set Up SSL Using IIS 5.0 and Certificate Server 2.0"
-permalink: kb/299/Q299525/
+permalink: /kb/299/Q299525/
 ---
 
 ## Q299525: HOWTO: Set Up SSL Using IIS 5.0 and Certificate Server 2.0

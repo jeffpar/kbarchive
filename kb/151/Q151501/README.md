@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151501: FIX: Linking Large Projects Can Be Very Slow"
-permalink: kb/151/Q151501/
+permalink: /kb/151/Q151501/
 ---
 
 ## Q151501: FIX: Linking Large Projects Can Be Very Slow

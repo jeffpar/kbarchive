@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169399: High-Color Icons Displayed in 256-Color Mode"
-permalink: kb/169/Q169399/
+permalink: /kb/169/Q169399/
 ---
 
 ## Q169399: High-Color Icons Displayed in 256-Color Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200299: BUG: Format or DatePart Functions Can Return Wrong Week Number"
-permalink: kb/200/Q200299/
+permalink: /kb/200/Q200299/
 ---
 
 ## Q200299: BUG: Format or DatePart Functions Can Return Wrong Week Number

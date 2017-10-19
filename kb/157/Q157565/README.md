@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157565: XCON: MTA Terminates Without Logging Event in Application Log"
-permalink: kb/157/Q157565/
+permalink: /kb/157/Q157565/
 ---
 
 ## Q157565: XCON: MTA Terminates Without Logging Event in Application Log

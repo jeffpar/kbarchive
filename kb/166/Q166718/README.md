@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166718: FIX: C1001 from Conditional Operator in Initializer"
-permalink: kb/166/Q166718/
+permalink: /kb/166/Q166718/
 ---
 
 ## Q166718: FIX: C1001 from Conditional Operator in Initializer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138816: BUG: &quot;Error occurred while trying to rebuild&quot; w/ Setup Wizard"
-permalink: kb/138/Q138816/
+permalink: /kb/138/Q138816/
 ---
 
 ## Q138816: BUG: &quot;Error occurred while trying to rebuild&quot; w/ Setup Wizard

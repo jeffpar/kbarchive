@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287220: Stop Error 0x7B Appears When Starting Windows NT Server 4.0"
-permalink: kb/287/Q287220/
+permalink: /kb/287/Q287220/
 ---
 
 ## Q287220: Stop Error 0x7B Appears When Starting Windows NT Server 4.0

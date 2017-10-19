@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210497: Golf 99: Incorrect Distance Stated in Flyby Commentary Script"
-permalink: kb/210/Q210497/
+permalink: /kb/210/Q210497/
 ---
 
 ## Q210497: Golf 99: Incorrect Distance Stated in Flyby Commentary Script

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308583: HIS End-User Client Install Fails w/Internet Explorer 6"
-permalink: kb/308/Q308583/
+permalink: /kb/308/Q308583/
 ---
 
 ## Q308583: HIS End-User Client Install Fails w/Internet Explorer 6

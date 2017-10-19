@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140813: Windows Fails w/ Black Screen After Upgrade from SMS 1.0 to 1.1"
-permalink: kb/140/Q140813/
+permalink: /kb/140/Q140813/
 ---
 
 ## Q140813: Windows Fails w/ Black Screen After Upgrade from SMS 1.0 to 1.1

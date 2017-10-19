@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130068: PC Ext: External Stops Mail with DrivesWan Option"
-permalink: kb/130/Q130068/
+permalink: /kb/130/Q130068/
 ---
 
 ## Q130068: PC Ext: External Stops Mail with DrivesWan Option

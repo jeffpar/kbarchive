@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156148: Full Court Press: Multiplayer Information"
-permalink: kb/156/Q156148/
+permalink: /kb/156/Q156148/
 ---
 
 ## Q156148: Full Court Press: Multiplayer Information

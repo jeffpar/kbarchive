@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89108: Using Grapevine LAN with Windows 3.0 and 3.1"
-permalink: kb/089/Q89108/
+permalink: /kb/089/Q89108/
 ---
 
 ## Q89108: Using Grapevine LAN with Windows 3.0 and 3.1

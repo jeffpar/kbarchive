@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185353: SMS: Client Inventory Record Only Shows Ident. and NetMon Data"
-permalink: kb/185/Q185353/
+permalink: /kb/185/Q185353/
 ---
 
 ## Q185353: SMS: Client Inventory Record Only Shows Ident. and NetMon Data

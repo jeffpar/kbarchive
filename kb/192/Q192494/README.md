@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192494: SMS: Netspeed.dat File Is Compressible"
-permalink: kb/192/Q192494/
+permalink: /kb/192/Q192494/
 ---
 
 ## Q192494: SMS: Netspeed.dat File Is Compressible

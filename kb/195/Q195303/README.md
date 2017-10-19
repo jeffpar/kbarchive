@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195303: XCLN: No Long Filename Support for Finnish Exchange 5.0 Client"
-permalink: kb/195/Q195303/
+permalink: /kb/195/Q195303/
 ---
 
 ## Q195303: XCLN: No Long Filename Support for Finnish Exchange 5.0 Client

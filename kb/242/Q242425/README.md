@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242425: Using Session Objects with Session State Disabled Returns Error"
-permalink: kb/242/Q242425/
+permalink: /kb/242/Q242425/
 ---
 
 ## Q242425: Using Session Objects with Session State Disabled Returns Error

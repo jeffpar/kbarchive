@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160968: PRB: VB5 Components Distribute Improperly with VB4 Setup Kit"
-permalink: kb/160/Q160968/
+permalink: /kb/160/Q160968/
 ---
 
 ## Q160968: PRB: VB5 Components Distribute Improperly with VB4 Setup Kit

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197304: Combat Flight Simulator: Cannot Enable Auto Rudder Feature"
-permalink: kb/197/Q197304/
+permalink: /kb/197/Q197304/
 ---
 
 ## Q197304: Combat Flight Simulator: Cannot Enable Auto Rudder Feature

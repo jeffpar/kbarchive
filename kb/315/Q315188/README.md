@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315188: Flight Simulator 2002: Program Hangs When You Switch Views"
-permalink: kb/315/Q315188/
+permalink: /kb/315/Q315188/
 ---
 
 ## Q315188: Flight Simulator 2002: Program Hangs When You Switch Views

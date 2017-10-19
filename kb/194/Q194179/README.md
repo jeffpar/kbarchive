@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194179: SAMPLE: AtlEvnt.exe Creates ATL Sinks Using IDispEventImpl"
-permalink: kb/194/Q194179/
+permalink: /kb/194/Q194179/
 ---
 
 ## Q194179: SAMPLE: AtlEvnt.exe Creates ATL Sinks Using IDispEventImpl

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242184: XFOR: Exchange Migration Wizard Does Not Work with Event ID 7026"
-permalink: kb/242/Q242184/
+permalink: /kb/242/Q242184/
 ---
 
 ## Q242184: XFOR: Exchange Migration Wizard Does Not Work with Event ID 7026

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138239: Characters Missing in Quick Window Viewer During Remote Control"
-permalink: kb/138/Q138239/
+permalink: /kb/138/Q138239/
 ---
 
 ## Q138239: Characters Missing in Quick Window Viewer During Remote Control

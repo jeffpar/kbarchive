@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184304: XWEB: Outlook Web Access Error Message: Unable to Render View"
-permalink: kb/184/Q184304/
+permalink: /kb/184/Q184304/
 ---
 
 ## Q184304: XWEB: Outlook Web Access Error Message: Unable to Render View

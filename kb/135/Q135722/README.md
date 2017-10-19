@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135722: Windows NT Fails to Validate FTP Logins from Trusted Domains"
-permalink: kb/135/Q135722/
+permalink: /kb/135/Q135722/
 ---
 
 ## Q135722: Windows NT Fails to Validate FTP Logins from Trusted Domains

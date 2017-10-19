@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281332: Interix Clients Heavily Use Samr Connections"
-permalink: kb/281/Q281332/
+permalink: /kb/281/Q281332/
 ---
 
 ## Q281332: Interix Clients Heavily Use Samr Connections

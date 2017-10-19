@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88096: EXTRA! for Windows Requires Update to Run in Standard Mode"
-permalink: kb/088/Q88096/
+permalink: /kb/088/Q88096/
 ---
 
 ## Q88096: EXTRA! for Windows Requires Update to Run in Standard Mode

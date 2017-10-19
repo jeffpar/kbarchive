@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140588: INFO: Differences Between Full Screen and Windowed Mode Palettes"
-permalink: kb/140/Q140588/
+permalink: /kb/140/Q140588/
 ---
 
 ## Q140588: INFO: Differences Between Full Screen and Windowed Mode Palettes

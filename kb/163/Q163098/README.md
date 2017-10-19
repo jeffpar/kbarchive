@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163098: WD97: Run-Time Error 1517 Running Converted WordBasic Macro"
-permalink: kb/163/Q163098/
+permalink: /kb/163/Q163098/
 ---
 
 ## Q163098: WD97: Run-Time Error 1517 Running Converted WordBasic Macro

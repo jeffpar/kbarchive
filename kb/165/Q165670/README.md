@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165670: NetScape Navigator Hangs Connecting to Secure IIS Server"
-permalink: kb/165/Q165670/
+permalink: /kb/165/Q165670/
 ---
 
 ## Q165670: NetScape Navigator Hangs Connecting to Secure IIS Server

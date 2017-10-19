@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151745: IPX Direct Hosting May Corrupt Print Jobs from WFW to WinNT"
-permalink: kb/151/Q151745/
+permalink: /kb/151/Q151745/
 ---
 
 ## Q151745: IPX Direct Hosting May Corrupt Print Jobs from WFW to WinNT

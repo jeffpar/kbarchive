@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141920: MS Fax Error Message: Address Incorrect or Does Not Exist"
-permalink: kb/141/Q141920/
+permalink: /kb/141/Q141920/
 ---
 
 ## Q141920: MS Fax Error Message: Address Incorrect or Does Not Exist

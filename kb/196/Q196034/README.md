@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196034: HOWTO: Use ADOFILTR.DLL to Transfer Database Tables"
-permalink: kb/196/Q196034/
+permalink: /kb/196/Q196034/
 ---
 
 ## Q196034: HOWTO: Use ADOFILTR.DLL to Transfer Database Tables

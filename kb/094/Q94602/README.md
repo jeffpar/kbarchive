@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94602: PRB: How to Work Around WMFDCODE 64K Limitation"
-permalink: kb/094/Q94602/
+permalink: /kb/094/Q94602/
 ---
 
 ## Q94602: PRB: How to Work Around WMFDCODE 64K Limitation

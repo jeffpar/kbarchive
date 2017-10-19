@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244889: Invalid Page Fault When You Run Flight Simulator"
-permalink: kb/244/Q244889/
+permalink: /kb/244/Q244889/
 ---
 
 ## Q244889: Invalid Page Fault When You Run Flight Simulator

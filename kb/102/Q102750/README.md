@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102750: X400: Err Msg: ERROR 3 (RTS): RTS Open Refused..."
-permalink: kb/102/Q102750/
+permalink: /kb/102/Q102750/
 ---
 
 ## Q102750: X400: Err Msg: ERROR 3 (RTS): RTS Open Refused...

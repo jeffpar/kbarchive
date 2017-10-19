@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140316: INFO: All Variable Settings for Visual SourceSafe .INI File"
-permalink: kb/140/Q140316/
+permalink: /kb/140/Q140316/
 ---
 
 ## Q140316: INFO: All Variable Settings for Visual SourceSafe .INI File

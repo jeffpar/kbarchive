@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195763: HOWTO: Use GetTempFileName API to Create a Unique Temporary File"
-permalink: kb/195/Q195763/
+permalink: /kb/195/Q195763/
 ---
 
 ## Q195763: HOWTO: Use GetTempFileName API to Create a Unique Temporary File

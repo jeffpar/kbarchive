@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117652: PC Forms: Sender Does Not Appear in Read Reply Form"
-permalink: kb/117/Q117652/
+permalink: /kb/117/Q117652/
 ---
 
 ## Q117652: PC Forms: Sender Does Not Appear in Read Reply Form

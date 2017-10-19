@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246493: XWEB: How to Remove the Change Password Button in OWA"
-permalink: kb/246/Q246493/
+permalink: /kb/246/Q246493/
 ---
 
 ## Q246493: XWEB: How to Remove the Change Password Button in OWA

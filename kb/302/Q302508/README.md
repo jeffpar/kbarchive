@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302508: Duplicate Queries Appear in the Administrator Console"
-permalink: kb/302/Q302508/
+permalink: /kb/302/Q302508/
 ---
 
 ## Q302508: Duplicate Queries Appear in the Administrator Console

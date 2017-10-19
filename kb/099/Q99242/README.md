@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99242: Gateway 2000 Hangs When Using BRIEF with MS-DOS 5.0 or later"
-permalink: kb/099/Q99242/
+permalink: /kb/099/Q99242/
 ---
 
 ## Q99242: Gateway 2000 Hangs When Using BRIEF with MS-DOS 5.0 or later

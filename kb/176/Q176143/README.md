@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176143: XCON: Non-Delivery Report on Empty P772 Messages"
-permalink: kb/176/Q176143/
+permalink: /kb/176/Q176143/
 ---
 
 ## Q176143: XCON: Non-Delivery Report on Empty P772 Messages

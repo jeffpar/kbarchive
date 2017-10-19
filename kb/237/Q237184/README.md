@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237184: FIX: Err Branching from Label &quot;You do not have access rights..&quot;"
-permalink: kb/237/Q237184/
+permalink: /kb/237/Q237184/
 ---
 
 ## Q237184: FIX: Err Branching from Label &quot;You do not have access rights..&quot;

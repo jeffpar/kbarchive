@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130736: User Removed from Account Operators Can Still Edit Accounts"
-permalink: kb/130/Q130736/
+permalink: /kb/130/Q130736/
 ---
 
 ## Q130736: User Removed from Account Operators Can Still Edit Accounts

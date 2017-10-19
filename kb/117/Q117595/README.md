@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117595: INFO: Operating System Changes with System 7.1.2 and Power Mac"
-permalink: kb/117/Q117595/
+permalink: /kb/117/Q117595/
 ---
 
 ## Q117595: INFO: Operating System Changes with System 7.1.2 and Power Mac

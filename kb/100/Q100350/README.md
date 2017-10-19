@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100350: Common Reasons Why Mac Print Service Won't Start"
-permalink: kb/100/Q100350/
+permalink: /kb/100/Q100350/
 ---
 
 ## Q100350: Common Reasons Why Mac Print Service Won't Start

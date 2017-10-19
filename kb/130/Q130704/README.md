@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130704: PC Win: &quot;Remember Password&quot; Option of WFW Mail Client"
-permalink: kb/130/Q130704/
+permalink: /kb/130/Q130704/
 ---
 
 ## Q130704: PC Win: &quot;Remember Password&quot; Option of WFW Mail Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177330: XWEB: How to Set Default Calendar Backend for OWA Client"
-permalink: kb/177/Q177330/
+permalink: /kb/177/Q177330/
 ---
 
 ## Q177330: XWEB: How to Set Default Calendar Backend for OWA Client

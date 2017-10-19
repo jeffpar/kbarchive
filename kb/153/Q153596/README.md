@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153596: TCP/IP Performance Degrades When Resuming Large Data Transfer"
-permalink: kb/153/Q153596/
+permalink: /kb/153/Q153596/
 ---
 
 ## Q153596: TCP/IP Performance Degrades When Resuming Large Data Transfer

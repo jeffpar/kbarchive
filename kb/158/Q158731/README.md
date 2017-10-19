@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158731: XADM: SP3 Update Fails When Running Admin Only"
-permalink: kb/158/Q158731/
+permalink: /kb/158/Q158731/
 ---
 
 ## Q158731: XADM: SP3 Update Fails When Running Admin Only

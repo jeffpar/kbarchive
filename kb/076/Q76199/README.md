@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76199: Using Quarterdeck's BUFFERS.COM With MS-DOS 4.0 and Later"
-permalink: kb/076/Q76199/
+permalink: /kb/076/Q76199/
 ---
 
 ## Q76199: Using Quarterdeck's BUFFERS.COM With MS-DOS 4.0 and Later

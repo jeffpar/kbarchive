@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305985: HOWTO: Add Functionality to Your Dynamically Built Grid"
-permalink: kb/305/Q305985/
+permalink: /kb/305/Q305985/
 ---
 
 ## Q305985: HOWTO: Add Functionality to Your Dynamically Built Grid

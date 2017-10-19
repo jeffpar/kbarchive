@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241138: SNA Server Windows 3.x Client Causes Access Violation"
-permalink: kb/241/Q241138/
+permalink: /kb/241/Q241138/
 ---
 
 ## Q241138: SNA Server Windows 3.x Client Causes Access Violation

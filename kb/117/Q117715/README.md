@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117715: Slow Performance over IBM Software Source Routing Bridge"
-permalink: kb/117/Q117715/
+permalink: /kb/117/Q117715/
 ---
 
 ## Q117715: Slow Performance over IBM Software Source Routing Bridge

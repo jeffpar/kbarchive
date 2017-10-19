@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159485: XADM: Troubleshooting Setup Problems Joining an Existing Site"
-permalink: kb/159/Q159485/
+permalink: /kb/159/Q159485/
 ---
 
 ## Q159485: XADM: Troubleshooting Setup Problems Joining an Existing Site

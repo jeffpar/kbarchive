@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58276: 8514-VGA: Switch to MS-DOS Prompt Gives White Screen"
-permalink: kb/058/Q58276/
+permalink: /kb/058/Q58276/
 ---
 
 ## Q58276: 8514-VGA: Switch to MS-DOS Prompt Gives White Screen

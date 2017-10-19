@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169037: Win31Upgrade Switch May Not Work Properly At Unattend Setup"
-permalink: kb/169/Q169037/
+permalink: /kb/169/Q169037/
 ---
 
 ## Q169037: Win31Upgrade Switch May Not Work Properly At Unattend Setup

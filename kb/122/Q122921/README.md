@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122921: Windows NT Setup May Fail on IBM 8640-OP&#42;"
-permalink: kb/122/Q122921/
+permalink: /kb/122/Q122921/
 ---
 
 ## Q122921: Windows NT Setup May Fail on IBM 8640-OP&#42;

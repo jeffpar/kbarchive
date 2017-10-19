@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196786: PRB: MSDN Libraries 6.0 and October 1998 Fail to Coexist"
-permalink: kb/196/Q196786/
+permalink: /kb/196/Q196786/
 ---
 
 ## Q196786: PRB: MSDN Libraries 6.0 and October 1998 Fail to Coexist

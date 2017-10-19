@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241963: INFO: SourceSafe Integration Changes with 2000 Server Extensions"
-permalink: kb/241/Q241963/
+permalink: /kb/241/Q241963/
 ---
 
 ## Q241963: INFO: SourceSafe Integration Changes with 2000 Server Extensions

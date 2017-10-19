@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274466: MSN Explorer Dial Up Networking (DUN 1.4) Setup May Fail To Inst"
-permalink: kb/274/Q274466/
+permalink: /kb/274/Q274466/
 ---
 
 ## Q274466: MSN Explorer Dial Up Networking (DUN 1.4) Setup May Fail To Inst

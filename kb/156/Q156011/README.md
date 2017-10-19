@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156011: INFO: Use of the ADMIN Clause with Offline Views"
-permalink: kb/156/Q156011/
+permalink: /kb/156/Q156011/
 ---
 
 ## Q156011: INFO: Use of the ADMIN Clause with Offline Views

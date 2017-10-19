@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172077: Menuprob.exe MENU() Malfunctions With Top-Level Forms"
-permalink: kb/172/Q172077/
+permalink: /kb/172/Q172077/
 ---
 
 ## Q172077: Menuprob.exe MENU() Malfunctions With Top-Level Forms

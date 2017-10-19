@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141112: LPR Postscript Clients Printing to LPD Server"
-permalink: kb/141/Q141112/
+permalink: /kb/141/Q141112/
 ---
 
 ## Q141112: LPR Postscript Clients Printing to LPD Server

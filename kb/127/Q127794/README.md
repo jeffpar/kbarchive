@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127794: Cannot Load TSRs in NetWare Login Script"
-permalink: kb/127/Q127794/
+permalink: /kb/127/Q127794/
 ---
 
 ## Q127794: Cannot Load TSRs in NetWare Login Script

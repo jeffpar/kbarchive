@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q46409: Err Msg: &quot;Cannot Read From Drive A&quot;"
-permalink: kb/046/Q46409/
+permalink: /kb/046/Q46409/
 ---
 
 ## Q46409: Err Msg: &quot;Cannot Read From Drive A&quot;

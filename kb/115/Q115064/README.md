@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115064: Encarta: Screen Corruption with Diamond Viper Using VGA Driver"
-permalink: kb/115/Q115064/
+permalink: /kb/115/Q115064/
 ---
 
 ## Q115064: Encarta: Screen Corruption with Diamond Viper Using VGA Driver

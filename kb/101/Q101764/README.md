@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101764: Scenes: Communication Programs May Fail"
-permalink: kb/101/Q101764/
+permalink: /kb/101/Q101764/
 ---
 
 ## Q101764: Scenes: Communication Programs May Fail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66745: ASD: Support for Sublogic Instant Facilities Locator"
-permalink: kb/066/Q66745/
+permalink: /kb/066/Q66745/
 ---
 
 ## Q66745: ASD: Support for Sublogic Instant Facilities Locator

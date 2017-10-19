@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153459: Kids: Troubleshooting Help File Included on Compact Disc"
-permalink: kb/153/Q153459/
+permalink: /kb/153/Q153459/
 ---
 
 ## Q153459: Kids: Troubleshooting Help File Included on Compact Disc

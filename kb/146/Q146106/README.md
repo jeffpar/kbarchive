@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146106: Using IBMTOK.DOS on Fast Computers Results In Error 36"
-permalink: kb/146/Q146106/
+permalink: /kb/146/Q146106/
 ---
 
 ## Q146106: Using IBMTOK.DOS on Fast Computers Results In Error 36

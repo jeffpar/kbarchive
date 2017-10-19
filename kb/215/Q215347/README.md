@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215347: Cluster Disk with More Than 15 Logical Drives Fails to Go Online"
-permalink: kb/215/Q215347/
+permalink: /kb/215/Q215347/
 ---
 
 ## Q215347: Cluster Disk with More Than 15 Logical Drives Fails to Go Online

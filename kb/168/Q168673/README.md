@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168673: MSN Err Msg: A Required .dll file, Ragui32.dll, Was Not Found"
-permalink: kb/168/Q168673/
+permalink: /kb/168/Q168673/
 ---
 
 ## Q168673: MSN Err Msg: A Required .dll file, Ragui32.dll, Was Not Found

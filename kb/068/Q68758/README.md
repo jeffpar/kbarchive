@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68758: Problems with Canon LBP-8II Driver in Windows 3.0"
-permalink: kb/068/Q68758/
+permalink: /kb/068/Q68758/
 ---
 
 ## Q68758: Problems with Canon LBP-8II Driver in Windows 3.0

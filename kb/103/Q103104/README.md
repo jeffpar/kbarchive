@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103104: Err Msg: The Win16 Subsystem Was Unable to Enter Protect..."
-permalink: kb/103/Q103104/
+permalink: /kb/103/Q103104/
 ---
 
 ## Q103104: Err Msg: The Win16 Subsystem Was Unable to Enter Protect...

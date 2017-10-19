@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166268: Win3x Client Takes 20 Seconds to Display Logon Dialog Box"
-permalink: kb/166/Q166268/
+permalink: /kb/166/Q166268/
 ---
 
 ## Q166268: Win3x Client Takes 20 Seconds to Display Logon Dialog Box

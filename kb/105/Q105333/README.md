@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105333: MS-DOS 6.x Err Msg: Error Attempting to Update &lt;FILENAME&gt;.INI"
-permalink: kb/105/Q105333/
+permalink: /kb/105/Q105333/
 ---
 
 ## Q105333: MS-DOS 6.x Err Msg: Error Attempting to Update &lt;FILENAME&gt;.INI

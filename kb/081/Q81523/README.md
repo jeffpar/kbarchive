@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81523: NOMOUSE.DRV Is Required when No Mouse Is Installed"
-permalink: kb/081/Q81523/
+permalink: /kb/081/Q81523/
 ---
 
 ## Q81523: NOMOUSE.DRV Is Required when No Mouse Is Installed

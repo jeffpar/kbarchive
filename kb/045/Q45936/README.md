@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q45936: Data Copied from Excel to Write Does Not Line Up"
-permalink: kb/045/Q45936/
+permalink: /kb/045/Q45936/
 ---
 
 ## Q45936: Data Copied from Excel to Write Does Not Line Up

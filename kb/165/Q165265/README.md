@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165265: XCLN: Run-Time 53 Error When You Start Forms Designer"
-permalink: kb/165/Q165265/
+permalink: /kb/165/Q165265/
 ---
 
 ## Q165265: XCLN: Run-Time 53 Error When You Start Forms Designer

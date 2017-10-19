@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257645: FIX: Setting Windowless Control to Transparent Prevents Animatio"
-permalink: kb/257/Q257645/
+permalink: /kb/257/Q257645/
 ---
 
 ## Q257645: FIX: Setting Windowless Control to Transparent Prevents Animatio

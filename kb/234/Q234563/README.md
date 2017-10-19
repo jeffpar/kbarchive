@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234563: XCLN: Errors Using Command Line Switches with Outlook"
-permalink: kb/234/Q234563/
+permalink: /kb/234/Q234563/
 ---
 
 ## Q234563: XCLN: Errors Using Command Line Switches with Outlook

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148714: Dr. Watson Error Installing Internet Information Server"
-permalink: kb/148/Q148714/
+permalink: /kb/148/Q148714/
 ---
 
 ## Q148714: Dr. Watson Error Installing Internet Information Server

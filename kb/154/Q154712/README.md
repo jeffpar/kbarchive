@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154712: Cannot Recognize Devices Attached to BusLogic BT-946c"
-permalink: kb/154/Q154712/
+permalink: /kb/154/Q154712/
 ---
 
 ## Q154712: Cannot Recognize Devices Attached to BusLogic BT-946c

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91020: Shared WFWG Directory on Novell NetWare Server Is Disconnected"
-permalink: kb/091/Q91020/
+permalink: /kb/091/Q91020/
 ---
 
 ## Q91020: Shared WFWG Directory on Novell NetWare Server Is Disconnected

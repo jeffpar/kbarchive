@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150025: Encarta: MPEG Video Errors and Problems"
-permalink: kb/150/Q150025/
+permalink: /kb/150/Q150025/
 ---
 
 ## Q150025: Encarta: MPEG Video Errors and Problems

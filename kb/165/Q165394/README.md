@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165394: XADM: Importing a Carriage Return in Multi-Valued Fields"
-permalink: kb/165/Q165394/
+permalink: /kb/165/Q165394/
 ---
 
 ## Q165394: XADM: Importing a Carriage Return in Multi-Valued Fields

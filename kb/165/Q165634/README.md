@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165634: PRB: View Wizard Loses Relations When Removing Field"
-permalink: kb/165/Q165634/
+permalink: /kb/165/Q165634/
 ---
 
 ## Q165634: PRB: View Wizard Loses Relations When Removing Field

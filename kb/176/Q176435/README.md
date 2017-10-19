@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176435: PRB: Compiling to Native Code Can Be Slow"
-permalink: kb/176/Q176435/
+permalink: /kb/176/Q176435/
 ---
 
 ## Q176435: PRB: Compiling to Native Code Can Be Slow

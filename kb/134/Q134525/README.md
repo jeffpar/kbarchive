@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134525: Placing Briefcase Inside Another Briefcase Causes Problems"
-permalink: kb/134/Q134525/
+permalink: /kb/134/Q134525/
 ---
 
 ## Q134525: Placing Briefcase Inside Another Briefcase Causes Problems

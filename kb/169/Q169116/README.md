@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169116: Troubleshooting TCP/IP CP Error 2 ERROR_FILE_NOT_FOUND"
-permalink: kb/169/Q169116/
+permalink: /kb/169/Q169116/
 ---
 
 ## Q169116: Troubleshooting TCP/IP CP Error 2 ERROR_FILE_NOT_FOUND

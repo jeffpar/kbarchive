@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137640: BACKSPACE Removes Only Half of Character in HyperTerminal"
-permalink: kb/137/Q137640/
+permalink: /kb/137/Q137640/
 ---
 
 ## Q137640: BACKSPACE Removes Only Half of Character in HyperTerminal

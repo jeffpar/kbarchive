@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281415: Systems Management Server Performance Monitor Objects Missing"
-permalink: kb/281/Q281415/
+permalink: /kb/281/Q281415/
 ---
 
 ## Q281415: Systems Management Server Performance Monitor Objects Missing

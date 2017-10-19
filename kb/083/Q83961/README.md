@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83961: Font Pack Can Be Installed in the Windows 3.1 Control Panel"
-permalink: kb/083/Q83961/
+permalink: /kb/083/Q83961/
 ---
 
 ## Q83961: Font Pack Can Be Installed in the Windows 3.1 Control Panel

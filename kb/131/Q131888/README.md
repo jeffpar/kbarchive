@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131888: PRB: Transaction Affects When Rules or Triggers Fire"
-permalink: kb/131/Q131888/
+permalink: /kb/131/Q131888/
 ---
 
 ## Q131888: PRB: Transaction Affects When Rules or Triggers Fire

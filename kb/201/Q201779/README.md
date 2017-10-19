@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201779: Err Msg: 550 &lt;Filename&gt;: Access Is Denied"
-permalink: kb/201/Q201779/
+permalink: /kb/201/Q201779/
 ---
 
 ## Q201779: Err Msg: 550 &lt;Filename&gt;: Access Is Denied

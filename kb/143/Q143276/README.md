@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143276: DriveSpace Reboot Fails When Compressing Large Hard Disk"
-permalink: kb/143/Q143276/
+permalink: /kb/143/Q143276/
 ---
 
 ## Q143276: DriveSpace Reboot Fails When Compressing Large Hard Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183347: SMS: Secondary Site Upgrade Stays at Phase 4 Complete"
-permalink: kb/183/Q183347/
+permalink: /kb/183/Q183347/
 ---
 
 ## Q183347: SMS: Secondary Site Upgrade Stays at Phase 4 Complete

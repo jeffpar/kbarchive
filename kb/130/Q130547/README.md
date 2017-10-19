@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130547: FIX: C2300 on Explicit Destructor Call in Class Template"
-permalink: kb/130/Q130547/
+permalink: /kb/130/Q130547/
 ---
 
 ## Q130547: FIX: C2300 on Explicit Destructor Call in Class Template

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169256: WD97: Scrolling Causes Text to &quot;Disappear&quot;"
-permalink: kb/169/Q169256/
+permalink: /kb/169/Q169256/
 ---
 
 ## Q169256: WD97: Scrolling Causes Text to &quot;Disappear&quot;

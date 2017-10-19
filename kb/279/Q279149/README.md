@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279149: CFS2: How to Import Scenery from Flight Simulator"
-permalink: kb/279/Q279149/
+permalink: /kb/279/Q279149/
 ---
 
 ## Q279149: CFS2: How to Import Scenery from Flight Simulator

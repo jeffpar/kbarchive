@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257273: Err Msg: Unable to Locate the BackOffice 4.5 Product Directory"
-permalink: kb/257/Q257273/
+permalink: /kb/257/Q257273/
 ---
 
 ## Q257273: Err Msg: Unable to Locate the BackOffice 4.5 Product Directory

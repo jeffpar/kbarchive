@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325325: XADM: Setup Hangs When You Upgrade to Enterprise Edition"
-permalink: kb/325/Q325325/
+permalink: /kb/325/Q325325/
 ---
 
 ## Q325325: XADM: Setup Hangs When You Upgrade to Enterprise Edition

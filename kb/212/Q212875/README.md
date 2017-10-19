@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q212875: SMS: SMS Installer on Novell Server Doesn't Allow Space in Name"
-permalink: kb/212/Q212875/
+permalink: /kb/212/Q212875/
 ---
 
 ## Q212875: SMS: SMS Installer on Novell Server Doesn't Allow Space in Name

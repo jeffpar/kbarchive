@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120839: &quot;Microsoft System Information&quot; Utility Included on Disk 1"
-permalink: kb/120/Q120839/
+permalink: /kb/120/Q120839/
 ---
 
 ## Q120839: &quot;Microsoft System Information&quot; Utility Included on Disk 1

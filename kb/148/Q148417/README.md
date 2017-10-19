@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148417: FP: How to Set Up a Form to Post Results by E-mail"
-permalink: kb/148/Q148417/
+permalink: /kb/148/Q148417/
 ---
 
 ## Q148417: FP: How to Set Up a Form to Post Results by E-mail

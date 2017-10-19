@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161919: WD97: Word Still Runs After OLE Automation Session"
-permalink: kb/161/Q161919/
+permalink: /kb/161/Q161919/
 ---
 
 ## Q161919: WD97: Word Still Runs After OLE Automation Session

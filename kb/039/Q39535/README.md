@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39535: Performance Degradation when Accessing Large Subdirectories"
-permalink: kb/039/Q39535/
+permalink: /kb/039/Q39535/
 ---
 
 ## Q39535: Performance Degradation when Accessing Large Subdirectories

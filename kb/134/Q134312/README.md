@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134312: PRB: TabIndex Setting Does Not Activate Selected Form First"
-permalink: kb/134/Q134312/
+permalink: /kb/134/Q134312/
 ---
 
 ## Q134312: PRB: TabIndex Setting Does Not Activate Selected Form First

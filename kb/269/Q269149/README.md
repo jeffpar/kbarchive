@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269149: Code Page Specific Fonts Lost in DOS Graphics Mode"
-permalink: kb/269/Q269149/
+permalink: /kb/269/Q269149/
 ---
 
 ## Q269149: Code Page Specific Fonts Lost in DOS Graphics Mode

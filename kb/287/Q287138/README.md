@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287138: PRB: eVT 3.0 Setup Does Not Detect Windows 98 SE Upgrade"
-permalink: kb/287/Q287138/
+permalink: /kb/287/Q287138/
 ---
 
 ## Q287138: PRB: eVT 3.0 Setup Does Not Detect Windows 98 SE Upgrade

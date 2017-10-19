@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122275: FIX: C Run-time Include Files Missing #pragma Pack Directives"
-permalink: kb/122/Q122275/
+permalink: /kb/122/Q122275/
 ---
 
 ## Q122275: FIX: C Run-time Include Files Missing #pragma Pack Directives

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q206835: SMS: Courier Sender Receives Incomplete Parcel"
-permalink: kb/206/Q206835/
+permalink: /kb/206/Q206835/
 ---
 
 ## Q206835: SMS: Courier Sender Receives Incomplete Parcel

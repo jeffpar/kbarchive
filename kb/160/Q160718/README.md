@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160718: SMS Does Not Report BIOS Information on Windows NT Systems"
-permalink: kb/160/Q160718/
+permalink: /kb/160/Q160718/
 ---
 
 ## Q160718: SMS Does Not Report BIOS Information on Windows NT Systems

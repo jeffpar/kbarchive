@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161202: PPT: Sample Code to Retrieve or Set Slide Size"
-permalink: kb/161/Q161202/
+permalink: /kb/161/Q161202/
 ---
 
 ## Q161202: PPT: Sample Code to Retrieve or Set Slide Size

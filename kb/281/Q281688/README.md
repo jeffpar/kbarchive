@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281688: Combat Flight Simulator: White Horizontal Flashes"
-permalink: kb/281/Q281688/
+permalink: /kb/281/Q281688/
 ---
 
 ## Q281688: Combat Flight Simulator: White Horizontal Flashes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111582: BUG: Arc() Not Drawn Completely with a Wide Pen"
-permalink: kb/111/Q111582/
+permalink: /kb/111/Q111582/
 ---
 
 ## Q111582: BUG: Arc() Not Drawn Completely with a Wide Pen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133186: Removing MS Plus! Does Not Restore Existing Internet Access"
-permalink: kb/133/Q133186/
+permalink: /kb/133/Q133186/
 ---
 
 ## Q133186: Removing MS Plus! Does Not Restore Existing Internet Access

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163546: WD97: Can't Save Changes to Toolbar Buttons on Custom Toolbar"
-permalink: kb/163/Q163546/
+permalink: /kb/163/Q163546/
 ---
 
 ## Q163546: WD97: Can't Save Changes to Toolbar Buttons on Custom Toolbar

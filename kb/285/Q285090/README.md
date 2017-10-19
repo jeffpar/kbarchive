@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285090: XFOR: Retiring an Internet Mail Service"
-permalink: kb/285/Q285090/
+permalink: /kb/285/Q285090/
 ---
 
 ## Q285090: XFOR: Retiring an Internet Mail Service

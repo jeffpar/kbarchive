@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60506: Workstation, Logon, and Other Domain Information"
-permalink: kb/060/Q60506/
+permalink: /kb/060/Q60506/
 ---
 
 ## Q60506: Workstation, Logon, and Other Domain Information

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166180: PRB: Certain Settings Of MaxLength Property Closes Visual FoxPro"
-permalink: kb/166/Q166180/
+permalink: /kb/166/Q166180/
 ---
 
 ## Q166180: PRB: Certain Settings Of MaxLength Property Closes Visual FoxPro

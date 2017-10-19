@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225260: Problems Installing Modem Sharing Service with Two Network Cards"
-permalink: kb/225/Q225260/
+permalink: /kb/225/Q225260/
 ---
 
 ## Q225260: Problems Installing Modem Sharing Service with Two Network Cards

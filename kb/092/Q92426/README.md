@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92426: LANtastic Allows Hidden and System Files to be Deleted"
-permalink: kb/092/Q92426/
+permalink: /kb/092/Q92426/
 ---
 
 ## Q92426: LANtastic Allows Hidden and System Files to be Deleted

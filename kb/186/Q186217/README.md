@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186217: 3C509 Is Not Autodetected During Setup on ThinkPad 760EL &amp; XL"
-permalink: kb/186/Q186217/
+permalink: /kb/186/Q186217/
 ---
 
 ## Q186217: 3C509 Is Not Autodetected During Setup on ThinkPad 760EL &amp; XL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167013: XCLN: Exchange and Mail Provider SMTP Templates Different"
-permalink: kb/167/Q167013/
+permalink: /kb/167/Q167013/
 ---
 
 ## Q167013: XCLN: Exchange and Mail Provider SMTP Templates Different

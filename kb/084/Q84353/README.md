@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84353: Microphone II Requires Windows 3.1 Communications Driver"
-permalink: kb/084/Q84353/
+permalink: /kb/084/Q84353/
 ---
 
 ## Q84353: Microphone II Requires Windows 3.1 Communications Driver

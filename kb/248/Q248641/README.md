@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248641: Clients Cannot Browse Through Proxy Server with Demand Dial"
-permalink: kb/248/Q248641/
+permalink: /kb/248/Q248641/
 ---
 
 ## Q248641: Clients Cannot Browse Through Proxy Server with Demand Dial

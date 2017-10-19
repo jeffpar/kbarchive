@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74498: Willow VGA-TV NTSC Mode Does Not Display Setup"
-permalink: kb/074/Q74498/
+permalink: /kb/074/Q74498/
 ---
 
 ## Q74498: Willow VGA-TV NTSC Mode Does Not Display Setup

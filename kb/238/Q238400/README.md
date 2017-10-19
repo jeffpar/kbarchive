@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238400: WD97: Unable to Access Spelling Checker Using Terminal Server"
-permalink: kb/238/Q238400/
+permalink: /kb/238/Q238400/
 ---
 
 ## Q238400: WD97: Unable to Access Spelling Checker Using Terminal Server

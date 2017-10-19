@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197490: PRB: ATL Full Control Needs Enabled Stock Property for Access 97"
-permalink: kb/197/Q197490/
+permalink: /kb/197/Q197490/
 ---
 
 ## Q197490: PRB: ATL Full Control Needs Enabled Stock Property for Access 97

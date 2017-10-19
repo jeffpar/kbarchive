@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190595: INFO: Visual Modeler 2.0: Where Is the ORDERSYS Sample?"
-permalink: kb/190/Q190595/
+permalink: /kb/190/Q190595/
 ---
 
 ## Q190595: INFO: Visual Modeler 2.0: Where Is the ORDERSYS Sample?

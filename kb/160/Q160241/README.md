@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160241: WD97: Page Break Deleted After Drawing Table"
-permalink: kb/160/Q160241/
+permalink: /kb/160/Q160241/
 ---
 
 ## Q160241: WD97: Page Break Deleted After Drawing Table

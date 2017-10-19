@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135112: How to Use GENDBC to Create Utility that Recreates Complex CDX"
-permalink: kb/135/Q135112/
+permalink: /kb/135/Q135112/
 ---
 
 ## Q135112: How to Use GENDBC to Create Utility that Recreates Complex CDX

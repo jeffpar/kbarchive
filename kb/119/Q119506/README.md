@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119506: Transmitting a BREAK Signal"
-permalink: kb/119/Q119506/
+permalink: /kb/119/Q119506/
 ---
 
 ## Q119506: Transmitting a BREAK Signal

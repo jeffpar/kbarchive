@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320022: XCLN: How to Use the Mdbvu32 Utility to Remove Inbox Rules"
-permalink: kb/320/Q320022/
+permalink: /kb/320/Q320022/
 ---
 
 ## Q320022: XCLN: How to Use the Mdbvu32 Utility to Remove Inbox Rules

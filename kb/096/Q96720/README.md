@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96720: PC WRmt: Using Telebit Trailblazer Modems"
-permalink: kb/096/Q96720/
+permalink: /kb/096/Q96720/
 ---
 
 ## Q96720: PC WRmt: Using Telebit Trailblazer Modems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218960: XFOR: InterOrg International Version Doesn't Replicate PF"
-permalink: kb/218/Q218960/
+permalink: /kb/218/Q218960/
 ---
 
 ## Q218960: XFOR: InterOrg International Version Doesn't Replicate PF

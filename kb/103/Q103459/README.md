@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103459: Cinemania: Words Do Not Fit on the Buttons"
-permalink: kb/103/Q103459/
+permalink: /kb/103/Q103459/
 ---
 
 ## Q103459: Cinemania: Words Do Not Fit on the Buttons

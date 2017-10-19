@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245966: Winmgt32.dll May Complete Same Verb Three Times"
-permalink: kb/245/Q245966/
+permalink: /kb/245/Q245966/
 ---
 
 ## Q245966: Winmgt32.dll May Complete Same Verb Three Times

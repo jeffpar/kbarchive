@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257664: FIX: Creating an Object in a VB DLL on a Non-UI Thread"
-permalink: kb/257/Q257664/
+permalink: /kb/257/Q257664/
 ---
 
 ## Q257664: FIX: Creating an Object in a VB DLL on a Non-UI Thread

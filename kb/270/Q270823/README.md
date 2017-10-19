@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270823: ELL: Dictation Score Incorrect When You Return to Previous Level"
-permalink: kb/270/Q270823/
+permalink: /kb/270/Q270823/
 ---
 
 ## Q270823: ELL: Dictation Score Incorrect When You Return to Previous Level

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119574: WinNT 3.1 to 3.5 Upgrade Does Not Copy OEM SCSI Drivers to Disk"
-permalink: kb/119/Q119574/
+permalink: /kb/119/Q119574/
 ---
 
 ## Q119574: WinNT 3.1 to 3.5 Upgrade Does Not Copy OEM SCSI Drivers to Disk

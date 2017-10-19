@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66963: Can't Run Different Applications with Same Name Simultaneously"
-permalink: kb/066/Q66963/
+permalink: /kb/066/Q66963/
 ---
 
 ## Q66963: Can't Run Different Applications with Same Name Simultaneously

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159498: HOWTO: Call LanMan Services from 32-bit Visual Basic Apps"
-permalink: kb/159/Q159498/
+permalink: /kb/159/Q159498/
 ---
 
 ## Q159498: HOWTO: Call LanMan Services from 32-bit Visual Basic Apps

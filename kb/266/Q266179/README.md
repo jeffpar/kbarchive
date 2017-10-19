@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266179: Unable to Create Volume When Adding a Directory to a Dfs Share"
-permalink: kb/266/Q266179/
+permalink: /kb/266/Q266179/
 ---
 
 ## Q266179: Unable to Create Volume When Adding a Directory to a Dfs Share

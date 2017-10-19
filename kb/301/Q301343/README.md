@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301343: Cannot Load Login Server URL in a Frameset"
-permalink: kb/301/Q301343/
+permalink: /kb/301/Q301343/
 ---
 
 ## Q301343: Cannot Load Login Server URL in a Frameset

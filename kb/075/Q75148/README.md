@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75148: System Requirements for IBM PC-DOS 5.0 Upgrade"
-permalink: kb/075/Q75148/
+permalink: /kb/075/Q75148/
 ---
 
 ## Q75148: System Requirements for IBM PC-DOS 5.0 Upgrade

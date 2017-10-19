@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143059: Network Client 3.0 Removes Most Recent Persistent Connection"
-permalink: kb/143/Q143059/
+permalink: /kb/143/Q143059/
 ---
 
 ## Q143059: Network Client 3.0 Removes Most Recent Persistent Connection

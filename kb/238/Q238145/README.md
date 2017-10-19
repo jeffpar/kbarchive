@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238145: How to Monitor Bandwidth Throttling"
-permalink: kb/238/Q238145/
+permalink: /kb/238/Q238145/
 ---
 
 ## Q238145: How to Monitor Bandwidth Throttling

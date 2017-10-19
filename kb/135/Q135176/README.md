@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135176: MS-DOS-Based Program Does Not Detect VESA Graphics"
-permalink: kb/135/Q135176/
+permalink: /kb/135/Q135176/
 ---
 
 ## Q135176: MS-DOS-Based Program Does Not Detect VESA Graphics

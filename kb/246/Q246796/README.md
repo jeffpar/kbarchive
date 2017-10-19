@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246796: STOP 0x01e Error Occurs with pcANYWHERE and Compaq Surveyor"
-permalink: kb/246/Q246796/
+permalink: /kb/246/Q246796/
 ---
 
 ## Q246796: STOP 0x01e Error Occurs with pcANYWHERE and Compaq Surveyor

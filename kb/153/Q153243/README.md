@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153243: Audit16 Stops on OS/2 Client with a System Error: 3176"
-permalink: kb/153/Q153243/
+permalink: /kb/153/Q153243/
 ---
 
 ## Q153243: Audit16 Stops on OS/2 Client with a System Error: 3176

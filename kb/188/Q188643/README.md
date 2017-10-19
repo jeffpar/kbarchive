@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188643: XADM: Unable to Hide Global Address List"
-permalink: kb/188/Q188643/
+permalink: /kb/188/Q188643/
 ---
 
 ## Q188643: XADM: Unable to Hide Global Address List

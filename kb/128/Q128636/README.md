@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128636: HOWTO: Set Up SourceSafe for Replication Under Windows NT"
-permalink: kb/128/Q128636/
+permalink: /kb/128/Q128636/
 ---
 
 ## Q128636: HOWTO: Set Up SourceSafe for Replication Under Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242875: How to Use WinWord to Convert RTF Files to Windows DOC Files"
-permalink: kb/242/Q242875/
+permalink: /kb/242/Q242875/
 ---
 
 ## Q242875: How to Use WinWord to Convert RTF Files to Windows DOC Files

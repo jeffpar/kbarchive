@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132842: Act 2.04 Prints to Color Printer in Black and White"
-permalink: kb/132/Q132842/
+permalink: /kb/132/Q132842/
 ---
 
 ## Q132842: Act 2.04 Prints to Color Printer in Black and White

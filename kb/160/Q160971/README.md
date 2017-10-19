@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160971: XADM: How to Export the Connections Container to a Text File"
-permalink: kb/160/Q160971/
+permalink: /kb/160/Q160971/
 ---
 
 ## Q160971: XADM: How to Export the Connections Container to a Text File

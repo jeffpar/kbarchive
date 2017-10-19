@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129499: PC Win DOS: Copying Messages from MMF to MS-DOS Client Folder"
-permalink: kb/129/Q129499/
+permalink: /kb/129/Q129499/
 ---
 
 ## Q129499: PC Win DOS: Copying Messages from MMF to MS-DOS Client Folder

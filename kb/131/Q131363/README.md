@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131363: Changing Display Drivers Fails with Show Compatible Devices"
-permalink: kb/131/Q131363/
+permalink: /kb/131/Q131363/
 ---
 
 ## Q131363: Changing Display Drivers Fails with Show Compatible Devices

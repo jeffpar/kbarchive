@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132552: SNA: Separate Logon Prompt If Non-MS Network Protocol Installed"
-permalink: kb/132/Q132552/
+permalink: /kb/132/Q132552/
 ---
 
 ## Q132552: SNA: Separate Logon Prompt If Non-MS Network Protocol Installed

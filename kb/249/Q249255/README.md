@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249255: Cannot Insert File Attachment from Local Drive to Office"
-permalink: kb/249/Q249255/
+permalink: /kb/249/Q249255/
 ---
 
 ## Q249255: Cannot Insert File Attachment from Local Drive to Office

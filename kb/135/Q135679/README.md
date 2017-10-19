@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135679: IGMP Group members Do Not Respond to IGMP Group Query Frames"
-permalink: kb/135/Q135679/
+permalink: /kb/135/Q135679/
 ---
 
 ## Q135679: IGMP Group members Do Not Respond to IGMP Group Query Frames

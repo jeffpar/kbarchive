@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218066: The Server Status Tool Does Not Work Without an E-mail Client"
-permalink: kb/218/Q218066/
+permalink: /kb/218/Q218066/
 ---
 
 ## Q218066: The Server Status Tool Does Not Work Without an E-mail Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275026: XADM: Notifications Not Sent by Mailbox Manager in Audit Mode"
-permalink: kb/275/Q275026/
+permalink: /kb/275/Q275026/
 ---
 
 ## Q275026: XADM: Notifications Not Sent by Mailbox Manager in Audit Mode

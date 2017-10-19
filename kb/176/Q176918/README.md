@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176918: Cannot Change Network Printer Location from a Command Prompt"
-permalink: kb/176/Q176918/
+permalink: /kb/176/Q176918/
 ---
 
 ## Q176918: Cannot Change Network Printer Location from a Command Prompt

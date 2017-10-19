@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246878: How to Configure a Compass Client to Log On to an MMS Server"
-permalink: kb/246/Q246878/
+permalink: /kb/246/Q246878/
 ---
 
 ## Q246878: How to Configure a Compass Client to Log On to an MMS Server

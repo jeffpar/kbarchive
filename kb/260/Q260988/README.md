@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260988: Capture RE Fails When You Use TCP/IP MS LINK Component"
-permalink: kb/260/Q260988/
+permalink: /kb/260/Q260988/
 ---
 
 ## Q260988: Capture RE Fails When You Use TCP/IP MS LINK Component

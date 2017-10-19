@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153576: Despooler Fails to Retry After Package Distribution Errs"
-permalink: kb/153/Q153576/
+permalink: /kb/153/Q153576/
 ---
 
 ## Q153576: Despooler Fails to Retry After Package Distribution Errs

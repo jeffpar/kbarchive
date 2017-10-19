@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242521: Error Message: SetPrivilege on Account Failed"
-permalink: kb/242/Q242521/
+permalink: /kb/242/Q242521/
 ---
 
 ## Q242521: Error Message: SetPrivilege on Account Failed

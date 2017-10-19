@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191495: BUG: VC++ Tools with Long File Name (LFN) Parameters Fail on NT"
-permalink: kb/191/Q191495/
+permalink: /kb/191/Q191495/
 ---
 
 ## Q191495: BUG: VC++ Tools with Long File Name (LFN) Parameters Fail on NT

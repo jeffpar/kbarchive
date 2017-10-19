@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118827: How to Disable NetWare Broadcasts"
-permalink: kb/118/Q118827/
+permalink: /kb/118/Q118827/
 ---
 
 ## Q118827: How to Disable NetWare Broadcasts

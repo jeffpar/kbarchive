@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249917: Stop 0x00000050 on Terminal Server with Lexmark Printer Driver"
-permalink: kb/249/Q249917/
+permalink: /kb/249/Q249917/
 ---
 
 ## Q249917: Stop 0x00000050 on Terminal Server with Lexmark Printer Driver

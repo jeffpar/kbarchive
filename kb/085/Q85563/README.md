@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85563: Windows, Novell NetWare, Incorrect Form Number when Printing"
-permalink: kb/085/Q85563/
+permalink: /kb/085/Q85563/
 ---
 
 ## Q85563: Windows, Novell NetWare, Incorrect Form Number when Printing

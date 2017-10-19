@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183904: XCLN: How to Delete All MAPI Profiles for a User"
-permalink: kb/183/Q183904/
+permalink: /kb/183/Q183904/
 ---
 
 ## Q183904: XCLN: How to Delete All MAPI Profiles for a User

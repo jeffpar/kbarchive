@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131915: PC Ext: Using External and Dynamic Drives on Novell NetWare"
-permalink: kb/131/Q131915/
+permalink: /kb/131/Q131915/
 ---
 
 ## Q131915: PC Ext: Using External and Dynamic Drives on Novell NetWare

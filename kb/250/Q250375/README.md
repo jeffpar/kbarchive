@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250375: Host Security Events 1322 &amp; 1002 After Adding Backup Database"
-permalink: kb/250/Q250375/
+permalink: /kb/250/Q250375/
 ---
 
 ## Q250375: Host Security Events 1322 &amp; 1002 After Adding Backup Database

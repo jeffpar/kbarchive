@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224181: FIX: GDI Resouce Leak Using Checkboxes in ListVew Control"
-permalink: kb/224/Q224181/
+permalink: /kb/224/Q224181/
 ---
 
 ## Q224181: FIX: GDI Resouce Leak Using Checkboxes in ListVew Control

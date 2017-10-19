@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174014: How to Specify Which Modem to Use to Connect to MSN"
-permalink: kb/174/Q174014/
+permalink: /kb/174/Q174014/
 ---
 
 ## Q174014: How to Specify Which Modem to Use to Connect to MSN

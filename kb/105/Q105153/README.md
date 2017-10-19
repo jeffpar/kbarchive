@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105153: AppleTalk Architecture Compared to the OSI Model"
-permalink: kb/105/Q105153/
+permalink: /kb/105/Q105153/
 ---
 
 ## Q105153: AppleTalk Architecture Compared to the OSI Model

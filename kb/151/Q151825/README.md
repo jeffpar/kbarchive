@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151825: Gateway Error When Run CGI Application Connecting to Database"
-permalink: kb/151/Q151825/
+permalink: /kb/151/Q151825/
 ---
 
 ## Q151825: Gateway Error When Run CGI Application Connecting to Database

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99175: Bookshelf: Message Asks for Encarta CD"
-permalink: kb/099/Q99175/
+permalink: /kb/099/Q99175/
 ---
 
 ## Q99175: Bookshelf: Message Asks for Encarta CD

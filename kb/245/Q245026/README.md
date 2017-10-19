@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245026: Unattended Installation of 3Com NIC Generates Error Message."
-permalink: kb/245/Q245026/
+permalink: /kb/245/Q245026/
 ---
 
 ## Q245026: Unattended Installation of 3Com NIC Generates Error Message.

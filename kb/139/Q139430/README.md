@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139430: Hardware Detection Hangs with Videostar Pro Capture Card"
-permalink: kb/139/Q139430/
+permalink: /kb/139/Q139430/
 ---
 
 ## Q139430: Hardware Detection Hangs with Videostar Pro Capture Card

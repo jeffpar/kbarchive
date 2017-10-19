@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141957: BUG: Float Fields Show Asterisks in Wizard-Generated Screen"
-permalink: kb/141/Q141957/
+permalink: /kb/141/Q141957/
 ---
 
 ## Q141957: BUG: Float Fields Show Asterisks in Wizard-Generated Screen

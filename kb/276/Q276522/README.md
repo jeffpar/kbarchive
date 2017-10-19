@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276522: Server Stops TCP Session That Is Waiting on a Zero-Size Window"
-permalink: kb/276/Q276522/
+permalink: /kb/276/Q276522/
 ---
 
 ## Q276522: Server Stops TCP Session That Is Waiting on a Zero-Size Window

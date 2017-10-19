@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227821: Blue Screen STOP Error When Connecting to UNIX Server Volume"
-permalink: kb/227/Q227821/
+permalink: /kb/227/Q227821/
 ---
 
 ## Q227821: Blue Screen STOP Error When Connecting to UNIX Server Volume

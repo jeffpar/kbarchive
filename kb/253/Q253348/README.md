@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253348: XCON: Exchange Server Cannot Reply All to Notes Recipients"
-permalink: kb/253/Q253348/
+permalink: /kb/253/Q253348/
 ---
 
 ## Q253348: XCON: Exchange Server Cannot Reply All to Notes Recipients

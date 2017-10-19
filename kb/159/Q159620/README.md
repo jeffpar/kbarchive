@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159620: SMS: Setup Only Allows 22 Characters for Service Account"
-permalink: kb/159/Q159620/
+permalink: /kb/159/Q159620/
 ---
 
 ## Q159620: SMS: Setup Only Allows 22 Characters for Service Account

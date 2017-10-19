@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318746: XADM: Err Mssg: Error 123: The Filename, Directory Name, or ..."
-permalink: kb/318/Q318746/
+permalink: /kb/318/Q318746/
 ---
 
 ## Q318746: XADM: Err Mssg: Error 123: The Filename, Directory Name, or ...

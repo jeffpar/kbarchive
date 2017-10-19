@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274365: MSN Companion Time Zone Settings"
-permalink: kb/274/Q274365/
+permalink: /kb/274/Q274365/
 ---
 
 ## Q274365: MSN Companion Time Zone Settings

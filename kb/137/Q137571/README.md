@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137571: SRV.SYS Error 2023"
-permalink: kb/137/Q137571/
+permalink: /kb/137/Q137571/
 ---
 
 ## Q137571: SRV.SYS Error 2023

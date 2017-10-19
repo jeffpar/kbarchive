@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151013: XCLN: PC Mail Users Cannot Open Macintosh Attachments"
-permalink: kb/151/Q151013/
+permalink: /kb/151/Q151013/
 ---
 
 ## Q151013: XCLN: PC Mail Users Cannot Open Macintosh Attachments

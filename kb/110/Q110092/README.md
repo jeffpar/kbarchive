@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110092: How to Flush 32-Bit File Access Cache (VCACHE)"
-permalink: kb/110/Q110092/
+permalink: /kb/110/Q110092/
 ---
 
 ## Q110092: How to Flush 32-Bit File Access Cache (VCACHE)

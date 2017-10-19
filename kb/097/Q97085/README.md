@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97085: 3COM: Mail Moves Only in One Direction"
-permalink: kb/097/Q97085/
+permalink: /kb/097/Q97085/
 ---
 
 ## Q97085: 3COM: Mail Moves Only in One Direction

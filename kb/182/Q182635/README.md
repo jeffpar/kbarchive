@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182635: Paste in Label Edit Mode Shows Name Conflict Message Box"
-permalink: kb/182/Q182635/
+permalink: /kb/182/Q182635/
 ---
 
 ## Q182635: Paste in Label Edit Mode Shows Name Conflict Message Box

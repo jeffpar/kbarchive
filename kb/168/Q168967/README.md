@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168967: WD97: File Size Twice as Big When Compared to Earlier Version"
-permalink: kb/168/Q168967/
+permalink: /kb/168/Q168967/
 ---
 
 ## Q168967: WD97: File Size Twice as Big When Compared to Earlier Version

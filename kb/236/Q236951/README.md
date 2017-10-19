@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236951: PRB: VI Projects Do Not Appear or Added to Wrong VSS Database"
-permalink: kb/236/Q236951/
+permalink: /kb/236/Q236951/
 ---
 
 ## Q236951: PRB: VI Projects Do Not Appear or Added to Wrong VSS Database

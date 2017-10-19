@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170569: WinNT Stops Recognizing PCI Network Adapter After It Is Moved"
-permalink: kb/170/Q170569/
+permalink: /kb/170/Q170569/
 ---
 
 ## Q170569: WinNT Stops Recognizing PCI Network Adapter After It Is Moved

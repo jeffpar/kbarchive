@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269431: Cannot Print with Error: The Network Name Cannot Be Found"
-permalink: kb/269/Q269431/
+permalink: /kb/269/Q269431/
 ---
 
 ## Q269431: Cannot Print with Error: The Network Name Cannot Be Found

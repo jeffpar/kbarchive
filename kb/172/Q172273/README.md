@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172273: HOWTO:Constants in OpenProcess API dsDesiredAccess Parameter"
-permalink: kb/172/Q172273/
+permalink: /kb/172/Q172273/
 ---
 
 ## Q172273: HOWTO:Constants in OpenProcess API dsDesiredAccess Parameter

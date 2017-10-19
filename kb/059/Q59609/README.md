@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59609: NEC Silentwriter 2 260 and 290"
-permalink: kb/059/Q59609/
+permalink: /kb/059/Q59609/
 ---
 
 ## Q59609: NEC Silentwriter 2 260 and 290

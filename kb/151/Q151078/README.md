@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151078: FIX: Arrows to Scroll Tabs in TabStrip Control Not Shown"
-permalink: kb/151/Q151078/
+permalink: /kb/151/Q151078/
 ---
 
 ## Q151078: FIX: Arrows to Scroll Tabs in TabStrip Control Not Shown

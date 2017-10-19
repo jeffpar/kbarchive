@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114417: Net Help Start &lt;Service&gt; Works only for Windows NT 3.1 Services"
-permalink: kb/114/Q114417/
+permalink: /kb/114/Q114417/
 ---
 
 ## Q114417: Net Help Start &lt;Service&gt; Works only for Windows NT 3.1 Services

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153062: Picture of Modem Does Not Appear in Modem Activity Window"
-permalink: kb/153/Q153062/
+permalink: /kb/153/Q153062/
 ---
 
 ## Q153062: Picture of Modem Does Not Appear in Modem Activity Window

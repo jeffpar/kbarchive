@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70050: Learning DOS 2.00: Hangs on Sanyo 16NB Laptop"
-permalink: kb/070/Q70050/
+permalink: /kb/070/Q70050/
 ---
 
 ## Q70050: Learning DOS 2.00: Hangs on Sanyo 16NB Laptop

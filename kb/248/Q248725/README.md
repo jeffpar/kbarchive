@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248725: XADM: Installing Exchange 5.5 on Windows 2000 May Not Work"
-permalink: kb/248/Q248725/
+permalink: /kb/248/Q248725/
 ---
 
 ## Q248725: XADM: Installing Exchange 5.5 on Windows 2000 May Not Work

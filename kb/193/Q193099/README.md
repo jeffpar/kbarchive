@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193099: FIX: CDialog::Create() Returns Incorrect Value Calling EndDialog"
-permalink: kb/193/Q193099/
+permalink: /kb/193/Q193099/
 ---
 
 ## Q193099: FIX: CDialog::Create() Returns Incorrect Value Calling EndDialog

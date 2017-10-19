@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77694: Setting the Amount of Memory for the Audio Data Buffer"
-permalink: kb/077/Q77694/
+permalink: /kb/077/Q77694/
 ---
 
 ## Q77694: Setting the Amount of Memory for the Audio Data Buffer

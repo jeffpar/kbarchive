@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107785: WD97: Word Hangs or Returns Error Printing to Fax"
-permalink: kb/107/Q107785/
+permalink: /kb/107/Q107785/
 ---
 
 ## Q107785: WD97: Word Hangs or Returns Error Printing to Fax

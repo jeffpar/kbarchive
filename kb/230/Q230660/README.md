@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230660: SMS 1.2 PCM Dialog Box Remains Open After Logging On"
-permalink: kb/230/Q230660/
+permalink: /kb/230/Q230660/
 ---
 
 ## Q230660: SMS 1.2 PCM Dialog Box Remains Open After Logging On

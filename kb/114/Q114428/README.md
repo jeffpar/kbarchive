@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114428: ProAudio Spectrum 16 Card Plays Wave Files at High Speeds"
-permalink: kb/114/Q114428/
+permalink: /kb/114/Q114428/
 ---
 
 ## Q114428: ProAudio Spectrum 16 Card Plays Wave Files at High Speeds

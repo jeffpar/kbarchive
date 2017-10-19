@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255944: Allegiance: Censored Words Are Displayed When You Chat"
-permalink: kb/255/Q255944/
+permalink: /kb/255/Q255944/
 ---
 
 ## Q255944: Allegiance: Censored Words Are Displayed When You Chat

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187424: Start Menu Remote Shortcut Not Removed"
-permalink: kb/187/Q187424/
+permalink: /kb/187/Q187424/
 ---
 
 ## Q187424: Start Menu Remote Shortcut Not Removed

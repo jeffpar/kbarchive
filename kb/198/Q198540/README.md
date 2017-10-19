@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198540: Terminal Server Users Receive Event Log Error 1000 Logging On"
-permalink: kb/198/Q198540/
+permalink: /kb/198/Q198540/
 ---
 
 ## Q198540: Terminal Server Users Receive Event Log Error 1000 Logging On

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111466: WFWG: Racal NI6510 Driver Doesn't Work with Etherblaster NIC"
-permalink: kb/111/Q111466/
+permalink: /kb/111/Q111466/
 ---
 
 ## Q111466: WFWG: Racal NI6510 Driver Doesn't Work with Etherblaster NIC

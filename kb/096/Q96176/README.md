@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96176: ADDNAME2.EXE: A More Flexible ADDNAME Utility"
-permalink: kb/096/Q96176/
+permalink: /kb/096/Q96176/
 ---
 
 ## Q96176: ADDNAME2.EXE: A More Flexible ADDNAME Utility

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139897: Computer Profile Setup Fails to Setup Intel EtherExpress Pro NIC"
-permalink: kb/139/Q139897/
+permalink: /kb/139/Q139897/
 ---
 
 ## Q139897: Computer Profile Setup Fails to Setup Intel EtherExpress Pro NIC

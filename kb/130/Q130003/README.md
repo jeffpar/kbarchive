@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130003: Windows NT Redirector Does Not Handle Invalid TID Properly"
-permalink: kb/130/Q130003/
+permalink: /kb/130/Q130003/
 ---
 
 ## Q130003: Windows NT Redirector Does Not Handle Invalid TID Properly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231879: PRB: No Update Tables are Specified when Updating Records"
-permalink: kb/231/Q231879/
+permalink: /kb/231/Q231879/
 ---
 
 ## Q231879: PRB: No Update Tables are Specified when Updating Records

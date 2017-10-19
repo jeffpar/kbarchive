@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131446: FIX: File or Project Not Found If Add or Rename Long Filename"
-permalink: kb/131/Q131446/
+permalink: /kb/131/Q131446/
 ---
 
 ## Q131446: FIX: File or Project Not Found If Add or Rename Long Filename

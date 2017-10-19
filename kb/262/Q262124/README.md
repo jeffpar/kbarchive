@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262124: XCON: Message Loop to SMTP Custom Recipient Over X.400 Connector"
-permalink: kb/262/Q262124/
+permalink: /kb/262/Q262124/
 ---
 
 ## Q262124: XCON: Message Loop to SMTP Custom Recipient Over X.400 Connector

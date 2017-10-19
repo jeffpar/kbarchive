@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156637: HP DeskJet 660C and 855C Drivers Do Not Print Color at 600 DPI"
-permalink: kb/156/Q156637/
+permalink: /kb/156/Q156637/
 ---
 
 ## Q156637: HP DeskJet 660C and 855C Drivers Do Not Print Color at 600 DPI

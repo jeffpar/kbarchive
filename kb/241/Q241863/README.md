@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241863: Lexmark 4226 Model 302 Printer Driver Included in Service Pack 6"
-permalink: kb/241/Q241863/
+permalink: /kb/241/Q241863/
 ---
 
 ## Q241863: Lexmark 4226 Model 302 Printer Driver Included in Service Pack 6

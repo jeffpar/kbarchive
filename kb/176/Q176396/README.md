@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176396: XCON: Long Lines of Text Cause Content Conversion Error"
-permalink: kb/176/Q176396/
+permalink: /kb/176/Q176396/
 ---
 
 ## Q176396: XCON: Long Lines of Text Cause Content Conversion Error

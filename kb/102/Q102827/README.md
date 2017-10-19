@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102827: Replacing a View in a Splitter Window"
-permalink: kb/102/Q102827/
+permalink: /kb/102/Q102827/
 ---
 
 ## Q102827: Replacing a View in a Splitter Window

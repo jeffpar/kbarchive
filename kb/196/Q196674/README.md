@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196674: WD97: Word Doesn't Include Page Ranges in Index"
-permalink: kb/196/Q196674/
+permalink: /kb/196/Q196674/
 ---
 
 ## Q196674: WD97: Word Doesn't Include Page Ranges in Index

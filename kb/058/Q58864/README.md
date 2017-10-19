@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58864: Using a Macro to Determine the Current Segment"
-permalink: kb/058/Q58864/
+permalink: /kb/058/Q58864/
 ---
 
 ## Q58864: Using a Macro to Determine the Current Segment

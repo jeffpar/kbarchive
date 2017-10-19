@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152384: FIX: DDX for Short Causes Stack Corruption"
-permalink: kb/152/Q152384/
+permalink: /kb/152/Q152384/
 ---
 
 ## Q152384: FIX: DDX for Short Causes Stack Corruption

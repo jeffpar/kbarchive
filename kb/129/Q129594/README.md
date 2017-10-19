@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129594: Command-Line Switches for Microsoft Exchange"
-permalink: kb/129/Q129594/
+permalink: /kb/129/Q129594/
 ---
 
 ## Q129594: Command-Line Switches for Microsoft Exchange

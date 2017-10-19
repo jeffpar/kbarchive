@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153241: Office95 Professional Falsely Reported in Inventory"
-permalink: kb/153/Q153241/
+permalink: /kb/153/Q153241/
 ---
 
 ## Q153241: Office95 Professional Falsely Reported in Inventory

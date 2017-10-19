@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234315: Excel 2000 At at Glance Comments and Corrections"
-permalink: kb/234/Q234315/
+permalink: /kb/234/Q234315/
 ---
 
 ## Q234315: Excel 2000 At at Glance Comments and Corrections

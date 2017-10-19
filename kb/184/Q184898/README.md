@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184898: PRB: Can't Use Late Binding When Server Method Uses UDT"
-permalink: kb/184/Q184898/
+permalink: /kb/184/Q184898/
 ---
 
 ## Q184898: PRB: Can't Use Late Binding When Server Method Uses UDT

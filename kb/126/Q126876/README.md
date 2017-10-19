@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126876: Baseball 1995: BS95READ.TXT Contents (Part 1 of 3)"
-permalink: kb/126/Q126876/
+permalink: /kb/126/Q126876/
 ---
 
 ## Q126876: Baseball 1995: BS95READ.TXT Contents (Part 1 of 3)

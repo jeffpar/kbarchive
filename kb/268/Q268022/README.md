@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268022: PRB: SELECT Returns NULL Rows Filtering Join on Child Table"
-permalink: kb/268/Q268022/
+permalink: /kb/268/Q268022/
 ---
 
 ## Q268022: PRB: SELECT Returns NULL Rows Filtering Join on Child Table

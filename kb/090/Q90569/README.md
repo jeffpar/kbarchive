@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90569: Toshiba Laptops Should Be Configured as MS-DOS System"
-permalink: kb/090/Q90569/
+permalink: /kb/090/Q90569/
 ---
 
 ## Q90569: Toshiba Laptops Should Be Configured as MS-DOS System

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123471: HOWTO: Change the Data Directory Location"
-permalink: kb/123/Q123471/
+permalink: /kb/123/Q123471/
 ---
 
 ## Q123471: HOWTO: Change the Data Directory Location

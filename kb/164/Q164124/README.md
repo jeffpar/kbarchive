@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164124: Exchange MTA: Page File Bytes Grows Indefinitely in Perfmon"
-permalink: kb/164/Q164124/
+permalink: /kb/164/Q164124/
 ---
 
 ## Q164124: Exchange MTA: Page File Bytes Grows Indefinitely in Perfmon

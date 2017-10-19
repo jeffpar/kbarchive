@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192153: DOC: CompactDatabase IntelliSense Different than Documentation"
-permalink: kb/192/Q192153/
+permalink: /kb/192/Q192153/
 ---
 
 ## Q192153: DOC: CompactDatabase IntelliSense Different than Documentation

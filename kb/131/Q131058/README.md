@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131058: INFO: Tips for Remote Debugging with Visual C++ 2.x, 4.0/5.0/6.0"
-permalink: kb/131/Q131058/
+permalink: /kb/131/Q131058/
 ---
 
 ## Q131058: INFO: Tips for Remote Debugging with Visual C++ 2.x, 4.0/5.0/6.0

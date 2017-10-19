@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185751: Err: The System Has Not Enabled IO Address Mapping..."
-permalink: kb/185/Q185751/
+permalink: /kb/185/Q185751/
 ---
 
 ## Q185751: Err: The System Has Not Enabled IO Address Mapping...

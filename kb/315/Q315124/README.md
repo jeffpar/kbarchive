@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315124: SAMPLE: Use the Winsock ActiveX Control with Visual FoxPro"
-permalink: kb/315/Q315124/
+permalink: /kb/315/Q315124/
 ---
 
 ## Q315124: SAMPLE: Use the Winsock ActiveX Control with Visual FoxPro

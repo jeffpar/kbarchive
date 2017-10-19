@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176657: PRB: SET FILTER Command Behaves Differently in a Method or Event"
-permalink: kb/176/Q176657/
+permalink: /kb/176/Q176657/
 ---
 
 ## Q176657: PRB: SET FILTER Command Behaves Differently in a Method or Event

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197047: Failover/Failback Policies on Microsoft Cluster Server"
-permalink: kb/197/Q197047/
+permalink: /kb/197/Q197047/
 ---
 
 ## Q197047: Failover/Failback Policies on Microsoft Cluster Server

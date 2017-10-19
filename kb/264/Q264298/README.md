@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264298: WD97: Word Not Restored/Maximized When Clicking Program Button"
-permalink: kb/264/Q264298/
+permalink: /kb/264/Q264298/
 ---
 
 ## Q264298: WD97: Word Not Restored/Maximized When Clicking Program Button

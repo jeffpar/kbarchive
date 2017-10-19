@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173578: HOWTO: Change Local User WinNT 3.51 Profile to a Domain Profile"
-permalink: kb/173/Q173578/
+permalink: /kb/173/Q173578/
 ---
 
 ## Q173578: HOWTO: Change Local User WinNT 3.51 Profile to a Domain Profile

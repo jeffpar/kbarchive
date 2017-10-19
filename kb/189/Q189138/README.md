@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189138: PRB: &quot;error spawning empfile.exe&quot; Building WINCE Application"
-permalink: kb/189/Q189138/
+permalink: /kb/189/Q189138/
 ---
 
 ## Q189138: PRB: &quot;error spawning empfile.exe&quot; Building WINCE Application

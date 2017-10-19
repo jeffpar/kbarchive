@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189243: No Error Displays When Admin Is Running During Move Server"
-permalink: kb/189/Q189243/
+permalink: /kb/189/Q189243/
 ---
 
 ## Q189243: No Error Displays When Admin Is Running During Move Server

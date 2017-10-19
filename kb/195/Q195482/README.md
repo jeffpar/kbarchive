@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195482: WD97: Selecting Text in Form Field Selects All or to Field End"
-permalink: kb/195/Q195482/
+permalink: /kb/195/Q195482/
 ---
 
 ## Q195482: WD97: Selecting Text in Form Field Selects All or to Field End

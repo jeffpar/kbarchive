@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66240: INFO: Aligning Columns in a Windows 3.x List Box"
-permalink: kb/066/Q66240/
+permalink: /kb/066/Q66240/
 ---
 
 ## Q66240: INFO: Aligning Columns in a Windows 3.x List Box

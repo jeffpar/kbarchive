@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158220: Mac Encarta 97: Problems Using Non-Apple CD-ROM Drivers"
-permalink: kb/158/Q158220/
+permalink: /kb/158/Q158220/
 ---
 
 ## Q158220: Mac Encarta 97: Problems Using Non-Apple CD-ROM Drivers

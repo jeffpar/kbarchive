@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170060: XADM: Store Uses 100% of CPU on Incoming MIME Binhex Message"
-permalink: kb/170/Q170060/
+permalink: /kb/170/Q170060/
 ---
 
 ## Q170060: XADM: Store Uses 100% of CPU on Incoming MIME Binhex Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145825: 3D Movie Maker: How to Remove Recorded/Imported Sounds"
-permalink: kb/145/Q145825/
+permalink: /kb/145/Q145825/
 ---
 
 ## Q145825: 3D Movie Maker: How to Remove Recorded/Imported Sounds

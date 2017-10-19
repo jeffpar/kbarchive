@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142633: How to Run a Program Only Once During an Unattended Setup"
-permalink: kb/142/Q142633/
+permalink: /kb/142/Q142633/
 ---
 
 ## Q142633: How to Run a Program Only Once During an Unattended Setup

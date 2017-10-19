@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201280: XFOR: EXCALCON May Fail to Connect to the CALCON Server"
-permalink: kb/201/Q201280/
+permalink: /kb/201/Q201280/
 ---
 
 ## Q201280: XFOR: EXCALCON May Fail to Connect to the CALCON Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141391: FIX: GP Fault If Exit Windows 95 w/ Insert Object Dialog Open"
-permalink: kb/141/Q141391/
+permalink: /kb/141/Q141391/
 ---
 
 ## Q141391: FIX: GP Fault If Exit Windows 95 w/ Insert Object Dialog Open

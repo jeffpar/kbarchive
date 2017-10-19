@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170260: MSB Rainforest: Areas to Click in Each Scene and Where You Go"
-permalink: kb/170/Q170260/
+permalink: /kb/170/Q170260/
 ---
 
 ## Q170260: MSB Rainforest: Areas to Click in Each Scene and Where You Go

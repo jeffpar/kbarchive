@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253454: Visual FoxPro 6.0 Sample: Demonstrates the TreeView Control"
-permalink: kb/253/Q253454/
+permalink: /kb/253/Q253454/
 ---
 
 ## Q253454: Visual FoxPro 6.0 Sample: Demonstrates the TreeView Control

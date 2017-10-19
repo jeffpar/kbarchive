@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149978: Restricted User Security Issues when Using Microsoft Programs"
-permalink: kb/149/Q149978/
+permalink: /kb/149/Q149978/
 ---
 
 ## Q149978: Restricted User Security Issues when Using Microsoft Programs

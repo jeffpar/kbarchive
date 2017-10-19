@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194364: Timezone.exe Application Not Included with Resource Kit"
-permalink: kb/194/Q194364/
+permalink: /kb/194/Q194364/
 ---
 
 ## Q194364: Timezone.exe Application Not Included with Resource Kit

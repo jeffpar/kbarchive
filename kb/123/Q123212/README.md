@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123212: How to Set Up SMS to a Remote SQL Server"
-permalink: kb/123/Q123212/
+permalink: /kb/123/Q123212/
 ---
 
 ## Q123212: How to Set Up SMS to a Remote SQL Server

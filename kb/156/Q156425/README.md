@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156425: Importing an LMHOSTS File During Windows NT 4.0 Setup"
-permalink: kb/156/Q156425/
+permalink: /kb/156/Q156425/
 ---
 
 ## Q156425: Importing an LMHOSTS File During Windows NT 4.0 Setup

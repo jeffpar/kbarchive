@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172362: Directory Replicator Service Fails to Start with Event 7000"
-permalink: kb/172/Q172362/
+permalink: /kb/172/Q172362/
 ---
 
 ## Q172362: Directory Replicator Service Fails to Start with Event 7000

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125257: PC Win: Draft Messages Not Sent from Outbox Folder"
-permalink: kb/125/Q125257/
+permalink: /kb/125/Q125257/
 ---
 
 ## Q125257: PC Win: Draft Messages Not Sent from Outbox Folder

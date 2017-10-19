@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222186: XFOR: Old GroupWise Connector May Delete Users in the GW System"
-permalink: kb/222/Q222186/
+permalink: /kb/222/Q222186/
 ---
 
 ## Q222186: XFOR: Old GroupWise Connector May Delete Users in the GW System

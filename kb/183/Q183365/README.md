@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183365: DRW98: Text in Draw Object Appears Crushed/Overlapping"
-permalink: kb/183/Q183365/
+permalink: /kb/183/Q183365/
 ---
 
 ## Q183365: DRW98: Text in Draw Object Appears Crushed/Overlapping

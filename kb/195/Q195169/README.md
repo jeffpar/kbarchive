@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195169: NvRunCmd Hangs When it Receives Data with a Certain Length"
-permalink: kb/195/Q195169/
+permalink: /kb/195/Q195169/
 ---
 
 ## Q195169: NvRunCmd Hangs When it Receives Data with a Certain Length

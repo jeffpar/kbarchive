@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83134: Minor Distortions Using Certain TrueType Fonts"
-permalink: kb/083/Q83134/
+permalink: /kb/083/Q83134/
 ---
 
 ## Q83134: Minor Distortions Using Certain TrueType Fonts

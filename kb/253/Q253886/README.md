@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253886: PRB: Updating DateTime Data in Microsoft SQL Server 7.0"
-permalink: kb/253/Q253886/
+permalink: /kb/253/Q253886/
 ---
 
 ## Q253886: PRB: Updating DateTime Data in Microsoft SQL Server 7.0

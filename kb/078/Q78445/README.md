@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78445: Using MS-DOS with Pacific Rim External Drives"
-permalink: kb/078/Q78445/
+permalink: /kb/078/Q78445/
 ---
 
 ## Q78445: Using MS-DOS with Pacific Rim External Drives

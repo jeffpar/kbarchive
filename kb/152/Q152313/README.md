@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152313: XADM: Using the AT Backup Command with Microsoft Exchange"
-permalink: kb/152/Q152313/
+permalink: /kb/152/Q152313/
 ---
 
 ## Q152313: XADM: Using the AT Backup Command with Microsoft Exchange

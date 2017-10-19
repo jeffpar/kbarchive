@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58311: Adding Same Screen Font Twice Causes Problems"
-permalink: kb/058/Q58311/
+permalink: /kb/058/Q58311/
 ---
 
 ## Q58311: Adding Same Screen Font Twice Causes Problems

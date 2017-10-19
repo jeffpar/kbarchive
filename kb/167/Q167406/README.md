@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167406: FIX: TYPE() Function Returns Wrong Value for Appended Records"
-permalink: kb/167/Q167406/
+permalink: /kb/167/Q167406/
 ---
 
 ## Q167406: FIX: TYPE() Function Returns Wrong Value for Appended Records

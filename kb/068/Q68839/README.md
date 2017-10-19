@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68839: Paintbrush Prints Reduced Image Size"
-permalink: kb/068/Q68839/
+permalink: /kb/068/Q68839/
 ---
 
 ## Q68839: Paintbrush Prints Reduced Image Size

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130786: Kids: Hangs at Black Screen or Quits After Microsoft Logo"
-permalink: kb/130/Q130786/
+permalink: /kb/130/Q130786/
 ---
 
 ## Q130786: Kids: Hangs at Black Screen or Quits After Microsoft Logo

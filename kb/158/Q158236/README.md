@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158236: Error Message: HTTP/1.0 500 Server Error"
-permalink: kb/158/Q158236/
+permalink: /kb/158/Q158236/
 ---
 
 ## Q158236: Error Message: HTTP/1.0 500 Server Error

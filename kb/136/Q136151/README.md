@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136151: SFM Print Service is Limited to 127 Printers"
-permalink: kb/136/Q136151/
+permalink: /kb/136/Q136151/
 ---
 
 ## Q136151: SFM Print Service is Limited to 127 Printers

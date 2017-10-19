@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159974: HOWTO: Evaluate Numeric Expressions Stored as a String"
-permalink: kb/159/Q159974/
+permalink: /kb/159/Q159974/
 ---
 
 ## Q159974: HOWTO: Evaluate Numeric Expressions Stored as a String

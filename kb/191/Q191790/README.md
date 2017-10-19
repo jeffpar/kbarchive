@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191790: INFO: VB 6.0 Readme Part 15: Application Performance Explorer"
-permalink: kb/191/Q191790/
+permalink: /kb/191/Q191790/
 ---
 
 ## Q191790: INFO: VB 6.0 Readme Part 15: Application Performance Explorer

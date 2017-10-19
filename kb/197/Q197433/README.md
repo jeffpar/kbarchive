@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197433: WD97: Mail Merge Attached Envelope Does Not Create Bar Code"
-permalink: kb/197/Q197433/
+permalink: /kb/197/Q197433/
 ---
 
 ## Q197433: WD97: Mail Merge Attached Envelope Does Not Create Bar Code

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130013: IPX Addressing Format For Microsoft SNMP Agents"
-permalink: kb/130/Q130013/
+permalink: /kb/130/Q130013/
 ---
 
 ## Q130013: IPX Addressing Format For Microsoft SNMP Agents

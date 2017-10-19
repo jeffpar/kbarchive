@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60109: Mac Hyp: Listing All Recipients of a Mail Message"
-permalink: kb/060/Q60109/
+permalink: /kb/060/Q60109/
 ---
 
 ## Q60109: Mac Hyp: Listing All Recipients of a Mail Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250363: Works 2000 Icons Change After Upgrade to Windows 2000"
-permalink: kb/250/Q250363/
+permalink: /kb/250/Q250363/
 ---
 
 ## Q250363: Works 2000 Icons Change After Upgrade to Windows 2000

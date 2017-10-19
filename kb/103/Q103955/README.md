@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103955: Overview: SMB Structure is Standard Vehicle for Requests"
-permalink: kb/103/Q103955/
+permalink: /kb/103/Q103955/
 ---
 
 ## Q103955: Overview: SMB Structure is Standard Vehicle for Requests

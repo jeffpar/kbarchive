@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120252: PRB: Viewer Title Setup Error in INICM.C Line 185"
-permalink: kb/120/Q120252/
+permalink: /kb/120/Q120252/
 ---
 
 ## Q120252: PRB: Viewer Title Setup Error in INICM.C Line 185

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117525: List of Major CD-ROM Drive Manufacturers (I-M)"
-permalink: kb/117/Q117525/
+permalink: /kb/117/Q117525/
 ---
 
 ## Q117525: List of Major CD-ROM Drive Manufacturers (I-M)

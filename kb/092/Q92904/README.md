@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92904: Windows and Quarterdeck QEMM386 Require WINHIRAM.VXD File"
-permalink: kb/092/Q92904/
+permalink: /kb/092/Q92904/
 ---
 
 ## Q92904: Windows and Quarterdeck QEMM386 Require WINHIRAM.VXD File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190475: INFO: Understanding Microsoft's Oracle ODBC Driver Versions"
-permalink: kb/190/Q190475/
+permalink: /kb/190/Q190475/
 ---
 
 ## Q190475: INFO: Understanding Microsoft's Oracle ODBC Driver Versions

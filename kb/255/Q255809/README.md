@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255809: Using the Init.bat Utility in Microsoft Metadirectory Services"
-permalink: kb/255/Q255809/
+permalink: /kb/255/Q255809/
 ---
 
 ## Q255809: Using the Init.bat Utility in Microsoft Metadirectory Services

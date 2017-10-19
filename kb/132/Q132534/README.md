@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132534: FIX: Error Changing Grid s DynamicBackColor &amp; DynamicForeColor"
-permalink: kb/132/Q132534/
+permalink: /kb/132/Q132534/
 ---
 
 ## Q132534: FIX: Error Changing Grid s DynamicBackColor &amp; DynamicForeColor

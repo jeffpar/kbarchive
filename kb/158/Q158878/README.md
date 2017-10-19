@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158878: Msbatch.inf Parameters: Installing Network Monitor Agent"
-permalink: kb/158/Q158878/
+permalink: /kb/158/Q158878/
 ---
 
 ## Q158878: Msbatch.inf Parameters: Installing Network Monitor Agent

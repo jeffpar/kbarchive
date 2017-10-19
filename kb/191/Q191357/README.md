@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191357: XADM: Restoring a Single Database from Full Online Backups"
-permalink: kb/191/Q191357/
+permalink: /kb/191/Q191357/
 ---
 
 ## Q191357: XADM: Restoring a Single Database from Full Online Backups

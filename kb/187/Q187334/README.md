@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187334: SMS: Inventory Processor Does Not Indicate When MIF Not Created"
-permalink: kb/187/Q187334/
+permalink: /kb/187/Q187334/
 ---
 
 ## Q187334: SMS: Inventory Processor Does Not Indicate When MIF Not Created

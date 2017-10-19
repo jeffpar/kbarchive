@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195081: Fix2lBar.exe Fixes Spacing Errors in MFC's CToolBar"
-permalink: kb/195/Q195081/
+permalink: /kb/195/Q195081/
 ---
 
 ## Q195081: Fix2lBar.exe Fixes Spacing Errors in MFC's CToolBar

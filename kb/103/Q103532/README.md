@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103532: DoubleSpace Reboots System After Compressing a Floptical Disk"
-permalink: kb/103/Q103532/
+permalink: /kb/103/Q103532/
 ---
 
 ## Q103532: DoubleSpace Reboots System After Compressing a Floptical Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191281: WD97: DocProperty Field Truncated After 127 Characters"
-permalink: kb/191/Q191281/
+permalink: /kb/191/Q191281/
 ---
 
 ## Q191281: WD97: DocProperty Field Truncated After 127 Characters

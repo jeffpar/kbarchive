@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178821: XCON: Content Conversion Failure 4096"
-permalink: kb/178/Q178821/
+permalink: /kb/178/Q178821/
 ---
 
 ## Q178821: XCON: Content Conversion Failure 4096

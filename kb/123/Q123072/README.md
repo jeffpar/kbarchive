@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123072: How to Use ToAscii() in Eastern European Windows"
-permalink: kb/123/Q123072/
+permalink: /kb/123/Q123072/
 ---
 
 ## Q123072: How to Use ToAscii() in Eastern European Windows

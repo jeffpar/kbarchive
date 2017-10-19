@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142770: How to View Free-Memory Statistics in Windows 95"
-permalink: kb/142/Q142770/
+permalink: /kb/142/Q142770/
 ---
 
 ## Q142770: How to View Free-Memory Statistics in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130290: DCA Irma for Macintosh Client Does Not Understand Master Domain"
-permalink: kb/130/Q130290/
+permalink: /kb/130/Q130290/
 ---
 
 ## Q130290: DCA Irma for Macintosh Client Does Not Understand Master Domain

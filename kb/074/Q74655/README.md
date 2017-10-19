@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74655: Tandy 1000 TX Video Memory Uses the High Memory Area (HMA)"
-permalink: kb/074/Q74655/
+permalink: /kb/074/Q74655/
 ---
 
 ## Q74655: Tandy 1000 TX Video Memory Uses the High Memory Area (HMA)

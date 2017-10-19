@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188991: 5250 Print Session May Be Hung in Stuck State, Show Spooling"
-permalink: kb/188/Q188991/
+permalink: /kb/188/Q188991/
 ---
 
 ## Q188991: 5250 Print Session May Be Hung in Stuck State, Show Spooling

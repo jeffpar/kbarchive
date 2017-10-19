@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156509: HOWTO: Display All Visual FoxPro Current System Settings"
-permalink: kb/156/Q156509/
+permalink: /kb/156/Q156509/
 ---
 
 ## Q156509: HOWTO: Display All Visual FoxPro Current System Settings

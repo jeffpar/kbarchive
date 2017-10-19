@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114661: PC WSPlus: Schedule+ Splus.dll 1.00.4002 Update and SAL Files"
-permalink: kb/114/Q114661/
+permalink: /kb/114/Q114661/
 ---
 
 ## Q114661: PC WSPlus: Schedule+ Splus.dll 1.00.4002 Update and SAL Files

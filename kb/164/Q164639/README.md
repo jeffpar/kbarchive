@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164639: SNA Windows 95 Fails Logon If Password Change Required"
-permalink: kb/164/Q164639/
+permalink: /kb/164/Q164639/
 ---
 
 ## Q164639: SNA Windows 95 Fails Logon If Password Change Required

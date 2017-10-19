@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113103: Bookshelf: Animation Resets Too Quickly to Read Last Screen"
-permalink: kb/113/Q113103/
+permalink: /kb/113/Q113103/
 ---
 
 ## Q113103: Bookshelf: Animation Resets Too Quickly to Read Last Screen

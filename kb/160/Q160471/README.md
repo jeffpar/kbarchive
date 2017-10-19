@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160471: Incorrect Documentation on WINS Database Backup Interval"
-permalink: kb/160/Q160471/
+permalink: /kb/160/Q160471/
 ---
 
 ## Q160471: Incorrect Documentation on WINS Database Backup Interval

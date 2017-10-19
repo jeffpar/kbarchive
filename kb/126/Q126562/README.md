@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126562: Question Marks Appear During a Chat Session"
-permalink: kb/126/Q126562/
+permalink: /kb/126/Q126562/
 ---
 
 ## Q126562: Question Marks Appear During a Chat Session

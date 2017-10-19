@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249280: XADM: Error Joining an Existing Site Running on Windows 2000"
-permalink: kb/249/Q249280/
+permalink: /kb/249/Q249280/
 ---
 
 ## Q249280: XADM: Error Joining an Existing Site Running on Windows 2000

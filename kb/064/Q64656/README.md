@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64656: Logitech Mouse Doesn't Work in Generic Cad with Windows 3.0"
-permalink: kb/064/Q64656/
+permalink: /kb/064/Q64656/
 ---
 
 ## Q64656: Logitech Mouse Doesn't Work in Generic Cad with Windows 3.0

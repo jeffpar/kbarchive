@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152647: How To Copy a Table and Preserve Long Field Names"
-permalink: kb/152/Q152647/
+permalink: /kb/152/Q152647/
 ---
 
 ## Q152647: How To Copy a Table and Preserve Long Field Names

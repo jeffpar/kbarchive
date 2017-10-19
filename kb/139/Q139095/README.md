@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139095: DOCERR: RAT() Command Doesn't Count from Rightmost Character"
-permalink: kb/139/Q139095/
+permalink: /kb/139/Q139095/
 ---
 
 ## Q139095: DOCERR: RAT() Command Doesn't Count from Rightmost Character

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279234: SMS: Case-Sensitive Sort Order May Affect Security Rights"
-permalink: kb/279/Q279234/
+permalink: /kb/279/Q279234/
 ---
 
 ## Q279234: SMS: Case-Sensitive Sort Order May Affect Security Rights

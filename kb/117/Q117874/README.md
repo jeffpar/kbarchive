@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117874: Drive C and Drive H Are Not Available for Swap File"
-permalink: kb/117/Q117874/
+permalink: /kb/117/Q117874/
 ---
 
 ## Q117874: Drive C and Drive H Are Not Available for Swap File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85542: OLE: Drag and Drop from CD-ROM May Cause Error"
-permalink: kb/085/Q85542/
+permalink: /kb/085/Q85542/
 ---
 
 ## Q85542: OLE: Drag and Drop from CD-ROM May Cause Error

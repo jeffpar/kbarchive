@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106726: BUG: Errors CV1255 and EE0037 Watching Assumed Size Arrays"
-permalink: kb/106/Q106726/
+permalink: /kb/106/Q106726/
 ---
 
 ## Q106726: BUG: Errors CV1255 and EE0037 Watching Assumed Size Arrays

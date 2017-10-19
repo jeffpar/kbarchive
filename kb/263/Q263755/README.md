@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263755: XFOR: Lotus Notes Command-Line Migration Instructions Incomplete"
-permalink: kb/263/Q263755/
+permalink: /kb/263/Q263755/
 ---
 
 ## Q263755: XFOR: Lotus Notes Command-Line Migration Instructions Incomplete

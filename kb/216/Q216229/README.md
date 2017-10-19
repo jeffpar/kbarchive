@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216229: 64-bit Devices Not Correctly Reported"
-permalink: kb/216/Q216229/
+permalink: /kb/216/Q216229/
 ---
 
 ## Q216229: 64-bit Devices Not Correctly Reported

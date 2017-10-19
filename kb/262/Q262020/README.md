@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262020: Age of Empires Err Msg: Game Stopped Because It Was Out Of Sync"
-permalink: kb/262/Q262020/
+permalink: /kb/262/Q262020/
 ---
 
 ## Q262020: Age of Empires Err Msg: Game Stopped Because It Was Out Of Sync

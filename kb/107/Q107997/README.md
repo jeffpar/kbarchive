@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107997: WFWG 3.11 PIF Editor Has Standard Mode Command"
-permalink: kb/107/Q107997/
+permalink: /kb/107/Q107997/
 ---
 
 ## Q107997: WFWG 3.11 PIF Editor Has Standard Mode Command

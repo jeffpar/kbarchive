@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147303: Long Term Goal Box Data Lost If Not Linked To Role"
-permalink: kb/147/Q147303/
+permalink: /kb/147/Q147303/
 ---
 
 ## Q147303: Long Term Goal Box Data Lost If Not Linked To Role

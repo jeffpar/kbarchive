@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78073: PRB: Clipboard.SetData Gives Invalid Format Message with Icon"
-permalink: kb/078/Q78073/
+permalink: /kb/078/Q78073/
 ---
 
 ## Q78073: PRB: Clipboard.SetData Gives Invalid Format Message with Icon

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107354: PC Win: Folder Rebuild Does Not Display Status Information"
-permalink: kb/107/Q107354/
+permalink: /kb/107/Q107354/
 ---
 
 ## Q107354: PC Win: Folder Rebuild Does Not Display Status Information

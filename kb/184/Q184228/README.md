@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184228: Dr. Watson in Nwssvc.exe Deleting Queue and Printer from FPNW"
-permalink: kb/184/Q184228/
+permalink: /kb/184/Q184228/
 ---
 
 ## Q184228: Dr. Watson in Nwssvc.exe Deleting Queue and Printer from FPNW

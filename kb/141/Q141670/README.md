@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141670: FIX: Profiling May Fail If Install Dir Contains Long File Name"
-permalink: kb/141/Q141670/
+permalink: /kb/141/Q141670/
 ---
 
 ## Q141670: FIX: Profiling May Fail If Install Dir Contains Long File Name

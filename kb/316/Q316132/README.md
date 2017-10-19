@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316132: SMS: Collection Replication Does Not Work with Carriage Return"
-permalink: kb/316/Q316132/
+permalink: /kb/316/Q316132/
 ---
 
 ## Q316132: SMS: Collection Replication Does Not Work with Carriage Return

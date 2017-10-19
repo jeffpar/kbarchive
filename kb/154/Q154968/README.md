@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154968: HOWTO: Customize the Differences Window"
-permalink: kb/154/Q154968/
+permalink: /kb/154/Q154968/
 ---
 
 ## Q154968: HOWTO: Customize the Differences Window

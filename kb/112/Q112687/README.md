@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112687: How to Create a Bitmap of Windows Tiled Wallpaper"
-permalink: kb/112/Q112687/
+permalink: /kb/112/Q112687/
 ---
 
 ## Q112687: How to Create a Bitmap of Windows Tiled Wallpaper

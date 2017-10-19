@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135324: PPT7: Running a Peer-to-Peer Presentation Conference"
-permalink: kb/135/Q135324/
+permalink: /kb/135/Q135324/
 ---
 
 ## Q135324: PPT7: Running a Peer-to-Peer Presentation Conference

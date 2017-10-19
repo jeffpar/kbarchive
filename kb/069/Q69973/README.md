@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69973: Unable to Format Floppy Without a Local Hard Drive on Networks"
-permalink: kb/069/Q69973/
+permalink: /kb/069/Q69973/
 ---
 
 ## Q69973: Unable to Format Floppy Without a Local Hard Drive on Networks

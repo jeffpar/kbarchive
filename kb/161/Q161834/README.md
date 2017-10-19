@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161834: FIX: Long String Placed in RowSource Property Causes Error"
-permalink: kb/161/Q161834/
+permalink: /kb/161/Q161834/
 ---
 
 ## Q161834: FIX: Long String Placed in RowSource Property Causes Error

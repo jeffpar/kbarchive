@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152316: CONDOC.EXE Extract Container/Document Info with MFC DAO"
-permalink: kb/152/Q152316/
+permalink: /kb/152/Q152316/
 ---
 
 ## Q152316: CONDOC.EXE Extract Container/Document Info with MFC DAO

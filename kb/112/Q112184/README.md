@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112184: Printing Screen Snapshots in FoxPro for Macintosh"
-permalink: kb/112/Q112184/
+permalink: /kb/112/Q112184/
 ---
 
 ## Q112184: Printing Screen Snapshots in FoxPro for Macintosh

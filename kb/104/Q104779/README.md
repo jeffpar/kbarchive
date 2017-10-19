@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104779: Undelete on LANtastic: Disk Drive Failed - Could Not..."
-permalink: kb/104/Q104779/
+permalink: /kb/104/Q104779/
 ---
 
 ## Q104779: Undelete on LANtastic: Disk Drive Failed - Could Not...

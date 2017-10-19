@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76298: PATH Command Has No Effect in NMAKE"
-permalink: kb/076/Q76298/
+permalink: /kb/076/Q76298/
 ---
 
 ## Q76298: PATH Command Has No Effect in NMAKE

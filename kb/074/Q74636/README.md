@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74636: A20 Hardware Error Installing Windows 3.0 on AST Premium"
-permalink: kb/074/Q74636/
+permalink: /kb/074/Q74636/
 ---
 
 ## Q74636: A20 Hardware Error Installing Windows 3.0 on AST Premium

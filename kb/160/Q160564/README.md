@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160564: XFOR: MSMail Read-Receipts Missing Data Across Organizations"
-permalink: kb/160/Q160564/
+permalink: /kb/160/Q160564/
 ---
 
 ## Q160564: XFOR: MSMail Read-Receipts Missing Data Across Organizations

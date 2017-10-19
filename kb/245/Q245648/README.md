@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245648: Values List from Query Builder Not Always Sorted and Is Limited"
-permalink: kb/245/Q245648/
+permalink: /kb/245/Q245648/
 ---
 
 ## Q245648: Values List from Query Builder Not Always Sorted and Is Limited

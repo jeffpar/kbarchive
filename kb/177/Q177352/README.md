@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177352: HOWTO: Work with Invalid Rectangle When Window Is Resized"
-permalink: kb/177/Q177352/
+permalink: /kb/177/Q177352/
 ---
 
 ## Q177352: HOWTO: Work with Invalid Rectangle When Window Is Resized

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85581: Rumba 3270 Emulation May Cause GP Faults with Windows 3.1"
-permalink: kb/085/Q85581/
+permalink: /kb/085/Q85581/
 ---
 
 ## Q85581: Rumba 3270 Emulation May Cause GP Faults with Windows 3.1

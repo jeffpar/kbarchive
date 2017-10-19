@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180790: Print Server Traps or Cannot Load Ppdxxxx.dll on NT3.51-J SP5"
-permalink: kb/180/Q180790/
+permalink: /kb/180/Q180790/
 ---
 
 ## Q180790: Print Server Traps or Cannot Load Ppdxxxx.dll on NT3.51-J SP5

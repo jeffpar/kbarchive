@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277750: HOWTO: Set a Pushpin in MapPoint 2001 with the VB OLE Control"
-permalink: kb/277/Q277750/
+permalink: /kb/277/Q277750/
 ---
 
 ## Q277750: HOWTO: Set a Pushpin in MapPoint 2001 with the VB OLE Control

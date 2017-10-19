@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130106: WORD DEV KIT: 2nd Ed (Version 6.0) Corrections and Comments"
-permalink: kb/130/Q130106/
+permalink: /kb/130/Q130106/
 ---
 
 ## Q130106: WORD DEV KIT: 2nd Ed (Version 6.0) Corrections and Comments

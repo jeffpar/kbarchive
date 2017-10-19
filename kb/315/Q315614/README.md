@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315614: Games Err Msg: &quot;Signal Out of Range&quot; or &quot;Out of scan range&quot;"
-permalink: kb/315/Q315614/
+permalink: /kb/315/Q315614/
 ---
 
 ## Q315614: Games Err Msg: &quot;Signal Out of Range&quot; or &quot;Out of scan range&quot;

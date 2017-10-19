@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295760: CICS LINK &quot;Final Field to Host Is Variably Sized&quot; Does Not Work"
-permalink: kb/295/Q295760/
+permalink: /kb/295/Q295760/
 ---
 
 ## Q295760: CICS LINK &quot;Final Field to Host Is Variably Sized&quot; Does Not Work

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139352: PC Gen: FAQ - Implementing Electronic Mail under Windows 95"
-permalink: kb/139/Q139352/
+permalink: /kb/139/Q139352/
 ---
 
 ## Q139352: PC Gen: FAQ - Implementing Electronic Mail under Windows 95

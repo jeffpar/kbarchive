@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250108: Asheron's Call: Your Patron Has Been Deleted from the Game"
-permalink: kb/250/Q250108/
+permalink: /kb/250/Q250108/
 ---
 
 ## Q250108: Asheron's Call: Your Patron Has Been Deleted from the Game

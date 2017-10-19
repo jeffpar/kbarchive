@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149323: BUG: Treeview Root Property Returns Reference to First Node"
-permalink: kb/149/Q149323/
+permalink: /kb/149/Q149323/
 ---
 
 ## Q149323: BUG: Treeview Root Property Returns Reference to First Node

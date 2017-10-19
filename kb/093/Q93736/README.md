@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93736: Enabling the Microsoft TCP/IP Protocol with WFWG 3.1"
-permalink: kb/093/Q93736/
+permalink: /kb/093/Q93736/
 ---
 
 ## Q93736: Enabling the Microsoft TCP/IP Protocol with WFWG 3.1

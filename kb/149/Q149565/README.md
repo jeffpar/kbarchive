@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149565: PRB: Unable to Load Control from C:&#92;Path&#92;File.ocx"
-permalink: kb/149/Q149565/
+permalink: /kb/149/Q149565/
 ---
 
 ## Q149565: PRB: Unable to Load Control from C:&#92;Path&#92;File.ocx

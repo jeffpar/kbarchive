@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q22374: How a DLL Can Display a Message Using MessageBox()"
-permalink: kb/022/Q22374/
+permalink: /kb/022/Q22374/
 ---
 
 ## Q22374: How a DLL Can Display a Message Using MessageBox()

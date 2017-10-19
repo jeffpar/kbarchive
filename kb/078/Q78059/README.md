@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78059: Bookshelf Will Run Without Multimedia Extensions"
-permalink: kb/078/Q78059/
+permalink: /kb/078/Q78059/
 ---
 
 ## Q78059: Bookshelf Will Run Without Multimedia Extensions

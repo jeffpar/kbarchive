@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134323: Setting SMS Shared Application's Default Working Directory"
-permalink: kb/134/Q134323/
+permalink: /kb/134/Q134323/
 ---
 
 ## Q134323: Setting SMS Shared Application's Default Working Directory

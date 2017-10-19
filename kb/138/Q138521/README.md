@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138521: INFO: Program Compiles in Background w/Compile On Demand Set"
-permalink: kb/138/Q138521/
+permalink: /kb/138/Q138521/
 ---
 
 ## Q138521: INFO: Program Compiles in Background w/Compile On Demand Set

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152077: SMS: Network Drive No Longer Exists"
-permalink: kb/152/Q152077/
+permalink: /kb/152/Q152077/
 ---
 
 ## Q152077: SMS: Network Drive No Longer Exists

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189326: XADM: Verifying Basic IMAP Connectivity Using Telnet"
-permalink: kb/189/Q189326/
+permalink: /kb/189/Q189326/
 ---
 
 ## Q189326: XADM: Verifying Basic IMAP Connectivity Using Telnet

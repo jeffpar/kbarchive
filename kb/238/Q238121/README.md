@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238121: Multimedia: How to Install and Use the Microsoft Media Test Tool"
-permalink: kb/238/Q238121/
+permalink: /kb/238/Q238121/
 ---
 
 ## Q238121: Multimedia: How to Install and Use the Microsoft Media Test Tool

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242084: STOP 0xC0000244 Error Message When Browsing PDC"
-permalink: kb/242/Q242084/
+permalink: /kb/242/Q242084/
 ---
 
 ## Q242084: STOP 0xC0000244 Error Message When Browsing PDC

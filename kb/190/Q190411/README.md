@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190411: HOWTO: Bind a DataReport To an ADO Recordset at Run Time"
-permalink: kb/190/Q190411/
+permalink: /kb/190/Q190411/
 ---
 
 ## Q190411: HOWTO: Bind a DataReport To an ADO Recordset at Run Time

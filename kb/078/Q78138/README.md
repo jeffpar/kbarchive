@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78138: PPT: Colors on Screen and Color Printout May Not Match"
-permalink: kb/078/Q78138/
+permalink: /kb/078/Q78138/
 ---
 
 ## Q78138: PPT: Colors on Screen and Color Printout May Not Match

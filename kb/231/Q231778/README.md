@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231778: Migrated NetWare Users Do Not Appear in User Manager"
-permalink: kb/231/Q231778/
+permalink: /kb/231/Q231778/
 ---
 
 ## Q231778: Migrated NetWare Users Do Not Appear in User Manager

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72404: MASM 6.0 Contains Windows 3.0a Device Drivers"
-permalink: kb/072/Q72404/
+permalink: /kb/072/Q72404/
 ---
 
 ## Q72404: MASM 6.0 Contains Windows 3.0a Device Drivers

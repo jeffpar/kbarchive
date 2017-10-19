@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190226: HOWTO: Programmatically Add Child Controls to a CoolBar"
-permalink: kb/190/Q190226/
+permalink: /kb/190/Q190226/
 ---
 
 ## Q190226: HOWTO: Programmatically Add Child Controls to a CoolBar

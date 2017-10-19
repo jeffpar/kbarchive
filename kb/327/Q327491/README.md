@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q327491: INFO: SNA Server 4.0 Clients Not Supported on Windows XP"
-permalink: kb/327/Q327491/
+permalink: /kb/327/Q327491/
 ---
 
 ## Q327491: INFO: SNA Server 4.0 Clients Not Supported on Windows XP

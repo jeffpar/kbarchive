@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127083: Setup Causes UPS to Switch to Battery Mode"
-permalink: kb/127/Q127083/
+permalink: /kb/127/Q127083/
 ---
 
 ## Q127083: Setup Causes UPS to Switch to Battery Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166737: Windows NT Does Not Show Mapped Drives Using Chameleon 6.0.1"
-permalink: kb/166/Q166737/
+permalink: /kb/166/Q166737/
 ---
 
 ## Q166737: Windows NT Does Not Show Mapped Drives Using Chameleon 6.0.1

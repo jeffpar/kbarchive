@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193254: FIX: Class ResetToDefault Method Causes Fatal Exception Error"
-permalink: kb/193/Q193254/
+permalink: /kb/193/Q193254/
 ---
 
 ## Q193254: FIX: Class ResetToDefault Method Causes Fatal Exception Error

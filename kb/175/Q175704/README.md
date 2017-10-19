@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175704: XFOR: IMS Failing to Decode Uuencoded Attachments"
-permalink: kb/175/Q175704/
+permalink: /kb/175/Q175704/
 ---
 
 ## Q175704: XFOR: IMS Failing to Decode Uuencoded Attachments

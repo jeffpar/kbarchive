@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137766: Bookshelf: Spell Cannot Check Multiple Words"
-permalink: kb/137/Q137766/
+permalink: /kb/137/Q137766/
 ---
 
 ## Q137766: Bookshelf: Spell Cannot Check Multiple Words

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180523: Ifilttst.exe &amp; Ifilttst.ini Files Missing from IFilter Document"
-permalink: kb/180/Q180523/
+permalink: /kb/180/Q180523/
 ---
 
 ## Q180523: Ifilttst.exe &amp; Ifilttst.ini Files Missing from IFilter Document

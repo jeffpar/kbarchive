@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169328: MSMail: Network Name Could Not be Found When Creating a New PO"
-permalink: kb/169/Q169328/
+permalink: /kb/169/Q169328/
 ---
 
 ## Q169328: MSMail: Network Name Could Not be Found When Creating a New PO

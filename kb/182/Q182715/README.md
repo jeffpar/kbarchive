@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182715: XADM: Store Stops in STORE!COLLECT::EcImportHierChange"
-permalink: kb/182/Q182715/
+permalink: /kb/182/Q182715/
 ---
 
 ## Q182715: XADM: Store Stops in STORE!COLLECT::EcImportHierChange

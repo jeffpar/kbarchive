@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312621: Unable To Add Free MSN Account Again After A System Restoration"
-permalink: kb/312/Q312621/
+permalink: /kb/312/Q312621/
 ---
 
 ## Q312621: Unable To Add Free MSN Account Again After A System Restoration

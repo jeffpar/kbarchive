@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101750: PC Ext: Overlay Files and How They Work"
-permalink: kb/101/Q101750/
+permalink: /kb/101/Q101750/
 ---
 
 ## Q101750: PC Ext: Overlay Files and How They Work

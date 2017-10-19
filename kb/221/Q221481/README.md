@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221481: FIX: WMI Fails to Install on Windows NT 4.0 SP 5 or Later"
-permalink: kb/221/Q221481/
+permalink: /kb/221/Q221481/
 ---
 
 ## Q221481: FIX: WMI Fails to Install on Windows NT 4.0 SP 5 or Later

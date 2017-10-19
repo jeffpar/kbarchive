@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128423: MSB Human: Program Hangs in Classroom on Gateway 2000/GTK Audio"
-permalink: kb/128/Q128423/
+permalink: /kb/128/Q128423/
 ---
 
 ## Q128423: MSB Human: Program Hangs in Classroom on Gateway 2000/GTK Audio

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215473: XFOR: Understanding How SNADS Connector Uses LU 6.2"
-permalink: kb/215/Q215473/
+permalink: /kb/215/Q215473/
 ---
 
 ## Q215473: XFOR: Understanding How SNADS Connector Uses LU 6.2

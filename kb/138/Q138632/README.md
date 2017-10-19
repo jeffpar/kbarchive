@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138632: PRB: Can't Serialize Items After CRichEditDoc::Serialize"
-permalink: kb/138/Q138632/
+permalink: /kb/138/Q138632/
 ---
 
 ## Q138632: PRB: Can't Serialize Items After CRichEditDoc::Serialize

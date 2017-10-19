@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172082: HOWTO: Handle RDO 2.0 Asynchronous Processing WithEvents"
-permalink: kb/172/Q172082/
+permalink: /kb/172/Q172082/
 ---
 
 ## Q172082: HOWTO: Handle RDO 2.0 Asynchronous Processing WithEvents

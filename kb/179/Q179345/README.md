@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179345: WD97: Comments Pane Doesn't Close When Opened Via Hyperlinks"
-permalink: kb/179/Q179345/
+permalink: /kb/179/Q179345/
 ---
 
 ## Q179345: WD97: Comments Pane Doesn't Close When Opened Via Hyperlinks

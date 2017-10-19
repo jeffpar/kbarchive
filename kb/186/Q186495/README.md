@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186495: WOW Leak Launching Many Instances of a 16-Bit Application"
-permalink: kb/186/Q186495/
+permalink: /kb/186/Q186495/
 ---
 
 ## Q186495: WOW Leak Launching Many Instances of a 16-Bit Application

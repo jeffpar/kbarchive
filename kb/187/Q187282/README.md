@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187282: INFO: List of Visual Basic Run-Time Files Installed by Product"
-permalink: kb/187/Q187282/
+permalink: /kb/187/Q187282/
 ---
 
 ## Q187282: INFO: List of Visual Basic Run-Time Files Installed by Product

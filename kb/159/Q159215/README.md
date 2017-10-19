@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159215: XCLN: PAB Location Inconsistent in &quot;Show Names from&quot; listbox"
-permalink: kb/159/Q159215/
+permalink: /kb/159/Q159215/
 ---
 
 ## Q159215: XCLN: PAB Location Inconsistent in &quot;Show Names from&quot; listbox

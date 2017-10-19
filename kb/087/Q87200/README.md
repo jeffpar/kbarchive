@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87200: PROFS: When Is Gateway Component Successfully Installed?"
-permalink: kb/087/Q87200/
+permalink: /kb/087/Q87200/
 ---
 
 ## Q87200: PROFS: When Is Gateway Component Successfully Installed?

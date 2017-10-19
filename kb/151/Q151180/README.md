@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151180: Configuring the BOOT.INI TIMEOUT value with CPS or UNATTEND"
-permalink: kb/151/Q151180/
+permalink: /kb/151/Q151180/
 ---
 
 ## Q151180: Configuring the BOOT.INI TIMEOUT value with CPS or UNATTEND

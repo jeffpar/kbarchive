@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298501: BUG: Menu Item Captions Is Displayed Incorrectly"
-permalink: kb/298/Q298501/
+permalink: /kb/298/Q298501/
 ---
 
 ## Q298501: BUG: Menu Item Captions Is Displayed Incorrectly

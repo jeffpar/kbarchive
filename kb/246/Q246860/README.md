@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246860: Server Configured for OSPF Does Not Select Optimum Path"
-permalink: kb/246/Q246860/
+permalink: /kb/246/Q246860/
 ---
 
 ## Q246860: Server Configured for OSPF Does Not Select Optimum Path

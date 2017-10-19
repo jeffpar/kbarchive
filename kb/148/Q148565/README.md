@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148565: XFOR: IMC Fails to Start with 2140, Event IDs 4014 4032 4057"
-permalink: kb/148/Q148565/
+permalink: /kb/148/Q148565/
 ---
 
 ## Q148565: XFOR: IMC Fails to Start with 2140, Event IDs 4014 4032 4057

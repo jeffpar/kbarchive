@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165507: SMS: PGC Randomly Picks a Logon Server"
-permalink: kb/165/Q165507/
+permalink: /kb/165/Q165507/
 ---
 
 ## Q165507: SMS: PGC Randomly Picks a Logon Server

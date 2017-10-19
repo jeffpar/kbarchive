@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102726: Overview of MacPrint Services for Windows NT Server"
-permalink: kb/102/Q102726/
+permalink: /kb/102/Q102726/
 ---
 
 ## Q102726: Overview of MacPrint Services for Windows NT Server

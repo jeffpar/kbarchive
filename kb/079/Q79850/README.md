@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79850: Buffer Lines Setting in Terminal Limited to 25-244 Lines"
-permalink: kb/079/Q79850/
+permalink: /kb/079/Q79850/
 ---
 
 ## Q79850: Buffer Lines Setting in Terminal Limited to 25-244 Lines

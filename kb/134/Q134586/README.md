@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134586: Identifying Identical Network Adapters"
-permalink: kb/134/Q134586/
+permalink: /kb/134/Q134586/
 ---
 
 ## Q134586: Identifying Identical Network Adapters

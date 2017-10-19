@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67714: DOC: CreateCompatibleBitmap() Parameters Documented Wrong"
-permalink: kb/067/Q67714/
+permalink: /kb/067/Q67714/
 ---
 
 ## Q67714: DOC: CreateCompatibleBitmap() Parameters Documented Wrong

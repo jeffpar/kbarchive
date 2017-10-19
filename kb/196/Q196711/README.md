@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196711: BUG: Extra Spaces Added to Fields When Updating MS Access Table"
-permalink: kb/196/Q196711/
+permalink: /kb/196/Q196711/
 ---
 
 ## Q196711: BUG: Extra Spaces Added to Fields When Updating MS Access Table

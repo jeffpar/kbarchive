@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176846: Encarta Encyclopedia Does Not Recognize the Second CD-ROM"
-permalink: kb/176/Q176846/
+permalink: /kb/176/Q176846/
 ---
 
 ## Q176846: Encarta Encyclopedia Does Not Recognize the Second CD-ROM

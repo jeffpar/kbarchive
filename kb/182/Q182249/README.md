@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182249: FIX: CHRTRAN(), CHRTRANC(), and FULLPATH() May Cause GPF Errors"
-permalink: kb/182/Q182249/
+permalink: /kb/182/Q182249/
 ---
 
 ## Q182249: FIX: CHRTRAN(), CHRTRANC(), and FULLPATH() May Cause GPF Errors

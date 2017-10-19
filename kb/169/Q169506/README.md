@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169506: FP: Include WebBot Image &quot;Broken&quot; in FP Editor w/FP97 Extensions"
-permalink: kb/169/Q169506/
+permalink: /kb/169/Q169506/
 ---
 
 ## Q169506: FP: Include WebBot Image &quot;Broken&quot; in FP Editor w/FP97 Extensions

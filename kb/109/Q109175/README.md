@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109175: How to Limit an MFC Application to a Single Instance"
-permalink: kb/109/Q109175/
+permalink: /kb/109/Q109175/
 ---
 
 ## Q109175: How to Limit an MFC Application to a Single Instance

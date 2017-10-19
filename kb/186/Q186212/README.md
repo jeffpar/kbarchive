@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186212: HOWTO: Unregister MFC Automation Servers"
-permalink: kb/186/Q186212/
+permalink: /kb/186/Q186212/
 ---
 
 ## Q186212: HOWTO: Unregister MFC Automation Servers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244516: WD97: Word Stops When Using VBA to Check List Format Properties"
-permalink: kb/244/Q244516/
+permalink: /kb/244/Q244516/
 ---
 
 ## Q244516: WD97: Word Stops When Using VBA to Check List Format Properties

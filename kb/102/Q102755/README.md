@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102755: PC MAPI: &lt;PARAMBLK&gt; MAPI Calls in SHARED.INI"
-permalink: kb/102/Q102755/
+permalink: /kb/102/Q102755/
 ---
 
 ## Q102755: PC MAPI: &lt;PARAMBLK&gt; MAPI Calls in SHARED.INI

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107901: Writer 1: Inserting Sounds from Floppy Disk Slow on Macintosh"
-permalink: kb/107/Q107901/
+permalink: /kb/107/Q107901/
 ---
 
 ## Q107901: Writer 1: Inserting Sounds from Floppy Disk Slow on Macintosh

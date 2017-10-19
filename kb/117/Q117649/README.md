@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117649: PC WRmt: Missing Dialog Box When Change to Remote Mail Driver"
-permalink: kb/117/Q117649/
+permalink: /kb/117/Q117649/
 ---
 
 ## Q117649: PC WRmt: Missing Dialog Box When Change to Remote Mail Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140307: Mac Encarta: Err Msg &quot;The Correct Fonts Needed...&quot;"
-permalink: kb/140/Q140307/
+permalink: /kb/140/Q140307/
 ---
 
 ## Q140307: Mac Encarta: Err Msg &quot;The Correct Fonts Needed...&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172692: Error 0001: Incorrect Function When Starting WINS Service"
-permalink: kb/172/Q172692/
+permalink: /kb/172/Q172692/
 ---
 
 ## Q172692: Error 0001: Incorrect Function When Starting WINS Service

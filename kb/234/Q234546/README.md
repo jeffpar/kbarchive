@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234546: Windows NT 4.0 SP5 Includes Updated .PAL Files"
-permalink: kb/234/Q234546/
+permalink: /kb/234/Q234546/
 ---
 
 ## Q234546: Windows NT 4.0 SP5 Includes Updated .PAL Files

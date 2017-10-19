@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255627: XFOR: No Import/Export Vers. 8.x Option in Connector for cc:Mail"
-permalink: kb/255/Q255627/
+permalink: /kb/255/Q255627/
 ---
 
 ## Q255627: XFOR: No Import/Export Vers. 8.x Option in Connector for cc:Mail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110290: Video for Windows 1.1 Disk 5: (5.25 Inch)"
-permalink: kb/110/Q110290/
+permalink: /kb/110/Q110290/
 ---
 
 ## Q110290: Video for Windows 1.1 Disk 5: (5.25 Inch)

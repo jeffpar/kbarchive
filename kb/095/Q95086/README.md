@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95086: Player Starts at Blue Tees After Selecting Black Tees"
-permalink: kb/095/Q95086/
+permalink: /kb/095/Q95086/
 ---
 
 ## Q95086: Player Starts at Blue Tees After Selecting Black Tees

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65128: FILE: Windows Int 21h and NetBIOS Support for DPMI"
-permalink: kb/065/Q65128/
+permalink: /kb/065/Q65128/
 ---
 
 ## Q65128: FILE: Windows Int 21h and NetBIOS Support for DPMI

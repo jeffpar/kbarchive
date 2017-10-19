@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141443: FIX: C1001: Compiler File P2symtab.c, Line 878"
-permalink: kb/141/Q141443/
+permalink: /kb/141/Q141443/
 ---
 
 ## Q141443: FIX: C1001: Compiler File P2symtab.c, Line 878

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146880: Logon/Logoff Events Logged Out of Order in Security Log"
-permalink: kb/146/Q146880/
+permalink: /kb/146/Q146880/
 ---
 
 ## Q146880: Logon/Logoff Events Logged Out of Order in Security Log

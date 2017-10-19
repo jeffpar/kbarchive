@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140985: BUG: Service Pack 3 Causes Updated Epson Stylus to Fail"
-permalink: kb/140/Q140985/
+permalink: /kb/140/Q140985/
 ---
 
 ## Q140985: BUG: Service Pack 3 Causes Updated Epson Stylus to Fail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237860: Search Function on Electronic Version of Book May Fail"
-permalink: kb/237/Q237860/
+permalink: /kb/237/Q237860/
 ---
 
 ## Q237860: Search Function on Electronic Version of Book May Fail

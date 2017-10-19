@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154435: Windows 95 IDE Support for SMART, DMA, and ATAPI Tape Drives"
-permalink: kb/154/Q154435/
+permalink: /kb/154/Q154435/
 ---
 
 ## Q154435: Windows 95 IDE Support for SMART, DMA, and ATAPI Tape Drives

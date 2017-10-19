@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85890: SiteLock Incorrectly Assumes More People Accessing Program"
-permalink: kb/085/Q85890/
+permalink: /kb/085/Q85890/
 ---
 
 ## Q85890: SiteLock Incorrectly Assumes More People Accessing Program

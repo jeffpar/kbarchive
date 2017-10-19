@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143180: IIS Common Registry Parameters"
-permalink: kb/143/Q143180/
+permalink: /kb/143/Q143180/
 ---
 
 ## Q143180: IIS Common Registry Parameters

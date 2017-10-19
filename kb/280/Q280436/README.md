@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280436: MechWarrior 4: SHIFT+Button Does Not Work Correctly"
-permalink: kb/280/Q280436/
+permalink: /kb/280/Q280436/
 ---
 
 ## Q280436: MechWarrior 4: SHIFT+Button Does Not Work Correctly

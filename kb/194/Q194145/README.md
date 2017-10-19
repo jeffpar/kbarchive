@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194145: MHS: Attachment Not Delivered, But No Error Message Displayed"
-permalink: kb/194/Q194145/
+permalink: /kb/194/Q194145/
 ---
 
 ## Q194145: MHS: Attachment Not Delivered, But No Error Message Displayed

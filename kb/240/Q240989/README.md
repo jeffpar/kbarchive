@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240989: Pandora's Box: Puzzle Animations Are Played Extremely Slowly"
-permalink: kb/240/Q240989/
+permalink: /kb/240/Q240989/
 ---
 
 ## Q240989: Pandora's Box: Puzzle Animations Are Played Extremely Slowly

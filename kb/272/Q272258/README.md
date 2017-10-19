@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272258: Programs Included with the Fun Pocket PC Expansion Pack"
-permalink: kb/272/Q272258/
+permalink: /kb/272/Q272258/
 ---
 
 ## Q272258: Programs Included with the Fun Pocket PC Expansion Pack

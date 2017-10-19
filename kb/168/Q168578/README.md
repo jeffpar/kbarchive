@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168578: Autostatic Route Updates Fail Over IPX"
-permalink: kb/168/Q168578/
+permalink: /kb/168/Q168578/
 ---
 
 ## Q168578: Autostatic Route Updates Fail Over IPX

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155117: Shutdown And Power Off Does Not Appear on Shut Down Menu"
-permalink: kb/155/Q155117/
+permalink: /kb/155/Q155117/
 ---
 
 ## Q155117: Shutdown And Power Off Does Not Appear on Shut Down Menu

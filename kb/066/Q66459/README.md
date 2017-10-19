@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66459: FIX: Bad Macro Substitution, In-line File in Inference Rule"
-permalink: kb/066/Q66459/
+permalink: /kb/066/Q66459/
 ---
 
 ## Q66459: FIX: Bad Macro Substitution, In-line File in Inference Rule

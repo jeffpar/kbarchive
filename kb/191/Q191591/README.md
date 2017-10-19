@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191591: BUG: Meaningless or Undocumented Errors in Visual FoxPro 6.0"
-permalink: kb/191/Q191591/
+permalink: /kb/191/Q191591/
 ---
 
 ## Q191591: BUG: Meaningless or Undocumented Errors in Visual FoxPro 6.0

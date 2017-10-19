@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188535: HOWTO: Sharing Data Between Processes Using Memory-Mapped Files"
-permalink: kb/188/Q188535/
+permalink: /kb/188/Q188535/
 ---
 
 ## Q188535: HOWTO: Sharing Data Between Processes Using Memory-Mapped Files

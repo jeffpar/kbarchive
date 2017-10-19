@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165046: XCLN: How to Open a Hidden User's Schedule"
-permalink: kb/165/Q165046/
+permalink: /kb/165/Q165046/
 ---
 
 ## Q165046: XCLN: How to Open a Hidden User's Schedule

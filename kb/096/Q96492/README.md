@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96492: README.TXT: Microsoft MS-DOS 6 Upgrade (Part 1 of 3)"
-permalink: kb/096/Q96492/
+permalink: /kb/096/Q96492/
 ---
 
 ## Q96492: README.TXT: Microsoft MS-DOS 6 Upgrade (Part 1 of 3)

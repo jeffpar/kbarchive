@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242356: Remote Control Logging Does Not Work in SMS 2.0 SP1"
-permalink: kb/242/Q242356/
+permalink: /kb/242/Q242356/
 ---
 
 ## Q242356: Remote Control Logging Does Not Work in SMS 2.0 SP1

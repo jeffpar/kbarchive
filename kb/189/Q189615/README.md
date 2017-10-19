@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189615: Incorrect Server License Setup During Reinstall"
-permalink: kb/189/Q189615/
+permalink: /kb/189/Q189615/
 ---
 
 ## Q189615: Incorrect Server License Setup During Reinstall

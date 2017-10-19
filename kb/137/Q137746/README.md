@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137746: Microsoft Plus! Internet.txt File Contents"
-permalink: kb/137/Q137746/
+permalink: /kb/137/Q137746/
 ---
 
 ## Q137746: Microsoft Plus! Internet.txt File Contents

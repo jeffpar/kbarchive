@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165388: Invalid Directory Returned When Attempting to Access FPNW"
-permalink: kb/165/Q165388/
+permalink: /kb/165/Q165388/
 ---
 
 ## Q165388: Invalid Directory Returned When Attempting to Access FPNW

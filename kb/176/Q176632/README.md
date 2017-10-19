@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176632: FIX: MSChart Legend Text Gets Truncated"
-permalink: kb/176/Q176632/
+permalink: /kb/176/Q176632/
 ---
 
 ## Q176632: FIX: MSChart Legend Text Gets Truncated

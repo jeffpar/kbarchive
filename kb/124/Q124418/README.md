@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124418: Cannot Set Up CD Sampler Because It Is Already Running"
-permalink: kb/124/Q124418/
+permalink: /kb/124/Q124418/
 ---
 
 ## Q124418: Cannot Set Up CD Sampler Because It Is Already Running

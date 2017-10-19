@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189056: BUG: Incorrect Localized Strings Display in the Visual Basic IDE"
-permalink: kb/189/Q189056/
+permalink: /kb/189/Q189056/
 ---
 
 ## Q189056: BUG: Incorrect Localized Strings Display in the Visual Basic IDE

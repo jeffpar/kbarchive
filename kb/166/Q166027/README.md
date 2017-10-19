@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166027: Extra Security Dialog Displayed with Windows 3.x Client"
-permalink: kb/166/Q166027/
+permalink: /kb/166/Q166027/
 ---
 
 ## Q166027: Extra Security Dialog Displayed with Windows 3.x Client

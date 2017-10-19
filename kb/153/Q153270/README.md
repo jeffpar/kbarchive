@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153270: XFOR: Internet Mail Connector Proxy Generator Options"
-permalink: kb/153/Q153270/
+permalink: /kb/153/Q153270/
 ---
 
 ## Q153270: XFOR: Internet Mail Connector Proxy Generator Options

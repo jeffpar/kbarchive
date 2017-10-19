@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97878: Encarta: Setup Diagnostic Fails"
-permalink: kb/097/Q97878/
+permalink: /kb/097/Q97878/
 ---
 
 ## Q97878: Encarta: Setup Diagnostic Fails

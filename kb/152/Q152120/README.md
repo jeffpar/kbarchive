@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152120: XCLN: Copying Profile Passes Along Schedule+ Access"
-permalink: kb/152/Q152120/
+permalink: /kb/152/Q152120/
 ---
 
 ## Q152120: XCLN: Copying Profile Passes Along Schedule+ Access

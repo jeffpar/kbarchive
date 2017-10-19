@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192508: Internet Explorer 4 Step by Step Commments and Corrections"
-permalink: kb/192/Q192508/
+permalink: /kb/192/Q192508/
 ---
 
 ## Q192508: Internet Explorer 4 Step by Step Commments and Corrections

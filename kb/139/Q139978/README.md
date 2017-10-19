@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139978: TN3270 Server Can Incorrectly Terminate a Session"
-permalink: kb/139/Q139978/
+permalink: /kb/139/Q139978/
 ---
 
 ## Q139978: TN3270 Server Can Incorrectly Terminate a Session

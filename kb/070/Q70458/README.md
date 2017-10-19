@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70458: Err Msg: Missing &#42;.GRB File with Genoa Graphics"
-permalink: kb/070/Q70458/
+permalink: /kb/070/Q70458/
 ---
 
 ## Q70458: Err Msg: Missing &#42;.GRB File with Genoa Graphics

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123208: TCP/IP-32 FTP.EXE PUT Command Fails on Some FTP Servers"
-permalink: kb/123/Q123208/
+permalink: /kb/123/Q123208/
 ---
 
 ## Q123208: TCP/IP-32 FTP.EXE PUT Command Fails on Some FTP Servers

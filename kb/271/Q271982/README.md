@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271982: XADM: Error Message: The Messaging Interface Returned Unknown..."
-permalink: kb/271/Q271982/
+permalink: /kb/271/Q271982/
 ---
 
 ## Q271982: XADM: Error Message: The Messaging Interface Returned Unknown...

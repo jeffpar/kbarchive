@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235934: FIX: Explorer Shows Level8 FalconMQ Server as Another Bridge"
-permalink: kb/235/Q235934/
+permalink: /kb/235/Q235934/
 ---
 
 ## Q235934: FIX: Explorer Shows Level8 FalconMQ Server as Another Bridge

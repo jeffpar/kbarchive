@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251760: XADM: Exchange 5.5 Setup Doesn't Work on Windows 2000 (TS)"
-permalink: kb/251/Q251760/
+permalink: /kb/251/Q251760/
 ---
 
 ## Q251760: XADM: Exchange 5.5 Setup Doesn't Work on Windows 2000 (TS)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319506: INFO: Index Server Does Not Support Mounted Volumes"
-permalink: kb/319/Q319506/
+permalink: /kb/319/Q319506/
 ---
 
 ## Q319506: INFO: Index Server Does Not Support Mounted Volumes

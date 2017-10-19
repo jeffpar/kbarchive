@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158372: Black Screen During Windows NT 4.0 Upgrade on DEC"
-permalink: kb/158/Q158372/
+permalink: /kb/158/Q158372/
 ---
 
 ## Q158372: Black Screen During Windows NT 4.0 Upgrade on DEC

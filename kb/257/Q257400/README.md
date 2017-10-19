@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257400: FIX: VB6 SP3 Application Crashing in the IDE"
-permalink: kb/257/Q257400/
+permalink: /kb/257/Q257400/
 ---
 
 ## Q257400: FIX: VB6 SP3 Application Crashing in the IDE

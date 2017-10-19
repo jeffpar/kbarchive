@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76187: Norton Utilities Version 6.0 Updates DOSHELP.HLP File"
-permalink: kb/076/Q76187/
+permalink: /kb/076/Q76187/
 ---
 
 ## Q76187: Norton Utilities Version 6.0 Updates DOSHELP.HLP File

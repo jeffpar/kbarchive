@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255984: PRB: IIS5 User Privilege Elevation Vulnerability"
-permalink: kb/255/Q255984/
+permalink: /kb/255/Q255984/
 ---
 
 ## Q255984: PRB: IIS5 User Privilege Elevation Vulnerability

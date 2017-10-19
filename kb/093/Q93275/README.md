@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93275: VWF: Setup - How to Install Run-Time From Hard Disk"
-permalink: kb/093/Q93275/
+permalink: /kb/093/Q93275/
 ---
 
 ## Q93275: VWF: Setup - How to Install Run-Time From Hard Disk

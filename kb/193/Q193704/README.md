@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193704: XADM: Error Creating Local User Account on Member Server"
-permalink: kb/193/Q193704/
+permalink: /kb/193/Q193704/
 ---
 
 ## Q193704: XADM: Error Creating Local User Account on Member Server

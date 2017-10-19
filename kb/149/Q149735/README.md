@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149735: BUG: DBGrid CachePages Property Is Disabled"
-permalink: kb/149/Q149735/
+permalink: /kb/149/Q149735/
 ---
 
 ## Q149735: BUG: DBGrid CachePages Property Is Disabled

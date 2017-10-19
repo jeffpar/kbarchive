@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165688: INFO: Visual C++ 5.0 Readme, Visual SourceSafe Issues"
-permalink: kb/165/Q165688/
+permalink: /kb/165/Q165688/
 ---
 
 ## Q165688: INFO: Visual C++ 5.0 Readme, Visual SourceSafe Issues

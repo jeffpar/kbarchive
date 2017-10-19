@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151202: TN3270E May Experience Unexpected Application Exception Errors"
-permalink: kb/151/Q151202/
+permalink: /kb/151/Q151202/
 ---
 
 ## Q151202: TN3270E May Experience Unexpected Application Exception Errors

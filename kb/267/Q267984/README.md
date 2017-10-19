@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267984: HOWTO: Create and Use Custom Styles with Automation"
-permalink: kb/267/Q267984/
+permalink: /kb/267/Q267984/
 ---
 
 ## Q267984: HOWTO: Create and Use Custom Styles with Automation

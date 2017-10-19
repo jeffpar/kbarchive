@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163064: ODE97: Uninstalling Access or Office Pro 97 May Break Run-Time A"
-permalink: kb/163/Q163064/
+permalink: /kb/163/Q163064/
 ---
 
 ## Q163064: ODE97: Uninstalling Access or Office Pro 97 May Break Run-Time A

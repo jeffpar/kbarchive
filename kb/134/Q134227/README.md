@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134227: PC NTMMTA: External Service Starts Inconsistently"
-permalink: kb/134/Q134227/
+permalink: /kb/134/Q134227/
 ---
 
 ## Q134227: PC NTMMTA: External Service Starts Inconsistently

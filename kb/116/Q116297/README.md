@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116297: Mac Bookshelf: Can't Play MIDI Sounds or Audio Pronunciations"
-permalink: kb/116/Q116297/
+permalink: /kb/116/Q116297/
 ---
 
 ## Q116297: Mac Bookshelf: Can't Play MIDI Sounds or Audio Pronunciations

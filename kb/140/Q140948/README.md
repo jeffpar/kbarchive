@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140948: XADM: Reply Rule Disabled When Deliver to Public Folder Via IMC"
-permalink: kb/140/Q140948/
+permalink: /kb/140/Q140948/
 ---
 
 ## Q140948: XADM: Reply Rule Disabled When Deliver to Public Folder Via IMC

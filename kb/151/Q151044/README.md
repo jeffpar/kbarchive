@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151044: FP: Error HTTP 404 if Page URL Contains a Space"
-permalink: kb/151/Q151044/
+permalink: /kb/151/Q151044/
 ---
 
 ## Q151044: FP: Error HTTP 404 if Page URL Contains a Space

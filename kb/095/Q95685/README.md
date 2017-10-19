@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95685: PPT: Viewer Cannot Access Multiple Disks Using Playlist"
-permalink: kb/095/Q95685/
+permalink: /kb/095/Q95685/
 ---
 
 ## Q95685: PPT: Viewer Cannot Access Multiple Disks Using Playlist

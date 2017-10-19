@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161896: DOC: Unresolved External with &quot;Ignore all Default Libraries&quot;"
-permalink: kb/161/Q161896/
+permalink: /kb/161/Q161896/
 ---
 
 ## Q161896: DOC: Unresolved External with &quot;Ignore all Default Libraries&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247908: STOP 0x0000001e Error in Ntoskrnl.exe at Blue Build Screen"
-permalink: kb/247/Q247908/
+permalink: /kb/247/Q247908/
 ---
 
 ## Q247908: STOP 0x0000001e Error in Ntoskrnl.exe at Blue Build Screen

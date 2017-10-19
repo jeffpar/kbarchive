@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181680: Flight Simulator 98: Inside Moves Corrections &amp; Comments"
-permalink: kb/181/Q181680/
+permalink: /kb/181/Q181680/
 ---
 
 ## Q181680: Flight Simulator 98: Inside Moves Corrections &amp; Comments

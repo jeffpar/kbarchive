@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85011: Character Map Causes Windows Not to Tile Correctly"
-permalink: kb/085/Q85011/
+permalink: /kb/085/Q85011/
 ---
 
 ## Q85011: Character Map Causes Windows Not to Tile Correctly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197397: XFOR: cc:Mail Migration from Command Line May Give False Errors"
-permalink: kb/197/Q197397/
+permalink: /kb/197/Q197397/
 ---
 
 ## Q197397: XFOR: cc:Mail Migration from Command Line May Give False Errors

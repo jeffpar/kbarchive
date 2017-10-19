@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202852: FIX: SQLGetData Returns Extra Character For StrLen_or_IndPtr"
-permalink: kb/202/Q202852/
+permalink: /kb/202/Q202852/
 ---
 
 ## Q202852: FIX: SQLGetData Returns Extra Character For StrLen_or_IndPtr

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157591: Golf: Improving Performance on Machines with 8 MB of RAM"
-permalink: kb/157/Q157591/
+permalink: /kb/157/Q157591/
 ---
 
 ## Q157591: Golf: Improving Performance on Machines with 8 MB of RAM

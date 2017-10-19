@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192035: PRB: Do Not Use a WebClass ProcessTag Inside an HTML Tag"
-permalink: kb/192/Q192035/
+permalink: /kb/192/Q192035/
 ---
 
 ## Q192035: PRB: Do Not Use a WebClass ProcessTag Inside an HTML Tag

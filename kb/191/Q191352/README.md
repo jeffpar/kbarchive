@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191352: SMS: Duplicate/Cross Linked Datakeys Appear on Very Large Sites"
-permalink: kb/191/Q191352/
+permalink: /kb/191/Q191352/
 ---
 
 ## Q191352: SMS: Duplicate/Cross Linked Datakeys Appear on Very Large Sites

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232308: Empty Folder Created in %SystemRoot%&#92;Profiles"
-permalink: kb/232/Q232308/
+permalink: /kb/232/Q232308/
 ---
 
 ## Q232308: Empty Folder Created in %SystemRoot%&#92;Profiles

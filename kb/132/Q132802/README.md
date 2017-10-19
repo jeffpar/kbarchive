@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132802: The Game &quot;Dracula Unleashed&quot; May Cause the Computer to Hang"
-permalink: kb/132/Q132802/
+permalink: /kb/132/Q132802/
 ---
 
 ## Q132802: The Game &quot;Dracula Unleashed&quot; May Cause the Computer to Hang

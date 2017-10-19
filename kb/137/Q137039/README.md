@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137039: New Features in Microsoft Jet Version 3.0"
-permalink: kb/137/Q137039/
+permalink: /kb/137/Q137039/
 ---
 
 ## Q137039: New Features in Microsoft Jet Version 3.0

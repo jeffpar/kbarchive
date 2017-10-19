@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131207: WINS Manager Fails to Add Static Entries"
-permalink: kb/131/Q131207/
+permalink: /kb/131/Q131207/
 ---
 
 ## Q131207: WINS Manager Fails to Add Static Entries

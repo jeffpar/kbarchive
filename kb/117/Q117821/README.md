@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117821: Mac Cinemania: Demo Runs on Monochrome Monitor and Looks Ugly"
-permalink: kb/117/Q117821/
+permalink: /kb/117/Q117821/
 ---
 
 ## Q117821: Mac Cinemania: Demo Runs on Monochrome Monitor and Looks Ugly

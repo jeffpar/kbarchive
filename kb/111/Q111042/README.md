@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111042: PC DOS: Missing Message File Aborts Saving Mail to Folder"
-permalink: kb/111/Q111042/
+permalink: /kb/111/Q111042/
 ---
 
 ## Q111042: PC DOS: Missing Message File Aborts Saving Mail to Folder

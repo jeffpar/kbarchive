@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141325: Baseball 1995: Team Filter Button Resets to All"
-permalink: kb/141/Q141325/
+permalink: /kb/141/Q141325/
 ---
 
 ## Q141325: Baseball 1995: Team Filter Button Resets to All

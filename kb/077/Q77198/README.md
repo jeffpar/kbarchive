@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77198: Cardfile Err Msg: Insufficient Memory to Read Picture..."
-permalink: kb/077/Q77198/
+permalink: /kb/077/Q77198/
 ---
 
 ## Q77198: Cardfile Err Msg: Insufficient Memory to Read Picture...

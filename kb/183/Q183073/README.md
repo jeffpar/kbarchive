@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183073: XADM: Microsoft IS Generates AV in LOGON::IncrObjCount"
-permalink: kb/183/Q183073/
+permalink: /kb/183/Q183073/
 ---
 
 ## Q183073: XADM: Microsoft IS Generates AV in LOGON::IncrObjCount

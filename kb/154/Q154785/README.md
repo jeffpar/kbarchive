@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154785: WinNT 3.51 Service Packs (SPs) Incorrectly Update Newer SPs"
-permalink: kb/154/Q154785/
+permalink: /kb/154/Q154785/
 ---
 
 ## Q154785: WinNT 3.51 Service Packs (SPs) Incorrectly Update Newer SPs

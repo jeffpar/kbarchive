@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317212: &quot;Error 718&quot; Err Msg While Waiting For Response From NAC"
-permalink: kb/317/Q317212/
+permalink: /kb/317/Q317212/
 ---
 
 ## Q317212: &quot;Error 718&quot; Err Msg While Waiting For Response From NAC

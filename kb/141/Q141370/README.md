@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141370: Installing MS Plus! After MSN 1.2 or 1.3 Overwrites Msnver.txt"
-permalink: kb/141/Q141370/
+permalink: /kb/141/Q141370/
 ---
 
 ## Q141370: Installing MS Plus! After MSN 1.2 or 1.3 Overwrites Msnver.txt

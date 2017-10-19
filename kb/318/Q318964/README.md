@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318964: How To Add An MSN News Server To Microsoft Entourage"
-permalink: kb/318/Q318964/
+permalink: /kb/318/Q318964/
 ---
 
 ## Q318964: How To Add An MSN News Server To Microsoft Entourage

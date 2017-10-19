@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151798: How To Prevent the VFP Desktop from Appearing at Startup"
-permalink: kb/151/Q151798/
+permalink: /kb/151/Q151798/
 ---
 
 ## Q151798: How To Prevent the VFP Desktop from Appearing at Startup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177217: XADM: Store Stops with NNTP XHDR on Large Number of Articles"
-permalink: kb/177/Q177217/
+permalink: /kb/177/Q177217/
 ---
 
 ## Q177217: XADM: Store Stops with NNTP XHDR on Large Number of Articles

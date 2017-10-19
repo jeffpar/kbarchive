@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74279: No Support for 2.88 Megabyte Disks During Setup"
-permalink: kb/074/Q74279/
+permalink: /kb/074/Q74279/
 ---
 
 ## Q74279: No Support for 2.88 Megabyte Disks During Setup

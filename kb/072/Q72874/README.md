@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72874: Windows: Do Not Install for No Network if Network Exists"
-permalink: kb/072/Q72874/
+permalink: /kb/072/Q72874/
 ---
 
 ## Q72874: Windows: Do Not Install for No Network if Network Exists

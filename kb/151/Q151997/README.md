@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151997: DECMON Can Cause Spoolss to Generate an Access Violation"
-permalink: kb/151/Q151997/
+permalink: /kb/151/Q151997/
 ---
 
 ## Q151997: DECMON Can Cause Spoolss to Generate an Access Violation

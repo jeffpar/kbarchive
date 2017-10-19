@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191625: TN3270 Server Rejects Valid BIND with 0821 Sense Code"
-permalink: kb/191/Q191625/
+permalink: /kb/191/Q191625/
 ---
 
 ## Q191625: TN3270 Server Rejects Valid BIND with 0821 Sense Code

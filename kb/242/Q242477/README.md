@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242477: SMS: Login Script Support Files Not Copied After Applying SP1"
-permalink: kb/242/Q242477/
+permalink: /kb/242/Q242477/
 ---
 
 ## Q242477: SMS: Login Script Support Files Not Copied After Applying SP1

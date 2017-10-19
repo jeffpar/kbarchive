@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193224: SMS: PCMSVC32 AVs If Package Cmd Line Contains a Drive Letter"
-permalink: kb/193/Q193224/
+permalink: /kb/193/Q193224/
 ---
 
 ## Q193224: SMS: PCMSVC32 AVs If Package Cmd Line Contains a Drive Letter

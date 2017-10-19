@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179553: Access Violation in PolEdit When Defining Allowed Windows Apps"
-permalink: kb/179/Q179553/
+permalink: /kb/179/Q179553/
 ---
 
 ## Q179553: Access Violation in PolEdit When Defining Allowed Windows Apps

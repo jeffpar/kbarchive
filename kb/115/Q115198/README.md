@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115198: Err Msg with DoubleTools: DriveSpace Couldn't Mount Drive..."
-permalink: kb/115/Q115198/
+permalink: /kb/115/Q115198/
 ---
 
 ## Q115198: Err Msg with DoubleTools: DriveSpace Couldn't Mount Drive...

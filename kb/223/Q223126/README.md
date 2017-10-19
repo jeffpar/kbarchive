@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223126: FIX: Form Icon Displayed as Compressed on True Color Display"
-permalink: kb/223/Q223126/
+permalink: /kb/223/Q223126/
 ---
 
 ## Q223126: FIX: Form Icon Displayed as Compressed on True Color Display

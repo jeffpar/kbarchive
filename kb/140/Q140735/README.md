@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140735: WD97: How to Send a Word Document in E-mail"
-permalink: kb/140/Q140735/
+permalink: /kb/140/Q140735/
 ---
 
 ## Q140735: WD97: How to Send a Word Document in E-mail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312619: MSN Explorer Not Recognizing New Hotmail Folder Or Folders"
-permalink: kb/312/Q312619/
+permalink: /kb/312/Q312619/
 ---
 
 ## Q312619: MSN Explorer Not Recognizing New Hotmail Folder Or Folders

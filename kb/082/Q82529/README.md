@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82529: Using Norton Utilities with Erase Protect with Windows"
-permalink: kb/082/Q82529/
+permalink: /kb/082/Q82529/
 ---
 
 ## Q82529: Using Norton Utilities with Erase Protect with Windows

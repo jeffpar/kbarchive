@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152408: Overview of Magic School Bus Explores in the Age of Dinosaurs"
-permalink: kb/152/Q152408/
+permalink: /kb/152/Q152408/
 ---
 
 ## Q152408: Overview of Magic School Bus Explores in the Age of Dinosaurs

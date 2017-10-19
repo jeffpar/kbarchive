@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86649: RECOVER Command Does Not Rename Files"
-permalink: kb/086/Q86649/
+permalink: /kb/086/Q86649/
 ---
 
 ## Q86649: RECOVER Command Does Not Rename Files

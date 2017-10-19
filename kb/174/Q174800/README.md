@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174800: Documentation Location for Routing and Remote Access Service"
-permalink: kb/174/Q174800/
+permalink: /kb/174/Q174800/
 ---
 
 ## Q174800: Documentation Location for Routing and Remote Access Service

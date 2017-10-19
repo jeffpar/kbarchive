@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291802: System Management Server Training Kit Comments and Corrections"
-permalink: kb/291/Q291802/
+permalink: /kb/291/Q291802/
 ---
 
 ## Q291802: System Management Server Training Kit Comments and Corrections

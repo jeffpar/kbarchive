@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74883: FIX: ^Z in Input File Appears to Truncate Listing File"
-permalink: kb/074/Q74883/
+permalink: /kb/074/Q74883/
 ---
 
 ## Q74883: FIX: ^Z in Input File Appears to Truncate Listing File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241728: PRB: Using 2-Digit Years w/ IsDate May Produce Unexpected Result"
-permalink: kb/241/Q241728/
+permalink: /kb/241/Q241728/
 ---
 
 ## Q241728: PRB: Using 2-Digit Years w/ IsDate May Produce Unexpected Result

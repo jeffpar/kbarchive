@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93907: Err Msg: Illegal Function Call (with WinPrint)"
-permalink: kb/093/Q93907/
+permalink: /kb/093/Q93907/
 ---
 
 ## Q93907: Err Msg: Illegal Function Call (with WinPrint)

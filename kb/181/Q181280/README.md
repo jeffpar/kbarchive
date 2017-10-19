@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181280: XFOR: Attachment with PC Binary or PC ASCII Flag Set Unreadable"
-permalink: kb/181/Q181280/
+permalink: /kb/181/Q181280/
 ---
 
 ## Q181280: XFOR: Attachment with PC Binary or PC ASCII Flag Set Unreadable

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95558: MemMaker Doesn't Remove All References to QEMM"
-permalink: kb/095/Q95558/
+permalink: /kb/095/Q95558/
 ---
 
 ## Q95558: MemMaker Doesn't Remove All References to QEMM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74627: 'Invalid COMMAND.COM' with Profit Wise and MS-DOS 5.0"
-permalink: kb/074/Q74627/
+permalink: /kb/074/Q74627/
 ---
 
 ## Q74627: 'Invalid COMMAND.COM' with Profit Wise and MS-DOS 5.0

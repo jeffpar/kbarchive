@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150026: Job Status Remains &quot;Retrying&quot; When No Retrying Clients"
-permalink: kb/150/Q150026/
+permalink: /kb/150/Q150026/
 ---
 
 ## Q150026: Job Status Remains &quot;Retrying&quot; When No Retrying Clients

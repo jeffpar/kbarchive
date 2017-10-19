@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120466: Microsoft Backup for Windows Fails on Pentium-Based Machines"
-permalink: kb/120/Q120466/
+permalink: /kb/120/Q120466/
 ---
 
 ## Q120466: Microsoft Backup for Windows Fails on Pentium-Based Machines

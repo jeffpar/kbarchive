@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91647: PC Win: Err Msg: There Is Not Enough Memory or System Resources"
-permalink: kb/091/Q91647/
+permalink: /kb/091/Q91647/
 ---
 
 ## Q91647: PC Win: Err Msg: There Is Not Enough Memory or System Resources

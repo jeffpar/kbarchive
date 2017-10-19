@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325113: SMS: SMS 2.0 SP4 Fixes That May Require Manual Intervention"
-permalink: kb/325/Q325113/
+permalink: /kb/325/Q325113/
 ---
 
 ## Q325113: SMS: SMS 2.0 SP4 Fixes That May Require Manual Intervention

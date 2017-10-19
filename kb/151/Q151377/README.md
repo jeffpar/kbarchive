@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151377: Incorrect Path for UINFO.XNF in Administrator's Guide"
-permalink: kb/151/Q151377/
+permalink: /kb/151/Q151377/
 ---
 
 ## Q151377: Incorrect Path for UINFO.XNF in Administrator's Guide

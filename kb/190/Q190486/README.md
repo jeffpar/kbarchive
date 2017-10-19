@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190486: DOC: Missing Styles for CToolbar::SetButtonStyles"
-permalink: kb/190/Q190486/
+permalink: /kb/190/Q190486/
 ---
 
 ## Q190486: DOC: Missing Styles for CToolbar::SetButtonStyles

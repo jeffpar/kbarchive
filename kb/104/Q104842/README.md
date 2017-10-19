@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104842: Changes to Windows NT Driver Library: Network Adapters"
-permalink: kb/104/Q104842/
+permalink: /kb/104/Q104842/
 ---
 
 ## Q104842: Changes to Windows NT Driver Library: Network Adapters

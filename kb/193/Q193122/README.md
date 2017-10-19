@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193122: XFOR: 0-Byte Message or Print Spool File Causes VM2DIA to Stop"
-permalink: kb/193/Q193122/
+permalink: /kb/193/Q193122/
 ---
 
 ## Q193122: XFOR: 0-Byte Message or Print Spool File Causes VM2DIA to Stop

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79254: Creating a Bootable LM 2.1 Enhanced RAS Workstation Disk"
-permalink: kb/079/Q79254/
+permalink: /kb/079/Q79254/
 ---
 
 ## Q79254: Creating a Bootable LM 2.1 Enhanced RAS Workstation Disk

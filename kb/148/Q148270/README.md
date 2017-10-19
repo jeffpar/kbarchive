@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148270: XADM: Can't Return to Admin Choosing OK After Regeneration"
-permalink: kb/148/Q148270/
+permalink: /kb/148/Q148270/
 ---
 
 ## Q148270: XADM: Can't Return to Admin Choosing OK After Regeneration

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141533: FIX: CSyncObject::Lock Always Returns TRUE for Finite Waits"
-permalink: kb/141/Q141533/
+permalink: /kb/141/Q141533/
 ---
 
 ## Q141533: FIX: CSyncObject::Lock Always Returns TRUE for Finite Waits

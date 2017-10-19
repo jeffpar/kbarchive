@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235991: SMS: Systems Management Server 2.0 Service Pack 1 Fixlist"
-permalink: kb/235/Q235991/
+permalink: /kb/235/Q235991/
 ---
 
 ## Q235991: SMS: Systems Management Server 2.0 Service Pack 1 Fixlist

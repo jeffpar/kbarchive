@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172465: Bookshelf 98: &quot;Licensed To&quot; Field in About Box Is Empty"
-permalink: kb/172/Q172465/
+permalink: /kb/172/Q172465/
 ---
 
 ## Q172465: Bookshelf 98: &quot;Licensed To&quot; Field in About Box Is Empty

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271877: BUG: ToolTips Do Not Follow Controls on Scrollable Form"
-permalink: kb/271/Q271877/
+permalink: /kb/271/Q271877/
 ---
 
 ## Q271877: BUG: ToolTips Do Not Follow Controls on Scrollable Form

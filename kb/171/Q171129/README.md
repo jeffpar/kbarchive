@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171129: WD97: Error Message If AutoText String Exceeds 255 Characters"
-permalink: kb/171/Q171129/
+permalink: /kb/171/Q171129/
 ---
 
 ## Q171129: WD97: Error Message If AutoText String Exceeds 255 Characters

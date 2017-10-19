@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121377: PC WRmt: Remote POL Not Updated After New Addr. List Download"
-permalink: kb/121/Q121377/
+permalink: /kb/121/Q121377/
 ---
 
 ## Q121377: PC WRmt: Remote POL Not Updated After New Addr. List Download

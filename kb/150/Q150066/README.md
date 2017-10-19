@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150066: Simultaneous PGC Config. and Login Script Execution Errors"
-permalink: kb/150/Q150066/
+permalink: /kb/150/Q150066/
 ---
 
 ## Q150066: Simultaneous PGC Config. and Login Script Execution Errors

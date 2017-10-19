@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115991: How to Obtain the Current Instance Handle of an .FLL File"
-permalink: kb/115/Q115991/
+permalink: /kb/115/Q115991/
 ---
 
 ## Q115991: How to Obtain the Current Instance Handle of an .FLL File

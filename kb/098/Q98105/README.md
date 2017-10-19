@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98105: PC Gen: How to Search for Mail &amp; Related KB Articles by Topic"
-permalink: kb/098/Q98105/
+permalink: /kb/098/Q98105/
 ---
 
 ## Q98105: PC Gen: How to Search for Mail &amp; Related KB Articles by Topic

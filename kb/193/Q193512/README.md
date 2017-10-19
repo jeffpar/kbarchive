@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193512: PRB: Can Not Initialize the Debugging Subsystem"
-permalink: kb/193/Q193512/
+permalink: /kb/193/Q193512/
 ---
 
 ## Q193512: PRB: Can Not Initialize the Debugging Subsystem

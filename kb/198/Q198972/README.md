@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198972: Bookshelf/Dictionary: Citations Not Added to Research Projects"
-permalink: kb/198/Q198972/
+permalink: /kb/198/Q198972/
 ---
 
 ## Q198972: Bookshelf/Dictionary: Citations Not Added to Research Projects

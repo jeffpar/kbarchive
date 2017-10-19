@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80282: Cornerstone Full-Page Display with Type-A Video Card"
-permalink: kb/080/Q80282/
+permalink: /kb/080/Q80282/
 ---
 
 ## Q80282: Cornerstone Full-Page Display with Type-A Video Card

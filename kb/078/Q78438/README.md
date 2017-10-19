@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78438: Newer Epson Computers Use A20 Handler 1 with HIMEM.SYS"
-permalink: kb/078/Q78438/
+permalink: /kb/078/Q78438/
 ---
 
 ## Q78438: Newer Epson Computers Use A20 Handler 1 with HIMEM.SYS

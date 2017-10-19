@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109481: How to Strip Linefeeds from Exported (.TXT) Files"
-permalink: kb/109/Q109481/
+permalink: /kb/109/Q109481/
 ---
 
 ## Q109481: How to Strip Linefeeds from Exported (.TXT) Files

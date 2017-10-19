@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158728: Gopher Types Not Implemented w/ Internet Information Server 2.0"
-permalink: kb/158/Q158728/
+permalink: /kb/158/Q158728/
 ---
 
 ## Q158728: Gopher Types Not Implemented w/ Internet Information Server 2.0

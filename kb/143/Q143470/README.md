@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143470: Run Logon Scripts Synchronously Not Applied to New Users"
-permalink: kb/143/Q143470/
+permalink: /kb/143/Q143470/
 ---
 
 ## Q143470: Run Logon Scripts Synchronously Not Applied to New Users

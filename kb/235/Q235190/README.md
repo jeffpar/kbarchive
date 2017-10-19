@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235190: SMS Advertisements Are Immediately Locked and Cannot Be Modified"
-permalink: kb/235/Q235190/
+permalink: /kb/235/Q235190/
 ---
 
 ## Q235190: SMS Advertisements Are Immediately Locked and Cannot Be Modified

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232000: How to Configure WLBS with Multiple Virtual IP Addresses"
-permalink: kb/232/Q232000/
+permalink: /kb/232/Q232000/
 ---
 
 ## Q232000: How to Configure WLBS with Multiple Virtual IP Addresses

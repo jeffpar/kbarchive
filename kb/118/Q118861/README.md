@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118861: X400: Supported Format for O/R Name Country Code"
-permalink: kb/118/Q118861/
+permalink: /kb/118/Q118861/
 ---
 
 ## Q118861: X400: Supported Format for O/R Name Country Code

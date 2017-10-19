@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151770: INF: How to Suppress &quot;Local Port Error&quot; Dialog Boxes"
-permalink: kb/151/Q151770/
+permalink: /kb/151/Q151770/
 ---
 
 ## Q151770: INF: How to Suppress &quot;Local Port Error&quot; Dialog Boxes

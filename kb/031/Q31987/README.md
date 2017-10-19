@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q31987: Maximum Number of Object Modules LINK Supports"
-permalink: kb/031/Q31987/
+permalink: /kb/031/Q31987/
 ---
 
 ## Q31987: Maximum Number of Object Modules LINK Supports

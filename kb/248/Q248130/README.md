@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248130: FILE: AutoSave.exe Provides AutoSave for Visual C++"
-permalink: kb/248/Q248130/
+permalink: /kb/248/Q248130/
 ---
 
 ## Q248130: FILE: AutoSave.exe Provides AutoSave for Visual C++

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87153: Mac Wkst: Local Address List"
-permalink: kb/087/Q87153/
+permalink: /kb/087/Q87153/
 ---
 
 ## Q87153: Mac Wkst: Local Address List

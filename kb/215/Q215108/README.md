@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215108: SMS: Advertised Programs Wizard Displays Incorrect Message"
-permalink: kb/215/Q215108/
+permalink: /kb/215/Q215108/
 ---
 
 ## Q215108: SMS: Advertised Programs Wizard Displays Incorrect Message

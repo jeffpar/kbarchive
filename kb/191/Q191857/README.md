@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191857: BUG: Scrollbar Disabled in IDE When Enabled is Set to False"
-permalink: kb/191/Q191857/
+permalink: /kb/191/Q191857/
 ---
 
 ## Q191857: BUG: Scrollbar Disabled in IDE When Enabled is Set to False

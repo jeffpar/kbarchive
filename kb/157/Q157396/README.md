@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157396: WD97: WordPerfect Help Topic Incomplete, Truncated"
-permalink: kb/157/Q157396/
+permalink: /kb/157/Q157396/
 ---
 
 ## Q157396: WD97: WordPerfect Help Topic Incomplete, Truncated

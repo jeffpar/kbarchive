@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172449: SMS: Unable to Find Logon Server and No Default Server"
-permalink: kb/172/Q172449/
+permalink: /kb/172/Q172449/
 ---
 
 ## Q172449: SMS: Unable to Find Logon Server and No Default Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129113: WINS Server Event 4206 Log Entries May Not be Valid"
-permalink: kb/129/Q129113/
+permalink: /kb/129/Q129113/
 ---
 
 ## Q129113: WINS Server Event 4206 Log Entries May Not be Valid

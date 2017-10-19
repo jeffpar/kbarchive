@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169838: DHCP Client Experiences Delays During Name Resolution"
-permalink: kb/169/Q169838/
+permalink: /kb/169/Q169838/
 ---
 
 ## Q169838: DHCP Client Experiences Delays During Name Resolution

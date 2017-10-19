@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162471: WinNT 4.0 May Not Recognize SCSI Devices Using Nonzero LUNs"
-permalink: kb/162/Q162471/
+permalink: /kb/162/Q162471/
 ---
 
 ## Q162471: WinNT 4.0 May Not Recognize SCSI Devices Using Nonzero LUNs

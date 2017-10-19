@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273864: Asheron's Call: How to Securely Trade with Another Player"
-permalink: kb/273/Q273864/
+permalink: /kb/273/Q273864/
 ---
 
 ## Q273864: Asheron's Call: How to Securely Trade with Another Player

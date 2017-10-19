@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137316: PRB: SET ALTERNATE Adds Extra Spaces to the End of Each Line"
-permalink: kb/137/Q137316/
+permalink: /kb/137/Q137316/
 ---
 
 ## Q137316: PRB: SET ALTERNATE Adds Extra Spaces to the End of Each Line

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141428: Bookshelf 1995: Search Not Restarted After Spell Check"
-permalink: kb/141/Q141428/
+permalink: /kb/141/Q141428/
 ---
 
 ## Q141428: Bookshelf 1995: Search Not Restarted After Spell Check

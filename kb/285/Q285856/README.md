@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285856: Event 705 Logged with Client Computer Name &quot;UNKNOWN&quot;"
-permalink: kb/285/Q285856/
+permalink: /kb/285/Q285856/
 ---
 
 ## Q285856: Event 705 Logged with Client Computer Name &quot;UNKNOWN&quot;

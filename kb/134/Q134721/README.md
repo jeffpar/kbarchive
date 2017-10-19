@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134721: HOWTO: How to Handle Visual FoxPro Connectivity Errors w/o DBERR"
-permalink: kb/134/Q134721/
+permalink: /kb/134/Q134721/
 ---
 
 ## Q134721: HOWTO: How to Handle Visual FoxPro Connectivity Errors w/o DBERR

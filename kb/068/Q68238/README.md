@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68238: System Font Too Large After Installing Screen Fonts"
-permalink: kb/068/Q68238/
+permalink: /kb/068/Q68238/
 ---
 
 ## Q68238: System Font Too Large After Installing Screen Fonts

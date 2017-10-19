@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156463: Writer 2: System Font Remains When Show TrueType is Selected"
-permalink: kb/156/Q156463/
+permalink: /kb/156/Q156463/
 ---
 
 ## Q156463: Writer 2: System Font Remains When Show TrueType is Selected

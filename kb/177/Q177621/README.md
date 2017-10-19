@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177621: Dr. Watson in Mprouter.exe When Using a Script"
-permalink: kb/177/Q177621/
+permalink: /kb/177/Q177621/
 ---
 
 ## Q177621: Dr. Watson in Mprouter.exe When Using a Script

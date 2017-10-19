@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141629: FIX: Edit Menu Find Option Is Enabled But No Find Next Button"
-permalink: kb/141/Q141629/
+permalink: /kb/141/Q141629/
 ---
 
 ## Q141629: FIX: Edit Menu Find Option Is Enabled But No Find Next Button

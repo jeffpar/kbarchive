@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134756: PC Gen: MMTA.TXT: Mail 3.5 MMTA for Windows NT"
-permalink: kb/134/Q134756/
+permalink: /kb/134/Q134756/
 ---
 
 ## Q134756: PC Gen: MMTA.TXT: Mail 3.5 MMTA for Windows NT

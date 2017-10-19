@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133478: Blank Page is Printed with HP IIIsi and HP 4 Printer Driver"
-permalink: kb/133/Q133478/
+permalink: /kb/133/Q133478/
 ---
 
 ## Q133478: Blank Page is Printed with HP IIIsi and HP 4 Printer Driver

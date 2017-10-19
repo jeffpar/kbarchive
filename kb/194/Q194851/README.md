@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194851: PC Rmt: Textborder Is Off in Remote Client"
-permalink: kb/194/Q194851/
+permalink: /kb/194/Q194851/
 ---
 
 ## Q194851: PC Rmt: Textborder Is Off in Remote Client

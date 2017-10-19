@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122578: PC NT: 4,292,967,295 File Locks on .MMF and .CAL Files"
-permalink: kb/122/Q122578/
+permalink: /kb/122/Q122578/
 ---
 
 ## Q122578: PC NT: 4,292,967,295 File Locks on .MMF and .CAL Files

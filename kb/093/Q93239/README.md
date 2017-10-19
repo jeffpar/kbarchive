@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93239: PC DB: Mail Message (.MAI) File Format"
-permalink: kb/093/Q93239/
+permalink: /kb/093/Q93239/
 ---
 
 ## Q93239: PC DB: Mail Message (.MAI) File Format

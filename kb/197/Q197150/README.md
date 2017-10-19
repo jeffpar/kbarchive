@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197150: WD97: Automatic Captioning Doesn't Label Inserted Files"
-permalink: kb/197/Q197150/
+permalink: /kb/197/Q197150/
 ---
 
 ## Q197150: WD97: Automatic Captioning Doesn't Label Inserted Files

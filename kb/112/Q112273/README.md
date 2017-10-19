@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112273: Mac Adm: Incorrect Server Version Displayed in Server Report"
-permalink: kb/112/Q112273/
+permalink: /kb/112/Q112273/
 ---
 
 ## Q112273: Mac Adm: Incorrect Server Version Displayed in Server Report

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260718: StarLancer: Computer Hangs When You Attempt to Start New Mission"
-permalink: kb/260/Q260718/
+permalink: /kb/260/Q260718/
 ---
 
 ## Q260718: StarLancer: Computer Hangs When You Attempt to Start New Mission

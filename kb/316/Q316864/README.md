@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316864: Problems with Adobe Acrobat 5.0 After You Install URLScan"
-permalink: kb/316/Q316864/
+permalink: /kb/316/Q316864/
 ---
 
 ## Q316864: Problems with Adobe Acrobat 5.0 After You Install URLScan

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246724: XFOR: Notes Conversion Fails Processing User-defined Fields"
-permalink: kb/246/Q246724/
+permalink: /kb/246/Q246724/
 ---
 
 ## Q246724: XFOR: Notes Conversion Fails Processing User-defined Fields

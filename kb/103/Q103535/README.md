@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103535: Cannot Manually Mount Fragmented DoubleSpace-Compressed Drive"
-permalink: kb/103/Q103535/
+permalink: /kb/103/Q103535/
 ---
 
 ## Q103535: Cannot Manually Mount Fragmented DoubleSpace-Compressed Drive

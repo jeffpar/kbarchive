@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155727: XFOR: DirSync Deletes and Modifies Not Being Processed by DXA"
-permalink: kb/155/Q155727/
+permalink: /kb/155/Q155727/
 ---
 
 ## Q155727: XFOR: DirSync Deletes and Modifies Not Being Processed by DXA

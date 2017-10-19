@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130200: PRB: Deleted Records are Committed with TABLEUPDATE"
-permalink: kb/130/Q130200/
+permalink: /kb/130/Q130200/
 ---
 
 ## Q130200: PRB: Deleted Records are Committed with TABLEUPDATE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102557: SchedPlus: Mtg Request Only Displays Subj Line in Appt Book"
-permalink: kb/102/Q102557/
+permalink: /kb/102/Q102557/
 ---
 
 ## Q102557: SchedPlus: Mtg Request Only Displays Subj Line in Appt Book

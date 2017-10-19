@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71408: Mac Hyp: Setting Automatic Self-Copy on a Message"
-permalink: kb/071/Q71408/
+permalink: /kb/071/Q71408/
 ---
 
 ## Q71408: Mac Hyp: Setting Automatic Self-Copy on a Message

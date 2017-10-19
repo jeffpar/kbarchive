@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77369: Automatically Loading MIRROR High"
-permalink: kb/077/Q77369/
+permalink: /kb/077/Q77369/
 ---
 
 ## Q77369: Automatically Loading MIRROR High

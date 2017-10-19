@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282015: &quot;Protected Storage&quot; Error Message with Roaming Profiles"
-permalink: kb/282/Q282015/
+permalink: /kb/282/Q282015/
 ---
 
 ## Q282015: &quot;Protected Storage&quot; Error Message with Roaming Profiles

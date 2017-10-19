@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88100: MRU Limits for File Manager, Print Manager in WFWG"
-permalink: kb/088/Q88100/
+permalink: /kb/088/Q88100/
 ---
 
 ## Q88100: MRU Limits for File Manager, Print Manager in WFWG

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163601: WD97: More Cool Stuff Template Refers to Personal Web Server"
-permalink: kb/163/Q163601/
+permalink: /kb/163/Q163601/
 ---
 
 ## Q163601: WD97: More Cool Stuff Template Refers to Personal Web Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182937: FIX: Files in External Dependencies Folder Don't Persist"
-permalink: kb/182/Q182937/
+permalink: /kb/182/Q182937/
 ---
 
 ## Q182937: FIX: Files in External Dependencies Folder Don't Persist

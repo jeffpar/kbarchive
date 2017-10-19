@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153005: PRB: Longjmp Inside a _try Block Fails on PowerPC"
-permalink: kb/153/Q153005/
+permalink: /kb/153/Q153005/
 ---
 
 ## Q153005: PRB: Longjmp Inside a _try Block Fails on PowerPC

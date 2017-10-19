@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130308: PRB: Using SHOW(1) Does Not Make a Form in a Formset Modal"
-permalink: kb/130/Q130308/
+permalink: /kb/130/Q130308/
 ---
 
 ## Q130308: PRB: Using SHOW(1) Does Not Make a Form in a Formset Modal

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237422: XADM: ESEUTIL /P Aborts with -1605, JET_errKeyDuplicate"
-permalink: kb/237/Q237422/
+permalink: /kb/237/Q237422/
 ---
 
 ## Q237422: XADM: ESEUTIL /P Aborts with -1605, JET_errKeyDuplicate

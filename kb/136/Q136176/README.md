@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136176: PPT7: Windows 95 Taskbar Doesn't Respond During Slide Show"
-permalink: kb/136/Q136176/
+permalink: /kb/136/Q136176/
 ---
 
 ## Q136176: PPT7: Windows 95 Taskbar Doesn't Respond During Slide Show

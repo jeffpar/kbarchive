@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166185: Macintosh Chooser May Hang When Connecting to Windows NT"
-permalink: kb/166/Q166185/
+permalink: /kb/166/Q166185/
 ---
 
 ## Q166185: Macintosh Chooser May Hang When Connecting to Windows NT

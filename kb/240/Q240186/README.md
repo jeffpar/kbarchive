@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240186: MSB Ocean: &quot;Error 2 Cannot Run&quot; or Black Screen"
-permalink: kb/240/Q240186/
+permalink: /kb/240/Q240186/
 ---
 
 ## Q240186: MSB Ocean: &quot;Error 2 Cannot Run&quot; or Black Screen

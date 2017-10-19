@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207559: Games: Game or Computer Hangs When Using Matrox Mystique 220"
-permalink: kb/207/Q207559/
+permalink: /kb/207/Q207559/
 ---
 
 ## Q207559: Games: Game or Computer Hangs When Using Matrox Mystique 220

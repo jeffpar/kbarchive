@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142393: PRB: Cannot Create a Quick Report/Wizard Report from a Cursor"
-permalink: kb/142/Q142393/
+permalink: /kb/142/Q142393/
 ---
 
 ## Q142393: PRB: Cannot Create a Quick Report/Wizard Report from a Cursor

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92374: PC Win: Err Msg: That User's Mailbox Is Corrupt..."
-permalink: kb/092/Q92374/
+permalink: /kb/092/Q92374/
 ---
 
 ## Q92374: PC Win: Err Msg: That User's Mailbox Is Corrupt...

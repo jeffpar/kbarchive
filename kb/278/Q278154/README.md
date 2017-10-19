@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278154: How to Extract SMTP Addresses for Mailbox Recipients"
-permalink: kb/278/Q278154/
+permalink: /kb/278/Q278154/
 ---
 
 ## Q278154: How to Extract SMTP Addresses for Mailbox Recipients

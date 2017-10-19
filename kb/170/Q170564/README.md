@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170564: WD97: Objects Inserted as Inline by Default in SR-1"
-permalink: kb/170/Q170564/
+permalink: /kb/170/Q170564/
 ---
 
 ## Q170564: WD97: Objects Inserted as Inline by Default in SR-1

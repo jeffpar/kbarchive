@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89889: Default Minimal View Attributes in Quick Recorder"
-permalink: kb/089/Q89889/
+permalink: /kb/089/Q89889/
 ---
 
 ## Q89889: Default Minimal View Attributes in Quick Recorder

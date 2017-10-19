@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309096: MCSE Readiness Review Exam 70-219: Designing a Microsoft Windows"
-permalink: kb/309/Q309096/
+permalink: /kb/309/Q309096/
 ---
 
 ## Q309096: MCSE Readiness Review Exam 70-219: Designing a Microsoft Windows

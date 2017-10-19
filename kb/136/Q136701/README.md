@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136701: Works 95: Cannot Enter CD Key During Works 4.0 Setup"
-permalink: kb/136/Q136701/
+permalink: /kb/136/Q136701/
 ---
 
 ## Q136701: Works 95: Cannot Enter CD Key During Works 4.0 Setup

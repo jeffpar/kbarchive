@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190310: PRB: IMPORT/EXPORT Commands Do Not Support CSV File Type"
-permalink: kb/190/Q190310/
+permalink: /kb/190/Q190310/
 ---
 
 ## Q190310: PRB: IMPORT/EXPORT Commands Do Not Support CSV File Type

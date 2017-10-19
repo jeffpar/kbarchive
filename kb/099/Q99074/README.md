@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99074: Only IBM/National Semiconductor PCMCIA Cards Supported"
-permalink: kb/099/Q99074/
+permalink: /kb/099/Q99074/
 ---
 
 ## Q99074: Only IBM/National Semiconductor PCMCIA Cards Supported

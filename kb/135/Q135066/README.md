@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135066: PC MAPI: How to Schedule Mail Messaging on Windows NT"
-permalink: kb/135/Q135066/
+permalink: /kb/135/Q135066/
 ---
 
 ## Q135066: PC MAPI: How to Schedule Mail Messaging on Windows NT

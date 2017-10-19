@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120036: SNA Server Sample VTAM/CICS Parameters for Independent LU6.2"
-permalink: kb/120/Q120036/
+permalink: /kb/120/Q120036/
 ---
 
 ## Q120036: SNA Server Sample VTAM/CICS Parameters for Independent LU6.2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155699: Display Type Dialog Box Does Not Detect DAC Type"
-permalink: kb/155/Q155699/
+permalink: /kb/155/Q155699/
 ---
 
 ## Q155699: Display Type Dialog Box Does Not Detect DAC Type

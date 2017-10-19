@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317643: MechWarrior 4: Computer Hangs When You Start  MechWarrior 4"
-permalink: kb/317/Q317643/
+permalink: /kb/317/Q317643/
 ---
 
 ## Q317643: MechWarrior 4: Computer Hangs When You Start  MechWarrior 4

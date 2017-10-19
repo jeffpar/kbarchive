@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126426: PC MAPI: MAPIDeleteMail Not Place Deleted Mail in Wastebasket"
-permalink: kb/126/Q126426/
+permalink: /kb/126/Q126426/
 ---
 
 ## Q126426: PC MAPI: MAPIDeleteMail Not Place Deleted Mail in Wastebasket

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132812: Cannot Use Quickstart in Dynacomm Elite"
-permalink: kb/132/Q132812/
+permalink: /kb/132/Q132812/
 ---
 
 ## Q132812: Cannot Use Quickstart in Dynacomm Elite

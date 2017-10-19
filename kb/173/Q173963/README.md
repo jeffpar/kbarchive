@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173963: Index Server Queries Don't Run"
-permalink: kb/173/Q173963/
+permalink: /kb/173/Q173963/
 ---
 
 ## Q173963: Index Server Queries Don't Run

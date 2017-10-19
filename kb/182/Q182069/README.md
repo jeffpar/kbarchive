@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182069: BUG: Compile Error on Print Statement in a With..End Block"
-permalink: kb/182/Q182069/
+permalink: /kb/182/Q182069/
 ---
 
 ## Q182069: BUG: Compile Error on Print Statement in a With..End Block

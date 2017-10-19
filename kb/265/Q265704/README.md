@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265704: How to Retain NTFS File System File and Share Permissions"
-permalink: kb/265/Q265704/
+permalink: /kb/265/Q265704/
 ---
 
 ## Q265704: How to Retain NTFS File System File and Share Permissions

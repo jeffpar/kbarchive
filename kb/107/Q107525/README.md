@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107525: Drive Letters Swapped After Converting Stacker Drives"
-permalink: kb/107/Q107525/
+permalink: /kb/107/Q107525/
 ---
 
 ## Q107525: Drive Letters Swapped After Converting Stacker Drives

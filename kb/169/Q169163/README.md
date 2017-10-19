@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169163: XCLN: Changes Not Propped When Items Added to Fields Collection"
-permalink: kb/169/Q169163/
+permalink: /kb/169/Q169163/
 ---
 
 ## Q169163: XCLN: Changes Not Propped When Items Added to Fields Collection

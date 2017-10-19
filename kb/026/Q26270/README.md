@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q26270: FIX: Relational Operators with MOV May Evaluate Incorrectly"
-permalink: kb/026/Q26270/
+permalink: /kb/026/Q26270/
 ---
 
 ## Q26270: FIX: Relational Operators with MOV May Evaluate Incorrectly

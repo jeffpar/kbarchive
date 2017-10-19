@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321921: MCSA Readiness Review Managing A Microsoft Windows 2000 Network"
-permalink: kb/321/Q321921/
+permalink: /kb/321/Q321921/
 ---
 
 ## Q321921: MCSA Readiness Review Managing A Microsoft Windows 2000 Network

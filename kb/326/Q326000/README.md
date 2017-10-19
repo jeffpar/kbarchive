@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326000: Casino: Game Closes Unexpectedly When Accepting a Comp"
-permalink: kb/326/Q326000/
+permalink: /kb/326/Q326000/
 ---
 
 ## Q326000: Casino: Game Closes Unexpectedly When Accepting a Comp

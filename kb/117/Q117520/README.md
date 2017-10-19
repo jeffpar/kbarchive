@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117520: MS-DOS 6.21 Upgrade Directory Listing for 3.5-Inch (720K)"
-permalink: kb/117/Q117520/
+permalink: /kb/117/Q117520/
 ---
 
 ## Q117520: MS-DOS 6.21 Upgrade Directory Listing for 3.5-Inch (720K)

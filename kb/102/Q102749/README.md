@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102749: X400: Err Msg: MTA_Name Has Queued Messages..."
-permalink: kb/102/Q102749/
+permalink: /kb/102/Q102749/
 ---
 
 ## Q102749: X400: Err Msg: MTA_Name Has Queued Messages...

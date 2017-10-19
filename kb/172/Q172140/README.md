@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172140: Verity Search '97 Causes IIS Authentication to Fail"
-permalink: kb/172/Q172140/
+permalink: /kb/172/Q172140/
 ---
 
 ## Q172140: Verity Search '97 Causes IIS Authentication to Fail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161309: WD97: Macro to Increment Invoice Number to New Form Document"
-permalink: kb/161/Q161309/
+permalink: /kb/161/Q161309/
 ---
 
 ## Q161309: WD97: Macro to Increment Invoice Number to New Form Document

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239942: Access Violation in Snaexp.exe Occurs When Inserting a Range of"
-permalink: kb/239/Q239942/
+permalink: /kb/239/Q239942/
 ---
 
 ## Q239942: Access Violation in Snaexp.exe Occurs When Inserting a Range of

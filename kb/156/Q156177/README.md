@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156177: PRB: Error Passing Multiple Parameters to DataToClip Method"
-permalink: kb/156/Q156177/
+permalink: /kb/156/Q156177/
 ---
 
 ## Q156177: PRB: Error Passing Multiple Parameters to DataToClip Method

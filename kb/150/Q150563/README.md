@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150563: PC Mac: Microsoft Word Attachment Loses Its File Association"
-permalink: kb/150/Q150563/
+permalink: /kb/150/Q150563/
 ---
 
 ## Q150563: PC Mac: Microsoft Word Attachment Loses Its File Association

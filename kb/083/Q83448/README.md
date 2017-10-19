@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83448: Error Message &quot;Invalid TrueType Font Detected...&quot;"
-permalink: kb/083/Q83448/
+permalink: /kb/083/Q83448/
 ---
 
 ## Q83448: Error Message &quot;Invalid TrueType Font Detected...&quot;

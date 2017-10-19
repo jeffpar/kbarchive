@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142543: Windows 95 Hangs with TCP/IP Routing Enabled"
-permalink: kb/142/Q142543/
+permalink: /kb/142/Q142543/
 ---
 
 ## Q142543: Windows 95 Hangs with TCP/IP Routing Enabled

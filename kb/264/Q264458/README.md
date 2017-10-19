@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264458: BUG: ATL Object Wizard Misses &quot;Ready State&quot; Stock Property"
-permalink: kb/264/Q264458/
+permalink: /kb/264/Q264458/
 ---
 
 ## Q264458: BUG: ATL Object Wizard Misses &quot;Ready State&quot; Stock Property

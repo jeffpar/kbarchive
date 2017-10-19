@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303746: Event Error: Target Folder Permissions Deny Access to XML Files"
-permalink: kb/303/Q303746/
+permalink: /kb/303/Q303746/
 ---
 
 ## Q303746: Event Error: Target Folder Permissions Deny Access to XML Files

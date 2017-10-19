@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164841: XCON: Messages Stuck in MTA Queues"
-permalink: kb/164/Q164841/
+permalink: /kb/164/Q164841/
 ---
 
 ## Q164841: XCON: Messages Stuck in MTA Queues

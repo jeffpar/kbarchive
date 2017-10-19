@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311846: INFO: Names and IP Addresses an MSDTC Client Must Have"
-permalink: kb/311/Q311846/
+permalink: /kb/311/Q311846/
 ---
 
 ## Q311846: INFO: Names and IP Addresses an MSDTC Client Must Have

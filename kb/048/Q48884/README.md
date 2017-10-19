@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48884: Mac Wkst: Saving an Undeliverable Mail Message"
-permalink: kb/048/Q48884/
+permalink: /kb/048/Q48884/
 ---
 
 ## Q48884: Mac Wkst: Saving an Undeliverable Mail Message

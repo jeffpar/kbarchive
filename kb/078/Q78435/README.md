@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78435: What Is EGA.SYS and What Is Its Function?"
-permalink: kb/078/Q78435/
+permalink: /kb/078/Q78435/
 ---
 
 ## Q78435: What Is EGA.SYS and What Is Its Function?

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180773: BUG: Closing a Form with Control Box &quot;X&quot; Only Hides Form"
-permalink: kb/180/Q180773/
+permalink: /kb/180/Q180773/
 ---
 
 ## Q180773: BUG: Closing a Form with Control Box &quot;X&quot; Only Hides Form

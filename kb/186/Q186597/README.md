@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186597: Registering OCX and DLL files as System Globals"
-permalink: kb/186/Q186597/
+permalink: /kb/186/Q186597/
 ---
 
 ## Q186597: Registering OCX and DLL files as System Globals

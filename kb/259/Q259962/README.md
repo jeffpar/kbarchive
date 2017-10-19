@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259962: Visual FoxPro 6.0 Sample: How to Create a Menu Object"
-permalink: kb/259/Q259962/
+permalink: /kb/259/Q259962/
 ---
 
 ## Q259962: Visual FoxPro 6.0 Sample: How to Create a Menu Object

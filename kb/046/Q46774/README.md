@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q46774: Calculating an Application's Load Size, Minimum Load Size"
-permalink: kb/046/Q46774/
+permalink: /kb/046/Q46774/
 ---
 
 ## Q46774: Calculating an Application's Load Size, Minimum Load Size

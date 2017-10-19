@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122941: Invalid Voice Pilot Macro Hangs System"
-permalink: kb/122/Q122941/
+permalink: /kb/122/Q122941/
 ---
 
 ## Q122941: Invalid Voice Pilot Macro Hangs System

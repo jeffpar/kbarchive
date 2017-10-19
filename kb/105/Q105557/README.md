@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105557: HIMEM.SYS Verbose and Quiet Switches"
-permalink: kb/105/Q105557/
+permalink: /kb/105/Q105557/
 ---
 
 ## Q105557: HIMEM.SYS Verbose and Quiet Switches

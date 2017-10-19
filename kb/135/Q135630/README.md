@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135630: DOC: Incorrect Prototype &amp; Memory Allocation for PX_Blob"
-permalink: kb/135/Q135630/
+permalink: /kb/135/Q135630/
 ---
 
 ## Q135630: DOC: Incorrect Prototype &amp; Memory Allocation for PX_Blob

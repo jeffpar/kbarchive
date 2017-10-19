@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182593: SMS Err: &quot;Unable to Initialize NetBIOS Protocol&quot; on Win95 Client"
-permalink: kb/182/Q182593/
+permalink: /kb/182/Q182593/
 ---
 
 ## Q182593: SMS Err: &quot;Unable to Initialize NetBIOS Protocol&quot; on Win95 Client

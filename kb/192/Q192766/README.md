@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192766: SAMPLE: ADSIBrow.exe Browses Active Directory w/ Visual FoxPro"
-permalink: kb/192/Q192766/
+permalink: /kb/192/Q192766/
 ---
 
 ## Q192766: SAMPLE: ADSIBrow.exe Browses Active Directory w/ Visual FoxPro

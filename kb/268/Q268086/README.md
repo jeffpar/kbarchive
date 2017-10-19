@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268086: Windows NT MA Not Supported for Connecting to Windows 2000"
-permalink: kb/268/Q268086/
+permalink: /kb/268/Q268086/
 ---
 
 ## Q268086: Windows NT MA Not Supported for Connecting to Windows 2000

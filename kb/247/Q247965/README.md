@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247965: Windows 95 Hangs on Reboot with CardBus Card Installed"
-permalink: kb/247/Q247965/
+permalink: /kb/247/Q247965/
 ---
 
 ## Q247965: Windows 95 Hangs on Reboot with CardBus Card Installed

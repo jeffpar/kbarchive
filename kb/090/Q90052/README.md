@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90052: Banyan VINES Err Msg: The Switch Has Been Prevented. Cannot..."
-permalink: kb/090/Q90052/
+permalink: /kb/090/Q90052/
 ---
 
 ## Q90052: Banyan VINES Err Msg: The Switch Has Been Prevented. Cannot...

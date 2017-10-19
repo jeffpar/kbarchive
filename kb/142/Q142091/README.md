@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142091: XCLN: No E-form When Sent from a Public Folder"
-permalink: kb/142/Q142091/
+permalink: /kb/142/Q142091/
 ---
 
 ## Q142091: XCLN: No E-form When Sent from a Public Folder

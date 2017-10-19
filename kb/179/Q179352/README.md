@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179352: WD97: Tab Characters Removed When Turning Bullets On/Off"
-permalink: kb/179/Q179352/
+permalink: /kb/179/Q179352/
 ---
 
 ## Q179352: WD97: Tab Characters Removed When Turning Bullets On/Off

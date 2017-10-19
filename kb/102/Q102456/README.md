@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102456: How to Activate Buttons While a Browse Window Is Open"
-permalink: kb/102/Q102456/
+permalink: /kb/102/Q102456/
 ---
 
 ## Q102456: How to Activate Buttons While a Browse Window Is Open

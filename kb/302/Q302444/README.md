@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302444: Can't Add New User After Using &quot;Forgot My Password&quot; Option To Re"
-permalink: kb/302/Q302444/
+permalink: /kb/302/Q302444/
 ---
 
 ## Q302444: Can't Add New User After Using &quot;Forgot My Password&quot; Option To Re

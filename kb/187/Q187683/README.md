@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187683: Bookshelf 98: Find Media Tab Finds Items by Media Title Only"
-permalink: kb/187/Q187683/
+permalink: /kb/187/Q187683/
 ---
 
 ## Q187683: Bookshelf 98: Find Media Tab Finds Items by Media Title Only

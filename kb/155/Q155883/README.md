@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155883: NT 4.0 Breaks SNA Server 2.x Server Communication Over IP"
-permalink: kb/155/Q155883/
+permalink: /kb/155/Q155883/
 ---
 
 ## Q155883: NT 4.0 Breaks SNA Server 2.x Server Communication Over IP

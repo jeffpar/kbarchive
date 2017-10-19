@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118611: INFO: SetMessageQueue Used in MFC WinMain"
-permalink: kb/118/Q118611/
+permalink: /kb/118/Q118611/
 ---
 
 ## Q118611: INFO: SetMessageQueue Used in MFC WinMain

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251274: Error When Attempting to Install Program Using Windows Installer"
-permalink: kb/251/Q251274/
+permalink: /kb/251/Q251274/
 ---
 
 ## Q251274: Error When Attempting to Install Program Using Windows Installer

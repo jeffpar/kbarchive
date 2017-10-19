@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139533: Multimedia: Program Will Not Launch After New Updates"
-permalink: kb/139/Q139533/
+permalink: /kb/139/Q139533/
 ---
 
 ## Q139533: Multimedia: Program Will Not Launch After New Updates

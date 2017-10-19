@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178283: Cannot Browse CD that has Both Audio and Video"
-permalink: kb/178/Q178283/
+permalink: /kb/178/Q178283/
 ---
 
 ## Q178283: Cannot Browse CD that has Both Audio and Video

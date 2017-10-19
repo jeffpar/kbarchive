@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199857: Return of Arcade: Game Quits and You Are Returned to Desktop"
-permalink: kb/199/Q199857/
+permalink: /kb/199/Q199857/
 ---
 
 ## Q199857: Return of Arcade: Game Quits and You Are Returned to Desktop

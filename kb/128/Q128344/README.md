@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128344: FIX: Error C2593: 'operator +' Is Ambiguous"
-permalink: kb/128/Q128344/
+permalink: /kb/128/Q128344/
 ---
 
 ## Q128344: FIX: Error C2593: 'operator +' Is Ambiguous

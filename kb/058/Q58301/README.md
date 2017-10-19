@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58301: SYSTEM.INI Setting Required for Epson 386 Portable"
-permalink: kb/058/Q58301/
+permalink: /kb/058/Q58301/
 ---
 
 ## Q58301: SYSTEM.INI Setting Required for Epson 386 Portable

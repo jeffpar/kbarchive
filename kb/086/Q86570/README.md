@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86570: Mouse Systems Three-Button Mouse and Windows 3.1"
-permalink: kb/086/Q86570/
+permalink: /kb/086/Q86570/
 ---
 
 ## Q86570: Mouse Systems Three-Button Mouse and Windows 3.1

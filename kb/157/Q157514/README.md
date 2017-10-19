@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157514: Keyboard Does Not Work in Windows NT After Using Windows 95"
-permalink: kb/157/Q157514/
+permalink: /kb/157/Q157514/
 ---
 
 ## Q157514: Keyboard Does Not Work in Windows NT After Using Windows 95

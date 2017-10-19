@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171997: WINS Replication Does Not Start As Scheduled"
-permalink: kb/171/Q171997/
+permalink: /kb/171/Q171997/
 ---
 
 ## Q171997: WINS Replication Does Not Start As Scheduled

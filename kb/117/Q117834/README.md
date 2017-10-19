@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117834: FIX: Wrong Output Library Name Used with VCNT Makefile"
-permalink: kb/117/Q117834/
+permalink: /kb/117/Q117834/
 ---
 
 ## Q117834: FIX: Wrong Output Library Name Used with VCNT Makefile

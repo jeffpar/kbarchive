@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155884: SNA Server 2.x IP Communication Fails w/15 Char Domain Names"
-permalink: kb/155/Q155884/
+permalink: /kb/155/Q155884/
 ---
 
 ## Q155884: SNA Server 2.x IP Communication Fails w/15 Char Domain Names

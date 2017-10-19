@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166994: XWEB: Spaces in Alias Name Cause &quot;Failed to get Inbox&quot;"
-permalink: kb/166/Q166994/
+permalink: /kb/166/Q166994/
 ---
 
 ## Q166994: XWEB: Spaces in Alias Name Cause &quot;Failed to get Inbox&quot;

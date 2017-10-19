@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153862: XCLN: How to Use CompuServe WinCIM and Exchange Client"
-permalink: kb/153/Q153862/
+permalink: /kb/153/Q153862/
 ---
 
 ## Q153862: XCLN: How to Use CompuServe WinCIM and Exchange Client

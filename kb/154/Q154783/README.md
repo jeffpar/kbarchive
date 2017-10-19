@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154783: Msg Sent from MSMail Windows NT Client Undeliverable"
-permalink: kb/154/Q154783/
+permalink: /kb/154/Q154783/
 ---
 
 ## Q154783: Msg Sent from MSMail Windows NT Client Undeliverable

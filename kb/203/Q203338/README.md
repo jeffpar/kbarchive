@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203338: 16-Bit Apps Fail if Names Longer Than 8.3 Naming Convention"
-permalink: kb/203/Q203338/
+permalink: /kb/203/Q203338/
 ---
 
 ## Q203338: 16-Bit Apps Fail if Names Longer Than 8.3 Naming Convention

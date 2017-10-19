@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174032: XWEB: Recurrence Tab not Available for Non-Recurring Appointment"
-permalink: kb/174/Q174032/
+permalink: /kb/174/Q174032/
 ---
 
 ## Q174032: XWEB: Recurrence Tab not Available for Non-Recurring Appointment

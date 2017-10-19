@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176577: Flight Simulator 98: Description of Aircraft/Adventures Converte"
-permalink: kb/176/Q176577/
+permalink: /kb/176/Q176577/
 ---
 
 ## Q176577: Flight Simulator 98: Description of Aircraft/Adventures Converte

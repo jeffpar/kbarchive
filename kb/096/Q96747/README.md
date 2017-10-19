@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96747: PC Win: Mail for Windows VFORMS.DLL 3.2.0.4064 Update"
-permalink: kb/096/Q96747/
+permalink: /kb/096/Q96747/
 ---
 
 ## Q96747: PC Win: Mail for Windows VFORMS.DLL 3.2.0.4064 Update

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152842: PostScript Halftoning Is Different on WinNT Than Win95"
-permalink: kb/152/Q152842/
+permalink: /kb/152/Q152842/
 ---
 
 ## Q152842: PostScript Halftoning Is Different on WinNT Than Win95

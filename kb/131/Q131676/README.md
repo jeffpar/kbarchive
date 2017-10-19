@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131676: PC NTMMTA: Maximum Number of Instances Running as a Service"
-permalink: kb/131/Q131676/
+permalink: /kb/131/Q131676/
 ---
 
 ## Q131676: PC NTMMTA: Maximum Number of Instances Running as a Service

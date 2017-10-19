@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96788: Problems and Solutions with UPS Service"
-permalink: kb/096/Q96788/
+permalink: /kb/096/Q96788/
 ---
 
 ## Q96788: Problems and Solutions with UPS Service

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161831: FIX: &quot;Error loading SETUPAPI.DLL&quot; Installing VB5CCE on NT 3.51"
-permalink: kb/161/Q161831/
+permalink: /kb/161/Q161831/
 ---
 
 ## Q161831: FIX: &quot;Error loading SETUPAPI.DLL&quot; Installing VB5CCE on NT 3.51

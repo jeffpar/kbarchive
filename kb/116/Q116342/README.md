@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116342: How To Disable Long Filename Support on FAT Partitions"
-permalink: kb/116/Q116342/
+permalink: /kb/116/Q116342/
 ---
 
 ## Q116342: How To Disable Long Filename Support on FAT Partitions

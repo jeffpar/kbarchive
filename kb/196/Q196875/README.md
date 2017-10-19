@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196875: Error When EMS Memory Is Configured for MS-DOS App in .pif File"
-permalink: kb/196/Q196875/
+permalink: /kb/196/Q196875/
 ---
 
 ## Q196875: Error When EMS Memory Is Configured for MS-DOS App in .pif File

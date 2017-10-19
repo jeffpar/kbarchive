@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183779: XCLN: Cannot Clear Combo Boxes in Policy Editor"
-permalink: kb/183/Q183779/
+permalink: /kb/183/Q183779/
 ---
 
 ## Q183779: XCLN: Cannot Clear Combo Boxes in Policy Editor

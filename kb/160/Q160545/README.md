@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160545: Registry Subkey Already Exists When Reinstalling DSMN"
-permalink: kb/160/Q160545/
+permalink: /kb/160/Q160545/
 ---
 
 ## Q160545: Registry Subkey Already Exists When Reinstalling DSMN

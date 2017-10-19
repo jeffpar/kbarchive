@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132468: Encarta '95 ErrMsg: MMP.DLL Needed for Media Player"
-permalink: kb/132/Q132468/
+permalink: /kb/132/Q132468/
 ---
 
 ## Q132468: Encarta '95 ErrMsg: MMP.DLL Needed for Media Player

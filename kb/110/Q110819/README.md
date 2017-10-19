@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110819: Mac Adm: Global Clear Statistics Does Not Honor Site Names"
-permalink: kb/110/Q110819/
+permalink: /kb/110/Q110819/
 ---
 
 ## Q110819: Mac Adm: Global Clear Statistics Does Not Honor Site Names

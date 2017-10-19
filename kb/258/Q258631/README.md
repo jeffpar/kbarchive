@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258631: SNA Print Sessions May Not Use PDT File"
-permalink: kb/258/Q258631/
+permalink: /kb/258/Q258631/
 ---
 
 ## Q258631: SNA Print Sessions May Not Use PDT File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321674: HOW TO: Configure IISReset to Wait Longer than the Default Time"
-permalink: kb/321/Q321674/
+permalink: /kb/321/Q321674/
 ---
 
 ## Q321674: HOW TO: Configure IISReset to Wait Longer than the Default Time

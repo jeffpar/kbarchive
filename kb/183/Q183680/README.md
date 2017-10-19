@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183680: FP97: Text in Dialog Box Appears in the Wrong Language"
-permalink: kb/183/Q183680/
+permalink: /kb/183/Q183680/
 ---
 
 ## Q183680: FP97: Text in Dialog Box Appears in the Wrong Language

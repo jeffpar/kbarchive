@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192862: BUG: Incorrect Return of SubSelect in SELECT-SQL Statement"
-permalink: kb/192/Q192862/
+permalink: /kb/192/Q192862/
 ---
 
 ## Q192862: BUG: Incorrect Return of SubSelect in SELECT-SQL Statement

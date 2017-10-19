@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131787: SLI_OPEN Hang When Inappropriate LUA_INIT_TYPE is Used"
-permalink: kb/131/Q131787/
+permalink: /kb/131/Q131787/
 ---
 
 ## Q131787: SLI_OPEN Hang When Inappropriate LUA_INIT_TYPE is Used

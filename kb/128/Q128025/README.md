@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128025: Oracle7 for Win32s Hangs When Initializing Database Manager"
-permalink: kb/128/Q128025/
+permalink: /kb/128/Q128025/
 ---
 
 ## Q128025: Oracle7 for Win32s Hangs When Initializing Database Manager

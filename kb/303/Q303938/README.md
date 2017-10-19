@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303938: XIMS: Netscape IMAP4 Clients Cannot View the Message Body"
-permalink: kb/303/Q303938/
+permalink: /kb/303/Q303938/
 ---
 
 ## Q303938: XIMS: Netscape IMAP4 Clients Cannot View the Message Body

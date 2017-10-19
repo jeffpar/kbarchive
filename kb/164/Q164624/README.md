@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164624: WD97: Inserting OLE Object in Header Opens OLE Application"
-permalink: kb/164/Q164624/
+permalink: /kb/164/Q164624/
 ---
 
 ## Q164624: WD97: Inserting OLE Object in Header Opens OLE Application

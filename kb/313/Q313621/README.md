@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313621: Port Mapper Services Cause Services for UNIX Not to Work"
-permalink: kb/313/Q313621/
+permalink: /kb/313/Q313621/
 ---
 
 ## Q313621: Port Mapper Services Cause Services for UNIX Not to Work

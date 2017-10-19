@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135351: PC Forms: MEFPKG.DAT File Size Limited to 64K"
-permalink: kb/135/Q135351/
+permalink: /kb/135/Q135351/
 ---
 
 ## Q135351: PC Forms: MEFPKG.DAT File Size Limited to 64K

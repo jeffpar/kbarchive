@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183289: Download of Self-Extracting File Expands Into the Root Folder"
-permalink: kb/183/Q183289/
+permalink: /kb/183/Q183289/
 ---
 
 ## Q183289: Download of Self-Extracting File Expands Into the Root Folder

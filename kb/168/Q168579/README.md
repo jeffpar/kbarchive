@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168579: How to Set Up Locally-Based System Policies"
-permalink: kb/168/Q168579/
+permalink: /kb/168/Q168579/
 ---
 
 ## Q168579: How to Set Up Locally-Based System Policies

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184741: PRB: MsgBox with Script Control Produces Run-Time Error 70"
-permalink: kb/184/Q184741/
+permalink: /kb/184/Q184741/
 ---
 
 ## Q184741: PRB: MsgBox with Script Control Produces Run-Time Error 70

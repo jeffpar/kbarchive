@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140503: DOC: Port I/O Functions Not Included in DLL Version of CRT"
-permalink: kb/140/Q140503/
+permalink: /kb/140/Q140503/
 ---
 
 ## Q140503: DOC: Port I/O Functions Not Included in DLL Version of CRT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35074: Landing at Livermore Airport Causes &quot;Splash&quot; Message"
-permalink: kb/035/Q35074/
+permalink: /kb/035/Q35074/
 ---
 
 ## Q35074: Landing at Livermore Airport Causes &quot;Splash&quot; Message

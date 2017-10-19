@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128436: Setup and Boot Hangs on HP Vectra XU/XUC Computer"
-permalink: kb/128/Q128436/
+permalink: /kb/128/Q128436/
 ---
 
 ## Q128436: Setup and Boot Hangs on HP Vectra XU/XUC Computer

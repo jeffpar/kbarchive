@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150596: FIX: Error Message &quot;Variable is Not Found&quot; When Running Form"
-permalink: kb/150/Q150596/
+permalink: /kb/150/Q150596/
 ---
 
 ## Q150596: FIX: Error Message &quot;Variable is Not Found&quot; When Running Form

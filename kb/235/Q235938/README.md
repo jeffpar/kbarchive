@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235938: FIX: MSMQ-MQSeries Bridge Limited to10 Queue Manager Connections"
-permalink: kb/235/Q235938/
+permalink: /kb/235/Q235938/
 ---
 
 ## Q235938: FIX: MSMQ-MQSeries Bridge Limited to10 Queue Manager Connections

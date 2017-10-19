@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154501: How to Disable Automatic Machine Account Password Changes"
-permalink: kb/154/Q154501/
+permalink: /kb/154/Q154501/
 ---
 
 ## Q154501: How to Disable Automatic Machine Account Password Changes

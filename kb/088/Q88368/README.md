@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88368: PC Win: Viewing Attachment Requires Association"
-permalink: kb/088/Q88368/
+permalink: /kb/088/Q88368/
 ---
 
 ## Q88368: PC Win: Viewing Attachment Requires Association

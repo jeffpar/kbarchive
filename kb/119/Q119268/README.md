@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119268: WFWG 3.11 Print Manager Causes 3- to 5-Second Pauses"
-permalink: kb/119/Q119268/
+permalink: /kb/119/Q119268/
 ---
 
 ## Q119268: WFWG 3.11 Print Manager Causes 3- to 5-Second Pauses

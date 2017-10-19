@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166497: WD97: Error Using Border Constants with Font.Borders"
-permalink: kb/166/Q166497/
+permalink: /kb/166/Q166497/
 ---
 
 ## Q166497: WD97: Error Using Border Constants with Font.Borders

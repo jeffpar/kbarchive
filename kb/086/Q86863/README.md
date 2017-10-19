@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86863: Maximum Hard Drive Partitions with MS OS/2 1.3 for Server"
-permalink: kb/086/Q86863/
+permalink: /kb/086/Q86863/
 ---
 
 ## Q86863: Maximum Hard Drive Partitions with MS OS/2 1.3 for Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171702: MSN Prompts for SMTP and POP3 Mail Servers"
-permalink: kb/171/Q171702/
+permalink: /kb/171/Q171702/
 ---
 
 ## Q171702: MSN Prompts for SMTP and POP3 Mail Servers

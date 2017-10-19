@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106564: FIX: Debugger Error EE0044 for Arrays If Lower Bound Not 1"
-permalink: kb/106/Q106564/
+permalink: /kb/106/Q106564/
 ---
 
 ## Q106564: FIX: Debugger Error EE0044 for Arrays If Lower Bound Not 1

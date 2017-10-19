@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184026: NetDDE Causes Dr. Watson When Closing Incomplete Connections"
-permalink: kb/184/Q184026/
+permalink: /kb/184/Q184026/
 ---
 
 ## Q184026: NetDDE Causes Dr. Watson When Closing Incomplete Connections

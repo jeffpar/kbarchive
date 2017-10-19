@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176209: RAS or RRAS Server Fails to Answer Incoming Calls"
-permalink: kb/176/Q176209/
+permalink: /kb/176/Q176209/
 ---
 
 ## Q176209: RAS or RRAS Server Fails to Answer Incoming Calls

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271885: SMS: Scripted Site Server Install Allows Lower Case Site Code"
-permalink: kb/271/Q271885/
+permalink: /kb/271/Q271885/
 ---
 
 ## Q271885: SMS: Scripted Site Server Install Allows Lower Case Site Code

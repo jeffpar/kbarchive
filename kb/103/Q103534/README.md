@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103534: MS-DOS 6.2 CHKDSK Does Not Run DBLSPACE /CHKDSK"
-permalink: kb/103/Q103534/
+permalink: /kb/103/Q103534/
 ---
 
 ## Q103534: MS-DOS 6.2 CHKDSK Does Not Run DBLSPACE /CHKDSK

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260174: Special Pool Feature Prevents Creation of Memory Dump"
-permalink: kb/260/Q260174/
+permalink: /kb/260/Q260174/
 ---
 
 ## Q260174: Special Pool Feature Prevents Creation of Memory Dump

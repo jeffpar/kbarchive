@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294469: PRB: Error &quot;Cannot Update the Cursor&quot; When You Modify Tables"
-permalink: kb/294/Q294469/
+permalink: /kb/294/Q294469/
 ---
 
 ## Q294469: PRB: Error &quot;Cannot Update the Cursor&quot; When You Modify Tables

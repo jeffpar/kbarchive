@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124124: Updated IBMTOK.DOS Corrects Error 5736 on 90 MHz Pentiums"
-permalink: kb/124/Q124124/
+permalink: /kb/124/Q124124/
 ---
 
 ## Q124124: Updated IBMTOK.DOS Corrects Error 5736 on 90 MHz Pentiums

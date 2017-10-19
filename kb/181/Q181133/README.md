@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181133: Win95 Host Account Manager on WinNT Fails to Copy UDSUPPNT.DLL"
-permalink: kb/181/Q181133/
+permalink: /kb/181/Q181133/
 ---
 
 ## Q181133: Win95 Host Account Manager on WinNT Fails to Copy UDSUPPNT.DLL

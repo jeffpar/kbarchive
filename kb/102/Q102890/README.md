@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102890: How to Calculate Running Totals in a BROWSE Command"
-permalink: kb/102/Q102890/
+permalink: /kb/102/Q102890/
 ---
 
 ## Q102890: How to Calculate Running Totals in a BROWSE Command

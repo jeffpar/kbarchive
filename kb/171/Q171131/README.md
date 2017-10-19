@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171131: Webtrends Installation Removes SSL Filter Registry Entry"
-permalink: kb/171/Q171131/
+permalink: /kb/171/Q171131/
 ---
 
 ## Q171131: Webtrends Installation Removes SSL Filter Registry Entry

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154099: XFOR: cc:Mail Migration Wizard Adds Quotes in User.pri"
-permalink: kb/154/Q154099/
+permalink: /kb/154/Q154099/
 ---
 
 ## Q154099: XFOR: cc:Mail Migration Wizard Adds Quotes in User.pri

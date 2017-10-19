@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59978: Mac Hyp: Setting the Return Receipt Flag for a Message"
-permalink: kb/059/Q59978/
+permalink: /kb/059/Q59978/
 ---
 
 ## Q59978: Mac Hyp: Setting the Return Receipt Flag for a Message

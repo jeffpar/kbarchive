@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192622: PRB: ClassWizard Doesn't Display Ungrouped Radio Button"
-permalink: kb/192/Q192622/
+permalink: /kb/192/Q192622/
 ---
 
 ## Q192622: PRB: ClassWizard Doesn't Display Ungrouped Radio Button

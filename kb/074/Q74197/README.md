@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74197: Minimizing Lock and Unlock Calls in Protected Mode"
-permalink: kb/074/Q74197/
+permalink: /kb/074/Q74197/
 ---
 
 ## Q74197: Minimizing Lock and Unlock Calls in Protected Mode

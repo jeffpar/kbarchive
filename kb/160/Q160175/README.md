@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160175: What Does WinNT 4.0 look for in a Valid WinNT 3.51 Install"
-permalink: kb/160/Q160175/
+permalink: /kb/160/Q160175/
 ---
 
 ## Q160175: What Does WinNT 4.0 look for in a Valid WinNT 3.51 Install

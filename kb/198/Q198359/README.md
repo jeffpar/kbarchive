@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198359: WD97: Err Msg: &quot;MergeField Was Not Found...&quot; When Mail Merging"
-permalink: kb/198/Q198359/
+permalink: /kb/198/Q198359/
 ---
 
 ## Q198359: WD97: Err Msg: &quot;MergeField Was Not Found...&quot; When Mail Merging

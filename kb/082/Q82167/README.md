@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82167: INFO: DeviceCapabilities(DC_BINNAMES) Data Format"
-permalink: kb/082/Q82167/
+permalink: /kb/082/Q82167/
 ---
 
 ## Q82167: INFO: DeviceCapabilities(DC_BINNAMES) Data Format

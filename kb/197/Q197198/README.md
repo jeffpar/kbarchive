@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197198: WD97: Address in Envelopes and Labels Blank or Shows Date/Text"
-permalink: kb/197/Q197198/
+permalink: /kb/197/Q197198/
 ---
 
 ## Q197198: WD97: Address in Envelopes and Labels Blank or Shows Date/Text

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123178: Rumba 3270 User Names Appear as &quot;Unknown&quot; in SNA Admin"
-permalink: kb/123/Q123178/
+permalink: /kb/123/Q123178/
 ---
 
 ## Q123178: Rumba 3270 User Names Appear as &quot;Unknown&quot; in SNA Admin

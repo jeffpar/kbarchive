@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79386: PRB: High Granularity Setting Affects Windows/VB Form Resizing"
-permalink: kb/079/Q79386/
+permalink: /kb/079/Q79386/
 ---
 
 ## Q79386: PRB: High Granularity Setting Affects Windows/VB Form Resizing

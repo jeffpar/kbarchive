@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81223: FIX: Animated Button Custom Control: Caption May Be Truncated"
-permalink: kb/081/Q81223/
+permalink: /kb/081/Q81223/
 ---
 
 ## Q81223: FIX: Animated Button Custom Control: Caption May Be Truncated

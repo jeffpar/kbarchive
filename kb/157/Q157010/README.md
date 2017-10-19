@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157010: XADM: Exception In Dsamain.exe After Network Error"
-permalink: kb/157/Q157010/
+permalink: /kb/157/Q157010/
 ---
 
 ## Q157010: XADM: Exception In Dsamain.exe After Network Error

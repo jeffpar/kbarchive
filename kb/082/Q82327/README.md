@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82327: Saving File in Ventura 4.0 Causes Sharing Violation"
-permalink: kb/082/Q82327/
+permalink: /kb/082/Q82327/
 ---
 
 ## Q82327: Saving File in Ventura 4.0 Causes Sharing Violation

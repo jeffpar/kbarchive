@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246068: Listing the Default IIS MIME Map Settings Using WSH"
-permalink: kb/246/Q246068/
+permalink: /kb/246/Q246068/
 ---
 
 ## Q246068: Listing the Default IIS MIME Map Settings Using WSH

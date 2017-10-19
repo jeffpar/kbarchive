@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233417: Microsoft PowerPoint 2000 Step by Step Comments and Corrections"
-permalink: kb/233/Q233417/
+permalink: /kb/233/Q233417/
 ---
 
 ## Q233417: Microsoft PowerPoint 2000 Step by Step Comments and Corrections

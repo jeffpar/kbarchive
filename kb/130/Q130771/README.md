@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130771: Cannot Use RAS or AWFAX with Hayes Accelerator Card Drivers"
-permalink: kb/130/Q130771/
+permalink: /kb/130/Q130771/
 ---
 
 ## Q130771: Cannot Use RAS or AWFAX with Hayes Accelerator Card Drivers

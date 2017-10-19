@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q30461: Central Point Software Nokey and Windows"
-permalink: kb/030/Q30461/
+permalink: /kb/030/Q30461/
 ---
 
 ## Q30461: Central Point Software Nokey and Windows

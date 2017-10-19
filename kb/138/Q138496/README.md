@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138496: How to Call the Class Code of a Control in a Container"
-permalink: kb/138/Q138496/
+permalink: /kb/138/Q138496/
 ---
 
 ## Q138496: How to Call the Class Code of a Control in a Container

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235751: SMS: Wizard Internal Error: Invalid WBEM Query Result"
-permalink: kb/235/Q235751/
+permalink: /kb/235/Q235751/
 ---
 
 ## Q235751: SMS: Wizard Internal Error: Invalid WBEM Query Result

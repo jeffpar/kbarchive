@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272981: XADM: 1069 Error Message When Starting the System Attendant"
-permalink: kb/272/Q272981/
+permalink: /kb/272/Q272981/
 ---
 
 ## Q272981: XADM: 1069 Error Message When Starting the System Attendant

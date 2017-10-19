@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102060: Increasing the Performance of MS-DOS-Based Applications"
-permalink: kb/102/Q102060/
+permalink: /kb/102/Q102060/
 ---
 
 ## Q102060: Increasing the Performance of MS-DOS-Based Applications

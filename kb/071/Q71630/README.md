@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71630: Running an Application May Change MODE Setting of 43 or 50"
-permalink: kb/071/Q71630/
+permalink: /kb/071/Q71630/
 ---
 
 ## Q71630: Running an Application May Change MODE Setting of 43 or 50

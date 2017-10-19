@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200564: XFOR: Cc:Mail Migration Fails with Event ID 238, 8149 and 8002"
-permalink: kb/200/Q200564/
+permalink: /kb/200/Q200564/
 ---
 
 ## Q200564: XFOR: Cc:Mail Migration Fails with Event ID 238, 8149 and 8002

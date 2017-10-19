@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q27558: FIX: Protection Violation, Application Error, From COMMON Name"
-permalink: kb/027/Q27558/
+permalink: /kb/027/Q27558/
 ---
 
 ## Q27558: FIX: Protection Violation, Application Error, From COMMON Name

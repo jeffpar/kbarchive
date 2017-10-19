@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302546: E-mail POP-Suck"
-permalink: kb/302/Q302546/
+permalink: /kb/302/Q302546/
 ---
 
 ## Q302546: E-mail POP-Suck

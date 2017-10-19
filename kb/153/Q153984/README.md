@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153984: NTBackup Utility Unusable; Err Msg: &quot;NTBackup Error&quot;"
-permalink: kb/153/Q153984/
+permalink: /kb/153/Q153984/
 ---
 
 ## Q153984: NTBackup Utility Unusable; Err Msg: &quot;NTBackup Error&quot;

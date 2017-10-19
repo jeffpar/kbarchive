@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155580: Second PC-Card Hard Disk on Fourth IDE Channel Not Configured"
-permalink: kb/155/Q155580/
+permalink: /kb/155/Q155580/
 ---
 
 ## Q155580: Second PC-Card Hard Disk on Fourth IDE Channel Not Configured

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126263: TCP/IP-32 LMHOSTS #PRE Limitation"
-permalink: kb/126/Q126263/
+permalink: /kb/126/Q126263/
 ---
 
 ## Q126263: TCP/IP-32 LMHOSTS #PRE Limitation

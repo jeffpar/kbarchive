@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161358: PRB: Cannot Add Rows to Updateable Outer Join"
-permalink: kb/161/Q161358/
+permalink: /kb/161/Q161358/
 ---
 
 ## Q161358: PRB: Cannot Add Rows to Updateable Outer Join

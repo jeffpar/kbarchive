@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172169: SMP Server Fails with Stop 0xA During Browser Shutdown"
-permalink: kb/172/Q172169/
+permalink: /kb/172/Q172169/
 ---
 
 ## Q172169: SMP Server Fails with Stop 0xA During Browser Shutdown

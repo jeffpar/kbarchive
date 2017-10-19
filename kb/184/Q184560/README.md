@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184560: NT40 Enterprise Training: W95brows.cap and Ntwbrows.cap Missing"
-permalink: kb/184/Q184560/
+permalink: /kb/184/Q184560/
 ---
 
 ## Q184560: NT40 Enterprise Training: W95brows.cap and Ntwbrows.cap Missing

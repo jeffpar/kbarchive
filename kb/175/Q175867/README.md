@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175867: XADM: How to Send Outlook Contacts to an Internet User"
-permalink: kb/175/Q175867/
+permalink: /kb/175/Q175867/
 ---
 
 ## Q175867: XADM: How to Send Outlook Contacts to an Internet User

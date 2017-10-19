@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149743: BUG: Error When Data Control Is Set to a Wrong Text Database"
-permalink: kb/149/Q149743/
+permalink: /kb/149/Q149743/
 ---
 
 ## Q149743: BUG: Error When Data Control Is Set to a Wrong Text Database

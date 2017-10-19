@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124940: STOP 0x0000000A when Accessing NetWare Server"
-permalink: kb/124/Q124940/
+permalink: /kb/124/Q124940/
 ---
 
 ## Q124940: STOP 0x0000000A when Accessing NetWare Server

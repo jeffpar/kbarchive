@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131073: Datagram Sends Fail if Route is Not in IPX Cache"
-permalink: kb/131/Q131073/
+permalink: /kb/131/Q131073/
 ---
 
 ## Q131073: Datagram Sends Fail if Route is Not in IPX Cache

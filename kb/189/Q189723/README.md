@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189723: SMS: Audit Fails on Win95 or Win98 Clients with FAT32 Partitions"
-permalink: kb/189/Q189723/
+permalink: /kb/189/Q189723/
 ---
 
 ## Q189723: SMS: Audit Fails on Win95 or Win98 Clients with FAT32 Partitions

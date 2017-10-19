@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72731: BUG: PWB Generates &quot;Error Reading Program&quot; with CTRL+Z"
-permalink: kb/072/Q72731/
+permalink: /kb/072/Q72731/
 ---
 
 ## Q72731: BUG: PWB Generates &quot;Error Reading Program&quot; with CTRL+Z

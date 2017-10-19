@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148398: Remotely Managing FPNW Users in Windows NT Workstation/Server"
-permalink: kb/148/Q148398/
+permalink: /kb/148/Q148398/
 ---
 
 ## Q148398: Remotely Managing FPNW Users in Windows NT Workstation/Server

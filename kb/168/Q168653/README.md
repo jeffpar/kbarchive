@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168653: Unable to Connect to NetWare Server Using RConsole"
-permalink: kb/168/Q168653/
+permalink: /kb/168/Q168653/
 ---
 
 ## Q168653: Unable to Connect to NetWare Server Using RConsole

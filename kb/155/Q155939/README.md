@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155939: HOWTO: Use Clireg32.exe for Remote Automation"
-permalink: kb/155/Q155939/
+permalink: /kb/155/Q155939/
 ---
 
 ## Q155939: HOWTO: Use Clireg32.exe for Remote Automation

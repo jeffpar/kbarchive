@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173099: MTG: OS2 Causes a GP Fault in Async.ovl.exe"
-permalink: kb/173/Q173099/
+permalink: /kb/173/Q173099/
 ---
 
 ## Q173099: MTG: OS2 Causes a GP Fault in Async.ovl.exe

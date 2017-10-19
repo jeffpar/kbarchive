@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152459: XCLN: Save As Attachment Not Available in Messages"
-permalink: kb/152/Q152459/
+permalink: /kb/152/Q152459/
 ---
 
 ## Q152459: XCLN: Save As Attachment Not Available in Messages

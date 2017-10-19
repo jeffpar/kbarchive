@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160712: CD Audio MMSystem Error Accessing CD Audio from Wrong Drive"
-permalink: kb/160/Q160712/
+permalink: /kb/160/Q160712/
 ---
 
 ## Q160712: CD Audio MMSystem Error Accessing CD Audio from Wrong Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318863: HOW TO: Modify AuthPersistence Controls w/Authenticated Clients"
-permalink: kb/318/Q318863/
+permalink: /kb/318/Q318863/
 ---
 
 ## Q318863: HOW TO: Modify AuthPersistence Controls w/Authenticated Clients

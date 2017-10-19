@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304482: PRB: VFP Executable File Is Slow to Access Tables On Server"
-permalink: kb/304/Q304482/
+permalink: /kb/304/Q304482/
 ---
 
 ## Q304482: PRB: VFP Executable File Is Slow to Access Tables On Server

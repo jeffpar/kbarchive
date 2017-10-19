@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179983: RDR Sessions on UNC Name Images May Log Off Prematurely"
-permalink: kb/179/Q179983/
+permalink: /kb/179/Q179983/
 ---
 
 ## Q179983: RDR Sessions on UNC Name Images May Log Off Prematurely

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112893: PC Forms: Multiple Forms in a Single Executable File"
-permalink: kb/112/Q112893/
+permalink: /kb/112/Q112893/
 ---
 
 ## Q112893: PC Forms: Multiple Forms in a Single Executable File

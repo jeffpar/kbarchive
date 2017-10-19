@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173692: XADM: Event 1016 When You Open Mailbox or Schedule"
-permalink: kb/173/Q173692/
+permalink: /kb/173/Q173692/
 ---
 
 ## Q173692: XADM: Event 1016 When You Open Mailbox or Schedule

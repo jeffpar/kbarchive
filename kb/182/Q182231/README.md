@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182231: BUG: TreeView Nodes Count Property Limited to 32767"
-permalink: kb/182/Q182231/
+permalink: /kb/182/Q182231/
 ---
 
 ## Q182231: BUG: TreeView Nodes Count Property Limited to 32767

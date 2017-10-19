@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90213: AT&amp;T Mouse Problems with Windows for Workgroups"
-permalink: kb/090/Q90213/
+permalink: /kb/090/Q90213/
 ---
 
 ## Q90213: AT&amp;T Mouse Problems with Windows for Workgroups

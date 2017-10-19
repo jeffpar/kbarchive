@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192353: HOWTO: Generate Random Strings"
-permalink: kb/192/Q192353/
+permalink: /kb/192/Q192353/
 ---
 
 ## Q192353: HOWTO: Generate Random Strings

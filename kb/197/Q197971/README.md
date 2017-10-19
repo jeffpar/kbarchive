@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197971: XADM: The Exchange Server Tmp.edb File"
-permalink: kb/197/Q197971/
+permalink: /kb/197/Q197971/
 ---
 
 ## Q197971: XADM: The Exchange Server Tmp.edb File

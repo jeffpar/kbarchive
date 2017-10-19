@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131076: Mac DOS: Err Msg: Low on memory. Unable to Complete Operation."
-permalink: kb/131/Q131076/
+permalink: /kb/131/Q131076/
 ---
 
 ## Q131076: Mac DOS: Err Msg: Low on memory. Unable to Complete Operation.

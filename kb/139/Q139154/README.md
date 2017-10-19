@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139154: INFO: OLE Control Licensing in Visual FoxPro"
-permalink: kb/139/Q139154/
+permalink: /kb/139/Q139154/
 ---
 
 ## Q139154: INFO: OLE Control Licensing in Visual FoxPro

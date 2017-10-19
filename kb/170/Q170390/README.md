@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170390: Changing Security Options on MIPS System Results in 4116 Error"
-permalink: kb/170/Q170390/
+permalink: /kb/170/Q170390/
 ---
 
 ## Q170390: Changing Security Options on MIPS System Results in 4116 Error

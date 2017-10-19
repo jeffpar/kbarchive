@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89254: TrueType Fonts Default to Courier When Printing"
-permalink: kb/089/Q89254/
+permalink: /kb/089/Q89254/
 ---
 
 ## Q89254: TrueType Fonts Default to Courier When Printing

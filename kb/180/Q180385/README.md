@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180385: FIX: AppWizard Sometimes Fails to Display the Platforms Option"
-permalink: kb/180/Q180385/
+permalink: /kb/180/Q180385/
 ---
 
 ## Q180385: FIX: AppWizard Sometimes Fails to Display the Platforms Option

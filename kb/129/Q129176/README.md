@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129176: Demonstration Mode Conflicts with Media Vision"
-permalink: kb/129/Q129176/
+permalink: /kb/129/Q129176/
 ---
 
 ## Q129176: Demonstration Mode Conflicts with Media Vision

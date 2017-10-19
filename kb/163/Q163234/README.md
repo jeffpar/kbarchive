@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163234: PRB: User-defined Formats in OLE Drag-Drop Require Byte Arrays"
-permalink: kb/163/Q163234/
+permalink: /kb/163/Q163234/
 ---
 
 ## Q163234: PRB: User-defined Formats in OLE Drag-Drop Require Byte Arrays

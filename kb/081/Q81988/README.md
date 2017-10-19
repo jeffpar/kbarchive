@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81988: MCA Network Cards that Need to Be Manually Excluded"
-permalink: kb/081/Q81988/
+permalink: /kb/081/Q81988/
 ---
 
 ## Q81988: MCA Network Cards that Need to Be Manually Excluded

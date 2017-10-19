@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94590: WRK Err Msg: Cannot Print Picture..."
-permalink: kb/094/Q94590/
+permalink: /kb/094/Q94590/
 ---
 
 ## Q94590: WRK Err Msg: Cannot Print Picture...

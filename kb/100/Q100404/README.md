@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100404: How to Upgrade a Micro House DrivePro or EZ-Drive System"
-permalink: kb/100/Q100404/
+permalink: /kb/100/Q100404/
 ---
 
 ## Q100404: How to Upgrade a Micro House DrivePro or EZ-Drive System

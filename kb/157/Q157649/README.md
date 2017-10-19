@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157649: XADM: PerfOpt Does Not Check for Sufficient Disk Space"
-permalink: kb/157/Q157649/
+permalink: /kb/157/Q157649/
 ---
 
 ## Q157649: XADM: PerfOpt Does Not Check for Sufficient Disk Space

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194791: Err Msg: Could Not Open &lt;Filename&gt; Because It Is Already Open..."
-permalink: kb/194/Q194791/
+permalink: /kb/194/Q194791/
 ---
 
 ## Q194791: Err Msg: Could Not Open &lt;Filename&gt; Because It Is Already Open...

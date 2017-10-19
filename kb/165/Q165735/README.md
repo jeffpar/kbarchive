@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165735: SMS: 3COM 3C589 PCMCIA Network Adapter Card Not Inventoried"
-permalink: kb/165/Q165735/
+permalink: /kb/165/Q165735/
 ---
 
 ## Q165735: SMS: 3COM 3C589 PCMCIA Network Adapter Card Not Inventoried

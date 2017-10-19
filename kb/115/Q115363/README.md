@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115363: X400: Selecting Customized Mapping Scrolls Admin Window Up"
-permalink: kb/115/Q115363/
+permalink: /kb/115/Q115363/
 ---
 
 ## Q115363: X400: Selecting Customized Mapping Scrolls Admin Window Up

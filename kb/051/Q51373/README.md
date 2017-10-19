@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51373: Mac Form: Grouping Radio Buttons in Custom Form"
-permalink: kb/051/Q51373/
+permalink: /kb/051/Q51373/
 ---
 
 ## Q51373: Mac Form: Grouping Radio Buttons in Custom Form

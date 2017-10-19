@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137243: Cannot Print Multiple Copies from WordPad or Paint"
-permalink: kb/137/Q137243/
+permalink: /kb/137/Q137243/
 ---
 
 ## Q137243: Cannot Print Multiple Copies from WordPad or Paint

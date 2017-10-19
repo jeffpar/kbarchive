@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154678: FP: Error Using Publish Web Command Copying Web Remotely"
-permalink: kb/154/Q154678/
+permalink: /kb/154/Q154678/
 ---
 
 ## Q154678: FP: Error Using Publish Web Command Copying Web Remotely

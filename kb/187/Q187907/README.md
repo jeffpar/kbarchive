@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187907: BUG: SDI Form Fails to Get Focus With _Screen.Visible=.F."
-permalink: kb/187/Q187907/
+permalink: /kb/187/Q187907/
 ---
 
 ## Q187907: BUG: SDI Form Fails to Get Focus With _Screen.Visible=.F.

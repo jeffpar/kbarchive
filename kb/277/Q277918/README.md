@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277918: LU 6.2 Sessions Are Not Automatically Activated After Host IPL"
-permalink: kb/277/Q277918/
+permalink: /kb/277/Q277918/
 ---
 
 ## Q277918: LU 6.2 Sessions Are Not Automatically Activated After Host IPL

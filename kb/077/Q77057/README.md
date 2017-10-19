@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77057: Increasing the Foreground Application's Keyboard Response"
-permalink: kb/077/Q77057/
+permalink: /kb/077/Q77057/
 ---
 
 ## Q77057: Increasing the Foreground Application's Keyboard Response

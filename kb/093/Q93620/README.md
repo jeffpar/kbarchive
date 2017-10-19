@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93620: PRB: Cannot Find Transport Program"
-permalink: kb/093/Q93620/
+permalink: /kb/093/Q93620/
 ---
 
 ## Q93620: PRB: Cannot Find Transport Program

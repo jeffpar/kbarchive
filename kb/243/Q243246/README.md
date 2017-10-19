@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243246: XCLN: Outlook 97, 98 Cannot Clear Wrap to Window Option Default"
-permalink: kb/243/Q243246/
+permalink: /kb/243/Q243246/
 ---
 
 ## Q243246: XCLN: Outlook 97, 98 Cannot Clear Wrap to Window Option Default

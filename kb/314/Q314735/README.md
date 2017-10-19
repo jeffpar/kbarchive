@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314735: FIX: Garbled Field Name Returned with VFPOLEDB Provider on Win95"
-permalink: kb/314/Q314735/
+permalink: /kb/314/Q314735/
 ---
 
 ## Q314735: FIX: Garbled Field Name Returned with VFPOLEDB Provider on Win95

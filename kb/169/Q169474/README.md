@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169474: SMS: PCM Does Not Consider Windows 95 Daylight Savings Time"
-permalink: kb/169/Q169474/
+permalink: /kb/169/Q169474/
 ---
 
 ## Q169474: SMS: PCM Does Not Consider Windows 95 Daylight Savings Time

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142376: PRB: Jetpack Failed With Error = 80"
-permalink: kb/142/Q142376/
+permalink: /kb/142/Q142376/
 ---
 
 ## Q142376: PRB: Jetpack Failed With Error = 80

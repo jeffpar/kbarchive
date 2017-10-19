@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69078: Printing Text Reports"
-permalink: kb/069/Q69078/
+permalink: /kb/069/Q69078/
 ---
 
 ## Q69078: Printing Text Reports

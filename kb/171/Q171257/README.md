@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171257: Assignment of LUs to Null Subnet (0.0.0.0) Not Fully Supported"
-permalink: kb/171/Q171257/
+permalink: /kb/171/Q171257/
 ---
 
 ## Q171257: Assignment of LUs to Null Subnet (0.0.0.0) Not Fully Supported

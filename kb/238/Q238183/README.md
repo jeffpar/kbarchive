@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238183: XADM: Default IMAP4 Line-Wrap Set to 72 Characters"
-permalink: kb/238/Q238183/
+permalink: /kb/238/Q238183/
 ---
 
 ## Q238183: XADM: Default IMAP4 Line-Wrap Set to 72 Characters

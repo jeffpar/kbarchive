@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247249: Error Message: HTTP/1.1 Error 400 - Bad Request"
-permalink: kb/247/Q247249/
+permalink: /kb/247/Q247249/
 ---
 
 ## Q247249: Error Message: HTTP/1.1 Error 400 - Bad Request

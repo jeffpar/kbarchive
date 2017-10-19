@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166982: WD97: Pressing TAB Key Moves Insertion Point to Wrong Cell"
-permalink: kb/166/Q166982/
+permalink: /kb/166/Q166982/
 ---
 
 ## Q166982: WD97: Pressing TAB Key Moves Insertion Point to Wrong Cell

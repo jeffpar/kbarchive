@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198783: XCON: Receipt Behavior with Message Journaling"
-permalink: kb/198/Q198783/
+permalink: /kb/198/Q198783/
 ---
 
 ## Q198783: XCON: Receipt Behavior with Message Journaling

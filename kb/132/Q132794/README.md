@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132794: MS-DOS Programs That Try to Restart the Computer May Fail"
-permalink: kb/132/Q132794/
+permalink: /kb/132/Q132794/
 ---
 
 ## Q132794: MS-DOS Programs That Try to Restart the Computer May Fail

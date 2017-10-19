@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141150: Streets 4.0: Display Corruption with Content Dragging Feature"
-permalink: kb/141/Q141150/
+permalink: /kb/141/Q141150/
 ---
 
 ## Q141150: Streets 4.0: Display Corruption with Content Dragging Feature

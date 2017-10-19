@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279693: HOWTO: T-Shoot Errors from Apps with Missing Components"
-permalink: kb/279/Q279693/
+permalink: /kb/279/Q279693/
 ---
 
 ## Q279693: HOWTO: T-Shoot Errors from Apps with Missing Components

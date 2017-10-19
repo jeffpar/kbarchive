@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178756: XCLN: Read-Write Access Required to Open .PST and PAB Files"
-permalink: kb/178/Q178756/
+permalink: /kb/178/Q178756/
 ---
 
 ## Q178756: XCLN: Read-Write Access Required to Open .PST and PAB Files

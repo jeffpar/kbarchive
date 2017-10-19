@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155311: Choosing Sound System for MIDI Enables MIDI on All Sound Cards"
-permalink: kb/155/Q155311/
+permalink: /kb/155/Q155311/
 ---
 
 ## Q155311: Choosing Sound System for MIDI Enables MIDI on All Sound Cards

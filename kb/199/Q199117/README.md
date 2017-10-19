@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199117: SP4 Causes Extra Delimiter to Appear in NCSA Common Log Format"
-permalink: kb/199/Q199117/
+permalink: /kb/199/Q199117/
 ---
 
 ## Q199117: SP4 Causes Extra Delimiter to Appear in NCSA Common Log Format

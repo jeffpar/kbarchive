@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254356: MapPoint 2000: Program Hangs When Splash Screen Is Displayed"
-permalink: kb/254/Q254356/
+permalink: /kb/254/Q254356/
 ---
 
 ## Q254356: MapPoint 2000: Program Hangs When Splash Screen Is Displayed

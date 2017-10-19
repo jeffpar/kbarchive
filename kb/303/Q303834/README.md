@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303834: Setup Returns Error When the Source Path Contains Spaces"
-permalink: kb/303/Q303834/
+permalink: /kb/303/Q303834/
 ---
 
 ## Q303834: Setup Returns Error When the Source Path Contains Spaces

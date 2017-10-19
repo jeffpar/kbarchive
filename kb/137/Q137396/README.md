@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137396: Unable to Copy Files During Windows NT 3.51 Upgrade"
-permalink: kb/137/Q137396/
+permalink: /kb/137/Q137396/
 ---
 
 ## Q137396: Unable to Copy Files During Windows NT 3.51 Upgrade

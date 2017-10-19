@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201187: Web Admin Ignores Spaces at the Beginning of Virtual Directories"
-permalink: kb/201/Q201187/
+permalink: /kb/201/Q201187/
 ---
 
 ## Q201187: Web Admin Ignores Spaces at the Beginning of Virtual Directories

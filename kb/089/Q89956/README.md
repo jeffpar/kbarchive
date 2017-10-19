@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89956: File Lost if Cancel Is Chosen During File Conversion"
-permalink: kb/089/Q89956/
+permalink: /kb/089/Q89956/
 ---
 
 ## Q89956: File Lost if Cancel Is Chosen During File Conversion

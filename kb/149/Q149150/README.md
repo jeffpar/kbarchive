@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149150: BUG: GETENV() Fails If Input Variable Has Trailing Spaces"
-permalink: kb/149/Q149150/
+permalink: /kb/149/Q149150/
 ---
 
 ## Q149150: BUG: GETENV() Fails If Input Variable Has Trailing Spaces

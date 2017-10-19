@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170816: XCLN: No Means of Disabling Default Folders from Offline Use"
-permalink: kb/170/Q170816/
+permalink: /kb/170/Q170816/
 ---
 
 ## Q170816: XCLN: No Means of Disabling Default Folders from Offline Use

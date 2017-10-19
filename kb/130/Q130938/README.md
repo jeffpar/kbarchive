@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130938: How to Install OS/2 1.3x System Management Server Clients"
-permalink: kb/130/Q130938/
+permalink: /kb/130/Q130938/
 ---
 
 ## Q130938: How to Install OS/2 1.3x System Management Server Clients

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128337: How to Make a Terminating Command Button"
-permalink: kb/128/Q128337/
+permalink: /kb/128/Q128337/
 ---
 
 ## Q128337: How to Make a Terminating Command Button

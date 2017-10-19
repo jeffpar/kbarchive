@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128597: Default Wavemix.ini from Golf 1.0 Multimedia Edition"
-permalink: kb/128/Q128597/
+permalink: /kb/128/Q128597/
 ---
 
 ## Q128597: Default Wavemix.ini from Golf 1.0 Multimedia Edition

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145875: XFOR: cc:Mail Messages Are Not Delivered by DEC Mail Bus"
-permalink: kb/145/Q145875/
+permalink: /kb/145/Q145875/
 ---
 
 ## Q145875: XFOR: cc:Mail Messages Are Not Delivered by DEC Mail Bus

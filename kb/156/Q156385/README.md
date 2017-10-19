@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156385: SMS: INVMAC Errors During Initial SMS Inventory"
-permalink: kb/156/Q156385/
+permalink: /kb/156/Q156385/
 ---
 
 ## Q156385: SMS: INVMAC Errors During Initial SMS Inventory

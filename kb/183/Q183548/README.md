@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183548: Update to Diag. Capture Remote Environment Not Recognized"
-permalink: kb/183/Q183548/
+permalink: /kb/183/Q183548/
 ---
 
 ## Q183548: Update to Diag. Capture Remote Environment Not Recognized

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189743: INFO: Description of Setup.lst Sections"
-permalink: kb/189/Q189743/
+permalink: /kb/189/Q189743/
 ---
 
 ## Q189743: INFO: Description of Setup.lst Sections

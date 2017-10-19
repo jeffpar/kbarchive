@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166171: Long File Names Are Lost When Connecting to NetWare 4.11"
-permalink: kb/166/Q166171/
+permalink: /kb/166/Q166171/
 ---
 
 ## Q166171: Long File Names Are Lost When Connecting to NetWare 4.11

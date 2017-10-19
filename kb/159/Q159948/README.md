@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159948: WD97: General Information About Web Page Authoring"
-permalink: kb/159/Q159948/
+permalink: /kb/159/Q159948/
 ---
 
 ## Q159948: WD97: General Information About Web Page Authoring

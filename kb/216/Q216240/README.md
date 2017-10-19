@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216240: Cluster Log is Overwritten When Cluster Server Starts"
-permalink: kb/216/Q216240/
+permalink: /kb/216/Q216240/
 ---
 
 ## Q216240: Cluster Log is Overwritten When Cluster Server Starts

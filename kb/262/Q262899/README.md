@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262899: XADM: KCC Generates Notifications for Intrasite Server"
-permalink: kb/262/Q262899/
+permalink: /kb/262/Q262899/
 ---
 
 ## Q262899: XADM: KCC Generates Notifications for Intrasite Server

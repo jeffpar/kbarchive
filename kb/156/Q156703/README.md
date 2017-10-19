@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156703: XADM: Space Character not Supported for SMTP Custom Recipients"
-permalink: kb/156/Q156703/
+permalink: /kb/156/Q156703/
 ---
 
 ## Q156703: XADM: Space Character not Supported for SMTP Custom Recipients

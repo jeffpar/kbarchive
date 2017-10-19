@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87537: PRB: midiInOpen Fails in MIDIMON Sample Application"
-permalink: kb/087/Q87537/
+permalink: /kb/087/Q87537/
 ---
 
 ## Q87537: PRB: midiInOpen Fails in MIDIMON Sample Application

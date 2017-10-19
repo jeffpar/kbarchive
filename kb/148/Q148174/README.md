@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148174: NWCONV.EXE Does Not Give Correct Permissions"
-permalink: kb/148/Q148174/
+permalink: /kb/148/Q148174/
 ---
 
 ## Q148174: NWCONV.EXE Does Not Give Correct Permissions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248400: BUG: Reregistered ATL Window Class May Cause Access Violation"
-permalink: kb/248/Q248400/
+permalink: /kb/248/Q248400/
 ---
 
 ## Q248400: BUG: Reregistered ATL Window Class May Cause Access Violation

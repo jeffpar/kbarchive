@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165467: How to Install a Windows-Based Program on a Dual-Boot Computer"
-permalink: kb/165/Q165467/
+permalink: /kb/165/Q165467/
 ---
 
 ## Q165467: How to Install a Windows-Based Program on a Dual-Boot Computer

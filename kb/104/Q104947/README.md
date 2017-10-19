@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104947: DoubleSpace Leaves ASPI4DOS.SYS and UPSI14.SYS on Host Drive"
-permalink: kb/104/Q104947/
+permalink: /kb/104/Q104947/
 ---
 
 ## Q104947: DoubleSpace Leaves ASPI4DOS.SYS and UPSI14.SYS on Host Drive

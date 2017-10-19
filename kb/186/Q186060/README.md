@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186060: Troubleshooting Active Movie Playback Problems"
-permalink: kb/186/Q186060/
+permalink: /kb/186/Q186060/
 ---
 
 ## Q186060: Troubleshooting Active Movie Playback Problems

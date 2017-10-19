@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117653: PC DOS: MAIL.EXE Command-Line Options"
-permalink: kb/117/Q117653/
+permalink: /kb/117/Q117653/
 ---
 
 ## Q117653: PC DOS: MAIL.EXE Command-Line Options

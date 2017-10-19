@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160946: Setup Hangs During First Reboot with Compaq NetFlex Driver"
-permalink: kb/160/Q160946/
+permalink: /kb/160/Q160946/
 ---
 
 ## Q160946: Setup Hangs During First Reboot with Compaq NetFlex Driver

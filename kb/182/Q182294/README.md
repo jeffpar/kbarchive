@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182294: XADM: Synchronization Fails Attempting to Modify Deleted Message"
-permalink: kb/182/Q182294/
+permalink: /kb/182/Q182294/
 ---
 
 ## Q182294: XADM: Synchronization Fails Attempting to Modify Deleted Message

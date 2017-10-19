@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195768: HOWTO: Profile an ISAPI DLL"
-permalink: kb/195/Q195768/
+permalink: /kb/195/Q195768/
 ---
 
 ## Q195768: HOWTO: Profile an ISAPI DLL

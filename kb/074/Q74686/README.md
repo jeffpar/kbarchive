@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74686: TBM12.COM Is Not Reported Properly by MEM /C"
-permalink: kb/074/Q74686/
+permalink: /kb/074/Q74686/
 ---
 
 ## Q74686: TBM12.COM Is Not Reported Properly by MEM /C

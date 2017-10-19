@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223078: FIX: DataGrid Column Widths Incorrect When Using MDAC 2.1"
-permalink: kb/223/Q223078/
+permalink: /kb/223/Q223078/
 ---
 
 ## Q223078: FIX: DataGrid Column Widths Incorrect When Using MDAC 2.1

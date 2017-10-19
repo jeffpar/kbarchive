@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71879: Double-Clicking Title Bar Maximizes Applications"
-permalink: kb/071/Q71879/
+permalink: /kb/071/Q71879/
 ---
 
 ## Q71879: Double-Clicking Title Bar Maximizes Applications

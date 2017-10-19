@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240969: NDIS May Not Return Proper Multicast Address List After a Reset"
-permalink: kb/240/Q240969/
+permalink: /kb/240/Q240969/
 ---
 
 ## Q240969: NDIS May Not Return Proper Multicast Address List After a Reset

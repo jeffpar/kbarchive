@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157739: Winbm2fv.exe Does Not Work in Windows NT"
-permalink: kb/157/Q157739/
+permalink: /kb/157/Q157739/
 ---
 
 ## Q157739: Winbm2fv.exe Does Not Work in Windows NT

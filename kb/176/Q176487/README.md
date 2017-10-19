@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176487: PRB: C2065 Error Occurs on GetWrapperWindow or Other Symbols"
-permalink: kb/176/Q176487/
+permalink: /kb/176/Q176487/
 ---
 
 ## Q176487: PRB: C2065 Error Occurs on GetWrapperWindow or Other Symbols

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87273: Err Msg: Access Denied. Make Sure the Disk Is Not Full or..."
-permalink: kb/087/Q87273/
+permalink: /kb/087/Q87273/
 ---
 
 ## Q87273: Err Msg: Access Denied. Make Sure the Disk Is Not Full or...

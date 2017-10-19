@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221825: Return or Revenge of Arcade: Game Hangs or Quits Unexpectedly"
-permalink: kb/221/Q221825/
+permalink: /kb/221/Q221825/
 ---
 
 ## Q221825: Return or Revenge of Arcade: Game Hangs or Quits Unexpectedly

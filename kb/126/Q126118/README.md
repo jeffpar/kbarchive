@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126118: MS WORD 6 SBS FOR WINDOWS: Corrections and Comments"
-permalink: kb/126/Q126118/
+permalink: /kb/126/Q126118/
 ---
 
 ## Q126118: MS WORD 6 SBS FOR WINDOWS: Corrections and Comments

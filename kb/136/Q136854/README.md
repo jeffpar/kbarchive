@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136854: No Limit to Number of Files in Project Manager"
-permalink: kb/136/Q136854/
+permalink: /kb/136/Q136854/
 ---
 
 ## Q136854: No Limit to Number of Files in Project Manager

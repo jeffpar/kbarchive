@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83942: Memory Limitation with QEMM and Windows 3.1 Standard Mode"
-permalink: kb/083/Q83942/
+permalink: /kb/083/Q83942/
 ---
 
 ## Q83942: Memory Limitation with QEMM and Windows 3.1 Standard Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105359: Filenames with Trailing Periods Not Found"
-permalink: kb/105/Q105359/
+permalink: /kb/105/Q105359/
 ---
 
 ## Q105359: Filenames with Trailing Periods Not Found

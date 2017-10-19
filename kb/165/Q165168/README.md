@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165168: FIX: Modal Form and SET SYSMENU OFF Cause Menu to Disappear"
-permalink: kb/165/Q165168/
+permalink: /kb/165/Q165168/
 ---
 
 ## Q165168: FIX: Modal Form and SET SYSMENU OFF Cause Menu to Disappear

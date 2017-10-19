@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233323: Exceeding MaxRequestThreads May Cause Windows NT to Hang"
-permalink: kb/233/Q233323/
+permalink: /kb/233/Q233323/
 ---
 
 ## Q233323: Exceeding MaxRequestThreads May Cause Windows NT to Hang

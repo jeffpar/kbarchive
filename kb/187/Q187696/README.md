@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187696: Changes to Calculator in Service Pack 4"
-permalink: kb/187/Q187696/
+permalink: /kb/187/Q187696/
 ---
 
 ## Q187696: Changes to Calculator in Service Pack 4

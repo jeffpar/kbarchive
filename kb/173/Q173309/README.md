@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173309: Blue Screen STOP Message C0000135 Appears at Startup"
-permalink: kb/173/Q173309/
+permalink: /kb/173/Q173309/
 ---
 
 ## Q173309: Blue Screen STOP Message C0000135 Appears at Startup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95416: Video: Unexpected Exit Error Message During Setup"
-permalink: kb/095/Q95416/
+permalink: /kb/095/Q95416/
 ---
 
 ## Q95416: Video: Unexpected Exit Error Message During Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192229: Login Script Group Membership Mapping on BDC Fail If PDC Is Down"
-permalink: kb/192/Q192229/
+permalink: /kb/192/Q192229/
 ---
 
 ## Q192229: Login Script Group Membership Mapping on BDC Fail If PDC Is Down

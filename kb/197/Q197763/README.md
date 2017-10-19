@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197763: WD97: &quot;Styles in Use&quot; List Displays Styles Not Applied in Doc"
-permalink: kb/197/Q197763/
+permalink: /kb/197/Q197763/
 ---
 
 ## Q197763: WD97: &quot;Styles in Use&quot; List Displays Styles Not Applied in Doc

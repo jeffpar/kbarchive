@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228456: Unnecessary Dialog Appears When Configuring TCP/IP to Use DHCP"
-permalink: kb/228/Q228456/
+permalink: /kb/228/Q228456/
 ---
 
 ## Q228456: Unnecessary Dialog Appears When Configuring TCP/IP to Use DHCP

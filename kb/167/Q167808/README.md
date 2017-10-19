@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167808: SMS: Unable to Install or Verify NetWare Logon Servers"
-permalink: kb/167/Q167808/
+permalink: /kb/167/Q167808/
 ---
 
 ## Q167808: SMS: Unable to Install or Verify NetWare Logon Servers

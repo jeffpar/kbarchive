@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179195: Coolbar ActiveX Control and Sample Project"
-permalink: kb/179/Q179195/
+permalink: /kb/179/Q179195/
 ---
 
 ## Q179195: Coolbar ActiveX Control and Sample Project

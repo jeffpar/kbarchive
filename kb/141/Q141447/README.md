@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141447: FIX: dbDao's CdbException Uses Private Constructor"
-permalink: kb/141/Q141447/
+permalink: /kb/141/Q141447/
 ---
 
 ## Q141447: FIX: dbDao's CdbException Uses Private Constructor

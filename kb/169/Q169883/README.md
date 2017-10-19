@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169883: FP: Extra Line Spacing Inserted after Pressing ENTER"
-permalink: kb/169/Q169883/
+permalink: /kb/169/Q169883/
 ---
 
 ## Q169883: FP: Extra Line Spacing Inserted after Pressing ENTER

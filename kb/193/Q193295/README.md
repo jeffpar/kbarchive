@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193295: HOWTO: Reference an MTS Context Object From a COM DLL"
-permalink: kb/193/Q193295/
+permalink: /kb/193/Q193295/
 ---
 
 ## Q193295: HOWTO: Reference an MTS Context Object From a COM DLL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259103: HOWTO: Use the Windows Script Host to Automate an Application"
-permalink: kb/259/Q259103/
+permalink: /kb/259/Q259103/
 ---
 
 ## Q259103: HOWTO: Use the Windows Script Host to Automate an Application

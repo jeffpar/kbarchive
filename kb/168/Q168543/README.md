@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168543: SMS: InocuLAN 4.0 May Interfere with SMS Client Setup"
-permalink: kb/168/Q168543/
+permalink: /kb/168/Q168543/
 ---
 
 ## Q168543: SMS: InocuLAN 4.0 May Interfere with SMS Client Setup

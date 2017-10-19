@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130245: MAC Dangerous Creatures: Boxes Appear When Typing"
-permalink: kb/130/Q130245/
+permalink: /kb/130/Q130245/
 ---
 
 ## Q130245: MAC Dangerous Creatures: Boxes Appear When Typing

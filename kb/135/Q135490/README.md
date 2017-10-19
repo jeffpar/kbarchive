@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135490: SDLC Multidrop Primary Configuration Problems"
-permalink: kb/135/Q135490/
+permalink: /kb/135/Q135490/
 ---
 
 ## Q135490: SDLC Multidrop Primary Configuration Problems

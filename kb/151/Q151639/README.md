@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151639: Err Msg: Enc9632 Caused an Invalid Page Fault in Enc9632.exe"
-permalink: kb/151/Q151639/
+permalink: /kb/151/Q151639/
 ---
 
 ## Q151639: Err Msg: Enc9632 Caused an Invalid Page Fault in Enc9632.exe

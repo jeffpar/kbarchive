@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161520: SMS Doc Err: Help Indicates Use of Colons in Machine Path"
-permalink: kb/161/Q161520/
+permalink: /kb/161/Q161520/
 ---
 
 ## Q161520: SMS Doc Err: Help Indicates Use of Colons in Machine Path

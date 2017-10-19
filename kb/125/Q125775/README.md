@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125775: Cannot Print Definitions from TechNet CD Glossary"
-permalink: kb/125/Q125775/
+permalink: /kb/125/Q125775/
 ---
 
 ## Q125775: Cannot Print Definitions from TechNet CD Glossary

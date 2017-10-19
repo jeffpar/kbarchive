@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189468: HOWTO: Create a Basic Add-in Using VB5 or VB6"
-permalink: kb/189/Q189468/
+permalink: /kb/189/Q189468/
 ---
 
 ## Q189468: HOWTO: Create a Basic Add-in Using VB5 or VB6

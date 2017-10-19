@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195166: NVAlert Service Logs Event 3006(ReadEventLog Returns 122)"
-permalink: kb/195/Q195166/
+permalink: /kb/195/Q195166/
 ---
 
 ## Q195166: NVAlert Service Logs Event 3006(ReadEventLog Returns 122)

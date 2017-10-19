@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285213: Combat Flight Simulator 2: Sound or Frame Rate Issues"
-permalink: kb/285/Q285213/
+permalink: /kb/285/Q285213/
 ---
 
 ## Q285213: Combat Flight Simulator 2: Sound or Frame Rate Issues

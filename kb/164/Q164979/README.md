@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164979: SMS: Database Does Not Reflect Site/Domain Changes Correctly"
-permalink: kb/164/Q164979/
+permalink: /kb/164/Q164979/
 ---
 
 ## Q164979: SMS: Database Does Not Reflect Site/Domain Changes Correctly

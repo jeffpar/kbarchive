@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196000: SNA Print Server Rejects FMH-1 With Sense Code 1005"
-permalink: kb/196/Q196000/
+permalink: /kb/196/Q196000/
 ---
 
 ## Q196000: SNA Print Server Rejects FMH-1 With Sense Code 1005

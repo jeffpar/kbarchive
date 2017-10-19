@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135218: Double-Clicking Document Does Not Open It in WordPad"
-permalink: kb/135/Q135218/
+permalink: /kb/135/Q135218/
 ---
 
 ## Q135218: Double-Clicking Document Does Not Open It in WordPad

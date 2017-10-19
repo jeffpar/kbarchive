@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152097: FP: Files in Discussion Web Are Overwritten"
-permalink: kb/152/Q152097/
+permalink: /kb/152/Q152097/
 ---
 
 ## Q152097: FP: Files in Discussion Web Are Overwritten

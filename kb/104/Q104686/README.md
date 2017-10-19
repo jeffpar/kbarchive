@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104686: PC Rmt WRmt: Connecting Asynchronously at Different Speeds"
-permalink: kb/104/Q104686/
+permalink: /kb/104/Q104686/
 ---
 
 ## Q104686: PC Rmt WRmt: Connecting Asynchronously at Different Speeds

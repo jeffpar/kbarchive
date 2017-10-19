@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176507: Unattended Installation of MSCS Service"
-permalink: kb/176/Q176507/
+permalink: /kb/176/Q176507/
 ---
 
 ## Q176507: Unattended Installation of MSCS Service

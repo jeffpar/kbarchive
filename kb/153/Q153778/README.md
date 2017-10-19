@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153778: Close Combat: Unit Status Messages Out of Order"
-permalink: kb/153/Q153778/
+permalink: /kb/153/Q153778/
 ---
 
 ## Q153778: Close Combat: Unit Status Messages Out of Order

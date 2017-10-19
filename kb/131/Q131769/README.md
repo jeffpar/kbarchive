@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131769: Adding A Second Adaptec 154x SCSI Adapter Fails in Windows NT"
-permalink: kb/131/Q131769/
+permalink: /kb/131/Q131769/
 ---
 
 ## Q131769: Adding A Second Adaptec 154x SCSI Adapter Fails in Windows NT

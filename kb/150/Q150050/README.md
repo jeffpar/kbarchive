@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150050: How to See More than 9 Users in SMS Security Manager"
-permalink: kb/150/Q150050/
+permalink: /kb/150/Q150050/
 ---
 
 ## Q150050: How to See More than 9 Users in SMS Security Manager

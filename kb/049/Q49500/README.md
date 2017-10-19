@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49500: List of Antivirus Software Vendors"
-permalink: kb/049/Q49500/
+permalink: /kb/049/Q49500/
 ---
 
 ## Q49500: List of Antivirus Software Vendors

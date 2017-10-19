@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139282: New 3C509 Addressing Scheme Requires New Remoteboot Config"
-permalink: kb/139/Q139282/
+permalink: /kb/139/Q139282/
 ---
 
 ## Q139282: New 3C509 Addressing Scheme Requires New Remoteboot Config

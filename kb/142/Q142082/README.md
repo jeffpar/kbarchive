@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142082: FIX: CTL3D32.DLL Errors with Windows 95"
-permalink: kb/142/Q142082/
+permalink: /kb/142/Q142082/
 ---
 
 ## Q142082: FIX: CTL3D32.DLL Errors with Windows 95

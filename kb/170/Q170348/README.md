@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170348: Network Installation of PowerPoint 97 Missing Tabs and Templates"
-permalink: kb/170/Q170348/
+permalink: /kb/170/Q170348/
 ---
 
 ## Q170348: Network Installation of PowerPoint 97 Missing Tabs and Templates

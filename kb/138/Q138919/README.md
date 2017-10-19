@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138919: FIX: Form Appears But None of the Form's Objects Show Up"
-permalink: kb/138/Q138919/
+permalink: /kb/138/Q138919/
 ---
 
 ## Q138919: FIX: Form Appears But None of the Form's Objects Show Up

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138872: FIX: TRACE() Message Appears When Closing DAO Objects"
-permalink: kb/138/Q138872/
+permalink: /kb/138/Q138872/
 ---
 
 ## Q138872: FIX: TRACE() Message Appears When Closing DAO Objects

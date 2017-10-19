@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165652: SNA Services Do Not Start if Save Required Dialog Box Appears"
-permalink: kb/165/Q165652/
+permalink: /kb/165/Q165652/
 ---
 
 ## Q165652: SNA Services Do Not Start if Save Required Dialog Box Appears

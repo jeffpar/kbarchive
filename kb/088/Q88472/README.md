@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88472: Golf: No Sound/Reward for a Hole-in-One"
-permalink: kb/088/Q88472/
+permalink: /kb/088/Q88472/
 ---
 
 ## Q88472: Golf: No Sound/Reward for a Hole-in-One

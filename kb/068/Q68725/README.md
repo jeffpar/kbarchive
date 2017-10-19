@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68725: Hard Drives That Require VirtualHDIrq=off Switch in SYSTEM.INI"
-permalink: kb/068/Q68725/
+permalink: /kb/068/Q68725/
 ---
 
 ## Q68725: Hard Drives That Require VirtualHDIrq=off Switch in SYSTEM.INI

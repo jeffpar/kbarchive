@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90391: Cannot Redirect LPT4 or Greater with Basic Redirector, Novell"
-permalink: kb/090/Q90391/
+permalink: /kb/090/Q90391/
 ---
 
 ## Q90391: Cannot Redirect LPT4 or Greater with Basic Redirector, Novell

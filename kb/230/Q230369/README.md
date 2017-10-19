@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230369: WD97: DocErr: Help Text About TOC Field &#92;p Switch Is Incorrect"
-permalink: kb/230/Q230369/
+permalink: /kb/230/Q230369/
 ---
 
 ## Q230369: WD97: DocErr: Help Text About TOC Field &#92;p Switch Is Incorrect

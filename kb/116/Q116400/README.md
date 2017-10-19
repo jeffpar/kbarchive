@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116400: Comprehensive List of Video for Windows Documentation Errors"
-permalink: kb/116/Q116400/
+permalink: /kb/116/Q116400/
 ---
 
 ## Q116400: Comprehensive List of Video for Windows Documentation Errors

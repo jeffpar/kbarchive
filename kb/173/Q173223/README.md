@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173223: WD97: Linked Picture Size Lost When Saving as Rich Text Format"
-permalink: kb/173/Q173223/
+permalink: /kb/173/Q173223/
 ---
 
 ## Q173223: WD97: Linked Picture Size Lost When Saving as Rich Text Format

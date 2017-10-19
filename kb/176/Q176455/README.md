@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176455: XADM: NDR When Attempting to Send to Large Number of Recipients"
-permalink: kb/176/Q176455/
+permalink: /kb/176/Q176455/
 ---
 
 ## Q176455: XADM: NDR When Attempting to Send to Large Number of Recipients

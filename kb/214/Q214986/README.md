@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214986: SMS: Cannot Print Euro Currency Symbol"
-permalink: kb/214/Q214986/
+permalink: /kb/214/Q214986/
 ---
 
 ## Q214986: SMS: Cannot Print Euro Currency Symbol

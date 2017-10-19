@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265384: Snasii.dll Always Tries to Locate Host Account Cache Database"
-permalink: kb/265/Q265384/
+permalink: /kb/265/Q265384/
 ---
 
 ## Q265384: Snasii.dll Always Tries to Locate Host Account Cache Database

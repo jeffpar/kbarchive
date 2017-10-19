@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175841: XFOR: SMTP Header Discarded with No Message Content"
-permalink: kb/175/Q175841/
+permalink: /kb/175/Q175841/
 ---
 
 ## Q175841: XFOR: SMTP Header Discarded with No Message Content

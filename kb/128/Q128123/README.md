@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128123: Pentium FDIV Patch for Visual C++ 2.0"
-permalink: kb/128/Q128123/
+permalink: /kb/128/Q128123/
 ---
 
 ## Q128123: Pentium FDIV Patch for Visual C++ 2.0

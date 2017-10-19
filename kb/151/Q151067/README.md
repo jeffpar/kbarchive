@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151067: Fury3 Video Skips to End if Focus Is Removed from Window"
-permalink: kb/151/Q151067/
+permalink: /kb/151/Q151067/
 ---
 
 ## Q151067: Fury3 Video Skips to End if Focus Is Removed from Window

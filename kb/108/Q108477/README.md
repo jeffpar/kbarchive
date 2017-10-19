@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108477: ODIHLP.EXE Cannot Be Unloaded"
-permalink: kb/108/Q108477/
+permalink: /kb/108/Q108477/
 ---
 
 ## Q108477: ODIHLP.EXE Cannot Be Unloaded

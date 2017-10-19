@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70281: Cannot Start Run-Time ToolBook Without a Book"
-permalink: kb/070/Q70281/
+permalink: /kb/070/Q70281/
 ---
 
 ## Q70281: Cannot Start Run-Time ToolBook Without a Book

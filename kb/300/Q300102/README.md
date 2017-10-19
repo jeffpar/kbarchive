@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300102: Site ID and Encryption Key from Different Computer Not Working"
-permalink: kb/300/Q300102/
+permalink: /kb/300/Q300102/
 ---
 
 ## Q300102: Site ID and Encryption Key from Different Computer Not Working

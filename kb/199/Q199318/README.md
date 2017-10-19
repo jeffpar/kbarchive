@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199318: SMS: How SMS Uses the SMS_DEF.MOF in Hardware Inventory"
-permalink: kb/199/Q199318/
+permalink: /kb/199/Q199318/
 ---
 
 ## Q199318: SMS: How SMS Uses the SMS_DEF.MOF in Hardware Inventory

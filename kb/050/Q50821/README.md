@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50821: Windows Write 3.0 Cannot Search for &quot;?&quot;"
-permalink: kb/050/Q50821/
+permalink: /kb/050/Q50821/
 ---
 
 ## Q50821: Windows Write 3.0 Cannot Search for &quot;?&quot;

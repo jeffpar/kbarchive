@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165950: Unable to Change Font Cartridge Selection"
-permalink: kb/165/Q165950/
+permalink: /kb/165/Q165950/
 ---
 
 ## Q165950: Unable to Change Font Cartridge Selection

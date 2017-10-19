@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150701: BUG: VB 4.0 Professional Edition Does Not Reinstall Help Files"
-permalink: kb/150/Q150701/
+permalink: /kb/150/Q150701/
 ---
 
 ## Q150701: BUG: VB 4.0 Professional Edition Does Not Reinstall Help Files

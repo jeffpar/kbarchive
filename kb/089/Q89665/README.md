@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89665: PRB: Cause of &quot;String Memory Variable Area Overflow&quot; Error"
-permalink: kb/089/Q89665/
+permalink: /kb/089/Q89665/
 ---
 
 ## Q89665: PRB: Cause of &quot;String Memory Variable Area Overflow&quot; Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297123: Err Msg: You Specified a User Name Which Is Already in Use By..."
-permalink: kb/297/Q297123/
+permalink: /kb/297/Q297123/
 ---
 
 ## Q297123: Err Msg: You Specified a User Name Which Is Already in Use By...

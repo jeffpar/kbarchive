@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173894: XGEN: ICS: Japanese Chat Server Shows Some Errors in English"
-permalink: kb/173/Q173894/
+permalink: /kb/173/Q173894/
 ---
 
 ## Q173894: XGEN: ICS: Japanese Chat Server Shows Some Errors in English

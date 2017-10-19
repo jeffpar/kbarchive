@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62063: Mac Hyp: Reading an Enclosed File from a Message"
-permalink: kb/062/Q62063/
+permalink: /kb/062/Q62063/
 ---
 
 ## Q62063: Mac Hyp: Reading an Enclosed File from a Message

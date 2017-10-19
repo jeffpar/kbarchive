@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188625: XADM: Unattended Exchange Server 5.5 Setup"
-permalink: kb/188/Q188625/
+permalink: /kb/188/Q188625/
 ---
 
 ## Q188625: XADM: Unattended Exchange Server 5.5 Setup

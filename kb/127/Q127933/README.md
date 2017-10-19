@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127933: Err Msg: No Network Provider Accepted the Given Network Path"
-permalink: kb/127/Q127933/
+permalink: /kb/127/Q127933/
 ---
 
 ## Q127933: Err Msg: No Network Provider Accepted the Given Network Path

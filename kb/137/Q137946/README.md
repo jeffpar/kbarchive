@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137946: HOWTO: Distribute Win32s Files w/ FoxPro 3.0 App on Network"
-permalink: kb/137/Q137946/
+permalink: /kb/137/Q137946/
 ---
 
 ## Q137946: HOWTO: Distribute Win32s Files w/ FoxPro 3.0 App on Network

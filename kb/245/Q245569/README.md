@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245569: XFOR: Connector for Notes: Error Opening Mailbox Domain/Server"
-permalink: kb/245/Q245569/
+permalink: /kb/245/Q245569/
 ---
 
 ## Q245569: XFOR: Connector for Notes: Error Opening Mailbox Domain/Server

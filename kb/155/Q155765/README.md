@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155765: XADM: Store Crashes in Ecreleaselogonop"
-permalink: kb/155/Q155765/
+permalink: /kb/155/Q155765/
 ---
 
 ## Q155765: XADM: Store Crashes in Ecreleaselogonop

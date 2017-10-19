@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247404: How to Modify the Cache-Control HTTP Header When You Use IIS"
-permalink: kb/247/Q247404/
+permalink: /kb/247/Q247404/
 ---
 
 ## Q247404: How to Modify the Cache-Control HTTP Header When You Use IIS

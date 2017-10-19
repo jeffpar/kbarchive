@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105529: Mozart: Help Window Retains Focus When You Click Away from It"
-permalink: kb/105/Q105529/
+permalink: /kb/105/Q105529/
 ---
 
 ## Q105529: Mozart: Help Window Retains Focus When You Click Away from It

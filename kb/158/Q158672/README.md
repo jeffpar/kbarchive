@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158672: An IBM 720 Server Multiprocessor May Randomly Hang"
-permalink: kb/158/Q158672/
+permalink: /kb/158/Q158672/
 ---
 
 ## Q158672: An IBM 720 Server Multiprocessor May Randomly Hang

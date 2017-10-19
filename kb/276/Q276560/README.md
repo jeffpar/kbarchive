@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276560: BUG: CompilerError with Left Function When Devshl.dll Referenced"
-permalink: kb/276/Q276560/
+permalink: /kb/276/Q276560/
 ---
 
 ## Q276560: BUG: CompilerError with Left Function When Devshl.dll Referenced

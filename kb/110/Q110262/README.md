@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110262: Flight Simulator: Error Code 06 When Editing a Situation"
-permalink: kb/110/Q110262/
+permalink: /kb/110/Q110262/
 ---
 
 ## Q110262: Flight Simulator: Error Code 06 When Editing a Situation

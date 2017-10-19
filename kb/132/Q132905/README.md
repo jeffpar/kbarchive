@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132905: 16-Bit Network Programs May Not Reflect New Computer Name"
-permalink: kb/132/Q132905/
+permalink: /kb/132/Q132905/
 ---
 
 ## Q132905: 16-Bit Network Programs May Not Reflect New Computer Name

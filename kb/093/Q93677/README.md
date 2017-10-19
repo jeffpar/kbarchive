@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93677: Windows Sound System Will Not Load on Diskless Workstations"
-permalink: kb/093/Q93677/
+permalink: /kb/093/Q93677/
 ---
 
 ## Q93677: Windows Sound System Will Not Load on Diskless Workstations

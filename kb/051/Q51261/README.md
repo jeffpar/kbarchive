@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51261: Mac Srv: Server Can't Be Loaded if File Is Locked"
-permalink: kb/051/Q51261/
+permalink: /kb/051/Q51261/
 ---
 
 ## Q51261: Mac Srv: Server Can't Be Loaded if File Is Locked

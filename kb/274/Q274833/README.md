@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274833: XGEN: Bugs Fixed in Exchange Server 5.5 Service Pack 4 (Part 2)"
-permalink: kb/274/Q274833/
+permalink: /kb/274/Q274833/
 ---
 
 ## Q274833: XGEN: Bugs Fixed in Exchange Server 5.5 Service Pack 4 (Part 2)

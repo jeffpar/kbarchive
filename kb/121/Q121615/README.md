@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121615: NCP Requirements for LU 6.2"
-permalink: kb/121/Q121615/
+permalink: /kb/121/Q121615/
 ---
 
 ## Q121615: NCP Requirements for LU 6.2

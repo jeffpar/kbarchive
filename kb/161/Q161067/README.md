@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161067: IIS FTP RNTO Overwrites Existing Files"
-permalink: kb/161/Q161067/
+permalink: /kb/161/Q161067/
 ---
 
 ## Q161067: IIS FTP RNTO Overwrites Existing Files

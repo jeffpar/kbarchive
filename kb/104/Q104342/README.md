@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104342: SQL Server System Funcs Supported by the Connectivity Kit"
-permalink: kb/104/Q104342/
+permalink: /kb/104/Q104342/
 ---
 
 ## Q104342: SQL Server System Funcs Supported by the Connectivity Kit

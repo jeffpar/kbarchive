@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162158: NET ACCOUNTS Command Errors"
-permalink: kb/162/Q162158/
+permalink: /kb/162/Q162158/
 ---
 
 ## Q162158: NET ACCOUNTS Command Errors

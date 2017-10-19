@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59671: Incorrect Pages in HPPCL Duplex Mode"
-permalink: kb/059/Q59671/
+permalink: /kb/059/Q59671/
 ---
 
 ## Q59671: Incorrect Pages in HPPCL Duplex Mode

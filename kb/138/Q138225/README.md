@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138225: Unable to Start Windows NT 3.51 MCP Assessments Exams"
-permalink: kb/138/Q138225/
+permalink: /kb/138/Q138225/
 ---
 
 ## Q138225: Unable to Start Windows NT 3.51 MCP Assessments Exams

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48241: Relationship Between Map File and Physical Memory"
-permalink: kb/048/Q48241/
+permalink: /kb/048/Q48241/
 ---
 
 ## Q48241: Relationship Between Map File and Physical Memory

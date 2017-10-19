@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234049: Logon Script Does Not Work Due to Net.bat File in Netlogon Share"
-permalink: kb/234/Q234049/
+permalink: /kb/234/Q234049/
 ---
 
 ## Q234049: Logon Script Does Not Work Due to Net.bat File in Netlogon Share

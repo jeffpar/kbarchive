@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253229: Full NTFS Volumes Can Be Marked &quot;Dirty&quot; Even If They Are Clean"
-permalink: kb/253/Q253229/
+permalink: /kb/253/Q253229/
 ---
 
 ## Q253229: Full NTFS Volumes Can Be Marked &quot;Dirty&quot; Even If They Are Clean

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82608: During Long Q+E Query, CTRL+ALT+DEL Not Functioning Properly"
-permalink: kb/082/Q82608/
+permalink: /kb/082/Q82608/
 ---
 
 ## Q82608: During Long Q+E Query, CTRL+ALT+DEL Not Functioning Properly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221152: XWEB: Small File Attachments Show Incorrect Size in OWA"
-permalink: kb/221/Q221152/
+permalink: /kb/221/Q221152/
 ---
 
 ## Q221152: XWEB: Small File Attachments Show Incorrect Size in OWA

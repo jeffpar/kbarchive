@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242060: Stop 0x0000000A Error in Tcpip.sys Caused by Ipr_Buffer Size"
-permalink: kb/242/Q242060/
+permalink: /kb/242/Q242060/
 ---
 
 ## Q242060: Stop 0x0000000A Error in Tcpip.sys Caused by Ipr_Buffer Size

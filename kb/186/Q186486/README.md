@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186486: Terminal Server Usage of Net Name/Net Send"
-permalink: kb/186/Q186486/
+permalink: /kb/186/Q186486/
 ---
 
 ## Q186486: Terminal Server Usage of Net Name/Net Send

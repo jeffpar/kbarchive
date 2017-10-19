@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141302: Windows NT Print Driver Architecture"
-permalink: kb/141/Q141302/
+permalink: /kb/141/Q141302/
 ---
 
 ## Q141302: Windows NT Print Driver Architecture

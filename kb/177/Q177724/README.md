@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177724: XADM: Cannot Find Exchange Server Recipients Using LDAP Queries"
-permalink: kb/177/Q177724/
+permalink: /kb/177/Q177724/
 ---
 
 ## Q177724: XADM: Cannot Find Exchange Server Recipients Using LDAP Queries

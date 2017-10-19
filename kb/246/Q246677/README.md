@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246677: Setting TN3270 Mode Only on SNA Server Causes Applet to Fail"
-permalink: kb/246/Q246677/
+permalink: /kb/246/Q246677/
 ---
 
 ## Q246677: Setting TN3270 Mode Only on SNA Server Causes Applet to Fail

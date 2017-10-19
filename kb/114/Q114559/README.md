@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114559: Print to Encapsulated PostScript File Option Disabled"
-permalink: kb/114/Q114559/
+permalink: /kb/114/Q114559/
 ---
 
 ## Q114559: Print to Encapsulated PostScript File Option Disabled

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82524: hDC Power Launcher Enhanced Wait Command Hangs"
-permalink: kb/082/Q82524/
+permalink: /kb/082/Q82524/
 ---
 
 ## Q82524: hDC Power Launcher Enhanced Wait Command Hangs

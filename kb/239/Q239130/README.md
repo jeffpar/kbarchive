@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239130: SMS: 32-Bit Package Does Not Remove Duplicate Registry Entries"
-permalink: kb/239/Q239130/
+permalink: /kb/239/Q239130/
 ---
 
 ## Q239130: SMS: 32-Bit Package Does Not Remove Duplicate Registry Entries

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81497: Discussion of Metafiles"
-permalink: kb/081/Q81497/
+permalink: /kb/081/Q81497/
 ---
 
 ## Q81497: Discussion of Metafiles

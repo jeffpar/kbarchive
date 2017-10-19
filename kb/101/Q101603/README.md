@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101603: PC WRmt: Reason for Multiple Passwords"
-permalink: kb/101/Q101603/
+permalink: /kb/101/Q101603/
 ---
 
 ## Q101603: PC WRmt: Reason for Multiple Passwords

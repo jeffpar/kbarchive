@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271905: XADM: Using Replay Process to Restore Data from MTA Backlog"
-permalink: kb/271/Q271905/
+permalink: /kb/271/Q271905/
 ---
 
 ## Q271905: XADM: Using Replay Process to Restore Data from MTA Backlog

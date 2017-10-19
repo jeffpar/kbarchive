@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231886: BUG: Misleading Error 0x8004d021 When Import Transaction Fails"
-permalink: kb/231/Q231886/
+permalink: /kb/231/Q231886/
 ---
 
 ## Q231886: BUG: Misleading Error 0x8004d021 When Import Transaction Fails

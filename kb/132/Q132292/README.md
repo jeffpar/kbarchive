@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132292: At Work Fax Queue Limit"
-permalink: kb/132/Q132292/
+permalink: /kb/132/Q132292/
 ---
 
 ## Q132292: At Work Fax Queue Limit

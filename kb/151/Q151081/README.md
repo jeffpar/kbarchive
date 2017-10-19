@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151081: BUG: Incorrect Error Message When Setting Read-Only Count Prop"
-permalink: kb/151/Q151081/
+permalink: /kb/151/Q151081/
 ---
 
 ## Q151081: BUG: Incorrect Error Message When Setting Read-Only Count Prop

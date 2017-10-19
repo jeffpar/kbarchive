@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87029: SMTP: Explanation of TCP/IP"
-permalink: kb/087/Q87029/
+permalink: /kb/087/Q87029/
 ---
 
 ## Q87029: SMTP: Explanation of TCP/IP

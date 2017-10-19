@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221655: FIX: FFCs - Set Filter Dialog Does Not Show Current Filters"
-permalink: kb/221/Q221655/
+permalink: /kb/221/Q221655/
 ---
 
 ## Q221655: FIX: FFCs - Set Filter Dialog Does Not Show Current Filters

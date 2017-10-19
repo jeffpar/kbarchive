@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78557: EMM386 Troubleshooting and Technical Information"
-permalink: kb/078/Q78557/
+permalink: /kb/078/Q78557/
 ---
 
 ## Q78557: EMM386 Troubleshooting and Technical Information

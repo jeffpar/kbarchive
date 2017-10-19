@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128454: Windows NT 3.51 Hangs with Office 95 (Word) Help File Wizard"
-permalink: kb/128/Q128454/
+permalink: /kb/128/Q128454/
 ---
 
 ## Q128454: Windows NT 3.51 Hangs with Office 95 (Word) Help File Wizard

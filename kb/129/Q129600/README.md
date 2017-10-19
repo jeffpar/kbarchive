@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129600: Large Zeroing Operations Cause Systems To Appear Hung"
-permalink: kb/129/Q129600/
+permalink: /kb/129/Q129600/
 ---
 
 ## Q129600: Large Zeroing Operations Cause Systems To Appear Hung

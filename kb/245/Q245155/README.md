@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245155: XFOR: Error Message: Extension 'lsntscp0' Could Not Be Loaded"
-permalink: kb/245/Q245155/
+permalink: /kb/245/Q245155/
 ---
 
 ## Q245155: XFOR: Error Message: Extension 'lsntscp0' Could Not Be Loaded

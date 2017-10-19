@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155190: PRB: Functions of the VC++ WPL May Not Respond as Expected"
-permalink: kb/155/Q155190/
+permalink: /kb/155/Q155190/
 ---
 
 ## Q155190: PRB: Functions of the VC++ WPL May Not Respond as Expected

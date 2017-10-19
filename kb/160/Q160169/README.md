@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160169: PRB: Cannot Connect Data Control to a Password Protected MDB"
-permalink: kb/160/Q160169/
+permalink: /kb/160/Q160169/
 ---
 
 ## Q160169: PRB: Cannot Connect Data Control to a Password Protected MDB

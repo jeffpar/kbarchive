@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113288: Envelope Address Prints Too High on BJ300 and BJ330"
-permalink: kb/113/Q113288/
+permalink: /kb/113/Q113288/
 ---
 
 ## Q113288: Envelope Address Prints Too High on BJ300 and BJ330

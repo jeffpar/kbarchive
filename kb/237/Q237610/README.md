@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237610: Err Msg: &quot;You Do Not Have Permission to Modify This Print Job&quot;"
-permalink: kb/237/Q237610/
+permalink: /kb/237/Q237610/
 ---
 
 ## Q237610: Err Msg: &quot;You Do Not Have Permission to Modify This Print Job&quot;

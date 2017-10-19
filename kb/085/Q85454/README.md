@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85454: T2HINTS.WRI from Windows Resource Kit Version 3.1"
-permalink: kb/085/Q85454/
+permalink: /kb/085/Q85454/
 ---
 
 ## Q85454: T2HINTS.WRI from Windows Resource Kit Version 3.1

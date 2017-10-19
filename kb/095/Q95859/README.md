@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95859: Extra Tools Menu Added to Norton Desktop for Windows"
-permalink: kb/095/Q95859/
+permalink: /kb/095/Q95859/
 ---
 
 ## Q95859: Extra Tools Menu Added to Norton Desktop for Windows

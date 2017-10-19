@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120585: Golf 2.0 Requires 12 MB of Virtual Memory"
-permalink: kb/120/Q120585/
+permalink: /kb/120/Q120585/
 ---
 
 ## Q120585: Golf 2.0 Requires 12 MB of Virtual Memory

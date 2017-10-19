@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119931: Space: Setup Fails on Disk 2"
-permalink: kb/119/Q119931/
+permalink: /kb/119/Q119931/
 ---
 
 ## Q119931: Space: Setup Fails on Disk 2

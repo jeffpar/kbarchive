@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190294: Use of all Numeric NetBIOS Names Can Cause Problems"
-permalink: kb/190/Q190294/
+permalink: /kb/190/Q190294/
 ---
 
 ## Q190294: Use of all Numeric NetBIOS Names Can Cause Problems

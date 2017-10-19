@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134895: BUG: DragIcon Can Be Dragged Outside Visual FoxPro Window"
-permalink: kb/134/Q134895/
+permalink: /kb/134/Q134895/
 ---
 
 ## Q134895: BUG: DragIcon Can Be Dragged Outside Visual FoxPro Window

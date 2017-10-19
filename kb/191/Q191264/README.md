@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191264: WD97: How to Use the Outlook Express Address Book in Mail Merge"
-permalink: kb/191/Q191264/
+permalink: /kb/191/Q191264/
 ---
 
 ## Q191264: WD97: How to Use the Outlook Express Address Book in Mail Merge

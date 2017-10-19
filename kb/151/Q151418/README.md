@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151418: WinNT TCP/IP May Reuse TIME-WAIT Connections Prior to 2MSL"
-permalink: kb/151/Q151418/
+permalink: /kb/151/Q151418/
 ---
 
 ## Q151418: WinNT TCP/IP May Reuse TIME-WAIT Connections Prior to 2MSL

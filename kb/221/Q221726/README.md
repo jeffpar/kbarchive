@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221726: FIX: C0000005 Fatal Error Creating Index Tag"
-permalink: kb/221/Q221726/
+permalink: /kb/221/Q221726/
 ---
 
 ## Q221726: FIX: C0000005 Fatal Error Creating Index Tag

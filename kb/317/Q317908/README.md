@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317908: XADM: Inter-Site Message Tracking May Stop Responding"
-permalink: kb/317/Q317908/
+permalink: /kb/317/Q317908/
 ---
 
 ## Q317908: XADM: Inter-Site Message Tracking May Stop Responding

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70765: Changing Prompt for DOS Sessions Inside of Windows"
-permalink: kb/070/Q70765/
+permalink: /kb/070/Q70765/
 ---
 
 ## Q70765: Changing Prompt for DOS Sessions Inside of Windows

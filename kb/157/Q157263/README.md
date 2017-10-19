@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157263: Msbatch.inf Parameters: Installing Default Screen Saver"
-permalink: kb/157/Q157263/
+permalink: /kb/157/Q157263/
 ---
 
 ## Q157263: Msbatch.inf Parameters: Installing Default Screen Saver

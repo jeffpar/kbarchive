@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62331: FIX: Attempting to Expand a Help Dialog Box in PWB 1.0 May Hang"
-permalink: kb/062/Q62331/
+permalink: /kb/062/Q62331/
 ---
 
 ## Q62331: FIX: Attempting to Expand a Help Dialog Box in PWB 1.0 May Hang

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114961: RFX_Date() function for TIMESTAMP_STRUCT"
-permalink: kb/114/Q114961/
+permalink: /kb/114/Q114961/
 ---
 
 ## Q114961: RFX_Date() function for TIMESTAMP_STRUCT

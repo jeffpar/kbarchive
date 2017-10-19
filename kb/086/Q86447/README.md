@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86447: Printer Drivers Do Not Support Bidirectional Printing"
-permalink: kb/086/Q86447/
+permalink: /kb/086/Q86447/
 ---
 
 ## Q86447: Printer Drivers Do Not Support Bidirectional Printing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99281: Device Drivers and TSRs That Cannot Be Loaded High"
-permalink: kb/099/Q99281/
+permalink: /kb/099/Q99281/
 ---
 
 ## Q99281: Device Drivers and TSRs That Cannot Be Loaded High

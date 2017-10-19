@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149442: Remote OLE Links Between Documents Are Broken"
-permalink: kb/149/Q149442/
+permalink: /kb/149/Q149442/
 ---
 
 ## Q149442: Remote OLE Links Between Documents Are Broken

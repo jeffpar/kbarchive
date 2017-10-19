@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82841: IBM PC3270 for Windows Version 2.0 Configuration Problems"
-permalink: kb/082/Q82841/
+permalink: /kb/082/Q82841/
 ---
 
 ## Q82841: IBM PC3270 for Windows Version 2.0 Configuration Problems

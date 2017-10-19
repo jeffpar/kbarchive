@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77104: PC Adm: Microsoft Mail and Network Autodisconnect Feature"
-permalink: kb/077/Q77104/
+permalink: /kb/077/Q77104/
 ---
 
 ## Q77104: PC Adm: Microsoft Mail and Network Autodisconnect Feature

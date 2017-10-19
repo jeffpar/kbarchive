@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224339: XCLN: How to List Contacts in the OAB by Last Name"
-permalink: kb/224/Q224339/
+permalink: /kb/224/Q224339/
 ---
 
 ## Q224339: XCLN: How to List Contacts in the OAB by Last Name

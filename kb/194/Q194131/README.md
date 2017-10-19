@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194131: XFOR: Disabling Inbound ESMTP Advertisement"
-permalink: kb/194/Q194131/
+permalink: /kb/194/Q194131/
 ---
 
 ## Q194131: XFOR: Disabling Inbound ESMTP Advertisement

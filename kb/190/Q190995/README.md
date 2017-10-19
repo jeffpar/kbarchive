@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190995: XADM: DS_E_INVALID_ATTRIBUTE_SYNTAX Modifying DL Owner"
-permalink: kb/190/Q190995/
+permalink: /kb/190/Q190995/
 ---
 
 ## Q190995: XADM: DS_E_INVALID_ATTRIBUTE_SYNTAX Modifying DL Owner

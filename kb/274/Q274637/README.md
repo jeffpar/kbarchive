@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274637: MSN Explorer Gives Ambiguous Error When Trying To Switch Connect"
-permalink: kb/274/Q274637/
+permalink: /kb/274/Q274637/
 ---
 
 ## Q274637: MSN Explorer Gives Ambiguous Error When Trying To Switch Connect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178165: FS95: Flight Shop Converter Available for Flight Simulator 95"
-permalink: kb/178/Q178165/
+permalink: /kb/178/Q178165/
 ---
 
 ## Q178165: FS95: Flight Shop Converter Available for Flight Simulator 95

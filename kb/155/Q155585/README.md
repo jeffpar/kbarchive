@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155585: XADM: Error 1069 When Starting an Exchange Service"
-permalink: kb/155/Q155585/
+permalink: /kb/155/Q155585/
 ---
 
 ## Q155585: XADM: Error 1069 When Starting an Exchange Service

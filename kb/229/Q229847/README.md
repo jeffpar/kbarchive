@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229847: INFO: Does Visual Basic Support 16-Bit Development?"
-permalink: kb/229/Q229847/
+permalink: /kb/229/Q229847/
 ---
 
 ## Q229847: INFO: Does Visual Basic Support 16-Bit Development?

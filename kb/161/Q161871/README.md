@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161871: PRB: MFC Sockets Application Crashes after Exit on NT 3.51"
-permalink: kb/161/Q161871/
+permalink: /kb/161/Q161871/
 ---
 
 ## Q161871: PRB: MFC Sockets Application Crashes after Exit on NT 3.51

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138560: How to Disable Combo and List Boxes in Wizard-Generated Forms"
-permalink: kb/138/Q138560/
+permalink: /kb/138/Q138560/
 ---
 
 ## Q138560: How to Disable Combo and List Boxes in Wizard-Generated Forms

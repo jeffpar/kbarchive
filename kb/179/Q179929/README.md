@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179929: Games: Multiplayer Connection Types Are Not Available"
-permalink: kb/179/Q179929/
+permalink: /kb/179/Q179929/
 ---
 
 ## Q179929: Games: Multiplayer Connection Types Are Not Available

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73034: Unable to LOADHIGH Correctly After NET5.COM Loaded"
-permalink: kb/073/Q73034/
+permalink: /kb/073/Q73034/
 ---
 
 ## Q73034: Unable to LOADHIGH Correctly After NET5.COM Loaded

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177042: Age of Empires: Sound Plays Intermittently or Stops Unexpectedly"
-permalink: kb/177/Q177042/
+permalink: /kb/177/Q177042/
 ---
 
 ## Q177042: Age of Empires: Sound Plays Intermittently or Stops Unexpectedly

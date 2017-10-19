@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116293: Direct-to-Disk Recorder with ACM"
-permalink: kb/116/Q116293/
+permalink: /kb/116/Q116293/
 ---
 
 ## Q116293: Direct-to-Disk Recorder with ACM

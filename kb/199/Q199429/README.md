@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199429: XFOR: Err Msg: MSEXIMC.DBG, Generated an Application Error"
-permalink: kb/199/Q199429/
+permalink: /kb/199/Q199429/
 ---
 
 ## Q199429: XFOR: Err Msg: MSEXIMC.DBG, Generated an Application Error

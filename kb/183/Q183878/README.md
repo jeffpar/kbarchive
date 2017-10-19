@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183878: CART: Screen Flashes Above the Horizon in 3D Mode"
-permalink: kb/183/Q183878/
+permalink: /kb/183/Q183878/
 ---
 
 ## Q183878: CART: Screen Flashes Above the Horizon in 3D Mode

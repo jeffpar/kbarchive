@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84124: Panasonic KX-P1180 Driver with WordPerfect for Windows"
-permalink: kb/084/Q84124/
+permalink: /kb/084/Q84124/
 ---
 
 ## Q84124: Panasonic KX-P1180 Driver with WordPerfect for Windows

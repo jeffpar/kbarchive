@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247071: ICA Auto-Created Printer Functionality May Not Work with TSE SP5"
-permalink: kb/247/Q247071/
+permalink: /kb/247/Q247071/
 ---
 
 ## Q247071: ICA Auto-Created Printer Functionality May Not Work with TSE SP5

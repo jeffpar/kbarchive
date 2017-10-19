@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178511: XWEB: Err Msg: Failed to Connect to Microsoft Exchange Server"
-permalink: kb/178/Q178511/
+permalink: /kb/178/Q178511/
 ---
 
 ## Q178511: XWEB: Err Msg: Failed to Connect to Microsoft Exchange Server

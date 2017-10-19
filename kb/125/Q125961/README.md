@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125961: How to Configure Chameleon PPP Client Software for Windows NT"
-permalink: kb/125/Q125961/
+permalink: /kb/125/Q125961/
 ---
 
 ## Q125961: How to Configure Chameleon PPP Client Software for Windows NT

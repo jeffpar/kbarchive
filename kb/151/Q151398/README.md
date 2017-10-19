@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151398: &quot;The handle is invalid&quot; Error Using Server Tools and WFW"
-permalink: kb/151/Q151398/
+permalink: /kb/151/Q151398/
 ---
 
 ## Q151398: &quot;The handle is invalid&quot; Error Using Server Tools and WFW

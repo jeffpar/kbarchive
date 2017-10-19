@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92873: Windows for Workgroups Hangs at Logo Screen"
-permalink: kb/092/Q92873/
+permalink: /kb/092/Q92873/
 ---
 
 ## Q92873: Windows for Workgroups Hangs at Logo Screen

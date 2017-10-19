@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157253: FIX: Copying Tables Between Databases Changes Index Type"
-permalink: kb/157/Q157253/
+permalink: /kb/157/Q157253/
 ---
 
 ## Q157253: FIX: Copying Tables Between Databases Changes Index Type

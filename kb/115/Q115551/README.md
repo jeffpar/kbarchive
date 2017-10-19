@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115551: X400: Manually Adding TP4/CLNP Peer Address to Node"
-permalink: kb/115/Q115551/
+permalink: /kb/115/Q115551/
 ---
 
 ## Q115551: X400: Manually Adding TP4/CLNP Peer Address to Node

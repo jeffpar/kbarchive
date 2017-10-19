@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134500: Problems Saving Game in Chessmaster 2000"
-permalink: kb/134/Q134500/
+permalink: /kb/134/Q134500/
 ---
 
 ## Q134500: Problems Saving Game in Chessmaster 2000

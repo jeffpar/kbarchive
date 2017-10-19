@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110079: System Stops Responding When Copying Corrupt SFM Files"
-permalink: kb/110/Q110079/
+permalink: /kb/110/Q110079/
 ---
 
 ## Q110079: System Stops Responding When Copying Corrupt SFM Files

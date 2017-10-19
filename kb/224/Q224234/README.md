@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224234: Streets &amp; Trips 2000 Err Msg: The Selected Area Is Too Large..."
-permalink: kb/224/Q224234/
+permalink: /kb/224/Q224234/
 ---
 
 ## Q224234: Streets &amp; Trips 2000 Err Msg: The Selected Area Is Too Large...

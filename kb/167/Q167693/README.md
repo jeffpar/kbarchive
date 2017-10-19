@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167693: FIX: MFC Application Hangs on Multiprocessor Machine"
-permalink: kb/167/Q167693/
+permalink: /kb/167/Q167693/
 ---
 
 ## Q167693: FIX: MFC Application Hangs on Multiprocessor Machine

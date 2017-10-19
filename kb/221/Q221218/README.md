@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221218: SMS: Restrictive WinNT Account Policies Prevent DC Installation"
-permalink: kb/221/Q221218/
+permalink: /kb/221/Q221218/
 ---
 
 ## Q221218: SMS: Restrictive WinNT Account Policies Prevent DC Installation

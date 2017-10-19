@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290507: Error Message: Unable to Logon to the Network"
-permalink: kb/290/Q290507/
+permalink: /kb/290/Q290507/
 ---
 
 ## Q290507: Error Message: Unable to Logon to the Network

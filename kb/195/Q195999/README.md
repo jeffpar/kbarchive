@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q195999: [MC_]ALLOCATE Contention Winner Request Never Completes"
-permalink: kb/195/Q195999/
+title: "Q195999: &#91;MC_&#93;ALLOCATE Contention Winner Request Never Completes"
+permalink: /kb/195/Q195999/
 ---
 
-## Q195999: [MC_]ALLOCATE Contention Winner Request Never Completes
+## Q195999: &#91;MC_&#93;ALLOCATE Contention Winner Request Never Completes
 
 	Article: Q195999
 	Product(s): Microsoft SNA Server

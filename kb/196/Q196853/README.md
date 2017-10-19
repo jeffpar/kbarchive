@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196853: XADM: Mac Attachments Have Two Sets of Double Quotes Around Name"
-permalink: kb/196/Q196853/
+permalink: /kb/196/Q196853/
 ---
 
 ## Q196853: XADM: Mac Attachments Have Two Sets of Double Quotes Around Name

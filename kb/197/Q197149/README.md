@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197149: WD97: Mail Merge Helper Behaves Differently When Called by Macro"
-permalink: kb/197/Q197149/
+permalink: /kb/197/Q197149/
 ---
 
 ## Q197149: WD97: Mail Merge Helper Behaves Differently When Called by Macro

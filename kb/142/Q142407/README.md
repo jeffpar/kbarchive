@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142407: Using the CompuServe Address Book in Microsoft Exchange"
-permalink: kb/142/Q142407/
+permalink: /kb/142/Q142407/
 ---
 
 ## Q142407: Using the CompuServe Address Book in Microsoft Exchange

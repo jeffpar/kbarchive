@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154531: XADM: Moving the KM Server to Another Server in the Site"
-permalink: kb/154/Q154531/
+permalink: /kb/154/Q154531/
 ---
 
 ## Q154531: XADM: Moving the KM Server to Another Server in the Site

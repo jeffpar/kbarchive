@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74793: HOWTO: Simulating CreatePatternBrush() on a High-Res Printer"
-permalink: kb/074/Q74793/
+permalink: /kb/074/Q74793/
 ---
 
 ## Q74793: HOWTO: Simulating CreatePatternBrush() on a High-Res Printer

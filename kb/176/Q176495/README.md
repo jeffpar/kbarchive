@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176495: How to Configure a Modem to Connect to MSN"
-permalink: kb/176/Q176495/
+permalink: /kb/176/Q176495/
 ---
 
 ## Q176495: How to Configure a Modem to Connect to MSN

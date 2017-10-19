@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158481: WD97: Objects Stacked After Converting to Word 6.x/95 or RTF"
-permalink: kb/158/Q158481/
+permalink: /kb/158/Q158481/
 ---
 
 ## Q158481: WD97: Objects Stacked After Converting to Word 6.x/95 or RTF

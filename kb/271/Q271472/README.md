@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271472: HIS 2000 May Require Restarting Your System after Installation"
-permalink: kb/271/Q271472/
+permalink: /kb/271/Q271472/
 ---
 
 ## Q271472: HIS 2000 May Require Restarting Your System after Installation

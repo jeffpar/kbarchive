@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130137: HOWTO: How to Use ODBC to Run SQL SELECT on Microsoft Excel Data"
-permalink: kb/130/Q130137/
+permalink: /kb/130/Q130137/
 ---
 
 ## Q130137: HOWTO: How to Use ODBC to Run SQL SELECT on Microsoft Excel Data

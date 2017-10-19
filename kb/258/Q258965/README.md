@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258965: PRB: ImgEdit.OCX Causes Breakpoint in RtlFreeHeap w/ VC Debugger"
-permalink: kb/258/Q258965/
+permalink: /kb/258/Q258965/
 ---
 
 ## Q258965: PRB: ImgEdit.OCX Causes Breakpoint in RtlFreeHeap w/ VC Debugger

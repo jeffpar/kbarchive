@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58266: EMM386.SYS Does Not Work on IBM PC-DOS 4.0"
-permalink: kb/058/Q58266/
+permalink: /kb/058/Q58266/
 ---
 
 ## Q58266: EMM386.SYS Does Not Work on IBM PC-DOS 4.0

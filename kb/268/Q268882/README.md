@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268882: Cannot Map to Drive Z if Novell Client32 Is Not Installed"
-permalink: kb/268/Q268882/
+permalink: /kb/268/Q268882/
 ---
 
 ## Q268882: Cannot Map to Drive Z if Novell Client32 Is Not Installed

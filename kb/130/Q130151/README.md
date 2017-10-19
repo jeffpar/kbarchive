@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130151: Route Command Directs Output to Stderr"
-permalink: kb/130/Q130151/
+permalink: /kb/130/Q130151/
 ---
 
 ## Q130151: Route Command Directs Output to Stderr

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166600: XCON: Message Subject Lost When Sending to SP3 Exchange Server"
-permalink: kb/166/Q166600/
+permalink: /kb/166/Q166600/
 ---
 
 ## Q166600: XCON: Message Subject Lost When Sending to SP3 Exchange Server

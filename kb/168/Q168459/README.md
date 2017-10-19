@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168459: XCLN: Preventing User Access to Exchange Profiles"
-permalink: kb/168/Q168459/
+permalink: /kb/168/Q168459/
 ---
 
 ## Q168459: XCLN: Preventing User Access to Exchange Profiles

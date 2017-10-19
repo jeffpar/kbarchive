@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288086: MCSE Training Kit Microsoft Exchange 2000 Server Implementation"
-permalink: kb/288/Q288086/
+permalink: /kb/288/Q288086/
 ---
 
 ## Q288086: MCSE Training Kit Microsoft Exchange 2000 Server Implementation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181276: HOWTO: Display Extended ASCII WingDings on DBCS Systems"
-permalink: kb/181/Q181276/
+permalink: /kb/181/Q181276/
 ---
 
 ## Q181276: HOWTO: Display Extended ASCII WingDings on DBCS Systems

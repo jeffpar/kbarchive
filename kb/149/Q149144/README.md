@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149144: BUG: Space or Tab Preceding !MS&#36;NOFREEFORM in Free-Form Source"
-permalink: kb/149/Q149144/
+permalink: /kb/149/Q149144/
 ---
 
 ## Q149144: BUG: Space or Tab Preceding !MS&#36;NOFREEFORM in Free-Form Source

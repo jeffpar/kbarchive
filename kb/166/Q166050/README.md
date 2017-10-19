@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166050: WV: Outlook/WordMail Tries to Use Word Viewer as Editor"
-permalink: kb/166/Q166050/
+permalink: /kb/166/Q166050/
 ---
 
 ## Q166050: WV: Outlook/WordMail Tries to Use Word Viewer as Editor

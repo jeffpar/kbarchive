@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164025: Error Message When Installing Client Services for NetWare"
-permalink: kb/164/Q164025/
+permalink: /kb/164/Q164025/
 ---
 
 ## Q164025: Error Message When Installing Client Services for NetWare

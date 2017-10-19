@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268602: Event ID 7024 Appears in Event Log on Terminal Server"
-permalink: kb/268/Q268602/
+permalink: /kb/268/Q268602/
 ---
 
 ## Q268602: Event ID 7024 Appears in Event Log on Terminal Server

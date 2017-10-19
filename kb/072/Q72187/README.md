@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72187: Error Removing SUBSTed Directories"
-permalink: kb/072/Q72187/
+permalink: /kb/072/Q72187/
 ---
 
 ## Q72187: Error Removing SUBSTed Directories

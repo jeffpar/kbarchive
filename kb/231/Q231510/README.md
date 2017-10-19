@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231510: MapPoint 2000: Unable to Install from Novell NetWare File Server"
-permalink: kb/231/Q231510/
+permalink: /kb/231/Q231510/
 ---
 
 ## Q231510: MapPoint 2000: Unable to Install from Novell NetWare File Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80882: Installing PaintJet Printer Fonts on a Windows Network"
-permalink: kb/080/Q80882/
+permalink: /kb/080/Q80882/
 ---
 
 ## Q80882: Installing PaintJet Printer Fonts on a Windows Network

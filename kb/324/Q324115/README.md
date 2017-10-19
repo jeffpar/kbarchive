@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q324115: Building XML Web Services for the Microsoft .NET Platform Commen"
-permalink: kb/324/Q324115/
+permalink: /kb/324/Q324115/
 ---
 
 ## Q324115: Building XML Web Services for the Microsoft .NET Platform Commen

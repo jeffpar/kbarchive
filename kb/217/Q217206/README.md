@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217206: PhoneSelectExtVersion Is Not Called When phoneOpen Is Called"
-permalink: kb/217/Q217206/
+permalink: /kb/217/Q217206/
 ---
 
 ## Q217206: PhoneSelectExtVersion Is Not Called When phoneOpen Is Called

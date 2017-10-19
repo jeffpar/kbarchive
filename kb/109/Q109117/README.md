@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109117: MEM May Not Recognize More Than 16 MB RAM on NCR 4000 Series"
-permalink: kb/109/Q109117/
+permalink: /kb/109/Q109117/
 ---
 
 ## Q109117: MEM May Not Recognize More Than 16 MB RAM on NCR 4000 Series

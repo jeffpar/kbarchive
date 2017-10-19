@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282812: XADM: Age Limits for Public Folders Use Modified Time Property"
-permalink: kb/282/Q282812/
+permalink: /kb/282/Q282812/
 ---
 
 ## Q282812: XADM: Age Limits for Public Folders Use Modified Time Property

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171509: FIX: Access Violation on NT4.0 or Windows 2000 on Multi-line Tex"
-permalink: kb/171/Q171509/
+permalink: /kb/171/Q171509/
 ---
 
 ## Q171509: FIX: Access Violation on NT4.0 or Windows 2000 on Multi-line Tex

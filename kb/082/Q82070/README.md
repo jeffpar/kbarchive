@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82070: VideoShow Support with Windows"
-permalink: kb/082/Q82070/
+permalink: /kb/082/Q82070/
 ---
 
 ## Q82070: VideoShow Support with Windows

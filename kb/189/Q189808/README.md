@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189808: PRB: UpDown Control May Not Increment As Expected"
-permalink: kb/189/Q189808/
+permalink: /kb/189/Q189808/
 ---
 
 ## Q189808: PRB: UpDown Control May Not Increment As Expected

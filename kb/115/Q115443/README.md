@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115443: X400: OSIWare Bodypart Contain"
-permalink: kb/115/Q115443/
+permalink: /kb/115/Q115443/
 ---
 
 ## Q115443: X400: OSIWare Bodypart Contain

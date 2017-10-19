@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q38083: Mac DOS: DayStar LocalTalk PC Interface Board"
-permalink: kb/038/Q38083/
+permalink: /kb/038/Q38083/
 ---
 
 ## Q38083: Mac DOS: DayStar LocalTalk PC Interface Board

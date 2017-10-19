@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167027: WinNT Workstation Resource Kit Refers to File Not on CD"
-permalink: kb/167/Q167027/
+permalink: /kb/167/Q167027/
 ---
 
 ## Q167027: WinNT Workstation Resource Kit Refers to File Not on CD

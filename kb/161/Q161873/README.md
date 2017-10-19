@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161873: HOWTO: Mark MFC Controls Safe for Scripting/Initialization"
-permalink: kb/161/Q161873/
+permalink: /kb/161/Q161873/
 ---
 
 ## Q161873: HOWTO: Mark MFC Controls Safe for Scripting/Initialization

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158555: Encarta 97: Windows 3.1x Won't Restart After Installation"
-permalink: kb/158/Q158555/
+permalink: /kb/158/Q158555/
 ---
 
 ## Q158555: Encarta 97: Windows 3.1x Won't Restart After Installation

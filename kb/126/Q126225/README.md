@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126225: PRB: GetGlyphOutLine() Causes GPF Under Chinese Windows 3.1"
-permalink: kb/126/Q126225/
+permalink: /kb/126/Q126225/
 ---
 
 ## Q126225: PRB: GetGlyphOutLine() Causes GPF Under Chinese Windows 3.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q37223: INFO: Definition of a Domain Error"
-permalink: kb/037/Q37223/
+permalink: /kb/037/Q37223/
 ---
 
 ## Q37223: INFO: Definition of a Domain Error

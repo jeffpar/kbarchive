@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257700: SMS: Advertisements Do Not Run If DC Is Unavailable"
-permalink: kb/257/Q257700/
+permalink: /kb/257/Q257700/
 ---
 
 ## Q257700: SMS: Advertisements Do Not Run If DC Is Unavailable

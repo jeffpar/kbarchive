@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157720: INFO: VSS 5.0 Readme: Sec. 1, Software Installation Information"
-permalink: kb/157/Q157720/
+permalink: /kb/157/Q157720/
 ---
 
 ## Q157720: INFO: VSS 5.0 Readme: Sec. 1, Software Installation Information

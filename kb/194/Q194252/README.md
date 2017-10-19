@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194252: WD97: Table with Borders and Shading Prints Slowly"
-permalink: kb/194/Q194252/
+permalink: /kb/194/Q194252/
 ---
 
 ## Q194252: WD97: Table with Borders and Shading Prints Slowly

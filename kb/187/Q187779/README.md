@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q187779: XADM: Error: Warning [30] Message Contains Duplicate Email Addre"
-permalink: kb/187/Q187779/
+title: "Q187779: XADM: Error: Warning &#91;30&#93; Message Contains Duplicate Email Addre"
+permalink: /kb/187/Q187779/
 ---
 
-## Q187779: XADM: Error: Warning [30] Message Contains Duplicate Email Addre
+## Q187779: XADM: Error: Warning &#91;30&#93; Message Contains Duplicate Email Addre
 
 	Article: Q187779
 	Product(s): Microsoft Exchange

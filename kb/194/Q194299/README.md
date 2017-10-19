@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194299: PRB: RC2151 When Using MFC as a Static Link Library"
-permalink: kb/194/Q194299/
+permalink: /kb/194/Q194299/
 ---
 
 ## Q194299: PRB: RC2151 When Using MFC as a Static Link Library

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166641: Limiting the Size of Outbound Messages"
-permalink: kb/166/Q166641/
+permalink: /kb/166/Q166641/
 ---
 
 ## Q166641: Limiting the Size of Outbound Messages

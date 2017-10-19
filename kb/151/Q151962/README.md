@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151962: System Appears to Stop when Adding Users to Large Global Groups"
-permalink: kb/151/Q151962/
+permalink: /kb/151/Q151962/
 ---
 
 ## Q151962: System Appears to Stop when Adding Users to Large Global Groups

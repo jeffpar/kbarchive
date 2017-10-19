@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131507: PC Mac: Routing Slip and Send Option Unavailable in Word 6.0"
-permalink: kb/131/Q131507/
+permalink: /kb/131/Q131507/
 ---
 
 ## Q131507: PC Mac: Routing Slip and Send Option Unavailable in Word 6.0

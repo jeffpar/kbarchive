@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106275: Most Common Questions and Answers About Microsoft WFWG 3.11"
-permalink: kb/106/Q106275/
+permalink: /kb/106/Q106275/
 ---
 
 ## Q106275: Most Common Questions and Answers About Microsoft WFWG 3.11

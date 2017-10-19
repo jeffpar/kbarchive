@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82858: How to Restore a System After Installing Desktop for Windows"
-permalink: kb/082/Q82858/
+permalink: /kb/082/Q82858/
 ---
 
 ## Q82858: How to Restore a System After Installing Desktop for Windows

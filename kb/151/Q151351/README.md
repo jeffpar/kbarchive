@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151351: FP: Web Permissions Must Be Unique to Be Modified"
-permalink: kb/151/Q151351/
+permalink: /kb/151/Q151351/
 ---
 
 ## Q151351: FP: Web Permissions Must Be Unique to Be Modified

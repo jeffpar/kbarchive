@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131515: Recurring Task Shown Once in Weekly Schedule View"
-permalink: kb/131/Q131515/
+permalink: /kb/131/Q131515/
 ---
 
 ## Q131515: Recurring Task Shown Once in Weekly Schedule View

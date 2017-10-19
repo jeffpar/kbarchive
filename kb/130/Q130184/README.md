@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130184: Changing From Auto to Manual Logon Scripts In SMS"
-permalink: kb/130/Q130184/
+permalink: /kb/130/Q130184/
 ---
 
 ## Q130184: Changing From Auto to Manual Logon Scripts In SMS

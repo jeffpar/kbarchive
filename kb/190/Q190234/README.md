@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190234: PRB: How to Modify the Personal Directory for All New Users"
-permalink: kb/190/Q190234/
+permalink: /kb/190/Q190234/
 ---
 
 ## Q190234: PRB: How to Modify the Personal Directory for All New Users

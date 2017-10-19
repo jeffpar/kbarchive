@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270802: ELL: Virtual Keyboard Menu Disables Pointing Device"
-permalink: kb/270/Q270802/
+permalink: /kb/270/Q270802/
 ---
 
 ## Q270802: ELL: Virtual Keyboard Menu Disables Pointing Device

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312273: XADM: Duplicate Attachments When You Update a Meeting Request"
-permalink: kb/312/Q312273/
+permalink: /kb/312/Q312273/
 ---
 
 ## Q312273: XADM: Duplicate Attachments When You Update a Meeting Request

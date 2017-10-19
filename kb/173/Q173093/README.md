@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173093: BUG: Moving .VBP File Can Corrupt References with Long Paths"
-permalink: kb/173/Q173093/
+permalink: /kb/173/Q173093/
 ---
 
 ## Q173093: BUG: Moving .VBP File Can Corrupt References with Long Paths

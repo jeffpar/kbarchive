@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185574: XADM: Space Requirements for Exchange 5.5 Fault Tolerant Upgrade"
-permalink: kb/185/Q185574/
+permalink: /kb/185/Q185574/
 ---
 
 ## Q185574: XADM: Space Requirements for Exchange 5.5 Fault Tolerant Upgrade

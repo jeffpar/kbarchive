@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173171: ODE97: Failed Internet Synchronization Leaves Files on Server"
-permalink: kb/173/Q173171/
+permalink: /kb/173/Q173171/
 ---
 
 ## Q173171: ODE97: Failed Internet Synchronization Leaves Files on Server

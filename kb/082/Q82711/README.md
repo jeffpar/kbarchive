@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82711: How EMM386 and Windows 3.1 Relate"
-permalink: kb/082/Q82711/
+permalink: /kb/082/Q82711/
 ---
 
 ## Q82711: How EMM386 and Windows 3.1 Relate

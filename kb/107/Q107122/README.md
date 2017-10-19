@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107122: SDLC Link Failure Due to Invalid XIDs"
-permalink: kb/107/Q107122/
+permalink: /kb/107/Q107122/
 ---
 
 ## Q107122: SDLC Link Failure Due to Invalid XIDs

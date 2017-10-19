@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248828: XADM: Dirsync Requestor Updates Not Sent After Upgrade to SP3"
-permalink: kb/248/Q248828/
+permalink: /kb/248/Q248828/
 ---
 
 ## Q248828: XADM: Dirsync Requestor Updates Not Sent After Upgrade to SP3

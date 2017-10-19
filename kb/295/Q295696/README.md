@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295696: XADM: KMS Not Processing New Client Enrollments"
-permalink: kb/295/Q295696/
+permalink: /kb/295/Q295696/
 ---
 
 ## Q295696: XADM: KMS Not Processing New Client Enrollments

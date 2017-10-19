@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170056: XCON: Messages Back Up on MTA with Event 9215 and Event 9318"
-permalink: kb/170/Q170056/
+permalink: /kb/170/Q170056/
 ---
 
 ## Q170056: XCON: Messages Back Up on MTA with Event 9215 and Event 9318

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128093: SMS Client Setup Does Not Install Windows 95 Apps at Start Up"
-permalink: kb/128/Q128093/
+permalink: /kb/128/Q128093/
 ---
 
 ## Q128093: SMS Client Setup Does Not Install Windows 95 Apps at Start Up

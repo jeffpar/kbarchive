@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103717: INFO: Differences Between LINK and LINK32"
-permalink: kb/103/Q103717/
+permalink: /kb/103/Q103717/
 ---
 
 ## Q103717: INFO: Differences Between LINK and LINK32

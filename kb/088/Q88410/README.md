@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88410: Windows Err Msg: The Microsoft Windows 32-Bit Disk..."
-permalink: kb/088/Q88410/
+permalink: /kb/088/Q88410/
 ---
 
 ## Q88410: Windows Err Msg: The Microsoft Windows 32-Bit Disk...

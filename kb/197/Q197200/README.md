@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197200: WD97: &quot;Shrink to Fit&quot; Repaginates Document Several Times"
-permalink: kb/197/Q197200/
+permalink: /kb/197/Q197200/
 ---
 
 ## Q197200: WD97: &quot;Shrink to Fit&quot; Repaginates Document Several Times

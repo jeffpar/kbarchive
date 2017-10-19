@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q44463: HOWTO: Difference Between Arrays and Pointers in C"
-permalink: kb/044/Q44463/
+permalink: /kb/044/Q44463/
 ---
 
 ## Q44463: HOWTO: Difference Between Arrays and Pointers in C

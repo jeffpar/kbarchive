@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141638: PRB: Unable to Change Sorted Property in Form Designer"
-permalink: kb/141/Q141638/
+permalink: /kb/141/Q141638/
 ---
 
 ## Q141638: PRB: Unable to Change Sorted Property in Form Designer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164599: XCLN: Opening an Attachment on Rich Text Field Fails"
-permalink: kb/164/Q164599/
+permalink: /kb/164/Q164599/
 ---
 
 ## Q164599: XCLN: Opening an Attachment on Rich Text Field Fails

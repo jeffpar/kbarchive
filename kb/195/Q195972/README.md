@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195972: BUG: Data Report Not Always in WindowList"
-permalink: kb/195/Q195972/
+permalink: /kb/195/Q195972/
 ---
 
 ## Q195972: BUG: Data Report Not Always in WindowList

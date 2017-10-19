@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285821: Browser Connections Appear to Stop Responding When Accessing IIS"
-permalink: kb/285/Q285821/
+permalink: /kb/285/Q285821/
 ---
 
 ## Q285821: Browser Connections Appear to Stop Responding When Accessing IIS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310731: Zone: Err Msg Connecting to Zone: The Page Cannot Be Displayed"
-permalink: kb/310/Q310731/
+permalink: /kb/310/Q310731/
 ---
 
 ## Q310731: Zone: Err Msg Connecting to Zone: The Page Cannot Be Displayed

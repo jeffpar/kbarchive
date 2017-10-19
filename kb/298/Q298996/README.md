@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298996: Asheron's Call: First Update Takes a Long Time to Download"
-permalink: kb/298/Q298996/
+permalink: /kb/298/Q298996/
 ---
 
 ## Q298996: Asheron's Call: First Update Takes a Long Time to Download

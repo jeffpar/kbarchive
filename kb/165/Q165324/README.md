@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165324: XCON: Basic Site Connector Troubleshooting Checklist"
-permalink: kb/165/Q165324/
+permalink: /kb/165/Q165324/
 ---
 
 ## Q165324: XCON: Basic Site Connector Troubleshooting Checklist

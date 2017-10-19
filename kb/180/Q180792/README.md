@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180792: Print Server Logs Event 4103 as a Stop Event"
-permalink: kb/180/Q180792/
+permalink: /kb/180/Q180792/
 ---
 
 ## Q180792: Print Server Logs Event 4103 as a Stop Event

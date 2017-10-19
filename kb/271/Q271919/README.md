@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271919: Access Volation in Visual Basic Snap-In Designer Run-Time DLL"
-permalink: kb/271/Q271919/
+permalink: /kb/271/Q271919/
 ---
 
 ## Q271919: Access Volation in Visual Basic Snap-In Designer Run-Time DLL

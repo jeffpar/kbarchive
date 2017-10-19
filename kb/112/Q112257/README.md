@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112257: PC Adm: MOVEUSER: Mail Clients Erratic and Workstations Hang"
-permalink: kb/112/Q112257/
+permalink: /kb/112/Q112257/
 ---
 
 ## Q112257: PC Adm: MOVEUSER: Mail Clients Erratic and Workstations Hang

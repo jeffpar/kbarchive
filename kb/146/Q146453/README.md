@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146453: XCLN: Err Msg: An Item Could Not Be Copied..."
-permalink: kb/146/Q146453/
+permalink: /kb/146/Q146453/
 ---
 
 ## Q146453: XCLN: Err Msg: An Item Could Not Be Copied...

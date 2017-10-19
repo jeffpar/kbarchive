@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157455: PRB: Import Wizard Fails Reporting &quot;No Fields Were Found&quot;"
-permalink: kb/157/Q157455/
+permalink: /kb/157/Q157455/
 ---
 
 ## Q157455: PRB: Import Wizard Fails Reporting &quot;No Fields Were Found&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230756: BUG: Windows CE Emulation Serial Communications Bugs"
-permalink: kb/230/Q230756/
+permalink: /kb/230/Q230756/
 ---
 
 ## Q230756: BUG: Windows CE Emulation Serial Communications Bugs

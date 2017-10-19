@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188403: HOWTO: Modify Report Fields Programmatically"
-permalink: kb/188/Q188403/
+permalink: /kb/188/Q188403/
 ---
 
 ## Q188403: HOWTO: Modify Report Fields Programmatically

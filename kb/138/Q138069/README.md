@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138069: How to Address the Master Object Called Global"
-permalink: kb/138/Q138069/
+permalink: /kb/138/Q138069/
 ---
 
 ## Q138069: How to Address the Master Object Called Global

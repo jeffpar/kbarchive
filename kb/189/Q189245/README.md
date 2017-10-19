@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189245: Lmmib2.dll Does Not Support All Objects"
-permalink: kb/189/Q189245/
+permalink: /kb/189/Q189245/
 ---
 
 ## Q189245: Lmmib2.dll Does Not Support All Objects

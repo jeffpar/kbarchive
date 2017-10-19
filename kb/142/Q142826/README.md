@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142826: BUG: DBGrid Does Not Paint Correctly When Aligned"
-permalink: kb/142/Q142826/
+permalink: /kb/142/Q142826/
 ---
 
 ## Q142826: BUG: DBGrid Does Not Paint Correctly When Aligned

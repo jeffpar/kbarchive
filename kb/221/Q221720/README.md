@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221720: FIX: COM Servers Cannot Redimension Arrays Passed By Reference"
-permalink: kb/221/Q221720/
+permalink: /kb/221/Q221720/
 ---
 
 ## Q221720: FIX: COM Servers Cannot Redimension Arrays Passed By Reference

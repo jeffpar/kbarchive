@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318739: SMS: Cannot Update 120-Day Trial Version of SMS with Later SPs"
-permalink: kb/318/Q318739/
+permalink: /kb/318/Q318739/
 ---
 
 ## Q318739: SMS: Cannot Update 120-Day Trial Version of SMS with Later SPs

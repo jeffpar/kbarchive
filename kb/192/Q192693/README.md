@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192693: BUG: License Error with ActiveX Control Added at Run-Time"
-permalink: kb/192/Q192693/
+permalink: /kb/192/Q192693/
 ---
 
 ## Q192693: BUG: License Error with ActiveX Control Added at Run-Time

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295968: WD97: Line Numbers Are Missing from First Page"
-permalink: kb/295/Q295968/
+permalink: /kb/295/Q295968/
 ---
 
 ## Q295968: WD97: Line Numbers Are Missing from First Page

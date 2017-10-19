@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158367: How to Configure Joysticks in Flight Simulator for Windows 95"
-permalink: kb/158/Q158367/
+permalink: /kb/158/Q158367/
 ---
 
 ## Q158367: How to Configure Joysticks in Flight Simulator for Windows 95

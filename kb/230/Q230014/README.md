@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230014: RRAS Does Not Report Domain Name for Users in Accounting Packets"
-permalink: kb/230/Q230014/
+permalink: /kb/230/Q230014/
 ---
 
 ## Q230014: RRAS Does Not Report Domain Name for Users in Accounting Packets

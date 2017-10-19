@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190511: BUG: UserControl Containing Array of Controls Leaks Memory"
-permalink: kb/190/Q190511/
+permalink: /kb/190/Q190511/
 ---
 
 ## Q190511: BUG: UserControl Containing Array of Controls Leaks Memory

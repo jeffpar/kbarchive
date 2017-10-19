@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141343: XCLN: POP3 Requires QUIT Command Before Delete"
-permalink: kb/141/Q141343/
+permalink: /kb/141/Q141343/
 ---
 
 ## Q141343: XCLN: POP3 Requires QUIT Command Before Delete

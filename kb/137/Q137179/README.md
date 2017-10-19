@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137179: PRB: List from Array May Display Incorrect Number Of Elements"
-permalink: kb/137/Q137179/
+permalink: /kb/137/Q137179/
 ---
 
 ## Q137179: PRB: List from Array May Display Incorrect Number Of Elements

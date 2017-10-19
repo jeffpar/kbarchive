@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325782: HIS MMC Does Not Close After You Run Host Security Domain Wizard"
-permalink: kb/325/Q325782/
+permalink: /kb/325/Q325782/
 ---
 
 ## Q325782: HIS MMC Does Not Close After You Run Host Security Domain Wizard

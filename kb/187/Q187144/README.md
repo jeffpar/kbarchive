@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187144: Options Set in Outlook Are Not Used from the Send To Menu"
-permalink: kb/187/Q187144/
+permalink: /kb/187/Q187144/
 ---
 
 ## Q187144: Options Set in Outlook Are Not Used from the Send To Menu

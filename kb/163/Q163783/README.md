@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163783: XCLN: MAPISendMail Function Fails in 32-bit VB Environment"
-permalink: kb/163/Q163783/
+permalink: /kb/163/Q163783/
 ---
 
 ## Q163783: XCLN: MAPISendMail Function Fails in 32-bit VB Environment

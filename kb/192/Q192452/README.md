@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192452: SMS: Installer Doesn't Display Custom Dialog Text on Check Box"
-permalink: kb/192/Q192452/
+permalink: /kb/192/Q192452/
 ---
 
 ## Q192452: SMS: Installer Doesn't Display Custom Dialog Text on Check Box

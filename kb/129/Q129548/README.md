@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129548: Cannot Open Attachment With Spaces In File Name In MSMAIL32"
-permalink: kb/129/Q129548/
+permalink: /kb/129/Q129548/
 ---
 
 ## Q129548: Cannot Open Attachment With Spaces In File Name In MSMAIL32

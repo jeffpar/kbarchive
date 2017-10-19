@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169558: SMS Database Manager Ignores Named Pipe Definition"
-permalink: kb/169/Q169558/
+permalink: /kb/169/Q169558/
 ---
 
 ## Q169558: SMS Database Manager Ignores Named Pipe Definition

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274612: CFS2: Game Minimizes When You Attempt to Calibrate the Joystick"
-permalink: kb/274/Q274612/
+permalink: /kb/274/Q274612/
 ---
 
 ## Q274612: CFS2: Game Minimizes When You Attempt to Calibrate the Joystick

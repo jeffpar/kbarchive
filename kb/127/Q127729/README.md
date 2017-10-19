@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127729: X400: Sample TP4 Configuration Files"
-permalink: kb/127/Q127729/
+permalink: /kb/127/Q127729/
 ---
 
 ## Q127729: X400: Sample TP4 Configuration Files

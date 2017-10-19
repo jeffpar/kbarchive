@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182252: HPLJ 4000N Printer Name Missing from Properties Printing Window"
-permalink: kb/182/Q182252/
+permalink: /kb/182/Q182252/
 ---
 
 ## Q182252: HPLJ 4000N Printer Name Missing from Properties Printing Window

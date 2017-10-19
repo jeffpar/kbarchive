@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151848: Join Microsoft's FoxPro Add-On Component Builder Program"
-permalink: kb/151/Q151848/
+permalink: /kb/151/Q151848/
 ---
 
 ## Q151848: Join Microsoft's FoxPro Add-On Component Builder Program

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92399: Installing Locator Service with LAN Man 2.1 3Com Upgrade"
-permalink: kb/092/Q92399/
+permalink: /kb/092/Q92399/
 ---
 
 ## Q92399: Installing Locator Service with LAN Man 2.1 3Com Upgrade

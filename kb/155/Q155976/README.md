@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155976: PRB: Output from SourceSafe Command Lines Is Truncated"
-permalink: kb/155/Q155976/
+permalink: /kb/155/Q155976/
 ---
 
 ## Q155976: PRB: Output from SourceSafe Command Lines Is Truncated

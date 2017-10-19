@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85039: FFAPI: The Role of FFAPI"
-permalink: kb/085/Q85039/
+permalink: /kb/085/Q85039/
 ---
 
 ## Q85039: FFAPI: The Role of FFAPI

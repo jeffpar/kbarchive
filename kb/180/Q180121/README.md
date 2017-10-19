@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180121: XCLN: Agents Tab Is Missing from Folder Properties"
-permalink: kb/180/Q180121/
+permalink: /kb/180/Q180121/
 ---
 
 ## Q180121: XCLN: Agents Tab Is Missing from Folder Properties

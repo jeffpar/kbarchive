@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104927: Cardfile Printing on LaserJet 4 Prints Double Line"
-permalink: kb/104/Q104927/
+permalink: /kb/104/Q104927/
 ---
 
 ## Q104927: Cardfile Printing on LaserJet 4 Prints Double Line

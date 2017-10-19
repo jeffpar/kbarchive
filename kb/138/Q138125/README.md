@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138125: How to Set Replication Interval to Minimum"
-permalink: kb/138/Q138125/
+permalink: /kb/138/Q138125/
 ---
 
 ## Q138125: How to Set Replication Interval to Minimum

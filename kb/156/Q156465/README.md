@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156465: Writer 2: &quot;CWWEB.DLL Not Found&quot; Error Message"
-permalink: kb/156/Q156465/
+permalink: /kb/156/Q156465/
 ---
 
 ## Q156465: Writer 2: &quot;CWWEB.DLL Not Found&quot; Error Message

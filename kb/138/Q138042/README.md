@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138042: PRB: MOD() with One Negative Number Returns Incorrect Result"
-permalink: kb/138/Q138042/
+permalink: /kb/138/Q138042/
 ---
 
 ## Q138042: PRB: MOD() with One Negative Number Returns Incorrect Result

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133454: PRB: Setup Error: Setup Parse Error in Initialize Pass"
-permalink: kb/133/Q133454/
+permalink: /kb/133/Q133454/
 ---
 
 ## Q133454: PRB: Setup Error: Setup Parse Error in Initialize Pass

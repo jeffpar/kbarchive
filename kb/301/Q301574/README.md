@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301574: SMS: Context Menu Is Missing for Resources"
-permalink: kb/301/Q301574/
+permalink: /kb/301/Q301574/
 ---
 
 ## Q301574: SMS: Context Menu Is Missing for Resources

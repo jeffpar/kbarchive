@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160655: Dumpchk is Version Specific in Windows NT 4.0"
-permalink: kb/160/Q160655/
+permalink: /kb/160/Q160655/
 ---
 
 ## Q160655: Dumpchk is Version Specific in Windows NT 4.0

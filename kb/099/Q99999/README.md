@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99999: INFO: Background Processing in an MFC Application"
-permalink: kb/099/Q99999/
+permalink: /kb/099/Q99999/
 ---
 
 ## Q99999: INFO: Background Processing in an MFC Application

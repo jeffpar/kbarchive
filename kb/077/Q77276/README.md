@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77276: Irwin Magnetics EasyTape Backup with MS-DOS 5.0"
-permalink: kb/077/Q77276/
+permalink: /kb/077/Q77276/
 ---
 
 ## Q77276: Irwin Magnetics EasyTape Backup with MS-DOS 5.0

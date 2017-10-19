@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225196: XCON: MTA Generates Event ID 9318, Windows NT Error Code 1330"
-permalink: kb/225/Q225196/
+permalink: /kb/225/Q225196/
 ---
 
 ## Q225196: XCON: MTA Generates Event ID 9318, Windows NT Error Code 1330

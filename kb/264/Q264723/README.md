@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264723: WD97: How to Suppress Blank Lines During a Mail Merge"
-permalink: kb/264/Q264723/
+permalink: /kb/264/Q264723/
 ---
 
 ## Q264723: WD97: How to Suppress Blank Lines During a Mail Merge

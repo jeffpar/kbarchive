@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q212919: SMS: Adding an MMC Snap-In Using SMS Installer"
-permalink: kb/212/Q212919/
+permalink: /kb/212/Q212919/
 ---
 
 ## Q212919: SMS: Adding an MMC Snap-In Using SMS Installer

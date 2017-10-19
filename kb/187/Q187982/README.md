@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187982: HOWTO: Change Default Properties for Genhtml"
-permalink: kb/187/Q187982/
+permalink: /kb/187/Q187982/
 ---
 
 ## Q187982: HOWTO: Change Default Properties for Genhtml

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282442: XADM: Error Message Occurs When You Run Offline Defragmentation"
-permalink: kb/282/Q282442/
+permalink: /kb/282/Q282442/
 ---
 
 ## Q282442: XADM: Error Message Occurs When You Run Offline Defragmentation

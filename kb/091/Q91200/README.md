@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91200: How To: Setting Up a Resource in Schedule+ with WFWG"
-permalink: kb/091/Q91200/
+permalink: /kb/091/Q91200/
 ---
 
 ## Q91200: How To: Setting Up a Resource in Schedule+ with WFWG

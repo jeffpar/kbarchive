@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70915: UMB Support, Floppy-Based Programs, and Compaqs"
-permalink: kb/070/Q70915/
+permalink: /kb/070/Q70915/
 ---
 
 ## Q70915: UMB Support, Floppy-Based Programs, and Compaqs

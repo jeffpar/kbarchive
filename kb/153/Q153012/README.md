@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153012: XCLN: Wordmail Will Not Resolve Aliases With CTRL+K"
-permalink: kb/153/Q153012/
+permalink: /kb/153/Q153012/
 ---
 
 ## Q153012: XCLN: Wordmail Will Not Resolve Aliases With CTRL+K

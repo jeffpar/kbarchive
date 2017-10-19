@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258246: XFOR: Calendar Connector Not Removed w. Connectivity Components"
-permalink: kb/258/Q258246/
+permalink: /kb/258/Q258246/
 ---
 
 ## Q258246: XFOR: Calendar Connector Not Removed w. Connectivity Components

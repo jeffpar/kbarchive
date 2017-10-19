@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139498: PC NTMMTA: Err Msg: Setup Has Encountered a Problem..."
-permalink: kb/139/Q139498/
+permalink: /kb/139/Q139498/
 ---
 
 ## Q139498: PC NTMMTA: Err Msg: Setup Has Encountered a Problem...

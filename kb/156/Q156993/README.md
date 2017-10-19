@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156993: INFO: STL Sample for the Predicate Version of nth_element Functi"
-permalink: kb/156/Q156993/
+permalink: /kb/156/Q156993/
 ---
 
 ## Q156993: INFO: STL Sample for the Predicate Version of nth_element Functi

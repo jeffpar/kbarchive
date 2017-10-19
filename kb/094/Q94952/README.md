@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94952: Linking Windows-Based Applications and DLLs with /NOI"
-permalink: kb/094/Q94952/
+permalink: /kb/094/Q94952/
 ---
 
 ## Q94952: Linking Windows-Based Applications and DLLs with /NOI

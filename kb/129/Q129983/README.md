@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129983: Compression Statistics Not Displayed in RAS Admin With SP2"
-permalink: kb/129/Q129983/
+permalink: /kb/129/Q129983/
 ---
 
 ## Q129983: Compression Statistics Not Displayed in RAS Admin With SP2

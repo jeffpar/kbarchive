@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184892: Unexpected Behavior After Changing Settings in the DirectX Tool"
-permalink: kb/184/Q184892/
+permalink: /kb/184/Q184892/
 ---
 
 ## Q184892: Unexpected Behavior After Changing Settings in the DirectX Tool

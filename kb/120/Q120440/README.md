@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120440: Cannot Insert Paintbrush OLE Object into SQLWindows on RISC"
-permalink: kb/120/Q120440/
+permalink: /kb/120/Q120440/
 ---
 
 ## Q120440: Cannot Insert Paintbrush OLE Object into SQLWindows on RISC

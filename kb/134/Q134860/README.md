@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134860: Problems with MS-DOS Comm. Programs Using ATI Mouse Driver"
-permalink: kb/134/Q134860/
+permalink: /kb/134/Q134860/
 ---
 
 ## Q134860: Problems with MS-DOS Comm. Programs Using ATI Mouse Driver

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121514: Renaming File in File Manager Appears to the Delete File"
-permalink: kb/121/Q121514/
+permalink: /kb/121/Q121514/
 ---
 
 ## Q121514: Renaming File in File Manager Appears to the Delete File

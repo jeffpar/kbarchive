@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127912: Writer/Artist: Paint Bucket Does Not Fill"
-permalink: kb/127/Q127912/
+permalink: /kb/127/Q127912/
 ---
 
 ## Q127912: Writer/Artist: Paint Bucket Does Not Fill

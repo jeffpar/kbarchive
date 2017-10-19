@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129710: PRB: Visual FoxPro Setup Problems with Disk 2"
-permalink: kb/129/Q129710/
+permalink: /kb/129/Q129710/
 ---
 
 ## Q129710: PRB: Visual FoxPro Setup Problems with Disk 2

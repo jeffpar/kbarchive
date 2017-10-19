@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132209: PC WSPlus: Viewing Free/Busy on Remote Postoffice Via Async"
-permalink: kb/132/Q132209/
+permalink: /kb/132/Q132209/
 ---
 
 ## Q132209: PC WSPlus: Viewing Free/Busy on Remote Postoffice Via Async

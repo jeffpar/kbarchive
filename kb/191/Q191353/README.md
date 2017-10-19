@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191353: SMS: SMS SQL View Generator Not Completely Silent in Unattended"
-permalink: kb/191/Q191353/
+permalink: /kb/191/Q191353/
 ---
 
 ## Q191353: SMS: SMS SQL View Generator Not Completely Silent in Unattended

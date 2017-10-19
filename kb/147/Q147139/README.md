@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147139: Mac Encarta 96 Encyclopedia: General Readme Contents"
-permalink: kb/147/Q147139/
+permalink: /kb/147/Q147139/
 ---
 
 ## Q147139: Mac Encarta 96 Encyclopedia: General Readme Contents

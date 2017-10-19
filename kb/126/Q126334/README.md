@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126334: Turbo Tax Fails to Print Under Windows NT"
-permalink: kb/126/Q126334/
+permalink: /kb/126/Q126334/
 ---
 
 ## Q126334: Turbo Tax Fails to Print Under Windows NT

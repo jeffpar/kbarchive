@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154452: ADT2: ADT Applications Setup Cannot Find MSSetup.dll"
-permalink: kb/154/Q154452/
+permalink: /kb/154/Q154452/
 ---
 
 ## Q154452: ADT2: ADT Applications Setup Cannot Find MSSetup.dll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135667: STOP 1E When Using File Manager and Services for Macintosh (SFM)"
-permalink: kb/135/Q135667/
+permalink: /kb/135/Q135667/
 ---
 
 ## Q135667: STOP 1E When Using File Manager and Services for Macintosh (SFM)

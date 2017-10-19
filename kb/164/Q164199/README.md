@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164199: OSR2 Additional Power Management Features"
-permalink: kb/164/Q164199/
+permalink: /kb/164/Q164199/
 ---
 
 ## Q164199: OSR2 Additional Power Management Features

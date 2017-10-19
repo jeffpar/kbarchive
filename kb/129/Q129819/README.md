@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129819: GPS: Car Bounces or Drifts on Map"
-permalink: kb/129/Q129819/
+permalink: /kb/129/Q129819/
 ---
 
 ## Q129819: GPS: Car Bounces or Drifts on Map

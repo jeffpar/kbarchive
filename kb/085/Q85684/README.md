@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85684: Compressed QBASIC.EXE Gives &quot;Out of Memory&quot; Error with Editor"
-permalink: kb/085/Q85684/
+permalink: /kb/085/Q85684/
 ---
 
 ## Q85684: Compressed QBASIC.EXE Gives &quot;Out of Memory&quot; Error with Editor

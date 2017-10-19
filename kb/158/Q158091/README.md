@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158091: STL Sample for the list::list Functions"
-permalink: kb/158/Q158091/
+permalink: /kb/158/Q158091/
 ---
 
 ## Q158091: STL Sample for the list::list Functions

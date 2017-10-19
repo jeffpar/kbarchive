@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68282: Zenith Windows 3.0 OEM Version and Zenith Portables"
-permalink: kb/068/Q68282/
+permalink: /kb/068/Q68282/
 ---
 
 ## Q68282: Zenith Windows 3.0 OEM Version and Zenith Portables

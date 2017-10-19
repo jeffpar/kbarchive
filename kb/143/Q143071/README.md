@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143071: FIX: CPropertySheet::DoModal() or Create() Causes an Exception"
-permalink: kb/143/Q143071/
+permalink: /kb/143/Q143071/
 ---
 
 ## Q143071: FIX: CPropertySheet::DoModal() or Create() Causes an Exception

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68167: Saving Memory with TSRs and Windows 3.0"
-permalink: kb/068/Q68167/
+permalink: /kb/068/Q68167/
 ---
 
 ## Q68167: Saving Memory with TSRs and Windows 3.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257876: HOWTO: Allow Printing from an Exchange Event Script"
-permalink: kb/257/Q257876/
+permalink: /kb/257/Q257876/
 ---
 
 ## Q257876: HOWTO: Allow Printing from an Exchange Event Script

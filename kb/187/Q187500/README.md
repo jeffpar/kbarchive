@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187500: Unable to Log On to an Upgraded IIS 3.0/SSL Server"
-permalink: kb/187/Q187500/
+permalink: /kb/187/Q187500/
 ---
 
 ## Q187500: Unable to Log On to an Upgraded IIS 3.0/SSL Server

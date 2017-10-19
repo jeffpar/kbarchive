@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321742: Dungeon Siege: How to Troubleshoot Setup Errors"
-permalink: kb/321/Q321742/
+permalink: /kb/321/Q321742/
 ---
 
 ## Q321742: Dungeon Siege: How to Troubleshoot Setup Errors

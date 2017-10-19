@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173820: WD97: Double-Clicking Document Icon Does Not Open Document"
-permalink: kb/173/Q173820/
+permalink: /kb/173/Q173820/
 ---
 
 ## Q173820: WD97: Double-Clicking Document Icon Does Not Open Document

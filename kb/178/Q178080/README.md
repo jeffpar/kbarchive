@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178080: WD97: WordPerfect File Contains Garbled Text If Opened in Word"
-permalink: kb/178/Q178080/
+permalink: /kb/178/Q178080/
 ---
 
 ## Q178080: WD97: WordPerfect File Contains Garbled Text If Opened in Word

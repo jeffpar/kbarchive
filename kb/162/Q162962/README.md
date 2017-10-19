@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162962: ODE97: New Features in MS Office 97 Developer Edition Tools"
-permalink: kb/162/Q162962/
+permalink: /kb/162/Q162962/
 ---
 
 ## Q162962: ODE97: New Features in MS Office 97 Developer Edition Tools

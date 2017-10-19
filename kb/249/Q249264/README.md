@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249264: AC Err Msg: Failed to Establish Connection to the Server"
-permalink: kb/249/Q249264/
+permalink: /kb/249/Q249264/
 ---
 
 ## Q249264: AC Err Msg: Failed to Establish Connection to the Server

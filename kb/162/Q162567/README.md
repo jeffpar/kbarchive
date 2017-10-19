@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162567: Telnet to Port 135 Causes 100 Percent CPU Usage"
-permalink: kb/162/Q162567/
+permalink: /kb/162/Q162567/
 ---
 
 ## Q162567: Telnet to Port 135 Causes 100 Percent CPU Usage

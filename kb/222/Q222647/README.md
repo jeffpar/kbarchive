@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222647: XADM: Extended Characters Cause Directory Replication to Break"
-permalink: kb/222/Q222647/
+permalink: /kb/222/Q222647/
 ---
 
 ## Q222647: XADM: Extended Characters Cause Directory Replication to Break

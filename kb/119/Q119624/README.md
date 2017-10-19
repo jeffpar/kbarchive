@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119624: FAX: Unable to Disable Cover Page and Distribution Box"
-permalink: kb/119/Q119624/
+permalink: /kb/119/Q119624/
 ---
 
 ## Q119624: FAX: Unable to Disable Cover Page and Distribution Box

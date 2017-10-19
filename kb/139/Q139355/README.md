@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139355: WINMGT.H Problems with Win32 Structure Packing"
-permalink: kb/139/Q139355/
+permalink: /kb/139/Q139355/
 ---
 
 ## Q139355: WINMGT.H Problems with Win32 Structure Packing

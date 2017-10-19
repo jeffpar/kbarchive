@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61568: Processing Data Returned from DosQNmPipeSemState()"
-permalink: kb/061/Q61568/
+permalink: /kb/061/Q61568/
 ---
 
 ## Q61568: Processing Data Returned from DosQNmPipeSemState()

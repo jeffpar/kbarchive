@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191927: HOWTO: Use GENHTML to Create HTML from a Visual FoxPro Report"
-permalink: kb/191/Q191927/
+permalink: /kb/191/Q191927/
 ---
 
 ## Q191927: HOWTO: Use GENHTML to Create HTML from a Visual FoxPro Report

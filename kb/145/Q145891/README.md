@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145891: PRB: Combo Box Moves Record Pointer When No Selection Was Made"
-permalink: kb/145/Q145891/
+permalink: /kb/145/Q145891/
 ---
 
 ## Q145891: PRB: Combo Box Moves Record Pointer When No Selection Was Made

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142572: Configuration Backup Tool Does Not Restore All Settings"
-permalink: kb/142/Q142572/
+permalink: /kb/142/Q142572/
 ---
 
 ## Q142572: Configuration Backup Tool Does Not Restore All Settings

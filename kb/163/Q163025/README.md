@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163025: PRB: OLE Error when Inserting OLE Object in VFP for Macintosh"
-permalink: kb/163/Q163025/
+permalink: /kb/163/Q163025/
 ---
 
 ## Q163025: PRB: OLE Error when Inserting OLE Object in VFP for Macintosh

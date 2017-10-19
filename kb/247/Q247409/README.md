@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247409: RD Command with /S and &quot;&quot; Parameters Deletes All Subdirectories"
-permalink: kb/247/Q247409/
+permalink: /kb/247/Q247409/
 ---
 
 ## Q247409: RD Command with /S and &quot;&quot; Parameters Deletes All Subdirectories

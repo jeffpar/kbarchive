@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86674: Windows Err Msg: Standard-Mode Switcher Is Not Running"
-permalink: kb/086/Q86674/
+permalink: /kb/086/Q86674/
 ---
 
 ## Q86674: Windows Err Msg: Standard-Mode Switcher Is Not Running

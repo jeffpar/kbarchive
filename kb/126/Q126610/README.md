@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126610: PC DirSync: Import -X Fails for SNADS Gateway"
-permalink: kb/126/Q126610/
+permalink: /kb/126/Q126610/
 ---
 
 ## Q126610: PC DirSync: Import -X Fails for SNADS Gateway

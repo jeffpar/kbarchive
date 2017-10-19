@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139356: TN3270 Server Service Fails to Start Automatically"
-permalink: kb/139/Q139356/
+permalink: /kb/139/Q139356/
 ---
 
 ## Q139356: TN3270 Server Service Fails to Start Automatically

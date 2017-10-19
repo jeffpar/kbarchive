@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75188: Installing MS-DOS over Emerson ROM DOS"
-permalink: kb/075/Q75188/
+permalink: /kb/075/Q75188/
 ---
 
 ## Q75188: Installing MS-DOS over Emerson ROM DOS

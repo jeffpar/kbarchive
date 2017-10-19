@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134456: Err Msg: ScanDisk Cannot Check This Drive Now Because the..."
-permalink: kb/134/Q134456/
+permalink: /kb/134/Q134456/
 ---
 
 ## Q134456: Err Msg: ScanDisk Cannot Check This Drive Now Because the...

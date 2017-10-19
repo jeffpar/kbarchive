@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192915: PRB: Corrupt Hh.dat Prevents Starting the MSDN Library"
-permalink: kb/192/Q192915/
+permalink: /kb/192/Q192915/
 ---
 
 ## Q192915: PRB: Corrupt Hh.dat Prevents Starting the MSDN Library

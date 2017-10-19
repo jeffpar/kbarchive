@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114779: Overview of Disk Mirroring (RAID Level 1) in Windows NT"
-permalink: kb/114/Q114779/
+permalink: /kb/114/Q114779/
 ---
 
 ## Q114779: Overview of Disk Mirroring (RAID Level 1) in Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158394: Soccer: Player Remains in the Game After Receiving a Red Card"
-permalink: kb/158/Q158394/
+permalink: /kb/158/Q158394/
 ---
 
 ## Q158394: Soccer: Player Remains in the Game After Receiving a Red Card

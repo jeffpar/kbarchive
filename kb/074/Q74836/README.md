@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74836: Specifying HIMEM Handlers for Acer Computers"
-permalink: kb/074/Q74836/
+permalink: /kb/074/Q74836/
 ---
 
 ## Q74836: Specifying HIMEM Handlers for Acer Computers

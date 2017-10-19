@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57812: DOSEDIT Does Not Work in Windows 3.0 Enhanced Mode"
-permalink: kb/057/Q57812/
+permalink: /kb/057/Q57812/
 ---
 
 ## Q57812: DOSEDIT Does Not Work in Windows 3.0 Enhanced Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159549: WD97: Different-Width Cells Appear as Equal Width in Browser"
-permalink: kb/159/Q159549/
+permalink: /kb/159/Q159549/
 ---
 
 ## Q159549: WD97: Different-Width Cells Appear as Equal Width in Browser

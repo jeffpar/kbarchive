@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274093: Microsoft Reader: Progress Bar Does Not Move During Activation"
-permalink: kb/274/Q274093/
+permalink: /kb/274/Q274093/
 ---
 
 ## Q274093: Microsoft Reader: Progress Bar Does Not Move During Activation

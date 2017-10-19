@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89265: Combining Picture Clauses and Functions"
-permalink: kb/089/Q89265/
+permalink: /kb/089/Q89265/
 ---
 
 ## Q89265: Combining Picture Clauses and Functions

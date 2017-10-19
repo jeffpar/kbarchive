@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159217: RESKIT: RshSvc Leaks Process Handles"
-permalink: kb/159/Q159217/
+permalink: /kb/159/Q159217/
 ---
 
 ## Q159217: RESKIT: RshSvc Leaks Process Handles

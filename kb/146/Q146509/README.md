@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146509: XCON: MTA May Stop If Site Connector Is Removed"
-permalink: kb/146/Q146509/
+permalink: /kb/146/Q146509/
 ---
 
 ## Q146509: XCON: MTA May Stop If Site Connector Is Removed

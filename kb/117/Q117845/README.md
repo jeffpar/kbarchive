@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117845: PC Win: Err Msg: MSSPELL.DLL Is Not Compatible"
-permalink: kb/117/Q117845/
+permalink: /kb/117/Q117845/
 ---
 
 ## Q117845: PC Win: Err Msg: MSSPELL.DLL Is Not Compatible

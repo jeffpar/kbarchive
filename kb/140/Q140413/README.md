@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140413: Bypassing Display Settings Test During an Unattended Setup"
-permalink: kb/140/Q140413/
+permalink: /kb/140/Q140413/
 ---
 
 ## Q140413: Bypassing Display Settings Test During an Unattended Setup

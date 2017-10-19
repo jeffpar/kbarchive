@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q28344: PRB: PlayMetaFile() Not as Fast as More Complex Technique"
-permalink: kb/028/Q28344/
+permalink: /kb/028/Q28344/
 ---
 
 ## Q28344: PRB: PlayMetaFile() Not as Fast as More Complex Technique

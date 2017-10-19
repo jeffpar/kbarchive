@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156303: Music Central 97: Minimum System Requirements"
-permalink: kb/156/Q156303/
+permalink: /kb/156/Q156303/
 ---
 
 ## Q156303: Music Central 97: Minimum System Requirements

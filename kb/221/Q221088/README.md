@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221088: PRB: Loading COM DLL from ASP Stops IIS if FoxUser is Corrupted"
-permalink: kb/221/Q221088/
+permalink: /kb/221/Q221088/
 ---
 
 ## Q221088: PRB: Loading COM DLL from ASP Stops IIS if FoxUser is Corrupted

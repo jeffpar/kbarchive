@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157616: WD97: Error Using Documents.Open to Open Non-Word File"
-permalink: kb/157/Q157616/
+permalink: /kb/157/Q157616/
 ---
 
 ## Q157616: WD97: Error Using Documents.Open to Open Non-Word File

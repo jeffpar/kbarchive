@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108589: Flight Simulator 5.0 Manual Installation"
-permalink: kb/108/Q108589/
+permalink: /kb/108/Q108589/
 ---
 
 ## Q108589: Flight Simulator 5.0 Manual Installation

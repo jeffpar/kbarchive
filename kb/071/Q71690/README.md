@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71690: Number of Files in Shared Windows Directory"
-permalink: kb/071/Q71690/
+permalink: /kb/071/Q71690/
 ---
 
 ## Q71690: Number of Files in Shared Windows Directory

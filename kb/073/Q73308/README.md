@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73308: BUG: Class Must Be Listed Last in Full Segment Definitions"
-permalink: kb/073/Q73308/
+permalink: /kb/073/Q73308/
 ---
 
 ## Q73308: BUG: Class Must Be Listed Last in Full Segment Definitions

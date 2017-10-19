@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145980: Node Type And Scope ID Not Updated Upon Lease Renewal"
-permalink: kb/145/Q145980/
+permalink: /kb/145/Q145980/
 ---
 
 ## Q145980: Node Type And Scope ID Not Updated Upon Lease Renewal

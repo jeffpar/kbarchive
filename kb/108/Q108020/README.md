@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108020: Flight Simulator: Boeing 747 CDU Graphic Incorrect"
-permalink: kb/108/Q108020/
+permalink: /kb/108/Q108020/
 ---
 
 ## Q108020: Flight Simulator: Boeing 747 CDU Graphic Incorrect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182576: PRB: NT Client Does Not Support Dynamic Def of Invokable TPs"
-permalink: kb/182/Q182576/
+permalink: /kb/182/Q182576/
 ---
 
 ## Q182576: PRB: NT Client Does Not Support Dynamic Def of Invokable TPs

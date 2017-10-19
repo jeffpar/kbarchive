@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186601: Terminal Server Start/Run Does Not Remember Last Command"
-permalink: kb/186/Q186601/
+permalink: /kb/186/Q186601/
 ---
 
 ## Q186601: Terminal Server Start/Run Does Not Remember Last Command

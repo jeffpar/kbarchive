@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198732: HOWTO: Draw ActiveX Controls with Child Controls in Design Time"
-permalink: kb/198/Q198732/
+permalink: /kb/198/Q198732/
 ---
 
 ## Q198732: HOWTO: Draw ActiveX Controls with Child Controls in Design Time

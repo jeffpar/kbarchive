@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170440: SMS: Remote Controlling a Multihomed Windows NT Client Computer"
-permalink: kb/170/Q170440/
+permalink: /kb/170/Q170440/
 ---
 
 ## Q170440: SMS: Remote Controlling a Multihomed Windows NT Client Computer

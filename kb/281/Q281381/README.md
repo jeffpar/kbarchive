@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281381: Error Message &quot;STOP 0xA&quot; While Using Novell Client Version 4.7"
-permalink: kb/281/Q281381/
+permalink: /kb/281/Q281381/
 ---
 
 ## Q281381: Error Message &quot;STOP 0xA&quot; While Using Novell Client Version 4.7

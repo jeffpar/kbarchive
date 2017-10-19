@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193926: XFOR: TURFDIR Must Be Manually Created for Message Filtering"
-permalink: kb/193/Q193926/
+permalink: /kb/193/Q193926/
 ---
 
 ## Q193926: XFOR: TURFDIR Must Be Manually Created for Message Filtering

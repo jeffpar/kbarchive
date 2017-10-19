@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137003: Event ID 8011 Appears in the BDC Event Viewer"
-permalink: kb/137/Q137003/
+permalink: /kb/137/Q137003/
 ---
 
 ## Q137003: Event ID 8011 Appears in the BDC Event Viewer

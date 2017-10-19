@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257692: FIX: Resource Leak If Control's IMEMode &gt; 0 (Int'l Versions)"
-permalink: kb/257/Q257692/
+permalink: /kb/257/Q257692/
 ---
 
 ## Q257692: FIX: Resource Leak If Control's IMEMode &gt; 0 (Int'l Versions)

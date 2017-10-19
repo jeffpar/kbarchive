@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274627: CFS2 Err Msg: The Pilot Name Contains Illegal Characters..."
-permalink: kb/274/Q274627/
+permalink: /kb/274/Q274627/
 ---
 
 ## Q274627: CFS2 Err Msg: The Pilot Name Contains Illegal Characters...

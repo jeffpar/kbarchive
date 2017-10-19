@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176160: APPC/CPI-C Apps Fail After SNA Server Gets UNBIND Type X'0A'"
-permalink: kb/176/Q176160/
+permalink: /kb/176/Q176160/
 ---
 
 ## Q176160: APPC/CPI-C Apps Fail After SNA Server Gets UNBIND Type X'0A'

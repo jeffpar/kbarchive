@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99295: Harvard Graphics Load Failure Caused by Set Archive Bit"
-permalink: kb/099/Q99295/
+permalink: /kb/099/Q99295/
 ---
 
 ## Q99295: Harvard Graphics Load Failure Caused by Set Archive Bit

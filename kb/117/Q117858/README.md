@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117858: PPT: Simulating Use of More Than One Template in PowerPoint"
-permalink: kb/117/Q117858/
+permalink: /kb/117/Q117858/
 ---
 
 ## Q117858: PPT: Simulating Use of More Than One Template in PowerPoint

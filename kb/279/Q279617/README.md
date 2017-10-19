@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279617: MechWarrior 4 Err Msg: Failed To Create Texture..."
-permalink: kb/279/Q279617/
+permalink: /kb/279/Q279617/
 ---
 
 ## Q279617: MechWarrior 4 Err Msg: Failed To Create Texture...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233445: Business Planner: 20-Second Delay Before Program Starts"
-permalink: kb/233/Q233445/
+permalink: /kb/233/Q233445/
 ---
 
 ## Q233445: Business Planner: 20-Second Delay Before Program Starts

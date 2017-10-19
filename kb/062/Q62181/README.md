@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62181: Hardware Compatibility Questions with Windows 3.0"
-permalink: kb/062/Q62181/
+permalink: /kb/062/Q62181/
 ---
 
 ## Q62181: Hardware Compatibility Questions with Windows 3.0

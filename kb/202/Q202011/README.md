@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202011: XWEB: Meeting Requests in OWA Generate Unread Calendar Items"
-permalink: kb/202/Q202011/
+permalink: /kb/202/Q202011/
 ---
 
 ## Q202011: XWEB: Meeting Requests in OWA Generate Unread Calendar Items

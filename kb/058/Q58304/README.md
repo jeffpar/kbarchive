@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58304: Varityper 11 x 17 Paper Not Supported"
-permalink: kb/058/Q58304/
+permalink: /kb/058/Q58304/
 ---
 
 ## Q58304: Varityper 11 x 17 Paper Not Supported

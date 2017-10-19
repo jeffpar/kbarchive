@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104722: ARCHIVE=TRUE Maintains Files with Archive Attribute Only"
-permalink: kb/104/Q104722/
+permalink: /kb/104/Q104722/
 ---
 
 ## Q104722: ARCHIVE=TRUE Maintains Files with Archive Attribute Only

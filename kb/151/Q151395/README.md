@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151395: XCON: MTA Terminates After Receiving Mail from Zoomit Gateway"
-permalink: kb/151/Q151395/
+permalink: /kb/151/Q151395/
 ---
 
 ## Q151395: XCON: MTA Terminates After Receiving Mail from Zoomit Gateway

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121131: PC MAPI: MAPI_NEW_SESSION Fails to Log in a New Session"
-permalink: kb/121/Q121131/
+permalink: /kb/121/Q121131/
 ---
 
 ## Q121131: PC MAPI: MAPI_NEW_SESSION Fails to Log in a New Session

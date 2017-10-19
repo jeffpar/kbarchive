@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291981: MCSE Training Kit, Designing a Microsoft Windows 2000 Directory"
-permalink: kb/291/Q291981/
+permalink: /kb/291/Q291981/
 ---
 
 ## Q291981: MCSE Training Kit, Designing a Microsoft Windows 2000 Directory

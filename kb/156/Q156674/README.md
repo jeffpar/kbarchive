@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156674: Magic School Bus: Black Screen Before Microsoft Logo with SB 16"
-permalink: kb/156/Q156674/
+permalink: /kb/156/Q156674/
 ---
 
 ## Q156674: Magic School Bus: Black Screen Before Microsoft Logo with SB 16

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156325: STOP: 0x0000001E with HP DeskScan Version 2.3"
-permalink: kb/156/Q156325/
+permalink: /kb/156/Q156325/
 ---
 
 ## Q156325: STOP: 0x0000001E with HP DeskScan Version 2.3

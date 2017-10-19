@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190156: Callback User Interface Allows a Blank Phone Number"
-permalink: kb/190/Q190156/
+permalink: /kb/190/Q190156/
 ---
 
 ## Q190156: Callback User Interface Allows a Blank Phone Number

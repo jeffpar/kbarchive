@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320483: GMT Daylight Savings Time Zone Transition Occurs One Hour Late"
-permalink: kb/320/Q320483/
+permalink: /kb/320/Q320483/
 ---
 
 ## Q320483: GMT Daylight Savings Time Zone Transition Occurs One Hour Late

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193419: IIS Registry Setting ReplyWithHTTP1.1 May Cause Problems"
-permalink: kb/193/Q193419/
+permalink: /kb/193/Q193419/
 ---
 
 ## Q193419: IIS Registry Setting ReplyWithHTTP1.1 May Cause Problems

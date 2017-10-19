@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196765: WD97: &quot;Cannot Open File&quot; Error in INCLUDETEXT Field"
-permalink: kb/196/Q196765/
+permalink: /kb/196/Q196765/
 ---
 
 ## Q196765: WD97: &quot;Cannot Open File&quot; Error in INCLUDETEXT Field

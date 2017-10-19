@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196236: FIX Error Generating Cab Files Error Code 3"
-permalink: kb/196/Q196236/
+permalink: /kb/196/Q196236/
 ---
 
 ## Q196236: FIX Error Generating Cab Files Error Code 3

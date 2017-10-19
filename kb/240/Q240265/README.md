@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240265: Programming MS Office 2000 Web Components Comments &amp; Corrections"
-permalink: kb/240/Q240265/
+permalink: /kb/240/Q240265/
 ---
 
 ## Q240265: Programming MS Office 2000 Web Components Comments &amp; Corrections

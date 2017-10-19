@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149916: NWConv Does Not Convert Volumes Greater than 4 GB"
-permalink: kb/149/Q149916/
+permalink: /kb/149/Q149916/
 ---
 
 ## Q149916: NWConv Does Not Convert Volumes Greater than 4 GB

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268234: INF: Host Requirements for COMTI"
-permalink: kb/268/Q268234/
+permalink: /kb/268/Q268234/
 ---
 
 ## Q268234: INF: Host Requirements for COMTI

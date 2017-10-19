@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152959: XADM: How to Remove the First Exchange Server in a Site"
-permalink: kb/152/Q152959/
+permalink: /kb/152/Q152959/
 ---
 
 ## Q152959: XADM: How to Remove the First Exchange Server in a Site

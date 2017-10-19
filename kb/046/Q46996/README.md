@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q46996: PRB: L1074 Groupname: &quot;Group Larger Than 64K Bytes&quot; Error"
-permalink: kb/046/Q46996/
+permalink: /kb/046/Q46996/
 ---
 
 ## Q46996: PRB: L1074 Groupname: &quot;Group Larger Than 64K Bytes&quot; Error

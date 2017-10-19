@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274177: Visual C++ 6.0 Deluxe Learning Edition Comments and Corrections"
-permalink: kb/274/Q274177/
+permalink: /kb/274/Q274177/
 ---
 
 ## Q274177: Visual C++ 6.0 Deluxe Learning Edition Comments and Corrections

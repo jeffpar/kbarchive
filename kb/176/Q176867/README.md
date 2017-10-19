@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176867: WD97: Incorrect Tab Settings Using WordBasic.FormatTabs"
-permalink: kb/176/Q176867/
+permalink: /kb/176/Q176867/
 ---
 
 ## Q176867: WD97: Incorrect Tab Settings Using WordBasic.FormatTabs

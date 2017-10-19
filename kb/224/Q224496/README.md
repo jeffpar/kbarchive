@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224496: Error Message Using Roaming Profiles Stored on Macintosh Volume"
-permalink: kb/224/Q224496/
+permalink: /kb/224/Q224496/
 ---
 
 ## Q224496: Error Message Using Roaming Profiles Stored on Macintosh Volume

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145906: Non-paged Memory Leak in NWLNKRIP.SYS Causes Event ID 2019"
-permalink: kb/145/Q145906/
+permalink: /kb/145/Q145906/
 ---
 
 ## Q145906: Non-paged Memory Leak in NWLNKRIP.SYS Causes Event ID 2019

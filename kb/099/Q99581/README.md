@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99581: Mac Adm: Incorrect Country Code May Be Displayed"
-permalink: kb/099/Q99581/
+permalink: /kb/099/Q99581/
 ---
 
 ## Q99581: Mac Adm: Incorrect Country Code May Be Displayed

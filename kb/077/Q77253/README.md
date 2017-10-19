@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77253: Unable to Access Output Device in Lotus 1-2-3 for Windows"
-permalink: kb/077/Q77253/
+permalink: /kb/077/Q77253/
 ---
 
 ## Q77253: Unable to Access Output Device in Lotus 1-2-3 for Windows

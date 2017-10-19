@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169035: Windows 95 WinSock Update to Improve Multihoming Support"
-permalink: kb/169/Q169035/
+permalink: /kb/169/Q169035/
 ---
 
 ## Q169035: Windows 95 WinSock Update to Improve Multihoming Support

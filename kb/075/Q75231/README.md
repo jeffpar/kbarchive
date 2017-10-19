@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75231: MS-DOS and CSC Fastcache SCSI Controllers"
-permalink: kb/075/Q75231/
+permalink: /kb/075/Q75231/
 ---
 
 ## Q75231: MS-DOS and CSC Fastcache SCSI Controllers

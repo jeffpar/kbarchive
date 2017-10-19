@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86092: PC Win: Highlighting OLE Objects Within Message"
-permalink: kb/086/Q86092/
+permalink: /kb/086/Q86092/
 ---
 
 ## Q86092: PC Win: Highlighting OLE Objects Within Message

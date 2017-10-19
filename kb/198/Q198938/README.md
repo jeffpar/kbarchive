@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198938: PRB: MSFLexGrid Redraw May Not Function Correctly"
-permalink: kb/198/Q198938/
+permalink: /kb/198/Q198938/
 ---
 
 ## Q198938: PRB: MSFLexGrid Redraw May Not Function Correctly

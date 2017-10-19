@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222997: XADM: Importing a Large CSV Hangs and Eventually Consumes All Me"
-permalink: kb/222/Q222997/
+permalink: /kb/222/Q222997/
 ---
 
 ## Q222997: XADM: Importing a Large CSV Hangs and Eventually Consumes All Me

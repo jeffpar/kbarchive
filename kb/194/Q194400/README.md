@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194400: FP98: Command-Line Arguments for Server Administrator"
-permalink: kb/194/Q194400/
+permalink: /kb/194/Q194400/
 ---
 
 ## Q194400: FP98: Command-Line Arguments for Server Administrator

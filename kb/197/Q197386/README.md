@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197386: Random STOPs Using Cirrus Logic Display Adapters &amp; pcANYWHERE"
-permalink: kb/197/Q197386/
+permalink: /kb/197/Q197386/
 ---
 
 ## Q197386: Random STOPs Using Cirrus Logic Display Adapters &amp; pcANYWHERE

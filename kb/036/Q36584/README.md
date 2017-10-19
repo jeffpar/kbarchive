@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q36584: PRB: PostMessage() Returns 0, Indicating Failure"
-permalink: kb/036/Q36584/
+permalink: /kb/036/Q36584/
 ---
 
 ## Q36584: PRB: PostMessage() Returns 0, Indicating Failure

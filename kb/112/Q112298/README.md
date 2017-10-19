@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112298: DOC: Port I/O with inp() and outp() Fails on Windows NT"
-permalink: kb/112/Q112298/
+permalink: /kb/112/Q112298/
 ---
 
 ## Q112298: DOC: Port I/O with inp() and outp() Fails on Windows NT

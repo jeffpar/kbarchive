@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85166: ATI 8514 Ultra Hangs Windows 3.1 in 800 x 600 Mode"
-permalink: kb/085/Q85166/
+permalink: /kb/085/Q85166/
 ---
 
 ## Q85166: ATI 8514 Ultra Hangs Windows 3.1 in 800 x 600 Mode

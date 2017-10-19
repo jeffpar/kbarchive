@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75247: LOCAL Requires Language Specifier on .MODEL"
-permalink: kb/075/Q75247/
+permalink: /kb/075/Q75247/
 ---
 
 ## Q75247: LOCAL Requires Language Specifier on .MODEL

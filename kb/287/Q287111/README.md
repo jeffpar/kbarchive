@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287111: PRB: SET COMPATIBLE ON Causes Error with Gendbc.prg"
-permalink: kb/287/Q287111/
+permalink: /kb/287/Q287111/
 ---
 
 ## Q287111: PRB: SET COMPATIBLE ON Causes Error with Gendbc.prg

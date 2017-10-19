@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153404: XCLN: How to Allow Others User Access to Your Inbox"
-permalink: kb/153/Q153404/
+permalink: /kb/153/Q153404/
 ---
 
 ## Q153404: XCLN: How to Allow Others User Access to Your Inbox

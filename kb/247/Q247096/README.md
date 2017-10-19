@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247096: Tips for Making HTMLA (HTML Administrator) Secure"
-permalink: kb/247/Q247096/
+permalink: /kb/247/Q247096/
 ---
 
 ## Q247096: Tips for Making HTMLA (HTML Administrator) Secure

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223165: FIX: GetIDsOfNames( ) Returns DISP_E_UNKNOWNNAME for Named Args"
-permalink: kb/223/Q223165/
+permalink: /kb/223/Q223165/
 ---
 
 ## Q223165: FIX: GetIDsOfNames( ) Returns DISP_E_UNKNOWNNAME for Named Args

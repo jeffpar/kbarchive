@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241391: HOWTO: Use the Win32 API FormatMessage Function with VFP"
-permalink: kb/241/Q241391/
+permalink: /kb/241/Q241391/
 ---
 
 ## Q241391: HOWTO: Use the Win32 API FormatMessage Function with VFP

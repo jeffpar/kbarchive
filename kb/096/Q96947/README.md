@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96947: How To: Using a NetWare Drive Without a Login Script in WFWG"
-permalink: kb/096/Q96947/
+permalink: /kb/096/Q96947/
 ---
 
 ## Q96947: How To: Using a NetWare Drive Without a Login Script in WFWG

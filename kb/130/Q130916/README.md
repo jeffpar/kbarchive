@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130916: Dr. Watson Error Appears When Using Arcada Backup Exec 5.0"
-permalink: kb/130/Q130916/
+permalink: /kb/130/Q130916/
 ---
 
 ## Q130916: Dr. Watson Error Appears When Using Arcada Backup Exec 5.0

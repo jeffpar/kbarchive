@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178715: Zone: How to Obtain Help with the Zone Web Site"
-permalink: kb/178/Q178715/
+permalink: /kb/178/Q178715/
 ---
 
 ## Q178715: Zone: How to Obtain Help with the Zone Web Site

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150995: How to set User Manager Settings for Multiple Users"
-permalink: kb/150/Q150995/
+permalink: /kb/150/Q150995/
 ---
 
 ## Q150995: How to set User Manager Settings for Multiple Users

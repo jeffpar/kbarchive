@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201390: PRB: CDynamicAccesor Does Not Handle String Columns Correctly"
-permalink: kb/201/Q201390/
+permalink: /kb/201/Q201390/
 ---
 
 ## Q201390: PRB: CDynamicAccesor Does Not Handle String Columns Correctly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130995: RAS:&quot;Error 1326&quot; or &quot;Access Denied&quot; Connecting to Remote Share"
-permalink: kb/130/Q130995/
+permalink: /kb/130/Q130995/
 ---
 
 ## Q130995: RAS:&quot;Error 1326&quot; or &quot;Access Denied&quot; Connecting to Remote Share

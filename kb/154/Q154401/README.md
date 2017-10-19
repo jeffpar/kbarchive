@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154401: Errors on NetWare File Server When Using NWSERVER"
-permalink: kb/154/Q154401/
+permalink: /kb/154/Q154401/
 ---
 
 ## Q154401: Errors on NetWare File Server When Using NWSERVER

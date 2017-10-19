@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293110: Internet Standards And Protocols Comments and Corrections"
-permalink: kb/293/Q293110/
+permalink: /kb/293/Q293110/
 ---
 
 ## Q293110: Internet Standards And Protocols Comments and Corrections

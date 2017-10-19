@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155600: XFOR: Misleading Dialog During Restore Using NTBackup"
-permalink: kb/155/Q155600/
+permalink: /kb/155/Q155600/
 ---
 
 ## Q155600: XFOR: Misleading Dialog During Restore Using NTBackup

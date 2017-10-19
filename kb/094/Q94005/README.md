@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94005: Notepad Does Not Save Margin Settings"
-permalink: kb/094/Q94005/
+permalink: /kb/094/Q94005/
 ---
 
 ## Q94005: Notepad Does Not Save Margin Settings

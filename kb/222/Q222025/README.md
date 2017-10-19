@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222025: Attachmate Advanced ISCA Adapter General Information"
-permalink: kb/222/Q222025/
+permalink: /kb/222/Q222025/
 ---
 
 ## Q222025: Attachmate Advanced ISCA Adapter General Information

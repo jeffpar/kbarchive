@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146033: XCLN: Horizontal Scroll bar in EFD May Cover Text Box"
-permalink: kb/146/Q146033/
+permalink: /kb/146/Q146033/
 ---
 
 ## Q146033: XCLN: Horizontal Scroll bar in EFD May Cover Text Box

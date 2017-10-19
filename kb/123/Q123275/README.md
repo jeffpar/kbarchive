@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123275: Extra Keys on Brazilian Keyboard Do Not Work at Command Prompt"
-permalink: kb/123/Q123275/
+permalink: /kb/123/Q123275/
 ---
 
 ## Q123275: Extra Keys on Brazilian Keyboard Do Not Work at Command Prompt

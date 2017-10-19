@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200549: EVG99: Labels Do Not Appear When You Browse the Map"
-permalink: kb/200/Q200549/
+permalink: /kb/200/Q200549/
 ---
 
 ## Q200549: EVG99: Labels Do Not Appear When You Browse the Map

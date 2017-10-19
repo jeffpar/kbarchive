@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189927: PRB: MsGraph 8.0 Causes Fatal Exception Error"
-permalink: kb/189/Q189927/
+permalink: /kb/189/Q189927/
 ---
 
 ## Q189927: PRB: MsGraph 8.0 Causes Fatal Exception Error

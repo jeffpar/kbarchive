@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195666: XCLN: Macintosh Outlook Ends Unexpectedly with Type 2 Error"
-permalink: kb/195/Q195666/
+permalink: /kb/195/Q195666/
 ---
 
 ## Q195666: XCLN: Macintosh Outlook Ends Unexpectedly with Type 2 Error

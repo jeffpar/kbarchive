@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182665: XADM: Exchange Migration Wizard Fails with 7026 error"
-permalink: kb/182/Q182665/
+permalink: /kb/182/Q182665/
 ---
 
 ## Q182665: XADM: Exchange Migration Wizard Fails with 7026 error

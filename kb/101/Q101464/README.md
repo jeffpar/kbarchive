@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101464: Bookshelf 1991 Err Msg: Close Font Progress"
-permalink: kb/101/Q101464/
+permalink: /kb/101/Q101464/
 ---
 
 ## Q101464: Bookshelf 1991 Err Msg: Close Font Progress

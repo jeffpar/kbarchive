@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173771: WD97: Check Links Reports Broken Links If Connection Lost or Bad"
-permalink: kb/173/Q173771/
+permalink: /kb/173/Q173771/
 ---
 
 ## Q173771: WD97: Check Links Reports Broken Links If Connection Lost or Bad

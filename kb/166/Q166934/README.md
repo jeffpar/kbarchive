@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166934: PRB: Err: &quot;Variable Not Found&quot; Attempting to Export"
-permalink: kb/166/Q166934/
+permalink: /kb/166/Q166934/
 ---
 
 ## Q166934: PRB: Err: &quot;Variable Not Found&quot; Attempting to Export

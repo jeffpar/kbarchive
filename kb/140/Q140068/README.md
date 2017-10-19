@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140068: PC WRmt: How to Install Supplemental Modem Scripts"
-permalink: kb/140/Q140068/
+permalink: /kb/140/Q140068/
 ---
 
 ## Q140068: PC WRmt: How to Install Supplemental Modem Scripts

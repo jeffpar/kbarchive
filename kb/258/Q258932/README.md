@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258932: PRB: Server Object Error &quot;ASP 0177:800401f3&quot; with WebClass"
-permalink: kb/258/Q258932/
+permalink: /kb/258/Q258932/
 ---
 
 ## Q258932: PRB: Server Object Error &quot;ASP 0177:800401f3&quot; with WebClass

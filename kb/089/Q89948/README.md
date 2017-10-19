@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89948: Sound Finder Does Not Start Minimized"
-permalink: kb/089/Q89948/
+permalink: /kb/089/Q89948/
 ---
 
 ## Q89948: Sound Finder Does Not Start Minimized

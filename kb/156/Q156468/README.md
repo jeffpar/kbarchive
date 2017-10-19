@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156468: Writer 2: You Can Enter Anything As Web Link"
-permalink: kb/156/Q156468/
+permalink: /kb/156/Q156468/
 ---
 
 ## Q156468: Writer 2: You Can Enter Anything As Web Link

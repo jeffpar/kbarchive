@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87351: BUG: Scrolling DIB DC Fails"
-permalink: kb/087/Q87351/
+permalink: /kb/087/Q87351/
 ---
 
 ## Q87351: BUG: Scrolling DIB DC Fails

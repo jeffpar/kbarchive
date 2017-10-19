@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148718: PC DirSync: Err Msg: NSDA-&lt;process&gt; Missed its Run Window"
-permalink: kb/148/Q148718/
+permalink: /kb/148/Q148718/
 ---
 
 ## Q148718: PC DirSync: Err Msg: NSDA-&lt;process&gt; Missed its Run Window

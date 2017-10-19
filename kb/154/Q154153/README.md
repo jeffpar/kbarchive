@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154153: SMS 1.2 Allows SNMP Setup of SMS 1.1 Child Sites"
-permalink: kb/154/Q154153/
+permalink: /kb/154/Q154153/
 ---
 
 ## Q154153: SMS 1.2 Allows SNMP Setup of SMS 1.1 Child Sites

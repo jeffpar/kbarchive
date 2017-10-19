@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234565: PowerPoint 2000 At a Glance Comments and Corrections"
-permalink: kb/234/Q234565/
+permalink: /kb/234/Q234565/
 ---
 
 ## Q234565: PowerPoint 2000 At a Glance Comments and Corrections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178757: XADM: Store Logs Error 1203 When You Delete a Mailbox"
-permalink: kb/178/Q178757/
+permalink: /kb/178/Q178757/
 ---
 
 ## Q178757: XADM: Store Logs Error 1203 When You Delete a Mailbox

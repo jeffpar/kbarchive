@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160284: XFOR: Messages to 246 Character Addresses Return with NDR"
-permalink: kb/160/Q160284/
+permalink: /kb/160/Q160284/
 ---
 
 ## Q160284: XFOR: Messages to 246 Character Addresses Return with NDR

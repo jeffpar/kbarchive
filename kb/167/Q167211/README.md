@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167211: PRB: Cmdlines.txt Does Not Recognize Parameters Surrounded by Qu"
-permalink: kb/167/Q167211/
+permalink: /kb/167/Q167211/
 ---
 
 ## Q167211: PRB: Cmdlines.txt Does Not Recognize Parameters Surrounded by Qu

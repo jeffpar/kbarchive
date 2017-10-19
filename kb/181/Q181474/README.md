@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181474: SAMPLE: Cdplyr.exe Demonstrates Using the mciSendString Function"
-permalink: kb/181/Q181474/
+permalink: /kb/181/Q181474/
 ---
 
 ## Q181474: SAMPLE: Cdplyr.exe Demonstrates Using the mciSendString Function

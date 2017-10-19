@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173770: WD97: Check Links Finds Some Redirected Links Are Invalid"
-permalink: kb/173/Q173770/
+permalink: /kb/173/Q173770/
 ---
 
 ## Q173770: WD97: Check Links Finds Some Redirected Links Are Invalid

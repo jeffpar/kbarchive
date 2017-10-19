@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218880: ASP Request.BinaryRead Method Causes 100% CPU Utilization"
-permalink: kb/218/Q218880/
+permalink: /kb/218/Q218880/
 ---
 
 ## Q218880: ASP Request.BinaryRead Method Causes 100% CPU Utilization

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242804: FS2000/CFS: Cannot Kill Engine by Turning Off Fuel Tank Selector"
-permalink: kb/242/Q242804/
+permalink: /kb/242/Q242804/
 ---
 
 ## Q242804: FS2000/CFS: Cannot Kill Engine by Turning Off Fuel Tank Selector

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83317: Use Mouse Driver 8.1 to Outline Mouse Pointer in MS-DOS Shell"
-permalink: kb/083/Q83317/
+permalink: /kb/083/Q83317/
 ---
 
 ## Q83317: Use Mouse Driver 8.1 to Outline Mouse Pointer in MS-DOS Shell

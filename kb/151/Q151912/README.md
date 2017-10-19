@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151912: NWRedir Returns Cached File Size Information"
-permalink: kb/151/Q151912/
+permalink: /kb/151/Q151912/
 ---
 
 ## Q151912: NWRedir Returns Cached File Size Information

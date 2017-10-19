@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254722: FTP Download Session Fails When FTP Control Connection Is Closed"
-permalink: kb/254/Q254722/
+permalink: /kb/254/Q254722/
 ---
 
 ## Q254722: FTP Download Session Fails When FTP Control Connection Is Closed

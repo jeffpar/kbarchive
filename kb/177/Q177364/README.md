@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177364: IntelliMouse Wheel Stops Working After Installing Service Pack 3"
-permalink: kb/177/Q177364/
+permalink: /kb/177/Q177364/
 ---
 
 ## Q177364: IntelliMouse Wheel Stops Working After Installing Service Pack 3

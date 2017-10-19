@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107105: PROFS: File Format of Message Sent from PROFS to MS Mail"
-permalink: kb/107/Q107105/
+permalink: /kb/107/Q107105/
 ---
 
 ## Q107105: PROFS: File Format of Message Sent from PROFS to MS Mail

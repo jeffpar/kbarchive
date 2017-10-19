@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193258: XADM: DBCS Text in Bulleted List Not Displayed Properly"
-permalink: kb/193/Q193258/
+permalink: /kb/193/Q193258/
 ---
 
 ## Q193258: XADM: DBCS Text in Bulleted List Not Displayed Properly

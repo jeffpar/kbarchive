@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191370: Slow Network Performance with Terminal Server"
-permalink: kb/191/Q191370/
+permalink: /kb/191/Q191370/
 ---
 
 ## Q191370: Slow Network Performance with Terminal Server

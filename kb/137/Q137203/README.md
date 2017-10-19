@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137203: XADM: Controlling Intra-Site Replication"
-permalink: kb/137/Q137203/
+permalink: /kb/137/Q137203/
 ---
 
 ## Q137203: XADM: Controlling Intra-Site Replication

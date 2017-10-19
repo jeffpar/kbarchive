@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80125: INFO: Terminating the Creation of an MDI Child Window"
-permalink: kb/080/Q80125/
+permalink: /kb/080/Q80125/
 ---
 
 ## Q80125: INFO: Terminating the Creation of an MDI Child Window

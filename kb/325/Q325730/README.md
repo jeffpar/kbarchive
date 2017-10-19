@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325730: Games: &quot;Stop&quot; Error Message That References Nv4_disp.dll"
-permalink: kb/325/Q325730/
+permalink: /kb/325/Q325730/
 ---
 
 ## Q325730: Games: &quot;Stop&quot; Error Message That References Nv4_disp.dll

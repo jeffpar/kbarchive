@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196491: XADM: Attributes Not Available to LDAP Users with Admin Rights"
-permalink: kb/196/Q196491/
+permalink: /kb/196/Q196491/
 ---
 
 ## Q196491: XADM: Attributes Not Available to LDAP Users with Admin Rights

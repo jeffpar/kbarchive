@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257337: Supported Transfer Mode in IIS"
-permalink: kb/257/Q257337/
+permalink: /kb/257/Q257337/
 ---
 
 ## Q257337: Supported Transfer Mode in IIS

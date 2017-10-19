@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57969: Flight Simulator 4.00: World War I Scenery Problems"
-permalink: kb/057/Q57969/
+permalink: /kb/057/Q57969/
 ---
 
 ## Q57969: Flight Simulator 4.00: World War I Scenery Problems

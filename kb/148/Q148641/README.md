@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148641: DOC: Generic Categories of ODBC Errors"
-permalink: kb/148/Q148641/
+permalink: /kb/148/Q148641/
 ---
 
 ## Q148641: DOC: Generic Categories of ODBC Errors

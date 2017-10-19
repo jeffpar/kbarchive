@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245068: Err Msg: Access Is Denied. You Don't Have Permissions Or..."
-permalink: kb/245/Q245068/
+permalink: /kb/245/Q245068/
 ---
 
 ## Q245068: Err Msg: Access Is Denied. You Don't Have Permissions Or...

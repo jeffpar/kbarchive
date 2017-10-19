@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137756: PPT: Errors in PowerPoint Due to Multiple User Profiles"
-permalink: kb/137/Q137756/
+permalink: /kb/137/Q137756/
 ---
 
 ## Q137756: PPT: Errors in PowerPoint Due to Multiple User Profiles

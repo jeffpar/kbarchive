@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73816: IBM PC Support (AS/400) Requires PCSWIN.COM Patch"
-permalink: kb/073/Q73816/
+permalink: /kb/073/Q73816/
 ---
 
 ## Q73816: IBM PC Support (AS/400) Requires PCSWIN.COM Patch

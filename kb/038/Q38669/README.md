@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q38669: Mac DOS: Incompatible with Phoenix BIOS Ver. 2.72 or Earlier"
-permalink: kb/038/Q38669/
+permalink: /kb/038/Q38669/
 ---
 
 ## Q38669: Mac DOS: Incompatible with Phoenix BIOS Ver. 2.72 or Earlier

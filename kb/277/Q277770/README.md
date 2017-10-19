@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277770: XADM: Event 7000 Occurs Attempting to Start Exchange Service"
-permalink: kb/277/Q277770/
+permalink: /kb/277/Q277770/
 ---
 
 ## Q277770: XADM: Event 7000 Occurs Attempting to Start Exchange Service

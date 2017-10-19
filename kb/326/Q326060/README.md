@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326060: XADM: How to Move a Connection Agreement to Another Server"
-permalink: kb/326/Q326060/
+permalink: /kb/326/Q326060/
 ---
 
 ## Q326060: XADM: How to Move a Connection Agreement to Another Server

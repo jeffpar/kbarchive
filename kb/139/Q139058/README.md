@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139058: Battery Shutdown Signal Delayed Using Windows NT UPS Service"
-permalink: kb/139/Q139058/
+permalink: /kb/139/Q139058/
 ---
 
 ## Q139058: Battery Shutdown Signal Delayed Using Windows NT UPS Service

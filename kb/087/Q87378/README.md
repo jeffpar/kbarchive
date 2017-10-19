@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87378: PC DB: ATT Directory Structure"
-permalink: kb/087/Q87378/
+permalink: /kb/087/Q87378/
 ---
 
 ## Q87378: PC DB: ATT Directory Structure

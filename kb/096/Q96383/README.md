@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96383: AddStor SSUTIL Utility Reports MS-DOS 6.x as Version 5.0"
-permalink: kb/096/Q96383/
+permalink: /kb/096/Q96383/
 ---
 
 ## Q96383: AddStor SSUTIL Utility Reports MS-DOS 6.x as Version 5.0

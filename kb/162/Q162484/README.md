@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162484: XWEB: Unable to Rename Folders with ASC"
-permalink: kb/162/Q162484/
+permalink: /kb/162/Q162484/
 ---
 
 ## Q162484: XWEB: Unable to Rename Folders with ASC

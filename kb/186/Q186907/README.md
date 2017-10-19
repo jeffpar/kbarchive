@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186907: HOWTO: Set Up Visual C++ to Use the HTML Help API"
-permalink: kb/186/Q186907/
+permalink: /kb/186/Q186907/
 ---
 
 ## Q186907: HOWTO: Set Up Visual C++ to Use the HTML Help API

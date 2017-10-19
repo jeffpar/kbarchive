@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164868: FIX: Maximizing and Restoring Print Preview Disables Menu Bars"
-permalink: kb/164/Q164868/
+permalink: /kb/164/Q164868/
 ---
 
 ## Q164868: FIX: Maximizing and Restoring Print Preview Disables Menu Bars

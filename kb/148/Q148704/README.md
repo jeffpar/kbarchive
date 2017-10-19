@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148704: FIX: Template Keyword Can't Be Used Inside Class Declarations"
-permalink: kb/148/Q148704/
+permalink: /kb/148/Q148704/
 ---
 
 ## Q148704: FIX: Template Keyword Can't Be Used Inside Class Declarations

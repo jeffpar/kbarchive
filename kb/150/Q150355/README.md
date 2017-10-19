@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150355: Windows NT Nonresponsive during NTFS Directory Traversal"
-permalink: kb/150/Q150355/
+permalink: /kb/150/Q150355/
 ---
 
 ## Q150355: Windows NT Nonresponsive during NTFS Directory Traversal

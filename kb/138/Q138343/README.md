@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138343: INFO: New Features of Ddconv.exe in Visual SourceSafe"
-permalink: kb/138/Q138343/
+permalink: /kb/138/Q138343/
 ---
 
 ## Q138343: INFO: New Features of Ddconv.exe in Visual SourceSafe

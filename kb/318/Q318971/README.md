@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318971: FIX: CTOT() Function Returns Blank Value on an XML DateTime Expr"
-permalink: kb/318/Q318971/
+permalink: /kb/318/Q318971/
 ---
 
 ## Q318971: FIX: CTOT() Function Returns Blank Value on an XML DateTime Expr

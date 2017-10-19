@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81592: Timer2.exe - Timers and Timing in Microsoft Windows"
-permalink: kb/081/Q81592/
+permalink: /kb/081/Q81592/
 ---
 
 ## Q81592: Timer2.exe - Timers and Timing in Microsoft Windows

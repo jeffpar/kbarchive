@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189514: Multicast Settings Are Not Displayed"
-permalink: kb/189/Q189514/
+permalink: /kb/189/Q189514/
 ---
 
 ## Q189514: Multicast Settings Are Not Displayed

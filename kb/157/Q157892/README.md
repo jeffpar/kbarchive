@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157892: WD97: Change to Address Font Not Saved from Envelopes Tab"
-permalink: kb/157/Q157892/
+permalink: /kb/157/Q157892/
 ---
 
 ## Q157892: WD97: Change to Address Font Not Saved from Envelopes Tab

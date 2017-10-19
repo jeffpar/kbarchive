@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111023: Windows 3.1 Help Files on Current Issues"
-permalink: kb/111/Q111023/
+permalink: /kb/111/Q111023/
 ---
 
 ## Q111023: Windows 3.1 Help Files on Current Issues

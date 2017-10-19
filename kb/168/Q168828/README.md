@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168828: PRB: Gauge Control Fill Area Flickers"
-permalink: kb/168/Q168828/
+permalink: /kb/168/Q168828/
 ---
 
 ## Q168828: PRB: Gauge Control Fill Area Flickers

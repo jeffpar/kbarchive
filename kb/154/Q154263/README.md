@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154263: Frank Lloyd Wright: Unable to Play Flyby Movie"
-permalink: kb/154/Q154263/
+permalink: /kb/154/Q154263/
 ---
 
 ## Q154263: Frank Lloyd Wright: Unable to Play Flyby Movie

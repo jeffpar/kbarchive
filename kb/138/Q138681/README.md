@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138681: PRB: Windows Flash and Disappear in Dialog-Based Applications"
-permalink: kb/138/Q138681/
+permalink: /kb/138/Q138681/
 ---
 
 ## Q138681: PRB: Windows Flash and Disappear in Dialog-Based Applications

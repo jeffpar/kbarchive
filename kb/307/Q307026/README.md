@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307026: SMS: Duplicate Resources Appear in Collections"
-permalink: kb/307/Q307026/
+permalink: /kb/307/Q307026/
 ---
 
 ## Q307026: SMS: Duplicate Resources Appear in Collections

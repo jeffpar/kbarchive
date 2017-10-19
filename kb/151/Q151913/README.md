@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151913: Decimal Character Appears as a Comma"
-permalink: kb/151/Q151913/
+permalink: /kb/151/Q151913/
 ---
 
 ## Q151913: Decimal Character Appears as a Comma

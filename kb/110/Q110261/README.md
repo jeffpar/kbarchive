@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110261: Airframe Damage from Stress Causes Aircraft to Explode"
-permalink: kb/110/Q110261/
+permalink: /kb/110/Q110261/
 ---
 
 ## Q110261: Airframe Damage from Stress Causes Aircraft to Explode

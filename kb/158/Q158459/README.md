@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158459: One Drive's Directory List Is Replaced by That of Another"
-permalink: kb/158/Q158459/
+permalink: /kb/158/Q158459/
 ---
 
 ## Q158459: One Drive's Directory List Is Replaced by That of Another

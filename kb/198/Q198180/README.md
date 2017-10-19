@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198180: Unable to Correlate SLI_OPEN Request With SLI BIND Routine"
-permalink: kb/198/Q198180/
+permalink: /kb/198/Q198180/
 ---
 
 ## Q198180: Unable to Correlate SLI_OPEN Request With SLI BIND Routine

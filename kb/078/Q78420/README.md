@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78420: Heath/Zenith XT 151 Is Incompatible with MS-DOS 5.x or 6.x"
-permalink: kb/078/Q78420/
+permalink: /kb/078/Q78420/
 ---
 
 ## Q78420: Heath/Zenith XT 151 Is Incompatible with MS-DOS 5.x or 6.x

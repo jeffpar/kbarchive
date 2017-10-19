@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125645: FIX: Edit Control in Property Page Does Not Get Return Keys"
-permalink: kb/125/Q125645/
+permalink: /kb/125/Q125645/
 ---
 
 ## Q125645: FIX: Edit Control in Property Page Does Not Get Return Keys

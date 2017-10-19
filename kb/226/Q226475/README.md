@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226475: Setup Choices Vary Depending on Previous Installation of IIS/NTO"
-permalink: kb/226/Q226475/
+permalink: /kb/226/Q226475/
 ---
 
 ## Q226475: Setup Choices Vary Depending on Previous Installation of IIS/NTO

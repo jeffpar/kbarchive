@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q203004: SMS: How to Create Secondary Site from Files on Local Hard Disk"
-permalink: kb/203/Q203004/
+permalink: /kb/203/Q203004/
 ---
 
 ## Q203004: SMS: How to Create Secondary Site from Files on Local Hard Disk

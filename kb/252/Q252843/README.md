@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252843: XCON: MTA Generates a Large Number of Event ID 4293"
-permalink: kb/252/Q252843/
+permalink: /kb/252/Q252843/
 ---
 
 ## Q252843: XCON: MTA Generates a Large Number of Event ID 4293

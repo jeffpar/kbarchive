@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182657: SNA Server May Use Max BTU Larger Than Connection Can Support"
-permalink: kb/182/Q182657/
+permalink: /kb/182/Q182657/
 ---
 
 ## Q182657: SNA Server May Use Max BTU Larger Than Connection Can Support

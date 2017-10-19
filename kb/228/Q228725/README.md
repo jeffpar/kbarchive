@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228725: XFOR: IMS Outbound Queue Backlog - SMTP Error 499"
-permalink: kb/228/Q228725/
+permalink: /kb/228/Q228725/
 ---
 
 ## Q228725: XFOR: IMS Outbound Queue Backlog - SMTP Error 499

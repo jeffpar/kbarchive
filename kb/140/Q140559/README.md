@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140559: PPT: File Size Differs Between Macintosh and Windows Versions"
-permalink: kb/140/Q140559/
+permalink: /kb/140/Q140559/
 ---
 
 ## Q140559: PPT: File Size Differs Between Macintosh and Windows Versions

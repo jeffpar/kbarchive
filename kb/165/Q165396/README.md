@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165396: XFOR: Err Msg: Message Contains Duplicate E-mail Address"
-permalink: kb/165/Q165396/
+permalink: /kb/165/Q165396/
 ---
 
 ## Q165396: XFOR: Err Msg: Message Contains Duplicate E-mail Address

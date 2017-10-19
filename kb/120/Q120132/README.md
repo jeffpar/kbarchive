@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120132: Installing an Unlisted RAS Modem"
-permalink: kb/120/Q120132/
+permalink: /kb/120/Q120132/
 ---
 
 ## Q120132: Installing an Unlisted RAS Modem

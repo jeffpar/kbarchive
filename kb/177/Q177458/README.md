@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177458: Unattended Installation of S3 Virge VGA Adapter"
-permalink: kb/177/Q177458/
+permalink: /kb/177/Q177458/
 ---
 
 ## Q177458: Unattended Installation of S3 Virge VGA Adapter

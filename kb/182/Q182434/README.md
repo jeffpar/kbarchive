@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182434: PRB: ActiveX Control's Stock Error Event Uses SCODE Value"
-permalink: kb/182/Q182434/
+permalink: /kb/182/Q182434/
 ---
 
 ## Q182434: PRB: ActiveX Control's Stock Error Event Uses SCODE Value

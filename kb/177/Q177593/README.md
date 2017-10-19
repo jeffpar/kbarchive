@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177593: PRB: Reuse of rdoQuery Object Causes &quot;40006&quot; Unexpected Error"
-permalink: kb/177/Q177593/
+permalink: /kb/177/Q177593/
 ---
 
 ## Q177593: PRB: Reuse of rdoQuery Object Causes &quot;40006&quot; Unexpected Error

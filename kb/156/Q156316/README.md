@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156316: Inability to Open Files May Be Caused by Bad Registry Key"
-permalink: kb/156/Q156316/
+permalink: /kb/156/Q156316/
 ---
 
 ## Q156316: Inability to Open Files May Be Caused by Bad Registry Key

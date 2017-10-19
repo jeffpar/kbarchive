@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92435: ASMClock.exe Uses MASM 6.0 to Program in Windows"
-permalink: kb/092/Q92435/
+permalink: /kb/092/Q92435/
 ---
 
 ## Q92435: ASMClock.exe Uses MASM 6.0 to Program in Windows

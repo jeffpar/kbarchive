@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254349: XADM: Rehoming Public Folders Adds Number to End of SMTP Address"
-permalink: kb/254/Q254349/
+permalink: /kb/254/Q254349/
 ---
 
 ## Q254349: XADM: Rehoming Public Folders Adds Number to End of SMTP Address

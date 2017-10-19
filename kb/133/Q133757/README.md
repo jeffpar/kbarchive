@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133757: Performance Monitor SQLServer-Log Object Corrupted"
-permalink: kb/133/Q133757/
+permalink: /kb/133/Q133757/
 ---
 
 ## Q133757: Performance Monitor SQLServer-Log Object Corrupted

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67490: Problem with Printer Setup from Calendar, Cardfile, Notepad"
-permalink: kb/067/Q67490/
+permalink: /kb/067/Q67490/
 ---
 
 ## Q67490: Problem with Printer Setup from Calendar, Cardfile, Notepad

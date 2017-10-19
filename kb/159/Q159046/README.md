@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159046: Ntbackup.exe Does Not Work with Removable-Media Drives"
-permalink: kb/159/Q159046/
+permalink: /kb/159/Q159046/
 ---
 
 ## Q159046: Ntbackup.exe Does Not Work with Removable-Media Drives

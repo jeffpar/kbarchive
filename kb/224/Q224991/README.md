@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224991: XFOR: DXA Does Not Start After Upgrading Windows NT to SP4"
-permalink: kb/224/Q224991/
+permalink: /kb/224/Q224991/
 ---
 
 ## Q224991: XFOR: DXA Does Not Start After Upgrading Windows NT to SP4

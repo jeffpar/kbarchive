@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153237: File Manager Unable to Copy Long File Names to Write-Only Volume"
-permalink: kb/153/Q153237/
+permalink: /kb/153/Q153237/
 ---
 
 ## Q153237: File Manager Unable to Copy Long File Names to Write-Only Volume

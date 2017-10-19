@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160249: Duplicate Chats Appear in Favorite Chats List"
-permalink: kb/160/Q160249/
+permalink: /kb/160/Q160249/
 ---
 
 ## Q160249: Duplicate Chats Appear in Favorite Chats List

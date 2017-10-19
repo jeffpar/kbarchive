@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137911: Mac Srv: How to Configure One Way Address Propagation"
-permalink: kb/137/Q137911/
+permalink: /kb/137/Q137911/
 ---
 
 ## Q137911: Mac Srv: How to Configure One Way Address Propagation

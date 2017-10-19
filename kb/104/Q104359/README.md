@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104359: PC Win: Sharing PAB with Other Users"
-permalink: kb/104/Q104359/
+permalink: /kb/104/Q104359/
 ---
 
 ## Q104359: PC Win: Sharing PAB with Other Users

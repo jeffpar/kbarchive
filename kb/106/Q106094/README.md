@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106094: Err Msg: ScanDisk Encountered a Data Error While Reading (128)"
-permalink: kb/106/Q106094/
+permalink: /kb/106/Q106094/
 ---
 
 ## Q106094: Err Msg: ScanDisk Encountered a Data Error While Reading (128)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170399: INFO: Explanation of Vb50.vbp in the Os&#92;ShellNew Directory"
-permalink: kb/170/Q170399/
+permalink: /kb/170/Q170399/
 ---
 
 ## Q170399: INFO: Explanation of Vb50.vbp in the Os&#92;ShellNew Directory

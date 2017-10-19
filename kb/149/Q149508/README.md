@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149508: PRB: SETTEXTPOSITION() Does Not Scroll Window to New Location"
-permalink: kb/149/Q149508/
+permalink: /kb/149/Q149508/
 ---
 
 ## Q149508: PRB: SETTEXTPOSITION() Does Not Scroll Window to New Location

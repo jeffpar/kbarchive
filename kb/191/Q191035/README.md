@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191035: BUG: Changes to WebClass Templates Are Not Always Detected"
-permalink: kb/191/Q191035/
+permalink: /kb/191/Q191035/
 ---
 
 ## Q191035: BUG: Changes to WebClass Templates Are Not Always Detected

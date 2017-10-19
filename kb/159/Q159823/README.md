@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159823: HOWTO: Call Clipboard API from Visual Basic 4.0"
-permalink: kb/159/Q159823/
+permalink: /kb/159/Q159823/
 ---
 
 ## Q159823: HOWTO: Call Clipboard API from Visual Basic 4.0

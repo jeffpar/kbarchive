@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121545: Compaq Prosignia Hangs on GUI Portion of Setup"
-permalink: kb/121/Q121545/
+permalink: /kb/121/Q121545/
 ---
 
 ## Q121545: Compaq Prosignia Hangs on GUI Portion of Setup

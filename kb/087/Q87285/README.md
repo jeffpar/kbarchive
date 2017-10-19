@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87285: Windows Err Msg: One of the Library Files Needed..."
-permalink: kb/087/Q87285/
+permalink: /kb/087/Q87285/
 ---
 
 ## Q87285: Windows Err Msg: One of the Library Files Needed...

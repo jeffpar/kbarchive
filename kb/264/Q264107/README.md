@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264107: XADM: No Automatic Move Mailbox in 5.5 Administrator Program"
-permalink: kb/264/Q264107/
+permalink: /kb/264/Q264107/
 ---
 
 ## Q264107: XADM: No Automatic Move Mailbox in 5.5 Administrator Program

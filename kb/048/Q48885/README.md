@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48885: INFO: Newline Character &#92;n Equivalent to ASCII Linefeed (0x0A)"
-permalink: kb/048/Q48885/
+permalink: /kb/048/Q48885/
 ---
 
 ## Q48885: INFO: Newline Character &#92;n Equivalent to ASCII Linefeed (0x0A)

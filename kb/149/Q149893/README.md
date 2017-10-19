@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149893: XCLN: System Memory Expands After Starting Exchange Client"
-permalink: kb/149/Q149893/
+permalink: /kb/149/Q149893/
 ---
 
 ## Q149893: XCLN: System Memory Expands After Starting Exchange Client

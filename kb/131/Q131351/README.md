@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131351: IBM Lan Streamer Error 5009"
-permalink: kb/131/Q131351/
+permalink: /kb/131/Q131351/
 ---
 
 ## Q131351: IBM Lan Streamer Error 5009

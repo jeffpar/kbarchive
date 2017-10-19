@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103804: 3COM: Access Component Is Installed by Gateway Disk"
-permalink: kb/103/Q103804/
+permalink: /kb/103/Q103804/
 ---
 
 ## Q103804: 3COM: Access Component Is Installed by Gateway Disk

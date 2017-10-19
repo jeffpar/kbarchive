@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177084: FS98/2000: Description of VOR Functionality"
-permalink: kb/177/Q177084/
+permalink: /kb/177/Q177084/
 ---
 
 ## Q177084: FS98/2000: Description of VOR Functionality

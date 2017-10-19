@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149099: MSN Interactive Teen: Minimum System Requirements"
-permalink: kb/149/Q149099/
+permalink: /kb/149/Q149099/
 ---
 
 ## Q149099: MSN Interactive Teen: Minimum System Requirements

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62128: Windowed MS-DOS NIF Safety Tip"
-permalink: kb/062/Q62128/
+permalink: /kb/062/Q62128/
 ---
 
 ## Q62128: Windowed MS-DOS NIF Safety Tip

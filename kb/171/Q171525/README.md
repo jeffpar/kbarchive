@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171525: FIX: ListView Causes IPF When Accessing ColumnHeaders Property"
-permalink: kb/171/Q171525/
+permalink: /kb/171/Q171525/
 ---
 
 ## Q171525: FIX: ListView Causes IPF When Accessing ColumnHeaders Property

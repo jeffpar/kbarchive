@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163318: Helpfile Word Lists May Be Rebuilt After Daylight Savings Change"
-permalink: kb/163/Q163318/
+permalink: /kb/163/Q163318/
 ---
 
 ## Q163318: Helpfile Word Lists May Be Rebuilt After Daylight Savings Change

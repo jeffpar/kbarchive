@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184532: XADM: Description of Directory Export/Import Event IDs"
-permalink: kb/184/Q184532/
+permalink: /kb/184/Q184532/
 ---
 
 ## Q184532: XADM: Description of Directory Export/Import Event IDs

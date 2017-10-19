@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223083: FIX: Changes to MSHFlexgrid Adding/Removing Records Not Vis"
-permalink: kb/223/Q223083/
+permalink: /kb/223/Q223083/
 ---
 
 ## Q223083: FIX: Changes to MSHFlexgrid Adding/Removing Records Not Vis

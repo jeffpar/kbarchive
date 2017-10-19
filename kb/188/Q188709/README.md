@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188709: Vfpcom.exe Using COM Language Enhancements in VFP 6.0"
-permalink: kb/188/Q188709/
+permalink: /kb/188/Q188709/
 ---
 
 ## Q188709: Vfpcom.exe Using COM Language Enhancements in VFP 6.0

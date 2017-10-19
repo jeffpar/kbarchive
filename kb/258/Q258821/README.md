@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258821: MapPoint 2001: Map Is Not Printed Properly"
-permalink: kb/258/Q258821/
+permalink: /kb/258/Q258821/
 ---
 
 ## Q258821: MapPoint 2001: Map Is Not Printed Properly

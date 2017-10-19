@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158452: How to Configure Windows 95 Remoteboot on Windows NT 4.0"
-permalink: kb/158/Q158452/
+permalink: /kb/158/Q158452/
 ---
 
 ## Q158452: How to Configure Windows 95 Remoteboot on Windows NT 4.0

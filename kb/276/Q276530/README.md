@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276530: Golf 2001: Golf Quits Unexpectedly After the Splash Screen"
-permalink: kb/276/Q276530/
+permalink: /kb/276/Q276530/
 ---
 
 ## Q276530: Golf 2001: Golf Quits Unexpectedly After the Splash Screen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197084: Cannot Access Shares on a FPNW Server using Client32 v2.5 -3.02"
-permalink: kb/197/Q197084/
+permalink: /kb/197/Q197084/
 ---
 
 ## Q197084: Cannot Access Shares on a FPNW Server using Client32 v2.5 -3.02

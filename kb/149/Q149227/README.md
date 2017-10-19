@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149227: XSRV: Using the 1.0b Connection Gateway with Microsoft Exchange"
-permalink: kb/149/Q149227/
+permalink: /kb/149/Q149227/
 ---
 
 ## Q149227: XSRV: Using the 1.0b Connection Gateway with Microsoft Exchange

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170841: Unable to Print Right Margin on A5 Paper and Envelope Sizes"
-permalink: kb/170/Q170841/
+permalink: /kb/170/Q170841/
 ---
 
 ## Q170841: Unable to Print Right Margin on A5 Paper and Envelope Sizes

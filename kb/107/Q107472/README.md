@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107472: Fax Monitor Is Idle on CAS Modems While Receiving Faxes"
-permalink: kb/107/Q107472/
+permalink: /kb/107/Q107472/
 ---
 
 ## Q107472: Fax Monitor Is Idle on CAS Modems While Receiving Faxes

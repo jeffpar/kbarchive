@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68161: HP DeskJet 500 Printer Driver Available from Hewlett-Packard"
-permalink: kb/068/Q68161/
+permalink: /kb/068/Q68161/
 ---
 
 ## Q68161: HP DeskJet 500 Printer Driver Available from Hewlett-Packard

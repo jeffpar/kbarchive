@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238155: HOWTO: Create a New Database in Visual SourceSafe"
-permalink: kb/238/Q238155/
+permalink: /kb/238/Q238155/
 ---
 
 ## Q238155: HOWTO: Create a New Database in Visual SourceSafe

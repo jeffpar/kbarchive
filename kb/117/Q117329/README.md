@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117329: PC Adm: Running IMPORT.EXE under OS/2 with the -ST Parameter"
-permalink: kb/117/Q117329/
+permalink: /kb/117/Q117329/
 ---
 
 ## Q117329: PC Adm: Running IMPORT.EXE under OS/2 with the -ST Parameter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170633: XWEB: Requirements For Internet Explorer File Attachment Support"
-permalink: kb/170/Q170633/
+permalink: /kb/170/Q170633/
 ---
 
 ## Q170633: XWEB: Requirements For Internet Explorer File Attachment Support

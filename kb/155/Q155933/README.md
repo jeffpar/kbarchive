@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155933: BUG: Setting Grid's MousePointer Property to 14 Causes Error"
-permalink: kb/155/Q155933/
+permalink: /kb/155/Q155933/
 ---
 
 ## Q155933: BUG: Setting Grid's MousePointer Property to 14 Causes Error

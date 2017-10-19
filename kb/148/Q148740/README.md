@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148740: PRB: Invalid Page Fault in Kernel32.dll Error"
-permalink: kb/148/Q148740/
+permalink: /kb/148/Q148740/
 ---
 
 ## Q148740: PRB: Invalid Page Fault in Kernel32.dll Error

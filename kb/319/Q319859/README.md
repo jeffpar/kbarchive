@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319859: Networking An MSN DSL Internet Connection To Multiple Computers"
-permalink: kb/319/Q319859/
+permalink: /kb/319/Q319859/
 ---
 
 ## Q319859: Networking An MSN DSL Internet Connection To Multiple Computers

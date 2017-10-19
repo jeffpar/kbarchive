@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130795: Unable to Open Compressed Files &amp; Directories in Window NT 3.5"
-permalink: kb/130/Q130795/
+permalink: /kb/130/Q130795/
 ---
 
 ## Q130795: Unable to Open Compressed Files &amp; Directories in Window NT 3.5

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149673: Unexpected Reinstallation of SMS Client with a New SMSID"
-permalink: kb/149/Q149673/
+permalink: /kb/149/Q149673/
 ---
 
 ## Q149673: Unexpected Reinstallation of SMS Client with a New SMSID

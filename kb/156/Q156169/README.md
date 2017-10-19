@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156169: HOWTO: Ignore Parameters in View or Query If Blank"
-permalink: kb/156/Q156169/
+permalink: /kb/156/Q156169/
 ---
 
 ## Q156169: HOWTO: Ignore Parameters in View or Query If Blank

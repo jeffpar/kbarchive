@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127821: Problems Using Event Viewer from Windows for Workgroups"
-permalink: kb/127/Q127821/
+permalink: /kb/127/Q127821/
 ---
 
 ## Q127821: Problems Using Event Viewer from Windows for Workgroups

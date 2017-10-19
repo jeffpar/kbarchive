@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171312: CD-Key Missing from NT Evaluation Editions"
-permalink: kb/171/Q171312/
+permalink: /kb/171/Q171312/
 ---
 
 ## Q171312: CD-Key Missing from NT Evaluation Editions

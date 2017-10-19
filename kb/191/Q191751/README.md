@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191751: Smoothing Fonts Disabled Using ETO_GLYPHINDEX"
-permalink: kb/191/Q191751/
+permalink: /kb/191/Q191751/
 ---
 
 ## Q191751: Smoothing Fonts Disabled Using ETO_GLYPHINDEX

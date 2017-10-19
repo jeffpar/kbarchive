@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241507: Ftp.exe Does Not Pass the ACCT Parameter from a Script"
-permalink: kb/241/Q241507/
+permalink: /kb/241/Q241507/
 ---
 
 ## Q241507: Ftp.exe Does Not Pass the ACCT Parameter from a Script

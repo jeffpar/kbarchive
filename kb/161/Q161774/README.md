@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161774: Snalink.exe (SNADLC/802.2) Access Violation in Sbpa4snd()"
-permalink: kb/161/Q161774/
+permalink: /kb/161/Q161774/
 ---
 
 ## Q161774: Snalink.exe (SNADLC/802.2) Access Violation in Sbpa4snd()

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257171: BUG: Double Brackets in SQL Statement with MFC May Cause Error"
-permalink: kb/257/Q257171/
+permalink: /kb/257/Q257171/
 ---
 
 ## Q257171: BUG: Double Brackets in SQL Statement with MFC May Cause Error

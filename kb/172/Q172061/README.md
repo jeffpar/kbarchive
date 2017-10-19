@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172061: Browsing Domains Using SNA Win95 UDConfig Does Not Work"
-permalink: kb/172/Q172061/
+permalink: /kb/172/Q172061/
 ---
 
 ## Q172061: Browsing Domains Using SNA Win95 UDConfig Does Not Work

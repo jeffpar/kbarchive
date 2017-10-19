@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82334: WordPerfect 5.1 Mouse Problems in Window Mode"
-permalink: kb/082/Q82334/
+permalink: /kb/082/Q82334/
 ---
 
 ## Q82334: WordPerfect 5.1 Mouse Problems in Window Mode

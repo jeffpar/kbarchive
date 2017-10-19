@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114247: PC MAPI: Background on Common Messaging Calls (CMC)"
-permalink: kb/114/Q114247/
+permalink: /kb/114/Q114247/
 ---
 
 ## Q114247: PC MAPI: Background on Common Messaging Calls (CMC)

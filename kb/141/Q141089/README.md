@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141089: Artist: Oval Drawing Tool Produces Extra Lines or Ovals"
-permalink: kb/141/Q141089/
+permalink: /kb/141/Q141089/
 ---
 
 ## Q141089: Artist: Oval Drawing Tool Produces Extra Lines or Ovals

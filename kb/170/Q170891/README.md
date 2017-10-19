@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170891: WD97: Macro to Count Sections in a Document"
-permalink: kb/170/Q170891/
+permalink: /kb/170/Q170891/
 ---
 
 ## Q170891: WD97: Macro to Count Sections in a Document

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138438: HOWTO: Display Child Records Based on a Parent Record"
-permalink: kb/138/Q138438/
+permalink: /kb/138/Q138438/
 ---
 
 ## Q138438: HOWTO: Display Child Records Based on a Parent Record

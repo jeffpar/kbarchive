@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170498: FP: Access Permissions Applied at Web-level Not Per File Basis"
-permalink: kb/170/Q170498/
+permalink: /kb/170/Q170498/
 ---
 
 ## Q170498: FP: Access Permissions Applied at Web-level Not Per File Basis

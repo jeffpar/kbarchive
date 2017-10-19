@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96335: Bookshelf Atlas: Inconsistent National Anthem Titles"
-permalink: kb/096/Q96335/
+permalink: /kb/096/Q96335/
 ---
 
 ## Q96335: Bookshelf Atlas: Inconsistent National Anthem Titles

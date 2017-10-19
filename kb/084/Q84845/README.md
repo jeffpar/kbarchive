@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84845: Setting Up Shared Program Groups"
-permalink: kb/084/Q84845/
+permalink: /kb/084/Q84845/
 ---
 
 ## Q84845: Setting Up Shared Program Groups

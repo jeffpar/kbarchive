@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130720: MS-DOS-Based Programs Do Not Use Entire Screen"
-permalink: kb/130/Q130720/
+permalink: /kb/130/Q130720/
 ---
 
 ## Q130720: MS-DOS-Based Programs Do Not Use Entire Screen

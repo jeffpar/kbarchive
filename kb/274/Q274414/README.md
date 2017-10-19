@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274414: &quot;Log On As&quot; Box Is Unavailable in the Services Tool on BDC"
-permalink: kb/274/Q274414/
+permalink: /kb/274/Q274414/
 ---
 
 ## Q274414: &quot;Log On As&quot; Box Is Unavailable in the Services Tool on BDC

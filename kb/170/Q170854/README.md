@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170854: FTP Login Fails with Err. Msg: Home Directory Inaccessible"
-permalink: kb/170/Q170854/
+permalink: /kb/170/Q170854/
 ---
 
 ## Q170854: FTP Login Fails with Err. Msg: Home Directory Inaccessible

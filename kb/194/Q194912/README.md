@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194912: FIX: Add Method of Forms Collection Fails in Executable"
-permalink: kb/194/Q194912/
+permalink: /kb/194/Q194912/
 ---
 
 ## Q194912: FIX: Add Method of Forms Collection Fails in Executable

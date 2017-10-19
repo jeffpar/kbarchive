@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101521: INF: When and How an ODBC Driver DLL Gets Unloaded"
-permalink: kb/101/Q101521/
+permalink: /kb/101/Q101521/
 ---
 
 ## Q101521: INF: When and How an ODBC Driver DLL Gets Unloaded

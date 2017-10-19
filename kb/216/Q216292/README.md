@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216292: XFOR: Reasons for &quot;Unable to logon...&quot; Error Message"
-permalink: kb/216/Q216292/
+permalink: /kb/216/Q216292/
 ---
 
 ## Q216292: XFOR: Reasons for &quot;Unable to logon...&quot; Error Message

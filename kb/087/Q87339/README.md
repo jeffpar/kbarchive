@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87339: Specify Correct Display Installing Chinese Windows 3.0"
-permalink: kb/087/Q87339/
+permalink: /kb/087/Q87339/
 ---
 
 ## Q87339: Specify Correct Display Installing Chinese Windows 3.0

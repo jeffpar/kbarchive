@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175525: SMS: Win 95 Clients Hang When Shut Down Using Remote Control"
-permalink: kb/175/Q175525/
+permalink: /kb/175/Q175525/
 ---
 
 ## Q175525: SMS: Win 95 Clients Hang When Shut Down Using Remote Control

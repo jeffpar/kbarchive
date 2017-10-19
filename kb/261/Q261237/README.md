@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261237: Visual FoxPro Sample: Selects Printer Using Kodak Image Control"
-permalink: kb/261/Q261237/
+permalink: /kb/261/Q261237/
 ---
 
 ## Q261237: Visual FoxPro Sample: Selects Printer Using Kodak Image Control

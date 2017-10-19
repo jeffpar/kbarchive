@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198510: Broadcast Messages Blocked by OLE Threads"
-permalink: kb/198/Q198510/
+permalink: /kb/198/Q198510/
 ---
 
 ## Q198510: Broadcast Messages Blocked by OLE Threads

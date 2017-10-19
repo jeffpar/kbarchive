@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117888: FIX: Relative Include Files May Not be a Dependency"
-permalink: kb/117/Q117888/
+permalink: /kb/117/Q117888/
 ---
 
 ## Q117888: FIX: Relative Include Files May Not be a Dependency

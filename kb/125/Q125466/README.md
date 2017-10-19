@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125466: Strauss: Manual Installation Instructions"
-permalink: kb/125/Q125466/
+permalink: /kb/125/Q125466/
 ---
 
 ## Q125466: Strauss: Manual Installation Instructions

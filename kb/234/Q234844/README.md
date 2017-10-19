@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234844: Incorrect PID Installing Microsoft Certified Partner Welcome Kit"
-permalink: kb/234/Q234844/
+permalink: /kb/234/Q234844/
 ---
 
 ## Q234844: Incorrect PID Installing Microsoft Certified Partner Welcome Kit

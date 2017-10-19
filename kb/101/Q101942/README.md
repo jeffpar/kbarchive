@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101942: Err Msg: Network Error 2240 from Windows for Workgroups"
-permalink: kb/101/Q101942/
+permalink: /kb/101/Q101942/
 ---
 
 ## Q101942: Err Msg: Network Error 2240 from Windows for Workgroups

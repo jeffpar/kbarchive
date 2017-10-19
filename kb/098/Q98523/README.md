@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98523: Using Direct Access 5.1 with MS-DOS 6.0 or later"
-permalink: kb/098/Q98523/
+permalink: /kb/098/Q98523/
 ---
 
 ## Q98523: Using Direct Access 5.1 with MS-DOS 6.0 or later

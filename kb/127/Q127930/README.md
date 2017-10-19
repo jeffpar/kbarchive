@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127930: Paint Shop Pro Screen Capture Does Not Work Correctly"
-permalink: kb/127/Q127930/
+permalink: /kb/127/Q127930/
 ---
 
 ## Q127930: Paint Shop Pro Screen Capture Does Not Work Correctly

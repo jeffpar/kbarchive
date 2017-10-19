@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149191: XADM: Maximum Number of Recipients in a Distribution List"
-permalink: kb/149/Q149191/
+permalink: /kb/149/Q149191/
 ---
 
 ## Q149191: XADM: Maximum Number of Recipients in a Distribution List

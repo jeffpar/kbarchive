@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112258: PC Win: Err Msg: There Was An Error Opening the Specified File"
-permalink: kb/112/Q112258/
+permalink: /kb/112/Q112258/
 ---
 
 ## Q112258: PC Win: Err Msg: There Was An Error Opening the Specified File

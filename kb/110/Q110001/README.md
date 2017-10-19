@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110001: BUG: WRITE Statement Not Shifting Window Focus"
-permalink: kb/110/Q110001/
+permalink: /kb/110/Q110001/
 ---
 
 ## Q110001: BUG: WRITE Statement Not Shifting Window Focus

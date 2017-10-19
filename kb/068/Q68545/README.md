@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68545: File Save As Check Boxes in Windows Write"
-permalink: kb/068/Q68545/
+permalink: /kb/068/Q68545/
 ---
 
 ## Q68545: File Save As Check Boxes in Windows Write

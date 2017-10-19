@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167107: FIX: Missing Controls on the SSTAB Control Tabs"
-permalink: kb/167/Q167107/
+permalink: /kb/167/Q167107/
 ---
 
 ## Q167107: FIX: Missing Controls on the SSTAB Control Tabs

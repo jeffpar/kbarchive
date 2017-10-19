@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194618: INFO: Fast Get Only Works When Compare = Checksum"
-permalink: kb/194/Q194618/
+permalink: /kb/194/Q194618/
 ---
 
 ## Q194618: INFO: Fast Get Only Works When Compare = Checksum

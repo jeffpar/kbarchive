@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162770: Access Violation in Spooler When Using Notepad"
-permalink: kb/162/Q162770/
+permalink: /kb/162/Q162770/
 ---
 
 ## Q162770: Access Violation in Spooler When Using Notepad

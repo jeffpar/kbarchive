@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238141: SMS: Client Installation Adds Multiple Path Statements"
-permalink: kb/238/Q238141/
+permalink: /kb/238/Q238141/
 ---
 
 ## Q238141: SMS: Client Installation Adds Multiple Path Statements

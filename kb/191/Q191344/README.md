@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191344: PRB: Base Table Fields Changed with Remote View"
-permalink: kb/191/Q191344/
+permalink: /kb/191/Q191344/
 ---
 
 ## Q191344: PRB: Base Table Fields Changed with Remote View

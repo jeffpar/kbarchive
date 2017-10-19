@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81139: SAMPLE: BkGnd.exe Demonstrates Background Processing in Windows"
-permalink: kb/081/Q81139/
+permalink: /kb/081/Q81139/
 ---
 
 ## Q81139: SAMPLE: BkGnd.exe Demonstrates Background Processing in Windows

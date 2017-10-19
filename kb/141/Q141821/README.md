@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141821: 3D Movie Maker: How to Improve Performance"
-permalink: kb/141/Q141821/
+permalink: /kb/141/Q141821/
 ---
 
 ## Q141821: 3D Movie Maker: How to Improve Performance

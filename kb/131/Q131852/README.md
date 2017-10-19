@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q131852: PC Win: Error [009] Mail Maximum Size Exceeded Sending to..."
-permalink: kb/131/Q131852/
+title: "Q131852: PC Win: Error &#91;009&#93; Mail Maximum Size Exceeded Sending to..."
+permalink: /kb/131/Q131852/
 ---
 
-## Q131852: PC Win: Error [009] Mail Maximum Size Exceeded Sending to...
+## Q131852: PC Win: Error &#91;009&#93; Mail Maximum Size Exceeded Sending to...
 
 	Article: Q131852
 	Product(s): Microsoft Mail For PC Networks

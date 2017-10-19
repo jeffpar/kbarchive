@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264632: DLC Session Hangs When Using DLSW"
-permalink: kb/264/Q264632/
+permalink: /kb/264/Q264632/
 ---
 
 ## Q264632: DLC Session Hangs When Using DLSW

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276028: Running Excel 2000 Comments and Corrections"
-permalink: kb/276/Q276028/
+permalink: /kb/276/Q276028/
 ---
 
 ## Q276028: Running Excel 2000 Comments and Corrections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121926: Second CD-ROM Drive Not Detected in Windows 95"
-permalink: kb/121/Q121926/
+permalink: /kb/121/Q121926/
 ---
 
 ## Q121926: Second CD-ROM Drive Not Detected in Windows 95

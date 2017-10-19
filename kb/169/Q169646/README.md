@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169646: XADM: Simeon 4.1.1 Does Not Support Multipart/Related Messages"
-permalink: kb/169/Q169646/
+permalink: /kb/169/Q169646/
 ---
 
 ## Q169646: XADM: Simeon 4.1.1 Does Not Support Multipart/Related Messages

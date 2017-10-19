@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161430: DHCP: Detecting and Flagging Duplicate IP Addresses"
-permalink: kb/161/Q161430/
+permalink: /kb/161/Q161430/
 ---
 
 ## Q161430: DHCP: Detecting and Flagging Duplicate IP Addresses

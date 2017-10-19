@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147906: DOC: Rights.bak File Is Not Necessarily Present"
-permalink: kb/147/Q147906/
+permalink: /kb/147/Q147906/
 ---
 
 ## Q147906: DOC: Rights.bak File Is Not Necessarily Present

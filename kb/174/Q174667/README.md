@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174667: HOWTO: Subclass CListBox and CEdit Inside of CComboBox"
-permalink: kb/174/Q174667/
+permalink: /kb/174/Q174667/
 ---
 
 ## Q174667: HOWTO: Subclass CListBox and CEdit Inside of CComboBox

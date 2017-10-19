@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123687: Enabling CTRL+C and CTRL+BREAK by Using PeekcharQQ"
-permalink: kb/123/Q123687/
+permalink: /kb/123/Q123687/
 ---
 
 ## Q123687: Enabling CTRL+C and CTRL+BREAK by Using PeekcharQQ

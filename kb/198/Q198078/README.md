@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198078: WD97: Go To Command Fails in Protected Document"
-permalink: kb/198/Q198078/
+permalink: /kb/198/Q198078/
 ---
 
 ## Q198078: WD97: Go To Command Fails in Protected Document

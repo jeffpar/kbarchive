@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150284: File HAL486C.DLL Could Not Be Loaded"
-permalink: kb/150/Q150284/
+permalink: /kb/150/Q150284/
 ---
 
 ## Q150284: File HAL486C.DLL Could Not Be Loaded

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178224: INFO: Summary List: Visual C++ Version 4.1 Known Problems"
-permalink: kb/178/Q178224/
+permalink: /kb/178/Q178224/
 ---
 
 ## Q178224: INFO: Summary List: Visual C++ Version 4.1 Known Problems

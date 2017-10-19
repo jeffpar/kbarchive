@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63325: Saved Mode Causes Backward Flight in Flight Simulator"
-permalink: kb/063/Q63325/
+permalink: /kb/063/Q63325/
 ---
 
 ## Q63325: Saved Mode Causes Backward Flight in Flight Simulator

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273604: Golf 2001: Description of the Automatic Save Game Feature"
-permalink: kb/273/Q273604/
+permalink: /kb/273/Q273604/
 ---
 
 ## Q273604: Golf 2001: Description of the Automatic Save Game Feature

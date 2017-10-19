@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150419: PRB: &quot;Add Files to SourceSafe&quot; Add-in Menu Item is Disabled"
-permalink: kb/150/Q150419/
+permalink: /kb/150/Q150419/
 ---
 
 ## Q150419: PRB: &quot;Add Files to SourceSafe&quot; Add-in Menu Item is Disabled

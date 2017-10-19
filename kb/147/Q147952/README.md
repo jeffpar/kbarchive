@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147952: Two-Way Communication Using IDispatch in MFC"
-permalink: kb/147/Q147952/
+permalink: /kb/147/Q147952/
 ---
 
 ## Q147952: Two-Way Communication Using IDispatch in MFC

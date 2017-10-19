@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231798: Access Database with Multiple Users Slow on Terminal Server"
-permalink: kb/231/Q231798/
+permalink: /kb/231/Q231798/
 ---
 
 ## Q231798: Access Database with Multiple Users Slow on Terminal Server

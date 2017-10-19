@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155068: PPT: Can't Use PowerPoint 7.0 CD-ROM on a Macintosh Computer"
-permalink: kb/155/Q155068/
+permalink: /kb/155/Q155068/
 ---
 
 ## Q155068: PPT: Can't Use PowerPoint 7.0 CD-ROM on a Macintosh Computer

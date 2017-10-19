@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181350: Clients Fail to Connect to Notes Server Running on Windows NT"
-permalink: kb/181/Q181350/
+permalink: /kb/181/Q181350/
 ---
 
 ## Q181350: Clients Fail to Connect to Notes Server Running on Windows NT

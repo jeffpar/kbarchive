@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195525: PRB: SQLPREPARE Limited to 254 Characters"
-permalink: kb/195/Q195525/
+permalink: /kb/195/Q195525/
 ---
 
 ## Q195525: PRB: SQLPREPARE Limited to 254 Characters

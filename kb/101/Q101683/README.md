@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101683: X400: Err Msg: ERROR 3 (Network): X.25 Receive Failed..."
-permalink: kb/101/Q101683/
+permalink: /kb/101/Q101683/
 ---
 
 ## Q101683: X400: Err Msg: ERROR 3 (Network): X.25 Receive Failed...

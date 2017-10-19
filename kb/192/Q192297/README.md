@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192297: Applications May Fail with Access Violation During File Open"
-permalink: kb/192/Q192297/
+permalink: /kb/192/Q192297/
 ---
 
 ## Q192297: Applications May Fail with Access Violation During File Open

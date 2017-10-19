@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96711: HIMEM.SYS Reports Error: Unable to Control A20 Line!"
-permalink: kb/096/Q96711/
+permalink: /kb/096/Q96711/
 ---
 
 ## Q96711: HIMEM.SYS Reports Error: Unable to Control A20 Line!

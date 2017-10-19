@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288146: WD97: Font Size Lost for Hebrew Characters in Round-Tripped Doc"
-permalink: kb/288/Q288146/
+permalink: /kb/288/Q288146/
 ---
 
 ## Q288146: WD97: Font Size Lost for Hebrew Characters in Round-Tripped Doc

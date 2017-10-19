@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139303: Cannot Send Attachments with E-mail on MSN"
-permalink: kb/139/Q139303/
+permalink: /kb/139/Q139303/
 ---
 
 ## Q139303: Cannot Send Attachments with E-mail on MSN

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87064: MCI: How to Check to See If Mail Is Queued for the Gateway"
-permalink: kb/087/Q87064/
+permalink: /kb/087/Q87064/
 ---
 
 ## Q87064: MCI: How to Check to See If Mail Is Queued for the Gateway

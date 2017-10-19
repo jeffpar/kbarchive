@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222104: PRB: &quot;Optional feature not implemented&quot; or &quot;#name&quot; in SQL Srv 7"
-permalink: kb/222/Q222104/
+permalink: /kb/222/Q222104/
 ---
 
 ## Q222104: PRB: &quot;Optional feature not implemented&quot; or &quot;#name&quot; in SQL Srv 7

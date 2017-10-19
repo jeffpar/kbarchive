@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124606: Fw1125.exe Combines a Browse Window with Get Fields"
-permalink: kb/124/Q124606/
+permalink: /kb/124/Q124606/
 ---
 
 ## Q124606: Fw1125.exe Combines a Browse Window with Get Fields

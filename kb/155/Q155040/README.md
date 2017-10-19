@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155040: Debugging WINS Event ID 4288"
-permalink: kb/155/Q155040/
+permalink: /kb/155/Q155040/
 ---
 
 ## Q155040: Debugging WINS Event ID 4288

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84351: Windows Resource Kit 3.1 Adds Info Command to File Manager"
-permalink: kb/084/Q84351/
+permalink: /kb/084/Q84351/
 ---
 
 ## Q84351: Windows Resource Kit 3.1 Adds Info Command to File Manager

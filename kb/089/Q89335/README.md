@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89335: Using Compaq EXMEM.EXE with Windows, WFWG, and MS-DOS"
-permalink: kb/089/Q89335/
+permalink: /kb/089/Q89335/
 ---
 
 ## Q89335: Using Compaq EXMEM.EXE with Windows, WFWG, and MS-DOS

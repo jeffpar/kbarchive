@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178949: MS Graph 97: Cannot Scroll One Window Left or Right in Datasheet"
-permalink: kb/178/Q178949/
+permalink: /kb/178/Q178949/
 ---
 
 ## Q178949: MS Graph 97: Cannot Scroll One Window Left or Right in Datasheet

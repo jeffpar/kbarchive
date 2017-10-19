@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132547: PC NTMMTA: Using DrivesWAN When Running as a Service"
-permalink: kb/132/Q132547/
+permalink: /kb/132/Q132547/
 ---
 
 ## Q132547: PC NTMMTA: Using DrivesWAN When Running as a Service

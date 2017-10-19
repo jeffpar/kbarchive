@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238518: PRB: SQL Select Statement w/Outer Join Clause Adds NULL Values"
-permalink: kb/238/Q238518/
+permalink: /kb/238/Q238518/
 ---
 
 ## Q238518: PRB: SQL Select Statement w/Outer Join Clause Adds NULL Values

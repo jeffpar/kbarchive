@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175530: Windows Computer Is Unable to View a Network Share"
-permalink: kb/175/Q175530/
+permalink: /kb/175/Q175530/
 ---
 
 ## Q175530: Windows Computer Is Unable to View a Network Share

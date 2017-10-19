@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187448: Upgrading Does Not Copy Riched20.dll Correctly"
-permalink: kb/187/Q187448/
+permalink: /kb/187/Q187448/
 ---
 
 ## Q187448: Upgrading Does Not Copy Riched20.dll Correctly

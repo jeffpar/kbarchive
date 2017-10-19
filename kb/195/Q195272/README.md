@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195272: Running Microsoft Outlook 98 Comments and Corrections"
-permalink: kb/195/Q195272/
+permalink: /kb/195/Q195272/
 ---
 
 ## Q195272: Running Microsoft Outlook 98 Comments and Corrections

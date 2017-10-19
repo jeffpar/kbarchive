@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250300: PRB: FoxPro DIR Command Returns Incorrect Year for Years &gt; 1999"
-permalink: kb/250/Q250300/
+permalink: /kb/250/Q250300/
 ---
 
 ## Q250300: PRB: FoxPro DIR Command Returns Incorrect Year for Years &gt; 1999

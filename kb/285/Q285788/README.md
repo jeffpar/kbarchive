@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285788: Mailbox Resources Display &quot;total k&quot; and &quot;total items&quot; Columns"
-permalink: kb/285/Q285788/
+permalink: /kb/285/Q285788/
 ---
 
 ## Q285788: Mailbox Resources Display &quot;total k&quot; and &quot;total items&quot; Columns

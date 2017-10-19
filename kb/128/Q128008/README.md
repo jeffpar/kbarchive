@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128008: RAS: Connecting Using IPXCP Drops Local Netware Session"
-permalink: kb/128/Q128008/
+permalink: /kb/128/Q128008/
 ---
 
 ## Q128008: RAS: Connecting Using IPXCP Drops Local Netware Session

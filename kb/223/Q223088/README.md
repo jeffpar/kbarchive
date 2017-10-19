@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223088: FIX: WhatsThis Help Does Not Work in UserDocs"
-permalink: kb/223/Q223088/
+permalink: /kb/223/Q223088/
 ---
 
 ## Q223088: FIX: WhatsThis Help Does Not Work in UserDocs

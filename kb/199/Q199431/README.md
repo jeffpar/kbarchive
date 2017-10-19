@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199431: PRB: Enabling Menu Mnemonics in an MFC ActiveX Control"
-permalink: kb/199/Q199431/
+permalink: /kb/199/Q199431/
 ---
 
 ## Q199431: PRB: Enabling Menu Mnemonics in an MFC ActiveX Control

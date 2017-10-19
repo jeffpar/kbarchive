@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124912: Slow Processing with Windows NT PDC and LAN Manager BDC"
-permalink: kb/124/Q124912/
+permalink: /kb/124/Q124912/
 ---
 
 ## Q124912: Slow Processing with Windows NT PDC and LAN Manager BDC

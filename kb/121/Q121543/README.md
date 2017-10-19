@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121543: Setting Up for Remote Debugging"
-permalink: kb/121/Q121543/
+permalink: /kb/121/Q121543/
 ---
 
 ## Q121543: Setting Up for Remote Debugging

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133439: Cannot Play Video Clips in Microsoft Encarta '93"
-permalink: kb/133/Q133439/
+permalink: /kb/133/Q133439/
 ---
 
 ## Q133439: Cannot Play Video Clips in Microsoft Encarta '93

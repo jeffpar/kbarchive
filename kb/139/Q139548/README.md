@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139548: How to Use the GetDiskFreeSpace API Call"
-permalink: kb/139/Q139548/
+permalink: /kb/139/Q139548/
 ---
 
 ## Q139548: How to Use the GetDiskFreeSpace API Call

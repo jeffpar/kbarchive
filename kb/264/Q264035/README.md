@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264035: XADM: Can't Configure Port for UDP New Mail Notification Packets"
-permalink: kb/264/Q264035/
+permalink: /kb/264/Q264035/
 ---
 
 ## Q264035: XADM: Can't Configure Port for UDP New Mail Notification Packets

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85386: Font Substitution Does Not Work for Microtek TrueLaser"
-permalink: kb/085/Q85386/
+permalink: /kb/085/Q85386/
 ---
 
 ## Q85386: Font Substitution Does Not Work for Microtek TrueLaser

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197279: SP4 Blue Screen Occurs on Reboot If Hardware Key Used"
-permalink: kb/197/Q197279/
+permalink: /kb/197/Q197279/
 ---
 
 ## Q197279: SP4 Blue Screen Occurs on Reboot If Hardware Key Used

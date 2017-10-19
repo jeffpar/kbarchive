@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164011: WD97: Default Bullet Format Lost After Reopening HTML File"
-permalink: kb/164/Q164011/
+permalink: /kb/164/Q164011/
 ---
 
 ## Q164011: WD97: Default Bullet Format Lost After Reopening HTML File

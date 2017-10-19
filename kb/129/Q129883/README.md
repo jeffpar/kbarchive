@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129883: PRB: Dynaset, Snapshot, and Table Objects No Longer Available"
-permalink: kb/129/Q129883/
+permalink: /kb/129/Q129883/
 ---
 
 ## Q129883: PRB: Dynaset, Snapshot, and Table Objects No Longer Available

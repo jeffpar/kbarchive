@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97897: PC WRmt: Null Modem Script Displays Phone Number"
-permalink: kb/097/Q97897/
+permalink: /kb/097/Q97897/
 ---
 
 ## Q97897: PC WRmt: Null Modem Script Displays Phone Number

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277563: XADM: Can't Use Addr Templ Offline w/o Address Type Matching RDN"
-permalink: kb/277/Q277563/
+permalink: /kb/277/Q277563/
 ---
 
 ## Q277563: XADM: Can't Use Addr Templ Offline w/o Address Type Matching RDN

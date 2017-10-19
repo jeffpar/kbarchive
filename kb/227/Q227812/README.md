@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227812: Only TCP/IP Can Be Bound to Virtual Network Adapter in WLBS Host"
-permalink: kb/227/Q227812/
+permalink: /kb/227/Q227812/
 ---
 
 ## Q227812: Only TCP/IP Can Be Bound to Virtual Network Adapter in WLBS Host

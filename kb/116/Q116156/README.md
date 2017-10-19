@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116156: Farallon Phone-Net Is Incompatible with 32-Bit File Access"
-permalink: kb/116/Q116156/
+permalink: /kb/116/Q116156/
 ---
 
 ## Q116156: Farallon Phone-Net Is Incompatible with 32-Bit File Access

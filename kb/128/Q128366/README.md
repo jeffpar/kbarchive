@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128366: Mac Wkst: Resizing Graphic Images"
-permalink: kb/128/Q128366/
+permalink: /kb/128/Q128366/
 ---
 
 ## Q128366: Mac Wkst: Resizing Graphic Images

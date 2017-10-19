@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73220: Link Pulse May Need to Be Disabled on 3Com TP Cards"
-permalink: kb/073/Q73220/
+permalink: /kb/073/Q73220/
 ---
 
 ## Q73220: Link Pulse May Need to Be Disabled on 3Com TP Cards

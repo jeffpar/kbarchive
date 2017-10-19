@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136328: How to Determine the Coordinates of an Object"
-permalink: kb/136/Q136328/
+permalink: /kb/136/Q136328/
 ---
 
 ## Q136328: How to Determine the Coordinates of an Object

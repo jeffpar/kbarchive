@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103228: SAMPLE: NetBones.exe Demonstrates DDE Comm. Over Network"
-permalink: kb/103/Q103228/
+permalink: /kb/103/Q103228/
 ---
 
 ## Q103228: SAMPLE: NetBones.exe Demonstrates DDE Comm. Over Network

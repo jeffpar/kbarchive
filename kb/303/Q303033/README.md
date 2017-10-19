@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303033: Asherons Call: You Cannot Communicate with Other Players"
-permalink: kb/303/Q303033/
+permalink: /kb/303/Q303033/
 ---
 
 ## Q303033: Asherons Call: You Cannot Communicate with Other Players

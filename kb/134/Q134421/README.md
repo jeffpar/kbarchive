@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134421: HOWTO: How to Use CBitmapButton to Resize a Bitmap to Fit a Butt"
-permalink: kb/134/Q134421/
+permalink: /kb/134/Q134421/
 ---
 
 ## Q134421: HOWTO: How to Use CBitmapButton to Resize a Bitmap to Fit a Butt

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215374: BUG: Selecting &quot;Send to Back&quot; and &quot;Bring to Front&quot; Has No Affect"
-permalink: kb/215/Q215374/
+permalink: /kb/215/Q215374/
 ---
 
 ## Q215374: BUG: Selecting &quot;Send to Back&quot; and &quot;Bring to Front&quot; Has No Affect

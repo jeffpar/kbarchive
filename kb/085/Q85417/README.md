@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85417: DEC PC 320SX with Logitech Mouse May Not Enter Enhanced Mode"
-permalink: kb/085/Q85417/
+permalink: /kb/085/Q85417/
 ---
 
 ## Q85417: DEC PC 320SX with Logitech Mouse May Not Enter Enhanced Mode

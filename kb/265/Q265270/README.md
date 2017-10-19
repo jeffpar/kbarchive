@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265270: SMS: Assigned Programs Are Not Started After SMS Installation"
-permalink: kb/265/Q265270/
+permalink: /kb/265/Q265270/
 ---
 
 ## Q265270: SMS: Assigned Programs Are Not Started After SMS Installation

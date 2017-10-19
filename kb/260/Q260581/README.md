@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260581: BUG: Installing App via PDW Generates Err Msg Creating Icons"
-permalink: kb/260/Q260581/
+permalink: /kb/260/Q260581/
 ---
 
 ## Q260581: BUG: Installing App via PDW Generates Err Msg Creating Icons

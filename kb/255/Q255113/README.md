@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255113: Roaming Profiles May Not Synchronize Correctly in Windows"
-permalink: kb/255/Q255113/
+permalink: /kb/255/Q255113/
 ---
 
 ## Q255113: Roaming Profiles May Not Synchronize Correctly in Windows

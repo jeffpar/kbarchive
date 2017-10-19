@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173886: ADT/ODE: Icon Doesn't Show in Title/Taskbar of Run-Time App"
-permalink: kb/173/Q173886/
+permalink: /kb/173/Q173886/
 ---
 
 ## Q173886: ADT/ODE: Icon Doesn't Show in Title/Taskbar of Run-Time App

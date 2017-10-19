@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155774: WD97: Framed Object Positioned Incorrectly in Online Layout View"
-permalink: kb/155/Q155774/
+permalink: /kb/155/Q155774/
 ---
 
 ## Q155774: WD97: Framed Object Positioned Incorrectly in Online Layout View

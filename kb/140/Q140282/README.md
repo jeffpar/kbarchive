@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140282: Multimedia Screen Saver: Choosing None Sets Windows to None"
-permalink: kb/140/Q140282/
+permalink: /kb/140/Q140282/
 ---
 
 ## Q140282: Multimedia Screen Saver: Choosing None Sets Windows to None

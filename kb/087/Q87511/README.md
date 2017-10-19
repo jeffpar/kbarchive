@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87511: FaceLift Err Msg: Data in Section of WIN.INI..."
-permalink: kb/087/Q87511/
+permalink: /kb/087/Q87511/
 ---
 
 ## Q87511: FaceLift Err Msg: Data in Section of WIN.INI...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146139: XFOR: Indents on Replies to Internet Are not Preserved"
-permalink: kb/146/Q146139/
+permalink: /kb/146/Q146139/
 ---
 
 ## Q146139: XFOR: Indents on Replies to Internet Are not Preserved

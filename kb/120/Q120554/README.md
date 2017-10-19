@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120554: Summary List: Windows for Workgroups 3.11 Confirmed Problems"
-permalink: kb/120/Q120554/
+permalink: /kb/120/Q120554/
 ---
 
 ## Q120554: Summary List: Windows for Workgroups 3.11 Confirmed Problems

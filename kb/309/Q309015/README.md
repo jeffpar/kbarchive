@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309015: ODBC Provider for DB2 Doesn't Allow &quot;Blank&quot; Local APPC LU Alias"
-permalink: kb/309/Q309015/
+permalink: /kb/309/Q309015/
 ---
 
 ## Q309015: ODBC Provider for DB2 Doesn't Allow &quot;Blank&quot; Local APPC LU Alias

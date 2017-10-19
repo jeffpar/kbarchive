@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142583: 3D Movie Maker: Inserted Sound Doesn't Play"
-permalink: kb/142/Q142583/
+permalink: /kb/142/Q142583/
 ---
 
 ## Q142583: 3D Movie Maker: Inserted Sound Doesn't Play

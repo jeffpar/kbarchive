@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199517: PRB: FreeResource Required for Locked Resources on Macintosh"
-permalink: kb/199/Q199517/
+permalink: /kb/199/Q199517/
 ---
 
 ## Q199517: PRB: FreeResource Required for Locked Resources on Macintosh

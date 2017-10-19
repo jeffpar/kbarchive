@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118322: PC WSPlus: New Users in Group Cannot Access .CAL File"
-permalink: kb/118/Q118322/
+permalink: /kb/118/Q118322/
 ---
 
 ## Q118322: PC WSPlus: New Users in Group Cannot Access .CAL File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142236: QEMM 8.0 Causes GP Fault in Safe Mode"
-permalink: kb/142/Q142236/
+permalink: /kb/142/Q142236/
 ---
 
 ## Q142236: QEMM 8.0 Causes GP Fault in Safe Mode

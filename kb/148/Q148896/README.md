@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148896: Return of Arcade: List of Supported Sound Cards"
-permalink: kb/148/Q148896/
+permalink: /kb/148/Q148896/
 ---
 
 ## Q148896: Return of Arcade: List of Supported Sound Cards

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93569: PC DirSync: CTRL+C Displayed But Not Used in IMPORT.EXE"
-permalink: kb/093/Q93569/
+permalink: /kb/093/Q93569/
 ---
 
 ## Q93569: PC DirSync: CTRL+C Displayed But Not Used in IMPORT.EXE

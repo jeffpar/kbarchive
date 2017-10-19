@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257626: Non-Paged Pool Leak Running Internet Explorer 5"
-permalink: kb/257/Q257626/
+permalink: /kb/257/Q257626/
 ---
 
 ## Q257626: Non-Paged Pool Leak Running Internet Explorer 5

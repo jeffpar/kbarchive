@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170720: WD97: Saving as HTML Removes Hyperlink &quot;Target&quot; Tag"
-permalink: kb/170/Q170720/
+permalink: /kb/170/Q170720/
 ---
 
 ## Q170720: WD97: Saving as HTML Removes Hyperlink &quot;Target&quot; Tag

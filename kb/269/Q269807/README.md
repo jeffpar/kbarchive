@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269807: MSB: Computer Hangs When You Eject The Magic School Bus CD-ROM"
-permalink: kb/269/Q269807/
+permalink: /kb/269/Q269807/
 ---
 
 ## Q269807: MSB: Computer Hangs When You Eject The Magic School Bus CD-ROM

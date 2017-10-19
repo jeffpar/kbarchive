@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146132: Meeting Wizard: Resource Displayed in Where Field"
-permalink: kb/146/Q146132/
+permalink: /kb/146/Q146132/
 ---
 
 ## Q146132: Meeting Wizard: Resource Displayed in Where Field

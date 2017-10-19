@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189930: XCLN: Macintosh Client Error &quot;The Item Could Not Be Displayed&quot;"
-permalink: kb/189/Q189930/
+permalink: /kb/189/Q189930/
 ---
 
 ## Q189930: XCLN: Macintosh Client Error &quot;The Item Could Not Be Displayed&quot;

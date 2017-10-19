@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171923: Service Pack Installation May Replace File Permissions"
-permalink: kb/171/Q171923/
+permalink: /kb/171/Q171923/
 ---
 
 ## Q171923: Service Pack Installation May Replace File Permissions

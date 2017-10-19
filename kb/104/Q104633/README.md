@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104633: Arcade: Scoring Topic in Battlezone Help File Incorrect"
-permalink: kb/104/Q104633/
+permalink: /kb/104/Q104633/
 ---
 
 ## Q104633: Arcade: Scoring Topic in Battlezone Help File Incorrect

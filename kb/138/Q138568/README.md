@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138568: 4mm DAT Tape Drives Fail on PCI Controller"
-permalink: kb/138/Q138568/
+permalink: /kb/138/Q138568/
 ---
 
 ## Q138568: 4mm DAT Tape Drives Fail on PCI Controller

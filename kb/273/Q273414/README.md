@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273414: Age of Empires II: The Age of Kings Update 2.0a Available"
-permalink: kb/273/Q273414/
+permalink: /kb/273/Q273414/
 ---
 
 ## Q273414: Age of Empires II: The Age of Kings Update 2.0a Available

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114819: How to Obtain Support for Video Seven Video Boards"
-permalink: kb/114/Q114819/
+permalink: /kb/114/Q114819/
 ---
 
 ## Q114819: How to Obtain Support for Video Seven Video Boards

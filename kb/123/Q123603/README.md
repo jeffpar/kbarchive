@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123603: DOC: Smart Pointers Example Is Incorrect"
-permalink: kb/123/Q123603/
+permalink: /kb/123/Q123603/
 ---
 
 ## Q123603: DOC: Smart Pointers Example Is Incorrect

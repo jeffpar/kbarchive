@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110384: Direct Control of AVI Files from Viewer"
-permalink: kb/110/Q110384/
+permalink: /kb/110/Q110384/
 ---
 
 ## Q110384: Direct Control of AVI Files from Viewer

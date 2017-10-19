@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91664: MS-DOS Backup Err Msg: Unable to Open Component File"
-permalink: kb/091/Q91664/
+permalink: /kb/091/Q91664/
 ---
 
 ## Q91664: MS-DOS Backup Err Msg: Unable to Open Component File

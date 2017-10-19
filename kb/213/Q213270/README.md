@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213270: Smsman.exe Does Not Display Error Message When Setup Fails"
-permalink: kb/213/Q213270/
+permalink: /kb/213/Q213270/
 ---
 
 ## Q213270: Smsman.exe Does Not Display Error Message When Setup Fails

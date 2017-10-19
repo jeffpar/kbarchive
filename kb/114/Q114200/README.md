@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114200: LM 2.2/2.2b Server Fails With CSLIM=8A1E/CSLIM=8A0E"
-permalink: kb/114/Q114200/
+permalink: /kb/114/Q114200/
 ---
 
 ## Q114200: LM 2.2/2.2b Server Fails With CSLIM=8A1E/CSLIM=8A0E

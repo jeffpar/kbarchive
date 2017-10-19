@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128350: Configuring Network Client for Validation Across Routers"
-permalink: kb/128/Q128350/
+permalink: /kb/128/Q128350/
 ---
 
 ## Q128350: Configuring Network Client for Validation Across Routers

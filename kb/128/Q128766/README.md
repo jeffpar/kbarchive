@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128766: ADT2: Installing ADT Application on Workstation Causes Error"
-permalink: kb/128/Q128766/
+permalink: /kb/128/Q128766/
 ---
 
 ## Q128766: ADT2: Installing ADT Application on Workstation Causes Error

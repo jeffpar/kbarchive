@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78016: No Animation Driver Is Supplied with Multimedia Extensions"
-permalink: kb/078/Q78016/
+permalink: /kb/078/Q78016/
 ---
 
 ## Q78016: No Animation Driver Is Supplied with Multimedia Extensions

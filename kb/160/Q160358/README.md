@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160358: Mouse Leaves Horizontal Lines on Display with Matrox Video"
-permalink: kb/160/Q160358/
+permalink: /kb/160/Q160358/
 ---
 
 ## Q160358: Mouse Leaves Horizontal Lines on Display with Matrox Video

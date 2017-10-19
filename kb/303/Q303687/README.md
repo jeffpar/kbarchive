@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303687: PRB: Duplicate Email When User Does Not Complete Password Change"
-permalink: kb/303/Q303687/
+permalink: /kb/303/Q303687/
 ---
 
 ## Q303687: PRB: Duplicate Email When User Does Not Complete Password Change

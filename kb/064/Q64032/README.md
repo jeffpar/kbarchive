@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64032: DOCERR: NMAKE Predefined Macro &#36;(@D) Has Same Value As &#36;@"
-permalink: kb/064/Q64032/
+permalink: /kb/064/Q64032/
 ---
 
 ## Q64032: DOCERR: NMAKE Predefined Macro &#36;(@D) Has Same Value As &#36;@

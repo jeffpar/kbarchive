@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118977: Error Msg When You Attach Paradox File to MS Access 2.0"
-permalink: kb/118/Q118977/
+permalink: /kb/118/Q118977/
 ---
 
 ## Q118977: Error Msg When You Attach Paradox File to MS Access 2.0

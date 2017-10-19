@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157475: Access Denied When Trying to Add ACL Entries"
-permalink: kb/157/Q157475/
+permalink: /kb/157/Q157475/
 ---
 
 ## Q157475: Access Denied When Trying to Add ACL Entries

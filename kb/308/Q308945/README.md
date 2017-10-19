@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308945: SMS: An Exception Is Created in the Wnremote.log File"
-permalink: kb/308/Q308945/
+permalink: /kb/308/Q308945/
 ---
 
 ## Q308945: SMS: An Exception Is Created in the Wnremote.log File

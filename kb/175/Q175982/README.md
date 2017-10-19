@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175982: XFOR: Outbound SMTP Mail Never Leaves Microsoft Exchange Server"
-permalink: kb/175/Q175982/
+permalink: /kb/175/Q175982/
 ---
 
 ## Q175982: XFOR: Outbound SMTP Mail Never Leaves Microsoft Exchange Server

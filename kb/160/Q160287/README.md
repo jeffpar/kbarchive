@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160287: XADM: How to Embed an OLE Object in an Exchange Form"
-permalink: kb/160/Q160287/
+permalink: /kb/160/Q160287/
 ---
 
 ## Q160287: XADM: How to Embed an OLE Object in an Exchange Form

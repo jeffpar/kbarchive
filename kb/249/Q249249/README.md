@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249249: How to Migrate from an Alpha Computer to an Intel Computer"
-permalink: kb/249/Q249249/
+permalink: /kb/249/Q249249/
 ---
 
 ## Q249249: How to Migrate from an Alpha Computer to an Intel Computer

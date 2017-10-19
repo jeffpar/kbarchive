@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258815: Wave Audio Volume Is Unexpectedly Raised"
-permalink: kb/258/Q258815/
+permalink: /kb/258/Q258815/
 ---
 
 ## Q258815: Wave Audio Volume Is Unexpectedly Raised

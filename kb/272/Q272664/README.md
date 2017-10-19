@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272664: Golf 2001 &amp; Links LS: Cannot Start or Game Quits Unexpectedly"
-permalink: kb/272/Q272664/
+permalink: /kb/272/Q272664/
 ---
 
 ## Q272664: Golf 2001 &amp; Links LS: Cannot Start or Game Quits Unexpectedly

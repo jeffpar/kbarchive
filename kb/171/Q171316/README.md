@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171316: FIX: Setting Default Value Using CreateField Gives Wrong Value"
-permalink: kb/171/Q171316/
+permalink: /kb/171/Q171316/
 ---
 
 ## Q171316: FIX: Setting Default Value Using CreateField Gives Wrong Value

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168182: XCLN: Wizard Doesn't Migrate Schedule+ Info to Outlook Calendar"
-permalink: kb/168/Q168182/
+permalink: /kb/168/Q168182/
 ---
 
 ## Q168182: XCLN: Wizard Doesn't Migrate Schedule+ Info to Outlook Calendar

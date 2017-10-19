@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142497: SNA Server Processes Show Huge Virtual Byte Size in PerfMon"
-permalink: kb/142/Q142497/
+permalink: /kb/142/Q142497/
 ---
 
 ## Q142497: SNA Server Processes Show Huge Virtual Byte Size in PerfMon

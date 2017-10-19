@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240026: Problems with &quot;Run Only Allowed Windows Applications&quot; Policy"
-permalink: kb/240/Q240026/
+permalink: /kb/240/Q240026/
 ---
 
 ## Q240026: Problems with &quot;Run Only Allowed Windows Applications&quot; Policy

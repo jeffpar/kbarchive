@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199942: FIX: Tstcon32.exe Cannot Invoke Method with BSTR&#42; Parameter Type"
-permalink: kb/199/Q199942/
+permalink: /kb/199/Q199942/
 ---
 
 ## Q199942: FIX: Tstcon32.exe Cannot Invoke Method with BSTR&#42; Parameter Type

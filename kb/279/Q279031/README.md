@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279031: No Method of Installation for Internet Connector Licensing"
-permalink: kb/279/Q279031/
+permalink: /kb/279/Q279031/
 ---
 
 ## Q279031: No Method of Installation for Internet Connector Licensing

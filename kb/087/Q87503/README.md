@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87503: Envelope Return Address Smudged on HP LaserJet Printers"
-permalink: kb/087/Q87503/
+permalink: /kb/087/Q87503/
 ---
 
 ## Q87503: Envelope Return Address Smudged on HP LaserJet Printers

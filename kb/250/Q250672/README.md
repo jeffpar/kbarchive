@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250672: XCLN: Outlook For Macintosh Stops Responding at Splash Screen"
-permalink: kb/250/Q250672/
+permalink: /kb/250/Q250672/
 ---
 
 ## Q250672: XCLN: Outlook For Macintosh Stops Responding at Splash Screen

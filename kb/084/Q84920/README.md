@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84920: Upgrading a Shared Windows 3.1 Network"
-permalink: kb/084/Q84920/
+permalink: /kb/084/Q84920/
 ---
 
 ## Q84920: Upgrading a Shared Windows 3.1 Network

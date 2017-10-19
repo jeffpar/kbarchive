@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147873: Semicolon Not Processed Correctly in NetWare Login Script"
-permalink: kb/147/Q147873/
+permalink: /kb/147/Q147873/
 ---
 
 ## Q147873: Semicolon Not Processed Correctly in NetWare Login Script

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43957: Mac Srv: Novell's NetWare for the Macintosh"
-permalink: kb/043/Q43957/
+permalink: /kb/043/Q43957/
 ---
 
 ## Q43957: Mac Srv: Novell's NetWare for the Macintosh

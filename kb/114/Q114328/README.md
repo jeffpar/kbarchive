@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114328: Files Installed by Flight Simulator 5.0"
-permalink: kb/114/Q114328/
+permalink: /kb/114/Q114328/
 ---
 
 ## Q114328: Files Installed by Flight Simulator 5.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301612: MechWarrior 4.0: Cannot Start MechWarrior"
-permalink: kb/301/Q301612/
+permalink: /kb/301/Q301612/
 ---
 
 ## Q301612: MechWarrior 4.0: Cannot Start MechWarrior

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59649: Using CTTY Under Windows 3.0"
-permalink: kb/059/Q59649/
+permalink: /kb/059/Q59649/
 ---
 
 ## Q59649: Using CTTY Under Windows 3.0

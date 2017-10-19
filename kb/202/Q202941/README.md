@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202941: SMS: Systems Management Server International Client Packs"
-permalink: kb/202/Q202941/
+permalink: /kb/202/Q202941/
 ---
 
 ## Q202941: SMS: Systems Management Server International Client Packs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152500: XADM: ccMail Migration Wizard Hangs with Wrong ccMail Export"
-permalink: kb/152/Q152500/
+permalink: /kb/152/Q152500/
 ---
 
 ## Q152500: XADM: ccMail Migration Wizard Hangs with Wrong ccMail Export

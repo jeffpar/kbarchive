@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267909: HOWTO: Save TreeView Data to a Formatted File"
-permalink: kb/267/Q267909/
+permalink: /kb/267/Q267909/
 ---
 
 ## Q267909: HOWTO: Save TreeView Data to a Formatted File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171895: Mac Encarta 97: Orbit Interactivity Stops Right After Starting"
-permalink: kb/171/Q171895/
+permalink: /kb/171/Q171895/
 ---
 
 ## Q171895: Mac Encarta 97: Orbit Interactivity Stops Right After Starting

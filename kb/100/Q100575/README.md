@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100575: MemMaker Err Msg: &quot;SIZER: Program Load Error&quot;"
-permalink: kb/100/Q100575/
+permalink: /kb/100/Q100575/
 ---
 
 ## Q100575: MemMaker Err Msg: &quot;SIZER: Program Load Error&quot;

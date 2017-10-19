@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122200: Err Msg: The Remoteboot Service Service Returned..."
-permalink: kb/122/Q122200/
+permalink: /kb/122/Q122200/
 ---
 
 ## Q122200: Err Msg: The Remoteboot Service Service Returned...

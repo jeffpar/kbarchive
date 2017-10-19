@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244995: Base System Object Restrictions Are Not Enabled by Default"
-permalink: kb/244/Q244995/
+permalink: /kb/244/Q244995/
 ---
 
 ## Q244995: Base System Object Restrictions Are Not Enabled by Default

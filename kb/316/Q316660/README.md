@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316660: Frequently Asked Questions About MSN Messenger"
-permalink: kb/316/Q316660/
+permalink: /kb/316/Q316660/
 ---
 
 ## Q316660: Frequently Asked Questions About MSN Messenger

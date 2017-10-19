@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91096: Font Corruption in Ventura Publisher 4.0"
-permalink: kb/091/Q91096/
+permalink: /kb/091/Q91096/
 ---
 
 ## Q91096: Font Corruption in Ventura Publisher 4.0

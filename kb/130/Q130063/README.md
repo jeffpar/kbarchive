@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130063: How to Find Out If EM_SETPASSWORDCHAR Message DBCS Is Enabled"
-permalink: kb/130/Q130063/
+permalink: /kb/130/Q130063/
 ---
 
 ## Q130063: How to Find Out If EM_SETPASSWORDCHAR Message DBCS Is Enabled

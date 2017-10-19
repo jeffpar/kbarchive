@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153573: If Data Loader Loses Its Link to SQL, Good MIFs May Be Rejected"
-permalink: kb/153/Q153573/
+permalink: /kb/153/Q153573/
 ---
 
 ## Q153573: If Data Loader Loses Its Link to SQL, Good MIFs May Be Rejected

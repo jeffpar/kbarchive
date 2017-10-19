@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163255: WD97: Unexpected Memory Problems with Word 97 and Outlook 97"
-permalink: kb/163/Q163255/
+permalink: /kb/163/Q163255/
 ---
 
 ## Q163255: WD97: Unexpected Memory Problems with Word 97 and Outlook 97

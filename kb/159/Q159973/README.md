@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159973: WD97: Macro to Move Insertion Point to Top of Current Page"
-permalink: kb/159/Q159973/
+permalink: /kb/159/Q159973/
 ---
 
 ## Q159973: WD97: Macro to Move Insertion Point to Top of Current Page

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105106: PC WFW: Mail DoubleSpace and Highest Security Options"
-permalink: kb/105/Q105106/
+permalink: /kb/105/Q105106/
 ---
 
 ## Q105106: PC WFW: Mail DoubleSpace and Highest Security Options

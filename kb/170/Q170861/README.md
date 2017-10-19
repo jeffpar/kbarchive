@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170861: Error 501, Not Supported When Using .Exe and .Com Applications"
-permalink: kb/170/Q170861/
+permalink: /kb/170/Q170861/
 ---
 
 ## Q170861: Error 501, Not Supported When Using .Exe and .Com Applications

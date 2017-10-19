@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177222: NetWare Printers or Volumes Unavailable in Windows 95"
-permalink: kb/177/Q177222/
+permalink: /kb/177/Q177222/
 ---
 
 ## Q177222: NetWare Printers or Volumes Unavailable in Windows 95

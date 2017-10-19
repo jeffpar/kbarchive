@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166400: Inserting SRAM Card into Docking Station May Hang Computer"
-permalink: kb/166/Q166400/
+permalink: /kb/166/Q166400/
 ---
 
 ## Q166400: Inserting SRAM Card into Docking Station May Hang Computer

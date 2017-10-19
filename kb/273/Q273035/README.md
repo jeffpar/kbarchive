@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273035: XADM: Troubleshooting Message Stores White Paper Available"
-permalink: kb/273/Q273035/
+permalink: /kb/273/Q273035/
 ---
 
 ## Q273035: XADM: Troubleshooting Message Stores White Paper Available

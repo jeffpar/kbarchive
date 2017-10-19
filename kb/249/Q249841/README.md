@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249841: INFO: How Win9x DS Client Uses AD Site Information"
-permalink: kb/249/Q249841/
+permalink: /kb/249/Q249841/
 ---
 
 ## Q249841: INFO: How Win9x DS Client Uses AD Site Information

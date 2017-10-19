@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223077: FIX: VB 6.0 Adding Split to a DataGrid May Cause Error"
-permalink: kb/223/Q223077/
+permalink: /kb/223/Q223077/
 ---
 
 ## Q223077: FIX: VB 6.0 Adding Split to a DataGrid May Cause Error

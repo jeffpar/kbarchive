@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122703: No Envelope Paper Selection on HP DeskJet 400 in Windows NT 4.0"
-permalink: kb/122/Q122703/
+permalink: /kb/122/Q122703/
 ---
 
 ## Q122703: No Envelope Paper Selection on HP DeskJet 400 in Windows NT 4.0

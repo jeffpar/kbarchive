@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86334: DOCERR: Corrections to Program Manager Group File Format Docs"
-permalink: kb/086/Q86334/
+permalink: /kb/086/Q86334/
 ---
 
 ## Q86334: DOCERR: Corrections to Program Manager Group File Format Docs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173545: XADM: Exclude Newsgroup Button Is Disabled"
-permalink: kb/173/Q173545/
+permalink: /kb/173/Q173545/
 ---
 
 ## Q173545: XADM: Exclude Newsgroup Button Is Disabled

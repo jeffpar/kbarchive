@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318061: BUG: Reloading the Solution from Visual SourceSafe Changes the S"
-permalink: kb/318/Q318061/
+permalink: /kb/318/Q318061/
 ---
 
 ## Q318061: BUG: Reloading the Solution from Visual SourceSafe Changes the S

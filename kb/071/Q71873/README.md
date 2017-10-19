@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71873: MS-DOS 5 Upgrade README.TXT: Hardware Compatibility"
-permalink: kb/071/Q71873/
+permalink: /kb/071/Q71873/
 ---
 
 ## Q71873: MS-DOS 5 Upgrade README.TXT: Hardware Compatibility

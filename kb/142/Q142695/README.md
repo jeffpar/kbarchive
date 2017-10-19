@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142695: SP3 Localized SERVER.HLP (On-line Books) Causes Dr. Watson Error"
-permalink: kb/142/Q142695/
+permalink: /kb/142/Q142695/
 ---
 
 ## Q142695: SP3 Localized SERVER.HLP (On-line Books) Causes Dr. Watson Error

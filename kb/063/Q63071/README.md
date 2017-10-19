@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63071: Only First 8 Characters in a Batch Label Recognized"
-permalink: kb/063/Q63071/
+permalink: /kb/063/Q63071/
 ---
 
 ## Q63071: Only First 8 Characters in a Batch Label Recognized

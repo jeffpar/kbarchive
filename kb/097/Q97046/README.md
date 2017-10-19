@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97046: PC WRmt: Each Session Overwrites SESSION.LOG File"
-permalink: kb/097/Q97046/
+permalink: /kb/097/Q97046/
 ---
 
 ## Q97046: PC WRmt: Each Session Overwrites SESSION.LOG File

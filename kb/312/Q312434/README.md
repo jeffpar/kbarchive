@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312434: XADM: OWA Error When Users Try to Gain Access to Messages"
-permalink: kb/312/Q312434/
+permalink: /kb/312/Q312434/
 ---
 
 ## Q312434: XADM: OWA Error When Users Try to Gain Access to Messages

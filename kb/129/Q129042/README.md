@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129042: Alternate Methods of Booting from a Failed Mirror"
-permalink: kb/129/Q129042/
+permalink: /kb/129/Q129042/
 ---
 
 ## Q129042: Alternate Methods of Booting from a Failed Mirror

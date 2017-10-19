@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231826: Turning Off MSN Removes MSN User Settings"
-permalink: kb/231/Q231826/
+permalink: /kb/231/Q231826/
 ---
 
 ## Q231826: Turning Off MSN Removes MSN User Settings

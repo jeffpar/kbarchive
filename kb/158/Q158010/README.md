@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158010: XCLN: Setup Could Not Write to File Mapiform.vbx"
-permalink: kb/158/Q158010/
+permalink: /kb/158/Q158010/
 ---
 
 ## Q158010: XCLN: Setup Could Not Write to File Mapiform.vbx

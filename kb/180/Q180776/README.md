@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180776: Windows Messaging Does Not Change Addresses to Hyperlinks"
-permalink: kb/180/Q180776/
+permalink: /kb/180/Q180776/
 ---
 
 ## Q180776: Windows Messaging Does Not Change Addresses to Hyperlinks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71307: HP PaintJet Series (1.01) Printer Driver for Windows 3.0"
-permalink: kb/071/Q71307/
+permalink: /kb/071/Q71307/
 ---
 
 ## Q71307: HP PaintJet Series (1.01) Printer Driver for Windows 3.0

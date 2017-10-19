@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192257: PRB: Recursive Use of AddressOf Operator Fails"
-permalink: kb/192/Q192257/
+permalink: /kb/192/Q192257/
 ---
 
 ## Q192257: PRB: Recursive Use of AddressOf Operator Fails

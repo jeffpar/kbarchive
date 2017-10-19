@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98174: Setting/Checking Inherited vs. Explicit Permissions"
-permalink: kb/098/Q98174/
+permalink: /kb/098/Q98174/
 ---
 
 ## Q98174: Setting/Checking Inherited vs. Explicit Permissions

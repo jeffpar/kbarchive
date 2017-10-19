@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191550: BUG: DateTimePicker Won't Scroll Full Text in Visible Combo Area"
-permalink: kb/191/Q191550/
+permalink: /kb/191/Q191550/
 ---
 
 ## Q191550: BUG: DateTimePicker Won't Scroll Full Text in Visible Combo Area

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126614: PRB: 32K Limit on Direct Parameters for 16-bit Drivers"
-permalink: kb/126/Q126614/
+permalink: /kb/126/Q126614/
 ---
 
 ## Q126614: PRB: 32K Limit on Direct Parameters for 16-bit Drivers

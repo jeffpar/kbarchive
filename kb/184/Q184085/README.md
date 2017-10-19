@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184085: Year 2000 Resources Available from Microsoft"
-permalink: kb/184/Q184085/
+permalink: /kb/184/Q184085/
 ---
 
 ## Q184085: Year 2000 Resources Available from Microsoft

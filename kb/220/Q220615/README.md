@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220615: Encarta Err Msg: Cannot Import Uninstal.reg: Error Opening..."
-permalink: kb/220/Q220615/
+permalink: /kb/220/Q220615/
 ---
 
 ## Q220615: Encarta Err Msg: Cannot Import Uninstal.reg: Error Opening...

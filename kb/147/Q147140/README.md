@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147140: Macintosh Ultimate Frank Lloyd Wright: ReadMe Contents"
-permalink: kb/147/Q147140/
+permalink: /kb/147/Q147140/
 ---
 
 ## Q147140: Macintosh Ultimate Frank Lloyd Wright: ReadMe Contents

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277927: RADIUS Server Hangs If Password Contains More Than 16 Characters"
-permalink: kb/277/Q277927/
+permalink: /kb/277/Q277927/
 ---
 
 ## Q277927: RADIUS Server Hangs If Password Contains More Than 16 Characters

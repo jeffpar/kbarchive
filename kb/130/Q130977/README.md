@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130977: Windows 95 Explorer GP Faults during Remote Control"
-permalink: kb/130/Q130977/
+permalink: /kb/130/Q130977/
 ---
 
 ## Q130977: Windows 95 Explorer GP Faults during Remote Control

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174754: XFOR: Connecting IMS to IMS with SASL"
-permalink: kb/174/Q174754/
+permalink: /kb/174/Q174754/
 ---
 
 ## Q174754: XFOR: Connecting IMS to IMS with SASL

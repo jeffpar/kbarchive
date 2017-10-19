@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137267: SNA Server WinSLI Library Does Not Support Format 1 InitSelf"
-permalink: kb/137/Q137267/
+permalink: /kb/137/Q137267/
 ---
 
 ## Q137267: SNA Server WinSLI Library Does Not Support Format 1 InitSelf

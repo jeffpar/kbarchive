@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85743: FIX: Error L1057 Generated When Assembling with /Zi"
-permalink: kb/085/Q85743/
+permalink: /kb/085/Q85743/
 ---
 
 ## Q85743: FIX: Error L1057 Generated When Assembling with /Zi

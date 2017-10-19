@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297860: MS01-044: IIS 5.0 Security and Post-Windows NT 4.0 SP5 IIS 4.0 P"
-permalink: kb/297/Q297860/
+permalink: /kb/297/Q297860/
 ---
 
 ## Q297860: MS01-044: IIS 5.0 Security and Post-Windows NT 4.0 SP5 IIS 4.0 P

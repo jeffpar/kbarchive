@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160039: Hellbender: How to Play a Multiplayer Game"
-permalink: kb/160/Q160039/
+permalink: /kb/160/Q160039/
 ---
 
 ## Q160039: Hellbender: How to Play a Multiplayer Game

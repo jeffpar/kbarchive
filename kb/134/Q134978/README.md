@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134978: How to Extract the Full Path of a Table in Database Container"
-permalink: kb/134/Q134978/
+permalink: /kb/134/Q134978/
 ---
 
 ## Q134978: How to Extract the Full Path of a Table in Database Container

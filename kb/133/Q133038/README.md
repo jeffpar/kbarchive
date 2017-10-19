@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133038: Crystal Reports Cannot Find DLL Files in Windows NT"
-permalink: kb/133/Q133038/
+permalink: /kb/133/Q133038/
 ---
 
 ## Q133038: Crystal Reports Cannot Find DLL Files in Windows NT

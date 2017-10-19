@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161051: Windows NT Shares Inaccessible with Net Use in Login Script"
-permalink: kb/161/Q161051/
+permalink: /kb/161/Q161051/
 ---
 
 ## Q161051: Windows NT Shares Inaccessible with Net Use in Login Script

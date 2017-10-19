@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129990: MS WORD 6 RESOURCE KIT: 2Ed Corrections and Comments"
-permalink: kb/129/Q129990/
+permalink: /kb/129/Q129990/
 ---
 
 ## Q129990: MS WORD 6 RESOURCE KIT: 2Ed Corrections and Comments

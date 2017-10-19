@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150834: HP Network Port Disappears After User Selects Secondary Adapter"
-permalink: kb/150/Q150834/
+permalink: /kb/150/Q150834/
 ---
 
 ## Q150834: HP Network Port Disappears After User Selects Secondary Adapter

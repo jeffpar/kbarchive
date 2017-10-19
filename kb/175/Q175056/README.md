@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175056: &quot;Error -2&quot; in 16-Bit Program When Disconnecting from SQL Server"
-permalink: kb/175/Q175056/
+permalink: /kb/175/Q175056/
 ---
 
 ## Q175056: &quot;Error -2&quot; in 16-Bit Program When Disconnecting from SQL Server

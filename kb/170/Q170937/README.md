@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170937: WD97: Supplemental Converter Not Listed in Files Of Type List"
-permalink: kb/170/Q170937/
+permalink: /kb/170/Q170937/
 ---
 
 ## Q170937: WD97: Supplemental Converter Not Listed in Files Of Type List

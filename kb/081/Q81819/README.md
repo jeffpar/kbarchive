@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81819: Exit Codes or Errorlevels Set by MS-DOS Commands"
-permalink: kb/081/Q81819/
+permalink: /kb/081/Q81819/
 ---
 
 ## Q81819: Exit Codes or Errorlevels Set by MS-DOS Commands

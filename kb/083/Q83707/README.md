@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83707: Running Productivity Pack Version 1.0 in Windows Version 3.1"
-permalink: kb/083/Q83707/
+permalink: /kb/083/Q83707/
 ---
 
 ## Q83707: Running Productivity Pack Version 1.0 in Windows Version 3.1

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186542: Terminal Server Error Messages: 2500 to 2999"
-permalink: kb/186/Q186542/
+permalink: /kb/186/Q186542/
 ---
 
 ## Q186542: Terminal Server Error Messages: 2500 to 2999

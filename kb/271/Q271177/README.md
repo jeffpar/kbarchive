@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271177: FIX: Unable To Repair Password Protected Database"
-permalink: kb/271/Q271177/
+permalink: /kb/271/Q271177/
 ---
 
 ## Q271177: FIX: Unable To Repair Password Protected Database

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123661: BUG: No Error or Code for Multiple END Statements"
-permalink: kb/123/Q123661/
+permalink: /kb/123/Q123661/
 ---
 
 ## Q123661: BUG: No Error or Code for Multiple END Statements

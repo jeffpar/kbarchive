@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76076: Macro Assembler Version 6.0 Return Codes"
-permalink: kb/076/Q76076/
+permalink: /kb/076/Q76076/
 ---
 
 ## Q76076: Macro Assembler Version 6.0 Return Codes

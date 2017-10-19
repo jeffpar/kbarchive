@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82442: PowerPoint and Micrografx Picture Publisher"
-permalink: kb/082/Q82442/
+permalink: /kb/082/Q82442/
 ---
 
 ## Q82442: PowerPoint and Micrografx Picture Publisher

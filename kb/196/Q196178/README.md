@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196178: XADM: Move Server Wizard Errors on Routing Calculation Servers"
-permalink: kb/196/Q196178/
+permalink: /kb/196/Q196178/
 ---
 
 ## Q196178: XADM: Move Server Wizard Errors on Routing Calculation Servers

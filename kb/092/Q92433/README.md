@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92433: Handling Callbacks with C++ Member Functions"
-permalink: kb/092/Q92433/
+permalink: /kb/092/Q92433/
 ---
 
 ## Q92433: Handling Callbacks with C++ Member Functions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179022: PRB: Optimistic Concurrency Check Fails with SQL Text Field"
-permalink: kb/179/Q179022/
+permalink: /kb/179/Q179022/
 ---
 
 ## Q179022: PRB: Optimistic Concurrency Check Fails with SQL Text Field

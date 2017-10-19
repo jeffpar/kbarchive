@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136804: XCLN: Loading/Disabling MS Mail 3.x Win Client Extensions"
-permalink: kb/136/Q136804/
+permalink: /kb/136/Q136804/
 ---
 
 ## Q136804: XCLN: Loading/Disabling MS Mail 3.x Win Client Extensions

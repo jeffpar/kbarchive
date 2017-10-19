@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117804: PC Ext: Mailing to External Addresses Via Groups from Other PO"
-permalink: kb/117/Q117804/
+permalink: /kb/117/Q117804/
 ---
 
 ## Q117804: PC Ext: Mailing to External Addresses Via Groups from Other PO

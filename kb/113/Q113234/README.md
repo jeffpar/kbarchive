@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113234: Windows Hangs with SMC Ethernet 16 Elite Ultra 16T Adapter"
-permalink: kb/113/Q113234/
+permalink: /kb/113/Q113234/
 ---
 
 ## Q113234: Windows Hangs with SMC Ethernet 16 Elite Ultra 16T Adapter

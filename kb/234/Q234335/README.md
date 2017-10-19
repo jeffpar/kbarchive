@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234335: SMS: Mouse Does Not Work During Remote Control Session"
-permalink: kb/234/Q234335/
+permalink: /kb/234/Q234335/
 ---
 
 ## Q234335: SMS: Mouse Does Not Work During Remote Control Session

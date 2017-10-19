@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193844: Explanation of DNS Wildcards"
-permalink: kb/193/Q193844/
+permalink: /kb/193/Q193844/
 ---
 
 ## Q193844: Explanation of DNS Wildcards

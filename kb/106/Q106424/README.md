@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106424: Turtle Beach Sound Card: No Sound After Running MemMaker"
-permalink: kb/106/Q106424/
+permalink: /kb/106/Q106424/
 ---
 
 ## Q106424: Turtle Beach Sound Card: No Sound After Running MemMaker

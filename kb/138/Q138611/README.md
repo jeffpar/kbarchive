@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138611: Stopping SNA Server Causes Application Exception in SNALINK.EXE"
-permalink: kb/138/Q138611/
+permalink: /kb/138/Q138611/
 ---
 
 ## Q138611: Stopping SNA Server Causes Application Exception in SNALINK.EXE

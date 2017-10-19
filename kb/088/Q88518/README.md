@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88518: Barton Creek-Fazio Has Steep Trough on Holes 12 and 13"
-permalink: kb/088/Q88518/
+permalink: /kb/088/Q88518/
 ---
 
 ## Q88518: Barton Creek-Fazio Has Steep Trough on Holes 12 and 13

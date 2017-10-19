@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190980: FIX: Error Using UsesTransaction for MTSTransactionMode"
-permalink: kb/190/Q190980/
+permalink: /kb/190/Q190980/
 ---
 
 ## Q190980: FIX: Error Using UsesTransaction for MTSTransactionMode

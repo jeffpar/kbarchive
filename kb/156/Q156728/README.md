@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156728: XFOR: MSMI Mistakenly Returns NDR Instead of DR"
-permalink: kb/156/Q156728/
+permalink: /kb/156/Q156728/
 ---
 
 ## Q156728: XFOR: MSMI Mistakenly Returns NDR Instead of DR

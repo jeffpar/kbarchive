@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180137: Code Conversion Table For PRC Has Duplicate Mappings"
-permalink: kb/180/Q180137/
+permalink: /kb/180/Q180137/
 ---
 
 ## Q180137: Code Conversion Table For PRC Has Duplicate Mappings

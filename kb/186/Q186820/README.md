@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186820: DNS Server Returns Wrong Response When WINS Lookup Is Enabled"
-permalink: kb/186/Q186820/
+permalink: /kb/186/Q186820/
 ---
 
 ## Q186820: DNS Server Returns Wrong Response When WINS Lookup Is Enabled

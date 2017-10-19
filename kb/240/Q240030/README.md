@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240030: PRB: Commands or Procedures on Menu Pads Do Not Run in ActiveDoc"
-permalink: kb/240/Q240030/
+permalink: /kb/240/Q240030/
 ---
 
 ## Q240030: PRB: Commands or Procedures on Menu Pads Do Not Run in ActiveDoc

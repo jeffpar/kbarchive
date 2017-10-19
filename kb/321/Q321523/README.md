@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321523: TN3270 Clients May Receive Error From Host When Pressing AID Key"
-permalink: kb/321/Q321523/
+permalink: /kb/321/Q321523/
 ---
 
 ## Q321523: TN3270 Clients May Receive Error From Host When Pressing AID Key

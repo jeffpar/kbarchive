@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154535: Multiple Instances of Network Interface in Performance Monitor"
-permalink: kb/154/Q154535/
+permalink: /kb/154/Q154535/
 ---
 
 ## Q154535: Multiple Instances of Network Interface in Performance Monitor

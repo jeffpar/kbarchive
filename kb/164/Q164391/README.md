@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164391: WinNT 4.0 SP2 Atapi Claims IRQ for Unused IDE Channel"
-permalink: kb/164/Q164391/
+permalink: /kb/164/Q164391/
 ---
 
 ## Q164391: WinNT 4.0 SP2 Atapi Claims IRQ for Unused IDE Channel

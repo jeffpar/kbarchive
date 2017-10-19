@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164077: How to Obtain SNA Version 2.11 U.S. Service Pack"
-permalink: kb/164/Q164077/
+permalink: /kb/164/Q164077/
 ---
 
 ## Q164077: How to Obtain SNA Version 2.11 U.S. Service Pack

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107088: FaxDrv: Send Fax Command Fails to Install in Word for Windows"
-permalink: kb/107/Q107088/
+permalink: /kb/107/Q107088/
 ---
 
 ## Q107088: FaxDrv: Send Fax Command Fails to Install in Word for Windows

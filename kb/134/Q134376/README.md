@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134376: PC NTMMTA: Err Msg: Can't Open Service Control Manager..."
-permalink: kb/134/Q134376/
+permalink: /kb/134/Q134376/
 ---
 
 ## Q134376: PC NTMMTA: Err Msg: Can't Open Service Control Manager...

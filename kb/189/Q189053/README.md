@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189053: SNA Server Access Violation in Function Snaservr!s1prfpda"
-permalink: kb/189/Q189053/
+permalink: /kb/189/Q189053/
 ---
 
 ## Q189053: SNA Server Access Violation in Function Snaservr!s1prfpda

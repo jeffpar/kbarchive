@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248311: Fighter Ace II: Game Quits When Detecting 3D Accelerators"
-permalink: kb/248/Q248311/
+permalink: /kb/248/Q248311/
 ---
 
 ## Q248311: Fighter Ace II: Game Quits When Detecting 3D Accelerators

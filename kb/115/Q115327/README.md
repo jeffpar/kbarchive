@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115327: FIX: SETUP.EXE Cannot Start via a UNC Connection"
-permalink: kb/115/Q115327/
+permalink: /kb/115/Q115327/
 ---
 
 ## Q115327: FIX: SETUP.EXE Cannot Start via a UNC Connection

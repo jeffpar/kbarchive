@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263548: XADM: Event ID 1016 and 1002 Occurs When Directory Service Fails"
-permalink: kb/263/Q263548/
+permalink: /kb/263/Q263548/
 ---
 
 ## Q263548: XADM: Event ID 1016 and 1002 Occurs When Directory Service Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184795: Close Combat Error Message: Nternal Error #4 Reported"
-permalink: kb/184/Q184795/
+permalink: /kb/184/Q184795/
 ---
 
 ## Q184795: Close Combat Error Message: Nternal Error #4 Reported

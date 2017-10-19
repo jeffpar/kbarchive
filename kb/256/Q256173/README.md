@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256173: Possible Hang When Multiple Users Access Data on Same Dfs Share"
-permalink: kb/256/Q256173/
+permalink: /kb/256/Q256173/
 ---
 
 ## Q256173: Possible Hang When Multiple Users Access Data on Same Dfs Share

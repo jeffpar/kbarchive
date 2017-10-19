@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238210: HTTP Keep Alive Header Sent Whenever ASP Buffering is Enabled"
-permalink: kb/238/Q238210/
+permalink: /kb/238/Q238210/
 ---
 
 ## Q238210: HTTP Keep Alive Header Sent Whenever ASP Buffering is Enabled

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288994: Data Corruption or AV in ContinueRawRead"
-permalink: kb/288/Q288994/
+permalink: /kb/288/Q288994/
 ---
 
 ## Q288994: Data Corruption or AV in ContinueRawRead

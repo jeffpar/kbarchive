@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99023: PPT: How to Set Object Defaults in PowerPoint 4.0, 7.0"
-permalink: kb/099/Q99023/
+permalink: /kb/099/Q99023/
 ---
 
 ## Q99023: PPT: How to Set Object Defaults in PowerPoint 4.0, 7.0

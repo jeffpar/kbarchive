@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182815: FP: Permissions Command is Not Available on the Tools Menu"
-permalink: kb/182/Q182815/
+permalink: /kb/182/Q182815/
 ---
 
 ## Q182815: FP: Permissions Command is Not Available on the Tools Menu

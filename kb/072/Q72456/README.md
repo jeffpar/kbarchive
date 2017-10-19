@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72456: Problem Exiting Windows Setup Using Keyboard"
-permalink: kb/072/Q72456/
+permalink: /kb/072/Q72456/
 ---
 
 ## Q72456: Problem Exiting Windows Setup Using Keyboard

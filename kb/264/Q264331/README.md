@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q264331: PC Ext: PC Mail Error Message: [001] Unable to Deliver"
-permalink: kb/264/Q264331/
+title: "Q264331: PC Ext: PC Mail Error Message: &#91;001&#93; Unable to Deliver"
+permalink: /kb/264/Q264331/
 ---
 
-## Q264331: PC Ext: PC Mail Error Message: [001] Unable to Deliver
+## Q264331: PC Ext: PC Mail Error Message: &#91;001&#93; Unable to Deliver
 
 	Article: Q264331
 	Product(s): Microsoft Mail For PC Networks

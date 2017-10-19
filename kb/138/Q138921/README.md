@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138921: PRB: Form's Visible Property Does Not Respect Modal WindowType"
-permalink: kb/138/Q138921/
+permalink: /kb/138/Q138921/
 ---
 
 ## Q138921: PRB: Form's Visible Property Does Not Respect Modal WindowType

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171551: FIX: 32-Bit DBList/DBCombo May Exhibit Problems When Locked"
-permalink: kb/171/Q171551/
+permalink: /kb/171/Q171551/
 ---
 
 ## Q171551: FIX: 32-Bit DBList/DBCombo May Exhibit Problems When Locked

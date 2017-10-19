@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207552: Windows NT 4.0 Domain Controllers Across RAS or Slow Links"
-permalink: kb/207/Q207552/
+permalink: /kb/207/Q207552/
 ---
 
 ## Q207552: Windows NT 4.0 Domain Controllers Across RAS or Slow Links

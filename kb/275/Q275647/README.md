@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275647: XCON: MTA Stops Unexpectedly in GwartCopyDoorwayList()"
-permalink: kb/275/Q275647/
+permalink: /kb/275/Q275647/
 ---
 
 ## Q275647: XCON: MTA Stops Unexpectedly in GwartCopyDoorwayList()

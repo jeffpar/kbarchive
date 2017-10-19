@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298786: Error Message: &quot;Privacy Settings&quot; When Attempting Sign In To MSN"
-permalink: kb/298/Q298786/
+permalink: /kb/298/Q298786/
 ---
 
 ## Q298786: Error Message: &quot;Privacy Settings&quot; When Attempting Sign In To MSN

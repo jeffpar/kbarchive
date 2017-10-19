@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71975: DOCERR: QuickHelp Searches C:&#92;QH, DPATH, PATH, BOOKSHELF"
-permalink: kb/071/Q71975/
+permalink: /kb/071/Q71975/
 ---
 
 ## Q71975: DOCERR: QuickHelp Searches C:&#92;QH, DPATH, PATH, BOOKSHELF

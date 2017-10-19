@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302553: Adding A Web Page To Favorites"
-permalink: kb/302/Q302553/
+permalink: /kb/302/Q302553/
 ---
 
 ## Q302553: Adding A Web Page To Favorites

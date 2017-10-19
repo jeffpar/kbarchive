@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237599: SNA Server 4.0 SP2 Client for Windows NT Always Installs MMC"
-permalink: kb/237/Q237599/
+permalink: /kb/237/Q237599/
 ---
 
 ## Q237599: SNA Server 4.0 SP2 Client for Windows NT Always Installs MMC

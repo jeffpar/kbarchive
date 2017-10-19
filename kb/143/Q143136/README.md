@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143136: Internal Network Number of FFFFFFFF is Not Valid"
-permalink: kb/143/Q143136/
+permalink: /kb/143/Q143136/
 ---
 
 ## Q143136: Internal Network Number of FFFFFFFF is Not Valid

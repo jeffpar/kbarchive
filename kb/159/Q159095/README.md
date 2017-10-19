@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159095: STOP 0x0000001E in Win32k.sys When Exiting Applications"
-permalink: kb/159/Q159095/
+permalink: /kb/159/Q159095/
 ---
 
 ## Q159095: STOP 0x0000001E in Win32k.sys When Exiting Applications

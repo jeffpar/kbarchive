@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142307: Name Resolution Fails on Multihomed Laptop and Docking Station"
-permalink: kb/142/Q142307/
+permalink: /kb/142/Q142307/
 ---
 
 ## Q142307: Name Resolution Fails on Multihomed Laptop and Docking Station

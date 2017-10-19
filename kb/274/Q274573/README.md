@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274573: XADM: Delegate Permissions Assigned Through a DL Do Not Work"
-permalink: kb/274/Q274573/
+permalink: /kb/274/Q274573/
 ---
 
 ## Q274573: XADM: Delegate Permissions Assigned Through a DL Do Not Work

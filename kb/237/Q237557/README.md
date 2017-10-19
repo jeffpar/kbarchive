@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237557: SMS 2.0 Network Discovery Internals"
-permalink: kb/237/Q237557/
+permalink: /kb/237/Q237557/
 ---
 
 ## Q237557: SMS 2.0 Network Discovery Internals

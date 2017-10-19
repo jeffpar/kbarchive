@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128567: Landscape Orientation Reversed With Postscript Driver"
-permalink: kb/128/Q128567/
+permalink: /kb/128/Q128567/
 ---
 
 ## Q128567: Landscape Orientation Reversed With Postscript Driver

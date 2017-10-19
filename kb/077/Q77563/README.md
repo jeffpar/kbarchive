@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77563: Enhanced Mode Windows Does Not Reset COM Ports"
-permalink: kb/077/Q77563/
+permalink: /kb/077/Q77563/
 ---
 
 ## Q77563: Enhanced Mode Windows Does Not Reset COM Ports

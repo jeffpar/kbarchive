@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317902: Games: Support for Tools and Third Party Products"
-permalink: kb/317/Q317902/
+permalink: /kb/317/Q317902/
 ---
 
 ## Q317902: Games: Support for Tools and Third Party Products

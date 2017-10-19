@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137034: PRB: Win32 GetTempFileName API Differs From 16-bit"
-permalink: kb/137/Q137034/
+permalink: /kb/137/Q137034/
 ---
 
 ## Q137034: PRB: Win32 GetTempFileName API Differs From 16-bit

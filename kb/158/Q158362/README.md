@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158362: Drive Letters Assigned In Disk Admin Disappear On Restart"
-permalink: kb/158/Q158362/
+permalink: /kb/158/Q158362/
 ---
 
 ## Q158362: Drive Letters Assigned In Disk Admin Disappear On Restart

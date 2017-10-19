@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252637: PRB: Form Wizard Forms Display Non-US Currencies with a &#36; Symbol"
-permalink: kb/252/Q252637/
+permalink: /kb/252/Q252637/
 ---
 
 ## Q252637: PRB: Form Wizard Forms Display Non-US Currencies with a &#36; Symbol

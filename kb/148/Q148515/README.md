@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148515: XCLN: How the Exchange Windows 95 Client Uses Control.glb"
-permalink: kb/148/Q148515/
+permalink: /kb/148/Q148515/
 ---
 
 ## Q148515: XCLN: How the Exchange Windows 95 Client Uses Control.glb

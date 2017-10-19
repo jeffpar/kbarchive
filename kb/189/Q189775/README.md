@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189775: BUG: Watch/Locals Windows Truncate Char. Variables at CHR(0)"
-permalink: kb/189/Q189775/
+permalink: /kb/189/Q189775/
 ---
 
 ## Q189775: BUG: Watch/Locals Windows Truncate Char. Variables at CHR(0)

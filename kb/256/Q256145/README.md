@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256145: Use Network Monitor to Determine Proxy Server Configuration"
-permalink: kb/256/Q256145/
+permalink: /kb/256/Q256145/
 ---
 
 ## Q256145: Use Network Monitor to Determine Proxy Server Configuration

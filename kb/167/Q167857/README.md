@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167857: SMS: Permission Required Dialog Box Appears Behind Open Windows"
-permalink: kb/167/Q167857/
+permalink: /kb/167/Q167857/
 ---
 
 ## Q167857: SMS: Permission Required Dialog Box Appears Behind Open Windows

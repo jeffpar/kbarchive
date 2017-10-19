@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194367: Assigning LUA LUs to a 3270 Display Pool Results in a Drwatson"
-permalink: kb/194/Q194367/
+permalink: /kb/194/Q194367/
 ---
 
 ## Q194367: Assigning LUA LUs to a 3270 Display Pool Results in a Drwatson

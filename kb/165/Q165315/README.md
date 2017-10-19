@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165315: PC WRmt: MS Mail Remote Users Not Able to View Attachments"
-permalink: kb/165/Q165315/
+permalink: /kb/165/Q165315/
 ---
 
 ## Q165315: PC WRmt: MS Mail Remote Users Not Able to View Attachments

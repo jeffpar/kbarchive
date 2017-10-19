@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185382: How to Manually Stop or Start the Inetinfo Process"
-permalink: kb/185/Q185382/
+permalink: /kb/185/Q185382/
 ---
 
 ## Q185382: How to Manually Stop or Start the Inetinfo Process

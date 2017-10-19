@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255673: XADM: Unwanted Replication of Address Book Views"
-permalink: kb/255/Q255673/
+permalink: /kb/255/Q255673/
 ---
 
 ## Q255673: XADM: Unwanted Replication of Address Book Views

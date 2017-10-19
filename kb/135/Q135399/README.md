@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135399: FIX: Filer:Application Error If Long Filename in VFP Directory"
-permalink: kb/135/Q135399/
+permalink: /kb/135/Q135399/
 ---
 
 ## Q135399: FIX: Filer:Application Error If Long Filename in VFP Directory

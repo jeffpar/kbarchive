@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105147: PRB: Double-Clicking a Word Selects Trailing Space"
-permalink: kb/105/Q105147/
+permalink: /kb/105/Q105147/
 ---
 
 ## Q105147: PRB: Double-Clicking a Word Selects Trailing Space

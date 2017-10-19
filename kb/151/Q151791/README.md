@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151791: XFOR: MSMI Stops Processing When Submitting Bad Address"
-permalink: kb/151/Q151791/
+permalink: /kb/151/Q151791/
 ---
 
 ## Q151791: XFOR: MSMI Stops Processing When Submitting Bad Address

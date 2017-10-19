@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142483: Encarta 96 Updates: Unexpected Error When Integrating File"
-permalink: kb/142/Q142483/
+permalink: /kb/142/Q142483/
 ---
 
 ## Q142483: Encarta 96 Updates: Unexpected Error When Integrating File

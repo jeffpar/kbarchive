@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146256: XCLN: User w/ Delete Permissions Cannot Delete Messages"
-permalink: kb/146/Q146256/
+permalink: /kb/146/Q146256/
 ---
 
 ## Q146256: XCLN: User w/ Delete Permissions Cannot Delete Messages

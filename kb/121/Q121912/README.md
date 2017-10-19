@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121912: PING Hangs or Reboots Workstation"
-permalink: kb/121/Q121912/
+permalink: /kb/121/Q121912/
 ---
 
 ## Q121912: PING Hangs or Reboots Workstation

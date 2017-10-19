@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216345: Error During SSD 2.10 or Earlier Installation on WinNT 4.0 SP4"
-permalink: kb/216/Q216345/
+permalink: /kb/216/Q216345/
 ---
 
 ## Q216345: Error During SSD 2.10 or Earlier Installation on WinNT 4.0 SP4

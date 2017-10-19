@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64816: Mouse Hangs with Mouse Loaded in Multiple Virtual Machines"
-permalink: kb/064/Q64816/
+permalink: /kb/064/Q64816/
 ---
 
 ## Q64816: Mouse Hangs with Mouse Loaded in Multiple Virtual Machines

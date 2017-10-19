@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96083: DoubleSpace Err Msg: Drive Is Too Fragmented to Resize"
-permalink: kb/096/Q96083/
+permalink: /kb/096/Q96083/
 ---
 
 ## Q96083: DoubleSpace Err Msg: Drive Is Too Fragmented to Resize

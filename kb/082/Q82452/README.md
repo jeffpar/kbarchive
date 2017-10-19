@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82452: The Juggler Lists TT Fonts Multiple Times"
-permalink: kb/082/Q82452/
+permalink: /kb/082/Q82452/
 ---
 
 ## Q82452: The Juggler Lists TT Fonts Multiple Times

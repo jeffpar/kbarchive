@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50559: Software Documentation Available for Blind Customers"
-permalink: kb/050/Q50559/
+permalink: /kb/050/Q50559/
 ---
 
 ## Q50559: Software Documentation Available for Blind Customers

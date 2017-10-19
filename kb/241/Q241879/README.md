@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241879: Encarta: &quot;Go To Article&quot; Command Links to Incorrect Article"
-permalink: kb/241/Q241879/
+permalink: /kb/241/Q241879/
 ---
 
 ## Q241879: Encarta: &quot;Go To Article&quot; Command Links to Incorrect Article

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108500: WD97: Envelope Command Fails to Pick Up Print Merge Addrs Fields"
-permalink: kb/108/Q108500/
+permalink: /kb/108/Q108500/
 ---
 
 ## Q108500: WD97: Envelope Command Fails to Pick Up Print Merge Addrs Fields

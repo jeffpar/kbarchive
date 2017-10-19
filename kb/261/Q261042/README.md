@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261042: MCM2: Textures and Colors on the Ground Are Distorted"
-permalink: kb/261/Q261042/
+permalink: /kb/261/Q261042/
 ---
 
 ## Q261042: MCM2: Textures and Colors on the Ground Are Distorted

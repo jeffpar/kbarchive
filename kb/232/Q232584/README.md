@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232584: Zone Err Msg: Failed to Establish Server Connection"
-permalink: kb/232/Q232584/
+permalink: /kb/232/Q232584/
 ---
 
 ## Q232584: Zone Err Msg: Failed to Establish Server Connection

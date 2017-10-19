@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250397: Content is Lost at SF_NOTIFY_AUTH_COMPLETE"
-permalink: kb/250/Q250397/
+permalink: /kb/250/Q250397/
 ---
 
 ## Q250397: Content is Lost at SF_NOTIFY_AUTH_COMPLETE

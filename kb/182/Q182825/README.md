@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182825: NET USE Returns Error 53 When Host Has 3 or more NICs"
-permalink: kb/182/Q182825/
+permalink: /kb/182/Q182825/
 ---
 
 ## Q182825: NET USE Returns Error 53 When Host Has 3 or more NICs

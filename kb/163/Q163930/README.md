@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163930: FIX: Canceling Out of Builder Can Cause VFP to Shut Down"
-permalink: kb/163/Q163930/
+permalink: /kb/163/Q163930/
 ---
 
 ## Q163930: FIX: Canceling Out of Builder Can Cause VFP to Shut Down

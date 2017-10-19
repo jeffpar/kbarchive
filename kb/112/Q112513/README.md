@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112513: BUG: SQL Server ODBC Driver Removes Entry From WIN.INI"
-permalink: kb/112/Q112513/
+permalink: /kb/112/Q112513/
 ---
 
 ## Q112513: BUG: SQL Server ODBC Driver Removes Entry From WIN.INI

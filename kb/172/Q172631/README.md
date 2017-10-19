@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172631: WD97: Custom Numbering Scheme Not Available on Other Computer"
-permalink: kb/172/Q172631/
+permalink: /kb/172/Q172631/
 ---
 
 ## Q172631: WD97: Custom Numbering Scheme Not Available on Other Computer

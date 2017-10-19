@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98342: Retrieving Group Names from a MM Viewer Title"
-permalink: kb/098/Q98342/
+permalink: /kb/098/Q98342/
 ---
 
 ## Q98342: Retrieving Group Names from a MM Viewer Title

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270029: BUG: COleControl::SetControlSize Function Does Not Work"
-permalink: kb/270/Q270029/
+permalink: /kb/270/Q270029/
 ---
 
 ## Q270029: BUG: COleControl::SetControlSize Function Does Not Work

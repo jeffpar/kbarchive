@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126985: INFO: Unattended Setup Switch Fails to Run"
-permalink: kb/126/Q126985/
+permalink: /kb/126/Q126985/
 ---
 
 ## Q126985: INFO: Unattended Setup Switch Fails to Run

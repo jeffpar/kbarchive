@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182420: SMS: Site Code Should Not Be a WinNT Reserved Word"
-permalink: kb/182/Q182420/
+permalink: /kb/182/Q182420/
 ---
 
 ## Q182420: SMS: Site Code Should Not Be a WinNT Reserved Word

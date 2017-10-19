@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117582: CONN: Connection Installer Corrupts Gateway Templates"
-permalink: kb/117/Q117582/
+permalink: /kb/117/Q117582/
 ---
 
 ## Q117582: CONN: Connection Installer Corrupts Gateway Templates

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129283: RAS Error Message: &quot;Error 1: Incorrect Function&quot;"
-permalink: kb/129/Q129283/
+permalink: /kb/129/Q129283/
 ---
 
 ## Q129283: RAS Error Message: &quot;Error 1: Incorrect Function&quot;

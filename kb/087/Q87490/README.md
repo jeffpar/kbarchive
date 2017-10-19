@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87490: X400: Use of &quot;_&quot; Character in the X.400 Version 2.1b3 Setup"
-permalink: kb/087/Q87490/
+permalink: /kb/087/Q87490/
 ---
 
 ## Q87490: X400: Use of &quot;_&quot; Character in the X.400 Version 2.1b3 Setup

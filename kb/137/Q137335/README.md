@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137335: Error Message: Invalid VxD Dynamic Link Call from..."
-permalink: kb/137/Q137335/
+permalink: /kb/137/Q137335/
 ---
 
 ## Q137335: Error Message: Invalid VxD Dynamic Link Call from...

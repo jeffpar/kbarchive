@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71697: PC DOS: Creating Action Field Items for the Operator Program"
-permalink: kb/071/Q71697/
+permalink: /kb/071/Q71697/
 ---
 
 ## Q71697: PC DOS: Creating Action Field Items for the Operator Program

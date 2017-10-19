@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100033: Mac Wkst: Color Icons Do Not Appear in Summary Window"
-permalink: kb/100/Q100033/
+permalink: /kb/100/Q100033/
 ---
 
 ## Q100033: Mac Wkst: Color Icons Do Not Appear in Summary Window

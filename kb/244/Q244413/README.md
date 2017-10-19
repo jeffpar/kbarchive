@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244413: XFOR: Can't Reply to E-mail from MEMO"
-permalink: kb/244/Q244413/
+permalink: /kb/244/Q244413/
 ---
 
 ## Q244413: XFOR: Can't Reply to E-mail from MEMO

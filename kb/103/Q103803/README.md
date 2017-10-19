@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103803: X400: X400ADM Utility Memory Requirements"
-permalink: kb/103/Q103803/
+permalink: /kb/103/Q103803/
 ---
 
 ## Q103803: X400: X400ADM Utility Memory Requirements

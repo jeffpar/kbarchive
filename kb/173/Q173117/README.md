@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173117: WD97: Cannot Undo Style Gallery Change"
-permalink: kb/173/Q173117/
+permalink: /kb/173/Q173117/
 ---
 
 ## Q173117: WD97: Cannot Undo Style Gallery Change

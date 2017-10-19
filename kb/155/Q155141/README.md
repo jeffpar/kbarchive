@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155141: HOWTO: How To Add a Toolbar in an MDI Child Window"
-permalink: kb/155/Q155141/
+permalink: /kb/155/Q155141/
 ---
 
 ## Q155141: HOWTO: How To Add a Toolbar in an MDI Child Window

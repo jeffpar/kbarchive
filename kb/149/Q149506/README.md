@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149506: BUG: /4fps1 and /Ox Compiler Options with Complex Calculations"
-permalink: kb/149/Q149506/
+permalink: /kb/149/Q149506/
 ---
 
 ## Q149506: BUG: /4fps1 and /Ox Compiler Options with Complex Calculations

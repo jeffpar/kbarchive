@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242486: Slow Performance of NetWare Logon Script with GSNW"
-permalink: kb/242/Q242486/
+permalink: /kb/242/Q242486/
 ---
 
 ## Q242486: Slow Performance of NetWare Logon Script with GSNW

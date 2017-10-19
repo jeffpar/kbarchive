@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140467: How to Set Up Printers on FPNW to Service PSERVER.EXE"
-permalink: kb/140/Q140467/
+permalink: /kb/140/Q140467/
 ---
 
 ## Q140467: How to Set Up Printers on FPNW to Service PSERVER.EXE

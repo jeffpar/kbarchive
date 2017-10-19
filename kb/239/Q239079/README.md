@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239079: DNS INT Zone File Identified as Reverse Instead of Forward"
-permalink: kb/239/Q239079/
+permalink: /kb/239/Q239079/
 ---
 
 ## Q239079: DNS INT Zone File Identified as Reverse Instead of Forward

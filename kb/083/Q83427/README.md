@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83427: Reinstalling Windows Printer Drivers with 3.1=YES"
-permalink: kb/083/Q83427/
+permalink: /kb/083/Q83427/
 ---
 
 ## Q83427: Reinstalling Windows Printer Drivers with 3.1=YES

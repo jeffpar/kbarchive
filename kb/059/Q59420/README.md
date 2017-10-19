@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59420: Specifying the Order in Which NMAKE Builds Files"
-permalink: kb/059/Q59420/
+permalink: /kb/059/Q59420/
 ---
 
 ## Q59420: Specifying the Order in Which NMAKE Builds Files

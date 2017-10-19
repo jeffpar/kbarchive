@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116379: Resource Creator &amp; List of File Types for FoxPro for Mac"
-permalink: kb/116/Q116379/
+permalink: /kb/116/Q116379/
 ---
 
 ## Q116379: Resource Creator &amp; List of File Types for FoxPro for Mac

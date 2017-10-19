@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305173: PC Freezes When Prompted To Restart During MSN Broadband DSL New"
-permalink: kb/305/Q305173/
+permalink: /kb/305/Q305173/
 ---
 
 ## Q305173: PC Freezes When Prompted To Restart During MSN Broadband DSL New

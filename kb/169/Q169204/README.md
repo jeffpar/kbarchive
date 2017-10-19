@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169204: Renegotiate CNOS After Connection Reestablishment"
-permalink: kb/169/Q169204/
+permalink: /kb/169/Q169204/
 ---
 
 ## Q169204: Renegotiate CNOS After Connection Reestablishment

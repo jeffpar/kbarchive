@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303681: Parent Directory Link Fails with Directory Browsing Turned On"
-permalink: kb/303/Q303681/
+permalink: /kb/303/Q303681/
 ---
 
 ## Q303681: Parent Directory Link Fails with Directory Browsing Turned On

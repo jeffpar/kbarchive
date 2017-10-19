@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272515: How to change themes on the MSN Companion user interface"
-permalink: kb/272/Q272515/
+permalink: /kb/272/Q272515/
 ---
 
 ## Q272515: How to change themes on the MSN Companion user interface

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246304: Debugging Ported Code"
-permalink: kb/246/Q246304/
+permalink: /kb/246/Q246304/
 ---
 
 ## Q246304: Debugging Ported Code

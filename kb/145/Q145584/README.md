@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145584: WD97: Documents May Be Deleted from ODMA System"
-permalink: kb/145/Q145584/
+permalink: /kb/145/Q145584/
 ---
 
 ## Q145584: WD97: Documents May Be Deleted from ODMA System

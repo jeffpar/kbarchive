@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216159: Dr Watson Starting TS License Service with Error 3221487623"
-permalink: kb/216/Q216159/
+permalink: /kb/216/Q216159/
 ---
 
 ## Q216159: Dr Watson Starting TS License Service with Error 3221487623

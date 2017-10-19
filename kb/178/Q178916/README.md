@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178916: XCLN: PDF Freedoc Does Not Display Summary Info in Custom View"
-permalink: kb/178/Q178916/
+permalink: /kb/178/Q178916/
 ---
 
 ## Q178916: XCLN: PDF Freedoc Does Not Display Summary Info in Custom View

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193907: Windows NT 4.0 SP4 Supports IGMP Version 2"
-permalink: kb/193/Q193907/
+permalink: /kb/193/Q193907/
 ---
 
 ## Q193907: Windows NT 4.0 SP4 Supports IGMP Version 2

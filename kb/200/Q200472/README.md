@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200472: XFOR: How to Change the Default Header Separator for SNADSCONN"
-permalink: kb/200/Q200472/
+permalink: /kb/200/Q200472/
 ---
 
 ## Q200472: XFOR: How to Change the Default Header Separator for SNADSCONN

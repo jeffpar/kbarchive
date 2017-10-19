@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115350: X400: Config Doubles Backslashes in MTA Names During Upgrade"
-permalink: kb/115/Q115350/
+permalink: /kb/115/Q115350/
 ---
 
 ## Q115350: X400: Config Doubles Backslashes in MTA Names During Upgrade

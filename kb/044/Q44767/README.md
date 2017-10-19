@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q44767: Cannot Create Color Text in Write"
-permalink: kb/044/Q44767/
+permalink: /kb/044/Q44767/
 ---
 
 ## Q44767: Cannot Create Color Text in Write

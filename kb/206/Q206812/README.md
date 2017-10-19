@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q206812: SMS: Remote Control Component Is Not Available"
-permalink: kb/206/Q206812/
+permalink: /kb/206/Q206812/
 ---
 
 ## Q206812: SMS: Remote Control Component Is Not Available

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151771: LICREQST.EXE Requesting a License Key from an Object"
-permalink: kb/151/Q151771/
+permalink: /kb/151/Q151771/
 ---
 
 ## Q151771: LICREQST.EXE Requesting a License Key from an Object

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98425: NUMBIGBUF Parameter Information for LM 2.1 and 2.2"
-permalink: kb/098/Q98425/
+permalink: /kb/098/Q98425/
 ---
 
 ## Q98425: NUMBIGBUF Parameter Information for LM 2.1 and 2.2

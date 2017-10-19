@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235898: XADM: Cannot Generate Offline Address Book"
-permalink: kb/235/Q235898/
+permalink: /kb/235/Q235898/
 ---
 
 ## Q235898: XADM: Cannot Generate Offline Address Book

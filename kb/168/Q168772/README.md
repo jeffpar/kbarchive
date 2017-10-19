@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168772: SMSINST: Uninstall Does Not Restore Autoexec.bat or Config.sys"
-permalink: kb/168/Q168772/
+permalink: /kb/168/Q168772/
 ---
 
 ## Q168772: SMSINST: Uninstall Does Not Restore Autoexec.bat or Config.sys

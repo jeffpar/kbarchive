@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251023: BUG: CComVariant::operator=(BSTR) Does Not Copy Embedded NULL"
-permalink: kb/251/Q251023/
+permalink: /kb/251/Q251023/
 ---
 
 ## Q251023: BUG: CComVariant::operator=(BSTR) Does Not Copy Embedded NULL

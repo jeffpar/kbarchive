@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268743: PRB: Passing DeviceObject to HalAssignSlotResources Is Mandatory"
-permalink: kb/268/Q268743/
+permalink: /kb/268/Q268743/
 ---
 
 ## Q268743: PRB: Passing DeviceObject to HalAssignSlotResources Is Mandatory

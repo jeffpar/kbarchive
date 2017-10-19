@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90904: Access Key in Label Before Control with No TabStop Problem"
-permalink: kb/090/Q90904/
+permalink: /kb/090/Q90904/
 ---
 
 ## Q90904: Access Key in Label Before Control with No TabStop Problem

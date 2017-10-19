@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184149: WD97: Word Creates Hyperlink When @ Is Inside Quotation Marks"
-permalink: kb/184/Q184149/
+permalink: /kb/184/Q184149/
 ---
 
 ## Q184149: WD97: Word Creates Hyperlink When @ Is Inside Quotation Marks

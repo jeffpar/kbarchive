@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118857: FileReadOperations/Sec in PerfMon Returns Bad Values"
-permalink: kb/118/Q118857/
+permalink: /kb/118/Q118857/
 ---
 
 ## Q118857: FileReadOperations/Sec in PerfMon Returns Bad Values

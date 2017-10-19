@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163285: FTP Service Does Not Pick Up Port Change"
-permalink: kb/163/Q163285/
+permalink: /kb/163/Q163285/
 ---
 
 ## Q163285: FTP Service Does Not Pick Up Port Change

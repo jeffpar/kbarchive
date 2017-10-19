@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50333: PRB: L1093, L1083, L1080, or L1092 Error, &quot;-&quot; in Link Options"
-permalink: kb/050/Q50333/
+permalink: /kb/050/Q50333/
 ---
 
 ## Q50333: PRB: L1093, L1083, L1080, or L1092 Error, &quot;-&quot; in Link Options

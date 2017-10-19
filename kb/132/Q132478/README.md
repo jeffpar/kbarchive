@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132478: PRB: Grid Column's CurrentControl Reverts to Text1 Default"
-permalink: kb/132/Q132478/
+permalink: /kb/132/Q132478/
 ---
 
 ## Q132478: PRB: Grid Column's CurrentControl Reverts to Text1 Default

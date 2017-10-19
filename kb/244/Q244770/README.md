@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244770: XADM: StorStat Error Message: Cannot Parse a Result Message"
-permalink: kb/244/Q244770/
+permalink: /kb/244/Q244770/
 ---
 
 ## Q244770: XADM: StorStat Error Message: Cannot Parse a Result Message

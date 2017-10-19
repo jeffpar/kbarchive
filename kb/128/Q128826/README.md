@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128826: Mac Srv: Server Settings Memory Incorrect on System 7.5"
-permalink: kb/128/Q128826/
+permalink: /kb/128/Q128826/
 ---
 
 ## Q128826: Mac Srv: Server Settings Memory Incorrect on System 7.5

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99176: Bookshelf: Encyclopedia Index Lists Incomplete Names"
-permalink: kb/099/Q99176/
+permalink: /kb/099/Q99176/
 ---
 
 ## Q99176: Bookshelf: Encyclopedia Index Lists Incomplete Names

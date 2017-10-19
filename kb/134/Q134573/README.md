@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134573: Error the First Time You Start Computer with Novell NE3200"
-permalink: kb/134/Q134573/
+permalink: /kb/134/Q134573/
 ---
 
 ## Q134573: Error the First Time You Start Computer with Novell NE3200

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124562: CPU Utilization on a NCR3450"
-permalink: kb/124/Q124562/
+permalink: /kb/124/Q124562/
 ---
 
 ## Q124562: CPU Utilization on a NCR3450

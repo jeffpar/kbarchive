@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85557: File Manager Shows Garbled Date for Year 2000 or Later"
-permalink: kb/085/Q85557/
+permalink: /kb/085/Q85557/
 ---
 
 ## Q85557: File Manager Shows Garbled Date for Year 2000 or Later

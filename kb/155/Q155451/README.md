@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155451: Microsoft Position on Support for Customers Deploying NDS"
-permalink: kb/155/Q155451/
+permalink: /kb/155/Q155451/
 ---
 
 ## Q155451: Microsoft Position on Support for Customers Deploying NDS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75336: SAMPLE: ScrolDlg.exe - Scrolling Dialog Box"
-permalink: kb/075/Q75336/
+permalink: /kb/075/Q75336/
 ---
 
 ## Q75336: SAMPLE: ScrolDlg.exe - Scrolling Dialog Box

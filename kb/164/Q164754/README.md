@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164754: Program Groups Not Created on Windows 95 or Windows NT 4.0"
-permalink: kb/164/Q164754/
+permalink: /kb/164/Q164754/
 ---
 
 ## Q164754: Program Groups Not Created on Windows 95 or Windows NT 4.0

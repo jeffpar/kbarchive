@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275742: SMS: How to Increase the Size of the SMS Provider Log File"
-permalink: kb/275/Q275742/
+permalink: /kb/275/Q275742/
 ---
 
 ## Q275742: SMS: How to Increase the Size of the SMS Provider Log File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72760: FIX: F2124 or Incorrect Results From Structure Array Use"
-permalink: kb/072/Q72760/
+permalink: /kb/072/Q72760/
 ---
 
 ## Q72760: FIX: F2124 or Incorrect Results From Structure Array Use

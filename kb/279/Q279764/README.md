@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279764: PRB: Multiple System Files Errors w/ VB 6.0 App on Windows 2000"
-permalink: kb/279/Q279764/
+permalink: /kb/279/Q279764/
 ---
 
 ## Q279764: PRB: Multiple System Files Errors w/ VB 6.0 App on Windows 2000

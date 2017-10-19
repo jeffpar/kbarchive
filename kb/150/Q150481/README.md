@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150481: Mac Encarta 96: Explanation of Installer Options"
-permalink: kb/150/Q150481/
+permalink: /kb/150/Q150481/
 ---
 
 ## Q150481: Mac Encarta 96: Explanation of Installer Options

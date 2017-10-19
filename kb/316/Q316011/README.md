@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316011: HOW TO: Programmatically Add Meta Information to All Pages"
-permalink: kb/316/Q316011/
+permalink: /kb/316/Q316011/
 ---
 
 ## Q316011: HOW TO: Programmatically Add Meta Information to All Pages

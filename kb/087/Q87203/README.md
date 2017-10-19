@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87203: PROFS: Why the Gateway PC Needs the Correct Date/Time"
-permalink: kb/087/Q87203/
+permalink: /kb/087/Q87203/
 ---
 
 ## Q87203: PROFS: Why the Gateway PC Needs the Correct Date/Time

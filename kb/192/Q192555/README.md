@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192555: Connection Option Is Not Available When You Install MSN"
-permalink: kb/192/Q192555/
+permalink: /kb/192/Q192555/
 ---
 
 ## Q192555: Connection Option Is Not Available When You Install MSN

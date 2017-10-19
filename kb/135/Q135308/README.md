@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135308: Disk Administrator Corrupts Partitions"
-permalink: kb/135/Q135308/
+permalink: /kb/135/Q135308/
 ---
 
 ## Q135308: Disk Administrator Corrupts Partitions

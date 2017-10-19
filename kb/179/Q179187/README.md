@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179187: Problems Using TAPI 2.1"
-permalink: kb/179/Q179187/
+permalink: /kb/179/Q179187/
 ---
 
 ## Q179187: Problems Using TAPI 2.1

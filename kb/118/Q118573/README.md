@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118573: Ancient Lands: GP Fault with Windows Sound System"
-permalink: kb/118/Q118573/
+permalink: /kb/118/Q118573/
 ---
 
 ## Q118573: Ancient Lands: GP Fault with Windows Sound System

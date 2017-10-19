@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132906: Cannot Configure Disabled Devices in Device Manager"
-permalink: kb/132/Q132906/
+permalink: /kb/132/Q132906/
 ---
 
 ## Q132906: Cannot Configure Disabled Devices in Device Manager

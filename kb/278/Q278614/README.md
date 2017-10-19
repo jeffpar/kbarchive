@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278614: XADM: Event 8285 When Replicating Mailboxes from Exch5.5 to AD"
-permalink: kb/278/Q278614/
+permalink: /kb/278/Q278614/
 ---
 
 ## Q278614: XADM: Event 8285 When Replicating Mailboxes from Exch5.5 to AD

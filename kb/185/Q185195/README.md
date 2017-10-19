@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185195: How to Use Key and Certificate Backup/Restore Utility"
-permalink: kb/185/Q185195/
+permalink: /kb/185/Q185195/
 ---
 
 ## Q185195: How to Use Key and Certificate Backup/Restore Utility

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137237: Default Logon Script Timeout Limits for MS Network Clients"
-permalink: kb/137/Q137237/
+permalink: /kb/137/Q137237/
 ---
 
 ## Q137237: Default Logon Script Timeout Limits for MS Network Clients

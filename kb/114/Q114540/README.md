@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114540: PC Gen: WA0940: Recommendations for Better Performance"
-permalink: kb/114/Q114540/
+permalink: /kb/114/Q114540/
 ---
 
 ## Q114540: PC Gen: WA0940: Recommendations for Better Performance

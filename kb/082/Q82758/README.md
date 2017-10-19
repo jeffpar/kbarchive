@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82758: What Disk to Install for HP DeskJet 500C"
-permalink: kb/082/Q82758/
+permalink: /kb/082/Q82758/
 ---
 
 ## Q82758: What Disk to Install for HP DeskJet 500C

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254800: XADM: Rules Do Not Work When Using Custom Recipient from the GAL"
-permalink: kb/254/Q254800/
+permalink: /kb/254/Q254800/
 ---
 
 ## Q254800: XADM: Rules Do Not Work When Using Custom Recipient from the GAL

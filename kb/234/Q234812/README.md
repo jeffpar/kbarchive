@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234812: XCLN: Outlook Does Not Recognize English (UK) Dictionary"
-permalink: kb/234/Q234812/
+permalink: /kb/234/Q234812/
 ---
 
 ## Q234812: XCLN: Outlook Does Not Recognize English (UK) Dictionary

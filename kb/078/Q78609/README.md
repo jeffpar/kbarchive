@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78609: Troubleshooting HIMEM.SYS"
-permalink: kb/078/Q78609/
+permalink: /kb/078/Q78609/
 ---
 
 ## Q78609: Troubleshooting HIMEM.SYS

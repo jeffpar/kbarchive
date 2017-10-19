@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188055: SMS: How to Remove Inactive SMS Site Servers"
-permalink: kb/188/Q188055/
+permalink: /kb/188/Q188055/
 ---
 
 ## Q188055: SMS: How to Remove Inactive SMS Site Servers

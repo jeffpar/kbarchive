@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161947: XCON: MTA: Address Space Replication with LOCAL Address Spaces"
-permalink: kb/161/Q161947/
+permalink: /kb/161/Q161947/
 ---
 
 ## Q161947: XCON: MTA: Address Space Replication with LOCAL Address Spaces

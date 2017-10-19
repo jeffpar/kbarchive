@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72249: CodeView Does Not Detect M61xx Math Errors"
-permalink: kb/072/Q72249/
+permalink: /kb/072/Q72249/
 ---
 
 ## Q72249: CodeView Does Not Detect M61xx Math Errors

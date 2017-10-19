@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175907: FIX: Hide Event Doesn't Fire Correctly in Internet Explorer 4.0"
-permalink: kb/175/Q175907/
+permalink: /kb/175/Q175907/
 ---
 
 ## Q175907: FIX: Hide Event Doesn't Fire Correctly in Internet Explorer 4.0

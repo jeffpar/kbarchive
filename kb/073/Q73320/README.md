@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73320: GW-BASIC/BASICA Keywords Not Supported in QBasic"
-permalink: kb/073/Q73320/
+permalink: /kb/073/Q73320/
 ---
 
 ## Q73320: GW-BASIC/BASICA Keywords Not Supported in QBasic

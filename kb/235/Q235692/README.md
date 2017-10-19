@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235692: XADM: Cannot Remove Exchange Server on Clustered Server"
-permalink: kb/235/Q235692/
+permalink: /kb/235/Q235692/
 ---
 
 ## Q235692: XADM: Cannot Remove Exchange Server on Clustered Server

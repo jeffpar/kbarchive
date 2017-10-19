@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286006: Games: Err Msg: Ddhelp Caused an Invalid Page Fault in Module..."
-permalink: kb/286/Q286006/
+permalink: /kb/286/Q286006/
 ---
 
 ## Q286006: Games: Err Msg: Ddhelp Caused an Invalid Page Fault in Module...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82262: Windows Err Msgs: Out of Memory Errors with Lotus 1-2-3"
-permalink: kb/082/Q82262/
+permalink: /kb/082/Q82262/
 ---
 
 ## Q82262: Windows Err Msgs: Out of Memory Errors with Lotus 1-2-3

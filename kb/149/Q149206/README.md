@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149206: Networks That Are No Longer Supported with Windows 95"
-permalink: kb/149/Q149206/
+permalink: /kb/149/Q149206/
 ---
 
 ## Q149206: Networks That Are No Longer Supported with Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135140: EPS File Printed Too Large with AmiPro"
-permalink: kb/135/Q135140/
+permalink: /kb/135/Q135140/
 ---
 
 ## Q135140: EPS File Printed Too Large with AmiPro

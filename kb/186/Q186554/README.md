@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186554: Terminal Server Error Messages: 2000 to 2199"
-permalink: kb/186/Q186554/
+permalink: /kb/186/Q186554/
 ---
 
 ## Q186554: Terminal Server Error Messages: 2000 to 2199

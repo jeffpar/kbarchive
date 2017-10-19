@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233508: HOWTO: Determine Compatibility Level of a SQL Server 7 Database"
-permalink: kb/233/Q233508/
+permalink: /kb/233/Q233508/
 ---
 
 ## Q233508: HOWTO: Determine Compatibility Level of a SQL Server 7 Database

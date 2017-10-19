@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189476: SNA Server Error 0352 - Unable To Open Configuration File,rc=618"
-permalink: kb/189/Q189476/
+permalink: /kb/189/Q189476/
 ---
 
 ## Q189476: SNA Server Error 0352 - Unable To Open Configuration File,rc=618

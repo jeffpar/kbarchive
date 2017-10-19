@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260557: Microsoft Mail Password Recovery"
-permalink: kb/260/Q260557/
+permalink: /kb/260/Q260557/
 ---
 
 ## Q260557: Microsoft Mail Password Recovery

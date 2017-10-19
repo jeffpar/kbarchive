@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108113: FIX: MFC DLLs Don't Unregister Window Classes"
-permalink: kb/108/Q108113/
+permalink: /kb/108/Q108113/
 ---
 
 ## Q108113: FIX: MFC DLLs Don't Unregister Window Classes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300157: One Customer's Profile Apparently Viewable by Another Customer"
-permalink: kb/300/Q300157/
+permalink: /kb/300/Q300157/
 ---
 
 ## Q300157: One Customer's Profile Apparently Viewable by Another Customer

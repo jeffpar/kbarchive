@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131716: 16-bit Program Group Control Requires Drive Letter"
-permalink: kb/131/Q131716/
+permalink: /kb/131/Q131716/
 ---
 
 ## Q131716: 16-bit Program Group Control Requires Drive Letter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180163: INI/CFG Files Corruption w/ Windows NT 4.0, Terminal Server"
-permalink: kb/180/Q180163/
+permalink: /kb/180/Q180163/
 ---
 
 ## Q180163: INI/CFG Files Corruption w/ Windows NT 4.0, Terminal Server

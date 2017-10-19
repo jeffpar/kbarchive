@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97340: GetGlyphOutline() Function Demonstration"
-permalink: kb/097/Q97340/
+permalink: /kb/097/Q97340/
 ---
 
 ## Q97340: GetGlyphOutline() Function Demonstration

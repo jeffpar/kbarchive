@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191358: SMS: Adding Audit.rul/cfg Versioning to SMS Service Packs"
-permalink: kb/191/Q191358/
+permalink: /kb/191/Q191358/
 ---
 
 ## Q191358: SMS: Adding Audit.rul/cfg Versioning to SMS Service Packs

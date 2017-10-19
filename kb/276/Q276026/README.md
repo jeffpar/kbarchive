@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276026: SNA Print Server May Insert Extra Form Feed"
-permalink: kb/276/Q276026/
+permalink: /kb/276/Q276026/
 ---
 
 ## Q276026: SNA Print Server May Insert Extra Form Feed

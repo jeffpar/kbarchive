@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164223: PC Cards May Not Be Recognized in Docking Station"
-permalink: kb/164/Q164223/
+permalink: /kb/164/Q164223/
 ---
 
 ## Q164223: PC Cards May Not Be Recognized in Docking Station

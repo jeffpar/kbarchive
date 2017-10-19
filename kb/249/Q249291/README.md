@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249291: BUG: Dialog Editor Doesn't Permit a Taskbar Icon if Titlebar Off"
-permalink: kb/249/Q249291/
+permalink: /kb/249/Q249291/
 ---
 
 ## Q249291: BUG: Dialog Editor Doesn't Permit a Taskbar Icon if Titlebar Off

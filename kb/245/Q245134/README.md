@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245134: Windows 95 Updates May Not Install in OSR 2.1 or 2.5"
-permalink: kb/245/Q245134/
+permalink: /kb/245/Q245134/
 ---
 
 ## Q245134: Windows 95 Updates May Not Install in OSR 2.1 or 2.5

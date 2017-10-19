@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246153: XCLN: How to Recover Items That Have Been Hard Deleted"
-permalink: kb/246/Q246153/
+permalink: /kb/246/Q246153/
 ---
 
 ## Q246153: XCLN: How to Recover Items That Have Been Hard Deleted

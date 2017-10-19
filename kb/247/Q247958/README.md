@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247958: How to Change the Path Used by the SMTP Service for the NTOP"
-permalink: kb/247/Q247958/
+permalink: /kb/247/Q247958/
 ---
 
 ## Q247958: How to Change the Path Used by the SMTP Service for the NTOP

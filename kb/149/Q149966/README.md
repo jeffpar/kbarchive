@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149966: BUG: istream::operator&gt;&gt;(long&amp;) Does Not Clear errno"
-permalink: kb/149/Q149966/
+permalink: /kb/149/Q149966/
 ---
 
 ## Q149966: BUG: istream::operator&gt;&gt;(long&amp;) Does Not Clear errno

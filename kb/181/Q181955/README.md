@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181955: XFOR: DAT Extension On Inbound Internet Mail Attachments"
-permalink: kb/181/Q181955/
+permalink: /kb/181/Q181955/
 ---
 
 ## Q181955: XFOR: DAT Extension On Inbound Internet Mail Attachments

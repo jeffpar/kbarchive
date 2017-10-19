@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101435: Throttle Goes to Idle with ThrustMaster"
-permalink: kb/101/Q101435/
+permalink: /kb/101/Q101435/
 ---
 
 ## Q101435: Throttle Goes to Idle with ThrustMaster

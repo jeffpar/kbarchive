@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248033: Typical Causes and Resolution of the &quot;HTTP 404 - File Not Found&quot;"
-permalink: kb/248/Q248033/
+permalink: /kb/248/Q248033/
 ---
 
 ## Q248033: Typical Causes and Resolution of the &quot;HTTP 404 - File Not Found&quot;

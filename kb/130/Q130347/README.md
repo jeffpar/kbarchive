@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130347: PRB: Bound Control Does Not Show Current Record Value"
-permalink: kb/130/Q130347/
+permalink: /kb/130/Q130347/
 ---
 
 ## Q130347: PRB: Bound Control Does Not Show Current Record Value

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98250: PC Win: No Default Method of Creating Folders"
-permalink: kb/098/Q98250/
+permalink: /kb/098/Q98250/
 ---
 
 ## Q98250: PC Win: No Default Method of Creating Folders

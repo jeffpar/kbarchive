@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96614: MSIPX Stops when Switching from 802.3 to ETHERNET2"
-permalink: kb/096/Q96614/
+permalink: /kb/096/Q96614/
 ---
 
 ## Q96614: MSIPX Stops when Switching from 802.3 to ETHERNET2

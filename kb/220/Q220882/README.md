@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220882: XADM: NDR Generated for Wrong Recipients"
-permalink: kb/220/Q220882/
+permalink: /kb/220/Q220882/
 ---
 
 ## Q220882: XADM: NDR Generated for Wrong Recipients

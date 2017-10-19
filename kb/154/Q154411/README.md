@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154411: SMS Err Msg: Unable to Initialize IPX Protocol"
-permalink: kb/154/Q154411/
+permalink: /kb/154/Q154411/
 ---
 
 ## Q154411: SMS Err Msg: Unable to Initialize IPX Protocol

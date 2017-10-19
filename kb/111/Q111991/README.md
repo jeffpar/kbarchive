@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111991: PRB: &quot;Compiled Code for This Line Too Long&quot; Error Message"
-permalink: kb/111/Q111991/
+permalink: /kb/111/Q111991/
 ---
 
 ## Q111991: PRB: &quot;Compiled Code for This Line Too Long&quot; Error Message

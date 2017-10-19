@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236394: WD97: Proofing Tools Do Not Function As Expected"
-permalink: kb/236/Q236394/
+permalink: /kb/236/Q236394/
 ---
 
 ## Q236394: WD97: Proofing Tools Do Not Function As Expected

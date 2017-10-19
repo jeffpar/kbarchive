@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118504: PC Ext: X.25 Err Msg: Mail Retry Count Exceeded..."
-permalink: kb/118/Q118504/
+permalink: /kb/118/Q118504/
 ---
 
 ## Q118504: PC Ext: X.25 Err Msg: Mail Retry Count Exceeded...

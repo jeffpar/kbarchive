@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143060: PC Gen: How to Install Mail Server 3.5 from the BackOffice CD"
-permalink: kb/143/Q143060/
+permalink: /kb/143/Q143060/
 ---
 
 ## Q143060: PC Gen: How to Install Mail Server 3.5 from the BackOffice CD

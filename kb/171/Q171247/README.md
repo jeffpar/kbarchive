@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171247: FIX: Setup Quits When Microsoft ODBC Driver for Oracle Is Used"
-permalink: kb/171/Q171247/
+permalink: /kb/171/Q171247/
 ---
 
 ## Q171247: FIX: Setup Quits When Microsoft ODBC Driver for Oracle Is Used

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166520: XADM: Admin Incorrectly Creates an MS Mail Connector Mailbox"
-permalink: kb/166/Q166520/
+permalink: /kb/166/Q166520/
 ---
 
 ## Q166520: XADM: Admin Incorrectly Creates an MS Mail Connector Mailbox

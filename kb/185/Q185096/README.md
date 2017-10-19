@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185096: Zone: How to Configure Your ZoneFriends Privacy Settings"
-permalink: kb/185/Q185096/
+permalink: /kb/185/Q185096/
 ---
 
 ## Q185096: Zone: How to Configure Your ZoneFriends Privacy Settings

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140960: XADM: Read Receipts not Accepted from French Exchange Server"
-permalink: kb/140/Q140960/
+permalink: /kb/140/Q140960/
 ---
 
 ## Q140960: XADM: Read Receipts not Accepted from French Exchange Server

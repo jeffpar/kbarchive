@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151883: How to Tell Which COMPAQ SSD You Are Using w/ Windows NT"
-permalink: kb/151/Q151883/
+permalink: /kb/151/Q151883/
 ---
 
 ## Q151883: How to Tell Which COMPAQ SSD You Are Using w/ Windows NT

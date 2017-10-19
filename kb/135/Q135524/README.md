@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135524: Diskeeper Version 1.0 Uninstall Causes Windows NT 3.51 to Hang"
-permalink: kb/135/Q135524/
+permalink: /kb/135/Q135524/
 ---
 
 ## Q135524: Diskeeper Version 1.0 Uninstall Causes Windows NT 3.51 to Hang

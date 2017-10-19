@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129909: Loading Letter-Head Paper To Print in Duplex Mode"
-permalink: kb/129/Q129909/
+permalink: /kb/129/Q129909/
 ---
 
 ## Q129909: Loading Letter-Head Paper To Print in Duplex Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153590: XFOR: Sent Time Incorrect on Incoming SMTP Messages"
-permalink: kb/153/Q153590/
+permalink: /kb/153/Q153590/
 ---
 
 ## Q153590: XFOR: Sent Time Incorrect on Incoming SMTP Messages

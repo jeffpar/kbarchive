@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83501: SETUP.TXT from Windows 3.1 Part B"
-permalink: kb/083/Q83501/
+permalink: /kb/083/Q83501/
 ---
 
 ## Q83501: SETUP.TXT from Windows 3.1 Part B

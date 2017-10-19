@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165309: FIX: Security Information Is Not Synchronized"
-permalink: kb/165/Q165309/
+permalink: /kb/165/Q165309/
 ---
 
 ## Q165309: FIX: Security Information Is Not Synchronized

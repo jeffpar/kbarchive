@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75359: PRB: One Cause of Fatal Exit 0x0140 &quot;Local Heap Is Busy&quot;"
-permalink: kb/075/Q75359/
+permalink: /kb/075/Q75359/
 ---
 
 ## Q75359: PRB: One Cause of Fatal Exit 0x0140 &quot;Local Heap Is Busy&quot;

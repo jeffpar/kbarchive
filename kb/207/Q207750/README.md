@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q207750: How to Prevent the Display of Control Panel Icons"
-permalink: kb/207/Q207750/
+permalink: /kb/207/Q207750/
 ---
 
 ## Q207750: How to Prevent the Display of Control Panel Icons

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170879: XADM: How to Use Multiple Offline Address Books in Exchange 5.0"
-permalink: kb/170/Q170879/
+permalink: /kb/170/Q170879/
 ---
 
 ## Q170879: XADM: How to Use Multiple Offline Address Books in Exchange 5.0

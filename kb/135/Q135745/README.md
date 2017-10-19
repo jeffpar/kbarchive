@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135745: PPT7: Objects Displayed in Grayscale in Black &amp; White View"
-permalink: kb/135/Q135745/
+permalink: /kb/135/Q135745/
 ---
 
 ## Q135745: PPT7: Objects Displayed in Grayscale in Black &amp; White View

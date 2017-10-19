@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154088: XCLN: Inserting File Via Shortcut Doesn't Work Properly"
-permalink: kb/154/Q154088/
+permalink: /kb/154/Q154088/
 ---
 
 ## Q154088: XCLN: Inserting File Via Shortcut Doesn't Work Properly

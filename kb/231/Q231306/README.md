@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231306: DNS Records with Same Name as Subdomain Are Moved or Missing"
-permalink: kb/231/Q231306/
+permalink: /kb/231/Q231306/
 ---
 
 ## Q231306: DNS Records with Same Name as Subdomain Are Moved or Missing

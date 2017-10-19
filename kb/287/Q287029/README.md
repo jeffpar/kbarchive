@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q287029: Problems with Repeated LoadAccelerators() Calls"
-permalink: kb/287/Q287029/
+permalink: /kb/287/Q287029/
 ---
 
 ## Q287029: Problems with Repeated LoadAccelerators() Calls

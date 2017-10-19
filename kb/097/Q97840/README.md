@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97840: FIX: DOSXNT DX1020 Error Using .WHILE and Processor Flag"
-permalink: kb/097/Q97840/
+permalink: /kb/097/Q97840/
 ---
 
 ## Q97840: FIX: DOSXNT DX1020 Error Using .WHILE and Processor Flag

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135894: Windows 95 CD-ROM General.txt File"
-permalink: kb/135/Q135894/
+permalink: /kb/135/Q135894/
 ---
 
 ## Q135894: Windows 95 CD-ROM General.txt File

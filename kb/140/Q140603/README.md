@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140603: SNMP Trap Frames Appear to be Dropped"
-permalink: kb/140/Q140603/
+permalink: /kb/140/Q140603/
 ---
 
 ## Q140603: SNMP Trap Frames Appear to be Dropped

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146074: XCLN: Restored Schedule+ File Not Synchronized w/ Server File"
-permalink: kb/146/Q146074/
+permalink: /kb/146/Q146074/
 ---
 
 ## Q146074: XCLN: Restored Schedule+ File Not Synchronized w/ Server File

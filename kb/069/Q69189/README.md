@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69189: EGA.SYS Added to CONFIG.SYS with OEM Video Driver"
-permalink: kb/069/Q69189/
+permalink: /kb/069/Q69189/
 ---
 
 ## Q69189: EGA.SYS Added to CONFIG.SYS with OEM Video Driver

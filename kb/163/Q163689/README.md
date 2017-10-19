@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163689: XCON: MTA: Content Conversion Error 210"
-permalink: kb/163/Q163689/
+permalink: /kb/163/Q163689/
 ---
 
 ## Q163689: XCON: MTA: Content Conversion Error 210

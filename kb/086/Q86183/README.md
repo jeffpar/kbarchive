@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86183: PC WSPlus: Importing WordPerfect Files"
-permalink: kb/086/Q86183/
+permalink: /kb/086/Q86183/
 ---
 
 ## Q86183: PC WSPlus: Importing WordPerfect Files

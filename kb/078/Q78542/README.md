@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78542: Retrieving MS-DOS Environment Vars from a Windows DLL"
-permalink: kb/078/Q78542/
+permalink: /kb/078/Q78542/
 ---
 
 ## Q78542: Retrieving MS-DOS Environment Vars from a Windows DLL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163364: FIX: Class-local typedef Causes C1001 in msc1.cpp, Line 1089"
-permalink: kb/163/Q163364/
+permalink: /kb/163/Q163364/
 ---
 
 ## Q163364: FIX: Class-local typedef Causes C1001 in msc1.cpp, Line 1089

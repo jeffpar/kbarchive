@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139016: Optimizing WFWG 3.11 for Real-Mode NetBIOS Programs"
-permalink: kb/139/Q139016/
+permalink: /kb/139/Q139016/
 ---
 
 ## Q139016: Optimizing WFWG 3.11 for Real-Mode NetBIOS Programs

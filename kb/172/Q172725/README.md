@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172725: PC Pack/Barney Island: Minimum System Requirements for Windows"
-permalink: kb/172/Q172725/
+permalink: /kb/172/Q172725/
 ---
 
 ## Q172725: PC Pack/Barney Island: Minimum System Requirements for Windows

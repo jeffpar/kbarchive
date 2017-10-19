@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178662: Package Command Manager Service Fails to Start on Remote Servers"
-permalink: kb/178/Q178662/
+permalink: /kb/178/Q178662/
 ---
 
 ## Q178662: Package Command Manager Service Fails to Start on Remote Servers

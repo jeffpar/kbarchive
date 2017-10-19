@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153001: XFOR: DNS MX Records and CNAMEs"
-permalink: kb/153/Q153001/
+permalink: /kb/153/Q153001/
 ---
 
 ## Q153001: XFOR: DNS MX Records and CNAMEs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193580: PRB: Checking Out Structure.cnf in VSS Causes FrontPage Error"
-permalink: kb/193/Q193580/
+permalink: /kb/193/Q193580/
 ---
 
 ## Q193580: PRB: Checking Out Structure.cnf in VSS Causes FrontPage Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102466: How to Update a Character Field from a Popup"
-permalink: kb/102/Q102466/
+permalink: /kb/102/Q102466/
 ---
 
 ## Q102466: How to Update a Character Field from a Popup

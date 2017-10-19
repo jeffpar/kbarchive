@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302921: Microsoft Office Bar Blocks &quot;Help And Settings&quot; And &quot;Sign Out&quot; W"
-permalink: kb/302/Q302921/
+permalink: /kb/302/Q302921/
 ---
 
 ## Q302921: Microsoft Office Bar Blocks &quot;Help And Settings&quot; And &quot;Sign Out&quot; W

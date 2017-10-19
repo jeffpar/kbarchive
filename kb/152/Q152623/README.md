@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152623: XCLN: The Setup Editor is Language Specific"
-permalink: kb/152/Q152623/
+permalink: /kb/152/Q152623/
 ---
 
 ## Q152623: XCLN: The Setup Editor is Language Specific

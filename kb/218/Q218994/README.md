@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218994: How to Assign Printers to Terminal Server Clients"
-permalink: kb/218/Q218994/
+permalink: /kb/218/Q218994/
 ---
 
 ## Q218994: How to Assign Printers to Terminal Server Clients

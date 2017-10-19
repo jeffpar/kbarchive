@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175096: XCLN: Electronic Forms Designer Installation Hangs on Exchange"
-permalink: kb/175/Q175096/
+permalink: /kb/175/Q175096/
 ---
 
 ## Q175096: XCLN: Electronic Forms Designer Installation Hangs on Exchange

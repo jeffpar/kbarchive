@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146253: XCLN: How to Install a Form Created with EFD"
-permalink: kb/146/Q146253/
+permalink: /kb/146/Q146253/
 ---
 
 ## Q146253: XCLN: How to Install a Form Created with EFD

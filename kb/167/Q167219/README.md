@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167219: WD97: Word Hangs When You Open Version of Protected Document"
-permalink: kb/167/Q167219/
+permalink: /kb/167/Q167219/
 ---
 
 ## Q167219: WD97: Word Hangs When You Open Version of Protected Document

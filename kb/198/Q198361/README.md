@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198361: WD97: Multiple Spaces After Colon/Tab Flagged in Grammar Check"
-permalink: kb/198/Q198361/
+permalink: /kb/198/Q198361/
 ---
 
 ## Q198361: WD97: Multiple Spaces After Colon/Tab Flagged in Grammar Check

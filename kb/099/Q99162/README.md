@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99162: INFO: COMMON.RES Provides Common Bitmaps, Cursors, and Icons"
-permalink: kb/099/Q99162/
+permalink: /kb/099/Q99162/
 ---
 
 ## Q99162: INFO: COMMON.RES Provides Common Bitmaps, Cursors, and Icons

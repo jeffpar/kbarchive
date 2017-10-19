@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190881: Analyze6.exe Utility for Visual SourceSafe"
-permalink: kb/190/Q190881/
+permalink: /kb/190/Q190881/
 ---
 
 ## Q190881: Analyze6.exe Utility for Visual SourceSafe

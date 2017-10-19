@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219405: SAMPLE: SSApplet.exe Connects to SourceSafe via Web Using Java"
-permalink: kb/219/Q219405/
+permalink: /kb/219/Q219405/
 ---
 
 ## Q219405: SAMPLE: SSApplet.exe Connects to SourceSafe via Web Using Java

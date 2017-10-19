@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313889: XGEN:  Microsoft Does Not Recommend Installing Exchange Server 5"
-permalink: kb/313/Q313889/
+permalink: /kb/313/Q313889/
 ---
 
 ## Q313889: XGEN:  Microsoft Does Not Recommend Installing Exchange Server 5

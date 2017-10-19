@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159229: S3 Trio64V+ Not Supported on IBM Carolina Computer"
-permalink: kb/159/Q159229/
+permalink: /kb/159/Q159229/
 ---
 
 ## Q159229: S3 Trio64V+ Not Supported on IBM Carolina Computer

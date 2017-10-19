@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274642: MSN Explorer Can't Reconnect Over Dialup"
-permalink: kb/274/Q274642/
+permalink: /kb/274/Q274642/
 ---
 
 ## Q274642: MSN Explorer Can't Reconnect Over Dialup

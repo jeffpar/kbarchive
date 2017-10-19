@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66582: ASD: Placement Accuracy of Navigational Aids"
-permalink: kb/066/Q66582/
+permalink: /kb/066/Q66582/
 ---
 
 ## Q66582: ASD: Placement Accuracy of Navigational Aids

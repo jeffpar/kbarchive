@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q131631: [LogonHistory] not Complete when Switching Site/Domain"
-permalink: kb/131/Q131631/
+title: "Q131631: &#91;LogonHistory&#93; not Complete when Switching Site/Domain"
+permalink: /kb/131/Q131631/
 ---
 
-## Q131631: [LogonHistory] not Complete when Switching Site/Domain
+## Q131631: &#91;LogonHistory&#93; not Complete when Switching Site/Domain
 
 	Article: Q131631
 	Product(s): Microsoft Systems Management Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290907: FIX: Race Condition on Heap Variable Causes AV in Oracle ODBC"
-permalink: kb/290/Q290907/
+permalink: /kb/290/Q290907/
 ---
 
 ## Q290907: FIX: Race Condition on Heap Variable Causes AV in Oracle ODBC

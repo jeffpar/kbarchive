@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158493: WD97: Wizard Vanishes When Run from Banyan Vines Server"
-permalink: kb/158/Q158493/
+permalink: /kb/158/Q158493/
 ---
 
 ## Q158493: WD97: Wizard Vanishes When Run from Banyan Vines Server

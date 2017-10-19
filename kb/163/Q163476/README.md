@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163476: MSB Ocean: Files Installed on the Macintosh"
-permalink: kb/163/Q163476/
+permalink: /kb/163/Q163476/
 ---
 
 ## Q163476: MSB Ocean: Files Installed on the Macintosh

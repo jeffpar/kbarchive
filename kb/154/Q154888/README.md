@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154888: SYSDIFF /inf Does Not Propagate Shortcuts to the Desktop"
-permalink: kb/154/Q154888/
+permalink: /kb/154/Q154888/
 ---
 
 ## Q154888: SYSDIFF /inf Does Not Propagate Shortcuts to the Desktop

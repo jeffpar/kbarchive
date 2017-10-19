@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229114: XFOR: InterOrg Fails to Replicate Public Folder"
-permalink: kb/229/Q229114/
+permalink: /kb/229/Q229114/
 ---
 
 ## Q229114: XFOR: InterOrg Fails to Replicate Public Folder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64880: Using HIMEM.SYS with AT&amp;T 6300 and AT&amp;T 6300 Plus"
-permalink: kb/064/Q64880/
+permalink: /kb/064/Q64880/
 ---
 
 ## Q64880: Using HIMEM.SYS with AT&amp;T 6300 and AT&amp;T 6300 Plus

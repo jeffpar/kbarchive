@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309563: Games: Game Stops Responding a Few Minutes Into Play"
-permalink: kb/309/Q309563/
+permalink: /kb/309/Q309563/
 ---
 
 ## Q309563: Games: Game Stops Responding a Few Minutes Into Play

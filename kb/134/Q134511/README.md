@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134511: Err Msg: Software Installed Interferes w/Display Mini-Driver"
-permalink: kb/134/Q134511/
+permalink: /kb/134/Q134511/
 ---
 
 ## Q134511: Err Msg: Software Installed Interferes w/Display Mini-Driver

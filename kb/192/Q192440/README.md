@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192440: XADM: Backup Stops Because of Communications Error"
-permalink: kb/192/Q192440/
+permalink: /kb/192/Q192440/
 ---
 
 ## Q192440: XADM: Backup Stops Because of Communications Error

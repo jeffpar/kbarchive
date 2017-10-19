@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194193: STOP 0xA in Sfmatalk.sys When Copying Files on an SFM Volume"
-permalink: kb/194/Q194193/
+permalink: /kb/194/Q194193/
 ---
 
 ## Q194193: STOP 0xA in Sfmatalk.sys When Copying Files on an SFM Volume

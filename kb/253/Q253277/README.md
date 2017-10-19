@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253277: XCLN: How to Delete Messages That Have a Blank Subject Line"
-permalink: kb/253/Q253277/
+permalink: /kb/253/Q253277/
 ---
 
 ## Q253277: XCLN: How to Delete Messages That Have a Blank Subject Line

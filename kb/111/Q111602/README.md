@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111602: FIX: GetPrivateProfileInt() May Not Read Correct Value"
-permalink: kb/111/Q111602/
+permalink: /kb/111/Q111602/
 ---
 
 ## Q111602: FIX: GetPrivateProfileInt() May Not Read Correct Value

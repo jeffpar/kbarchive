@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88759: Using the Quadram EGA Prosync Card with Windows"
-permalink: kb/088/Q88759/
+permalink: /kb/088/Q88759/
 ---
 
 ## Q88759: Using the Quadram EGA Prosync Card with Windows

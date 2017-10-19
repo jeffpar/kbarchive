@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136477: How to Install MingLiU Fonts for BIG5 Applications"
-permalink: kb/136/Q136477/
+permalink: /kb/136/Q136477/
 ---
 
 ## Q136477: How to Install MingLiU Fonts for BIG5 Applications

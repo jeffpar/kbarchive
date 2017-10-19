@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129219: PC-NFSpro 1.1 Not Supported in Windows 95"
-permalink: kb/129/Q129219/
+permalink: /kb/129/Q129219/
 ---
 
 ## Q129219: PC-NFSpro 1.1 Not Supported in Windows 95

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242416: HOWTO: Enumerate 16-bit Tasks on Window NT Using Visual Basic"
-permalink: kb/242/Q242416/
+permalink: /kb/242/Q242416/
 ---
 
 ## Q242416: HOWTO: Enumerate 16-bit Tasks on Window NT Using Visual Basic

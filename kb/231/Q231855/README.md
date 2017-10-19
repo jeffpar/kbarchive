@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231855: Wordpad.exe May Delete a File With Read Only Permissions"
-permalink: kb/231/Q231855/
+permalink: /kb/231/Q231855/
 ---
 
 ## Q231855: Wordpad.exe May Delete a File With Read Only Permissions

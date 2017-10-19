@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99019: Undelete Err Msg: Cannot Load with UNDELETE Already Resident"
-permalink: kb/099/Q99019/
+permalink: /kb/099/Q99019/
 ---
 
 ## Q99019: Undelete Err Msg: Cannot Load with UNDELETE Already Resident

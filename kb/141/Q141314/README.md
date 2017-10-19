@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141314: FIX: Label Wizard Allows Fields to Sort with View"
-permalink: kb/141/Q141314/
+permalink: /kb/141/Q141314/
 ---
 
 ## Q141314: FIX: Label Wizard Allows Fields to Sort with View

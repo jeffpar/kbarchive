@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253205: Long Event to Trap Translator Description Causes Error Message"
-permalink: kb/253/Q253205/
+permalink: /kb/253/Q253205/
 ---
 
 ## Q253205: Long Event to Trap Translator Description Causes Error Message

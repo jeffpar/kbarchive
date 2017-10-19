@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158517: Stop 0x000000094 Running Windows NT 4.0 and NFS Maestro"
-permalink: kb/158/Q158517/
+permalink: /kb/158/Q158517/
 ---
 
 ## Q158517: Stop 0x000000094 Running Windows NT 4.0 and NFS Maestro

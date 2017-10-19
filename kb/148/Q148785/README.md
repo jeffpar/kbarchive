@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148785: New Functions Included in Foxtools.fll"
-permalink: kb/148/Q148785/
+permalink: /kb/148/Q148785/
 ---
 
 ## Q148785: New Functions Included in Foxtools.fll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126273: PRB: Columns Missing in .DBF File Created in Microsoft Excel"
-permalink: kb/126/Q126273/
+permalink: /kb/126/Q126273/
 ---
 
 ## Q126273: PRB: Columns Missing in .DBF File Created in Microsoft Excel

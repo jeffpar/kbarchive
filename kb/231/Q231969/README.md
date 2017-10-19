@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231969: XADM: Deliv-Ext-Cont-Types Attribute Is Not Recreated"
-permalink: kb/231/Q231969/
+permalink: /kb/231/Q231969/
 ---
 
 ## Q231969: XADM: Deliv-Ext-Cont-Types Attribute Is Not Recreated

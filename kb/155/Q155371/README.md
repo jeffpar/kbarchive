@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155371: Windows NT 4.0 Does Not Support HP ScanJet Interface Card"
-permalink: kb/155/Q155371/
+permalink: /kb/155/Q155371/
 ---
 
 ## Q155371: Windows NT 4.0 Does Not Support HP ScanJet Interface Card

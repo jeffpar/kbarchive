@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103595: Obtaining Subscript Info for Array Passed by Reference"
-permalink: kb/103/Q103595/
+permalink: /kb/103/Q103595/
 ---
 
 ## Q103595: Obtaining Subscript Info for Array Passed by Reference

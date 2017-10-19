@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155430: XCLN: ErrMsg: No Transport Provider was Available for Delivery"
-permalink: kb/155/Q155430/
+permalink: /kb/155/Q155430/
 ---
 
 ## Q155430: XCLN: ErrMsg: No Transport Provider was Available for Delivery

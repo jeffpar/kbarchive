@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137018: Availability of C2 Security Compliant Windows NT"
-permalink: kb/137/Q137018/
+permalink: /kb/137/Q137018/
 ---
 
 ## Q137018: Availability of C2 Security Compliant Windows NT

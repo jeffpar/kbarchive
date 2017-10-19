@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198903: XFOR: PROFS Connector Does not Support &quot;Messages&quot;"
-permalink: kb/198/Q198903/
+permalink: /kb/198/Q198903/
 ---
 
 ## Q198903: XFOR: PROFS Connector Does not Support &quot;Messages&quot;

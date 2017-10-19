@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67216: Preview Font Sometimes Available in TERMINAL.EXE"
-permalink: kb/067/Q67216/
+permalink: /kb/067/Q67216/
 ---
 
 ## Q67216: Preview Font Sometimes Available in TERMINAL.EXE

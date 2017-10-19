@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152254: BUG: LNK2001 on Operator&gt;&gt; with Class from MFC Extension DLL"
-permalink: kb/152/Q152254/
+permalink: /kb/152/Q152254/
 ---
 
 ## Q152254: BUG: LNK2001 on Operator&gt;&gt; with Class from MFC Extension DLL

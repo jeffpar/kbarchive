@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114778: Windows NT Terminal Supports XModem-1K Protocol"
-permalink: kb/114/Q114778/
+permalink: /kb/114/Q114778/
 ---
 
 ## Q114778: Windows NT Terminal Supports XModem-1K Protocol

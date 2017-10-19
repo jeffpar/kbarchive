@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87181: PROFS: How to Trace Where Mail Failed"
-permalink: kb/087/Q87181/
+permalink: /kb/087/Q87181/
 ---
 
 ## Q87181: PROFS: How to Trace Where Mail Failed

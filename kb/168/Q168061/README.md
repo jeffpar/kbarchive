@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168061: WD97: Word Appears to Hang Sending Mail on NT 3.51 with MS Mail"
-permalink: kb/168/Q168061/
+permalink: /kb/168/Q168061/
 ---
 
 ## Q168061: WD97: Word Appears to Hang Sending Mail on NT 3.51 with MS Mail

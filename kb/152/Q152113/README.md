@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152113: XADM: How to Send as a Public Folder"
-permalink: kb/152/Q152113/
+permalink: /kb/152/Q152113/
 ---
 
 ## Q152113: XADM: How to Send as a Public Folder

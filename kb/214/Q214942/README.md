@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214942: SMS: WQL Queries Fail When Using Datetime in the Format 19981201"
-permalink: kb/214/Q214942/
+permalink: /kb/214/Q214942/
 ---
 
 ## Q214942: SMS: WQL Queries Fail When Using Datetime in the Format 19981201

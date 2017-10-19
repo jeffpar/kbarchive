@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177183: Unable to Add Components from Corporate Evaluation CD-ROM"
-permalink: kb/177/Q177183/
+permalink: /kb/177/Q177183/
 ---
 
 ## Q177183: Unable to Add Components from Corporate Evaluation CD-ROM

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149708: Printed Text May Be the Wrong Color"
-permalink: kb/149/Q149708/
+permalink: /kb/149/Q149708/
 ---
 
 ## Q149708: Printed Text May Be the Wrong Color

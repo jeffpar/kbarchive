@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139297: Alternate Address on IBM Token Ring Card Results in Error"
-permalink: kb/139/Q139297/
+permalink: /kb/139/Q139297/
 ---
 
 ## Q139297: Alternate Address on IBM Token Ring Card Results in Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164964: Font Size Changes on Subsequent Print Jobs"
-permalink: kb/164/Q164964/
+permalink: /kb/164/Q164964/
 ---
 
 ## Q164964: Font Size Changes on Subsequent Print Jobs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160508: Unnecessary DNS Zone Transfers"
-permalink: kb/160/Q160508/
+permalink: /kb/160/Q160508/
 ---
 
 ## Q160508: Unnecessary DNS Zone Transfers

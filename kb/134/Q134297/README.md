@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134297: Redraw Problems with Cirrus Logic SVGA 5402 Adapters"
-permalink: kb/134/Q134297/
+permalink: /kb/134/Q134297/
 ---
 
 ## Q134297: Redraw Problems with Cirrus Logic SVGA 5402 Adapters

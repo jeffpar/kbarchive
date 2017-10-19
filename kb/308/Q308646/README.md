@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308646: SMS: Screen-Redraw Issues Advertising Programs with Custom Icons"
-permalink: kb/308/Q308646/
+permalink: /kb/308/Q308646/
 ---
 
 ## Q308646: SMS: Screen-Redraw Issues Advertising Programs with Custom Icons

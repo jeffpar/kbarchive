@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105963: PC Forms: Unable to Set Message Priority in E-Forms"
-permalink: kb/105/Q105963/
+permalink: /kb/105/Q105963/
 ---
 
 ## Q105963: PC Forms: Unable to Set Message Priority in E-Forms

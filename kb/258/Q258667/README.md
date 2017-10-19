@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258667: Baseball 2001: Cannot Use Mouse to Play or Pause Instant Replay"
-permalink: kb/258/Q258667/
+permalink: /kb/258/Q258667/
 ---
 
 ## Q258667: Baseball 2001: Cannot Use Mouse to Play or Pause Instant Replay

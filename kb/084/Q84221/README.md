@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84221: Problem Running DOS Applications with CompuAdd 325TFX, 325NX"
-permalink: kb/084/Q84221/
+permalink: /kb/084/Q84221/
 ---
 
 ## Q84221: Problem Running DOS Applications with CompuAdd 325TFX, 325NX

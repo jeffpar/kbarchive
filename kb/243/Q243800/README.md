@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243800: Activation of COM DLL Registered with Long Path Does Not Succeed"
-permalink: kb/243/Q243800/
+permalink: /kb/243/Q243800/
 ---
 
 ## Q243800: Activation of COM DLL Registered with Long Path Does Not Succeed

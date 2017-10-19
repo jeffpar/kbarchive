@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164359: BUG: Incorrect Evaluation of Equation with Variables"
-permalink: kb/164/Q164359/
+permalink: /kb/164/Q164359/
 ---
 
 ## Q164359: BUG: Incorrect Evaluation of Equation with Variables

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254228: Remote Control of Clients Does Not Work with Winsock2 with IP"
-permalink: kb/254/Q254228/
+permalink: /kb/254/Q254228/
 ---
 
 ## Q254228: Remote Control of Clients Does Not Work with Winsock2 with IP

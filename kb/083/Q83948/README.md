@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83948: Lexis 2000 Version 1.76 Is Required for Windows 3.1"
-permalink: kb/083/Q83948/
+permalink: /kb/083/Q83948/
 ---
 
 ## Q83948: Lexis 2000 Version 1.76 Is Required for Windows 3.1

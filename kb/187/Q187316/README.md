@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187316: Err Msg: Cannot Import &lt;File&gt;. Error Opening the File."
-permalink: kb/187/Q187316/
+permalink: /kb/187/Q187316/
 ---
 
 ## Q187316: Err Msg: Cannot Import &lt;File&gt;. Error Opening the File.

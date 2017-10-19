@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162618: Trap in Snalink.exe( _bm_rel@04 ) with DCA ISCA X.25 Adapter"
-permalink: kb/162/Q162618/
+permalink: /kb/162/Q162618/
 ---
 
 ## Q162618: Trap in Snalink.exe( _bm_rel@04 ) with DCA ISCA X.25 Adapter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163816: XCLN: How to Suppress the Mail Header when Printing Message"
-permalink: kb/163/Q163816/
+permalink: /kb/163/Q163816/
 ---
 
 ## Q163816: XCLN: How to Suppress the Mail Header when Printing Message

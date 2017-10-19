@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190050: PRB: BuildFile Property of DHTML Application Is Missing"
-permalink: kb/190/Q190050/
+permalink: /kb/190/Q190050/
 ---
 
 ## Q190050: PRB: BuildFile Property of DHTML Application Is Missing

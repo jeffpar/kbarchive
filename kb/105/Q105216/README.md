@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105216: Windows Err Msg: The Program Group File Has Been Modified"
-permalink: kb/105/Q105216/
+permalink: /kb/105/Q105216/
 ---
 
 ## Q105216: Windows Err Msg: The Program Group File Has Been Modified

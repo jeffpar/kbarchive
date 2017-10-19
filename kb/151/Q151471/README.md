@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151471: Processes Do Not Respond When NTFS Encounters an Error"
-permalink: kb/151/Q151471/
+permalink: /kb/151/Q151471/
 ---
 
 ## Q151471: Processes Do Not Respond When NTFS Encounters an Error

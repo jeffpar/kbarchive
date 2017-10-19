@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183263: XADM: PAB-GAL Synchronization Tool"
-permalink: kb/183/Q183263/
+permalink: /kb/183/Q183263/
 ---
 
 ## Q183263: XADM: PAB-GAL Synchronization Tool

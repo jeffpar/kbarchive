@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179808: Encarta 98 Deluxe Edition: Minimum System Requirements"
-permalink: kb/179/Q179808/
+permalink: /kb/179/Q179808/
 ---
 
 ## Q179808: Encarta 98 Deluxe Edition: Minimum System Requirements

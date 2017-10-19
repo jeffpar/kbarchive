@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63347: PRB: Clicking Noises While Playing Sounds on SoundBlaster Card"
-permalink: kb/063/Q63347/
+permalink: /kb/063/Q63347/
 ---
 
 ## Q63347: PRB: Clicking Noises While Playing Sounds on SoundBlaster Card

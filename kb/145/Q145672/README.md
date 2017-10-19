@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145672: Pregnancy: How Do I Install and Set Up My Sound Card?"
-permalink: kb/145/Q145672/
+permalink: /kb/145/Q145672/
 ---
 
 ## Q145672: Pregnancy: How Do I Install and Set Up My Sound Card?

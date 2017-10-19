@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171735: Err Msg: Detection Manager Error: Failed to Hook Ring 0 Code"
-permalink: kb/171/Q171735/
+permalink: /kb/171/Q171735/
 ---
 
 ## Q171735: Err Msg: Detection Manager Error: Failed to Hook Ring 0 Code

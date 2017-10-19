@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245462: Inserting an Excel Worksheet Object May Not Work"
-permalink: kb/245/Q245462/
+permalink: /kb/245/Q245462/
 ---
 
 ## Q245462: Inserting an Excel Worksheet Object May Not Work

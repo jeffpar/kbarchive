@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150800: Domain Browsing with TCP/IP and LMHOSTS Files"
-permalink: kb/150/Q150800/
+permalink: /kb/150/Q150800/
 ---
 
 ## Q150800: Domain Browsing with TCP/IP and LMHOSTS Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141411: Bookshelf 1995: Spell Check Does Not Seem to Function"
-permalink: kb/141/Q141411/
+permalink: /kb/141/Q141411/
 ---
 
 ## Q141411: Bookshelf 1995: Spell Check Does Not Seem to Function

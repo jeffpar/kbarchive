@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231488: XADM: Public Folder Object Is Not Found in the Directory"
-permalink: kb/231/Q231488/
+permalink: /kb/231/Q231488/
 ---
 
 ## Q231488: XADM: Public Folder Object Is Not Found in the Directory

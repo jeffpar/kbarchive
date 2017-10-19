@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141943: Colors Change Briefly When Inserting Object in WordPad"
-permalink: kb/141/Q141943/
+permalink: /kb/141/Q141943/
 ---
 
 ## Q141943: Colors Change Briefly When Inserting Object in WordPad

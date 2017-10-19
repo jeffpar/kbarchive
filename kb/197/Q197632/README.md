@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197632: Registry Hive Fragmentation Leads to Excessive Size"
-permalink: kb/197/Q197632/
+permalink: /kb/197/Q197632/
 ---
 
 ## Q197632: Registry Hive Fragmentation Leads to Excessive Size

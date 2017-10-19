@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156229: XFOR: Errors 2140 and 4074 When Starting the IMC"
-permalink: kb/156/Q156229/
+permalink: /kb/156/Q156229/
 ---
 
 ## Q156229: XFOR: Errors 2140 and 4074 When Starting the IMC

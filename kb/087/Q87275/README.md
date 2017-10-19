@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87275: BACKSPACE Key Does Not Delete Characters in VT100 Emulation"
-permalink: kb/087/Q87275/
+permalink: /kb/087/Q87275/
 ---
 
 ## Q87275: BACKSPACE Key Does Not Delete Characters in VT100 Emulation

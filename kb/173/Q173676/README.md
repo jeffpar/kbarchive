@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173676: Client Cannot Resolve MX Record via Microsoft DNS Server"
-permalink: kb/173/Q173676/
+permalink: /kb/173/Q173676/
 ---
 
 ## Q173676: Client Cannot Resolve MX Record via Microsoft DNS Server

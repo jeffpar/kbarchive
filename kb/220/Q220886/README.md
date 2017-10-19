@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220886: Active SNA Server Clients Do Not Appear in License Manager"
-permalink: kb/220/Q220886/
+permalink: /kb/220/Q220886/
 ---
 
 ## Q220886: Active SNA Server Clients Do Not Appear in License Manager

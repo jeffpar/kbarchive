@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175272: Windows 3.x CPIC or APPC Fails; Host Sends Sense Code 10086040"
-permalink: kb/175/Q175272/
+permalink: /kb/175/Q175272/
 ---
 
 ## Q175272: Windows 3.x CPIC or APPC Fails; Host Sends Sense Code 10086040

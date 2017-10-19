@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272670: Golf 2001: Sounds in the Game Stutter or Are Distorted"
-permalink: kb/272/Q272670/
+permalink: /kb/272/Q272670/
 ---
 
 ## Q272670: Golf 2001: Sounds in the Game Stutter or Are Distorted

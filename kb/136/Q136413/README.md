@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136413: How to Send E-mail to CompuServe Accounts"
-permalink: kb/136/Q136413/
+permalink: /kb/136/Q136413/
 ---
 
 ## Q136413: How to Send E-mail to CompuServe Accounts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189631: HOWTO: Add the Entire Directory Structure to a RichTextBox"
-permalink: kb/189/Q189631/
+permalink: /kb/189/Q189631/
 ---
 
 ## Q189631: HOWTO: Add the Entire Directory Structure to a RichTextBox

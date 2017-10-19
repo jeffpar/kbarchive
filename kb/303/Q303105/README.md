@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303105: PRB: Cursor Moves to First Column If You Use Keyboard to Scroll"
-permalink: kb/303/Q303105/
+permalink: /kb/303/Q303105/
 ---
 
 ## Q303105: PRB: Cursor Moves to First Column If You Use Keyboard to Scroll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61512: Mac Hyp: msmail Functions Cause Message Box to Appear"
-permalink: kb/061/Q61512/
+permalink: /kb/061/Q61512/
 ---
 
 ## Q61512: Mac Hyp: msmail Functions Cause Message Box to Appear

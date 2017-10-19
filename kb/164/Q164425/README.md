@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164425: Cannot Use Keyboard to Set Connection Time in CompuServe Mail"
-permalink: kb/164/Q164425/
+permalink: /kb/164/Q164425/
 ---
 
 ## Q164425: Cannot Use Keyboard to Set Connection Time in CompuServe Mail

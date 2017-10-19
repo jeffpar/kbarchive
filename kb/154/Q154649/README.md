@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154649: FIX: CSocket Operation Hangs if a Timer is Active"
-permalink: kb/154/Q154649/
+permalink: /kb/154/Q154649/
 ---
 
 ## Q154649: FIX: CSocket Operation Hangs if a Timer is Active

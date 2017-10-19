@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132398: HOWTO: Use Bookmarks with the MFC ODBC Database Classes"
-permalink: kb/132/Q132398/
+permalink: /kb/132/Q132398/
 ---
 
 ## Q132398: HOWTO: Use Bookmarks with the MFC ODBC Database Classes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74620: Problems Printing to FILE:="
-permalink: kb/074/Q74620/
+permalink: /kb/074/Q74620/
 ---
 
 ## Q74620: Problems Printing to FILE:=

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154517: HOWTO: Use the DrawText API Call from Visual Basic"
-permalink: kb/154/Q154517/
+permalink: /kb/154/Q154517/
 ---
 
 ## Q154517: HOWTO: Use the DrawText API Call from Visual Basic

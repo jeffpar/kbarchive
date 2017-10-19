@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200447: SMS: SMS.MSC Randomly Disappears"
-permalink: kb/200/Q200447/
+permalink: /kb/200/Q200447/
 ---
 
 ## Q200447: SMS: SMS.MSC Randomly Disappears

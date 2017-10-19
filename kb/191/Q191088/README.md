@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191088: Printer Prompts for Paper with Dutch Workstations"
-permalink: kb/191/Q191088/
+permalink: /kb/191/Q191088/
 ---
 
 ## Q191088: Printer Prompts for Paper with Dutch Workstations

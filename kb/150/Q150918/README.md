@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150918: FPNW Event ID 2630 Unable to Access PDC for Write"
-permalink: kb/150/Q150918/
+permalink: /kb/150/Q150918/
 ---
 
 ## Q150918: FPNW Event ID 2630 Unable to Access PDC for Write

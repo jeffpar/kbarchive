@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168059: WD97: Can't Use Word 97 as Server for Word 6.0/95 Link"
-permalink: kb/168/Q168059/
+permalink: /kb/168/Q168059/
 ---
 
 ## Q168059: WD97: Can't Use Word 97 as Server for Word 6.0/95 Link

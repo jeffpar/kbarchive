@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192545: PC WRmt: Windows Remote Client Displays Wrong Date after 2000"
-permalink: kb/192/Q192545/
+permalink: /kb/192/Q192545/
 ---
 
 ## Q192545: PC WRmt: Windows Remote Client Displays Wrong Date after 2000

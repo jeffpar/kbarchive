@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225120: PRB: Error C0042116: Signature on CAB File Could Not Be Verified"
-permalink: kb/225/Q225120/
+permalink: /kb/225/Q225120/
 ---
 
 ## Q225120: PRB: Error C0042116: Signature on CAB File Could Not Be Verified

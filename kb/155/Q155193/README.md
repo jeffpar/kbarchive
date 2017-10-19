@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155193: MOVE Command Does Not Support Overwriting Files"
-permalink: kb/155/Q155193/
+permalink: /kb/155/Q155193/
 ---
 
 ## Q155193: MOVE Command Does Not Support Overwriting Files

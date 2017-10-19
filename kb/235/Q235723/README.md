@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235723: SNA Windows 3.x Client Displays Warning 956, Won't Unload"
-permalink: kb/235/Q235723/
+permalink: /kb/235/Q235723/
 ---
 
 ## Q235723: SNA Windows 3.x Client Displays Warning 956, Won't Unload

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122306: PRB: Error C4226 and Defining WIN32"
-permalink: kb/122/Q122306/
+permalink: /kb/122/Q122306/
 ---
 
 ## Q122306: PRB: Error C4226 and Defining WIN32

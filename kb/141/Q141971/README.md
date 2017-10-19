@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141971: PRB: Setting PageOrder May Generate an Error"
-permalink: kb/141/Q141971/
+permalink: /kb/141/Q141971/
 ---
 
 ## Q141971: PRB: Setting PageOrder May Generate an Error

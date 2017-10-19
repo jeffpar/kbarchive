@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236052: SMS: Recovering When a Client Connection Account Is Locked Out"
-permalink: kb/236/Q236052/
+permalink: /kb/236/Q236052/
 ---
 
 ## Q236052: SMS: Recovering When a Client Connection Account Is Locked Out

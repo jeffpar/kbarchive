@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166585: XADM: Msg with Bad TNEF Causes Store to Access Violate"
-permalink: kb/166/Q166585/
+permalink: /kb/166/Q166585/
 ---
 
 ## Q166585: XADM: Msg with Bad TNEF Causes Store to Access Violate

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130545: Description of New Integer Data Type"
-permalink: kb/130/Q130545/
+permalink: /kb/130/Q130545/
 ---
 
 ## Q130545: Description of New Integer Data Type

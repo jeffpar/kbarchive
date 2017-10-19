@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126236: Encarta: &quot;Sub Or Function Not Defined&quot; Error in MindMaze 1994"
-permalink: kb/126/Q126236/
+permalink: /kb/126/Q126236/
 ---
 
 ## Q126236: Encarta: &quot;Sub Or Function Not Defined&quot; Error in MindMaze 1994

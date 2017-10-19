@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192188: BUG: TreeView Problems with CheckBoxes"
-permalink: kb/192/Q192188/
+permalink: /kb/192/Q192188/
 ---
 
 ## Q192188: BUG: TreeView Problems with CheckBoxes

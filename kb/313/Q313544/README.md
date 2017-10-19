@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313544: BUG: Incorrect Number for Affected Rows When You Run Stored Proc"
-permalink: kb/313/Q313544/
+permalink: /kb/313/Q313544/
 ---
 
 ## Q313544: BUG: Incorrect Number for Affected Rows When You Run Stored Proc

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162594: SNARAS Receives 651 RAS Error After Failed Connection Attempt"
-permalink: kb/162/Q162594/
+permalink: /kb/162/Q162594/
 ---
 
 ## Q162594: SNARAS Receives 651 RAS Error After Failed Connection Attempt

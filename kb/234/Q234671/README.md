@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234671: XWEB: IIS May Not Work When OWA Is Being Heavily Accessed"
-permalink: kb/234/Q234671/
+permalink: /kb/234/Q234671/
 ---
 
 ## Q234671: XWEB: IIS May Not Work When OWA Is Being Heavily Accessed

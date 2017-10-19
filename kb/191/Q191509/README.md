@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191509: Multimedia: Your Search Words Are Not Found"
-permalink: kb/191/Q191509/
+permalink: /kb/191/Q191509/
 ---
 
 ## Q191509: Multimedia: Your Search Words Are Not Found

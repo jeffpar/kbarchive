@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129236: PC Ext: Dip Switch Settings Incorrect in USRHST Modem Script"
-permalink: kb/129/Q129236/
+permalink: /kb/129/Q129236/
 ---
 
 ## Q129236: PC Ext: Dip Switch Settings Incorrect in USRHST Modem Script

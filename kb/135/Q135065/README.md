@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135065: Windows NT 3.51 Hangs on Shutdown"
-permalink: kb/135/Q135065/
+permalink: /kb/135/Q135065/
 ---
 
 ## Q135065: Windows NT 3.51 Hangs on Shutdown

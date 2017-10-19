@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98844: Database Query from LAN Man WS Requires TCP/IP"
-permalink: kb/098/Q98844/
+permalink: /kb/098/Q98844/
 ---
 
 ## Q98844: Database Query from LAN Man WS Requires TCP/IP

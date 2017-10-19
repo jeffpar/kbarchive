@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238154: Midtown Madness: Cannot Use Pointing Device to Configure Options"
-permalink: kb/238/Q238154/
+permalink: /kb/238/Q238154/
 ---
 
 ## Q238154: Midtown Madness: Cannot Use Pointing Device to Configure Options

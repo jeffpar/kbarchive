@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168738: XCON: HP Openmail Users Cannot Reply to SMTP Mail"
-permalink: kb/168/Q168738/
+permalink: /kb/168/Q168738/
 ---
 
 ## Q168738: XCON: HP Openmail Users Cannot Reply to SMTP Mail

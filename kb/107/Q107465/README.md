@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107465: FIX: ClassWizard Floating-Point Parsing Errors"
-permalink: kb/107/Q107465/
+permalink: /kb/107/Q107465/
 ---
 
 ## Q107465: FIX: ClassWizard Floating-Point Parsing Errors

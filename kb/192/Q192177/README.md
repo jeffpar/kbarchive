@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192177: XADM: Missing Entry Points in Gapi32.dll"
-permalink: kb/192/Q192177/
+permalink: /kb/192/Q192177/
 ---
 
 ## Q192177: XADM: Missing Entry Points in Gapi32.dll

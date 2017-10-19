@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136018: PRB: &quot;Incorrect Syntax Near 'Like'&quot; ODBC Error"
-permalink: kb/136/Q136018/
+permalink: /kb/136/Q136018/
 ---
 
 ## Q136018: PRB: &quot;Incorrect Syntax Near 'Like'&quot; ODBC Error

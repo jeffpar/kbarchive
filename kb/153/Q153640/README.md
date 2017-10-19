@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153640: Run Local Copy If Present&quot; Removes Local Executable Files"
-permalink: kb/153/Q153640/
+permalink: /kb/153/Q153640/
 ---
 
 ## Q153640: Run Local Copy If Present&quot; Removes Local Executable Files

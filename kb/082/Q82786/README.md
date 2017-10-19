@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82786: System Hangs After Installing Windows or Windows Application"
-permalink: kb/082/Q82786/
+permalink: /kb/082/Q82786/
 ---
 
 ## Q82786: System Hangs After Installing Windows or Windows Application

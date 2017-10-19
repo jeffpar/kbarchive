@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274536: HOWTO: Bind a Data Environment Connection to a UDL File"
-permalink: kb/274/Q274536/
+permalink: /kb/274/Q274536/
 ---
 
 ## Q274536: HOWTO: Bind a Data Environment Connection to a UDL File

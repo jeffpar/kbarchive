@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185955: Streets 98 Err Msg: Setup Could Not Read from the File..."
-permalink: kb/185/Q185955/
+permalink: /kb/185/Q185955/
 ---
 
 ## Q185955: Streets 98 Err Msg: Setup Could Not Read from the File...

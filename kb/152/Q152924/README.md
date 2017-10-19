@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152924: XFOR: DXA Sends Invalid Replace (R) Transactions"
-permalink: kb/152/Q152924/
+permalink: /kb/152/Q152924/
 ---
 
 ## Q152924: XFOR: DXA Sends Invalid Replace (R) Transactions

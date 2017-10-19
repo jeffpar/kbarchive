@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39374: FIX: MASM 5.1 Generates Incorrect Listing for RET Statement"
-permalink: kb/039/Q39374/
+permalink: /kb/039/Q39374/
 ---
 
 ## Q39374: FIX: MASM 5.1 Generates Incorrect Listing for RET Statement

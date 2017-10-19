@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q12159: HOWTO: Use malloc() and _fmalloc() in an Application"
-permalink: kb/012/Q12159/
+permalink: /kb/012/Q12159/
 ---
 
 ## Q12159: HOWTO: Use malloc() and _fmalloc() in an Application

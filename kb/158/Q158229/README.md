@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158229: INFO: Security Ramifications for IIS Applications"
-permalink: kb/158/Q158229/
+permalink: /kb/158/Q158229/
 ---
 
 ## Q158229: INFO: Security Ramifications for IIS Applications

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122894: Help Button Not Functional in Network Section of Control Panel"
-permalink: kb/122/Q122894/
+permalink: /kb/122/Q122894/
 ---
 
 ## Q122894: Help Button Not Functional in Network Section of Control Panel

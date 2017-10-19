@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112857: WFWG 3.11: Errors Reinstalling Fonts"
-permalink: kb/112/Q112857/
+permalink: /kb/112/Q112857/
 ---
 
 ## Q112857: WFWG 3.11: Errors Reinstalling Fonts

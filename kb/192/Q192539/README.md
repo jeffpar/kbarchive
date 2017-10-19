@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192539: FIX: 'using namespace std' Before Friend Operator Fails Compile"
-permalink: kb/192/Q192539/
+permalink: /kb/192/Q192539/
 ---
 
 ## Q192539: FIX: 'using namespace std' Before Friend Operator Fails Compile

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104777: FIX: No F6099 with /4I2 and /4Yb on Integer Overflow"
-permalink: kb/104/Q104777/
+permalink: /kb/104/Q104777/
 ---
 
 ## Q104777: FIX: No F6099 with /4I2 and /4Yb on Integer Overflow

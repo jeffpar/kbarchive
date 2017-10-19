@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47339: Cardfile and Terminal Use Only the Default Printer Font"
-permalink: kb/047/Q47339/
+permalink: /kb/047/Q47339/
 ---
 
 ## Q47339: Cardfile and Terminal Use Only the Default Printer Font

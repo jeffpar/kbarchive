@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62231: Mac Form: Graphics Not Appearing in Custom Form"
-permalink: kb/062/Q62231/
+permalink: /kb/062/Q62231/
 ---
 
 ## Q62231: Mac Form: Graphics Not Appearing in Custom Form

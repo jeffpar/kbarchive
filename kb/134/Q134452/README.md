@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134452: Setup Does Not Detect Standard IDE Drive On IBM 9353"
-permalink: kb/134/Q134452/
+permalink: /kb/134/Q134452/
 ---
 
 ## Q134452: Setup Does Not Detect Standard IDE Drive On IBM 9353

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174167: XFOR: Forum Password Security Lost After Collabra Migration"
-permalink: kb/174/Q174167/
+permalink: /kb/174/Q174167/
 ---
 
 ## Q174167: XFOR: Forum Password Security Lost After Collabra Migration

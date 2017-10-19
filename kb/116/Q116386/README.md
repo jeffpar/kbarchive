@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116386: ADT/ODE: Minimizing All Objects Sets Focus to Database Window"
-permalink: kb/116/Q116386/
+permalink: /kb/116/Q116386/
 ---
 
 ## Q116386: ADT/ODE: Minimizing All Objects Sets Focus to Database Window

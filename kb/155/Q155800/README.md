@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155800: WD97: How to Customize, Create, Restore Word Menus/Toolbars"
-permalink: kb/155/Q155800/
+permalink: /kb/155/Q155800/
 ---
 
 ## Q155800: WD97: How to Customize, Create, Restore Word Menus/Toolbars

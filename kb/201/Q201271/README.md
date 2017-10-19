@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201271: XGEN: Exchange Server 5.5 Default File Structure"
-permalink: kb/201/Q201271/
+permalink: /kb/201/Q201271/
 ---
 
 ## Q201271: XGEN: Exchange Server 5.5 Default File Structure

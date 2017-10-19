@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226858: SMS:License &amp; Calculated Trend Balancing Not Off in Offline Mode"
-permalink: kb/226/Q226858/
+permalink: /kb/226/Q226858/
 ---
 
 ## Q226858: SMS:License &amp; Calculated Trend Balancing Not Off in Offline Mode

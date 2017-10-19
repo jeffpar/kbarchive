@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156963: XFOR: Korean Characters Are Corrupted by the MS Mail Connector"
-permalink: kb/156/Q156963/
+permalink: /kb/156/Q156963/
 ---
 
 ## Q156963: XFOR: Korean Characters Are Corrupted by the MS Mail Connector

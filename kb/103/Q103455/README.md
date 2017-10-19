@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103455: PC Win: Err Msg: Message Too Large to Fit Into Mem. All At Once"
-permalink: kb/103/Q103455/
+permalink: /kb/103/Q103455/
 ---
 
 ## Q103455: PC Win: Err Msg: Message Too Large to Fit Into Mem. All At Once

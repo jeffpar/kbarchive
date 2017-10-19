@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117580: CONN: MMFF#.MSG Filename Range"
-permalink: kb/117/Q117580/
+permalink: /kb/117/Q117580/
 ---
 
 ## Q117580: CONN: MMFF#.MSG Filename Range

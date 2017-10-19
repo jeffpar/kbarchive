@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257782: FIX: VB IDE Crashes Changing Control's Name in Properties Window"
-permalink: kb/257/Q257782/
+permalink: /kb/257/Q257782/
 ---
 
 ## Q257782: FIX: VB IDE Crashes Changing Control's Name in Properties Window

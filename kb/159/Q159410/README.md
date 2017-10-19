@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159410: FIX: &quot;Invalid Procedure Call&quot; Referencing Collection Item"
-permalink: kb/159/Q159410/
+permalink: /kb/159/Q159410/
 ---
 
 ## Q159410: FIX: &quot;Invalid Procedure Call&quot; Referencing Collection Item

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174878: FIX: Large Buttons When Resetting Toolbar"
-permalink: kb/174/Q174878/
+permalink: /kb/174/Q174878/
 ---
 
 ## Q174878: FIX: Large Buttons When Resetting Toolbar

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185416: Frequently Asked Questions About Hotmail"
-permalink: kb/185/Q185416/
+permalink: /kb/185/Q185416/
 ---
 
 ## Q185416: Frequently Asked Questions About Hotmail

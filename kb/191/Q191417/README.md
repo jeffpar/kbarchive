@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191417: SMS: Dataloader Service Delete Group Action May Fail"
-permalink: kb/191/Q191417/
+permalink: /kb/191/Q191417/
 ---
 
 ## Q191417: SMS: Dataloader Service Delete Group Action May Fail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130166: Data Type Mapping in the Upsizing Wizard"
-permalink: kb/130/Q130166/
+permalink: /kb/130/Q130166/
 ---
 
 ## Q130166: Data Type Mapping in the Upsizing Wizard

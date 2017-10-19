@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173829: MS Press Computer Dictionary, 3rd Ed. Comments and Corrections"
-permalink: kb/173/Q173829/
+permalink: /kb/173/Q173829/
 ---
 
 ## Q173829: MS Press Computer Dictionary, 3rd Ed. Comments and Corrections

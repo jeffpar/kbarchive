@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195598: WD97: How to Use EQ Field to Place Box Around Characters"
-permalink: kb/195/Q195598/
+permalink: /kb/195/Q195598/
 ---
 
 ## Q195598: WD97: How to Use EQ Field to Place Box Around Characters

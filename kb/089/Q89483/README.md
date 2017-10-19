@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89483: Print Manager Status Bar Reports Share Name Information"
-permalink: kb/089/Q89483/
+permalink: /kb/089/Q89483/
 ---
 
 ## Q89483: Print Manager Status Bar Reports Share Name Information

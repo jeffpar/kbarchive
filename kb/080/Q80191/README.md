@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80191: PC OS2: Err Msg: Mail Database Cannot Be Reached"
-permalink: kb/080/Q80191/
+permalink: /kb/080/Q80191/
 ---
 
 ## Q80191: PC OS2: Err Msg: Mail Database Cannot Be Reached

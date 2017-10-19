@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50564: MS-DOS: Problem COPYing Zero-Length Files"
-permalink: kb/050/Q50564/
+permalink: /kb/050/Q50564/
 ---
 
 ## Q50564: MS-DOS: Problem COPYing Zero-Length Files

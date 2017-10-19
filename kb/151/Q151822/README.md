@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151822: PRB: Visigenic Oracle Driver Case-Sensitive w/ Catalog API"
-permalink: kb/151/Q151822/
+permalink: /kb/151/Q151822/
 ---
 
 ## Q151822: PRB: Visigenic Oracle Driver Case-Sensitive w/ Catalog API

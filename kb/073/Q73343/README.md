@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73343: Using PROGSET with Windows"
-permalink: kb/073/Q73343/
+permalink: /kb/073/Q73343/
 ---
 
 ## Q73343: Using PROGSET with Windows

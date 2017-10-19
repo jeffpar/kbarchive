@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237725: NFL Fever 2000: Textures Displayed Incorrectly or Game Hangs"
-permalink: kb/237/Q237725/
+permalink: /kb/237/Q237725/
 ---
 
 ## Q237725: NFL Fever 2000: Textures Displayed Incorrectly or Game Hangs

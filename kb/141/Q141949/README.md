@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141949: Changes in the SYS(0) Function in Visual FoxPro"
-permalink: kb/141/Q141949/
+permalink: /kb/141/Q141949/
 ---
 
 ## Q141949: Changes in the SYS(0) Function in Visual FoxPro

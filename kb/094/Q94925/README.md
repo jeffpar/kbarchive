@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94925: DOC: SetTimer() Unclearly Documented in Programmer's Ref"
-permalink: kb/094/Q94925/
+permalink: /kb/094/Q94925/
 ---
 
 ## Q94925: DOC: SetTimer() Unclearly Documented in Programmer's Ref

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196675: WD97: How to Apply Shading to Words Instead of Paragraphs"
-permalink: kb/196/Q196675/
+permalink: /kb/196/Q196675/
 ---
 
 ## Q196675: WD97: How to Apply Shading to Words Instead of Paragraphs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156699: Limitations of &quot;Run Only Allowed Windows Application&quot;"
-permalink: kb/156/Q156699/
+permalink: /kb/156/Q156699/
 ---
 
 ## Q156699: Limitations of &quot;Run Only Allowed Windows Application&quot;

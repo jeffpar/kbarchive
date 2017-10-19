@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181135: CNOS Failure if Accessing A Control Block that is not Present"
-permalink: kb/181/Q181135/
+permalink: /kb/181/Q181135/
 ---
 
 ## Q181135: CNOS Failure if Accessing A Control Block that is not Present

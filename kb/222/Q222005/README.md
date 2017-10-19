@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222005: BUG: LNK2001 When Building Applications for MIPS Palm-size PC Th"
-permalink: kb/222/Q222005/
+permalink: /kb/222/Q222005/
 ---
 
 ## Q222005: BUG: LNK2001 When Building Applications for MIPS Palm-size PC Th

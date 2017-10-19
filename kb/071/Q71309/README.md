@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71309: IBM 4072 ExecJet Printer Specifications"
-permalink: kb/071/Q71309/
+permalink: /kb/071/Q71309/
 ---
 
 ## Q71309: IBM 4072 ExecJet Printer Specifications

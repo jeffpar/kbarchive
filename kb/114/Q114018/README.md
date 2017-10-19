@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114018: Printing from an OS/2 Workstation to a WINNT Shared Printer"
-permalink: kb/114/Q114018/
+permalink: /kb/114/Q114018/
 ---
 
 ## Q114018: Printing from an OS/2 Workstation to a WINNT Shared Printer

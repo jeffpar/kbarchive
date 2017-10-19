@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158087: Mac Encarta 97: No Sound in Collages or MindMaze"
-permalink: kb/158/Q158087/
+permalink: /kb/158/Q158087/
 ---
 
 ## Q158087: Mac Encarta 97: No Sound in Collages or MindMaze

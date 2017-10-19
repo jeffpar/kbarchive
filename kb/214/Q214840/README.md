@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214840: MSV1_0 Allows Network Connections for Specific Accounts"
-permalink: kb/214/Q214840/
+permalink: /kb/214/Q214840/
 ---
 
 ## Q214840: MSV1_0 Allows Network Connections for Specific Accounts

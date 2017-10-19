@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270775: Encarta 2001: Screen Flashes When You Play Video Clip"
-permalink: kb/270/Q270775/
+permalink: /kb/270/Q270775/
 ---
 
 ## Q270775: Encarta 2001: Screen Flashes When You Play Video Clip

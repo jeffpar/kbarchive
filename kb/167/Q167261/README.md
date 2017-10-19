@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167261: Document Error: Replacing a Primary Domain Controller"
-permalink: kb/167/Q167261/
+permalink: /kb/167/Q167261/
 ---
 
 ## Q167261: Document Error: Replacing a Primary Domain Controller

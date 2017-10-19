@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152343: How to Use a Custom Configuration File"
-permalink: kb/152/Q152343/
+permalink: /kb/152/Q152343/
 ---
 
 ## Q152343: How to Use a Custom Configuration File

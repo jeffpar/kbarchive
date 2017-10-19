@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158096: GEX: Running GEX on NexGen Chips and Processors"
-permalink: kb/158/Q158096/
+permalink: /kb/158/Q158096/
 ---
 
 ## Q158096: GEX: Running GEX on NexGen Chips and Processors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266265: HOWTO: Implement MatchedWithList Validation Check in ComboBox"
-permalink: kb/266/Q266265/
+permalink: /kb/266/Q266265/
 ---
 
 ## Q266265: HOWTO: Implement MatchedWithList Validation Check in ComboBox

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194699: Extended Log File Format Always in GMT"
-permalink: kb/194/Q194699/
+permalink: /kb/194/Q194699/
 ---
 
 ## Q194699: Extended Log File Format Always in GMT

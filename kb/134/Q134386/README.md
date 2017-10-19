@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134386: Computers Using QVision Display Driver Lock Up"
-permalink: kb/134/Q134386/
+permalink: /kb/134/Q134386/
 ---
 
 ## Q134386: Computers Using QVision Display Driver Lock Up

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274321: XADM: Key Management Server Does Not Start with Event ID 5389"
-permalink: kb/274/Q274321/
+permalink: /kb/274/Q274321/
 ---
 
 ## Q274321: XADM: Key Management Server Does Not Start with Event ID 5389

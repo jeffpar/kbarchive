@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156293: XCLN: Macintosh Spelling Checker Could Not Be Started Error"
-permalink: kb/156/Q156293/
+permalink: /kb/156/Q156293/
 ---
 
 ## Q156293: XCLN: Macintosh Spelling Checker Could Not Be Started Error

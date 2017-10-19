@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196688: XADM: Move Server Wizard Does Not Warn of Encrypted Mail"
-permalink: kb/196/Q196688/
+permalink: /kb/196/Q196688/
 ---
 
 ## Q196688: XADM: Move Server Wizard Does Not Warn of Encrypted Mail

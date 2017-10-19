@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297269: XCON: Error Message When Sending Moderated Newsgroup Messages"
-permalink: kb/297/Q297269/
+permalink: /kb/297/Q297269/
 ---
 
 ## Q297269: XCON: Error Message When Sending Moderated Newsgroup Messages

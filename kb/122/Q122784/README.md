@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122784: PPT: Bullets Change with PowerPoint Viewer"
-permalink: kb/122/Q122784/
+permalink: /kb/122/Q122784/
 ---
 
 ## Q122784: PPT: Bullets Change with PowerPoint Viewer

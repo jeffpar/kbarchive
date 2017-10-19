@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317061: Software Distribution May Not Work with Exchange 2000 Server"
-permalink: kb/317/Q317061/
+permalink: /kb/317/Q317061/
 ---
 
 ## Q317061: Software Distribution May Not Work with Exchange 2000 Server

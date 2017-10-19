@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249971: WinNT SNA Client Truncates FQDN in OtherServers Registry Param"
-permalink: kb/249/Q249971/
+permalink: /kb/249/Q249971/
 ---
 
 ## Q249971: WinNT SNA Client Truncates FQDN in OtherServers Registry Param

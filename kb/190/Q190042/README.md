@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190042: PRB: License Collection vs. Standard Collection in For Each"
-permalink: kb/190/Q190042/
+permalink: /kb/190/Q190042/
 ---
 
 ## Q190042: PRB: License Collection vs. Standard Collection in For Each

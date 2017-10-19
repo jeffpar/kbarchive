@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191272: HOWTO: A Brief Exploration of the Project Object Model"
-permalink: kb/191/Q191272/
+permalink: /kb/191/Q191272/
 ---
 
 ## Q191272: HOWTO: A Brief Exploration of the Project Object Model

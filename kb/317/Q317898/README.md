@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317898: Access Violation When You Use WebClasses to Replace Text"
-permalink: kb/317/Q317898/
+permalink: /kb/317/Q317898/
 ---
 
 ## Q317898: Access Violation When You Use WebClasses to Replace Text

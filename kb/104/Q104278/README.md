@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104278: PC Forms: Fax Gateway Does Not Support E-Forms"
-permalink: kb/104/Q104278/
+permalink: /kb/104/Q104278/
 ---
 
 ## Q104278: PC Forms: Fax Gateway Does Not Support E-Forms

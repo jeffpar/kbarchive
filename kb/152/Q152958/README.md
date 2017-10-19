@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152958: XADM: Organizational Forms Unavailable to Other Servers in Site"
-permalink: kb/152/Q152958/
+permalink: /kb/152/Q152958/
 ---
 
 ## Q152958: XADM: Organizational Forms Unavailable to Other Servers in Site

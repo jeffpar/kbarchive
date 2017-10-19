@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130413: HOWTO: Create an Updatable Cursor (View) to Update Table"
-permalink: kb/130/Q130413/
+permalink: /kb/130/Q130413/
 ---
 
 ## Q130413: HOWTO: Create an Updatable Cursor (View) to Update Table

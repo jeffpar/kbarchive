@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119151: README.NOW:  MS-DOS 6.22 Step-Up (BBS) README.NOW File"
-permalink: kb/119/Q119151/
+permalink: /kb/119/Q119151/
 ---
 
 ## Q119151: README.NOW:  MS-DOS 6.22 Step-Up (BBS) README.NOW File

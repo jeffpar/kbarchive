@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304910: MCSE Training Kit Microsoft SQL ServerT 2000 Database Design and"
-permalink: kb/304/Q304910/
+permalink: /kb/304/Q304910/
 ---
 
 ## Q304910: MCSE Training Kit Microsoft SQL ServerT 2000 Database Design and

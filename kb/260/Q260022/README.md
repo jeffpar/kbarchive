@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260022: XADM: Isscan Utility Stops w. ecBadVersion w. Post-SP3 Store.exe"
-permalink: kb/260/Q260022/
+permalink: /kb/260/Q260022/
 ---
 
 ## Q260022: XADM: Isscan Utility Stops w. ecBadVersion w. Post-SP3 Store.exe

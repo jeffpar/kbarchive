@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246253: XADM: Site Folders Deleted for Exchange Sites in the Directory"
-permalink: kb/246/Q246253/
+permalink: /kb/246/Q246253/
 ---
 
 ## Q246253: XADM: Site Folders Deleted for Exchange Sites in the Directory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221604: INFO: Known Issues with Internet Explorer 5 and Visual Basic 6.0"
-permalink: kb/221/Q221604/
+permalink: /kb/221/Q221604/
 ---
 
 ## Q221604: INFO: Known Issues with Internet Explorer 5 and Visual Basic 6.0

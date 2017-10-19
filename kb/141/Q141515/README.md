@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141515: Known Issues Concerning Find Feature on The Microsoft Network"
-permalink: kb/141/Q141515/
+permalink: /kb/141/Q141515/
 ---
 
 ## Q141515: Known Issues Concerning Find Feature on The Microsoft Network

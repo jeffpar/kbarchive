@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214617: Changing the Page Orientation to Landscape"
-permalink: kb/214/Q214617/
+permalink: /kb/214/Q214617/
 ---
 
 ## Q214617: Changing the Page Orientation to Landscape

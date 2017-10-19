@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89805: Cinemania: Audio Failed Error Message"
-permalink: kb/089/Q89805/
+permalink: /kb/089/Q89805/
 ---
 
 ## Q89805: Cinemania: Audio Failed Error Message

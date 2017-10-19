@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145933: XGEN: X.400 &quot;OR Attribute Name&quot; Length Values"
-permalink: kb/145/Q145933/
+permalink: /kb/145/Q145933/
 ---
 
 ## Q145933: XGEN: X.400 &quot;OR Attribute Name&quot; Length Values

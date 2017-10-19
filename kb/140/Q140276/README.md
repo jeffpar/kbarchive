@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140276: Microsoft Plus! Screen Saver &quot;Hot Corners&quot; Do Not Work"
-permalink: kb/140/Q140276/
+permalink: /kb/140/Q140276/
 ---
 
 ## Q140276: Microsoft Plus! Screen Saver &quot;Hot Corners&quot; Do Not Work

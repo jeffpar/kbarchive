@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199808: SMS: Browsing PGC Shares from Win95 or Win98 May Not Be Accurate"
-permalink: kb/199/Q199808/
+permalink: /kb/199/Q199808/
 ---
 
 ## Q199808: SMS: Browsing PGC Shares from Win95 or Win98 May Not Be Accurate

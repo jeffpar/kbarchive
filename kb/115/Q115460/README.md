@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q115460: PROFS: 3.4 Gateway Access Disk 2 [3.5, 1.44 MB]"
-permalink: kb/115/Q115460/
+title: "Q115460: PROFS: 3.4 Gateway Access Disk 2 &#91;3.5, 1.44 MB&#93;"
+permalink: /kb/115/Q115460/
 ---
 
-## Q115460: PROFS: 3.4 Gateway Access Disk 2 [3.5, 1.44 MB]
+## Q115460: PROFS: 3.4 Gateway Access Disk 2 &#91;3.5, 1.44 MB&#93;
 
 	Article: Q115460
 	Product(s): Microsoft Mail For PC Networks

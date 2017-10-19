@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98537: PC DOS: Starting Monitor in Monochrome Mode"
-permalink: kb/098/Q98537/
+permalink: /kb/098/Q98537/
 ---
 
 ## Q98537: PC DOS: Starting Monitor in Monochrome Mode

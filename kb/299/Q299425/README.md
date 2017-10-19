@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299425: Document Location for Passport Implementation on Unix Systems"
-permalink: kb/299/Q299425/
+permalink: /kb/299/Q299425/
 ---
 
 ## Q299425: Document Location for Passport Implementation on Unix Systems

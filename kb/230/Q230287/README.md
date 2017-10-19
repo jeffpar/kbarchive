@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230287: Contents of Internet Information Server 4.0 Release Notes"
-permalink: kb/230/Q230287/
+permalink: /kb/230/Q230287/
 ---
 
 ## Q230287: Contents of Internet Information Server 4.0 Release Notes

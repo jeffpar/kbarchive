@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163729: WD97: OLE Automation Fails When Using &quot;Word.Basic&quot; Object"
-permalink: kb/163/Q163729/
+permalink: /kb/163/Q163729/
 ---
 
 ## Q163729: WD97: OLE Automation Fails When Using &quot;Word.Basic&quot; Object

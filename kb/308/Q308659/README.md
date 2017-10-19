@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308659: SMS: CTRL+N Closes SMS Administrator Console"
-permalink: kb/308/Q308659/
+permalink: /kb/308/Q308659/
 ---
 
 ## Q308659: SMS: CTRL+N Closes SMS Administrator Console

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39908: Time Functions Calculate for Daylight Savings Time"
-permalink: kb/039/Q39908/
+permalink: /kb/039/Q39908/
 ---
 
 ## Q39908: Time Functions Calculate for Daylight Savings Time

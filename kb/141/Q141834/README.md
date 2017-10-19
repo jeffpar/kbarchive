@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141834: HOWTO: Change Icon or Bitmap of CListCtrl Item When Selected"
-permalink: kb/141/Q141834/
+permalink: /kb/141/Q141834/
 ---
 
 ## Q141834: HOWTO: Change Icon or Bitmap of CListCtrl Item When Selected

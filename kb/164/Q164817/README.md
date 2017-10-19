@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164817: WD97: Bad Parameter Error with the AddPicture Method"
-permalink: kb/164/Q164817/
+permalink: /kb/164/Q164817/
 ---
 
 ## Q164817: WD97: Bad Parameter Error with the AddPicture Method

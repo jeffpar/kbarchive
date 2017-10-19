@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317133: &quot;STOP 0x0000000A&quot; Error Message in Scsiport.sys"
-permalink: kb/317/Q317133/
+permalink: /kb/317/Q317133/
 ---
 
 ## Q317133: &quot;STOP 0x0000000A&quot; Error Message in Scsiport.sys

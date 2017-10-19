@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257465: First Character Typed After Logon Is Ignored in 16-Bit Programs"
-permalink: kb/257/Q257465/
+permalink: /kb/257/Q257465/
 ---
 
 ## Q257465: First Character Typed After Logon Is Ignored in 16-Bit Programs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194322: T/R NIC May Fail Windows Hardware Quality Lab (WHQL) Test"
-permalink: kb/194/Q194322/
+permalink: /kb/194/Q194322/
 ---
 
 ## Q194322: T/R NIC May Fail Windows Hardware Quality Lab (WHQL) Test

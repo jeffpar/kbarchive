@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266521: Encarta 2001: Shockwave Is Automatically Reinstalled"
-permalink: kb/266/Q266521/
+permalink: /kb/266/Q266521/
 ---
 
 ## Q266521: Encarta 2001: Shockwave Is Automatically Reinstalled

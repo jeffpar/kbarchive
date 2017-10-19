@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124067: STOP Message 0x0000000A in AFD.SYS when Opening Sockets"
-permalink: kb/124/Q124067/
+permalink: /kb/124/Q124067/
 ---
 
 ## Q124067: STOP Message 0x0000000A in AFD.SYS when Opening Sockets

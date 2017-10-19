@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156328: Description of Windows NT Emergency Repair Disk"
-permalink: kb/156/Q156328/
+permalink: /kb/156/Q156328/
 ---
 
 ## Q156328: Description of Windows NT Emergency Repair Disk

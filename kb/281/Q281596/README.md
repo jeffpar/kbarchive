@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281596: Fighter Ace II: No Training Demos Available"
-permalink: kb/281/Q281596/
+permalink: /kb/281/Q281596/
 ---
 
 ## Q281596: Fighter Ace II: No Training Demos Available

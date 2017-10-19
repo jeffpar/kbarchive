@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240676: Cannot Use ODO As a Return Value for Method's Recordset"
-permalink: kb/240/Q240676/
+permalink: /kb/240/Q240676/
 ---
 
 ## Q240676: Cannot Use ODO As a Return Value for Method's Recordset

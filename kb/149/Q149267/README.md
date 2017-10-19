@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149267: BUG: Container Property of DBGrid Does Not Behave Correctly"
-permalink: kb/149/Q149267/
+permalink: /kb/149/Q149267/
 ---
 
 ## Q149267: BUG: Container Property of DBGrid Does Not Behave Correctly

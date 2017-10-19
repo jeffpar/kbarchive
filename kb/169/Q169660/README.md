@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169660: XCLN: Excel Hyperlinks Don't Work If .xls Is in Public Folder"
-permalink: kb/169/Q169660/
+permalink: /kb/169/Q169660/
 ---
 
 ## Q169660: XCLN: Excel Hyperlinks Don't Work If .xls Is in Public Folder

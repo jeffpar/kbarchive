@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131352: Using Registry Editor in Real Mode"
-permalink: kb/131/Q131352/
+permalink: /kb/131/Q131352/
 ---
 
 ## Q131352: Using Registry Editor in Real Mode

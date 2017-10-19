@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299348: ASP Script Error w/Attempt to Access User Core Profile Attribute"
-permalink: kb/299/Q299348/
+permalink: /kb/299/Q299348/
 ---
 
 ## Q299348: ASP Script Error w/Attempt to Access User Core Profile Attribute

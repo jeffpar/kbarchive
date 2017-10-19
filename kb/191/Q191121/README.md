@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191121: DOC: CreateObject Documentation Using Servername Argument"
-permalink: kb/191/Q191121/
+permalink: /kb/191/Q191121/
 ---
 
 ## Q191121: DOC: CreateObject Documentation Using Servername Argument

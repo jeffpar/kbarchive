@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239514: MEM Command Reports Only 64 MB Extended Memory in MS-DOS Window"
-permalink: kb/239/Q239514/
+permalink: /kb/239/Q239514/
 ---
 
 ## Q239514: MEM Command Reports Only 64 MB Extended Memory in MS-DOS Window

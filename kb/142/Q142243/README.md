@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142243: PRB: Cannot Create an MFC Thread During DLL Startup"
-permalink: kb/142/Q142243/
+permalink: /kb/142/Q142243/
 ---
 
 ## Q142243: PRB: Cannot Create an MFC Thread During DLL Startup

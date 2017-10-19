@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129440: BUG: Cannot Escape Out of ON ERROR Routine"
-permalink: kb/129/Q129440/
+permalink: /kb/129/Q129440/
 ---
 
 ## Q129440: BUG: Cannot Escape Out of ON ERROR Routine

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234750: SMS: Pentium Processor Speed Incorrectly Reported"
-permalink: kb/234/Q234750/
+permalink: /kb/234/Q234750/
 ---
 
 ## Q234750: SMS: Pentium Processor Speed Incorrectly Reported

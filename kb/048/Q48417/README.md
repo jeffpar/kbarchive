@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48417: FltSim: Mouse Shadow Remains in Edit Box"
-permalink: kb/048/Q48417/
+permalink: /kb/048/Q48417/
 ---
 
 ## Q48417: FltSim: Mouse Shadow Remains in Edit Box

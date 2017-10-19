@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169126: Madge Smart 16/4 PCI Ringnode BM2 Token Ring Network"
-permalink: kb/169/Q169126/
+permalink: /kb/169/Q169126/
 ---
 
 ## Q169126: Madge Smart 16/4 PCI Ringnode BM2 Token Ring Network

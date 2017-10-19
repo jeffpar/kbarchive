@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126822: Kids: Program Group and/or Icons Disappear in TabWorks"
-permalink: kb/126/Q126822/
+permalink: /kb/126/Q126822/
 ---
 
 ## Q126822: Kids: Program Group and/or Icons Disappear in TabWorks

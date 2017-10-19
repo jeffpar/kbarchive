@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76810: Marstek Mouse Driver 6.01 or Later with MS-DOS 5.0"
-permalink: kb/076/Q76810/
+permalink: /kb/076/Q76810/
 ---
 
 ## Q76810: Marstek Mouse Driver 6.01 or Later with MS-DOS 5.0

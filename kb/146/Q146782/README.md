@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146782: XFOR: Blank Space in Subject Line Not Retained Over IMC"
-permalink: kb/146/Q146782/
+permalink: /kb/146/Q146782/
 ---
 
 ## Q146782: XFOR: Blank Space in Subject Line Not Retained Over IMC

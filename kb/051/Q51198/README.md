@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51198: INFO: Formal Parameters Default to Type int"
-permalink: kb/051/Q51198/
+permalink: /kb/051/Q51198/
 ---
 
 ## Q51198: INFO: Formal Parameters Default to Type int

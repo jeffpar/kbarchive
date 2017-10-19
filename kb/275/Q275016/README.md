@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275016: SMS: Access Violation with Windows CE Platform Builder Add-on"
-permalink: kb/275/Q275016/
+permalink: /kb/275/Q275016/
 ---
 
 ## Q275016: SMS: Access Violation with Windows CE Platform Builder Add-on

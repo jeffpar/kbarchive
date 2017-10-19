@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126308: Problems Accessing Netware Server From a Windows NT RAS Client"
-permalink: kb/126/Q126308/
+permalink: /kb/126/Q126308/
 ---
 
 ## Q126308: Problems Accessing Netware Server From a Windows NT RAS Client

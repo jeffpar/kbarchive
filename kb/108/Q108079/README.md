@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108079: 32-Bit File Access Maximum Cache Size"
-permalink: kb/108/Q108079/
+permalink: /kb/108/Q108079/
 ---
 
 ## Q108079: 32-Bit File Access Maximum Cache Size

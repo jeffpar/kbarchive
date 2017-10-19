@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198524: Large Ntbootdd.sys File May Cause Problems"
-permalink: kb/198/Q198524/
+permalink: /kb/198/Q198524/
 ---
 
 ## Q198524: Large Ntbootdd.sys File May Cause Problems

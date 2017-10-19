@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191026: WD97: Incorrect Pages Print with Odd/Even Print Order"
-permalink: kb/191/Q191026/
+permalink: /kb/191/Q191026/
 ---
 
 ## Q191026: WD97: Incorrect Pages Print with Odd/Even Print Order

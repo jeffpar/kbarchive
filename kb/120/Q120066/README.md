@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120066: BUG: ML Uses DGROUP in Flat Model and Generates A2006"
-permalink: kb/120/Q120066/
+permalink: /kb/120/Q120066/
 ---
 
 ## Q120066: BUG: ML Uses DGROUP in Flat Model and Generates A2006

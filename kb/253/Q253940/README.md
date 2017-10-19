@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253940: PRB: Incorrect Screen Object Width/Height After the Desktop Is R"
-permalink: kb/253/Q253940/
+permalink: /kb/253/Q253940/
 ---
 
 ## Q253940: PRB: Incorrect Screen Object Width/Height After the Desktop Is R

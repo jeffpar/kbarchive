@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159060: Mouse Cursor Freezes or Fails with Microsoft IntelliMouse"
-permalink: kb/159/Q159060/
+permalink: /kb/159/Q159060/
 ---
 
 ## Q159060: Mouse Cursor Freezes or Fails with Microsoft IntelliMouse

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125476: PRB: Error &quot;...MSVCRT20.DLL is not compatible with Win32s&quot;"
-permalink: kb/125/Q125476/
+permalink: /kb/125/Q125476/
 ---
 
 ## Q125476: PRB: Error &quot;...MSVCRT20.DLL is not compatible with Win32s&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168350: WD97: Word for Alpha Unable to Insert DRW, CGM, DXF Graphics"
-permalink: kb/168/Q168350/
+permalink: /kb/168/Q168350/
 ---
 
 ## Q168350: WD97: Word for Alpha Unable to Insert DRW, CGM, DXF Graphics

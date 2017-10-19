@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96030: Err Msg: 'DoubleSpace Cannot Continue...' with Bernoulli"
-permalink: kb/096/Q96030/
+permalink: /kb/096/Q96030/
 ---
 
 ## Q96030: Err Msg: 'DoubleSpace Cannot Continue...' with Bernoulli

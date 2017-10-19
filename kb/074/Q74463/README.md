@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74463: Extended Error Code Information"
-permalink: kb/074/Q74463/
+permalink: /kb/074/Q74463/
 ---
 
 ## Q74463: Extended Error Code Information

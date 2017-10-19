@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168858: XGEN: How to Obtain Exchange Server 5.0 U.S. Service Pack 2"
-permalink: kb/168/Q168858/
+permalink: /kb/168/Q168858/
 ---
 
 ## Q168858: XGEN: How to Obtain Exchange Server 5.0 U.S. Service Pack 2

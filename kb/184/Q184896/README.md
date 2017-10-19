@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184896: PRB: Scroll Arrows Not Showing When DisplayCount = 1"
-permalink: kb/184/Q184896/
+permalink: /kb/184/Q184896/
 ---
 
 ## Q184896: PRB: Scroll Arrows Not Showing When DisplayCount = 1

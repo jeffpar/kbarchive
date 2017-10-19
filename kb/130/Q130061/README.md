@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130061: PRB: Korean Dollar Sign Is Shown as a Backslash"
-permalink: kb/130/Q130061/
+permalink: /kb/130/Q130061/
 ---
 
 ## Q130061: PRB: Korean Dollar Sign Is Shown as a Backslash

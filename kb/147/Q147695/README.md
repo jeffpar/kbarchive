@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147695: MEMBER OF in FPNW Login Script Returns Incorrect Results"
-permalink: kb/147/Q147695/
+permalink: /kb/147/Q147695/
 ---
 
 ## Q147695: MEMBER OF in FPNW Login Script Returns Incorrect Results

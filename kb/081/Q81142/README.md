@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81142: An Annotated Dr. Watson Log File"
-permalink: kb/081/Q81142/
+permalink: /kb/081/Q81142/
 ---
 
 ## Q81142: An Annotated Dr. Watson Log File

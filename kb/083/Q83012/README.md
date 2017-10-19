@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83012: Using Auto-Initialize DMA Under Windows"
-permalink: kb/083/Q83012/
+permalink: /kb/083/Q83012/
 ---
 
 ## Q83012: Using Auto-Initialize DMA Under Windows

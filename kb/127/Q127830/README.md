@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127830: Time Stamps Change When Copying From NTFS to FAT"
-permalink: kb/127/Q127830/
+permalink: /kb/127/Q127830/
 ---
 
 ## Q127830: Time Stamps Change When Copying From NTFS to FAT

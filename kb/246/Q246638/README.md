@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246638: Cannot Enter All Values for Slow Network Connection Timeout"
-permalink: kb/246/Q246638/
+permalink: /kb/246/Q246638/
 ---
 
 ## Q246638: Cannot Enter All Values for Slow Network Connection Timeout

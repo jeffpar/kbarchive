@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265179: FP: Java Applet Does Not Work as Exptected in a Shared Border"
-permalink: kb/265/Q265179/
+permalink: /kb/265/Q265179/
 ---
 
 ## Q265179: FP: Java Applet Does Not Work as Exptected in a Shared Border

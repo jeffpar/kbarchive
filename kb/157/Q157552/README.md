@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157552: WD97: Fill Color Extends Through Border Formatting"
-permalink: kb/157/Q157552/
+permalink: /kb/157/Q157552/
 ---
 
 ## Q157552: WD97: Fill Color Extends Through Border Formatting

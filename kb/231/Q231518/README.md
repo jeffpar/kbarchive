@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231518: MP2000: Empty Quotation Marks in Error Message When Linking Data"
-permalink: kb/231/Q231518/
+permalink: /kb/231/Q231518/
 ---
 
 ## Q231518: MP2000: Empty Quotation Marks in Error Message When Linking Data

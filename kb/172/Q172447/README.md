@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172447: BUG: PageFrame SubClass Invisible at Runtime"
-permalink: kb/172/Q172447/
+permalink: /kb/172/Q172447/
 ---
 
 ## Q172447: BUG: PageFrame SubClass Invisible at Runtime

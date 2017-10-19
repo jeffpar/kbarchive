@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139300: SNA Remote Access Service Client May Not See Remote Network"
-permalink: kb/139/Q139300/
+permalink: /kb/139/Q139300/
 ---
 
 ## Q139300: SNA Remote Access Service Client May Not See Remote Network

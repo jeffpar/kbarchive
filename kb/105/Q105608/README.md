@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105608: MS-DOS 6.2 MEM Supports /A Switch"
-permalink: kb/105/Q105608/
+permalink: /kb/105/Q105608/
 ---
 
 ## Q105608: MS-DOS 6.2 MEM Supports /A Switch

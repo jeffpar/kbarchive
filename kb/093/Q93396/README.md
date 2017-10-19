@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93396: DOCERR: PrependToPath Documented Incorrectly"
-permalink: kb/093/Q93396/
+permalink: /kb/093/Q93396/
 ---
 
 ## Q93396: DOCERR: PrependToPath Documented Incorrectly

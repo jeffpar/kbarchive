@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73009: Panasonic KX-P1124 Produces Poor Prints in IBM Emulation"
-permalink: kb/073/Q73009/
+permalink: /kb/073/Q73009/
 ---
 
 ## Q73009: Panasonic KX-P1124 Produces Poor Prints in IBM Emulation

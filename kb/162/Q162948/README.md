@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162948: Windows 95 Does Not Send DHCP Request Packet"
-permalink: kb/162/Q162948/
+permalink: /kb/162/Q162948/
 ---
 
 ## Q162948: Windows 95 Does Not Send DHCP Request Packet

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259646: VFP 6.0 Sample: Shows How To Use the DateTimePicker Control"
-permalink: kb/259/Q259646/
+permalink: /kb/259/Q259646/
 ---
 
 ## Q259646: VFP 6.0 Sample: Shows How To Use the DateTimePicker Control

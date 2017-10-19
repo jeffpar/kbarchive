@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272699: XCON: Consequences of Non-Standard Class Message on X.400 Msgs."
-permalink: kb/272/Q272699/
+permalink: /kb/272/Q272699/
 ---
 
 ## Q272699: XCON: Consequences of Non-Standard Class Message on X.400 Msgs.

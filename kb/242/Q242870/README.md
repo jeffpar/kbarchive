@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242870: AoE II: Hangs, Quits Unexpectedly, or &quot;Invalid Page Fault&quot;"
-permalink: kb/242/Q242870/
+permalink: /kb/242/Q242870/
 ---
 
 ## Q242870: AoE II: Hangs, Quits Unexpectedly, or &quot;Invalid Page Fault&quot;

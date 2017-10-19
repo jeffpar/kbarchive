@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257940: Digital Cluster Server Loses Drive Letter Assignment"
-permalink: kb/257/Q257940/
+permalink: /kb/257/Q257940/
 ---
 
 ## Q257940: Digital Cluster Server Loses Drive Letter Assignment

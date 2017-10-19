@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261135: XADM: Information Store Access Violation w. STAT Command"
-permalink: kb/261/Q261135/
+permalink: /kb/261/Q261135/
 ---
 
 ## Q261135: XADM: Information Store Access Violation w. STAT Command

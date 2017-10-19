@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136402: IniFileMapping for 16-Bit Windows Apps Fail in Windows NT 3.51"
-permalink: kb/136/Q136402/
+permalink: /kb/136/Q136402/
 ---
 
 ## Q136402: IniFileMapping for 16-Bit Windows Apps Fail in Windows NT 3.51

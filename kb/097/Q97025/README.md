@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97025: PC WRmt: Subject-Line Length Limited to 40 Characters"
-permalink: kb/097/Q97025/
+permalink: /kb/097/Q97025/
 ---
 
 ## Q97025: PC WRmt: Subject-Line Length Limited to 40 Characters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243598: Err Msg: Setup Is Unable to Continue Due to an Error on the..."
-permalink: kb/243/Q243598/
+permalink: /kb/243/Q243598/
 ---
 
 ## Q243598: Err Msg: Setup Is Unable to Continue Due to an Error on the...

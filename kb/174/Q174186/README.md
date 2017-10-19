@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174186: Files the Setup Wizard Installs"
-permalink: kb/174/Q174186/
+permalink: /kb/174/Q174186/
 ---
 
 ## Q174186: Files the Setup Wizard Installs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83325: SMARTDrive and 32-Bit Disk Access"
-permalink: kb/083/Q83325/
+permalink: /kb/083/Q83325/
 ---
 
 ## Q83325: SMARTDrive and 32-Bit Disk Access

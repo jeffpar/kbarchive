@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172629: WD97: Information About the Word Internet LookUp Template"
-permalink: kb/172/Q172629/
+permalink: /kb/172/Q172629/
 ---
 
 ## Q172629: WD97: Information About the Word Internet LookUp Template

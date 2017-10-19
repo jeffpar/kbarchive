@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153163: Using MS-DOS Environment Variable as Command-Line Option"
-permalink: kb/153/Q153163/
+permalink: /kb/153/Q153163/
 ---
 
 ## Q153163: Using MS-DOS Environment Variable as Command-Line Option

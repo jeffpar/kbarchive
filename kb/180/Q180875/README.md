@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180875: Russian Clients May Have File I/O Problems on an FPNW Server"
-permalink: kb/180/Q180875/
+permalink: /kb/180/Q180875/
 ---
 
 ## Q180875: Russian Clients May Have File I/O Problems on an FPNW Server

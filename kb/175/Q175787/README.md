@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175787: Stop 0x7F Caused by DigiBoard Driver"
-permalink: kb/175/Q175787/
+permalink: /kb/175/Q175787/
 ---
 
 ## Q175787: Stop 0x7F Caused by DigiBoard Driver

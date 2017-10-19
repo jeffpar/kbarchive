@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139729: FIX: Visual SourceSafe Cannot Associate File That Has 2 Periods"
-permalink: kb/139/Q139729/
+permalink: /kb/139/Q139729/
 ---
 
 ## Q139729: FIX: Visual SourceSafe Cannot Associate File That Has 2 Periods

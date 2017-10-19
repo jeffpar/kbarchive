@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73427: HP DeskJet 500 Scalable Font Initialization Error"
-permalink: kb/073/Q73427/
+permalink: /kb/073/Q73427/
 ---
 
 ## Q73427: HP DeskJet 500 Scalable Font Initialization Error

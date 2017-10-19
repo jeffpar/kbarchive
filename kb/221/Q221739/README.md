@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221739: FIX:  Error Using Object Property &gt; 255 Characters As Parameter"
-permalink: kb/221/Q221739/
+permalink: /kb/221/Q221739/
 ---
 
 ## Q221739: FIX:  Error Using Object Property &gt; 255 Characters As Parameter

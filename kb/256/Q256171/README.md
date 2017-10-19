@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256171: Group Policy Custom Shell Entry Overrides ICA Published Program"
-permalink: kb/256/Q256171/
+permalink: /kb/256/Q256171/
 ---
 
 ## Q256171: Group Policy Custom Shell Entry Overrides ICA Published Program

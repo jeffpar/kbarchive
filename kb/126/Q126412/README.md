@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126412: Using the Microcom DeskPorte 28.8 Modem in Windows 95"
-permalink: kb/126/Q126412/
+permalink: /kb/126/Q126412/
 ---
 
 ## Q126412: Using the Microcom DeskPorte 28.8 Modem in Windows 95

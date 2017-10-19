@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69704: How to Write Advisor Library Callback Routines Under MS-DOS"
-permalink: kb/069/Q69704/
+permalink: /kb/069/Q69704/
 ---
 
 ## Q69704: How to Write Advisor Library Callback Routines Under MS-DOS

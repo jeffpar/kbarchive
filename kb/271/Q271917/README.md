@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271917: Read-Only File Appears to Be Deleted from NFS Share But Is Not"
-permalink: kb/271/Q271917/
+permalink: /kb/271/Q271917/
 ---
 
 ## Q271917: Read-Only File Appears to Be Deleted from NFS Share But Is Not

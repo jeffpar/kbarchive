@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158778: Mac Encarta 97: Color Printing Causes Hang with Low Memory"
-permalink: kb/158/Q158778/
+permalink: /kb/158/Q158778/
 ---
 
 ## Q158778: Mac Encarta 97: Color Printing Causes Hang with Low Memory

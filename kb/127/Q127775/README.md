@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127775: STOP 0x0A in STREAMS.SYS with DEC Pathworks Loaded"
-permalink: kb/127/Q127775/
+permalink: /kb/127/Q127775/
 ---
 
 ## Q127775: STOP 0x0A in STREAMS.SYS with DEC Pathworks Loaded

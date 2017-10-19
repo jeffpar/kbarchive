@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75957: Mac Form: Changing Font on Printed Form"
-permalink: kb/075/Q75957/
+permalink: /kb/075/Q75957/
 ---
 
 ## Q75957: Mac Form: Changing Font on Printed Form

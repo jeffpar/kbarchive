@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158014: XCLN: Seven Habits Commands Not Available on Tools Menu"
-permalink: kb/158/Q158014/
+permalink: /kb/158/Q158014/
 ---
 
 ## Q158014: XCLN: Seven Habits Commands Not Available on Tools Menu

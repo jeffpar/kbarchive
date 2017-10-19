@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135342: BUG: Scope on Report Command Doesn't Work as in version 2.x"
-permalink: kb/135/Q135342/
+permalink: /kb/135/Q135342/
 ---
 
 ## Q135342: BUG: Scope on Report Command Doesn't Work as in version 2.x

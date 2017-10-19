@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71763: BUG: HELPMAKE Allows Only One CrossRef Per Line in RTF Files"
-permalink: kb/071/Q71763/
+permalink: /kb/071/Q71763/
 ---
 
 ## Q71763: BUG: HELPMAKE Allows Only One CrossRef Per Line in RTF Files

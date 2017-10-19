@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183163: BUG: Setting Orientation Changes Background Mix Mode for Printer"
-permalink: kb/183/Q183163/
+permalink: /kb/183/Q183163/
 ---
 
 ## Q183163: BUG: Setting Orientation Changes Background Mix Mode for Printer

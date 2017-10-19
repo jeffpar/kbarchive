@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85425: SETUP.TXT: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2"
-permalink: kb/085/Q85425/
+permalink: /kb/085/Q85425/
 ---
 
 ## Q85425: SETUP.TXT: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2

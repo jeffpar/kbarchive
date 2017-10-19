@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221947: SMS: Force Software Inventory Incorrectly Documented in Guide"
-permalink: kb/221/Q221947/
+permalink: /kb/221/Q221947/
 ---
 
 ## Q221947: SMS: Force Software Inventory Incorrectly Documented in Guide

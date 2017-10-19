@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183589: XFOR: Custom Recipients Do Not Appear After Dirsync"
-permalink: kb/183/Q183589/
+permalink: /kb/183/Q183589/
 ---
 
 ## Q183589: XFOR: Custom Recipients Do Not Appear After Dirsync

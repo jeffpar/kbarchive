@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86390: Aldus PageMaker 4.0 Stack Fault w/ Aldus Clipart Import Filter"
-permalink: kb/086/Q86390/
+permalink: /kb/086/Q86390/
 ---
 
 ## Q86390: Aldus PageMaker 4.0 Stack Fault w/ Aldus Clipart Import Filter

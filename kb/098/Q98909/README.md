@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98909: Description of Chip's Challenge"
-permalink: kb/098/Q98909/
+permalink: /kb/098/Q98909/
 ---
 
 ## Q98909: Description of Chip's Challenge

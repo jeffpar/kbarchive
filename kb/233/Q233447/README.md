@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233447: MSBP: &quot;Please Insert CD-ROM&quot; Error Message When You Eject CD-ROM"
-permalink: kb/233/Q233447/
+permalink: /kb/233/Q233447/
 ---
 
 ## Q233447: MSBP: &quot;Please Insert CD-ROM&quot; Error Message When You Eject CD-ROM

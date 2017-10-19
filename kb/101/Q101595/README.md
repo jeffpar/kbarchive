@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101595: PRB: &quot;Insufficient Memory for Application's Required Space&quot;"
-permalink: kb/101/Q101595/
+permalink: /kb/101/Q101595/
 ---
 
 ## Q101595: PRB: &quot;Insufficient Memory for Application's Required Space&quot;

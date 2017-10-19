@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112881: PC Adm: Err Msg: Notice 58 PO Address List Already Has..."
-permalink: kb/112/Q112881/
+permalink: /kb/112/Q112881/
 ---
 
 ## Q112881: PC Adm: Err Msg: Notice 58 PO Address List Already Has...

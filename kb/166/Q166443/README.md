@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166443: Configuring a Novell DOS/Win Client-32 for DHCP"
-permalink: kb/166/Q166443/
+permalink: /kb/166/Q166443/
 ---
 
 ## Q166443: Configuring a Novell DOS/Win Client-32 for DHCP

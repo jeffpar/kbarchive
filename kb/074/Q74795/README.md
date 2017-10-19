@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74795: HOWTO: Use PeekMessage() Loops in a Dialog Box"
-permalink: kb/074/Q74795/
+permalink: /kb/074/Q74795/
 ---
 
 ## Q74795: HOWTO: Use PeekMessage() Loops in a Dialog Box

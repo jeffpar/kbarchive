@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141985: Download of Time to Timex Watch Is Incorrect"
-permalink: kb/141/Q141985/
+permalink: /kb/141/Q141985/
 ---
 
 ## Q141985: Download of Time to Timex Watch Is Incorrect

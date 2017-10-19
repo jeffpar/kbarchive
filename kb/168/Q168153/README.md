@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168153: FIX: DBGrid Bound to RDC Displays a Single Row After MoveLast"
-permalink: kb/168/Q168153/
+permalink: /kb/168/Q168153/
 ---
 
 ## Q168153: FIX: DBGrid Bound to RDC Displays a Single Row After MoveLast

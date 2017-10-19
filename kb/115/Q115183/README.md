@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115183: Running WINHELP.EXE with Command Line Switches"
-permalink: kb/115/Q115183/
+permalink: /kb/115/Q115183/
 ---
 
 ## Q115183: Running WINHELP.EXE with Command Line Switches

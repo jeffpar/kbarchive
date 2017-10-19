@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224592: XADM: Naming Exchange Servers to Optimize KCC Performance"
-permalink: kb/224/Q224592/
+permalink: /kb/224/Q224592/
 ---
 
 ## Q224592: XADM: Naming Exchange Servers to Optimize KCC Performance

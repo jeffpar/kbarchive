@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191419: GP Fault or Access Violation When Buffer Too Small"
-permalink: kb/191/Q191419/
+permalink: /kb/191/Q191419/
 ---
 
 ## Q191419: GP Fault or Access Violation When Buffer Too Small

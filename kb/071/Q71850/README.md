@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71850: Windows Err Msg: Another Application Is Using Communication..."
-permalink: kb/071/Q71850/
+permalink: /kb/071/Q71850/
 ---
 
 ## Q71850: Windows Err Msg: Another Application Is Using Communication...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66833: ASD: Using the NAV1 Radio to Track a VOR on 747 Panel"
-permalink: kb/066/Q66833/
+permalink: /kb/066/Q66833/
 ---
 
 ## Q66833: ASD: Using the NAV1 Radio to Track a VOR on 747 Panel

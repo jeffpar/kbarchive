@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101908: Comprehensive List of WRK Version 3.1 Doc Errors, Part 2"
-permalink: kb/101/Q101908/
+permalink: /kb/101/Q101908/
 ---
 
 ## Q101908: Comprehensive List of WRK Version 3.1 Doc Errors, Part 2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245084: Data Is Invalid When Setting Replication Properties"
-permalink: kb/245/Q245084/
+permalink: /kb/245/Q245084/
 ---
 
 ## Q245084: Data Is Invalid When Setting Replication Properties

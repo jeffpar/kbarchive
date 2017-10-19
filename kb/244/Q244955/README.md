@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244955: PRB: MinDependency Project May Need to Include Atl.dll"
-permalink: kb/244/Q244955/
+permalink: /kb/244/Q244955/
 ---
 
 ## Q244955: PRB: MinDependency Project May Need to Include Atl.dll

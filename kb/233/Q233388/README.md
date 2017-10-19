@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233388: SNA Server 3.0 Service Pack 4 Fix List"
-permalink: kb/233/Q233388/
+permalink: /kb/233/Q233388/
 ---
 
 ## Q233388: SNA Server 3.0 Service Pack 4 Fix List

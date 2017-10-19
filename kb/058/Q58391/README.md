@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58391: Cancel Button Must Be Chosen Three Times in Error Dialog"
-permalink: kb/058/Q58391/
+permalink: /kb/058/Q58391/
 ---
 
 ## Q58391: Cancel Button Must Be Chosen Three Times in Error Dialog

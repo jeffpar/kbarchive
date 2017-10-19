@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249135: Cannot Apply 56-Bit SP6/6a to 128-Bit Windows NT 4.0"
-permalink: kb/249/Q249135/
+permalink: /kb/249/Q249135/
 ---
 
 ## Q249135: Cannot Apply 56-Bit SP6/6a to 128-Bit Windows NT 4.0

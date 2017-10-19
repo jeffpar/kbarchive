@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101447: Mac Srv: Mail Data File Compression Is Lowest Priority"
-permalink: kb/101/Q101447/
+permalink: /kb/101/Q101447/
 ---
 
 ## Q101447: Mac Srv: Mail Data File Compression Is Lowest Priority

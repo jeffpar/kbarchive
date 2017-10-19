@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264076: FOR /F in Batch Command File Causes Access Violation in Cmd.exe"
-permalink: kb/264/Q264076/
+permalink: /kb/264/Q264076/
 ---
 
 ## Q264076: FOR /F in Batch Command File Causes Access Violation in Cmd.exe

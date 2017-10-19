@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166275: HOWTO: Debug a Native Code Visual Basic Component in VC++"
-permalink: kb/166/Q166275/
+permalink: /kb/166/Q166275/
 ---
 
 ## Q166275: HOWTO: Debug a Native Code Visual Basic Component in VC++

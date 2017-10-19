@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171891: Windows 95 Uses Encapsulated Arcnet"
-permalink: kb/171/Q171891/
+permalink: /kb/171/Q171891/
 ---
 
 ## Q171891: Windows 95 Uses Encapsulated Arcnet

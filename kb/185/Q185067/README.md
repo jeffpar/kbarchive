@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185067: &quot;Fatal Exception 0D at 0327:00004DE4&quot; on HP Vectra VL5"
-permalink: kb/185/Q185067/
+permalink: /kb/185/Q185067/
 ---
 
 ## Q185067: &quot;Fatal Exception 0D at 0327:00004DE4&quot; on HP Vectra VL5

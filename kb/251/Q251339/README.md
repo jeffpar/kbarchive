@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251339: PRB: CopyFolder Syntax Differs for UNC Paths and Mapped Drives"
-permalink: kb/251/Q251339/
+permalink: /kb/251/Q251339/
 ---
 
 ## Q251339: PRB: CopyFolder Syntax Differs for UNC Paths and Mapped Drives

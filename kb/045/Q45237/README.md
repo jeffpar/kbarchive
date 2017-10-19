@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q45237: INFO: Unsigned Characters and Arithmetic Operators"
-permalink: kb/045/Q45237/
+permalink: /kb/045/Q45237/
 ---
 
 ## Q45237: INFO: Unsigned Characters and Arithmetic Operators

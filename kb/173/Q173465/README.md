@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173465: Encarta Virtual Globe, Trial Edition: Testing CD-ROM File Access"
-permalink: kb/173/Q173465/
+permalink: /kb/173/Q173465/
 ---
 
 ## Q173465: Encarta Virtual Globe, Trial Edition: Testing CD-ROM File Access

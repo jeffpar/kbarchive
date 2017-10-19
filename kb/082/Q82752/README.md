@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82752: Windows 3.1 and Soft Font Limitations"
-permalink: kb/082/Q82752/
+permalink: /kb/082/Q82752/
 ---
 
 ## Q82752: Windows 3.1 and Soft Font Limitations

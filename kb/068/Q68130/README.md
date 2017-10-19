@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68130: PerStor #PS180-16FN RLL Hard Disk Controller and Windows 3.0"
-permalink: kb/068/Q68130/
+permalink: /kb/068/Q68130/
 ---
 
 ## Q68130: PerStor #PS180-16FN RLL Hard Disk Controller and Windows 3.0

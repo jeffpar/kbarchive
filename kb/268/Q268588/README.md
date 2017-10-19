@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268588: Groups Exported to Netscape from MMS Are Not Searchable"
-permalink: kb/268/Q268588/
+permalink: /kb/268/Q268588/
 ---
 
 ## Q268588: Groups Exported to Netscape from MMS Are Not Searchable

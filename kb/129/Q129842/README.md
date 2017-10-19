@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129842: Maximum Number of Send and Receive Packets Used By NBF"
-permalink: kb/129/Q129842/
+permalink: /kb/129/Q129842/
 ---
 
 ## Q129842: Maximum Number of Send and Receive Packets Used By NBF

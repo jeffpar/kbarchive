@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275494: PRB: IIS 4.0 Userdump Generates a Memory Dump w/ Remote PerfMon"
-permalink: kb/275/Q275494/
+permalink: /kb/275/Q275494/
 ---
 
 ## Q275494: PRB: IIS 4.0 Userdump Generates a Memory Dump w/ Remote PerfMon

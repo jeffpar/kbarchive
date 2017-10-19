@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257777: FIX: Printer.Height May Eject the Wrong Amount of Paper"
-permalink: kb/257/Q257777/
+permalink: /kb/257/Q257777/
 ---
 
 ## Q257777: FIX: Printer.Height May Eject the Wrong Amount of Paper

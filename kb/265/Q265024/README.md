@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265024: WD97: Blank Page Printed Inserting Odd /Even Page Section Break"
-permalink: kb/265/Q265024/
+permalink: /kb/265/Q265024/
 ---
 
 ## Q265024: WD97: Blank Page Printed Inserting Odd /Even Page Section Break

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190727: HOWTO: Control Your Updates in ADO Through &quot;Update Criteria&quot;"
-permalink: kb/190/Q190727/
+permalink: /kb/190/Q190727/
 ---
 
 ## Q190727: HOWTO: Control Your Updates in ADO Through &quot;Update Criteria&quot;

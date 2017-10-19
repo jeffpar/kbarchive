@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93149: Vocal Eyes Does Not Read Screen in MS-DOS Session"
-permalink: kb/093/Q93149/
+permalink: /kb/093/Q93149/
 ---
 
 ## Q93149: Vocal Eyes Does Not Read Screen in MS-DOS Session

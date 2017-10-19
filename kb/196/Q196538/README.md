@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196538: Euro Currency Not Available in Windows NT WTS Character Sets"
-permalink: kb/196/Q196538/
+permalink: /kb/196/Q196538/
 ---
 
 ## Q196538: Euro Currency Not Available in Windows NT WTS Character Sets

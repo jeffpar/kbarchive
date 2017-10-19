@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179344: WD97: GoTo Previous Comment Does Not Go To Correct Comment"
-permalink: kb/179/Q179344/
+permalink: /kb/179/Q179344/
 ---
 
 ## Q179344: WD97: GoTo Previous Comment Does Not Go To Correct Comment

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231374: SYSKEY on Terminal Server Causes Intermittent Logon Problems"
-permalink: kb/231/Q231374/
+permalink: /kb/231/Q231374/
 ---
 
 ## Q231374: SYSKEY on Terminal Server Causes Intermittent Logon Problems

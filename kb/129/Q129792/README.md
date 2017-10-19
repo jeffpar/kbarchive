@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129792: List of Third-Party Object-Oriented Books with ISBN"
-permalink: kb/129/Q129792/
+permalink: /kb/129/Q129792/
 ---
 
 ## Q129792: List of Third-Party Object-Oriented Books with ISBN

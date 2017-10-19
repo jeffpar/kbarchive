@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196693: XADM: How To Use ESEUTIL /U to Upgrade a Database"
-permalink: kb/196/Q196693/
+permalink: /kb/196/Q196693/
 ---
 
 ## Q196693: XADM: How To Use ESEUTIL /U to Upgrade a Database

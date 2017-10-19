@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125931: SMS Server Selection Using Appstart"
-permalink: kb/125/Q125931/
+permalink: /kb/125/Q125931/
 ---
 
 ## Q125931: SMS Server Selection Using Appstart

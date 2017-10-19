@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51266: Air Traffic Control Communications Using Transponder"
-permalink: kb/051/Q51266/
+permalink: /kb/051/Q51266/
 ---
 
 ## Q51266: Air Traffic Control Communications Using Transponder

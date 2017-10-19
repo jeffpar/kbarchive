@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126005: MSB Solar and Ocean: Err Msg: Problem Loading or Finding Files"
-permalink: kb/126/Q126005/
+permalink: /kb/126/Q126005/
 ---
 
 ## Q126005: MSB Solar and Ocean: Err Msg: Problem Loading or Finding Files

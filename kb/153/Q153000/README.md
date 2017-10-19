@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153000: All Drives in My Computer Are Hidden"
-permalink: kb/153/Q153000/
+permalink: /kb/153/Q153000/
 ---
 
 ## Q153000: All Drives in My Computer Are Hidden

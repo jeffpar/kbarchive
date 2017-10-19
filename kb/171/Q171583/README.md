@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171583: HOWTO: Fill a 32-bit VBA Array of UDType via a Visual C++ DLL"
-permalink: kb/171/Q171583/
+permalink: /kb/171/Q171583/
 ---
 
 ## Q171583: HOWTO: Fill a 32-bit VBA Array of UDType via a Visual C++ DLL

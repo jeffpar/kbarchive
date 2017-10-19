@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140923: SMS Windows NT Client Terminates Due to Heap Error"
-permalink: kb/140/Q140923/
+permalink: /kb/140/Q140923/
 ---
 
 ## Q140923: SMS Windows NT Client Terminates Due to Heap Error

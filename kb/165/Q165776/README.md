@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165776: FIX: Admin Cannot See Files with Project Security Enabled"
-permalink: kb/165/Q165776/
+permalink: /kb/165/Q165776/
 ---
 
 ## Q165776: FIX: Admin Cannot See Files with Project Security Enabled

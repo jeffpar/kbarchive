@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126972: Control Panel &quot;Don't Load&quot; Feature Does Not Work"
-permalink: kb/126/Q126972/
+permalink: /kb/126/Q126972/
 ---
 
 ## Q126972: Control Panel &quot;Don't Load&quot; Feature Does Not Work

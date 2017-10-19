@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193729: SNA Distributed Link Service Access Violation in sbpbputh()"
-permalink: kb/193/Q193729/
+permalink: /kb/193/Q193729/
 ---
 
 ## Q193729: SNA Distributed Link Service Access Violation in sbpbputh()

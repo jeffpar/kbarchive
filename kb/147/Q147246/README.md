@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147246: Using Direct Hosting over IPX Causes STOP 0x0000000A"
-permalink: kb/147/Q147246/
+permalink: /kb/147/Q147246/
 ---
 
 ## Q147246: Using Direct Hosting over IPX Causes STOP 0x0000000A

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290406: Stop 0xC000021A with Custom Gina.dll &amp; WLX_LOGON_OPT_NO_PROFILE"
-permalink: kb/290/Q290406/
+permalink: /kb/290/Q290406/
 ---
 
 ## Q290406: Stop 0xC000021A with Custom Gina.dll &amp; WLX_LOGON_OPT_NO_PROFILE

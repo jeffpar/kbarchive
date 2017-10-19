@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93002: No 32-Bit Disk Access with Mylex DCE376 SCSI Adapter"
-permalink: kb/093/Q93002/
+permalink: /kb/093/Q93002/
 ---
 
 ## Q93002: No 32-Bit Disk Access with Mylex DCE376 SCSI Adapter

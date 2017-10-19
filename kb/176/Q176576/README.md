@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176576: XADM: Add/Remove Exchange Server Components Shows Size as Zero"
-permalink: kb/176/Q176576/
+permalink: /kb/176/Q176576/
 ---
 
 ## Q176576: XADM: Add/Remove Exchange Server Components Shows Size as Zero

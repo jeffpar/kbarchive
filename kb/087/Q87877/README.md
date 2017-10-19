@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87877: Err Msg: System Error: Write Protected Disk in Drive x:"
-permalink: kb/087/Q87877/
+permalink: /kb/087/Q87877/
 ---
 
 ## Q87877: Err Msg: System Error: Write Protected Disk in Drive x:

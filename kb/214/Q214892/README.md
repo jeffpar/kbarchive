@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214892: Cannot Install SMS Client on a Workgroup Member"
-permalink: kb/214/Q214892/
+permalink: /kb/214/Q214892/
 ---
 
 ## Q214892: Cannot Install SMS Client on a Workgroup Member

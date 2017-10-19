@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163379: SMS: Sender Capacity May Cause Secondary Site Install Failure"
-permalink: kb/163/Q163379/
+permalink: /kb/163/Q163379/
 ---
 
 ## Q163379: SMS: Sender Capacity May Cause Secondary Site Install Failure

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152194: Stop 0x0A When NWNBLNK Accesses Memory in Free Pool"
-permalink: kb/152/Q152194/
+permalink: /kb/152/Q152194/
 ---
 
 ## Q152194: Stop 0x0A When NWNBLNK Accesses Memory in Free Pool

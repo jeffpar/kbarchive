@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63625: Windows 3.0 and Third-Party Hard Disk Partitioning Software"
-permalink: kb/063/Q63625/
+permalink: /kb/063/Q63625/
 ---
 
 ## Q63625: Windows 3.0 and Third-Party Hard Disk Partitioning Software

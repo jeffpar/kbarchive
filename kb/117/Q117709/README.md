@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117709: PRB: BROWSE FIELDS Results Inconsistent in 1-to-Many Relation"
-permalink: kb/117/Q117709/
+permalink: /kb/117/Q117709/
 ---
 
 ## Q117709: PRB: BROWSE FIELDS Results Inconsistent in 1-to-Many Relation

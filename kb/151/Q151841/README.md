@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151841: PRB: FoxPro and Clipper Share the Same DBF Files on a Network"
-permalink: kb/151/Q151841/
+permalink: /kb/151/Q151841/
 ---
 
 ## Q151841: PRB: FoxPro and Clipper Share the Same DBF Files on a Network

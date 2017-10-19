@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163636: XCLN: Cannot Modify Personal Address Book (PAB) Templates"
-permalink: kb/163/Q163636/
+permalink: /kb/163/Q163636/
 ---
 
 ## Q163636: XCLN: Cannot Modify Personal Address Book (PAB) Templates

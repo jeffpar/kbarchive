@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134955: SETUP.EXE Not Installed During Network Monitor Installation"
-permalink: kb/134/Q134955/
+permalink: /kb/134/Q134955/
 ---
 
 ## Q134955: SETUP.EXE Not Installed During Network Monitor Installation

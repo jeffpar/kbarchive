@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73338: Comprehensive List of Windows 3.1 &quot;User's Guide&quot; Doc Errs"
-permalink: kb/073/Q73338/
+permalink: /kb/073/Q73338/
 ---
 
 ## Q73338: Comprehensive List of Windows 3.1 &quot;User's Guide&quot; Doc Errs

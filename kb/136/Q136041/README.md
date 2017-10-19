@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136041: SMTP: Err Msg: This Device Does Not Exist on the Network"
-permalink: kb/136/Q136041/
+permalink: /kb/136/Q136041/
 ---
 
 ## Q136041: SMTP: Err Msg: This Device Does Not Exist on the Network

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69988: Percent Character Not Allowed in Identifiers in MASM 6.0"
-permalink: kb/069/Q69988/
+permalink: /kb/069/Q69988/
 ---
 
 ## Q69988: Percent Character Not Allowed in Identifiers in MASM 6.0

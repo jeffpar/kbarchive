@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197857: Windows 9x DHCP Clients Do Not Query WINS"
-permalink: kb/197/Q197857/
+permalink: /kb/197/Q197857/
 ---
 
 ## Q197857: Windows 9x DHCP Clients Do Not Query WINS

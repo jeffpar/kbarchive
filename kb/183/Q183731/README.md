@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183731: How to Index and Create a Catalog for a New Web Site"
-permalink: kb/183/Q183731/
+permalink: /kb/183/Q183731/
 ---
 
 ## Q183731: How to Index and Create a Catalog for a New Web Site

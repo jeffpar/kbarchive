@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264616: FS2000: Differences Between True and Indicated Air Speeds"
-permalink: kb/264/Q264616/
+permalink: /kb/264/Q264616/
 ---
 
 ## Q264616: FS2000: Differences Between True and Indicated Air Speeds

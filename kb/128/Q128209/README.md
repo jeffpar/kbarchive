@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128209: Description of Design Mode in Screens, Reports, &amp; Labels"
-permalink: kb/128/Q128209/
+permalink: /kb/128/Q128209/
 ---
 
 ## Q128209: Description of Design Mode in Screens, Reports, &amp; Labels

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122851: PC WSPlus: Restoring the SCHEDULE.KEY File"
-permalink: kb/122/Q122851/
+permalink: /kb/122/Q122851/
 ---
 
 ## Q122851: PC WSPlus: Restoring the SCHEDULE.KEY File

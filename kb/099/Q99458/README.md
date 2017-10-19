@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99458: OEM Setup Does Not Add Code Page Statements to AUTOEXEC.BAT"
-permalink: kb/099/Q99458/
+permalink: /kb/099/Q99458/
 ---
 
 ## Q99458: OEM Setup Does Not Add Code Page Statements to AUTOEXEC.BAT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271600: XCON: In Certain Conditions MTA Erroneously Deletes Data Files"
-permalink: kb/271/Q271600/
+permalink: /kb/271/Q271600/
 ---
 
 ## Q271600: XCON: In Certain Conditions MTA Erroneously Deletes Data Files

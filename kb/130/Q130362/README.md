@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130362: How to Install and Troubleshoot the HP JetAdmin Service"
-permalink: kb/130/Q130362/
+permalink: /kb/130/Q130362/
 ---
 
 ## Q130362: How to Install and Troubleshoot the HP JetAdmin Service

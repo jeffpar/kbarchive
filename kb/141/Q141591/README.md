@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141591: Clarification of Enhanced IDE Under Windows NT"
-permalink: kb/141/Q141591/
+permalink: /kb/141/Q141591/
 ---
 
 ## Q141591: Clarification of Enhanced IDE Under Windows NT

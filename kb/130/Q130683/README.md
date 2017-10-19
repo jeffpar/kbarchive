@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130683: How to Create a General Purpose Reusable Navigation Toolbar"
-permalink: kb/130/Q130683/
+permalink: /kb/130/Q130683/
 ---
 
 ## Q130683: How to Create a General Purpose Reusable Navigation Toolbar

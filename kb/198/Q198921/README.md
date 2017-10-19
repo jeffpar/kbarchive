@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198921: FIX: Visual C++ ATL Provider Fails when Used with SQL DTS"
-permalink: kb/198/Q198921/
+permalink: /kb/198/Q198921/
 ---
 
 ## Q198921: FIX: Visual C++ ATL Provider Fails when Used with SQL DTS

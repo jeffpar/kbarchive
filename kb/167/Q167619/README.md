@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167619: WD97: Web Address Is Cut Off in Web Toolbar"
-permalink: kb/167/Q167619/
+permalink: /kb/167/Q167619/
 ---
 
 ## Q167619: WD97: Web Address Is Cut Off in Web Toolbar

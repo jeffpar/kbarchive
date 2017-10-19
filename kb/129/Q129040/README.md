@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129040: Cannot Remote Control a 256 Color 1024x768 SVGA Machine"
-permalink: kb/129/Q129040/
+permalink: /kb/129/Q129040/
 ---
 
 ## Q129040: Cannot Remote Control a 256 Color 1024x768 SVGA Machine

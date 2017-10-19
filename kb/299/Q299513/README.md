@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299513: Passport Login Page Appears in the Wrong Language"
-permalink: kb/299/Q299513/
+permalink: /kb/299/Q299513/
 ---
 
 ## Q299513: Passport Login Page Appears in the Wrong Language

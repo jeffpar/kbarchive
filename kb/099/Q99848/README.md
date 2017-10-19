@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99848: INFO: Use ON_MESSAGE() Macro to Map Less-Common Messages"
-permalink: kb/099/Q99848/
+permalink: /kb/099/Q99848/
 ---
 
 ## Q99848: INFO: Use ON_MESSAGE() Macro to Map Less-Common Messages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67269: Supplemental Driver Library Printer Driver Enhancements"
-permalink: kb/067/Q67269/
+permalink: /kb/067/Q67269/
 ---
 
 ## Q67269: Supplemental Driver Library Printer Driver Enhancements

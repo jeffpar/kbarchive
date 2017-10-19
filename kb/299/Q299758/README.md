@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299758: Train Simulator: Can't Add Coal/Water to Goelsdorf 380 Tender"
-permalink: kb/299/Q299758/
+permalink: /kb/299/Q299758/
 ---
 
 ## Q299758: Train Simulator: Can't Add Coal/Water to Goelsdorf 380 Tender

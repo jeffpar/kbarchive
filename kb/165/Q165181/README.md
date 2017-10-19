@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165181: EISA Configuration Boot Code Is Replaced on Mirror Drives"
-permalink: kb/165/Q165181/
+permalink: /kb/165/Q165181/
 ---
 
 ## Q165181: EISA Configuration Boot Code Is Replaced on Mirror Drives

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182781: Client Connections to Multihomed Server Not Load Balanced"
-permalink: kb/182/Q182781/
+permalink: /kb/182/Q182781/
 ---
 
 ## Q182781: Client Connections to Multihomed Server Not Load Balanced

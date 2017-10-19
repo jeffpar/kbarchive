@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165048: TN3270 Service Appears Inactive if Started from Command Prompt"
-permalink: kb/165/Q165048/
+permalink: /kb/165/Q165048/
 ---
 
 ## Q165048: TN3270 Service Appears Inactive if Started from Command Prompt

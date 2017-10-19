@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158024: GEX Error Message: &quot;Invalid Dynamic Link Call to a .dll File&quot;"
-permalink: kb/158/Q158024/
+permalink: /kb/158/Q158024/
 ---
 
 ## Q158024: GEX Error Message: &quot;Invalid Dynamic Link Call to a .dll File&quot;

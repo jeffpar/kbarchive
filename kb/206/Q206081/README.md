@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q206081: NMI Parity Errors on NCR WorldMark 4300 Pentium Pro"
-permalink: kb/206/Q206081/
+permalink: /kb/206/Q206081/
 ---
 
 ## Q206081: NMI Parity Errors on NCR WorldMark 4300 Pentium Pro

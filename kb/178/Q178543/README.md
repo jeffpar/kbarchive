@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178543: XCLN: Err Msg: Can't open this item. Cannot add the attachment."
-permalink: kb/178/Q178543/
+permalink: /kb/178/Q178543/
 ---
 
 ## Q178543: XCLN: Err Msg: Can't open this item. Cannot add the attachment.

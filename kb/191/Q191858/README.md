@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191858: BUG: Changing Appearance Property Reduces ListBox Height"
-permalink: kb/191/Q191858/
+permalink: /kb/191/Q191858/
 ---
 
 ## Q191858: BUG: Changing Appearance Property Reduces ListBox Height

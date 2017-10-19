@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224087: Error Message Running Emergency Repair Process"
-permalink: kb/224/Q224087/
+permalink: /kb/224/Q224087/
 ---
 
 ## Q224087: Error Message Running Emergency Repair Process

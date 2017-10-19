@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125879: WINS Static Mappings and Remote Access Services"
-permalink: kb/125/Q125879/
+permalink: /kb/125/Q125879/
 ---
 
 ## Q125879: WINS Static Mappings and Remote Access Services

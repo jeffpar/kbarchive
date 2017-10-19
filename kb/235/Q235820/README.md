@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235820: SMS: Programs Advertised to Users Executed by Non Members"
-permalink: kb/235/Q235820/
+permalink: /kb/235/Q235820/
 ---
 
 ## Q235820: SMS: Programs Advertised to Users Executed by Non Members

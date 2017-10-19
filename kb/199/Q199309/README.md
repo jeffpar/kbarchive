@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199309: XFOR: Unable to Access Mailbox After Migration"
-permalink: kb/199/Q199309/
+permalink: /kb/199/Q199309/
 ---
 
 ## Q199309: XFOR: Unable to Access Mailbox After Migration

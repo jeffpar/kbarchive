@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181174: WD97: How to Exit Windows from Word Using ExitWindows"
-permalink: kb/181/Q181174/
+permalink: /kb/181/Q181174/
 ---
 
 ## Q181174: WD97: How to Exit Windows from Word Using ExitWindows

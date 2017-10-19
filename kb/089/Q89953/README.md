@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89953: WD97: Fields Updated When Document Repaginated"
-permalink: kb/089/Q89953/
+permalink: /kb/089/Q89953/
 ---
 
 ## Q89953: WD97: Fields Updated When Document Repaginated

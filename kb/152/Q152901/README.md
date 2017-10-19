@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152901: XADM: MTA Reports Repeated Occurrence of Event Id 1209"
-permalink: kb/152/Q152901/
+permalink: /kb/152/Q152901/
 ---
 
 ## Q152901: XADM: MTA Reports Repeated Occurrence of Event Id 1209

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123809: FIX: Development Environment Doesn't Unload DLL on Termination"
-permalink: kb/123/Q123809/
+permalink: /kb/123/Q123809/
 ---
 
 ## Q123809: FIX: Development Environment Doesn't Unload DLL on Termination

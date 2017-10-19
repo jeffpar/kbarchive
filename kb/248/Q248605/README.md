@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248605: Cluster IP Address Resource Fails with Many IP Address Resources"
-permalink: kb/248/Q248605/
+permalink: /kb/248/Q248605/
 ---
 
 ## Q248605: Cluster IP Address Resource Fails with Many IP Address Resources

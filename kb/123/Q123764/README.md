@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123764: Display Unreadable with an IBM 8514/A Video Adapter"
-permalink: kb/123/Q123764/
+permalink: /kb/123/Q123764/
 ---
 
 ## Q123764: Display Unreadable with an IBM 8514/A Video Adapter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117383: BUG: C2483 Instantiating Objects with the Thread Attribute"
-permalink: kb/117/Q117383/
+permalink: /kb/117/Q117383/
 ---
 
 ## Q117383: BUG: C2483 Instantiating Objects with the Thread Attribute

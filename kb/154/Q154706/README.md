@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154706: GSNW Should Not Be Able to Be Removed While DSMN Is Installed"
-permalink: kb/154/Q154706/
+permalink: /kb/154/Q154706/
 ---
 
 ## Q154706: GSNW Should Not Be Able to Be Removed While DSMN Is Installed

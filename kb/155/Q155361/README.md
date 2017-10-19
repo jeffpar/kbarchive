@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155361: INFO: Use of Visual C++ on Networks"
-permalink: kb/155/Q155361/
+permalink: /kb/155/Q155361/
 ---
 
 ## Q155361: INFO: Use of Visual C++ on Networks

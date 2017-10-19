@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96118: Font Assistant Err Msg: TrueType Is Not Enabled"
-permalink: kb/096/Q96118/
+permalink: /kb/096/Q96118/
 ---
 
 ## Q96118: Font Assistant Err Msg: TrueType Is Not Enabled

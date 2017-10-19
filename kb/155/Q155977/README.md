@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155977: WD97: How to Install More Templates and Wizards"
-permalink: kb/155/Q155977/
+permalink: /kb/155/Q155977/
 ---
 
 ## Q155977: WD97: How to Install More Templates and Wizards

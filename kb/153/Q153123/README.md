@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153123: How to Enable Eastern Europe Keyboards for MS-DOS Applications"
-permalink: kb/153/Q153123/
+permalink: /kb/153/Q153123/
 ---
 
 ## Q153123: How to Enable Eastern Europe Keyboards for MS-DOS Applications

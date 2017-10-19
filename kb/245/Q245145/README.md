@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245145: How to Move Metaverse Zones to a Subordinate VIA Server"
-permalink: kb/245/Q245145/
+permalink: /kb/245/Q245145/
 ---
 
 ## Q245145: How to Move Metaverse Zones to a Subordinate VIA Server

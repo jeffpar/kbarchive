@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224992: Maintaining Transactional Integrity with OPLOCKS"
-permalink: kb/224/Q224992/
+permalink: /kb/224/Q224992/
 ---
 
 ## Q224992: Maintaining Transactional Integrity with OPLOCKS

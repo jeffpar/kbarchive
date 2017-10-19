@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128583: MS ACCESS 2 FOR WIN SBS: 2ED Corrections and Comments"
-permalink: kb/128/Q128583/
+permalink: /kb/128/Q128583/
 ---
 
 ## Q128583: MS ACCESS 2 FOR WIN SBS: 2ED Corrections and Comments

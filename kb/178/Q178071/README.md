@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178071: Disable SNA Admin/Manager Support for Windows NT Clients"
-permalink: kb/178/Q178071/
+permalink: /kb/178/Q178071/
 ---
 
 ## Q178071: Disable SNA Admin/Manager Support for Windows NT Clients

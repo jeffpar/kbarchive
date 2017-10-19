@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122203: SMS Administrator Doesn't Show New Architectures"
-permalink: kb/122/Q122203/
+permalink: /kb/122/Q122203/
 ---
 
 ## Q122203: SMS Administrator Doesn't Show New Architectures

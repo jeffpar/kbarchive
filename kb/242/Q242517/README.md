@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242517: AoE II: Some Screen Areas or Objects Are Black or Discolored"
-permalink: kb/242/Q242517/
+permalink: /kb/242/Q242517/
 ---
 
 ## Q242517: AoE II: Some Screen Areas or Objects Are Black or Discolored

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167359: FIX: extern Declaration Generates Extra Constructor Call"
-permalink: kb/167/Q167359/
+permalink: /kb/167/Q167359/
 ---
 
 ## Q167359: FIX: extern Declaration Generates Extra Constructor Call

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140582: Encarta 96: How to Download Updates from AOL"
-permalink: kb/140/Q140582/
+permalink: /kb/140/Q140582/
 ---
 
 ## Q140582: Encarta 96: How to Download Updates from AOL

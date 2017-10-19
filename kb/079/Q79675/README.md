@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79675: DOC: LBS_STANDARD List Box Style Documented Incorrectly"
-permalink: kb/079/Q79675/
+permalink: /kb/079/Q79675/
 ---
 
 ## Q79675: DOC: LBS_STANDARD List Box Style Documented Incorrectly

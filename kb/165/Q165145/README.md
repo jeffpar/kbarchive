@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165145: SMS: An Exception 0E Has Occurred at 0028:3204F83 in VxD"
-permalink: kb/165/Q165145/
+permalink: /kb/165/Q165145/
 ---
 
 ## Q165145: SMS: An Exception 0E Has Occurred at 0028:3204F83 in VxD

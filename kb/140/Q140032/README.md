@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140032: BUG: After Switching OLE Client Hangs in Visual Basic 16-Bit"
-permalink: kb/140/Q140032/
+permalink: /kb/140/Q140032/
 ---
 
 ## Q140032: BUG: After Switching OLE Client Hangs in Visual Basic 16-Bit

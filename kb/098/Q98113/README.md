@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98113: Playing as Guest in Tri-Peaks Does Not Register High Score"
-permalink: kb/098/Q98113/
+permalink: /kb/098/Q98113/
 ---
 
 ## Q98113: Playing as Guest in Tri-Peaks Does Not Register High Score

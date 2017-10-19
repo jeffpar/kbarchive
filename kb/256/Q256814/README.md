@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256814: MapPoint 2001: Unable to Paste Excel Data into MapPoint"
-permalink: kb/256/Q256814/
+permalink: /kb/256/Q256814/
 ---
 
 ## Q256814: MapPoint 2001: Unable to Paste Excel Data into MapPoint

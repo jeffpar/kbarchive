@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178819: XCLN: OLE Objects Do Not Display Correctly on Macintosh Clients"
-permalink: kb/178/Q178819/
+permalink: /kb/178/Q178819/
 ---
 
 ## Q178819: XCLN: OLE Objects Do Not Display Correctly on Macintosh Clients

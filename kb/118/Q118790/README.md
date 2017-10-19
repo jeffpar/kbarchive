@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118790: WfWG: Slow File Transfers to WinNT w/ 3C509, TCP/IP, NetBEUI"
-permalink: kb/118/Q118790/
+permalink: /kb/118/Q118790/
 ---
 
 ## Q118790: WfWG: Slow File Transfers to WinNT w/ 3C509, TCP/IP, NetBEUI

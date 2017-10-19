@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71824: MS-DOS 5 PACKING.LST (3.5-Inch Disk Set)"
-permalink: kb/071/Q71824/
+permalink: /kb/071/Q71824/
 ---
 
 ## Q71824: MS-DOS 5 PACKING.LST (3.5-Inch Disk Set)

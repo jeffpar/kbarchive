@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83355: A Mouse Double-Click May Act Like a Single Click"
-permalink: kb/083/Q83355/
+permalink: /kb/083/Q83355/
 ---
 
 ## Q83355: A Mouse Double-Click May Act Like a Single Click

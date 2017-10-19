@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q28568: Terminate-and-Stay-Resident (TSR) Program Example"
-permalink: kb/028/Q28568/
+permalink: /kb/028/Q28568/
 ---
 
 ## Q28568: Terminate-and-Stay-Resident (TSR) Program Example

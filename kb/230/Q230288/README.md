@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230288: XFOR: NDR from IMS Has Incorrect 3-Byte Reason Code"
-permalink: kb/230/Q230288/
+permalink: /kb/230/Q230288/
 ---
 
 ## Q230288: XFOR: NDR from IMS Has Incorrect 3-Byte Reason Code

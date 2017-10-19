@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153661: Remote Control of Windows Clients Displays Video Corruption"
-permalink: kb/153/Q153661/
+permalink: /kb/153/Q153661/
 ---
 
 ## Q153661: Remote Control of Windows Clients Displays Video Corruption

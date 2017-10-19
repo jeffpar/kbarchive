@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194701: Age of Empires: &quot;Out of Sync&quot; Error Message In Multiplayer Game"
-permalink: kb/194/Q194701/
+permalink: /kb/194/Q194701/
 ---
 
 ## Q194701: Age of Empires: &quot;Out of Sync&quot; Error Message In Multiplayer Game

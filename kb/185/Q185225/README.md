@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185225: XFOR: MSExchangeDX Fails To Start With Missing Xdir.edb File"
-permalink: kb/185/Q185225/
+permalink: /kb/185/Q185225/
 ---
 
 ## Q185225: XFOR: MSExchangeDX Fails To Start With Missing Xdir.edb File

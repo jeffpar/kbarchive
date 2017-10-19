@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173280: XADM: Tracking Log Field Descriptions"
-permalink: kb/173/Q173280/
+permalink: /kb/173/Q173280/
 ---
 
 ## Q173280: XADM: Tracking Log Field Descriptions

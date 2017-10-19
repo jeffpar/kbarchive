@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259615: PRB: &quot;Access Denied&quot; When You Configure Identity of COM Server"
-permalink: kb/259/Q259615/
+permalink: /kb/259/Q259615/
 ---
 
 ## Q259615: PRB: &quot;Access Denied&quot; When You Configure Identity of COM Server

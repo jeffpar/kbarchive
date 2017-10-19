@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152000: PRB: Appearance Property Uses Windows 4.0 WS_EX_CLIENTEDGE"
-permalink: kb/152/Q152000/
+permalink: /kb/152/Q152000/
 ---
 
 ## Q152000: PRB: Appearance Property Uses Windows 4.0 WS_EX_CLIENTEDGE

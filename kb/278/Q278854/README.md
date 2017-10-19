@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278854: No dial tone error during Web Companion account set up"
-permalink: kb/278/Q278854/
+permalink: /kb/278/Q278854/
 ---
 
 ## Q278854: No dial tone error during Web Companion account set up

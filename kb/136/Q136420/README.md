@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136420: How to Create an Array of Unique Random Numbers"
-permalink: kb/136/Q136420/
+permalink: /kb/136/Q136420/
 ---
 
 ## Q136420: How to Create an Array of Unique Random Numbers

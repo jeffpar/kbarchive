@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161238: WD97: EPS Images Are Printed Full Size Rather Than Cropped"
-permalink: kb/161/Q161238/
+permalink: /kb/161/Q161238/
 ---
 
 ## Q161238: WD97: EPS Images Are Printed Full Size Rather Than Cropped

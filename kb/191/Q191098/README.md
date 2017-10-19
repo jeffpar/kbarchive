@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191098: Large File Copy Operation Causes Available Bytes to Drop"
-permalink: kb/191/Q191098/
+permalink: /kb/191/Q191098/
 ---
 
 ## Q191098: Large File Copy Operation Causes Available Bytes to Drop

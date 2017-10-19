@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196296: FILE: Objsrv.exe Contains Fix for &quot;Object Server Not..&quot; Err"
-permalink: kb/196/Q196296/
+permalink: /kb/196/Q196296/
 ---
 
 ## Q196296: FILE: Objsrv.exe Contains Fix for &quot;Object Server Not..&quot; Err

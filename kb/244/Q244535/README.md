@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244535: HOW TO: Move a FrontPage Extended Web Site to Different Location"
-permalink: kb/244/Q244535/
+permalink: /kb/244/Q244535/
 ---
 
 ## Q244535: HOW TO: Move a FrontPage Extended Web Site to Different Location

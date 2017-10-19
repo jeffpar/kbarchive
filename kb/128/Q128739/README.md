@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128739: PC Win: Saving Multiple Messages into One File"
-permalink: kb/128/Q128739/
+permalink: /kb/128/Q128739/
 ---
 
 ## Q128739: PC Win: Saving Multiple Messages into One File

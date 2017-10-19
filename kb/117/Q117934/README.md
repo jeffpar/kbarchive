@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117934: Mac Encarta 94: Small White Spots Appear on Grayscale Printout"
-permalink: kb/117/Q117934/
+permalink: /kb/117/Q117934/
 ---
 
 ## Q117934: Mac Encarta 94: Small White Spots Appear on Grayscale Printout

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85046: FFAPI: Components of the Application FFAPI"
-permalink: kb/085/Q85046/
+permalink: /kb/085/Q85046/
 ---
 
 ## Q85046: FFAPI: Components of the Application FFAPI

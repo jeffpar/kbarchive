@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110956: Help Button Fails for Olicom Token Ring 16/4 Adapter"
-permalink: kb/110/Q110956/
+permalink: /kb/110/Q110956/
 ---
 
 ## Q110956: Help Button Fails for Olicom Token Ring 16/4 Adapter

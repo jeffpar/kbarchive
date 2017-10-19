@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198727: SMS: Remote Control Setting Registry Values Provided"
-permalink: kb/198/Q198727/
+permalink: /kb/198/Q198727/
 ---
 
 ## Q198727: SMS: Remote Control Setting Registry Values Provided

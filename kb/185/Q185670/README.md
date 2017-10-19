@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185670: WD97: Error Message: This Equation Is the Maximum Size Allowed"
-permalink: kb/185/Q185670/
+permalink: /kb/185/Q185670/
 ---
 
 ## Q185670: WD97: Error Message: This Equation Is the Maximum Size Allowed

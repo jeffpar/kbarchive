@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82746: General Information About Print Manager and Windows 3.1"
-permalink: kb/082/Q82746/
+permalink: /kb/082/Q82746/
 ---
 
 ## Q82746: General Information About Print Manager and Windows 3.1

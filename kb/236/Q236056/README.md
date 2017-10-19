@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236056: FIX: DAO 3.6 Overruns Buffers in GetRowsEx Method"
-permalink: kb/236/Q236056/
+permalink: /kb/236/Q236056/
 ---
 
 ## Q236056: FIX: DAO 3.6 Overruns Buffers in GetRowsEx Method

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244915: Daylight Savings Time Change Not Immediately Displayed"
-permalink: kb/244/Q244915/
+permalink: /kb/244/Q244915/
 ---
 
 ## Q244915: Daylight Savings Time Change Not Immediately Displayed

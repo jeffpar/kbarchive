@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132743: PC Adm: Only Local-Admin Menu Is Available in ADMIN.EXE"
-permalink: kb/132/Q132743/
+permalink: /kb/132/Q132743/
 ---
 
 ## Q132743: PC Adm: Only Local-Admin Menu Is Available in ADMIN.EXE

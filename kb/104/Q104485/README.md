@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104485: PC Ext: Err Msg: Error 21 Missing Routing File"
-permalink: kb/104/Q104485/
+permalink: /kb/104/Q104485/
 ---
 
 ## Q104485: PC Ext: Err Msg: Error 21 Missing Routing File

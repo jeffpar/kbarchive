@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156684: How to Use NLTEST to Force a New Secure Channel"
-permalink: kb/156/Q156684/
+permalink: /kb/156/Q156684/
 ---
 
 ## Q156684: How to Use NLTEST to Force a New Secure Channel

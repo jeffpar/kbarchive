@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101537: Windows Sound System Uncompressed Files"
-permalink: kb/101/Q101537/
+permalink: /kb/101/Q101537/
 ---
 
 ## Q101537: Windows Sound System Uncompressed Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108848: Information on HPWINPS.DRV HP PostScript Printer Driver"
-permalink: kb/108/Q108848/
+permalink: /kb/108/Q108848/
 ---
 
 ## Q108848: Information on HPWINPS.DRV HP PostScript Printer Driver

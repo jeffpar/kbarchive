@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87259: Mac Wkst: Must Modify Address Book Online"
-permalink: kb/087/Q87259/
+permalink: /kb/087/Q87259/
 ---
 
 ## Q87259: Mac Wkst: Must Modify Address Book Online

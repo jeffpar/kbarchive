@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66964: Displaying Outline, Shadow Text in Windows Paintbrush"
-permalink: kb/066/Q66964/
+permalink: /kb/066/Q66964/
 ---
 
 ## Q66964: Displaying Outline, Shadow Text in Windows Paintbrush

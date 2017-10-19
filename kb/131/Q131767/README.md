@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131767: Flight Simulator Err Msg: Unable to Lock XMS Memory"
-permalink: kb/131/Q131767/
+permalink: /kb/131/Q131767/
 ---
 
 ## Q131767: Flight Simulator Err Msg: Unable to Lock XMS Memory

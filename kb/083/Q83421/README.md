@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83421: Write Err Msg: There Are No Fonts Installed..."
-permalink: kb/083/Q83421/
+permalink: /kb/083/Q83421/
 ---
 
 ## Q83421: Write Err Msg: There Are No Fonts Installed...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152187: Add Printer Wizard Does Not Run"
-permalink: kb/152/Q152187/
+permalink: /kb/152/Q152187/
 ---
 
 ## Q152187: Add Printer Wizard Does Not Run

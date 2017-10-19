@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150687: Group Policies Not Applied on Windows NT Domain"
-permalink: kb/150/Q150687/
+permalink: /kb/150/Q150687/
 ---
 
 ## Q150687: Group Policies Not Applied on Windows NT Domain

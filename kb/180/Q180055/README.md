@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180055: XCLN: Error Synchronizing View/Form 80070005-508-0-322"
-permalink: kb/180/Q180055/
+permalink: /kb/180/Q180055/
 ---
 
 ## Q180055: XCLN: Error Synchronizing View/Form 80070005-508-0-322

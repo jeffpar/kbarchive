@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151778: Huge Downlevel Print Job Causes File Cache to Grow"
-permalink: kb/151/Q151778/
+permalink: /kb/151/Q151778/
 ---
 
 ## Q151778: Huge Downlevel Print Job Causes File Cache to Grow

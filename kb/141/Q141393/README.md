@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141393: DOC: Developer's Guide Has Incorrect OLE Automation Syntax"
-permalink: kb/141/Q141393/
+permalink: /kb/141/Q141393/
 ---
 
 ## Q141393: DOC: Developer's Guide Has Incorrect OLE Automation Syntax

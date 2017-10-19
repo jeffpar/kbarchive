@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240952: Zone Err Msg: Zone Setup Failed to Copy Itself to..."
-permalink: kb/240/Q240952/
+permalink: /kb/240/Q240952/
 ---
 
 ## Q240952: Zone Err Msg: Zone Setup Failed to Copy Itself to...

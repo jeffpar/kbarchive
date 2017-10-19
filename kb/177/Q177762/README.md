@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177762: XADM: Access Violation (0xc0000005) During Exchange Setup"
-permalink: kb/177/Q177762/
+permalink: /kb/177/Q177762/
 ---
 
 ## Q177762: XADM: Access Violation (0xc0000005) During Exchange Setup

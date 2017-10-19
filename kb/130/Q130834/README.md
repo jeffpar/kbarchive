@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130834: Objects Parameters Are Passed by Reference"
-permalink: kb/130/Q130834/
+permalink: /kb/130/Q130834/
 ---
 
 ## Q130834: Objects Parameters Are Passed by Reference

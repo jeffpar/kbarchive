@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185668: IntelliMouse TrackBall Wheel Does Not Work with Service Pack 3"
-permalink: kb/185/Q185668/
+permalink: /kb/185/Q185668/
 ---
 
 ## Q185668: IntelliMouse TrackBall Wheel Does Not Work with Service Pack 3

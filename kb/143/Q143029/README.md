@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143029: How To Use Online Registration"
-permalink: kb/143/Q143029/
+permalink: /kb/143/Q143029/
 ---
 
 ## Q143029: How To Use Online Registration

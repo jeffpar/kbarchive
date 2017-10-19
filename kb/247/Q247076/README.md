@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247076: XCLN: Cannot Delete or Hide the Default Internet Newsgroups PF"
-permalink: kb/247/Q247076/
+permalink: /kb/247/Q247076/
 ---
 
 ## Q247076: XCLN: Cannot Delete or Hide the Default Internet Newsgroups PF

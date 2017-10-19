@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177886: XCON: MTA Terminates With 218x, 2143, 2171, and 9405 Events"
-permalink: kb/177/Q177886/
+permalink: /kb/177/Q177886/
 ---
 
 ## Q177886: XCON: MTA Terminates With 218x, 2143, 2171, and 9405 Events

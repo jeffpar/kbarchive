@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172446: Steps to Take Before Calling Technical Support"
-permalink: kb/172/Q172446/
+permalink: /kb/172/Q172446/
 ---
 
 ## Q172446: Steps to Take Before Calling Technical Support

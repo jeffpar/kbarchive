@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247773: XADM: Cannot Use IMS After Exchange 5.0 Server SP2 Added to 5.0"
-permalink: kb/247/Q247773/
+permalink: /kb/247/Q247773/
 ---
 
 ## Q247773: XADM: Cannot Use IMS After Exchange 5.0 Server SP2 Added to 5.0

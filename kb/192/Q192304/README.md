@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192304: HOWTO: Check for a Writeable Drive Under Windows NT"
-permalink: kb/192/Q192304/
+permalink: /kb/192/Q192304/
 ---
 
 ## Q192304: HOWTO: Check for a Writeable Drive Under Windows NT

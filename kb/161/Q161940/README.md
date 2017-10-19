@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161940: XFOR: Message Appears Without Subject Line in All-in-One Client"
-permalink: kb/161/Q161940/
+permalink: /kb/161/Q161940/
 ---
 
 ## Q161940: XFOR: Message Appears Without Subject Line in All-in-One Client

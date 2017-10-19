@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126032: Badly-behaved 16-bit Application Prevents System Shutdown"
-permalink: kb/126/Q126032/
+permalink: /kb/126/Q126032/
 ---
 
 ## Q126032: Badly-behaved 16-bit Application Prevents System Shutdown

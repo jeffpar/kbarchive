@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153220: DHCP Manager Error &quot;No More Data Is Available&quot;"
-permalink: kb/153/Q153220/
+permalink: /kb/153/Q153220/
 ---
 
 ## Q153220: DHCP Manager Error &quot;No More Data Is Available&quot;

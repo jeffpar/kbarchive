@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135202: Backup Cannot Access Tape Drive in Safe Mode"
-permalink: kb/135/Q135202/
+permalink: /kb/135/Q135202/
 ---
 
 ## Q135202: Backup Cannot Access Tape Drive in Safe Mode

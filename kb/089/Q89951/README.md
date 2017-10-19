@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89951: Error Starting Norton Utilities Directory Sort"
-permalink: kb/089/Q89951/
+permalink: /kb/089/Q89951/
 ---
 
 ## Q89951: Error Starting Norton Utilities Directory Sort

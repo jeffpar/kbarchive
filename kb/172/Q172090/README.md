@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172090: ODE97: Filter By Form Not Available in Run-Time Applications"
-permalink: kb/172/Q172090/
+permalink: /kb/172/Q172090/
 ---
 
 ## Q172090: ODE97: Filter By Form Not Available in Run-Time Applications

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130914: Number of Users and Groups Affects SAM Size of Domain"
-permalink: kb/130/Q130914/
+permalink: /kb/130/Q130914/
 ---
 
 ## Q130914: Number of Users and Groups Affects SAM Size of Domain

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105927: MS-DOS 6.x Backup Err Msg: &quot;...Catalog File Is Corrupt&quot;"
-permalink: kb/105/Q105927/
+permalink: /kb/105/Q105927/
 ---
 
 ## Q105927: MS-DOS 6.x Backup Err Msg: &quot;...Catalog File Is Corrupt&quot;

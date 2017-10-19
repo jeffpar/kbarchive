@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99204: PC Adm: Doc Err: Setting Attributes for High Traffic Network"
-permalink: kb/099/Q99204/
+permalink: /kb/099/Q99204/
 ---
 
 ## Q99204: PC Adm: Doc Err: Setting Attributes for High Traffic Network

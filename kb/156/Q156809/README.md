@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156809: STL Sample for adjacent_difference, vector::push_back Function"
-permalink: kb/156/Q156809/
+permalink: /kb/156/Q156809/
 ---
 
 ## Q156809: STL Sample for adjacent_difference, vector::push_back Function

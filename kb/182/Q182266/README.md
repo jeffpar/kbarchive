@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182266: SNA APPC Event 93 Should Log Fully Qualified PLU Name"
-permalink: kb/182/Q182266/
+permalink: /kb/182/Q182266/
 ---
 
 ## Q182266: SNA APPC Event 93 Should Log Fully Qualified PLU Name

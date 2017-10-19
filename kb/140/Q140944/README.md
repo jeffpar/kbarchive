@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140944: XADM: DirSync Imports Treated Differently by Exchange"
-permalink: kb/140/Q140944/
+permalink: /kb/140/Q140944/
 ---
 
 ## Q140944: XADM: DirSync Imports Treated Differently by Exchange

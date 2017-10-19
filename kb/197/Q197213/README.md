@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197213: WD97: Word Fields Include Spaces at Beginning and End"
-permalink: kb/197/Q197213/
+permalink: /kb/197/Q197213/
 ---
 
 ## Q197213: WD97: Word Fields Include Spaces at Beginning and End

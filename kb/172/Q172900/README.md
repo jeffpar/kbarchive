@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172900: XCLN: Macintosh Client Hangs After Message Color is Changed"
-permalink: kb/172/Q172900/
+permalink: /kb/172/Q172900/
 ---
 
 ## Q172900: XCLN: Macintosh Client Hangs After Message Color is Changed

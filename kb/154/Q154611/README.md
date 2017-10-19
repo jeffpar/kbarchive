@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154611: SMS: NetCard ID Not Detected on a Direct Hosted IPX Client"
-permalink: kb/154/Q154611/
+permalink: /kb/154/Q154611/
 ---
 
 ## Q154611: SMS: NetCard ID Not Detected on a Direct Hosted IPX Client

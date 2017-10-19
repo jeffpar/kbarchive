@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155592: XFOR: MSMI Message Tracking Does Not Log Message Size"
-permalink: kb/155/Q155592/
+permalink: /kb/155/Q155592/
 ---
 
 ## Q155592: XFOR: MSMI Message Tracking Does Not Log Message Size

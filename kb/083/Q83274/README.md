@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83274: Minesweeper Cannot Be Played Without a Mouse"
-permalink: kb/083/Q83274/
+permalink: /kb/083/Q83274/
 ---
 
 ## Q83274: Minesweeper Cannot Be Played Without a Mouse

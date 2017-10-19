@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174653: How to Call CoGetClassObjectFromURL() in an MFC App"
-permalink: kb/174/Q174653/
+permalink: /kb/174/Q174653/
 ---
 
 ## Q174653: How to Call CoGetClassObjectFromURL() in an MFC App

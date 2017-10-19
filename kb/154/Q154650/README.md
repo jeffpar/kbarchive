@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154650: DBWEB: NT Service Reports Error 1067 and Immediately Terminates"
-permalink: kb/154/Q154650/
+permalink: /kb/154/Q154650/
 ---
 
 ## Q154650: DBWEB: NT Service Reports Error 1067 and Immediately Terminates

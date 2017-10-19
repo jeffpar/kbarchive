@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131322: PRB: C2710: Cannot Delete a Pointer to a Const Object"
-permalink: kb/131/Q131322/
+permalink: /kb/131/Q131322/
 ---
 
 ## Q131322: PRB: C2710: Cannot Delete a Pointer to a Const Object

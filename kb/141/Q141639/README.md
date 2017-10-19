@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141639: BUG: Subclass Member Object Properties Cannot Be Changed"
-permalink: kb/141/Q141639/
+permalink: /kb/141/Q141639/
 ---
 
 ## Q141639: BUG: Subclass Member Object Properties Cannot Be Changed

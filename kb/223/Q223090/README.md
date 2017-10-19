@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223090: FIX: UserControl on Active Desktop Causes AV Shutdown"
-permalink: kb/223/Q223090/
+permalink: /kb/223/Q223090/
 ---
 
 ## Q223090: FIX: UserControl on Active Desktop Causes AV Shutdown

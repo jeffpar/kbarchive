@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175038: How to Disable Call Waiting When You Use MSN"
-permalink: kb/175/Q175038/
+permalink: /kb/175/Q175038/
 ---
 
 ## Q175038: How to Disable Call Waiting When You Use MSN

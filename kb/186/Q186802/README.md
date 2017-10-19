@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186802: FIX: Lock Error Occurs When Deleting a File from FTP Directory"
-permalink: kb/186/Q186802/
+permalink: /kb/186/Q186802/
 ---
 
 ## Q186802: FIX: Lock Error Occurs When Deleting a File from FTP Directory

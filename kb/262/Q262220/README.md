@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262220: WD97: How to Use AutoCorrect on an Existing Document"
-permalink: kb/262/Q262220/
+permalink: /kb/262/Q262220/
 ---
 
 ## Q262220: WD97: How to Use AutoCorrect on an Existing Document

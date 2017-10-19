@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242070: Cannot Demote a Backup Domain Controller to Member Server"
-permalink: kb/242/Q242070/
+permalink: /kb/242/Q242070/
 ---
 
 ## Q242070: Cannot Demote a Backup Domain Controller to Member Server

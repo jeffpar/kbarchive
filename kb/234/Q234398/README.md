@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234398: XCLN: Extended Chars. Not Displayed Correctly in Meeting Request"
-permalink: kb/234/Q234398/
+permalink: /kb/234/Q234398/
 ---
 
 ## Q234398: XCLN: Extended Chars. Not Displayed Correctly in Meeting Request

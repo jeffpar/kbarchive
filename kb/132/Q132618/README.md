@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132618: Resizing Explorer Window While Renaming a File Hangs Computer"
-permalink: kb/132/Q132618/
+permalink: /kb/132/Q132618/
 ---
 
 ## Q132618: Resizing Explorer Window While Renaming a File Hangs Computer

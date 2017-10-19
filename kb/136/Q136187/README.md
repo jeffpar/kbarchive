@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136187: DOC: Missing ALL Clause on Page 46 of Developer's Guide"
-permalink: kb/136/Q136187/
+permalink: /kb/136/Q136187/
 ---
 
 ## Q136187: DOC: Missing ALL Clause on Page 46 of Developer's Guide

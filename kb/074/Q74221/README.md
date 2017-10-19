@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74221: FIX: COMM Directive Produces Error If Count Field Not Specified"
-permalink: kb/074/Q74221/
+permalink: /kb/074/Q74221/
 ---
 
 ## Q74221: FIX: COMM Directive Produces Error If Count Field Not Specified

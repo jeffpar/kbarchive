@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183047: FP: Form Results Not Secure in _Private Folder on IIS Server"
-permalink: kb/183/Q183047/
+permalink: /kb/183/Q183047/
 ---
 
 ## Q183047: FP: Form Results Not Secure in _Private Folder on IIS Server

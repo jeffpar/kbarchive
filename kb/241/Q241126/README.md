@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241126: INFO:Dynamically Add UserControls That Require Run-Time Licenses"
-permalink: kb/241/Q241126/
+permalink: /kb/241/Q241126/
 ---
 
 ## Q241126: INFO:Dynamically Add UserControls That Require Run-Time Licenses

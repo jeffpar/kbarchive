@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313688: SNA Server Access Violation in Function S1PWHSES()"
-permalink: kb/313/Q313688/
+permalink: /kb/313/Q313688/
 ---
 
 ## Q313688: SNA Server Access Violation in Function S1PWHSES()

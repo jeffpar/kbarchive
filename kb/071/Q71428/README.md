@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71428: Network Pop-Up Message Hangs Standard, Real Mode Windows 3.0"
-permalink: kb/071/Q71428/
+permalink: /kb/071/Q71428/
 ---
 
 ## Q71428: Network Pop-Up Message Hangs Standard, Real Mode Windows 3.0

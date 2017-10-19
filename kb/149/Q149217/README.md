@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149217: XCLN: Microsoft Exchange Message Size Limitations"
-permalink: kb/149/Q149217/
+permalink: /kb/149/Q149217/
 ---
 
 ## Q149217: XCLN: Microsoft Exchange Message Size Limitations

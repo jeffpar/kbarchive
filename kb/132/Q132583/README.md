@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132583: You're Hired! Ver. 1.02 May Not Run Again After Local Reboot"
-permalink: kb/132/Q132583/
+permalink: /kb/132/Q132583/
 ---
 
 ## Q132583: You're Hired! Ver. 1.02 May Not Run Again After Local Reboot

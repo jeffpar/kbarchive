@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100407: PRB: MASM Code Using CMACROS.INC Does Not Build Correctly"
-permalink: kb/100/Q100407/
+permalink: /kb/100/Q100407/
 ---
 
 ## Q100407: PRB: MASM Code Using CMACROS.INC Does Not Build Correctly

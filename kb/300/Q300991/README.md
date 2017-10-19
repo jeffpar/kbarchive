@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q300991: HOW TO: Create New Virtual Web Site w/ Its Own IP Address in IIS"
-permalink: kb/300/Q300991/
+permalink: /kb/300/Q300991/
 ---
 
 ## Q300991: HOW TO: Create New Virtual Web Site w/ Its Own IP Address in IIS

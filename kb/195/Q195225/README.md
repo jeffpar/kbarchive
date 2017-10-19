@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195225: PRB: DAO Run-Time Error 3146 When Modifying SQLServer Data"
-permalink: kb/195/Q195225/
+permalink: /kb/195/Q195225/
 ---
 
 ## Q195225: PRB: DAO Run-Time Error 3146 When Modifying SQLServer Data

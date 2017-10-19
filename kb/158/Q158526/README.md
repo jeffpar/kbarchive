@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158526: XADM: .Pat Files in Mdbdata and Dsadata Directories"
-permalink: kb/158/Q158526/
+permalink: /kb/158/Q158526/
 ---
 
 ## Q158526: XADM: .Pat Files in Mdbdata and Dsadata Directories

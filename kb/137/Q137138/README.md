@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137138: WFW 3.11 Computer with Windows NT 3.51 Update Files Hangs"
-permalink: kb/137/Q137138/
+permalink: /kb/137/Q137138/
 ---
 
 ## Q137138: WFW 3.11 Computer with Windows NT 3.51 Update Files Hangs

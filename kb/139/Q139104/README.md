@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139104: FTP Session Lost Shelling Out Using &quot;!&quot; and CTRL+C Commands"
-permalink: kb/139/Q139104/
+permalink: /kb/139/Q139104/
 ---
 
 ## Q139104: FTP Session Lost Shelling Out Using &quot;!&quot; and CTRL+C Commands

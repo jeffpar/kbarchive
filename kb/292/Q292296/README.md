@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q292296: &quot;Cannot find server&quot; or &quot;DNS&quot; Errors When Using SSL (Q &amp; A)"
-permalink: kb/292/Q292296/
+permalink: /kb/292/Q292296/
 ---
 
 ## Q292296: &quot;Cannot find server&quot; or &quot;DNS&quot; Errors When Using SSL (Q &amp; A)

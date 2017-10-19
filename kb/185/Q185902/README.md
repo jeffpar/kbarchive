@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185902: SMSINST: %SystemRoot% Values Not Written to Registry Correctly"
-permalink: kb/185/Q185902/
+permalink: /kb/185/Q185902/
 ---
 
 ## Q185902: SMSINST: %SystemRoot% Values Not Written to Registry Correctly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217185: FIX: IRowsetImpl::GetData() Does Not Handle Nulls Correctly"
-permalink: kb/217/Q217185/
+permalink: /kb/217/Q217185/
 ---
 
 ## Q217185: FIX: IRowsetImpl::GetData() Does Not Handle Nulls Correctly

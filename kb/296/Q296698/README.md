@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296698: FP: Error Message: The Server Could Not Complete Your Request"
-permalink: kb/296/Q296698/
+permalink: /kb/296/Q296698/
 ---
 
 ## Q296698: FP: Error Message: The Server Could Not Complete Your Request

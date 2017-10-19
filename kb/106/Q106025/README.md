@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106025: IRQ Option Includes Only IRQs 2-5 for Novell/Anthem NE2000"
-permalink: kb/106/Q106025/
+permalink: /kb/106/Q106025/
 ---
 
 ## Q106025: IRQ Option Includes Only IRQs 2-5 for Novell/Anthem NE2000

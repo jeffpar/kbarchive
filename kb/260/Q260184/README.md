@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260184: XADM: How to Add Storage Limits Columns for Mailboxes"
-permalink: kb/260/Q260184/
+permalink: /kb/260/Q260184/
 ---
 
 ## Q260184: XADM: How to Add Storage Limits Columns for Mailboxes

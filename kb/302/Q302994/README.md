@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302994: E-mail Folder(s) Appear At www.hotmail.com But Not in MSN Explor"
-permalink: kb/302/Q302994/
+permalink: /kb/302/Q302994/
 ---
 
 ## Q302994: E-mail Folder(s) Appear At www.hotmail.com But Not in MSN Explor

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143181: File Transfer Protocol (FTP) Server Monitor Counters"
-permalink: kb/143/Q143181/
+permalink: /kb/143/Q143181/
 ---
 
 ## Q143181: File Transfer Protocol (FTP) Server Monitor Counters

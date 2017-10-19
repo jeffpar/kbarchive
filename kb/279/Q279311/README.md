@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279311: EWED Error Message: The Audio Device Is Not Available or in Use"
-permalink: kb/279/Q279311/
+permalink: /kb/279/Q279311/
 ---
 
 ## Q279311: EWED Error Message: The Audio Device Is Not Available or in Use

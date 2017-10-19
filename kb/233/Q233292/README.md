@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233292: SMS: SMS 2.0 Control Panel Applet Repair Button Doesn't Fix R/C"
-permalink: kb/233/Q233292/
+permalink: /kb/233/Q233292/
 ---
 
 ## Q233292: SMS: SMS 2.0 Control Panel Applet Repair Button Doesn't Fix R/C

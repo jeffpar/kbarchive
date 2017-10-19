@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75439: INFO: Tips for Writing DBCS-Compatible Applications"
-permalink: kb/075/Q75439/
+permalink: /kb/075/Q75439/
 ---
 
 ## Q75439: INFO: Tips for Writing DBCS-Compatible Applications

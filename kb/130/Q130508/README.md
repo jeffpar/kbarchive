@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130508: Non-White Text or Graphics Printed in Black"
-permalink: kb/130/Q130508/
+permalink: /kb/130/Q130508/
 ---
 
 ## Q130508: Non-White Text or Graphics Printed in Black

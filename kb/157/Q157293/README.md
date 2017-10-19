@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157293: XADM: Err Msg: You Must Specify a Server in the Organization"
-permalink: kb/157/Q157293/
+permalink: /kb/157/Q157293/
 ---
 
 ## Q157293: XADM: Err Msg: You Must Specify a Server in the Organization

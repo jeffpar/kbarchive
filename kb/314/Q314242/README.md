@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314242: Flight Simulator 2002: Disk Error or Error Writing to File"
-permalink: kb/314/Q314242/
+permalink: /kb/314/Q314242/
 ---
 
 ## Q314242: Flight Simulator 2002: Disk Error or Error Writing to File

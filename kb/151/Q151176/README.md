@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151176: Policy Registry Entries (Default User)"
-permalink: kb/151/Q151176/
+permalink: /kb/151/Q151176/
 ---
 
 ## Q151176: Policy Registry Entries (Default User)

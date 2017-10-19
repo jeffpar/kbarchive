@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115550: FAX: FAXVIEW.EXE Error &quot;File Cannot Be Saved&quot;"
-permalink: kb/115/Q115550/
+permalink: /kb/115/Q115550/
 ---
 
 ## Q115550: FAX: FAXVIEW.EXE Error &quot;File Cannot Be Saved&quot;

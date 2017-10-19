@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96847: MS-DOS 6.0 Installation/Partitioning Sequence Q&amp;A"
-permalink: kb/096/Q96847/
+permalink: /kb/096/Q96847/
 ---
 
 ## Q96847: MS-DOS 6.0 Installation/Partitioning Sequence Q&amp;A

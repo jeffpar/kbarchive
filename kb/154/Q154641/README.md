@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154641: Express Meter 3.1 Causes General Protection Fault"
-permalink: kb/154/Q154641/
+permalink: /kb/154/Q154641/
 ---
 
 ## Q154641: Express Meter 3.1 Causes General Protection Fault

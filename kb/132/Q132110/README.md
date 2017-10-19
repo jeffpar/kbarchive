@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132110: HOWTO: How to Create a Recessed Status Bar Area"
-permalink: kb/132/Q132110/
+permalink: /kb/132/Q132110/
 ---
 
 ## Q132110: HOWTO: How to Create a Recessed Status Bar Area

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156510: PRB: ComboBox ReadOnly Property Applies Only to Dropdown Combo"
-permalink: kb/156/Q156510/
+permalink: /kb/156/Q156510/
 ---
 
 ## Q156510: PRB: ComboBox ReadOnly Property Applies Only to Dropdown Combo

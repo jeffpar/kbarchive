@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137059: DOCERR: Missing Visual C/C++ &quot;Multithreaded Using DLL&quot; Setting"
-permalink: kb/137/Q137059/
+permalink: /kb/137/Q137059/
 ---
 
 ## Q137059: DOCERR: Missing Visual C/C++ &quot;Multithreaded Using DLL&quot; Setting

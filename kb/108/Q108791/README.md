@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108791: Video for Windows 1.1 Samples Disk (3.5 Inch, 1.44 MB)"
-permalink: kb/108/Q108791/
+permalink: /kb/108/Q108791/
 ---
 
 ## Q108791: Video for Windows 1.1 Samples Disk (3.5 Inch, 1.44 MB)

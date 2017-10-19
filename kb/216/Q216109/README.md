@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216109: HOWTO: Troubleshoot MSDN Library Run-Time/Install/Uninstall"
-permalink: kb/216/Q216109/
+permalink: /kb/216/Q216109/
 ---
 
 ## Q216109: HOWTO: Troubleshoot MSDN Library Run-Time/Install/Uninstall

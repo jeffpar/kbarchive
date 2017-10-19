@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123497: ALR Evolution Pentium Does Not Detect COM Ports"
-permalink: kb/123/Q123497/
+permalink: /kb/123/Q123497/
 ---
 
 ## Q123497: ALR Evolution Pentium Does Not Detect COM Ports

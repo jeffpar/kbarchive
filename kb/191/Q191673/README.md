@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191673: DOC: Calling Genhtml.prg Gives &quot;Alias Not Found&quot; Error"
-permalink: kb/191/Q191673/
+permalink: /kb/191/Q191673/
 ---
 
 ## Q191673: DOC: Calling Genhtml.prg Gives &quot;Alias Not Found&quot; Error

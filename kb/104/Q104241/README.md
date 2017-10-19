@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104241: PRB: Missing Menu IDs from ClassWizard &quot;Object IDs&quot; Window"
-permalink: kb/104/Q104241/
+permalink: /kb/104/Q104241/
 ---
 
 ## Q104241: PRB: Missing Menu IDs from ClassWizard &quot;Object IDs&quot; Window

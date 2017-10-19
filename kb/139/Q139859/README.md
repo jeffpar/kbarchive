@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139859: Video for Windows Screen Capture Displays Wrong Mouse Pointer"
-permalink: kb/139/Q139859/
+permalink: /kb/139/Q139859/
 ---
 
 ## Q139859: Video for Windows Screen Capture Displays Wrong Mouse Pointer

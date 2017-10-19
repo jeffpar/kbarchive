@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176732: PRB: Read-Only Files in Shadow Folder Are Not Updated"
-permalink: kb/176/Q176732/
+permalink: /kb/176/Q176732/
 ---
 
 ## Q176732: PRB: Read-Only Files in Shadow Folder Are Not Updated

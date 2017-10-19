@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118606: PPT: GP Fault in HPPCL5E2.DLL When Printing"
-permalink: kb/118/Q118606/
+permalink: /kb/118/Q118606/
 ---
 
 ## Q118606: PPT: GP Fault in HPPCL5E2.DLL When Printing

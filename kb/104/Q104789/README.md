@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104789: DOC: WM_TIMER Case on Page 94 of Guide to Programming"
-permalink: kb/104/Q104789/
+permalink: /kb/104/Q104789/
 ---
 
 ## Q104789: DOC: WM_TIMER Case on Page 94 of Guide to Programming

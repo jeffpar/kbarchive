@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61768: Hewlett-Packard Global Text Font Cartridge Description"
-permalink: kb/061/Q61768/
+permalink: /kb/061/Q61768/
 ---
 
 ## Q61768: Hewlett-Packard Global Text Font Cartridge Description

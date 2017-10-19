@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248491: Fighter Ace II: Game Hangs After You Change Screen Resolution"
-permalink: kb/248/Q248491/
+permalink: /kb/248/Q248491/
 ---
 
 ## Q248491: Fighter Ace II: Game Hangs After You Change Screen Resolution

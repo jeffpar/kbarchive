@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139346: Country Codes Missing from HyperTerminal or Other Program"
-permalink: kb/139/Q139346/
+permalink: /kb/139/Q139346/
 ---
 
 ## Q139346: Country Codes Missing from HyperTerminal or Other Program

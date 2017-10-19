@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87036: SMTP: Address Lists That Display SMTP Address"
-permalink: kb/087/Q87036/
+permalink: /kb/087/Q87036/
 ---
 
 ## Q87036: SMTP: Address Lists That Display SMTP Address

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156178: PRB: @...GET...NAME Object References Change with Read Level"
-permalink: kb/156/Q156178/
+permalink: /kb/156/Q156178/
 ---
 
 ## Q156178: PRB: @...GET...NAME Object References Change with Read Level

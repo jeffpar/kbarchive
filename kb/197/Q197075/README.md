@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197075: XFOR: Error during Exchange Notes Connector Setup"
-permalink: kb/197/Q197075/
+permalink: /kb/197/Q197075/
 ---
 
 ## Q197075: XFOR: Error during Exchange Notes Connector Setup

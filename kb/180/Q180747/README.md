@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180747: FIX: Focus Does Not Return to an MDI Parent Form"
-permalink: kb/180/Q180747/
+permalink: /kb/180/Q180747/
 ---
 
 ## Q180747: FIX: Focus Does Not Return to an MDI Parent Form

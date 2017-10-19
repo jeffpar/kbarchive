@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125618: Problem with Display Warning when Using Non-US Language"
-permalink: kb/125/Q125618/
+permalink: /kb/125/Q125618/
 ---
 
 ## Q125618: Problem with Display Warning when Using Non-US Language

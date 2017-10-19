@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311225: Encarta Stops Responding When You Play a Multimedia Clip"
-permalink: kb/311/Q311225/
+permalink: /kb/311/Q311225/
 ---
 
 ## Q311225: Encarta Stops Responding When You Play a Multimedia Clip

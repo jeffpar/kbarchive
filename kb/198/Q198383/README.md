@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198383: WD97: Text Fails to Appear in Envelopes/Labels Delivery Box"
-permalink: kb/198/Q198383/
+permalink: /kb/198/Q198383/
 ---
 
 ## Q198383: WD97: Text Fails to Appear in Envelopes/Labels Delivery Box

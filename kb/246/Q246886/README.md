@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246886: Zone Msg: We Have Paused Your Connection to the Zone..."
-permalink: kb/246/Q246886/
+permalink: /kb/246/Q246886/
 ---
 
 ## Q246886: Zone Msg: We Have Paused Your Connection to the Zone...

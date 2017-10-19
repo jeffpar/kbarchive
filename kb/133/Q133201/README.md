@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133201: INFO: Contents of README.TXT Shipped with Visual FoxPro 3.0"
-permalink: kb/133/Q133201/
+permalink: /kb/133/Q133201/
 ---
 
 ## Q133201: INFO: Contents of README.TXT Shipped with Visual FoxPro 3.0

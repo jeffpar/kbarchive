@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275928: XFOR: Msgs Sent Via cc:Mail Connector Are in White Txt on Blue"
-permalink: kb/275/Q275928/
+permalink: /kb/275/Q275928/
 ---
 
 ## Q275928: XFOR: Msgs Sent Via cc:Mail Connector Are in White Txt on Blue

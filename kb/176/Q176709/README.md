@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176709: XADM: Memory Leak in Microsoft Exchange Server Information Store"
-permalink: kb/176/Q176709/
+permalink: /kb/176/Q176709/
 ---
 
 ## Q176709: XADM: Memory Leak in Microsoft Exchange Server Information Store

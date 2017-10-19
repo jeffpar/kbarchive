@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314506: HOW TO: Use Internet Explorer to Verify Your IIS Security Config"
-permalink: kb/314/Q314506/
+permalink: /kb/314/Q314506/
 ---
 
 ## Q314506: HOW TO: Use Internet Explorer to Verify Your IIS Security Config

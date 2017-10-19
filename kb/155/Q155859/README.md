@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155859: XCLN: Err Msg: The Following Unrecoverable Error Has Occurred"
-permalink: kb/155/Q155859/
+permalink: /kb/155/Q155859/
 ---
 
 ## Q155859: XCLN: Err Msg: The Following Unrecoverable Error Has Occurred

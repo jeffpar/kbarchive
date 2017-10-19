@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156795: HOWTO: Using Sysdiff.exe with Unattended Setup and Windows NT 4."
-permalink: kb/156/Q156795/
+permalink: /kb/156/Q156795/
 ---
 
 ## Q156795: HOWTO: Using Sysdiff.exe with Unattended Setup and Windows NT 4.

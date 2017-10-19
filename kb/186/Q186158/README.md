@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186158: Blue Screen When Shutting Down with RAS Connection Established"
-permalink: kb/186/Q186158/
+permalink: /kb/186/Q186158/
 ---
 
 ## Q186158: Blue Screen When Shutting Down with RAS Connection Established

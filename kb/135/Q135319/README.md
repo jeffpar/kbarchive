@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135319: DOC: Optimizable Expression Missing Left Parenthesis"
-permalink: kb/135/Q135319/
+permalink: /kb/135/Q135319/
 ---
 
 ## Q135319: DOC: Optimizable Expression Missing Left Parenthesis

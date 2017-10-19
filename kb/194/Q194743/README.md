@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194743: Scripting Appears as Part of the Abstract in Search Results"
-permalink: kb/194/Q194743/
+permalink: /kb/194/Q194743/
 ---
 
 ## Q194743: Scripting Appears as Part of the Abstract in Search Results

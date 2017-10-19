@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153504: PCL5EMS Does Not Support All Memory Available on HP LJ 5Si MX"
-permalink: kb/153/Q153504/
+permalink: /kb/153/Q153504/
 ---
 
 ## Q153504: PCL5EMS Does Not Support All Memory Available on HP LJ 5Si MX

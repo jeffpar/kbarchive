@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236828: PRB: IE_UNEXPECTED Returned from IRowsetChange::DeleteRows"
-permalink: kb/236/Q236828/
+permalink: /kb/236/Q236828/
 ---
 
 ## Q236828: PRB: IE_UNEXPECTED Returned from IRowsetChange::DeleteRows

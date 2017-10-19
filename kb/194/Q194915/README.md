@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194915: BUG: Toolbar ButtonMenu May Not Display Correctly"
-permalink: kb/194/Q194915/
+permalink: /kb/194/Q194915/
 ---
 
 ## Q194915: BUG: Toolbar ButtonMenu May Not Display Correctly

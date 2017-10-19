@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49871: PRB: Mixing Case of LINK Option Causes Error L1093 or D4002"
-permalink: kb/049/Q49871/
+permalink: /kb/049/Q49871/
 ---
 
 ## Q49871: PRB: Mixing Case of LINK Option Causes Error L1093 or D4002

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183769: Search Against Index Server May Contain Deleted Documents"
-permalink: kb/183/Q183769/
+permalink: /kb/183/Q183769/
 ---
 
 ## Q183769: Search Against Index Server May Contain Deleted Documents

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191477: BUG: Overflow of Number in RowHeight Property Allowed"
-permalink: kb/191/Q191477/
+permalink: /kb/191/Q191477/
 ---
 
 ## Q191477: BUG: Overflow of Number in RowHeight Property Allowed

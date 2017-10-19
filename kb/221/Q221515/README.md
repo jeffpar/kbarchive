@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221515: Delay When Saving File to a Server with High Number of Shares"
-permalink: kb/221/Q221515/
+permalink: /kb/221/Q221515/
 ---
 
 ## Q221515: Delay When Saving File to a Server with High Number of Shares

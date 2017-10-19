@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185356: TEST/XID Retries not Configurable for DLC Connections"
-permalink: kb/185/Q185356/
+permalink: /kb/185/Q185356/
 ---
 
 ## Q185356: TEST/XID Retries not Configurable for DLC Connections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163702: XCLN: Unable to Save Sent Time and Expiration Properties"
-permalink: kb/163/Q163702/
+permalink: /kb/163/Q163702/
 ---
 
 ## Q163702: XCLN: Unable to Save Sent Time and Expiration Properties

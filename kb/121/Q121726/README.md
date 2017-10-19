@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121726: STOP Message Caused by NTFS with Long Filenames"
-permalink: kb/121/Q121726/
+permalink: /kb/121/Q121726/
 ---
 
 ## Q121726: STOP Message Caused by NTFS with Long Filenames

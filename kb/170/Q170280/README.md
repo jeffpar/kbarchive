@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170280: XADM: Upgrading From Exchange Standard Edition to the Enterprise"
-permalink: kb/170/Q170280/
+permalink: /kb/170/Q170280/
 ---
 
 ## Q170280: XADM: Upgrading From Exchange Standard Edition to the Enterprise

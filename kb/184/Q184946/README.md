@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184946: WD97: Outline Character Formatting in Object Not Printed"
-permalink: kb/184/Q184946/
+permalink: /kb/184/Q184946/
 ---
 
 ## Q184946: WD97: Outline Character Formatting in Object Not Printed

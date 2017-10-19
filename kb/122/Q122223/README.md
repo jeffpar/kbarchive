@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122223: Using Lexmark 4033 Network Printers in Windows NT"
-permalink: kb/122/Q122223/
+permalink: /kb/122/Q122223/
 ---
 
 ## Q122223: Using Lexmark 4033 Network Printers in Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148286: XCON: How To Install and Configure the Dynamic RAS Connector"
-permalink: kb/148/Q148286/
+permalink: /kb/148/Q148286/
 ---
 
 ## Q148286: XCON: How To Install and Configure the Dynamic RAS Connector

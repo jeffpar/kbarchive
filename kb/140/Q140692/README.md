@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140692: Scenes 2.0: Invalid Dynamic Link Call Error"
-permalink: kb/140/Q140692/
+permalink: /kb/140/Q140692/
 ---
 
 ## Q140692: Scenes 2.0: Invalid Dynamic Link Call Error

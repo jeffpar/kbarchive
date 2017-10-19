@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124197: PC OS/2:Err Msg:SYS1804: Setup Is Unable to Find File KEYBOARD"
-permalink: kb/124/Q124197/
+permalink: /kb/124/Q124197/
 ---
 
 ## Q124197: PC OS/2:Err Msg:SYS1804: Setup Is Unable to Find File KEYBOARD

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78048: Keyboard Commands More Reliable With Recorder"
-permalink: kb/078/Q78048/
+permalink: /kb/078/Q78048/
 ---
 
 ## Q78048: Keyboard Commands More Reliable With Recorder

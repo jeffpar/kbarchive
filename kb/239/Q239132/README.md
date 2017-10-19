@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239132: Exchange Clients Appear to Hang During Normal Operation"
-permalink: kb/239/Q239132/
+permalink: /kb/239/Q239132/
 ---
 
 ## Q239132: Exchange Clients Appear to Hang During Normal Operation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281394: ASP Parses Request Collection Name Incorrectly"
-permalink: kb/281/Q281394/
+permalink: /kb/281/Q281394/
 ---
 
 ## Q281394: ASP Parses Request Collection Name Incorrectly

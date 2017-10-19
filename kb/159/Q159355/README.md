@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159355: Cannot Disable TCP/IP Hostname Option in Lexmark MarkVision"
-permalink: kb/159/Q159355/
+permalink: /kb/159/Q159355/
 ---
 
 ## Q159355: Cannot Disable TCP/IP Hostname Option in Lexmark MarkVision

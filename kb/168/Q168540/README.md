@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168540: XCLN: Cannot Save Changes to a Public Folder Item"
-permalink: kb/168/Q168540/
+permalink: /kb/168/Q168540/
 ---
 
 ## Q168540: XCLN: Cannot Save Changes to a Public Folder Item

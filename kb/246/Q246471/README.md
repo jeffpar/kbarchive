@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246471: XFOR: GWise Proxy Macro on Exchange Server CD Doesn't Work w/ 5x"
-permalink: kb/246/Q246471/
+permalink: /kb/246/Q246471/
 ---
 
 ## Q246471: XFOR: GWise Proxy Macro on Exchange Server CD Doesn't Work w/ 5x

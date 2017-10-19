@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297470: XFOR: How to Secure Chat Channels with Exchange Chat Service 5.5"
-permalink: kb/297/Q297470/
+permalink: /kb/297/Q297470/
 ---
 
 ## Q297470: XFOR: How to Secure Chat Channels with Exchange Chat Service 5.5

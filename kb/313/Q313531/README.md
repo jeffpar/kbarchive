@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313531: Microsoft FrontPage 2000 Step by Step Courseware Expert Skills C"
-permalink: kb/313/Q313531/
+permalink: /kb/313/Q313531/
 ---
 
 ## Q313531: Microsoft FrontPage 2000 Step by Step Courseware Expert Skills C

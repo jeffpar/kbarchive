@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98588: PRB: Undesired Side Effects from toascii, tolower, toupper"
-permalink: kb/098/Q98588/
+permalink: /kb/098/Q98588/
 ---
 
 ## Q98588: PRB: Undesired Side Effects from toascii, tolower, toupper

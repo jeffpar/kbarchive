@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186344: XCON: Exchange Incorrectly Routes Messages Over X.400 Connector"
-permalink: kb/186/Q186344/
+permalink: /kb/186/Q186344/
 ---
 
 ## Q186344: XCON: Exchange Incorrectly Routes Messages Over X.400 Connector

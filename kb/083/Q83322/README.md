@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83322: Pen Cursor Doesn't Appear When Tablet in Use"
-permalink: kb/083/Q83322/
+permalink: /kb/083/Q83322/
 ---
 
 ## Q83322: Pen Cursor Doesn't Appear When Tablet in Use

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194026: WD97: How to Create a Combo Box with More Than 25 Items"
-permalink: kb/194/Q194026/
+permalink: /kb/194/Q194026/
 ---
 
 ## Q194026: WD97: How to Create a Combo Box with More Than 25 Items

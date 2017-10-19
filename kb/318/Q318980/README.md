@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318980: FIX: ICE Deleting Records in a Buffered Table"
-permalink: kb/318/Q318980/
+permalink: /kb/318/Q318980/
 ---
 
 ## Q318980: FIX: ICE Deleting Records in a Buffered Table

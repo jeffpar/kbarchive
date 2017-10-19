@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233545: SMS: Remote Control WinNT to WinNT Drops Connection"
-permalink: kb/233/Q233545/
+permalink: /kb/233/Q233545/
 ---
 
 ## Q233545: SMS: Remote Control WinNT to WinNT Drops Connection

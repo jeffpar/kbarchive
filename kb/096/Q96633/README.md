@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96633: OEM Setup Copies All Files By Default"
-permalink: kb/096/Q96633/
+permalink: /kb/096/Q96633/
 ---
 
 ## Q96633: OEM Setup Copies All Files By Default

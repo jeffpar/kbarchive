@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176239: XADM: DB Won't Start; Circular Logging Deleted Log File Too Soon"
-permalink: kb/176/Q176239/
+permalink: /kb/176/Q176239/
 ---
 
 ## Q176239: XADM: DB Won't Start; Circular Logging Deleted Log File Too Soon

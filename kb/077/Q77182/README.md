@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77182: Using MS-DOS 5.0 or later EMM386.EXE on Altima NSX"
-permalink: kb/077/Q77182/
+permalink: /kb/077/Q77182/
 ---
 
 ## Q77182: Using MS-DOS 5.0 or later EMM386.EXE on Altima NSX

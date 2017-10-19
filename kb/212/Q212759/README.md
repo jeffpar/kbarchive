@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q212759: XFOR: CCMC Event 54 Conversion of Message Failed"
-permalink: kb/212/Q212759/
+permalink: /kb/212/Q212759/
 ---
 
 ## Q212759: XFOR: CCMC Event 54 Conversion of Message Failed

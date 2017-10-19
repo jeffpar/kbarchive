@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q124250: ScanDisk Incorrectly Displays &quot;[&quot; as a Drive Letter in Err Msg"
-permalink: kb/124/Q124250/
+title: "Q124250: ScanDisk Incorrectly Displays &quot;&#91;&quot; as a Drive Letter in Err Msg"
+permalink: /kb/124/Q124250/
 ---
 
-## Q124250: ScanDisk Incorrectly Displays &quot;[&quot; as a Drive Letter in Err Msg
+## Q124250: ScanDisk Incorrectly Displays &quot;&#91;&quot; as a Drive Letter in Err Msg
 
 	Article: Q124250
 	Product(s): Microsoft Disk Operating System

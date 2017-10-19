@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74578: Using ANSI.SYS to Disable CTRL+C Key Combination"
-permalink: kb/074/Q74578/
+permalink: /kb/074/Q74578/
 ---
 
 ## Q74578: Using ANSI.SYS to Disable CTRL+C Key Combination

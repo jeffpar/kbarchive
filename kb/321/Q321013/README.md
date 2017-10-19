@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321013: Err Msg: MD_SCRIPT_MAPS (6014) Has An Invalid Value"
-permalink: kb/321/Q321013/
+permalink: /kb/321/Q321013/
 ---
 
 ## Q321013: Err Msg: MD_SCRIPT_MAPS (6014) Has An Invalid Value

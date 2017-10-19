@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198496: How to Configure WLBS Port Rules"
-permalink: kb/198/Q198496/
+permalink: /kb/198/Q198496/
 ---
 
 ## Q198496: How to Configure WLBS Port Rules

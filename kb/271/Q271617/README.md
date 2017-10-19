@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271617: Golf 2001: How to Improve Game Performance"
-permalink: kb/271/Q271617/
+permalink: /kb/271/Q271617/
 ---
 
 ## Q271617: Golf 2001: How to Improve Game Performance

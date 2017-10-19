@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142430: Cannot View Online Statement"
-permalink: kb/142/Q142430/
+permalink: /kb/142/Q142430/
 ---
 
 ## Q142430: Cannot View Online Statement

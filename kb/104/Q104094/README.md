@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104094: INFO: Console Applications Can Call the Windows 32-Bit API"
-permalink: kb/104/Q104094/
+permalink: /kb/104/Q104094/
 ---
 
 ## Q104094: INFO: Console Applications Can Call the Windows 32-Bit API

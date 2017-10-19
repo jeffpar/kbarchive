@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189853: PRB: Data Environment: Error Setting Lock Type"
-permalink: kb/189/Q189853/
+permalink: /kb/189/Q189853/
 ---
 
 ## Q189853: PRB: Data Environment: Error Setting Lock Type

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121784: Additional FTP Server Logging Options (Version 3.5)"
-permalink: kb/121/Q121784/
+permalink: /kb/121/Q121784/
 ---
 
 ## Q121784: Additional FTP Server Logging Options (Version 3.5)

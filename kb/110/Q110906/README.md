@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110906: PRB: SQL Invalid ORDER BY"
-permalink: kb/110/Q110906/
+permalink: /kb/110/Q110906/
 ---
 
 ## Q110906: PRB: SQL Invalid ORDER BY

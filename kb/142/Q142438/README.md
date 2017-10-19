@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142438: PPT7: Frequently Asked Questions about Genigraphics"
-permalink: kb/142/Q142438/
+permalink: /kb/142/Q142438/
 ---
 
 ## Q142438: PPT7: Frequently Asked Questions about Genigraphics

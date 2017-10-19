@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85706: Calendar Displays a Maximum of 14 Lines in Daily Schedule"
-permalink: kb/085/Q85706/
+permalink: /kb/085/Q85706/
 ---
 
 ## Q85706: Calendar Displays a Maximum of 14 Lines in Daily Schedule

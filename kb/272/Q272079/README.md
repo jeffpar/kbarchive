@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272079: IIS Search Method May Allow Unauthorized Users a  Directory List"
-permalink: kb/272/Q272079/
+permalink: /kb/272/Q272079/
 ---
 
 ## Q272079: IIS Search Method May Allow Unauthorized Users a  Directory List

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195474: HOWTO: Determine RDO Files Needed for Distribution of App"
-permalink: kb/195/Q195474/
+permalink: /kb/195/Q195474/
 ---
 
 ## Q195474: HOWTO: Determine RDO Files Needed for Distribution of App

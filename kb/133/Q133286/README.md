@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133286: HOWTO: Use Microsoft Access Data in Visual FoxPro"
-permalink: kb/133/Q133286/
+permalink: /kb/133/Q133286/
 ---
 
 ## Q133286: HOWTO: Use Microsoft Access Data in Visual FoxPro

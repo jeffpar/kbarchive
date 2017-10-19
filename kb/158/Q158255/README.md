@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158255: HOWTO: Modify a Table in Visual FoxPro Using Its Rules"
-permalink: kb/158/Q158255/
+permalink: /kb/158/Q158255/
 ---
 
 ## Q158255: HOWTO: Modify a Table in Visual FoxPro Using Its Rules

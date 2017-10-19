@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175439: XFOR: Enabling SSL For Exchange Server"
-permalink: kb/175/Q175439/
+permalink: /kb/175/Q175439/
 ---
 
 ## Q175439: XFOR: Enabling SSL For Exchange Server

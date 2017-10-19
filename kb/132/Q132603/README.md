@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132603: Cannot View Shared Fonts Folder"
-permalink: kb/132/Q132603/
+permalink: /kb/132/Q132603/
 ---
 
 ## Q132603: Cannot View Shared Fonts Folder

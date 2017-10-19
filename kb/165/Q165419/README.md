@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165419: FIX: SQL Debugger Displays Incorrect Value for Float Variables"
-permalink: kb/165/Q165419/
+permalink: /kb/165/Q165419/
 ---
 
 ## Q165419: FIX: SQL Debugger Displays Incorrect Value for Float Variables

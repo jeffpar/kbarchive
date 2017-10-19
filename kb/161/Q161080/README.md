@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161080: Windows 95 Clients Connected to NT Server over NWLink May Fail"
-permalink: kb/161/Q161080/
+permalink: /kb/161/Q161080/
 ---
 
 ## Q161080: Windows 95 Clients Connected to NT Server over NWLink May Fail

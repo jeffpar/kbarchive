@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268590: Netscape Groups Are Not Discovered in MMS"
-permalink: kb/268/Q268590/
+permalink: /kb/268/Q268590/
 ---
 
 ## Q268590: Netscape Groups Are Not Discovered in MMS

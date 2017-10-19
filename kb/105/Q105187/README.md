@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105187: MS-DOS Editor Hangs If MS-DOS Environment Is Too Small"
-permalink: kb/105/Q105187/
+permalink: /kb/105/Q105187/
 ---
 
 ## Q105187: MS-DOS Editor Hangs If MS-DOS Environment Is Too Small

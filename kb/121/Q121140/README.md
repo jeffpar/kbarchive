@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121140: Space: Some Scenery Objects Are Identical"
-permalink: kb/121/Q121140/
+permalink: /kb/121/Q121140/
 ---
 
 ## Q121140: Space: Some Scenery Objects Are Identical

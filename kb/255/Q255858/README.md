@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255858: PRB: New Behavior of Multiline CJK Rich Edit Controls w/ Win2000"
-permalink: kb/255/Q255858/
+permalink: /kb/255/Q255858/
 ---
 
 ## Q255858: PRB: New Behavior of Multiline CJK Rich Edit Controls w/ Win2000

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181053: WD97: Invalid Page Fault in Module MFC40.DLL When Quitting Word"
-permalink: kb/181/Q181053/
+permalink: /kb/181/Q181053/
 ---
 
 ## Q181053: WD97: Invalid Page Fault in Module MFC40.DLL When Quitting Word

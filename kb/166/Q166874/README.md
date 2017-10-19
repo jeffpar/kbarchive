@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166874: No Crashdump and Compaq Systems with Smart-2/P (PCI) Controller"
-permalink: kb/166/Q166874/
+permalink: /kb/166/Q166874/
 ---
 
 ## Q166874: No Crashdump and Compaq Systems with Smart-2/P (PCI) Controller

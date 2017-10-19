@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140997: PPT7: How to Play Video Clips Full Screen in PowerPoint"
-permalink: kb/140/Q140997/
+permalink: /kb/140/Q140997/
 ---
 
 ## Q140997: PPT7: How to Play Video Clips Full Screen in PowerPoint

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307702: Microsoft Windows 2000 and IIS 5.0 Administrator's Pocket Consul"
-permalink: kb/307/Q307702/
+permalink: /kb/307/Q307702/
 ---
 
 ## Q307702: Microsoft Windows 2000 and IIS 5.0 Administrator's Pocket Consul

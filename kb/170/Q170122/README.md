@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170122: FP: Opening Web Generates Out of Date Text Index Warning"
-permalink: kb/170/Q170122/
+permalink: /kb/170/Q170122/
 ---
 
 ## Q170122: FP: Opening Web Generates Out of Date Text Index Warning

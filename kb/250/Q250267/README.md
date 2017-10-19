@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250267: Cannot Resolve Groups When Files Move Between Windows NT Servers"
-permalink: kb/250/Q250267/
+permalink: /kb/250/Q250267/
 ---
 
 ## Q250267: Cannot Resolve Groups When Files Move Between Windows NT Servers

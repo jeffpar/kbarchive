@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120194: Resolved: WFW Popup Error"
-permalink: kb/120/Q120194/
+permalink: /kb/120/Q120194/
 ---
 
 ## Q120194: Resolved: WFW Popup Error

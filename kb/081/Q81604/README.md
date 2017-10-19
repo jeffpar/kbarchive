@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81604: Novell Err Msg: Invalid COMMAND.COM After Windows Exit"
-permalink: kb/081/Q81604/
+permalink: /kb/081/Q81604/
 ---
 
 ## Q81604: Novell Err Msg: Invalid COMMAND.COM After Windows Exit

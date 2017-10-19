@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69750: Changing PWB Build from .COM to .EXE Causes File Conflict"
-permalink: kb/069/Q69750/
+permalink: /kb/069/Q69750/
 ---
 
 ## Q69750: Changing PWB Build from .COM to .EXE Causes File Conflict

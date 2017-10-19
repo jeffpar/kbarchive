@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100763: Using Compressed Floppy Disks without a Compressed Hard Disk"
-permalink: kb/100/Q100763/
+permalink: /kb/100/Q100763/
 ---
 
 ## Q100763: Using Compressed Floppy Disks without a Compressed Hard Disk

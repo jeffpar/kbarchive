@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319306: FP: Web Site Message Says the Mail Server Is Unavailable"
-permalink: kb/319/Q319306/
+permalink: /kb/319/Q319306/
 ---
 
 ## Q319306: FP: Web Site Message Says the Mail Server Is Unavailable

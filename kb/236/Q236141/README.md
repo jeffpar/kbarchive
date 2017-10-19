@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236141: Selecting File Path Through Multiple Windows Closes Backup"
-permalink: kb/236/Q236141/
+permalink: /kb/236/Q236141/
 ---
 
 ## Q236141: Selecting File Path Through Multiple Windows Closes Backup

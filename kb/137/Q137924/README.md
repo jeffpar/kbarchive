@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137924: Custom Forms Do Not Function Correctly with Quickbooks 3"
-permalink: kb/137/Q137924/
+permalink: /kb/137/Q137924/
 ---
 
 ## Q137924: Custom Forms Do Not Function Correctly with Quickbooks 3

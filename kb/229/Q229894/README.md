@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229894: CSNW Experiences Delays Opening Files on the Network"
-permalink: kb/229/Q229894/
+permalink: /kb/229/Q229894/
 ---
 
 ## Q229894: CSNW Experiences Delays Opening Files on the Network

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175325: PRB: Can't Create VB ActiveX Control with Embedded Licensed Ctrl"
-permalink: kb/175/Q175325/
+permalink: /kb/175/Q175325/
 ---
 
 ## Q175325: PRB: Can't Create VB ActiveX Control with Embedded Licensed Ctrl

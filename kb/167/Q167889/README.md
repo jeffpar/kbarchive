@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167889: Missing or Damaged Vmm32.vxd File in OSR2.1 Setup"
-permalink: kb/167/Q167889/
+permalink: /kb/167/Q167889/
 ---
 
 ## Q167889: Missing or Damaged Vmm32.vxd File in OSR2.1 Setup

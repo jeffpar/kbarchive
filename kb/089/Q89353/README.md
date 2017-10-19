@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89353: WFWG Err Msg: Insufficient Memory Available... when Starting"
-permalink: kb/089/Q89353/
+permalink: /kb/089/Q89353/
 ---
 
 ## Q89353: WFWG Err Msg: Insufficient Memory Available... when Starting

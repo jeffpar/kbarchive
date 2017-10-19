@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98539: 3Server Restore Fails on HPFS Volumes"
-permalink: kb/098/Q98539/
+permalink: /kb/098/Q98539/
 ---
 
 ## Q98539: 3Server Restore Fails on HPFS Volumes

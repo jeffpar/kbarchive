@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178937: WD97: Data Is Lost When You Type Information Through a Data Form"
-permalink: kb/178/Q178937/
+permalink: /kb/178/Q178937/
 ---
 
 ## Q178937: WD97: Data Is Lost When You Type Information Through a Data Form

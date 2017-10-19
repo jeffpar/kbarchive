@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152891: XADM: User Notifications of NDRs Contain all Recipients"
-permalink: kb/152/Q152891/
+permalink: /kb/152/Q152891/
 ---
 
 ## Q152891: XADM: User Notifications of NDRs Contain all Recipients

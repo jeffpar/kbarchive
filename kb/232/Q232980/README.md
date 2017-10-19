@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232980: PRB: Publisher 2000 by Design Comments and Corrections"
-permalink: kb/232/Q232980/
+permalink: /kb/232/Q232980/
 ---
 
 ## Q232980: PRB: Publisher 2000 by Design Comments and Corrections

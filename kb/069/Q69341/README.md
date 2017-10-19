@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69341: Bottom Part of Screen Blanks Out on Sharp Portable PC 8000"
-permalink: kb/069/Q69341/
+permalink: /kb/069/Q69341/
 ---
 
 ## Q69341: Bottom Part of Screen Blanks Out on Sharp Portable PC 8000

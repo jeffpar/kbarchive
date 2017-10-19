@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174899: Canon BJC-610 Printer May Not Print After Restarting Computer"
-permalink: kb/174/Q174899/
+permalink: /kb/174/Q174899/
 ---
 
 ## Q174899: Canon BJC-610 Printer May Not Print After Restarting Computer

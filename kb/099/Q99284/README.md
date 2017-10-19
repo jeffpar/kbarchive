@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99284: Support Information for Intel Video Capture Cards"
-permalink: kb/099/Q99284/
+permalink: /kb/099/Q99284/
 ---
 
 ## Q99284: Support Information for Intel Video Capture Cards

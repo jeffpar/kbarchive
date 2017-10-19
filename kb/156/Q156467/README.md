@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156467: Writer 2: GPF in GDI with Virtual Memory Disabled"
-permalink: kb/156/Q156467/
+permalink: /kb/156/Q156467/
 ---
 
 ## Q156467: Writer 2: GPF in GDI with Virtual Memory Disabled

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139770: First Print Job Slower Than Subsequent Print Jobs"
-permalink: kb/139/Q139770/
+permalink: /kb/139/Q139770/
 ---
 
 ## Q139770: First Print Job Slower Than Subsequent Print Jobs

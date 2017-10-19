@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174179: Err Msg: WAB Caused a General Protection Fault in Module..."
-permalink: kb/174/Q174179/
+permalink: /kb/174/Q174179/
 ---
 
 ## Q174179: Err Msg: WAB Caused a General Protection Fault in Module...

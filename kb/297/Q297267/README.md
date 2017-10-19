@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297267: How to Configure the Windows Exit Screen Saver Tool"
-permalink: kb/297/Q297267/
+permalink: /kb/297/Q297267/
 ---
 
 ## Q297267: How to Configure the Windows Exit Screen Saver Tool

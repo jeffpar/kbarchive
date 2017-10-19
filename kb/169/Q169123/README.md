@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169123: Error Message: Installation Failed While Installing from .INF"
-permalink: kb/169/Q169123/
+permalink: /kb/169/Q169123/
 ---
 
 ## Q169123: Error Message: Installation Failed While Installing from .INF

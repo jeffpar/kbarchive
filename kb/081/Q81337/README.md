@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81337: PrncDlg.exe - Common Dialogs and Printing Functions"
-permalink: kb/081/Q81337/
+permalink: /kb/081/Q81337/
 ---
 
 ## Q81337: PrncDlg.exe - Common Dialogs and Printing Functions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141713: Mkecr5xx.sys Reports Wrong I/O in Registry for SoundBlaster 16"
-permalink: kb/141/Q141713/
+permalink: /kb/141/Q141713/
 ---
 
 ## Q141713: Mkecr5xx.sys Reports Wrong I/O in Registry for SoundBlaster 16

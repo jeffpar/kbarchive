@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232298: STOP 0x0000000A in SFMAtalk Because of Invalid Frame"
-permalink: kb/232/Q232298/
+permalink: /kb/232/Q232298/
 ---
 
 ## Q232298: STOP 0x0000000A in SFMAtalk Because of Invalid Frame

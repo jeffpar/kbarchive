@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124919: RAS Event 20026: Remote Access Server Security Failure"
-permalink: kb/124/Q124919/
+permalink: /kb/124/Q124919/
 ---
 
 ## Q124919: RAS Event 20026: Remote Access Server Security Failure

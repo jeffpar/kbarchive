@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120133: Can't Change &quot;Windows In Foreground&quot; Settings in Control Panel"
-permalink: kb/120/Q120133/
+permalink: /kb/120/Q120133/
 ---
 
 ## Q120133: Can't Change &quot;Windows In Foreground&quot; Settings in Control Panel

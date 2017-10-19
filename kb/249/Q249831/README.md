@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249831: XADM: How to Delete Windows 2000 User Accounts Stored in LDF"
-permalink: kb/249/Q249831/
+permalink: /kb/249/Q249831/
 ---
 
 ## Q249831: XADM: How to Delete Windows 2000 User Accounts Stored in LDF

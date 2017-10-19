@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238035: Encarta 2000: Only the First Line of a Quick Fact Is Printed"
-permalink: kb/238/Q238035/
+permalink: /kb/238/Q238035/
 ---
 
 ## Q238035: Encarta 2000: Only the First Line of a Quick Fact Is Printed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q327276: Asherons Call: Cannot Connect by Using MSN DSL and Arescom"
-permalink: kb/327/Q327276/
+permalink: /kb/327/Q327276/
 ---
 
 ## Q327276: Asherons Call: Cannot Connect by Using MSN DSL and Arescom

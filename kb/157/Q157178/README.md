@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157178: SMS: Hardware Inventory May Be Skipped"
-permalink: kb/157/Q157178/
+permalink: /kb/157/Q157178/
 ---
 
 ## Q157178: SMS: Hardware Inventory May Be Skipped

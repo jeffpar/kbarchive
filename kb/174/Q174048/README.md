@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174048: How to Create, Send, and Receive E-mail Using Outlook Express"
-permalink: kb/174/Q174048/
+permalink: /kb/174/Q174048/
 ---
 
 ## Q174048: How to Create, Send, and Receive E-mail Using Outlook Express

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184022: FP: Changing Size of Text Changes Line Spacing"
-permalink: kb/184/Q184022/
+permalink: /kb/184/Q184022/
 ---
 
 ## Q184022: FP: Changing Size of Text Changes Line Spacing

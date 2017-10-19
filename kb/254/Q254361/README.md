@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254361: Streets and Trips: How to Export Maps to Pocket Streets"
-permalink: kb/254/Q254361/
+permalink: /kb/254/Q254361/
 ---
 
 ## Q254361: Streets and Trips: How to Export Maps to Pocket Streets

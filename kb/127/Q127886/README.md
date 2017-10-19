@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127886: Creating Multiple Schedule+ Accounts"
-permalink: kb/127/Q127886/
+permalink: /kb/127/Q127886/
 ---
 
 ## Q127886: Creating Multiple Schedule+ Accounts

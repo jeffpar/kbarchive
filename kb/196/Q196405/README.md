@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196405: XADM: Navigation Bar Missing After Upgrading to Exchange 5.5"
-permalink: kb/196/Q196405/
+permalink: /kb/196/Q196405/
 ---
 
 ## Q196405: XADM: Navigation Bar Missing After Upgrading to Exchange 5.5

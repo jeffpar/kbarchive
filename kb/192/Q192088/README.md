@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192088: How to Install MSN Using the Windows 98 CD-ROM"
-permalink: kb/192/Q192088/
+permalink: /kb/192/Q192088/
 ---
 
 ## Q192088: How to Install MSN Using the Windows 98 CD-ROM

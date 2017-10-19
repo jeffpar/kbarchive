@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191515: BUG: AbsolutePosition Property Returns Different Results"
-permalink: kb/191/Q191515/
+permalink: /kb/191/Q191515/
 ---
 
 ## Q191515: BUG: AbsolutePosition Property Returns Different Results

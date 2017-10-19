@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143118: Error Message: Unable to Display Find Tab"
-permalink: kb/143/Q143118/
+permalink: /kb/143/Q143118/
 ---
 
 ## Q143118: Error Message: Unable to Display Find Tab

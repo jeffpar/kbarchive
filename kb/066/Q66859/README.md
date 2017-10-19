@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66859: Description of Cruel in Windows Entertainment Pack"
-permalink: kb/066/Q66859/
+permalink: /kb/066/Q66859/
 ---
 
 ## Q66859: Description of Cruel in Windows Entertainment Pack

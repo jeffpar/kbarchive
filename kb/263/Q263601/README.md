@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263601: BUG: C1001 When Using Certain float Values as Template Arguments"
-permalink: kb/263/Q263601/
+permalink: /kb/263/Q263601/
 ---
 
 ## Q263601: BUG: C1001 When Using Certain float Values as Template Arguments

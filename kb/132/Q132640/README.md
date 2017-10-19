@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132640: Error Message: Rundll32 Caused a GPF in Apmext.dll"
-permalink: kb/132/Q132640/
+permalink: /kb/132/Q132640/
 ---
 
 ## Q132640: Error Message: Rundll32 Caused a GPF in Apmext.dll

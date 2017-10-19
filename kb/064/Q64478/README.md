@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64478: Mathematica 387 and Mathlab 386 with Windows 3.0"
-permalink: kb/064/Q64478/
+permalink: /kb/064/Q64478/
 ---
 
 ## Q64478: Mathematica 387 and Mathlab 386 with Windows 3.0

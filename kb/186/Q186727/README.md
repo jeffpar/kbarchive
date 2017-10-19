@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186727: WD97: Light Blue Background Prints on Graphics"
-permalink: kb/186/Q186727/
+permalink: /kb/186/Q186727/
 ---
 
 ## Q186727: WD97: Light Blue Background Prints on Graphics

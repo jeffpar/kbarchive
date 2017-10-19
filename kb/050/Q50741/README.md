@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50741: Failure to Load Resources When All File Handles Are Used"
-permalink: kb/050/Q50741/
+permalink: /kb/050/Q50741/
 ---
 
 ## Q50741: Failure to Load Resources When All File Handles Are Used

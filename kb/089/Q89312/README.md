@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89312: MS LAN Man 2.1 Test Summary (American Power Back-UPS 400)"
-permalink: kb/089/Q89312/
+permalink: /kb/089/Q89312/
 ---
 
 ## Q89312: MS LAN Man 2.1 Test Summary (American Power Back-UPS 400)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110535: PRB: Open Dialog Does Not Display Objects Without Extensions"
-permalink: kb/110/Q110535/
+permalink: /kb/110/Q110535/
 ---
 
 ## Q110535: PRB: Open Dialog Does Not Display Objects Without Extensions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130732: HOWTO: How to Create Data Source to Access Microsoft Excel Files"
-permalink: kb/130/Q130732/
+permalink: /kb/130/Q130732/
 ---
 
 ## Q130732: HOWTO: How to Create Data Source to Access Microsoft Excel Files

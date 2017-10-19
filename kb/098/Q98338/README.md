@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98338: PC DB: 3.0b Mail Server Update Disk [3.5, 720K; 5.25, 1.2 MB]"
-permalink: kb/098/Q98338/
+title: "Q98338: PC DB: 3.0b Mail Server Update Disk &#91;3.5, 720K; 5.25, 1.2 MB&#93;"
+permalink: /kb/098/Q98338/
 ---
 
-## Q98338: PC DB: 3.0b Mail Server Update Disk [3.5, 720K; 5.25, 1.2 MB]
+## Q98338: PC DB: 3.0b Mail Server Update Disk &#91;3.5, 720K; 5.25, 1.2 MB&#93;
 
 	Article: Q98338
 	Product(s): Microsoft Mail For PC Networks

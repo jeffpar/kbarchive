@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162738: Err Msg: Network Connection Could Not Be Established."
-permalink: kb/162/Q162738/
+permalink: /kb/162/Q162738/
 ---
 
 ## Q162738: Err Msg: Network Connection Could Not Be Established.

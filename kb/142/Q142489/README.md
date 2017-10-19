@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142489: Problems After Modifying Maximum Connections or Sockets Value"
-permalink: kb/142/Q142489/
+permalink: /kb/142/Q142489/
 ---
 
 ## Q142489: Problems After Modifying Maximum Connections or Sockets Value

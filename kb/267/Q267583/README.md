@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267583: XADM: Exchange Server 5.5 Fix Setup.exe Won't Work"
-permalink: kb/267/Q267583/
+permalink: /kb/267/Q267583/
 ---
 
 ## Q267583: XADM: Exchange Server 5.5 Fix Setup.exe Won't Work

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67703: Setup Does Not Detect That Windows 3.0 Is Already Installed"
-permalink: kb/067/Q67703/
+permalink: /kb/067/Q67703/
 ---
 
 ## Q67703: Setup Does Not Detect That Windows 3.0 Is Already Installed

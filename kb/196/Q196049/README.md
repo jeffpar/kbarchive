@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196049: WD97: How to Use Examples Found in Style Gallery"
-permalink: kb/196/Q196049/
+permalink: /kb/196/Q196049/
 ---
 
 ## Q196049: WD97: How to Use Examples Found in Style Gallery

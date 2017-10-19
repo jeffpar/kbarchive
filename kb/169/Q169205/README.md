@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169205: XADM: Repercussions of Deleting Public Folder Replication Messag"
-permalink: kb/169/Q169205/
+permalink: /kb/169/Q169205/
 ---
 
 ## Q169205: XADM: Repercussions of Deleting Public Folder Replication Messag

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89609: Application Execution Error with AMI BIOS Fast A20"
-permalink: kb/089/Q89609/
+permalink: /kb/089/Q89609/
 ---
 
 ## Q89609: Application Execution Error with AMI BIOS Fast A20

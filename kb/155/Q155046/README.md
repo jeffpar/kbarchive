@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155046: FIX: Member Function Referenced Without () Compiles"
-permalink: kb/155/Q155046/
+permalink: /kb/155/Q155046/
 ---
 
 ## Q155046: FIX: Member Function Referenced Without () Compiles

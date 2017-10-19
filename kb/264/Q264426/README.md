@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264426: XCON: List of KB Articles on X.400 Connector Concepts"
-permalink: kb/264/Q264426/
+permalink: /kb/264/Q264426/
 ---
 
 ## Q264426: XCON: List of KB Articles on X.400 Connector Concepts

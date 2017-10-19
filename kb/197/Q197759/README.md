@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197759: WD97: Drawing Object Is Printed over Header/Footer Text"
-permalink: kb/197/Q197759/
+permalink: /kb/197/Q197759/
 ---
 
 ## Q197759: WD97: Drawing Object Is Printed over Header/Footer Text

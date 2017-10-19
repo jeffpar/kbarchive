@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149509: BUG: General Protection (GP) Fault Caused by Een0f90.dll File"
-permalink: kb/149/Q149509/
+permalink: /kb/149/Q149509/
 ---
 
 ## Q149509: BUG: General Protection (GP) Fault Caused by Een0f90.dll File

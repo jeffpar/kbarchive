@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197565: Windows NT 4.0 SP4 Setup Does Not Update Winprint.dll"
-permalink: kb/197/Q197565/
+permalink: /kb/197/Q197565/
 ---
 
 ## Q197565: Windows NT 4.0 SP4 Setup Does Not Update Winprint.dll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271061: Encarta: Cannot Download Image from Active Server Pages (ASP)"
-permalink: kb/271/Q271061/
+permalink: /kb/271/Q271061/
 ---
 
 ## Q271061: Encarta: Cannot Download Image from Active Server Pages (ASP)

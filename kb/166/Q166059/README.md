@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166059: WV: Documents Open in Word, Not Word Viewer, on Windows NT 3.51"
-permalink: kb/166/Q166059/
+permalink: /kb/166/Q166059/
 ---
 
 ## Q166059: WV: Documents Open in Word, Not Word Viewer, on Windows NT 3.51

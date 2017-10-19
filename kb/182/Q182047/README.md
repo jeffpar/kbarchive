@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182047: DHCP Server Performance Degraded by Large Number of Scopes"
-permalink: kb/182/Q182047/
+permalink: /kb/182/Q182047/
 ---
 
 ## Q182047: DHCP Server Performance Degraded by Large Number of Scopes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85104: Windows 3.1 Upgrade Backs Up WIN.INI and SYSTEM.INI"
-permalink: kb/085/Q85104/
+permalink: /kb/085/Q85104/
 ---
 
 ## Q85104: Windows 3.1 Upgrade Backs Up WIN.INI and SYSTEM.INI

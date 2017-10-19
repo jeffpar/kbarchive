@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128037: TCP/IP-32 Waits on Synchronous NCBs"
-permalink: kb/128/Q128037/
+permalink: /kb/128/Q128037/
 ---
 
 ## Q128037: TCP/IP-32 Waits on Synchronous NCBs

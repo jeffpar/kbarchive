@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158907: Msbatch.inf Parameters: Installing Clipboard Viewer"
-permalink: kb/158/Q158907/
+permalink: /kb/158/Q158907/
 ---
 
 ## Q158907: Msbatch.inf Parameters: Installing Clipboard Viewer

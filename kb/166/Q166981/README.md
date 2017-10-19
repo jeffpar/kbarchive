@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166981: WD97: Back Button Not Available After Viewing HTML Source"
-permalink: kb/166/Q166981/
+permalink: /kb/166/Q166981/
 ---
 
 ## Q166981: WD97: Back Button Not Available After Viewing HTML Source

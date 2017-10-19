@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194660: Stop 0x0000000A After Installing Service Pack 4"
-permalink: kb/194/Q194660/
+permalink: /kb/194/Q194660/
 ---
 
 ## Q194660: Stop 0x0000000A After Installing Service Pack 4

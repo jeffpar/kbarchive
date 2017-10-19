@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181735: Adding a Link Service to a Remote SNA Server"
-permalink: kb/181/Q181735/
+permalink: /kb/181/Q181735/
 ---
 
 ## Q181735: Adding a Link Service to a Remote SNA Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164012: WD97: ErrMsg: &quot;The RTF File .&#92;&lt;Filename&gt; Is Corrupted at Offset&quot;"
-permalink: kb/164/Q164012/
+permalink: /kb/164/Q164012/
 ---
 
 ## Q164012: WD97: ErrMsg: &quot;The RTF File .&#92;&lt;Filename&gt; Is Corrupted at Offset&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131994: HOWTO: How to Use MFC to Step Through Child Windows of the MDICl"
-permalink: kb/131/Q131994/
+permalink: /kb/131/Q131994/
 ---
 
 ## Q131994: HOWTO: How to Use MFC to Step Through Child Windows of the MDICl

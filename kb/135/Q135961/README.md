@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135961: Slow Performance After Installing Microsoft Plus!"
-permalink: kb/135/Q135961/
+permalink: /kb/135/Q135961/
 ---
 
 ## Q135961: Slow Performance After Installing Microsoft Plus!

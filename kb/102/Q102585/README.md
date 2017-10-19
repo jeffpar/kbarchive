@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102585: How to Play Waveform (.WAV) Files in FoxPro for Windows"
-permalink: kb/102/Q102585/
+permalink: /kb/102/Q102585/
 ---
 
 ## Q102585: How to Play Waveform (.WAV) Files in FoxPro for Windows

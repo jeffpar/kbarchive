@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133432: PRB: Fonts Inconsistent Using Dialog Editor on Windows NT 3.51"
-permalink: kb/133/Q133432/
+permalink: /kb/133/Q133432/
 ---
 
 ## Q133432: PRB: Fonts Inconsistent Using Dialog Editor on Windows NT 3.51

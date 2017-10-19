@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265451: HOWTO: Run an eVB Application Full Screen on a Pocket PC"
-permalink: kb/265/Q265451/
+permalink: /kb/265/Q265451/
 ---
 
 ## Q265451: HOWTO: Run an eVB Application Full Screen on a Pocket PC

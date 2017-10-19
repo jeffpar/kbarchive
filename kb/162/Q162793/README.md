@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162793: How to Set Up KiXtart Logon Scripts for a Windows 95 Client"
-permalink: kb/162/Q162793/
+permalink: /kb/162/Q162793/
 ---
 
 ## Q162793: How to Set Up KiXtart Logon Scripts for a Windows 95 Client

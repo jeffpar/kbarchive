@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114349: File and Dir. Names with Caps Show Both 8.3 and Long Filenames"
-permalink: kb/114/Q114349/
+permalink: /kb/114/Q114349/
 ---
 
 ## Q114349: File and Dir. Names with Caps Show Both 8.3 and Long Filenames

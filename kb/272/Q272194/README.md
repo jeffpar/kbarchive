@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272194: Server Service Logs Event ID 2019 and Event ID 2022"
-permalink: kb/272/Q272194/
+permalink: /kb/272/Q272194/
 ---
 
 ## Q272194: Server Service Logs Event ID 2019 and Event ID 2022

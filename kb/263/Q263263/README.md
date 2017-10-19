@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263263: Games Err Msg: The Filename.icd File Is Linked to Missing..."
-permalink: kb/263/Q263263/
+permalink: /kb/263/Q263263/
 ---
 
 ## Q263263: Games Err Msg: The Filename.icd File Is Linked to Missing...

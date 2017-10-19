@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188065: BUG: Welcome Screen Continues to Redisplay"
-permalink: kb/188/Q188065/
+permalink: /kb/188/Q188065/
 ---
 
 ## Q188065: BUG: Welcome Screen Continues to Redisplay

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268770: PRB: LoadPicture and SavePicture Entry Points Are Not Found"
-permalink: kb/268/Q268770/
+permalink: /kb/268/Q268770/
 ---
 
 ## Q268770: PRB: LoadPicture and SavePicture Entry Points Are Not Found

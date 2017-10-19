@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98508: EMM386.EXE B=&lt;address&gt; Explained"
-permalink: kb/098/Q98508/
+permalink: /kb/098/Q98508/
 ---
 
 ## Q98508: EMM386.EXE B=&lt;address&gt; Explained

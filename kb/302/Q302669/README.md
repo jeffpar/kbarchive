@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302669: XADM: Error Updating Meeting Requests After Mailbox ExMerge"
-permalink: kb/302/Q302669/
+permalink: /kb/302/Q302669/
 ---
 
 ## Q302669: XADM: Error Updating Meeting Requests After Mailbox ExMerge

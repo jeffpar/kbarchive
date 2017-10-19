@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90199: Setup May Hang with FASTOPEN.EXE Installed"
-permalink: kb/090/Q90199/
+permalink: /kb/090/Q90199/
 ---
 
 ## Q90199: Setup May Hang with FASTOPEN.EXE Installed

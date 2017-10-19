@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182367: Possible to Circumvent ZAK Using Explorer.exe as Embedded Object"
-permalink: kb/182/Q182367/
+permalink: /kb/182/Q182367/
 ---
 
 ## Q182367: Possible to Circumvent ZAK Using Explorer.exe as Embedded Object

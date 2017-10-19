@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157142: PRB:CFormView/Dialogs Sized Larger Under Win32s/WinNT 3.50"
-permalink: kb/157/Q157142/
+permalink: /kb/157/Q157142/
 ---
 
 ## Q157142: PRB:CFormView/Dialogs Sized Larger Under Win32s/WinNT 3.50

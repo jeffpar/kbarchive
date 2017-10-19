@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159085: Windows NT Kernel Crashes While Processing WM_NCCREATE"
-permalink: kb/159/Q159085/
+permalink: /kb/159/Q159085/
 ---
 
 ## Q159085: Windows NT Kernel Crashes While Processing WM_NCCREATE

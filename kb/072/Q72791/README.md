@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72791: FIX: MASM Fails to Generate Error When Real Values Are Too Small"
-permalink: kb/072/Q72791/
+permalink: /kb/072/Q72791/
 ---
 
 ## Q72791: FIX: MASM Fails to Generate Error When Real Values Are Too Small

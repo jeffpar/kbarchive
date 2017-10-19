@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163935: FIX: Error &quot;Invalid Page Fault&quot; When Connecting to Sybase"
-permalink: kb/163/Q163935/
+permalink: /kb/163/Q163935/
 ---
 
 ## Q163935: FIX: Error &quot;Invalid Page Fault&quot; When Connecting to Sybase

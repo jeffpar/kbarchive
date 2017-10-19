@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90218: ClipBook Page from Write Loses Formatting and Fonts"
-permalink: kb/090/Q90218/
+permalink: /kb/090/Q90218/
 ---
 
 ## Q90218: ClipBook Page from Write Loses Formatting and Fonts

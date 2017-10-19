@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156089: PRB: Closing SDI (Top-Level) Form Does Not Release Menu"
-permalink: kb/156/Q156089/
+permalink: /kb/156/Q156089/
 ---
 
 ## Q156089: PRB: Closing SDI (Top-Level) Form Does Not Release Menu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65073: Running Ventura Publisher with Windows 3.0"
-permalink: kb/065/Q65073/
+permalink: /kb/065/Q65073/
 ---
 
 ## Q65073: Running Ventura Publisher with Windows 3.0

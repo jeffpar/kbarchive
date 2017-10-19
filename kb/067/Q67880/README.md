@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67880: LIB Error U2155 When Hyphen in File or Directory Name"
-permalink: kb/067/Q67880/
+permalink: /kb/067/Q67880/
 ---
 
 ## Q67880: LIB Error U2155 When Hyphen in File or Directory Name

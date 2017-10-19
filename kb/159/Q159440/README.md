@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159440: FP: Early Versions of Web Publishing Wizard Damage Extensions"
-permalink: kb/159/Q159440/
+permalink: /kb/159/Q159440/
 ---
 
 ## Q159440: FP: Early Versions of Web Publishing Wizard Damage Extensions

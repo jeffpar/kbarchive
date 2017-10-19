@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97445: LAN Man Does Not Turn On WRITE-THRU by Default"
-permalink: kb/097/Q97445/
+permalink: /kb/097/Q97445/
 ---
 
 ## Q97445: LAN Man Does Not Turn On WRITE-THRU by Default

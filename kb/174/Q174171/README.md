@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174171: XADM: ABV Container Not Selected When Starting Directory Export"
-permalink: kb/174/Q174171/
+permalink: /kb/174/Q174171/
 ---
 
 ## Q174171: XADM: ABV Container Not Selected When Starting Directory Export

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65661: Changing Color of Selected Text in Help and Windows"
-permalink: kb/065/Q65661/
+permalink: /kb/065/Q65661/
 ---
 
 ## Q65661: Changing Color of Selected Text in Help and Windows

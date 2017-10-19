@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114502: FIX: Error Occurs When Previewing an Untransported DOS Report"
-permalink: kb/114/Q114502/
+permalink: /kb/114/Q114502/
 ---
 
 ## Q114502: FIX: Error Occurs When Previewing an Untransported DOS Report

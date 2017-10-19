@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196118: DNS May Not Transfer Some Glue Records to Secondary Servers"
-permalink: kb/196/Q196118/
+permalink: /kb/196/Q196118/
 ---
 
 ## Q196118: DNS May Not Transfer Some Glue Records to Secondary Servers

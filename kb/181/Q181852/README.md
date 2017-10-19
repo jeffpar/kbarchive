@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181852: PRB: Program Generates Error 429 on First Reference to RDO"
-permalink: kb/181/Q181852/
+permalink: /kb/181/Q181852/
 ---
 
 ## Q181852: PRB: Program Generates Error 429 on First Reference to RDO

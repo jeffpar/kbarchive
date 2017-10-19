@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305601: MS01-060: FIX: CRT String Format Functions May Underwrite Buffer"
-permalink: kb/305/Q305601/
+permalink: /kb/305/Q305601/
 ---
 
 ## Q305601: MS01-060: FIX: CRT String Format Functions May Underwrite Buffer

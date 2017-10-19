@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113827: X400: 3.2 Setup and Maintenance Utilities"
-permalink: kb/113/Q113827/
+permalink: /kb/113/Q113827/
 ---
 
 ## Q113827: X400: 3.2 Setup and Maintenance Utilities

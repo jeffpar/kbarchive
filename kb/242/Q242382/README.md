@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242382: XADM: Installing Internet Explorer 4.0 After Exchange Server"
-permalink: kb/242/Q242382/
+permalink: /kb/242/Q242382/
 ---
 
 ## Q242382: XADM: Installing Internet Explorer 4.0 After Exchange Server

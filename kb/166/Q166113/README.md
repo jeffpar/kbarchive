@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166113: PRB: User-defined Modules Can't Be Used Through ODBC or DAO"
-permalink: kb/166/Q166113/
+permalink: /kb/166/Q166113/
 ---
 
 ## Q166113: PRB: User-defined Modules Can't Be Used Through ODBC or DAO

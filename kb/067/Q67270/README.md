@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67270: HPPCL5A Scalable Font Support in Supplemental Driver Library"
-permalink: kb/067/Q67270/
+permalink: /kb/067/Q67270/
 ---
 
 ## Q67270: HPPCL5A Scalable Font Support in Supplemental Driver Library

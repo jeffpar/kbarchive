@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200211: DUN Clients Do Not Receive DNS Domain Name over RAS/RRAS"
-permalink: kb/200/Q200211/
+permalink: /kb/200/Q200211/
 ---
 
 ## Q200211: DUN Clients Do Not Receive DNS Domain Name over RAS/RRAS

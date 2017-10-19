@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163658: WD97: TOC Doesn't Display Bullets or Paragraph Numbering"
-permalink: kb/163/Q163658/
+permalink: /kb/163/Q163658/
 ---
 
 ## Q163658: WD97: TOC Doesn't Display Bullets or Paragraph Numbering

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139678: APPC Problem Handling AP_PGM Security with NULL Password"
-permalink: kb/139/Q139678/
+permalink: /kb/139/Q139678/
 ---
 
 ## Q139678: APPC Problem Handling AP_PGM Security with NULL Password

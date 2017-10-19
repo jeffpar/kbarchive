@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217216: FIX: Assertion Or Failure With CDaoDatabase::CreateRelation Meth"
-permalink: kb/217/Q217216/
+permalink: /kb/217/Q217216/
 ---
 
 ## Q217216: FIX: Assertion Or Failure With CDaoDatabase::CreateRelation Meth

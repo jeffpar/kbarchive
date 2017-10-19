@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264290: Combat FS: Master List of Aircraft in Combat Flight Simulator"
-permalink: kb/264/Q264290/
+permalink: /kb/264/Q264290/
 ---
 
 ## Q264290: Combat FS: Master List of Aircraft in Combat Flight Simulator

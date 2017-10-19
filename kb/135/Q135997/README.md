@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135997: Scenes 2.0: Wallpaper and Windows NT 3.5"
-permalink: kb/135/Q135997/
+permalink: /kb/135/Q135997/
 ---
 
 ## Q135997: Scenes 2.0: Wallpaper and Windows NT 3.5

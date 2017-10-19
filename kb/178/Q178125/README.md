@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178125: XWEB: OWA Users Unable to Access Organization Forms Library"
-permalink: kb/178/Q178125/
+permalink: /kb/178/Q178125/
 ---
 
 ## Q178125: XWEB: OWA Users Unable to Access Organization Forms Library

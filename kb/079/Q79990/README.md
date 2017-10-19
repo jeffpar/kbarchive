@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79990: Idlewild Does Not Work with FAXit for Windows"
-permalink: kb/079/Q79990/
+permalink: /kb/079/Q79990/
 ---
 
 ## Q79990: Idlewild Does Not Work with FAXit for Windows

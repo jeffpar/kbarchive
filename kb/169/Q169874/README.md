@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169874: WD97: Hyperlink Nested Inside Other Hyperlink After Drag &amp; Drop"
-permalink: kb/169/Q169874/
+permalink: /kb/169/Q169874/
 ---
 
 ## Q169874: WD97: Hyperlink Nested Inside Other Hyperlink After Drag &amp; Drop

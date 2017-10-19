@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142481: FCSVAL32 Control-by-Control Validation in MFC"
-permalink: kb/142/Q142481/
+permalink: /kb/142/Q142481/
 ---
 
 ## Q142481: FCSVAL32 Control-by-Control Validation in MFC

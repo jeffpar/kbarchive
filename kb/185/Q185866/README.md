@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185866: BUG: Combo Box Valid Event Fires Before GotFocus in Page Frame"
-permalink: kb/185/Q185866/
+permalink: /kb/185/Q185866/
 ---
 
 ## Q185866: BUG: Combo Box Valid Event Fires Before GotFocus in Page Frame

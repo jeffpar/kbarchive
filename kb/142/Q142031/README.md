@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142031: BUG: Error Installing Windows NT Resource Kit Perl Utility"
-permalink: kb/142/Q142031/
+permalink: /kb/142/Q142031/
 ---
 
 ## Q142031: BUG: Error Installing Windows NT Resource Kit Perl Utility

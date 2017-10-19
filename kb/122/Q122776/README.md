@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122776: Writer/Artist: Filenames Used For Saved Documents"
-permalink: kb/122/Q122776/
+permalink: /kb/122/Q122776/
 ---
 
 ## Q122776: Writer/Artist: Filenames Used For Saved Documents

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166090: MSN Support in Windows NT"
-permalink: kb/166/Q166090/
+permalink: /kb/166/Q166090/
 ---
 
 ## Q166090: MSN Support in Windows NT

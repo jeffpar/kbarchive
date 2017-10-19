@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122226: HOWTO: Change the Method of Selecting Multiple Controls"
-permalink: kb/122/Q122226/
+permalink: /kb/122/Q122226/
 ---
 
 ## Q122226: HOWTO: Change the Method of Selecting Multiple Controls

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93148: Panasonic KX-P4420 May Not Print Large Documents"
-permalink: kb/093/Q93148/
+permalink: /kb/093/Q93148/
 ---
 
 ## Q93148: Panasonic KX-P4420 May Not Print Large Documents

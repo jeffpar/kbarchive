@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319332: Error Message: An Error Occurred Calling DllRegisterServer"
-permalink: kb/319/Q319332/
+permalink: /kb/319/Q319332/
 ---
 
 ## Q319332: Error Message: An Error Occurred Calling DllRegisterServer

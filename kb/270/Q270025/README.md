@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270025: Automatic Dial Settings Are Lost After You Upgrade to ISA Server"
-permalink: kb/270/Q270025/
+permalink: /kb/270/Q270025/
 ---
 
 ## Q270025: Automatic Dial Settings Are Lost After You Upgrade to ISA Server

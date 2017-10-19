@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184055: IIS: Certificate Security Affected By Schannel.dll"
-permalink: kb/184/Q184055/
+permalink: /kb/184/Q184055/
 ---
 
 ## Q184055: IIS: Certificate Security Affected By Schannel.dll

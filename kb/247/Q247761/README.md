@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247761: XCLN: Read Notifications Don't Appear on Outlook Tracking Tab"
-permalink: kb/247/Q247761/
+permalink: /kb/247/Q247761/
 ---
 
 ## Q247761: XCLN: Read Notifications Don't Appear on Outlook Tracking Tab

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160902: Windows NT Error Msg: Alternate Drivers Cannot Be Installed"
-permalink: kb/160/Q160902/
+permalink: /kb/160/Q160902/
 ---
 
 ## Q160902: Windows NT Error Msg: Alternate Drivers Cannot Be Installed

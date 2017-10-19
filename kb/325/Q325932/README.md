@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325932: Encarta: How to Copy the Encarta CD-ROM to the Hard Disk"
-permalink: kb/325/Q325932/
+permalink: /kb/325/Q325932/
 ---
 
 ## Q325932: Encarta: How to Copy the Encarta CD-ROM to the Hard Disk

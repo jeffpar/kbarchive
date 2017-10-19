@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43238: Mac Srv: Modifying a User's Name and/or Password"
-permalink: kb/043/Q43238/
+permalink: /kb/043/Q43238/
 ---
 
 ## Q43238: Mac Srv: Modifying a User's Name and/or Password

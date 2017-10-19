@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248253: XCON: Deferred Delivery Issues in Exchange Server 5.5 SP3 MTA"
-permalink: kb/248/Q248253/
+permalink: /kb/248/Q248253/
 ---
 
 ## Q248253: XCON: Deferred Delivery Issues in Exchange Server 5.5 SP3 MTA

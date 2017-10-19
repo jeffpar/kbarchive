@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67022: Fontware Installation Kit Unable to Make Directory"
-permalink: kb/067/Q67022/
+permalink: /kb/067/Q67022/
 ---
 
 ## Q67022: Fontware Installation Kit Unable to Make Directory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154009: HOWTO: Set the System Time"
-permalink: kb/154/Q154009/
+permalink: /kb/154/Q154009/
 ---
 
 ## Q154009: HOWTO: Set the System Time

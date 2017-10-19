@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309650: SMS: Error Message: There Are No Forms Available"
-permalink: kb/309/Q309650/
+permalink: /kb/309/Q309650/
 ---
 
 ## Q309650: SMS: Error Message: There Are No Forms Available

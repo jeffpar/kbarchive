@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190302: SMS: Remote Control Does Not Log Security to the Event Log"
-permalink: kb/190/Q190302/
+permalink: /kb/190/Q190302/
 ---
 
 ## Q190302: SMS: Remote Control Does Not Log Security to the Event Log

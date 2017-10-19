@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158026: GEX: How to Play Using a Keyboard"
-permalink: kb/158/Q158026/
+permalink: /kb/158/Q158026/
 ---
 
 ## Q158026: GEX: How to Play Using a Keyboard

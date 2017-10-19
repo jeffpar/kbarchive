@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268801: XADM: How to Remove the InterOrg Synchronization Tool"
-permalink: kb/268/Q268801/
+permalink: /kb/268/Q268801/
 ---
 
 ## Q268801: XADM: How to Remove the InterOrg Synchronization Tool

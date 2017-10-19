@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136393: How to Modify the Windows Registry"
-permalink: kb/136/Q136393/
+permalink: /kb/136/Q136393/
 ---
 
 ## Q136393: How to Modify the Windows Registry

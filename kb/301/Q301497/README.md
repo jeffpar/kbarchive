@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301497: FIX: The adAsyncExecute Flag Fails with VFPODBC on MDAC 2.6"
-permalink: kb/301/Q301497/
+permalink: /kb/301/Q301497/
 ---
 
 ## Q301497: FIX: The adAsyncExecute Flag Fails with VFPODBC on MDAC 2.6

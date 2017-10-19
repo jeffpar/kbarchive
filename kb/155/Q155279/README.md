@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155279: Windows NT 3.51 Service Pack 4 Does Not Update Mgmtapi.dll"
-permalink: kb/155/Q155279/
+permalink: /kb/155/Q155279/
 ---
 
 ## Q155279: Windows NT 3.51 Service Pack 4 Does Not Update Mgmtapi.dll

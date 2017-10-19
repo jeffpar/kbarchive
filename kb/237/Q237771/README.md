@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237771: FIX: Events Fail in ATL Containers if Enum Used as Parameter"
-permalink: kb/237/Q237771/
+permalink: /kb/237/Q237771/
 ---
 
 ## Q237771: FIX: Events Fail in ATL Containers if Enum Used as Parameter

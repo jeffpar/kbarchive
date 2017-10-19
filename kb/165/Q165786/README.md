@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165786: SMS: Program Group Control Stops Responding on Win16 Clients"
-permalink: kb/165/Q165786/
+permalink: /kb/165/Q165786/
 ---
 
 ## Q165786: SMS: Program Group Control Stops Responding on Win16 Clients

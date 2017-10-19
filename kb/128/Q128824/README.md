@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128824: PC Win: User Information Moved with MOVEUSER"
-permalink: kb/128/Q128824/
+permalink: /kb/128/Q128824/
 ---
 
 ## Q128824: PC Win: User Information Moved with MOVEUSER

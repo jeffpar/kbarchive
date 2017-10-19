@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128743: PC Win WRmt: Asterisk Appears in From Field When View Message"
-permalink: kb/128/Q128743/
+permalink: /kb/128/Q128743/
 ---
 
 ## Q128743: PC Win WRmt: Asterisk Appears in From Field When View Message

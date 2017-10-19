@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197178: Passing Environment Variables to Applications Started by SRVANY"
-permalink: kb/197/Q197178/
+permalink: /kb/197/Q197178/
 ---
 
 ## Q197178: Passing Environment Variables to Applications Started by SRVANY

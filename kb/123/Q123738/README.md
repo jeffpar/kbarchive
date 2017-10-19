@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123738: STOP 0x0000001e Err Msg with NetBEUI Client/Server Applications"
-permalink: kb/123/Q123738/
+permalink: /kb/123/Q123738/
 ---
 
 ## Q123738: STOP 0x0000001e Err Msg with NetBEUI Client/Server Applications

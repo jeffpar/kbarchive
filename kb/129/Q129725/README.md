@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129725: Obtaining Knowledge Base Articles on the World Wide Web"
-permalink: kb/129/Q129725/
+permalink: /kb/129/Q129725/
 ---
 
 ## Q129725: Obtaining Knowledge Base Articles on the World Wide Web

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150289: Bookshelf 96 Setup: Internet Explorer Status Incorrect"
-permalink: kb/150/Q150289/
+permalink: /kb/150/Q150289/
 ---
 
 ## Q150289: Bookshelf 96 Setup: Internet Explorer Status Incorrect

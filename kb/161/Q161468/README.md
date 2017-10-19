@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161468: XCLN: Troubleshooting Client Memory Issues on Windows 3.x"
-permalink: kb/161/Q161468/
+permalink: /kb/161/Q161468/
 ---
 
 ## Q161468: XCLN: Troubleshooting Client Memory Issues on Windows 3.x

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253301: FIX: Regular Users Cannot Open VSS Database on W2K Computers"
-permalink: kb/253/Q253301/
+permalink: /kb/253/Q253301/
 ---
 
 ## Q253301: FIX: Regular Users Cannot Open VSS Database on W2K Computers

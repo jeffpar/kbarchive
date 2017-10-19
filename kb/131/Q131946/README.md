@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131946: PRB: Bad Pointer from RUNTIME_CLASS with Class from _AFXDLL"
-permalink: kb/131/Q131946/
+permalink: /kb/131/Q131946/
 ---
 
 ## Q131946: PRB: Bad Pointer from RUNTIME_CLASS with Class from _AFXDLL

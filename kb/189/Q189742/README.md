@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189742: BUG: SendKeys &quot;{INS}&quot; Causes Error &quot;Invalid Procedure Call&quot;"
-permalink: kb/189/Q189742/
+permalink: /kb/189/Q189742/
 ---
 
 ## Q189742: BUG: SendKeys &quot;{INS}&quot; Causes Error &quot;Invalid Procedure Call&quot;

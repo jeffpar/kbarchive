@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276470: Dynamically Defined LUs Show Pending Status After PU Recycled"
-permalink: kb/276/Q276470/
+permalink: /kb/276/Q276470/
 ---
 
 ## Q276470: Dynamically Defined LUs Show Pending Status After PU Recycled

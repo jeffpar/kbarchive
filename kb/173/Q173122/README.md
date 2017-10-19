@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173122: SMS: Mouse and Keyboard Input Fail During Remote Control"
-permalink: kb/173/Q173122/
+permalink: /kb/173/Q173122/
 ---
 
 ## Q173122: SMS: Mouse and Keyboard Input Fail During Remote Control

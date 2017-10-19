@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230273: XWEB: OWA Creates English Special Folders During Logon"
-permalink: kb/230/Q230273/
+permalink: /kb/230/Q230273/
 ---
 
 ## Q230273: XWEB: OWA Creates English Special Folders During Logon

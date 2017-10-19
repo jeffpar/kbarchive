@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126820: BUG: EM_LIMITTEXT Causes GPF in Japanese and Chinese Windows"
-permalink: kb/126/Q126820/
+permalink: /kb/126/Q126820/
 ---
 
 ## Q126820: BUG: EM_LIMITTEXT Causes GPF in Japanese and Chinese Windows

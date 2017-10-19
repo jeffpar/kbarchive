@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314296: PRB: HTML Help Does Not Work from VFP Application"
-permalink: kb/314/Q314296/
+permalink: /kb/314/Q314296/
 ---
 
 ## Q314296: PRB: HTML Help Does Not Work from VFP Application

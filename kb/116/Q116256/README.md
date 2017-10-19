@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116256: Himem.sys Cannot Address More Than 64 MB of Memory"
-permalink: kb/116/Q116256/
+permalink: /kb/116/Q116256/
 ---
 
 ## Q116256: Himem.sys Cannot Address More Than 64 MB of Memory

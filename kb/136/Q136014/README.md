@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136014: PCMCIA Card Does Not Work After Running PCMCIA Wizard"
-permalink: kb/136/Q136014/
+permalink: /kb/136/Q136014/
 ---
 
 ## Q136014: PCMCIA Card Does Not Work After Running PCMCIA Wizard

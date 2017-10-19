@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137183: How to Add Items to a Multiple-Column Combo Box"
-permalink: kb/137/Q137183/
+permalink: /kb/137/Q137183/
 ---
 
 ## Q137183: How to Add Items to a Multiple-Column Combo Box

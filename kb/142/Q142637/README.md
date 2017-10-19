@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142637: Xircom Pocket Ether3 Adapters Require 802.2 Frame Type"
-permalink: kb/142/Q142637/
+permalink: /kb/142/Q142637/
 ---
 
 ## Q142637: Xircom Pocket Ether3 Adapters Require 802.2 Frame Type

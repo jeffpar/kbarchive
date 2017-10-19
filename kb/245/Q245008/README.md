@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245008: Ipconfig Generates Inconsistent Registry Contents Error Message."
-permalink: kb/245/Q245008/
+permalink: /kb/245/Q245008/
 ---
 
 ## Q245008: Ipconfig Generates Inconsistent Registry Contents Error Message.

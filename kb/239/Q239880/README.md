@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239880: NFL Fever 2000: Slow Video Frame Rate During First Plays of Game"
-permalink: kb/239/Q239880/
+permalink: /kb/239/Q239880/
 ---
 
 ## Q239880: NFL Fever 2000: Slow Video Frame Rate During First Plays of Game

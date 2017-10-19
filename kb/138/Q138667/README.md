@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138667: New Video Card Not Detected After Replacing Trident Card"
-permalink: kb/138/Q138667/
+permalink: /kb/138/Q138667/
 ---
 
 ## Q138667: New Video Card Not Detected After Replacing Trident Card

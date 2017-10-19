@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112483: INFO: Limitations of Run-Time MS Graph"
-permalink: kb/112/Q112483/
+permalink: /kb/112/Q112483/
 ---
 
 ## Q112483: INFO: Limitations of Run-Time MS Graph

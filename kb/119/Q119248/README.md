@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119248: FIX: &quot;Error During Compression&quot; Splitting a File a Second Time"
-permalink: kb/119/Q119248/
+permalink: /kb/119/Q119248/
 ---
 
 ## Q119248: FIX: &quot;Error During Compression&quot; Splitting a File a Second Time

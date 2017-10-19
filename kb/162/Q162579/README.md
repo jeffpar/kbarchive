@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162579: WD97: Linked Picture Doesn't Preserve Scaling Properties"
-permalink: kb/162/Q162579/
+permalink: /kb/162/Q162579/
 ---
 
 ## Q162579: WD97: Linked Picture Doesn't Preserve Scaling Properties

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147363: AlphaServer Hangs on Install of Windows NT Version 4.0"
-permalink: kb/147/Q147363/
+permalink: /kb/147/Q147363/
 ---
 
 ## Q147363: AlphaServer Hangs on Install of Windows NT Version 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242040: PAUSE Key Disables NUM LOCK in Terminal Server Client"
-permalink: kb/242/Q242040/
+permalink: /kb/242/Q242040/
 ---
 
 ## Q242040: PAUSE Key Disables NUM LOCK in Terminal Server Client

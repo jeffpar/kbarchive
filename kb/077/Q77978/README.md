@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77978: Packard Bell 9500 Laser Printer Emulation"
-permalink: kb/077/Q77978/
+permalink: /kb/077/Q77978/
 ---
 
 ## Q77978: Packard Bell 9500 Laser Printer Emulation

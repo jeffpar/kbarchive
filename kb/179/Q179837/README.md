@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179837: XCON: NDR from Malformed Message Not Received"
-permalink: kb/179/Q179837/
+permalink: /kb/179/Q179837/
 ---
 
 ## Q179837: XCON: NDR from Malformed Message Not Received

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72932: No &quot;Output Filename&quot; Prompt Printing to a File with PostScript"
-permalink: kb/072/Q72932/
+permalink: /kb/072/Q72932/
 ---
 
 ## Q72932: No &quot;Output Filename&quot; Prompt Printing to a File with PostScript

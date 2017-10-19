@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102884: Migrating Windows 3.1 Groups After Installation"
-permalink: kb/102/Q102884/
+permalink: /kb/102/Q102884/
 ---
 
 ## Q102884: Migrating Windows 3.1 Groups After Installation

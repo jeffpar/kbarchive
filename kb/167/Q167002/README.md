@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167002: XWEB: Limitations of the Active Server Components"
-permalink: kb/167/Q167002/
+permalink: /kb/167/Q167002/
 ---
 
 ## Q167002: XWEB: Limitations of the Active Server Components

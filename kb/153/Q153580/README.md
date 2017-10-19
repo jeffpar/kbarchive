@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153580: How to Get the Type of Another OLE Control from a Custom OCX"
-permalink: kb/153/Q153580/
+permalink: /kb/153/Q153580/
 ---
 
 ## Q153580: How to Get the Type of Another OLE Control from a Custom OCX

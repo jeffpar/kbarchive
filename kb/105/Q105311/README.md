@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105311: PC WSPlus: Default Reminder Poll Time in Schedule+"
-permalink: kb/105/Q105311/
+permalink: /kb/105/Q105311/
 ---
 
 ## Q105311: PC WSPlus: Default Reminder Poll Time in Schedule+

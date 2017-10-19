@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77463: 'INVALID PATH' Message Following 'DISK IS FULL' Message"
-permalink: kb/077/Q77463/
+permalink: /kb/077/Q77463/
 ---
 
 ## Q77463: 'INVALID PATH' Message Following 'DISK IS FULL' Message

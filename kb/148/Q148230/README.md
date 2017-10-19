@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148230: FIX: TypeLibs with Large Argument Lists May Crash ClassWizard"
-permalink: kb/148/Q148230/
+permalink: /kb/148/Q148230/
 ---
 
 ## Q148230: FIX: TypeLibs with Large Argument Lists May Crash ClassWizard

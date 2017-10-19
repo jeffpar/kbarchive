@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190739: Print Session Does Not Prompt for Filter DLL"
-permalink: kb/190/Q190739/
+permalink: /kb/190/Q190739/
 ---
 
 ## Q190739: Print Session Does Not Prompt for Filter DLL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169629: XFOR: Installing the Proxy Address Generator for Exchange-SNADS"
-permalink: kb/169/Q169629/
+permalink: /kb/169/Q169629/
 ---
 
 ## Q169629: XFOR: Installing the Proxy Address Generator for Exchange-SNADS

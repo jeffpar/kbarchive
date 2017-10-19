@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73725: Meaning of MODE &quot;Illegal Device Name - COMx&quot; Message"
-permalink: kb/073/Q73725/
+permalink: /kb/073/Q73725/
 ---
 
 ## Q73725: Meaning of MODE &quot;Illegal Device Name - COMx&quot; Message

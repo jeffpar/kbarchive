@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318441: SMS: SQL Server Processes SMS 2.0 Queries Very Slowly"
-permalink: kb/318/Q318441/
+permalink: /kb/318/Q318441/
 ---
 
 ## Q318441: SMS: SQL Server Processes SMS 2.0 Queries Very Slowly

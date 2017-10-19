@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51978: Order in Which MS-DOS and Windows Assign Drive Letters"
-permalink: kb/051/Q51978/
+permalink: /kb/051/Q51978/
 ---
 
 ## Q51978: Order in Which MS-DOS and Windows Assign Drive Letters

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92577: WFWG: GP Fault in Video Driver When Using ClipBook Viewer"
-permalink: kb/092/Q92577/
+permalink: /kb/092/Q92577/
 ---
 
 ## Q92577: WFWG: GP Fault in Video Driver When Using ClipBook Viewer

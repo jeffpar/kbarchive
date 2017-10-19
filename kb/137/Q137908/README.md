@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137908: PC WRmt: Script for Xircom CEM2 and Mail Remote for Windows"
-permalink: kb/137/Q137908/
+permalink: /kb/137/Q137908/
 ---
 
 ## Q137908: PC WRmt: Script for Xircom CEM2 and Mail Remote for Windows

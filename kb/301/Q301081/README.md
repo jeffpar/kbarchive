@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301081: HOW TO: Export a Table from Windows CE by Using eMbedded Visual"
-permalink: kb/301/Q301081/
+permalink: /kb/301/Q301081/
 ---
 
 ## Q301081: HOW TO: Export a Table from Windows CE by Using eMbedded Visual

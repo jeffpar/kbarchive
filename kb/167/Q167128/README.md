@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167128: SMS: Network Ports Used by Remote Helpdesk Functions"
-permalink: kb/167/Q167128/
+permalink: /kb/167/Q167128/
 ---
 
 ## Q167128: SMS: Network Ports Used by Remote Helpdesk Functions

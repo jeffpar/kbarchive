@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q220888: PRB: ErrMsg Returned w/Server-Side Cursorlocation for MSAccess"
-permalink: kb/220/Q220888/
+permalink: /kb/220/Q220888/
 ---
 
 ## Q220888: PRB: ErrMsg Returned w/Server-Side Cursorlocation for MSAccess

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150605: Cannot Print Using LPR from Windows NT to Sun Workstation LPD"
-permalink: kb/150/Q150605/
+permalink: /kb/150/Q150605/
 ---
 
 ## Q150605: Cannot Print Using LPR from Windows NT to Sun Workstation LPD

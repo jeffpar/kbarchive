@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125917: PC DirSync: Err Msg: Error 156 Invalid Dirsync Password"
-permalink: kb/125/Q125917/
+permalink: /kb/125/Q125917/
 ---
 
 ## Q125917: PC DirSync: Err Msg: Error 156 Invalid Dirsync Password

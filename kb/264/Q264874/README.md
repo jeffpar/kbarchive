@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264874: WD97: Formula Calculates to Zero When You Use Currency Symbol"
-permalink: kb/264/Q264874/
+permalink: /kb/264/Q264874/
 ---
 
 ## Q264874: WD97: Formula Calculates to Zero When You Use Currency Symbol

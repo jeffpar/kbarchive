@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199322: PRB: OEM to ANSI Translation Fails While Creating New DSN"
-permalink: kb/199/Q199322/
+permalink: /kb/199/Q199322/
 ---
 
 ## Q199322: PRB: OEM to ANSI Translation Fails While Creating New DSN

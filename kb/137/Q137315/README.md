@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137315: PRB: APPEND GENERAL DATA Not Working in Windows for Workgroups"
-permalink: kb/137/Q137315/
+permalink: /kb/137/Q137315/
 ---
 
 ## Q137315: PRB: APPEND GENERAL DATA Not Working in Windows for Workgroups

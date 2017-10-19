@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q40594: Accessing the COM3: or COM4: Port"
-permalink: kb/040/Q40594/
+permalink: /kb/040/Q40594/
 ---
 
 ## Q40594: Accessing the COM3: or COM4: Port

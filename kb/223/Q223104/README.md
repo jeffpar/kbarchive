@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223104: FIX: ParentControls.Count May Fail on Windows NT 4, SP4"
-permalink: kb/223/Q223104/
+permalink: /kb/223/Q223104/
 ---
 
 ## Q223104: FIX: ParentControls.Count May Fail on Windows NT 4, SP4

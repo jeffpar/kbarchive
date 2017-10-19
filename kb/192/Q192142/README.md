@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192142: PRB: Update After AddNew Using Oracle Driver Generates an Error"
-permalink: kb/192/Q192142/
+permalink: /kb/192/Q192142/
 ---
 
 ## Q192142: PRB: Update After AddNew Using Oracle Driver Generates an Error

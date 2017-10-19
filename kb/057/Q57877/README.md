@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57877: Mac GW: Information About Adding User's to a Gateway Account"
-permalink: kb/057/Q57877/
+permalink: /kb/057/Q57877/
 ---
 
 ## Q57877: Mac GW: Information About Adding User's to a Gateway Account

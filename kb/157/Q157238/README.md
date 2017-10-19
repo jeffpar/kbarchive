@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157238: How to Activate Security Event Logging in Windows NT 4.0"
-permalink: kb/157/Q157238/
+permalink: /kb/157/Q157238/
 ---
 
 ## Q157238: How to Activate Security Event Logging in Windows NT 4.0

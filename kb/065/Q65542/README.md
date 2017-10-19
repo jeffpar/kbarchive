@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65542: Mac Hyp: Preventing Continuous Beep Conflict with HyperCard"
-permalink: kb/065/Q65542/
+permalink: /kb/065/Q65542/
 ---
 
 ## Q65542: Mac Hyp: Preventing Continuous Beep Conflict with HyperCard

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85135: System Hangs After Two Beeps in Windows 386 Enhanced Mode"
-permalink: kb/085/Q85135/
+permalink: /kb/085/Q85135/
 ---
 
 ## Q85135: System Hangs After Two Beeps in Windows 386 Enhanced Mode

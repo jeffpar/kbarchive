@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164618: WD97: Conversion of Bullets and Numbering"
-permalink: kb/164/Q164618/
+permalink: /kb/164/Q164618/
 ---
 
 ## Q164618: WD97: Conversion of Bullets and Numbering

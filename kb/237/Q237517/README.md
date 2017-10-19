@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237517: Err Msg: Enc2000 Caused a Stack Fault in Module Kernel32.dll"
-permalink: kb/237/Q237517/
+permalink: /kb/237/Q237517/
 ---
 
 ## Q237517: Err Msg: Enc2000 Caused a Stack Fault in Module Kernel32.dll

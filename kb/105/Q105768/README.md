@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105768: PC WSPlus: Automatic Recovery and the RECOVER.CAL File"
-permalink: kb/105/Q105768/
+permalink: /kb/105/Q105768/
 ---
 
 ## Q105768: PC WSPlus: Automatic Recovery and the RECOVER.CAL File

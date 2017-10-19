@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q209033: INFO: Maximum Window Sizes for Windows CE Devices"
-permalink: kb/209/Q209033/
+permalink: /kb/209/Q209033/
 ---
 
 ## Q209033: INFO: Maximum Window Sizes for Windows CE Devices

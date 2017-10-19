@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112205: PC WRmt: Modem Script (.SCR) Update Process"
-permalink: kb/112/Q112205/
+permalink: /kb/112/Q112205/
 ---
 
 ## Q112205: PC WRmt: Modem Script (.SCR) Update Process

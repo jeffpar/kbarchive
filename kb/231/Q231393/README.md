@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231393: BUG: Using DCOM with an Active Document"
-permalink: kb/231/Q231393/
+permalink: /kb/231/Q231393/
 ---
 
 ## Q231393: BUG: Using DCOM with an Active Document

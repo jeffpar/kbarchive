@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126955: PRB: Where to Put EXTERNAL ARRAY in a Form"
-permalink: kb/126/Q126955/
+permalink: /kb/126/Q126955/
 ---
 
 ## Q126955: PRB: Where to Put EXTERNAL ARRAY in a Form

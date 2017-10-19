@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235698: IISSYNC Deletes the IIS In-Process Package on the Target Server"
-permalink: kb/235/Q235698/
+permalink: /kb/235/Q235698/
 ---
 
 ## Q235698: IISSYNC Deletes the IIS In-Process Package on the Target Server

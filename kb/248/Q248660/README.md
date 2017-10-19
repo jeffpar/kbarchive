@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248660: Using the Command Line to Change Startup Value of Services"
-permalink: kb/248/Q248660/
+permalink: /kb/248/Q248660/
 ---
 
 ## Q248660: Using the Command Line to Change Startup Value of Services

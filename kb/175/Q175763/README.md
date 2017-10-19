@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175763: SMS: Long Inventory Package Names Cause Incomplete Inventory"
-permalink: kb/175/Q175763/
+permalink: /kb/175/Q175763/
 ---
 
 ## Q175763: SMS: Long Inventory Package Names Cause Incomplete Inventory

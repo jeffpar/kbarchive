@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173368: ATI Mach64GX/CT Chipsets May Hang System during Display Test"
-permalink: kb/173/Q173368/
+permalink: /kb/173/Q173368/
 ---
 
 ## Q173368: ATI Mach64GX/CT Chipsets May Hang System during Display Test

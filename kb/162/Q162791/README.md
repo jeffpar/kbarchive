@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162791: &quot;Access Denied&quot; Error Accessing IBM LanServer 4.0 Share"
-permalink: kb/162/Q162791/
+permalink: /kb/162/Q162791/
 ---
 
 ## Q162791: &quot;Access Denied&quot; Error Accessing IBM LanServer 4.0 Share

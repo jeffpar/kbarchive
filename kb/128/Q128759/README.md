@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128759: Garbled Sounds in Windows Sound System Using IMAADPCM.ACM"
-permalink: kb/128/Q128759/
+permalink: /kb/128/Q128759/
 ---
 
 ## Q128759: Garbled Sounds in Windows Sound System Using IMAADPCM.ACM

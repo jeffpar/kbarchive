@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186431: HOWTO: Bring an Application Window to the Top with Focus"
-permalink: kb/186/Q186431/
+permalink: /kb/186/Q186431/
 ---
 
 ## Q186431: HOWTO: Bring an Application Window to the Top with Focus

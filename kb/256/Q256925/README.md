@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256925: BUG: INSERT INTO View w/Default Value Does Not Work as Expected"
-permalink: kb/256/Q256925/
+permalink: /kb/256/Q256925/
 ---
 
 ## Q256925: BUG: INSERT INTO View w/Default Value Does Not Work as Expected

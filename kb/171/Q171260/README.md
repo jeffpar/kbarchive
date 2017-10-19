@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171260: XFOR: Internal Windows NT Error When Starting DirSync Service"
-permalink: kb/171/Q171260/
+permalink: /kb/171/Q171260/
 ---
 
 ## Q171260: XFOR: Internal Windows NT Error When Starting DirSync Service

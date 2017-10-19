@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264102: XADM: Third-Party Backup Programs Do Not Work After ESE Fix"
-permalink: kb/264/Q264102/
+permalink: /kb/264/Q264102/
 ---
 
 ## Q264102: XADM: Third-Party Backup Programs Do Not Work After ESE Fix

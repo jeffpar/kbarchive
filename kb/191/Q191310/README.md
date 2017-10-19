@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191310: Cannot Create List with Multiple Bullets on One Line"
-permalink: kb/191/Q191310/
+permalink: /kb/191/Q191310/
 ---
 
 ## Q191310: Cannot Create List with Multiple Bullets on One Line

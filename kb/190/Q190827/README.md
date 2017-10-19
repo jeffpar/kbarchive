@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190827: Unable to View Windows 95/98 Server from Windows NT"
-permalink: kb/190/Q190827/
+permalink: /kb/190/Q190827/
 ---
 
 ## Q190827: Unable to View Windows 95/98 Server from Windows NT

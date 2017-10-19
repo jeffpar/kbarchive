@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88078: Using the Quantum Hardcard XL with Windows 3.1"
-permalink: kb/088/Q88078/
+permalink: /kb/088/Q88078/
 ---
 
 ## Q88078: Using the Quantum Hardcard XL with Windows 3.1

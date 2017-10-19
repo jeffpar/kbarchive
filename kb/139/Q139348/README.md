@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139348: HOWTO: Set a Filter Using an Item Selected from a Combo Box"
-permalink: kb/139/Q139348/
+permalink: /kb/139/Q139348/
 ---
 
 ## Q139348: HOWTO: Set a Filter Using an Item Selected from a Combo Box

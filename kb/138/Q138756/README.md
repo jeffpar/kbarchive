@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138756: FIX: Cursor Editor Fill Tool Doesn't Affect BackGround Pixels"
-permalink: kb/138/Q138756/
+permalink: /kb/138/Q138756/
 ---
 
 ## Q138756: FIX: Cursor Editor Fill Tool Doesn't Affect BackGround Pixels

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125048: Encarta 95 Err Msg: Encart95 Caused An Exception"
-permalink: kb/125/Q125048/
+permalink: /kb/125/Q125048/
 ---
 
 ## Q125048: Encarta 95 Err Msg: Encart95 Caused An Exception

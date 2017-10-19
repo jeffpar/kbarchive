@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235835: SMS: Users With Restrict Collect View Rights May See Resources"
-permalink: kb/235/Q235835/
+permalink: /kb/235/Q235835/
 ---
 
 ## Q235835: SMS: Users With Restrict Collect View Rights May See Resources

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246004: 5250 and 3270 Applets Do Not Find SNA Server"
-permalink: kb/246/Q246004/
+permalink: /kb/246/Q246004/
 ---
 
 ## Q246004: 5250 and 3270 Applets Do Not Find SNA Server

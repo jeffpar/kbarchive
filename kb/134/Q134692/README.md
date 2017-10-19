@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134692: PRB: Visual C++ Setup Was Unable to Copy a File"
-permalink: kb/134/Q134692/
+permalink: /kb/134/Q134692/
 ---
 
 ## Q134692: PRB: Visual C++ Setup Was Unable to Copy a File

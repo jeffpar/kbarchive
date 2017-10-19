@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160497: Cache File Entries Disappear"
-permalink: kb/160/Q160497/
+permalink: /kb/160/Q160497/
 ---
 
 ## Q160497: Cache File Entries Disappear

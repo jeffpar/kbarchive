@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170128: HOWTO: Programmatically Create Large Tables for Testing Purposes"
-permalink: kb/170/Q170128/
+permalink: /kb/170/Q170128/
 ---
 
 ## Q170128: HOWTO: Programmatically Create Large Tables for Testing Purposes

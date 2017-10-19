@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148409: PRB: HPPCL5 Driver Causes Resource Depletion in Windows 3.11"
-permalink: kb/148/Q148409/
+permalink: /kb/148/Q148409/
 ---
 
 ## Q148409: PRB: HPPCL5 Driver Causes Resource Depletion in Windows 3.11

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185402: WD97: Calculation in Form Field Shows Wrong Result"
-permalink: kb/185/Q185402/
+permalink: /kb/185/Q185402/
 ---
 
 ## Q185402: WD97: Calculation in Form Field Shows Wrong Result

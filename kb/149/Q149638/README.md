@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149638: PRB: Statically linked MFC App Causes Trouble on Win32s"
-permalink: kb/149/Q149638/
+permalink: /kb/149/Q149638/
 ---
 
 ## Q149638: PRB: Statically linked MFC App Causes Trouble on Win32s

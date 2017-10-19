@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157491: IIS Key Manager Only Allows 512-Bit Size Key"
-permalink: kb/157/Q157491/
+permalink: /kb/157/Q157491/
 ---
 
 ## Q157491: IIS Key Manager Only Allows 512-Bit Size Key

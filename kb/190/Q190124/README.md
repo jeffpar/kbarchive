@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190124: PRB: Can Not Create temp Table Using ODBCdirect"
-permalink: kb/190/Q190124/
+permalink: /kb/190/Q190124/
 ---
 
 ## Q190124: PRB: Can Not Create temp Table Using ODBCdirect

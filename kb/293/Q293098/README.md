@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293098: XWEB: HTTP 404 &quot;Page Cannot Be Found&quot; Accessing OWA Behind Proxy"
-permalink: kb/293/Q293098/
+permalink: /kb/293/Q293098/
 ---
 
 ## Q293098: XWEB: HTTP 404 &quot;Page Cannot Be Found&quot; Accessing OWA Behind Proxy

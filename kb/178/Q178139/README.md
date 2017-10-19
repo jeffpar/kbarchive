@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178139: MSN Notifies You About More E-mail Messages Than You Receive"
-permalink: kb/178/Q178139/
+permalink: /kb/178/Q178139/
 ---
 
 ## Q178139: MSN Notifies You About More E-mail Messages Than You Receive

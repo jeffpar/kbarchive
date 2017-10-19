@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248972: FS2000: How to Optimize Your Installation of Flight Simulator"
-permalink: kb/248/Q248972/
+permalink: /kb/248/Q248972/
 ---
 
 ## Q248972: FS2000: How to Optimize Your Installation of Flight Simulator

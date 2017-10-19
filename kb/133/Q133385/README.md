@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133385: Using Performance Monitor to Monitor SMS Executive Threads"
-permalink: kb/133/Q133385/
+permalink: /kb/133/Q133385/
 ---
 
 ## Q133385: Using Performance Monitor to Monitor SMS Executive Threads

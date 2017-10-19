@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139457: PRB: Error Converting Visual C++ OLE Controls from 2.x to 4.0"
-permalink: kb/139/Q139457/
+permalink: /kb/139/Q139457/
 ---
 
 ## Q139457: PRB: Error Converting Visual C++ OLE Controls from 2.x to 4.0

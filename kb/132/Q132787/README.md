@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132787: Eagle NE200T PCMCIA NE200.COM ODI Driver Does Not Work"
-permalink: kb/132/Q132787/
+permalink: /kb/132/Q132787/
 ---
 
 ## Q132787: Eagle NE200T PCMCIA NE200.COM ODI Driver Does Not Work

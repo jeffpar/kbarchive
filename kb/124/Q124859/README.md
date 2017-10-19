@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124859: Allowing Non-Administrators to Use the AT command"
-permalink: kb/124/Q124859/
+permalink: /kb/124/Q124859/
 ---
 
 ## Q124859: Allowing Non-Administrators to Use the AT command

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197807: Combat Flight Simulator: How to Import Flight Simulator Scenery"
-permalink: kb/197/Q197807/
+permalink: /kb/197/Q197807/
 ---
 
 ## Q197807: Combat Flight Simulator: How to Import Flight Simulator Scenery

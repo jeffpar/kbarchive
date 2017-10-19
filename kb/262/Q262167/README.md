@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262167: WD97: Prompt to Save Normal Template When You Quit Word"
-permalink: kb/262/Q262167/
+permalink: /kb/262/Q262167/
 ---
 
 ## Q262167: WD97: Prompt to Save Normal Template When You Quit Word

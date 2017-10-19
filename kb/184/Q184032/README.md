@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184032: Accessing Internet Site Shows Default Proxy Server Page"
-permalink: kb/184/Q184032/
+permalink: /kb/184/Q184032/
 ---
 
 ## Q184032: Accessing Internet Site Shows Default Proxy Server Page

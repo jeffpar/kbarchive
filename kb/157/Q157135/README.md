@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157135: WD97: Newsletter Footer Doesn't Print Using Default Settings"
-permalink: kb/157/Q157135/
+permalink: /kb/157/Q157135/
 ---
 
 ## Q157135: WD97: Newsletter Footer Doesn't Print Using Default Settings

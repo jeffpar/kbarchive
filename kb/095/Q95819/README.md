@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95819: MS-DOS DEFRAG Err Msg: &quot;Insufficient Memory...&quot;"
-permalink: kb/095/Q95819/
+permalink: /kb/095/Q95819/
 ---
 
 ## Q95819: MS-DOS DEFRAG Err Msg: &quot;Insufficient Memory...&quot;

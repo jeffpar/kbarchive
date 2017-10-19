@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184247: BUG: FileListBox Display Inconsistent Between Windows 95 &amp; NT 4"
-permalink: kb/184/Q184247/
+permalink: /kb/184/Q184247/
 ---
 
 ## Q184247: BUG: FileListBox Display Inconsistent Between Windows 95 &amp; NT 4

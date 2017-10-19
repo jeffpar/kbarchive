@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127752: PC DirSync: Err Msg: Warning 8 Error Deleting File..."
-permalink: kb/127/Q127752/
+permalink: /kb/127/Q127752/
 ---
 
 ## Q127752: PC DirSync: Err Msg: Warning 8 Error Deleting File...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152528: Library Odbc32.dll Could Not Be Loaded to Perform the Query"
-permalink: kb/152/Q152528/
+permalink: /kb/152/Q152528/
 ---
 
 ## Q152528: Library Odbc32.dll Could Not Be Loaded to Perform the Query

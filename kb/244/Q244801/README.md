@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244801: PRB: Run-time Bound ADO Recordset Skips Second Record"
-permalink: kb/244/Q244801/
+permalink: /kb/244/Q244801/
 ---
 
 ## Q244801: PRB: Run-time Bound ADO Recordset Skips Second Record

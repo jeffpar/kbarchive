@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80996: AHA-154x BID Doesn't Support I/O Addresses of 134/130"
-permalink: kb/080/Q80996/
+permalink: /kb/080/Q80996/
 ---
 
 ## Q80996: AHA-154x BID Doesn't Support I/O Addresses of 134/130

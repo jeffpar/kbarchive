@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238807: Err Msg: The Files Necessary to Run Virtual Tours Are Missing..."
-permalink: kb/238/Q238807/
+permalink: /kb/238/Q238807/
 ---
 
 ## Q238807: Err Msg: The Files Necessary to Run Virtual Tours Are Missing...

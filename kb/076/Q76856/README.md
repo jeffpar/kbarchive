@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76856: Multimedia Windows Requires Updated IBM CD-ROM Driver"
-permalink: kb/076/Q76856/
+permalink: /kb/076/Q76856/
 ---
 
 ## Q76856: Multimedia Windows Requires Updated IBM CD-ROM Driver

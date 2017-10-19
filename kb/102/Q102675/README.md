@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102675: FIX: App Studio Changes Control ID to Dialog Box ID"
-permalink: kb/102/Q102675/
+permalink: /kb/102/Q102675/
 ---
 
 ## Q102675: FIX: App Studio Changes Control ID to Dialog Box ID

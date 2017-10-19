@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120568: ADT2: Errors Using Recordset Methods on Data Outline Control"
-permalink: kb/120/Q120568/
+permalink: /kb/120/Q120568/
 ---
 
 ## Q120568: ADT2: Errors Using Recordset Methods on Data Outline Control

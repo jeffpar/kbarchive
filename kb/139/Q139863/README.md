@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139863: How to Determine the Variable Type"
-permalink: kb/139/Q139863/
+permalink: /kb/139/Q139863/
 ---
 
 ## Q139863: How to Determine the Variable Type

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194763: SNA Print Server PDF Fails to Support Macros Exceeding 127 Chara"
-permalink: kb/194/Q194763/
+permalink: /kb/194/Q194763/
 ---
 
 ## Q194763: SNA Print Server PDF Fails to Support Macros Exceeding 127 Chara

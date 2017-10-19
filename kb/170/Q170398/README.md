@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170398: XADM: Error Applying Service Pack"
-permalink: kb/170/Q170398/
+permalink: /kb/170/Q170398/
 ---
 
 ## Q170398: XADM: Error Applying Service Pack

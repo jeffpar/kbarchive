@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185704: How to Restrict Floppy Disk Drive Access Using Floplock Service"
-permalink: kb/185/Q185704/
+permalink: /kb/185/Q185704/
 ---
 
 ## Q185704: How to Restrict Floppy Disk Drive Access Using Floplock Service

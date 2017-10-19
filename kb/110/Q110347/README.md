@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110347: Windows NT 4.0 Resource Kit Documentation Errors"
-permalink: kb/110/Q110347/
+permalink: /kb/110/Q110347/
 ---
 
 ## Q110347: Windows NT 4.0 Resource Kit Documentation Errors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145769: PRB: Capital &quot;S&quot; Not Displayed When Using the Text ISAM"
-permalink: kb/145/Q145769/
+permalink: /kb/145/Q145769/
 ---
 
 ## Q145769: PRB: Capital &quot;S&quot; Not Displayed When Using the Text ISAM

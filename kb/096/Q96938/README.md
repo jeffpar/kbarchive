@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96938: Interlnk Drives Appear as Removable Media"
-permalink: kb/096/Q96938/
+permalink: /kb/096/Q96938/
 ---
 
 ## Q96938: Interlnk Drives Appear as Removable Media

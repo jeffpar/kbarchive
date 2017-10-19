@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156071: PRB: Launching .Exe File Returns &quot;Document Is Locked&quot; Error"
-permalink: kb/156/Q156071/
+permalink: /kb/156/Q156071/
 ---
 
 ## Q156071: PRB: Launching .Exe File Returns &quot;Document Is Locked&quot; Error

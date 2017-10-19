@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59123: Mac Srv: More Than 32 AppleTalk Nodes May Result in Hang"
-permalink: kb/059/Q59123/
+permalink: /kb/059/Q59123/
 ---
 
 ## Q59123: Mac Srv: More Than 32 AppleTalk Nodes May Result in Hang

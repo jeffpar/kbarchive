@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279294: Combat Flight Simulator 2: How to Start Your Aircraft Engine"
-permalink: kb/279/Q279294/
+permalink: /kb/279/Q279294/
 ---
 
 ## Q279294: Combat Flight Simulator 2: How to Start Your Aircraft Engine

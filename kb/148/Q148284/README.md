@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148284: XCON: When and How to Use the Mtacheck Utility"
-permalink: kb/148/Q148284/
+permalink: /kb/148/Q148284/
 ---
 
 ## Q148284: XCON: When and How to Use the Mtacheck Utility

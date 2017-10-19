@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234801: DirectX 6.1 Err Msg: Could Not Get Extra DirectMusic Info..."
-permalink: kb/234/Q234801/
+permalink: /kb/234/Q234801/
 ---
 
 ## Q234801: DirectX 6.1 Err Msg: Could Not Get Extra DirectMusic Info...

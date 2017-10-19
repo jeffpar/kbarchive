@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121011: ProofReader Repeats Single Number or Does Not Initiate Volume"
-permalink: kb/121/Q121011/
+permalink: /kb/121/Q121011/
 ---
 
 ## Q121011: ProofReader Repeats Single Number or Does Not Initiate Volume

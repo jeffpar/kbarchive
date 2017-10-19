@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192998: INFO: VBCE: Differences Between Emulation and the Remote Device"
-permalink: kb/192/Q192998/
+permalink: /kb/192/Q192998/
 ---
 
 ## Q192998: INFO: VBCE: Differences Between Emulation and the Remote Device

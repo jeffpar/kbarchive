@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150943: PRB: Disk or Network Error When Trying to Run Database App"
-permalink: kb/150/Q150943/
+permalink: /kb/150/Q150943/
 ---
 
 ## Q150943: PRB: Disk or Network Error When Trying to Run Database App

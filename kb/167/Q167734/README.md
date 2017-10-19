@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167734: FILE: MFC Browser Library (MFC.BSC) in VC 5.0 Is Incomplete"
-permalink: kb/167/Q167734/
+permalink: /kb/167/Q167734/
 ---
 
 ## Q167734: FILE: MFC Browser Library (MFC.BSC) in VC 5.0 Is Incomplete

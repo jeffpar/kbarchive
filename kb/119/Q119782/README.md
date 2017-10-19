@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119782: Problems Accessing or Writing to the SYSTEM.INI File"
-permalink: kb/119/Q119782/
+permalink: /kb/119/Q119782/
 ---
 
 ## Q119782: Problems Accessing or Writing to the SYSTEM.INI File

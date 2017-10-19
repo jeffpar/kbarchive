@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259112: XWEB: Error Message Occurs When You Download Attachments"
-permalink: kb/259/Q259112/
+permalink: /kb/259/Q259112/
 ---
 
 ## Q259112: XWEB: Error Message Occurs When You Download Attachments

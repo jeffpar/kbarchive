@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163238: Team Manager 97 not present on Step by Step CD-ROM"
-permalink: kb/163/Q163238/
+permalink: /kb/163/Q163238/
 ---
 
 ## Q163238: Team Manager 97 not present on Step by Step CD-ROM

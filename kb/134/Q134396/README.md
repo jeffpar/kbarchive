@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134396: MSN Err Msg: Unable to Find &lt;Internet Address&gt;..."
-permalink: kb/134/Q134396/
+permalink: /kb/134/Q134396/
 ---
 
 ## Q134396: MSN Err Msg: Unable to Find &lt;Internet Address&gt;...

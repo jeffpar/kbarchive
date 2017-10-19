@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77071: Correctly Configuring PWB for Windows Development"
-permalink: kb/077/Q77071/
+permalink: /kb/077/Q77071/
 ---
 
 ## Q77071: Correctly Configuring PWB for Windows Development

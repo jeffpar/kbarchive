@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230681: DUN Credentials Cached When Save Password Not Selected with RAS"
-permalink: kb/230/Q230681/
+permalink: /kb/230/Q230681/
 ---
 
 ## Q230681: DUN Credentials Cached When Save Password Not Selected with RAS

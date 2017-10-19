@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159627: TN5250 Clients Cannot Connect to a Specific AS/400"
-permalink: kb/159/Q159627/
+permalink: /kb/159/Q159627/
 ---
 
 ## Q159627: TN5250 Clients Cannot Connect to a Specific AS/400

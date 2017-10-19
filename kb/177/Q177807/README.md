@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177807: XADM: Online Backup of the Store or Directory May Stop"
-permalink: kb/177/Q177807/
+permalink: /kb/177/Q177807/
 ---
 
 ## Q177807: XADM: Online Backup of the Store or Directory May Stop

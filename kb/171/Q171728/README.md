@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171728: PRB: Text Property of Grid Is Reset When Used on SSTab Control"
-permalink: kb/171/Q171728/
+permalink: /kb/171/Q171728/
 ---
 
 ## Q171728: PRB: Text Property of Grid Is Reset When Used on SSTab Control

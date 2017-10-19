@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322028: How To Add A POP3 MSN E-mail Account To Outlook Express"
-permalink: kb/322/Q322028/
+permalink: /kb/322/Q322028/
 ---
 
 ## Q322028: How To Add A POP3 MSN E-mail Account To Outlook Express

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148598: PPT7: Menu Text Jumbled or Out of Place in PowerPoint for Window"
-permalink: kb/148/Q148598/
+permalink: /kb/148/Q148598/
 ---
 
 ## Q148598: PPT7: Menu Text Jumbled or Out of Place in PowerPoint for Window

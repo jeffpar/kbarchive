@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82706: Changing to No Network Doesn't Remove WinPopup from WIN.INI"
-permalink: kb/082/Q82706/
+permalink: /kb/082/Q82706/
 ---
 
 ## Q82706: Changing to No Network Doesn't Remove WinPopup from WIN.INI

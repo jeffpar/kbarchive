@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191304: SMS: INVMAC Fails to Complete Inventory"
-permalink: kb/191/Q191304/
+permalink: /kb/191/Q191304/
 ---
 
 ## Q191304: SMS: INVMAC Fails to Complete Inventory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143140: Using Ipxroute to Determine IPX Address and Computer Name"
-permalink: kb/143/Q143140/
+permalink: /kb/143/Q143140/
 ---
 
 ## Q143140: Using Ipxroute to Determine IPX Address and Computer Name

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247042: SNA Windows NT Client Fails on Windows 2000 Terminal Server"
-permalink: kb/247/Q247042/
+permalink: /kb/247/Q247042/
 ---
 
 ## Q247042: SNA Windows NT Client Fails on Windows 2000 Terminal Server

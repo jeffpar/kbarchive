@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166062: WV: Word Viewer Always Starts as New Instance of Program"
-permalink: kb/166/Q166062/
+permalink: /kb/166/Q166062/
 ---
 
 ## Q166062: WV: Word Viewer Always Starts as New Instance of Program

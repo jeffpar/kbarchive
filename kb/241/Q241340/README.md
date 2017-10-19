@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241340: Branch Office Scenario Selects All SNA Subcomponents"
-permalink: kb/241/Q241340/
+permalink: /kb/241/Q241340/
 ---
 
 ## Q241340: Branch Office Scenario Selects All SNA Subcomponents

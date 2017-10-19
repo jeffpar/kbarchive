@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153420: MSN Does Not Dial Manually Entered Access Number"
-permalink: kb/153/Q153420/
+permalink: /kb/153/Q153420/
 ---
 
 ## Q153420: MSN Does Not Dial Manually Entered Access Number

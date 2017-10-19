@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182339: XFOR: Verifying the Configuration of an Internet Mail Service"
-permalink: kb/182/Q182339/
+permalink: /kb/182/Q182339/
 ---
 
 ## Q182339: XFOR: Verifying the Configuration of an Internet Mail Service

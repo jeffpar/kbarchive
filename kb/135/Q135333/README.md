@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135333: PRB: Decimals Don't Display Properly in Grid"
-permalink: kb/135/Q135333/
+permalink: /kb/135/Q135333/
 ---
 
 ## Q135333: PRB: Decimals Don't Display Properly in Grid

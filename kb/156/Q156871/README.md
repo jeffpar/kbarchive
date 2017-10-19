@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156871: DOCERR: Visual FoxPro 5.0 AFIELDS() Remark Help Topic Outdated"
-permalink: kb/156/Q156871/
+permalink: /kb/156/Q156871/
 ---
 
 ## Q156871: DOCERR: Visual FoxPro 5.0 AFIELDS() Remark Help Topic Outdated

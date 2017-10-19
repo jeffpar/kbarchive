@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116305: BUG: LINK Creates Zero-Size File if Insufficient Disk Space"
-permalink: kb/116/Q116305/
+permalink: /kb/116/Q116305/
 ---
 
 ## Q116305: BUG: LINK Creates Zero-Size File if Insufficient Disk Space

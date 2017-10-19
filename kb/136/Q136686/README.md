@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136686: Fury3 Mission Complete Text Not Displayed After Some Missions"
-permalink: kb/136/Q136686/
+permalink: /kb/136/Q136686/
 ---
 
 ## Q136686: Fury3 Mission Complete Text Not Displayed After Some Missions

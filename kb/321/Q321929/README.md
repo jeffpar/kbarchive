@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321929: Version Information in COMTI Manager Application Is Incorrect"
-permalink: kb/321/Q321929/
+permalink: /kb/321/Q321929/
 ---
 
 ## Q321929: Version Information in COMTI Manager Application Is Incorrect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140986: How to Submit a Print Driver Request for Windows NT"
-permalink: kb/140/Q140986/
+permalink: /kb/140/Q140986/
 ---
 
 ## Q140986: How to Submit a Print Driver Request for Windows NT

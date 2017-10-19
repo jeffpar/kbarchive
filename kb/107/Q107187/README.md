@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107187: Data Download from CompuServe Stops with OzCIS"
-permalink: kb/107/Q107187/
+permalink: /kb/107/Q107187/
 ---
 
 ## Q107187: Data Download from CompuServe Stops with OzCIS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139062: DOCERR: Note in REPLACE Command Documentation Is Misleading"
-permalink: kb/139/Q139062/
+permalink: /kb/139/Q139062/
 ---
 
 ## Q139062: DOCERR: Note in REPLACE Command Documentation Is Misleading

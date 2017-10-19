@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252302: IIS Stops Responding at W3SVC!CGIThread"
-permalink: kb/252/Q252302/
+permalink: /kb/252/Q252302/
 ---
 
 ## Q252302: IIS Stops Responding at W3SVC!CGIThread

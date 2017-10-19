@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316917: Microsoft Windows XP Professional Resource Kit Documentation Com"
-permalink: kb/316/Q316917/
+permalink: /kb/316/Q316917/
 ---
 
 ## Q316917: Microsoft Windows XP Professional Resource Kit Documentation Com

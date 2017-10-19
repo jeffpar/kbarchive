@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260012: StarLancer: Cannot Change the Default Video Settings in the Game"
-permalink: kb/260/Q260012/
+permalink: /kb/260/Q260012/
 ---
 
 ## Q260012: StarLancer: Cannot Change the Default Video Settings in the Game

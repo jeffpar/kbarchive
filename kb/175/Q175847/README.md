@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175847: How to Set Up Data Logging on a Remote Computer"
-permalink: kb/175/Q175847/
+permalink: /kb/175/Q175847/
 ---
 
 ## Q175847: How to Set Up Data Logging on a Remote Computer

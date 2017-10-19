@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101626: Windows NT Removable Media Requirements and Limitations"
-permalink: kb/101/Q101626/
+permalink: /kb/101/Q101626/
 ---
 
 ## Q101626: Windows NT Removable Media Requirements and Limitations

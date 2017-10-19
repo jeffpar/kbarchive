@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97331: Launching One Application for Windows from Another"
-permalink: kb/097/Q97331/
+permalink: /kb/097/Q97331/
 ---
 
 ## Q97331: Launching One Application for Windows from Another

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81404: Fujitsu Color Printer Drivers Available from Fujitsu"
-permalink: kb/081/Q81404/
+permalink: /kb/081/Q81404/
 ---
 
 ## Q81404: Fujitsu Color Printer Drivers Available from Fujitsu

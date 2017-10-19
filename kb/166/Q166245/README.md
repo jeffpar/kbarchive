@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166245: SMS: Package Command Line with Spaces Requires Quotes"
-permalink: kb/166/Q166245/
+permalink: /kb/166/Q166245/
 ---
 
 ## Q166245: SMS: Package Command Line with Spaces Requires Quotes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176093: Gridtest.exe Sample Grid Does Not Refresh Properly"
-permalink: kb/176/Q176093/
+permalink: /kb/176/Q176093/
 ---
 
 ## Q176093: Gridtest.exe Sample Grid Does Not Refresh Properly

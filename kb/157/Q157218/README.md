@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157218: Possible Data Corruption w/ SNA Windows 95 Client Using TCP/IP"
-permalink: kb/157/Q157218/
+permalink: /kb/157/Q157218/
 ---
 
 ## Q157218: Possible Data Corruption w/ SNA Windows 95 Client Using TCP/IP

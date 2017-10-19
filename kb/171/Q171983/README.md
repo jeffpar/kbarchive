@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171983: PRB: SelectOnEntry Property Does Not Highlight Single Character"
-permalink: kb/171/Q171983/
+permalink: /kb/171/Q171983/
 ---
 
 ## Q171983: PRB: SelectOnEntry Property Does Not Highlight Single Character

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181547: SMS: Office 97 PDF Inventory Properties Are Incorrect"
-permalink: kb/181/Q181547/
+permalink: /kb/181/Q181547/
 ---
 
 ## Q181547: SMS: Office 97 PDF Inventory Properties Are Incorrect

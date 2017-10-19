@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85206: Garbage Output on Epson FX-86e When in IBM Emulation Mode"
-permalink: kb/085/Q85206/
+permalink: /kb/085/Q85206/
 ---
 
 ## Q85206: Garbage Output on Epson FX-86e When in IBM Emulation Mode

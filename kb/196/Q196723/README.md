@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196723: WD97: SUM Formula Does Not Update Correctly"
-permalink: kb/196/Q196723/
+permalink: /kb/196/Q196723/
 ---
 
 ## Q196723: WD97: SUM Formula Does Not Update Correctly

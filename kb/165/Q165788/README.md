@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165788: Cannot Confirm Encryption on Windows Clients"
-permalink: kb/165/Q165788/
+permalink: /kb/165/Q165788/
 ---
 
 ## Q165788: Cannot Confirm Encryption on Windows Clients

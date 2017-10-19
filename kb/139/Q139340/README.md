@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139340: How to Enable Debug Message Output During Setup"
-permalink: kb/139/Q139340/
+permalink: /kb/139/Q139340/
 ---
 
 ## Q139340: How to Enable Debug Message Output During Setup

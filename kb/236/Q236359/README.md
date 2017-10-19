@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236359: Denial of Service Attack Using Unprotected IOCTL Function Call"
-permalink: kb/236/Q236359/
+permalink: /kb/236/Q236359/
 ---
 
 ## Q236359: Denial of Service Attack Using Unprotected IOCTL Function Call

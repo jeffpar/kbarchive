@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130453: Cannot See Details Processing NetWare Login Script"
-permalink: kb/130/Q130453/
+permalink: /kb/130/Q130453/
 ---
 
 ## Q130453: Cannot See Details Processing NetWare Login Script

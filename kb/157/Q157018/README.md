@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157018: XCLN: Using OLE Messaging to View Non-Replicated PF Fails"
-permalink: kb/157/Q157018/
+permalink: /kb/157/Q157018/
 ---
 
 ## Q157018: XCLN: Using OLE Messaging to View Non-Replicated PF Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93650: WD97: Menus, Toolbars Disappear When in Full Screen View"
-permalink: kb/093/Q93650/
+permalink: /kb/093/Q93650/
 ---
 
 ## Q93650: WD97: Menus, Toolbars Disappear When in Full Screen View

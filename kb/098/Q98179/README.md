@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98179: Err Msg: You Started MemMaker with the /SESSION Switch..."
-permalink: kb/098/Q98179/
+permalink: /kb/098/Q98179/
 ---
 
 ## Q98179: Err Msg: You Started MemMaker with the /SESSION Switch...

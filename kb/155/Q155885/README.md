@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155885: XCLN: Update Not Updating Files in Directories w/Long File Names"
-permalink: kb/155/Q155885/
+permalink: /kb/155/Q155885/
 ---
 
 ## Q155885: XCLN: Update Not Updating Files in Directories w/Long File Names

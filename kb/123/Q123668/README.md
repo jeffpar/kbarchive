@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123668: PRB: LNK4022 &amp; LNK4006 Warnings When Build PowerStation 32 DLL"
-permalink: kb/123/Q123668/
+permalink: /kb/123/Q123668/
 ---
 
 ## Q123668: PRB: LNK4022 &amp; LNK4006 Warnings When Build PowerStation 32 DLL

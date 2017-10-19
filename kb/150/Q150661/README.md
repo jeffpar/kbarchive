@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150661: Mac Bookshelf 96-97: Bookshelf Guide Disabled with System 7.0"
-permalink: kb/150/Q150661/
+permalink: /kb/150/Q150661/
 ---
 
 ## Q150661: Mac Bookshelf 96-97: Bookshelf Guide Disabled with System 7.0

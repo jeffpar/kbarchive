@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246021: HOWTO: Close an Instance of Word from Visual FoxPro Using APIs"
-permalink: kb/246/Q246021/
+permalink: /kb/246/Q246021/
 ---
 
 ## Q246021: HOWTO: Close an Instance of Word from Visual FoxPro Using APIs

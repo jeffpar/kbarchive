@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179185: WD97: Text Disappears Behind Floating Object"
-permalink: kb/179/Q179185/
+permalink: /kb/179/Q179185/
 ---
 
 ## Q179185: WD97: Text Disappears Behind Floating Object

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194669: HOWTO: Retrieve Extended Stored Procedures from SQL Server"
-permalink: kb/194/Q194669/
+permalink: /kb/194/Q194669/
 ---
 
 ## Q194669: HOWTO: Retrieve Extended Stored Procedures from SQL Server

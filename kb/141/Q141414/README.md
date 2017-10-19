@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141414: HOWTO: Enumerate OLE and VB Controls from an OLE Control"
-permalink: kb/141/Q141414/
+permalink: /kb/141/Q141414/
 ---
 
 ## Q141414: HOWTO: Enumerate OLE and VB Controls from an OLE Control

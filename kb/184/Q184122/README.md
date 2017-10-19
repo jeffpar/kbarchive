@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184122: Remote APPC LU Aliases Do Not Appear in 5250 Applet"
-permalink: kb/184/Q184122/
+permalink: /kb/184/Q184122/
 ---
 
 ## Q184122: Remote APPC LU Aliases Do Not Appear in 5250 Applet

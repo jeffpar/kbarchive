@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99005: Microsoft Systems Journal: July 1993"
-permalink: kb/099/Q99005/
+permalink: /kb/099/Q99005/
 ---
 
 ## Q99005: Microsoft Systems Journal: July 1993

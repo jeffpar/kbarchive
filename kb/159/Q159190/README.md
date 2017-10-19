@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159190: XCON: Spaces in Attachment File Names Are Replaced with Tildes"
-permalink: kb/159/Q159190/
+permalink: /kb/159/Q159190/
 ---
 
 ## Q159190: XCON: Spaces in Attachment File Names Are Replaced with Tildes

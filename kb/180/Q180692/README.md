@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180692: Start Button Not Disabled Using Snap-in Interface"
-permalink: kb/180/Q180692/
+permalink: /kb/180/Q180692/
 ---
 
 ## Q180692: Start Button Not Disabled Using Snap-in Interface

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169184: XCLN: Offline Address Book Fails to Download, No Err Msg"
-permalink: kb/169/Q169184/
+permalink: /kb/169/Q169184/
 ---
 
 ## Q169184: XCLN: Offline Address Book Fails to Download, No Err Msg

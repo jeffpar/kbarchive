@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247095: XCLN: Outlook 98 Batch Mode Setup Switches for ODK"
-permalink: kb/247/Q247095/
+permalink: /kb/247/Q247095/
 ---
 
 ## Q247095: XCLN: Outlook 98 Batch Mode Setup Switches for ODK

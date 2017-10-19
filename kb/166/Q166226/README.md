@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166226: Backup of Local Registry Does Not Work With NTBACKUP.EXE /b"
-permalink: kb/166/Q166226/
+permalink: /kb/166/Q166226/
 ---
 
 ## Q166226: Backup of Local Registry Does Not Work With NTBACKUP.EXE /b

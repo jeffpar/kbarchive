@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102641: INFO: EM_SETSEL wParam Not Used in Single Line Edit Controls"
-permalink: kb/102/Q102641/
+permalink: /kb/102/Q102641/
 ---
 
 ## Q102641: INFO: EM_SETSEL wParam Not Used in Single Line Edit Controls

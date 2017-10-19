@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163261: DEC ALPHA WinNT 4.0 Servers w/ SP2 Fail to Lease DHCP Addresses"
-permalink: kb/163/Q163261/
+permalink: /kb/163/Q163261/
 ---
 
 ## Q163261: DEC ALPHA WinNT 4.0 Servers w/ SP2 Fail to Lease DHCP Addresses

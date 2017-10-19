@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147051: XFOR: IMC Queue Only Displays the First 10,000 Items"
-permalink: kb/147/Q147051/
+permalink: /kb/147/Q147051/
 ---
 
 ## Q147051: XFOR: IMC Queue Only Displays the First 10,000 Items

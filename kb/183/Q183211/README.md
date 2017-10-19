@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183211: FIX: Assert in AtlCtl.cpp, Line 121"
-permalink: kb/183/Q183211/
+permalink: /kb/183/Q183211/
 ---
 
 ## Q183211: FIX: Assert in AtlCtl.cpp, Line 121

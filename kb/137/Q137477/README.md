@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137477: Fury3: Floating Gunship in Terran World Shows as Ground Target"
-permalink: kb/137/Q137477/
+permalink: /kb/137/Q137477/
 ---
 
 ## Q137477: Fury3: Floating Gunship in Terran World Shows as Ground Target

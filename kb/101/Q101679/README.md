@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101679: X400: Err Msg: EiconCard X.25 Error Messages"
-permalink: kb/101/Q101679/
+permalink: /kb/101/Q101679/
 ---
 
 ## Q101679: X400: Err Msg: EiconCard X.25 Error Messages

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131895: SourceSafe Knowledge Base As Help File (June 1995)"
-permalink: kb/131/Q131895/
+permalink: /kb/131/Q131895/
 ---
 
 ## Q131895: SourceSafe Knowledge Base As Help File (June 1995)

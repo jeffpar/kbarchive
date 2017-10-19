@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155999: Deadly Tide: An Overview of Playing the Game"
-permalink: kb/155/Q155999/
+permalink: /kb/155/Q155999/
 ---
 
 ## Q155999: Deadly Tide: An Overview of Playing the Game

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216628: WD97: Error Message: &quot;Word Cannot Open the Document&quot;"
-permalink: kb/216/Q216628/
+permalink: /kb/216/Q216628/
 ---
 
 ## Q216628: WD97: Error Message: &quot;Word Cannot Open the Document&quot;

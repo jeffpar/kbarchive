@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151558: FP: FrontPage Files Remain After Add/Remove or Uninstall"
-permalink: kb/151/Q151558/
+permalink: /kb/151/Q151558/
 ---
 
 ## Q151558: FP: FrontPage Files Remain After Add/Remove or Uninstall

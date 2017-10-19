@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147577: PC Mac: Inserts Carriage Return Before Last Word of Paragraph"
-permalink: kb/147/Q147577/
+permalink: /kb/147/Q147577/
 ---
 
 ## Q147577: PC Mac: Inserts Carriage Return Before Last Word of Paragraph

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193534: Medium Protocol Level Logs Same Data as Maximum"
-permalink: kb/193/Q193534/
+permalink: /kb/193/Q193534/
 ---
 
 ## Q193534: Medium Protocol Level Logs Same Data as Maximum

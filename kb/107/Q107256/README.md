@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107256: Defragmenting Stacker-Compressed Drive Before Deleting Files"
-permalink: kb/107/Q107256/
+permalink: /kb/107/Q107256/
 ---
 
 ## Q107256: Defragmenting Stacker-Compressed Drive Before Deleting Files

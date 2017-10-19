@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177309: XADM: Setup Cannot Initialize the Key Management Database"
-permalink: kb/177/Q177309/
+permalink: /kb/177/Q177309/
 ---
 
 ## Q177309: XADM: Setup Cannot Initialize the Key Management Database

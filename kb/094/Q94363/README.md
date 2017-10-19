@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94363: SMC_ARC.DOS May Result in a POR Failure or Adapter Not Found"
-permalink: kb/094/Q94363/
+permalink: /kb/094/Q94363/
 ---
 
 ## Q94363: SMC_ARC.DOS May Result in a POR Failure or Adapter Not Found

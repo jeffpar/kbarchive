@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230563: XADM: Information Store Crash in FreePadrlist:padrlist"
-permalink: kb/230/Q230563/
+permalink: /kb/230/Q230563/
 ---
 
 ## Q230563: XADM: Information Store Crash in FreePadrlist:padrlist

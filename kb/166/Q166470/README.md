@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166470: PRB: LINK Fatal Error LNK1104 Cannot Open File"
-permalink: kb/166/Q166470/
+permalink: /kb/166/Q166470/
 ---
 
 ## Q166470: PRB: LINK Fatal Error LNK1104 Cannot Open File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85595: Toshiba PageLaser 12 May Require Updated Version of ROM"
-permalink: kb/085/Q85595/
+permalink: /kb/085/Q85595/
 ---
 
 ## Q85595: Toshiba PageLaser 12 May Require Updated Version of ROM

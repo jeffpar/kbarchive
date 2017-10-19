@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166157: ERD Err: &quot;The following value in the setup information file&quot;"
-permalink: kb/166/Q166157/
+permalink: /kb/166/Q166157/
 ---
 
 ## Q166157: ERD Err: &quot;The following value in the setup information file&quot;

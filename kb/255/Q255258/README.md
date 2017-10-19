@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255258: Client Hangs During &quot;Remote Reboot&quot; with Auto Protection Enabled"
-permalink: kb/255/Q255258/
+permalink: /kb/255/Q255258/
 ---
 
 ## Q255258: Client Hangs During &quot;Remote Reboot&quot; with Auto Protection Enabled

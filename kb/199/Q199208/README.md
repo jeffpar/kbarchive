@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199208: Program Will Not Run from FPNW Volume"
-permalink: kb/199/Q199208/
+permalink: /kb/199/Q199208/
 ---
 
 ## Q199208: Program Will Not Run from FPNW Volume

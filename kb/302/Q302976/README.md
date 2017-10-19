@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302976: MSN Explorer 6.0 May Shut Down When Stock Tickers Of Nine Charac"
-permalink: kb/302/Q302976/
+permalink: /kb/302/Q302976/
 ---
 
 ## Q302976: MSN Explorer 6.0 May Shut Down When Stock Tickers Of Nine Charac

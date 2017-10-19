@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66858: IdleWild Drop Out Screen Saver and Radius Two-Page Display"
-permalink: kb/066/Q66858/
+permalink: /kb/066/Q66858/
 ---
 
 ## Q66858: IdleWild Drop Out Screen Saver and Radius Two-Page Display

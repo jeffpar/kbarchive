@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138981: HOWTO: Create a Calculated Column in a Grid"
-permalink: kb/138/Q138981/
+permalink: /kb/138/Q138981/
 ---
 
 ## Q138981: HOWTO: Create a Calculated Column in a Grid

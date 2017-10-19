@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q31014: Screen Setup for Kaypro 16-2 Portable"
-permalink: kb/031/Q31014/
+permalink: /kb/031/Q31014/
 ---
 
 ## Q31014: Screen Setup for Kaypro 16-2 Portable

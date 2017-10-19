@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197290: Euro Currency Not Available in Windows NT 3.51 Character Sets"
-permalink: kb/197/Q197290/
+permalink: /kb/197/Q197290/
 ---
 
 ## Q197290: Euro Currency Not Available in Windows NT 3.51 Character Sets

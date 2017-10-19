@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99337: PRB: Using ToAscii() in Journal Record Hooks"
-permalink: kb/099/Q99337/
+permalink: /kb/099/Q99337/
 ---
 
 ## Q99337: PRB: Using ToAscii() in Journal Record Hooks

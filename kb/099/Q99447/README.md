@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99447: Password Protection Option Is Not Saved in MWBACKUP SET File"
-permalink: kb/099/Q99447/
+permalink: /kb/099/Q99447/
 ---
 
 ## Q99447: Password Protection Option Is Not Saved in MWBACKUP SET File

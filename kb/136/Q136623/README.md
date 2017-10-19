@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136623: Windows NT Runs Out of Memory Accessing Many OLE Servers"
-permalink: kb/136/Q136623/
+permalink: /kb/136/Q136623/
 ---
 
 ## Q136623: Windows NT Runs Out of Memory Accessing Many OLE Servers

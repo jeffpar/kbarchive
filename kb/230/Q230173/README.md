@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230173: Windows 98/95 Year 2000 Update May Not Update Vdhcp.386 File"
-permalink: kb/230/Q230173/
+permalink: /kb/230/Q230173/
 ---
 
 ## Q230173: Windows 98/95 Year 2000 Update May Not Update Vdhcp.386 File

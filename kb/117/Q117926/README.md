@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117926: MAC Cinemania: Two Unnecessary Items Left After Reinstallation"
-permalink: kb/117/Q117926/
+permalink: /kb/117/Q117926/
 ---
 
 ## Q117926: MAC Cinemania: Two Unnecessary Items Left After Reinstallation

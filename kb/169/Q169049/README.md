@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169049: Unable to Restore Persistent Connection During Logon"
-permalink: kb/169/Q169049/
+permalink: /kb/169/Q169049/
 ---
 
 ## Q169049: Unable to Restore Persistent Connection During Logon

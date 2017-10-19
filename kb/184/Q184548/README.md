@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184548: SNA 3.0 SP3 Update Incorrectly Detects Previous Service Pack"
-permalink: kb/184/Q184548/
+permalink: /kb/184/Q184548/
 ---
 
 ## Q184548: SNA 3.0 SP3 Update Incorrectly Detects Previous Service Pack

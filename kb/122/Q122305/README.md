@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q122305: PRB: Errors Generated Overloading Operator New []"
-permalink: kb/122/Q122305/
+title: "Q122305: PRB: Errors Generated Overloading Operator New &#91;&#93;"
+permalink: /kb/122/Q122305/
 ---
 
-## Q122305: PRB: Errors Generated Overloading Operator New []
+## Q122305: PRB: Errors Generated Overloading Operator New &#91;&#93;
 
 	Article: Q122305
 	Product(s): Microsoft C Compiler

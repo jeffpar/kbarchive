@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72023: SAMPLE: Verify.exe - Data Input Verification for Edit Controls"
-permalink: kb/072/Q72023/
+permalink: /kb/072/Q72023/
 ---
 
 ## Q72023: SAMPLE: Verify.exe - Data Input Verification for Edit Controls

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143142: NetWare Clients Cannot Connect to FPNW Server"
-permalink: kb/143/Q143142/
+permalink: /kb/143/Q143142/
 ---
 
 ## Q143142: NetWare Clients Cannot Connect to FPNW Server

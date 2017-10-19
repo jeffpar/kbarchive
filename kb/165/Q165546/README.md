@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165546: Host Security Reports Event 54 but Does Not Include Description"
-permalink: kb/165/Q165546/
+permalink: /kb/165/Q165546/
 ---
 
 ## Q165546: Host Security Reports Event 54 but Does Not Include Description

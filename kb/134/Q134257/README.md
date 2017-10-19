@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134257: PRB: Pressing DOWN ARROW in Property List Causes Win32s Error"
-permalink: kb/134/Q134257/
+permalink: /kb/134/Q134257/
 ---
 
 ## Q134257: PRB: Pressing DOWN ARROW in Property List Causes Win32s Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140383: LPR Printer Port Requires TCP/IP Address and Printer Name"
-permalink: kb/140/Q140383/
+permalink: /kb/140/Q140383/
 ---
 
 ## Q140383: LPR Printer Port Requires TCP/IP Address and Printer Name

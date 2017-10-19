@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120817: How to Delete and Re-create a WFWG Post Office"
-permalink: kb/120/Q120817/
+permalink: /kb/120/Q120817/
 ---
 
 ## Q120817: How to Delete and Re-create a WFWG Post Office

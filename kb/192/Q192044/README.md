@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192044: XADM: Setting Up X509v3 Certs on Exch 5.5 SP1 KMS Local Cert Srv"
-permalink: kb/192/Q192044/
+permalink: /kb/192/Q192044/
 ---
 
 ## Q192044: XADM: Setting Up X509v3 Certs on Exch 5.5 SP1 KMS Local Cert Srv

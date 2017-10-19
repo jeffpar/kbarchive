@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101414: BUG: OpenFile() Fails When UNC Name Longer Than 11 Characters"
-permalink: kb/101/Q101414/
+permalink: /kb/101/Q101414/
 ---
 
 ## Q101414: BUG: OpenFile() Fails When UNC Name Longer Than 11 Characters

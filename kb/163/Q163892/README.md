@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163892: A Service May Not Set Hooks on 32-bit GUI Applications"
-permalink: kb/163/Q163892/
+permalink: /kb/163/Q163892/
 ---
 
 ## Q163892: A Service May Not Set Hooks on 32-bit GUI Applications

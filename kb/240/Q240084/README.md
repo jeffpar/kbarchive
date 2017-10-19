@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240084: Asheron's Call: Minimum System Requirements"
-permalink: kb/240/Q240084/
+permalink: /kb/240/Q240084/
 ---
 
 ## Q240084: Asheron's Call: Minimum System Requirements

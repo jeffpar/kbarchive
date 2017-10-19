@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68574: Performance Differences Between LineTo() and Polyline()"
-permalink: kb/068/Q68574/
+permalink: /kb/068/Q68574/
 ---
 
 ## Q68574: Performance Differences Between LineTo() and Polyline()

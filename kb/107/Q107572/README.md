@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107572: WFWG 3.11 Err Msg: Error 2138: The Workstation Service..."
-permalink: kb/107/Q107572/
+permalink: /kb/107/Q107572/
 ---
 
 ## Q107572: WFWG 3.11 Err Msg: Error 2138: The Workstation Service...

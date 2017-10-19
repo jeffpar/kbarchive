@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193270: INFO: Troubleshooting VB Application Installation Issues"
-permalink: kb/193/Q193270/
+permalink: /kb/193/Q193270/
 ---
 
 ## Q193270: INFO: Troubleshooting VB Application Installation Issues

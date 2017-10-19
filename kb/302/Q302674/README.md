@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302674: Advertisement Does Not Run with Unavailable Distribution Point"
-permalink: kb/302/Q302674/
+permalink: /kb/302/Q302674/
 ---
 
 ## Q302674: Advertisement Does Not Run with Unavailable Distribution Point

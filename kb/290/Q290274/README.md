@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290274: SMS: Window Drag Operation Slow After You Enable Acceleration"
-permalink: kb/290/Q290274/
+permalink: /kb/290/Q290274/
 ---
 
 ## Q290274: SMS: Window Drag Operation Slow After You Enable Acceleration

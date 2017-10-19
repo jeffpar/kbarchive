@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185215: HOWTO: Use the SeDebugPrivilege to Acquire Any Process Handle"
-permalink: kb/185/Q185215/
+permalink: /kb/185/Q185215/
 ---
 
 ## Q185215: HOWTO: Use the SeDebugPrivilege to Acquire Any Process Handle

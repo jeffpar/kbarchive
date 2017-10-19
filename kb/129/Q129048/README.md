@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129048: Network Unable to Start with Compaq Netflex32 NIC"
-permalink: kb/129/Q129048/
+permalink: /kb/129/Q129048/
 ---
 
 ## Q129048: Network Unable to Start with Compaq Netflex32 NIC

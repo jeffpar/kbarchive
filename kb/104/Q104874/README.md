@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104874: Multimedia: Stack Fault Error When Playing AVI Clip on Tandy"
-permalink: kb/104/Q104874/
+permalink: /kb/104/Q104874/
 ---
 
 ## Q104874: Multimedia: Stack Fault Error When Playing AVI Clip on Tandy

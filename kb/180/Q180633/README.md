@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180633: BUG: ScrollBar Slider Does Not Stop at the Cursor"
-permalink: kb/180/Q180633/
+permalink: /kb/180/Q180633/
 ---
 
 ## Q180633: BUG: ScrollBar Slider Does Not Stop at the Cursor

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128075: PRB: Grid Does Not Respond to the Click or Dblclick Events"
-permalink: kb/128/Q128075/
+permalink: /kb/128/Q128075/
 ---
 
 ## Q128075: PRB: Grid Does Not Respond to the Click or Dblclick Events

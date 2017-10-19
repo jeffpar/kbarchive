@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146321: XADM: Administrating Exchange Servers in Multiple Domains"
-permalink: kb/146/Q146321/
+permalink: /kb/146/Q146321/
 ---
 
 ## Q146321: XADM: Administrating Exchange Servers in Multiple Domains

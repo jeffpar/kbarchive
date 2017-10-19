@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157982: INFO: Understanding Promotions"
-permalink: kb/157/Q157982/
+permalink: /kb/157/Q157982/
 ---
 
 ## Q157982: INFO: Understanding Promotions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126110: FIX: What's New: Bug Fixes Made in Visual C++ Version 2.1"
-permalink: kb/126/Q126110/
+permalink: /kb/126/Q126110/
 ---
 
 ## Q126110: FIX: What's New: Bug Fixes Made in Visual C++ Version 2.1

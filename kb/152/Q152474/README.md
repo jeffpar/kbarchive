@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152474: Window Socket Application Failure with Connection Reset Event"
-permalink: kb/152/Q152474/
+permalink: /kb/152/Q152474/
 ---
 
 ## Q152474: Window Socket Application Failure with Connection Reset Event

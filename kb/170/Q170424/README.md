@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170424: Enhancements to DLSSTAT for 802.2 Distributed Links"
-permalink: kb/170/Q170424/
+permalink: /kb/170/Q170424/
 ---
 
 ## Q170424: Enhancements to DLSSTAT for 802.2 Distributed Links

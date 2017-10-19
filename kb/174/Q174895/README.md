@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174895: XCON: Messages Are Lost When MTA Size Limit Is Exceeded"
-permalink: kb/174/Q174895/
+permalink: /kb/174/Q174895/
 ---
 
 ## Q174895: XCON: Messages Are Lost When MTA Size Limit Is Exceeded

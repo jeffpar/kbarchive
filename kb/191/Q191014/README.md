@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191014: XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack"
-permalink: kb/191/Q191014/
+permalink: /kb/191/Q191014/
 ---
 
 ## Q191014: XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack

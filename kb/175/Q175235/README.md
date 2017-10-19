@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175235: XFOR: Greek Outlook Client Cannot Send Message to MS Mail User"
-permalink: kb/175/Q175235/
+permalink: /kb/175/Q175235/
 ---
 
 ## Q175235: XFOR: Greek Outlook Client Cannot Send Message to MS Mail User

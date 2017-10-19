@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165187: WD97: No Dialog With WordBasic.Dialog.ToolsOptionsGrammar"
-permalink: kb/165/Q165187/
+permalink: /kb/165/Q165187/
 ---
 
 ## Q165187: WD97: No Dialog With WordBasic.Dialog.ToolsOptionsGrammar

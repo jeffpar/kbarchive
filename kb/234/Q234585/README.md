@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234585: XFOR: GW Connector Fails to Deliver Mail Multiple Attachments"
-permalink: kb/234/Q234585/
+permalink: /kb/234/Q234585/
 ---
 
 ## Q234585: XFOR: GW Connector Fails to Deliver Mail Multiple Attachments

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77620: WD97: Cannot Insert Nested Formula with Insert Field Command"
-permalink: kb/077/Q77620/
+permalink: /kb/077/Q77620/
 ---
 
 ## Q77620: WD97: Cannot Insert Nested Formula with Insert Field Command

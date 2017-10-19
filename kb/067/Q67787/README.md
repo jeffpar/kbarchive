@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67787: FIX: STRUC Defined Structures Cannot Be Nested"
-permalink: kb/067/Q67787/
+permalink: /kb/067/Q67787/
 ---
 
 ## Q67787: FIX: STRUC Defined Structures Cannot Be Nested

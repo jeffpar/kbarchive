@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165711: Repair Disk Utility Cannot Save All Configuration Files"
-permalink: kb/165/Q165711/
+permalink: /kb/165/Q165711/
 ---
 
 ## Q165711: Repair Disk Utility Cannot Save All Configuration Files

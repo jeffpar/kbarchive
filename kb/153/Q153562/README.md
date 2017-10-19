@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153562: SMS: Close Button Fails in Windows NT Diagnostics"
-permalink: kb/153/Q153562/
+permalink: /kb/153/Q153562/
 ---
 
 ## Q153562: SMS: Close Button Fails in Windows NT Diagnostics

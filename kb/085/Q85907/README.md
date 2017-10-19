@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85907: PC Win: Reply Does Not Copy Attachments"
-permalink: kb/085/Q85907/
+permalink: /kb/085/Q85907/
 ---
 
 ## Q85907: PC Win: Reply Does Not Copy Attachments

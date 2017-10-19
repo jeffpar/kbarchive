@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115546: Multimedia Golf Cannot Find Any Courses"
-permalink: kb/115/Q115546/
+permalink: /kb/115/Q115546/
 ---
 
 ## Q115546: Multimedia Golf Cannot Find Any Courses

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132612: Arcada Backup Hangs in MS-DOS Mode"
-permalink: kb/132/Q132612/
+permalink: /kb/132/Q132612/
 ---
 
 ## Q132612: Arcada Backup Hangs in MS-DOS Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172705: Explorer Access Violates When Viewing a File's Properties"
-permalink: kb/172/Q172705/
+permalink: /kb/172/Q172705/
 ---
 
 ## Q172705: Explorer Access Violates When Viewing a File's Properties

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135604: DIR /O:N /S Does Not Sort Directory Names in Alphanumeric Order"
-permalink: kb/135/Q135604/
+permalink: /kb/135/Q135604/
 ---
 
 ## Q135604: DIR /O:N /S Does Not Sort Directory Names in Alphanumeric Order

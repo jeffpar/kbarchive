@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138827: ALT+F4 Hangs Paint When in View Bitmap Mode"
-permalink: kb/138/Q138827/
+permalink: /kb/138/Q138827/
 ---
 
 ## Q138827: ALT+F4 Hangs Paint When in View Bitmap Mode

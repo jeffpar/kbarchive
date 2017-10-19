@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279631: How to Use the SPCheck Tool to Determine the Service Pack Level"
-permalink: kb/279/Q279631/
+permalink: /kb/279/Q279631/
 ---
 
 ## Q279631: How to Use the SPCheck Tool to Determine the Service Pack Level

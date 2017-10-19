@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145781: XCLN: MacBinary FreeDoc W/O Extension Uses Generic Icon"
-permalink: kb/145/Q145781/
+permalink: /kb/145/Q145781/
 ---
 
 ## Q145781: XCLN: MacBinary FreeDoc W/O Extension Uses Generic Icon

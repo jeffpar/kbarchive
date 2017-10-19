@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132666: Logitech MouseWare 6.5 and Norton Desktop"
-permalink: kb/132/Q132666/
+permalink: /kb/132/Q132666/
 ---
 
 ## Q132666: Logitech MouseWare 6.5 and Norton Desktop

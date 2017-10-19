@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132921: INFO: Branching or Separating SourceSafe Files and Projects"
-permalink: kb/132/Q132921/
+permalink: /kb/132/Q132921/
 ---
 
 ## Q132921: INFO: Branching or Separating SourceSafe Files and Projects

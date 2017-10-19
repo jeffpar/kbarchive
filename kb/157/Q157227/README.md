@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157227: WD97: Page Border Not Visible Inserted in Normal, Outline Views"
-permalink: kb/157/Q157227/
+permalink: /kb/157/Q157227/
 ---
 
 ## Q157227: WD97: Page Border Not Visible Inserted in Normal, Outline Views

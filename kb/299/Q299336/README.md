@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299336: FIX: Fatal Exception Error with Macros Dialog Box"
-permalink: kb/299/Q299336/
+permalink: /kb/299/Q299336/
 ---
 
 ## Q299336: FIX: Fatal Exception Error with Macros Dialog Box

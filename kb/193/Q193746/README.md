@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193746: SMS: Resync File Cleaner - Dumpsync.exe"
-permalink: kb/193/Q193746/
+permalink: /kb/193/Q193746/
 ---
 
 ## Q193746: SMS: Resync File Cleaner - Dumpsync.exe

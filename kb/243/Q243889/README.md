@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243889: XFOR: Requirements for Exchange Application Converter for Notes"
-permalink: kb/243/Q243889/
+permalink: /kb/243/Q243889/
 ---
 
 ## Q243889: XFOR: Requirements for Exchange Application Converter for Notes

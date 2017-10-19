@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87272: Always On Top Applications May Hang Windows 3.1 Tutorial"
-permalink: kb/087/Q87272/
+permalink: /kb/087/Q87272/
 ---
 
 ## Q87272: Always On Top Applications May Hang Windows 3.1 Tutorial

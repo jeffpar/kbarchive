@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216843: Clients Receive &quot;Error 1000 No Licenses Are Available&quot;"
-permalink: kb/216/Q216843/
+permalink: /kb/216/Q216843/
 ---
 
 ## Q216843: Clients Receive &quot;Error 1000 No Licenses Are Available&quot;

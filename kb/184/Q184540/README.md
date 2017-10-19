@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184540: &quot;File Not Found&quot; Error Displayed in Product Documentation"
-permalink: kb/184/Q184540/
+permalink: /kb/184/Q184540/
 ---
 
 ## Q184540: &quot;File Not Found&quot; Error Displayed in Product Documentation

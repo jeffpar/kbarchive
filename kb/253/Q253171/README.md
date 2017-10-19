@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253171: HOWTO: Create a Most Recently Used (MRU) File List in VB"
-permalink: kb/253/Q253171/
+permalink: /kb/253/Q253171/
 ---
 
 ## Q253171: HOWTO: Create a Most Recently Used (MRU) File List in VB

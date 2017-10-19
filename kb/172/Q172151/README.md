@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172151: SAM Failed to Start the TCP/IP or SPX/IPX Listening Thread"
-permalink: kb/172/Q172151/
+permalink: /kb/172/Q172151/
 ---
 
 ## Q172151: SAM Failed to Start the TCP/IP or SPX/IPX Listening Thread

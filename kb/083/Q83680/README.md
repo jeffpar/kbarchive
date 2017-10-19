@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83680: Assigning a Shortcut Key to Program Manager"
-permalink: kb/083/Q83680/
+permalink: /kb/083/Q83680/
 ---
 
 ## Q83680: Assigning a Shortcut Key to Program Manager

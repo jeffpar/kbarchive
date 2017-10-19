@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169476: SMS: Using RSERVICE Returns Error 203"
-permalink: kb/169/Q169476/
+permalink: /kb/169/Q169476/
 ---
 
 ## Q169476: SMS: Using RSERVICE Returns Error 203

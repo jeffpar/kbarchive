@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150317: Memory Leak Using Compaq Insight Agents with SCSI Tape Drives"
-permalink: kb/150/Q150317/
+permalink: /kb/150/Q150317/
 ---
 
 ## Q150317: Memory Leak Using Compaq Insight Agents with SCSI Tape Drives

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173540: ATI Mach32 Video Card Needs New Driver After Upgrade"
-permalink: kb/173/Q173540/
+permalink: /kb/173/Q173540/
 ---
 
 ## Q173540: ATI Mach32 Video Card Needs New Driver After Upgrade

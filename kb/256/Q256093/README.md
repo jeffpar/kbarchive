@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256093: IIS May Generate Access Violation for Certain HTTP Requests"
-permalink: kb/256/Q256093/
+permalink: /kb/256/Q256093/
 ---
 
 ## Q256093: IIS May Generate Access Violation for Certain HTTP Requests

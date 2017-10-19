@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296432: XFOR: Doclink Conversion to RTF Fails If Source Doc Is on UNIX"
-permalink: kb/296/Q296432/
+permalink: /kb/296/Q296432/
 ---
 
 ## Q296432: XFOR: Doclink Conversion to RTF Fails If Source Doc Is on UNIX

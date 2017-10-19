@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177152: XADM: Store Rejects X.400 Address with Embedded Slashes"
-permalink: kb/177/Q177152/
+permalink: /kb/177/Q177152/
 ---
 
 ## Q177152: XADM: Store Rejects X.400 Address with Embedded Slashes

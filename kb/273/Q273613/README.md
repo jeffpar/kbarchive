@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273613: XFOR: RTF Info. Lost from Notes to CR over Internet Mail Service"
-permalink: kb/273/Q273613/
+permalink: /kb/273/Q273613/
 ---
 
 ## Q273613: XFOR: RTF Info. Lost from Notes to CR over Internet Mail Service

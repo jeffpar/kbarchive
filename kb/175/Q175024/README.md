@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175024: Resetting Domain Member Secure Channel"
-permalink: kb/175/Q175024/
+permalink: /kb/175/Q175024/
 ---
 
 ## Q175024: Resetting Domain Member Secure Channel

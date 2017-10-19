@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114144: BUG: &quot;Alias Not Found&quot; Occurs with Table Used in dBASE Query"
-permalink: kb/114/Q114144/
+permalink: /kb/114/Q114144/
 ---
 
 ## Q114144: BUG: &quot;Alias Not Found&quot; Occurs with Table Used in dBASE Query

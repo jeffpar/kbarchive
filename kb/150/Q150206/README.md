@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150206: BUG: DBGrid on a Modal Form Can Cause a Program to Hang"
-permalink: kb/150/Q150206/
+permalink: /kb/150/Q150206/
 ---
 
 ## Q150206: BUG: DBGrid on a Modal Form Can Cause a Program to Hang

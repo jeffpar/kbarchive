@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168450: XCLN: Changing the AutoSignature Default Location"
-permalink: kb/168/Q168450/
+permalink: /kb/168/Q168450/
 ---
 
 ## Q168450: XCLN: Changing the AutoSignature Default Location

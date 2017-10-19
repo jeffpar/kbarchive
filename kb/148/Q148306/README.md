@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148306: Hewlett-Packard DesignJet 750C Prints Text with Gray Background"
-permalink: kb/148/Q148306/
+permalink: /kb/148/Q148306/
 ---
 
 ## Q148306: Hewlett-Packard DesignJet 750C Prints Text with Gray Background

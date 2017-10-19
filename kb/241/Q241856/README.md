@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241856: PRB: Crash in DllMain After FreeLibrary is Called on a Resource"
-permalink: kb/241/Q241856/
+permalink: /kb/241/Q241856/
 ---
 
 ## Q241856: PRB: Crash in DllMain After FreeLibrary is Called on a Resource

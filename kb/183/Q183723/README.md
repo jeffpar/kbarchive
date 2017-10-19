@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183723: Default NNTP Query Form Returns Blank Table Cells"
-permalink: kb/183/Q183723/
+permalink: /kb/183/Q183723/
 ---
 
 ## Q183723: Default NNTP Query Form Returns Blank Table Cells

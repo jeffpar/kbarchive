@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177658: Patterns Do Not Print on HP LaserJet 5p"
-permalink: kb/177/Q177658/
+permalink: /kb/177/Q177658/
 ---
 
 ## Q177658: Patterns Do Not Print on HP LaserJet 5p

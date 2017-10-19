@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131121: Combo Box with RowSourceType of SQL Must Result in Cursor"
-permalink: kb/131/Q131121/
+permalink: /kb/131/Q131121/
 ---
 
 ## Q131121: Combo Box with RowSourceType of SQL Must Result in Cursor

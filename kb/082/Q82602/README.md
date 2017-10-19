@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82602: Epson LQ-570 Pauses During Long Print Jobs"
-permalink: kb/082/Q82602/
+permalink: /kb/082/Q82602/
 ---
 
 ## Q82602: Epson LQ-570 Pauses During Long Print Jobs

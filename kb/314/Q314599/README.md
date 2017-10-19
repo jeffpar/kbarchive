@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314599: Encarta: Err Msg: Error Starting Program...Shrl30.dll"
-permalink: kb/314/Q314599/
+permalink: /kb/314/Q314599/
 ---
 
 ## Q314599: Encarta: Err Msg: Error Starting Program...Shrl30.dll

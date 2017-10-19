@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274659: Combat Flight Simulator 2: Screen Textures Are Distorted"
-permalink: kb/274/Q274659/
+permalink: /kb/274/Q274659/
 ---
 
 ## Q274659: Combat Flight Simulator 2: Screen Textures Are Distorted

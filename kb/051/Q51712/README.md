@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q51712: HOWTO: Use the Token Pasting Operator in Microsoft C"
-permalink: kb/051/Q51712/
+permalink: /kb/051/Q51712/
 ---
 
 ## Q51712: HOWTO: Use the Token Pasting Operator in Microsoft C

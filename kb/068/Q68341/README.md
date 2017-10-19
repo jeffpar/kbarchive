@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68341: Unrecoverable Application Error in Aldus Pagemaker 3.01"
-permalink: kb/068/Q68341/
+permalink: /kb/068/Q68341/
 ---
 
 ## Q68341: Unrecoverable Application Error in Aldus Pagemaker 3.01

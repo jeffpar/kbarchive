@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196244: FIX: Developer Studio Settings for User Platforms Not Saved"
-permalink: kb/196/Q196244/
+permalink: /kb/196/Q196244/
 ---
 
 ## Q196244: FIX: Developer Studio Settings for User Platforms Not Saved

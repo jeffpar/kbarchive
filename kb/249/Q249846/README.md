@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249846: PRB: Event ID 4250 When Calling Queued Components"
-permalink: kb/249/Q249846/
+permalink: /kb/249/Q249846/
 ---
 
 ## Q249846: PRB: Event ID 4250 When Calling Queued Components

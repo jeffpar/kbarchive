@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132685: PC WSPlus: Loss of Description Data After a Carriage Return"
-permalink: kb/132/Q132685/
+permalink: /kb/132/Q132685/
 ---
 
 ## Q132685: PC WSPlus: Loss of Description Data After a Carriage Return

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176617: Transfer Users to Trusted Domain Option Unavailable in NWConv"
-permalink: kb/176/Q176617/
+permalink: /kb/176/Q176617/
 ---
 
 ## Q176617: Transfer Users to Trusted Domain Option Unavailable in NWConv

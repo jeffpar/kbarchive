@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221118: HOWTO: Upgrade a VSS5 Database to VSS6 Using Archive Utility"
-permalink: kb/221/Q221118/
+permalink: /kb/221/Q221118/
 ---
 
 ## Q221118: HOWTO: Upgrade a VSS5 Database to VSS6 Using Archive Utility

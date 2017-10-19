@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173893: XCLN: Pronto 97 IMAP Client can't use Mailbox Name Over 23 Chars"
-permalink: kb/173/Q173893/
+permalink: /kb/173/Q173893/
 ---
 
 ## Q173893: XCLN: Pronto 97 IMAP Client can't use Mailbox Name Over 23 Chars

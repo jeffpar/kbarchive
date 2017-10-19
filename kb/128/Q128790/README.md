@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128790: PRB: The SPAWN.C Sample Fails as a C++ Application"
-permalink: kb/128/Q128790/
+permalink: /kb/128/Q128790/
 ---
 
 ## Q128790: PRB: The SPAWN.C Sample Fails as a C++ Application

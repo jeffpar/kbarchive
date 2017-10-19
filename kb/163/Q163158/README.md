@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163158: WD97: Calculate On Exit Doesn't Function for Calculation"
-permalink: kb/163/Q163158/
+permalink: /kb/163/Q163158/
 ---
 
 ## Q163158: WD97: Calculate On Exit Doesn't Function for Calculation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102893: PATCH: FoxPro 2.6a Patch Files for FoxPro 2.6"
-permalink: kb/102/Q102893/
+permalink: /kb/102/Q102893/
 ---
 
 ## Q102893: PATCH: FoxPro 2.6a Patch Files for FoxPro 2.6

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93630: PRB: Paste Link Command Not Available for Microsoft Graph"
-permalink: kb/093/Q93630/
+permalink: /kb/093/Q93630/
 ---
 
 ## Q93630: PRB: Paste Link Command Not Available for Microsoft Graph

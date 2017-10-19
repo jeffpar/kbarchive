@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122743: PPT: How to Create Mirrored Text in PowerPoint"
-permalink: kb/122/Q122743/
+permalink: /kb/122/Q122743/
 ---
 
 ## Q122743: PPT: How to Create Mirrored Text in PowerPoint

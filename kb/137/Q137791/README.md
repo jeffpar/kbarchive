@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137791: ATI Mach32 PCI Video BIOS Date is Incorrect"
-permalink: kb/137/Q137791/
+permalink: /kb/137/Q137791/
 ---
 
 ## Q137791: ATI Mach32 PCI Video BIOS Date is Incorrect

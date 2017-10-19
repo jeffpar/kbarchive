@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66596: Installing MS-DOS with Incorrect Disks for Drive A"
-permalink: kb/066/Q66596/
+permalink: /kb/066/Q66596/
 ---
 
 ## Q66596: Installing MS-DOS with Incorrect Disks for Drive A

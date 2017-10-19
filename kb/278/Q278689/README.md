@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278689: XADM:  How to Manually Create a User.dmp File with Dr.Watson"
-permalink: kb/278/Q278689/
+permalink: /kb/278/Q278689/
 ---
 
 ## Q278689: XADM:  How to Manually Create a User.dmp File with Dr.Watson

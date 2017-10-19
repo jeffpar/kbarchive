@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256294: XADM: Server Delegate Rule Is Disabled by External E-Mail"
-permalink: kb/256/Q256294/
+permalink: /kb/256/Q256294/
 ---
 
 ## Q256294: XADM: Server Delegate Rule Is Disabled by External E-Mail

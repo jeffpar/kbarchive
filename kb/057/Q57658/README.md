@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57658: Setting the MS-DOS Errorlevel in a Program"
-permalink: kb/057/Q57658/
+permalink: /kb/057/Q57658/
 ---
 
 ## Q57658: Setting the MS-DOS Errorlevel in a Program

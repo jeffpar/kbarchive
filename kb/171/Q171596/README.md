@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171596: WD97: ErrMsg in Letter and Envelope Mail Merge w/ Excel DDE Data"
-permalink: kb/171/Q171596/
+permalink: /kb/171/Q171596/
 ---
 
 ## Q171596: WD97: ErrMsg in Letter and Envelope Mail Merge w/ Excel DDE Data

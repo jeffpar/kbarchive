@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168567: Clustering Information on IP Address Failover"
-permalink: kb/168/Q168567/
+permalink: /kb/168/Q168567/
 ---
 
 ## Q168567: Clustering Information on IP Address Failover

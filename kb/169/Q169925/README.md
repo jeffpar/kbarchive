@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169925: Cannot Delete, Rename, or Move 386spart.par File"
-permalink: kb/169/Q169925/
+permalink: /kb/169/Q169925/
 ---
 
 ## Q169925: Cannot Delete, Rename, or Move 386spart.par File

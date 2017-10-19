@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194028: DHCP Server Fails to Start with Event 1007, 1008 and SCM 7023"
-permalink: kb/194/Q194028/
+permalink: /kb/194/Q194028/
 ---
 
 ## Q194028: DHCP Server Fails to Start with Event 1007, 1008 and SCM 7023

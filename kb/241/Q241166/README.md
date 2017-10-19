@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241166: NBA Inside Drive 2000: Names or Positions Not Displayed Properly"
-permalink: kb/241/Q241166/
+permalink: /kb/241/Q241166/
 ---
 
 ## Q241166: NBA Inside Drive 2000: Names or Positions Not Displayed Properly

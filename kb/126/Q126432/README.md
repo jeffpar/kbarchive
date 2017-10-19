@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126432: SNA Server Windows Client Memory Tuning"
-permalink: kb/126/Q126432/
+permalink: /kb/126/Q126432/
 ---
 
 ## Q126432: SNA Server Windows Client Memory Tuning

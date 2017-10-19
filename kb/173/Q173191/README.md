@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173191: Inserting an Excel Worksheet Object May Fail Under Windows NT"
-permalink: kb/173/Q173191/
+permalink: /kb/173/Q173191/
 ---
 
 ## Q173191: Inserting an Excel Worksheet Object May Fail Under Windows NT

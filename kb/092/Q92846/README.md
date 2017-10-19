@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92846: Viewer Err Msg: An Error Was Found in the Bookmark File"
-permalink: kb/092/Q92846/
+permalink: /kb/092/Q92846/
 ---
 
 ## Q92846: Viewer Err Msg: An Error Was Found in the Bookmark File

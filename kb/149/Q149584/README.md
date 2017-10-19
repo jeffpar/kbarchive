@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149584: Cannot Access Compressed Drives After Removing Windows 95"
-permalink: kb/149/Q149584/
+permalink: /kb/149/Q149584/
 ---
 
 ## Q149584: Cannot Access Compressed Drives After Removing Windows 95

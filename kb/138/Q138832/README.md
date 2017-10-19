@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138832: How to Enable SNA Server IPX/SPX Clients to Use SPXII"
-permalink: kb/138/Q138832/
+permalink: /kb/138/Q138832/
 ---
 
 ## Q138832: How to Enable SNA Server IPX/SPX Clients to Use SPXII

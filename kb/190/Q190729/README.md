@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190729: XADM: How to Enter a Company Name for a Distribution List"
-permalink: kb/190/Q190729/
+permalink: /kb/190/Q190729/
 ---
 
 ## Q190729: XADM: How to Enter a Company Name for a Distribution List

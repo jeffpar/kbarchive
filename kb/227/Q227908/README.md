@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227908: Domain-Level Printer List Is Not Refreshed"
-permalink: kb/227/Q227908/
+permalink: /kb/227/Q227908/
 ---
 
 ## Q227908: Domain-Level Printer List Is Not Refreshed

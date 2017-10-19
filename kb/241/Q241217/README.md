@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241217: BUG: Source Browser Shows Decorated Name for Member Template"
-permalink: kb/241/Q241217/
+permalink: /kb/241/Q241217/
 ---
 
 ## Q241217: BUG: Source Browser Shows Decorated Name for Member Template

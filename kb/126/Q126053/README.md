@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126053: NTDETECT.COM and INSTALLD.CMD Do Not Exist in Resource Kit"
-permalink: kb/126/Q126053/
+permalink: /kb/126/Q126053/
 ---
 
 ## Q126053: NTDETECT.COM and INSTALLD.CMD Do Not Exist in Resource Kit

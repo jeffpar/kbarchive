@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92634: Invalid Err Msg in Print Manager w/14-Character Machine Name"
-permalink: kb/092/Q92634/
+permalink: /kb/092/Q92634/
 ---
 
 ## Q92634: Invalid Err Msg in Print Manager w/14-Character Machine Name

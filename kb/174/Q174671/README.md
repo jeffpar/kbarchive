@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174671: FS95/98/2000/2002 or CFS: Problems Flying by Keyboard on Laptop"
-permalink: kb/174/Q174671/
+permalink: /kb/174/Q174671/
 ---
 
 ## Q174671: FS95/98/2000/2002 or CFS: Problems Flying by Keyboard on Laptop

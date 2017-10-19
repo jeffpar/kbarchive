@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247819: WLBS May Discard Some TCP/UDP Fragments"
-permalink: kb/247/Q247819/
+permalink: /kb/247/Q247819/
 ---
 
 ## Q247819: WLBS May Discard Some TCP/UDP Fragments

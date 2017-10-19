@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157623: STL Sample for priority_queue::(push,pop,empty,top) Functions"
-permalink: kb/157/Q157623/
+permalink: /kb/157/Q157623/
 ---
 
 ## Q157623: STL Sample for priority_queue::(push,pop,empty,top) Functions

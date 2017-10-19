@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181630: SMS: Stranded TMP Files on Logon Servers"
-permalink: kb/181/Q181630/
+permalink: /kb/181/Q181630/
 ---
 
 ## Q181630: SMS: Stranded TMP Files on Logon Servers

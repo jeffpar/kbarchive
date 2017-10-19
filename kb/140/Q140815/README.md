@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140815: Emulator Disconnected after FMI Error Code x 0050"
-permalink: kb/140/Q140815/
+permalink: /kb/140/Q140815/
 ---
 
 ## Q140815: Emulator Disconnected after FMI Error Code x 0050

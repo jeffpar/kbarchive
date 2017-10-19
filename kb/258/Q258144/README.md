@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258144: HOWTO: Get a List of All Pinned Files from OLE Automation in VB"
-permalink: kb/258/Q258144/
+permalink: /kb/258/Q258144/
 ---
 
 ## Q258144: HOWTO: Get a List of All Pinned Files from OLE Automation in VB

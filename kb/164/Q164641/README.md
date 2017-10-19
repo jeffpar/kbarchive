@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164641: SNA Server 3.0 Windows 3.x Client Does Not Allow Logon Retry"
-permalink: kb/164/Q164641/
+permalink: /kb/164/Q164641/
 ---
 
 ## Q164641: SNA Server 3.0 Windows 3.x Client Does Not Allow Logon Retry

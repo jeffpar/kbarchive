@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133033: FIX: Tracing Main Program After DO &#42;.PJX Causes Exception Err."
-permalink: kb/133/Q133033/
+permalink: /kb/133/Q133033/
 ---
 
 ## Q133033: FIX: Tracing Main Program After DO &#42;.PJX Causes Exception Err.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190076: HOWTO: Avoid GPF When Using a VB6 DLL with a VB5 UserControl"
-permalink: kb/190/Q190076/
+permalink: /kb/190/Q190076/
 ---
 
 ## Q190076: HOWTO: Avoid GPF When Using a VB6 DLL with a VB5 UserControl

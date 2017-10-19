@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137246: Windows 3.x APPC Application Fails with F002 (AP_TP_BUSY) Error"
-permalink: kb/137/Q137246/
+permalink: /kb/137/Q137246/
 ---
 
 ## Q137246: Windows 3.x APPC Application Fails with F002 (AP_TP_BUSY) Error

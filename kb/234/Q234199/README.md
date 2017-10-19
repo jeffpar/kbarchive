@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234199: Baseball 2000 Err Msg: Invalid Page Fault in Module Graphics.dll"
-permalink: kb/234/Q234199/
+permalink: /kb/234/Q234199/
 ---
 
 ## Q234199: Baseball 2000 Err Msg: Invalid Page Fault in Module Graphics.dll

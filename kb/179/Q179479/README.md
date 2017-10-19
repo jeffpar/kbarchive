@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179479: PRB: Problems with Error 2004 and 2005 Commands"
-permalink: kb/179/Q179479/
+permalink: /kb/179/Q179479/
 ---
 
 ## Q179479: PRB: Problems with Error 2004 and 2005 Commands

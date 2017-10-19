@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280799: Documents Indexed on Remote Shares Are Returned to All Users"
-permalink: kb/280/Q280799/
+permalink: /kb/280/Q280799/
 ---
 
 ## Q280799: Documents Indexed on Remote Shares Are Returned to All Users

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121888: PRB: C2440 When Initializing an Object Within an Object"
-permalink: kb/121/Q121888/
+permalink: /kb/121/Q121888/
 ---
 
 ## Q121888: PRB: C2440 When Initializing an Object Within an Object

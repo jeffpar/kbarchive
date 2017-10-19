@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150469: DOC: Code Sample Error in Documentation for RowTop Method"
-permalink: kb/150/Q150469/
+permalink: /kb/150/Q150469/
 ---
 
 ## Q150469: DOC: Code Sample Error in Documentation for RowTop Method

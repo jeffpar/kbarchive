@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87556: PPT: Maximum Number of Objects Per Slide and Notes"
-permalink: kb/087/Q87556/
+permalink: /kb/087/Q87556/
 ---
 
 ## Q87556: PPT: Maximum Number of Objects Per Slide and Notes

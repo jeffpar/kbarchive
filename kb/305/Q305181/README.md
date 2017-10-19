@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305181: Unable to Complete MSN Broadband DSL Setup--Err Msg:  &quot;Our serve"
-permalink: kb/305/Q305181/
+permalink: /kb/305/Q305181/
 ---
 
 ## Q305181: Unable to Complete MSN Broadband DSL Setup--Err Msg:  &quot;Our serve

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96689: PC WRmt: ConnectTimeOut Value Purpose and Use"
-permalink: kb/096/Q96689/
+permalink: /kb/096/Q96689/
 ---
 
 ## Q96689: PC WRmt: ConnectTimeOut Value Purpose and Use

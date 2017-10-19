@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187493: Some Netscape Client Certificates Rejected by IIS"
-permalink: kb/187/Q187493/
+permalink: /kb/187/Q187493/
 ---
 
 ## Q187493: Some Netscape Client Certificates Rejected by IIS

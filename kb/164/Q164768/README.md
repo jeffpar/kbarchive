@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164768: XADM: DL Delivery Restriction Fails Without Name Resolution"
-permalink: kb/164/Q164768/
+permalink: /kb/164/Q164768/
 ---
 
 ## Q164768: XADM: DL Delivery Restriction Fails Without Name Resolution

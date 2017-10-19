@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262473: LU 6.2 Data Compression Fails When Initiated by Host System"
-permalink: kb/262/Q262473/
+permalink: /kb/262/Q262473/
 ---
 
 ## Q262473: LU 6.2 Data Compression Fails When Initiated by Host System

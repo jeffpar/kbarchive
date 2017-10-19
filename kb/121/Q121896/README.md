@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121896: Writer/Artist: Deleting or Recycling Files"
-permalink: kb/121/Q121896/
+permalink: /kb/121/Q121896/
 ---
 
 ## Q121896: Writer/Artist: Deleting or Recycling Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306378: SNMP sends traps from last bound IP address on interface"
-permalink: kb/306/Q306378/
+permalink: /kb/306/Q306378/
 ---
 
 ## Q306378: SNMP sends traps from last bound IP address on interface

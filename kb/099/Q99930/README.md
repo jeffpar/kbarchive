@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99930: PC WRmt: Viewing and Usage of the ACCESS4.GLB File"
-permalink: kb/099/Q99930/
+permalink: /kb/099/Q99930/
 ---
 
 ## Q99930: PC WRmt: Viewing and Usage of the ACCESS4.GLB File

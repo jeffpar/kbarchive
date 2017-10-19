@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136945: Location of Foxtools.fll Information"
-permalink: kb/136/Q136945/
+permalink: /kb/136/Q136945/
 ---
 
 ## Q136945: Location of Foxtools.fll Information

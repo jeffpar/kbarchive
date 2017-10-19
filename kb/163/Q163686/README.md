@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163686: XADM: What to Do If the Service Account Is Deleted"
-permalink: kb/163/Q163686/
+permalink: /kb/163/Q163686/
 ---
 
 ## Q163686: XADM: What to Do If the Service Account Is Deleted

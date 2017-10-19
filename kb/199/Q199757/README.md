@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199757: XIMS: Link Monitor Setup Fails with Two NDRs on Notes Connector"
-permalink: kb/199/Q199757/
+permalink: /kb/199/Q199757/
 ---
 
 ## Q199757: XIMS: Link Monitor Setup Fails with Two NDRs on Notes Connector

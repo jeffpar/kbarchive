@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253204: PRB: Err Msg: The Server Was Unable to Logon the Windows NT..."
-permalink: kb/253/Q253204/
+permalink: /kb/253/Q253204/
 ---
 
 ## Q253204: PRB: Err Msg: The Server Was Unable to Logon the Windows NT...

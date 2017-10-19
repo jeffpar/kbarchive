@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193425: Comprehensive Map Style Is Displayed When You Exit Game"
-permalink: kb/193/Q193425/
+permalink: /kb/193/Q193425/
 ---
 
 ## Q193425: Comprehensive Map Style Is Displayed When You Exit Game

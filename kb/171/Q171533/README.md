@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171533: FIX: ActiveX EXE Crashes VB5 When Set to Binary Compatibility"
-permalink: kb/171/Q171533/
+permalink: /kb/171/Q171533/
 ---
 
 ## Q171533: FIX: ActiveX EXE Crashes VB5 When Set to Binary Compatibility

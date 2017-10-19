@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157323: XCON: Identifying and/or Reconstructing a Connector Queue"
-permalink: kb/157/Q157323/
+permalink: /kb/157/Q157323/
 ---
 
 ## Q157323: XCON: Identifying and/or Reconstructing a Connector Queue

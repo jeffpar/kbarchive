@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115069: Writer: Canon BubbleJet Prints Off Page"
-permalink: kb/115/Q115069/
+permalink: /kb/115/Q115069/
 ---
 
 ## Q115069: Writer: Canon BubbleJet Prints Off Page

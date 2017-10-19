@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172439: &quot;The Icmp.dll File Cannot Start&quot; While Using Ping.exe"
-permalink: kb/172/Q172439/
+permalink: /kb/172/Q172439/
 ---
 
 ## Q172439: &quot;The Icmp.dll File Cannot Start&quot; While Using Ping.exe

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155855: PPT: Orange Text Prints Yellow on HP DeskJet 1200c"
-permalink: kb/155/Q155855/
+permalink: /kb/155/Q155855/
 ---
 
 ## Q155855: PPT: Orange Text Prints Yellow on HP DeskJet 1200c

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101136: PC Win: Err Msg: The Old Message File Could Not Be Deleted"
-permalink: kb/101/Q101136/
+permalink: /kb/101/Q101136/
 ---
 
 ## Q101136: PC Win: Err Msg: The Old Message File Could Not Be Deleted

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218466: How to Publish Phonebooks Using Phone Book Administrator"
-permalink: kb/218/Q218466/
+permalink: /kb/218/Q218466/
 ---
 
 ## Q218466: How to Publish Phonebooks Using Phone Book Administrator

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150612: Deleting the Schedule+ Data From the Exchange Server"
-permalink: kb/150/Q150612/
+permalink: /kb/150/Q150612/
 ---
 
 ## Q150612: Deleting the Schedule+ Data From the Exchange Server

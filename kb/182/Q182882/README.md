@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182882: Upgrading SNA 3.0 To 4.0 May Cause Failure On Mfc42u.dll File"
-permalink: kb/182/Q182882/
+permalink: /kb/182/Q182882/
 ---
 
 ## Q182882: Upgrading SNA 3.0 To 4.0 May Cause Failure On Mfc42u.dll File

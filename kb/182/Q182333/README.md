@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182333: Excessive Processor Usage on Print Servers"
-permalink: kb/182/Q182333/
+permalink: /kb/182/Q182333/
 ---
 
 ## Q182333: Excessive Processor Usage on Print Servers

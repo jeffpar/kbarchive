@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230744: Windows NT 4.0 SP4 DNR Does Not Send Unqualified DNS Queries"
-permalink: kb/230/Q230744/
+permalink: /kb/230/Q230744/
 ---
 
 ## Q230744: Windows NT 4.0 SP4 DNR Does Not Send Unqualified DNS Queries

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249037: XADM: Event 4096 While InterOrg Synchronization Tool Is Running"
-permalink: kb/249/Q249037/
+permalink: /kb/249/Q249037/
 ---
 
 ## Q249037: XADM: Event 4096 While InterOrg Synchronization Tool Is Running

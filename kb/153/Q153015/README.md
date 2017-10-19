@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153015: TTS - Release Physical Record Does Not Work with CSNW"
-permalink: kb/153/Q153015/
+permalink: /kb/153/Q153015/
 ---
 
 ## Q153015: TTS - Release Physical Record Does Not Work with CSNW

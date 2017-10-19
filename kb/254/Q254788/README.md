@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254788: XFOR: Schedule+ 7.5 Users Always Prompted for a Password"
-permalink: kb/254/Q254788/
+permalink: /kb/254/Q254788/
 ---
 
 ## Q254788: XFOR: Schedule+ 7.5 Users Always Prompted for a Password

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132661: Some Multimedia Titles Do Not Work on HP Vectra Communication"
-permalink: kb/132/Q132661/
+permalink: /kb/132/Q132661/
 ---
 
 ## Q132661: Some Multimedia Titles Do Not Work on HP Vectra Communication

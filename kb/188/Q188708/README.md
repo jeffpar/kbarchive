@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188708: BUG: Error C1083 Building Large Projects with Browse Info"
-permalink: kb/188/Q188708/
+permalink: /kb/188/Q188708/
 ---
 
 ## Q188708: BUG: Error C1083 Building Large Projects with Browse Info

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74471: Using Selectors from _Allocate_LDT_Selector Service"
-permalink: kb/074/Q74471/
+permalink: /kb/074/Q74471/
 ---
 
 ## Q74471: Using Selectors from _Allocate_LDT_Selector Service

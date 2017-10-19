@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269158: XCON: Message Transfer Agent Stops Responding in emsmta!onpugtck"
-permalink: kb/269/Q269158/
+permalink: /kb/269/Q269158/
 ---
 
 ## Q269158: XCON: Message Transfer Agent Stops Responding in emsmta!onpugtck

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310797: XCON: Messages to Fax Recipients Return an NDR; Fix Req. 5.5 SP4"
-permalink: kb/310/Q310797/
+permalink: /kb/310/Q310797/
 ---
 
 ## Q310797: XCON: Messages to Fax Recipients Return an NDR; Fix Req. 5.5 SP4

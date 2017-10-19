@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43969: Verifying That Microsoft Mouse Works at MS-DOS Level"
-permalink: kb/043/Q43969/
+permalink: /kb/043/Q43969/
 ---
 
 ## Q43969: Verifying That Microsoft Mouse Works at MS-DOS Level

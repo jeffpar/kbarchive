@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180010: XADM: An Unexpected Error Has Occurred ID no: c106fbf8"
-permalink: kb/180/Q180010/
+permalink: /kb/180/Q180010/
 ---
 
 ## Q180010: XADM: An Unexpected Error Has Occurred ID no: c106fbf8

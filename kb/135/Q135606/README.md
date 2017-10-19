@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135606: FINDSTR Causes STOP Error 21a"
-permalink: kb/135/Q135606/
+permalink: /kb/135/Q135606/
 ---
 
 ## Q135606: FINDSTR Causes STOP Error 21a

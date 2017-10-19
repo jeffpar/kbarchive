@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177038: Sounds Are Choppy or Not Played in Encarta and My Personal Tutor"
-permalink: kb/177/Q177038/
+permalink: /kb/177/Q177038/
 ---
 
 ## Q177038: Sounds Are Choppy or Not Played in Encarta and My Personal Tutor

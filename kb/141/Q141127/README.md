@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141127: SFS Post Office Shared Folders Not Available with MS Exchange"
-permalink: kb/141/Q141127/
+permalink: /kb/141/Q141127/
 ---
 
 ## Q141127: SFS Post Office Shared Folders Not Available with MS Exchange

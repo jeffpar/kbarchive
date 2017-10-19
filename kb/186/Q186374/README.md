@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186374: Enable Auditing of Microsoft Windows NT Server Password Registry"
-permalink: kb/186/Q186374/
+permalink: /kb/186/Q186374/
 ---
 
 ## Q186374: Enable Auditing of Microsoft Windows NT Server Password Registry

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99081: DoubleSpace Err Msg: To Set Up DoubleSpace, You Must Start..."
-permalink: kb/099/Q99081/
+permalink: /kb/099/Q99081/
 ---
 
 ## Q99081: DoubleSpace Err Msg: To Set Up DoubleSpace, You Must Start...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156759: STL Sample for deque::push_back and deque::pop_back Functions"
-permalink: kb/156/Q156759/
+permalink: /kb/156/Q156759/
 ---
 
 ## Q156759: STL Sample for deque::push_back and deque::pop_back Functions

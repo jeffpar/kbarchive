@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q40620: Communicating Between Windows Virtual Machines with DDE"
-permalink: kb/040/Q40620/
+permalink: /kb/040/Q40620/
 ---
 
 ## Q40620: Communicating Between Windows Virtual Machines with DDE

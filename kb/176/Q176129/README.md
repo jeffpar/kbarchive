@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176129: XCON: Cannot Reply to Messages from User with Dual DDA Address"
-permalink: kb/176/Q176129/
+permalink: /kb/176/Q176129/
 ---
 
 ## Q176129: XCON: Cannot Reply to Messages from User with Dual DDA Address

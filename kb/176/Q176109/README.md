@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176109: Fatal Exception Error When You Press the CAPS LOCK Key"
-permalink: kb/176/Q176109/
+permalink: /kb/176/Q176109/
 ---
 
 ## Q176109: Fatal Exception Error When You Press the CAPS LOCK Key

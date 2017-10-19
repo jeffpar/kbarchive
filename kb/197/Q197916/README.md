@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197916: HOWTO: Use GUIDs with Access,SQL 6.5 and SQL 7"
-permalink: kb/197/Q197916/
+permalink: /kb/197/Q197916/
 ---
 
 ## Q197916: HOWTO: Use GUIDs with Access,SQL 6.5 and SQL 7

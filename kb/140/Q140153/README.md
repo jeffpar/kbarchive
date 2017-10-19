@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140153: Music Central and Cinemania Fonts on CD Are Not Reinstalled"
-permalink: kb/140/Q140153/
+permalink: /kb/140/Q140153/
 ---
 
 ## Q140153: Music Central and Cinemania Fonts on CD Are Not Reinstalled

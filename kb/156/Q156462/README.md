@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156462: Writer 2: Seven Levels of Character Sizes Allowable in HTML"
-permalink: kb/156/Q156462/
+permalink: /kb/156/Q156462/
 ---
 
 ## Q156462: Writer 2: Seven Levels of Character Sizes Allowable in HTML

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176432: HOWTO: How to Determine if APPC LU Partnerships are Required"
-permalink: kb/176/Q176432/
+permalink: /kb/176/Q176432/
 ---
 
 ## Q176432: HOWTO: How to Determine if APPC LU Partnerships are Required

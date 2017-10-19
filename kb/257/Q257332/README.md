@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257332: Error in W3svc.dll on Secure Connection to Nonexistant IP:PORT"
-permalink: kb/257/Q257332/
+permalink: /kb/257/Q257332/
 ---
 
 ## Q257332: Error in W3svc.dll on Secure Connection to Nonexistant IP:PORT

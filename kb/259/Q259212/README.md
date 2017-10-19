@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259212: XCLN: Journaling Configured But Not Storing Data in Outlook 2000"
-permalink: kb/259/Q259212/
+permalink: /kb/259/Q259212/
 ---
 
 ## Q259212: XCLN: Journaling Configured But Not Storing Data in Outlook 2000

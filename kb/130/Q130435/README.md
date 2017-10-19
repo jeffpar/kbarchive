@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130435: Internal Task Ordering with Timex Data Link Watch"
-permalink: kb/130/Q130435/
+permalink: /kb/130/Q130435/
 ---
 
 ## Q130435: Internal Task Ordering with Timex Data Link Watch

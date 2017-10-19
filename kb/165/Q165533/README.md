@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165533: General Sysdiff Troubleshooting Tips"
-permalink: kb/165/Q165533/
+permalink: /kb/165/Q165533/
 ---
 
 ## Q165533: General Sysdiff Troubleshooting Tips

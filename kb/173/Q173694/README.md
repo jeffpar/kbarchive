@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173694: Err Msg: ERROR: Setup Was Unable to Install the Boot Loader"
-permalink: kb/173/Q173694/
+permalink: /kb/173/Q173694/
 ---
 
 ## Q173694: Err Msg: ERROR: Setup Was Unable to Install the Boot Loader

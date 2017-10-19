@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172540: Windows NT Server Tools for Windows 95 Readme.txt File"
-permalink: kb/172/Q172540/
+permalink: /kb/172/Q172540/
 ---
 
 ## Q172540: Windows NT Server Tools for Windows 95 Readme.txt File

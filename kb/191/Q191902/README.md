@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191902: PRB: Errors Using Setup Wizard on Novell Network"
-permalink: kb/191/Q191902/
+permalink: /kb/191/Q191902/
 ---
 
 ## Q191902: PRB: Errors Using Setup Wizard on Novell Network

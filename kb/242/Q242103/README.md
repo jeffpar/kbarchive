@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242103: Err Msg: You Already Have a Connection to the Domain"
-permalink: kb/242/Q242103/
+permalink: /kb/242/Q242103/
 ---
 
 ## Q242103: Err Msg: You Already Have a Connection to the Domain

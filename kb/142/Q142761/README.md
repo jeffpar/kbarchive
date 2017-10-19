@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142761: WD97: Error Message: &quot;...Word Cannot Find Its Data Source...&quot;"
-permalink: kb/142/Q142761/
+permalink: /kb/142/Q142761/
 ---
 
 ## Q142761: WD97: Error Message: &quot;...Word Cannot Find Its Data Source...&quot;

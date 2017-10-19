@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128238: BUG: SourceSafe Update Command Fails on Large Binary File"
-permalink: kb/128/Q128238/
+permalink: /kb/128/Q128238/
 ---
 
 ## Q128238: BUG: SourceSafe Update Command Fails on Large Binary File

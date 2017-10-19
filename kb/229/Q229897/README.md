@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229897: Preventing WINS Static Record Replication"
-permalink: kb/229/Q229897/
+permalink: /kb/229/Q229897/
 ---
 
 ## Q229897: Preventing WINS Static Record Replication

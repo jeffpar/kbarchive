@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154775: &quot;Memory Full&quot; Error Opening Large Lotus 1-2-3 for MS-DOS File"
-permalink: kb/154/Q154775/
+permalink: /kb/154/Q154775/
 ---
 
 ## Q154775: &quot;Memory Full&quot; Error Opening Large Lotus 1-2-3 for MS-DOS File

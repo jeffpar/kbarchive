@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135550: Err Msg: &quot;Net 815: Network Name Was Deleted&quot; Remoteboot Wrksta"
-permalink: kb/135/Q135550/
+permalink: /kb/135/Q135550/
 ---
 
 ## Q135550: Err Msg: &quot;Net 815: Network Name Was Deleted&quot; Remoteboot Wrksta

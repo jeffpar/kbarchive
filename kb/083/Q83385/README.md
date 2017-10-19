@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83385: Windows 3.1 Setup Asks for Disk 5"
-permalink: kb/083/Q83385/
+permalink: /kb/083/Q83385/
 ---
 
 ## Q83385: Windows 3.1 Setup Asks for Disk 5

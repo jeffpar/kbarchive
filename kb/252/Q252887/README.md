@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252887: BUG: Truncated File Listing with Visual SourceSafe"
-permalink: kb/252/Q252887/
+permalink: /kb/252/Q252887/
 ---
 
 ## Q252887: BUG: Truncated File Listing with Visual SourceSafe

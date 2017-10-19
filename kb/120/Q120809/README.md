@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120809: How to Turn .MVB or .HLP File Back into .RTF File"
-permalink: kb/120/Q120809/
+permalink: /kb/120/Q120809/
 ---
 
 ## Q120809: How to Turn .MVB or .HLP File Back into .RTF File

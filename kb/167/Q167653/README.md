@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167653: WD97: Redo Deletion of Toolbox Control Causes Invalid Page Fault"
-permalink: kb/167/Q167653/
+permalink: /kb/167/Q167653/
 ---
 
 ## Q167653: WD97: Redo Deletion of Toolbox Control Causes Invalid Page Fault

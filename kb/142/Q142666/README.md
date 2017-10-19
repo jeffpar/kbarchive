@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142666: HOWTO: Setting Up an Additional Service in Unattended Setup"
-permalink: kb/142/Q142666/
+permalink: /kb/142/Q142666/
 ---
 
 ## Q142666: HOWTO: Setting Up an Additional Service in Unattended Setup

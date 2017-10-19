@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187643: XCON: Message Content Changes When Sending via X.400 to UNIX"
-permalink: kb/187/Q187643/
+permalink: /kb/187/Q187643/
 ---
 
 ## Q187643: XCON: Message Content Changes When Sending via X.400 to UNIX

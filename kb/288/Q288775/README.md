@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288775: PRB: Authentication Dialog Box When Exchange Accessed with MAPI"
-permalink: kb/288/Q288775/
+permalink: /kb/288/Q288775/
 ---
 
 ## Q288775: PRB: Authentication Dialog Box When Exchange Accessed with MAPI

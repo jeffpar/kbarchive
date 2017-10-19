@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140817: AFTP Client Does Not call WinCPICCleanup()"
-permalink: kb/140/Q140817/
+permalink: /kb/140/Q140817/
 ---
 
 ## Q140817: AFTP Client Does Not call WinCPICCleanup()

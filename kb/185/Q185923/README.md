@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185923: WD97: Text Formatted with &quot;Drop Cap&quot; in Wrong Place on Page"
-permalink: kb/185/Q185923/
+permalink: /kb/185/Q185923/
 ---
 
 ## Q185923: WD97: Text Formatted with &quot;Drop Cap&quot; in Wrong Place on Page

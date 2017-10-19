@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63206: Flight Simulator: Position Set Causes Plane to Crash"
-permalink: kb/063/Q63206/
+permalink: /kb/063/Q63206/
 ---
 
 ## Q63206: Flight Simulator: Position Set Causes Plane to Crash

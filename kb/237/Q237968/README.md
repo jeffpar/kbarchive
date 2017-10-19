@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237968: RAS Configuration May Change When Installing Multiple ISDN Cards"
-permalink: kb/237/Q237968/
+permalink: /kb/237/Q237968/
 ---
 
 ## Q237968: RAS Configuration May Change When Installing Multiple ISDN Cards

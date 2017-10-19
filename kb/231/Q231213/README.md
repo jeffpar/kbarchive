@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231213: Remote Tools Installation Disables Logitech Mouse Functionality"
-permalink: kb/231/Q231213/
+permalink: /kb/231/Q231213/
 ---
 
 ## Q231213: Remote Tools Installation Disables Logitech Mouse Functionality

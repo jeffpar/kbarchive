@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115516: PRB: S1000: &quot;Unable to create file buffer&quot; ODBC Error"
-permalink: kb/115/Q115516/
+permalink: /kb/115/Q115516/
 ---
 
 ## Q115516: PRB: S1000: &quot;Unable to create file buffer&quot; ODBC Error

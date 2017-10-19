@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88369: PC Win: Starting Mail for Windows 3.0 Minimized"
-permalink: kb/088/Q88369/
+permalink: /kb/088/Q88369/
 ---
 
 ## Q88369: PC Win: Starting Mail for Windows 3.0 Minimized

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271865: PRB: Error Message &quot;0x8009000F = Object Already Exists&quot;"
-permalink: kb/271/Q271865/
+permalink: /kb/271/Q271865/
 ---
 
 ## Q271865: PRB: Error Message &quot;0x8009000F = Object Already Exists&quot;

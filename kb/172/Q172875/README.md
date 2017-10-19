@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172875: WD97: General Document Properties Incorrect During Save"
-permalink: kb/172/Q172875/
+permalink: /kb/172/Q172875/
 ---
 
 ## Q172875: WD97: General Document Properties Incorrect During Save

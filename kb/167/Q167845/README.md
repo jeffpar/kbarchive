@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167845: FIX: Class Wizard Deletes Source Files"
-permalink: kb/167/Q167845/
+permalink: /kb/167/Q167845/
 ---
 
 ## Q167845: FIX: Class Wizard Deletes Source Files

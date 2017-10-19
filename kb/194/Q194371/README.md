@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194371: Puzzle Collection: Computer Hangs When You Remove Program"
-permalink: kb/194/Q194371/
+permalink: /kb/194/Q194371/
 ---
 
 ## Q194371: Puzzle Collection: Computer Hangs When You Remove Program

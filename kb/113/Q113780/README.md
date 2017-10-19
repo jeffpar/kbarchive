@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113780: Distorted Control Menu and Application Buttons"
-permalink: kb/113/Q113780/
+permalink: /kb/113/Q113780/
 ---
 
 ## Q113780: Distorted Control Menu and Application Buttons

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82175: Applications Appearing in Windows 3.1 APPS.HLP (D-M)"
-permalink: kb/082/Q82175/
+permalink: /kb/082/Q82175/
 ---
 
 ## Q82175: Applications Appearing in Windows 3.1 APPS.HLP (D-M)

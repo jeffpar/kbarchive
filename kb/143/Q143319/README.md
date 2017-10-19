@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143319: List of Problems Solved by Visual FoxPro 3.0b for Windows"
-permalink: kb/143/Q143319/
+permalink: /kb/143/Q143319/
 ---
 
 ## Q143319: List of Problems Solved by Visual FoxPro 3.0b for Windows

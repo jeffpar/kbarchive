@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140693: FIX: Error When Changing Data Type in Remote View"
-permalink: kb/140/Q140693/
+permalink: /kb/140/Q140693/
 ---
 
 ## Q140693: FIX: Error When Changing Data Type in Remote View

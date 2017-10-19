@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161735: HOWTO: Save the Viewing Order of Nodes in a TreeView"
-permalink: kb/161/Q161735/
+permalink: /kb/161/Q161735/
 ---
 
 ## Q161735: HOWTO: Save the Viewing Order of Nodes in a TreeView

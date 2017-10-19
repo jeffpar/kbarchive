@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154717: Phone Disk Business PowerFinder 96 Does Not Run in Windows NT"
-permalink: kb/154/Q154717/
+permalink: /kb/154/Q154717/
 ---
 
 ## Q154717: Phone Disk Business PowerFinder 96 Does Not Run in Windows NT

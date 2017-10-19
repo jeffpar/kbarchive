@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150465: Doc. Error in CPI-C Programmer's Guide - Ref. to Wincpic32.dll"
-permalink: kb/150/Q150465/
+permalink: /kb/150/Q150465/
 ---
 
 ## Q150465: Doc. Error in CPI-C Programmer's Guide - Ref. to Wincpic32.dll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136768: Benefits of Object-Oriented Coding"
-permalink: kb/136/Q136768/
+permalink: /kb/136/Q136768/
 ---
 
 ## Q136768: Benefits of Object-Oriented Coding

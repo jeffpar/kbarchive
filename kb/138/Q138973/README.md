@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138973: PRB: AppWizard Projects Always Added to Component Gallery"
-permalink: kb/138/Q138973/
+permalink: /kb/138/Q138973/
 ---
 
 ## Q138973: PRB: AppWizard Projects Always Added to Component Gallery

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305210: Routemon.exe Can't Set Router Priority to Zero on OSPF Interface"
-permalink: kb/305/Q305210/
+permalink: /kb/305/Q305210/
 ---
 
 ## Q305210: Routemon.exe Can't Set Router Priority to Zero on OSPF Interface

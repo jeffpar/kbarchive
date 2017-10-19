@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173410: INFO: Server-Side Cursors Are Forced w/More Than One Command Obj"
-permalink: kb/173/Q173410/
+permalink: /kb/173/Q173410/
 ---
 
 ## Q173410: INFO: Server-Side Cursors Are Forced w/More Than One Command Obj

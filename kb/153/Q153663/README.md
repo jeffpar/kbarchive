@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153663: SMS: How to Set Up SMS Alert Actions Write To a Log File"
-permalink: kb/153/Q153663/
+permalink: /kb/153/Q153663/
 ---
 
 ## Q153663: SMS: How to Set Up SMS Alert Actions Write To a Log File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168056: FIX: Mismatched pushjmp/popjmp Call Error and VFP Closes"
-permalink: kb/168/Q168056/
+permalink: /kb/168/Q168056/
 ---
 
 ## Q168056: FIX: Mismatched pushjmp/popjmp Call Error and VFP Closes

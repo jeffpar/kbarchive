@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101945: Scenes 1.0: Shared Printing Halts When Scenes Starts Up"
-permalink: kb/101/Q101945/
+permalink: /kb/101/Q101945/
 ---
 
 ## Q101945: Scenes 1.0: Shared Printing Halts When Scenes Starts Up

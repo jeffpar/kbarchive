@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111966: WFWG WinPopup Incorrectly Reports Print Job Completed"
-permalink: kb/111/Q111966/
+permalink: /kb/111/Q111966/
 ---
 
 ## Q111966: WFWG WinPopup Incorrectly Reports Print Job Completed

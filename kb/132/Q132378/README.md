@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132378: MS-DOS Command Prompt May Hang with Standard VGA Driver"
-permalink: kb/132/Q132378/
+permalink: /kb/132/Q132378/
 ---
 
 ## Q132378: MS-DOS Command Prompt May Hang with Standard VGA Driver

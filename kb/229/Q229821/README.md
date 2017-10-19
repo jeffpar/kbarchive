@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229821: XFOR:GroupWise Dirsync Fails If Directory Synch/Exchange Set to"
-permalink: kb/229/Q229821/
+permalink: /kb/229/Q229821/
 ---
 
 ## Q229821: XFOR:GroupWise Dirsync Fails If Directory Synch/Exchange Set to

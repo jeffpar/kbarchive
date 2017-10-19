@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195636: Fiber System Loses SCSI Reservation After Multiple Restarts"
-permalink: kb/195/Q195636/
+permalink: /kb/195/Q195636/
 ---
 
 ## Q195636: Fiber System Loses SCSI Reservation After Multiple Restarts

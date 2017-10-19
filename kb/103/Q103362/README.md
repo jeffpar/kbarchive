@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103362: Publisher 2.0 May Cause an Exception in the Win16 Subsystem"
-permalink: kb/103/Q103362/
+permalink: /kb/103/Q103362/
 ---
 
 ## Q103362: Publisher 2.0 May Cause an Exception in the Win16 Subsystem

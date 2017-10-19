@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187619: AFC Programmer's Guide Comments and Corrections"
-permalink: kb/187/Q187619/
+permalink: /kb/187/Q187619/
 ---
 
 ## Q187619: AFC Programmer's Guide Comments and Corrections

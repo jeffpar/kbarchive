@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321555: Types of Encryption Included with SNA Server and HIS 2000"
-permalink: kb/321/Q321555/
+permalink: /kb/321/Q321555/
 ---
 
 ## Q321555: Types of Encryption Included with SNA Server and HIS 2000

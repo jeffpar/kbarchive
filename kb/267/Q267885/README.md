@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267885: Age of Empires: The Rise of Rome: Minimum System Requirements"
-permalink: kb/267/Q267885/
+permalink: /kb/267/Q267885/
 ---
 
 ## Q267885: Age of Empires: The Rise of Rome: Minimum System Requirements

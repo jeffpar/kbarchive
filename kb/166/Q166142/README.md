@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166142: PRB: Cannot Re-Choose &lt;None&gt; in Bug Property Sheet"
-permalink: kb/166/Q166142/
+permalink: /kb/166/Q166142/
 ---
 
 ## Q166142: PRB: Cannot Re-Choose &lt;None&gt; in Bug Property Sheet

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200233: XFOR: Modifying Proxy Address Generators for Notes, SNADS, and P"
-permalink: kb/200/Q200233/
+permalink: /kb/200/Q200233/
 ---
 
 ## Q200233: XFOR: Modifying Proxy Address Generators for Notes, SNADS, and P

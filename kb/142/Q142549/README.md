@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142549: How to Troubleshoot VFP OLE Memory Errors in 16-bit Windows"
-permalink: kb/142/Q142549/
+permalink: /kb/142/Q142549/
 ---
 
 ## Q142549: How to Troubleshoot VFP OLE Memory Errors in 16-bit Windows

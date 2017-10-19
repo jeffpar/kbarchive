@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163208: Downstream PU Fails to Activate After Short ACTLU Response"
-permalink: kb/163/Q163208/
+permalink: /kb/163/Q163208/
 ---
 
 ## Q163208: Downstream PU Fails to Activate After Short ACTLU Response

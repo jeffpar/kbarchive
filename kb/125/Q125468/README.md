@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125468: PRB: F6700 Heap Space Exceeded"
-permalink: kb/125/Q125468/
+permalink: /kb/125/Q125468/
 ---
 
 ## Q125468: PRB: F6700 Heap Space Exceeded

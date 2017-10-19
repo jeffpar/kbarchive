@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128767: DriveSpace Does Not Compress Existing Drive"
-permalink: kb/128/Q128767/
+permalink: /kb/128/Q128767/
 ---
 
 ## Q128767: DriveSpace Does Not Compress Existing Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136781: STOP 0x0000005c on Multi-Processor Computer During Setup"
-permalink: kb/136/Q136781/
+permalink: /kb/136/Q136781/
 ---
 
 ## Q136781: STOP 0x0000005c on Multi-Processor Computer During Setup

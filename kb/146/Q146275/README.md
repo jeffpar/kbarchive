@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146275: XCLN: Unable to Save Changes to Attachment in Private Msg."
-permalink: kb/146/Q146275/
+permalink: /kb/146/Q146275/
 ---
 
 ## Q146275: XCLN: Unable to Save Changes to Attachment in Private Msg.

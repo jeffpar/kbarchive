@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69756: Avoid Low-Level Operations in Windows Programs: Use DLLs"
-permalink: kb/069/Q69756/
+permalink: /kb/069/Q69756/
 ---
 
 ## Q69756: Avoid Low-Level Operations in Windows Programs: Use DLLs

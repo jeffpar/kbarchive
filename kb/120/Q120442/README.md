@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120442: Using Hard Disk Utilities with Windows 95"
-permalink: kb/120/Q120442/
+permalink: /kb/120/Q120442/
 ---
 
 ## Q120442: Using Hard Disk Utilities with Windows 95

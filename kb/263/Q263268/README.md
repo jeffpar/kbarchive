@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263268: XADM: Wrong Account Name Prevents New Server from Joining Site"
-permalink: kb/263/Q263268/
+permalink: /kb/263/Q263268/
 ---
 
 ## Q263268: XADM: Wrong Account Name Prevents New Server from Joining Site

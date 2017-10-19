@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180768: BUG: Label Control BackStyle Property Does Not Work"
-permalink: kb/180/Q180768/
+permalink: /kb/180/Q180768/
 ---
 
 ## Q180768: BUG: Label Control BackStyle Property Does Not Work

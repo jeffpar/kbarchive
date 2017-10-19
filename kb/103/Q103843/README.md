@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103843: Cannot Manage Files with Trailing Spaces"
-permalink: kb/103/Q103843/
+permalink: /kb/103/Q103843/
 ---
 
 ## Q103843: Cannot Manage Files with Trailing Spaces

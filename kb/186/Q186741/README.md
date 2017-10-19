@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186741: XFOR: INS Error Msg.: 502 You Have No Permission to Talk"
-permalink: kb/186/Q186741/
+permalink: /kb/186/Q186741/
 ---
 
 ## Q186741: XFOR: INS Error Msg.: 502 You Have No Permission to Talk

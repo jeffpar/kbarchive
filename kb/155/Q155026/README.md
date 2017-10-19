@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155026: Stop 0xC000021a in Windows Subsystem with Status c00000005"
-permalink: kb/155/Q155026/
+permalink: /kb/155/Q155026/
 ---
 
 ## Q155026: Stop 0xC000021a in Windows Subsystem with Status c00000005

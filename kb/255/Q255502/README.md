@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255502: PRB: Err Msg: ASP 0178 When You Run a WebClass in Windows 2000"
-permalink: kb/255/Q255502/
+permalink: /kb/255/Q255502/
 ---
 
 ## Q255502: PRB: Err Msg: ASP 0178 When You Run a WebClass in Windows 2000

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299971: &quot;WLX_SAS_ACTION_LOCK_WKSTA&quot; Returned from GINA Causes Shutdown"
-permalink: kb/299/Q299971/
+permalink: /kb/299/Q299971/
 ---
 
 ## Q299971: &quot;WLX_SAS_ACTION_LOCK_WKSTA&quot; Returned from GINA Causes Shutdown

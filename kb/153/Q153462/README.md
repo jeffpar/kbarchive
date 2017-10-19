@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153462: Err Msg: Event 4010: Unable to Get the Local Computer Name"
-permalink: kb/153/Q153462/
+permalink: /kb/153/Q153462/
 ---
 
 ## Q153462: Err Msg: Event 4010: Unable to Get the Local Computer Name

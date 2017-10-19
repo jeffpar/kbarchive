@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176069: HOWTO: Print a Range of Pages in Word Using OLE Automation"
-permalink: kb/176/Q176069/
+permalink: /kb/176/Q176069/
 ---
 
 ## Q176069: HOWTO: Print a Range of Pages in Word Using OLE Automation

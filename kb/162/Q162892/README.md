@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162892: Problems Adding Second Drive to Dual Channel EIDE/PCI"
-permalink: kb/162/Q162892/
+permalink: /kb/162/Q162892/
 ---
 
 ## Q162892: Problems Adding Second Drive to Dual Channel EIDE/PCI

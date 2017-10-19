@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239067: XADM: SP3 Update Doesn't Work If MBClean v1.93 Is Running"
-permalink: kb/239/Q239067/
+permalink: /kb/239/Q239067/
 ---
 
 ## Q239067: XADM: SP3 Update Doesn't Work If MBClean v1.93 Is Running

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173463: PRB: WillExecute Event Cannot Be Used to Change CursorType"
-permalink: kb/173/Q173463/
+permalink: /kb/173/Q173463/
 ---
 
 ## Q173463: PRB: WillExecute Event Cannot Be Used to Change CursorType

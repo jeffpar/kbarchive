@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87218: PROFS: Additional Command-Line Options for the Gateway"
-permalink: kb/087/Q87218/
+permalink: /kb/087/Q87218/
 ---
 
 ## Q87218: PROFS: Additional Command-Line Options for the Gateway

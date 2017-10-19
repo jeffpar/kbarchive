@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182616: FP: FrontPage Cannot Open a Macintosh Disk-based Web"
-permalink: kb/182/Q182616/
+permalink: /kb/182/Q182616/
 ---
 
 ## Q182616: FP: FrontPage Cannot Open a Macintosh Disk-based Web

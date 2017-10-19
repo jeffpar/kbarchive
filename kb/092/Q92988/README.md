@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92988: Setting a Breakpoint on a Windows API Function"
-permalink: kb/092/Q92988/
+permalink: /kb/092/Q92988/
 ---
 
 ## Q92988: Setting a Breakpoint on a Windows API Function

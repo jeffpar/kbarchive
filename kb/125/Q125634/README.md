@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125634: Printing to a File with a Network Printer"
-permalink: kb/125/Q125634/
+permalink: /kb/125/Q125634/
 ---
 
 ## Q125634: Printing to a File with a Network Printer

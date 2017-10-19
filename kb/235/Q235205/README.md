@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235205: Advertised Program Does Not Run with 10003 Status Message"
-permalink: kb/235/Q235205/
+permalink: /kb/235/Q235205/
 ---
 
 ## Q235205: Advertised Program Does Not Run with 10003 Status Message

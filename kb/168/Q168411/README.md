@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168411: FIX: VS97 Per-File Switch at Project Level Silently Deleted"
-permalink: kb/168/Q168411/
+permalink: /kb/168/Q168411/
 ---
 
 ## Q168411: FIX: VS97 Per-File Switch at Project Level Silently Deleted

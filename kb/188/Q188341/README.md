@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188341: XFOR: AUTH/EHLO Commands Cause Internet Mail Service to Stop"
-permalink: kb/188/Q188341/
+permalink: /kb/188/Q188341/
 ---
 
 ## Q188341: XFOR: AUTH/EHLO Commands Cause Internet Mail Service to Stop

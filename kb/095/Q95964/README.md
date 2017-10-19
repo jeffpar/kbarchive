@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95964: PC Win: Version 3.0b Installs as 3.1 with Shared Windows"
-permalink: kb/095/Q95964/
+permalink: /kb/095/Q95964/
 ---
 
 ## Q95964: PC Win: Version 3.0b Installs as 3.1 with Shared Windows

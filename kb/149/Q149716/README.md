@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149716: New Hardware Is Added to All Hardware Profiles"
-permalink: kb/149/Q149716/
+permalink: /kb/149/Q149716/
 ---
 
 ## Q149716: New Hardware Is Added to All Hardware Profiles

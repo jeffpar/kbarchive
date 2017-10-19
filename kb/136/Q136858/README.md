@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136858: COM Port failures with Digiboard mc/XEM"
-permalink: kb/136/Q136858/
+permalink: /kb/136/Q136858/
 ---
 
 ## Q136858: COM Port failures with Digiboard mc/XEM

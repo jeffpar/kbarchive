@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157364: Attempt to Log on During an Unauthorized Time Period"
-permalink: kb/157/Q157364/
+permalink: /kb/157/Q157364/
 ---
 
 ## Q157364: Attempt to Log on During an Unauthorized Time Period

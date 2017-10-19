@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126783: Dinosaurs: Screen Saver Not Available on Macintosh Version"
-permalink: kb/126/Q126783/
+permalink: /kb/126/Q126783/
 ---
 
 ## Q126783: Dinosaurs: Screen Saver Not Available on Macintosh Version

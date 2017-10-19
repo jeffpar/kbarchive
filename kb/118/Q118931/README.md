@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118931: Writer: Pattern-Filled Word Shapes Don't Print"
-permalink: kb/118/Q118931/
+permalink: /kb/118/Q118931/
 ---
 
 ## Q118931: Writer: Pattern-Filled Word Shapes Don't Print

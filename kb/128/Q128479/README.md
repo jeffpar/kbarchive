@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128479: Baseball 1995: No International Characters in Daily Sign-Up"
-permalink: kb/128/Q128479/
+permalink: /kb/128/Q128479/
 ---
 
 ## Q128479: Baseball 1995: No International Characters in Daily Sign-Up

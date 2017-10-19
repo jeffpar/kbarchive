@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188586: HOWTO: Expedite the Visual Basic Support Process"
-permalink: kb/188/Q188586/
+permalink: /kb/188/Q188586/
 ---
 
 ## Q188586: HOWTO: Expedite the Visual Basic Support Process

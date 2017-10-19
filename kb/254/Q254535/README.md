@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254535: Encarta 2000: Hal.dll Error When You Attempt to Install Program"
-permalink: kb/254/Q254535/
+permalink: /kb/254/Q254535/
 ---
 
 ## Q254535: Encarta 2000: Hal.dll Error When You Attempt to Install Program

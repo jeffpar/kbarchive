@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86157: PROFS: How to Stop the Gateway If It Is &quot;Looping&quot;"
-permalink: kb/086/Q86157/
+permalink: /kb/086/Q86157/
 ---
 
 ## Q86157: PROFS: How to Stop the Gateway If It Is &quot;Looping&quot;

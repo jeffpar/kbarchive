@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125978: SMS Will Not Deinstall On Windows for Workgroups clients"
-permalink: kb/125/Q125978/
+permalink: /kb/125/Q125978/
 ---
 
 ## Q125978: SMS Will Not Deinstall On Windows for Workgroups clients

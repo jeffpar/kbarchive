@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124869: Configuring Sound Blaster Drivers Version 3.02 and 3.04"
-permalink: kb/124/Q124869/
+permalink: /kb/124/Q124869/
 ---
 
 ## Q124869: Configuring Sound Blaster Drivers Version 3.02 and 3.04

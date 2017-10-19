@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162310: All Pages Printed in Grayscale to HP DeskJet 600"
-permalink: kb/162/Q162310/
+permalink: /kb/162/Q162310/
 ---
 
 ## Q162310: All Pages Printed in Grayscale to HP DeskJet 600

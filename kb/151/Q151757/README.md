@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151757: Causes of Error Message &quot;Couldn't Retrieve All Machines...&quot;"
-permalink: kb/151/Q151757/
+permalink: /kb/151/Q151757/
 ---
 
 ## Q151757: Causes of Error Message &quot;Couldn't Retrieve All Machines...&quot;

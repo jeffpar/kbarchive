@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293485: Error Message: Failed to Generate the Certificate Request"
-permalink: kb/293/Q293485/
+permalink: /kb/293/Q293485/
 ---
 
 ## Q293485: Error Message: Failed to Generate the Certificate Request

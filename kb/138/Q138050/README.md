@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138050: Plug and Play Printer Detected Every Time Windows 95 Starts"
-permalink: kb/138/Q138050/
+permalink: /kb/138/Q138050/
 ---
 
 ## Q138050: Plug and Play Printer Detected Every Time Windows 95 Starts

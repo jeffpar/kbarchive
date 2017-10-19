@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104844: Changes to Windows NT Driver Library: Storage"
-permalink: kb/104/Q104844/
+permalink: /kb/104/Q104844/
 ---
 
 ## Q104844: Changes to Windows NT Driver Library: Storage

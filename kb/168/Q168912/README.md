@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168912: INFO: Summary List: Visual C++ 5.0 Known Problems"
-permalink: kb/168/Q168912/
+permalink: /kb/168/Q168912/
 ---
 
 ## Q168912: INFO: Summary List: Visual C++ 5.0 Known Problems

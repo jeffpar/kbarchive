@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182668: BUG: Help File Inconsistent with Adv. Method Properties Window"
-permalink: kb/182/Q182668/
+permalink: /kb/182/Q182668/
 ---
 
 ## Q182668: BUG: Help File Inconsistent with Adv. Method Properties Window

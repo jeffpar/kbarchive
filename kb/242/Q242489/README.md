@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242489: SMS: Run-Time Error When Advertising MFC-Based Package (English"
-permalink: kb/242/Q242489/
+permalink: /kb/242/Q242489/
 ---
 
 ## Q242489: SMS: Run-Time Error When Advertising MFC-Based Package (English

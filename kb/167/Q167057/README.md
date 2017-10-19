@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167057: PRB: Templates Are Not Available After Installing Visual Basic"
-permalink: kb/167/Q167057/
+permalink: /kb/167/Q167057/
 ---
 
 ## Q167057: PRB: Templates Are Not Available After Installing Visual Basic

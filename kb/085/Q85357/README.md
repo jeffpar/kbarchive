@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85357: FAX: How to Check Whether Mail Is Queued for the Gateway"
-permalink: kb/085/Q85357/
+permalink: /kb/085/Q85357/
 ---
 
 ## Q85357: FAX: How to Check Whether Mail Is Queued for the Gateway

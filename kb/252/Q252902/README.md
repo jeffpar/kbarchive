@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252902: XADM: Alpha Store Crash After Applying Windows NT 4.0 SP4"
-permalink: kb/252/Q252902/
+permalink: /kb/252/Q252902/
 ---
 
 ## Q252902: XADM: Alpha Store Crash After Applying Windows NT 4.0 SP4

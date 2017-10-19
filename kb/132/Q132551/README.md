@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132551: Dogs, 500 Nations: Can't Print Portrait or Landscape"
-permalink: kb/132/Q132551/
+permalink: /kb/132/Q132551/
 ---
 
 ## Q132551: Dogs, 500 Nations: Can't Print Portrait or Landscape

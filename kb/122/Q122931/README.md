@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122931: ADT2: How to Display a README.TXT File at the End of Setup"
-permalink: kb/122/Q122931/
+permalink: /kb/122/Q122931/
 ---
 
 ## Q122931: ADT2: How to Display a README.TXT File at the End of Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138210: Julia Child Err Msg: &quot;Unable to Find File&quot;, &quot;Error Opening...&quot;"
-permalink: kb/138/Q138210/
+permalink: /kb/138/Q138210/
 ---
 
 ## Q138210: Julia Child Err Msg: &quot;Unable to Find File&quot;, &quot;Error Opening...&quot;

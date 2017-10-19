@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257531: FIX: Wrong Large Currency Values Returned From Late Bound Object"
-permalink: kb/257/Q257531/
+permalink: /kb/257/Q257531/
 ---
 
 ## Q257531: FIX: Wrong Large Currency Values Returned From Late Bound Object

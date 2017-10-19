@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241223: Overloaded DHCP Server Stops Functioning with Limited Queue Size"
-permalink: kb/241/Q241223/
+permalink: /kb/241/Q241223/
 ---
 
 ## Q241223: Overloaded DHCP Server Stops Functioning with Limited Queue Size

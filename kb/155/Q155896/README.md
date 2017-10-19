@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155896: XFOR: MTA Causes Application Exception Error in Oxpufret"
-permalink: kb/155/Q155896/
+permalink: /kb/155/Q155896/
 ---
 
 ## Q155896: XFOR: MTA Causes Application Exception Error in Oxpufret

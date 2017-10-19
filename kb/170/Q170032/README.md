@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170032: WD97: Multiple-Heading Numbering Converted to Plain Text"
-permalink: kb/170/Q170032/
+permalink: /kb/170/Q170032/
 ---
 
 ## Q170032: WD97: Multiple-Heading Numbering Converted to Plain Text

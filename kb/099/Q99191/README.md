@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99191: Logon to File Server with Boot Disk"
-permalink: kb/099/Q99191/
+permalink: /kb/099/Q99191/
 ---
 
 ## Q99191: Logon to File Server with Boot Disk

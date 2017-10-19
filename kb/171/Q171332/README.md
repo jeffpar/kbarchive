@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171332: Invalid LAA MAC Address Causes Network Driver Failure."
-permalink: kb/171/Q171332/
+permalink: /kb/171/Q171332/
 ---
 
 ## Q171332: Invalid LAA MAC Address Causes Network Driver Failure.

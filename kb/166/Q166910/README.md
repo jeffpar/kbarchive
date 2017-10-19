@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166910: &quot;A Slow Network Connection...&quot; When Logging On at DC"
-permalink: kb/166/Q166910/
+permalink: /kb/166/Q166910/
 ---
 
 ## Q166910: &quot;A Slow Network Connection...&quot; When Logging On at DC

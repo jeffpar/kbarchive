@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247725: SP3 Required During Installation of Windows NT 4.0 Enterprise Ed"
-permalink: kb/247/Q247725/
+permalink: /kb/247/Q247725/
 ---
 
 ## Q247725: SP3 Required During Installation of Windows NT 4.0 Enterprise Ed

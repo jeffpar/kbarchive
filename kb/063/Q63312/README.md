@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63312: Not Receiving VORs Even Though Within Range"
-permalink: kb/063/Q63312/
+permalink: /kb/063/Q63312/
 ---
 
 ## Q63312: Not Receiving VORs Even Though Within Range

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158448: XGEN: Exchange SP3 May Install on Servers Without SP2"
-permalink: kb/158/Q158448/
+permalink: /kb/158/Q158448/
 ---
 
 ## Q158448: XGEN: Exchange SP3 May Install on Servers Without SP2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139751: Microsoft Plus! Does Not Update Program Groups During Setup"
-permalink: kb/139/Q139751/
+permalink: /kb/139/Q139751/
 ---
 
 ## Q139751: Microsoft Plus! Does Not Update Program Groups During Setup

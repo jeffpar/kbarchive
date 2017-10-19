@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254421: MapPoint 2001: How to Print a High Contrast Map"
-permalink: kb/254/Q254421/
+permalink: /kb/254/Q254421/
 ---
 
 ## Q254421: MapPoint 2001: How to Print a High Contrast Map

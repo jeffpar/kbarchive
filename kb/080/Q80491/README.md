@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80491: MS-DOS Upgrade Detects Current MS-DOS in Root Directory"
-permalink: kb/080/Q80491/
+permalink: /kb/080/Q80491/
 ---
 
 ## Q80491: MS-DOS Upgrade Detects Current MS-DOS in Root Directory

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88128: BUG: Minimized Windows Help Yields Incorrect Icon"
-permalink: kb/088/Q88128/
+permalink: /kb/088/Q88128/
 ---
 
 ## Q88128: BUG: Minimized Windows Help Yields Incorrect Icon

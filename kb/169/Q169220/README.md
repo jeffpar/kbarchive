@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169220: Hellbender Trial Version Is Available"
-permalink: kb/169/Q169220/
+permalink: /kb/169/Q169220/
 ---
 
 ## Q169220: Hellbender Trial Version Is Available

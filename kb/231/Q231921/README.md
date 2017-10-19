@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231921: Midtown Madness: No Credit for Passing Through Checkpoints"
-permalink: kb/231/Q231921/
+permalink: /kb/231/Q231921/
 ---
 
 ## Q231921: Midtown Madness: No Credit for Passing Through Checkpoints

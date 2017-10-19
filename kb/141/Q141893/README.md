@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141893: Encarta 1996 for the Macintosh System Requirements"
-permalink: kb/141/Q141893/
+permalink: /kb/141/Q141893/
 ---
 
 ## Q141893: Encarta 1996 for the Macintosh System Requirements

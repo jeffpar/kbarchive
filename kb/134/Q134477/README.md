@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134477: Lion King 1.0: ESS AudioDrive Hardware Not Responding"
-permalink: kb/134/Q134477/
+permalink: /kb/134/Q134477/
 ---
 
 ## Q134477: Lion King 1.0: ESS AudioDrive Hardware Not Responding

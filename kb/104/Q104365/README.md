@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104365: PC DOS: Err Msg: Notice 127 Private Folder Index Missing"
-permalink: kb/104/Q104365/
+permalink: /kb/104/Q104365/
 ---
 
 ## Q104365: PC DOS: Err Msg: Notice 127 Private Folder Index Missing

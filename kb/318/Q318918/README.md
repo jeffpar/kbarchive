@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318918: Writing Secure Code Comments And Corrections"
-permalink: kb/318/Q318918/
+permalink: /kb/318/Q318918/
 ---
 
 ## Q318918: Writing Secure Code Comments And Corrections

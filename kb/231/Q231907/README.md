@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231907: Midtown Madness: Game Is Minimized Unexpectedly"
-permalink: kb/231/Q231907/
+permalink: /kb/231/Q231907/
 ---
 
 ## Q231907: Midtown Madness: Game Is Minimized Unexpectedly

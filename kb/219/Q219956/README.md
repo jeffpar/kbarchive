@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219956: PRB: Too Many Files Open Running  VFP on Windows Terminal Server"
-permalink: kb/219/Q219956/
+permalink: /kb/219/Q219956/
 ---
 
 ## Q219956: PRB: Too Many Files Open Running  VFP on Windows Terminal Server

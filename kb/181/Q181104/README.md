@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181104: WD97: Extend Mode (EXT) Is Unexpectedly Deactivated"
-permalink: kb/181/Q181104/
+permalink: /kb/181/Q181104/
 ---
 
 ## Q181104: WD97: Extend Mode (EXT) Is Unexpectedly Deactivated

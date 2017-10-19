@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257618: XCON: Exchange Server IMC, Internet Mail Service Build Numbers"
-permalink: kb/257/Q257618/
+permalink: /kb/257/Q257618/
 ---
 
 ## Q257618: XCON: Exchange Server IMC, Internet Mail Service Build Numbers

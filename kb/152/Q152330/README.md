@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152330: XADM: Err Msg: Could Not Log On to the Message Store"
-permalink: kb/152/Q152330/
+permalink: /kb/152/Q152330/
 ---
 
 ## Q152330: XADM: Err Msg: Could Not Log On to the Message Store

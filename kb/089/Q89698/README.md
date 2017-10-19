@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89698: Windows Err Msg: You Must Have the File WINA20.386..."
-permalink: kb/089/Q89698/
+permalink: /kb/089/Q89698/
 ---
 
 ## Q89698: Windows Err Msg: You Must Have the File WINA20.386...

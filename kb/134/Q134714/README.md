@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134714: Inventory Processor Processes Large MIF Files Slowly"
-permalink: kb/134/Q134714/
+permalink: /kb/134/Q134714/
 ---
 
 ## Q134714: Inventory Processor Processes Large MIF Files Slowly

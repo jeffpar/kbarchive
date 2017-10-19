@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294663: Error Message: MSN Failed to Load Folcom.dll"
-permalink: kb/294/Q294663/
+permalink: /kb/294/Q294663/
 ---
 
 ## Q294663: Error Message: MSN Failed to Load Folcom.dll

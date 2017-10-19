@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166866: XFOR: SMTP Outbound Mail Transfer Stops After SP1 is Installed"
-permalink: kb/166/Q166866/
+permalink: /kb/166/Q166866/
 ---
 
 ## Q166866: XFOR: SMTP Outbound Mail Transfer Stops After SP1 is Installed

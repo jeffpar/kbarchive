@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187916: Game Stops Responding or Quits Unexpectedly"
-permalink: kb/187/Q187916/
+permalink: /kb/187/Q187916/
 ---
 
 ## Q187916: Game Stops Responding or Quits Unexpectedly

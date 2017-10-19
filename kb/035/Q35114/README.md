@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q35114: PRB: Comparison of a Constant and a Relocatable Is Not Allowed"
-permalink: kb/035/Q35114/
+permalink: /kb/035/Q35114/
 ---
 
 ## Q35114: PRB: Comparison of a Constant and a Relocatable Is Not Allowed

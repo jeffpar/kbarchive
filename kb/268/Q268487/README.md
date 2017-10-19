@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268487: Default Desktop Is Not Displayed For First-time User"
-permalink: kb/268/Q268487/
+permalink: /kb/268/Q268487/
 ---
 
 ## Q268487: Default Desktop Is Not Displayed For First-time User

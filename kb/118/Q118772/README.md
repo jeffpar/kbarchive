@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118772: Err Msg During Backup: Fatal Error on Drive 1"
-permalink: kb/118/Q118772/
+permalink: /kb/118/Q118772/
 ---
 
 ## Q118772: Err Msg During Backup: Fatal Error on Drive 1

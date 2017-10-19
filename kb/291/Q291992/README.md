@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291992: 100% CPU Occurs When Refreshing Deleted Vdir in MetaEdit 2.0/2.1"
-permalink: kb/291/Q291992/
+permalink: /kb/291/Q291992/
 ---
 
 ## Q291992: 100% CPU Occurs When Refreshing Deleted Vdir in MetaEdit 2.0/2.1

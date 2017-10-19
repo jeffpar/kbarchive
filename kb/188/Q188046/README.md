@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188046: SMS: Program Group Control Logs &quot;Fatal error!&quot; Message"
-permalink: kb/188/Q188046/
+permalink: /kb/188/Q188046/
 ---
 
 ## Q188046: SMS: Program Group Control Logs &quot;Fatal error!&quot; Message

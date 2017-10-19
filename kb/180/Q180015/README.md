@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180015: PRB: Stored Procedures Slower with MS Oracle ODBC Driver 2.0"
-permalink: kb/180/Q180015/
+permalink: /kb/180/Q180015/
 ---
 
 ## Q180015: PRB: Stored Procedures Slower with MS Oracle ODBC Driver 2.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125957: Explorapedia: Cannot Hear Tad's Narration"
-permalink: kb/125/Q125957/
+permalink: /kb/125/Q125957/
 ---
 
 ## Q125957: Explorapedia: Cannot Hear Tad's Narration

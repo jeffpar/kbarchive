@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87349: BUG: Color PostScript Drivers Report Incorrect Data"
-permalink: kb/087/Q87349/
+permalink: /kb/087/Q87349/
 ---
 
 ## Q87349: BUG: Color PostScript Drivers Report Incorrect Data

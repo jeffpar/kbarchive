@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159189: XFOR: DXA Drops Transaction if X400 DDA Value Contains a Slash"
-permalink: kb/159/Q159189/
+permalink: /kb/159/Q159189/
 ---
 
 ## Q159189: XFOR: DXA Drops Transaction if X400 DDA Value Contains a Slash

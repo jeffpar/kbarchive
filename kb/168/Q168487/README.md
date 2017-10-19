@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168487: Quota Advisor May Cause Clients to Drop Connections."
-permalink: kb/168/Q168487/
+permalink: /kb/168/Q168487/
 ---
 
 ## Q168487: Quota Advisor May Cause Clients to Drop Connections.

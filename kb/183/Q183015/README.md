@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183015: XADM: Restrictions on ABV Break Mailbox Name Resolution"
-permalink: kb/183/Q183015/
+permalink: /kb/183/Q183015/
 ---
 
 ## Q183015: XADM: Restrictions on ABV Break Mailbox Name Resolution

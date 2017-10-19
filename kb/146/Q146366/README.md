@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146366: Mtg Req: Decline and Don't Send Response - Attendee Icon Wrong"
-permalink: kb/146/Q146366/
+permalink: /kb/146/Q146366/
 ---
 
 ## Q146366: Mtg Req: Decline and Don't Send Response - Attendee Icon Wrong

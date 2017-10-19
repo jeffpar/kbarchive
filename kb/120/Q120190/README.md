@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120190: BUG: ON KEY LABEL RIGHTMOUSE WAIT WINDOW &quot;Text&quot; Malfunctions"
-permalink: kb/120/Q120190/
+permalink: /kb/120/Q120190/
 ---
 
 ## Q120190: BUG: ON KEY LABEL RIGHTMOUSE WAIT WINDOW &quot;Text&quot; Malfunctions

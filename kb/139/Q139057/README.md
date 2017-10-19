@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139057: NET STOP WINS Fails to Stop WINS Service"
-permalink: kb/139/Q139057/
+permalink: /kb/139/Q139057/
 ---
 
 ## Q139057: NET STOP WINS Fails to Stop WINS Service

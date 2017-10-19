@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139706: Windows 95 Shared Folders Update Readme.txt File"
-permalink: kb/139/Q139706/
+permalink: /kb/139/Q139706/
 ---
 
 ## Q139706: Windows 95 Shared Folders Update Readme.txt File

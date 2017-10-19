@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228754: CC III: The Russian Front: Description of the Cc30b.exe Update"
-permalink: kb/228/Q228754/
+permalink: /kb/228/Q228754/
 ---
 
 ## Q228754: CC III: The Russian Front: Description of the Cc30b.exe Update

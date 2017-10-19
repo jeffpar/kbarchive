@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111356: Flight Simulator Instrument Time Isn't Added into Flight Total"
-permalink: kb/111/Q111356/
+permalink: /kb/111/Q111356/
 ---
 
 ## Q111356: Flight Simulator Instrument Time Isn't Added into Flight Total

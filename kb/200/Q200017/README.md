@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200017: Domain Controller with 2012 Errors and Connectivity Problems"
-permalink: kb/200/Q200017/
+permalink: /kb/200/Q200017/
 ---
 
 ## Q200017: Domain Controller with 2012 Errors and Connectivity Problems

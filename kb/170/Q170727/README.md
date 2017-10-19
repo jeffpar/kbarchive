@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170727: WD97: Visual Basic for Applications Command for Copying Files"
-permalink: kb/170/Q170727/
+permalink: /kb/170/Q170727/
 ---
 
 ## Q170727: WD97: Visual Basic for Applications Command for Copying Files

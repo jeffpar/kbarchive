@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87051: MCI: Role of the Gateway PC"
-permalink: kb/087/Q87051/
+permalink: /kb/087/Q87051/
 ---
 
 ## Q87051: MCI: Role of the Gateway PC

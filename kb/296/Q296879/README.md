@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296879: XFOR: Sent Messages Appear in the IMS Queue and Event ID 3038"
-permalink: kb/296/Q296879/
+permalink: /kb/296/Q296879/
 ---
 
 ## Q296879: XFOR: Sent Messages Appear in the IMS Queue and Event ID 3038

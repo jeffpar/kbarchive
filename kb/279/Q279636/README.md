@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279636: MechWarrior 4: Error Message: STOP: Scroll Lock Pressed"
-permalink: kb/279/Q279636/
+permalink: /kb/279/Q279636/
 ---
 
 ## Q279636: MechWarrior 4: Error Message: STOP: Scroll Lock Pressed

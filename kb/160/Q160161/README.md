@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160161: FIX: SPACE BAR+ARROW KEY Causes GPF When Unloading Form"
-permalink: kb/160/Q160161/
+permalink: /kb/160/Q160161/
 ---
 
 ## Q160161: FIX: SPACE BAR+ARROW KEY Causes GPF When Unloading Form

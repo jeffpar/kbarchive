@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160000: SMS: Dos4gw.exe Causes Memory Inventory Inaccuracy"
-permalink: kb/160/Q160000/
+permalink: /kb/160/Q160000/
 ---
 
 ## Q160000: SMS: Dos4gw.exe Causes Memory Inventory Inaccuracy

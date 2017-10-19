@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135259: &quot;More Colors&quot; Color Squares Won't Change from Black or White"
-permalink: kb/135/Q135259/
+permalink: /kb/135/Q135259/
 ---
 
 ## Q135259: &quot;More Colors&quot; Color Squares Won't Change from Black or White

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131345: Using the DISPLAY OBJECTS Command"
-permalink: kb/131/Q131345/
+permalink: /kb/131/Q131345/
 ---
 
 ## Q131345: Using the DISPLAY OBJECTS Command

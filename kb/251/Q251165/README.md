@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251165: XCLN: Adding Contacts to Secondary Contacts Folder in Outlook"
-permalink: kb/251/Q251165/
+permalink: /kb/251/Q251165/
 ---
 
 ## Q251165: XCLN: Adding Contacts to Secondary Contacts Folder in Outlook

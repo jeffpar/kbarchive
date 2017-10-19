@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101135: Main Window Does Not Appear When Program Is Launched"
-permalink: kb/101/Q101135/
+permalink: /kb/101/Q101135/
 ---
 
 ## Q101135: Main Window Does Not Appear When Program Is Launched

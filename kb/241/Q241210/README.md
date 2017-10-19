@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241210: Drive List Shows Only Program Drive in 16-Bit or 32-Bit Program"
-permalink: kb/241/Q241210/
+permalink: /kb/241/Q241210/
 ---
 
 ## Q241210: Drive List Shows Only Program Drive in 16-Bit or 32-Bit Program

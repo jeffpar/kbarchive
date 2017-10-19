@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199162: Issues with Global Groups, Local Groups, and Trusts"
-permalink: kb/199/Q199162/
+permalink: /kb/199/Q199162/
 ---
 
 ## Q199162: Issues with Global Groups, Local Groups, and Trusts

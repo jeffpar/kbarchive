@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63921: Western Digital WDM2, WDM20 Motherboards, and PS/2 Mouse Port"
-permalink: kb/063/Q63921/
+permalink: /kb/063/Q63921/
 ---
 
 ## Q63921: Western Digital WDM2, WDM20 Motherboards, and PS/2 Mouse Port

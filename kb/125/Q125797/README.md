@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125797: Dell Computer Hangs with ATI Mach 64 ISA Display Adapter"
-permalink: kb/125/Q125797/
+permalink: /kb/125/Q125797/
 ---
 
 ## Q125797: Dell Computer Hangs with ATI Mach 64 ISA Display Adapter

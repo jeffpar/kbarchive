@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173912: XCLN: Exchange Generates Conflict Messages for Same PF Replica"
-permalink: kb/173/Q173912/
+permalink: /kb/173/Q173912/
 ---
 
 ## Q173912: XCLN: Exchange Generates Conflict Messages for Same PF Replica

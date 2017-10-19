@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130807: BUG: READ w/ Numeric Literal Subscript Causes Access Violation"
-permalink: kb/130/Q130807/
+permalink: /kb/130/Q130807/
 ---
 
 ## Q130807: BUG: READ w/ Numeric Literal Subscript Causes Access Violation

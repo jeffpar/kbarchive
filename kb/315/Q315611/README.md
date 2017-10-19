@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315611: Train Simulator: Err Msg: Full Install Requires 0 MB to Install"
-permalink: kb/315/Q315611/
+permalink: /kb/315/Q315611/
 ---
 
 ## Q315611: Train Simulator: Err Msg: Full Install Requires 0 MB to Install

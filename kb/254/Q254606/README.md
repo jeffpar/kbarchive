@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254606: XADM: How to Enable Additional Information Store Logging"
-permalink: kb/254/Q254606/
+permalink: /kb/254/Q254606/
 ---
 
 ## Q254606: XADM: How to Enable Additional Information Store Logging

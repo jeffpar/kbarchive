@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217378: XFOR: Chat Service Stops Unexpectedly, Unable to Change Nickname"
-permalink: kb/217/Q217378/
+permalink: /kb/217/Q217378/
 ---
 
 ## Q217378: XFOR: Chat Service Stops Unexpectedly, Unable to Change Nickname

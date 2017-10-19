@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185455: XCON: Dynamic RAS Connector Fails to Maintain an Association"
-permalink: kb/185/Q185455/
+permalink: /kb/185/Q185455/
 ---
 
 ## Q185455: XCON: Dynamic RAS Connector Fails to Maintain an Association

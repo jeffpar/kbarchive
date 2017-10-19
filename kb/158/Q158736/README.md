@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158736: Creating Devices in SQL is Slow with Removable Media Installed"
-permalink: kb/158/Q158736/
+permalink: /kb/158/Q158736/
 ---
 
 ## Q158736: Creating Devices in SQL is Slow with Removable Media Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129261: Cannot Install Windows 95 on Acer Portable Computer"
-permalink: kb/129/Q129261/
+permalink: /kb/129/Q129261/
 ---
 
 ## Q129261: Cannot Install Windows 95 on Acer Portable Computer

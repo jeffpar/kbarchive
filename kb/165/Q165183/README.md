@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165183: SMS: &quot;Could Not Spawn Initmain.exe&quot; Error Message"
-permalink: kb/165/Q165183/
+permalink: /kb/165/Q165183/
 ---
 
 ## Q165183: SMS: &quot;Could Not Spawn Initmain.exe&quot; Error Message

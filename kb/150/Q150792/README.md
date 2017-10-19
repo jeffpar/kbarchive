@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150792: Support for HP 20XT Optical Jukebox"
-permalink: kb/150/Q150792/
+permalink: /kb/150/Q150792/
 ---
 
 ## Q150792: Support for HP 20XT Optical Jukebox

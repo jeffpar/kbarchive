@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194180: FIX: Unregistering ATL Server Causes Access Violation"
-permalink: kb/194/Q194180/
+permalink: /kb/194/Q194180/
 ---
 
 ## Q194180: FIX: Unregistering ATL Server Causes Access Violation

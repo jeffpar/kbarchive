@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125239: Ancient Lands/Dinosaurs: AVI Video Doesn't Play When Clicked"
-permalink: kb/125/Q125239/
+permalink: /kb/125/Q125239/
 ---
 
 ## Q125239: Ancient Lands/Dinosaurs: AVI Video Doesn't Play When Clicked

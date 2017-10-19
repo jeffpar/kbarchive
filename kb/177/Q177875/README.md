@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177875: XADM: Memory Leak in Directory Service of Exchange Server"
-permalink: kb/177/Q177875/
+permalink: /kb/177/Q177875/
 ---
 
 ## Q177875: XADM: Memory Leak in Directory Service of Exchange Server

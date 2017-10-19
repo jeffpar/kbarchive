@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278407: XADM: Event ID 4097 Occurs If You Run the Move Mailbox Wizard"
-permalink: kb/278/Q278407/
+permalink: /kb/278/Q278407/
 ---
 
 ## Q278407: XADM: Event ID 4097 Occurs If You Run the Move Mailbox Wizard

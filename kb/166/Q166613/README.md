@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166613: XCLN: Mac Client Can't Log On If NT Account Has Extended Chars"
-permalink: kb/166/Q166613/
+permalink: /kb/166/Q166613/
 ---
 
 ## Q166613: XCLN: Mac Client Can't Log On If NT Account Has Extended Chars

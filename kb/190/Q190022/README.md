@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190022: XCON: Comparison of X.400 and Site Connectors"
-permalink: kb/190/Q190022/
+permalink: /kb/190/Q190022/
 ---
 
 ## Q190022: XCON: Comparison of X.400 and Site Connectors

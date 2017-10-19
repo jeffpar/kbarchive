@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225425: WD97: Fax Fails with Check Names Dialog Box, Error Message"
-permalink: kb/225/Q225425/
+permalink: /kb/225/Q225425/
 ---
 
 ## Q225425: WD97: Fax Fails with Check Names Dialog Box, Error Message

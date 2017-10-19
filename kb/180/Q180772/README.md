@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180772: PRB: Form Is Movable When Maximized"
-permalink: kb/180/Q180772/
+permalink: /kb/180/Q180772/
 ---
 
 ## Q180772: PRB: Form Is Movable When Maximized

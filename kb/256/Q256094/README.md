@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256094: Explorer.exe May Generate an &quot;Access Violation&quot; Error Message"
-permalink: kb/256/Q256094/
+permalink: /kb/256/Q256094/
 ---
 
 ## Q256094: Explorer.exe May Generate an &quot;Access Violation&quot; Error Message

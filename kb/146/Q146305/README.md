@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146305: Covey Sample Index May Not Show Information"
-permalink: kb/146/Q146305/
+permalink: /kb/146/Q146305/
 ---
 
 ## Q146305: Covey Sample Index May Not Show Information

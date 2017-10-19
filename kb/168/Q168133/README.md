@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168133: XCLN: Deleting the Schedule+ Data from Exchange Server"
-permalink: kb/168/Q168133/
+permalink: /kb/168/Q168133/
 ---
 
 ## Q168133: XCLN: Deleting the Schedule+ Data from Exchange Server

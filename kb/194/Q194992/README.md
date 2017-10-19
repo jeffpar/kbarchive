@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194992: CG3: Clip Gallery Opens Slowly Applying SR-2 Patch"
-permalink: kb/194/Q194992/
+permalink: /kb/194/Q194992/
 ---
 
 ## Q194992: CG3: Clip Gallery Opens Slowly Applying SR-2 Patch

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136973: PPT7: Sorry, PowerPoint Could Not Start or Locate 'PPT Tools'"
-permalink: kb/136/Q136973/
+permalink: /kb/136/Q136973/
 ---
 
 ## Q136973: PPT7: Sorry, PowerPoint Could Not Start or Locate 'PPT Tools'

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163723: KiXtart Error: A Required .dll File, Msvcrt.dll, Not Found"
-permalink: kb/163/Q163723/
+permalink: /kb/163/Q163723/
 ---
 
 ## Q163723: KiXtart Error: A Required .dll File, Msvcrt.dll, Not Found

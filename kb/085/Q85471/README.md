@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85471: WordPerfect's File Manager Incorrectly Maps Fonts"
-permalink: kb/085/Q85471/
+permalink: /kb/085/Q85471/
 ---
 
 ## Q85471: WordPerfect's File Manager Incorrectly Maps Fonts

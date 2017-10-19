@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131523: PC Win: Return Receipt Interpretability with Foreign Language"
-permalink: kb/131/Q131523/
+permalink: /kb/131/Q131523/
 ---
 
 ## Q131523: PC Win: Return Receipt Interpretability with Foreign Language

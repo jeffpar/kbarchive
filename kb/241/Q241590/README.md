@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241590: HOWTO: Use SHFileInfo to Get the Associated Icon for Files"
-permalink: kb/241/Q241590/
+permalink: /kb/241/Q241590/
 ---
 
 ## Q241590: HOWTO: Use SHFileInfo to Get the Associated Icon for Files

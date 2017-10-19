@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113366: Writer: Banner and Card Text Inserted in Wrong Place"
-permalink: kb/113/Q113366/
+permalink: /kb/113/Q113366/
 ---
 
 ## Q113366: Writer: Banner and Card Text Inserted in Wrong Place

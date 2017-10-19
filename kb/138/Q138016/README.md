@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138016: TN3270 Init Status Delay Timer"
-permalink: kb/138/Q138016/
+permalink: /kb/138/Q138016/
 ---
 
 ## Q138016: TN3270 Init Status Delay Timer

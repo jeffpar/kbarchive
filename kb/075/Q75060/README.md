@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75060: Direct Access 5.1 Under MS-DOS 5.0"
-permalink: kb/075/Q75060/
+permalink: /kb/075/Q75060/
 ---
 
 ## Q75060: Direct Access 5.1 Under MS-DOS 5.0

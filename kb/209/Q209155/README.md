@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q209155: Combat Flight Simulator: Overview of Multiplayer Game Issues"
-permalink: kb/209/Q209155/
+permalink: /kb/209/Q209155/
 ---
 
 ## Q209155: Combat Flight Simulator: Overview of Multiplayer Game Issues

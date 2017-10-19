@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249659: BUG: Invalid Page Fault Using Scripting Run-Time on Windows 95"
-permalink: kb/249/Q249659/
+permalink: /kb/249/Q249659/
 ---
 
 ## Q249659: BUG: Invalid Page Fault Using Scripting Run-Time on Windows 95

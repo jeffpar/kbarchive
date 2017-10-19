@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102425: WRKHEURISTICS Bit 14 Controls Raw I/O for LM MS-DOS Client"
-permalink: kb/102/Q102425/
+permalink: /kb/102/Q102425/
 ---
 
 ## Q102425: WRKHEURISTICS Bit 14 Controls Raw I/O for LM MS-DOS Client

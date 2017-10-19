@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161237: PRB: Apply Button on Custom OCX Property Page Always Disabled"
-permalink: kb/161/Q161237/
+permalink: /kb/161/Q161237/
 ---
 
 ## Q161237: PRB: Apply Button on Custom OCX Property Page Always Disabled

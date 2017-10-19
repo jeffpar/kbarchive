@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72493: BUG: Complex Graphics Image Partially Printed"
-permalink: kb/072/Q72493/
+permalink: /kb/072/Q72493/
 ---
 
 ## Q72493: BUG: Complex Graphics Image Partially Printed

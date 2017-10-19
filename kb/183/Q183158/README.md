@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183158: CPS: Phonebook Admin Does Not Start on Chinese Windows NT"
-permalink: kb/183/Q183158/
+permalink: /kb/183/Q183158/
 ---
 
 ## Q183158: CPS: Phonebook Admin Does Not Start on Chinese Windows NT

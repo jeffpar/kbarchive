@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103885: Overview: Interrupt 21 Hook Optimization"
-permalink: kb/103/Q103885/
+permalink: /kb/103/Q103885/
 ---
 
 ## Q103885: Overview: Interrupt 21 Hook Optimization

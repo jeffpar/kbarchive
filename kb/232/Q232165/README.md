@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232165: Enabling Certificate Revocation Checking in IIS 4.0"
-permalink: kb/232/Q232165/
+permalink: /kb/232/Q232165/
 ---
 
 ## Q232165: Enabling Certificate Revocation Checking in IIS 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178096: XCLN: Outlook Client Crashes Accessing Restricted DL"
-permalink: kb/178/Q178096/
+permalink: /kb/178/Q178096/
 ---
 
 ## Q178096: XCLN: Outlook Client Crashes Accessing Restricted DL

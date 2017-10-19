@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321926: Security Override Fails If UserID or Password Is Longer than 10"
-permalink: kb/321/Q321926/
+permalink: /kb/321/Q321926/
 ---
 
 ## Q321926: Security Override Fails If UserID or Password Is Longer than 10

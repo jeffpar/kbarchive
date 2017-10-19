@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142704: Windows NT Mail Client Does Not Handle Long Filenames Correctly"
-permalink: kb/142/Q142704/
+permalink: /kb/142/Q142704/
 ---
 
 ## Q142704: Windows NT Mail Client Does Not Handle Long Filenames Correctly

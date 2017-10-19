@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217181: FIX: PROVIDER_COLUMN_ENTRY Sets DBID.eKind to DBKIND_GUID_NAME"
-permalink: kb/217/Q217181/
+permalink: /kb/217/Q217181/
 ---
 
 ## Q217181: FIX: PROVIDER_COLUMN_ENTRY Sets DBID.eKind to DBKIND_GUID_NAME

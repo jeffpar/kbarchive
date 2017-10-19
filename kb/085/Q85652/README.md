@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85652: PC MAPI: Alert Displayed with Invalid User Name or Password"
-permalink: kb/085/Q85652/
+permalink: /kb/085/Q85652/
 ---
 
 ## Q85652: PC MAPI: Alert Displayed with Invalid User Name or Password

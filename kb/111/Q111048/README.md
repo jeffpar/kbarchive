@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111048: White Lines Appear in Printed Output with Toshiba P1351"
-permalink: kb/111/Q111048/
+permalink: /kb/111/Q111048/
 ---
 
 ## Q111048: White Lines Appear in Printed Output with Toshiba P1351

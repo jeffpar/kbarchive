@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274393: XFOR: Event 10023 &quot;Invalid Container Specified in Control File&quot;"
-permalink: kb/274/Q274393/
+permalink: /kb/274/Q274393/
 ---
 
 ## Q274393: XFOR: Event 10023 &quot;Invalid Container Specified in Control File&quot;

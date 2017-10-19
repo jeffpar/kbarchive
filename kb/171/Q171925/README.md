@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171925: Mac Bookshelf: Cannot Print Landscape Orientation"
-permalink: kb/171/Q171925/
+permalink: /kb/171/Q171925/
 ---
 
 ## Q171925: Mac Bookshelf: Cannot Print Landscape Orientation

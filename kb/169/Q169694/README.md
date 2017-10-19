@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169694: XCON: Content Conversion Fails When MDBEF Formatting Disabled"
-permalink: kb/169/Q169694/
+permalink: /kb/169/Q169694/
 ---
 
 ## Q169694: XCON: Content Conversion Fails When MDBEF Formatting Disabled

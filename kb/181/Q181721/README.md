@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181721: XCON: Messages Not Delivered Over an Association"
-permalink: kb/181/Q181721/
+permalink: /kb/181/Q181721/
 ---
 
 ## Q181721: XCON: Messages Not Delivered Over an Association

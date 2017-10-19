@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74540: Windows Versions 3.0, 3.0a Share Directory Files"
-permalink: kb/074/Q74540/
+permalink: /kb/074/Q74540/
 ---
 
 ## Q74540: Windows Versions 3.0, 3.0a Share Directory Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63780: Flight Simulator: Ultralight Specifications"
-permalink: kb/063/Q63780/
+permalink: /kb/063/Q63780/
 ---
 
 ## Q63780: Flight Simulator: Ultralight Specifications

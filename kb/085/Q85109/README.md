@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85109: VB3 How to Edit Grid Cells in VB Using Overlapped Text Box"
-permalink: kb/085/Q85109/
+permalink: /kb/085/Q85109/
 ---
 
 ## Q85109: VB3 How to Edit Grid Cells in VB Using Overlapped Text Box

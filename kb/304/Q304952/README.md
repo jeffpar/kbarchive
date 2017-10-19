@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304952: Error Message: &quot;Passport Partner Error&quot; at Login"
-permalink: kb/304/Q304952/
+permalink: /kb/304/Q304952/
 ---
 
 ## Q304952: Error Message: &quot;Passport Partner Error&quot; at Login

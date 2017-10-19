@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121657: MAC Encarta 94: &quot;Encarta and Memory Read Me&quot; Contents"
-permalink: kb/121/Q121657/
+permalink: /kb/121/Q121657/
 ---
 
 ## Q121657: MAC Encarta 94: &quot;Encarta and Memory Read Me&quot; Contents

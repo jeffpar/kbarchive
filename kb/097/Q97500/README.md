@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97500: Printing Problems Can be Caused by Timeout, Spooler"
-permalink: kb/097/Q97500/
+permalink: /kb/097/Q97500/
 ---
 
 ## Q97500: Printing Problems Can be Caused by Timeout, Spooler

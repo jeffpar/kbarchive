@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274631: MSN Explorer On Windows 2000 Fails To Launch And No Error Messag"
-permalink: kb/274/Q274631/
+permalink: /kb/274/Q274631/
 ---
 
 ## Q274631: MSN Explorer On Windows 2000 Fails To Launch And No Error Messag

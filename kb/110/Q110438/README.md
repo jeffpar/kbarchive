@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110438: Data in Cache Not Written to Disk with VSafe and SMARTDrive"
-permalink: kb/110/Q110438/
+permalink: /kb/110/Q110438/
 ---
 
 ## Q110438: Data in Cache Not Written to Disk with VSafe and SMARTDrive

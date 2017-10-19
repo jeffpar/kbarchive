@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84991: Write Has Display Problems with WingDings"
-permalink: kb/084/Q84991/
+permalink: /kb/084/Q84991/
 ---
 
 ## Q84991: Write Has Display Problems with WingDings

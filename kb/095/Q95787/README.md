@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95787: Problems Using Norton's Smartcan TSR with SHARE.EXE"
-permalink: kb/095/Q95787/
+permalink: /kb/095/Q95787/
 ---
 
 ## Q95787: Problems Using Norton's Smartcan TSR with SHARE.EXE

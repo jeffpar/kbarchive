@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77988: Setup Disables OK Button If Directory Name Has Extension"
-permalink: kb/077/Q77988/
+permalink: /kb/077/Q77988/
 ---
 
 ## Q77988: Setup Disables OK Button If Directory Name Has Extension

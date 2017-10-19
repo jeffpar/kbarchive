@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110002: FIX: Combining -4Yb with -Ox May Cause Invalid Run-Time Errors"
-permalink: kb/110/Q110002/
+permalink: /kb/110/Q110002/
 ---
 
 ## Q110002: FIX: Combining -4Yb with -Ox May Cause Invalid Run-Time Errors

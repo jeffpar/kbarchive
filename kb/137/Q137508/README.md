@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137508: Overlapping Appointments Cannot Be Modified"
-permalink: kb/137/Q137508/
+permalink: /kb/137/Q137508/
 ---
 
 ## Q137508: Overlapping Appointments Cannot Be Modified

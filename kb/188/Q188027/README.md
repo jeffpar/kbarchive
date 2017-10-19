@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188027: Performance, Audit Logging, and Fixes to the DHCP Service"
-permalink: kb/188/Q188027/
+permalink: /kb/188/Q188027/
 ---
 
 ## Q188027: Performance, Audit Logging, and Fixes to the DHCP Service

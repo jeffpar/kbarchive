@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q299048: MapPoint 2002: &quot;Unable to Locate [CD-ROM Drive]&quot; Err Msg"
-permalink: kb/299/Q299048/
+title: "Q299048: MapPoint 2002: &quot;Unable to Locate &#91;CD-ROM Drive&#93;&quot; Err Msg"
+permalink: /kb/299/Q299048/
 ---
 
-## Q299048: MapPoint 2002: &quot;Unable to Locate [CD-ROM Drive]&quot; Err Msg
+## Q299048: MapPoint 2002: &quot;Unable to Locate &#91;CD-ROM Drive&#93;&quot; Err Msg
 
 	Article: Q299048
 	Product(s): Microsoft Automap

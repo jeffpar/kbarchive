@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322644: Remote Administration Using TNADMIN with -S, -K, or -M Fails"
-permalink: kb/322/Q322644/
+permalink: /kb/322/Q322644/
 ---
 
 ## Q322644: Remote Administration Using TNADMIN with -S, -K, or -M Fails

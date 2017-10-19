@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201315: XFOR: Propagation of Lotus Notes Group to Exchange Server"
-permalink: kb/201/Q201315/
+permalink: /kb/201/Q201315/
 ---
 
 ## Q201315: XFOR: Propagation of Lotus Notes Group to Exchange Server

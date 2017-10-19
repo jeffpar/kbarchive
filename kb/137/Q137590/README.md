@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137590: Circled Exclamation Point for IDE Controller with No Device"
-permalink: kb/137/Q137590/
+permalink: /kb/137/Q137590/
 ---
 
 ## Q137590: Circled Exclamation Point for IDE Controller with No Device

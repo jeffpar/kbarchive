@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134757: CONN: README.TXT: Mail Connection 3.2"
-permalink: kb/134/Q134757/
+permalink: /kb/134/Q134757/
 ---
 
 ## Q134757: CONN: README.TXT: Mail Connection 3.2

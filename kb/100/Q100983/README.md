@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100983: Garbage or Vertical Lines Print on HP PaintJet"
-permalink: kb/100/Q100983/
+permalink: /kb/100/Q100983/
 ---
 
 ## Q100983: Garbage or Vertical Lines Print on HP PaintJet

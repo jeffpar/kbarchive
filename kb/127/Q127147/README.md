@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127147: Baseball 1995 BBLEGAL.TXT (Subscription Agreement)"
-permalink: kb/127/Q127147/
+permalink: /kb/127/Q127147/
 ---
 
 ## Q127147: Baseball 1995 BBLEGAL.TXT (Subscription Agreement)

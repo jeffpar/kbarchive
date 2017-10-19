@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176616: Errors Logon Alerts in Performance Monitor"
-permalink: kb/176/Q176616/
+permalink: /kb/176/Q176616/
 ---
 
 ## Q176616: Errors Logon Alerts in Performance Monitor

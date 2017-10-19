@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118590: How to Capture or Create a Palette from an AVI File"
-permalink: kb/118/Q118590/
+permalink: /kb/118/Q118590/
 ---
 
 ## Q118590: How to Capture or Create a Palette from an AVI File

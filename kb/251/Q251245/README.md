@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251245: &quot;Invalid Name&quot; Error Message When You Log On to MMS with Compass"
-permalink: kb/251/Q251245/
+permalink: /kb/251/Q251245/
 ---
 
 ## Q251245: &quot;Invalid Name&quot; Error Message When You Log On to MMS with Compass

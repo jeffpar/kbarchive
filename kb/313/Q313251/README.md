@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313251: HOW TO: Set Up Anon and Basic Authentication on Same Web Content"
-permalink: kb/313/Q313251/
+permalink: /kb/313/Q313251/
 ---
 
 ## Q313251: HOW TO: Set Up Anon and Basic Authentication on Same Web Content

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166971: WD97: Invalid Page Fault When Normal.dot Is a Document"
-permalink: kb/166/Q166971/
+permalink: /kb/166/Q166971/
 ---
 
 ## Q166971: WD97: Invalid Page Fault When Normal.dot Is a Document

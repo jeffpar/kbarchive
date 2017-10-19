@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176887: FIX: Running VFP Exe as Post-Setup Executable Hangs the Process"
-permalink: kb/176/Q176887/
+permalink: /kb/176/Q176887/
 ---
 
 ## Q176887: FIX: Running VFP Exe as Post-Setup Executable Hangs the Process

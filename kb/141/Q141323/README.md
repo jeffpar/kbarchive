@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141323: Dangerous Creatures: Pictures Do Not Paste with System 7.5"
-permalink: kb/141/Q141323/
+permalink: /kb/141/Q141323/
 ---
 
 ## Q141323: Dangerous Creatures: Pictures Do Not Paste with System 7.5

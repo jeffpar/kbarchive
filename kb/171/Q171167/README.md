@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171167: XCLN: Schedule+ 7.x Cannot Directly Import Version 1.0 CAL Files"
-permalink: kb/171/Q171167/
+permalink: /kb/171/Q171167/
 ---
 
 ## Q171167: XCLN: Schedule+ 7.x Cannot Directly Import Version 1.0 CAL Files

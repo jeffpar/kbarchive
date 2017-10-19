@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102083: FILE: Fw0844.exe FoxDoc Default Template Files"
-permalink: kb/102/Q102083/
+permalink: /kb/102/Q102083/
 ---
 
 ## Q102083: FILE: Fw0844.exe FoxDoc Default Template Files

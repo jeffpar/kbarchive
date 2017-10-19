@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142245: PRB: Setup DDE Error When Installing Visual Basic 4.0"
-permalink: kb/142/Q142245/
+permalink: /kb/142/Q142245/
 ---
 
 ## Q142245: PRB: Setup DDE Error When Installing Visual Basic 4.0

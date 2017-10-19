@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124302: BUG: Setup of Data Source in Use Causes Sharing Violation Err."
-permalink: kb/124/Q124302/
+permalink: /kb/124/Q124302/
 ---
 
 ## Q124302: BUG: Setup of Data Source in Use Causes Sharing Violation Err.

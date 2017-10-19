@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259060: Err Msg: Invalid Addition Response: 19 - CONSTRAINT VIOLATION..."
-permalink: kb/259/Q259060/
+permalink: /kb/259/Q259060/
 ---
 
 ## Q259060: Err Msg: Invalid Addition Response: 19 - CONSTRAINT VIOLATION...

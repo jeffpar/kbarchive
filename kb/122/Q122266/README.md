@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122266: BUG: Line Number Information Incorrect with /DEBUGTYPE:both"
-permalink: kb/122/Q122266/
+permalink: /kb/122/Q122266/
 ---
 
 ## Q122266: BUG: Line Number Information Incorrect with /DEBUGTYPE:both

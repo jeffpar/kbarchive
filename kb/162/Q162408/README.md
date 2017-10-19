@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162408: How to Make IE Recognize Foreign Characters on Windows NT 4.0"
-permalink: kb/162/Q162408/
+permalink: /kb/162/Q162408/
 ---
 
 ## Q162408: How to Make IE Recognize Foreign Characters on Windows NT 4.0

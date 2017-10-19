@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175076: SMS: Windows 95 Clients Cannot Be Remotely Rebooted"
-permalink: kb/175/Q175076/
+permalink: /kb/175/Q175076/
 ---
 
 ## Q175076: SMS: Windows 95 Clients Cannot Be Remotely Rebooted

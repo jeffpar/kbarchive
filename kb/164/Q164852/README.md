@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164852: XCON: Attachments from HP OpenDesk May Not Open"
-permalink: kb/164/Q164852/
+permalink: /kb/164/Q164852/
 ---
 
 ## Q164852: XCON: Attachments from HP OpenDesk May Not Open

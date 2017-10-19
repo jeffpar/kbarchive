@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156732: HOWTO: Print from the Microsoft WebBrowser Control"
-permalink: kb/156/Q156732/
+permalink: /kb/156/Q156732/
 ---
 
 ## Q156732: HOWTO: Print from the Microsoft WebBrowser Control

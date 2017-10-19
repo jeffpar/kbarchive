@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221384: XFOR: Pickup Directory Files w/Single Period Aren't Padded Right"
-permalink: kb/221/Q221384/
+permalink: /kb/221/Q221384/
 ---
 
 ## Q221384: XFOR: Pickup Directory Files w/Single Period Aren't Padded Right

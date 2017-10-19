@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177564: TN3270 Server Access Violation in SRSGetSpecificResource"
-permalink: kb/177/Q177564/
+permalink: /kb/177/Q177564/
 ---
 
 ## Q177564: TN3270 Server Access Violation in SRSGetSpecificResource

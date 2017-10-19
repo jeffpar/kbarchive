@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156433: User Environment Variables Cannot be Modified"
-permalink: kb/156/Q156433/
+permalink: /kb/156/Q156433/
 ---
 
 ## Q156433: User Environment Variables Cannot be Modified

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302486: MechWarrior 4: Gray Box Displayed Over the Playing Screen"
-permalink: kb/302/Q302486/
+permalink: /kb/302/Q302486/
 ---
 
 ## Q302486: MechWarrior 4: Gray Box Displayed Over the Playing Screen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129118: FoxPro Obtains Exclusive Open on Shared Database"
-permalink: kb/129/Q129118/
+permalink: /kb/129/Q129118/
 ---
 
 ## Q129118: FoxPro Obtains Exclusive Open on Shared Database

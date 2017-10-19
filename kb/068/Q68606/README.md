@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68606: Mac Wkst: System Error Occurs When Closing Address Book Window"
-permalink: kb/068/Q68606/
+permalink: /kb/068/Q68606/
 ---
 
 ## Q68606: Mac Wkst: System Error Occurs When Closing Address Book Window

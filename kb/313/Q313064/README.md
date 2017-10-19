@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313064: HOW TO: Monitor Web Server Performance by Using Counter Logs"
-permalink: kb/313/Q313064/
+permalink: /kb/313/Q313064/
 ---
 
 ## Q313064: HOW TO: Monitor Web Server Performance by Using Counter Logs

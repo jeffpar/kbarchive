@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123439: Problems Copying Large Files Using Texel DM 3024 CD-ROM"
-permalink: kb/123/Q123439/
+permalink: /kb/123/Q123439/
 ---
 
 ## Q123439: Problems Copying Large Files Using Texel DM 3024 CD-ROM

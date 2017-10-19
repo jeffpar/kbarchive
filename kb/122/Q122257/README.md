@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122257: DOC: Description of Compiler Error C2712 is Incorrect"
-permalink: kb/122/Q122257/
+permalink: /kb/122/Q122257/
 ---
 
 ## Q122257: DOC: Description of Compiler Error C2712 is Incorrect

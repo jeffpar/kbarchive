@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257686: FIX: Double-Clicking ListBox Control Causes Invalid Page Fault"
-permalink: kb/257/Q257686/
+permalink: /kb/257/Q257686/
 ---
 
 ## Q257686: FIX: Double-Clicking ListBox Control Causes Invalid Page Fault

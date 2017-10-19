@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195620: HOWTO: Check for Component Gallery/Class Browser Version"
-permalink: kb/195/Q195620/
+permalink: /kb/195/Q195620/
 ---
 
 ## Q195620: HOWTO: Check for Component Gallery/Class Browser Version

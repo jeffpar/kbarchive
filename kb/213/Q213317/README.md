@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213317: SMS: Batch programs w/ UNC Working Directory Not Executing"
-permalink: kb/213/Q213317/
+permalink: /kb/213/Q213317/
 ---
 
 ## Q213317: SMS: Batch programs w/ UNC Working Directory Not Executing

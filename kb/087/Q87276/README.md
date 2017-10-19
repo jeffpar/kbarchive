@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87276: Windows Err Msg: Micro Channel Bus Time-out Error"
-permalink: kb/087/Q87276/
+permalink: /kb/087/Q87276/
 ---
 
 ## Q87276: Windows Err Msg: Micro Channel Bus Time-out Error

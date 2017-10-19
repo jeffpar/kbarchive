@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76242: MS-DOS 6.x Setup: Error Renaming Old Utilities"
-permalink: kb/076/Q76242/
+permalink: /kb/076/Q76242/
 ---
 
 ## Q76242: MS-DOS 6.x Setup: Error Renaming Old Utilities

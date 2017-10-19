@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259167: Program Receives &quot;File Is Corrupt or Unreadable&quot; Error Message"
-permalink: kb/259/Q259167/
+permalink: /kb/259/Q259167/
 ---
 
 ## Q259167: Program Receives &quot;File Is Corrupt or Unreadable&quot; Error Message

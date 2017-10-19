@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224379: Characters Unreadable After Applying Pan-Chinese Windows NT SP3"
-permalink: kb/224/Q224379/
+permalink: /kb/224/Q224379/
 ---
 
 ## Q224379: Characters Unreadable After Applying Pan-Chinese Windows NT SP3

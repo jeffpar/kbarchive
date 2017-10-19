@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296398: SMS: Spoolsv.exe Consumes Memory During Inventory"
-permalink: kb/296/Q296398/
+permalink: /kb/296/Q296398/
 ---
 
 ## Q296398: SMS: Spoolsv.exe Consumes Memory During Inventory

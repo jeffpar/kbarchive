@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96958: Err Msg: Microsoft Defrag Will Not Run in Multitasking..."
-permalink: kb/096/Q96958/
+permalink: /kb/096/Q96958/
 ---
 
 ## Q96958: Err Msg: Microsoft Defrag Will Not Run in Multitasking...

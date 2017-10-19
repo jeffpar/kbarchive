@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196421: XADM: SMTP Proxies are Set to &quot;@site.org.com&quot; by Default"
-permalink: kb/196/Q196421/
+permalink: /kb/196/Q196421/
 ---
 
 ## Q196421: XADM: SMTP Proxies are Set to &quot;@site.org.com&quot; by Default

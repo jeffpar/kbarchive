@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75488: Floppy Disk Drive Problems in 386 Enhanced Mode"
-permalink: kb/075/Q75488/
+permalink: /kb/075/Q75488/
 ---
 
 ## Q75488: Floppy Disk Drive Problems in 386 Enhanced Mode

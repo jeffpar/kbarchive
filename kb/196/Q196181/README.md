@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196181: XADM: Moveserv.htm Contents and Index are not Accessible"
-permalink: kb/196/Q196181/
+permalink: /kb/196/Q196181/
 ---
 
 ## Q196181: XADM: Moveserv.htm Contents and Index are not Accessible

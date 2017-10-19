@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140257: Cannot Type User Name or Password Logging on as a Different User"
-permalink: kb/140/Q140257/
+permalink: /kb/140/Q140257/
 ---
 
 ## Q140257: Cannot Type User Name or Password Logging on as a Different User

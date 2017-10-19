@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195573: WD97: Word Doesn't Propose Correct &quot;Address To&quot;"
-permalink: kb/195/Q195573/
+permalink: /kb/195/Q195573/
 ---
 
 ## Q195573: WD97: Word Doesn't Propose Correct &quot;Address To&quot;

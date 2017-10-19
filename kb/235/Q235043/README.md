@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235043: SMS: Smsls Hangs Client with Unsupported Network Redirector"
-permalink: kb/235/Q235043/
+permalink: /kb/235/Q235043/
 ---
 
 ## Q235043: SMS: Smsls Hangs Client with Unsupported Network Redirector

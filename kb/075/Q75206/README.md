@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75206: BUG: Inference Rules Not Invoked on Multiple Targets"
-permalink: kb/075/Q75206/
+permalink: /kb/075/Q75206/
 ---
 
 ## Q75206: BUG: Inference Rules Not Invoked on Multiple Targets

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215388: BUG: AfterLabelEdit Event Fires After Canceling an Edit"
-permalink: kb/215/Q215388/
+permalink: /kb/215/Q215388/
 ---
 
 ## Q215388: BUG: AfterLabelEdit Event Fires After Canceling an Edit

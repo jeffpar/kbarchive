@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125320: Error Finding Network Information Using WinMSD"
-permalink: kb/125/Q125320/
+permalink: /kb/125/Q125320/
 ---
 
 ## Q125320: Error Finding Network Information Using WinMSD

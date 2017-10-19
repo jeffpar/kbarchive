@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108305: INFO: Handling an Existing Call on a Line"
-permalink: kb/108/Q108305/
+permalink: /kb/108/Q108305/
 ---
 
 ## Q108305: INFO: Handling an Existing Call on a Line

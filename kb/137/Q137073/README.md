@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137073: PC WSPlus: Corrupt Schedule File May Prevent Access"
-permalink: kb/137/Q137073/
+permalink: /kb/137/Q137073/
 ---
 
 ## Q137073: PC WSPlus: Corrupt Schedule File May Prevent Access

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88543: Troubleshooting Microsoft and Compatible Mice in Windows"
-permalink: kb/088/Q88543/
+permalink: /kb/088/Q88543/
 ---
 
 ## Q88543: Troubleshooting Microsoft and Compatible Mice in Windows

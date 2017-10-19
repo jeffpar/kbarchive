@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233288: Personal Computer Network File System Daemon (PCNFSD)"
-permalink: kb/233/Q233288/
+permalink: /kb/233/Q233288/
 ---
 
 ## Q233288: Personal Computer Network File System Daemon (PCNFSD)

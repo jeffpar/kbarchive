@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83429: Logitech Mouse May Not Work in Windowed MS-DOS Application"
-permalink: kb/083/Q83429/
+permalink: /kb/083/Q83429/
 ---
 
 ## Q83429: Logitech Mouse May Not Work in Windowed MS-DOS Application

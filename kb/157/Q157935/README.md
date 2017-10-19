@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157935: WD97: Keyboard Shortcuts for Word 97"
-permalink: kb/157/Q157935/
+permalink: /kb/157/Q157935/
 ---
 
 ## Q157935: WD97: Keyboard Shortcuts for Word 97

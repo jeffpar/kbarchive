@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135958: Second Instance of ScanDisk Returns Incorrect Exit Code"
-permalink: kb/135/Q135958/
+permalink: /kb/135/Q135958/
 ---
 
 ## Q135958: Second Instance of ScanDisk Returns Incorrect Exit Code

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143169: User Account Expiration Date Decreases After Verifying Account"
-permalink: kb/143/Q143169/
+permalink: /kb/143/Q143169/
 ---
 
 ## Q143169: User Account Expiration Date Decreases After Verifying Account

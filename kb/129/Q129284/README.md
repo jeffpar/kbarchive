@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129284: Automated Setup Does Not Install BDC"
-permalink: kb/129/Q129284/
+permalink: /kb/129/Q129284/
 ---
 
 ## Q129284: Automated Setup Does Not Install BDC

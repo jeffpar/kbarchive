@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160702: Event 2006 Errors in Xcopy from WinNT 4.0 to OS/2 3.0 Client"
-permalink: kb/160/Q160702/
+permalink: /kb/160/Q160702/
 ---
 
 ## Q160702: Event 2006 Errors in Xcopy from WinNT 4.0 to OS/2 3.0 Client

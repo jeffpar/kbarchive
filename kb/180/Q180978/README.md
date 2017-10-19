@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180978: SMS: Security Considerations for SMS Service Accounts"
-permalink: kb/180/Q180978/
+permalink: /kb/180/Q180978/
 ---
 
 ## Q180978: SMS: Security Considerations for SMS Service Accounts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215084: SMS: Misleading Error Message with SMS Service Manager"
-permalink: kb/215/Q215084/
+permalink: /kb/215/Q215084/
 ---
 
 ## Q215084: SMS: Misleading Error Message with SMS Service Manager

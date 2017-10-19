@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192275: Outlook Express Is Not an Available MSN E-mail Client"
-permalink: kb/192/Q192275/
+permalink: /kb/192/Q192275/
 ---
 
 ## Q192275: Outlook Express Is Not an Available MSN E-mail Client

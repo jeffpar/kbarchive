@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131779: Help Fails for Visual Basic Modules in Microsoft Excel"
-permalink: kb/131/Q131779/
+permalink: /kb/131/Q131779/
 ---
 
 ## Q131779: Help Fails for Visual Basic Modules in Microsoft Excel

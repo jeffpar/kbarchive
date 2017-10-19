@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146475: Vertical Line Appears in a Project Name"
-permalink: kb/146/Q146475/
+permalink: /kb/146/Q146475/
 ---
 
 ## Q146475: Vertical Line Appears in a Project Name

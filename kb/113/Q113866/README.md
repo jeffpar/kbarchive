@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113866: Long Filenames Appear Incorrect in File Manager"
-permalink: kb/113/Q113866/
+permalink: /kb/113/Q113866/
 ---
 
 ## Q113866: Long Filenames Appear Incorrect in File Manager

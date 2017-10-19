@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142713: IIS v1.0 May Fail on Windows NT Shell Technology Preview/Update"
-permalink: kb/142/Q142713/
+permalink: /kb/142/Q142713/
 ---
 
 ## Q142713: IIS v1.0 May Fail on Windows NT Shell Technology Preview/Update

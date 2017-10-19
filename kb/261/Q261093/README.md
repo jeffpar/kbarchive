@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261093: XADM: Readme Document for the Pfinfo.exe Program"
-permalink: kb/261/Q261093/
+permalink: /kb/261/Q261093/
 ---
 
 ## Q261093: XADM: Readme Document for the Pfinfo.exe Program

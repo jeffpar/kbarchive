@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195244: Excel Files for Macintosh Locked by Index Server"
-permalink: kb/195/Q195244/
+permalink: /kb/195/Q195244/
 ---
 
 ## Q195244: Excel Files for Macintosh Locked by Index Server

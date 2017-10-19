@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137516: How to Register an MFC OLE Automation Server to Avoid Failure"
-permalink: kb/137/Q137516/
+permalink: /kb/137/Q137516/
 ---
 
 ## Q137516: How to Register an MFC OLE Automation Server to Avoid Failure

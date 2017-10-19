@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171619: SNA Server Does Not Detect Existing Host Security Domains"
-permalink: kb/171/Q171619/
+permalink: /kb/171/Q171619/
 ---
 
 ## Q171619: SNA Server Does Not Detect Existing Host Security Domains

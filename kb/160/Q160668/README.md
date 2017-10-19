@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160668: PRB: Printing Dialog Increments Indefinitely, Prints Nothing"
-permalink: kb/160/Q160668/
+permalink: /kb/160/Q160668/
 ---
 
 ## Q160668: PRB: Printing Dialog Increments Indefinitely, Prints Nothing

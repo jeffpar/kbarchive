@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168449: PRB: Use of Data-Bound Controls Is Version Dependent"
-permalink: kb/168/Q168449/
+permalink: /kb/168/Q168449/
 ---
 
 ## Q168449: PRB: Use of Data-Bound Controls Is Version Dependent

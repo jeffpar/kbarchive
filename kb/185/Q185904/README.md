@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185904: SMS: New Smstrace Allows Searching and Highlighting of Strings"
-permalink: kb/185/Q185904/
+permalink: /kb/185/Q185904/
 ---
 
 ## Q185904: SMS: New Smstrace Allows Searching and Highlighting of Strings

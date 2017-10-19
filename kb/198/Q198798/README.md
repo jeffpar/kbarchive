@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198798: XADM: Troubleshooting the InterOrg Synch Tool"
-permalink: kb/198/Q198798/
+permalink: /kb/198/Q198798/
 ---
 
 ## Q198798: XADM: Troubleshooting the InterOrg Synch Tool

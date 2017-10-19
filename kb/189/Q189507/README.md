@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189507: PRB: Pset Method Does Not Work When DrawWidth Property &lt; 2"
-permalink: kb/189/Q189507/
+permalink: /kb/189/Q189507/
 ---
 
 ## Q189507: PRB: Pset Method Does Not Work When DrawWidth Property &lt; 2

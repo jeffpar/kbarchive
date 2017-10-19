@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191521: FIX: DROP TABLE Case Sensitive if Table in Persistent Relation"
-permalink: kb/191/Q191521/
+permalink: /kb/191/Q191521/
 ---
 
 ## Q191521: FIX: DROP TABLE Case Sensitive if Table in Persistent Relation

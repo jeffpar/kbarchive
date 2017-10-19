@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152734: How to Obtain the Latest Windows NT 4.0 Service Pack"
-permalink: kb/152/Q152734/
+permalink: /kb/152/Q152734/
 ---
 
 ## Q152734: How to Obtain the Latest Windows NT 4.0 Service Pack

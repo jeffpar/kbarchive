@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100723: HP PaintJet XL 300 Driver Limited to Eight Colors"
-permalink: kb/100/Q100723/
+permalink: /kb/100/Q100723/
 ---
 
 ## Q100723: HP PaintJet XL 300 Driver Limited to Eight Colors

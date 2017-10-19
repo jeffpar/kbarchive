@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72412: Math Coprocessor Detection Hangs System in QBasic"
-permalink: kb/072/Q72412/
+permalink: /kb/072/Q72412/
 ---
 
 ## Q72412: Math Coprocessor Detection Hangs System in QBasic

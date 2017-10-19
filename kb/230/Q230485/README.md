@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230485: HOWTO: Create an Access 2000 Database with MFC DAO"
-permalink: kb/230/Q230485/
+permalink: /kb/230/Q230485/
 ---
 
 ## Q230485: HOWTO: Create an Access 2000 Database with MFC DAO

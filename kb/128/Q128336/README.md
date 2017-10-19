@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128336: MS-DOS 5.0 UNFORMAT.COM Err Msg: Wrong DOS Version"
-permalink: kb/128/Q128336/
+permalink: /kb/128/Q128336/
 ---
 
 ## Q128336: MS-DOS 5.0 UNFORMAT.COM Err Msg: Wrong DOS Version

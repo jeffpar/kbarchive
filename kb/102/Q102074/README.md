@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102074: How to Run a dBASE IV Report File in FoxPro"
-permalink: kb/102/Q102074/
+permalink: /kb/102/Q102074/
 ---
 
 ## Q102074: How to Run a dBASE IV Report File in FoxPro

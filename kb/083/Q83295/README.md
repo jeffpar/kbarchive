@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83295: Pasting Text into Windows Paintbrush"
-permalink: kb/083/Q83295/
+permalink: /kb/083/Q83295/
 ---
 
 ## Q83295: Pasting Text into Windows Paintbrush

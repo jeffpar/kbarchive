@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165713: Creation of an Emergency Repair Disk Fails"
-permalink: kb/165/Q165713/
+permalink: /kb/165/Q165713/
 ---
 
 ## Q165713: Creation of an Emergency Repair Disk Fails

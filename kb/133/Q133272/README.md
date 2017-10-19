@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133272: Unattended Windows NT Setup Always Sets Up the Network"
-permalink: kb/133/Q133272/
+permalink: /kb/133/Q133272/
 ---
 
 ## Q133272: Unattended Windows NT Setup Always Sets Up the Network

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288172: How to Remove PPTP Using the Registry and Manually Delete File"
-permalink: kb/288/Q288172/
+permalink: /kb/288/Q288172/
 ---
 
 ## Q288172: How to Remove PPTP Using the Registry and Manually Delete File

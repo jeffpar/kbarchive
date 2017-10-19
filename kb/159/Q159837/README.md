@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159837: PRB: Setting the Frame Type for IPX During Unattended Setup"
-permalink: kb/159/Q159837/
+permalink: /kb/159/Q159837/
 ---
 
 ## Q159837: PRB: Setting the Frame Type for IPX During Unattended Setup

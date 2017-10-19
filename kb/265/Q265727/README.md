@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265727: XFOR: Internet Mail Service Stops while Obtaining Next Host"
-permalink: kb/265/Q265727/
+permalink: /kb/265/Q265727/
 ---
 
 ## Q265727: XFOR: Internet Mail Service Stops while Obtaining Next Host

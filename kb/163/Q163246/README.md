@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163246: BUG: Visual FoxPro Loses Graphing When Office 97 Removed"
-permalink: kb/163/Q163246/
+permalink: /kb/163/Q163246/
 ---
 
 ## Q163246: BUG: Visual FoxPro Loses Graphing When Office 97 Removed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158473: Upgrading the DHCP Database to Windows NT Server 4.0"
-permalink: kb/158/Q158473/
+permalink: /kb/158/Q158473/
 ---
 
 ## Q158473: Upgrading the DHCP Database to Windows NT Server 4.0

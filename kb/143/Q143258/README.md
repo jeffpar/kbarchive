@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143258: HOWTO: Create Constants and DLL Declarations in a Type Library"
-permalink: kb/143/Q143258/
+permalink: /kb/143/Q143258/
 ---
 
 ## Q143258: HOWTO: Create Constants and DLL Declarations in a Type Library

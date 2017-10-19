@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165448: How to Find Files or Folders in Multiple Locations"
-permalink: kb/165/Q165448/
+permalink: /kb/165/Q165448/
 ---
 
 ## Q165448: How to Find Files or Folders in Multiple Locations

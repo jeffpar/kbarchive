@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90567: Setup Err Msg: Cannot Find the PRTUPD.INF File"
-permalink: kb/090/Q90567/
+permalink: /kb/090/Q90567/
 ---
 
 ## Q90567: Setup Err Msg: Cannot Find the PRTUPD.INF File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155657: Incoming Internet Mail Not Formatted Correctly"
-permalink: kb/155/Q155657/
+permalink: /kb/155/Q155657/
 ---
 
 ## Q155657: Incoming Internet Mail Not Formatted Correctly

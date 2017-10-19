@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198757: DNS Events 5501, 5000, and 9999 Fill Up the Event Log"
-permalink: kb/198/Q198757/
+permalink: /kb/198/Q198757/
 ---
 
 ## Q198757: DNS Events 5501, 5000, and 9999 Fill Up the Event Log

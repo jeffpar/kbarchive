@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97446: Third Party Software Shares Files on NetWare"
-permalink: kb/097/Q97446/
+permalink: /kb/097/Q97446/
 ---
 
 ## Q97446: Third Party Software Shares Files on NetWare

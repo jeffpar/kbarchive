@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139414: Bad IP Address When Using HOSTS or LMHOSTS"
-permalink: kb/139/Q139414/
+permalink: /kb/139/Q139414/
 ---
 
 ## Q139414: Bad IP Address When Using HOSTS or LMHOSTS

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127864: User Manager for Domains Does Not Set Correct Access"
-permalink: kb/127/Q127864/
+permalink: /kb/127/Q127864/
 ---
 
 ## Q127864: User Manager for Domains Does Not Set Correct Access

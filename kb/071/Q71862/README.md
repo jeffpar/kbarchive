@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71862: Brother HL-Series Driver Doesn't Support Italics for Residents"
-permalink: kb/071/Q71862/
+permalink: /kb/071/Q71862/
 ---
 
 ## Q71862: Brother HL-Series Driver Doesn't Support Italics for Residents

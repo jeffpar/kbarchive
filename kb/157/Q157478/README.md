@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157478: WD97: What's New in Word 97"
-permalink: kb/157/Q157478/
+permalink: /kb/157/Q157478/
 ---
 
 ## Q157478: WD97: What's New in Word 97

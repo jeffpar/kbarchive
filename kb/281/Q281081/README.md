@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281081: Links 2001: Cannot See Where the Golf Ball Lands"
-permalink: kb/281/Q281081/
+permalink: /kb/281/Q281081/
 ---
 
 ## Q281081: Links 2001: Cannot See Where the Golf Ball Lands

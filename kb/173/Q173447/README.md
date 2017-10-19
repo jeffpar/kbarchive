@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173447: Limited Support for MPP for 5250 Printing"
-permalink: kb/173/Q173447/
+permalink: /kb/173/Q173447/
 ---
 
 ## Q173447: Limited Support for MPP for 5250 Printing

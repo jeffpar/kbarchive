@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69258: Mac Srv: Crash When Switching Between MSMailBackup and Pyro!"
-permalink: kb/069/Q69258/
+permalink: /kb/069/Q69258/
 ---
 
 ## Q69258: Mac Srv: Crash When Switching Between MSMailBackup and Pyro!

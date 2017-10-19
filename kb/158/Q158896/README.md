@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158896: PPT: How to Add a Macro to a Toolbar"
-permalink: kb/158/Q158896/
+permalink: /kb/158/Q158896/
 ---
 
 ## Q158896: PPT: How to Add a Macro to a Toolbar

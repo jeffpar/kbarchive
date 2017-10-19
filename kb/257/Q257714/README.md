@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257714: FIX: ADODC and DataEnvironment Events Only Work with ADO 2.0"
-permalink: kb/257/Q257714/
+permalink: /kb/257/Q257714/
 ---
 
 ## Q257714: FIX: ADODC and DataEnvironment Events Only Work with ADO 2.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321107: INFO: Visual SourceSafe Integration Is Not Available"
-permalink: kb/321/Q321107/
+permalink: /kb/321/Q321107/
 ---
 
 ## Q321107: INFO: Visual SourceSafe Integration Is Not Available

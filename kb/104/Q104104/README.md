@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104104: FIX: CodeView for Windows Corrupts Display"
-permalink: kb/104/Q104104/
+permalink: /kb/104/Q104104/
 ---
 
 ## Q104104: FIX: CodeView for Windows Corrupts Display

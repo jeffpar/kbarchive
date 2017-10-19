@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91211: How to Change LAN Server Interface to 802.3"
-permalink: kb/091/Q91211/
+permalink: /kb/091/Q91211/
 ---
 
 ## Q91211: How to Change LAN Server Interface to 802.3

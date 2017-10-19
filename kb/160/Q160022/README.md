@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160022: WD97: Symbol Characters Change to Box Characters"
-permalink: kb/160/Q160022/
+permalink: /kb/160/Q160022/
 ---
 
 ## Q160022: WD97: Symbol Characters Change to Box Characters

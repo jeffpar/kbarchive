@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173470: XWEB: Troubleshooting &quot;Failed to get Inbox&quot; Error Message"
-permalink: kb/173/Q173470/
+permalink: /kb/173/Q173470/
 ---
 
 ## Q173470: XWEB: Troubleshooting &quot;Failed to get Inbox&quot; Error Message

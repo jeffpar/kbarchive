@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65111: INFO: Using WriteProfileString to Delete WIN.INI Entries"
-permalink: kb/065/Q65111/
+permalink: /kb/065/Q65111/
 ---
 
 ## Q65111: INFO: Using WriteProfileString to Delete WIN.INI Entries

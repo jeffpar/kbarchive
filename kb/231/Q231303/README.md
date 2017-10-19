@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231303: XFOR: New Internet Mail Service Feature for Setting Size Limit"
-permalink: kb/231/Q231303/
+permalink: /kb/231/Q231303/
 ---
 
 ## Q231303: XFOR: New Internet Mail Service Feature for Setting Size Limit

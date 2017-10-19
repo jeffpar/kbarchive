@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140660: Windows 3.x: How To Change the Windows Video Driver"
-permalink: kb/140/Q140660/
+permalink: /kb/140/Q140660/
 ---
 
 ## Q140660: Windows 3.x: How To Change the Windows Video Driver

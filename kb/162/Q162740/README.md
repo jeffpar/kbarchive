@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162740: Using Motorola Premier 33.6 Modem with MSN"
-permalink: kb/162/Q162740/
+permalink: /kb/162/Q162740/
 ---
 
 ## Q162740: Using Motorola Premier 33.6 Modem with MSN

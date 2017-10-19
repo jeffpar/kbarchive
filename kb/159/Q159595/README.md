@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159595: Missing Uppercase &quot;A&quot; Character in the 1257 Font"
-permalink: kb/159/Q159595/
+permalink: /kb/159/Q159595/
 ---
 
 ## Q159595: Missing Uppercase &quot;A&quot; Character in the 1257 Font

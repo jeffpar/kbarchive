@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152186: Possible Network Data Corruption If Locking Not Used"
-permalink: kb/152/Q152186/
+permalink: /kb/152/Q152186/
 ---
 
 ## Q152186: Possible Network Data Corruption If Locking Not Used

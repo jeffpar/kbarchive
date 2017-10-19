@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326880: Programming Microsoft Windows with Microsoft Visual Basic.NET (C"
-permalink: kb/326/Q326880/
+permalink: /kb/326/Q326880/
 ---
 
 ## Q326880: Programming Microsoft Windows with Microsoft Visual Basic.NET (C

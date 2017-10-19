@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132971: INFO: Merging SourceSafe Files"
-permalink: kb/132/Q132971/
+permalink: /kb/132/Q132971/
 ---
 
 ## Q132971: INFO: Merging SourceSafe Files

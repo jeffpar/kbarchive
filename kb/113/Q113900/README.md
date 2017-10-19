@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113900: FIX: dBASE &amp; FoxPro Memos Corrupted During Concurrent Addnew"
-permalink: kb/113/Q113900/
+permalink: /kb/113/Q113900/
 ---
 
 ## Q113900: FIX: dBASE &amp; FoxPro Memos Corrupted During Concurrent Addnew

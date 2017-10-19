@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104056: DEFINE WINDOW Syntax and &quot;Position Off Screen&quot; Error"
-permalink: kb/104/Q104056/
+permalink: /kb/104/Q104056/
 ---
 
 ## Q104056: DEFINE WINDOW Syntax and &quot;Position Off Screen&quot; Error

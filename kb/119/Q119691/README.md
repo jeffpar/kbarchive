@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119691: How to Format Telephone Numbers with PICTURE Mask"
-permalink: kb/119/Q119691/
+permalink: /kb/119/Q119691/
 ---
 
 ## Q119691: How to Format Telephone Numbers with PICTURE Mask

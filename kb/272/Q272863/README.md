@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272863: XADM: Information Store AV When Encoding Corrupted HTML Msg."
-permalink: kb/272/Q272863/
+permalink: /kb/272/Q272863/
 ---
 
 ## Q272863: XADM: Information Store AV When Encoding Corrupted HTML Msg.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76297: LAN Manager/MS-DOS 5.0 Supplemental Disks README File"
-permalink: kb/076/Q76297/
+permalink: /kb/076/Q76297/
 ---
 
 ## Q76297: LAN Manager/MS-DOS 5.0 Supplemental Disks README File

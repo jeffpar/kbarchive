@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291123: XFOR: Error Message When Installing the Internet Mail Service"
-permalink: kb/291/Q291123/
+permalink: /kb/291/Q291123/
 ---
 
 ## Q291123: XFOR: Error Message When Installing the Internet Mail Service

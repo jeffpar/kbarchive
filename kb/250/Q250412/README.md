@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250412: SMS: Cannot Select Query Result Format"
-permalink: kb/250/Q250412/
+permalink: /kb/250/Q250412/
 ---
 
 ## Q250412: SMS: Cannot Select Query Result Format

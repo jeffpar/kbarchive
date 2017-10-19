@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239760: XADM: How to Recover Organizational Forms"
-permalink: kb/239/Q239760/
+permalink: /kb/239/Q239760/
 ---
 
 ## Q239760: XADM: How to Recover Organizational Forms

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109994: Sound System: Microphone Doesn't Work with Microphone Input"
-permalink: kb/109/Q109994/
+permalink: /kb/109/Q109994/
 ---
 
 ## Q109994: Sound System: Microphone Doesn't Work with Microphone Input

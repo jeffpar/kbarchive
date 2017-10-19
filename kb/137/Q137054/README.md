@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137054: PPT7: How to Copy Multiple Slides into a Word Document."
-permalink: kb/137/Q137054/
+permalink: /kb/137/Q137054/
 ---
 
 ## Q137054: PPT7: How to Copy Multiple Slides into a Word Document.

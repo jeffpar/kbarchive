@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173809: XADM: Cluster-Aware Exchange Disables Server Monitors"
-permalink: kb/173/Q173809/
+permalink: /kb/173/Q173809/
 ---
 
 ## Q173809: XADM: Cluster-Aware Exchange Disables Server Monitors

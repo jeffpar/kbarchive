@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129192: BUG: Keyword Expansion Fails on the Macintosh"
-permalink: kb/129/Q129192/
+permalink: /kb/129/Q129192/
 ---
 
 ## Q129192: BUG: Keyword Expansion Fails on the Macintosh

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297826: FIX: CHRSAW() Function Can Hang When AutoYield = .F."
-permalink: kb/297/Q297826/
+permalink: /kb/297/Q297826/
 ---
 
 ## Q297826: FIX: CHRSAW() Function Can Hang When AutoYield = .F.

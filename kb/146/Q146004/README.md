@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146004: SNMP Counter Values Are Unreliable in SMP Computers"
-permalink: kb/146/Q146004/
+permalink: /kb/146/Q146004/
 ---
 
 ## Q146004: SNMP Counter Values Are Unreliable in SMP Computers

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111599: BUG: Character Background Is Not Painted Correctly"
-permalink: kb/111/Q111599/
+permalink: /kb/111/Q111599/
 ---
 
 ## Q111599: BUG: Character Background Is Not Painted Correctly

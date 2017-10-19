@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246919: FIX: VB Crashes on ActiveX Control Interface Wizard Code"
-permalink: kb/246/Q246919/
+permalink: /kb/246/Q246919/
 ---
 
 ## Q246919: FIX: VB Crashes on ActiveX Control Interface Wizard Code

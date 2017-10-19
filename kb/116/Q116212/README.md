@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116212: FIX: Assertion Using Multiple %1 (or %2) in AfxFormatString1"
-permalink: kb/116/Q116212/
+permalink: /kb/116/Q116212/
 ---
 
 ## Q116212: FIX: Assertion Using Multiple %1 (or %2) in AfxFormatString1

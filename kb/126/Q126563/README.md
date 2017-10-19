@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126563: PRB: SetItemRects Causes Server to Change Zoom Factor"
-permalink: kb/126/Q126563/
+permalink: /kb/126/Q126563/
 ---
 
 ## Q126563: PRB: SetItemRects Causes Server to Change Zoom Factor

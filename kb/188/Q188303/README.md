@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188303: Random Stop 0x50 Errors on Cirrus Video Adapters"
-permalink: kb/188/Q188303/
+permalink: /kb/188/Q188303/
 ---
 
 ## Q188303: Random Stop 0x50 Errors on Cirrus Video Adapters

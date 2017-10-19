@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299752: Problems Occur with Site After You Edit the CCD"
-permalink: kb/299/Q299752/
+permalink: /kb/299/Q299752/
 ---
 
 ## Q299752: Problems Occur with Site After You Edit the CCD

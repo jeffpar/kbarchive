@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188348: Specially-Malformed FTP Requests May Create Denial of Service"
-permalink: kb/188/Q188348/
+permalink: /kb/188/Q188348/
 ---
 
 ## Q188348: Specially-Malformed FTP Requests May Create Denial of Service

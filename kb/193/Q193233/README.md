@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193233: Rpcss.exe Consumes 100% CPU Due to RPC Spoofing Attack"
-permalink: kb/193/Q193233/
+permalink: /kb/193/Q193233/
 ---
 
 ## Q193233: Rpcss.exe Consumes 100% CPU Due to RPC Spoofing Attack

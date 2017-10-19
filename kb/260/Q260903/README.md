@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260903: StarLancer: Stops Responding at Title Screen or During Briefing"
-permalink: kb/260/Q260903/
+permalink: /kb/260/Q260903/
 ---
 
 ## Q260903: StarLancer: Stops Responding at Title Screen or During Briefing

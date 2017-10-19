@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174603: You Do Not Receive E-mail When You Connect to MSN with DirectPC"
-permalink: kb/174/Q174603/
+permalink: /kb/174/Q174603/
 ---
 
 ## Q174603: You Do Not Receive E-mail When You Connect to MSN with DirectPC

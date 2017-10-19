@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168382: PRB: Using the Stop Build Command May Corrupt Output Files"
-permalink: kb/168/Q168382/
+permalink: /kb/168/Q168382/
 ---
 
 ## Q168382: PRB: Using the Stop Build Command May Corrupt Output Files

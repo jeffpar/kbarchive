@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128382: UT2: Access Upsizing Tools Information Available"
-permalink: kb/128/Q128382/
+permalink: /kb/128/Q128382/
 ---
 
 ## Q128382: UT2: Access Upsizing Tools Information Available

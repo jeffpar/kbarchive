@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231251: SMS: IBM Networks Coordinated Logon Client Hangs Installation"
-permalink: kb/231/Q231251/
+permalink: /kb/231/Q231251/
 ---
 
 ## Q231251: SMS: IBM Networks Coordinated Logon Client Hangs Installation

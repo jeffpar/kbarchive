@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154505: XFOR: SMTP Protocol Log Not Created When Minimally Logging"
-permalink: kb/154/Q154505/
+permalink: /kb/154/Q154505/
 ---
 
 ## Q154505: XFOR: SMTP Protocol Log Not Created When Minimally Logging

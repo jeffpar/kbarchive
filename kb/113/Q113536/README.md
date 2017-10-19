@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113536: WFWG 3.11 Err Msg: The Password You Specified Is Incorrect..."
-permalink: kb/113/Q113536/
+permalink: /kb/113/Q113536/
 ---
 
 ## Q113536: WFWG 3.11 Err Msg: The Password You Specified Is Incorrect...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241764: No Terminal Server Uninstall Compatibility Script for Outlook 98"
-permalink: kb/241/Q241764/
+permalink: /kb/241/Q241764/
 ---
 
 ## Q241764: No Terminal Server Uninstall Compatibility Script for Outlook 98

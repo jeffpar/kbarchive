@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152526: Changing the Default Interval for User Tokens in IIS"
-permalink: kb/152/Q152526/
+permalink: /kb/152/Q152526/
 ---
 
 ## Q152526: Changing the Default Interval for User Tokens in IIS

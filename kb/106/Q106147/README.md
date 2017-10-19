@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106147: DosPeekNmPipe Returns Incorrect bRead Value"
-permalink: kb/106/Q106147/
+permalink: /kb/106/Q106147/
 ---
 
 ## Q106147: DosPeekNmPipe Returns Incorrect bRead Value

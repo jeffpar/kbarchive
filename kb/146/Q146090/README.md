@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146090: Configuring Proteon ProNET-4/16 p1394 Token Ring Adapter"
-permalink: kb/146/Q146090/
+permalink: /kb/146/Q146090/
 ---
 
 ## Q146090: Configuring Proteon ProNET-4/16 p1394 Token Ring Adapter

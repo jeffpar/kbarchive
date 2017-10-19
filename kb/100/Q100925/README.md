@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100925: SMTP: Err Msg: Spawn (SMTPget): (2) No Such File or Directory"
-permalink: kb/100/Q100925/
+permalink: /kb/100/Q100925/
 ---
 
 ## Q100925: SMTP: Err Msg: Spawn (SMTPget): (2) No Such File or Directory

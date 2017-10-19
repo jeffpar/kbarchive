@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94780: ISAMCVT Problems Converting BTRIEVE Files"
-permalink: kb/094/Q94780/
+permalink: /kb/094/Q94780/
 ---
 
 ## Q94780: ISAMCVT Problems Converting BTRIEVE Files

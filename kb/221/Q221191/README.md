@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221191: How to Install/Extract Symbols for Windows NT 4.0"
-permalink: kb/221/Q221191/
+permalink: /kb/221/Q221191/
 ---
 
 ## Q221191: How to Install/Extract Symbols for Windows NT 4.0

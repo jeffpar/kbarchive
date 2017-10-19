@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253198: Asterisk Before Preferred NetWare Server May Cause Problems"
-permalink: kb/253/Q253198/
+permalink: /kb/253/Q253198/
 ---
 
 ## Q253198: Asterisk Before Preferred NetWare Server May Cause Problems

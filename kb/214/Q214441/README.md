@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214441: Access Violation in Spoolss.exe on Windows NT Terminal Server"
-permalink: kb/214/Q214441/
+permalink: /kb/214/Q214441/
 ---
 
 ## Q214441: Access Violation in Spoolss.exe on Windows NT Terminal Server

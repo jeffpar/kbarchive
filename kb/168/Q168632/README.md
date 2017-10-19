@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168632: WD97: Versions Lost When Using 'Send To' Mail Recipient"
-permalink: kb/168/Q168632/
+permalink: /kb/168/Q168632/
 ---
 
 ## Q168632: WD97: Versions Lost When Using 'Send To' Mail Recipient

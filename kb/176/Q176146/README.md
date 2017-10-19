@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176146: XCON: X.400 Connector Line-Wrap Cuts Msg Line at 80 Chars"
-permalink: kb/176/Q176146/
+permalink: /kb/176/Q176146/
 ---
 
 ## Q176146: XCON: X.400 Connector Line-Wrap Cuts Msg Line at 80 Chars

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q211226: Error Message: This Game Only Works with Windows 95"
-permalink: kb/211/Q211226/
+permalink: /kb/211/Q211226/
 ---
 
 ## Q211226: Error Message: This Game Only Works with Windows 95

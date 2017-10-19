@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112277: PC Win: StripGatewayHeaders Requires FIPS TEXTBORDER"
-permalink: kb/112/Q112277/
+permalink: /kb/112/Q112277/
 ---
 
 ## Q112277: PC Win: StripGatewayHeaders Requires FIPS TEXTBORDER

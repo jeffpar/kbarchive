@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112985: FIX: new Allocates 0 Bytes for Typedef Class Function Pointer"
-permalink: kb/112/Q112985/
+permalink: /kb/112/Q112985/
 ---
 
 ## Q112985: FIX: new Allocates 0 Bytes for Typedef Class Function Pointer

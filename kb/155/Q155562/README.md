@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155562: Cannot Enter Virus Scan Time in Symantec Norton NT Tools"
-permalink: kb/155/Q155562/
+permalink: /kb/155/Q155562/
 ---
 
 ## Q155562: Cannot Enter Virus Scan Time in Symantec Norton NT Tools

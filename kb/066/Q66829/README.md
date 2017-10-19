@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66829: ASD: Cannot Change NAV1 from OBS to BRG"
-permalink: kb/066/Q66829/
+permalink: /kb/066/Q66829/
 ---
 
 ## Q66829: ASD: Cannot Change NAV1 from OBS to BRG

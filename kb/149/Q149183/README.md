@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149183: PRB: Insufficient Memory If You Use PGUP or PGDN Key w/ Lists"
-permalink: kb/149/Q149183/
+permalink: /kb/149/Q149183/
 ---
 
 ## Q149183: PRB: Insufficient Memory If You Use PGUP or PGDN Key w/ Lists

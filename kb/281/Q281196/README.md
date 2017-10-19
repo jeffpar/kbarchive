@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281196: Combat Flight Simulator 2: Lights in Virtual Cockpit View Flash"
-permalink: kb/281/Q281196/
+permalink: /kb/281/Q281196/
 ---
 
 ## Q281196: Combat Flight Simulator 2: Lights in Virtual Cockpit View Flash

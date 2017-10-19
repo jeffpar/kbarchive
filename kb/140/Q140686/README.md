@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140686: PC WSPlus Win: Err Msg: Your Message File Could Not Be Located"
-permalink: kb/140/Q140686/
+permalink: /kb/140/Q140686/
 ---
 
 ## Q140686: PC WSPlus Win: Err Msg: Your Message File Could Not Be Located

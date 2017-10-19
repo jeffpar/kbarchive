@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180229: Calling CONVERT Before RECEIVE_ALLOCATE May Lead to Event 60"
-permalink: kb/180/Q180229/
+permalink: /kb/180/Q180229/
 ---
 
 ## Q180229: Calling CONVERT Before RECEIVE_ALLOCATE May Lead to Event 60

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238182: BUG: GET on a Pinned and Labeled File Gets Wrong Version"
-permalink: kb/238/Q238182/
+permalink: /kb/238/Q238182/
 ---
 
 ## Q238182: BUG: GET on a Pinned and Labeled File Gets Wrong Version

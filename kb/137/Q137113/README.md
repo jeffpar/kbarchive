@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137113: Disk Defragmenter Restarts Continually with Find Fast"
-permalink: kb/137/Q137113/
+permalink: /kb/137/Q137113/
 ---
 
 ## Q137113: Disk Defragmenter Restarts Continually with Find Fast

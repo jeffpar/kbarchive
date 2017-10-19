@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221154: CGI Application Unable to Parse STDIN During Redirection"
-permalink: kb/221/Q221154/
+permalink: /kb/221/Q221154/
 ---
 
 ## Q221154: CGI Application Unable to Parse STDIN During Redirection

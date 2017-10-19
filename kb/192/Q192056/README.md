@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192056: Point and Print Functionality with More Than 20 Driver Files"
-permalink: kb/192/Q192056/
+permalink: /kb/192/Q192056/
 ---
 
 ## Q192056: Point and Print Functionality with More Than 20 Driver Files

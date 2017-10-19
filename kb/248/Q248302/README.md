@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248302: Fighter Ace II: Rudder on Logitech WingMan Does Not Function"
-permalink: kb/248/Q248302/
+permalink: /kb/248/Q248302/
 ---
 
 ## Q248302: Fighter Ace II: Rudder on Logitech WingMan Does Not Function

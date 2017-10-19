@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170377: XADM: Removing SMTP Addresses for All Mailboxes"
-permalink: kb/170/Q170377/
+permalink: /kb/170/Q170377/
 ---
 
 ## Q170377: XADM: Removing SMTP Addresses for All Mailboxes

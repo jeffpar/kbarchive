@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188000: Cannot Enter Stand-Alone Dieresis Character on Swiss Keyboards"
-permalink: kb/188/Q188000/
+permalink: /kb/188/Q188000/
 ---
 
 ## Q188000: Cannot Enter Stand-Alone Dieresis Character on Swiss Keyboards

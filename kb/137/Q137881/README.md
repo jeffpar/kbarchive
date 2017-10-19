@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137881: Print and Copy Not Available from within Help"
-permalink: kb/137/Q137881/
+permalink: /kb/137/Q137881/
 ---
 
 ## Q137881: Print and Copy Not Available from within Help

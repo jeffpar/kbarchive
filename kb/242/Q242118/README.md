@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242118: Connection Issues with Seagate Backup Exec Version 7.0 Build 719"
-permalink: kb/242/Q242118/
+permalink: /kb/242/Q242118/
 ---
 
 ## Q242118: Connection Issues with Seagate Backup Exec Version 7.0 Build 719

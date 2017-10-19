@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66503: Cannot ALT+ESC or CTRL+ESC to Switch Out of Learning Windows"
-permalink: kb/066/Q66503/
+permalink: /kb/066/Q66503/
 ---
 
 ## Q66503: Cannot ALT+ESC or CTRL+ESC to Switch Out of Learning Windows

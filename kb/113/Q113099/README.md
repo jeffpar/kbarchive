@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113099: Bookshelf: Footnotes Not Included When Tables Printed/Copied"
-permalink: kb/113/Q113099/
+permalink: /kb/113/Q113099/
 ---
 
 ## Q113099: Bookshelf: Footnotes Not Included When Tables Printed/Copied

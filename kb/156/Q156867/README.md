@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156867: PRB: SYS(6) Function Returns Empty String"
-permalink: kb/156/Q156867/
+permalink: /kb/156/Q156867/
 ---
 
 ## Q156867: PRB: SYS(6) Function Returns Empty String

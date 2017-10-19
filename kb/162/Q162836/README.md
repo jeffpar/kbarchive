@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162836: XCLN: TCP/IP RPC Calls Fail if AppleTalk Is Not Enabled"
-permalink: kb/162/Q162836/
+permalink: /kb/162/Q162836/
 ---
 
 ## Q162836: XCLN: TCP/IP RPC Calls Fail if AppleTalk Is Not Enabled

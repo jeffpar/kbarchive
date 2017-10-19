@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158086: STL Sample for the list::back, list::front Functions"
-permalink: kb/158/Q158086/
+permalink: /kb/158/Q158086/
 ---
 
 ## Q158086: STL Sample for the list::back, list::front Functions

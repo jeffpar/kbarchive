@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91737: PC Adm: External PO Not Listed in RNETWORK.GLB Regeneration"
-permalink: kb/091/Q91737/
+permalink: /kb/091/Q91737/
 ---
 
 ## Q91737: PC Adm: External PO Not Listed in RNETWORK.GLB Regeneration

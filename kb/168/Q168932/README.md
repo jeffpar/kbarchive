@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168932: BUG: Multiple Based Conversion Results May Be Incorrect"
-permalink: kb/168/Q168932/
+permalink: /kb/168/Q168932/
 ---
 
 ## Q168932: BUG: Multiple Based Conversion Results May Be Incorrect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244169: How to Configure IAS to Deny Access Immediately"
-permalink: kb/244/Q244169/
+permalink: /kb/244/Q244169/
 ---
 
 ## Q244169: How to Configure IAS to Deny Access Immediately

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79539: FAST Versions 3.0x or Later Required with MS-DOS 5.0"
-permalink: kb/079/Q79539/
+permalink: /kb/079/Q79539/
 ---
 
 ## Q79539: FAST Versions 3.0x or Later Required with MS-DOS 5.0

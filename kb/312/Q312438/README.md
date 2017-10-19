@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312438: Older Versions of Profgen.exe and Newprof.exe Fail on Win2000"
-permalink: kb/312/Q312438/
+permalink: /kb/312/Q312438/
 ---
 
 ## Q312438: Older Versions of Profgen.exe and Newprof.exe Fail on Win2000

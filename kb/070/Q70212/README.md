@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70212: Novell MAP ROOT and File Copy Errors"
-permalink: kb/070/Q70212/
+permalink: /kb/070/Q70212/
 ---
 
 ## Q70212: Novell MAP ROOT and File Copy Errors

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142563: Large IDE Drive Support Using AMI Disk Extender"
-permalink: kb/142/Q142563/
+permalink: /kb/142/Q142563/
 ---
 
 ## Q142563: Large IDE Drive Support Using AMI Disk Extender

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167248: How to Demote to BDC When Two PDCs Present"
-permalink: kb/167/Q167248/
+permalink: /kb/167/Q167248/
 ---
 
 ## Q167248: How to Demote to BDC When Two PDCs Present

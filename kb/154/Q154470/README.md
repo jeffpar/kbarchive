@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154470: BUG: Long File Name Working Directory Not Created"
-permalink: kb/154/Q154470/
+permalink: /kb/154/Q154470/
 ---
 
 ## Q154470: BUG: Long File Name Working Directory Not Created

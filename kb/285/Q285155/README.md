@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285155: Academic Learning Series Microsoft Windows 2000 Active Director"
-permalink: kb/285/Q285155/
+permalink: /kb/285/Q285155/
 ---
 
 ## Q285155: Academic Learning Series Microsoft Windows 2000 Active Director

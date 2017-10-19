@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155392: HOWTO: Creating a Connection to SQL Server Without a Datasource"
-permalink: kb/155/Q155392/
+permalink: /kb/155/Q155392/
 ---
 
 ## Q155392: HOWTO: Creating a Connection to SQL Server Without a Datasource

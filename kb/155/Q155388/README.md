@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155388: PRB: CLEAR RESOURCE Does Not Appear to Work"
-permalink: kb/155/Q155388/
+permalink: /kb/155/Q155388/
 ---
 
 ## Q155388: PRB: CLEAR RESOURCE Does Not Appear to Work

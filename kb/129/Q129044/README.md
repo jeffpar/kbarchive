@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129044: Restoring to Alternate Path Using Windows NT Backup"
-permalink: kb/129/Q129044/
+permalink: /kb/129/Q129044/
 ---
 
 ## Q129044: Restoring to Alternate Path Using Windows NT Backup

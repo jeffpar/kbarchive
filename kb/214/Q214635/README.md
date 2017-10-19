@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214635: XADM: ESEUTIL /P Crashes on a Corrupt Database"
-permalink: kb/214/Q214635/
+permalink: /kb/214/Q214635/
 ---
 
 ## Q214635: XADM: ESEUTIL /P Crashes on a Corrupt Database

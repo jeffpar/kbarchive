@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157837: SMS: Windows Clients Exit to MS-DOS During Use of Help Desk"
-permalink: kb/157/Q157837/
+permalink: /kb/157/Q157837/
 ---
 
 ## Q157837: SMS: Windows Clients Exit to MS-DOS During Use of Help Desk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286504: eVB CreateObject Function Causes Memory Leak"
-permalink: kb/286/Q286504/
+permalink: /kb/286/Q286504/
 ---
 
 ## Q286504: eVB CreateObject Function Causes Memory Leak

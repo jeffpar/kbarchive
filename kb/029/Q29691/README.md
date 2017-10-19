@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q29691: Conditions Where /PACKCODE is Not the Default"
-permalink: kb/029/Q29691/
+permalink: /kb/029/Q29691/
 ---
 
 ## Q29691: Conditions Where /PACKCODE is Not the Default

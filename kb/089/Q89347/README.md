@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89347: Selecting Multiple Directories in File Manager"
-permalink: kb/089/Q89347/
+permalink: /kb/089/Q89347/
 ---
 
 ## Q89347: Selecting Multiple Directories in File Manager

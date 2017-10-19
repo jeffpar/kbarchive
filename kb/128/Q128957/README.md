@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128957: Optional Components Unavailable When User Profiles Are Enabled"
-permalink: kb/128/Q128957/
+permalink: /kb/128/Q128957/
 ---
 
 ## Q128957: Optional Components Unavailable When User Profiles Are Enabled

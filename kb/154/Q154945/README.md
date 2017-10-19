@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154945: FlushFileBuffers Not Committing Filesize Properly in NT3.51 SP4"
-permalink: kb/154/Q154945/
+permalink: /kb/154/Q154945/
 ---
 
 ## Q154945: FlushFileBuffers Not Committing Filesize Properly in NT3.51 SP4

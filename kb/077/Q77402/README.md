@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77402: INFO: Do Not Call the Display Driver Directly"
-permalink: kb/077/Q77402/
+permalink: /kb/077/Q77402/
 ---
 
 ## Q77402: INFO: Do Not Call the Display Driver Directly

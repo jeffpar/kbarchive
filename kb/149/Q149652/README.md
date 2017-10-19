@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149652: Macintosh Dangerous Creatures: ReadMe Contents"
-permalink: kb/149/Q149652/
+permalink: /kb/149/Q149652/
 ---
 
 ## Q149652: Macintosh Dangerous Creatures: ReadMe Contents

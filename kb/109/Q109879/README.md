@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109879: BUG: Inline Comment with &quot;!&quot; Can Act Like a C String"
-permalink: kb/109/Q109879/
+permalink: /kb/109/Q109879/
 ---
 
 ## Q109879: BUG: Inline Comment with &quot;!&quot; Can Act Like a C String

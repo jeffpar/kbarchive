@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180415: Sense Code in FMH-7 Message Is Not Returned to APPC Application"
-permalink: kb/180/Q180415/
+permalink: /kb/180/Q180415/
 ---
 
 ## Q180415: Sense Code in FMH-7 Message Is Not Returned to APPC Application

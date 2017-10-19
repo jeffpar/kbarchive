@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134938: BUG: MASM sample SYSINFO Error: L1101 invalid object module"
-permalink: kb/134/Q134938/
+permalink: /kb/134/Q134938/
 ---
 
 ## Q134938: BUG: MASM sample SYSINFO Error: L1101 invalid object module

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266041: XADM: How to Change the Exchange Server 5.5 Service Account WP"
-permalink: kb/266/Q266041/
+permalink: /kb/266/Q266041/
 ---
 
 ## Q266041: XADM: How to Change the Exchange Server 5.5 Service Account WP

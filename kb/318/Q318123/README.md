@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318123: Setup Does Not Recognize .inf File During Unattended HIS Install"
-permalink: kb/318/Q318123/
+permalink: /kb/318/Q318123/
 ---
 
 ## Q318123: Setup Does Not Recognize .inf File During Unattended HIS Install

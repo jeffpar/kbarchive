@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105566: Gtwy: Exit Codes for Gateway MTA Versions 3.0 and Later"
-permalink: kb/105/Q105566/
+permalink: /kb/105/Q105566/
 ---
 
 ## Q105566: Gtwy: Exit Codes for Gateway MTA Versions 3.0 and Later

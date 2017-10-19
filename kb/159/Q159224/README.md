@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159224: Stop 0x0000000A Nwlnkrip.sys RAS Server w/2 Token Ring Cards"
-permalink: kb/159/Q159224/
+permalink: /kb/159/Q159224/
 ---
 
 ## Q159224: Stop 0x0000000A Nwlnkrip.sys RAS Server w/2 Token Ring Cards

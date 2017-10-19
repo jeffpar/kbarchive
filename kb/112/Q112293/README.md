@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112293: Installing WINUP9.EXE Files During WFWG 3.11 Installation"
-permalink: kb/112/Q112293/
+permalink: /kb/112/Q112293/
 ---
 
 ## Q112293: Installing WINUP9.EXE Files During WFWG 3.11 Installation

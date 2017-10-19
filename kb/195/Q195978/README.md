@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195978: EVG99: Dual Pointer Focus on Home Screen and Dialog Box"
-permalink: kb/195/Q195978/
+permalink: /kb/195/Q195978/
 ---
 
 ## Q195978: EVG99: Dual Pointer Focus on Home Screen and Dialog Box

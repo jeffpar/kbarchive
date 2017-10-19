@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256584: Gateway for NFS Share Permissions Help Button Generates Error"
-permalink: kb/256/Q256584/
+permalink: /kb/256/Q256584/
 ---
 
 ## Q256584: Gateway for NFS Share Permissions Help Button Generates Error

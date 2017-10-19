@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116462: BUG: Screen Corruption Can Occur with _setvideomode()"
-permalink: kb/116/Q116462/
+permalink: /kb/116/Q116462/
 ---
 
 ## Q116462: BUG: Screen Corruption Can Occur with _setvideomode()

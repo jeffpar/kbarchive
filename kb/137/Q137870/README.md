@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137870: New Emm386.exe Fixes Problem Receiving NMI in Protected Mode"
-permalink: kb/137/Q137870/
+permalink: /kb/137/Q137870/
 ---
 
 ## Q137870: New Emm386.exe Fixes Problem Receiving NMI in Protected Mode

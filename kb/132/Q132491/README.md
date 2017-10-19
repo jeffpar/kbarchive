@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132491: FAX: Fax Gateway Stops with Corrupt RRS.FAX"
-permalink: kb/132/Q132491/
+permalink: /kb/132/Q132491/
 ---
 
 ## Q132491: FAX: Fax Gateway Stops with Corrupt RRS.FAX

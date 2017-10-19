@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121294: Windows 95 Err Msg w/a DISTEC Drive: Missing Operating System"
-permalink: kb/121/Q121294/
+permalink: /kb/121/Q121294/
 ---
 
 ## Q121294: Windows 95 Err Msg w/a DISTEC Drive: Missing Operating System

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257557: Microsoft Liquid Motion by Design Comments and Corrections"
-permalink: kb/257/Q257557/
+permalink: /kb/257/Q257557/
 ---
 
 ## Q257557: Microsoft Liquid Motion by Design Comments and Corrections

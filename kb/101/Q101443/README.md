@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101443: Mac Srv: Forwarded Message Points to Old Enclosure"
-permalink: kb/101/Q101443/
+permalink: /kb/101/Q101443/
 ---
 
 ## Q101443: Mac Srv: Forwarded Message Points to Old Enclosure

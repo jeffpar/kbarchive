@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74745: BUG: Assembling .ASM File With CL.EXE Fails w/ MASM 6.0"
-permalink: kb/074/Q74745/
+permalink: /kb/074/Q74745/
 ---
 
 ## Q74745: BUG: Assembling .ASM File With CL.EXE Fails w/ MASM 6.0

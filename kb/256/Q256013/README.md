@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256013: Problems Deleting Package While Package Share Changes Occur"
-permalink: kb/256/Q256013/
+permalink: /kb/256/Q256013/
 ---
 
 ## Q256013: Problems Deleting Package While Package Share Changes Occur

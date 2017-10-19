@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75594: PCX Image in Paintbrush Has Different Colors"
-permalink: kb/075/Q75594/
+permalink: /kb/075/Q75594/
 ---
 
 ## Q75594: PCX Image in Paintbrush Has Different Colors

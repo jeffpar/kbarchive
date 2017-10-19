@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178312: XADM: Removing the Active Server Component Fails"
-permalink: kb/178/Q178312/
+permalink: /kb/178/Q178312/
 ---
 
 ## Q178312: XADM: Removing the Active Server Component Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246485: STOP 0xC0000142 in User32.dll After Upgrading"
-permalink: kb/246/Q246485/
+permalink: /kb/246/Q246485/
 ---
 
 ## Q246485: STOP 0xC0000142 in User32.dll After Upgrading

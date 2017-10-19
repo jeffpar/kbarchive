@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245487: APPC Program Never Retries New Local LU From Pool"
-permalink: kb/245/Q245487/
+permalink: /kb/245/Q245487/
 ---
 
 ## Q245487: APPC Program Never Retries New Local LU From Pool

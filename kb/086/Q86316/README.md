@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86316: PC Win: From Field Changes Friendly Name to Login Name"
-permalink: kb/086/Q86316/
+permalink: /kb/086/Q86316/
 ---
 
 ## Q86316: PC Win: From Field Changes Friendly Name to Login Name

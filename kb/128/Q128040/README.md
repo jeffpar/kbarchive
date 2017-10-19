@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128040: Fatal Error Installing RAS Client Software for Network Client"
-permalink: kb/128/Q128040/
+permalink: /kb/128/Q128040/
 ---
 
 ## Q128040: Fatal Error Installing RAS Client Software for Network Client

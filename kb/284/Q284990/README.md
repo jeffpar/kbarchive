@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q284990: XCON: Inbound SMTP Message Contains Extra Line in Message Body"
-permalink: kb/284/Q284990/
+permalink: /kb/284/Q284990/
 ---
 
 ## Q284990: XCON: Inbound SMTP Message Contains Extra Line in Message Body

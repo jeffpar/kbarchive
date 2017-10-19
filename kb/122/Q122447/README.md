@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122447: Token Ring Network Startup Disk, Error 53: Network not found"
-permalink: kb/122/Q122447/
+permalink: /kb/122/Q122447/
 ---
 
 ## Q122447: Token Ring Network Startup Disk, Error 53: Network not found

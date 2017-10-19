@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89278: Novell Err Msg: Device Load Failed; IPX Not Installed"
-permalink: kb/089/Q89278/
+permalink: /kb/089/Q89278/
 ---
 
 ## Q89278: Novell Err Msg: Device Load Failed; IPX Not Installed

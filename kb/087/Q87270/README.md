@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87270: How to Disable EZSound FX from Windows"
-permalink: kb/087/Q87270/
+permalink: /kb/087/Q87270/
 ---
 
 ## Q87270: How to Disable EZSound FX from Windows

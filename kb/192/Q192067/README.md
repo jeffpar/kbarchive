@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192067: PC Card in Dock Not Enumerated When Hot Docking"
-permalink: kb/192/Q192067/
+permalink: /kb/192/Q192067/
 ---
 
 ## Q192067: PC Card in Dock Not Enumerated When Hot Docking

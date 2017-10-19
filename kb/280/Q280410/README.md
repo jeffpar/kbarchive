@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280410: Crimson Skies: Fixes Included in the Crimson Skies Updates"
-permalink: kb/280/Q280410/
+permalink: /kb/280/Q280410/
 ---
 
 ## Q280410: Crimson Skies: Fixes Included in the Crimson Skies Updates

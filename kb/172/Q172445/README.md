@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172445: Directory Replication Is Erratic With Ntconfig.pol, Config.pol"
-permalink: kb/172/Q172445/
+permalink: /kb/172/Q172445/
 ---
 
 ## Q172445: Directory Replication Is Erratic With Ntconfig.pol, Config.pol

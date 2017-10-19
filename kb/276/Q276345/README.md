@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276345: Microsoft Casino: How to Improve Game Performance"
-permalink: kb/276/Q276345/
+permalink: /kb/276/Q276345/
 ---
 
 ## Q276345: Microsoft Casino: How to Improve Game Performance

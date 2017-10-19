@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192773: Cluster Server Memory Leak When MTS Explorer Is Running"
-permalink: kb/192/Q192773/
+permalink: /kb/192/Q192773/
 ---
 
 ## Q192773: Cluster Server Memory Leak When MTS Explorer Is Running

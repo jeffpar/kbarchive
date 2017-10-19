@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161642: Auto Insert Notification May Prevent Automatic Suspend"
-permalink: kb/161/Q161642/
+permalink: /kb/161/Q161642/
 ---
 
 ## Q161642: Auto Insert Notification May Prevent Automatic Suspend

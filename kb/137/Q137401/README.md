@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137401: Cannot Access Network When Connected to NetWare Connect Server"
-permalink: kb/137/Q137401/
+permalink: /kb/137/Q137401/
 ---
 
 ## Q137401: Cannot Access Network When Connected to NetWare Connect Server

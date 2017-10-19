@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156474: XADM: ISINTEG Reports Errors on Replicated NNTP News Folders"
-permalink: kb/156/Q156474/
+permalink: /kb/156/Q156474/
 ---
 
 ## Q156474: XADM: ISINTEG Reports Errors on Replicated NNTP News Folders

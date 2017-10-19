@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128249: Windows NT Hangs During Network File Copy with 3C679"
-permalink: kb/128/Q128249/
+permalink: /kb/128/Q128249/
 ---
 
 ## Q128249: Windows NT Hangs During Network File Copy with 3C679

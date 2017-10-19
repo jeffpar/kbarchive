@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245579: SMS: Secondary Site Does Not Decompress Package"
-permalink: kb/245/Q245579/
+permalink: /kb/245/Q245579/
 ---
 
 ## Q245579: SMS: Secondary Site Does Not Decompress Package

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145968: WD97: Revision Number/EditTime Incorrect (Word 6.0/95 Export)"
-permalink: kb/145/Q145968/
+permalink: /kb/145/Q145968/
 ---
 
 ## Q145968: WD97: Revision Number/EditTime Incorrect (Word 6.0/95 Export)

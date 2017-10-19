@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142904: Unattended Installation of IBM Auto 16/4 Token Ring Adapter"
-permalink: kb/142/Q142904/
+permalink: /kb/142/Q142904/
 ---
 
 ## Q142904: Unattended Installation of IBM Auto 16/4 Token Ring Adapter

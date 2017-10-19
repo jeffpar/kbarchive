@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q277759: Microsoft Passport FAQ"
-permalink: kb/277/Q277759/
+permalink: /kb/277/Q277759/
 ---
 
 ## Q277759: Microsoft Passport FAQ

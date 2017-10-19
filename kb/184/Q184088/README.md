@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184088: FIX: LNK4056 Warning Generated with Comma in #pragma Comment"
-permalink: kb/184/Q184088/
+permalink: /kb/184/Q184088/
 ---
 
 ## Q184088: FIX: LNK4056 Warning Generated with Comma in #pragma Comment

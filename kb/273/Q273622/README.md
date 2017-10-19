@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273622: Reader Error Message: StgOpenStorage Failed with 0x80030005"
-permalink: kb/273/Q273622/
+permalink: /kb/273/Q273622/
 ---
 
 ## Q273622: Reader Error Message: StgOpenStorage Failed with 0x80030005

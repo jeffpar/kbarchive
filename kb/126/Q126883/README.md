@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126883: Changing Windows and NT Domain Passwords Causes Error Messages"
-permalink: kb/126/Q126883/
+permalink: /kb/126/Q126883/
 ---
 
 ## Q126883: Changing Windows and NT Domain Passwords Causes Error Messages

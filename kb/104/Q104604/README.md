@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104604: SST WD7000 FAAST SCSI Cards and Windows NT"
-permalink: kb/104/Q104604/
+permalink: /kb/104/Q104604/
 ---
 
 ## Q104604: SST WD7000 FAAST SCSI Cards and Windows NT

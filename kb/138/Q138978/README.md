@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138978: PRB: Structure Contains Underscore When Running Crosstab"
-permalink: kb/138/Q138978/
+permalink: /kb/138/Q138978/
 ---
 
 ## Q138978: PRB: Structure Contains Underscore When Running Crosstab

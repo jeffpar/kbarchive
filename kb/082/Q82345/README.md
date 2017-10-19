@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82345: Visual Basic Does Not Show Icons when Making .EXE File"
-permalink: kb/082/Q82345/
+permalink: /kb/082/Q82345/
 ---
 
 ## Q82345: Visual Basic Does Not Show Icons when Making .EXE File

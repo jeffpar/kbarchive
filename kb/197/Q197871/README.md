@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197871: XFOR: Question Mark Characters in Message of the Day"
-permalink: kb/197/Q197871/
+permalink: /kb/197/Q197871/
 ---
 
 ## Q197871: XFOR: Question Mark Characters in Message of the Day

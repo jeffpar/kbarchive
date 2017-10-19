@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266303: Cron.exe Event Log Warnings Without Sub-Authentication Package"
-permalink: kb/266/Q266303/
+permalink: /kb/266/Q266303/
 ---
 
 ## Q266303: Cron.exe Event Log Warnings Without Sub-Authentication Package

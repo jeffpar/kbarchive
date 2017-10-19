@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157867: Writer 2: Cannot Open Artwork with Real-Mode CD-ROM Drivers"
-permalink: kb/157/Q157867/
+permalink: /kb/157/Q157867/
 ---
 
 ## Q157867: Writer 2: Cannot Open Artwork with Real-Mode CD-ROM Drivers

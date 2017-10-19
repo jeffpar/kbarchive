@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172385: WD97: Text With Layout Not Listed in EditConversionOptions Macro"
-permalink: kb/172/Q172385/
+permalink: /kb/172/Q172385/
 ---
 
 ## Q172385: WD97: Text With Layout Not Listed in EditConversionOptions Macro

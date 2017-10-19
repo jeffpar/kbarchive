@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118791: Windows 95 Views But Cannot Access NTFS and HPFS Partitions"
-permalink: kb/118/Q118791/
+permalink: /kb/118/Q118791/
 ---
 
 ## Q118791: Windows 95 Views But Cannot Access NTFS and HPFS Partitions

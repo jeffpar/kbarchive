@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222028: Setting Up Digest Authentication for Use with IIS 5.0"
-permalink: kb/222/Q222028/
+permalink: /kb/222/Q222028/
 ---
 
 ## Q222028: Setting Up Digest Authentication for Use with IIS 5.0

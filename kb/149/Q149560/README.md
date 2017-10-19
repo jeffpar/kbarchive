@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149560: RPC Problem: Locator Loses Exported Bindings"
-permalink: kb/149/Q149560/
+permalink: /kb/149/Q149560/
 ---
 
 ## Q149560: RPC Problem: Locator Loses Exported Bindings

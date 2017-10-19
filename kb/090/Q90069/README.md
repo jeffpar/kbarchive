@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90069: GENLIB.DLL May Cause GP Faults in Windows 3.1"
-permalink: kb/090/Q90069/
+permalink: /kb/090/Q90069/
 ---
 
 ## Q90069: GENLIB.DLL May Cause GP Faults in Windows 3.1

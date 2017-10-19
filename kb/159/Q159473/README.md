@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159473: FIX: GETDIR() on Empty Floppy Drive Causes Crash"
-permalink: kb/159/Q159473/
+permalink: /kb/159/Q159473/
 ---
 
 ## Q159473: FIX: GETDIR() on Empty Floppy Drive Causes Crash

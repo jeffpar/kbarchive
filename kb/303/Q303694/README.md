@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303694: GetLoginChallenge Does Not Pass Back AuthHeader in JavaScript"
-permalink: kb/303/Q303694/
+permalink: /kb/303/Q303694/
 ---
 
 ## Q303694: GetLoginChallenge Does Not Pass Back AuthHeader in JavaScript

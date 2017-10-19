@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112335: BUG: CK1020 or CK4009 Encountered When Type Info Exceeds 64K"
-permalink: kb/112/Q112335/
+permalink: /kb/112/Q112335/
 ---
 
 ## Q112335: BUG: CK1020 or CK4009 Encountered When Type Info Exceeds 64K

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191605: INFO: Incorporating ScriptIt with Unattended Installation"
-permalink: kb/191/Q191605/
+permalink: /kb/191/Q191605/
 ---
 
 ## Q191605: INFO: Incorporating ScriptIt with Unattended Installation

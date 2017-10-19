@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217768: XADM: Storage Warnings Incomplete for Swedish Clients"
-permalink: kb/217/Q217768/
+permalink: /kb/217/Q217768/
 ---
 
 ## Q217768: XADM: Storage Warnings Incomplete for Swedish Clients

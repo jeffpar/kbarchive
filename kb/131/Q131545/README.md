@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131545: IBM DIAGS.COM Token Ring Utility Must Run in MS-DOS Mode"
-permalink: kb/131/Q131545/
+permalink: /kb/131/Q131545/
 ---
 
 ## Q131545: IBM DIAGS.COM Token Ring Utility Must Run in MS-DOS Mode

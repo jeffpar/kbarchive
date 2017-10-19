@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157848: Custom Forms Not Available for Panasonic KXP-1124i"
-permalink: kb/157/Q157848/
+permalink: /kb/157/Q157848/
 ---
 
 ## Q157848: Custom Forms Not Available for Panasonic KXP-1124i

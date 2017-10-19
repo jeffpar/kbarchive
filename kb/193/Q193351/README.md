@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193351: Trailing Blanks Removed from String in Reply Data"
-permalink: kb/193/Q193351/
+permalink: /kb/193/Q193351/
 ---
 
 ## Q193351: Trailing Blanks Removed from String in Reply Data

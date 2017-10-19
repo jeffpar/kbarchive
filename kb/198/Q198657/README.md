@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198657: XADM: Outlook 98 Shows Bckgrd Sync error after Move Server"
-permalink: kb/198/Q198657/
+permalink: /kb/198/Q198657/
 ---
 
 ## Q198657: XADM: Outlook 98 Shows Bckgrd Sync error after Move Server

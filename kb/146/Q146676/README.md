@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146676: XFOR: Exchange 4.0 DXA Appends 001 Only When Needed"
-permalink: kb/146/Q146676/
+permalink: /kb/146/Q146676/
 ---
 
 ## Q146676: XFOR: Exchange 4.0 DXA Appends 001 Only When Needed

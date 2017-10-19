@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128641: INFO: /Mx Compiler Options and the LIBC, LIBCMT, MSVCRT Libs"
-permalink: kb/128/Q128641/
+permalink: /kb/128/Q128641/
 ---
 
 ## Q128641: INFO: /Mx Compiler Options and the LIBC, LIBCMT, MSVCRT Libs

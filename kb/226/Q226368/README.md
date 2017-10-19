@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226368: SMS: NAL May Search Mapped Drives for Network DLLs"
-permalink: kb/226/Q226368/
+permalink: /kb/226/Q226368/
 ---
 
 ## Q226368: SMS: NAL May Search Mapped Drives for Network DLLs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130318: PC Win WRmt: Err Msg: Mail Driver Could Not Be Deactivated..."
-permalink: kb/130/Q130318/
+permalink: /kb/130/Q130318/
 ---
 
 ## Q130318: PC Win WRmt: Err Msg: Mail Driver Could Not Be Deactivated...

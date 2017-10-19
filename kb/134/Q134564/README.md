@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134564: SSI Software's LASSIE Does Not Print Puzzle"
-permalink: kb/134/Q134564/
+permalink: /kb/134/Q134564/
 ---
 
 ## Q134564: SSI Software's LASSIE Does Not Print Puzzle

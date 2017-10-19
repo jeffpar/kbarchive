@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244998: Port Number Not Return with Content Location when URL Specified"
-permalink: kb/244/Q244998/
+permalink: /kb/244/Q244998/
 ---
 
 ## Q244998: Port Number Not Return with Content Location when URL Specified

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247925: InstallShield Hangs When You Try to Install 32-Bit Programs"
-permalink: kb/247/Q247925/
+permalink: /kb/247/Q247925/
 ---
 
 ## Q247925: InstallShield Hangs When You Try to Install 32-Bit Programs

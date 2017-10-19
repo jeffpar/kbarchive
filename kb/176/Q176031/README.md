@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176031: STOP 0x0000003F Caused by Fpnwsrv.sys"
-permalink: kb/176/Q176031/
+permalink: /kb/176/Q176031/
 ---
 
 ## Q176031: STOP 0x0000003F Caused by Fpnwsrv.sys

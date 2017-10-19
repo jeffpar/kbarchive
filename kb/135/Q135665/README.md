@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135665: Connection Established in MS-DOS Session Is Not Reconnected"
-permalink: kb/135/Q135665/
+permalink: /kb/135/Q135665/
 ---
 
 ## Q135665: Connection Established in MS-DOS Session Is Not Reconnected

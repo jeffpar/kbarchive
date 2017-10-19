@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130706: PRB: MODIFY STRUCTURE Command Doesn't Set Index Order"
-permalink: kb/130/Q130706/
+permalink: /kb/130/Q130706/
 ---
 
 ## Q130706: PRB: MODIFY STRUCTURE Command Doesn't Set Index Order

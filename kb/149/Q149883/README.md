@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149883: Problems Installing Windows Sound Driver on Compaq Prolinea"
-permalink: kb/149/Q149883/
+permalink: /kb/149/Q149883/
 ---
 
 ## Q149883: Problems Installing Windows Sound Driver on Compaq Prolinea

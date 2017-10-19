@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167046: Add Printer Wizard May Hang After Adding a Port"
-permalink: kb/167/Q167046/
+permalink: /kb/167/Q167046/
 ---
 
 ## Q167046: Add Printer Wizard May Hang After Adding a Port

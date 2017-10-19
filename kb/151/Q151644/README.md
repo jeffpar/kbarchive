@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151644: The New MSN Questions &amp; Answers"
-permalink: kb/151/Q151644/
+permalink: /kb/151/Q151644/
 ---
 
 ## Q151644: The New MSN Questions &amp; Answers

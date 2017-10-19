@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157799: WD97: Letter Wizard Defaults Stored In Normal Template"
-permalink: kb/157/Q157799/
+permalink: /kb/157/Q157799/
 ---
 
 ## Q157799: WD97: Letter Wizard Defaults Stored In Normal Template

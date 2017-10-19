@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118498: Session Error 2574 in 3270 Applet"
-permalink: kb/118/Q118498/
+permalink: /kb/118/Q118498/
 ---
 
 ## Q118498: Session Error 2574 in 3270 Applet

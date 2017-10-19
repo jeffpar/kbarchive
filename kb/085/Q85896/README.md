@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85896: BUG: Input Focus Lost When Control Returns From Windows Help"
-permalink: kb/085/Q85896/
+permalink: /kb/085/Q85896/
 ---
 
 ## Q85896: BUG: Input Focus Lost When Control Returns From Windows Help

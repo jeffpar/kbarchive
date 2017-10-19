@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181478: Joystick.exe Calls the Joystick API Functions"
-permalink: kb/181/Q181478/
+permalink: /kb/181/Q181478/
 ---
 
 ## Q181478: Joystick.exe Calls the Joystick API Functions

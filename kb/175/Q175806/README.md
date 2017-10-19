@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175806: How to Remove IntranetWare Client for Windows NT"
-permalink: kb/175/Q175806/
+permalink: /kb/175/Q175806/
 ---
 
 ## Q175806: How to Remove IntranetWare Client for Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152433: XADM: How to Remove Orphaned Public Folders"
-permalink: kb/152/Q152433/
+permalink: /kb/152/Q152433/
 ---
 
 ## Q152433: XADM: How to Remove Orphaned Public Folders

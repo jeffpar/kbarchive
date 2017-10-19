@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132783: Norton Navigator Causes Page Fault During Hardware Detection"
-permalink: kb/132/Q132783/
+permalink: /kb/132/Q132783/
 ---
 
 ## Q132783: Norton Navigator Causes Page Fault During Hardware Detection

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190975: FIX: Delete Files from Project Doesn't Update IntelliSense"
-permalink: kb/190/Q190975/
+permalink: /kb/190/Q190975/
 ---
 
 ## Q190975: FIX: Delete Files from Project Doesn't Update IntelliSense

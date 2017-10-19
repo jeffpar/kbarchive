@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143115: FIX: Choose Function Incorrectly Uses Option Base Setting"
-permalink: kb/143/Q143115/
+permalink: /kb/143/Q143115/
 ---
 
 ## Q143115: FIX: Choose Function Incorrectly Uses Option Base Setting

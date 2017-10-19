@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171614: Linkcfg.exe is not Writing Out Some Registry Entries for DCA ISC"
-permalink: kb/171/Q171614/
+permalink: /kb/171/Q171614/
 ---
 
 ## Q171614: Linkcfg.exe is not Writing Out Some Registry Entries for DCA ISC

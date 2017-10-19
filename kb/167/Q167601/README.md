@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167601: Micrografx Designer 6.0 Cannot Print A0"
-permalink: kb/167/Q167601/
+permalink: /kb/167/Q167601/
 ---
 
 ## Q167601: Micrografx Designer 6.0 Cannot Print A0

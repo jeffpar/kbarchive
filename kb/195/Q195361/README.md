@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195361: WD97: Print Preview Displays Entire Form"
-permalink: kb/195/Q195361/
+permalink: /kb/195/Q195361/
 ---
 
 ## Q195361: WD97: Print Preview Displays Entire Form

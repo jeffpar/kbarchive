@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152742: Error Message: &quot;Could Not Start Directory Replicator Service&quot;"
-permalink: kb/152/Q152742/
+permalink: /kb/152/Q152742/
 ---
 
 ## Q152742: Error Message: &quot;Could Not Start Directory Replicator Service&quot;

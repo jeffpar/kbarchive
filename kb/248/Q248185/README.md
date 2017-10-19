@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248185: SID Enumeration Function in LSA May Not Handle Argument Properly"
-permalink: kb/248/Q248185/
+permalink: /kb/248/Q248185/
 ---
 
 ## Q248185: SID Enumeration Function in LSA May Not Handle Argument Properly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132573: Fleet Defender F14 Does Not Run When MIDI Is Already in Use"
-permalink: kb/132/Q132573/
+permalink: /kb/132/Q132573/
 ---
 
 ## Q132573: Fleet Defender F14 Does Not Run When MIDI Is Already in Use

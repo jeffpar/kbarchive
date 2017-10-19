@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184759: XADM: Pfadmin.exe 1.2.1 Uses Commas As The Delimiter"
-permalink: kb/184/Q184759/
+permalink: /kb/184/Q184759/
 ---
 
 ## Q184759: XADM: Pfadmin.exe 1.2.1 Uses Commas As The Delimiter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149793: Cannot Type English or Chinese Characters in Text Box"
-permalink: kb/149/Q149793/
+permalink: /kb/149/Q149793/
 ---
 
 ## Q149793: Cannot Type English or Chinese Characters in Text Box

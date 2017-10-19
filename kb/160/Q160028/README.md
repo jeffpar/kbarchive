@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160028: XADM: Adding Code Pages to Windows NT Server 4.0"
-permalink: kb/160/Q160028/
+permalink: /kb/160/Q160028/
 ---
 
 ## Q160028: XADM: Adding Code Pages to Windows NT Server 4.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176544: SMS: Err Msg: &quot;Couldn't Save the Query Result Format&quot;"
-permalink: kb/176/Q176544/
+permalink: /kb/176/Q176544/
 ---
 
 ## Q176544: SMS: Err Msg: &quot;Couldn't Save the Query Result Format&quot;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100032: PC WSPlus: Free/Busy Times Are Not Received"
-permalink: kb/100/Q100032/
+permalink: /kb/100/Q100032/
 ---
 
 ## Q100032: PC WSPlus: Free/Busy Times Are Not Received

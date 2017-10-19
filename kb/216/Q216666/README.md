@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216666: PRB: DataBound Controls Not Refreshed With DataEnvironment"
-permalink: kb/216/Q216666/
+permalink: /kb/216/Q216666/
 ---
 
 ## Q216666: PRB: DataBound Controls Not Refreshed With DataEnvironment

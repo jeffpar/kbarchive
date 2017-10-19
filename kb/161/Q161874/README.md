@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161874: FIX: Displaying CPropertySheet in COleControl Causes Assert"
-permalink: kb/161/Q161874/
+permalink: /kb/161/Q161874/
 ---
 
 ## Q161874: FIX: Displaying CPropertySheet in COleControl Causes Assert

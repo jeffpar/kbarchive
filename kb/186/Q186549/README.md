@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186549: Terminal Server Error Messages: 200 to 999"
-permalink: kb/186/Q186549/
+permalink: /kb/186/Q186549/
 ---
 
 ## Q186549: Terminal Server Error Messages: 200 to 999

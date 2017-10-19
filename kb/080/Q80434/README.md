@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80434: DRIVPARM Must Be Used with Tandy 1000HX, 1000TX, 1400LT/HD"
-permalink: kb/080/Q80434/
+permalink: /kb/080/Q80434/
 ---
 
 ## Q80434: DRIVPARM Must Be Used with Tandy 1000HX, 1000TX, 1400LT/HD

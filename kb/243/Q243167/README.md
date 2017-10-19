@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243167: Tcmapp.exe Does Not Properly Handle Removed Line Device"
-permalink: kb/243/Q243167/
+permalink: /kb/243/Q243167/
 ---
 
 ## Q243167: Tcmapp.exe Does Not Properly Handle Removed Line Device

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q206665: FIX: Project Settings Not Updated for All Projects"
-permalink: kb/206/Q206665/
+permalink: /kb/206/Q206665/
 ---
 
 ## Q206665: FIX: Project Settings Not Updated for All Projects

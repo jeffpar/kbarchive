@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256276: Error Message: There Is No Catalog"
-permalink: kb/256/Q256276/
+permalink: /kb/256/Q256276/
 ---
 
 ## Q256276: Error Message: There Is No Catalog

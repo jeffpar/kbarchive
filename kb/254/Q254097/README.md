@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254097: XCLN: Resetting Toolbox to Default Controls and Layout"
-permalink: kb/254/Q254097/
+permalink: /kb/254/Q254097/
 ---
 
 ## Q254097: XCLN: Resetting Toolbox to Default Controls and Layout

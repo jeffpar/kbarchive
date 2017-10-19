@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288270: ASP Returns Continuous &quot;Include File Not Found&quot; Errors"
-permalink: kb/288/Q288270/
+permalink: /kb/288/Q288270/
 ---
 
 ## Q288270: ASP Returns Continuous &quot;Include File Not Found&quot; Errors

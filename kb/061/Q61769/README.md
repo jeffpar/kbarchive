@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61769: Hewlett-Packard WordPerfect Font Cartridge Description"
-permalink: kb/061/Q61769/
+permalink: /kb/061/Q61769/
 ---
 
 ## Q61769: Hewlett-Packard WordPerfect Font Cartridge Description

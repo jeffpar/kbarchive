@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198826: XADM: Address Information for Moved Messages Shows Old DN"
-permalink: kb/198/Q198826/
+permalink: /kb/198/Q198826/
 ---
 
 ## Q198826: XADM: Address Information for Moved Messages Shows Old DN

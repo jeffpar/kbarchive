@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263369: SMS: Advertisement May Run While a User Is Logged Off"
-permalink: kb/263/Q263369/
+permalink: /kb/263/Q263369/
 ---
 
 ## Q263369: SMS: Advertisement May Run While a User Is Logged Off

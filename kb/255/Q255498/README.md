@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255498: ODE97: How to Make Sure Apps You Create with ODE Run Correctly"
-permalink: kb/255/Q255498/
+permalink: /kb/255/Q255498/
 ---
 
 ## Q255498: ODE97: How to Make Sure Apps You Create with ODE Run Correctly

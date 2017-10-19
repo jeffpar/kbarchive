@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126114: Ultimate Haunted House README.WRI Contents"
-permalink: kb/126/Q126114/
+permalink: /kb/126/Q126114/
 ---
 
 ## Q126114: Ultimate Haunted House README.WRI Contents

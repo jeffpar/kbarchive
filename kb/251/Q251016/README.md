@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251016: XCON: Events 290 and 270 Logged From Public Folder Permissions"
-permalink: kb/251/Q251016/
+permalink: /kb/251/Q251016/
 ---
 
 ## Q251016: XCON: Events 290 and 270 Logged From Public Folder Permissions

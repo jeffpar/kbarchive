@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176256: FIX: ODBC Driver May Return &quot;TDS Buffer Length Too Large&quot; Error"
-permalink: kb/176/Q176256/
+permalink: /kb/176/Q176256/
 ---
 
 ## Q176256: FIX: ODBC Driver May Return &quot;TDS Buffer Length Too Large&quot; Error

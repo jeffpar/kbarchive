@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132679: Local System Account and Null Sessions in Windows NT"
-permalink: kb/132/Q132679/
+permalink: /kb/132/Q132679/
 ---
 
 ## Q132679: Local System Account and Null Sessions in Windows NT

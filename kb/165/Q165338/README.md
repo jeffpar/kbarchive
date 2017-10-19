@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165338: IIS Does Not Allow its TCP Port to Be Same as SSL Port"
-permalink: kb/165/Q165338/
+permalink: /kb/165/Q165338/
 ---
 
 ## Q165338: IIS Does Not Allow its TCP Port to Be Same as SSL Port

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275921: XCLN: How to View Private Messages in an Additional Mailbox"
-permalink: kb/275/Q275921/
+permalink: /kb/275/Q275921/
 ---
 
 ## Q275921: XCLN: How to View Private Messages in an Additional Mailbox

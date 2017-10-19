@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172953: How to Install and Configure Microsoft DNS Server"
-permalink: kb/172/Q172953/
+permalink: /kb/172/Q172953/
 ---
 
 ## Q172953: How to Install and Configure Microsoft DNS Server

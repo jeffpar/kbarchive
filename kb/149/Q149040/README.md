@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149040: BUG: 3426 and 3020 - Different Error Number With 16-bit/32-bit"
-permalink: kb/149/Q149040/
+permalink: /kb/149/Q149040/
 ---
 
 ## Q149040: BUG: 3426 and 3020 - Different Error Number With 16-bit/32-bit

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247926: Windows NT Server 4.0-Based PDC Repeatedly Reports Event 3224"
-permalink: kb/247/Q247926/
+permalink: /kb/247/Q247926/
 ---
 
 ## Q247926: Windows NT Server 4.0-Based PDC Repeatedly Reports Event 3224

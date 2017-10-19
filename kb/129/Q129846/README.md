@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129846: How to Use the Professional Edition's Documenting Wizard"
-permalink: kb/129/Q129846/
+permalink: /kb/129/Q129846/
 ---
 
 ## Q129846: How to Use the Professional Edition's Documenting Wizard

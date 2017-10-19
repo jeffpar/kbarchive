@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129727: Wine Guide: Manual Installation Instructions"
-permalink: kb/129/Q129727/
+permalink: /kb/129/Q129727/
 ---
 
 ## Q129727: Wine Guide: Manual Installation Instructions

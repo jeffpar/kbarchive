@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263950: Slovenian Volume Control Causes Invalid Page Fault"
-permalink: kb/263/Q263950/
+permalink: /kb/263/Q263950/
 ---
 
 ## Q263950: Slovenian Volume Control Causes Invalid Page Fault

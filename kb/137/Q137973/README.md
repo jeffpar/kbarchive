@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137973: Documentation Error in &quot;Introducing MS Windows 95&quot;"
-permalink: kb/137/Q137973/
+permalink: /kb/137/Q137973/
 ---
 
 ## Q137973: Documentation Error in &quot;Introducing MS Windows 95&quot;

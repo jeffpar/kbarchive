@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142604: SMS Removes Shareable Attribute on NetWare Files"
-permalink: kb/142/Q142604/
+permalink: /kb/142/Q142604/
 ---
 
 ## Q142604: SMS Removes Shareable Attribute on NetWare Files

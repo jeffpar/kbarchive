@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66355: Description of IdleWild in the Windows Entertainment Pack"
-permalink: kb/066/Q66355/
+permalink: /kb/066/Q66355/
 ---
 
 ## Q66355: Description of IdleWild in the Windows Entertainment Pack

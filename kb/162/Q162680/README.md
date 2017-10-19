@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162680: XCON: SMTP Messages Contain Encapsulated X.400 Addresses"
-permalink: kb/162/Q162680/
+permalink: /kb/162/Q162680/
 ---
 
 ## Q162680: XCON: SMTP Messages Contain Encapsulated X.400 Addresses

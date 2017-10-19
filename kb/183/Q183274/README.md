@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183274: XFOR: Queue Viewer Does Not Load; Missing RPCDCE4.DLL"
-permalink: kb/183/Q183274/
+permalink: /kb/183/Q183274/
 ---
 
 ## Q183274: XFOR: Queue Viewer Does Not Load; Missing RPCDCE4.DLL

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175664: Error Creating Dependency for Quorum Resource"
-permalink: kb/175/Q175664/
+permalink: /kb/175/Q175664/
 ---
 
 ## Q175664: Error Creating Dependency for Quorum Resource

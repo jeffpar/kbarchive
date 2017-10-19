@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146811: XADM: Canceling Directory Import Operation Causes STOP Event"
-permalink: kb/146/Q146811/
+permalink: /kb/146/Q146811/
 ---
 
 ## Q146811: XADM: Canceling Directory Import Operation Causes STOP Event

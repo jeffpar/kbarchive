@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199516: HOWTO: Set Default Values for ActiveX Control Stock Properties"
-permalink: kb/199/Q199516/
+permalink: /kb/199/Q199516/
 ---
 
 ## Q199516: HOWTO: Set Default Values for ActiveX Control Stock Properties

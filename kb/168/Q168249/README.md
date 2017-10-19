@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168249: Availability of Printer Driver for HP OfficeJet Printer"
-permalink: kb/168/Q168249/
+permalink: /kb/168/Q168249/
 ---
 
 ## Q168249: Availability of Printer Driver for HP OfficeJet Printer

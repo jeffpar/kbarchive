@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157954: BUG: ROUND() Function Not Rounding Properly After Calculations"
-permalink: kb/157/Q157954/
+permalink: /kb/157/Q157954/
 ---
 
 ## Q157954: BUG: ROUND() Function Not Rounding Properly After Calculations

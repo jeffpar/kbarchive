@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222612: SNA Server SCS Print Emulation Enhanced For S/36 Systems"
-permalink: kb/222/Q222612/
+permalink: /kb/222/Q222612/
 ---
 
 ## Q222612: SNA Server SCS Print Emulation Enhanced For S/36 Systems

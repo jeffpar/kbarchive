@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124860: Real Mode Redir Domain Validation Err Msg: Access Denied"
-permalink: kb/124/Q124860/
+permalink: /kb/124/Q124860/
 ---
 
 ## Q124860: Real Mode Redir Domain Validation Err Msg: Access Denied

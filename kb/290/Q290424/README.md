@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q290424: Index: Application Called an Interface That was Marshalled for a"
-permalink: kb/290/Q290424/
+permalink: /kb/290/Q290424/
 ---
 
 ## Q290424: Index: Application Called an Interface That was Marshalled for a

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141060: VB3 Using Visual Basic 3.0 to Play WAVE Files Stored in a DLL"
-permalink: kb/141/Q141060/
+permalink: /kb/141/Q141060/
 ---
 
 ## Q141060: VB3 Using Visual Basic 3.0 to Play WAVE Files Stored in a DLL

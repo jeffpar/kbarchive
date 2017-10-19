@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111864: BUG: GP Fault When Drawing on a Memory-Based DC"
-permalink: kb/111/Q111864/
+permalink: /kb/111/Q111864/
 ---
 
 ## Q111864: BUG: GP Fault When Drawing on a Memory-Based DC

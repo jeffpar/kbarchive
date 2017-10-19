@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163196: New Windows NT PING.EXE Prevents Hanging Other TCP/IP Stacks"
-permalink: kb/163/Q163196/
+permalink: /kb/163/Q163196/
 ---
 
 ## Q163196: New Windows NT PING.EXE Prevents Hanging Other TCP/IP Stacks

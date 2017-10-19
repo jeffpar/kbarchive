@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233449: Business Planner: Unable to Start Personal Interviewer"
-permalink: kb/233/Q233449/
+permalink: /kb/233/Q233449/
 ---
 
 ## Q233449: Business Planner: Unable to Start Personal Interviewer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162785: RPC Sample File Helloc.exe Requires Full Redirector"
-permalink: kb/162/Q162785/
+permalink: /kb/162/Q162785/
 ---
 
 ## Q162785: RPC Sample File Helloc.exe Requires Full Redirector

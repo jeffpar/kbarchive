@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310647: BUG: VB 6.0 T-SQL Debugger Fails with SQL 2000 Named Instance"
-permalink: kb/310/Q310647/
+permalink: /kb/310/Q310647/
 ---
 
 ## Q310647: BUG: VB 6.0 T-SQL Debugger Fails with SQL 2000 Named Instance

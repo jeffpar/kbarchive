@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166312: XADM: Replication or Knowledge Consistency Check Fails"
-permalink: kb/166/Q166312/
+permalink: /kb/166/Q166312/
 ---
 
 ## Q166312: XADM: Replication or Knowledge Consistency Check Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197190: BUG: Memory Leak Using UBound or LBound When Returning Array"
-permalink: kb/197/Q197190/
+permalink: /kb/197/Q197190/
 ---
 
 ## Q197190: BUG: Memory Leak Using UBound or LBound When Returning Array

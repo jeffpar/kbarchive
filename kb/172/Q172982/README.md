@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172982: 16-bit ShellExecute Fails if Application Exists in Long Path"
-permalink: kb/172/Q172982/
+permalink: /kb/172/Q172982/
 ---
 
 ## Q172982: 16-bit ShellExecute Fails if Application Exists in Long Path

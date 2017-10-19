@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119323: Cinemania 1994: Review May Not Copy Completely"
-permalink: kb/119/Q119323/
+permalink: /kb/119/Q119323/
 ---
 
 ## Q119323: Cinemania 1994: Review May Not Copy Completely

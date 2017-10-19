@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302717: Guest User Upgrading From Free To Paid MSN Internet Access Accou"
-permalink: kb/302/Q302717/
+permalink: /kb/302/Q302717/
 ---
 
 ## Q302717: Guest User Upgrading From Free To Paid MSN Internet Access Accou

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179308: XADM: How To Verify Exchange Online Backups"
-permalink: kb/179/Q179308/
+permalink: /kb/179/Q179308/
 ---
 
 ## Q179308: XADM: How To Verify Exchange Online Backups

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131426: How to Access Physical Memory in 16-bit Windows-Based Apps"
-permalink: kb/131/Q131426/
+permalink: /kb/131/Q131426/
 ---
 
 ## Q131426: How to Access Physical Memory in 16-bit Windows-Based Apps

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177776: XADM: How to Use the Mailbox Migration Utility"
-permalink: kb/177/Q177776/
+permalink: /kb/177/Q177776/
 ---
 
 ## Q177776: XADM: How to Use the Mailbox Migration Utility

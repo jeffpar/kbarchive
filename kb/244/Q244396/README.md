@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244396: Determining if Full Syncs Are Caused By Wrapping the Change Log"
-permalink: kb/244/Q244396/
+permalink: /kb/244/Q244396/
 ---
 
 ## Q244396: Determining if Full Syncs Are Caused By Wrapping the Change Log

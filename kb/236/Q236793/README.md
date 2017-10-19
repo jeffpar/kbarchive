@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236793: XCLN ODK Deploying Internet Explorer 4.01 Service Packs with ODK"
-permalink: kb/236/Q236793/
+permalink: /kb/236/Q236793/
 ---
 
 ## Q236793: XCLN ODK Deploying Internet Explorer 4.01 Service Packs with ODK

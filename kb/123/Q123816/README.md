@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123816: 3COM EtherLink III NIC Intermittently Fails to Start"
-permalink: kb/123/Q123816/
+permalink: /kb/123/Q123816/
 ---
 
 ## Q123816: 3COM EtherLink III NIC Intermittently Fails to Start

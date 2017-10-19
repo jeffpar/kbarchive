@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82569: Extended Characters in Filenames Under Windows 3.1"
-permalink: kb/082/Q82569/
+permalink: /kb/082/Q82569/
 ---
 
 ## Q82569: Extended Characters in Filenames Under Windows 3.1

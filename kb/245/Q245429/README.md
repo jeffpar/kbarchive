@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245429: Win5250 Problem Exiting AS/400 Screen With Function Key"
-permalink: kb/245/Q245429/
+permalink: /kb/245/Q245429/
 ---
 
 ## Q245429: Win5250 Problem Exiting AS/400 Screen With Function Key

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78925: EMM386.EXE Err Msg: WARNING: User Specified Ranges Overlap"
-permalink: kb/078/Q78925/
+permalink: /kb/078/Q78925/
 ---
 
 ## Q78925: EMM386.EXE Err Msg: WARNING: User Specified Ranges Overlap

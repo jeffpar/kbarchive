@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312437: XADM: Unable to Install Exchange 5.5; Command Lodctr Error"
-permalink: kb/312/Q312437/
+permalink: /kb/312/Q312437/
 ---
 
 ## Q312437: XADM: Unable to Install Exchange 5.5; Command Lodctr Error

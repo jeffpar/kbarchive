@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86969: X400: How to Test X.25 Connection Before X.400 Installation"
-permalink: kb/086/Q86969/
+permalink: /kb/086/Q86969/
 ---
 
 ## Q86969: X400: How to Test X.25 Connection Before X.400 Installation

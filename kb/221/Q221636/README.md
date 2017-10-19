@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221636: FIX: FFCs -_therm.vxc Classes Have Color Problems with Bars"
-permalink: kb/221/Q221636/
+permalink: /kb/221/Q221636/
 ---
 
 ## Q221636: FIX: FFCs -_therm.vxc Classes Have Color Problems with Bars

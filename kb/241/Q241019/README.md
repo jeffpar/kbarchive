@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241019: NBA Inside Drive 2000: Court Lines Disappear When Playing Game"
-permalink: kb/241/Q241019/
+permalink: /kb/241/Q241019/
 ---
 
 ## Q241019: NBA Inside Drive 2000: Court Lines Disappear When Playing Game

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128752: How to Use Hot Keys in Visual FoxPro"
-permalink: kb/128/Q128752/
+permalink: /kb/128/Q128752/
 ---
 
 ## Q128752: How to Use Hot Keys in Visual FoxPro

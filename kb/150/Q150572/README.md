@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q150572: FIX: Error C1001: _asm Instruction Accessing Stack Using [ebp]"
-permalink: kb/150/Q150572/
+title: "Q150572: FIX: Error C1001: _asm Instruction Accessing Stack Using &#91;ebp&#93;"
+permalink: /kb/150/Q150572/
 ---
 
-## Q150572: FIX: Error C1001: _asm Instruction Accessing Stack Using [ebp]
+## Q150572: FIX: Error C1001: _asm Instruction Accessing Stack Using &#91;ebp&#93;
 
 	Article: Q150572
 	Product(s): Microsoft C Compiler

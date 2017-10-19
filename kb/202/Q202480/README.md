@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202480: HOW TO: Determine Printer Status and Print Job Status from VB"
-permalink: kb/202/Q202480/
+permalink: /kb/202/Q202480/
 ---
 
 ## Q202480: HOW TO: Determine Printer Status and Print Job Status from VB

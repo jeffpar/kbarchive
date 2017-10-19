@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178854: XCLN: When You View Message from Explorer, Client Stops"
-permalink: kb/178/Q178854/
+permalink: /kb/178/Q178854/
 ---
 
 ## Q178854: XCLN: When You View Message from Explorer, Client Stops

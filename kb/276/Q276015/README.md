@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276015: Windows Services for UNIX 2.0 NFS Case Control"
-permalink: kb/276/Q276015/
+permalink: /kb/276/Q276015/
 ---
 
 ## Q276015: Windows Services for UNIX 2.0 NFS Case Control

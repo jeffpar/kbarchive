@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155801: WD97: CTRL+Page Up/Down Keys, Previous/Next Page Buttons Change"
-permalink: kb/155/Q155801/
+permalink: /kb/155/Q155801/
 ---
 
 ## Q155801: WD97: CTRL+Page Up/Down Keys, Previous/Next Page Buttons Change

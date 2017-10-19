@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107356: PC MAPI: No Subject or Message Text with Return Receipt"
-permalink: kb/107/Q107356/
+permalink: /kb/107/Q107356/
 ---
 
 ## Q107356: PC MAPI: No Subject or Message Text with Return Receipt

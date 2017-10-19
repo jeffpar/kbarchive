@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269411: SMS: Windows 95 Clients May Hang After Upgrade to Service Pack 2"
-permalink: kb/269/Q269411/
+permalink: /kb/269/Q269411/
 ---
 
 ## Q269411: SMS: Windows 95 Clients May Hang After Upgrade to Service Pack 2

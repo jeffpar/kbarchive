@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173646: HOWTO: Use a Custom Jet Profile to Alter Data Access Behavior"
-permalink: kb/173/Q173646/
+permalink: /kb/173/Q173646/
 ---
 
 ## Q173646: HOWTO: Use a Custom Jet Profile to Alter Data Access Behavior

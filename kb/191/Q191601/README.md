@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191601: Defragmentation Application Hangs"
-permalink: kb/191/Q191601/
+permalink: /kb/191/Q191601/
 ---
 
 ## Q191601: Defragmentation Application Hangs

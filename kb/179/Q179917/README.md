@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179917: Save and Save As Options Dimmed on File Menu of 5250 Applet"
-permalink: kb/179/Q179917/
+permalink: /kb/179/Q179917/
 ---
 
 ## Q179917: Save and Save As Options Dimmed on File Menu of 5250 Applet

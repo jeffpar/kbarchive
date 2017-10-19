@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159166: XCON: MTA Stops Responding; Event ID 2110"
-permalink: kb/159/Q159166/
+permalink: /kb/159/Q159166/
 ---
 
 ## Q159166: XCON: MTA Stops Responding; Event ID 2110

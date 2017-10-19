@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167630: SMS: Office 97 Contains Incorrect PDF Format"
-permalink: kb/167/Q167630/
+permalink: /kb/167/Q167630/
 ---
 
 ## Q167630: SMS: Office 97 Contains Incorrect PDF Format

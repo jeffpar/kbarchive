@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170261: Cannot Reapply Service Pack 5 from November 1996 MSDN"
-permalink: kb/170/Q170261/
+permalink: /kb/170/Q170261/
 ---
 
 ## Q170261: Cannot Reapply Service Pack 5 from November 1996 MSDN

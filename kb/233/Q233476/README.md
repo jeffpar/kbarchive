@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233476: XCLN: Outlook Msg Sent to Wrong Recipients/OAB Corruption"
-permalink: kb/233/Q233476/
+permalink: /kb/233/Q233476/
 ---
 
 ## Q233476: XCLN: Outlook Msg Sent to Wrong Recipients/OAB Corruption

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151815: BUG: RDO Rowcount May Be Wrong When Using rdAsyncEnable Flag"
-permalink: kb/151/Q151815/
+permalink: /kb/151/Q151815/
 ---
 
 ## Q151815: BUG: RDO Rowcount May Be Wrong When Using rdAsyncEnable Flag

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155974: Hardware Profiles Have an Empty Description Line"
-permalink: kb/155/Q155974/
+permalink: /kb/155/Q155974/
 ---
 
 ## Q155974: Hardware Profiles Have an Empty Description Line

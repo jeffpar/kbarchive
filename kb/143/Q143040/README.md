@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143040: How to Call a Visual Basic 4.0 OLE Server from Project 4.0"
-permalink: kb/143/Q143040/
+permalink: /kb/143/Q143040/
 ---
 
 ## Q143040: How to Call a Visual Basic 4.0 OLE Server from Project 4.0

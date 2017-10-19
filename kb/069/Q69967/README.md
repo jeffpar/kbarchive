@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69967: Automating Network Groups and Items via SETUP.INF"
-permalink: kb/069/Q69967/
+permalink: /kb/069/Q69967/
 ---
 
 ## Q69967: Automating Network Groups and Items via SETUP.INF

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104238: FIX: ClassWizard Cannot Read .CLW File &gt; 65530 Bytes"
-permalink: kb/104/Q104238/
+permalink: /kb/104/Q104238/
 ---
 
 ## Q104238: FIX: ClassWizard Cannot Read .CLW File &gt; 65530 Bytes

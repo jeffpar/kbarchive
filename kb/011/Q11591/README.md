@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q11591: The Purpose of WINSTUB in Windows SDK"
-permalink: kb/011/Q11591/
+permalink: /kb/011/Q11591/
 ---
 
 ## Q11591: The Purpose of WINSTUB in Windows SDK

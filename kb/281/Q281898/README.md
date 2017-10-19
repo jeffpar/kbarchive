@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281898: BUG: SQL Statement Missing Integers When Collate Set to Russian"
-permalink: kb/281/Q281898/
+permalink: /kb/281/Q281898/
 ---
 
 ## Q281898: BUG: SQL Statement Missing Integers When Collate Set to Russian

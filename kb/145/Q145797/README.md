@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145797: No User Account Authentication Appears in Internet Explorer"
-permalink: kb/145/Q145797/
+permalink: /kb/145/Q145797/
 ---
 
 ## Q145797: No User Account Authentication Appears in Internet Explorer

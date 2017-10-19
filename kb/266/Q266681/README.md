@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266681: PRB: RTRIM() Function in SQL Select Does Not Remove Trailing Spa"
-permalink: kb/266/Q266681/
+permalink: /kb/266/Q266681/
 ---
 
 ## Q266681: PRB: RTRIM() Function in SQL Select Does Not Remove Trailing Spa

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148217: Mastering VB Err Msg: Run Time Error 438"
-permalink: kb/148/Q148217/
+permalink: /kb/148/Q148217/
 ---
 
 ## Q148217: Mastering VB Err Msg: Run Time Error 438

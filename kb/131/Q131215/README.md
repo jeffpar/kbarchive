@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131215: FIX: COPY STRUCTURE EXTENDED Ignores Long Field Names"
-permalink: kb/131/Q131215/
+permalink: /kb/131/Q131215/
 ---
 
 ## Q131215: FIX: COPY STRUCTURE EXTENDED Ignores Long Field Names

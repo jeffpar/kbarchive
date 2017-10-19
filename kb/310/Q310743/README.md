@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310743: IIS Error Files Are Not Installed Once They Have Been Deleted"
-permalink: kb/310/Q310743/
+permalink: /kb/310/Q310743/
 ---
 
 ## Q310743: IIS Error Files Are Not Installed Once They Have Been Deleted

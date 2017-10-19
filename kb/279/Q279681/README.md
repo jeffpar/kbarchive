@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279681: How to Force SSL Encryption for an OWA 2000 Client"
-permalink: kb/279/Q279681/
+permalink: /kb/279/Q279681/
 ---
 
 ## Q279681: How to Force SSL Encryption for an OWA 2000 Client

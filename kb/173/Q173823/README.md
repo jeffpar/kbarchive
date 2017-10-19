@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173823: HOWTO: Aggregate a COM Object with ATL"
-permalink: kb/173/Q173823/
+permalink: /kb/173/Q173823/
 ---
 
 ## Q173823: HOWTO: Aggregate a COM Object with ATL

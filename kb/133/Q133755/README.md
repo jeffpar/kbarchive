@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133755: Bookshelf '95: Problems Copying a Picture from an Article"
-permalink: kb/133/Q133755/
+permalink: /kb/133/Q133755/
 ---
 
 ## Q133755: Bookshelf '95: Problems Copying a Picture from an Article

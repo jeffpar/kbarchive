@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231457: Malformed Request Causes LSA Service to Stop Responding"
-permalink: kb/231/Q231457/
+permalink: /kb/231/Q231457/
 ---
 
 ## Q231457: Malformed Request Causes LSA Service to Stop Responding

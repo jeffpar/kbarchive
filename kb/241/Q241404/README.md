@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241404: Dr. Watson Error in Userinit.exe When a User Logs On"
-permalink: kb/241/Q241404/
+permalink: /kb/241/Q241404/
 ---
 
 ## Q241404: Dr. Watson Error in Userinit.exe When a User Logs On

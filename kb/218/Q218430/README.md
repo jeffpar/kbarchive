@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218430: XCLN: Client SMTP Connectivity Using Secure Socket Layer"
-permalink: kb/218/Q218430/
+permalink: /kb/218/Q218430/
 ---
 
 ## Q218430: XCLN: Client SMTP Connectivity Using Secure Socket Layer

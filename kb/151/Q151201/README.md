@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151201: Unbind Hold Causes TN3270 Client 505 Error"
-permalink: kb/151/Q151201/
+permalink: /kb/151/Q151201/
 ---
 
 ## Q151201: Unbind Hold Causes TN3270 Client 505 Error

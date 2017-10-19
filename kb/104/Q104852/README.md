@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104852: System and Hardware Requirements for Flight Sim 1.02"
-permalink: kb/104/Q104852/
+permalink: /kb/104/Q104852/
 ---
 
 ## Q104852: System and Hardware Requirements for Flight Sim 1.02

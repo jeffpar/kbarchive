@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q326817: FIX: &quot;Reserved Error (-7743)&quot; Error Message with ODBC for DB2"
-permalink: kb/326/Q326817/
+permalink: /kb/326/Q326817/
 ---
 
 ## Q326817: FIX: &quot;Reserved Error (-7743)&quot; Error Message with ODBC for DB2

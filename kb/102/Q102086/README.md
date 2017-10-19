@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102086: PC Win: Print Quality Always Set to High"
-permalink: kb/102/Q102086/
+permalink: /kb/102/Q102086/
 ---
 
 ## Q102086: PC Win: Print Quality Always Set to High

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190536: FIX: Invalid Page Fault in Msvcrt.dll"
-permalink: kb/190/Q190536/
+permalink: /kb/190/Q190536/
 ---
 
 ## Q190536: FIX: Invalid Page Fault in Msvcrt.dll

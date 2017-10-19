@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76834: Multimedia Hardware/Software Vendor Phone List"
-permalink: kb/076/Q76834/
+permalink: /kb/076/Q76834/
 ---
 
 ## Q76834: Multimedia Hardware/Software Vendor Phone List

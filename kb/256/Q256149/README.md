@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256149: Memory Leak Using Multiple Threads to Call CoGetClassObject()"
-permalink: kb/256/Q256149/
+permalink: /kb/256/Q256149/
 ---
 
 ## Q256149: Memory Leak Using Multiple Threads to Call CoGetClassObject()

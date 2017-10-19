@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276508: XADM: Inconsistent MsgID Formats Between Exchange 5.5 and 2000"
-permalink: kb/276/Q276508/
+permalink: /kb/276/Q276508/
 ---
 
 ## Q276508: XADM: Inconsistent MsgID Formats Between Exchange 5.5 and 2000

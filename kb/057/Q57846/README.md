@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57846: Mac AL GW: Configuring the AppleLink Gateway"
-permalink: kb/057/Q57846/
+permalink: /kb/057/Q57846/
 ---
 
 ## Q57846: Mac AL GW: Configuring the AppleLink Gateway

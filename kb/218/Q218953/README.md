@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218953: Display Problems with Greetings Workshop on Windows NT 4.0 SP4"
-permalink: kb/218/Q218953/
+permalink: /kb/218/Q218953/
 ---
 
 ## Q218953: Display Problems with Greetings Workshop on Windows NT 4.0 SP4

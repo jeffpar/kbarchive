@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279777: BUG: FOR EACH Reference Fails To Release Automation Server"
-permalink: kb/279/Q279777/
+permalink: /kb/279/Q279777/
 ---
 
 ## Q279777: BUG: FOR EACH Reference Fails To Release Automation Server

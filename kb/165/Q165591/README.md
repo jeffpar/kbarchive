@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165591: SMS: SNMP Traps Are Not Sent If Trap Throttle Is Too Strict"
-permalink: kb/165/Q165591/
+permalink: /kb/165/Q165591/
 ---
 
 ## Q165591: SMS: SNMP Traps Are Not Sent If Trap Throttle Is Too Strict

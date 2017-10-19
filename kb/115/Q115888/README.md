@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115888: How to Force a Hung Macintosh Application to Quit"
-permalink: kb/115/Q115888/
+permalink: /kb/115/Q115888/
 ---
 
 ## Q115888: How to Force a Hung Macintosh Application to Quit

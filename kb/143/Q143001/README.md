@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143001: PRB: Child Property Doesn't Reflect Parent Container Property"
-permalink: kb/143/Q143001/
+permalink: /kb/143/Q143001/
 ---
 
 ## Q143001: PRB: Child Property Doesn't Reflect Parent Container Property

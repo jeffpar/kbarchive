@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135522: PRB: Error Occurs When Using DynamicCurrentControl Property"
-permalink: kb/135/Q135522/
+permalink: /kb/135/Q135522/
 ---
 
 ## Q135522: PRB: Error Occurs When Using DynamicCurrentControl Property

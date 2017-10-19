@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171779: Enabling User Profile Editor On a Windows NT 3.51 Workstation"
-permalink: kb/171/Q171779/
+permalink: /kb/171/Q171779/
 ---
 
 ## Q171779: Enabling User Profile Editor On a Windows NT 3.51 Workstation

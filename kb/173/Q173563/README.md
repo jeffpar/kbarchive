@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173563: Bookshelf 98: Arial and Symbol Fonts Required but Not Installed"
-permalink: kb/173/Q173563/
+permalink: /kb/173/Q173563/
 ---
 
 ## Q173563: Bookshelf 98: Arial and Symbol Fonts Required but Not Installed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273038: WD97: How to Work with Documents in Different Languages"
-permalink: kb/273/Q273038/
+permalink: /kb/273/Q273038/
 ---
 
 ## Q273038: WD97: How to Work with Documents in Different Languages

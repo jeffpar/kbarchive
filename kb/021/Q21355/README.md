@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q21355: Transponder Never Sends &quot;Squawk&quot; Code"
-permalink: kb/021/Q21355/
+permalink: /kb/021/Q21355/
 ---
 
 ## Q21355: Transponder Never Sends &quot;Squawk&quot; Code

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141185: Using the Adaptec 2940/2940 OU SCSI Controller with Windows NT"
-permalink: kb/141/Q141185/
+permalink: /kb/141/Q141185/
 ---
 
 ## Q141185: Using the Adaptec 2940/2940 OU SCSI Controller with Windows NT

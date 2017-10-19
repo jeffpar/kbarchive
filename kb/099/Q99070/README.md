@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99070: CalComp Plotter Driver for Windows"
-permalink: kb/099/Q99070/
+permalink: /kb/099/Q99070/
 ---
 
 ## Q99070: CalComp Plotter Driver for Windows

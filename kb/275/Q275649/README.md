@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275649: SAMPLE: ChrtSmpl.exe Demonstrates Use of the VB 6.0 MSChart Ctrl"
-permalink: kb/275/Q275649/
+permalink: /kb/275/Q275649/
 ---
 
 ## Q275649: SAMPLE: ChrtSmpl.exe Demonstrates Use of the VB 6.0 MSChart Ctrl

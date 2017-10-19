@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153641: Program Group Control (PGC) Randomly Chooses a Logon Server"
-permalink: kb/153/Q153641/
+permalink: /kb/153/Q153641/
 ---
 
 ## Q153641: Program Group Control (PGC) Randomly Chooses a Logon Server

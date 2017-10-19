@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96789: Windows Code Module to Delete Files"
-permalink: kb/096/Q96789/
+permalink: /kb/096/Q96789/
 ---
 
 ## Q96789: Windows Code Module to Delete Files

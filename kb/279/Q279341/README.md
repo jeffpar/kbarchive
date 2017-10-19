@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279341: OLE DB Provider for DB2 Hangs When Calling Stored Procedure"
-permalink: kb/279/Q279341/
+permalink: /kb/279/Q279341/
 ---
 
 ## Q279341: OLE DB Provider for DB2 Hangs When Calling Stored Procedure

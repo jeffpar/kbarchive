@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251388: XCLN: Schedule+ User Calendar Opens Blank Outlook Calendar"
-permalink: kb/251/Q251388/
+permalink: /kb/251/Q251388/
 ---
 
 ## Q251388: XCLN: Schedule+ User Calendar Opens Blank Outlook Calendar

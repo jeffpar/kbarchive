@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177247: FS98: Engine Noise Continues After You Switch to Map View"
-permalink: kb/177/Q177247/
+permalink: /kb/177/Q177247/
 ---
 
 ## Q177247: FS98: Engine Noise Continues After You Switch to Map View

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101077: ADT: Windows Setup Ignores ADK, ADT Applications"
-permalink: kb/101/Q101077/
+permalink: /kb/101/Q101077/
 ---
 
 ## Q101077: ADT: Windows Setup Ignores ADK, ADT Applications

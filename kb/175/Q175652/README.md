@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175652: SMS: PCM May Not Change the Status of Executed Package Commands"
-permalink: kb/175/Q175652/
+permalink: /kb/175/Q175652/
 ---
 
 ## Q175652: SMS: PCM May Not Change the Status of Executed Package Commands

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73690: Invoking NMAKE with /A Still Evaluates First Target Only"
-permalink: kb/073/Q73690/
+permalink: /kb/073/Q73690/
 ---
 
 ## Q73690: Invoking NMAKE with /A Still Evaluates First Target Only

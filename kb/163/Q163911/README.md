@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163911: Cacls.exe May Not Redirect Output to a File"
-permalink: kb/163/Q163911/
+permalink: /kb/163/Q163911/
 ---
 
 ## Q163911: Cacls.exe May Not Redirect Output to a File

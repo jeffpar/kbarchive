@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216767: XFOR: OVVM/SNADS/Notes Connector Not Recognizing Apparently-To"
-permalink: kb/216/Q216767/
+permalink: /kb/216/Q216767/
 ---
 
 ## Q216767: XFOR: OVVM/SNADS/Notes Connector Not Recognizing Apparently-To

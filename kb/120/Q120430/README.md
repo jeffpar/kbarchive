@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120430: CA-SuperProject For Windows Crashes When Printing"
-permalink: kb/120/Q120430/
+permalink: /kb/120/Q120430/
 ---
 
 ## Q120430: CA-SuperProject For Windows Crashes When Printing

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84933: Media Player Does Not Rewind After Playing an Audio CD"
-permalink: kb/084/Q84933/
+permalink: /kb/084/Q84933/
 ---
 
 ## Q84933: Media Player Does Not Rewind After Playing an Audio CD

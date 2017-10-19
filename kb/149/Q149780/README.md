@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149780: XFOR: IMC and IMS Do Not Wrap Line Text At Property Page Value"
-permalink: kb/149/Q149780/
+permalink: /kb/149/Q149780/
 ---
 
 ## Q149780: XFOR: IMC and IMS Do Not Wrap Line Text At Property Page Value

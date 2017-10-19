@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125746: Stop 7B When Installing Windows NT 3.5 On AST Bravo LC 486/33"
-permalink: kb/125/Q125746/
+permalink: /kb/125/Q125746/
 ---
 
 ## Q125746: Stop 7B When Installing Windows NT 3.5 On AST Bravo LC 486/33

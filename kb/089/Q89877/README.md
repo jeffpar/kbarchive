@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89877: Sound System: Description of Yamaha OPL3 and OPL2 Chips"
-permalink: kb/089/Q89877/
+permalink: /kb/089/Q89877/
 ---
 
 ## Q89877: Sound System: Description of Yamaha OPL3 and OPL2 Chips

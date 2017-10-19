@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190165: BUG: Compile Errors When You Use Command Line Argument /MAKE"
-permalink: kb/190/Q190165/
+permalink: /kb/190/Q190165/
 ---
 
 ## Q190165: BUG: Compile Errors When You Use Command Line Argument /MAKE

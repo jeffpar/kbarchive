@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298695: Commerce Server 2000 Resource Kit Comments and Corrections"
-permalink: kb/298/Q298695/
+permalink: /kb/298/Q298695/
 ---
 
 ## Q298695: Commerce Server 2000 Resource Kit Comments and Corrections

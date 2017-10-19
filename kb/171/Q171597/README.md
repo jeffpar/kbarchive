@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171597: WD97: Banyan Vines Drives Do Not Appear in Word Drive List"
-permalink: kb/171/Q171597/
+permalink: /kb/171/Q171597/
 ---
 
 ## Q171597: WD97: Banyan Vines Drives Do Not Appear in Word Drive List

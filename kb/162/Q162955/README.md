@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162955: WD97: Alignment of Bulleted or Numbered List Lost in HTML"
-permalink: kb/162/Q162955/
+permalink: /kb/162/Q162955/
 ---
 
 ## Q162955: WD97: Alignment of Bulleted or Numbered List Lost in HTML

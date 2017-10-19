@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69972: Automating Network Setup Shell Via SETUP.INF"
-permalink: kb/069/Q69972/
+permalink: /kb/069/Q69972/
 ---
 
 ## Q69972: Automating Network Setup Shell Via SETUP.INF

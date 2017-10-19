@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314595: Automap 2002: Err Msg: ...Can Only Import 10,000 Addresses..."
-permalink: kb/314/Q314595/
+permalink: /kb/314/Q314595/
 ---
 
 ## Q314595: Automap 2002: Err Msg: ...Can Only Import 10,000 Addresses...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147632: BUG: Browsing Template Function Definition Goes to Wrong Place"
-permalink: kb/147/Q147632/
+permalink: /kb/147/Q147632/
 ---
 
 ## Q147632: BUG: Browsing Template Function Definition Goes to Wrong Place

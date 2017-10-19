@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141485: FIX: LNK1152 &amp; LNK1141 When Linking OLE Control to Mapi32.lib"
-permalink: kb/141/Q141485/
+permalink: /kb/141/Q141485/
 ---
 
 ## Q141485: FIX: LNK1152 &amp; LNK1141 When Linking OLE Control to Mapi32.lib

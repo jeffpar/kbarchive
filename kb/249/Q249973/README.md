@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249973: MS00-005: Default RTF File Viewer Interrupts Normal Program Proc"
-permalink: kb/249/Q249973/
+permalink: /kb/249/Q249973/
 ---
 
 ## Q249973: MS00-005: Default RTF File Viewer Interrupts Normal Program Proc

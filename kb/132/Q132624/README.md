@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132624: Protocols Can Be Installed When Network Is Not Installed"
-permalink: kb/132/Q132624/
+permalink: /kb/132/Q132624/
 ---
 
 ## Q132624: Protocols Can Be Installed When Network Is Not Installed

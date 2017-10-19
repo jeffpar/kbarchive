@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174031: XADM: Unable to Uninstall Active Server Components from Exchange"
-permalink: kb/174/Q174031/
+permalink: /kb/174/Q174031/
 ---
 
 ## Q174031: XADM: Unable to Uninstall Active Server Components from Exchange

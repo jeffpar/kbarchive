@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195994: WD97: How to Force Text to Start at Same Line in Merged Letters"
-permalink: kb/195/Q195994/
+permalink: /kb/195/Q195994/
 ---
 
 ## Q195994: WD97: How to Force Text to Start at Same Line in Merged Letters

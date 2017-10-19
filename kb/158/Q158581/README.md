@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158581: Icon Position Not Stored When Using Roaming Profiles"
-permalink: kb/158/Q158581/
+permalink: /kb/158/Q158581/
 ---
 
 ## Q158581: Icon Position Not Stored When Using Roaming Profiles

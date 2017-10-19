@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296720: IIS Faults on Startup if Password Exceeds 14 Characters"
-permalink: kb/296/Q296720/
+permalink: /kb/296/Q296720/
 ---
 
 ## Q296720: IIS Faults on Startup if Password Exceeds 14 Characters

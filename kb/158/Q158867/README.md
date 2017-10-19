@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158867: Low Disk Space Dialog Box Displays Incorrect Information"
-permalink: kb/158/Q158867/
+permalink: /kb/158/Q158867/
 ---
 
 ## Q158867: Low Disk Space Dialog Box Displays Incorrect Information

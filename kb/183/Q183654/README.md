@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183654: IBM DTTA-351010 10.1 GB Drive Capacity Is Inaccurate"
-permalink: kb/183/Q183654/
+permalink: /kb/183/Q183654/
 ---
 
 ## Q183654: IBM DTTA-351010 10.1 GB Drive Capacity Is Inaccurate

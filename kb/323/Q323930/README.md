@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323930: Flight Simulator 2002: How to Import Aircraft from FS 2000"
-permalink: kb/323/Q323930/
+permalink: /kb/323/Q323930/
 ---
 
 ## Q323930: Flight Simulator 2002: How to Import Aircraft from FS 2000

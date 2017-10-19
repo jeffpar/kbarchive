@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286261: Duplicate Messages Received by a Public Folder"
-permalink: kb/286/Q286261/
+permalink: /kb/286/Q286261/
 ---
 
 ## Q286261: Duplicate Messages Received by a Public Folder

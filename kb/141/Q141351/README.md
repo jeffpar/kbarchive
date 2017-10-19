@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141351: PRB: &quot;Invalid argument&quot; with dbAttachedTable or dbAttachedODBC"
-permalink: kb/141/Q141351/
+permalink: /kb/141/Q141351/
 ---
 
 ## Q141351: PRB: &quot;Invalid argument&quot; with dbAttachedTable or dbAttachedODBC

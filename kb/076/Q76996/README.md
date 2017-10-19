@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76996: Creating Backup Disks of the MS-DOS 5 Upgrade"
-permalink: kb/076/Q76996/
+permalink: /kb/076/Q76996/
 ---
 
 ## Q76996: Creating Backup Disks of the MS-DOS 5 Upgrade

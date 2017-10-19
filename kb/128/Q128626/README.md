@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128626: Message Size on BBS Differs in Message List and Property Sheet"
-permalink: kb/128/Q128626/
+permalink: /kb/128/Q128626/
 ---
 
 ## Q128626: Message Size on BBS Differs in Message List and Property Sheet

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196705: INFO: Files Installed in WINNT&#92;SYSTEM32 Folder for VFP6 Setup"
-permalink: kb/196/Q196705/
+permalink: /kb/196/Q196705/
 ---
 
 ## Q196705: INFO: Files Installed in WINNT&#92;SYSTEM32 Folder for VFP6 Setup

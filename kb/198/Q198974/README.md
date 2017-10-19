@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198974: HOWTO: Use the Common Dialog Control with Multiple Long File Nam"
-permalink: kb/198/Q198974/
+permalink: /kb/198/Q198974/
 ---
 
 ## Q198974: HOWTO: Use the Common Dialog Control with Multiple Long File Nam

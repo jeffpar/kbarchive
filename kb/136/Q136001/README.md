@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136001: Explorapedia: Nature: Tad's Mouth Doesn't Move"
-permalink: kb/136/Q136001/
+permalink: /kb/136/Q136001/
 ---
 
 ## Q136001: Explorapedia: Nature: Tad's Mouth Doesn't Move

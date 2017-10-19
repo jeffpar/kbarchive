@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186463: Windows NT Replies to Address Mask Requests"
-permalink: kb/186/Q186463/
+permalink: /kb/186/Q186463/
 ---
 
 ## Q186463: Windows NT Replies to Address Mask Requests

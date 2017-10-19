@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182307: XADM: Text Attachments Appear Corrupted"
-permalink: kb/182/Q182307/
+permalink: /kb/182/Q182307/
 ---
 
 ## Q182307: XADM: Text Attachments Appear Corrupted

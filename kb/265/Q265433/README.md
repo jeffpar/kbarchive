@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265433: Rpcss Leaks Memory with CoCreateInstance() and Release"
-permalink: kb/265/Q265433/
+permalink: /kb/265/Q265433/
 ---
 
 ## Q265433: Rpcss Leaks Memory with CoCreateInstance() and Release

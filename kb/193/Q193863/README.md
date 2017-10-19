@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193863: XIMS: No Inbound SMTP Mail Because of NAT to Exchange Server"
-permalink: kb/193/Q193863/
+permalink: /kb/193/Q193863/
 ---
 
 ## Q193863: XIMS: No Inbound SMTP Mail Because of NAT to Exchange Server

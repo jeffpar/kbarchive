@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194734: PC WRmt: Echo and Display Commands do not Work in Remote Client"
-permalink: kb/194/Q194734/
+permalink: /kb/194/Q194734/
 ---
 
 ## Q194734: PC WRmt: Echo and Display Commands do not Work in Remote Client

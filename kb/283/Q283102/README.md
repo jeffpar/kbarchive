@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q283102: Windows NT4.0 Print Servers Paged Pool Leak on FsRt Pooltag"
-permalink: kb/283/Q283102/
+permalink: /kb/283/Q283102/
 ---
 
 ## Q283102: Windows NT4.0 Print Servers Paged Pool Leak on FsRt Pooltag

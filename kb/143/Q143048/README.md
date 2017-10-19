@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143048: BUG: Form Unload in Any DBGrid Event Ends Visual Basic"
-permalink: kb/143/Q143048/
+permalink: /kb/143/Q143048/
 ---
 
 ## Q143048: BUG: Form Unload in Any DBGrid Event Ends Visual Basic

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171537: FIX: Bad Error Number Returned if Relationship Doesn't Exist"
-permalink: kb/171/Q171537/
+permalink: /kb/171/Q171537/
 ---
 
 ## Q171537: FIX: Bad Error Number Returned if Relationship Doesn't Exist

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258661: Baseball 2001: Game Graphics Are Distorted or Turn Black"
-permalink: kb/258/Q258661/
+permalink: /kb/258/Q258661/
 ---
 
 ## Q258661: Baseball 2001: Game Graphics Are Distorted or Turn Black

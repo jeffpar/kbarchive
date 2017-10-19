@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243084: MCSE Readiness Review Exam 70-059 Comments and Corrections"
-permalink: kb/243/Q243084/
+permalink: /kb/243/Q243084/
 ---
 
 ## Q243084: MCSE Readiness Review Exam 70-059 Comments and Corrections

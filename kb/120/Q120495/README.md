@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120495: Changing a Bitmap Palette to Prevent Distortion &amp; Screen Flash"
-permalink: kb/120/Q120495/
+permalink: /kb/120/Q120495/
 ---
 
 ## Q120495: Changing a Bitmap Palette to Prevent Distortion &amp; Screen Flash

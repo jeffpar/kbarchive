@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186709: How to Move SNA from One Domain to Another"
-permalink: kb/186/Q186709/
+permalink: /kb/186/Q186709/
 ---
 
 ## Q186709: How to Move SNA from One Domain to Another

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155493: PPT7: Saving in 4.0 Fails if Path Longer Than 100 Characters"
-permalink: kb/155/Q155493/
+permalink: /kb/155/Q155493/
 ---
 
 ## Q155493: PPT7: Saving in 4.0 Fails if Path Longer Than 100 Characters

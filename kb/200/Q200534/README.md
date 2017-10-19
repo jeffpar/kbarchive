@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200534: Pointing Device Affects Encarta When Running in the Background"
-permalink: kb/200/Q200534/
+permalink: /kb/200/Q200534/
 ---
 
 ## Q200534: Pointing Device Affects Encarta When Running in the Background

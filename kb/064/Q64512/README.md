@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q64512: Loading a .TXT File from File Manager into Word 5.0"
-permalink: kb/064/Q64512/
+permalink: /kb/064/Q64512/
 ---
 
 ## Q64512: Loading a .TXT File from File Manager into Word 5.0

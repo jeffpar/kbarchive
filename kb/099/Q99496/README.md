@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99496: Golf Doesn't Keep High Scores"
-permalink: kb/099/Q99496/
+permalink: /kb/099/Q99496/
 ---
 
 ## Q99496: Golf Doesn't Keep High Scores

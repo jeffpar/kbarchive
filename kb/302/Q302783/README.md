@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302783: Launching Internet Explorer Does Not Launch MSN Explorer Dialer"
-permalink: kb/302/Q302783/
+permalink: /kb/302/Q302783/
 ---
 
 ## Q302783: Launching Internet Explorer Does Not Launch MSN Explorer Dialer

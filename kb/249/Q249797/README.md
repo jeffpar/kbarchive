@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249797: XCLN: Client Folder View Doesn't Display Bcc Address Properties"
-permalink: kb/249/Q249797/
+permalink: /kb/249/Q249797/
 ---
 
 ## Q249797: XCLN: Client Folder View Doesn't Display Bcc Address Properties

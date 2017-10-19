@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302563: Multi-User Associated Accounts"
-permalink: kb/302/Q302563/
+permalink: /kb/302/Q302563/
 ---
 
 ## Q302563: Multi-User Associated Accounts

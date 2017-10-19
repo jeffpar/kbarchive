@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134577: Taskbar Not Updated Correctly with Maxtime Loaded"
-permalink: kb/134/Q134577/
+permalink: /kb/134/Q134577/
 ---
 
 ## Q134577: Taskbar Not Updated Correctly with Maxtime Loaded

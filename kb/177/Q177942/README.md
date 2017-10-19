@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177942: XADM: MIME Message Text Word Wrap Option Cannot Be Configured"
-permalink: kb/177/Q177942/
+permalink: /kb/177/Q177942/
 ---
 
 ## Q177942: XADM: MIME Message Text Word Wrap Option Cannot Be Configured

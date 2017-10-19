@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269117: PRB:Hourly Type Event Agents Require the Days Property to Be Set"
-permalink: kb/269/Q269117/
+permalink: /kb/269/Q269117/
 ---
 
 ## Q269117: PRB:Hourly Type Event Agents Require the Days Property to Be Set

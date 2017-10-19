@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190728: XADM: FDoMaintenance Halted Due to Error 0xfffffc15"
-permalink: kb/190/Q190728/
+permalink: /kb/190/Q190728/
 ---
 
 ## Q190728: XADM: FDoMaintenance Halted Due to Error 0xfffffc15

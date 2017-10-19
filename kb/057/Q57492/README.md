@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q57492: FltSim: Location of Nondirectional Radio Beacons"
-permalink: kb/057/Q57492/
+permalink: /kb/057/Q57492/
 ---
 
 ## Q57492: FltSim: Location of Nondirectional Radio Beacons

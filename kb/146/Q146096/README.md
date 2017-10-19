@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146096: XCLN: Hidden Groups in Attendees List Not Invited to Meeting"
-permalink: kb/146/Q146096/
+permalink: /kb/146/Q146096/
 ---
 
 ## Q146096: XCLN: Hidden Groups in Attendees List Not Invited to Meeting

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104597: Pan Chinese Characters Appear as ASCII Text"
-permalink: kb/104/Q104597/
+permalink: /kb/104/Q104597/
 ---
 
 ## Q104597: Pan Chinese Characters Appear as ASCII Text

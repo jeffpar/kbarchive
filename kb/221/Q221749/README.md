@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221749: FIX: Top Level Forms with Menus Allow Access to Datasession 0"
-permalink: kb/221/Q221749/
+permalink: /kb/221/Q221749/
 ---
 
 ## Q221749: FIX: Top Level Forms with Menus Allow Access to Datasession 0

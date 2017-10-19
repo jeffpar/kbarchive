@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165698: XADM: Corrupt Admin.Ins"
-permalink: kb/165/Q165698/
+permalink: /kb/165/Q165698/
 ---
 
 ## Q165698: XADM: Corrupt Admin.Ins

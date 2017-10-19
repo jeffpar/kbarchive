@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235501: XFOR: Zero-Length Attachments Cause Errors in API Gateway"
-permalink: kb/235/Q235501/
+permalink: /kb/235/Q235501/
 ---
 
 ## Q235501: XFOR: Zero-Length Attachments Cause Errors in API Gateway

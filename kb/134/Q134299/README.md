@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134299: Sound Blaster WaveStudio 1.1 Out of Memory in Windows 95"
-permalink: kb/134/Q134299/
+permalink: /kb/134/Q134299/
 ---
 
 ## Q134299: Sound Blaster WaveStudio 1.1 Out of Memory in Windows 95

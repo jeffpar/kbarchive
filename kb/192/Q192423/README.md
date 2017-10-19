@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192423: EVG99: Back Button Does Not Return You to Previous Screen"
-permalink: kb/192/Q192423/
+permalink: /kb/192/Q192423/
 ---
 
 ## Q192423: EVG99: Back Button Does Not Return You to Previous Screen

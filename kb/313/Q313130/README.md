@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313130: HOWTO: Retrieve @@IDENTITY Value Using JDBC"
-permalink: kb/313/Q313130/
+permalink: /kb/313/Q313130/
 ---
 
 ## Q313130: HOWTO: Retrieve @@IDENTITY Value Using JDBC

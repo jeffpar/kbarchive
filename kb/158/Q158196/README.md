@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158196: Using Suspend on Certain Gateway Laptops Drains Power"
-permalink: kb/158/Q158196/
+permalink: /kb/158/Q158196/
 ---
 
 ## Q158196: Using Suspend on Certain Gateway Laptops Drains Power

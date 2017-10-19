@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196243: Host Print Sessions Using GDI May Stop Printing"
-permalink: kb/196/Q196243/
+permalink: /kb/196/Q196243/
 ---
 
 ## Q196243: Host Print Sessions Using GDI May Stop Printing

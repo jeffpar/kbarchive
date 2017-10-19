@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133031: Event ID 4280 Appears for WINS Bound to One NIC"
-permalink: kb/133/Q133031/
+permalink: /kb/133/Q133031/
 ---
 
 ## Q133031: Event ID 4280 Appears for WINS Bound to One NIC

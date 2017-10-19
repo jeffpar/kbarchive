@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129938: PRB: Moving Off 'Sub' Doesn't Create 'End Sub'"
-permalink: kb/129/Q129938/
+permalink: /kb/129/Q129938/
 ---
 
 ## Q129938: PRB: Moving Off 'Sub' Doesn't Create 'End Sub'

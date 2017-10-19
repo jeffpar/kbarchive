@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226852: SMS: Parent Site Collections Locked at Detached Child Site"
-permalink: kb/226/Q226852/
+permalink: /kb/226/Q226852/
 ---
 
 ## Q226852: SMS: Parent Site Collections Locked at Detached Child Site

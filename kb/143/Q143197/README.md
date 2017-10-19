@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143197: XCON: Pending Delivery Notification on Read Receipts"
-permalink: kb/143/Q143197/
+permalink: /kb/143/Q143197/
 ---
 
 ## Q143197: XCON: Pending Delivery Notification on Read Receipts

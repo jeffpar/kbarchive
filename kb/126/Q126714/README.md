@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126714: Err Msg: SERVERNT.BMP Is Not A Valid Bitmap Texture..."
-permalink: kb/126/Q126714/
+permalink: /kb/126/Q126714/
 ---
 
 ## Q126714: Err Msg: SERVERNT.BMP Is Not A Valid Bitmap Texture...

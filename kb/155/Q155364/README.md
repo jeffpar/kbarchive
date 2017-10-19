@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155364: OSR2 Hangs After Booting Previous Operating System"
-permalink: kb/155/Q155364/
+permalink: /kb/155/Q155364/
 ---
 
 ## Q155364: OSR2 Hangs After Booting Previous Operating System

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140769: Writer/Artist: Mouse Doesn't Work"
-permalink: kb/140/Q140769/
+permalink: /kb/140/Q140769/
 ---
 
 ## Q140769: Writer/Artist: Mouse Doesn't Work

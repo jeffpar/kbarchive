@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157916: SMS: Service Pack Reporting in Inventory"
-permalink: kb/157/Q157916/
+permalink: /kb/157/Q157916/
 ---
 
 ## Q157916: SMS: Service Pack Reporting in Inventory

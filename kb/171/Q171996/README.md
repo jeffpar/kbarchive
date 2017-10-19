@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171996: Winsock Function Calls Generate Non-Paged Pool Memory Leak"
-permalink: kb/171/Q171996/
+permalink: /kb/171/Q171996/
 ---
 
 ## Q171996: Winsock Function Calls Generate Non-Paged Pool Memory Leak

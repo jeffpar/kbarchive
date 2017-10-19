@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60112: Mac AL: Reinstalling Custom Form for AppleLink Gateway"
-permalink: kb/060/Q60112/
+permalink: /kb/060/Q60112/
 ---
 
 ## Q60112: Mac AL: Reinstalling Custom Form for AppleLink Gateway

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131605: Windows NT Help Shows Incorrect Default Log Setting"
-permalink: kb/131/Q131605/
+permalink: /kb/131/Q131605/
 ---
 
 ## Q131605: Windows NT Help Shows Incorrect Default Log Setting

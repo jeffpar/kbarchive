@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85748: Windows Err Msg: I/O Address Cannot Be Found in SYSTEM.INI"
-permalink: kb/085/Q85748/
+permalink: /kb/085/Q85748/
 ---
 
 ## Q85748: Windows Err Msg: I/O Address Cannot Be Found in SYSTEM.INI

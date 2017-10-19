@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174462: SMS: Run Command On Workstation Job May Not Go Active"
-permalink: kb/174/Q174462/
+permalink: /kb/174/Q174462/
 ---
 
 ## Q174462: SMS: Run Command On Workstation Job May Not Go Active

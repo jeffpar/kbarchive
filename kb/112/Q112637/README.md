@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112637: STOP Message on MIPS Computer Caused by NET Command"
-permalink: kb/112/Q112637/
+permalink: /kb/112/Q112637/
 ---
 
 ## Q112637: STOP Message on MIPS Computer Caused by NET Command

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135064: XADM: Owner of a Distribution List"
-permalink: kb/135/Q135064/
+permalink: /kb/135/Q135064/
 ---
 
 ## Q135064: XADM: Owner of a Distribution List

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213106: SMS: CAP or Distribution Point Requires NTFS Partition"
-permalink: kb/213/Q213106/
+permalink: /kb/213/Q213106/
 ---
 
 ## Q213106: SMS: CAP or Distribution Point Requires NTFS Partition

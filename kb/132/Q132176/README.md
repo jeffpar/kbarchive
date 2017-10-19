@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132176: PRB: Problems Printing with Samsung 2412 Printer"
-permalink: kb/132/Q132176/
+permalink: /kb/132/Q132176/
 ---
 
 ## Q132176: PRB: Problems Printing with Samsung 2412 Printer

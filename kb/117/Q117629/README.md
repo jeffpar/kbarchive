@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117629: HP Jet Direct Card Not Recognized by DLC"
-permalink: kb/117/Q117629/
+permalink: /kb/117/Q117629/
 ---
 
 ## Q117629: HP Jet Direct Card Not Recognized by DLC

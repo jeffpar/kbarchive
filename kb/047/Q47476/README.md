@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q47476: WD97: How to Create Multiple References to the Same Footnote"
-permalink: kb/047/Q47476/
+permalink: /kb/047/Q47476/
 ---
 
 ## Q47476: WD97: How to Create Multiple References to the Same Footnote

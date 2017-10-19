@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171517: FIX: Animation Control Prints Incorrectly at Design-Time"
-permalink: kb/171/Q171517/
+permalink: /kb/171/Q171517/
 ---
 
 ## Q171517: FIX: Animation Control Prints Incorrectly at Design-Time

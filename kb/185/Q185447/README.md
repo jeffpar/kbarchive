@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185447: LUA Program Access Violation Occurs If SnaBase Fails to Start"
-permalink: kb/185/Q185447/
+permalink: /kb/185/Q185447/
 ---
 
 ## Q185447: LUA Program Access Violation Occurs If SnaBase Fails to Start

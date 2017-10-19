@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196793: XIMS: Restricting Internet E-Mail to Specific Domains via IMS"
-permalink: kb/196/Q196793/
+permalink: /kb/196/Q196793/
 ---
 
 ## Q196793: XIMS: Restricting Internet E-Mail to Specific Domains via IMS

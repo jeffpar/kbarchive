@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69244: Calculator Err Msg: List of Error Messages"
-permalink: kb/069/Q69244/
+permalink: /kb/069/Q69244/
 ---
 
 ## Q69244: Calculator Err Msg: List of Error Messages

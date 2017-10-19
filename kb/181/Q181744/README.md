@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181744: FP: How to Change Where FrontPage Content is Stored in MS PWS"
-permalink: kb/181/Q181744/
+permalink: /kb/181/Q181744/
 ---
 
 ## Q181744: FP: How to Change Where FrontPage Content is Stored in MS PWS

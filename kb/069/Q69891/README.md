@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69891: DOCERR: ExtDeviceMode() API Documentation Error"
-permalink: kb/069/Q69891/
+permalink: /kb/069/Q69891/
 ---
 
 ## Q69891: DOCERR: ExtDeviceMode() API Documentation Error

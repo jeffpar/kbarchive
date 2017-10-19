@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150733: FPNW Groups Not Recognized from Trusted Domain"
-permalink: kb/150/Q150733/
+permalink: /kb/150/Q150733/
 ---
 
 ## Q150733: FPNW Groups Not Recognized from Trusted Domain

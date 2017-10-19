@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96736: Using FTSETUP to Install Fault Tolerance"
-permalink: kb/096/Q96736/
+permalink: /kb/096/Q96736/
 ---
 
 ## Q96736: Using FTSETUP to Install Fault Tolerance

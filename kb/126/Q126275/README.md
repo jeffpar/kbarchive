@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126275: Dinosaurs Hangs During Setup with ATI Mach32 Driver"
-permalink: kb/126/Q126275/
+permalink: /kb/126/Q126275/
 ---
 
 ## Q126275: Dinosaurs Hangs During Setup with ATI Mach32 Driver

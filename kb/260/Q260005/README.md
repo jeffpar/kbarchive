@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260005: StarLancer: USB Game Controller Does Not Function Properly"
-permalink: kb/260/Q260005/
+permalink: /kb/260/Q260005/
 ---
 
 ## Q260005: StarLancer: USB Game Controller Does Not Function Properly

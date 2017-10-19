@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q46042: Mac Wkst: Pasting a Graphic into the Body of a Message"
-permalink: kb/046/Q46042/
+permalink: /kb/046/Q46042/
 ---
 
 ## Q46042: Mac Wkst: Pasting a Graphic into the Body of a Message

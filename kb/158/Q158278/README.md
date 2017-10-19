@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158278: Explanation of How Windows NT Server 4.0 Remoteboot Works"
-permalink: kb/158/Q158278/
+permalink: /kb/158/Q158278/
 ---
 
 ## Q158278: Explanation of How Windows NT Server 4.0 Remoteboot Works

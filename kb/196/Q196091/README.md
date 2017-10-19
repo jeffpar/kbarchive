@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196091: How to Configure SBS Clients to Use Dial-Up Networking"
-permalink: kb/196/Q196091/
+permalink: /kb/196/Q196091/
 ---
 
 ## Q196091: How to Configure SBS Clients to Use Dial-Up Networking

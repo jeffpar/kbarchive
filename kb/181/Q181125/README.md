@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181125: XFOR: Bcc Recipients Visible in Migrated cc:Mail Messages"
-permalink: kb/181/Q181125/
+permalink: /kb/181/Q181125/
 ---
 
 ## Q181125: XFOR: Bcc Recipients Visible in Migrated cc:Mail Messages

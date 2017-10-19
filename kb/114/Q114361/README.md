@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114361: Novell DOS 7 Files That Remain After Installing MS-DOS 6.21"
-permalink: kb/114/Q114361/
+permalink: /kb/114/Q114361/
 ---
 
 ## Q114361: Novell DOS 7 Files That Remain After Installing MS-DOS 6.21

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111894: SMTP: Attachment Names Change Case on Outgoing Mail"
-permalink: kb/111/Q111894/
+permalink: /kb/111/Q111894/
 ---
 
 ## Q111894: SMTP: Attachment Names Change Case on Outgoing Mail

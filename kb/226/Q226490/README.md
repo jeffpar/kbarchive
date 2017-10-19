@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226490: BUG: Optional Parameters Generate  Error with Data Environment"
-permalink: kb/226/Q226490/
+permalink: /kb/226/Q226490/
 ---
 
 ## Q226490: BUG: Optional Parameters Generate  Error with Data Environment

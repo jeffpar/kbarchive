@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174061: Error Message: This Page Contains a Script Which Is Taking..."
-permalink: kb/174/Q174061/
+permalink: /kb/174/Q174061/
 ---
 
 ## Q174061: Error Message: This Page Contains a Script Which Is Taking...

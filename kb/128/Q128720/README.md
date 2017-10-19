@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128720: INF: Use of SQLPutData() in Visual Basic"
-permalink: kb/128/Q128720/
+permalink: /kb/128/Q128720/
 ---
 
 ## Q128720: INF: Use of SQLPutData() in Visual Basic

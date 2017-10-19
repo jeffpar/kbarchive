@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122516: Purge Print Jobs Fails to Clear Printer Buffer"
-permalink: kb/122/Q122516/
+permalink: /kb/122/Q122516/
 ---
 
 ## Q122516: Purge Print Jobs Fails to Clear Printer Buffer

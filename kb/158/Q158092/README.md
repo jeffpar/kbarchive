@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158092: STL Sample for the List::insert Function"
-permalink: kb/158/Q158092/
+permalink: /kb/158/Q158092/
 ---
 
 ## Q158092: STL Sample for the List::insert Function

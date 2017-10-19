@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312501: HOW TO: Change the LDAP Port for Exchange Server 5.5"
-permalink: kb/312/Q312501/
+permalink: /kb/312/Q312501/
 ---
 
 ## Q312501: HOW TO: Change the LDAP Port for Exchange Server 5.5

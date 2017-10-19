@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85967: PC Win: Embedded Paintbrush Object Does Not Print Color"
-permalink: kb/085/Q85967/
+permalink: /kb/085/Q85967/
 ---
 
 ## Q85967: PC Win: Embedded Paintbrush Object Does Not Print Color

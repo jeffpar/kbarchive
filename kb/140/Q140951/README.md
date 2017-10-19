@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140951: XFOR: DXA Generates Multiple SMTP Proxies for PCMail"
-permalink: kb/140/Q140951/
+permalink: /kb/140/Q140951/
 ---
 
 ## Q140951: XFOR: DXA Generates Multiple SMTP Proxies for PCMail

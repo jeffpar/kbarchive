@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171046: WD97: Some Underline Styles Are Lost During Save to HTML"
-permalink: kb/171/Q171046/
+permalink: /kb/171/Q171046/
 ---
 
 ## Q171046: WD97: Some Underline Styles Are Lost During Save to HTML

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281743: XCON: Internet Mail Service Dr. Watson Error"
-permalink: kb/281/Q281743/
+permalink: /kb/281/Q281743/
 ---
 
 ## Q281743: XCON: Internet Mail Service Dr. Watson Error

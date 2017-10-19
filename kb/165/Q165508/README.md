@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165508: SMS: PCM Does Not Follow Correct Distribution Server Logic"
-permalink: kb/165/Q165508/
+permalink: /kb/165/Q165508/
 ---
 
 ## Q165508: SMS: PCM Does Not Follow Correct Distribution Server Logic

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120388: Windows 95 Setup Err Msg: Warning SU-0014..."
-permalink: kb/120/Q120388/
+permalink: /kb/120/Q120388/
 ---
 
 ## Q120388: Windows 95 Setup Err Msg: Warning SU-0014...

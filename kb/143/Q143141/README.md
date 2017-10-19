@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143141: Mylex DAC960 RAID Controller Causes &quot;Missing Operating System&quot;"
-permalink: kb/143/Q143141/
+permalink: /kb/143/Q143141/
 ---
 
 ## Q143141: Mylex DAC960 RAID Controller Causes &quot;Missing Operating System&quot;

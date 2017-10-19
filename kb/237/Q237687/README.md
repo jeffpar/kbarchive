@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237687: Obtaining the ITSEC Evaluated Y2K Update Patch for WinNT 4.0 SP3"
-permalink: kb/237/Q237687/
+permalink: /kb/237/Q237687/
 ---
 
 ## Q237687: Obtaining the ITSEC Evaluated Y2K Update Patch for WinNT 4.0 SP3

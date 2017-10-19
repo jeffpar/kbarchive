@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173211: MDG: Admin Notice 102 Caused By Missing or Hidden C850sort.glb"
-permalink: kb/173/Q173211/
+permalink: /kb/173/Q173211/
 ---
 
 ## Q173211: MDG: Admin Notice 102 Caused By Missing or Hidden C850sort.glb

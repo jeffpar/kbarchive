@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113278: How to Replace a String in a Text File"
-permalink: kb/113/Q113278/
+permalink: /kb/113/Q113278/
 ---
 
 ## Q113278: How to Replace a String in a Text File

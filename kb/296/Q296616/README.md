@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296616: Windows 2000 Professional At a Glance Comments and Corrections"
-permalink: kb/296/Q296616/
+permalink: /kb/296/Q296616/
 ---
 
 ## Q296616: Windows 2000 Professional At a Glance Comments and Corrections

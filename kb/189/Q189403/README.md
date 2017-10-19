@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189403: Page Fault Error Message in Uhcd.sys Docking or Undocking Laptop"
-permalink: kb/189/Q189403/
+permalink: /kb/189/Q189403/
 ---
 
 ## Q189403: Page Fault Error Message in Uhcd.sys Docking or Undocking Laptop

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93198: Windows for Workgroups NET START Error 5736"
-permalink: kb/093/Q93198/
+permalink: /kb/093/Q93198/
 ---
 
 ## Q93198: Windows for Workgroups NET START Error 5736

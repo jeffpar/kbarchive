@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95808: How to Install MS-DOS 6 or 6.2 Upgrade over DR-DOS"
-permalink: kb/095/Q95808/
+permalink: /kb/095/Q95808/
 ---
 
 ## Q95808: How to Install MS-DOS 6 or 6.2 Upgrade over DR-DOS

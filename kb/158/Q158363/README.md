@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158363: XADM: Acceptable Form of X.400 O/R Addresses in Exchange"
-permalink: kb/158/Q158363/
+permalink: /kb/158/Q158363/
 ---
 
 ## Q158363: XADM: Acceptable Form of X.400 O/R Addresses in Exchange

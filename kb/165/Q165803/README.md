@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165803: FIX: Error C2783 - Cannot Deduce Non-Type Template Parameter"
-permalink: kb/165/Q165803/
+permalink: /kb/165/Q165803/
 ---
 
 ## Q165803: FIX: Error C2783 - Cannot Deduce Non-Type Template Parameter

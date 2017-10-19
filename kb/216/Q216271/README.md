@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216271: SAMPLE: SamScrpt.exe Demos Active Debug w/C++ ActiveX Script"
-permalink: kb/216/Q216271/
+permalink: /kb/216/Q216271/
 ---
 
 ## Q216271: SAMPLE: SamScrpt.exe Demos Active Debug w/C++ ActiveX Script

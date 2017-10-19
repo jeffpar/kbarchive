@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191498: INFO: Where to Find the Class Browser Source Code Files"
-permalink: kb/191/Q191498/
+permalink: /kb/191/Q191498/
 ---
 
 ## Q191498: INFO: Where to Find the Class Browser Source Code Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261265: SMS: Files Are Not Removed by &quot;Delete Aged Collected Files&quot; Task"
-permalink: kb/261/Q261265/
+permalink: /kb/261/Q261265/
 ---
 
 ## Q261265: SMS: Files Are Not Removed by &quot;Delete Aged Collected Files&quot; Task

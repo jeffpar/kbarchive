@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255115: BUG: Printer.ForeColor Property Does Not Work Correctly"
-permalink: kb/255/Q255115/
+permalink: /kb/255/Q255115/
 ---
 
 ## Q255115: BUG: Printer.ForeColor Property Does Not Work Correctly

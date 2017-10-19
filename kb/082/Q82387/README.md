@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82387: Old Versions of LOCKIT Incorrectly Modify WIN.INI"
-permalink: kb/082/Q82387/
+permalink: /kb/082/Q82387/
 ---
 
 ## Q82387: Old Versions of LOCKIT Incorrectly Modify WIN.INI

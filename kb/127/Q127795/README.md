@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127795: INF Back-Link Functionality in Visual FoxPro for Windows"
-permalink: kb/127/Q127795/
+permalink: /kb/127/Q127795/
 ---
 
 ## Q127795: INF Back-Link Functionality in Visual FoxPro for Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132909: HOWTO: Customize the Common Print Dialog Box"
-permalink: kb/132/Q132909/
+permalink: /kb/132/Q132909/
 ---
 
 ## Q132909: HOWTO: Customize the Common Print Dialog Box

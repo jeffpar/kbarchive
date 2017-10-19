@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248880: SMS:SMSCliToknAcct&amp; Accesses Network on Computer w/ Auddrive.sys"
-permalink: kb/248/Q248880/
+permalink: /kb/248/Q248880/
 ---
 
 ## Q248880: SMS:SMSCliToknAcct&amp; Accesses Network on Computer w/ Auddrive.sys

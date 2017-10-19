@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97365: TRANSBLT Demonstrates Bitmaps with Transparency"
-permalink: kb/097/Q97365/
+permalink: /kb/097/Q97365/
 ---
 
 ## Q97365: TRANSBLT Demonstrates Bitmaps with Transparency

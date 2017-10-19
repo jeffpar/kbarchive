@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298351: How to Change User Passwords on Windows NT Server by Web Browser"
-permalink: kb/298/Q298351/
+permalink: /kb/298/Q298351/
 ---
 
 ## Q298351: How to Change User Passwords on Windows NT Server by Web Browser

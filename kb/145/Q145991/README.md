@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145991: HOWTO: Inserting an OLE Object into a SQL Table by Using SPT"
-permalink: kb/145/Q145991/
+permalink: /kb/145/Q145991/
 ---
 
 ## Q145991: HOWTO: Inserting an OLE Object into a SQL Table by Using SPT

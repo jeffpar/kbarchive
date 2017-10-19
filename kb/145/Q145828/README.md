@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145828: Duplicate Server Names Cause Event Log 537 with FPNW Installed"
-permalink: kb/145/Q145828/
+permalink: /kb/145/Q145828/
 ---
 
 ## Q145828: Duplicate Server Names Cause Event Log 537 with FPNW Installed

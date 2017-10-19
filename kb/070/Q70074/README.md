@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70074: HOWTO: Reactivating First (and Only) Instance of an Application"
-permalink: kb/070/Q70074/
+permalink: /kb/070/Q70074/
 ---
 
 ## Q70074: HOWTO: Reactivating First (and Only) Instance of an Application

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172531: BUG: IDBSchemaRowset Reports DBTYPE_NUMERIC for MONEY Datatype"
-permalink: kb/172/Q172531/
+permalink: /kb/172/Q172531/
 ---
 
 ## Q172531: BUG: IDBSchemaRowset Reports DBTYPE_NUMERIC for MONEY Datatype

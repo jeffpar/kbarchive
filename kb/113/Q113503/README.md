@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113503: Overview of Disk Volume Sets in Windows NT"
-permalink: kb/113/Q113503/
+permalink: /kb/113/Q113503/
 ---
 
 ## Q113503: Overview of Disk Volume Sets in Windows NT

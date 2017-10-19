@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111472: WFWG 3.11 and Sun PC-NFS 5.0 Err Msg: Invalid COMMAND.COM"
-permalink: kb/111/Q111472/
+permalink: /kb/111/Q111472/
 ---
 
 ## Q111472: WFWG 3.11 and Sun PC-NFS 5.0 Err Msg: Invalid COMMAND.COM

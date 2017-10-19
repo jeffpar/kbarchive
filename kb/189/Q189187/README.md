@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189187: SMS: Pcmdump.exe - Using the PCM Dump Utility"
-permalink: kb/189/Q189187/
+permalink: /kb/189/Q189187/
 ---
 
 ## Q189187: SMS: Pcmdump.exe - Using the PCM Dump Utility

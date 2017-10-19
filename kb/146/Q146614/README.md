@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146614: Pregnancy: How the Find By Symptom Feature Sorts a List"
-permalink: kb/146/Q146614/
+permalink: /kb/146/Q146614/
 ---
 
 ## Q146614: Pregnancy: How the Find By Symptom Feature Sorts a List

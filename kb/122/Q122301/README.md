@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122301: FIX: Correct Icons Are Not Displayed After CD-ROM Setup"
-permalink: kb/122/Q122301/
+permalink: /kb/122/Q122301/
 ---
 
 ## Q122301: FIX: Correct Icons Are Not Displayed After CD-ROM Setup

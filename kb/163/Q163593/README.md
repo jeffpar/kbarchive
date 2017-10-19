@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163593: FP97: Uninstall Doesn't Remove Fpwpp.dll"
-permalink: kb/163/Q163593/
+permalink: /kb/163/Q163593/
 ---
 
 ## Q163593: FP97: Uninstall Doesn't Remove Fpwpp.dll

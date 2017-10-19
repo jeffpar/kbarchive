@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82385: Windows: Turbo C++ Causes GP Fault After Numerous Searches"
-permalink: kb/082/Q82385/
+permalink: /kb/082/Q82385/
 ---
 
 ## Q82385: Windows: Turbo C++ Causes GP Fault After Numerous Searches

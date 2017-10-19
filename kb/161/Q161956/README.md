@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161956: MS BOOKSHELF INTERNET DIRECTORY 1996/97 EDITION Corrections"
-permalink: kb/161/Q161956/
+permalink: /kb/161/Q161956/
 ---
 
 ## Q161956: MS BOOKSHELF INTERNET DIRECTORY 1996/97 EDITION Corrections

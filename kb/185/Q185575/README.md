@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185575: XADM: Home Server Attribute Does Not Work In Mailbox Template"
-permalink: kb/185/Q185575/
+permalink: /kb/185/Q185575/
 ---
 
 ## Q185575: XADM: Home Server Attribute Does Not Work In Mailbox Template

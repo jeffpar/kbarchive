@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269616: How to Disable the DHCP Lease Message Completely"
-permalink: kb/269/Q269616/
+permalink: /kb/269/Q269616/
 ---
 
 ## Q269616: How to Disable the DHCP Lease Message Completely

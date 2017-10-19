@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156278: SMS: Error -39 in File Cpackage.cpp"
-permalink: kb/156/Q156278/
+permalink: /kb/156/Q156278/
 ---
 
 ## Q156278: SMS: Error -39 in File Cpackage.cpp

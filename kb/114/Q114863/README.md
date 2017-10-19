@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114863: How to Update Other @ ... GET Fields While in a List Box"
-permalink: kb/114/Q114863/
+permalink: /kb/114/Q114863/
 ---
 
 ## Q114863: How to Update Other @ ... GET Fields While in a List Box

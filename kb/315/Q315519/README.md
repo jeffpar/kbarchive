@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315519: HOW TO: Write a Simple Active Accessibility Client by Using VB"
-permalink: kb/315/Q315519/
+permalink: /kb/315/Q315519/
 ---
 
 ## Q315519: HOW TO: Write a Simple Active Accessibility Client by Using VB

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q71220: Immediate &quot;Cannot Print&quot; Error Message from Windows"
-permalink: kb/071/Q71220/
+permalink: /kb/071/Q71220/
 ---
 
 ## Q71220: Immediate &quot;Cannot Print&quot; Error Message from Windows

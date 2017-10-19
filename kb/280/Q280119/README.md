@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280119: Patch Available for NTLMSSP Privilege Elevation Vulnerability"
-permalink: kb/280/Q280119/
+permalink: /kb/280/Q280119/
 ---
 
 ## Q280119: Patch Available for NTLMSSP Privilege Elevation Vulnerability

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153872: INFO: DDConv Messages of Visual SourceSafe 4.0"
-permalink: kb/153/Q153872/
+permalink: /kb/153/Q153872/
 ---
 
 ## Q153872: INFO: DDConv Messages of Visual SourceSafe 4.0

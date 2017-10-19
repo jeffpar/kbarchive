@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120586: Encarta/Golf/MSB Ocean ErrMsg: Unhandled Exception Detected"
-permalink: kb/120/Q120586/
+permalink: /kb/120/Q120586/
 ---
 
 ## Q120586: Encarta/Golf/MSB Ocean ErrMsg: Unhandled Exception Detected

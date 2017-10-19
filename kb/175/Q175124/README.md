@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175124: XADM: Error Message &quot;The file mqrt.dll was not found.&quot;"
-permalink: kb/175/Q175124/
+permalink: /kb/175/Q175124/
 ---
 
 ## Q175124: XADM: Error Message &quot;The file mqrt.dll was not found.&quot;

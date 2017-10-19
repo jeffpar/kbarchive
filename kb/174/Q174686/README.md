@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174686: PRB: Error 371 or 404 Occurs When Using the Show Method"
-permalink: kb/174/Q174686/
+permalink: /kb/174/Q174686/
 ---
 
 ## Q174686: PRB: Error 371 or 404 Occurs When Using the Show Method

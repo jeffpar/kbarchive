@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90061: Volume Control Loops Endlessly with Microsoft SoundBits"
-permalink: kb/090/Q90061/
+permalink: /kb/090/Q90061/
 ---
 
 ## Q90061: Volume Control Loops Endlessly with Microsoft SoundBits

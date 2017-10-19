@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122182: CALC.EXE Display Error in Floating Point Number Calculation"
-permalink: kb/122/Q122182/
+permalink: /kb/122/Q122182/
 ---
 
 ## Q122182: CALC.EXE Display Error in Floating Point Number Calculation

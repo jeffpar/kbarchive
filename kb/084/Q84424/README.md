@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84424: Lucida Calligraphy Numbers Do Not Touch the Baseline"
-permalink: kb/084/Q84424/
+permalink: /kb/084/Q84424/
 ---
 
 ## Q84424: Lucida Calligraphy Numbers Do Not Touch the Baseline

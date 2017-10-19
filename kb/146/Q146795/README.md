@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146795: XFOR: IMC Messages Left in &#92;Imcdata&#92;Out Directory"
-permalink: kb/146/Q146795/
+permalink: /kb/146/Q146795/
 ---
 
 ## Q146795: XFOR: IMC Messages Left in &#92;Imcdata&#92;Out Directory

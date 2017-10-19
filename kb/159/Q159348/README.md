@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159348: No Windows 95 Support for Zoomed Video Devices"
-permalink: kb/159/Q159348/
+permalink: /kb/159/Q159348/
 ---
 
 ## Q159348: No Windows 95 Support for Zoomed Video Devices

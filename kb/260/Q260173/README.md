@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260173: Err Msg: Could Not Bind to the Microsoft Exchange Directory..."
-permalink: kb/260/Q260173/
+permalink: /kb/260/Q260173/
 ---
 
 ## Q260173: Err Msg: Could Not Bind to the Microsoft Exchange Directory...

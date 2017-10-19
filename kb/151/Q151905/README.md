@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151905: Problems Deleting Directory After FPNW Share"
-permalink: kb/151/Q151905/
+permalink: /kb/151/Q151905/
 ---
 
 ## Q151905: Problems Deleting Directory After FPNW Share

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106735: Closing Word for Windows 6.0 Causes General Protection Fault"
-permalink: kb/106/Q106735/
+permalink: /kb/106/Q106735/
 ---
 
 ## Q106735: Closing Word for Windows 6.0 Causes General Protection Fault

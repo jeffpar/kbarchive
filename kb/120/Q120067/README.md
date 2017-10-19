@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120067: FIX: .IF with Multiple Tests Adds a JMP Instruction"
-permalink: kb/120/Q120067/
+permalink: /kb/120/Q120067/
 ---
 
 ## Q120067: FIX: .IF with Multiple Tests Adds a JMP Instruction

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196170: XADM: Unreadable Message Flash when You Press the F1 Key"
-permalink: kb/196/Q196170/
+permalink: /kb/196/Q196170/
 ---
 
 ## Q196170: XADM: Unreadable Message Flash when You Press the F1 Key

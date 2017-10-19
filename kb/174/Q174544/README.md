@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174544: PJL Control Commands May Cause Postscript Code to Print"
-permalink: kb/174/Q174544/
+permalink: /kb/174/Q174544/
 ---
 
 ## Q174544: PJL Control Commands May Cause Postscript Code to Print

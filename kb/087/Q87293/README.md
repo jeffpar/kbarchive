@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87293: Registering Message Alias on RPL Workstation"
-permalink: kb/087/Q87293/
+permalink: /kb/087/Q87293/
 ---
 
 ## Q87293: Registering Message Alias on RPL Workstation

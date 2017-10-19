@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138066: HOWTO: Handle OLE Automation Server Timeout and Synchronization"
-permalink: kb/138/Q138066/
+permalink: /kb/138/Q138066/
 ---
 
 ## Q138066: HOWTO: Handle OLE Automation Server Timeout and Synchronization

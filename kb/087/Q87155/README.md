@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87155: Mac Wkst Srv: Differences Between Local and Server Folders"
-permalink: kb/087/Q87155/
+permalink: /kb/087/Q87155/
 ---
 
 ## Q87155: Mac Wkst Srv: Differences Between Local and Server Folders

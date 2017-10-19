@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229033: Programs That Replace Msgina.dll May Cause &quot;STOP 0x0000001E&quot;"
-permalink: kb/229/Q229033/
+permalink: /kb/229/Q229033/
 ---
 
 ## Q229033: Programs That Replace Msgina.dll May Cause &quot;STOP 0x0000001E&quot;

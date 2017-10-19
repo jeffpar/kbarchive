@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243176: Foreign Performance Counters Do Not Load"
-permalink: kb/243/Q243176/
+permalink: /kb/243/Q243176/
 ---
 
 ## Q243176: Foreign Performance Counters Do Not Load

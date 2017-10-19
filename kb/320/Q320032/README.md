@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320032: XFOR: Cannot Establish Connection with Lotus Notes Server"
-permalink: kb/320/Q320032/
+permalink: /kb/320/Q320032/
 ---
 
 ## Q320032: XFOR: Cannot Establish Connection with Lotus Notes Server

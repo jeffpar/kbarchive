@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260741: XFOR: Internet Mail Service Won't Deliver to Others w. 552 Code"
-permalink: kb/260/Q260741/
+permalink: /kb/260/Q260741/
 ---
 
 ## Q260741: XFOR: Internet Mail Service Won't Deliver to Others w. 552 Code

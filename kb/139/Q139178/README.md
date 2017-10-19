@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139178: Installing Video and SCSI Drivers on Toshiba T2450CT"
-permalink: kb/139/Q139178/
+permalink: /kb/139/Q139178/
 ---
 
 ## Q139178: Installing Video and SCSI Drivers on Toshiba T2450CT

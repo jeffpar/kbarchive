@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255542: WD97: Readability Statistics Incorrect or Missing"
-permalink: kb/255/Q255542/
+permalink: /kb/255/Q255542/
 ---
 
 ## Q255542: WD97: Readability Statistics Incorrect or Missing

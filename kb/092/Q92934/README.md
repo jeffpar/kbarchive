@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92934: Installing Workgroup Connections to a Floppy Disk"
-permalink: kb/092/Q92934/
+permalink: /kb/092/Q92934/
 ---
 
 ## Q92934: Installing Workgroup Connections to a Floppy Disk

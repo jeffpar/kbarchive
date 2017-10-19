@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177598: XFOR: RTF Always Sent from Exchange Server to Lotus Notes"
-permalink: kb/177/Q177598/
+permalink: /kb/177/Q177598/
 ---
 
 ## Q177598: XFOR: RTF Always Sent from Exchange Server to Lotus Notes

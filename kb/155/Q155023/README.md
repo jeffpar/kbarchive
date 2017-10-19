@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155023: XCLN: HP Deskjet 600C Series Prints Blank Page"
-permalink: kb/155/Q155023/
+permalink: /kb/155/Q155023/
 ---
 
 ## Q155023: XCLN: HP Deskjet 600C Series Prints Blank Page

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168590: Netlogon Does Not Replicate Case Changes In User Account Names"
-permalink: kb/168/Q168590/
+permalink: /kb/168/Q168590/
 ---
 
 ## Q168590: Netlogon Does Not Replicate Case Changes In User Account Names

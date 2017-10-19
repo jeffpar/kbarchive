@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135487: PC Ext: Running External and WAN Drives"
-permalink: kb/135/Q135487/
+permalink: /kb/135/Q135487/
 ---
 
 ## Q135487: PC Ext: Running External and WAN Drives

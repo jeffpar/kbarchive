@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168081: FIX: Wrong Column Jumped to for Macro Syntax Error"
-permalink: kb/168/Q168081/
+permalink: /kb/168/Q168081/
 ---
 
 ## Q168081: FIX: Wrong Column Jumped to for Macro Syntax Error

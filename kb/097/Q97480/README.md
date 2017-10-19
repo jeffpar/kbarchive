@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97480: Setting the Default Word Processing Application in Encarta"
-permalink: kb/097/Q97480/
+permalink: /kb/097/Q97480/
 ---
 
 ## Q97480: Setting the Default Word Processing Application in Encarta

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166727: McAfee NetShield or VirusScan May Cause Hangs with SP3"
-permalink: kb/166/Q166727/
+permalink: /kb/166/Q166727/
 ---
 
 ## Q166727: McAfee NetShield or VirusScan May Cause Hangs with SP3

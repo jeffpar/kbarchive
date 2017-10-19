@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135338: HOWTO: View Exported Functions in a DLL"
-permalink: kb/135/Q135338/
+permalink: /kb/135/Q135338/
 ---
 
 ## Q135338: HOWTO: View Exported Functions in a DLL

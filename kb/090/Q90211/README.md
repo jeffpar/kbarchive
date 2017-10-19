@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90211: Windows for Workgroups Fails If Installed on DoubleDisk"
-permalink: kb/090/Q90211/
+permalink: /kb/090/Q90211/
 ---
 
 ## Q90211: Windows for Workgroups Fails If Installed on DoubleDisk

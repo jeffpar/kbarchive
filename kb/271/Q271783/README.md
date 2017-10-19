@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271783: Readiness Review 70-029: Designing and Implementing Databases wi"
-permalink: kb/271/Q271783/
+permalink: /kb/271/Q271783/
 ---
 
 ## Q271783: Readiness Review 70-029: Designing and Implementing Databases wi

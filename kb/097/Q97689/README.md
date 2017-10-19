@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97689: MS-DOS-Based Program Doesn't Run After Installing DoubleSpace"
-permalink: kb/097/Q97689/
+permalink: /kb/097/Q97689/
 ---
 
 ## Q97689: MS-DOS-Based Program Doesn't Run After Installing DoubleSpace

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135253: E-mail Lost When Disk Space Is Low"
-permalink: kb/135/Q135253/
+permalink: /kb/135/Q135253/
 ---
 
 ## Q135253: E-mail Lost When Disk Space Is Low

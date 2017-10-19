@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82404: Rumba 3.1.03 FastPath and Windows Screen Saver"
-permalink: kb/082/Q82404/
+permalink: /kb/082/Q82404/
 ---
 
 ## Q82404: Rumba 3.1.03 FastPath and Windows Screen Saver

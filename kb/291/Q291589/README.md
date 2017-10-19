@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291589: IIS 4: ErrMsg: &quot;Could Not Start Service. 0006 Handle Is Invalid&quot;"
-permalink: kb/291/Q291589/
+permalink: /kb/291/Q291589/
 ---
 
 ## Q291589: IIS 4: ErrMsg: &quot;Could Not Start Service. 0006 Handle Is Invalid&quot;

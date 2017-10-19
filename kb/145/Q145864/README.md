@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145864: PRB: Returning FALSE from OnSetActive Doesn't Set Correct Tab"
-permalink: kb/145/Q145864/
+permalink: /kb/145/Q145864/
 ---
 
 ## Q145864: PRB: Returning FALSE from OnSetActive Doesn't Set Correct Tab

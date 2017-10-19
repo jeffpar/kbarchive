@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291573: HOWTO: Use Visual Basic to List Active Logical Drives"
-permalink: kb/291/Q291573/
+permalink: /kb/291/Q291573/
 ---
 
 ## Q291573: HOWTO: Use Visual Basic to List Active Logical Drives

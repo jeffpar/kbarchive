@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190254: BUG: Cannot Insert MFC 4.1-Based Controls in DHTML Page Designer"
-permalink: kb/190/Q190254/
+permalink: /kb/190/Q190254/
 ---
 
 ## Q190254: BUG: Cannot Insert MFC 4.1-Based Controls in DHTML Page Designer

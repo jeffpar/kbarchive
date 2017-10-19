@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160518: Zone Files in Multiples of 4 KB May Cause Access Violation"
-permalink: kb/160/Q160518/
+permalink: /kb/160/Q160518/
 ---
 
 ## Q160518: Zone Files in Multiples of 4 KB May Cause Access Violation

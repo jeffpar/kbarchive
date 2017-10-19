@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67822: Flight Simulator: Simulating Snowy Weather"
-permalink: kb/067/Q67822/
+permalink: /kb/067/Q67822/
 ---
 
 ## Q67822: Flight Simulator: Simulating Snowy Weather

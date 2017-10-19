@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257348: XCON: 2026 and 3016 Warnings During Periods of High Server Use"
-permalink: kb/257/Q257348/
+permalink: /kb/257/Q257348/
 ---
 
 ## Q257348: XCON: 2026 and 3016 Warnings During Periods of High Server Use

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49695: Options Saved When a Flight Mode Is Created"
-permalink: kb/049/Q49695/
+permalink: /kb/049/Q49695/
 ---
 
 ## Q49695: Options Saved When a Flight Mode Is Created

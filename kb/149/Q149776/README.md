@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149776: BUG: BACKSPACE Key Doesn't Reset Matching on DBList or DBCombo"
-permalink: kb/149/Q149776/
+permalink: /kb/149/Q149776/
 ---
 
 ## Q149776: BUG: BACKSPACE Key Doesn't Reset Matching on DBList or DBCombo

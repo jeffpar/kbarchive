@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121405: Cardfile Font Setting Is Not Saved"
-permalink: kb/121/Q121405/
+permalink: /kb/121/Q121405/
 ---
 
 ## Q121405: Cardfile Font Setting Is Not Saved

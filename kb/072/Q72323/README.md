@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72323: PRB: CodeView Label/Function Search Fails for MASM 5.1 Labels"
-permalink: kb/072/Q72323/
+permalink: /kb/072/Q72323/
 ---
 
 ## Q72323: PRB: CodeView Label/Function Search Fails for MASM 5.1 Labels

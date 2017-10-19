@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183373: IEAK Included with ResKit Incompatible with Non-English Systems"
-permalink: kb/183/Q183373/
+permalink: /kb/183/Q183373/
 ---
 
 ## Q183373: IEAK Included with ResKit Incompatible with Non-English Systems

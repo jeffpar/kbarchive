@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72219: INFO: Context-Sensitive Help in a Dialog Box Through F1"
-permalink: kb/072/Q72219/
+permalink: /kb/072/Q72219/
 ---
 
 ## Q72219: INFO: Context-Sensitive Help in a Dialog Box Through F1

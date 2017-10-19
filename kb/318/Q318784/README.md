@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q318784: PRB: MSComm.Input returns comReadError (8020) with Some Ports"
-permalink: kb/318/Q318784/
+permalink: /kb/318/Q318784/
 ---
 
 ## Q318784: PRB: MSComm.Input returns comReadError (8020) with Some Ports

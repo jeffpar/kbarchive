@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87626: FoxBASE 2.17 System Specifications and Data Types"
-permalink: kb/087/Q87626/
+permalink: /kb/087/Q87626/
 ---
 
 ## Q87626: FoxBASE 2.17 System Specifications and Data Types

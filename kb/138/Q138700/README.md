@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138700: ARP -s Fails After Applying SP2 to Windows NT 3.51"
-permalink: kb/138/Q138700/
+permalink: /kb/138/Q138700/
 ---
 
 ## Q138700: ARP -s Fails After Applying SP2 to Windows NT 3.51

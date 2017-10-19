@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100781: INFO: Developer Services Offers Solution Provider Packages"
-permalink: kb/100/Q100781/
+permalink: /kb/100/Q100781/
 ---
 
 ## Q100781: INFO: Developer Services Offers Solution Provider Packages

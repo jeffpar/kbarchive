@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183375: Windows NT Server Enterprise Technologies Training Corrections"
-permalink: kb/183/Q183375/
+permalink: /kb/183/Q183375/
 ---
 
 ## Q183375: Windows NT Server Enterprise Technologies Training Corrections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184339: How to Configure Outlook Express to Automatically Check MSN Mail"
-permalink: kb/184/Q184339/
+permalink: /kb/184/Q184339/
 ---
 
 ## Q184339: How to Configure Outlook Express to Automatically Check MSN Mail

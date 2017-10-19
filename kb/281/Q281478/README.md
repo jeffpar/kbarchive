@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281478: How to play games on MSN Companion"
-permalink: kb/281/Q281478/
+permalink: /kb/281/Q281478/
 ---
 
 ## Q281478: How to play games on MSN Companion

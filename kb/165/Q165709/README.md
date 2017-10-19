@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165709: Error Message from Hotfix.exe: The Fix Is Already Installed"
-permalink: kb/165/Q165709/
+permalink: /kb/165/Q165709/
 ---
 
 ## Q165709: Error Message from Hotfix.exe: The Fix Is Already Installed

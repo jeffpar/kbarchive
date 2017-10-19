@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173758: FAQ: How Do I Obtain a Copy of Visual FoxPro 5.0a?"
-permalink: kb/173/Q173758/
+permalink: /kb/173/Q173758/
 ---
 
 ## Q173758: FAQ: How Do I Obtain a Copy of Visual FoxPro 5.0a?

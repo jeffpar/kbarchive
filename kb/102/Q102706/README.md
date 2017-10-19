@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102706: PRB: SECONDS() Function Is Not Reset at 12:00 A.M. (Midnight)"
-permalink: kb/102/Q102706/
+permalink: /kb/102/Q102706/
 ---
 
 ## Q102706: PRB: SECONDS() Function Is Not Reset at 12:00 A.M. (Midnight)

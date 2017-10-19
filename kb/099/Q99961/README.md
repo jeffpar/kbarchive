@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99961: PC DirSync: Dir-Sync Import Required If Requestor Deleted"
-permalink: kb/099/Q99961/
+permalink: /kb/099/Q99961/
 ---
 
 ## Q99961: PC DirSync: Dir-Sync Import Required If Requestor Deleted

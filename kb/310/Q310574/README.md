@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310574: MechCommander 2: Game Unexpectedly Quits After CD Verification"
-permalink: kb/310/Q310574/
+permalink: /kb/310/Q310574/
 ---
 
 ## Q310574: MechCommander 2: Game Unexpectedly Quits After CD Verification

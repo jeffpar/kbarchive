@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155706: How to Use the IIS HTTP Environment Variable"
-permalink: kb/155/Q155706/
+permalink: /kb/155/Q155706/
 ---
 
 ## Q155706: How to Use the IIS HTTP Environment Variable

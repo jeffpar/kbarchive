@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256032: XFOR: Exchange Server 5.5 Post-SP3 Connector Fixes Available"
-permalink: kb/256/Q256032/
+permalink: /kb/256/Q256032/
 ---
 
 ## Q256032: XFOR: Exchange Server 5.5 Post-SP3 Connector Fixes Available

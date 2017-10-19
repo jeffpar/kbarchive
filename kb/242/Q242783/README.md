@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242783: DOC: MAXDWORD Has Incorrect Value in Visual Basic API Text Viewe"
-permalink: kb/242/Q242783/
+permalink: /kb/242/Q242783/
 ---
 
 ## Q242783: DOC: MAXDWORD Has Incorrect Value in Visual Basic API Text Viewe

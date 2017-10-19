@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132682: PC Win: How to Hide the Microsoft Mail Spooler Icon"
-permalink: kb/132/Q132682/
+permalink: /kb/132/Q132682/
 ---
 
 ## Q132682: PC Win: How to Hide the Microsoft Mail Spooler Icon

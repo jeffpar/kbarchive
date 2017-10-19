@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100313: Windows for Workgroups &quot;V86ModeLanas&quot; and TCP/IP"
-permalink: kb/100/Q100313/
+permalink: /kb/100/Q100313/
 ---
 
 ## Q100313: Windows for Workgroups &quot;V86ModeLanas&quot; and TCP/IP

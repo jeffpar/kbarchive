@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90762: Information on System Resources in Windows"
-permalink: kb/090/Q90762/
+permalink: /kb/090/Q90762/
 ---
 
 ## Q90762: Information on System Resources in Windows

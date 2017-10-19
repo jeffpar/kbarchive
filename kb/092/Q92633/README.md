@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92633: Windows Err Msg: This File Is on a Network Drive with..."
-permalink: kb/092/Q92633/
+permalink: /kb/092/Q92633/
 ---
 
 ## Q92633: Windows Err Msg: This File Is on a Network Drive with...

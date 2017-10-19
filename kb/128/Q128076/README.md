@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128076: How to Reference a Class in Class Hierarchy Generically"
-permalink: kb/128/Q128076/
+permalink: /kb/128/Q128076/
 ---
 
 ## Q128076: How to Reference a Class in Class Hierarchy Generically

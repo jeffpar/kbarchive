@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163805: Comparison of Bookshelf 1996-97 with Bookshelf Basics"
-permalink: kb/163/Q163805/
+permalink: /kb/163/Q163805/
 ---
 
 ## Q163805: Comparison of Bookshelf 1996-97 with Bookshelf Basics

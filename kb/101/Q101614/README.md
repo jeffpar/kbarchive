@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101614: PC Win: Err Msg: File Error"
-permalink: kb/101/Q101614/
+permalink: /kb/101/Q101614/
 ---
 
 ## Q101614: PC Win: Err Msg: File Error

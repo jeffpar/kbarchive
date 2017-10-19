@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90819: Paintbrush and Write Use Different Font Size Measurements"
-permalink: kb/090/Q90819/
+permalink: /kb/090/Q90819/
 ---
 
 ## Q90819: Paintbrush and Write Use Different Font Size Measurements

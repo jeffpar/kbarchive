@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136335: Active Event Logging Server Becomes Slow, Exhausts Paged Pool"
-permalink: kb/136/Q136335/
+permalink: /kb/136/Q136335/
 ---
 
 ## Q136335: Active Event Logging Server Becomes Slow, Exhausts Paged Pool

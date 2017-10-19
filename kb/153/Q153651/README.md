@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153651: Appstart Cannot Resolve Long Server Names in Windows 3.1 Client"
-permalink: kb/153/Q153651/
+permalink: /kb/153/Q153651/
 ---
 
 ## Q153651: Appstart Cannot Resolve Long Server Names in Windows 3.1 Client

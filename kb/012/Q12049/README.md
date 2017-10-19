@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q12049: Writer and Artist 1.x: How to Save to a Floppy Disk"
-permalink: kb/012/Q12049/
+permalink: /kb/012/Q12049/
 ---
 
 ## Q12049: Writer and Artist 1.x: How to Save to a Floppy Disk

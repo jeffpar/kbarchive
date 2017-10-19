@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97871: LAN Manager Limits Number of ACLs on a FAT Partition"
-permalink: kb/097/Q97871/
+permalink: /kb/097/Q97871/
 ---
 
 ## Q97871: LAN Manager Limits Number of ACLs on a FAT Partition

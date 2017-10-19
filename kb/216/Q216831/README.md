@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216831: How to Read and Analyze a Client Certificate"
-permalink: kb/216/Q216831/
+permalink: /kb/216/Q216831/
 ---
 
 ## Q216831: How to Read and Analyze a Client Certificate

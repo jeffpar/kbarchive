@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216119: FIX: PDW Add Files Dialog Doesn't Allow Selecting Multiple Files"
-permalink: kb/216/Q216119/
+permalink: /kb/216/Q216119/
 ---
 
 ## Q216119: FIX: PDW Add Files Dialog Doesn't Allow Selecting Multiple Files

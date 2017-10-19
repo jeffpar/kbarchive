@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190142: FTP Deadlocks Under Heavy Load"
-permalink: kb/190/Q190142/
+permalink: /kb/190/Q190142/
 ---
 
 ## Q190142: FTP Deadlocks Under Heavy Load

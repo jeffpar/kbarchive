@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175348: Age of Empires: How to Troubleshoot Issues in Multiplayer Games"
-permalink: kb/175/Q175348/
+permalink: /kb/175/Q175348/
 ---
 
 ## Q175348: Age of Empires: How to Troubleshoot Issues in Multiplayer Games

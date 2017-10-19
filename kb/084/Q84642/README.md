@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84642: MS-DOS-Based Application Runs out of Environment Space"
-permalink: kb/084/Q84642/
+permalink: /kb/084/Q84642/
 ---
 
 ## Q84642: MS-DOS-Based Application Runs out of Environment Space

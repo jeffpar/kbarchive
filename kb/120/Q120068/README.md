@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120068: PRB: H2INC Does Not Handle #undef"
-permalink: kb/120/Q120068/
+permalink: /kb/120/Q120068/
 ---
 
 ## Q120068: PRB: H2INC Does Not Handle #undef

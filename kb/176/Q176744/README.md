@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176744: XCLN: Installing Outlook on OWA Server Causes Access Failure"
-permalink: kb/176/Q176744/
+permalink: /kb/176/Q176744/
 ---
 
 ## Q176744: XCLN: Installing Outlook on OWA Server Causes Access Failure

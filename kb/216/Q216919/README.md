@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216919: Flight Simulator 95/98: Game Controller Does Not Appear in List"
-permalink: kb/216/Q216919/
+permalink: /kb/216/Q216919/
 ---
 
 ## Q216919: Flight Simulator 95/98: Game Controller Does Not Appear in List

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241411: &quot;Session Name Is Already in Use&quot; with Multiple Concurrent Logons"
-permalink: kb/241/Q241411/
+permalink: /kb/241/Q241411/
 ---
 
 ## Q241411: &quot;Session Name Is Already in Use&quot; with Multiple Concurrent Logons

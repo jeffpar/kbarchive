@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78506: Additional EMM386.EXE Include Ranges with AMI BIOS"
-permalink: kb/078/Q78506/
+permalink: /kb/078/Q78506/
 ---
 
 ## Q78506: Additional EMM386.EXE Include Ranges with AMI BIOS

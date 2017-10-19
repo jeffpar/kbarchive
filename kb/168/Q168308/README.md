@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168308: XADM: Event ID 1191: Total Number of Threads Too Low"
-permalink: kb/168/Q168308/
+permalink: /kb/168/Q168308/
 ---
 
 ## Q168308: XADM: Event ID 1191: Total Number of Threads Too Low

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82724: Maintenance Mode Setup of Windows 3.1 and Networks"
-permalink: kb/082/Q82724/
+permalink: /kb/082/Q82724/
 ---
 
 ## Q82724: Maintenance Mode Setup of Windows 3.1 and Networks

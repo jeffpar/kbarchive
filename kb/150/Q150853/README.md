@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150853: Addusers.Exe Allows Group Names Greater Than 21 Characters"
-permalink: kb/150/Q150853/
+permalink: /kb/150/Q150853/
 ---
 
 ## Q150853: Addusers.Exe Allows Group Names Greater Than 21 Characters

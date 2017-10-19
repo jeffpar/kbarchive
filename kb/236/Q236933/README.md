@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236933: PRB: DB_E_ERRORSOCCURRED returned from Open When using GROUP BY"
-permalink: kb/236/Q236933/
+permalink: /kb/236/Q236933/
 ---
 
 ## Q236933: PRB: DB_E_ERRORSOCCURRED returned from Open When using GROUP BY

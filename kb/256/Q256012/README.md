@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256012: SMS: Crystal Reports Services Installed as Local System Accounts"
-permalink: kb/256/Q256012/
+permalink: /kb/256/Q256012/
 ---
 
 ## Q256012: SMS: Crystal Reports Services Installed as Local System Accounts

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195669: DNS: System Error 13 When Starting DNS Service"
-permalink: kb/195/Q195669/
+permalink: /kb/195/Q195669/
 ---
 
 ## Q195669: DNS: System Error 13 When Starting DNS Service

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258958: XADM: Move Server Wizard Won't Update Mailbox Folder Permissions"
-permalink: kb/258/Q258958/
+permalink: /kb/258/Q258958/
 ---
 
 ## Q258958: XADM: Move Server Wizard Won't Update Mailbox Folder Permissions

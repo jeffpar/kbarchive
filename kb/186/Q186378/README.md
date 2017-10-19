@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186378: FIX: Keywords in WHERE Clause Cause Oracle ODBC Driver Errors"
-permalink: kb/186/Q186378/
+permalink: /kb/186/Q186378/
 ---
 
 ## Q186378: FIX: Keywords in WHERE Clause Cause Oracle ODBC Driver Errors

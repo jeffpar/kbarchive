@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222714: Pause/Break Key Functions As NUMLOCK Key on Terminal Server"
-permalink: kb/222/Q222714/
+permalink: /kb/222/Q222714/
 ---
 
 ## Q222714: Pause/Break Key Functions As NUMLOCK Key on Terminal Server

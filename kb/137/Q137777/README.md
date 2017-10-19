@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137777: PRB: Memo Field Contents Not Shown in the Debug Window"
-permalink: kb/137/Q137777/
+permalink: /kb/137/Q137777/
 ---
 
 ## Q137777: PRB: Memo Field Contents Not Shown in the Debug Window

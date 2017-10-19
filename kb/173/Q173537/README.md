@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173537: Compex PNP NE2000 Compatible NIC May Cause Event ID 7000"
-permalink: kb/173/Q173537/
+permalink: /kb/173/Q173537/
 ---
 
 ## Q173537: Compex PNP NE2000 Compatible NIC May Cause Event ID 7000

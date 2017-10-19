@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246130: PRB: MSDN Library Problems Installing to Jazz and Zip Drives"
-permalink: kb/246/Q246130/
+permalink: /kb/246/Q246130/
 ---
 
 ## Q246130: PRB: MSDN Library Problems Installing to Jazz and Zip Drives

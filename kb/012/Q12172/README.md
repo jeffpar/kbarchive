@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q12172: HOWTO: How to Change a Window's Parent"
-permalink: kb/012/Q12172/
+permalink: /kb/012/Q12172/
 ---
 
 ## Q12172: HOWTO: How to Change a Window's Parent

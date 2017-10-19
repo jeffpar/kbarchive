@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188386: XFOR: Error Removing Directory Synchronization Objects"
-permalink: kb/188/Q188386/
+permalink: /kb/188/Q188386/
 ---
 
 ## Q188386: XFOR: Error Removing Directory Synchronization Objects

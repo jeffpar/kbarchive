@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171748: Back Office Resource Kit Eximwiz Utility Update"
-permalink: kb/171/Q171748/
+permalink: /kb/171/Q171748/
 ---
 
 ## Q171748: Back Office Resource Kit Eximwiz Utility Update

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172816: TN3270 SSCP-LU Sessions Send x'40' Instead of Null RU"
-permalink: kb/172/Q172816/
+permalink: /kb/172/Q172816/
 ---
 
 ## Q172816: TN3270 SSCP-LU Sessions Send x'40' Instead of Null RU

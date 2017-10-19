@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162929: ACC97: Err Msg: &quot;Could not create a valid file name&quot; in VSS"
-permalink: kb/162/Q162929/
+permalink: /kb/162/Q162929/
 ---
 
 ## Q162929: ACC97: Err Msg: &quot;Could not create a valid file name&quot; in VSS

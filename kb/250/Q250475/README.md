@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250475: PRB: VBCE: Deactivate Event Fires when Second Form is Closed"
-permalink: kb/250/Q250475/
+permalink: /kb/250/Q250475/
 ---
 
 ## Q250475: PRB: VBCE: Deactivate Event Fires when Second Form is Closed

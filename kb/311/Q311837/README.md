@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q311837: End of Print Job Handling Incorrect If Print Filter DLL Used"
-permalink: kb/311/Q311837/
+permalink: /kb/311/Q311837/
 ---
 
 ## Q311837: End of Print Job Handling Incorrect If Print Filter DLL Used

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84280: Librex: Problems Running DOS Applications in 386 Enhanced Mode"
-permalink: kb/084/Q84280/
+permalink: /kb/084/Q84280/
 ---
 
 ## Q84280: Librex: Problems Running DOS Applications in 386 Enhanced Mode

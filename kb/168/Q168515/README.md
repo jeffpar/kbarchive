@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168515: Explanation of an OSPF Area"
-permalink: kb/168/Q168515/
+permalink: /kb/168/Q168515/
 ---
 
 ## Q168515: Explanation of an OSPF Area

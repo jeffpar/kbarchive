@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102113: FIX: &quot;Out of Virtual Memory&quot; Message may be Caused by chdir()"
-permalink: kb/102/Q102113/
+permalink: /kb/102/Q102113/
 ---
 
 ## Q102113: FIX: &quot;Out of Virtual Memory&quot; Message may be Caused by chdir()

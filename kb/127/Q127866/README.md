@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127866: Cannot Change System Time In Access Using Time Statement"
-permalink: kb/127/Q127866/
+permalink: /kb/127/Q127866/
 ---
 
 ## Q127866: Cannot Change System Time In Access Using Time Statement

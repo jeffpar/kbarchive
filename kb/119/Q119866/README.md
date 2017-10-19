@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119866: Microcom 4232 Modem Connects at 9600 Baud Only"
-permalink: kb/119/Q119866/
+permalink: /kb/119/Q119866/
 ---
 
 ## Q119866: Microcom 4232 Modem Connects at 9600 Baud Only

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148852: PC NTMMTA: Dynamic Connections Fail with Dynadmin and Novell"
-permalink: kb/148/Q148852/
+permalink: /kb/148/Q148852/
 ---
 
 ## Q148852: PC NTMMTA: Dynamic Connections Fail with Dynadmin and Novell

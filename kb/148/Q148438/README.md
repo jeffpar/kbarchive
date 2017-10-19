@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148438: PCMCIA SCSI Hard Disks Not Recognized After Service Pack 1"
-permalink: kb/148/Q148438/
+permalink: /kb/148/Q148438/
 ---
 
 ## Q148438: PCMCIA SCSI Hard Disks Not Recognized After Service Pack 1

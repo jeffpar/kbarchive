@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150690: Err Msg: Unable to Complete This Task"
-permalink: kb/150/Q150690/
+permalink: /kb/150/Q150690/
 ---
 
 ## Q150690: Err Msg: Unable to Complete This Task

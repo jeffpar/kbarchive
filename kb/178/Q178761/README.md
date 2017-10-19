@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178761: XWEB: Attachments Produce JavaScript Errors in Browser"
-permalink: kb/178/Q178761/
+permalink: /kb/178/Q178761/
 ---
 
 ## Q178761: XWEB: Attachments Produce JavaScript Errors in Browser

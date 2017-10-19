@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120506: How Virtual Memory Works on a Power Macintosh"
-permalink: kb/120/Q120506/
+permalink: /kb/120/Q120506/
 ---
 
 ## Q120506: How Virtual Memory Works on a Power Macintosh

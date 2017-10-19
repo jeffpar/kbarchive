@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169677: XFOR: DXA Reports 249 Error with Error -1201"
-permalink: kb/169/Q169677/
+permalink: /kb/169/Q169677/
 ---
 
 ## Q169677: XFOR: DXA Reports 249 Error with Error -1201

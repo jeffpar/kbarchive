@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140837: AS/400 Demo Link Service Fails to Log Events"
-permalink: kb/140/Q140837/
+permalink: /kb/140/Q140837/
 ---
 
 ## Q140837: AS/400 Demo Link Service Fails to Log Events

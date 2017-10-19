@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248639: Remote Access Service Does Not Start, Errors 7023 and 7001"
-permalink: kb/248/Q248639/
+permalink: /kb/248/Q248639/
 ---
 
 ## Q248639: Remote Access Service Does Not Start, Errors 7023 and 7001

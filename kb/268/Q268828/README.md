@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268828: How to Modify the Registry to Delete Locally Cached Profiles"
-permalink: kb/268/Q268828/
+permalink: /kb/268/Q268828/
 ---
 
 ## Q268828: How to Modify the Registry to Delete Locally Cached Profiles

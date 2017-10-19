@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183478: HOWTO: Call EnumServicesStatus API From Visual Basic"
-permalink: kb/183/Q183478/
+permalink: /kb/183/Q183478/
 ---
 
 ## Q183478: HOWTO: Call EnumServicesStatus API From Visual Basic

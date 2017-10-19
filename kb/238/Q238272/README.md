@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238272: BUG: Show Difference Causes VSS to Hang on Large Text Files"
-permalink: kb/238/Q238272/
+permalink: /kb/238/Q238272/
 ---
 
 ## Q238272: BUG: Show Difference Causes VSS to Hang on Large Text Files

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69105: Additional Steps Required to Print from Aldus PageMaker"
-permalink: kb/069/Q69105/
+permalink: /kb/069/Q69105/
 ---
 
 ## Q69105: Additional Steps Required to Print from Aldus PageMaker

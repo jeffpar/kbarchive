@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195814: Golf 1999 Edition: Minimum System Requirements"
-permalink: kb/195/Q195814/
+permalink: /kb/195/Q195814/
 ---
 
 ## Q195814: Golf 1999 Edition: Minimum System Requirements

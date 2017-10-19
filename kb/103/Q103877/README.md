@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103877: DBLSPACE.LOG May Point to Hidden Directory or File"
-permalink: kb/103/Q103877/
+permalink: /kb/103/Q103877/
 ---
 
 ## Q103877: DBLSPACE.LOG May Point to Hidden Directory or File

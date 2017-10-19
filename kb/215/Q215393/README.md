@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215393: BUG: Code Comments Increase the Size of a Compiled VBCE App"
-permalink: kb/215/Q215393/
+permalink: /kb/215/Q215393/
 ---
 
 ## Q215393: BUG: Code Comments Increase the Size of a Compiled VBCE App

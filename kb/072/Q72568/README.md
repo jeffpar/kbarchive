@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72568: Using Third Party Disk Partitioning Software with MS-DOS 5.0"
-permalink: kb/072/Q72568/
+permalink: /kb/072/Q72568/
 ---
 
 ## Q72568: Using Third Party Disk Partitioning Software with MS-DOS 5.0

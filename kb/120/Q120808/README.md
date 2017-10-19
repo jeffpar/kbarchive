@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120808: PRB: Viewer Setup Error in INICM.C Line 185 or in PROGCM.C"
-permalink: kb/120/Q120808/
+permalink: /kb/120/Q120808/
 ---
 
 ## Q120808: PRB: Viewer Setup Error in INICM.C Line 185 or in PROGCM.C

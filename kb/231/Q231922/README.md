@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231922: WD97: Poor Compression of Word Files That Contain Graphics"
-permalink: kb/231/Q231922/
+permalink: /kb/231/Q231922/
 ---
 
 ## Q231922: WD97: Poor Compression of Word Files That Contain Graphics

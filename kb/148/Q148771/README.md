@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148771: PC DirSync: Err Msg: Bad ID or Password"
-permalink: kb/148/Q148771/
+permalink: /kb/148/Q148771/
 ---
 
 ## Q148771: PC DirSync: Err Msg: Bad ID or Password

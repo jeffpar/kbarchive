@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236448: Asheron's Call: Magical Projectiles Do Not Appear"
-permalink: kb/236/Q236448/
+permalink: /kb/236/Q236448/
 ---
 
 ## Q236448: Asheron's Call: Magical Projectiles Do Not Appear

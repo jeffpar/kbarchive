@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239929: Compaq HALs (Including Revision G) for Alpha with Windows NT 4.0"
-permalink: kb/239/Q239929/
+permalink: /kb/239/Q239929/
 ---
 
 ## Q239929: Compaq HALs (Including Revision G) for Alpha with Windows NT 4.0

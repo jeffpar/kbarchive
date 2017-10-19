@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168320: XCLN: How to Print Messages w/out Headers using Wordmail"
-permalink: kb/168/Q168320/
+permalink: /kb/168/Q168320/
 ---
 
 ## Q168320: XCLN: How to Print Messages w/out Headers using Wordmail

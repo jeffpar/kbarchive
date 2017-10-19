@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320638: SMS: Job Files May Back Up in the Scheduler.box Folder"
-permalink: kb/320/Q320638/
+permalink: /kb/320/Q320638/
 ---
 
 ## Q320638: SMS: Job Files May Back Up in the Scheduler.box Folder

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86076: Shortcut Keys Not Available in EGA Setup"
-permalink: kb/086/Q86076/
+permalink: /kb/086/Q86076/
 ---
 
 ## Q86076: Shortcut Keys Not Available in EGA Setup

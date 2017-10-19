@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96533: PC WRmt: Installing Mail Remote from a Network"
-permalink: kb/096/Q96533/
+permalink: /kb/096/Q96533/
 ---
 
 ## Q96533: PC WRmt: Installing Mail Remote from a Network

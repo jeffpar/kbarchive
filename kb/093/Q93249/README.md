@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93249: SAMPLE: WinCPIC.exe CPI-C API for 16-bit and 32-Bit Windows"
-permalink: kb/093/Q93249/
+permalink: /kb/093/Q93249/
 ---
 
 ## Q93249: SAMPLE: WinCPIC.exe CPI-C API for 16-bit and 32-Bit Windows

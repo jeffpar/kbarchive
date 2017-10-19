@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182137: PRB: Memory Error with HP LaserJet 4000 TN PCL 5e Driver"
-permalink: kb/182/Q182137/
+permalink: /kb/182/Q182137/
 ---
 
 ## Q182137: PRB: Memory Error with HP LaserJet 4000 TN PCL 5e Driver

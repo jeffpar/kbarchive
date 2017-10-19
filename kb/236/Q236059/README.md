@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236059: Memory Leak in Rdpdd.dll"
-permalink: kb/236/Q236059/
+permalink: /kb/236/Q236059/
 ---
 
 ## Q236059: Memory Leak in Rdpdd.dll

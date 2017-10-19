@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189590: SMSINST: Uninstal.exe Does Not Find Install.log File"
-permalink: kb/189/Q189590/
+permalink: /kb/189/Q189590/
 ---
 
 ## Q189590: SMSINST: Uninstal.exe Does Not Find Install.log File

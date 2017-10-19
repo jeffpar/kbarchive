@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120443: BUG: SET SYSMENU TO _MWINDOW Doesn't Disable Window Menu"
-permalink: kb/120/Q120443/
+permalink: /kb/120/Q120443/
 ---
 
 ## Q120443: BUG: SET SYSMENU TO _MWINDOW Doesn't Disable Window Menu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97766: Using IBM LAN Server 1.3 with Windows for Workgroups"
-permalink: kb/097/Q97766/
+permalink: /kb/097/Q97766/
 ---
 
 ## Q97766: Using IBM LAN Server 1.3 with Windows for Workgroups

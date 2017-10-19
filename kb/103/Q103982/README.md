@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103982: PRB: OnInitialUpdate() May Be Called More Than Once"
-permalink: kb/103/Q103982/
+permalink: /kb/103/Q103982/
 ---
 
 ## Q103982: PRB: OnInitialUpdate() May Be Called More Than Once

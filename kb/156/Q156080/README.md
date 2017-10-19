@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156080: STL Sample for Non-Predicate Version of adjacent_find Function"
-permalink: kb/156/Q156080/
+permalink: /kb/156/Q156080/
 ---
 
 ## Q156080: STL Sample for Non-Predicate Version of adjacent_find Function

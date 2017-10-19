@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253210: XCLN: Error Message: Properties for This Information Service..."
-permalink: kb/253/Q253210/
+permalink: /kb/253/Q253210/
 ---
 
 ## Q253210: XCLN: Error Message: Properties for This Information Service...

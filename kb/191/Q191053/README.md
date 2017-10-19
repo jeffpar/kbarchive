@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191053: Error Appears Behind C2 Security Config Tool Splash Screen"
-permalink: kb/191/Q191053/
+permalink: /kb/191/Q191053/
 ---
 
 ## Q191053: Error Appears Behind C2 Security Config Tool Splash Screen

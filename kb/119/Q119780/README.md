@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119780: Using ForceMapper with Windows for Workgroups 3.11"
-permalink: kb/119/Q119780/
+permalink: /kb/119/Q119780/
 ---
 
 ## Q119780: Using ForceMapper with Windows for Workgroups 3.11

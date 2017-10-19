@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190489: BUG: Choosing Page Setup Causes &quot;Printer not ready&quot; Error"
-permalink: kb/190/Q190489/
+permalink: /kb/190/Q190489/
 ---
 
 ## Q190489: BUG: Choosing Page Setup Causes &quot;Printer not ready&quot; Error

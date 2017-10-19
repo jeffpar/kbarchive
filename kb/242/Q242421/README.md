@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242421: SMS: Offer Summarizer May Process .sum Files Out of Order"
-permalink: kb/242/Q242421/
+permalink: /kb/242/Q242421/
 ---
 
 ## Q242421: SMS: Offer Summarizer May Process .sum Files Out of Order

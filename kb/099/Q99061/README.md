@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99061: Using REXX Program Flow-Control Commands"
-permalink: kb/099/Q99061/
+permalink: /kb/099/Q99061/
 ---
 
 ## Q99061: Using REXX Program Flow-Control Commands

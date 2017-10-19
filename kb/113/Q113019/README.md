@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113019: PPT: Cannot Change Default Fit Text or Anchor Point Options"
-permalink: kb/113/Q113019/
+permalink: /kb/113/Q113019/
 ---
 
 ## Q113019: PPT: Cannot Change Default Fit Text or Anchor Point Options

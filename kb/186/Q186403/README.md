@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186403: SMS: How to Generate a PDF from an Existing SMS Package"
-permalink: kb/186/Q186403/
+permalink: /kb/186/Q186403/
 ---
 
 ## Q186403: SMS: How to Generate a PDF from an Existing SMS Package

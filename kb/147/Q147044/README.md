@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147044: XFOR: Using the IMC and AT&amp;T Easylink Gateway Together"
-permalink: kb/147/Q147044/
+permalink: /kb/147/Q147044/
 ---
 
 ## Q147044: XFOR: Using the IMC and AT&amp;T Easylink Gateway Together

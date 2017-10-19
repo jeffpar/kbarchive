@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82622: DoDot Uses More System Resources with Windows 3.1"
-permalink: kb/082/Q82622/
+permalink: /kb/082/Q82622/
 ---
 
 ## Q82622: DoDot Uses More System Resources with Windows 3.1

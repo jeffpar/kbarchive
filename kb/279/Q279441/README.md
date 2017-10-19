@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279441: Hardware Inventory Is Rejected If Variable Ends with Backslash"
-permalink: kb/279/Q279441/
+permalink: /kb/279/Q279441/
 ---
 
 ## Q279441: Hardware Inventory Is Rejected If Variable Ends with Backslash

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174168: XFOR: GroupWise Messages Missing After Migration"
-permalink: kb/174/Q174168/
+permalink: /kb/174/Q174168/
 ---
 
 ## Q174168: XFOR: GroupWise Messages Missing After Migration

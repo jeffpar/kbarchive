@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230719: XADM: Rules in Error and Error Unknown"
-permalink: kb/230/Q230719/
+permalink: /kb/230/Q230719/
 ---
 
 ## Q230719: XADM: Rules in Error and Error Unknown

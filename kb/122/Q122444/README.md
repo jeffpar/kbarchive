@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122444: Server Manager Reports Inconsistent Computer Type"
-permalink: kb/122/Q122444/
+permalink: /kb/122/Q122444/
 ---
 
 ## Q122444: Server Manager Reports Inconsistent Computer Type

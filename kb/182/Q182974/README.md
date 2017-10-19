@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182974: WD97: Supplemental Help File Available Containing KB Web Links"
-permalink: kb/182/Q182974/
+permalink: /kb/182/Q182974/
 ---
 
 ## Q182974: WD97: Supplemental Help File Available Containing KB Web Links

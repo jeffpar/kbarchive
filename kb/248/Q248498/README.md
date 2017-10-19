@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248498: Win32 CPIC Application May Stop Unexpectedly"
-permalink: kb/248/Q248498/
+permalink: /kb/248/Q248498/
 ---
 
 ## Q248498: Win32 CPIC Application May Stop Unexpectedly

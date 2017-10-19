@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q39443: FIX: Parentheses Necessary for Operator Precedence"
-permalink: kb/039/Q39443/
+permalink: /kb/039/Q39443/
 ---
 
 ## Q39443: FIX: Parentheses Necessary for Operator Precedence

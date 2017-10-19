@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258693: CLUSTER:IIS Server Instance Resources Offline After NNTP Install"
-permalink: kb/258/Q258693/
+permalink: /kb/258/Q258693/
 ---
 
 ## Q258693: CLUSTER:IIS Server Instance Resources Offline After NNTP Install

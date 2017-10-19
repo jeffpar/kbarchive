@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185730: HOWTO: Prevent Multiple Instances of a 32-bit VB Application"
-permalink: kb/185/Q185730/
+permalink: /kb/185/Q185730/
 ---
 
 ## Q185730: HOWTO: Prevent Multiple Instances of a 32-bit VB Application

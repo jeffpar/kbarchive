@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169754: XADM: How to Set Up Batch Auto-Forward Rules Using Exchange"
-permalink: kb/169/Q169754/
+permalink: /kb/169/Q169754/
 ---
 
 ## Q169754: XADM: How to Set Up Batch Auto-Forward Rules Using Exchange

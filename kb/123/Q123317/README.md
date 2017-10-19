@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123317: SMS: Enabling Help Desk Options from Logon Servers Unsupported"
-permalink: kb/123/Q123317/
+permalink: /kb/123/Q123317/
 ---
 
 ## Q123317: SMS: Enabling Help Desk Options from Logon Servers Unsupported

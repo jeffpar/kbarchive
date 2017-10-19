@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75961: Printing Extended Characters with Generic Text Driver"
-permalink: kb/075/Q75961/
+permalink: /kb/075/Q75961/
 ---
 
 ## Q75961: Printing Extended Characters with Generic Text Driver

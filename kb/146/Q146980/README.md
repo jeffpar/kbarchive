@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146980: XCLN: Wrong Personal Folders Service Highlighted"
-permalink: kb/146/Q146980/
+permalink: /kb/146/Q146980/
 ---
 
 ## Q146980: XCLN: Wrong Personal Folders Service Highlighted

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149322: FIX: Tag Changed Incorrectly After Linking to Invalid ImageList"
-permalink: kb/149/Q149322/
+permalink: /kb/149/Q149322/
 ---
 
 ## Q149322: FIX: Tag Changed Incorrectly After Linking to Invalid ImageList

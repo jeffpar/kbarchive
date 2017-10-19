@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141865: FIX: Can't Get to Hidden Workspace After Enabling Docking View"
-permalink: kb/141/Q141865/
+permalink: /kb/141/Q141865/
 ---
 
 ## Q141865: FIX: Can't Get to Hidden Workspace After Enabling Docking View

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178195: XCLN: How to Install the Server Scripting Extension in Outlook"
-permalink: kb/178/Q178195/
+permalink: /kb/178/Q178195/
 ---
 
 ## Q178195: XCLN: How to Install the Server Scripting Extension in Outlook

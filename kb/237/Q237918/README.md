@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237918: WD97: How to Clear the Poppy Macro Virus"
-permalink: kb/237/Q237918/
+permalink: /kb/237/Q237918/
 ---
 
 ## Q237918: WD97: How to Clear the Poppy Macro Virus

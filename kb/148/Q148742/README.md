@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148742: Troubleshooting the ISDN Accelerator Pack"
-permalink: kb/148/Q148742/
+permalink: /kb/148/Q148742/
 ---
 
 ## Q148742: Troubleshooting the ISDN Accelerator Pack

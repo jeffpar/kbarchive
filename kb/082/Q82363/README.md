@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82363: SMARTDrive 4.0 and RCD.EXE 4.x"
-permalink: kb/082/Q82363/
+permalink: /kb/082/Q82363/
 ---
 
 ## Q82363: SMARTDrive 4.0 and RCD.EXE 4.x

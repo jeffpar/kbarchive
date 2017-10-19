@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175768: FIX: ActiveX MAPI Control 5.0 Causes Memory Errors"
-permalink: kb/175/Q175768/
+permalink: /kb/175/Q175768/
 ---
 
 ## Q175768: FIX: ActiveX MAPI Control 5.0 Causes Memory Errors

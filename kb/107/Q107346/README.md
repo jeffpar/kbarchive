@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107346: WFWG 3.11: Hardware Compatibility List - Modems for AWFAX"
-permalink: kb/107/Q107346/
+permalink: /kb/107/Q107346/
 ---
 
 ## Q107346: WFWG 3.11: Hardware Compatibility List - Modems for AWFAX

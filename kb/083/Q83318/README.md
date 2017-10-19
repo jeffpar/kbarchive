@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83318: Novell NetWare 286 Rights Required to Run SETUP /N"
-permalink: kb/083/Q83318/
+permalink: /kb/083/Q83318/
 ---
 
 ## Q83318: Novell NetWare 286 Rights Required to Run SETUP /N

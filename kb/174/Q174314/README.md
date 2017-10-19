@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174314: WD97: Cannot Copy from Word and Paste to GroupWise 4.1a"
-permalink: kb/174/Q174314/
+permalink: /kb/174/Q174314/
 ---
 
 ## Q174314: WD97: Cannot Copy from Word and Paste to GroupWise 4.1a

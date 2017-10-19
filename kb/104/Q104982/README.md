@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104982: Cinemania: GP Fault When Playing Video on Orchid Fahrenheit"
-permalink: kb/104/Q104982/
+permalink: /kb/104/Q104982/
 ---
 
 ## Q104982: Cinemania: GP Fault When Playing Video on Orchid Fahrenheit

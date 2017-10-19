@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174809: FIX: Developer Studio Crashes Randomly When Navigating Workspace"
-permalink: kb/174/Q174809/
+permalink: /kb/174/Q174809/
 ---
 
 ## Q174809: FIX: Developer Studio Crashes Randomly When Navigating Workspace

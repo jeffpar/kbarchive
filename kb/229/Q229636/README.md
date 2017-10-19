@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229636: NvRunCmd Terminates if SNA Application Internal Trace Is Enabled"
-permalink: kb/229/Q229636/
+permalink: /kb/229/Q229636/
 ---
 
 ## Q229636: NvRunCmd Terminates if SNA Application Internal Trace Is Enabled

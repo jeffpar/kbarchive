@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186628: Performance Tuning CPU Use for 16, 32-bit Windows Applications"
-permalink: kb/186/Q186628/
+permalink: /kb/186/Q186628/
 ---
 
 ## Q186628: Performance Tuning CPU Use for 16, 32-bit Windows Applications

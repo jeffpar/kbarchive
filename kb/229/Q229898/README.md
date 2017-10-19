@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q229898: Developing User Interfaces for Microsoft Windows Corrections"
-permalink: kb/229/Q229898/
+permalink: /kb/229/Q229898/
 ---
 
 ## Q229898: Developing User Interfaces for Microsoft Windows Corrections

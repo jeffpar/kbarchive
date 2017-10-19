@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q280390: FS2000/2002: How to Record Flight Time in the Logbook"
-permalink: kb/280/Q280390/
+permalink: /kb/280/Q280390/
 ---
 
 ## Q280390: FS2000/2002: How to Record Flight Time in the Logbook

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221578: HOWTO: Play Unix Audio Files (.AU) From Visual Basic"
-permalink: kb/221/Q221578/
+permalink: /kb/221/Q221578/
 ---
 
 ## Q221578: HOWTO: Play Unix Audio Files (.AU) From Visual Basic

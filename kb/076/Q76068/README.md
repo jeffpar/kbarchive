@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76068: PRB: Pen Cursor Does Not Appear When Tablet Used"
-permalink: kb/076/Q76068/
+permalink: /kb/076/Q76068/
 ---
 
 ## Q76068: PRB: Pen Cursor Does Not Appear When Tablet Used

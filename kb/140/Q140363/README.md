@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140363: FIX: Visual SourceSafe Slows as It Increases Processor Usage"
-permalink: kb/140/Q140363/
+permalink: /kb/140/Q140363/
 ---
 
 ## Q140363: FIX: Visual SourceSafe Slows as It Increases Processor Usage

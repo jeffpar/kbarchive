@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107173: DOCERR: NFY_RIP Not Received in Windows 3.0"
-permalink: kb/107/Q107173/
+permalink: /kb/107/Q107173/
 ---
 
 ## Q107173: DOCERR: NFY_RIP Not Received in Windows 3.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151786: XFOR: Schedule+ Meeting Requests Drop the When Field"
-permalink: kb/151/Q151786/
+permalink: /kb/151/Q151786/
 ---
 
 ## Q151786: XFOR: Schedule+ Meeting Requests Drop the When Field

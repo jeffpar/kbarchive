@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166943: Golf: Unable to Select COM Port in Multiplayer Game"
-permalink: kb/166/Q166943/
+permalink: /kb/166/Q166943/
 ---
 
 ## Q166943: Golf: Unable to Select COM Port in Multiplayer Game

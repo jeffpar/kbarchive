@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134954: X400: Gateway Does Not Support the PROBE Message Type"
-permalink: kb/134/Q134954/
+permalink: /kb/134/Q134954/
 ---
 
 ## Q134954: X400: Gateway Does Not Support the PROBE Message Type

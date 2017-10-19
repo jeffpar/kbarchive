@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150773: Microsoft Press &quot;Step by Step&quot; Setup Copies Zero-Byte Files"
-permalink: kb/150/Q150773/
+permalink: /kb/150/Q150773/
 ---
 
 ## Q150773: Microsoft Press &quot;Step by Step&quot; Setup Copies Zero-Byte Files

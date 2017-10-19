@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245036: Cannot Delete DHCP Reservations."
-permalink: kb/245/Q245036/
+permalink: /kb/245/Q245036/
 ---
 
 ## Q245036: Cannot Delete DHCP Reservations.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196187: XADM: Cannot View Recipients in the Global Address List"
-permalink: kb/196/Q196187/
+permalink: /kb/196/Q196187/
 ---
 
 ## Q196187: XADM: Cannot View Recipients in the Global Address List

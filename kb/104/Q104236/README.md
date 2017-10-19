@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104236: AV in Rasman.exe After Many Simultaneous Connections"
-permalink: kb/104/Q104236/
+permalink: /kb/104/Q104236/
 ---
 
 ## Q104236: AV in Rasman.exe After Many Simultaneous Connections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221652: FIX: Filter Ignored With REPORT FORM...NOWAIT and DE Table"
-permalink: kb/221/Q221652/
+permalink: /kb/221/Q221652/
 ---
 
 ## Q221652: FIX: Filter Ignored With REPORT FORM...NOWAIT and DE Table

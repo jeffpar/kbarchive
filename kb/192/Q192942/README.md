@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192942: FIX: Call to CWnd::MoveWindow Causes Stack Overflow"
-permalink: kb/192/Q192942/
+permalink: /kb/192/Q192942/
 ---
 
 ## Q192942: FIX: Call to CWnd::MoveWindow Causes Stack Overflow

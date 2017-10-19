@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236281: FIX: An Error Occurs While Registering the File Expsrv.dll"
-permalink: kb/236/Q236281/
+permalink: /kb/236/Q236281/
 ---
 
 ## Q236281: FIX: An Error Occurs While Registering the File Expsrv.dll

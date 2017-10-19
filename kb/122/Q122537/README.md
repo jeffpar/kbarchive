@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122537: Arcade for Macintosh: How to Enable 32-bit Addressing"
-permalink: kb/122/Q122537/
+permalink: /kb/122/Q122537/
 ---
 
 ## Q122537: Arcade for Macintosh: How to Enable 32-bit Addressing

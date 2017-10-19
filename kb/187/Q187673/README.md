@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187673: SAMPLE: AUDIOLVL.EXE-Monitor Input and Output Audio Levels"
-permalink: kb/187/Q187673/
+permalink: /kb/187/Q187673/
 ---
 
 ## Q187673: SAMPLE: AUDIOLVL.EXE-Monitor Input and Output Audio Levels

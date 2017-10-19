@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170480: XWEB: Delete Check Box Not Lined Up with Field Header Using OWA"
-permalink: kb/170/Q170480/
+permalink: /kb/170/Q170480/
 ---
 
 ## Q170480: XWEB: Delete Check Box Not Lined Up with Field Header Using OWA

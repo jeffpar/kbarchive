@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164949: FIX: Visual C++ Debugger Crashes on Very Long Symbols"
-permalink: kb/164/Q164949/
+permalink: /kb/164/Q164949/
 ---
 
 ## Q164949: FIX: Visual C++ Debugger Crashes on Very Long Symbols

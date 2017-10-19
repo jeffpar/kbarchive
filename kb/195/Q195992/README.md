@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195992: WD97: Purpose of Square Bullets Displayed in Left Margin"
-permalink: kb/195/Q195992/
+permalink: /kb/195/Q195992/
 ---
 
 ## Q195992: WD97: Purpose of Square Bullets Displayed in Left Margin

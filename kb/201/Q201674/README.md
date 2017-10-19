@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201674: Reference Suite 99: Locations of Network Administrator's Guides"
-permalink: kb/201/Q201674/
+permalink: /kb/201/Q201674/
 ---
 
 ## Q201674: Reference Suite 99: Locations of Network Administrator's Guides

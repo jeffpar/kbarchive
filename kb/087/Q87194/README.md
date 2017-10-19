@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87194: PROFS: Versions of MS Mail Compatible with PROFS Gateway"
-permalink: kb/087/Q87194/
+permalink: /kb/087/Q87194/
 ---
 
 ## Q87194: PROFS: Versions of MS Mail Compatible with PROFS Gateway

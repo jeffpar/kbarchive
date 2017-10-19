@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150428: Mac Bookshelf 96-97: Temp. Files Appear in Bookshelf Folder"
-permalink: kb/150/Q150428/
+permalink: /kb/150/Q150428/
 ---
 
 ## Q150428: Mac Bookshelf 96-97: Temp. Files Appear in Bookshelf Folder

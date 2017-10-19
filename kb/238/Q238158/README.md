@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238158: Reference Suite 2000: Locations of Network Administrator's Guide"
-permalink: kb/238/Q238158/
+permalink: /kb/238/Q238158/
 ---
 
 ## Q238158: Reference Suite 2000: Locations of Network Administrator's Guide

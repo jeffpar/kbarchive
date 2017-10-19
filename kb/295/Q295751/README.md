@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295751: XADM: Event 156 Appears When Using Backup Exec"
-permalink: kb/295/Q295751/
+permalink: /kb/295/Q295751/
 ---
 
 ## Q295751: XADM: Event 156 Appears When Using Backup Exec

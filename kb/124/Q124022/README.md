@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124022: PPT: Importing MatLab Graphics into PowerPoint Causes Error"
-permalink: kb/124/Q124022/
+permalink: /kb/124/Q124022/
 ---
 
 ## Q124022: PPT: Importing MatLab Graphics into PowerPoint Causes Error

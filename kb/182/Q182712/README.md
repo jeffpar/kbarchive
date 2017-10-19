@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182712: Err Msg: &quot;Unable to Connect to &lt;Web site&gt;&quot; Over SSL Connection"
-permalink: kb/182/Q182712/
+permalink: /kb/182/Q182712/
 ---
 
 ## Q182712: Err Msg: &quot;Unable to Connect to &lt;Web site&gt;&quot; Over SSL Connection

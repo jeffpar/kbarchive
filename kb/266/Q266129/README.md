@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266129: Desktop Heap Corruption Causes &quot;Stop 0x00000050&quot; Error Message"
-permalink: kb/266/Q266129/
+permalink: /kb/266/Q266129/
 ---
 
 ## Q266129: Desktop Heap Corruption Causes &quot;Stop 0x00000050&quot; Error Message

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124797: ARP Static Cache Entries Switch to Dynamic"
-permalink: kb/124/Q124797/
+permalink: /kb/124/Q124797/
 ---
 
 ## Q124797: ARP Static Cache Entries Switch to Dynamic

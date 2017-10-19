@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231205: SMS: Migration Wizard Fails w/More Than 50 Characters in Name"
-permalink: kb/231/Q231205/
+permalink: /kb/231/Q231205/
 ---
 
 ## Q231205: SMS: Migration Wizard Fails w/More Than 50 Characters in Name

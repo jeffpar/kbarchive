@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126095: NCR StarLan 16/4 TokenRing NAU Not Supported"
-permalink: kb/126/Q126095/
+permalink: /kb/126/Q126095/
 ---
 
 ## Q126095: NCR StarLan 16/4 TokenRing NAU Not Supported

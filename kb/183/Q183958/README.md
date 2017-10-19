@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183958: SMS: Access Violation in Wuser32.exe/Security.dll"
-permalink: kb/183/Q183958/
+permalink: /kb/183/Q183958/
 ---
 
 ## Q183958: SMS: Access Violation in Wuser32.exe/Security.dll

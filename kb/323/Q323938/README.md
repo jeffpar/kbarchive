@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323938: Train Simulator: Windshield Wipers Not Visible from Inside Cab"
-permalink: kb/323/Q323938/
+permalink: /kb/323/Q323938/
 ---
 
 ## Q323938: Train Simulator: Windshield Wipers Not Visible from Inside Cab

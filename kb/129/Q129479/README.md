@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129479: PRB: _searchenv() Does Not Check the Buffer Size"
-permalink: kb/129/Q129479/
+permalink: /kb/129/Q129479/
 ---
 
 ## Q129479: PRB: _searchenv() Does Not Check the Buffer Size

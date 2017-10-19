@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135149: Cannot Use Dial-Up Networking on Server-Based-Setup Client"
-permalink: kb/135/Q135149/
+permalink: /kb/135/Q135149/
 ---
 
 ## Q135149: Cannot Use Dial-Up Networking on Server-Based-Setup Client

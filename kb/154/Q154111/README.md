@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154111: FIX: Access Violation Opening a Workspace of Type Makefile"
-permalink: kb/154/Q154111/
+permalink: /kb/154/Q154111/
 ---
 
 ## Q154111: FIX: Access Violation Opening a Workspace of Type Makefile

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146471: XCLN: Cannot Save Parameters of Electronic Forms"
-permalink: kb/146/Q146471/
+permalink: /kb/146/Q146471/
 ---
 
 ## Q146471: XCLN: Cannot Save Parameters of Electronic Forms

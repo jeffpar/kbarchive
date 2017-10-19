@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90221: Cannot Preview Font in Chat"
-permalink: kb/090/Q90221/
+permalink: /kb/090/Q90221/
 ---
 
 ## Q90221: Cannot Preview Font in Chat

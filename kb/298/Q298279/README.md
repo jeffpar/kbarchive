@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298279: &quot;Form Load Failed&quot; Error Message When You Try to Choose a Form"
-permalink: kb/298/Q298279/
+permalink: /kb/298/Q298279/
 ---
 
 ## Q298279: &quot;Form Load Failed&quot; Error Message When You Try to Choose a Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167348: FIX: Non-const Member Function Call Via const Object Allowed"
-permalink: kb/167/Q167348/
+permalink: /kb/167/Q167348/
 ---
 
 ## Q167348: FIX: Non-const Member Function Call Via const Object Allowed

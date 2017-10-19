@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140352: BUG: RC1120: RC Out of Memory When Compiling for Macintosh"
-permalink: kb/140/Q140352/
+permalink: /kb/140/Q140352/
 ---
 
 ## Q140352: BUG: RC1120: RC Out of Memory When Compiling for Macintosh

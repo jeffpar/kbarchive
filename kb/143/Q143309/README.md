@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143309: FIX: Report Writer Ignores Constant Band Height Setting"
-permalink: kb/143/Q143309/
+permalink: /kb/143/Q143309/
 ---
 
 ## Q143309: FIX: Report Writer Ignores Constant Band Height Setting

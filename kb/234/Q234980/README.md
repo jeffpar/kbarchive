@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234980: Invalid Multicast Packets Sent with Windows NT TCP/IP Stack"
-permalink: kb/234/Q234980/
+permalink: /kb/234/Q234980/
 ---
 
 ## Q234980: Invalid Multicast Packets Sent with Windows NT TCP/IP Stack

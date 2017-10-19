@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120118: WinLAN Network Overview"
-permalink: kb/120/Q120118/
+permalink: /kb/120/Q120118/
 ---
 
 ## Q120118: WinLAN Network Overview

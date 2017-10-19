@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248150: SMS: Package Status Inaccurate in Three-Tier Hierarchy"
-permalink: kb/248/Q248150/
+permalink: /kb/248/Q248150/
 ---
 
 ## Q248150: SMS: Package Status Inaccurate in Three-Tier Hierarchy

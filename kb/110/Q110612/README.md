@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110612: FFAPI: Slow PUT of Large Messages or Attachments"
-permalink: kb/110/Q110612/
+permalink: /kb/110/Q110612/
 ---
 
 ## Q110612: FFAPI: Slow PUT of Large Messages or Attachments

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303824: DNS Service Fails with Access Violation Exception (0xc0000005)"
-permalink: kb/303/Q303824/
+permalink: /kb/303/Q303824/
 ---
 
 ## Q303824: DNS Service Fails with Access Violation Exception (0xc0000005)

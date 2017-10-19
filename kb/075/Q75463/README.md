@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75463: Plus Hardcard II Drivers and MS-DOS 5.x"
-permalink: kb/075/Q75463/
+permalink: /kb/075/Q75463/
 ---
 
 ## Q75463: Plus Hardcard II Drivers and MS-DOS 5.x

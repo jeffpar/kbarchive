@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166500: XCLN: Windows 3.x Client Can't Fully Display or Save Large Msgs"
-permalink: kb/166/Q166500/
+permalink: /kb/166/Q166500/
 ---
 
 ## Q166500: XCLN: Windows 3.x Client Can't Fully Display or Save Large Msgs

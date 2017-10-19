@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137817: Microsoft Plus! CD-ROM Directory Listing (2 of 2)"
-permalink: kb/137/Q137817/
+permalink: /kb/137/Q137817/
 ---
 
 ## Q137817: Microsoft Plus! CD-ROM Directory Listing (2 of 2)

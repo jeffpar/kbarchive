@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297947: INFO: Use the IADsPropertyValue2 Interface to Return an IADsSecu"
-permalink: kb/297/Q297947/
+permalink: /kb/297/Q297947/
 ---
 
 ## Q297947: INFO: Use the IADsPropertyValue2 Interface to Return an IADsSecu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90486: SAMPLE: Annotating a Text File with Ink"
-permalink: kb/090/Q90486/
+permalink: /kb/090/Q90486/
 ---
 
 ## Q90486: SAMPLE: Annotating a Text File with Ink

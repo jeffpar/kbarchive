@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106485: PRB: Menu Hot Key (ALT+&lt;Key&gt;) Doesn't Work"
-permalink: kb/106/Q106485/
+permalink: /kb/106/Q106485/
 ---
 
 ## Q106485: PRB: Menu Hot Key (ALT+&lt;Key&gt;) Doesn't Work

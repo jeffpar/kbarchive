@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110971: Using MemMaker with EMM386.EXE Frame=None Parameter"
-permalink: kb/110/Q110971/
+permalink: /kb/110/Q110971/
 ---
 
 ## Q110971: Using MemMaker with EMM386.EXE Frame=None Parameter

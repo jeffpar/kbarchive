@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q227831: WD97: Track Changes Shows Changes When None Were Made"
-permalink: kb/227/Q227831/
+permalink: /kb/227/Q227831/
 ---
 
 ## Q227831: WD97: Track Changes Shows Changes When None Were Made

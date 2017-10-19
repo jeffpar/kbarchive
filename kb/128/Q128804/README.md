@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128804: XGA/1 or XGA/2 Video Adapter Cannot Play Full-Screen .AVI File"
-permalink: kb/128/Q128804/
+permalink: /kb/128/Q128804/
 ---
 
 ## Q128804: XGA/1 or XGA/2 Video Adapter Cannot Play Full-Screen .AVI File

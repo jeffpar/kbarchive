@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235297: Microsoft FrontPage 2000 At a Glance Comments and Corrections"
-permalink: kb/235/Q235297/
+permalink: /kb/235/Q235297/
 ---
 
 ## Q235297: Microsoft FrontPage 2000 At a Glance Comments and Corrections

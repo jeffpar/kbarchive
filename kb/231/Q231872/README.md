@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231872: FIX: Using #import May Cause Memory Leaks"
-permalink: kb/231/Q231872/
+permalink: /kb/231/Q231872/
 ---
 
 ## Q231872: FIX: Using #import May Cause Memory Leaks

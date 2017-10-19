@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135382: ADT/ODE: File Compression Ratio Less Than Other Programs"
-permalink: kb/135/Q135382/
+permalink: /kb/135/Q135382/
 ---
 
 ## Q135382: ADT/ODE: File Compression Ratio Less Than Other Programs

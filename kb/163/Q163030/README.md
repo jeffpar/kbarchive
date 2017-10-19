@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163030: PRB: Report Wizard Can Generate Detail Bands Too Large"
-permalink: kb/163/Q163030/
+permalink: /kb/163/Q163030/
 ---
 
 ## Q163030: PRB: Report Wizard Can Generate Detail Bands Too Large

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168919: Windows NT Explorer Does Not Refresh New DFS Mappings"
-permalink: kb/168/Q168919/
+permalink: /kb/168/Q168919/
 ---
 
 ## Q168919: Windows NT Explorer Does Not Refresh New DFS Mappings

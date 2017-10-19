@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93451: WININI.WRI from Windows for Workgroups Version 3.1"
-permalink: kb/093/Q93451/
+permalink: /kb/093/Q93451/
 ---
 
 ## Q93451: WININI.WRI from Windows for Workgroups Version 3.1

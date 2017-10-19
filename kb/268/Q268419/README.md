@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268419: HOWTO: Enable Password Change Functionality for OWA"
-permalink: kb/268/Q268419/
+permalink: /kb/268/Q268419/
 ---
 
 ## Q268419: HOWTO: Enable Password Change Functionality for OWA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281444: How to use Instant Messaging with MSN Companion"
-permalink: kb/281/Q281444/
+permalink: /kb/281/Q281444/
 ---
 
 ## Q281444: How to use Instant Messaging with MSN Companion

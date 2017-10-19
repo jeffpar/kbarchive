@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222893: XFOR: Troubleshooting Calendar Connector for Lotus Notes"
-permalink: kb/222/Q222893/
+permalink: /kb/222/Q222893/
 ---
 
 ## Q222893: XFOR: Troubleshooting Calendar Connector for Lotus Notes

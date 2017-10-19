@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q138783: PC DirSync: ErrMsg: Error [115] Failure to Read Mail from NULL"
-permalink: kb/138/Q138783/
+title: "Q138783: PC DirSync: ErrMsg: Error &#91;115&#93; Failure to Read Mail from NULL"
+permalink: /kb/138/Q138783/
 ---
 
-## Q138783: PC DirSync: ErrMsg: Error [115] Failure to Read Mail from NULL
+## Q138783: PC DirSync: ErrMsg: Error &#91;115&#93; Failure to Read Mail from NULL
 
 	Article: Q138783
 	Product(s): Microsoft Mail For PC Networks

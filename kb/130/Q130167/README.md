@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130167: Keyboard Shortcuts for Visual FoxPro"
-permalink: kb/130/Q130167/
+permalink: /kb/130/Q130167/
 ---
 
 ## Q130167: Keyboard Shortcuts for Visual FoxPro

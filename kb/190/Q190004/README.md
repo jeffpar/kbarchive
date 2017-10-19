@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190004: Error 403.7 or &quot;Connection to Server Could Not Be Established&quot;"
-permalink: kb/190/Q190004/
+permalink: /kb/190/Q190004/
 ---
 
 ## Q190004: Error 403.7 or &quot;Connection to Server Could Not Be Established&quot;

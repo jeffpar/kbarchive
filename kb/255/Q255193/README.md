@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255193: XWEB: Outlook Web Access First Chance Exception in Cdo.dll"
-permalink: kb/255/Q255193/
+permalink: /kb/255/Q255193/
 ---
 
 ## Q255193: XWEB: Outlook Web Access First Chance Exception in Cdo.dll

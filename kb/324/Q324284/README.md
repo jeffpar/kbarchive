@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q324284: HOW TO: Secure XML Web Services with SSL in Windows .NET Server"
-permalink: kb/324/Q324284/
+permalink: /kb/324/Q324284/
 ---
 
 ## Q324284: HOW TO: Secure XML Web Services with SSL in Windows .NET Server

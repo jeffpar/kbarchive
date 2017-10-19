@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140356: FIX: NMAKE Fails If Paths &amp; File Names Have Special Characters"
-permalink: kb/140/Q140356/
+permalink: /kb/140/Q140356/
 ---
 
 ## Q140356: FIX: NMAKE Fails If Paths &amp; File Names Have Special Characters

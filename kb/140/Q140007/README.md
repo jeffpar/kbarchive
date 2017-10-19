@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140007: WFW Direct Hosting over ODI Drivers Drop Network Connections"
-permalink: kb/140/Q140007/
+permalink: /kb/140/Q140007/
 ---
 
 ## Q140007: WFW Direct Hosting over ODI Drivers Drop Network Connections

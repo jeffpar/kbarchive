@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261039: Motocross Madness 2: Text in Game Flickers or Does Not Appear"
-permalink: kb/261/Q261039/
+permalink: /kb/261/Q261039/
 ---
 
 ## Q261039: Motocross Madness 2: Text in Game Flickers or Does Not Appear

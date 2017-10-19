@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189617: PRB: Infinite Loop if Modal Form Shown in MDIChild's QueryUnload"
-permalink: kb/189/Q189617/
+permalink: /kb/189/Q189617/
 ---
 
 ## Q189617: PRB: Infinite Loop if Modal Form Shown in MDIChild's QueryUnload

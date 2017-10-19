@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216377: XWEB: Exchange Server is Down When Using Address Book Views"
-permalink: kb/216/Q216377/
+permalink: /kb/216/Q216377/
 ---
 
 ## Q216377: XWEB: Exchange Server is Down When Using Address Book Views

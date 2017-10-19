@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252345: XADM: Information Store Stops with Access Violation in FEqCAI"
-permalink: kb/252/Q252345/
+permalink: /kb/252/Q252345/
 ---
 
 ## Q252345: XADM: Information Store Stops with Access Violation in FEqCAI

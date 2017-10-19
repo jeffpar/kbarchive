@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320572: How to Locate Your Version of MSN Explorer"
-permalink: kb/320/Q320572/
+permalink: /kb/320/Q320572/
 ---
 
 ## Q320572: How to Locate Your Version of MSN Explorer

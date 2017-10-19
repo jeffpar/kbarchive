@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q222676: HOWTO: Tell if a VFP COM DLL is Single- or Multi-threaded"
-permalink: kb/222/Q222676/
+permalink: /kb/222/Q222676/
 ---
 
 ## Q222676: HOWTO: Tell if a VFP COM DLL is Single- or Multi-threaded

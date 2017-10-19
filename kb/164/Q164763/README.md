@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164763: CSNW Fails to Connect to Preferred Server"
-permalink: kb/164/Q164763/
+permalink: /kb/164/Q164763/
 ---
 
 ## Q164763: CSNW Fails to Connect to Preferred Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122118: PRB: Editing While Debugging Causes Breakpoint Misalignment"
-permalink: kb/122/Q122118/
+permalink: /kb/122/Q122118/
 ---
 
 ## Q122118: PRB: Editing While Debugging Causes Breakpoint Misalignment

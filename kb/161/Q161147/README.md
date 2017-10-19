@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161147: BUG: ToolTips Disappear when Timer Event Fires"
-permalink: kb/161/Q161147/
+permalink: /kb/161/Q161147/
 ---
 
 ## Q161147: BUG: ToolTips Disappear when Timer Event Fires

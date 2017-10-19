@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148988: TN3270 Excluding IP Addresses from the TN3270E Server"
-permalink: kb/148/Q148988/
+permalink: /kb/148/Q148988/
 ---
 
 ## Q148988: TN3270 Excluding IP Addresses from the TN3270E Server

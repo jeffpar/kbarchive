@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192510: XIMS: Where to Enable NT Challenge Response for POP3"
-permalink: kb/192/Q192510/
+permalink: /kb/192/Q192510/
 ---
 
 ## Q192510: XIMS: Where to Enable NT Challenge Response for POP3

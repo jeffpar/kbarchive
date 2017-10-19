@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175681: Error Message: RealAudio Error 50: Cannot Open Audio Device"
-permalink: kb/175/Q175681/
+permalink: /kb/175/Q175681/
 ---
 
 ## Q175681: Error Message: RealAudio Error 50: Cannot Open Audio Device

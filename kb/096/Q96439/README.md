@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96439: Differences Between LAN Manager 2.2 and 2.2a"
-permalink: kb/096/Q96439/
+permalink: /kb/096/Q96439/
 ---
 
 ## Q96439: Differences Between LAN Manager 2.2 and 2.2a

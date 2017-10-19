@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177256: No Validation When Logging on Locally to a WINS Server"
-permalink: kb/177/Q177256/
+permalink: /kb/177/Q177256/
 ---
 
 ## Q177256: No Validation When Logging on Locally to a WINS Server

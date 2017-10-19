@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82731: Windows 3.1 WIN.COM Command Switches"
-permalink: kb/082/Q82731/
+permalink: /kb/082/Q82731/
 ---
 
 ## Q82731: Windows 3.1 WIN.COM Command Switches

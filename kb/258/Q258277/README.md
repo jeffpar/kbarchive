@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258277: XCLN: How to Disable AutoArchive and Personal Folders"
-permalink: kb/258/Q258277/
+permalink: /kb/258/Q258277/
 ---
 
 ## Q258277: XCLN: How to Disable AutoArchive and Personal Folders

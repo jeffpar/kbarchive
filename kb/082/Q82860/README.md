@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q82860: The WIN.INI [Compatibility] Section"
-permalink: kb/082/Q82860/
+title: "Q82860: The WIN.INI &#91;Compatibility&#93; Section"
+permalink: /kb/082/Q82860/
 ---
 
-## Q82860: The WIN.INI [Compatibility] Section
+## Q82860: The WIN.INI &#91;Compatibility&#93; Section
 
 	Article: Q82860
 	Product(s): Microsoft Windows 3.x Retail Product

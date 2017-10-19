@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136774: PRB: Cannot Use Macro Substitution in Remote Views"
-permalink: kb/136/Q136774/
+permalink: /kb/136/Q136774/
 ---
 
 ## Q136774: PRB: Cannot Use Macro Substitution in Remote Views

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310649: ISAPI DLLs Built w/ MFC Static Library Vulnerable to DoS Attacks"
-permalink: kb/310/Q310649/
+permalink: /kb/310/Q310649/
 ---
 
 ## Q310649: ISAPI DLLs Built w/ MFC Static Library Vulnerable to DoS Attacks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125999: System Log Event ID 7003: The Microsoft Windows Internet Name..."
-permalink: kb/125/Q125999/
+permalink: /kb/125/Q125999/
 ---
 
 ## Q125999: System Log Event ID 7003: The Microsoft Windows Internet Name...

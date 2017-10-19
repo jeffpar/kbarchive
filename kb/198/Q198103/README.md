@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198103: Combat Flight Simulator: Textures in Cockpit Flicker"
-permalink: kb/198/Q198103/
+permalink: /kb/198/Q198103/
 ---
 
 ## Q198103: Combat Flight Simulator: Textures in Cockpit Flicker

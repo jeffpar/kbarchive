@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100659: INFO: Exporting Callback Functions Not Required in Win32 Apps"
-permalink: kb/100/Q100659/
+permalink: /kb/100/Q100659/
 ---
 
 ## Q100659: INFO: Exporting Callback Functions Not Required in Win32 Apps

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148527: Windows 95 Can Share the Windows NT Domain Browse List"
-permalink: kb/148/Q148527/
+permalink: /kb/148/Q148527/
 ---
 
 ## Q148527: Windows 95 Can Share the Windows NT Domain Browse List

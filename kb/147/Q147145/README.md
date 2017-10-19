@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147145: XCLN: Send from Excel/Word Hangs Client Until Message Sent"
-permalink: kb/147/Q147145/
+permalink: /kb/147/Q147145/
 ---
 
 ## Q147145: XCLN: Send from Excel/Word Hangs Client Until Message Sent

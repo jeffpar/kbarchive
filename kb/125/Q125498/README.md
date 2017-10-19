@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125498: Print Manager Network Error with MS Network Client for MS-DOS"
-permalink: kb/125/Q125498/
+permalink: /kb/125/Q125498/
 ---
 
 ## Q125498: Print Manager Network Error with MS Network Client for MS-DOS

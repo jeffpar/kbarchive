@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96685: TCP Extensions for LAN Manager Require TCP/IP"
-permalink: kb/096/Q96685/
+permalink: /kb/096/Q96685/
 ---
 
 ## Q96685: TCP Extensions for LAN Manager Require TCP/IP

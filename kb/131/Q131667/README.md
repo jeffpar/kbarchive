@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131667: Problems Clearing and Adding To Routing Tables Using ROUTE.EXE"
-permalink: kb/131/Q131667/
+permalink: /kb/131/Q131667/
 ---
 
 ## Q131667: Problems Clearing and Adding To Routing Tables Using ROUTE.EXE

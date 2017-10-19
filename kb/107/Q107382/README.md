@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107382: SNA Server Application Exception"
-permalink: kb/107/Q107382/
+permalink: /kb/107/Q107382/
 ---
 
 ## Q107382: SNA Server Application Exception

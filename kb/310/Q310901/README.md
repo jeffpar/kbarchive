@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310901: HOW TO: Use Project Hook to Recycle IIS to Rebuild VFP COM DLL"
-permalink: kb/310/Q310901/
+permalink: /kb/310/Q310901/
 ---
 
 ## Q310901: HOW TO: Use Project Hook to Recycle IIS to Rebuild VFP COM DLL

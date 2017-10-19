@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q24953: Phase Errors May Be Caused By Forward References"
-permalink: kb/024/Q24953/
+permalink: /kb/024/Q24953/
 ---
 
 ## Q24953: Phase Errors May Be Caused By Forward References

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132643: Cannot Adjust MIDI Volume on AWE32 with Creative Mixer"
-permalink: kb/132/Q132643/
+permalink: /kb/132/Q132643/
 ---
 
 ## Q132643: Cannot Adjust MIDI Volume on AWE32 with Creative Mixer

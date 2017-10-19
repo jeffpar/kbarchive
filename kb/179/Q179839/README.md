@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179839: Encarta Virtual Globe: Pointer Jumps to Random Places on Screen"
-permalink: kb/179/Q179839/
+permalink: /kb/179/Q179839/
 ---
 
 ## Q179839: Encarta Virtual Globe: Pointer Jumps to Random Places on Screen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276332: Classic Board Games: Slow Response When Clicking Menu or Toolbar"
-permalink: kb/276/Q276332/
+permalink: /kb/276/Q276332/
 ---
 
 ## Q276332: Classic Board Games: Slow Response When Clicking Menu or Toolbar

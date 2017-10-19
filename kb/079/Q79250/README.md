@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79250: IBM PCJr Incompatible with MS-DOS 5.0 and Later"
-permalink: kb/079/Q79250/
+permalink: /kb/079/Q79250/
 ---
 
 ## Q79250: IBM PCJr Incompatible with MS-DOS 5.0 and Later

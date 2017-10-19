@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68644: DOCERR: Segment and Handle Limits and Protected Mode Windows"
-permalink: kb/068/Q68644/
+permalink: /kb/068/Q68644/
 ---
 
 ## Q68644: DOCERR: Segment and Handle Limits and Protected Mode Windows

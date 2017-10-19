@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177455: WD97: Problems with Document Based on Contemporary Memo Template"
-permalink: kb/177/Q177455/
+permalink: /kb/177/Q177455/
 ---
 
 ## Q177455: WD97: Problems with Document Based on Contemporary Memo Template

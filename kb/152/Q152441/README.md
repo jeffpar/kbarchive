@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152441: XCLN: How to Specify Default Attachments Directory"
-permalink: kb/152/Q152441/
+permalink: /kb/152/Q152441/
 ---
 
 ## Q152441: XCLN: How to Specify Default Attachments Directory

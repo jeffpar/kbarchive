@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192090: BUG: UserControl Property Value Changes Lost When Building EXE"
-permalink: kb/192/Q192090/
+permalink: /kb/192/Q192090/
 ---
 
 ## Q192090: BUG: UserControl Property Value Changes Lost When Building EXE

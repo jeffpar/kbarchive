@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172251: FIX: RDO May Incorrectly Handle Locking Conflicts in Transaction"
-permalink: kb/172/Q172251/
+permalink: /kb/172/Q172251/
 ---
 
 ## Q172251: FIX: RDO May Incorrectly Handle Locking Conflicts in Transaction

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219541: WD97: Indications of Revisions Are Lost After Copy and Paste"
-permalink: kb/219/Q219541/
+permalink: /kb/219/Q219541/
 ---
 
 ## Q219541: WD97: Indications of Revisions Are Lost After Copy and Paste

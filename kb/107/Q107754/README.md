@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107754: FFAPI: Default Template Used with IMPORT.EXE and FFAPI"
-permalink: kb/107/Q107754/
+permalink: /kb/107/Q107754/
 ---
 
 ## Q107754: FFAPI: Default Template Used with IMPORT.EXE and FFAPI

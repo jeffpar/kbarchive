@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118339: PRB: DX1020 on a Call to OUTGTEXT under MS-DOS"
-permalink: kb/118/Q118339/
+permalink: /kb/118/Q118339/
 ---
 
 ## Q118339: PRB: DX1020 on a Call to OUTGTEXT under MS-DOS

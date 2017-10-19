@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216141: HOWTO: Disable IRDP Automatically Using WSH VBScript"
-permalink: kb/216/Q216141/
+permalink: /kb/216/Q216141/
 ---
 
 ## Q216141: HOWTO: Disable IRDP Automatically Using WSH VBScript

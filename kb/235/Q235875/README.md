@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235875: XADM: Japanese Characters Appear as Vertical Bars in Admin.exe"
-permalink: kb/235/Q235875/
+permalink: /kb/235/Q235875/
 ---
 
 ## Q235875: XADM: Japanese Characters Appear as Vertical Bars in Admin.exe

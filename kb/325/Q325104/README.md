@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325104: Flight Simulator: Error Msg: Scenery Library Object Not Found"
-permalink: kb/325/Q325104/
+permalink: /kb/325/Q325104/
 ---
 
 ## Q325104: Flight Simulator: Error Msg: Scenery Library Object Not Found

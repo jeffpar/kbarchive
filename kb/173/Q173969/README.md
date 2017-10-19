@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173969: How to Sign Up for an MSN Account"
-permalink: kb/173/Q173969/
+permalink: /kb/173/Q173969/
 ---
 
 ## Q173969: How to Sign Up for an MSN Account

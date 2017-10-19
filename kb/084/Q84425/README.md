@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84425: Qume Printers Not Printing Documents from Windows"
-permalink: kb/084/Q84425/
+permalink: /kb/084/Q84425/
 ---
 
 ## Q84425: Qume Printers Not Printing Documents from Windows

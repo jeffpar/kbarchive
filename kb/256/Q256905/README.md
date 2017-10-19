@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256905: Resync Request Files Accumulate on Site Server and CAP"
-permalink: kb/256/Q256905/
+permalink: /kb/256/Q256905/
 ---
 
 ## Q256905: Resync Request Files Accumulate on Site Server and CAP

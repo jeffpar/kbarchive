@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139198: How to Run the Tour Outside of Mastering Visual FoxPro Program"
-permalink: kb/139/Q139198/
+permalink: /kb/139/Q139198/
 ---
 
 ## Q139198: How to Run the Tour Outside of Mastering Visual FoxPro Program

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134221: Explorapedia: Little Kids Mode is New"
-permalink: kb/134/Q134221/
+permalink: /kb/134/Q134221/
 ---
 
 ## Q134221: Explorapedia: Little Kids Mode is New

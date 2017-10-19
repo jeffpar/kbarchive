@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217033: FIX: /Og May Cause Incorrect Floating Point Calculation Result"
-permalink: kb/217/Q217033/
+permalink: /kb/217/Q217033/
 ---
 
 ## Q217033: FIX: /Og May Cause Incorrect Floating Point Calculation Result

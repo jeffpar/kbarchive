@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263898: XCON: E. European Extended Char. Lost in T.61 Content Conversion"
-permalink: kb/263/Q263898/
+permalink: /kb/263/Q263898/
 ---
 
 ## Q263898: XCON: E. European Extended Char. Lost in T.61 Content Conversion

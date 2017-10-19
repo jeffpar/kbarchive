@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134453: No Duplex Printing on HP LaserJet 4+/4M+"
-permalink: kb/134/Q134453/
+permalink: /kb/134/Q134453/
 ---
 
 ## Q134453: No Duplex Printing on HP LaserJet 4+/4M+

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142625: NETBIOS Defaults To 16 Sessions on Windows NT"
-permalink: kb/142/Q142625/
+permalink: /kb/142/Q142625/
 ---
 
 ## Q142625: NETBIOS Defaults To 16 Sessions on Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159574: Jammed Hub Blocks Network Connection"
-permalink: kb/159/Q159574/
+permalink: /kb/159/Q159574/
 ---
 
 ## Q159574: Jammed Hub Blocks Network Connection

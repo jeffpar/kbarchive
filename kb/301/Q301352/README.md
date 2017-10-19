@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301352: SMS: Missing Status Messages on Large Distributions"
-permalink: kb/301/Q301352/
+permalink: /kb/301/Q301352/
 ---
 
 ## Q301352: SMS: Missing Status Messages on Large Distributions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194126: XFOR: How to Create an Active File to Use with NNTP"
-permalink: kb/194/Q194126/
+permalink: /kb/194/Q194126/
 ---
 
 ## Q194126: XFOR: How to Create an Active File to Use with NNTP

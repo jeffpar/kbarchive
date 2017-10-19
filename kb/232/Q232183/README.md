@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232183: SMS: How to Export SMS 2.0 Status Messages for Analysis"
-permalink: kb/232/Q232183/
+permalink: /kb/232/Q232183/
 ---
 
 ## Q232183: SMS: How to Export SMS 2.0 Status Messages for Analysis

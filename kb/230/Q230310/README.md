@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230310: IIS 4.0 Online Troubleshooting Information Include with NTOP"
-permalink: kb/230/Q230310/
+permalink: /kb/230/Q230310/
 ---
 
 ## Q230310: IIS 4.0 Online Troubleshooting Information Include with NTOP

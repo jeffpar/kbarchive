@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100108: Overview of FAT, HPFS, and NTFS File Systems"
-permalink: kb/100/Q100108/
+permalink: /kb/100/Q100108/
 ---
 
 ## Q100108: Overview of FAT, HPFS, and NTFS File Systems

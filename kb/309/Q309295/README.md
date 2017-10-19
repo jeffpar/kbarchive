@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309295: Microsoft DB2OLEDB Provider Stops Responding Under Stress"
-permalink: kb/309/Q309295/
+permalink: /kb/309/Q309295/
 ---
 
 ## Q309295: Microsoft DB2OLEDB Provider Stops Responding Under Stress

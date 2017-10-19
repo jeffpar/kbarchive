@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269332: Pocket Streets Err Msg: Pocket Streets 2001 Does Not Support..."
-permalink: kb/269/Q269332/
+permalink: /kb/269/Q269332/
 ---
 
 ## Q269332: Pocket Streets Err Msg: Pocket Streets 2001 Does Not Support...

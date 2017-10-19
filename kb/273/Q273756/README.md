@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273756: NFS Client Write Buffers Not Set When Using UNC Names"
-permalink: kb/273/Q273756/
+permalink: /kb/273/Q273756/
 ---
 
 ## Q273756: NFS Client Write Buffers Not Set When Using UNC Names

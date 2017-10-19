@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q292745: Programming Windows with MFC, Second Edition Comments and Correc"
-permalink: kb/292/Q292745/
+permalink: /kb/292/Q292745/
 ---
 
 ## Q292745: Programming Windows with MFC, Second Edition Comments and Correc

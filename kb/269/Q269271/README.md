@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269271: PRB: High CPU Utilization in IIS When Session State Is Disabled"
-permalink: kb/269/Q269271/
+permalink: /kb/269/Q269271/
 ---
 
 ## Q269271: PRB: High CPU Utilization in IIS When Session State Is Disabled

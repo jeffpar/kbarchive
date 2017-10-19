@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157943: PRB: Setup Wizard Error When Installing VFP 5.0 over VFP 3.0"
-permalink: kb/157/Q157943/
+permalink: /kb/157/Q157943/
 ---
 
 ## Q157943: PRB: Setup Wizard Error When Installing VFP 5.0 over VFP 3.0

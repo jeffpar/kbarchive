@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217079: Recommended Default Gateway Setting for a Multihomed PPTP Server"
-permalink: kb/217/Q217079/
+permalink: /kb/217/Q217079/
 ---
 
 ## Q217079: Recommended Default Gateway Setting for a Multihomed PPTP Server

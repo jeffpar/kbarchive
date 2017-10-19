@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122983: ScanDisk Does Not Check for Lowercase Characters in Filenames"
-permalink: kb/122/Q122983/
+permalink: /kb/122/Q122983/
 ---
 
 ## Q122983: ScanDisk Does Not Check for Lowercase Characters in Filenames

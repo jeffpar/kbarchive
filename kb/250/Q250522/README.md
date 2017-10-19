@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250522: Adding Users to the Directory Administrators List"
-permalink: kb/250/Q250522/
+permalink: /kb/250/Q250522/
 ---
 
 ## Q250522: Adding Users to the Directory Administrators List

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89961: Windows Err Msg: Fatal Error -- Cannot Swap Windows"
-permalink: kb/089/Q89961/
+permalink: /kb/089/Q89961/
 ---
 
 ## Q89961: Windows Err Msg: Fatal Error -- Cannot Swap Windows

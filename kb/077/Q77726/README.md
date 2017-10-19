@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q77726: No Sounds when Starting Windows or Receiving Error Messages"
-permalink: kb/077/Q77726/
+permalink: /kb/077/Q77726/
 ---
 
 ## Q77726: No Sounds when Starting Windows or Receiving Error Messages

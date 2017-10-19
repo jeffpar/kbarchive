@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159204: IoCompletionPort Causes Blue Screen Error"
-permalink: kb/159/Q159204/
+permalink: /kb/159/Q159204/
 ---
 
 ## Q159204: IoCompletionPort Causes Blue Screen Error

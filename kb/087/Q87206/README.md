@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87206: PROFS: Tools Available to Configure Gateway"
-permalink: kb/087/Q87206/
+permalink: /kb/087/Q87206/
 ---
 
 ## Q87206: PROFS: Tools Available to Configure Gateway

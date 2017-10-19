@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234531: OLE Directory May Have Uninitialized Data in the Document File"
-permalink: kb/234/Q234531/
+permalink: /kb/234/Q234531/
 ---
 
 ## Q234531: OLE Directory May Have Uninitialized Data in the Document File

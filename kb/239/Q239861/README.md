@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239861: SNA Server Host Print Service Supports 1,024 3270 Print Sessions"
-permalink: kb/239/Q239861/
+permalink: /kb/239/Q239861/
 ---
 
 ## Q239861: SNA Server Host Print Service Supports 1,024 3270 Print Sessions

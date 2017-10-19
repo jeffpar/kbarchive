@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178710: FS98: Patch Set 1.0 Is Available to Correct Known Issues"
-permalink: kb/178/Q178710/
+permalink: /kb/178/Q178710/
 ---
 
 ## Q178710: FS98: Patch Set 1.0 Is Available to Correct Known Issues

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q71264: Information on SYSTEM.INI [386enh] Entry SystemROMBreakPoint="
-permalink: kb/071/Q71264/
+title: "Q71264: Information on SYSTEM.INI &#91;386enh&#93; Entry SystemROMBreakPoint="
+permalink: /kb/071/Q71264/
 ---
 
-## Q71264: Information on SYSTEM.INI [386enh] Entry SystemROMBreakPoint=
+## Q71264: Information on SYSTEM.INI &#91;386enh&#93; Entry SystemROMBreakPoint=
 
 	Article: Q71264
 	Product(s): Microsoft Windows 95.x Retail Product

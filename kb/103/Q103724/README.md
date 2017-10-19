@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103724: INFO: Visual C++ 32-bit Edition Installs for Single User"
-permalink: kb/103/Q103724/
+permalink: /kb/103/Q103724/
 ---
 
 ## Q103724: INFO: Visual C++ 32-bit Edition Installs for Single User

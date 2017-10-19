@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253712: XFOR: Issues with Attachments Sent over Notes Connector"
-permalink: kb/253/Q253712/
+permalink: /kb/253/Q253712/
 ---
 
 ## Q253712: XFOR: Issues with Attachments Sent over Notes Connector

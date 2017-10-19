@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199701: Encarta 99 Err Msg: A Printer Error Has Occured"
-permalink: kb/199/Q199701/
+permalink: /kb/199/Q199701/
 ---
 
 ## Q199701: Encarta 99 Err Msg: A Printer Error Has Occured

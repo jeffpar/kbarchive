@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125976: How to Assign IPX Network Numbers to Multiple Network Cards"
-permalink: kb/125/Q125976/
+permalink: /kb/125/Q125976/
 ---
 
 ## Q125976: How to Assign IPX Network Numbers to Multiple Network Cards

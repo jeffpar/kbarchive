@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123179: MDI DB2 Gateway Reports Open Server Error"
-permalink: kb/123/Q123179/
+permalink: /kb/123/Q123179/
 ---
 
 ## Q123179: MDI DB2 Gateway Reports Open Server Error

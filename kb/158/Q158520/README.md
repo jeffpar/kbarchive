@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158520: NwSapAgent Service Will Not Start with DiscPort CD-ROM Tower"
-permalink: kb/158/Q158520/
+permalink: /kb/158/Q158520/
 ---
 
 ## Q158520: NwSapAgent Service Will Not Start with DiscPort CD-ROM Tower

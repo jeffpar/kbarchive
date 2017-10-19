@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153527: PRB: PRTINFO() Function Returns an Incorrect Value"
-permalink: kb/153/Q153527/
+permalink: /kb/153/Q153527/
 ---
 
 ## Q153527: PRB: PRTINFO() Function Returns an Incorrect Value

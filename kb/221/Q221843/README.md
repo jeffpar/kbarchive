@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221843: XFOR: Notes Client with Blank End Date Crashes Migration Wizard"
-permalink: kb/221/Q221843/
+permalink: /kb/221/Q221843/
 ---
 
 ## Q221843: XFOR: Notes Client with Blank End Date Crashes Migration Wizard

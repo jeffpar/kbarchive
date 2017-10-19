@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151924: Windows 95 Starts Here: README.DOC Contents"
-permalink: kb/151/Q151924/
+permalink: /kb/151/Q151924/
 ---
 
 ## Q151924: Windows 95 Starts Here: README.DOC Contents

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78303: Intermittent File Corruption Problem"
-permalink: kb/078/Q78303/
+permalink: /kb/078/Q78303/
 ---
 
 ## Q78303: Intermittent File Corruption Problem

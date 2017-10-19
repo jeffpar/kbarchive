@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242877: Age of Empires II: Game Screens or Objects Are Distorted"
-permalink: kb/242/Q242877/
+permalink: /kb/242/Q242877/
 ---
 
 ## Q242877: Age of Empires II: Game Screens or Objects Are Distorted

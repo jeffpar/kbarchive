@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276232: SNARAS Connections Fail with Events 101 and 201"
-permalink: kb/276/Q276232/
+permalink: /kb/276/Q276232/
 ---
 
 ## Q276232: SNARAS Connections Fail with Events 101 and 201

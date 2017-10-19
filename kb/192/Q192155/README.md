@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192155: PRB: Internal Error Occurred While Loading the HTML Template"
-permalink: kb/192/Q192155/
+permalink: /kb/192/Q192155/
 ---
 
 ## Q192155: PRB: Internal Error Occurred While Loading the HTML Template

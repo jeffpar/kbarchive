@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143425: FIX: Cannot Load Binary Data or Files Containing Binary Data"
-permalink: kb/143/Q143425/
+permalink: /kb/143/Q143425/
 ---
 
 ## Q143425: FIX: Cannot Load Binary Data or Files Containing Binary Data

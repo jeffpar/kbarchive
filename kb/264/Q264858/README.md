@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264858: StarLancer: Minimum System Requirements"
-permalink: kb/264/Q264858/
+permalink: /kb/264/Q264858/
 ---
 
 ## Q264858: StarLancer: Minimum System Requirements

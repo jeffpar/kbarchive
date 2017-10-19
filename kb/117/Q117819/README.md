@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117819: Mac Cinemania 94: No Sound or Intermittent Sound When Running"
-permalink: kb/117/Q117819/
+permalink: /kb/117/Q117819/
 ---
 
 ## Q117819: Mac Cinemania 94: No Sound or Intermittent Sound When Running

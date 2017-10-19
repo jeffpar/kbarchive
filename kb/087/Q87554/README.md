@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87554: BUG: CArchiveException for Read-only and Write-only Files"
-permalink: kb/087/Q87554/
+permalink: /kb/087/Q87554/
 ---
 
 ## Q87554: BUG: CArchiveException for Read-only and Write-only Files

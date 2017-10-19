@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141492: ADT2: ADT Setup Wizard Could Not Find MS Access Error Message"
-permalink: kb/141/Q141492/
+permalink: /kb/141/Q141492/
 ---
 
 ## Q141492: ADT2: ADT Setup Wizard Could Not Find MS Access Error Message

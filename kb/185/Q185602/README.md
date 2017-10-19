@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185602: XWEB: Error Message When Saving An Attachment Through OWA"
-permalink: kb/185/Q185602/
+permalink: /kb/185/Q185602/
 ---
 
 ## Q185602: XWEB: Error Message When Saving An Attachment Through OWA

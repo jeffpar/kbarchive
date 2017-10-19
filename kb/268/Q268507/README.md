@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268507: Plus! Game Pack: Error Message When You Start Pandora's Box"
-permalink: kb/268/Q268507/
+permalink: /kb/268/Q268507/
 ---
 
 ## Q268507: Plus! Game Pack: Error Message When You Start Pandora's Box

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191786: BUG: VisData Error &quot;Importing/exporting Table Names with Spaces&quot;"
-permalink: kb/191/Q191786/
+permalink: /kb/191/Q191786/
 ---
 
 ## Q191786: BUG: VisData Error &quot;Importing/exporting Table Names with Spaces&quot;

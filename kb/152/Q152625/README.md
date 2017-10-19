@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152625: Ibmtok.sys Generates Event Message ID:5002 Error"
-permalink: kb/152/Q152625/
+permalink: /kb/152/Q152625/
 ---
 
 ## Q152625: Ibmtok.sys Generates Event Message ID:5002 Error

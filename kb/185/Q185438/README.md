@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185438: How To Determine Session Status Using SLI API."
-permalink: kb/185/Q185438/
+permalink: /kb/185/Q185438/
 ---
 
 ## Q185438: How To Determine Session Status Using SLI API.

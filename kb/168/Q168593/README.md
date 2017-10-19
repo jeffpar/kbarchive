@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168593: PRB: Query Filter Has No Effect When Output to Report"
-permalink: kb/168/Q168593/
+permalink: /kb/168/Q168593/
 ---
 
 ## Q168593: PRB: Query Filter Has No Effect When Output to Report

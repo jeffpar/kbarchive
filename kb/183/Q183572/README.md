@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183572: BUG: ADO Definedsize Values Incorrect for Certain Data Types"
-permalink: kb/183/Q183572/
+permalink: /kb/183/Q183572/
 ---
 
 ## Q183572: BUG: ADO Definedsize Values Incorrect for Certain Data Types

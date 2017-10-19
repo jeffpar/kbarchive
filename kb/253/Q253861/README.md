@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253861: Windows NT Desktop Turns Gray and Icons Disappear"
-permalink: kb/253/Q253861/
+permalink: /kb/253/Q253861/
 ---
 
 ## Q253861: Windows NT Desktop Turns Gray and Icons Disappear

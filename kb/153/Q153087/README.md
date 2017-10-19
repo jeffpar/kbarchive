@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153087: Scheduler Takes a Long Time To Activate Jobs"
-permalink: kb/153/Q153087/
+permalink: /kb/153/Q153087/
 ---
 
 ## Q153087: Scheduler Takes a Long Time To Activate Jobs

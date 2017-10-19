@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152659: XADM: Importing Exchange Accounts from Another Organization"
-permalink: kb/152/Q152659/
+permalink: /kb/152/Q152659/
 ---
 
 ## Q152659: XADM: Importing Exchange Accounts from Another Organization

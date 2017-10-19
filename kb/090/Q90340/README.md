@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90340: Client Not Notified of Remote Printer Problem"
-permalink: kb/090/Q90340/
+permalink: /kb/090/Q90340/
 ---
 
 ## Q90340: Client Not Notified of Remote Printer Problem

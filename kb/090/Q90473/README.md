@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90473: Which Redirector Works with Comm Server in WFWG"
-permalink: kb/090/Q90473/
+permalink: /kb/090/Q90473/
 ---
 
 ## Q90473: Which Redirector Works with Comm Server in WFWG

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76862: JetWare SuperSet+ 425-in-1 Causes UAEs when Printing"
-permalink: kb/076/Q76862/
+permalink: /kb/076/Q76862/
 ---
 
 ## Q76862: JetWare SuperSet+ 425-in-1 Causes UAEs when Printing

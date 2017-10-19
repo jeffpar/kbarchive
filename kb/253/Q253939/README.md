@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253939: DOC: APPEND PROCEDURES Is Not Available at Run Time"
-permalink: kb/253/Q253939/
+permalink: /kb/253/Q253939/
 ---
 
 ## Q253939: DOC: APPEND PROCEDURES Is Not Available at Run Time

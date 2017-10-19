@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137482: LUA Program Receives Host Sign-On Screen Twice and then Hangs"
-permalink: kb/137/Q137482/
+permalink: /kb/137/Q137482/
 ---
 
 ## Q137482: LUA Program Receives Host Sign-On Screen Twice and then Hangs

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157924: Err Msg: &quot;IOS Failed to Initialize&quot; on Boot"
-permalink: kb/157/Q157924/
+permalink: /kb/157/Q157924/
 ---
 
 ## Q157924: Err Msg: &quot;IOS Failed to Initialize&quot; on Boot

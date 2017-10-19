@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152927: XADM: Event ID 136 Created When Importing Duplicate Alias"
-permalink: kb/152/Q152927/
+permalink: /kb/152/Q152927/
 ---
 
 ## Q152927: XADM: Event ID 136 Created When Importing Duplicate Alias

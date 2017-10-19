@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188060: SMS: Long Program Item Description May Cause NAD Corruption"
-permalink: kb/188/Q188060/
+permalink: /kb/188/Q188060/
 ---
 
 ## Q188060: SMS: Long Program Item Description May Cause NAD Corruption

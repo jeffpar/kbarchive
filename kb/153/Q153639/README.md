@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153639: SMS Site Server's Number of SQL Connections Continue to Grow"
-permalink: kb/153/Q153639/
+permalink: /kb/153/Q153639/
 ---
 
 ## Q153639: SMS Site Server's Number of SQL Connections Continue to Grow

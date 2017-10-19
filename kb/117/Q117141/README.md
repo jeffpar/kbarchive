@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117141: Err Msg Installing DeskJet 500 4.0 Driver: COMMCTRL.DLL Is..."
-permalink: kb/117/Q117141/
+permalink: /kb/117/Q117141/
 ---
 
 ## Q117141: Err Msg Installing DeskJet 500 4.0 Driver: COMMCTRL.DLL Is...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175871: FPNW Volume Size Limits to 2 GB for DOS/NetWare Client"
-permalink: kb/175/Q175871/
+permalink: /kb/175/Q175871/
 ---
 
 ## Q175871: FPNW Volume Size Limits to 2 GB for DOS/NetWare Client

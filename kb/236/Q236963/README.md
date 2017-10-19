@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236963: Creating Hardware Profiles for Windows 95/98 and Windows NT 4.0"
-permalink: kb/236/Q236963/
+permalink: /kb/236/Q236963/
 ---
 
 ## Q236963: Creating Hardware Profiles for Windows 95/98 and Windows NT 4.0

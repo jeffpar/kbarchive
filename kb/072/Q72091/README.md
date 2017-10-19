@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72091: MS-DOS 5 Upgrade Contents (3.5-Inch Disk Set)"
-permalink: kb/072/Q72091/
+permalink: /kb/072/Q72091/
 ---
 
 ## Q72091: MS-DOS 5 Upgrade Contents (3.5-Inch Disk Set)

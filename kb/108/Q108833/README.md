@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108833: PC Adm: Err Msg: Notice 170 The Folder Index Below..."
-permalink: kb/108/Q108833/
+permalink: /kb/108/Q108833/
 ---
 
 ## Q108833: PC Adm: Err Msg: Notice 170 The Folder Index Below...

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130472: PRB: Mosaic Setup Can Conflict with Visual C++ Setup"
-permalink: kb/130/Q130472/
+permalink: /kb/130/Q130472/
 ---
 
 ## Q130472: PRB: Mosaic Setup Can Conflict with Visual C++ Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123614: File Manager Err Msg: Menu File Open Error...."
-permalink: kb/123/Q123614/
+permalink: /kb/123/Q123614/
 ---
 
 ## Q123614: File Manager Err Msg: Menu File Open Error....

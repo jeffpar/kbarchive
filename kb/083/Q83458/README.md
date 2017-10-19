@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83458: Windows Versions Supported with Various MS-DOS Versions"
-permalink: kb/083/Q83458/
+permalink: /kb/083/Q83458/
 ---
 
 ## Q83458: Windows Versions Supported with Various MS-DOS Versions

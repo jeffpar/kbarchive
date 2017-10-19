@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156878: FIX: Checking Out .vbp Overwrites Unsaved Changes in Project"
-permalink: kb/156/Q156878/
+permalink: /kb/156/Q156878/
 ---
 
 ## Q156878: FIX: Checking Out .vbp Overwrites Unsaved Changes in Project

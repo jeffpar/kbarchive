@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221657: FIX: C0000005 Error with Specific Access Methods and Debugger"
-permalink: kb/221/Q221657/
+permalink: /kb/221/Q221657/
 ---
 
 ## Q221657: FIX: C0000005 Error with Specific Access Methods and Debugger

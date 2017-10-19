@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174062: Internet Mail Enhancement Patch Needed to Use Outlook 97 w/MSN"
-permalink: kb/174/Q174062/
+permalink: /kb/174/Q174062/
 ---
 
 ## Q174062: Internet Mail Enhancement Patch Needed to Use Outlook 97 w/MSN

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244467: XFOR: GroupWise DR Doesn't Work on Long Orig-Msg-ID"
-permalink: kb/244/Q244467/
+permalink: /kb/244/Q244467/
 ---
 
 ## Q244467: XFOR: GroupWise DR Doesn't Work on Long Orig-Msg-ID

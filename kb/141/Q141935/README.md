@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141935: Scenes: Rainbow Pattern On Tycho's Supernova Picture"
-permalink: kb/141/Q141935/
+permalink: /kb/141/Q141935/
 ---
 
 ## Q141935: Scenes: Rainbow Pattern On Tycho's Supernova Picture

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120824: Word 2.x for Windows Doesn't Load Files from UNC Path w/Novell"
-permalink: kb/120/Q120824/
+permalink: /kb/120/Q120824/
 ---
 
 ## Q120824: Word 2.x for Windows Doesn't Load Files from UNC Path w/Novell

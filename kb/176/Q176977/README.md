@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176977: STOP 0x00000023 FAT_FILE_SYSTEM with Corrupted Floppy Disk"
-permalink: kb/176/Q176977/
+permalink: /kb/176/Q176977/
 ---
 
 ## Q176977: STOP 0x00000023 FAT_FILE_SYSTEM with Corrupted Floppy Disk

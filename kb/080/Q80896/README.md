@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80896: Windows 3.1 Application Compatibility (part 1 of 7)"
-permalink: kb/080/Q80896/
+permalink: /kb/080/Q80896/
 ---
 
 ## Q80896: Windows 3.1 Application Compatibility (part 1 of 7)

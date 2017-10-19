@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99544: PROPER() (Capitalization) Function for FoxBASE+/Mac"
-permalink: kb/099/Q99544/
+permalink: /kb/099/Q99544/
 ---
 
 ## Q99544: PROPER() (Capitalization) Function for FoxBASE+/Mac

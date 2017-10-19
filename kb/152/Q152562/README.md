@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152562: How to Use Windows 95 to Connect Computers on a Network"
-permalink: kb/152/Q152562/
+permalink: /kb/152/Q152562/
 ---
 
 ## Q152562: How to Use Windows 95 to Connect Computers on a Network

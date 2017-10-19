@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155000: Error Message: Sage Cannot Be Removed"
-permalink: kb/155/Q155000/
+permalink: /kb/155/Q155000/
 ---
 
 ## Q155000: Error Message: Sage Cannot Be Removed

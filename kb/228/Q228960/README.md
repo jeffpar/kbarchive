@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228960: Midtown Madness: Cannot Play Game If You Cancel Setup"
-permalink: kb/228/Q228960/
+permalink: /kb/228/Q228960/
 ---
 
 ## Q228960: Midtown Madness: Cannot Play Game If You Cancel Setup

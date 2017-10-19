@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135090: Shared Program Groups are Not Removed During PGC Deinstallation"
-permalink: kb/135/Q135090/
+permalink: /kb/135/Q135090/
 ---
 
 ## Q135090: Shared Program Groups are Not Removed During PGC Deinstallation

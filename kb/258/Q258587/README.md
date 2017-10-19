@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258587: Baseball 2001: Game Minimizes If You Use Context-Sensitive Help"
-permalink: kb/258/Q258587/
+permalink: /kb/258/Q258587/
 ---
 
 ## Q258587: Baseball 2001: Game Minimizes If You Use Context-Sensitive Help

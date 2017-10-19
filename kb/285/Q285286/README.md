@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285286: Cannot Access IIS Metabase Through IIS Admin Objects"
-permalink: kb/285/Q285286/
+permalink: /kb/285/Q285286/
 ---
 
 ## Q285286: Cannot Access IIS Metabase Through IIS Admin Objects

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192293: IIS Stops ODBC Logging after Failing to Communicate with SQL"
-permalink: kb/192/Q192293/
+permalink: /kb/192/Q192293/
 ---
 
 ## Q192293: IIS Stops ODBC Logging after Failing to Communicate with SQL

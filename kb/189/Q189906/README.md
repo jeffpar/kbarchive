@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189906: XCLN: How to Ensure Proper Name Resolution"
-permalink: kb/189/Q189906/
+permalink: /kb/189/Q189906/
 ---
 
 ## Q189906: XCLN: How to Ensure Proper Name Resolution

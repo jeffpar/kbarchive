@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134557: Problems with Finale 2.0 for Windows"
-permalink: kb/134/Q134557/
+permalink: /kb/134/Q134557/
 ---
 
 ## Q134557: Problems with Finale 2.0 for Windows

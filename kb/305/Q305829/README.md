@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305829: XADM: Exchange Server Administrator Program Mailbox Size Wrong"
-permalink: kb/305/Q305829/
+permalink: /kb/305/Q305829/
 ---
 
 ## Q305829: XADM: Exchange Server Administrator Program Mailbox Size Wrong

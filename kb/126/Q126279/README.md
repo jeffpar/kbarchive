@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126279: Dual PCI IDE Controllers Use IRQs 14 and 15"
-permalink: kb/126/Q126279/
+permalink: /kb/126/Q126279/
 ---
 
 ## Q126279: Dual PCI IDE Controllers Use IRQs 14 and 15

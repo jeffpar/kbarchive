@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166487: XCLN: Err Msg: Internet Idioms Could Not Locate the Controls"
-permalink: kb/166/Q166487/
+permalink: /kb/166/Q166487/
 ---
 
 ## Q166487: XCLN: Err Msg: Internet Idioms Could Not Locate the Controls

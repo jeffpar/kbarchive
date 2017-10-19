@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117687: INFO: Misplaced &#95;&#95;declspec Causes Error C2062, C2059, or C4"
-permalink: kb/117/Q117687/
+permalink: /kb/117/Q117687/
 ---
 
 ## Q117687: INFO: Misplaced &#95;&#95;declspec Causes Error C2062, C2059, or C4

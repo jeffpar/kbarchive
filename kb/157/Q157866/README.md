@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157866: Msbatch.inf Parameters: Installing Printers"
-permalink: kb/157/Q157866/
+permalink: /kb/157/Q157866/
 ---
 
 ## Q157866: Msbatch.inf Parameters: Installing Printers

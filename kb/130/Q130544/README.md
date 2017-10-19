@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130544: How to Place Values Containing Commas in a Combo Box"
-permalink: kb/130/Q130544/
+permalink: /kb/130/Q130544/
 ---
 
 ## Q130544: How to Place Values Containing Commas in a Combo Box

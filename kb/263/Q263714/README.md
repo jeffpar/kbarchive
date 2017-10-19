@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263714: XCON: MTA Doesn't Reroute Mail Queued for Internet Mail Service"
-permalink: kb/263/Q263714/
+permalink: /kb/263/Q263714/
 ---
 
 ## Q263714: XCON: MTA Doesn't Reroute Mail Queued for Internet Mail Service

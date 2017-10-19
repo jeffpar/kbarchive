@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196026: PRB: Firing Event in Second Thread Causes IPF or GPF"
-permalink: kb/196/Q196026/
+permalink: /kb/196/Q196026/
 ---
 
 ## Q196026: PRB: Firing Event in Second Thread Causes IPF or GPF

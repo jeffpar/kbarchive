@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200722: FP: Unable to Create CGI-BIN Folder When Publishing Web"
-permalink: kb/200/Q200722/
+permalink: /kb/200/Q200722/
 ---
 
 ## Q200722: FP: Unable to Create CGI-BIN Folder When Publishing Web

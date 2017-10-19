@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186679: FIX: Universal Scrolling Closes Code Completion List Boxes"
-permalink: kb/186/Q186679/
+permalink: /kb/186/Q186679/
 ---
 
 ## Q186679: FIX: Universal Scrolling Closes Code Completion List Boxes

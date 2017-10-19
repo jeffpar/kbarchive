@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78578: DRIVER.SYS Usage and Information"
-permalink: kb/078/Q78578/
+permalink: /kb/078/Q78578/
 ---
 
 ## Q78578: DRIVER.SYS Usage and Information

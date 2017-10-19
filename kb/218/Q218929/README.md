@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218929: FIX: UUID.LIB In VC6 Has Bad Definition for IViewFilter w/OLE DB"
-permalink: kb/218/Q218929/
+permalink: /kb/218/Q218929/
 ---
 
 ## Q218929: FIX: UUID.LIB In VC6 Has Bad Definition for IViewFilter w/OLE DB

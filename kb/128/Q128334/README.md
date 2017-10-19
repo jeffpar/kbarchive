@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128334: PRB: Clipping Doesn't Work Correctly in Print Preview"
-permalink: kb/128/Q128334/
+permalink: /kb/128/Q128334/
 ---
 
 ## Q128334: PRB: Clipping Doesn't Work Correctly in Print Preview

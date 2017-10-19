@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159969: AutoLogon Fails If DontDisplayLastUserName Is Also Enabled"
-permalink: kb/159/Q159969/
+permalink: /kb/159/Q159969/
 ---
 
 ## Q159969: AutoLogon Fails If DontDisplayLastUserName Is Also Enabled

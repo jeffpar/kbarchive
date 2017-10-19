@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138403: ErrMsg 524300: Unable To Execute File on IBM DOS LAN Requester"
-permalink: kb/138/Q138403/
+permalink: /kb/138/Q138403/
 ---
 
 ## Q138403: ErrMsg 524300: Unable To Execute File on IBM DOS LAN Requester

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128774: Time Zones Not Calculated in Time of Arrival"
-permalink: kb/128/Q128774/
+permalink: /kb/128/Q128774/
 ---
 
 ## Q128774: Time Zones Not Calculated in Time of Arrival

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q310970: PRB: Some Intellisense Settings Do Not Persist Between Sessions"
-permalink: kb/310/Q310970/
+permalink: /kb/310/Q310970/
 ---
 
 ## Q310970: PRB: Some Intellisense Settings Do Not Persist Between Sessions

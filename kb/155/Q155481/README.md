@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155481: PPT: Only True Harvard Graphics for MS-DOS File Imported"
-permalink: kb/155/Q155481/
+permalink: /kb/155/Q155481/
 ---
 
 ## Q155481: PPT: Only True Harvard Graphics for MS-DOS File Imported

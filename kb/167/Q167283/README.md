@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167283: WD97: Field Shading Split by Inline Object"
-permalink: kb/167/Q167283/
+permalink: /kb/167/Q167283/
 ---
 
 ## Q167283: WD97: Field Shading Split by Inline Object

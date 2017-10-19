@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156558: Cinemania/Music Central 97: Netscape 2.0 not Starting"
-permalink: kb/156/Q156558/
+permalink: /kb/156/Q156558/
 ---
 
 ## Q156558: Cinemania/Music Central 97: Netscape 2.0 not Starting

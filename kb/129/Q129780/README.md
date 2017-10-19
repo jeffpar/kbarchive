@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129780: PC Adm: ADMIN.EXE Does Not Report a Failure to Update an .XTN"
-permalink: kb/129/Q129780/
+permalink: /kb/129/Q129780/
 ---
 
 ## Q129780: PC Adm: ADMIN.EXE Does Not Report a Failure to Update an .XTN

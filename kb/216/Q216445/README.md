@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216445: How to Control the Delay of the Start Menu Display"
-permalink: kb/216/Q216445/
+permalink: /kb/216/Q216445/
 ---
 
 ## Q216445: How to Control the Delay of the Start Menu Display

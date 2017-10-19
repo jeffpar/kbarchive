@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178166: FIX: GeoFacts Sample Causes Type Mismatch Error with Excel 97"
-permalink: kb/178/Q178166/
+permalink: /kb/178/Q178166/
 ---
 
 ## Q178166: FIX: GeoFacts Sample Causes Type Mismatch Error with Excel 97

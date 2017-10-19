@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q44111: Windows with Hercules and a Secondary Display Connected"
-permalink: kb/044/Q44111/
+permalink: /kb/044/Q44111/
 ---
 
 ## Q44111: Windows with Hercules and a Secondary Display Connected

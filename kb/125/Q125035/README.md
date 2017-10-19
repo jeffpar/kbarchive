@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q125035: Writer: Text Does Not Appear Until Middle of Page"
-permalink: kb/125/Q125035/
+permalink: /kb/125/Q125035/
 ---
 
 ## Q125035: Writer: Text Does Not Appear Until Middle of Page

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155849: Tape Drive Error Message When Cataloging Tape"
-permalink: kb/155/Q155849/
+permalink: /kb/155/Q155849/
 ---
 
 ## Q155849: Tape Drive Error Message When Cataloging Tape

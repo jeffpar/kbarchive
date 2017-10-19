@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123832: Using SNA Server with SDLC Multidrop Leased Lines"
-permalink: kb/123/Q123832/
+permalink: /kb/123/Q123832/
 ---
 
 ## Q123832: Using SNA Server with SDLC Multidrop Leased Lines

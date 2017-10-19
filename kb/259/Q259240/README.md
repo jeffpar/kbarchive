@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259240: XWEB: Configure OWA to Connect to Exchange Through a Firewall"
-permalink: kb/259/Q259240/
+permalink: /kb/259/Q259240/
 ---
 
 ## Q259240: XWEB: Configure OWA to Connect to Exchange Through a Firewall

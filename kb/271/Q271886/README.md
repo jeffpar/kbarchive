@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271886: XADM: How to Use Mbconn  to Generate Active Directory Accounts"
-permalink: kb/271/Q271886/
+permalink: /kb/271/Q271886/
 ---
 
 ## Q271886: XADM: How to Use Mbconn  to Generate Active Directory Accounts

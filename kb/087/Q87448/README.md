@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87448: Windows Err Msg: The LPTx Port Is Currently Assigned..."
-permalink: kb/087/Q87448/
+permalink: /kb/087/Q87448/
 ---
 
 ## Q87448: Windows Err Msg: The LPTx Port Is Currently Assigned...

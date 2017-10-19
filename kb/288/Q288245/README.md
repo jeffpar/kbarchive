@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288245: PRB: Global.asa Does Not Fire from Personal Web Server"
-permalink: kb/288/Q288245/
+permalink: /kb/288/Q288245/
 ---
 
 ## Q288245: PRB: Global.asa Does Not Fire from Personal Web Server

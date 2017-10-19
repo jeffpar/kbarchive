@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293150: FIX: Leak in Repeated Calls to MAPILogonEx"
-permalink: kb/293/Q293150/
+permalink: /kb/293/Q293150/
 ---
 
 ## Q293150: FIX: Leak in Repeated Calls to MAPILogonEx

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173458: XCON: Event ID 9406 Occurs When Memory or Free Disk Space is Low"
-permalink: kb/173/Q173458/
+permalink: /kb/173/Q173458/
 ---
 
 ## Q173458: XCON: Event ID 9406 Occurs When Memory or Free Disk Space is Low

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173539: Routing and Remote Access Event ID 20063"
-permalink: kb/173/Q173539/
+permalink: /kb/173/Q173539/
 ---
 
 ## Q173539: Routing and Remote Access Event ID 20063

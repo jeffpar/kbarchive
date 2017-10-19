@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126846: Golf 2.0: Some Links Courses Not Recognized"
-permalink: kb/126/Q126846/
+permalink: /kb/126/Q126846/
 ---
 
 ## Q126846: Golf 2.0: Some Links Courses Not Recognized

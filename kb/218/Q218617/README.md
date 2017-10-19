@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218617: How to Troubleshoot CD-ROM or DVD-ROM Read Issues"
-permalink: kb/218/Q218617/
+permalink: /kb/218/Q218617/
 ---
 
 ## Q218617: How to Troubleshoot CD-ROM or DVD-ROM Read Issues

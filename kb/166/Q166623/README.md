@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166623: SNA Server Rejects FMH-5 Attach Intended for TP on NT Client"
-permalink: kb/166/Q166623/
+permalink: /kb/166/Q166623/
 ---
 
 ## Q166623: SNA Server Rejects FMH-5 Attach Intended for TP on NT Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86356: README.TXT: Microsoft Windows &amp; MS-DOS 5 Upgrade"
-permalink: kb/086/Q86356/
+permalink: /kb/086/Q86356/
 ---
 
 ## Q86356: README.TXT: Microsoft Windows &amp; MS-DOS 5 Upgrade

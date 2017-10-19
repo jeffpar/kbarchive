@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122917: Golf 2.0 Err Msg: Win32s - Error. Improper Installation..."
-permalink: kb/122/Q122917/
+permalink: /kb/122/Q122917/
 ---
 
 ## Q122917: Golf 2.0 Err Msg: Win32s - Error. Improper Installation...

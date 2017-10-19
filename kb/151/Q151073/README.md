@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151073: Frequently Asked Questions for Fortran PowerStation 32"
-permalink: kb/151/Q151073/
+permalink: /kb/151/Q151073/
 ---
 
 ## Q151073: Frequently Asked Questions for Fortran PowerStation 32

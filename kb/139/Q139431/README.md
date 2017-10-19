@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139431: Spock.mpd SCSI Miniport Driver Supports Only IRQ 14"
-permalink: kb/139/Q139431/
+permalink: /kb/139/Q139431/
 ---
 
 ## Q139431: Spock.mpd SCSI Miniport Driver Supports Only IRQ 14

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243985: FS2000: Introductory Video Is Played but Program Does Not Start"
-permalink: kb/243/Q243985/
+permalink: /kb/243/Q243985/
 ---
 
 ## Q243985: FS2000: Introductory Video Is Played but Program Does Not Start

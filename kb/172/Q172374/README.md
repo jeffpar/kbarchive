@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172374: INFO: Visual Basic 4.0 Book List"
-permalink: kb/172/Q172374/
+permalink: /kb/172/Q172374/
 ---
 
 ## Q172374: INFO: Visual Basic 4.0 Book List

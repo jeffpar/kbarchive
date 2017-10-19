@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q309007: HOW TO: Create an FTP Site in Internet Information Manager"
-permalink: kb/309/Q309007/
+permalink: /kb/309/Q309007/
 ---
 
 ## Q309007: HOW TO: Create an FTP Site in Internet Information Manager

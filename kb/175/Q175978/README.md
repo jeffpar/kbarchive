@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175978: XFOR: List of Reserved Microsoft Mail Network Names"
-permalink: kb/175/Q175978/
+permalink: /kb/175/Q175978/
 ---
 
 ## Q175978: XFOR: List of Reserved Microsoft Mail Network Names

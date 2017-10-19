@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104135: PC Forms: Using Grid and OLE Client Controls in Routing Forms"
-permalink: kb/104/Q104135/
+permalink: /kb/104/Q104135/
 ---
 
 ## Q104135: PC Forms: Using Grid and OLE Client Controls in Routing Forms

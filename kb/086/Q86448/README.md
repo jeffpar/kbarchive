@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86448: WRK Graphics Viewer and 256-Color Bitmaps (BMPs)"
-permalink: kb/086/Q86448/
+permalink: /kb/086/Q86448/
 ---
 
 ## Q86448: WRK Graphics Viewer and 256-Color Bitmaps (BMPs)

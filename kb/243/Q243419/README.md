@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243419: Setpass Does Not Update the NetWare Password with SYSKEY"
-permalink: kb/243/Q243419/
+permalink: /kb/243/Q243419/
 ---
 
 ## Q243419: Setpass Does Not Update the NetWare Password with SYSKEY

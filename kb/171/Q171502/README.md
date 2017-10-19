@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171502: FIX: Crash with Watch on UserControl When Stop is Encountered"
-permalink: kb/171/Q171502/
+permalink: /kb/171/Q171502/
 ---
 
 ## Q171502: FIX: Crash with Watch on UserControl When Stop is Encountered

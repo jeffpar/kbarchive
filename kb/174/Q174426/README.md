@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174426: PRB: Date in Text Box Displays Year With Four Digits"
-permalink: kb/174/Q174426/
+permalink: /kb/174/Q174426/
 ---
 
 ## Q174426: PRB: Date in Text Box Displays Year With Four Digits

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184449: Microsoft Sourcebook for the Help Desk, 2nd. Ed. Comments &amp; Corr"
-permalink: kb/184/Q184449/
+permalink: /kb/184/Q184449/
 ---
 
 ## Q184449: Microsoft Sourcebook for the Help Desk, 2nd. Ed. Comments &amp; Corr

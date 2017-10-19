@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264425: XFOR: Finding Detailed Instructions for Exchange SNADS Connector"
-permalink: kb/264/Q264425/
+permalink: /kb/264/Q264425/
 ---
 
 ## Q264425: XFOR: Finding Detailed Instructions for Exchange SNADS Connector

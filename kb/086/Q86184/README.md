@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86184: PC Win: Problems Attaching MSMAIL.EXE in Foreign Windows"
-permalink: kb/086/Q86184/
+permalink: /kb/086/Q86184/
 ---
 
 ## Q86184: PC Win: Problems Attaching MSMAIL.EXE in Foreign Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90562: Using OpenDriver() to Communicate Data to Installable Drv"
-permalink: kb/090/Q90562/
+permalink: /kb/090/Q90562/
 ---
 
 ## Q90562: Using OpenDriver() to Communicate Data to Installable Drv

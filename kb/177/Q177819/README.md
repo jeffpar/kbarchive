@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177819: Computer Hangs Starting Encarta Using iNFRA1800 CD-ROM Drive"
-permalink: kb/177/Q177819/
+permalink: /kb/177/Q177819/
 ---
 
 ## Q177819: Computer Hangs Starting Encarta Using iNFRA1800 CD-ROM Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184537: Very Large Files Cause Performance Problems"
-permalink: kb/184/Q184537/
+permalink: /kb/184/Q184537/
 ---
 
 ## Q184537: Very Large Files Cause Performance Problems

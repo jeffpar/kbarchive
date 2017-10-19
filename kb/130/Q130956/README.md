@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130956: PRB: MFC DB Classes Don't Update NULL Field Values to Non-NULL"
-permalink: kb/130/Q130956/
+permalink: /kb/130/Q130956/
 ---
 
 ## Q130956: PRB: MFC DB Classes Don't Update NULL Field Values to Non-NULL

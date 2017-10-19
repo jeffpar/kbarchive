@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67140: Mouse Systems Optical Mouse III Driver and Windows 3.0"
-permalink: kb/067/Q67140/
+permalink: /kb/067/Q67140/
 ---
 
 ## Q67140: Mouse Systems Optical Mouse III Driver and Windows 3.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135956: Check Box Updated Slowly When Upgrading with DriveSpace 3"
-permalink: kb/135/Q135956/
+permalink: /kb/135/Q135956/
 ---
 
 ## Q135956: Check Box Updated Slowly When Upgrading with DriveSpace 3

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258700: Error Message Attempting to Mount SFU 2.0 NFS Shared File System"
-permalink: kb/258/Q258700/
+permalink: /kb/258/Q258700/
 ---
 
 ## Q258700: Error Message Attempting to Mount SFU 2.0 NFS Shared File System

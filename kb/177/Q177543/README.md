@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177543: XFOR: Internet Mail Service Provides Maximum Logging at Medium"
-permalink: kb/177/Q177543/
+permalink: /kb/177/Q177543/
 ---
 
 ## Q177543: XFOR: Internet Mail Service Provides Maximum Logging at Medium

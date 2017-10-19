@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117805: PC DynAd: DynaAdmin Does Not Recognize 50 Line Screen Mode"
-permalink: kb/117/Q117805/
+permalink: /kb/117/Q117805/
 ---
 
 ## Q117805: PC DynAd: DynaAdmin Does Not Recognize 50 Line Screen Mode

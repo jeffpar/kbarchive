@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q270744: ELL: User Information Is Not Saved When Uninstalling Software"
-permalink: kb/270/Q270744/
+permalink: /kb/270/Q270744/
 ---
 
 ## Q270744: ELL: User Information Is Not Saved When Uninstalling Software

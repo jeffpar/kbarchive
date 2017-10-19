@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79989: DPMI0301.exe Simulates Real Mode Interrupts"
-permalink: kb/079/Q79989/
+permalink: /kb/079/Q79989/
 ---
 
 ## Q79989: DPMI0301.exe Simulates Real Mode Interrupts

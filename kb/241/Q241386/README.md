@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241386: &quot;Can Not Find Snmpapi.dll&quot; Adding Counter to Performance Monitor"
-permalink: kb/241/Q241386/
+permalink: /kb/241/Q241386/
 ---
 
 ## Q241386: &quot;Can Not Find Snmpapi.dll&quot; Adding Counter to Performance Monitor

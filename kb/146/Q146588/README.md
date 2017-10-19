@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146588: XCON: Content Not Supported NDR When Using X.400 Connector"
-permalink: kb/146/Q146588/
+permalink: /kb/146/Q146588/
 ---
 
 ## Q146588: XCON: Content Not Supported NDR When Using X.400 Connector

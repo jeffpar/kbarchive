@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168230: WinNT Err Msg: Cannot Find the Working Folder for This Program"
-permalink: kb/168/Q168230/
+permalink: /kb/168/Q168230/
 ---
 
 ## Q168230: WinNT Err Msg: Cannot Find the Working Folder for This Program

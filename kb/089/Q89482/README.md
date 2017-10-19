@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89482: NET START WORKSTATION Command AutoStart= Switch in WFWG"
-permalink: kb/089/Q89482/
+permalink: /kb/089/Q89482/
 ---
 
 ## Q89482: NET START WORKSTATION Command AutoStart= Switch in WFWG

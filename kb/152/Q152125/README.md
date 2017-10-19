@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152125: Underscore Treated as Wildcard in Address Book Find Feature"
-permalink: kb/152/Q152125/
+permalink: /kb/152/Q152125/
 ---
 
 ## Q152125: Underscore Treated as Wildcard in Address Book Find Feature

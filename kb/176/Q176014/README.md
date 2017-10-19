@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176014: 8.3 Short File Names not Retained after Tape Restore"
-permalink: kb/176/Q176014/
+permalink: /kb/176/Q176014/
 ---
 
 ## Q176014: 8.3 Short File Names not Retained after Tape Restore

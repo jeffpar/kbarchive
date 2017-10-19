@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137242: After Dark 3.0 May GP Fault in Windows NT"
-permalink: kb/137/Q137242/
+permalink: /kb/137/Q137242/
 ---
 
 ## Q137242: After Dark 3.0 May GP Fault in Windows NT

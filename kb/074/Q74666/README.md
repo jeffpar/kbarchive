@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74666: BUG: A2154 If Structure Member in Control-Flow Directive"
-permalink: kb/074/Q74666/
+permalink: /kb/074/Q74666/
 ---
 
 ## Q74666: BUG: A2154 If Structure Member in Control-Flow Directive

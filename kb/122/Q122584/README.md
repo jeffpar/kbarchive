@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122584: Intel TokenExpress Driver Settings"
-permalink: kb/122/Q122584/
+permalink: /kb/122/Q122584/
 ---
 
 ## Q122584: Intel TokenExpress Driver Settings

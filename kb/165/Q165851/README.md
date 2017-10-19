@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165851: Support SNA Server 3270 Applet Keyboard Type-Ahead"
-permalink: kb/165/Q165851/
+permalink: /kb/165/Q165851/
 ---
 
 ## Q165851: Support SNA Server 3270 Applet Keyboard Type-Ahead

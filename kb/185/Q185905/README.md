@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185905: XADM: Cannot Display Message with Content-Type Entry That Wraps"
-permalink: kb/185/Q185905/
+permalink: /kb/185/Q185905/
 ---
 
 ## Q185905: XADM: Cannot Display Message with Content-Type Entry That Wraps

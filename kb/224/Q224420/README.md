@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224420: Description of the Windows Critical Update Notification Utility"
-permalink: kb/224/Q224420/
+permalink: /kb/224/Q224420/
 ---
 
 ## Q224420: Description of the Windows Critical Update Notification Utility

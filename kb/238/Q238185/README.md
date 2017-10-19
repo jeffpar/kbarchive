@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238185: Unnecessary Security Failure Audit (Event 577)"
-permalink: kb/238/Q238185/
+permalink: /kb/238/Q238185/
 ---
 
 ## Q238185: Unnecessary Security Failure Audit (Event 577)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191614: Able to Commit More Memory Than Is Available"
-permalink: kb/191/Q191614/
+permalink: /kb/191/Q191614/
 ---
 
 ## Q191614: Able to Commit More Memory Than Is Available

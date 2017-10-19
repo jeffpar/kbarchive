@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151972: XADM: Message Limits Incorrectly Calculated After 5.0 Upgrade"
-permalink: kb/151/Q151972/
+permalink: /kb/151/Q151972/
 ---
 
 ## Q151972: XADM: Message Limits Incorrectly Calculated After 5.0 Upgrade

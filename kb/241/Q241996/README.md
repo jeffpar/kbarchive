@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241996: Update Item in MMC May Cause Excessive Screen Flicker"
-permalink: kb/241/Q241996/
+permalink: /kb/241/Q241996/
 ---
 
 ## Q241996: Update Item in MMC May Cause Excessive Screen Flicker

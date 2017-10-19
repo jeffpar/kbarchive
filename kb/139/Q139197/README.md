@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139197: BUG: Screen Does Not Repaint in Windows 95"
-permalink: kb/139/Q139197/
+permalink: /kb/139/Q139197/
 ---
 
 ## Q139197: BUG: Screen Does Not Repaint in Windows 95

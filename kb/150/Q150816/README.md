@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150816: XCLN: Client Installation Point Doc Err in Installation Guide"
-permalink: kb/150/Q150816/
+permalink: /kb/150/Q150816/
 ---
 
 ## Q150816: XCLN: Client Installation Point Doc Err in Installation Guide

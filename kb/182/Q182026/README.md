@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182026: XFOR: Chat Channel Created w/Double-byte Lead Character Fails"
-permalink: kb/182/Q182026/
+permalink: /kb/182/Q182026/
 ---
 
 ## Q182026: XFOR: Chat Channel Created w/Double-byte Lead Character Fails

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q103334: PC Forms: 1.0 Forms Designer Disk 1 [3.5, 1.44 MB]"
-permalink: kb/103/Q103334/
+title: "Q103334: PC Forms: 1.0 Forms Designer Disk 1 &#91;3.5, 1.44 MB&#93;"
+permalink: /kb/103/Q103334/
 ---
 
-## Q103334: PC Forms: 1.0 Forms Designer Disk 1 [3.5, 1.44 MB]
+## Q103334: PC Forms: 1.0 Forms Designer Disk 1 &#91;3.5, 1.44 MB&#93;
 
 	Article: Q103334
 	Product(s): Microsoft Mail For PC Networks

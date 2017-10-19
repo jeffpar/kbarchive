@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230742: PRB: Text Missing when ActiveX Control Is Based on Rich Edit 2.0"
-permalink: kb/230/Q230742/
+permalink: /kb/230/Q230742/
 ---
 
 ## Q230742: PRB: Text Missing when ActiveX Control Is Based on Rich Edit 2.0

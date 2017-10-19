@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106231: Windows Sound System 2.0 Disk Dir List (3.5 inch, 1.44 MB)"
-permalink: kb/106/Q106231/
+permalink: /kb/106/Q106231/
 ---
 
 ## Q106231: Windows Sound System 2.0 Disk Dir List (3.5 inch, 1.44 MB)

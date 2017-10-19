@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197129: INFO: Wang Image Control Limited to 18k Pixels in Ea. Dimension"
-permalink: kb/197/Q197129/
+permalink: /kb/197/Q197129/
 ---
 
 ## Q197129: INFO: Wang Image Control Limited to 18k Pixels in Ea. Dimension

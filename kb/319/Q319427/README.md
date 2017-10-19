@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319427: SMS: File Time Stamp Is Changed During Software Distribution"
-permalink: kb/319/Q319427/
+permalink: /kb/319/Q319427/
 ---
 
 ## Q319427: SMS: File Time Stamp Is Changed During Software Distribution

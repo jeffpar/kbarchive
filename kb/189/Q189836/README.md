@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189836: Outlook Web Access Error: HTTP/1.0 403 Access Forbidden"
-permalink: kb/189/Q189836/
+permalink: /kb/189/Q189836/
 ---
 
 ## Q189836: Outlook Web Access Error: HTTP/1.0 403 Access Forbidden

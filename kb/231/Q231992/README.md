@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231992: XFOR: Enable/Disable Mtg Request Support w/PROFS/Notes Connector"
-permalink: kb/231/Q231992/
+permalink: /kb/231/Q231992/
 ---
 
 ## Q231992: XFOR: Enable/Disable Mtg Request Support w/PROFS/Notes Connector

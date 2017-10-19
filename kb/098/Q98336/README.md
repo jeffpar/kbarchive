@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98336: PC Win: 3.0b Windows Client Disk 2 [3.5, 720K; 5.25, 1.2 MB]"
-permalink: kb/098/Q98336/
+title: "Q98336: PC Win: 3.0b Windows Client Disk 2 &#91;3.5, 720K; 5.25, 1.2 MB&#93;"
+permalink: /kb/098/Q98336/
 ---
 
-## Q98336: PC Win: 3.0b Windows Client Disk 2 [3.5, 720K; 5.25, 1.2 MB]
+## Q98336: PC Win: 3.0b Windows Client Disk 2 &#91;3.5, 720K; 5.25, 1.2 MB&#93;
 
 	Article: Q98336
 	Product(s): Microsoft Mail For PC Networks

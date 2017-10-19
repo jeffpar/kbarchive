@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195269: Visual Basic 6 Step by Step Comments and Corrections"
-permalink: kb/195/Q195269/
+permalink: /kb/195/Q195269/
 ---
 
 ## Q195269: Visual Basic 6 Step by Step Comments and Corrections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249668: XADM: Microsoft Exchange Unavailable in Windows 2000 Backup"
-permalink: kb/249/Q249668/
+permalink: /kb/249/Q249668/
 ---
 
 ## Q249668: XADM: Microsoft Exchange Unavailable in Windows 2000 Backup

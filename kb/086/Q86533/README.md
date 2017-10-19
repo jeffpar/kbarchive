@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86533: Panasonic EPL-8541 and EPL-8543 Printers and Windows"
-permalink: kb/086/Q86533/
+permalink: /kb/086/Q86533/
 ---
 
 ## Q86533: Panasonic EPL-8541 and EPL-8543 Printers and Windows

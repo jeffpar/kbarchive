@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262230: Microsoft Installer Programs and Systems Management Server 2.0"
-permalink: kb/262/Q262230/
+permalink: /kb/262/Q262230/
 ---
 
 ## Q262230: Microsoft Installer Programs and Systems Management Server 2.0

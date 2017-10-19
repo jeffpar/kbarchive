@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258924: Performance Problems Can Occur When a Child Site Reconnects"
-permalink: kb/258/Q258924/
+permalink: /kb/258/Q258924/
 ---
 
 ## Q258924: Performance Problems Can Occur When a Child Site Reconnects

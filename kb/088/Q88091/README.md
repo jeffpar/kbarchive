@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88091: Windows Only Starts from Windows Directory"
-permalink: kb/088/Q88091/
+permalink: /kb/088/Q88091/
 ---
 
 ## Q88091: Windows Only Starts from Windows Directory

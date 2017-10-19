@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61770: Hewlett-Packard Great Start Font Cartridge Description"
-permalink: kb/061/Q61770/
+permalink: /kb/061/Q61770/
 ---
 
 ## Q61770: Hewlett-Packard Great Start Font Cartridge Description

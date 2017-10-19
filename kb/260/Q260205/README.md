@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260205: HTTP Request with Large Number of Dots/Slashes Causes High CPU"
-permalink: kb/260/Q260205/
+permalink: /kb/260/Q260205/
 ---
 
 ## Q260205: HTTP Request with Large Number of Dots/Slashes Causes High CPU

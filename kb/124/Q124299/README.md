@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124299: SFM Does Not Detect Xircom PCMCIA Ethernet Adapter"
-permalink: kb/124/Q124299/
+permalink: /kb/124/Q124299/
 ---
 
 ## Q124299: SFM Does Not Detect Xircom PCMCIA Ethernet Adapter

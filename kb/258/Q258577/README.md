@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258577: MSB Solar: Sounds and Speech Are Cut Off Abruptly"
-permalink: kb/258/Q258577/
+permalink: /kb/258/Q258577/
 ---
 
 ## Q258577: MSB Solar: Sounds and Speech Are Cut Off Abruptly

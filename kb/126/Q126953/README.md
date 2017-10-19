@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126953: How FoxPro Passes Parameters to a Form"
-permalink: kb/126/Q126953/
+permalink: /kb/126/Q126953/
 ---
 
 ## Q126953: How FoxPro Passes Parameters to a Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160918: FIX: SAVE SCREEN and TYPE() Cause Visual FoxPro to Terminate"
-permalink: kb/160/Q160918/
+permalink: /kb/160/Q160918/
 ---
 
 ## Q160918: FIX: SAVE SCREEN and TYPE() Cause Visual FoxPro to Terminate

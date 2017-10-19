@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231179: FP98SE: Heap Corruption, Memory Leak Occurs Performing Queries"
-permalink: kb/231/Q231179/
+permalink: /kb/231/Q231179/
 ---
 
 ## Q231179: FP98SE: Heap Corruption, Memory Leak Occurs Performing Queries

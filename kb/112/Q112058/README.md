@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112058: BUG: Visual Workbench Does Not Allow Stack Size Over 32K"
-permalink: kb/112/Q112058/
+permalink: /kb/112/Q112058/
 ---
 
 ## Q112058: BUG: Visual Workbench Does Not Allow Stack Size Over 32K

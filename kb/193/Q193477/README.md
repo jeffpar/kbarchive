@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193477: FIX: Developer Studio Exits When Creating a Derived Class"
-permalink: kb/193/Q193477/
+permalink: /kb/193/Q193477/
 ---
 
 ## Q193477: FIX: Developer Studio Exits When Creating a Derived Class

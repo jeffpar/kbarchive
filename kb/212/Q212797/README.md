@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q212797: SMSINST: Get Temporary Filename Script Does Not Return Full Path"
-permalink: kb/212/Q212797/
+permalink: /kb/212/Q212797/
 ---
 
 ## Q212797: SMSINST: Get Temporary Filename Script Does Not Return Full Path

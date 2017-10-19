@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123767: PRB: Help Compiler Error 5059 - Not Enough Memory"
-permalink: kb/123/Q123767/
+permalink: /kb/123/Q123767/
 ---
 
 ## Q123767: PRB: Help Compiler Error 5059 - Not Enough Memory

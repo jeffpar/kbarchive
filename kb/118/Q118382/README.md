@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118382: Making and Running AREXEC/AREXECD Samples"
-permalink: kb/118/Q118382/
+permalink: /kb/118/Q118382/
 ---
 
 ## Q118382: Making and Running AREXEC/AREXECD Samples

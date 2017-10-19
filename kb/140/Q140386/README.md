@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140386: Using TEMP Directory on Server Causes Sharing Violation"
-permalink: kb/140/Q140386/
+permalink: /kb/140/Q140386/
 ---
 
 ## Q140386: Using TEMP Directory on Server Causes Sharing Violation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170922: How PCI Devices Are Detected and Why They May Fail"
-permalink: kb/170/Q170922/
+permalink: /kb/170/Q170922/
 ---
 
 ## Q170922: How PCI Devices Are Detected and Why They May Fail

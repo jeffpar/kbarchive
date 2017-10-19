@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246924: FP: Error Message: The Destination File System Ignores Case"
-permalink: kb/246/Q246924/
+permalink: /kb/246/Q246924/
 ---
 
 ## Q246924: FP: Error Message: The Destination File System Ignores Case

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148305: PRB: AfxFindResourceHandle Fails w/ Icons, Cursors, &amp; Strings"
-permalink: kb/148/Q148305/
+permalink: /kb/148/Q148305/
 ---
 
 ## Q148305: PRB: AfxFindResourceHandle Fails w/ Icons, Cursors, &amp; Strings

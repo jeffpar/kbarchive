@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121885: Mac Arcade: Centipede Stops Responding When You Start Game"
-permalink: kb/121/Q121885/
+permalink: /kb/121/Q121885/
 ---
 
 ## Q121885: Mac Arcade: Centipede Stops Responding When You Start Game

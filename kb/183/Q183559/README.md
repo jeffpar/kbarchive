@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183559: IDBSchemaRowset::GetSchemas Returns No Information"
-permalink: kb/183/Q183559/
+permalink: /kb/183/Q183559/
 ---
 
 ## Q183559: IDBSchemaRowset::GetSchemas Returns No Information

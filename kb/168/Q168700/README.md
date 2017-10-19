@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168700: Error Message Uninstalling Service Pack 3"
-permalink: kb/168/Q168700/
+permalink: /kb/168/Q168700/
 ---
 
 ## Q168700: Error Message Uninstalling Service Pack 3

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152270: CreateProcessAsUser() Fails After Applying Service Pack 3"
-permalink: kb/152/Q152270/
+permalink: /kb/152/Q152270/
 ---
 
 ## Q152270: CreateProcessAsUser() Fails After Applying Service Pack 3

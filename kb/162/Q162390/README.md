@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162390: &quot;Fatal Exception 0D&quot; Error Message Installing Program"
-permalink: kb/162/Q162390/
+permalink: /kb/162/Q162390/
 ---
 
 ## Q162390: &quot;Fatal Exception 0D&quot; Error Message Installing Program

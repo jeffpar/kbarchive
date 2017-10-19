@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111880: AWFAX Hangs When Faxing a Microsoft Works for Windows Document"
-permalink: kb/111/Q111880/
+permalink: /kb/111/Q111880/
 ---
 
 ## Q111880: AWFAX Hangs When Faxing a Microsoft Works for Windows Document

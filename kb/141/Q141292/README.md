@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141292: How to Set Up a Fax Server or Fax Client with Microsoft Fax"
-permalink: kb/141/Q141292/
+permalink: /kb/141/Q141292/
 ---
 
 ## Q141292: How to Set Up a Fax Server or Fax Client with Microsoft Fax

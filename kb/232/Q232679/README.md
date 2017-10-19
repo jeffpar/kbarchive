@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232679: Err Msg: &quot;No Domain Server&quot; with Windows 95/98 DUN Client"
-permalink: kb/232/Q232679/
+permalink: /kb/232/Q232679/
 ---
 
 ## Q232679: Err Msg: &quot;No Domain Server&quot; with Windows 95/98 DUN Client

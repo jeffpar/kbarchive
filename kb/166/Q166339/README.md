@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166339: WD97: Opening a JPEG File in Photo Editor Causes an Error"
-permalink: kb/166/Q166339/
+permalink: /kb/166/Q166339/
 ---
 
 ## Q166339: WD97: Opening a JPEG File in Photo Editor Causes an Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185076: XGEN: How to Obtain Exchange Server 4.0 Service Pack 5"
-permalink: kb/185/Q185076/
+permalink: /kb/185/Q185076/
 ---
 
 ## Q185076: XGEN: How to Obtain Exchange Server 4.0 Service Pack 5

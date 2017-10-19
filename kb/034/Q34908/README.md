@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q34908: Determining Physical Drive Numbers"
-permalink: kb/034/Q34908/
+permalink: /kb/034/Q34908/
 ---
 
 ## Q34908: Determining Physical Drive Numbers

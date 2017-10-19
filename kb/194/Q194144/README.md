@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194144: MHS: Messages with Addresses on Multiple Lines Not Delivered"
-permalink: kb/194/Q194144/
+permalink: /kb/194/Q194144/
 ---
 
 ## Q194144: MHS: Messages with Addresses on Multiple Lines Not Delivered

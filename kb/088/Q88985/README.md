@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88985: Converting a Numeric Value to a String"
-permalink: kb/088/Q88985/
+permalink: /kb/088/Q88985/
 ---
 
 ## Q88985: Converting a Numeric Value to a String

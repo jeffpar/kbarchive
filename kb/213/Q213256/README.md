@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q213256: SMS: Data Summarization Does Not Account For Leap Years"
-permalink: kb/213/Q213256/
+permalink: /kb/213/Q213256/
 ---
 
 ## Q213256: SMS: Data Summarization Does Not Account For Leap Years

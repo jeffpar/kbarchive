@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187192: ASP Pages &amp; Windows NT 4.0 Option Pack Documentation Do Not Work"
-permalink: kb/187/Q187192/
+permalink: /kb/187/Q187192/
 ---
 
 ## Q187192: ASP Pages &amp; Windows NT 4.0 Option Pack Documentation Do Not Work

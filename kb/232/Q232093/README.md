@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232093: BUG: Objects Disappear After Being Assigned to Custom Properties"
-permalink: kb/232/Q232093/
+permalink: /kb/232/Q232093/
 ---
 
 ## Q232093: BUG: Objects Disappear After Being Assigned to Custom Properties

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84787: Mac Fax: Fax Gateway Cover Pages Not Sent"
-permalink: kb/084/Q84787/
+permalink: /kb/084/Q84787/
 ---
 
 ## Q84787: Mac Fax: Fax Gateway Cover Pages Not Sent

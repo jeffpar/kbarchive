@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302682: Passport Cobranding Troubleshooting Tips"
-permalink: kb/302/Q302682/
+permalink: /kb/302/Q302682/
 ---
 
 ## Q302682: Passport Cobranding Troubleshooting Tips

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108834: PC MAPI: Adding an Automatic Message (Message of the Day)"
-permalink: kb/108/Q108834/
+permalink: /kb/108/Q108834/
 ---
 
 ## Q108834: PC MAPI: Adding an Automatic Message (Message of the Day)

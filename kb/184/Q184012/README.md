@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184012: FP97: Page Doesn't Preview in Window Size Specified"
-permalink: kb/184/Q184012/
+permalink: /kb/184/Q184012/
 ---
 
 ## Q184012: FP97: Page Doesn't Preview in Window Size Specified

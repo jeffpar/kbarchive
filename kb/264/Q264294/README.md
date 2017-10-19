@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264294: Streets and Trips 2001: Information That You Need to Import Data"
-permalink: kb/264/Q264294/
+permalink: /kb/264/Q264294/
 ---
 
 ## Q264294: Streets and Trips 2001: Information That You Need to Import Data

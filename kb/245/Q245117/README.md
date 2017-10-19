@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245117: Administrative Shares Do Not Appear on Server."
-permalink: kb/245/Q245117/
+permalink: /kb/245/Q245117/
 ---
 
 ## Q245117: Administrative Shares Do Not Appear on Server.

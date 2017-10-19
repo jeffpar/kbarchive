@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129606: Lightly Colored Helvetica Text Not Printed Correctly"
-permalink: kb/129/Q129606/
+permalink: /kb/129/Q129606/
 ---
 
 ## Q129606: Lightly Colored Helvetica Text Not Printed Correctly

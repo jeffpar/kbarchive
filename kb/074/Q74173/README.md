@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74173: DOCERR: MASM 6.0 Programmer's Guide Errors: Chapters 7-10"
-permalink: kb/074/Q74173/
+permalink: /kb/074/Q74173/
 ---
 
 ## Q74173: DOCERR: MASM 6.0 Programmer's Guide Errors: Chapters 7-10

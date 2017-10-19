@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73234: Meaning of COM Port Settings in WIN.INI"
-permalink: kb/073/Q73234/
+permalink: /kb/073/Q73234/
 ---
 
 ## Q73234: Meaning of COM Port Settings in WIN.INI

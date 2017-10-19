@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122050: ICM Printers Supported in Windows 95"
-permalink: kb/122/Q122050/
+permalink: /kb/122/Q122050/
 ---
 
 ## Q122050: ICM Printers Supported in Windows 95

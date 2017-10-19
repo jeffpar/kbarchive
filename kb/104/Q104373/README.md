@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104373: 3COM: Installation Stops If There Is a Space in Server Name"
-permalink: kb/104/Q104373/
+permalink: /kb/104/Q104373/
 ---
 
 ## Q104373: 3COM: Installation Stops If There Is a Space in Server Name

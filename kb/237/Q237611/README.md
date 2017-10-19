@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237611: SMS Executive Components Hang or Perform Slowly"
-permalink: kb/237/Q237611/
+permalink: /kb/237/Q237611/
 ---
 
 ## Q237611: SMS Executive Components Hang or Perform Slowly

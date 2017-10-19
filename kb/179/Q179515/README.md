@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179515: MSN Program Viewer Hangs During Internet Explorer Update"
-permalink: kb/179/Q179515/
+permalink: /kb/179/Q179515/
 ---
 
 ## Q179515: MSN Program Viewer Hangs During Internet Explorer Update

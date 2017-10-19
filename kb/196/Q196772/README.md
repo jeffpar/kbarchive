@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196772: XADM: LDAP Clients Receive Extended Characters Instead of IA5"
-permalink: kb/196/Q196772/
+permalink: /kb/196/Q196772/
 ---
 
 ## Q196772: XADM: LDAP Clients Receive Extended Characters Instead of IA5

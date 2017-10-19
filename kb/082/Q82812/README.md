@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82812: Font Selection/Mouse Support for MS-DOS Apps in a Window"
-permalink: kb/082/Q82812/
+permalink: /kb/082/Q82812/
 ---
 
 ## Q82812: Font Selection/Mouse Support for MS-DOS Apps in a Window

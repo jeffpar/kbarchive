@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135031: SMTP: Unable to Send SMTP Mail Messages from Downstream PO"
-permalink: kb/135/Q135031/
+permalink: /kb/135/Q135031/
 ---
 
 ## Q135031: SMTP: Unable to Send SMTP Mail Messages from Downstream PO

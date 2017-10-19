@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59925: Mac Hyp: Releasing Memory Used by Resource Handles"
-permalink: kb/059/Q59925/
+permalink: /kb/059/Q59925/
 ---
 
 ## Q59925: Mac Hyp: Releasing Memory Used by Resource Handles

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249879: PRB: IPF in Module VB6.exe When Exiting VB6"
-permalink: kb/249/Q249879/
+permalink: /kb/249/Q249879/
 ---
 
 ## Q249879: PRB: IPF in Module VB6.exe When Exiting VB6

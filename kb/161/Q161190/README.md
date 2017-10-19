@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161190: TN3270 Error 520 When the Host Unbinds and Binds a Session"
-permalink: kb/161/Q161190/
+permalink: /kb/161/Q161190/
 ---
 
 ## Q161190: TN3270 Error 520 When the Host Unbinds and Binds a Session

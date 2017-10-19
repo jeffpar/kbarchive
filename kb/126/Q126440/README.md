@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126440: Default Location of FoxPro for Macintosh Temporary Files"
-permalink: kb/126/Q126440/
+permalink: /kb/126/Q126440/
 ---
 
 ## Q126440: Default Location of FoxPro for Macintosh Temporary Files

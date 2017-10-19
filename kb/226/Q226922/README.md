@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q226922: SMS: Client Packages Are Not Re-advertised"
-permalink: kb/226/Q226922/
+permalink: /kb/226/Q226922/
 ---
 
 ## Q226922: SMS: Client Packages Are Not Re-advertised

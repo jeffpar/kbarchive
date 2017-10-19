@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315737: Zoo Tycoon: Black Screen or Blue Screen When You Start Game"
-permalink: kb/315/Q315737/
+permalink: /kb/315/Q315737/
 ---
 
 ## Q315737: Zoo Tycoon: Black Screen or Blue Screen When You Start Game

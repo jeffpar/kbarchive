@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159911: Firmware Requirements for LexMark MarkVision Monitor"
-permalink: kb/159/Q159911/
+permalink: /kb/159/Q159911/
 ---
 
 ## Q159911: Firmware Requirements for LexMark MarkVision Monitor

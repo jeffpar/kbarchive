@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189667: HOWTO: List the Drives in a System Using the FileSystemObject"
-permalink: kb/189/Q189667/
+permalink: /kb/189/Q189667/
 ---
 
 ## Q189667: HOWTO: List the Drives in a System Using the FileSystemObject

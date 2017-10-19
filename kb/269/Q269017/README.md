@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269017: Add Printer Wizard in My Computer Is Not Available"
-permalink: kb/269/Q269017/
+permalink: /kb/269/Q269017/
 ---
 
 ## Q269017: Add Printer Wizard in My Computer Is Not Available

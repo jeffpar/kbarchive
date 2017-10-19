@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87195: PROFS: Memory Required on the Gateway PC"
-permalink: kb/087/Q87195/
+permalink: /kb/087/Q87195/
 ---
 
 ## Q87195: PROFS: Memory Required on the Gateway PC

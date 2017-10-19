@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197330: XFOR: Configuring LDAP/IMAP Migration Wizard for Exchange"
-permalink: kb/197/Q197330/
+permalink: /kb/197/Q197330/
 ---
 
 ## Q197330: XFOR: Configuring LDAP/IMAP Migration Wizard for Exchange

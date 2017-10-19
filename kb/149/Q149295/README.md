@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149295: Win 95 SNA Client May Hang on Startup with Anti-cmos Virus"
-permalink: kb/149/Q149295/
+permalink: /kb/149/Q149295/
 ---
 
 ## Q149295: Win 95 SNA Client May Hang on Startup with Anti-cmos Virus

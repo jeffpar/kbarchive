@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q28229: DOCERR: Result of Operation Stored in DESTINATION, Not SOURCE"
-permalink: kb/028/Q28229/
+permalink: /kb/028/Q28229/
 ---
 
 ## Q28229: DOCERR: Result of Operation Stored in DESTINATION, Not SOURCE

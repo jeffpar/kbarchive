@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134887: Encarta '95: No Scroll Bars in Some Interactivities"
-permalink: kb/134/Q134887/
+permalink: /kb/134/Q134887/
 ---
 
 ## Q134887: Encarta '95: No Scroll Bars in Some Interactivities

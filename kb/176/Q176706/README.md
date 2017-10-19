@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176706: &quot;Could Not Load or Run&quot; Error Message When You Start Windows"
-permalink: kb/176/Q176706/
+permalink: /kb/176/Q176706/
 ---
 
 ## Q176706: &quot;Could Not Load or Run&quot; Error Message When You Start Windows

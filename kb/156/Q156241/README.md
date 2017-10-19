@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156241: HOWTO: Use the New AutoVerbMenu Property of OLE Controls"
-permalink: kb/156/Q156241/
+permalink: /kb/156/Q156241/
 ---
 
 ## Q156241: HOWTO: Use the New AutoVerbMenu Property of OLE Controls

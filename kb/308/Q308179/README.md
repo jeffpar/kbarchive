@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308179: BUG: Virtual Directories Disappear from the IIS 5.1 Snap-in"
-permalink: kb/308/Q308179/
+permalink: /kb/308/Q308179/
 ---
 
 ## Q308179: BUG: Virtual Directories Disappear from the IIS 5.1 Snap-in

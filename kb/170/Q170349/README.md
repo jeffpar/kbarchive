@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170349: Options Command on View Menu Does Not Work in Internet Explorer"
-permalink: kb/170/Q170349/
+permalink: /kb/170/Q170349/
 ---
 
 ## Q170349: Options Command on View Menu Does Not Work in Internet Explorer

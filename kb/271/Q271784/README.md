@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271784: IBM SDLC Link Service Fails Under Windows 2000"
-permalink: kb/271/Q271784/
+permalink: /kb/271/Q271784/
 ---
 
 ## Q271784: IBM SDLC Link Service Fails Under Windows 2000

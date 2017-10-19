@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139165: PRB: Memory DC Produces Monochrome Images"
-permalink: kb/139/Q139165/
+permalink: /kb/139/Q139165/
 ---
 
 ## Q139165: PRB: Memory DC Produces Monochrome Images

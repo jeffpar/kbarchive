@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142994: Known Issues Concerning Bulletin Boards on MSN"
-permalink: kb/142/Q142994/
+permalink: /kb/142/Q142994/
 ---
 
 ## Q142994: Known Issues Concerning Bulletin Boards on MSN

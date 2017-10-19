@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172774: COPY Command at Command Prompt Does Not Prompt to Overwrite File"
-permalink: kb/172/Q172774/
+permalink: /kb/172/Q172774/
 ---
 
 ## Q172774: COPY Command at Command Prompt Does Not Prompt to Overwrite File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82842: 8514 Palette Changes in Windows"
-permalink: kb/082/Q82842/
+permalink: /kb/082/Q82842/
 ---
 
 ## Q82842: 8514 Palette Changes in Windows

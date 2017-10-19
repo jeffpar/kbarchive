@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68475: PRB: C2118: Negative Subscript May Be Caused by int Expression"
-permalink: kb/068/Q68475/
+permalink: /kb/068/Q68475/
 ---
 
 ## Q68475: PRB: C2118: Negative Subscript May Be Caused by int Expression

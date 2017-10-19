@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274179: TN3270/TN5250 Port Values Limited to Four Digits in SNA Manager"
-permalink: kb/274/Q274179/
+permalink: /kb/274/Q274179/
 ---
 
 ## Q274179: TN3270/TN5250 Port Values Limited to Four Digits in SNA Manager

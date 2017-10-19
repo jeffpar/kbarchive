@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224781: BackOffice Server Requires Minimum of 256 Megabyte Swap File"
-permalink: kb/224/Q224781/
+permalink: /kb/224/Q224781/
 ---
 
 ## Q224781: BackOffice Server Requires Minimum of 256 Megabyte Swap File

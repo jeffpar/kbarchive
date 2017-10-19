@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191096: PRB: Multiple &quot;System Files Are Out of Date&quot; Errors"
-permalink: kb/191/Q191096/
+permalink: /kb/191/Q191096/
 ---
 
 ## Q191096: PRB: Multiple &quot;System Files Are Out of Date&quot; Errors

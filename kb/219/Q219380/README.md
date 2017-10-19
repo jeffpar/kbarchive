@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219380: SP4 RAS Server Hangs Up When RAS Client Tries to Connect"
-permalink: kb/219/Q219380/
+permalink: /kb/219/Q219380/
 ---
 
 ## Q219380: SP4 RAS Server Hangs Up When RAS Client Tries to Connect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169137: XADM: Exchange Mailbox Template Cannot Be Changed"
-permalink: kb/169/Q169137/
+permalink: /kb/169/Q169137/
 ---
 
 ## Q169137: XADM: Exchange Mailbox Template Cannot Be Changed

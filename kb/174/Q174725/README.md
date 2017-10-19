@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174725: XFOR: Packing List Code Page 10000 or 437 May Cause Mismatch"
-permalink: kb/174/Q174725/
+permalink: /kb/174/Q174725/
 ---
 
 ## Q174725: XFOR: Packing List Code Page 10000 or 437 May Cause Mismatch

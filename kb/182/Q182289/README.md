@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182289: PRB: DBGRID Can Cause VB to Crash When Scrolling Horizontally"
-permalink: kb/182/Q182289/
+permalink: /kb/182/Q182289/
 ---
 
 ## Q182289: PRB: DBGRID Can Cause VB to Crash When Scrolling Horizontally

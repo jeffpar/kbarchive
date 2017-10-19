@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82232: CopyMetaFile() Creates Incorrectly Sized Destination"
-permalink: kb/082/Q82232/
+permalink: /kb/082/Q82232/
 ---
 
 ## Q82232: CopyMetaFile() Creates Incorrectly Sized Destination

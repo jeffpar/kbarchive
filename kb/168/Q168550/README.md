@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168550: XFOR: How to Exclude OLE Attachments from Migration"
-permalink: kb/168/Q168550/
+permalink: /kb/168/Q168550/
 ---
 
 ## Q168550: XFOR: How to Exclude OLE Attachments from Migration

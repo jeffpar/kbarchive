@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134967: SMS: Audit Package Fails to Report MIF to Site"
-permalink: kb/134/Q134967/
+permalink: /kb/134/Q134967/
 ---
 
 ## Q134967: SMS: Audit Package Fails to Report MIF to Site

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245010: Print Jobs Sent from LPR Print Server Are Not Printed"
-permalink: kb/245/Q245010/
+permalink: /kb/245/Q245010/
 ---
 
 ## Q245010: Print Jobs Sent from LPR Print Server Are Not Printed

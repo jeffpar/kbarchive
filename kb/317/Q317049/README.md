@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q317049: You Cannot Log On After You Remove the Computer from the Domain"
-permalink: kb/317/Q317049/
+permalink: /kb/317/Q317049/
 ---
 
 ## Q317049: You Cannot Log On After You Remove the Computer from the Domain

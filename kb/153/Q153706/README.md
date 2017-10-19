@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153706: WINS Service Terminates During Replication"
-permalink: kb/153/Q153706/
+permalink: /kb/153/Q153706/
 ---
 
 ## Q153706: WINS Service Terminates During Replication

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150394: No Domain Validation with EtherExpres Pro and Docking Station II"
-permalink: kb/150/Q150394/
+permalink: /kb/150/Q150394/
 ---
 
 ## Q150394: No Domain Validation with EtherExpres Pro and Docking Station II

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82050: PC Win: Wide Objects Cannot Be Entirely Viewed"
-permalink: kb/082/Q82050/
+permalink: /kb/082/Q82050/
 ---
 
 ## Q82050: PC Win: Wide Objects Cannot Be Entirely Viewed

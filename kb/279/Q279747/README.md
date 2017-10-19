@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279747: CFS2: How to Import Combat Flight Simulator Scenery"
-permalink: kb/279/Q279747/
+permalink: /kb/279/Q279747/
 ---
 
 ## Q279747: CFS2: How to Import Combat Flight Simulator Scenery

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134888: BUG: GDI Memory Not Released in Windows 95 After Memory Error"
-permalink: kb/134/Q134888/
+permalink: /kb/134/Q134888/
 ---
 
 ## Q134888: BUG: GDI Memory Not Released in Windows 95 After Memory Error

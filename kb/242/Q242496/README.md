@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242496: Advertisement and Site System Status Summarizer Problems"
-permalink: kb/242/Q242496/
+permalink: /kb/242/Q242496/
 ---
 
 ## Q242496: Advertisement and Site System Status Summarizer Problems

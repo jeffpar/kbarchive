@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138270: SNA Server 2.11 Performance Improvements for 3270/LUA Apps"
-permalink: kb/138/Q138270/
+permalink: /kb/138/Q138270/
 ---
 
 ## Q138270: SNA Server 2.11 Performance Improvements for 3270/LUA Apps

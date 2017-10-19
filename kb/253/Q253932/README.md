@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253932: PRB: Incorrect Line of Code Displayed in Debugger"
-permalink: kb/253/Q253932/
+permalink: /kb/253/Q253932/
 ---
 
 ## Q253932: PRB: Incorrect Line of Code Displayed in Debugger

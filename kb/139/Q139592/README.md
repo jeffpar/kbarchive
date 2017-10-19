@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139592: Prompted for Password When Connecting to Windows NT"
-permalink: kb/139/Q139592/
+permalink: /kb/139/Q139592/
 ---
 
 ## Q139592: Prompted for Password When Connecting to Windows NT

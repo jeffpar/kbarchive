@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126021: How to Access Help Screen in Haunted House"
-permalink: kb/126/Q126021/
+permalink: /kb/126/Q126021/
 ---
 
 ## Q126021: How to Access Help Screen in Haunted House

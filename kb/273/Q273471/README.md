@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273471: Creating Multiple-Line, Single-Value Attributes in Templates"
-permalink: kb/273/Q273471/
+permalink: /kb/273/Q273471/
 ---
 
 ## Q273471: Creating Multiple-Line, Single-Value Attributes in Templates

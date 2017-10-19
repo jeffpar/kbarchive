@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194589: XCON: Event ID 57 from the Exchange Message Transfer Agent"
-permalink: kb/194/Q194589/
+permalink: /kb/194/Q194589/
 ---
 
 ## Q194589: XCON: Event ID 57 from the Exchange Message Transfer Agent

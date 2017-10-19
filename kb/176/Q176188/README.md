@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176188: SNA Link Access Violation in ibmx25!os_wtime"
-permalink: kb/176/Q176188/
+permalink: /kb/176/Q176188/
 ---
 
 ## Q176188: SNA Link Access Violation in ibmx25!os_wtime

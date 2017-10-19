@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150662: Mastering Access Programming: Contents of README.TXT"
-permalink: kb/150/Q150662/
+permalink: /kb/150/Q150662/
 ---
 
 ## Q150662: Mastering Access Programming: Contents of README.TXT

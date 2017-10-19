@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155729: SCSI Devices May Not Be Enumerated Correctly"
-permalink: kb/155/Q155729/
+permalink: /kb/155/Q155729/
 ---
 
 ## Q155729: SCSI Devices May Not Be Enumerated Correctly

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107648: Using Novell's ODINSUP with VLM.EXE and WFWG 3.11"
-permalink: kb/107/Q107648/
+permalink: /kb/107/Q107648/
 ---
 
 ## Q107648: Using Novell's ODINSUP with VLM.EXE and WFWG 3.11

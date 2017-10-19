@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147699: Logging On To Windows NT Domain Bypassing The Logon Screens"
-permalink: kb/147/Q147699/
+permalink: /kb/147/Q147699/
 ---
 
 ## Q147699: Logging On To Windows NT Domain Bypassing The Logon Screens

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193111: XCLN: Encrypted Mail Unreadable by Exchange Client"
-permalink: kb/193/Q193111/
+permalink: /kb/193/Q193111/
 ---
 
 ## Q193111: XCLN: Encrypted Mail Unreadable by Exchange Client

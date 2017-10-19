@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86013: Windows Err Msg: Cannot Find the SETUP.INF File Necessary..."
-permalink: kb/086/Q86013/
+permalink: /kb/086/Q86013/
 ---
 
 ## Q86013: Windows Err Msg: Cannot Find the SETUP.INF File Necessary...

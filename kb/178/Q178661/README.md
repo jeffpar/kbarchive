@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178661: SMS: Error - 3201 While Running the Macintosh Inventory Agent"
-permalink: kb/178/Q178661/
+permalink: /kb/178/Q178661/
 ---
 
 ## Q178661: SMS: Error - 3201 While Running the Macintosh Inventory Agent

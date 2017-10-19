@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228452: Baseball 2000: Game Pauses or Video Frame Rate Is Reduced"
-permalink: kb/228/Q228452/
+permalink: /kb/228/Q228452/
 ---
 
 ## Q228452: Baseball 2000: Game Pauses or Video Frame Rate Is Reduced

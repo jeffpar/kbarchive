@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174404: BUG: Field Aliases Options in Expression Builder Dialog Disabled"
-permalink: kb/174/Q174404/
+permalink: /kb/174/Q174404/
 ---
 
 ## Q174404: BUG: Field Aliases Options in Expression Builder Dialog Disabled

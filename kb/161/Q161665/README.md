@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161665: Error Message When You Change the MSN Access Number"
-permalink: kb/161/Q161665/
+permalink: /kb/161/Q161665/
 ---
 
 ## Q161665: Error Message When You Change the MSN Access Number

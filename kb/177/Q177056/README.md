@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177056: PRB: Return Parameter Variable Name for SQL Server Causes Error"
-permalink: kb/177/Q177056/
+permalink: /kb/177/Q177056/
 ---
 
 ## Q177056: PRB: Return Parameter Variable Name for SQL Server Causes Error

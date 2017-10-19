@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275663: CFS2: Sounds Are Not Played in Training Missions"
-permalink: kb/275/Q275663/
+permalink: /kb/275/Q275663/
 ---
 
 ## Q275663: CFS2: Sounds Are Not Played in Training Missions

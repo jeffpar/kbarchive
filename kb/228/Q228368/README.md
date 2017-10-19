@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228368: Baseball 2000: Screen Is Black When You Start the Game"
-permalink: kb/228/Q228368/
+permalink: /kb/228/Q228368/
 ---
 
 ## Q228368: Baseball 2000: Screen Is Black When You Start the Game

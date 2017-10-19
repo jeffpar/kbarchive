@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200475: Err Msg: 530 User &lt;Username&gt; Cannot Log In. Login Failed."
-permalink: kb/200/Q200475/
+permalink: /kb/200/Q200475/
 ---
 
 ## Q200475: Err Msg: 530 User &lt;Username&gt; Cannot Log In. Login Failed.

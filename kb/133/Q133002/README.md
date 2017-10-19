@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133002: How the AddColumn Method Computes New ColumnCount Value"
-permalink: kb/133/Q133002/
+permalink: /kb/133/Q133002/
 ---
 
 ## Q133002: How the AddColumn Method Computes New ColumnCount Value

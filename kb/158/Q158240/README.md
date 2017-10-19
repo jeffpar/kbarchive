@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158240: BUG: Inconsistant Results with SET RELATION TO Command"
-permalink: kb/158/Q158240/
+permalink: /kb/158/Q158240/
 ---
 
 ## Q158240: BUG: Inconsistant Results with SET RELATION TO Command

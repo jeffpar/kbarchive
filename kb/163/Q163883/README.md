@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163883: NetBT (tag=Nbt8) Corrupts Pool with WinNT 4.0 SP2 Installed"
-permalink: kb/163/Q163883/
+permalink: /kb/163/Q163883/
 ---
 
 ## Q163883: NetBT (tag=Nbt8) Corrupts Pool with WinNT 4.0 SP2 Installed

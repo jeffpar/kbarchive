@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170397: STOP: 0XC0000143 Missing System File. Display_Driver.dll Is..."
-permalink: kb/170/Q170397/
+permalink: /kb/170/Q170397/
 ---
 
 ## Q170397: STOP: 0XC0000143 Missing System File. Display_Driver.dll Is...

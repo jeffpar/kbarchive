@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161207: Mastering Series Err Msg: Runtime Error 48"
-permalink: kb/161/Q161207/
+permalink: /kb/161/Q161207/
 ---
 
 ## Q161207: Mastering Series Err Msg: Runtime Error 48

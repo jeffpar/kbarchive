@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q313145: HIS 2000: COMTI Enhanced to Allow DNS Names for TCP/IP RE"
-permalink: kb/313/Q313145/
+permalink: /kb/313/Q313145/
 ---
 
 ## Q313145: HIS 2000: COMTI Enhanced to Allow DNS Names for TCP/IP RE

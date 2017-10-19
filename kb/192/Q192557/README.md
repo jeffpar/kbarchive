@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192557: Netscape's CoolTalk Remains Unsupported"
-permalink: kb/192/Q192557/
+permalink: /kb/192/Q192557/
 ---
 
 ## Q192557: Netscape's CoolTalk Remains Unsupported

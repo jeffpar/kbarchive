@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240014: FIX: Listing Sort Function Removes Elements"
-permalink: kb/240/Q240014/
+permalink: /kb/240/Q240014/
 ---
 
 ## Q240014: FIX: Listing Sort Function Removes Elements

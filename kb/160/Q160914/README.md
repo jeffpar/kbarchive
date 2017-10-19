@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160914: PRB: The Data File for &lt;file&gt; (&lt;physical file&gt;) Was Not Found"
-permalink: kb/160/Q160914/
+permalink: /kb/160/Q160914/
 ---
 
 ## Q160914: PRB: The Data File for &lt;file&gt; (&lt;physical file&gt;) Was Not Found

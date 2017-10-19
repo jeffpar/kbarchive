@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90387: Information on Network Card Detection (NCD)"
-permalink: kb/090/Q90387/
+permalink: /kb/090/Q90387/
 ---
 
 ## Q90387: Information on Network Card Detection (NCD)

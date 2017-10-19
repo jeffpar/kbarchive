@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150436: Windows 95 Service Pack 1 CD-ROM Directory Listing (1 of 5)"
-permalink: kb/150/Q150436/
+permalink: /kb/150/Q150436/
 ---
 
 ## Q150436: Windows 95 Service Pack 1 CD-ROM Directory Listing (1 of 5)

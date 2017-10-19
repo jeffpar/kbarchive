@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193849: INFO: WhatsThisHelp is Different in Visual FoxPro 6.0"
-permalink: kb/193/Q193849/
+permalink: /kb/193/Q193849/
 ---
 
 ## Q193849: INFO: WhatsThisHelp is Different in Visual FoxPro 6.0

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153880: INFO: Visigenic Oracle Driver and Visual C++ Enterprise Edition"
-permalink: kb/153/Q153880/
+permalink: /kb/153/Q153880/
 ---
 
 ## Q153880: INFO: Visigenic Oracle Driver and Visual C++ Enterprise Edition

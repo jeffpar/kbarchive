@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84287: How to Disable Micrologic MoreFonts"
-permalink: kb/084/Q84287/
+permalink: /kb/084/Q84287/
 ---
 
 ## Q84287: How to Disable Micrologic MoreFonts

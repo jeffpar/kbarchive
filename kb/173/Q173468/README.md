@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173468: Err Msg: Cmmgr32.exe Caused a Stack Fault in Module Kernel32.dll"
-permalink: kb/173/Q173468/
+permalink: /kb/173/Q173468/
 ---
 
 ## Q173468: Err Msg: Cmmgr32.exe Caused a Stack Fault in Module Kernel32.dll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286167: Games: Video Problems with Evans &amp;amp; Sutherland Video Cards"
-permalink: kb/286/Q286167/
+permalink: /kb/286/Q286167/
 ---
 
 ## Q286167: Games: Video Problems with Evans &amp;amp; Sutherland Video Cards

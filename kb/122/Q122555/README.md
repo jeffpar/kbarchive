@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122555: WD97: TOC Field Not Updated Properly from Recorded Macro"
-permalink: kb/122/Q122555/
+permalink: /kb/122/Q122555/
 ---
 
 ## Q122555: WD97: TOC Field Not Updated Properly from Recorded Macro

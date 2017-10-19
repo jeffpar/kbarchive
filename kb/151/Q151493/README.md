@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151493: ThinkPad 760 Audio Requires IBM ESS Audio Driver"
-permalink: kb/151/Q151493/
+permalink: /kb/151/Q151493/
 ---
 
 ## Q151493: ThinkPad 760 Audio Requires IBM ESS Audio Driver

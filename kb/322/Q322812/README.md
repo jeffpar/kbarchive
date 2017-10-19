@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322812: How to Turn Setuid/Setgid On or Off"
-permalink: kb/322/Q322812/
+permalink: /kb/322/Q322812/
 ---
 
 ## Q322812: How to Turn Setuid/Setgid On or Off

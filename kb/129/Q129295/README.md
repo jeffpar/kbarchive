@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129295: Closing Thread with Open Message Confuses Navigation in BBS"
-permalink: kb/129/Q129295/
+permalink: /kb/129/Q129295/
 ---
 
 ## Q129295: Closing Thread with Open Message Confuses Navigation in BBS

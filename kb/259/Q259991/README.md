@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259991: SMS: Smsapm32 Continually Checks for Logged-On User"
-permalink: kb/259/Q259991/
+permalink: /kb/259/Q259991/
 ---
 
 ## Q259991: SMS: Smsapm32 Continually Checks for Logged-On User

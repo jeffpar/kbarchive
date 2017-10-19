@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161498: FIX: Full Outer Join Returns No Records If One Table is Empty"
-permalink: kb/161/Q161498/
+permalink: /kb/161/Q161498/
 ---
 
 ## Q161498: FIX: Full Outer Join Returns No Records If One Table is Empty

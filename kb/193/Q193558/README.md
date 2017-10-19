@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193558: COleServerDoc and CArchive Corrupts Large Files"
-permalink: kb/193/Q193558/
+permalink: /kb/193/Q193558/
 ---
 
 ## Q193558: COleServerDoc and CArchive Corrupts Large Files

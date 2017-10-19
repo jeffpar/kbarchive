@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100621: Backup Err Msg: Error Creating Component File on Drive X"
-permalink: kb/100/Q100621/
+permalink: /kb/100/Q100621/
 ---
 
 ## Q100621: Backup Err Msg: Error Creating Component File on Drive X

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93079: How to Interpret Userlevel Output from READCFG.EXE"
-permalink: kb/093/Q93079/
+permalink: /kb/093/Q93079/
 ---
 
 ## Q93079: How to Interpret Userlevel Output from READCFG.EXE

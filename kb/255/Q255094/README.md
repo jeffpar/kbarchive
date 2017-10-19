@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255094: How to Use the SliderBar ActiveX Control in Visual FoxPro"
-permalink: kb/255/Q255094/
+permalink: /kb/255/Q255094/
 ---
 
 ## Q255094: How to Use the SliderBar ActiveX Control in Visual FoxPro

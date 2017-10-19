@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139278: Example in Windows NT Resource Kit For REGINI Does Not Work"
-permalink: kb/139/Q139278/
+permalink: /kb/139/Q139278/
 ---
 
 ## Q139278: Example in Windows NT Resource Kit For REGINI Does Not Work

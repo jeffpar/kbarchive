@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82472: dBASE IV Hangs on Exit with Novell and Windows"
-permalink: kb/082/Q82472/
+permalink: /kb/082/Q82472/
 ---
 
 ## Q82472: dBASE IV Hangs on Exit with Novell and Windows

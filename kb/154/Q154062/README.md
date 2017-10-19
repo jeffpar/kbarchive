@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154062: How to Set Up a Windows NT PPTP Client"
-permalink: kb/154/Q154062/
+permalink: /kb/154/Q154062/
 ---
 
 ## Q154062: How to Set Up a Windows NT PPTP Client

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129832: Type 20 Response Packet Causes NetWare 3.12 Server to Fail"
-permalink: kb/129/Q129832/
+permalink: /kb/129/Q129832/
 ---
 
 ## Q129832: Type 20 Response Packet Causes NetWare 3.12 Server to Fail

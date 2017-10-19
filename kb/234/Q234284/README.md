@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234284: &quot;Path not found&quot; Error Occurs When Saving Component Library"
-permalink: kb/234/Q234284/
+permalink: /kb/234/Q234284/
 ---
 
 ## Q234284: &quot;Path not found&quot; Error Occurs When Saving Component Library

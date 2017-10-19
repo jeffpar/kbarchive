@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135693: Andrew ISA II Adapter 1 TR Does Not Function Properly"
-permalink: kb/135/Q135693/
+permalink: /kb/135/Q135693/
 ---
 
 ## Q135693: Andrew ISA II Adapter 1 TR Does Not Function Properly

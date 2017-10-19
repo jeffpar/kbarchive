@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188302: XADM: Clean Mailbox Command Cannot Delete Based on Date Received"
-permalink: kb/188/Q188302/
+permalink: /kb/188/Q188302/
 ---
 
 ## Q188302: XADM: Clean Mailbox Command Cannot Delete Based on Date Received

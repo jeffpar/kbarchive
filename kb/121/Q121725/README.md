@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121725: Alert for &quot;&lt;&quot; Condition Fails to Run Batch File"
-permalink: kb/121/Q121725/
+permalink: /kb/121/Q121725/
 ---
 
 ## Q121725: Alert for &quot;&lt;&quot; Condition Fails to Run Batch File

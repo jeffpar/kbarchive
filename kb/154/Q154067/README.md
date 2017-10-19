@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154067: System Error: The WIN 16 SubSystem Was Unable to Allocate Memory"
-permalink: kb/154/Q154067/
+permalink: /kb/154/Q154067/
 ---
 
 ## Q154067: System Error: The WIN 16 SubSystem Was Unable to Allocate Memory

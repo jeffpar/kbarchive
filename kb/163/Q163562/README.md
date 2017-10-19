@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163562: TN3270 Server Does Not Handle DACTLU/ACTLU Sequence Properly"
-permalink: kb/163/Q163562/
+permalink: /kb/163/Q163562/
 ---
 
 ## Q163562: TN3270 Server Does Not Handle DACTLU/ACTLU Sequence Properly

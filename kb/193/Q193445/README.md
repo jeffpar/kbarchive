@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193445: Virtual Globe 99: Cannot Copy or Print Frame from Video Clip"
-permalink: kb/193/Q193445/
+permalink: /kb/193/Q193445/
 ---
 
 ## Q193445: Virtual Globe 99: Cannot Copy or Print Frame from Video Clip

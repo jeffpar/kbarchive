@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110096: PC WSPlus: DefaultPrivateTask= Does Not Work as Documented"
-permalink: kb/110/Q110096/
+permalink: /kb/110/Q110096/
 ---
 
 ## Q110096: PC WSPlus: DefaultPrivateTask= Does Not Work as Documented

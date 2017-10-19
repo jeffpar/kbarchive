@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139267: PRB: Unable to Change Tab Order of Objects in Form"
-permalink: kb/139/Q139267/
+permalink: /kb/139/Q139267/
 ---
 
 ## Q139267: PRB: Unable to Change Tab Order of Objects in Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136334: Access Violation in LSASS.EXE During User Password Change"
-permalink: kb/136/Q136334/
+permalink: /kb/136/Q136334/
 ---
 
 ## Q136334: Access Violation in LSASS.EXE During User Password Change

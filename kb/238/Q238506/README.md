@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238506: XADM: Installing Exchange Server Message Transfer Agent MIXER"
-permalink: kb/238/Q238506/
+permalink: /kb/238/Q238506/
 ---
 
 ## Q238506: XADM: Installing Exchange Server Message Transfer Agent MIXER

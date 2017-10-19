@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126973: NWCONV LOGFILE.LOG Error: Users Didn't Get Moved"
-permalink: kb/126/Q126973/
+permalink: /kb/126/Q126973/
 ---
 
 ## Q126973: NWCONV LOGFILE.LOG Error: Users Didn't Get Moved

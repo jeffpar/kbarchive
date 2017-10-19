@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196940: WD97: Mail Merge Does Not Merge Hidden Character Formatting"
-permalink: kb/196/Q196940/
+permalink: /kb/196/Q196940/
 ---
 
 ## Q196940: WD97: Mail Merge Does Not Merge Hidden Character Formatting

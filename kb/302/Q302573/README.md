@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302573: HOW TO: Back Up and Restore IIS"
-permalink: kb/302/Q302573/
+permalink: /kb/302/Q302573/
 ---
 
 ## Q302573: HOW TO: Back Up and Restore IIS

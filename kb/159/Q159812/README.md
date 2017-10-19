@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159812: Removing Banyan Vines Client Does Not Remove Bancom Protocol"
-permalink: kb/159/Q159812/
+permalink: /kb/159/Q159812/
 ---
 
 ## Q159812: Removing Banyan Vines Client Does Not Remove Bancom Protocol

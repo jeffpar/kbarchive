@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136514: PC DirSync: Err Msg: Fatal Error 54 Server Name Not Accessed"
-permalink: kb/136/Q136514/
+permalink: /kb/136/Q136514/
 ---
 
 ## Q136514: PC DirSync: Err Msg: Fatal Error 54 Server Name Not Accessed

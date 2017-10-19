@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102432: FIX: Incorrect RET Generated for PROC when EPILOGUE:NONE"
-permalink: kb/102/Q102432/
+permalink: /kb/102/Q102432/
 ---
 
 ## Q102432: FIX: Incorrect RET Generated for PROC when EPILOGUE:NONE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286201: Directory Name Returned from Server.MapPath() Truncated"
-permalink: kb/286/Q286201/
+permalink: /kb/286/Q286201/
 ---
 
 ## Q286201: Directory Name Returned from Server.MapPath() Truncated

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165348: PPT7: Date Changes on Presentations Stored on Windows NT Server"
-permalink: kb/165/Q165348/
+permalink: /kb/165/Q165348/
 ---
 
 ## Q165348: PPT7: Date Changes on Presentations Stored on Windows NT Server

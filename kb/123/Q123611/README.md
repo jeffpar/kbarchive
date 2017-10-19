@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123611: SCSIPORT.PDR Installed on All Computers During Setup"
-permalink: kb/123/Q123611/
+permalink: /kb/123/Q123611/
 ---
 
 ## Q123611: SCSIPORT.PDR Installed on All Computers During Setup

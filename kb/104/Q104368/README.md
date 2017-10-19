@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104368: PC Win: Lotus 1-2-3 Does Not Launch Mail Attachment"
-permalink: kb/104/Q104368/
+permalink: /kb/104/Q104368/
 ---
 
 ## Q104368: PC Win: Lotus 1-2-3 Does Not Launch Mail Attachment

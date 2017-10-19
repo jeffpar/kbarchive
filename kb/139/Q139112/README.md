@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139112: PC Forms: ErrMsg: Displaying this Message Correctly Requires.."
-permalink: kb/139/Q139112/
+permalink: /kb/139/Q139112/
 ---
 
 ## Q139112: PC Forms: ErrMsg: Displaying this Message Correctly Requires..

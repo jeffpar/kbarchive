@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174308: Frequently Asked Questions About Microsoft Press Support"
-permalink: kb/174/Q174308/
+permalink: /kb/174/Q174308/
 ---
 
 ## Q174308: Frequently Asked Questions About Microsoft Press Support

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242551: Err Msg: Setup Has Determined That Your Original Install Path..."
-permalink: kb/242/Q242551/
+permalink: /kb/242/Q242551/
 ---
 
 ## Q242551: Err Msg: Setup Has Determined That Your Original Install Path...

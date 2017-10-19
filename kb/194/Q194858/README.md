@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194858: SNA Server Manager Shows Incorrect Status For Print Sessions"
-permalink: kb/194/Q194858/
+permalink: /kb/194/Q194858/
 ---
 
 ## Q194858: SNA Server Manager Shows Incorrect Status For Print Sessions

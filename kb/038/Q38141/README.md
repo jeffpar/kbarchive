@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q38141: Hewlett-Packard Font Cartridges &quot;Q&quot; through &quot;Z&quot; Description"
-permalink: kb/038/Q38141/
+permalink: /kb/038/Q38141/
 ---
 
 ## Q38141: Hewlett-Packard Font Cartridges &quot;Q&quot; through &quot;Z&quot; Description

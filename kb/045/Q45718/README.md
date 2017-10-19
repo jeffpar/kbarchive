@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q45718: PRB: Addressing L1064: &quot;Out of Memory&quot; Errors"
-permalink: kb/045/Q45718/
+permalink: /kb/045/Q45718/
 ---
 
 ## Q45718: PRB: Addressing L1064: &quot;Out of Memory&quot; Errors

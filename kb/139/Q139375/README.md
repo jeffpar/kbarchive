@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139375: Dependent LU 6.2 Configuration for SNA Server"
-permalink: kb/139/Q139375/
+permalink: /kb/139/Q139375/
 ---
 
 ## Q139375: Dependent LU 6.2 Configuration for SNA Server

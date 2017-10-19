@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182262: Manager Traps When Switching Domains in 3270 LU Range Wizard"
-permalink: kb/182/Q182262/
+permalink: /kb/182/Q182262/
 ---
 
 ## Q182262: Manager Traps When Switching Domains in 3270 LU Range Wizard

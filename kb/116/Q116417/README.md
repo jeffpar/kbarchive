@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116417: Mac Bookshelf 94: Errors if Installed on Nonstartup Disk"
-permalink: kb/116/Q116417/
+permalink: /kb/116/Q116417/
 ---
 
 ## Q116417: Mac Bookshelf 94: Errors if Installed on Nonstartup Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164684: PRB: VFP/VSS File Could Not Be Mapped to SourceSafe Project"
-permalink: kb/164/Q164684/
+permalink: /kb/164/Q164684/
 ---
 
 ## Q164684: PRB: VFP/VSS File Could Not Be Mapped to SourceSafe Project

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237566: %HOMEPATH%, %HOMESHARE%, and %HOMEDRIVE% Resolved Incorrectly"
-permalink: kb/237/Q237566/
+permalink: /kb/237/Q237566/
 ---
 
 ## Q237566: %HOMEPATH%, %HOMESHARE%, and %HOMEDRIVE% Resolved Incorrectly

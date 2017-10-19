@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237196: SMS: SMS2.0 SP1 Upgrade Fails with Error  on Autorun.inf"
-permalink: kb/237/Q237196/
+permalink: /kb/237/Q237196/
 ---
 
 ## Q237196: SMS: SMS2.0 SP1 Upgrade Fails with Error  on Autorun.inf

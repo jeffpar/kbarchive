@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141417: FIX: Problem Occurs During File Open on Win32s"
-permalink: kb/141/Q141417/
+permalink: /kb/141/Q141417/
 ---
 
 ## Q141417: FIX: Problem Occurs During File Open on Win32s

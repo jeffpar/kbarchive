@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302947: Train Simulator 2000: Fatal Error When You Start Train Simulator"
-permalink: kb/302/Q302947/
+permalink: /kb/302/Q302947/
 ---
 
 ## Q302947: Train Simulator 2000: Fatal Error When You Start Train Simulator

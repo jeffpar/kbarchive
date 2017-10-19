@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117195: PPT: PowerPoint Readme- Filter Limitations (BMP and WMF)"
-permalink: kb/117/Q117195/
+permalink: /kb/117/Q117195/
 ---
 
 ## Q117195: PPT: PowerPoint Readme- Filter Limitations (BMP and WMF)

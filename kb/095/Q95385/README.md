@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95385: QMS PS PostScript Printer Driver Version 2.43.04"
-permalink: kb/095/Q95385/
+permalink: /kb/095/Q95385/
 ---
 
 ## Q95385: QMS PS PostScript Printer Driver Version 2.43.04

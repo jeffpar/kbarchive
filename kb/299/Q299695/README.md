@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299695: FIX: Err Msg: &quot;Ambiguous date/datetime constant&quot; with View"
-permalink: kb/299/Q299695/
+permalink: /kb/299/Q299695/
 ---
 
 ## Q299695: FIX: Err Msg: &quot;Ambiguous date/datetime constant&quot; with View

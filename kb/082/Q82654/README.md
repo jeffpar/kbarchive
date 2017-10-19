@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82654: DEC Pathworks Remote Boot Workstations Under Windows 3.1"
-permalink: kb/082/Q82654/
+permalink: /kb/082/Q82654/
 ---
 
 ## Q82654: DEC Pathworks Remote Boot Workstations Under Windows 3.1

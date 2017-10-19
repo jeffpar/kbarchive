@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303811: DNS Server Routes Queries to Root Name Servers and Forwarders"
-permalink: kb/303/Q303811/
+permalink: /kb/303/Q303811/
 ---
 
 ## Q303811: DNS Server Routes Queries to Root Name Servers and Forwarders

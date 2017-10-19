@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297212: XADM: Public Folders Are Not Accessible After Site Split"
-permalink: kb/297/Q297212/
+permalink: /kb/297/Q297212/
 ---
 
 ## Q297212: XADM: Public Folders Are Not Accessible After Site Split

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q319129: Event Error After You Apply the Microsoft BIOS3 Y2K Update"
-permalink: kb/319/Q319129/
+permalink: /kb/319/Q319129/
 ---
 
 ## Q319129: Event Error After You Apply the Microsoft BIOS3 Y2K Update

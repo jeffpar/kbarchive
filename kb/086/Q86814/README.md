@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86814: BUG: NMAKE TOOLS.INI Commands Ignore Environment Variables"
-permalink: kb/086/Q86814/
+permalink: /kb/086/Q86814/
 ---
 
 ## Q86814: BUG: NMAKE TOOLS.INI Commands Ignore Environment Variables

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274425: Visual Basic Design Patterns Comments and Corrections"
-permalink: kb/274/Q274425/
+permalink: /kb/274/Q274425/
 ---
 
 ## Q274425: Visual Basic Design Patterns Comments and Corrections

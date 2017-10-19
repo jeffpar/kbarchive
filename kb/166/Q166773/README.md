@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166773: Using the Personalization Service with IIS 4.0"
-permalink: kb/166/Q166773/
+permalink: /kb/166/Q166773/
 ---
 
 ## Q166773: Using the Personalization Service with IIS 4.0

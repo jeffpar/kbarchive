@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131618: Tape Drive Error Detected with Qlogic Fast SCSI IQ PCI Adapter"
-permalink: kb/131/Q131618/
+permalink: /kb/131/Q131618/
 ---
 
 ## Q131618: Tape Drive Error Detected with Qlogic Fast SCSI IQ PCI Adapter

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137096: PRB: Type Mismatch When Passing Variants to Word Using OLE"
-permalink: kb/137/Q137096/
+permalink: /kb/137/Q137096/
 ---
 
 ## Q137096: PRB: Type Mismatch When Passing Variants to Word Using OLE

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231685: XCON: Corrupted Message in MTA DB Logs DB Server Errors"
-permalink: kb/231/Q231685/
+permalink: /kb/231/Q231685/
 ---
 
 ## Q231685: XCON: Corrupted Message in MTA DB Logs DB Server Errors

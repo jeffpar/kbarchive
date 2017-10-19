@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q49502: PRB: NMAKE Runs But Does Not Produce OBJ and EXE Files"
-permalink: kb/049/Q49502/
+permalink: /kb/049/Q49502/
 ---
 
 ## Q49502: PRB: NMAKE Runs But Does Not Produce OBJ and EXE Files

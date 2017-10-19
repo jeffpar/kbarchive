@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160540: Mac Cinemania 97: Minimum System Requirements"
-permalink: kb/160/Q160540/
+permalink: /kb/160/Q160540/
 ---
 
 ## Q160540: Mac Cinemania 97: Minimum System Requirements

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249584: Building Applications with Outlook 2000 Technical Reference Comm"
-permalink: kb/249/Q249584/
+permalink: /kb/249/Q249584/
 ---
 
 ## Q249584: Building Applications with Outlook 2000 Technical Reference Comm

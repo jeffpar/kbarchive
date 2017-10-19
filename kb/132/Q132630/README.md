@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132630: Kerning System TrueType Fonts Does Not Change Appearance"
-permalink: kb/132/Q132630/
+permalink: /kb/132/Q132630/
 ---
 
 ## Q132630: Kerning System TrueType Fonts Does Not Change Appearance

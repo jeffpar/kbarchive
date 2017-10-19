@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167349: PRB: Unable to Derive Classes from External Dependencies"
-permalink: kb/167/Q167349/
+permalink: /kb/167/Q167349/
 ---
 
 ## Q167349: PRB: Unable to Derive Classes from External Dependencies

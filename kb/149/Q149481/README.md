@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149481: PRB: Debugging Past END Statement Puts You in Disassembly Mode"
-permalink: kb/149/Q149481/
+permalink: /kb/149/Q149481/
 ---
 
 ## Q149481: PRB: Debugging Past END Statement Puts You in Disassembly Mode

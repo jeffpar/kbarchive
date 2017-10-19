@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132063: Hard Disk Activity After Shutdown"
-permalink: kb/132/Q132063/
+permalink: /kb/132/Q132063/
 ---
 
 ## Q132063: Hard Disk Activity After Shutdown

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90245: How to Troubleshoot Hardware Conflicts"
-permalink: kb/090/Q90245/
+permalink: /kb/090/Q90245/
 ---
 
 ## Q90245: How to Troubleshoot Hardware Conflicts

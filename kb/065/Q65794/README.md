@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q65794: Using Quarterdeck QEMM386 with Windows 3.0"
-permalink: kb/065/Q65794/
+permalink: /kb/065/Q65794/
 ---
 
 ## Q65794: Using Quarterdeck QEMM386 with Windows 3.0

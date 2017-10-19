@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137136: RAS Not Saving Terminal &amp; Script Options for ISDN or X.25 Ports"
-permalink: kb/137/Q137136/
+permalink: /kb/137/Q137136/
 ---
 
 ## Q137136: RAS Not Saving Terminal &amp; Script Options for ISDN or X.25 Ports

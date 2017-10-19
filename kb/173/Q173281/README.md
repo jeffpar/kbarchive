@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173281: How to Reset Permissions for FrontPage 97"
-permalink: kb/173/Q173281/
+permalink: /kb/173/Q173281/
 ---
 
 ## Q173281: How to Reset Permissions for FrontPage 97

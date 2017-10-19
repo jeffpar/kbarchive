@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168058: PRB: Application Wizard EXE or APP Gives Path or File Error"
-permalink: kb/168/Q168058/
+permalink: /kb/168/Q168058/
 ---
 
 ## Q168058: PRB: Application Wizard EXE or APP Gives Path or File Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131084: Corrupt Swap File Dual Booting Windows 3.1"
-permalink: kb/131/Q131084/
+permalink: /kb/131/Q131084/
 ---
 
 ## Q131084: Corrupt Swap File Dual Booting Windows 3.1

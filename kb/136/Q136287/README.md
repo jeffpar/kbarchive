@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136287: Bookshelf Intro Edition:Step 1: Read Me First File"
-permalink: kb/136/Q136287/
+permalink: /kb/136/Q136287/
 ---
 
 ## Q136287: Bookshelf Intro Edition:Step 1: Read Me First File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189115: Macfile Menu May Not Appear in Winfile with SFM Installed"
-permalink: kb/189/Q189115/
+permalink: /kb/189/Q189115/
 ---
 
 ## Q189115: Macfile Menu May Not Appear in Winfile with SFM Installed

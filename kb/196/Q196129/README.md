@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196129: XADM: How to Change the KMS Service Password Startup Location"
-permalink: kb/196/Q196129/
+permalink: /kb/196/Q196129/
 ---
 
 ## Q196129: XADM: How to Change the KMS Service Password Startup Location

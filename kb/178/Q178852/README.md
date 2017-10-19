@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178852: INFO: OLE DB Provider for ODBC Now an ODBC 3.5 and Higher Core C"
-permalink: kb/178/Q178852/
+permalink: /kb/178/Q178852/
 ---
 
 ## Q178852: INFO: OLE DB Provider for ODBC Now an ODBC 3.5 and Higher Core C

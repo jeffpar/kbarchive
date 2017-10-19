@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176019: SNA Windows 95 Client Support for Multiple Users on Windows NT"
-permalink: kb/176/Q176019/
+permalink: /kb/176/Q176019/
 ---
 
 ## Q176019: SNA Windows 95 Client Support for Multiple Users on Windows NT

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190060: Games: Computer Hangs After You Install DirectX on CA Chipset"
-permalink: kb/190/Q190060/
+permalink: /kb/190/Q190060/
 ---
 
 ## Q190060: Games: Computer Hangs After You Install DirectX on CA Chipset

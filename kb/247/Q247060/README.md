@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247060: Error Message in Ntbackup.exe When Starting to Read Tapes"
-permalink: kb/247/Q247060/
+permalink: /kb/247/Q247060/
 ---
 
 ## Q247060: Error Message in Ntbackup.exe When Starting to Read Tapes

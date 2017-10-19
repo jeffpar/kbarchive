@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187059: Client Uninstall Does Not Prompt for Restart"
-permalink: kb/187/Q187059/
+permalink: /kb/187/Q187059/
 ---
 
 ## Q187059: Client Uninstall Does Not Prompt for Restart

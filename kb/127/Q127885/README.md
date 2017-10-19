@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127885: Kids: Distorted AVIs and Transitions"
-permalink: kb/127/Q127885/
+permalink: /kb/127/Q127885/
 ---
 
 ## Q127885: Kids: Distorted AVIs and Transitions

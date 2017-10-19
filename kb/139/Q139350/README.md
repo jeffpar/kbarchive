@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139350: WinNT General Protection Fault Exiting 16-bit Access Version 2.0"
-permalink: kb/139/Q139350/
+permalink: /kb/139/Q139350/
 ---
 
 ## Q139350: WinNT General Protection Fault Exiting 16-bit Access Version 2.0

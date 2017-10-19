@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127843: How to Place a Command Button in a Grid Cell Visually"
-permalink: kb/127/Q127843/
+permalink: /kb/127/Q127843/
 ---
 
 ## Q127843: How to Place a Command Button in a Grid Cell Visually

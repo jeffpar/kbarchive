@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q323652: SMS: Clients Not Installed for Non-English SMS 2.0 SP4 Servers"
-permalink: kb/323/Q323652/
+permalink: /kb/323/Q323652/
 ---
 
 ## Q323652: SMS: Clients Not Installed for Non-English SMS 2.0 SP4 Servers

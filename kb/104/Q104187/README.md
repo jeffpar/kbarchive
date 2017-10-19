@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104187: Previous and Next Buttons Lose Mouse Clicks"
-permalink: kb/104/Q104187/
+permalink: /kb/104/Q104187/
 ---
 
 ## Q104187: Previous and Next Buttons Lose Mouse Clicks

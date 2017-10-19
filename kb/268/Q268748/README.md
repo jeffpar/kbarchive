@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268748: Error Message Appears and Action Menu Is Empty When You Run Outl"
-permalink: kb/268/Q268748/
+permalink: /kb/268/Q268748/
 ---
 
 ## Q268748: Error Message Appears and Action Menu Is Empty When You Run Outl

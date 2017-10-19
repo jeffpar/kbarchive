@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87429: PROFS: How to Delete a Gateway"
-permalink: kb/087/Q87429/
+permalink: /kb/087/Q87429/
 ---
 
 ## Q87429: PROFS: How to Delete a Gateway

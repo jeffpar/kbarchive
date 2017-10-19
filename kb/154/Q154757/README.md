@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154757: HOWTO: Determine if RDO Restartable Property is Set to False"
-permalink: kb/154/Q154757/
+permalink: /kb/154/Q154757/
 ---
 
 ## Q154757: HOWTO: Determine if RDO Restartable Property is Set to False

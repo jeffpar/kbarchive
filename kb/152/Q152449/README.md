@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152449: XADM: Directory Import Fails When Import File Includes DBCS"
-permalink: kb/152/Q152449/
+permalink: /kb/152/Q152449/
 ---
 
 ## Q152449: XADM: Directory Import Fails When Import File Includes DBCS

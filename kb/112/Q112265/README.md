@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112265: PC Win: Using F5 or SHIFT Key to Start Mail Utilities"
-permalink: kb/112/Q112265/
+permalink: /kb/112/Q112265/
 ---
 
 ## Q112265: PC Win: Using F5 or SHIFT Key to Start Mail Utilities

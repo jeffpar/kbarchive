@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181034: INFO: Misleading Location for VBCE Application Install Wizard"
-permalink: kb/181/Q181034/
+permalink: /kb/181/Q181034/
 ---
 
 ## Q181034: INFO: Misleading Location for VBCE Application Install Wizard

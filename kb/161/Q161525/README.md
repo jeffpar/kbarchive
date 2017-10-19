@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161525: WD97: Can't Distinguish AutoSummary Text from Highlighted Text"
-permalink: kb/161/Q161525/
+permalink: /kb/161/Q161525/
 ---
 
 ## Q161525: WD97: Can't Distinguish AutoSummary Text from Highlighted Text

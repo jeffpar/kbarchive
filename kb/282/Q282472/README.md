@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282472: IIS May Hang or Terminate When Using OLE DB Provider"
-permalink: kb/282/Q282472/
+permalink: /kb/282/Q282472/
 ---
 
 ## Q282472: IIS May Hang or Terminate When Using OLE DB Provider

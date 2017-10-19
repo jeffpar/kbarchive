@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155572: REM Does Not Prevent Parsing of FOR Statement in Batch File"
-permalink: kb/155/Q155572/
+permalink: /kb/155/Q155572/
 ---
 
 ## Q155572: REM Does Not Prevent Parsing of FOR Statement in Batch File

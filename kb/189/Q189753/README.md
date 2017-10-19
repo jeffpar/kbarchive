@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189753: XCON: Exchange MTA Logs Event 1136"
-permalink: kb/189/Q189753/
+permalink: /kb/189/Q189753/
 ---
 
 ## Q189753: XCON: Exchange MTA Logs Event 1136

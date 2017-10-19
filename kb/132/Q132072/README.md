@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132072: FLIGHT SIMULATOR 5.1: Contents of README1.TXT"
-permalink: kb/132/Q132072/
+permalink: /kb/132/Q132072/
 ---
 
 ## Q132072: FLIGHT SIMULATOR 5.1: Contents of README1.TXT

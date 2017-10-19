@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134229: Attachmate Zip Host Manager Requires Patch"
-permalink: kb/134/Q134229/
+permalink: /kb/134/Q134229/
 ---
 
 ## Q134229: Attachmate Zip Host Manager Requires Patch

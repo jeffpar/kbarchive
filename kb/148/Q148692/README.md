@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148692: Visual Basic 4.0 Hangs In Windows NT and Windows 95"
-permalink: kb/148/Q148692/
+permalink: /kb/148/Q148692/
 ---
 
 ## Q148692: Visual Basic 4.0 Hangs In Windows NT and Windows 95

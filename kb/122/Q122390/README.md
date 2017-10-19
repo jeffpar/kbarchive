@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122390: RCONSOLE Not Listing NetWare File Servers"
-permalink: kb/122/Q122390/
+permalink: /kb/122/Q122390/
 ---
 
 ## Q122390: RCONSOLE Not Listing NetWare File Servers

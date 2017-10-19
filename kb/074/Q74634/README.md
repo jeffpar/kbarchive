@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74634: Cannot Modify File Display Options Filename in Shell"
-permalink: kb/074/Q74634/
+permalink: /kb/074/Q74634/
 ---
 
 ## Q74634: Cannot Modify File Display Options Filename in Shell

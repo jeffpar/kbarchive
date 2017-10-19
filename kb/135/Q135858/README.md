@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135858: Specifying an Account Control Field in an FTP Script"
-permalink: kb/135/Q135858/
+permalink: /kb/135/Q135858/
 ---
 
 ## Q135858: Specifying an Account Control Field in an FTP Script

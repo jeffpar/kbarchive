@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140830: TN3270 Server Does Not Generate a Dr. Watson Log"
-permalink: kb/140/Q140830/
+permalink: /kb/140/Q140830/
 ---
 
 ## Q140830: TN3270 Server Does Not Generate a Dr. Watson Log

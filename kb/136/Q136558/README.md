@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136558: FIX: Debug and Trace Options Disabled After Running RI Builder"
-permalink: kb/136/Q136558/
+permalink: /kb/136/Q136558/
 ---
 
 ## Q136558: FIX: Debug and Trace Options Disabled After Running RI Builder

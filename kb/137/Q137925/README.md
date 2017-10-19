@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137925: Compaq Systems Hangs During Upgrade to 3.51"
-permalink: kb/137/Q137925/
+permalink: /kb/137/Q137925/
 ---
 
 ## Q137925: Compaq Systems Hangs During Upgrade to 3.51

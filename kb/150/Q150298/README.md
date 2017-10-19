@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150298: Renaming a Windows NT PDC or BDC"
-permalink: kb/150/Q150298/
+permalink: /kb/150/Q150298/
 ---
 
 ## Q150298: Renaming a Windows NT PDC or BDC

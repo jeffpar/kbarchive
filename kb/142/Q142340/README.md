@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142340: WD97: Date, Currency Results Incorrect Merging from Access"
-permalink: kb/142/Q142340/
+permalink: /kb/142/Q142340/
 ---
 
 ## Q142340: WD97: Date, Currency Results Incorrect Merging from Access

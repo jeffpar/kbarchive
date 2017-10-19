@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43331: Changing System Time or Date Will Temporarily Pause Clock"
-permalink: kb/043/Q43331/
+permalink: /kb/043/Q43331/
 ---
 
 ## Q43331: Changing System Time or Date Will Temporarily Pause Clock

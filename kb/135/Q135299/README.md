@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135299: Using MFC OLE Drag and Drop to Drag Text Between Windows"
-permalink: kb/135/Q135299/
+permalink: /kb/135/Q135299/
 ---
 
 ## Q135299: Using MFC OLE Drag and Drop to Drag Text Between Windows

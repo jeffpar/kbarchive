@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132575: Windows Explorer Does Not Refresh Disk Drives Automatically"
-permalink: kb/132/Q132575/
+permalink: /kb/132/Q132575/
 ---
 
 ## Q132575: Windows Explorer Does Not Refresh Disk Drives Automatically

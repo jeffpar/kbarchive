@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240111: NBA Inside Drive 2000: Mouse Pointer Hangs or Is Duplicated"
-permalink: kb/240/Q240111/
+permalink: /kb/240/Q240111/
 ---
 
 ## Q240111: NBA Inside Drive 2000: Mouse Pointer Hangs or Is Duplicated

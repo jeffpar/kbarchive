@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101410: Windows/MS-DOS for PS/2 Not Supported on IBM ValuePoint"
-permalink: kb/101/Q101410/
+permalink: /kb/101/Q101410/
 ---
 
 ## Q101410: Windows/MS-DOS for PS/2 Not Supported on IBM ValuePoint

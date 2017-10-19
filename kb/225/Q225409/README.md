@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225409: SBS: Microsoft Exchange Licensing in Small Business Server 4.5"
-permalink: kb/225/Q225409/
+permalink: /kb/225/Q225409/
 ---
 
 ## Q225409: SBS: Microsoft Exchange Licensing in Small Business Server 4.5

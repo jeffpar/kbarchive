@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176575: How to Log On to a Windows NT Domain Using a PPTP Connection"
-permalink: kb/176/Q176575/
+permalink: /kb/176/Q176575/
 ---
 
 ## Q176575: How to Log On to a Windows NT Domain Using a PPTP Connection

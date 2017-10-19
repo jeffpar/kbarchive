@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73738: ATI Wondercard and MS-DOS Upgrade Setup"
-permalink: kb/073/Q73738/
+permalink: /kb/073/Q73738/
 ---
 
 ## Q73738: ATI Wondercard and MS-DOS Upgrade Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118860: X400: README.TXT: Gateway to X.400, Version 3.2"
-permalink: kb/118/Q118860/
+permalink: /kb/118/Q118860/
 ---
 
 ## Q118860: X400: README.TXT: Gateway to X.400, Version 3.2

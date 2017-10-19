@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82577: No Environment Variable in PC Tools for Windows Causes GPF"
-permalink: kb/082/Q82577/
+permalink: /kb/082/Q82577/
 ---
 
 ## Q82577: No Environment Variable in PC Tools for Windows Causes GPF

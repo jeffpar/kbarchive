@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74744: FIX: Bad Code Produced When Using Location Arithmetic"
-permalink: kb/074/Q74744/
+permalink: /kb/074/Q74744/
 ---
 
 ## Q74744: FIX: Bad Code Produced When Using Location Arithmetic

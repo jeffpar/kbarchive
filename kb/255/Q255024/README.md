@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255024: XCON: SMTP Addresses Can Be Encapsulated in RFC-822 DDA"
-permalink: kb/255/Q255024/
+permalink: /kb/255/Q255024/
 ---
 
 ## Q255024: XCON: SMTP Addresses Can Be Encapsulated in RFC-822 DDA

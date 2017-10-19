@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196914: WD97: Some Fonts Not Listed in Find/Replace Font Dialog"
-permalink: kb/196/Q196914/
+permalink: /kb/196/Q196914/
 ---
 
 ## Q196914: WD97: Some Fonts Not Listed in Find/Replace Font Dialog

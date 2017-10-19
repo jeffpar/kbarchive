@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171902: Cannot Connect to The Microsoft Network"
-permalink: kb/171/Q171902/
+permalink: /kb/171/Q171902/
 ---
 
 ## Q171902: Cannot Connect to The Microsoft Network

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180949: Windows 95 Client Retrieves Wrong Password from the Cache"
-permalink: kb/180/Q180949/
+permalink: /kb/180/Q180949/
 ---
 
 ## Q180949: Windows 95 Client Retrieves Wrong Password from the Cache

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140905: PCI Device Settings Not Retained with Safe Recovery Option"
-permalink: kb/140/Q140905/
+permalink: /kb/140/Q140905/
 ---
 
 ## Q140905: PCI Device Settings Not Retained with Safe Recovery Option

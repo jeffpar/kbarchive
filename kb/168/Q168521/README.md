@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168521: HOWTO: Reapply Default Values to Reuse/Recycle Deleted Record"
-permalink: kb/168/Q168521/
+permalink: /kb/168/Q168521/
 ---
 
 ## Q168521: HOWTO: Reapply Default Values to Reuse/Recycle Deleted Record

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185281: PRB: OnLButtonDblClk() Not Called in Windows CE"
-permalink: kb/185/Q185281/
+permalink: /kb/185/Q185281/
 ---
 
 ## Q185281: PRB: OnLButtonDblClk() Not Called in Windows CE

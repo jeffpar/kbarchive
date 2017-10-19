@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167746: HOWTO: Arrange Order of List Items within ListBox Control"
-permalink: kb/167/Q167746/
+permalink: /kb/167/Q167746/
 ---
 
 ## Q167746: HOWTO: Arrange Order of List Items within ListBox Control

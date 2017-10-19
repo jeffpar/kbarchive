@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153754: XADM: Misleading NDR When Recipient has Incoming Size Limit"
-permalink: kb/153/Q153754/
+permalink: /kb/153/Q153754/
 ---
 
 ## Q153754: XADM: Misleading NDR When Recipient has Incoming Size Limit

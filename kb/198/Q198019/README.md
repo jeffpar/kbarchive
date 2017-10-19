@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198019: FIX: ATL Control Does Not Size Correctly"
-permalink: kb/198/Q198019/
+permalink: /kb/198/Q198019/
 ---
 
 ## Q198019: FIX: ATL Control Does Not Size Correctly

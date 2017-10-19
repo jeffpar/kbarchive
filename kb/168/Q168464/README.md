@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168464: Directory Replication Fails with Event ID 3216"
-permalink: kb/168/Q168464/
+permalink: /kb/168/Q168464/
 ---
 
 ## Q168464: Directory Replication Fails with Event ID 3216

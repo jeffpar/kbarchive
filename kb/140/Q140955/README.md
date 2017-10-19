@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140955: XCLN: Error When Opening Attachment in Client for Windows 3.x"
-permalink: kb/140/Q140955/
+permalink: /kb/140/Q140955/
 ---
 
 ## Q140955: XCLN: Error When Opening Attachment in Client for Windows 3.x

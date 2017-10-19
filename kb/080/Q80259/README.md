@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80259: PC Gen: Contents of Modem Script File MICROCOM.MDM"
-permalink: kb/080/Q80259/
+permalink: /kb/080/Q80259/
 ---
 
 ## Q80259: PC Gen: Contents of Modem Script File MICROCOM.MDM

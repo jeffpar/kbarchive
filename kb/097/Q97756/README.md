@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q97756: 3Server/Suppressing Extra Printed Page"
-permalink: kb/097/Q97756/
+permalink: /kb/097/Q97756/
 ---
 
 ## Q97756: 3Server/Suppressing Extra Printed Page

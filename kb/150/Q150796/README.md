@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150796: 5250 Emulator Displays a Black Screen Then Disconnects"
-permalink: kb/150/Q150796/
+permalink: /kb/150/Q150796/
 ---
 
 ## Q150796: 5250 Emulator Displays a Black Screen Then Disconnects

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q284068: CFS2: Training Missions Documentation Is Incorrect"
-permalink: kb/284/Q284068/
+permalink: /kb/284/Q284068/
 ---
 
 ## Q284068: CFS2: Training Missions Documentation Is Incorrect

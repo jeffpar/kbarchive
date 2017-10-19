@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152029: HOWTO: Prevent Creation of Initial Macintosh Document"
-permalink: kb/152/Q152029/
+permalink: /kb/152/Q152029/
 ---
 
 ## Q152029: HOWTO: Prevent Creation of Initial Macintosh Document

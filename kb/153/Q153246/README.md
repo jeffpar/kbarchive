@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153246: Sms.exe Fails to Start When Attaching Sites"
-permalink: kb/153/Q153246/
+permalink: /kb/153/Q153246/
 ---
 
 ## Q153246: Sms.exe Fails to Start When Attaching Sites

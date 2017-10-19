@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q90205: WFWG with NetBEUI Runs Slowly on Large Networks"
-permalink: kb/090/Q90205/
+permalink: /kb/090/Q90205/
 ---
 
 ## Q90205: WFWG with NetBEUI Runs Slowly on Large Networks

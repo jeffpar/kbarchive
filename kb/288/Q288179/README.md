@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288179: Computer Hangs Randomly with NTFS and Cache Manager"
-permalink: kb/288/Q288179/
+permalink: /kb/288/Q288179/
 ---
 
 ## Q288179: Computer Hangs Randomly with NTFS and Cache Manager

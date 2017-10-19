@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154536: SMS: Remote Control &quot;Permission Required&quot; Behavior"
-permalink: kb/154/Q154536/
+permalink: /kb/154/Q154536/
 ---
 
 ## Q154536: SMS: Remote Control &quot;Permission Required&quot; Behavior

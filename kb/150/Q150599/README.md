@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150599: Incompatibility Between Setmarks and Filemarks"
-permalink: kb/150/Q150599/
+permalink: /kb/150/Q150599/
 ---
 
 ## Q150599: Incompatibility Between Setmarks and Filemarks

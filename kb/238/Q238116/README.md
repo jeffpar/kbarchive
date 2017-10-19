@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238116: PRB: Accessing Temporary SQL Server Table Result: DB_E_NOTABLE"
-permalink: kb/238/Q238116/
+permalink: /kb/238/Q238116/
 ---
 
 ## Q238116: PRB: Accessing Temporary SQL Server Table Result: DB_E_NOTABLE

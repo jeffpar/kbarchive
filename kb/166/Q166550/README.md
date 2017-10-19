@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166550: XCLN: Active Messaging App Running as Service Fails"
-permalink: kb/166/Q166550/
+permalink: /kb/166/Q166550/
 ---
 
 ## Q166550: XCLN: Active Messaging App Running as Service Fails

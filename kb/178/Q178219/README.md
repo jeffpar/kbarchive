@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178219: XADM: Administrator Cannot Specify a Font Size in IMC"
-permalink: kb/178/Q178219/
+permalink: /kb/178/Q178219/
 ---
 
 ## Q178219: XADM: Administrator Cannot Specify a Font Size in IMC

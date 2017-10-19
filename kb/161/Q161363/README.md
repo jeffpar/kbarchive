@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161363: Installing Crystal Semiconductor CS4232/CS4236 PnP Driver"
-permalink: kb/161/Q161363/
+permalink: /kb/161/Q161363/
 ---
 
 ## Q161363: Installing Crystal Semiconductor CS4232/CS4236 PnP Driver

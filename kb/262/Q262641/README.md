@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262641: Motocross Madness 2: Description of a Ghost Race"
-permalink: kb/262/Q262641/
+permalink: /kb/262/Q262641/
 ---
 
 ## Q262641: Motocross Madness 2: Description of a Ghost Race

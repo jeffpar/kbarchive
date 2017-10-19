@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q218992: INFO: Using Visual Basic 5.0 and RDO 2.0 With SQL Server 7.0"
-permalink: kb/218/Q218992/
+permalink: /kb/218/Q218992/
 ---
 
 ## Q218992: INFO: Using Visual Basic 5.0 and RDO 2.0 With SQL Server 7.0

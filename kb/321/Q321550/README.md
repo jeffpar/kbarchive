@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321550: HOWTO: Optimize VFP Apps While Using Norton AntiVirus 2002"
-permalink: kb/321/Q321550/
+permalink: /kb/321/Q321550/
 ---
 
 ## Q321550: HOWTO: Optimize VFP Apps While Using Norton AntiVirus 2002

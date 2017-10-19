@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239664: Encarta 2000: Cannot Play &quot;Arabian Camel&quot; in Full Screen Mode"
-permalink: kb/239/Q239664/
+permalink: /kb/239/Q239664/
 ---
 
 ## Q239664: Encarta 2000: Cannot Play &quot;Arabian Camel&quot; in Full Screen Mode

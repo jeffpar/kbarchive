@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274845: Crimson Skies: How to Manually Back Up Saved Games"
-permalink: kb/274/Q274845/
+permalink: /kb/274/Q274845/
 ---
 
 ## Q274845: Crimson Skies: How to Manually Back Up Saved Games

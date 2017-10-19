@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184054: XCON: NDR on Message from cc:Mail PO with Friendly Name"
-permalink: kb/184/Q184054/
+permalink: /kb/184/Q184054/
 ---
 
 ## Q184054: XCON: NDR on Message from cc:Mail PO with Friendly Name

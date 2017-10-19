@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177116: ODE97: How to Create Context-Sensitive Help for an MS Access DB"
-permalink: kb/177/Q177116/
+permalink: /kb/177/Q177116/
 ---
 
 ## Q177116: ODE97: How to Create Context-Sensitive Help for an MS Access DB

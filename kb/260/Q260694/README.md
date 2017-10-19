@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260694: Description of the MaxClientRequestBuffer Registry Value"
-permalink: kb/260/Q260694/
+permalink: /kb/260/Q260694/
 ---
 
 ## Q260694: Description of the MaxClientRequestBuffer Registry Value

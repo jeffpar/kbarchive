@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98977: PC WSPlus: Setting up Dynamic Connections"
-permalink: kb/098/Q98977/
+permalink: /kb/098/Q98977/
 ---
 
 ## Q98977: PC WSPlus: Setting up Dynamic Connections

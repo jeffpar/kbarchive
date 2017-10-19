@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180945: HOWTO: Disconnect a Project from Source Control"
-permalink: kb/180/Q180945/
+permalink: /kb/180/Q180945/
 ---
 
 ## Q180945: HOWTO: Disconnect a Project from Source Control

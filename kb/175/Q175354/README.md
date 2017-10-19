@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175354: XCON: Repeated Event IDs, 4284 &amp; 4287, Indicate Network Problem"
-permalink: kb/175/Q175354/
+permalink: /kb/175/Q175354/
 ---
 
 ## Q175354: XCON: Repeated Event IDs, 4284 &amp; 4287, Indicate Network Problem

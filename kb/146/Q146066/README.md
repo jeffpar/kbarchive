@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146066: Sch+ 1.0 User Unable to Read Meeting Details of Sch+ 7.0 User"
-permalink: kb/146/Q146066/
+permalink: /kb/146/Q146066/
 ---
 
 ## Q146066: Sch+ 1.0 User Unable to Read Meeting Details of Sch+ 7.0 User

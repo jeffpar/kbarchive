@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140860: HOWTO: Refresh a Graph"
-permalink: kb/140/Q140860/
+permalink: /kb/140/Q140860/
 ---
 
 ## Q140860: HOWTO: Refresh a Graph

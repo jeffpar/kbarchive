@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146481: XFOR: Certain Fields Are Not Activated After Adding Domain"
-permalink: kb/146/Q146481/
+permalink: /kb/146/Q146481/
 ---
 
 ## Q146481: XFOR: Certain Fields Are Not Activated After Adding Domain

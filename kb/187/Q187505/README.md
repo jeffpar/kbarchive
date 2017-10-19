@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187505: Documents May Not Get Indexed Correctly"
-permalink: kb/187/Q187505/
+permalink: /kb/187/Q187505/
 ---
 
 ## Q187505: Documents May Not Get Indexed Correctly

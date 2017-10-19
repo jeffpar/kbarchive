@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188588: VB5SP3DS.EXE Contains Visual Basic SP3 Debugging Symbols"
-permalink: kb/188/Q188588/
+permalink: /kb/188/Q188588/
 ---
 
 ## Q188588: VB5SP3DS.EXE Contains Visual Basic SP3 Debugging Symbols

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187503: Very Long URL Passed to ASP May Cause Access Violation"
-permalink: kb/187/Q187503/
+permalink: /kb/187/Q187503/
 ---
 
 ## Q187503: Very Long URL Passed to ASP May Cause Access Violation

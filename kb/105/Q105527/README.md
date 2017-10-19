@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105527: X400: Bodypart Types Supported by Mail for PC Networks"
-permalink: kb/105/Q105527/
+permalink: /kb/105/Q105527/
 ---
 
 ## Q105527: X400: Bodypart Types Supported by Mail for PC Networks

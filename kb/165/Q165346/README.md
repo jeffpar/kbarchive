@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165346: FP: Server Side Includes Pose Security Threat W/ Feedback Form"
-permalink: kb/165/Q165346/
+permalink: /kb/165/Q165346/
 ---
 
 ## Q165346: FP: Server Side Includes Pose Security Threat W/ Feedback Form

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q32866: Entering and Displaying Control Characters in TELNET or EDLIN"
-permalink: kb/032/Q32866/
+permalink: /kb/032/Q32866/
 ---
 
 ## Q32866: Entering and Displaying Control Characters in TELNET or EDLIN

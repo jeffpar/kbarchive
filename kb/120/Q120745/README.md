@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120745: DELL Omniplex: SONY CD-ROM Fails to Initialize"
-permalink: kb/120/Q120745/
+permalink: /kb/120/Q120745/
 ---
 
 ## Q120745: DELL Omniplex: SONY CD-ROM Fails to Initialize

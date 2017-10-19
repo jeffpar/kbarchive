@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137105: Size Limits for Sending and Receiving MSN E-mail"
-permalink: kb/137/Q137105/
+permalink: /kb/137/Q137105/
 ---
 
 ## Q137105: Size Limits for Sending and Receiving MSN E-mail

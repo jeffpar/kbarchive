@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73794: Windows Productivity Pack Installation Deletes Other Groups"
-permalink: kb/073/Q73794/
+permalink: /kb/073/Q73794/
 ---
 
 ## Q73794: Windows Productivity Pack Installation Deletes Other Groups

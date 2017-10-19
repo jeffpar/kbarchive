@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145578: STOP Msg: 0xc000021a After Changing Drive Letter Assignment"
-permalink: kb/145/Q145578/
+permalink: /kb/145/Q145578/
 ---
 
 ## Q145578: STOP Msg: 0xc000021a After Changing Drive Letter Assignment

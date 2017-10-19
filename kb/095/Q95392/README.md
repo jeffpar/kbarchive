@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95392: INFO: Managing Icons Extracted Using ExtractIcon()"
-permalink: kb/095/Q95392/
+permalink: /kb/095/Q95392/
 ---
 
 ## Q95392: INFO: Managing Icons Extracted Using ExtractIcon()

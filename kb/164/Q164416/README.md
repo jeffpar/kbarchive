@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164416: STOP 0X0000000A in Afd.sys on Multiprocessor Systems"
-permalink: kb/164/Q164416/
+permalink: /kb/164/Q164416/
 ---
 
 ## Q164416: STOP 0X0000000A in Afd.sys on Multiprocessor Systems

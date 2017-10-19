@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189090: Age of Empires: Wall Is Built in the Wrong Direction"
-permalink: kb/189/Q189090/
+permalink: /kb/189/Q189090/
 ---
 
 ## Q189090: Age of Empires: Wall Is Built in the Wrong Direction

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167668: HOWTO: Pass a SafeArray of Strings in a VARIANT&#42;"
-permalink: kb/167/Q167668/
+permalink: /kb/167/Q167668/
 ---
 
 ## Q167668: HOWTO: Pass a SafeArray of Strings in a VARIANT&#42;

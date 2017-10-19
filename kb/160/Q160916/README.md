@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160916: HOWTO: Ensure Form Uses Tables from Correct .dbc File Location"
-permalink: kb/160/Q160916/
+permalink: /kb/160/Q160916/
 ---
 
 ## Q160916: HOWTO: Ensure Form Uses Tables from Correct .dbc File Location

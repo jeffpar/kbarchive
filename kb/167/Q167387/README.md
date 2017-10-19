@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167387: WD97: WordBasic.Files&#36;() Command Adds Quotation Marks to Result"
-permalink: kb/167/Q167387/
+permalink: /kb/167/Q167387/
 ---
 
 ## Q167387: WD97: WordBasic.Files&#36;() Command Adds Quotation Marks to Result

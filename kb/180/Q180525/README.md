@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180525: PRB: DCOMCNFG Reports Multiple Copies of DCOM Server"
-permalink: kb/180/Q180525/
+permalink: /kb/180/Q180525/
 ---
 
 ## Q180525: PRB: DCOMCNFG Reports Multiple Copies of DCOM Server

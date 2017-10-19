@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238573: XADM: Installing and Configuring InterOrg Replication Utility"
-permalink: kb/238/Q238573/
+permalink: /kb/238/Q238573/
 ---
 
 ## Q238573: XADM: Installing and Configuring InterOrg Replication Utility

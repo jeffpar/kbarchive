@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251311: BUG: Collection Tool Not Being Removed from the Start Menu"
-permalink: kb/251/Q251311/
+permalink: /kb/251/Q251311/
 ---
 
 ## Q251311: BUG: Collection Tool Not Being Removed from the Start Menu

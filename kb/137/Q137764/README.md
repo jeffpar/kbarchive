@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137764: Road Atlas 4.0: Error Executing PSS.BAT File on Streets CD"
-permalink: kb/137/Q137764/
+permalink: /kb/137/Q137764/
 ---
 
 ## Q137764: Road Atlas 4.0: Error Executing PSS.BAT File on Streets CD

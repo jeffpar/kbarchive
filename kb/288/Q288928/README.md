@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288928: BatchOptimistic With Client Side Cursor in DataEnvironment Fails"
-permalink: kb/288/Q288928/
+permalink: /kb/288/Q288928/
 ---
 
 ## Q288928: BatchOptimistic With Client Side Cursor in DataEnvironment Fails

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84354: Cannot Find DOS Application when Executed from Windows 3.1"
-permalink: kb/084/Q84354/
+permalink: /kb/084/Q84354/
 ---
 
 ## Q84354: Cannot Find DOS Application when Executed from Windows 3.1

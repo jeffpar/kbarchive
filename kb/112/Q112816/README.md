@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112816: Locating and Excluding RAM/ROM Addresses in the UMA"
-permalink: kb/112/Q112816/
+permalink: /kb/112/Q112816/
 ---
 
 ## Q112816: Locating and Excluding RAM/ROM Addresses in the UMA

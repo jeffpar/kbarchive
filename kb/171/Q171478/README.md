@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171478: FIX: Cannot Set Width/Height of UserControl in Resize Event"
-permalink: kb/171/Q171478/
+permalink: /kb/171/Q171478/
 ---
 
 ## Q171478: FIX: Cannot Set Width/Height of UserControl in Resize Event

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131952: Flight Simulator 5.1: Disk 3 (Setup) Contents (3.5 1.44 MB)"
-permalink: kb/131/Q131952/
+permalink: /kb/131/Q131952/
 ---
 
 ## Q131952: Flight Simulator 5.1: Disk 3 (Setup) Contents (3.5 1.44 MB)

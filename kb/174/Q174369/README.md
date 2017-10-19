@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174369: Selecting Europe Navaids Causes System Hang"
-permalink: kb/174/Q174369/
+permalink: /kb/174/Q174369/
 ---
 
 ## Q174369: Selecting Europe Navaids Causes System Hang

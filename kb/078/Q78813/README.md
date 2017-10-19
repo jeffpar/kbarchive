@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78813: HIMEM.SYS Reports Loading A20 Handler X,Y"
-permalink: kb/078/Q78813/
+permalink: /kb/078/Q78813/
 ---
 
 ## Q78813: HIMEM.SYS Reports Loading A20 Handler X,Y

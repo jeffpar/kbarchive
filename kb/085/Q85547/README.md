@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85547: Windows 3.1 Hangs when IBM BASIC is Run in Enhanced Mode"
-permalink: kb/085/Q85547/
+permalink: /kb/085/Q85547/
 ---
 
 ## Q85547: Windows 3.1 Hangs when IBM BASIC is Run in Enhanced Mode

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224600: RPC Application Causes AV When Dereferencing Freed Connection"
-permalink: kb/224/Q224600/
+permalink: /kb/224/Q224600/
 ---
 
 ## Q224600: RPC Application Causes AV When Dereferencing Freed Connection

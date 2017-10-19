@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82273: AST 386 FastBoard May Cause EMM386 Error"
-permalink: kb/082/Q82273/
+permalink: /kb/082/Q82273/
 ---
 
 ## Q82273: AST 386 FastBoard May Cause EMM386 Error

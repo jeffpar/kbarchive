@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192868: SMSINST: Services Not Installed with Repackage of Norton AV 4.0"
-permalink: kb/192/Q192868/
+permalink: /kb/192/Q192868/
 ---
 
 ## Q192868: SMSINST: Services Not Installed with Repackage of Norton AV 4.0

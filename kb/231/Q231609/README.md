@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231609: Requesting ASP File May Cause 404 Error"
-permalink: kb/231/Q231609/
+permalink: /kb/231/Q231609/
 ---
 
 ## Q231609: Requesting ASP File May Cause 404 Error

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117467: Windows 95 Message: This Folder Already Contains a File..."
-permalink: kb/117/Q117467/
+permalink: /kb/117/Q117467/
 ---
 
 ## Q117467: Windows 95 Message: This Folder Already Contains a File...

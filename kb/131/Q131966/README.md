@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131966: Bookshelf 1995: Copy to Word Command Causes WinWord Error 537"
-permalink: kb/131/Q131966/
+permalink: /kb/131/Q131966/
 ---
 
 ## Q131966: Bookshelf 1995: Copy to Word Command Causes WinWord Error 537

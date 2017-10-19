@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153962: XADM: Err Msg: The Interface is Unknown"
-permalink: kb/153/Q153962/
+permalink: /kb/153/Q153962/
 ---
 
 ## Q153962: XADM: Err Msg: The Interface is Unknown

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135951: MS Plus! Setup Incorrectly Estimates Required Disk Space"
-permalink: kb/135/Q135951/
+permalink: /kb/135/Q135951/
 ---
 
 ## Q135951: MS Plus! Setup Incorrectly Estimates Required Disk Space

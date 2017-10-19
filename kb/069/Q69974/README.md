@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69974: Information Regarding Buffered I/O and MSCDEX"
-permalink: kb/069/Q69974/
+permalink: /kb/069/Q69974/
 ---
 
 ## Q69974: Information Regarding Buffered I/O and MSCDEX

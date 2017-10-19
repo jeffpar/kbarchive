@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188549: SMS: Runtime Error R6005/R6009 During Inventory on Win95 Client"
-permalink: kb/188/Q188549/
+permalink: /kb/188/Q188549/
 ---
 
 ## Q188549: SMS: Runtime Error R6005/R6009 During Inventory on Win95 Client

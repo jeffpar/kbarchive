@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112206: PC WRmt: Only Use Notepad to Edit Modem Script Files"
-permalink: kb/112/Q112206/
+permalink: /kb/112/Q112206/
 ---
 
 ## Q112206: PC WRmt: Only Use Notepad to Edit Modem Script Files

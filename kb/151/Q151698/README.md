@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151698: APPC DISPLAY Verb May Return Incorrect LU6.2 Session Info"
-permalink: kb/151/Q151698/
+permalink: /kb/151/Q151698/
 ---
 
 ## Q151698: APPC DISPLAY Verb May Return Incorrect LU6.2 Session Info

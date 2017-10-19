@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94963: File Manager Formats 512 Bytes Per Sector Geometry Only"
-permalink: kb/094/Q94963/
+permalink: /kb/094/Q94963/
 ---
 
 ## Q94963: File Manager Formats 512 Bytes Per Sector Geometry Only

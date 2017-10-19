@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120687: Internet Basics"
-permalink: kb/120/Q120687/
+permalink: /kb/120/Q120687/
 ---
 
 ## Q120687: Internet Basics

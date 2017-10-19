@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246311: Err Msg: An Error Occurred Getting or Setting a Configuration..."
-permalink: kb/246/Q246311/
+permalink: /kb/246/Q246311/
 ---
 
 ## Q246311: Err Msg: An Error Occurred Getting or Setting a Configuration...

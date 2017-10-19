@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q106276: WFWG Err Msg: The 32-Bit File System Is Incompatible...SUBST"
-permalink: kb/106/Q106276/
+permalink: /kb/106/Q106276/
 ---
 
 ## Q106276: WFWG Err Msg: The 32-Bit File System Is Incompatible...SUBST

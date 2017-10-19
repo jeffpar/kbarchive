@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q266255: XCLN: Default .pst File Creation Path Needs to Be Configurable"
-permalink: kb/266/Q266255/
+permalink: /kb/266/Q266255/
 ---
 
 ## Q266255: XCLN: Default .pst File Creation Path Needs to Be Configurable

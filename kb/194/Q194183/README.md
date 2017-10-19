@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194183: Virtual Globe: Photo Credit Is Truncated When You Copy Picture"
-permalink: kb/194/Q194183/
+permalink: /kb/194/Q194183/
 ---
 
 ## Q194183: Virtual Globe: Photo Credit Is Truncated When You Copy Picture

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109699: PC WSPlus: Sending a Meeting Request for a Busy Resource"
-permalink: kb/109/Q109699/
+permalink: /kb/109/Q109699/
 ---
 
 ## Q109699: PC WSPlus: Sending a Meeting Request for a Busy Resource

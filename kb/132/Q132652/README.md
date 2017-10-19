@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132652: Pressing ESC Key May Cause Garbled Startup Screen"
-permalink: kb/132/Q132652/
+permalink: /kb/132/Q132652/
 ---
 
 ## Q132652: Pressing ESC Key May Cause Garbled Startup Screen

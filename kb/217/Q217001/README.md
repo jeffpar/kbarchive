@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217001: GetHostByName API Returns Unbindable Addresses"
-permalink: kb/217/Q217001/
+permalink: /kb/217/Q217001/
 ---
 
 ## Q217001: GetHostByName API Returns Unbindable Addresses

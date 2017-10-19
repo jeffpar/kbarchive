@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173120: SMS: Windows NT Remote Control May Fail in Routed Environment"
-permalink: kb/173/Q173120/
+permalink: /kb/173/Q173120/
 ---
 
 ## Q173120: SMS: Windows NT Remote Control May Fail in Routed Environment

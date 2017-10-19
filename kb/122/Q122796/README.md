@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122796: Setup Problems with Gateway 2000 P5-60 and Memory Modules"
-permalink: kb/122/Q122796/
+permalink: /kb/122/Q122796/
 ---
 
 ## Q122796: Setup Problems with Gateway 2000 P5-60 and Memory Modules

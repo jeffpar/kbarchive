@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279401: PRB: Overlocalized Sort Order Strings in Access/Jet ODBC Driver"
-permalink: kb/279/Q279401/
+permalink: /kb/279/Q279401/
 ---
 
 ## Q279401: PRB: Overlocalized Sort Order Strings in Access/Jet ODBC Driver

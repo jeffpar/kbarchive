@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68565: Creating Dynamic-Linked Libraries Without Data Segments"
-permalink: kb/068/Q68565/
+permalink: /kb/068/Q68565/
 ---
 
 ## Q68565: Creating Dynamic-Linked Libraries Without Data Segments

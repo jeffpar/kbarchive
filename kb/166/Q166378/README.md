@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166378: HOWTO: Simulate an Incremental Search from a Text Box"
-permalink: kb/166/Q166378/
+permalink: /kb/166/Q166378/
 ---
 
 ## Q166378: HOWTO: Simulate an Incremental Search from a Text Box

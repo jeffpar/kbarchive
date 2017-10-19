@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189774: BUG: Repeated Outputs to _SCREEN Distorts _SCREEN.Picture"
-permalink: kb/189/Q189774/
+permalink: /kb/189/Q189774/
 ---
 
 ## Q189774: BUG: Repeated Outputs to _SCREEN Distorts _SCREEN.Picture

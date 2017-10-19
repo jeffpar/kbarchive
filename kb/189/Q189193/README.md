@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189193: XADM: Problems Occur When Incorrect Property Is Set on Message"
-permalink: kb/189/Q189193/
+permalink: /kb/189/Q189193/
 ---
 
 ## Q189193: XADM: Problems Occur When Incorrect Property Is Set on Message

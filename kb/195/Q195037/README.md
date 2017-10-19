@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195037: XFOR: Exchange Server NNTP Event ID 11214"
-permalink: kb/195/Q195037/
+permalink: /kb/195/Q195037/
 ---
 
 ## Q195037: XFOR: Exchange Server NNTP Event ID 11214

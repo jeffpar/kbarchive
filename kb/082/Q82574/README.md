@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82574: GP Fault and Hang with Aristosoft's Wired for Sound"
-permalink: kb/082/Q82574/
+permalink: /kb/082/Q82574/
 ---
 
 ## Q82574: GP Fault and Hang with Aristosoft's Wired for Sound

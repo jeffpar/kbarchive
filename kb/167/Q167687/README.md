@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167687: PAX Command Gives Error &quot;Bad Magic Number&quot;"
-permalink: kb/167/Q167687/
+permalink: /kb/167/Q167687/
 ---
 
 ## Q167687: PAX Command Gives Error &quot;Bad Magic Number&quot;

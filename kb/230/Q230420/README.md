@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q230420: XCON: Configuring an X.400 Connector Between a Commercial and a"
-permalink: kb/230/Q230420/
+permalink: /kb/230/Q230420/
 ---
 
 ## Q230420: XCON: Configuring an X.400 Connector Between a Commercial and a

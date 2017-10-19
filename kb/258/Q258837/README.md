@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258837: Services That Use Remote Connections Leak User Sessions"
-permalink: kb/258/Q258837/
+permalink: /kb/258/Q258837/
 ---
 
 ## Q258837: Services That Use Remote Connections Leak User Sessions

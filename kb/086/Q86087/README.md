@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86087: Mvfpprnt.exe Mastering Visual FoxPro Print Utility"
-permalink: kb/086/Q86087/
+permalink: /kb/086/Q86087/
 ---
 
 ## Q86087: Mvfpprnt.exe Mastering Visual FoxPro Print Utility

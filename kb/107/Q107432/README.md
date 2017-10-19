@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107432: PRB: Inline Assembly C++ Function May Need Return Statement"
-permalink: kb/107/Q107432/
+permalink: /kb/107/Q107432/
 ---
 
 ## Q107432: PRB: Inline Assembly C++ Function May Need Return Statement

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119452: PC DirSync: No Requestor Updates to Send"
-permalink: kb/119/Q119452/
+permalink: /kb/119/Q119452/
 ---
 
 ## Q119452: PC DirSync: No Requestor Updates to Send

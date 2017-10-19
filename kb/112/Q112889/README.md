@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112889: PC DOS: Err Msg: Error Mailing to Mailbox..."
-permalink: kb/112/Q112889/
+permalink: /kb/112/Q112889/
 ---
 
 ## Q112889: PC DOS: Err Msg: Error Mailing to Mailbox...

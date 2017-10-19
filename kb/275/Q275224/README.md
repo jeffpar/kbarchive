@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275224: Encarta Language Learning Online: Binary Text File Is Displayed"
-permalink: kb/275/Q275224/
+permalink: /kb/275/Q275224/
 ---
 
 ## Q275224: Encarta Language Learning Online: Binary Text File Is Displayed

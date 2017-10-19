@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167024: XFOR: cc:Mail Migration Generates Dr. Watson in Mailmig.exe"
-permalink: kb/167/Q167024/
+permalink: /kb/167/Q167024/
 ---
 
 ## Q167024: XFOR: cc:Mail Migration Generates Dr. Watson in Mailmig.exe

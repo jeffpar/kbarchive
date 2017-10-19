@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q320196: Flight Simulator 2002: No Landing Lights or Virtual Cockpit"
-permalink: kb/320/Q320196/
+permalink: /kb/320/Q320196/
 ---
 
 ## Q320196: Flight Simulator 2002: No Landing Lights or Virtual Cockpit

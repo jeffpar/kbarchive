@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164130: Scheduler Service Will Not Start if Server Moved from Domain"
-permalink: kb/164/Q164130/
+permalink: /kb/164/Q164130/
 ---
 
 ## Q164130: Scheduler Service Will Not Start if Server Moved from Domain

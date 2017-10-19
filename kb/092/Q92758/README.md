@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92758: Setup: Files and Directories Changed During Installation"
-permalink: kb/092/Q92758/
+permalink: /kb/092/Q92758/
 ---
 
 ## Q92758: Setup: Files and Directories Changed During Installation

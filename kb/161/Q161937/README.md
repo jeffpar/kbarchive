@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161937: XCON: IMC Stops Processing Mail on Alpha Platform"
-permalink: kb/161/Q161937/
+permalink: /kb/161/Q161937/
 ---
 
 ## Q161937: XCON: IMC Stops Processing Mail on Alpha Platform

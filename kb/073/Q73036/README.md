@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73036: BUG: Macro Expansion May Occur Before Macro Call in Listing File"
-permalink: kb/073/Q73036/
+permalink: /kb/073/Q73036/
 ---
 
 ## Q73036: BUG: Macro Expansion May Occur Before Macro Call in Listing File

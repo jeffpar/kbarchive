@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66974: WD97: Using the ASK Field with the IF Field in Word"
-permalink: kb/066/Q66974/
+permalink: /kb/066/Q66974/
 ---
 
 ## Q66974: WD97: Using the ASK Field with the IF Field in Word

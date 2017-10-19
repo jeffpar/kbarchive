@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224812: Some Keys May Not Work if Canadian Stnd Keyboard Layout Selected"
-permalink: kb/224/Q224812/
+permalink: /kb/224/Q224812/
 ---
 
 ## Q224812: Some Keys May Not Work if Canadian Stnd Keyboard Layout Selected

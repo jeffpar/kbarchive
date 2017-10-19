@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104298: PC MAPI: MAPISaveMail Function Resets Originator to Caller"
-permalink: kb/104/Q104298/
+permalink: /kb/104/Q104298/
 ---
 
 ## Q104298: PC MAPI: MAPISaveMail Function Resets Originator to Caller

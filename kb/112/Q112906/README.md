@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112906: PC Adm: Err Msg: Notice 10 No External Postoffices... Defined..."
-permalink: kb/112/Q112906/
+permalink: /kb/112/Q112906/
 ---
 
 ## Q112906: PC Adm: Err Msg: Notice 10 No External Postoffices... Defined...

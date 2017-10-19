@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246233: FIX: Nested UserControl DataSource Property Causes Crash"
-permalink: kb/246/Q246233/
+permalink: /kb/246/Q246233/
 ---
 
 ## Q246233: FIX: Nested UserControl DataSource Property Causes Crash

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187836: XWEB: How to Use Outlook Web Access Web Services &amp; HTML Forms"
-permalink: kb/187/Q187836/
+permalink: /kb/187/Q187836/
 ---
 
 ## Q187836: XWEB: How to Use Outlook Web Access Web Services &amp; HTML Forms

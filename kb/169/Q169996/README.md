@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169996: To Run an ISAPI DLL with #exec, Use the CGI Statement"
-permalink: kb/169/Q169996/
+permalink: /kb/169/Q169996/
 ---
 
 ## Q169996: To Run an ISAPI DLL with #exec, Use the CGI Statement

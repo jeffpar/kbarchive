@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241813: 1106: SNMP Service Is Ignoring Extension Agent DLL W3pmib.dll"
-permalink: kb/241/Q241813/
+permalink: /kb/241/Q241813/
 ---
 
 ## Q241813: 1106: SNMP Service Is Ignoring Extension Agent DLL W3pmib.dll

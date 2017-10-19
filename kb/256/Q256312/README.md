@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256312: FTP DIR Command Shows Time Created Instead of Year"
-permalink: kb/256/Q256312/
+permalink: /kb/256/Q256312/
 ---
 
 ## Q256312: FTP DIR Command Shows Time Created Instead of Year

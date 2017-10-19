@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152503: XADM: How to Eliminate DNS's MX records with Multiple Sites"
-permalink: kb/152/Q152503/
+permalink: /kb/152/Q152503/
 ---
 
 ## Q152503: XADM: How to Eliminate DNS's MX records with Multiple Sites

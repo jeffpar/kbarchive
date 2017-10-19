@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170856: IIS Log File May Be Truncated When Logging to Text File"
-permalink: kb/170/Q170856/
+permalink: /kb/170/Q170856/
 ---
 
 ## Q170856: IIS Log File May Be Truncated When Logging to Text File

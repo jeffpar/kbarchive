@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122132: Err Msg: Fatal Translation Error on Tape... with WangDat 3200"
-permalink: kb/122/Q122132/
+permalink: /kb/122/Q122132/
 ---
 
 ## Q122132: Err Msg: Fatal Translation Error on Tape... with WangDat 3200

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190085: BUG: No Binary Compatibility Error With Null GUIDs Enums"
-permalink: kb/190/Q190085/
+permalink: /kb/190/Q190085/
 ---
 
 ## Q190085: BUG: No Binary Compatibility Error With Null GUIDs Enums

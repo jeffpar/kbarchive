@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188833: XCLN: CDO Only Publishes Three Months of Free/Busy Data"
-permalink: kb/188/Q188833/
+permalink: /kb/188/Q188833/
 ---
 
 ## Q188833: XCLN: CDO Only Publishes Three Months of Free/Busy Data

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141908: PRB: Arrow Key Inconsistency in List Boxes"
-permalink: kb/141/Q141908/
+permalink: /kb/141/Q141908/
 ---
 
 ## Q141908: PRB: Arrow Key Inconsistency in List Boxes

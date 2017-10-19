@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185477: BUG: ActiveX Control in MDI Child Form Does Not Maintain Focus"
-permalink: kb/185/Q185477/
+permalink: /kb/185/Q185477/
 ---
 
 ## Q185477: BUG: ActiveX Control in MDI Child Form Does Not Maintain Focus

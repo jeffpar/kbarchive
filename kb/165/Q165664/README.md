@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165664: RPC Encoding API &quot;MesInqProcEncodingId&quot; May Not Work"
-permalink: kb/165/Q165664/
+permalink: /kb/165/Q165664/
 ---
 
 ## Q165664: RPC Encoding API &quot;MesInqProcEncodingId&quot; May Not Work

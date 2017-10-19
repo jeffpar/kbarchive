@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303202: ASPs Are Not Being Checked for Valid Values in Windows 2000"
-permalink: kb/303/Q303202/
+permalink: /kb/303/Q303202/
 ---
 
 ## Q303202: ASPs Are Not Being Checked for Valid Values in Windows 2000

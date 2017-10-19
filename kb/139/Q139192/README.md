@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139192: Julia Child: Only Title and Page Number Print"
-permalink: kb/139/Q139192/
+permalink: /kb/139/Q139192/
 ---
 
 ## Q139192: Julia Child: Only Title and Page Number Print

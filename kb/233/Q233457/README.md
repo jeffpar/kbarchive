@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233457: Business Planner: Problems When You Print Selected Rows of Table"
-permalink: kb/233/Q233457/
+permalink: /kb/233/Q233457/
 ---
 
 ## Q233457: Business Planner: Problems When You Print Selected Rows of Table

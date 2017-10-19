@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129200: Who Provides Support for the Arabic and Hebrew SDK?"
-permalink: kb/129/Q129200/
+permalink: /kb/129/Q129200/
 ---
 
 ## Q129200: Who Provides Support for the Arabic and Hebrew SDK?

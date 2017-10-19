@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157526: PRB: &lt;None&gt; as the Remote View Join Type Causes Error"
-permalink: kb/157/Q157526/
+permalink: /kb/157/Q157526/
 ---
 
 ## Q157526: PRB: &lt;None&gt; as the Remote View Join Type Causes Error

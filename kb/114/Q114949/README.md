@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114949: INFO: Description of the FOXTOUCH() Function"
-permalink: kb/114/Q114949/
+permalink: /kb/114/Q114949/
 ---
 
 ## Q114949: INFO: Description of the FOXTOUCH() Function

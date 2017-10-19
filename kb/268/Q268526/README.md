@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268526: Buffer Limit Exceeded Importing Exchange Groups in Metadirectory"
-permalink: kb/268/Q268526/
+permalink: /kb/268/Q268526/
 ---
 
 ## Q268526: Buffer Limit Exceeded Importing Exchange Groups in Metadirectory

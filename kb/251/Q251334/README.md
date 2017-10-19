@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251334: How to Remove Multiple Expired User Accounts from Windows NT"
-permalink: kb/251/Q251334/
+permalink: /kb/251/Q251334/
 ---
 
 ## Q251334: How to Remove Multiple Expired User Accounts from Windows NT

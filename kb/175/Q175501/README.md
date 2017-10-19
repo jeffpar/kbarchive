@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175501: BUG: RichTextBox Horizontal Scroll Bar Does Not Always Appear"
-permalink: kb/175/Q175501/
+permalink: /kb/175/Q175501/
 ---
 
 ## Q175501: BUG: RichTextBox Horizontal Scroll Bar Does Not Always Appear

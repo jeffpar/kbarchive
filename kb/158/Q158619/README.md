@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158619: INFO: STL Sample for the Vector Class Using the operat"
-permalink: kb/158/Q158619/
+permalink: /kb/158/Q158619/
 ---
 
 ## Q158619: INFO: STL Sample for the Vector Class Using the operat

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236811: XWEB: How to Set Up OWA for Specific Users"
-permalink: kb/236/Q236811/
+permalink: /kb/236/Q236811/
 ---
 
 ## Q236811: XWEB: How to Set Up OWA for Specific Users

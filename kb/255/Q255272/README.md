@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255272: BUG: CE: CommandBar Settings May Keep Key Events from Firing"
-permalink: kb/255/Q255272/
+permalink: /kb/255/Q255272/
 ---
 
 ## Q255272: BUG: CE: CommandBar Settings May Keep Key Events from Firing

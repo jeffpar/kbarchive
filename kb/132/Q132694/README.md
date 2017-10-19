@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132694: Windows NT May Hang With DEC Pathworks Installed"
-permalink: kb/132/Q132694/
+permalink: /kb/132/Q132694/
 ---
 
 ## Q132694: Windows NT May Hang With DEC Pathworks Installed

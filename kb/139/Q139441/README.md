@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139441: Dangerous Creatures Camouflage Interactivity:No Screen Redraw"
-permalink: kb/139/Q139441/
+permalink: /kb/139/Q139441/
 ---
 
 ## Q139441: Dangerous Creatures Camouflage Interactivity:No Screen Redraw

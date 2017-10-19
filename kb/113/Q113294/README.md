@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113294: FIX: CFrameWnd::UpdateFrameTitle() Removes Text after Hyphen"
-permalink: kb/113/Q113294/
+permalink: /kb/113/Q113294/
 ---
 
 ## Q113294: FIX: CFrameWnd::UpdateFrameTitle() Removes Text after Hyphen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q214864: Exchange Protocols Fail After Applying Windows NT 4.0 SP4"
-permalink: kb/214/Q214864/
+permalink: /kb/214/Q214864/
 ---
 
 ## Q214864: Exchange Protocols Fail After Applying Windows NT 4.0 SP4

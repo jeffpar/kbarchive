@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110547: Flight Simulator: Error Code (02)"
-permalink: kb/110/Q110547/
+permalink: /kb/110/Q110547/
 ---
 
 ## Q110547: Flight Simulator: Error Code (02)

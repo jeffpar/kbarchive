@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161411: SMS: Client Error: &quot;Cannot Load C:&#92;Windows&#92;Vuser.386&quot;"
-permalink: kb/161/Q161411/
+permalink: /kb/161/Q161411/
 ---
 
 ## Q161411: SMS: Client Error: &quot;Cannot Load C:&#92;Windows&#92;Vuser.386&quot;

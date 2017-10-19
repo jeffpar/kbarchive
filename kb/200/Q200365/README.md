@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200365: XFOR:Regulating Free/Busy Updates for Selective Custom Recipient"
-permalink: kb/200/Q200365/
+permalink: /kb/200/Q200365/
 ---
 
 ## Q200365: XFOR:Regulating Free/Busy Updates for Selective Custom Recipient

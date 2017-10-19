@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165995: Valid User Fails to Authenticate with NT Challenge/Response"
-permalink: kb/165/Q165995/
+permalink: /kb/165/Q165995/
 ---
 
 ## Q165995: Valid User Fails to Authenticate with NT Challenge/Response

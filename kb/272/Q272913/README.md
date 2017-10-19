@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272913: CreateRemoteThread May Leak Handle in Windows NT Terminal Server"
-permalink: kb/272/Q272913/
+permalink: /kb/272/Q272913/
 ---
 
 ## Q272913: CreateRemoteThread May Leak Handle in Windows NT Terminal Server

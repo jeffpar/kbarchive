@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140836: Windows 95 AFTP Client Reports WINAPPC.DLL is Corrupt"
-permalink: kb/140/Q140836/
+permalink: /kb/140/Q140836/
 ---
 
 ## Q140836: Windows 95 AFTP Client Reports WINAPPC.DLL is Corrupt

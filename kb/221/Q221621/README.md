@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221621: FIX: C0000005 Fatal Error In Editor Selecting Text Then Up Arrow"
-permalink: kb/221/Q221621/
+permalink: /kb/221/Q221621/
 ---
 
 ## Q221621: FIX: C0000005 Fatal Error In Editor Selecting Text Then Up Arrow

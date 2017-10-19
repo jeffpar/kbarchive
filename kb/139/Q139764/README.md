@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139764: Julia Child: Recipe Next and Previous Buttons Remain Red"
-permalink: kb/139/Q139764/
+permalink: /kb/139/Q139764/
 ---
 
 ## Q139764: Julia Child: Recipe Next and Previous Buttons Remain Red

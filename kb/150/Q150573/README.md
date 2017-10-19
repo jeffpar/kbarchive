@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150573: FIX: C2084 When Template Class Constructor Has No Body"
-permalink: kb/150/Q150573/
+permalink: /kb/150/Q150573/
 ---
 
 ## Q150573: FIX: C2084 When Template Class Constructor Has No Body

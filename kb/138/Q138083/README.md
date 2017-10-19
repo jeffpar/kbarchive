@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138083: Implementing the %SERVERNAME% Environment Variable In Profiles"
-permalink: kb/138/Q138083/
+permalink: /kb/138/Q138083/
 ---
 
 ## Q138083: Implementing the %SERVERNAME% Environment Variable In Profiles

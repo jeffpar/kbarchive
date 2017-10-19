@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195505: XADM: How to Recover When the Database Drive Fails"
-permalink: kb/195/Q195505/
+permalink: /kb/195/Q195505/
 ---
 
 ## Q195505: XADM: How to Recover When the Database Drive Fails

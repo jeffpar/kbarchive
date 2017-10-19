@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178441: ActiveMovie Version Error During Starts Here Setup"
-permalink: kb/178/Q178441/
+permalink: /kb/178/Q178441/
 ---
 
 ## Q178441: ActiveMovie Version Error During Starts Here Setup

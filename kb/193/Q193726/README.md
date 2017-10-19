@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193726: PRB: Problems Using the Graph Wizard in Visual FoxPro 6.0"
-permalink: kb/193/Q193726/
+permalink: /kb/193/Q193726/
 ---
 
 ## Q193726: PRB: Problems Using the Graph Wizard in Visual FoxPro 6.0

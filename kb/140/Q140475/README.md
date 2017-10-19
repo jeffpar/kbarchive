@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140475: PRB: Unable to Print to LPT1: Under Windows NT on Motorola"
-permalink: kb/140/Q140475/
+permalink: /kb/140/Q140475/
 ---
 
 ## Q140475: PRB: Unable to Print to LPT1: Under Windows NT on Motorola

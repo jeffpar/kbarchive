@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252507: SNA Server Service Pack 3 Appears to Update but Does Not"
-permalink: kb/252/Q252507/
+permalink: /kb/252/Q252507/
 ---
 
 ## Q252507: SNA Server Service Pack 3 Appears to Update but Does Not

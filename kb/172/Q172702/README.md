@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172702: ODE97: Using Newer Version of Comctl32.ocx with ODE Applications"
-permalink: kb/172/Q172702/
+permalink: /kb/172/Q172702/
 ---
 
 ## Q172702: ODE97: Using Newer Version of Comctl32.ocx with ODE Applications

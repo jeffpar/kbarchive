@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261210: XFOR: Some Exchange Server Recipients Not Synchronized to Notes"
-permalink: kb/261/Q261210/
+permalink: /kb/261/Q261210/
 ---
 
 ## Q261210: XFOR: Some Exchange Server Recipients Not Synchronized to Notes

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167752: XWEB: Web Client Fails with NTLM"
-permalink: kb/167/Q167752/
+permalink: /kb/167/Q167752/
 ---
 
 ## Q167752: XWEB: Web Client Fails with NTLM

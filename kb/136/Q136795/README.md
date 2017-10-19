@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136795: How to Change the Mouse Pointer"
-permalink: kb/136/Q136795/
+permalink: /kb/136/Q136795/
 ---
 
 ## Q136795: How to Change the Mouse Pointer

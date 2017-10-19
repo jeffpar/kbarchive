@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159968: WD97: Macro to Turn All Field Codes On and Off"
-permalink: kb/159/Q159968/
+permalink: /kb/159/Q159968/
 ---
 
 ## Q159968: WD97: Macro to Turn All Field Codes On and Off

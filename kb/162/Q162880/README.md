@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162880: XADM: Event ID-1305 Jet_errObjectNotFound"
-permalink: kb/162/Q162880/
+permalink: /kb/162/Q162880/
 ---
 
 ## Q162880: XADM: Event ID-1305 Jet_errObjectNotFound

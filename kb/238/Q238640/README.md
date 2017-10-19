@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238640: How to Set Up the Microsoft Network Client 3.0 for MS-DOS WP"
-permalink: kb/238/Q238640/
+permalink: /kb/238/Q238640/
 ---
 
 ## Q238640: How to Set Up the Microsoft Network Client 3.0 for MS-DOS WP

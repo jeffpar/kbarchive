@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151499: FIX: Compiler Performs Illegal Sign Conversion Optimization"
-permalink: kb/151/Q151499/
+permalink: /kb/151/Q151499/
 ---
 
 ## Q151499: FIX: Compiler Performs Illegal Sign Conversion Optimization

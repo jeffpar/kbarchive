@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87348: BUG: HPPCL Driver Reports SETABORTPROC Not Supported"
-permalink: kb/087/Q87348/
+permalink: /kb/087/Q87348/
 ---
 
 ## Q87348: BUG: HPPCL Driver Reports SETABORTPROC Not Supported

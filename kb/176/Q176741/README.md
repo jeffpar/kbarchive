@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176741: XADM: ~DEL in Directory Name Column Creates Duplicate User"
-permalink: kb/176/Q176741/
+permalink: /kb/176/Q176741/
 ---
 
 ## Q176741: XADM: ~DEL in Directory Name Column Creates Duplicate User

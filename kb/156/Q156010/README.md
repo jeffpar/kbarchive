@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156010: INFO: Pool Manager Sample (Custom OLE Automation Server)"
-permalink: kb/156/Q156010/
+permalink: /kb/156/Q156010/
 ---
 
 ## Q156010: INFO: Pool Manager Sample (Custom OLE Automation Server)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114480: BUG: SET COMPATIBLE or Catalog Manager Changes MEMOWIDTH to 80"
-permalink: kb/114/Q114480/
+permalink: /kb/114/Q114480/
 ---
 
 ## Q114480: BUG: SET COMPATIBLE or Catalog Manager Changes MEMOWIDTH to 80

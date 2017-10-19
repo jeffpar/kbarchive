@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143210: HOWTO: How to Add the Finish Button to a Wizard Property Sheet"
-permalink: kb/143/Q143210/
+permalink: /kb/143/Q143210/
 ---
 
 ## Q143210: HOWTO: How to Add the Finish Button to a Wizard Property Sheet

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249719: Error Message: 8447: Internet Server Error"
-permalink: kb/249/Q249719/
+permalink: /kb/249/Q249719/
 ---
 
 ## Q249719: Error Message: 8447: Internet Server Error

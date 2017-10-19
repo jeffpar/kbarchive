@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99376: Status Frames Skipped Returns a Value of Zero"
-permalink: kb/099/Q99376/
+permalink: /kb/099/Q99376/
 ---
 
 ## Q99376: Status Frames Skipped Returns a Value of Zero

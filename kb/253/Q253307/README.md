@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253307: XCON: Dynamic RAS Connector Stops Delivering Messages"
-permalink: kb/253/Q253307/
+permalink: /kb/253/Q253307/
 ---
 
 ## Q253307: XCON: Dynamic RAS Connector Stops Delivering Messages

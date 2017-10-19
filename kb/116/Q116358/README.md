@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116358: Upgrading to Windows 95 May Disable Windows NT Boot Sector"
-permalink: kb/116/Q116358/
+permalink: /kb/116/Q116358/
 ---
 
 ## Q116358: Upgrading to Windows 95 May Disable Windows NT Boot Sector

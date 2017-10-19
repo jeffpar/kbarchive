@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158777: XCLN: Schedule+ 7.0 Prompts for Password After Upgrading"
-permalink: kb/158/Q158777/
+permalink: /kb/158/Q158777/
 ---
 
 ## Q158777: XCLN: Schedule+ 7.0 Prompts for Password After Upgrading

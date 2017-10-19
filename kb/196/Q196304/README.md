@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196304: XFOR: SNADS Connector Displays Error Due to Incoming SMTP Messag"
-permalink: kb/196/Q196304/
+permalink: /kb/196/Q196304/
 ---
 
 ## Q196304: XFOR: SNADS Connector Displays Error Due to Incoming SMTP Messag

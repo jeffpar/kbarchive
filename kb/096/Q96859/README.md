@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96859: CD Audio Does Not Play Through Sound System Speakers"
-permalink: kb/096/Q96859/
+permalink: /kb/096/Q96859/
 ---
 
 ## Q96859: CD Audio Does Not Play Through Sound System Speakers

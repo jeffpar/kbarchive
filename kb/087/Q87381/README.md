@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87381: PC DB: Symptoms of Not Having the ATT Subdirectory"
-permalink: kb/087/Q87381/
+permalink: /kb/087/Q87381/
 ---
 
 ## Q87381: PC DB: Symptoms of Not Having the ATT Subdirectory

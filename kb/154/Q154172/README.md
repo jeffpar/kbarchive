@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154172: How To Pass Binary Data Between an ActiveX Control and VB"
-permalink: kb/154/Q154172/
+permalink: /kb/154/Q154172/
 ---
 
 ## Q154172: How To Pass Binary Data Between an ActiveX Control and VB

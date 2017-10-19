@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281092: MCSE Training Kit Windows 2000 Accelerated Comments and Correcti"
-permalink: kb/281/Q281092/
+permalink: /kb/281/Q281092/
 ---
 
 ## Q281092: MCSE Training Kit Windows 2000 Accelerated Comments and Correcti

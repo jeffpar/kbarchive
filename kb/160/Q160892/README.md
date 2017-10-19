@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160892: ADT95: Including Briefcase Replication in a Custom Application"
-permalink: kb/160/Q160892/
+permalink: /kb/160/Q160892/
 ---
 
 ## Q160892: ADT95: Including Briefcase Replication in a Custom Application

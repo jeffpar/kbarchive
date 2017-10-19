@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100091: MSAV Display Problems with Older 8514 Display Adapters"
-permalink: kb/100/Q100091/
+permalink: /kb/100/Q100091/
 ---
 
 ## Q100091: MSAV Display Problems with Older 8514 Display Adapters

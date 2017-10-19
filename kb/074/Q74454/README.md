@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74454: MS-DOS Shell and the Colorado Tape Backup System"
-permalink: kb/074/Q74454/
+permalink: /kb/074/Q74454/
 ---
 
 ## Q74454: MS-DOS Shell and the Colorado Tape Backup System

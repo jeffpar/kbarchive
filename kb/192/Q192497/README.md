@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192497: SMS: Custom MIF Has Incorrect Format or Illegal Values for Time"
-permalink: kb/192/Q192497/
+permalink: /kb/192/Q192497/
 ---
 
 ## Q192497: SMS: Custom MIF Has Incorrect Format or Illegal Values for Time

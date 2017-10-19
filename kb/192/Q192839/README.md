@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192839: XADM: Full Offline Address Book Download with Differences Specif"
-permalink: kb/192/Q192839/
+permalink: /kb/192/Q192839/
 ---
 
 ## Q192839: XADM: Full Offline Address Book Download with Differences Specif

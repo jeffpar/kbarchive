@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133253: Generating SQL Scripts for SMS Views"
-permalink: kb/133/Q133253/
+permalink: /kb/133/Q133253/
 ---
 
 ## Q133253: Generating SQL Scripts for SMS Views

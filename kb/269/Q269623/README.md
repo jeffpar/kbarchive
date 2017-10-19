@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269623: Printers Missing from Print Dialog Box with Roaming Profiles"
-permalink: kb/269/Q269623/
+permalink: /kb/269/Q269623/
 ---
 
 ## Q269623: Printers Missing from Print Dialog Box with Roaming Profiles

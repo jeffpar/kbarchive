@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q275728: Encarta: How to Register Encarta Encyclopedia Online"
-permalink: kb/275/Q275728/
+permalink: /kb/275/Q275728/
 ---
 
 ## Q275728: Encarta: How to Register Encarta Encyclopedia Online

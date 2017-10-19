@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89895: Setting Up a Postoffice Across the Network"
-permalink: kb/089/Q89895/
+permalink: /kb/089/Q89895/
 ---
 
 ## Q89895: Setting Up a Postoffice Across the Network

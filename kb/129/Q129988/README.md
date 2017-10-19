@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129988: Required Frame Types for NetBEUI and TCP/IP-32 Protocols"
-permalink: kb/129/Q129988/
+permalink: /kb/129/Q129988/
 ---
 
 ## Q129988: Required Frame Types for NetBEUI and TCP/IP-32 Protocols

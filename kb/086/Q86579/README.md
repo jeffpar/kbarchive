@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86579: AM or PM Missing from Digital Clock"
-permalink: kb/086/Q86579/
+permalink: /kb/086/Q86579/
 ---
 
 ## Q86579: AM or PM Missing from Digital Clock

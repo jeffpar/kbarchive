@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99725: PC DB: Checking for Ownerless Files in NetWare"
-permalink: kb/099/Q99725/
+permalink: /kb/099/Q99725/
 ---
 
 ## Q99725: PC DB: Checking for Ownerless Files in NetWare

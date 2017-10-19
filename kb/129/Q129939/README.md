@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129939: PRB: Err.Raise Doesn't Always Generate Expected Error"
-permalink: kb/129/Q129939/
+permalink: /kb/129/Q129939/
 ---
 
 ## Q129939: PRB: Err.Raise Doesn't Always Generate Expected Error

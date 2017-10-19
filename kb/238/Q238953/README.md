@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238953: MSMQ IC Does Not Start if Protected Storage Disabled or Delayed"
-permalink: kb/238/Q238953/
+permalink: /kb/238/Q238953/
 ---
 
 ## Q238953: MSMQ IC Does Not Start if Protected Storage Disabled or Delayed

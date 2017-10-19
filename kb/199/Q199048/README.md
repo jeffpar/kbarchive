@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199048: FS98 Err Msg: General Protection Fault in Module Unknown"
-permalink: kb/199/Q199048/
+permalink: /kb/199/Q199048/
 ---
 
 ## Q199048: FS98 Err Msg: General Protection Fault in Module Unknown

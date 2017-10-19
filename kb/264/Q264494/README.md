@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264494: SMS: The SMS_EXECUTIVE Service Causes an Access Violation"
-permalink: kb/264/Q264494/
+permalink: /kb/264/Q264494/
 ---
 
 ## Q264494: SMS: The SMS_EXECUTIVE Service Causes an Access Violation

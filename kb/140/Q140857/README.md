@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140857: Golf: MSN Starts When You Launch PlayerNet"
-permalink: kb/140/Q140857/
+permalink: /kb/140/Q140857/
 ---
 
 ## Q140857: Golf: MSN Starts When You Launch PlayerNet

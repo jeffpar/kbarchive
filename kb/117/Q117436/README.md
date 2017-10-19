@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117436: MS-DOS 6.22 Upgrade Directory Listing 3.5-Inch 1.44 MB Set"
-permalink: kb/117/Q117436/
+permalink: /kb/117/Q117436/
 ---
 
 ## Q117436: MS-DOS 6.22 Upgrade Directory Listing 3.5-Inch 1.44 MB Set

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235867: XFOR: GroupWise Meeting Request Causes Notes Connector to Stop"
-permalink: kb/235/Q235867/
+permalink: /kb/235/Q235867/
 ---
 
 ## Q235867: XFOR: GroupWise Meeting Request Causes Notes Connector to Stop

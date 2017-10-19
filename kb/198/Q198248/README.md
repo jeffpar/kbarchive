@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198248: Some SPI_SET Settings Are Treated As Read-Only Attributes"
-permalink: kb/198/Q198248/
+permalink: /kb/198/Q198248/
 ---
 
 ## Q198248: Some SPI_SET Settings Are Treated As Read-Only Attributes

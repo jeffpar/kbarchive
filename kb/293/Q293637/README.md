@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293637: Event ID 8 When Clients Try to Access IIS FTP Site"
-permalink: kb/293/Q293637/
+permalink: /kb/293/Q293637/
 ---
 
 ## Q293637: Event ID 8 When Clients Try to Access IIS FTP Site

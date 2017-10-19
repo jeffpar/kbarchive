@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113598: Application Execution Error After Changing Country to Turkey"
-permalink: kb/113/Q113598/
+permalink: /kb/113/Q113598/
 ---
 
 ## Q113598: Application Execution Error After Changing Country to Turkey

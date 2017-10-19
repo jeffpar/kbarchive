@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129649: PRB: GetActiveView Returns NULL for an MDI Frame Window"
-permalink: kb/129/Q129649/
+permalink: /kb/129/Q129649/
 ---
 
 ## Q129649: PRB: GetActiveView Returns NULL for an MDI Frame Window

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135368: Cannot Retrieve E-mail on The Microsoft Network"
-permalink: kb/135/Q135368/
+permalink: /kb/135/Q135368/
 ---
 
 ## Q135368: Cannot Retrieve E-mail on The Microsoft Network

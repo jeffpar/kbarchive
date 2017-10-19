@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243569: XADM: Wrong Wording for Storage Warnings for Czech Clients"
-permalink: kb/243/Q243569/
+permalink: /kb/243/Q243569/
 ---
 
 ## Q243569: XADM: Wrong Wording for Storage Warnings for Czech Clients

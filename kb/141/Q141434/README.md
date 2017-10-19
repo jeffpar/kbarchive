@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141434: Encarta 96 and Windows 3.1: Manual Installation Instructions"
-permalink: kb/141/Q141434/
+permalink: /kb/141/Q141434/
 ---
 
 ## Q141434: Encarta 96 and Windows 3.1: Manual Installation Instructions

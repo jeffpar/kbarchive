@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137703: PC WFW: WFWs MSMAIL.EXE Disables Retail Mail's Spell Checking"
-permalink: kb/137/Q137703/
+permalink: /kb/137/Q137703/
 ---
 
 ## Q137703: PC WFW: WFWs MSMAIL.EXE Disables Retail Mail's Spell Checking

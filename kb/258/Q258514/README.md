@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258514: Unable to Manage IIS 4.0 with the System Locale Set to French"
-permalink: kb/258/Q258514/
+permalink: /kb/258/Q258514/
 ---
 
 ## Q258514: Unable to Manage IIS 4.0 with the System Locale Set to French

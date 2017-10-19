@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177901: Age of Empires: Cannot See Multiplayer Game After Modem Connects"
-permalink: kb/177/Q177901/
+permalink: /kb/177/Q177901/
 ---
 
 ## Q177901: Age of Empires: Cannot See Multiplayer Game After Modem Connects

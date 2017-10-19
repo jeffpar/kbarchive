@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184538: Error Message: A Controller for This Domain Could Not Be Found"
-permalink: kb/184/Q184538/
+permalink: /kb/184/Q184538/
 ---
 
 ## Q184538: Error Message: A Controller for This Domain Could Not Be Found

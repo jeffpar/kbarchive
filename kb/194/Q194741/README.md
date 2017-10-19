@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194741: StarQuest ODBC Sessions Through SNA Server Fail When Using IIS"
-permalink: kb/194/Q194741/
+permalink: /kb/194/Q194741/
 ---
 
 ## Q194741: StarQuest ODBC Sessions Through SNA Server Fail When Using IIS

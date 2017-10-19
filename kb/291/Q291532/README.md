@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291532: XFOR: Calendar Connector Only Looks in Cache"
-permalink: kb/291/Q291532/
+permalink: /kb/291/Q291532/
 ---
 
 ## Q291532: XFOR: Calendar Connector Only Looks in Cache

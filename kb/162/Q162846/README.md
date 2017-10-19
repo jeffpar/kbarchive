@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162846: Preparing to Create or Modify a Fault Tolerant Set"
-permalink: kb/162/Q162846/
+permalink: /kb/162/Q162846/
 ---
 
 ## Q162846: Preparing to Create or Modify a Fault Tolerant Set

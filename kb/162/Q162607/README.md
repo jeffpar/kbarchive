@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162607: If 1st Thunked LUA App Is Closed, Other LUA Calls Not Processed"
-permalink: kb/162/Q162607/
+permalink: /kb/162/Q162607/
 ---
 
 ## Q162607: If 1st Thunked LUA App Is Closed, Other LUA Calls Not Processed

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177784: General Protection Fault Running Add New Hardware Wizard"
-permalink: kb/177/Q177784/
+permalink: /kb/177/Q177784/
 ---
 
 ## Q177784: General Protection Fault Running Add New Hardware Wizard

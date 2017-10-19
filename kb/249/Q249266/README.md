@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249266: XFOR: Online Resources for Spam Mail Testing and Information"
-permalink: kb/249/Q249266/
+permalink: /kb/249/Q249266/
 ---
 
 ## Q249266: XFOR: Online Resources for Spam Mail Testing and Information

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q321100: COMTI Stops Responding on Second Call with Event 102"
-permalink: kb/321/Q321100/
+permalink: /kb/321/Q321100/
 ---
 
 ## Q321100: COMTI Stops Responding on Second Call with Event 102

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158046: XADM: Perfwiz with -r Option Runs in Read-Only Mode"
-permalink: kb/158/Q158046/
+permalink: /kb/158/Q158046/
 ---
 
 ## Q158046: XADM: Perfwiz with -r Option Runs in Read-Only Mode

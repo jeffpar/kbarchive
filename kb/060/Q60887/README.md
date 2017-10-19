@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60887: WD97: Can Only Select Contiguous Text or Text and Graphics"
-permalink: kb/060/Q60887/
+permalink: /kb/060/Q60887/
 ---
 
 ## Q60887: WD97: Can Only Select Contiguous Text or Text and Graphics

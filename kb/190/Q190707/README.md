@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190707: XADM: Where to Find Exchange Server 4.0 Service Pack 4"
-permalink: kb/190/Q190707/
+permalink: /kb/190/Q190707/
 ---
 
 ## Q190707: XADM: Where to Find Exchange Server 4.0 Service Pack 4

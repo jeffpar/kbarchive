@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160073: RFX_Binary Updates Unchanged CByteArray Data"
-permalink: kb/160/Q160073/
+permalink: /kb/160/Q160073/
 ---
 
 ## Q160073: RFX_Binary Updates Unchanged CByteArray Data

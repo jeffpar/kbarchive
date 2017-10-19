@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164139: Pop-up Error: Cannot Complete Input Operation"
-permalink: kb/164/Q164139/
+permalink: /kb/164/Q164139/
 ---
 
 ## Q164139: Pop-up Error: Cannot Complete Input Operation

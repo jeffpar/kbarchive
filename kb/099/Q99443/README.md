@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99443: OS/2 Files Changed Between LAN Man Versions 2.1 and 2.2"
-permalink: kb/099/Q99443/
+permalink: /kb/099/Q99443/
 ---
 
 ## Q99443: OS/2 Files Changed Between LAN Man Versions 2.1 and 2.2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162610: SNARAS Cannot Connect to Heavily Loaded Server"
-permalink: kb/162/Q162610/
+permalink: /kb/162/Q162610/
 ---
 
 ## Q162610: SNARAS Cannot Connect to Heavily Loaded Server

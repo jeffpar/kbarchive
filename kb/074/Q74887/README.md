@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74887: How to Start a Windows-Based App Directly from MS-DOS"
-permalink: kb/074/Q74887/
+permalink: /kb/074/Q74887/
 ---
 
 ## Q74887: How to Start a Windows-Based App Directly from MS-DOS

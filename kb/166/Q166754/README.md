@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166754: Encarta 97: Insufficient Memory/Not Enough Free Memory"
-permalink: kb/166/Q166754/
+permalink: /kb/166/Q166754/
 ---
 
 ## Q166754: Encarta 97: Insufficient Memory/Not Enough Free Memory

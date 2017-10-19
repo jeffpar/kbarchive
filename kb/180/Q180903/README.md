@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180903: PRB: LCK Functions Do Not Work in a Private Data Session"
-permalink: kb/180/Q180903/
+permalink: /kb/180/Q180903/
 ---
 
 ## Q180903: PRB: LCK Functions Do Not Work in a Private Data Session

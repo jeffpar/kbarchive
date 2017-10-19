@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124877: PRB: Error 6 RPC_S_PROTSEQ_NOT_SUPPORTED in 16-bit Application"
-permalink: kb/124/Q124877/
+permalink: /kb/124/Q124877/
 ---
 
 ## Q124877: PRB: Error 6 RPC_S_PROTSEQ_NOT_SUPPORTED in 16-bit Application

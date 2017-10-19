@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201553: HOWTO: Disable the Window Close Button in an MDI Application"
-permalink: kb/201/Q201553/
+permalink: /kb/201/Q201553/
 ---
 
 ## Q201553: HOWTO: Disable the Window Close Button in an MDI Application

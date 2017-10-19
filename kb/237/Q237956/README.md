@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237956: Taskbar Is Accessible Before You Type Screen Saver Password"
-permalink: kb/237/Q237956/
+permalink: /kb/237/Q237956/
 ---
 
 ## Q237956: Taskbar Is Accessible Before You Type Screen Saver Password

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257979: XCON: How to Configure TURN Client for Exchange Server 5.5"
-permalink: kb/257/Q257979/
+permalink: /kb/257/Q257979/
 ---
 
 ## Q257979: XCON: How to Configure TURN Client for Exchange Server 5.5

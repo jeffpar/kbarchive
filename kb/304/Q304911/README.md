@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q304911: Inside C# Comments And Corrections"
-permalink: kb/304/Q304911/
+permalink: /kb/304/Q304911/
 ---
 
 ## Q304911: Inside C# Comments And Corrections

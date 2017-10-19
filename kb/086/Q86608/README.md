@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86608: PC WSPlus: Day Must Start on Hour or Half Hour"
-permalink: kb/086/Q86608/
+permalink: /kb/086/Q86608/
 ---
 
 ## Q86608: PC WSPlus: Day Must Start on Hour or Half Hour

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103884: The OSI Model's Seven Layers Defined and Functions Explained"
-permalink: kb/103/Q103884/
+permalink: /kb/103/Q103884/
 ---
 
 ## Q103884: The OSI Model's Seven Layers Defined and Functions Explained

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187912: HOWTO: Pass a String Between Visual Basic and Your C DLL"
-permalink: kb/187/Q187912/
+permalink: /kb/187/Q187912/
 ---
 
 ## Q187912: HOWTO: Pass a String Between Visual Basic and Your C DLL

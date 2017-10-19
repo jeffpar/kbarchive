@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165844: Default Code Page Should Be 930 (Extend Katakana), Not 290"
-permalink: kb/165/Q165844/
+permalink: /kb/165/Q165844/
 ---
 
 ## Q165844: Default Code Page Should Be 930 (Extend Katakana), Not 290

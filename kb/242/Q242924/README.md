@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242924: SMS: Client Install Problems Using the SMS_LOCAL_DIR Variable"
-permalink: kb/242/Q242924/
+permalink: /kb/242/Q242924/
 ---
 
 ## Q242924: SMS: Client Install Problems Using the SMS_LOCAL_DIR Variable

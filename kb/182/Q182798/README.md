@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182798: XADM: Routing Calculation Fails Across Entire Organization"
-permalink: kb/182/Q182798/
+permalink: /kb/182/Q182798/
 ---
 
 ## Q182798: XADM: Routing Calculation Fails Across Entire Organization

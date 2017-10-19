@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140952: XCLN: Toolbar Buttons Missing After Upgrade from 16"
-permalink: kb/140/Q140952/
+permalink: /kb/140/Q140952/
 ---
 
 ## Q140952: XCLN: Toolbar Buttons Missing After Upgrade from 16

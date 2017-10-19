@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104898: FIX: ICHAR Fails If the Argument Is a Character Function"
-permalink: kb/104/Q104898/
+permalink: /kb/104/Q104898/
 ---
 
 ## Q104898: FIX: ICHAR Fails If the Argument Is a Character Function

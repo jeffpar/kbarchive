@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170914: WD97: File Open Reverts to Program Folder Not Network Location"
-permalink: kb/170/Q170914/
+permalink: /kb/170/Q170914/
 ---
 
 ## Q170914: WD97: File Open Reverts to Program Folder Not Network Location

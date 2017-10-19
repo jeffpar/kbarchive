@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184999: SMS: Software Inventory Wrong After Daylight Savings Time Change"
-permalink: kb/184/Q184999/
+permalink: /kb/184/Q184999/
 ---
 
 ## Q184999: SMS: Software Inventory Wrong After Daylight Savings Time Change

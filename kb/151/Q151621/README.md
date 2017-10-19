@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151621: Default Case of Image Map Is Case Sensitive in IIS"
-permalink: kb/151/Q151621/
+permalink: /kb/151/Q151621/
 ---
 
 ## Q151621: Default Case of Image Map Is Case Sensitive in IIS

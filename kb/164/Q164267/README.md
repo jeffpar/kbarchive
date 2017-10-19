@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164267: NTFS May Cause Windows NT to Fail During a Rename"
-permalink: kb/164/Q164267/
+permalink: /kb/164/Q164267/
 ---
 
 ## Q164267: NTFS May Cause Windows NT to Fail During a Rename

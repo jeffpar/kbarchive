@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q62124: Mac Hyp: Explanation of messageRef (Message Reference)"
-permalink: kb/062/Q62124/
+permalink: /kb/062/Q62124/
 ---
 
 ## Q62124: Mac Hyp: Explanation of messageRef (Message Reference)

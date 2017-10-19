@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236871: PRB: SQLColumns Return Incorrect BUFFER_LENGTH/CHAR_OCTET_LENGTH"
-permalink: kb/236/Q236871/
+permalink: /kb/236/Q236871/
 ---
 
 ## Q236871: PRB: SQLColumns Return Incorrect BUFFER_LENGTH/CHAR_OCTET_LENGTH

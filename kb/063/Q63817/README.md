@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63817: FIX: Protection Violation Compiling BLOCK DATA with Implied DO"
-permalink: kb/063/Q63817/
+permalink: /kb/063/Q63817/
 ---
 
 ## Q63817: FIX: Protection Violation Compiling BLOCK DATA with Implied DO

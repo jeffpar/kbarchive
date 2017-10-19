@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155814: XFOR: Error 2186: Service is not Responding to Control Function"
-permalink: kb/155/Q155814/
+permalink: /kb/155/Q155814/
 ---
 
 ## Q155814: XFOR: Error 2186: Service is not Responding to Control Function

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279448: MSN Companion address book is blank and old entries are missing"
-permalink: kb/279/Q279448/
+permalink: /kb/279/Q279448/
 ---
 
 ## Q279448: MSN Companion address book is blank and old entries are missing

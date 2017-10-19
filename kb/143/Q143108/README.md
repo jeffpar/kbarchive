@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143108: FIX: Assertion Failed Line 388 of Occmgr.cpp"
-permalink: kb/143/Q143108/
+permalink: /kb/143/Q143108/
 ---
 
 ## Q143108: FIX: Assertion Failed Line 388 of Occmgr.cpp

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257180: XCLN: Insufficient Permissions When Moving Contacts"
-permalink: kb/257/Q257180/
+permalink: /kb/257/Q257180/
 ---
 
 ## Q257180: XCLN: Insufficient Permissions When Moving Contacts

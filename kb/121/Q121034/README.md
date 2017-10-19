@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121034: MAC Asimov's Ultimate Robot: README Contents"
-permalink: kb/121/Q121034/
+permalink: /kb/121/Q121034/
 ---
 
 ## Q121034: MAC Asimov's Ultimate Robot: README Contents

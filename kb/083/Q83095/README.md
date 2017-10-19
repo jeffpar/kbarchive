@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q83095: INFO: CodeView Cannot Display #define or EQU Values"
-permalink: kb/083/Q83095/
+permalink: /kb/083/Q83095/
 ---
 
 ## Q83095: INFO: CodeView Cannot Display #define or EQU Values

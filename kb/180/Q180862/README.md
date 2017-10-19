@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180862: Single Form Feed Sent by Host on LU3 Print Session Is Ignored"
-permalink: kb/180/Q180862/
+permalink: /kb/180/Q180862/
 ---
 
 ## Q180862: Single Form Feed Sent by Host on LU3 Print Session Is Ignored

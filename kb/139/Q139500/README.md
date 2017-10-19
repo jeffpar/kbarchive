@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139500: TN3270: Message Close Delay Option"
-permalink: kb/139/Q139500/
+permalink: /kb/139/Q139500/
 ---
 
 ## Q139500: TN3270: Message Close Delay Option

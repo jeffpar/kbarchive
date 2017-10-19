@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74730: Erratic Keyboard Behavior Using HIMEM.SYS"
-permalink: kb/074/Q74730/
+permalink: /kb/074/Q74730/
 ---
 
 ## Q74730: Erratic Keyboard Behavior Using HIMEM.SYS

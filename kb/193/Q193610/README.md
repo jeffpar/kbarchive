@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193610: Performance Monitor Object Name Change"
-permalink: kb/193/Q193610/
+permalink: /kb/193/Q193610/
 ---
 
 ## Q193610: Performance Monitor Object Name Change

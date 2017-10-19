@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169111: PRB: Error Performing DODEFAULT Function on Base Class Method"
-permalink: kb/169/Q169111/
+permalink: /kb/169/Q169111/
 ---
 
 ## Q169111: PRB: Error Performing DODEFAULT Function on Base Class Method

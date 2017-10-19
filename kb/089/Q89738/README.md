@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89738: INFO: Handling WM_QUIT While Not in Primary GetMessage() Loop"
-permalink: kb/089/Q89738/
+permalink: /kb/089/Q89738/
 ---
 
 ## Q89738: INFO: Handling WM_QUIT While Not in Primary GetMessage() Loop

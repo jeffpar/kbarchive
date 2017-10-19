@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167617: WD97: Table Borders Misaligned When Printed to 9-Pin Printer"
-permalink: kb/167/Q167617/
+permalink: /kb/167/Q167617/
 ---
 
 ## Q167617: WD97: Table Borders Misaligned When Printed to 9-Pin Printer

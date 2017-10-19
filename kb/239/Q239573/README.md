@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239573: WD97: Changes Not Applied to Merged Cell"
-permalink: kb/239/Q239573/
+permalink: /kb/239/Q239573/
 ---
 
 ## Q239573: WD97: Changes Not Applied to Merged Cell

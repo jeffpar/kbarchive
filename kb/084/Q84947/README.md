@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84947: Xerox Panorama-IME Two-Page Display and Windows 3.1"
-permalink: kb/084/Q84947/
+permalink: /kb/084/Q84947/
 ---
 
 ## Q84947: Xerox Panorama-IME Two-Page Display and Windows 3.1

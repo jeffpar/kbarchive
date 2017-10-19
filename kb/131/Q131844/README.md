@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131844: Inconsistent Appointment Creation with Mouse in Planner"
-permalink: kb/131/Q131844/
+permalink: /kb/131/Q131844/
 ---
 
 ## Q131844: Inconsistent Appointment Creation with Mouse in Planner

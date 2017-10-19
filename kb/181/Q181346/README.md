@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181346: SMS : 'Error Opening SYS:SMS&#92;logon.srv&#92;inventry.box&#92;&lt;file&gt;.tmp'"
-permalink: kb/181/Q181346/
+permalink: /kb/181/Q181346/
 ---
 
 ## Q181346: SMS : 'Error Opening SYS:SMS&#92;logon.srv&#92;inventry.box&#92;&lt;file&gt;.tmp'

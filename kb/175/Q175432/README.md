@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175432: HOWTO: Walk the Fields Collection of a Message in Active Msg"
-permalink: kb/175/Q175432/
+permalink: /kb/175/Q175432/
 ---
 
 ## Q175432: HOWTO: Walk the Fields Collection of a Message in Active Msg

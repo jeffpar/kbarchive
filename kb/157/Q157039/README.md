@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157039: XCLN: Logging on to Local Machine Account on Exchange Server"
-permalink: kb/157/Q157039/
+permalink: /kb/157/Q157039/
 ---
 
 ## Q157039: XCLN: Logging on to Local Machine Account on Exchange Server

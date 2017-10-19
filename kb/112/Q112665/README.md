@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112665: UPDATE.EXE Starts Setup Help If Space Exists in Directory Path"
-permalink: kb/112/Q112665/
+permalink: /kb/112/Q112665/
 ---
 
 ## Q112665: UPDATE.EXE Starts Setup Help If Space Exists in Directory Path

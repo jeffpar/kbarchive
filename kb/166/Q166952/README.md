@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166952: WD97: Unable to Send to Fax Recipient from Word"
-permalink: kb/166/Q166952/
+permalink: /kb/166/Q166952/
 ---
 
 ## Q166952: WD97: Unable to Send to Fax Recipient from Word

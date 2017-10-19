@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121960: INFO: Alternative to PtInRegion() for Hit-Testing"
-permalink: kb/121/Q121960/
+permalink: /kb/121/Q121960/
 ---
 
 ## Q121960: INFO: Alternative to PtInRegion() for Hit-Testing

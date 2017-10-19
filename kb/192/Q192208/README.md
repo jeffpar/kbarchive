@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192208: BUG: UserControl SHIFT+TAB Does Not Follow Tab Sequence"
-permalink: kb/192/Q192208/
+permalink: /kb/192/Q192208/
 ---
 
 ## Q192208: BUG: UserControl SHIFT+TAB Does Not Follow Tab Sequence

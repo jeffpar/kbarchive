@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102121: Mac Wkst: DCA IRMA Workstation Conflict"
-permalink: kb/102/Q102121/
+permalink: /kb/102/Q102121/
 ---
 
 ## Q102121: Mac Wkst: DCA IRMA Workstation Conflict

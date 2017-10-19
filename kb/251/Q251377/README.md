@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251377: FS2000: How to Fly an ILS Approach in Tutorial 15, Situation 2"
-permalink: kb/251/Q251377/
+permalink: /kb/251/Q251377/
 ---
 
 ## Q251377: FS2000: How to Fly an ILS Approach in Tutorial 15, Situation 2

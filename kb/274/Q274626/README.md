@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274626: Combat Flight Simulator 2: IME Toolbar May Not Be Displayed"
-permalink: kb/274/Q274626/
+permalink: /kb/274/Q274626/
 ---
 
 ## Q274626: Combat Flight Simulator 2: IME Toolbar May Not Be Displayed

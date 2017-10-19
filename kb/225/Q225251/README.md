@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225251: MS-DOS Application May Cause STOP: 0x0000001E"
-permalink: kb/225/Q225251/
+permalink: /kb/225/Q225251/
 ---
 
 ## Q225251: MS-DOS Application May Cause STOP: 0x0000001E

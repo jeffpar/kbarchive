@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137869: Error Message: System Error - Network Error on Drive &lt;X&gt;"
-permalink: kb/137/Q137869/
+permalink: /kb/137/Q137869/
 ---
 
 ## Q137869: Error Message: System Error - Network Error on Drive &lt;X&gt;

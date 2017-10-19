@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169392: XFOR: LinkAge Connector Does Not Support Sharing Calendars"
-permalink: kb/169/Q169392/
+permalink: /kb/169/Q169392/
 ---
 
 ## Q169392: XFOR: LinkAge Connector Does Not Support Sharing Calendars

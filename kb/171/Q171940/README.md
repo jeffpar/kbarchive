@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171940: MS-DOS Application I/O Operations Cause Floppy Drive Access"
-permalink: kb/171/Q171940/
+permalink: /kb/171/Q171940/
 ---
 
 ## Q171940: MS-DOS Application I/O Operations Cause Floppy Drive Access

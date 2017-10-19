@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193705: Cannot Use 11 or More Musical Instrument Device Interface Ports"
-permalink: kb/193/Q193705/
+permalink: /kb/193/Q193705/
 ---
 
 ## Q193705: Cannot Use 11 or More Musical Instrument Device Interface Ports

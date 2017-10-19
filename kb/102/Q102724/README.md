@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q102724: Remote Access 1.1a COM1 and COM2 Only"
-permalink: kb/102/Q102724/
+permalink: /kb/102/Q102724/
 ---
 
 ## Q102724: Remote Access 1.1a COM1 and COM2 Only

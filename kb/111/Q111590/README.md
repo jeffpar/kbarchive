@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111590: BUG: Some TrueType Character Pairs Run Together on VGA"
-permalink: kb/111/Q111590/
+permalink: /kb/111/Q111590/
 ---
 
 ## Q111590: BUG: Some TrueType Character Pairs Run Together on VGA

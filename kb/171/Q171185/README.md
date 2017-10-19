@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171185: WAN Addressing Options with Routing and Remote Access"
-permalink: kb/171/Q171185/
+permalink: /kb/171/Q171185/
 ---
 
 ## Q171185: WAN Addressing Options with Routing and Remote Access

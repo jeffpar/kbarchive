@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164333: WD97: Word Appears to Hang When You Search Large Address Book"
-permalink: kb/164/Q164333/
+permalink: /kb/164/Q164333/
 ---
 
 ## Q164333: WD97: Word Appears to Hang When You Search Large Address Book

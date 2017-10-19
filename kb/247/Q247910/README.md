@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247910: Windows 95/98/Me RAS Client Cannot Log On to the Domain"
-permalink: kb/247/Q247910/
+permalink: /kb/247/Q247910/
 ---
 
 ## Q247910: Windows 95/98/Me RAS Client Cannot Log On to the Domain

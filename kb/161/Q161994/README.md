@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161994: Querying Powered-Off PC Card Modem Hangs Computer"
-permalink: kb/161/Q161994/
+permalink: /kb/161/Q161994/
 ---
 
 ## Q161994: Querying Powered-Off PC Card Modem Hangs Computer

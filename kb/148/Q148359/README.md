@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148359: SNA Server APPC Error: F004 AP_COMM_SUBSYSTEM_NOT_LOADED"
-permalink: kb/148/Q148359/
+permalink: /kb/148/Q148359/
 ---
 
 ## Q148359: SNA Server APPC Error: F004 AP_COMM_SUBSYSTEM_NOT_LOADED

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307520: Dynamic Remote LUs May Lead to Allocation Failures"
-permalink: kb/307/Q307520/
+permalink: /kb/307/Q307520/
 ---
 
 ## Q307520: Dynamic Remote LUs May Lead to Allocation Failures

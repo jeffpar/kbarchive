@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232327: Microsoft Office 2000 Resource Kit Comments and Corrections"
-permalink: kb/232/Q232327/
+permalink: /kb/232/Q232327/
 ---
 
 ## Q232327: Microsoft Office 2000 Resource Kit Comments and Corrections

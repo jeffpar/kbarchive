@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219036: SP4 on a Digital Alpha System Requires an OEM HAL Update"
-permalink: kb/219/Q219036/
+permalink: /kb/219/Q219036/
 ---
 
 ## Q219036: SP4 on a Digital Alpha System Requires an OEM HAL Update

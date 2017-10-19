@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130055: Character Sets Supported by Hangeul (Korean) Windows Versions"
-permalink: kb/130/Q130055/
+permalink: /kb/130/Q130055/
 ---
 
 ## Q130055: Character Sets Supported by Hangeul (Korean) Windows Versions

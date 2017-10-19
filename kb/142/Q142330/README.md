@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142330: User-Level Security Not Enabled with Custom Setup Script"
-permalink: kb/142/Q142330/
+permalink: /kb/142/Q142330/
 ---
 
 ## Q142330: User-Level Security Not Enabled with Custom Setup Script

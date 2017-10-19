@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141039: HOWTO: How to Hide the Apply Button in CPropertySheet"
-permalink: kb/141/Q141039/
+permalink: /kb/141/Q141039/
 ---
 
 ## Q141039: HOWTO: How to Hide the Apply Button in CPropertySheet

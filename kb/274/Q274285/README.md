@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274285: XCON: Error Message Occurs When Starting MTA"
-permalink: kb/274/Q274285/
+permalink: /kb/274/Q274285/
 ---
 
 ## Q274285: XCON: Error Message Occurs When Starting MTA

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168373: FIX: C2065 When Default Constructor of a Nested Class Called"
-permalink: kb/168/Q168373/
+permalink: /kb/168/Q168373/
 ---
 
 ## Q168373: FIX: C2065 When Default Constructor of a Nested Class Called

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221616: FIX: Report Wizard Error # 11 in Getpicture With Long Table Name"
-permalink: kb/221/Q221616/
+permalink: /kb/221/Q221616/
 ---
 
 ## Q221616: FIX: Report Wizard Error # 11 in Getpicture With Long Table Name

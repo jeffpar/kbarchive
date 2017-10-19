@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215032: SMS: Batch File Program on Windows 9x Not Closing Command Window"
-permalink: kb/215/Q215032/
+permalink: /kb/215/Q215032/
 ---
 
 ## Q215032: SMS: Batch File Program on Windows 9x Not Closing Command Window

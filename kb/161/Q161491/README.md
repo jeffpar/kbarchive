@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161491: XCLN: Mac Screen Shot Attachment Won't Open on Windows Client"
-permalink: kb/161/Q161491/
+permalink: /kb/161/Q161491/
 ---
 
 ## Q161491: XCLN: Mac Screen Shot Attachment Won't Open on Windows Client

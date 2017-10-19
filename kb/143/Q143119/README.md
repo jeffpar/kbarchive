@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143119: PractiCard 14.4 PCMCIA Modem Is Not Initialized"
-permalink: kb/143/Q143119/
+permalink: /kb/143/Q143119/
 ---
 
 ## Q143119: PractiCard 14.4 PCMCIA Modem Is Not Initialized

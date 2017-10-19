@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247732: Age of Empires II: Game Slows Down or Becomes Choppy"
-permalink: kb/247/Q247732/
+permalink: /kb/247/Q247732/
 ---
 
 ## Q247732: Age of Empires II: Game Slows Down or Becomes Choppy

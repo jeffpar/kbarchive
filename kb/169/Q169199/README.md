@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169199: XADM: Purpose of Hierarch.dat in the DSADATA Directory"
-permalink: kb/169/Q169199/
+permalink: /kb/169/Q169199/
 ---
 
 ## Q169199: XADM: Purpose of Hierarch.dat in the DSADATA Directory

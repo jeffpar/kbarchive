@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189926: BUG: Large Toolbar Icons Cause Problems in Customize Dialog Box"
-permalink: kb/189/Q189926/
+permalink: /kb/189/Q189926/
 ---
 
 ## Q189926: BUG: Large Toolbar Icons Cause Problems in Customize Dialog Box

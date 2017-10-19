@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163146: PPT: Run-Time Error Using the AddPicture Method"
-permalink: kb/163/Q163146/
+permalink: /kb/163/Q163146/
 ---
 
 ## Q163146: PPT: Run-Time Error Using the AddPicture Method

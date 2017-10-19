@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151055: Pregnancy: Suggested Reading List Inconsistent"
-permalink: kb/151/Q151055/
+permalink: /kb/151/Q151055/
 ---
 
 ## Q151055: Pregnancy: Suggested Reading List Inconsistent

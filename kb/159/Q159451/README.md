@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159451: INFO: Installing LPR Ports with Windows NT 4.0 Unattended Setup"
-permalink: kb/159/Q159451/
+permalink: /kb/159/Q159451/
 ---
 
 ## Q159451: INFO: Installing LPR Ports with Windows NT 4.0 Unattended Setup

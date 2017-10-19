@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179565: SMS: Unable To Generate Traps For Dr. Watson Events"
-permalink: kb/179/Q179565/
+permalink: /kb/179/Q179565/
 ---
 
 ## Q179565: SMS: Unable To Generate Traps For Dr. Watson Events

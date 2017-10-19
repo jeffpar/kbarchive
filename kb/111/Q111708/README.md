@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111708: Registry Subtree Not Saved to Disk"
-permalink: kb/111/Q111708/
+permalink: /kb/111/Q111708/
 ---
 
 ## Q111708: Registry Subtree Not Saved to Disk

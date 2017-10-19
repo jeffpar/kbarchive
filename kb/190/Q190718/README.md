@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190718: WD97: Invalid Page Fault in Module Unknown Opening HTML Document"
-permalink: kb/190/Q190718/
+permalink: /kb/190/Q190718/
 ---
 
 ## Q190718: WD97: Invalid Page Fault in Module Unknown Opening HTML Document

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99089: RQBE Expression Builder Doesn't Include Path to Table"
-permalink: kb/099/Q99089/
+permalink: /kb/099/Q99089/
 ---
 
 ## Q99089: RQBE Expression Builder Doesn't Include Path to Table

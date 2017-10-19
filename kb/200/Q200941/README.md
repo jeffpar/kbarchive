@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200941: XADM: How the Restore in Progress Registry Key Works"
-permalink: kb/200/Q200941/
+permalink: /kb/200/Q200941/
 ---
 
 ## Q200941: XADM: How the Restore in Progress Registry Key Works

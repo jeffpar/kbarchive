@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249836: PRB: Table Buffer Contains Uncommitted Changes on REQUERY()"
-permalink: kb/249/Q249836/
+permalink: /kb/249/Q249836/
 ---
 
 ## Q249836: PRB: Table Buffer Contains Uncommitted Changes on REQUERY()

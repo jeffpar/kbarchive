@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224979: Using Browser Capabilities with Internet Explorer 5.0"
-permalink: kb/224/Q224979/
+permalink: /kb/224/Q224979/
 ---
 
 ## Q224979: Using Browser Capabilities with Internet Explorer 5.0

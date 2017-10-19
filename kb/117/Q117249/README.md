@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117249: Mac Encarta 94: List and Description of Files Installed with E"
-permalink: kb/117/Q117249/
+permalink: /kb/117/Q117249/
 ---
 
 ## Q117249: Mac Encarta 94: List and Description of Files Installed with E

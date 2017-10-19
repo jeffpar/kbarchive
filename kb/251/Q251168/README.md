@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q251168: XCLN: Meeting Request Generates NDR for a Recipient Not Invited"
-permalink: kb/251/Q251168/
+permalink: /kb/251/Q251168/
 ---
 
 ## Q251168: XCLN: Meeting Request Generates NDR for a Recipient Not Invited

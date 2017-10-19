@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248338: Fighter Ace II: Problems If You Press ALT+TAB When You Play Game"
-permalink: kb/248/Q248338/
+permalink: /kb/248/Q248338/
 ---
 
 ## Q248338: Fighter Ace II: Problems If You Press ALT+TAB When You Play Game

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265030: Netscape Cannot Browse Intranet Site"
-permalink: kb/265/Q265030/
+permalink: /kb/265/Q265030/
 ---
 
 ## Q265030: Netscape Cannot Browse Intranet Site

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85286: Checklist for Troubleshooting TrueType Font Problems"
-permalink: kb/085/Q85286/
+permalink: /kb/085/Q85286/
 ---
 
 ## Q85286: Checklist for Troubleshooting TrueType Font Problems

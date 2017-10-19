@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76927: Cannot Modify Label After Using Norton Safe Format"
-permalink: kb/076/Q76927/
+permalink: /kb/076/Q76927/
 ---
 
 ## Q76927: Cannot Modify Label After Using Norton Safe Format

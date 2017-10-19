@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234588: XFOR: GW Mailbox Gateway Alias Does Not Transfer to Exchange"
-permalink: kb/234/Q234588/
+permalink: /kb/234/Q234588/
 ---
 
 ## Q234588: XFOR: GW Mailbox Gateway Alias Does Not Transfer to Exchange

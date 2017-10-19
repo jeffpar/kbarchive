@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164410: CHGPASS and SETPASS Do Not Prompt for Typing Correction"
-permalink: kb/164/Q164410/
+permalink: /kb/164/Q164410/
 ---
 
 ## Q164410: CHGPASS and SETPASS Do Not Prompt for Typing Correction

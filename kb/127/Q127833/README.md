@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127833: Cannot Remotely Administer Services for Macintosh"
-permalink: kb/127/Q127833/
+permalink: /kb/127/Q127833/
 ---
 
 ## Q127833: Cannot Remotely Administer Services for Macintosh

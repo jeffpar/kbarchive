@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216091: GetHostByName() Returns IP Address of Disabled Interface"
-permalink: kb/216/Q216091/
+permalink: /kb/216/Q216091/
 ---
 
 ## Q216091: GetHostByName() Returns IP Address of Disabled Interface

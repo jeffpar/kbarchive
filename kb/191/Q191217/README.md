@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191217: XWEB: VBScript Runtime Error 800a03e3 Using Outlook Web Access"
-permalink: kb/191/Q191217/
+permalink: /kb/191/Q191217/
 ---
 
 ## Q191217: XWEB: VBScript Runtime Error 800a03e3 Using Outlook Web Access

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q48037: Mac Wkst: Selecting Mail Recipients"
-permalink: kb/048/Q48037/
+permalink: /kb/048/Q48037/
 ---
 
 ## Q48037: Mac Wkst: Selecting Mail Recipients

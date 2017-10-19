@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149904: Compaq LTE 5100, 5200 Notebooks Stop When Swapping Floppy &amp; CD"
-permalink: kb/149/Q149904/
+permalink: /kb/149/Q149904/
 ---
 
 ## Q149904: Compaq LTE 5100, 5200 Notebooks Stop When Swapping Floppy &amp; CD

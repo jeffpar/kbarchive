@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158078: Configuring an HP JetDirect EX Plus 3 Interface Card"
-permalink: kb/158/Q158078/
+permalink: /kb/158/Q158078/
 ---
 
 ## Q158078: Configuring an HP JetDirect EX Plus 3 Interface Card

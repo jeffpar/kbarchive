@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316021: SMS: SMSAPM32 Does Not Remove Software or Create Status Messages"
-permalink: kb/316/Q316021/
+permalink: /kb/316/Q316021/
 ---
 
 ## Q316021: SMS: SMSAPM32 Does Not Remove Software or Create Status Messages

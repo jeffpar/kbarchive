@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154054: PRB: Possible Application Failure Using SmartHeap"
-permalink: kb/154/Q154054/
+permalink: /kb/154/Q154054/
 ---
 
 ## Q154054: PRB: Possible Application Failure Using SmartHeap

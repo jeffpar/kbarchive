@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135525: Mandatory Profiles on 3.51 Server Do Not Work for 3.5 Clients"
-permalink: kb/135/Q135525/
+permalink: /kb/135/Q135525/
 ---
 
 ## Q135525: Mandatory Profiles on 3.51 Server Do Not Work for 3.5 Clients

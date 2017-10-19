@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159350: SNA Server Win32 API Calls May Not Return to Multithreaded App"
-permalink: kb/159/Q159350/
+permalink: /kb/159/Q159350/
 ---
 
 ## Q159350: SNA Server Win32 API Calls May Not Return to Multithreaded App

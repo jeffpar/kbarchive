@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302922: Running MSN Explorer With Beta Version Of Internet Explorer 5.0"
-permalink: kb/302/Q302922/
+permalink: /kb/302/Q302922/
 ---
 
 ## Q302922: Running MSN Explorer With Beta Version Of Internet Explorer 5.0

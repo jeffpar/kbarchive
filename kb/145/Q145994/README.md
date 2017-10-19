@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145994: HOWTO: Calculate Dialog Units When Not Using the System Font"
-permalink: kb/145/Q145994/
+permalink: /kb/145/Q145994/
 ---
 
 ## Q145994: HOWTO: Calculate Dialog Units When Not Using the System Font

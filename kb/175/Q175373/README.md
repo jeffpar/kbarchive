@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175373: Solar Err Msg: MMTASK Caused an Invalid Page Fault in Module..."
-permalink: kb/175/Q175373/
+permalink: /kb/175/Q175373/
 ---
 
 ## Q175373: Solar Err Msg: MMTASK Caused an Invalid Page Fault in Module...

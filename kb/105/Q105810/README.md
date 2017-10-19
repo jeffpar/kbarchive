@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105810: HPPCL5E.DRV Does Not Save Paper Tray Selection"
-permalink: kb/105/Q105810/
+permalink: /kb/105/Q105810/
 ---
 
 ## Q105810: HPPCL5E.DRV Does Not Save Paper Tray Selection

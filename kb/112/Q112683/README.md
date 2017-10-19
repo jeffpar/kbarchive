@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112683: Keyboard Hangs After Installing WFWG on Toshiba or TI Notebook"
-permalink: kb/112/Q112683/
+permalink: /kb/112/Q112683/
 ---
 
 ## Q112683: Keyboard Hangs After Installing WFWG on Toshiba or TI Notebook

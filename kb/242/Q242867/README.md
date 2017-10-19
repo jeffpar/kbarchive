@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242867: PRB: Compile Error when Declaring MSVSAEventSourceInstaller"
-permalink: kb/242/Q242867/
+permalink: /kb/242/Q242867/
 ---
 
 ## Q242867: PRB: Compile Error when Declaring MSVSAEventSourceInstaller

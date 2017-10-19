@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74291: INFO: Microsoft Windows Caches Five Display Contexts"
-permalink: kb/074/Q74291/
+permalink: /kb/074/Q74291/
 ---
 
 ## Q74291: INFO: Microsoft Windows Caches Five Display Contexts

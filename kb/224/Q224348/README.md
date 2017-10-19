@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224348: Wacom PenPartner Tablet Does Not Work Correctly"
-permalink: kb/224/Q224348/
+permalink: /kb/224/Q224348/
 ---
 
 ## Q224348: Wacom PenPartner Tablet Does Not Work Correctly

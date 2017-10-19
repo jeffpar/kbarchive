@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98495: Windows FTADMIN Generates Error 2140"
-permalink: kb/098/Q98495/
+permalink: /kb/098/Q98495/
 ---
 
 ## Q98495: Windows FTADMIN Generates Error 2140

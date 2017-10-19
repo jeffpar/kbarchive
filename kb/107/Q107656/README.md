@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107656: Writer: GP Fault After a Random Animation Plays"
-permalink: kb/107/Q107656/
+permalink: /kb/107/Q107656/
 ---
 
 ## Q107656: Writer: GP Fault After a Random Animation Plays

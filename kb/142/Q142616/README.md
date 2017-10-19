@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142616: Adding Users and Groups During Unattended Setup"
-permalink: kb/142/Q142616/
+permalink: /kb/142/Q142616/
 ---
 
 ## Q142616: Adding Users and Groups During Unattended Setup

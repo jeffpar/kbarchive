@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q232136: How to Back Up a Server Certificate in IIS 5.0"
-permalink: kb/232/Q232136/
+permalink: /kb/232/Q232136/
 ---
 
 ## Q232136: How to Back Up a Server Certificate in IIS 5.0

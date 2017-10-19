@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242138: Cannot create or add a printer port remotely."
-permalink: kb/242/Q242138/
+permalink: /kb/242/Q242138/
 ---
 
 ## Q242138: Cannot create or add a printer port remotely.

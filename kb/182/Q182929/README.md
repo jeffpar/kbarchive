@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182929: PRB: Stored Procedures with a Return Statement Can Cause Errors"
-permalink: kb/182/Q182929/
+permalink: /kb/182/Q182929/
 ---
 
 ## Q182929: PRB: Stored Procedures with a Return Statement Can Cause Errors

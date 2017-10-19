@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308335: Access Violation in IIS When Web Server Is Under a Heavy Load"
-permalink: kb/308/Q308335/
+permalink: /kb/308/Q308335/
 ---
 
 ## Q308335: Access Violation in IIS When Web Server Is Under a Heavy Load

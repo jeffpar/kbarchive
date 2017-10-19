@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150321: Bookshelf 96: Word's Define Command Looks Up First Word"
-permalink: kb/150/Q150321/
+permalink: /kb/150/Q150321/
 ---
 
 ## Q150321: Bookshelf 96: Word's Define Command Looks Up First Word

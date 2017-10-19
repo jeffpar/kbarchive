@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198130: PRB: FLL Causes Error After Recompilation"
-permalink: kb/198/Q198130/
+permalink: /kb/198/Q198130/
 ---
 
 ## Q198130: PRB: FLL Causes Error After Recompilation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165200: Network Transports Options Not Available on RISC Systems"
-permalink: kb/165/Q165200/
+permalink: /kb/165/Q165200/
 ---
 
 ## Q165200: Network Transports Options Not Available on RISC Systems

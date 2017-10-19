@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q115593: Troubleshooting Remote Access in Windows for Workgroups 3.11"
-permalink: kb/115/Q115593/
+permalink: /kb/115/Q115593/
 ---
 
 ## Q115593: Troubleshooting Remote Access in Windows for Workgroups 3.11

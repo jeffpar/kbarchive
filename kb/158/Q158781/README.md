@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158781: Determining LANA Numbers in Windows 95"
-permalink: kb/158/Q158781/
+permalink: /kb/158/Q158781/
 ---
 
 ## Q158781: Determining LANA Numbers in Windows 95

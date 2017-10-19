@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109523: Windows NT Resource Kit Repair Utility Error"
-permalink: kb/109/Q109523/
+permalink: /kb/109/Q109523/
 ---
 
 ## Q109523: Windows NT Resource Kit Repair Utility Error

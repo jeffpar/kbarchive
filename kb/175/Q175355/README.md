@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175355: XFOR: T-shoot Exchange Server with Lotus Messaging Web Site"
-permalink: kb/175/Q175355/
+permalink: /kb/175/Q175355/
 ---
 
 ## Q175355: XFOR: T-shoot Exchange Server with Lotus Messaging Web Site

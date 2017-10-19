@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q271459: IIS 4.0: Can't Extract Data from Access on Netware 5 Server"
-permalink: kb/271/Q271459/
+permalink: /kb/271/Q271459/
 ---
 
 ## Q271459: IIS 4.0: Can't Extract Data from Access on Netware 5 Server

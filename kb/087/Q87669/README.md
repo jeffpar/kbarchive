@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87669: FoxBASE+ Error Messages: F - H"
-permalink: kb/087/Q87669/
+permalink: /kb/087/Q87669/
 ---
 
 ## Q87669: FoxBASE+ Error Messages: F - H

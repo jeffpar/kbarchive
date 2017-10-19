@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182439: How to Disable Start&#92;Help"
-permalink: kb/182/Q182439/
+permalink: /kb/182/Q182439/
 ---
 
 ## Q182439: How to Disable Start&#92;Help

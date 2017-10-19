@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139093: Encarta 1996: Computer Hangs When Playing Video Clips"
-permalink: kb/139/Q139093/
+permalink: /kb/139/Q139093/
 ---
 
 ## Q139093: Encarta 1996: Computer Hangs When Playing Video Clips

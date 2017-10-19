@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q61745: Windows 3.0 Disk Directories (3.5 Inch, 720K)"
-permalink: kb/061/Q61745/
+permalink: /kb/061/Q61745/
 ---
 
 ## Q61745: Windows 3.0 Disk Directories (3.5 Inch, 720K)

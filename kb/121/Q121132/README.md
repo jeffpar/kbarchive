@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121132: MSACM 2.0: Compressed Audio Will Not Play"
-permalink: kb/121/Q121132/
+permalink: /kb/121/Q121132/
 ---
 
 ## Q121132: MSACM 2.0: Compressed Audio Will Not Play

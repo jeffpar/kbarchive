@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q272519: How to Redirect a Client Drive in Terminal Services"
-permalink: kb/272/Q272519/
+permalink: /kb/272/Q272519/
 ---
 
 ## Q272519: How to Redirect a Client Drive in Terminal Services

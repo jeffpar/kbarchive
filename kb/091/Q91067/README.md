@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q91067: WFWG Err Msg: The Version of the SETUP.INF File on Your..."
-permalink: kb/091/Q91067/
+permalink: /kb/091/Q91067/
 ---
 
 ## Q91067: WFWG Err Msg: The Version of the SETUP.INF File on Your...

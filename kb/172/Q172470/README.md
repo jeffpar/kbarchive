@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172470: Zero-Length RU Causes Subsequent Jobs to Stop"
-permalink: kb/172/Q172470/
+permalink: /kb/172/Q172470/
 ---
 
 ## Q172470: Zero-Length RU Causes Subsequent Jobs to Stop

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q298133: HOWTO: List Fixed Pitch Fonts with GetTextMetrics"
-permalink: kb/298/Q298133/
+permalink: /kb/298/Q298133/
 ---
 
 ## Q298133: HOWTO: List Fixed Pitch Fonts with GetTextMetrics

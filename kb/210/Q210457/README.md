@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q210457: ASP 0115 or Inetinfo Application Error Occurs on ASP File"
-permalink: kb/210/Q210457/
+permalink: /kb/210/Q210457/
 ---
 
 ## Q210457: ASP 0115 or Inetinfo Application Error Occurs on ASP File

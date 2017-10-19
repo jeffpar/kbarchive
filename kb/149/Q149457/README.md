@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149457: On-line Help Unavailable for Attachmate SDLC Cards in Setup"
-permalink: kb/149/Q149457/
+permalink: /kb/149/Q149457/
 ---
 
 ## Q149457: On-line Help Unavailable for Attachmate SDLC Cards in Setup

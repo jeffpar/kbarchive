@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171488: FIX: Val Function Recognizes System Decimal Symbol"
-permalink: kb/171/Q171488/
+permalink: /kb/171/Q171488/
 ---
 
 ## Q171488: FIX: Val Function Recognizes System Decimal Symbol

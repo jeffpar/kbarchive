@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148427: Generic SSL (PCT/TLS) Updates for IIS and MS Internet Products"
-permalink: kb/148/Q148427/
+permalink: /kb/148/Q148427/
 ---
 
 ## Q148427: Generic SSL (PCT/TLS) Updates for IIS and MS Internet Products

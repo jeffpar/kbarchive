@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q176489: XCON: MTA Generates NDRs and Message Loops"
-permalink: kb/176/Q176489/
+permalink: /kb/176/Q176489/
 ---
 
 ## Q176489: XCON: MTA Generates NDRs and Message Loops

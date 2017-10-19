@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82500: TAPCIS Timing Problem While Running in the Background"
-permalink: kb/082/Q82500/
+permalink: /kb/082/Q82500/
 ---
 
 ## Q82500: TAPCIS Timing Problem While Running in the Background

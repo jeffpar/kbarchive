@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85579: Pen Err Msg: Cannot Load Dictionary XXX.DLL..."
-permalink: kb/085/Q85579/
+permalink: /kb/085/Q85579/
 ---
 
 ## Q85579: Pen Err Msg: Cannot Load Dictionary XXX.DLL...

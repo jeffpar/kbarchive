@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q88155: Notepad Print Setup May Not Appear"
-permalink: kb/088/Q88155/
+permalink: /kb/088/Q88155/
 ---
 
 ## Q88155: Notepad Print Setup May Not Appear

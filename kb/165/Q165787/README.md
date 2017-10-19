@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165787: SMS: Remote Execute Fails When Command Contains Spaces"
-permalink: kb/165/Q165787/
+permalink: /kb/165/Q165787/
 ---
 
 ## Q165787: SMS: Remote Execute Fails When Command Contains Spaces

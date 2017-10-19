@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147347: Application Error in SPOOLSS.EXE When Printing"
-permalink: kb/147/Q147347/
+permalink: /kb/147/Q147347/
 ---
 
 ## Q147347: Application Error in SPOOLSS.EXE When Printing

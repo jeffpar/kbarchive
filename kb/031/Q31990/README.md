@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q31990: Maximum Number of Segments LINK Supports"
-permalink: kb/031/Q31990/
+permalink: /kb/031/Q31990/
 ---
 
 ## Q31990: Maximum Number of Segments LINK Supports

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183125: Shell Doc Property Dialog Custom Date Incorrect after Year 2000"
-permalink: kb/183/Q183125/
+permalink: /kb/183/Q183125/
 ---
 
 ## Q183125: Shell Doc Property Dialog Custom Date Incorrect after Year 2000

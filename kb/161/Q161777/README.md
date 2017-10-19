@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161777: SNA Server/SnaBase Traps Receive Invalid Client Logon Message"
-permalink: kb/161/Q161777/
+permalink: /kb/161/Q161777/
 ---
 
 ## Q161777: SNA Server/SnaBase Traps Receive Invalid Client Logon Message

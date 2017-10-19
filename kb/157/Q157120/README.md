@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157120: WD97: Two Shortcut Menus for Text Box"
-permalink: kb/157/Q157120/
+permalink: /kb/157/Q157120/
 ---
 
 ## Q157120: WD97: Two Shortcut Menus for Text Box

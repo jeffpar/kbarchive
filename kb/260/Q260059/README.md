@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260059: Extending a Volume Set Requires Chkdsk to Be Run"
-permalink: kb/260/Q260059/
+permalink: /kb/260/Q260059/
 ---
 
 ## Q260059: Extending a Volume Set Requires Chkdsk to Be Run

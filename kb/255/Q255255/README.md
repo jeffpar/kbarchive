@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255255: XFOR: Error with Calendar Connector for Lotus Notes on AS&#92;400"
-permalink: kb/255/Q255255/
+permalink: /kb/255/Q255255/
 ---
 
 ## Q255255: XFOR: Error with Calendar Connector for Lotus Notes on AS&#92;400

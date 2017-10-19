@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316818: FIX: Fatal Error Using the Equal Sign on Excel Classed Property"
-permalink: kb/316/Q316818/
+permalink: /kb/316/Q316818/
 ---
 
 ## Q316818: FIX: Fatal Error Using the Equal Sign on Excel Classed Property

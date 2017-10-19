@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117803: PC DOS: Undeliverable Mail Does Not Retain Highlighted Text"
-permalink: kb/117/Q117803/
+permalink: /kb/117/Q117803/
 ---
 
 ## Q117803: PC DOS: Undeliverable Mail Does Not Retain Highlighted Text

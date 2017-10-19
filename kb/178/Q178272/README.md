@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178272: RRAS Event ID 20103 When Using Microsoft Proxy Server 1.0"
-permalink: kb/178/Q178272/
+permalink: /kb/178/Q178272/
 ---
 
 ## Q178272: RRAS Event ID 20103 When Using Microsoft Proxy Server 1.0

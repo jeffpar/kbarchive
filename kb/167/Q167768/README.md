@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q167768: ODE97: Can't Open RunTime Wrkgadm.exe After Uninstalling Off 97"
-permalink: kb/167/Q167768/
+permalink: /kb/167/Q167768/
 ---
 
 ## Q167768: ODE97: Can't Open RunTime Wrkgadm.exe After Uninstalling Off 97

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q69079: HOWTO: How to Give a 3-D Effect to Windows Controls"
-permalink: kb/069/Q69079/
+permalink: /kb/069/Q69079/
 ---
 
 ## Q69079: HOWTO: How to Give a 3-D Effect to Windows Controls

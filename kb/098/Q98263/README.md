@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q98263: PC DB: 3.0a Server Update Disk [3.5, 720K; 5.25, 1.2 MB]"
-permalink: kb/098/Q98263/
+title: "Q98263: PC DB: 3.0a Server Update Disk &#91;3.5, 720K; 5.25, 1.2 MB&#93;"
+permalink: /kb/098/Q98263/
 ---
 
-## Q98263: PC DB: 3.0a Server Update Disk [3.5, 720K; 5.25, 1.2 MB]
+## Q98263: PC DB: 3.0a Server Update Disk &#91;3.5, 720K; 5.25, 1.2 MB&#93;
 
 	Article: Q98263
 	Product(s): Microsoft Mail For PC Networks

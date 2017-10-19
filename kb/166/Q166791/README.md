@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166791: Windows Explorer Error: Unable to Copy Disk on This Drive"
-permalink: kb/166/Q166791/
+permalink: /kb/166/Q166791/
 ---
 
 ## Q166791: Windows Explorer Error: Unable to Copy Disk on This Drive

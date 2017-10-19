@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q188838: Task Manager CPU Usage Only Displays Eight Processors"
-permalink: kb/188/Q188838/
+permalink: /kb/188/Q188838/
 ---
 
 ## Q188838: Task Manager CPU Usage Only Displays Eight Processors

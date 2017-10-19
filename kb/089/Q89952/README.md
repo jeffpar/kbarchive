@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89952: Skip Button Is Disabled in Windows Sound System"
-permalink: kb/089/Q89952/
+permalink: /kb/089/Q89952/
 ---
 
 ## Q89952: Skip Button Is Disabled in Windows Sound System

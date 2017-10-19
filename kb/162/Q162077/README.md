@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162077: Stop: 0x0000000A when Selecting NDS Map Objects"
-permalink: kb/162/Q162077/
+permalink: /kb/162/Q162077/
 ---
 
 ## Q162077: Stop: 0x0000000A when Selecting NDS Map Objects

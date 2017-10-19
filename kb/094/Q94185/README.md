@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94185: FIX: VB MCITEST CD Player Sample Displays Incorrect Track"
-permalink: kb/094/Q94185/
+permalink: /kb/094/Q94185/
 ---
 
 ## Q94185: FIX: VB MCITEST CD Player Sample Displays Incorrect Track

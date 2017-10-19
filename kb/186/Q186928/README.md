@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186928: XWEB: Application Error When Using User-defined View with DBCS"
-permalink: kb/186/Q186928/
+permalink: /kb/186/Q186928/
 ---
 
 ## Q186928: XWEB: Application Error When Using User-defined View with DBCS

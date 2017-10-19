@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151287: Windows 95 Questions and Answers"
-permalink: kb/151/Q151287/
+permalink: /kb/151/Q151287/
 ---
 
 ## Q151287: Windows 95 Questions and Answers

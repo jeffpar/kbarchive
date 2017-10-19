@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325605: Microsoft Office XP Plain &amp; Simple Comments and Corrections"
-permalink: kb/325/Q325605/
+permalink: /kb/325/Q325605/
 ---
 
 ## Q325605: Microsoft Office XP Plain &amp; Simple Comments and Corrections

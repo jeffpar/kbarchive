@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152940: XFOR: IMC Stops Sending Mail, Fails to Release TCP Connection"
-permalink: kb/152/Q152940/
+permalink: /kb/152/Q152940/
 ---
 
 ## Q152940: XFOR: IMC Stops Sending Mail, Fails to Release TCP Connection

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148241: RUNNING MS ACCESS FOR WIN 95 Corrections and Comments"
-permalink: kb/148/Q148241/
+permalink: /kb/148/Q148241/
 ---
 
 ## Q148241: RUNNING MS ACCESS FOR WIN 95 Corrections and Comments

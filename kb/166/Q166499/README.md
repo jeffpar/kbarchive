@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166499: XFOR: NDR from cc:Mail w/ &quot;Header Buffer Full&quot; Message"
-permalink: kb/166/Q166499/
+permalink: /kb/166/Q166499/
 ---
 
 ## Q166499: XFOR: NDR from cc:Mail w/ &quot;Header Buffer Full&quot; Message

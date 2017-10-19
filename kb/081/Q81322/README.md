@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q81322: Renaming Compile Results Window with a PWB Extension"
-permalink: kb/081/Q81322/
+permalink: /kb/081/Q81322/
 ---
 
 ## Q81322: Renaming Compile Results Window with a PWB Extension

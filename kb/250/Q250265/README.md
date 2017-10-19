@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q250265: Kernel32.dll Error Running AT Schedule Commands With Cmd.exe"
-permalink: kb/250/Q250265/
+permalink: /kb/250/Q250265/
 ---
 
 ## Q250265: Kernel32.dll Error Running AT Schedule Commands With Cmd.exe

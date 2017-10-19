@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187122: Deleted Files Appear Under in Recycler for All SIDs"
-permalink: kb/187/Q187122/
+permalink: /kb/187/Q187122/
 ---
 
 ## Q187122: Deleted Files Appear Under in Recycler for All SIDs

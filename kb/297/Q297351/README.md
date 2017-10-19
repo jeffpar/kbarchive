@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297351: Last Number Dialed Appears Incorrectly In MSN Explorer 6.1"
-permalink: kb/297/Q297351/
+permalink: /kb/297/Q297351/
 ---
 
 ## Q297351: Last Number Dialed Appears Incorrectly In MSN Explorer 6.1

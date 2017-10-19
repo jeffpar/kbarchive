@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175656: SMS: Hardware Inventory Fails to Detect IRQ and Port Address"
-permalink: kb/175/Q175656/
+permalink: /kb/175/Q175656/
 ---
 
 ## Q175656: SMS: Hardware Inventory Fails to Detect IRQ and Port Address

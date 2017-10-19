@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q264378: SMS: Site System Summarizer May Deadlock"
-permalink: kb/264/Q264378/
+permalink: /kb/264/Q264378/
 ---
 
 ## Q264378: SMS: Site System Summarizer May Deadlock

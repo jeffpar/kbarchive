@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159200: Setpass.exe May Not Change a NetWare Password"
-permalink: kb/159/Q159200/
+permalink: /kb/159/Q159200/
 ---
 
 ## Q159200: Setpass.exe May Not Change a NetWare Password

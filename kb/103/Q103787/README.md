@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103787: INFO: Compiler Looks for LINK.EXE in CL.EXE Directory First"
-permalink: kb/103/Q103787/
+permalink: /kb/103/Q103787/
 ---
 
 ## Q103787: INFO: Compiler Looks for LINK.EXE in CL.EXE Directory First

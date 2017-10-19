@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157709: XCON: No Notification when Resource Cannot Accept Invitation"
-permalink: kb/157/Q157709/
+permalink: /kb/157/Q157709/
 ---
 
 ## Q157709: XCON: No Notification when Resource Cannot Accept Invitation

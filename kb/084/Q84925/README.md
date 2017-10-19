@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84925: Order of Groups in PROGMAN.INI"
-permalink: kb/084/Q84925/
+permalink: /kb/084/Q84925/
 ---
 
 ## Q84925: Order of Groups in PROGMAN.INI

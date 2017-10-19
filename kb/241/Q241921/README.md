@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241921: WD97: Copied Text Viewed as Metafile Appears Clipped in Viewer"
-permalink: kb/241/Q241921/
+permalink: /kb/241/Q241921/
 ---
 
 ## Q241921: WD97: Copied Text Viewed as Metafile Appears Clipped in Viewer

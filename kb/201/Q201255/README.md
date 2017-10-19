@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201255: HOW TO: Enable SGC on Internet Information Server"
-permalink: kb/201/Q201255/
+permalink: /kb/201/Q201255/
 ---
 
 ## Q201255: HOW TO: Enable SGC on Internet Information Server

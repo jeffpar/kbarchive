@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173796: ODE97: Print Command Not Available in Run-Time Applications"
-permalink: kb/173/Q173796/
+permalink: /kb/173/Q173796/
 ---
 
 ## Q173796: ODE97: Print Command Not Available in Run-Time Applications

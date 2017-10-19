@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145821: BUG: Format Specifications Give Incorrect Output"
-permalink: kb/145/Q145821/
+permalink: /kb/145/Q145821/
 ---
 
 ## Q145821: BUG: Format Specifications Give Incorrect Output

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132441: INFO: Multithread Process and Visual FoxPro"
-permalink: kb/132/Q132441/
+permalink: /kb/132/Q132441/
 ---
 
 ## Q132441: INFO: Multithread Process and Visual FoxPro

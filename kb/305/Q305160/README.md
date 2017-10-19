@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q305160: Incoming SDLC Connections Log Event 182 and Fail to Activate"
-permalink: kb/305/Q305160/
+permalink: /kb/305/Q305160/
 ---
 
 ## Q305160: Incoming SDLC Connections Log Event 182 and Fail to Activate

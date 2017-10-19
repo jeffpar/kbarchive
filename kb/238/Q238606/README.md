@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238606: Page Contents Visible For Certain Virtual Directory Name"
-permalink: kb/238/Q238606/
+permalink: /kb/238/Q238606/
 ---
 
 ## Q238606: Page Contents Visible For Certain Virtual Directory Name

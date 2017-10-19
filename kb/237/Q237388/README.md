@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q237388: PRB: 32-Bit ODBC Drivers Can't Be Used from 16-Bit Applications"
-permalink: kb/237/Q237388/
+permalink: /kb/237/Q237388/
 ---
 
 ## Q237388: PRB: 32-Bit ODBC Drivers Can't Be Used from 16-Bit Applications

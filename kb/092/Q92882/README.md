@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q92882: WFWG Real Mode Redirector Error Messages Caused by Low Memory"
-permalink: kb/092/Q92882/
+permalink: /kb/092/Q92882/
 ---
 
 ## Q92882: WFWG Real Mode Redirector Error Messages Caused by Low Memory

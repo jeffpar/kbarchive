@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104422: PC Win: Mail Doesn't Recognize Word for Macintosh Attachment"
-permalink: kb/104/Q104422/
+permalink: /kb/104/Q104422/
 ---
 
 ## Q104422: PC Win: Mail Doesn't Recognize Word for Macintosh Attachment

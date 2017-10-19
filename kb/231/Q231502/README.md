@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231502: MP2000: Cannot Start Under Windows NT 4.0 on Dual Boot Computer"
-permalink: kb/231/Q231502/
+permalink: /kb/231/Q231502/
 ---
 
 ## Q231502: MP2000: Cannot Start Under Windows NT 4.0 on Dual Boot Computer

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161334: Guide To Windows NT 4.0 Profiles and Policies (Part 1 of 6)"
-permalink: kb/161/Q161334/
+permalink: /kb/161/Q161334/
 ---
 
 ## Q161334: Guide To Windows NT 4.0 Profiles and Policies (Part 1 of 6)

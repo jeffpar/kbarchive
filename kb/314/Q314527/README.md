@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q314527: Microsoft Office XP Step By Step Comments And Corrections"
-permalink: kb/314/Q314527/
+permalink: /kb/314/Q314527/
 ---
 
 ## Q314527: Microsoft Office XP Step By Step Comments And Corrections

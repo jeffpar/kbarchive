@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163240: STOP 0x0000006B Process1_Initialization_Failed"
-permalink: kb/163/Q163240/
+permalink: /kb/163/Q163240/
 ---
 
 ## Q163240: STOP 0x0000006B Process1_Initialization_Failed

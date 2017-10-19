@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242088: Winnt /b Doesn't Work on WinNT 4.0 w/ Onboard Adaptec 7895 SCSI"
-permalink: kb/242/Q242088/
+permalink: /kb/242/Q242088/
 ---
 
 ## Q242088: Winnt /b Doesn't Work on WinNT 4.0 w/ Onboard Adaptec 7895 SCSI

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q295323: Windows NT 4.0 Policies May Not Work in a Windows 2000 Domain"
-permalink: kb/295/Q295323/
+permalink: /kb/295/Q295323/
 ---
 
 ## Q295323: Windows NT 4.0 Policies May Not Work in a Windows 2000 Domain

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236981: &quot;STOP 0x0000000A&quot; Involving Scsiport.sys in Windows NT 4.0 SP5"
-permalink: kb/236/Q236981/
+permalink: /kb/236/Q236981/
 ---
 
 ## Q236981: &quot;STOP 0x0000000A&quot; Involving Scsiport.sys in Windows NT 4.0 SP5

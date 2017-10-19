@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150966: Macintosh Bookshelf '96-'97: Contents of Each Book"
-permalink: kb/150/Q150966/
+permalink: /kb/150/Q150966/
 ---
 
 ## Q150966: Macintosh Bookshelf '96-'97: Contents of Each Book

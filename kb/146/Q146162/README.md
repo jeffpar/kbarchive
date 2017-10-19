@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146162: XCLN: Copy Across Store Does Not Change the Message Size"
-permalink: kb/146/Q146162/
+permalink: /kb/146/Q146162/
 ---
 
 ## Q146162: XCLN: Copy Across Store Does Not Change the Message Size

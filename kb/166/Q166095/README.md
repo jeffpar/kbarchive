@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166095: BUG: Win95 Arc() Does Not Draw an Ellipse on HP LJ 4"
-permalink: kb/166/Q166095/
+permalink: /kb/166/Q166095/
 ---
 
 ## Q166095: BUG: Win95 Arc() Does Not Draw an Ellipse on HP LJ 4

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108469: VB 3.0 DATACONS.TXT: Const Constant Values for Data Access"
-permalink: kb/108/Q108469/
+permalink: /kb/108/Q108469/
 ---
 
 ## Q108469: VB 3.0 DATACONS.TXT: Const Constant Values for Data Access

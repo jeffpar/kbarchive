@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141191: File &amp; Print Services for NetWare Volume Disappears After Reboot"
-permalink: kb/141/Q141191/
+permalink: /kb/141/Q141191/
 ---
 
 ## Q141191: File &amp; Print Services for NetWare Volume Disappears After Reboot

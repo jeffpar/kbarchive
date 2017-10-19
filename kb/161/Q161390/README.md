@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161390: PPT: Sample Code to Display the Selection Type"
-permalink: kb/161/Q161390/
+permalink: /kb/161/Q161390/
 ---
 
 ## Q161390: PPT: Sample Code to Display the Selection Type

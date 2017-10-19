@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236185: Terminal Server User Profiles and Home Folder Paths Are Ignored"
-permalink: kb/236/Q236185/
+permalink: /kb/236/Q236185/
 ---
 
 ## Q236185: Terminal Server User Profiles and Home Folder Paths Are Ignored

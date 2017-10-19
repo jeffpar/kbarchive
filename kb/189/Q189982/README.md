@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189982: PRB: Error 429 When Trying to Access an MTS Component"
-permalink: kb/189/Q189982/
+permalink: /kb/189/Q189982/
 ---
 
 ## Q189982: PRB: Error 429 When Trying to Access an MTS Component

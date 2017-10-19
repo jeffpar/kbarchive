@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q240955: Multithreaded Program May Wait Forever on WaitForMultipleObjects"
-permalink: kb/240/Q240955/
+permalink: /kb/240/Q240955/
 ---
 
 ## Q240955: Multithreaded Program May Wait Forever on WaitForMultipleObjects

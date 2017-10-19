@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249895: XCON: MTA Stops, Event ID 3057 Appears When You Start Store"
-permalink: kb/249/Q249895/
+permalink: /kb/249/Q249895/
 ---
 
 ## Q249895: XCON: MTA Stops, Event ID 3057 Appears When You Start Store

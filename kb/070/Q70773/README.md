@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q70773: Optimizing Use of PCL Soft Fonts in Windows 3.0"
-permalink: kb/070/Q70773/
+permalink: /kb/070/Q70773/
 ---
 
 ## Q70773: Optimizing Use of PCL Soft Fonts in Windows 3.0

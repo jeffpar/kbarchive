@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199521: PRB: User-Defined onexit/atexit/cexit Not Called If /MD or /MDd"
-permalink: kb/199/Q199521/
+permalink: /kb/199/Q199521/
 ---
 
 ## Q199521: PRB: User-Defined onexit/atexit/cexit Not Called If /MD or /MDd

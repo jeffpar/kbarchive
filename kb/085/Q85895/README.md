@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85895: Windows 3.1 File Manager Does Not Refresh After Sizing Windows"
-permalink: kb/085/Q85895/
+permalink: /kb/085/Q85895/
 ---
 
 ## Q85895: Windows 3.1 File Manager Does Not Refresh After Sizing Windows

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q158303: PC Win: HMail Client Freezes When Sending to Large Group Alias"
-permalink: kb/158/Q158303/
+permalink: /kb/158/Q158303/
 ---
 
 ## Q158303: PC Win: HMail Client Freezes When Sending to Large Group Alias

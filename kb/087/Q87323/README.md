@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q87323: Windows Err Msg: NW IPX and SPX Not Loaded..."
-permalink: kb/087/Q87323/
+permalink: /kb/087/Q87323/
 ---
 
 ## Q87323: Windows Err Msg: NW IPX and SPX Not Loaded...

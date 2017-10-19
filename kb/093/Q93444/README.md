@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93444: Tuning TCP/IP for Performance"
-permalink: kb/093/Q93444/
+permalink: /kb/093/Q93444/
 ---
 
 ## Q93444: Tuning TCP/IP for Performance

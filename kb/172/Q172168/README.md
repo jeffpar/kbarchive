@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172168: Run Programs Not Applied from Policy File"
-permalink: kb/172/Q172168/
+permalink: /kb/172/Q172168/
 ---
 
 ## Q172168: Run Programs Not Applied from Policy File

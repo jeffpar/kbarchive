@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q212279: DirectX 7.0: DirectX Setup Does Not Install Old DirectPlay Files"
-permalink: kb/212/Q212279/
+permalink: /kb/212/Q212279/
 ---
 
 ## Q212279: DirectX 7.0: DirectX Setup Does Not Install Old DirectPlay Files

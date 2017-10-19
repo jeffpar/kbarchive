@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q249691: XADM: Error in Mailbox Manager Documentation on IPM.Note"
-permalink: kb/249/Q249691/
+permalink: /kb/249/Q249691/
 ---
 
 ## Q249691: XADM: Error in Mailbox Manager Documentation on IPM.Note

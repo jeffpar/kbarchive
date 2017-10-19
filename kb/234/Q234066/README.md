@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q234066: Can't Select Group Item for User Defined Type/Recordset"
-permalink: kb/234/Q234066/
+permalink: /kb/234/Q234066/
 ---
 
 ## Q234066: Can't Select Group Item for User Defined Type/Recordset

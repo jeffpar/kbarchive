@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138513: Cannot Change Font Used in Printed Online Help Topic"
-permalink: kb/138/Q138513/
+permalink: /kb/138/Q138513/
 ---
 
 ## Q138513: Cannot Change Font Used in Printed Online Help Topic

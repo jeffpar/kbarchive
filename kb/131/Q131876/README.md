@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131876: ATI Mach8 Video Adapter May Need BIOS Upgrade"
-permalink: kb/131/Q131876/
+permalink: /kb/131/Q131876/
 ---
 
 ## Q131876: ATI Mach8 Video Adapter May Need BIOS Upgrade

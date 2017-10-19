@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98741: EMM386 May Hang System with Certain Network Cards"
-permalink: kb/098/Q98741/
+permalink: /kb/098/Q98741/
 ---
 
 ## Q98741: EMM386 May Hang System with Certain Network Cards

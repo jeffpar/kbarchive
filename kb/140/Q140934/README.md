@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140934: XFOR: IMC: NDR is Held Until Timeout Period Expired"
-permalink: kb/140/Q140934/
+permalink: /kb/140/Q140934/
 ---
 
 ## Q140934: XFOR: IMC: NDR is Held Until Timeout Period Expired

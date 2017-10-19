@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q255625: BUG: Err Object Returns Zero Number and Empty Description."
-permalink: kb/255/Q255625/
+permalink: /kb/255/Q255625/
 ---
 
 ## Q255625: BUG: Err Object Returns Zero Number and Empty Description.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108291: FIX: Cannot Add New Member Variables with VIEWEX Sample"
-permalink: kb/108/Q108291/
+permalink: /kb/108/Q108291/
 ---
 
 ## Q108291: FIX: Cannot Add New Member Variables with VIEWEX Sample

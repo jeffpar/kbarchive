@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152931: XADM: ISINTEG Reports Errors on IMC Folders"
-permalink: kb/152/Q152931/
+permalink: /kb/152/Q152931/
 ---
 
 ## Q152931: XADM: ISINTEG Reports Errors on IMC Folders

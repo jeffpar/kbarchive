@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169125: SMS: Bitmap Buffering Causes Remote Control Corruption"
-permalink: kb/169/Q169125/
+permalink: /kb/169/Q169125/
 ---
 
 ## Q169125: SMS: Bitmap Buffering Causes Remote Control Corruption

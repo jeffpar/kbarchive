@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q293662: SMS: Your User Account May Be Repeatedly Locked Out in a Domain"
-permalink: kb/293/Q293662/
+permalink: /kb/293/Q293662/
 ---
 
 ## Q293662: SMS: Your User Account May Be Repeatedly Locked Out in a Domain

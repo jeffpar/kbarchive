@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67736: PRB: &quot;missing ':' in -&gt;&quot; Caused by Control Character"
-permalink: kb/067/Q67736/
+permalink: /kb/067/Q67736/
 ---
 
 ## Q67736: PRB: &quot;missing ':' in -&gt;&quot; Caused by Control Character

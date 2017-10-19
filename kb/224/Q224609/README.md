@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224609: How to Obtain Versions of Internet Information Server (IIS)"
-permalink: kb/224/Q224609/
+permalink: /kb/224/Q224609/
 ---
 
 ## Q224609: How to Obtain Versions of Internet Information Server (IIS)

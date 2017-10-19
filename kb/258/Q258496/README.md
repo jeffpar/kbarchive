@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258496: Games: How to Troubleshoot Setup Problems in Microsoft Games"
-permalink: kb/258/Q258496/
+permalink: /kb/258/Q258496/
 ---
 
 ## Q258496: Games: How to Troubleshoot Setup Problems in Microsoft Games

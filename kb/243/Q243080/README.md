@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243080: XADM: Access Denied During Service Pack Update 0xc0020005"
-permalink: kb/243/Q243080/
+permalink: /kb/243/Q243080/
 ---
 
 ## Q243080: XADM: Access Denied During Service Pack Update 0xc0020005

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q286401: UNCAuthenticationPassThrough Support Limitation in IIS 5.0"
-permalink: kb/286/Q286401/
+permalink: /kb/286/Q286401/
 ---
 
 ## Q286401: UNCAuthenticationPassThrough Support Limitation in IIS 5.0

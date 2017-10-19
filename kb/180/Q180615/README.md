@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180615: BUG: Text Box Value Does Not Change If ControlSource Is .NULL."
-permalink: kb/180/Q180615/
+permalink: /kb/180/Q180615/
 ---
 
 ## Q180615: BUG: Text Box Value Does Not Change If ControlSource Is .NULL.

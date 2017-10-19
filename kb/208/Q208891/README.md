@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q208891: MSN Connection Manager Disconnects Modem."
-permalink: kb/208/Q208891/
+permalink: /kb/208/Q208891/
 ---
 
 ## Q208891: MSN Connection Manager Disconnects Modem.

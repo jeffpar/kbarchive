@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89881: WinMeter Abnormally High with Some Programs"
-permalink: kb/089/Q89881/
+permalink: /kb/089/Q89881/
 ---
 
 ## Q89881: WinMeter Abnormally High with Some Programs

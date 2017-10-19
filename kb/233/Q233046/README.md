@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233046: Running MS Office 2000 Professional Comments and Corrections"
-permalink: kb/233/Q233046/
+permalink: /kb/233/Q233046/
 ---
 
 ## Q233046: Running MS Office 2000 Professional Comments and Corrections

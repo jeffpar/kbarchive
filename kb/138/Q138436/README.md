@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138436: PRB: BorderColor Property Doesn't Change Color of Border"
-permalink: kb/138/Q138436/
+permalink: /kb/138/Q138436/
 ---
 
 ## Q138436: PRB: BorderColor Property Doesn't Change Color of Border

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q297148: Costing Errors For Dial-up Networking And Internet Explorer"
-permalink: kb/297/Q297148/
+permalink: /kb/297/Q297148/
 ---
 
 ## Q297148: Costing Errors For Dial-up Networking And Internet Explorer

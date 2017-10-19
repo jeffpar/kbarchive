@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132396: FIX: Error C2065: 'DDX_FieldCBIndex' : undeclared identifier"
-permalink: kb/132/Q132396/
+permalink: /kb/132/Q132396/
 ---
 
 ## Q132396: FIX: Error C2065: 'DDX_FieldCBIndex' : undeclared identifier

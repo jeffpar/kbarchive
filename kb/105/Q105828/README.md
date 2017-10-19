@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105828: Disks Created by MS-DOS 6.2 Upgrade and Step-Up Setup /F"
-permalink: kb/105/Q105828/
+permalink: /kb/105/Q105828/
 ---
 
 ## Q105828: Disks Created by MS-DOS 6.2 Upgrade and Step-Up Setup /F

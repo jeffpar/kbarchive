@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316711: BUG: Incorrect CONV_ID for WinCPICSetEvent/WinCPICExtractEvent"
-permalink: kb/316/Q316711/
+permalink: /kb/316/Q316711/
 ---
 
 ## Q316711: BUG: Incorrect CONV_ID for WinCPICSetEvent/WinCPICExtractEvent

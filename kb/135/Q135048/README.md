@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135048: HOWTO: How to Access a Subclassed Windows Control in an OLE Cont"
-permalink: kb/135/Q135048/
+permalink: /kb/135/Q135048/
 ---
 
 ## Q135048: HOWTO: How to Access a Subclassed Windows Control in an OLE Cont

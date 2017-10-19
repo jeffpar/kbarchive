@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157173: Ntbackup.exe Generates Error Using 4-Character Description"
-permalink: kb/157/Q157173/
+permalink: /kb/157/Q157173/
 ---
 
 ## Q157173: Ntbackup.exe Generates Error Using 4-Character Description

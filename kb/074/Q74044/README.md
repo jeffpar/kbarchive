@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74044: INFO: Logical and Physical Coordinate Relationship"
-permalink: kb/074/Q74044/
+permalink: /kb/074/Q74044/
 ---
 
 ## Q74044: INFO: Logical and Physical Coordinate Relationship

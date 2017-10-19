@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129293: Writer/Artist: The Switcher Tool"
-permalink: kb/129/Q129293/
+permalink: /kb/129/Q129293/
 ---
 
 ## Q129293: Writer/Artist: The Switcher Tool

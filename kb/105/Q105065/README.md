@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105065: Microsoft Backup Cannot Back Up SyQuest Removable Disk"
-permalink: kb/105/Q105065/
+permalink: /kb/105/Q105065/
 ---
 
 ## Q105065: Microsoft Backup Cannot Back Up SyQuest Removable Disk

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168416: WD97: Using ActiveX Control in Mail Merge Causes Page Fault"
-permalink: kb/168/Q168416/
+permalink: /kb/168/Q168416/
 ---
 
 ## Q168416: WD97: Using ActiveX Control in Mail Merge Causes Page Fault

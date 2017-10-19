@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187274: BUG: Referencing This.Value in Editbox Refresh Causes Error"
-permalink: kb/187/Q187274/
+permalink: /kb/187/Q187274/
 ---
 
 ## Q187274: BUG: Referencing This.Value in Editbox Refresh Causes Error

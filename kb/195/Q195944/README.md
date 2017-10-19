@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195944: SMS: Package Command Manager Preferred Server Selection"
-permalink: kb/195/Q195944/
+permalink: /kb/195/Q195944/
 ---
 
 ## Q195944: SMS: Package Command Manager Preferred Server Selection

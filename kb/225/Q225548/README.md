@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225548: IP Restrictions in HTMLA Web Admin Forms May Cause Problems"
-permalink: kb/225/Q225548/
+permalink: /kb/225/Q225548/
 ---
 
 ## Q225548: IP Restrictions in HTMLA Web Admin Forms May Cause Problems

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148509: PRB: A2108 Error When Using Simplified Segment Directives"
-permalink: kb/148/Q148509/
+permalink: /kb/148/Q148509/
 ---
 
 ## Q148509: PRB: A2108 Error When Using Simplified Segment Directives

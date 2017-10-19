@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q282502: Encarta 2001: How to Manually Uninstall Encarta 2001"
-permalink: kb/282/Q282502/
+permalink: /kb/282/Q282502/
 ---
 
 ## Q282502: Encarta 2001: How to Manually Uninstall Encarta 2001

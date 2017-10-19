@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140852: Encarta 1996: Manual Install Instructions for Windows 95"
-permalink: kb/140/Q140852/
+permalink: /kb/140/Q140852/
 ---
 
 ## Q140852: Encarta 1996: Manual Install Instructions for Windows 95

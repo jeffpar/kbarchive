@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147404: Err Msg: &lt;Program&gt; Setup Was Not Completed Successfully"
-permalink: kb/147/Q147404/
+permalink: /kb/147/Q147404/
 ---
 
 ## Q147404: Err Msg: &lt;Program&gt; Setup Was Not Completed Successfully

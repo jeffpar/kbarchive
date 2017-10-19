@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q285985: New Variant of File Fragment Reading via .HTR Vulnerability"
-permalink: kb/285/Q285985/
+permalink: /kb/285/Q285985/
 ---
 
 ## Q285985: New Variant of File Fragment Reading via .HTR Vulnerability

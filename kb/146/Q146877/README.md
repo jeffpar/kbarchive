@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146877: Mac Encarta: Characters Display Wrong When Copied and Pasted"
-permalink: kb/146/Q146877/
+permalink: /kb/146/Q146877/
 ---
 
 ## Q146877: Mac Encarta: Characters Display Wrong When Copied and Pasted

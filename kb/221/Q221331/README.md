@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221331: RRAS Computer Stops Responding to Incoming Calls Under Stress"
-permalink: kb/221/Q221331/
+permalink: /kb/221/Q221331/
 ---
 
 ## Q221331: RRAS Computer Stops Responding to Incoming Calls Under Stress

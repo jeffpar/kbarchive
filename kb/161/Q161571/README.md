@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161571: Using DHCP &quot;Superscopes&quot; to Serve Multiple Logical Subnets"
-permalink: kb/161/Q161571/
+permalink: /kb/161/Q161571/
 ---
 
 ## Q161571: Using DHCP &quot;Superscopes&quot; to Serve Multiple Logical Subnets

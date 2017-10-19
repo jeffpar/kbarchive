@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193837: Windows NT 4.0 DNS Server Default Zone Security Settings"
-permalink: kb/193/Q193837/
+permalink: /kb/193/Q193837/
 ---
 
 ## Q193837: Windows NT 4.0 DNS Server Default Zone Security Settings

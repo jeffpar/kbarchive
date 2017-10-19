@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183104: XCON: Interop Issue with Lowercase PAB Address, Softswitch LMS"
-permalink: kb/183/Q183104/
+permalink: /kb/183/Q183104/
 ---
 
 ## Q183104: XCON: Interop Issue with Lowercase PAB Address, Softswitch LMS

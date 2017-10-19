@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192684: XCLN: Spelling Check Before Sending Ignored Sending from Office"
-permalink: kb/192/Q192684/
+permalink: /kb/192/Q192684/
 ---
 
 ## Q192684: XCLN: Spelling Check Before Sending Ignored Sending from Office

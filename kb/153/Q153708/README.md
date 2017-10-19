@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153708: Cinemania 1996: Button Images in Find Menu Misplaced"
-permalink: kb/153/Q153708/
+permalink: /kb/153/Q153708/
 ---
 
 ## Q153708: Cinemania 1996: Button Images in Find Menu Misplaced

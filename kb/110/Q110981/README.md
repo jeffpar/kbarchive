@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110981: Removing WinFax Pro from Windows for Troubleshooting"
-permalink: kb/110/Q110981/
+permalink: /kb/110/Q110981/
 ---
 
 ## Q110981: Removing WinFax Pro from Windows for Troubleshooting

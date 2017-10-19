@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274776: Microsoft Reader Error Message: Activation Error"
-permalink: kb/274/Q274776/
+permalink: /kb/274/Q274776/
 ---
 
 ## Q274776: Microsoft Reader Error Message: Activation Error

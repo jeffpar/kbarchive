@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134786: PPT7: Color of Embossed Text Varies with Text Box Fill Style"
-permalink: kb/134/Q134786/
+permalink: /kb/134/Q134786/
 ---
 
 ## Q134786: PPT7: Color of Embossed Text Varies with Text Box Fill Style

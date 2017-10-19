@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q84944: LANtastic Z and Windows 3.0, 3.1 Compatibility"
-permalink: kb/084/Q84944/
+permalink: /kb/084/Q84944/
 ---
 
 ## Q84944: LANtastic Z and Windows 3.0, 3.1 Compatibility

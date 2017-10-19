@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281082: Encarta: DVD Player Starts When You Insert the Encarta DVD-ROM"
-permalink: kb/281/Q281082/
+permalink: /kb/281/Q281082/
 ---
 
 ## Q281082: Encarta: DVD Player Starts When You Insert the Encarta DVD-ROM

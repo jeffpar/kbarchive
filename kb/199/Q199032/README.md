@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199032: EVG99: &quot;Error Reading CD-ROM&quot; When You Zoom In or Out on the Map"
-permalink: kb/199/Q199032/
+permalink: /kb/199/Q199032/
 ---
 
 ## Q199032: EVG99: &quot;Error Reading CD-ROM&quot; When You Zoom In or Out on the Map

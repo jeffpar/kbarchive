@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110802: Windows Sound System 2.0 Disk Dir List (3.5 inch, 720K)"
-permalink: kb/110/Q110802/
+permalink: /kb/110/Q110802/
 ---
 
 ## Q110802: Windows Sound System 2.0 Disk Dir List (3.5 inch, 720K)

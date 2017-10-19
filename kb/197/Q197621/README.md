@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197621: IP Restrictions Using Web Admin May Not Work as Expected"
-permalink: kb/197/Q197621/
+permalink: /kb/197/Q197621/
 ---
 
 ## Q197621: IP Restrictions Using Web Admin May Not Work as Expected

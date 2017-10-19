@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q101416: .PIF File Format Unavailable"
-permalink: kb/101/Q101416/
+permalink: /kb/101/Q101416/
 ---
 
 ## Q101416: .PIF File Format Unavailable

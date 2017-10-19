@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187302: Stop 0x00000040 in NetBT Protocol"
-permalink: kb/187/Q187302/
+permalink: /kb/187/Q187302/
 ---
 
 ## Q187302: Stop 0x00000040 in NetBT Protocol

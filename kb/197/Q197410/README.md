@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197410: WD97: How to Find Out Which Macro Is Assigned to a Menu Command"
-permalink: kb/197/Q197410/
+permalink: /kb/197/Q197410/
 ---
 
 ## Q197410: WD97: How to Find Out Which Macro Is Assigned to a Menu Command

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q276476: TN3270 Cannot Restrict Access Through Ports for Specific Request"
-permalink: kb/276/Q276476/
+permalink: /kb/276/Q276476/
 ---
 
 ## Q276476: TN3270 Cannot Restrict Access Through Ports for Specific Request

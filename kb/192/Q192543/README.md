@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192543: Err Msg: Error 629  When You Attempt to Connect to MSN"
-permalink: kb/192/Q192543/
+permalink: /kb/192/Q192543/
 ---
 
 ## Q192543: Err Msg: Error 629  When You Attempt to Connect to MSN

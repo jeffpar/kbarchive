@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q216094: Combat FS: Display Is Choppy or Blinks Intermittently"
-permalink: kb/216/Q216094/
+permalink: /kb/216/Q216094/
 ---
 
 ## Q216094: Combat FS: Display Is Choppy or Blinks Intermittently

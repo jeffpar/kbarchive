@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130232: WINS Response to Group Name Query is Limited Broadcast Address"
-permalink: kb/130/Q130232/
+permalink: /kb/130/Q130232/
 ---
 
 ## Q130232: WINS Response to Group Name Query is Limited Broadcast Address

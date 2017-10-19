@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94227: INFO: Output Stream cout Is Buffered"
-permalink: kb/094/Q94227/
+permalink: /kb/094/Q94227/
 ---
 
 ## Q94227: INFO: Output Stream cout Is Buffered

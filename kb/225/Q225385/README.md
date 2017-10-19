@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q225385: New Intranet Kit Calendar Events Not Displayed"
-permalink: kb/225/Q225385/
+permalink: /kb/225/Q225385/
 ---
 
 ## Q225385: New Intranet Kit Calendar Events Not Displayed

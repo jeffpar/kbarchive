@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q190003: Error -1073741670(0xC0000098) Using the HTML Administrator"
-permalink: kb/190/Q190003/
+permalink: /kb/190/Q190003/
 ---
 
 ## Q190003: Error -1073741670(0xC0000098) Using the HTML Administrator

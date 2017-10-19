@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259975: XADM: Error Message: Account Information Is Incorrect"
-permalink: kb/259/Q259975/
+permalink: /kb/259/Q259975/
 ---
 
 ## Q259975: XADM: Error Message: Account Information Is Incorrect

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131439: Mac Encarta 95: ErrMsg: Error Loading the Specified List"
-permalink: kb/131/Q131439/
+permalink: /kb/131/Q131439/
 ---
 
 ## Q131439: Mac Encarta 95: ErrMsg: Error Loading the Specified List

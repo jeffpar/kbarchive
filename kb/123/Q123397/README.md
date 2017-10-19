@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123397: PC Ext: Duplicate Entries in SENT.LOG When Transfer Via Modem"
-permalink: kb/123/Q123397/
+permalink: /kb/123/Q123397/
 ---
 
 ## Q123397: PC Ext: Duplicate Entries in SENT.LOG When Transfer Via Modem

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q269272: Mail Client Address List Truncated Using &quot;Mailto:&quot; Link"
-permalink: kb/269/Q269272/
+permalink: /kb/269/Q269272/
 ---
 
 ## Q269272: Mail Client Address List Truncated Using &quot;Mailto:&quot; Link

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224988: FIX: CREATE FROM Command Incorrectly Assumes .dbf Extension"
-permalink: kb/224/Q224988/
+permalink: /kb/224/Q224988/
 ---
 
 ## Q224988: FIX: CREATE FROM Command Incorrectly Assumes .dbf Extension

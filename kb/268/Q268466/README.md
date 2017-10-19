@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268466: End User License Agreement (EULA) Policy on Duplicating CD-ROMs"
-permalink: kb/268/Q268466/
+permalink: /kb/268/Q268466/
 ---
 
 ## Q268466: End User License Agreement (EULA) Policy on Duplicating CD-ROMs

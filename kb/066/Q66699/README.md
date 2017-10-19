@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66699: LINK Ignores Drive Specification Searching for Libraries"
-permalink: kb/066/Q66699/
+permalink: /kb/066/Q66699/
 ---
 
 ## Q66699: LINK Ignores Drive Specification Searching for Libraries

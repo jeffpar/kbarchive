@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165702: Increase Capacity of LUs in a Pool to 30,000"
-permalink: kb/165/Q165702/
+permalink: /kb/165/Q165702/
 ---
 
 ## Q165702: Increase Capacity of LUs in a Pool to 30,000

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138971: BUG: Default Dialog-Based Application Doesn't Work in Win32s"
-permalink: kb/138/Q138971/
+permalink: /kb/138/Q138971/
 ---
 
 ## Q138971: BUG: Default Dialog-Based Application Doesn't Work in Win32s

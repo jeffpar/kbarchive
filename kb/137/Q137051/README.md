@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137051: Cannot Play .avi Files with Number 9 Video Card"
-permalink: kb/137/Q137051/
+permalink: /kb/137/Q137051/
 ---
 
 ## Q137051: Cannot Play .avi Files with Number 9 Video Card

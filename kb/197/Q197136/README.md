@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197136: WD97: Style Deleted from Style Dialog Box Remains in Template"
-permalink: kb/197/Q197136/
+permalink: /kb/197/Q197136/
 ---
 
 ## Q197136: WD97: Style Deleted from Style Dialog Box Remains in Template

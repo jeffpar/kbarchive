@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154041: XCLN: Message Time is Off One Hour on Macintosh's"
-permalink: kb/154/Q154041/
+permalink: /kb/154/Q154041/
 ---
 
 ## Q154041: XCLN: Message Time is Off One Hour on Macintosh's

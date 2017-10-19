@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139638: HOWTO: Overload New to Reduce Memory Fragmentation"
-permalink: kb/139/Q139638/
+permalink: /kb/139/Q139638/
 ---
 
 ## Q139638: HOWTO: Overload New to Reduce Memory Fragmentation

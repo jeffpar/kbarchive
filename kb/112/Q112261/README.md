@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112261: PC Win: Message Finder Icon Shows Deleted Messages"
-permalink: kb/112/Q112261/
+permalink: /kb/112/Q112261/
 ---
 
 ## Q112261: PC Win: Message Finder Icon Shows Deleted Messages

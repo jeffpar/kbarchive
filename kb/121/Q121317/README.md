@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121317: TCP/IP-32 Version 3.11 Does Not Include Terminal Font"
-permalink: kb/121/Q121317/
+permalink: /kb/121/Q121317/
 ---
 
 ## Q121317: TCP/IP-32 Version 3.11 Does Not Include Terminal Font

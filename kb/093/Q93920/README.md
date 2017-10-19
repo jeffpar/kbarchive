@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q93920: Using Functions and Subroutines with Microsoft Setup"
-permalink: kb/093/Q93920/
+permalink: /kb/093/Q93920/
 ---
 
 ## Q93920: Using Functions and Subroutines with Microsoft Setup

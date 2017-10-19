@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178637: Using Game Compatible Device to Troubleshoot Sound Problems"
-permalink: kb/178/Q178637/
+permalink: /kb/178/Q178637/
 ---
 
 ## Q178637: Using Game Compatible Device to Troubleshoot Sound Problems

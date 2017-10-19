@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134381: PC Gen: DIRSYNC.DOC from Mail 3.5 Does Not Print"
-permalink: kb/134/Q134381/
+permalink: /kb/134/Q134381/
 ---
 
 ## Q134381: PC Gen: DIRSYNC.DOC from Mail 3.5 Does Not Print

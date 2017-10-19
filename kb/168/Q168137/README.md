@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168137: XCON: Exchange to MCI and Sprint Interoperability"
-permalink: kb/168/Q168137/
+permalink: /kb/168/Q168137/
 ---
 
 ## Q168137: XCON: Exchange to MCI and Sprint Interoperability

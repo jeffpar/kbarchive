@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138482: Windows NT Telnet Client Does Not Support SNA Server TN3270"
-permalink: kb/138/Q138482/
+permalink: /kb/138/Q138482/
 ---
 
 ## Q138482: Windows NT Telnet Client Does Not Support SNA Server TN3270

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152789: HOWTO: Install Visual Basic to a Network Using 8.3 File Names"
-permalink: kb/152/Q152789/
+permalink: /kb/152/Q152789/
 ---
 
 ## Q152789: HOWTO: Install Visual Basic to a Network Using 8.3 File Names

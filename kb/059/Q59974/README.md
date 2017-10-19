@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59974: Mac Hyp: Getting a List of Recipients of a Message"
-permalink: kb/059/Q59974/
+permalink: /kb/059/Q59974/
 ---
 
 ## Q59974: Mac Hyp: Getting a List of Recipients of a Message

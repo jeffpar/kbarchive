@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161398: How to Add Microsoft Golf 2.0 Courses to Golf 3.0"
-permalink: kb/161/Q161398/
+permalink: /kb/161/Q161398/
 ---
 
 ## Q161398: How to Add Microsoft Golf 2.0 Courses to Golf 3.0

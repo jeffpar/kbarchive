@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126429: Win16 Subsystem Fails When Used with Equinox Serial Driver"
-permalink: kb/126/Q126429/
+permalink: /kb/126/Q126429/
 ---
 
 ## Q126429: Win16 Subsystem Fails When Used with Equinox Serial Driver

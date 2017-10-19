@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q134675: PC Gen: 3.5 Mail for PC Networks Forms Designer Disk [3.5]"
-permalink: kb/134/Q134675/
+title: "Q134675: PC Gen: 3.5 Mail for PC Networks Forms Designer Disk &#91;3.5&#93;"
+permalink: /kb/134/Q134675/
 ---
 
-## Q134675: PC Gen: 3.5 Mail for PC Networks Forms Designer Disk [3.5]
+## Q134675: PC Gen: 3.5 Mail for PC Networks Forms Designer Disk &#91;3.5&#93;
 
 	Article: Q134675
 	Product(s): Microsoft Mail For PC Networks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146944: XFOR: IMC Does Not Check Hosts Table If DNS Server Down"
-permalink: kb/146/Q146944/
+permalink: /kb/146/Q146944/
 ---
 
 ## Q146944: XFOR: IMC Does Not Check Hosts Table If DNS Server Down

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q76833: Changing the Focus from the Search Window in Bookshelf"
-permalink: kb/076/Q76833/
+permalink: /kb/076/Q76833/
 ---
 
 ## Q76833: Changing the Focus from the Search Window in Bookshelf

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q260401: XADM: Install Doesn't Work on Stand-Alone Windows 2000 Server"
-permalink: kb/260/Q260401/
+permalink: /kb/260/Q260401/
 ---
 
 ## Q260401: XADM: Install Doesn't Work on Stand-Alone Windows 2000 Server

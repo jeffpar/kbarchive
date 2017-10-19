@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142649: STOP 0x0000000A on ALR Revolution"
-permalink: kb/142/Q142649/
+permalink: /kb/142/Q142649/
 ---
 
 ## Q142649: STOP 0x0000000A on ALR Revolution

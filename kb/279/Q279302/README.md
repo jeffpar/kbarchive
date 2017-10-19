@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q279302: CFS2: Pilot's Manual Incorrectly States You Can Drop Torpedoes"
-permalink: kb/279/Q279302/
+permalink: /kb/279/Q279302/
 ---
 
 ## Q279302: CFS2: Pilot's Manual Incorrectly States You Can Drop Torpedoes

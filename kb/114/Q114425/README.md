@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114425: WFWG 3.11: How to Create a Boot Disk to Load Real-Mode Network"
-permalink: kb/114/Q114425/
+permalink: /kb/114/Q114425/
 ---
 
 ## Q114425: WFWG 3.11: How to Create a Boot Disk to Load Real-Mode Network

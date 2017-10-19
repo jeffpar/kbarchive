@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q299273: UPN Logon Option Does Not Work After You Apply Fix from MS01-026"
-permalink: kb/299/Q299273/
+permalink: /kb/299/Q299273/
 ---
 
 ## Q299273: UPN Logon Option Does Not Work After You Apply Fix from MS01-026

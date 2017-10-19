@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131484: XCLN: Delete Button in Address Book Displayed As Active"
-permalink: kb/131/Q131484/
+permalink: /kb/131/Q131484/
 ---
 
 ## Q131484: XCLN: Delete Button in Address Book Displayed As Active

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126350: Windows 95 Setup Modifies the Boot Sector of All Drives"
-permalink: kb/126/Q126350/
+permalink: /kb/126/Q126350/
 ---
 
 ## Q126350: Windows 95 Setup Modifies the Boot Sector of All Drives

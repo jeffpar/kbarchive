@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181932: INFO: Limits on Text in CEditView and CEdit"
-permalink: kb/181/Q181932/
+permalink: /kb/181/Q181932/
 ---
 
 ## Q181932: INFO: Limits on Text in CEditView and CEdit

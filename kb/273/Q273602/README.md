@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273602: Golf 2001: Icon Remains on Taskbar When You Connect to the Zone"
-permalink: kb/273/Q273602/
+permalink: /kb/273/Q273602/
 ---
 
 ## Q273602: Golf 2001: Icon Remains on Taskbar When You Connect to the Zone

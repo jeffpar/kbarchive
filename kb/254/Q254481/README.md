@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254481: Err Msg: The Page Cannot Be Displayed..."
-permalink: kb/254/Q254481/
+permalink: /kb/254/Q254481/
 ---
 
 ## Q254481: Err Msg: The Page Cannot Be Displayed...

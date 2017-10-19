@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258056: XADM: Store Generates 3079s and 3084s When It Can't Rehome PFs"
-permalink: kb/258/Q258056/
+permalink: /kb/258/Q258056/
 ---
 
 ## Q258056: XADM: Store Generates 3079s and 3084s When It Can't Rehome PFs

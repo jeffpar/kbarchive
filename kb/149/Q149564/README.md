@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149564: Poor Performance Reading Video CD in IDE CD-ROM Drive"
-permalink: kb/149/Q149564/
+permalink: /kb/149/Q149564/
 ---
 
 ## Q149564: Poor Performance Reading Video CD in IDE CD-ROM Drive

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q89894: Icons Always Appear Arranged Vertically"
-permalink: kb/089/Q89894/
+permalink: /kb/089/Q89894/
 ---
 
 ## Q89894: Icons Always Appear Arranged Vertically

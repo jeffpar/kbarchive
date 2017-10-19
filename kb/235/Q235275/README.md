@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235275: INF:Sample TCP/IP CICS Concurrent Server Program Writes Log Data"
-permalink: kb/235/Q235275/
+permalink: /kb/235/Q235275/
 ---
 
 ## Q235275: INF:Sample TCP/IP CICS Concurrent Server Program Writes Log Data

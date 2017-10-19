@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169029: FIX: Cannot Change Logical Field in Browse in DBCS VFP"
-permalink: kb/169/Q169029/
+permalink: /kb/169/Q169029/
 ---
 
 ## Q169029: FIX: Cannot Change Logical Field in Browse in DBCS VFP

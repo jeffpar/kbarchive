@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224274: Streets and Trips 2000: Hangs When You Print to HP LaserJet 4500"
-permalink: kb/224/Q224274/
+permalink: /kb/224/Q224274/
 ---
 
 ## Q224274: Streets and Trips 2000: Hangs When You Print to HP LaserJet 4500

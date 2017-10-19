@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244633: SMS: Site Status Node is Slow"
-permalink: kb/244/Q244633/
+permalink: /kb/244/Q244633/
 ---
 
 ## Q244633: SMS: Site Status Node is Slow

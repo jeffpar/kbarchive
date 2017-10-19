@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316348: HOW TO: Add a Printer to a Computer in Windows NT 4.0"
-permalink: kb/316/Q316348/
+permalink: /kb/316/Q316348/
 ---
 
 ## Q316348: HOW TO: Add a Printer to a Computer in Windows NT 4.0

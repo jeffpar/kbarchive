@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q316382: The &quot;SNACFG USER&quot; Command Does Not Work for Long User Names"
-permalink: kb/316/Q316382/
+permalink: /kb/316/Q316382/
 ---
 
 ## Q316382: The &quot;SNACFG USER&quot; Command Does Not Work for Long User Names

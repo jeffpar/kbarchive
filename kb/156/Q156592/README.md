@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156592: STL Sample for deque::rbegin and deque::rend Functions"
-permalink: kb/156/Q156592/
+permalink: /kb/156/Q156592/
 ---
 
 ## Q156592: STL Sample for deque::rbegin and deque::rend Functions

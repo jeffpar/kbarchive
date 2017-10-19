@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q116461: BUG: Conditional Breakpoint with Pass Count Breaks Incorrectly"
-permalink: kb/116/Q116461/
+permalink: /kb/116/Q116461/
 ---
 
 ## Q116461: BUG: Conditional Breakpoint with Pass Count Breaks Incorrectly

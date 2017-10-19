@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256917: BUG: Windows 2000 Upgrade Fails to Convert System Drive to NTFS"
-permalink: kb/256/Q256917/
+permalink: /kb/256/Q256917/
 ---
 
 ## Q256917: BUG: Windows 2000 Upgrade Fails to Convert System Drive to NTFS

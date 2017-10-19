@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166576: XFOR: GPF in Store.exe When Doing Fixed Width Font Conversion"
-permalink: kb/166/Q166576/
+permalink: /kb/166/Q166576/
 ---
 
 ## Q166576: XFOR: GPF in Store.exe When Doing Fixed Width Font Conversion

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q212943: SMS: Alpha Versions Not Listed Under Product Compliance"
-permalink: kb/212/Q212943/
+permalink: /kb/212/Q212943/
 ---
 
 ## Q212943: SMS: Alpha Versions Not Listed Under Product Compliance

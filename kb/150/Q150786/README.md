@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150786: HOWTO: Use SQLBindParameter with 32-bit Visual Basic"
-permalink: kb/150/Q150786/
+permalink: /kb/150/Q150786/
 ---
 
 ## Q150786: HOWTO: Use SQLBindParameter with 32-bit Visual Basic

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221122: XGEN: Exchange Server Event ID Descriptions Are Missing"
-permalink: kb/221/Q221122/
+permalink: /kb/221/Q221122/
 ---
 
 ## Q221122: XGEN: Exchange Server Event ID Descriptions Are Missing

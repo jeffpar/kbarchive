@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Q63146: NMAKE Always Evaluates Expressions in Square Brackets &quot;[]&quot;"
-permalink: kb/063/Q63146/
+title: "Q63146: NMAKE Always Evaluates Expressions in Square Brackets &quot;&#91;&#93;&quot;"
+permalink: /kb/063/Q63146/
 ---
 
-## Q63146: NMAKE Always Evaluates Expressions in Square Brackets &quot;[]&quot;
+## Q63146: NMAKE Always Evaluates Expressions in Square Brackets &quot;&#91;&#93;&quot;
 
 	Article: Q63146
 	Product(s): Microsoft Programming Utilities

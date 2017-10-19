@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181579: XCON: Private Messages Not Always Delivered"
-permalink: kb/181/Q181579/
+permalink: /kb/181/Q181579/
 ---
 
 ## Q181579: XCON: Private Messages Not Always Delivered

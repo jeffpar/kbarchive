@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138695: DOC: ConstructElements &amp; DestructElements"
-permalink: kb/138/Q138695/
+permalink: /kb/138/Q138695/
 ---
 
 ## Q138695: DOC: ConstructElements &amp; DestructElements

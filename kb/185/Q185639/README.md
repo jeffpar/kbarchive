@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185639: WD97: SaveAs Method Overwrites Existing Documents"
-permalink: kb/185/Q185639/
+permalink: /kb/185/Q185639/
 ---
 
 ## Q185639: WD97: SaveAs Method Overwrites Existing Documents

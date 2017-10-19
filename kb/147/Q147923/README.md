@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147923: SHUTCMD.EXE Does Not Restart Remote Computer"
-permalink: kb/147/Q147923/
+permalink: /kb/147/Q147923/
 ---
 
 ## Q147923: SHUTCMD.EXE Does Not Restart Remote Computer

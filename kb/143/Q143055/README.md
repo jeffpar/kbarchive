@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143055: Voice Command Does Not Deactivate Screen Saver"
-permalink: kb/143/Q143055/
+permalink: /kb/143/Q143055/
 ---
 
 ## Q143055: Voice Command Does Not Deactivate Screen Saver

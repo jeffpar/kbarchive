@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129099: Baseball 95:  How to Change Daily Service Phone Access Numbers"
-permalink: kb/129/Q129099/
+permalink: /kb/129/Q129099/
 ---
 
 ## Q129099: Baseball 95:  How to Change Daily Service Phone Access Numbers

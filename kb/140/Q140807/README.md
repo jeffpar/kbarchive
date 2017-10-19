@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140807: Dataloader Fails to Restart a Failed Binary Dump"
-permalink: kb/140/Q140807/
+permalink: /kb/140/Q140807/
 ---
 
 ## Q140807: Dataloader Fails to Restart a Failed Binary Dump

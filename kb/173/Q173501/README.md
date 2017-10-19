@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173501: WD97: Linked Picture Missing When Word 6.0/95 Document Reopened"
-permalink: kb/173/Q173501/
+permalink: /kb/173/Q173501/
 ---
 
 ## Q173501: WD97: Linked Picture Missing When Word 6.0/95 Document Reopened

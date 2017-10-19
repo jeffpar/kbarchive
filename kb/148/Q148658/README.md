@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148658: How to Load Windows NT MEMORY.DMP File Using I386KD.EXE"
-permalink: kb/148/Q148658/
+permalink: /kb/148/Q148658/
 ---
 
 ## Q148658: How to Load Windows NT MEMORY.DMP File Using I386KD.EXE

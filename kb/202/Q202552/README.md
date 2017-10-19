@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q202552: SMS: Time Synchronizing an SMS Site Server with SQL Server"
-permalink: kb/202/Q202552/
+permalink: /kb/202/Q202552/
 ---
 
 ## Q202552: SMS: Time Synchronizing an SMS Site Server with SQL Server

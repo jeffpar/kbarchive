@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q98362: INFO: Differences Between MIN(), MAX(), &amp; SQL SELECT MIN/MAX"
-permalink: kb/098/Q98362/
+permalink: /kb/098/Q98362/
 ---
 
 ## Q98362: INFO: Differences Between MIN(), MAX(), &amp; SQL SELECT MIN/MAX

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174007: Audio and Video Components Seem to Be Damaged"
-permalink: kb/174/Q174007/
+permalink: /kb/174/Q174007/
 ---
 
 ## Q174007: Audio and Video Components Seem to Be Damaged

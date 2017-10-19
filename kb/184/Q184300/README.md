@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184300: How to Run a Web Site as the User Who Created the Content"
-permalink: kb/184/Q184300/
+permalink: /kb/184/Q184300/
 ---
 
 ## Q184300: How to Run a Web Site as the User Who Created the Content

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195133: WD97: How to Replace Bold, Italic, or Underline Formatting"
-permalink: kb/195/Q195133/
+permalink: /kb/195/Q195133/
 ---
 
 ## Q195133: WD97: How to Replace Bold, Italic, or Underline Formatting

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66085: Dictful Error in Freedom of Press with Windows 3.0"
-permalink: kb/066/Q66085/
+permalink: /kb/066/Q66085/
 ---
 
 ## Q66085: Dictful Error in Freedom of Press with Windows 3.0

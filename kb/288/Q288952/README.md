@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q288952: XADM:  Error 2186 When Starting the Information Store Service"
-permalink: kb/288/Q288952/
+permalink: /kb/288/Q288952/
 ---
 
 ## Q288952: XADM:  Error 2186 When Starting the Information Store Service

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256114: XIMS: Access Violation at CMtsOutQueue::LoadCachedDetailInfo"
-permalink: kb/256/Q256114/
+permalink: /kb/256/Q256114/
 ---
 
 ## Q256114: XIMS: Access Violation at CMtsOutQueue::LoadCachedDetailInfo

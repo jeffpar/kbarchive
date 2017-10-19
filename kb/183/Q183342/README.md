@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183342: WD97: TableToOrFromText Button Is Blank on Customized Toolbar"
-permalink: kb/183/Q183342/
+permalink: /kb/183/Q183342/
 ---
 
 ## Q183342: WD97: TableToOrFromText Button Is Blank on Customized Toolbar

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168160: FIX: Error on Update After AddNew with RDC and Bound Controls"
-permalink: kb/168/Q168160/
+permalink: /kb/168/Q168160/
 ---
 
 ## Q168160: FIX: Error on Update After AddNew with RDC and Bound Controls

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242577: PRB: Update Command UI Handlers Do Not Work Properly on Dialogs"
-permalink: kb/242/Q242577/
+permalink: /kb/242/Q242577/
 ---
 
 ## Q242577: PRB: Update Command UI Handlers Do Not Work Properly on Dialogs

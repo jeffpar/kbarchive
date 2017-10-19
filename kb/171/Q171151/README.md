@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171151: MS Press Support Policy for Windows NT 4.0 Evaluation Edition"
-permalink: kb/171/Q171151/
+permalink: /kb/171/Q171151/
 ---
 
 ## Q171151: MS Press Support Policy for Windows NT 4.0 Evaluation Edition

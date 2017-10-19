@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228455: PRB: Missing /c Compiler Option Causes LNK1561 Linker Error"
-permalink: kb/228/Q228455/
+permalink: /kb/228/Q228455/
 ---
 
 ## Q228455: PRB: Missing /c Compiler Option Causes LNK1561 Linker Error

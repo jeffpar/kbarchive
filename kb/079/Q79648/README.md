@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79648: The Complete Scanner Does Not Work Properly in Enhanced Mode"
-permalink: kb/079/Q79648/
+permalink: /kb/079/Q79648/
 ---
 
 ## Q79648: The Complete Scanner Does Not Work Properly in Enhanced Mode

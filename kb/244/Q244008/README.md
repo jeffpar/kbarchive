@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q244008: XFOR: How to Restrict SMTP Access"
-permalink: kb/244/Q244008/
+permalink: /kb/244/Q244008/
 ---
 
 ## Q244008: XFOR: How to Restrict SMTP Access

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124434: MS-DOS Step-Up Kits for U.S. and International Versions"
-permalink: kb/124/Q124434/
+permalink: /kb/124/Q124434/
 ---
 
 ## Q124434: MS-DOS Step-Up Kits for U.S. and International Versions

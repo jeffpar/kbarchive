@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135893: Windows 95 Tips.txt File Contents"
-permalink: kb/135/Q135893/
+permalink: /kb/135/Q135893/
 ---
 
 ## Q135893: Windows 95 Tips.txt File Contents

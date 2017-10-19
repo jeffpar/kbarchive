@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130191: Support Policies for Microsoft Press Books"
-permalink: kb/130/Q130191/
+permalink: /kb/130/Q130191/
 ---
 
 ## Q130191: Support Policies for Microsoft Press Books

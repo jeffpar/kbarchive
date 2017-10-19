@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241980: Description of Valid Labels for Domain Name System"
-permalink: kb/241/Q241980/
+permalink: /kb/241/Q241980/
 ---
 
 ## Q241980: Description of Valid Labels for Domain Name System

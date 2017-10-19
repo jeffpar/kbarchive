@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q312487: Error Message: Cannot Read Port Name from Registry"
-permalink: kb/312/Q312487/
+permalink: /kb/312/Q312487/
 ---
 
 ## Q312487: Error Message: Cannot Read Port Name from Registry

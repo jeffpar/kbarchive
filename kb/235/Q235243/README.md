@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235243: Microsoft Office 2000 Step By Step Interactive Comments and Corr"
-permalink: kb/235/Q235243/
+permalink: /kb/235/Q235243/
 ---
 
 ## Q235243: Microsoft Office 2000 Step By Step Interactive Comments and Corr

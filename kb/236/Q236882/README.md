@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236882: XIMS: Addresses Separated by Spaces in IMAP4 Envelope"
-permalink: kb/236/Q236882/
+permalink: /kb/236/Q236882/
 ---
 
 ## Q236882: XIMS: Addresses Separated by Spaces in IMAP4 Envelope

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128077: PRB: Can't Use DOCKED or DOCKPOSITION Props to Dock a Toolbar"
-permalink: kb/128/Q128077/
+permalink: /kb/128/Q128077/
 ---
 
 ## Q128077: PRB: Can't Use DOCKED or DOCKPOSITION Props to Dock a Toolbar

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156720: XCLN: Date/Time Field Corruption in Macintosh Client"
-permalink: kb/156/Q156720/
+permalink: /kb/156/Q156720/
 ---
 
 ## Q156720: XCLN: Date/Time Field Corruption in Macintosh Client

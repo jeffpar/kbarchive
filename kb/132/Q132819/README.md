@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132819: DynaComm 3270 Quick Start May Lock Up the System."
-permalink: kb/132/Q132819/
+permalink: /kb/132/Q132819/
 ---
 
 ## Q132819: DynaComm 3270 Quick Start May Lock Up the System.

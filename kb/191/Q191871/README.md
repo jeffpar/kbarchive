@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191871: PRB: Error When Properties are Evaluated at Design Time"
-permalink: kb/191/Q191871/
+permalink: /kb/191/Q191871/
 ---
 
 ## Q191871: PRB: Error When Properties are Evaluated at Design Time

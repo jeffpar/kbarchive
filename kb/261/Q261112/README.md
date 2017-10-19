@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261112: XADM: Bulk Edit Mailbox Properties w. Directory Export &amp; Import"
-permalink: kb/261/Q261112/
+permalink: /kb/261/Q261112/
 ---
 
 ## Q261112: XADM: Bulk Edit Mailbox Properties w. Directory Export &amp; Import

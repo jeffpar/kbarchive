@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223071: FIX: MSHFlexgrid Clip Property Can't Get Data in Selected C"
-permalink: kb/223/Q223071/
+permalink: /kb/223/Q223071/
 ---
 
 ## Q223071: FIX: MSHFlexgrid Clip Property Can't Get Data in Selected C

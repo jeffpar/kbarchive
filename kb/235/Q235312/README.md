@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235312: XWEB: OWA Installations and the IIS Default Web Site"
-permalink: kb/235/Q235312/
+permalink: /kb/235/Q235312/
 ---
 
 ## Q235312: XWEB: OWA Installations and the IIS Default Web Site

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143263: HOWTO: Use an RDO Prepared Statement to Find a Single Record"
-permalink: kb/143/Q143263/
+permalink: /kb/143/Q143263/
 ---
 
 ## Q143263: HOWTO: Use an RDO Prepared Statement to Find a Single Record

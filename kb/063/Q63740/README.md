@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q63740: Windows Err Msg: System Error. Network Error on Drive &lt;x&gt;"
-permalink: kb/063/Q63740/
+permalink: /kb/063/Q63740/
 ---
 
 ## Q63740: Windows Err Msg: System Error. Network Error on Drive &lt;x&gt;

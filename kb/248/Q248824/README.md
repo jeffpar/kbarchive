@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q248824: IP Restriction Does Not Work for SMTP and NNTP Admin Directories"
-permalink: kb/248/Q248824/
+permalink: /kb/248/Q248824/
 ---
 
 ## Q248824: IP Restriction Does Not Work for SMTP and NNTP Admin Directories

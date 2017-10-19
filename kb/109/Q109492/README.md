@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109492: Installing MSDLC on Windows for Workgroups Version 3.11"
-permalink: kb/109/Q109492/
+permalink: /kb/109/Q109492/
 ---
 
 ## Q109492: Installing MSDLC on Windows for Workgroups Version 3.11

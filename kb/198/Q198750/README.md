@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198750: SMSINST: HKEY_USERS - User Specific Key Is Repackaged"
-permalink: kb/198/Q198750/
+permalink: /kb/198/Q198750/
 ---
 
 ## Q198750: SMSINST: HKEY_USERS - User Specific Key Is Repackaged

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152589: Netscape 2.01 Clients Hang While Getting SSL Pages w/ Graphics"
-permalink: kb/152/Q152589/
+permalink: /kb/152/Q152589/
 ---
 
 ## Q152589: Netscape 2.01 Clients Hang While Getting SSL Pages w/ Graphics

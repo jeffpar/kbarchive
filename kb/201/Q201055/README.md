@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201055: SMS: Resource Manager Does Not Use Domain Names"
-permalink: kb/201/Q201055/
+permalink: /kb/201/Q201055/
 ---
 
 ## Q201055: SMS: Resource Manager Does Not Use Domain Names

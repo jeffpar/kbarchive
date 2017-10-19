@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q194124: PRB: Excel Values Returned as NULL Using DAO OpenRecordset"
-permalink: kb/194/Q194124/
+permalink: /kb/194/Q194124/
 ---
 
 ## Q194124: PRB: Excel Values Returned as NULL Using DAO OpenRecordset

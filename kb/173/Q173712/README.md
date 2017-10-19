@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173712: SMS: Pause Key Is Mapped to NUMLOCK During Remote Control"
-permalink: kb/173/Q173712/
+permalink: /kb/173/Q173712/
 ---
 
 ## Q173712: SMS: Pause Key Is Mapped to NUMLOCK During Remote Control

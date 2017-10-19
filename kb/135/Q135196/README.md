@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135196: Extended Characters Displayed Incorrectly in Login Script"
-permalink: kb/135/Q135196/
+permalink: /kb/135/Q135196/
 ---
 
 ## Q135196: Extended Characters Displayed Incorrectly in Login Script

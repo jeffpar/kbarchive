@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q34768: Differences between COMMAND /C and CALL"
-permalink: kb/034/Q34768/
+permalink: /kb/034/Q34768/
 ---
 
 ## Q34768: Differences between COMMAND /C and CALL

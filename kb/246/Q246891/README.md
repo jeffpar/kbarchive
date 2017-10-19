@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246891: BUG: Build Errors on Non-Void Return Types for Friend Function"
-permalink: kb/246/Q246891/
+permalink: /kb/246/Q246891/
 ---
 
 ## Q246891: BUG: Build Errors on Non-Void Return Types for Friend Function

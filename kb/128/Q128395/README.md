@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128395: General Protection Faults with the IBM Thinkpad 755CD"
-permalink: kb/128/Q128395/
+permalink: /kb/128/Q128395/
 ---
 
 ## Q128395: General Protection Faults with the IBM Thinkpad 755CD

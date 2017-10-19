@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228522: Baseball 2000: How to Improve Graphics Performance"
-permalink: kb/228/Q228522/
+permalink: /kb/228/Q228522/
 ---
 
 ## Q228522: Baseball 2000: How to Improve Graphics Performance

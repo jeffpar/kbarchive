@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174722: XFOR: Message Reprocessed Due to Error 80040C15-F0000000"
-permalink: kb/174/Q174722/
+permalink: /kb/174/Q174722/
 ---
 
 ## Q174722: XFOR: Message Reprocessed Due to Error 80040C15-F0000000

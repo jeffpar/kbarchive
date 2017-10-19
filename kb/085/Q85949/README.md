@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85949: Windows 3.1 Notepad Can Open Any File Type"
-permalink: kb/085/Q85949/
+permalink: /kb/085/Q85949/
 ---
 
 ## Q85949: Windows 3.1 Notepad Can Open Any File Type

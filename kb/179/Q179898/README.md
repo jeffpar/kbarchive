@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q179898: Close Combat Error Message: The Screen Size Has Changed..."
-permalink: kb/179/Q179898/
+permalink: /kb/179/Q179898/
 ---
 
 ## Q179898: Close Combat Error Message: The Screen Size Has Changed...

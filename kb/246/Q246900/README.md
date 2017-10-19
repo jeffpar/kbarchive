@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246900: TPU: Wrong Page Displayed When Moving Back in Management Console"
-permalink: kb/246/Q246900/
+permalink: /kb/246/Q246900/
 ---
 
 ## Q246900: TPU: Wrong Page Displayed When Moving Back in Management Console

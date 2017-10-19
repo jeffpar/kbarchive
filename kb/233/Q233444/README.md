@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q233444: MSBP Err Msg: Internet Explorer Cannot Open the Internet Site..."
-permalink: kb/233/Q233444/
+permalink: /kb/233/Q233444/
 ---
 
 ## Q233444: MSBP Err Msg: Internet Explorer Cannot Open the Internet Site...

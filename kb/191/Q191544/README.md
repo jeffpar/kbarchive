@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191544: Urban Assault: Occupied Vehicle Is Not Transported to Next Level"
-permalink: kb/191/Q191544/
+permalink: /kb/191/Q191544/
 ---
 
 ## Q191544: Urban Assault: Occupied Vehicle Is Not Transported to Next Level

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172325: WD97: Color Pattern Borders Print Incorrectly on Some Printers"
-permalink: kb/172/Q172325/
+permalink: /kb/172/Q172325/
 ---
 
 ## Q172325: WD97: Color Pattern Borders Print Incorrectly on Some Printers

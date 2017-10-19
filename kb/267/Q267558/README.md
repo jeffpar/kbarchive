@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267558: SMS: CAPs &amp; DPs Generate Critical Errors on Novell Servers"
-permalink: kb/267/Q267558/
+permalink: /kb/267/Q267558/
 ---
 
 ## Q267558: SMS: CAPs &amp; DPs Generate Critical Errors on Novell Servers

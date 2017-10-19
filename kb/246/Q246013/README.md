@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246013: MMCSNA May Fail When Selecting Backup SNA Server"
-permalink: kb/246/Q246013/
+permalink: /kb/246/Q246013/
 ---
 
 ## Q246013: MMCSNA May Fail When Selecting Backup SNA Server

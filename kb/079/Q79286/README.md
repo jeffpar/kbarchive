@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79286: FIX: Nested NOT Operators Yield Incorrect Value"
-permalink: kb/079/Q79286/
+permalink: /kb/079/Q79286/
 ---
 
 ## Q79286: FIX: Nested NOT Operators Yield Incorrect Value

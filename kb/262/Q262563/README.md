@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q262563: Schedule+ User Sees ??? for User's Free/Busy Data"
-permalink: kb/262/Q262563/
+permalink: /kb/262/Q262563/
 ---
 
 ## Q262563: Schedule+ User Sees ??? for User's Free/Busy Data

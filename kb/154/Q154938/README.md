@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154938: Bugcheck 0xA - Saving 64K File to NetWare in Notepad"
-permalink: kb/154/Q154938/
+permalink: /kb/154/Q154938/
 ---
 
 ## Q154938: Bugcheck 0xA - Saving 64K File to NetWare in Notepad

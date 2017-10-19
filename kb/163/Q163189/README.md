@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163189: WD97: Text in Shaded Table Missing Printing to NT Servers"
-permalink: kb/163/Q163189/
+permalink: /kb/163/Q163189/
 ---
 
 ## Q163189: WD97: Text in Shaded Table Missing Printing to NT Servers

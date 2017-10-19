@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q175140: Bookshelf/Dictionary: Application Key Does Not Function"
-permalink: kb/175/Q175140/
+permalink: /kb/175/Q175140/
 ---
 
 ## Q175140: Bookshelf/Dictionary: Application Key Does Not Function

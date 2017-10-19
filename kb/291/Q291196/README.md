@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q291196: BDC Running WINS May Log Event Error 3096"
-permalink: kb/291/Q291196/
+permalink: /kb/291/Q291196/
 ---
 
 ## Q291196: BDC Running WINS May Log Event Error 3096

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117388: PRB: Structure Packing Causes Some Win32 Programs to Fail"
-permalink: kb/117/Q117388/
+permalink: /kb/117/Q117388/
 ---
 
 ## Q117388: PRB: Structure Packing Causes Some Win32 Programs to Fail

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184794: STOP 0x50 May Be Caused by PPTP Registry Entries"
-permalink: kb/184/Q184794/
+permalink: /kb/184/Q184794/
 ---
 
 ## Q184794: STOP 0x50 May Be Caused by PPTP Registry Entries

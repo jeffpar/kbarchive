@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q241150: TPU: Err Msg: Unable to Register All Files That Were Installed"
-permalink: kb/241/Q241150/
+permalink: /kb/241/Q241150/
 ---
 
 ## Q241150: TPU: Err Msg: Unable to Register All Files That Were Installed

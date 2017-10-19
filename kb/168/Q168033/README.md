@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168033: DNS Server Fails to Start After Promoting Secondary to Primary"
-permalink: kb/168/Q168033/
+permalink: /kb/168/Q168033/
 ---
 
 ## Q168033: DNS Server Fails to Start After Promoting Secondary to Primary

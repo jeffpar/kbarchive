@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q200622: SMS: Multiple Site Summary Only Shows Products With Peak Usage"
-permalink: kb/200/Q200622/
+permalink: /kb/200/Q200622/
 ---
 
 ## Q200622: SMS: Multiple Site Summary Only Shows Products With Peak Usage

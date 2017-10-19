@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q154101: XCLN: Importing 3rd Party Schedules into Schedule+"
-permalink: kb/154/Q154101/
+permalink: /kb/154/Q154101/
 ---
 
 ## Q154101: XCLN: Importing 3rd Party Schedules into Schedule+

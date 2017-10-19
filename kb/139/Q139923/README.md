@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139923: Macintosh Multimedia: Printout Has Overlapping Characters"
-permalink: kb/139/Q139923/
+permalink: /kb/139/Q139923/
 ---
 
 ## Q139923: Macintosh Multimedia: Printout Has Overlapping Characters

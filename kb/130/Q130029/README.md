@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130029: Error Message: The Emergency Repair Disk Is Full"
-permalink: kb/130/Q130029/
+permalink: /kb/130/Q130029/
 ---
 
 ## Q130029: Error Message: The Emergency Repair Disk Is Full

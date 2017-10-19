@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164813: FIX: Web Browser Control Hangs in CFormView"
-permalink: kb/164/Q164813/
+permalink: /kb/164/Q164813/
 ---
 
 ## Q164813: FIX: Web Browser Control Hangs in CFormView

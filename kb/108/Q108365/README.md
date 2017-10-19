@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108365: FIX: Strange Character in Warning for Illegal Edit List"
-permalink: kb/108/Q108365/
+permalink: /kb/108/Q108365/
 ---
 
 ## Q108365: FIX: Strange Character in Warning for Illegal Edit List

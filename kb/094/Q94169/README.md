@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q94169: IBM 4226 Printer Emulation for Windows"
-permalink: kb/094/Q94169/
+permalink: /kb/094/Q94169/
 ---
 
 ## Q94169: IBM 4226 Printer Emulation for Windows

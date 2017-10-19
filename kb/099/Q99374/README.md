@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99374: Problems When a Network Drive Is Mapped Over a DblSpace Drive"
-permalink: kb/099/Q99374/
+permalink: /kb/099/Q99374/
 ---
 
 ## Q99374: Problems When a Network Drive Is Mapped Over a DblSpace Drive

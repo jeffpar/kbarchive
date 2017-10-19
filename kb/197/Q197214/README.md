@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q197214: WD97:Creating Template with First Page or Odd/Even Header/Footer"
-permalink: kb/197/Q197214/
+permalink: /kb/197/Q197214/
 ---
 
 ## Q197214: WD97:Creating Template with First Page or Odd/Even Header/Footer

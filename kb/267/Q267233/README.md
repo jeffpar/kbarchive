@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q267233: XADM: &quot;The Client Operation Failed&quot; Err Msg Using Move Mailbox"
-permalink: kb/267/Q267233/
+permalink: /kb/267/Q267233/
 ---
 
 ## Q267233: XADM: &quot;The Client Operation Failed&quot; Err Msg Using Move Mailbox

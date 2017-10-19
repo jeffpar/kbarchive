@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138650: DOCERR: Setup Shows Incorrect Required Disk Space"
-permalink: kb/138/Q138650/
+permalink: /kb/138/Q138650/
 ---
 
 ## Q138650: DOCERR: Setup Shows Incorrect Required Disk Space

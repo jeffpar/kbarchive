@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99664: PC Forms: Err Msg: MAPI Failure"
-permalink: kb/099/Q99664/
+permalink: /kb/099/Q99664/
 ---
 
 ## Q99664: PC Forms: Err Msg: MAPI Failure

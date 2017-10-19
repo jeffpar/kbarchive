@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q243848: Windows NT Server 4.0 Terminal Server Restarts Unexpectedly"
-permalink: kb/243/Q243848/
+permalink: /kb/243/Q243848/
 ---
 
 ## Q243848: Windows NT Server 4.0 Terminal Server Restarts Unexpectedly

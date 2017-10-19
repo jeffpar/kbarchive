@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138411: Deriving an OLE Control from a Base Control"
-permalink: kb/138/Q138411/
+permalink: /kb/138/Q138411/
 ---
 
 ## Q138411: Deriving an OLE Control from a Base Control

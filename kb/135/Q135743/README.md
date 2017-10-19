@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135743: PPT7: No Clip Art Available to Import to ClipArt Gallery"
-permalink: kb/135/Q135743/
+permalink: /kb/135/Q135743/
 ---
 
 ## Q135743: PPT7: No Clip Art Available to Import to ClipArt Gallery

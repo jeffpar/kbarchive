@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q146235: Panasonic CR-562 CD-ROM Drive Has Multiple Icons"
-permalink: kb/146/Q146235/
+permalink: /kb/146/Q146235/
 ---
 
 ## Q146235: Panasonic CR-562 CD-ROM Drive Has Multiple Icons

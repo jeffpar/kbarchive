@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105242: Brother HL-8e May Need Firmware Update to Print TrueType Fonts"
-permalink: kb/105/Q105242/
+permalink: /kb/105/Q105242/
 ---
 
 ## Q105242: Brother HL-8e May Need Firmware Update to Print TrueType Fonts

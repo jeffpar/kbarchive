@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171501: FIX: User Control Moves When Width/Height Is Set in Container"
-permalink: kb/171/Q171501/
+permalink: /kb/171/Q171501/
 ---
 
 ## Q171501: FIX: User Control Moves When Width/Height Is Set in Container

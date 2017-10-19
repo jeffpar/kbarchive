@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q163369: FIX: LDd Suppresses Implicit Definition of _DEBUG"
-permalink: kb/163/Q163369/
+permalink: /kb/163/Q163369/
 ---
 
 ## Q163369: FIX: LDd Suppresses Implicit Definition of _DEBUG

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133244: PRB: CD Command Results in &quot;Unrecognized command verb&quot; Error"
-permalink: kb/133/Q133244/
+permalink: /kb/133/Q133244/
 ---
 
 ## Q133244: PRB: CD Command Results in &quot;Unrecognized command verb&quot; Error

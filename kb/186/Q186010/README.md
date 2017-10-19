@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186010: HOWTO: Calling the Splash Screen Foundation Class From Code"
-permalink: kb/186/Q186010/
+permalink: /kb/186/Q186010/
 ---
 
 ## Q186010: HOWTO: Calling the Splash Screen Foundation Class From Code

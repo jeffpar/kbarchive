@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q108346: FIX: Substring Out of Range Hangs with -4Yb -Ox -G5"
-permalink: kb/108/Q108346/
+permalink: /kb/108/Q108346/
 ---
 
 ## Q108346: FIX: Substring Out of Range Hangs with -4Yb -Ox -G5

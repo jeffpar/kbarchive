@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278343: XFOR: Can't Log On to Calendar Connector Service (Error 1069)"
-permalink: kb/278/Q278343/
+permalink: /kb/278/Q278343/
 ---
 
 ## Q278343: XFOR: Can't Log On to Calendar Connector Service (Error 1069)

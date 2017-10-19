@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q187664: Install Command Missing from .inf File Context Menu"
-permalink: kb/187/Q187664/
+permalink: /kb/187/Q187664/
 ---
 
 ## Q187664: Install Command Missing from .inf File Context Menu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124615: PC Gen: Post Microsoft Mail 3.2a File Updates"
-permalink: kb/124/Q124615/
+permalink: /kb/124/Q124615/
 ---
 
 ## Q124615: PC Gen: Post Microsoft Mail 3.2a File Updates

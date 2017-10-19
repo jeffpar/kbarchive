@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195283: Programming Active Server Pages Comments and Corrections"
-permalink: kb/195/Q195283/
+permalink: /kb/195/Q195283/
 ---
 
 ## Q195283: Programming Active Server Pages Comments and Corrections

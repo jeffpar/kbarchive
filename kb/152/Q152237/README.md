@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152237: Bookshelf 1996-97: Unable to Play Word Pronunciations"
-permalink: kb/152/Q152237/
+permalink: /kb/152/Q152237/
 ---
 
 ## Q152237: Bookshelf 1996-97: Unable to Play Word Pronunciations

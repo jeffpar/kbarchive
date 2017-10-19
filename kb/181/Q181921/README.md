@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181921: XADM: Sending Encrypted Mail to Users with Different Encryption"
-permalink: kb/181/Q181921/
+permalink: /kb/181/Q181921/
 ---
 
 ## Q181921: XADM: Sending Encrypted Mail to Users with Different Encryption

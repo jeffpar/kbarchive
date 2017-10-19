@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q142916: XADM: MTA Generates a 2171 Error"
-permalink: kb/142/Q142916/
+permalink: /kb/142/Q142916/
 ---
 
 ## Q142916: XADM: MTA Generates a 2171 Error

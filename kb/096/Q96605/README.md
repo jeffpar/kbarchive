@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96605: FFAPI: Err Msg: 80 - Bad Gateway Service Type on Create"
-permalink: kb/096/Q96605/
+permalink: /kb/096/Q96605/
 ---
 
 ## Q96605: FFAPI: Err Msg: 80 - Bad Gateway Service Type on Create

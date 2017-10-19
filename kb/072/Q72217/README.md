@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q72217: Windows Err Msg: Insufficient Memory to Run App (dBASE IV)"
-permalink: kb/072/Q72217/
+permalink: /kb/072/Q72217/
 ---
 
 ## Q72217: Windows Err Msg: Insufficient Memory to Run App (dBASE IV)

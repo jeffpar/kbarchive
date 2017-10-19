@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131142: Display Driver Setup Fails for Intergraph G91 Video Adapter"
-permalink: kb/131/Q131142/
+permalink: /kb/131/Q131142/
 ---
 
 ## Q131142: Display Driver Setup Fails for Intergraph G91 Video Adapter

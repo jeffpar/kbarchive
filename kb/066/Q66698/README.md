@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q66698: FIX: L1089 Error, Response Filename Length &gt; 32 Characters"
-permalink: kb/066/Q66698/
+permalink: /kb/066/Q66698/
 ---
 
 ## Q66698: FIX: L1089 Error, Response Filename Length &gt; 32 Characters

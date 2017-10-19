@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180404: XADM: Silent Mode Setup Does Not Support Upgrade Mode"
-permalink: kb/180/Q180404/
+permalink: /kb/180/Q180404/
 ---
 
 ## Q180404: XADM: Silent Mode Setup Does Not Support Upgrade Mode

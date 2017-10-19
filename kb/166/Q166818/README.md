@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166818: PPT: Unable to Change the ActivePrinter Property With VBA"
-permalink: kb/166/Q166818/
+permalink: /kb/166/Q166818/
 ---
 
 ## Q166818: PPT: Unable to Change the ActivePrinter Property With VBA

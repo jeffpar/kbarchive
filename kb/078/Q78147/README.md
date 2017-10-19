@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q78147: Starting a Program Requiring LOADFIX.COM from the PIF Editor"
-permalink: kb/078/Q78147/
+permalink: /kb/078/Q78147/
 ---
 
 ## Q78147: Starting a Program Requiring LOADFIX.COM from the PIF Editor

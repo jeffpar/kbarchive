@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85186: Incorrect Icon Used for Minimized MS-DOS Application"
-permalink: kb/085/Q85186/
+permalink: /kb/085/Q85186/
 ---
 
 ## Q85186: Incorrect Icon Used for Minimized MS-DOS Application

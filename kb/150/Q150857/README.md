@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150857: No Sound Playing Audio CDs with Philips CD-ROM Drive"
-permalink: kb/150/Q150857/
+permalink: /kb/150/Q150857/
 ---
 
 ## Q150857: No Sound Playing Audio CDs with Philips CD-ROM Drive

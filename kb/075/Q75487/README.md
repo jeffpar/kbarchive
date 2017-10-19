@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75487: Logitech Cordless Mouse and Windows 3.0"
-permalink: kb/075/Q75487/
+permalink: /kb/075/Q75487/
 ---
 
 ## Q75487: Logitech Cordless Mouse and Windows 3.0

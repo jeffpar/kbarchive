@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113933: Disk Striping And Disk Striping With Parity In Windows NT"
-permalink: kb/113/Q113933/
+permalink: /kb/113/Q113933/
 ---
 
 ## Q113933: Disk Striping And Disk Striping With Parity In Windows NT

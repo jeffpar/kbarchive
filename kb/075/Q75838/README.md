@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75838: Setup Changes Mouse Type and Port in SYSTEM.INI"
-permalink: kb/075/Q75838/
+permalink: /kb/075/Q75838/
 ---
 
 ## Q75838: Setup Changes Mouse Type and Port in SYSTEM.INI

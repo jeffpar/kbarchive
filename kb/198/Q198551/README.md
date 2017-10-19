@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198551: NSLOOKUP Returns Time-out Error When Query for an MX Record"
-permalink: kb/198/Q198551/
+permalink: /kb/198/Q198551/
 ---
 
 ## Q198551: NSLOOKUP Returns Time-out Error When Query for an MX Record

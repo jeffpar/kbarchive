@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q59663: Program Manager Group Items Arranged Vertically"
-permalink: kb/059/Q59663/
+permalink: /kb/059/Q59663/
 ---
 
 ## Q59663: Program Manager Group Items Arranged Vertically

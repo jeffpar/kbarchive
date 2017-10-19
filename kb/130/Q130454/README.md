@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130454: INFO: .dbf-style Help Font Changed to Microsoft Sans Serif"
-permalink: kb/130/Q130454/
+permalink: /kb/130/Q130454/
 ---
 
 ## Q130454: INFO: .dbf-style Help Font Changed to Microsoft Sans Serif

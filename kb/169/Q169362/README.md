@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169362: Incomplete Directory Listing Returned from Server to Client"
-permalink: kb/169/Q169362/
+permalink: /kb/169/Q169362/
 ---
 
 ## Q169362: Incomplete Directory Listing Returned from Server to Client

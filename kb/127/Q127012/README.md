@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q127012: Cinemania for Windows: Reveal TV 300 Card Jumbles AVI Clips"
-permalink: kb/127/Q127012/
+permalink: /kb/127/Q127012/
 ---
 
 ## Q127012: Cinemania for Windows: Reveal TV 300 Card Jumbles AVI Clips

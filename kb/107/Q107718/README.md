@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107718: Net Print Disassociates Printer Driver from Queue"
-permalink: kb/107/Q107718/
+permalink: /kb/107/Q107718/
 ---
 
 ## Q107718: Net Print Disassociates Printer Driver from Queue

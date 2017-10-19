@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164337: WD97: WordMail: Track Changes Doesn't Show Deleted Text"
-permalink: kb/164/Q164337/
+permalink: /kb/164/Q164337/
 ---
 
 ## Q164337: WD97: WordMail: Track Changes Doesn't Show Deleted Text

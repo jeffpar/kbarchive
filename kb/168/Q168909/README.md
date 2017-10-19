@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168909: Query/Remove Support for CardBus Cards Hangs Computer"
-permalink: kb/168/Q168909/
+permalink: /kb/168/Q168909/
 ---
 
 ## Q168909: Query/Remove Support for CardBus Cards Hangs Computer

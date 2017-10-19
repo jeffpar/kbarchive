@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150118: XADM: Err Msg:  The Ordinal 25 Could Not be Located"
-permalink: kb/150/Q150118/
+permalink: /kb/150/Q150118/
 ---
 
 ## Q150118: XADM: Err Msg:  The Ordinal 25 Could Not be Located

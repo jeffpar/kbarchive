@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q182722: Error Message: Another Program Is Using This Telephony Device"
-permalink: kb/182/Q182722/
+permalink: /kb/182/Q182722/
 ---
 
 ## Q182722: Error Message: Another Program Is Using This Telephony Device

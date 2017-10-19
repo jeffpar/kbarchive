@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q308546: Err Msg: Link to the Room You Have Clicked on Is Out of Date"
-permalink: kb/308/Q308546/
+permalink: /kb/308/Q308546/
 ---
 
 ## Q308546: Err Msg: Link to the Room You Have Clicked on Is Out of Date

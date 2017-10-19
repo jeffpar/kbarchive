@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q43717: Flight Sim Err Msg: FOREIGN.FS3 File Not Found"
-permalink: kb/043/Q43717/
+permalink: /kb/043/Q43717/
 ---
 
 ## Q43717: Flight Sim Err Msg: FOREIGN.FS3 File Not Found

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73442: Disabling or Re-Enabling Mouse in MS-DOS Shell"
-permalink: kb/073/Q73442/
+permalink: /kb/073/Q73442/
 ---
 
 ## Q73442: Disabling or Re-Enabling Mouse in MS-DOS Shell

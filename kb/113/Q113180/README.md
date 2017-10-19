@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q113180: Bookshelf: Does Not Adopt New Default Printer Settings"
-permalink: kb/113/Q113180/
+permalink: /kb/113/Q113180/
 ---
 
 ## Q113180: Bookshelf: Does Not Adopt New Default Printer Settings

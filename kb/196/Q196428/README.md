@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196428: WD97: Word Doesn't Display Each Open Document When Quitting"
-permalink: kb/196/Q196428/
+permalink: /kb/196/Q196428/
 ---
 
 ## Q196428: WD97: Word Doesn't Display Each Open Document When Quitting

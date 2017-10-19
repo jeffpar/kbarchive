@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q120770: STOP: 0x0000000A When CadexNet on LM Clients Stress SRV.SYS"
-permalink: kb/120/Q120770/
+permalink: /kb/120/Q120770/
 ---
 
 ## Q120770: STOP: 0x0000000A When CadexNet on LM Clients Stress SRV.SYS

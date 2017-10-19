@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q95317: Use of SET BELL to Play a Waveform (.WAV) File in FoxPro"
-permalink: kb/095/Q95317/
+permalink: /kb/095/Q95317/
 ---
 
 ## Q95317: Use of SET BELL to Play a Waveform (.WAV) File in FoxPro

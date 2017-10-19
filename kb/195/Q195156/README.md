@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q195156: XCLN: Windows NT Change Password Button Is Enabled with DPA"
-permalink: kb/195/Q195156/
+permalink: /kb/195/Q195156/
 ---
 
 ## Q195156: XCLN: Windows NT Change Password Button Is Enabled with DPA

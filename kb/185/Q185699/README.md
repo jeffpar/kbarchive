@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185699: FS98: Computer Hangs When You Switch to 3-D Mode on Monster 3D"
-permalink: kb/185/Q185699/
+permalink: /kb/185/Q185699/
 ---
 
 ## Q185699: FS98: Computer Hangs When You Switch to 3-D Mode on Monster 3D

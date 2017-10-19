@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171522: FIX: Enums in Public Procedures Cause Binary Compatibility Error"
-permalink: kb/171/Q171522/
+permalink: /kb/171/Q171522/
 ---
 
 ## Q171522: FIX: Enums in Public Procedures Cause Binary Compatibility Error

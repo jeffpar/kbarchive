@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q193260: XADM: OWA Stops when Replying to Message with Inline Image"
-permalink: kb/193/Q193260/
+permalink: /kb/193/Q193260/
 ---
 
 ## Q193260: XADM: OWA Stops when Replying to Message with Inline Image

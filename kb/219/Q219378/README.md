@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219378: WBEM Removed from Windows NT Service Pack 5 CD"
-permalink: kb/219/Q219378/
+permalink: /kb/219/Q219378/
 ---
 
 ## Q219378: WBEM Removed from Windows NT Service Pack 5 CD

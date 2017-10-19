@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153245: Remote Transfer Does Not Show Last Drive"
-permalink: kb/153/Q153245/
+permalink: /kb/153/Q153245/
 ---
 
 ## Q153245: Remote Transfer Does Not Show Last Drive

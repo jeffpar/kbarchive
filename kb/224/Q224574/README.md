@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q224574: SMS: Remote Control Installation Fails to Recognize LANDesk 6.x"
-permalink: kb/224/Q224574/
+permalink: /kb/224/Q224574/
 ---
 
 ## Q224574: SMS: Remote Control Installation Fails to Recognize LANDesk 6.x

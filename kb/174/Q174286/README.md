@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174286: Cannot Close Regional Settings Properties Dialog Box"
-permalink: kb/174/Q174286/
+permalink: /kb/174/Q174286/
 ---
 
 ## Q174286: Cannot Close Regional Settings Properties Dialog Box

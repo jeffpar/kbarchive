@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169762: XADM: Import Fails with Event ID 13 and ID 235"
-permalink: kb/169/Q169762/
+permalink: /kb/169/Q169762/
 ---
 
 ## Q169762: XADM: Import Fails with Event ID 13 and ID 235

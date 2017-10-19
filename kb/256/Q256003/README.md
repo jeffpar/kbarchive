@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q256003: SMS: Cannot Remotely Control Mouse with Toshiba Driver"
-permalink: kb/256/Q256003/
+permalink: /kb/256/Q256003/
 ---
 
 ## Q256003: SMS: Cannot Remotely Control Mouse with Toshiba Driver

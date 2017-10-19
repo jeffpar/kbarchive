@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191164: XCLN: Outlook Fails to Connect, Causes AE at Emsui32.dll"
-permalink: kb/191/Q191164/
+permalink: /kb/191/Q191164/
 ---
 
 ## Q191164: XCLN: Outlook Fails to Connect, Causes AE at Emsui32.dll

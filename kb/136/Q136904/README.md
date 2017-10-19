@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136904: FIX: Invalid Page Fault When Modify Tastrade Orders Structure"
-permalink: kb/136/Q136904/
+permalink: /kb/136/Q136904/
 ---
 
 ## Q136904: FIX: Invalid Page Fault When Modify Tastrade Orders Structure

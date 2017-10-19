@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q58558: Mac Hyp: AddField Adds Information to Nonstandard Form Fields"
-permalink: kb/058/Q58558/
+permalink: /kb/058/Q58558/
 ---
 
 ## Q58558: Mac Hyp: AddField Adds Information to Nonstandard Form Fields

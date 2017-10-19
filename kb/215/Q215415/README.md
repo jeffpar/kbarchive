@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215415: BUG: Access Key Works When UseMnemonic is Set to False"
-permalink: kb/215/Q215415/
+permalink: /kb/215/Q215415/
 ---
 
 ## Q215415: BUG: Access Key Works When UseMnemonic is Set to False

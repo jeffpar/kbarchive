@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q166710: Kids Plus!: Start Menu Loses Hierarchies With Protect It! On"
-permalink: kb/166/Q166710/
+permalink: /kb/166/Q166710/
 ---
 
 ## Q166710: Kids Plus!: Start Menu Loses Hierarchies With Protect It! On

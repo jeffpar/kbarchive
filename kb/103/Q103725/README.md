@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103725: HOWTO: Pass Common C Types to MASM by Reference"
-permalink: kb/103/Q103725/
+permalink: /kb/103/Q103725/
 ---
 
 ## Q103725: HOWTO: Pass Common C Types to MASM by Reference

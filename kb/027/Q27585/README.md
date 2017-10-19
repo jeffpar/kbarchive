@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q27585: INFO: Specifying Windows &quot;Bounding Box&quot; Coordinates"
-permalink: kb/027/Q27585/
+permalink: /kb/027/Q27585/
 ---
 
 ## Q27585: INFO: Specifying Windows &quot;Bounding Box&quot; Coordinates

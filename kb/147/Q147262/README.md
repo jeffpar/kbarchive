@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q147262: Goal Buttons Turn Black w/ SHIFT+Click Twice"
-permalink: kb/147/Q147262/
+permalink: /kb/147/Q147262/
 ---
 
 ## Q147262: Goal Buttons Turn Black w/ SHIFT+Click Twice

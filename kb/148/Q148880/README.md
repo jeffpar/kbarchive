@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148880: BUG: Breakpoint Occurs When You Insert Clipboard Assistant"
-permalink: kb/148/Q148880/
+permalink: /kb/148/Q148880/
 ---
 
 ## Q148880: BUG: Breakpoint Occurs When You Insert Clipboard Assistant

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223034: Client Authentication Certificate Request Fails"
-permalink: kb/223/Q223034/
+permalink: /kb/223/Q223034/
 ---
 
 ## Q223034: Client Authentication Certificate Request Fails

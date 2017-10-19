@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137566: Macintosh Clients Not Printing in Color on PCL Color Printer"
-permalink: kb/137/Q137566/
+permalink: /kb/137/Q137566/
 ---
 
 ## Q137566: Macintosh Clients Not Printing in Color on PCL Color Printer

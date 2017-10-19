@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246766: Executable File Does Not Run from Command Prompt in Windows NT"
-permalink: kb/246/Q246766/
+permalink: /kb/246/Q246766/
 ---
 
 ## Q246766: Executable File Does Not Run from Command Prompt in Windows NT

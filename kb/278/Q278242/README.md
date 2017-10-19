@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278242: DB2OLEDB Provider Incorrectly Maps Isolation Levels"
-permalink: kb/278/Q278242/
+permalink: /kb/278/Q278242/
 ---
 
 ## Q278242: DB2OLEDB Provider Incorrectly Maps Isolation Levels

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150722: Changing Country During Signup May Download Incorrect Info."
-permalink: kb/150/Q150722/
+permalink: /kb/150/Q150722/
 ---
 
 ## Q150722: Changing Country During Signup May Download Incorrect Info.

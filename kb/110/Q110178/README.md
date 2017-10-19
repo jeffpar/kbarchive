@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110178: Cannot Dial Automatically from Works 2.0 with WFWG 3.11"
-permalink: kb/110/Q110178/
+permalink: /kb/110/Q110178/
 ---
 
 ## Q110178: Cannot Dial Automatically from Works 2.0 with WFWG 3.11

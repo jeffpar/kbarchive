@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q238758: FP98: FrontPage 98b Binary Patch Can Be Applied to all Versions"
-permalink: kb/238/Q238758/
+permalink: /kb/238/Q238758/
 ---
 
 ## Q238758: FP98: FrontPage 98b Binary Patch Can Be Applied to all Versions

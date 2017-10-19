@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q257773: INFO: Support for Third-Party Installers"
-permalink: kb/257/Q257773/
+permalink: /kb/257/Q257773/
 ---
 
 ## Q257773: INFO: Support for Third-Party Installers

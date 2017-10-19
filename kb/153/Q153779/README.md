@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q153779: Close Combat: CD-ROM, Right Mouse Button Options"
-permalink: kb/153/Q153779/
+permalink: /kb/153/Q153779/
 ---
 
 ## Q153779: Close Combat: CD-ROM, Right Mouse Button Options

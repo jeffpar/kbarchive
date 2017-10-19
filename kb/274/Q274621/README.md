@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q274621: MSN Explorer Closed Caption Services Not Available"
-permalink: kb/274/Q274621/
+permalink: /kb/274/Q274621/
 ---
 
 ## Q274621: MSN Explorer Closed Caption Services Not Available

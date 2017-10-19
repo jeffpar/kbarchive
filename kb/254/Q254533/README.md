@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q254533: XADM: Incoming Internet Message Shows Corrupted Display Name"
-permalink: kb/254/Q254533/
+permalink: /kb/254/Q254533/
 ---
 
 ## Q254533: XADM: Incoming Internet Message Shows Corrupted Display Name

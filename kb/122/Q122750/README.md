@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122750: PC DirSync: Files to Check If IMPORT.EXE Does Not Complete"
-permalink: kb/122/Q122750/
+permalink: /kb/122/Q122750/
 ---
 
 ## Q122750: PC DirSync: Files to Check If IMPORT.EXE Does Not Complete

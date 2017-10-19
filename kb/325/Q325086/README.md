@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q325086: Windows NT 4.0 Roaming Profiles May Not Be Saved to the Server"
-permalink: kb/325/Q325086/
+permalink: /kb/325/Q325086/
 ---
 
 ## Q325086: Windows NT 4.0 Roaming Profiles May Not Be Saved to the Server

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q172291: Snacfg.exe Does Not Support Omission of LOCALBLOCKNO"
-permalink: kb/172/Q172291/
+permalink: /kb/172/Q172291/
 ---
 
 ## Q172291: Snacfg.exe Does Not Support Omission of LOCALBLOCKNO

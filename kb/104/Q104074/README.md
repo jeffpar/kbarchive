@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q104074: Err Msg: Incorrect Function... When Accessing a CD-ROM"
-permalink: kb/104/Q104074/
+permalink: /kb/104/Q104074/
 ---
 
 ## Q104074: Err Msg: Incorrect Function... When Accessing a CD-ROM

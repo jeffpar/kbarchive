@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157666: WD97: Cannot Open Word 97 Documents in Word 6.0 or 7.0"
-permalink: kb/157/Q157666/
+permalink: /kb/157/Q157666/
 ---
 
 ## Q157666: WD97: Cannot Open Word 97 Documents in Word 6.0 or 7.0

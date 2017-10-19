@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q303417: SMS: Software_Inventory Table Grows to Very Large Size"
-permalink: kb/303/Q303417/
+permalink: /kb/303/Q303417/
 ---
 
 ## Q303417: SMS: Software_Inventory Table Grows to Very Large Size

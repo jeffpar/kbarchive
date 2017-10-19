@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155142: FIX: ClassWizard &#124; Member Variables Loses Member Variables"
-permalink: kb/155/Q155142/
+permalink: /kb/155/Q155142/
 ---
 
 ## Q155142: FIX: ClassWizard &#124; Member Variables Loses Member Variables

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151386: Fury3 AVI Play Black When Only 8MB RAM and Only 10 MB Swapfile"
-permalink: kb/151/Q151386/
+permalink: /kb/151/Q151386/
 ---
 
 ## Q151386: Fury3 AVI Play Black When Only 8MB RAM and Only 10 MB Swapfile

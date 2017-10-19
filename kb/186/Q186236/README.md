@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q186236: PRB: SCC Project Opens Very Slowly with Norton Anti Virus"
-permalink: kb/186/Q186236/
+permalink: /kb/186/Q186236/
 ---
 
 ## Q186236: PRB: SCC Project Opens Very Slowly with Norton Anti Virus

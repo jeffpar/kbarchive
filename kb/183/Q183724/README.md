@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q183724: Err Msg: The Template File Cannot Be Found in the Location..."
-permalink: kb/183/Q183724/
+permalink: /kb/183/Q183724/
 ---
 
 ## Q183724: Err Msg: The Template File Cannot Be Found in the Location...

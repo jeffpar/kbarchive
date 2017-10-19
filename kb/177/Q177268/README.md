@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177268: XADM: Information Store Stops When Decoding Inbound TNEF Propert"
-permalink: kb/177/Q177268/
+permalink: /kb/177/Q177268/
 ---
 
 ## Q177268: XADM: Information Store Stops When Decoding Inbound TNEF Propert

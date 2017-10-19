@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247733: Fighter Ace II: Ground Textures Are Outlined in Blue"
-permalink: kb/247/Q247733/
+permalink: /kb/247/Q247733/
 ---
 
 ## Q247733: Fighter Ace II: Ground Textures Are Outlined in Blue

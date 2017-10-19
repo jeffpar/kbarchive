@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q164309: Windows NT Client: Primary/Secondary WINS Servers Switch"
-permalink: kb/164/Q164309/
+permalink: /kb/164/Q164309/
 ---
 
 ## Q164309: Windows NT Client: Primary/Secondary WINS Servers Switch

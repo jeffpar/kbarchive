@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171968: 3270 Applet May Stop Responding if Host Sends a Long Message"
-permalink: kb/171/Q171968/
+permalink: /kb/171/Q171968/
 ---
 
 ## Q171968: 3270 Applet May Stop Responding if Host Sends a Long Message

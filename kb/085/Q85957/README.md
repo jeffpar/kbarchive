@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85957: BUG: CVW 4.0 May Pause When Stepping Through a Program"
-permalink: kb/085/Q85957/
+permalink: /kb/085/Q85957/
 ---
 
 ## Q85957: BUG: CVW 4.0 May Pause When Stepping Through a Program

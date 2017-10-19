@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180791: An ATTACH May Fail When Using Set_CPIC_Side_Information"
-permalink: kb/180/Q180791/
+permalink: /kb/180/Q180791/
 ---
 
 ## Q180791: An ATTACH May Fail When Using Set_CPIC_Side_Information

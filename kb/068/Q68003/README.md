@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q68003: Peculiarities with Edlin's Line Display"
-permalink: kb/068/Q68003/
+permalink: /kb/068/Q68003/
 ---
 
 ## Q68003: Peculiarities with Edlin's Line Display

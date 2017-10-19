@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247895: MSMQ Reports Number of Licenses Exceeded in Windows NT Server"
-permalink: kb/247/Q247895/
+permalink: /kb/247/Q247895/
 ---
 
 ## Q247895: MSMQ Reports Number of Licenses Exceeded in Windows NT Server

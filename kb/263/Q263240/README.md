@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263240: PRB: Tab Disappears from Power Management Properties on IBM Thin"
-permalink: kb/263/Q263240/
+permalink: /kb/263/Q263240/
 ---
 
 ## Q263240: PRB: Tab Disappears from Power Management Properties on IBM Thin

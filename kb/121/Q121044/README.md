@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121044: NBTSTAT -R Parameter May Fail in Microsoft TCP/IP-32"
-permalink: kb/121/Q121044/
+permalink: /kb/121/Q121044/
 ---
 
 ## Q121044: NBTSTAT -R Parameter May Fail in Microsoft TCP/IP-32

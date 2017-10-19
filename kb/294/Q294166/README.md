@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q294166: FIX: DataGrid Control Row Property Fails to Update for Last Row"
-permalink: kb/294/Q294166/
+permalink: /kb/294/Q294166/
 ---
 
 ## Q294166: FIX: DataGrid Control Row Property Fails to Update for Last Row

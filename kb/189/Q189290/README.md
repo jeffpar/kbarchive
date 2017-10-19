@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q189290: Loss of Desktop After Logon When Using a Filter Gina.dll"
-permalink: kb/189/Q189290/
+permalink: /kb/189/Q189290/
 ---
 
 ## Q189290: Loss of Desktop After Logon When Using a Filter Gina.dll

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198995: XADM: Fatal Error Installing Exchange Server on MSCS"
-permalink: kb/198/Q198995/
+permalink: /kb/198/Q198995/
 ---
 
 ## Q198995: XADM: Fatal Error Installing Exchange Server on MSCS

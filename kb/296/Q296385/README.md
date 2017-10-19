@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q296385: SMS: Delay When You Try to Delete Collections"
-permalink: kb/296/Q296385/
+permalink: /kb/296/Q296385/
 ---
 
 ## Q296385: SMS: Delay When You Try to Delete Collections

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86908: FoxPro System Information Function"
-permalink: kb/086/Q86908/
+permalink: /kb/086/Q86908/
 ---
 
 ## Q86908: FoxPro System Information Function

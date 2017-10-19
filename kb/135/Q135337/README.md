@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q135337: PRB: Run-Time Error R6915 - DOSX16: Unhandled Exception"
-permalink: kb/135/Q135337/
+permalink: /kb/135/Q135337/
 ---
 
 ## Q135337: PRB: Run-Time Error R6915 - DOSX16: Unhandled Exception

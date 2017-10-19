@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q273073: XADM: Services Are Not Started When You Use the Restore Wizard"
-permalink: kb/273/Q273073/
+permalink: /kb/273/Q273073/
 ---
 
 ## Q273073: XADM: Services Are Not Started When You Use the Restore Wizard

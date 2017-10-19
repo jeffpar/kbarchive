@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73208: MS-DOS 4.0 and Later Netware Redirector Switches Need &quot;/&quot;"
-permalink: kb/073/Q73208/
+permalink: /kb/073/Q73208/
 ---
 
 ## Q73208: MS-DOS 4.0 and Later Netware Redirector Switches Need &quot;/&quot;

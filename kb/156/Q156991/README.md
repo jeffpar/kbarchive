@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156991: INFO: STL Sample for the distance() Function"
-permalink: kb/156/Q156991/
+permalink: /kb/156/Q156991/
 ---
 
 ## Q156991: INFO: STL Sample for the distance() Function

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q315718: SMS: Windows File Protection Message During Client Installation"
-permalink: kb/315/Q315718/
+permalink: /kb/315/Q315718/
 ---
 
 ## Q315718: SMS: Windows File Protection Message During Client Installation

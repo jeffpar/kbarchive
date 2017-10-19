@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q219538: DLL Registration Causes Access Violation on Terminal Server"
-permalink: kb/219/Q219538/
+permalink: /kb/219/Q219538/
 ---
 
 ## Q219538: DLL Registration Causes Access Violation on Terminal Server

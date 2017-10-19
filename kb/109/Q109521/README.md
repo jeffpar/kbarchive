@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109521: MPU-401 Cards Are Not Supported Under Windows NT"
-permalink: kb/109/Q109521/
+permalink: /kb/109/Q109521/
 ---
 
 ## Q109521: MPU-401 Cards Are Not Supported Under Windows NT

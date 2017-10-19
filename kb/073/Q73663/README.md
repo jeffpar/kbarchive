@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73663: FIX: LINK May Incorrectly Generate L2049 for Resource-Only DLL"
-permalink: kb/073/Q73663/
+permalink: /kb/073/Q73663/
 ---
 
 ## Q73663: FIX: LINK May Incorrectly Generate L2049 for Resource-Only DLL

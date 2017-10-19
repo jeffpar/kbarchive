@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q198442: XWEB: Chinese CHS and CHT Cannot Exist on Same OWA Server"
-permalink: kb/198/Q198442/
+permalink: /kb/198/Q198442/
 ---
 
 ## Q198442: XWEB: Chinese CHS and CHT Cannot Exist on Same OWA Server

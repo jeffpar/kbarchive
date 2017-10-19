@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q149301: Barr X.25 Setup Cancel Button Terminates Setup"
-permalink: kb/149/Q149301/
+permalink: /kb/149/Q149301/
 ---
 
 ## Q149301: Barr X.25 Setup Cancel Button Terminates Setup

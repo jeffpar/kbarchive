@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86341: Windows Err Msg: Setup Error #S020. Setup Is Unable..."
-permalink: kb/086/Q86341/
+permalink: /kb/086/Q86341/
 ---
 
 ## Q86341: Windows Err Msg: Setup Error #S020. Setup Is Unable...

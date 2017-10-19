@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q263238: XFOR: Lotus Notes Connector May Not Work If ID File Has Password"
-permalink: kb/263/Q263238/
+permalink: /kb/263/Q263238/
 ---
 
 ## Q263238: XFOR: Lotus Notes Connector May Not Work If ID File Has Password

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q152987: MS-DOS Apps Report Sharing Violation When Using CSNW"
-permalink: kb/152/Q152987/
+permalink: /kb/152/Q152987/
 ---
 
 ## Q152987: MS-DOS Apps Report Sharing Violation When Using CSNW

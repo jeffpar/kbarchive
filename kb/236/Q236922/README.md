@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236922: Event 201 Errors Logged Even When Licenses Are Available"
-permalink: kb/236/Q236922/
+permalink: /kb/236/Q236922/
 ---
 
 ## Q236922: Event 201 Errors Logged Even When Licenses Are Available

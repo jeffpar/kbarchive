@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q110274: PC WSPlus: Summary List of Schedule+ 1.0 and 1.0a Bugs"
-permalink: kb/110/Q110274/
+permalink: /kb/110/Q110274/
 ---
 
 ## Q110274: PC WSPlus: Summary List of Schedule+ 1.0 and 1.0a Bugs

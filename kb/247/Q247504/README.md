@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q247504: Wldap32 Clients Limited to 40-Character Attribute Names"
-permalink: kb/247/Q247504/
+permalink: /kb/247/Q247504/
 ---
 
 ## Q247504: Wldap32 Clients Limited to 40-Character Attribute Names

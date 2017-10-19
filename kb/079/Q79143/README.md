@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q79143: Using the /HIGH and /DS LINK Options"
-permalink: kb/079/Q79143/
+permalink: /kb/079/Q79143/
 ---
 
 ## Q79143: Using the /HIGH and /DS LINK Options

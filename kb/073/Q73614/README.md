@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q73614: Video Corruption Can Occur in MS-DOS Shell During Swap"
-permalink: kb/073/Q73614/
+permalink: /kb/073/Q73614/
 ---
 
 ## Q73614: Video Corruption Can Occur in MS-DOS Shell During Swap

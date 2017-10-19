@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q235170: SMS: Admin Console Performance Degraded on Multihomed Computers"
-permalink: kb/235/Q235170/
+permalink: /kb/235/Q235170/
 ---
 
 ## Q235170: SMS: Admin Console Performance Degraded on Multihomed Computers

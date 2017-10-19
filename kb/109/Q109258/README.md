@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109258: CONN: Full Import Removes Manually Entered Recipients"
-permalink: kb/109/Q109258/
+permalink: /kb/109/Q109258/
 ---
 
 ## Q109258: CONN: Full Import Removes Manually Entered Recipients

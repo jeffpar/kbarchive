@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q306667: Server Certificate Button Unavailable in IIS"
-permalink: kb/306/Q306667/
+permalink: /kb/306/Q306667/
 ---
 
 ## Q306667: Server Certificate Button Unavailable in IIS

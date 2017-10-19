@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q239035: Err Msg: 550 Directory: Access Denied, Failed to Change Dir"
-permalink: kb/239/Q239035/
+permalink: /kb/239/Q239035/
 ---
 
 ## Q239035: Err Msg: 550 Directory: Access Denied, Failed to Change Dir

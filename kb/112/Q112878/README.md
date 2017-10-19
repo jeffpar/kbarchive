@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112878: PC WSPlus: Sched. Dist. Doesn't Propagate Free and Busy Times"
-permalink: kb/112/Q112878/
+permalink: /kb/112/Q112878/
 ---
 
 ## Q112878: PC WSPlus: Sched. Dist. Doesn't Propagate Free and Busy Times

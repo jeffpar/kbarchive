@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q252620: Allegiance: Unable to Run Program in a Window"
-permalink: kb/252/Q252620/
+permalink: /kb/252/Q252620/
 ---
 
 ## Q252620: Allegiance: Unable to Run Program in a Window

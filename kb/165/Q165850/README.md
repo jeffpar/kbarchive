@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165850: SNA Print Service Drops Escape Sequences from 3270 Print Job"
-permalink: kb/165/Q165850/
+permalink: /kb/165/Q165850/
 ---
 
 ## Q165850: SNA Print Service Drops Escape Sequences from 3270 Print Job

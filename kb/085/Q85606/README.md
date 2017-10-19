@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85606: FAX: Error Returning Notification to User"
-permalink: kb/085/Q85606/
+permalink: /kb/085/Q85606/
 ---
 
 ## Q85606: FAX: Error Returning Notification to User

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148787: FIX: Run Out of Memory or Assertion in GetBufferSetLength()"
-permalink: kb/148/Q148787/
+permalink: /kb/148/Q148787/
 ---
 
 ## Q148787: FIX: Run Out of Memory or Assertion in GetBufferSetLength()

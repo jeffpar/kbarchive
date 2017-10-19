@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q117428: INFO: GetProcAddress(), Function Pointers, and C++"
-permalink: kb/117/Q117428/
+permalink: /kb/117/Q117428/
 ---
 
 ## Q117428: INFO: GetProcAddress(), Function Pointers, and C++

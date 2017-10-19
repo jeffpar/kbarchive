@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160479: Encarta 97: Computer Hangs with Sound Galaxy Pro 16"
-permalink: kb/160/Q160479/
+permalink: /kb/160/Q160479/
 ---
 
 ## Q160479: Encarta 97: Computer Hangs with Sound Galaxy Pro 16

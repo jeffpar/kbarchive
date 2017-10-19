@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140127: PPP Authentication Fails with SP2 and Shiva Dialer"
-permalink: kb/140/Q140127/
+permalink: /kb/140/Q140127/
 ---
 
 ## Q140127: PPP Authentication Fails with SP2 and Shiva Dialer

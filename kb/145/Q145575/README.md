@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145575: XCLN: Err Msg: The Attachment(s) Could Not Be Displayed..."
-permalink: kb/145/Q145575/
+permalink: /kb/145/Q145575/
 ---
 
 ## Q145575: XCLN: Err Msg: The Attachment(s) Could Not Be Displayed...

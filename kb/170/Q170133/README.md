@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170133: Unable to Add Modem in Remote Access Setup"
-permalink: kb/170/Q170133/
+permalink: /kb/170/Q170133/
 ---
 
 ## Q170133: Unable to Add Modem in Remote Access Setup

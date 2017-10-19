@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q265422: How RDISK.EXE Updates Repair Information"
-permalink: kb/265/Q265422/
+permalink: /kb/265/Q265422/
 ---
 
 ## Q265422: How RDISK.EXE Updates Repair Information

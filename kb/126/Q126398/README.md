@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126398: Limits on OtherServers Parameter in SNA Server."
-permalink: kb/126/Q126398/
+permalink: /kb/126/Q126398/
 ---
 
 ## Q126398: Limits on OtherServers Parameter in SNA Server.

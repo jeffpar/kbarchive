@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q159762: MSB Human: ErrMsg: MIDI Device Is in Use by Another ..."
-permalink: kb/159/Q159762/
+permalink: /kb/159/Q159762/
 ---
 
 ## Q159762: MSB Human: ErrMsg: MIDI Device Is in Use by Another ...

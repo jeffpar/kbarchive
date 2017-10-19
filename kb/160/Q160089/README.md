@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q160089: PRB: 16-bit Help Window Title Has Wrong Character"
-permalink: kb/160/Q160089/
+permalink: /kb/160/Q160089/
 ---
 
 ## Q160089: PRB: 16-bit Help Window Title Has Wrong Character

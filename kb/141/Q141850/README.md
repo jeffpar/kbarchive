@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q141850: MSIC: Routing Options for (800) 426-9400"
-permalink: kb/141/Q141850/
+permalink: /kb/141/Q141850/
 ---
 
 ## Q141850: MSIC: Routing Options for (800) 426-9400

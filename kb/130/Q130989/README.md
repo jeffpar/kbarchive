@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q130989: How to Make an Array Protected"
-permalink: kb/130/Q130989/
+permalink: /kb/130/Q130989/
 ---
 
 ## Q130989: How to Make an Array Protected

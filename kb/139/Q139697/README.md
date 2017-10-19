@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q139697: List of Fury3 Enhancement (Cheat) Codes"
-permalink: kb/139/Q139697/
+permalink: /kb/139/Q139697/
 ---
 
 ## Q139697: List of Fury3 Enhancement (Cheat) Codes

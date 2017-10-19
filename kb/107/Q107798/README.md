@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107798: WFWG 3.11 Err Msg: Executable Not Found"
-permalink: kb/107/Q107798/
+permalink: /kb/107/Q107798/
 ---
 
 ## Q107798: WFWG 3.11 Err Msg: Executable Not Found

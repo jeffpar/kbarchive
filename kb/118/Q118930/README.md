@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118930: PC Win: Send Note Becomes Read Note After Move to Shared Fld"
-permalink: kb/118/Q118930/
+permalink: /kb/118/Q118930/
 ---
 
 ## Q118930: PC Win: Send Note Becomes Read Note After Move to Shared Fld

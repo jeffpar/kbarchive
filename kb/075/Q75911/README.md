@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q75911: INFO: Paper Sizes 50 through 56 Reserved for PostScript Driver"
-permalink: kb/075/Q75911/
+permalink: /kb/075/Q75911/
 ---
 
 ## Q75911: INFO: Paper Sizes 50 through 56 Reserved for PostScript Driver

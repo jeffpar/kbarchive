@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185085: FIX: Modal Form and Form with Treeview Causes Memory Error"
-permalink: kb/185/Q185085/
+permalink: /kb/185/Q185085/
 ---
 
 ## Q185085: FIX: Modal Form and Form with Treeview Causes Memory Error

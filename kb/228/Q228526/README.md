@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q228526: Baseball 2000: Field Radar Is Not Displayed Correctly"
-permalink: kb/228/Q228526/
+permalink: /kb/228/Q228526/
 ---
 
 ## Q228526: Baseball 2000: Field Radar Is Not Displayed Correctly

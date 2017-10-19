@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q82531: WordPerfect Office Cannot Be Started With File Run"
-permalink: kb/082/Q82531/
+permalink: /kb/082/Q82531/
 ---
 
 ## Q82531: WordPerfect Office Cannot Be Started With File Run

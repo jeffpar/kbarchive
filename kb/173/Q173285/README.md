@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q173285: Win3.x Client Problem Connecting over Netmanage Newt TCP/IP"
-permalink: kb/173/Q173285/
+permalink: /kb/173/Q173285/
 ---
 
 ## Q173285: Win3.x Client Problem Connecting over Netmanage Newt TCP/IP

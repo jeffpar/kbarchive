@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196703: INFO: Files Installed in WINNT&#92;SYSTEM32 Folder for NT SP3"
-permalink: kb/196/Q196703/
+permalink: /kb/196/Q196703/
 ---
 
 ## Q196703: INFO: Files Installed in WINNT&#92;SYSTEM32 Folder for NT SP3

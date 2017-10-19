@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q184597: Visual Basic Script Error Message When You Connect to MSN"
-permalink: kb/184/Q184597/
+permalink: /kb/184/Q184597/
 ---
 
 ## Q184597: Visual Basic Script Error Message When You Connect to MSN

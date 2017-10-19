@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q85396: Okidata Microline 93-IBM Improperly Advances Paper Feed"
-permalink: kb/085/Q85396/
+permalink: /kb/085/Q85396/
 ---
 
 ## Q85396: Okidata Microline 93-IBM Improperly Advances Paper Feed

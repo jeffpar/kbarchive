@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q107118: Multiple Calls of GetHostByName to DNS Causes Errors"
-permalink: kb/107/Q107118/
+permalink: /kb/107/Q107118/
 ---
 
 ## Q107118: Multiple Calls of GetHostByName to DNS Causes Errors

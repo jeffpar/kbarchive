@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q126142: Windows NT Mail Err Msg: The Network Path You Entered Could..."
-permalink: kb/126/Q126142/
+permalink: /kb/126/Q126142/
 ---
 
 ## Q126142: Windows NT Mail Err Msg: The Network Path You Entered Could...

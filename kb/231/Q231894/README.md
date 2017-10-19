@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231894: HOWTO: Update a SQL Server Text Field Through a View"
-permalink: kb/231/Q231894/
+permalink: /kb/231/Q231894/
 ---
 
 ## Q231894: HOWTO: Update a SQL Server Text Field Through a View

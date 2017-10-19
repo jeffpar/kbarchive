@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100841: WFWG: Redirecting DIR /W to LPTx Results in Blank Page"
-permalink: kb/100/Q100841/
+permalink: /kb/100/Q100841/
 ---
 
 ## Q100841: WFWG: Redirecting DIR /W to LPTx Results in Blank Page

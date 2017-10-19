@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156924: PRB: Menu with Internal Names in SDI Form Changes System Menu"
-permalink: kb/156/Q156924/
+permalink: /kb/156/Q156924/
 ---
 
 ## Q156924: PRB: Menu with Internal Names in SDI Form Changes System Menu

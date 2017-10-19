@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151091: Bookshelf '96-'97: Err Msg. with More Than 57 Character Path"
-permalink: kb/151/Q151091/
+permalink: /kb/151/Q151091/
 ---
 
 ## Q151091: Bookshelf '96-'97: Err Msg. with More Than 57 Character Path

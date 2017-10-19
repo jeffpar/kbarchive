@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q143072: HOWTO: Determine Default Libraries for an .OBJ Object File"
-permalink: kb/143/Q143072/
+permalink: /kb/143/Q143072/
 ---
 
 ## Q143072: HOWTO: Determine Default Libraries for an .OBJ Object File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114473: Intel Privileged and Sensitive Instructions"
-permalink: kb/114/Q114473/
+permalink: /kb/114/Q114473/
 ---
 
 ## Q114473: Intel Privileged and Sensitive Instructions

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q192156: Y2K: NTMMTA Incorrectly Logs Dates after 1999"
-permalink: kb/192/Q192156/
+permalink: /kb/192/Q192156/
 ---
 
 ## Q192156: Y2K: NTMMTA Incorrectly Logs Dates after 1999

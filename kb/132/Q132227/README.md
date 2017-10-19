@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q132227: PRB: Can't Activate or Access an Object"
-permalink: kb/132/Q132227/
+permalink: /kb/132/Q132227/
 ---
 
 ## Q132227: PRB: Can't Activate or Access an Object

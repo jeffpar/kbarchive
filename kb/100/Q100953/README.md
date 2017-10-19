@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q100953: Inaccuracies in DoubleSpace Manager Change Size Screen"
-permalink: kb/100/Q100953/
+permalink: /kb/100/Q100953/
 ---
 
 ## Q100953: Inaccuracies in DoubleSpace Manager Change Size Screen

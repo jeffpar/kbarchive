@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q111808: COMMAND+&lt;Number&gt; Combinations in FoxPro for Macintosh"
-permalink: kb/111/Q111808/
+permalink: /kb/111/Q111808/
 ---
 
 ## Q111808: COMMAND+&lt;Number&gt; Combinations in FoxPro for Macintosh

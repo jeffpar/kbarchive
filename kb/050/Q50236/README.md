@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q50236: Mac Wkst: Files in the Trash Can Be Enclosed in Messages"
-permalink: kb/050/Q50236/
+permalink: /kb/050/Q50236/
 ---
 
 ## Q50236: Mac Wkst: Files in the Trash Can Be Enclosed in Messages

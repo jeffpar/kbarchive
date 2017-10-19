@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q199047: Cannot Start Program When NetMeeting Is Running"
-permalink: kb/199/Q199047/
+permalink: /kb/199/Q199047/
 ---
 
 ## Q199047: Cannot Start Program When NetMeeting Is Running

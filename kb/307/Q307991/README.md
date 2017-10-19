@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q307991: TCP Session Is Reset After You Apply the Security Rollup Package"
-permalink: kb/307/Q307991/
+permalink: /kb/307/Q307991/
 ---
 
 ## Q307991: TCP Session Is Reset After You Apply the Security Rollup Package

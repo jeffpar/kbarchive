@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156464: Writer 2: Postscript Printing"
-permalink: kb/156/Q156464/
+permalink: /kb/156/Q156464/
 ---
 
 ## Q156464: Writer 2: Postscript Printing

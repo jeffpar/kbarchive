@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q168618: WD97: Saving As Word 6.0/95 Format Saves Incorrect File Size"
-permalink: kb/168/Q168618/
+permalink: /kb/168/Q168618/
 ---
 
 ## Q168618: WD97: Saving As Word 6.0/95 Format Saves Incorrect File Size

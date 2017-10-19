@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q105125: PC DirSync: Address Deleted After Dir-Sync Import or Resync"
-permalink: kb/105/Q105125/
+permalink: /kb/105/Q105125/
 ---
 
 ## Q105125: PC DirSync: Address Deleted After Dir-Sync Import or Resync

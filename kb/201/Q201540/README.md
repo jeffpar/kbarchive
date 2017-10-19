@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q201540: HOWTO: Adding Tooltips to ATL ActiveX Controls"
-permalink: kb/201/Q201540/
+permalink: /kb/201/Q201540/
 ---
 
 ## Q201540: HOWTO: Adding Tooltips to ATL ActiveX Controls

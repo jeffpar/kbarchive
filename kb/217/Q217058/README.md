@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q217058: XFOR: How to Enable DBCS Support on the Exchange Notes Connector"
-permalink: kb/217/Q217058/
+permalink: /kb/217/Q217058/
 ---
 
 ## Q217058: XFOR: How to Enable DBCS Support on the Exchange Notes Connector

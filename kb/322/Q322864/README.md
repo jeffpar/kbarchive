@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q322864: Deleted Files Do Not Immediately Go Away"
-permalink: kb/322/Q322864/
+permalink: /kb/322/Q322864/
 ---
 
 ## Q322864: Deleted Files Do Not Immediately Go Away

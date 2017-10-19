@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q258138: XWEB: OWA Processes Consecutive All-Day Appointments Incorrectly"
-permalink: kb/258/Q258138/
+permalink: /kb/258/Q258138/
 ---
 
 ## Q258138: XWEB: OWA Processes Consecutive All-Day Appointments Incorrectly

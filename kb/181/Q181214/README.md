@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q181214: PBS: Access Violation Deleting POPs from Command Line"
-permalink: kb/181/Q181214/
+permalink: /kb/181/Q181214/
 ---
 
 ## Q181214: PBS: Access Violation Deleting POPs from Command Line

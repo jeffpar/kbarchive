@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q162118: WD97: Closing Document Window Does Not Close VB Editor"
-permalink: kb/162/Q162118/
+permalink: /kb/162/Q162118/
 ---
 
 ## Q162118: WD97: Closing Document Window Does Not Close VB Editor

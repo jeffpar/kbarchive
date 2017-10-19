@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123613: FAX: Faxes Print on Every Other Page with Size A4 Paper"
-permalink: kb/123/Q123613/
+permalink: /kb/123/Q123613/
 ---
 
 ## Q123613: FAX: Faxes Print on Every Other Page with Size A4 Paper

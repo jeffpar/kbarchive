@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148624: BUG: No Error w/Public NAMELIST Variables with PRIVATE Members"
-permalink: kb/148/Q148624/
+permalink: /kb/148/Q148624/
 ---
 
 ## Q148624: BUG: No Error w/Public NAMELIST Variables with PRIVATE Members

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q165574: SMS: &quot;The SNMP Agent...Is Either Not Installed or Not Running&quot;"
-permalink: kb/165/Q165574/
+permalink: /kb/165/Q165574/
 ---
 
 ## Q165574: SMS: &quot;The SNMP Agent...Is Either Not Installed or Not Running&quot;

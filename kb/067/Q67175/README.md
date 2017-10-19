@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q67175: OS/2 LAN Manager: Last Logon Information Sometimes Incorrect"
-permalink: kb/067/Q67175/
+permalink: /kb/067/Q67175/
 ---
 
 ## Q67175: OS/2 LAN Manager: Last Logon Information Sometimes Incorrect

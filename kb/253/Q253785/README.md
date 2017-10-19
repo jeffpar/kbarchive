@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q253785: PRB: Error When Setting DateTimePicker Control Programmatically"
-permalink: kb/253/Q253785/
+permalink: /kb/253/Q253785/
 ---
 
 ## Q253785: PRB: Error When Setting DateTimePicker Control Programmatically

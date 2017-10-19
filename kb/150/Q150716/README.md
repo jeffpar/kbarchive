@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q150716: HOWTO: DAO: Attach to and Create QueryDefs on ODBC Tables"
-permalink: kb/150/Q150716/
+permalink: /kb/150/Q150716/
 ---
 
 ## Q150716: HOWTO: DAO: Attach to and Create QueryDefs on ODBC Tables

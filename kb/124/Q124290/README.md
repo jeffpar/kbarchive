@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q124290: HOWTO: Add File Filters to Visual C++ Version 2.0"
-permalink: kb/124/Q124290/
+permalink: /kb/124/Q124290/
 ---
 
 ## Q124290: HOWTO: Add File Filters to Visual C++ Version 2.0

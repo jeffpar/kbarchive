@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q121649: Err Msg: The Domain is Not Available"
-permalink: kb/121/Q121649/
+permalink: /kb/121/Q121649/
 ---
 
 ## Q121649: Err Msg: The Domain is Not Available

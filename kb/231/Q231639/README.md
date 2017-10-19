@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q231639: Academic Learning Series Microsoft Windows NT Network Administra"
-permalink: kb/231/Q231639/
+permalink: /kb/231/Q231639/
 ---
 
 ## Q231639: Academic Learning Series Microsoft Windows NT Network Administra

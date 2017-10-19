@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177697: HOWTO: List Local Network Connections with WNetEnumResources"
-permalink: kb/177/Q177697/
+permalink: /kb/177/Q177697/
 ---
 
 ## Q177697: HOWTO: List Local Network Connections with WNetEnumResources

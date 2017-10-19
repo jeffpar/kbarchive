@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q177059: WD97: Err Msg: &quot;Invalid Page Fault&quot; When Inserting a Symbol"
-permalink: kb/177/Q177059/
+permalink: /kb/177/Q177059/
 ---
 
 ## Q177059: WD97: Err Msg: &quot;Invalid Page Fault&quot; When Inserting a Symbol

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q133491: How to Add an IDE Drive and Controller to SCSI Windows NT System"
-permalink: kb/133/Q133491/
+permalink: /kb/133/Q133491/
 ---
 
 ## Q133491: How to Add an IDE Drive and Controller to SCSI Windows NT System

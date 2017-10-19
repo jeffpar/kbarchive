@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q169196: XADM: Client Slow to Access a Public Folder"
-permalink: kb/169/Q169196/
+permalink: /kb/169/Q169196/
 ---
 
 ## Q169196: XADM: Client Slow to Access a Public Folder

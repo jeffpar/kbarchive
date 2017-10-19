@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136327: How to Enable Autologon During an Automated Setup"
-permalink: kb/136/Q136327/
+permalink: /kb/136/Q136327/
 ---
 
 ## Q136327: How to Enable Autologon During an Automated Setup

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q138366: Event ID 10 Appears When Using Simple TCP/IP Services"
-permalink: kb/138/Q138366/
+permalink: /kb/138/Q138366/
 ---
 
 ## Q138366: Event ID 10 Appears When Using Simple TCP/IP Services

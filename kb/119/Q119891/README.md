@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q119891: Floppy Drives Inaccessible on Gateway 2000 Nomad Laptops"
-permalink: kb/119/Q119891/
+permalink: /kb/119/Q119891/
 ---
 
 ## Q119891: Floppy Drives Inaccessible on Gateway 2000 Nomad Laptops

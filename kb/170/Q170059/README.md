@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q170059: MS DNS Resolvers' Behavior with Non-Microsoft Multihomed DNS"
-permalink: kb/170/Q170059/
+permalink: /kb/170/Q170059/
 ---
 
 ## Q170059: MS DNS Resolvers' Behavior with Non-Microsoft Multihomed DNS

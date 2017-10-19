@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q223131: FIX: Incorrect Firing of LostFocus Event"
-permalink: kb/223/Q223131/
+permalink: /kb/223/Q223131/
 ---
 
 ## Q223131: FIX: Incorrect Firing of LostFocus Event

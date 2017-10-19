@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q215117: SMS: Long File Names Foil Packages Sent to NetWare Points"
-permalink: kb/215/Q215117/
+permalink: /kb/215/Q215117/
 ---
 
 ## Q215117: SMS: Long File Names Foil Packages Sent to NetWare Points

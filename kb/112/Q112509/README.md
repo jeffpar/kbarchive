@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q112509: Error 2013 - Disk Is At Or Near Capacity"
-permalink: kb/112/Q112509/
+permalink: /kb/112/Q112509/
 ---
 
 ## Q112509: Error 2013 - Disk Is At Or Near Capacity

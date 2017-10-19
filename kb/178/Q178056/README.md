@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178056: XCLN: One-Off RFC822 Addresses Supported"
-permalink: kb/178/Q178056/
+permalink: /kb/178/Q178056/
 ---
 
 ## Q178056: XCLN: One-Off RFC822 Addresses Supported

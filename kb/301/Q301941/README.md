@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q301941: SMS: Remote Control Freeze When Remote Desktop Connection Starts"
-permalink: kb/301/Q301941/
+permalink: /kb/301/Q301941/
 ---
 
 ## Q301941: SMS: Remote Control Freeze When Remote Desktop Connection Starts

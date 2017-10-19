@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q128491: Creating a NetDDE Link in Excel on Windows NT"
-permalink: kb/128/Q128491/
+permalink: /kb/128/Q128491/
 ---
 
 ## Q128491: Creating a NetDDE Link in Excel on Windows NT

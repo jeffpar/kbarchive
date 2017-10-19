@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q246125: XADM: Exchange Server 5.5 Performance Optimizer Verbose Mode"
-permalink: kb/246/Q246125/
+permalink: /kb/246/Q246125/
 ---
 
 ## Q246125: XADM: Exchange Server 5.5 Performance Optimizer Verbose Mode

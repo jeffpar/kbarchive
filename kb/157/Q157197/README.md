@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q157197: WD97: Browse For Folder Dialog Box Behind Conversion Wizard"
-permalink: kb/157/Q157197/
+permalink: /kb/157/Q157197/
 ---
 
 ## Q157197: WD97: Browse For Folder Dialog Box Behind Conversion Wizard

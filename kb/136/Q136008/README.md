@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136008: PC Ext: The F2 Key Does Not Display All Postoffices"
-permalink: kb/136/Q136008/
+permalink: /kb/136/Q136008/
 ---
 
 ## Q136008: PC Ext: The F2 Key Does Not Display All Postoffices

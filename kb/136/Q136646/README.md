@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q136646: Leopard: Audio Breaks Up"
-permalink: kb/136/Q136646/
+permalink: /kb/136/Q136646/
 ---
 
 ## Q136646: Leopard: Audio Breaks Up

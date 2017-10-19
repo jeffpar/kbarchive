@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q129895: PRB: OPTION PRIVATE Statement Has No Effect in Visual Basic"
-permalink: kb/129/Q129895/
+permalink: /kb/129/Q129895/
 ---
 
 ## Q129895: PRB: OPTION PRIVATE Statement Has No Effect in Visual Basic

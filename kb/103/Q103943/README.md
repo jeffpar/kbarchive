@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103943: Mac Gty: Details Unavailable for Gateway Users"
-permalink: kb/103/Q103943/
+permalink: /kb/103/Q103943/
 ---
 
 ## Q103943: Mac Gty: Details Unavailable for Gateway Users

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q109253: CONN: Gateway Configuration Must Be Updated During Install"
-permalink: kb/109/Q109253/
+permalink: /kb/109/Q109253/
 ---
 
 ## Q109253: CONN: Gateway Configuration Must Be Updated During Install

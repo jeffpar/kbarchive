@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155888: PRB: Binary Files with Keyword Expansion Corrupted"
-permalink: kb/155/Q155888/
+permalink: /kb/155/Q155888/
 ---
 
 ## Q155888: PRB: Binary Files with Keyword Expansion Corrupted

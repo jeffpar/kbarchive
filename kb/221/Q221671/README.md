@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q221671: FIX: OLE Error &quot;Member Not Found&quot; Using MSMQ"
-permalink: kb/221/Q221671/
+permalink: /kb/221/Q221671/
 ---
 
 ## Q221671: FIX: OLE Error &quot;Member Not Found&quot; Using MSMQ

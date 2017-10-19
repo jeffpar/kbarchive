@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q80496: When Not to Use MS-DOS 5.0 CHKDSK and UNDELETE Commands"
-permalink: kb/080/Q80496/
+permalink: /kb/080/Q80496/
 ---
 
 ## Q80496: When Not to Use MS-DOS 5.0 CHKDSK and UNDELETE Commands

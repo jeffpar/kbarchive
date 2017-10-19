@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q74825: MS-DOS 5.0 Setup Doesn't Always Copy HIMEM.SYS"
-permalink: kb/074/Q74825/
+permalink: /kb/074/Q74825/
 ---
 
 ## Q74825: MS-DOS 5.0 Setup Doesn't Always Copy HIMEM.SYS

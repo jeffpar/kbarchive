@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q96165: Adding Extensions to the Windows File Manager"
-permalink: kb/096/Q96165/
+permalink: /kb/096/Q96165/
 ---
 
 ## Q96165: Adding Extensions to the Windows File Manager

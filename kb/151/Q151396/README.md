@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q151396: IBM PS/2 Computer Hangs When Start SNA Server SDLC Connection"
-permalink: kb/151/Q151396/
+permalink: /kb/151/Q151396/
 ---
 
 ## Q151396: IBM PS/2 Computer Hangs When Start SNA Server SDLC Connection

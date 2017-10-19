@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q99096: ERR: Variable &quot;XXXXXXXXXXX&quot; Not Found"
-permalink: kb/099/Q99096/
+permalink: /kb/099/Q99096/
 ---
 
 ## Q99096: ERR: Variable &quot;XXXXXXXXXXX&quot; Not Found

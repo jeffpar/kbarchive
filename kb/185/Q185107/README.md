@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185107: XFOR: Character Set Translation Issues with VAX Mail Systems"
-permalink: kb/185/Q185107/
+permalink: /kb/185/Q185107/
 ---
 
 ## Q185107: XFOR: Character Set Translation Issues with VAX Mail Systems

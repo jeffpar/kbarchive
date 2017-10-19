@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q245664: XADM: Exchange Backup Doesn't Work from Terminal Server Client"
-permalink: kb/245/Q245664/
+permalink: /kb/245/Q245664/
 ---
 
 ## Q245664: XADM: Exchange Backup Doesn't Work from Terminal Server Client

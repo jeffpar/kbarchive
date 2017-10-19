@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q118937: PRB: Files Copied from MS-DOS to Mac Have Wrong Icon and Type"
-permalink: kb/118/Q118937/
+permalink: /kb/118/Q118937/
 ---
 
 ## Q118937: PRB: Files Copied from MS-DOS to Mac Have Wrong Icon and Type

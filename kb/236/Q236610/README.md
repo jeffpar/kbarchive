@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q236610: DirectPlay 6.1a Launches Stable Multiplayer Game Connections"
-permalink: kb/236/Q236610/
+permalink: /kb/236/Q236610/
 ---
 
 ## Q236610: DirectPlay 6.1a Launches Stable Multiplayer Game Connections

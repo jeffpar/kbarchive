@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140215: FIX: Brackets Cause Recordset Update to Fail in SQL Server"
-permalink: kb/140/Q140215/
+permalink: /kb/140/Q140215/
 ---
 
 ## Q140215: FIX: Brackets Cause Recordset Update to Fail in SQL Server

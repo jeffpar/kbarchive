@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q268831: XADM: Event 1025, Error 0xfffff9bb"
-permalink: kb/268/Q268831/
+permalink: /kb/268/Q268831/
 ---
 
 ## Q268831: XADM: Event 1025, Error 0xfffff9bb

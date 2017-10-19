@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q302565: Music.MSN.com Will Not Play On MSN Companion"
-permalink: kb/302/Q302565/
+permalink: /kb/302/Q302565/
 ---
 
 ## Q302565: Music.MSN.com Will Not Play On MSN Companion

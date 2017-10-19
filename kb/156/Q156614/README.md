@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q156614: Writer 2: Print Dialog Incorrectly Indicates 4 Pages to Print"
-permalink: kb/156/Q156614/
+permalink: /kb/156/Q156614/
 ---
 
 ## Q156614: Writer 2: Print Dialog Incorrectly Indicates 4 Pages to Print

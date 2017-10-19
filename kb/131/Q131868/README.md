@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q131868: How to Troubleshoot PCMCIA Modems in Windows NT"
-permalink: kb/131/Q131868/
+permalink: /kb/131/Q131868/
 ---
 
 ## Q131868: How to Troubleshoot PCMCIA Modems in Windows NT

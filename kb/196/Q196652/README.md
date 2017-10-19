@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q196652: HOWTO: Implement Custom Rounding Procedures"
-permalink: kb/196/Q196652/
+permalink: /kb/196/Q196652/
 ---
 
 ## Q196652: HOWTO: Implement Custom Rounding Procedures

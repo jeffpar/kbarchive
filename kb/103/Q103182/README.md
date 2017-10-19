@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q103182: ADT/ODE: Function to Determine Retail or Run-Time Version"
-permalink: kb/103/Q103182/
+permalink: /kb/103/Q103182/
 ---
 
 ## Q103182: ADT/ODE: Function to Determine Retail or Run-Time Version

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q86348: Hyundai 386/D CAPS LOCK May Not Work in Windows"
-permalink: kb/086/Q86348/
+permalink: /kb/086/Q86348/
 ---
 
 ## Q86348: Hyundai 386/D CAPS LOCK May Not Work in Windows

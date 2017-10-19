@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261193: FIX: &quot;Report Width Is Larger Than ..&quot; w/Data Report in Landscape"
-permalink: kb/261/Q261193/
+permalink: /kb/261/Q261193/
 ---
 
 ## Q261193: FIX: &quot;Report Width Is Larger Than ..&quot; w/Data Report in Landscape

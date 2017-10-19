@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281480: Workstation Does Not Connect to Network Resources Using NTLMv2"
-permalink: kb/281/Q281480/
+permalink: /kb/281/Q281480/
 ---
 
 ## Q281480: Workstation Does Not Connect to Network Resources Using NTLMv2

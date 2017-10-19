@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q178378: XFOR: IMS Doesn't Send NDR for Messages Passed From Custom DLL"
-permalink: kb/178/Q178378/
+permalink: /kb/178/Q178378/
 ---
 
 ## Q178378: XFOR: IMS Doesn't Send NDR for Messages Passed From Custom DLL

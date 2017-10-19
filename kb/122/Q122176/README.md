@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q122176: SMS Site Reset Recommended Before Upgrade"
-permalink: kb/122/Q122176/
+permalink: /kb/122/Q122176/
 ---
 
 ## Q122176: SMS Site Reset Recommended Before Upgrade

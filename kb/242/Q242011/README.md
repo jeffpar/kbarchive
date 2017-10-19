@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242011: SMS: APM Does Not Install Software on BDCs"
-permalink: kb/242/Q242011/
+permalink: /kb/242/Q242011/
 ---
 
 ## Q242011: SMS: APM Does Not Install Software on BDCs

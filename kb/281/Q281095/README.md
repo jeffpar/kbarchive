@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q281095: Active Directory Services For Windows 2000 Technical Reference C"
-permalink: kb/281/Q281095/
+permalink: /kb/281/Q281095/
 ---
 
 ## Q281095: Active Directory Services For Windows 2000 Technical Reference C

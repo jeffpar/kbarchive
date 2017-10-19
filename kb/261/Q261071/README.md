@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q261071: MCM2: Game Stops Responding After Long Period of Inactivity"
-permalink: kb/261/Q261071/
+permalink: /kb/261/Q261071/
 ---
 
 ## Q261071: MCM2: Game Stops Responding After Long Period of Inactivity

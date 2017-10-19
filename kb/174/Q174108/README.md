@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q174108: Error Message: This Folder Has Been Damaged. It Will Now Be..."
-permalink: kb/174/Q174108/
+permalink: /kb/174/Q174108/
 ---
 
 ## Q174108: Error Message: This Folder Has Been Damaged. It Will Now Be...

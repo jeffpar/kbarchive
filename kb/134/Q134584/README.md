@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q134584: Second PCMCIA Network Adapter Fails"
-permalink: kb/134/Q134584/
+permalink: /kb/134/Q134584/
 ---
 
 ## Q134584: Second PCMCIA Network Adapter Fails

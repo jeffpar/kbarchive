@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q278840: MSN Companion boots to wrong page and stays there"
-permalink: kb/278/Q278840/
+permalink: /kb/278/Q278840/
 ---
 
 ## Q278840: MSN Companion boots to wrong page and stays there

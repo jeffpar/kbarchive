@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q123742: Troubleshooting &quot;The Dependency Service or Group...&quot; Errors"
-permalink: kb/123/Q123742/
+permalink: /kb/123/Q123742/
 ---
 
 ## Q123742: Troubleshooting &quot;The Dependency Service or Group...&quot; Errors

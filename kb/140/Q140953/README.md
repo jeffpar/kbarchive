@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q140953: XCLN: Fax Template Generates Bad Phone Number"
-permalink: kb/140/Q140953/
+permalink: /kb/140/Q140953/
 ---
 
 ## Q140953: XCLN: Fax Template Generates Bad Phone Number

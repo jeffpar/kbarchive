@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q180679: XCON: Encapsulated Message Properties May Be Lost"
-permalink: kb/180/Q180679/
+permalink: /kb/180/Q180679/
 ---
 
 ## Q180679: XCON: Encapsulated Message Properties May Be Lost

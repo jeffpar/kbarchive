@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q148762: FIX: Distribution Disk Setup Fails with Setup Error 279"
-permalink: kb/148/Q148762/
+permalink: /kb/148/Q148762/
 ---
 
 ## Q148762: FIX: Distribution Disk Setup Fails with Setup Error 279

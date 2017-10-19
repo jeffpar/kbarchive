@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q137050: Iomega Zip Drive on Parallel Port Not Detected"
-permalink: kb/137/Q137050/
+permalink: /kb/137/Q137050/
 ---
 
 ## Q137050: Iomega Zip Drive on Parallel Port Not Detected

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q161623: XCLN: Electronic Forms Support"
-permalink: kb/161/Q161623/
+permalink: /kb/161/Q161623/
 ---
 
 ## Q161623: XCLN: Electronic Forms Support

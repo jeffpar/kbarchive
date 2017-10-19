@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q145850: Streets 4.0: Map Not Redrawn When Dialog Box is Moved"
-permalink: kb/145/Q145850/
+permalink: /kb/145/Q145850/
 ---
 
 ## Q145850: Streets 4.0: Map Not Redrawn When Dialog Box is Moved

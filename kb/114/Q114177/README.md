@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q114177: PC Win: Err Msg: Some Names Could Not Be Matched..."
-permalink: kb/114/Q114177/
+permalink: /kb/114/Q114177/
 ---
 
 ## Q114177: PC Win: Err Msg: Some Names Could Not Be Matched...

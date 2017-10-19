@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191868: Runtime Error 1205; CedarBank VBClient in DCOM Environment"
-permalink: kb/191/Q191868/
+permalink: /kb/191/Q191868/
 ---
 
 ## Q191868: Runtime Error 1205; CedarBank VBClient in DCOM Environment

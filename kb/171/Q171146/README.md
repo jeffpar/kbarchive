@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q171146: HOWTO: Create and Remove a DSN in Visual Basic"
-permalink: kb/171/Q171146/
+permalink: /kb/171/Q171146/
 ---
 
 ## Q171146: HOWTO: Create and Remove a DSN in Visual Basic

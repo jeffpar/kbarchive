@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q155362: Problems Viewing Driver Information in OSR2 Device Manager"
-permalink: kb/155/Q155362/
+permalink: /kb/155/Q155362/
 ---
 
 ## Q155362: Problems Viewing Driver Information in OSR2 Device Manager

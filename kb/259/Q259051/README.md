@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q259051: Compass Client Shuts Down Unexpectedly"
-permalink: kb/259/Q259051/
+permalink: /kb/259/Q259051/
 ---
 
 ## Q259051: Compass Client Shuts Down Unexpectedly

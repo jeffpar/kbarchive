@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q242588: BUG: VTS_UI1 and VTS_PUI1 are Defined Incorrectly in AfxDisp.h"
-permalink: kb/242/Q242588/
+permalink: /kb/242/Q242588/
 ---
 
 ## Q242588: BUG: VTS_UI1 and VTS_PUI1 are Defined Incorrectly in AfxDisp.h

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q191685: Vfp6int.exe VFP 6.0 ODBC Driver FoxPro.int Resource File"
-permalink: kb/191/Q191685/
+permalink: /kb/191/Q191685/
 ---
 
 ## Q191685: Vfp6int.exe VFP 6.0 ODBC Driver FoxPro.int Resource File

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q185345: SMS: &quot;SMS Logon Server Not Found&quot; Message Displayed at Logon"
-permalink: kb/185/Q185345/
+permalink: /kb/185/Q185345/
 ---
 
 ## Q185345: SMS: &quot;SMS Logon Server Not Found&quot; Message Displayed at Logon

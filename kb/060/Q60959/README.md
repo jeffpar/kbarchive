@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q60959: Keyboard Summary of Flight Simulator Slewing Controls"
-permalink: kb/060/Q60959/
+permalink: /kb/060/Q60959/
 ---
 
 ## Q60959: Keyboard Summary of Flight Simulator Slewing Controls
