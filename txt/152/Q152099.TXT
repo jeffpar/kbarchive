@@ -1,0 +1,75 @@
+DOCUMENT:Q152099  24-JUL-2001  [visualc]
+TITLE   :MFC Dialog Font Substitution Under DBCS System
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.0,4.1
+OPER/SYS:
+KEYWORDS:kbIntl kbIntlDev
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), included with:
+    - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When an MFC application is run under a DBCS (Double-byte Character Set,
+including Japanese, Chinese and Korean) in Windows NT or Windows 95, the default
+font specified for the dialog boxes within that application will be changed to
+the system font if they were originally set as "MS Sans Serif" or "Helv" in the
+RC file.
+
+MORE INFORMATION
+================
+
+CDialog::DoModal eventually calls the following code (excerpt from MFC source
+code dlgcore.cpp):
+
+      // On DBCS systems, also change "MS Sans Serif" or "Helv" to system
+              font.
+      if ((!bSetSysFont) && GetSystemMetrics(SM_DBCSENABLED))
+      {
+         bSetSysFont = ((strFace == _T("MS Sans Serif")) ||
+            (strFace == _T("Helv")));
+         if (bSetSysFont && (wSize == 8))
+            wSize = 0;
+      }
+      if (bSetSysFont)
+      {
+         CDialogTemplate dlgTemp(lpDialogTemplate);
+         dlgTemp.SetSystemFont(wSize);
+         hTemplate = dlgTemp.Detach();
+      }
+
+"MS Sans Serif" and "Helv" cannot correctly display double-byte strings.
+Therefore, under a DBCS-enabled system, dialog boxes need to use the system font
+instead.
+
+This font substitution does not occur on non-DBCS versions of Windows NT or
+Windows 95.
+
+Additional query words: 4.00 4.10 Kanji Hiragana Katakana Hangeul Hanzi
+
+======================================================================
+Keywords          : kbIntl kbIntlDev 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

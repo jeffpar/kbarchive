@@ -1,0 +1,54 @@
+DOCUMENT:Q86981  10-NOV-1999  [pcmail]
+TITLE   :X400: Effect of Dir-Sync on Gateway Address Lists
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to X.400, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Directory synchronization (Dir-Sync) is a new feature in version 3.0 Microsoft
+Mail for PC Networks. Directory synchronization allows user lists to be
+propagated among Microsoft Mail systems.
+
+Dir-Sync works between Microsoft Mail systems that are using version 3.0 of the
+Microsoft Mail Gateway to X.400 as the backbone. When the Microsoft Mail
+External postoffice is defined in the EXTERNAL-ADMIN section of the Mail
+Administrator program as being indirect via the X.400 gateway, the mail system
+tries to export the user lists to the other postoffice.
+
+You must perform the normal setup procedures for defining the routing and
+addressing information for the gateway before the file transfer can be
+successful.
+
+
+Additional query words: pcmail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGatex400300
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

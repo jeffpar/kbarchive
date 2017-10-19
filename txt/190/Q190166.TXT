@@ -1,0 +1,76 @@
+DOCUMENT:Q190166  04-MAR-2001  [vbwin]
+TITLE   :PRB: PDW Does Not Include .ASP and .HTM Files for Standard Setup
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbwizard kbAppSetup kbVBp kbVBp600 kbWebClasses kbGrpDSVB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the Package and Deployment Wizard (PDW) to create a Standard Setup
+Package for an application containing Web Classes, .ASP and/or .HTM files will
+not be automatically included in the application distribution set.
+
+RESOLUTION
+==========
+
+To work around this issue, any .ASP or .HTM files must be added manually using
+the PDW Include Files section during the packaging of the application
+distribution set.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start Microsoft Visual Basic, creating a new IIS application.
+
+2. From the File menu, click Make to compile the project.
+
+3. Exit Microsoft Visual Basic, and save the changes to the project.
+
+4. Start the Package and Deployment Wizard (PDW) and create a Standard Setup
+   Package, accepting all default values.
+
+   NOTE: Any .ASP or .HTM files necessary for the application will not be
+   included. These files must be included in the PDW's Include File section.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbAppSetup kbVBp kbVBp600 kbWebClasses kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

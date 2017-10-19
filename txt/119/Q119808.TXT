@@ -1,0 +1,85 @@
+DOCUMENT:Q119808  05-NOV-1999  [win95x]
+TITLE   :Transverse & Extra Paper Sizes Not Available in Common Dialogs
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using a PostScript printer that supports transverse and extra paper
+sizes (such as the Agfa 9000 series PS), applications that use common dialog
+boxes (such as the applications that ship within Windows and Windows for
+Workgroups) do not list all the paper sizes supported by the printer. When you
+choose Print Setup from the File menu of one of these applications, these paper
+sizes do not appear; however, if you choose the Printers icon in Control Panel
+and choose the Setup button, they do appear.
+
+In Write, for example, the following paper sizes do not appear in the Print Setup
+dialog box:
+
+   Letter Transverse 11 x 8.5 in
+   A4 Transverse 297 x 210 mm
+   A5 Transverse 148 x 210 mm
+   B5 Transverse 182 x 257 mm
+   Letter Extra 9.5 x 12 in
+   A4 Extra 236 x 322 mm
+   Legal Extra 9.5 x 15 in
+   Tabloid Extra 11.69 x 18 in
+   Letter Extra Transverse 12 x 9.5 in
+
+CAUSE
+=====
+
+These paper sizes are not displayed because of a problem with the Print Setup
+common dialog box supplied with Windows 3.1 (and later versions) and the
+PostScript printer driver PSCRIPT.DRV.
+
+WORKAROUND
+==========
+
+To work around this problem, open Control Panel, choose the Printers icon, make
+the desired printer the default, press the Setup button, and specify the desired
+paper size in the Paper Size list. This allows the application to print the
+desired paper size.
+
+NOTES:
+
+ - The Paper Size line of the Print Setup dialog box of the application is blank
+   because the Print Setup common dialog box does not list transverse and extra
+   paper sizes.
+
+ - Note that changing the Paper Size in the Print Setup dialog box of an
+   application overrides the settings in the Setup dialog box of Control Panel.
+
+Additional query words: 3.10 3.1 3.11 dialogs
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

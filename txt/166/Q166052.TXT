@@ -1,0 +1,69 @@
+DOCUMENT:Q166052  19-JUL-2001  [word97]
+TITLE   :WV: Menus in Word Viewer Do Not Respond on First Click
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbui kbdta kbviewer word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word Viewer 97-2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Word Viewer 97-2000, menus may not respond on the first click.
+
+CAUSE
+=====
+
+This problem occurs if Word Viewer is busy processing another command (for
+example, a command that changes a view setting).
+
+RESOLUTION
+==========
+
+The menu responds if you click it a second time.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+REFERENCES
+==========
+
+For more information about Word Viewer 97-2000, please see the following
+Knowledge Base article:
+
+   
+
+   Q165908 WV: How to Obtain Microsoft Word Viewers
+
+Additional query words:
+
+======================================================================
+Keywords          : kbui kbdta kbviewer word97 
+Technology        : kbWordViewerSearch kbViewerSearch kbWordViewer97
+Version           : WINDOWS:
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,50 @@
+DOCUMENT:Q158832  05-JAN-2000  [iis]
+TITLE   :Personal Web Server Cannot Be Used as a Gopher Server
+PRODUCT :Internet Information Server
+PROD/VER:WINDOWS:1.0,1.0a
+OPER/SYS:
+KEYWORDS:mspwsw95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Personal Web Server versions 1.0, 1.0a for Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Personal Web Server cannot be used as a Gopher server.
+
+MORE INFORMATION
+================
+
+The Gopher protocol is a menu-based interface for opening resources on the
+Internet. The menus have the same function as hyperlinks on the Web.
+
+Personal Web Server supports only the Hypertext Transfer Protocol (HTTP) and File
+Transfer Protocol (FTP). There is no support for the Gopher protocol.
+
+Additional query words: 1.00 1.00a
+
+======================================================================
+Keywords          : mspwsw95 
+Technology        : kbPersWebServSearch kbZNotKeyword3 kbPersWebServ100Win95 kbPersWebServ100aWin95
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

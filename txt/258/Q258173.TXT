@@ -1,0 +1,90 @@
+DOCUMENT:Q258173  11-JAN-2001  [vbwin]
+TITLE   :BUG: Chart Control Axis Label's WordWrap Property Does Not Work
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbCtrl kbVBp kbVBp500bug kbVBp600bug kbGrpDSVB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Chart Control's axis label has a property named WordWrap. If this property
+is set to True, the label should have the word wrap effect. However, it does
+not.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a bug in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Standard EXE project with a default form. Form1 is created by
+   default.
+
+2. On the Project menu, click to select Components, choose Microsoft Chart
+   Control in the Components dialog box, and click OK.
+
+3. Add an instance of the Chart Control to Form1. Enlarge the Chart Control so
+   that its contents are easily visible, and then resize the form as needed.
+
+4. Add the following code to the Code window of Form1:
+
+   Private Sub Form_Load()
+        MSChart1.RowCount = 5
+        MSChart1.ColumnCount = 1
+
+        With MSChart1.Plot.Axis(VtChAxisIdX).Labels(1)
+            .Auto = False
+            .TextLayout.Orientation = VtOrientationHorizontal
+            .TextLayout.HorzAlignment = VtHorizontalAlignmentFill
+            .TextLayout.WordWrap = True
+        End With
+        
+        Dim i As Long
+        For i = 1 To MSChart1.RowCount
+           MSChart1.Row = i
+           MSChart1.RowLabel = "This is column number " & i
+        Next
+   End Sub
+
+5. Press the F5 key to run the application and note that the labels are not
+   wrapped. Instead, they are overlapped.
+
+Additional query words: WordWrap MSCHRT20.ocx
+
+======================================================================
+Keywords          : kbCtrl kbVBp kbVBp500bug kbVBp600bug kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,76 @@
+DOCUMENT:Q69927  02-NOV-1999  [win95x]
+TITLE   :PC Hangs with 8514/a Display and Printing to Banyan Network
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If Windows has been configured for an 8514/a display driver, printing to a
+printer across a Banyan Vines network causes a warning beep when the print job
+finishes and then the computer stops responding (hangs).
+
+RESOLUTION
+==========
+
+According to Banyan technical support, to avoid this problem you need to disable
+the Banyan Vines message option as follows:
+
+1. Log off from the Banyan Vines network.
+
+2. Place the following line in the Banyan Vines start up batch file anywhere
+   after the Login command:
+
+   z:\setmsgs off
+
+   If necessary, replace "z:\" with the path to the Setmsgs command.
+
+3. Start Banyan Vines and log on before entering Windows.
+
+NOTE: Another workaround to this problem is to configure Windows for the standard
+VGA display.
+
+MORE INFORMATION
+================
+
+With the Setmsgs command set to ON (default), the Banyan Network tries to send a
+message to line 25 on the display when a print job is finished. The print job
+still prints and the network print message informs you that the print job is
+finished; however, the machine locks up. Setting the "setmsgs off" disables this
+message. The network does NOT notify the workstation when the job is complete.
+
+Banyan Vines is manufactured by a vendor independent of Microsoft; we make no
+warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words: 3.00 3.0 3.0a 3.00a 3rdparty win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

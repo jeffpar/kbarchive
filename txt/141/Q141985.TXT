@@ -1,0 +1,63 @@
+DOCUMENT:Q141985  21-MAY-2001  [schedplus]
+TITLE   :Download of Time to Timex Watch Is Incorrect
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0,97,98; Win95:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0 
+ - Microsoft Outlook 97 
+ - Microsoft Outlook 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you download the time and time zone information to the Timex Data Link
+Watch, the time downloaded to the watch will not match the time that is shown on
+the computer.
+
+CAUSE
+=====
+
+By default, when you export to the Timex Data Link Watch, the watch gets the
+time from the computer prior to invoking the download routine. Depending on the
+amount of time for the download of information, the time setting on the watch
+may be from 5 seconds to 1 minute slower than the computer's time.
+
+WORKAROUND
+==========
+
+You can add the following command to the DATALINK.INI file located in the
+Windows directory to have a more accurate download:
+
+      [Settings]
+      SyncTime=1
+
+Additional query words: 7.00 office95 schedule plus
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOfficeSearch kbSQLServ700 kbScheduleSearch kbOutlook97Search kbOutlook98Search kbOffice95Search kbZNotKeyword3
+Version           : WINDOWS:7.0,97,98; Win95:7.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

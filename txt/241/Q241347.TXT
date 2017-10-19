@@ -1,0 +1,89 @@
+DOCUMENT:Q241347  27-AUG-2001  [odbc]
+TITLE   :FIX: Inserting/Updating Dates Before "01-01-1900" Into SQL
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER::2.1,2.5,2.6,2.7
+OPER/SYS:
+KEYWORDS:kbJDBC kbODBC kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbMDAC250bug kbMDAC260bug kbmdac270 kb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft ODBC for JDBC (Build 5.00.3591) 
+ - Microsoft Data Access Components versions 2.1, 2.5, 2.6, 2.7 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the Java Database Connectivity (JDBC) - Open Database Connectivity
+(ODBC) bridge to insert or update dates prior to "01-01-1900" into SQL server
+(version 6.5 and 7.0), the following error occurs consistently:
+
+   22008 [Microsoft][ODBC SQL Server Driver]Datetime field overflow.
+
+For those inserts or updates that are successful (for dates after 01-01-1900),
+truncation (of the datetime columns) occurs. So, when displaying the row in the
+database, the seconds and milliseconds portion of the datetime columns are
+always 0 (zero) even though the date/time fields that are bound have non-zero
+values for seconds and milliseconds.
+
+CAUSE
+=====
+
+The JDBC-ODBC bridge (msjdbc10.dll) is binding the datetime column incorrectly.
+
+RESOLUTION
+==========
+
+Microsoft has confirmed this to be a bug in the JDBC-ODBC bridge (Msjdbc10.dll,
+version 5.00.3155). This bug has been fixed in Microsoft VM for Java, builds
+3234 (which shipped with Microsoft Internet Explorer version 5.01 and Windows
+2000) and later.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+This problem happens when you use the latest JDBC-ODBC bridge (Msjdbc10.dll
+version 5.00.3155) and Microsoft Data Access Components (MDAC) 2.1 GA and later.
+Uninstalling MDAC 2.1 and re-installing MDAC 2.0 SP2 seems to fix the problem.
+
+You can use Microsoft Component Checker to uninstall any version of MDAC in a
+computer running Windows 95, Windows 98, or Windows NT.
+
+For detailed information on Component Checker see the following Microsoft Web
+site:
+
+   http://www.microsoft.com/data
+
+Additional query words: msjdbc10.dll, datetime binding
+
+======================================================================
+Keywords          : kbJDBC kbODBC kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbMDAC250bug kbMDAC260bug kbmdac270 kbmdac270bug 
+Technology        : kbAudDeveloper kbODBCSearch kbMDACSearch kbMDAC210 kbMDAC250 kbMDAC260
+Version           : :2.1,2.5,2.6,2.7
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

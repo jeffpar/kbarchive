@@ -1,0 +1,109 @@
+DOCUMENT:Q241904  29-SEP-1999  [exchange]
+TITLE   :XCON: Name Not Recognized NDR Sending Between Two Exchange Orgs
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0,5.5
+OPER/SYS:
+KEYWORDS:exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you send mail between two separate Exchange Server organizations connected by
+means of an X.400 Connector, you may receive an immediate non-delivery report
+(NDR) that contains text similar to the following:
+
+   -----Original Message-----
+   From: System Administrator
+   Sent: Thursday, September 16, 1999 11:58 AM
+   To: 'User, Joe'
+   Subject: Undeliverable: test
+
+   Your message did not reach some or all of the intended recipients.
+
+   Subject: test
+   Sent: 9/16/99 11:58 AM
+
+   The following recipient(s) could not be reached:
+
+   'User, Joe' on 9/16/99 11:58 AM
+   The recipient name is not recognized
+   The MTS-ID of the original message is: c=US;a=
+   ;p=Microsoft;l=SERVER01-990916155752Z-32651
+   MSEXCH:MSExchangeMTA:SITE01:SERVER01
+
+The local server's message transfer agent (MTA) generates the NDR immediately.
+
+CAUSE
+=====
+
+If you connect two separate Exchange Server organizations by means of an X.400
+Connector, directory information cannot be propagated. Therefore, custom
+recipients are used to represent the respective organization's users. You can
+manually create individual custom recipients, or use the bulk import and export
+feature to create multiple custom recipients.
+
+In certain situations, an Exchange Server mailbox may be created to represent a
+user in another organization (with the X.400 address properties of that
+organization) instead of a custom recipient. This may cause address routing
+problems and is the reason the above NDR occurs.
+
+Essentially, when a mailbox is created with the X.400 address properties of the
+organization you are connecting to, a second X.400 address proxy is created in
+the Site Addressing object. However, you cannot view this entry using the
+Exchange Server Administrator program.
+
+RESOLUTION
+==========
+
+To determine if a mailbox was created with the remote site's X.400 site address,
+perform the following steps:
+
+1. Export the global address list to a .csv file; on the Tools menu, click
+   Directory Export.
+
+2. Click Container, and then click Global Address List.
+
+3. Under Export objects, click to select only the Mailbox check box.
+
+4. Using Microsoft Excel, open the .csv file.
+
+5. Search the exported global address list for an X.400 address property that is
+   unique to the remote site, such as the "o=" or "p=" value.
+
+6. After you find the entry or entries, remove them, and create custom
+   recipients to replace them.
+
+7. Send a test message to a user on the remote site to verify that you no longer
+   receive the NDR.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

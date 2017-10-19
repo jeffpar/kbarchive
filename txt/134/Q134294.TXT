@@ -1,0 +1,67 @@
+DOCUMENT:Q134294  14-OCT-1999  [msnetwork]
+TITLE   :Compression and Decompression of Attached Files in a BBS
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:1.0,1.05,1.2,1.3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 1.0, 1.05, 1.2, 1.3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how The Microsoft Network compresses and decompresses
+files attached to bulletin board (BBS) messages.
+
+MORE INFORMATION
+================
+
+When you attach a file to a message and send it, the BBS editor scans the file
+header to see if the file has been compressed using PKZip. If the file is not
+compressed with PKZip, the BBS compresses the file automatically before sending
+the message. A file compressed with PKZip is sent unchanged.
+
+When you download files, The Microsoft Network automatically decompresses files
+that it automatically compressed. If the file was attached as a PKZip-compressed
+file, and the option to automatically decompress files is selected, then The
+Microsoft Network automatically decompresses the PKZip-compressed file.
+Otherwise, the file stays in a PKZip-compressed format, and you must decompress
+it.
+
+To set the option to automatically decompress files, use these steps:
+
+1. In the BBS window, on the Tools menu, click File Transfer Status.
+
+2. In the File Transfer Status window, on the Tools menu, click Options.
+
+3. Click the Automatically Decompress Files check box to select it.
+
+4. Click OK.
+
+Additional query words: 1.2 msn
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN130 kbMSN105 kbMSN120
+Version           : WINDOWS:1.0,1.05,1.2,1.3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

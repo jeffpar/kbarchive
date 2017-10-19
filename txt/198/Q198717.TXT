@@ -1,0 +1,64 @@
+DOCUMENT:Q198717  27-JUL-2001  [sms]
+TITLE   :SMS: Client Requirements for Remote Control
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbRemote kbsms200 kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Several steps must be taken to prepare clients for Remote Tools. Remote Tools
+can only be installed on the following clients: Microsoft Windows NT 3.51,
+Windows NT 4.0, Windows 2000, Windows 95, Windows 98, Windows for Workgroups, or
+Windows 3.11. These clients must be a discovered resource in the Systems
+Management Server site, and must have the core client components installed on
+them.
+
+MORE INFORMATION
+================
+
+Because Remote Tools are a client component that is not installed by default,
+the Remote Tools Client Agent, under Client Agents, must be set to "Enable
+remote tools on clients". A valid client installation method must already be in
+place and working.
+
+Note that during installation, when you initially enable remote tools on a client
+in the Client Agents section, Microsoft recommends that you review the options
+that are selected on the Advanced tab. These options cannot be changed later.
+When changes are made on the Advanced tab, they are not propagated to clients
+that already have the Remote Tools installed.
+
+IMPORTANT: You must be careful that you set these options correctly for the site,
+before you enable Remote Tools.
+
+Additional query words: prodsms rc32
+
+======================================================================
+Keywords          : kbRemote kbsms200 kbRemoteProg 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

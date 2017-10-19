@@ -1,0 +1,64 @@
+DOCUMENT:Q156812  13-JAN-2000  [exchange]
+TITLE   :XCLN: Running Exchange MS-DOS Client in Monitor Mode
+PRODUCT :Microsoft Exchange
+PROD/VER:MS-DOS:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange MS-DOS client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you start the Microsoft Exchange MS-DOS client in Monitor Mode by running
+Exchange -m, the client will start and then shell out to an MS-DOS command
+prompt. The Microsoft Exchange MS-DOS client is fully running at this time and
+can be accessed by pressing Alt+F1.
+
+If a MS-DOS batch file contains Exchange.exe -m, the commands following Exchange
+in the batch file will not be executed until the Microsoft Exchange client is
+exited. This behavior is by product design.
+
+To exit from Monitor Mode, follow these steps:
+
+1. Type "EXIT" (without the quotation marks) at the MS-DOS prompt. This will
+   return you to the Microsoft Exchange client.
+
+2. Choose Exit from the File menu of the Microsoft Exchange client. This will
+   close the Microsoft Exchange client and then continue to execute the batch
+   file.
+
+MORE INFORMATION
+================
+
+If you use the MS-DOS command prompt to run a terminate-and-stay-resident (TSR)
+programs from within Microsoft Exchange, they can cause unrecoverable errors. If
+you want to run a TSR program, you should first exit Microsoft Exchange.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchangeClientSearch kbZNotKeyword3 kbExchange400DOS kbExchange500DOS
+Version           : MS-DOS:4.0,5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

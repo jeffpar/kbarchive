@@ -1,0 +1,127 @@
+DOCUMENT:Q165111  19-DEC-1999  [exchange]
+TITLE   :XCON: Configuring X.400 Connector between Two Exchange Servers
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbsetup kbtshoot exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following checklist is intended as an aide in configuring X.400 connectivity
+between Microsoft Exchange Servers. This effort is not intended to replace
+observations on previously operational connections that may point to the actual
+problem, but rather, as a guide to succesful configuration of between Microsoft
+Exchange Message Transfer Agents (MTAs). The term 'server' refers to a Windows
+NT server that has Microsoft Exchange Server Enterprise Edition or Standard
+Edition with the X.400 connector installed.
+
+MORE INFORMATION
+================
+
+1. Can each server can ping the IP address of the other?
+   No - Resolve network issue.
+   Yes - If you want to use the server name versus the ip address proceed to step
+   2, otherwise proceed to step 3.
+
+2. If the server name will be used in lieu of the IP address of the target MTA,
+   ping the server name. Note: DNS will support server name resolution or a
+   lmhosts or hosts file may be used. The lmhosts and hosts files are located in
+   the 'winntdir'\system32\drivers\etc directory. The form for a lmhosts file is
+   ip address, tab, server name, tab, #PRE, and a tab followed by a
+   #DOM:domain_name if the server is a domain controller. The format for a hosts
+   file is IP address, a tab, and then the server name.
+
+   Did the server name return an ip address?
+   No - Resolve problem with name resolution.
+   Yes - Proceed to step 3.
+
+3. Have the administrator configuring a given MTA record the following
+   information for the MTA to which they desire to connect.
+
+   Remote Server name: This entry is not case sensitive and may not exceed 32
+   characters in length. This entry is the name of the NT server where the
+   target Microsoft Exchange Server is installed.
+
+   Remote MTA password: This entry is case sensitive and may not exceed a length
+   of 64 characters. If the other MTA has a password, you must enter it here.
+
+   For the simplest configuration, select the defaults, which is no password.
+
+4. T selector: This value is optional. This value is specified on the Outgoing
+   OSI address information of the Stack tab. The value cannot exceed 32 text
+   characters (64 HEX characters). By default, Microsoft Exchange uses the
+   value(s) specified in the Outgoing OSI address information for the value(s)
+   in the Incoming OSI address information. If a T selector is used, it is
+   critical that the value be an exact match with the corresponding value
+   specified for the T selector on the target Microsoft Exchange Server. If the
+   remote admin wants to specify a S selector and/or a P Selector, this should
+   be done after successful messaging has been established. The T, S, and P
+   selectors are supported between Microsoft Exchange Servers.
+
+5. Use the Overide tab to specify the Local MTA and Password. The MTA will use
+   the name of the NT server on which Microsoft Exchange Server is installed for
+   the MTA name. If no incoming password is desired, use of the Override Tab is
+   unnecessary. Using a password is redundant because the T selector provides
+   adequate security.
+
+6. Use the Connected Sites tab to configure the address space that will be
+   associated with the target Microsoft Exchange Server. The Address Space tab
+   should only be used on a Microsoft Exchange Server that connects to a foreign
+   MTA.
+
+   Start the Microsoft Exchange Administrator program and select the
+   Configuration object. Highlight the Site Addressing object in the right-hand
+   window and double-click it. Select the Routing tab and click Recalculate
+   Routing. This ensures that the routing table for the Site reflects current
+   changes.
+
+7. The information on the Advanced tab of the X.400 Connector should not require
+   modification.
+
+8. Make a custom recipient on both Servers or send a message to a user on the
+   foreign server using a 1-off address in the To: line.
+
+   Example of 1-off:
+
+   [x400:c=us;a=attmail;p=organization;o=locale;s=lastname;g=firstname]
+ 
+
+9. If the above test fails in either direction, highlight the Server object in
+   the Microsoft Exchange Administrator program. With the Server object
+   highlighted, open the File menu and select the Properties option. Select the
+   Diagnostics Logging tab and increase the MSExchangeMTA X.400,
+   Interoperablility, and APDU logging to Medium. This will result in increased
+   logging to the Bf0.log, Ev0.log and Ap0.log in the MTADATA directory.
+
+10. Repeat the send mail testing.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbtshoot exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

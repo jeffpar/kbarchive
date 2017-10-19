@@ -1,0 +1,97 @@
+DOCUMENT:Q136278  15-FEB-2000  [foxpro]
+TITLE   :BUG: Error When Using @ SAY to Play Sounds from General Field
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbvfp300bBUG kbvfp500aBUG kbvfp500bugkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the @ SAY command to play a sound that is stored in a general field
+in Visual FoxPro under Windows 95, one of the following errors occur:
+
+   "OLE error code 0x800101105: The server threw an exception"
+
+   -or-
+
+   "OLE error code 0x80080006: OLE service could not communicate with the object
+   server"
+
+If the general field is opened and the sound object is double-clicked, the sound
+will play.
+
+WORKAROUND
+==========
+
+To play the sound, open the general field, and click it. The sound cannot be
+played with the @ SAY command.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+To store sounds in a general field, open the general field, and then click Insert
+Object on the Edit menu. The following steps add a sound to a Visual FoxPro
+table, and produce the error.
+
+1. Create or open a table that has a general field.
+
+2. Browse the table and open the general field by clicking it or by selecting it
+   and pressing CTRL+PGDN.
+
+3. On the Edit menu, click Insert Object. Select Wave Sound from the Object Type
+   box.
+
+4. On the Sound Object box Edit menu, click Insert File, and select a wave file
+   to add to the general field.
+
+5. Close the Sound Object box. Save and close the general field.
+
+6. In the Command window, type this command:
+
+      @ 0,0 SAY <general field name> VERB 'PLAY'
+
+   The sound stored in the general field will start to play, but then the error
+   will occur. If you open the general field and click the sound, it will play
+   correctly.
+
+Additional query words: kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+Keywords          : kbvfp300bBUG kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

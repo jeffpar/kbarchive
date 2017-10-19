@@ -1,0 +1,77 @@
+DOCUMENT:Q180681  05-APR-2000  [sna]
+TITLE   :BUG: HRESULT 8000ffff When Creating Instance of COMTI Component
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft COM Transaction Integrator for CICS and IMS, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to create an instance of a COMTI component that is not assigned to
+a Remote Environment (RE), the runtime error
+
+   HRESULT 8000ffff (E_UNEXPECTED)
+
+is raised to the client application. COMTI writes a more descriptive error in the
+event log:
+
+   The COM Transaction Integrator component is not currently assigned to a
+   Remote Environment.
+
+The Prog ID and Class ID of the unassigned component are also included in the
+event log.
+
+CAUSE
+=====
+
+The error occurs because the COMTI component is not assigned to an RE.
+
+WORKAROUND
+==========
+
+To work around the problem, assign components to the appropriate (CICS LINK,
+CICS, IMS, and so forth) Remote Environment.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server 4.0. A supported fix
+is now available for SNA Server 4.0, but has not been fully regression-tested
+and should be applied only to systems experiencing this specific problem. Unless
+you are severely impacted by this specific problem, Microsoft recommends that
+you wait for the next Service Pack that contains this fix. Contact Microsoft
+Product Support Services for more information.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbCOMTISearch kbCOMTI100
+Version           : WINDOWS:1.0
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

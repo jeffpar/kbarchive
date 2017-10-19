@@ -1,0 +1,93 @@
+DOCUMENT:Q155054  07-DEC-2001  [ssafe]
+TITLE   :PRB: Visual SourceSafe Occasionally Saves .FRX File as Text
+PRODUCT :Microsoft SourceSafe
+PROD/VER:4.00
+OPER/SYS:
+KEYWORDS:kbVBp kbVBp400
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+-------------------------------------------------------------------------------
+
+*********************************************************************
+**                           - WARNING -                           **
+**     THE INFORMATION BELOW IS PRELIMINARY AND HAS NOT BEEN       **
+**     CONFIRMED, EDITED, OR TESTED BY MICROSOFT. USE ONLY         **
+**     WITH DISCRETION.                                            **
+*********************************************************************
+
+SYMPTOMS
+========
+
+Visual SourceSafe will sometimes save a Visual Basic form's binary file (.FRX)
+as text rather than binary, depending on the objects placed on the Visual Basic
+form.
+
+If this "text" version of the .FRX file is checked out, and the program is run or
+the form is modified, an "Illegal Operation" error will result in either
+OLE32.DLL, SSSCC.DLL or KERNEL32.DLL.
+
+NOTE: This problem is not reproducible in Visual Basic 4.0a/Visual SourceSafe
+4.0a.
+
+RESOLUTION
+==========
+
+To force a particular file type to be treated as binary, the following line
+should be added to the SRCSAFE.INI file on the server:
+
+      Binary_Masks = *.frx
+
+This .INI information can be added by using the "File Types" tab found by
+choosing Options from the Tools menu.
+
+STATUS
+======
+
+WARNING: The information in this article has not been confirmed or tested by
+Microsoft. Some or all of the information in this article has been taken from
+unconfirmed customer reports. ANY USE BY YOU OF THE INFORMATION PROVIDED IN THIS
+ARTICLE IS AT YOUR OWN RISK. Microsoft provides this information "as is" without
+warranty of any kind, either express or implied, including but not limited to
+the implied warranties of merchantability and/or fitness for a particular
+purpose.
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q132892 SourceSafe May Modify Some Files
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp kbVBp400 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe400 kbSSafe16bitSearch kbSSafe32bitSearch
+Version           : 4.00
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

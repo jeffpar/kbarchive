@@ -1,0 +1,70 @@
+DOCUMENT:Q198314  14-NOV-2000  [word97]
+TITLE   :WD97: VBA Editor Takes Longer to Start Than Word Basic Editor
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+In versions of Word that use Visual Basic for Applications, you may have to wait
+a few seconds before you can start typing macro code in the Visual Basic Editor.
+By contrast, in earlier versions of Word, you can start typing macro code almost
+instantaneously.
+
+CAUSE
+=====
+
+In versions of Word earlier than Word 97 for Windows, you create macros in the
+WordBasic macro-editing window. This editing window does not need to be
+initialized.
+
+In versions of Word that use Visual Basic for Applications, you create macros in
+the Visual Basic Editor. When you invoke the Visual Basic Editor, it must first
+be initialized, and Visual Basic for Applications projects must be created (if
+they have not been initialized or created previously). This initialization
+process takes a few seconds.
+
+MORE INFORMATION
+================
+
+To create a new macro in Word, follow these steps:
+
+1. On the Tools menu, point to Macros, and then click Macro.
+
+2. In the Macro Name box, type a name for your macro.
+
+3. Click Create.
+
+Additional query words: OFF98
+
+======================================================================
+Keywords          : word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

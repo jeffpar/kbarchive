@@ -1,0 +1,103 @@
+DOCUMENT:Q200292  07-MAY-2001  [visualc]
+TITLE   :FIX: Interfaces Not Released by _com_ptr_t::CreateInstance()
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbCOMt kbVC500bug kbVC600fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Smart pointers object creation (using _com_ptr_t::CreateInstance() ) does not
+release interface pointers to local or remote servers on failure.
+
+RESOLUTION
+==========
+
+For local and remote servers, use the CoCreateInstance() API instead of the
+function, _com_ptr_t::CreateInstance(). Then use the smart pointer wrapper to
+call methods on the object by calling _com_ptr_t::Attach(). Once the smart
+pointer goes out of scope, Release() is called for the interface pointer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Microsoft Visual C++, version 6.0.
+
+MORE INFORMATION
+================
+
+For local and remote servers, call CoCreateInstance() directly, as in the
+following sample code:
+
+   HRESULT hr = CoCreateInstance(..., ..., IID_IUnknown, (LPVOID*)&pUnk);
+   if (FAILED(hr))
+       //Do error handling.
+
+   hr = OleRun(pUnk);
+
+   if (FAILED(hr)) {
+       pUnk->Release();
+       //Do error handling
+   }
+
+   // Query for the required interface, such as IFoo.
+   hr = pUnk->QueryInterface( IID_IFoo, pFoo);
+
+   if (FAILED(hr)) {
+       pUnk->Release();
+       //Do error handling
+   }
+
+Once you have the interface, you can use the smart pointer wrapper by calling
+_com_ptr_t::Attach(), as in the following sample code:
+
+   // Declare the smart pointer for the IFoo interface.
+   IFooPtr m_pFoo;
+
+   // Attach the raw interface pointer which you got above
+   // to the smart pointer wrapper.
+   m_pFoo.Attach(pFoo);
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by Jaganathan
+Thangavelu, Microsoft Corporation.
+
+
+Additional query words: Smart pointers
+
+======================================================================
+Keywords          : kbCOMt kbVC500bug kbVC600fix 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

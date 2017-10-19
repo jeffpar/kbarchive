@@ -1,0 +1,64 @@
+DOCUMENT:Q59963  26-JUN-2001  [utilities]
+TITLE   :PRB: CodeView Does Display Source File Contents
+PRODUCT :Microsoft Programming Utilities
+PROD/VER::3.0,3.05,3.06,3.07,3.11,3.14,4.0,4.01,4.05,4.1
+OPER/SYS:
+KEYWORDS:kbCodeView kbDebug kbVC kbprb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft CodeView for MS-DOS, versions 3.0, 3.11, 3.14, 4.0, 4.01, 4.05, 4.1 
+ - Microsoft CodeView for Windows, versions 3.0, 3.05, 3.06, 3.07, 4.0, 4.01, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An attempt to open a source code file in CodeView fails. CodeView version 4.0
+sounds the system bell and refuses to load the source code file. CodeView
+versions 3.x displays the application in assembly language mode.
+
+CAUSE
+=====
+
+The first line of the source code file contains extended ASCII characters (ASCII
+codes 0-8, 11, 14-31, or 127-255).
+
+RESOLUTION
+==========
+
+To use extended characters in your source file, begin the file with a blank
+line.
+
+MORE INFORMATION
+================
+
+Even though CodeView does not display an application's source code when the
+source contains extended ASCII characters, you can use CodeView to debug the
+application in assembly language mode.
+
+Additional query words: 3.00 3.50 4.00 4.10
+
+======================================================================
+Keywords          : kbCodeView kbDebug kbVC kbprb 
+Technology        : kbAudDeveloper kbCodeView kbZNotKeyword3 kbCodeView300DOS kbCodeView311DOS kbCodeView314DOS kbCodeView400DOS kbCodeView401DOS kbCodeView405DOS kbCodeView410DOS kbCodeView300 kbCodeView305 kbCodeView306 kbCodeView307 kbCodeView400 kbCodeView401 kbCodeView410
+Version           : :3.0,3.05,3.06,3.07,3.11,3.14,4.0,4.01,4.05,4.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

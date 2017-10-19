@@ -1,0 +1,95 @@
+DOCUMENT:Q193577  01-MAY-2001  [ssafe]
+TITLE   :HOWTO: Pin Multiple Files in Visual SourceSafe
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:_IK kbSSafe400 kbSSafe500 kbSSafe600 kbSSExplorer
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 4.0a, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By design, Visual SourceSafe does not allow you to pin multiple files from
+Visual SourceSafe Explorer. You can pin multiple files from the command prompt
+using the following command:
+
+   ss pin <path to the files> -V#
+
+MORE INFORMATION
+================
+
+Step-by-Step Procedures
+-----------------------
+
+To pin an individual file, type the following command at the command prompt:
+
+   ss pin $/project1/first.doc -V1
+
+RESULT: This pins the file first.doc at version 1.
+
+To pin multiple files, separate the file names with a space as follows:
+
+   ss pin $/project1/first.doc $/project1/project11/second.doc -V1
+
+RESULT: This pins the files first.doc in project1 and second.doc in project11 at
+version 1.
+
+You can also pin files using wildcard specifications as follows:
+
+   ss pin $/project1/*.doc -V1
+
+RESULT: This pins all the document files under project1 at version 1. Also, you
+can use the *.* wildcard to pin all the files under project1.
+
+To pin the files in the subprojects as well, you have to select the Recursive
+option. To do this, go to the Tools menu, click Options, and select the Act on
+projects recursively check box on the General tab. This adds a line "Recursive =
+Yes" in the ss.ini for the current user.
+
+NOTE: The recursive option is set only after you make the changes and close
+Visual SourceSafe Explorer.
+
+After you set the recursive option, type the following command:
+
+   ss pin $/project1/*.* -V1
+
+RESULT: This pins all files in project1 and its subprojects at version 1.
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q169257 INFO: Actions That Perform an Implicit GET
+
+   Q157527 INFO: New Visual SourceSafe Commands and Functionality
+
+Additional query words:
+
+======================================================================
+Keywords          : _IK kbSSafe400 kbSSafe500 kbSSafe600 kbSSExplorer 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400a kbSSafe500
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

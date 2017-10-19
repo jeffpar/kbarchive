@@ -1,0 +1,60 @@
+DOCUMENT:Q47724  28-SEP-2001  [visualc]
+TITLE   :INFO: No Network License Agreements on MS Language Products
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5,2.1,2.2,4.0,4.1,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbsetup kbVC100 kbVC150 kbVC210 kbVC220 kbVC400 kbVC410 kbVC500 kbVC600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft C for MS-DOS 
+ - Microsoft C for OS/2 
+ - Microsoft C/C++ for MS-DOS 
+ - Microsoft Visual C++, versions 1.0, 1.5, 2.1, 2.2, 4.0, 4.1 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Network license agreements do not exist for any Microsoft language products.
+These agreements are currently available only for our application products.
+
+According to the licensing agreement printed on the envelope that contains the
+disks, our languages are licensed as single-user, single-workstation products
+and cannot be used by more than one user simultaneously. The agreement does
+allow users to share the software if they run it off the same workstation at
+different times.
+
+Microsoft C/C++ version 7.0 and Microsoft Visual C++ may be placed on a network
+drive and shared by multiple users. However, the number of users who access the
+network copy must never exceed the number of copies licensed by the owner of the
+network.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbVC100 kbVC150 kbVC210 kbVC220 kbVC400 kbVC410 kbVC500 kbVC600 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbZNotKeyword8 kbvc150 kbvc100 kbCCompSearch kbVC220 kbZNotKeyword3 kbVC410 kbVC500 kbVC600 kbVC210 kbVC32bitSearch kbVC500Search
+Version           : :1.0,1.5,2.1,2.2,4.0,4.1,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

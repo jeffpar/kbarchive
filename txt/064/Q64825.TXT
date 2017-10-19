@@ -1,0 +1,64 @@
+DOCUMENT:Q64825  10-DEC-1999  [win95x]
+TITLE   :Windows 3.0 Support for the Tektronix Printers
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Currently, there are Windows 3.0 drivers for four Tektronix printer models: the
+4693DX, the Phaser IIDX, the Phaser IISX, and the 4697.
+
+MORE INFORMATION
+================
+
+Printer drivers for the Tektronix printer models 4693DX, Phaser IIDX, and Phaser
+IISX are supplied by Zenographics. The driver for the 4697 is available from
+Tektronix. The part number is #063-0570-00.
+
+The driver for the Tektronix 4697 printer supports scalable fonts in all modes of
+Windows, provided the application being run supports them or you have a scalable
+font package such as Adobe Type Manager (ATM) or Bitstream FaceLift. This driver
+also makes use of available bitmap fonts.
+
+There is no Windows 3.0 driver for the Tektronix 4696 printer and Tektronix does
+not guarantee that the 4697 driver works with this printer.
+
+For more information, contact Zenographics and Tektronix.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+
+Additional query words: 3.00 3.0 3.0a 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

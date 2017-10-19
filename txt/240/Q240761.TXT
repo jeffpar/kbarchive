@@ -1,0 +1,57 @@
+DOCUMENT:Q240761  04-SEP-1999  [sna]
+TITLE   :LUA Security Does Not Apply to TN3270 LUA LUs
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+On the Security tab of the SNA Server subdomain, an LUA check box exists to
+allow user-validated security for LUA applications. However, this does not apply
+to TN3270 LUA LUs. Even though TN3270 LUA LUs can be assigned to users in SNA
+Server Manager, no user validation will occur.
+
+MORE INFORMATION
+================
+
+TN3270 uses Telnet to communicate between the client and the server by
+encapsulating 3270 data in Telnet sessions to the TN3270 Service. Telnet is a
+TCP/IP protocol that uses IP addressing to determine the source and destination
+of packets. No user credentials are passed to the TN3270 Service for validation.
+
+REFERENCES
+==========
+
+   Q190446 Restricting Access to TN3270 LUs
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3
+Version           : WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

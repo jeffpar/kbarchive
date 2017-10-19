@@ -1,0 +1,59 @@
+DOCUMENT:Q100408  30-JUL-2001  [win16sdk]
+TITLE   :DOC: Incorrect Documentation for LineDDA Function
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbdocfix kbDSupport kbSDKWin16 kb16bitonly
+
+======================================================================
+3.10
+WINDOWS
+kbprg kbdocerr
+
+SUMMARY
+=======
+
+On page 568 of the Microsoft Windows Software Development Kit (SDK)
+"Programmer's Reference, Volume 2: Functions" manual, the documentation for
+LineDDA incorrectly describes the lParam parameter. The explanation for lParam
+reads:
+
+   lParam
+
+      Points to 32 bits of application-defined data that is passed
+      to the callback function.
+
+The description of the lParam parameter should read as follows:
+
+   lParam
+
+      Specifies a 32-bit application-defined value that LineDDA passes
+      to the callback function.
+
+MORE INFORMATION
+================
+
+An application calling LineDDA can pass more than 32 bits of data to the
+callback function by allocating a buffer and passing a pointer to the buffer in
+lParam.
+
+Additional query words: 3.10 docerr
+
+======================================================================
+Keywords          : kbdocfix kbDSupport kbSDKWin16 kb16bitonly 
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

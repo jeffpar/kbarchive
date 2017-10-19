@@ -1,0 +1,86 @@
+DOCUMENT:Q192868  03-SEP-1999  [sms]
+TITLE   :SMSINST: Services Not Installed with Repackage of Norton AV 4.0
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:smsinst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server Installer version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using Systems Management Server Installer 1.0 to repackage Norton Antivirus
+4.0 for Windows NT 4.0, some services do not appear to be installed correctly.
+
+CAUSE
+=====
+
+Systems Management Server Installer writes incorrect security information is
+written to the registry under
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\. This causes kernel mode
+driver services related to Norton Anti-Virus to fail at startup. This is due to
+the Repackage process in Systems Management Server Installer capturing
+installation-specific security information for the reference computer. This
+information is invalid for target systems; the Create Service driver will
+correctly create this information for each target system at run-time.
+
+WORKAROUND
+==========
+
+To work around this problem, perform the following steps:
+
+1. After the repackage, but before compiling, modify the Edit Registry action in
+   the Script Editor view of the Systems Management Server Installer. You should
+   modify this script item so that it does not write to the registry keys under
+   HKLM\System\CurrentControlSet\Services related to Norton Anti-Virus services.
+   The Create Service script action takes care of creating these keys.
+
+2. Complete by compiling and installing on a clean computer.
+
+After performing these steps, note that the services, including the SYMEVENT
+kernel driver service, now start properly.
+
+MORE INFORMATION
+================
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+Installer version 1.0.
+
+Additional query words: prodsms AV NAV
+
+======================================================================
+Keywords          : smsinst 
+Technology        : kbSMSSearch kbSMSI100
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

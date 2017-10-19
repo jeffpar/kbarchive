@@ -1,0 +1,70 @@
+DOCUMENT:Q276351  12-NOV-2001  [homegame]
+TITLE   :Microsoft Casino: Cannot Disable Full Screen Mode
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Casino, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click to clear the Full Screen Mode check box in the Game Options
+screen in Microsoft Casino, the game may start in Full Screen mode.
+
+If you return to the Game Options screen, the Full Screen Mode check box is
+selected.
+
+CAUSE
+=====
+
+This behavior can occur if the screen resolution setting for your computer is
+set to 800 by 600 pixels or lower.
+
+RESOLUTION
+==========
+
+To resolve this issue, increase the screen resolution setting for your computer.
+To do this:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Display.
+
+3. Click the Settings tab.
+
+4. Move the "Screen area" slider or the "Desktop area" slider to the right to
+   increase your screen resolution to a setting larger than 800 by 600 pixels.
+
+5. Click OK. When you are prompted to accept the new screen resolution setting,
+   click Yes.
+
+Additional query words: 1.00 msgame mscasino entire monitor
+
+======================================================================
+Keywords          : kbdisplay kbimu msgame 
+Technology        : _IKkbbogus kbHomeMMsearch kbGamesSearch kbCasino
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

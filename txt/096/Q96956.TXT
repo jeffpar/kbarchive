@@ -1,0 +1,65 @@
+DOCUMENT:Q96956  17-DEC-2000  [msdos]
+TITLE   :MS-DOS 6 Err Msg: The MS-DOS Setup Was Not Completed...
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error message occurs when MS-DOS 6.x Upgrade has not been
+successfully installed:
+
+   The MS-DOS Setup was not completed Insert the UNINSTALL #1 diskette in drive
+   A
+   Press the ENTER key to continue
+
+CAUSE
+=====
+
+If you cannot recover from this situation by restarting your computer with the
+Uninstall disk in drive A, your CMOS settings may be configured to search drive
+C for the MS-DOS system files.
+
+Traditionally, the computer BIOS attempts to start MS-DOS from drive A and then
+searches drive C if no disk is in drive A. However, some newer AMI BIOS chips
+allow you to start your computer from drive C without first looking to drive A.
+This is incompatible with the MS-DOS 5 and later upgrade uninstall technology.
+
+WORKAROUND
+==========
+
+To work around this problem, modify your CMOS settings to check for a boot disk
+in drive A before attempting to boot from drive C.
+
+
+Additional query words: 6.22 5.00 5.00a 6.00 6.20 a: c: bootup startup bootstrap strap look to
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

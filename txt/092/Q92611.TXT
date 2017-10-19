@@ -1,0 +1,171 @@
+DOCUMENT:Q92611  06-MAY-2001  [masm]
+TITLE   :PRB: MASM Generates Unexpected Prefix Bytes 66h, 67h
+PRODUCT :Microsoft Macro Assembler
+PROD/VER::5.0,5.1,5.1a,6.0,6.0a,6.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 5.0, 5.1, 5.1a, 6.0, 6.0a, 6.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the .386, .386p, .486, or .486p directive is used in MASM, the source code
+listing or the mixed source and assembly code listing in the CodeView debugger
+may indicate that code for 32-bit instructions has been generated incorrectly.
+For example, when either of the following instructions is assembled, the prefix
+bytes 66h and 67h may or may not appear before the instruction opcode:
+
+   mov eax, [ebx]
+   mov ax, [bx]
+
+CAUSE
+=====
+
+The 386 and 486 processors can operate with either 32-bit operations or 16- bit
+operations as the default mode. The descriptor for each memory segment controls
+the default mode for operations in the segment. In either mode, a prefix byte
+(66h or 67h) at the beginning of an instruction overrides the default mode for
+the current memory segment for a given instruction. In other words, when the
+processor encounters a prefix byte on an instruction in a 16-bit segment, the
+instruction executes as a 32-bit operation.
+
+The condition described above occurs when the source code indicates that a code
+segment is a 16-bit segment or a 32-bit segment, and the segment loaded into
+memory is of the opposite type.
+
+RESOLUTION
+==========
+
+When MASM assembles a file that uses full segment directives, it treats all
+segments as 32-bit segments and all operations as 32-bit operations. To change
+this treatment, specify the USE16 modifier for each SEGMENT directive that
+describes a 16-bit segment. In MASM version 6.0 or later, the OPTION
+SEGMENT:USE16 directive specifies that all segments are 16-bit segments.
+
+When MASM assembles a file that uses simplified segment declarations, it treats
+all segments as 32-bit segments when a .386, .386p, .486, or .486p processor
+directive precedes the .MODEL statement. If the processor directive follows the
+.MODEL statement, MASM treats all segments as 16-bit segments and all operations
+as 16-bit operations.
+
+MORE INFORMATION
+================
+
+Note that to run code in 32-bit segments, the operating system with which the
+application runs support 32-bit code segments. Most PC-based operating systems,
+including MS-DOS version 5.0, Microsoft Windows version 3.1, and OS/2 versions
+1.x do not support 32-bit code segments. Later versions of operating systems and
+MS-DOS extender programs may provide this support.
+
+For more information on the differences between 16-bit and 32-bit segments, refer
+to chapter 16 of the "Intel 80386 Programmer's Reference Manual" (1986
+edition).
+
+The following code samples demonstrate this problem when CodeView for MS-DOS is
+used to debug these programs.
+
+Sample Code
+-----------
+
+   ; Assembler options needed: /Zi
+
+   .386
+   DOSSEG                           ; Force DOS segment order
+   DGROUP GROUP _DATA, STACK        ; Stack and data in DGROUP
+
+   STACK SEGMENT PARA STACK 'STACK'
+       DB 100h DUP (?)              ; 256-byte stack
+   STACK ENDS
+
+   _DATA SEGMENT WORD PUBLIC 'DATA' ; Data segment with string data
+   msg DB "Hello, world.", 13, 10, "$"
+   _DATA ENDS
+
+   _TEXT SEGMENT WORD PUBLIC 'CODE' ; Code segment
+   ASSUME cs:_TEXT, ds:DGROUP, ss:DGROUP
+
+   start:
+       mov ax, DGROUP               ; Initialize data segment
+       mov ds, ax
+
+       cli                          ; Turn off interrupts
+       mov ss, ax                   ; Make SS and
+       mov sp, OFFSET STACK         ;   SP relative to DGROUP
+       sti                          ; SS now equals DS
+
+       mov ah, 9h                   ; Request DOS Function 9
+       mov dx, OFFSET msg           ; Load DX with offset of string
+                                    ;   (segment already in DS)
+       int 21h                      ; Display String to Standard Output
+
+       mov ax, 4C00h                ; Exit functions with 0 in AL
+       int 21h                      ; Terminate Process with Return Code
+
+   _TEXT ENDS
+
+   END start                        ; End with reference to first
+                                    ;   executable statement (CS:IP)
+
+Sample Code
+
+-----------
+
+   ; Assembler options needed: /Zi
+
+   .386
+   .MODEL small, c                  ; Small model (could be any model)
+
+   .STACK 100h                      ; 256-byte stack
+
+   .DATA                            ; Data segment
+   msg DB "Hello, world.", 13, 10, "$"
+
+   .CODE                            ; Code segment
+   start:
+       mov ax, DGROUP               ; Initialize data segment
+       mov ds, ax
+
+       cli                          ; Turn off interrupts
+       mov ss, ax                   ; Make SS and
+       mov sp, OFFSET STACK         ;   SP relative to DGROUP
+       sti                          ; SS now equals DS
+
+       mov ah, 9h                   ; Request DOS Function 9
+       mov dx, OFFSET msg           ; Load DX with offset of string
+                                    ;   (segment already in DS)
+       int 21h                      ; Display String to Standard Output
+
+       mov ax, 4C00h                ; Exit functions with 0 in AL
+       int 21h                      ; Terminate Process with Return Code
+
+   END start                        ; End with reference to first
+                                    ;   executable statement (CS:IP)
+
+Additional query words: 5.00 5.10 5.10a 6.00 6.00a 6.00b illegal instruction hang
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM510 kbMASM600 kbMASM500 kbMASM600a kbMASM510a kbMASM600b
+Version           : :5.0,5.1,5.1a,6.0,6.0a,6.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,92 @@
+DOCUMENT:Q185156  14-NOV-2000  [word97]
+TITLE   :WD97: Spelling Checker Deletes Tab/Spaces from Paragraph Start
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta kbproof word8 word97
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you correct a misspelled word in the "Not in Dictionary" box of the
+"Spelling and Grammar" dialog box and then click Change, tabs or spaces that
+were typed at the beginning of the paragraph may be deleted.
+
+RESOLUTION
+==========
+
+To prevent this problem from occurring, turn on the "Tabs and backspace set left
+indent" option. When you use this option (which is turned on by default), when
+you type a tab at the beginning of a paragraph, the tab is converted to a left
+paragraph indent. When you check the spelling of your document, the indents are
+not deleted.
+
+NOTE: Tabs that are typed at the start of a paragraph before this option is
+turned on will not be affected by this option. Any new tabs typed at the start
+of a paragraph will be changed to a left paragraph indent.
+
+To turn on the "Tabs and backspace set left indent" option, use the following
+steps:
+
+1. On the Tools menu, click Options.
+
+2. On the Edit tab, select the "Tabs and backspace set left indent" check box,
+   and then click OK.
+
+WORKAROUND
+==========
+
+To correct the spelling mistake, use one of the following methods.
+
+Method 1: Use One of the Suggestions
+------------------------------------
+
+In the "Spelling and Grammar" dialog box, select one of the words in the
+Suggestions box, and then click Change.
+
+Method 2: Make the Spelling Correction in the Document
+------------------------------------------------------
+
+With the "Spelling and Grammar" dialog box open, click in your document, correct
+the spelling mistake, and then click Resume to continue to check the spelling of
+your Word document.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This problem was corrected in Microsoft
+Word 2000.
+
+Additional query words: remove missing gone omit
+
+======================================================================
+Keywords          : kbdta kbproof word8 word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

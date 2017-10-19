@@ -1,0 +1,72 @@
+DOCUMENT:Q254101  08-AUG-2001  [winnt]
+TITLE   :Network Adapter Teaming and Server Clustering
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000,4.0
+OPER/SYS:
+KEYWORDS:kbhw kbHardware w2000mscs kbClustering
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Datacenter Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are network adapters and accompanying drivers available from some hardware
+manufacturers to provide fault tolerance. This technology allows you to group
+network adapter ports for a connection to a single physical segment. If
+connectivity through one port is not working, another port is activated
+automatically. This operation is transparent to the operating system and other
+devices on the network.
+
+Support for the fault-tolerant technology (the hardware and the drivers) is
+provided by the hardware manufacturer.
+
+MORE INFORMATION
+================
+
+The use of teaming on the private interconnect of a server cluster is not
+supported because of delays that could possibly occur in the transmission and
+receipt of heartbeat packets between the nodes. For best results when you want
+redundancy for the private interconnect, disable teaming and use the available
+ports to form a second private interconnect. This achieves the same end result
+and provides dual, robust communication paths for the nodes to communicate
+over.
+
+Using teaming on the public or client networks is acceptable. However, if
+problems or issues seem to be related to teaming, Microsoft Product Support
+Services will require that teaming be disabled. If this resolves the problem or
+issue, you must seek assistance from the hardware manufacturer.
+
+
+For more information, see the online documentation about hardware compatibility
+tests on the Microsoft Web site.
+
+Additional query words: mscs nic teaming compaq server cluster netflex
+
+======================================================================
+Keywords          : kbhw kbHardware w2000mscs kbClustering 
+Technology        : kbWinNTsearch kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000DataServ kbwin2000DataServSearch kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbwin2000Search kbWinAdvServSearch kbWinDataServSearch
+Version           : :2000,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

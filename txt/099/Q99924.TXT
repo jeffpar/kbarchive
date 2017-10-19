@@ -1,0 +1,65 @@
+DOCUMENT:Q99924  23-NOV-1999  [msdos]
+TITLE   :Inaccurate DoubleSpace Help Message: There Is No Disk in...
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If DoubleSpace finds a disk in drive A while examining the system before
+beginning compression, it displays the following message:
+
+   If the power fails during this operation, DoubleSpace will recover
+   automatically and restart your computer. To make sure your computer restarts
+   properly, remove the floppy disk from drive A, and then choose the Retry
+   button.
+
+If you press the F1 function key at this point, DoubleSpace displays the
+following inaccurate help message:
+
+   There is no disk in the drive you selected.
+
+   To continue, insert the disk in the drive, and then choose the Retry button.
+
+STATUS
+======
+
+This problem was corrected in later versions of MS-DOS.
+
+WORKAROUND
+==========
+
+The actual solution to this problem is to remove the disk from drive A, as is
+reflected in the original error message.
+
+Additional query words: 6.00 dblspace double space
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

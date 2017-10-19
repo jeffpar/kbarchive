@@ -1,0 +1,59 @@
+DOCUMENT:Q201812  03-JUN-1999  [sms]
+TITLE   :SMS: NetWare Users Do Not Have Rights to the SMSLOGON Directory
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbBindery kbOSNovell
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+A NetWare user that is logging onto a NetWare 4.x server using bindery emulation and does not have the security equivalence of administrator, may not have rights to the SMSLOGON directory on the NetWare Client Access Point.
+
+By default, the NetWare Everyone group has access to the SMSLOGON directory. The Everyone group is not created by default in bindery context on a NetWare 4.x server.
+
+In order for users to successfully run the Smsls.scr from the logon script, the Everyone group must be created in the bindery context (the user is a member of the Everyone group automatically if the Everyone group exists).
+
+
+SUMMARY
+=======
+
+If after logging onto the server you attempt to view the available folders on
+the NetWare server you will find that SMSLOGON is not one of them. This folder
+is only available if you have administrator security equivalence. This is a
+known issue.
+
+MORE INFORMATION
+================
+
+Please refer to the Novell NetWare documentation for information on how to
+create user groups.
+
+Additional query words: prodsms nwroles sms20
+
+======================================================================
+Keywords          : kbsms200 kbBindery kbOSNovell 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

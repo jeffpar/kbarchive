@@ -1,0 +1,154 @@
+DOCUMENT:Q173132  10-AUG-2001  [winnt]
+TITLE   :Replacing Missing Control Panel Icons
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51,4.0
+OPER/SYS:
+KEYWORDS:kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Some of the default Microsoft Windows NT Control Panel icons may be missing.
+
+CAUSE
+=====
+
+This problem can occur when the *.cpl file that displays the icon either becomes
+corrupt or is deleted by accident.
+
+RESOLUTION
+==========
+
+Copy or expand the *.cpl files from the original installation location, such as
+the Windows NT CD-ROM.
+
+Windows NT 3.51
+---------------
+
+Copy the *.cpl file from the Microsoft Windows NT 3.51 CD to the
+%SystemRoot%\System32 directory.
+
+Windows NT 4.0
+--------------
+
+Expand the *.cpl file from the Microsoft Windows NT 4.0 CD. The following example
+demonstrates how to expand the file Access.cpl from the Microsoft Windows NT 4.0
+CD into the C:\Winnt\System32 directory:
+
+Expand D:\I386\ACCESS.CP_ C:\WINNT\SYSTEM32\ACCESS.CPL
+
+For information on how to manually open the Control Panel folders, please see the
+following article in the Microsoft Knowledge Base:
+
+ARTICLE-ID: Q180025
+TITLE : How to Open Control Panel Folders from the Command Prompt
+
+Type the following at a command prompt to reregister the icons:
+
+rundll32.exe shell32.dll,Control_FillCache_RunDLL
+
+NOTE: This line is case sensitive. Type it exactly as shown.
+
+MORE INFORMATION
+================
+
+The following table lists the most common Microsoft Windows NT Control Panel
+icons and the accompanying *.cpl files:
+
++--------------------------------------+
+| Icon                  | File Name    | 
++--------------------------------------+
+| Accessibility Options | Access.cpl   | 
++--------------------------------------+
+| Add/Remove Programs   | Appwiz.cpl   | 
++--------------------------------------+
+| MSDOS Console         | Console.cpl  | 
++--------------------------------------+
+| Date/Time             | Timedate     | 
++--------------------------------------+
+| Display               | Desk.cpl     | 
++--------------------------------------+
+| Find Fast             | Findfast.cpl | 
++--------------------------------------+
+| Fonts                 | Main.cpl     | 
++--------------------------------------+
+| GSNW                  | Nwc.cpl      | 
++--------------------------------------+
+| Intel Pro Set         | Proset.cpl   | 
++--------------------------------------+
+| Internet              | Inetcpl.cpl  | 
++--------------------------------------+
+| KEYBOARD              | Main.cpl     | 
++--------------------------------------+
+| Licensing             | Liccpa.cpl   | 
++--------------------------------------+
+| Macfile               | Sfmmgr.cpl   | 
++--------------------------------------+
+| Mail and Fax          | Mlcfg32.Cpl  | 
++--------------------------------------+
+| Modems                | Modem.cpl    | 
++--------------------------------------+
+| Mouse                 | Main.cpl     | 
++--------------------------------------+
+| Multimedia            | Mmsys.cpl    | 
++--------------------------------------+
+| Network               | Ncpa.cpl     | 
++--------------------------------------+
+| ODBC32                | Odbccp32.cpl | 
++--------------------------------------+
+| PCCard                | Devapps.cpl  | 
++--------------------------------------+
+| Ports                 | Ports.cpl    | 
++--------------------------------------+
+| Printers              | Main.cpl     | 
++--------------------------------------+
+| Regional Settings     | Intl.cpl     | 
++--------------------------------------+
+| SCSI Adapters         | Devapps.cpl  | 
++--------------------------------------+
+| Server                | Srvmgr.cpl   | 
++--------------------------------------+
+| Sounds                | Mmsys.cpl    | 
++--------------------------------------+
+| System                | Sysdm.cpl    | 
++--------------------------------------+
+| Tape Devices          | Devapps.cpl  | 
++--------------------------------------+
+| Telephony             | Telephon.cpl | 
++--------------------------------------+
+| UPS                   | Ups.cpl      | 
++--------------------------------------+
+NOTE: The Srvmgr.cpl file is also responsible for the Services and Devices icon
+in Control Panel.
+
+Additional query words: applets cpl
+
+======================================================================
+Keywords          : kbui 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,62 @@
+DOCUMENT:Q160046  08-NOV-2001  [homekids]
+TITLE   :Play It!: Space Bar and Mouse May Cause Stuck MIDI Notes
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Plus! for Kids, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the Play It! component of Microsoft Plus! For Kids, if you press the SPACEBAR
+key and use the mouse simultaneously, you can get stuck MIDI notes. Because the
+keyboard is used for playing music in Play It!, this is a likely scenario.
+
+RESOLUTION
+==========
+
+To workaround stuck MIDI notes in Play It!:
+
+1. Press the DELETE Key to stop the notes.
+
+   -or-
+
+2. Minimize, then maximize Play It! to clear the notes.
+
+   -or-
+
+3. Press Start, then Stop to clear the notes.
+
+   -or-
+
+4. Close and re-open the Play It! application.
+
+Additional query words: kids mskids artist maggie max writer cw2 cw2.0 kidsplus kidsplus! pack plus plus!
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : _IKkbbogus kbGamesSearch kbPlusKids kbPlusSearch
+Version           : 1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

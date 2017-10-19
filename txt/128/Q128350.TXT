@@ -1,0 +1,59 @@
+DOCUMENT:Q128350  08-AUG-2001  [winnt]
+TITLE   :Configuring Network Client for Validation Across Routers
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.00 3.50
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Network Client for MS-DOS version 3.0 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+To allow a computer running Microsoft Network Client for MS-DOS to be
+validated by a primary domain controller (PDC) across a router:
+
+1. Run Network Client for MS-DOS Setup and install TCP/IP.
+
+2. Make sure that the following entries are present in the [Network] section of
+   the SYSTEM.INI file located in the Network Client for MS-DOS subdirectory
+   (typically C:\NET):
+
+   lmlogon=1
+   logondomain=<Your domain name>
+
+3. Add the following to the LMHOSTS file in the Network Client for MS-DOS
+   subdirectory:
+
+   <IP address> <PDC NetBIOS name> #DOM:<Domain name>
+
+   NOTE: The #PRE command should not be used in the LMHOSTS file for Network
+   Client for MS-DOS. Any command following the #PRE command is ignored. For
+   example, if you add #PRE in front of #DOM:<Domain name>, #DOM:
+   <Domain name> is ignored.
+
+Additional query words: prodnt nc msclient winnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search kbAudDeveloper kbZNotKeyword kbNetworkClientSearch kbNetworkClient300DOS
+Version           : 3.00 3.50
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

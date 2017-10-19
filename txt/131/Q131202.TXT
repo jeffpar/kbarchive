@@ -1,0 +1,68 @@
+DOCUMENT:Q131202  07-NOV-1999  [crossnet]
+TITLE   :HOWTO: Perform Programmatic Logon from Windows for Workgroups
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::3.11
+OPER/SYS:
+KEYWORDS:kbnetwork kbAPI kbSDKPlatform kbLanMan kbOSWin311 kbGrpDSNet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) for Windows for Workgroups, version 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+I_AutoLogon is the only documented API for doing a programmatic logon from
+Windows for Workgroups. This API requires the user to type a user name and
+password. There aren't any other documented functions for performing logons. In
+particular, there is nothing documented to:
+
+ - Perform a programmatic logon using a specific user name and password.
+
+ - Perform a programmatic logon to a particular domain.
+
+MORE INFORMATION
+================
+
+It is possible to perform a logon in an indirect fashion by executing a batch
+file that calls NET LOGON. For example, you might have a file named LOGON.BAT
+that contains:
+
+   REM batch file that performs a logon
+   NET LOGON <username> <password> /DOMAIN:<mydomain>
+
+You can use WinExec to execute the batch file:
+
+   WinExec( "LOGON.BAT", SW_HIDE );
+
+REFERENCES
+==========
+
+For more information, please see the Windows for Workgroups SDK Help file.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbAPI kbSDKPlatform kbLanMan kbOSWin311 kbGrpDSNet 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK311
+Version           : :3.11
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

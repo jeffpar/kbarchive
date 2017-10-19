@@ -1,0 +1,71 @@
+DOCUMENT:Q183263  13-FEB-2000  [exchange]
+TITLE   :XADM: PAB-GAL Synchronization Tool
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0,5.5
+OPER/SYS:
+KEYWORDS:exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft BackOffice Resource Kit, Second Edition, includes the PAB-GAL
+Synchronization Tool.
+
+You can use the PAB-GAL Synchronization tool (Pabgsync.dll) to synchronize your
+Personal Address Books (PABs) with the global address list on your Exchange
+Server computer. The Pabgsync.dll tool writes a mail message in your Deleted
+Items folder when synchronization is complete; the message contains a list of
+all of the changes that were made during PAB-GAL synchronization.
+
+MORE INFORMATION
+================
+
+More information regarding PAB-GAL Synchronization can be found in the
+BackOffice Resource Kit online help documentation under:
+
+   Exchange\Docs\Exchtool.hlp
+
+PAB-GAL Synchronization Tool help topics include:
+
+ - Installing the PAB-GAL Synchronization Tool
+
+ - Using the PAB-GAL Synchronization Tool
+
+ - Troubleshooting the PAB-GAL Synchronization Tool
+
+The PAB-GAL Synchronization tool is intended to update address values, but not
+address types.
+
+NOTE: The PAB-GAL Synchronization Tool, like all Microsoft BackOffice Resource
+Kit tools, is supported on a best-effort basis.
+
+Additional query words: synch sync merge
+
+======================================================================
+Keywords          : exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

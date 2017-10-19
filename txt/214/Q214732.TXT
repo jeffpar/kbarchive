@@ -1,0 +1,69 @@
+DOCUMENT:Q214732  06-AUG-2002  [winnt]
+TITLE   :SFU Password Synchronization to Digital UNIX Server Problem
+PRODUCT :Microsoft Windows NT
+PROD/VER::; winnt:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Services for UNIX Add-On Pack 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows NT Services for UNIX (SFU) password synchronization may post the
+following error message in the System log on the Digital UNIX host on which the
+Microsoft Encrypted Password Protocol (MEPP) daemon (SSOD) is running:
+
+   8201: user <name> does not exist on host digital
+
+The following error message is posted in the Windows NT System event log on the
+Windows NT server that is running the Password Synchronization service:
+
+   Secret key mismatch
+
+The Digital UNIX host should post an "8203: secret key mismatch or packet error
+for user <name> on host digital" error message.
+
+CAUSE
+=====
+
+The shared secret key is mismatched between the SFU Password Synchronization
+service and the SSOD daemon on the UNIX host.
+
+RESOLUTION
+==========
+
+To resolve this issue, reset the shared secret key on both the SFU server and
+the UNIX host to a matching key.
+
+NOTE: The shared secret key is case sensitive.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbtool 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTServicesUnix
+Version           : :; winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

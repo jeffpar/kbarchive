@@ -1,0 +1,59 @@
+DOCUMENT:Q179053  07-MAY-2002  [homegame]
+TITLE   :FS98: Shortcuts Created in Different Folders in Windows NT 4.0
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:; winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 98 
+ - the operating system: Microsoft Windows NT 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you install Microsoft Flight Simulator 98 on a computer running Microsoft
+Windows NT Workstation 4.0, the Flight Simulator Setup program creates shortcuts
+in the Microsoft Games common folder. (This Microsoft Games menu is located
+below the separator line at the bottom of the Programs menu.)
+
+If you install the Flight Shop Converter for Flight Simulator, (also called the
+Aircraft/Adventure Converter), the Converter Setup program creates shortcuts in
+a Microsoft Games folder that is accessible only to the current user. (This
+Microsoft Games menu is located above the separator line at the bottom of the
+Programs menu.)
+
+MORE INFORMATION
+================
+
+If your computer is running Microsoft Windows 95, both Flight Simulator and the
+Flight Shop Converter Setup programs create shortcuts in the same Microsoft
+Games menu, regardless of whether user profiles are in use.
+
+Additional query words: 4.00 fs98 flightsim fltsim flt sim patch winnt
+
+======================================================================
+Keywords          : kbenv kbsetup 
+Technology        : kbOSWinSearch kbOSWinNT400 kbGamesSearch kbFlightSimSearch kbFlightSim98 kbOSWinNTSearch kbSimSearch
+Version           : WINDOWS:; winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

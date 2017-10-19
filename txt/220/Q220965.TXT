@@ -1,0 +1,72 @@
+DOCUMENT:Q220965  22-JUN-2001  [exchange]
+TITLE   :XWEB: OWA NT Challenge Response Not Working as Expected
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 
+ - Microsoft Outlook Web Access, version 5.5 Service Packs 1, 2, 3 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you attempt to log onto Outlook Web Access (OWA) after installing Exchange
+Server version 5.5 or an Exchange Server 5.5 service pack, you will be prompted
+for credentials, even though Internet Information Server has been set to use NT
+Challenge Response (NTCR) for authentication. After entering your Windows NT
+credentials, OWA should function.
+
+CAUSE
+=====
+
+NT Challenge/Response authentication is no longer enabled in the security
+authentication methods for the IIS server. By default, installing Exchange OWA
+on an IIS 4.0 server will enable Basic (clear text) authentication and disable
+NTCR. This only occurs with IIS 4.0 installations, and not with IIS 3.0.
+
+WORKAROUND
+==========
+
+If IIS and Exchange Server are installed on the same physical computer, you can
+re-enable NT Challenge Response if you want it. If security is an issue, you may
+want to consider installing Secure Sockets Layer(SSL). For more information on
+enabling SSL, see the documentation for IIS version 4.0.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOWASearch kbOWA550 kbOWA550SP1 kbOWA550SP2 kbOWA550SP3
+Version           : WINDOWS:5.5
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

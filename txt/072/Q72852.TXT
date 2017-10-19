@@ -1,0 +1,48 @@
+DOCUMENT:Q72852  30-OCT-1999  [utilities]
+TITLE   :DOCERR: Undocumented Error U1369: Invalid Format in PWBED.EXE
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:1.0,1.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Programmer's Workbench for MS-DOS, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+The following undocumented error message may be generated when
+invoking the Programmer's WorkBench (PWB) version 1.0 or 1.1:
+
+   error U1369: invalid format in PWBED.EXE
+
+ 
+This message indicates a corrupt PWBED.EXE file. The corrupt PWBED.EXE
+should be deleted and a new copy installed from the distribution
+disks. The file might have been decompressed incorrectly the first
+time or might have been corrupted by a virus. A virus check should be
+run to ensure that a virus was not the cause of the corruption.
+
+Additional query words: 1.00 1.10 docerr
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbPWBSearch kbZNotKeyword3 kbPWB100DOS kbPWB110DOS
+Version           : MS-DOS:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

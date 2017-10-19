@@ -1,0 +1,67 @@
+DOCUMENT:Q193835  26-SEP-2001  [frontpg]
+TITLE   :FP97: Infinite Loop Creates Thousands of Temp Files
+PRODUCT :Word Front Page
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to publish or import a Web, thousands of .tmp files are created on
+the server, and the Author.exe or Inetinfo.exe process consumes all available
+resources, which will eventually cause the server to stop responding.
+
+CAUSE
+=====
+
+Two or more HTML pages include a style sheet reference to each other. This is
+caused by using the <BODY STYLESRC="pagename.html"> tag, which references
+another page from which to inherit page attributes. Using this method of style
+sheets causes an infinite loop when recalculating hyperlinks. For example:
+
+   Page1 includes the following tag in its HTML code:
+
+         <BODY STYLESRC="page2.html">
+
+   Page2 includes the following tag in its HTML code:
+
+         <BODY STYLESRC="page1.html">
+
+RESOLUTION
+==========
+
+To resolve this problem, make sure there are no instances of the <BODY
+STYLESRC=""> tag that refer to pages that point back to the referring page.
+
+
+Additional query words: hang tmp temp
+
+======================================================================
+Keywords          :  
+Technology        : kbFrontPageSearch kbFrontPage97 kbZNotKeyword2 kbFrontPage97Search
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

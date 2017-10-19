@@ -1,0 +1,66 @@
+DOCUMENT:Q87787  30-OCT-1999  [win95x]
+TITLE   :Windows Err Msg: Cannot Start More Than One Copy of the...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the Microsoft Windows Setup program is running minimized as an icon on the
+Desktop, you will not be able to run any other Windows-based program named
+"Setup." This will occur regardless of whether the MS-DOS file- sharing program
+SHARE.EXE is loaded.
+
+Windows 3.0
+-----------
+
+If the Windows Setup program is minimized, and you try to run a Windows- based
+program named "Setup," the minimized Windows Setup program runs instead. This
+problem occurs when you double-click the other Setup file in File Manager, and
+when you choose Run from the File menu and specify the path to the other Setup
+program in the Command Line text box.
+
+Windows 3.1
+-----------
+
+If the Windows Setup program is minimized, and you try to run a Windows program
+named "Setup," the error message, "Cannot start more than one copy of the
+specified program" appears.
+
+WORKAROUND
+==========
+
+Close the copy of the Windows Setup program that is running minimized on the
+Desktop before running the second program named "Setup."
+
+Additional query words: 3.00 3.00a 3.10 3.11 Resource Kit WRK install background File Manager click launch
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,74 @@
+DOCUMENT:Q186303  10-AUG-2001  [winnt]
+TITLE   :NTbackup Reports Drive Verify as Informational or Error Message
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+NTBackup generates one the following messages in the Application Event Log when
+Verify After Backup is selected:
+
+   ID : 8009
+   Source : NTBackup
+   Type : Information
+   Category : None
+   Decription : End Verify to 'C.'
+
+-or-
+
+   ID : 8009
+   Source : NTBackup
+   Type : Error
+   Category : None
+   Decription : End Verify to 'C.'
+
+MORE INFORMATION
+================
+
+When NTbackup verifies files after a backup, it logs an event to the Application
+Event Log on completion. If there are no differences noted in the files on the
+tape versus the files on the drive, then the Event Type will be informational.
+If there are differences noted in the files on the tape versus the files on the
+drive, then the Event Type will be error. If the Event Type is error, more
+information can be obtained in the Backup.log file. Enable Full Detail logging
+to generate detailed information about the differences that were detected.
+
+An error does not necessarily mean that the file is corrupt. It can indicate that
+changes were made to the file or that files have been deleted or added since the
+backup was completed. Depending on the environment that is being backed up,
+multiple error messages of type 8009 can be common. However, it is good practice
+to monitor your backups and ensure that they complete successfully.
+
+Additional query words: event red blue
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

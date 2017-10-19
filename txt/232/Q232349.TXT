@@ -1,0 +1,66 @@
+DOCUMENT:Q232349  06-AUG-2002  [exchange]
+TITLE   :XFOR:Meeting Updates Cause Multiple Meeting Requests w/GWC
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When a meeting update is sent to a GroupWise user, the original meeting
+scheduled in the GroupWise user's calendar will not be updated correctly.
+Ideally, the original meeting will be deleted and replaced with the new updated
+meeting. However, all meeting updates are sent as new meeting requests. The
+meeting update will be a new meeting request with a prefix "Updated:
+<original subject>" in the subject line.
+
+CAUSE
+=====
+
+This behavior is caused by a limitation in the interoperability between the
+Microsoft Exchange Connector for Novell GroupWise and the API Gateway.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft Exchange Server
+version 5.5.
+
+MORE INFORMATION
+================
+
+Note that this problem does not affect the Web 3 version of the GroupWise
+Connector, only the next version of this connector.
+
+Additional query words: meetings, multiple updates
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

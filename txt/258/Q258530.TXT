@@ -1,0 +1,100 @@
+DOCUMENT:Q258530  27-JUL-2001  [foxpro]
+TITLE   :FIX: Multiple References to File Object Causes OLE Error
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbProjManager kbvfp600 kbvfp600bug kbGrpDSFox kbDSupport kbCodeSnippet kbVS600sp4fix kb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When obtaining multiple references to an object in the Project.Files collection,
+you may receive the error message:
+
+   OLE Exception error: Exception code c0000005. OLE object may be corrupt.
+
+RESOLUTION
+==========
+
+A workaround in builds of Visual FoxPro 6.0 prior to Visual Studio Service Pack
+4 is to refer to the objects in the Files collection by number instead of name.
+The following code does not produce the exception error in Visual Studio Service
+Pack 3 and earlier:
+
+   *Start of Code
+   MODIFY PROJECT proj1 NOWAIT NOSHOW
+   loFile = Application.ActiveProject.Files(1)
+   ? VARTYPE(loFile)            && Should be "O" for object
+   RELEASE loFile
+   loFile = Application.ActiveProject.Files(1)
+   *End of Code
+
+STATUS
+======
+
+Microsoft has confirmed that this is a bug in the Microsoft products that are
+listed at the beginning of this article. This bug was corrected in the latest
+service pack for Visual Studio 6.0.
+
+For additional information about Visual Studio service packs, click the following
+article numbers to view the articles in the Microsoft Knowledge Base:
+
+   Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+   Q194295 HOWTO: Tell That a Visual Studio Service Pack Is Installed
+
+To download the latest Visual Studio service pack, visit the following Microsoft
+Web site:
+
+   http://msdn.microsoft.com/vstudio/downloads/updates.asp
+
+MORE INFORMATION
+================
+
+1. Create a new project called "Proj1" (without the quotation marks).
+
+2. Add an empty file to the Code tab called "MyProg.prg" (without the quotation
+   marks).
+
+3. Type the following code into the Command Window:
+
+   MODIFY PROJECT proj1 NOWAIT NOSHOW
+   loFile = Application.ActiveProject.Files("myprog.prg")
+   ? VARTYPE(loFile)            && Should be "O" for Object
+   RELEASE loFile
+   loFile = Application.ActiveProject.Files("myprog.prg")
+
+After running the code, you receive the error message listed in the "Symptoms"
+section.
+
+Additional query words: sp4
+
+======================================================================
+Keywords          : kbProjManager kbvfp600 kbvfp600bug kbGrpDSFox kbDSupport kbCodeSnippet kbVS600sp4fix kbVS600sp4 kbVS600sp5fix 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

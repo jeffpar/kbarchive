@@ -1,0 +1,142 @@
+DOCUMENT:Q84920  05-OCT-1999  [win95x]
+TITLE   :Upgrading a Shared Windows 3.1 Network
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When upgrading a shared network installation (using the SETUP /N command) from
+Microsoft Windows version 3.0 to Microsoft Windows version 3.1, the Windows 3.0
+files contained in the shared directory must be removed completely and replaced
+with files from Windows 3.1 before performing the upgrade for the Windows user
+directories.
+
+The Windows 3.1 SETUP /N command can only be used to upgrade Windows 3.0 user
+directories if the directories were originally created using the SETUP /N
+command from the Windows 3.0 program.
+
+RESOLUTION
+==========
+
+Perform the following steps to correctly upgrade a Windows 3.0 shared network to
+Windows 3.1:
+
+1. All users on the network exit from Windows.
+
+2. Log onto the network as supervisor.
+
+3. Remove all the read-only attributes on the Windows 3.0 files in the shared
+   directory using the MS-DOS ATTRIB command or Novell FLAG command. (The shared
+   directory was created using steps 1-9 on page 553 of the "Microsoft Windows
+   User's Guide" for version 3.0, and should contain between 282-286 files.)
+
+   From the Windows Shared Directory MS-DOS Prompt, type the following command:
+
+   attrib -r *.*
+
+   -or-
+
+   flag *.* rw
+
+   Note: The flag *.* rw command is for Novell users only.
+
+4. If no third-party applications, DLLs, or drivers have been installed (for
+   example PC Tools, Norton Desktop, drivers from OEMs or the SDL), and their
+   files do not reside in the same shared directory as Windows 3.0:
+
+   a. Delete the Windows 3.0 files.
+
+      -or-
+
+   b. Move the Windows 3.0 files to a new location. (If these files are moved,
+      make sure they are not placed in a directory that is in the path or on a
+      Novell search drive.)
+
+   If ANY third-party applications, DLLs or drivers have been installed (PC
+   Tools, Norton Desktop, drivers from OEMs or the SDL) and their files reside
+   in the same shared directory, perform the following procedure to remove only
+   those files that were provided by Windows 3.0:
+
+   a. Place the Windows 3.0 Disk 1 in a floppy drive.
+
+   b. Make the floppy drive the current MS-DOS drive.
+
+   c. At the floppy drive MS-DOS command line, enter the following MS-DOS
+      command
+
+   FOR %A IN (*.*) DO DEL x:\path\%A
+
+      where "x:\path" is the network drive and path to the Windows 3.0 shared
+      directory.
+
+   d. Repeat steps a-c above for each of the original Windows 3.0 floppy disks.
+
+   NOTE: In a small number of cases, third-party display drivers will either be
+   using the 386grabber (*.gr3) and 286grabber (*.gr2) files supplied by Windows
+   3.0 or replacing the Windows 3.0 grabber files with their own and using the
+   same filename. In these cases, Windows 3.1 Setup will not update the
+   SYSTEM.INI file for the Windows 3.1 grabber files (*.3gr and *.2gr) and you
+   will get errors upon loading Windows 3.1 after upgrading the user if you
+   delete these files. To be absolutely safe, copy the *.gr2 and *.gr3 files in
+   the shared Windows directory to a floppy or separate directory before
+   performing the above procedure, and copy them back if needed.
+
+5. Follow the instruction on page 9 of the "Microsoft Windows Getting Started"
+   guide for version 3.1 to place the Windows 3.1 files into a clean Windows
+   shared directory by executing the following command:
+
+   SETUP /A
+
+   NOTE: If you have a network requiring a workstation driver update for Windows
+   3.1, you may want to upgrade the workstation network software before
+   completing the next step. For example, Novell users should update the IPX to
+   3.1 and NETX to 3.26 or IPXODI to 1.2 and LSL to 1.21.
+
+6. Have each user follow the instructions on page 8 of the "Microsoft Windows
+   Getting Started" guide for version 3.1 to upgrade the Windows user files to
+   Windows 3.1. When prompted for the directory to install to, specify the
+   location of the existing Windows 3.0 user directory. (User directories
+   generally have less than 20 files in them and do not have a subdirectory
+   called SYSTEM.) This will upgrade all necessary files and Windows 3.1 will
+   now be operational.
+
+For additional information on setting up Windows on a network, see pages 6-9 of
+the "Microsoft Windows Getting Started" guide for version 3.1, pages 71-74 of
+the "Microsoft Windows Resource Kit," and the NETWORKS.WRI file in the Windows
+3.1 directory.
+
+KBCategory: kbnetwork kbdisplay kb3rdparty kbsetup
+KBSubcategory: win31
+
+Additional query words: ndw 3.10 win31 ipx.com netx.com net5.com ipxodi.com lsl.com
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,97 @@
+DOCUMENT:Q134456  17-DEC-2000  [win95x]
+TITLE   :Err Msg: ScanDisk Cannot Check This Drive Now Because the...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to run ScanDisk in Windows 95, you may receive the following error
+message:
+
+   ScanDisk cannot check this drive now because the disk is not properly
+   formatted, or a program such as a disk utility has locked it. Format the disk
+   or wait for the utility to finish, and then restart ScanDisk.
+
+CAUSE
+=====
+
+This problem can occur if you are running Bgmail.exe. Bgmail.exe prevents
+Windows 95 tools from locking the hard disk properly. Note that Bgmail.exe is
+loaded from either the Winstart.bat file or the Autoexec.bat file.
+
+RESOLUTION
+==========
+
+To run ScanDisk, use either of the following methods:
+
+ - Edit the Winstart.bat file or the Autoexec.bat file and place the word "rem"
+   (without quotation marks) at the beginning of the Bgmail.exe line to
+   temporarily disable it. Save and close the file and then restart Windows 95
+   and run ScanDisk.
+
+ - Run ScanDisk in MS-DOS mode. To do so, follow these steps:
+
+   1. Click Start, and then click Shut Down.
+
+   2. Click "Restart the computer in MS-DOS mode," and then click Yes.
+
+   3. At the command prompt, type the following line and then press ENTER:
+
+   " scandisk " (without the quotation marks)
+
+   4. When ScanDisk is finished, type the following line and then press ENTER:
+
+   " exit " (without the quotation marks)
+
+MORE INFORMATION
+================
+
+This error can occur with any program that performs an INT 21 hook.
+
+
+Bgmail.exe is a tool that is installed on AT&T computers to provide access to
+AT&T's proprietary mail services.
+
+The problem described in this article can also occur if you are loading the
+following line in the Winstart.bat file:
+
+   c:\windows\updat_cd.com c:\cd.sav
+
+The resolution methods listed above should also work with the Cd.sav file.
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: Corel
+
+======================================================================
+Keywords          : kberrmsg kbtool win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,83 @@
+DOCUMENT:Q170040  09-AUG-2001  [winnt]
+TITLE   :Computer Associates InocuLAN May Cause Broadcast Storm
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use InocuLAN on a Microsoft Windows NT network, you may experience
+large amounts of WINS name queries and broadcast storms. If you use Microsoft
+Network Monitor, you may view a large number of WINS queries for workgroup or
+domain names, and then broadcasts after the WINS queries are unsuccessful.
+
+CAUSE
+=====
+
+By default, InocuLAN is configured to automatically discover Windows NT domains.
+The default values for Auto Discovery and Heartbeat Update Interval are 24 hours
+and 1 minute, respectively.
+
+If a domain is manually entered and/or automatically discovered in Service
+Manager, and then later becomes unavailable or invalid, you can receive three NS
+Queries every 60 seconds for each invalid domain.
+
+RESOLUTION
+==========
+
+To resolve this problem, remove the invalid workgroup or domain names from
+InocuLAN's Service Manager. To do this, perform the following steps:
+
+1. In Service Manager, click Broadcast Configuration from the Service menu.
+
+2. In the Broadcast Configuration box, click the NT Domains tab.
+
+3. Remove the invalid workgroup or domain names.
+
+STATUS
+======
+
+This problem occurs when you use Microsoft Windows NT version 4.0 and InocuLAN.
+
+MORE INFORMATION
+================
+
+For further information or support on InocuLAN, contact Computer Associates.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+
+Additional query words: storm Internet Name naming Service services InnocuLAN Computer Associates
+
+======================================================================
+Keywords          : kb3rdparty kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

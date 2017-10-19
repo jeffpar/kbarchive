@@ -1,0 +1,71 @@
+DOCUMENT:Q150878  31-JUL-2001  [sms]
+TITLE   :SMS Added to NetWare Login Script Twice
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbConfig kbMaintMan smsconfig smsmaintman smssiteconfig
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A second SMS section is added to the NetWare Login Script when "Automatically
+Configure Workstation Logon Scripts" is enabled.
+
+CAUSE
+=====
+
+The Site_Config_Manager service looks for the two SMS REM statements in the
+system logon script. If it does not find them, it will add the SMS section to
+the script.
+
+RESOLUTION
+==========
+
+Do not remove the REM statements surrounding the SMS section of the logon
+script.
+
+MORE INFORMATION
+================
+
+Example of SMS section:
+
+       REM Microsoft Systems Management Server (start)
+
+       REM SMS Build 692
+
+       set SMS_LOGON="SYS:SMS\logon.srv"
+       INCLUDE %<SMS_LOGON>\SMSLS.SCR
+       set SMS_LOGON=
+
+       REM Microsoft Systems Management Server (end)
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbnetwork kbConfig kbMaintMan smsconfig smsmaintman smssiteconfig 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

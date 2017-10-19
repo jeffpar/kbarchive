@@ -1,0 +1,78 @@
+DOCUMENT:Q157532  14-NOV-2000  [word97]
+TITLE   :WD97: Invalid Procedure Name Error Creating a New Macro
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you attempt to create a new macro, you receive the following error
+message:
+
+   Invalid Procedure Name
+
+CAUSE
+=====
+
+The macro name contains invalid characters or reserved identifiers, or the
+length exceeds 80 characters.
+
+
+WORKAROUND
+==========
+
+Rename the macro to contain fewer than 80 charecters. For tips on valid macro
+names see the More Information section of this article.
+
+MORE INFORMATION
+================
+
+Valid macro names:
+
+ - Must begin with a letter.
+
+ - Cannot contain spaces or non-alphanumeric characters (such as &, *, /,
+   and so on).
+
+ - Cannot contain periods. You may use a period (.) in a macro name only to
+   explicitly define a procedure within a module. For example, if you type in
+   the new macro name "my.test", you have created a new Module called "my"
+   containing a Procedure named "test".
+
+ - Cannot exceed 80 characters.
+
+ - Cannot conflict with a program's reserved identifiers or keywords, such as
+   the word "print".
+
+Additional query words: tools macro word97
+
+======================================================================
+Keywords          :  
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

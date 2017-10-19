@@ -1,0 +1,75 @@
+DOCUMENT:Q117442  26-SEP-1999  [win95x]
+TITLE   :System Sounds Unavailable in Control Panel
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+ - When you choose the Sound icon in Control Panel, the Events and Files lists
+   and the Test button are unavailable even though the proper Windows sound card
+   driver is loaded and set up correctly.
+
+   -or-
+
+ - The following error message appears when you try to run Sound Recorder:
+
+   Sound Recorder cannot record or play back because a sound driver is not
+   installed.
+
+CAUSE
+=====
+
+These situations can occur if the following line is missing from the [boot]
+section of the SYSTEM.INI file or is incorrect:
+
+        drivers=mmsystem.dll
+
+NOTES
+-----
+
+ - Additional *.dll files may be present on the drivers= line.
+
+ - Windows does not generate an error message at startup when the drivers= line
+   is missing.
+
+RESOLUTION
+==========
+
+To correct these problems, use a text editor, such as Microsoft Windows Notepad,
+to add or change the drivers= line to match the following:
+
+   drivers=mmsystem.dll
+
+Additional query words: 3.10 3.1 3.11 grey greyed gray grayed out dimmed corrupted drivers=mmsystem.dll.exe pc speaker pcspeaker
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

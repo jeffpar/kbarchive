@@ -1,0 +1,72 @@
+DOCUMENT:Q82649  17-OCT-1999  [win95x]
+TITLE   :The Benefits of OLE in Windows 3.1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the advantages that OLE provides in the Microsoft Windows
+operating environment version 3.1.
+
+With OLE, applications can specialize in performing one job well. For example, a
+drawing application specializes in drawing only; it no longer needs text-editing
+tools because you can bring in the text into the drawing using an OLE link to a
+text editor that supports OLE.
+
+Applications can automatically be extended for future data formats because the
+content of an object being linked uses the OLE interface, and the client
+application does not care what is being linked.
+
+You can concentrate on the task you are performing instead of concentrating on
+multiple applications required to complete the task. This concept can be
+summarized as a task-centric, rather than tool- centric, view of computing (that
+is, you can concentrate on the document you are producing, not the application
+you are using to produce it.
+
+Files can be more compact with OLE. The data of a linked object is stored in the
+original server document, rather than in the client document. For example, if
+you link your company's revenue spreadsheet to three different Word for Windows
+documents, the spreadsheet is stored on the disk one time only. The Word
+documents require only a link to the spreadsheet.
+
+With OLE, you can print or transmit documents without using the application that
+originally produced the document.
+
+You can update linked objects in a file dynamically. (That is, when you update a
+linked object [not an embedded object], the other instances or copies of the
+linked object are also updated.) As in the earlier example, if the spreadsheet
+is updated, the link is maintained to the other three Word for Windows
+documents. When opened, each Word document displays the updated data.
+
+Additional query words: 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

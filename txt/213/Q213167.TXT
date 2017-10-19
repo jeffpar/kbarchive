@@ -1,0 +1,62 @@
+DOCUMENT:Q213167  10-AUG-2000  [sms]
+TITLE   :SMS: Software Metering Clients Do Not Use Retry Setting Properly
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0,2.0 SP1,2.0 SP2
+OPER/SYS:
+KEYWORDS:kbClient kbConfig kbsms200 kbsms200bug kbsmsMeter
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Systems Management Server 2.0 the Software Metering client agent, in online
+mode, does not use the client retry setting properly. In situations where a
+client's primary software metering server is unavailable, the client quickly
+migrates to a new software metering server without attempting all of the
+configured retries specified in the client agent properties.
+
+This can cause license denials due to a lack of licenses available at the new
+software metering server after the clients have migrated from their unavailable,
+primary metering server.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+MORE INFORMATION
+================
+
+The client retry setting can be set in the General tab of the Software Metering
+Client Agent properties.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbClient kbConfig kbsms200 kbsms200bug kbsmsMeter 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : winnt:2.0,2.0 SP1,2.0 SP2
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

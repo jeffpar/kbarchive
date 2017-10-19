@@ -1,0 +1,94 @@
+DOCUMENT:Q143382  15-MAR-1999  [exchange]
+TITLE   :XCLN: Rule Moving Messages to Public Folder Does Not Work
+PRODUCT :Microsoft Exchange
+PROD/VER:4.0 5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you define an Inbox Assistant rule to automatically move messages to a
+public folder, this rule is not activated until you log in to a client.
+
+CAUSE
+=====
+
+This is by product design.
+
+WORKAROUND
+==========
+
+One workaround to the problem of not being able to automatically move messages
+into public folders is to create a rule that will forward (instead of move) the
+messages to the public folder. This rule will be performed even when you are not
+logged in.
+
+If the public folder is not listed in the Global Address List, the Microsoft
+Exchange administrator must first complete the following steps in the Microsoft
+Exchange Administrator program:
+
+1. Select the public folder and then get its properties by selecting the
+   Properties command on the File menu.
+
+2. Select the Advanced page. Clear the Hide From Address Book option. This will
+   make the folder appear in Global Address List.
+
+3. In the Microsoft Exchange client, create an Inbox Assistant rule to forward
+   messages to the public folder.
+
+4. After you create the rule, if the folder needs to be removed from the Global
+   Address List, check the Hide From Address Book option in the Properties of
+   the public folder in the Microsoft Exchange Administrator program.
+
+MORE INFORMATION
+================
+
+Any rule actions that move a message to a message store other than a user's
+server-based mailbox store must be run on the client while the user is logged
+in.
+
+This is the case when moving messages to a local .PST file, as well as when
+moving messages to a public folder. Public Folders may or may not reside on the
+same server as a user's mailbox.
+
+In order to move a message to a store, a user must be logged in to that store
+with the proper permissions to post items. The rules engine (which processes
+Inbox Assistant rules) cannot log in to another store (with the necessary
+Windows NT privileges) as the user who created the rule. Instead, it creates a
+Deferred Action message to tell the client to execute this rule. When the client
+logs in to the server, the Deferred Action message is sent to the client, which
+then performs the action specified in the rule.
+
+Additional query words: winnt filters rules public folders faq
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+Version           : 4.0 5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

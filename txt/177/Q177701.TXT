@@ -1,0 +1,59 @@
+DOCUMENT:Q177701  20-NOV-1999  [mspress]
+TITLE   :Macintosh Version of Internet Explorer Not Included on Disc
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Official Microsoft Internet Explorer 4 Book ISBN 1-57231-576-8 
+-------------------------------------------------------------------------------
+
+MORE INFORMATION
+================
+
+Download the current version of Microsoft Internet Explorer for the Macintosh
+from the Microsoft Internet Explorer Web site:
+
+   http://www.microsoft.com/ie/
+
+NOTE: Because the Microsoft Web site is constantly updated, the site address may
+change without notice. If this occurs, link to the Microsoft home page at the
+following address:
+
+   http://www.microsoft.com/
+
+
+SUMMARY
+=======
+
+The back cover of the "Official Microsoft Internet Explorer 4 Book" notes that
+the current version of Microsoft Internet Explorer for the Macintosh is included
+on the companion CD-ROM. However, the Macintosh version of Internet Explorer was
+not included with this book.
+
+Additional query words: press ms_press 1-57231-576-8
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

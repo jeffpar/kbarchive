@@ -1,0 +1,89 @@
+DOCUMENT:Q190816  11-AUG-1999  [foxpro]
+TITLE   :PRB: Component Gallery - Installed ActiveX Controls Refresh
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Component Gallery includes an ActiveX Catalog. This is a dynamic catalog
+containing either a list of all registered ActiveX Controls or a list of all
+ActiveX Controls selected in the Visual FoxPro Options dialog box. After
+selecting some controls in the Options dialog box, and refreshing this item in
+the Component Gallery, the newly selected ActiveX Controls do not appear in the
+list of installed ActiveX Controls.
+
+CAUSE
+=====
+
+The Set As Default button was not selected in the Options dialog box after
+selecting the ActiveX Controls. When the Component Gallery refreshes the list,
+it reads the registry for the list of ActiveX Controls that were selected in the
+Options dialog box. The selections that are made in the Options dialog are not
+written to the registry until the Set As Default button is selected.
+
+RESOLUTION
+==========
+
+When selecting ActiveX Controls in the Options dialog box, click the Set As
+Default button before refreshing the ActiveX Control catalog in the Component
+Gallery.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Select the Controls tab of the Visual FoxPro Options dialog box.
+
+2. Choose the ActiveX controls Option button and select several ActiveX
+   controls.
+
+3. Close the Options dialog box (do not click "Set As default").
+
+4. Open the Component Gallery.
+
+5. Right-click the ActiveX Catalog/Controls/Installed Controls item and choose
+   Refresh Controls.
+
+The list of ActiveX controls does not include the items that were just selected
+in the Options dialog box.
+
+Additional query words: kbVFp600 KBXBASE KBMiscTools
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

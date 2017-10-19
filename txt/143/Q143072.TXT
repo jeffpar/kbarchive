@@ -1,0 +1,90 @@
+DOCUMENT:Q143072  26-MAR-2002  [visualc]
+TITLE   :HOWTO: Determine Default Libraries for an .OBJ Object File
+PRODUCT :Microsoft C Compiler
+PROD/VER::2.0,2.1,2.2,4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbVC200 kbVC210 kbVC400 kbVC500 kbVC600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 2.0, 2.1, 2.2, 4.0 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+ - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Visual C++, default libraries can be linked to automatically. This is done
+for the C run-time libraries. The compiler writes a default C run-time library
+name in the object (.obj) files it creates. The library name depends on the
+compiler options you use. For additional information, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q128641 The /Mx Compiler Options and the LIBC, LIBCMT, MSVCRT Libs
+
+You can also specify default libraries by the using the #pragma comment()
+compiler directive. The Microsoft Foundation Class (MFC) header files do this.
+
+Writing a default library name in an object file in this manner saves you from
+having to specify the library on the linker command line. However, sometimes it
+is necessary to determine which libraries an object file links to by default.
+
+MORE INFORMATION
+================
+
+To see which libraries an object file will use by default, you can use the
+Dumpbin.exe utility in a console session. For example, to find out which
+libraries Mfcapp.obj will cause the linker to search automatically, you would
+use the following code (this example pipes the output to a file):
+
+      DUMPBIN /RAWDATA /SECTION:.drectve MFCAPP.OBJ > OUTPUT.TXT
+
+In the column to the right side of the output, you'll see the list of default
+libraries; the following is an excerpt from that column:
+
+-default|lib:mfc4
+0.lib -d|efaultli
+b:mfcs40|.lib -de
+faultlib|:msvcrt.
+lib -def|aultlib:
+kernel32|.lib -de
+faultlib|:user32.
+lib
+
+From this excerpt, you can determine this object file will cause the linker to
+automatically search Mfc40.lib, Msvcrt.lib, Kernel32.lib, and User32.lib when
+building an executable file. As you can see, each library name is preceded with
+"-defaultlib:". You can use this procedure for multiple object files, and
+compare the output of each file.
+
+One reason you may need to determine which default library names are in an object
+file is to troubleshoot the LNK2005 error, "symbol multiply defined."
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVC200 kbVC210 kbVC400 kbVC500 kbVC600 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC220 kbVC500 kbVC600 kbVC200 kbVC210 kbVC32bitSearch kbVCNET kbVC500Search
+Version           : :2.0,2.1,2.2,4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

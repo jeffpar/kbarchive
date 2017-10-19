@@ -1,0 +1,73 @@
+DOCUMENT:Q181215  20-FEB-2000  [iis]
+TITLE   :Unable to Pass Query String Which Contains "=" to CGI Program
+PRODUCT :Internet Information Server
+PROD/VER:WINNT: 3.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you call a Common Gateway Interface (CGI) program from an HTML form and are
+using the query string to pass parameters, a blank string is passed to the CGI
+program. The following example illustrates this behavior.
+
+   http://<servername>/cgitest.exe?parameter=value
+
+CAUSE
+=====
+
+This is a CGI rule. If an unencoded "=" is in the query string, the command line
+isn't used for passing parameters; you have to use the query string.
+
+Note that an ISAPI DLL does not encounter this issue.
+
+
+RESOLUTION
+==========
+
+If you are unable to obtain an ISAPI DLL equivalent to the CGI program when you
+are coding the HTML form, you must ensure that the parameters are separated by
+the hex substitute for the equal (=) sign. The following example demonstrates
+this:
+
+   http://<servername>/cgitest.exe?parameter%3dvalue
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Internet Information
+Server versions 3.0 and 4.0. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: CGI
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400 kbiis300
+Version           : WINNT: 3.0,4.0
+Hardware          : ALPHA PPC
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

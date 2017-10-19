@@ -1,0 +1,56 @@
+DOCUMENT:Q202108  21-MAR-1999  [sms]
+TITLE   :SMS: Software Inventory Does Not Amass & Display Full File Paths
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:2.0; winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug smsinst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server Installer version 2.0 
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Systems Management Server (SMS) version 2.0, Software Audit will
+not collect or display the full file path names for both known and unknown
+product files.
+
+MORE INFORMATION
+================
+
+The full file path is not reported due to scalability concerns. If the full path
+of each file on a client were to be displayed, it would greatly increase the
+size of each Software Inventory (SINV) file as well as the database. It would
+also force Systems Management Server to begin to report duplicate files as they
+are discovered. Currently, when a duplicate file is found, the file count is
+incremented in the database generally resulting in no, or minimal database
+growth.
+
+Additional query words: prodsms swinv32
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug smsinst 
+Technology        : kbSMSSearch kbSMS200 kbSMSI200
+Version           : WINDOWS:2.0; winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,52 @@
+DOCUMENT:Q136582  11-AUG-1999  [foxpro]
+TITLE   :Help Converting from FoxPro 2.x to Visual FoxPro 3.0
+PRODUCT :Microsoft FoxPro
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+For information on converting from FoxPro version 2.6 to Visual FoxPro, choose
+Technical Reference from the Help Contents menu. Then click Upgrading, and click
+Converting from FoxPro 2.6. In this topic, choose "Converting FoxPro 2.6 Files."
+
+MORE INFORMATION
+================
+
+The "Converting FoxPro 2.6 Files" topic lists five types of file conversions:
+projects, screens, reports, labels, and foundation READs. Click one of the
+links, or read all the Conversion topics in order by clicking the right Browse
+button (>>). Once you've converted the individual files, use the
+"Redesigning Converted FoxPro 2.6 Files" topic to take advantage of the new
+Visual FoxPro features.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

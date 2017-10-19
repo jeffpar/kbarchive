@@ -1,0 +1,58 @@
+DOCUMENT:Q174482  09-AUG-2001  [winnt]
+TITLE   :Performance Monitor Chart View Limited to 100 Data Points
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:2000; winnt:4.0
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows 2000 Professional 
+ - Microsoft Windows 2000 Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you view Performance Monitor log files in Chart Mode, the Time Window can
+be changed. As the Time Window is adjusted, the user may notice different highs
+and lows (peaks and valleys) for counters graphed on the chart. Also, notice
+that values for Last, Average, Min, Max, and Graph Time will also adjust as the
+Time Window is changed by the user.
+
+MORE INFORMATION
+================
+
+The Windows NT Workstation version 4.0 Resource Kit documents this behavior as
+normal for Performance Monitor in Chapter 10, page 327. Performance Monitor only
+takes 100 data points out of a log file and presents them in Chart View. To see
+more than 100 data points from a log file, you can export the data and create a
+chart using another application such as Microsoft Excel.
+
+Additional query words: perfmon
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro
+Version           : WINDOWS:2000; winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

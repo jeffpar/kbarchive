@@ -1,0 +1,75 @@
+DOCUMENT:Q174849  29-MAY-1999  [homegame]
+TITLE   :Fly-By-Videos in Golf 3.0 Are Purple
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbgraphic
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play the fly-by-videos in Golf 3.0, the video display area appears as a
+purple block, yet the sound continues to play.
+
+NOTE: When the videos are played separately in Windows, they work fine.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Golf for Windows,
+version 3.0.
+
+MORE INFORMATION
+================
+
+Try reducing hardware acceleration to resolve the problem.
+
+To reduce hardware acceleration, use the following steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. In Control Panel, double-click System.
+
+3. Click the Performance tab, and then click Graphics.
+
+4. Note that the Hardware Acceleration slider has four settings (Full, Most,
+   Basic, and None).
+
+5. Move the slider until it is one notch to the right of None (Basic).
+
+6. Click OK, and then click Close.
+
+7. Click Yes to restart your computer.
+
+
+Additional query words: video see haze
+
+======================================================================
+Keywords          : kbdisplay kbgraphic 
+Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch kbGolf300
+Version           : WINDOWS:3.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

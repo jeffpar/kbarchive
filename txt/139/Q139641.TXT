@@ -1,0 +1,57 @@
+DOCUMENT:Q139641  19-DEC-1999  [schedplus]
+TITLE   :Backup of Schedule File Smaller Than Original
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you create a backup of a schedule file by choosing the Backup option from
+the File menu, the backup file is smaller in size than the original schedule
+file. The size can sometimes be nearly half or even one third the original size.
+
+MORE INFORMATION
+================
+
+The smaller size of the backup SCD file can be attributed to the following:
+
+1. The backup process in Schedule+ 7.0 does not copy the Synchronization Table
+   from the original SCD file.
+
+2. The backup process removes extra blank spaces and performs defragmentation of
+   data in the original SCD file before copying to the backup SCD file.
+
+Performing a backup and restore of the schedule file is a suggested method of
+optimizing your Schedule+ 7.0 SCD files.
+
+Additional query words: calendar schedule 7.0 sched+
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule700
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

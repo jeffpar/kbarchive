@@ -1,0 +1,60 @@
+DOCUMENT:Q241073  02-FEB-2000  [winnt]
+TITLE   :Error Message After Upgrading SBS 4.5 to BackOffice 4.5
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.5
+OPER/SYS:
+KEYWORDS:smallbiz
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Server 4.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you restart your computer after you upgrade your Microsoft Small Business
+Server-based computer to the full installation of BackOffice Server version 4.5,
+you may receive an error message stating that some Dynamic Link Library (DLL)
+files are mismatched.
+
+CAUSE
+=====
+
+This problem occurs because BackOffice Server version 4.5 includes Service Pack
+1, but Small Business Server applies service pack 4 files when it is installed.
+When the BackOffice 4.5 setup process runs, it attempts to install older dlls,
+which are different from the Service Pack 4 DLL files and this conflict is
+created.
+
+RESOLUTION
+==========
+
+To prevent this issue from occurring, run the Setup.exe program located on the
+Windows BackOffice CD-ROM.
+
+Additional query words: smallbiz
+
+======================================================================
+Keywords          : smallbiz 
+Technology        : kbAudDeveloper kbBackOfficeSearch kbBackOfficeServ450
+Version           : winnt:4.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

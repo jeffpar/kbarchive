@@ -1,0 +1,116 @@
+DOCUMENT:Q173172  02-APR-2000  [sna]
+TITLE   :SNA Manager Not Setting LUA Pool Size to Actual Number of LUs
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0 SP1
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If the configured LUA pool size is larger than the actual number of LUA LUs in
+the LUA pool, the following symptoms can occur:
+
+ - If the Close Listen Socket option is selected, the TN3270 server does not
+   close the listening socket after all LUA LUs have been opened. This causes
+   new TN3270 client connection attempts to stops responding when all LUs are in
+   use.
+
+ - The following Windows NT application event log entries will be logged if the
+   TN3270 server attempts to open an LUA Pool when all LUA LUs in the pool have
+   already been opened:
+
+   
+
+      Event ID: 1955
+      Source:   SNA RUI Application
+      Description:
+      RUI_INIT failed for LU TN3270, primary_rc=1400, secondary_rc=87000000
+
+      Event ID: 305
+      Source:   TN3270 Server
+      Description:
+      RUI_INIT specifying LU <luname> failed with LUA_UNSUCCESSFUL,
+      LUA_COMMAND_COUNT_ERROR
+
+CAUSE
+=====
+
+When you assign an LUA Pool to the TN3270 Server in SNA Manager, the LUA Pool
+TN3270 folder shows the pool size as 30,000, instead of the actual number of LUA
+LUs in the pool. The LUA pool size can be changed manually.
+
+This problem does not occur using SNA Server 2.11, because the TN3270
+Administrator program always sets the correct LUA pool size in the TN3270
+configuration file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 3.0 and 3.0
+Service Pack 1 (SP1). This problem was corrected in the latest SNA Server
+version 3.0 U.S. Service Pack. For information on obtaining this Service Pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+With this update applied, when an LUA pool is assigned to a TN3270 service, the
+session count for the pool is set to the number of LUs in the Pool.
+
+If an LUA LU is added to a pool which is already assigned to TN3270, and the
+session count is equal to the number of LUs in the pool, then the session count
+is incremented so that it still equals the number of LUs.
+
+If an LUA LU is removed from a pool which is already assigned to TN3270, and the
+session count becomes less than the number of LUs in the pool, then the session
+count is lowered to equal the number of LUs.
+
+If a user manually sets the session count to some number less than the number of
+LUs in the pool, then the count is not automatically changed when LUs are added
+or removed from the pool. However if enough LUs are removed so that the session
+count becomes equal or greater than the number of LUs in the pool, then the
+session count will start to track any further additions or removals.
+
+For additional information on a separate problem using the TN3270 Server, please
+see the following article in the Microsoft Knowledge Base:
+
+   Q166846 Cannot Reconnect to TN3270 Server with Close Listen Sockets
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ300SP1
+Version           : WINDOWS:3.0,3.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

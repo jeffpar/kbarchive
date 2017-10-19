@@ -1,0 +1,89 @@
+DOCUMENT:Q258331  24-JUN-2000  [homegame]
+TITLE   :Baseball 2001: Pauses Occur During Game Play
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbdisplay kbsound kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Baseball 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Baseball 2001, the game may pause for up to half a
+second when the following events occur:
+
+ - You catch a high pop fly.
+
+ - You field a ground ball.
+
+ - You successfully initiate a power boost pitch.
+
+CAUSE
+=====
+
+This behavior can occur because all of these events initiate the playback of an
+audio clip.
+
+
+RESOLUTION
+==========
+
+To work around this issue, turn off sounds in Baseball 2001.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft Baseball 2001.
+
+MORE INFORMATION
+================
+
+To turn off sounds in Baseball 2001:
+
+1. Start Baseball 2001.
+
+2. On the Home Plate screen, click Options.
+
+3. Click the Sounds tab.
+
+4. Move the Commentator slider to Off.
+
+5. Move the Crowd & Stadium slider to Off.
+
+6. Move the Game Sounds slider to Off.
+
+7. Move the Music slider to Off.
+
+8. Move the Button Sounds slider to Off.
+
+9. Click OK.
+
+Additional query words: 1.00 msgame bball bb2001 base ball stops freeze pop-up
+
+======================================================================
+Keywords          : kbdisplay kbsound kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

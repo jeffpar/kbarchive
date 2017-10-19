@@ -1,0 +1,57 @@
+DOCUMENT:Q256936  24-JUN-2000  [sms]
+TITLE   :SMS: Showgrps Tool Added to Support.exe in Service Pack 2
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0 SP2
+OPER/SYS:
+KEYWORDS:kbtool kbsms200 kbsms200bug kbsms200sp2fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Support.exe file included on the Systems Management Server (SMS) Service
+Pack 1 CD-ROM includes many useful tools for SMS 2.0 administrators. The
+Showgrps.exe tool is added to Service Pack 2 through the Support.exe file.
+
+For additional information on how to obtain the latest Systems Management Server
+2.0 service pack, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+   Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+
+MORE INFORMATION
+================
+
+Showgrps.exe is a Microsoft Windows NT Resource Kit command-line tool that
+displays the groups to which an individual user belongs. To extract and install
+the support tools, run the Support.exe file.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbtool kbsms200 kbsms200bug kbsms200sp2fix 
+Technology        : kbSMSSearch kbSMS200SP2
+Version           : winnt:2.0 SP2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

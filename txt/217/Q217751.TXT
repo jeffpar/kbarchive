@@ -1,0 +1,126 @@
+DOCUMENT:Q217751  11-JAN-2001  [vbwin]
+TITLE   :HOWTO: Get Current User Locale ID in VB EXE Without Restarting
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbActiveX kbAPI kbLocalSvr kbSDKWin32 kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Locale ID (LCID) is a 32-bit value that consists of a language ID plus a
+sort ID and other reserved bits. A language ID is a 16-bit value consisting of a
+primary language ID and a secondary language ID. After changes have been made to
+the Language setting in the Regional Settings applet, it is sometimes necessary
+to get the current user LCID value either in the IDE or within an application
+without closing down the application. This can be done by calling
+GetThreadLocale from within an ActiveX EXE server. The server creates its own
+thread and, by calling GetThreadLocale, the current value can be obtained.
+
+Without using an out-of-process server, the value obtained by calling
+GetThreadLocale from within a standard EXE application might not be current. You
+might also see that the value does not get updated in the IDE.
+
+Some of the API calls that use the LCID as a parameter are GetLocaleInfo,
+GetTimeFormat, and GetDateFormat.
+
+MORE INFORMATION
+================
+
+To create server and client programs to illustrate this technique, do the
+following:
+
+Create the ActiveX server to get the current value of the LCID.:
+
+1. Create a new ActiveX EXE project in Visual Basic. Class1 is created by
+   default.
+
+2. In the Class Module, Class1, place the following code:
+
+   Private Declare Function GetThreadLocale Lib "kernel32" () As Long
+   Public Function GetLCID() As Long
+       GetLCID = GetThreadLocale()
+   End Function
+
+3. Click on the Properties menu and select Project1.Properties.
+
+4. On the General tab, set the Project Name and the description to lcidsrvr.
+
+5. Also on the General tab, set the Threading model to Thread Per Object.
+
+6. Click OK.
+
+7. From the File menu, click on the Make Project1.exe item and enter "LCIDsrv"
+   (without the quotation marks) as the name of the EXE.
+
+8. Click OK.
+
+Create the client application and run the example.:
+
+1. Bring up another instance of Visual Basic and create a Standard EXE project.
+   Form1 is created by default.
+
+2. Place a TextBox (Text1) and a CommandButton (Command1) on Form1.
+
+3. Place the following code in the General Declarations section of Form1:
+
+   Private Declare Function GetThreadLocale Lib "kernel32" () As Long
+   Private Sub Command1_Click()
+       Dim LCID As Long
+       Dim oLCID As Object
+       ' Use out of proc server to get LCID in separate thread
+       Set oLCID = CreateObject("lcidsrvr.class1")
+       LCID = oLCID.GetLCID
+       Text1.Text = LCID & " (" & Hex$(LCID) & ")"
+   End Sub
+
+4. Bring up the Regional Settings applet by clicking on the Start button and
+   selecting Settings. Click on Control Panel, and then click on Regional
+   Settings.
+
+5. Set the Language on the Regional Settings tab to English (United States) and
+   click the Apply button. (If the Language is already set to English (United
+   States), leave as is.)
+
+6. Run the application and click Command1. You should see the current value of
+   the LCID appear in the TextBox. For US English, this value is 1033 or 409
+   hex.
+
+7. Change the Language in Regional Settings to English (United Kingdom) and
+   click the Apply button.
+
+8. Click Command1 and the LCID value displayed in the TextBox is 2057 or 809
+   hex.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbActiveX kbAPI kbLocalSvr kbSDKWin32 kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,59 @@
+DOCUMENT:Q160908  05-JUN-2001  [iis]
+TITLE   :Refresh Screen Link Does Not Work in PWS FTP Administration
+PRODUCT :Internet Information Server
+PROD/VER::1.0,2,2.1
+OPER/SYS:
+KEYWORDS:mspwsw95 osr2 win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Personal Web Server version 1.0 for Windows 95 
+ - the operating system: Microsoft Windows 95, versions 2, 2.1 
+-------------------------------------------------------------------------------
+
+NOTE: The information in this article applies only to the version
+of Microsoft Personal Web Server for Windows 95 that is included with
+Windows 95 OEM Service Release 2 (OSR2).
+
+SYMPTOMS
+========
+
+When you click the Refresh Screen link in the Current FTP Sessions page of the
+FTP (File Transfer Protocol) Administration service, the screen is not
+refreshed.
+
+CAUSE
+=====
+
+The Refresh Screen link in the Current FTP Sessions page does not work.
+
+RESOLUTION
+==========
+
+To refresh the screen, right-click inside the browser window, and then click
+Refresh.
+
+Additional query words: 1.00 95
+
+======================================================================
+Keywords          : mspwsw95 osr2 win95 
+Technology        : kbOSWin95 kbOSWinSearch kbPersWebServSearch kbZNotKeyword3 kbPersWebServ100Win95
+Version           : :1.0,2,2.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

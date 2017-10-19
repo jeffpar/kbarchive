@@ -1,0 +1,70 @@
+DOCUMENT:Q163245  05-FEB-2000  [foxpro]
+TITLE   :BUG: StatusBar Ctrl Does Not Show Size Grip in Top-Level Form
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbinterop kbvfp kbvfp500aBUG kbvfp500bugkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Microsoft StatusBar control on a top-level form does not display the size
+grip--the three diagonal lines at the lower left of the status bar. Windows 95
+interface standards state that top-level forms should have size grips if they
+are resizable. A top-level form is resizable by definition.
+
+When used on a form with the ShowWindow property set to other than 2 - As
+Top-Level Form, the StatusBar does not display the size grip. But this is not a
+Windows 95 specification for 0 - In Screen, or 1 - In Top-level Form forms.
+
+CAUSE
+=====
+
+The StatusBar control is a member of Comctl32.dll. At the time Visual FoxPro for
+Windows, version 5.0 was released, the StatusBar control did display a size grip
+on a top-level form.
+
+Several other Microsoft developer's products that have been released subsequently
+replace the Comctl32.dll that was installed with Visual FoxPro 5.0.
+
+When placed in the OLE Container Control on a Visual FoxPro 5.0 form, the
+StatusBar control that is in the later version of Comctl32.dll does not exhibit
+the size grip, although the form can be resized by grabbing the lower-right
+corner with the mouse pointer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+Additional query words: kbvfp500 kbvfp500a kbvfp600
+
+======================================================================
+Keywords          : kbinterop kbvfp kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

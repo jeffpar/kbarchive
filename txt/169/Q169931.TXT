@@ -1,0 +1,324 @@
+DOCUMENT:Q169931  31-JUL-2001  [word97]
+TITLE   :WD97: Word 97 for Windows 3.5" Disk Contents (Disks 7-12)
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdiskdir winword word97 kbdir
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the file names, file sizes, and the files that each of the
+cabinet (.cab) files contains for Microsoft Word 97 for Windows. This article
+lists the contents of disks 7-12 (18 disks total) for the 3.5-inch DMF disks.
+
+You can browse the contents of the cabinet files with the CABFILE Viewer utility,
+which is located on Disk 1.
+
+For more information about the CABFILE Viewer utility, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q163811 OFF97: How to Use the CABFILE Viewer Utility
+
+MORE INFORMATION
+================
+
+Disk 7
+------
+
+   File Name        File Size      File Date  Time
+   -------------------------------------------------
+
+   Wrd97_7.cab      1,716,224      01-17-97   4:37am
+
+Contents of Wrd97_7.cab
+
+   File Date    Time           File Size   File Name
+   ------------------------------------------------------------------------
+
+   Office\Wdmain8.hlp : Starts in cabinet Wrd97_6.cab on disk 6
+
+   01-17-1997   10:55:14a ----    81,391   Office\Wdmain8.cnt
+   01-17-1997    3:00:42a ----   691,916   Office\Wdmain8.aw
+   01-17-1997   10:55:22a ----   404,638   Office\Wdtip8.hlp
+   01-17-1997   10:55:22s ----    74,713   Office\Wdnew8.hlp
+   01-17-1997   10:55:20a ----     1,713   Office\Wdnew8.cnt
+   01-17-1997    5:21:32p ----   187,392   Office\Schdmapi.dll
+   01-17-1997    5:26:24p ----    40,960   Office\Wwpab.cnv
+   01-17-1997   10:58:02a ----   444,027   Os\Msapps\Proof\Mswds_en.lex
+   01-17-1997   10:58:12a ---- 1,052,485   Os\Msapps\Vba\Veenlr3.hlp
+                      9 Files  2,979,235 bytes
+
+Disk 8
+------
+
+   File Name        File Size      File Date  Time
+   -------------------------------------------------
+
+   Wrd97_8.cab      1,716,224      01-17-97   4:37am
+
+Contents of Wrd97_8.cab
+
+   File Date    Time           File Size   File Name
+   ------------------------------------------------------------------------
+
+   Os\Msapps\Vba\Veenlr3.hlp : Starts in cabinet Wrd97_7.cab on disk 7
+
+   01-17-1997   10:58:08a ----   209,406   Os\Msapps\Vba\Veena3.aw
+   01-17-1997   10:58:08a ----    21,576   Os\Msapps\Vba\Veenlr3.cnt
+   01-17-1997   10:58:14a ----   366,147   Os\Msapps\Vba\Veenui3.hlp
+   01-17-1997   10:58:06a ----   210,191   Os\Msapps\Vba\Veen3.aw
+   01-17-1997   10:58:12a ----    14,472   Os\Msapps\Vba\Veenui3.cnt
+   01-17-1997   10:58:12a ----   149,149   Os\Msapps\Vba\Veenob3.hlp
+   01-17-1997   10:58:12a ----     5,690   Os\Msapps\Vba\Veenob3.cnt
+   01-17-1997   10:58:12a ----    24,734   Os\Msapps\Vba\Veenmc3.hlp
+   01-17-1997   10:58:08a ----    55,589   Os\Msapps\Vba\Veenhw3.hlp
+   01-17-1997   10:58:08a ----     2,390   Os\Msapps\Vba\Veenhw3.cnt
+   01-17-1997   10:58:08a ----   119,327   Os\Msapps\Vba\Veencn3.hlp
+   01-17-1997   10:58:08a ----     3,581   Os\Msapps\Vba\Veencn3.cnt
+   01-17-1997   10:58:08a ----    76,366   Os\Msapps\Vba\Veendf3.hlp
+   01-17-1997   11:35:58a ----    26,454   Clipart\Popular\Agree.wmf
+   01-17-1997   11:35:58a ----     1,494   Clipart\Popular\Amconfus.wmf
+   01-17-1997   11:35:58a ----     3,190   Clipart\Popular\Amdisast.wmf
+   01-17-1997   11:35:58a ----     1,718   Clipart\Popular\Amhappy.wmf
+   01-17-1997   11:35:58a ----     1,622   Clipart\Popular\Amidea.wmf
+   01-17-1997   11:35:58a ----     4,342   Clipart\Popular\Amorgani.wmf
+   01-17-1997   11:35:58a ----     2,102   Clipart\Popular\Amproble.wmf
+   01-17-1997   11:35:58a ----     1,398   Clipart\Popular\Amvictor.wmf
+   01-17-1997   11:35:58a ----     3,254   Clipart\Popular\Amwin.wmf
+   01-17-1997   11:35:58a ----     4,630   Clipart\Popular\Arrows1.wmf
+   01-17-1997   11:35:58a ----     2,838   Clipart\Popular\Arrows2.wmf
+   01-17-1997   11:35:58a ----     2,454   Clipart\Popular\Arrows3.wmf
+   01-17-1997   11:35:58a ----     3,382   Clipart\Popular\Arrows4.wmf
+   01-17-1997   11:35:58a ----       758   Clipart\Popular\Arrows5.wmf
+   01-17-1997   11:35:58a ----     2,358   Clipart\Popular\Arrows6.wmf
+   01-17-1997   11:35:58a ----     1,686   Clipart\Popular\Arrows7.wmf
+   01-17-1997   11:35:58a ----       982   Clipart\Popular\Arrows8.wmf
+   01-17-1997   11:35:58a ----     1,878   Clipart\Popular\Arrowsgn.wmf
+   01-17-1997   11:35:58a ----     9,494   Clipart\Popular\Bandaid.wmf
+   01-17-1997   11:35:58a ----     4,022   Clipart\Popular\Beartrap.wmf
+   01-17-1997   11:35:58a ----     9,558   Clipart\Popular\Bomb.wmf
+   01-17-1997   11:35:58a ----     9,878   Clipart\Popular\Brick.wmf
+   01-17-1997   11:35:58a ----    10,806   Clipart\Popular\Building.wmf
+   01-17-1997   11:35:58a ----     7,222   Clipart\Popular\Car.wmf
+   01-17-1997   11:36:00a ----    34,806   Clipart\Popular\Champgne.wmf
+   01-17-1997   11:36:00a ----       758   Clipart\Popular\Checkmrk.wmf
+   01-17-1997   11:36:00a ----     5,462   Clipart\Popular\Clap.wmf
+   01-17-1997   11:36:00a ----    10,550   Clipart\Popular\Clock.wmf
+   01-17-1997   11:36:00a ----    26,358   Clipart\Popular\Coins.wmf
+   01-17-1997   11:36:00a ----     6,838   Clipart\Popular\Darts.wmf
+   01-17-1997   11:36:00a ----     2,198   Clipart\Popular\Destryer.wmf
+   01-17-1997   11:36:00a ----     2,966   Clipart\Popular\Dice.wmf
+   01-17-1997   11:36:00a ----     3,510   Clipart\Popular\Diploma.wmf
+   01-17-1997   11:36:00a ----     6,198   Clipart\Popular\Dominoes.wmf
+   01-17-1997   11:36:00a ----     5,078   Clipart\Popular\Donkey.wmf
+   01-17-1997   11:36:00a ----     2,678   Clipart\Popular\Door.wmf
+   01-17-1997   11:36:00a ----     4,086   Clipart\Popular\Dove.wmf
+   01-17-1997   11:36:00a ----    15,318   Clipart\Popular\Dynamite.wmf
+   01-17-1997   11:36:00a ----     7,542   Clipart\Popular\Examine.wmf
+   01-17-1997   11:36:00a ----     8,758   Clipart\Popular\Fistslam.wmf
+   01-17-1997   11:36:00a ----     8,182   Clipart\Popular\Flower.wmf
+   01-17-1997   11:36:00a ----     1,814   Clipart\Popular\Hammer.wmf
+   01-17-1997   11:36:00a ----    22,326   Clipart\Popular\Hatecomp.wmf
+   01-17-1997   11:36:00a ----     3,862   Clipart\Popular\Hndshak1.wmf
+   01-17-1997   11:36:00a ----     6,038   Clipart\Popular\Hndshak2.wmf
+   01-17-1997   11:36:00a ----    10,422   Clipart\Popular\Hndshak3.wmf
+   01-17-1997   11:36:00a ----     7,414   Clipart\Popular\Jetplane.wmf
+   01-17-1997   11:36:00a ----     4,054   Clipart\Popular\Jigsaw.wmf
+   01-17-1997   11:36:00a ----     3,478   Clipart\Popular\Key.wmf
+   01-17-1997   11:36:00a ----     5,334   Clipart\Popular\Light.wmf
+   01-17-1997   11:36:00a ----     3,606   Clipart\Popular\Lion.wmf
+   01-17-1997   11:36:00a ----     8,214   Clipart\Popular\Lock.wmf
+   01-17-1997   11:36:00a ----     8,534   Clipart\Popular\Magichat.wmf
+   01-17-1997   11:36:00a ----     6,262   Clipart\Popular\Magnify.wmf
+   01-17-1997   11:36:00a ----     4,950   Clipart\Popular\Meeting.wmf
+   01-17-1997   11:36:00a ----    12,054   Clipart\Popular\Meeting2.wmf
+   01-17-1997   11:36:00a ----    10,358   Clipart\Popular\Money.wmf
+   01-17-1997   11:36:00a ----     2,198   Clipart\Popular\Moneybag.wmf
+   01-17-1997   11:36:00a ----    14,422   Clipart\Popular\Oildrill.wmf
+   01-17-1997   11:36:00a ----     5,910   Clipart\Popular\Openhand.wmf
+   01-17-1997   11:36:02a ----     3,766   Clipart\Popular\Ptrup.wmf
+   01-17-1997   11:36:02a ----     7,190   Clipart\Popular\Rabbit.wmf
+   01-17-1997   11:36:02a ----     2,678   Clipart\Popular\Ribbon.wmf
+   01-17-1997   11:36:02a ----    14,230   Clipart\Popular\Runner.wmf
+   01-17-1997   11:36:02a ----    10,422   Clipart\Popular\Sailboat.wmf
+   01-17-1997   11:36:02a ----     2,902   Clipart\Popular\Scales.wmf
+   01-17-1997   11:36:02a ----     4,662   Clipart\Popular\Shark.wmf
+   01-17-1997   11:36:02a ----    12,854   Clipart\Popular\Soccer.wmf
+   01-17-1997   11:36:02a ----     1,334   Clipart\Popular\Star.wmf
+   01-17-1997   11:36:04a ----     2,966   Clipart\Popular\Stop.wmf
+   01-17-1997   11:36:04a ----     6,646   Clipart\Popular\Stoplght.wmf
+   01-17-1997   11:36:04a ----    20,022   Clipart\Popular\Tennis.wmf
+   01-17-1997    9:54:42p ----     5,302   Clipart\Popular\Thumbdn.wmf
+   01-17-1997   11:36:04a ----     7,734   Clipart\Popular\Triumph.wmf
+   01-17-1997   11:36:04a ----     3,862   Clipart\Popular\Trophy.wmf
+   01-17-1997   11:36:04a ----     6,870   Clipart\Popular\Turtle.wmf
+   01-17-1997   11:36:04a ----    16,918   Clipart\Popular\Wearhat.wmf
+   01-17-1997   11:36:04a ----    11,702   Clipart\Popular\Whatnow.wmf
+   01-17-1997   11:36:04a ----     1,590   Clipart\Popular\Yinyang.wmf
+   01-17-1997   11:36:02a ----   480,768   Clipart\Popular\Pop97.cag
+   01-17-1997   11:40:04a ----    12,288   Os\System\Picstore.dll
+   01-17-1997   11:54:30a ----    27,136   Os\System\Pubdlg.dll
+   01-17-1997    5:29:08p ----    44,032   Os\Msapps\Artgalry\Artgalry.exe
+   01-17-1997    5:29:08p ----   339,968   Os\Msapps\Artgalry\Artgalry.dll
+   01-17-1997   11:54:04a ----    49,346   Os\Msapps\Artgalry\Artgalry.hlp
+   01-17-1997   11:54:04a ----    16,134   Os\Msapps\Artgalry\Qartglry.hlp
+   01-17-1997   11:54:02a ----     3,592   Os\Msapps\Artgalry\Artgalry.cnt
+   01-17-1997   11:39:14a ----         2   Os\Artgalry.cag
+   01-17-1997   11:54:04a ----     6,421   Os\Msapps\Artgalry\Artgalry.srg
+   01-17-1997   11:39:20a ----       115   Os\Msapps\Artgalry\Www_clip.url
+   01-17-1997    8:47:30p ---- 1,531,152   Os\Msapps\Proof\Msgren32.dll
+                    104 Files  4,323,278 bytes
+
+Disk 9
+------
+
+   File Name        File Size      File Date  Time
+   -------------------------------------------------
+
+   Wrd97_9.cab      1,716,224      01-17-97   4:37am
+
+Contents of Wrd97_9.cab
+
+   File Date    Time            File Size   File Name
+   ------------------------------------------------------------------------
+
+   Os\Msapps\Proof\Msgren32.dll : Starts in cabinet Wrd97_8.cab on disk 8
+
+   01-17-1997   10:57:52a ----  1,672,698   Os\Msapps\Proof\Msgr_en.lex
+                      1 File    1,672,698 bytes
+
+Disk 10
+-------
+
+   File Name        File Size      File Date  Time
+   -------------------------------------------------
+
+   Wrd97_10.cab     1,716,224      01-17-97   4:37am
+
+Contents of Wrd97_10.cab
+
+   File Date    Time             File Size   File Name
+   ------------------------------------------------------------------------
+
+   Os\Msapps\Proof\Msgr_en.lex : Starts in cabinet Wrd97_10.cab on disk 10
+
+   01-17-1997   10:50:38a ----        185    Wordspec.ini
+   01-17-1997    5:24:46p ----     49,152    Office\Email.dot
+   01-17-1997   10:50:54a ----     51,388    Office\Borders\Msart14.bdr
+   01-17-1997   10:50:54a ----     27,412    Office\Borders\Msart15.bdr
+   01-17-1997   10:50:56a ----     57,646    Office\Borders\Msart3.bdr
+   01-17-1997   10:50:56a ----     14,594    Office\Borders\Msart4.bdr
+   01-17-1997   10:50:54a ----     47,188    Office\Borders\Msart2.bdr
+   01-17-1997   10:50:56a ----     15,788    Office\Borders\Msart5.bdr
+   01-17-1997   10:50:56a ----     55,222    Office\Borders\Msart6.bdr
+   01-17-1997   10:50:56a ----      3,876    Office\Borders\Msart7.bdr
+   01-17-1997   10:50:56a ----     49,098    Office\Borders\Msart8.bdr
+   01-17-1997   10:50:56a ----     50,838    Office\Borders\Msart9.bdr
+   01-17-1997   10:50:54a ----      9,292    Office\Borders\Msart10.bdr
+   01-17-1997   10:50:54a ----     32,246    Office\Borders\Msart1.bdr
+   01-17-1997   10:50:54a ----     30,920    Office\Borders\Msart11.bdr
+   01-17-1997   10:50:54a ----     58,756    Office\Borders\Msart12.bdr
+   01-17-1997   10:50:54a ----     28,368    Office\Borders\Msart13.bdr
+   01-17-1997   11:32:56a ----  5,317,904    Office\Winword.exe
+                     18 Files   5,899,873 bytes
+
+Disk 11
+-------
+
+   File Name        File Size      File Date  Time
+   -------------------------------------------------
+
+   Wrd97_11.cab     1,716,224      01-17-97   4:37am
+
+Contents of Wrd97_11.cab
+
+   File Date    Time             File Size   File Name
+   ------------------------------------------------------------------------
+
+   Office\Winword.exe : Starts in cabinet Wrd97_10.cab on disk 10
+
+   01-17-1997   11:32:44a ----   1,157,904   Office\Wwintl32.dll
+                      1 File     1,157,904 bytes
+
+Disk 12
+-------
+
+   File Name        File Size      File Date  Time
+   -------------------------------------------------
+
+   Wrd97_12.cab     1,716,224      01-17-97   4:37am
+
+Contents of Wrd97_12.cab
+
+   File Date    Time             File Size   File Name
+   ------------------------------------------------------------------------
+
+   Office\Wwintl32.dll : Starts in cabinet Wrd97_11.cab on disk 11
+
+   01-17-1997    6:00:18p ----      26,907   Office\Win.srg
+   01-17-1997    9:51:48p ----      10,752   Os\Shellnew\Win.doc
+   01-17-1997    8:28:48p ----      29,613   Office\Wdread8.txt
+   01-17-1997   11:32:54a ----     459,776   Office\Ms.olb
+   01-17-1997    5:24:48p ----      49,152   Office\Hightech.dot
+   01-17-1997    5:24:48p ----      49,664   Office\Flame.dot
+   01-17-1997    5:24:48p ----      47,616   Office\Urgent.dot
+   01-17-1997    5:24:48p ----      48,128   Office\Ocean.dot
+   01-17-1997    5:24:48p ----      53,760   Office\Rain.dot
+   01-17-1997    5:24:48p ----      50,688   Office\Midnight.dot
+   01-17-1997   11:40:44a ----      12,288   Template\Outlook\Email.oft
+   01-17-1997   11:40:44a ----      12,288   Template\Outlook\Hightech.oft
+   01-17-1997   11:40:44a ----      12,288   Template\Outlook\Flame.oft
+   01-17-1997   11:40:44a ----      12,288   Template\Outlook\Urgent.oft
+   01-17-1997    2:52:06a ----      14,848   Tempalte\Outlook\Ocean.oft
+   01-17-1997   11:40:44a ----      12,288   Template\Outlook\Rain.oft
+   01-17-1997   11:40:44a ----      12,288   Template\Outlook\Midnight.oft
+   01-17-1997   11:39:12a ----     420,272   Office\Wordmail\Wordmail.dll
+   01-17-1997   10:56:48a ----       2,286   Office\Wordmail\Wordmail.reg
+   01-17-1997   10:56:48a ----         766   Office\Wordmail\Wordf1s.ico
+   01-17-1997   10:56:48a ----         766   Office\Wordmail\Wordf1l.ico
+   01-17-1997   10:56:48a ----         726   Office\Wordmail\Wordf1.cfg
+   01-17-1997   10:56:48a ----         799   Office\Wordmail\Mapif1.cfg
+   01-17-1997   10:56:48a ----         766   Office\Wordmail\Mapif1L.ico
+   01-17-1997   10:56:48a ----         766   Office\Wordmail\Mapif1S.ico
+   01-17-1997    5:27:30p ----      43,888   Office\Station.dll
+   01-17-1997   11:05:44a ----     149,504   Os\System\Mfcans32.dll
+   01-17-1997   10:55:04a ----   2,519,191   Office\Vbawrd8.hlp
+                     28 Files    4,054,362 bytes
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q169930 WD97: Word 97 for Windows 3.5" Disk Contents (Disks 1-6)
+
+   Q169933 WD97: Word 97 for Windows 3.5" Disk Contents (Disks 13-18)
+
+Additional query words: 8.0 diskette floppy floppies 3 1/2 3.5 contents listing directory dir
+
+======================================================================
+Keywords          : kbdiskdir winword word97 kbdir 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

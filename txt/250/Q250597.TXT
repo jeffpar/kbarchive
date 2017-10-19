@@ -1,0 +1,88 @@
+DOCUMENT:Q250597  24-OCT-2000  [winnt]
+TITLE   :PRB: Windows 2000 CD Not Found Discover Program Is Started
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbOSWin2000 kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Windows 2000 Professional is started for the first time, the
+Getting Started with Windows 2000 dialog box appears for each user. If you click
+Start to start the Discover Windows program, the Windows 2000 CD Not Found
+dialog box is displayed with the message "Please insert your Windows 2000 CD,
+and then Click OK. To run the Discover 2000 tour from a different location,
+Click Cancel."
+
+CAUSE
+=====
+
+The Discover Windows program cannot find the Discover folder, which is on the
+Windows 2000 Professional CD-ROM (CD).
+
+RESOLUTION
+==========
+
+To correct this problem, use one of the following resolutions:
+
+ - Insert the Windows 2000 Professional CD in the CD-ROM drive of the local
+   computer. When the Windows 2000 CD Not Found dialog box is displayed, click
+   OK to run the Discover Windows program.
+
+-or-
+
+ - If you want to start the Discover Windows program from a different location
+   on the local hard disk, copy the Discover folder from the Windows 2000
+   Prefessional CD to the \%SystemRoot% folder on the local hard disk. When you
+   start the Discover Windows program, click OK on the Windows 2000 CD Not Found
+   dialog box. To run the Discover 2000 tour from a different location, click
+   Cancel, and then click Cancel again.
+
+   The Discover Tour Not Found dialog box is displayed with the message "The
+   Discover Tour could not be located. Please indicate the location of the
+   required files." Type the location of the files as
+   "<drive_letter>\%SystemRoot%" (without the quotation marks) in the text
+   box to start the Discover Windows program from the local hard disk.
+
+   You only need to do this once. The next time that you start the Discover
+   Windows program, the Windows 2000 CD Not Found dialog box will not be
+   displayed.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: opk sbk discover win2k
+
+======================================================================
+Keywords          : kbOSWin2000 kbDSupport 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,132 @@
+DOCUMENT:Q257538  19-JUL-2000  [exchange]
+TITLE   :XFOR: How to Obtain Additional Information from Internet Mail
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0,5.5
+OPER/SYS:
+KEYWORDS:kbui exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In e-mail client software, Internet mail and unsolicited commercial e-mail (UCE)
+in an Exchange Server recipient's mailbox may be displayed without the
+recipient's display name or Simple Mail Transfer Protocol (SMTP) address in the
+To line. Instead, the To line is either blank, or it contains other recipients'
+names or the address of an external distribution list. The From line may also
+contain incorrect information, or it may be missing information.
+
+This article explains how to view the Request for Comments (RFC) 821 portion of
+the Internet mail message to obtain information that is not displayed in e-mail
+client software.
+
+MORE INFORMATION
+================
+
+Each Internet mail message contains two portions: the RFC 821 portion (sometimes
+called the P1 header) and the RFC 822 portion (sometimes called the P2 body).
+When e-mail client software receives Internet messages, you can only view the
+RFC 822 portion in the e-mail client software. Although the RFC 822 portion
+contains a To and From field that the client uses, these fields technically do
+not need to be correct because they are not used to route SMTP messages.
+
+Therefore, in junk e-mail (or "spam" e-mail), UCE, and outside e-mail that is
+made to falsely appear to come from an authorized user (or "spoofed" e-mail),
+addresses in the To and From fields are often replaced with incorrect
+information or are missing. The data that is used to direct the message to the
+recipient is actually contained in the RFC 821 portion of the SMTP message,
+which is further explained below.
+
+A common problem can occur if a recipient has multiple SMTP addresses and the
+recipient wants to unsubscribe from a junk e-mail mailing list. You may find it
+difficult to determine which SMTP address to use to unsubscribe the recipient
+from the sender, because the subscribed address is not displayed in the message.
+You can only determine the SMTP address if you perform a network trace or enable
+SMTP protocol logging to examine the RFC 821 portions of SMTP traffic.
+
+To determine the e-mail address that was used to route a message to a recipient,
+or to gather more information about a spoofed message, search the SMTP protocol
+logs:
+
+1. Make sure that SMTP protocol logging is enabled. If the message was delivered
+   when logging was disabled, you must enable logging and wait until the next
+   occurrence of the unwanted message. To enable SMTP protocol logging:
+
+   a. Open the Internet Mail Service properties, and then click the Diagnostics
+      Logging tab.
+
+   b. Under Category, click SMTP Protocol Log, and then click Maximum.
+
+   c. Click Apply to apply the changes, and then restart the Internet Mail
+      Service.
+
+2. As soon as the message arrives, stop the Internet Mail Service.
+
+3. Move all of the SMTP protocol log files (*.log) from the Exchsrvr\Imcdata\Log
+   folder to a new folder of your choice.
+
+4. Restart the Internet Mail Service.
+
+5. Perform text searches on all of the .log files that you moved by matching
+   strings from the offending message with text in the files. (You can
+   facilitate this by performing an advanced find on the folder to which you
+   moved the .log files and using the Containing Text field.)
+
+6. If you used advanced find, at least one log file that contains text from the
+   message should be displayed in the output window. Open the log file or files
+   and find the message that contains the matched text. From the matched text,
+   scroll up until you see the first occurrence of the word "DATA." This point
+   marks the end of the RFC 821 portion of the message and the beginning of the
+   RFC 822 portion of the message.
+
+The RFC 821 portion of the message contains at least the following fields and
+commands:
+
+ - MAIL FROM. This field specifies the SMTP address of the originator or SMTP
+   forwarding host.
+
+ - RCPT TO. This field specifies the SMTP address that was used to deliver the
+   message to the recipient.
+
+ - DATA. This command indicates the end of the P1 portion of the message.
+
+For additional information about generating junk e-mail and spoof e-mail
+messages, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q199051 XFOR: Incoming SMTP Messages Missing To, From, and/or Subject
+
+It is safe to delete the log files when you stop the Internet Mail Service. To
+prevent disk space from running out, periodically stop the Internet Mail Service
+and remove the .log files, or disable SMTP protocol logging altogether.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbui exc5 exc55 
+Component         : IMC IMS
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

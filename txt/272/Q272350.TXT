@@ -1,0 +1,82 @@
+DOCUMENT:Q272350  06-AUG-2002  [winnt]
+TITLE   :Can't Set Admin Permission on NT4 Clusters w/ Cluster Administr
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000,4.0
+OPER/SYS:
+KEYWORDS:kbenv kbtool w2000mscs kbClustering
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Datacenter Server 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are attempting to remotely administer a Windows NT 4.0 Clustering
+server by using the Windows 2000 Cluster Administrator tool, there is no option
+available by which to set authorization permissions for cluster administration.
+
+CAUSE
+=====
+
+The administration extension for the new Security tab is not registered on the
+Windows NT 4.0 cluster.
+
+RESOLUTION
+==========
+
+To enable this functionality, execute the following command from a command
+prompt of the Windows 2000 computer
+
+   %SystemRoot%\cluster\cluster.exe -c:NT4ClusterName /regext:cluadmex.dll
+
+where NT4ClusterName is the name of the cluster. For example:
+
+   c:\winnt\cluster\cluster.exe -c:MYCLUSTER /regext:cluadmex.dll
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft Windows 2000.
+
+MORE INFORMATION
+================
+
+When you are using Windows NT 4.0 Cluster Administrator, permissions on Windows
+NT 4.0 clusters are assigned by using the Permissions button on the General tab
+of the cluster properties sheet. In Windows 2000 Cluster Administrator, this
+functionality is located on the Security tab. When you are using the Windows
+2000 Cluster Administrator to connect to a Windows NT 4.0 cluster, neither of
+these methods are available until the Cluadmex.dll file has been successfully
+registered on the Windows NT 4.0 cluster nodes. After successful registration,
+the Security tab becomes available on all future Windows 2000 Cluster
+Administrator remote connections.
+
+Additional query words: mscs cluadmin security
+
+======================================================================
+Keywords          : kbenv kbtool w2000mscs kbClustering 
+Technology        : kbWinNTsearch kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000DataServ kbwin2000DataServSearch kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbwin2000Search kbWinAdvServSearch kbWinDataServSearch
+Version           : :2000,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

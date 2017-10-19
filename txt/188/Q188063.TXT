@@ -1,0 +1,55 @@
+DOCUMENT:Q188063  30-JUL-2001  [sms]
+TITLE   :SMS: SMS 1.2 SP3 Cannot Be Distributed Using PCM as a Service
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbsetup kbPCM smssetup smspcm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Package Command Manager (PCM) as a service cannot be used to distribute and run
+the Systems Management Server 1.2 Service Pack 3 upgrade.
+
+MORE INFORMATION
+================
+
+To use PCM as a service, you must use the Package setup to set the package to
+run as Automated Command Line and System Background Task. For this to function,
+the program must NOT require user input of any kind. The setup program employed
+by Systems Management Server to apply service pack upgrades does not support the
+use of silent or unattended installations. Therefore, it is not possible to
+update a primary site to Systems Management Server 1.2 Service Pack 3 by means
+of the PCM service. You must use PCM as an application, and it will require user
+interaction to install successfully.
+
+Additional query words: SP SP3 instal installation instalation
+
+======================================================================
+Keywords          : kbsetup kbPCM smssetup smspcm 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

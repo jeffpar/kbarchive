@@ -1,0 +1,83 @@
+DOCUMENT:Q244531  02-MAY-2001  [odbc]
+TITLE   :FIX:SQL DSN Revert from Standard Security to Integrated Security
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER::3.7
+OPER/SYS:
+KEYWORDS:kbODBC kbGrpDSVCDB kbGrpDSMDAC kbODBC370bug kbMDAC260fix kbMDACNoSweep
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft ODBC Driver for SQL Server, version 3.7 
+-------------------------------------------------------------------------------
+
+BUG #: 56502 (SQLBUG_70)
+
+SYMPTOMS
+========
+
+Using ODBC Administrator, If you reopen an existing SQL Server DSN and click
+Finish on the first screen, it may revert the security mode from standard SQL
+security to integrated security. This may cause login failure when you connect
+to SQL Server if the requirements for Windows NT Authentication are not
+satisfied.
+
+RESOLUTION
+==========
+
+The workaround is not to click Finish on the first screen when you edit an
+existing SQL Server DSN. If you go through the other screens during second edit
+of DSN, the problem will not occur.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem was corrected in MDAC 2.6.
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Problem
+------------------------------
+
+1. Set up a DSN using SQL Server ODBC driver with standard SQL security.
+
+2. On the last screen , click Finish and make sure the Use Integrated Security
+   attribute is selected as "No".
+
+3. Click OK to save the DSN.
+
+4. Reopen the DSN and click Finish on the first screen, notice the Use
+   Integrated Security attribute has changed to "Yes".
+
+5. Test fails if you are logged on as a non-admin account.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbODBC kbGrpDSVCDB kbGrpDSMDAC kbODBC370bug kbMDAC260fix kbMDACNoSweep 
+Technology        : kbSQLServSearch kbAudDeveloper kbODBCSearch kbODBCSQLServ370
+Version           : :3.7
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,69 @@
+DOCUMENT:Q130610  11-FEB-2000  [foxpro]
+TITLE   :How to Call a Wizard in a Program
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbcode
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To start a Wizard from code in the Command window or in a program, use the
+_WIZARD system variable. This system variable contains the full path and
+filename of the currently assigned wizard application. By default, this is set
+to the C:\VFP\WIZARD.APP wizard application that ships with Visual FoxPro. To
+launch the full list of available wizards, use this command:
+
+      DO (_WIZARD)
+
+To call a specific type of wizard, pass a parameter to WIZARD.APP such as:
+
+      DO (_WIZARD) WITH 'FORM'
+
+This invokes the Auto Form Wizard if you have a table open. Or you can call a
+type of wizard such as:
+
+      DO (_WIZARD) WITH 'QUERY'
+
+This opens the Wizard Selection dialog box with only the Query type of wizards
+listed.
+
+The WIZARD.DBF free table located in the C:\VFP\WIZARDS directory contains the
+names, descriptions, types, parameters, and other information for all the
+wizards included with Visual FoxPro. The Type field in the WIZARD.DBF table
+contains the string or name used as the parameter to passed to WIZARD.APP.
+
+To directly call the Form Designer wizard, and by pass the dialog boxes, use the
+following:
+
+       DO (_WIZARD) WITH 'Form', 'Form', 'Form'
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

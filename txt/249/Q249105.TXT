@@ -1,0 +1,61 @@
+DOCUMENT:Q249105  17-DEC-2000  [win95x]
+TITLE   :"Short Date Style" Setting May Not Maintain 4-Digit Year Format
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbenv win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install the Microsoft Windows 95 Year 2000 Update and you configure
+the Short Date Style setting to a 4-digit year on the Date tab in the Regional
+Settings tool in Control Panel, the setting may revert to a 2-digit year setting
+when you restart the computer.
+
+CAUSE
+=====
+
+This behavior can occur if the computer is configured to use user profiles and
+the default profile's Short Date Style setting is configured to use a 2-digit
+year format. The default setting overrides other profiles if they are configured
+to use a 4-digit year setting.
+
+RESOLUTION
+==========
+
+To resolve this issue, log on to the default profile and change the format of
+the Short Date Style setting to the 4-digit format. Or, start the computer in
+Safe mode, which uses the default user profile, and change the Short Date Style
+setting to a 4-digit year format.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

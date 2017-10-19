@@ -1,0 +1,64 @@
+DOCUMENT:Q129451  07-NOV-1999  [win16sdk]
+TITLE   :Microsoft Windows Simplified Chinese 3.2 Upgrade Is Available
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1; :3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+ - Microsoft Windows Simplified Chinese, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Windows Simplified Chinese version 3.2 is an upgrade for Microsoft
+Windows Simplified Chinese version 3.1. Simplified Chinese is used mainly in the
+People's Republic of China.
+
+The upgrade has some new and improved IMEs (Input Method Editors). It now comes
+with the following IMEs:
+
+   ZhiNeng ABC IME;
+   ZhengMa IME;
+   PingYin IME;
+   GuoBiao IME;
+   TongYong MaBiao IME.
+
+The first two IMEs did not exist in Simplified Chinese Windows version 3.1.
+
+Simplified Chinese version 3.2 also features a new and improved IME interface.
+
+Windows version 3.2 is available only in Simplified Chinese. There is no Windows
+version 3.2 for any other language.
+
+Simplified Chinese SDK extention version 3.1 can be used to develop applications
+for both Simplified Chinese Windows version 3.1 and Simplified Chinese Windows
+version 3.2.
+
+Additional query words: 3.10 3.20 mainland GB kbinf prc
+
+======================================================================
+Keywords          :  
+Technology        : kbHLangChineseSimp kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310 kbWin320
+Version           : WINDOWS:3.1; :3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

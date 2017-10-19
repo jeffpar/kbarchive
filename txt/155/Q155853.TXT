@@ -1,0 +1,84 @@
+DOCUMENT:Q155853  11-NOV-1999  [pcmail]
+TITLE   :PC WIN: Error Using Details in the Spanish Windows 3.5 Client
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When a Spanish Microsoft Mail 3.5 client views details for a user address, an
+error message is displayed as follows: "STOP: No hay detalles disponibles para
+esta entrada. OK."
+
+Translated to English this means "No details are available for this entry".
+
+WORKAROUND
+==========
+
+To solve this problem, copy all of the template files included on "Disco 6 -
+Version para Windows y OS/2 Presentation manager para Estaclones de trabajo" to
+the TPL directory on each postoffice that Spanish Windows clients connect to.
+
+MORE INFORMATION
+================
+
+The following excerpt from the README.TXT file from the Microsoft Mail for PC
+Networks 3.5 Server version that includes a Spanish Mail client describes this
+issue.
+
+C.4. Installing Spanish Template Files for Windows Users.
+---------------------------------------------------------
+
+Because the postoffice included in this version of Microsoft Mail is an English
+language postoffice, users of the Spanish version of the Windows client will
+experience errors when they attempt to see user account details in the Address
+Book.
+
+To solve this problem, copy all of the template files included on "Disco 6 -
+Version para Windows y OS/2 Presentation manager para Estaclones de trabajo" to
+the TPL directory on each postoffice that Spanish Windows clients connect to.
+
+To copy the template files:
+---------------------------
+
+1. Insert "Disco 6 - Version para Windows y OS/2 Presentation manager para
+   Estaclones de trabajo" into drive A.
+
+2. Type: "copy a:*.tpl m:\tpl" (without the quotation marks) If you are not
+   connected to the postoffice using drive M, replace "m:" with the appropriate
+   drive letter.
+
+For information about template files, see Chapter 8, "Templates and Custom User
+Directories" in the Microsoft Mail Administrator's Guide.
+
+Additional query words: kbusage
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail350
+Version           : WINDOWS:3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

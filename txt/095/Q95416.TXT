@@ -1,0 +1,60 @@
+DOCUMENT:Q95416  20-SEP-1999  [winmisc]
+TITLE   :Video: Unexpected Exit Error Message During Setup
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains why the following error message may be generated when you
+install Video for Windows:
+
+   Unexpected exit, please report this to Microsoft Product Support
+
+This error is generated if you have McAfee's virus protection software Vshield
+version 5.1 v97 installed on your system. To successfully install Video for
+Windows, temporarily disable Vshield by using the MS-DOS REM command to remark
+out the Vshield entries in the AUTOEXEC.BAT and CONFIG.SYS files. (For
+information about how to use the REM command, see your MS-DOS documentation)
+
+There may be similar products that produce this error message.
+
+McAffee's virus protection software Vshield is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+If you suspect that your computer has a virus and you are using MS-DOS 6.0 or
+later, run Microsoft Anti-Virus. If you are running an earlier version of
+MS-DOS, either obtain MS-DOS 6.0 or later, or obtain help from a third- party
+virus-correction service or vendor.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

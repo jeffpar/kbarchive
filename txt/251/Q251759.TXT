@@ -1,0 +1,72 @@
+DOCUMENT:Q251759  18-MAY-2001  [exchange]
+TITLE   :XADM: Exchange Server Mailbox Attributes Override Windows 2000
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:2000; winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+ - the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After the replication process finishes in the Active Directory Connector (ADC),
+the user attribute information from the Exchange Server 5.5 directory overrides
+the user attribute information in the Active Directory when the Exchange Server
+mailbox is associated to a Windows 2000 Advanced Server account.
+
+CAUSE
+=====
+
+This problem can occur because in the default matching rules (the Primary
+Windows NT Account attribute corresponds to the Windows 2000 Advanced Server
+"objectSID" attribute), the ADC always matches the Exchange Server mailbox with
+the Windows NT account. The Exchange Server attributes are then considered to be
+updates to the Windows NT account, and are changed to match the Exchange Server
+mailbox.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 2000 Advanced
+Server.
+
+MORE INFORMATION
+================
+
+This problem occurs if the Connection Agreement is configured with the
+"Replicate mailbox to NT user" or "Replicate mailbox to NT contacts" setting
+selected.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbwin2000AdvServSearch kbwin2000Ssearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbWinAdvServSearch
+Version           : WINDOWS:2000; winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

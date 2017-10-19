@@ -1,0 +1,73 @@
+DOCUMENT:Q163898  31-JUL-2001  [sms]
+TITLE   :Remote Control Improvement of DHCP Clients
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbtshoot kbInventory smsremtshoot smsinv kbRemoteProgkbfaq kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+New to Systems Management Server 1.2 is the ability to do remote control over
+TCP/IP sockets. This does not require any name resolution to function properly,
+but instead uses the IP address for that client defined in the SMS database.
+
+Remote control may fail when trying to locate DHCP clients whose IP address has
+changed. Systems Management Server will fail to establish an IP socket helpdesk
+session if the SMS Database does not contain the client's correct IP address.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. This problem has been corrected in the latest U.S. Service Pack for
+Systems Management Server version 1.2. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+MORE INFORMATION
+================
+
+Depending on how frequent the DHCP lease is, and how often the client inventory
+is taken, a situation might arise where the client gets a new IP address but the
+inventory is not updated. Remote control will then fail because it relies on the
+wrong IP address in the SMS Database.
+
+The remote client discovery process used by the viewer (sightnt.dll) has been
+changed so that it attempts to resolve the Netbios machine name to the current
+IP address (using WINS, LMHosts, DNS, etc..), and then uses the normal IP Socket
+connection with the current address rather than using the address in the SMS
+Database.
+
+Additional query words: prodsms sp2 multi-homed multihomed
+
+======================================================================
+Keywords          : kbnetwork kbtshoot kbInventory smsremtshoot smsinv kbRemoteProg kbfaq kbfixlist
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,59 @@
+DOCUMENT:Q165348  12-MAY-2001  [powerpt]
+TITLE   :PPT7: Date Changes on Presentations Stored on Windows NT Server
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0; winnt:3.51
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+ - the operating system: Microsoft Windows NT 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you open a presentation that is saved to a network server running Windows NT
+Advanced Server, version 3.51 and then close it again without changing anything,
+PowerPoint changes the Date Modified property of the presentation to the current
+date.
+
+This problem does not occur if you open a presentation from a computer running
+Windows 95 or Windows NT, version 4.0.
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+Additional query words: ppt7 winnt ntas changed date creation alter update
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbOSWinSearch kbPowerPtSearch kbOSWinNT351 kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search kbOSWinNTSearch
+Version           : WINDOWS:7.0; winnt:3.51
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

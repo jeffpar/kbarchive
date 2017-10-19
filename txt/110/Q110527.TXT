@@ -1,0 +1,63 @@
+DOCUMENT:Q110527  05-FEB-2000  [foxpro]
+TITLE   :PRB: ADIR() in FoxPro for Macintosh Doesn't Return "." or ".."
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5x,2.6a,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Macintosh, versions 2.5x, 2.6a 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The ADIR() function does not return "." and ".." when the D option is specified.
+
+CAUSE
+=====
+
+The Macintosh file system does not support current folder notation (.) and
+subfolder notation (..); therefore, they are not returned when this function is
+executed.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+In the Command window, type the following:
+
+      =ADIR( myarray, "*.*", "D" )
+      ? myarray(1, 1)
+
+In FoxPro for Windows or FoxPro for DOS, "." will be returned. In FoxPro for
+Macintosh, the first file or folder encountered will be returned.
+
+Additional query words: VFoxMac FoxMac 2.50b 2.50c
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260aMac kbVFP300bMac
+Version           : MACINTOSH:2.5x,2.6a,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,62 @@
+DOCUMENT:Q301478  21-AUG-2001  [msnetwork]
+TITLE   :Broadband: OOBE with V2.0
+PRODUCT :The Microsoft Network
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You cannot complete Setup or "Out of Box Experience" (OOBE) with an MSN
+Companion Verson 2.0 device that is connected via broadband and uses a proxy
+server.
+
+CAUSE
+=====
+
+When you purchase a device with Version 2.0 already loaded on it and attempt to
+complete OOBE via a Broadband connection, the device will fail to
+connect--unless Auto-proxy is set up on the network.
+
+RESOLUTION
+==========
+
+Do one of the following:
+
+ - Configure an Auto-proxy
+
+   Or
+
+ - Complete OOBE via a dial-up connection.
+
+Additional query words: kbimu; MSN Companion
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSNCompanion
+Version           : :2.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

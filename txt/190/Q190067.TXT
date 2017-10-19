@@ -1,0 +1,90 @@
+DOCUMENT:Q190067  11-JAN-2001  [vbwin]
+TITLE   :BUG: Object References Might Not Be Released Properly
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0;
+OPER/SYS:
+KEYWORDS:kbnokeyword kbOSWinNT kbVBp600bug kbOSWin kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a function call to an object returns a Variant and the Variant is not
+assigned to a local variable, Visual Basic might not dereference the object
+correctly. As a result, a new thread is created in the object's process space
+each time the function is called.
+
+RESOLUTION
+==========
+
+Assign the function's return value to a local variable, regardless of whether or
+not it is needed.
+
+Example
+-------
+
+The class clsMyObject has a function called MyVariantFunction that returns a
+Variant:
+
+      Public Function MyVariantFunction() As Variant
+
+If the return result of the function is not needed, calling the function without
+assigning the return value might cause new threads to be created:
+
+      Public Sub TestFunction()
+         clsMyObject.MyVariantFunction
+      End Sub
+
+To avoid the unnecessary creation of threads, assign the function's return value
+to a local variable, regardless of whether or not it is needed:
+
+      Public Sub TestFunction()
+         Dim vReturnValue As Variant
+
+         ' Although this will not be used, it guarantees proper dereferencing.
+         vReturnValue = clsMyObject.MyVariantFunction
+      End Sub
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+This type of behavior usually occurs when returning variant arrays that contain
+user-defined types.
+
+======================================================================
+Keywords          : kbnokeyword kbOSWinNT kbVBp600bug kbOSWin kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0;
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

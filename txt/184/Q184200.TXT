@@ -1,0 +1,120 @@
+DOCUMENT:Q184200  27-JAN-2001  [vbwin]
+TITLE   :FIX: Error 405: "Unable to Show Modal Form Within this Context"
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbActiveX kbDLL kbServer kbVBp kbVBp500bug kbVBp600bug kbOSWin95 kbOSWin98 kbForms kbGr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When opening a form from an ActiveX DLL, you may receive the following error:
+
+   Unable to show modal form within this context."
+
+CAUSE
+=====
+
+This error occurs when all of the following are true:
+
+ - The computer is running Windows 95, Windows 98, or Windows Me.
+
+ - The ActiveX DLL has been compiled.
+
+ - The client application is in the Visual Basic IDE.
+
+ - The client application form has a BorderStyle property set to Dialog.
+
+ - The ActiveX DLL form has been previously opened.
+
+RESOLUTION
+==========
+
+Set the BorderStyle of the form in the client application to Fixed Single, and
+remove the Min and Max buttons from the form. This results in the form behaving
+in the same manner as a form with a Dialog BorderStyle.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available. This
+problem no longer occurs in Windows 2000.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create an ActiveX DLL in Visual Basic. Name the project "SrvDialog." Place
+   the following code in Class1:
+
+          Option Explicit
+          Public Sub ShowDialog()
+              Form2.Show 1
+          End Sub
+
+2. Add a form to the project. Change the Name and Caption properties to "Form2."
+   Place the following code on Form2:
+
+          Option Explicit
+          Private Sub Form_Click()
+              Unload Me
+          End Sub
+
+3. Compile the DLL.
+
+4. Create a Standard EXE project in Visual Basic. Form1 is created by default.
+   Make a reference to SrvDialog.DLL.
+
+5. Change the BorderStyle property of Form1 to 3 (Fixed Dialog). Place a
+   CommandButton on Form1, and place the following code on Form1:
+
+          Option Explicit
+          Private Sub Command1_Click()
+          Dim x As New SrvDialog.Class1
+             x.ShowDialog
+             Set x = Nothing
+          End Sub
+
+6. Run the client application. Click Command1.
+
+7. Click Form2 to unload that form.
+
+8. Click Command1 again and note that Error 405 occurs.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbActiveX kbDLL kbServer kbVBp kbVBp500bug kbVBp600bug kbOSWin95 kbOSWin98 kbForms kbGrpDSVB kbDSupport kbOSWinME 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : :5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

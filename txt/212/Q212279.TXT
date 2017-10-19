@@ -1,0 +1,63 @@
+DOCUMENT:Q212279  07-MAY-2002  [homegame]
+TITLE   :DirectX 7.0: DirectX Setup Does Not Install Old DirectPlay Files
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbsetup kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - DreamWorks Interactive, The Neverhood, version 1.0 
+ - Microsoft Close Combat for Windows 1.0 
+ - Microsoft Deadly Tide for Windows 1.0 
+ - Microsoft Flight Simulator for Windows 95, version 1.0 
+ - Microsoft Hellbender for Windows, version 1.0 
+ - Microsoft Monster Truck Madness, version 1.0 
+ - Microsoft NBA Full Court Press for Windows, version 1.0 
+ - Microsoft Soccer, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft DirectX 7.0 does not install the following Old DirectPlay files:
+
+ - Dplay.dll
+ - Dpserial.dll
+ - Dpwsock.dll
+
+If you manually remove or use a disk cleanup utility to remove these DirectPlay
+files, you may be unable to connect to multi-player games in programs that use
+these files.
+
+MORE INFORMATION
+================
+
+To restore the missing Dplay.dll, Dpserial.dll, or Dpwsock.dll files, reinstall
+the program that installed the files originally.
+
+Additional query words: direct-x dx7 msgame
+
+======================================================================
+Keywords          : kbsetup kbimu msgame 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbFlightSimSearch kbZNotKeyword kbCloseCombatSearch kbMonsterTMSearch kbMonsterTM kbHellBender kbCloseCombat kbFlightSim95 kbSoccer kbDINeverhood kbDeadlyTide kbNBAFullCourtPress kbDISearch kbSimSearch
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

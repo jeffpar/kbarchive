@@ -1,0 +1,122 @@
+DOCUMENT:Q190540  10-FEB-1999  [foxpro]
+TITLE   :FIX: SELECT-SQL with Subselects in WHERE Clause Stops VFP
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you execute a SELECT-SQL statement, which uses a subquery, when the SELECT
+executes, Visual FoxPro exits with an Access Violation (under Windows NT) or an
+Invalid Page Fault (Windows 95).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+NOTE: The following causes Visual FoxPro to exit, and you could lose unsaved
+data.
+
+Run the following code from a program (.prg) file:
+
+   CREATE CURSOR cc (KEYF N(1), inr N(3), DATE d)
+   INSERT INTO cc VALUES (1, 234, DATE())
+   INSERT INTO cc VALUES (1, 252, DATE()+1)
+   INSERT INTO cc VALUES (1, 45, DATE()+2)
+   INSERT INTO cc VALUES (1, 40, DATE() - 2)
+   INSERT INTO cc VALUES (1, 50, DATE() - 2)
+   SELECT MAX(inr) AS mx, MIN(inr) AS mn FROM cc INTO CURSOR q1
+   SELECT v1.DATE, v1.inr, ;
+
+   v2.DATE, v2.inr, ;
+   v1.DATE - v2.DATE AS days, ;
+   v1.inr - v2.inr AS net ;
+   FROM cc v1, cc v2 ;
+   WHERE v1.inr = (SELECT mx FROM q1);
+   AND v2.inr = (SELECT mn FROM q1)
+
+Under Windows NT 4.0, Visual FoxPro terminates on the SELECT statement with an
+error like the following:
+
+   vfp.exe
+   Exception: access violation (0xc0000005), Address 0x0044817c
+
+Under Windows 95, Visual FoxPro terminates on the SELECT statement with an error
+like the following:
+
+   VFP caused an invalid page fault in module VFP.EXE at 0137:00440940.
+
+The address (either the 0x0044817c or 0137:00440940 in the preceding example)
+will vary with the specific Visual FoxPro 5.0x build number.
+
+The error does not occur in Visual FoxPro 3.0x and one record is returned.
+
+Workaround
+----------
+
+Adding the IN clause prevents the error from occurring. Here is a possible work
+around for this problem:
+
+   CREATE CURSOR cc (KEYF N(1), inr N(3), DATE d)
+   INSERT INTO cc VALUES (1, 234, DATE())
+   INSERT INTO cc VALUES (1, 252, DATE()+1)
+   INSERT INTO cc VALUES (1, 45, DATE()+2)
+   INSERT INTO cc VALUES (1, 40, DATE() - 2)
+   INSERT INTO cc VALUES (1, 50, DATE() - 2)
+   SELECT MAX(inr) AS mx, MIN(inr) AS mn FROM cc INTO CURSOR q1
+   SELECT v1.DATE, v1.inr, ;
+
+     v2.DATE, v2.inr, ;
+     v1.DATE - v2.DATE AS days, ;
+     v1.inr - v2.inr AS net ;
+     FROM cc v1, cc v2 ;
+     WHERE v1.inr IN (SELECT mx FROM q1);
+     AND v2.inr IN (SELECT mn FROM q1)
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Jim
+Saunders, Microsoft Corporation
+
+
+Additional query words: kbvfp500bug kbVFp500abug kbSQL kbvfp600fix kbdse kbcode
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

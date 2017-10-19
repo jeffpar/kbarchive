@@ -1,0 +1,74 @@
+DOCUMENT:Q274364  18-JUN-2001  [msnetwork]
+TITLE   :MSN Companion Troubleshooting Tool HAMMER
+PRODUCT :The Microsoft Network
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+MSN Companion has several secret codes that give access to special
+troubleshooting information on the device or that perform special
+troubleshooting actions.
+
+The HAMMER code resets all dialing options to their factory presets, but still
+retains the local access numbers that the customer has chosen. It also sets the
+local numbers to an unconfirmed state. This means that the next time you try to
+dial the local access numbers, it will try all possible dialing combinations
+(7-digit, 10-digit, 11-digit) for these numbers until it finds the right
+combination and will then save the correct settings.
+
+MORE INFORMATION
+================
+
+When should I use the "HAMMER" code?
+------------------------------------
+
+HAMMER should be used when you want to reset your dialing settings. A few
+examples:
+
+ - The telephone company changes the dialing rules in your area code, requiring
+   you to dial the area code for some numbers.
+
+ - You want to completely reset your dialing settings to the factory presets in
+   order to troubleshoot a dialing problem. (Note: you will still need to use
+   the "FIXIT" secret code to change the local access numbers. See See also:
+   Q278481 - MSN Companion Troubleshooting Tool FIXIT)
+
+How do I enter the "HAMMER" code?
+---------------------------------
+
+1. Turn on the MSN Companion and immediately click do not connect.
+
+2. On the main troubleshooting page click I have some other problem that isn't
+   described above.
+
+3. In the text entry box type hammer and click Go.
+
+4. The MSN Companion will reset all dialing settings (except the local access
+   numbers) to their factory presets, and will restart.
+
+Additional query words: kbimu MSN Explorer Preview 2
+
+======================================================================
+Keywords          :  
+Technology        : kbIEsearch kbWin3xSearch kbMSNSearch kbIE95Search kbIE500Search kbZNotKeyword3 kbIE500Win95 kbMSN520 kbMSN510 kbMSN500
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

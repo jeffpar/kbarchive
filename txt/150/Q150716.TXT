@@ -1,0 +1,167 @@
+DOCUMENT:Q150716  02-MAR-2000  [vbwin]
+TITLE   :HOWTO: DAO: Attach to and Create QueryDefs on ODBC Tables
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:2.5,4.0
+OPER/SYS:
+KEYWORDS:kbODBC kbVBp kbVBp400 kbGrpDSVBDB kbDSupport kbMDAC250
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to attach and create Querydefs on external ODBC
+tables. The method for opening external ODBC tables is to attach the tables to
+an .mdb file.
+
+Jet does not support named QueryDefs on a non-attached ODBC database. A non-
+attached ODBC database is one that is opened directly with the OpenDatabase
+method of the WorkSpace object without the use of an .mdb file.
+
+If it is not appropriate for the application to attach the ODBC tables, it is
+possible to create Querydefs with no name to accomplish the procedure.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q149055 : Jet Doesn't Support QueryDefs on a Non-Attached ODBC Table
+
+MORE INFORMATION
+================
+
+The following is information from "Guide To Data Access Objects," Chapter 7,
+Data Access Choices, that explains this procedure:
+
+In many cases, attaching a table to access external data is faster than opening a
+table directly, especially if the data is located in an ODBC database. In Visual
+Basic version 4.0, SQL Passthrough is used to query attached ODBC databases
+directly. Consider attaching external tables rather than opening them directly.
+Using external data in an ODBC database requires opening the external tables
+directly so performance is significantly slower when using the data.
+
+Sample Program
+--------------
+
+The following example describes how to attach to and create a Querydef on an ODBC
+table using a "DSN-less" ODBC connection. With this procedure, it is not
+necessary to set up a DSN with the ODBC Admin utility.
+
+1. Start a new project in Visual Basic. Form1 is created by default.
+
+2. Add three Command buttons to Form1: Command1, Command2, Command3 by default.
+
+3. Paste the following code in the General Declarations section of Form1:
+
+         Dim db As Database
+         Dim cn As String
+         Private Sub Form_Load()
+           cn = "odbc;driver={SQL Server};server=myserver;" & _
+           "database=pubs;uid=myuid;pwd=mypwd"
+           If Dir("mydb.mdb") <> "" Then
+             ' database exists, so just open it.
+             Set db = OpenDatabase(Name:="mydb", Exclusive:=False, _
+               ReadOnly:=False, Connect:="")
+           Else
+             'database does not exist, create it and attach authors table.
+             Set db = CreateDatabase(Name:="mydb", Connect:=dbLangGeneral, _
+               Option:=dbVersion30)
+             Dim td As TableDef
+             Set td = db.CreateTableDef()
+             td.Name = "Authors"
+             td.SourceTableName = "Authors"
+             td.Connect = cn
+           End If
+         End Sub
+         Private Sub Command1_Click()
+           Dim qd As QueryDef
+           On Error Resume Next
+           Set qd = db.QueryDefs("abc")  ' test for existence of querydef.
+           If Error > 0 Then
+             Set qd = db.CreateQueryDef(Name:="abc")
+             qd.Connect = cn
+             qd.SQL = "Select @@Version" 'native SQL Server
+           End If
+           Set qd = db.QueryDefs("xyz")  ' test for existence of querydef.
+           If Error > 0 Then
+             Set qd = db.CreateQueryDef(Name:="xyz")
+             qd.Connect = cn
+             qd.SQL = "Select * from titles" ' generic SQL.
+           End If
+           On Error GoTo 0
+         End Sub
+         Private Sub Command2_Click()
+           Dim rs As Recordset
+           Dim qd As QueryDef
+           Set qd = db.QueryDefs("abc")
+           Set rs = qd.OpenRecordset()
+           Call displayResults(rs)
+         End Sub
+         Private Sub Command3_Click()
+           Dim rs As Recordset
+           Dim qd As QueryDef
+           Set qd = db.QueryDefs("xyz")
+           Set rs = qd.OpenRecordset()
+           Call displayResults(rs)
+         End Sub
+         Sub displayResults(rs As Recordset)
+           Dim f As Field, s As String, i As Integer
+           For Each f In rs.Fields
+             s = s & f.Name
+           Next f
+           Debug.Print s              ' print column headers.
+           While Not rs.EOF And i < 5
+             s = ""
+             For Each f In rs.Fields
+               s = s & f.Value
+             Next f
+             Debug.Print s            ' print first 5 rows.
+             rs.MoveNext
+             i = i + 1
+           Wend
+         End Sub
+
+NOTE: You need to change the DRIVER, SERVER, DATABASE, UID, and PWD parameters in
+the OpenConnection method. Also you must modify the SQL statements contained in
+the Command1_Click event to match your SQL data source.
+
+1. Press the F5 key to start the program.
+
+2. Click the Command1 button to create the Querydefs. Click the Command2 and
+   Command3 buttons to execute the Querydefs. Note that the first five rows of
+   data appear in the Debug window.
+
+REFERENCES
+==========
+
+"Jet Database Engine Programmer's Guide", page 323, published by Microsoft
+Press.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbODBC kbVBp kbVBp400 kbGrpDSVBDB kbDSupport kbMDAC250 
+Technology        : kbVBSearch kbAudDeveloper kbMDACSearch kbVB400Search kbVB400 kbMDAC250
+Version           : WINDOWS:2.5,4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,73 @@
+DOCUMENT:Q68379  31-OCT-1999  [utilities]
+TITLE   :FIX: NMAKE Filename-Parts Syntax Does Not Expand Macros
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:1.01,1.1,1.11,1.12,1.13; OS/2:1.01,1.11,1.12,1.13
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NMAKE Utility for MS-DOS, versions 1.01, 1.1, 1.11, 1.12, 1.13 
+ - Microsoft NMAKE Utility for OS/2, versions 1.01, 1.11, 1.12, 1.13 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An attempt to use macro substitution with the filename-parts syntax or the
+extmake option switch fails.
+
+RESOLUTION
+==========
+
+To work around this problem, replace the extmake switch with the appropriate
+predefined macros (such as $** and $?).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with NMAKE. It was corrected in
+NMAKE version 1.2 for MS-DOS and OS/2.
+
+MORE INFORMATION
+================
+
+To demonstrate this error, specify a directory in the SUBDIR variable. Set the
+current directory to a different directory and run NMAKE. The file produces the
+following command line:
+
+   cl $(SUBDIR)\myfile.c
+
+Sample Makefile
+---------------
+
+   SUBDIR = subdir
+
+   myfile.exe: $(SUBDIR)\myfile.c
+   cl %|pfeF
+
+Additional query words:
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbVCsearch kbAudDeveloper kbNMAKESearch kbNMAKE101DOS kbNMAKE110DOS kbNMAKE111DOS kbNMAKE112DOS kbNMAKE113DOS kbNMAKE101OS2 kbNMAKE111OS2 kbNMAKE112OS2 kbNMAKE113OS2
+Version           : MS-DOS:1.01,1.1,1.11,1.12,1.13; OS/2:1.01,1.11,1.12,1.13
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

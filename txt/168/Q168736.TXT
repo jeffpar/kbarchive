@@ -1,0 +1,71 @@
+DOCUMENT:Q168736  23-DEC-1999  [exchange]
+TITLE   :XFOR: Invalid PO During Migration From PC Mail
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When administrators use the Microsoft Exchange Migration Wizard and specify the
+location of the MS Mail postoffice, they may receive the following error
+message:
+
+   Invalid Postoffice
+
+Administrators can log on to the target postoffice and users can send and
+retrieve messages without problems.
+
+CAUSE
+=====
+
+File corruption within the MS Mail postoffice core files (Access.glb,
+Access2.glb, and Access3.glb) are out of synch.
+
+RESOLUTION
+==========
+
+Restore valid Access.glb, Access2.glb, and Access3.glb files from backup. To
+determine if the files are corrupt, use the following formula:
+
+Divide the size of the file by the number specified next to the chart. All files
+should produce the same resulting number.
+
+        File                   Divide By
+        ====                   =========
+      Access.glb                  586
+      Access2.glb                  69
+      Access3.glb                 512
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

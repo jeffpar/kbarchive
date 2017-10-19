@@ -1,0 +1,85 @@
+DOCUMENT:Q270749  28-OCT-2000  [homemm]
+TITLE   :ELL: Windows Taskbar Covers Encarta Language Learning Window
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Language Learning French 
+ - Microsoft Encarta Language Learning French Deluxe 
+ - Microsoft Encarta Language Learning Spanish 
+ - Microsoft Encarta Language Learning Spanish Deluxe 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start any of the programs listed at the beginning of this article, the
+Microsoft Windows taskbar may cover part of the Encarta Language Learning
+window.
+
+CAUSE
+=====
+
+This behavior can occur if both of the following conditions are true:
+
+ - The Windows taskbar is docked to the top of the screen or the left side of
+   the screen.
+
+ - Windows is configured to use a resolution of 1024 x 768 pixels or higher.
+
+RESOLUTION
+==========
+
+To resolve this issue, use one of the following methods.
+
+Enable the Auto-hide Feature
+----------------------------
+
+To enable the auto-hide feature for the Windows taskbar:
+
+1. Click Start, point to Settings, and then click Taskbar & Start Menu.
+
+2. Click to select the "Auto hide" check box.
+
+3. Click OK.
+
+Move the Windows Taskbar
+------------------------
+
+To move the Windows taskbar, drag the Windows taskbar to the bottom of the
+screen.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: multi multi-media media mm ellf ells overlaps hides
+
+======================================================================
+Keywords          : kbenv kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbHLangSpanish kbHLangFrench
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

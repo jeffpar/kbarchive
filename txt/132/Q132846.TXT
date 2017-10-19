@@ -1,0 +1,86 @@
+DOCUMENT:Q132846  17-DEC-2000  [win95x]
+TITLE   :Rodney's Funscreen Does Not Install Properly in Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Rodney's Funscreen by ActiVision, it asks you to insert disk 1
+even though disk 1 is already in the disk drive. After following the
+instructions, Rodney's Funscreen is not completely installed.
+
+CAUSE
+=====
+
+The Setup program for Rodney's Funscreen is in two parts: a Windows part, and an
+MS-DOS part. When it is time to install the MS-DOS part, Rodney's Funscreen
+starts the MS-DOS program but does not wait long enough for the MS-DOS part to
+finish before trying to continue with the Windows part. Rodney's Funscreen
+thinks that the MS-DOS part (which involves removing disk 1) is finished, when
+in fact it has not yet started. The Setup program then allows you to continue
+through the rest of the setup procedure without ever finishing the MS-DOS part
+of the installation.
+
+RESOLUTION
+==========
+
+To install Rodney's Funscreen successfully, follow these steps:
+
+1. Quit all programs that are running.
+
+2. Restart the Setup program.
+
+3. When the Windows part of the installation prompts you to insert disk 1,
+   switch to the MS-DOS part of the installation and follow the instructions. To
+   switch to the MS-DOS part of the setup, press ALT+TAB or click the MS-DOS
+   button on the taskbar.
+
+4. When the MS-DOS part of the installation is finished, switch back to the
+   Windows part, click the OK button in the message box prompting you to
+   reinsert disk 1, and continue with the installation procedure as before.
+
+If you continue to have problems running or installing Rodney's Funscreen, please
+contact ActiVision.
+
+MORE INFORMATION
+================
+
+This situation is most likely caused by design changes in Windows 95. Microsoft
+has confirmed that it is not caused by a problem in Windows 95.
+
+The product discussed here is manufactured by a vendor independent of Microsoft;
+we make no warranty, implied or otherwise, regarding this product's performance
+or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,77 @@
+DOCUMENT:Q234622  02-MAY-2002  [visualc]
+TITLE   :PRB: VC++ 6.0 Setup Does Not Copy the CRT Make Files
+PRODUCT :Microsoft C Compiler
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbsetup kbCRT kbVC600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When attempting to build the Visual C++ 6.0 CRT Libraries, the build fails
+immediately with an error similar to the following:
+
+   NMAKE : fatal error U1073: don't know how to make 'st'
+
+-or-
+
+   NMAKE : fatal error U1064: MAKEFILE not found and no target specified
+
+CAUSE
+=====
+
+After selecting the option to copy the C-Runtime (CRT) source code selected
+during Visual C++ 6.0 installation, the setup program does not copy the
+following files that are necessary to build the CRT Libraries:
+
+   MAKEFILE
+   MAKEFILE.SUB
+   MAKEFILE.INC
+
+RESOLUTION
+==========
+
+The missing files are available on Disk 1 of the Visual C++ CD in the
+VC98\CRT\SRC directory.
+
+MORE INFORMATION
+================
+
+The Makefile contains all the necessary information about which switches are to
+be used when rebuilding the CRT libraries.
+
+The CRT source is provided primarily for debugging purposes. Microsoft does not
+recommend rebuilding the CRT libraries and may not be able to provide support
+for problems encountered when using rebuilt CRT libraries.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbCRT kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

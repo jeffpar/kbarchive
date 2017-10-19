@@ -1,0 +1,93 @@
+DOCUMENT:Q243650  08-MAY-2001  [msdn]
+TITLE   :BUG: MSDN Library Favorites Are Lost
+PRODUCT :Microsoft Developer Network
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbHTMLHelp kbMSDN kbDSupport kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Developer Network (MSDN) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The MSDN Library favorites are lost.
+
+CAUSE
+=====
+
+There are three known causes of this problem:
+
+ - Installing a new version of the MSDN Library does not transfer existing
+   favorites from the previous version.
+
+ - Launching the MSDN Library from a Visual Studio product can result in lost
+   favorites. If the MSDN Library is still open when the Visual Studio product
+   is closed, any favorites created during that session are lost. Closing the
+   Visual Studio product forces the MSDN Library to close without providing an
+   opportunity for it to save the new favorites.
+
+ - Deleting or corrupting the Hh.dat file erases favorites.
+
+RESOLUTION
+==========
+
+The MSDN Library Favorites Utility can transfer favorites from one library
+installation to another. This utility is on the Start menu for the latest
+quarterly releases of the MSDN Library. You can also download this utility from
+the following Microsoft Web site:
+
+   http://msdn.microsoft.com/subscriptions/resources/msdnfav.asp
+   (http://msdn.microsoft.com/subscriptions/resources/msdnfav.asp)
+
+When using the MSDN Library launched from a Visual Studio product, always close
+the MSDN Library first before closing the Visual Studio product. This allows the
+MSDN Library to save the new favorites information normally.
+
+If the Hh.dat file is deleted or corrupted, there is no way to recover the
+favorites. When the Hh.dat file is deleted, the MSDN Library creates a new one
+with no favorites information in it. When the Hh.dat file is corrupted,
+favorites may be lost or behave incorrectly, forcing you to delete the Hh.dat
+file, so it can be re-created.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q216109 HOWTO: Troubleshoot MSDN Library Run-Time/Install/Uninstall Problems
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHTMLHelp kbMSDN kbDSupport kbGrpDSTools 
+Technology        : kbMSDNSearch kbZNotKeyword2
+Version           : :
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,92 @@
+DOCUMENT:Q185379  05-AUG-2000  [iis]
+TITLE   :Browser Stops When .Exe File Attempts to Run Instead of Download
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Browser Symptoms
+----------------
+
+When you click an .exe file from a browser to download it, the file attempts to
+run, causing the browser to stop responding.
+
+NOTE: Internet Explorer does not actually stop responding. After the timeout
+period eventually expires, it displays the following error message:
+
+   Internet Explorer cannot open the Internet site
+   http://<URL>/<filename>.exe.
+
+   The operation timed out
+
+Server Symptoms
+---------------
+
+In the Event Viewer on the computer running Internet Information Server (IIS),
+the following error is listed in the event log:
+
+   System Error, Source=W3SVC, Event ID=16
+
+The event details contains the description:
+
+   The script started from the URL '/<filename>.exe' with parameters ''
+   has not responded within the configured timeout period. The HTTP server is
+   terminating the script.
+
+CAUSE
+=====
+
+The virtual directory containing the .exe file has the Execute application
+permission enabled. This causes IIS to attempt to run the .exe files in that
+virtual directory for the browser instead of downloading them.
+
+WORKAROUND
+==========
+
+To work around this problem, change the virtual directory application permission
+to None or Script. To do this, perform the following steps:
+
+1. In Internet Service Manager (ISM), view the Properties page for the
+   appropriate virtual directory in the Web site.
+
+2. On the Directory, Home Directory, or Virtual Directory tab, under
+   Permissions, select either None or Script.
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+Zollman, Microsoft Corporation.
+
+
+Additional query words: mmc fails stops IE hang hangs hung akz
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

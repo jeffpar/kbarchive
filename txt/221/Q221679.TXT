@@ -1,0 +1,166 @@
+DOCUMENT:Q221679  26-OCT-2000  [foxpro]
+TITLE   :FIX: Servers Do Not Release if Init Returns .F.
+PRODUCT :Microsoft FoxPro
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbservicepack kbCOMt kbOOP kbvfp600 kbvfp600bug kbVS600sp2 kbVS600SP1 kbVS600sp3fix kbG
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following errors are received when you try to load a Visual FoxPro COM DLL
+or COM EXE.
+
+In Visual FoxPro, the error is:
+
+   OLE error code 0x80004005: Unspecified error.
+
+When using Visual Basic or Visual Basic for Applications in Excel 97, the error
+is:
+
+   Run-time error '-2147467259(80004005)':
+   Automation error
+   Unspecified error
+
+After the error, the COM server cannot be rebuilt or deleted. If a Visual FoxPro
+COM EXE is called, it does not show in the Windows NT Task Manager in the
+Processes tab. A COM DLL does not show up in the Task Manager as it loads
+In-Process by definition. However, the COM DLL cannot be deleted. In Windows 95
+or Windows 98, the Close Program window shows the Visual FoxPro COM EXE.
+
+In other words, the Visual FoxPro COM server remains in memory.
+
+CAUSE
+=====
+
+This is known to happen if the Visual FoxPro COM server's Init method returns
+False (.F.).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3. For more information
+about Visual Studio service packs, please see the following articles in the
+Microsoft Knowledge Base:
+
+Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+This article helps you attempt to delete the Visual FoxPro COM DLL to test to
+see if there is a sharing violation. If there is, this is an indication that the
+COM DLL is loaded in memory.
+
+Note that if you attempt to load COM DLL in Visual Basic 6.0, you can delete
+Visual FoxPro COM DLL. This is different than attempting to load Visual FoxPro
+COM DLL into Excel 97 VBA. In Excel 97 VBA, you cannot delete the COM DLL until
+Excel is closed. However, attempting to load a Visual FoxPro COM EXE in Visual
+Basic 6.0 leaves the VFP COM EXE running.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Place the following code into a new program file and save it as
+   falseinit.prg:
+
+      DEFINE CLASS falseinit AS custom OLEPUBLIC
+
+           Name = "falseinit"
+
+           PROCEDURE Init
+              RETURN .F.
+           ENDPROC
+
+           PROCEDURE hello
+              RETURN "Hello There"
+           ENDPROC
+
+           PROCEDURE ERROR()
+              LPARAMETERS nError, cMethod, nLine
+              errStr="ErrorNum: " + STR(nError) + ;
+                "Method Name: " + cMethod + ;
+                "On Line: " + STR(nLine) + ;
+                "Message: " + MESSAGE()
+
+              STRTOFILE(errStr,"c:\falseinit.txt",.T.)
+              COMRETURNERROR(cMethod,errStr)
+           ENDPROC
+
+      ENDDEFINE
+
+2. Add the program to a new project named falseinit.prg and build the project
+   into a Visual FoxPro EXE.
+
+3. Issue the following commands in the Visual FoxPro Command window to attempt
+   to load the COM EXE and check the variable type:
+
+   ox=CreateObject("falseinit.falseinit")
+   ? VARTYPE(ox)
+
+4. Press the ENTER key to run the first line of code above, and note that the
+   "OLE error code 0x80004005: Unspecified error" is received. The VARTYPE()
+   function should return "U," indicating that the ox variable does not contain
+   an object reference.
+
+5. Bring up the Windows NT Task Manager and go to the Processes tab.
+   Falseinit.exe should be listed. End Process on it to unload the VFP COM EXE
+   from memory.
+
+6. The following code can be used in Visual Basic or Excel 97 Visual Basic for
+   Applications to load the Visual FoxPro COM EXE built previously. It assumes
+   that you have a working knowledge of Visual Basic or Visual Basic for
+   Applications.
+
+   Sub VFPTest()
+
+   Dim ox As Object
+   Set ox = CreateObject("falseinit.falseinit")
+   Set ox = Nothing
+
+   End Sub
+
+Note that there is an Error() method in the code for the VFP COM server. This
+code should write a file named "falseinit.txt" to the root of the C: drive and
+also should return information about the error. A search of the C: drive after
+trying to load the falseinit.exe unsuccessfully does not turn up the
+falseinit.txt file. This occurs because the Error() method is never run; the
+Init() method returns False and the COM server does not fully instantiate. This
+is the bug.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbservicepack kbCOMt kbOOP kbvfp600 kbvfp600bug kbVS600sp2 kbVS600SP1 kbVS600sp3fix kbGrpDSFox 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

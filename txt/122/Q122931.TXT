@@ -1,0 +1,87 @@
+DOCUMENT:Q122931  24-JUN-2002  [accother]
+TITLE   :ADT2: How to Display a README.TXT File at the End of Setup
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Access Developer's Toolkit, version 2.0 
+-------------------------------------------------------------------------------
+
+Novice: Requires knowledge of the user interface on single-user computers.
+
+SUMMARY
+=======
+
+This article describes how to display a README.TXT file at the end of the custom
+Setup program for a run-time application developed with the Microsoft Access
+Developer's Toolkit (ADT).
+
+MORE INFORMATION
+================
+
+To display a README.TXT file at the end of a run-time application's custom Setup
+program, run the Setup Wizard to create the custom Setup as usual, and then
+follow these steps:
+
+1. In the Setup Wizard's Executable File Name box, choose the Build button to
+   the right of the box, and then select the NOTEPAD.EXE file (this file is
+   usually located in the Windows directory).
+
+2. In the Command Line box, enter the following line:
+
+   notepad.exe %s\readme.txt
+
+   NOTE: If the Microsoft Access version 2.0 application will be installed on a
+   computer running Windows 95, select EDIT.COM in Step 1 and enter the
+   following line in the Command Line box (This only works on Windows 95):
+
+   edit.com %s\readme.txt
+
+   Note that "%s" is a token to provide the application's path. This token is
+   case sensitive; "%S" will not work.
+
+3. Clear the "Include Executable File in Distribution Set" check box.
+
+   NOTE: Make sure to clear the "Include Executable File in Distribution Set"
+   check box. You are not allowed to ship the NOTEPAD.EXE file with your
+   application. Your clients' computers should already have this file. If you
+   are concerned that your clients' computers may not have the NOTEPAD.EXE file,
+   you should ship a different text editor with your application.
+
+4. Finish the Setup Wizard as usual.
+
+REFERENCES
+==========
+
+Microsoft Access Developer's Toolkit "Advanced Topics," version 2.0, Chapter 2,
+"Creating a Custom Setup Program," pages 29-30
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbAudDeveloper kbAccessSearch kbAccessDevTK200 kbZNotKeyword3
+Version           : WINDOWS:2.0
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

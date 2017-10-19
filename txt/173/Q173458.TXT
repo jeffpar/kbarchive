@@ -1,0 +1,63 @@
+DOCUMENT:Q173458  07-JAN-2000  [exchange]
+TITLE   :XCON: Event ID 9406 Occurs When Memory or Free Disk Space is Low
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+The Microsoft Exchange Message Transfer Agent (MTA) may shut down and the
+following event may be recorded in the Windows NT Server Event Viewer
+Application log:
+
+   Event ID: 9406
+   Source: MSExchangeMTA
+   Category: Resource
+   There is not enough Performance Monitor memory to display the MTA Connections
+   information. Stop attached Performance Monitors and re-start the MTA. [BASE
+   TIMER 3] (14)
+
+CAUSE
+=====
+
+The server is running low on disk space and/or virtual memory.
+
+RESOLUTION
+==========
+
+Free up hard disk space by removing or deleting unneeded files. You should have
+at least 10MB of free space or the MTA will shut down automatically. You should
+also increase the size of the Windows NT Pagefile.
+
+Additional query words: perfmon virtual bytes low
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

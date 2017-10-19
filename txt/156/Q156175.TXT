@@ -1,0 +1,75 @@
+DOCUMENT:Q156175  09-MAR-2000  [foxpro]
+TITLE   :PRB: Cannot Advance in Setup Wizard Step 4
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Next button in step 4 of the Setup Wizard is disabled.
+
+CAUSE
+=====
+
+The "Setup dialog box caption" and "Copyright information" are required entries
+in step 4 of the Setup Wizard.
+
+RESOLUTION
+==========
+
+Enter a setup dialog box caption and copyright information in the boxes
+provided. There must be at least one alphabetic or numeric character in each for
+the Next button to become enabled.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+This is documented in the Help topic accessed with the Help button in the bottom
+left corner of the step 4 dialog box. Following is the Help text:
+
+   The Setup Wizard creates installation dialog boxes with the title you specify
+   in the Setup dialog box caption box. It also places the copyright statement
+   in the Copyright information dialog box that the user can access from the
+   About command on the Setup application's control menu. The Post-setup
+   executable entry is optional.
+
+   NOTE: In order to advance to step 5, you must move the insertion point outside
+   the Setup dialog box caption and Copyright information boxes.
+
+Additional query words: kbdsd VFoxWin
+
+======================================================================
+Keywords          : kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

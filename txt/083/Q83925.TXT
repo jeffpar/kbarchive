@@ -1,0 +1,55 @@
+DOCUMENT:Q83925  06-DEC-1999  [win95x]
+TITLE   :16.66 cpi Line Printer Font on HP LaserJet IIIsi
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The 16.66 characters-per-inch (cpi) Line Printer font is available to
+Windows-based applications that use the Hewlett-Packard (HP) LaserJet IIIsi and
+related drivers. Some Windows-based applications may list the size of this font
+as 8 points instead of 8.5 points. Nevertheless, selecting the Line Printer
+font, regardless of the listed size, ensures that the driver uses the 16.66 cpi
+font.
+
+MORE INFORMATION
+================
+
+The 8.5 point font (16.66 cpi Line Printer font) is an HP-printer internal font,
+and is available in this one size only. Note that the Line Printer font is not
+available when using the HP LaserJet IIISi PostScript driver.
+
+
+Additional query words: 3.10 lineprinter hp 3 si 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

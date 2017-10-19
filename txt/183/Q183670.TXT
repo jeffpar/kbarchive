@@ -1,0 +1,60 @@
+DOCUMENT:Q183670  20-NOV-1999  [exchange]
+TITLE   :XADM: Setup Fails with DS_E_INSUFFICIENT_ACCESS_RIGHTS
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Microsoft Exchange Server version 4.0 or 5.0 Setup, you may receive
+the following error message:
+
+   DS_E_INSUFFICIENT_ACCESS_RIGHTS
+
+When joining an existing site after selecting to join an existing site, you may
+receive a Stop error message:
+
+   Microsoft Exchange Server Setup
+   Failed to connect to the server 'SERVERNAME' with the following error.
+   You do not have permissions required to complete the operation.
+   Microsoft Exchange Directory
+   ID no. DS_E_INSUFFICIENT_ACCESS_RIGHTS
+
+WORKAROUND
+==========
+
+To work around this problem, install the RPC Configuration Service in Networks
+under Control Panel.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage exc4 exc5 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

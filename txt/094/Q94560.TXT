@@ -1,0 +1,62 @@
+DOCUMENT:Q94560  11-SEP-1999  [winmisc]
+TITLE   :Sound Finder & Quick Recorder Description & Label Text Limits
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:1.00
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Sound Finder and Quick Recorder applications included with Windows Sound
+System can attach descriptions and labels to .WAV files. However, there are
+limits to the number of characters that can be entered into a .WAV file's
+description and label.
+
+MORE INFORMATION
+================
+
+In Sound Finder, the maximum length possible for a description is 4095
+characters, entered into a maximum of 1365 lines.
+
+In Quick Recorder, the maximum length possible for a description is 255
+characters, entered into a maximum of 85 lines.
+
+
+The maximum length of an attached label is 255 characters. This limit applies to
+both Sound Finder and Quick Recorder.
+
+REFERENCES
+==========
+
+"Microsoft Windows Sound System User's Guide," pages 24, 105-106, 110
+
+Additional query words: 1.00 wave
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100
+Version           : 1.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,79 @@
+DOCUMENT:Q99080  12-JUN-1999  [homegame]
+TITLE   :Loading a Two-Player Chess Game
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Entertainment Pack, volume 4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you load a saved game in Chess, if the saved game was a two-player game
+(Player vs. Player), Chess may load the game as a Player vs. Computer game. This
+behavior occurs because Chess defaults to Player vs. Computer mode; this mode is
+not reset when a saved game is loaded.
+
+MORE INFORMATION
+================
+
+Workaround
+----------
+
+Set up Chess as a two-player game before loading the saved game:
+
+1. From the Game menu in Chess, click New. In the Select Players dialog box,
+   click Player vs. Player and click OK.
+
+2. Load the saved game by clicking Open from the Game menu. The game should now
+   load as a two-player game.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Open or switch to Microsoft Chess.
+
+2. From the Game menu, click New.
+
+3. In the Select Players dialog box, click Player vs. Player.
+
+4. From the Game menu, click Save and save the current game.
+
+5. From the Game menu, click Exit to close Chess.
+
+6. Restart Chess.
+
+7. Load the game by clicking Open in the Game menu. The game will be set up as
+   Player 1 vs. Ziggurat, a Player vs. Computer game.
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbWinEntPkSearch kbWinEntPk400
+Version           : WINDOWS:
+Issue type        : kbhowto kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

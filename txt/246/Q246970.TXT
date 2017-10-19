@@ -1,0 +1,74 @@
+DOCUMENT:Q246970  11-JUN-2002  [visualc]
+TITLE   :INFO: Customizing the Visual C++ IDE Programmatically
+PRODUCT :Microsoft C Compiler
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbAutomation kbide kbVC500 kbVC600 kbVCObj kbDevStudio kbDSupport kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are no methods available for customizing or modifying the Visual C++
+Integrated Development Environment (IDE) programmatically. The Developer Studio
+object model provides methods to automate tasks in Visual C++, but it doesn't
+provide methods to modify the Visual C++ IDE. So, you cannot add menu commands,
+toolbars, and so forth to the Visual C++ IDE programmatically.
+
+An add-in created for Visual C++ using either Visual C++ or Microsoft Visual
+Basic can create and display a toolbar with toolbar buttons in the Visual C++
+IDE using the Application.AddCommandBarButton method. This is the only method
+that the Visual C++ object model provides for displaying a toolbar control
+within the IDE programmatically. For further information on add-ins, see the
+following Microsoft Web pages:
+
+   AddCommandBarButton method
+   (http://msdn.microsoft.com/isapi/msdnlib2.idc?theURL=/library/devprods/vs6/visualc/vcug/_asug_addcommandbarbutton_method.htm)
+
+   Home Page: Add-ins for the Visual C++ Developer Studio
+   (http://msdn.microsoft.com/isapi/msdnlib.idc?theURL=/library/devprods/vs6/visualc/vcug/_asug_home_page.3a_.developer_studio_add_ins.htm)
+
+
+REFERENCES
+==========
+
+For more information on the Developer Studio object model, see the following
+topics in the MSDN Online library:
+
+   Home Page: Developer Studio Objects
+   (http://msdn.microsoft.com/isapi/msdnlib.idc?theURL=/library/devprods/vs6/visualc/vcug/_asug_home_page.3a_.developer_studio_objects.htm)
+
+   Home Page: Customizing Visual C++
+   (http://msdn.microsoft.com/isapi/msdnlib.idc?theURL=/library/devprods/vs6/visualc/vcug/_asug_home_page.3a_.customizing_developer_studio.htm)
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAutomation kbide kbVC500 kbVC600 kbVCObj kbDevStudio kbDSupport kbGrpDSTools 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : :5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

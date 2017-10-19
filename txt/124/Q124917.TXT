@@ -1,0 +1,75 @@
+DOCUMENT:Q124917  06-FEB-2002  [win95x]
+TITLE   :How Disk Defragmenter Reports Fragmentation
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:diskmem win95 kbDiskMemory
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+   When you run Microsoft Disk Defragmenter a second time immediately after
+   defragmenting your hard disk, it reports that a small percentage of
+   fragmentation still exists.
+
+   -or-
+
+   Disk Defragenter reports that it is unnecessary to defragment your hard disk
+   if the fragmentation level is below 10 percent.
+
+CAUSE
+=====
+
+The following information applies to physical drives only:
+
+Disk Defragmenter examines your disk directories and creates a database of files
+and their associated clusters. For Windows 95 Disk Defragmenter to identify
+these files as unmovable, they are marked with Hidden and System attributes.
+These unmovable file clusters, along with any bad sectors, can cause contiguous
+files to be interrupted by one or more clusters. This interruption, although
+negligible to the performance of the drive, is still considered a degree of
+fragmentation and is reported as such.
+
+These symptoms may also occur if you select Consolidate Free Space Only under
+Advanced Options without ever performing a "Full defragmentation (both files and
+free space)."
+
+MORE INFORMATION
+================
+
+Disk Defragmenter is designed to work this way; therefore, this behavior
+requires no workaround.
+
+NOTE: You should NEVER remove the attributes from mounted CVFs and defragment the
+HOST under Windows 95.
+
+
+Additional query words: defrag.exe defrag
+
+======================================================================
+Keywords          : diskmem win95 kbDiskMemory 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

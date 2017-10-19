@@ -1,0 +1,65 @@
+DOCUMENT:Q59681  01-NOV-1999  [win95x]
+TITLE   :Slow Return to MS-DOS If Keys Pressed on Exit
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you type characters on the keyboard immediately after exiting Microsoft
+Windows 3.0 in enhanced mode, it may take 20-30 seconds to return to the MS- DOS
+prompt and the computer may seem to stop responding (hang).
+
+Similar behavior may occur with Windows 3.1, if the keyboard buffer gets filled
+(beeping occurs) while Windows is exiting.
+
+Sometimes, the shift state gets toggled incorrectly, so that the keyboard behaves
+as if the CTRL, ALT, or SHIFT key were being held down. Pressing the appropriate
+key a few times typically resets the state correctly.
+
+Sometimes, the computer simply hangs, requiring a cold boot.
+
+WORKAROUND
+==========
+
+Avoid typing characters while enhanced mode Windows is exiting; wait until the
+MS-DOS prompt appears.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows versions 3.0
+and 3.1. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310
+Version           : WINDOWS:3.0,3.0a,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

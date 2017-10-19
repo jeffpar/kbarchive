@@ -1,0 +1,80 @@
+DOCUMENT:Q187774  26-SEP-2001  [frontpg]
+TITLE   :FP: FrontPage Editor Removes Blank Lines in Tables
+PRODUCT :Word Front Page
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows 
+ - Microsoft FrontPage for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to format text with extra carriage returns inside of a table,
+FrontPage Editor removes these blank lines the next time you load the page in
+FrontPage Editor.
+
+CAUSE
+=====
+
+The HTML parser for the versions of FrontPage listed at the beginning of this
+article will remove blank lines from within tables.
+
+RESOLUTION
+==========
+
+FrontPage 97 for Windows
+------------------------
+
+To resolve this issue, upgrade to FrontPage 98, or, use the steps listed in the
+"Workaround" section.
+
+Microsoft FrontPage for the Power Macintosh
+-------------------------------------------
+
+If you are using FrontPage for the Power Macintosh, use the steps listed in the
+"Workaround" section.
+
+WORKAROUND
+==========
+
+To work around this issue, follow these steps:
+
+1. Place the insertion point at the end of the line of text in FrontPage Editor.
+
+2. To format the text, press SHIFT+ENTER to add non-breaking carriage returns.
+
+The non-breaking carriage return tags will not be stripped out of the HTML code
+by the HTML parser of FrontPage.
+
+
+Additional query words: fpeditor editor nonbreaking space tables
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbFrontPageSearch kbZNotKeyword8 kbFrontPage97 kbZNotKeyword2 kbFrontPage97Search kbFrontPageMac kbZNotKeyword3
+Version           : :1.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

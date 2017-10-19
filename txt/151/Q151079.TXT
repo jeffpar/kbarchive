@@ -1,0 +1,76 @@
+DOCUMENT:Q151079  11-JAN-2001  [vbwin]
+TITLE   :BUG: Label of ListView Items Large When LabelWrap Set to TRUE
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the LabelWrap property of the ListView control is set to FALSE, then the
+width of the label is the correct width to hold the text of the ListView item.
+However, the height of the label for each item is the same height as calculated
+for the control if the LabelWrap property had been set TRUE. Consequently,
+unused space underneath the text makes the label for each item much larger than
+it needs to be.
+
+STATUS
+======
+
+Microsoft has confirmed this to be an issue in the Microsoft products listed at
+the beginning of this article. Microsoft is researching this issue and will post
+new information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Start a new project in Visual Basic. Form1 is created by default.
+
+2. Place a ListView control on the form.
+
+3. Add the following code to the Load event of Form1:
+
+      Private Sub Form_Load()
+       ListView1.LabelWrap = False
+       ListView1.ListItems.Add , , "This is an extremely very, very, very," _
+       & "very long line of text"
+      End Sub
+
+4. Run the project by pressing the F5 key. Notice that the label is very wide
+   and tall because the FALSE Wrap property causes the label to be on one line.
+
+Additional query words: kbVBp400bug kbVBp kbdsd kbDSupport kbControl
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,82 @@
+DOCUMENT:Q130390  11-FEB-2000  [foxpro]
+TITLE   :How to Size Controls Using the Visual Class Designer
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use the Visual Class Designer and its child window
+to size controls.
+
+MORE INFORMATION
+================
+
+You can use Visual Class Designer in Visual FoxPro to design custom controls for
+use in applications. The Class Designer consists of a parent window and a child
+window in which you can adjust the size and dimensions of a given control.
+
+The child window contains the control. This is not to be confused with a
+container object. The child window is an editing region for the control being
+manipulated.
+
+For this reason, the control assumes the dimensions of the child window. For
+example, if you drag the child window by the lower-right corner, the control
+resizes to fill the frame of the child window. This is by design.
+
+The control can be independently resized by holding down the shift key and
+pressing the appropriate cursor key on the keyboard.
+
+Step-by-Step Example
+--------------------
+
+1. Create a new class using the Class Designer by choosing New from the File
+   menu and clicking Class. Then click the New File command button to activate
+   the Visual Class Designer tool.
+
+2. Type in a name for this class. Under Based on, choose CommandButton. Type
+   Temp in the Store In text box.
+
+The Visual Class designer parent and child windows appear. Clicking and dragging
+the lower-right corner of the child window results in the command button
+resizing to the dimensions of the child window. Again, this is by design.
+
+The size of the window equals the size of the control. The control can be resized
+inside the child window by holding the SHIFT key down and repeatedly pressing
+the UP ARROW or LEFT ARROW key. When the class is saved and placed on a form, it
+is displayed using the dimensions it had when it was saved, not the dimensions
+of the child window it was in. If the class is then reopened in the Visual Class
+Designer, the child window will have the exact boundary dimensions of the
+control.
+
+Additional query words: VFoxWin KBfest
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,58 @@
+DOCUMENT:Q169627  25-JUL-2001  [win95x]
+TITLE   :Use of Keyboard or Mouse During First Boot May Cause Hang
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kbhw kbsetup win95 kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are installing Windows 95 on an IBM Model 330 computer, using the mouse
+or keyboard during the first reboot may cause the computer to stop responding
+(hang).
+
+CAUSE
+=====
+
+The computer's BIOS may need to be updated to work correctly with Windows 95.
+
+RESOLUTION
+==========
+
+Upgrade the BIOS to version 40 or later. For information about updating the
+BIOS, please contact IBM.
+
+For additional information about troubleshooting problems that may occur during
+the first reboot during Windows 95 Setup, see the following article in the
+Microsoft Knowledge Base:
+
+   Q129260 Windows 95 Setup: Description and Troubleshooting Steps
+
+======================================================================
+Keywords          : kbhw kbsetup win95 kbHardware 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

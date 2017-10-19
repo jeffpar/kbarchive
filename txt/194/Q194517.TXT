@@ -1,0 +1,99 @@
+DOCUMENT:Q194517  21-OCT-2000  [foxpro]
+TITLE   :HOWTO: Use Creatable ADO Recordsets in Visual FoxPro
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:2.1 SP2,2.6,6.0
+OPER/SYS:
+KEYWORDS:kbDatabase kbvfp600 kbGrpDSFox kbGrpDSMDAC kbDSupport kbADO210sp2 kbMDAC210SP2 kbMDAC26
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+ - Microsoft Data Access Components versions 2.1 SP2, 2.6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Often, you find a need for temporary storage for data. ADO 2.x enables you to
+create recordsets on the fly for this purpose.
+
+MORE INFORMATION
+================
+
+The following example creates an ADO recordset with an integer, varchar and date
+field, adds two records to it, and displays the contents of all fields in the
+recordset on the desktop:
+
+      * Demonstrates creating a temporary recordset in ADO
+      * Program creates a recordset, adds an integer, varchar
+      * and date field, adds two records, and displays the
+      * contents of all fields on the desktop
+
+      #DEFINE ADUSECLIENT 3
+      #DEFINE ADLOCKBATCHOPTIMISTIC 4
+      #DEFINE ADINTEGER 3
+      #DEFINE ADVARCHAR 200
+      #DEFINE ADDATE 7
+      #DEFINE ADFLDISNULLABLE 0x00000020
+      #DEFINE ADOPENSTATIC   3
+
+      oRecordSet = CREATEOBJECT("ADODB.Recordset")
+
+      WITH oRecordSet
+         * specify client-side cursors
+         .CURSORLOCATION = ADUSECLIENT
+
+         * add 3 fields
+         .FIELDS.APPEND ("Key", ADINTEGER)
+         .FIELDS.APPEND ("Data1", ADVARCHAR, 40, ADFLDISNULLABLE)
+         .FIELDS.APPEND ("Data2", ADDATE)
+
+         * open the recordset
+         .OPEN(,,ADOPENSTATIC, ADLOCKBATCHOPTIMISTIC)
+
+         * add a couple of records
+         .ADDNEW
+         .FIELDS("Key").VALUE = 1
+         .FIELDS("Data1").VALUE = "String1"
+         .FIELDS("Data2").VALUE = DATE()
+
+         .ADDNEW
+         .FIELDS("Key").VALUE = 2
+         .FIELDS("Data1").VALUE = "Another string"
+         .FIELDS("Data2").VALUE = {^1992/01/06}
+      ENDWITH
+
+      * read the records back
+      oRecordSet.Movefirst
+      DO WHILE ! oRecordSet.EOF
+         ? oRecordSet.FIELDS("Key").VALUE, ;
+            oRecordSet.FIELDS("Data1").VALUE, ;
+            oRecordSet.FIELDS("Data2").VALUE
+         oRecordSet.MoveNext
+      ENDDO
+
+Additional query words: kbVFP600 kbDatabase kbActiveX
+
+======================================================================
+Keywords          : kbDatabase kbvfp600 kbGrpDSFox kbGrpDSMDAC kbDSupport kbADO210sp2 kbMDAC210SP2 kbMDAC260 
+Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC210SP2 kbMDAC260 kbVFP600
+Version           : WINDOWS:2.1 SP2,2.6,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

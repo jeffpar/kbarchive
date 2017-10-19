@@ -1,0 +1,72 @@
+DOCUMENT:Q283149  13-JUN-2001  [exchange]
+TITLE   :XADM: -1011 Error Message Reported After Running ISINTEG -PATCH
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the isinteg -patch command to start the information store, Isinteg
+may finish successfully, but the information store may still report a "-1011"
+error message.
+
+CAUSE
+=====
+
+This issue can occur if the user account that you are using to run isinteg
+-patch does not have the appropriate permissions to modify the database files.
+
+RESOLUTION
+==========
+
+To resolve this issue, log on using an account that has permission to edit
+database files (for example, the Exchange Service Account).
+
+MORE INFORMATION
+================
+
+When you run isinteg -patch, it runs but it does not report an "Access is
+Denied" error message. Instead, it reports that the information store has been
+successfully updated. To confirm this behavior, rename one of the information
+store files, and then run the command line again. Isinteg does not report that
+it could not find the information store; it does not report any error messages.
+
+For example, if you want to rename the Pub.edb file to "Pub.old", run isinteg
+-patch. Isinteg reports that it has successfully updated the information store.
+However, you expect to receive the following error message:
+
+   Warning, public store was not found (assuming private-only store)
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

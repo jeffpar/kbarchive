@@ -1,0 +1,66 @@
+DOCUMENT:Q240814  11-DEC-2001  [winnt]
+TITLE   :ALT+PAGE DOWN and ALT+PAGE UP Change Keyboard Locale
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you press ALT+PAGE DOWN or ALT+PAGE UP to change the active window within a
+Terminal Server session, the defined keyboard locale also changes if multiple
+keyboards are defined.
+
+CAUSE
+=====
+
+Each active window is permitted to have its own keyboard locale. Therefore, when
+you change windows, the keyboard locale changes to the locale that had
+previously been set for that window. In addition, if you have the ALT+SHIFT key
+combination set as the locale toggle sequence (this is the default), the
+ALT+SHIFT+TAB sequence is sent when you press ALT+PAGE DOWN or ALT+PAGE UP. This
+causes the locale to be toggled as well.
+
+RESOLUTION
+==========
+
+In Terminal Server, you can set the keyboard locale toggle by using the Keyboard
+tool in Control Panel. Set the locale toggle to either CTRL+SHIFT or none. This
+causes ALT+PAGE DOWN and ALT+PAGE UP not to toggle the locales.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

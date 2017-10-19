@@ -1,0 +1,65 @@
+DOCUMENT:Q91719  01-OCT-1999  [win95x]
+TITLE   :Suppressing the Windows Logo
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Earlier versions of Microsoft Windows allow you to suppress the logo screen by
+typing "win" (without the quotation marks) followed by a space. This does not
+work with Microsoft Windows operating system version 3.0 or 3.1.
+
+To suppress the opening logo screen in Windows 3.0 or 3.1, do the following:
+
+1. Type "win" (without the quotation marks).
+
+2. Press the SPACEBAR.
+
+3. Press F7 and then press ENTER. (This sequence appears as WIN ^@ on the
+   screen.)
+
+You can also suppress the logo screen by having Windows automatically execute a
+program at startup, by typing the following (where "program" is the program
+name):
+
+   WIN program
+
+WARNING: Microsoft strongly discourages starting Windows by typing "win :".
+Starting Windows with the WIN : command may cause problems and result in an
+unstable system. WIN : was used in Windows versions 2.x to start the equivalent
+of the run-time version of Windows with a given application. Also, WIN : allows
+you to bypass the logo screen in versions 2.03, 2.1, 2.11, 3.0, and 3.1.
+
+Additional query words: 3.00 3.00a 3.10 initiating disable screen startup
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

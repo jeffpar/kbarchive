@@ -1,0 +1,99 @@
+DOCUMENT:Q138978  11-FEB-2000  [foxpro]
+TITLE   :PRB: Structure Contains Underscore When Running Crosstab
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Crosstab option in a query, special characters show up such as
+an underscore character for the name of the field. Special characters specified
+here are "~`!@#$%^&*()+{}[ ]\"':;?/>.<,". This only happens if the
+special character is located in one of the fields of the table that is queried.
+
+CAUSE
+=====
+
+The reason this happens is that the Query Builder cannot place a special
+character in the structure of the query or table that is created when the query
+is run. The only special character that is allowed in the structure of a query
+or table is the underscore character. It takes the place of any of the other
+special characters when the crosstab creates a new field from the contents of
+the original field. For example, if a field in the table has a percent sign (%)
+in it and nothing else, the name of the field in the query or table will be C_.
+The C means character, and the underscore takes the place of the percent sign.
+If the field contains any regular character plus a special character, such as
+ABC#, the field name will be Abc_.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a table that consists of two character fields named Field1 and Field2.
+
+2. Add three records containing this data:
+
+   Field1    Field2
+   ----------------
+   Special   Data
+   Special   Data
+   Special   %
+
+3. Create a query by using the Query Builder and add the two fields to the query
+   in the Fields tab. Create a third field by using the COUNT()
+
+      function located in the Functions/Expressions box. Set it up as
+      COUNT(Field2). Note that the Cross Tabulate check box is not available
+      until the third field is added. Be sure to select the Cross Tabulate
+      check box when it becomes available.
+
+4. Run the query, and look at the name of the third column of the Browse window.
+   It should have the heading of C__.
+
+5. Exit out of the Browse window, and select the original table (on the Window
+   menu, click View Window). Then Click the Browse button, and change the field
+   containing the percent sign (%) sign to ABC*.
+
+6. Run the query, and note that the heading of the third field is Abc_.
+
+All special characters are replaced with the underscore character in the
+structure of the created query or table.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

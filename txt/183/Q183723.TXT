@@ -1,0 +1,63 @@
+DOCUMENT:Q183723  08-MAY-1999  [iis]
+TITLE   :Default NNTP Query Form Returns Blank Table Cells
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you issue queries using the sample NNTP query form that is shipped with
+Index Server 2.0, you may receive a result set that contains blank cells in the
+result table.
+
+CAUSE
+=====
+
+The code for the query form does not take into consideration that the default
+catalog is set to index both newsgroup articles and documents contained on the
+web server. The blank entries in the table are actually documents that were
+found on the web site that match the query. Because non- NNTP documents do not
+have the properties that are displayed on the result page, the cells are
+populated with null data.
+
+RESOLUTION
+==========
+
+To resolve this problem, you either need to create a separate catalog that
+indexes only NNTP articles, or modify the code of the NNTP sample search form so
+that it only returns documents with .nws extensions. The modification to the
+existing code is to modify the Q.Query line as follows:
+
+      Q.Query = "(" & CompSearch & ") and #filename *.nws"
+
+
+======================================================================
+Keywords          :  
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ200
+Version           : WINNT:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

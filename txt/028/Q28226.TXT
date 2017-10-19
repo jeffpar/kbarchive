@@ -1,0 +1,46 @@
+DOCUMENT:Q28226  06-MAY-2001  [masm]
+TITLE   :DOCERR: Division Rather than Multiplication
+PRODUCT :Microsoft Macro Assembler
+PROD/VER::5.0,5.1,5.1a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 5.0, 5.1, 5.1a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+On Page 315 of the "Microsoft Macro Assembler 5.0 Programmer's Guide" and on
+page 315 of the "Microsoft Macro Assembler 5.1 Programmer's Guide" the last
+sentence of the first paragraph incorrectly states "After the multiplication the
+result..."
+
+The sentence should read "After the division the result..."
+
+Additional query words: 5.00 5.10 5.10a
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM510 kbMASM500 kbMASM510a
+Version           : :5.0,5.1,5.1a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,60 @@
+DOCUMENT:Q215115  17-NOV-2000  [sms]
+TITLE   :SMS: Windows 16-Bit Client Stops Responding with Remote Tools
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbsms kbsms200 kbHelpDesk
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use a 16-bit client computer that is running Microsoft Windows, and you
+start the Remote Tools feature on the client from the Systems Management Server
+(SMS) Administrator console, the computer stops responding, or "hangs."
+
+CAUSE
+=====
+
+This issue can occur if the program information file (PIF) memory requirements
+are set to a value that is higher than the client's available conventional
+memory. If you start the program that is using the faulty PIF and start Remote
+Tools on the client from the SMS Administrator console, the client stops
+responding; you must restart the computer.
+
+WORKAROUND
+==========
+
+To work around this issue, ensure that the Memory Requirements section of the
+PIF file is not set to a value that is greater than the physical RAM on the
+computer.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms kbsms200 kbHelpDesk 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

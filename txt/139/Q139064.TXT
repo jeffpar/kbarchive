@@ -1,0 +1,71 @@
+DOCUMENT:Q139064  17-DEC-2000  [win95x]
+TITLE   :Madge Token Ring Card Does Not Automatically Sense Ring Speed
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Madge Token Ring network adapter in your computer may not work correctly.
+
+CAUSE
+=====
+
+The ring speed setting for the network adapter may not match the Windows 95
+settings. The Madge Token Ring network adapter does not automatically sense the
+network's ring speed. The Windows 95 network driver defaults to a ring speed of
+4 Mbps.
+
+RESOLUTION
+==========
+
+Use the manufacturer-supplied Trspeed.exe tool to set the network adapter's ring
+speed. For information about the Trspeed.exe tool, please consult the network
+adapter's documentation or manufacturer.
+
+To set the ring speed for the network adapter in Windows 95, follow these steps:
+
+1. In Control Panel, double-click the Network icon.
+
+2. Click the Madge Token Ring adapter, and then click Properties.
+
+3. On the Advanced tab, click "Force XX Mbits/s" in the Property box, and then
+   click the Value box.
+
+   NOTE: If the token ring adapter is set to "Force16=ON" or "Force16=Yes," click
+   "Force 16 Mbits/s" in the Property box.
+
+4. In the Value box, click Yes.
+
+5. Click OK, and then restart your computer when you are prompted to do so.
+
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

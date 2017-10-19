@@ -1,0 +1,266 @@
+DOCUMENT:Q247247  10-AUG-2001  [winnt]
+TITLE   :Troubleshooting Steps for DOD Over RRAS with Proxy Server
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.0,4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+OPER/SYS:
+KEYWORDS:kbinterop kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition versions 4.0, 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+ - Microsoft Proxy Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes some basic troubleshooting steps for users that do not
+have previous experience with Microsoft Routing and Remote Access Service (RRAS)
+and Microsoft Proxy Server.
+
+MORE INFORMATION
+================
+
+These troubleshooting steps can help you if you are having problems getting Dial
+on Demand (DOD) to work over RRAS with Proxy Server on the same computer, and
+can assist you in finding most major problems (or at least help in ruling out
+the most common causes).
+
+To verify basic connectivity, you can check the following items for RRAS issues.
+
+Internet Protocol (IP) Forwarding
+---------------------------------
+
+To verify that IP forwarding is enabled on both RRAS servers:
+
+1. Click Start, point to Settings, click Control Panel, and then double-click
+   Network.
+
+2. Click Protocols, click Properties, and then click Routing.
+
+3. Make sure that the Enable IP Forwarding check box is selected.
+
+4. Click OK, and then click Close.
+
+5. Restart the computer.
+
+Routing
+-------
+
+You only need to have one default gateway on the computer that is connected to
+the Internet. On each of your wide area network (WAN) interfaces, only two
+routes are required. To check this configuration:
+
+1. Click Start, point to Programs, point to Administrative Tools, and then click
+   Routing and RAS Admin.
+
+2. Double-click IP Routing, right-click Static Routes, and then click View IP
+   routing table.
+
+3. Verify that your default gateway is set for the interface connecting to the
+   Internet. If this route is not listed in the IP routing table dialog box, add
+   the route using the following steps:
+
+   a. Right-click Static Routes, and then click Add Static Route.
+
+   b. Type the appropriate values for your default gateway in the Destination,
+      Network Mask, and Gateway boxes.
+
+   c. Select the interface for your network card that is connected to the
+      Internet, and then click OK.
+
+4. Verify that a route exists in the IP routing table dialog box with a path to
+   the other network segment that you want to communicate with the Internet. If
+   this route does not exist, add the route using the following steps:
+
+   a. Right-click Static Routes, and the click Add Static Route.
+
+   b. Type the appropriate values for the network segment in the Destination,
+      Network Mask, and Gateway boxes.
+
+   c. Select the interface for your network card that is connected to the
+      network segment (this may include multiple DOD virtual private networking
+      connections), and then click OK.
+
+NOTE: You need to delete any other routes that exist.
+
+Credentials
+-----------
+
+To set up an easy-to-understand configuration for your virtual private networking
+(VPN) DOD interface on both RRAS servers, create duplicate users with the same
+name in User Manager for Domains for the interface on both WAN segments. When
+each side connects, make sure it is authenticating with the correct credentials
+(using the correct domain if the interface has the same name). If this does not
+work, you can create a new VPN dial-up connection. For example, on segment A,
+name your user and DOD interface "DOD," and on segment B, name the user and DOD
+interface "DOD."
+
+Proxy Server Troubleshooting
+----------------------------
+
+Access Control:
+
+Disable access control on the Web Proxy and Winsock Proxy services if possible.
+If you are having a problem with access control, verify that all Web Proxy users
+have local logon permissions and make sure all Winsock proxy users are logged on
+to a trusted domain.
+
+More Access Control:
+
+Verify the authentication methods (if any) that are enabled in the WWW service.
+To do this:
+
+1. Click Start, point to Programs, point to Administrative Tools, point to
+   Microsoft Proxy Server, and then click Microsoft Management Console.
+
+2. Double-click Internet Information Server, double-click the server name you
+   want to check, right-click Default Web Site, and then click Properties.
+
+3. Click Directory Security, and then click Edit to view the current
+   authentication settings.
+
+Packet Filtering:
+
+If packet filtering is enabled, be sure to disable this function when performing
+your troubleshooting tasks. If packet filtering must remain enabled, make sure
+dynamic packet filtering is enabled. To disable packet filtering:
+
+1. Click Start, point to Programs, point to Administrative Tools, and then click
+   Routing and RAS Admin.
+
+2. Double-click IP Routing, click Summary, right-click the interface on which
+   you want to disable packet filtering, click Configure IP parameters, and then
+   click to clear the Enable packet filtering check box.
+
+If Packet Filtering is not enabled on the Proxy server which has RRAS running,
+then it should be enabled and the following two predefined filters need to be
+added:
+
+   PPTP Call
+   PPTP Receive
+
+In addition to these two filters make sure that Dynamic Packet filtering is
+enabled so that none of the clients behind the Proxy server have any issues
+accessing the internet through the Proxy server.
+
+Local Address Table (LAT):
+
+The LAT should contain all internal TCP/IP addresses; it should not contain any
+external Internet addresses. If you make changes to the LAT, refresh the proxy
+clients' configuration. To check the LAT:
+
+1. Click Start, point to Programs, point to Administrative Tools, point to
+   Microsoft Proxy Server, and then click Microsoft Management Console.
+
+2. Right-click Web Proxy, click Properties, and then click Local Address Table.
+
+Trusts
+------
+
+Verify that any trust using a DOD, VPN, or other dial-up connection is still
+valid. If a connection is lost for more than 15 minutes, the trust may be
+broken. Make sure that someone with Administrator rights at each site knows how
+to re-create a broken trust. RRAS is not a recommended environment for
+maintaining a trust relationship.
+
+Browsing Over RRAS
+------------------
+
+You can check the following items when you are attempting to troubleshoot RRAS
+browsing issues:
+
+ - Check the load order of the services running on the computer.
+   For information about how to this, click the article number below to view the
+   article in the Microsoft Knowledge Base:
+
+   Q183537 Coexistence of RRAS, Internet Explorer, Option Pack, and Proxy
+
+ - Verify the entries in the Lmhosts file for all network segments and add #DOM
+   entries for both sides of the WAN.
+   For additional information about this subject, click the article numbers below
+   to view the articles in the Microsoft Knowledge Base:
+
+   Q180094 How to Write an LMHOSTS File for Domain Validation
+
+   Q150800 Domain Browsing with TCP/IP and LMHOSTS Files
+
+If the problem persists after you verify the above information, use the nbtstat
+-r and nbtstat -c commands to display the NetBIOS Remote Cache Name Table. The
+output you receive looks similar to the following example:
+
+   Node IpAddress: [120.120.100.1] Scope Id: []
+             NetBIOS Remote Cache Name Table
+
+   Name               Type        Host Address      Life [sec]
+   -----------------------------------------------------------
+   Program      <00>  UNIQUE      120.120.100.10      420
+   Domain.com   <1E>  GROUP       0.0.0.0             480
+   Domain.com   <1B>  UNIQUE      120.120.100.242     480
+   Domain.com   <1C>  UNIQUE      120.120.120.1       -1
+   Domain.com   <1B>  UNIQUE      120.120.120.1       -1
+   Domain       <03>  UNIQUE      120.120.120.1       -1
+   Domain       <00>  UNIQUE      120.120.120.1       -1
+   Domain       <20>  UNIQUE      120.120.120.1       -1
+
+Note the two <1B> type entries for the domain master browser in the cache;
+one for the network interface at 120.120.120.1 and the second address for the
+Network Driver Interface Specification (NDIS) WAN wrapper at 120.120.100.242
+(the router address). The router 1b entry is incorrect. This is typical of a
+multihomed primary domain controller (PDC) registering the browser service the
+router TCP/IP address, as well as the internal TCP/IP address. To resolve this
+issue:
+
+1. Click Start, point to Settings, click Control Panel, double-click Network,
+   and then click Bindings.
+
+2. In the "Show Bindings for" box, click "all protocols".
+
+3. Double-click WINS Client(TCP/IP), click the first Remote Access WAN Wrapper
+   entry, and then click Disable. Repeat this process for all Remote Access WAN
+   wrapper entries.
+
+Dial-Up Permissions
+-------------------
+
+In User Manager for Domains, verify that each RRAS DOD account has the correct
+permissions on both network segments. To do this:
+
+1. Click Start, point to Programs, point to Administrative Tools, and then click
+   User Manager for Domains .
+
+2. Double-click the account you want to verify, click Dialin, click "Grant
+   dialin permission to user" (if necessary), and then click OK.
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+   Q177335 How to Create a Demand Dial PPTP Interface
+
+   Q178993 How to Use Static Routes with Routing and Remote Access Service
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400sp6 kbWinNTSEnt400sp5 kbWinNTSEnt400sp4 kbWinNTSEnt400 kbWinNTS400search kbAudDeveloper kbProxyServSearch kbWinNTSEnt400SP6a kbProxyServ200
+Version           : :2.0,4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

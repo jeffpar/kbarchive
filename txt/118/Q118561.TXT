@@ -1,0 +1,73 @@
+DOCUMENT:Q118561  11-NOV-1999  [pcmail]
+TITLE   :GTWY: EXTERNAL.EXE Doesn't Pick Up Mail from Outgoing Gateway
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:2.1,3.0,3.0b,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 2.1, 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+EXTERNAL.EXE does not pick up mail from a particular outgoing gateway or
+indirect mail queue set up to be indirect through a secondary post office.
+
+CAUSE
+=====
+
+There are two possible causes of this problem:
+
+1. External has not been restarted since changes were made to the post office.
+
+2. The "indirect network," "post office" or "MBG" sections in the NETWORK.GLB
+   file contain inproper information. (It has to have been inserted manually.)
+
+RESOLUTION
+==========
+
+1. Restart External.
+
+2. Check the values in the NETWORK.GLB file and the associated XTN for the
+   Indirect NET/PO/MBG value to ensure all are correct. The NETWORK.GLB format
+   is:
+
+      Gateway/network name
+      MBG/XTN pointer
+      Optional MBG pointer making above XTN pointer(SNADS/PROFS)
+      Indirect
+          Network name
+          Post office name
+          MBG value
+
+The MBG value and name must match the NETWORK entry values for the indirect
+network definition as well as the post office and MBG values from the associated
+XTN file.
+
+Additional query words: po postoffice
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN300b kbMailPCN210
+Version           : WINDOWS:2.1,3.0,3.0b,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

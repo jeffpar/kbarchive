@@ -1,0 +1,138 @@
+DOCUMENT:Q257621  28-JUL-2001  [vbwin]
+TITLE   :FIX: Resources Lost When Loading Modal Form from ActiveX Server
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbActiveX kbResource kbVBp kbVBp600bug kbGrpDSVB kbDSupport kbVS600sp4fix kbVS600sp5fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0, on platform(s):
+    - the operating system: Microsoft Windows 95 
+    - the operating system: Microsoft Windows 98 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0, on platform(s):
+    - the operating system: Microsoft Windows 95 
+    - the operating system: Microsoft Windows 98 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0, on platform(s):
+    - the operating system: Microsoft Windows 95 
+    - the operating system: Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a client loads a modal form from an ActiveX EXE server and leaves it up for
+an extended period of time, the server may experience a severe resource leak
+under Microsoft Windows 95 and Microsoft Windows 98. This behavior happens even
+without any user interaction with the application. If you close the modal form
+to shut down the server, the resource recovers. The resource loss does not occur
+with a non-modal form.
+
+CAUSE
+=====
+
+The client application is in a frozen state waiting for the modal form to go
+away. During this time the message queue fills up and, therefore, system
+resources are lowered.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a bug in the Microsoft products that are
+listed at the beginning of this article. This bug was corrected in the latest
+service pack for Visual Studio 6.0.
+
+For additional information about Visual Studio service packs, click the following
+article numbers to view the articles in the Microsoft Knowledge Base:
+
+   Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+   Q194295 HOWTO: Tell That a Visual Studio Service Pack Is Installed
+
+To download the latest Visual Studio service pack, visit the following Microsoft
+Web site:
+
+   http://msdn.microsoft.com/vstudio/downloads/updates.asp
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new ActiveX EXE project and rename it to ModalSvr. Class1 is created
+   by default.
+
+2. Paste the following code in Class1:
+
+   Public Sub ShowForm()
+       Form1.Show vbModal
+   End Sub
+
+3. From the Project menu, add a new form, Form1.
+
+4. Save and compile the project. ModalSvr.exe is made and registered on the
+   computer.
+
+5. Create a new Standard EXE project as the client. Form1 is created by default.
+
+6. Add one TextBox and one CommandButton to Form1.
+
+7. Paste the following code to the code window of Form1:
+
+   Dim obj As Object
+   Private Sub Command1_Click()
+       Set obj = CreateObject("ModalSvr.Class1")
+       obj.ShowForm
+       Set obj = Nothing
+   End Sub
+
+   Private Sub Form_Load()
+       Text1.Text = ""
+   End Sub
+
+   Private Sub Text1_KeyDown(KeyCode As Integer, Shift As Integer)
+       If Not ((KeyCode = vbKeyF4) And (Shift = vbAltMask)) Then
+          Command1_Click
+       End If
+   End Sub
+
+8. On the Start menu, choose Programs, choose Accessories, choose System Tools,
+   and then choose Resource Meter. If Resource Meter is not available, on the
+   Start menu, choose Control Panel, choose Add/Remove Programs, and then choose
+   the Windows Setup tab to add it.
+
+9. Press the F5 key to run the client. Click on the TextBox and press the F4 key
+   to launch the server and its modal form.
+
+10. Watch the Resource Meter and note that the System and User resources
+   gradually go down. Closing the modal form to shut down the server recovers
+   the resources. If you use the KeyUp event or click Command1 to launch the
+   modal form, the leak is not as severe.
+
+Additional query words: sp4
+
+======================================================================
+Keywords          : kbActiveX kbResource kbVBp kbVBp600bug kbGrpDSVB kbDSupport kbVS600sp4fix kbVS600sp5fix 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

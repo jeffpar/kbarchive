@@ -1,0 +1,76 @@
+DOCUMENT:Q148737  25-MAR-2002  [win95x]
+TITLE   :Cannot Install Network Monitor Components During Batch Setup
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may not be able to install the Microsoft Network Monitor driver or the
+Microsoft Network Monitor Agent using Batch Setup.
+
+CAUSE
+=====
+
+The Network Monitor Setup file, Nm95setp.dll, makes a call to Windows during
+installation and expects the response to contain version 4.0. If Windows
+responds with version 3.1, the installation does not work.
+
+RESOLUTION
+==========
+
+
+STATUS
+======
+
+This problem no longer occurs in Windows 98. To resolve this problem, install
+the current version of Windows. For information about the current version of
+Windows, visit http://www.microsoft.com/windows.
+
+MORE INFORMATION
+================
+
+
+For more information about Microsoft Network Monitor Agent, please see the
+Netmon.txt file in the Admin\Nettools\Netmon folder on the Windows 95 CD-ROM.
+
+NOTE: Microsoft Network Monitor Agent is included in the CD-ROM version of
+Windows 95, but not in the floppy disk version. If you are using the floppy disk
+version of Windows 95 and you want to use Microsoft Network Monitor Agent,
+please see the following article in the Microsoft Knowledge Base for information
+about the availability of Microsoft Network Monitor Agent:
+
+   Q135315 CD-ROM Extras for Microsoft Windows 95 Upgrade
+
+Additional query words: netmon nmagent.exe
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

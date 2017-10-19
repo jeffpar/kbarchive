@@ -1,0 +1,148 @@
+DOCUMENT:Q97904  28-NOV-1999  [win95x]
+TITLE   :HPPCL5E: Changes From LaserJet 4/4M v31.1.03a to v31.1.08
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information was taken from the README.TXT file that comes with the
+HPPCL5E.DRV printer driver version 31.1.08. The version 31.1.08 driver replaces
+the version 31.1.03 driver.
+
+For information on later updates to the HPPCL5E driver, query on "Changes to
+Windows Driver Library", (including the quotation marks). Select the article
+containing printer drivers beginning with 'H'.
+
+MORE INFORMATION
+================
+
+FIXES SINCE LaserJet 4/4M DRIVER VERSION 31.1.03a
+-------------------------------------------------
+
+The following problems, evident in LaserJet 4/4M driver version 31.1.03a, have
+been CORRECTED in this version, 31.V1.08, of the LaserJet 4/4M driver:
+
+ - Inaccurate right justification and centering of TrueType fonts.
+
+ - Random sized characters when running ATM 2.5 in soft font mode
+
+ - Inaccurate TrueType point sizes
+
+ - PASSTHROUGH/TRANSPARENT mode disabled
+
+People who experience the above problems may call in and say that they have
+trouble with the underline feature. Since the character may print in random
+sizes the underline feature may appear to start early or extended beyond
+underlined characters.
+
+To fix the problem immediately activate the "Print TrueType fonts as Graphics"
+feature in the driver. NOTE: printing TrueType fonts as graphics will decrease
+printing speed.
+
+HEWLETT-PACKARD PERSONAL PERIPHERALS ASSIST LINE
+------------------------------------------------
+
+You can call the Hewlett-Packard Personal Peripherals Assist Line weekdays
+between 7 A.M. and 6 P.M. (Mountain Standard Time), except for Wednesdays when
+the hours are 7 A.M. to 4 P.M.: (208) 323-2551 (USA and Canada only).
+
+FEATURES OF HEWLETT-PACKARD HPPCL5E PRINTER DRIVER VERSION V1.08
+----------------------------------------------------------------
+
+The Hewlett-Packard HPPCL5E Printer Driver version 31.V1.08 includes support for
+the HP LaserJet 4/4M printer and the following new features:
+
+Support for 600 dpi Printer RESOLUTION
+
+   The user can switch between 300 and 600 dpi printer resolution via the switch
+   in the setup dialog of the driver.
+
+Support for Graphics Quality:
+
+   At 600 dpi mode in the LaserJet 4/4M the driver supports graphics resolutions
+   of 600, 300, and 150 dpi. At 300 dpi mode the driver supports 300, 150, and
+   75 dpi. The actual graphics resolution settings are denoted by the
+   descriptive terms of Low, Medium, and High rather than the actual dpi.
+
+Support for the TrueType typefaces:
+
+   All the resident TrueType typefaces in the HP LaserJet 4/4M printer are
+   supported. Other TrueType typefaces are supported by building outlines from
+   the typeface and downloading the characters needed on the fly. All of the
+   internal TrueType typefaces in the HP LaserJet 4/4M printer are supported in
+   the 19U symbol set with the exception of WingDings in L$ and Symbol in AS.
+
+   Hewlett-Packard has made the TrueType format screen fonts available for the 35
+   Intellifont format typefaces in LaserJet 4/4M. These screen fonts are
+   available through your local Hewlett-Packard dealer and are not included in
+   this package. TrueType equivalent screen fonts allow for a more closely
+   integrated Windows 3.1 solution.
+
+Support for the internal Intellifont typefaces:
+
+   All the internal Intellifont typefaces in the HP LaserJet 4/4M printer are
+   supported in the 19U symbol set. To obtain WYSIWYG results, use HP
+   Intellifont which supports on-the-fly screen fonts to match your printer
+   fonts in Windows 3.1.
+
+Support for HP-GL/2:
+
+   Support for HP-GL/2 is in version V1.08. Under the Options dialog in the
+   Printer Setup, a new option of "Graphics Mode" is available. Two options are
+   present: HP-GL/2 or Raster. The first choice enables HP-GL/2 which will
+   increase print performance but may possibly cause 21 Print Overruns in some
+   applications. The second choice disables HP-GL/2 and uses raster only. The
+   default for Graphics Mode is HP-GL/2.
+
+   If you do encounter print difficulties in the default Graphics Mode, it is
+   recommended that you change the mode to Raster and try your print job again.
+   Additional information on this topic may be found in the help files that
+   accompany this driver. Choose Help from the driver dialog screens or the HP
+   font installer screens to access the HELP information.
+
+Dialog Support for Resolution Enhancement technology:
+
+   Another feature added to the Option Dialog is the Resolution Enhancement
+   technology box. The options here are: Printer Default, Light, Medium, Dark,
+   and Off.
+
+FEATURES OF HP LaserJet 4/4M NOT SUPPORTED BY
+
+HPPCL5E PRINTER DRIVER VERSION 31.V1.08
+-------------------------------------------------------------------------------------
+
+Bidirectional communication is not currently supported in Windows 3.1.
+
+
+Additional query words: 3.10 printing printer print driver upgrade update fix fixes corrects correction corrected w4wprint true type laser jet
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

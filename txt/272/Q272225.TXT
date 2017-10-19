@@ -1,0 +1,71 @@
+DOCUMENT:Q272225  12-JUN-2001  [sna]
+TITLE   :SNA Server and NetBIOS ScopeIDs on Windows 2000 Server
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0 SP3; :
+OPER/SYS:
+KEYWORDS:kbDSupport kbsna
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 4.0 SP3 
+ - Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+SNA Server and Host Integration Server are not compatible with NetBIOS ScopeIDs
+on a Microsoft Windows 2000 Server. If a ScopeID is enabled, it is not possible
+to add link services from SNA Server Manager or SNA Management Console. The user
+interface does not respond for several minutes. It eventually recovers, although
+the link service is not added.
+
+MORE INFORMATION
+================
+
+If the ScopeID is disabled, SNA Server works as expected. There are no known
+problems with SNA Server and ScopeIDs in a computer that is running Microsoft
+Windows NT. If ScopeIDs are required, there are two ways to work around this
+problem:
+
+ - Disable the ScopeID and add the link service, then re-enable the ScopeID.
+
+ - Use the LINKCFG command-line utility to add the link service.
+
+For additional information about this utility, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+   Q262807 How to Use the SNA Server Linkcfg.exe on Windows 2000
+
+REFERENCES
+==========
+
+For additional information about NetBIOS ScopeIDs, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+   Q244438 How to Enable NetBIOS Scope IDs in Windows 2000
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport kbsna 
+Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ400SP3
+Version           : WINDOWS:4.0 SP3; :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

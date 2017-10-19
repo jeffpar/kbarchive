@@ -1,0 +1,85 @@
+DOCUMENT:Q142671  08-AUG-2001  [winnt]
+TITLE   :Backup Fails on Certain Directories Due to Lack of Permissions
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbnetwork kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you log on with an account that has Backup Operator permissions, when you
+run a backup across the network from a Windows NT 4.0 computer you may receive
+the following error in the backup.log file stating you do not have permissions
+to back up some directories:
+
+   You do not have permission to access portions of data. Please see the owner
+   or administrator to get permission. Directory F:\data
+
+
+CAUSE
+=====
+
+An account with Backup Operator permission should have the built-in ability to
+back up files that it does not have permissions to access. However, this ability
+does not work properly in Windows NT 4.0.
+
+
+RESOLUTION
+==========
+
+Microsoft has updated RDR.SYS to open remote files in the correct context.
+
+This update is available from Microsoft support channels or directly from the
+following Internet location:
+
+   ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa
+   /nt40/hotfixes-postSP1/NTBackup-fix
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. This
+problem was corrected in the latest Microsoft Windows NT 4.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+The built-in ability of the backup operator works properly locally.
+
+Additional query words: prodnt perms
+
+======================================================================
+Keywords          : kb3rdparty kbnetwork kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,482 @@
+DOCUMENT:Q148304  06-MAY-2001  [visualc]
+TITLE   :INFO: Frequently Encountered MFC 3.x to 4.0 Porting Issues
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.0,4.1,4.2,5.0
+OPER/SYS:
+KEYWORDS:kbtshoot kbnokeyword kbDebug kbDLL kbDocView kbMFC kbThread KbUIDesign kbVC400 kbVC500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), included with:
+    - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists some of the most frequently encountered bugs, problems, and
+other issues that you may experience when attempting to port an application
+written with MFC 3.x (the MFC included with Visual C++ 2.x) to work with MFC 4.0
+(the MFC included with Visual C++ 4.0).
+
+General Issues
+--------------
+
+1. Window classes are no longer pre-registered by MFC.
+2. BUG: The first control on CFormView gets OnSetFocus before OnInitialUpdate
+   executes.
+3. CWinApp::m_templateList no longer exists.
+4. BUG: The CString += operator may break with null strings.
+5. BUG: OnWndMsg case for WM_xSCROLL messages breaks when scroll bars are
+   scrolled programmatically.
+6. BUG: OnInitMenuPopup now deletes the menu temp map before returning.
+7. Documented CRuntimeClass::m_pfnConstructObject is now m_pfnCreateObject.
+8. BUG: Default dialog-based application doesn't work in Win32s.
+
+   CPropertySheet
+   --------------
+
+9. CPropertySheet always changes its font to the default font.
+10. Property sheet modifications should be done in OnInitDialog after a call to
+   the base class.
+11. CPropertySheet::DoModal() causes first chance exception in Windows 95.
+12. Property Sheets now have a minimum width.
+
+   DLLs
+   ----
+
+13. MFC threads cannot be created during DLL startup.
+14. Regular DLLs using MFC in the Shared Library require AFX_MODULE_STATE in
+   exported functions.
+15. BUG: DoModal may fail in MFC extension DLLs.
+
+   CStatusBar and CToolBar
+   -----------------------
+
+16. CToolbar::SetSizes and button sizing.
+
+   CFileDialog
+   -----------
+
+17. No need to replace the MFC-supplied CFileDialog hook procedure.
+18. CFileDialog is always a child of the Explorer dialog window.
+19. CFileDialog member functions GetFileName and GetFileTitle reversed.
+
+   MFC ODBC
+   --------
+
+20. BUG: Dynasets with CLongBinary fields throw an exception.
+
+   MFC OLE
+   -------
+
+21. No more Mfcans32.dll, so OLE functions in MFC applications require Unicode
+   arguments.
+
+MORE INFORMATION
+================
+
+General Issues
+--------------
+
+1. Window classes are no longer pre-registered by MFC:
+
+Previous to version 4.0, MFC pre-registered four window (WNDCLASS) classes, as
+documented in MFC Technical Note number 1. These window classes were AfxWnd,
+AfxFrameOrView, AfxMDIFrame, and AfxControlBar. Most code (such as the ONETIME
+sample) that prevented more than one instance of an application relied on these
+classes.
+
+Now, as of version 4.0, these four classes are not registered until a window of
+that type is created. Windows based on a custom WNDCLASS that fill in
+information from the MFC window classes will likely just fail to show, sending
+the message that window creation failed. GetLastError returns the value 0x57F
+(ERROR_WNDCLASS_DOES_NOT_EXIST) to the debug output window if MFC tracing is
+turned on.
+
+From version 4.0 on, you need to provide all of the necessary information when
+registering custom window classes with RegisterClass or AfxRegisterClass. Do not
+rely on ::GetClassInfo to retrieve class values for MFC window classes.
+
+For additional information, please see MFC Technical Note 1 and the following
+articles in the Microsoft Knowledge Base:
+
+   Q140596 MFC 4.0 No Longer Pre-Registers Window Classes
+
+   Q141752 SAMPLE: Limiting 32-bit Applications to a Single Instance
+
+2. BUG: The first control on CFormView gets OnSetFocus before OnInitialUpdate
+executes:
+
+
+This causes problems if there is code in OnSetFocus that refers to CWnd objects
+that won't be subclassed until the call to the base class OnInitDialog. This
+problem may also occur in any other handler called as a result of the control
+getting the focus. For example, radio buttons will generate a BN_CLICKED when
+they get the focus.
+
+For additional information and a workaround, please see the following article in
+the Microsoft Knowledge Base:
+
+   Q142274 FIX: Assertion Failure When Handling xN_SETFOCUS in CFormView
+
+3. CWinApp::m_templateList no longer exists:
+
+The m_templateList member variable of CWinApp was undocumented in MFC versions
+prior to 4.0 but was used frequently enough to be called a porting issue.
+Microsoft recommends that you use the GetFirstDocTemplatePosition() and
+GetNextDocTemplate() member functions of CWinApp to gain access to the templates
+for an application.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q106455 How to Acquire a List of All CDocument Objects
+
+4. BUG: The CString += operator may break with null strings:
+
+
+The particular sequence of events that result in this bug is complex. There is a
+bug in the MFC source code that incorrectly handles the case when a null string
+is used with the += operator.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q142385 FIX: Using CString::operator+= May Cause an Access Violation
+
+5. BUG: OnWndMsg case for WM_xSCROLL messages breaks when scroll bars are
+scrolled programmatically:
+
+
+Code was added in MFC 4.0 to pass the full 32 bits of position (when available)
+on to the OnxScroll handlers because the WM_xSCROLL messages can only pack 16
+bits of position information. Unfortunately the code that was added breaks
+whenever an application programmatically scrolls a scroll bar by sending a
+WM_xSCROLL message to itself by way of SendMessage.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q147684 FIX: Sending WM_xSCROLL Message Causes Invalid ASSERT
+
+6. BUG: OnInitMenuPopup now deletes the menu temp map before returning:
+
+
+In MFC version 4.0, calls to AfxLockTempMaps and AfxUnlockTempMaps were added to
+CWnd::OnInitMenuPopup. When AfxUnlockTempMaps is called, MFC's temporary object
+map reference count will go to zero causing all temporary MFC objects to be
+deleted. When the call to OnInitMenuPopup returns, the CMenu pointer passed in
+to OnInitMenuPopup (which is a temporary pointer) will be invalid.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q141532 FIX: OnInitMenuPopup Deletes Temporary Objects
+
+7. Documented CRuntimeClass::m_pfnConstructObject is now m_pfnCreateObject:
+
+
+m_pfnConstructObject was a documented member variable of CRuntimeClass in MFC
+versions prior to 4.0, but the name was changed to reflect the change in
+parameters and return value. The documentation included with Visual C++ 4.0 was
+not updated to reflect this change and incorrectly references the old function
+name. 8. BUG: Default dialog-based application doesn't work in Win32s:
+
+
+When AppWizard generates a dialog-based application, it uses a DIALOGEX resource
+for the main dialog. Win32s, however, does not support DIALOGEX resources. As a
+result, the dialog box looks incorrect in Win32s. This can be fixed by removing
+the WS_EX_APPWINDOW style from within the dialog editor and by changing the
+DIALOGEX statement to a DIALOG statement in the .rc file.
+
+For additional information, please see the Visual C++ Readme file and the
+following article in the Microsoft Knowledge Base:
+
+   Q138971 BUG: Default Dialog-Based Application Doesn't Work in Win32s
+
+CPropertySheet
+--------------
+
+Much of the MFC implementation of CPropertySheet has changed to now wrap the
+Windows Property Sheet common control. There have been some formatting and
+sizing changes, but more importantly, if code made use of any of the private MFC
+implementations of CPropertySheet, the code will likely break as most of the
+undocumented members of that class are no longer there.
+
+9. CPropertySheet always changes its font to the default font:
+
+Even if the font of the property pages is changed in the Resource Editor,
+property pages will be displayed at run time with the system font. If it is
+necessary to change the font, call SetFont() in OnInitDialog; then use an
+appropriate MoveWindow() to resize the sheet and move and resize all the
+controls on the page. Also, the property sheet is set back to its original size
+whenever a page is activated, so it will be necessary to resize the page in
+response to a click on the tab control.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q142170 SAMPLE: PRPFONT - How to Set CPropertySheet Fonts
+
+10. Property sheet modifications should be done in OnInitDialog after call to
+base class:
+
+During CPropertySheet::OnInitDialog, the property sheet is resized and the four
+standard buttons (OK, Cancel, Apply, and Help) are hidden at the bottom of
+modeless property sheets. The proper place to modify the size of the sheet or to
+customize the four property sheet buttons is in OnInitDialog after the call to
+the base class. In previous versions of MFC, it was common practice to hide some
+of the buttons shown with a modal property sheet in OnCreate. These buttons can
+now be easily removed by modifying styles in the PROPSHEETHEADER structure
+CPropertySheet::m_psh.
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q140585 PRB: Resizing CPropertySheet in OnInitDialog Does Not Work
+
+   Q141039 How to Hide the Apply Button in CPropertySheet
+
+11. CPropertySheet::DoModal() causes first chance exception on Windows 95:
+
+A first chance exception occurs on Windows 95 because the property page sets
+required styles in the dialog resource. The operating system needs to handle
+this, so the message can be ignored. If you surround the DoModal() call with a
+try/catch(...) block in an effort to handle the exception yourself, you will get
+a stack fault.
+
+
+12. Property Sheets now have a minimum width:
+
+The minimum width of a CPropertySheet window is the size of the four buttons (OK,
+Cancel, Apply, and Help) that would show up along the bottom of a modal property
+sheet. This width applies even to modeless property sheets, which do not show
+the four buttons along the bottom.
+
+DLLs
+----
+
+13. MFC threads cannot be created during DLL startup:
+
+Although not a good idea, it was possible to create a thread during the startup
+of an MFC DLL in previous versions of MFC. This includes calling AfxBeginThread
+or CWinThread::CreateThread in DllMain, RawDllMain, InitInstance in the DLL, or
+in any functions called by these. Due to synchronization of MFC thread startup
+code and blocking at DllMain during DLL_PROCESS_ATTACH and DLL_THREAD_ATTACH,
+this is no longer permitted. MFC 4.0 DLLs that attempt to do this will hang when
+loaded by an application.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q142243 PRB: Cannot Create an MFC Thread During DLL Startup
+
+14. Regular DLLs using MFC in the Shared Library require AFX_MODULE_STATE in
+exported functions:
+
+Previously, the USRDLL model required that MFC be statically linked to the DLL.
+It is now possible to link dynamically to the Mfc40.dll from a Regular DLL (the
+new term for _USRDLLs). The caveat is that to convert a _USRDLL to be a "Regular
+DLL using MFC in a Shared Library," you need to make sure that you manage your
+module state information correctly. The single line:
+
+      AFX_MANAGE_STATE(AfxGetStaticModuleState());
+
+should be added to the beginning of any function exported from the DLL that
+operates on MFC objects.
+
+The following problems are likely to occur if the module state is not switched
+appropriately:
+
+ - Dialogs and windows fail at creation in a DLL because of missing resources.
+ - Functions for the wrong application object are called and cause stack
+   overflow or unpredictable results.
+ - Unrecognized run-time class information.
+ - Bad window-to-MFC object handle map linkage.
+
+For additional information, please see MFC Technical Note 58 (TN058) and the
+following article in the Microsoft Knowledge Base:
+
+   Q140850 How to Convert DLLTRACE to Use MFC in Shared Library
+
+15. BUG: DoModal may fail in MFC extension DLLs:
+
+
+When MFC 4.0 creates a dialog box, it passes the current instance handle to the
+::CreateDialogIndirect Windows API - which creates the dialog instead of the
+resource handle for the DLL. The template for the dialog was already loaded by
+MFC from the correct extension DLL. However, Windows will look in the .exe file
+specified by the instance handle for any extra resources indicated on the
+template. Windows will not find them if they are in the DLL, and the dialog
+creation will fail. To work around this problem, the current instance handle
+should be temporarily switched before any calls to DoModal. Extra resources
+include such things as the dialog's menu, custom controls, or an icon on the
+dialog.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q147384 FIX: Icons, Bitmaps, & Menus Not Displayed in an AFXDLL Dialog
+
+CStatusBar and CToolBar
+-----------------------
+
+Like CPropertySheet, these MFC classes now wrap the functionality of the Win32
+common controls. Any code that relied on or modified the private, undocumented
+implementation of these classes will likely break when compiled for MFC 4.0.
+These two common controls support a greater range of common customizations than
+did the previous default MFC implementation, and they do not require significant
+overrides of the MFC source for such tasks as constructing palette bars or
+making resizable toolbars. If needed, the old implementation of these two
+classes is still present as the COldToolBar and COldStatusBar classes. These
+implementations can be found in the OLDBARS sample project. 16.
+CToolbar::SetSizes and button sizing:
+
+Toolbars now require that the width of the button size be at least 7 pixels
+greater than the image size. The documentation that ships with Visual C++ 4.0
+was not updated to reflect this change and is incorrect. An ASSERT that MFC
+version 4.0 uses to verify correct parameters in SetSizes also incorrectly
+checks for the old value of 6. There are other limits on the sizes of the
+toolbar, buttons, and images, but these are correctly covered by ASSERT
+statements in the MFC source and have not changed since MFC 3.x.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q141444 DOC: Incorrect Documentation for CToolBar::SetSizes()
+
+CFileDialog
+-----------
+
+17. No need to replace the MFC-supplied CFileDialog hook procedure:
+
+MFC always specifies its own hook procedure (_AfxCommDlgProc) for the Open File
+Dialog during the construction of the CFileDialog object so that it can properly
+route notifications for the dialog to the proper handlers. As of MFC 4.x, this
+hook procedure is used to subclass the CFileDialog object to the Open File
+Dialog window. If the hook procedure is replaced, this subclass procedure won't
+occur, so any attempt to use the CFileDialog or an embedded control variable on
+it (as if it were a window) will fail.
+
+18. CFileDialog is always a child of the Explorer dialog window:
+
+When you use the Explorer-style CFileDialog (which in Windows 95 you are doing by
+default), MFC 4.0 assumes the Explorer model of customization. This implies that
+custom improvements to the File dialog are included on a separate template that
+is added around the standard Explorer dialog. In MFC 4.0, the actual CFileDialog
+window is a child dialog of the main File Common Dialog, even if you are not
+providing a template to customize the dialog. Therefore, if you have a need to
+alter the standard Explorer interface by moving or hiding controls, prefix all
+GetDlgItem() calls to Explorer controls with GetParent(). For example, this
+expression:
+
+      GetParent()->GetDlgItem(IDOK)
+
+will return a pointer to the Open/Save button on the Explorer dialog. However,
+this is not recommended because code that relies on the details of the standard
+Explorer dialog controls will break if the Explorer layout is changed in the
+future.
+
+This default can be changed by removing the OFN_EXPLORER style. For more
+information, see the following Microsoft Knowledge Base article:
+
+   Q131225 PRB: CFileDialog::DoModal() Does Not Display FileOpen Dialog
+
+19. CFileDialog member functions GetFileName and GetFileTitle reversed:
+
+In MFC 4.0, for the file C:\Article.txt:
+
+ - CFileDialog::GetFileName returns Article.txt.
+ - CFileDialog::GetFileTitle returns Article.
+
+Previous versions of MFC returned exactly the opposite. These functions have been
+changed to work in a manner similar to the Win32 API functions of the same
+names. However, the documentation included with Visual C++ 4.0 was not updated
+to reflect these changes and is incorrect.
+
+For additional information, please see the Visual C++ Readme file and the
+following article in the Microsoft Knowledge Base:
+
+   Q142203 DOCERR: GetFileTitle() & GetFileName() Docs Are Switched
+
+MFC ODBC
+--------
+
+20. BUG: Dynasets with CLongBinary fields throw exception:
+
+
+An MFC ODBC application that uses dynaset recordsets with CLongBinary-bound
+fields worked in Visual C++ 2.x, but it now throws an exception in Visual C++
+4.0 when the recordset is opened. The exception is thrown from
+CRecordset::InitRecord.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q141303 FIX: Dynasets w/ CLongBinary Fields Throws Incorrect Exception
+
+MFC OLE
+-------
+
+21. No more Mfcans32.dll, so OLE functions in MFC applications require Unicode
+arguments:
+
+In MFC 3.x, a special DLL was used (Mfcans32.dll) to convert automatically
+between Unicode and MBCS when OLE interfaces were called. MFC 4.0 does not use
+this DLL; instead, it talks directly to the Unicode OLE interfaces. To handle
+this change, MFC applications now must pass the correct type of parameters -
+whether Unicode or MBCS - to OLE functions. MFC 4.0 has provided a number of
+macros that make this task easier.
+
+For more information please see MFC Technical Note 59.
+
+REFERENCES
+==========
+
+You can find the referenced MFC Technical Notes in the Visual C++ InfoView in
+the Visual C++ CD-ROM in this directory:
+
+   Visual C++ Books
+      MFC 4.0
+         MFC Technical Notes
+
+The Visual C++ Readme file can be found in the \Msdev\Vcread.wri file or in the
+Visual C++ InfoView under:
+
+   README for Microsoft Visual C++ Version 4.0
+      Microsoft Foundation Classes (MFC)"
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Jason Strayer, Microsoft Corporation
+
+
+Additional query words: troubleshoot trouble shoot conversion
+
+======================================================================
+Keywords          : kbtshoot kbnokeyword kbDebug kbDLL kbDocView kbMFC kbThread KbUIDesign kbVC400 kbVC500 kbFAQ kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1,4.2,5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

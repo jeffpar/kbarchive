@@ -1,0 +1,62 @@
+DOCUMENT:Q157466  14-NOV-2000  [word97]
+TITLE   :WD: WordArt Object Missing, Changes After Conversion
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:6.0,6.0a,6.0c,7.0,7.0a,97
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+ - Microsoft Word for Windows 95, versions 7.0, 7.0a 
+ - Microsoft Word for Windows, versions 6.0, 6.0a, 6.0c 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you open a Word 97 document that contains WordArt text effects in Word 7.0,
+the WordArt is missing.
+
+When you open a Word 97 document that contains WordArt text effects in Word 6.0
+for Windows, the WordArt object appears as a pattern-filled drawing object.
+
+CAUSE
+=====
+
+WordArt 97 objects are special text effects that are not converted to Word 7.0
+or Word 6.x WordArt objects. An object may appear as colored, patterned color,
+or solid black box. This is a design limitation in the Word for Windows 6.0/7.0
+converter.
+
+
+WORKAROUND
+==========
+
+Use the Word 97 & 6.0/95 RTF converter instead of the Word 6.0/95 converter
+to preserve the WordArt when reopened in Word 97.
+
+Additional query words: 8.0 word8 word97 grey convert
+
+======================================================================
+Keywords          :  
+Technology        : kbWordSearch kbWord97 kbWord97Search kbWord700Search kbZNotKeyword2 kbWord600 kbWord600a kbWord600c kbWord700 kbWord700a
+Version           : WINDOWS:6.0,6.0a,6.0c,7.0,7.0a,97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

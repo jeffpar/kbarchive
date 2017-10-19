@@ -1,0 +1,73 @@
+DOCUMENT:Q145651  25-MAR-2002  [win95x]
+TITLE   :Windows Sockets Program Generates Errors In WSIPX
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbnetwork kbpolicy win95kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are running a multi-threaded Windows Sockets program using the IPX
+protocol, Windows 95 may stop responding (hang), or you may receive an error
+message similar to the following on a blue screen:
+
+   An exception 0E has occurred at [segment]:[address] in VxD WSIPX(01) +
+   [offset]. This was called from [segment]:[address] in VxD NWLINK(01) +
+   [offset]. It may be possible to continue normally.
+
+CAUSE
+=====
+
+When a multi-threaded Windows Sockets program uses the IPX protocol, a page
+fault can occur if an invalid pointer to a buffer used by Windows Sockets over
+IPX is used.
+
+Note that this error occurs only with multi-threaded Windows Sockets programs; it
+does not occur with single-threaded programs.
+
+RESOLUTION
+==========
+
+
+STATUS
+======
+
+This problem no longer occurs in Windows 98. To resolve this problem, install
+the current version of Windows. For information about the current version of
+Windows, visit http://www.microsoft.com/windows.
+
+MORE INFORMATION
+================
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbpolicy win95 kbfixlist
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

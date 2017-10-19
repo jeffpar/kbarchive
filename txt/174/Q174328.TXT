@@ -1,0 +1,70 @@
+DOCUMENT:Q174328  18-JUN-1999  [sms]
+TITLE   :SMSINST: Repackage Does Not Capture REG_MULTI_SZ Changes
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbusage kbsms200 kbsms200bug smsinst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server Installer version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Systems Management Server Installer is unable to read or modify
+multi-string registry values. If a value is added or changed, only the first
+line of the multi-string data value is written.
+
+CAUSE
+=====
+
+Systems Management Server Installer currently does not have the capability to
+read or write complete multi-string registry values.
+
+WORKAROUND
+==========
+
+Use an external utility designed for editing multi-string registry values.
+Execution of such utilities can be accomplished within Systems Management Server
+Installer by using the Execute Program script item.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+Installer 1.0.
+
+This is fixed in the latest publicly available version of Installer available on
+the Microsoft Web site at
+http://www.microsoft.com/smsmgmt/downloads/install.asp.
+
+
+
+Additional query words: prodsms multiple string
+
+======================================================================
+Keywords          : kbusage kbsms200 kbsms200bug smsinst 
+Technology        : kbSMSSearch kbSMSI100
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

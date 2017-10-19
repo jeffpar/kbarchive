@@ -1,0 +1,66 @@
+DOCUMENT:Q132787  17-DEC-2000  [win95x]
+TITLE   :Eagle NE200T PCMCIA NE200.COM ODI Driver Does Not Work
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Eagle NE200T PCMCIA card does not work with the provided NE200.com ODI
+driver. This only affects users trying to run the NE200.com ODI driver with a
+real mode card and socket services and any of the Microsoft protected mode
+32-bit network clients.
+
+CAUSE
+=====
+
+The driver from Eagle conflicts with the Msodisup.Vxd file because it randomly
+writes to memory space required by Microsoft network support.
+
+RESOLUTION
+==========
+
+Run the ODI driver with the real mode Novell Netware Client. This requires the
+removal of any of Microsoft's network clients.
+
+-or-
+
+Use the Microsoft 32-bit network driver for this card. Use of this driver
+requires the installation of the Microsoft Client for Netware that provides the
+user with full 32-bit network functionality on a Netware network.
+
+MORE INFORMATION
+================
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,53 @@
+DOCUMENT:Q163170  08-NOV-2001  [homekids]
+TITLE   :Kids Plus!: PolEdit and Protect It! Interfere with Start Menu
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Plus! for Kids, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Policy Editor (PolEdit) and Protect It! can interfere with each other
+if they are run concurrently.
+
+For example, if you are restricted with Protect It! and then unrestricted with
+PolEdit, the Start menu will not rebuild correctly. The Start menu will still
+reflect the restrictions that were set in Protect It!, however, applications are
+still available through Explorer or the Run line.
+
+MORE INFORMATION
+================
+
+PolEdit was shipped with Microsoft Windows 95, and it is very similar to
+Microsoft Plus! For Kids Protect It!
+
+Additional query words: kids kidsplus kidsplus! pack plus plus! protectit protectit! pol edit restrict restricts restricted
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbGamesSearch kbPlusKids kbPlusSearch
+Version           : 1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

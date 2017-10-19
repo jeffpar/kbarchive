@@ -1,0 +1,62 @@
+DOCUMENT:Q272726  10-AUG-2001  [winnt]
+TITLE   :XADM: Administrators Can Browse User List of Untrusted Domains
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0,5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By design, administrators are able to access the user lists of non-trusted
+Microsoft Windows NT domain controllers listed in the Primary Windows NT Account
+section of the New Mailbox dialog box.
+
+MORE INFORMATION
+================
+
+If you are an administrator, you can use the Microsoft Exchange Administrator
+program to create a Null (anonymous) session to the primary domain controller of
+the non-trusted domain. You then receive a user list and a list of trusted
+domains for that domain.
+
+To prevent anonymous users from receiving user list information, you must have
+Windows NT Server 4.0 Service Pack 3 (SP3) installed. Earlier service packs of
+Windows NT Server 4.0 do not include a mechanism to restrict anonymous users
+from accessing user list information.
+
+For additional information about restricting anonymous users, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q143474 Restricting Information Available to Anonymous Logon Users
+
+Additional query words: DisableAnonymous
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

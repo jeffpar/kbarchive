@@ -1,0 +1,64 @@
+DOCUMENT:Q139439  13-APR-2000  [homemm]
+TITLE   :Bookshelf 95: Copy to Excel Command Does not Work
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:; Win95:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf '95 for Windows 95 
+ - Microsoft Excel for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Copy To Excel command in Bookshelf does not work if there is a cell being
+edited in Excel.
+
+When you click Copy To Excel on the Bookshelf Edit menu, you are returned to
+Excel and the Copy to Excel dialog box is not displayed, and the copy operation
+is not completed.
+
+
+CAUSE
+=====
+
+When the Copy To Excel command is selected in Bookshelf, Excel is in native mode
+(called a modal state). In this mode, Excel does not realize Bookshelf has
+requested integration services to copy data into a cell. The Paste portion of
+the command is not completed.
+
+RESOLUTION
+==========
+
+Select an empty cell in Excel, but do not try to edit the cell contents.
+
+When you use the Copy to Excel command in Bookshelf, you are returned to Excel
+and the Copy to Excel dialog box is displayed.
+
+Additional query words: 1995, 32-bit version multi media multimedia multi-media mmtitles kbmm not copied working 7.0 excel o.l.e. object-linking-embedding linking linked link embedded embed object
+
+======================================================================
+Keywords          :  
+Technology        : kbExcelSearch kbHomeMMsearch kbExcel700 kbBookshelfSearch kbExcel95Search kbBookShelf1995
+Version           : WINDOWS:; Win95:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

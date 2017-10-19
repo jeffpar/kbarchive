@@ -1,0 +1,74 @@
+DOCUMENT:Q263369  05-NOV-2000  [sms]
+TITLE   :SMS: Advertisement May Run While a User Is Logged Off
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbenv kbsms200 kbsms200bug kbsms200preSP3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Systems Management Server (SMS) 2.0, an advertisement for a program with the
+setting that allows a program to run only when a user is logged on may run
+regardless of whether the user is logged on or not.
+
+CAUSE
+=====
+
+This problem can occur in the following circumstances:
+
+ - If you select the "Program can run: Only when a user is logged on" option
+
+   -and-
+
+ - If you select the "Run mode: Run with administrative rights" option.
+
+   -and-
+
+ - The "Provide a countdown" check box is not selected in the Notification
+   Properties dialog box in the Advertised Programs Client agent on the client
+   computer.
+
+WORKAROUND
+==========
+
+To work around this problem, do not set the program to run with administrative
+rights if the program is also set to run only when a user is logged on.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbenv kbsms200 kbsms200bug kbsms200preSP3 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,71 @@
+DOCUMENT:Q239481  01-OCT-1999  [sna]
+TITLE   :ODBC Connection to DB2 Fails from Some Windows 95 Computers
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0 SP2
+OPER/SYS:
+KEYWORDS:kbsna400sp3fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft ODBC Driver for DB2, version 4.0 SP2 
+ - Microsoft SNA Server, version 4.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On certain Windows 95 computers, connection attempts to DB2 (mainframe, AS/400,
+or UDB) using the Microsoft ODBC driver for DB2 fail with the following error
+message:
+
+   [Microsoft][ODBC Driver for DB2]No such interface supported.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for SNA Server version
+4.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server version 4.0
+Service Pack 2. This problem was first corrected in SNA Server version 4.0
+Service Pack 3.
+
+MORE INFORMATION
+================
+
+This behavior has been observed on Windows 95 computers that have DCOM 95 V1.3
+installed.
+
+Additional query words: OLE DB OS/390 MVS OS/400 DB2OLEDB
+
+======================================================================
+Keywords          : kbsna400sp3fix 
+Technology        : kbAudDeveloper kbODBCSearch kbSNAServSearch kbODBCDB2400SP2 kbSNAServ400SP2
+Version           : WINDOWS:4.0 SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

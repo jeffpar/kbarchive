@@ -1,0 +1,51 @@
+DOCUMENT:Q106546  15-DEC-2000  [crossnet]
+TITLE   :Resouce Kit Doc Error: London Appears in the From Box...
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::3.1
+OPER/SYS:
+KEYWORDS:kbother
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Windows NT Resource Kit, version 3.1 
+-------------------------------------------------------------------------------
+
+The Windows NT Resource Guide (volume 1 of the Microsoft Windows NT
+Resource Kit) on page 612 states:
+
+London appears in the From box at the initial logon screen of Windows
+NT computers in the Topeka domain. Thus a user from the Topeka domain
+can log on at a computer in the London domain.
+
+This information is incorrect.
+
+The previous page (page 611) of the guide states that London trusts
+Topeka. In this instance, Topeka appears in the From box at the
+initial logon screen of Windows NT computers in the London domain.
+Users logging on in the Topeka domain will only see Topeka and their
+local workstation.
+
+Additional query words: prodnt reskit trust
+
+======================================================================
+Keywords          : kbother 
+Technology        : kbMSPressSearch kbZNotKeyword6 kbZNotKeyword2
+Version           : :3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

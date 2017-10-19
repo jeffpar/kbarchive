@@ -1,0 +1,141 @@
+DOCUMENT:Q195747  13-JUN-2001  [sna]
+TITLE   :Implicit Incoming LU Not Used After Saving Configuration Change
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A connection that has been working fine using the Implicit Incoming Remote LU
+feature may fail after a change is made to the SNA Server configuration. The
+failure appears as a negative response to a BIND sent by the host. The negative
+response will include sense code 0835 (Invalid Parameter). The pointer in the
+sense code points to the Network Qualified PLU Network Name Structured Data
+Subfield in the BIND.
+
+CAUSE
+=====
+
+For the problem to occur, the following must be true:
+
+ - There is more than one Remote APPC LU in the subdomain with the same alias.
+
+ - This alias must match that which is configured in the "Implicit Incoming
+   Remote LU" field in the Local APPC LU advanced properties.
+
+If both of these criteria are true, after an APPC Local or Remote LU is created
+or deleted, when saving the new configuration, SNA Server Manager picks the
+first Remote LU it finds with that name (which may reside on a different
+server). After this has happened, if SNA Server receives a BIND containing a
+partner LU name that is not recognized, the BIND will be rejected.
+
+RESOLUTION
+==========
+
+SNA Server 3.0
+--------------
+
+To resolve this problem, obtain the latest service pack for SNA Server version
+3.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q184307 How to Obtain the Latest SNA Server Version 3.0 Service Pack
+
+
+
+SNA Server 4.0
+--------------
+
+This problem was corrected in the latest Microsoft SNA Server version 4.0 U.S.
+Service Pack. For information on obtaining this Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 3.0, 3.0
+Service Pack 1, 3.0 Service Pack 2, 3.0 Service Pack 3, 4.0, and 4.0 Service
+Pack 1. This problem was first corrected in SNA Server 3.0 Service Pack 4.
+
+MORE INFORMATION
+================
+
+The following is an excerpt from a trace showing the problem. In the bind, the
+Network Qualified PLU Network Name Structured Data Subfield starts at byte
+43(h), noted by the ^ mark (byte 0 of the BIND follows the request header, and
+has a value of 31):
+
+   DLC   05160000->01020101 DLC DATA
+   DLC                      DAF:01 OAF:02 ODAI:off Exp.
+   DLC                      BIND   RQD SC  FI BC EC DR1
+   DLC
+   DLC   ---- Header  at address 01464418, 1 elements ----
+   DLC   04010004 10112D00 01024286 0100E800     <......-...Bf..Y.>
+   DLC
+   DLC   ---- Element at address 0195E230, start 10, end 147 ----
+   DLC   6B800031 001307B0 B050B300 87898987     <k..1.....P..giig>
+   DLC   00060200 00000000 00001023 00000FD9     <...........#...R>
+   DLC   C5C4C5E2 D74BD5F0 F3E2E5F0 F0F22600     <EDESPKN03SV002&.>
+   DLC   0902E2D5 C1E2E5C3 D4C70903 01A70860     <..SNASVCMG...x.`>
+   DLC   6FE43B4C 1004D9C5 C4C5E2D7 4BD5F0F3     <oU;L..REDESPKN03>
+   <BLOCKQUOTE>
+                      ^^
+   </BLOCKQUOTE>
+   DLC   E2E5F0F0 F2000FD9 C5C4C5E2 D74BE3F0     <SV002..REDESPKT0>
+   DLC   C5C4F2F3 C9F26016 ECA70860 6FE43B4C     <ED23I2`..x.`oU;L>
+   DLC   0DD9C5C4 C5E2D74B C3C4D9C1 C3C12C0A     <.REDESPKCDRACA,.>
+   DLC   01084040 40404040 4040                  <..@@@@@@@@      >
+   <BR/><BR/>
+   The LU name in the subfield is REDESP.N03SV002, however there is no LU by
+   this name in the SNA Server config. When an Implicit Incoming Remote LU is
+   configured, SNA Server should treat the BIND as if it contained the
+   Implicit LU name in this field. In the problem scenario, SNA Server sent a
+   negative response as follows:
+   <BR/><BR/>
+   DLC   01020101->05160000 DLC DATA
+   DLC                      DAF:02 OAF:01 ODAI:off Exp.
+   DLC                      BIND   -RSP SC  FI SD BC EC DR1
+   DLC
+   DLC   ---- Header  at address 01464418, 1 elements ----
+   DLC   04010004 10002D00 02014286 0100E800     <......-...Bf..Y.>
+   DLC
+   DLC   ---- Element at address 0195E59C, start 10, end 17 ----
+   DLC   EF900008 35004331                       <....5.C1        >
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ300SP2
+Version           : WINDOWS:3.0,4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

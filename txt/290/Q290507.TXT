@@ -1,0 +1,76 @@
+DOCUMENT:Q290507  02-MAY-2001  [msnetwork]
+TITLE   :Error Message: Unable to Logon to the Network
+PRODUCT :The Microsoft Network
+PROD/VER::5.1,5.2,5.3,6.0,6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 5.1, 5.2, 5.3, 6.0, 6.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use MSN Explorer on a Compaq 5000-7000 series computer with a Micro
+Modem, you may receive the following message when you attempt to connect to MSN,
+The Microsoft Network:
+
+ - Connection failed, unable to logon to the Network.
+
+CAUSE
+=====
+
+A program called PCTVOICE causes this issue.
+
+RESOLUTION
+==========
+
+To resolve this issue
+
+1. Press CTRL+ALT+DELETE.
+   The Windows Task Manager List lists all programs currently running.
+   Note: If you are using Windows 2000, click the Task Manager button to view the
+   Windows Task Manager list.
+
+2. Scroll through the list and find a program called PCTVOICE.
+
+3. Select PCTVOICE, and then click the End Task button.
+   The Windows Task Manager list closes and PCTVOICE is now no longer running.
+   You may have to repeat the above steps to be certain that PCTVOICE is no
+   longer in the Task List.
+   Note: This is a temporary fix. Each time you restart your computer, you must
+   repeat the steps above to disable PCTVOICE. To permanently correct this
+   problem, please contact the manufacturer of your computer. See your owner's
+   manual for phone numbers.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu; MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN600 kbMSN610 kbMSN520 kbMSN530 kbMSN510
+Version           : :5.1,5.2,5.3,6.0,6.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,60 @@
+DOCUMENT:Q25259  06-MAY-2001  [masm]
+TITLE   :How to Enable Math Coprocessor Instructions
+PRODUCT :Microsoft Macro Assembler
+PROD/VER::5.1,5.1a,6.0,6.0a,6.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 5.1, 5.1a, 6.0, 6.0a, 6.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To enable 287 or 387 math coprocessor instructions, the type of the processor
+must be specified. You can perform this process by specifying the first entry in
+the program as one of the following types:
+
+.8086    for 8086 without 8087 math coprocessor
+.8087    for 8086 with 8087 math coprocessor
+.186     for 186 processor
+.286     for 286 without math coprocessor without privileged
+             instructions
+.286P    for 286 without math coprocessor with privileged instructions
+.287     for 286 with math coprocessor
+.386     for 386 without math coprocessor without privileged
+             instructions
+.386P    for 386 without math coprocessor with privileged instructions
+.387     for 386 with math coprocessor
+.486     for 486 with math coprocessor (new with MASM 6.0)
+.486P    for 486 with math coprocessor with privileged instructions
+             (new with MASM 6.0)
+
+.NO87    disables assembly of all coprocessor instructions
+
+Additional query words: kbinf 5.10 5.10a 6.00 6.00a 6.00b
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM510 kbMASM600 kbMASM600a kbMASM510a kbMASM600b
+Version           : :5.1,5.1a,6.0,6.0a,6.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

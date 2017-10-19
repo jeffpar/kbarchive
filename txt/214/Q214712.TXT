@@ -1,0 +1,76 @@
+DOCUMENT:Q214712  06-AUG-2002  [exchange]
+TITLE   :XWEB: MMP Files are Locked and Cannot be Deleted
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 Service Pack 1 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Files with the extension *.mmp accumulate in the Webtemp directory when you
+connect to Microsoft Exchange Server through Outlook Web Access (OWA) and do not
+log out properly. If you try to delete these files, you may receive an error
+message similar to the following:
+
+   Cannot delete <temp file name>: Access is Denied.
+   Make sure the disk is not full or write-protected and that the file is not
+   currently in use.
+
+
+CAUSE
+=====
+
+If you do not log out of OWA properly, the *.mmp files will be locked because
+the system thinks that the process is still using these temporary files.
+
+WORKAROUND
+==========
+
+To work around this problem, do one of the following:
+
+   
+
+ - Stop and re-start the WWW Service.
+
+   -or-
+
+ - Restart the OWA server.
+
+STATUS
+======
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOWASearch kbOWA550SP1
+Version           : :5.5
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

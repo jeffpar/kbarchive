@@ -1,0 +1,76 @@
+DOCUMENT:Q136756  08-AUG-2001  [winnt]
+TITLE   :Display Applet Does Not Disable Drivers
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51 
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you change your Windows NT display driver, this message appears:
+
+   At least one service or driver failed during system startup. Use Event Viewer
+   to examine the event log for details.
+
+The event log says that this message is caused by the driver of your old display
+adapter or another display you have installed.
+
+CAUSE
+=====
+
+When you install a new display driver, the display applet disables the old
+driver if the Disable current driver check box is selected. One of the following
+causes may not allow a driver to identify the new graphics adapter.
+
+ - You first installed the wrong display driver and then the correct one.
+
+ - You changed your graphics adapter and booted with an entry from BOOT.INI
+   which resets the display to /BASEVIDEO.
+
+ - You changed your graphics adapter and booted normally. Your computer reverted
+   to standard VGA when the previously used driver did not find the old graphics
+   adapter.
+
+The applet disables only the currently used driver. It does not disable any
+previous drivers that have been installed.
+
+RESOLUTION
+==========
+
+Disable the driver manually. Do this with the Deinstall button in the Display
+Applet or by changing the startup value for the driver you want to disable in
+the Devices Applet.
+
+NOTE: The Deinstall button does not actually delete the driver files. It only
+disables the driver in the registry.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

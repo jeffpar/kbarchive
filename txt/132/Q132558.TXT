@@ -1,0 +1,73 @@
+DOCUMENT:Q132558  31-OCT-1999  [pcmail]
+TITLE   :PC Win: GAL and External Address Lists Are Missing
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Global Address List (GAL) and External Mail program postoffice definitions
+may be missing when you search the address book of Microsoft Mail for Windows.
+If this occurs, the only entry visible is the Personal Address Book (PAB).
+
+NOTE: The Windows client can receive messages and can send mail to addresses in
+the PAB. The Microsoft Mail for PC Networks, MS-DOS workstation is able to view
+all addresses and does not experience problems.
+
+CAUSE
+=====
+
+The addressing files are locked and unavailable to the Windows client. The files
+are commonly the NETWORK.GLB or any numbered XTN file located in the XTN
+sub-directory.
+
+RESOLUTION
+==========
+
+The lock should be released and the address lists will become available once the
+clients Exit and Sign Out and sign back into the Windows client.
+
+MORE INFORMATION
+================
+
+The GAL will not be available to the address book if the GAL.NME file is locked.
+This will not affect the External postoffice definitions. The Admin, Import, and
+External programs update these files and are commonly the process that can be
+causing the file to be unavailable.
+
+If the network operating system is unable to locate a lock on any of these files,
+attempt to make a copy of the file local, and edit the files with an editor,
+such as Write, that will lock the file. If the file is locked by another
+process, it will fail to open.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,67 @@
+DOCUMENT:Q132925  28-JUL-2001  [win95x]
+TITLE   :Errors When ATM Is Installed in Windows\Fonts Folder
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95 appscomp kbAppCompatibility
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you install Adobe Type Manager (ATM) to the Windows\Fonts folder, you will
+receive the following error message when you start the ATM Control Panel
+(Atmcntrl.exe):
+
+   Invalid Fonts Directory
+
+No fonts are displayed and you must choose another folder.
+
+CAUSE
+=====
+
+The Windows\Fonts folder is not a normal folder. This folder has a system
+attribute that cannot be modified. The ATM installation program can set up ATM
+in this folder, but ATM does not function correctly from this folder.
+
+RESOLUTION
+==========
+
+To resolve this problem, remove the ATM fonts from the Windows\Fonts folder,
+remove the Atm.ini file from the Windows folder, and then install ATM again.
+Choose a folder other than the Windows\Fonts folder for the installation.
+
+MORE INFORMATION
+================
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or other- wise, regarding
+this product's performance or reliability.
+
+
+======================================================================
+Keywords          : win95 appscomp kbAppCompatibility 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

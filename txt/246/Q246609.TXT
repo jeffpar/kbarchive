@@ -1,0 +1,81 @@
+DOCUMENT:Q246609  12-MAY-2001  [foxpro]
+TITLE   :HOWTO: Start Internet Explorer and Navigate to a URL Using OLE
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:4.01,4.01 Service Pack 2,5,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbole kbInternet kbvfp500a kbvfp600 kbVS600sp3 kbGrpDSFox kbCodeSnippet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows how to start an instance of Internet Explorer, navigate to a
+particular Web page, and then close down Internet Explorer when the focus is
+switched back to Visual FoxPro.
+
+MORE INFORMATION
+================
+
+Create a program and enter the following code:
+
+   ON ERROR WAIT WINDOW "Internet Explorer has been shut down!" TIME 1
+   IE_handle = 0
+
+   IF NOT 'FOXTOOLS' $ SET('LIBRARY')
+      SET LIBRARY TO SYS(2004)+"FoxTools"
+   ENDIF
+
+   IEWind = MAINHWND()
+   GetActive=RegFn('GetActiveWindow','','I') && Determine if FoxPro is on top.
+
+   oie = CREATEOBJECT("internetexplorer.application")
+   oie.Visible = .T.
+   oie.Navigate("http://msdn.microsoft.com/vfoxpro/")
+
+   DO WHILE .T.    && Keep looping until the ActiveWindow = FoxWind
+      DOEVENTS()
+      IF IEWind = CallFn(GetActive)
+         EXIT
+      ENDIF
+   ENDDO
+
+   SET LIBRARY TO
+   oie.Application.Quit
+   ON ERROR
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by Dean
+Christopher, Microsoft Corporation.
+
+
+Additional query words: kbDSE
+
+======================================================================
+Keywords          : kbole kbInternet kbvfp500a kbvfp600 kbVS600sp3 kbGrpDSFox kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600 kbVFP500a
+Version           : WINDOWS:4.01,4.01 Service Pack 2,5,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

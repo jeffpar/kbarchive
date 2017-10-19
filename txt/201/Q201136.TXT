@@ -1,0 +1,208 @@
+DOCUMENT:Q201136  03-JUN-1999  [sms]
+TITLE   :SMSINST: SMS Installer Repackage Creates Only One Program Group
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:1.0,2.0; winnt:1.2,2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbsms120 kbsms120bug kbsmsInst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server Installer versions 1.0, 2.0 
+ - Microsoft Systems Management Server versions 1.2, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using Systems Management Server Installer to repackage two or more
+applications that each create a separate program group, Installer will create
+only one program group and combine the icons from the applications into a single
+program group. The program group is the group of the last installed
+application.
+
+For example, if MSArcade and MSGolf are installed (in this order) through the
+Systems Management Server Installer Installation Expert, only the MSGolf program
+group is created and icons for both MSArcade and MSGolf are placed within this
+group.
+
+CAUSE
+=====
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+Installer version 1.0 and 2.0.
+
+WORKAROUND
+==========
+
+A new program group variable must be manually created using the Script Editor
+for any additional program groups. Locate the variables for group and
+cgroup_save in the script. Then create variables for each additional program
+group; for example, group2 and cgroup_save2. Then edit the shortcut and icon
+sections of the script to specify which program group the application icons
+should appear in.
+
+The following script is presented for illustration purposes only and is not
+complete. You may cut and paste this script into the Installer Script Editor to
+view an example of changes that should be made for packaging both MSarcade and
+MSgolf:
+
+   item: Set Variable
+    Variable=GROUP
+    Value=Arcade
+    Flags=10000000
+   end
+   item: Set Variable
+    Variable=GROUP2
+    Value=Golf
+   end<BR/>
+   item: Set Variable
+    Variable=CGROUP_SAVE
+    Value=%GROUP%
+   end
+   item: Set Variable
+    Variable=CGROUP_SAVE2
+    Value=%GROUP2%
+   end
+   item: Set Variable
+    Variable=GROUP
+    Value=%GROUPDIR%\%GROUP%
+   end
+   item: Set Variable
+    Variable=GROUP2
+    Value=%GROUPDIR%\%GROUP%
+   end
+   item: Create Shortcut
+    Source=%MAINDIR%\golf1\MSGOLF.EXE
+    Destination=%CGROUPDIR%\%CGROUP_SAVE2%\Golf 2.0.lnk
+    Working Directory=%MAINDIR%\golf1
+    Icon Number=0
+    Key Type=1536
+    Flags=00000001
+   end
+   item: Create Shortcut
+    Source=%MAINDIR%\golf1\CRSCONV.EXE
+    Destination=%CGROUPDIR%\%CGROUP_SAVE2%\Course Converter.lnk
+    Working Directory=%MAINDIR%\golf1
+    Icon Number=0
+    Key Type=1536
+    Flags=00000001
+   end
+   item: Create Shortcut
+    Source=%MAINDIR%\ARCADE22\ASTEROID.EXE
+    Destination=%CGROUPDIR%\%CGROUP_SAVE%\Asteroids.lnk
+    Working Directory=%MAINDIR%\ARCADE22
+    Icon Number=0
+    Key Type=1536
+    Flags=00000001
+   end
+   item: Create Shortcut
+    Source=%MAINDIR%\ARCADE22\BZ.EXE
+    Destination=%CGROUPDIR%\%CGROUP_SAVE%\Battlezone.lnk
+    Working Directory=%MAINDIR%\ARCADE22
+    Icon Number=0
+    Key Type=1536
+    Flags=00000001
+   end
+   item: Create Shortcut
+    Source=%MAINDIR%\ARCADE22\CP.EXE
+    Destination=%CGROUPDIR%\%CGROUP_SAVE%\Centipede.lnk
+    Working Directory=%MAINDIR%\ARCADE22
+    Icon Number=0
+    Key Type=1536
+    Flags=00000001
+   end
+   item: Create Shortcut
+    Source=%MAINDIR%\ARCADE22\MC.EXE
+    Destination=%CGROUPDIR%\%CGROUP_SAVE%\Missile Command.lnk
+    Working Directory=%MAINDIR%\ARCADE22
+    Icon Number=0
+    Key Type=1536
+    Flags=00000001
+   end
+   item: Create Shortcut
+    Source=%MAINDIR%\ARCADE22\TEMPEST.EXE
+    Destination=%CGROUPDIR%\%CGROUP_SAVE%\Tempest.lnk
+    Working Directory=%MAINDIR%\ARCADE22
+    Icon Number=0
+    Key Type=1536
+    Flags=00000001
+   end
+   item: Else Statement
+   end
+   item: Add ProgMan Icon
+    Group=%GROUP2%
+    Icon Name=Golf 2.0
+    Command Line=%MAINDIR%\golf1\MSGOLF.EXE
+    Default Directory=%MAINDIR%\golf1
+   end
+   item: Add ProgMan Icon
+    Group=%GROUP2%
+    Icon Name=Course Converter
+    Command Line=%MAINDIR%\golf1\CRSCONV.EXE
+    Default Directory=%MAINDIR%\golf1
+   end
+   item: Add ProgMan Icon
+    Group=%GROUP%
+    Icon Name=Asteroids
+    Command Line=%MAINDIR%\ARCADE22\ASTEROID.EXE
+    Default Directory=%MAINDIR%\ARCADE22
+   end
+   item: Add ProgMan Icon
+    Group=%GROUP%
+    Icon Name=Battlezone
+    Command Line=%MAINDIR%\ARCADE22\BZ.EXE
+    Default Directory=%MAINDIR%\ARCADE22
+   end
+   item: Add ProgMan Icon
+    Group=%GROUP%
+    Icon Name=Centipede
+    Command Line=%MAINDIR%\ARCADE22\CP.EXE
+    Default Directory=%MAINDIR%\ARCADE22
+   end
+   item: Add ProgMan Icon
+    Group=%GROUP%
+    Icon Name=Missile Command
+    Command Line=%MAINDIR%\ARCADE22\MC.EXE
+    Default Directory=%MAINDIR%\ARCADE22
+   end
+   item: Add ProgMan Icon
+    Group=%GROUP%
+    Icon Name=Tempest
+    Command Line=%MAINDIR%\ARCADE22\TEMPEST.EXE
+    Default Directory=%MAINDIR%\ARCADE22
+   end
+   item: End Block
+   end
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+Installer version 1.0 and 2.0.
+
+Additional query words: prodsms smsinst
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsms120 kbsms120bug kbsmsInst 
+Technology        : kbSMSSearch kbSMS120 kbSMS200 kbSMSI100 kbSMSI200
+Version           : WINDOWS:1.0,2.0; winnt:1.2,2.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

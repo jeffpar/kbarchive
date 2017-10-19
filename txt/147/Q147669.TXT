@@ -1,0 +1,96 @@
+DOCUMENT:Q147669  11-JAN-2001  [vbwin]
+TITLE   :PRB: SetupWiz Generated Setup Program Fails to Start Correctly
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbAppSetup kbDSSTools kbVBp400 kbGrpDSVB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Immediately after a Setup-Wizard-generated setup program starts and displays the
+"Copying initialization files..." dialog box, one of the following error
+messages appears:
+
+   (16-bit application)
+   $(SomePath)\FileName.ext
+   Cannot create temporary file. The file could not be installed.
+
+   (32-bit application)
+   Setup will now start the application removal utility to remove
+   temporary installation files.
+
+NOTE: Microsoft Technical Support does not support any modifications to the Setup
+Wizard.
+
+CAUSE
+=====
+
+This problem can be caused when one or more shared files have their installation
+directory changed from the default directory in step 7 of the Setup Wizard. The
+behavior of any setup media generated after modifying the installation directory
+of shared files is undefined. Shared files should always be installed into the
+default directory specified.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start either the 16-bit or 32-bit version of the Visual Basic 4.0 Setup
+   Wizard.
+
+2. Select the \VB\SAMPLES\CALC\CALC.VBP sample project.
+
+3. Choose Next repeatedly until Step 7 of the wizard is reached.
+
+4. Ensure that either VB40016.DLL or VB40032.DLL is selected and then press the
+   'File Details' button.
+
+5. Using the Destination Directory combo box, change the install path for the
+   file selected in step four from $(WinSysPath) to $(AppPath). Allow the Setup
+   Wizard to finish and create distribution media.
+
+6. Run the SETUP.EXE program that the Setup Wizard has generated. Observe the
+   behavior described in the Symptoms section above.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAppSetup kbDSSTools kbVBp400 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : WINDOWS:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

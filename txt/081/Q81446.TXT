@@ -1,0 +1,50 @@
+DOCUMENT:Q81446  03-NOV-1994  [dosword]
+TITLE   :Word: Borders Look Different When Style Bar Is On
+PRODUCT :DELETE ME
+PROD/VER:5.00
+OPER/SYS:MS-DOS
+KEYWORDS:kbother
+
+SUMMARY
+=======
+
+The border of the editing screen in Microsoft Word for MS-DOS version
+5.0 displays differently when the style bar and the ruler options in
+the main menu are set to "yes."
+
+The setting combination
+
+   show style bar: (yes) no
+   show ruler: (yes) no
+
+shows the border extending to the left of the ruler.
+
+The setting combination
+
+   show style bar: yes (no)
+   show ruler: (yes) no
+
+no border displays to the left of the ruler.
+
+You can use this information to determine if the style bar option is
+turned on or off.
+
+KBCategory: kbother
+KBSubcategory:
+Additional reference words: 5.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1994.

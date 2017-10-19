@@ -1,0 +1,150 @@
+DOCUMENT:Q162408  10-AUG-2001  [winnt]
+TITLE   :How to Make IE Recognize Foreign Characters on Windows NT 4.0
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:3.0,3.01,3.02,4.0,4.01,4.01 Service Pack 1,4.01 Service Pack 2,5; winnt:4.0
+OPER/SYS:
+KEYWORDS:kbother
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Internet Explorer versions 3.0, 3.01, 3.02, 4.0, 4.01, 4.01 Service Pack 1, 4.01 Service Pack 2, 5 for Windows NT 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The LANGPACK directories of Windows NT Workstation and Server version 4.0 add
+additional language support for Internet Explorer (IE) version 3.0. Installing
+files and adding input locales in Control Panel under either Regional Settings
+or Keyboard enables IE to display foreign language characters. (The GUI for
+Input Locale is shared by Regional Settings and Keyboard.)
+
+The LANGPACK also enables EMS Client version 4.0 to display foreign language
+characters included in the pack.
+
+MORE INFORMATION
+================
+
+1. Log on to an account with Administrator privileges and start the Windows NT
+   4.0 Explorer. Open the drive sharepoint \NTWKS\NTSVR 4.0 CD\Network, and then
+   go to the LANGPACK directory.
+
+2. Select <language | group of languages >.inf file(s) and click the
+   file(s) with the RIGHT mouse button. On the menu that appears, click Install.
+
+3. You will be prompted for your Windows NT compact disc (or network driver) if
+   some of the files needed are in this directory (\LANGPACK) and the remaining
+   files are in the normal Windows NT distribution directories (for example,
+   \i386). Change to the location on the compact disc or network sharepoint
+   where the requested file resides, such as D:\i386 for a compact disc (where D
+   is a CD-ROM drive) or J:\winnt.nt\winnt40.srv\retail\i386 (where
+   \\productsx\relsys is accessed as drive J and J is a network drive).
+
+4. It is necessary to reboot after installing the following languages: Japanese,
+   Korean, and TChinese(Traditional Chinese).
+
+   The following is a list of the .inf files and a brief list of the language
+   support that each includes:
+
+    - Arabic.inf - Arabic code page conversion and NLS API support (no IE 3.0
+      viewer support)
+
+    - Cyrillic.inf - Cyrillic-based language support
+
+    - European.inf - Latin-based European language support
+
+    - ExchSrvr.inf - All code page conversion tables for Exchange Server
+
+    - Greek.inf - Greek language support
+
+    - Hebrew.inf - Hebrew code page conversion and NLS API support (no IE 3.0
+      viewer support)
+
+    - Japanese.inf - Japanese code page conversion, NLS API support, and font
+
+    - Korean.inf - Korean code page conversion, NLS API support and font
+
+    - TChinese.inf - Traditional Chinese code page conversion, NLS API support,
+      and font
+
+    - Thai.inf - Thai code page conversions and NLS API support (no IE 3.0
+      viewer support)
+
+    - Turkish.inf - Turkish language support
+
+    - US_Eng.inf - U.S. English language support
+
+    - Vietnam.inf - Vietnamese code page conversions and NLS API support (no IE
+      3.0 viewer support)
+
+5. In Control Panel, open either Regional Settings or Keyboard, select the Input
+   Locales tab, and click the Add button. The Add Input Locale window will
+   appear. Select a language and then click OK.
+
+6. If want to make the highlighted language the Default Input Locale, click Set
+   As Default.
+
+7. Choose a keystroke combination (Left ALT+SHIFT or CTRL+SHIFT) for switching
+   locale settings, if desired. This enables you to switch the locale by
+   pressing the keystroke combination you selected.
+
+8. Check the Enable Indicator On Taskbar box so the locale indicator will appear
+   on the taskbar.
+
+Internet Explorer 3.0
+---------------------
+
+9. In Control Panel, click Internet then select the General tab. Click Fonts
+   Settings and then select the language you want and the character sets for
+   that language. Click OK several times to exit. Alternately, you can make the
+   change directly in IE 3.0. Open IE 3.0 and on the taskbar select View, then
+   click Options. Next, select the General tab and click Fonts Settings, then
+   select the language you want and the character sets for that language. Click
+   OK several times to exit. (Both ways of changing this setting lead you to the
+   same GUI.)
+
+For some language characters implemented in Single Byte Character Set (SBCS), a
+category that includes most European languages, you can key in the characters
+immediately after you complete the above steps.
+
+But to enter any character of a language of Double Byte Character Set (DBCS),
+such as all Far East locales, you must install a proper Input Method Editor
+(IME) for the language. The LANGPACK only enables you to display those DBCS
+languages included in the LANGPACK in IE 3.0, EMS 4.0, and Windows NT 4.0.
+
+With the LangPack installed, Internet Explorer 4.0 users can install and use the
+Japanese/Korean Input Method Editor (IME) for Windows 95 & Windows NT 4.0.
+This will allow users to not just display but also input Japanese and Korean
+text into Web forms and Outlook Express 4.0 e-mail messages. For more
+information, please see the following Microsoft Knowledge Base article:
+
+   ARTICLE-ID: Q186113
+   TITLE : Internet Explorer Input Method Editor 4.0 for Japanese/Korean
+
+Additional query words: locale langpack ime dbcs sbcs
+
+======================================================================
+Keywords          : kbother 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbIEsearch kbZNotKeyword2 kbIENT400Search kbIE500Search kbZNotKeyword3 kbIE300WinNT400 kbIE301WinNT400 kbIE302WinNT400 kbIE400WinNT400 kbIE401WinNT400 kbIE401WinNT400SP1 kbIE401WinNT400SP2 kbIE500WinNT400
+Version           : WINDOWS:3.0,3.01,3.02,4.0,4.01,4.01 Service Pack 1,4.01 Service Pack 2,5; winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

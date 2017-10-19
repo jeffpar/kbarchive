@@ -1,0 +1,76 @@
+DOCUMENT:Q167962  20-FEB-2002  [word97]
+TITLE   :WD97: Drawing Object/AutoShape Fill Pattern Appears as Shading
+PRODUCT :Word 97 for Windows
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbprint kbusage winword word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you print a document that contains a drawing object or an AutoShape filled
+with a pattern, the pattern is printed smaller than expected and may appear to
+be shading rather than a pattern.
+
+NOTE: This problem may occur when you print to a PCL or a PostScript printer.
+
+WORKAROUND
+==========
+
+Use the following steps to decrease the printer resolution when you print the
+document:
+
+1. Open the document containing the filled pattern drawing or AutoShape objects.
+
+2. On the File menu, click Print.
+
+3. In the Print dialog box, click Properties.
+
+4. Click the Graphics tab.
+
+5. Change the Resolution box to a lower value; for example, change it to 150
+   dots per inch, and then click OK.
+
+6. Click OK to close the print dialog box and to print the document.
+
+MORE INFORMATION
+----------------
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q159222 OFF97: Output Quality Problems Printing Drawing Objects
+
+   Q81193 Chart or Graph Patterns Print Solid Gray in Word for Windows
+
+Additional query words: OFF97
+
+======================================================================
+Keywords          : kbprint kbusage winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

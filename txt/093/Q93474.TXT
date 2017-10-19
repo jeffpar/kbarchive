@@ -1,0 +1,67 @@
+DOCUMENT:Q93474  19-FEB-2002  [homemm]
+TITLE   :Cinemania Err Msg: There Was an Error Writing This File
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1992 edition
+OPER/SYS:
+KEYWORDS:kbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Cinemania for Windows 1992 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you run Microsoft Multimedia Viewer (VIEWER.EXE) from File Manager and open
+CINMANIA.MVB with the File Open command, the following error message displays if
+you attempt to run ListMaker:
+
+   There was an error writing this file. The disk may be full, or it may be
+   write-protected.
+
+Choosing the Cancel button allows you to enter ListMaker; however, another error
+message is then displayed:
+
+   This list has been corrupted.
+
+WORKAROUND
+==========
+
+Start Cinemania by choosing the Cinemania icon in Program Manager or by
+selecting Cinemania from the Windows 95 Start Menu and run ListMaker.
+
+MORE INFORMATION
+================
+
+ListMaker allows you to create a list and add movies; however, if Cinemania is
+opened as describe above, you cannot save the list. This happens because the
+working directory for the ListMaker defaults to the CD-ROM drive.
+
+Microsoft has confirmed this to be a problem in Cinemania 1992. This problem was
+corrected in Cinemania 1994.
+
+Additional query words: 2.00 1992
+
+======================================================================
+Keywords          :  kbbuglist kbfixlist
+Technology        : kbHomeProdSearch kbHomeMMsearch kbCineManiaSearch kbCinemania1992
+Version           : :1992 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

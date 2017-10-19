@@ -1,0 +1,75 @@
+DOCUMENT:Q148231  24-JUL-2001  [win95x]
+TITLE   :Shutdown Problems with Older HP Vectra BIOS Chip Sets
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kbhw win95 kbHardwarekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you are using Windows 95 on a Hewlett-Packard (HP) Vectra computer, your
+computer may stop responding (hang) when you click Shut Down The Computer in the
+Shut Down Windows dialog box and then click Yes.
+
+CAUSE
+=====
+
+This problem can occur on some HP Vectra computers with older BIOS chip sets.
+
+RESOLUTION
+==========
+
+To resolve this problem, contact Hewlett-Packard Technical Support to obtain the
+appropriate updated BIOS.
+
+MORE INFORMATION
+================
+
+According to Hewlett-Packard Technical Support, the following computers require
+an updated BIOS to work correctly with Windows 95:
+
+ - HP Vectra VE-series computers need to be updated to BIOS version GL.05.08 or
+   later.
+
+ - HP Vectra VL3 computers need to be updated to BIOS version GK0509 or later.
+
+ - HP Vectra XM3 computers need to be updated to BIOS version GK0503 or later.
+
+
+Additional Information
+----------------------
+
+According to Hewlett-Packard, upgrading to Windows 95 with a Microsoft Windows 95
+Upgrade CD-ROM causes a shutdown hang. This could be a problem for users who
+reinstall Windows 95 from a retail Windows 95 Upgrade CD-ROM. To resolve the
+issue, change the mouse driver to the Microsoft Mouse driver.
+
+======================================================================
+Keywords          : kbhw win95 kbHardware kbfaq
+Technology        : kbWin95search kbWin95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,74 @@
+DOCUMENT:Q72433  14-NOV-1999  [win95x]
+TITLE   :Terminal and the Ventel EC18K-34/Pathfinder Telebit Modem
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Ventel EC18K-34/Pathfinder Telebit Modem is a TrailBlazer compatible modem.
+When used with Microsoft Windows version 3.0 Terminal, the Modem Default
+selection should be TrailBlazer.
+
+Symptoms of selecting the incorrect modem default include:
+
+ - No modem recognition in Terminal. Terminal acts like everything is okay, but
+   the modem does not respond.
+
+   -and-
+
+ - Perfect modem response outside Terminal.
+
+MORE INFORMATION
+================
+
+Ventel makes 30 different type of modems. All are Hayes compatible except the
+EC18K-34/Pathfinder Telebit. The EC18K-34/Pathfinder Telebit modem runs at a
+rate of 18,000 bytes per second (BPS) and can be pushed to 19,200 BPS when
+communicating with another EC18K-34/Pathfinder Telebit. When the EC18K-
+34/Pathfinder Telebit modem communicates with a modem other than another
+EC18K-34/Pathfinder Telebit, both modems run at 2400 BPS.
+
+To set the modem default in Terminal, do the following:
+
+1. From the Settings menu, choose Modem Commands.
+
+2. Under Modem Defaults, select TrailBlazer.
+
+3. Choose OK.
+
+The products included here, Ventel modems, are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these product's performance or reliability.
+
+Additional query words: 3rdparty WIN30 3.0 3.00 3.00a 3.0a wincom
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

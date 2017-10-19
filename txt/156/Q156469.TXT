@@ -1,0 +1,91 @@
+DOCUMENT:Q156469  12-AUG-1999  [homemm]
+TITLE   :World Atlas: How to Run/Install if AutoRun is Disabled
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:1996
+OPER/SYS:
+KEYWORDS:kbhowto
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 96 World Atlas for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you insert the Microsoft World Atlas compact disc into your CD-ROM drive,
+the program does not run automatically.
+
+CAUSE
+=====
+
+The Windows 95/98 AutoRun feature is disabled on your computer.
+
+RESOLUTION
+==========
+
+To install World Atlas, do the following:
+
+
+1. Insert the World Atlas CD.
+
+2. Click the Start button, then click Run.
+
+3. Type the following and then click OK:
+
+      D:\setup
+
+   where D is the letter of your CD-ROM drive.
+
+4. This starts Setup. Follow the on-screen instructions.
+
+Running World Atlas After Installation
+--------------------------------------
+
+To run World Atlas after installation, do the following:
+
+ - Click the Start button, point to Programs, point to Microsoft Reference, then
+   click Encarta 96 World Atlas.
+
+MORE INFORMATION
+================
+
+You can turn off the AutoRun feature you do not want Windows 95/98 CD-ROM
+programs to automatically start. For more information about how to accomplish
+this task, query on the following words in the Microsoft Knowledge Base:
+
+   windows autorun
+
+AutoRun is not supported by MS-DOS CD-ROM drivers. The drivers must be written
+specifically for Windows 95/98 and support Auto-Insert Notification.
+
+For best performance when running World Atlas, Microsoft recommends that you use
+Windows 95/98 CD-ROM drivers instead of MS-DOS drivers.
+
+To troubleshoot problems with AutoRun, contact your CD-ROM manufacturer or your
+Windows 95/98 service provider.
+
+Additional query words: 1996 multi media multimedia multi-media mmtitles kbmm autoplay load launch
+
+======================================================================
+Keywords          : kbhowto 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaWorldAtlas1996
+Version           : 1996
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

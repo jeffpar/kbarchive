@@ -1,0 +1,80 @@
+DOCUMENT:Q233446  27-JUN-1999  [homemm]
+TITLE   :Business Planner: Excel Template Opens in Background
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbinterop kbtool kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Business Planner 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click an Excel wizard link in Microsoft Business Planner, you may
+experience either of the following symptoms:
+
+ - Microsoft Excel starts and opens the Excel template, but the template may
+   open in the background and be hidden behind the Business Planner window.
+
+ - When you press ALT+TAB, you may not switch tasks to Business Planner or the
+   most recently opened Excel template.
+
+RESOLUTION
+==========
+
+To work around this issue, use one of the following methods:
+
+ - On the taskbar, click Business Planner or the Excel template you want to
+   display on the screen.
+
+ - Use the task switching window to select Business Planner or the Excel
+   template you want to display on the screen. To do this:
+
+   1. Press and hold down the ALT key.
+
+   2. Press the TAB key to switch through each running task in the task
+      switching window until you select Business Planner or the Excel template
+      you want to display on the screen.
+
+   3. When Business Planner or the Excel template you want is selected, release
+      the ALT key.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Business Planner.
+
+MORE INFORMATION
+================
+
+This problem does not occur with Word or Publisher wizard links.
+
+Additional query words: msbp switches focus
+
+======================================================================
+Keywords          : kbinterop kbtool kbimu 
+Technology        : kbHomeMMsearch kbBusPlanner
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

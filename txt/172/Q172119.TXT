@@ -1,0 +1,56 @@
+DOCUMENT:Q172119  18-DEC-1999  [homemm]
+TITLE   :Encarta 97: Incorrect Installation Instructions in Jewel Box
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:; :
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 97 Encyclopedia for Windows 
+ - Microsoft Home Essentials 97 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The installation instructions for Microsoft Encarta 97 found on page 5 of the
+Microsoft Home Essentials 97 CD-ROM jewel case booklet are incorrect. Step 2 of
+the printed instructions is not needed and should be ignored.
+
+MORE INFORMATION
+================
+
+The following is the text of the instructions which are not needed:
+
+1. In this version of the design you need to run the Update List macro to get
+   the numbers and bulleted lists to look right. (Lp1)
+
+This step is not necessary and you can proceed directly to step 3 of the
+installation instructions.
+
+
+Additional query words: multi media multimedia multi-media
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1997
+Version           : WINDOWS:; :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

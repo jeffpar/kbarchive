@@ -1,0 +1,72 @@
+DOCUMENT:Q242067  10-AUG-2001  [winnt]
+TITLE   :How To: Copy User Profiles from One Domain to Another.
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A user who creates a new profile has permission to use that profile, but someone
+with administrator permissions can permit other users to also use the profile.
+This article describes how to copy a profile to another domain and assign a user
+permission to use the copied profile. Note that permissions written to a profile
+are stored in the NTuser.xxx file.
+
+MORE INFORMATION
+================
+
+To copy a profile to another domain and assign a user permission to use the
+profile:
+
+1. In Control Panel, double-click System.
+
+2. Click the User Profiles tab, click the profile, and then click Copy To.
+
+3. Type the path to the folder where user profiles are stored, or click Browse
+   to locate the folder.
+
+   NOTE: The dialog box that appears when you click Browse does not permit you to
+   create folders. You must create the required folder before you copy the
+   profile.
+
+4. Click Change.
+
+5. In the List Names From box, click the name of the other domain.
+
+6. In the Names box for the other domain, select the user account of the person
+   who is permitted to use the profile.
+
+7. Click OK until all open dialog boxes are closed.
+
+Additional query words: nt 4.0
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,75 @@
+DOCUMENT:Q131445  16-MAY-1999  [ssafe]
+TITLE   :FIX: "Timeout Locking File: UM" Error Occurs at Startup
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:3.04; winnt:3.04
+OPER/SYS:
+KEYWORDS:kbsetup kbSSafe310fix kbSSafe304bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SourceSafe for Windows, version 3.04 
+ - Microsoft SourceSafe for Windows NT, version 3.04 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The error "Timeout locking file: UM" occurs when starting Microsoft SourceSafe.
+
+CAUSE
+=====
+
+The Microsoft SourceSafe version 3.04 for Windows or Windows NT installation did
+not create a DATA\LOCKS subdirectory.
+
+
+This error occurs only if the SRCSAFE.INI setting Lock_Mode is set to Lockfile.
+For additional information on the Lock_Mode setting, please see the following
+article in the Microsoft Knowledge Base:
+
+   124525 How SourceSafe Locks Files in the DATA Directory
+
+RESOLUTION
+==========
+
+To work around this problem:
+
+1. Create a directory titled "LOCKS" in the DATA subdirectory. For example: MD
+   F:\SS\DATA\LOCKS
+
+2. Restart SourceSafe.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Microsoft SourceSafe
+version 3.1 for Windows and Windows NT.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbSSafe310fix kbSSafe304bug 
+Technology        : kbSSafeSearch kbAudDeveloper kbZNotKeyword2 kbZNotKeyword3 kbSSafe304 kbSSafe304NT
+Version           : WINDOWS:3.04; winnt:3.04
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

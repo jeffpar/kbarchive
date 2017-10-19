@@ -1,0 +1,331 @@
+DOCUMENT:Q243287  06-AUG-2002  [homegame]
+TITLE   :Error Message: EBUxxx Caused a Divide Error in Module EBUxxx.exe
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbsetup aoe kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Age of Empires II: The Age of Kings, version 2.0 
+ - Microsoft Bicycle Card Games Version 1.0 
+ - Microsoft Flight Simulator 2000 
+ - Microsoft Flight Simulator 2000 Professional Edition 
+ - Microsoft Pandora's Box, version 1.0 
+ - Microsoft Links 2001 
+ - Microsoft Zoo Tycoon 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+When you click Continue on the Product ID screen while you are installing one of
+the programs listed at the beginning of this article, you may receive the
+following error message:
+
+   This program has performed an illegal operation and will be shut down.
+
+When you click Details, you receive the following error message
+
+   EBU<xxxx> caused a divide error in module EBU <xxx>.exe.
+
+where <xxx> is a combination of letters and/or numbers.
+
+When installing Microsoft Zoo Tycoon, you may receive the following error
+message:
+
+   EBU<xxxx> caused an exception c0000006h in module kernel32.dll
+
+where <xxx> is a combination of letters and/or numbers.
+
+CAUSE
+=====
+
+This behavior can occur for any of the following reasons:
+
+ - A beta version of Age of Empires II is installed on the computer.
+
+ - A beta version of Age of Empires II previously installed on the computer was
+   not removed successfully.
+
+ - The Riched32.dll file is missing or damaged.
+
+ - A rogue Ebu file from a previous installation is present.
+
+ - EBUxxxx has caused a general protection fault in module <filename>
+
+where the <filename> in this error message will vary depending on which
+game you are installing.
+
+RESOLUTION
+==========
+
+To resolve this issue, use one of the following methods.
+
+Extract the Riched32.dll File
+-----------------------------
+
+To extract the Riched32.dll file, use the appropriate method for your version of
+Microsoft Windows.
+
+Microsoft Windows 95:
+
+1. Click Start, point to Find, and then click "Files or Folders".
+
+2. In the Named box, type "riched32.dll" (without the quotation marks), and then
+   click Find Now.
+
+3. In the list of found files, right-click the Riched32.dll file, click Rename,
+   type a new name for the Riched32.dll file, such as Riched32.xxx, and then
+   press ENTER.
+
+NOTE: If you receive an "Access is denied" error message when you attempt to
+rename the Riched32.dll file:
+
+   a. Click Start, click Shut Down, click "Restart in MS-DOS mode", and then
+      click OK.
+
+   b. At the command prompt, type the following commands, pressing ENTER after
+      you type each command:
+
+   cd\windows\system
+   ren riched32.dll riched32.xxx
+   exit
+
+4. Extract the Riched32.dll file from the original Windows 95 disks or CD-ROM to
+   the Windows\System folder.
+
+For additional information about how to extract a file, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+   Q129605 How to Extract Original Compressed Windows Files
+
+Microsoft Windows 98:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "sfc" (without the quotation marks), and then click OK.
+
+3. Click "Extract one file from installation disk".
+
+4. Type "riched32.dll" (without the quotation marks), and then pressENTER.
+
+5. In the "Restore from" box, type the path to the Win98 folder on your Windows
+   98 CD-ROM.
+
+6. In the "Save File in" box, type the following path:
+
+   <drive>:\Windows\System
+
+   where <drive> is the drive letter of the hard disk on which Windows 98
+   is installed.
+
+Remove the Registry Keys
+------------------------
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+Remove the following registry keys for the program that you are using.
+
+Age of Empires:
+
+ - HKEY_CURRENT_USER\Software\Microsoft\Microsoft Games\Age of Empires\2.0
+
+ - HKEY_LOCAL_MACHINE\Software\Microsoft\DirectPlay\Applications\Age of Empires
+   II
+
+ - HKEY_LOCAL_MACHINE\Software\Microsoft\Microsoft Games\Age of Empires\2.0
+
+ - HKEY_LOCAL_MACHINE\Software\Microsoft\Microsoft Games\Age of Empires II
+
+Flight Simulator 2000:
+
+ - HKEY_LOCAL_MACHINE\Software\Microsoft\DirectPlay\Applications\FS2000
+
+ - HKEY_LOCAL_MACHINE\Software\Microsoft\Microsoft Games\Flight Simulator
+
+Links 2001:
+
+ - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Games\Links 2001
+
+ - HKEY_CURRENT_USER\Software\Microsoft\Microsoft Games\Links 2001
+
+Motocross Madness 2:
+
+ - HKEY_LOCAL_MACHINE\Software\Microsoft\DirectPlay\Applications\Motocross
+   Madness 2
+
+ - HKEY_LOCAL_MACHINE\Software\Microsoft\Microsoft Games\Motocross Madness 2
+
+Pandora's Box:
+
+ - HKEY_CURRENT_USER\Software\Microsoft\Microsoft Games\Pandora's Box
+
+ - HKEY_LOCAL_MACHINE\Software\Microsoft\Microsoft Games\Pandora's Box
+
+When you have removed each of the registry keys, restart the computer, and then
+attempt to install the program again.
+
+If this issue continues to occur, delete the temporary files in the Temp folder
+on the hard disk, and then run the installation program again.
+
+Search for and remove the Ebu file.
+-----------------------------------
+
+Windows 98:
+
+1. On the Windows Start menu, point to Find, and then click Files or Folders.
+
+2. In the Named box, type the following line:
+
+   "ebu*.exe" (without the quotation marks)
+
+3. In the Look in box, click My Computer.
+
+4. Click Find Now.
+
+5. Press CTRL+A to select all files.
+
+6. Press DELETE.
+
+7. Confirm deletion.
+
+Microsoft Windows Millennium Edition or Microsoft Windows 2000:
+
+1. In the Search for files or folders named box, type the following line:
+
+   "ebu*.exe" (without the quotation marks)
+
+2. In the Look in box, click My Computer.
+
+3. Click Search Now.
+
+4. Press CTRL+A to select all files.
+
+5. Press DELETE.
+
+6. Confirm deletion.
+
+Delete the Temp Folder
+----------------------
+
+To delete the Temp folder on the computer, use the appropriate method for your
+version of Microsoft Windows.
+
+Microsoft Windows 95:
+
+1. Click Start, and then click Shut Down.
+
+2. Click "Restart in MS-DOS mode", and then click OK.
+
+3. At the command prompt, type the following lines, pressing ENTER after you
+   type each line:
+
+   deltree c:\windows\temp
+   y
+   exit
+
+4. Clean boot the computer, and then install the game.
+
+For additional information about how to clean boot Windows 95, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q177604 Multimedia: Troubleshooting Using Clean Boot of Windows 95
+
+Windows 98, Windows 2000, and Windows Me:
+
+Use the Disk Cleanup tool to remove temporary files:
+
+1. Click Start, point to Programs, point to Accessories, point to System Tools,
+   and then click Disk Cleanup.
+
+2. In the Drives box, click the hard disk on which Windows is installed, and
+   then click OK.
+
+3. Under "Files to delete", click to select the "Temporary files" check box, and
+   then click OK.
+
+4. Click Yes.
+
+5. When the Disk Cleanup tool is finished, restart the computer, and then
+   install the game.
+
+   NOTE: If the issue continues to occur, clean boot the computer, and then
+   install the game.
+
+For additional information about how to clean boot your version of Windows, click
+the article numbers below to view the articles in the Microsoft Knowledge Base:
+
+   Q192926 How to Perform Clean-Boot Troubleshooting for Windows 98
+
+   Q267288 How to Perform a Clean Boot in Windows Millennium Edition
+
+Windows XP:
+
+NOTE: The Windows XP TEMP directory that the game setup in is trying to use
+located in a specific user folder. For example:
+
+   <your drive>:\Documents and Settings\<user name>\Local
+   Settings\Temp
+
+1. Click Start, click Run, enter "%TEMP%" (without the quotation marks), and
+   then click OK.
+
+2. Click Edit, and then select Select All.
+
+3. Click File, and then select Delete.
+
+4. Click Yes to delete temp files.
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+The Riched32.dll file is the Windows Rich Text Edit Control. For more
+information on this library file, please visit the following Microsoft Developer
+Network Web site:
+
+   http://msdn.microsoft.com
+
+Additional query words: 1.00 2.00 msgame invalid page fault ipf gpf loading set up setup links accsoft
+
+======================================================================
+Keywords          : kbenv kberrmsg kbsetup aoe kbimu msgame 
+Technology        : kbHomeProdSearch _IKkbbogus kbLinkGolfSearch kbGamesSearch kbFlightSimSearch kbGolfSearch kbPandoraSearch kbAOESearch kbAOE2Kings kbFlightSim2000 kbPandorasBox kbLinks2001 kbBicycleCard100 kbBicycleSearch kbZooTycoon kbSimSearch
+Version           : :1.0,2.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

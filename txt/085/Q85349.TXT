@@ -1,0 +1,83 @@
+DOCUMENT:Q85349  12-NOV-1999  [pcmail]
+TITLE   :FAX: Changes Made to the Mail Database During Installation
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to Fax, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+During installation of the gateway component of the Microsoft Mail Gateway to
+Fax, these changes are made to the Microsoft Mail database:
+
+ - An entry for the fax gateway is created in the NETWORK.GLB file.
+
+ - A mailbag file is created for the gateway, in the MBG directory.
+
+ - A fax subdirectory is created under the mail data directory.
+
+ - The following files are copied to the executables directory:
+
+   FAXGTW.EXE
+   MAKEDCX.EXE
+   TIF2DCX.EXE
+   PROFILE.EXE
+
+ - The following files are copied to the TPL directory:
+
+   FAXCOV.TPL
+   FAXATT.TPL
+
+ - The following files are copied to the FAX directory:
+
+   FAXLOGO.PCX
+   RRS.FAX
+
+ - The PROFILE.GLB file is copied is copied to the GLB directory.
+
+During installation of the access component of the Microsoft Mail Gateway to Fax,
+the following changes are made to the Microsoft Mail database:
+
+ - The MASTER.GLB and NETWORK.GLB files are verified.
+
+ - FAX.GLB is created in the GLB directory.
+
+ - FAX.NME is created in the NME directory
+
+ - FAX.TPL and FAXSTD.TPL are copied to the TPL directory.
+
+ - FAX.HLP is copied to the HLP directory.
+
+In Microsoft Mail version 2.1a, there is no PROFILE.EXE file.
+
+
+Additional query words: 3.00 data 2.1a pcmail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateFax300
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

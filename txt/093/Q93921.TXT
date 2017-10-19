@@ -1,0 +1,65 @@
+DOCUMENT:Q93921  05-NOV-1999  [win16sdk]
+TITLE   :PRB: SDK INSTALL Having Problems Opening INSTALL.INF
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error message occurs when attempting to install the Windows
+Software Development Kit (SDK):
+
+   Install is having problems opening INSTALL.INF
+   Please check to see that this file is available.
+
+CAUSE
+=====
+
+INSTALL searches the current directory for INSTALL.INF; therefore, it must be
+run from the floppy drive containing the install disk.
+
+Note: the same problem occurs when INSTALL.INF resides on a CD-ROM disc and that
+drive is not the current drive.
+
+RESOLUTION
+==========
+
+Run INSTALL from the floppy or CD-ROM drive. For example, type
+
+   " a: <CR> install " (without the quotation marks)
+
+rather than:
+
+   " a:install " (without the quotation marks)
+
+Additional query words: 3.10 no32bit
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

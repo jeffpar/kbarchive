@@ -1,0 +1,87 @@
+DOCUMENT:Q184738  10-APR-1999  [exchange]
+TITLE   :XADM: Error -1811 Running Edbutil or Eseutil With /T Option
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Edbutil /d /t fails with the following error:
+
+   Operation terminated with error -1811 ...
+
+CAUSE
+=====
+
+The /t option is specified incorrectly.
+
+The following command line will fail with -1811:
+
+   Edbutil /d /ispriv /th:\
+
+The following scenario will also fail with -1811:
+
+   Map Drive Letter to H:\ to <computername>\shared directory
+
+   Edbutil /d /ispriv /th:\shared\tempdfrg.edb
+
+Because the H:\ drive is already mapped to the shared directory, the above
+command fails when it does not find a "sub-directory" called "shared" to put the
+Tempdfrg.edb file into.
+
+WORKAROUND
+==========
+
+The correct command line using Edbutil or Eseutil /d with the /t option is as
+follows:
+
+   Edbutil /d </ispriv /ispub or /ds> /t<drive
+   letter>:\tempfilename
+
+   -or-
+
+   Eseutil /d </ispriv /ispub or /ds> /t<drive letter>:\tempfilename
+
+Example:
+
+   Edbutil /d /ispriv /th:\tempdfrg.edb
+
+MORE INFORMATION
+================
+
+Error -1811 refers to JET_errFileNotFound 4294965485.
+
+EDBUTIL should be used with Exchange Server versions 4.0 and 5.0.
+
+ESEUTIL should be used with Exchange Server version 5.5.
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,87 @@
+DOCUMENT:Q122190  12-JUN-2001  [homegame]
+TITLE   :Steps To Remove Golf 2.0 From Your Computer
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf for Windows, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is an outline of files, directories, and entries that will allow
+you to remove all information Golf 2.0 installs into your computer under the
+Windows 3.1 environment.
+
+WARNING: Some files that Golf 2.0 installs in the WINDOWS, WINDOWS\SYSTEM and
+WINDOWS\WIN32S directories are used by other applications. Removing these files
+can cause Windows applications and the Windows environment to not operate
+properly. Extreme care should be taken when deleting these files to ensure the
+continued functionality of Windows applications and the Windows environment.
+
+MORE INFORMATION
+================
+
+Follow these steps to completely remove Golf 2.0 from your system:
+
+In the WINDOWS directory, delete:
+
+   MSGOLF.INI
+   WAVEMIX.INI
+
+In the WINDOWS\SYSTEM directory, delete:
+
+   WIN32S.INI
+   OLECLI.DLL
+   WAVMIX32.DLL
+   W32SYS.DLL
+   WIN32S16.DLL
+   WINMM16.DLL
+
+Delete the entire WINDOWS\SYSTEM\WIN32S directory.
+
+Delete the entire MSGOLF2 directory.
+
+Make the following modifications to SYSTEM.INI:
+
+ - Under the [boot] section remove WINMM16.DLL from the drivers= line
+
+ - Under the [386Enh] section, remove the line:
+
+   device=C:\WINDOWS\SYSTEM\WIN32S\W32S.386
+
+Make the following modification to WIN.INI:
+
+ - Remove the [MSGolf] section.
+
+Additional query words: 2.00 golf2 w_golf uninstall un-install deinstall de-install delete
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch kbGolf200
+Version           : WINDOWS:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

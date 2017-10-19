@@ -1,0 +1,106 @@
+DOCUMENT:Q154531  02-APR-1999  [exchange]
+TITLE   :XADM: Moving the KM Server to Another Server in the Site
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Chapter 6 of the Microsoft Exchange Administrator's Guide there are
+documented procedures to move the Key Management Server to another server in the
+same site. The directions in this section are misleading and could lead to
+difficulties in moving the Key Management server. In particular, the
+"Administrator's Guide" makes no mention of needing the ORGINAL Key Management
+server disk that was created on installation for this process to succeed.
+
+MORE INFORMATION
+================
+
+Here are the revised instructions for moving an existing Key Management server
+to another server in the same site:
+
+It is recommended that you DO NOT move the Key Management server from one
+Microsoft Exchange Server computer to another because of the critical
+information kept in the Key Management database. There is, however, a mechanism
+for moving the Key Management server if the need arises.
+
+1. Back up the advanced security data on the Microsoft Exchange Server computer
+   that hosts the Key Management server. See "Backing Up and Restoring Advanced
+   Security Data" in the Microsoft "Administrator's Guide," Chapter 6.
+
+2. Use the Services option in Control Panel to stop the Microsoft Key Management
+   Service.
+
+3. Run the Key Management server Setup program and select the REMOVE ALL option.
+   This will rename your Security directory to Security.bak and remove the Key
+   Management server components.
+
+4. Go to the Microsoft Exchange Server that will now host the Key Management
+   server.
+
+5. Run the Key Management server Setup program, which is on the Microsoft
+   Exchange Server compact disc in the EXCHKey Management directory.
+
+6. Use the Services option in Control Panel to stop the Microsoft Key Management
+   Service.
+
+7. Restore the advanced security data on the server where you ran the Key
+   Management server. See "Backing Up and Restoring Advanced Security Data" in
+   the Microsoft "Administrator's Guide," Chapter 6.
+
+8. Place the ORIGINAL Key Management server disk (from the original install of
+   the Key Management server) into drive A and start the Key Management server
+   service.
+
+9. After allowing for replication to occur within your organization (this could
+   take several hours depending on your topology), run the Key Management server
+   setup program on each of the other sites in your organization.
+
+The original Key Management disk is needed because it contains the 64-bit
+encryption key for the database. Because the data that is being moved was
+created with this key, it needs to be present to issue and revoke certificates
+on the new location. If this disk is not used, new tokens will need to be issued
+for all users in the organization.
+
+STATUS
+======
+
+This process is by design; future versions of the Microsoft Exchange
+Administrator's Guide will be updated to reflect the above instructions. It is
+highly recommended that the disk that is created during the Key Management
+server Setup be backed up and kept in a secure place in the event that the
+original is lost or damaged.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

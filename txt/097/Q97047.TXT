@@ -1,0 +1,60 @@
+DOCUMENT:Q97047  20-NOV-1999  [pcmail]
+TITLE   :PC WRmt: Network List Shows Blank Line for Current Postoffice
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Remote for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Mail Remote version 3.2 for Windows, when you create a custom view
+and select all Network Postoffices and all Users on Postoffices, the Address
+Book shows a blank line after the name of the network on which the user resides.
+
+CAUSE
+=====
+
+In the network list, one network has only one postoffice (the local postoffice).
+The network list has an entry without a postoffice because the postoffice list
+names the postoffice. If Mail listed each local postoffice in the network list,
+the network list would duplicate the local postoffice list.
+
+For example, in the network Microsoft, the WGC postoffice list is as follows:
+
+  Personal Address Book
+  Global Address List
+  Postoffice List ----|   Because these two lists would be the same,
+  Other Networks      |-- Mail does not show PO1 as a postoffice.
+    Network1          |   Consequently, the Network1 network contains
+       PO1 -----------|   no postoffice.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailRemote320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

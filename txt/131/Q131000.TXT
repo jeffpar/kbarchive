@@ -1,0 +1,110 @@
+DOCUMENT:Q131000  25-JUL-2001  [visualc]
+TITLE   :FIX: Application Error If /Og & Virtual Operator Call in Loop
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbCodeGen kbCompiler kbCPPonly kbVCkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), included with:
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 2.0, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An application error is generated when running a program that meets all these
+conditions:
+
+ - It was compiled with global optimization (/Og).
+
+ - It defines a virtual operator for a class.
+
+ - It constructs an object of that class inside a loop.
+
+ - The operator is called inside the loop.
+
+CAUSE
+=====
+
+The computation of the address of the virtual operator is being lifted out of
+the loop.
+
+RESOLUTION
+==========
+
+Use any one of the following four workarounds:
+
+ - Move the object outside the loop.
+
+-or-
+
+ - Use the functional form of the operator.
+
+-or-
+
+ - If the operator does not need to be virtual, do not declare it virtual.
+
+-or-
+
+ - Do not do global optimizations.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was fixed in Microsoft Visual C++,
+32-bit Edition, version 4.0.
+
+MORE INFORMATION
+================
+
+Sample Code to Reproduce Problem
+--------------------------------
+
+   /* Compile options needed: /Og
+   */ 
+   class Test
+   {
+   public:
+       virtual int operator <= ( const Test& T ) const {return 1;}
+   };
+
+   void main( void )
+   {
+       long i;
+       for (i=1; i<=3; i++)
+       {
+           Test T; //Work-around 1: Move this line above the for loop.
+           T <= T; //Work-around 2: Comment out this line, uncomment the next.
+           //T.operator<=(T); // Function form of the operator.
+       }
+   }
+
+Additional query words: 2.00 2.10 9.0 9.1 9.00 9.10
+
+======================================================================
+Keywords          : kbCodeGen kbCompiler kbCPPonly kbVC kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : winnt:
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

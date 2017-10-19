@@ -1,0 +1,62 @@
+DOCUMENT:Q245090  10-AUG-2001  [winnt]
+TITLE   :Err Msg: The Procedure Entry Point Netuio_isdbcs Could Not...
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start User Manager on a computer running Microsoft Windows NT Server
+3.51, you may receive the following error message:
+
+   The procedure entry point netuio_isdbcs could not be located in the dynamic
+   link library netuio.dll
+
+When you start Server Manager, you may receive a similar error message for the
+Msvcrt.dll file.
+
+CAUSE
+=====
+
+This behavior can occur if you have the client version of Server Tools installed
+on the computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, remove the client version of Server Tools, and then
+install the server version of Server Tools on the Windows NT 3.51-based
+computer.
+
+Additional query words: msvcrt.dll
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

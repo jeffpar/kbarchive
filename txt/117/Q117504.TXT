@@ -1,0 +1,60 @@
+DOCUMENT:Q117504  14-DEC-1999  [win95x]
+TITLE   :Prompted to Do Full Installation in Maintenance-Mode Setup
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you complete a network setup of Windows 3.1 (SETUP /N) and you later try
+to perform a maintenance-mode setup for Windows 3.1 from your Windows directory,
+you are prompted to perform a full installation, and you are not allowed to make
+any changes to the system settings.
+
+CAUSE
+=====
+
+Three files must be present in the Windows directory in order to run
+maintenance-mode setup. These files are WIN.COM, SETUP.EXE, and WINVER.EXE. You
+experience problems if all three files are not present. When you perform a
+network installation of Windows using the SETUP/N command, the setup routine
+places a minimal number of Windows files in the local Windows directory.
+SETUP.EXE, by default, is not installed in the local Windows directory.
+
+RESOLUTION
+==========
+
+To correct this problem, copy SETUP.EXE to the local Windows directory from Disk
+1 of the Windows distribution disk set or from the shared Windows directory.
+
+Additional query words: 3.10 3.1
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

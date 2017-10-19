@@ -1,0 +1,69 @@
+DOCUMENT:Q197851  10-AUG-2001  [winnt]
+TITLE   :User May Have Two Passwords After Migration from LAN Manager
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A user may have two different passwords (a LAN Manager password and a Windows NT
+password) without knowing it.
+
+MORE INFORMATION
+================
+
+The Windows NT password may be empty if the account database was migrated from
+an old LAN Manager domain (for example, by using Portuas.exe). In this case, the
+old LAN Manager password (encrypted with DES) is taken from the old account
+database, and the new Windows NT password (encrypted using MD4) will be empty,
+because there is no way to recalculate the password from the LM database.
+
+In Service Pack 4, security validation has changed. It is possible a user is
+validated only by the Windows NT 4.0 password, which can be empty if it has not
+been changed since the migration from LAN Manager.
+
+
+For additional information on this security validation change, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q147706 How to Disable LM Authentication on Windows NT
+
+RESOLUTION
+==========
+
+To resolve this issue, after migration, have the user change the password in the
+Windows NT domain. This can be achieved by setting the appropriate flags in the
+Windows NT User Manager for Domains. After the password has changed, both
+passwords (LAN Manager and Windows NT) will be kept in sync.
+
+Additional query words: NT4SP4 security validation
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

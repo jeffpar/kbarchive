@@ -1,0 +1,60 @@
+DOCUMENT:Q155923  08-AUG-2001  [winnt]
+TITLE   :Opening My Computer Is Slow with Multiple-Disk CD-ROM Changer
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbhw kbui kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you double-click My Computer on a computer with a multiple-disk CD-ROM
+changer, it may take a long time (up to several minutes) for the folder to fully
+appear on the screen.
+
+CAUSE
+=====
+
+Windows NT Explorer reads each of the CD-ROMs in the multiple-disk CD-ROM
+changer for volume information before fully displaying the folder.
+
+MORE INFORMATION
+================
+
+For information about how to restrict access to the CD-ROM drives, and prevent
+Windows NT Explorer from reading the CD-ROM drives, please see the following
+article in the Microsoft Knowledge Base:
+
+   ARTICLE-ID: Q158457
+   TITLE : Defining Local and Remote Drive Visibility Under WinNT 4.0
+
+Additional query words: prodnt disc
+
+======================================================================
+Keywords          : kbhw kbui kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

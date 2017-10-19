@@ -1,0 +1,75 @@
+DOCUMENT:Q123489  19-DEC-2000  [win95x]
+TITLE   :Incorrect Keystrokes Reported in Character Map
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An incorrect keystroke is reported when you are using Character Map and are
+trying to select a character in any of the following locations:
+
+   row 3 col. 32
+   row 4 col.  1
+   row 4 col. 31
+   row 4 col. 32
+
+The incorrect keystroke is reported as CTRL+<character>, where
+<character> can be any alphanumeric character.
+
+This problem occurs with ALL fonts.
+
+
+WORKAROUND
+==========
+
+To generate the proper characters, use the following key combinations:
+
+For this character   Type
+-------------------------
+
+Row 3 column 32      ALT+0127
+Row 4 column  1      ALT+0128
+Row 4 column 31      ALT+0158
+Row 4 column 32      ALT+0159
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 3.1 and 3.11 of
+Microsoft Windows and Microsoft Windows for Workgroups. We are researching this
+problem and will post new information here in the Microsoft Knowledge Base as it
+becomes available.
+
+Additional query words: 3.10 font CTRL control
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbWin95search kbZNotKeyword3 kbWin310 kbWin311
+Version           : :3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

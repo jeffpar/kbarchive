@@ -1,0 +1,74 @@
+DOCUMENT:Q191671  24-AUG-1999  [foxpro]
+TITLE   :FIX: Calling AINSTANCE in Loop Causes Memory Leak
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Repeatedly calling the AINSTANCE function cause a memory leak in Visual FoxPro
+5.0x.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+Each iteration of the AINSTANCE() function causes a 276 byte memory leak in user
+object memory as measured by SYS(1016).
+
+Steps to Reproduce Behavior
+---------------------------
+
+Create a program containing the following code and run the program:
+
+      CLEAR
+      SET TALK OFF
+      ox=CREATEOBJECT("form")
+      ox.ADDOBJECT("command1","commandbutton")
+
+      ox.SHOW
+
+      ACTIVATE  SCREEN
+      FOR i=1 TO 100
+         =AINSTANCE(ss,"form")
+         ? SYS(1016)
+      ENDFOR
+
+Additional query words: kbVFp500abug kbOOP kbfvp600fix
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

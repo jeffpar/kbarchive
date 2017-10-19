@@ -1,0 +1,58 @@
+DOCUMENT:Q172089  18-DEC-1999  [homemm]
+TITLE   :Cinemania 97:  Why Does the Year Filter Stop at 1996?
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1997 edition
+OPER/SYS:
+KEYWORDS:kbusage kbhowto
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Cinemania for Windows 1997 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to search for movies released in 1997 in Microsoft Cinemania,
+the year filter limits you 1914-1996.
+
+RESOLUTION
+==========
+
+To resolve this problem, use the Find list to search for the released movies in
+Cinemania 1997.
+
+1. Click Start.
+
+2. In the box at the top of the Find list, type the following:
+
+   "1997" (without the quotation marks)
+
+If you have the monthly updates installed, this search returns movies released in
+1997.
+
+Additional query words: mm multi media cin97 current movie years later
+
+======================================================================
+Keywords          : kbusage kbhowto 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbCineManiaSearch kbCinemania1997
+Version           : :1997 edition
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

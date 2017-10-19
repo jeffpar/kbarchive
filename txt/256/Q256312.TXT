@@ -1,0 +1,81 @@
+DOCUMENT:Q256312  23-OCT-2000  [iis]
+TITLE   :FTP DIR Command Shows Time Created Instead of Year
+PRODUCT :Internet Information Server
+PROD/VER:winnt:2.0,3.0,4.0,5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 2.0, 3.0, 4.0 
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you issue an FTP dir command against an IIS FTP server, one or more of the
+files listed may not display the year created. Instead, the time created is
+displayed.
+
+MORE INFORMATION
+================
+
+The IIS FTP server is configured to display UNIX-style directory listings. As
+per the UNIX specification, files created in the current year display the time
+of creation instead of the year of creation.
+
+Example:
+
+   ftp> dir
+   200 PORT command successful.
+   150 Opening ASCII mode data connection for /bin/ls.
+   -r-xr-xr-x   1 owner    group               1 Jun  3  1999 NotCurrentYear.txt
+   -r-xr-xr-x   1 owner    group               1 Mar  6 21:11 CurrentYear.txt
+
+If you require the time and year to be displayed, change to the MS-DOS directory
+listing style. To do this, perform the following steps:
+
+1. Open the IIS Microsoft Management Console (MMC).
+
+2. Edit the properties for the FTP service.
+
+3. On the Home Directory tab, change the Directory Listing Style to MS-DOS.
+
+4. Click OK.
+
+5. Restart the FTP service.
+
+After you make this change, the directory listing appears as follows:
+
+   ftp> dir
+   200 PORT command successful.
+   150 Opening ASCII mode data connection for /bin/ls.
+   06-03-99  10:57PM                    1 NotCurrentYear.txt
+   03-06-00  09:11PM                    1 CurrentYear.txt
+
+Additional query words: FTP UNIX date time timestamp year
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbiisSearch kbiis500 kbiis400 kbiis300 kbiis200
+Version           : winnt:2.0,3.0,4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,84 @@
+DOCUMENT:Q195694  10-DEC-1999  [foxpro]
+TITLE   :PRB: Method Code Not Returned Using Object Reference with GETPEM
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbOOP kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The GETPEM() function can be used to return the property values and event or
+method program code for a given object at design-time. Although not documented
+as being supported at run-time, this function does return property values and
+event or method code at run-time.
+
+However, when passing an object reference as the first parameter to the GETPEM()
+function, an empty string is returned when querying for event or method program
+code at run-time.
+
+RESOLUTION
+==========
+
+In order to retrieve the event or method code at run-time using the GETPEM()
+function, the first parameter must specify the class name rather than a
+reference to the object. If the class name is not known, the object's Class
+property can be passed as follows:
+
+      GETPEM(oObject.Class, "Init")
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+In this context, run-time refers to a compiled Visual FoxPro executable running
+with VFP6R.DLL, and design-time means running in the Interactive Development
+Environment (IDE) using VFP6.exe.
+
+Steps to Reproduce Behavior
+---------------------------
+
+Run the following code:
+
+      oObject = NEWOBJECT("_form",HOME()+"ffc\_base.vcx")
+      cMethodCode = GETPEM(oObject,"Release") && Object Ref = Empty String
+      ?LEN(cMethodCode)  && Zero
+
+Note that zero is returned. If the first parameter passed to the GETPEM()
+function is changed to oObject.Class, a value greater than zero is returned.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOOP kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

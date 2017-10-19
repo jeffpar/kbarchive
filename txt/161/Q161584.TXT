@@ -1,0 +1,101 @@
+DOCUMENT:Q161584  02-JUL-2002  [exchange]
+TITLE   :XADM: Err Msg: Unable to Recover the Database, Error 0xc8000713
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you 
+modify the registry, make sure to back it up and make sure that you understand how to restore 
+the registry if a problem occurs. For information about how to back up, restore, and edit the 
+registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+When you try to start the Microsoft Exchange Server Information Store service,
+the following error occurs:
+
+   The Microsoft Exchange Information Store service returned service specific
+   error 3355445011.
+
+In the Windows NT Event Log, the following entry may be present:
+
+   Event ID: 1080
+   Source: MSExchangeIS
+   Type: Error
+   Category: Recovery
+   Description: Unable to recover the database because error 0xc8000713 occurred
+   after a restore operation. Unable to find the file.
+
+Or, the Information Store service may not start and you may receive the service
+specific error -939522285.
+
+CAUSE
+=====
+
+The above error message occurs when the information store appears to be restored
+from an online backup, but the information store files are not restored because
+they are damaged or missing. After a restore operation the Restore in Progress
+registry key is added to the following key:
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeIS
+
+When the Information Store service starts and finds the above registry key, it
+assumes a restoration has occurred and that the information store needs to
+perform recovery steps. The information store then tries to move forward through
+any log files. When the information store has successfully started, this
+registry key is deleted. However, if the information store cannot find the
+Priv.edb file or Pub.edb file, it cannot move forward through the log files, and
+the preceding error message occurs. In this case, the information store does not
+create blank EDB files, and the registry key is not deleted.
+
+RESOLUTION
+==========
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+To resolve this behavior, delete the Restore in Progress key from the Registry
+Editor in the following location:
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeIS
+
+Start the information store again. If the required EDB files are not found, they
+will be re-created. After this is done, try restoring from backup again.
+
+
+Additional query words: 5000 -1811 4294965485
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

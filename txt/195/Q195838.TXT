@@ -1,0 +1,94 @@
+DOCUMENT:Q195838  18-JUN-2001  [vbwin]
+TITLE   :PRB: Cut, Copy, and Paste Unavailable in Text Annotation Menu
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbDataview kbVBp600 kbVC600 kbVisID600 kbVS600 kbGrpDSVBDB _IK
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual InterDev, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you right-click a text annotation in a Database Diagram dialog box, the
+cut, copy, paste, and delete menu items in the pop-up menu are unavailable.
+
+RESOLUTION
+==========
+
+To workaround this behavior, use the following keyboard shortcuts to perform
+cut, copy, and paste functions in the Text Annotation box:
+
+ Function     Keyboard Shortcut
+ --------     -----------------
+
+ Cut          Ctrl-X
+ Copy         Ctrl-C
+ Paste        Ctrl-V
+
+STATUS
+======
+
+This behavior is by design.
+
+
+MORE INFORMATION
+================
+
+This sections shows you how to reproduce the behavior. The section assumes you
+know how to create a Database Diagram.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Database diagram.
+
+2. Right-click the database diagram window and click New Text Annotation.
+
+3. Type four characters in the Text Annotation box.
+
+4. Right-click the Text Annotation area. The cut, copy, paste, and delete items
+   in the pop-up menu are unavailable. This behavior also occurs when you select
+   characters in the Text Annotation area.
+
+REFERENCES
+==========
+
+For more information on creating a Database diagram, please see Creating a
+Database Diagram in the Online help or at the following location on MSDN:
+
+   Creating a Database Diagram
+   (http://msdn.microsoft.com/library/default.asp?URL=/library/devprods/vs6/vstudio/vdbref/dvhowcreatingdatabasediagram.htm)
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDataview kbVBp600 kbVC600 kbVisID600 kbVS600 kbGrpDSVBDB _IK 
+Technology        : kbVCsearch kbVisIDsearch kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbVC600 kbVC32bitSearch kbVisID600
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

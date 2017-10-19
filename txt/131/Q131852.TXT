@@ -1,0 +1,94 @@
+DOCUMENT:Q131852  30-OCT-1999  [pcmail]
+TITLE   :PC Win: Error [009] Mail Maximum Size Exceeded Sending to...
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use version 3.2 of Microsoft Mail for Windows, you may receive a
+returned mail message similar to the one below:
+
+   From: POSTMASTER
+   Date
+   To
+   CC
+   Subject: Mail Failure
+
+   FROM:NET/PO/POSTMASTER
+   TO:
+   DATE:
+   TIME:
+   SUBJECT: Mailfailure
+
+   _____________________________________
+
+   [009] Mail maximum size exceeded sending to:
+   NET2 /PO2.
+
+   _____________________________________________
+
+with the original message pasted below.
+
+MORE INFORMATION
+================
+
+The Mail administrator has the ability to put a maximum mail size restriction on
+mail delivered between postoffices. For an async postoffice, you can configure
+this setting by selecting External-Admin, Modify, Setup in ADMIN.EXE. You can
+also use the MaxLanMailSize setting when you launch the External for network
+connections.
+
+With this setting, when a message or message plus attachment is sent that exceeds
+the limit, the message will be returned to the sender with the error posted
+inside the message. The following corresponding entry will be in the SYSTEM.LOG
+on the senders postoffice:
+
+   System log entry on: 06-01-95 08:53
+   External program has detected a mail problem.
+
+   Message data:
+
+   From:
+   Date:
+   Time:
+   Subject:
+
+   [009] Mail maximum size exceeded sending to:
+   NET
+   /PO2
+
+For additional information, please see version 3.2 of Microsoft Mail for PC
+Networks "Administrator's Guide," page 274.
+
+Additional query words: 3.20 maximum size exceeded
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

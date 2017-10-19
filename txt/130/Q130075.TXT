@@ -1,0 +1,63 @@
+DOCUMENT:Q130075  17-DEC-2000  [win95x]
+TITLE   :TEMP Environment Variable Overwritten in Command Prompt
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The TEMP environment variable is set to a series of Xs in an MS-DOS virtual
+machine (or command prompt).
+
+CAUSE
+=====
+
+If the MS-DOS TEMP environment variable is set to a directory that does not
+exist, Windows 95 automatically overwrites the variable with a series of Xs.
+
+
+RESOLUTION
+==========
+
+To make sure that the TEMP environment variable is valid, use any one of the
+following methods:
+
+ - Remove the SET TEMP statement from the AUTOEXEC.BAT file.
+
+ - Create the directory that the TEMP environment variable points to.
+
+ - Change the SET TEMP statement to point to a directory that exists.
+
+STATUS
+======
+
+This behavior is by design.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

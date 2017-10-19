@@ -1,0 +1,63 @@
+DOCUMENT:Q107645  23-SEP-1999  [win3x]
+TITLE   :How to Disable Write Caching for the 32-Bit File System
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows for Workgroups version 3.11 caches disk writes by default when the
+32-bit file system is enabled. This includes MS-DOS DoubleSpace 6.2 volumes;
+however, it does not include third-party disk-compression systems.
+
+MORE INFORMATION
+================
+
+To disable write caching with the 32-bit file system, add the following line to
+the [386Enh] section of the SYSTEM.INI file:
+
+        ForceLazyOff=<drivelist>
+
+where <drivelist> is the list of drives in which you want to disable write
+caching. (Do not use any delimiters or spaces.) For example, the line
+
+        ForceLazyOff=CDF
+
+would disable write caching on drives C, D, and F.
+
+For more information about the 32-bit file system, query on the following words
+in the Microsoft Knowledge Base:
+
+   wfwg and vfat and 32-bit
+
+Additional query words: dblspace 3.11 write lazywrite on off force lazy forcelazy lazyon forcelazyon writes forcewrites lazywrites vcache
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

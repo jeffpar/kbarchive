@@ -1,0 +1,67 @@
+DOCUMENT:Q76800  31-OCT-1999  [winmisc]
+TITLE   :Description of a Multimedia PC
+PRODUCT :Miscellaneous Windows Products
+PROD/VER::1.0; WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows with Multimedia Extensions, version 1.0 
+ - Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Multimedia PCs are a specific class of PCs that meet or exceed the Multimedia PC
+specification 1.0. The "MPC" trademark indicates that the hardware complies with
+this specification.
+
+MORE INFORMATION
+================
+
+The Multimedia PC combines high quality graphics, stereo audio and animation
+capabilities with the massive storage capacity of CD-ROM.
+
+The minimum hardware requirements are listed below:
+
+ - 80386sx microprocessor
+
+ - 2 megabytes (MB) or more of Random Access Memory (RAM)
+
+ - VGA (16-color) or VGA (256-color) display
+
+ - 30 MB hard drive or larger
+
+ - CD-ROM drive able to output digital audio
+
+ - Audio hardware able to process music and voice
+
+Multimedia PCs fully support Windows with Multimedia Extensions version 1.0 and
+Windows version 3.1.
+
+Additional query words: MMWIN 3.10 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWinMultiXSearch kbWin310 kbWinMultiX100
+Version           : :1.0; WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

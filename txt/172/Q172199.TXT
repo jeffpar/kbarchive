@@ -1,0 +1,368 @@
+DOCUMENT:Q172199  11-JAN-2001  [vbwin]
+TITLE   :HOWTO: Optimize Queries in Visual Basic
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::3.0,4.0,5.0
+OPER/SYS:
+KEYWORDS:kbVBp400 kbVBp500 kbGrpDSVB kbGrpDSVBDB kbhowto kb32bitOnly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Standard Edition for Windows, version 3.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual Basic allows you to retrieve data from Jet databases (MDB files) by using
+Structured Query Language (SQL). These query operations can be made more
+efficient by implementing some of the suggestions in this article.
+
+This article assumes that you are using the Microsoft Jet database engine. If you
+are querying ODBC tables, many of these points still apply. For more information
+regarding improving performance of ODBC queries, please search on the following
+words in the Microsoft Knowledge Base:
+
+   ODBC and Optimizing and Tables
+
+MORE INFORMATION
+================
+
+Here are some tips for optimizing your SQL queries:
+
+Performance Analyzer
+--------------------
+
+If you have Microsoft Access 95 or 97, you can open the database and use the
+Performance Analyzer to profile your queries and suggest improvements.
+
+Table Design
+------------
+
+When defining a field in a table, choose the smallest data type appropriate for
+the data in the field. This increases the number of records that can fit on a
+page.
+
+Fields you use in joins should have the same or compatible data types.
+
+Compact the Database
+--------------------
+
+This has two performance benefits:
+
+1. The Microsoft Jet database engine uses a cost-based method of optimization.
+   As your database grows, the optimization scheme may no longer be efficient.
+   Compacting the database updates the database statistics and re-optimizes all
+   queries.
+
+2. As your database grows, it will become fragmented. Compacting writes all the
+   data in a table into contiguous pages on the hard disk, improving performance
+   of sequential scans.
+
+   To compact your database, use the CompactDatabase statement. This example
+   compacts the database and makes a backup:
+
+   DBEngine.CompactDatabase "C:\VB\BIBLIO.MDB", "C:\VB\BIBLIO2.MDB"
+   Kill "C:\VB\BIBLIO.BAK"
+   Name "C:\VB\BIBLIO.MDB" As "C:\VB\BIBLIO.BAK"
+   Name "C:\VB\BIBLIO2.MDB" As "C:\VB\BIBLIO.MDB"
+
+   If your database is updated heavily, you may want to consider compacting
+   nightly.
+
+Avoid Expressions in Query Output
+---------------------------------
+
+Expressions in query output can cause query optimization problems if the query is
+used later as input to another query and you add criteria to the calculated
+output. In the following example, Query1 is used as input for a second SELECT
+statement:
+
+      Dim DB As Database
+      Dim RS As RecordSet
+      Set DB = DBEngine.Workspaces(0).Opendatabase("Biblio.MDB")
+      DB.CreateQueryDef("Query1", _
+         "SELECT IIF(Au_ID=1,'Hello','Goodbye') AS X FROM Authors")
+      Set RS = DB.OpenRecordSet("SELECT * FROM Query1 WHERE X='Hello'")
+
+Because the IIF() expression in Query1 cannot be optimized, the WHERE condition
+in second SELECT statement also cannot be optimized. If an expression gets
+buried deeply enough in a query tree, you can forget that it is there. As a
+result, your entire string of queries cannot be optimized.
+
+If you can, merge the SQL into a single level of nesting:
+
+      Set RS = DB.OpenRecordSet("SELECT * FROM Authors WHERE Au_ID=1")
+
+For more complex nested queries, expose the fields that make up the expression:
+
+      DB.CreateQueryDef("Query1", _
+         "SELECT IIF(Au_ID=1,'Hello','Goodbye') AS X, Au_ID, FROM Authors")
+      Set RS = DB.OpenRecordSet("SELECT * FROM Query1 WHERE Au_ID=1")
+
+If you cannot avoid calculated values in query output, place them in the
+top-level query and not in lower-level queries.
+
+Output Only the Fields Needed
+-----------------------------
+
+When creating a query, return only the fields you need. If a field doesn't have
+to be in the SELECT clause, don't add it. The above example of exposing
+additional fields to make nested queries more efficient is an exception.
+
+GROUP BY, Joins, and Aggregates
+-------------------------------
+
+This is an issue when you are joining two tables. For example, if you join two
+tables on the Customer Name field, and also GROUP BY the Customer Name field,
+make sure that both the GROUP BY field (Customer Name) and the field that is in
+the aggregate (Sum, Count, and so on) come from the same table.
+
+NOTE: This query is less efficient because the SUM aggregate is on the Ord table
+and the GROUP BY clause is on the Cust table:
+
+      SELECT Cust.CustID,
+             FIRST(Cust.CustName) AS CustName,
+             SUM(Ord.Price) AS Total
+      FROM Cust INNER JOIN Ord ON Cust.CustID = Ord.CustID
+      GROUP BY Cust.CustID
+
+A more efficient query would be to GROUP BY on Ord.CustID:
+
+      SELECT Ord.CustID,
+             FIRST(Cust.CustName) AS CustName,
+             SUM(Ord.Price) AS Total
+      FROM Cust INNER JOIN Ord ON Cust.CustID = Ord.CustID
+      GROUP BY Ord.CustID
+
+NOTE: The First and Last functions do not have the overhead of other aggregates
+and should not weigh very heavily in this decision.
+
+GROUP BY As Few Fields As Possible
+----------------------------------
+
+The more fields in the GROUP BY clause, the longer the query takes to execute.
+Use the First aggregate function to help reduce the number of fields required in
+the GROUP BY clause.
+
+Less efficient:
+
+      SELECT Cust.CustID,
+             Cust.CustName,
+             Cust.Phone,
+             SUM(Ord.Price) AS Total
+      FROM Cust INNER JOIN Ord ON Cust.CustID = Ord.CustID
+      GROUP BY Cust.CustID, Cust.CustName, Cust.Phone
+
+More efficient:
+
+      SELECT Ord.CustID,
+             FIRST(Cust.CustName) AS CustName,
+             FIRST(Cust.Phone) AS Phone,
+             SUM(Ord.Price) AS Total
+      FROM Cust INNER JOIN Ord ON Cust.CustID = Ord.CustID
+      GROUP BY Ord.CustID
+
+Nest GROUP BY Clause Before Joining
+-----------------------------------
+
+If you are joining two tables and only grouping by fields in one of them, it may
+be more efficient to split the SELECT statement into two queries. making the
+SELECT statement with the GROUP BY clause into a nested query joined to the
+non-grouped table in the top-level query.
+
+Less efficient:
+
+      SELECT Ord.CustID,
+             FIRST(Cust.CustName) AS CustName,
+             FIRST(Cust.Phone) AS Phone,
+             SUM(Ord.Price) AS Total
+      FROM Cust INNER JOIN Ord ON Cust.CustID = Ord.CustID
+      GROUP BY Ord.CustID
+
+More efficient:
+
+      Query1:
+      SELECT CustID, SUM(Price) AS Total
+      FROM Ord
+      GROUP BY CustID
+
+      Query2:
+      SELECT Query1.CustID, Cust.CustName, Cust.Phone, Query1.Total
+      FROM Cust INNER JOIN Ord ON Cust.CustID = Ord.CustID
+
+Index Both Fields Use in Join
+-----------------------------
+
+When joining tables, try to index the fields on both sides of a join. This can
+speed query execution by allowing the query optimizer to use more sophisticated
+internal join strategy.
+
+However, if you know one table is going to remain relatively small (occupy 1-2 2K
+pages), it may be more efficient to remove indexes in that table because fewer
+pages will have to be read into memory. You should try this on a case-by-case
+basis.
+
+Add Indexes to Speed Searches and Sorts
+---------------------------------------
+
+Place an index on all fields that are used in a join or in a restriction. With
+the use of Rushmore query optimization technology, the Microsoft Jet 2.0 and
+later database engine is able to take advantage of multiple indexes on a single
+table, which makes indexing multiple fields advantageous.
+
+Avoid restrictive query criteria on calculated and non-indexed columns whenever
+possible.
+
+Use sorting judiciously, especially with calculated and non-indexed fields.
+
+Use Optimizable Expressions
+---------------------------
+
+Try to construct your queries so that Rushmore technology can be used to help
+optimize them. Rushmore is a data-access technology that permits sets of records
+to be queried very efficiently. With Rushmore, when you use certain types of
+expressions in query criteria, your query will run much faster. Rushmore does
+not automatically speed up all your queries. You must construct your queries in
+a certain way for Rushmore to be able to improve them.
+
+Use the REFERENCES section at the end of the article to locate more specific
+information.
+
+Use COUNT(*) Instead of COUNT([Column Name])
+--------------------------------------------
+
+The Microsoft Jet database engine has special optimizations that allow COUNT(*)
+to be executed much faster than COUNT([Column Name]).
+
+NOTE: These two operations also have slightly different behavior:
+
+ - Count(*) counts all rows returned.
+
+ - Count([Column Name]) counts all rows where [Column Name] is not NULL.
+
+Avoid LIKE on Parameters
+------------------------
+
+Because the value of the parameter is unknown at the time the query is compiled,
+indexes will not be used. You can gain performance by concatenating the
+parameter value as a literal in the SQL statement.
+
+Use the REFERENCES section at the end of the article to locate more specific
+information.
+
+Avoid LIKE and Leading Wildcard
+-------------------------------
+
+If you use the LIKE operator with a wildcard to find approximate matches, use
+only one asterisk at the end of character string to ensure that an index is
+used. For example, the following criteria uses an index:
+
+   Like "Smith"
+   Like "Sm*"
+
+The following criteria does not use an index:
+
+   Like "*sen"
+   Like "*sen*"
+
+Test Joins with Restrictions
+----------------------------
+
+If you use criteria to restrict the values in a field used in a join, test
+whether the query runs faster with the criteria placed on the "one" side or the
+"many" side of the join. In some queries, you get faster performance by adding
+the criteria to the field on the "one" side of the join instead of the "many"
+side.
+
+Use Intermediate Tables
+-----------------------
+
+Use SELECT INTO statements to create work tables, especially if the results are
+going to be used in a number of other queries. The more work you can do
+up-front, the more efficient the process.
+
+Avoid NOT IN with SubSelects
+----------------------------
+
+Using sub-selects and NOT IN is poorly optimized. Converting to nested queries or
+OUTER JOINs are more efficient. The following example finds customers without
+orders:
+
+Less efficient:
+
+         SELECT Customers.*
+         FROM Customers
+         WHERE Customers.[Customer ID]
+               NOT IN (SELECT [Customer ID] FROM Orders);
+
+More efficient:
+
+         SELECT Customers.*
+         FROM Customers LEFT JOIN Orders
+              ON Customers.[Customer ID] = Orders.[Customer ID]
+         WHERE ((Orders.[Customer ID] Is Null));
+
+REFERENCES
+==========
+
+For more information about how to optimize queries with Rushmore technology:
+
+In Microsoft Visual Basic 4.0 Help, search for "Rushmore technology", then:
+
+   "Optimizing Queries with Rushmore Technology"
+
+In Visual Basic 5.0 Books Online, search for "Rushmore Technology", then:
+
+   "Optimizing Queries"
+
+In Microsoft Access 2.0 Help, search for "Rushmore Technology", then:
+
+   "Optimizing Queries with Rushmore Technology"
+   "Combining Optimizable Expressions for Rushmore"
+
+In Microsoft Access 95 Help, search for "Rushmore Technology."
+
+In Microsoft Access 97 Help, search for "Rushmore Queries."
+
+The Microsoft Jet Database Engine Programmer's Guide.
+
+For more information about creating queries in code, please see the following
+articles in the Microsoft Knowledge Base:
+
+   Q117544 : INF: Query by Form (QBF) Using Dynamic QueryDef (2.0)
+
+   Q136062 : INF: Query by Form (QBF) Using Dynamic QueryDef (7.0/97)
+
+
+Additional query words: Jet DAO speedier quicker optimum
+
+======================================================================
+Keywords          : kbVBp400 kbVBp500 kbGrpDSVB kbGrpDSVBDB kbhowto kb32bitOnly 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500 kbVB400Search kbVB300Search kbVB400 kbVB300 kbVB16bitSearch
+Version           : :3.0,4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

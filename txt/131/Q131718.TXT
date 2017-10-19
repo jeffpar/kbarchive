@@ -1,0 +1,59 @@
+DOCUMENT:Q131718  17-DEC-2000  [win95x]
+TITLE   :CD-ROM Optimization Settings Available Without Drive Installed
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The CD-ROM optimization settings are available in the File System Properties
+dialog box even if there is no CD-ROM drive installed. When you change these
+settings, Windows 95 prompts you to restart the computer.
+
+If there is no CD-ROM drive installed, the CD-ROM file system driver (CDFS.VXD)
+does not remain in memory at startup and the CD-ROM optimization settings are
+not active. Changing these settings on a computer that does not have a CD-ROM
+drive installed does not affect the performance of Windows 95.
+
+MORE INFORMATION
+================
+
+To modify the CD-ROM optimization settings on a computer that does have a CD-ROM
+drive installed, follow these steps:
+
+1. Use the right mouse button to click My Computer, then click Properties on the
+   menu that appears.
+
+2. Click the Performance tab.
+
+3. Click the File System button.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

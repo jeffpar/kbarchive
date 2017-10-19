@@ -1,0 +1,80 @@
+DOCUMENT:Q236127  07-MAR-2001  [iis]
+TITLE   :Event ID 3: IISLOG Unable to Create File
+PRODUCT :Internet Information Server
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Internet Information Server (IIS) generates the following event log message
+intermittently in Event Viewer:
+
+   Event ID: 3 Source : IISLOG Description: IIS Logging was unable to create the
+   file C:\WINNT\System32\LogFiles\W3SVC1\ex990628.log. The data is the error.
+
+NOTE: The data in the event message is 5, Access Denied. The file noted in the
+event message is being created and the log entries are written.
+
+CAUSE
+=====
+
+IIS attempted to flush its log cache using the credentials of a user who does
+not have write access to the log file location.
+
+RESOLUTION
+==========
+
+To resolve this problem, see the following Knowledge Base article for hotfix
+information:
+
+   Q275032 IISLog Event Can't Create Directory Occurs at Startup
+
+WORKAROUND
+==========
+
+In order to avoid receiving the errors in the event log, you must give the
+special group Everyone either Change or Full Control permissions to the log file
+folder.
+
+MORE INFORMATION
+================
+
+IIS flushes its log cache periodically and when it does, it uses the security
+context of the currently running thread. If that fails, IIS will generate the
+event log shown above, and then attempt to write the log using the System
+account.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : :4.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,67 @@
+DOCUMENT:Q245079  08-AUG-2001  [winnt]
+TITLE   :Cannot Synchronize Time Across Time Zone on Windows 95
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:95; winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the 'net time \\servername /set /y' command to synchronize the time
+on a client computer in a domain running Microsoft Windows 95 to a time server
+computer running Microsoft Windows NT Server 4.0 that is in a different domain
+and the time server is not in the same time zone as the client, you may
+incorrectly change the time on the client to the time on the time server.
+
+CAUSE
+=====
+
+The cause is unknown.
+
+RESOLUTION
+==========
+
+To work around this behavior, configure a time server for each domain in each
+time zone.
+
+MORE INFORMATION
+================
+
+You can use the Nettime.exe utility that is included on the Microsoft Windows 98
+Resource Kit CD-ROM to replace the 'net time' command. This utility performs the
+WIN32 function calls that gather the time information from the client computer,
+compares the time zone information to that of the time server, and then makes
+the appropriate time zone adjustment on the client computer.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95; winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

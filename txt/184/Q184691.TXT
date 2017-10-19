@@ -1,0 +1,82 @@
+DOCUMENT:Q184691  20-JUL-2001  [msnetwork]
+TITLE   :MSN Err Msg: Urlmon.dll Is Missing
+PRODUCT :The Microsoft Network
+PROD/VER::2.5,2.6,4.0,4.01,4.01 Service Pack 1,5,5.0,5.1,5.5
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.5, 2.6, 5.0, 5.1 
+ - Microsoft Internet Explorer versions 4.0, 4.01, 4.01 Service Pack 1 for Windows 95 
+ - Microsoft Internet Explorer versions 5, 5.5 for Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to connect to MSN, The Microsoft Network, you may receive the
+following error message:
+
+   Urlmon.dll is missing
+
+CAUSE
+=====
+
+This can occur if the Internet Explorer installation did not successfully
+complete during MSN Setup, or if the Urlmon.dll file was removed when Netscape
+Navigator was removed. Urlmon.dll is a shared file that is deleted when some
+Netscape Navigator versions are removed.
+
+RESOLUTION
+==========
+
+To resolve this issue, reinstall Internet Explorer.
+
+Download the latest Internet Explorer software from
+    http://www.microsoft.com/windows/ie/
+
+-or-
+
+Reinstall Internet Explorer from the MSN CD-ROM
+
+1. Insert the MSN CD-ROM into the CD-ROM drive and simultaneously press and hold
+   down the SHIFT key to prevent the MSN Setup program from starting
+   automatically.
+
+2. Double-click My Computer on the desktop.
+
+3. Right-click the MSN (CD-ROM drive) icon, and then click Explore.
+
+4. Double-click the Ie folder (or IeX X=number).
+
+5. Double-click the IeXsetup.exe file (X=number) and follow the instructions on
+   the screen to reinstall Internet Explorer.
+
+6. Restart the computer.
+
+Additional query words: 4.0 msnet msnetwork microsoft-net m.s.n.
+
+======================================================================
+Keywords          : kberrmsg kbsetup kbmsn 
+Technology        : kbIEsearch kbMSNSearch kbIE95Search kbIE500Search kbZNotKeyword3 kbIE98Search kbIE400Win95 kbIE401Win95 kbIE401Win95SP1 kbIE500Win98 kbIE550Win98 kbMSN510 kbMSN500 kbMSN260 kbMSN250 kbIE550Search
+Version           : :2.5,2.6,4.0,4.01,4.01 Service Pack 1,5,5.0,5.1,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

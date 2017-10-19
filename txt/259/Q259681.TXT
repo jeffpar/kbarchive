@@ -1,0 +1,65 @@
+DOCUMENT:Q259681  02-JUL-2001  [sms]
+TITLE   :SMS: Hardware Inventory Doesn't Capture Variables on Win9x
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0 SP2
+OPER/SYS:
+KEYWORDS:kbWBEM kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Some environment variables that are seen on a Microsoft Windows 95 or Microsoft
+Windows 98 client by a set command, are not reported during the hardware
+inventory cycle even though the Sms_def.mof file has been modified to do so.
+
+CAUSE
+=====
+
+Upon startup, Microsoft Windows Management Instrumentation (WMI) reads the
+global environment variables when it enumerates the Sms_def.mof. Any environment
+variables added after that time (such as through logon scripts), are not
+recognized because the Web-Based Enterprise Management (WBEM) does not requery
+the environment variables.
+
+WORKAROUND
+==========
+
+To work around this issue, you need to set environment variables prior to the
+start of WMI, such as in the Autoexec.bat file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbWBEM kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200SP2
+Version           : winnt:2.0 SP2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

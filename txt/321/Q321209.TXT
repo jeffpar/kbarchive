@@ -1,0 +1,64 @@
+DOCUMENT:Q321209  07-MAY-2002  [winnt]
+TITLE   :PRB: Start Menu Hangs When You Install File-Monitoring Utilities
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0 SP6
+OPER/SYS:
+KEYWORDS:kbIFS kbDSupport kbGrpDSNTDDK
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 SP6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install certain file-monitoring utilities, such as antivirus software,
+on a Windows NT 4.0 Service Pack 6 (SP6)-based computer, the Start menu may stop
+responding (hang).
+
+CAUSE
+=====
+
+The Start menu includes link files (.lnk) that act as shortcuts to programs.
+Some file-scanning programs may try to set the Last Access Time (LAT) of those
+.lnk files, which causes the Start menu to stop responding.
+
+RESOLUTION
+==========
+
+To resolve this issue, turn off .lnk file scanning in the program or utility in
+question, if possible. Or, you can disable the LAT feature. If these workarounds
+are not suitable, consider upgrading to a later version of Microsoft Windows
+because this behavior is probably caused by a limitation in Windows NT 4.0.
+
+STATUS
+======
+
+This is a known issue.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbIFS kbDSupport kbGrpDSNTDDK 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400search kbWinNT400search kbWinNTW400sp6
+Version           : :4.0 SP6
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

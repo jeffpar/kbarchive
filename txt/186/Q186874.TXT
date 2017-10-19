@@ -1,0 +1,69 @@
+DOCUMENT:Q186874  09-AUG-2001  [winnt]
+TITLE   :Using NWConv to Migrate Users That Already Exist in Windows NT
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use the Migration Tool for NetWare (NWConv.exe) to migrate users that
+already exists in the Windows NT account database from Novell NetWare to Windows
+NT, changes to group memberships are merged during the migration instead of
+being replaced. This occurs even though the Overwrite with New Info option is
+selected.
+
+CAUSE
+=====
+
+The "Overwrite with New Info" option does not properly overwrite existing group
+memberships.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0.
+
+MORE INFORMATION
+================
+
+The "Overwrite with New Info" option properly overwrites other user- specific
+properties that are migrated, including logon hours and security on files and
+directories. However, if no user-specific rights exist on a file or directory on
+the NetWare server, after migration the Windows NT rights for that file or
+directory are preserved. Security settings on files or directories are only
+overwritten when the file or directory exists on both servers for the specified
+user.
+
+Additional query words: NWCONV Migrate convert
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

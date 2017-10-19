@@ -1,0 +1,71 @@
+DOCUMENT:Q189135  09-AUG-2001  [winnt]
+TITLE   :Err Msg: You Cannot Save While the File Is in Use by Another...
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:4.3,6.0; WINNT:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you modify a mail merge data source file that is located on a Windows NT
+shared network drive using Microsoft Word version 6.0, you may receive the
+following prompt when you attempt to save the file:
+
+   <Maindoc>.doc is a mail merge main document that is attached to a
+   data source datasrc.doc that has not been saved. Do you want to save
+   <datasource>.doc?
+
+When you click Yes, you may receive the following error message:
+
+   You cannot save while the file is in use by another process. Try saving
+   the file with a new name. (X:\datasrc.doc).
+
+This behavior does not occur if you save the document to your local hard disk.
+
+RESOLUTION
+==========
+
+To work around this issue, use either of the following methods:
+
+ - Save the mail merge data source file to your local hard disk.
+
+ - Upgrade to Microsoft Word 97 for Windows or Microsoft Office 97 for Windows.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word version 6.0 and
+Windows NT version 4.0
+
+Additional query words: tools main
+
+======================================================================
+Keywords          : kberrmsg kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WINDOWS:4.3,6.0; WINNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

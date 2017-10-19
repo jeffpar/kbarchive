@@ -1,0 +1,55 @@
+DOCUMENT:Q86157  20-NOV-1999  [pcmail]
+TITLE   :PROFS: How to Stop the Gateway If It Is "Looping"
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to IBM PROFS and OfficeVision, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If the Microsoft Mail gateway appears to be in an infinite loop, and no mail is
+getting through in either direction, then you should stop and restart the
+gateway.
+
+The only way to stop the VM side of the gateway is by typing HX. This is short
+for Halt eXecution, and is used to stop any VM/CMS program. If the gateway is
+looping, you may have to type HX <CR> (type HX and press ENTER) several
+times before the gateway stops.
+
+At the CMS prompt, you should check the gateway VM ID's reader for any files that
+could not be processed and were causing the looping. These files should be
+deleted or returned to the originator.
+
+To restart the gateway, type IPL CMS and press ENTER.
+
+
+Additional query words: 3.20 pcmail profsvm
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateIBMPROFS320
+Version           : :3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

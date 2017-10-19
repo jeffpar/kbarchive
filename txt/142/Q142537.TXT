@@ -1,0 +1,92 @@
+DOCUMENT:Q142537  16-JUN-2001  [msnetwork]
+TITLE   :Remember Password Option Is Unavailable
+PRODUCT :The Microsoft Network
+PROD/VER::2.6,5.0,5.1,5.2,95,98,98 Second Edition
+OPER/SYS:
+KEYWORDS:kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.6, 5.0, 5.1, 5.2 
+ - the operating system: Microsoft Windows 95 
+ - the operating system: Microsoft Windows 98 
+ - the operating system: Microsoft Windows 98 Second Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to connect to MSN, The Microsoft Network, the "Remember
+Password" option on the Sign In screen is unavailable.
+
+CAUSE
+=====
+
+The "Remember Password" option is available only if you have Client for
+Microsoft Networks installed or if you have a password set up for Microsoft
+Windows 95 or Windows 98.
+
+RESOLUTION
+==========
+
+To install Client for Microsoft networks 
+----------------------------------------
+
+1. Click Start, go to Settings, and then click Control Panel.
+
+2. In Control Panel, double-click Network.
+
+3. Click Add, click Client, and then click Add.
+
+4. Under Manufacturer click Microsoft and under Network Clients click Client for
+   Microsoft networks.
+
+5. Click Ok and restart your computer.
+
+6. When Windows prompts for a username and password, in the Username box type
+   your MSN username, leave the Password box empty, and then click Ok.
+
+7. When Windows prompts to confirm the entry, leave the Password box empty again
+   and click Ok.
+
+To create a blank password for
+Windows:
+---------------------------------------
+
+1. Click Start, go to Settings, and then click Control Panel.
+
+2. In Control Panel, double-click Passwords.
+
+3. On the Change Passwords tab, click Change Windows Password, and then click
+   OK.
+
+4. Leave all the boxes blank, and then click OK.
+
+5. Close Control Panel, click OK until you return to Windows, and then restart
+   your computer.
+
+Additional query words: password kbimu
+
+======================================================================
+Keywords          : kbmsn 
+Technology        : kbOSWin98 kbOSWin95 kbOSWin98SE kbOSWinSearch kbMSNSearch kbMSN520 kbMSN510 kbMSN500 kbMSN260
+Version           : :2.6,5.0,5.1,5.2,95,98,98 Second Edition
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

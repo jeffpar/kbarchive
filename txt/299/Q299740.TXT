@@ -1,0 +1,81 @@
+DOCUMENT:Q299740  25-JUN-2001  [homegame]
+TITLE   :Train Simulator: Keyboard Stops Responding
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Train Simulator, version 1.0, used with:
+    - the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are running Microsoft Train Simulator, the keyboard may stop
+responding.
+
+CAUSE
+=====
+
+This behavior can occur if DirectX has become corrupted.
+
+RESOLUTION
+==========
+
+There are two possible resolutions to this issue. The first is to install
+DirectX 8.0a. DirectX 8.0a is on the Microsoft Train Simulator installation CD.
+Use the following steps:
+
+1. Insert the installation CD into the CD-ROM drive. Press and hold the SHIFT
+   key to prevent the program from starting.
+
+2. Double-click My Computer.
+
+3. Right-click the letter of the drive that has the installation CD, and then
+   click Install DirectX 8.0a.
+
+4. Follow the prompts.
+
+If installing DirectX 8.0a does not help, work around this issue by pressing
+ALT+TAB to minimize the screen, and then pressing ALT+TAB again to maximize the
+screen.
+
+The second resolution is to download and install the latest version of DirectX
+from the following Microsoft Web site:
+
+   http://www.microsoft.com/directx/homeuser/downloads/default.asp
+
+For additional information about how to obtain and install the latest version of
+DirectX, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q179113 How to Download and Install DirectX
+
+Additional query words: msgame trainsim
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch kbGamesSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

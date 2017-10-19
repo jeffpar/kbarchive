@@ -1,0 +1,68 @@
+DOCUMENT:Q117891  24-MAY-2001  [homemm]
+TITLE   :Cinemania/Encarta: Installation Hangs on Macintosh Performa
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Cinemania for the Macintosh 1994 edition 
+ - Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you install Cinemania or Encarta on a Macintosh Performa, your computer may
+stop responding (hang) when you click the Restart button in the "Installation
+Successful" dialog box. This problem can occur if you are using version 7.1P5 or
+earlier of the Performa System software.
+
+This is a known problem with versions 7.1P5 and earlier of the Performa System
+software.
+
+NOTE: You do not need to reinstall the application if your machine hangs when you
+click Restart. The application is already successfully installed before the
+machine hangs.
+
+RESOLUTION
+==========
+
+To avoid this problem, do one of the following before installing Cinemania or
+Encarta:
+
+ - Upgrade to version 7.1P6 or newer of the Performa System software.
+
+   -or-
+
+ - Restart your Macintosh with all extensions turned off except for the CD-ROM
+   extensions.
+
+NOTE: To restart your Macintosh after it has hung, turn it off via the power
+switch, wait 10 to 15 seconds, and then restart it.
+
+Additional query words: mac 1994 multi media multimedia multi-media setup lock crash movies films
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbCineManiaSearch kbCinemania1994Mac kbEncartaEnCyc1994
+Version           : :1994 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

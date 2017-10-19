@@ -1,0 +1,50 @@
+DOCUMENT:Q184436  13-OCT-1999  [msnetwork]
+TITLE   :Removal of Connection Manager Is Not Confirmed
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.5
+OPER/SYS:
+KEYWORDS:kbsetup kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you remove Connection Manager using the Add/Remove Programs tool in Control
+Panel, the removal of Connection Manager is not confirmed.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MSN, The Microsoft Network,
+version 2.5.
+
+Additional query words: msnet msnetwork microsoft-net m.s.n.
+
+======================================================================
+Keywords          : kbsetup kbmsn 
+Technology        : kbMSNSearch kbMSN250
+Version           : WINDOWS:2.5
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

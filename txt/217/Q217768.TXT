@@ -1,0 +1,86 @@
+DOCUMENT:Q217768  07-NOV-1999  [exchange]
+TITLE   :XADM: Storage Warnings Incomplete for Swedish Clients
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5,5.5 SP1,5.5 SP2
+OPER/SYS:
+KEYWORDS:exc55 exc55sp1 exc55sp2 EXC55SP3Fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 5.5 SP1, 5.5 SP2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you use English versions of either Microsoft Outlook or the Exchange Client,
+you may receive a message if you have exceeded your mailbox limit. An excerpt of
+this message is shown below:
+
+   Your mailbox has exceeded one or more size limits set by your administrator.
+   Your mailbox size is xxx KB.
+
+This message is localized for the Swedish Exchange Client and Outlook. However,
+the line containing the size of the mailbox is missing from the Swedish version.
+
+CAUSE
+=====
+
+The localized version of the Mdbsz.dll file did not have the correct information
+to display this information.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q191014 XGEN: How to Obtain the latest Exchange Server 5.5 Service Pack
+
+The English version of this fix should have the following file attributes or
+later:
+
+Component: Information Store
+
++------------------------+
+| File name | Version    | 
++------------------------+
+| Mdbsz.dll | 5.5.2539.0 | 
++------------------------+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This problem was first corrected in
+Exchange Server 5.5 Service Pack 3.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 exc55sp1 exc55sp2 EXC55SP3Fix 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange550SP1 kbExchange550SP2
+Version           : winnt:5.5,5.5 SP1,5.5 SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

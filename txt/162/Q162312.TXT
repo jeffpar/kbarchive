@@ -1,0 +1,76 @@
+DOCUMENT:Q162312  08-NOV-2001  [frontpg]
+TITLE   :FP: Images Not Saved to Web Aren't Loaded
+PRODUCT :Word Front Page
+PROD/VER:windows:97; macintosh:1.0
+OPER/SYS:
+KEYWORDS:kbgraphic kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage for the Macintosh, version 1.0 
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you browse a page using a Web browser or open a page in FrontPage Editor,
+the image does not load.
+
+CAUSE
+=====
+
+The image does not load if you clicked No in the "Save Image to FrontPage Web"
+dialog box that appears when you save your page. The IMG SRC tag contains a path
+to the location--usually the same folder as the rest or your Web content--where
+the image would have been saved if you clicked Yes in the "Save Image to
+FrontPage Web" dialog box. Since the image is not stored in this location, the
+image is not loaded when you load the page in a Web browser or when you open the
+page in FrontPage Editor.
+
+RESOLUTION
+==========
+
+Click Yes or Yes To All in the "Save Image to FrontPage Web" dialog box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+By default, FrontPage prompts you to save images in the same directory where you
+save your Web page. If you specify a different location for the image than you
+specify for the page, FrontPage Editor will suggest the new directory the next
+time you save a page that includes a new image.
+
+
+Additional query words: 97 front page broken links
+
+======================================================================
+Keywords          : kbgraphic kbusage kbdta 
+Technology        : kbHWMAC kbOSMAC kbFrontPageSearch kbZNotKeyword8 kbZNotKeyword kbFrontPage97Search kbFrontPageMac kbZNotKeyword3
+Version           : windows:97; macintosh:1.0
+Hardware          : MAC x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

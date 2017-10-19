@@ -1,0 +1,95 @@
+DOCUMENT:Q205402  07-MAY-2001  [visualc]
+TITLE   :FIX: ClassView Doesn't Show Derived Classes in Embedded Namespac
+PRODUCT :Microsoft C Compiler
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbClassView kbide kbVC500bug kbVC600fix kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The ClassView pane doesn't display a class that is in an embedded namespace if
+it inherits from another class that is defined in the outer namespace.
+
+RESOLUTION
+==========
+
+Use a typedef statement to create an alias for the class name in the outer
+namespace, and then derive from it.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This bug was corrected in Microsoft
+Visual C++ 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Add the following code to a C++ source or header file:
+
+   namespace A
+   {
+      class ClassA
+      {
+      public:
+         ClassA() {}
+      };
+
+      // Create an alias for the outer class.
+      typedef A::ClassA A_ClassA;
+
+      namespace B
+      {
+         // This class is not displayed in ClassView.
+         class ClassB1 : public A::ClassA
+         {
+         public:
+            ClassB1() {}
+         };
+
+         // This class is displayed in ClassView.
+         class ClassB2 : public A_ClassA
+         {
+         public:
+            ClassB2() {}
+         };
+      } // namespace B
+   } // namespace A
+
+Additional query words:
+
+======================================================================
+Keywords          : kbClassView kbide kbVC500bug kbVC600fix kbGrpDSTools 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : :5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

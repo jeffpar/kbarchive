@@ -1,0 +1,73 @@
+DOCUMENT:Q139455  17-DEC-2000  [win95x]
+TITLE   :Obtaining the Designed For Microsoft Windows 95 Catalog
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Designed For Microsoft Windows 95 Product Catalog is currently available on
+the Microsoft World Wide Web site located at:
+
+   http://www.microsoft.com
+
+This catalog contains a list of products that have received the Designed For
+Windows 95 logo. It also contains information about the requirements that must
+be met for a product to receive the logo, and about how vendors can apply for
+the logo to appear on their products.
+
+MORE INFORMATION
+================
+
+The Designed For Microsoft Windows 95 Product Catalog contains a list of
+hardware and software products that have received the Designed For Windows 95
+logo. This logo indicates that the product is completely compatible with Windows
+95, and is designed to take advantage of the features and advanced technology
+built into Windows 95.
+
+To receive the Designed For Microsoft Windows 95 logo, software products must be
+32-bit Windows-based programs. They must also feature the enhanced user
+interface of Windows 95, support for long file names, automated installation,
+and uninstall capability. Hardware products that receive the Designed For
+Microsoft Windows 95 logo must support Plug and Play in Windows 95.
+
+For information about receiving the Designed For Windows 95 logo for your
+product, see the following Microsoft Web page:
+
+   http://www.microsoft.com/windows95/info/hardwareshow.htm
+
+To view a list of Designed For Windows 95 products, see the following article in
+the Microsoft Knowledge Base to access the Windows 95 Software Compatibility
+List:
+
+   Q136660 Windows 95 Software Compatibility List
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

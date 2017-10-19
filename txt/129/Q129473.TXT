@@ -1,0 +1,65 @@
+DOCUMENT:Q129473  21-OCT-2000  [homemm]
+TITLE   :500 Nations: Copy Picture Not Working in Picture Gallery
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:win31kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft 500 Nations, version 1.0, on platform(s):
+    - the operating system: Microsoft Windows NT, on platform(s):
+       - the operating system: Microsoft Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you copy pictures from the Picture Gallery in Microsoft 500 Nations, the
+image does not paste correctly into Microsoft Windows Write and other
+applications that do not support palette control.
+
+RESOLUTION
+==========
+
+Pictures copied from Picture Gallery need to be pasted into an application that
+understands color palettes (such as Microsoft Word for Windows or Windows 95
+Paint). To use the Picture Gallery, choose the Options menu in 500 Nations.
+
+MORE INFORMATION
+================
+
+The following text is included in the 500 Nations README.TXT under the section
+titled printing and copying:
+
+   If you copy a picture from 500 Nations, and paste it into another Windows
+   application, you may encounter palette problems (the picture will have
+   incorrect colors). This is because some Windows applications (like Write and
+   Paintbrush) don't support full color palette control. For example, you can
+   get a correct color image by pasting into an application that supports color
+   control such as Paint in Windows 95, or Microsoft Word for Windows.
+
+Additional query words: 1.0multi media multimedia multi-media mmtitles kbmm copied poor quality ugly bad dithered dither
+
+======================================================================
+Keywords          : win31 kbfaq
+Technology        : kbHomeProdSearch
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

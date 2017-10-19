@@ -1,0 +1,59 @@
+DOCUMENT:Q112256  09-NOV-1999  [macmail]
+TITLE   :CONN: MACGATE Err Msg: Exiting...with Status 66
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER::1.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Connection Gateway, version 1.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+MACGATE.EXE closes and the following error message appears in the MSGATE.LOG
+file on the workstation running MACGATE:
+
+   exiting on <date> <time> with status 66 (118)
+
+CAUSE
+=====
+
+For versions 3.0 and 3.2 of Microsoft Mail for PC Networks, MS-DOS workstation,
+you have two options for signing into Mail: use the mailbox name or the full
+name given to the account. This error occurs if the MSGATE.INI file contains the
+account's full name.
+
+RESOLUTION
+==========
+
+In the MSGATE.INI file, change the USER= line to the mailbox name of the Mail
+account and verify the password to the mailbox account.
+
+
+Additional query words: 1.00b MacGate 118
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailConn100b
+Version           : :1.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

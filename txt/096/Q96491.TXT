@@ -1,0 +1,238 @@
+DOCUMENT:Q96491  21-NOV-1999  [msdos]
+TITLE   :OS2.TXT: Microsoft MS-DOS 6 Upgrade, 6.2 Upgrade, and Step-Up
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information was taken from the OS2.TXT file. The same file is
+included with MS-DOS 6 Upgrade, MS-DOS 6.2 Upgrade, MS-DOS 6.21 Upgrade, and
+MS-DOS 6.22 Upgrade
+
+OS2.TXT
+-------
+
+NOTES ON UPGRADING TO MS-DOS 6
+------------------------------
+
+If you have OS/2 on your computer, and the MICROSOFT MS-DOS 6 USER'S GUIDE
+referred you to the OS2.TXT file, carry out the following procedure that
+corresponds to your computer's configuration.
+
+If You Have Neither OS/2 Dual Boot Nor OS/2 Boot Manager
+--------------------------------------------------------
+
+If you want to remove OS/2 from your computer but want to save the data on your
+hard disk first, carry out the following procedure:
+
+To remove OS/2 and save the data on your computer:
+
+1. Restart your computer using OS/2.
+
+2. Back up the data files you want to keep onto floppy disks by using the COPY
+   command.
+
+   CAUTION: Do not remove OS/2 system files from your hard disk.
+
+3. Reinsert Setup Disk 1 in drive A (the startup drive).
+
+4. Restart your computer by pressing CTRL+ALT+DEL.
+
+5. When Setup displays the screen about a non-MS-DOS partition or non-MS-DOS
+   files, choose to remove the partition or files.
+
+6. After you finish setting up MS-DOS, copy the data files you saved in step 2
+   from the floppy disks back to your hard disk.
+
+If You Have OS/2 Dual Boot with DOS or OS/2 Boot Manager
+
+with DOS
+--------
+
+When Setup detects OS/2, it displays a "Non-MS-DOS Partition Detected" or "OS/2
+Files Detected" screen. If Setup displayed the "Non-MS-DOS Partition Detected"
+screen, carry out Procedure 1. If Setup displayed the "OS/2 Files Detected"
+screen, carry out Procedure 2.
+
+Procedure 1 To remove OS/2 and save the data on your computer:
+
+1. When Setup displays the "Non-MS-DOS Partition Detected" screen, choose the
+   "Continue Setup" option.
+
+2. After you set up MS-DOS 6, make sure you can access your hard disk.
+
+3. Back up the data files you want to keep onto floppy disks or a network drive.
+
+4. See "Using Fdisk to Configure Your Hard Disk" in the chapter "Diagnosing and
+   Solving Problems," and carry out all the procedures that appear in the
+   following sections:
+
+    - "Making a Startup Disk"
+
+    - "Using Fdisk"
+
+    - "Deleting Non-MS-DOS Partitions"
+
+    - "Deleting Logical Drives"
+
+    - "Deleting an Extended MS-DOS Partition"
+
+    - "Creating a Primary MS-DOS Partition"
+
+    - "Formatting Your Hard Disk"
+
+5. Restart Setup. To do so, insert Setup Disk 1 in drive A or drive B, and then
+   type the following at the command prompt:
+
+   " A:SETUP " (without the quotation marks)
+
+   -or-
+
+   " B:SETUP " (without the quotation marks)
+
+6. After you configure your hard disk, copy the files you saved in step 3 back
+   to the disk.
+
+Procedure 2 To remove OS/2 and save the data on your computer:
+
+NOTE: If you have a version of OS/2 other than version 2.0, the names of the OS/2
+files and directories on your hard disk may differ from those that appear in
+this procedure.
+
+CAUTION: Do not remove MS-DOS program files from your computer.
+
+1. Back up the data files you want to keep onto floppy disks or a network drive.
+
+2. If your Setup disks are compatible with drive A, insert Setup Disk 1 in drive
+   A, and then restart your computer by pressing CTRL+ALT+DEL. After Setup
+   displays the first screen, press F3 twice to quit Setup.
+
+   If your Setup disks are not compatible with drive A, create a startup disk for
+   drive A. To do so, insert Setup Disk 1 in drive B, and then type the
+   following at the command prompt:
+
+   " B:SETUP /F " (without the quotation marks)
+
+   When prompted, choose to install MS-DOS on the floppy disk in drive A. After
+   Setup is finished, leave the startup disk in drive A, and then restart your
+   computer by pressing CTRL+ALT+DEL.
+
+3. Make drive C current by typing the following at the command prompt:
+
+   " C: " (without the quotation marks)
+
+4. One by one, make each of the OS/2 directories and subdirectories current by
+   using the CD command, and then delete all the files in them by using the DEL
+   command. For example, to make the SYSTEM subdirectory in the OS2 directory
+   current and delete all the files in it, type the following at the command
+   prompt:
+
+   " CD \OS2\SYSTEM
+   DEL *.* " (without the quotation marks)
+
+5. After you have deleted all files in these subdirectories, delete the
+   subdirectories by using the RD command. For example, to delete the SYSTEM
+   subdirectory in the OS2 directory on drive C, type:
+
+   " RD C:\OS2\SYSTEM " (without the quotation marks)
+
+6. After you have deleted all subdirectories in the OS2, PSFONTS, SPOOL,
+   NOWHERE, and OS!2_2.0_D directories, delete all files in these directories by
+   using the DEL command.
+
+7. Delete the OS2, PSFONTS, SPOOL, NOWHERE, and OS!2_2.0_D directories by using
+   the RD command.
+
+8. Move to another disk or directory all the OS/2 files in your root directory
+   except the following:
+
+       EA DATA.SF
+       OS2lDR.MSG
+       OS2lDR
+       OS2KRNl
+       OS2BOOT
+       WP DATA. SF
+
+9. Change to the root directory by typing the following at the command prompt:
+
+   " CD\ " (without the quotation marks)
+
+10. Change the attributes of the five files listed in step 8 by typing the
+   following at the command prompt:
+
+   " A:\ATTRIB -H -S -R C:\E*.*
+   A:\ATTRIB -H -S -R C:\O*.*
+   A:\ATTRIB -H -S -R C:\W*.* " (without the quotation marks)
+
+11. Delete the files whose attributes you changed by typing the following at the
+   command prompt:
+
+   " DEL E*.*
+   DEL O*.*
+   DEL W*.* " (without the quotation marks)
+
+12. Return to the root directory the files that you moved in step 8.
+
+13. Remove disks from all floppy disk drives, and then restart your computer by
+   pressing CTRL+ALT+DEL.
+
+14. Insert Setup Disk 1 in drive A or drive B.
+
+15. Run Setup again by typing the following at the command prompt:
+
+   " A:SETUP " (without the quotation marks)
+
+   -or-
+
+   " B:SETUP " (without the quotation marks)
+
+If You Have OS/2 Boot Manager Without DOS
+-----------------------------------------
+
+To remove OS/2 and save the data on your hard disk:
+
+1. Back up the data files you want to keep onto floppy disks or a network drive
+   by using the COPY command.
+
+2. Reinsert Setup Disk 1 in drive A (the startup drive).
+
+3. Restart your computer by pressing CTRL+ALT+DEL.
+
+4. When Setup displays the screen about OS/2 or non- MS-DOS files, choose to
+   remove OS/2 or the files.
+
+5. After you finish setting up MS-DOS, copy the data files you saved in step 1
+   back to your hard disk.
+
+Additional query words: 6.00 6.20 stepup busetup.exe
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

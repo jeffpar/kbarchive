@@ -1,0 +1,58 @@
+DOCUMENT:Q141949  08-FEB-2000  [foxpro]
+TITLE   :Changes in the SYS(0) Function in Visual FoxPro
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In earlier versions of FoxPro, the SYS(0) function returned a name from the
+network such as the UserName from Novell. Many developers used this function to
+determine the login of the user, to keep track of who had which files open, and
+so on.
+
+In Visual FoxPro, the SYS(0) function does not look to the network. It may return
+all pound signs or it may return an unexpected name, depending on how Windows is
+set up.
+
+In Visual FoxPro 3.0, SYS(0) returns information from the Windows configuration
+files. In Windows for Workgroups, it returns the ComputerName and UserName from
+the [Network] section of the System.ini file. In Windows 95, it returns the
+ComputerName and what seems to be the first login name from the Registry. (In
+other words, if you logged into two different servers with two different login
+IDs, Sys(0) would only return the first one.)
+
+This behavior is by design, in order to make the function more compatible with a
+larger number of networks.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

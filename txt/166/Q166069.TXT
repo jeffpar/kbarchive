@@ -1,0 +1,79 @@
+DOCUMENT:Q166069  07-SEP-2001  [word97]
+TITLE   :WV: Document Properties Blank When Printed from Word Viewer
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbprint kbdta kbviewer word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word Viewer 97-2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Word Viewer 97-2000, if you select the option to include the
+document properties when you print the document, the document properties print
+out blank when you print the document.
+
+WORKAROUND
+==========
+
+To work around this problem, print a screen shot of the Document Properties
+dialog box by following these steps:
+
+1. On the File menu, click Summary Info.
+
+2. Click the Statistics button.
+
+3. Press ALT+PRINT SCRN on your keyboard to copy the picture of the dialog box
+   to the Clipboard.
+
+4. Start Microsoft Paint.
+
+5. On the Edit menu in Microsoft Paint, click Paste.
+
+6. Print the picture from Paint.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+REFERENCES
+==========
+
+For more information about Word Viewer 97-2000, please see the following
+Knowledge Base article:
+
+   
+
+   Q165908 WV: How to Obtain Microsoft Word Viewers
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprint kbdta kbviewer word97 
+Technology        : kbWordViewerSearch kbViewerSearch kbWordViewer97
+Version           : WINDOWS:
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

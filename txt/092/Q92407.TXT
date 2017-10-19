@@ -1,0 +1,144 @@
+DOCUMENT:Q92407  19-FEB-2002  [win16ddk]
+TITLE   :API Translation Buffers in Enhanced Mode Windows
+PRODUCT :Microsoft Windows Device Driver Kit
+PROD/VER::3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Device Development Kit (DDK) for Windows, version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Because enhanced mode Windows provides an extended MS-DOS environment, at times
+it may invoke system code running in real mode or even V86 mode. This article
+describes the process that Windows employs to pass protected mode data to
+V86-mode addressable areas, and discusses some potential problems arising from
+this scheme.
+
+MORE INFORMATION
+================
+
+Data that resides outside of the V86-addressable area must be copied into the
+affected VMs virtual 1 megabyte (MB) space to be accessible by code running in
+V86 mode. Enhanced mode Windows (to be more precise, the V86 memory manager
+virtual device driver) provides two possibilities to do this: local API
+translation buffers (accessible via the V86MMGR_Allocate_Buffer and
+V86MMGR_Free_Buffer services) and global API translation buffers. This article
+focuses on the global API translation buffers.
+
+At initialization time, virtual device drivers (VxDs) may ask enhanced mode
+Windows to set up a global API translation buffer (APITB) via the
+V86MMGR_Set_Mapping_Info service call, passing in a required (minimum) and a
+desired (maximum) buffer size. As a result, Windows allocates one global APITB
+in the corresponding address locations of all virtual machines (VMs) according
+to the following algorithm:
+
+The APITB is always aligned on 4K boundaries and is a multiple of 4K. It is never
+smaller than the largest minimum size requested by all VxDs and never larger
+than the largest maximum size requested. Unless the user sets
+"ReservePageFrame=yes" in SYSTEM.INI, Windows attempts to allocate the APITB in
+the 384K adapter segment; if necessary, Windows will shrink it to the minimum
+size. If there is no space in the 384K adapter segment, the APITB will be
+allocated in conventional memory.
+
+Thus, in a sense, the term "global" has two meanings: It means that the buffer is
+visible to all virtual machines and that the buffer is being shared by all VxDs.
+Although any VxD can request participation in the APITB, participation should be
+restricted to VxDs that need to provide access to it asynchronously. The
+swap-file virtual device, as well as most network protocol virtual devices (such
+as the virtual NetBIOS device), utilize the APITB. Because (asynchronous)
+hardware interrupts from the hard disk as well as the network can be reflected
+into any VM, the translation buffer accessed by these virtual devices must be
+global to all VMs.
+
+In the case of the virtual NetBIOS device, the NetHeapSize= parameter in
+SYSTEM.INI is used to determine the APITB size that the virtual NetBIOS device
+requests from Windows.
+
+Note that the APITB is nothing more than a reserved area in the corresponding
+memory locations of all virtual machines. A virtual device driver claims parts
+of the buffer by submitting a V86MMGR_Map_Pages call and releases it by calling
+the V86MMGR_Free_Map_Page_Region service. When portions of the APITB are being
+claimed, Windows flags these portions as unusable for other VxDs and maps
+physical pages into those portions. Any request for buffer usage will be 4K
+aligned; that is, the memory manager will always claim multiples of 4K from the
+APITB, regardless of the actual size of the request.
+
+This poses a potential problem with virtual device drivers that claim portions of
+the APITB for unpredictable amounts of time. For example, the virtual NetBIOS
+device claims a portion of the APITB when an asynchronous NetBIOS request is
+being submitted from a protected mode VM and releases it when the callback
+routine associated with the NetBIOS request is invoked. Under heavy
+network-traffic conditions, one NetBIOS request may cause a new portion of the
+APITB to be allocated while another request is pending; this process may cause
+the APITB to become fragmented, thus failing bigger NetBIOS calls although the
+overall number of pages available in the APITB may be enough to satisfy the
+request (the V86MMGR always looks for a contiguous number of pages to satisfy a
+buffer claim request and does not compact memory within the APITB). That
+scenario may cause the following problem to appear:
+
+Although the NetHeapSize parameter in SYSTEM.INI is sufficiently large, a full
+screen message with the following contents pops up:
+
+   This application requires a larger buffer for transferring information over
+   the network. You can increase the buffer size by modifying the NetHeapSize
+   setting in your SYSTEM.INI file. Include or modify the following setting in
+   the [386Enh] section in your SYSTEM.INI file: NetHeapSize=<suggested new
+   value>
+
+   If the NetHeapSize value is still too low, this message will appear again,
+   suggesting a new value.
+
+In pathologic cases, this may happen repeatedly, even if the NetHeapSize
+parameter is set to a value significantly higher than the maximum size needed.
+
+To resolve this problem, you should either limit all NetBIOS requests to NCBs
+smaller than 4K so that fragmentation does not become an issue, or make sure
+that all pending NetBIOS requests have completed before submitting a larger
+NetBIOS request.
+
+The NetAsynchFallback= entry in SYSTEM.INI allows applications to bypass the
+global APITB and work on a local APITB. This forces calls originating in real
+mode to be synchronous, but if the call orginates in protected mode,
+NetAsynchFallback has no effect; it does not transform the call to synchronous.
+There is no method for forcing everything to be synchronous.
+
+The NoWaitNetIO option in the [386enh] section of SYSTEM.INI can be set to
+translate everything from synchronous to asynchronous. If this option is set to
+"=OFF", which is the default, requests will not be translated. If it is set to
+"=ON", all synchronous requests will be translated to asynchronous requests.
+
+REFERENCES
+==========
+
+Please refer to the application note WW0335 (Windows memory management) for
+related information.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWinDDKSearch kbWinDDK310
+Version           : :3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,75 @@
+DOCUMENT:Q183236  31-JUL-2001  [sms]
+TITLE   :SMS: Can't Delete Systems Jobs That Are in a Pending State
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbDatabase smsdatabase
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the Jobs window, System jobs may remain in a Pending state. If you attempt to
+delete them, the following error message occurs:
+
+   Couldn't delete the specified item.
+   <job id>
+
+CAUSE
+=====
+
+This problem can occur when the SQL Server transaction log used by the Systems
+Management Server database becomes full.
+
+WORKAROUND
+==========
+
+Before deleting the pending system jobs, first correct the problem with the
+transaction log and ensure that a backup has been made of the SMS database.
+
+To delete these jobs, use a SQL Server query. To do this, perform the following
+steps:
+
+1. Use ISQL/w to execute the following SQL Server query:
+
+   Select * from Jobs where JobType = null
+
+2. Verify that the jobs listed are all "Pending" system jobs. If necessary, you
+   can print the list of job IDs and compare the list in the Systems Management
+   Server Administrator program.
+
+3. Execute the following query to delete the jobs:
+
+   Delete from Jobs where JobType = null
+
+This procedure should remove all of the system jobs that have a Pending state.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbDatabase smsdatabase 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

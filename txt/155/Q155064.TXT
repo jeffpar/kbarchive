@@ -1,0 +1,67 @@
+DOCUMENT:Q155064  16-APR-2000  [powerpt]
+TITLE   :PPT: Information About PointPlus
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:4.0,7.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+ - Microsoft PowerPoint for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+PointPlus is a Web authoring tool created by Net-Scene to convert PowerPoint
+presentations to Internet animations. This is not a Microsoft product and is not
+supported by Microsoft. To obtain support for this product, please contact
+Net-Scene:
+
+   Net-Scene
+   Merkazim Building
+   32 Maskit Street
+   P.O. Box 12394
+   Herzliya, 46733
+   Israel
+
+   Phone: +972-9-558260
+   Fax: +972-9-558262
+   e-mail: info@net-scene.co.il
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: netscape internet explorer maker viewer ppt powerpt powerpnt ppt95
+
+======================================================================
+Keywords          : kb3rdparty kbdta 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search kbPowerPt400
+Version           : WINDOWS:4.0,7.0
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,64 @@
+DOCUMENT:Q228951  31-JUL-1999  [homegame]
+TITLE   :Midtown Madness: Panoz GTR-1 Stops Abruptly when You Hop a Curb
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Midtown Madness, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you drive the Panoz GTR-1, you may experience the following symptoms when
+you attempt to hop a curb:
+
+ - If you hit the curb at a steep angle, the GTR-1 is damaged, and the vehicle
+   may stop unexpectedly.
+
+   NOTE: If you hit the curb at a speed of 50 miles-per-hour (MPH) or greater,
+   you may destroy the Panoz GTR-1.
+
+ - If you hit the curb at a shallow angle, the GTR-1 is slightly damaged, and
+   the vehicle may bounce off the curb and remain on the street.
+
+CAUSE
+=====
+
+This behavior occurs because the Panoz GTR-1 has an extremely low ground
+clearance and is not designed to handle street curbs and other large bumps.
+
+RESOLUTION
+==========
+
+To prevent this behavior from occurring, use crosswalk ramps to hop the curb, or
+drive only on the street.
+
+Additional query words: 1.00 midmad msgame
+
+======================================================================
+Keywords          : kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbMidtownMadSearch kbMidtownMadness
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

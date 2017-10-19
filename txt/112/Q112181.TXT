@@ -1,0 +1,214 @@
+DOCUMENT:Q112181  12-NOV-1999  [miscsdk]
+TITLE   :Changing the Style of Secondary Viewer Windows
+PRODUCT :Miscellaneous Software Development Kits
+PROD/VER::2.0,2.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Multimedia Viewer Publishing Toolkit, versions 2.0, 2.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to change the style of a secondary window in a Viewer
+title. Changing the style of a secondary window allows you to remove the
+minimize button, remove the caption bar, and so on. You must write a
+dynamic-link library (DLL) in C to change the style of a secondary window in a
+Viewer title.
+
+MORE INFORMATION
+================
+
+The style of Viewer's main window can be changed using the Windows
+SetWindowLong() function. The prototype for SetWindowLong() is
+
+   LONG SetWindowLong (HWND hwnd, int nOffset, LONG nVal)
+
+where hwnd is the handle of the secondary window, nOffset is the offset of the
+value to change, and nVal is the new value for the offset. Further documentation
+for the SetWindowLong() function can be found in the documentation for the
+Windows 3.1 Software Development Kit (SDK).
+
+Perform the following two steps to get the first parameter [which will be the
+handle (hwnd) to your secondary window]:
+
+1. Make sure that secondary window has the input focus. You can use the
+   FocusWindow() Viewer command to accomplish this.
+
+2. Use the Windows application programming interface (API) function GetParent()
+   to extract the correct handle from the hwndContext variable. The hwndContext
+   variable is documented on page 5-8 of the Microsoft Multimedia Viewer
+   "Technical Reference."
+
+   NOTE
+
+   : hwndContext is a 32-bit value. Therefore, you will need to use the LOWORD()
+   function to extract the 16-bit window handle. In your DLL, you should write
+   the following function:
+
+         HWND FAR PASCAL __export GetSecondaryHandle (DWORD hwnd)
+         {
+            return GetParent (LOWORD(hwnd));
+         }
+
+The second parameter, nOffset, should be set to -16 (which is the value of the
+Windows constant GWL_STYLE) to change the window style.
+
+The possible values for the third parameter, nVal, are combinations of the
+following:
+
+   WS_CLIPSIBLINGS      0x04000000
+   WS_CLIPCHILDREN      0x02000000
+   WS_VISIBLE           0x10000000
+   WS_DISABLED          0x08000000
+   WS_MINIMIZE          0x20000000
+   WS_MAXIMIZE          0x01000000
+   WS_CAPTION           0x00C00000
+   WS_BORDER            0x00800000
+   WS_DLGFRAME          0x00400000
+   WS_VSCROLL           0x00200000
+   WS_HSCROLL           0x00100000
+   WS_SYSMENU           0x00080000
+   WS_THICKFRAME        0x00040000
+   WS_MINIMIZEBOX       0x00020000
+   WS_MAXIMIZEBOX       0x00010000
+
+These values are combined simply by or'ing them together with the bitwise OR
+operator ("|"). Each call to SetWindowLong() completely replaces the previous
+styles for the window with the new styles specified in the nVal parameter.
+
+By default, the main Viewer window has the styles WS_VISIBLE, WS_CLIPSIBLINGS,
+WS_CLIPCHILDREN, WS_CAPTION, WS_SYSMENU, WS_THICKFRAME, WS_MINIMIZEBOX, and
+WS_MAXIMIZEBOX (that is, nVal=0x16CF0000).
+
+NOTE: Microsoft recommends that you always include the WS_VISIBLE,
+WS_CLIPSIBLINGS, and WS_CLIPCHILDREN styles in the new value. This means the
+value of nVal would always be at least 0x16000000.
+
+To use SetWindowLong() and GetSecondaryHandle() from Viewer, these functions must
+be registered in the [CONFIG] section of the .MVP file as follows
+
+      RegisterRoutine ("user", "SetWindowLong", "uiU")
+      RegisterRoutine ("mydll", "GetSecondaryHandle()", "u=U")
+
+where mydll is the name of your .DLL file.
+
+SetWindowLong() can then be called from anywhere within the title with
+GetSecondaryHandle(hwndContext) as the first parameter, -16 as the second
+parameter, and the appropriate new style value in the third parameter.
+
+To cause the main window frame to be redrawn immediately after the change to its
+style, you may need to call the Windows function SetWindowPos(), which is
+registered in the [CONFIG] section as follows:
+
+      RegisterRoutine ("user", "SetWindowPos", "uuiiiiu")
+
+SetWindowPos() can then be called from anywhere within the title as follows:
+
+      SetWindowPos (GetSecondaryHandle (hwndContext), 0, 0, 0, 0, 0, 39)
+
+NOTE: The SetWindowPos() call above is equivalent to the following function call
+using the Windows constants defined in the WINDOWS.H header file from the
+Windows SDK:
+
+      SetWindowPos (hwndApp, 0, 0, 0, 0, 0,  SWP_DRAWFRAME  |
+                                             SWP_NOMOVE     |
+                                             SWP_NOSIZE     |
+                                             SWP_NOZORDER)
+
+Sample
+------
+
+To use a topic entry command to remove the maximize box from a secondary window
+called MyWindow, the SetWindowLong() call in the topic entry command code
+resembles the following:
+
+      FocusWindow (MyWindow);
+      SetWindowLong (GetSecondaryHandle (hwndContext), -16, 0x16CE0000);
+      SetWindowPos (GetSecondaryHandle (hwndContext), 0, 0, 0, 0, 0, 39);
+
+Style Reference
+---------------
+
+The following list describes the styles mentioned above:
+
+WS_BORDER         Creates a window that has a border.
+
+WS_CAPTION        Creates a window that has a title bar (implies the
+                  WS_BORDER style). This style cannot be used with the
+                  WS_DLGFRAME style.
+
+WS_CLIPCHILDREN   Excludes the area occupied by child windows when drawing
+                  within the parent window. Used when creating the parent
+                  window.
+
+WS_CLIPSIBLINGS   Clips child windows relative to each other; that is, when
+                  a particular child window receives a paint message, the
+                  WS_CLIPSIBLINGS style clips all other overlapped child
+                  windows out of the region of the child window to be
+                  updated. (If WS_CLIPSIBLINGS is not specified and child
+                  windows overlap, it is possible, when drawing within the
+                  client area of a child window, to draw within the client
+                  area of a neighboring child window.) For use with the
+                  WS_CHILD style only.
+
+WS_DISABLED       Creates a window that is initially disabled.
+
+WS_DLGFRAME       Creates a window with a double border but no title.
+
+WS_HSCROLL        Creates a window that has a horizontal scroll bar.
+
+WS_MAXIMIZE       Creates a window of maximum size.
+
+WS_MAXIMIZEBOX    Creates a window that has a Maximize button.
+
+WS_MINIMIZE       Creates a window that is initially minimized. For use
+                  with the WS_OVERLAPPED style only.
+
+WS_MINIMIZEBOX    Creates a window that has a Minimize button.
+
+WS_SYSMENU        Creates a window that has a System Menu box in its title
+                  bar. Used only for windows with title bars.
+
+WS_THICKFRAME     Creates a window with a thick frame that can be used to
+                  size the window.
+
+WS_VISIBLE        Creates a window that is initially visible. This applies
+                  to overlapped, child, and pop-up windows. For overlapped
+                  windows, the y parameter is used as a ShowWindow()
+                  function parameter.
+
+WS_VSCROLL        Creates a window that has a vertical scroll bar.
+
+NOTE: You can determine the current styles of the main Viewer window using the
+Spy utility that shipped with the Windows SDK. Choose Window from Spy's Window
+menu. Then position the cursor over the main Viewer window. Spy will display the
+style of the window in the last line of the Spy Window dialog box.
+
+Additional query words: 2.00 2.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbMMViewer200 kbMMViewer200a
+Version           : :2.0,2.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

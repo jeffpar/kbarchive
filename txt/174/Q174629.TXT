@@ -1,0 +1,60 @@
+DOCUMENT:Q174629  09-AUG-2001  [winnt]
+TITLE   :Legacy PagedMemLimit Found in the Windows NT 4.0 Registry
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows NT Server 4.0 may contain a registry entry for PagedMemLimit.
+
+MORE INFORMATION
+================
+
+This setting is no longer used in Windows NT 4.0 and is considered a legacy
+entry. If this entry exists, Windows NT ignores the setting.
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MacFile\Parameters
+
+PagedMemLimit     REG_DWORD
+
+Range: 0x3e8 - 0x3e800 (1000K to 256000K)
+
+Specifies the maximum amount of page memory that the file server for Macintosh
+uses. Performance of the MacFile service increases with an increase in this
+value. However, the value should not be set lower than 1,000 KB. It is
+especially important that you are well acquainted with memory issues before
+changing this resource parameter. You cannot change this value from Server
+Manager. Default: 0x4e20 (20000 in decimal)
+
+Additional query words: PagedMemLimit NTSFM Regedt32 sfm macfile
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

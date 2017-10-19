@@ -1,0 +1,65 @@
+DOCUMENT:Q251351  10-AUG-2001  [crossnet]
+TITLE   :Cannot View Files Other Than Bitmaps in Microsoft Paint
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::2000,4.0
+OPER/SYS:
+KEYWORDS:kbtool win95 win98 win98se
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 98 
+ - Microsoft Windows 95 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows 2000 Professional 
+ - Microsoft Windows 98 Second Edition 
+ - Microsoft Windows Millennium Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to use Microsoft Paint to open a graphic file other than a bitmap
+(.bmp) file, you may be unable to do so. However, you may be able to do so on a
+different computer in Paint.
+
+CAUSE
+=====
+
+This issue can occur because Paint only provides support for bitmap files.
+However, if you install a program that provides filters for other types of
+graphic files (such as .gif or .jpg files), Paint can then provide support for
+these file types.
+
+RESOLUTION
+==========
+
+To work around this issue and use Paint for files other than bitmap files,
+install a program that provides the appropriate graphics filter. For example,
+Microsoft Word for Windows provides an assortment of filters you can install.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool win95 win98 win98se 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinMEsearch kbWin95search kbWin98search kbWin98SEsearch kbZNotKeyword3 kbWin98 kbWinME kbWin98SE
+Version           : :2000,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

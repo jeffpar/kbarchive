@@ -1,0 +1,93 @@
+DOCUMENT:Q153398  30-JUL-2001  [visualc]
+TITLE   :FIX: Namespace and Typedef Cause C1001:'msc1.cpp',line 1090
+PRODUCT :Microsoft C Compiler
+PROD/VER:4.0 4.1 4.2
+OPER/SYS:
+KEYWORDS:kbcode kbprogramming kbusage kbCompiler kbCPPonly kbLangCPP kbVC kbVC400bug kbVC410bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), included with:
+    - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A program that uses a namespace including a typedef name for the base class name
+may cause the compiler to generate the following error message:
+
+   fatal error C1001: INTERNAL COMPILER ERROR
+
+In addition, this error will be followed by a message similar to this:
+
+   
+
+  (compiler file 'msc1.cpp', line 899)  <if using version 4.0>
+  (compiler file 'msc1.cpp', line 1090) <if using version 4.1>
+  (compiler file 'msc1.cpp', line 1089) <if using version 4.2>
+  Please choose the Technical Support command on the Visual C++
+  Help menu, or open the Technical Support help file for more information
+  Error executing cl.exe.
+
+RESOLUTION
+==========
+
+Avoid a typedef name for the base class within a different derived class
+namespace.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ version 5.0.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+      /* Compile options needed:
+      */ 
+      //messages.cpp
+
+      namespace X {
+          class A{};
+          typedef A B;
+      }
+      namespace Y{
+          class C: public X::B{};
+      //  Work around:  replace the above line with  the following:
+      //  class C : public X::A{};
+
+      }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbprogramming kbusage kbCompiler kbCPPonly kbLangCPP kbVC kbVC400bug kbVC410bug kbVC420bug kbVC500fix 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : 4.0 4.1 4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,75 @@
+DOCUMENT:Q176335  07-MAY-2002  [homegame]
+TITLE   :Flight Simulator 95: Sound Is Intermittent with Sound III Card
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbsound
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator for Windows 95, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Flight Simulator for Windows 95, the sound may crackle or play
+intermittently.
+
+CAUSE
+=====
+
+This can occur if you have a Packard Bell computer with a Sound III audio card.
+
+RESOLUTION
+==========
+
+To resolve this problem, reconfigure the Sound III audio card settings by
+following these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. Click the Device Manager tab, and then click the View Devices By Type option.
+
+4. Double-click Sound, Video And Game Controllers to expand the branch.
+
+5. Double-click the Sound III device.
+
+6. Click the Settings tab.
+
+7. Click the Fast DMA Playback check box to clear it.
+
+8. Click the Capture check box clear it.
+
+9. Click OK, and then click OK again.
+
+   NOTE: You must shut down Windows, and then restart the computer for these
+   changes to take effect.
+
+Additional query words: 1.00 flightsim fltsim flt sim fs6 fs95 fs sound3 sound 3 crack choppy broken three
+
+======================================================================
+Keywords          : kbsound 
+Technology        : _IKkbbogus kbGamesSearch kbFlightSimSearch kbFlightSim95 kbSimSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,86 @@
+DOCUMENT:Q98986  19-NOV-1999  [msdos]
+TITLE   :Microsoft Diagnostics (MSD) Does Not Print DBLSPACE.INI File
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Diagnostics (MSD) utility provided with MS-DOS 6.0 does not print
+the DBLSPACE.INI file when you choose Print Report from the File menu. However,
+you can get MSD to print the DBLSPACE.INI file if you clear the System and
+Hidden file attributes on this file.
+
+MORE INFORMATION
+================
+
+MSD is a utility for obtaining system information such as:
+
+ - BIOS brand and date
+
+ - Memory configuration
+
+ - .INI file information (including DBLSPACE.INI)
+
+When you choose Print Report from the File menu, you can select Report All to
+print all information available from MSD except the DBLSPACE.INI file.
+
+Workaround
+----------
+
+You can get MSD to print the DBLSPACE.INI file by clearing the System and Hidden
+file attributes on DBLSPACE.INI. To do this, use the following steps:
+
+1. The DBLSPACE.INI file is located on the host drive for your
+   DoubleSpace-compressed drive. To find the DBLSPACE.INI file, type "dblspace
+   /list" (without the quotation marks) at the MS-DOS command prompt and then
+   press ENTER.
+
+2. Clear the System and Hidden file attributes on the DBLSPACE.INI file. To do
+   this, type the following at the MS-DOS command prompt and then press ENTER:
+
+   "attrib -s -h dblspace.ini" (without the quotation marks)
+
+3. Copy the DBLSPACE.INI file to your printer. For example, if your printer is
+   connected to LPT1, type the following at the MS-DOS command prompt and then
+   press ENTER.
+
+   " copy dblspace.ini lpt1" (without the quotation marks)
+
+4. After the file has printed, reset the file attributes on the DBLSPACE.INI
+   file. To do this, type the following at the MS-DOS command prompt and then
+   press ENTER:
+
+   " attrib +s +h dblspace.ini" (without the quotation marks)
+
+Additional query words: 6.00 double space dblspace 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

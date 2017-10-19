@@ -1,0 +1,93 @@
+DOCUMENT:Q249713  27-OCT-2000  [homemm]
+TITLE   :Encarta 2000: How to Share Monthly Updates
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::; WINDOWS:
+OPER/SYS:
+KEYWORDS:kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia 2000 
+ - Microsoft Encarta Encyclopedia Deluxe 2001 for Windows 
+ - Microsoft Encarta Reference Suite 2000 
+ - Microsoft Encarta Reference Suite 2001 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you run Microsoft Encarta Encyclopedia 2000 from a shared folder, CD-ROM
+drive, or DVD-ROM drive on a network, you need to copy the monthly updates files
+to the server?s hard disk to share the monthly updates over the network.
+
+MORE INFORMATION
+================
+
+To download the monthly updates for Encarta Encyclopedia 2000, visit the
+following Encarta Web site:
+
+   http://encarta.msn.com/downloads
+
+To prepare the server to share the Monthly Updates files:
+
+1. Create an Updates folder on the server.
+
+2. Share the Updates folder.
+
+3. On the network administrator's local computer, install Encarta Encyclopedia
+   2000.
+
+   NOTE: To install Encarta Encyclopedia on a Microsoft Windows NT 4.0
+   Server-based computer, you must log on to the computer as an Administrator.
+
+4. Copy both of the following folders from the network administrator's local
+   computer into the Updates folder that you created in step 1:
+
+   \YBBDAT
+
+   This folder contains the monthly updates information file, Ybbst00a.dat.
+
+   \Update 2000
+
+   This folder contains the Yearbook article updates (*.ybk) and new Web Link
+   (*.ewl) files.
+
+The Update 2000 folder should contain the following files:
+
+   Artlnk.ewl
+   Catlnk.ewl
+   Lnkoff.ewl
+   Master.ewl
+   Mvfilter.ewl
+   Newlnk00.ewl
+   Urldata.ewl
+   Yb699a.ybk
+
+NOTE: Each client that runs Encarta Encyclopedia 2000 must have Read permission
+for the Updates folder.
+
+Additional query words: multi multi-media media mm ee2k ers2k
+
+======================================================================
+Keywords          : kbenv kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc2000 kbEncartaReference2000 kbEncartaReference2001
+Version           : :; WINDOWS:
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

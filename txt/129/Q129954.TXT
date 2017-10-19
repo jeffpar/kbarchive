@@ -1,0 +1,65 @@
+DOCUMENT:Q129954  12-NOV-1999  [win16sdk]
+TITLE   :DOCERR: ICM_DECOMPRESSEX_QUERY dwParam1 and dwParam2 Incorrect
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1; :1.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+ - Microsoft Video for Windows Development Kit, version 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The online help (DK_DOC.HLP or DK_DOC.MVB) in the Microsoft Video for Windows DK
+incorrectly documents the ICM_DECOMPRESSEX_QUERY message. The incorrect
+documentation states the following:
+
+   dwParam1 - Specifies a far pointer to an ICDECOMPRESSEX data structure
+   describing the input format.
+
+   dwParam2 - Specifies zero or a far pointer to an ICDECOMPRESSEX data
+   structure used to return the output format. Zero indicates that any output
+   format is acceptable.
+
+The correct documentation for this message is listed below:
+
+   dwParam1 - Specifies zero or a far pointer to an ICDECOMPRESSEX data
+   structure used to return the output format. Zero indicates that any output
+   format is acceptable.
+
+   dwParam2 - Contains the size in bytes of the structure pointed to by
+   dwParam1.
+
+The ICSAMPLE sample code from the Microsoft Video for Windows DK correctly
+handles the ICM_DECOMPRESSEX_QUERY message.
+
+NOTE: The similarly named ICM_DECOMPRESS_QUERY message is documented correctly.
+
+Additional query words: 3.10 1.10 installable compression manager ICM codec compressor decompressor VfWDK
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbVideoSearch kbSDKSearch kbWinSDKSearch kbWinSDK310 kbVideoDK110
+Version           : WINDOWS:3.1; :1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

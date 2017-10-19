@@ -1,0 +1,67 @@
+DOCUMENT:Q264662  27-SEP-2001  [winnt]
+TITLE   :Leftover SPL, SHD, and TMP Files Remain in the Spool Directory A
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After all print jobs are completed, you have several SPL, SHD, and TMP files
+left over in the C:\Winnt\System32\Spool\Printers directory.
+
+WORKAROUND
+==========
+
+You can safely delete leftover files that have an .spl, .shd, or .tmp extension
+from the C:\Winnt\System32\Spool\Printers directory. These files should have
+been automatically deleted when the print job was printed.
+
+MORE INFORMATION
+================
+
+The following briefly describes the purpose of SPL, SHD, and TMP files:
+
+SPL files are the actual spool (print job) files.
+
+TMP files are usually associated with LPR print jobs.
+
+SHD files provide information about which printer the print job was sent to and
+from whom the print job came. An SHD file is a "shadow" file that keeps track of
+what logical printer a (same number) xxxxx.spl file goes to. It also contains
+the file's order in the queue, the user who sent the file to the printer, and
+other information. These files are usually deleted unless the logical printer
+settings state otherwise.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

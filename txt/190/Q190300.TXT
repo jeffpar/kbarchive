@@ -1,0 +1,56 @@
+DOCUMENT:Q190300  31-JUL-2001  [sms]
+TITLE   :SMS: Windows NT Clients in SMS 1.2 Must Have Server Service
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbsetup kbConfig kbsmsUtil smssetup smsconfig smsutil
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In a Systems Management Server site, Windows NT clients must have the Server
+Service running. The Server Service is necessary for the remote installation and
+update of the client-side services on Windows NT-based systems.
+
+MORE INFORMATION
+================
+
+The Server Service is required because the Systems Management Server Client
+Configuration Manager Service must be able to connect to the client's registry
+remotely to add the Systems Management Server Client Services and to make any
+other changes required to the client's registry.
+
+Running Windows NT systems with the Server Service disabled in a Systems
+Management Server site is an untested configuration and may lead to other
+issues.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbConfig kbsmsUtil smssetup smsconfig smsutil 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

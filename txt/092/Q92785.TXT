@@ -1,0 +1,58 @@
+DOCUMENT:Q92785  17-DEC-2000  [msdos]
+TITLE   :Err Msg: "Incorrect DOS Version" Caused by Mismatched Files
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have different versions of COMMAND.COM, MSDOS.SYS, and IO.SYS on your
+computer, the following error message may appear when you boot your machine:
+
+   Incorrect DOS Version
+
+To work around this problem, you need to boot from an MS-DOS boot disk, for
+example, the MS-DOS Uninstall disk.
+
+RESOLUTION
+==========
+
+To verify the versions of MSDOS.SYS and IO.SYS, type "VER" (without the
+quotation marks) at the command prompt, then type "COMMAND" (without the
+quotation marks) to verify the version of the command interpreter.
+
+If VER and COMMAND do not report identical versions and manufacturers, you must
+reinstall the operating system so that COMMAND.COM and the system files have the
+same version number and are from the same manufacturer.
+
+Additional query words: 6.22 5.00 6.00 5.00a 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

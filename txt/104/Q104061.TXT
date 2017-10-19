@@ -1,0 +1,59 @@
+DOCUMENT:Q104061  16-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: Edit Gesture Does Not Work with Appointment Book
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, versions 1.0, 1.0a, included with:
+    - Microsoft Windows for Pen Computing, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use version 1.0 or 1.0a of Microsoft Schedule+ for Windows with
+Microsoft Windows for Pen Computing, the edit gesture (a check mark) displays an
+empty edit box instead of the edited text when the gesture is made on a selected
+(highlighted) appointment inside the appointment book.
+
+RESOLUTION
+==========
+
+Do not use the edit gesture in the appointment book. Instead, edit the
+appointment by double-clicking it, or by selecting the word first and then
+making the edit gesture.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 1.0 and 1.0a of
+Microsoft Schedule+ for Windows. We are researching this problem and will post
+new information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: schedule plus 1.00 1.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,293 @@
+DOCUMENT:Q159867  09-OCT-1999  [msnetwork]
+TITLE   :The Microsoft Network 2.0 CD-ROM Readme.txt File
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a copy of the information in the Readme.txt file on the
+MSN, The Microsoft Network, CD-ROM.
+
+MORE INFORMATION
+================
+
+----------------------------------------
+MSN Starter Kit Tips and Troubleshooting
+----------------------------------------
+
+Thank you for choosing the Microsoft Network (MSN). This document contains
+information that will help you solve common problems and get the most out
+of MSN.
+
+Table of Contents
+-----------------
+
+1.  MSN Starter Kit Contents
+2.  System Requirements
+3.  Video Cards and Display Problems
+4.  Hard Disk Location of MSN Program Files
+5.  Microsoft Internet Explorer Installation
+6.  Installation Problems
+7.  Connection Problems
+8.  Improving Performance
+9.  CD-ROM Issues
+10. Removing MSN Files and Shortcuts
+
+1.    MSN Starter Kit Contents
+---------------------------
+
+The MSN Starter Kit supports the Windows 95 AutoPlay feature and will start
+automatically when you put the MSN Starter Kit CD in your CD-ROM drive.
+There are two programs on the CD:
+
+  - MSN Preview : a multimedia preview of the new MSN. It explains some of
+    MSN's features and what you can expect as a member.
+
+  - MSN Setup : a program which installs and configures the software
+    necessary to access the new MSN.
+
+The MSN Starter Kit supports the Windows 95 AutoPlay feature, and will
+start the MSN Starter Kit automatically when you put the MSN Starter Kit CD
+in your CD-ROM drive. One way to cure problems you encounter is to quit the
+program, remove the CD from your CD-ROM drive, and then re-insert it. As
+the MSN Starter Kit starts up again, it should be able to fix most problems
+you might have encountered. If it doesn't, see the other items in this Read
+Me or the Tips and Troubleshooting section of Help.
+
+NOTE: If your CD-ROM driver is not Windows 95 compliant, install the MSN
+Starter Kit using the following instructions:
+
+   1. Insert the MSN Starter Kit CD in your CD-ROM drive.
+
+   2. Click the Start button in the lower left hand corner of the Windows
+95 Taskbar, and then click Run.
+
+   3. In the Open dialog box, type the following (presuming that your CD-
+ROM drive is drive D):  D:\msnstart (and click OK)
+
+The first time you insert the CD the MSN Preview will run. Subsequent
+insertions of the MSN Starter CD will display a menu of choices to run:
+
+  1. The MSN Preview
+  2. MSN Setup
+  3. Connection Troubleshooter
+
+Before installation, MSN Setup attempts to locate the software it requires
+on your hard disk; if the software is not found, MSN Setup will install it.
+However, MSN Setup will always install:
+
+  - The three components of the show Rifff
+  - The Media files
+
+2. System Requirements
+----------------------
+
+  - Windows95
+  - Personal computer with a 486/66 or higher processor
+  - 14.4 Kbps modem or higher
+  - 8MB of memory required, 16MB recommended
+  - 50MB additional hard disk space
+  - CD-ROM drive (2x or higher)
+  - VGA or higher resolution graphics card.
+  - Sound card recommended
+  - Microsoft Mouse or compatible pointing device
+
+MSN is only compatible with Windows 95. It does not run on Windows NT or on
+Windows 3.1. In the future it is possible that MSN will support these
+operating systems but as of the date of this writing, October 1996, no
+support is available.
+
+In order to fully experience MSN you will need a sound card and speakers.
+MSN will function properly but audio is integral to the full experience.
+Also, the MSN Preview program included on this disk makes extensive use of
+audio and will not be useful if you do not have sound capabilities.
+
+3. Video Cards and Display Problems
+------------------------------------
+
+LESS THAN 256 COLORS
+
+The MSN Starter Kit will not run if your display is set to 16-color mode -
+it is designed to run at 640x480 resolution, or higher, with a minimum of
+256 colors. If your display is set to show 16 colors, change your display
+setting to show 256 colors or more. If you experience problems with display
+colors, check your color configuration:
+
+  1. Go to the Start Menu and select the Control Panel option from the
+Settings menu choice.
+
+  2. Open the Display icon.
+
+  3. Select the Settings tab.
+
+  4. From the "Color Palette" box, select 256 colors or anything higher
+than 16 colors.
+
+MORE THAN 256 COLORS
+
+Some video cards may encounter problems when using accelerated video
+drivers, video drivers with more than 256 colors, or high resolution video
+drivers. If you run into display problems:
+
+  1. Try switching to a driver supplied with Windows 95.
+
+  2. Change to a different display mode. An alternative to using a
+different driver is to change your video mode to a standard video mode such
+as 640x480 resolution with 256 colors.
+
+For details on how to change drivers or switch to a different display mode,
+see your Windows documentation.
+
+NEC computers using the Alliance Promotion video card do not work well with
+the MSN Starter Kit. Please contact your computer dealer for assistance.
+
+4. Hard Disk Location of MSN Program Files
+------------------------------------------
+
+The majority of the files MSN requires need to be stored on your System
+Disk (the drive from which your computer boots; generally the C: drive).
+If you do not have enough space on your System drive, Setup will notify you
+and provides an "Expert" option. If you select Expert installation you will
+be prompted several times during installation for an alternative storage
+area (i.e. other than your System drive).
+
+5. Microsoft Internet Explorer Installation
+-------------------------------------------
+
+MSN requires Internet Explorer (IE) version 3.01 or higher. If you have an
+older version of IE, MSN Setup will install a new version. During IE
+installation, you will be prompted to accept the IE End User License
+Agreement. IF YOU DO NOT ACCEPT THE IE LICENSE AGREEMENT, MSN SETUP WILL
+FAIL AND YOU WILL NOT BE PROPERLY CONFIGURED TO ACCESS MSN. YOU MUST ACCEPT
+THE IE LICENSE IN ORDER TO USE MSN.
+
+6. Installation Problems
+------------------------
+
+You may sometimes get the error "MSNAUDIO.ACM is in use. Retry / Cancel"
+when installing the Interactive Music Architecture. Click on "Cancel".
+
+7. Connection Problems
+----------------------
+
+If you click on MSN Program Viewer, and you don't get the sign in screen
+but instead get a message saying: "http://onstage.msn.com could not be
+found" refer to the MSN troubleshooter. If you are still unable to connect
+to MSN, check the following:
+
+   - Insert the text from the EA CD README file. Include sections on proxy,
+dialup provider, etc.
+
+   - Make sure you do not have Connect Through a Proxy Server enabled in
+IE.
+
+8. Improving Performance
+------------------------
+
+Make sure that Windows 95 is optimized for your CD-ROM drive. Windows 95
+provides settings for CD caching and for accessing various CD-ROM drive
+speeds.
+
+To review these settings:
+
+   1. Select the "My Computer" icon on your desktop and click it with the
+secondary mouse button (usually the right mouse button).
+
+   2. Choose Properties.
+
+   3. Choose the Performance tab.
+
+   4. Choose the File System button.
+
+   5. Choose the CD-ROM tab.
+      In this box, make sure that the Supplemental Cache size is set to
+      "Large." Also, verify that the Optimize access pattern is correctly
+      set for the type of CD-ROM drive that is installed on your system
+      (the MSN Starter Kit requires a double speed, or faster, CD-ROM
+      drive).
+
+9. CD-ROM Issues
+----------------
+EJECTING THE CD WHILE THE APPLICATION IS RUNNING
+
+Do not remove the CD-ROM disc while you are running the MSN Starter Kit.
+If you eject the MSN Starter Kit disc from the CD-ROM drive while running
+the MSN Starter Kit, insert a disc for another program, you'll get a System
+Error message. Reinsert the MSN Starter Kit disc, then choose Enter.
+CONFLICTS WITH THE CD-ROM DRIVE
+
+In Windows 95, follow these procedures to check for conflicts with your CD-
+ROM drive:
+
+   1. Double click on the "My Computer" icon with the right mouse button.
+
+   2. Select Properties, to open the System Properties window.
+
+   3. Select the Device Manager tab and look for the CD-ROM drive in the
+list. If it appears with an exclamation point to the left of it, there is a
+conflict with your hardware setup. Check the manuals that came with your CD-
+ROM drive for information on how to set up your CD-ROM drive or contact the
+manufacturer.
+CD-ROM DRIVE CONFLICTS WITH WINDOWS 95 AUTOPLAY FEATURE
+
+AutoPlay is a Windows 95 feature that automatically starts an application
+when you put its CD in your CD-ROM drive. If the MSN Starter Kit does not
+start automatically, your CD-ROM driver does not support AutoPlay or the
+AutoPlay feature is disabled. To start the MSN Starter Kit manually:
+
+   1. Insert the MSN Starter Kit CD-ROM.
+
+   2. Click the Start button in the lower left hand corner of the Windows
+95 Taskbar, and select Run.
+
+   3. Enter "D:\msnstart.exe" (without quotation marks) in the Open dialog.
+
+   4. Click OK, and the MSN Starter Kit will start.
+The MSN Starter Kit will also create an icon in your Start menu - to start
+MSN in the future, simply select MSN on your Start menu.
+DISABLING WINDOWS 95 AUTOPLAY
+
+To prevent Windows 95 from playing the MSN Starter Kit CD automatically,
+press down and hold the SHIFT key as you insert the CD into the CD-ROM
+drive.
+
+10. Removing MSN Files and Shortcuts
+------------------------------------
+
+If you want to remove the MSN Program Viewer, you can delete them with the
+Add/Remove Programs feature on the Windows 95 Control Panel control panel.
+For details on using the Add/Remove Programs feature, see your Windows
+documentation.
+
+Additional query words: msn
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN200
+Version           : WINDOWS:2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

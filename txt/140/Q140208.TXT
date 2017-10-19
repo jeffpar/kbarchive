@@ -1,0 +1,67 @@
+DOCUMENT:Q140208  28-JUL-2001  [win95x]
+TITLE   :Cannot Use Both Dial-Up Networking and Direct Cable Connection
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:dun win95 kbDialUp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may experience either of the following symptoms:
+
+ - When you try to connect to a server or provider using Dial-Up Networking, you
+   may receive the following error message:
+
+   Another Dial-Up Networking connection is active.
+   Disconnect the other connection, and then try again.
+
+ - When you try to establish a connection using Direct Cable Connection, you may
+   receive the following error message:
+
+   Cannot connect to host computer. Make sure you have run Direct Cable
+   Connection on the host computer and you have connected your cable to both
+   computers.
+
+CAUSE
+=====
+
+Both Dial-Up Networking and Direct Cable Connection use the same network
+interface (Pppmac.vxd). You cannot have more than one instance of Pppmac.vxd
+running at one time.
+
+RESOLUTION
+==========
+
+Close Dial-Up Networking to run Direct Cable Connection, or close Direct Cable
+Connection to run Dial-Up Networking. You cannot run both at the same time.
+
+Additional query words: dcc
+
+======================================================================
+Keywords          : dun win95 kbDialUp 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

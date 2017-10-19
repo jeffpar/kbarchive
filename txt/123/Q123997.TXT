@@ -1,0 +1,62 @@
+DOCUMENT:Q123997  17-DEC-2000  [win95x]
+TITLE   :Inserted Picture Converted w/Visio 3 Contains Horizontal Lines
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using Visio version 3.0, white horizontal lines appear on inserted
+color pictures. The white lines also appear on the images when printed.
+
+CAUSE
+=====
+
+This problem is caused by the way Image Stream version 1.9.11, the graphics
+filter included with Visio 3.0, converts images for displaying on the screen.
+The lines appear only on those images that are converted--bitmap (.BMP) and
+Windows metafile (.WMF) images display and print correctly.
+
+WORKAROUND
+==========
+
+Using a graphics utility other than Visio, convert the image from its original
+format to bitmap (.BMP) or Windows metafile (.WMF) format. Then insert the
+bitmap image into Visio.
+
+MORE INFORMATION
+================
+
+Visio is manufactured by vendors independent of Microsoft; we make no warranty,
+implied or otherwise, regarding these products' performance or reliability.
+
+Additional query words: 3rdparty PCX TIF EPS
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

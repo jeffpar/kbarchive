@@ -1,0 +1,59 @@
+DOCUMENT:Q173509  07-JAN-2000  [exchange]
+TITLE   :XADM: Setup Fails when Installing Outlook Web Access
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When running the Microsoft Exchange Server Setup program to install the Outlook
+Web Access (OWA) component, you may receive the following error:
+
+   Processing file E:\server\eng\setup\i386\webcon.ins, at or near line 9.
+   The system cannot find the file specified.
+   Microsoft Windows NT no: 0xc002002
+
+CAUSE
+=====
+
+This error occurs because Active Server Pages (ASP) is not installed on the
+server.
+
+RESOLUTION
+==========
+
+From the Windows NT Service Pack 3 compact disk, run IIS30\ASP\i386\ASP.EXE to
+install ASP and then install OWA.
+
+Additional query words: exfaq exfaqad
+
+======================================================================
+Keywords          : kberrmsg kbsetup 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

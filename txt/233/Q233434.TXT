@@ -1,0 +1,74 @@
+DOCUMENT:Q233434  19-JUN-1999  [homemm]
+TITLE   :MSBP: Blank Publication Displayed When You Click Publisher Link
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbinterop kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Business Planner 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click a Publisher wizard link in a Microsoft Business Planner article,
+a blank full page publication may be displayed when Microsoft Publisher 2000
+starts.
+
+CAUSE
+=====
+
+This behavior occurs if the "Use Catalog at startup" option in Publisher 2000 is
+turned off.
+
+RESOLUTION
+==========
+
+To resolve this issue, turn on the "Use Catalog at startup" option:
+
+1. Start Publisher 2000.
+
+2. On the Tools menu, click Options.
+
+3. On the General tab, click to select the "Use Catalog at startup" check box.
+
+4. Click OK.
+
+5. Quit Publisher 2000.
+
+6. Start Business Planner, return to the page that contains the Publisher wizard
+   link, and then click the link.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Business Planner.
+
+Additional query words: msbp template empty pub2k
+
+======================================================================
+Keywords          : kbinterop kbui kbimu 
+Technology        : kbHomeMMsearch kbBusPlanner
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

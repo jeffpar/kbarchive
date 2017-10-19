@@ -1,0 +1,59 @@
+DOCUMENT:Q119323  10-DEC-1999  [homemm]
+TITLE   :Cinemania 1994: Review May Not Copy Completely
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1991 edition,1994 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Cinemania for Windows 1994 edition 
+ - Microsoft Bookshelf for Windows 1991 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Copy button to copy some of the longer movie reviews in
+Cinemania or some of the longer topics in Bookshelf, only a portion of the
+article may be copied to the Windows Clipboard.
+
+RESOLUTION
+==========
+
+Instead of using the Copy button, press either CTRL+INSERT or CTRL+C to copy the
+text. Both keystrokes copy the entire article to the Windows Clipboard.
+
+MORE INFORMATION
+================
+
+The Copy button in Cinemania 1994 has a size limitation of 32K. A movie review,
+such as "Gone With The Wind," can be larger than 32K, resulting in only part of
+the review being copied when you choose the Copy button. Pressing CTRL+INSERT or
+CTRL+C to copy the text will bypass the Cinemania Copy dialog box and copy
+directly to the Windows Clipboard, capturing all of the text.
+
+Additional query words: 1994 multi media multimedia multi-media mviewer2.exe Usage Viewer copy large wbk 1991
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbBookshelfSearch kbCineManiaSearch kbBookShelf1991 kbCinemania1994
+Version           : :1991 edition,1994 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

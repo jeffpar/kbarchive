@@ -1,0 +1,61 @@
+DOCUMENT:Q129870  31-OCT-1999  [pcmail]
+TITLE   :PC Win: Opening Attachments Without an Extension
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use version 3.2 of Microsoft Mail for Windows, you may receive a
+message with an attachment; however, the attachment will not have an extension
+on the name. If a file does not have an extension, you can not double-click it
+to open and read it.
+
+You can open a file without an extension into the NOTEPAD.EXE application by
+pressing the ALT key and double-clicking the attachment icon.
+
+NOTE: Notepad will be launched in the background. As a result, you will have to
+switch to Notepad to see the attached document. However, if the file is not
+ASCII text, it may not be readable.
+
+MORE INFORMATION
+================
+
+Windows applications have a feature called File Association that will launch a
+specific application when you double-click an attachment. However, this feature
+will not help you open a file without an extension.
+
+For additional information, please see the File Associations topic in your
+Microsoft Windows documentation.
+
+Additional query words: 3.20 attachments extension
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

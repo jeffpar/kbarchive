@@ -1,0 +1,72 @@
+DOCUMENT:Q238052  27-OCT-2000  [homemm]
+TITLE   :Encarta 2000: Empty Window Opens When Starting Lesson Collection
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbenv kbinterop kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia 2000 
+ - Microsoft Encarta Encyclopedia Deluxe 2001 for Windows 
+ - Microsoft Encarta Encyclopedia Standard 2001 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click Encarta Lesson Collection on the Features menu in Microsoft
+Encarta Reference Suite 2000, Microsoft Internet Explorer starts and opens an
+empty window.
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true:
+
+ - The original version of Microsoft Windows 95 (version 4.00.950) is installed
+   on your computer.
+
+ - Microsoft Internet Explorer version 3.02 or earlier is installed on your
+   computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, download and install the latest version of Internet
+Explorer from the following Microsoft Web site:
+
+   http://www.microsoft.com/windows/ie/download/default.htm
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta Encyclopedia
+2000.
+
+Additional query words: multi multi-media media mm ee2k win95x msie
+
+======================================================================
+Keywords          : kbenv kbinterop kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc2000
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

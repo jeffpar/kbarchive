@@ -1,0 +1,61 @@
+DOCUMENT:Q187906  05-MAY-1999  [iis]
+TITLE   :IIS Does Not Let You Save Changes to Web Page
+PRODUCT :Internet Information Server
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you open an .htm file in WordPad and make a change to the file, and then open
+the .htm file in Internet Explorer and try to save the changes made in WordPad,
+the following error message appears:
+
+   The Document <your_page.htm> is in use by another application and
+   cannot be accessed.
+
+CAUSE
+=====
+
+Internet Information Server (IIS) 4.0 caches file handles. If no one requests
+the file or the page is not refreshed for one minute, IIS releases the handle.
+This behavior is by design.
+
+NOTE: IIS opens the page read-only.
+
+WORKAROUND
+==========
+
+To work around this problem, use another editing tool to make the necessary
+changes. Notepad and Visual InterDev are two alternative Microsoft editors.
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : 4.0
+Hardware          : ALPHA PPC x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

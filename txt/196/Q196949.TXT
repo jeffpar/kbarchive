@@ -1,0 +1,69 @@
+DOCUMENT:Q196949  14-NOV-2000  [word97]
+TITLE   :WD97: No Table Headings Following Next Page Section Break
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta word97 kbtable
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Microsoft Word does not repeat a table heading after a manual page break or any
+type of section break.
+
+CAUSE
+=====
+
+This functionality is by design of Microsoft Word. When you insert a "hard" page
+break or any kind of section break within a table, Word splits that table into
+two individual tables. In order for Headings in a table to work, the table must
+be one continuous table.
+
+
+MORE INFORMATION
+================
+
+Word automatically repeats table headings only for tables that are split by
+"soft" page breaks.
+
+To set Headings within a table, follow these steps:
+
+1. Click in the first row of the table or select the rows that you want to see
+   on the top of the table on all pages.
+
+   NOTE: The first row of the table must be in the selection.
+
+2. On the Table menu, click Headings. A check mark appears beside Headings when
+   your insertion point is in the row(s) designated as Headings.
+
+Additional query words: docerr documentation error
+
+======================================================================
+Keywords          : kbdta word97 kbtable 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

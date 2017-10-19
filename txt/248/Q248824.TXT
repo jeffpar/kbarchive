@@ -1,0 +1,71 @@
+DOCUMENT:Q248824  22-DEC-1999  [iis]
+TITLE   :IP Restriction Does Not Work for SMTP and NNTP Admin Directories
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install SMTP and/or NNTP (included with the Windows NT Option Pack),
+the predefined localhost IP restriction for the Mail and News virtual
+directories in the Default Web Site does not work.
+
+CAUSE
+=====
+
+The installation program does not set the correct metabase entries.
+
+RESOLUTION
+==========
+
+In the properties for the Mail and News virtual directories, on the IP
+Restriction tab, re-apply the granted IP address 127.0.0.1. To do this, perform
+the following steps:
+
+1. Start the Internet Service Manager.
+2. Open the properties for the Mail virtual directory in the Default Web Site.
+3. Click the Directory Security tab.
+4. Click the Edit... button in the IP Address and Domain Name Restrictions
+   section.
+5. Click the IP address 127.0.0.1.
+6. Click the Edit... button on the right.
+7. To enable the OK button, click Group of Computers, and then click Single
+   Computer.
+8. Click OK.
+9. Click OK again to close the IP Address and Domain Name Restrictions window.
+10. Click OK again to close the Properties window for this virtual directory.
+11. Repeat the above steps for the News directory.
+
+
+Additional query words: IPSecurity
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

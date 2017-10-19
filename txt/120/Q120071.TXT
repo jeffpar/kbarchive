@@ -1,0 +1,72 @@
+DOCUMENT:Q120071  04-MAY-2001  [masm]
+TITLE   :BUG: Record Instance Cannot Have Same Name as a Record Field
+PRODUCT :Microsoft Macro Assembler
+PROD/VER::6.1,6.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 6.1, 6.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A record instance cannot have the same name as a record field, but a structure
+can have the same instance name as a structure field. If you give a record the
+same name as a record field, the following error is generated:
+
+   A2008: syntax error
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in MASM versions 6.1 and 6.11. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The following sample code can be used to demonstrate the problem.
+
+Sample Code
+-----------
+
+   ; Assemble options needed: none
+
+      record1 record recfield1:2, recfield2:2, recfield3:2
+
+      recfield1 record1 <1, 2, 3>  ; <-- syntax error
+
+      structure1 struct
+         strfield1 dw ?
+      structure1 ends
+      strfield1 structure1 <>      ; <-- Ok
+      recfield1 structure1 <>      ; <-- syntax error
+
+Additional query words: 6.10 buglist6.10 buglist6.11
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM610 kbMASM611
+Version           : :6.1,6.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

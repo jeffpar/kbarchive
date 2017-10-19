@@ -1,0 +1,63 @@
+DOCUMENT:Q90249  07-OCT-1999  [win3x]
+TITLE   :Some Network DDE Connections Not Displayed in Net Watcher
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Sometimes network DDE (NDDE) conversations do not appear in the Windows for
+Workgroups Net Watcher. This happens because Net Watcher only displays NDDE
+conversations in which your computer is the DDE server. For example, if you look
+at Net Watcher during a Windows for Workgroups Chat session, Net Watcher
+displays the NDDE connection if you are the computer that answers (the server).
+Net Watcher does not display the NDDE connection if you are the computer that
+dials (the client).
+
+MORE INFORMATION
+================
+
+The Windows APIs called by Net Watcher only return information about NDDE
+clients of the computer it is running on (in other words, servers to your
+computer). Net Watcher does not access information about NDDE conversations
+where the local computer is the DDE client. This feature allows Net Watcher to
+monitor outside, or incoming, access to your shared directories. Net Watcher
+does not monitor outgoing connections initiated by your computer. In other
+words, Net Watcher monitors "who is using your computer," but it does not
+monitor "what you are using."
+
+This Net Watcher functionality can be somewhat confusing when you use an
+application such as Chat, which does not appear to be a client-server
+application.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

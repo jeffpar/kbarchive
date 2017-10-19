@@ -1,0 +1,90 @@
+DOCUMENT:Q77078  06-MAY-2001  [masm]
+TITLE   :FIX: Whitespace Character Must Precede DUP Operator
+PRODUCT :Microsoft Macro Assembler
+PROD/VER:MS-DOS:6.0,6.0a,6.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 6.0, 6.0a, 6.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the DUP operator in the Microsoft Macro Assembler (MASM), you must
+place a whitespace character before the DUP operator if using the "?" operator.
+If no whitespace is present, no error message is produced by the assembler, and
+incorrect code will be generated. The assembler will generate one data item for
+the specified type, initialized to the value of the repeat size for the DUP
+operator.
+
+RESOLUTION
+==========
+
+To work around the problem, place a space between the repeat size and the DUP
+operator. Initializing the variable will cause a syntax error to be generated.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MASM version 6.0, 6.0a, and
+6.0b. This problem was corrected in MASM for MS-DOS version 6.1.
+
+MORE INFORMATION
+================
+
+The code example below generates a listing file that shows the size generated
+for the respective DUP statements. It can be seen that the first DUP operation
+generates 4 data bytes; however, the second generates 1 data byte initialized to
+4.
+
+The assembler has problems parsing this statement because the DUP operator begins
+with a letter (d), which is a valid radix suffix.
+
+Sample Code
+-----------
+
+   ; Assemble options needed: /Fl
+
+   .MODEL small
+   .STACK 4096
+
+   .DATA
+   a       DB 4 DUP(0)
+   size_a  DB SIZEOF a
+   b       DB 4DUP(?)
+   size_b  DB SIZEOF b
+
+   .CODE
+   start:
+      mov ax, 4C00H
+      int 21H      ; Terminate Process
+   END start
+
+Additional query words: 6.00 6.00a 6.00b buglist6.00 buglist6.00a buglist6.00b fixlist6.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600 kbMASM600a kbMASM600b
+Version           : MS-DOS:6.0,6.0a,6.0b
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

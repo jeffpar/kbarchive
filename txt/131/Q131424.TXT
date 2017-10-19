@@ -1,0 +1,62 @@
+DOCUMENT:Q131424  30-OCT-1999  [pcmail]
+TITLE   :PC NTMMTA: Advantages of Running EXTERNAL.EXE as a Service
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Multitasking MTA for Windows NT, version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Windows NT provides Windows NT services to manage network processes
+that run continuously, such as the External and Dispatch programs from Microsoft
+Mail for PC Networks. If you run these programs as Windows NT services, you will
+have several benefits. This article discusses these benefits.
+
+MORE INFORMATION
+================
+
+The following are the benefits from running network processes as Windows NT
+services:
+
+ - The External and Dispatch programs can be started automatically when the
+   computer is turned on, without requiring an administrator to log on.
+
+ - Specific External and Dispatch instances can be controlled using the Windows
+   NT Service Control Manager.
+
+ - Multiple instances of the External and Dispatch programs can run while the
+   workstation is used for other purposes.
+
+ - Instances of the External and Dispatch programs can be monitored from any
+   workstation on the network.
+
+Additional query words: 3.50
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailMMTA350NT
+Version           : :3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

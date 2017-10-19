@@ -1,0 +1,90 @@
+DOCUMENT:Q141198  14-DEC-1999  [homemm]
+TITLE   :Bookshelf 1994: Problems Printing Maps to the HP DeskJet 1200c
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows 1994 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print a map from the Atlas in Bookshelf 1994 to the Hewlett- Packard
+(HP) DeskJet 1200c using the printer driver version 3.40, three copies of the
+map will print on each page. Each map printed on the page is lighter than the
+previous one. Also note, the printed images are normal width, but are only
+one-third of their normal height.
+
+RESOLUTION
+==========
+
+To resolve this problem, use any of the following methods:
+
+Method 1
+--------
+
+1. Click the Atlas icon and select a map.
+
+2. On the Edit menu, click Copy Picture.
+
+3. Paste the picture into Microsoft Paintbrush (or into Paint if you are using
+   Windows 95).
+
+4. Save the picture as a bitmap.
+
+5. Print the picture from Paintbrush (or from Paint if you are using Windows
+   95).
+
+Method 2
+--------
+
+Install the HP DeskJet 500 printer driver.
+
+For more information about how to perform this task in Windows, see your Windows
+printed documentation or online Help.
+
+Method 3
+--------
+
+Contact Hewlett-Packard for an updated HP DeskJet 1200c printer driver.
+
+MORE INFORMATION
+================
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+REFERENCES
+==========
+
+Hewlett-Packard: (303) 339-7009 Driver Distribution Center
+
+Additional query words: multi media multimedia multi-media mmtitles kbmm kbhowto
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1994
+Version           : :1994 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

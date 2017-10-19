@@ -1,0 +1,67 @@
+DOCUMENT:Q143195  07-MAY-1999  [iis]
+TITLE   :Error Msg: "Can Not Install File..." During IIS Setup
+PRODUCT :Internet Information Server
+PROD/VER:1.00
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+As part of Internet Information Server (IIS) Setup you can install ODBC drivers.
+When you select ODBC drives to be installed, the following message appears:
+
+   Can not install file c:\winnt35\system32\odbc32.dll. It might be in use:
+   Try closing all applications and choosing retry.
+
+   Choose Ignore if you want to skip this file.
+
+   [Abort] [Retry] [Ignore]
+
+CAUSE
+=====
+
+This problem occurs when applications that use ODBC drivers are running.
+However, it is also happens when services, such as SQL Executive, are running.
+
+RESOLUTION
+==========
+
+To correct this problem:
+
+1. Close all the applications except the IIS Setup program.
+
+2. Open Services in Control Panel.
+
+3. Highlight SQL Executive and click on Stop button.
+
+4. Switch back to IIS Setup (Error dialog box) and click on Retry.
+
+Additional query words: prodiis
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbiisSearch kbiis100
+Version           : 1.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

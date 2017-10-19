@@ -1,0 +1,84 @@
+DOCUMENT:Q104339  02-NOV-2001  [vbwin]
+TITLE   :PRB: TableDefs Not Updated When SQL Statement Creates Table
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you create a table with an SQL action statement such as SELECT INTO, the new
+table is not immediately reflected in the TableDefs collection of the database
+object or property. This may result in the error "Name not found in this
+collection" (error 3265).
+
+WORKAROUND
+==========
+
+Perform TableDefs.Refresh immediately after creating the new table. The Refresh
+method should be but is not documented for the TableDefs collection in the
+Visual Basic manuals or Help menu.
+
+ - Create the table using database.Tabldefs.Append instead of using an SQL
+   statement.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+A table created with an SQL statement is correctly reflected in the Tabledefs
+collection after the database is closed then reopened.
+
+Steps to Reproduce Problem
+--------------------------
+
+The following program demonstrates this problem. It results in the error "Name
+not found in this collection" on the Tabledefs.Delete statement.
+
+      Dim db As Database
+      Set db = OpenDatabase("BIBLIO.MDB")
+      Print "TableDefs.Count before:"; db.TableDefs.Count
+      ' Create new table using SQL action statement:
+      db.Execute "select distinctrow * into NewTable from Authors"
+      ' Remove apostrophe from the following statement to work around problem:
+      ' db.TableDefs.Refresh
+      Print "TableDefs.Count after: "; db.TableDefs.Count
+      ' Now attempt to delete the new table just created:
+      db.TableDefs.Delete "NewTable"
+      db.Close
+
+Additional query words: 3.00 docerr
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB300Search kbVB300
+Version           : :3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

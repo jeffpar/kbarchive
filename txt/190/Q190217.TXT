@@ -1,0 +1,257 @@
+DOCUMENT:Q190217  27-JAN-2001  [vbwin]
+TITLE   :HOWTO: Get Free System Resources in 32-Bit Visual Basic
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbAutomation KbClientServer kbVBp kbVBp300 kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB kbDSupp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In 16-bit versions of Visual Basic, you can determine free system resources by
+calling the GetFreeSystemResources Windows API function. For 32-bit versions of
+Visual Basic, there is no Win32 API function that provides that information. To
+determine free system resources in a 32-bit Visual Basic application, you must
+call a 16-bit application. This article includes instructions to:
+
+1. Create a 16-bit Visual Basic 4.0 OLE server that determines free system
+   resources and provides that information to OLE clients.
+
+2. Call the 16-bit OLE server from a 32-bit version of Visual Basic and get free
+   system resources from it.
+
+MORE INFORMATION
+================
+
+If your Visual Basic application loads a very large number of certain controls,
+such as ComboBoxes, you may run out of system resources, which will result in an
+"out of memory" error (error #7), and may cause Windows to stop responding. You
+can monitor system resources with the 16-bit Windows API function
+GetFreeSystemResources.
+
+In Windows 95, Windows 98, and Windows Me, GetFreeSystemResources checks the
+percentage of free memory in the following five resource heaps:
+
+1. The 16-bit User heap (64K).
+
+2. The 32-bit User window heap (2MB).
+
+3. The 32-bit User menu heap (2MB).
+
+4. The 16-bit GDI heap (64K).
+
+5. The 32-bit GDI heap (2MB).
+
+First, it finds the lowest of the three User heaps, and the lowest of the two GDI
+heaps. The 16-bit, 64K heaps are almost always the lowest.
+
+Next, for each of the two lowest, it divides the percentage free by the
+percentage that was free when Windows was started.
+
+Finally, it returns the lowest of the two.
+
+For example, suppose the five heaps had the following percentages free at the
+time Windows started:
+
+   Heap                              Percentage Free
+   =============================     ===============
+   16-bit User heap (64K)            80%
+   32-bit User window heap (2MB)     99%
+   32-bit User menu heap (2MB)       99%
+   16-bit GDI heap (64K)             75%
+   32-bit GDI heap (2MB)             99%
+
+Later, with some applications running, suppose the free memory in the five heaps
+had dropped to these percentages:
+
+   Heap                              Percentage Free
+   =============================     ===============
+   16-bit User heap (64K)            40%
+   32-bit User window heap (2MB)     98%
+   32-bit User menu heap (2MB)       98%
+   16-bit GDI heap (64K)             25%
+   32-bit GDI heap (2MB)             98%
+
+GetFreeSystemResources starts by finding the lowest of the three User heaps
+(40%), and the lowest of the two GDI heaps (25%). In both cases, the 16- bit,
+64K heap is lowest.
+
+Next, GetFreeSystemResources divides the percentage free by the percentage that
+was free when Windows was started. For the User heap, that's 40%/80% = 50%. For
+the GDI heap, it calculates 25%/75% = 33%.
+
+Finally, it returns the lowest of the two, 33%.
+
+Note, this behavior is different than GetFreeSystemResources in Windows 3.1 in
+two ways:
+
+1. The three 2MB heaps did not exist in Windows 3.1.
+
+2. It did not divide the percentage free from the percentage that was free at
+   the time Windows started. As a result, it returned a lower percentage. In the
+   example above, GetFreeSystemResources in Windows 3.1 would have returned 25%
+   instead of 33%.
+
+There is no 32-bit version of GetFreeSystemResources. In Windows 95, 98, Me, NT,
+and 2000, GetFreeSystemResources has been replaced by GlobalMemoryStatus, which
+returns the amount of free global memory. Because Windows 95, 98, Me, NT, and
+2000 handle system resources more efficiently than Windows 3.x, system resources
+are usually less of a concern and free global memory is usually more relevant.
+GlobalMemoryStatus is sometimes confused as being equivalent to
+GetFreeSystemResources, but in fact it is designed to return entirely different
+information. While GetFreeSystemResources returns the free percentage of the GDI
+and User heaps, GlobalMemoryStatus returns the amount of free global memory. In
+Windows 3.x, 95, 98, and Me, Windows allocates a fixed amount of memory to each
+of the GDI and User heaps at startup, and can never allocate any more to them no
+matter how much global memory is free. As a result, it is possible to run out of
+free system resources while there is still abundant free memory. Because
+GlobalMemoryStatus does not return information about the GDI and User heaps, it
+is not appropriate to use GlobalMemoryStatus to monitor these system resources.
+
+To determine free system resources in a 32-bit Visual Basic application, you must
+create and call a 16-Bit application that calls GetFreeSystemResources and
+exposes the information to other applications.
+
+Note that Windows NT (all versions) and Windows 2000 is designed to dynamically
+allocate memory to the GDI and User heaps as needed. GetFreeSystemResources
+always returns 90% on Windows NT and 2000. Unlike other versions of Windows,
+Windows NT and 2000 do not run out of system resources and stop responding. It
+is highly unlikely that your Visual Basic application will have any need to
+monitor system resources on Windows NT and 2000.
+
+Also note that Windows 95, 98, and Me manage system resources considerably more
+efficiently than Windows 3.x. Many items formerly stored in the 64K User and GDI
+heaps in Windows 3.x are now stored in the three 2MB heaps in Windows 95 and 98.
+See the REFERENCES section below for more information.
+
+The following steps show how to create a 16-bit Visual Basic 4.0 OLE server that
+determines free system resources and provides that information to OLE clients,
+and to call the 16-bit OLE server from a 32-bit version of Visual Basic and get
+free system resources from it.
+
+Note, the OLE Server must be created with 16-bit Visual Basic 4.0; it cannot be
+created with Visual Basic 5.0 or later, or with 32-bit Visual Basic 4.0.
+
+If you do not have Visual Basic 4.0, but do have Visual Basic 1.0 for Windows,
+2.0, or 3.0, you can use DDE (Dynamic Data Exchange) rather than OLE to provide
+the information to 32-bit applications. In Visual Basic 3.0, see chapter 21 in
+the Visual Basic Programmer's Guide, "Communicating with Other Applications."
+
+If you are a C programmer, you can create a "flat thunking" DLL to provide the
+information on Windows 95, 98, and Me. You cannot do flat thunking directly in
+Visual Basic, because it requires calling functions given only pointers to their
+addresses in memory. See the REFERENCES section below for where to find more
+information.
+
+Step-by-Step Example
+--------------------
+
+1. Start 16-bit Visual Basic 4.0. Note this will not work with 32-bit Visual
+   Basic 4.0, or with Visual Basic 5.0 or later.
+
+2. Create a new project. Form1 is added by default.
+
+3. Choose Module from the Insert menu to add a standard module, and add the
+   following code to it:
+
+         Declare Function GetFreeSystemResources Lib "User" _
+            (ByVal fuSysResource As Integer) As Integer
+
+         Const GFSR_SYSTEMRESOURCES = &H0
+
+         Sub Main()
+            'Stub only.
+         End Sub
+
+4. Choose Class Module from the Insert menu to add a class module, and add the
+   following code to it:
+
+         Public Function SystemResources()
+
+            SystemResources = GetFreeSystemResources _
+               (GFSR_SYSTEMRESOURCES)
+
+         End Function
+
+5. Change the Name property of the class module to clsSR.
+
+6. Change the Instancing property of the class module to Createable SingleUse.
+
+7. Change the Public property of the class module to True.
+
+8. Alternate click on Form1 in the Project window, and choose "Remove File" to
+   remove the default form.
+
+9. Choose Options from the Tools menu, and select the Project tab. Change the
+   project name to prjSR, and then change StartMode to "OLE Server."
+
+10. From the File menu, save the project, and make the EXE.
+
+11. Start a 32-bit version of Visual Basic, such as Visual Basic 4.0 32-bit, or
+   version 5.0 or later.
+
+12. Create a new project. Form1 is added by default.
+
+13. Choose References from the Project menu (in 32-bit Visual Basic 4.0, choose
+   References from the Tools menu), and check prjSR. Click OK.
+
+14. Double-click on Form1, and add the following code to the Form_Load event:
+
+         Dim oSR As New prjSR.clsSR
+
+         MsgBox oSR.SystemResources & _
+            "% of system resources are free."
+
+         Set oSR = Nothing
+
+15. Run the project. The Message Box will show the percentage of free system
+   resources.
+
+REFERENCES
+==========
+
+"Windows 95 System Programming Secrets," by Matt Pietrek, IDG Books
+
+For additional information on creating flat thunking DLLs in C, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q155763 HOWTO: Call 16-bit Code from 32-bit Code on Windows 95
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAutomation KbClientServer kbVBp kbVBp300 kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbVB16bitSearch
+Version           : :4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,84 @@
+DOCUMENT:Q160839  08-AUG-2001  [winnt]
+TITLE   :Delay Occurs When Unlocking Workstation
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it if
+a problem occurs. For information about how to do this, view the "Restoring
+the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+Help topic in Regedt.32.exe.
+
+SUMMARY
+=======
+
+A noticeable delay occurs when the logged on user or an administrator attempts
+to unlock a workstation.
+
+MORE INFORMATION
+================
+
+Windows NT 4.0 will update the domain list if the cached list's age exceeds two
+minutes (by default). This feature is beneficial to users from a newly trusted
+domain who need to log on to workstations or servers that have been locked by a
+previous user.
+
+Adjusting the following registry entry allows modification to the time period in
+which the domain list becomes out-of-date. The valid range for this entry is 2
+minutes (default) to 1 day, specified in the number of seconds. Note that
+modifying this value could result in users not seeing the current domain list.
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it.
+
+To modify this value, perform the following steps:
+
+1. Start Registry Editor (Regedt32.exe), modify (or create if necessary) the
+   following:
+
+   Hive:   HKEY_LOCAL_MACHINE
+   Key:    Software\Microsoft\Windows NT\CurrentVersion\Winlogon
+   Value:  DcacheMinInterval
+   Type:   REG_DWORD
+   Data:   120-86400 (decimal)(expressed in seconds)
+
+2. Quit Registry Editor and restart your computer for these changes to take
+   effect.
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

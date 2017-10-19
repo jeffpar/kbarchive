@@ -1,0 +1,106 @@
+DOCUMENT:Q221650  27-JUL-2001  [foxpro]
+TITLE   :FIX: Error 11 (Function argument invalid) w/ SQL SELECT 'LIKE'
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbSQL kbvfp500aBUG kbvfp600 kbvfp600bug kbVS600sp3fix kbGrpDSFox kbSQLProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You have program code that uses a SQL SELECT statement. The SELECT uses the LIKE
+syntax to evaluate the result of a function. If the LIKE value is compared to an
+indexed field, you will see the following error when the SELECT is executed:
+
+   Function argument value, type, or count is invalid.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3.
+
+For more information about Visual Studio service packs, please see the following
+articles in the Microsoft Knowledge Base:
+
+   Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+   Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the following code from a program (.PRG) file:
+
+   CLOSE DATA ALL
+   CREATE TABLE mbtest (prodcd c(4), PibCD c(4))
+   INDEX ON PibCD TAG PibCD
+   INSERT INTO mbtest (prodcd, PibCD) VALUES ('0011', 'B133')
+
+   LCCATEGORY = 'APPAREL'
+   * The following SELECT fails with "Function argument value, type, or count 
+   * is invalid." error.
+   SELECT * ;
+      FROM mbtest ;
+      WHERE mbtest.PibCD LIKE LEFT(LCCATEGORY,1) ;
+      INTO CURSOR cTemp
+
+   * The following SELECT succeeds without error after adding % character.
+   SELECT * ;
+      FROM mbtest ;
+      WHERE mbtest.PibCD LIKE LEFT(LCCATEGORY,1) +"%";
+      INTO CURSOR cTemp
+
+   USE IN mbtest
+
+2. The first SELECT fails with the error:
+
+   Function argument value, type, or count is invalid.
+
+3. If you ignore the error, the second SELECT will succeed with the percent
+   character (%) concatenated with the value compared with LIKE.
+
+4. The first SELECT will succeed if there is no index on the PibCD field.
+
+5. Other functions, such as SUBSTR(), will cause the error to occur as well.
+
+(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by Jim
+Saunders, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSQL kbvfp500aBUG kbvfp600 kbvfp600bug kbVS600sp3fix kbGrpDSFox kbSQLProg 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,59 @@
+DOCUMENT:Q99379  30-JUL-2001  [lanman]
+TITLE   :Configuring WFWG Workstations Through Novell Router
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+Consider a configuration that includes a Novell (or other) router, two net
+cards, and several Windows for Workgroups workstations in each of the two
+network segments. Here is how to make Windows for Workgroups workstations (or
+any other Microsoft NetBIOS ones) work through the Novell router:
+
+ - Add entries to LMHOSTS on each Microsoft node for any system that you want to
+   talk to through the router.
+
+ - Set the default gateway (DEFAULTGATEWAY0) on each workstation to the IP
+   address of the "near side" of the router.
+
+Workstations use the NetBIOS over TCP/IP interface, but NetBIOS uses broadcasts
+for name claims, name resolution, and so on. This means that functions relying
+on broadcasts won't work over the router unless it forwards broadcasts. The
+browser is an example.
+
+Use LMHOSTS to map NetBIOS names to IP ADDRESSES, and HOSTS to map Internet
+domain names to IP ADDRESSES. TCP/IP utilities such as FTP and Telnet use
+Internet domain names, and Windows for Workgroups file and print services use
+NetBIOS names.
+
+REFERENCES
+==========
+
+"LAN Manager Resource Kit," volume 3 number 9, pages 8-15
+
+TCP/IP Transport Supervisor Guide of NetWare, pages 5-4 to 5-7
+
+Additional query words: wfw wfwg 2.10 2.1 2.10a 2.1a 2.20 2.2
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

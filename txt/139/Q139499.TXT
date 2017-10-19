@@ -1,0 +1,58 @@
+DOCUMENT:Q139499  13-JUN-2001  [sna]
+TITLE   :TN3270 Server Doesn't Dynamically Recognize LUA LU Config Change
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 2.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If LUA LUs are added or removed using SNA Server Admin, the TN3270 Server
+configuration utility must be re-run to recognize these changes. The TN3270
+server does not dynamically adjust to LUA LU configuration changes.
+
+
+MORE INFORMATION
+================
+
+TN3270 Server does not update the number of sessions available (Sessions=)
+dynamically. To update TN3270 Server after you add/delete LUs to SNA Server,
+choose Config from the TN3270 Administrator. You are prompted by a dialog box
+stating "SNA Server configuration has been changed since last update." This
+dialog box is displayed when the number of LUs has changed for an SNA resource
+after the resource has been configured for TN3270 Service. The conflicting
+values are displayed. By choosing the default entry, you allow TN3270 Service to
+resolve the conflict. Otherwise enter the correct value for your environment.
+
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ211
+Version           : WINDOWS:2.11
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

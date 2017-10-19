@@ -1,0 +1,87 @@
+DOCUMENT:Q130385  19-OCT-2000  [pcmail]
+TITLE   :PC Mac: Err Msg: Error 43: Unable to Create Working Directory
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.2, on platform(s):
+    - the operating system: Mac OS (ALL) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While you save an attachment from versions 3.0 and 3.2 of Microsoft Mail for PC
+Networks, Macintosh workstation, you may receive the following error message:
+
+   Error 43: Unable to create working directory file_name.
+
+The attachment will be correctly saved if you select OK after you get the above
+error.
+
+CAUSE
+=====
+
+This problem is caused by the LOWRCASE.GLB file being located in the GLB
+subdirectory of the Microsoft Mail postoffice database.
+
+RESOLUTION
+==========
+
+To resolve this problem, remove the LOWRCASE.GLB file from the GLB subdirectory.
+You can either rename the file or delete it.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 3.0 and 3.2 of
+Microsoft Mail for PC Networks, Macintosh workstation. We are researching this
+problem and will post new information here in the Microsoft Knowledge Base as it
+becomes available.
+
+NOTE: The problem occurs in versions 3.0.3 to 3.0.6 of the Macintosh workstation.
+
+MORE INFORMATION
+================
+
+The LOWRCASE.GLB file is only required on postoffices located on some NFS- type
+(like Sun's PC-NFS) network operating systems and possibly on AT&T's Starlan
+network operating system. It is usually not required on postoffices located on
+other network operating systems. Therefore, a workaround for this problem is to
+simply remove all LOWRCASE.GLB files located in the GLB subdirectories of any
+postoffices that are not stored on NFS-type or AT&T's Starlan network
+operating systems.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q127079 PC Mac DB: Purpose and Location of LOWRCASE.GLB
+
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

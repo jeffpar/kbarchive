@@ -1,0 +1,85 @@
+DOCUMENT:Q177777  28-MAR-2001  [exchange]
+TITLE   :XADM: Missing DLL Running Crystal Reports
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you run Seagate's Crystal Reports on an computer running Exchange Server
+4.0 or 5.0 with Service Pack 2 installed, you may receive the following error
+message when attempting to open the Mailbox.rpt file in the Samples directory:
+
+   The Library P2SexSr.dll cannot be found, continue to open the report for
+   viewing only
+
+NOTE: Since this article was written, Seagate Software has become Crystal
+Decisions. For more information, see the following Web site:
+
+   http://www.crystaldecisions.net/ (http://www.crystaldecisions.net/)
+
+CAUSE
+=====
+
+Crystal Reports for Exchange on the BackOffice Resource Kit includes both the
+Report Viewer and the Report Designer. The Report Viewer can access all data
+sources (Exchange, SMS, NT, and so on), while the Report Designer can only
+access Exchange data. This error occurs because the Report Designer is trying to
+access a non-Exchange data source.
+
+The error occurs because the P2SexSr.dll file is inaccessible to the Report
+Designer function.
+
+WORKAROUND
+==========
+
+Seagate Support has verified that the P2SexSr.dll can only be obtained by
+purchasing the 101 BackOffice Report Pack.
+
+MORE INFORMATION
+================
+
+Because the file is not available to that particular version of Crystal Reports,
+Seagate has clarified the error message in Crystal Reports version 4.5. It
+states the following:
+
+   Crystal Reports for Exchange Resource Kit allows you to report on Exchange
+   data. For complete data access upgrade to Crystal Reports 5.0, contact
+   Seagate Software at 800-877-2340, 604-681-3435, or visit our Web site,
+   www.img.seagatesoftware.com, for more information. Continue opening report
+   for viewing only?
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

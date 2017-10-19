@@ -1,0 +1,68 @@
+DOCUMENT:Q192097  21-JUL-2001  [visualc]
+TITLE   :INFO: MFC and ATL Are Not Supported on Windows CE Palm-size PC
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:6.0; :2.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbATL kbMFC kbVC500 kbVC600 kbOSWinCE200 kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Toolkit for Visual C++ 6.0 
+ - Microsoft Windows CE, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Neither MFC nor ATL are supported on Windows CE version 2.0 for the Palm-size
+PC. When you build applications for the Palm-size PC using the Windows CE
+Platform SDK, Palm-size PC Edition, you might receive compiler errors if you are
+using ATL or MFC.
+
+Do not use MFC or ATL in applications targeted for Windows CE for the Palm-size
+PC.
+
+MORE INFORMATION
+================
+
+A symptomatic error when building a project using MFC or ATL for the Palm-size
+PC is:
+
+   fatal error RC1015: cannot open include file 'winres.h'.
+
+NOTE: The Windows CE Toolkit for Visual C++ 6.0 includes MFC and ATL support for
+the Palm-size PC.
+
+REFERENCES
+==========
+
+Ppcreadme.htm from the Windows CE Platform SDK, Palm-size PC Edition contains
+the following statement in the Known Problems section:
+
+   the Palm-size PC does not support MFC
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbATL kbMFC kbVC500 kbVC600 kbOSWinCE200 kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbWinCETKVCSearch kbWinCESearch kbWinCE200 kbWinCETK600VC
+Version           : WINDOWS:6.0; :2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

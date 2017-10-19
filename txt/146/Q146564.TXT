@@ -1,0 +1,90 @@
+DOCUMENT:Q146564  16-MAR-1999  [exchange]
+TITLE   :XCLN: Err Msg: Rules in Error
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You might receive the following error message either when starting a Microsoft
+Exchange client or after receiving a new message that a rule attempts to
+process.
+
+   Title : Rules in Error
+   Rule
+   Subject:xxxMOVE TO:<unavailable>
+   Error:
+   Failed to perform client side action
+
+CAUSE
+=====
+
+The Personal Folder is password protected and the proper password has not been
+entered. This problem can occur under two circumstances:
+
+ - Assume you quit from Microsoft Exchange and a personal folder has the focus.
+   The next time you start Microsoft Exchange, you are prompted for the password
+   immediately. In this case, the rule can find the folder and processes
+   correctly.
+
+   If, however, when you quit Microsoft Exchange, the Mailbox has focus (instead
+   of a personal folder), the rule tries to process before knowing the password
+   to the personal folder and the "Rules in error" message appears. Any mail
+   messages that were to be copied to the personal folder, will instead appear
+   in the Inbox of the Mailbox.
+
+ - You cancel a personal folder password dialog without typing the password
+   during startup of the Microsoft Exchange client, and a message is received
+   (at any point) that the Inbox Assistant attempts to process (copy or move) to
+   that personal folder. Because the personal folder cannot be opened, the rule
+   cannot be processed.
+
+RESOLUTION
+==========
+
+When you exit Microsoft Exchange, place focus on a personal folder (not the
+Mailbox).
+
+When you start Microsoft Exchange, enter the password for (any) personal folders
+involved with rules processing.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 4.0 of the Microsoft
+Exchange clients for Windows 3.x and Windows NT. We are researching this problem
+and will post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+Additional query words: faq
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange500NT
+Version           : WINDOWS:4.0,5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

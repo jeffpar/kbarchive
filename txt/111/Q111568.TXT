@@ -1,0 +1,79 @@
+DOCUMENT:Q111568  30-SEP-1999  [win3x]
+TITLE   :Video Display Problems with MS-DOS Prompt and Trident Card
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use ALT+TAB to switch from, and then back to, an MS-DOS Prompt session
+under Microsoft Windows for Workgroups, the characters may become garbled. If
+you press ALT+ENTER to put the MS-DOS Prompt session in a window, the screen is
+redrawn correctly.
+
+
+CAUSE
+=====
+
+This problem occurs when you use the Windows for Workgroups 3.11 Super VGA video
+driver with a Trident VGA card that has 1 megabyte of RAM.
+
+This problem occurs with the following Windows for Workgroups video drivers:
+
+ - Super VGA (800x600, 16 colors)
+
+ - Super VGA (800x600, 256 colors, large fonts)
+
+ - Super VGA (800x600, 256 colors, small fonts)
+
+WORKAROUND
+==========
+
+To work around this problem, use one of the following drivers:
+
+ - The Windows for Workgroups VGA or VGA (3.0) video display driver
+
+ - The Super VGA 256-color video driver (SVGA.EXE).
+
+ - An updated driver from Trident. As of February 27, 1994, the most recent
+   drivers are available from the Trident bulletin board service are found in
+   the compressed file WIN31B.ZIP.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows for Workgroups version
+3.11. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 3.11 messed up repeated deleted truncated
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

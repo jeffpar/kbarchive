@@ -1,0 +1,77 @@
+DOCUMENT:Q82459  07-NOV-1999  [win95x]
+TITLE   :Procom Technology's SCSI Driver Causes Windows Setup to Hang
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You are using a Procom Technology SCSI disk driver, and the Microsoft Windows
+Setup program stops responding (hangs) when checking the system configuration.
+
+CAUSE
+=====
+
+Procom Technology's SCSI disk driver revision 1.3, September 1991, (filename:
+SCSIDISK.SYS) causes this problem.
+
+WORKAROUND
+==========
+
+Doing one of the following allows the Windows 3.1 Setup program to function
+properly:
+
+ - Comment (remark) out the SMARTDRV line in the CONFIG.SYS or AUTOEXEC.BAT
+   file. (To do this, open the CONFIG.SYS or AUTOEXEC.BAT file in a text editor
+   and type REM at the beginning of the SMARTDRV line.)
+
+   -or-
+
+ - Comment (remark) out the DEVICE=SCSIDISK.SYS line in the CONFIG.SYS file. (To
+   do this, open the CONFIG.SYS file in a text editor and type REM at the
+   beginning of the DEVICE=SCSIDISK.SYS line.)
+
+After Windows 3.1 Setup has completed, you can reactivate the commented-out line.
+(To do this, open the CONFIG.SYS or AUTOEXEC.BAT file in a text editor and
+delete REM from the beginning of the line.)
+
+MORE INFORMATION
+================
+
+For more information, contact Procom Technology.
+
+The SCSI product included here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 3.10 3.1 3.11 third party procomm pro comm
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

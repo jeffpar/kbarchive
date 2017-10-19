@@ -1,0 +1,74 @@
+DOCUMENT:Q208423  04-SEP-2001  [frontpg]
+TITLE   :FP: WMF Files Display Larger Than Expected
+PRODUCT :Word Front Page
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 2002 
+ - Microsoft FrontPage 2000 
+ - Microsoft FrontPage 98 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you insert a Windows Metafile Format (WMF) image, the image appears larger
+than expected.
+
+CAUSE
+=====
+
+This behavior occurs if you are using older WMF files. Clip art in Microsoft
+Office 2000, Microsoft FrontPage 2000, Microsoft Office XP, and Microsoft
+FrontPage 2002 use an updated file format.
+
+WORKAROUND
+==========
+
+To work around this behavior, resize the image. To do this, follow these steps:
+
+1. Position your mouse pointer over a corner of the image.
+
+2. When the pointer changes to a two-headed arrow pointer, hold down the left
+   mouse button, and drag the mouse pointer toward the center of the image.
+
+3. When the image is the size you want, release the mouse button.
+
+4. Save the page and image.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+
+Additional query words: large huge image bigger increase animated
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbFrontPageSearch kbFrontPage2002 _IKkbZNotKeyword4 kbFrontPage2000Search kbFrontPage2002Search kbFrontPage98Search kbZNotKeyword3 kbZNotKeyword5
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

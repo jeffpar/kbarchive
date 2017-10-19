@@ -1,0 +1,355 @@
+DOCUMENT:Q149070  08-NOV-2001  [homekids]
+TITLE   :3D Movie Maker: Files Installed by 3D Movie Maker
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:1.00
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft 3D Movie Maker for Windows, version 1.0 
+ - Microsoft Nickelodeon 3D Movie Maker for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the files on the 3D Movie Maker compact disc, as well as the
+files that 3D Movie Maker installs on your hard drive.
+
+MORE INFORMATION
+================
+
+Files on the 3D Movie Maker Compact Disc
+----------------------------------------
+
+Volume in drive D is 3DMOVIE100 (where drive D is the CD-ROM drive)
+ Directory of D:\*.*
+
+3DMOVIE      <DIR>     10-09-95  1:00a
+MMCAT        <DIR>     10-09-95  1:00a
+PSS          <DIR>     10-09-95  1:00a
+SAMPLES      <DIR>     10-09-95  1:00a
+SETUP        <DIR>     10-09-95  1:00a
+setup.exe       73056  10-09-95  1:00a
+autorun.inf       215  10-09-95  1:00a
+setup.ini         149  10-09-95  1:00a
+setup.lst        1533  10-09-95  1:00a
+setup.tdf          84  10-09-95  1:00a
+
+ Directory of D:\3dmovie\*.*
+
+.            <DIR>     10-09-95  1:00a
+..           <DIR>     10-09-95  1:00a
+bkgds.3cn    30012681  10-09-95  1:00a
+mtrls.3cn      942597  10-09-95  1:00a
+snds.3cn     11305970  10-09-95  1:00a
+tdfs.3cn      4664711  10-09-95  1:00a
+tmpls.3cn    31960576  10-09-95  1:00a
+3dmovie.3mm       425  10-09-95  1:00a
+actor.3th      160670  10-09-95  1:00a
+actresl.3th     10233  10-09-95  1:00a
+bkgds.3th     1091088  10-09-95  1:00a
+mtrl.3th        42134  10-09-95  1:00a
+prop.3th        61066  10-09-95  1:00a
+sound.3th       42116  10-09-95  1:00a
+tbox.3th        22675  10-09-95  1:00a
+04logn3.avi   1416092  10-09-95  1:00a
+05logn4.avi   2903690  10-09-95  1:00a
+backstag.avi  7188128  10-09-95  1:00a
+cntdwn5.avi    797246  10-09-95  1:00a
+goida.avi     1376556  10-09-95  1:00a
+goprj.avi     1492514  10-09-95  1:00a
+gostu.avi     1408182  10-09-95  1:00a
+idea2.avi     2692056  10-09-95  1:00a
+idea3.avi      692014  10-09-95  1:00a
+idea4.avi      673938  10-09-95  1:00a
+logn1.avi     5797280  10-09-95  1:00a
+logn5.avi     1811146  10-09-95  1:00a
+logn06.avi    1854614  10-09-95  1:00a
+mhole2.avi    8396288  10-09-95  1:00a
+proj1.avi      730294  10-09-95  1:00a
+proj2.avi      879794  10-09-95  1:00a
+proj3.avi      406498  10-09-95  1:00a
+proj4.avi     3154248  10-09-95  1:00a
+proj5.avi     1422488  10-09-95  1:00a
+proj6.avi     1215410  10-09-95  1:00a
+projt2.avi    3661538  10-09-95  1:00a
+ticket1.avi   3838390  10-09-95  1:00a
+ticket2.avi   1524432  10-09-95  1:00a
+tools1.avi    3979706  10-09-95  1:00a
+3dmovie.chk    132259  10-09-95  1:00a
+bldgdata.chk 68585760  10-09-95  1:00a
+bldghd.chk    4946434  10-09-95  1:00a
+building.chk 32632713  10-09-95  1:00a
+help.chk       769046  10-09-95  1:00a
+helpaud.chk  40206852  10-09-95  1:00a
+sharecd.chk   2387826  10-09-95  1:00a
+shared.chk     888870  10-09-95  1:00a
+studio.chk    3785836  10-09-95  1:00a
+3dmovie.exe   1117696  10-09-95  1:00a
+3dmovie.ms     208953  10-09-95  1:00a
+
+ Directory of D:\mmcat\*.*
+
+.            <DIR>     10-09-95  1:00a
+..           <DIR>     10-09-95  1:00a
+DIBS         <DIR>     10-09-95  1:00a
+WAVS         <DIR>     10-09-95  1:00a
+mmdc.dat         1149  10-09-95  1:00a
+mmdc1.dat       13423  10-09-95  1:00a
+bottom.dib       2722  10-09-95  1:00a
+btnbar.dib       4810  10-09-95  1:00a
+contbtn.dib      1462  10-09-95  1:00a
+end.dib         34518  10-09-95  1:00a
+intro.dib        9252  10-09-95  1:00a
+splash.dib     197686  10-09-95  1:00a
+toc3dmvm.dib    71596  10-09-95  1:00a
+vbrun300.dll   398416  10-09-95  1:00a
+ver.dll          9008  10-09-95  1:00a
+mmcat.exe       29464  10-09-95  1:00a
+picclip.vbx     15840  10-09-95  1:00a
+spush.vbx       22532  10-09-95  1:00a
+intro.wav       85816  10-09-95  1:00a
+
+ Directory of D:\mmcat\dibs\*.*
+
+.            <DIR>     10-09-95  1:00a
+..           <DIR>     10-09-95  1:00a
+bodymain.dib   197686  10-09-95  1:00a
+bodypopa.dib    52482  10-09-95  1:00a
+bodypopb.dib    52482  10-09-95  1:00a
+bodypopc.dib    52482  10-09-95  1:00a
+bodypopd.dib    52482  10-09-95  1:00a
+crtvmain.dib   197686  10-09-95  1:00a
+crtvpopa.dib    52482  10-09-95  1:00a
+crtvpopb.dib    52482  10-09-95  1:00a
+crtvpopc.dib    52482  10-09-95  1:00a
+crtvpopd.dib    52482  10-09-95  1:00a
+dangmain.dib   197686  10-09-95  1:00a
+dangpopa.dib    52482  10-09-95  1:00a
+dangpopb.dib    52482  10-09-95  1:00a
+dangpopc.dib    52482  10-09-95  1:00a
+dangpopd.dib    52482  10-09-95  1:00a
+dinomain.dib    86608  10-09-95  1:00a
+dinopopa.dib    51594  10-09-95  1:00a
+dinopopb.dib    30170  10-09-95  1:00a
+dinopopc.dib    31724  10-09-95  1:00a
+dinopopd.dib    49126  10-09-95  1:00a
+finemain.dib   197686  10-09-95  1:00a
+finepopa.dib    52482  10-09-95  1:00a
+finepopb.dib    52482  10-09-95  1:00a
+finepopc.dib    52482  10-09-95  1:00a
+finepopd.dib    52482  10-09-95  1:00a
+leopmain.dib   197686  10-09-95  1:00a
+leoppopa.dib    52482  10-09-95  1:00a
+leoppopb.dib    52482  10-09-95  1:00a
+leoppopc.dib    52482  10-09-95  1:00a
+leoppopd.dib    52482  10-09-95  1:00a
+msbomain.dib   146752  10-09-95  1:00a
+msbopopa.dib    53562  10-09-95  1:00a
+msbopopb.dib    52402  10-09-95  1:00a
+msbopopc.dib    51056  10-09-95  1:00a
+msbopopd.dib    54152  10-09-95  1:00a
+sbusmain.dib   197686  10-09-95  1:00a
+sbuspopa.dib    52482  10-09-95  1:00a
+sbuspopb.dib    52482  10-09-95  1:00a
+sbuspopc.dib    52482  10-09-95  1:00a
+sbuspopd.dib    52482  10-09-95  1:00a
+xplnmain.dib   145394  10-09-95  1:00a
+xplnpopa.dib    53350  10-09-95  1:00a
+xplnpopb.dib    34012  10-09-95  1:00a
+xplnpopc.dib    52484  10-09-95  1:00a
+xplnpopd.dib    52484  10-09-95  1:00a
+
+ Directory of D:\mmcat\wavs\*.*
+
+.            <DIR>     10-09-95  1:00a
+..           <DIR>     10-09-95  1:00a
+bd501.wav      232840  10-09-95  1:00a
+bd1027.wav      50608  10-09-95  1:00a
+bd3000.wav     104778  10-09-95  1:00a
+body.wav        89998  10-09-95  1:00a
+crtv.wav        54860  10-09-95  1:00a
+dang.wav       120208  10-09-95  1:00a
+dino.wav       116514  10-09-95  1:00a
+hh.wav         143994  10-09-95  1:00a
+kids.wav        30820  10-09-95  1:00a
+leop.wav       223490  10-09-95  1:00a
+msbocean.wav    78902  10-09-95  1:00a
+solr.wav       152464  10-09-95  1:00a
+xpln.wav        92684  10-09-95  1:00a
+
+ Directory of D:\pss\*.*
+
+.            <DIR>     10-09-95  1:00a
+..           <DIR>     10-09-95  1:00a
+3dmm.cnt         2157  10-09-95  1:00a
+msinfo32.cnt     2682  10-09-95  1:00a
+imgwalk.dll     18432  10-09-95  1:00a
+msinf16h.exe    16240  10-09-95  1:00a
+msinfo32.exe   432640  10-09-95  1:00a
+3dmm.fts            0  10-09-95  1:00a
+3dmm.gid            0  10-09-95  1:00a
+3dmm.hlp       129398  10-09-95  1:00a
+msinfo32.hlp    38246  10-09-95  1:00a
+adpcm11.wav     38522  10-09-95  1:00a
+adpcm22.wav     76410  10-09-95  1:00a
+
+ Directory of D:\samples\*.*
+
+.            <DIR>     10-09-95  1:00a
+..           <DIR>     10-09-95  1:00a
+bongo.3mm       45131  10-09-95  1:00a
+boooooo.3mm     47498  10-09-95  1:00a
+citytour.3mm    35986  10-09-95  1:00a
+graveyrd.3mm    49322  10-09-95  1:00a
+haunted.3mm     54179  10-09-95  1:00a
+hospital.3mm   467954  10-09-95  1:00a
+jungle.3mm     127503  10-09-95  1:00a
+message.3mm    172056  10-09-95  1:00a
+space.3mm      249374  10-09-95  1:00a
+sprog.3mm      233967  10-09-95  1:00a
+terror.3mm     241888  10-09-95  1:00a
+thebook.3mm    444166  10-09-95  1:00a
+thelodge.3mm    43914  10-09-95  1:00a
+thethief.3mm   261301  10-09-95  1:00a
+venus31.3mm    326324  10-09-95  1:00a
+where.3mm      111608  10-09-95  1:00a
+
+ Directory of D:\setup\*.*
+
+.            <DIR>     10-09-95  1:00a
+..           <DIR>     10-09-95  1:00a
+bongo.3mm       16281  10-09-95  1:00a
+bridge.3mm      19352  10-09-95  1:00a
+dialogue.3mm    15756  10-09-95  1:00a
+jog.3mm         20564  10-09-95  1:00a
+mummy.3mm       27959  10-09-95  1:00a
+surprise.3mm    16605  10-09-95  1:00a
+3dmsetup.dll   140800  10-09-95  1:00a
+mssetup.dll    249344  10-09-95  1:00a
+acmsetup.exe   330752  10-09-95  1:00a
+autorun.exe     14848  10-09-95  1:00a
+acmsetup.hlp    18397  10-09-95  1:00a
+setup.inf        3406  10-09-95  1:00a
+setup.stf        4686  10-09-95  1:00a
+comic.ttf       62152  10-09-95  1:00a
+comicbd.ttf     55892  10-09-95  1:00a
+
+Files that 3D Movie Maker Installs on Your Hard Drive
+-----------------------------------------------------
+
+Directory of C:\Program Files
+MICROS~3       <DIR>        11-06-95 11:31a Microsoft Kids
+         0 file(s)              0 bytes
+
+Directory of C:\Program Files\Microsoft Kids
+
+.              <DIR>        11-06-95 11:31a .
+..             <DIR>        11-06-95 11:31a ..
+COMMON~1       <DIR>        11-06-95 11:31a Common Files
+3DMOVI~1       <DIR>        11-06-95 11:31a 3D Movie Maker
+USERS          <DIR>        11-06-95 11:37a USERS
+0 file(s)              0 bytes
+
+Directory of C:\Program Files\Microsoft Kids\3D Movie Maker
+
+.              <DIR>        11-06-95 11:31a .
+..             <DIR>        11-06-95 11:31a ..
+3dmovie  exe     1,117,696  10-09-95 12:00a 3dmovie.exe
+3dmovie  chk       132,259  10-09-95 12:00a 3dmovie.chk
+bldghd   chk     4,946,434  10-09-95 12:00a bldghd.chk
+help     chk       769,046  10-09-95 12:00a help.chk
+shared   chk       888,870  10-09-95 12:00a shared.chk
+studio   chk     3,785,836  10-09-95 12:00a studio.chk
+actor    3th       160,670  10-09-95 12:00a actor.3th
+actresl  3th        10,233  10-09-95 12:00a actresl.3th
+bkgds    3th     1,091,088  10-09-95 12:00a bkgds.3th
+mtrl     3th        42,134  10-09-95 12:00a mtrl.3th
+prop     3th        61,066  10-09-95 12:00a prop.3th
+sound    3th        42,116  10-09-95 12:00a sound.3th
+tbox     3th        22,675  10-09-95 12:00a tbox.3th
+3dmm     hlp       129,398  10-09-95 12:00a 3dmm.hlp
+3dmm     gid             0  10-09-95 12:00a 3dmm.gid
+3dmm     fts             0  10-09-95 12:00a 3dmm.fts
+3dmm     cnt         2,157  10-09-95 12:00a 3dmm.cnt
+17 file(s)     13,201,678 bytes
+
+Directory of C:\Program Files\Microsoft Kids\Common Files
+
+.              <DIR>        11-06-95 11:31a .
+..             <DIR>        11-06-95 11:31a ..
+SETUP          <DIR>        11-06-95 11:31a Setup
+USERS          <DIR>        11-06-95 11:08a Users
+         0 file(s)              0 bytes
+
+Directory of C:\Program Files\Microsoft Kids\Common Files\Setup
+
+.              <DIR>        11-06-95 11:31a .
+..             <DIR>        11-06-95 11:31a ..
+setup    exe        73,056  10-09-95 12:00a setup.exe
+ms3dmu   lst         1,533  10-09-95 12:00a ms3dmu.lst
+ms3dmu   stf         6,804  11-06-95 11:37a ms3dmu.stf
+         3 file(s)        100,688 bytes
+
+Directory of C:\Program Files\Microsoft Kids\USERS
+
+.              <DIR>        11-06-95 11:37a .
+..             <DIR>        11-06-95 11:37a ..
+MELANIE        <DIR>        11-06-95 11:37a MELANIE
+MCZEE          <DIR>        11-06-95 11:37a McZee
+0 file(s)              0 bytes
+
+Directory of C:\Program Files\Microsoft Kids\USERS\McZee
+
+.              <DIR>        11-06-95 11:37a .
+..             <DIR>        11-06-95 11:37a ..
+movies   lnk           301  11-06-95 11:37a movies.lnk
+         1 file(s)            301 bytes
+
+Directory of C:\Program Files\Microsoft Kids\USERS\MELANIE
+
+.              <DIR>        11-06-95 11:37a .
+..             <DIR>        11-06-95 11:37a ..
+dialogue 3mm        15,756  10-09-95 12:00a dialogue.3mm
+jog      3mm        20,564  10-09-95 12:00a jog.3mm
+surprise 3mm        16,605  10-09-95 12:00a surprise.3mm
+mummy    3mm        27,959  10-09-95 12:00a mummy.3mm
+bongo    3mm        16,281  10-09-95 12:00a bongo.3mm
+bridge   3mm        19,352  10-09-95 12:00a bridge.3mm
+6 file(s)        116,517 bytes
+
+Directory of C:\WIN95\Start Menu\Programs\Microsoft Kids
+
+.              <DIR>        11-06-95 10:31a .
+..             <DIR>        11-06-95 10:31a ..
+3dmovi~1 lnk           446  11-06-95 11:37a 3d movie maker.lnk
+3dmovi~2 lnk           437  11-06-95 11:37a 3d movie maker help.lnk
+kidsca~1 lnk           322  11-06-95  3:28p kids catalog.lnk
+         3 file(s)          1,205 bytes
+
+Additional query words: kids mczee kbmm director animated movies melanie 3-d three dimensional 3d 3dmm lists file listing kbtshoot homekid homekids
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kb3dMovieMaker
+Version           : 1.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

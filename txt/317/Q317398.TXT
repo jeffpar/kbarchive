@@ -1,0 +1,66 @@
+DOCUMENT:Q317398  14-FEB-2002  [homemm]
+TITLE   :Reader 2.0: "Server Is Down for Maintenance" Message
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Reader version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to activate Reader 2.0, you may receive a message that states
+that the server is down for maintenance.
+
+CAUSE
+=====
+
+This issue can occur because Reader 2.0 is not compatible with Microsoft Windows
+95. Activation requires Microsoft Windows 98 or later.
+
+WORKAROUND
+==========
+
+To work around this issue, install Reader 2.0 on a computer that runs Windows 98
+or later, or upgrade your operating system.
+
+MORE INFORMATION
+================
+
+For more information about Reader 2.0, see the following Microsoft Web site:
+
+   http://www.microsoft.com/reader/download.asp
+
+For more information about Activation, see the following Microsoft Web site:
+
+   http://das.microsoft.com/activate/en-us/activatefaq.asp
+
+Additional query words:
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbReaderSearch kbReader200
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

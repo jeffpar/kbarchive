@@ -1,0 +1,78 @@
+DOCUMENT:Q151286  20-FEB-2002  [win95x]
+TITLE   :Top Articles on Setting Up Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+INSTRUCTION
+-----------
+
+The Knowledge Base is available on the World Wide Web and The Microsoft Network.
+You can also access the Knowledge Base if you purchase a Microsoft TechNet
+compact disc subscription.
+
+The Microsoft Knowledge Base on the World Wide Web
+--------------------------------------------------
+
+Connect to the Knowledge Base by using the following address
+
+   http://support.microsoft.com/support/default.asp
+
+and follow the detailed instructions on the page.
+
+ARTICLE LISTING
+---------------
+
+ITEM ID ARTICLE TITLE                                                PAGES
+--------------------------------------------------------------------------
+Q118579 Contents of the Windows Msdos.sys File                           6
+Q123096 Windows 95 Err Msg: Setup Error G1. Windows Setup Cannot...      2
+Q123876 Installed Components for Typical, Compact, or Portable Setup     3
+Q125480 Boot Sector Protection Causes Windows 95 to Hang                 2
+Q128400 Windows 95 Setup Switches                                        5
+Q128730 Error Message "Invalid System Disk" After Setup Reboots          3
+Q128920 Setup Hangs on First Boot Configuring Plug and Play Devices      2
+Q129260 Windows 95 Setup: Description and Troubleshooting Steps         10
+Q132186 Cannot Install/Upgrade Windows 95 from GUI on IBM Aptiva 710     1
+Q132274 Installing Microsoft Plus! Does Not Prevent Windows 95 Uninstall 3
+Q136415 Err Msg: SUWIN Caused a General Protection Fault in Module...    1
+Q137340 Err Msg: The File C:\W95undo.dat Is Missing or Invalid           1
+Q138127 How to Uninstall Windows 95                                      2
+Q138349 Windows 95 Installation Requirements                             2
+
+End of listing.
+
+Additional query words:
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

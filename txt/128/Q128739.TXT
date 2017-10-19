@@ -1,0 +1,88 @@
+DOCUMENT:Q128739  09-NOV-1999  [pcmail]
+TITLE   :PC Win: Saving Multiple Messages into One File
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are times when you may wish to save a group of messages to a text file for
+editing and consolidation. The following explains how to save multiple messages
+into one file.
+
+MORE INFORMATION
+================
+
+First Method
+------------
+
+>
+
+1. Sort your messages as necessary to accomplish your editing task.
+
+2. From the File menu, choose Save. You will see the Save Message dialog box.
+   Save the first message.
+
+3. Select the second message you wish to save in the file.
+
+4. From the File menu, choose Save. You will see the Save Message dialog box.
+   Save the second message to the same name as the first message.
+
+5. When the next dialog box asks if you want to Append, Overwrite, or Cancel
+   saving the second message to the same name, select Append. This will save the
+   second message at the end of the existing file.
+
+Second Method
+-------------
+
+1. Select the messages you want saved to a file.
+
+   To select multiple messages with the mouse, select the first message, then
+   hold the CTRL key, and select the additional messages.
+
+   To select a continuous list with the keyboard, select the first message, then
+   hold SHIFT key, and use the up or down arrow keys to select the messages. the
+
+2. From the File menu, choose Save As, and provide a file name.
+
+NOTE: These steps will allow the message text (messages without attachments) of
+multiple messages to be saved as a single file. If any objects are linked only
+the acknowledgment of the file will appear in the following format:
+
+   <<File Attachment: filename >>.
+
+If any objects are embedded, the acknowledgment will be in the following format:
+
+   <<OLE Object: application version filetype>>
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,65 @@
+DOCUMENT:Q172113  18-DEC-1999  [homemm]
+TITLE   :Bookshelf Intro: Refresh Button Returns You to Opening Screen
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf Intro Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are viewing an article in Microsoft Bookshelf Intro Edition and you click
+the Refresh/Reload button in your browser to refresh the article you are
+viewing, you are returned to the opening search window of Bookshelf.
+
+CAUSE
+=====
+
+Bookshelf Intro Edition does not keep track of the current article you are
+viewing.
+
+WORKAROUND
+==========
+
+To work around this problem, right-click inside the article you are viewing, and
+then click Refresh on the menu that appears.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Bookshelf Intro
+Edition. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: xbookshelf xbs intro introduction introductory edition ed. Redraw homeonline F5
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbBookshelfSearch
+Version           : WINDOWS:
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

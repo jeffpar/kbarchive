@@ -1,0 +1,100 @@
+DOCUMENT:Q76078  04-MAY-2001  [masm]
+TITLE   :FIX: Error A2114 When Using OPTION PROLOGUE
+PRODUCT :Microsoft Macro Assembler
+PROD/VER:MS-DOS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Macro Assembler (MASM) version 6.0 may incorrectly generate the
+following error when using a user-defined prologue
+
+   error A2114: INVOKE argument type mismatch : argument: x
+
+(where x is an argument number). The sample code below produces the following
+errors when assembling:
+
+   error A2114: INVOKE argument type mismatch : argument : 2
+   error A2114: INVOKE argument type mismatch : argument : 1
+
+This error occurs only if an INVOKE directive immediately follows a PROC
+statement.
+
+RESOLUTION
+==========
+
+If an executable statement or a label is placed between the PROC statement and
+the INVOKE statement, the error does not occur. In the sample code below,
+uncommenting the line preceding the invoke will cause the assembler to generate
+a local label and the code will assemble properly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MASM version 6.0. This problem
+was corrected in MASM version 6.0a.
+
+MORE INFORMATION
+================
+
+The following sample code can be used to demonstrate the problem.
+
+Sample Code
+-----------
+
+   ; Assemble options needed: none
+
+   .MODEL large, C
+
+   cPrologue MACRO szProcName, flags,
+                   cbParams, cbLocals,
+                   rgRegs, rgUserParams
+       LOCAL count
+       count equ 0
+       exitm <cbParams>
+   ENDM
+
+   OPTION PROLOGUE: cPrologue
+
+   Yak PROTO FAR, :WORD, :WORD, :WORD, :WORD
+
+   .CODE
+   Llama PROC NEAR
+   ; Uncomment following line to remove error
+   ; dummy:
+       INVOKE Yak, AX, BX, CX, DX
+   Llama ENDP
+   END Llama
+
+Additional query words: A2137 6.00 buglist6.00 fixlist6.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600
+Version           : MS-DOS:6.0
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

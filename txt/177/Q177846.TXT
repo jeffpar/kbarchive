@@ -1,0 +1,63 @@
+DOCUMENT:Q177846  08-NOV-2001  [homekids]
+TITLE   :Kids Plus!: Desktop Themes Wallpaper Is Not Displayed
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbenv kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Plus! for Kids, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start your computer, the Plus! for Kids desktop themes wallpaper may
+appear briefly on the screen, and then be replaced by a different wallpaper.
+
+CAUSE
+=====
+
+This behavior can occur if Microsoft Internet Explorer version 4.0 is installed,
+and the "View my Active Desktop as a web page" feature is enabled. With this
+feature enabled, the Plus! for Kids wallpaper is replaced with the Internet
+Explorer Active Desktop wallpaper.
+
+RESOLUTION
+==========
+
+To restore the Plus! for Kids wallpaper, select your Plus! for Kids desktop
+theme again by following these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Desktop Themes.
+
+3. In the Theme box, click the desktop theme you want, and then click OK.
+
+Additional query words: kidsplus kidsplus! pack background picture flash
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : _IKkbbogus kbGamesSearch kbPlusKids kbPlusSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

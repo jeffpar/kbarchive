@@ -1,0 +1,60 @@
+DOCUMENT:Q258749  11-DEC-2001  [winnt]
+TITLE   :Terminal Server May Hang with "STOP 0X0000001E in Cdm.sys"
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbTermServ
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use a Terminal Server that is running Citrix MetaFrame 1.0, you may
+receive a "STOP: 0x0000001e in Cdm.sys" error message and the Terminal Server
+may stop responding (hang). Independent Computing Architecture (ICA) client
+sessions may hang and not reconnect.
+
+The following event may be logged in the System event log before the Save Dump
+entry:
+
+   Event ID: 3025
+   Source: CDM
+   Description: \Device\CdmRedirector X (where X is the client session number)
+
+
+RESOLUTION
+==========
+
+To resolve this issue, contact Citrix to obtain the Me100068.exe hotfix:
+
+   http://www.citrix.com
+
+Additional query words: stop 0x1e winntstop winnt
+
+======================================================================
+Keywords          : kbenv kberrmsg kbTermServ 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

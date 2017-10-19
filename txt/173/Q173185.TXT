@@ -1,0 +1,64 @@
+DOCUMENT:Q173185  07-JAN-2000  [exchange]
+TITLE   :XCLN: Err Msg: The Schedule File Could Not Be Opened
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0,7.0,7.5; Win95:4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+ - Microsoft Exchange Client for Windows 95, versions 4.0, 5.0 
+ - Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+ - Microsoft Schedule+, versions 7.0, 7.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to open another user's schedule, the following error message is
+displayed:
+
+   The schedule file could not be opened. A message service provider
+   reported an error.
+
+CAUSE
+=====
+
+Replication may not have been correctly set up between the two involved sites.
+
+WORKAROUND
+==========
+
+To work around this problem, use the Microsoft Exchange Administrator program to
+set up directory replication between the involved sites.
+
+NOTE: Setting up custom recipients for the user of another site is not sufficient
+to open a cross-site schedule. A network connection must exist between the two
+computers where the schedules reside.
+
+Additional query words: access denied Schedule File
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword2 kbScheduleSearch kbSchedule700 kbZNotKeyword3 kbSchedule750 kbExchange400NT kbExchange500NT
+Version           : WINDOWS:4.0,5.0,7.0,7.5; Win95:4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

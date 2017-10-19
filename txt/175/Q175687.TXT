@@ -1,0 +1,94 @@
+DOCUMENT:Q175687  09-AUG-2001  [winnt]
+TITLE   :Win32k.sys Causes STOP 0x0000001e and 0x0000000a on SMP
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbWinNT400sp4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Programs runing on multiprocessor computers that start and close GUIs frequently
+may cause either of the following STOP blue screen error messages to be
+displayed:
+
+   STOP 0x0000001e (0xc0000005, 0xa00f7538, 0x00000000, 0x00000008)
+   KMODE_EXCEPTION_NOT_HANDLED
+
+
+-or-
+
+   STOP 0x0000000a(0x00000004, 0x0000001c, 0x00000000, 0x801175db)
+   IRQL_NOT_LESS_OR_EQUAL
+
+
+On some multiprocessor computers, programs with multiple threads that use the
+CreateProcess() or CreateProcessAsUser() API calls to start processes do not
+start because of desktop heap leaks. This inability to start results in a
+User32.dll or Kernel32.dll file initialization error when the desktop heap is
+exhausted.
+
+CAUSE
+=====
+
+This problem occurs because the thread object reference count breaks. The thread
+object reference count breaks because of a threadlockobject instruction within
+Win32k.sys that was not multiprocessor safe. This causes programs to quit
+abnormally. Because of the abnormal way in which the program quits, the desktop
+heap leaked until new processes could not be started. In some other instances,
+when a program quits abnormally, a blue screen error message may be displayed.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+Service Pack 4.
+
+Additional query words: wts tse terminalsvr
+
+======================================================================
+Keywords          : kbWinNT400sp4fix 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : :4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

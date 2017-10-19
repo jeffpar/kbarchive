@@ -1,0 +1,55 @@
+DOCUMENT:Q136022  13-DEC-1999  [homemm]
+TITLE   :Mac Bookshelf 95: Israel Anthem Suddenly Stops
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1995 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for the Macintosh 1995 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Israel Anthem in Bookshelf stops when the anthem nears the end of the audio
+clip.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the 1995 edition of Bookshelf
+Macintosh. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+There is no resolution to this problem. Although the sudden stop occurs, the
+problem does not cause any problem with the system.
+
+Additional query words: mac 1995 multi media multimedia multi-media mmtitles kbmm macmm quits halts hangs hanging hanged crashed crash crashes freeze frozen locked locked-up lock hang bombed bomb down halting silent
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeMMsearch kbBookshelfSearch kbBookShelf1995Mac
+Version           : :1995 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

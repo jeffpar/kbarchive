@@ -1,0 +1,67 @@
+DOCUMENT:Q194882  25-JUL-2001  [homemm]
+TITLE   :Encarta Virtual Globe 99: Cannot Use IntelliMouse Wheel to Zoom
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbhw kbinterop kbimu kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Virtual Globe 99, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While you use Encarta Virtual Globe 99, you may be unable to use the Microsoft
+IntelliMouse wheel to zoom in or out on the map.
+
+CAUSE
+=====
+
+This behavior can occur for any of the following reasons:
+
+ - You use the IntelliMouse wheel to pan the map across the screen.
+
+ - You draw a box around a specific map area you want to zoom in on.
+
+ - You use the Dynamic Sensor tool or the Measure tool.
+
+RESOLUTION
+==========
+
+To restore functionality to the IntelliMouse wheel, drag the zoom slider located
+at the bottom of the map to the left or the right.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta Virtual Globe
+99, version 1.0.
+
+Additional query words: multi multi-media media mm evg pointing device
+
+======================================================================
+Keywords          : kbhw kbinterop kbimu kbHardware 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaVirtGlobe99
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

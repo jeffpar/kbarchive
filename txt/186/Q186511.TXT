@@ -1,0 +1,78 @@
+DOCUMENT:Q186511  11-DEC-2001  [winnt]
+TITLE   :Terminal Server Commands: DBGTRACE
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+DBGTRACE enables and disables debug tracing.
+
+Syntax
+------
+
+Dbgtrace [name] [/system] [/all] [/c:class] [/e:enable] [/d] [/t]
+[/?]Dbgtrace [id] ] [/system] [/all] [/c:class] [/e:enable] [/d] [/t] [/?]
+
+Parameters
+----------
+
+name
+Specifies the name of the user or computer.
+
+id
+Specifies the logon ID of the user or computer.
+
+/system
+Specifies the system on which to run tracing.
+
+/all
+Runs tracing on all systems.
+
+/c:class
+Specifies the content for the class.
+
+/e:enable
+Enables tracing.
+
+/d
+Enables debugging.
+
+/t
+Runs tracing until interrupted.
+
+/? (help)
+Displays the syntax for the command and information about the command's options.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

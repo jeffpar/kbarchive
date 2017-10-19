@@ -1,0 +1,141 @@
+DOCUMENT:Q284284  06-AUG-2002  [homegame]
+TITLE   :Crimson Skies Err Msg: Error Starting Program the Msvp60.dll...
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Crimson Skies 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start Microsoft Crimson Skies, you may receive the following
+error message:
+
+   ERROR starting program the MSVCP60.DLL file is linked to missing export
+   MSVCRT.dll:_lc_collate_cp
+
+CAUSE
+=====
+
+This behavior can occur if any of the following conditions is true:
+
+ - You install the program, and then you attempt to start the program before you
+   restart your computer.
+
+ - The Windows Libraries Update is not installed on your computer.
+
+ - The Msvcrt.dll file is missing or damaged.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following methods in the order in which they are
+presented.
+
+Extract A New Copy of the Msvcrt.dll file
+-----------------------------------------
+
+To resolve this issue, extract a new copy of the Msvcrt.dll file from the
+original Microsoft Windows installation CD-ROM or floppy disk to the following
+folder:
+
+   <drive>:\Windows\System
+
+where <drive> is the drive letter of the hard disk on which Microsoft
+Windows is installed.
+
+NOTE: These steps are for Windows 98 only.
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "sfc" (without the quotation marks), and then click OK.
+
+3. Click "Extract one file from installation disk".
+
+4. In the text box, type "msvcrt.dll" (without the quotation marks), and then
+   click Start.
+
+5. Click OK, and then follow the instructions on backing up the existing file
+   before you overwrite it.
+
+6. If you are prompted to restart your computer, click Yes.
+
+For additional information about how to extract files from the Windows CD-ROM or
+a Windows floppy disk, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+   Q129605 How to Extract Original Compressed Windows Files
+
+If the issue continues to occur, proceed to the next method.
+
+Copy Msvcrt.dll File from the Crimson Skies CD-ROM
+--------------------------------------------------
+
+1. Click Start, point to Programs, and click Windows Explorer.
+
+2. Click the CD-ROM drive that contains the Microsoft Crimson Skies CD-ROM.
+
+3. Double-click the Game folder.
+
+4. Right-click the Msvcrt.dll file, and then click Copy.
+
+5. Click the Windows\System folder.
+
+6. Right-click an empty area in the System folder, and then click Paste.
+
+7. Click Yes to overwrite the file.
+
+8. Restart your computer.
+
+If the issue continues to occur, proceed to the next method.
+
+Download and Install the Windows Libraries Update
+-------------------------------------------------
+
+To download and install the Windows Libraries Update:
+
+1. Visit the following Microsoft Web site:
+
+   http://www.microsoft.com/downloads/search.asp?
+
+2. Next to "Search using", click Keyword Search.
+
+3. In the Keywords box, type "libraries update" (without the quotation marks).
+
+4. In the Operating System box, click the appropriate operating system for your
+   computer, and then click Find It!
+
+5. Under Title, click the Microsoft Libraries Update Web link.
+
+6. Follow the instructions on the screen to download and install the Microsoft
+   Libraries Update.
+
+Additional query words: msgame crimsonskies msvcrt dll msvp60
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch kbGamesSearch kbCrimsonSkiesSearch
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

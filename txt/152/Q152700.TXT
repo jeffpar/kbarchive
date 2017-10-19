@@ -1,0 +1,80 @@
+DOCUMENT:Q152700  08-NOV-2001  [homekids]
+TITLE   :Koi and the Kola Nuts: Minimum System Requirements
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbmm kbrefkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Koi and the Kola Nuts, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following are the minimum system requirements to successfully run Koi and
+the Kola Nuts:
+
+ - Computer: Intel 486SX or higher or other 100-percent compatible PC systems.
+   Minimum 25 MHz CPU (33 MHz & higher recommended).
+
+ - Memory (RAM): Minimum of 4 megabytes (MB) RAM (8 MB recommended).
+
+ - Hard Disk Space: 6 MB free hard disk space.
+
+ - CD-ROM Drive: Double-speed CD-ROM: The CD-ROM drive should transfer data from
+   the CD-ROM at 300K per second while using less than 40 percent of the CPU
+   bandwidth and have an average seek time of less than 400 milliseconds.
+
+   MS-DOS CD-ROM Extension (Mscdex.exe) version 2.2 or later. Check the
+   documentation for your CD-ROM drive.
+
+ - Video: SVGA 640 x 480 X 256 colors (local bus/accelerated video recommended).
+
+ - Operating System Requirements: MS-DOS 5.0 or later Microsoft Windows 3.1 or
+   later, Microsoft Windows 95, or Microsoft Windows NT, version 3.51 or later.
+
+ - Sound Requirements: 8-bit audio board (16-bit suggested) capable of playing
+   audio compact discs.
+
+ - Other Requirements: Stereo sound amplification (speakers) or headphones; and
+   a Mouse.
+
+MORE INFORMATION
+================
+
+In addition to the above system requirements, use the following recommendations
+for the best performance:
+
+ - Do not use Windows "Hot Keys" while running Koi.
+
+ - For faster performance, make sure the system has a permanent swapfile.
+
+ - Set your display to 256 colors for best display and performance.
+
+Additional query words: msbhb msbss frizz kbmm multimedia multi-media multi media 1.00 pj bunny coy cola kolanuts kola-nuts koy
+
+======================================================================
+Keywords          : kbmm kbref kbfaq
+Technology        : kbHomeProdSearch _IKkbbogus kbPJKoi
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

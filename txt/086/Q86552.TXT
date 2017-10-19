@@ -1,0 +1,59 @@
+DOCUMENT:Q86552  08-NOV-1999  [pcmail]
+TITLE   :MHS: What the Gateway to MHS Does
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to MHS, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Mail Gateway to MHS will poll a Microsoft "mailbag" for mail
+messages destined for transfer via MHS and create an MHS header from this when
+using MHS version 1.5N. The file is then placed in the
+MHS\MAIL\GATES\<Gateway-name>\IN directory, where the Connectivity Manager
+will pick it up for routing.
+
+For MHS mail destined for Microsoft Mail, the gateway polls the
+MHS\MAIL\GATES\<gateway-name>\OUT subdirectory and transfers the message
+to the appropriate Microsoft Mail user.
+
+There are differences between MHS version 1.5N and MHS version 1.1N in that
+version 1.1N requires messages to be submitted to MHS with a 128- byte binary
+routing envelope and a complete message header. This type of message format is
+known as SMF-64. MHS version 1.5N introduced support for SMF-70, which supports
+a much simpler format: no binary routing envelope is required, just a minimal
+submission header. MHS 1.5 will convert this header to a canonical header. The
+MS Mail gateway submits this canonical header type message when sending mail
+out.
+
+
+Additional query words: pcmail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateMHS300
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

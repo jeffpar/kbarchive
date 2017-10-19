@@ -1,0 +1,87 @@
+DOCUMENT:Q166980  14-NOV-2000  [word97]
+TITLE   :WD97: Format Changed If Hyperlink Spans Several Paragraphs
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbinterop kbusage word97 kbwdinternet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you format a document so that it contains a hyperlink that includes several
+paragraphs, the document formatting near the hyperlink may change when the
+document is saved in HTML format.
+
+CAUSE
+=====
+
+When a single hyperlink includes several paragraphs, an Internet browser may
+format the information much differently than Word will.
+
+RESOLUTION
+==========
+
+Format the hyperlink so that it only includes a single paragraph. Create a
+hyperlink for each paragraph if necessary.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The most common problem may occur when combining hyperlinks with bullets or
+numbering. Word, when dealing with the file as a Word document, will be able to
+apply bullets or number to the individual paragraphs. However, when the document
+is saved as HTML, the paragraphs contained within the hyperlink may be combined
+so that only one of them is numbered.
+
+For example, here is how a document may look when formatted as a Word document.
+Note that in this example the entire text of the example is a single hyperlink:
+
+   1. Item a
+   2. Item b
+   3. Item c
+
+When saved as HTML and viewed in a browser, the document may look like This:
+
+   1. Item a
+   Item b
+   Item c
+
+Note that it is not considered to be a single numbered item rather than 3
+separate items.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbusage word97 kbwdinternet 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

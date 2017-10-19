@@ -1,0 +1,240 @@
+DOCUMENT:Q262041  06-AUG-2000  [exchange]
+TITLE   :XADM: Data Missing from Database After an Online Restore
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you restore an online backup and replay the log files generated after the
+backup was made (allowing the Jet Engine to take the transactions in the log
+files and commit them to the database), not all of the data (transactions) in
+the log files can be found in the database.
+
+The Event Viewer Application Log reflects that the database engine has played in
+the logs without logging any errors, but the data from the logs generated after
+the backup is not in the database. Running through the logs only takes a few
+seconds for each log, a fraction of the time normally required to commit a log's
+worth of new data to the database.
+
+The events in the Exchange Event Viewer Application log look similar to the
+following:
+
+   Event Type: Information
+   Event Source: ESE97
+   Event Category: Logging/Recovery
+   Event ID: 106
+   Time: 11:39:12 AM
+   Description:
+   (364) The database engine is restoring from backup directory
+   f:\exchsrvr\MDBDATA.
+
+   Event Category: Logging/Recovery
+   Event ID: 109
+   Time: 11:39:16 AM
+   Description:
+   (364) The database engine is replaying log file
+   f:\exchsrvr\MDBDATA\edb1C5E0.log.
+
+   Time: 11:39:25 AM
+   Description:
+   (364) The database engine is replaying log file
+   f:\exchsrvr\MDBDATA\edb1C5E1.log.
+
+   ***Numerous logs replaying at about 5-15 seconds per log.***
+
+   Time: 12:03:23 PM
+   Description:
+   (364) The database engine is replaying log file
+   f:\exchsrvr\MDBDATA\edb1C6EC.log.
+
+   Time: 12:03:30 PM
+   Description:
+   (364) The database engine is replaying log file
+   f:\exchsrvr\MDBDATA\edb1C6ED.log.
+
+   Event Type: Information
+   Event Source: ESE97
+   Event Category: Logging/Recovery
+   Event ID: 107
+   Time: 12:03:36 PM
+   Description:
+   (364) The database engine has stopped restoring.
+
+Despite all indications to the contrary, the logs are not committed to the
+database. The data contained in those logs must be considered lost unless it can
+be extracted from a restored backup or the original database.
+
+CAUSE
+=====
+
+In Exchange Server 5.5, in order for the database engine to replay log files
+during hard recovery (after restoring an online backup), there must be an exact
+mapping from the "old" database path to the "new" database path in the
+EDB_RstMap value of the "Restore in Progress" registry key.
+
+CAUTION: Altering the Restore in Progress registry key manually is not
+recommended.
+
+The old database path indicates the path to the databases when they were backed
+up. This path is in the header of each log file that came from tape.
+
+The new database path is the path to the databases on the server that you
+restored to.
+
+Usually, recovery only runs on a log file if the database is in the location that
+is specified in the header of the log file. Restoring an online backup allows a
+way around this by using the mapping in the Restore in Progress key.
+
+The EDB_RstMap value contains two lines for each database restored. The first
+line indicates the old location (the path to the previous location of the
+database contained in each log file header) and the second line indicates the
+new location (where the database is currently located; this is where the copy
+from goes).
+
+When hard recovery runs, Extensible Storage Engine (ESE) reads the database path
+written in the log file header and compares it to the EDB_RstMap value. If it
+matches the "old" location specified, it substitutes the "new" location instead,
+and recovery runs successfully on the log file. If it does not match the "old"
+location, the log file is skipped. For example:
+
+ - Information store full backup occurs on Sunday night.
+
+ - Monday morning, the Priv.edb and Pub.edb databases are moved from
+   D:\exchsrvr\mdbdata to E:\exchsrvr\mdbdata.
+
+ - Towards the end of business Monday, a problem occurs and the information
+   store needs to be restored.
+
+ - The restore of the Sunday night full backup finishes and the Priv.edb and
+   Pub.edb are written from tape to the E:\exchsrvr\mdbata directory.
+
+ - In the log directory, the log files from tape point to Priv.edb and Pub.edb
+   on the D: drive, and the log files generated all day Monday point to Priv.edb
+   and Pub.edb on the E: drive.
+
+ - The EDB_RstMap registry key now holds values like this:
+
+   \\computer\D$\exchsrvr\mdbdata\Priv.edbo
+
+   \\computer\E$\exchsrvr\mdbdata\Priv.edbo
+
+   \\computer\D$\exchsrvr\mdbdata\Pub.edbo
+
+   \\computer\E$\exchsrvr\mdbdata\Pub.edb
+
+ - In order for log files to be played into the databases that are located in
+   E:\exchsrvr\mdbdata, they must point to databases in D:\exchsrvr\mdbdata.
+
+ - Only the log files created before the database was moved will be successfully
+   replayed.
+
+RESOLUTION
+==========
+
+Be certain that a full online backup is made after you change the location of
+any database files on the Exchange Server computer. Do this regardless of
+whether the files are moved using Performance Optimizer (Perfwiz.exe) or through
+editing the registry and moving the files manually.
+
+
+WORKAROUND
+==========
+
+If a copy of the database that contains the data you want to recover (the
+database that failed to start) is available, you may be able to use the
+following steps to recover some of the data that did not play in from the logs
+because of the change in the database location.
+
+1. Install Exchange Server on a recovery server with the same Organization and
+   Site names as the production server.
+
+2. Create a new site, and DO NOT join the existing site.
+
+3. Move out all files from the Exchsrvr\Mdbdata directories on all drives. Note
+   the directory where Priv.edb and Pub.edb are before moving them.
+
+4. Copy the Priv.edb and Pub.edb files that contain the data you want to extract
+   to the mdbdata directory noted above on the recovery server.
+
+NOTE: In the following steps, a repair (eseutil /p) will be run on the databases.
+This will cause data loss, but may allow the databases to start so you can
+extract some data that would otherwise be lost. Please make sure you have backup
+copies of Priv.edb and Pub.edb before proceeding.
+
+1. At a command prompt, run eseutil /p /ispriv.
+
+2. From the exchsrvr\bin directory, run isinteg -pri -fix -test alltests
+
+3. Run eseutil /p /ispub
+
+4. From the exchsrvr\bin directory, run isinteg -pub -fix -test alltests
+
+5. After these utilities are finished, start all Exchange Server services. If
+   you get a 1011 error when the information store starts, run isinteg -patch
+   from the exchsrvr\bin directory.
+
+6. Start the Exchange Server Administrator program and get properties of the
+   server object. Click the Advanced tab and click the Consistency Adjuster
+   button.
+
+7. Click the top check box to synchronize the private information store with the
+   directory. Click All inconsistencies and click OK.
+
+   If this procedure does not create mailboxes or if you have any other problems
+   with this step, consult the Microsoft Knowledge Base or Microsoft Product
+   Support Services (PSS).
+
+8. Use Exmerge.exe to merge all data between the last backup and the time of the
+   failure, from the recovery server into the production server.
+
+   ExMerge.exe (Microsoft Exchange Mailbox Merge Program) is available from the
+   Microsoft BackOffice Resource Kit, Second Edition, as well as from Microsoft
+   Product Support Services.
+
+9. You can manually move public folder data to a .pst file and copy it from the
+   .pst file back to the production environment.
+
+For additional information about Eseutil /p or Edbutil /d /r and the
+ramifications of running these on a database, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+   Q259851 XADM: Ramifications of Running the ESEUTIL /P or EDBUTIL /D /R
+   Command
+
+If a copy of the database with the data you want to extract is no longer
+available, save all log files and the backup tape that you restored from and
+contact Microsoft PSS for additional assistance.
+
+Additional query words: logs missing data restore BORK
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

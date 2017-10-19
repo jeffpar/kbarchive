@@ -1,0 +1,75 @@
+DOCUMENT:Q142292  11-JAN-2001  [vbwin]
+TITLE   :INFO: VBA Versions in Different Microsoft Products
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbList kbprogramming kbVBp400
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual Basic, Applications edition, is the core language technology behind
+Visual Basic 4.0 and many other Microsoft applications. Because product cycles
+vary, the latest version of each application may use a different version of
+Visual Basic, Applications edition, each with possible differences in features
+and syntax. In addition, some Microsoft applications still use proprietary macro
+languages, and while mechanisms usually exist to communicate with Visual Basic
+for Applications applications, these methods often vary.
+
+MORE INFORMATION
+================
+
+Current Microsoft Applications with Visual Basic, Applications Edition
+----------------------------------------------------------------------
+
+Product                         Visual Basic for Applications Version
+---------------------------------------------------------------------
+
+Microsoft Excel 5.0 1.0
+Microsoft Excel 95 1.0
+Microsoft Project 4.0 1.0
+Microsoft Visual Basic 4.0 2.0
+Microsoft Access 95 2.0
+
+Visual Basic, Applications edition version 2.0, includes support for many new
+features. All versions of Visual Basic prior to version 4.0 use an internal
+language engine, and do not use Visual Basic for Applications. Microsoft Access
+(up to version 2.0) uses a macro language called Access Basic, and Microsoft
+Word's macro language (up to and including Word 95) is named WordBasic. These
+languages have some similarities to Visual Basic for Applications, but remain
+different in many ways also.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbList kbprogramming kbVBp400 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : WINDOWS:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,52 @@
+DOCUMENT:Q137129  25-AUG-1999  [automap]
+TITLE   :Automap: Gas Calculations are Incorrect
+PRODUCT :Microsoft Automap
+PROD/VER:3.00 3.02
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Automap Road Atlas for Windows, versions 3.0, 3.02 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Automap Road Atlas miscalculates the fuel consumption for a journey.
+
+For example, if the fuel cost for all road types is set to $1.00 per gallon and
+miles per gallon (MPG) is set to 1, the cost calculation should yield $1.00 per
+mile. In this case, Road Atlas consistently over- estimates the cost by
+approximately 0.5 percent.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Automap versions 3.0 and 3.02.
+This problem was corrected in Automap version 3.03.
+
+Additional query words: auto auto-map automap reference wrong overcharge inaccurate
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbAutomapSearch kbAutomapRoadAtlas300 kbAutomapRoadAtlas302
+Version           : 3.00 3.02
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

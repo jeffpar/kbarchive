@@ -1,0 +1,65 @@
+DOCUMENT:Q136784  08-NOV-1999  [pcmail]
+TITLE   :PC WRmt: Err Msg: Error in Converting RNETWORK.GLB
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Remote for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install or update the address list in Mail Remote for Windows, you may
+get the following error:
+
+   Error in Converting RNETWORK.GLB
+
+CAUSE
+=====
+
+This error may be caused by a lack of free disk space on the local hard disk
+during the conversion process.
+
+Another cause of this error is not enough files and buffers set in the CONFIG.SYS
+file.
+
+RESOLUTION
+==========
+
+Free up disk space on the local hard disk where Remote Mail is trying to perform
+the conversion of RNETWORK.GLB.
+
+This can be done by removing unnecessary files, such as .TMP or .CHK files. The
+default location where RNETWORK.GLB is converted is where the Microsoft Windows
+operating system is installed, usually C:\WINDOWS. If Windows is installed on a
+drive other than C: (such as D:\WINDOWS), then disk space should be cleared on
+that partition or hard disk.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailRemote320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

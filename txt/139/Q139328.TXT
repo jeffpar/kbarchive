@@ -1,0 +1,66 @@
+DOCUMENT:Q139328  12-JUN-2001  [odbc]
+TITLE   :INF: No ODBC 32-bit Btrieve Driver Available from Microsoft
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+2.00
+
+WINDOWS
+
+kbref kbdocerr
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft does not currently offer a 32-bit ODBC Btrieve Driver. The only
+version of the Btrieve driver available from Microsoft is in 16-bit format. The
+latest released version of this driver is marked version 2.00.2317 and was part
+of the ODBC Desktop Database Drivers 2.0.
+
+MORE INFORMATION
+================
+
+The paper insert that is included in the Office 95 box, marked with the part
+number 62150 on the bottom left corner of the fourth page and entitled
+"Microsoft Office for Windows 95 Professional Edition - Supplemental Offers,"
+includes a section called "32-bit ODBC Desktop Drivers Kit 3.0 (Application
+Note)." This insert incorrectly states that a 32-bit Btrieve driver is part of
+this application note. However, there is no such driver available with the ODBC
+3.0 versions of the ODBC Desktop Database Drivers. Furthermore, because the
+release of these ODBC 3.0 drivers is 32-bit only, there is also no 16-bit ODBC
+3.0 Btrieve driver included with this set of drivers.
+
+If you are interested in a 32-bit ODBC Btrieve driver, contact Btrieve
+Technologies at (800) 287-4383.
+
+Additional query words: odbc windows nt windows95 office95 access excel word xl winword sql
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbODBCSearch kbODBC200
+Version           : WINDOWS:2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

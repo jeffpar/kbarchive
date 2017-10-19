@@ -1,0 +1,276 @@
+DOCUMENT:Q125937  02-FEB-2002  [word97]
+TITLE   :WD97: Creating a Table of Contents and Index with Field Codes
+PRODUCT :Word 97 for Windows
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdta kbfield winword word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article describes how to accomplish the following:
+
+ - Create table-of-contents entry fields (TC fields) and build a table of
+   contents
+
+ - Create index entry fields (XE fields) and build an index
+
+CREATING TC FIELDS AND BUILDING A TABLE OF CONTENTS
+---------------------------------------------------
+
+There are two ways to mark table of contents items: you can create a custom menu
+command, or you can use the keyboard.
+
+Method 1: Using a Custom Menu Command
+-------------------------------------
+
+Part A: To add the MarkTableofContentsEntry menu command to the Insert menu,
+follow these steps:
+
+1. On the Tools menu, click Customize, and then click the Toolbars tab.
+
+2. Click to select the Menu Bar check box.
+
+   NOTE: This option is on by default.
+
+3. In the Customize dialog box, click the Commands tab.
+
+4. In the Categories list, select All Commands.
+
+5. In the Commands list, select MarkTableOfContentsEntry and drag the command to
+   the Insert menu.
+
+   Point to the location where you want the command to appear on the menu, and
+   then release the mouse.
+
+6. In the Customize dialog box, Click Close.
+
+Part B: To mark the text for inclusion in the table of contents, follow these
+steps:
+
+1. Select (highlight) the text you want to include.
+
+2. On the Insert menu, click Mark Table Of Contents Entry.
+
+3. In the Entry box, modify the text if you want it to be different from the
+   selected text.
+
+4. In the Table Identifier list, select C for table of contents.
+
+5. From the Level list, select a level for the table of contents entry.
+
+6. Click Mark.
+
+7. Click Close.
+
+8. Repeat steps 1 through 7 of this procedure for each table of contents entry
+   in your document.
+
+Method 2: Using the Keyboard
+----------------------------
+
+1. Select the word or words that you want to include as a table of contents
+   entry.
+
+2. Press ALT+SHIFT+O (Windows).
+
+   The "Mark Table of Contents Entry" dialog box appears.
+
+3. In the Entry box, modify the text if you want it to be different from the
+   selected text.
+
+4. From the Table Identifier list, select C for table of contents.
+
+5. From the Level list, select a level for the table of contents entry.
+
+6. Click Mark.
+
+7. Click Close.
+
+8. Repeat steps 1 through 7 for each table of contents entry you want to create.
+
+Building the Table of Contents
+------------------------------
+
+To build the table of contents, follow these steps:
+
+1. Position the insertion point where you want your table of contents to appear.
+
+2. On the Insert menu, click Index And Tables.
+
+3. Click the Table Of Contents tab, and then click the Options button.
+
+4. Click to select the Table Entry Fields check box, and choose any styles you
+   also want to include in the table of contents.
+
+5. Click OK twice.
+
+The table of contents will be inserted at the location of the insertion point.
+
+CREATING XE FIELDS AND BUILDING AN INDEX
+----------------------------------------
+
+To mark and index entry, you can use any of the following methods:
+
+ - Use a custom menu command
+
+ - Use a standard menu command
+
+ - Use the keyboard
+
+ - Use a concordance file
+
+Method 1: Using a Custom Menu Command
+-------------------------------------
+
+Part A: To add the MarkIndexEntry command to the Insert menu, follow these
+steps:
+
+1. On the Tools menu, click Customize, and then click the Toolbars tab.
+
+2. Click to select the Menu Bar check box.
+
+   NOTE: This option is on by default.
+
+3. In the Customize dialog box, click the Commands tab.
+
+4. In the Categories list, select All Commands.
+
+5. In the Commands list, select MarkIndexEntry and drag the command to the
+   Insert menu.
+
+   Point to the location where you want the command to appear on the menu, and
+   then release the mouse.
+
+6. In the Customize dialog box, click Close.
+
+Part B: To mark the text for inclusion in the index, follow these steps:
+
+1. Select (highlight) the text you want to include.
+
+2. On the Insert menu, click Mark Index Entry.
+
+3. In the Main Entry box, modify the text if you want it to be different from
+   the selected text. Type in the subentry text and select the desired options
+   and page number format.
+
+4. Click Mark to mark the selected text or click the Mark All button to mark all
+   occurrences of the selected text.
+
+5. Click Close.
+
+6. Repeat steps 1 through 5 for each index entry that you want to create.
+
+Method 2: Using Standard Menu Commands
+--------------------------------------
+
+To mark the text for inclusion in the index, follow these steps:
+
+1. On the Insert menu, click Index And Tables.
+
+2. On the Index tab, click the Mark Entry button.
+
+3. Type the Main Entry and Subentry text and select the desired options and page
+   number format.
+
+4. Click Mark.
+
+5. Repeat steps 3 and 4 of this procedure for each index entry field that you
+   want to create.
+
+6. Click Close.
+
+Method 3: Using the Keyboard
+----------------------------
+
+To mark the text for inclusion in the index, follow these steps:
+
+1. Select the word or words that you want to include as an index entry.
+
+2. Press ALT+SHIFT+X (Windows).
+
+   The Mark Index Entry dialog box appears.
+
+3. In the Main Entry box, modify the text if you want it to be different from
+   the selected text. Type in the subentry text and select the desired options
+   and page number format.
+
+4. Click Mark to mark the selected text or click the Mark All button to mark all
+   occurrences of the selected text.
+
+5. Click Close.
+
+6. Repeat steps 2 through 5 of this procedure for each index entry field.
+
+Method 4: Using a Concordance File
+----------------------------------
+
+Use this method when you know which words you want to index and when you want to
+index all those words in the document at once.
+
+To create an index by using a concordance file, follow these steps:
+
+1. In a new document, insert a two-column table.
+
+2. In the left column, type the words in your document that you want to mark for
+   indexing. Note that these entries are case sensitive.
+
+3. In the right column, type the corresponding text that you want to appear in
+   the index.
+
+4. Save and close this document.
+
+5. On the Insert menu, click Index And Tables.
+
+6. Click the Index tab.
+
+7. Click the AutoMark button.
+
+8. Select the file you created in steps 1 through 4 and click Open.
+
+Word will automatically mark the words in your document.
+
+Building the Index
+------------------
+
+To build the index, follow these steps:
+
+1. Position the insertion point where you want your index to appear.
+
+2. On the Insert menu, click Index And Tables.
+
+3. Click the Index tab, and then click OK.
+
+The index will be inserted at the location of the insertion point.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdta kbfield winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,71 @@
+DOCUMENT:Q131227  17-DEC-2000  [win95x]
+TITLE   :Why HyperTerminal Connectoid File Sizes May Vary
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+HyperTerminal connectoid (.HT) files may vary in size.
+
+MORE INFORMATION
+================
+
+HyperTerminal connectoids are files that store settings for individual
+HyperTerminal connections. Connectoids contain the backscroll buffer from the
+last time the connection was used. Because the size of the backscroll buffer can
+vary, the size of the connectoids can vary. The default size of the backscroll
+buffer is 500 lines. To change the size of the backscroll buffer for a
+connectoid, follow these steps:
+
+1. Use the right mouse button to click the connectoid you want to change, then
+   click Properties on the menu that appears.
+
+2. Click the Settings tab.
+
+3. In the Backscroll Buffer Lines box, enter the number of lines you want for
+   the backscroll buffer.
+
+4. Click OK.
+
+When you open a HyperTerminal connectoid, you can display the contents of the
+backscroll buffer by moving the scroll box. The information in the backscroll
+buffer includes information from all the previous sessions that fits in the
+defined buffer size.
+
+REFERENCES
+==========
+
+Microsoft Windows 95 "Resource Kit," page 798
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

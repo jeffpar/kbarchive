@@ -1,0 +1,76 @@
+DOCUMENT:Q196693  16-AUG-2002  [exchange]
+TITLE   :XADM: How To Use ESEUTIL /U to Upgrade a Database
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you have an Exchange Server database file (Priv.edb, Pub.edb, or Dir.edb)
+from Exchange Server 4.0 or 5.0, you can use the ESEUTIL utility to manually
+upgrade the database to an Exchange Server 5.5 database. This is particularly
+useful if the only good backup you have for your Exchange Server computer is
+from a previous version of Exchange Server.
+
+MORE INFORMATION
+================
+
+In order to perform the upgrade using ESEUTIL, you will need the following
+files:
+
+ - The Exchange 5.5 version of Eseutil.exe
+
+ - The Exchange 5.5 version of Ese.dll
+
+ - The previous version database file (Priv.edb, Pub.edb or Dir.edb)
+
+ - The Edb.dll from the Exchange 5.5 CD. This file can be found in the
+   server\setup\<platform> directory on the Exchange 5.5 CD.
+
+Put all of these files into a directory on your hard drive, open an MS-DOS
+command prompt in that directory, and run the following command:
+
+   " ESEUTIL /u <database name> /dEDB.DLL" (without the quotation marks)
+
+where the <database name> is either Priv.edb, Pub.edb, or Dir.edb.
+
+*NOTE: There is no space after the /d switch.
+
+**NOTE: If you do not use the correct version of Edb.dll, you will receive the
+following error:
+
+   Error -1003 (0xfffffc15) = JET_errInvalidParameter
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

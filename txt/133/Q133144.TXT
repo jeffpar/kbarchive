@@ -1,0 +1,62 @@
+DOCUMENT:Q133144  17-DEC-2000  [win95x]
+TITLE   :How to Export Folders in Microsoft Exchange
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article describes how to export a folder in Microsoft Exchange in Windows
+95.
+
+MORE INFORMATION
+================
+
+To export a folder in Microsoft Exchange, follow these steps:
+
+1. On the Tools menu, click Services.
+
+2. Click Add, click Personal Folders, and then click OK.
+
+3. Type a name for the folder, and then click Open.
+
+4. In Microsoft Exchange, click the folder you want to export and then select
+   the messages you want to move or copy to the new folder.
+
+5. Use the right mouse button to click the selected messages, and then click
+   Copy or Move on the menu that appears.
+
+Other Microsoft Exchange users can import the .pst file containing the new
+folder.
+
+Additional query words: mmf msmail msexchange
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

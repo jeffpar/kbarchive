@@ -1,0 +1,70 @@
+DOCUMENT:Q148207  23-JAN-2000  [pcmail]
+TITLE   :PC Win: Err Msg: ...No Valid Message Recipients Supplied
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2,3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.2, 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you send mail to a postoffice group that has been recently updated, you may
+get the following Undeliverable Mail message:
+
+   Your message did not reach some or all of the intended recipients.
+   Date submitted:
+   Message title:
+   There were no valid message recipients supplied.
+
+CAUSE
+=====
+
+The above message can occur when you send mail to a postoffice group that has
+been recently updated by the Microsoft Mail Administrator program.
+
+WORKAROUND
+==========
+
+Exit and log out of Mail for Windows that you sent the mail message from, and
+restart the client to resolve the issue and allow the sender to send a message
+to the group.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 3.2 and 3.5 of the
+Microsoft Mail for Windows. A fix for this problem has been developed by
+Microsoft.
+
+Contact Microsoft Product Support Services for more information on the
+availability of this fix.
+
+Additional query words: 3.20 3.50 system administrator returned
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail350 kbMail320
+Version           : WINDOWS:3.2,3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

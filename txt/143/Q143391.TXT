@@ -1,0 +1,72 @@
+DOCUMENT:Q143391  21-OCT-2000  [pcmail]
+TITLE   :PC Mac: Err Msg: Could Not Create Preferences File...
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0x
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.0x, on platform(s):
+    - the operating system: Mac OS (all) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Macintosh workstation version 3.0 and higher, you may receive
+the following error message:
+
+   Microsoft Mail Fatal Error:
+   Could not create preferences file in System Folder
+
+NOTE: The only button available in this dialog is Finder, which will return you
+to the Finder.
+
+CAUSE
+=====
+
+The preferences file is either locked or corrupt.
+
+RESOLUTION
+==========
+
+To determine if the file is locked:
+
+1. Open the System Folder.
+
+2. Select the file MS Mail/PC LANs Prefs.
+
+3. From the File menu, choose Get Info.
+
+If the Locked check box is selected, clear it and close the dialog box.
+
+If the preferences file is not locked, it may be corrupt. The MS Mail/PC LANs
+Prefs file is recreated when you run the workstation. Therefore, you can drag
+the file to the trash, and run the workstation to check for corruption.
+
+
+Additional query words: 3.00 3.0.6
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:3.0x
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

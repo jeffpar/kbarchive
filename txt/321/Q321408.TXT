@@ -1,0 +1,90 @@
+DOCUMENT:Q321408  06-AUG-2002  [homegame]
+TITLE   :Dungeon Siege: Error Msg: Unable to Access Required Directory
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dungeon Siege, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to start Dungeon Siege, you may receive an error message similar to
+the following:
+
+   Type : ErrorBox
+   Module : C:\Program Files\Microsoft Games\Dungeon
+   Siege\DungeonSiege.exe
+   Location : TattooGame.cpp line 934 (at
+   P:\vss_db_tattoo\GPG\Projects\Tattoo\Game\)
+   Fail Count : 1 (w:0, e:1, x:0)
+   Exe timestamp: Mar 8 2002 22:34:09
+
+   Unable to create or access required directory!
+
+   Attempted path: '<drive>:\Dungeon Siege'
+   Error code : 0x00000005 ('Access is denied.')
+
+CAUSE
+=====
+
+This behavior may occur if your My Documents folder is not in the default
+location.
+
+When Dungeon Siege starts, it tries to create a Dungeon Siege folder in the My
+Documents folder. If the My Documents folder is not in the default location that
+is specific to your user profile, Dungeon Siege cannot create the folder.
+
+RESOLUTION
+==========
+
+To resolve this issue, move the My Documents folder to the default location. To
+do this, follow these steps:
+
+NOTE: Because there are several versions of Microsoft Windows, the following
+steps may be different on your computer. If they are, see your product
+documentation to complete these steps.
+
+1. Click Start, right-click My Documents, and then click Properties.
+
+2. In the Target box, type "<drive>:\Documents and
+   Settings\<user>\My Documents" (without the quotation marks), where
+   drive is the drive on which Windows is installed and user is your user name.
+
+3. Click Apply, and then click OK.
+
+4. When you are prompted to confirm that you want to create the folder, click
+   Yes.
+
+5. When you are prompted to confirm that you want to move all of the documents
+   with the folder, click "Yes to All".
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbHomeProdSearch kbGamesSearch _IK kbDungeonSiege
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,62 @@
+DOCUMENT:Q214951  21-OCT-2000  [sms]
+TITLE   :SMS: List Items Dimmed with Custom MIF & Two Sets of Parentheses
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::1.2 SP4
+OPER/SYS:
+KEYWORDS:kbinterop kbClient kbConfig kbsms120 kbsms120bug kbInventory
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a custom Management Information Format (MIF) file is created using a set of
+parentheses within a set of parentheses in the description field drop-down list,
+the item may be dimmed and unavailable for selection.
+
+CAUSE
+=====
+
+This behavior can occur if the MIF Entry program is running on a Macintosh
+Centris 650 (M1205) client.
+
+WORKAROUND
+==========
+
+To work around this issue, remove the inner set of parentheses.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbinterop kbClient kbConfig kbsms120 kbsms120bug kbInventory 
+Technology        : kbSMSSearch kbSMS120SP4
+Version           : :1.2 SP4
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

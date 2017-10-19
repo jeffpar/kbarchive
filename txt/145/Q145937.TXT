@@ -1,0 +1,91 @@
+DOCUMENT:Q145937  31-JUL-2001  [visualc]
+TITLE   :FIX: DUMPBIN, LIB, and EDITBIN Fail on File Names with Spaces
+PRODUCT :Microsoft C Compiler
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbVC410fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Linker (LINK.EXE) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The command-line utilities Dumpbin.exe, Editbin.exe, and Lib.exe do not accept
+file names that contain embedded spaces. For example, this code:
+
+      DUMPBIN /ALL "my test.obj"
+
+results in this error:
+
+   DUMPBIN : fatal error LNK1181: cannot open input file "my"
+
+CAUSE
+=====
+
+Dumpbin.exe, Lib.exe, and Editbin.exe are front-end utilities that spawn and
+pass their arguments to Link.exe. When the front-end utility parses its command
+line, it strips the quotation marks. This stripped argument is passed to Link
+.exe by the spawning program.
+
+RESOLUTION
+==========
+
+Use LINK with the file names that contain embedded spaces instead of using the
+front-end utilities. The syntax is:
+
+      LINK  /<Link Utility Switch>  [Utility Arguments]
+
+Here [Utility Arguments] is the list of arguments for the front-end utility.
+
+Front-End Utility Link Utility Switch
+
+EDITBIN.EXE         /EDIT
+DUMPBIN.EXE         /DUMP
+LIB.EXE             /LIB
+
+For example, the equivalent of:
+
+      DUMP /ALL "my test.obj"
+
+is:
+
+      LINK /DUMPBIN /ALL "my test.obj"
+
+Similarly, LINK /LIB is equivalent to LIB and LINK /EDIT is equivalent to
+EDITBIN.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ 4.1.
+
+Additional query words: kbVC400bug 2.00 2.10 2.20 4.00 4.10
+
+======================================================================
+Keywords          : kbVC410fix 
+Technology        : kbVCsearch kbAudDeveloper kbLINKSearch kbLINK100
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

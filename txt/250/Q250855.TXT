@@ -1,0 +1,63 @@
+DOCUMENT:Q250855  12-NOV-2001  [homekids]
+TITLE   :MSB Bugs: How to Obtain the Product Identification Number
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS|MACINTOS:1.0
+OPER/SYS:
+KEYWORDS:kbpolicy mskids kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Scholastic's Magic School Bus series: Explores Bugs, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you contact Microsoft Product Support Services for technical support of
+Scholastic's Magic School Bus series: Explores Bugs, you must provide the
+Product Identification Number (PID) for your product to the Customer Service
+representative.
+
+MORE INFORMATION
+================
+
+To obtain the PID for your product, use the appropriate method for your
+operating system.
+
+Microsoft Windows
+-----------------
+
+To obtain the PID when you run Magic School Bus series: Explores Bugs on a
+Windows-based computer, press ALT+SHIFT+A while you are running the program.
+
+Macintosh OS
+------------
+
+To obtain the PID when you run Magic School Bus series: Explores Bugs on a
+Macintosh computer, press COMMAND+SHIFT+A while you are running the program.
+
+Additional query words: 1.00 mskids msb school bus
+
+======================================================================
+Keywords          : kbpolicy mskids kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbKidsSearch kbScholasticBugs kbMSBSearch
+Version           : WINDOWS|MACINTOS:1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

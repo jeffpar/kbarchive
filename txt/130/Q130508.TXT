@@ -1,0 +1,69 @@
+DOCUMENT:Q130508  25-MAR-2002  [win95x]
+TITLE   :Non-White Text or Graphics Printed in Black
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbgraphic kbprint win95 kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print colored text or graphics to a black and white printer, all
+non-white colors are printed as black. Even light gray text or graphics is
+printed as black.
+
+RESOLUTION
+==========
+
+
+STATUS
+======
+
+This problem no longer occurs in Windows 98. To resolve this problem, install
+the current version of Windows. For information about the current version of
+Windows, visit http://www.microsoft.com/windows.
+
+MORE INFORMATION
+================
+
+This behavior occurs when you print using the UNIDRV.DLL driver. The UNIDRV.DLL
+driver maps all non-white colors to black when you print to a black and white
+printer.
+
+Note that some printers that do not use the UNIDRV.DLL driver print light gray to
+a black and white printer.
+
+If you are using a Hewlett-Packard (HP) LaserJet 4-series printer with the
+printer drivers included with Windows 95, you can work around this behavior by
+using the Windows 3.1 printer driver from HP. This driver does not use the
+UNIDRV.DLL driver.
+
+Additional query words: grey gray scale font
+
+======================================================================
+Keywords          : kbgraphic kbprint win95 kbPrinting 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

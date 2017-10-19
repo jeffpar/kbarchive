@@ -1,0 +1,103 @@
+DOCUMENT:Q128118  12-JUN-2001  [sna]
+TITLE   :SNA Server Win3.x Client Setup Err Msg: No Windows network...
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+OPER/SYS:
+KEYWORDS:kb3rdparty kbinterop kbnetwork kbsetup kbsna211sp1 kbsna300sp1 kbsna300sp2 kbsna300sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run SNA Server Win3.x Client Setup the following error message
+appears:
+
+   No Windows network Installed
+
+CAUSE
+=====
+
+Setup has failed to detect your network.
+
+MORE INFORMATION
+================
+
+SNA Server Win3.x Client Setup uses the following methods to check for various
+LAN interfaces on Win3.x clients:
+
+Named Pipes
+-----------
+
+If you are running Windows for Workgroups, Setup checks the SYSTEM.INI file for
+the following:
+
+   [boot]
+   ...
+   network.drv=wfwnet.drv
+
+
+If you are running Microsoft LAN Manager or IBM LAN Requester, Setup looks for
+LANMAN.INI or DOSLAN.INI, respectively. If both are found, Setup uses the
+LANMAN.INI file. If either is found, Setup loads NETAPI.DLL and calls
+NetWkstaGetInfo() to get the version information.
+
+NetWare IPX/SPX
+---------------
+
+Setup calls LoadLibrary( "nwipxspx.dll" ). If that fails, Setup calls
+LoadLibrary( "a:\nwipxspx.dll" ). If that succeeds, Setup tries to call
+SPXInitialize() in that library.
+
+
+SPXInitialize call fails if SPX is disabled. Some users disable SPX for memory
+savings. The IPXODI /A command eliminates SPX support, causing the error message
+to appear even if NWIPXSPX.DLL is installed.
+
+TCP/IP Sockets
+--------------
+
+NOTE: The following text does not apply to SNA Server version 2.0 as it does not
+include support for TCP/IP sockets.
+
+Setup calls into WINSOCK.DLL to check for its presence. It needs to support
+Windows Sockets version 1.1.
+
+Banyan IP
+---------
+
+NOTE: The following text does not apply to SNA Server version 2.0 as it does not
+include support for Banyan IP.
+
+Setup calls LoadLibrary( "VNSAPI.DLL" ). If that succeeds, Setup considers Banyan
+to be installed. Setup then calls VnsGetUserName() from that library to get the
+default StreetTalk group name.
+
+
+Additional query words: prodsna wfw wfwg street talk
+
+======================================================================
+Keywords          : kb3rdparty kbinterop kbnetwork kbsetup kbsna211sp1 kbsna300sp1 kbsna300sp2 kbsna300sp3 sna4 kbsna400sp1 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ400 kbSNAServ210 kbSNAServ211SP1 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ300SP2
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

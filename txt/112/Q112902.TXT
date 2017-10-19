@@ -1,0 +1,85 @@
+DOCUMENT:Q112902  18-NOV-1999  [pcmail]
+TITLE   :PC Gen: Err Msg: Notice 34 Could Not Access Log...File
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:2.1x,3.0,3.0b,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 2.1x, 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Under versions 2.1x, 3.0, 3.0a and 3.2 of Microsoft Mail for PC Networks, when
+you log into the MS-DOS client, the following error message appears:
+
+   Notice 34
+   Could Not Access Log Information File
+
+CAUSE
+=====
+
+This error may have been caused by corruption in any of the following files:
+
+   ACCESS.GLB
+   ACCESS2.GLB
+   ACCESS3.GLB
+
+ACCESS.GLB, ACCESS2.GLB, and ACCESS3.GLB can be checked for corruption by
+dividing them by the following figures:
+
+   ACCESS.GLB divide by 586
+   ACCESS2.GLB divide by 69
+   ACCESS3.GLB divide by 512
+
+If these files do not divide evenly, there is a good chance they are corrupted.
+
+RESOLUTION
+==========
+
+If a backup exists restore the following files:
+
+   ACCESS.GLB
+   ACCESS2.GLB
+   ACCESS3.GLB
+   ADMIN.NME
+   ADMINSHD.NME
+   ADMIN.GRP
+   ADMINSHD.GRP
+
+These files should all be restored from the most recent, valid backup. Should
+users have been added to the mail system since the time of this backup, these
+users will have to be redefined after the restoration. MS-DOS client users
+should make an archive of their mail folders and Inbox, prior to the
+restoration, which can be restored upon recreation of the mailbox. Windows
+client users should make a backup of their Mail message file which can be
+re-imported using the Import Folders function upon recreation of their mailbox.
+
+
+Additional query words: 2.1x 3.00 3.00a 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN300b kbMailPCN21xSearch
+Version           : WINDOWS:2.1x,3.0,3.0b,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,61 @@
+DOCUMENT:Q132822  24-JUL-2001  [win95x]
+TITLE   :Some US Robotics Modems May Not Dial Long Numbers
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbhw win95 msnetwork kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Phone Dialer to dial a long telephone number (greater than 35
+digits), all of the digits may not be dialed.
+
+CAUSE
+=====
+
+You are using a US Robotics Sportster 28.8 modem that does not dial more than 35
+digits.
+
+RESOLUTION
+==========
+
+For a short-term workaround, manually dial the telephone number. Then, contact
+US Robotics for a firmware upgrade for your modem.
+
+MORE INFORMATION
+================
+
+The US Robotics Sportster is manufactured by US Robotics, a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding this
+product's performance or reliability.
+
+Additional query words: USR
+
+======================================================================
+Keywords          : kbhw win95 msnetwork kbHardware 
+Technology        : kbWin95search kbWin95
+Hardware          : x86
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

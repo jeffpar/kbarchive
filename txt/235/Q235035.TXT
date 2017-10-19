@@ -1,0 +1,92 @@
+DOCUMENT:Q235035  10-JAN-2001  [vbwin]
+TITLE   :PRB: Visual Basic Causes a Divide Error in Module GDI.EXE
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbVBp500 kbVBp600 kbOSWin98 kbGrpDSVB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0, on platform(s):
+    - the operating system: Microsoft Windows 98 
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0, on platform(s):
+    - the operating system: Microsoft Windows 98 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0, on platform(s):
+    - the operating system: Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you place a visual control (such as a PictureBox, Image, ListView,
+TreeView, RptText, RptLabel, and so forth) on a form when you are running Visual
+Basic 5.0 or 6.0 on Microsoft Windows 98-based system, Visual Basic crashes with
+the following error messages concerning the Graphics Device Interface (GDI)
+module:
+
+   An Error has occurred in your program, to continue working anyway click on
+   Ignore...
+
+If you click the Close button, the following error message is displayed:
+
+   The program has performed an illegal operation...
+
+If you click the Details button, the following error message is displayed:
+
+   VB6 caused a divide error in module GDI.EXE at 0004:000006fe.
+
+   -or-
+
+   VB5 caused a divide error in module GDI.EXE at 0004:000006fe.
+
+The exact memory address may vary.
+
+
+CAUSE
+=====
+
+This behavior occurs because of a video driver that is not compatible with
+Visual Basic 5.0 or 6.0.
+
+RESOLUTION
+==========
+
+Restarting in Safe Mode (which uses the Windows standard VGA driver) eliminates
+the errors. Obtain and install a newer version of the video driver or try
+running the current video driver at a lower resolution or at a lower color
+depth.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q127139 Troubleshooting Video Problems in Windows
+
+
+Additional query words: GDI
+
+======================================================================
+Keywords          : kbVBp500 kbVBp600 kbOSWin98 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbPTNotAssigned kbZNotKeyword2
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

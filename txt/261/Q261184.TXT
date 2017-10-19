@@ -1,0 +1,67 @@
+DOCUMENT:Q261184  28-MAY-2000  [sms]
+TITLE   :SMS: Tlist Causes Backup to Hang
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0,2.0 SP1,2.0 SP2
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Systems Management Server (SMS) Backup service (SMS_BACKUP) runs, the
+backup may not finish and Tlist.exe may stop responding (hang).
+
+During the site backup, the Backup service calls Machineinfo.bat (and therefore
+Tlist.exe) to gather information that is needed by the administrator in case
+rebuilding the site is necessary.
+
+WORKAROUND
+==========
+
+1. Copy the Pulist.exe file from the Microsoft Windows NT Resource Kit to the
+   Sms\Bin\I386 folder.
+
+2. Use a text editor (such as Notepad) to open the Sms\Bin\I386\Machineinfo.bat
+   file.
+
+3. Find the line that reads:
+
+   TLIST.EXE >>%2%3Data.txt
+
+4. Replace the line with a new line that reads:
+
+   PULIST.EXE >>%2%3Data.txt
+
+5. Save and then close the Machineinfo.bat file.
+
+
+Additional query words: prodsms SMS Tlist backup hung
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : winnt:2.0,2.0 SP1,2.0 SP2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

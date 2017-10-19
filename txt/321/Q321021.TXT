@@ -1,0 +1,86 @@
+DOCUMENT:Q321021  22-MAY-2002  [iis]
+TITLE   :Unexpected Search Results Using Index Server with Local Web Site
+PRODUCT :Internet Information Server
+PROD/VER::2.0,4.0,5.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 4.0, 5.0 
+ - Microsoft Index Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use Index Server to index the content of a local Web site that uses
+redirects, you may receive unexpected content if you run a search.
+
+CAUSE
+=====
+
+This issue may occur because all virtual directories are based on a local
+physical path when they are initially created. By default, this path is added to
+the Web catalog in Index Server. If you change this virtual directory path so
+that it includes a redirect, the initial mapping that exists in Index Server is
+not removed.
+
+WORKAROUND
+==========
+
+To work around this issue:
+
+1. Start Internet Services Manager.
+
+2. Right-click the virtual directory that you want to change, and then click
+   Properties.
+
+3. Click the Home directory tab, and then click "A directory located on this
+   computer".
+
+4. Click to clear the "Index this resource" check box, and then click Apply.
+
+5. On the Home directory tab, click "A redirection to a URL", and then click
+   Apply.
+
+Content is corrected at the next scheduled index. If you want to immediately
+remove the content, delete the contents of the Catalog.wci folder. For
+additional information about how to delete the Catalog.wci folder, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q191147 How to Resolve Catalog Corruption
+
+MORE INFORMATION
+================
+
+You cannot remove the virtual directory by using Index Server Manager. If you do
+so, the virtual directory is readded when you restart either the computer or
+Internet Information Services (IIS).
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbiisSearch kbIdxServSearch kbAudDeveloper kbiis500 kbiis400 kbIdxServ200
+Version           : :2.0,4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

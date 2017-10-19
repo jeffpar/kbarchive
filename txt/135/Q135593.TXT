@@ -1,0 +1,77 @@
+DOCUMENT:Q135593  08-AUG-2001  [win95x]
+TITLE   :Bottom Portion of CD Player Is Inaccessible
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95 4.00
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The bottom portion of CD Player may be off the screen or inaccessible.
+
+CAUSE
+=====
+
+This problem can occur if the font size for menu items is set to more than 16.
+
+RESOLUTION
+==========
+
+To correct this problem, reduce the font size for menu items, or increase the
+size of the menus. To do so, follow these steps:
+
+1. Use the right mouse button to click an empty area on the desktop, and then
+   click Properties on the menu that appears.
+
+2. Click the Appearance tab.
+
+3. In the Item box, click Menu.
+
+4. Change the font size to 16 or less, or increase the menu size.
+
+5. Click OK.
+
+MORE INFORMATION
+================
+
+This problem is not limited to CD Player, and can occur with other display
+settings. Enlarging the menu font too much can cause popup menus to become
+unreadable. Note that the resolution setting you are using affects the upper
+limit on the size of the menu fonts you can use.
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: 4.0
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : 95 4.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

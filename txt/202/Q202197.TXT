@@ -1,0 +1,98 @@
+DOCUMENT:Q202197  07-FEB-2002  [visualc]
+TITLE   :BUG: Freeing Resource DLLs in ExitInstance Causes Error
+PRODUCT :Microsoft C Compiler
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbole kbDLL kbMFC kbVC kbVC500bug kbVC600bug kbOSWin95bug kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), included with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+    - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Windows 95, calling FreeLibrary() on the resource DLLs in the ExitInstance()
+function of the COleControl-derived class causes an application error.
+
+CAUSE
+=====
+
+This is a bug in Windows 95. When FreeLibrary() is called on resource DLLs,
+Windows 95 is running through the chain of DLLs in that process and looking for
+other DLLs that have a zero reference count. This causes other DLLs to be
+unloaded too soon.
+
+RESOLUTION
+==========
+
+Move the FreeLibrary() calls to the destructor function of the
+COleControl-derived class.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Use Control Wizard to generate an ActiveX control project.
+
+2. Create a non-MFC resource-ONLY DLL. Make sure you specify the /NOENTRY switch
+   in the Project, Settings dialog box.
+
+3. Call LoadLibrary in InitInstance() of the control's CWinApp-derived class.
+
+4. Call FreeLIbrary in ExitInstance() of the control's CWinApp-derived class.
+
+5. Build the resource-ONLY DLL and the ActiveX control projects. Make sure the
+   .dll file is being placed in the same directory as the .ocx file.
+
+6. At the MS-DOS prompt, change to the directory where both the .ocx and .dll
+   files are found. Type "REGSVR32 mycontrol.OCX".
+
+RESULTS: You will get an application error dialog box and the "control is
+registered successfully" dialog box.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1999, All Rights Reserved. Contributions by Yeong-Kah
+Tam, Microsoft Corporation.
+
+
+Additional query words: ocx ExitInstance FreeLibrary LoadLibraryEx LoadLibrary
+
+======================================================================
+Keywords          : kbole kbDLL kbMFC kbVC kbVC500bug kbVC600bug kbOSWin95bug kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : :5.0,6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

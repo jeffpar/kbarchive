@@ -1,0 +1,79 @@
+DOCUMENT:Q139729  04-MAY-2001  [ssafe]
+TITLE   :FIX: Visual SourceSafe Cannot Associate File That Has 2 Periods
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbSSafe400bug kbSSafe500fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You receive the error "No application associated with this file type" when
+trying to view a file that contains more than one period in the file name.
+
+CAUSE
+=====
+
+Visual SourceSafe parses the file name from left to right. This means that a
+file called My.file.doc is parsed so that the extension appears to be .file.doc
+and there is no association for this file.
+
+RESOLUTION
+==========
+
+Rename the file from My.file.doc to My_file.doc in the Visual SourceSafe
+Explorer (on the File menu, click Rename).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem has been fixed in Visual SourceSafe 5.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Rename a file that is associated with an application so that the file name
+   contains more than one period.
+
+2. Add the file to Visual SourceSafe.
+
+3. Double-click the file from the Visual SourceSafe Explorer. At this point, The
+   error message "No application associated with this file type" appears.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400bug kbSSafe500fix 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe400 kbSSafe16bitSearch kbSSafe32bitSearch
+Version           : WINDOWS:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,321 @@
+DOCUMENT:Q186571  05-MAR-2002  [winnt]
+TITLE   :User Manager in Terminal Server
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses the Terminal Server Administration tool, User Manager.
+
+MORE INFORMATION
+================
+
+Users have more possible configurations in Terminal Server. For instance, some
+users may have permission to connect to the Terminal Server as a file server but
+not have permission to use it as an application server (through the Terminal
+Server Client). Also, users can have different profiles and home directories,
+depending on whether they are using "normal" workstations or whether they are
+connecting through the Client.
+
+When you create a user, the only difference on the main User Manager screen is
+the additional "Config" button at the bottom. After installing a Terminal
+Server, you will find the same default users (Admin and Guest) and the same
+default groups as you would expect on a Windows NT Server computer.
+
+The User Configuration screen allows these options:
+
+Allow Logon to Terminal Server
+------------------------------
+
+This is similar to giving the user the right to log on locally.
+
+By default, Everyone has the right to log on locally (that is, to log on at the
+Terminal Server console). Just as in Windows NT Server, this right is set in
+User Manager by selecting User Rights on the Policies menu. Because Terminal
+Server clients are, in effect, logging on at the server's console, this is a
+necessary right.
+
+NOTE: Denying users the right to log on locally will keep Terminal Server clients
+from logging on at all.
+
+NOTE: Because this right is necessary for Clients to be able to log on, if you
+install a Terminal Server as a domain controller, two situations are likely to
+occur. First, if you install as a backup domain controller (BDC) with an Windows
+NT Server as the primary domain controller (PDC), when your Terminal Server
+joins the domain, Everyone will lose the right to log on locally because these
+policies are global to the domain's domain controllers. Second, if you install a
+Terminal Server as a PDC, Everyone will be able to log on at the console of any
+BDCs in the domain, whether they are Terminal Server computers or not.
+
+So, for a client to be able to log on to the Terminal Server, the user must have
+two rights: the User Manager user right to log on locally and the user- specific
+configuration "Allow Logon to Terminal Server."
+
+If you deny a user the "Allow Logon to Terminal Server" right, that user will not
+be able to log on at the Terminal Server console or through the Terminal Server
+client. But the user can log on normally from other Windows NT servers,
+workstations, or other domain workstations. So, if an administrator has a group
+of users who will connect through the client and another who will log on
+normally, this is the correct check box for allowing or denying access.
+
+It is also possible to remove the Everyone group from the right to log on
+locally. Another group of client users can be created and given this right.
+
+If a user attempts to log on to a Terminal Server through the client and has been
+denied the right to log on locally, the user will receive this message:
+
+   
+
+   The local policy of this system does not allow you to log on interactively.
+
+If the user does not have the check box selected in User Configuration for "Allow
+Logon to Terminal Server," another error is returned:
+
+   
+
+   Your interactive logon privilege has been disabled. Please contact your
+   system administrator.
+
+If BOTH permissions have been denied the user, he or she will get the following
+message:
+
+   
+
+   The local policy of this system does not allow you to log on interactively.
+
+Timeout Settings (in Minutes)
+-----------------------------
+
+Connection: By default this is turned off. This setting controls how long a
+client can be connected. This is not dependent on any other state (for example,
+being disconnected or idle). If a user can only be connected for 10 minutes,
+then 10 minutes after connection, the user will be disconnected. If this feature
+is enabled, the default value is 120 minutes.
+
+Disconnection: After a user has been disconnected, how long should the Terminal
+Server keep the session active? When a user is disconnected, the server keeps
+the session and all running processes active, so that the user can reconnect and
+continue working where she or he left off. This refers to any type of
+disconnection (for example, connection timeout, dropped modem line, network
+failure, user selects Disconnect on the Start menu). If this feature is enabled,
+the default value is 10 minutes.
+
+Idle: How long should the server wait before disconnecting an idle session? If
+this feature is enabled, the default value is 30 minutes.
+
+Client Devices
+--------------
+
+This setting does not apply to Microsoft's RDP client. If Citrix's ICA client is
+being used, these settings are relevant and determine whether the client
+computer's local devices will be available as local devices while in a Terminal
+Session.
+
+If you are logged on to a Terminal Server using the RDP client, when you access
+your drive C, you are accessing the server's drive C, not your local device. The
+same is true for printers, printer ports, and COM ports.
+
+Initial Program
+---------------
+
+You can specify an application to start up as soon as the user logs on through
+the Client. This is similar to placing an application in the user's startup
+folder.
+
+The option to "Inherit Client Config" applies only to Citrix's ICA Clients.
+
+On a Broken or Timed out Connection...
+--------------------------------------
+
+If a connection is lost or times out, you have the options of disconnecting the
+session, which leaves the session intact so the user can reconnect and keep
+working, or you can reset the connection, which terminates the session.
+
+Reconnect Sessions Disconnected...
+----------------------------------
+
+This option is used for Citrix direct-serial-port connecting devices only.
+
+Modem Callback Is...
+--------------------
+
+Modem callback options apply only to Citrix's ICA Clients. For Microsoft's RDP
+client, configure these settings through RAS.
+
+Shadowing...
+------------
+
+Shadowing applies only the Citrix's ICA clients. Shadowing allows ICA clients to
+view or take over other ICA client sessions. Note that the Terminal Server
+console cannot be shadowed, and sessions cannot be shadowed from the console.
+Shadowing only works from client to client and only in conjunction with the ICA
+client and Metaframe.
+
+User Configuration also includes a new option for NetWare users:
+
+NetWare Logon Configuration:
+
+Terminal Server offers the same NetWare connectivity options as Windows NT Server
+4.0, with 3 additions. The first is here in User Manager. Specifying a NetWare
+server here will allow the user to log on to NetWare prior to logging on to
+Terminal Server or Windows NT. If you add a domain administrator name and
+password here, if the user's NetWare password differs from the Windows NT
+password, the NetWare password will be used, and the Windows NT password will be
+synchronized to it.
+
+The other two new NetWare options are the Administrator utility "NetWare User
+Access for Terminal Server," which copies NetWare user accounts to Terminal
+Server, and the command-line utility NDSPSVR, which sets a preferred NDS logon
+server globally (this is not available on a per-user basis) for all NetWare
+users who connect to this Terminal Server.
+
+The User Environment Profile screen:
+
+Note that this is very similar to the Profile settings for Windows NT Server
+users. The only difference is that you can specify two different profiles and
+two different home directories for each user. If the user logs on normally from
+a Windows NT workstation, for instance, he or she can have a different profile
+and home directory than if he or she logs on to the Terminal Server through the
+RDP client. One profile can be roaming and the other mandatory.
+
+User Profiles Overview:
+
+ - If you specify a User Profile Path only, the user will get that profile
+   regardless of how he or she logs on.
+ - If you specify a Terminal Server Profile Path only, the user will get the
+   profile if he or she logs into the domain from any Terminal Server console or
+   through the Terminal Server client. Otherwise, the path will be ignored.
+ - If you specify both a User Profile path and a Terminal Server Profile path,
+   the user will use the User Profile path if logging on at a Windows NT
+   Workstation computer or Windows NT Server computer (not a Terminal Server and
+   not using the Terminal Server client program), and the user will use the
+   Terminal Server Profile path is logging on at any Terminal Server console or
+   through the client program.
+ - Profile types can be mixed. That is, if a user has two profile paths, one can
+   be mandatory and the other non-mandatory.
+
+Details:
+
+Windows Terminal Server 4.0 and Windows NT Server 4.0 both use User Profiles to
+store user's desktop information. These profiles are simply a series of folders,
+typically stored under a folder named with the user's logon name. By default,
+every user who logs on to a Windows NT Workstation 4.0, Windows NT Server 4.0,
+or Windows Terminal Server 4.0 computer gets a profile folder under the
+%SystemRoot%\Profiles folder. When users log on, the profile is loaded into
+HKEY_CURRENT_USER in the registry. When the user logs off, the registry
+information is written to the user's profile folder. One important note: if you
+store the profile someplace other than the default location, the profile is
+always copied to the user's %SystemRoot%\Profiles folder before it is loaded
+into the registry. This is called the Locally Cached Profile. It allows the user
+to get the expected desktop even if the network is unavailable. This is an
+important concept in Terminal Server. (Also note that this caching of profiles
+can be turned off through a System Policy.)
+
+In User Manager, administrators can specify a path for profiles. This path can be
+local or can reside on a network share. One common practice is to pick a central
+network location, create a Profiles folder, and share it for everyone to use.
+Then, in User Manager, under Profiles\User Profile Path enter the path
+\\Server\Profiles\%username%. By using this path, administrators can select
+several users at once and set their profile paths quickly.
+
+Terminal Server allows users to have two profile paths: a User Profile Path and a
+Terminal Server Profile Path. The User Profile Path is identical to the User
+Profile Path function in Windows NT Server 4.0. Users have three logon options
+with Terminal Server. They can log on "normally" from a computer running either
+Windows NT Workstation or Windows NT Server, they can log on at the Terminal
+Server console, or they can log on through the Terminal Server client software.
+If only a User Profile Path is specified, the user will get the same profile
+regardless of the logon type she or he uses.
+
+Before considering the Terminal Server Profile path, it is important to note
+where the local profile cache is located for each logon type. If the user logs
+on from a computer running Windows NT Workstation or Windows NT Server (that is,
+not using the Terminal Server client software), the profile is copied from the
+profile path location to the user's computer, saved in the local
+%SystemRoot%\Profiles\Username folder, and then loaded into the registry.
+However, if the user logs on at the Terminal Server console or through the
+Terminal Server client, the profile is loaded into the Terminal Server's
+%SystemRoot%\Profiles\%username% folder.
+
+Also note that, for logon purposes, a Terminal Server console is considered the
+same as a Terminal Server client session. So, if you specify a Terminal Server
+Profile path in your domain and the user logs on to the domain from any Terminal
+Server console, she or he will use the Terminal Server Profile path. However,
+the profile will be cached in the %SystemRoot%\Profiles\%username% folder of the
+Terminal Server at which the user logs on. When the user logs on through the
+Terminal Server client, the profile is always cached on the Terminal Server to
+which the user connects.
+
+If users need different profiles, it is okay to specify a different profile path
+for User Profile path and for Terminal Server Profile path. These profiles can
+also be different types; that is, one can be mandatory and the other
+nonmandatory.
+
+However, administrators should carefully consider profile caching before deciding
+on a profiles strategy. There is a particular situation that should be avoided
+(and this is true in both Windows NT Server and Terminal Server). If a user logs
+on to different domains in which he or she has different profile types
+(mandatory/nonmandatory) so that the cached profile is being overwritten with
+different profile types, the user's profile will not work as expected.
+Nonmandatory profiles may be ignored, and mandatory profiles may become
+nonmandatory. This situation can also be created if a user initially has a User
+Profile path to a mandatory profile and then the user is given a nonmandatory
+Terminal Server Profile path.
+
+Fortunately, this is not a common scenario because users are not typically
+allowed to log on at the Terminal Server console. It is also rare to have
+Windows NT Workstation users log on to one domain with a mandatory profile and
+another domain with a nonmandatory profile.
+
+If your environment will not allow you to avoid this locally cached profile
+confusion, you can create a System Policy that tells the system not to cache the
+profiles. This option is found under Default Computer\Windows NT User
+Profiles\Delete cached copies of roaming profiles. With this policy in place,
+the problem will not exist since the cached profile never gets mixed with
+various profiles.
+
+Further, it is especially important to have home directories specified for each
+user. The default location is the user's locally cached profile. If the user
+logs on under one of the scenarios to be avoided, having different profiles
+writing over the locally cached profile, the use will be overwriting the home
+directory and potentially any saved filed. If the home directory is in the
+default location (locally cached profile) and you set a system policy to not to
+cache roaming profiles, the home directory can be deleted, again perhaps losing
+files. This is a problem not only because the home directory could have user
+files in it, but because the home directory contains a Terminal Server specific
+directory, the user's Windows directory. This is where user's
+application-specific .ini files are stored.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : :4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

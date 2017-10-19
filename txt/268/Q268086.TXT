@@ -1,0 +1,64 @@
+DOCUMENT:Q268086  23-OCT-2000  [winnt]
+TITLE   :Windows NT MA Not Supported for Connecting to Windows 2000
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1,2.2
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services, versions 2.1, 2.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Windows NT Management Agent is not supported for connecting to
+Microsoft Windows 2000 Active Directory.
+
+The supported method for connecting to Windows 2000 Active Directory is the
+Active Directory Management Agent, which is supplied with Microsoft
+Metadirectory Services version 2.2.
+
+MORE INFORMATION
+================
+
+The limitations of the Windows NT Management Agent include:
+
+ - The Windows NT Management Agent has no knowledge of the Universal Groups used
+   in Windows 2000 Native Mode domains.
+
+ - The Windows NT Management Agent cannot handle the numerous user attributes
+   that are used in Windows 2000.
+
+ - The Windows NT Management Agent does not support delta operations, requiring
+   that a full discovery be performed each time.
+
+ - Microsoft does not support use of the Windows NT 4.0 Management Agent for
+   connecting to a Windows 2000 Active Directory domain.
+
+Additional query words: Microsoft Metadirectory Services via zoomit MMS
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbMMSSearch kbMMS210 kbMMS220
+Version           : :2.1,2.2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

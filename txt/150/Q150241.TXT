@@ -1,0 +1,90 @@
+DOCUMENT:Q150241  13-JUN-2001  [sna]
+TITLE   :SNAADMIN.EXE Application Exception When Deleting Users
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,2.11 SP1
+OPER/SYS:
+KEYWORDS:kbnetwork kbnetserv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you delete a large number of users from within the Users and Groups window
+of SNA Server Admin causes an application exception error similar to the
+following:
+
+   An application error has occurred
+   and an application error log is being generated.
+
+   snaadmin.exe
+   Exception: access violation (0xc0000005), Address: 0x00a3169c
+
+In addition, the Application Event Log will report the following error:
+
+   Event ID: 4097
+   Source: DrWatson
+   Description: The application, snaadmin.DBG, generated an application
+   error. The error occurred on 4/10/1996 @ 11:07:30.280. The exception
+   generated was c0000005 at address 00a3169c (HashRemove).
+
+   A DRWTSN32.LOG containing the details of the application exception
+   will be located in the <windir> directory.
+
+
+CAUSE
+=====
+
+The Application Exception error occurs because the HashRemove() function in SNA
+Server Admin is trying to remove an uninitialized hash entry when you delete a
+large number of users.
+
+
+RESOLUTION
+==========
+
+SNACFG.DLL has been updated to correct the problem.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server versions
+2.1, 2.11, and 2.11.sp1. This problem was corrected in the latest Microsoft SNA
+Server 2.11 U.S. Service Pack. For information on obtaining the service pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+
+Additional query words: prodsna trap
+
+======================================================================
+Keywords          : kbnetwork kbnetserv 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

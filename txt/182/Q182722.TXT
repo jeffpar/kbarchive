@@ -1,0 +1,76 @@
+DOCUMENT:Q182722  17-DEC-2000  [win95x]
+TITLE   :Error Message: Another Program Is Using This Telephony Device
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kberrmsg win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to dial out using a PC Card modem on a Toshiba Satellite 200C
+computer, you may receive the following error message:
+
+   Another program is using this telephony device.
+
+CAUSE
+=====
+
+This behavior can occur if you use the SystemSoft CardWizard that is included
+with the Toshiba Satellite 200C computer. The SystemSoft CardWizard detects the
+modem and creates a .inf file that prevents Windows 95 from correctly detecting
+the modem.
+
+RESOLUTION
+==========
+
+To resolve this issue, obtain and install the Cwinffix.exe file from Toshiba. To
+obtain this file, contact Toshiba or visit the following Toshiba Web site:
+
+   http://www.toshiba.com
+
+
+For information about how to contact Toshiba, see the following article in the
+Microsoft Knowledge Base:
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+
+MORE INFORMATION
+================
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+Additional query words: pcmcia
+
+======================================================================
+Keywords          : kberrmsg win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

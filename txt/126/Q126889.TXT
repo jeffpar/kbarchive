@@ -1,0 +1,85 @@
+DOCUMENT:Q126889  15-FEB-2002  [pcmail]
+TITLE   :PC Win SNADS: 10 Character SNADS Gateway-Template Info Only
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0,3.0b,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to SNADS, version 3.0 
+ - Microsoft Mail for Windows, versions 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use a SNADS gateway name containing 10 characters, the template
+information will only be displayed in the network address list in Mail for
+Windows. Template information will not be displayed in the Global Address List
+(GAL), Postoffice Address List, or Personal Address List.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 3.0b and 3.2 of
+Microsoft Mail for Windows. This problem is corrected in the MSSFS.DLL file
+available on the Microsoft Software Library (MSL) as MSSFS.EXE, a self
+extracting file.
+
+You can find MSSFS.EXE,
+(http://support.microsoft.com/download/support/mslfiles/MSSFS.EXE,) a
+self-extracting file, on the following services:
+
+ - Microsoft's World Wide Web Site on the Internet
+
+   On the www.microsoft.com home page, click the Support icon.
+   Click Knowledge Base, and select the product.
+   Enter kbfile MSSFS.EXE, and click GO!
+   Open the article, and click the button to download the file.
+
+ - Internet (anonymous FTP)
+
+   ftp ftp.microsoft.com
+   Change to the Softlib/Mslfiles folder.
+   Get MSSFS.EXE
+
+ - The Microsoft Network
+
+   On the Edit menu, click Go To, and then click Other Location.
+   Type "mssupport" (without the quotation marks).
+   Double-click the MS Software Library icon.
+   Find the appropriate product area.
+   Locate and Download MSSFS.EXE.
+
+
+For additional information about downloading, please see the following article in
+the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+
+Additional query words: 3.00 SNADS template address
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMail320 kbMail300b kbMailGateSNADS300
+Version           : :3.0,3.0b,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

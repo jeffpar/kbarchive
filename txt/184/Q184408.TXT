@@ -1,0 +1,75 @@
+DOCUMENT:Q184408  06-AUG-2002  [winnt]
+TITLE   :How to Replace In-Use Windows NT System Files
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to replace system files that are in use by using the
+Mv.exe tool included with the Windows NT 4.0 Resource Kit.
+
+MORE INFORMATION
+================
+
+The Mv.exe tool is a 32-bit version of the POSIX MV tool. Mv.exe has the
+following syntax:
+
+   mv [/x [/d]] <file1> [<file2> ...] <target>
+
+The command-line switches are:
+
+/x: Do not save files that are replaced.
+
+/d: Delay file move until system reboot.
+
+For example, to replace the Url.dll file in the Winnt\System32 folder with the
+Url.dll file located in the Temp folder at the next reboot without saving the
+replaced file, type the following line:
+
+   mv.exe /x /d c:\temp\url.dll c:\winnt\system32\url.dll
+
+There are two versions of Mv.exe in the Windows NT Resource Kit, a 32-bit
+Windows-based version and a Posix version. The correct version to use in this
+instance, the Windows version, is located on the Windows NT Resource Kit CD-ROM
+in the <platform>\filebat\mv.exe folder.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q228930 How to Replace Currently Locked Files with Inuse.exe
+
+Additional query words: busy access denied
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,124 @@
+DOCUMENT:Q130649  06-DEC-1999  [homekids]
+TITLE   :Writer/Artist: ErrMsg: There Isn't Enough Space to Setup
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:MACINTOSH:1.0,1.1,1.1a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for the Macintosh, versions 1.0, 1.1, 1.1a 
+ - Microsoft Fine Artist for the Macintosh, versions 1.0, 1.1, 1.1a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Creative Writer or Fine Artist on your Macintosh,
+you may receive one of the following error messages:
+
+   There isn't enough free space on any of your disks to set up this program.
+   Free up some disk space and run Setup again.
+
+   -or-
+
+   There isn't enough disk space on any of your disks to set up Fine Artist. To
+   set up this program, you need 10 MB of free disk space. To free disk space,
+   click Quit. From the desktop, backup or copy old documents to a floppy disk,
+   and then remove those documents from your hard disk. Run Setup again.
+
+   -or-
+
+   There isn't enough space on any of your disks to install this program. You
+   must have at least 6 megabytes free. Free some space and run Setup again.
+
+CAUSE
+=====
+
+The error message is probably because you don't have enough space available on
+your hard drive.
+
+The error can also occur if there are quotation marks, certain keycap symbols or
+cut-and-paste objects (symbols) in the name of the hard drive. When these
+symbols are present, Setup can't identify the drive and the error message is
+generated. Additionally, if the hard drive does not have a name, you receive
+this error message.
+
+RESOLUTION
+==========
+
+Use the following steps to end the error message so you can complete Setup.
+Initially, try the first solution. If you are not using symbols, or your problem
+still occurs, try the second set of steps to increase your drive space.
+
+If You Have Symbols in Your Hard Drive Name
+-------------------------------------------
+
+Setup cannot recognize the hard drive with symbols in the name. To remove these,
+do the following:
+
+1. Click the hard drive name field.
+
+2. Wait a moment. When the name is selected, press the DEL key.
+
+3. Type a new hard drive name, using only the keyboard letter keys.
+
+For more information on changing the name of your hard drive, refer to your
+Macintosh user's guide.
+
+Increasing Space on Your Hard Drive
+-----------------------------------
+
+The following steps help determine you how much drive space you have available,
+and tell how to gain the hard drive space required by Setup.
+
+Find out how much space is available on your hard drive:
+
+1. Double-click your hard drive.
+
+2. From the View menu, choose By Icon.
+
+3. The right side of the hard drive window now shows the amount of available
+   hard drive space.
+
+4. Check this amount against the minimum amount required by your program:
+    - 8 MB for Creative Writer, version 1.0, on 3.5-inch disks.
+
+    - 10 MB for Fine Artist, version 1.0, on 3.5-inch disks.
+
+    - 6 MB for either Creative Writer or Fine Artist, version 1.1, on CD-ROM.
+
+5. To increase hard drive space, copy unnecessary files and applications to a
+   floppy disk, then delete those files and applications from the hard drive.
+
+6. Again, check the amount of space available on your hard drive. When you have
+   enough for the program you are installing, run Setup again.
+
+For information about copying and deleting files on your Macintosh, see your
+Macintosh printed documentation or online Help.
+
+
+Additional query words: mac kids mskids artist maggie max writer mczee harddrive harddisk install installation fails failure disc cdrom 1.10a
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbPTProdChange kbCreativeWriter110Mac kbCreativeWriter110aMac kbCreativeWriter100Mac kbFineArtist110Mac kbFineArtist110aMac kbFineArtist100Mac
+Version           : MACINTOSH:1.0,1.1,1.1a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

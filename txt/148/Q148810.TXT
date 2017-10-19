@@ -1,0 +1,57 @@
+DOCUMENT:Q148810  18-DEC-1999  [homemm]
+TITLE   :Scenes 2.0: No Orca or Green Sea Turtle Picture
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Scenes, Sierra Club Wildlife, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The back of the Sierra Club Wildlife Collection box lists the following wildlife
+pictures as being included in the package.
+
+   Polar Bear, Orca, Koala, Squirrel Monkey, Giant Anteater, Three-Toed Sloth,
+   Bald Eagle, Tufted Puffin, Keel-Billed Toucan, Poison Dart Frog, Green Sea
+   Turtle, Jaguar, Harp Seal, and Black Rhinoceros.
+
+However, the program does not include a pictures of an Orca or a Green Sea
+Turtle. There are no pictures of whales or fish in the Wildlife Collection. In
+the place of the Green Sea Turtle is a picture of a Desert Tortoise.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Scenes, Sierra Club
+Wildlife, version 2.0. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: error misprint mis-print missing msscenes screen saver screensaver whale
+
+======================================================================
+Keywords          :  
+Technology        : kbScenesSearch kbScenes200
+Version           : WINDOWS:2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

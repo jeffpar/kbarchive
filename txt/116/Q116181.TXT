@@ -1,0 +1,59 @@
+DOCUMENT:Q116181  08-MAY-2001  [visualc]
+TITLE   :FIX: ClassWizard Option Isn't Disabled for Non-MFC Projects
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:; :1.0
+OPER/SYS:
+KEYWORDS:kbwizard kbATL kbMFC kbVC kbVC100bug kbVC150bug kbVC200fix kbClassWizardkbbuglist kbfix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Workbench for Windows 
+ - Microsoft Visual C++, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The ClassWizard menu option within the Microsoft Visual Workbench is not
+disabled when you use a project that is not part of the Microsoft Foundation
+Classes (MFC). When you select ClassWizard from the Browse menu while using a
+non-MFC project, a dialog box appears that contains the following information:
+
+   "The ClassWizard database C:\xxxxxxxx\yyyyyyyy.CLW does not exist. To rebuild
+   your .CLW file, open the project in App Studio and run ClassWizard"
+
+If the project does not use MFC, ClassWizard cannot construct a .CLW file when it
+is run from App Studio.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ 2.0.
+
+Additional query words: Class Wizard 1.00 1.50, kbNoUpdate
+
+======================================================================
+Keywords          : kbwizard kbATL kbMFC kbVC kbVC100bug kbVC150bug kbVC200fix kbClassWizard kbbuglist kbfixlist
+Technology        : kbVCsearch kbVSsearch kbAudDeveloper kbvc100
+Version           : WINDOWS:; :1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

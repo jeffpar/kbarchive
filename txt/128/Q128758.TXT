@@ -1,0 +1,288 @@
+DOCUMENT:Q128758  02-FEB-2002  [homekids]
+TITLE   :MSB Solar: How to Play the Games
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+1.00
+WINDOWS
+kbusage kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Scholastic's Magic School Bus series: Explores the Solar System for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses how to play the games included with Magic School Bus
+Explores the Solar System for Windows.
+
+GAME DESCRIPTIONS
+-----------------
+
+The Planets Game (in the Classroom)
+-----------------------------------
+
+The Planets Game is activated by clicking the Globe on the table in the
+classroom. Choose a fun planet by clicking it, then explore this fun planet by
+clicking the objects on the screen. These planets are not real solar system
+planets but are intended for fun exploration. To return to the main screen,
+click the Earth in the lower-right corner of the screen. To return to the
+classroom, click the Earth again.
+
+The Science Experiment (on the Planet Surfaces)
+-----------------------------------------------
+
+On each planet surface, a small notepad (with or without a pencil on the cover)
+appears near the kids. Clicking the notepad takes you to the science experiment
+for that planet. Each experiment interactively explores topics that are related
+to this planet and/or all the planets. Listen to Liz's explanation of the
+experiment and click around.
+
+NOTE: To get to the planet surface from the classroom:
+
+1. Click the Bus.
+
+2. Click the Planet Selector in front of the steering column.
+
+3. Click the planet you want to visit.
+
+4. The planet name appears in the planet selector. Click the planet name.
+
+5. Click the Door.
+
+The WhatsIt Game (on the Planet Surfaces)
+-----------------------------------------
+
+The WhatsIt game is located on each planet surface. A small satellite (the
+WhatsIt) appears in the upper left or right corner of the screen. Clicking
+WhatsIt takes you to the game for that planet. Press the SPACEBAR key to jump.
+Run left or right by pressing the LEFT and RIGHT ARROW keys. Click the WhatsIt
+while playing the game to quit the game and return to the planet surface.
+Collect Jump Boots (marked "J") and Traction Boots (marked "T") to help you jump
+and land on moving platforms. Collect Rocket Packs to defy gravity (press up
+arrow button to fly) and Air Packs to extend your oxygen supply.
+
+Object of WhatsIt Game
+----------------------
+
+The object of the WhatsIt Game is to collect the token (located in the last
+screen of each WhatsIt game), return to the bus, and use the mouse to place the
+token in the Token Slot to gain clues. These clues allow you to guess which
+planet to go to in order to find Ms. Frizzle. You can collect the stars to
+increase your score, although the scores are reset each time you win or quit the
+WhatsIt game.
+
+PLANET-SPECIFIC INFORMATION
+---------------------------
+
+Mercury
+-------
+
+Revolving Planets Science Experiment:
+
+Planets revolve around the Sun at different speeds. This experiment compares the
+difference in revolutions between Earth and Mercury. Each full revolution around
+the Sun is symbolized by candles on a birthday cake. Click either planet to
+begin. When you see the birthday cake, click it to see how many birthdays you
+would have had on that planet (compare with the number you would have had on the
+other planet).
+
+Mercury's WhatsIt Game (Medium Gravity):
+
+You must use the moving platforms to move two screens to the right. If you fall
+in a hole or run out of air, you automatically restart. The lava does not hurt
+you. TIP: The Jump Boots in the second screen are of great benefit on this
+planet.
+
+Venus
+-----
+
+Venus Blanket Science Experiment:
+
+The carbon dioxide and other gases in Venus' atmosphere act like a blanket that
+keep the Sun's heat from escaping. This experiment lets you try to keep the
+Sun's heat from escaping the surface of Venus. Change the size of the carbon
+dioxide (CO2) cloud by clicking it (three sizes). Change the size of the Sun by
+clicking it (three sizes). Then click the Thermometer to test the CO2 blanket
+you have created. For some fun, click the pizza paddle to fling the piece of
+pizza onto the surface of Venus to test the temperature.
+
+Venus' WhatsIt Game (Heavy Gravity):
+
+You need the Jump Boots in the first screen. The token is two screens to the
+right. The lava does not hurt you, but you automatically start over if you fall
+in the holes. Use the platforms when they are available. TIP: On the small
+platforms, it is easier to jump up and then use the arrow keys to move either to
+the left or right.
+
+Moon
+----
+
+Crater Creator Science Project:
+
+This experiment allows you to make craters on the surface of the moon. Click the
+Yellow Slingshot, Green Band, or Blue Hand to load a meteor. Click the Meteor to
+change the size. Click the Yellow Slingshot to change the angle. Click the Green
+Band to change the tension, then click the Blue Hand to shoot the meteor with
+the slingshot.
+
+Moon's WhatsIt Game (Light Gravity):
+
+Follow the arrows. It is easiest to jump and then use the arrow keys to move in a
+direction. You must use the stationary platforms to get up to the second level
+and find the token. TIP: This one's easy!
+
+Mars
+----
+
+Mars Match Science Challenge:
+
+In this experiment you match the background picture (from Earth or Mars) to the
+planet (Earth or Mars) that would be associated with that environment. Click
+either planet to switch them and when you believe that the match is correct
+choose OK. If you choose correctly, the pictures are colored. If you have chosen
+incorrectly, you will receive an "X" and Liz gives you hints on how to make a
+better choice next time. If you receive three Xs you must click Reset to
+continue.
+
+Mars' WhatsIt Game (Medium Gravity):
+
+On the first screen you must push the single block toward the three stacked
+blocks. Then jump on the single block and jump over the stacked blocks. Pick up
+the Jump Boots and use the platforms to go up and onto the surface of Mars. Or
+pick up the Rocket Pack and press the UP ARROW key (plus the LEFT and RIGHT
+ARROW keys) to jet to the surface. Follow the arrows. TIP: Avoid the weight on
+the surface.
+
+Jupiter
+-------
+
+Pack and Fill Science Experiment:
+
+Jupiter is the largest planet. This experiment lets you try to fill Jupiter up
+using the other planets. Click the planet you want to use, then click the Red
+Fill Handle. To pause or stop the filling, click the Handle again. The object is
+to perfectly fill Jupiter with another planet. When you achieve the object, you
+are rewarded with celebratory fanfare. To start over, click Jupiter or the Red
+Dispenser.
+
+Jupiter's WhatsIt Game (Heavy Gravity):
+
+The lava does not hurt you but if you fall in the holes, you have to start over.
+You should pick up the Jump Boots on the first screen. Your goal is three
+screens to the right. TIP: You can walk up to the edge of the volcanoes and then
+jump over them.
+
+Saturn
+------
+
+Design O' Ring Science Experiment:
+
+Saturn is easy to recognize because of its rings. This experiment lets you design
+rings for Saturn. The Red Handle extends or retracts the arm. Click the bin
+(rock, dust or ice) to dispense them around Saturn. Dispense unwanted or extra
+material in the Recycler. When you have dispensed all your materials, Saturn
+rotates with the ring(s) you have created. To start again, click Saturn.
+
+Saturn's WhatsIt Game (Heavy Gravity):
+
+BEWARE: The rocks are ice and therefore slippery. Time your jumps from floating
+rock to floating rock. Pick up the Rocket Pack on the second screen and use the
+UP ARROW key (plus LEFT and RIGHT ARROW keys) to operate. Follow the arrows.
+TIP: The Rocket Pack uses oxygen at a faster rate.
+
+Uranus
+------
+
+Tilt and Match Science Experiment:
+
+Planets rotate at different speeds and angles. In this experiment, you try to
+guess the angle at which different planets rotate. Click the Ball to start it
+rotating. Click the Boot to change the angle of rotation. Then click the
+planet(s) that you believe match the Ball's angle of rotation (HINT: Start the
+ball spinning before you click on a planet). If you are correct, tinkly bells
+herald your success. If you are incorrect, a horn sounds and you can try again.
+When all the planets are spinning, you are finished.
+
+Uranus' WhatsIt Game (Light Gravity):
+
+Avoid the weights at the top of the first screen. Pick up the Jump Boots on the
+second screen. Use the moving platforms to follow the arrows. TIP: The token is
+actually one screen above your starting point. See if you can shortcut two
+screens.
+
+Neptune
+-------
+
+Planet Cut and Slice Science Experiment:
+
+This experiment allows you to see what materials the planets are made of. Click
+the planet you want to examine, then click the Green Scissors to cut the planet
+in half. Now click the layers to see what they are made of. After you have cut
+all the planets, you can click the scissors to start again.
+
+Neptune's WhatsIt Game (Medium Gravity):
+
+This game probably requires several tries; it looks easy, but is one of the
+tougher levels. To win, you want to descend to the bottom screen -- let yourself
+fall. Make a mental note as you drop as to where and on which screen the Air
+Packs are located. At the platform, jump across to the Jet Pack. Use the UP
+ARROW key (plus LEFT and RIGHT ARROW keys) to operate. Pick up all the Air Packs
+as you ascend. Do not forget the Air Pack on the lowest level. The Rocket Pack
+uses oxygen at a very fast rate. TIP: Collect all the stars for a personal high
+score!
+
+Pluto
+-----
+
+Pluto Loop Science Experiment:
+
+An object, for example, the moon, a satellite and, in this case, the Magic School
+Bus, has to be at the right speed and angle to stay in orbit. In this experiment
+you try to put the bus in orbit around Pluto. Click the Flame to increase or
+decrease the speed. Click the Green Ramp to choose the angle, then click the Bus
+to send it into (and perhaps out of) orbit. Click Pluto to start again.
+
+Pluto's WhatsIt Game (Light Gravity):
+
+You need to get the Jump Boots that are two screens to the right. Use the moving
+platform at the top of the first screen. Jump over the stack of blocks in the
+second screen. Pick up the Jump Boots and follow the arrows. Careful timing is
+needed to navigate on the small, moving platforms. After you've traveled all the
+small moving platforms, do not be disheartened to find yourself falling back
+into the first screen without having reached the token. Get back onto the moving
+platform and use it to jump up into the screen above you. Timing is important on
+this jump so be ready to try it again if you miss the token the first time. TIP:
+Once you have the Jump Boots you can leap back over the stack of blocks and into
+the first screen (shortcut to the token).
+
+
+Additional query words: kbhowto msbss frizz schoolbus magicbus school_bus liz frizzle games play winmsbsolar msbsolar
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kbScholasticSolar kbMSBSearch
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

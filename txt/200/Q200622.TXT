@@ -1,0 +1,73 @@
+DOCUMENT:Q200622  19-MAR-1999  [sms]
+TITLE   :SMS: Multiple Site Summary Only Shows Products With Peak Usage
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbReport kbsmsAdmin kbsmsMeter
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When running a Multiple Site Summary Report from the Report Wizard in the
+Software Metering Console, not all expected products are displayed. Only those
+products that have a peak usage are returned.
+
+NOTE: If a product without a peak usage is explicitly picked, it will be included
+in the report.
+
+For example:
+
+1. Open the Software Metering Tool.
+
+2. Create a Program.
+
+3. Start Report Wizard from the Tools menu.
+
+4. Click Next.
+
+5. Choose Multiple Site Summary.
+
+6. Accept all defaults.
+
+7. Observe the finished report.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0 for Windows NT.
+
+Microsoft has confirmed this to be a problem in Systems Management Server version
+2.0.
+
+Additional query words: prodsms swmeter
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbReport kbsmsAdmin kbsmsMeter 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

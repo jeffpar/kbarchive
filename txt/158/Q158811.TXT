@@ -1,0 +1,66 @@
+DOCUMENT:Q158811  15-DEC-2000  [crossnet]
+TITLE   :Some Exchange Objects Cannot be Added to Performance Data Log
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Windows NT Resource Kit, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Windows NT 4.0 Resource Kit includes a utility called Performance Data Log
+Service. This utility functions much like Performance Monitor except Performance
+Data Log Service runs as a service and writes the performance data to a text
+file for analysis in a spreadsheet or database package.
+
+If Microsoft Exchange Server is installed, several objects are added to the list
+of objects that can be monitored with the Performance Data Log Service. The
+following Microsoft Exchange objects cannot be monitored with the Performance
+Data Log Service.
+
+   Microsoft Exchange Information Store
+   Microsoft Exchange Information Store - private
+   Microsoft Exchange Information Store - public
+
+WORKAROUND
+==========
+
+The Microsoft Exchange objects listed above can be monitored with Windows NT
+Performance Monitor.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with the resource kit utility
+Performance Data Log Service. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: pdlsvc.exe pdlcnfig.exe
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbMSPressSearch kbZNotKeyword6 kbZNotKeyword2
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

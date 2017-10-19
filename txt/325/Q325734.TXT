@@ -1,0 +1,147 @@
+DOCUMENT:Q325734  06-AUG-2002  [homegame]
+TITLE   :MechWarrior 4.0: Game Hangs Immediately After Starting
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MechWarrior 4: Black Knight 
+ - Microsoft MechWarrior 4: Vengeance 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to start MechWarrior 4: Black Knight, the program may stop
+responding (freeze) on a black screen that displays an hourglass, or you may
+receive an error message similar to the following:
+
+   AppName: mw4.icd AppVer: 1.6.11.220 ModName: mw4.icd ModVer: 1.6.11.220
+   Offset: 00309380
+
+CAUSE
+=====
+
+This behavior occurs if your installation of MechWarrior is faulty or
+incomplete. This may occur when an open program or background program interferes
+with the installation process.
+
+RESOLUTION
+==========
+
+To resolve this issue, remove MechWarrior, clean-boot your computer, and then
+reinstall MechWarrior. To do this, follow these steps.
+
+NOTE: Because there are several versions of Microsoft Windows, the following
+steps may be different on your computer. If they are, see your product
+documentation to complete these steps.
+
+Remove MechWarrior
+------------------
+
+1. Click Start, point to Settings, click Control Panel, and then double-click
+   Add/Remove Programs.
+
+2. Select MechWarrior Black Knight in the list of currently installed programs,
+   and then click Add/Remove.
+
+3. Click Uninstall, and then follow the instructions to complete the removal
+   process.
+
+4. Repeat these steps to remove MechWarrior Vengeance and any other MechWarrior
+   programs that may be installed on your computer.
+
+5. Locate and then delete the following folder
+
+   <drive>:\Program Files\Microsoft Games\MechWarrior Vengeance
+
+   where drive is the drive on which MechWarrior was installed. This path assumes
+   a default installation, and may vary depending on your installation.
+
+Remove Temporary Files
+----------------------
+
+1. Click Start, point to Programs, point to Accessories, point to System Tools,
+   and then click Disk Cleanup.
+
+2. In the Select Drive dialog box, select your system disk (the disk on which
+   Windows is installed), and then click OK.
+
+3. Under "Files to delete", click to select the Temporary Files check box, and
+   then click OK.
+
+4. Repeat these steps for any other local drives on your computer.
+
+Use a Clean Boot to Start Your Computer
+---------------------------------------
+
+When you start Windows normally, there are a number of programs that start
+automatically and run in the background. These programs, which may include
+antivirus and system utility programs, may sometimes interfere with the
+installation of a new program.
+
+When you perform a clean boot before you install a new program, you prevent these
+programs from starting automatically. For additional information about how to
+perform a clean boot, click the article numbers below to view the articles in
+the Microsoft Knowledge Base:
+
+   Q310353 How to Perform a Clean Boot in Windows XP
+
+   Q281770 How to Perform Clean-Boot Troubleshooting for Windows 2000
+
+   Q267288 How to Perform a Clean Boot in Windows Millennium Edition
+
+   Q192926 How to Perform Clean-Boot Troubleshooting for Windows 98
+
+   Q243039 How to Perform a Clean Boot in Windows 95
+
+Reinstall MechWarrior
+---------------------
+
+1. Insert your MechWarrior CD-ROM into your computer's CD-ROM or DVD-ROM drive.
+
+2. If the Setup program begins automatically, go to step 5.
+
+3. If Setup does not start automatically, click Start, point to Settings, click
+   Control Panel, and then double-click Add/Remove Programs.
+
+4. In the Install/Uninstall window, click Install.
+
+5. Follow the instructions to complete the installation process.
+
+MORE INFORMATION
+================
+
+For additional information about similar games error messages, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q228985 Games Err Msg: Please Insert the Correct CD-ROM, Select OK and
+   Restart Application
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbGamesSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

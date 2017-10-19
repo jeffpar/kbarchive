@@ -1,0 +1,77 @@
+DOCUMENT:Q167824  19-DEC-1999  [schedplus]
+TITLE   :XCLN: How Schedule+ Displays Busy Times for Resources
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbenv kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In planner view in Microsoft Schedule+, the busy times for resources are based
+on a different logical interpretation than the busy times for required or
+optional attendees. That is, the planner will display as busy (or not available)
+only if ALL resources are busy while meeting attendees will show as busy when
+ANY of the attendees are busy.
+
+There are four methods for viewing the individual busy resources:
+
+1. Resources that are busy during the selected meeting interval will display a
+   red X next to their name in the attendees list.
+
+2. Double click the selected meeting time to show individual attendees and
+   resources that are busy during that time.
+
+3. Secondary click on the selected meeting time to show individual attendees and
+   resources that are busy during that time.
+
+4. Choosing the Request Meeting button will bring up a dialog if multiple
+   resources are available allowing the user to select one or more resources for
+   the meeting.
+
+MORE INFORMATION
+================
+
+When Microsoft Schedule+ generates the busy times for resources, it constructs a
+query using the "and" operator. For example, Schedule+ constructs a query such
+as "if resource A AND resource B are busy," show the indicators for the busy
+times.
+
+In contrast, when Microsoft Schedule+ generates the busy times for required or
+optional attendees, it constructs a query using the "or" operator. For example,
+it constructs a query such as "if required attendee A OR required attendee B is
+busy," show the indicators for the busy times.
+
+This behavior is by design.
+
+Additional query words: WINNT WIN16 WIN95 XCLN XSCH KBUSAGE
+
+======================================================================
+Keywords          : kbenv kbusage 
+Technology        : kbScheduleSearch kbSchedule700
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

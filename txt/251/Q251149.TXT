@@ -1,0 +1,62 @@
+DOCUMENT:Q251149  11-MAR-2000  [exchange]
+TITLE   :XIMS: Guest Account Allows Relaying with Routing Restrictions
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Internet Mail Service may allow non-authenticated users to relay mail if the
+Microsoft Windows NT domain Guest account is enabled.
+
+CAUSE
+=====
+
+This problem can occur if non-authenticated users bypass routing restrictions
+that require authentication by using the Guest account. After Simple Mail
+Transfer Protocol (SMTP) authentication does not work, some clients use the
+Guest account.
+
+WORKAROUND
+==========
+
+To work around this problem, disable the Guest account:
+
+1. In Windows NT User Manager for Domains, double-click the Guest account to
+   select it.
+
+2. Click to select the "Account Disabled" check box, and then click OK to save
+   the changes.
+
+Additional query words: IMS IMC relay netscape
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

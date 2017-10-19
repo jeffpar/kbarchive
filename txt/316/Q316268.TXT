@@ -1,0 +1,66 @@
+DOCUMENT:Q316268  18-FEB-2002  [msdn]
+TITLE   :INFO: Product Key For Products from Subscriber Downloads Site
+PRODUCT :Microsoft Developer Network
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Developer Network Subscriptions 
+ - Microsoft Developer Network (MSDN) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The MSDN Subscriber Downloads sites provide the Product Keys for products that
+are downloaded from those sites.
+
+If you cannot find a Product Key that you have already used, or if you have lost
+your record of the Product Key, you can recover it by browsing back to the
+Downloads site where you first obtained the product.
+
+MORE INFORMATION
+================
+
+If you cannot browse to the original site, contact the MSDN Fulfillment Center
+by telephone at 1-800-759-5474, or send an e-mail message to msdn@microsoft.com
+and request your replacement Product Key.
+
+REFERENCES
+==========
+
+For more information, refer to the following MSDN Web sites:
+
+   General MSDN Questions and Answers
+   http://msdn.microsoft.com/subscriptions/prodinfo/qa.asp
+
+   Other MSDN Subscriptions support options
+   http://msdn.microsoft.com/subscriptions/resources/support.asp
+
+Additional query words: CDkey, CD key
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDNSearch kbZNotKeyword2 kbMSDNSubsc
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

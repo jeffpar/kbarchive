@@ -1,0 +1,80 @@
+DOCUMENT:Q160452  13-JUN-2001  [sna]
+TITLE   :NVAlert Service Logs Event 3006 and Stops Responding
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, 3.0, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If the NVAlert service encounters data for a configured event that exceeds 4 KB
+in size, the NVAlert service may stop responding. The following event is logged
+when this problem occurs:
+
+   Event ID: 3006
+   Source: SNA Netview Alerter
+   Type: error
+   Description : Error reading log event record.Handle specified is
+   <handle>.
+   Return Code from ReadEventLog is 122.
+
+CAUSE
+=====
+
+The NVAlert service is not properly allocating memory large enough to handle an
+alert that exceeds 4 KB.
+
+RESOLUTION
+==========
+
+The NVALERT code has been modified to allow any size Event Log entry. If the
+current buffer size is not large enough, it is increased to accommodate the
+size.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 2.0, 2.1,
+2.11, 2.11 SP1, and 3.0.
+This problem was corrected in the latest Microsoft SNA Server 2.11 U.S. Service
+Pack. For information on obtaining the service pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: prodsna 2.00 2.11 3.00 2.10
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

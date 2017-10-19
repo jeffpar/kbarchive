@@ -1,0 +1,94 @@
+DOCUMENT:Q200350  10-AUG-2001  [winnt]
+TITLE   :HPMON Generates Event ID 1012 When Using DLC Protocol
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you view your Windows NT Event logs, you may come across Event ID: 1012.
+The source for the event ID is HPMON.
+
+CAUSE
+=====
+
+This error is generated in rare conditions or when the network is either
+overloaded or slow. The error can be an indication of problems with network
+traffic, network hardware and/or hardware drivers.
+
+RESOLUTION
+==========
+
+As a general rule, the operating system is not usually the cause of the error.
+It is more likely that the error is being driven from one of the following.
+
+ - Network routing, switching, logical addressing, and datagram services.
+
+ - Data link transmission control and error detection.
+
+ - Physical, electrical, mechanical, and functional interfaces.
+
+The following settings can be altered to reduce the amount of DLC errors logged
+in the event log by HPMON. To make these changes, follow these steps:
+
+1. Go to Print Manager.
+
+2. Select any printer that uses a DLC port.
+
+3. On the Printer menu, click Properties.
+
+4. On Printer Properties, verify the port that the printer uses is a DLC port.
+   If not, select another printer that is using DLC.
+
+5. Click Settings and go to Timers and Status Update. Set this to 160 seconds.
+   Click OK.
+
+6. Select Options to modify the DLC timers:
+
+    - Response Timer (T!): set to 10
+      This setting opens the response to queries to give more slack time to
+      respond.
+
+    - Acknowledge Timer (T2): set to 10
+      This setting gives more time to respond to print requests.
+
+    - Inactivity Timer (Ti): set to 10
+      This setting will give the printer extra time to respond before DLC
+      believes the connection is having a problem.
+
+NOTE: Making these changes will affect all DLC ports.
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

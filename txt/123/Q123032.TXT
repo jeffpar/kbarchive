@@ -1,0 +1,87 @@
+DOCUMENT:Q123032  11-FEB-2000  [foxpro]
+TITLE   :BUG: SKIP Produces Unexpected Results
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:2.60
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Windows, version 2.60 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the SKIP clause on a BAR of a POPUP, FoxPro for Windows disables
+the menu choice but still displays the disabled choice and allows the disabled
+choice to be selected.
+
+RESOLUTION
+==========
+
+Use an IF _WINDOWS clause to bracket the code. Then define the POPUP and BARs
+without the SKIP option.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The SKIP clause does not work in FoxPro for Windows but does work as documented
+in FoxPro for MS-DOS. For example, the following code works correctly in FoxPro
+for MS-DOS but not in FoxPro for Windows:
+
+     DEFINE POPUP CAmenu FROM 5,23 TO 23,53
+     DEFINE BAR 1 OF CAmenu PROMPT "          Main Menu"   SKIP
+     DEFINE BAR 2 OF CAmenu PROMPT "-----------------------------"   SKIP
+     DEFINE BAR 3 OF CAmenu PROMPT "  Application, Inquiry, HSQ"
+     ACTIVATE POPUP CAmenu
+
+Code to Reproduce Problem
+-------------------------
+
+Run the following code in FoxPro for Windows:
+
+     DEFINE POPUP CAmenu FROM 5,23 TO 23,53
+     DEFINE BAR 1 OF CAmenu PROMPT "          Main Menu"   SKIP
+     DEFINE BAR 2 OF CAmenu PROMPT "-----------------------------"   SKIP
+     DEFINE BAR 3 OF CAmenu PROMPT "  Application, Inquiry, HSQ"
+     ACTIVATE POPUP Camenu
+    
+     ON SELECTION BAR 1 WAIT WINDOW 'Bar 1'
+     ON SELECTION BAR 2 WAIT WINDOW 'Bar 2'
+     ON SELECTION BAR 3 WAIT WINDOW 'Bar 3'
+
+Even though you can select Bars 1 and 2 by using the cursor keys, no WAIT WINDOW
+appears for them.
+
+Additional query words: FoxWin buglist2.60 disable prompt
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFoxproSearch
+Version           : WINDOWS:2.60
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

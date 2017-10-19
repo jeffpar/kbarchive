@@ -1,0 +1,66 @@
+DOCUMENT:Q63680  14-DEC-1999  [win95x]
+TITLE   :AutoCAD 386 and Windows 3.0
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+AutoCAD 386 runs with Microsoft Windows version 3.00 in real mode only. This is
+because AutoCAD 386 uses VCPI (virtual control program interface) to access
+extended memory that comes into conflict with Windows in protected, standard,
+and enhanced mode.
+
+MORE INFORMATION
+================
+
+The VCPI specification allows MS-DOS applications to directly access extended
+memory on 80386 machines. Windows 3.0 uses the DPMI (DOS protected- mode
+interface) specification. The DPMI specification allows DOS applications to
+directly access memory on 80286 and 80386 machines. Not all programs that use
+the VCPI specification are limited to running with Windows in real mode. Many
+programs, including Lotus 1-2-3 version 3.0, that use the VCPI specification run
+correctly in Windows protected mode.
+
+The performance of an MS-DOS application that uses the VCPI specification depends
+on how closely the actual application follows the VCPI specification.
+
+NOTE: When running AutoCAD under Windows 3.0 in standard mode, erratic
+functioning can occur. It is therefore recommended that you do not run AutoCAD
+while running in standard mode.
+
+The AutoCAD product included here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 3.00 3.00a 3.0 3.0a 3RDPARTY auto cad
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

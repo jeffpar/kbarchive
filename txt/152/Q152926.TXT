@@ -1,0 +1,71 @@
+DOCUMENT:Q152926  29-MAR-1999  [exchange]
+TITLE   :XADM: Exchange IS Error 1025
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Information Store may report the following error in the Event Log:
+
+   Event ID: 1025
+   Source: MExchangeIS Private
+   Type: Warning
+   Category: Transport
+
+   Description:
+   An error occurred.
+   Function name or description of problem: EcGenerateNRN:
+   Error:0x8004010f
+
+CAUSE
+=====
+
+This happens when an expired message is in a mailbox that has never been logged
+on before and the message has a Read Notification Request. While trying to
+generate the Non-Read Notification (NRN), a logon object is supposed to be
+created for this mailbox, but at that point no Windows NT User Name is available
+because this is not a real logon from the user. The logon code tries to cache
+the Windows NT User Name, but because it does not have the Windows NT User Name,
+it cannot. At this point, the error code that it used to check whether the
+Windows NT User Name is already cached is not cleared properly.
+
+STATUS
+======
+
+Microsoft has confirmed this to a problem in Microsoft Exchange Server, version
+4.0. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: IES
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

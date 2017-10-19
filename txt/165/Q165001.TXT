@@ -1,0 +1,200 @@
+DOCUMENT:Q165001  08-AUG-2001  [winnt]
+TITLE   :Adding TCP/IP Support to RemoteBoot Workstations
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By default, a RemoteBoot workstation runs the NetBEUI protocol. This article
+describes how to install support for TCP/IP and how to modify the configuration
+so that the workstation can take advantage of Domain Name Service (DNS) name
+resolution.
+
+
+MORE INFORMATION
+================
+
+The following information assumes workstations can successfully boot from the
+Windows NT RemoteBoot server using NetBEUI. For more information on configuring
+RemoteBoot workstations, see Chapter 15 of the "Windows NT 4.0 Resource Kit."
+
+
+Installing TCP/IP Support
+-------------------------
+
+Before you set up clients to use TCP/IP, you must either enable DHCP on a DHCP
+Server (to assign addresses automatically), or you must assign IP addresses and
+subnet masks for each workstation that will use TCP/IP.
+
+To Enable TCP/IP Support
+------------------------
+
+1. Edit the <SystemRoot>\Rpl\Bblock\NetBEUI\Adapter\Dosbb.cnf file, where
+   adapter is the name of the network adapter. Remove the semicolon (;) in
+   column one of the following line:
+
+     ;DRV    BBLOCK\TCPDRV.DOS /I:C:\LANMAN.DOS ~ ~
+
+2. For each profile (or personal copy of a profile) that will support TCP/IP,
+   edit the following files as described:
+
+   In <SystemRoot>\Rpl\RplFiles\Profiles\<Profile>\Autoexec.bat,
+   where Profile is the name of the profile, enable the following entries by
+   removing the REM designations at the beginnings of those lines.
+
+      UMB.COM
+      NMSTR
+      LOAD TCPIP
+
+   In <SystemRoot>\Rpl\RplFiles\Profiles\<Profile>\Config.sys, where
+   Profile is the name of the profile, enable Nemm.dos by removing the REM
+   designation at the beginning of that line.
+
+3. Start a client using one of the profiles altered in the last step.
+
+The client will now load TCP/IP when started from the RPL Server.
+
+Enable the Client to Use DNS for Name Resolution
+------------------------------------------------
+
+The workstation will, by default, not use DNS for name resolution. The following
+discusses what you need to do to enable DNS.
+
+Installing SOCKETS and DNR Support
+----------------------------------
+
+1. In Autoexec.bat add the two following lines:
+
+      SOCKETS
+      DNR
+
+2. Modifying Tcputils.ini: Every workstation requires a private copy of the file
+   Tcputils.ini. It is necessary to modify the [tcpglobal] and to add the [DNR]
+   section. The hostname and username entries have to be unique to every
+   workstation.
+
+   Example Tcputils.ini:
+
+   [tcpglobal]
+   drivername=GLOBAL$
+   ;netfiles=C:\LANMAN.DOS\ETC
+   hostname=perlars3
+   username=perlars
+
+   [sockets]
+   drivername=SOCKETS$
+   bindings=TCPIP_XIF
+   numsockets=4
+   numthreads=32
+   poolsize=3200
+   maxsendsize=1024
+
+   [telnet]
+   drivername=TELNET$
+   bindings=TCPIP_XIF
+   nsessions=0
+   max_out_sends=0
+
+   [DNR]
+   drivername=DNR$
+   bindings=TCPIP_XIF
+   nameserver0=157 55 128 180
+   nameserver1=
+   domain=microsoft.com
+
+You can have a template Tcputils.ini in a profile. If you wish to do this, copy
+Tcputils.ini to:
+
+   RplFiles\Profiles\Dos622\Wksta.pro\Tcputils.ini
+
+(in the above example, DOS622 is an example profile name)
+
+Every time you create a new workstation, this file will be copied to the correct
+location.
+
+If you have already created workstations, then you need to copy Tcputils.ini to
+every workstation subdirectory.
+
+   RplFiles\Machines\Perlars3\Dos622\Wksta\Tcputils.ini
+
+(in the above example, PERLARS3 is a workstation (machine) name; DOS622 is a
+profile associated with the workstation PERLARS3)
+
+Modifying the *.fit File for the Configuration You are Using
+------------------------------------------------------------
+
+When you use Dos622.fit, you need to add one line:
+
+  ;machine writeable files
+  C:\LANMAN.DOS\TCPUTILS.INI  MACHINES\(CNAME)\(PROFILE)\WKSTA\TCPUTILS.INI
+
+When you use Dos622p.fit, you need to delete one line and add another:
+
+Delete the following line:
+
+   ;shared DOS LANMAN files
+   C:\LANMAN.DOS\TCPUTILS.INI  (BINFILES)\LANMAN.DOS\TCPUTILS.INI
+
+Add this line:
+
+  ;machine writeable files
+  C:\LANMAN.DOS\TCPUTILS.INI  MACHINES\(CNAME)\(PROFILE)\WKSTA\TCPUTILS.INI
+
+Copying TCP/IP Support Files
+----------------------------
+
+Copy the following files to RplFiles\BinFiles\Lanman.dos\Netprog
+
+03/05/94  22:54                  9,524 vbapi.386
+03/05/94  22:54                  9,535 vsockets.386
+17/06/94  01:48                  5,632 rpc16c3.dll
+03/05/94  22:54                 30,912 win_sock.dll
+22/08/94  22:08                 48,224 winsock.dll
+03/05/94  22:54                 33,280 wsockets.dll
+03/05/94  22:53                 19,569 addname.exe
+22/08/94  22:08                 31,232 dnr.exe
+03/05/94  22:53                  4,294 emsbfr.exe
+22/08/94  22:08                 11,205 ipconfig.exe
+03/05/94  22:54                 22,826 nmtsr.exe
+03/05/94  22:54                 66,460 ping.exe
+22/08/94  22:08                 50,096 sockets.exe
+22/08/94  22:08                 71,040 tcptsr.exe
+22/08/94  22:08                 36,992 tinyrfc.exe
+17/06/94  01:51                 13,799 unloadt.exe
+03/05/94  22:54                  5,152 wsahdapp.exe
+
+For more information, see Chapter 15 Remoteboot in the Microsoft Windows NT 4.0
+Server Networking Guide.
+Microsoft Press Part No: 097-0001650
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : WinNT:3.5,3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

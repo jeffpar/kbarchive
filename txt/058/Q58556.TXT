@@ -1,0 +1,65 @@
+DOCUMENT:Q58556  09-NOV-1999  [macmail]
+TITLE   :Mac GW: How Gateway Servers Work
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:2.0,2.0a,2.0b,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, versions 2.0, 2.0a, 2.0b, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+IMPORTANT: All Microsoft Mail version 2.00 customers who have gateways installed
+should be using the "MS Mail GW" file version 2.00b and the "Microsoft Mail
+Server" file version 2.00b, both of which are located in the System Folder of
+the Mail server. An updated "MS Mail GW" file is available through Microsoft End
+User Sales and Service at (800) 426-9400 or Microsoft Customer Service at (206)
+936-8661, but ONLY for customers using the AppleLink Gateway to Microsoft Mail.
+Customers using other gateways must obtain an updated "MS Mail GW" file from the
+developer of the gateway they are using. The Microsoft Mail server upgrade can
+also be obtained at the above numbers.
+
+
+Gateway servers are created by using the Gateway Installer program to install the
+gateway resources in the data file of a Microsoft Mail server. The gateway
+server is the Mail server that has the physical connection to the external mail
+service (or any other service such as the stock exchange to receive stock
+quotes). In the case of the AppleLink gateway, the gateway server has the modem,
+which is used to connect to the AppleLink host, connected to the modem port.
+
+Mail users registered on the gateway server have access to the gateway. When a
+user on a gateway server sends a message to a recipient on the external service,
+the Mail server passes information about the Mail message to the gateway. The
+gateway then forwards the mail message to the external service.
+
+Please note that the sending of gateway messages is based on gateway accounts
+defined, if any, and scheduled connect times.
+
+Additional query words: 2.00 2.00a 2.00b 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN200 kbMailATN200a kbMailATN200b
+Version           : WINDOWS:2.0,2.0a,2.0b,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

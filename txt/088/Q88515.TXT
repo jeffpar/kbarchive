@@ -1,0 +1,65 @@
+DOCUMENT:Q88515  10-AUG-1999  [homegame]
+TITLE   :Additional Golf Courses Available from Access Software
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+All of the Access Software LINKS championship courses are compatible with Golf
+for Windows. The following information is available in the New Game dialog box
+by selecting [Information on additional courses] from the Course list, or see
+page 2 of the "Player's Guide for Microsoft Golf:
+
+   Torrey Pines South Course -- is shipped with Golf for Windows.
+
+List of additional courses available as of 3/15/94....
+
+   Banff Springs - Banff, Alberta, Canada
+   Barton Creek Country Club - Austin, Texas
+   Bay Hill Club - Orlando, Florida
+   Bountiful Municipal Golf Club - Bountiful, Utah
+   Dorado Beach East Course (Hyatt) - Dorado, Puerto Rico
+   Firestone Country Club - Akron, Ohio
+   Innisbrook - Tarpon Springs, Florida
+   Mauna Kea - Island of Hawaii, Hawaii
+   Pebble Beach, Montery Peninsula, California
+   Pinehurst Resort & Country Club - North Carolina
+   The Belfry - England
+   Troon North - Scottsdale, Arizona
+
+For more information about Access Software products, call (800) 800-4880 or (801)
+359-2900 or fax (801) 359-2968. The Access Software address is:
+
+   Access Software, Inc.
+   W. Amelia Earhart
+   Drive Salt Lake City, Utah  84116
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch kbGolf100
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

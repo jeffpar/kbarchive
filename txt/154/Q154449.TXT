@@ -1,0 +1,70 @@
+DOCUMENT:Q154449  10-MAR-2000  [foxpro]
+TITLE   :BUG: Error #202 In Makestf when Running VFP/Mac Setup Wizard
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When running the Setup Wizard in Visual FoxPro for Macintosh, the following
+error is received shortly after clicking the Finish button:
+
+   Error #202 in makestf(0): Invalid path of file name.
+
+CAUSE
+=====
+
+The Application Name, as specified in Step 4 - Setup Options of the Setup
+Wizard, is 22 or more characters in length.
+
+This error can also be received with an Application Name less than 22 characters
+if one of the characters in the Application Name is a colon (:) or a backslash
+(\). The Macintosh System and FoxPro use these two characters for specifying
+folder paths.
+
+WORKAROUND
+==========
+
+Make sure the Application Name specified in Step 4 - Setup Options of the Visual
+FoxPro for Macintosh Setup Wizard is less than 22 characters and it does not
+contain any colons (:) or backslashes (\). Spaces are allowed in the Application
+Name and no other characters are known to cause problems.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+Additional query words: kbdsd VFoxMac Makesft error 202
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+Version           : MACINTOSH:3.0b
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

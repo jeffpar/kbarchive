@@ -1,0 +1,64 @@
+DOCUMENT:Q148530  16-DEC-1999  [homemm]
+TITLE   :Bookshelf 96-97: Changes to Internet Updates Not Saved
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 1996-97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to make a change to the Internet Updates dialog box, the
+changes are not saved.
+
+CAUSE
+=====
+
+Internet Updates are not designed for modification.
+
+Microsoft Windows allows you to change the Internet Updates text. However,
+Bookshelf discards any changes made when you click OK.
+
+WORKAROUND
+==========
+
+To add your own specific notes to any Bookshelf article, press and hold down the
+keyboard CTRL key while you press the N key (CTRL+N). This feature allows you to
+add notes to the article.
+
+MORE INFORMATION
+================
+
+Internet Updates' notes are changed by downloading a new Updates file from the
+Bookshelf World Wide Web (WWW) page.
+
+
+Additional query words: 96-97 multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1996 kbBookShelf1997
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

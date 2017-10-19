@@ -1,0 +1,59 @@
+DOCUMENT:Q86570  15-DEC-2000  [win3x]
+TITLE   :Mouse Systems Three-Button Mouse and Windows 3.1
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Mouse Systems Trackball II, M4, and M5 three-button mouse will only work
+with Microsoft Windows operating system version 3.1 in two-button mode. When the
+three-button mode is enabled, the mouse buttons may act as if they are
+depressed, even when the buttons have been released.
+
+MORE INFORMATION
+================
+
+According to Mouse Systems technical support, there is a switch on the bottom of
+the three-button mouse that allows a toggle between two- and three-button mode.
+The Trackball II, M4, and M5 will work with the following configuration provided
+the switch on the bottom of the mouse device is set to two-button mode:
+
+   Mouse Systems serial or bus mouse
+   Mouse Systems serial mouse on COM2
+   Microsoft, or IBM PS/2
+
+The Mouse Systems products included here are manufactured by a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: 3.10 mouse systems three button mice
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

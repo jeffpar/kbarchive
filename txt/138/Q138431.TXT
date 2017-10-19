@@ -1,0 +1,84 @@
+DOCUMENT:Q138431  17-DEC-2000  [win95x]
+TITLE   :System Policy Custom Desktop Icons Not Downloaded
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you create a system policy for a group and define custom folders, the
+custom folders may not appear when a member of the group logs on to the
+network.
+
+In addition, when a member of the group tries to connect to a Universal Naming
+Convention (UNC) path, the following error message may occur:
+
+   The folder \\<computer name>\<share name> does not exist.
+
+CAUSE
+=====
+
+The Hide Network Neighborhood option is enabled in the system policy.
+
+RESOLUTION
+==========
+
+Use System Policy Editor (Poledit.exe) to open the system policy file. Click the
+Hide Network Neighborhood check box to clear it. This option is located under
+Shell/Restrictions.
+
+WARNING: Using System Policy Editor incorrectly can cause serious problems that
+may require you to reinstall Windows 95. Microsoft cannot guarantee that
+problems resulting from the incorrect use of System Policy Editor can be solved.
+Use System Policy Editor at your own risk. System Policy Editor is available in
+the Admin\Apptools\Poledit folder on the Windows 95 CD-ROM. Use the Add/Remove
+Programs tool in Control Panel to install System Policy Editor.
+
+NOTE: Poledit.exe is included in the CD-ROM version of Windows 95, but not in the
+floppy disk version. If you are using the floppy disk version of Windows 95 and
+want to use Poledit.exe, please see the following article in the Microsoft
+Knowledge Base for information about the availability of Poledit.exe:
+
+   Q135315 CD-ROM Extras for Microsoft Windows 95 Upgrade
+
+MORE INFORMATION
+================
+
+The ability to connect to a UNC path is the only network functionality affected.
+You can still connect to the same path by mapping a drive letter to the path.
+Any program that uses a UNC path will be affected.
+
+Note that the symptoms described in this article can also occur if you install
+the TweakUI PowerToy and then use TweakUI to remove the Network Neighborhood
+icon from the desktop.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

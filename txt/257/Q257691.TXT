@@ -1,0 +1,73 @@
+DOCUMENT:Q257691  27-JUL-2001  [vbwin]
+TITLE   :FIX: Dynamically Loaded UserControl Does Not Send Changes
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbActiveX kbCtrl kbDatabase kbDataBinding kbVBp600bug kbGrpDSVBDB kbDSupport kbVS600sp4
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a UserControl is dynamically loaded onto a form, the edits made in a
+data-bound textbox are not communicated back to the data source in certain
+scenarios. If you click from an edited data-bound textbox to a data-bound
+UserControl, the data you have changed in the textbox is not communicated back
+to the datasource. Tabbing away from the data-bound textbox to the data-bound
+UserControl does allow the edits to be communicated back to the datasource and
+does update the data.
+
+This behavior is seen in the compiled version (.exe file) of the application. The
+behavior is not seen when the application is running within the development
+environment.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a bug in the Microsoft products that are
+listed at the beginning of this article. This bug was corrected in the latest
+service pack for Visual Studio 6.0.
+
+For additional information about Visual Studio service packs, click the following
+article numbers to view the articles in the Microsoft Knowledge Base:
+
+   Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+   Q194295 HOWTO: Tell That a Visual Studio Service Pack Is Installed
+
+To download the latest Visual Studio service pack, visit the following Microsoft
+Web site:
+
+   http://msdn.microsoft.com/vstudio/downloads/updates.asp
+
+Additional query words: sp4
+
+======================================================================
+Keywords          : kbActiveX kbCtrl kbDatabase kbDataBinding kbVBp600bug kbGrpDSVBDB kbDSupport kbVS600sp4fix kbVS600sp5fix 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

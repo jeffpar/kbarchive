@@ -1,0 +1,100 @@
+DOCUMENT:Q191526  11-DEC-1999  [foxpro]
+TITLE   :PRB: READ MENU In DO..WHILE Loop Causes VFP Screen to Jump
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a READ MENU is contained in a DO...WHILE loop, the Visual FoxPro screen
+jumps.
+
+RESOLUTION
+==========
+
+READ MENU is included for backward compatibility with FoxBase. Use the menu
+builder instead.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Save the following code to a program file and run the program:
+
+Sample Code
+-----------
+
+      *-- Code begins here.
+      PRIVATE menu1
+      DECLARE menu1[3,2]
+      menu1[1,1]=" Edit "
+      menu1[1,2]=''
+      menu1[2,1]=" Browse "
+      menu1[2,2]=''
+      menu1[3,1]=" Exit "
+      menu1[3,2]=''
+      STORE .F. TO done
+      DO WHILE .NOT. done
+         MENU BAR menu1, 3
+         READ MENU BAR TO menu_acr, mchoice
+      DO CASE
+      CASE menu_acr = 1
+         = MESSAGEBOX("Choice 1")
+      CASE menu_acr = 2
+         = MESSAGEBOX("Choice 2")
+      CASE menu_acr = 3
+         STORE .T. TO done
+      ENDCASE
+      ENDDO
+      RELEASE WINDOW Win1
+      RETURN
+      *-- Code ends here.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Mike Stewart, Microsoft Corporation
+
+
+Additional query words: kbVFp500abug kbVFp600bug kbXBase
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

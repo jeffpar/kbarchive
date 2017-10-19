@@ -1,0 +1,75 @@
+DOCUMENT:Q233443  27-JUN-1999  [homemm]
+TITLE   :Business Planner: Data Is Deleted from Field in Wizard Interview
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbtool kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Business Planner 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you type or paste data into a wizard interview in Microsoft Business
+Planner, some of the data may be deleted.
+
+CAUSE
+=====
+
+This behavior occurs if the following conditions are true:
+
+ - The field is limited to one line of text.
+
+ - The typed or pasted data does not fit within the visible area of the field.
+
+RESOLUTION
+==========
+
+To prevent this issue from occurring, do not type or paste more data into the
+wizard interview than can fit within the visible area of the field.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Business Planner.
+
+MORE INFORMATION
+================
+
+Fields limited to one line of text are placed next to questions that do not
+require long answers.
+
+Questions that may require longer answers are placed next to fields that can
+store more than one line of text. Because you can scroll through these fields,
+you can type or paste more data than can fit within the visible area of the
+field.
+
+Additional query words: msbp cut off truncated lost
+
+======================================================================
+Keywords          : kbtool kbui kbimu 
+Technology        : kbHomeMMsearch kbBusPlanner
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

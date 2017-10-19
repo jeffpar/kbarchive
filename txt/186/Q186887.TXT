@@ -1,0 +1,76 @@
+DOCUMENT:Q186887  22-JUN-2001  [exchange]
+TITLE   :XWEB: OWA: Macintosh: No Default Selection for Unresolved Recipi
+PRODUCT :Microsoft Exchange
+PROD/VER:MACINTOSH:4.01; WINDOWS:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 Service Pack 1 
+ - Microsoft Internet Explorer version 4.01 for Macintosh 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+When you use the Outlook Web Access (OWA) client from a Macintosh computer using
+Internet Explorer to send a message in which a recipient is not resolved, the
+following error message will appear:
+
+   [Accept These Choices]
+   [Cancel]
+   All addresses must be resolved before this item can be sent. The address for
+   the following recipient(s) could not be resolved. Please choose an action for
+   each recipient. If you choose to ignore a recipient, that entry will remain
+   unchanged.
+
+   * Recipient_Name has no matches.
+   o Ignore this recipient
+   o Delete this recipient
+
+In this case, neither Ignore nor Delete options are selected.
+
+If you do not select an option and select [Accept These Choices], the message is
+cancelled and not sent.
+
+WORKAROUND
+==========
+
+To work around this problem, you must select either option for each unresolved
+recipient, or select cancel, and edit the recipient field(s).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+Additional query words: Active Server Pages Macintosh Mac
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbOutlookSearch kbIEsearch kbOWASearch kbIEMacSearch kbOWA550SP1 kbIE401Mac
+Version           : MACINTOSH:4.01; WINDOWS:5.5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

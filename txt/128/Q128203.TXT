@@ -1,0 +1,61 @@
+DOCUMENT:Q128203  24-MAR-2000  [foxpro]
+TITLE   :FIX: No Generic/Text Only Printer Driver in Windows NT
+PRODUCT :Microsoft FoxPro
+PROD/VER:2.60a 3.00
+OPER/SYS:
+KEYWORDS:kbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft FoxPro for Windows, version 2.6a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+To send the output of a FoxPro report to a text file in FoxPro for Windows, you
+must use the Generic/Text Only printer driver. However, Microsoft Windows NT
+does not ship with the Generic/Text Only printer driver or any equivalent
+drivers.
+
+WORKAROUND
+==========
+
+Create a hard-coded report using the ??? "" command to put the printer driver in
+'raw' mode and use @..SAY or ? statements to output the data to the file.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+for Windows.
+
+Additional query words: VFoxWin FoxWin Generic ASCII buglist2.60a
+
+======================================================================
+Keywords          :  kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260a kbVFP300
+Version           : 2.60a 3.00
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

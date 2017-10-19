@@ -1,0 +1,79 @@
+DOCUMENT:Q135673  15-FEB-2000  [foxpro]
+TITLE   :PRB: Need Clause on Double Field to Enter Scientific Notation
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While Visual FoxPro supports the representation of very large or very small
+numbers through scientific notation, the letter E required by this format cannot
+be entered directly into a numeric field. The expected format consists of a
+decimal value resulting from exponential multiplication or division (the
+mantissa), the letter E, and the positive or negative value indicating the
+number of times to multiply the mantissa by ten (the ordinant).
+
+CAUSE
+=====
+
+Considering that the location of the E key is directly below the top row of
+numeric keys, the potential for entering an E accidentally is too great to
+permit entering the format into a numeric field by default. This is by design.
+
+WORKAROUND
+==========
+
+To allow entry of numeric data in scientific notation, the format property must
+be set to "^". When using a grid control set to populate automatically
+(ColumnCount set to -1), you must determine the appropriate column.
+
+For example, if a table field defined as double with three decimal places is the
+third field in the table, the following code in the Init event procedure of the
+form will display and accept scientific notation:
+
+      THISFORM.Grid1.Column3.Text1.Format="^"
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Although a mantissa value may be entered having both integer and decimal
+components, the result will be reduced to a decimal value only and the exponent
+portion recalculated. This conforms to IEEE specifications. The actual numeric
+value is unaffected, remaining the same regardless of the display format.
+
+Additional query words: VFoxWin overflow asterisk circumflex
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

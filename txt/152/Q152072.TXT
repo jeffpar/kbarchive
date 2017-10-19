@@ -1,0 +1,285 @@
+DOCUMENT:Q152072  04-AUG-2001  [visualc]
+TITLE   :FIX: ASSERT in OLECLI1.CPP When Copying Embedding to Clipboard
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:2.0,2.1,2.2,4.0,4.1; :1.5,1.51,1.52
+OPER/SYS:
+KEYWORDS:kbole kbClipboard kbCOMt kbMFC kbVC100bug kbVC150bug kbVC200bug kbVC400bug kbVC500fix k
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 2.0, 2.1, 2.2, 4.0, 4.1 
+ - Microsoft Foundation Classes (MFC) 
+ - Microsoft Visual C++, versions 1.5, 1.51, 1.52 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to copy an embedding in an in-place active object to the
+clipboard, the result is an ASSERT in OLECLI1.CPP. Specifically, the ASSERT
+occurs in the COleClientItem::XOleClientSite::GetMoniker() function on the
+following line of code:
+
+      VERIFY(pThis->m_lpObject->SetMoniker(OLEWHICHMK_OBJREL,
+             *ppMoniker)==S_OK);
+
+CAUSE
+=====
+
+When you copy an embedding to the clipboard, a number of data formats are placed
+on the clipboard, including link source information. The link source information
+contains a moniker used to locate the document in which the embedding resides.
+
+When the container assigns a moniker to an embedded object, it will call the
+object's IOleObject::SetMoniker() function. The object will then call the
+container's IOleClientSite::GetMoniker() function to construct a composite
+moniker based on the container's moniker. This is done because the container may
+have changed its moniker while the object was not running.
+
+When the embedded object calls IOleClientSite::GetMoniker() to get the
+container's moniker, COleClientItem::XOleClientSite::GetMoniker() ASSERTs on the
+aforementioned line of code because pThis->m_bMoniker had not been set to
+TRUE when the moniker was assigned during a previous call to
+COleClientItem::XOleClientSite::GetMoniker().
+
+The problem is located in the following section of the
+COleClientItem::XOleClientSite::GetMoniker() function located in OLECLI1.CPP:
+
+      // notify the object of the assignment
+      if (dwAssign != OLEGETMONIKER_TEMPFORUSER &&
+          *ppMoniker != NULL && !pThis->m_bMoniker)
+      {
+         VERIFY(pThis->m_lpObject->SetMoniker(
+                OLEWHICHMK_OBJREL, *ppMoniker) == S_OK);
+         pThis->m_bMoniker = TRUE;
+         ASSERT_VALID(pThis->;m_pDocument);
+         pThis->m_pDocument->SetModifiedFlag();
+      }
+
+The pThis->m_lpObject->SetMoniker() call results in the object calling
+COleClientItem::XOleClientSite::GetMoniker() again. Because pThis-
+>m_bMoniker is being set after the pThis->m_lpObject->SetMoniker()
+call, the subsequent call to pThis->m_lpObject->SetMoniker() returns with
+an error code of E_FAIL, triggering the ASSERT.
+
+RESOLUTION
+==========
+
+To work around this problem, you must override the default IOleClientSite
+interface implementation in COleClientItem. This can be done by adding an
+interface map to the class in your project that is derived from COleClientItem
+and setting pThis->m_bMoniker to TRUE before calling pThis-
+>m_lpObject->SetMoniker() from your custom GetMoniker() function.
+
+The code below illustrates how to override the COleClientItem-derived object
+using the OCLIENT MFC sample application.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ 32- bit Edtion
+version 4.2.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+       // Code to be added to CRectItem class definition in RECTITEM.H
+      class CRectItem : public COleClientItem
+      {
+         // ...original declarations in CRectItem class go here...
+
+         // Interface Map
+         BEGIN_INTERFACE_PART(OleClientSite2, IOleClientSite)
+            STDMETHOD(SaveObject)();
+            STDMETHOD(GetMoniker)(DWORD, DWORD, LPMONIKER*);
+            STDMETHOD(GetContainer)(LPOLECONTAINER*);
+            STDMETHOD(ShowObject)();
+            STDMETHOD(OnShowWindow)(BOOL);
+            STDMETHOD(RequestNewObjectLayout)();
+         END_INTERFACE_PART(OleClientSite2)
+
+         DECLARE_INTERFACE_MAP()
+      };
+
+      // XOleClientSite2 functions to be added to RECTITEM.CPP
+      BEGIN_INTERFACE_MAP(CRectItem, COleClientItem)
+         INTERFACE_PART(CRectItem, IID_IOleClientSite, OleClientSite2)
+      END_INTERFACE_MAP()
+
+      STDMETHODIMP_(ULONG) CRectItem::XOleClientSite2::AddRef()
+      {
+         METHOD_PROLOGUE_EX_(CRectItem, OleClientSite2)
+         return pThis->ExternalAddRef();
+      }
+
+      STDMETHODIMP_(ULONG) CRectItem::XOleClientSite2::Release()
+      {
+         METHOD_PROLOGUE_EX_(CRectItem, OleClientSite2)
+         return pThis->ExternalRelease();
+      }
+
+      STDMETHODIMP CRectItem::XOleClientSite2::QueryInterface(
+         REFIID iid, LPVOID* ppvObj)
+      {
+         METHOD_PROLOGUE_EX_(CRectItem, OleClientSite2)
+         return pThis->ExternalQueryInterface(&iid, ppvObj);
+      }
+
+      STDMETHODIMP CRectItem::XOleClientSite2::SaveObject()
+      {
+         METHOD_PROLOGUE_EX(CRectItem, OleClientSite2)
+         ASSERT_VALID(pThis);
+         return pThis->m_xOleClientSite.SaveObject();
+      }
+
+      STDMETHODIMP CRectItem::XOleClientSite2::GetMoniker(
+          DWORD dwAssign, DWORD dwWhichMoniker, LPMONIKER* ppMoniker)
+      {
+         METHOD_PROLOGUE_EX(CRectItem, OleClientSite2)
+         ASSERT_VALID(pThis);
+
+         USES_CONVERSION;  // note, must #include afxpriv.h
+
+         COleDocument* pDoc = pThis->GetDocument();
+         ASSERT_VALID(pDoc);
+         ASSERT(ppMoniker != NULL);
+         *ppMoniker = NULL;
+
+         switch (dwWhichMoniker)
+         {
+         case OLEWHICHMK_CONTAINER:
+            // return the current moniker for the document
+            *ppMoniker = pDoc->GetMoniker((OLEGETMONIKER)dwAssign);
+            break;
+
+         case OLEWHICHMK_OBJREL:
+            {
+               if (!pDoc->IsKindOf(RUNTIME_CLASS(COleLinkingDoc)))
+               break;
+
+               // don't return relative moniker if no document moniker
+               LPMONIKER lpMoniker = pDoc-
+      >GetMoniker((OLEGETMONIKER)dwAssign);
+               if (lpMoniker == NULL)
+                  break;
+               lpMoniker->Release();
+
+               // relative monikers have to handle assignment correctly
+               switch (dwAssign)
+               {
+                  case OLEGETMONIKER_ONLYIFTHERE:
+                     if (!pThis->m_bMoniker)
+                        break;  // no moniker assigned, don't return one
+                      // fall through...
+
+                  case OLEGETMONIKER_TEMPFORUSER:
+                  case OLEGETMONIKER_FORCEASSIGN:
+                     {
+                        // create item moniker from item name
+                        TCHAR szItemName[OLE_MAXITEMNAME];
+                        pThis->GetItemName(szItemName);
+                        CreateItemMoniker(OLESTDDELIMOLE, T2COLE(szItemName),
+                           ppMoniker);
+
+                        // notify the object of the assignment
+                        if (dwAssign != OLEGETMONIKER_TEMPFORUSER &&
+                            *ppMoniker != NULL && !pThis->m_bMoniker)
+                        {
+                           pThis->m_bMoniker = TRUE;
+                           VERIFY(pThis->m_lpObject->SetMoniker(
+                               OLEWHICHMK_OBJREL, *ppMoniker) == S_OK);
+                           ASSERT_VALID(pThis->m_pDocument);
+                           pThis->m_pDocument->SetModifiedFlag();
+                        }
+                     }
+                     break;
+
+                  case OLEGETMONIKER_UNASSIGN:
+                     pThis->m_bMoniker = FALSE;
+                     break;
+               }
+            }
+            break;
+
+         case OLEWHICHMK_OBJFULL:
+            {
+               // get each sub-moniker: item & document
+               LPMONIKER lpMoniker1, lpMoniker2;
+               GetMoniker(dwAssign, OLEWHICHMK_CONTAINER, &lpMoniker1);
+               GetMoniker(dwAssign, OLEWHICHMK_OBJREL, &lpMoniker2);
+
+               // create composite moniker
+               if (lpMoniker1 != NULL && lpMoniker2 != NULL)
+                   ::CreateGenericComposite(lpMoniker1, lpMoniker2,
+      ppMoniker);
+
+               // release sub-monikers
+               RELEASE(lpMoniker1);
+               RELEASE(lpMoniker2);
+            }
+            break;
+         }
+         return *ppMoniker != NULL ? S_OK : E_FAIL;
+      }
+
+      STDMETHODIMP CRectItem::XOleClientSite2::GetContainer(LPOLECONTAINER*
+         ppContainer)
+      {
+      #ifdef _DEBUG
+         METHOD_PROLOGUE_EX(CRectItem, OleClientSite2)
+      #else
+         METHOD_PROLOGUE_EX_(CRectItem, OleClientSite2)
+      #endif
+         ASSERT_VALID(pThis);
+         return pThis->m_xOleClientSite.GetContainer(ppContainer);
+      }
+
+      STDMETHODIMP CRectItem::XOleClientSite2::ShowObject()
+      {
+         METHOD_PROLOGUE_EX(CRectItem, OleClientSite2)
+         ASSERT_VALID(pThis);
+         return pThis->m_xOleClientSite.ShowObject();
+      }
+
+      STDMETHODIMP CRectItem::XOleClientSite2::OnShowWindow(BOOL fShow)
+      {
+         METHOD_PROLOGUE_EX(CRectItem, OleClientSite2)
+         ASSERT_VALID(pThis);
+         return pThis->m_xOleClientSite.OnShowWindow(fShow);
+      }
+
+      STDMETHODIMP CRectItem::XOleClientSite2::RequestNewObjectLayout()
+      {
+         return E_NOTIMPL;
+      }
+
+Additional query words: 1.50 1.51 1.52 2.00 2.10 2.20 4.00 4.10 4.20 vcfixlist420 MfcOLE
+
+======================================================================
+Keywords          : kbole kbClipboard kbCOMt kbMFC kbVC100bug kbVC150bug kbVC200bug kbVC400bug kbVC500fix kbVS97 kbGrpDSMFCATL 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbMFC kbvc150 kbVC220 kbVC410 kbVC151 kbVC200 kbVC210 kbVC152
+Version           : winnt:2.0,2.1,2.2,4.0,4.1; :1.5,1.51,1.52
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

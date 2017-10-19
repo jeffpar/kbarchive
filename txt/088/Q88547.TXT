@@ -1,0 +1,72 @@
+DOCUMENT:Q88547  17-NOV-1999  [win95x]
+TITLE   :Seeing White Spots with Tandy 4825SX and 4850EP
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Tandy technical support has confirmed that you may see white spots on your
+display when you use Microsoft Windows 3.1 on a Tandy 4825SX and a 4850EP after
+you have upgraded the video memory.
+
+CAUSE
+=====
+
+This problem is caused by an incompatibility between some of the motherboards
+and the Intel 70 nanosecond video RAM chips. If, after upgrading the video
+memory, you see white dots on the screen in Windows 3.1, then look at the main
+logic board next to the CMOS battery. If the word "WAVE" and a up arrow are
+stamped on the motherboard, then the problem is probably with the video RAM
+upgrade chips. The video RAM chips that produce the error are Intel 70
+nanosecond chips.
+
+RESOLUTION
+==========
+
+These Intel 70 nanosecond chips should be replaced with either Intel 60
+nanosecond or Micron 70 nanosecond chips.
+
+To correct this problem, contact Tandy technical support for replacement video
+RAM chips.
+
+MORE INFORMATION
+================
+
+For additional information, contact Tandy technical support.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 3.10 3.11 Radio Shack super spots specs 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

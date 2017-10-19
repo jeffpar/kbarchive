@@ -1,0 +1,57 @@
+DOCUMENT:Q121256  08-NOV-1999  [pcmail]
+TITLE   :PC MMTA: Err Msg: Drive Connection Failure. Unable...
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Multitasking MTA, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the FLAG.GLB file size is zero and a remote client dials in to send mail, the
+Microsoft Mail Multitasking Message Transfer Agent (MTA) generates the following
+error message:
+
+   Drive connection failure. Unable to prompt for a remote user login ID.
+
+Although the Multitasking MTA generates an error, the MS-DOS version of the MTA
+works correctly.
+
+RESOLUTION
+==========
+
+The FLAG.GLB file is normally 2 bytes in length and is used to prevent more than
+one Mail administrator running the ADMIN.EXE program on the same postoffice at
+one time.
+
+Create a new FLAG.GLB file by copying one from another postoffice.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailMMTA320
+Version           : :3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

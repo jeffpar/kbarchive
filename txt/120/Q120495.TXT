@@ -1,0 +1,63 @@
+DOCUMENT:Q120495  22-DEC-1999  [powerpt]
+TITLE   :Changing a Bitmap Palette to Prevent Distortion & Screen Flash
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:1.0,1.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Video for Windows, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To prevent a bitmap image from flashing or becoming distorted when a video clip
+is played or another bitmap is displayed at the same time, you can change the
+palette of the bitmap image.
+
+MORE INFORMATION
+================
+
+Graphic images that use different palettes can be modified to use a common one.
+This prevents screen flashing and/or distortion from occurring when you view
+multiple files. To do this:
+
+1. Copy the palette (or the image that contains the palette) you want to use to
+   the Clipboard. For example, in Media Player, open the desired file, and then
+   choose Copy from the Edit menu.
+
+2. Open the bitmap file in BitEdit. From the Edit menu, choose Paste Palette to
+   paste the new palette into the bitmap image.
+
+You can now save the change to the existing file or to a new filename. Use this
+procedure to copy the desired palette to all images that are displayed
+simultaneously.
+
+NOTE: The new palette permanently changes the appearance of the bitmap image.
+
+Additional query words: 1.00 1.10 palet palatte palat bit edit map
+
+======================================================================
+Keywords          :  
+Technology        : kbVideoSearch kbVideo100 kbVideo110
+Version           : WINDOWS:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,66 @@
+DOCUMENT:Q148782  03-SEP-1999  [msnetwork]
+TITLE   :Err Msg: "Modem Is Busy or Cannot Be Found" Using Aptiva Guide
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:1.2,1.3,2.0,2.5,2.51,2.52,2.6
+OPER/SYS:
+KEYWORDS:kb3rdparty kberrmsg kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 1.2, 1.3, 2.0, 2.5, 2.51, 2.52, 2.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use a computer with the Aptiva Guide program in the Startup folder, you
+may receive the following error message when you attempt to connect to MSN, The
+Microsoft Network:
+
+   Modem is busy or cannot be found.
+
+CAUSE
+=====
+
+The Aptiva Guide program has partial control of the modem, monitoring it for
+incoming voice messages.
+
+RESOLUTION
+==========
+
+To resolve this issue, remove the Aptiva Guide program from the Startup folder
+and then restart your computer. To do so, follow these steps:
+
+1. Right-click Start, and then click Open.
+
+2. Double-click the Programs folder, and then double-click the StartUp folder.
+
+3. Drag the Aptiva Guide icon from the StartUp window to the desktop.
+
+4. Close all open windows, and then restart your computer.
+
+Additional query words: msn ibm 1.00 2.00 2.50 2.60
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg kbmsn 
+Technology        : kbMSNSearch kbMSN200 kbMSN252 kbMSN130 kbMSN251 kbMSN260 kbMSN250 kbMSN120
+Version           : WINDOWS:1.2,1.3,2.0,2.5,2.51,2.52,2.6
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

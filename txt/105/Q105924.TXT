@@ -1,0 +1,71 @@
+DOCUMENT:Q105924  20-SEP-1999  [winmisc]
+TITLE   :Determining Version of Windows Sound System 1.0x Software
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are three ways to determine which version of the Windows Sound System
+software you are running:
+
+1. Start Windows and open the Windows Sound System group. If you have a Games
+   Configuration icon, you are using version 1.0a of Windows Sound System
+   software.
+
+-or-
+
+2. Start Windows and open the Windows Sound System group.
+
+   a. Start Quick Recorder.
+
+   b. From the Help menu, choose About. The dialog box will report either
+      version 1.0 or 1.0a.
+
+   c. Start Volume Control, Recording Control, or Sound Finder.
+
+   d. From the System menu on the top-left corner, choose About. The dialog box
+      will report either version 1.0 or 1.0a
+
+-or-
+
+3. Compare the file and file sizes (the following file details are for 1.0a).
+
+   a. Check the Windows Sound System Setup Disk 1 for the file:
+
+         GAMECNFG EX_     11796 02-17-93   1:00a
+
+   b. Check the C:\SNDSYS directory for the file:
+
+         GAMECNFG.EXE     23049 02-17-93   1:00:10am
+
+Additional query words: 1.00 1.00a 1
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys100a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

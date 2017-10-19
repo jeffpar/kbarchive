@@ -1,0 +1,68 @@
+DOCUMENT:Q225068  09-MAY-1999  [homegame]
+TITLE   :AOE: How to Place Natural Resources Using Scenario Builder
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbtool kbui aoe kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Age of Empires, version 1.0 
+ - Microsoft Age of Empires Expansion: The Rise of Rome, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to place natural resources using Scenario Builder in
+Microsoft Age of Empires and Microsoft Age of Empires Expansion: The Rise of
+Rome.
+
+MORE INFORMATION
+================
+
+When you edit a map using Scenario Builder, by default you are set to deploy
+units for Player 1 only.
+
+To place natural resources using Scenario Builder, follow these steps:
+
+1. Start Age of Empires.
+
+2. On the startup screen, click Scenario Builder.
+
+3. Click Create Scenario.
+
+4. Click Units.
+
+5. In the Player 1 box in the lower-left corner of the screen, click Gaia.
+
+6. Click the natural resource you want to place from the units list, and then
+   click the position on the map where you want to place the resource.
+
+7. Repeat step 6 for each natural resource you want to place.
+
+Additional query words: 1.00 homegame msgame fish berries stone gold mine map scenario bulder path road food
+
+======================================================================
+Keywords          : kbtool kbui aoe kbimu msgame 
+Technology        : kbHomeProdSearch kbAOE kbGamesSearch kbAOESearch kbAOEExpRome
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

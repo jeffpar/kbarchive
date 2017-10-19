@@ -1,0 +1,196 @@
+DOCUMENT:Q115088  07-MAY-2001  [visualc]
+TITLE   :PRB: A _USRDLL with No CWinApp Object Fails to Load
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:1.0,2.0,2.1,4.0
+OPER/SYS:
+KEYWORDS:kbDLL kbMFC kbVC kbVC100 kbVC150 kbVC200 kbVC400 kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+    - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you build an MFC _USRDLL using Visual C++, version 1.0, without defining a
+CWinApp object, when its LibMain() function is called you will get the following
+message in the debugger Output Window:
+
+   <unknown application>: File appcore.cpp, Line 602, Assertion Failed!
+   AfxAbort called
+
+If you are using Visual C++, version 1.0 for Windows NT, you will get the
+following message box when DllMain() is called:
+
+   <unknown application>: File appcore.cpp, Line 559, Assertion Failed!
+
+If you are using Visual C++, version 1.5, you will get the following message when
+LibMain() is called:
+
+   <unknown application>: File afxwin1.inl, Line 25, Assertion Failed!
+   AfxAbort called
+
+If you are running a Windows-based application, the call to LibMain() will fail
+without warning, unless you are running under the debugger. Under Windows NT,
+you will get the warning shown previously when calling DllMain() (if you are
+running a debug version of your DLL), followed by message boxes from the system
+stating that the application caused a problem.
+
+In order to support resource-only DLLs, the assertions described above were
+removed in Microsoft Visual C++ 32-bit Edition, versions 2.0, 2.1, 2.2, and 4.0.
+Using those versions, calling a CWinApp member function through the pointer
+returned by AfxGetApp() will result in an access violation if there is no
+CWinApp object defined in the DLL.
+
+CAUSE
+=====
+
+When an attempt is made to load a DLL for the first time, the DLL[ASCII 146]s
+entry point (LibMain() for Windows, DllMain() for Windows NT) is called to
+initialize its instance. For a _USRDLL, the entry point calls AfxWinInit(),
+which calls AfxGetApp(). If no CWinApp object has been instantiated in the DLL,
+AfxGetApp() returns "NULL". AfxGetApp() cannot access the calling application's
+CWinApp (if the calling application is an MFC application). This causes the
+assertion.
+
+This behavior is by design, because most of the classes provided by MFC rely on
+the instantiation of a CWinApp object. Even some simple objects such as an
+AfxMessageBox make calls to AfxGetApp(). If no CWinApp object exists [and your
+DLL uses any GUI objects that rely on calls to AfxWinInit() and AfxWinTerm()],
+assertions and program failures will occur.
+
+RESOLUTION
+==========
+
+Be sure to instantiate an object of type CWinApp or a class derived from
+CWinApp. If it is important that you not have a CWinApp object in your _USRDLL,
+see the "MORE INFORMATION" section of this article, below, for suggestions.
+
+NOTE: Visual C++ 4.0 automatically generates the code containing the declaration,
+definition, and instantiation of the CWinApp derived class for the DLL, so the
+following sections do not apply.
+
+MORE INFORMATION
+================
+
+It is not necessary for your DLL to call AfxWinInit() and AfxWinTerm() for it to
+use the MFC collection classes and the simple class types such as CString. If
+you wish to use only these MFC classes in your DLL, you can omit the
+instantiation of a CWinApp object, but you also must write your own LibMain() or
+DllMain() function for the DLL.
+
+For an example of the code that you may want to include in your entry point, you
+can look at what MFC normally does in AfxWinInit().
+
+NOTE: SetCurrentHandles() is called, so afxCurrentInstanceHandle and
+afxCurrentResourceHandle get set equal to m_hInstance. You may need to set these
+values yourself.
+
+Sample Code for Windows
+-----------------------
+
+The code below shows one possible implementation of LibMain(). For the sake of
+pointing out the initialization portion, LibMain() calls MyInit(), which
+consists of a very simplified simulation of AfxWinInit().
+
+      // Compile options needed: /D "_USRDLL"
+
+      #include <afxwin.h>
+
+      BOOL AFXAPI MyInit(HINSTANCE);
+
+      extern "C" int FAR PASCAL LibMain(HINSTANCE hInstance,
+         WORD wDataSegment, WORD wHeapSize, LPSTR lpszCmdLine)
+      {
+         // Initialize DLL's instance(/module) not the app's
+         if (!MyInit(hInstance))
+         {
+            return 0;    // Init Failed
+         }
+
+      // nothing to run
+         return 1;   // ok
+      }
+
+      BOOL AFXAPI MyInit(HINSTANCE hInstance)
+      {
+         afxCurrentInstanceHandle = hInstance;
+         afxCurrentResourceHandle = hInstance;
+
+      // one instance initialization stuff goes here
+
+      // Handle critical errors
+         ::SetErrorMode(SEM_FAILCRITICALERRORS);
+
+         return TRUE;
+      }
+
+Sample Code for Windows NT
+--------------------------
+
+The code below shows one possible implementation of DllMain(). For the sake of
+pointing out the initialization portion, DllMain() calls MyInit(), which
+consists of a very simplified simulation of AfxWinInit().
+
+      // Compile options needed: /D "_USRDLL"
+
+      #include <afxwin.h>
+
+      BOOL AFXAPI MyInit(HINSTANCE);
+
+      extern "C" int APIENTRY
+      DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
+      {
+              if (dwReason == DLL_PROCESS_ATTACH)
+              {
+                      // Initialize DLL's instance(/module) not the app's
+                      if (!MyInit(hInstance))
+                      {
+                              return 0;       // Init Failed
+                      }
+
+              }
+              return 1;   // ok
+      }
+
+      BOOL AFXAPI MyInit(HINSTANCE hInstance)
+      {
+              afxCurrentInstanceHandle = hInstance;
+              afxCurrentResourceHandle = hInstance;
+
+              // one instance initialization stuff goes here
+
+              // Handle critical errors
+              ::SetErrorMode(SEM_FAILCRITICALERRORS);
+
+              return TRUE;
+      }
+
+Additional query words: 1.00 1.50 2.00 2.10 2.50 4.00
+
+======================================================================
+Keywords          : kbDLL kbMFC kbVC kbVC100 kbVC150 kbVC200 kbVC400 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:1.0,2.0,2.1,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

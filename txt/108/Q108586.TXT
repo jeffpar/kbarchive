@@ -1,0 +1,66 @@
+DOCUMENT:Q108586  17-DEC-2000  [msdos]
+TITLE   :Erratic Serial Mouse Behavior in Microsoft Diagnostics (MSD)
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Microsoft Diagnostics (MSD) version 2.0, 2.0a, or 2.01, your serial
+mouse may behave erratically.
+
+CAUSE
+=====
+
+This problem occurs when MSD un-synchronizes the mouse during its hardware scan
+of the serial ports.
+
+RESOLUTION
+==========
+
+Using the MSD /I switch usually allows the mouse to continue functioning in MSD
+until you choose either the COM Ports button or IRQ Status button.
+
+To work around this problem, run MSD with the /I switch, or use the keyboard in
+MSD. In either case, you should restart your computer after you exit MSD to
+restore the serial port and IRQ states.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MSD versions 2.0, 2.0a, and
+2.01. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: 6.22 6.20 2.00a 2.00 msd.com msd.exe
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

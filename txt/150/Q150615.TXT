@@ -1,0 +1,55 @@
+DOCUMENT:Q150615  08-NOV-2001  [homegame]
+TITLE   :Return of Arcade: Disk Label Mentions Windows NT File Menu
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbenv kbsetup kbusagekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Return of Arcade for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Return of Arcade is a Windows 95 application only. It will not run on Windows
+NT. The label on the disk erroneously states that you can install by clicking
+the File menu in Windows NT.
+
+MORE INFORMATION
+================
+
+The following are the erroneous setup instructions on the disk label:
+
+1. Insert Disk1 - Setup into drive A.
+
+2. Click the START button (click FILE menu in Windows NT), and then click RUN.
+
+3. Type "a:\setup" (without the quotation marks) and press ENTER.
+
+Additional query words: 1.00 roa return arcade setup cannot run on
+
+======================================================================
+Keywords          : kbenv kbsetup kbusage kbfaq
+Technology        : kbGamesSearch kbArcadeRet kbZNotKeyword kbArcadeSearch kbZNotKeyword3
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

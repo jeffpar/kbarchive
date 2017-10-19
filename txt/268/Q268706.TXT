@@ -1,0 +1,73 @@
+DOCUMENT:Q268706  12-NOV-2001  [homegame]
+TITLE   :AOE II Expansion: Game Quits with 3DLabs Oxygen VX1-Based Video
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbhw kbimu kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Age of Empires II Expansion: The Conquerors, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start Microsoft Age of Empires II Expansion: The Conquerors,
+the game may quit unexpectedly after the first splash screen is displayed.
+
+CAUSE
+=====
+
+This behavior can occur if both of the following conditions are true:
+
+ - A video adapter based on the 3DLabs Oxygen VX1 chip set is installed in your
+   computer.
+ - You updated to use the latest video driver for your video adapter.
+
+RESOLUTION
+==========
+
+To resolve the issue, uninstall the latest 3DLabs video driver, and then
+reinstall the video driver that was included with your video adapter or your
+computer.
+
+For additional information about the 3DLabs video drivers, please visit the
+following 3DLabs Web site:
+
+   http://www.3dlabs.com
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 1.00 aoe aoe2 aoeii aok msgame launch
+
+======================================================================
+Keywords          : kb3rdparty kbhw kbimu kbHardware 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbAOESearch kbAOE2ExpConquerors
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

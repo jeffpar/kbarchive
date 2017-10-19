@@ -1,0 +1,65 @@
+DOCUMENT:Q150542  08-NOV-2001  [homemm]
+TITLE   :Gardening: Pressing F1 in List Maker Causes Unknown Error
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Complete Gardening for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the Complete Gardening List Maker, if you make a change to a list, then click
+Cancel or Close the List Maker, you receive the following message:
+
+   Do you want to save your lists?
+
+with the option to choose Yes, No or Cancel. If you press the F1 keyboard key for
+instructions while this dialog box is on the screen, you receive the following
+error message:
+
+   Microsoft Complete Gardening is unable to proceed due to an unknown error.
+
+NOTE: After this message has appeared once, receive this message any time you
+press F1.
+
+WORKAROUND
+==========
+
+Do not press the F1 key while the Save List dialog box is on your screen.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Complete Gardening
+version 1.0. for Windows. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 1.0 multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbZNotKeyword kbCompleteGardening
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

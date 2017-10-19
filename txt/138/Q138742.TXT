@@ -1,0 +1,64 @@
+DOCUMENT:Q138742  28-JUL-2001  [win95x]
+TITLE   :NetWare Drive Mappings Lost After Resuming from Suspended Mode
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2,2.1
+OPER/SYS:
+KEYWORDS:3rdpartynet win95 kb3rdPartyNetClient
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 95 OEM Service Release, versions 2, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using the Microsoft Client for NetWare Networks, any active network
+drives mapped to NetWare servers may be lost when you suspend your computer and
+then resume from suspended mode. If you are using the Microsoft Client for
+Microsoft Networks, mapped drives are not lost.
+
+CAUSE
+=====
+
+The Microsoft Client for NetWare Networks does not retain NetWare drive mappings
+when you suspend the computer.
+
+RESOLUTION
+==========
+
+To work around this problem, use one of the following methods:
+
+ - If you manually mapped the network drives, map them again.
+
+ - If the drives were mapped in a login script, you can restore them by
+   processing the login script again. To do so, click the Start button, click
+   Shut Down, and then click "Close all programs and log on as a different
+   user."
+
+
+Additional query words: apm
+
+======================================================================
+Keywords          : 3rdpartynet win95 kb3rdPartyNetClient 
+Technology        : kbWin95search kbOPKSearch kbZNotKeyword3 kbWin95OPKOSR2 kbWin95OPKOSR210
+Version           : :2,2.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

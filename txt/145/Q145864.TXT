@@ -1,0 +1,81 @@
+DOCUMENT:Q145864  06-MAY-2001  [visualc]
+TITLE   :PRB: Returning FALSE from OnSetActive Doesn't Set Correct Tab
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbcode kbMFC kbPropSheet KbUIDesign kbVC400 kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++ 32-bit Edition, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+To disallow activation of a CPropertyPage, you are supposed to be able to return
+FALSE from OnSetActive(). This causes the next page to be activated instead of
+the one the user clicked. This works fine as long as there is a next page and
+the next page returns TRUE from OnSetActive(). If the next page is not
+available, the tab you clicked will be activated but the page still points to
+the previous one. In other words, the tab that is activated doesn't match the
+page. Furthermore, the OnSetActive() function is called an additional ten times.
+
+CAUSE
+=====
+
+Returning FALSE from OnSetActive() prompts MFC to return a -1 from
+PSN_SETACTIVE. The PropertySheet control doesn't handle this correctly when the
+next tab is not available.
+
+RESOLUTION
+==========
+
+In OnSetActive(), post a message of PSM_SETCURSEL to activate a different page.
+Then return TRUE.
+
+Sample Code
+-----------
+
+   // CPage1 is derived from CPropertyPage
+   BOOL CPage1::OnSetActive()
+   {
+      // always activate the first page instead
+      GetParent()->PostMessage (PSM_SETCURSEL, 0);
+      return CPropertyPage::OnSetActive();
+   }
+
+   /* Compile options needed: default
+   */ 
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: 4.00 CPropertySheet CPropertyPage PSN_SETACTIVE OnSetActive FALSE
+
+======================================================================
+Keywords          : kbcode kbMFC kbPropSheet KbUIDesign kbVC400 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

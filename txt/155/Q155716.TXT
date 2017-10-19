@@ -1,0 +1,70 @@
+DOCUMENT:Q155716  28-JUL-2001  [visualc]
+TITLE   :PRB: SQL Single-Stepping Does Not Display Errors as They Occur
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:4.2,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbDatabase kbDebug kbEEdition kbMFC kbSQL kbVC420 kbVC500 kbVC600 kbGrpDSODBC kbSQLProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When single-stepping through a SQL Server stored procedure, error messages, if
+generated, are not displayed at the point where the error occurred.
+
+STATUS
+======
+
+We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+To reproduce this behavior, create and single-step through the following stored
+procedure in the SQL Server Pubs sample database:
+
+   ------------------------------
+   CREATE PROCEDURE sp_trigger AS
+
+   INSERT authors
+       VALUES ('123-21-2321', 'Redmond', 'Ricky', '206/555-1212',
+             '123 Nowhere St.', 'Redmond', 'WA', '98989', DEFAULT )
+   DECLARE @a INTEGER
+   SELECT @a = 4/2
+   RETURN
+   ------------------------------
+
+The INSERT statement fails because there is no DEFAULT defined for the last
+field. However, the user is not notified that the insertion failed until the
+stored procedure completes.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbDebug kbEEdition kbMFC kbSQL kbVC420 kbVC500 kbVC600 kbGrpDSODBC kbSQLProg 
+Technology        : kbVCsearch kbAudDeveloper kbVC420 kbVC500 kbVC600 kbVC32bitSearch kbVC500Search
+Version           : WINDOWS:4.2,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

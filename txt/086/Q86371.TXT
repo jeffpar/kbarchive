@@ -1,0 +1,215 @@
+DOCUMENT:Q86371  05-NOV-1999  [pcmail]
+TITLE   :PC DOS: New Features in 3.0 MS-DOS Client
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is a list of features new in version 3.0 of the Microsoft Mail for
+PC Networks MS-DOS client:
+
+Readme Is Not Copied During Installation
+----------------------------------------
+
+If a README.TXT file exists, it is not copied to the server by the installation
+program.
+
+Low Density Disks Are No Longer Supported
+-----------------------------------------
+
+Installation from 360K disks is no longer supported; the disk media should be
+either two 720K, 3.5-inch disks or one 1.2 MB, 5.25-inch disk.
+
+Global Address List
+-------------------
+
+The Global Address List entry appears as the first entry in the address list
+dialog box used to address mail and the Global entry appears in the address list
+dialog box that appears after the Address/Browse command if Global Address List
+is enabled in the Mail Administrator program for the postoffice.
+
+Orphaned Personal Address List (PAL) Entry Behavior
+---------------------------------------------------
+
+If an invalid address is found in the PAL while the MS-DOS client is trying to
+transmit mail, the message
+
+   ALIAS NO LONGER VALID
+
+will appear, followed by the alias and the list in which it was found. The prompt
+line will display the message, "Remove address from your list?"
+
+Printer Port Selection Under Print/Configuration
+------------------------------------------------
+
+There is a new menu item named Port. Selecting this command results in moving the
+input focus to the port display line and highlights the port that was previously
+selected. The user can now change the selection.
+
+The numbers 1, 2, and 3 for the port choices are highlighted and indicate that
+you can use the corresponding accelerator key to make a selection.
+
+Macbinary Support
+-----------------
+
+The MS-DOS client only saves the data fork of attachments that are saved to disk
+and are marked as type Macbinary. Automatic detection of Macbinary attachments
+is not supported.
+
+This means that a Macbinary file can arrive via a gateway and the MS-DOS client
+will not decode the attachment if the user tries to save it.
+
+Compose Accelerator Keys Highlighted
+------------------------------------
+
+On the compose screen, the accelerator keys for the fields TO, CC, SUBJECT,
+PRIORITY, and ATTACHMENTS now are highlighted.
+
+Retained Messages
+-----------------
+
+If you press the ESC key to leave a reply or forward composition screen, you are
+prompted with the following question:
+
+   Retain this message in compose buffer?
+
+If you select Yes, you can get back to the message by selecting Compose later on.
+If you select No, the buffer is cleared so that when you next select Compose, a
+blank message will appear.
+
+The "Retain this message in compose buffer" prompt only appears if the preference
+for confirmations is set to Yes.
+
+The editin capabilities for a retained message will be the same as when the
+message is originally loaded. For example, you cannot edit the body of a
+forwarded message.
+
+If you select Forward or Reply and there is a retained message in the compose
+buffer, you are prompted with the following question:
+
+   Clear compose message?
+
+If you select No, you are returned to the state the computer was in before you
+selected Forward or Reply.
+
+Folders in CC List
+------------------
+
+The FOLDERS option (which was previously available for the TO list) appears as
+one of the address lists in the Address List dialog box when you select Carbon
+Copy (CC) recipients.
+
+Command-Line Option Usage
+-------------------------
+
+If you use the Help (-? or -h) option on the command line, the Mail program
+displays a list of command-line options with usage descriptions. This same
+display appears if the Mail program cannot find the postoffice when you start
+Mail. The usage display is as follows:
+
+  Usage:  mail [options] [mailbox]
+
+      -<25-50>       Specify number of lines on screen
+      -c             Indicate use of color monitor
+      -d<drive>      Specify database location
+      -e<drive:path> Specify location of graphics executables
+      -h,-?          Show help
+      -i<drive:path> Specify location to create temporary graphics files
+      -n<1-999>      Set polling period in seconds
+      -n0            Disable polling
+      -p<password>   Specify password
+      -sCGA,-sEGA,   Specify monitor type
+      -sHERC,-sVGA,
+      -sMONO
+      -v             Reduce screen snow
+      -x             Set notification method (see documentation)
+      -w<1-15>       Set color scheme
+
+NOTE: On MS Net compatible networks, the -x option disables NetBIOS notification.
+On Novell networks, the -x option enables NetBIOS notification.
+
+Border Color Command-Line Option
+--------------------------------
+
+The -w command-line option can now be used to set the border color. It must be
+followed by a number from 1 to 15, which corresponds to the following colors:
+
+   Parameter   Color
+   -----------------------------
+       1       Blue
+       2       Green
+       3       Cyan
+       4       Red
+       5       Magenta
+       6       Brown
+       7       White
+       8       Gray
+       9       Bright blue
+      10       Bright green
+      11       Bright cyan
+      12       Bright red
+      13       Bright magenta
+      14       Yellow
+      15       Bright white
+
+Message List Selections and Scroll Maintained
+---------------------------------------------
+
+When you press the ESC key after reading a message from the Inbox or folder list,
+you will be returned to read mode with the same selections and scroll position
+maintained. To get back to the main menu, you must press the ESC key again. This
+behavior minimizes keystrokes for reading many messages and is consistent with
+the notion that using the ESC key brings the user up one level in the menu
+hierarchy. The previous behavior was to escape immediately to the main menu,
+clear all selections, and reset the scroll position.
+
+Default Confirmation Preference
+-------------------------------
+
+The preference screen now displays the following:
+
+   What is default response to confirmation?
+
+Your response to this question sets the default selection for any Yes/No
+response. The default is No.
+
+NOTE: To get to the Preferences screen, press the F3 key while you read a
+message.
+
+Erase Changed to Delete
+-----------------------
+
+All occurrences of the word "Erase" have been changed to "Delete."
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,69 @@
+DOCUMENT:Q299306  04-JUN-2001  [msdn]
+TITLE   :Client Browser Returns to Site w/ f=6 Attached to Query String
+PRODUCT :Microsoft Developer Network
+PROD/VER::1.4
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Passport, version 1.4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The client browser returns to my site with an "f=6" attached to the query
+string.
+
+CAUSE
+=====
+
+Either the Passport Manager object on your Web server is configured to be in
+stand-alone mode, or the Passport Login server cannot reach its own Secure
+Sockets Layer (SSL) pages and cannot write the ticket-granting cookie. Neither
+the domain authority nor the Passport Manager object will write cookies, and the
+user will not be signed in.
+
+RESOLUTION
+==========
+
+Check to see if the Passport Manager object is configured to be in stand-alone
+mode. If it is, turn stand-alone mode off to see if the Passport server can be
+reached. If the same results occur, there is a problem on the Passport network.
+Use the Passport Administration Utility to turn stand-alone mode off.
+
+MORE INFORMATION
+================
+
+Other "f=" values in the query string also indicate a possible Passport network
+problem. For more information, see the following Microsoft Passport Web site:
+
+   Passport SDK Errors
+   http://www.passport.com/sdkdocuments/sdk14/reference/scriptreference/ifaces/ipassportmanager/error.htm
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbPassport140 kbPassportSearch
+Version           : :1.4
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

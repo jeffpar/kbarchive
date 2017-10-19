@@ -1,0 +1,97 @@
+DOCUMENT:Q261969  06-AUG-2002  [homegame]
+TITLE   :StarLancer Err Msg: Invalid Page Fault in Module Kernel32.dll
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft StarLancer, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start Microsoft Starlancer, you may receive the following
+error message:
+
+   Lancer caused an invalid page fault in module Kernel32.dll.
+
+CAUSE
+=====
+
+This behavior can occur if the path to the StarLancer installation folder
+contains more than 44 characters.
+
+RESOLUTION
+==========
+
+To resolve this issue, uninstall StarLancer, and then reinstall StarLancer in
+the default installation folder that is specified by StarLancer Setup.
+
+To uninstall StarLancer:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. Click Microsoft Starlancer, and then click Add/Remove.
+
+4. Click Uninstall, and then click OK.
+
+5. Click OK.
+
+To reinstall StarLancer:
+
+1. Insert the StarLancer CD-1 CD-ROM into the CD-ROM drive.
+
+   If StarLancer Setup does not start automatically:
+
+   a. Click Start, and then click Run.
+
+   b. In the Open box, type the following line, and then click OK
+
+   <cd-rom>:\setup.exe
+
+      where <cd-rom> is the drive letter of the CD-ROM drive.
+
+2. Follow the instructions on the screen to install StarLancer.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Microsoft StarLancer, version
+1.0.
+
+MORE INFORMATION
+================
+
+To install StarLancer in a folder other than the default installation folder,
+the path to the installation folder cannot contain more than 44 characters.
+
+Additional query words: 1.00 msgame star lancer gpf ipf hangs locks blue screen
+
+======================================================================
+Keywords          : kberrmsg kbsetup kbimu msgame 
+Technology        : _IKkbbogus kbGamesSearch kbStarlancerSearch kbStarlancer
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,82 @@
+DOCUMENT:Q166617  22-JUN-2001  [exchange]
+TITLE   :XCLN: GPF in MSSPC16.DLL in Spanish Schedule+
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+, version 7.0 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+When you attempt to create a new Project using the Spanish version of Microsoft
+Schedule+, version 7.0, you might receive a General Protection Violation.
+
+MORE INFORMATION
+================
+
+To reproduce this problem in Windows For Workgroup 3.11 or Windows 3.1, follow
+these steps:
+
+1. Install the Spanish Microsoft Exchange Windows 3.x client, version 4.0.
+
+2. Upgrade it to Service Pack 2 and then Service Pack 3.
+
+3. Create a new profile.
+
+4. Start Microsoft Schedule+ and select the To Do tab. If you are running
+   Microsoft Schedule+ for the first time, create a new file.
+
+5. Open the Insert menu and Insert a New Project.
+
+6. In the Duration column, specify a duration. For example, 3 days.
+
+7. Click the Print button.
+
+At this point, you get a GPF in MSSPC16.DLL.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Spanish version of Microsoft
+Schedule+, version 7.0.
+
+
+This problem was corrected in the latest Microsoft Exchange 4.0 Spanish Service
+Pack. For information on obtaining the service pack, query on the following word
+in the Microsoft Knowledge Base:
+
+   " SERVPACK " (without the quotation marks)
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbScheduleSearch kbSchedule700
+Version           : WINDOWS:7.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

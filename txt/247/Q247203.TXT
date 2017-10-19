@@ -1,0 +1,122 @@
+DOCUMENT:Q247203  07-MAY-2001  [visualc]
+TITLE   :BUG: Try/Catch Block Fails when Global Optimizations Enabled
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When trying to build an application that uses C++ exception handling, with
+global optimizations enabled, the catch handler within the try/catch block may
+not catch any of the exceptions that are thrown by the instructions in the try
+block. See the "More Information" section below for details.
+
+CAUSE
+=====
+
+The optimizer optimizes the try/catch block incorrectly.
+
+RESOLUTION
+==========
+
+Here are the two ways to work around this problem:
+
+1. Disable global optimizations on a function-by-function basis using the
+   optimize pragma with the "g" option. /Og- disables global optimization on a
+   file-by-file basis.
+
+2. Use the asynchronous exception handling model by specifying the /EHa compiler
+   option.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+ - Compile Options : cl /GX /GR /Og test.cpp
+
+   //test.cpp
+   #include <iostream>
+   using namespace std;
+
+   class CObject
+   {
+   	virtual function() {}; 	//necessary to make the class polymorphic
+   };
+
+   class B : public CObject
+   {
+   public:
+   	CObject* m_pComp;
+   	void Test() const;
+   };
+
+   void B::Test() const
+   {
+   	B* pComp;
+   	try
+   	{
+   		pComp=dynamic_cast<B*>(m_pComp);
+   	}
+   	catch(exception& exc) 	//The exception is caught only if Global Optimizations are disabled.
+   	{
+   		cout << "In Catch Block\n";
+   		cout << "Exception Caught\n" <<endl;
+   	}
+   }
+
+   void main()
+   {
+   	B object; 	//m_pComp is intentionally not initialized so that the exception occurs.
+   	object.Test();
+   }
+
+   Expected Output:
+   In Catch Block
+   Exception Caught
+
+When the above code is compiled using /Og, then the control never enters the
+catch block and results in an access violation.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : winnt:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

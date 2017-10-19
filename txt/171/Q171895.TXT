@@ -1,0 +1,55 @@
+DOCUMENT:Q171895  24-MAY-2001  [homemm]
+TITLE   :Mac Encarta 97: Orbit Interactivity Stops Right After Starting
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1997 edition
+OPER/SYS:
+KEYWORDS:kbdisplay kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 97 Encyclopedia for Macintosh 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the Orbits Interactivity, the Orbit stops right after it starts.
+
+This occurs if clear the "Leave dot trail" and or "Show orbit type" options.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta 97
+Encyclopedia. Microsoft is researching this problem and will post new
+information here as it becomes available.
+
+MORE INFORMATION
+================
+
+This problem does not occur in Microsoft Encarta 96 Encyclopedia.
+
+Additional query words: macmm multi multimedia media orbits ia ias rotate rotates
+
+======================================================================
+Keywords          : kbdisplay kbusage 
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbEncartaSearch kbEncartaEnCyc1997Mac
+Version           : :1997 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

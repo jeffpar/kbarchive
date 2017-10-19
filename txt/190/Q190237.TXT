@@ -1,0 +1,64 @@
+DOCUMENT:Q190237  17-SEP-2001  [foxpro]
+TITLE   :PRB: ImagEdit Not Included With Visual FoxPro 6.0
+PRODUCT :Microsoft FoxPro
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbHTMLHelp kbvfp600 kbTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Visual FoxPro 5.0 contained the ImagEdit utility. ImagEdit is not included with
+Visual FoxPro 6.0. This article discusses the tools that are available to edit
+images, such as icon (.ico) files, after you install Visual FoxPro 6.0.
+
+While you can edit an icon file using the HTML Help Image Editor, you cannot save
+the changes to an icon file using this tool.
+
+RESOLUTION
+==========
+
+Use the HTML Help Image Editor that is part of the Microsoft HTML Help Workshop.
+The Microsoft HTML Help Workshop is available from Microsoft as a free download
+from the following Web site:
+
+   http://msdn.microsoft.com/library/default.asp?url=/library/en-us/htmlhelp/html/hwMicrosoftHTMLHelpDownloads.asp
+   (http://msdn.microsoft.com/library/default.asp?url=/library/en-us/htmlhelp/html/hwMicrosoftHTMLHelpDownloads.asp)
+
+After you download the file, execute it to install the HTML Help Workshop.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHTMLHelp kbvfp600 kbTools 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

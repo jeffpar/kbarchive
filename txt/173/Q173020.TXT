@@ -1,0 +1,52 @@
+DOCUMENT:Q173020  22-OCT-1999  [mastering]
+TITLE   :MASTERING: .Frm Files Missing From Democode Folder
+PRODUCT :Microsoft Mastering Series
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Mastering Microsoft Visual Basic 5 Fundamentals 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The .frm files referred to in Mastering Visual Basic 5 Fundamentals are missing
+from the Democode folder on the CD-ROM.
+
+MORE INFORMATION
+================
+
+To access the demonstration projects, you must download an update file from:
+
+   http://msdn.microsoft.com/training/technical/mvbfdemo.zip
+
+This file can be unzipped into the C:\Mvbf folder and the previously referenced
+Democode folder can be ignored.
+
+Additional query words: demo exist form
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,79 @@
+DOCUMENT:Q166377  24-MAR-2000  [foxpro]
+TITLE   :FIX: Report Designer Changes Font from Wingdings to Default Font
+PRODUCT :Microsoft FoxPro
+PROD/VER:5.0a
+OPER/SYS:
+KEYWORDS:kbtool kbvfp kbVS97sp2fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the you use the Wingdings font in a report, the font is changed to the
+default Report Designer font when the report is previewed.
+
+NOTE: Other fonts that have a script of "Symbol" as the Wingdings font seems to
+act in the same manner as described above.
+
+This behavior does not occur in Visual FoxPro 5.0 for Windows.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Studio 97 Service
+Pack 3.
+
+For more information, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Open a table to be used for a Quick Report.
+
+2. Create a Quick Report in the Report Designer.
+
+3. Select one or more objects on the report and change the font to Wingdings.
+
+4. Preview the report and notice that any object with the Wingdings font has
+   reverted to the report default font (usually Arial).
+
+   NOTE: The selected font remains as Wingdings, but the displayed font is
+   different.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool kbvfp kbVS97sp2fix 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500a
+Version           : 5.0a
+Issue type        : kbbug kbprb
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

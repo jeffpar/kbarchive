@@ -1,0 +1,91 @@
+DOCUMENT:Q197275  31-JUL-1999  [foxpro]
+TITLE   :FIX: _urlcombobox Class Closes Any Current Work Area
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbvfp600 kbvfp600bug kbFFC kbVS600sp3fix kbGrpDSFox
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The table in the selected work area closes after you run a form with a combo box
+based on the _urlcombobox class.
+
+RESOLUTION
+==========
+
+Open the _urlcombobox class and add SELECT 0 in line 14 of the OpenURLHistory
+method. After you make this change, the code should look as follows:
+
+   lcFileName=LOWER(FULLPATH(this.cURLHistoryTable))
+   SELECT 0
+   IF NOT EMPTY(SYS(2000,lcFileName))
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3.
+
+For more information about Visual Studio service packs, please see the following
+articles in the Microsoft Knowledge Base:
+
+   Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+   Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a form.
+
+2. Add the _internet class to the Form Control Tool bar by clicking View Classes
+   on the toolbar and clicking Add. The _internet.vcx is in the FFC folder.
+
+3. Open the Data Sessions window and open a table in the first work area. Make
+   sure it is selected. Leave the Data Session window open.
+
+4. Position the form so you can see both the form and the Data Session window.
+
+5. Add the _urlcombobox class to the form.
+
+6. Save and run the form.
+
+RESULT: The table in work area one closes and the table Urlhistory replaces it.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp600 kbvfp600bug kbFFC kbVS600sp3fix kbGrpDSFox 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

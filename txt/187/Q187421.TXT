@@ -1,0 +1,80 @@
+DOCUMENT:Q187421  11-DEC-2001  [winnt]
+TITLE   :TC Manager Puts Icons in the Program Group
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Multiple Terminal Server Client program groups may appear on Windows NT- based
+Terminal Server client computers.
+
+CAUSE
+=====
+
+When Client Connection Manager is used to create new connections, the icons for
+the new connections are placed in the users' portion of the profile. The default
+name for the program group is Terminal Server Client.
+
+When the Terminal Server Client is installed on a computer running Windows NT
+4.0, the following program group is created:
+
+      %systemroot%\Profiles\All Users\Start Menu\Programs
+      \Terminal Server Client
+
+NOTE: The above path is one path; it has been wrapped for readability.
+
+This is the only program group that exists until you use the Client Connection
+Manager to create new connections, at that time a new program group is created
+under the following location:
+
+      %userprofile%\Start Menu\Programs\Terminal Server Client
+
+This is the intended behavior of Terminal Server because by default, only
+Administrators have write permissions to %systemroot%\Profiles\All Users.
+
+RESOLUTION
+==========
+
+During creation of the new connection, you can change the program group name.
+Or, you can rename or delete the folder from the user portion at any time. No
+action is necessary.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

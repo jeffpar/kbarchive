@@ -1,0 +1,56 @@
+DOCUMENT:Q131747  13-JUN-2001  [winmisc]
+TITLE   :Windows Sound System 2.0 Modified for WaveJammer Sound Card
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:2.00
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+NewMedia's WaveJammer sound card may be bundled with Windows Sound System
+software. This software has been altered to work with the WaveJammer sound card,
+but the disk labels, file sizes, and dates are the same as other versions of
+Windows Sound System.
+
+MORE INFORMATION
+================
+
+This version of the software can be identified only when you are installing the
+software. In the modified version of the software, there is a NewMedia
+WaveJammer option in the hardware selection screen. The usual list of supported
+hardware is not available in this screen.
+
+You can install this software only on a computer with a WaveJammer sound card
+installed. For support of this type of installation, please contact NewMedia.
+
+
+Additional query words: 2.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys200
+Version           : 2.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,80 @@
+DOCUMENT:Q174404  11-DEC-1999  [foxpro]
+TITLE   :BUG: Field Aliases Options in Expression Builder Dialog Disabled
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbvfp kbvfp500 kbvfp500a kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the Report Writer, all the options in the Field Aliases section of the
+Expression Builder Options dialog box are disabled. Therefore, the Report Writer
+always adds alias names to the report field objects. This is not a problem in
+the Visual FoxPro 3.0x.
+
+RESOLUTION
+==========
+
+There are two workarounds for this problem. First, issue a CREATE REPORT command
+and select Quick Report from the Report menu bar. In the Quick Report dialog
+box, clear the Add Alias option. Second, use the Report Wizard to create the
+report. The Report Wizard does not place alias names on the field objects.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Type the following in the Command window:
+
+         CREATE REPORT Zjunk
+
+2. Add a field from the Report Controls toolbar to the Report.
+
+3. In the Report Expression dialog box, click Expression.
+
+4. In the Expression Builder, click Options.
+
+5. All the options within the Field Aliases section of the Expression Builder
+   Options dialog box are disabled.
+
+Additional query words: Report writer
+
+======================================================================
+Keywords          : kbvfp kbvfp500 kbvfp500a kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

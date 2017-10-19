@@ -1,0 +1,75 @@
+DOCUMENT:Q311427  06-NOV-2001  [msnetwork]
+TITLE   :MSN Explorer Background Appears White in Microsoft Windows XP
+PRODUCT :The Microsoft Network
+PROD/VER::6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network Version 7.0 
+ - The Microsoft Network version 6.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you upgraded your operating system to Microsoft Windows XP, your MSN
+Explorer color scheme turned white.
+
+CAUSE
+=====
+
+Your Microsoft Windows XP "theme" setting is causing this issue.
+
+RESOLUTION
+==========
+
+Change the theme from XP to Classic, and then back to XP. This should restore
+MSN Explorer background colors.
+To change the theme from XP to Classic, and then back to XP
+
+1. Click Start, and then click Control Panel.
+
+2. Under Pick a Category, click Appearance and Themes.
+
+3. Under Pick a task... click Change the computer's theme.
+
+4. Click the Theme dropdown and select Windows Classic.
+
+5. Click Apply, click the Theme dropdown, and then select Windows XP.
+
+6. Click Apply, and then cick OK.
+
+7. Start MSN Explorer and check the colors.
+   This should restore MSN Explorer background colors.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu; msn explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN610 kbMSN700
+Version           : :6.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

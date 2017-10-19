@@ -1,0 +1,74 @@
+DOCUMENT:Q140662  11-AUG-1999  [homemm]
+TITLE   :World Atlas 96: Ess Sound Card Causes System to Hang
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:1996
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 96 World Atlas for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Encarta 1996 World Atlas, when you try to play a sound by clicking a sound
+button, you may receive the following error message:
+
+   ESS Audio Drive Driver Alert.
+
+   The ESS Audio drive hardware is not responding properly. Sound playback and
+   recording will not be available.
+
+After you click OK in this error message box, the system stops responding
+(hangs).
+
+CAUSE
+=====
+
+This problem occurs because you have an outdated ESS proprietary sound card
+driver installed on the system.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain an updated sound card driver from ESS
+Technologies.
+
+MORE INFORMATION
+================
+
+The third-party products discussed here are manufactured by a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+REFERENCES
+==========
+
+ESS Technical Support: (510) 226-1088
+
+Additional query words: 1996multi media multimedia multi-media audio mmtitles kbmm
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaWorldAtlas1996
+Version           : 1996
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

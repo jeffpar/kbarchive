@@ -1,0 +1,76 @@
+DOCUMENT:Q175932  09-AUG-2001  [winnt]
+TITLE   :Could Not Load Ntkrnlmp.exe. The Error Code Is 4
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.51,4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to install Windows NT Server on a Digital Equipment Corp. (DEC)
+Alpha computer that had a different operating system installed, such as UNIX or
+VMS, the following error message may be displayed:
+
+   %system_root%\alpha\ntkrnlmp.exe could not be loaded. The error code
+   is 4.
+
+CAUSE
+=====
+
+There are three possible causes.
+
+ - The computer is running with outdated firmware.
+
+ - Outdated Arcinst.exe was used to create the system partition.
+
+ - The computer was configured using an EISA configuration utility (ECU) for
+   another operating system.
+
+RESOLUTION
+==========
+
+1. Check with DEC for the latest firmware for the model Alpha computer in
+   question.
+
+
+2. If you are installing Windows NT 3.51, please refer to the following
+   Microsoft Knowledge Base article:
+
+   ARTICLE-ID: Q138221
+   TITLE : Problems Creating Partitions with Arcinst.exe in Windows NT 3.51
+
+   The Arcinst.exe in Windows NT 4.0 has not had any reported problems.
+
+3. Download the proper ECU utility from DEC and use it to view and then save
+   your computer's EISA configuration settings.
+
+Additional query words: Alpha DEC arcinst.exe ntkrnlmp.exe
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : WinNT:3.51,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

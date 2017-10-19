@@ -1,0 +1,62 @@
+DOCUMENT:Q99526  19-NOV-1999  [msdos]
+TITLE   :MS-BACKUP Err Msg: Cannot Read Volume From Virtual Memory...
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error message when you try to restore files using
+Microsoft Backup:
+
+   Internal Error
+
+   Cannot read volume from virtual memory. 368, Disptree, virtual off, Mem=nnnn
+   Register Version: 6.00.00 02/26/93 06:00 am
+
+CAUSE
+=====
+
+This error message indicates the data on the backup disks may be corrupted.
+
+WORKAROUND
+==========
+
+To work around this problem, delete the copy of the catalog file (xxxxxxxx.FUL,
+.INC, or .DIF) and try to rebuild (not restore) the catalog. The catalog file is
+located on the hard disk drive, usually in the DOS directory.
+
+CAUTION: This problem may be caused by a hardware incompatibility with your
+system. Select the Verify Backup Data option for all subsequent backups.
+
+Additional query words: 6.00 msbackup back up 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,81 @@
+DOCUMENT:Q66364  10-JUN-1999  [win16sdk]
+TITLE   :DOC: How Dialog Functions Return Values Indicate Failure
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kbdocfix kb16bitonly kbDlg kbSDKPlatform
+
+======================================================================
+3.00 3.10
+WINDOWS
+kbprg kbdocerr
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows has eight functions that are used to create dialog boxes: four are for
+modal dialog boxes, and four are for modeless dialog boxes.
+
+Modal dialog boxes are created using the DialogBox, DialogBoxIndirect,
+DialogBoxParam, and DialogBoxIndirectParam functions. These functions return -1
+to signal failure.
+
+Modeless dialog boxes are created with the CreateDialog, CreateDialogIndirect,
+CreateDialogParam, and CreateDialogIndirectParam functions. These functions
+returns NULL to signal failure.
+
+The "Microsoft Windows Software Development Kit Reference Volume 1" for version
+3.0 incorrectly specifies on page 4-44 the failure return value for the
+CreateDialogParam function to be -1. The documentation should state that the
+function returns NULL. This documentation error has been corrected on page 91 of
+the "Microsoft Windows Software Development Kit: Programmer's Reference, Volume
+2: Functions" for version 3.1.
+
+MORE INFORMATION
+================
+
+The DialogBox* functions that create modal dialog boxes return the value
+specified as the second parameter to the EndDialog function, which is used to
+end the processing in a modal dialog box.
+
+The DialogBox* functions cannot return NULL (==FALSE) to indicate an error
+because returning the TRUE or FALSE values through the EndDialog function might
+be useful to an application: possibly to indicate that the user selected an OK
+or Cancel button.
+
+The CreateDialog* functions that create modeless dialog boxes return a window
+handle when the dialog box is successfully created. The value -1 (0xFFFF) can be
+a valid window handle and is not sufficient to indicate a situation in which the
+function failed and a dialog box was not created. Because NULL is the only
+invalid window handle, it is used as a return value to indicate the failure of a
+CreateDialog* function. The NULL return value indicates failure for all Windows
+functions that return a HANDLE data type.
+
+Additional query words: 3.00 3.10 param indirect docerr
+
+======================================================================
+Keywords          : kbdocfix kb16bitonly kbDlg kbSDKPlatform 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

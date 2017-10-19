@@ -1,0 +1,61 @@
+DOCUMENT:Q120264  10-JUN-1999  [homegame]
+TITLE   :Excessive Flicker on Fast Computers Using 320 x 400 Resolution
+PRODUCT :Microsoft Home Games
+PROD/VER:MS-DOS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Space Simulator for MS-DOS, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On very fast computer systems (for example, Pentium 90 MHz and above), you may
+experience a rapid screen flicker in Space Simulator when using the 320 x 400
+video resolution mode.
+
+RESOLUTION
+==========
+
+To correct this problem, run Setup from the SPACESIM directory and select a
+higher video resolution (such as, 640 x 400 or 800 x 600).
+
+MORE INFORMATION
+================
+
+Because Space Simulator supports a limited number of video cards in 640 x 400 or
+800 x 600 resolution, some computers are forced to use the 320 x 400 video
+resolution. On these systems, you can reduce the amount of flicker by turning on
+as many options as possible in the Options, Preferences menu.
+
+Setting Precision to the highest setting, and selecting complex scenery rendering
+might be enough to eliminate the flicker.
+
+Additional query words: 1.00 ss1 spacesim dos 320x400 640x400 800x600
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbZNotKeyword3 kbSpaceSim100DOS
+Version           : MS-DOS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

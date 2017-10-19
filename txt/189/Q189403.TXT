@@ -1,0 +1,68 @@
+DOCUMENT:Q189403  28-MAR-2002  [win95x]
+TITLE   :Page Fault Error Message in Uhcd.sys Docking or Undocking Laptop
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2.5
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbhw win95 kbHardwarekbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to dock or undock your Windows 95 OEM Service Release version
+2.5-based laptop computer, you may receive a page fault error message in
+Uhcd.sys.
+
+CAUSE
+=====
+
+This problem can occur if a system resource on your computer is used after it is
+de-referenced.
+
+RESOLUTION
+==========
+
+This issue is resolved by the following updated file for Windows 95 and OSR2:
+
+   Uhcd.sys  version 4.03.1214  dated 07/01/98 12:14pm  40,480 bytes
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95 OEM Service
+Release 2 (OSR2). This problem no longer occurs in Windows 98. To resolve this
+problem, install the current version of Windows. For information about the
+current version of Windows, visit the following Microsoft Web site:
+
+   http://www.microsoft.com/windows
+
+Additional query words: 95 2.50
+
+======================================================================
+Keywords          : kbenv kberrmsg kbhw win95 kbHardware kbfixlist
+Technology        : kbWin95search kbOPKSearch kbWin95OPKOSR25
+Version           : :2.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

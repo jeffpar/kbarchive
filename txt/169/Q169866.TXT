@@ -1,0 +1,71 @@
+DOCUMENT:Q169866  14-NOV-2000  [word97]
+TITLE   :WD97: Explanation for Converting Redlining Incorrect in ORK
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbother
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+ - Microsoft Office 97 Professional Edition for Windows 
+ - Microsoft Office 97 Standard Edition for Windows 
+ - MSPRESS Microsoft Office 97 Resource Kit 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Office 97 Resource Kit, incorrectly states on pages 596 and 599,
+that "redlining is converted to comments."
+
+MORE INFORMATION
+================
+
+Redlining format from WordPerfect versions 5.x and 6.x is actually converted
+into inserted text revision marking.
+
+Redline is a font format that WordPerfect uses to designate text that has changed
+or that was inserted during the document review process. The converters that
+Microsoft Word uses to import WordPerfect 5.x and 6.x documents change any
+WordPerfect redline format to inserted text revision marking.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q157085 WD97: Limitations of Converting WordPerfect 5.x Documents
+
+REFERENCES
+==========
+
+"Microsoft Office 97 Resource Kit," pages 596 and 599.
+
+WordPerfect version 6.0 Windows Reference, page 94.
+
+User's Guide, Novell PerfectOffice for Windows, WordPerfect v6.1, page 75.
+
+Additional query words: 8.0 character compare convert conversion file Office8 Office97 word97 word8 winword
+
+======================================================================
+Keywords          : kbother 
+Technology        : kbMSPressSearch kbWordSearch kbOfficeSearch kbWord97 kbWord97Search kbZNotKeyword2 kbOffice97Search kbOffice97 kbZNotKeyword3
+Version           : WINDOWS:97
+Hardware          : x86
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,87 @@
+DOCUMENT:Q157517  04-AUG-2001  [visualc]
+TITLE   :BUG: Uninstalling DAO 3.0 SDK Prevents Help Files from Working
+PRODUCT :Microsoft C Compiler
+PROD/VER::4.0,4.1,4.2; WINDOWS:4.2
+OPER/SYS:
+KEYWORDS:kbDAOsearch
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 4.0, 4.1, 4.2 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Uninstalling the DAO SDK that ships with Visual C++ 4.X will result in the
+incorrect deletion of registry entries used by Microsoft products for the
+location of Help files. Non-Microsoft products, or Microsoft products not using
+the specific registry path given below are unaffected.
+
+CAUSE
+=====
+
+The DAO SDK uninstall incorrectly destroys the following registry entry:
+
+   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Help
+
+This is where many Microsoft products store information giving the path of their
+Help files. When the DAO SDK uninstall removes the entries in this registry
+path, the Online Help for any Microsoft product using this path will no longer
+function. The only way to recover the lost entries is to re-install the
+Microsoft products. If possible, perform partial re-install just on the Help
+components for each product.
+
+RESOLUTION
+==========
+
+Don't uninstall the DAO SDK. This problem is not an issue for the
+redistributable components.
+
+If you wish to prevent accidental uninstall, you can edit the registry to remove
+the DAO SDK from the uninstall list. Delete the following registry entry:
+
+   My Computer\ 
+      HKEY_LOCAL_MACHINE\ 
+         SOFTWARE\ 
+            Microsoft\ 
+               Windows\ 
+                  CurrentVersion\ 
+                     Uninstall\ 
+                        Data Access Objects (DAO)
+
+This will prevent Windows from allowing the uninstall of the DAO components.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: kbVC400bug
+
+======================================================================
+Keywords          : kbDAOsearch 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420 kbVC32bitSearch kbExchange550SP5
+Version           : :4.0,4.1,4.2; WINDOWS:4.2
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

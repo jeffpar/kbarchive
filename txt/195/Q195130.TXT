@@ -1,0 +1,104 @@
+DOCUMENT:Q195130  14-NOV-2000  [word97]
+TITLE   :WD97: How to Convert Documents Between LotusWorks and Word
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta winword word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The Word Processing module in LotusWorks versions 1.0 and 3.0 supports import
+and export of ASCII text only. Therefore, if you want to use information from a
+LotusWorks word processing document in Word 97 for Windows, you must export it
+as ASCII text and open it in Word as Text Only or MS-DOS Text Only.
+
+The LotusWorks spreadsheet module saves spreadsheets in Lotus 1-2-3 version 2.x
+WK1 format by default. You can open WK1 format files directly into Word 97 for
+Windows (provided you have installed the Lotus 1-2-3 converter), and you can
+link WK1 files into a Word for MS-DOS document in the same manner as any Lotus
+1-2-3 file.
+
+MORE INFORMATION
+================
+
+
+Exporting a LotusWorks Word Processing Document as ASCII Text
+-------------------------------------------------------------
+
+1. In the LotusWorks word processing service, choose F10 (MENU) File Transfer
+   Export.
+
+2. In the File field of the File Transfer Export dialog that appears, type the
+   ASCII file name you want to create.
+
+3. Select Export.
+
+Importing an ASCII Text file into the LotusWorks Word Processing Service
+------------------------------------------------------------------------
+
+1. If using Word 97 for Windows, save your document as MS-DOS Text Only (because
+   LotusWorks is an MS-DOS application).
+
+2. In the LotusWorks word processing service, choose F10 (MENU) File Transfer
+   Import.
+
+3. In the File field of the File Transfer Import dialog that appears, type the
+   name of the text file you saved from Word.
+
+4. Select Import.
+
+5. To save the file in the LotusWorks word processing service native .LWD file
+   format, choose F10 (MENU) File Save.
+
+The third-party products discussed here are manufactured by Lotus Development
+Corporation, a vendor independent of Microsoft; we make no warranty, implied or
+otherwise, regarding these products' performance or reliability.
+
+For more information or support in using LotusWorks, contact Lotus Customer
+Support. For information about how to contact Lotus, query in the Knowledge Base
+for one of the following articles:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+
+REFERENCES
+==========
+
+"LotusWorks" documentation
+
+Additional query words: conversion converted converts transfer transfers translation translate lotus works
+
+======================================================================
+Keywords          : kbdta winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

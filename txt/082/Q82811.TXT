@@ -1,0 +1,69 @@
+DOCUMENT:Q82811  28-SEP-1999  [win95x]
+TITLE   :Adding Screen Savers to Control Panel's Desktop Dialog Box
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Additional screen savers can be added to Control Panel's Desktop dialog box list
+by copying the screen saver files into the WINDOWS or WINDOWS\SYSTEM directory.
+(The files can be copied using File Manager.)
+
+The Microsoft Windows Entertainment Pack's IdleWild screen savers will also be
+added to the Desktop dialog box list provided that the system is configured
+properly (see below).
+
+MORE INFORMATION
+================
+
+Control Panel scans the WINDOWS and WINDOWS\SYSTEM directories for files with
+the *.SCR extension. It also checks the header of each *.SCR file for a specific
+code indicating that it is a Windows 3.1 compatible screen saver. If the screen
+saver meets this criterion, its descriptive name will be listed in the Desktop
+dialog box's Screen Saver list box.
+
+For IdleWild screen savers to be listed in the Control Panel Desktop dialog box,
+the following conditions must be met:
+
+1. IWLIB.DLL must be in the same directory as the IdleWild screen saver files
+   (*.IW).
+
+2. The directory with IWLIB.DLL and the IdleWild screen savers must either be on
+   the MS-DOS path (which is set in the AUTOEXEC.BAT file) or they must be
+   located in the WINDOWS or WINDOWS\SYSTEM directory.
+
+3. The file SCRNSAVE.SCR (provided with Windows 3.1) must be in the WINDOWS or
+   WINDOWS\SYSTEM directory.
+
+Additional query words: 3.10 3.1 idle wild
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

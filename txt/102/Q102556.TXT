@@ -1,0 +1,66 @@
+DOCUMENT:Q102556  09-NOV-1999  [pcmail]
+TITLE   :PC Ext: -Q4 Parameter Output Meanings
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0b,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use the version 3.0, 3.0b, or 3.2 Microsoft Mail for PC Networks
+External Mail program (EXTERNAL.EXE) to transfer mail messages from one
+postoffice to another, you can use the -Q4 switch for debugging problem areas.
+The -Q4 switch is an undocumented switch and should be used for troubleshooting
+only.
+
+If you invoke version 3.0 or later of the External Mail program with the -Q4
+command-line option, numbers will appear in yellow. The letters represent the
+following:
+
+   Letter   Description
+   ------------------------------------------------------------------
+ 
+   F        Amount of free memory.
+ 
+   N        Outstanding number of allocations (that is, this number of
+            "memory free" calls is required to release all the memory
+            External is currently using).
+ 
+   A        Bytes allocated in the most recent allocation.
+ 
+   M        Maximum number of bytes allocated in any memory
+            allocation.
+ 
+   T        Running total on the number of memory allocations so far.
+            This value will be increasing.
+
+Additional query words: 3.00 3.00b 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN300b
+Version           : WINDOWS:3.0,3.0b,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

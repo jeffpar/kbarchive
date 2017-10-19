@@ -1,0 +1,69 @@
+DOCUMENT:Q147321  08-NOV-2001  [homemm]
+TITLE   :Oceans: Minimum System Requirements
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:1.00
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Oceans for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article lists the minimum system requirements to run Microsoft
+Oceans version 1.0 for Windows.
+
+MORE INFORMATION
+================
+
+The minimum system requirements to run Oceans are:
+
+ - A Multimedia PC or compatible with a 486 or higher microprocessor
+
+ - Either MS-DOS operating system version 3.1 or later with Microsoft Windows
+   operating system 3.1 or later, OR Windows 95.
+
+ - Double-speed (2x) or better CD-ROM drive.
+
+ - 4 MB of RAM.
+
+ - 0-3 MB of available hard disk space.
+
+ - Super VGA or higher resolution monitor.
+
+ - Windows-compatible sound card.
+
+ - Speakers or headphones.
+
+ - Microsoft Mouse or compatible pointing device.
+
+ - Microsoft Scenes-compatible Oceans screen saver collection requires Microsoft
+   Scenes version 2.0.
+
+Additional query words: 1996 multi media multimedia multi-media mmtitles kbmm requires
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbZNotKeyword kbKidsSearch kbOceans
+Version           : 1.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

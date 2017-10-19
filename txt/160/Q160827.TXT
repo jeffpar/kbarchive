@@ -1,0 +1,66 @@
+DOCUMENT:Q160827  17-DEC-2000  [winnt]
+TITLE   :ErrMsg: Failed to Purged the NBT Remote Cache Table
+PRODUCT :Microsoft Windows NT
+PROD/VER:Win95
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you attempt to carry out the NBTSTAT -R command on a Windows 95 client,
+the following error message is displayed:
+
+   Failed to Purged the NBT Remote Cache Table
+
+CAUSE
+=====
+
+The file LMHOSTS is missing, misplaced, or misspelled.
+
+WORKAROUND
+==========
+
+The file should be found in the C:\Windows directory and should be named:
+
+   LMHOSTS
+
+There should be no trailing dot(.) or file extension on this file.
+
+If you are using Windows Explorer to find the file, perform the following steps:
+
+1. Start Windows Explorer.
+
+2. From the View menu, click Options.
+
+3. Click the Show All Files radio button, then click to clear the Hide file
+   extensions for known file types check box.
+
+Additional query words: -c netbios name cache lmhosts.txt nbtstat win95
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : Win95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

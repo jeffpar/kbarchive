@@ -1,0 +1,81 @@
+DOCUMENT:Q157425  11-DEC-1999  [foxpro]
+TITLE   :BUG: Quick Report Mixes Detail and Header Bands
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbtool kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bugkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The information in the Detail and Page Header bands of a Quick Report may
+overwrite text previously placed in the Page Header. The information in the Page
+Header may appear overwritten in the Report Designer, in preview mode and in
+printed form.
+
+WORKAROUND
+==========
+
+Resize the Page Header band until you can see all the Page Header text again in
+the Header band.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new report in Report Designer.
+
+2. Add the \Samples\Data\Customer.dbf table in the DataEnvironment.
+
+3. Type three lines of text in the Page Header area.
+
+4. Click Quick Report on the System menu.
+
+5. Click OK in Quick Report dialog box to accept everything.
+
+   NOTE: Notice that the text in the Page Header is mixing with the fields in the
+   Detail area.
+
+6. On the View menu, click Preview.
+
+NOTE: Objects in the Page Header mix with all the fields in the Detail area in
+preview page.
+
+Additional query words: kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600
+
+======================================================================
+Keywords          : kbtool kbvfp kbvfp300bBUG kbvfp500aBUG kbvfp500bug kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

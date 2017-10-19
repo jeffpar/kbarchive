@@ -1,0 +1,79 @@
+DOCUMENT:Q139121  08-AUG-2001  [crossnet]
+TITLE   :Windows 95 Client Reboots Upon Starting
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:3.50 3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51 
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have a shared network installation of Windows 95 that uses either a
+Windows NT Server or Windows NT Workstation as a file server, and you change
+either the file server's name or network share name and also make the
+appropriate changes in the AUTOEXEC.BAT file, Windows 95 no longer boots up
+correctly. As Windows 95 is loading, the computer reboots.
+
+CAUSE
+=====
+
+A shared network installation of Windows 95 is initiated by first running
+NetSetup from the Windows 95 CD, installing a common shared directory on a file
+server, connecting to the server from the client, and running setup. This
+installs about 3 megabytes (MB) of Windows 95 files on ether the server or local
+hard disk, which contain mostly computer and user specific settings.
+
+In the AUTOEXEC.BAT file, a network connection is made to
+\\server_name\share_name, and when "WIN" is run in real-mode, the bulk of the
+Windows 95 files are loaded by the client from the file server.
+
+Within one of the registry files, SYSTEM.DAT, there are many references to the
+file server's name as it was during setup of Windows 95.
+
+WORKAROUND
+==========
+
+If a network administrator wants to move the shared Windows 95 files, it is
+possible to do so by changing all of the name references in the registry:
+
+1. Save the registry of each client as a text file with REGEDIT.EXE.
+
+2. Using a text editor, search for the old server or share name and replace it
+   with the new name.
+
+   In this text file, the names are preceded by an extra set of back slashes. The
+   name appear as: \\\\server_name\\share_name.
+
+3. Reload the modified text file with REGEDIT.EXE.
+
+Additional query words: prodnt reboot
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbWin95search kbZNotKeyword3
+Version           : 3.50 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

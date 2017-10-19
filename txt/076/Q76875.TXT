@@ -1,0 +1,69 @@
+DOCUMENT:Q76875  15-OCT-1999  [win3x]
+TITLE   :Audio Option and Windows with Multimedia Extensions Setup
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows with Multimedia Extensions, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Windows with Multimedia Extensions Setup program does not detect your Audio
+card.
+
+NOTE: This problem affects Microsoft Windows with Multimedia Extensions version
+1.0 running with Windows version 3.0 or 3.0a; it does not affect later versions
+of Windows.
+
+CAUSE
+=====
+
+This problem occurs because of conflicts with certain hardware.
+
+WORKAROUND
+==========
+
+You must manually select the appropriate option to have sound capability.
+
+In the Setup program, a screen listing all available hardware is shown. In the
+Audio option, it says "Audio board not selected".
+
+To change this option:
+
+1. Press the UP ARROW key to highlight the Audio option.
+
+2. Press the ENTER key. A list of available options will drop down.
+
+3. Press the ARROW keys to select one of the options.
+
+4. Press the ENTER key. Now, proceed with the rest of setup.
+
+Additional query words: MMWIN 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbWinMultiXSearch kbWinMultiX100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

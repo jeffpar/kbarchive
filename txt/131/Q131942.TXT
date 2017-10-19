@@ -1,0 +1,76 @@
+DOCUMENT:Q131942  17-DEC-2000  [win95x]
+TITLE   :Erratic Mouse Pointer Behavior on Laptop Computers
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Windows 95 on a laptop computer, you may experience random mouse
+pointer movements and mouse clicks.
+
+CAUSE
+=====
+
+This behavior can occur on computers that use a single controller for both the
+keyboard and power management. When Windows 95 polls the controller, random data
+is sometimes returned. This random data can result in random mouse pointer
+movements and mouse clicks.
+
+The following computers have been reported to experience this behavior:
+
+ - AT&T Globalyst 200S
+
+ - MidWest Micro SoundBook Elite
+
+ - Swan Note laptop computers
+
+RESOLUTION
+==========
+
+To resolve this issue, disable power status polling. To do so, follow these
+steps:
+
+1. Click the Start button, point to Settings, and then click Control Panel.
+
+2. Double-click the System icon.
+
+3. Click the Device Manager tab.
+
+4. Double-click the System Devices branch to open it.
+
+5. Click Advanced Power Management, and then click Properties.
+
+6. Click the Enable Power Management Support check box to clear it.
+
+7. Click OK or Close until you return to Control Panel.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

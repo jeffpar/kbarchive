@@ -1,0 +1,78 @@
+DOCUMENT:Q139513  10-FEB-2000  [foxpro]
+TITLE   :DOCERR: DocumentFile Property Returns " " For Embedded Objects
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Following is the description that the Visual FoxPro documentation gives for the
+DocumentFile Property:
+
+   Returns the name of the file from which an embedded or linked object was
+   created.
+
+This is incorrect. Only the linked objects return the name of an object; embedded
+objects return " ".
+
+MORE INFORMATION
+================
+
+Steps to Demonstrate Behavior
+-----------------------------
+
+1. Type the following line of code in the Command window:
+
+      MODIFY FORM test
+
+2. Place an OLE Container control on the form.
+
+3. On the Insert Object dialog box, click Create From File, and select
+   C:\Windows\Bubbles.bmp to create an embedded file. (You can use any .doc file
+   as well.)
+
+4. Place a second OLE Container control on the form, and insert a file as you
+   did in step 3. This time, create a linked Object using the same graphic file
+   (for example, C:\Windows\Bubbles.bmp) by selecting the Link check box in the
+   Insert Object dialog box. (You can use any .doc file as well.)
+
+5. Type the following lines of code in the Debug window:
+
+      test.olecontrol1.documentfile
+      test.olecontrol2.documentfile
+
+For the expression, "test.olecontrol1.documentfile" (the embedded file), you
+receive "". For the expression, "test.olecontrol2.documentfile" (the linked
+file), you receive C:\Windows\Bubbles.bmp.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

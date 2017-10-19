@@ -1,0 +1,57 @@
+DOCUMENT:Q182128  03-APR-1999  [exchange]
+TITLE   :XCON: Site Connector Address Spaces Do Not Appear in GWART
+PRODUCT :Microsoft Exchange
+PROD/VER:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Address spaces that are added or modified on a site connector that connects two
+replicated sites will not appear in the Gateway Address Routing Table (GWART) or
+Site Addressing Routing list.
+
+CAUSE
+=====
+
+This is by design. Address spaces on a site connector are only used if the sites
+being connected are not replicated. After the sites are replicated, all of the
+address spaces on the site connector (except for Local/Subsite restricted
+spaces) are ignored, and the remote site's replicated GWART is used to define
+the address spaces that the remote site supports.
+
+RESOLUTION
+==========
+
+X.400 Connector address spaces are not limited by directory replication and can
+be implemented in lieu of the site connector. The additional address space can
+then be defined for the X.400 Connector.
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : 4.0,5.0,5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

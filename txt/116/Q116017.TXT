@@ -1,0 +1,66 @@
+DOCUMENT:Q116017  07-MAY-2001  [visualc]
+TITLE   :PRB: ClassWizard Doesn't Support Custom Foreign DDX
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbwizard kbDatabase kbMFC kbVC150 kbVC200 kbVC400 kbClassWizard kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The ClassWizard, used with:
+    - Microsoft Visual C++, versions 1.5, 1.51, 1.52 
+    - Microsoft Visual C++ 32-bit Edition, versions 1.0, 2.0, 2.1, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+ClassWizard does not allow custom DDX functions for foreign variables.
+
+Custom DDX functions can be implemented by the user and then used by ClassWizard
+in generating code for member variables. The technique for this is described in
+"MFC TechNote 26."
+
+If, however, you have created a custom DDX function that is intended to be used
+to exchange data between a control and a foreign member variable (see "foreign"
+in the online help), ClassWizard will not recognize that your function is
+intended for foreign variables, nor will it let you select your new property or
+type (defined in the "ExtraDDX?" line in the APPSTUDIO.INI file) in conjunction
+with a foreign variable.
+
+CAUSE
+=====
+
+This is a limitation in all versions listed above of Microsoft Visual C++.
+
+RESOLUTION
+==========
+
+To work around this, manually add your custom DDX_Field* call to your
+CRecordView's DoDataExchange() function.
+
+Additional query words: 1.00 1.50 1.51 1.52 2.00 2.10 4.00 DDX_Proc DDXExtra
+
+======================================================================
+Keywords          : kbwizard kbDatabase kbMFC kbVC150 kbVC200 kbVC400 kbClassWizard kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbClassWizard
+Version           : winnt:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

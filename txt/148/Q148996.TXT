@@ -1,0 +1,60 @@
+DOCUMENT:Q148996  13-JUN-2001  [sna]
+TITLE   :Attachmate Advanced Coax Adapter Fails w/Event 23 Qualifier 11
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,2.11 SP1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 2.11 SP1, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Attachmate Advanced Coax Adapter may fail with Event 23, Qualifier 11 (DSR
+failure) if the hardware resources are not set to the following:
+
+       Base Address: CE000
+   I/O Port address: 2D0
+                IRQ: 2
+
+
+These settings must also match on the card using jumper settings. See the
+Attachmate Coax adapter documentation for details on how to change these
+settings.
+
+The SNA Server IBM DFT driver must be selected in SNA Server Setup if you use the
+Attachmate Advanced Coax Adapter, which emulates an IBM 3278/3279 Emulation
+adapter.
+
+KBCategory: kb3rdparty
+KBSubcategory: sna3rdparty
+
+Additional query words: 2.00 2.10 2.11 2.11.sp1 service pack 1
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1,2.11,2.11 SP1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

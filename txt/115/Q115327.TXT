@@ -1,0 +1,62 @@
+DOCUMENT:Q115327  22-JUL-2001  [visualc]
+TITLE   :FIX: SETUP.EXE Cannot Start via a UNC Connection
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5,1.51,1.52,2.0,2.1
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 1.0, 1.5, 1.51, 1.52 
+ - Microsoft Visual C++, versions 2.0, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Start SETUP.EXE through a universal naming convention (UNC) connection (for
+example, type "\\netroot\share\subdir\msvc\SETUP.EXE"). Installation fails and
+the following message box is displayed:
+
+   Setup cannot initialize the file list
+
+RESOLUTION
+==========
+
+Assign a drive letter to the network share and run the SETUP.EXE file (for
+example, use "x:\subdir\msvc\SETUP.EXE").
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the products listed at the beginning
+of this article. This problem was fixed in Visual C++ 2.2, but has not been
+fixed in the 16-bit version of our compiler. We will post new information here
+in the Knowledge Base as it becomes available.
+
+Additional query words: 1.00 1.50 1.51 1.52 2.00 2.10
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbVCsearch kbAudDeveloper kbvc150 kbvc100 kbVC151 kbVC200 kbVC210 kbVC152
+Version           : :1.0,1.5,1.51,1.52,2.0,2.1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

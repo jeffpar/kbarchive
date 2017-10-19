@@ -1,0 +1,63 @@
+DOCUMENT:Q185903  30-NOV-1999  [homekids]
+TITLE   :Kids Plus!: Documentation Error in Paint It! Help
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbdocerr mskids kidsplus kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Plus! for Kids, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Paint It! "Adding ClipArt from Outside Paint It!" Help topic states that you
+can add a clip art file to Picture Picker. This is incorrect.
+
+To add a picture from another program to a Paint It! file, copy the picture from
+the other program, open a Paint It! file, and then click Paste on the Edit
+menu.
+
+For information about how to copy a picture, consult the printed documentation or
+online Help for the program from which you are copying the picture.
+
+MORE INFORMATION
+================
+
+Picture Picker is a utility you can use to add clip art images to your Paint It!
+files. To start Picture Picker, click the icon with the yellow circle located on
+the toolbar.
+
+For additional information about using clip art in your Paint It! files, see the
+"Working with ClipArt" Help topic in Paint It! online Help. To display this Help
+topic, click Help Topics on the Help menu, double-click Working With ClipArt,
+click the topic you want to see, and then click Display.
+
+Additional query words: wrong inaccurate dot graphics folder
+
+======================================================================
+Keywords          : kbdocerr mskids kidsplus kbimu 
+Technology        : kbGamesSearch kbPlusKids kbPlusSearch kbZNotKeyword3
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

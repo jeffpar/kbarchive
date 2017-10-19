@@ -1,0 +1,66 @@
+DOCUMENT:Q104853  07-MAY-2002  [homegame]
+TITLE   :FlightSim: Gravis Mouse Stick Responds Slowly or Sticks
+PRODUCT :Microsoft Home Games
+PROD/VER:MACINTOSH:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator for the Macintosh, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using a monitor larger than 13 inches with a Gravis Mouse Stick, the
+aircraft may "lag behind" or respond slowly to stick input. Additionally, the
+aircraft control being used may not return all the way to center when the stick
+is released. For example, if the stick is pushed all the way to the right, the
+aircraft may continue to roll right even after the stick is released.
+
+RESOLUTION
+==========
+
+The Gravis Mouse Stick control panel must be properly configured for a larger
+monitor. Create a set of preferences with the SetMaker utility provided by
+Gravis and then select that set in the Control Panel whenever Flight Simulator
+is in use with the larger monitor.
+
+MORE INFORMATION
+================
+
+For more information about using SetMaker to design sets for the Mouse Stick,
+contact Gravis in Burnaby, B.C. (Canada) at:
+
+ - (604) 431-5020
+
+ - (800) 663-8558
+
+Additional query words: 4.0 flightsim fltsim mac fs
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbGamesSearch kbFlightSimSearch kbFlightSim400Mac kbSimSearch
+Version           : MACINTOSH:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

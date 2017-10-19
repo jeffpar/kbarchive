@@ -1,0 +1,198 @@
+DOCUMENT:Q117236  24-OCT-1999  [win95x]
+TITLE   :Windows 3.11 Directory Listing for Disk 3 (5.25 Inch 1.2 MB)
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains the directory listing for Disk 3 of the Microsoft Windows
+version 3.11 5.25-inch 1.2-megabyte disk set.
+
+MORE INFORMATION
+================
+
+Disk 3
+------
+
+   Volume in drive A is MSWIN3113
+   Volume Serial Number is 5B0D-0A11
+   Directory of A:\
+
+1252_UNI 00_           515 12-31-93   3:11a
+386MAX   VX_        17,978 12-31-93   3:11a
+8514FIX  FO_         3,174 12-31-93   3:11a
+8514OEM  FO_         3,758 12-31-93   3:11a
+8514SYS  FO_         3,251 12-31-93   3:11a
+APP850   FO_        14,504 12-31-93   3:11a
+BANINST  38_           687 12-31-93   3:11a
+BLUEMAX  VX_        18,007 12-31-93   3:11a
+CGA40850 FO_         3,228 12-31-93   3:11a
+CGA40WOA FO_         3,081 12-31-93   3:11a
+CGA80850 FO_         2,627 12-31-93   3:11a
+CGA80WOA FO_         2,606 12-31-93   3:11a
+CGALOGO  LG_           857 12-31-93   3:11a
+CGALOGO  RL_         3,436 12-31-93   3:11a
+COMM     DR_         6,282 12-31-93   3:11a
+DECNB    38_         4,271 12-31-93   3:11a
+DECNET   38_         4,805 12-31-93   3:11a
+DISK3                    8 12-31-93   3:11a
+DOSAPP   FO_        14,476 12-31-93   3:11a
+EGA      3G_         8,300 12-31-93   3:11a
+EGA      SY_         3,761 12-31-93   3:11a
+EGA40850 FO_         3,657 12-31-93   3:11a
+EGA40WOA FO_         3,531 12-31-93   3:11a
+EGA80850 FO_         2,870 12-31-93   3:11a
+EGA80WOA FO_         2,882 12-31-93   3:11a
+EGACOLOR 2G_         2,479 12-31-93   3:11a
+EGAFIX   FO_         2,247 12-31-93   3:11a
+EGALOGO  LG_         1,039 12-31-93   3:11a
+EGALOGO  RL_         4,455 12-31-93   3:11a
+EGAMONO  2G_         2,331 12-31-93   3:11a
+EGAMONO  LG_         1,010 12-31-93   3:11a
+EGAMONO  RL_         3,998 12-31-93   3:11a
+EGAOEM   FO_         2,596 12-31-93   3:11a
+EGASYS   FO_         2,561 12-31-93   3:11a
+HERC     3G_         5,288 12-31-93   3:11a
+HERC850  FO_         3,047 12-31-93   3:11a
+HERCLOGO LG_           965 12-31-93   3:11a
+HERCLOGO RL_         4,102 12-31-93   3:11a
+HERCULES 2G_         1,649 12-31-93   3:11a
+HERCWOA  FO_         3,039 12-31-93   3:11a
+HPEBIOS  38_         1,494 12-31-93   3:11a
+HPMOUSE  DR_         2,301 12-31-93   3:11a
+HPSYSTEM DR_         1,929 12-31-93   3:11a
+KBDBE    DL_         1,880 12-31-93   3:11a
+KBDCA    DL_         1,946 12-31-93   3:11a
+KBDDA    DL_         1,833 12-31-93   3:11a
+KBDDV    DL_           943 12-31-93   3:11a
+KBDFC    DL_         2,076 12-31-93   3:11a
+KBDFI    DL_         1,875 12-31-93   3:11a
+KBDFR    DL_         1,759 12-31-93   3:11a
+KBDGR    DL_         1,769 12-31-93   3:11a
+KBDHP    DR_         6,045 12-31-93   3:11a
+KBDIC    DL_         1,336 12-31-93   3:11a
+KBDIT    DL_         1,650 12-31-93   3:11a
+KBDLA    DL_         1,884 12-31-93   3:11a
+KBDMOUSE DR_         1,029 12-31-93   3:11a
+KBDNE    DL_         1,827 12-31-93   3:11a
+KBDNO    DL_         1,851 12-31-93   3:11a
+KBDPO    DL_         1,788 12-31-93   3:11a
+KBDSF    DL_         1,817 12-31-93   3:11a
+KBDSG    DL_         1,296 12-31-93   3:11a
+KBDSP    DL_         1,871 12-31-93   3:11a
+KBDSW    DL_         1,863 12-31-93   3:11a
+KBDUK    DL_         1,093 12-31-93   3:11a
+KBDUS    DL_           946 12-31-93   3:11a
+KBDUSX   DL_         1,255 12-31-93   3:11a
+KEYBOARD DR_         5,422 12-31-93   3:11a
+LANGDUT  DL_         1,281 12-31-93   3:11a
+LANGENG  DL_         1,281 12-31-93   3:11a
+LANGFRN  DL_         1,306 12-31-93   3:11a
+LANGGER  DL_         1,280 12-31-93   3:11a
+LANGSCA  DL_         1,278 12-31-93   3:11a
+LANGSPA  DL_         1,343 12-31-93   3:11a
+LANMAN10 38_           968 12-31-93   3:11a
+LMOUSE   DR_         6,978 12-31-93   3:11a
+LVMD     38_         3,403 12-31-93   3:11a
+LZEXPAND DL_        13,532 12-31-93   3:11a
+MCICDA   DR_         7,458 12-31-93   3:11a
+MMSOUND  DR_         2,545 12-31-93   3:11a
+MOUSE    DR_         7,084 12-31-93   3:11a
+MSC3BC2  DR_         2,519 12-31-93   3:11a
+MSCMOUSE DR_         2,578 12-31-93   3:11a
+MSCVMD   38_         2,685 12-31-93   3:11a
+MSNET    DR_         4,214 12-31-93   3:11a
+NETWARE  HL_        16,370 12-31-93   3:11a
+NOMOUSE  DR_           320 12-31-93   3:11a
+NWIPXSPX DL_        15,511 12-31-93   3:11a
+NWPOPUP  EX_         1,447 12-31-93   3:11a
+OLIGRAB  2G_         2,373 12-31-93   3:11a
+PBRUSH   EX_        92,305 12-31-93   3:11a
+PCSA     DR_         5,554 12-31-93   3:11a
+PLASMA   3G_         5,663 12-31-93   3:11a
+POWER    DR_         8,497 12-31-93   3:11a
+POWER    HL_         6,748 12-31-93   3:11a
+SETUP    INI            92 12-31-93   3:11a
+SL       DL_         8,567 12-31-93   3:11a
+SL       HL_         7,820 12-31-93   3:11a
+SYSTEM   DR_         1,641 12-31-93   3:11a
+TASKID   CO_         4,607 12-31-93   3:11a
+TASKID   MS_           865 12-31-93   3:11a
+TBMI2    MS_         1,549 12-31-93   3:11a
+TBMI240  CO_         9,287 12-31-93   3:11a
+UNI_1252 00_           530 12-31-93   3:11a
+UNI_COL  00_           936 12-31-93   3:11a
+V7VDD    38_        16,884 12-31-93   3:11a
+V7VGA    3G_         7,861 12-31-93   3:11a
+VDDCGA   38_         7,894 12-31-93   3:11a
+VDDEGA   38_        16,944 12-31-93   3:11a
+VDDHERC  38_         6,348 12-31-93   3:11a
+VDDVGA30 38_        17,129 12-31-93   3:11a
+VDDXGA   38_        17,931 12-31-93   3:11a
+VER      DL_         5,665 12-31-93   3:11a
+VGA      3G_         9,885 12-31-93   3:11a
+VGA30    3G_         8,623 12-31-93   3:11a
+VGA850   FO_         2,883 12-31-93   3:11a
+VGA860   FO_         2,848 12-31-93   3:11a
+VGA861   FO_         2,882 12-31-93   3:11a
+VGA863   FO_         2,870 12-31-93   3:11a
+VGA865   FO_         2,874 12-31-93   3:11a
+VGACOLOR 2G_         3,262 12-31-93   3:11a
+VGADIB   3G_         9,153 12-31-93   3:11a
+VGAFIX   FO_         2,423 12-31-93   3:11a
+VGALOGO  LG_         1,158 12-31-93   3:11a
+VGALOGO  RL_         7,942 12-31-93   3:11a
+VGAMONO  2G_         3,251 12-31-93   3:11a
+VGAOEM   FO_         2,839 12-31-93   3:11a
+VGASYS   FO_         2,754 12-31-93   3:11a
+VIPX     38_         7,697 12-31-93   3:11a
+VNETWARE 38_         3,252 12-31-93   3:11a
+VNW40    38_         5,797 12-31-93   3:11a
+VPOWERD  38_         1,610 12-31-93   3:11a
+VTDA     38_         4,216 12-31-93   3:11a
+WIN      CN_         8,756 12-31-93   3:11a
+WIN386   EX_       247,652 12-31-93   3:11a
+WIN386   PS_           419 12-31-93   3:11a
+WIN87EM  DL_         7,917 12-31-93   3:11a
+WINDOWS  LO_           785 12-31-93   3:11a
+XLAT850  BI_           428 12-31-93   3:11a
+XLAT860  BI_           409 12-31-93   3:11a
+XLAT861  BI_           410 12-31-93   3:11a
+XLAT863  BI_           410 12-31-93   3:11a
+XLAT865  BI_           406 12-31-93   3:11a
+
+      142 file(s)        931,018 bytes
+                         245,248 bytes free
+
+Additional query words: 3.11 disk dirwin noupd
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,426 @@
+DOCUMENT:Q148563  10-DEC-2001  [foxpro]
+TITLE   :INFO: List of Problems in Visual FoxPro 3.0b for Windows
+PRODUCT :Microsoft FoxPro
+PROD/VER::3.0b
+OPER/SYS:
+KEYWORDS:kbvfp300bBUGkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Following is a list of the problems identified in Microsoft Visual FoxPro
+version 3.0b for Windows.
+
+MORE INFORMATION
+================
+
+This list contains the numbers and titles of Microsoft Knowledge Base articles
+that fully describe the problems identified in Visual FoxPro version 3.0b for
+Windows:
+
+NOTE: To get one of the following articles from Microsoft's Web site, use the
+following URL format:
+
+   ftp://ftp.microsoft.com/developr/fox/kb/qxxx/x/xx.txt
+
+   For example, to view article Q143320, use the following URL:
+   ftp://ftp.microsoft.com/developr/fox/kb/q143/3/20.txt
+
+Knowledge Base Articles
+-----------------------
+
+
+   
+
+   ITEM ID     ARTICLE TITLE
+   -------------------------
+
+   Q108717 BUG: Resource Manager Error When Printing Lots of Fonts
+
+   Q114136 BUG: FoxPro Math-Precision Problems with SET DECIMALS
+
+   Q114480 BUG: SET COMPATIBLE or Catalog Manager Changes MEMOWIDTH to 80
+
+   Q125615 BUG: Push Button Require Two Mouse Clicks Instead of One
+
+   Q129229 BUG: READ DEACTIVATE Runs When BROWSE Called From VALID of GET
+
+   Q129440 BUG: Cannot Escape Out of ON ERROR Routine
+
+   Q129646 BUG: Error Routine Not Called for USE Command
+
+   Q129905 BUG: "Hide All Windows" Does Not Hide the Command Window
+
+   Q129913 BUG: Browse Key Record Pointer Moves Incorrectly
+
+   Q129922 BUG: Error Occurs When Stepping through BROWSE FOR UDF() Code
+
+   Q129981 BUG: Custom Form Property Set to () Causes Infinite Loop
+
+   Q130126 BUG: Wrong Windows NT & Windows 3.11 versions in System Info
+
+   Q130364 BUG: Scroll Bars Disappear When No Data Bound to a Grid
+
+   Q130404 BUG: CREATE CURSOR Does Not Accept UNIQUE as a Field Name
+
+   Q130410 BUG: ALTER TABLE Command Changes Field Type to Picture
+
+   Q130464 BUG: Number Entry Starts at Center or Left in a Browse
+
+   Q130524 BUG: COPY TO ARRAY Behaves Differently from dBASE
+
+   Q130576 BUG: MODIFY GENERAL Fires the FORM DEACTIVATE Clause
+
+   Q130602 BUG: Can't Enter Picture Property for List Box or Combo Box
+
+   Q130798 BUG: "File Does Not Exist" Occurs After FoxPro Is Maximized
+
+   Q130958 BUG: Five Label Layouts Have Incorrect Format
+
+   Q131213 BUG: Grid Behavior Isn't Consistent w/ that of List/Combo Box
+
+   Q131215 BUG: COPY STRUCTURE EXTENDED Ignores Long Field Names
+
+   Q131560 BUG: Creating a Header Class Definition in a VCX Causes Error
+
+   Q131578 BUG: Math Problem with INT() Function
+
+   Q131710 BUG: TYPE() Returns "" Instead of "U" For OleBoundControl
+
+   Q131875 BUG: Form Designer Window Won't Scroll When Selecting Objects
+
+   Q132104 BUG: Background Color in Text Box Does Not Use Dithered Colors
+
+   Q132480 BUG: Aliases in View Window Are Listed in Reverse Order
+
+   Q132534 BUG: Error Changing Grid s DynamicBackColor & DynamicForeColor
+
+   Q132863 BUG: DBGETPROP() for Database Comments Not Working Correctly
+
+   Q132910 BUG: Can't Move Focus from a Toolbar to an Object on a Form
+
+   Q133003 BUG: SQL SELECT Brings Up Dialog Twice Erroneously
+
+   Q133033 BUG: Tracing Main Program After DO *.PJX Causes Exception Err.
+
+   Q133100 BUG: Timer is Visible on a Form After Using Graphics Methods
+
+   Q133245 BUG: One-to-Many Report Wizard Doesn't Sort in Correct Order
+
+   Q133742 BUG: Toolbar Options Positioned Off the Screen
+
+   Q134213 BUG: Init Method for Cursor Object has Incorrect Data Session
+
+   Q134215 BUG: OLE SUBCLASS: Subclassing of OleControl/OLE Unspecified
+
+   Q134245 BUG: Multi-Select List Box Does Not Retain Selected Items
+
+   Q134251 BUG: Runtime Changes to the Grid Not Saved Correctly
+
+   Q134308 BUG: Upper Format Truncates Right/Center-Alligned Report Field
+
+   Q134315 BUG: Cannot Open Database and No Message Is Displayed
+
+   Q134392 BUG: Shape Control's Mouseup Incorrectly Fired by Form Click
+
+   Q134393 BUG: Can't Bring a Grid Forward When It's Beneath Another Grid
+
+   Q134394 BUG:Win32S Error: Unhandled Exception on Visual FoxPro Startup
+
+   Q134436 BUG: After Removing Text in Grid Other Data Appears Truncated
+
+   Q134437 BUG: Report Wizard Preview Error If View Given as Child Table
+
+   Q134638 BUG: SHOW GET Does Not Refresh Number of Elements
+
+   Q134643 BUG: Alter Table Add Primary Key Error Not Trappable
+
+   Q134707 BUG: Unbinding Grid with SetAll Method Still Displays Data
+
+   Q134792 BUG: Pointer in Drop-Down Combo Box Not at the Beginning
+
+   Q134881 BUG: WAIT WINDOW AT Clause Puts WAIT WINDOW on Windows Desktop
+
+   Q134888 BUG: GDI Memory Not Released in Windows 95 After Memory Error
+
+   Q134890 BUG: Wizards Can Be Hidden Allowing More Than One to Run
+
+   Q134891 BUG: DEFINE POPUP PROMPT Can Cause Visual FoxPro to Quit
+
+   Q134895 BUG: DragIcon Can Be Dragged Outside Visual FoxPro Window
+
+   Q135040 BUG: Pack Closes Index File but Does Not Update It
+
+   Q135111 BUG: "Feature Not Available" Error If READ in Form of Formset
+
+   Q135286 BUG: Can't Use Keyboard to Change Vertical Size of Object
+
+   Q135328 BUG: TOP and LEFT Properties Do not Reset to Default
+
+   Q135329 BUG: Pressing PAGE UP or PAGE DOWN Moves to New Code Window
+
+   Q135330 BUG: StatusBarText Does Not Change with SetFocus Method
+
+   Q135342 BUG: Scope on Report Command Doesn't Work as It Did in ver 2.x
+
+   Q135361 BUG: SEEK Command Fails If Collate Is Set to "Machine"
+
+   Q135384 BUG: Unbalanced Parentheses in IF Condition Not Seen by Parser
+
+   Q135399 BUG: Filer:Application Error If Long Filename in VFP Directory
+
+   Q135519 BUG: Creating 500 Instances of a Form Class Causes IC Error
+
+   Q135563 BUG: One-to-Many Report Based on Two Views Causes Errors
+
+   Q135566 BUG: GATHER FROM Command Checks Lock Status of Table
+
+   Q135611 BUG: Try to Modify Label Previewed by Another, Calls Converter
+
+   Q135612 BUG: Form Does Not Release After Being Changed to Modal
+
+   Q135617 BUG: Group Header Information Prints Incorrectly
+
+   Q135618 BUG: View Designer Doesn't Properly Display Crosstab
+
+   Q135625 BUG: Grid Valid Event Fires Before Grid Control Valid Fires
+
+   Q135708 BUG: Changing PageOrder in PageFrame Gives Incorrect PageName
+
+   Q135754 BUG: ListBox Does Not Refresh Properly with SET FILTER Command
+
+   Q135801 BUG: Print Preview Toolbar Off Screen with VGA
+
+   Q135817 BUG: Mouse Down Triggered on a Minimized Window
+
+   Q135841 BUG: List Box Does Not Respect NumberOfElements
+
+   Q135906 BUG: Can't Restore Default Foxhead Icon After Set Icon Prop
+
+   Q135908 BUG: Hot Keys Do Not Work If TabStop Is Set to False
+
+   Q136042 BUG: SET TOPIC Overwritten by SET MESSAGE
+
+   Q136070 BUG: Examples on Pages 69-75 of Developer's Guide Don't Work
+
+   Q136071 BUG: ON ERROR Not Invoked When Error Occurs in Error Event
+
+   Q136154 BUG: Text Box Does Not Respond to DblClick Event
+
+   Q136277 BUG: FormCount Property Does Not Count Toolbars in a Form Set
+
+   Q136278 BUG: Error When Using @ SAY to Play Sounds from General Field
+
+   Q136281 BUG: GridBuilder Gives Data Type Error After Fields Rearranged
+
+   Q136282 BUG: Spinner Does Not Increment Value as It Should
+
+   Q136557 BUG: SHOW WINDOW <name> REFRESH in BROWSE VALID Does Not Work
+
+   Q136559 BUG: Space is Used Instead of PasswordChar Character
+
+   Q136668 BUG: Inconsistent Behavior of KeyPreview Property
+
+   Q136669 BUG: Grid Activation Causes Form to Move If Form Title Hidden
+
+   Q136688 BUG: Class Browser: Multiple Control Boxes with Maximized .VCX
+
+   Q136759 BUG: Application Error When Releasing Popup Menu
+
+   Q136826 BUG: Resuming from a Suspended Form Causes a GP Fault
+
+   Q136852 BUG: Objects Are Missing the Destroy Event
+
+   Q136916 BUG: Saving Report May Not Allow User to Reselect Object
+
+   Q136946 BUG: No RightClick Event For ToolBars, Containers, or Controls
+
+   Q137122 BUG: FOPEN() Does Not Search Path Specified by SET PATH
+
+   Q137411 BUG: HalfHeight Forms Closable Even If Closable = False
+
+   Q137413 BUG: Report Writer Creates Child Records in One-to-Many Report
+
+   Q137521 BUG: Class Browser: Error When Typing a Subclass in Type Combo
+
+   Q137808 BUG: Empty Error Log File Created with the Converter
+
+   Q137947 BUG: Bitmaps Black or Poor Quality Printed in LaserJet Reports
+
+   Q137948 BUG: Report Writer Left-Aligns Numeric Fields Added w/ Toolbar
+
+   Q137950 BUG: Valid Event Doesn't Fire in Control Array of Text Boxes
+
+   Q138056 BUG: CurrentControl Property of Grid Column Reverts to Default
+
+   Q138145 BUG: Different TAB & SHIFT+TAB Behavior in Visual FoxPro Popup
+
+   Q138376 BUG: NODEFAULT Is Ignored in Text Box KeyPress Event Code
+
+   Q138435 BUG: Changing Grid View Property Incorrectly Displays Grid
+
+   Q138473 BUG: Code Window Closes Design Tools When Run from a Program
+
+   Q138607 BUG: Can't Enter Period in a Text Box with Scientific Notation
+
+   Q138677 BUG: CREATE SQL VIEW Scrambles the Parentheses in SQL Command
+
+   Q138734 BUG: Cancel Doesn't Work in RESTORE MACROS FROM GETFILE()
+
+   Q138952 BUG: Calling AMEMBERS() w/ Invalid Parameter Creates an Array
+
+   Q138961 BUG: Only One File Extension Honored in Parameter of GETFILE()
+
+   Q139048 BUG: Update SQL Works Incorrectly with RAND() in WHERE Clause
+
+   Q139108 BUG: Visual FoxPro Fails If Subclass Name Ends in a Number
+
+   Q139145 BUG: Text Shifts to the Left and Down Slightly in a Grid
+
+   Q139183 BUG: View Not Accurate with One-to-Many Grandchild Relation
+
+   Q139188 BUG: Cannot Click a List Box on a Pageframe by Using the Mouse
+
+   Q139196 BUG:Clicking Scroll Bar in Grid May Write Data to Wrong Record
+
+   Q139215 BUG: Labels Truncated When Printable Page Option Is Selected
+
+   Q139387 BUG: Data Type Is Invalid for This Property Error Message
+
+   Q139549 BUG: Using RUN to Shell to MS-DOS Results in ICE Error
+
+   Q139569 BUG: MDI Window Reverses Parent/Child Window Name in Title Bar
+
+   Q139757 BUG: Upsize Wizard Falsely Creates Timestamp Field on SQL 6.0
+
+   Q139768 BUG: ON ERROR Statement Not Executed in Browse of Table
+
+   Q141314 BUG: Label Wizard Allows Fields to Sort with View
+
+   Q141315 BUG: Changing Subclassed Form's Desktop Property Has No Effect
+
+   Q141316 BUG: Report Is Wrong When You Relate Tables on Currency Field
+
+   Q141318 BUG: "Error #101 in addgraphdata(0)" in Query Designer
+
+   Q141354 BUG: Adding Description to Table's Index in DBC Corrupts Table
+
+   Q141355 BUG: Copy/Paste Causes GP Fault w/Worksheet Created by COPY TO
+
+   Q141395 BUG: Problem Setting Focus to a Combobox from a PageFrame
+
+   Q141425 BUG: Toolbar Events Fire Differently When Using Dock Method
+
+   Q141479 BUG: Visual FoxPro Quits If You Click Ignore or Suspend/Resume
+
+   Q141503 BUG: Can't Connect to Excel Data Source in Remote View Wizard
+
+
+   
+   Q141528 BUG: Data Designer Validation Text Causes Invalid Page Fault
+
+   Q141557 BUG: Cursor's ReadOnly Property Carried to Other Data Sessions
+
+   Q141558 FIX: WindowType Changed at Run Time Can't Be Changed Back
+
+   Q141628 BUG: Pageframe.Addobject() to a New Page Disables Mouse
+
+   Q141631 BUG: Mouse Clicks Continually Stack Up in the Event Queue
+
+   Q141634 BUG: Setup Parse Error "Object ID 335" from Distributed Setup
+
+   Q141635 BUG: ToolTipText Message Blank If Longer Than 50 Characters
+
+   Q141639 BUG: Subclass Member Object Properties Cannot Be Changed
+
+   Q141737 BUG: Invalid Page Fault When Form Released in Error Event
+
+   Q141738 BUG: Report Form to ASCII Truncates Data After Page 11" Mark
+
+   Q141739 BUG: Sendmail.scx Hangs FoxPro If Mail Client Not Installed
+
+   Q141794 BUG: UNLOCK Command Commits Changes to Row-Buffered Records
+
+   Q141805 BUG: 'Unknown member' Error Loading Form
+
+   Q141806 BUG: Errors Previewing Customer Listing Report in Tastraders
+
+   Q141910 BUG: Validate Database Dialog Allows Choice of Invalid Table
+
+   Q141956 BUG: 'Z' Function on @ GET Doesn't Suppress Display of Zero
+
+   Q141957 BUG: Float Fields Show Asterisks in Wizard-Generated Screen
+
+   Q142194 BUG: Control Class in Control Not Shown in Control Array
+
+   Q142214 BUG: RELEASE Releases All Local Variables with Identical Names
+
+   Q142313 BUG: Using RI Builder & Long Table Names Makes Triggers Fail
+
+   Q142397 BUG: REPLACE with UDF May Cause "Record Is Not Locked" Error
+
+   Q142552 BUG: OLE Error Playing .WAV Object
+
+   Q143247 BUG: Scrolling Edit Window Causes Incorrect Highlighting
+
+   Q143248 BUG: Error: "Variable 'TITLE' is not found" as Start Tastrade
+
+   Q143287 BUG: Visual Class Library's Registration Lost
+
+   Q143296 BUG: NODEFAULT in Page's Deactivate Event Activates Wrong Tab
+
+   Q143306 BUG: COLOR on @...GET Push Button Does Not Work as Expected
+
+   Q143308 BUG: Textwidth Method Does Not Return Foxel Units
+
+   Q145607 BUG: Cannot Customize the Form Controls Toolbar
+
+   Q145846 BUG: SQLSetProp() Without Expression Does Not Restore Defaults
+
+   Q146223 BUG: Position Error: Outline Control on Classed Pageframe
+
+   Q146640 BUG: Controls Saved as Class from PageFrame Becomes Invisible
+
+   Q147277 BUG: Using an Array Element as the Counter in a For Loop Fails
+
+   Q147287 BUG: Dropdown Portion of Combo Box Left Behind When Form Moved
+
+   Q147306 BUG: Read Only Icon Keeps Visual FoxPro .EXE from Compiling
+
+   Q147571 BUG: MAPI: Calling ResolvName Method Results in GP Fault
+
+   Q147572 BUG: GRID: Scrollbars Disabled When ColumnCount Specified
+
+   Q147574 BUG: Reprint Group Header Problem with Two Data Groupings
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp300bBUG kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300b
+Version           : :3.0b
+Issue type        : kbinfo
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

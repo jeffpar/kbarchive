@@ -1,0 +1,75 @@
+DOCUMENT:Q132131  12-JUN-2001  [odbc]
+TITLE   :INF: ODBC Database Drivers 2.0 Supported Platforms
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft ODBC 16-bit Database Driver Pack version 2.0 is supported on two
+platforms:
+
+ - Windows versions 3.1 and 3.11 (including Windows For Workgroups 3.11)
+
+ - Windows NT versions 3.50 and 3.51
+
+Microsoft ODBC 32-bit Database Driver Pack version 2.0 is supported on two
+platforms:
+
+ - Windows NT versions 3.50 and 3.51
+
+ - Windows 95
+
+MORE INFORMATION
+================
+
+The Microsoft 16-bit Database Drivers include: Microsoft Access, Microsoft
+Excel, Paradox, Btrieve, dBase, FoxPro, and text drivers. The Microsoft 32- bit
+Database Drivers include: Microsoft Access, Microsoft Excel, Paradox, dBase,
+FoxPro, and text drivers.
+
+Information in the Release Notes and the ODBCJET.HLP file that ship with the
+Database Driver Pack 2.0 states that the 16-bit drivers are supported on Win32s;
+however, that information is incorrect. On Win32s, only the ODBC 2.10 core
+components (Driver manager and Thunking DLLs) are supported.
+
+The bug mentioned in Knowledge Base article number Q129772, "BUG:Attempt to load
+required component ODBC32.DLL failed," has been fixed in ODBC SDK 2.1b, which
+will be released with the Microsoft Developer Network (MSDN). You can contact
+third-party vendors to get 16-bit ODBC drivers tested on Win32s.
+
+
+
+
+Additional query words: 2.00.2317 Win32s Windows NT
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC200
+Version           : WINDOWS:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

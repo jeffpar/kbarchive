@@ -1,0 +1,96 @@
+DOCUMENT:Q114791  10-FEB-2000  [foxpro]
+TITLE   :PRB: SET COLOR TO Results in Differing Shades of Gray
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5b,2.5c,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The default desktop color is a different shade of gray than the default color
+pair displayed for scheme 1 in FoxPro for Macintosh.
+
+CAUSE
+=====
+
+This behavior occurs because the default color set is actually using an RGB
+value for the color information. The color pair listing returned by scheme(1)
+returns information in color pair letters, which are an approximation of the
+current RGB settings. The SET COLOR TO n/w* command uses a different set of RGB
+values to represent gray.
+
+RESOLUTION
+==========
+
+To restore the default desktop color programmatically, issue the following
+commands:
+
+      SET COLOR TO
+      CLEAR
+
+For more precise control over the colors, use RGB values instead of color pairs.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start FoxPro for Macintosh.
+
+2. Issue the following commands in the Command window:
+
+         SET COLOR TO
+         CLEAR
+         ?SCHEME(1)
+
+   Note that the desktop is a pale gray. The first color pair listed for scheme 1
+   is "N/W*".
+
+3. Issue the following commands in the Command window:
+
+         SET COLOR OF SCHEME 1 TO "n/w*"
+         CLEAR
+         ?SCHEME(1)
+
+Note that the desktop is now a darker shade of gray, although the color pair
+information returned by the second ?SCHEME(1) command is identical to the color
+pair information returned by the first command.
+
+REFERENCES
+==========
+
+For more information about color schemes and color pairs, see the SET COLOR
+commands in the "Language Reference."
+
+Additional query words: VFoxMac FoxMac colorset grey colour colourset
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro250bMac kbFoxPro250cMac kbVFP300bMac
+Version           : MACINTOSH:2.5b,2.5c,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

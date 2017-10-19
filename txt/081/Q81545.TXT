@@ -1,0 +1,76 @@
+DOCUMENT:Q81545  30-OCT-1999  [utilities]
+TITLE   :PWB Macros to Rebuild All, Build Target, Run, and Debug
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:1.0,1.1; OS/2:1.0,1.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Programmer's Workbench for MS-DOS, versions 1.0, 1.1 
+ - Microsoft Programmer's Workbench for OS/2, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Adding the lines shown below to your TOOLS.INI file will allow you to execute a
+Rebuild All, Build Target, Compile, Run Program, or Debug Program with macros in
+Programmers WorkBench (PWB) versions 1.0 and 1.1. These lines should be placed
+after the pwb tag [pwb] in the TOOLS.INI file.
+
+This information applies to PWB 2.0 as well, except that a program list does not
+need to be set for the macros to work.
+
+MORE INFORMATION
+================
+
+For the function keys to work as expected, a program list must first be set
+within PWB. For more information on PWB macros, consult the documentation and
+online help included with your version of the compiler or assembler. The
+"Microsoft Programmer's WorkBench" application note also contains additional
+information on PWB and is available from Microsoft Product Support. Query on
+SW0330 to learn more about this application note.
+
+Example
+-------
+
+   [pwb]
+   ;macro definitions
+           RebuildAll:=arg meta "all" compile
+           compile_file:= arg compile
+           build_project:=arg "all" compile
+           run_program:=arg "run" compile
+           debug_program:=arg "debug" compile
+
+   ;key assignments
+           RebuildAll:CTRL+R
+           compile_file:Ctrl+f5
+           build_project:Shift+F5
+           run_program:F5
+           debug_program:Alt+f5
+
+Additional query words: kbinf 1.00 1.10 2.00
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbPWBSearch kbZNotKeyword3 kbPWB100DOS kbPWB110DOS kbPWB100OS2 kbPWB110OS2
+Version           : MS-DOS:1.0,1.1; OS/2:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

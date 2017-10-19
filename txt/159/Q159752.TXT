@@ -1,0 +1,58 @@
+DOCUMENT:Q159752  10-DEC-2000  [exchange]
+TITLE   :XFOR: Korean Character Not Displayed Properly in Message
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0,5.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0 
+ - Microsoft Exchange Korean Client, versions 4.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you attach an object immediately after the Korean character "hae" in the
+Korean Microsoft Exchange client, and then send the message to a Microsoft Mail
+3.2 client, the Korean character is not displayed properly in the message.
+
+WORKAROUND
+==========
+
+To work around this problem, insert at least one space between the Korean
+character and the attachment before you send the message.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: dbcs kbkorea
+
+======================================================================
+Keywords          :  
+Technology        : kbHLangKorean kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword2 kbExchange500a
+Version           : :4.0,5.0,5.0a
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

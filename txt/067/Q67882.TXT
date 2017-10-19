@@ -1,0 +1,99 @@
+DOCUMENT:Q67882  22-JUL-2001  [visualc]
+TITLE   :DOC: Error C2213 Occurs When Base Is an Expression
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5,2.0,6.0,6.0a,6.0ax
+OPER/SYS:
+KEYWORDS:kbdocfix kbCompiler
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft C/C++ Compiler (CL.EXE), included with:
+    - Microsoft C for MS-DOS, versions 6.0, 6.0a, 6.0ax 
+    - Microsoft C/C++ for MS-DOS, version 7.0 
+    - Microsoft Visual C++, versions 1.0, 1.5 
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following keywords were first introduced with Microsoft C version 6.0:
+
+   _based
+   _segment
+
+Variables of type _segment are defined to hold a memory segment address.
+
+With based variables, a base must be named to specify where the data resides. The
+base can be of type _segment, or can be a near or a far pointer. However, if the
+base is an expression, even of one of the types listed above, the following
+error is produced:
+
+   error C2213: illegal argument to _based
+
+NOTE: In Microsoft Visual C++ 32-bit Edition, version 2.0, the _segment keyword
+was removed and the functionality of the __based keyword changed. In 32-bit
+compilations, pointers based on pointer addresses are the only forms of __based
+valid. In such compilations, these pointers are 32-bit displacements from a
+32-bit base. For more information, search for "based addressing" in the online
+documentation included with Visual C++ 32-bit Edition.
+
+MORE INFORMATION
+================
+
+Microsoft has confirmed that this is a restriction, although it is not
+documented as such.
+
+The following examples illustrate the restriction:
+
+This declaration is valid:
+
+      _segment myseg;
+      char _based( myseg ) *cptr;
+
+The following declaration
+
+      struct sample
+      {
+          _segment myseg;
+      }rec;
+      char _based( rec.myseg ) *cptr;
+
+produces the following error:
+
+   error C2213: 'rec': illegal argument to _based
+   error C2059: syntax error: '.'
+
+The following declaration
+
+      _segment array[10];
+      char _based( array[0] ) *cptr;
+
+produces the following error:
+
+   error C2059: syntax error: '['
+
+Additional query words: 6.00 6.00a 6.00ax 7.00 8.00 8.00c 9.00 1.00 1.50 2.00
+
+======================================================================
+Keywords          : kbdocfix kbCompiler 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :1.0,1.5,2.0,6.0,6.0a,6.0ax
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

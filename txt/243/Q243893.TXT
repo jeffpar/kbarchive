@@ -1,0 +1,68 @@
+DOCUMENT:Q243893  10-NOV-1999  [exchange]
+TITLE   :XFOR: Can't Log On to MAPI Running Notes Application Converter
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you start the Application Converter component (Mxdev.exe) of the Microsoft
+Exchange Application Converter for Lotus Notes, you get the following error
+message:
+
+   Could not logon to MAPI. Wrong password.
+
+CAUSE
+=====
+
+Microsoft Outlook is not installed on the system.
+
+RESOLUTION
+==========
+
+To resolve this problem, install Outlook on the system; it is a required
+component. Then run Mxdev.exe.
+
+MORE INFORMATION
+================
+
+For additional information about the system requirements of the Microsoft
+Exchange Application Converter for Lotus Notes, click the article number below
+to view the article in the Microsoft Knowledge Base:
+
+   Q243885 XFOR: Overview of the Microsoft Exchange Application Converter for
+   Lotus Notes
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

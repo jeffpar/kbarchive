@@ -1,0 +1,67 @@
+DOCUMENT:Q318060  30-APR-2002  [ssafe]
+TITLE   :DOC: List of Possible Errors When You Check Out a File from Visu
+PRODUCT :Microsoft SourceSafe
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe 6.0c 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Developer's Network (MSDN) contains a partial list of possible
+checkout errors. For more information about errors that you may receive during
+the checkout process, see the document at the following MSDN Web site:
+
+   Source Control Services - Checkout Error
+   http://msdn.microsoft.com/library/default.asp?url=/library/en-us/sccvs70/html/veerranerrororusercancellationoccurredduringcheckout.asp
+
+This document lists errors that are commonly experienced but it is not a complete
+list.
+
+MORE INFORMATION
+================
+
+You may receive other error messages during checkout that are not listed. The
+following is an example of an error that you may receive during the checkout
+process:
+
+   Unable to check out file <filename>. The Web server does not appear to
+   have any authentication methods enabled. It asked for user authentication,
+   but did not send a WWW-Authenticate header.
+
+To resolve this issue, follow the steps in the document at the following MSDN Web
+site:
+
+   To enable WWW-Authentication on your server
+   http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vbcon/html/vbtbswindowsauthenticationdoesnotrespondproperlywhencreatingwebapplication.asp
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600C
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

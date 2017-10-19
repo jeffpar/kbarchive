@@ -1,0 +1,55 @@
+DOCUMENT:Q262790  15-JUL-2000  [sms]
+TITLE   :SMS: Documentation Error Referencing .xnf Form Installation Fold
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0,2.0 SP1
+OPER/SYS:
+KEYWORDS:kbdocerr kbClient kbsms200 kbAdvertisement kbInventory kbSoftwareDist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The System Management Server Resource Guide, on page 398 under the "Distributing
+Form Files (.xnf)" topic, contains an error.
+
+MORE INFORMATION
+================
+
+To properly distribute .xnf forms, you must create a software distribution
+package for the forms and then use an advertisement to place the forms on the
+clients. You must include a command that installs the forms on the clients.
+
+The System Management Server Resource Guide incorrectly states that you must
+install the form to the %SystemRoot%\MS\SMS\Bin folder. However, the correct
+location in which to install the forms is the %SystemRoot%\MS\SMS\Core\Bin
+folder.
+
+Additional query words: prodsms XNF Distributing mif file files custom
+
+======================================================================
+Keywords          : kbdocerr kbClient kbsms200 kbAdvertisement kbInventory kbSoftwareDist 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1
+Version           : winnt:2.0,2.0 SP1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

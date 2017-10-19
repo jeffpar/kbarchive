@@ -1,0 +1,80 @@
+DOCUMENT:Q263702  06-AUG-2002  [exchange]
+TITLE   :XFOR: Service Pack Update Does Not Upgrade All Connectors
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5 SP3,5.5 SP4
+OPER/SYS:
+KEYWORDS:exc55sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5 SP3, 5.5 SP4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following connectors are not automatically updated when you upgrade to
+Exchange Server 5.5 Service Pack 3 (SP3) or Exchange Server 5.5 Service Pack 4
+(SP4):
+
+ - Microsoft Exchange Connector for Lotus Notes
+
+ - Microsoft Exchange Connector for Novell GroupWise
+
+ - Microsoft Exchange Connector for SNADS
+
+ - Microsoft Exchange Connector for IBM OfficeVision/VM
+
+MORE INFORMATION
+================
+
+To upgrade the connectors to Microsoft Exchange Server 5.5 SP3, go to the SP3
+compact disc, and then switch to the folder that contains the files for the
+connector that you wish to upgrade. The directories are as follows:
+
+ - Connector for Lotus Notes:
+   <Language>\Exchconn\Setup\<Platform>\Setup\Ntsconn
+
+ - Connector for Novell GroupWise:
+   <Language>\Exchconn\Setup\<Platform>\Setup\Gwconn
+
+ - Connector for SNADS:
+   <Language>\Exchconn\Setup\<Platform>\Setup\Snaconn
+
+ - Connector for OfficeVision/VM:
+   <Language>\Exchconn\Setup\<Platform>\Setup\Ovvconn
+
+where <Language> is the installed language for the server (for example, Eng
+is English), and where <Platform> is the processor platform (for example,
+I386 for Intel processors).
+Double-click the executable in the directory.
+
+For more information, see the Readme.rtf file that is located in the
+Exchsrvr\Connect\Exchconn folder of the SP3 compact disc after you install the
+connectors.
+
+Additional query words: update
+
+======================================================================
+Keywords          : exc55sp3 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3 kbExchange550SP4
+Version           : :5.5 SP3,5.5 SP4
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

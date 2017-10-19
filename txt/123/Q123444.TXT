@@ -1,0 +1,63 @@
+DOCUMENT:Q123444  17-DEC-2000  [win95x]
+TITLE   :UNC Connection Generates Error Message on Shutdown
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetwork win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you establish a universal naming convention (UNC) network connection with a
+Windows 95 machine and then the Windows 95 machine is shut down using the Start
+menu, you receive the following error message
+
+   There are <x> user(s) connected to your computer. Shutting down your
+   computer will disconnect them. Do you want to continue?
+
+where <x> indicates the number of users currently connected.
+
+CAUSE
+=====
+
+A client connected to a Windows 95 server needs to maintain the connection for a
+reasonable amount of time, allowing for user interaction. If the Windows 95
+machine is shut down during this time, the above error message is generated. It
+is generated even though there are no drives mapped directly to the Windows 95
+server.
+
+RESOLUTION
+==========
+
+To work around this issue, wait a short time before shutting down the Windows 95
+computer.
+
+Additional query words: err msg
+
+======================================================================
+Keywords          : kberrmsg kbnetwork win95 
+Technology        : kbWin95search kbZNotKeyword3
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

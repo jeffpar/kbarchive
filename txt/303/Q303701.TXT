@@ -1,0 +1,113 @@
+DOCUMENT:Q303701  15-FEB-2002  [iis]
+TITLE   :Configuring Incoming/Outgoing Connections for IIS SMTP Server
+PRODUCT :Internet Information Server
+PROD/VER::2000,5.0
+OPER/SYS:
+KEYWORDS:kbAudITPro kbHOWTOmaster
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft Windows 2000 Professional 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Advanced Server 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+ - SUMMARY
+
+    - Requirements
+ - Configure Incoming and Outgoing Connections for an IIS SMTP Server
+
+SUMMARY
+=======
+
+This step-by-step guide describes how to configure incoming and outgoing
+connections for an Internet Information Services (IIS) SMTP server.
+
+Requirements
+------------
+
+ - Windows 2000 Professional, Windows 2000 Server, or Windows 2000 Advanced
+   Server
+ - IIS 5.0 with SMTP services installed
+
+Configure Incoming and Outgoing Connections for an SMTP Server
+--------------------------------------------------------------
+
+1. Click Start, point to Programs, point to Administrative Tools, and then click
+   Internet Services Manager.
+
+2. In the Internet Information Services console tree (left pane), click the
+   server that contains the SMTP virtual server that you want to configure, and
+   then expand the server node by clicking the plus sign (+) next to the server
+   name.
+
+3. Right-click the SMTP virtual server that you want to configure, and then
+   click Properties.
+
+4. On the General tab, click Connection to open the Connections dialog box.
+
+5. In the SMTP Virtual Server property sheet, under Incoming, click the Limit
+   Connections to: check box to enable this setting (the default is no limit),
+   and then set the following options:
+
+    - In the Limit connections to: text box, type the maximum number of incoming
+      connections allowed by the SMTP server. The default is 1,000 connections.
+      The minimum is 1.
+
+    - In the Time-out: text box, type the maximum number of minutes that an
+      incoming connection can remain inactive before the server closes the
+      connection.
+
+6. In the SMTP Virtual Server property sheet, under Outgoing, click the Limit
+   connections to: check box to enable this setting (the default is no limit),
+   and then set the following options:
+
+    - In the Limit connections to: text box, type the maximum number of outbound
+      connections allowed to all remote domains. The default setting is 1,000
+      connections and the minimum is 1.
+
+    - In the Time-out: text box, type the maximum number of minutes that an
+      outgoing connection can remain inactive before the server closes the
+      connection.
+
+7. In the SMTP Virtual Server property sheet, under Outgoing, select Limit
+   connections per domain to: to enable this setting (the default is no limit).
+   In the text box provided, type the number of concurrent outgoing connections
+   that each domain is allowed to have.
+
+8. In the TCP Port: text box, type the port to be used by the SMTP server for
+   outgoing connections.
+
+You have now configured the incoming and outgoing connections for your SMTP
+server.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAudITPro kbHOWTOmaster 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbiisSearch kbiis500 kbWinAdvServSearch
+Version           : :2000,5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,104 @@
+DOCUMENT:Q168008  17-JUL-2001  [visualc]
+TITLE   :FIX: C2166 Incorrect Type Deduction for Template Parameter
+PRODUCT :Microsoft C Compiler
+PROD/VER:5.0
+OPER/SYS:
+KEYWORDS:kbcode kberrmsg kbtool kbCompiler kbCPPonly kbLangCPP kbVC kbVC500bug kbVS97sp1fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The compiler deduces incorrect type for a template parameter T, associated with
+a template function that takes a const reference of type T, causing the compiler
+error C2166 as follows:
+
+   l-value specifies const object
+
+RESOLUTION
+==========
+
+Do not use a literal when calling the template function. Instead, declare a
+variable, and pass the variable as an argument to the template function.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual Studio 97
+Service Pack 1.
+
+For additional information about the Visual Studio 97 Service Pack 1, please see
+the following article in the Microsoft Knowledge Base:
+
+   Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+MORE INFORMATION
+================
+
+The following sample demonstrates the problem and a workaround.
+
+Sample Code
+-----------
+
+      /*
+      * Compiler Options: None
+      */ 
+
+      #define BUG
+      //Workaround: comment the line above
+      //Uncomment the following line
+      //#define WORKAROUND
+
+      template<class T> void Test(const T& x)
+      {
+         T y = x;
+         if(y < 0)
+            y = -y;
+      }
+
+      int main()
+      {
+      #ifdef BUG
+         Test(3) ;
+      #endif
+
+      #ifdef WORKAROUND
+         int n = 3 ;
+         Test(n) ;
+      #endif
+
+         return 0 ;
+      }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kberrmsg kbtool kbCompiler kbCPPonly kbLangCPP kbVC kbVC500bug kbVS97sp1fix 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

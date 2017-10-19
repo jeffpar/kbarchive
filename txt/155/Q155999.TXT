@@ -1,0 +1,66 @@
+DOCUMENT:Q155999  08-NOV-2001  [homegame]
+TITLE   :Deadly Tide: An Overview of Playing the Game
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+1.0
+WINDOWS
+kbusage kbref kbreadme kbfaq kbfasttip
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Deadly Tide for Windows 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is an overview of the Deadly Tide game. This information is from
+the Deadly Tide Readme.txt file.
+
+MORE INFORMATION
+================
+
+Your objective is to save Earth from the alien threat. To ensure success:
+
+ - Shoot everything that shoots at you or that has a yellow bracket around it.
+
+ - Keep an eye on your HUD, and closely monitor your weapon temperature gauge
+   and shield integrity indicator. The first instrument determines when you're
+   about to lose your weapon power. The second indicates when you're about to
+   die.
+
+ - There are two modes of play. In flight mode, Navigational Control handles
+   your steering. In rotate mode, your forward movement stops and you can rotate
+   as if in a sphere. Both modes are signaled by the rotate/flight indicator on
+   your HUD. Use your joystick to aim and fire!
+
+ - And never forget: The EOA is counting on you!
+
+Additional query words: 1.00 deadly tide objective game play readme
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword kbDeadlyTide
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

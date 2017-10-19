@@ -1,0 +1,61 @@
+DOCUMENT:Q169898  23-DEC-1999  [exchange]
+TITLE   :XGEN: Error Running Rpings*.exe Utilities on WinNT Server 4.0
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to run Rpings.exe, Rpings_a.exe, or Rpings_m.exe on Microsoft
+Windows NT Server version 4.0, you may receive the following error message:
+
+   Could not find Rpcdce4.dll
+
+CAUSE
+=====
+
+The Rpcdce4.dll file must be located in the \System32 subdirectory, however the
+Windows NT Server version 3.51 setup does not install the file by default. The
+file is not included on the Microsoft Windows NT Server version 4.0 compact
+disc.
+
+WORKAROUND
+==========
+
+Locate the file on the Windows NT Server version 3.51 compact disc. Copy and
+expand it to the \System32 subdirectory on the local hard disk. You can also
+copy it from another computer that is running Windows NT Server 3.51.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+Hardware          : ALPHA MIPS x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

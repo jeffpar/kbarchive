@@ -1,0 +1,66 @@
+DOCUMENT:Q218858  13-FEB-2001  [win95x]
+TITLE   :USB Device Listed Under the Other Devices Section in Device Mgr
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2.1,2.5
+OPER/SYS:
+KEYWORDS:kbenv kbtool kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, versions 2.1, 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Device Manager, in the Other Devices category, you may see a Universal Serial
+Bus (USB) device with a question mark icon, and the USB devices that are
+attached to the computer may not work properly.
+
+CAUSE
+=====
+
+This behavior can occur if the USB supplement for Windows 95 Service Release
+(OSR) 2.1 or 2.5 is not installed, or is not installed correctly.
+
+RESOLUTION
+==========
+
+To resolve this behavior, install the USB supplement:
+
+1. Remove the Universal Serial Bus device from the Other Devices category in
+   Device Manager. To remove the device, click it, and then click Remove.
+
+2. Close Device Manager, and then quit all running programs.
+
+3. Install Usbsupp.exe from the the Other\Usb folder on the Windows 95 OSR 2.1
+   or 2.5 CD-ROM.
+
+4. After restarting the computer, verify that the Universal Serial Bus
+   Controller category appears correctly in Device Manager.
+
+Additional query words: kbtshoot osr2 Usbsupp exe
+
+======================================================================
+Keywords          : kbenv kbtool kbHardware 
+Technology        : kbWin95search kbOPKSearch kbWin95OPKOSR25 kbWin95OPKOSR210
+Version           : :2.1,2.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

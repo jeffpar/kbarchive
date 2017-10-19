@@ -1,0 +1,57 @@
+DOCUMENT:Q69378  09-NOV-1999  [win95x]
+TITLE   :Swapfile and COMPAQ 650 MB Drives
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Windows 3.0 SWAPFILE utility cannot be used to create a permanent swapfile
+on drives larger than 509.5 MB under COMPAQ DOS 3.31. SWAPFILE cannot recognize
+such drives. To create a swapfile on this type of system, limit the size of
+logical drives to no more than 509.5 MB.
+
+This problem usually occurs with COMPAQ Type 49, 650 MB drives.
+
+MORE INFORMATION
+================
+
+COMPAQ DOS 3.31 used a proprietary greater-than-32-MB partitioning scheme that
+allowed logical drives larger than 512 MB in size. This problem does not occur
+with DOS versions 4.01 or later, which limit logical drive size to 512 MB.
+
+The product included here is manufactured by a vendor independent of Microsoft;
+we make no warranty, implied or otherwise, regarding the product's performance
+or reliability.
+
+Additional query words: 3.00 win30 3rdparty KBHW
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

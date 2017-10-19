@@ -1,0 +1,87 @@
+DOCUMENT:Q190117  11-DEC-1999  [foxpro]
+TITLE   :PRB: PACK May Cause the File Name to Change Case
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The file name of a FoxPro table changes case after a PACK command has been
+issued to the file name case that is specified in the USE statement.
+
+If the Windows Explorer file name was "test.dbf" (lower case, without the
+quotation marks) prior to opening the table and "USE Test.dbf" was issued to
+open the table, the Windows Explorer file name will be "Test.dbf" after a PACK
+is issued.
+
+RESOLUTION
+==========
+
+Use the desired file name case when issuing a USE statement.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+With Explorer open to the directory where the .dbf file will be created, run the
+following code:
+
+         CLOSE DATA ALL
+         ERASE test.DBF
+         CLEAR
+         CREATE TABLE TeSt (c c(10)) &&The file name will be "TeSt"
+         FOR i = 1 TO 10
+            INSERT INTO test VALUES("test"+PADL(ALLTRIM(STR(i)),3,"0"))
+         ENDFOR
+         WAIT WINDOW "Please wait" TIME 10
+         USE test && Opening the table with a different case filename.
+         DELETE FOR RECNO()>7
+         PACK && After the PACK, the filename will be the same as in the
+              && USE command.
+         USE
+         ERASE test.DBF
+
+NOTE: The file name case changes to that used in the USE statement.
+
+Additional query words: kbDSupport kbDSE kbVFp600 kbDatabase kbXBase
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

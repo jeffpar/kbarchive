@@ -1,0 +1,228 @@
+DOCUMENT:Q194578  27-JAN-2001  [vbwin]
+TITLE   :SAMPLE: MULTIMON.EXE Uses Multiple Monitors in Visual Basic
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbfile kbsample kbMultiMon kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0, used with:
+    - the operating system: Microsoft Windows 98 
+    - the operating system: Microsoft Windows Millennium Edition 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0, used with:
+    - the operating system: Microsoft Windows 98 
+    - the operating system: Microsoft Windows Millennium Edition 
+ - Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0, used with:
+    - the operating system: Microsoft Windows 98 
+    - the operating system: Microsoft Windows Millennium Edition 
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0, used with:
+    - the operating system: Microsoft Windows 98 
+    - the operating system: Microsoft Windows Millennium Edition 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0, used with:
+    - the operating system: Microsoft Windows 98 
+    - the operating system: Microsoft Windows Millennium Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Multimon.exe is a sample project that shows how to detect and handle multiple
+monitors on Windows 98 and Windows Me.
+
+The sample project includes a reusable class that makes adding multiple monitor
+support to applications easier.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+   Multimon.exe
+   (http://download.microsoft.com/download/vb60ent/Sample/1/W9XNT4/EN-US/Multimon.exe)
+
+Release Date: OCT-21-1998
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+   FileName               Size
+   ---------------------------------------------------------
+   Monitors.vbp                373
+   Sample.frm               14,231
+   Sample.frx                2,204
+   Monitor.frm               8,027
+   Monitor.frx               1,090
+   Monitor.cls               3,271
+   Monitors.cls             12,805
+
+Windows 98 and Windows Me have a new feature that allows up to nine monitors to
+be used at the same time. The use of multiple video cards and multiple monitors
+creates a virtual desktop that increases the display area for the user.
+
+Applications can be displayed on any monitor, dragged seamlessly from one monitor
+to another, or span the virtual desktop so the application can be seen on more
+than one monitor. Each monitor can be set at any resolution or color depth
+independent of other monitors. There is also the ability to use the additional
+monitors to display the same information as the primary monitor.
+
+The Virtual Desktop
+-------------------
+
+The desktop of a single monitor system is only the size of the monitor's
+resolution. The virtual desktop that is created when multiple monitors are
+utilized is somewhat different. The primary monitor will always have compatible
+coordinates of 0,0 for the upper-left, and the x and y resolution of the display
+for the lower-right corner. This provides backward compatibility for legacy
+applications. Other monitors connected to the system will have coordinates
+relative to the primary monitor and the monitor's screen size.
+
+For example, if the primary monitor is set to 1024x768, it will have coordinates
+of 0,0 to 1024,768. The second monitor is attached and set to 640x480 and the
+settings specify that this second monitor is to the right of the primary monitor
+and that the tops aligned. The second monitor's coordinates would be 1025,0 for
+the upper-left corner and 1664,480 for the lower-right corner.
+
+If the second monitor was specified as being to the left or above the primary
+monitor, the coordinates would include negative values.
+
+Uses of Multiple Monitors
+-------------------------
+
+Like the primary monitor, the use of the display area is limited only by the
+imagination of the programmer. However, several new uses of the addition screen
+real estate might include using the second monitor for a preview window, a
+debugging window, or displaying Help.
+
+Multiple Monitors and the Programmer
+------------------------------------
+
+In previous systems, negative screen coordinates were often assumed to be off the
+screen. On a multiple monitor system, the negative screen coordinates might be
+right in the middle of another visible screen (monitor). Other things that are
+impacted with multiple monitors are the centering of forms, the size of forms,
+color depth of the screen(s) and the saving of form locations.
+
+The programmer can no longer reliably use the following code to center a form:
+
+      Me.Move (Screen.Width - Width) \ 2, (Screen.Height - Height) \ 2
+
+The form will still be centered, but on the primary monitor, which may not
+necessarily be the same monitor that the application is running on. If the user
+does not see the form on the primary monitor and the form is modal, the
+application may appear to be non-responsive.
+
+Programmers may also have code that limits a form resize to the size of the
+screen. Such code would make it impossible for a user to size the form so that
+it spanned multiple monitors. (This is really handy when displaying spreadsheet
+data.)
+
+Programmers may have code that determines the color depth of the screen and
+display a splash screen with a bitmap of that color depth. The problem here is
+that the primary display may have 256 colors, but the second display may only
+have 16.
+
+Another example is when the programmer saves the form position for the next
+application session. After this is done, the user might disable multiple
+monitors. The next time the application is run it might display entirely off the
+screen, resulting in an "invisible" application.
+
+The New APIs
+------------
+
+There are new APIs for handling multiple monitors in Windows 98. The APIs used in
+the monitors class sample are GetMonitorInfo, MonitorFromWindow and
+MonitorFromRect.
+
+The GetSystemMetrics API has some new constants (see below) that can be used to
+determine the metrics of a multiple monitor system. The GetSystemMetrics API
+returns information about the Windows environment. This API can be used to
+determine how many monitors are on the system, whether they are set at the same
+display format, and the size of the virtual desktop.
+
+      'Virtual Desktop sizes
+      Const SM_XVIRTUALSCREEN = 76    'Virtual Left
+      Const SM_YVIRTUALSCREEN = 77    'Virtual Top
+      Const SM_CXVIRTUALSCREEN = 78   'Virtual Width
+      Const SM_CYVIRTUALSCREEN = 79   'Virtual Height
+
+      Const SM_CMONITORS = 80         'Get number of monitors
+      Const SM_SAMEDISPLAYFORMAT = 81
+
+Known Issues
+------------
+
+In Visual Basic 5.0:
+
+ - Pop-up menus and ToolTips appear on the primary monitor.
+
+ - IDE dialogs always appear on the primary monitor.
+
+ - IDE parameter Info and Statement Completion pop-ups always display on primary
+   monitor.
+
+The Multimon.exe Sample
+-----------------------
+
+The multimon.exe sample project shows how to use the clsMonitors class. The
+sample class includes the following items:
+
+Collections:
+
+   Monitors
+
+Properties:
+
+   DeskTopLeft
+   DeskTopTop
+   DeskTopWidth
+   DeskTopHeight
+
+Methods:
+
+   GetMonitorFromWindow
+   CenterFormOnMonitor
+   GetMonitorFromXYPoint
+   Refresh
+   ShowMonitorDialog
+
+The code provided in the sample project is extensively commented. Following these
+comments through the code should give the programmer a full understanding of how
+the class works.
+
+NOTE: The sample is saved as a Visual Basic 4.0 project. If the project is opened
+in Visual Basic 5.0 or 6.0, you will be prompted to save it in an updated
+format.
+
+Additional query words: kbDSupport kbdss kbVBp kbCodeSam kbSample kbVBp400 kbVBp500 kbVBp600
+
+======================================================================
+Keywords          : kbfile kbsample kbMultiMon kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search
+Version           : :4.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

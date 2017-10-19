@@ -1,0 +1,57 @@
+DOCUMENT:Q117801  07-NOV-1999  [macmail]
+TITLE   :Mac Srv Wkst: Client and Server Must Both Be Same Language
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:2.0,3.0,3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, versions 2.0, 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+All versions of Microsoft Mail for AppleTalk Networks require that both the
+server and client are the same language. Microsoft Mail for AppleTalk Networks
+is available in English, French, German, Kanji, and Swedish versions. Two error
+messages will appear when attempting to communicate with a server in a different
+language.
+
+1. An error message in the client language stating that the client can not
+   connect to the server.
+
+2. An error message in the server language stating that the server can not
+   communicate with the client.
+
+The error message states the following in English:
+
+   The "MS Mail" file and the Mail Server are in different languages. Please see
+   your Network Manager.
+
+
+Additional query words: 2.00 3.00 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN310 kbMailATN200
+Version           : WINDOWS:2.0,3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

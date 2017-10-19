@@ -1,0 +1,57 @@
+DOCUMENT:Q122308  22-JUL-2001  [visualc]
+TITLE   :BUG: Some RC Warnings and Errors Go to stderr, Not stdout
+PRODUCT :Microsoft C Compiler
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 2.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 2.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Certain warnings and error messages issued by the resource compiler are sent to
+stderr instead of stdout.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+This behavior can cause problems only if you are redirecting output to a file.
+The messages that are sent to stderr will not be put into the file.
+
+Additional query words: 2.00 3.50 buglist2.00
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbVC200 kbVC32bitSearch
+Version           : :2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

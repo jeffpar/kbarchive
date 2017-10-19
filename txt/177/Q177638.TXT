@@ -1,0 +1,63 @@
+DOCUMENT:Q177638  11-JAN-2001  [vbwin]
+TITLE   :BUG: Upgrading Exchange to 5.5 Causes Reference Problems in VB
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbVBp400 kbGrpDSVBDB kb32bitOnly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When upgrading Microsoft Exchange Server from 4.0 or 5.0 to 5.5, you may need to
+re-register some DLLs in the Visual Basic references menu.
+
+CAUSE
+=====
+
+When Visual Basic is installed on an Exchange Server computer, and the Exchange
+version is upgraded to 5.5, some DLLs become unregistered due to version changes
+and will require re-registering in Visual Basic.
+
+RESOLUTION
+==========
+
+There is no workaround.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem. We are researching this and will
+post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp400 kbGrpDSVBDB kb32bitOnly 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400
+Version           : WINDOWS:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

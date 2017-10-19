@@ -1,0 +1,77 @@
+DOCUMENT:Q156758  12-FEB-1999  [crossnet]
+TITLE   :BUG: Perfmon Terminates While Monitoring SQL Procedure Cache
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SQL Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you shut down SQL Server while you are monitoring any SQL Server - Procedure
+Cache counter in Performance Monitor (Perfmon.exe), Perfmon.exe and Winlogon.exe
+close with a Divide By Zero Exception error. If you run Perfmon.exe on the
+Windows NT console, an Unhandled Exception error in SQLCTR60.DLL appears in
+Perfmon.exe.
+
+If you monitor the counter in Perfmon.exe from a client computer, the Exception
+error occurs in Winlogon.exe and a STOP: 0xc000021a (Fatal System Error) screen
+appears.
+
+In addition, the following Application event appears in Event Viewer:
+
+   Event ID: 8
+   Source:  SQLCTR60.DLL
+   Description: DB-LIBRARY error: Attempt to bind to a non-existent column.
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+ - Do not monitor SQL Server - Procedure Cache counters when you shut down SQL
+   Server.
+
+   -or-
+
+ - Use "On Demand Mode" for SQL Server Perfmon Integration. For more
+   information, see the "Integration with Windows NT Performance Monitor"
+   section in the SQL Server Administrator's Companion guide.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SQL Server version
+6.5. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbSQLServSearch kbAudDeveloper
+Version           : winnt:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

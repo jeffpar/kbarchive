@@ -1,0 +1,79 @@
+DOCUMENT:Q143225  13-MAY-2002  [frontpg]
+TITLE   :FP: HTTP Code 501 Error Opening, Creating Web
+PRODUCT :Word Front Page
+PROD/VER::1.0,1.1
+OPER/SYS:
+KEYWORDS:kberrmsg kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for Windows, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 2000 version of this article, see Q205700.
+
+For a Microsoft FrontPage 98 version of this article, see Q194061.
+
+SYMPTOMS
+========
+
+When you try to open or create a Web you get an "HTTP error 501" error message.
+
+CAUSE
+=====
+
+FrontPage cannot properly communicate with the server extensions.
+
+RESOLUTION
+==========
+
+To resolve this error, follow these steps:
+
+1. Verify that you can browse to the server using your Web browser.
+
+2. Run the Server Administrator to verify that the server extensions are
+   installed. If they are not installed, install the server extensions.
+
+3. Check the Error.log file for out-of-memory errors and verify the amount of
+   physical and virtual memory available. Make sure that you are using at least
+   a 20 (mebabyte) MB permanent swap file. You should have at least 16 MB of
+   random access memory (RAM).
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q169529 FP97: How to Install FrontPage Server Extensions for IIS 3.0
+
+   Q167931 How to Install FrontPage Server Extensions for MSPWS
+
+   Q161845 FP97: How to Upgrade the FrontPage Server Extensions
+
+   Q156842 How to Install FrontPage Server Extensions for IIS
+
+Additional query words: front page server vermeer 501 browsing browses error code
+
+======================================================================
+Keywords          : kberrmsg kbusage kbdta 
+Technology        : kbFrontPageSearch kbFrontPage1xSearch kbFrontPage97Search kbZNotKeyword3 kbFrontPage100 kbFrontPage110
+Version           : :1.0,1.1
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,60 @@
+DOCUMENT:Q112270  12-NOV-1999  [pcmail]
+TITLE   :PC MAPI: Err Msg: Cannot Open Help File
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0b,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Choose Send from the File menu of version 2.0c of Microsoft Word for Windows.
+Choose Help from the Send Note dialog box and then choose Contents. The
+following error message appears:
+
+   Cannot Open Help File
+
+CAUSE
+=====
+
+The MAPIHELP= parameter in the MSMAIL.INI file points to the location of the
+Simple MAPI help file, MSMAIL.HLP. This parameter is created by Mail. If you run
+Word prior to running Mail, the parameter is not created and the location of
+MSMAIL.HLP remains unknown.
+
+RESOLUTION
+==========
+
+Add the MAPIHELP= line with the full path of MSMAIL.HLP to the MSMAIL.INI file
+in the [Microsoft Mail] section.
+
+
+Additional query words: 3.00 3.00b 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320 kbMail300b
+Version           : WINDOWS:3.0,3.0b,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,87 @@
+DOCUMENT:Q250191  06-AUG-2002  [winnt]
+TITLE   :Cannot Access InetKit Library Using BackOffice with Windows 2000
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:2000; winnt:4.5
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 2000 Server 
+ - Microsoft BackOffice Server 4.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You can install BackOffice Server 4.5 on Windows 2000 Server using the
+BackOffice Server 4.5 Readiness Kit for Windows 2000 Server. After you install
+BackOffice Server 4.5 using Intranet Collaboration Scenario, you may experience
+problems gaining access to resources on the local intranet site.
+
+After you go to the http://<servername>/inetkit site and you click Library
+on the toolbar, you are prompted to type your logon credentials. After you type
+your user name and password, the same dialog box may appear again and you are
+unable to proceed. After you type your credentials three times, the following
+error message is displayed:
+
+   You are not authorized to view this page
+
+   You do not have permission to view this directory or page using the
+   credentials you supplied.
+
+CAUSE
+=====
+
+This behavior occurs because the selected user does not have Log on Locally
+permissions within the domain.
+
+RESOLUTION
+==========
+
+To resolve this problem, give the user Log on Locally permissions for the
+domain:
+
+1. Click Start, point to Programs, point to Administrative Tools, and then click
+   Domain Controller Security Policy.
+
+2. Expand Security Settings, expand Local Policies, and then click User Rights
+   Assignment.
+
+3. In the right window pane, double-click "Log on Locally".
+
+4. Add the appropriate user. Make sure the user logs off and logs back on before
+   attempting to gain access to the intranet site again.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem when running Microsoft BackOffice
+Server 4.5 on Microsoft Windows 2000 Server.
+
+
+Additional query words: navigate navigation
+
+======================================================================
+Keywords          : kberrmsg kbtool 
+Technology        : kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbAudDeveloper kbBackOfficeSearch kbBackOfficeServ450
+Version           : WINDOWS:2000; winnt:4.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

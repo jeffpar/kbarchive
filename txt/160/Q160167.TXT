@@ -1,0 +1,75 @@
+DOCUMENT:Q160167  08-NOV-2001  [homegame]
+TITLE   :NBA Full Court: Incorrect 256 Color Error Message During Setup
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbdisplay
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NBA Full Court Press for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During the Setup procedure of NBA Full Court Press, the following error will
+occur if a 16-color palette is used:
+
+   Setup has detected that your computer does not support 256 colors, which is
+   required to run Soccer.
+
+The phrase "NBA Full Court Press" should have been used in place of the word
+"Soccer"
+
+CAUSE
+=====
+
+The computer must display 256 colors to install and run NBA Full Court Press.
+
+RESOLUTION
+==========
+
+To display 256 colors in Windows:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click the Display icon.
+
+3. Click the Settings tab.
+
+4. In the Color Palette or Colors box, click 256 Color.
+
+   NOTE: If the computer doesn't have the necessary 256 color driver, or if the
+   user isn't sure that the video card supports 256 colors, contact the video
+   card manufacturer.
+
+5. Click OK.
+
+6. Restart Windows.
+
+Additional query words: 1.00 setup 16 color
+
+======================================================================
+Keywords          : kbdisplay 
+Technology        : kbGamesSearch kbZNotKeyword kbNBAFullCourtPress
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

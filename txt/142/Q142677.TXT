@@ -1,0 +1,61 @@
+DOCUMENT:Q142677  08-AUG-2001  [winnt]
+TITLE   :Base Priority of the CMD Process
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbother
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Under Windows NT 4.0 Workstation or Server, the base priority of the command
+(CMD) process and of the thread that runs in it is set to 8 by default.
+
+MORE INFORMATION
+================
+
+Under Windows NT 3.x, the base priority of the CMD process and the thread that
+runs in it used to be set to 7; the system could boost the thread from priority
+7 to priority 9.
+
+As previously stated, under Windows NT 4.0 the base priority of the CMD process
+and the thread that runs it is now set to 8 by default. The system can still
+boost the thread priority by 2 points, but now the increase is from priority 8
+to priority 10.
+
+To check this change, simply start a CMD process and start Performance Monitor.
+Check the chart with Object: Process and Counter: Priority Base for the
+Instance: CMD.
+
+You can also check the chart with Object: Thread and Counter: Priority Base vs.
+Counter: Priority Current for the Instance: CMD.
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kbother 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

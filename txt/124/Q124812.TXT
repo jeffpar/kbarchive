@@ -1,0 +1,133 @@
+DOCUMENT:Q124812  08-NOV-2001  [homekids]
+TITLE   :Kids: Hangs with Ensoniq Sound Card
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbtlckbfaq
+
+======================================================================
+1.00
+WINDOWS
+kbmm kbenv kbhw kbprb kberrmsg kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bob, version 1.0 
+ - Microsoft Explorapedia series: World of Nature for Windows, version 1.0 
+ - Microsoft Explorapedia series: World of People for Windows, version 1.0 
+ - Scholastic's Magic School Bus series: Explores Inside the Earth for Windows, version 1.0 
+ - Scholastic's Magic School Bus series: Explores the Human Body for Windows, version 1.0 
+ - Scholastic's Magic School Bus series: Explores the Solar System for Windows, version 1.0 
+ - Scholastic's Magic School Bus series: Explores the Ocean for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are using the Ensoniq sound card when running the programs listed at the
+top of this article, the system may stop responding (hang), or return you to
+Windows (or back to MS-DOS) after the Microsoft Home logo and the program's
+splash screen appears. In MSB Ocean, it hangs on Ms. Frizzle waving.
+
+In Explorapedia, you may also receive an error message similar to the following:
+
+   Explorapedia error 800xxxxxx-x (or 48xxx-xx)
+
+   An error occurred while starting Explorapedia. Restart Windows and try again.
+   If that fails to correct the problem, run Setup from the Explorapedia CD-ROM
+   again.
+
+NOTE: All Explorapedia error messages that begin with Explorapedia Error
+800xxxxxx-x (or 480xx-xx) refer to sound problems.
+
+CAUSE
+=====
+
+This behavior occurs when the Ensoniq sound card is not configured correctly for
+both primary and secondary wave playback.
+
+RESOLUTION
+==========
+
+Use these steps to configure the Ensoniq sound card correctly to run the
+programs listed at the top of this article in Windows 3.x:
+
+1. Determine the type of CD-ROM drive (for example, NEC).
+
+2. Open the Main program group, run Control Panel, and double-click the Drivers
+   icon.
+
+3. Select the Soundscape DVD/MIDI/WAV/AUX driver.
+
+4. Press the Setup button, and configure the setup as follows:
+
+                                     CD-ROM Manufacturer
+                                  ------------------------
+                                  NEC     Mitsumi     Sony
+      DMA                          0        1           1
+      Wave Playback A              3        3           3
+      Wave Playback B              1      5 or 0        0
+      Wave 16 Bit                  5     NO CHANGE  NO CHANGE
+
+   NOTE: The Reveal Multimedia Kits that include the Sound FX 32 cards should be
+   configured using the Sony settings.
+
+5. Choose OK, and then Close.
+
+6. Close Control Panel and exit Windows.
+
+7. Restart the computer.
+
+After following these steps, you should be able to run the programs listed at the
+top if this article successfully.
+
+NOTE: Some devices, such as a SCSI adapter card, may already be using DMA
+channels 0 or 3. In that case, a different DMA channel should be selected for
+the sound card.
+
+
+If the steps above do not correct the problem, obtain and install the updated
+drivers for the Ensoniq sound card. For information about how to obtain the
+Ensoniq sound card drivers, see the "Resolution" section in the following
+article in the Microsoft Knowledge Base:
+
+   Q146602 MSB Ocean: Program Stops Responding with Ensoniq Soundscape
+
+NOTE: This problem can also occur if you are using earlier Ensoniq SoundScape
+sound tools on your system.
+
+MORE INFORMATION
+================
+
+
+The Ensoniq sound card, commonly installed in Gateway 2000 computers, may not be
+configured properly for multimedia output when shipped.
+
+Although this article only specifies NEC, Mitsumi, and Sony CD-ROM drives, others
+may be affected.
+
+
+Additional query words: gateway ensoniq sounds msbhb msbss kids frizzle liz tad tadpole ensonic soundboard chipset nature occured 80048000-0 ocean hangs hanging hanged crashed crashes freeze frozen locked locked-up hang bombed down 480 8004130F-0 NEC CD-ROM 2000 winmsbhuman msbhuman winmsbsolar
+
+======================================================================
+Keywords          : kbtlc kbfaq
+Technology        : kbHomeProdSearch kbHomeMMsearch kbZNotKeyword kbZNotKeyword2 kbKidsSearch kbBOBSearch kbBOB100 kbExplorapediaNature100 kbExplorapediaPeople100 kbScholasticHuman kbScholasticOcean kbScholasticSolar kbScholasticEarth kbMSBSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,70 @@
+DOCUMENT:Q155981  08-AUG-2001  [winnt]
+TITLE   :Time Updated for Daylight Savings More Than Once
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During a time change to or from Daylight Savings Time, the time on your computer
+may be updated more than once.
+
+CAUSE
+=====
+
+Multiple settings that adjust for time changes are enabled on your computer.
+
+RESOLUTION
+==========
+
+Enable one of the operating systems installed on your computer, or your
+computer's CMOS, to adjust for Daylight Savings Time, and disable all other such
+settings.
+
+For example, if your computer's CMOS has such a setting, enable the setting in
+the CMOS, and then disable the setting in Windows NT and any other operating
+system installed on your computer.
+
+MORE INFORMATION
+================
+
+You can configure Windows NT version 4.0 to automatically adjust the time on
+your computer when Daylight Saving Time begins and ends. Many computers also
+allow for this automatic adjustment in the CMOS settings. Other operating
+systems, including Microsoft Windows 95, include this functionality as well. If
+more than one operating system is set to adjust for Daylight Savings Time, or
+your computer's CMOS is set to adjust for Daylight Savings Time, the time may be
+changed more than once. This causes the time to become incorrect.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

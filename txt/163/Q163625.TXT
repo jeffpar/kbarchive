@@ -1,0 +1,83 @@
+DOCUMENT:Q163625  19-DEC-1999  [exchange]
+TITLE   :XFOR: How to Completely Remove a Requestor
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Sometimes customers need to remove a Requestor or a Remote Requestor object
+either to troubleshoot or to make a change in their organization configuration.
+
+MORE INFORMATION
+================
+
+Note that deleting the requestor or remote requestor object will not remove the
+hidden custom recipient address. This address will be in the Recipients
+container and will be in the form of <network>\<postoffice>\$SYSTEM,
+where <network> and <postoffice> correspond to the connected
+postoffice on Microsoft Mail.
+
+When you remove a Requestor or Remote Requestor object, this address should be
+deleted, and then replication allowed to occur to propagate this change before
+another Requestor or Remote Requestor is created. This will prevent duplicate
+addresses from being inadvertently created.
+
+To remove the hidden recipient, use the following steps:
+
+1. In Exchange Administrator, open the Recipients container.
+
+2. From the View menu, choose Hidden Recipients. This should allow you to see
+   all hidden recipients in the container.
+
+3. Delete the hidden recipient for the $SYSTEM account on the connected
+   Network/Postoffice.
+
+When MS Mail sends a dirsync (directory synchronization) message to Exchange, it
+sends it from $SYSTEM to the dirsync address of the Exchange local postoffice.
+If there are duplicates of the $SYSTEM address, the directory service will not
+process the message. In addition, non-delivery reports (NDRs) of dirsync
+messages are not returned to the sender nor copied to the Administrator or
+Postmaster.
+
+Indicators that duplicate addresses exist are 139 errors in the application log
+(with directory synchronization logging turned to maximum) and SrvTx messages
+not appearing in the Administrator's mailbox as specified. An additional
+indicator is that updates will not appear in Exchange after synchronization.
+
+For information about how to copy dirsync messages to a requestor mailbox on
+Exchange, please see the following article in the Microsoft Knowledge Base:
+
+   Q149905 XFOR: Copying DXA Messages to a Mailbox
+
+Additional query words: 139 error message copy SYSTEM1
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

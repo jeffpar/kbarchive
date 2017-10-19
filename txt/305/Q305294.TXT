@@ -1,0 +1,66 @@
+DOCUMENT:Q305294  12-NOV-2001  [homemm]
+TITLE   :ENC2002: Encarta Hangs When You Switch Between 3D Virtual Tours
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia Deluxe 2002, version 1.0 
+ - Microsoft Encarta Reference Library 2002, version 1.0 
+ - Microsoft Encarta Reference Library 2002 - DVD Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you switch between two 3D Virtual Tours that are loading, Encarta may stop
+responding (hang).
+
+CAUSE
+=====
+
+This behavior can occur if you are using assigned buttons on a Microsoft
+IntelliPoint mouse to go forward and backward between the two loading tours.
+
+RESOLUTION
+==========
+
+To work around this issue, do not use the mouse to switch between the two tours.
+Use the following keyboard strokes to switch between the two tours:
+
+   ALT+LEFT ARROW
+   ALT+RIGHT ARROW
+
+MORE INFORMATION
+================
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbEncartaSearch kbMMSearch kbEncartaRef2002 kbEncartaEnCyc2002Del kbEncartaRef2002DVD
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,65 @@
+DOCUMENT:Q242232  18-OCT-1999  [exchange]
+TITLE   :XFOR: Exchange Connector for Novell GroupWise Event 6067
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5 SP3
+OPER/SYS:
+KEYWORDS:exc55sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the Microsoft Exchange Connector for Novell GroupWise (Exchange Server
+version 5.5 Service Pack 3 or Web 4 version) attempts to access a file that is
+locked, the Exchange Connector for Novell GroupWise logs an event 6067 error in
+the application event log.
+
+CAUSE
+=====
+
+The Exchange Server computer attempts to open the file every 200 milliseconds,
+but the file is locked by the NetWare server, which returns a File Lock Fail
+packet to the Exchange Server computer. The NetWare server locks the file
+because it is still writing to the file. During this time, the Exchange Server
+computer logs the error in the Microsoft Windows NT Event Viewer. Eventually,
+the Exchange Server computer is able to open the file and does a burst read of
+it.
+
+RESOLUTION
+==========
+
+Even though this error is logged, the Exchange Connector for Novell GroupWise
+still works. Ignore the error unless another process (for example, a virus scan,
+backup agent, or another connector) may be holding the file. This problem is
+common during the transfer of directory synchronization files, but may also
+occur with calendar information, as well as with large attachments.
+
+Additional query words: 6066 6062
+
+======================================================================
+Keywords          : exc55sp3 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+Version           : winnt:5.5 SP3
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

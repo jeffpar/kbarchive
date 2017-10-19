@@ -1,0 +1,73 @@
+DOCUMENT:Q248660  10-AUG-2001  [winnt]
+TITLE   :Using the Command Line to Change Startup Value of Services
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to change the startup values for services on local and
+remote computers by using the command line locally.
+
+MORE INFORMATION
+================
+
+The Reg.exe utility from the Microsoft Windows NT Resource Kit must be installed
+on your computer.
+
+To change the startup value for a service on a local computer by using the
+command line, type the following at the command prompt and then press ENTER:
+
+   REG UPDATE HKLM\SYSTEM\CurrentControlSet\Services\servicename\Start=X
+
+where servicename is the name of the service as it appears in the registry and X
+is either a 2, a 3, or a 4 (representing automatic startup, manual startup, or
+disabled, respectively).
+
+To change the startup value for a service on a remote computer by using the
+command line locally, type the following at the command prompt and press ENTER:
+
+   REG UPDATE HKLM\SYSTEM\CurrentControlSet\Services\servicename\Start=X
+   \\servername
+
+where servicename is the name of the service as it appears in the registry, X is
+either a 2, a 3, or a 4 (representing automatic startup, manual startup, or
+disabled, respectively), and servername is the name of the remote server.
+
+To see how the service name appears in the registry, view the following registry
+key:
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ 
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

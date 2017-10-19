@@ -1,0 +1,62 @@
+DOCUMENT:Q168854  02-JUN-1999  [homegame]
+TITLE   :Puzzle Collection: Canceling Setup Will Corrupt Program Files
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbsetup kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Entertainment Pack: The Puzzle Collection 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you click Cancel during a Reinstall of The Puzzle Collection, the Setup
+program will not have a chance to update the product files. If Setup does not
+have the chance to update the files, it will cause the files located in the
+Puzzle Collection folder on the hard disk to become corrupted.
+
+CAUSE
+=====
+
+Canceling the Setup program during the copying of files from the compact disc to
+the hard disk will corrupt the files on the hard disk and you will no longer be
+able to play the games.
+
+RESOLUTION
+==========
+
+Restore the files on the hard disk by deleting the remaining files from the
+Puzzle Collection folder using Windows Explorer, and then run The Puzzle
+Collection Setup again.
+
+For more information about how to perform this task in Windows, please see your
+Windows printed documentation or online Help.
+
+Additional query words: 1.00 wep w_wep entertainment pac puzzle collection hang damage
+
+======================================================================
+Keywords          : kbsetup kbusage 
+Technology        : kbHomeProdSearch kbWinEntPkPuzzleSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

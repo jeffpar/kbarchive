@@ -1,0 +1,83 @@
+DOCUMENT:Q191714  29-JUL-1999  [foxpro]
+TITLE   :INFO: Limiting the Scope of MSDN Help Topics in Visual FoxPro
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When working with the Microsoft Developer Network Library that ships with Visual
+Studio and Visual FoxPro 6.0, it is possible to make use of subsets to limit the
+scope of Help topics that are viewable. However, Help topics unrelated to the
+subset still appear in the list, but they are unavailable.
+
+MORE INFORMATION
+================
+
+It is possible to view only the Visual FoxPro Help file topics when using the
+Microsoft Developer Network Library. After installing the Microsoft Developer
+Network Library and the Visual FoxPro documentation, you can configure Visual
+FoxPro to use the FoxHelp.chm file as the default Help file using one of the
+following methods:
+
+ - Use the following command in the Visual FoxPro Command window:
+
+   
+
+         SET HELP TO <full path to the FoxHelp.chm file>
+
+   -or-
+
+ - From the Tools menu, choose Options. In the Options dialog box, click the
+   File Locations tab and change the default help file location so that it
+   points to the path of the FoxHelp.chm file on your computer.
+
+   -or-
+
+ - Add the following line to the Config.fpw file:
+
+   
+
+         HELP = <full path to the FoxHelp.chm file>
+
+To set the Help back to the normal Microsoft Developer Network Help, repeat step
+2 using the Msdnvs98.col file in place of the FoxHelp.chm file name. This sets
+the Help file to the more general form of Help.
+
+REFERENCES
+==========
+
+Visual FoxPro Help; search on: "set as default"
+
+Additional query words: kbVFp600 kbDocs
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

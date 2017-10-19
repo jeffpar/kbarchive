@@ -1,0 +1,78 @@
+DOCUMENT:Q142690  08-AUG-2001  [winnt]
+TITLE   :Windows NT Explorer Hangs With NEC CD-ROM
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbenv kbhw kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you attempt to start Windows NT Explorer, your computer may stop responding
+(hang).
+
+CAUSE
+=====
+
+This behavior can occur if you are using a model of the NEC CD-ROM drive that
+supports SCSI 2 and the Cdaudio service is enabled.
+
+RESOLUTION
+==========
+
+To resolve this issue, disable the Cdaudio service. To do this, follow these
+steps:
+
+1. Click Start, point to Settings, click Control Panel, and then double- click
+   Devices.
+
+2. Click Cdaudio, and then click Startup.
+
+3. Click Disabled, click OK, and then click Close.
+
+4. Restart your computer.
+
+MORE INFORMATION
+================
+
+The Cdaudio.sys driver attempts to detect non SCSI 2 devices at startup. This
+detection is based on the Inquiry string of the device. Although earlier models
+of the NEC CD-ROM drives require the Cdaudio.sys driver, newer models of the NEC
+CD_ROM drives do not require the Cdaudio.sys driver.
+
+Disabling the Cdaudio service on a computer with a model of the NEC CD-ROM drive
+that supports SCSI 2 does not affect the functionality of the product.
+
+
+Additional query words: prodnt scsci-ii scsciii scsi-2 hangs
+
+======================================================================
+Keywords          : kbenv kbhw kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

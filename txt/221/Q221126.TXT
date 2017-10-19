@@ -1,0 +1,76 @@
+DOCUMENT:Q221126  19-MAR-1999  [sms]
+TITLE   :SMS: Instance and Class Permissions: Which Has Precedence?
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbSecurity kbsms200 kbPackage kbsmsAdmin
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The purpose of this article is to help clarify the resulting permissions of
+using Instance and Class security.
+
+MORE INFORMATION
+================
+
+Chapter 4 of the Microsoft Systems Management Server 2.0 Administrators Guide
+discusses Instance and Class security available for objects in the SMS Site
+Database. It may be unclear as to which type of security takes precedence in a
+particular situation.
+
+Instance security does not take precedence over Class security and vice versa.
+Unlike Windows NT File permissions, the resulting rights granted are a union of
+the Class and Instance rights.
+
+EXAMPLE 1:
+
+UserX has all Class level Package rights for All Packages.
+UserX has no Instance level Package rights for PackageA.
+
+Result:
+
+UserX will have full rights for PackageA as well as all other packages because
+full Class level rights were granted to the user for All Packages.
+
+EXAMPLE 2:
+
+UserX has no Class level Package rights for All Packages.
+UserX has all Instance level Package rights for PackageA.
+
+Result:
+
+UserX will have full rights for PackageA, but no other Packages (unless
+explicitly granted), because no explicit rights were granted at the Class
+level.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbSecurity kbsms200 kbPackage kbsmsAdmin 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

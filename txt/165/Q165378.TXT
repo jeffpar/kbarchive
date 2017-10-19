@@ -1,0 +1,68 @@
+DOCUMENT:Q165378  21-MAY-2001  [powerpt]
+TITLE   :CG3: Clip Gallery 3.0 Does Not Display Path in Preview
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:3.0,97
+OPER/SYS:
+KEYWORDS:kbtool kbui kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Clip Gallery 3.0 for Windows 
+ - Microsoft PowerPoint for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you view an image preview in the Microsoft Clip Gallery, the path and file
+name for the selected image is not displayed under the image.
+
+CAUSE
+=====
+
+This behavior occurs if you install the Microsoft Clip Gallery component of
+Microsoft Office 97 for Windows, and then attempt to insert clip art into any
+Microsoft program.
+
+STATUS
+======
+
+This behavior is by design of the Clip Gallery in Microsoft Office 97.
+
+MORE INFORMATION
+================
+
+This behavior differs from earlier versions of the Microsoft ClipArt Gallery, in
+which the path name and file name are displayed under the preview image.
+
+This behavior can also affect other Microsoft programs that use earlier versions
+of the Microsoft ClipArt Gallery. Note that you are automatically upgraded to
+the Microsoft Clip Gallery when you install Microsoft Office 97 for Windows.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool kbui kbusage kbdta 
+Technology        : kbWordSearch kbOfficeSearch kbFrontPageSearch kbExcelSearch kbPowerPtSearch kbWorksSearch kbPublisherSearch kbOffice97Search kbOffice97 kbClipGallerySearch kbVFP300 kbHomePubSearch kbPhotoDrawSearch
+Version           : WINDOWS:3.0,97
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

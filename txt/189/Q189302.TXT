@@ -1,0 +1,69 @@
+DOCUMENT:Q189302  11-JAN-2001  [vbwin]
+TITLE   :BUG: RequestTimeout = 0 Does Not Work Within ITC
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Once the RequestTimeout property of Internet Transfer Control is set to 0,
+calling methods such as Execute for FTP resource generates the following error:
+
+   "Run-time error '35754': Unable to connect to remote host".
+   Calling Execute for HTTP resource causes error 12002 "Timeout".
+
+CAUSE
+=====
+
+According to the documentation, setting timeout to 0 means infinity. This is
+incorrect; the Internet Transfer Control does not interpret 0 as infinity.
+
+RESOLUTION
+==========
+
+To avoid the problem, do not set timeout to 0.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+REFERENCES
+==========
+
+Visual Basic, Internet Transfer Control On-line Help
+
+Additional query words: kbDSupport kbVBp500bug kbVBp kbDSupport kbdsi kbNoKeyWord
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

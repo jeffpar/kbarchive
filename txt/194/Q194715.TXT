@@ -1,0 +1,72 @@
+DOCUMENT:Q194715  21-FEB-1999  [winnt]
+TITLE   :Oracle Diagnostic Tool Missing After Installing Service Pack 4
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:kbsetup kbservicepack
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Windows NT 4.0 Service Pack 4 on a DEC Alpha-based computer,
+the Testoraclexaconfig.exe diagnostic tool is not copied to the
+%SystemRoot%\System32 folder. However, when you install the service pack on an
+Intel-based computer, the file is automatically copied during the Setup process.
+
+RESOLUTION
+==========
+
+If you are installing the service pack on an Alpha-based computer and you are
+using Microsoft Transaction Server (MTS) or Distributed Transaction Coordinator
+(DTC) with an Oracle or XA-compliant database, copy the Testoraclexaconfig.exe
+file from the Service Pack 4 CD-ROM to the %SystemRoot%\System32 folder.
+
+The Testoraclexaconfig.exe file is located in the root folder on the Windows NT
+4.0 Service Pack 4 CD-ROM.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The optional Testoraclexaconfig.exe diagnostic tool is used to ensure that
+Oracle software has been configured properly. Normally, it is used after
+configuring Oracle software on an Alpha-based platform to ensure that the Oracle
+configuration is correct.
+
+Additional query words: sp4
+
+======================================================================
+Keywords          : kbsetup kbservicepack 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400xsearch kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400xsearch kbWinNTS400
+Version           : WINNT:4.0
+Hardware          : ALPHA
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

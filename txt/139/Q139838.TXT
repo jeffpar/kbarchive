@@ -1,0 +1,68 @@
+DOCUMENT:Q139838  08-AUG-2001  [winnt]
+TITLE   :STOP A in AFD.SYS When Polling Sockets
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.50
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use a sockets application, Windows NT fails with a STOP 0x0000000A in
+AFD.SYS.
+
+CAUSE
+=====
+
+AfdPoll tries to back reference the endpoint from the connection before the
+pointer is set up, causing the STOP message.
+
+
+RESOLUTION
+==========
+
+AFD.SYS was fixed in Windows NT 3.5 Service Pack 3.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT Workstation and
+Windows NT Server version 3.5. This problem has been corrected in the latest
+U.S. Service Pack for Windows NT version 3.5. For information on obtaining the
+Service Pack, query on the following word in the Microsoft Knowledge Base
+(without the spaces):
+
+   S E R V P A C K
+
+Additional query words: prodnt blue screen trap
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : 3.50
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

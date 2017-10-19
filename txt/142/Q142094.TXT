@@ -1,0 +1,66 @@
+DOCUMENT:Q142094  21-OCT-2000  [pcmail]
+TITLE   :PC DOS: Err Msg: Notice 38: Empty Personal Address List (PAL)
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.0, on platform(s):
+    - the operating system: MS-DOS 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you select Compose to send a new message, you may get the following error
+message:
+
+   Notice 38 - Empty Personal Address List
+   Select Address option to define
+
+CAUSE
+=====
+
+You will get the above error when the Personal Address List (PAL) is your
+default address display, and you do not have any entries in the list.
+
+WORKAROUND
+==========
+
+To correct this error, do one of the following:
+
+ - Press the ESC (escape) key, and go back to the main opening screen of the
+   MS-DOS client. Select Address, and press the ENTER key. Add an address to the
+   Address List.
+
+ - Press the ESC (escape) key, and go back to the main opening screen of the
+   MS-DOS client. Select Options, Configure, Display. Change the display so that
+   an address list other than the Personal Address List is the default.
+
+
+Additional query words: 3.00 dos client error notice 38 pal
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

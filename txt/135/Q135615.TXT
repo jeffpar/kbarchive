@@ -1,0 +1,86 @@
+DOCUMENT:Q135615  09-MAR-2000  [foxpro]
+TITLE   :PRB: Setup Fails If Too Much Copyright Information Is Entered
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Step 4 of the Setup Wizard has an edit region to input Copyright information. If
+the information entered in this region exceeds 214 characters in length, various
+errors occur when you run Setup on disk 1.
+
+CAUSE
+=====
+
+The Copyright edit region of Step 4 of the Setup Wizard contains more than 214
+characters.
+
+RESOLUTION
+==========
+
+Keep the Copyright information to 214 or less characters in length.
+
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Depending on the amount of characters actually entered, Setup fails in different
+ways. If the length entered is 215, Setup runs up through the Confirmation of
+Name & Organization. Once that is confirmed, Setup displays a message window
+stating, "Setup was not completed successfully" and then exits.
+
+If the length entered is between 216 and 255 characters, Setup immediately
+presents a window stating "Setup was not completed successfully" and then
+exits.
+
+If the length exceeds 255 characters, Setup starts and immediately gives the
+following two error messages and then exits:
+
+   Error One:
+
+   Window Title: Error in Table Syntax - Top Level
+   Message Text: Bad Setup Version Field.
+
+   Error Two:
+
+   Window Title: Setup Message
+   Message Text: Processing Top Level Information Field.
+
+Additional query words: 3.00 VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

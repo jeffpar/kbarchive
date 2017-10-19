@@ -1,0 +1,74 @@
+DOCUMENT:Q74745  06-MAY-2001  [masm]
+TITLE   :BUG: Assembling .ASM File With CL.EXE Fails w/ MASM 6.0
+PRODUCT :Microsoft Macro Assembler
+PROD/VER:MS-DOS:6.0,6.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 6.0, 6.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using the CL driver that comes with Microsoft C versions 6.0, 6.0a, and 6.0ax to
+invoke MASM versions 6.0 and 6.0a to assemble a .ASM file specified on the CL
+compile line will result in an error similar to one of the following:
+
+   error A2901: cannot run ML.EXE
+
+   -or-
+
+   Unknown option: /. Use /help for list of options
+
+   -or-
+
+   Assembling: NUL.asm
+   NUL.asm(0): error A2088: END directive required at end of file
+
+CAUSE
+=====
+
+The C online help for CL states that files that are listed on the command line
+with a .ASM extension will automatically cause MASM to be invoked. When this
+happens, CL.EXE invokes MASM.EXE. With MASM 5.1 or 5.1a, this will run the
+assembler.
+
+However, with MASM 6.0 and 6.0a, MASM.EXE is a compatibility driver for ML.EXE,
+which executes version 6.0 of the assembler. The command-line switches and
+filename are not being passed correctly from the CL.EXE to ML.EXE. This results
+in a variety of error messages as shown above.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MASM versions 6.0 and 6.0a. We
+are researching this problem and will post new information here as it becomes
+available.
+
+Additional query words: 6.00 6.00a 6.00ax 5.10 5.10a buglist6.00 buglist6.00a s_c
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600 kbMASM600a
+Version           : MS-DOS:6.0,6.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

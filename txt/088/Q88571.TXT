@@ -1,0 +1,65 @@
+DOCUMENT:Q88571  07-NOV-1999  [win95x]
+TITLE   :DTC 3290 SCSI Controller and Windows 3.1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use a DTC 3290 or DTC 3292 SCSI controller with Windows 3.1, the
+following lines must be present in the CONFIG.SYS file:
+
+      ASPI3X90.SYS   12-16-91   10809 bytes
+      ASCSI.SYS      12-16-91   7360 bytes
+
+Windows cannot run in 386 enhanced mode unless these drivers are loaded.
+
+MORE INFORMATION
+================
+
+According to DTC technical support, the SCSI drivers must be loaded right after
+the HIMEM.SYS line in the CONFIG.SYS file. The ASPI3X90.SYS driver must also
+include the "Q" switch.
+
+A typical CONFIG.SYS file looks as follows:
+
+      DEVICE = C:\WINDOWS\HIMEM.SYS
+      DEVICE = C:\ASPI3X90.SYS /Q
+      DEVICE = C:\ASCSI.SYS
+      FILES = 50
+      BUFFERS = 20
+
+These files are available on the DTC bulletin board service (BBS). Contact DTC
+for more information.
+
+Additional query words: 3.10 3.11 3rdparty data technology technologies tech
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

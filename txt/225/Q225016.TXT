@@ -1,0 +1,62 @@
+DOCUMENT:Q225016  27-MAR-2002  [exchange]
+TITLE   :XADM: How to Change the Recipients Container for PF Mailboxes
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you create a public folder, a mailbox for that public folder is created in
+the default Recipients container. This mailbox is hidden from the address list.
+
+MORE INFORMATION
+================
+
+You can use the Exchange Server Administrator program to find out where your
+public folder mailboxes are created. Click the Recipients container, and then,
+on the View menu, click Hidden Recipients.
+
+To change the Recipients container that the public folders are created in, use
+the Exchange Server Administrator program to perform the following steps:
+
+1. Click the Configuration object, and then click Information Store Site
+   Configuration.
+
+2. Click the General tab. In the Public Folder Container field, click Modify,
+   and then click the new container.
+
+3. The mailbox for any new public folders that you created is put in the new
+   folder.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,67 @@
+DOCUMENT:Q199110  31-JUL-2001  [sms]
+TITLE   :SMS: How Bandwidth Calculations Differ in SMS 2.0
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2,2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms120 kbSender kbSMSSender
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.2, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Systems Management Server 2.0, the Standard Sender takes the place of the LAN
+Sender from Systems Management Server 1.2. Standard Sender, as it is now called,
+is used for connecting sites across high-speed links such as 10BaseT LAN lines.
+
+MORE INFORMATION
+================
+
+Each time the Standard Sender in Systems Management Server 2.0 sends a buffer of
+the package to the remote site, it recomputes the delay factor and indicates in
+the log file how long it will delay before sending the next buffer. In this way,
+the total average usage of the link will be controlled, even though while
+sending a single buffer of the package the Standard Sender will use the full
+bandwidth of the connection.
+
+In Systems Management Server 2.0, all you configure is the Number of Retries, the
+Delay before retrying (Min.), and the Maximum concurrent sendings to All Sites
+and Per Site. There is no longer a need to specify the maximum amount of
+bandwidth that the Standard Sender will be allowed to use.
+
+In Systems Management Server 1.2, the administrator specified how much bandwidth
+the connection consisted of. An administrator configuring the bandwidth of the
+Standard Sender in Systems Management Server 2.0 does not have to do this
+because the Standard Sender calculates the instantaneous available rate
+continuously. The bandwidth control in Systems Management Server 2.0 is based
+only on the address rather than a mixture of the address and the sender (as it
+was in Systems Management Server 1.2).
+
+Additional query words: prodsms smssvr std
+
+======================================================================
+Keywords          : kbsms200 kbsms120 kbSender kbSMSSender 
+Technology        : kbSMSSearch kbSMS120 kbSMS200
+Version           : winnt:1.2,2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

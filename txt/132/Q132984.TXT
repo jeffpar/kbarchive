@@ -1,0 +1,66 @@
+DOCUMENT:Q132984  17-DEC-2000  [win95x]
+TITLE   :Incorrect Calculator Results Using Percent Key
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 98 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Calculator tool, you may receive an incorrect result if you
+multiply, divide, add, or subtract after using the percent (%) key.
+
+CAUSE
+=====
+
+When you use the percent key followed by an operator, Calculator performs a
+multiplication operation regardless of which operator you use.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows versions 3.1
+and 3.11, Microsoft Windows NT versions 3.1 and 3.5, and Microsoft Windows
+95/98.
+
+MORE INFORMATION
+================
+
+The calculation
+
+   500 * 5% = 25 + = 525
+
+demonstrates the Calculator error. If you perform this calculation with
+Calculator, you receive a result of 12,500 instead of 525
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbWin98search kbZNotKeyword3 kbWin98
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

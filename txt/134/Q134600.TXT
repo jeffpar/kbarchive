@@ -1,0 +1,69 @@
+DOCUMENT:Q134600  17-DEC-2000  [win95x]
+TITLE   :RPL Setup Err Msg: Missing Batch File
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start a server-based setup of Windows 95 created using an RPL image on
+a Novell NetWare diskless workstation, you may receive the following error
+message:
+
+   MISSING BATCH FILE
+
+After you receive this message, the workstation seems to work correctly.
+
+CAUSE
+=====
+
+Novell's NETX and VLM drivers search for an Autoexec.bat file in the Home\Suboot
+directory on the server. This file is deleted by an RPL Setup, and must be
+manually copied by the network administrator.
+
+RESOLUTION
+==========
+
+You can safely ignore this error message. To prevent the error message from
+occurring, use either of the following methods:
+
+ - Have the network administrator create a new Autoexec.bat file in each user's
+   Home directory.
+
+ - Prevent Setup from deleting the Suboot directory and the Autoexec.bat file by
+   adding the following line to the [Network] section of the Msbatch.inf file in
+   the shared installation directory:
+
+      savesuboot=1
+
+   Then, MAP ROOT the A drive to the Home directory on the server, and copy the
+   Autoexec.bat file from the Suboot directory to the Home directory.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

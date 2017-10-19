@@ -1,0 +1,122 @@
+DOCUMENT:Q193738  14-NOV-2000  [word97]
+TITLE   :WD97: Add Button Unavailable in the Spelling Dialog Box
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Add button in the Spelling dialog box is unavailable (dimmed).
+
+CAUSE
+=====
+
+The problem described in this article may occur due to one of the following
+causes:
+
+ - The custom dictionary check box is not selected.
+
+ - The custom dictionary currently being used is read-only or in a read-only
+   directory.
+
+ - The custom dictionary is set for a different language than the document.
+
+ - The custom dictionary is currently open.
+
+   -or-
+
+ - The custom dictionary does not exist.
+
+RESOLUTION
+==========
+
+Resolution 1: The Custom Dictionary Check Box is Not Selected.
+--------------------------------------------------------------
+
+To correct this problem, follow these steps:
+
+1. On the Tools menu, click Options.
+
+2. Click the Spelling & Grammar tab.
+
+3. Click Dictionaries.
+
+4. Under Custom Dictionaries, select the CUSTOM.DIC check box.
+
+Resolution 2: Custom Dictionary is Read-Only Or in a Read-Only Directory.
+-------------------------------------------------------------------------
+
+The default name and location of the custom dictionary are as follows:
+
+   C:\Program Files\Common Files\Microsoft Shared\Proof\Custom.dic
+
+If the Custom.dic file is read-only or if the Proof subfolder is set to
+read-only, you cannot add new words to the custom dictionary. Clear the
+read-only attributes for the file and its subfolder.
+
+Resolution 3: Custom Dictionary is Set For A Different Language.
+----------------------------------------------------------------
+
+To correct this problem, follow these steps:
+
+1. On the Tools menu, click Options.
+
+2. Click the Spelling & Grammar tab.
+
+3. Click Dictionaries.
+
+4. On the Language line under Custom Dictionaries, select the language that the
+   document is set for. The default for this setting is <None>. The
+   language of the document is set by selecting the document and clicking
+   Language on the Tools menu.
+
+Resolution 4: The Custom Dictionary is Currently Open.
+------------------------------------------------------
+
+The Custom.dic file might be open for editing. Word does not allow you to add
+words to the custom dictionary while it is open. To resolve this issue, close
+the Custom.dic file.
+
+Resolution 5: The Custom Dictionary Does Not Exist.
+---------------------------------------------------
+
+If the Custom.dic file had been deleted during the session of Word, then Add
+would not be available in the Spelling dialog box. Either re-create the
+Custom.dic file (saved as a text file) in the proper location or restart Word.
+If Word is restarted, it will detect that there is no Custom.dic file and will
+prompt you to create one when you attempt to add a word to the Custom.dic file.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,74 @@
+DOCUMENT:Q118450  17-DEC-2000  [win95x]
+TITLE   :COMSPEC Environment Is Not Set When Using 4DOS
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The COMSPEC environment variable is not set after Windows 95 has started.
+
+CAUSE
+=====
+
+This environment variable is not set if you are using J.P. Software 4DOS.COM
+instead of MS-DOS COMMAND.COM on the SHELL line in your CONFIG.SYS file.
+
+RESOLUTION
+==========
+
+To correct this problem:
+
+ - Upgrade to 4DOS version 4.02 or later.
+
+   -or-
+
+ - Set the COMSPEC variable in the AUTOEXEC.BAT file by adding the following
+   statement to the AUTOEXEC.BAT file
+
+   set comspec=c:\<directory name>\4dos.com
+
+   where <directory name> is the directory in which you installed 4DOS.
+
+   -or-
+
+ - Use COMMAND.COM, in place of 4DOS.COM, on the SHELL statement in your
+   CONFIG.SYS file.
+
+MORE INFORMATION
+================
+
+4DOS is manufactured by J.P. Software, a vendor independent of Microsoft; we
+make no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words: fourdos 4 dos 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

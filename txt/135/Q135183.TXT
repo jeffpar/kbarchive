@@ -1,0 +1,66 @@
+DOCUMENT:Q135183  17-DEC-2000  [win95x]
+TITLE   :"Windows Protection Error" on NEC Powermate 466
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to start Windows 95 for the first time after Setup finishes, you
+may receive the following error message:
+
+   Windows Protection Error
+
+If you restart Windows 95 in Safe mode, you see an incorrect display device
+listed in Device Manager.
+
+CAUSE
+=====
+
+Early versions of the NEC Powermate 466 Plug and Play BIOS do not report the
+display type correctly.
+
+
+RESOLUTION
+==========
+
+To work around this problem, restart Windows 95 using the Command Prompt Only
+option on the Startup menu. Run Setup again, with the following command:
+
+   setup /p i
+
+This command forces Setup to ignore the computer's Plug and Play BIOS.
+
+You may also want to contact NEC to inquire about obtaining an updated BIOS that
+resolves this problem.
+
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

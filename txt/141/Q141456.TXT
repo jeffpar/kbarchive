@@ -1,0 +1,62 @@
+DOCUMENT:Q141456  31-JUL-2001  [visualc]
+TITLE   :FIX: Pressing F1 for Help on Error Message Doesn't Work
+PRODUCT :Microsoft C Compiler
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600fix kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 4.0, 4.1 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Pressing the F1 key on a compiler error or warning in the output window does not
+bring up help for the error unless the caret is positioned on the error number.
+If there is no match in Books Online for the word the caret is on, a message
+similar to this appears:
+
+   The keyword "<keyword>" was not found.
+   Choose OK to see the closest match to "<keyword>" in the Visual C++
+   Books Online 4.0 keyword index.
+
+RESOLUTION
+==========
+
+To view the help text for an error message, make sure the caret is on the error
+number, and then press the F1 key.
+
+STATUS
+======
+
+This bug was corrected in Microsoft Visual C++, version 6.0.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600fix kbGrpDSTools 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420 kbVC500 kbVC32bitSearch kbVC500Search
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,66 @@
+DOCUMENT:Q84465  07-JUN-2001  [win95x]
+TITLE   :Bitfax May Cause GP Fault in Windows 3.1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11,4.0,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Word for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You may experience a general protection (GP) fault similar to the following when
+using Bit Software Bitfax with Microsoft Write or version 4.0 of Microsoft Excel
+running under Microsoft Windows version 3.1:
+
+   Write caused GP Fault in COMMDLG.DLL at 0003:3AD3
+
+If you choose the Ignore button, you should be able to continue normally.
+
+If you use the Bitfax driver with version 6.0 of Microsoft Word for Windows, you
+may receive a GP fault in KRNL386.EXE.
+
+CAUSE
+=====
+
+The GP fault is caused by Bitfax. Bit Software is aware of the problem and is
+working on an update.
+
+MORE INFORMATION
+================
+
+For more information, please call Bit Software technical support.
+
+The Bitfax product included here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: gpf 3.10 3.11 3rdparty 4.00 winword 6.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWordSearch kbWin3xSearch kbZNotKeyword2 kbZNotKeyword3 kbWord600 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11,4.0,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

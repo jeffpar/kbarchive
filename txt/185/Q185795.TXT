@@ -1,0 +1,69 @@
+DOCUMENT:Q185795  14-NOV-2000  [word97]
+TITLE   :WD97: ErrMsg: "... Unable to Open the Data Source" Using ODBC
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta word97 kbmerge
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use the Mail Merge command in Microsoft Word 97 by using a Microsoft
+Access 97 query with ODBC as a data source and the database table is a SQL
+Server link table, the following error message may appear:
+
+   Word was unable to open the data source.
+
+CAUSE
+=====
+
+When you use ODBC, you do not receive a dialog box allowing you to enter the
+password, because the password needed to open your SQL data source is not passed
+through Microsoft Access to the SQL server.
+
+RESOLUTION
+==========
+
+When you insert the link table in the Microsoft Access database, click to select
+the "Save password" check box in the Link Tables dialog box.
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q101084 ACC: Storing SQL Database Login IDs and Passwords Locally
+
+   Q101375 ACC: How to Query SQL Server Tables Without Linking/Attaching
+
+
+Additional query words: sequel
+
+======================================================================
+Keywords          : kbdta word97 kbmerge 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

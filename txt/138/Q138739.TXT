@@ -1,0 +1,65 @@
+DOCUMENT:Q138739  07-FEB-2002  [winnt]
+TITLE   :Service Pack 2 Upgrade Causes Macintosh Volumes Not To Appear
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Windows NT 3.51 Service Pack 2, the Macintosh volumes in
+Services for Macintosh do not appear and a red "X" is marked next to the volume
+icon. In addition, the following system event appears in the Event Viewer:
+
+   Event ID: 12035
+   Description:
+   Volume information for "<volume name>" could not be loaded. Setting
+   defaults.
+
+CAUSE
+=====
+
+The volume catalog database format has changed in Windows NT 3.51 Service Pack
+2.
+
+RESOLUTION
+==========
+
+Wait for several minutes or longer after you reboot the server for the first
+time. It may take a while for the catalog to appear, because the catalog has to
+be built. Subsequent starts of Windows NT 3.51 allow the volume to appear
+quicker. The size of the volume and the number of files or directories in the
+volume affect the time to build the database. For example, servers with volumes
+over 10 gigabytes (GB) may take over an hour for the volume to appear.
+
+
+Additional query words: prodnt sfm mac
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

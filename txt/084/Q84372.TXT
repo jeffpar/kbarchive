@@ -1,0 +1,65 @@
+DOCUMENT:Q84372  31-OCT-1999  [win95x]
+TITLE   :Failed Installation When Using Full Page Genius Video Monitor
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you install Microsoft Windows operating system version 3.1 on a system with
+a Genius Plus Model 420 Full Page Color video display adapter and monitor, it
+may be necessary to obtain updated video drivers from Ran-Ger Technologies.
+
+If you receive the following error messages when installing Windows 3.1 for EGA
+or VGA resolution, contact Ran-Ger for a set of updated, Windows 3.1 compatible
+video drivers:
+
+   Standard Mode: Fault in MS-DOS Extender
+
+   -or-
+
+   Error Initializing VGA Device
+
+For additional information, please contact Ran-Ger Technologies Incorporated, as
+they now support the Genius video display card and monitor.
+
+For more information, query on the following words in the Microsoft Knowledge
+Base:
+
+   genius and ran-ger
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 3.10 3.11 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

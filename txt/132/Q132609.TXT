@@ -1,0 +1,63 @@
+DOCUMENT:Q132609  17-DEC-2000  [win95x]
+TITLE   :"Error 58" with Server-Based Windows 95 Setup
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you log on to a Windows NT domain account in real mode, and your account has
+the "User must change password at next logon" setting enabled or your password
+has expired, you are not notified that you must change your password. Instead,
+when you try to access a network server in the domain you receive the error
+message "Error 58."
+
+CAUSE
+=====
+
+The real-mode network client for Windows 95 does not support logon validation.
+Therefore, the client cannot determine when a password is about to expire or has
+already expired.
+
+This problem is most likely to occur with a server-based Setup, when you must log
+on to the network before you can set up Windows 95.
+
+RESOLUTION
+==========
+
+Use the NET PASSWORD command to change your password.
+
+MORE INFORMATION
+================
+
+Network administrators should avoid using the "User must change password at next
+logon" option when Windows 95 server-based Setup is being used.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

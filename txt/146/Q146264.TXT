@@ -1,0 +1,66 @@
+DOCUMENT:Q146264  09-JUL-1999  [exchange]
+TITLE   :XFOR: Clarification of the IMC Maximum Message Size
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Administrator of Microsoft Exchange Server version 4.0 can configure the
+maximum size of a message for transport through the Internet Mail Connector
+(IMC) in the General Properties page. The message size an IMC can transfer is
+the maximum message size, plus 1,023 bytes. This is by design.
+
+MORE INFORMATION
+================
+
+For example, if you set the maximum message size to 50KB and the actual message
+exceeds it by 2,000 bytes, the following Non-Delivery message appears:
+
+   The content length of the message is too long for the recipient to take
+   delivery.
+
+   <Server name> 3903 Message exceeds size limit, choose Maximum to
+   restrict the message size and set the value to 50K.
+
+The IMC can transfer a message that is 50 KB plus 1,023 bytes in size.
+
+The maximum message size configuration is useful when you do not want users to
+send messages with large attachments, which may affect performance. The maximum
+size value ranges from 1 to 2,097,151 KB. This setting applies to both inbound
+and outbound messages. If the IMC is used as a site connector, do not restrict
+the message size. This allows system messages used for directory replication and
+information store updates to pass through the IMC.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

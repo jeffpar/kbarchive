@@ -1,0 +1,99 @@
+DOCUMENT:Q78856  24-JUN-2002  [visualc]
+TITLE   :INFO: Watch Window Displays Arrays as Pointers
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0
+OPER/SYS:
+KEYWORDS:kbcode kbDebug kbide kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+ - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Visual Workbench Integrated Debugger, when you display an array in the
+Watch window, the array appears as if it was a pointer (that is, no brackets
+appear after the name). However, if you expand the watch value, the debugger
+displays all the elements of the array, not only the first element as occurs
+with pointers.
+
+MORE INFORMATION
+================
+
+The code example below includes a character array named test. When you add a
+watch expression to the Watch window, the debugger displays exactly the
+specified expression; it does not look in the symbol table for the definition.
+This occurs because the Watch window allows different editing types while the
+Locals window does not.
+
+If you place a watch on test, it appears in the Watch window as follows:
+
+16-bit
+------
+
+   +test = 0x<HHHH>:0x<HHHH>
+
+32-bit
+------
+
+   +test = 0x<HHHHHHHH> ""
+
+where each H is replaced by a hexadecimal digit and the "" in the 32-bit debugger
+is the character string (in this case, an empty string).
+
+However, the Locals display resembles the following:
+
+16-bit
+------
+
+   [BP-<HHHH>] +char test[20] = 0x<HHHH>:0x<HHHH>
+
+32-bit
+------
+
+   [EBP-<HHHH>] +char test[20] = 0x<HHHHHHHH> ""
+
+The debugger searches the symbol table before it displays a value in the Locals
+window and shows the form above. Microsoft CodeView also searches the symbol
+table and displays an array as an array.
+
+Sample Code
+-----------
+
+   /*
+    * Compile options needed: /Zi /Od
+    */ 
+
+   void main(void)
+   {
+      char test[20];
+   }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbDebug kbide kbVC100 kbVC150 kbVC151 kbVC152 kbVC200 kbVC210 kbVC400 kbVC500 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbvc150 kbvc100 kbVC500 kbVC151 kbVC200 kbVC210 kbVC32bitSearch kbVC16bitSearch kbVC152 kbVC500Search
+Version           : :1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

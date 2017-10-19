@@ -1,0 +1,242 @@
+DOCUMENT:Q231305  11-JUN-2002  [winnt]
+TITLE   :WINS Randomize1cList Feature Aids Load-Balancing Between DCs
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+You are experiencing logon and network validation problems on a network in which
+workstations and their associated domain controllers (DCs) reside on different
+subnets. This network is also configured to use WINS as the main vehicle for
+name resolution.
+
+If domain controllers are monitored, one is found to be much more heavily loaded
+than the others. Monitoring the overloaded DC, and network traffic to and from
+it, reveals the following:
+
+   In Server Manager, you may see the following:
+
+ - A large number (hundreds) of connections to Pipe\Lsarpc.
+
+   In Network Monitor captures of network traffic, you may see the following:
+
+ - Connections are frequently not made or transaction performed on Pipe\Lsarpc.
+
+ - Typical Server Message Block error message codes include STATUS_IO_TIMEOUT
+   and STATUS_PIPE_NOT_AVAILABLE.
+
+   In Performance Monitor, you may see the following:
+
+ - A large Handle Count in the LSASS process.
+
+ - A large Thread Count in the LSASS process (300 - 700+).
+
+ - A combined high CPU usage (approaching 100 percent) by the LSASS and System
+   processes.
+
+   NOTE: As the LSASS Thread Count increases, the proportion of CPU time used by
+   the System process versus that used by LSASS increases because of increased
+   context switching between the LSASS threads.
+
+Detailed analysis of Network Monitor captures of network traffic generated when a
+workstation is restarted and logs on to the network reveals that the most
+overloaded DC is the DC whose IP address is the first in the list of IP
+addresses returned in WINS domainname<1C> name query responses.
+
+A new WINS server feature, Randomize1cList, is now available and can promote more
+even load balancing between DCs in these specific circumstances. For example,
+where the overloaded DC is the DC whose IP address is the first in the
+domainname<1C> list).
+
+CAUSE
+=====
+
+In a network that uses WINS for name resolution, a workstation's logon server is
+selected as follows:
+
+1. The workstation broadcasts a SAM logon request on its local subnet.
+
+2. The workstation sends a WINS name query for domainname<1C> to its WINS
+   server, which returns a list of up to 25 Domain Controller IP addresses, and
+   the workstation sends a directed SAM logon request to each listed DC IP
+   address in turn.
+
+   The order in which these directed SAM logon requests are issued is determined
+   by the order of the IP addresses in the WINS domainname<1C> name query
+   response; the first SAM logon request is sent to the first address in the
+   list, and so on. The first DC to respond to a SAM logon request (broadcast or
+   directed) is selected as the workstation's Logon Server.
+
+If there are DCs on the workstation's subnet, one of these local DCs is usually
+selected as the workstation's logon server, as it receives the first broadcast
+SAM logon request earlier than remote DCs, and is therefore more likely to
+respond sooner than the remote DCs.
+
+If there is no DC on the workstation's subnet, one of the DCs whose IP address
+appears in the domainname<1C> name query response is selected as the
+workstation's logon server. Normally, all the directed SAM logon requests are
+issued rapidly one after the other, and the first response is likely to be from
+the least busy DC. Over time, the usual result is each DC will become the logon
+server for a roughly equal numbers of workstations.
+
+However, in some situations, it is possible for one of the remote DCs to be
+regularly selected as a workstation's logon server, causing it to become
+overloaded by subsequent volumes of validation traffic.
+
+RESOLUTION
+==========
+
+Windows NT 4.0 and Windows NT Server 4.0, Terminal Server Edition
+-----------------------------------------------------------------
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+Windows NT 3.51
+---------------
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem.
+
+To resolve this problem, contact Microsoft Product Support Services to obtain the
+fix. For a complete list of Microsoft Product Support Services phone numbers and
+information on support costs, please go to the following address on the World
+Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Date      Time     Size      File name   Platform
+   --------------------------------------------------
+   06/08/98  06:23p   170,400   Wins.exe    x86
+   06/08/98  06:24p   310,544   Wins.exe    Alpha
+
+
+
+How to Activate Randomize1cList
+-------------------------------
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+After you apply the hotfix, you can activate Randomize1cList by modifying the
+registry as described below.
+
+WARNING: In most networks, there should be no need to activate this feature. In
+some situations, it could actually have an adverse effect, depending on where
+the DCs in the domainname<1C> list are located. For example, changing the
+order of the list might cause workstations in London to select logon servers in
+Hong Kong. It is recommended that you activate Randomize1cList ONLY after
+performing a thorough network analysis, and confirming that doing so is
+appropriate to the observed symptoms along with your WINS and network
+configurations.
+
+To activate the Randomize1cList feature after installing the fix:
+
+1. Start Registry Editor (Regedt32.exe).
+
+2. From the HKEY_LOCAL_MACHINE subtree, go to the following key:
+
+   \SYSTEM\CurrentControlSet\Services\Wins\Parameters
+
+3. From the Edit menu, click Add Value.
+
+4. Add the following:
+
+   Value Name: Randomize1cList
+   Data Type:  REG_DWORD
+   Data:       00000001
+   Radix:      Hex
+
+   This key determines whether the WINS server changes the order of IP addresses
+   in successive domainname<1C> name query responses. In certain
+   situations, this change can improve load-balancing between domain controllers
+   acting as logon servers within a domain.
+
+   Value: 0
+   Meaning: 1C List Randomization is not enabled. The WINS server returns the
+   list of IP addresses in WINS domainname<1C> name query responses in
+   the same order each time such a name query is made.
+
+   Value: 1   
+   Meaning: Enables 1C List Randomization. The WINS server rotates the list of
+   IP addresses in WINS domainname<1C> name query responses a random
+   amount each time such a query is made. 
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+NT 4.0 and Windows NT Server 4.0, Terminal Server Edition Service Pack 4.
+
+MORE INFORMATION
+================
+
+If there are no local DCs, one scenario that might lead to uneven laod balancing
+between DCs is network or router congestion. This can cause transmission delays
+between successive directed security account manager (SAM) logon requests. If
+such a transmission delay approaches the time required to receive a SAM logon
+request response from the first server in the DC IP address list, then it is
+likely that this DC will become the logon server for the bulk of the
+workstations in the domain.
+
+An enhancement has been made to Wins.exe to provide a Randomize1CList feature to
+overcome this potential problem. With the Randomize1CList feature activated, the
+list of IP addresses in successive domainname<1C> name query responses is
+rotated a random amount before transmission to the workstation. This ensures a
+more even loading of DCs in problem scenarios, as described above.
+
+Additional query words: wts tse RoundRobin Round Robin
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search
+Version           : winnt:4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

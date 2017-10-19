@@ -1,0 +1,85 @@
+DOCUMENT:Q228752  10-FEB-2002  [iis]
+TITLE   :Service Could Not be Started Because It Is Not Correct
+PRODUCT :Internet Information Server
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run either the New Web Site Wizard or the New FTP Site Wizard, and
+accept the default IP Address and TCP Port values provided by the wizard, the
+following error occurs when you try to start the new Web site.
+
+   The service could not be started because it is not correctly configured. Make
+   sure that its server bindings do not conflict with other sites running on the
+   same machine.
+
+CAUSE
+=====
+
+Because the wizard defaults to the IP Address and TCP Port values that are
+already in use by the default Web (or FTP) site, the new site attempts to use
+the same settings. IIS does not allow this, because each site must be uniquely
+identified by an IP Address, TCP Port number, or Host Header.
+
+RESOLUTION
+==========
+
+Specify a different IP Address, TCP Port number, or add a Host Header for the
+new site. To do this, perform the following steps:
+
+1. Start the Internet Service Manager (ISM), which loads the Internet
+   Information Server snap-in for the Microsoft Management Console (MMC).
+
+2. Right-click the new service, and then click Properties on the Context menu.
+
+3. For a Web site, click the Web Site tab.
+
+   For an FTP site, click the FTP Site tab.
+
+The default Web site uses TCP Port 80, and the default FTP site uses TCP Port
+21.
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+   Q190008 HOW TO: Use Host Header Names to Host Multiple Sites from One IP
+   Address in IIS 5.0
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+Zollman, Microsoft Corporation.
+
+
+Additional query words: hostheader akz
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : :4.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

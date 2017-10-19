@@ -1,0 +1,141 @@
+DOCUMENT:Q132874  30-JUL-2001  [visualc]
+TITLE   :INFO: Tips for Improving Performance of VCMac Applications
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINNT:2.0;MAC:2.0;
+OPER/SYS:
+KEYWORDS:kbcode kbHWMAC kbVC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, Macintosh Cross-Development Addon, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists tips you can use to enhance performance of applications built
+with Visual C++ Cross-Development Edition for Macintosh (VCMac).
+
+NOTE: This article does not give you a comprehensive list of techniques that can
+be used to speed your VCMac application. To get the best out of VCMac, you might
+need to fine tune your application to run better on a Macintosh. Macintosh
+architecture is different from Windows architecture, so a knowledge of Macintosh
+programming is essential to build good Macintosh applications.
+
+MORE INFORMATION
+================
+
+Tips for Improving Performance
+------------------------------
+
+ - To determine which portions of the application need to be optimized, use the
+   Profiler, which is documented in Appendix C of the 68K Programmer's Guide.
+
+ - The process of creating a memory DC, creating a bitmap, and selecting the
+   bitmap into the DC is expensive when performed on the Macintosh. It is faster
+   to create the DC and cache it instead of recreating it every time.
+
+ - Copying DIBs to the screen or to other DCs is expensive because the DIB color
+   table must be converted and the DIB data must be reoriented. If a DIB will be
+   rendered frequently, copy the DIB to a memory DC. For each screen update,
+   copy the DC to the screen instead of the DIB.
+
+ - Currently PeekMessage and GetMessage call WaitNextEvent if there aren't any
+   messages waiting in the internal queue. WaitNextEvent on the Macintosh is
+   considerably slower than PeekMessage and GetMessage are under Windows. You
+   may want to wrap calls to PeekMessage or GetMessage in functions that limit
+   the frequency by which PeekMessage or GetMessage are called to every two
+   ticks. For more information on ticks, please see TickCount in the Inside
+   Macintosh documentation.
+
+ - Applications frequently perform background processing that is terminated as
+   soon as there are messages to process. PeekMessage(PM_NOREMOVE) is often used
+   to test for the existence of messages in the queue. To avoid the overhead
+   associated with calling PeekMessage(), use GetInputState() instead.
+   GetInputState doesn[ASCII 146]t call WaitNextEvent.
+
+ - If you allocate a lot of memory in fixed blocks (GlobalAlloc(GPTR) or
+   LocalAlloc(LPTR)), switch to using relocatable blocks instead, and lock these
+   blocks of memory while dereferencing them. This will reduce heap
+   fragmentation and make memory allocations faster.
+
+ - Increase your partition size to reduce the amount of code swapping and to
+   prevent thrashing. The partition size is determined by the SIZE resource
+   defined in a project[ASCII 146]s .R file. The Generic.Mac sample contains an
+   example .R file with a SIZE resource.
+
+ - Segment the application so that code segments can be swapped out efficiently.
+   Use consistent segment sizes such as 30k to 50k. Additionally, use the
+   Profiler to optimize segmentation.
+
+ - Use Compiler (speed or size) and Linker (opt:ref) optimizations available in
+   the Project Settings. The debug Windows Portability Libraries perform a lot
+   of parameter checking, so comparing speed and size with the debug libraries
+   is not a valid exercise.
+
+ - To reduce the size of the application, remove MacsBug symbols from shipping
+   code.
+
+ - To reduce the application size further, remove segment names from the CODE
+   resources, and delete the MSCV resource used for debugging. Use an MRC script
+   to do this.
+
+ - Use special case drawing and screen updating associated with user feedback.
+   For example, if you want to drag a shape across the screen, the Windows way
+   of invalidating the old location (updating data structures and waiting for
+   the WM_PAINT message to draw the update) does not work well on the Macintosh.
+   A more efficient method follows in pseudo code:
+
+      hdc = GetDC(hwnd);
+      do
+      {
+         msg = PeekMsg (mouse msgs only)
+
+         switch (msg)
+         {
+            case WM_MOUSEMOVE:
+               erase old one
+               update data structure
+               draw new location
+               break;
+            case ...
+
+        } while msg != WM_MOUSEUP
+
+ - The startup and shutdown times can be negatively impacted by reading or
+   writing a lot of preferences with ProfileString APIs. Try to limit the number
+   of preferences to be written out.
+
+ - If the Profiler indicates that a specific WLM API is consuming too much time,
+   use the wrapper functions to obtain the related data structure, and then call
+   the appropriate Macintosh API directly.
+
+ - Property sheets and property pages implemented using MFC would be slow on the
+   Mac. To workaround, use your own implementation of property pages. You could
+   use native Mac calls to create property pages.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbHWMAC kbVC 
+Technology        : kbVCsearch kbHWMAC kbOSMAC kbAudDeveloper kbVCXDev400Mac
+Version           : WINNT:2.0;MAC:2.0;
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

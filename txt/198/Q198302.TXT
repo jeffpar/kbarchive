@@ -1,0 +1,110 @@
+DOCUMENT:Q198302  14-NOV-2000  [word97]
+TITLE   :WD97: Cannot Change Case from Uppercase to Title Case
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:word97kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you try to change the case of selected text from all uppercase to title
+case, nothing happens.
+
+NOTE: To change case, click Change Case on the Format menu.
+
+CAUSE
+=====
+
+This behavior occurs if the first paragraph in your selection is an empty
+paragraph.
+
+WORKAROUND
+==========
+
+To work around this problem, use one of the following methods.
+
+Method 1: Use SHIFT+F3 to Change the Case to Title Case
+-------------------------------------------------------
+
+1. Select the text you want to change.
+
+2. Press SHIFT+F3.
+
+Each time you press F3 while holding the SHIFT key, Word cycles through different
+case formatting. When you see the case you want to use, release the SHIFT key.
+
+Method 2: Don't Select the Empty Paragraph at Beginning of the Selection
+------------------------------------------------------------------------
+
+Make sure that you do not select the empty paragraph immediately preceding the
+text selected, and then follow these steps to change the case of the selection:
+
+1. On the Format menu, click Change Case.
+
+2. Select Title Case.
+
+3. Click OK.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q105708 Change Case Command Does Not Toggle to Initial Caps
+
+   Q114206 Case of Form Field Text Won't Change from Uppercase
+
+   Q125002 Format Change Case May Not Change Case Based on Selection
+
+REFERENCES
+==========
+
+For more information about changing the case of text, click the Office
+Assistant, type "capitalize text," click Search, and then click to view the
+"Capitalize text" topic.
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If Word Help is not installed on your computer, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q120802 Office: How to Add/Remove a Single Office Program or Component
+
+Additional query words: OFF98 all caps capitals different
+
+======================================================================
+Keywords          : word97 kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

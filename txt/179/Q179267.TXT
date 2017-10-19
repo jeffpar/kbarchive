@@ -1,0 +1,118 @@
+DOCUMENT:Q179267  26-SEP-2001  [frontpg]
+TITLE   :FP97: 32-bit TCP/IP Missing Error After Installing Winsock 2.0
+PRODUCT :Word Front Page
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 98 version of this article, see Q194347.
+
+SYMPTOMS
+========
+
+When you attempt to start FrontPage, you may see the following error message:
+
+   FrontPage requires 32-bit TCP/IP networking. You do not have 32-bit
+   TCP/IP networking installed. Would you like to see help on how to
+   install it?
+
+CAUSE
+=====
+
+This message appears after you install Windows Sockets (Winsock) 2.0 because
+FrontPage may not detect that you have TCP/IP installed if a dynamic host
+configuration protocol (DHCP) server is not available. If you are connected to
+the network, and a DHCP server is available, FrontPage will operate normally.
+
+RESOLUTION
+==========
+
+To resolve this behavior, restore Windows Sockets 1.1 and then install the
+Windows Sockets 2.0 update. To do this, follow these steps:
+
+1. Restore Windows Sockets 1.1. a. On the Windows Start menu, click Run. b. In
+   the Open box, type the following command
+   C:\<windir>\ws2bakup\ws2bakup.bat where <windir> is the folder in
+   which you installed Windows. NOTE: If you receive a message indicating a
+   sharing violation has occurred, press the A key to stop running this command.
+   Repeat this step until the batch file has finished running and then follow
+   these steps: 1) On the Windows Start menu, click Shutdown. 2) Click "Restart
+   the Computer in MS-DOS Mode" and then click OK. 3) At the command prompt,
+   type "c:\<windir>\ws2bakup\ws2bakup.bat" (without the quotation marks)
+   and press ENTER. NOTE: If you receive an error message while updating the
+   registry, ignore the error. 4) Type "exit" (without the quotation marks).
+   Windows will restart.
+
+2. Download the Ws2setup.exe file from the following Microsoft World Wide Web
+   site:
+   http://www.microsoft.com/Windows95/downloads/contents/WUAdminTools/S_WUNetworkingTools/W95Sockets2/ReleaseNotes/ReleaseNotes.asp
+   Note in which folder you saved the Ws2setup.exe file.
+
+3. On the Windows Start menu, click Run.
+
+4. In the Open box, type the following command <path>\ws2setup.exe where
+   <path> is the folder in which you saved the Ws2setup.exe file when you
+   downloaded it. Click OK.
+
+5. When the Windows Sockets 2 Setup program has finished running, restart the
+   computer. To do this, follow these steps: a. On the Windows Start menu, click
+   Shutdown. b. In the Shut Down Windows dialog box, click Restart and then
+   click OK. After the computer restarts, the Windows Sockets 2 installation
+   will be finished and you will be able to run FrontPage.
+
+NOTE: This error may also occur on a Windows NT system. If you still have a
+problem after following the procedure in the "Resolution" section of this
+article, please see the following article in the Microsoft Knowledge Base:
+http://support.microsoft.com/support/kb/articles/q151/2/37.asp
+
+
+MORE INFORMATION
+================
+
+Winsock 2.0 is installed with Microsoft Personal Web Server 4.0 for Windows 95.
+It is also recommended that you install Winsock 2.0 for use with Dial Up
+Networking 1.2.
+
+For more information about the Windows Sockets 2 update, please see the "Windows
+Sockets 2 for Windows 95 Release Notes" document at the following Microsoft
+World Wide Web site:
+
+http://www.microsoft.com/Windows95/downloads/contents/WUAdminTools/S_WUNetworkingTools/W95Sockets2/ReleaseNotes/ReleaseNotes.asp
+
+NOTE: The version of Wsock32.dll that corrects this behavior is version 2.0 and
+the modified date of the file is September 15, 1997.
+
+
+
+Additional query words: 97 iis mspws tcp ip dialup dial-up wsock32.dll wsock 32bit 32-bit 32 bit
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbFrontPageSearch kbFrontPage97 kbZNotKeyword2 kbFrontPage97Search
+Version           : :
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

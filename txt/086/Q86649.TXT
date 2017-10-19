@@ -1,0 +1,70 @@
+DOCUMENT:Q86649  26-NOV-1999  [msdos]
+TITLE   :RECOVER Command Does Not Rename Files
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.0,5.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The MS-DOS RECOVER command does not rename or move files. Recovered files are
+only renamed (and often moved) when RECOVER is used on an entire drive.
+
+MORE INFORMATION
+================
+
+RECOVER is essentially two different utilities. One utility recovers readable
+information from a file that contains one or more unreadable, or bad, sectors.
+The other uses the file allocation table (FAT) to create a new root directory
+when the old root directory is corrupt. You essentially choose which utility to
+use when you specify that RECOVER should act on a file or on a drive.
+
+RECOVER is discussed on pages 145 and 146 of "The Microsoft MS-DOS User's Guide
+and Reference" version 5.0 manual. The following statement is from page 145:
+
+   When the operation is complete, MS-DOS stores the recovered file in the root
+   directory of the disk it came from. MS-DOS names the recovered files
+   sequentially, beginning with FILE0001.REC.
+
+From the context of the discussion on pages 145 and 146, it would appear that
+this paragraph applies to RECOVER in both cases. However, this paragraph does
+not apply when using RECOVER on a file; it only applies when using RECOVER on a
+drive.
+
+For more information on RECOVER, query on the following words in the Microsoft
+Knowledge Base:
+
+   "recover" (without the quotation marks) and "chains" (without the quotation
+   marks) and "bad" (without the quotation marks)
+
+
+Additional query words: 5.00 5.00a noupd
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.0,5.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

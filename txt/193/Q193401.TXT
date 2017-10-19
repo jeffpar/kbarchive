@@ -1,0 +1,101 @@
+DOCUMENT:Q193401  11-JAN-2001  [vbwin]
+TITLE   :BUG: Can't Change UserControl FontTransparent if Default = False
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the FontTransparent property of a UserControl is programmatically set to
+True, the UserControl still behaves as if FontTransparent is set to False. The
+actual property value changes but the behavior does not. Once something has been
+printed on the control, the FontTransparent can be changed successfully. This
+problematic behavior occurs only if the FontTransparent property is set to False
+in design mode.
+
+RESOLUTION
+==========
+
+The workaround for this problem is to always set the FontTransparent property of
+a UserControl to True in design mode. If the design mode value is True, it can
+be changed programmatically without incident. If it is set to False, the
+problems described above will occur.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a Standard EXE project in Visual Basic. Form1 is created default.
+
+2. Select Add Project from the File menu to add an ActiveX Control project to
+   the project group.
+
+3. Assign the Picture property of the UserControl to a large bitmap.
+
+4. Set the FontTransparent property of the UserControl to False.
+
+5. Add the following code to the UserControl's module:
+
+         Private Sub UserControl_Click()
+            FontTransparent = True
+            Print FontTransparent
+            FontTransparent = False
+            Print FontTransparent
+            FontTransparent = True
+            Print FontTransparent
+         End Sub
+
+6. Close the UserControl window, and place an instance of the UserControl on
+   Form1.
+
+7. Run the project, and click on the UserControl.
+
+8. Note that the first value printed on the control does not exhibit
+   FontTransparent behavior.
+
+9. Open the UserControl1 project and change the FontTransparent property of the
+   UserControl to True, and then repeat step 7. Note that the behavior is
+   correct.
+
+Additional query words: kbDSupport kbDSD kbVBp kbVBp600bug kbCtrlCreate
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

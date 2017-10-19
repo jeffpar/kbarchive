@@ -1,0 +1,92 @@
+DOCUMENT:Q129394  08-AUG-2001  [winnt]
+TITLE   :Configuring Password Requirements on RemoteBoot Workstations
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.50
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are 3 possible values for Password Solicitation with Microsoft Remote
+Program Load (RPL) RemoteBoot:
+
+   - Always
+
+   - Optional
+
+   - Not Solicited
+
+This article explains the steps necessary to configure the password requirements
+of a RemoteBoot workstation using the RPLCMD utility provided with RemoteBoot
+for Microsoft Windows NT Server 3.5.
+
+MORE INFORMATION
+================
+
+To modify the RPL database using RPLCMD, open a command window and type RPLCMD.
+This list of options is displayed:
+
+   Adapter  Boot  Config  Profile  Service  Vendor  Wksta  [Quit]
+
+1. Type "W" for Workstation.
+
+2. Type "S" for SetInfo.
+
+3. Type "2" for Information level.
+
+4. Type the name of the workstation, as defined in RPLMGR.
+
+5. The next two prompts are optional, leave them blank to accept the current
+   values.
+
+6. At the third prompt:
+
+   Is Remoteboot password Required, Optional or Not solicited [R, O, N]=
+
+   type one of these password values:
+
+   R - Required - User is prompted for password.
+
+   O - Optional - User is given 5 seconds to enter password. If no password is
+   entered, boot proceeds with a blank password.
+
+   N - Not Solicited - Does not allow password entry.
+
+   NOTE: Pressing ENTER at this prompt will abort the RPLCMD utility.
+
+7. The remaining prompts are also optional.
+
+NOTE: Microsoft strongly recommends that RPL accounts be defined via RPLMGR with
+non-blank passwords to prevent unauthorized persons from booting the RPL
+computer.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : 3.50
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

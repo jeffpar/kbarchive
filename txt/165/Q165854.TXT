@@ -1,0 +1,189 @@
+DOCUMENT:Q165854  13-JUN-2001  [sna]
+TITLE   :SNA 3.0 Service Pack 1 Readme.txt File
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0 SP1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 3.0 SP1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains a copy of the information in the Readme.txt file included
+in SNA Server 3.0 Service Pack 1.
+
+MORE INFORMATION
+================
+
+Microsoft SNA Server Version 3.0 Service Pack 1
+Microsoft SNA Workstation Version 3.0 Service Pack 1
+Release Notes
+
+April 1997
+
+(c) Copyright Microsoft Corporation, 1997
+
+These materials are provided "as-is," for informational purposes
+only.
+
+Neither Microsoft nor its suppliers makes any warranty, express
+or implied with respect to the content of these materials or the
+accuracy of any information contained herein, including, without
+limitation, the implied warranties of merchantability or fitness
+for a particular purpose. Because some states/jurisdictions do
+not allow exclusions of implied warranties, the above limitation
+may not apply to you.
+
+Neither Microsoft nor its suppliers shall have any liability for
+any damages whatsoever including consequential incidental, direct,
+indirect, special, and loss profits. Because some states/ 
+jurisdictions do not allow exclusions of implied warranties, the
+above limitation may not apply to you. In any event, Microsoft's
+and its suppliers' entire liability in any manner arising out of
+these materials, whether by tort, contract, or otherwise shall
+not exceed the suggested retail price of these materials.
+
+======================================================================
+
+Ordering the SNA Server 3.0 Service Pack 1 CD
+----------------------------------------------
+
+Microsoft SNA Server 3.0 U.S. Service Pack 1 (SP1) is available
+in CD media format by ordering from Microsoft at (800) 936-3500.
+
+SNA Server 3.0 Service Pack 1 (SP1) includes all bug fixes implemented
+since the initial SNA Server 3.0 release. In addition, the 3.0 SP1 CD
+includes updated documentation, collateral, and SDK (software development
+kit files). 3.0 SP1 includes updated SNA Server and client software for
+I386 (Intel) and DEC Alpha platforms.
+
+NOTE: Support for MIPS and Power PC platforms have been discontinued
+and is not included in 3.0 SP1.
+
+Downloading SNA Server 3.0 Service Pack 1
+------------------------------------------
+
+Self-extracting executable files containing updated 3.0 SP1 SNA
+Server and client files can be downloaded electronically from
+www.microsoft.com. The following files comprise the updated
+SNA Server and client files for 3.0 SP1:
+
+  30SP1TXT.EXE - 3.0 SP1 information and help file
+  30SP1IS.EXE  - 3.0 SP1 Server Update (Intel) (NOTE 1)
+  30SP1AS.EXE  - 3.0 SP1 Server Update (Alpha) (NOTE 1)
+  30SP1IC.EXE  - 3.0 SP1 Windows NT Client Update (Intel)
+  30SP1AC.EXE  - 3.0 SP1 Windows NT Client Update (Alpha)
+  30SP1CL.EXE  - 3.0 SP1 Win 3.x, MS-DOS, OS/2 Client Update
+  30SP195.EXE  - 3.0 SP1 Windows 95 Client Update
+  30SP1HS.EXE  - 3.0 SP1 Host Security Update (Intel and Alpha) (NOTE 2)
+  30SP1IW.EXE  - 3.0 SP1 SNA Workstation Update (Intel)
+  30SP1AW.EXE  - 3.0 SP1 SNA Workstation Update (Alpha)
+
+For information about changes implemented in 3.0 SP1, see the
+SNA30SP1.HLP file included in 30SP1TXT.EXE, 30SP1IS.EXE or
+30SP1AS.EXE. SNA30SP1.HLP also lists new features added in
+the service pack and articles describing the symptoms and causes
+for problems fixed in the service pack.
+
+NOTE 1: The SNA Server 3.0 SP1 update files include updates to
+the SNA Server, Print Service, TN3270 Service, TN5250 Service,
+ODBC drivers, AFTP, and Shared Folders Gateway.
+
+NOTE 2: A problem was found in the Host Security Update program
+after SNA Server 3.0 SP1 was released. If the 3.0 SP1 Host Security
+Update program is run by itself, or is run after the SNA Server 3.0
+SP1 Update program, then the SNAREG.DLL file is renamed causing the
+SnaBase and Host Security modules to fail to function upon reboot.
+See below for more information on this problem.
+
+Instructions for Decompressing Files
+------------------------------------
+
+All of the above files are compressed in self-extracting
+archive format, containing SNA Server 3.0 SP1.  To extract
+each file, copy the file to a separate empty directory on your
+hard drive and run the file using the "-d" option.  For
+example:
+
+    30SP1IS.EXE -d <PATH>
+
+Where <PATH> is the destination directory for the service
+pack. If you wish to extract the service pack to the current
+directory, leave <PATH> blank.
+
+After the service pack file has been decompressed, run the
+UPDATE.EXE program to install the updated SNA Server 3.0
+server or client files, as appropriate.
+
+NOTE: The UPDATE program will automatically stop any SNA
+Server services which may be running.
+
+Installing the Service Pack Files
+---------------------------------
+
+** TO BE APPLIED TO SNA SERVER 3.0 SYSTEMS ONLY!! **
+
+Both the SNA Server and SNA client files have been updated
+in 3.0 SP1. Updates may be applied in any order -- to the
+server and/or to the clients. It is recommended that all
+systems running SNA Server 3.0 (that is, SNA Servers and
+client computers) are updated to 3.0 SP1. It may not be
+necessary to update the client computers to SP1 unless you
+are experiencing a client problem that has been fixed in SP1.
+
+WARNING: This service pack update is intended to be applied on
+systems currently running SNA Server 3.0 server or client
+software. These updates should NOT be applied over systems
+running SNA Server 2.x releases.
+
+SPECIAL NOTE FOR CUSTOMERS RUNNING HOST SECURITY
+------------------------------------------------
+
+A problem was found in the Host Security Update program after
+SNA Server 3.0 SP1 was released. After running the 3.0 SP1
+Host Security Update program, the <snaroot>\system\SNAREG.DLL 
+file is renamed in error. This causes the SnaBase and/or
+Host Security components to fail to start upon reboot. The 
+following solutions can be used to solve this problem:
+
+ - If SNA Server is also running on the same machine as the
+   Host Security components, then reapply SNA Server 3.0 SP1 by
+   re-running the SNA Server 3.0 SP1 UPDATE program. This will
+   reapply the SNAREG.DLL file.
+
+ - If SNA Server is not running on this machine, locate a server 
+   running SNA Server 3.0 SP1 and copy <snaroot>\system\SNAREG.DLL
+   to the system path of the machine running the Host Security 
+   service(s).
+
+** TO BE APPLIED TO SNA SERVER 3.0 SYSTEMS ONLY!! **
+
+Additional query words: readme release notes servpack
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300SP1
+Version           : WINDOWS:3.0 SP1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

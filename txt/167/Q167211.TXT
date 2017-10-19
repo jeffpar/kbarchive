@@ -1,0 +1,83 @@
+DOCUMENT:Q167211  09-AUG-2001  [winnt]
+TITLE   :PRB: Cmdlines.txt Does Not Recognize Parameters Surrounded by Qu
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbsetup kbOPK kbSBK
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During an unattended setup, some entries in the Cmdlines.txt file do not
+execute.
+
+CAUSE
+=====
+
+The entries in Cmdlines.txt that are not executing may contain entries that
+contain parameters between quotation marks, as in the following example:
+
+      Cmdlines.txt
+         [Commands]
+         ".\at 04:00 /interactive cmd.exe /c "c:\batch\runme.bat"
+
+Cmdlines.txt treats the first quotation mark in the parameter as the end of the
+command line.
+
+RESOLUTION
+==========
+
+To resolve this problem, create a batch file containing the same command line
+with quotation marks, and run that batch file from the Cmdlines.txt text file.
+For the previous example, the resolution would be:
+
+      CMDLINES.TXT
+         [Commands]
+         ".\mybatch.bat"
+
+      Mybatch.bat
+         AT 04:00 /interactive cmd.exe /c "c:\batch\runme.bat"
+
+MORE INFORMATION
+================
+
+The Unattend.txt setup script must include "OEMPreinstall=Yes in the
+[Unattended] section, to enable the Cmdlines.txt file. This file must also
+reside in the $OEM$ directory of your Windows NT distribution share.
+
+For additional information about unattended installations, please see the
+following article at the Microsoft Web site:
+
+   http://www.microsoft.com/ntworkstation/info/Deployment-guide.htm
+
+Additional query words: prodnt Unattended Setup
+
+======================================================================
+Keywords          : kbsetup kbOPK kbSBK 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

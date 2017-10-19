@@ -1,0 +1,402 @@
+DOCUMENT:Q279858  12-JUN-2001  [homegame]
+TITLE   :MM2: Troubleshooting Game Controller Problems (Part 1)
+PRODUCT :Microsoft Home Games
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Midtown Madness 2, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you run Microsoft Midtown Madness 2, you may experience one or more of the
+following symptoms:
+
+ - The game controller may behave erratically.
+ - The game controller may not respond.
+ - The pedals do not respond correctly.
+
+This article is part 1 of a series of two Microsoft Knowledge Base articles that
+present a systematic approach to troubleshooting game controller problems.
+
+   Q279849 Midtown Madness 2: Game Controller Problems Troubleshooting (Part 2)
+
+MORE INFORMATION
+================
+
+Perform the troubleshooting procedures in the order in which they are presented.
+After you finish each method, test to determine if the issue is resolved. If the
+issue continues to occur, perform the next procedure.
+
+Verify That Your Operating System Supports Your Game Controller
+---------------------------------------------------------------
+
+The Microsoft Windows 95, Microsoft Windows 98, Microsoft Windows Millenium
+Edition (ME) and Microsoft Windows 2000 operating systems support both analog
+and digital game controllers. For best performance, verify that the latest
+version of the game controller driver for your game controller is installed on
+your computer.
+
+The following table lists the SideWinder game controllers that are supported by
+each version of Windows:
+
+   
+   +-------------------------------------------------------------------------------------------+
+   | Game Controller                   | Windows 95/98/Me/2000                | USB | GamePort | 
+   +-------------------------------------------------------------------------------------------+
+   | SideWinder standard               | Yes                                  | No  | Yes      | 
+   +-------------------------------------------------------------------------------------------+
+   | SideWinder 3DPro                  | Yes                                  | No  | Yes      | 
+   +-------------------------------------------------------------------------------------------+
+   | SideWinder Game Pad               | Yes                                  | No  | Yes      | 
+   +-------------------------------------------------------------------------------------------+
+   | Sidewinder Plug and Play Game Pad | Yes                                  | Yes | No       | 
+   +-------------------------------------------------------------------------------------------+
+   | Sidewinder Game Pad Pro           | Yes                                  | Yes | No       | 
+   +-------------------------------------------------------------------------------------------+
+   | SideWinder FreeStyle Pro          | Yes                                  | Yes | Yes      | 
+   +-------------------------------------------------------------------------------------------+
+   | Sidewinder Dual Strike            | Yes (incompatible with Windows 2000) | Yes | No       | 
+   +-------------------------------------------------------------------------------------------+
+   | SideWinder Joystick               | Yes                                  | Yes | No       | 
+   +-------------------------------------------------------------------------------------------+
+   | SideWinder Precision Pro          | Yes                                  | No  | Yes      | 
+   +-------------------------------------------------------------------------------------------+
+   | SideWinder Precision Pro 2        | Yes                                  | Yes | No       | 
+   +-------------------------------------------------------------------------------------------+
+   | SideWinder Force Feedback Pro     | Yes                                  | No  | Yes      | 
+   +-------------------------------------------------------------------------------------------+
+   | SideWinder Force Feedback Pro 2   | Yes                                  | Yes | No       | 
+   +-------------------------------------------------------------------------------------------+
+   | SideWinder Force Feedback Wheel   | Yes                                  | No  | Yes      | 
+   +-------------------------------------------------------------------------------------------+
+   | SideWinder Precision Racing Wheel | Yes (incompatible with Windows 2000) | Yes | No       | 
+   +-------------------------------------------------------------------------------------------+
+
+NOTE: Support for all current USB (Universal Serial Bus) gameport and USB-only
+SideWinder game controllers is included in Windows 98, Windows ME, and Windows
+2000.
+
+Check the Game Controller Connection to the Computer
+----------------------------------------------------
+
+If you use a gameport game controller, verify that the game controller is
+connected directly to the gameport in your computer. Daisy-chained game
+controllers or gameport adapters can interfere with communication between the
+gameport and the game controller.
+
+If you have more than one game controller plugged into your computer (one plugged
+into a gameport and the other plugged into a USB port), Midtown Madness 2 will
+only recognize the gameport controller. In order for Midtown Madness 2 to
+recognize the USB controller, disconnect the other controller from the
+gameport.
+
+If you use a USB game controller, verify that the game controller is connected
+properly to the USB port in your computer or to a combatible USB hub that is
+connected to the USB port in your computer.
+
+If you are using a USB joystick, disconnect all the game devices from your
+computer except the game device that you want to use to play the game.
+
+Disable the SideWinder Game Device Profiler
+-------------------------------------------
+
+If you use a SideWinder game controller, disable the SideWinder Game Device
+Profiler or SideWinder Game Controller software. To do this, right-click the
+Game Device Profiler icon or the Game Controller Software icon in the status
+area of the taskbar, and then click Unload or Disable.
+
+Install the Latest Version of Microsoft DirectX
+-----------------------------------------------
+
+Download and install the latest version of DirectX from the following Microsoft
+Web site:
+
+   http://www.microsoft.com/directx/homeuser/downloads/default.asp
+
+For additional information about how to obtain and install the latest version of
+DirectX, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q179113 How to Download and Install DirectX
+
+Verify That Your Game Controller Is Assigned to Controller ID 1
+---------------------------------------------------------------
+
+Many games cannot recognize a game controller if it is not assigned to Controller
+ID 1. To verify that your game controller is assigned to Controller ID 1, follow
+these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click the Game Controllers icon.
+
+3. Click the Advanced tab.
+
+4. If you have a gameport joystick or a game pad plugged in, unplug it and then,
+   in the Game Controller window, remove it.
+
+5. If the game controller that you want to use is not assigned to ID 1, click
+   Change.
+
+   If the game controller that you want to use is assigned to ID 1, skip to to
+   the next method.
+
+6. In the Game Controllers box, click the game controller that you want to use,
+   and then click the UP ARROW or DOWN ARROW to change the Selected ID value to
+   1.
+
+7. Click OK. Click OK again.
+
+8. Close Control Panel.
+
+Confirm the Version of SideWinder Game Controller Software
+----------------------------------------------------------
+
+If you use a SideWinder USB-only game controller, verify that version 4.0 or
+later of the SideWinder Game Controller Software is installed on your computer.
+
+If you use a gameport game controller or a hybrid gameport/USB game controller,
+verify that version 3.02 or earlier of the SideWinder Game Device Profiler or
+the SideWinder Game Controller software is installed on your computer.
+
+If you use both SideWinder USB-only game controllers and SideWinder gameport or
+hybrid gameport/USB game controllers, make sure that versions 4.0 or later and
+3.02 or earlier of the SideWinder Game Controller software are installed on your
+computer.
+
+The following table lists the SideWinder game controllers that are supported by
+each version of the SideWinder Game Controller software:
+
+   
+   +------------------------------------------------------------------------------------------------------+
+   | Game controller                   | Version 4.0                        | Version 3.02 or earlier     | 
+   +------------------------------------------------------------------------------------------------------+
+   | SideWinder Game Pad Pro           | Yes                                | No                          | 
+   +------------------------------------------------------------------------------------------------------+
+   | Sidewinder Plug and Play Game Pad | No (does not require any software) | No                          | 
+   +------------------------------------------------------------------------------------------------------+
+   | SideWinder Dual Strike            | Yes                                | No                          | 
+   +------------------------------------------------------------------------------------------------------+
+   | SideWinder 3D Pro                 | No                                 | Yes                         | 
+   +------------------------------------------------------------------------------------------------------+
+   | SideWinder Game Pad               | No                                 | Yes                         | 
+   +------------------------------------------------------------------------------------------------------+
+   | SideWinder Plug and Play Game Pad | No (does not require any software) | No                          | 
+   +------------------------------------------------------------------------------------------------------+
+   | SideWinder Joystick               | No                                 | No (does not need software) | 
+   +------------------------------------------------------------------------------------------------------+
+   | SideWinder Precision Pro          | No                                 | Yes                         | 
+   +------------------------------------------------------------------------------------------------------+
+   | SideWinder Precision Pro 2        | Yes                                | No                          | 
+   +------------------------------------------------------------------------------------------------------+
+   | SideWinder Force Feedback Pro     | No                                 | Yes                         | 
+   +------------------------------------------------------------------------------------------------------+
+   | SideWinder Force Feedback Pro 2   | No                                 | Yes                         | 
+   +------------------------------------------------------------------------------------------------------+
+   | SideWinder Force Feedback Wheel   | No                                 | Yes                         | 
+   +------------------------------------------------------------------------------------------------------+
+   | SideWinder Freestyle Pro          | No                                 | Yes                         | 
+   +------------------------------------------------------------------------------------------------------+
+   | SideWinder Precision Racing Wheel | Yes                                | No                          | 
+   +------------------------------------------------------------------------------------------------------+
+
+If you use one of the SideWinder game controllers listed in the table, visit the
+following Microsoft Web site to determine if a software update is available for
+your game controller:
+
+   http://www.microsoft.com/sidewinder/
+
+To determine the version of the SideWinder Game Device or SideWinder Game
+Controller software that is installed in your computer, follow these steps:
+
+1. Click Start, point to Find, and then click Files or Folders.
+
+2. In the Named box, type "sw3dpro.vxd" (without the quotation marks).
+
+3. In the Look in box, click My Computer, and then click Find Now.
+
+4. In the list of found files, right-click the Sw3dpro.vxd file, and then click
+   Properties.
+
+   NOTE: If the Sw3dpro.vxd file is not in the search results, the SideWinder
+   software is not installed.
+
+5. Click the Version tab. Note the value on the File Version line, and then
+   click OK.
+
+6. Close the search results window.
+
+Calibrate the Game Controller
+-----------------------------
+
+If you use a digital Microsoft SideWinder game controller with version 2.0 or
+later of the Microsoft SideWinder Game Device software or the Microsoft
+SideWinder Game Controller software, the software calibrates the game controller
+automatically.
+
+To use version 2.0 of the Microsoft SideWinder Game Device software to test the
+calibration for your digital SideWinder game controller, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Game Controllers.
+
+3. Click the Test tab. Test all of the functions for your digital SideWinder
+   game controller, and then click OK.
+
+4. Close Control Panel.
+
+To use version 3.x or 4.0 of the Microsoft SideWinder Game Controller software to
+test the calibration for your digital SideWinder game controller, follow these
+steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Game Controllers.
+
+3. Click the General tab. In the Game Controllers box, click the game controller
+   you want to test and then click Properties.
+
+4. Click the Test tab. Test all of the functions for your digital SideWinder
+   game controller, and then click OK. Click OK again.
+
+5. Close Control Panel.
+
+If you use an analog game controller, or if you use a Microsoft SideWinder 3D Pro
+or a Microsoft SideWinder game pad with version 1.5 of the SideWinder Game
+Device software, you may need to calibrate the game controller manually. To do
+this, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Game Controllers.
+
+3. In the Controller column, select the gaming device that you want to
+   calibrate, and then click Properties.
+
+4. Click Calibrate, and then follow the instructions on the screen to calibrate
+   the game controller.
+
+   If you use a SideWinder 3D Pro with version 1.0 of the SideWinder software,
+   and you are prompted to press a button on the controller, press a button on
+   the joystick rather than on the joystick base.
+
+   NOTE: Because of differences between analog game controllers, you may notice a
+   certain amount of deviation between the graphic display for the joystick
+   position and the actual joystick movement. This is normal and does not affect
+   the callibration of the game controller.
+
+5. When you receive a message indicating that you have successfully calibrated
+   your device, click Finish.
+
+6. Click the Test tab. Test all of the functions for your game controller, and
+   then click OK.
+
+7. Close Control Panel.
+
+NOTE: In SideWinder Game Device version 1.5, the calibration option is
+unavailable unless you install Midtown Madness 2 with DirectX 7.0a.
+
+If you cannot calibrate your game controller, or if your game controller does not
+function properly when you test it, Microsoft Windows may be unable to
+communicate properly with the game controller. If this is true, contact the
+manufacturer of your game controller for information about how to configure the
+device correctly in Windows. You may also need to obtain and install the latest
+version of the game controller device driver.
+
+If you calibrate and test the game controller successfully, start Midtown Madness
+2 and test the game controller in the game. If the issue continues to occur,
+calibrate the device in Midtown Madness 2. To do this, follow these steps:
+
+1. Start Midtown Madness 2.
+
+2. On the Main menu, click Options, and then click Contol.
+
+3. In the Control drop-down list, click the controller that you want to use in
+   the game. If you are using Gamepad choose Gamepad, if you are using Joystick
+   choose Joystick, if you are using Steering Wheel or Force Feedback Wheel
+   choose Steering Wheel.
+
+4. On the Control Options screen, click Calibrate.
+
+5. Verify that the game controller that you want to use appears in the Game
+   Controllers box.
+
+   NOTE: If the Game Controllers box contains a different game controller, click
+   the game controller, and then click Remove.
+
+6. In the Game Controllers box, click the game controller that you want to use,
+   and then click Properties.
+
+7. Click the Settings tab. Move the sliders to the settings that you want to
+   use.
+
+8. Click OK. Click OK again.
+
+Reset the Default Actions
+-------------------------
+
+To reset the default actions assigned to the game controller, follow these
+steps:
+
+1. Start Midtown Madness 2.
+
+2. On the Main menu, click Control, and then click Customize Controls.
+
+3. Click Defaults. If you are prompted to restore the original settings, click
+   OK.
+
+4. To determine if the default events are selected for your game controller,
+   verify that your settings match the settings in the following table:
+
++---------------------------------+
+| Event         | Axis            | 
++---------------------------------+
+| Throttle Axis | Joy Y-axis UP   | 
++---------------------------------+
+| Brakes        | Joy Y-axis-Down | 
++---------------------------------+
+
+For additional informationabout troubleshooting game controller problems, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q279849 Midtown Madness 2: Game Controller Problems Troubleshooting (Part 2)
+
+REFERENCES
+==========
+
+For additional information about game controllers, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+   Q273808 Midtown Madness 2: List of Controllers on the Control Options Screen
+   Is Incorrect
+
+Additional query words: kbimu homegame msgame
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch kbGamesSearch kbMidtownMadSearch kbMidtownMadness2
+Version           : :2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

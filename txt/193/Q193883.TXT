@@ -1,0 +1,67 @@
+DOCUMENT:Q193883  23-DEC-1999  [word97]
+TITLE   :WD97: Cannot Replace Character Formatting With Nothing in SR-2
+PRODUCT :Word 97 for Windows
+PROD/VER::Service Release 2
+OPER/SYS:
+KEYWORDS:kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows, version Service Release 2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Word 97 Service Release 2 (SR-2), you cannot search for character
+level formatting and replace the characters with nothing in that specific
+format.
+
+In earlier versions of Word if you want to format text with the font color of red
+and then later delete all red text in your document, you could search for the
+font color red and leave the Replace With box empty, and the text would be
+deleted. In SR-2, the text does not get deleted and nothing happens.
+
+RESOLUTION
+==========
+
+First, you will need to replace the formatted text with a character that is not
+found in the document and then search for that character and leave the Replace
+With box empty.
+
+For example, replace all text formatted with the font color red with an asterisk.
+Then search for the asterisk and leave the Replace With box empty to delete all
+the asterisks.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2 kbWord97SR2
+Version           : :Service Release 2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

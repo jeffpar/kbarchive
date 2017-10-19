@@ -1,0 +1,63 @@
+DOCUMENT:Q149339  08-AUG-2001  [winnt]
+TITLE   :Memory leak in RPCSS Running Exchange 4.0 on Windows NT 3.51
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.51
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While running Microsoft Exchange 4.0 Service Pack 3 on Windows NT 3.51 Service
+Pack 4 or 5 you may experience error messages when the server is running for
+several days. You may also receive the following error message:
+
+   The system is out of virtual memory.
+
+When you examine the virtual bytes of the running processes, you notice the value
+for RPCSS is increasing continuously.
+
+This problem has been observed on a server running a third party connector, but
+it also appeared when the connector was stopped.
+
+CAUSE
+=====
+
+Microsoft has found and fixed memory leaks in RPCSS while working on Windows NT
+4.0.
+
+STATUS
+======
+
+This problem is fixed in Windows NT 4.0.
+
+Additional query words: prodnt oem opk unattended
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : 3.51
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

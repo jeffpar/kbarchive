@@ -1,0 +1,154 @@
+DOCUMENT:Q122323  08-AUG-2001  [winnt]
+TITLE   :WinNT 3.5 Software Update for the Pentium Floating Point Error
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.50
+
+WINDOWS
+
+kbtool kbfix3.50.sp1
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft has developed a utility (PENTNT.EXE) that, on Pentium-based systems,
+checks whether the processor contains the floating point division error, reports
+the current status of floating point, and allows disabling and re-enabling of
+hardware floating point.
+
+This software effectively turns off the math coprocessor by trapping the floating
+point instructions. This makes the Pentium processor behave similarly to 486SX
+or 386 processors that do not have a math coprocessor. The utility works on
+Pentium and x86 systems.
+
+Additionally, the solution is implemented through registry settings so that
+system policy administrators can control the use of Pentium floating point
+hardware on user systems.
+
+STATUS
+======
+
+This utility is available in the latest U.S. Service Pack for Windows NT version
+3.5. For information on obtaining the Service Pack, query on the following word
+in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+This utility is included in Windows NT version 3.51.
+
+MORE INFORMATION
+================
+
+Performance Considerations
+--------------------------
+
+Core operating system code (for window management, disk and file operations, and
+application programming interfaces) in Windows NT does not perform floating
+point calculations, and so will not be affected either by the potential floating
+point hardware division errors, or by disabling hardware floating point.
+However, choosing software emulation of floating point will result in lower
+performance of floating point operations. Some utilities and applications such
+as the Calculator application provided with Windows NT, and the OpenGL rendering
+engine, may use floating point hardware when present. Most word processors,
+databases, email, and so on, perform few or no floating point operations.
+
+Math-intensive applications, including spreadsheets and technical applications,
+typically perform floating point operations, and therefore will experience some
+performance degradation. The OpenGL rendering engine, which is part of Windows
+NT 3.5, and other 3D and CAD applications, are instances of this type of
+application. The user of such applications will be able to choose between the
+higher speed of hardware floating point, or slower floating point software
+emulation libraries, which will not encounter the Pentium floating point
+division error. Many applications contain their own floating point libraries to
+use in this case. A few applications (such as Autocad) require floating point
+hardware and will not run without it. Customers running these applications will
+need to replace their Pentium processor in order to avoid the floating point
+division error. The floating point software emulation's libraries are used on
+systems with 486SX or 386 processors.
+
+Running PENTNT.EXE
+------------------
+
+To start the PENTNT.EXE utility, at the MS-DOS prompt type:
+
+   PENTNT [-C|-c] [-F|-f] [-O|-o] [-?|-H|-h]
+
+The utility will test floating point division. If no error is found, a message
+will appear recommending that you use floating point hardware. If a division
+error is detected, a message appears notifying you of the error. You then have
+several choices: to disable floating point hardware only if you are using a
+Pentium processor with a division error, or disable floating point hardware
+always. If you choose to disable or re-enable floating point emulation, you must
+restart the computer for the changes to take effect.
+
+The complete PENTNT command syntax is as follows:
+
+   PENTNT [-C|-c] [-F|-f] [-O|-o] [-?|-H|-h]
+
+where:
+
+-C|-c Turns on conditional emulation. This means that floating point emulation
+will be forced on if and only if the system detects the Pentium floating point
+division error at start time. If you select this parameter, you must restart the
+computer for the changes to take effect.
+
+-F|-f Turns on forced emulation. This means that floating point hardware is
+disabled and floating point emulation will always be forced on, regardless of
+whether the system exhibits the Pentium division error. This parameter is useful
+for testing software emulators and for working around floating point hardware
+defects known to the operating system. If you select this parameter, you must
+restart the computer for the changes to take effect.
+
+-O|-o Turns off forced emulation and re-enables floating point hardware if it is
+present. If you select this parameter, you must restart the computer for the
+changes to take effect.
+
+-?|-H|-h Displays help for the command.
+
+Registry Entry
+--------------
+
+The Registry entry for the PENTNT utility is located in the Registry subtree
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SessionManager. The
+following parameter is used by the PENTNT utility:
+
+REG_DWORD
+ForceNpxEmulation = 0 | 1 | 2
+
+Specifies if the floating point emulation is turned on or off. If set to 0,
+floating point emulation is not enabled and floating point hardware is enabled.
+If set to 1, conditional floating point emulation is enabled. If set to 2,
+unconditional emulation is enabled. By default, this parameter is set to 0.
+
+Additional query words: prodnt fpu bug intel
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

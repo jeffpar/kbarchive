@@ -1,0 +1,71 @@
+DOCUMENT:Q197442  14-NOV-2000  [word97]
+TITLE   :WD97: Hidden Drop-Down List Box in Tools Customize Dialog Box
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The (Customize) Menus dialog box contains a hidden drop-down list box that gives
+you additional information about some commands. To access the list box, follow
+these steps:
+
+1. On the Tools menu, click Customize, and then select the Commands tab.
+
+2. In the Categories list, click All Commands.
+
+3. From the list of Commands, choose any command that has a colon next to it;
+   for example, "Borders:".
+
+A new list box appears above the "Save in:" ("Save Changes In:") box. For
+example, if you choose Borders: in the Commands list, the new list box above the
+"Save in:" box includes Top, Bottom, Left, and so on.
+
+MORE INFORMATION
+================
+
+Commands that have additional information:
+
+   Borders:
+   Columns:
+   Color:
+   Condensed:
+   Expanded:
+   FontSize:
+   Lowered:
+   Raised:
+   Shading:
+
+Additional query words:
+
+======================================================================
+Keywords          : word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,91 @@
+DOCUMENT:Q179325  07-MAY-2002  [homegame]
+TITLE   :FS98: Computer Hangs When You Click Time & Season
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kb3rdparty kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using Flight Simulator 98 and you click Time & Season on the
+World menu, your computer may stop responding (hang).
+
+CAUSE
+=====
+
+This behavior can occur if Adobe Type Manager is installed. Adobe Type Manager
+makes the following modifications to the System.ini file:
+
+   [Boot]
+   SYSTEM.DRV=ATMSYS.DRV
+   ATMSYS.DRV=SYSTEM.DRV
+
+RESOLUTION
+==========
+
+To resolve this behavior, disable Adobe Type Manager. To do so, use the
+following steps:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "system.ini" (without the quotation marks), and then
+   click OK.
+
+3. In the [Boot] section of the System.ini file, locate the following lines:
+
+   SYSTEM.DRV=ATMSYS.DRV
+   ATM.SYSTEM.DRV=SYSTEM.DRV
+
+4. Type a semicolon (;) at the beginning of both lines, for example:
+
+   ;SYSTEM.DRV=ATMSYS.DRV
+   ;ATM.SYSTEM.DRV=SYSTEM.DRV
+
+5. Type the following line in the [Boot] section of the System.ini file:
+
+   System.drv=System.drv
+
+6. On the File menu, click Save.
+
+7. On the File menu, click Exit.
+
+8. Restart the computer.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: fs98 flightsim fltsim flt sim atm sys freeze locks lock up
+
+======================================================================
+Keywords          : kb3rdparty kbenv kbimu 
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim98 kbSimSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

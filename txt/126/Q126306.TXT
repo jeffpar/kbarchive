@@ -1,0 +1,74 @@
+DOCUMENT:Q126306  13-DEC-1999  [msdos]
+TITLE   :Laser Tools PrintCache (PCACHE.EXE) Hangs MSD
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.21,6.22; WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.21, 6.22 
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+According to Laser Tools Technical Support, the Laser Tools PrintCache program
+causes certain versions of Microsoft Diagnostics (MSD) to stop responding (hang)
+when you choose to view network information.
+
+MORE INFORMATION
+================
+
+The following versions of MSD hang when you choose to view network information
+if PrintCache (PCACHE.EXE) is loaded as a terminate-and-stay- resident (TSR)
+program:
+
+ - MSD version 2.10 (included with Microsoft Windows for Workgroups version
+   3.11)
+
+ - MSD version 2.11 (included with MS-DOS versions 6.21 and 6.22)
+
+This problem with PCACHE.EXE does not occur with earlier versions of MSD (2.00
+and 2.01).
+
+Workarounds
+-----------
+
+Use either of the following methods to work around this problem:
+
+ - Start MSD with the /I switch to skip hardware detection. Do not choose to
+   view network information.
+
+ - Edit the AUTOEXEC.BAT file and remove or remark the PCACHE.EXE line.
+
+PrintCache is manufactured by Laser Tools, a manufacturer independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+
+Additional query words: 3.11 msd pcache 6.21 6.22
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311 kbMSDOSSearch kbMSDOS621 kbMSDOS622
+Version           : MS-DOS:6.21,6.22; WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

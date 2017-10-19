@@ -1,0 +1,63 @@
+DOCUMENT:Q160701  25-JUL-2001  [sms]
+TITLE   :SMS: Inventory Does Not Detect Memory Beyond 16 MB
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kb3rdparty kbInventory smsinvkbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+On computers running the OS/2 2.x, 3.x, or 4.x operating system, memory over 16
+MB will not be detected or reported by the Systems Management Server Inventory
+Agent.
+
+CAUSE
+=====
+
+To determine the amount of available memory, Systems Management Server makes a
+16-bit API call. This call does not return the correct amount of memory on a
+32-bit version of OS/2.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.0, 1.1, and 1.2. A supported fix is now available for version 1.2
+only, but it has not been fully regression-tested and should be applied only to
+systems experiencing this specific problem. Unless you are severely impacted by
+this specific problem, Microsoft recommends that you wait for the next Service
+Pack that contains this fix. Contact Microsoft Technical Support for more
+information.
+
+Additional query words: 1.00 1.10 1.20 prodsms
+
+======================================================================
+Keywords          : kb3rdparty kbInventory smsinv kbfixlist
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

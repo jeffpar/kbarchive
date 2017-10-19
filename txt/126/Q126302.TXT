@@ -1,0 +1,77 @@
+DOCUMENT:Q126302  13-DEC-2000  [foxpro]
+TITLE   :PRB: Excluded Encrypted App in Project Makes New App Encrypted
+PRODUCT :Microsoft FoxPro
+PROD/VER::2.6a,3.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbvfp300 kbvfp500 kbvfp600 kbGrpDSFox kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Windows, version 2.6a 
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click Options on the Project menu, the Encrypted check box is selected
+even though it was never selected.
+
+CAUSE
+=====
+
+You have included in your project, as an excluded object, an application (.app
+file) that was built with encryption.
+
+RESOLUTION
+==========
+
+There are two ways to work around this problem:
+
+ - If you want to include a reference to another application in your project,
+   and that project was built with encryption, rebuild the referenced project
+   without encryption.
+
+ - Remove the referenced application from your project. Then, on the Project
+   menu, click Options, and make sure that you clear the Encryption check box.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create two projects named ProjectA and ProjectB.
+
+2. Build ProjectB with encryption turned on.
+
+3. In ProjectA, click Add, and add a reference to the ProjectB application file.
+
+4. The resultant A.APP file is built with encryption turned on. To check this,
+   on the Project menu, click Options; the Encryption check box is selected.
+
+Additional query words: FoxWin encrypted
+
+======================================================================
+Keywords          : kbvfp300 kbvfp500 kbvfp600 kbGrpDSFox kbDSupport 
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260a kbVFP300 kbVFP500 kbVFP600
+Version           : :2.6a,3.0,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

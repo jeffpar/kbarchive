@@ -1,0 +1,111 @@
+DOCUMENT:Q154643  21-DEC-2000  [odbc]
+TITLE   :INFO: Desktop Drivers Not Meant For Access or DAO
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER::3.40
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.40.2728
+
+WINDOWS
+
+kbnetwork
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 3.40 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft ODBC Desktop Drivers should not be called from a Jet-based
+application such as Access, Visual Basic bound data controls, Data Access
+Objects (DAO) or the Visual C++ DAO classes.
+
+MORE INFORMATION
+================
+
+The Microsoft Jet Database Engine stores its native databases in Access *.mdb
+file format. If you load Installable ISAM DLL files, Jet can also work directly
+with dBASE, Microsoft Excel, Microsoft FoxPro, Paradox, and Text files. This
+means that the three Microsoft products which have been developed using the Jet
+Database Engine have native access to all of these file types. In addition to
+working directly with these file types, Jet can work against any data source
+which provides an ODBC driver. This is called attaching an external ODBC data
+source or table.
+
+The first Microsoft product developed using Jet is Access. All database work done
+in Access goes through Access's instance of Jet, either against its native *.mdb
+files or the other file types it can access directly using Installable ISAM's.
+The second product developed using Jet is the Data Access Objects (DAO)
+implemented in both Visual Basic and the Visual C++ DAO classes. DAO can also
+work natively against Access *.mdb files and the files accessed through the
+Installable ISAM's. Both Access and DAO can also work against any ODBC driver to
+work with file types or databases not covered by Jet's Installable ISAM's. The
+third Microsoft product group developed using the Jet engine is the Microsoft
+Desktop Drivers for Microsoft Access, dBASE, Microsoft Excel, Microsoft FoxPro,
+Text, and Paradox. The Desktop Drivers are different than Access and DAO in that
+each driver loads a specific Installable ISAM DLL file; therefore, they are
+limited to working with the file type covered by that Installable ISAM.
+
+When an Access or DAO application is run, it starts an instance of the Jet engine
+for the application process. If this application then attempted to connect to an
+ODBC Desktop Driver, the process would have to load a second instance of Jet to
+implement the driver. Jet is not architected in a way that will allow two
+instances of Jet to be run for a single process, so this results in various
+errors. Applications using Access or DAO must use their native mechanisms to
+work with .mdb files or the files accessed through Installable ISAM's. The
+Desktop Drivers are provided for use from applications utilizing API's not based
+on the Jet engine. Examples where the Desktop Drivers can be used would be
+Visual Basic Remote Data Objects (RDO), Visual C++ MFC Database Classes, or
+applications written directly to the ODBC API.
+
+Jet-based applications cannot use the Desktop Drivers even with SQL_PASSTHROUGH.
+SQL_PASSTHROUGH is an option which Access or DAO programmers can use to instruct
+Jet not to process a SQL command and simply pass it directly to an attached ODBC
+driver. The Access or DAO application must load its instance of Jet however, and
+this may cause problems for the Jet instance of a Desktop Driver. Visual Basic
+or Visual C++ applications cannot have any DAO code at all if they are going to
+work with Desktop Drivers. In one support case, a Visual Basic application was
+converted from DAO to the ODBC API, but it was still getting errors when it
+attempted to use the Access ODBC driver. The cause was found to be that one DAO
+line, a dim database, had been left in the application. Even though this dim
+database was never actively referenced in the code, it was sufficient to load a
+DAO instance of Jet that caused problems for the Access driver's instance of
+Jet. The application worked correctly when the dim database was removed.
+
+Not all Microsoft drivers are implemented using the Jet Database Engine, and
+these issues do not apply to them. Examples are the Microsoft SQL Server and
+Visual Foxpro ODBC drivers. Users can find out if a driver is based on Jet using
+the ODBC Administrator. In the ODBC Administrator, click Drivers. In the list of
+drivers, double-click the driver in question. If the driver's file name is
+ODBCJT32.DLL or ODBCJT16.DLL, it is a Jet- based driver. If the file name is
+something else, it is not a Jet-based driver and is not affected by the issues
+discussed in this article.
+
+Additional query words: odbc 3.40.2728
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbODBCSearch
+Version           : :3.40
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

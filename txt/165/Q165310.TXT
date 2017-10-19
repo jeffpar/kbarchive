@@ -1,0 +1,95 @@
+DOCUMENT:Q165310  13-JUN-2001  [sna]
+TITLE   :5250 Print Sessions Don't Reconnect After Connection Outage
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 3.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+5250 print sessions defined under the Host Print service for SNA Server 3.0 stay
+in an Inactive state after the SNA Server connection to the AS/400 recovers from
+a connection outage. This occurs even though the 5250 print sessions are
+configured for Automatic activation in SNA Server Manager.
+
+This problem will occur even if the connection outage is caused by a planned
+outage, such as an AS/400 IPL.
+
+SNA Server Manager will show that the connection to the AS/400 has been
+reactivated via the normal retry algorithm of SNA Server, but the 5250 print
+sessions are still Inactive.
+
+CAUSE
+=====
+
+5250 print sessions do not try to reestablish the APPC conversation after the
+APPC conversation was terminated by a connection outage.
+
+RESOLUTION
+==========
+
+The workaround is to manually start the 5250 print sessions after a connection
+outage has occurred.
+
+The Host Print service has been updated so that 5250 print sessions will try to
+reactivate the APPC conversation using configurable parameters that set the
+number of retry attempts and the retry interval between attempts. These two
+parameters are configurable via the following registry parameters
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
+      \SnaPrint\Parameters\ActivationRetryLimit: REG_DWORD: <limit>
+
+where: <limit> is the number of retries. The default value is -1
+(infinite), if this parameter is not set.
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
+      \SnaPrint\Parameters\ActivationRetryInterval: REG_DWORD: <interval>
+
+where <interval> is the retry interval in seconds. The default value is 10
+seconds, if this parameter is not set. The updated module is:
+
+   <Snaroot>\System\Ppd5250.dll
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 3.0. This
+problem was corrected in the latest Microsoft SNA Server 3.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300
+Version           : WINDOWS:3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

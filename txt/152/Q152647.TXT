@@ -1,0 +1,69 @@
+DOCUMENT:Q152647  15-DEC-1999  [foxpro]
+TITLE   :How To Copy a Table and Preserve Long Field Names
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b; WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to copy a table and preserve long file names even
+though COPY TO and COPY STRUCTURE EXTENDED do not provide this functionality. It
+is possible to use AFIELDS() and CREATE TABLE .. FROM ARRAY to accomplish the
+task. An example is provided below.
+
+MORE INFORMATION
+================
+
+In order to preserve long file names, a database must be open and active when
+the CREATE TABLE command is issued. This causes the CREATE TABLE to create a
+database table, rather than a free table.
+
+Example
+-------
+
+Enter the following commands in the Command window:
+
+      OPEN DATABASE HOME()+"SAMPLES\MAINSAMP\DATA\tastrade"
+      USE customer
+
+      nFldcount = AFIELDS(aFldarray)    && creates an array of fields
+
+      * The following command creates and opens a table with the structure
+      * described in the array
+      CREATE TABLE newcopy FROM ARRAY aFldarray
+
+      * If the data needs to be copied, you can then APPEND it
+      APPEND FROM customer
+
+Additional query words: VFoxWin VFoxMac
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP300b
+Version           : MACINTOSH:3.0b; WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

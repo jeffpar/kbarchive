@@ -1,0 +1,132 @@
+DOCUMENT:Q101539  13-NOV-1999  [pcmail]
+TITLE   :PC Forms: Using Visual Basic OLE 2.0 Control
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:1.0,3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Electronic Forms Designer, version 1.0, used with:
+    - Microsoft Mail for PC Networks, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Electronic Forms Designer was designed to be used with version 2.0 or
+later of Microsoft Visual Basic Professional edition. An OLE (Object Linking and
+Embedding) 1.0 control that allows applications to exchange data is included
+with Visual Basic 2.0. The E-Forms Designer was developed to interface with
+version 1.0 of the OLE control.
+
+However, version 3.0 of Microsoft Visual Basic includes support for OLE 2.0 with
+a new OLE control (MSOLE2.VBX). This new implementation of OLE is not supported
+by the Electronic Forms Designer unless the following modifications are made to
+the EFORM.BAS and CONSTANT.BAS files.
+
+Modify Functions in EFORM.BAS
+-----------------------------
+
+The OLE 1.0 control type is defined as "OleClient." With OLE 2.0, the control
+type is "OLE." Perform the following steps to update the code in the
+ReadTaggedControls and WriteTaggedControls functions defined in EFORM.BAS:
+
+1. Open your E-Form project in Visual Basic.
+
+2. From the Project window, select EFORM.BAS. Click the View Code button to
+   display the code.
+
+3. From the Procedures drop-down list box, select the ReadTaggedControls
+   function.
+
+4. Scroll to the code that enumerates the OLE control. In the following line of
+   code
+
+         ElseIf TypeOf ctrl Is OleClient Then
+
+   change "OleClient" to "OLE".
+
+5. From the Procedures drop-down list box, select the WriteTaggedControls
+   function.
+
+6. Repeat step 4 to modify the type declaration.
+
+7. From the File menu, choose Save Project.
+
+Modify Definitions in CONSTANT.BAS
+----------------------------------
+
+In addition to a change to the type definition, OLE 2.0 changed a number of
+settings for the Action and OLEType properties, as well as the Updated Event.
+These settings are defined in the CONSTANT.BAS file. To update the settings, do
+the following:
+
+1. Open your E-Form project in Visual Basic.
+
+2. From the Project window, select CONSTANT.BAS. Click the View Code button to
+   display the code.
+
+3. Scroll to the section commented "'OLE Client Control."
+
+4. Modify the section titled "'Action" as listed below:
+
+         'Action
+         Global Const OLE_CREATE_NEW = 0
+         Global Const OLE_CREATE_FROM_FILE = 1
+         Global Const OLE_COPY = 4
+         Global Const OLE_PASTE = 5
+         Global Const OLE_UPDATE = 6
+         Global Const OLE_ACTIVATE = 7
+         Global Const OLE_CLOSE = 9
+         Global Const OLE_DELETE = 10
+         Global Const OLE_SAVE_TO_FILE = 11
+         Global Const OLE_READ_FROM_FILE = 12
+         Global Const OLE_INSERT_OBJ_DLG = 14
+         Global Const OLE_PASTE_SPECIAL_DLG = 15
+         Global Const OLE_FETCH_VERBS = 17
+         Global Const OLE_SAVE_OLE1 = 18
+
+5. Update the section titled "'ServerType" to "'OLEType" and make the following
+   changes:
+
+         'OLEType
+         Global Const OLE_LINKED = 0
+         Global Const OLE_EMBEDDED = 1
+         Global Const OLE_NONE = 2
+
+6. Change "'Update Event Constants" to "'Updated Event Constants" and make the
+   following change:
+
+         'Updated Event Constants
+         Global Const OLE_CHANGED = 0
+         Global Const OLE_SAVED = 1
+         Global Const OLE_CLOSED = 2
+         Global Const OLE_RENAMED = 3
+
+7. From the File menu, choose Save Project.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:1.0,3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

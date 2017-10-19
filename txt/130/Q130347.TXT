@@ -1,0 +1,92 @@
+DOCUMENT:Q130347  11-FEB-2000  [foxpro]
+TITLE   :PRB: Bound Control Does Not Show Current Record Value
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the record pointer is moved, the value property of a bound control does not
+appear to update properly.
+
+CAUSE
+=====
+
+The value property of a bound control is not refreshed automatically.
+
+RESOLUTION
+==========
+
+To refresh a bound control, issue thisform.refresh or trigger the gotfocus
+method.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a new form.
+
+2. Add a textbox object as txtget1.
+
+3. Set the controlsource of the txtget1 to customer.company.
+
+4. Add a commandbutton object as cmdskip.
+
+5. In the click method of cmdskip, type:
+
+      SKIP
+
+6. Save the Form.
+
+7. In the Debug Window, type:
+
+      _screen.activeform.txtget1.value
+
+8. In the Command window, type:
+
+      USE customer
+      DO FORM
+
+9. Click the cmdskip button to see that the the value of txtget1 does not change
+   in the Debug Window. Note that the value changes if you click in the txtget1
+   textbox or if you add thisform.refresh to the click method of cmdskip after
+   the SKIP command.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

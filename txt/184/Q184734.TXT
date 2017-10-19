@@ -1,0 +1,58 @@
+DOCUMENT:Q184734  26-MAY-1999  [homegame]
+TITLE   :Outwars: Volume Is Set at Maximum Level When You Start Game
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbsound kbui kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outwars, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The first time you start Microsoft Outwars, the Master Volume in the game is set
+at its maximum level.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. Start Outwars.
+
+2. On the startup screen, click Options.
+
+3. On the Options screen, click Sound.
+
+4. Click the left Master Volume arrow to reduce the volume level.
+
+5. Click OK, and then click Back.
+
+Additional query words: 1.00 msgame outwar out wars loud
+
+======================================================================
+Keywords          : kbsound kbui kbimu msgame 
+Technology        : kbGamesSearch kbOutwarsSearch kbOutwars kbZNotKeyword3
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

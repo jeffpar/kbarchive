@@ -1,0 +1,59 @@
+DOCUMENT:Q251184  27-JAN-2000  [exchange]
+TITLE   :XADM: Link Monitor Doesn't Work After Priv.edb Is Renamed
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After you rename or delete a private information store (Priv.edb) within your
+Exchsrvr\Mdbdata folder, you may notice that link monitors that were set up to
+monitor that server no longer function properly. This happens if only the
+information store was shut down to do this.
+
+MORE INFORMATION
+================
+
+When starting the Exchange Server services, the system attendant attempts to log
+on to the information store to send and receive its own messages. If you stop
+your information store, rename, or delete your Priv.edb file, and then start the
+private information store by creating a new Priv.edb file, the system attendant
+still thinks that it is logged on to the old private information store.
+
+To get the link monitor messages working again, you need to stop and restart the
+system attendant to log on to the new database that you created. When the next
+polling interval occurs, the system attendant replies properly, and the link
+monitor state indicates that the link is operational.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

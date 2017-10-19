@@ -1,0 +1,61 @@
+DOCUMENT:Q152267  19-FEB-2002  [exchange]
+TITLE   :XCLN: Exchange Client Fails After Removing Application
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Client for Windows 95, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Exchange client for Windows 95 might fail to start following the
+removal of an application. The Microsoft Exchange logo will appear for several
+seconds, and then disappear, but the Microsoft Exchange client does not start.
+
+CAUSE
+=====
+
+An application was removed that used Msvcrt40.dll. An example is Microsoft
+Visual C++. Removing the application might have deleted Msvcrt40.dll without a
+warning that this DLL is shared and also used by the Microsoft Exchange client.
+
+When you try to install the Exchange client, if the Msvcrt40.dll file is
+corrupted or the wrong version, you may receive the following error message:
+
+   Internal error installing forms
+
+RESOLUTION
+==========
+
+Remove the Msvcrt40.dll and then reinstalled the client. Once Msvcrt40.dll is
+installed, the client will function as expected.
+
+Additional query words: msvcrt40 Exchange client startup hang msvcrt40.dll disappear
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword2 kbZNotKeyword3
+Version           : :4.0,5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

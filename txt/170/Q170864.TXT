@@ -1,0 +1,74 @@
+DOCUMENT:Q170864  12-SEP-1999  [crossnet]
+TITLE   :Error Trying to Run ADO When ASP Installed w/ SQL Server Running
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:Winnt:3.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to run any of the Active Data Object (ADO) examples that are
+included with the Microsoft Active Server Pages (ASP) roadmap, you will get the
+following error messages:
+
+   Server object error 'ASP 0177:800401f3'
+
+   Server.CreateObject Failed
+
+-and-
+
+   The call to Server.CreateObject failed. The requested object instance cannot
+   be created.
+
+CAUSE
+=====
+
+You have Microsoft SQL Server installed on this server, and the SQL Server
+services are running when you installed Active Server Pages. The ADO Dlls were
+not registered due to SQL Server services that were running.
+
+RESOLUTION
+==========
+
+Uninstall Active Server Pages by selecting Start, Programs, Microsoft Internet
+Server (common), and clicking Active Server Pages Uninstall.
+
+Stop all SQL services from Control Panel, Services.
+
+Install Active Server Pages. The ADO Dlls should be registered correctly.
+
+Test by running some of the ADO samples in the ASP roadmap. They should work.
+
+From Control Panel, Services start all the SQL Server services.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbiisSearch kbiis300
+Version           : Winnt:3.0
+Hardware          : ALPHA x86
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

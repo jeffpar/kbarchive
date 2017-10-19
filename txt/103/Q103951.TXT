@@ -1,0 +1,65 @@
+DOCUMENT:Q103951  30-JUL-2001  [crossnet]
+TITLE   :OSI Model: Vertical Interface Terminology
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+VERTICAL INTERFACE TERMINOLOGY
+
+The active elements in each network layer are called entities, and are
+typically implemented by means of a software process. Entities in the
+corresponding layers on different machines are called peer entities.
+
+The layer N-1 entities implement the services used by layer N. These
+services are exposed by means of "well-known" service access points
+(SAPs). A SAP is actually just a mechanism, such as an API, MS-DOS
+interrupt, or a direct entry point address, by which the layer above
+can programmatically access a particular function (service)
+implemented by the layer below.
+
+For data transfer services, OSI defines a standard set of rules that
+govern the interface between layers:
+
+ - The layer N entity passes an interface data unit (IDU) to the layer N-1
+   entity by means of the appropriate service access point (SAP).
+
+   1. The IDU consists of a protocol data unit (PDU) and some interface control
+      information (ICI).
+
+   2. The PDU is the data that the layer N entity wishes to pass across the
+      network to its peer entity, it consists of the layer N header and the data
+      that layer N received from the layer above (N+1).
+
+   3. The layer N PDU becomes the layer N-1 service data unit (SDU)--the data
+      unit that will be "serviced by" layer N-1.
+
+   4. The ICI is control information, such as the length of the SDU, that the
+      layer below needs to do its job.
+
+ - When layer N-1 receives the layer N IDU, it "strips off" and "considers" the
+   ICI, adds its header information (for its peer entity across the network),
+   adds ICI for the layer below, and passes the resulting IDU to the layer N-2
+   entity by means of the appropriate SAP.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

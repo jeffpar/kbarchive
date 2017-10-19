@@ -1,0 +1,93 @@
+DOCUMENT:Q254613  23-NOV-2000  [iis]
+TITLE   :Error Message: HTTP/1.0 Invalid Application Name
+PRODUCT :Internet Information Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you connect to a Windows 2000 Server-based computer running Internet
+Information Services (IIS) 5.0, you may receive the following error message:
+
+   HTTP/1.0 Invalid Application Name
+
+CAUSE
+=====
+
+There are several causes for this kind of error message, which include the
+following:
+
+ - Permission problems or conflicting permissions can cause this problem.
+   Administrators sometimes forget to remove or streamline permissions at the
+   NTFS level, which can cause the error message to occur. For additional
+   information about setting permissions on NTFS drives, click the article
+   number below to view the article in the Microsoft Knowledge Base:
+
+   Q187506 List of NTFS Permissions Required for IIS Site to Work
+
+   Also, the Anonymous user account can be replaced with specific users (local
+   and global) and groups when tighter security is required. Essentially, the
+   only accounts that need access to any Web site are Administrators (local
+   group), System, and either IUSR or the specific groups and users you want to
+   give access to. All other accounts should be removed from the list.
+
+ - IUSR missing Read and Execute (RX) permissions on the Global.asa file can
+   cause this error message. It is often incorrectly assumed that granting Read
+   access to the Global.asa file allows malicious users the ability to read and
+   manipulate that file. Actually, for sites that allow Anonymous access, this
+   permission is required for the Global.asa file to initiate properly. If you
+   are not using the Anonymous account, please see the Knowledge Base article
+   referenced previously for information on setting correct permissions.
+
+ - The FrontPage Server Extensions (FPSE) are not installed correctly. The FPSE
+   set up the server for added functionality by using the FrontPage and Visual
+   InterDev client tools. If they are incorrectly or incompletely installed,
+   this error message can occur.
+
+ - It is possible that pages are in a subfolder of the parent application root,
+   and that folder has restricted permissions. For example, if the Default Web
+   Site is set at C:\Inetpub\Wwwroot, and this is the Application root in
+   Microsoft Transaction Server (MTS). The Wwwroot folder has given NTFS
+   permissions to the Everyone group. However, under the Wwwroot folder,
+   permissions have been set on a folder called test that restricts access to
+   that folder. If you have set up a Web site so that folders at one level of
+   the site have relatively open permissions, and sub-levels have restricted
+   permissions, then you may encounter this problem. Please see the Knowledge
+   Base article referenced previously to set consistent permissions for the
+   entire application.
+
+Additional query words: IIS 5
+
+======================================================================
+Keywords          : kbOSWin2000 kbfaq
+Component         : InternetServices
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Hardware          : x86
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

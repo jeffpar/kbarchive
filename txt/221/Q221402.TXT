@@ -1,0 +1,63 @@
+DOCUMENT:Q221402  27-FEB-2000  [exchange]
+TITLE   :XWEB: OWA Message Body Does Not Display European Currency Symbol
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5; winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+ - Microsoft Outlook Web Access, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you receive e-mail that contains the new European currency symbol
+(ALT+0128) in Outlook Web Access (OWA), a question mark is displayed in the body
+of the message instead of the correct symbol.
+
+CAUSE
+=====
+
+Your Outlook Web Access server and Exchange Server computer are running
+different versions of Microsoft Windows NT Server. All of the servers should be
+running Microsoft Windows NT Server version 4.0 with Service Pack 4 (SP4)
+applied. Correct European symbol support requires SP4.
+
+MORE INFORMATION
+================
+
+Exchange Server administrators can set Internet encoding to the Windows-1252
+character set to send European symbols by using Internet protocols, for example,
+the Internet Mail Connector (IMC), Post Office Protocol (POP), and Internet
+Message Access Protocol (IMAP).
+
+
+Additional query words: dollar, euro
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOWASearch kbOWA550
+Version           : WINDOWS:5.5; winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

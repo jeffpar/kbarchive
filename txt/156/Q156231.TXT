@@ -1,0 +1,72 @@
+DOCUMENT:Q156231  20-MAY-2002  [win95x]
+TITLE   :"Error 26" After Installing Windows 95 from NetWare Server
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetwork 3rdpartynet win95 kb3rdPartyNetClientkbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Windows 95 from a Novell server and restart your computer, you
+may receive the following error message:
+
+   Error 26
+
+When this error message occurs, you have no network connectivity and you cannot
+start Windows 95.
+
+CAUSE
+=====
+
+The error message can occur when both of the following conditions exist:
+
+ - The Autoexec.bat file contains the following command:
+
+   net start nwredir
+
+ - The NetWare server name contains one or more dashes.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95 and
+Microsoft Windows 95 OEM Service Release 2 (OSR2).
+
+This issue is not resolved in Microsoft Windows 98. Microsoft does not support
+running Windows 98 from a network server. For information about the current
+version of Windows, visit the following Microsoft Web site:
+
+   http://www.microsoft.com/windows
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbnetwork 3rdpartynet win95 kb3rdPartyNetClient kbfixlist
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

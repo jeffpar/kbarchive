@@ -1,0 +1,74 @@
+DOCUMENT:Q151435  17-DEC-2000  [win95x]
+TITLE   :Portions of Received Fax Cover Page Missing
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you send a fax from Microsoft Exchange, the received fax cover page may
+appear off center, or part of the cover page may appear to be missing. The
+remaining fax pages are correct.
+
+CAUSE
+=====
+
+This behavior can occur if the sender of the fax opened the cover page in Cover
+Page Editor and then saved the cover page with the wrong paper size.
+
+RESOLUTION
+==========
+
+To view the cover page, open it in Cover Page Editor. Determine if the cover
+page you are using is positioned (or looks) the same as the received fax. If so,
+it is likely that the page size is set incorrectly. To verify this and correct
+the situation, follow these steps:
+
+1. Click the Start button, point to Programs, point to Accessories, point to
+   Fax, and then click Cover Page Editor.
+
+2. Open the cover page you are using. If the cover page appears off center or
+   part of the page is missing, continue with step 3.
+
+3. On the File menu, click Page Setup.
+
+4. In the Paper Size box, click a standard size (such as Letter).
+
+5. On the File menu, click Save.
+
+6. Quit Cover Page Editor.
+
+7. Try sending a test fax.
+
+
+Additional query words: msfax garbled
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

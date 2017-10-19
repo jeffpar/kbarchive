@@ -1,0 +1,70 @@
+DOCUMENT:Q190822  24-SEP-1999  [exchange]
+TITLE   :XADM: Error During Installation: Account Information Is Incorrec
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you run the Exchange Server Setup program, you are required to choose a
+Windows NT account that is used as the Exchange Server Service Account. After
+you choose the account, you may receive the following error message:
+
+   Account information is incorrect.
+
+If you are using Exchange Server version 4.0, the following error message is
+displayed:
+
+   No mapping between account names and security Ids was done.
+
+   MS Win NT 0xc0020534
+
+CAUSE
+=====
+
+This error occur because the Windows NT service RPC Configuration has been
+removed or needs to be added.
+
+WORKAROUND
+==========
+
+To resolve this problem, add the RPC Configuration service to the Windows NT
+Server computer on which you are trying to install Exchange Server.
+
+You can add the RPC Configuration service by selecting the Network Icon in
+Control Panel. Click the Services Tab, and then click the Add button. Find and
+select the RPC Configuration service in the Network Service list and click OK.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

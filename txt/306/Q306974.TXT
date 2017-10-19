@@ -1,0 +1,69 @@
+DOCUMENT:Q306974  06-AUG-2002  [sms]
+TITLE   :Software-Metering Agent Heap Operation Fault
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0 SP3
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbtool kbsms200preSP4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Systems Management Server (SMS) version 2.0 Service Pack 3 (SP3)
+software-metering client may generate an access violation error message in
+Licclint.exe, and the Licclint.exe process may leak memory when you download the
+ignore list. In the Liccli.log client log file, the following message may be the
+last message that is logged before Licclint.exe stops responding (hangs):
+
+   Downloading client configuration...
+
+CAUSE
+=====
+
+SMS 2.0 SP3 introduced a heap operation problem in the software-metering agent.
+
+RESOLUTION
+==========
+
+To resolve this problem, contact Microsoft Product Support to obtain the
+hotfix.
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kberrmsg kbtool kbsms200preSP4fix 
+Technology        : kbSMSSearch kbSMS200SP3
+Version           : :2.0 SP3
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

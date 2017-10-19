@@ -1,0 +1,75 @@
+DOCUMENT:Q117531  08-AUG-2001  [winnt]
+TITLE   :SFM w/ Olicom Token Ring 16/4 and Intel TokenExpress 16/4
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to configure Services for Macintosh on an Olicom 16/4
+Token-Ring Adapter (also known as an Intel TokenExpress 16/4) from Windows NT
+Advanced Server, the following error message appears:
+
+   Apple Talk Router Configuration
+   The Apple Talk Protocol Registry Parameters cannot be read
+   One or more parameters might be missing or contain invalid values.
+
+Upon reboot, the following errors appear in the Event Viewer:
+
+   Event ID: 13 Source: Apple Talk Type: Error
+   Description: No adapter is configured to be the default adapter.
+
+   Event ID: 7000 Source: Service Control Manager Type: Error
+   Description: The Apple Talk Protocol service failed to start due to the
+   following error: A device attached to the system is not functioning.
+
+   Event ID: 7001 Source: Service Control Manager Type: Error
+   Description: The File Server for Macintosh service depends on the Apple Talk
+   Protocol service which failed to start...
+
+   Event ID: 7001 Source: Service Control Manager Type: Error
+   Description: The Print Server for Macintosh service depends on...
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT and Windows NT
+Advanced Server version 3.1.This problem was corrected in Windows NT version
+3.5.
+
+
+The Olicom product included here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: sfm prodnt hdwr ntmac ntnetserv ntadvsrv err msg
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNT310Search
+Version           : 3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

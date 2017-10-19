@@ -1,0 +1,96 @@
+DOCUMENT:Q172100  11-JAN-2001  [vbwin]
+TITLE   :PRB: Bound TextBox No Longer Populates During Form's Load Event
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbGrpDSVBDB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a form is run, a bound Text box comes up blank even though a value is being
+stored to it's Text property in the Form's Load. In prior version of Visual
+Basic, the Text box came up populated if done in this manner.
+
+RESOLUTION
+==========
+
+In the Form's Load, instead of:
+
+      Text1.Text = "This text should be in the text box."
+
+use:
+
+      Data1.RecordSet("<field name>") = "Text to show."
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Project.
+
+2. On the new form, add a TextBox control and a DataControl.
+
+3. Set the following DataControl's properties as shown:
+
+         Data1
+         .DatabaseName = nwind.mdb
+         .RecordSource = customers
+
+4. Set the following Text Control's properties as shown:
+
+         Text1
+         .DataSource = Data1
+         .DataField = contactname
+
+5. Place the following code in the Form's Load Method:
+
+         Data1.Refresh
+         Data1.Recordset.AddNew
+         Text1.Text = "This text should be in the text box."
+
+6. Run the form.
+
+Additional query words: empty kbVBp500 kbVBp600 kbdse kbDSupport kbVBp
+
+======================================================================
+Keywords          : kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbZNotKeyword3
+Version           : :5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

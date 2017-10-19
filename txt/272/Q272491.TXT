@@ -1,0 +1,84 @@
+DOCUMENT:Q272491  12-NOV-2001  [msnetwork]
+TITLE   :How to change passwords with MSN Companion
+PRODUCT :The Microsoft Network
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+How to change the password on the MSN Companion system.
+
+MORE INFORMATION
+================
+
+If you know your password
+-------------------------
+
+To change an MSN Companion password
+
+1. On the MSN Companion Start page, click settings, and then click password.
+
+2. On the password settings page type your current password and click continue.
+
+3. Type the new password in the first text box, retype the new password in the
+   ...confirm it box, and then click done to save settings.
+
+A password must be at least eight (8) characters long, composed of letters (a-z)
+and numbers (0-9), but may contain no spaces.
+
+Note: if you select lock this MSN Companion with my password so other people
+can't use it, then you will be asked for your password each time you connect to
+MSN, The Microsoft Network.
+
+If you do not know your password
+--------------------------------
+
+Call MSN Customer Service at 1 (888) 765-2411 and ask for for a password reset.
+
+Customer Service will direct you to type a reset password into the device using
+the FIXIT pages. For more information on the FIXIT pages see Q278481 MSN
+Companion FIXIT Pages
+
+If you have the password lock feature turned on you will turn the unit off and
+back on, and then type your reset password into the password lock box.
+
+After connecting to MSN with your MSN Companion using your reset password, follow
+the steps above to change your password.
+
+REFERENCES
+==========
+
+   Q153806 Accounts and Billing Questions and Answers
+
+Additional query words: kbimu; msnaccount kbmsn password MSN Companion
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbMSNSearch kbMSNCompanion
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

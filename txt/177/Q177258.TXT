@@ -1,0 +1,70 @@
+DOCUMENT:Q177258  29-APR-1999  [iis]
+TITLE   :WWW Service Stops Responding When You Stop Web Site in MMC
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If an Out-of-Process (OOP) application stops responding, and you attempt to stop
+the Web site by using the Microsoft Management Console (MMC), the WWW service
+may stop responding.
+
+CAUSE
+=====
+
+When OOP applications stops responding, Internet Information Server (IIS)
+generates internal schedule requests to clean up its private operating
+environment. Because this operation has been scheduled, an attempt to stop IIS
+from the MMC may force the service to lock itself so that this request can be
+completed.
+
+RESOLUTION
+==========
+
+After an OOP application failure, the WWW service can be stopped by issuing a
+"net stop w3svc" command without first using the MMC. However, once the WWW
+service has been stopped from the MMC, issuing the "net stop w3svc" or "net stop
+iisadmin /y" commands will not stop the server. The following errors may
+appear:
+
+   No longer accepting requests at this time. Incontrollable state.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Internet Information
+Server version 4.0.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : WINNT:4.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

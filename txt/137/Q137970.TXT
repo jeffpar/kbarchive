@@ -1,0 +1,72 @@
+DOCUMENT:Q137970  27-JUL-2001  [odbc]
+TITLE   :BUG: Precision for a Projected Column Always Reported as 255
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:2.0,3.0
+OPER/SYS:
+KEYWORDS:kbBug kbISS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+BUG# NT: 2350 (QJET)
+
+SYMPTOMS
+========
+
+SQLDescribeCol always returns pcbColDef = 255 for a scalar function projected
+column of SQL_VARCHAR data type of defined length.
+
+This problem occurs with all 16- and 32-bit Access drivers. This does not happen
+with SQL Server drivers.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Access Driver versions
+2.00.2317 and 3.00.2106. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+To reproduce this problem:
+
+ - The 'name' field is of type SQL_VARCHAR of defined length.
+
+ - Select name, UCASE(name) from oof
+
+   SQLDescribeCol for column 2 returns pcbColDef = 255.
+
+also
+
+ - Select name, {fn UCASE(name)} from oof
+
+   SQLDescribeCol for column 2 returns pcbColDef = 255.
+
+Additional query words: odbc access driver connectivity sql
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC300 kbODBC200
+Version           : WINDOWS:2.0,3.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

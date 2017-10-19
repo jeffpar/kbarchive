@@ -1,0 +1,74 @@
+DOCUMENT:Q271692  11-JAN-2001  [vbwin]
+TITLE   :INFO: Avoid Truncation When You Use Data Report ExportReport
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbVBp600 kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The ExportReport method of the Data Report designer provides a mechanism to
+export the text of a DataReport object to a file. Because this method works
+asynchronously, you need to be sure that there are no asynchronous operations
+still executing before you unload the DataReport.
+
+MORE INFORMATION
+================
+
+When you use the ExportReport method, it is important to check the AsyncCount
+property of the DataReport before you unload the DataReport; otherwise, the
+output file may not contain the all of the text. This property returns the
+number of asynchronous operations that are still executing. When AsyncCount
+returns zero, it is safe to unload the DataReport. The following code fragment
+demonstrates this:
+
+   DataReport1.ExportReport rptKeyHTML, "c:\output.htm", True, False
+   Do
+     DoEvents
+   Loop While DataReport1.AsyncCount > 0 
+   Unload DataReport1
+
+REFERENCES
+==========
+
+For more information, see the following Web sites on the Microsoft Developer
+Network (MSDN):
+
+   ExportReport Method
+   http://msdn.microsoft.com/library/devprods/vs6/vbasic/vb98/vbmthexportreportmethod.htm
+
+   AsyncCount Property
+   http://msdn.microsoft.com/library/devprods/vs6/vbasic/vb98/vbproasynccountproperty.htm
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp600 kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

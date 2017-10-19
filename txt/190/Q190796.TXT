@@ -1,0 +1,86 @@
+DOCUMENT:Q190796  17-JUL-2001  [visualc]
+TITLE   :PRB: VC Installation Hangs With Message "Updating Registry"
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINNT:5.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup kbVC500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Visual C++ 5.0 Setup hangs with the following message:
+
+   Updating Registry
+
+CAUSE
+=====
+
+A third-party provider has replaced WSock32.dll.
+
+RESOLUTION
+==========
+
+To work around this problem, perform the following steps:
+
+1. Exit Setup.
+
+2. Exit all applications that use WSock32.dll, typically Internet related
+   applications.
+
+3. Rename WSock32.dll to WSock32.3rd:
+
+         REN WSOCK32.DLL WSOCK32.3RD
+
+   On Windows 95 this file is found in %SYSTEMROOT%/SYSTEM, and on Windows NT
+   this file is found in %SYSTEMROOT%/SYSTEM32.
+
+4. Copy over WSock32.dl_ from your operating system media disk to the same
+   directory in step 3.
+
+5. Expand the file WSock32.dl_ to WSock32.dll:
+
+         EXPAND WSOCK32.DL_ WSOCK32.DLL
+
+6. Run Visual C++ 5.0 Setup.
+
+7. After a successful setup you can revert back to your old third party
+   WSock32.dll although this is not recommended.
+
+STATUS
+======
+
+This behavior is caused by a third party who has been made aware of the
+problem.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbsetup kbVC500 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : WINNT:5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

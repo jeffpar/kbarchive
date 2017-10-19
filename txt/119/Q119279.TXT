@@ -1,0 +1,75 @@
+DOCUMENT:Q119279  25-JUL-2001  [visualc]
+TITLE   :FIX: Include Files May Be Incorrectly Added as a Dependency
+PRODUCT :Microsoft C Compiler
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbide kbVCkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Visual Workbench Integrated Debugger, used with:
+    - Microsoft Visual C++, versions 1.0, 1.5 
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a header file (also known as an include file) does not exist, the way it
+appears in the source file determines whether it is included as a dependency.
+The file is included if it has a "\" or a "/" in its file specification.
+Additionally there is no warning that the file does not exist when a dependency
+scan is done.
+
+RESOLUTION
+==========
+
+Adding the filename to the SYSINCL.DAT file (if you are using Visual C++ for
+Windows, versions 1.0 and 1.5) or to the MSVCINCL.DAT file (if you are using
+Visual C++ for Windows NT, version 1.0) then restarting Visual C++ prevents the
+file from being included in the project. SYSINCL.DAT resides in the \MSVC\BIN
+directory. MSVCINCL.DAT can be found in the Windows or Windows NT directory.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the products listed at the beginning
+of this article. This problem was corrected in Visual C++ version 2.0.
+
+MORE INFORMATION
+================
+
+The following TEST.H files are included as a dependency in the project's
+makefile.
+
+Sample Code
+-----------
+
+      #include ".\test.h"
+      #include "abc$def/test.h"
+
+Additional query words: 1.00 1.50 1.10
+
+======================================================================
+Keywords          : kbide kbVC kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

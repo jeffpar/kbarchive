@@ -1,0 +1,90 @@
+DOCUMENT:Q191083  11-JAN-2001  [vbwin]
+TITLE   :BUG: IPF When Replacing Class Module with UserControl
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbide kbVBp600bug kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When replacing a Class module with a UserControl in an ActiveX Control project
+that has Binary Compatibility set, an Invalid Page Fault (IPF) in module
+VBA6.dll will occur.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps To Reproduce Behavior
+---------------------------
+
+1. Start a new ActiveX Control project in Visual Basic.
+
+2. From the Project menu, click Add Class Module. Class1 is created.
+
+3. Paste the following code into Class1:
+
+         Public a As Class1
+
+4. From the File menu, click Make Project1.ocx to compile the project.
+
+5. Select Project1 Properties from the Project menu. From the Component tab
+   choose Binary Compatibility.
+
+6. Remove Class1.
+
+7. Select Add User Control from the Project menu to create a new UserControl.
+   UserControl2 is created.
+
+8. Rename UserControl2 to Class1.
+
+9. Paste the following code into Class1:
+
+         Public a As Class1
+
+10. Compile as Project2.ocx.
+
+The following error occurs:
+
+   VB caused an Invalid Page Fault in module VBA6.dll
+
+Additional query words:
+
+======================================================================
+Keywords          : kbide kbVBp600bug kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

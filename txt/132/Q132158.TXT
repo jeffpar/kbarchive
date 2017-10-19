@@ -1,0 +1,70 @@
+DOCUMENT:Q132158  17-DEC-2000  [win95x]
+TITLE   :Third Port Detected with CMD PCI Dual Port IDE Controller
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using a CMD PCI Dual Port IDE controller with at least one device
+on both the primary and secondary port, Device Manager displays a third port.
+The third port is displayed with an exclamation point inside a yellow circle.
+
+
+CAUSE
+=====
+
+The Plug and Play BIOS in your computer is erroneously reporting that a third
+port is present.
+
+
+RESOLUTION
+==========
+
+Windows 95 does not allocate any resources to the third port, and the existence
+of the third port in Device Manager should not cause any problems. However, if
+you want to disable the third port, follow these steps:
+
+1. Use the right mouse button to click My Computer, then click Properties on the
+   menu that appears.
+
+2. Click the Device Manager tab.
+
+3. Click the third port, then click Properties. Note that you may need to expand
+   a branch of the hardware tree by double-clicking the branch, or by clicking
+   the plus sign (+) to the left of the branch, before you can click the port.
+
+4. Click the Original Configuration (Current) check box to clear it, then click
+   OK.
+
+For more information about this problem, please contact your computer
+manufacturer.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

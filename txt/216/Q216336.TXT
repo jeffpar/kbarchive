@@ -1,0 +1,90 @@
+DOCUMENT:Q216336  03-MAY-2001  [visualc]
+TITLE   :BUG: ARM Compiler Generates Bad Code for Structure Assignment
+PRODUCT :Microsoft C Compiler
+PROD/VER:N\A:2.11; WINDOWS:
+OPER/SYS:
+KEYWORDS:kbHWARM kbOSWinCE210 kbOSWinCE211 kbDSupport kbGrpDSETK
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE 2.10 Enhancement Pack for Windows CE Embedded Toolkit for Visual C++ 5.0, on platform(s):
+    - the hardware: StrongArm Processor 
+ - Microsoft Windows CE Platform Builder, version 2.11, on platform(s):
+    - the hardware: StrongArm Processor 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The ARM compiler for the products listed at the beginning of this article may
+generate incorrect code when you use a structure assignment construct. This
+problem may occur with or without optimizations enabled.
+
+This problem does not occur when you build ARM programs by using the Platform
+Builder version 2.11 Visual Development Environment.
+
+RESOLUTION
+==========
+
+To work around this problem, manually copy the structures by using a memory copy
+routine or algorithm.
+
+In Platform Builder, this problem only affects modules that are compiled in the
+platform build procedure. The included operating system source code has been
+validated with the supplied compiler; however, code that has been added or
+modified by a developer to adapt the operating system may encounter this
+problem. If the code that experiences the problem is in the ISV layer of the
+Microsoft Windows CE operating system model, use the Visual Development
+Environment to build the code instead.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following code sample generates incorrect code when it is compiled by using
+the ARM compiler without optimizations:
+
+   typedef struct { 
+      int c [ 36 ]; 
+   } myStruct;
+
+   void main()
+   {
+   	myStruct A, B;
+   	A = B;
+   }
+
+Additional query words: kbWinCE210 kbWinCE211 kbARM
+
+======================================================================
+Keywords          : kbHWARM kbOSWinCE210 kbOSWinCE211 kbDSupport kbGrpDSETK 
+Technology        : kbAudDeveloper kbWinCESearch kbWinCEEnh210ETKVC500
+Version           : N\A:2.11; WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

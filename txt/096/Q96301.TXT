@@ -1,0 +1,55 @@
+DOCUMENT:Q96301  22-OCT-1999  [foxmisc]
+TITLE   :Creating a Multiple-Page Input Screen Using FoxForm
+PRODUCT :Microsoft Fox Miscellaneous Products
+PROD/VER:MACINTOSH:2.01
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxBASE+ for Macintosh, version 2.01 
+-------------------------------------------------------------------------------
+
+To create a multiple-page format file, do the following:
+
+1. To create a multiple-page input form, first design two separate screens.
+
+2. Generate the screens.
+
+3. Open the resulting .FMT format files. (From the File menu, choose Open, and
+   then choose the Program button.)
+
+4. After both format files are open, activate the screen that represents page 2.
+   From the Edit menu, choose Select All to select all the program code, and
+   then choose Copy from the Edit menu.
+
+5. Activate the screen that represents page 1. Select the line after the last
+   line of code in the generated screen. Type "READ" (without the quotation
+   marks) and then press ENTER. From the Edit menu, choose Paste.
+
+To move between the pages, press the PAGE UP and PAGE DOWN keys.
+
+Additional query words: 2.00 multipage foxbase+/mac
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbFoxproSearch kbFoxBASE201Mac kbFoxBASESearch
+Version           : MACINTOSH:2.01
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

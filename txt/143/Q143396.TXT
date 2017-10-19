@@ -1,0 +1,73 @@
+DOCUMENT:Q143396  17-DEC-2000  [win95x]
+TITLE   :Cannot Add Address Book Entries to Personal Address Book
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to add an entry to your personal address book in Microsoft
+Exchange, you may receive the following error message:
+
+   A new entry could not be added. [82040116]
+
+CAUSE
+=====
+
+This error can occur if a template file is missing or damaged on the post office
+or your local hard disk.
+
+RESOLUTION
+==========
+
+Download the latest address list from the post office. To do so, follow these
+steps:
+
+1. In Microsoft Exchange, click Microsoft Mail Tools on the Tools menu.
+
+2. Click Download Address Lists.
+
+If you continue to receive the error message after you download the address
+
+list, contact your network administrator for additional information.
+
+MORE INFORMATION
+================
+
+Microsoft Mail template files (such as Smtp.tpl) are located in the TPL folder
+on the post office. If you choose to use a local copy of the address list,
+certain folders and files are copied to the Windows\ Msremote.sfs folder on your
+local hard disk. If any or all of the template files are missing or damaged, the
+error message stated above can occur.
+
+Additional query words: corrupt
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

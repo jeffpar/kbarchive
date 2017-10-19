@@ -1,0 +1,161 @@
+DOCUMENT:Q245574  27-APR-2000  [iis]
+TITLE   :HOWTO: Configure REMOTE_HOST to Perform Reverse DNS Lookup IIS
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbiis400 kbiis500 kbMetaBase
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By default, performing a Request.ServerVariables("REMOTE_HOST") in ASP returns a
+null value, which causes Internet Information Server (IIS) to return the value
+of REMOTE_ADDR, the IP address of the client. This is by design to increase
+performance for Web hosting. However, by changing a setting in the metabase, IIS
+performs a reverse DNS lookup and returns the host name of the client
+connecting.
+
+NOTE: Enabling reverse lookups incurs extra processing overhead, that degrades
+the performance of your Web server. This information is not recommended for high
+capacity sites where performance is critical.
+
+With the metabase setting enabled, every request for the REMOTE_HOST server
+variable causes IIS to pass a name resolution request off to the operating
+system, which attempts to execute a reverse DNS lookup. If the reverse DNS
+lookup fails to return the host name, the operating system then attempts name
+resolution using NetBIOS. If NetBIOS resolution fails an empty value is returned
+to IIS, which returns the REMOTE_ADDR value (client's IP address) to the
+original REMOTE_HOST request.
+
+Reverse lookups can be set for the entire Web server or for individual Web sites,
+requiring administrative access to the metabase through the IIS Admin Objects.
+This article describes two methods for modifying the metabase with the IIS Admin
+Objects, using Active Server Pages and using Windows Scripting Host from the
+command-line. For the following Active Server Pages examples, create an .asp
+file in a Web site or virtual directory that has Script or Execute access
+enabled and copy the following code into the .asp file. The command-line method
+requires that the Admin Sample Scripts (installed during IIS setup) and Windows
+Scripting Host be installed (WSH installs with the Windows NT Option Pack,
+Windows 2000, Internet Explorer 5 and from:
+
+   Scripting Download Page
+
+The command-line method requires that instructions be issued from a command
+prompt where the Adsutil.vbs script is located. The location of the Adsutil.vbs
+script depends on the version IIS, but is in the following directories by
+default:
+
+   Internet Information Server 4.0 - C:\WinNT\System32\InetSrv\AdminSamples<BR/>
+   Internet Information Server 5.0 - C:\InetPub\AdminScripts
+ 
+
+Because improperly modifying the metabase can negatively impact Internet
+Information Server, Microsoft strongly recommends backing up the metabase before
+making any modifications.
+
+Example 1 - Enabling Reverse Lookups for all sites::
+
+This ASP code example enables all Web sites to perform a reverse lookup when a
+Request.ServerVariables("REMOTE_HOST") is issued. Due to the hierarchical design
+of the metabase, Web sites that do not explicitly have the EnableReverseDNS
+entry set inherit the value from the earlier node. ASP Method:
+
+   <%
+   Dim oIIS
+   Dim vEnableRevDNS
+   Dim vDisableRevDNS
+
+   vEnableRevDNS = 1
+   vDisableRevDNS = 0
+
+   Set oIIS = GetObject("IIS://localhost/w3svc")
+   oIIS.Put "EnableReverseDNS", vEnableRevDNS
+   oIIS.SetInfo
+   Set oIIS = Nothing
+
+   %>
+
+Command-line Method:
+
+   cscript adsutil.vbs set /w3svc/EnableReverseDNS "TRUE"
+
+Example 2 - Enabling Reverse Lookups for individual sites::
+
+This example enables a reverse lookup for a specific Web site when a
+Request.ServerVariables("REMOTE_HOST") is issued. Web sites are referenced in
+the metabase by an integer value. Because the Default Web Site is the first site
+created, it receives the reference number 1. This example enables reverse
+lookups for only the Default Web Site, to allow reverse lookups on other Web
+sites replace 1 in the following line:
+
+   Set oIIS = GetObject("IIS://localhost/w3svc/1/ROOT")
+
+with the numeric value of the Web site that needs to perform reverse lookups. The
+easiest way to determine the numeric value of a specific Web site is to look at
+the number listed at the end of the folder name where the log file name is
+specified. This can be accessed through the MMC/Internet Service Manager by
+selecting the Web site and choosing Action, Properties, Active Log Format and
+then Properties. The Default Web site's Log file name is W3SVC1\exyymmdd.log,
+corresponding to the /1/ROOT value. ASP Method:
+
+   <%
+   Dim oIIS
+   Dim vEnableRevDNS
+   Dim vDisableRevDNS
+
+   vEnableRevDNS = 1
+   vDisableRevDNS = 0
+
+   Set oIIS = GetObject("IIS://localhost/w3svc/1/ROOT")
+   oIIS.Put "EnableReverseDNS", vEnableRevDNS
+   oIIS.SetInfo
+   Set oIIS = Nothing
+
+   %>
+
+Command-line Method:
+
+   cscript adsutil.vbs set /w3svc/1/ROOT/EnableReverseDNS "TRUE"
+
+MORE INFORMATION
+================
+
+More information on the metabase can be found in the IIS documentation and in
+the article:
+
+   Q240941 An Introduction to the IIS Metabase
+
+More information on the Scripting technologies listed in this article can be
+found at
+http://msdn.microsoft.com/scripting
+
+Additional query words:
+
+======================================================================
+Keywords          : kbiis400 kbiis500 kbMetaBase 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : winnt:4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,504 @@
+DOCUMENT:Q196652  04-JUN-2001  [vbwin]
+TITLE   :HOWTO: Implement Custom Rounding Procedures
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::5.0,6.0,6.5,7.0
+OPER/SYS:
+KEYWORDS:kbExcel kbSQLServ KbVBA kbVBp500 kbVBp600 kbGrpDSVBDB kbDSupport kbOffice97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic for Applications versions 5.0, 6.0 
+ - Microsoft SQL Server versions 6.0, 6.5, 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are a number of different rounding algorithms available in Microsoft
+products. Rounding algorithms range from Arithmetic Rounding in Excel's
+Worksheet Round() function to Banker's Rounding in the CInt(), CLng(), and
+Round() functions in Visual Basic for Applications. This article describes what
+the various Visual Basic for Applications rounding functions do and provides
+samples of using the functions. In addition, the article includes sample
+functions that implement various rounding algorithms.
+
+MORE INFORMATION
+================
+
+Rounding Explained
+------------------
+
+You need to round when you want to convert a number of greater precision into a
+number of lesser precision. The most common case is when you need to convert a
+floating-point number into an integer.
+
+Rounding Down
+-------------
+
+The simplest form of rounding is truncation. Any digits after the desired
+precision are simply ignored. The VBA Fix() function is an example of
+truncation. For example, Fix(3.5) is 3, and Fix(-3.5) is -3.
+
+The Int() function rounds down to the highest integer less than the value. Both
+Int() and Fix() act the same way with positive numbers - truncating - but give
+different results for negative numbers: Int(-3.5) gives -4.
+
+The Fix() function is an example of symmetric rounding because it affects the
+magnitude (absolute value) of positive and negative numbers in the same way. The
+Int() function is an example of asymmetric rounding because it affects the
+magnitude of positive and negative numbers differently.
+
+Excel has similar spreadsheet functions: Int(), Floor(), and RoundDown(). Int()
+works the same way as Int() does in Visual Basic for Applications. Floor()
+truncates positive values, but does not work with negative numbers. The
+RoundDown() function works the same way as the VBA Fix() function.
+
+Microsoft SQL Server has a Round() function that can act like the VBA Fix()
+function. SQL Server also has a Floor() function, which works the same way as
+VBA Int() function.
+
+Rounding Up
+-----------
+
+SQL Server and Excel both have a function called Ceiling(), which always rounds
+fraction values up (more positive) to the next value.
+
+Visual Basic for Applications does not have a corresponding round-up function.
+However, for negative numbers, both Fix() and Int() can be used to round upward,
+in different ways.
+
+Fix() rounds towards 0 (up in the absolute sense, but down in terms of absolute
+magnitude). Fix(-3.5) is -3.5.
+
+Int() rounds away from 0 (up in terms of absolute magnitude, but down in the
+absolute sense). Int(-3.5) is -4.
+
+Arithmetic Rounding
+-------------------
+
+When rounding always down or up, the resulting number is not necessarily the
+closest to the original number. For example, if you round 1.9 down to 1, the
+difference is a lot larger than if you round it up to 2. It is easy to see that
+numbers from 1.6 to 2.4 should be rounded to 2.
+
+However, what about 1.5, which is equidistant between 1 and 2? By convention, the
+half-way number is rounded up.
+
+You can implement rounding half-way numbers in a symmetric fashion, such that -.5
+is rounded down to -1, or in an asymmetric fashion, where -.5 is rounded up to
+0.
+
+The following functions provide symmetric arithmetic rounding:
+
+   The Excel Round() spreadsheet function.
+   The SQL Server Round() function can do symmetric arithmetic rounding.
+
+The following function provide asymmetric arithmetic rounding:
+
+   The Round() method of the Java Math library.
+
+Visual Basic for Applications does not have any function that does arithmetic
+rounding.
+
+Banker's Rounding
+-----------------
+
+When you add rounded values together, always rounding .5 in the same direction
+results in a bias that grows with the more numbers you add together. One way to
+minimize the bias is with banker's rounding.
+
+Banker's rounding rounds .5 up sometimes and down sometimes. The convention is to
+round to the nearest even number, so that both 1.5 and 2.5 round to 2, and 3.5
+and 4.5 both round to 4. Banker's rounding is symmetric.
+
+In Visual Basic for Applications, the following numeric functions perform
+banker's rounding: CByte(), CInt(), CLng(), CCur(), and Round().
+
+There are no Excel spreadsheet functions that perform banker's rounding.
+
+Random Rounding
+---------------
+
+Even banker's rounding can bias totals. You can take an extra step to remove bias
+by rounding .5 up or down in a truly random fashion. This way, even if the data
+is deliberately biased, bias might be minimized. However, using random rounding
+with randomly distributed data might result in a larger bias than banker's
+rounding. Random rounding could result in two different totals on the same
+data.
+
+No Microsoft products implement any sort of random rounding procedure.
+
+Alternate Rounding
+------------------
+
+Alternate rounding is rounding between .5 up and .5 down on successive calls.
+
+No Microsoft products implement an alternate rounding procedure.
+
+The Round() Function is Inconsistently Implemented
+--------------------------------------------------
+
+The Round() function is not implemented in a consistent fashion among different
+Microsoft products for historical reasons.
+
+The following table relates product to implementation:
+
+   Product                             Implementation
+   ----------------------------------------------------------------------
+   Visual Basic for Applications 6.0   Banker's Rounding
+   Excel Worksheet                     Symmetric Arithmetic Rounding
+   SQL Server                          Either Symmetric Arithmetic Rounding
+                                       or Symmetric Round Down (Fix)
+                                       depending on arguments
+
+   Java Math library                   Asymmetric Arithmetic Rounding
+
+The Round() function in Visual Basic 6.0 and Visual Basic for Applications 6.0
+performs banker's rounding. It has an optional second argument that specifies
+the number of decimal digits to round to:
+
+      Debug.Print Round(2.45, 1) returns 2.4.
+
+Sample Data
+-----------
+
+The following table shows some sample data and the effects of various rounding
+methods on the numbers and totals generated.
+
+   Number/Int./Fix/Ceiling/Asym. Arith./Sym. Arith./Banker's/Random/Alt.
+   ---------------------------------------------------------------------
+   -2.6   -3   -2  -2      -3          -3           -3       -3     -3
+   -2.5   -3   -2  -2      -2          -3           -2       -2     -3
+   -2.4   -3   -2  -2      -2          -2           -2       -2     -2
+   -1.6   -2   -1  -1      -2          -2           -2       -2     -2
+   -1.5   -2   -1  -1      -1          -2           -2       -1     -1
+   -1.4   -2   -1  -1      -1          -1           -1       -1     -1
+   -0.6   -1    0   0      -1          -1           -1       -1     -1
+   -0.5   -1    0   0       0          -1            0       -1     -1
+   -0.4   -1    0   0       0           0            0        0      0
+    0.4    0    0   1       0           0            0        0      0
+    0.5    0    0   1       1           1            0        1      1
+    0.6    0    0   1       1           1            1        1      1
+    1.4    1    1   2       1           1            1        1      1
+    1.5    1    1   2       2           2            2        1      1
+    1.6    1    1   2       2           2            2        2      2
+    2.4    2    2   3       2           2            2        2      2
+    2.5    2    2   3       3           3            2        3      3
+    2.6    2    2   3       3           3            3        3      3
+
+Total of all numbers:
+
+   Number/Int./Fix/Ceiling/Asym. Arith./Sym. Arith./Banker's/Random/Alt.
+   ---------------------------------------------------------------------
+   0.0    -9   0   9       3            0           0        1      0
+
+Total of all negative numbers:
+
+   Number/Int./Fix/Ceiling/Asym. Arith./Sym. Arith./Banker's/Random/Alt.
+   ---------------------------------------------------------------------
+   -13.5  -18  -9  -9      -12          -15         -13      -13    -14
+
+Total of all positive numbers:
+
+   Number/Int./Fix/Ceiling/Asym. Arith./Sym. Arith./Banker's/Random/Alt.
+   ---------------------------------------------------------------------
+   13.5   9    9   18      15           15          13       14     14
+
+The table shows the difference between the various rounding methods. For randomly
+distributed positive and negative numbers, Fix(), symmetric arithmetic rounding,
+banker's rounding, and alternating rounding provide the least difference from
+actual totals, with random rounding not far behind.
+
+However, if the numbers are either all positive or all negative, banker's
+rounding, alternating rounding, and random rounding provide the least difference
+from the actual totals.
+
+Sample User-Defined Rounding Functions
+--------------------------------------
+
+The sample code in the following Function Listing section provides sample
+implementations for each of the rounding types described.
+
+The functions provided are:
+
+   AsymDown      Asymmetrically rounds numbers down - similar to Int().
+                 Negative numbers get more negative.
+
+   SymDown       Symmetrically rounds numbers down - similar to Fix().
+                 Truncates all numbers toward 0.
+                 Same as AsymDown for positive numbers.
+
+   AsymUp        Asymmetrically rounds numbers fractions up.
+                 Same as SymDown for negative numbers.
+                 Similar to Ceiling.
+
+   SymUp         Symmetrically rounds fractions up - that is, away from 0.
+                 Same as AsymUp for positive numbers.
+                 Same as AsymDown for negative numbers.
+
+   AsymArith     Asymmetric arithmetic rounding - rounds .5 up always.
+                 Similar to Java worksheet Round function.
+
+   SymArith      Symmetric arithmetic rounding - rounds .5 away from 0.
+                 Same as AsymArith for positive numbers.
+                 Similar to Excel Worksheet Round function.
+
+   BRound        Banker's rounding.
+                 Rounds .5 up or down to achieve an even number.
+                 Symmetrical by definition.
+
+   RandRound     Random rounding.
+                 Rounds .5 up or down in a random fashion.
+
+   AltRound      Alternating rounding.
+                 Alternates between rounding .5 up or down.
+
+   ATruncDigits  Same as AsyncTrunc but takes different arguments.
+
+All of these functions take two arguments: the number to be rounded and an
+optional factor. If the factor is omitted, then the functions return an integer
+created by one of the above methods. If the factor is specified, the number is
+scaled by the factor to create different rounding effects. For example
+AsymArith(2.55, 10) produces 2.6, that is, it rounds to 1/factor = 1/10 = 0.1.
+
+NOTE: A factor of 0 generates a run-time error: 1/factor = 1/0.
+
+The following table shows the effects of various factors:
+
+   Expression       Result  Comment
+   --------------------------------------------------------------------
+   AsymArith(2.5)     3     Rounds up to next integer.
+   BRound(2.18, 20)   2.2   Rounds to the nearest 5 cents (1/20 dollar).
+   SymDown(25, .1)   20     Rounds down to an even multiple of 10.
+
+The exception to the above description is ADownDigits, which is a template
+function that allows you to specify the number of decimal digits instead of a
+factor.
+
+   Expression            Result Comment
+   ---------------------------------------------------------------------
+   ADownDigits(2.18, 1)    2.1  Rounds down to next multiple of 10 ^ -1.
+
+Function Listing
+----------------
+
+      Function AsymDown(ByVal X As Double, _
+               Optional ByVal Factor As Double = 1) As Double
+        AsymDown = Int(X * Factor) / Factor
+      End Function
+
+      Function SymDown(ByVal X As Double, _
+               Optional ByVal Factor As Double = 1) As Double
+        SymDown = Fix(X * Factor) / Factor
+      '  Alternately:
+      '  SymDown = AsymDown(Abs(X), Factor) * Sgn(X)
+      End Function
+
+      Function AsymUp(ByVal X As Double, _
+               Optional ByVal Factor As Double = 1) As Double
+      Dim Temp As Double
+        Temp = Int(X * Factor)
+        AsymUp = (Temp + IIf(X = Temp, 0, 1)) / Factor
+      End Function
+
+      Function SymUp(ByVal X As Double, _
+               Optional ByVal Factor As Double = 1) As Double
+      Dim Temp As Double
+        Temp = Fix(X * Factor)
+        SymUp = (Temp + IIf(X = Temp, 0, Sgn(X))) / Factor
+      End Function
+
+      Function AsymArith(ByVal X As Double, _
+               Optional ByVal Factor As Double = 1) As Double
+        AsymArith = Int(X * Factor + 0.5) / Factor
+      End Function
+
+      Function SymArith(ByVal X As Double, _
+               Optional ByVal Factor As Double = 1) As Double
+        SymArith = Fix(X * Factor + 0.5 * Sgn(X)) / Factor
+      '  Alternately:
+      '  SymArith = Abs(AsymArith(X, Factor)) * Sgn(X)
+      End Function
+
+      Function BRound(ByVal X As Double, _
+               Optional ByVal Factor As Double = 1) As Double
+      '  For smaller numbers:
+      '  BRound = CLng(X * Factor) / Factor
+      Dim Temp As Double, FixTemp As Double
+        Temp = X * Factor
+        FixTemp = Fix(Temp + 0.5 * Sgn(X))
+        ' Handle rounding of .5 in a special manner
+        If Temp - Int(Temp) = 0.5 Then
+          If FixTemp / 2 <> Int(FixTemp / 2) Then ' Is Temp odd
+            ' Reduce Magnitude by 1 to make even
+            FixTemp = FixTemp - Sgn(X)
+          End If
+        End If
+        BRound = FixTemp / Factor
+      End Function
+
+      Function RandRound(ByVal X As Double, _
+               Optional ByVal Factor As Double = 1) As Double
+      ' Should Execute Randomize statement somewhere prior to calling.
+      Dim Temp As Double, FixTemp As Double
+        Temp = X * Factor
+        FixTemp = Fix(Temp + 0.5 * Sgn(X))
+        ' Handle rounding of .5 in a special manner.
+        If Temp - Int(Temp) = 0.5 Then
+          ' Reduce Magnitude by 1 in half the cases.
+          FixTemp = FixTemp - Int(Rnd * 2) * Sgn(X)
+        End If
+        RandRound = FixTemp / Factor
+      End Function
+
+      Function AltRound(ByVal X As Double, _
+               Optional ByVal Factor As Double = 1) As Double
+      Static fReduce As Boolean
+      Dim Temp As Double, FixTemp As Double
+        Temp = X * Factor
+        FixTemp = Fix(Temp + 0.5 * Sgn(X))
+        ' Handle rounding of .5 in a special manner.
+        If Temp - Int(Temp) = 0.5 Then
+          ' Alternate between rounding .5 down (negative) and up (positive).
+          If (fReduce And Sgn(X) = 1) Or (Not fReduce And Sgn(X) = -1) Then
+          ' Or, replace the previous If statement with the following to
+          ' alternate between rounding .5 to reduce magnitude and increase
+          ' magnitude.
+          ' If fReduce Then
+            FixTemp = FixTemp - Sgn(X)
+          End If
+          fReduce = Not fReduce
+        End If
+        AltRound = FixTemp / Factor
+      End Function
+
+      Function ADownDigits(ByVal X As Double, _
+               Optional ByVal Digits As Integer = 0) As Double
+        ADownDigits = AsymDown(X, 10 ^ Digits)
+      End Function
+
+NOTE: With the exception of Excel's MRound() worksheet function, the built- in
+rounding functions take arguments in the manner of ADownDigits, where the second
+argument specifies the number of digits instead of a factor.
+
+The rounding implementations presented here use a factor, like MRound(), which is
+more flexible because you do not have to round to a power of 10. You can write
+wrapper functions in the manner of ADownDigits.
+
+Floating Point Limitations
+--------------------------
+
+All of the rounding implementations presented here use the double data type,
+which can represent approximately 15 decimal digits.
+
+Since not all fractional values can be expressed exactly, you might get
+unexpected results because the display value does not match the stored value.
+
+For example, the number 2.25 might be stored internally as 2.2499999..., which
+would round down with arithmetic rounding, instead of up as you might expect.
+Also, the more calculations a number is put through, the greater possibility
+that the stored binary value will deviate from the ideal decimal value.
+
+If this is the case, you may want to choose a different data type, such as
+Currency, which is exact to 4 decimal places.
+
+You might also consider making the data types Variant and use CDec() to convert
+everything to the Decimal data type, which can be exact to 28 decimal digits.
+
+Rounding Currency Values
+------------------------
+
+When you use the Currency data type, which is exact to 4 decimal digits, you
+typically want to round to 2 decimal digits for cents.
+
+The Round2CB function below is a hard-coded variation that performs banker's
+rounding to 2 decimal digits, but does not multiply the original number. This
+avoids a possible overflow condition if the monetary amount is approaching the
+limits of the Currency data type.
+
+      Function Round2CB (ByVal X As Currency) As Currency
+        Round2CB = CCur(X / 100) * 100
+      End Function
+
+Rounding Decimal Values
+-----------------------
+
+The following is an example of asymmetric arithmetic rounding using the Decimal
+data type:
+
+      Function AsymArithDec(ByVal X As Variant, _
+               Optional ByVal Factor As Variant = 1) As Variant
+        If Not IsNumeric(X) Then
+          AsymArithDec = X
+        Else
+          If Not IsNumeric(Factor) Then Factor = 1
+          AsymArithDec = Int(CDec(X * Factor) + .5)
+        End If
+      End Function
+
+Dropping Precision as a Shortcut in Rounding
+--------------------------------------------
+
+As taught in school, rounding is usually arithmetic rounding using positive
+numbers. With this type of rounding, you only need to know the number to 1 digit
+past where you are rounding to. You ignore digits past the first decimal place.
+In other words, precision is dropped as a shortcut to rounding the value.
+
+For example, both 2.5 and 2.51 round up to 3, while both 2.4 and 2.49 round down
+to 2.
+
+When you use banker's rounding (or other methods that round .5 either up or down)
+or when you round negative numbers using asymmetric arithmetic rounding,
+dropping precision can lead to incorrect results where you might not round to
+the nearest number.
+
+For example, with banker's rounding, 2.5 rounds down to 2 and 2.51 rounds up to
+3.
+
+With asymmetric arithmetic rounding, -2.5 rounds up to -2 while -2.51 rounds down
+to -3.
+
+The user-defined functions presented in this article take the number's full
+precision into account when performing rounding.
+
+REFERENCES
+==========
+
+Visual Basic Help, version 6.0; topic: Int, Fix Functions; Round Function
+
+Microsoft Transact SQL Help; topic: Round Function; Floor Function; Ceiling
+Function
+
+(c) Microsoft Corporation 1998, All Rights Reserved. Contributions by Malcolm
+Stewart, Microsoft Corporation.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbExcel kbSQLServ KbVBA kbVBp500 kbVBp600 kbGrpDSVBDB kbDSupport kbOffice97 
+Technology        : kbVBSearch kbSQLServSearch kbOfficeSearch kbAudDeveloper kbZNotKeyword6 kbSQLServ600 kbSQLServ700 kbSQLServ650 kbZNotKeyword2 kbVB500Search kbVB600Search kbOffice97Search kbVBA500Search kbVBA600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbOffice97 kbVBASearch kbZNotKeyword3
+Version           : :5.0,6.0,6.5,7.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

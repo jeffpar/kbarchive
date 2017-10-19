@@ -1,0 +1,53 @@
+DOCUMENT:Q146542  06-DEC-2000  [schedplus]
+TITLE   :XCLN: No Indication of Attachments Associated with Appointment
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0a, on platform(s):
+    - the operating system: Microsoft Windows 95 
+ - Microsoft Schedule+, version 7.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you accept a meeting request with an attachment in Microsoft Schedule+
+version 7.0 for Windows, the attachment is not written to the appointment and
+there is no indication of an attachment associated with the appointment. The
+attachment is only available in the original meeting request.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Schedule+ version 7.0a
+for Windows. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 7.00
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch
+Version           : WINDOWS:7.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

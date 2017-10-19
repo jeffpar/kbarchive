@@ -1,0 +1,75 @@
+DOCUMENT:Q147592  08-AUG-2001  [winnt]
+TITLE   :Setting Up Network Client 3.0 On Cogent EM960/964 PCI Adapter
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.0,3.5,3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Network Client for MS-DOS version 3.0 
+ - Microsoft Windows NT Workstation versions 3.5, 3.51 
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install the Cogent eMASTER+ EM960 or EM964 10/100 Mbps PCI
+network adapter in Network Client 3.0 for MS-DOS, the following error message
+appears:
+
+   No driver was found in the specified location (path).
+
+RESOLUTION
+==========
+
+To correct this problem:
+
+1. Run Network Client 3.0 for MS-DOS Setup.
+
+2. Select Change Network Configuration and press Enter.
+
+3. Select Add Adapter and press Enter.
+
+4. Select "*Network adapter not shown on list below..." and press Enter.
+
+5. Insert the floppy disk provided by Cogent that contains the network adapter
+   drivers.
+
+6. In Network Client 3.0 for MS-DOS Setup, enter the following:
+
+   " <drive>:\WINDOWS " (without the quotation marks)
+
+   where <drive> is the drive letter for the floppy disk drive.
+
+7. Select the correct Cogent network adapter driver.
+
+The third-party product discussed here is manufactured by Cogent Data
+Technologies, a vendor independent of Microsoft; we make no warranty, implied or
+otherwise, regarding this product's performance or reliability.
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbAudDeveloper kbZNotKeyword kbNetworkClientSearch kbNetworkClient300DOS
+Version           : winnt:3.0,3.5,3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

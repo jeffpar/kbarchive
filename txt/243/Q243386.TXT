@@ -1,0 +1,55 @@
+DOCUMENT:Q243386  04-FEB-2000  [iis]
+TITLE   :IIS Metabase Encryption on the French Version of Windows 2000
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+French encryption laws have become more flexible since the release of IIS 4.0.
+IIS 4.0 did not include an encrypted metabase. IIS 5.0 does include an encrypted
+metabase. However, if you upgrade from IIS 4.0 to IIS 5.0, the setup process
+keeps the IIS metabase unencrypted. In this case, the only way to have an
+encrypted metabase is to reinstall IIS 5.0.
+
+MORE INFORMATION
+================
+
+For example, on a computer running the French version of Windows 2000, the
+installation creates an encrypted metabase, whereas an upgrade from IIS 4.0
+leaves an unencrypted metabase.
+
+If an encrypted metabase is needed, reinstall IIS 5.0.
+
+Additional query words: iis
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

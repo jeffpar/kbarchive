@@ -1,0 +1,169 @@
+DOCUMENT:Q149202  21-MAR-1999  [exchange]
+TITLE   :XCLN: Client for Macintosh Version 4.0 Release Notes
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Macintosh client, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MICROSOFT EXCHANGE CLIENT FOR MACINTOSH
+
+NOTES FOR SERVER ADMINISTRATORS
+
+If your Macintosh clients will be connecting through AppleTalk:
+
+ - Run Windows NT Services for Macintosh on your Microsoft Exchange
+   Server computer and establish a zone for that computer.
+ - Tell your users what AppleTalk zone they will be connecting through.
+ - Make sure your Windows NT MacFile name is the same as your Microsoft
+   Exchange Server name.
+
+If your Macintosh Clients are connecting through TCP/IP:
+
+ - Make sure the Macintosh Client can ping the Microsoft Exchange Server
+   name.
+
+SETTING UP THE MICROSOFT EXCHANGE CLIENT ON YOUR MACINTOSH
+
+Your Macintosh must have at least 8 MB of RAM to run the Microsoft
+Exchange Client. If you have only 8 MB of RAM, and the system consumes
+more than 3 MB, you need to remove some extensions for Microsoft
+Exchange to run.
+
+Before you start:
+
+1. In Control Panels, double-click Memory.
+2. Turn on 32-bit addressing.
+
+We recommend that you use System 7.5.3 or later. Additionally, on the
+Power Macintosh, we recommend that Virtual Memory be turned ON and set
+to a minimum of 1 MB plus installed physical memory. For example, if
+your Power Macintosh has 16 MB of memory installed, you should set
+virtual memory to 17 MB.
+
+Steps:
+
+1. Insert the Macintosh Client compact disc into your Macintosh CD-ROM
+   drive, or connect to a share on your network.
+2. Open the Microsoft Exchange folder.
+3. Double-click Microsoft Exchange Setup. Follow the instructions.
+4. Run Microsoft Exchange. The Profile Wizard guides you through the
+   process of creating a new profile.
+
+Supported Protocols
+
+Both AppleTalk and TCP/IP are supported. If you are using TCP for the
+Macintosh, use version 2.06 or later.
+
+FORMS ISSUES
+
+To help users know which forms can be used on the Macintosh Client
+without having to open every message, the Viewer displays symbols for
+all messages that should have usable message contents (standard
+messages, post notes, resend notes, send and read receipts, signed
+messages, and out-of-office messages). Forms that cannot be displayed
+fully on the Macintosh appear with a different symbol.
+
+PERSONAL FOLDER FILES (.PSTs) AND MESSAGE FILES (.MSGs)
+
+The file format for personal folders and message files is different
+between Macintosh and Windows, so if you create one with the Macintosh
+Client, you won't be able to read it with a Windows Client. The reverse
+is also true. However, you can move messages from Macintosh to Windows
+and back by placing them in a server store and retrieving them on the
+desired platform.
+
+INSERTING FILES INTO A PUBLIC FOLDER
+
+To insert a file into a folder from the Microsoft Exchange Client for
+Macintosh:
+
+1. Log on to the Microsoft Exchange Client for Macintosh.
+2. From the Tools menu, choose Customize Toolbar.
+3. In the Available buttons box, highlight the File - Insert button.
+4. In the Toolbar buttons box, highlight the button after which you want
+   to place the File - Insert button.
+5. Choose Add, and then choose Close.
+
+To insert a file:
+
+1. Click the File - Insert button.
+2. Select the file you wish to insert.
+
+FOR BETA SITES
+
+If you participated in the Beta program, make sure you delete all the
+following files before installing the released Microsoft Exchange Client
+for Macintosh.
+
+   Microsoft Exchange\Beta Release Notes
+   Microsoft Exchange\ccMail Help
+   Microsoft Exchange\Distribution List Help
+   Microsoft Exchange\Exchange Help
+   Microsoft Exchange\Exchange Find Help
+   Microsoft Exchange\Exchange RegDB
+   Microsoft Exchange\Exchange Settings
+   Microsoft Exchange\Exchange Spelling
+   Microsoft Exchange\ExsndOpt.HLP
+   Microsoft Exchange\Internet Mail Connector Help
+   Microsoft Exchange\MACMAIL.HLP
+   Microsoft Exchange\Microsoft Exchange
+   Microsoft Exchange\Microsoft Mail for AT Help
+   Microsoft Exchange\Microsoft Mail for PC Help
+   Microsoft Exchange\MS.HLP
+   Microsoft Exchange\Other Address Book Entry Help
+   Microsoft Exchange\Personal Address Book
+   Microsoft Exchange\Public Folders Help
+   Microsoft Exchange\Scan Personal Folders Help
+   Microsoft Exchange\Send Options Help
+   Microsoft Exchange\X400 Connector Help
+   Microsoft Exchange\X400.HLP
+   System Folder\Exchange Temporary Items
+   System Folder\Preferences\Exchange Preferences
+   System Folder\Preferences\Exchange Profiles\Exchange UID
+   System Folder\Preferences\Exchange Profiles\Offline folders
+   System Folder\Preferences\Exchange Profiles\Profile Registry
+   System Folder\Preferences\Exchange Services
+   System Folder\Preferences\mspst.ini
+   System Folder\Preferences\EXCHNGM.INI
+
+(c) 1996 Microsoft Corporation.  All rights reserved.
+
+AppleTalk is a registered trademark of Apple Computer, Inc.
+Macintosh is a registered trademark of Apple Computer, Inc.
+Microsoft, MS, MS-DOS, and Windows are registered trademarks, and
+Windows NT is a trademark of Microsoft Corporation in the USA and other
+countries.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbExchangeClientSearch kbExchange400Mac
+Version           : WINDOWS:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

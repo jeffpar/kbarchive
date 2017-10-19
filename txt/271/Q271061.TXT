@@ -1,0 +1,59 @@
+DOCUMENT:Q271061  11-JAN-2001  [homemm]
+TITLE   :Encarta: Cannot Download Image from Active Server Pages (ASP)
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Researcher 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you add a dynamic image to Microsoft Encarta Researcher, such as a map or a
+live picture, the wrong image may be imported or a red X may be displayed in
+place of the image.
+
+CAUSE
+=====
+
+This behavior can occur if the image that you are attempting to add is displayed
+in an Active Server Page (ASP).
+
+RESOLUTION
+==========
+
+To work around this issue, right-click the image, and then click Save Picture
+As.
+
+After you save the picture to your hard disk, you can open the picture and add it
+to Researcher.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

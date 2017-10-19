@@ -1,0 +1,68 @@
+DOCUMENT:Q224514  25-APR-1999  [winnt]
+TITLE   :SBS Err Msg: No Email Profile Was Found for the Current User...
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0,4.0a
+OPER/SYS:
+KEYWORDS:kbenv kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Small Business Server versions 4.0, 4.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install BackOffice Small Business Server, the following error message
+may occur when the Administrator account begins creating user accounts:
+
+   No email profile was found for the current user. Please exit this program and
+   create an email profile using the Control Panel application. Then restart
+   this program.
+
+CAUSE
+=====
+
+This behavior occurs because the e-mail profile for the Administrator account is
+not created when you install Small Business Server.
+
+RESOLUTION
+==========
+
+To resolve the issue:
+
+1. Cancel the "Add a New User" process.
+
+2. Click Start, point to Settings, and then click Control Panel.
+
+3. Double-click Mail.
+
+4. Create an e-mail profile for the Administrator account.
+
+5. Restart Small Business Server.
+
+Additional query words: smallbiz
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbAudDeveloper kbSBServSearch kbSBServ400 kbSBServ400a
+Version           : winnt:4.0,4.0a
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

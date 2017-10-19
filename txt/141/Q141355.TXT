@@ -1,0 +1,119 @@
+DOCUMENT:Q141355  24-MAR-2000  [foxpro]
+TITLE   :FIX: Copy/Paste Causes GP Fault w/Worksheet Created by COPY TO
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:kbvfp kbvfp300bBUG kbvfp500fixkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A general protection (GP) fault may occur when you try to paste a range of cells
+copied from a worksheet that you originally created from a table in Visual
+FoxPro. The error states:
+
+   This program has performed an illegal operation and will be shut down. If the
+   problem persists, contact the program vendor.
+
+The details state:
+
+   EXCEL caused an invalid page fault in module EXCEL.EXE at 01737:5014a2f8.
+
+CAUSE
+=====
+
+This error occurs when the following conditions exist:
+
+ - You created a Microsoft Excel version 5.0 .xls file.
+
+ - You are using Microsoft Excel version 7.0 to edit the file.
+
+WORKAROUND
+==========
+
+There are two workarounds for this problem.
+
+Method 1
+--------
+
+To create the .xls file in Visual FoxPro, use the COPY TO command in the
+following form:
+
+        COPY TO filename TYPE XLS
+
+rather than:
+
+        COPY TO filename TYPE XL5
+
+Method 2
+--------
+
+After using the COPY TO command with the TYPE XL5 clause to create a Microsoft
+Excel worksheet, use only Microsoft Excel version 5.0 to open the resulting
+worksheet.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+for Windows.
+
+MORE INFORMATION
+================
+
+Microsoft Excel version 7.0 for Windows was not available when Visual FoxPro for
+Windows was released.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Open or switch to Microsoft Visual FoxPro.
+
+2. Open (with the USE command) the Customer table from \Vfp\Samples\Data.
+
+3. In the Command window, enter the following line of code:
+
+      COPY TO C:\TEST.XLS TYPE XL5
+
+4. Start Microsoft Excel version 7. Then locate and open Test.xls.
+
+5. Select some range of cells (can be one).
+
+6. On the Edit menu, click Copy. Then on the File menu, click New.
+
+7. Click the General tab, select Workbook, and click OK.
+
+8. On the Edit menu, click Paste. At this point, the error occurs.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp300bBUG kbvfp500fix kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

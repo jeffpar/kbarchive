@@ -1,0 +1,61 @@
+DOCUMENT:Q163549  26-MAY-2001  [word97]
+TITLE   :WD97: Downloads and Updates Available from Microsoft
+PRODUCT :Word 97 for Windows
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbfilekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article formerly listed the various downloads and updates for Microsoft
+Word 97 for Windows.
+
+To see the most current available downloads and updates for Word 97, please view
+the following Web sites directly:
+
+ - Tools on the Web (http://office.microsoft.com/)
+
+ - Microsoft Download Center (http://www.microsoft.com/downloads/search.asp)
+
+Please Note
+
+Microsoft Product Support Services has moved most downloadable support files to
+the Microsoft Download Center (http://www.microsoft.com/downloads/search.asp).
+With the Microsoft Download Center, you have:
+
+ - A single starting point for downloadable files.
+ - The ability to search the entire Microsoft.com site for downloadable files.
+ - Reduced time in finding these files.
+
+Additional query words: freestuff addins add-ins
+
+======================================================================
+Keywords          : kbfile kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

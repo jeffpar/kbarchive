@@ -1,0 +1,105 @@
+DOCUMENT:Q163595  10-AUG-2001  [winnt]
+TITLE   :SNMP Entry Point not Found
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After you install the Simple Network Management Protocol (SNMP) service on your
+Windows NT 4.0 Service Pack 2 or later computer you may receive the following
+error message:
+
+   SNMP Error - Entry point not found.
+   The procedure entry point SnmpSvcGetEnterpriseOID could not be located in the
+   dynamic link library snmpapi.dll
+
+Event Viewer on your Windows NT computer may also log one or more of the
+following event messages:
+
+   Event ID : 7022
+   Source : Service Control Manager
+   Description: The SNMP service hung on starting.
+
+-or-
+
+   Event ID : 1106
+   Source : SNMP
+   Description: The SNMP service is ignoring extension agent dll.
+   C:\winnt\system32\inetmib1.dll because it is missing or misconfigured.
+
+NOTE: If you receive these error messages, the Network Segment counter may not be
+displayed in Performance Monitor.
+
+CAUSE
+=====
+
+The files you install with the SNMP service are from the original Windows NT
+installation media and are older than the files supplied with the service pack.
+
+RESOLUTION
+==========
+
+To resolve this issue, you will need to reapply the latest Windows NT service
+pack to update all the files.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   ARTICLE-ID: Q139815
+   TITLE : Windows NT Service Packs and OEM drivers
+
+MORE INFORMATION
+================
+
+Compaq's Insight Manager is one application that requires the SNMP service to be
+installed and working correctly. Please use the following installation order
+when working with a computer that is using Insight Manager:
+
+1. Install all required services including SNMP.
+
+2. Before rebooting apply the latest Windows NT Service Pack.
+
+3. Before rebooting apply the appropriate SSD from Compaq.
+
+4. Reboot.
+
+5. Install Insight Manager from Compaq.
+
+Insight Manager is manufactured by Compaq Computer Corp., a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: entrypoint network segment perfmon
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

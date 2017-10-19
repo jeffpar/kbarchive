@@ -1,0 +1,94 @@
+DOCUMENT:Q259000  27-JUL-2000  [foxpro]
+TITLE   :PRB: Space in CREATE FROM Field Name Causes Error
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbDatabase kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbXBase KbDBFDBC kbGrpDSFox k
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you accidentally add a space to a field name in a table created with the COPY
+STRUCTURE EXTENDED command, after creating the table with the CREATE FROM
+command, any immediate attempt to access that field (such as with a BROWSE
+statement) fails with the following error:
+
+   The data source for this object must be a variable reference.
+
+If the table is in a database, any later attempt will fail with the same error.
+If it's a free table, closing the table and re-opening it causes Visual FoxPro
+to replace the space in the field name with an underscore.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Run the following code in the Command window:
+
+   * Start of Code
+   USE HOME() + "labels"
+
+   COPY STRUCTURE EXTENDED TO tableFrom
+   USE tableFrom EXCLUSIVE
+   ZAP
+   INSERT INTO tableFrom ;
+       (field_name, field_type, field_len) ;
+       VALUES ;
+       ("a a", "C", 10)
+
+   CREATE DATABASE dbcTo
+
+   *!* VFP 3 creates the table in the open database.
+   *!* CREATE tableTo FROM tableFrom 
+   *!* VFP 5 and 6 allow you to specify the database 
+   *!* when creating a table.
+   CREATE tableTo DATABASE dbcTo FROM tableFrom 
+
+   *!* Note: if you run the VFP 3 code in VFP 5/6 and
+   *!* then use the ADD TABLE command, the error you 
+   *!* will get on BROWSE is :
+   *!* "The fields in table 'c:\temp\tableTo.dbf' 
+   *!* did not match the entries in the database."
+   SELECT tableTo
+   BROWSE
+   *End Of Code
+
+REFERENCES
+==========
+
+For more information about the CREATE FROM and COPY STRUCTURE EXTENDED commands,
+please see the Help files.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbXBase KbDBFDBC kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

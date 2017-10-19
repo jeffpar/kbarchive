@@ -1,0 +1,101 @@
+DOCUMENT:Q138142  11-JAN-2001  [vbwin]
+TITLE   :How to Determine If a String Is UNICODE or ANSI
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+ANSI strings use one byte per character if they don't contain any DBCS
+characters. UNICODE strings use two bytes per character.
+
+There is a built-in OLE API function that allows you determine whether a string
+is UNICODE or ANSI. However, you can also use the Len() and LenB() Visual Basic
+functions to compare the length of the string in characters and in bytes, as
+demonstrated by the step-by-step example in this article.
+
+NOTE: The code sample in this article will work only for those cases where you
+are not likely to encounter DBCS characters in ANSI strings.
+
+MORE INFORMATION
+================
+
+The Len function returns the length of the string in characters, and the LenB
+function returns the length of the string in bytes. While this is the same for
+an ANSI string, LenB will return a value twice that returned by Len for a
+UNICODE string. This fact can be used to determine if a string is UNICODE or
+ANSI.
+
+NOTE: When a string has been brought into the Visual Basic environment, it will
+be DBCS if it is the 16-bit version of the product, and UNICODE if it is the
+32-bit version of the product. If the string is DBCS, then the string contains
+characters that are either one or two bytes per character, depending on the
+contents of the string and the language support in the Operating System. If you
+do happen to be able to get a 32-bit string that contains the bit patterns for
+ANSI/DBCS characters, it will be interpreted as UNICODE and produce invalid
+results when manipulated or used because the UNICODE characters are definitely
+not what you want.
+
+Step-By-Step Example
+--------------------
+
+1. Start a new project in 32-bit Visual Basic. Form1 is created by default.
+
+2. Add the following code to the General Declarations section of Form1:
+
+      Private Function IsUnicode(s As String) As Boolean
+         If Len(s) = LenB(s) Then
+            IsUnicode = False
+         Else
+            IsUnicode = True
+         End If
+      End Function
+
+3. Add the following code to the Form_Click event of Form1:
+
+      Private Sub Form_Click()
+         Dim s As String
+         s = "hello"
+         Debug.Print IsUnicode(s)
+      End Sub
+
+4. Press F5 to run the program. Click the form. The IsUnicode function will
+   return True in the debug window. This is because 32-bit Visual Basic always
+   stores UNICODE strings internally. If the same code is run under 16-bit
+   Visual Basic, the IsUnicode Function will return False because 16-bit Visual
+   Basic stores ANSI strings internally.
+
+Additional query words: 4.00 vb4win vb4all
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

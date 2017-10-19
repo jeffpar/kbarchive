@@ -1,0 +1,69 @@
+DOCUMENT:Q186727  07-SEP-2001  [word97]
+TITLE   :WD97: Light Blue Background Prints on Graphics
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbprint kbdta word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print a document containing graphics to a color printer, the graphics
+print with a light blue background.
+
+CAUSE
+=====
+
+In the Microsoft Windows 95 printer driver Spool Settings, you may have Spool
+data format set to a value other than RAW.
+
+RESOLUTION
+==========
+
+To resolve this problem, change the spool data format to RAW.
+
+NOTE: Because there are several versions of Windows, the following steps may be
+different on your computer. If they are, please consult your product
+documentation to complete these steps.
+
+1. Click the Start button, point to Settings, and then click Printers.
+
+2. Select the printer you are using to print your document.
+
+3. On the File menu, click Properties.
+
+4. On the Details tab, click Spool Settings.
+
+5. In the Spool Data Format list, click RAW. Click OK twice.
+
+Additional query words: printing shade shaded
+
+======================================================================
+Keywords          : kbprint kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

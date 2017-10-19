@@ -1,0 +1,50 @@
+DOCUMENT:Q237610  30-JUL-2001  [winnt]
+TITLE   :Err Msg: "You Do Not Have Permission to Modify This Print Job"
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+When you attempt to delete a print job from a Windows 95/98 client and the print
+queue resides on a Windows NT Server-based computer, the following error message
+may be displayed:
+
+   You Do Not Have Permission to Modify This Print Job
+
+This error message is displayed even if you are the owner of the print job, and
+have Full Control permissions to manage documents.
+
+CAUSE
+=====
+
+This behavior occurs because of a latency between the time the job actually
+leaves the server, and the time that the client queue refreshes. The print job
+no longer resides on the server; it is already spooled out to the printer and is
+in the printer's memory.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

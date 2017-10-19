@@ -1,0 +1,55 @@
+DOCUMENT:Q118874  12-NOV-1999  [miscsdk]
+TITLE   :Command-Line Options for MVIEWER2.EXE
+PRODUCT :Miscellaneous Software Development Kits
+PROD/VER::2.0,2.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Multimedia Viewer Publishing Toolkit, versions 2.0, 2.0a 
+-------------------------------------------------------------------------------
+
+The syntax for the command line to launch the Viewer application
+(MVIEWER2.EXE) with a title is as follows:
+
+      MVIEWER2.EXE title.mvb
+
+where "title.mvb" would be replaced with the filename of the title to be
+opened.
+
+To start Viewer at a particular topic within a title, the -i command-line
+option can be used. This is the syntax for the -i command-line option:
+
+      MVIEWER2.EXE -i context_string title.mvb
+
+where "context_string" would be replaced with the context string of the
+topic to be initially displayed. The -i switch is most useful for testing.
+
+To cause a title to always open at a given topic, you can use the CONTENTS=
+option in the .MVP file.
+
+Additional query words: 2.00
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbMMViewer200 kbMMViewer200a
+Version           : :2.0,2.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

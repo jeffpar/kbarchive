@@ -1,0 +1,63 @@
+DOCUMENT:Q195885  11-DEC-2001  [winnt]
+TITLE   :Installing Seagate Backup Exec 7.x on Terminal Server
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The installation of Seagate Backup Exec 7.x updates the JET and DAO files that
+are installed with Terminal Server. Because these files are in use by the
+Terminal Server Licensing Service (Lserver.exe), the service must be stopped to
+allow the update to take place. If the Terminal Server Licensing Service is not
+stopped, the following error occurs during the Backup Exec 7.x installation:
+
+   DAO and Jet Files in Use. The following applications or services are
+   currently using DAO and Jet Files: Lserver.exe. Please close these
+   applications before continuing the installation.
+
+MORE INFORMATION
+================
+
+To disable the Terminal Server Licensing Service, perform the following steps:
+
+1. In Control Panel, double-click Services.
+
+2. Select Terminal Server Licensing, and click stop.
+
+3. Install Seagate Backup Exec.
+
+4. Restart the Terminal Server Licensing service.
+
+Additional query words: licensing
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

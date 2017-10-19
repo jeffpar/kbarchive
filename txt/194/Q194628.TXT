@@ -1,0 +1,73 @@
+DOCUMENT:Q194628  07-JAN-2000  [vbwin]
+TITLE   :PRB: Learning Edition Does Not Ship With the Data Form Wizard
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Attempting to create a Data Access Form through an Application Wizard project
+results in the following error message:
+
+   "Failed to load the Data Form Wizard".
+
+CAUSE
+=====
+
+The Data Form Wizard does not ship with the Microsoft Visual Basic 6.0 Learning
+Edition.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new VB Application Wizard project in Microsoft Visual Basic 6.0
+   Learning Edition.
+
+2. Once the Application Wizard launches, click the "Next" command button to
+   accept all default settings until the "Data Access Forms" screen appears.
+
+3. Select the "Create New Form" command button on the "Data Access Forms
+   dialog." The following error message will appear:
+
+   "Failed to load the Data Form Wizard"
+
+Additional query words: kbDSupport kbdss kbVBp600 kbWizard kbLEdition kbAppSetUp kbVBp
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,111 @@
+DOCUMENT:Q323189  17-MAY-2002  [sna]
+TITLE   :"Random Sponsors" Option Doesn't Work on HIS End-User Client
+PRODUCT :Microsoft SNA Server
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbhis2000 kbhis2000bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Host Integration Server (HIS) 2000 End-User Client always connects to
+sponsor servers in the order in which they are listed in the SNA Resource
+Location Wizard, even if the "Select SNA Service computer in random order" (also
+known as the Random Sponsors) option is selected.
+
+CAUSE
+=====
+
+This behavior occurs because the routine used by the HIS 2000 End-User Client to
+place the configured sponsor servers in the client's service table does not
+randomly add the sponsor servers when the "Select SNA Service computer in random
+order" option is selected.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem described in this article and should be applied only to
+systems experiencing this specific problem. This fix may receive additional
+testing at a later time, to further ensure product quality. Therefore, if you
+are not severely affected by this problem, Microsoft recommends that you wait
+for the next Microsoft Host Integration Server 2000 service pack that contains
+this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, please go to the following
+address on the World Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are normally incurred for support calls may
+be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. Normal support costs will apply to additional
+support questions and issues that do not qualify for the specific update in
+question.
+
+The English-language version of this fix has the file attributes (or later) that
+are listed in the following table. The dates and times for these files are
+listed in coordinated universal time (UTC). When you view the file information,
+it is converted to local time. To determine the difference between UTC and local
+time, click the Time Zone tab in the Date and Time tool in Control Panel.
+
++----------------------------------------------------------+
+| Date        | Time  | Version   | Size    | File name    | 
++----------------------------------------------------------+
+| 16-May-2002 | 15:49 | 5.0.0.836 | 65,808  | Dmodappc.dll | 
++----------------------------------------------------------+
+| 16-May-2002 | 15:49 | 5.0.0.836 | 61,712  | Snadmod.dll  | 
++----------------------------------------------------------+
+| 16-May-2002 | 15:49 | 5.0.0.836 | 233,744 | Snakrnl.dll  | 
++----------------------------------------------------------+
+| 16-May-2002 | 15:49 | 5.0.0.836 | 102,672 | Snands32.dll | 
++----------------------------------------------------------+
+| 16-May-2002 | 15:49 | 5.0.0.836 | 155,920 | Wappc32.dll  | 
++----------------------------------------------------------+
+| 16-May-2002 | 15:49 | 5.0.0.836 | 98,576  | Snabase.exe  | 
++----------------------------------------------------------+
+
+NOTE: Because of file dependencies, the most recent fix that contains the above
+files may also contain additional files.
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Host Integration
+Server 2000.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbhis2000 kbhis2000bug 
+Technology        : kbAudDeveloper kbHostIntegServ2000
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

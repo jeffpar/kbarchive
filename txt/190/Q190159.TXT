@@ -1,0 +1,100 @@
+DOCUMENT:Q190159  11-DEC-2001  [winnt]
+TITLE   :Returning Username Rather than Computername in Terminal Server
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it if
+a problem occurs. For information about how to do this, view the "Restoring
+the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+Help topic in Regedt32.exe.
+
+SUMMARY
+=======
+
+Some applications use the computer's name as a unique identifier, rather than
+using the user name. In a single-user-per-computer environment, this strategy
+works well. However, in a Terminal Server environment, all connected users
+report the same computername. If the application relies on unique computernames
+to handle tasks such as file and record locking, then the application will fail.
+
+MORE INFORMATION
+================
+
+An example of an application that uses the computer's name as a unique
+identifier is Informix 4.01 for MS-DOS. When multiple Terminal Server users try
+to use the application, they get file sharing errors. The application is
+designed to allow the Terminal Server computername access to the files just one
+time.
+
+To resolve this problem, you can set an application-compatibility flag with a
+value of 0x10 for the application in the Terminal Server registry. The 0x10
+value tells the system to return the username rather than the computername to
+the application.
+
+NOTE: There may be several executables associated with an application. All of
+them may need to be "flagged" for the application to run correctly.
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it. If
+you are running Windows NT, you should also update your Emergency Repair Disk
+(ERD).
+
+To add the application compatibility flag:
+
+1. Run REGEDT32.
+
+2. Locate HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT
+   \CurrentVersion\Terminal Server\Compatibility\Applications.
+
+3. Under Applications, add a key with the name of the application executable.
+   Create a separate key for each executable.
+
+4. Under the new key, add a DWORD value called FLAGS.
+
+5. Give FLAGS a value of 0x10 plus the correct value for the application type
+   (0x01 for MS-DOS, 0x04 for 16-bit Windows, 0x08 for 32-bit Windows). In the
+   Informix example, since this is a DOS application, the correct value for
+   FLAGS is 0x11.
+
+6. Exit REGEDT32.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,57 @@
+DOCUMENT:Q110220  30-JUL-2001  [lanman]
+TITLE   :Cannot Add RAS Users When RASADMIN Fails with Large UAS
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+
+SYMPTOMS
+========
+
+When an OS/2 version 1.3 LAN Manager 2.2 server has more than 5000 users in its
+NET.ACC, RASADMIN reports this error when you select users and permissions while
+in the RASADMIN utility:
+
+   Not enough memory or unable to load resource
+
+You are prevented from adding users to RAS access.
+
+CAUSE
+=====
+
+The RAS utility was not written to accommodate this many user accounts.
+
+RESOLUTION
+==========
+
+CSD 01.005 has resolved hotsite escalation for this problem. This consists of an
+MS-DOS and OS/2 RASUSER.EXE utility that can be run from command line. Just type
+in RASUSER and it will show usage.
+
+STATUS
+======
+
+Resolved.
+
+Additional query words: 2.20 2.2 RASADMIN RAS permissions
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

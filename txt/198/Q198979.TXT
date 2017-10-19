@@ -1,0 +1,55 @@
+DOCUMENT:Q198979  02-SEP-1999  [mastering]
+TITLE   :PRB: Mastering Series: 32 KB Limit on Size of a Notebook File
+PRODUCT :Microsoft Mastering Series
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbMastVbp kbDSupport kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Mastering Products, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+There is a 32 KB limit on how much information can be put in the Notebook
+feature of the Mastering Series products.
+
+MORE INFORMATION
+================
+
+The Notebook feature in the Mastering Series titles will generate a *.lst file
+on the hard drive (in \lists directory). The size of this file cannot exceed 32
+KB without information being truncated. You can create bookmarks and notes in
+the application that exceed 32 KB, but once you have shutdown the application
+and restarted then the *.lst file will be truncated to 32 KB. Consequently, many
+bookmarks and notes will be lost.
+
+Microsoft has confirmed this to be a problem with the Mastering Series products.
+
+Additional query words: kbimu multi multi-media media mm
+
+======================================================================
+Keywords          : kbMastVbp kbDSupport kbGrpDSTools 
+Technology        : kbMSPressSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

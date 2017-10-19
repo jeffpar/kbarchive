@@ -1,0 +1,58 @@
+DOCUMENT:Q131612  17-DEC-2000  [win95x]
+TITLE   :HyperTerminal Err Msg: The TAPI Configuration Has Changed...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start a HyperTerminal connection, you receive the following error
+message:
+
+   The TAPI configuration has changed and the modem/port selected for this
+   session is no longer valid.
+
+CAUSE
+=====
+
+When you create a connectoid in HyperTerminal, it is associated with a
+particular modem on a particular port. If, after you create the connectoid, the
+modem is removed, you receive the error message stated above when you try to use
+the connection. This error message indicates that the modem associated with the
+connectoid has been removed, and that the system has identified a likely
+alternative.
+
+RESOLUTION
+==========
+
+Click OK to acknowledge the error message. There should be no effect on the
+connection if the connection is associated with a valid modem.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,67 @@
+DOCUMENT:Q137683  17-DEC-2000  [win95x]
+TITLE   :Duplicate .fon Files Installed During Setup
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you upgrade Windows 3.1 to Windows 95, you may find duplicate .fon files in
+the Windows\Fonts and Windows\System folders.
+
+CAUSE
+=====
+
+Setup does not delete the .fon files in the Windows\System folder because they
+are in use when you are upgrading from Windows 3.1 to Windows 95. Once Windows
+95 is installed, these files are no longer needed. Setup copies the necessary
+font files into the Windows\Fonts folder.
+
+RESOLUTION
+==========
+
+Delete the .fon files in the Windows\System folder. To do so, follow these
+steps:
+
+1. Restart your computer. When you see the "Starting Windows 95" message, press
+   the F8 key, and then choose Safe Mode Command Prompt Only from the Startup
+   menu.
+
+2. Change to the Windows\System folder by typing the following line:
+
+   " cd windows\system " (without the quotation marks)
+
+3. Delete the .fon files by typing the following line: del *.fon
+
+4. Restart your computer normally.
+
+Additional query words: ttf
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

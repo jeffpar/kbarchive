@@ -1,0 +1,82 @@
+DOCUMENT:Q239578  27-JUL-2001  [automap]
+TITLE   :S&T 2000 Err Msg: Setup Could Not Write to Line in the INI File
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Expedia Streets and Trips 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Microsoft Expedia Streets and Trips 2000, you may
+receive the following error message:
+
+   Setup could not write to line in the INI File
+   File: 'C:\Windows\Wininit.ini'
+   Section: 'Rename'
+   Key: 'C:\Windows\System\Msvcrt.dll'
+
+CAUSE
+=====
+
+This behavior can occur if the Wininit.ini file is damaged.
+
+RESOLUTION
+==========
+
+To resolve this issue, rename the Wininit.ini file, and then reinstall Expedia
+Streets and Trips 2000:
+
+1. Click Start, point to Find, and then click "Files or Folders."
+
+2. In the Named box, type "wininit.ini" (without the quotation marks).
+
+3. In the "Look in" box, click My Computer.
+
+4. Click to select the Include Subfolders check box.
+
+5. Click Find Now.
+
+6. In the list of found files, right-click the Wininit.ini file, and then click
+   Rename.
+
+7. Type "wininit.old" (without the quotation marks), and then press ENTER.
+
+   NOTE: If you find more than one copy of the Wininit.ini file in the list of
+   found files, repeat steps 6-7 for each copy.
+
+8. Close the Find: Files Named Wininit.ini window.
+
+9. Reinstall Expedia Streets and Trips 2000.
+
+
+Additional query words: est2000 auto-map amap installs setup
+
+======================================================================
+Keywords          : kberrmsg kbsetup kbimu 
+Technology        : kbHomeProdSearch kbExpediaSearch kbExpediaStreets2000
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,84 @@
+DOCUMENT:Q179457  19-DEC-1999  [homemm]
+TITLE   :Bookshelf 98: Footnote Number Is Displayed Beneath Pasted Text
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbinterop kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 98 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Copy To Word feature in Microsoft Bookshelf 98, the footnote
+number may be displayed on the line beneath the pasted text.
+
+NOTE: The Copy To Word feature is not included in Microsoft Bookshelf 99.
+
+CAUSE
+=====
+
+This behavior can occur if both of the following conditions exist:
+
+ - The last character of the pasted text is a space.
+
+ - The space is immediately to the left of the right margin in Microsoft Word.
+
+RESOLUTION
+==========
+
+To resolve this behavior, use one of the following methods:
+
+Method 1
+--------
+
+Make sure the last character of the selected text is not a space.
+
+Method 2
+--------
+
+Adjust the right margin in Word so that the space is not the last character on
+the line.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Bookshelf 98 for
+Windows. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+When you use the Copy To Word feature in Bookshelf, a footnote containing
+Bookshelf copyright information is added to the pasted text. This behavior is by
+design.
+
+Additional query words: 98 multi media multimedia multi-media mmtitles
+
+======================================================================
+Keywords          : kbinterop kbimu 
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1998
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

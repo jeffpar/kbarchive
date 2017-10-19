@@ -1,0 +1,58 @@
+DOCUMENT:Q128121  08-AUG-2001  [winnt]
+TITLE   :WINS PersonaNonGrata Registry Parameter
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Windows NT Server version 3.5 Windows Internet Name Service (WINS)
+includes a registry parameter for replication partners called PersonaNonGrata
+(located under the \Wins\Partners key).
+
+MORE INFORMATION
+================
+
+This parameter is not defined in the Windows NT 3.5 registry help file or in the
+Windows NT 3.5 Server documentation. It is documented only in the Microsoft
+Windows NT Resource Kit Volume 2: Windows NT Networking Guide (Chapter 14, Page
+306, Installing and Configuring WINS Servers).
+
+This parameter specifies the Internet Protocol (IP) addresses of WINS servers
+whose records are not to be inserted into the local database during replication.
+If there are incorrect records in one or more WINS server databases on your
+network, you can prevent those records from being replicated to your WINS Server
+database by specifying the IP addresses of the WINS servers that own them under
+the PersonaNonGrata parameter. After you make this change, restart the server
+for the change to take effect.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

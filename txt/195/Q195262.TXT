@@ -1,0 +1,76 @@
+DOCUMENT:Q195262  19-JUL-2001  [foxpro]
+TITLE   :HOWTO: Delete ODBC Data Source Using SqlConfigDataSource
+PRODUCT :Microsoft FoxPro
+PROD/VER::2.5,3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbDatabase kbODBC kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbMDAC250
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+ - Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to programmatically remove an existing ODBC
+datasource instead of manually removing it through the ODBC Administrator. You
+can use the SqlConfigDataSource function in Odbccp32.dll for this purpose.
+
+MORE INFORMATION
+================
+
+The following sample code demonstrates how to use this API function to remove a
+Visual FoxPro Database datasource. To use this code, you need to create a
+datasource called rmtest that points to the data1.dbc in your local hard drive.
+
+      DECLARE Integer SQLConfigDataSource IN odbccp32.dll Integer, ;
+         Integer, String, String
+      DriverName="Microsoft Visual FoxPro Driver"
+      IsRemove =SQLConfigDataSource(1,3,DriverName, "DSN=rmtest" + CHR(0)+;
+                  "Description=david test"+CHR(0)+;
+                  "SourceDB=C:\TEMP\data1.dbc"+CHR(0)+;
+                  "SourceType=DBC")
+      IF IsRemove>0
+         WAIT WINDOW "Deleted"
+      ELSE
+         WAIT WINDOW "Delete failed"
+      ENDIF
+
+Note that the "Description=david test" portion of the connection string can be
+omitted and the datasource will still be removed.
+
+REFERENCES
+==========
+
+To programmatically create a data source, please see the following article in
+the Microsoft Knowledge Base:
+
+   Q142216 HOWTO: Create ODBC Data Sources Using SqlConfigDataSource
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbODBC kbvfp300 kbvfp300b kbvfp500 kbvfp500a kbvfp600 kbMDAC250 
+Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : :2.5,3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

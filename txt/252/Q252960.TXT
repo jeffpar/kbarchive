@@ -1,0 +1,82 @@
+DOCUMENT:Q252960  16-MAY-2002  [homegame]
+TITLE   :Asheron's Call: How to Retrieve Items After Your Character Dies
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbui igz kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Asheron's Call, version 1.0 
+ - Microsoft Asheron's Call: Dark Majesty, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to retrieve items after your character dies in
+Microsoft Asheron's Call.
+
+MORE INFORMATION
+================
+
+When your character dies in Asheron's Call, you lose half of your Pyreals and,
+depending on your skill level, you may lose one or more of your most valuable
+items. The lost items are stored in your character's corpse and eventually will
+be available on the ground for a short time after the corpse decomposes.
+
+The higher your skill level, the longer it takes for the corpse to decompose. The
+minimum time that it takes for your character's corpse to decompose is 60
+minutes. For each skill level that you attain, five minutes are added to the
+time it takes for your character's corpse to decompose. To retrieve your items,
+you must first find your character's corpse. This can be done by going to the
+coordinates of the corpse. The coordinates of your corpse are listed in the
+"Chat & Events Log" when you die.
+
+Note: Coordinates do not exist in buildings or a dungeons. If you die within such
+a location, no coordinates will be listed when you die. We suggest that you look
+at the Map prior to entering such an area and make note of the coordinates to
+the entrance and your general location once inside.
+
+If you do not think you can get to your corpse in time you may use the /permit
+command in the Chat Box to give another player permission to loot your corpse.
+This should be a player that you trust will give the items back to you. For more
+information on the /permit command, type in "/help permit" (without the
+quotation marks) in the Chat Box.
+
+If you cannot find your character's corpse, the items that are contained in the
+corpse become available on the ground for other players to take after the corpse
+has completely decomposed.
+
+NOTE: Microsoft cannot manually restore any lost items for you.
+
+For more information about how to recover from death in Asheron's Call, please
+see the following Zone Web page:
+
+   http://zone.msn.com/asheronscall/tips/ashetipsdying.asp
+
+Additional query words: 1.00 ac msgame igz msngz rots dead body asherons
+
+======================================================================
+Keywords          : kbui igz kbimu msgame 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbMSNSearch kbAsheronSearch kbAsheron100 kbAsheronDarkMaj
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

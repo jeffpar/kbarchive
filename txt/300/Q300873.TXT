@@ -1,0 +1,64 @@
+DOCUMENT:Q300873  12-MAR-2002  [mspress]
+TITLE   :Office XP Step by Step Interactive Training
+PRODUCT :Microsoft Press
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS OfficeXP Step By Step Interactive Version 3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Checklist for installation of Microsoft Press Office XP Step by Step Interactive
+Training
+
+MORE INFORMATION
+================
+
+This CD is included with Office XP Pro Retail version.
+
+Please have the customer review the following checklist when an installation
+error occurs. This list will be updated as more information becomes available.
+1. Make sure the computer meets the Minimum Requirements before installing the
+training software. The minimum requirements can be found in the README document
+on the CD.
+2. If an Intellipoint mouse was included with the training software and is
+installed on the computer, make sure the updated mouse driver Intellipoint 3.2
+is installed and the computer rebooted.
+3. Make sure Macromedia Flash 4.0 or higher is installed on the computer. This is
+part of the minimum configuration, but the Macromedia Flash software can be
+found at www.Macromedia.com.
+4. When users are installing on Windows 2000 or NT 4.0, make sure the user has
+Local Administrator rights to install software.
+5. Anti-virus software can restrict the training software installation. In some
+cases, the anti-virus software will need to be disabled during installation.
+
+Additional query words: OfficeXP Office XP Installation MSPress SBSI
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch
+Issue type        : kbhowto kbinfo
+Solution Type     : kbfix kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,77 @@
+DOCUMENT:Q190366  18-DEC-1999  [exchange]
+TITLE   :XFOR: Cannot Reply to Messages Through a Cisco PIX Firewall
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0,5.5
+OPER/SYS:
+KEYWORDS:exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you send a message from one Microsoft Exchange Server computer to another
+through the Internet Mail Service, and then attempt to reply to the message, the
+reply may not be sent successfully. This problem occurs when the two servers are
+connected through a Cisco PIX Firewall on which the Mail Guard feature is
+enabled.
+
+
+WORKAROUND
+==========
+
+To work around this problem, disable the Mail Guard feature on the Cisco PIX
+Firewall. For additional information, contact Cisco.
+
+For information about how to contact Cisco, query in the Knowledge Base for one
+of the following articles:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+
+MORE INFORMATION
+================
+
+Mail Guard is a feature that allows messages to be transferred directly to an
+internal e-mail host, eliminating the need for an e-mail relay host. Mail Guard
+allows connections to an internal e-mail host through Transport Control Protocol
+(TCP) port 25 only. It logs all Simple Mail Transfer Protocol (SMTP) activity
+and allows only the minimum SMTP server commands found in Request for Comments
+(RFC) 821, Section 4.5.1.
+
+PIX Firewalls are manufactured by Cisco, a vendor independent of Microsoft; we
+make no warranty, implied or otherwise, regarding these products' performance or
+reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

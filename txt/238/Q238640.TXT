@@ -1,0 +1,73 @@
+DOCUMENT:Q238640  10-SEP-1999  [winnt]
+TITLE   :How to Set Up the Microsoft Network Client 3.0 for MS-DOS WP
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Network Client for MS-DOS version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Windows NT FTP Web site hosts a large amount of documents
+available for you to download. Recently, the "How to Set Up the Microsoft
+Network Client Version 3.0 for MS-DOS" document was added.
+
+MORE INFORMATION
+================
+
+This document describes:
+
+ - How to make a network installation startup disk.
+
+ - How to make an installation disk set and run Setup.
+
+ - How to modify the startup disk for NWLink frame types.
+
+ - How to modify the startup disk network adapters that are not in the list.
+
+ - Additional TCP/IP settings for the Microsoft Network Client for MS-DOS.
+
+From the Overview section of the document:
+
+   The Microsoft Windows NT Network Client Administrator tool allows you to
+   create a network installation startup disk. This startup disk allows a
+   computer to start from a floppy disk that contains the basic MS-DOS system
+   files with networking. This allows for an "over-the-network" installation of
+   operating systems on computers that do not currently have an operating system
+   or networking ability.
+
+This document is available as Dosclnt.exe on the following Microsoft FTP Web
+site:
+
+   ftp://ftp.microsoft.com/bussys/winnt/winnt-docs/papers/
+
+Additional query words: protocol.ini system.ini
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbZNotKeyword kbNetworkClientSearch kbNetworkClient300DOS
+Version           : winnt:3.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

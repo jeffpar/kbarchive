@@ -1,0 +1,908 @@
+DOCUMENT:Q155012  13-FEB-2002  [winnt]
+TITLE   :HOWTO: Error Codes in Windows NT Part 2 of 2
+PRODUCT :Microsoft Windows NT
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kbOPK kbSBK
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server 
+ - Microsoft Windows NT Workstation 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the error codes you may encounter in Windows NT. For the
+remaining error codes, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+   Q155011 Error Codes in Windows NT Part 1 of 2
+
+MORE INFORMATION
+================
+
+Code  Name                                  Description
+--------------------------------------------------------------------------
+1300L ERROR_NOT_ALL_ASSIGNED                Indicates not all privileges
+                                            referenced are assigned to the
+                                            caller. This allows, for
+                                            example, all privileges to be
+                                            disabled without having to
+                                            know exactly which privileges
+                                            are assigned.
+1301L ERROR_SOME_NOT_MAPPED                 Some of the information to be
+                                            mapped has not been
+                                            translated.
+1302L ERROR_NO_QUOTAS_FOR_ACCOUNT           No system quota limits are
+                                            specifically set for this
+                                            account.
+1303L ERROR_LOCAL_USER_SESSION_KEY          A user session key was
+                                            requested for a local RPC
+                                            connection. The session key
+                                            returned is a constant value
+                                            and not unique to this
+                                            connection.
+1304L ERROR_NULL_LM_PASSWORD                The Windows NT password is too
+                                            complex to be converted to a
+                                            Windows-networking password.
+                                            The Windows-networking
+                                            password returned is a NULL
+                                            string.
+1305L ERROR_UNKNOWN_REVISION                Indicates an encountered or
+                                            specified revision number is
+                                            not one known by the service.
+                                            The service may not be aware
+                                            of a more recent revision.
+1306L ERROR_REVISION_MISMATCH               Indicates two revision levels
+                                            are incompatible.
+1307L ERROR_INVALID_OWNER                   Indicates a particular
+                                            Security ID cannot be assigned
+                                            as the owner of an object.
+1308L ERROR_INVALID_PRIMARY_GROUP           Indicates a particular
+                                            Security ID cannot be assigned
+                                            as the primary group of an
+                                            object.
+1309L ERROR_NO_IMPERSONATION_TOKEN          An attempt was made to operate
+                                            on an impersonation token by a
+                                            thread was not currently
+                                            impersonating a client.
+1310L ERROR_CANT_DISABLE_MANDATORY          A mandatory group cannot be
+                                            disabled.
+1311L ERROR_NO_LOGON_SERVERS                There are currently no logon
+                                            servers available to service
+                                            the logon request.
+1312L ERROR_NO_SUCH_LOGON_SESSION           A specified logon session does
+                                            not exist. It may already have
+                                            been terminated.
+1313L ERROR_NO_SUCH_PRIVILEGE               A specified privilege does not
+                                            exist.
+1314L ERROR_PRIVILEGE_NOT_HELD              A required privilege is not
+                                            held by the client.
+1315L ERROR_INVALID_ACCOUNT_NAME            The name provided is not a
+                                            properly formed account name.
+1316L ERROR_USER_EXISTS                     The specified user already
+                                            exists.
+1317L ERROR_NO_SUCH_USER                    The specified user does not
+                                            exist.
+1318L ERROR_GROUP_EXISTS                    The specified group already
+                                            exists.
+
+1319L ERROR_NO_SUCH_GROUP                   The specified group does not
+                                            exist.
+1320L ERROR_MEMBER_IN_GROUP                 The specified user account is
+                                            already in the specified group
+                                            account. Also used to indicate
+                                            a group can not be deleted
+                                            because it contains a member.
+1321L ERROR_MEMBER_NOT_IN_GROUP             The specified user account is
+                                            not a member of the specified
+                                            group account.
+1322L ERROR_LAST_ADMIN                      Indicates the requested
+                                            operation would disable or
+                                            delete the last remaining
+                                            administration account. This
+                                            is not allowed to prevent
+                                            creating a situation where the
+                                            system will not be
+                                            administrable.
+1323L ERROR_WRONG_PASSWORD                  When trying to update a
+                                            password, this return status
+                                            indicates the value provided
+                                            as the current password is
+                                            incorrect.
+1324L ERROR_ILL_FORMED_PASSWORD             When trying to update a
+                                            password, this return status
+                                            indicates the value provided
+                                            for the new password contains
+                                            values not allowed in
+                                            passwords.
+1325L ERROR_PASSWORD_RESTRICTION            When trying to update a
+                                            password, this status
+                                            indicates that some password
+                                            update rule was violated. For
+                                            example, the password may not
+                                            meet length criteria.
+1326L ERROR_LOGON_FAILURE                   The attempted logon is
+                                            invalid. This is due to either
+                                            a bad user name or
+                                            authentication information.
+1327L ERROR_ACCOUNT_RESTRICTION             Indicates a referenced user
+                                            name and authentication
+                                            information are valid, but
+                                            some user account restriction
+                                            has prevented successful
+                                            authentication (such as time-
+                                            of-day restrictions).
+1328L ERROR_INVALID_LOGON_HOURS             The user account has time
+                                            restrictions and cannot be
+                                            logged onto at this time.
+1329L ERROR_INVALID_WORKSTATION             The user account is restricted
+                                            and cannot be used to log on
+                                            from the source workstation.
+1330L ERROR_PASSWORD_EXPIRED                The user account's password
+                                            has expired.
+1331L ERROR_ACCOUNT_DISABLED                The referenced account is
+                                            currently disabled and cannot
+                                            be logged on to.
+1332L ERROR_NONE_MAPPED                     None of the information to be
+                                            mapped has been translated.
+1333L ERROR_TOO_MANY_LUIDS_REQUESTED        The number of LUID requested
+                                            cannot be allocated with a
+                                            single allocation.
+1334L ERROR_LUIDS_EXHAUSTED                 Indicates there are no more
+                                            LUID to allocate.
+1335L ERROR_INVALID_SUB_AUTHORITY           Indicates the sub-authority
+                                            value is invalid for the
+                                            particular use.
+1336L ERROR_INVALID_ACL                     Indicates the ACL structure is
+                                            not valid.
+1337L ERROR_INVALID_SID                     Indicates the SID structure is
+                                            invalid.
+1338L ERROR_INVALID_SECURITY_DESCR          Indicates the
+                                            SECURITY_DESCRIPTOR structure
+                                            is invalid.
+1340L ERROR_BAD_INHERITANCE_ACL             Indicates that an attempt to
+                                            build either an inherited ACL
+                                            or ACE did not succeed. One of
+                                            the more probable causes is
+                                            the replacement of a CreatorId
+                                            with an SID that didn't fit
+                                            into the ACE or ACL.
+1341L ERROR_SERVER_DISABLED                 The GUID allocation server is
+                                            already disabled at the
+                                            moment.
+1342L ERROR_SERVER_NOT_DISABLED             The GUID allocation server is
+                                            already enabled at the moment.
+1343L ERROR_INVALID_ID_AUTHORITY            The value provided is an
+                                            invalid value for an
+                                            identifier authority.
+1344L ERROR_ALLOTTED_SPACE_EXCEEDED         When a block of memory is
+                                            allotted for future updates,
+                                            such as the memory allocated
+                                            to hold discretionary access
+                                            control and primary group
+                                            information, successive
+                                            updates may exceed the amount
+                                            of memory originally allotted.
+                                            Since quota may already have
+                                            been charged to several
+                                            processes that have handles of
+                                            the object, it is not
+                                            reasonable to alter the size
+                                            of the allocated memory.
+                                            Instead, a request that
+                                            requires more memory than has
+                                            been allotted must fail and
+                                            the
+                                            ERROR_ALLOTTED_SPACE_EXCEEDED
+                                            error returned.
+1345L ERROR_INVALID_GROUP_ATTRIBUTES        The specified attributes are
+                                            invalid, or incompatible with
+                                            the attributes for the group
+                                            as a whole.
+1346L ERROR_BAD_IMPERSONATION_LEVEL         A specified impersonation
+                                            level is invalid. Also used to
+                                            indicate a required
+                                            impersonation level was not
+                                            provided.
+1347L ERROR_CANT_OPEN_ANONYMOUS             An attempt was made to open an
+                                            anonymous level token.
+                                            Anonymous tokens cannot be
+                                            opened.
+1348L ERROR_BAD_VALIDATION_CLASS            The requested validation
+                                            information class is invalid.
+1349L ERROR_BAD_TOKEN_TYPE                  The type of token object is
+                                            inappropriate for its
+                                            attempted use.
+1350L ERROR_NO_SECURITY_ON_OBJECT           Indicates an attempt was made
+                                            to operate on the security of
+                                            an object that does not have
+                                            security associated with it.
+1351L ERROR_CANT_ACCESS_DOMAIN_INFO         Indicates a domain controller
+                                            could not be contacted or that
+                                            objects within the domain are
+                                            protected and necessary
+                                            information could not be
+                                            retrieved.
+1352L ERROR_INVALID_SERVER_STATE            Indicates the Sam Server was
+                                            in the wrong state to perform
+                                            the desired operation.
+1353L ERROR_INVALID_DOMAIN_STATE            Indicates the domain is in the
+                                            wrong state to perform the
+                                            desired operation.
+1354L ERROR_INVALID_DOMAIN_ROLE             Indicates the requested
+                                            operation cannot be completed
+                                            with the domain in its present
+                                            role.
+1355L ERROR_NO_SUCH_DOMAIN                  The specified domain does not
+                                            exist.
+1356L ERROR_DOMAIN_EXISTS                   The specified domain already
+                                            exists.
+1357L ERROR_DOMAIN_LIMIT_EXCEEDED           An attempt to exceed the limit
+                                            on the number of domains per
+                                            server for this release.
+1358L ERROR_INTERNAL_DB_CORRUPTION          This error indicates the
+                                            requested operation cannot be
+                                            completed due to a
+                                            catastrophic media failure or
+                                            on-disk data structure
+                                            corruption.
+1359L ERROR_INTERNAL_ERROR                  This error indicates the SAM
+                                            server has encounterred an
+                                            internal consistency error in
+                                            its database. This
+                                            catastrophic failure prevents
+                                            further operation of SAM.
+1360L ERROR_GENERIC_NOT_MAPPED              Indicates generic access types
+                                            were contained in an access
+                                            mask that should already be
+                                            mapped to non-generic access
+                                            types.
+1361L ERROR_BAD_DESCRIPTOR_FORMAT           Indicates a security
+                                            descriptor is not in the
+                                            required format (absolute or
+                                            self-relative).
+1362L ERROR_NOT_LOGON_PROCESS               The requested action is
+                                            restricted for use by logon
+                                            processes only. The calling
+                                            process has not registered as
+                                            a logon process.
+1363L ERROR_LOGON_SESSION_EXISTS            An attempt was made to start a
+                                            new session manager or LSA
+                                            logon session with an ID
+                                            already in use.
+1364L ERROR_NO_SUCH_PACKAGE                 A specified authentication
+                                            package is unknown.
+1365L ERROR_BAD_LOGON_SESSION_STATE         The logon session is not in a
+                                            state consistent with the
+                                            requested operation.
+1366L ERROR_LOGON_SESSION_COLLISION         The logon session ID is
+                                            already in use.
+1367L ERROR_INVALID_LOGON_TYPE              Indicates an invalid value has
+                                            been provided for LogonType
+                                            has been requested.
+1368L ERROR_CANNOT_IMPERSONATE              Indicates that an attempt was
+                                            made to impersonate via a
+                                            named pipe was not yet read
+                                            from.
+1369L ERROR_RXACT_INVALID_STATE             Indicates that the transaction
+                                            state of a registry sub-tree
+                                            is incompatible with the
+                                            requested operation. For
+                                            example, a request has been
+                                            made to start a new
+                                            transaction with one already
+                                            in progress, or a request to
+                                            apply a transaction when one
+                                            is not currently in progress.
+                                            This status value is returned
+                                            by the runtime library (RTL)
+                                            registry transaction package
+                                            (RXact).
+1370L ERROR_RXACT_COMMIT_FAILURE            Indicates an error occurred
+                                            during a registry transaction
+                                            commit. The database has been
+                                            left in an unknown state. The
+                                            state of the registry
+                                            transaction is left as
+                                            COMMITTING. This status value
+                                            is returned by the runtime
+                                            library (RTL) registry
+                                            transaction package (RXact).
+1371L ERROR_SPECIAL_ACCOUNT                 Indicates an operation was
+                                            attempted on a built-in
+                                            (special) SAM account that is
+                                            incompatible with built-in
+                                            accounts. For example, built-
+                                            in accounts cannot be renamed
+                                            or deleted.
+1372L ERROR_SPECIAL_GROUP                   The requested operation cannot
+                                            be performed on the specified
+                                            group because it is a built-in
+                                            special group.
+1373L ERROR_SPECIAL_USER                    The requested operation cannot
+                                            be performed on the specified
+                                            user because it is a built-in
+                                            special user.
+1374L ERROR_MEMBERS_PRIMARY_GROUP           Indicates a member cannot be
+                                            removed from a group because
+                                            the group is currently the
+                                            member's primary group.
+1375L ERROR_TOKEN_ALREADY_IN_USE            An attempt was made to
+                                            establish a token for use as a
+                                            primary token but the token is
+                                            already in use. A token can
+                                            only be the primary token of
+                                            one process at a time.
+1376L ERROR_NO_SUCH_ALIAS                   The specified alias does not
+                                            exist.
+1377L ERROR_MEMBER_NOT_IN_ALIAS             The specified account name is
+                                            not a member of the alias.
+1378L ERROR_MEMBER_IN_ALIAS                 The specified account name is
+                                            not a member of the alias.
+1379L ERROR_ALIAS_EXISTS                    The specified alias already
+                                            exists.
+1380L ERROR_LOGON_NOT_GRANTED               A requested type of logon,
+                                            such as Interactive, Network,
+                                            or Service, is not granted by
+                                            the target system's local
+                                            security policy. The system
+                                            administrator can grant the
+                                            required form of logon.
+1381L ERROR_TOO_MANY_SECRETS                The maximum number of secrets
+                                            that can be stored in a single
+                                            system was exceeded. 
+1382L ERROR_SECRET_TOO_LONG                 The length of a secret exceeds
+                                            the maximum length allowed.    1383L ERROR_INTERNAL_DB_ERROR               The Local Security Authority
+                                            (LSA) database contains in
+                                            internal inconsistency.
+1384L ERROR_TOO_MANY_CONTEXT_IDS            During a logon attempt, the
+                                            user's security context
+                                            accumulated too many security
+                                            IDs. Remove the user from some
+                                            groups or aliases to reduce
+                                            the number of security ids to
+                                            incorporate into the security
+                                            context.
+1385L ERROR_LOGON_TYPE_NOT_GRANTED          A user has requested a type of
+                                            logon, such as interactive or
+                                            network, that was not granted.
+                                            An administrator has control
+                                            over who may logon
+                                            interactively and through the
+                                            network.
+1386L ERROR_NT_CROSS_ENCRYPTION_REQUIRED    An attempt was made to change
+                                            a user password in the
+                                            security account manager
+                                            without providing the
+                                            necessary NT cross-encrypted
+                                            password.
+1387L ERROR_NO_SUCH_MEMBER                  A new member cannot be added
+                                            to an alias because the member
+                                            does not exist.
+1388L ERROR_INVALID_MEMBER                  A new member could not be
+                                            added to an alias because the
+                                            member has the wrong account
+                                            type.
+1389L ERROR_TOO_MANY_SIDS                   Too many SIDs specified.
+1390L ERROR_LM_CROSS_ENCRYPTION_REQUIRED    An attempt was made to change
+                                            a user password in the
+                                            security account manager
+                                            without providing the required
+                                            LM cross-encrypted password.
+1391L ERROR_NO_INHERITANCE                  Indicates an ACL contains no
+                                            inheritable components.
+1392L ERROR_FILE_CORRUPT                    The file or directory is
+                                            damaged and nonreadable.
+1393L ERROR_DISK_CORRUPT                    The disk structure is damaged
+                                            and nonreadable.
+1394L ERROR_NO_USER_SESSION_KEY             There is no user session key
+                                            for the specified logon
+                                            session.
+1395L ERROR_LICENSE_QUOTA_EXCEEDED          The service being accessed is
+                                            licensed for a particular
+                                            number of connections. No more
+                                            connections can be made to the
+                                            service at this time because
+                                            there are already as many
+                                            connections as the service can
+                                            accept.
+1400L ERROR_INVALID_WINDOW_HANDLE           The window handle invalid.
+1401L ERROR_INVALID_MENU_HANDLE             The menu handle is invalid.
+1402L ERROR_INVALID_CURSOR_HANDLE           The cursor handle is invalid.
+1403L ERROR_INVALID_ACCEL_HANDLE            Invalid accelerator-table
+                                            handle.
+1404L ERROR_INVALID_HOOK_HANDLE             The hook handle is invalid.
+1405L ERROR_INVALID_DWP_HANDLE              The DeferWindowPos handle is
+                                            invalid.
+1406L ERROR_TLW_WITH_WSCHILD                CreateWindow failed, creating
+                                            top-level window with WS_CHILD
+                                            style.
+1407L ERROR_CANNOT_FIND_WND_CLASS           Cannot find window class.
+1408L ERROR_WINDOW_OF_OTHER_THREAD          Invalid window, belongs to
+                                            other thread.
+1409L ERROR_HOTKEY_ALREADY_REGISTERED       Hotkey is already registered.
+1410L ERROR_CLASS_ALREADY_EXISTS            Class already exists.
+1411L ERROR_CLASS_DOES_NOT_EXIST            Class does not exist.
+1412L ERROR_CLASS_HAS_WINDOWS               Class still has open windows.
+1413L ERROR_INVALID_INDEX                   The index is invalid.
+1414L ERROR_INVALID_ICON_HANDLE             The icon handle is invalid.
+1415L ERROR_PRIVATE_DIALOG_INDEX            Using private DIALOG window
+                                            words.
+1416L ERROR_LISTBOX_ID_NOT_FOUND            List box ID not found.
+1417L ERROR_NO_WILDCARD_CHARACTERS          No wildcard characters found.
+1418L ERROR_CLIPBOARD_NOT_OPEN              Thread doesn't have clipboard
+                                            open.
+1419L ERROR_HOTKEY_NOT_REGISTERED           Hotkey is not registered.
+1420L ERROR_WINDOW_NOT_DIALOG               The window is not a valid
+                                            dialog window.
+1421L ERROR_CONTROL_ID_NOT_FOUND            Control ID not found.
+1422L ERROR_INVALID_COMBOBOX_MESSAGE        Invalid Message, combo box
+                                            doesn't have an edit control.
+1423L ERROR_WINDOW_NOT_COMBOBOX             The window is not a combo box.
+1424L ERROR_INVALID_EDIT_HEIGHT             Height must be less than 256.
+1425L ERROR_DC_NOT_FOUND                    Invalid HDC passed to
+                                            ReleaseDC.
+1426L ERROR_INVALID_HOOK_FILTER             The hook filter type is
+                                            invalid.
+1427L ERROR_INVALID_FILTER_PROC             The filter proc is invalid.
+1428L ERROR_HOOK_NEEDS_HMOD                 Cannot set non-local hook
+                                            without an module handle.
+1429L ERROR_GLOBAL_ONLY_HOOK                This hook can only be set
+                                            globally.
+1430L ERROR_JOURNAL_HOOK_SET                The journal hook is already
+                                            installed.
+1431L ERROR_HOOK_NOT_INSTALLED              Hook is not installed.
+1432L ERROR_INVALID_LB_MESSAGE              The message for single-
+                                            selection list box is invalid.
+1433L ERROR_SETCOUNT_ON_BAD_LB              LB_SETCOUNT sent to non-lazy
+                                            list box.
+1434L ERROR_LB_WITHOUT_TABSTOPS             This list box doesn't support
+                                            tab stops.
+1435L ERROR_DESTROY_OBJECT_OF_OTHER_THREAD  Cannot destroy object created
+                                            by another thread.
+1436L ERROR_CHILD_WINDOW_MENU               Child windows can't have
+                                            menus.
+1437L ERROR_NO_SYSTEM_MENU                  Window does not have system
+                                            menu.
+1438L ERROR_INVALID_MSGBOX_STYLE            The message box style is
+                                            invalid.
+1439L ERROR_INVALID_SPI_VALUE               The SPI_* parameter is
+                                            invalid.
+1440L ERROR_SCREEN_ALREADY_LOCKED           Screen already locked.
+1441L ERROR_HWNDS_HAVE_DIFFERENT_PARENT     All DeferWindowPos HWNDs must
+                                            have same parent.
+1442L ERROR_NOT_CHILD_WINDOW                Window is not a child window.
+1443L ERROR_INVALID_GW_COMMAND              The GW_* command is invalid.
+1444L ERROR_INVALID_THREAD_ID               The thread ID is invalid.
+1445L ERROR_NON_MDICHILD_WINDOW             DefMDIChildProc called with a
+                                            non-MDI child window.
+1446L ERROR_POPUP_ALREADY_ACTIVE            Pop-up menu already active.
+1447L ERROR_NO_SCROLLBARS                   Window does not have scroll
+                                            bars.
+1448L ERROR_INVALID_SCROLLBAR_RANGE         Scrollbar range greater than
+                                            0x7FFF.
+1449L ERROR_INVALID_SHOWWIN_COMMAND         The ShowWindow command is
+                                            invalid.
+1450L ERROR_NO_SYSTEM_RESOURCES             Insufficient system resources
+                                            exist to complete the
+                                            requested service.
+1451L ERROR_NONPAGED_SYSTEM_RESOURCES       Insufficient system resources
+                                            exist to complete the
+                                            requested service.
+1452L ERROR_PAGED_SYSTEM_RESOURCES          Insufficient system resources
+                                            exist to complete the
+                                            requested service.
+1453L ERROR_WORKING_SET_QUOTA               Insufficient quota to complete
+                                            the requested service.
+1454L ERROR_PAGEFILE_QUOTA                  Insufficient quota to complete
+                                            the requested service.
+1455L ERROR_COMMITMENT_LIMIT                The paging file is too small
+                                            for this operation to
+                                            complete.
+1456L ERROR_MENU_ITEM_NOT_FOUND             A menu item was not found.
+1457L ERROR_INVALID_KEYBOARD_HANDLE         Invalid keyboard layout
+                                            handle.
+1458L ERROR_HOOK_TYPE_NOT_ALLOWED           Hook type not allowed.
+1500L ERROR_EVENTLOG_FILE_CORRUPT           One of the Eventlog logfiles
+                                            is damaged.
+1501L ERROR_EVENTLOG_CANT_START             No event log file could be
+                                            opened, so the event logging
+                                            service did not start.
+1502L ERROR_LOG_FILE_FULL                   The event log file is full.
+1503L ERROR_EVENTLOG_FILE_CHANGED           The event log file has changed
+                                            between reads.
+1700L RPC_S_INVALID_STRING_BINDING          The string binding is invalid.
+1701L RPC_S_WRONG_KIND_OF_BINDING           The binding handle is the
+                                            incorrect type.
+1702L RPC_S_INVALID_BINDING                 The binding handle is invalid.
+1703L RPC_S_PROTSEQ_NOT_SUPPORTED           The RPC protocol sequence is
+                                            not supported.
+1704L RPC_S_INVALID_RPC_PROTSEQ             The RPC protocol sequence is
+                                            invalid.
+1705L RPC_S_INVALID_STRING_UUID             The string UUID is invalid.
+1706L RPC_S_INVALID_ENDPOINT_FORMAT         The endpoint format is
+                                            invalid.
+1707L RPC_S_INVALID_NET_ADDR                The network address is
+                                            invalid.
+1708L RPC_S_NO_ENDPOINT_FOUND               No endpoint was found.
+1709L RPC_S_INVALID_TIMEOUT                 The timeout value is invalid.
+1710L RPC_S_OBJECT_NOT_FOUND                The object UUID was not found.
+1711L RPC_S_ALREADY_REGISTERED              The object UUID already
+                                            registered.
+1712L RPC_S_TYPE_ALREADY_REGISTERED         The type UUID is already
+                                            registered.
+1713L RPC_S_ALREADY_LISTENING               The server is already
+                                            listening.
+1714L RPC_S_NO_PROTSEQS_REGISTERED          No protocol sequences were
+                                            registered.
+1715L RPC_S_NOT_LISTENING                   The server is not listening.
+1716L RPC_S_UNKNOWN_MGR_TYPE                The manager type is unknown.
+1717L RPC_S_UNKNOWN_IF                      The interface is unknown.
+1718L RPC_S_NO_BINDINGS                     There are no bindings.
+1719L RPC_S_NO_PROTSEQS                     There are no protocol
+                                            sequences.
+1720L RPC_S_CANT_CREATE_ENDPOINT            The endpoint cannot be
+                                            created.
+1721L RPC_S_OUT_OF_RESOURCES                Not enough resources are
+                                            available to complete this
+                                            operation.
+1722L RPC_S_SERVER_UNAVAILABLE              The server is unavailable.
+1723L RPC_S_SERVER_TOO_BUSY                 The server is too busy to
+                                            complete this operation.
+1724L RPC_S_INVALID_NETWORK_OPTIONS         The network options are
+                                            invalid.
+1725L RPC_S_NO_CALL_ACTIVE                  There is not a remote
+                                            procedure call active in this
+                                            thread.
+1726L RPC_S_CALL_FAILED                     The remote procedure call
+                                            failed.
+1727L RPC_S_CALL_FAILED_DNE                 The remote procedure call
+                                            failed and did not execute.
+1728L RPC_S_PROTOCOL_ERROR                  An RPC protocol error
+                                            occurred.
+1730L RPC_S_UNSUPPORTED_TRANS_SYN           The transfer syntax is not
+                                            supported by the server.
+1731L RPC_S_SERVER_OUT_OF_MEMORY            The server has insufficient
+                                            memory to complete this
+                                            operation.
+1732L RPC_S_UNSUPPORTED_TYPE                The type UUID is not
+                                            supported.
+1733L RPC_S_INVALID_TAG                     The tag is invalid.
+1734L RPC_S_INVALID_BOUND                   The array bounds are invalid.
+1735L RPC_S_NO_ENTRY_NAME                   The binding does not contain
+                                            an entry name.
+1736L RPC_S_INVALID_NAME_SYNTAX             The name syntax is invalid.
+1737L RPC_S_UNSUPPORTED_NAME_SYNTAX         The name syntax is not
+                                            supported.
+1739L RPC_S_UUID_NO_ADDRESS                 No network address is
+                                            available to use to construct
+                                            a UUID.
+1740L RPC_S_DUPLICATE_ENDPOINT              The endpoint is a duplicate.
+1741L RPC_S_UNKNOWN_AUTHN_TYPE              The authentication type is
+                                            unknown.
+1742L RPC_S_MAX_CALLS_TOO_SMALL             The maximum number of calls is
+                                            too small.
+1743L RPC_S_STRING_TOO_LONG                 The string is too long.
+1744L RPC_S_PROTSEQ_NOT_FOUND               The RPC protocol sequence was
+                                            not found.
+1745L RPC_S_PROCNUM_OUT_OF_RANGE            The procedure number is out of
+                                            range.
+1746L RPC_S_BINDING_HAS_NO_AUTH             The binding does not contain
+                                            any authentication
+                                            information.
+1747L RPC_S_UNKNOWN_AUTHN_SERVICE           The authentication service is
+                                            unknown.
+1748L RPC_S_UNKNOWN_AUTHN_LEVEL             The authentication level is
+                                            unknown.
+1749L RPC_S_INVALID_AUTH_IDENTITY           The security context is
+                                            invalid.
+1750L RPC_S_UNKNOWN_AUTHZ_SERVICE           The authorization service is
+                                            unknown.
+1751L EPT_S_INVALID_ENTRY                   The entry is invalid.
+1752L EPT_S_CANT_PERFORM_OP                 The operation cannot be
+                                            performed.
+1753L EPT_S_NOT_REGISTERED                  There are no more endpoints
+                                            available from the endpoint
+                                            mapper.
+1755L RPC_S_INCOMPLETE_NAME                 The entry name is incomplete.
+1756L RPC_S_INVALID_VERS_OPTION             The version option is invalid.
+1757L RPC_S_NO_MORE_MEMBERS                 There are no more members.
+1758L RPC_S_NOT_ALL_OBJS_UNEXPORTED         There is nothing to unexport.
+1759L RPC_S_INTERFACE_NOT_FOUND             The interface was not found.
+1760L RPC_S_ENTRY_ALREADY_EXISTS            The entry already exists.
+1761L RPC_S_ENTRY_NOT_FOUND                 The entry is not found.
+1762L RPC_S_NAME_SERVICE_UNAVAILABLE        The name service is
+                                            unavailable.
+1764L RPC_S_CANNOT_SUPPORT                  The requested operation is not
+                                            supported.
+1765L RPC_S_NO_CONTEXT_AVAILABLE            No security context is
+                                            available to allow
+                                            impersonation.
+1766L RPC_S_INTERNAL_ERROR                  An internal error occurred in
+                                            RPC.
+1767L RPC_S_ZERO_DIVIDE                     The server attempted an
+                                            integer divide by zero.
+1768L RPC_S_ADDRESS_ERROR                   An addressing error occurred
+                                            in the server.
+1769L RPC_S_FP_DIV_ZERO                     A floating point operation at
+                                            the server caused a divide by
+                                            zero.
+1770L RPC_S_FP_UNDERFLOW                    A floating point underflow
+                                            occurred at the server.
+1771L RPC_S_FP_OVERFLOW                     A floating point overflow
+                                            occurred at the server.
+1772L RPC_X_NO_MORE_ENTRIES                 The list of servers available
+                                            for auto_handle binding was
+                                            exhausted.
+1773L RPC_X_SS_CHAR_TRANS_OPEN_FAIL         The file designated by
+                                            DCERPCCHARTRANS cannot be
+                                            opened.
+1774L RPC_X_SS_CHAR_TRANS_SHORT_FILE        The file containing the
+                                            character translation table
+                                            has fewer than 512 bytes.
+1775L RPC_X_SS_IN_NULL_CONTEXT              A null context handle is
+                                            passed as an [in] parameter.
+1776L RPC_X_SS_CONTEXT_MISMATCH             The context handle does not
+                                            match any known context
+                                            handles.
+1777L RPC_X_SS_CONTEXT_DAMAGED              The context handle changed
+                                            during a call.
+1778L RPC_X_SS_HANDLES_MISMATCH             The binding handles passed to
+                                            a remote procedure call do not
+                                            match.
+1779L RPC_X_SS_CANNOT_GET_CALL_HANDLE       The stub is unable to get the
+                                            call handle.
+1780L RPC_X_NULL_REF_POINTER                A null reference pointer was
+                                            passed to the stub.
+1781L RPC_X_ENUM_VALUE_OUT_OF_RANGE         The enumeration value is out
+                                            of range.
+1782L RPC_X_BYTE_COUNT_TOO_SMALL            The byte count is too small.
+1783L RPC_X_BAD_STUB_DATA                   The stub received bad data.
+1784L ERROR_INVALID_USER_BUFFER             The supplied user buffer is
+                                            invalid for the requested
+                                            operation.
+1785L ERROR_UNRECOGNIZED_MEDIA              The disk media is not
+                                            recognized. It may not be
+                                            formatted.
+1786L ERROR_NO_TRUST_LSA_SECRET             The workstation does not have
+                                            a trust secret.
+1787L ERROR_NO_TRUST_SAM_ACCOUNT            The domain controller does not
+                                            have an account for this
+                                            workstation.
+1788L ERROR_TRUSTED_DOMAIN_FAILURE          The trust relationship between
+                                            the primary domain and the
+                                            trusted domain failed.
+1789L ERROR_TRUSTED_RELATIONSHIP_FAILURE    The trust relationship between
+                                            this workstation and the
+                                            primary domain failed.
+1790L ERROR_TRUST_FAILURE                   The network logon failed.
+1791L RPC_S_CALL_IN_PROGRESS                A remote procedure call is
+                                            already in progress for this
+                                            thread.
+1792L ERROR_NETLOGON_NOT_STARTED            An attempt was made to logon,
+                                            but the network logon service
+                                            was not started.
+1793L ERROR_ACCOUNT_EXPIRED                 The user's account has
+                                            expired.
+1794L ERROR_REDIRECTOR_HAS_OPEN_HANDLES     The redirector is in use and
+                                            cannot be unloaded.
+1795L ERROR_PRINTER_DRIVER_ALREADY_INSTALLED  The specified printer driver
+                                            is already installed.
+1796L ERROR_UNKNOWN_PORT                    The specified port is unknown.
+1797L ERROR_UNKNOWN_PRINTER_DRIVER          The printer driver is unknown.
+1798L ERROR_UNKNOWN_PRINTPROCESSOR          The print processor is
+                                            unknown.
+1799L ERROR_INVALID_SEPARATOR_FILE          The specified separator file
+                                            is invalid.
+1800L ERROR_INVALID_PRIORITY                The specified priority is
+                                            invalid.
+1801L ERROR_INVALID_PRINTER_NAME            The printer name is invalid.
+1802L ERROR_PRINTER_ALREADY_EXISTS          The printer already exists.
+1803L ERROR_INVALID_PRINTER_COMMAND         The printer command is
+                                            invalid.
+1804L ERROR_INVALID_DATATYPE                The specified datatype is
+                                            invalid.
+1805L ERROR_INVALID_ENVIRONMENT             The Environment specified is
+                                            invalid.
+1806L RPC_S_NO_MORE_BINDINGS                There are no more bindings.
+1807L ERROR_NOLOGON_INTERDOMAIN_TRUST_ACCOUNT  The account used is an
+                                            interdomain trust account. Use
+                                            your normal user account or
+                                            remote user account to access
+                                            this server.
+1808L ERROR_NOLOGON_WORKSTATION_TRUST_ACCOUNT  The account used is a
+                                            workstation trust account. Use
+                                            your normal user account or
+                                            remote user account to access
+                                            this server.
+1809L ERROR_NOLOGON_SERVER_TRUST_ACCOUNT    The account used is an server
+                                            trust account. Use your normal
+                                            user account or remote user
+                                            account to access this server.
+1810L ERROR_DOMAIN_TRUST_INCONSISTENT       The name or security ID (SID)
+                                            of the domain specified is
+                                            inconsistent with the trust
+                                            information for that domain.
+1811L ERROR_SERVER_HAS_OPEN_HANDLES         The server is in use and
+                                            cannot be unloaded.
+1812L ERROR_RESOURCE_DATA_NOT_FOUND         The specified image file did
+                                            not contain a resource
+                                            section.
+1813L ERROR_RESOURCE_TYPE_NOT_FOUND         The specified resource type
+                                            can not be found in the image
+                                            file.
+1814L ERROR_RESOURCE_NAME_NOT_FOUND         The specified resource name
+                                            can not be found in the image
+                                            file.
+1815L ERROR_RESOURCE_LANG_NOT_FOUND         The specified resource
+                                            language ID cannot be found in
+                                            the image file.
+1816L ERROR_NOT_ENOUGH_QUOTA                Not enough quota is available
+                                            to process this command.
+1817L RPC_S_NO_INTERFACES
+1818L RPC_S_CALL_CANCELLED                  The server was altered while
+                                            processing this call.
+1819L RPC_S_BINDING_INCOMPLETE              The binding handle does not
+                                            contain all required
+                                            information.
+1820L RPC_S_COMM_FAILURE                    Communications failure.
+1821L RPC_S_UNSUPPORTED_AUTHN_LEVEL         The requested authentication
+                                            level is not supported.
+1822L RPC_S_NO_PRINC_NAME                   No principal name registered.
+1823L RPC_S_NOT_RPC_ERROR                   The error specified is not a
+                                            valid Windows RPC error code.
+1824L RPC_S_UUID_LOCAL_ONLY                 A UUID that is valid only on
+                                            this computer has been
+                                            allocated.
+1825L RPC_S_SEC_PKG_ERROR                   A security package specific
+                                            error occurred.
+1826L RPC_S_NOT_CANCELLED                   Thread is not cancelled.
+1827L RPC_X_INVALID_ES_ACTION               Invalid operation on the
+                                            encoding/decoding handle.
+1828L RPC_X_WRONG_ES_VERSION                Incompatible version of the
+                                            serializing package.
+1829L RPC_X_WRONG_STUB_VERSION              Incompatible version of the
+                                            RPC stub.
+1830L RPC_X_INVALID_PIPE_OBJECT             The idl pipe object is invalid
+                                            or corrupted.
+1831L RPC_X_INVALID_PIPE_OPERATION          The operation is invalid for a
+                                            given idl pipe object.
+1832L RPC_X_WRONG_PIPE_VERSION              The idl pipe version is not
+                                            supported.
+1898L RPC_S_GROUP_MEMBER_NOT_FOUND          The group member was not
+                                            found.
+1899L EPT_S_CANT_CREATE                     The endpoint mapper database
+                                            could not be created.
+1900L RPC_S_INVALID_OBJECT                  The object universal unique
+                                            identifier (UUID) is the nil
+                                            UUID.
+1901L ERROR_INVALID_TIME                    The specified time is invalid.
+1902L ERROR_INVALID_FORM_NAME               The specified Form name is
+                                            invalid.
+1903L ERROR_INVALID_FORM_SIZE               The specified Form size is
+                                            invalid.
+1904L ERROR_ALREADY_WAITING                 The specified Printer handle
+                                            is already being waited on.
+1905L ERROR_PRINTER_DELETED                 The specified Printer has been
+                                            deleted.
+1906L ERROR_INVALID_PRINTER_STATE           The state of the Printer is
+                                            invalid.
+1907L ERROR_PASSWORD_MUST_CHANGE            The user must change his
+                                            password before he logs on the
+                                            first time.
+1908L ERROR_DOMAIN_CONTROLLER_NOT_FOUND     Could not find the domain
+                                            controller for this domain.
+1909L ERROR_ACCOUNT_LOCKED_OUT              The referenced account is
+                                            currently locked out and may
+                                            not be logged on to.
+1910L OR_INVALID_OXID                       The object exporter specified
+                                            was not found.
+1911L OR_INVALID_OID                        The object specified was not
+                                            found.
+1912L OR_INVALID_SET                        The object resolver set
+                                            specified was not found.
+1913L RPC_S_SEND_INCOMPLETE                 Some data remains to be sent
+                                            in the request buffer.
+2000L ERROR_INVALID_PIXEL_FORMAT            The pixel format is invalid.
+2001L ERROR_BAD_DRIVER                      The specified driver is
+                                            invalid.
+2002L ERROR_INVALID_WINDOW_STYLE            The window style or class
+                                            attribute is invalid for this
+                                            operation.
+2003L ERROR_METAFILE_NOT_SUPPORTED          The requested metafile
+                                            operation is not supported.
+2004L ERROR_TRANSFORM_NOT_SUPPORTED         The requested transformation
+                                            operation is not supported.
+2005L ERROR_CLIPPING_NOT_SUPPORTED          The requested clipping
+                                            operation is not supported.
+2138L ERROR_NO_NETWORK                      The network is not present or
+                                            not started.
+2202L ERROR_BAD_USERNAME                    The specified user name is
+                                            invalid.
+2250L ERROR_NOT_CONNECTED                   This network connection does
+                                            not exist.
+2401L ERROR_OPEN_FILES                      There are open files or
+                                            requests pending on this
+                                            connection.
+2402L ERROR_ACTIVE_CONNECTIONS              Active connections still
+                                            exist.
+2404L ERROR_DEVICE_IN_USE                   The device is in use by an
+                                            active process and cannot be
+                                            disconnected.
+3000L ERROR_UNKNOWN_PRINT_MONITOR           The specified print monitor is
+                                            unknown.
+3001L ERROR_PRINTER_DRIVER_IN_USE           The specified printer driver
+                                            is currently in use.
+3002L ERROR_SPOOL_FILE_NOT_FOUND            The spool file was not found.
+3003L ERROR_SPL_NO_STARTDOC                 A StartDocPrinter call was not
+                                            issued.
+3004L ERROR_SPL_NO_ADDJOB                   An AddJob call was not issued.
+3005L ERROR_PRINT_PROCESSOR_ALREADY_INSTALLED  The specified print
+                                            processor has already been
+                                            installed.
+3006L ERROR_PRINT_MONITOR_ALREADY_INSTALLED The specified print monitor
+                                            has already been installed.
+3007L ERROR_INVALID_PRINT_MONITOR           The specified print monitor
+                                            does not have the required
+                                            functions.
+3008L ERROR_PRINT_MONITOR_IN_USE            The specified print monitor is
+                                            currently in use.
+3009L ERROR_PRINTER_HAS_JOBS_QUEUED         The requested operation is not
+                                            allowed when there are jobs
+                                            queued to the printer.
+3010L ERROR_SUCCESS_REBOOT_REQUIRED         The requested operation is
+                                            successful. Changes will not
+                                            be effective until the system
+                                            is rebooted.
+3011L ERROR_SUCCESS_RESTART_REQUIRED        The requested operation is
+                                            successful. Changes will not
+                                            be effective until the service
+                                            is restarted.
+4000L ERROR_WINS_INTERNAL                   WINS encountered an error
+                                            while processing the command.
+4001L ERROR_CAN_NOT_DEL_LOCAL_WINS          The local WINS can not be
+                                            deleted.
+4002L ERROR_STATIC_INIT                     The importation from the file
+                                            failed.
+4003L ERROR_INC_BACKUP                      The backup failed. Was a full
+                                            backup done before?
+4004L ERROR_FULL_BACKUP                     The backup failed. Check the
+                                            directory that you are backing
+                                            the database to.
+4005L ERROR_REC_NON_EXISTENT                The name does not exist in the
+                                            WINS database.
+4006L ERROR_RPL_NOT_ALLOWED                 Replication with a non-
+                                            configured partner is not
+                                            allowed.
+6118L ERROR_NO_BROWSER_SERVERS_FOUND        The list of servers for this
+                                            workgroup is not currently
+                                            available.
+
+Additional query words: prodnt sysdiff.exe unattended setup
+
+======================================================================
+Keywords          : kberrmsg kbOPK kbSBK 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTSsearch
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

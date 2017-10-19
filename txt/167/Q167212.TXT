@@ -1,0 +1,69 @@
+DOCUMENT:Q167212  10-AUG-2001  [winnt]
+TITLE   :Supported PCMCIA Mode on Toshiba Tecra 700 Series
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Windows NT PC Card (PCMCIA) services will only work on the Toshiba Tecra 700
+series in the PCIC Compatible mode. If you are using the Card Bus/16-bit mode
+and you manually start the PC Card (PCMCIA) service, you will receive the
+following error message:
+
+   Could not start the Pcmcia service on \\<computername>.
+   Error 0020: The system cannot find the device specified.
+
+MORE INFORMATION
+================
+
+To verify that you are running in PCIC Compatible mode you must enter the system
+BIOS. To enter the System BIOS, perform the following steps:
+
+1. Press F1 or Esc during system startup.
+
+2. Run Tsetup.exe from either MS-DOS or Windows 95. Both will take you in to the
+   BIOS settings for the PC card.
+
+3. Select PC Card Controller Mode.
+
+4. Press the space bar to toggle between Card Bus/16-Bit and PCIC Compatible.
+
+5. Save the changes and exit the system BIOS.
+
+The products included here are manufactured by a vendor independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: ntw nts fail event
+======================================================================
+Keywords          : kb3rdparty kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

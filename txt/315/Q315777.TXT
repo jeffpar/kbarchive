@@ -1,0 +1,71 @@
+DOCUMENT:Q315777  10-JAN-2002  [sna]
+TITLE   :Event 744 or SnaBase Failure When Using Active Directory
+PRODUCT :Microsoft SNA Server
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbDSupport kbhis2000 kbhis2000bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+SnaBase logs the following event in the Application Event Log on a Host
+Integration Server (HIS 2000) system that is configured to support Active
+Directory clients if the overall length of the organizational unit (OU) name is
+longer than 255 characters or if any individual node length in the OU name is
+longer than 64 characters:
+
+   Event ID: 744
+   Source: SNA Base Service
+   Description: DMOD initialization for Active Directory failed.
+
+SnaBase on an HIS 2000 Admin Client that is configured to "Locate servers using
+Active Directory" terminates after it logs the Event 744 when this problem
+occurs. SnaBase on an HIS 2000 End User Client that is configured to "Locate
+servers using Active Directory" terminates without any error messages when the
+problem occurs.
+
+CAUSE
+=====
+
+The HIS 2000 Resource Location Wizards fail to validate the overall length of
+the configured OU name. In addition, the Wizards fail to validate the lengths of
+the individual node names that the OU name is comprised of.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Host Integration
+Server 2000.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport kbhis2000 kbhis2000bug 
+Technology        : kbAudDeveloper kbHostIntegServ2000
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

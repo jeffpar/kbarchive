@@ -1,0 +1,75 @@
+DOCUMENT:Q122869  05-FEB-2002  [win95x]
+TITLE   :16-Bit Applications That Ship with Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:win95 appscomp kbAppCompatibility
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following are 16-bit applications that ship with Windows 95:
+
+GAMES
+-----
+
+Program Name                   Executable
+-----------------------------------------
+
+FreeCell                       FREECELL.EXE
+Microsoft Hearts Network       MSHEARTS.EXE
+Solitaire                      SOL.EXE
+
+UTILITIES
+---------
+
+Program Name                   Executable
+-----------------------------------------
+
+Character Map                  CHARMAP.EXE
+Chat                           WINCHAT.EXE
+Clipboard Viewer               CLIPBRD.EXE
+Dialer                         DIALER.EXE
+Disk Defragmenter              DEFRAG.EXE
+DriveSpace                     DRVSPACE.EXE
+ScanDisk for Windows           SCANDSKW.EXE
+System Configuration Editor    SYSEDIT.EXE
+Windows 3.1 File Manager       WINFILE.EXE
+Windows 3.1 Program Manager    PROGMAN.EXE
+Windows 95 Tour                TOUR.EXE
+Windows Version                WINVER.EXE
+Windows PopUp                  WINPOPUP.EXE
+
+All programs in the Windows\Command folder are 16-bit applications. All other
+programs that ship with Windows 95 that are not listed in this article are
+32-bit applications.
+
+Additional query words:
+
+======================================================================
+Keywords          : win95 appscomp kbAppCompatibility 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

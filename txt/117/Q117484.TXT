@@ -1,0 +1,75 @@
+DOCUMENT:Q117484  22-NOV-1999  [msdos]
+TITLE   :Disks Created by MS-DOS 6.21 Upgrade SETUP /F
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.21
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.21 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+With MS-DOS 6.21 Upgrade, you can create a single startup floppy disk for drive
+A by running SETUP /F from MS-DOS Setup Disk 1. The contents of the startup disk
+varies based on the target disk capacity.
+
+NOTE: MS-DOS 6.21 Upgrade does not have the ability to install the complete
+operating system (with all programs) to floppy disks.
+
+MORE INFORMATION
+================
+
+Floppy Disk Contents for SETUP /F:
+
+                 File
+   Filename    Attributes              Disk Size
+   ----------------------------------------------------------
+                               360K    720K    1.2MB   1.44MB
+                              (5.25") (3.5")  (5.25")  (3.5")
+
+   IO.SYS           SHR          X       X       X        X
+   MSDOS.SYS        SHR          X       X       X        X
+   COMMAND.COM        R          X       X       X        X
+   ATTRIB.EXE         A          X       X       X        X
+   CHKDSK.EXE         A          X       X       X        X
+   DEBUG.EXE          A          X       X       X        X
+   EXPAND.EXE         A          X       X       X        X
+   FDISK.EXE          A          X       X       X        X
+   FORMAT.COM         A          X       X       X        X
+   MEM.EXE            A          X       X       X        X
+   SYS.COM            A          X       X       X        X
+   EDIT.COM           A                          X        X
+   QBASIC.EXE         A                          X        X
+   SCANDISK.EXE       A                          X        X
+   XCOPY.EXE          A                  X       X        X
+   MSD.EXE            A                  X       X        X
+   UNDELETE.EXE       A                          X        X
+
+Additional query words: floppy diskette dosdir
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621
+Version           : MS-DOS:6.21
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

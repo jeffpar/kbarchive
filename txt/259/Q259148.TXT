@@ -1,0 +1,127 @@
+DOCUMENT:Q259148  08-MAY-2002  [winnt]
+TITLE   :Random "Access Violation" Error Messages in EnumProtocolsW()
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000,4.0
+OPER/SYS:
+KEYWORDS:kbWin2000PreSP1Fix kbWinNT400PreSP7Fix kbWin2000sp1Fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Under stress, Microsoft Exchange or other programs may stop working and may
+generate Dr. Watson error messages ("Access violation").
+
+If symbols are installed, the stack traces in the Dr. Watson log show that the
+problem occurs near the EnumProtocolsW function. The stack traces may vary in
+different situations. Two sample stack traces are listed here:
+
+   *----> Stack Back Trace <----*
+   ReturnAd Param#1  Param#2  Param#3  Param#4  Function Name
+   77673a3a 00c70000 00000000 00000208 3ff2f2c0 ntdll!RtlAllocateHeap 
+   77673d4b 00000000 3ff2f2e0 3ff2f2bc 3ff2f2c0 mswsock!EnumProtocolsW 
+   00495a93 00000000 3ff2f2c0 3ff2f2bc 00000010 mswsock!EnumProtocolsA 
+   00000000 00000000 00000000 00000000 00000000 store!<nosymbols> 
+
+   *----> Stack Back Trace <----*
+   ReturnAd Param#1  Param#2  Param#3  Param#4  Function Name
+   77f64e17 00c70000 00c730f8 04a2f21c 00000000 ntdll!RtlDestroyHeap 
+   77673b22 00c70000 00000000 00c73100 04a2f2c0 ntdll!RtlFreeHeap 
+   77673d4b 00000000 04a2f2e0 04a2f2bc 04a2f2c0 mswsock!EnumProtocolsW 
+   00495a93 00000000 04a2f2c0 04a2f2bc 00000010 mswsock!EnumProtocolsA 
+   00000000 00000000 00000000 00000000 00000000 store!<nosymbols> 
+
+CAUSE
+=====
+
+The EnumProtocols function in Windows Sockets (Mswsock.dll) is calculating a
+buffer length incorrectly, resulting in heap corruption.
+
+
+RESOLUTION
+==========
+
+Windows 2000
+------------
+
+To resolve this problem for Windows 2000, obtain the latest service pack for
+Windows 2000. For additional information, please see the following article in
+the Microsoft Knowledge Base:
+
+   Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+
+Windows NT 4.0
+--------------
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem that is described in this article. Apply it only to
+computers that are experiencing this specific problem.
+
+To resolve this problem, contact Microsoft Product Support Services to obtain the
+fix. For a complete list of Microsoft Product Support Services phone numbers and
+information about support costs, visit the following Microsoft Web site:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are ordinarily incurred for support calls
+may be canceled if a Microsoft Support Professional determines that a specific
+update will resolve your problem. The usual support costs will apply to
+additional support questions and issues that do not qualify for the specific
+update in question.
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Date      Time   Size     File name    Platform
+   -----------------------------------------------
+   21/03/00  21:48   76,560  Mswsock.dll  Intel
+   21/03/00  21:48   20,752  Wsock32.dll  Intel
+   21/03/00  21:46  120,592  Mswsock.dll  Alpha
+   21/03/00  21:46   25,360  Wsock32.dll  Alpha
+
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article.
+
+This problem was first corrected in Windows 2000 Service Pack 1.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbWin2000PreSP1Fix kbWinNT400PreSP7Fix kbWin2000sp1Fix 
+Technology        : kbWinNTsearch kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch
+Version           : :2000,4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

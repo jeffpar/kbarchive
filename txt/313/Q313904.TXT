@@ -1,0 +1,67 @@
+DOCUMENT:Q313904  31-JAN-2002  [sms]
+TITLE   :SMS: Duplicate Query Names Possible When You Rename a Query
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbenv kbtool kbui kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the Systems Management Server (SMS) administrator console, when you edit a
+query that has been previously defined, it is possible to change the query name.
+If you change the query name to match the name of a query that already exists,
+the SMS administrator console accepts the change, and the result is two queries
+with the same name. When you initially build a query, it is not possible to
+choose a name that already exists. This problem occurs only when you edit a
+query and change its name.
+
+WORKAROUND
+==========
+
+To work around this problem, ensure that the name you choose for a query is
+unique.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+MORE INFORMATION
+================
+
+There are no known side effects of this problem except that when you select a
+query to use in collection rules, you see two queries with the same name. This
+makes it difficult to determine which query you need to use.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbenv kbtool kbui kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

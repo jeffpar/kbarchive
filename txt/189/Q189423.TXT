@@ -1,0 +1,69 @@
+DOCUMENT:Q189423  01-MAR-2002  [sna]
+TITLE   :Memory Leak: Recordsets with OCCURS DEPENDING ON Clause
+PRODUCT :Microsoft SNA Server
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+Using Windows NT Task Manager, you can see increments in memory utilization upon
+repeated calls to a COMTI method. This memory leak occurs under the following
+conditions:
+
+1. The series of calls uses the same Microsoft Transaction Server process.
+
+2. The method invoked contains an input parameter that is a recordset. The
+   recordset contains zero rows of data when the call is made. The actual number
+   of rows contained by the recordset is indicated by another input parameter,
+   the count parameter or length-specifier.
+
+This usage results from importing a COBOL table or group item that contains the
+OCCURS DEPENDING ON clause. The OCCURS DEPENDING ON clause specifies the count
+parameter mentioned above.
+
+Using Component Builder, you can view the properties of the recordset input
+parameter and click the Recordsets tab to see that the "Occurs depending on"
+option is selected and specifies the count parameter.
+
+WORKAROUND
+==========
+
+To work around this problem, initialize at least one row of data of the input
+recordset. Regardless, the count parameter can be set to zero.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in COM Transaction Integrator for
+CICS and IMS version 1.0. This problem has been corrected in the latest U.S.
+service pack for SNA Server version 4.0. For information on obtaining the
+service pack, query on the following word in the Microsoft Knowledge Base
+(without the spaces):
+
+   S E R V P A C K
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

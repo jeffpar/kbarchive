@@ -1,0 +1,63 @@
+DOCUMENT:Q215107  27-OCT-2000  [sms]
+TITLE   :SMS: Client w/ Non-Admin Rights Doesn't Create CCR for 2nd Site
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a client with non-administrator rights is assigned to a second site, the
+client does not create a Client Configuration Request file (.ccr) targeted to
+the second site. The client is unable to add additional components or set the
+second site as its primary site.
+
+CAUSE
+=====
+
+If you have one site assigned, and then a user with non-administrator rights
+requires another site, the second site's configuration data is incompletely
+processed because the logged-on user does not have sufficient rights to
+manipulate the registry.
+
+WORKAROUND
+==========
+
+To work around this issue, wait for the Client Component Installation Manager
+(CCIM) to run and reset the registry permissions. After it does so, you are able
+to log on again (as a user with non-administrator rights) and configure the
+second site's information. Run CCIM again (using Setevnt or by waiting for it to
+wake up), and the site is updated for the client.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

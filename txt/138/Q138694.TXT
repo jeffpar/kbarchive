@@ -1,0 +1,110 @@
+DOCUMENT:Q138694  06-MAY-2001  [visualc]
+TITLE   :FIX: Using CSocket w/ CArchive Causes Block from Extra FD_READ
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:2.1,2.2,4.0,4.1
+OPER/SYS:
+KEYWORDS:kbMFC kbVC152bug kbVC200bug kbVC210bug kbVC220bug kbVC400bug kbVC410bug kbVC420fix kbWi
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.52, 1.52b 
+    - Microsoft Visual C++, 32-bit Editions, versions 2.1, 2.2, 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using a CArchive object with a CSocket can cause an extra FD_READ notification
+to be posted when no data is pending. This happens when a block of data is
+received through the extraction operator ('>>') or CArchive::Read that is
+larger than the current buffer size of the CArchive object.
+
+This can cause OnReceive to be called when no data is present, which will cause
+the application to hang indefinitely if a subsequent call to Receive is made.
+
+CAUSE
+=====
+
+The CArchive class automatically buffers data reads and writes. If a call is
+made to retrieve a block of data larger than the CArchive object's buffer size,
+then the CArchive class will make two calls to retrieve the data in buffer-size
+blocks.
+
+When CSocket is used, the end result is two calls to the Receive function. The
+first call to Receive does not retrieve all of the data currently in the
+socket's buffer, so the Windows Sockets DLL posts an additional FD_READ
+notification after this first call. Although the second call to Receive might
+get the rest of the data from the buffer, the FD_READ notification has already
+been posted and OnReceive will end up being called later even though there is no
+data left to read on the socket.
+
+RESOLUTION
+==========
+
+Make sure there is data in the socket's buffer using CAsyncSocket::IOCtl()
+before attempting to receive.
+
+   void CMySocket::OnReceive(int nErrorCode)
+   {
+     // TODO: Do some error handling on nErrorCode
+
+     DWORD dwBytes;
+     VERIFY(IOCtl(FIONREAD, &dwBytes));
+     if (0 == dwBytes) // if nothing to read, return
+       return;
+
+     do
+     {
+
+       // Read your data from your CArchive object
+
+       CString strData;
+       m_pMyArchive >> strData;
+
+     } while(!m_pMyArchive->IsBufferEmpty());
+   }
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was fixed in Visual C++ version 4.2.
+
+REFERENCES
+==========
+
+Visual C++ Books On-line:
+
+   MFC Encyclopedia Articles:
+      "Windows Sockets: Using Sockets with Archives"
+
+   Win32 Programmer's Reference Documentation on the function:
+      WSAAsyncSelect
+
+Additional query words: kbVC400bug 2.52 2.52b 3.10 3.20
+
+======================================================================
+Keywords          : kbMFC kbVC152bug kbVC200bug kbVC210bug kbVC220bug kbVC400bug kbVC410bug kbVC420fix kbWinsock kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:2.1,2.2,4.0,4.1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

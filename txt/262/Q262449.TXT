@@ -1,0 +1,74 @@
+DOCUMENT:Q262449  31-MAY-2000  [sna]
+TITLE   :Err Msg: Unable to Locate Windows NT Account Synchronization
+PRODUCT :Microsoft SNA Server
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Host Integration Server 2000 end-user client is installed on a computer
+running Windows 95 or Windows 98, the following error message may occur when you
+open the Host Account Configuration tool (UDConfig.exe):
+
+   Unable to locate Windows NT Account Synchronization Service in the target
+   Windows NT domain. To browse other domains, use the "Select Domain" option of
+   the "File" menu.
+
+CAUSE
+=====
+
+The end-user UDConfig client cannot locate the Windows NT or Windows 2000 domain
+name that contains the master database where the Host Account Cache (HAC)
+resides.
+
+RESOLUTION
+==========
+
+Change the Windows 95 or Windows 98 workgroup name to match the Windows NT or
+Windows 2000 domain name.
+
+MORE INFORMATION
+================
+
+When you open the UDConfig tool, it tries to find the location of the master
+database. This is the Windows NT or Windows 2000 domain name. When the end-user
+client is installed on a computer running Windows 95 or Windows 98, this
+information is pulled from the workgroup name that is configured on that
+computer.
+
+For additional information regarding this error message, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+   Q252778 SNA Win9x Host Account Manager Unable to Locate MDB Domain
+
+Additional query words: his2000 hac sso
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbHostIntegServ2000
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

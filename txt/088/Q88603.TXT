@@ -1,0 +1,77 @@
+DOCUMENT:Q88603  02-FEB-2000  [foxpro]
+TITLE   :BUG: Calculated Currency Field Ignores Formatting
+PRODUCT :Microsoft FoxPro
+PROD/VER:MS-DOS:2.0,2.5x,2.6,2.6a; WINDOWS:2.5x,2.6,2.6a,3.0,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbprogramming kbvfp kbvfp500aBUG kbvfp260bug kbvfp250bug KBQkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 5.0, 5.0a, 6.0 
+ - Microsoft FoxPro for MS-DOS, versions 2.0, 2.5x, 2.6, 2.6a 
+ - Microsoft FoxPro for Windows, versions 2.5x, 2.6, 2.6a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a Picture clause on an @...SAY command specifies a format for a currency
+field, this formatting may be ignored when the output is calculated. For
+example, if the Picture clause is $999.99 and the calculated output is
+$123.2342, all decimal places are displayed.
+
+CAUSE
+=====
+
+This problem occurs if the @ sign is used in the Picture clause.
+
+RESOLUTION
+==========
+
+Remove the @ sign from the Picture clause.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+Run the following code:
+
+      x = 123.1111
+      @2,2 SAY x PICTURE "@$999.99"
+
+Note that the result is $123.1111 instead of $123.11.
+
+Additional query words: picture say kbvfp500 kbvfp600
+
+======================================================================
+Keywords          : kbprogramming kbvfp kbvfp500aBUG kbvfp260bug kbvfp250bug KBQ kbbuglist
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro200DOS kbFoxPro260DOS kbFoxPro260aDOS kbFoxPro260 kbFoxPro260a kbVFP300 kbVFP500 kbVFP600 kbVFP500a
+Version           : MS-DOS:2.0,2.5x,2.6,2.6a; WINDOWS:2.5x,2.6,2.6a,3.0,5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

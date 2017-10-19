@@ -1,0 +1,69 @@
+DOCUMENT:Q141003  06-MAY-2001  [visualc]
+TITLE   :INFO: m_templateList Is No Longer Accessible in Visual C++ 4.0
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbcode kbDocView kbMFC kbVC400 kbGrpDSMFCATL kbNoUpdate
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++ 32-bit Edition, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In versions of Visual C++ older than 4.0, m_templateList was a public member of
+CWinApp. Starting with Visual C++ 4.0 (MFC 4.0) m_templateList is no longer
+accessible. m_templateList is a CPtrList object that contains a list of pointers
+to an application's document templates (CDocTemplate). CWinApp now provides
+public member functions for accessing the document templates
+CWinApp::GetFirstDocTemplatePosition() and CWinApp::GetNextDocTemplate(). You
+can use these functions to iterate through the list of CDocTemplate objects.
+
+MORE INFORMATION
+================
+
+m_templateList is now a protected member of CDocManager, which is in turn a
+public member of CWinApp.
+
+Sample Code
+-----------
+
+   void CMyApp::DocTemplatesLoop()
+   {
+        // this section iterates through all document templates
+        POSITION pos = GetFirstDocTemplatePosition();
+        while (pos)
+        {
+             CDocTemplate* pTemplate = GetNextDocTemplate(pos);
+             // use pTemplate
+        }
+   }
+
+Additional query words: kbinf 4.00
+
+======================================================================
+Keywords          : kbcode kbDocView kbMFC kbVC400 kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

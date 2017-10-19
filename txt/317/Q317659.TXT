@@ -1,0 +1,95 @@
+DOCUMENT:Q317659  05-MAR-2002  [ssafe]
+TITLE   :PRB: If You Rebind Only the Solution File, Change Can't Check In
+PRODUCT :Microsoft SourceSafe
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbDSupport kbGrpDSSSafe
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe 6.0c, used with:
+    - Microsoft Visual Studio.NET (2002), Professional Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to rebind only the solution file that originally contained a project,
+and if you do not rebind the project, you cannot check in changes. The file is
+left in a state of pending check in.
+
+NOTE: This problem may also occur with multiple projects and files.
+
+CAUSE
+=====
+
+The solution file, which is still under source control, references a valid
+project that is also still under source control. This occurs, even though the
+project is unbound.
+
+RESOLUTION
+==========
+
+To resolve this problem, use one of the following methods:
+
+ - If you want to keep the project, rebind both the solution and the project.
+
+   -or-
+
+ - If you do not want to keep the project and its history, delete and remove the
+   project from the Visual SourceSafe explorer, and then rebind the solution.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a database project in the Visual Studio .NET integrated development
+   environment (IDE).
+
+2. Add the solution file to source control.
+
+3. Unbind the solution. On the File menu, click Source Control, and then click
+   Change Source Control.
+
+4. Use the Change Source Control dialog box to rebind only the solution.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q305106 HOWTO: Reconnect a Project to Source Control in Visual Studio .NET
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport kbGrpDSSSafe 
+Technology        : kbVSsearch kbSSafeSearch kbAudDeveloper kbVSNETPro kbSSafe600C kbVSNETSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

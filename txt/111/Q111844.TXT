@@ -1,0 +1,64 @@
+DOCUMENT:Q111844  29-OCT-1999  [win3x]
+TITLE   :Err Msg: BAD ERROR: A Successfully Transmitted Fax Could...
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using Microsoft At Work PC Fax, you may experience the following
+problems:
+
+ - When you attempt to send a fax, you may receive the following error message:
+
+   BAD ERROR: A successfully transmitted fax could not be processed
+
+ - After you successfully receive a fax, you cannot view it in Fax Viewer.
+
+CAUSE
+=====
+
+These problems may be caused by a problem in the firmware of the modem that you
+are using with At Work PC Fax, or by a problem in the MG3-to-DCX file conversion
+process. The above error message occurs most frequently with Class 2 modems.
+
+RESOLUTION
+==========
+
+This is a known problem that can occur with the At Work PC Fax software that is
+included with Windows for Workgroups version 3.11. This problem does not occur
+with the Microsoft Fax software that is included with Microsoft Windows 95. To
+resolve this problem, upgrade to Windows 95 or contact your modem manufacturer
+to inquire about a possible firmware upgrade that corrects this problem.
+
+Additional query words: 3.11 temp receive efax
+
+======================================================================
+Keywords          : win95 
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,152 @@
+DOCUMENT:Q189596  27-JAN-2001  [vbwin]
+TITLE   :SAMPLE: VB6WLCTL.EXE Windowless Controls Demonstration
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbfile kbole kbreadme kbsample kbCtrl kbRegistry kbVBp kbVBp600 kbOSWin95 kbOSWin98 kbG
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual Basic 6.0 introduces the capability of creating "Windowless" controls. A
+Windowless control, also known as a "lightweight" control, is a control that
+does not have a WndProc function for message handling. These lightweight
+controls require fewer resources than normal controls, and allow for development
+of transparent controls. This sample demonstrates how to create windowless
+controls in Visual Basic 6.0.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+   VB6WLCTL.exe
+   (http://download.microsoft.com/download/vb60pro/2/2/Win98/EN-US/VB6WLCTL.exe)
+
+Release Date: June 16, 2000
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Below is the content of the Readme.txt for this sample.
+
+Description
+-----------
+
+Visual Basic 6.0 provides the capability of building Windowless controls, also
+known as lightweight controls. A new property of the UserControl, Windowless,
+enables this feature. Setting the Windowless property to True will make the
+UserControl Windowless, a control which sends and receives messages through OLE
+rather than the regular messaging queues that Windows uses.
+
+A Windowless control behaves the same as the normal UserControls with the
+following exceptions:
+
+ - The UserControl has no hWnd property (limits some API calls).
+
+ - The Borderstyle property cannot be set.
+
+ - The UserControl cannot host normal Windowed controls.
+
+ - Windowless controls are not supported by some containers. If sited in such a
+   container, they will be assigned an hWnd and be treated as a normal Windowed
+   controls.
+
+This sample demonstrates the functionalities of Windowless controls created in
+Visual Basic 6.0. The main project group file is WndLessControlAGroup.vbg, which
+contains the controls as well as a client that shows the controls in action. The
+documentation in the source code explains in great detail the behavior of each
+control.
+
+Summary Of Sample Controls
+--------------------------
+
+Four Windowless Controls are included in the sample to show different
+Functionality:
+
+TestControl1 - A Windowless control that acts and handles events like a
+               normal control.
+
+TestControl2 - Allows events to bypass it and be handled by the controls
+               underneath it.
+
+TestControl3 - Demonstrates "HitTesting" to see where the user has clicked
+               within the Windowless control's region on the form. The
+               control acts "transparently" (events being passed to the
+               Form underneath) unless the CommandButton sited on it is
+               clicked. Then it handles that Event normally.
+
+TestControl4 - This control demonstrates how to determine what areas of a
+               control are transparent by using the Picture, MaskPicture,
+               and MaskColor properties, and where events can be handled.
+
+To Start
+--------
+
+Before loading this sample into Visual Basic 6.0, the following steps need to be
+taken:
+
+1. Copy the following files on the Visual Basic 6.0 or Visual Studio 6.0
+   installation CD-ROM in the ...\Common\Tools\VB\WINLESS folder to the
+   Windows\System (Windows 95, Windows 98, or Windows Me) or Windows\System32
+   (Windows NT) folder:
+
+      mswless.reg
+      mswless.ocx
+
+2. Double-click on mswless.reg to import information to the registry.
+
+3. Register mswless.ocx by typing in the following command in the Windows Run
+   dialog:
+
+      RegSvr32 C:\Windows\System\mswless.ocx
+
+REFERENCES
+==========
+
+For more information about lightweight controls in Visual Basic, please see the
+following articles in the Microsoft Knowledge Base:
+
+   Q184687 : INFO: Lightweight Controls in Visual Basic 6.0
+
+   Q184645 : HOWTO: Create Lightweight Controls with Visual Basic 6.0
+
+Additional query words: VB6WLCTL windowless
+
+======================================================================
+Keywords          : kbfile kbole kbreadme kbsample kbCtrl kbRegistry kbVBp kbVBp600 kbOSWin95 kbOSWin98 kbGrpDSVB kbDSupport kbOSWinME 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,104 @@
+DOCUMENT:Q246324  24-OCT-2000  [winnt]
+TITLE   :Inetd and the Rutils
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.2.1,2.2.2,2.2.3,2.2.4
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Interix versions 2.2.1, 2.2.2, 2.2.3, 2.2.4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article is a summarization of the inetd "super server" with Interix and the
+related daemons you can start with inetd.
+
+MORE INFORMATION
+================
+
+The package contains:
+
+ - inetd
+
+ - The "super server" and Inetd.conf (its configuration file)
+
+ - The following "daemons," utilities, and files (installed under
+   $Interix_ROOT):
+
+   bin/rcp
+   bin/rdist
+   bin/rdistd
+   bin/regpwd
+   bin/rlogin
+   bin/rsh
+   bin/talk
+   bin/tftp
+   etc/inetd.conf
+   usr/sbin/in.fingerd
+   usr/sbin/in.rlogind
+   usr/sbin/in.ftpd
+   usr/sbin/in.ntalkd
+   usr/sbin/in.rshd
+   usr/sbin/in.telnetd
+   usr/sbin/in.tftpd
+   usr/sbin/in.rexecd
+   usr/sbin/inetd
+
+Note that most of the daemons are in the usr/sbin sub-folder. Users with a Linux
+or BSD background may note that the daemon names conform to the System V
+convention. Man pages are available under the "root" name, for example, man
+telnetd instead of man in.telnetd.
+
+There are two identical copies of the telnetd binary, bin/telnetd and
+sbin/in.telnetd. The sbin/in.telnetd copy is specified in the Inetd.conf file.
+The copy in bin is maintained for backward compatibility and will eventually
+disappear. The regpwd utility is used to create .password files.
+
+NOTE: For security reasons, this Interix port of the FTP server (In.ftpd), does
+not support anonymous FTP. For more information about this package, see the
+following topics in tech note 0008:
+
+What is inetd
+Security and Inetd
+Domain User Accounts
+The Account Running inetd on workgroups
+Setting up inetd
+Starting inetd as a Service
+Specific Daemon Notes
+
+For a complete summary of the inetd utility, see Tech Note 0008, "Inetd and the
+Rutils". Complete information about each daemon and utility that is mentioned
+here can be found on its reference page (man inetd).
+
+For additional information, see the following Interix Web site:
+
+   http://www.interix.com/newinterix/main_technotes.htm
+
+Additional query words: 2.2.10 2.2.20 2.2.30 2.2.40
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbInterixSearch kbUNIXSearch kbInterix221 kbInterix222 kbInterix223 kbInterix224
+Version           : :2.2.1,2.2.2,2.2.3,2.2.4
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

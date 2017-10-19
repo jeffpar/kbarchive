@@ -1,0 +1,62 @@
+DOCUMENT:Q186402  01-MAY-2001  [ssafe]
+TITLE   :PRB: Err "User Admin Not Found" When You Log On to VSS Database
+PRODUCT :Microsoft SourceSafe
+PROD/VER::4.0,4.0a,5.0
+OPER/SYS:
+KEYWORDS:kbnokeyword kbSSafe400 kbSSafe500 _IK
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 4.0, 4.0a, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to log onto a Visual SourceSafe database, you receive the following
+error message:
+
+   User Admin Not Found
+
+This error occurs even though the Admin's user directory and ss.ini files do
+exist.
+
+CAUSE
+=====
+
+The error is typically caused by corruption in the UM.dat or the Rights.dat
+files.
+
+RESOLUTION
+==========
+
+Call Microsoft Technical Support for a possible resolution to this error. Choose
+Technical Support from the Help menu within the Visual SourceSafe Explorer for
+more information about contacting support.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnokeyword kbSSafe400 kbSSafe500 _IK 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe400 kbSSafe400a kbSSafe500
+Version           : :4.0,4.0a,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

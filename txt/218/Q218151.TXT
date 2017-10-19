@@ -1,0 +1,61 @@
+DOCUMENT:Q218151  06-AUG-2002  [winnt]
+TITLE   :SBS: Network Installation Is Not Available for SBS 4.5 Server
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.5
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Small Business Server version 4.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Small Business Server (SBS) 4.5 does not support installing SBS from a command
+line using the "/b" switch.
+
+MORE INFORMATION
+================
+
+You can perform a network installation in Microsoft Windows NT 3.51 or 4.0 by
+specifying an unattended Setup script file at a command line to install the
+server. For example:
+
+   <x>:\winnt.exe /u:unattend.txt /s:<x>:\i386 /b
+
+SBS 4.5 does not support installing SBS in this manner. SBS 4.5 requires new
+installations to be performed using the three Setup floppy disks.
+
+To upgrade to SBS 4.5 from SBS 4.0a, run Setup.exe from the root folder of SBS
+4.5 CD-ROM 1. Because Windows NT is already installed, there is no need to
+perform an unattended upgrade of SBS using the command line listed above.
+
+
+
+Additional query words: smallbiz
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbAudDeveloper kbSBServSearch kbSBServ450
+Version           : winnt:4.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

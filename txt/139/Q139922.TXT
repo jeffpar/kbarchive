@@ -1,0 +1,59 @@
+DOCUMENT:Q139922  26-MAY-2001  [homekids]
+TITLE   :Encarta 1995: Word Processor Starts Only Once
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::1995 edition
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia for Macintosh 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The word processor option in Microsoft Encarta 1995 only starts one time each
+session. If you started the option during the current session of Encarta and
+then closed it, the word processor will not restart.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem Microsoft Encarta for Windows, 1995
+edition. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+This problem does not occur in Encarta Encyclopedia for Windows, 1996 edition.
+
+WORKAROUND
+==========
+
+To run your word processing program a second time, you must exit Microsoft
+Encarta 95 and then reopen it.
+
+Additional query words: 1995 multi media multimedia multi-media word-processor word-processing mmtitles kbmm
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbEncartaSearch kbEncartaEnCyc1995Mac
+Version           : :1995 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

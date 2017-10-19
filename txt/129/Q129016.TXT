@@ -1,0 +1,70 @@
+DOCUMENT:Q129016  12-FEB-2000  [foxpro]
+TITLE   :How to Register Your Third-Party Wizards
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how you can register a third-party Wizard in Visual
+FoxPro.
+
+MORE INFORMATION
+================
+
+The _WIZARD System Memory Variable determines which application will act as the
+main controller for all the wizards. By default, WIZARD.APP is assigned to this
+variable, and each time you choose to run a wizard, this application is
+activated. Although you can create and use your own application instead of
+WIZARD.APP, Microsoft does not recommend it.
+
+WIZARD.APP uses the WIZARD.DBF table to register the various wizards. This table
+determines which wizard is associated with which type of file or tool. This is
+where you can enter information about a third-party wizard.
+
+Each record in WIZARD.DBF represents a wizard. Once the information is entered,
+WIZARD.APP will be able to find the wizard and run it for a specified type of
+file or tool. The PROGRAM field contains the name and path of the Wizard program
+and the TYPE field contains the information about the type of file or tool
+associated with the wizard.
+
+For example, if you enter a third-party Wizard named MYWIZ.APP with a FORM entry
+in the TYPE field, the MYWIZ.APP will be run any time you try to create a new
+form.
+
+For more information about the Registeration Table (WIZARD.DBF) please see the
+following article in the Microsoft Knowledge Base:
+
+   Q128728 How Visual FoxPro Organizes and Accesses Wizards
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

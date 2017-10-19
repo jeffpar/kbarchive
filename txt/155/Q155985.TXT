@@ -1,0 +1,79 @@
+DOCUMENT:Q155985  14-NOV-2000  [word97]
+TITLE   :WD97: Run-Time Error Using Macro to Save File with Name
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kberrmsg kbprogramming kbwordvba
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run a macro that saves a file with a file name that uses a character
+outside of the range 32-255, based on the Unicode standard, the following
+Microsoft Visual Basic message appears:
+
+   Run-time error '5152
+   This is not a valid file name. Try one or more of the following:
+
+   *Check the path to make sure it was typed correctly.
+   *Select a file from the list of files and folders.
+   <path>\<file name>.
+
+where <path> is a folder name and <file name> is a file name on the
+computer.
+
+CAUSE
+=====
+
+This problem occurs because Microsoft Windows 95 is not aware of the Unicode
+standard.
+
+
+WORKAROUND
+==========
+
+To work around this problem, use characters from the standard American National
+Standards Institute (ANSI) character set when naming files with a macro.
+
+MORE INFORMATION
+================
+
+The Unicode standard is a world-wide, 16-bit character encoding system. It is a
+fixed-width, uniform text and character encoding scheme that includes characters
+from the world's scripts, as well as technical symbols in common use. It is
+maintained by the Unicode Consortium and corresponds with international standard
+ISO/IEC 10646-1:1993.
+
+One use for characters outside the range is to represent accented characters in
+foreign languages.
+
+
+Additional query words: wordcon 8.0 word8 word97
+
+======================================================================
+Keywords          : kberrmsg kbprogramming kbwordvba 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

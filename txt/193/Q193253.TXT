@@ -1,0 +1,118 @@
+DOCUMENT:Q193253  11-DEC-1999  [foxpro]
+TITLE   :BUG: HalfHeightCaption Form Causes Small Empty Control Menu
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you run a top-level form with the HalfHeightCaption property set to true
+(.T.) and you minimize the form, right-clicking the form icon on the system task
+bar causes a small empty control menu to display.
+
+RESOLUTION
+==========
+
+Here are the two workarounds for this problem:
+
+Method 1
+--------
+
+Create the form using the following code example:
+
+      PUBLIC oform  && If run from a program file.
+      oform = CREATEOBJECT('form1')
+      oform.Show()
+    
+      DEFINE CLASS form1 AS form
+         ShowWindow = 2
+         AutoCenter = .T.
+         HalfHeightCaption = .T.
+         Name = "Form1"
+         Caption = "Form1"
+      ENDDEFINE
+
+Method 2
+--------
+
+If the form is created with the Form Designer, place the following code in the
+Deactivate and Paint events of the form.
+
+In the Deactivate event:
+
+      DoDefault()
+      IF Thisform.WindowState = 1
+         Thisform.HalfHeightCaption = .F.
+         Thisform.Icon = Thisform.Icon
+      ENDIF
+
+In the Paint event:
+
+      IF Thisform.WindowState = 1
+         Thisform.HalfHeightCaption = .F.
+      ELSE
+         Thisform.HalfHeightCaption = .T.
+      ENDIF
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+This behavior does not occur if the form is created using code instead of the
+Form Designer.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a form named Myform.
+
+2. Set the two following properties of the form:
+
+         HalfHeightCaption = .T.
+         ShowWindow = 2 - As Top-Level Form
+
+3. Save and run Myform.
+
+4. Click the minimize button to minimize the form.
+
+5. In the System Taskbar, right-click the icon to display the control menu. A
+   small empty control menu displays.
+
+Additional query words: kbVFp600bug kbVFp500abug kbXBase kbContainer kbCtrl kbvfp500 kbvfp500a kbvfp600
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

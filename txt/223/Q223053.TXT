@@ -1,0 +1,68 @@
+DOCUMENT:Q223053  07-APR-2000  [sms]
+TITLE   :SMS: Installation Does Not Finish If Spaces Exist in Folder Name
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are installing Systems Management Server (SMS) 2.0 in an installation
+folder that has spaces in its name (for example, C:\Program Files), SMS is not
+installed correctly. However, the SMS Setup Wizard indicates that the
+installation is complete. If you try to start the SMS Administrator console, the
+following error message is displayed:
+
+   Cannot find Mfc42u.dll in the existing path.
+
+The only SMS service that runs is the SMS_SITE_COMPONENT_MANAGER service.
+
+If you reboot the site server, the server does not complete the reboot cycle, and
+stops with the following error message displayed:
+
+   STOP: C000021a {Fatal System Error} The Windows Logon Process Failed to start
+   normally.
+
+WORKAROUND
+==========
+
+Install SMS in the default folder, or select a folder that does not contain
+spaces in its name.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

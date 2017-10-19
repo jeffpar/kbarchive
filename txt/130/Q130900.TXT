@@ -1,0 +1,61 @@
+DOCUMENT:Q130900  27-JUL-2001  [sms]
+TITLE   :SMS Remote Control Fails on AST Manhattan Pentium
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0
+OPER/SYS:
+KEYWORDS:kbnetwork smsgeneral kbArtTypeINF
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you remove Remote Control for the second time from a Windows for Workgroups
+3.11 client using a 3COM 3C503 or 3C509 network interface card (NIC), the
+following error message may appear:
+
+   An application error has occurred and an application error log is being
+   generated.
+
+   exe\SMS.DBG (pid=33)
+   Exception: access violation (0xc0000005), Address <Hex address>
+
+This problem occurs when Systems Management Server is installed on an AST
+Manhattan Pentium computer with 64 megabytes of RAM.
+
+To work around this problem, do one of the following:
+
+ - Use another supported NIC on the Windows for Workgroups client.
+
+-or-
+
+ - On the Systems Management Server, reduce the RAM to 16 MB.
+
+Additional query words: prodsms sms mb
+
+======================================================================
+Keywords          : kbnetwork smsgeneral kbArtTypeINF 
+Technology        : kbSMSSearch kbSMS100
+Version           : winnt:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

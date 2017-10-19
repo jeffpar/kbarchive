@@ -1,0 +1,91 @@
+DOCUMENT:Q254412  07-JUN-2002  [automap]
+TITLE   :Err Msg: Msvcp60.dll File Is Linked to Missing Export Msvcrt.dll
+PRODUCT :Microsoft Automap
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbsetup kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2001 
+ - Microsoft Streets and Trips 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start one of the programs listed at the beginning of this article, you
+may receive the following error message:
+
+   The MSVCP60.DLL file is linked to missing export MSVCRT.DLL
+
+CAUSE
+=====
+
+This behavior can occur if either of the following conditions are true:
+
+ - You install the program and then attempt to start the program before you
+   restart your computer.
+
+ - The Windows Libraries Update is not installed on your computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, restart your computer.
+
+If the issue continues to occur, download and install the Windows Libraries
+Update. To do this:
+
+1. Visit the following Microsoft Web site:
+
+   http://www.microsoft.com/downloads/search.asp?
+
+2. Next to "Search using", click Keyword Search.
+
+3. In the Keywords box, type "libraries update" (without the quotation marks).
+
+4. In the Operating System box, click the appropriate operating system for your
+   computer.
+
+5. Under "Show Results For", select "All Downloads", and then click "Find It!"
+
+6. Under Title, click the Microsoft Libraries Update Web link.
+
+7. Follow the instructions on the screen to download and install the Microsoft
+   Libraries Update.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q261157 Streets and Trips: Computer Stops Responding When You Start the
+   Program
+
+Additional query words: mp2001 st2001 automap auto map point setup
+
+======================================================================
+Keywords          : kbenv kberrmsg kbsetup kbimu 
+Technology        : kbHomeProdSearch kbExpediaSearch kbMapptSearch kbMapPoint2001 kbExpediaStreets2001
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

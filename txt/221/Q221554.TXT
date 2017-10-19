@@ -1,0 +1,65 @@
+DOCUMENT:Q221554  03-MAY-2001  [visualc]
+TITLE   :Polish Windows NT Displays Microsoft Sans Serif Font Incorrectly
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.0a,6.0
+OPER/SYS:
+KEYWORDS:kbenv kbprogramming
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Editions, versions 4.0a, 6.0, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Some Polish characters are displayed incorrectly in dialog boxes in Microsoft
+Windows NT 4.0 when the Microsoft Sans Serif font is selected.
+
+CAUSE
+=====
+
+Most Windows NT localizations assume that the fonts being displayed are
+proportional. If the font is not proportional, Windows NT uses kerning pairs
+from their English counterparts, and the fonts are not displayed correctly.
+
+The Microsoft Sans Serif font is not a proportional font.
+
+RESOLUTION
+==========
+
+There are two possible solutions:
+
+ - Delete the Microsoft Sans Serif font and let the font mapper choose one by
+   default. This is especially important with Cyrillic localizations (such as
+   Russian).
+
+ - Install Visual C++ on Polish Windows NT 4.0. Recompile under the Polish
+   localization.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbprogramming 
+Technology        : kbVCsearch kbAudDeveloper kbVC32bitSearch
+Version           : winnt:4.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

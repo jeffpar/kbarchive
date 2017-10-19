@@ -1,0 +1,63 @@
+DOCUMENT:Q311618  08-MAY-2002  [iis]
+TITLE   :Unknown HTTP Verbs Generate a 405 Error Message Instead of a 501
+PRODUCT :Internet Information Server
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you supply a verb that Internet Information Services (IIS) does not recognize
+in an HTTP header, you receive the following error message:
+
+   HTTP 405 - Resource not allowed
+   Internet Information Services
+
+You expect to receive the following error message:
+
+   Error 501 - Not implemented
+   Internet Information Services
+
+CAUSE
+=====
+
+You can use arbitrary verbs with Common Gateway Interface (CGI) scripts or
+Internet Server Application Programming Interface (ISAPI) filters.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: iis 5
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis510
+Version           : :
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

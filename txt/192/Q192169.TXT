@@ -1,0 +1,146 @@
+DOCUMENT:Q192169  11-JAN-2001  [vbwin]
+TITLE   :BUG: Property Page Does Not Close Using Compiled VB OCX
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you create a compiled Visual Basic OCX that contains a Property Page and that
+Property Page has code that calls to an OLE DLL server, the Property Page may
+not close as expected.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+
+MORE INFORMATION
+================
+
+Below are the steps to reproduce this behavior. These steps are broken into
+three segments, including the creation of the DLL Server, the creation of the
+OCX, and testing the OCX.
+
+Part 1 - Create the DLL Server
+------------------------------
+
+1. Create a new ActiveX DLL Project. Class1 is created by default.
+
+2. From the Project menu, select Properties, and set the Project Name to
+   "DLLSVR."
+
+3. Paste the following code into Class1:
+
+         Public Sub ShowIt()
+            Dim MyForm As Form1
+
+            ' Create new instance of the form
+            Set MyForm = New Form1
+
+            ' Show the form as modal
+            MyForm.Show vbModal
+
+            ' Unload the form
+            Unload MyForm
+
+            ' Clear out form reference
+            Set MyForm = Nothing
+         End Sub
+
+4. Add a Form to the project.
+
+5. Compile the DLL.
+
+6. Save the project.
+
+Part 2 - Create the Custom Control
+----------------------------------
+
+1. Create a new ActiveX Control Project. UserControl1 is created by default.
+   NOTE: Do not keep the DLL project from Part I loaded.
+
+2. Select References from the Project menu, and add a reference to the
+   previously created DLL, "DLLSVR."
+
+3. Select Add Property Page from the Project menu, and add a Property Page.
+
+4. Add a CommandButton to the property page.
+
+5. Paste the following code into the Property Page's code window:
+
+         Private Sub Command1_Click()
+            Dim MyClass As DLLSVR.Class1
+
+            ' Create instance of the class
+            Set MyClass = New DLLSVR.Class1
+
+            ' Call method of the class
+            MyClass.ShowIt
+
+            ' Get rid of class reference
+            Set MyClass = Nothing
+         End Sub
+
+6. Set the PropertyPages property of the UserControl to PropertyPage1.
+
+7. Compile the OCX.
+
+8. Save the project.
+
+Part 3 - Testing the Control
+----------------------------
+
+1. Select Add Project from the File menu, and add a Standard EXE project,
+   leaving the Custom Control Project from part 2 still loaded. Form1 is created
+   by default.
+
+2. Add an instance of the custom control to Form1.
+
+3. Alternate-mouse click on the control and select "Properties."
+
+4. Click the CommandButton on the Property Page.
+
+5. Close the window that was shown.
+
+6. Try to close the Property Page. Note that the Property Page doesn't go away.
+   Clicking directly on the underlying form will cause the Property Page to be
+   removed from the screen.
+
+Additional query words: kbDSupport kbDSD kbVBp kbVBp500bug kbPropSheet
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

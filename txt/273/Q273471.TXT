@@ -1,0 +1,64 @@
+DOCUMENT:Q273471  23-OCT-2000  [winnt]
+TITLE   :Creating Multiple-Line, Single-Value Attributes in Templates
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1,2.2
+OPER/SYS:
+KEYWORDS:metadirectory MMS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services, versions 2.1, 2.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you create a single-value, multiple-line attribute in a construction
+template, you must incorporate the c_newline constant into the construction
+template.
+
+MORE INFORMATION
+================
+
+For example, assume that there are three variables: $v1, $v2, and $v3. These are
+all single-value variables. To combine them into a single-value, multiple-line
+attribute, use the c_newline constant. You can then specify the inclusion of a
+linefeed in the value:
+
+   $newVar = $v1 $c_newline $v2 $c_newline $v3
+
+As with all variables that are used in a Microsoft Metadirectory Services (MMS)
+template, you must use a preceding "$" character to force the parser to
+recognize the constant as a value rather than as a literal string.
+
+You must define the c_newline constant in the management agent's Design MA
+action, on the Template Definitions tab. If required, add the following line to
+the Template Definitions tab:
+
+   c_newline        code:10
+
+Additional query words: line feed valued lined
+
+======================================================================
+Keywords          : metadirectory MMS 
+Technology        : kbMMSSearch kbMMS210 kbMMS220
+Version           : :2.1,2.2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

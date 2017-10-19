@@ -1,0 +1,82 @@
+DOCUMENT:Q149279  11-JAN-2001  [vbwin]
+TITLE   :FIX: Garbage in Input Buffer When InBufferSize > 2048
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbVBp kbVBp400bug kbOSWin98fix kbGrpDSVB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using the MSCOMM control, the contents of the input buffer may be corrupted when
+read by an application. This problem can occur if the InBufferSize property is
+greater than 2048 bytes and if the ParityReplace property holds some value other
+than an empty string ("").
+
+RESOLUTION
+==========
+
+To avoid this problem, reduce the value of the InBufferSize property to
+something less than 2048 bytes. Alternatively, the ParityReplace property can be
+set to "", an empty string. This will disable all parity checking and remove the
+problem. In addition, because Windows NT does not have this problem, utilizing
+NT instead of Windows 95 or Windows 3.x may also be an option.
+
+STATUS
+======
+
+Microsoft has confirmed this to be an issue in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Microsoft Windows
+98.
+
+
+MORE INFORMATION
+================
+
+Due to a problem with the Windows 3.x and Windows 95 operating systems and a
+resulting conflict with the MSCOMM control, when parity checking is enabled,
+characters in the input buffer can be corrupted. The character specified in the
+ParityReplace property ends up replacing characters in the input buffer. For
+example, if ParityReplace is set to "?" (the default), then:
+
+   "Hello VB World" might be replaced by "He?l?o V??W?rld"
+
+In this case, the problem is actually not with the MSCOMM control, but rather
+with Win3.x and Win95 operating systems. The problem does not occur on Windows
+NT.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp kbVBp400bug kbOSWin98fix kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : WINDOWS:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

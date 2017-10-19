@@ -1,0 +1,69 @@
+DOCUMENT:Q67015  07-DEC-1999  [win95x]
+TITLE   :Fontware Installation Kit Typeface Information Missing
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you get the following message when you make fonts
+
+   Some typeface information missing. Go to Add/Delete Bitstream Fontware
+   Typefaces
+
+you have chosen a typeface that the Bitstream Fontware Installation Kit (FIK)
+does not find on your system, even though the name is listed in the Make Fonts
+windows. This may happen if you have both a PostScript PDL and non-PostScript
+PDL printer and you added the typeface before setting up Fontware support for
+the PostScript PDL printer. Choose Add/Delete Bitstream Fontware Typefaces and
+add the typeface again. Then make your fonts.
+
+MORE INFORMATION
+================
+
+If you are using the starter kit that is available through the fulfillment
+coupon included with PowerPoint, and you attempt to make PostScript PDL fonts
+from your free Dutch and Swiss typefaces, you will get the same error message.
+Times Roman and Helvetica are resident on most PostScript PDL printers; the
+files needed for Dutch and Swiss PostScript PDL fonts are not shipped with the
+starter kit. Either purchase Bitstream Scalable Typeface Packages for Dutch and
+Swiss or select Times Roman and Helvetica in your Windows application.
+
+A Bitstream Fontware Installation Kit is available through a fulfillment coupon
+included with the retail version of Microsoft PowerPoint for Windows. This
+starter kit will install fonts for Windows applications only; however, the kit
+can be merged with other starter kits to provide support for multiple
+applications as described above.
+
+
+Additional query words: 3.00 win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

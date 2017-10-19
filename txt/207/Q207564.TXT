@@ -1,0 +1,71 @@
+DOCUMENT:Q207564  24-FEB-2002  [vbwin]
+TITLE   :DOC: VBCE Error "The Declare statement is incorrectly formatted"
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbdocfix kbToolkit kbVBp600bug kbOSWinCEsearch kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Toolkit for Visual Basic 6.0, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When compiling a Windows CE Toolkit for Visual Basic (VBCE) application which
+includes a Declare statement, the following error message may appear:
+
+   The Declare statement is incorrectly formatted. Please see the documentation
+   for more information on the format of a Declare statement.
+
+MORE INFORMATION
+================
+
+The Winceapi.txt file incorrectly includes some Declare statements that include
+parameters declared as "Any". This is not supported in Windows CE. By changing
+the declaration of the parameters to another data type, such as Long, the error
+will be avoided.
+
+For example, the following Declare statement needs to be changed:
+
+   Declare Function SendMessage Lib "Coredll" Alias "SendMessageW" ( _
+      ByVal hwnd As Long, _
+      ByVal wMsg As Long, _
+      ByVal wParam As Long, _
+      lParam As Any) As Long
+
+The statement can be changed to the following:
+
+   Declare Function SendMessage Lib "Coredll" Alias "SendMessageW" ( _
+       ByVal hwnd As Long, _
+       ByVal wMsg As Long, _
+       ByVal wParam As Long, _
+       ByVal lParam As Long) As Long
+
+Additional query words: kbDSupport vbce vbce6 wce
+
+======================================================================
+Keywords          : kbdocfix kbToolkit kbVBp600bug kbOSWinCEsearch kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbWinCETKVBSearch kbWinCESearch kbWinCETK100VB600
+Version           : :1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

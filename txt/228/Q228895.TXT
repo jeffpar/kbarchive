@@ -1,0 +1,52 @@
+DOCUMENT:Q228895  18-APR-1999  [homegame]
+TITLE   :Age of Empires: Trade Workshop Building Is Displayed on the Map
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Age of Empires, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you play Microsoft Age of Empires, a Trade Workshop building may be
+displayed on the map. This building has no apparent purpose, and does not affect
+the game play of the scenario in which it appears.
+
+MORE INFORMATION
+================
+
+This building is displayed when you play the I'll Be Back scenario in the Glory
+of Greece campaign, and does not appear in any other scenario or campaign.
+
+
+Additional query words: 1.00 msgame aoe ageofempires ages
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch kbAOE kbGamesSearch kbAOESearch
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

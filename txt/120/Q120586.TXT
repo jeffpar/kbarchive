@@ -1,0 +1,100 @@
+DOCUMENT:Q120586  08-NOV-2001  [homegame]
+TITLE   :Encarta/Golf/MSB Ocean ErrMsg: Unhandled Exception Detected
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kberrmsg kbsoundkbbuglist kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf for Windows, version 2.0 
+ - Microsoft Encarta 97 Encyclopedia for Windows 
+ - Microsoft Encarta Encyclopedia 97 Deluxe for Windows 
+ - Scholastic's Magic School Bus series: Explores the Ocean for Windows, version 1.0 
+ - the operating system: Microsoft Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start one of the programs listed at the top of this article, the
+following error message may occur when certain S3 video drivers are being used
+by Windows 3.x:
+
+GOLF
+----
+
+   Win32s - Error in GLFMOD20.EXE
+   Unhandled Exception detected. (Code: 0xC0000005)
+   Application will be terminated
+
+ENCARTA
+-------
+
+   Win32s - Error in ENC97.EXE
+   Unhandled Exception detected. (Code: 0xC0000005)
+   Application will be terminated
+
+MSB OCEAN
+---------
+
+   Win32s - Error in MSBSEA.EXE
+   Unhandled Exception detected. (Code: 0xC0000005)
+   Application will be terminated
+
+CAUSE
+=====
+
+This error message is a result of a conflict between the Win32s system files and
+the S3 video driver.
+
+
+MORE INFORMATION
+================
+
+Microsoft has confirmed that the S3 video driver version 2.1 provided by Dell
+Computer Systems causes conflicts with the programs listed at the top of this
+article.
+
+Microsoft recommends that version 1.2 or a prerelease version 2.33 of the S3
+video driver be used with the above programs. Either of these drivers can be
+obtained by contacting Dell Computer Systems.
+
+NOTE: The prerelease version of the S3 video driver will not provide the 1024 x
+768 video resolution usually found in other high resolution drivers. Dell
+Computer System may correct this problem prior to a full release of the driver.
+
+The Dell products included here are manufactured by Dell Computer Systems, a
+vendor independent of Microsoft; we make no warranty, implied or otherwise,
+regarding these products' performance or reliability. For more information about
+Dell Computer Systems' products, contact the company at:
+
+   Dell technical support: (800) 624-9896
+   Dell BBS: (512) 728-8528
+
+
+Additional query words: unhandled exception win32s encarta 97 kbmm homemm
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kberrmsg kbsound kbbuglist kbfaq
+Technology        : kbOSWinSearch kbHomeProdSearch kbHomeMMsearch kbZNotKeyword6 kbEncartaSearch kbGamesSearch kbZNotKeyword kbGolfSearch kbKidsSearch kbEncartaEncycSearch kbScholasticOcean kbGolf200 kbEncartaEnCyc1997 kbEncartaEnCyc1997Del kbMSBSearch
+Version           : :1.0,2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

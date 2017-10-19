@@ -1,0 +1,56 @@
+DOCUMENT:Q132847  17-DEC-2000  [win95x]
+TITLE   :All Desktop Settings Not Restored After Full-System Backup
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you restore a full-system backup, it may appear that the desktop pattern,
+the wallpaper, and the screen saver have not been restored.
+
+CAUSE
+=====
+
+The last process of the restore operation is to merge the registry settings from
+the backup into the current registry. Once this process is completed, the
+registry contains the desktop settings from the backup files, and you must
+restart the computer so that the settings can be loaded into memory. If you do
+not restart the computer promptly, Windows may automatically update the registry
+with the previous desktop settings by overwriting the changes made during the
+restore operation.
+
+RESOLUTION
+==========
+
+Restart the computer as quickly as possible after the restore operation is
+completed; however, follow the proper shut-down procedures.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

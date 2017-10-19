@@ -1,0 +1,57 @@
+DOCUMENT:Q128926  01-AUG-2001  [sms]
+TITLE   :Remote Control Fails on Windows 95 with 32-bit IPX Stack
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:95; winnt:1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbtshoot smsremtshoot kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.1, 1.2 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use the protected mode Windows 95 IPX/SPX compatible protocol the
+remote control utility WUSER.EXE fails to load. It displays an error message
+that it requires NWIPXSPX.DLL. In SMS Version 1.2, the error message "Unable to
+initialize Multi-protocol support DLL IMP16.DLL" will occur when trying to load
+the remote agent.
+
+This file is a Novell NetWare DLL that is not shipped with Microsoft Windows 95
+or Microsoft Systems Management Server. The DLL file is normally part of the
+NetWare client installation, but if necessary, the file can be obtained from
+Novell.
+
+STATUS
+======
+
+This is by product design.
+
+Additional query words: prodsms sms helpdesk win95 nwlink
+
+======================================================================
+Keywords          : kbnetwork kbtshoot smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbWin95search kbZNotKeyword3 kbSMS110 kbSMS120
+Version           : WINDOWS:95; winnt:1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

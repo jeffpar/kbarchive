@@ -1,0 +1,71 @@
+DOCUMENT:Q134597  17-DEC-2000  [win95x]
+TITLE   :BREAK and VERIFY Commands Do Not Work in MS-DOS Window
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you log on to a NetWare network, your logon script may contain the
+following commands:
+
+   BREAK ON / OFF
+
+   -or-
+
+   VERIFY ON / OFF
+
+But these commands, when run in the Microsoft client for NetWare networks logon
+script processor, are not available in other MS-DOS windows.
+
+CAUSE
+=====
+
+Only the MS-DOS window from which you logged on responds to the MS-DOS BREAK and
+VERIFY commands after the logon script runs. MS-DOS windows you create after you
+started Windows do not load the commands.
+
+RESOLUTION
+==========
+
+Add the BREAK and VERIFY commands to the Autoexec.bat file. This causes the
+settings to be the default settings for each new MS-DOS window.
+
+MORE INFORMATION
+================
+
+For more information about configuring NetWare logon scripts, consult your
+NetWare documentation.
+
+NetWare is manufactured by Novell, Inc., a vendor independent of Microsoft; we
+make no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

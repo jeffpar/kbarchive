@@ -1,0 +1,54 @@
+DOCUMENT:Q68003  17-DEC-2000  [msdos]
+TITLE   :Peculiarities with Edlin's Line Display
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:4.x,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 4.0, 4.01, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Edlin appears to treat lines containing 69 characters as though they visually
+wrap on the screen. To see this behavior, use Edlin's "L" command.
+
+Normally, without line wrapping, Edlin's "L" command displays one full screen of
+text. If a line containing 69 characters is contained within the lines being
+displayed, the following prompt is displayed:
+
+   Continue (Y/N)?
+
+The number of lines displayed on the screen at this point is fewer than one full
+screen, even though screen wrapping has not occurred.
+
+Microsoft has confirmed this to be a problem in MS-DOS versions 4.0, 4.01, and
+5.0. Edlin is not included with later versions of MS-DOS.
+
+Additional query words: 4.00 4.01 5.00 noupd
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS400 kbMSDOS500 kbMSDOS401
+Version           : MS-DOS:4.x,5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

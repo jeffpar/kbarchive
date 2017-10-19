@@ -1,0 +1,63 @@
+DOCUMENT:Q82381  29-OCT-1999  [win95x]
+TITLE   :Program Shell Has Problems After Loading SMARTDrive
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:MS-DOS:6.0; WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you load SMARTDrive (SMARTDRV.EXE) from within a shell program such as
+Program Manager, SMARTDrive may not be able to detect the shell and you may be
+unable to properly exit the shell program.
+
+
+RESOLUTION
+==========
+
+You should not load SMARTDrive from within a shell program, such as Program
+Manager. SMARTDRV.EXE has the ability to detect some shells, such as a Windows
+MS-DOS virtual machine or the MS-DOS Shell, but there are many more that have
+problems if SMARTDrive is loaded in them. Therefore, always load SMARTDrive
+before running any shell programs.
+
+MORE INFORMATION
+================
+
+SMARTDrive (SMARTDRV.EXE) version 4.0 is included with Microsoft Windows version
+3.1. SMARTDrive (SMARTDRV.EXE) version 4.1 is included with MS-DOS version 6.0.
+
+KBCategory: kbother winenv
+KBSubcategory: win31 winmem winshell
+
+Additional query words: smart drive 3.10 3.1 6.00 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311 kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0; WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

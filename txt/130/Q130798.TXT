@@ -1,0 +1,97 @@
+DOCUMENT:Q130798  11-FEB-2000  [foxpro]
+TITLE   :BUG: "File Does Not Exist" Occurs After FoxPro Is Maximized
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b; WINDOWS:2.6a,3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbvfp300bBUG kbvfp500aBUG kbvfp500bug kbvfp260aBUGkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+ - Microsoft FoxPro for Windows, version 2.6a 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When running an application, if FoxPro or Visual FoxPro is minimized and then
+maximized, a "File <filename> Does Not Exist" error occurs when you run a
+program from the menu.
+
+RESOLUTION
+==========
+
+If a READ is in effect at the time FoxPro is minimized, the error does not
+occur. The READ may be in effect either through a Foundation READ implemented in
+the menu or after the menu has been displayed, as in the READ CYCLE described in
+Step 6 below.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create an application that has these components:
+
+   a. With a menu as the MAIN component, create a single menu option ("Do
+      Program") as a COMMAND "DO xtest.prg."
+
+   b. In the XTEST.PRG, add this code:
+
+         WAIT WINDOW "okay"
+
+2. Build the application.
+
+3. Delete or rename the following source files: XTEST.PRG and XTEST.FXP.
+
+4. Run the application, and click "Do Program." The wait window should be
+   displayed.
+
+5. Minimize FoxPro, and then maximize it. Click "Do Program." The wait window is
+   not displayed in Visual FoxPro, and an error occurs. In Visual FoxPro for
+   Macintosh, switch to Finder and then back to FoxPro.
+
+6. Clear the error. In the Command window, issue these commands:
+
+      DO xtest.app
+      @1,1 GET mvar DEFAULT SPACE(5)
+      READ CYCLE
+
+7. Minimize FoxPro, and then maximize it. Click "Do Program." The wait window is
+   displayed correctly. In Visual FoxPro for Macintosh, switch to Finder and
+   then back to FoxPro.
+
+Additional query words: kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+Keywords          : kbvfp300bBUG kbvfp500aBUG kbvfp500bug kbvfp260aBUG kbbuglist
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260a kbVFP300bMac kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : MACINTOSH:3.0b; WINDOWS:2.6a,3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

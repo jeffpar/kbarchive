@@ -1,0 +1,67 @@
+DOCUMENT:Q123463  03-NOV-1999  [win16ddk]
+TITLE   :BUG: MSODISUP.386 Giving Bad Value for Link Speed Causes Hang
+PRODUCT :Microsoft Windows Device Driver Kit
+PROD/VER::3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Device Development Kit (DDK) for Windows, versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows for Workgroups version 3.11 hangs (stops responding), particularly with
+Remote LAN drivers such as RLN, when you attempt to run a protocol stack (such
+as NetBEUI) over ODI.
+
+CAUSE
+=====
+
+The ODI driver specifies the line speed in terms of KBPS instead of in MBPS.
+There appears to be a bug in MSODISUP.386, which causes the link speed
+conversion to generate a bogus value when an ODI driver specifies the line speed
+in terms of KBPS instead of MBPS. The bogus link speed value is used to
+calculate time-out values. The calculated time-out values are so huge they will
+never time out. This causes the computer to hang in VREDIR.386 because the
+Add.Name requests never complete.
+
+RESOLUTION
+==========
+
+Change the line speed reported by the ODI driver to be specified in terms of
+MBPS.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWinDDKSearch kbWinDDK310 kbWinDDK311
+Version           : :3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

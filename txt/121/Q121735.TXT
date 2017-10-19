@@ -1,0 +1,82 @@
+DOCUMENT:Q121735  12-NOV-1999  [pcmail]
+TITLE   :PC Ext: UNINIT Status Message on External
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+With version 3.2 of the message transfer agent (MTA), when you press F2, one of
+the status messages that may appear is UNINIT. The UNINIT Status Message is an
+indication that the following events occurred:
+
+ - The MTA successfully connected to the Server having the postoffice.
+
+ - The MTA was able to read the MASTER.GLB file of the postoffice in the UNINIT
+   status.
+
+ - The MTA failed to access information needed to complete the initialization
+   process. This information is normally obtained by reading several files from
+   the postoffice.
+
+CAUSE
+=====
+
+The following circumstances can cause the UNINIT status to appear on the status
+screen of the MTA.
+
+ - An intermittent network could allow the MTA to attach to the server but fail
+   to download information into memory. The MASTER.GLB file is only 176 bytes
+   and is likely to be readable even on a poorly performing network. Other
+   necessary files may contain much more data and would be more likely to fail
+   on an intermittent network.
+
+ - Lack of adequate access rights. The MTA must have complete rights to the
+   postoffice database. On a Novell server, the Filescan right is required, but
+   the Supervisor right is not.
+
+ - A necessary file may be locked open. Confirm that ACCESS2.GLB, GROUP.GLB,
+   NETWORK.GLB, and all .XTN files are not locked open.
+
+ - If you are running multiple MTAs, another MTA may have one of the necessary
+   files locked open at the exact time this MTA was trying to initialize. The
+   MTA will try to initialize from the drive again when the IntervalUpdate time
+   is reached. By default, the IntervalUpdate value is set to 5 minutes. If the
+   IntervalUpdate has been set to zero, no attempt to re-initialize will occur.
+
+
+KB: SRX940930000890
+Tech By: Stann
+SRG Group: PO
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

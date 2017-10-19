@@ -1,0 +1,77 @@
+DOCUMENT:Q167093  09-AUG-2001  [winnt]
+TITLE   :Err Msg: The WINS Client TCP/IP Service Depends on the TCP/IP...
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetwork msnets
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you log in to Windows NT Workstation version 4.0 with TCP/IP installed, the
+following message may be displayed:
+
+   At least one service or driver failed during system startup. Use Event Viewer
+   to examine the event log for details.
+
+The following information is logged in Event Viewer:
+
+   Event ID:7001
+   Source: Service Control Manager
+   Type: Error
+   Description: The WINS Client TCP/IP Service depends on the TCP/IP
+   Service and failed to load due to the following error:
+   The specified service is disabled and cannot be started.
+
+Also, using the Ping tool generates the following response:
+
+   Unable to connect to IP driver. Error code 2
+
+CAUSE
+=====
+
+This error occurs if the TCP/IP service is not started in the Devices tool in
+Control Panel.
+
+RESOLUTION
+==========
+
+Start the TCP/IP service. To do this, follow these steps:
+
+1. In Control Panel, double-click Devices.
+
+2. Click TCP/IP Service, and then click Start.
+
+NOTE: The TCP/IP service should be set to start automatically. If it is not,
+click TCP/IP Service, and then click Startup. Click the Automatic option, and
+then click OK. Restart the computer.
+
+Additional query words: wkstaonly prodnt
+
+======================================================================
+Keywords          : kberrmsg kbnetwork msnets 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

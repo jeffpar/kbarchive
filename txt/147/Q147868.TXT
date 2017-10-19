@@ -1,0 +1,59 @@
+DOCUMENT:Q147868  08-NOV-2001  [homemm]
+TITLE   :MSB Human: Launch MIDI Mapper Does Not Work
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0,1.0a; WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Scholastic's Magic School Bus series: Explores the Human Body for Windows, versions 1.0, 1.0a 
+ - the operating system: Microsoft Windows 95 
+ - the operating system: Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are running the Bus Stop Utility included with Magic School Bus Explores
+the Human Body (MSB Human) under Windows 95/98, and you click Launch MIDI
+Mapper, nothing may happen.
+
+MORE INFORMATION
+================
+
+MIDI Mapper is a program that is not included with Windows 95/98. Because the
+configuration of MIDI is handled differently in Windows 95/98 than it was in
+Windows 3.x, the MIDI Mapper is not functional and therefore, it is not
+available. When you try to run MIDI Mapper from within Bus Stop Utility - Human
+Body, the computer does not respond.
+
+For more information on MIDI configuration for MSB Human in Windows 95/98, please
+see the following article in the Microsoft Knowledge Base:
+
+   Q123394 MSB Human: No MIDI Sounds
+
+Additional query words: kids mskids msb msbhb msbss frizz kbmm multimedia multi-media multi media Win95 win nada busstop broken launch doesn't function winmsbhuman msbhuman homekids homekid
+
+======================================================================
+Keywords          :  
+Technology        : kbOSWin98 kbOSWin95 kbOSWinSearch kbHomeProdSearch _IKkbbogus kbKidsSearch kbScholasticHuman kbMSBSearch
+Version           : :1.0,1.0a; WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

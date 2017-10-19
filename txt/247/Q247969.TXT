@@ -1,0 +1,73 @@
+DOCUMENT:Q247969  25-JUL-2001  [win95x]
+TITLE   :Windows 95 OSR2.x Support for External USB Hubs
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2.1,2.5
+OPER/SYS:
+KEYWORDS:kbhw osr2 win95 kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, versions 2.1, 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may experience intermittent problems with Windows 95 OEM Service Release
+(OSR) 2.1 or OSR 2.5 when you are using external Universal Serial Bus (USB)
+hubs. These problems may include:
+
+ - The computer stops responding (hangs) while it is entering Suspended mode.
+
+ - The computer hangs while it is resuming.
+
+ - The computer may experience problems during shutdown.
+
+RESOLUTION
+==========
+
+Windows 95 OSR 2.1 and OSR 2.5 provides basic USB support that was developed as
+the technology was first emerging. Based on today's more mature USB technology,
+there are a number of limitations with USB support in Windows 95 OSR 2.1 and
+Windows 95 OSR 2.5.
+
+These limitations were addressed in Microsoft Windows 98 and carried forward to
+Microsoft Windows 98 Second Edition. Addressing these limitations required
+several architectural changes that are not portable back to Windows 95 OSR 2.1
+or Windows 95 OSR 2.5.
+
+Microsoft recommends that customers who require a more robust USB environment
+upgrade to Windows 98 or Windows 98 Second Edition.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbhw osr2 win95 kbHardware 
+Technology        : kbWin95search kbOPKSearch kbWin95OPKOSR25 kbWin95OPKOSR210
+Version           : :2.1,2.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,95 @@
+DOCUMENT:Q232337  07-MAY-2001  [visualc]
+TITLE   :PRB: MFC Wizards Fail with "Unrecognized Database Format"
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:6.0
+OPER/SYS:
+KEYWORDS:kbwizard kbDatabase kbGrpDSVCDB kbDSupport kbDAO360
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using the MFC AppWizard or ClassWizard with a DAO data source and an Access 2000
+.mdb file causes a failure with the following error message:
+
+   Unrecognized Database Format
+
+CAUSE
+=====
+
+The Wizards use DAO version 3.5, which cannot read Access 2000 .mdb files.
+
+RESOLUTION
+==========
+
+Convert the .mdb file to a previous version to use it with MFC AppWizard or
+ClassWizard.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with the Microsoft products listed
+at the beginning of this article.
+
+MORE INFORMATION
+================
+
+To convert the Access 2000 .mdb file to Access 97 format complete the following
+steps:
+
+1. From the Access 2000 main menu, click Tools.
+
+2. Select Database Utilities.
+
+3. Click Convert Database.
+
+4. Select To Prior Access Database Version.
+
+NOTE: The .mdb file can also be converted programmatically by using the DAO
+DBEngine CompactDatabase method.
+MFC version 6.0 will by default use DAO 3.5. In order for your application to use
+DAO 3.6 and work with Access 2000 the .mdb files, you need to define the
+following in your application:
+
+   AfxGetModuleState()->m_dwVersion = 0x0601;
+
+REFERENCES
+==========
+
+For additional information, click the article numbers below
+
+   Q230485 HOWTO: Create an Access 2000 database with MFC DAO
+
+   Q236991 PRB: Unrecognized Database Format Error with Access 2000 Database
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbDatabase kbGrpDSVCDB kbDSupport kbDAO360 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : winnt:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

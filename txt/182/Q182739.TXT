@@ -1,0 +1,82 @@
+DOCUMENT:Q182739  10-AUG-2001  [winnt]
+TITLE   :Lock Workstation Button Still Functions After Being Disabled
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you disable the Lock Workstation button in the Windows NT Security dialog
+box, the Lock Workstation button may still function normally.
+
+CAUSE
+=====
+
+This behavior can occur if the Novell IntraNetWare client version 4.11a for
+Windows NT is installed.
+
+RESOLUTION
+==========
+
+To resolve this issue, remove the Novell IntraNetWare client, and install the
+Microsoft Client Service for NetWare. To do so, follow these steps:
+
+1. Click Start, point to Settings, and then double-click Network.
+
+2. On the Services tab, click the Novell IntraNetWare client in the Network
+   Services box, and then click Remove.
+
+3. Click Add.
+
+4. In the Network Services box, click Client Service For NetWare, and then click
+   OK.
+
+5. Click OK.
+
+6. When you are prompted to restart the computer, do so.
+
+MORE INFORMATION
+================
+
+For additional information, see the following articles in the Microsoft
+Knowledge Base:
+
+   ARTICLE-ID: Q174840
+   TITLE : Disabling Buttons in the Windows NT Security Dialog Box
+
+   ARTICLE-ID: Q172124
+   TITLE : Poledit.exe Not Updated During WinNT SP3 Installation
+
+Additional query words: disabled locked buttons
+
+======================================================================
+Keywords          : kb3rdparty kbenv 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search
+Version           : WINNT:4.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

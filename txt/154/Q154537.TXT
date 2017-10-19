@@ -1,0 +1,77 @@
+DOCUMENT:Q154537  18-DEC-1999  [exchange]
+TITLE   :XCON: Congestion in Message Transfer Service, Sending to DL
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When sending a message to a Distribution List the client receives the following
+Undeliverable Message:
+
+   Your message did not reach some or all of the intended recipients.
+
+   Subject: Message Subject.
+   Sent: 8/8/96 6:49:59 AM
+
+   The following recipient(s) could not be reached:
+
+   <DL Name> on 8/8/96 6:50:00 AM
+   The recipient could not be processed due to congestion in the message transfer
+   service MSEXCH:MSExchangeMTA:<Site>:<Server_Name>
+
+CAUSE
+=====
+
+This error occurs if you send a message to a Distribution List that has no
+Expansion Server defined. By default "Any Server in Site" is set for the
+expansion server. If you define a specific server as the Distribution List's
+Expansion Server, and then delete that Server from the Site, the result is that
+the Expansion Server entry on the General Properties page will become blank.
+When the message transfer agent (MTA) attempts to determine which Exchange
+Server is the Expansion Server for the Distribution List it does not find an
+entry, resulting in the above error.
+
+WORKAROUND
+==========
+
+To correct this problem,
+
+1. Select the Distribution List, and select Properties on the File menu.
+
+2. On the General tab, there is an Expansion Server list box. From the list box
+   select a new Expansion Server.
+
+
+Additional query words: NDR MTA
+
+======================================================================
+Keywords          : kbusage exc4 exc5 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

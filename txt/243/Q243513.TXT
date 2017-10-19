@@ -1,0 +1,73 @@
+DOCUMENT:Q243513  16-DEC-2000  [win95x]
+TITLE   :Unable to Install Personal Web Server
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:1.0,1.0a,4.0,95
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup kbtool win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Personal Web Server versions 1.0, 1.0a, 4.0 for Windows 95 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to install Personal Web Server, you may receive error messages
+stating that the following files cannot be found: Wsock.vxd, Msshrui.dll,
+Rpcrt4.dll, Secur32.dll, and Svrapi.dll.
+
+CAUSE
+=====
+
+This behavior can occur if you install Windows over a network. When you do this,
+the Layout.inf file refers to the network installation point, but the Setup
+program for Personal Web Server does not use the network location for the files.
+
+RESOLUTION
+==========
+
+To resolve this issue, modify the Layout.inf file:
+
+1. Open the C:\Windows\INF\Layout.inf file with any text editor (such as
+   Notepad).
+
+2. Place a semicolon (;) at the beginning of each line that contains any of the
+   following files:
+
+   Wsock.vxd
+   Msshrui.dll
+   Rpcrt4.dll
+   Secur32.dll
+   Svrapi.dll
+
+3. Save and close the file.
+
+4. Install Personal Web Server again.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbsetup kbtool win95 
+Technology        : kbWin95search kbPersWebServSearch kbZNotKeyword3 kbWin95 kbPersWebServ100Win95 kbPersWebServ100aWin95 kbPersWebServ400Win95
+Version           : WINDOWS:1.0,1.0a,4.0,95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

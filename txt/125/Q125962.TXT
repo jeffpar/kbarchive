@@ -1,0 +1,75 @@
+DOCUMENT:Q125962  17-DEC-2000  [crossnet]
+TITLE   :TCP/IP-32 Using DHCP: Can't Override Default Gateway
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::3.11,3.11a,3.11b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft TCP/IP-32 for Windows for Workgroups, versions 3.11, 3.11a, 3.11b 
+ - Microsoft Windows for Workgroups 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If "Enable Automatic DHCP configuration" is selected when configuring a
+TCP/IP-32 client, three fields at the bottom of the screen still allow values to
+be entered. Any values added to these fields should over-ride the associated
+DHCP parameters. However:
+
+ - If the DHCP server provides an "Option 003 Router" address to the client, the
+   over-ride doesn't work properly.
+
+ - If the DHCP server does not provide an "Option 003 Router" address to the
+   client, and the default gateway field is filled out on the client, there will
+   be no default gateway.
+
+CAUSE
+=====
+
+TCP/IP-32 is ignoring the DefaultGateway parameter in SYSTEM.INI when DHCP is
+enabled.
+
+WORKAROUND
+==========
+
+The following route command may be executed on the client:
+
+   route add 0.0.0.0 MASK 0.0.0.0 <router_address>
+
+where <router_address> is the IP address of the default gateway.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in TCP/IP-32, TCP/IP-32a and
+TCP/IP-32b. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodtcp32 prodtcp 3.11 3.11a 3.11b wfw wfwg
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbTCPIPSearch kbWFWSearch kbZNotKeyword3 kbTCPIP311 kbTCPIP311a kbTCPIP311b
+Version           : :3.11,3.11a,3.11b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

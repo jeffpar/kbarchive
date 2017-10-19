@@ -1,0 +1,80 @@
+DOCUMENT:Q241143  08-AUG-2001  [winnt]
+TITLE   :Err Msg: Limited Virtual Memory. Your System Is Running...
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you create a pagefile on an alternate volume and restart your computer,
+you may receive the following error message:
+
+   Limited Virtual Memory. Your system is running without a properly sized
+   paging file. Please use the virtual memory option of the System applet in the
+   Control Panel to create a paging file, or to increase the initial size of
+   your paging file.
+
+The System tool shows a correct value for the pagefile you created, and an
+incorrect entry for the Pagefile.sys file (pointing towards a temporary
+pagefile) may be visible in Windows Diagnostics.
+
+CAUSE
+=====
+
+This behavior can occur if the system account does not have full control root
+permission.
+
+RESOLUTION
+==========
+
+To resolve this issue, verify that the system account has full control to the
+root and is not a member of a denied access group. The system account should
+have full control over the partition (this is the default).
+
+MORE INFORMATION
+================
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+   Q182086 How to Clear the Windows NT Paging File at Shutdown
+
+   Q197379 Configuring Page Files for Optimization and Recovery
+
+   Q123747 Moving the Windows NT Default Paging and Spool File
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbtool kbui 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

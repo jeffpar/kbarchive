@@ -1,0 +1,162 @@
+DOCUMENT:Q198549  14-NOV-2000  [word97]
+TITLE   :WD97: How to Add Rows to Invoice and Purchase Order Templates
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta kbtemplate word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article describes how to add rows to the Invoice.dot and Purchord.dot
+templates.
+
+NOTE: Word 97 Setup does not install the Invoice and Purchase Order templates. If
+you installed Word 97 from a compact disc, these and other templates are located
+in the ValuPack\Template\Word folder. To use them, copy them to your template
+folder (usually, C:\Program Files\Microsoft Office\Templates).
+
+MORE INFORMATION
+================
+
+To add rows to these templates, follow these steps:
+
+1. On the File menu, click Open.
+
+2. Open the template (Invoice.dot or Purchord.dot).
+
+3. On the Tools menu, click Unprotect Document.
+
+4. Position the insertion point in the last row of the table (the row just
+   before the Subtotal row).
+
+5. On the Table menu, click Select Row.
+
+6. On the Format menu, click Borders And Shading.
+
+7. On the Borders tab, use the Borders sample diagram to cancel the bottom
+   border selection.
+
+8. Click OK.
+
+9. With this row still selected, click Copy on the Edit menu.
+
+10. Select the Subtotal row. On the Edit menu, click Paste Rows.
+
+11. Double-click the Form field in the first cell (in the Quantity column).
+
+   The Text Form Field Options dialog box appears.
+
+12. In the Bookmark box, under Field Settings, type "Quantity_8" (without the
+   quotation marks). If you are adding more than one row, type the next
+   consecutive number.
+
+   In the Purchase Order template, there is also a Unit column. Double-click
+   this form field. Name the bookmark "Unit_8" (without the quotation marks).
+
+13. Double-click the form field in the next cell. In the Bookmark Name box, type
+   "Description_8" (without the quotation marks).
+
+14. Double-click the form field in the next cell. In the Bookmark Name box, type
+   "Price_8" (without the quotation marks).
+
+15. For the Invoice template, follow these steps:
+
+   a. Double-click the last form field.
+
+   b. Type "Amount_8" (without the quotation marks) for Bookmark Name.
+
+   c. The Default Number box shows:
+
+   =PRODUCT(A8,C8)
+
+      Change this to:
+
+   =PRODUCT(A9,C9)
+
+      These cell numbers represent the quantity and price for the current row.
+
+   For the Purchase Order template, follow these steps:
+
+   a. Double-click the last form field.
+
+   b. Type "Amount_8" (without the quotation marks) for Bookmark Name.
+
+   c. The Default Number box shows:
+
+   =PRODUCT(A8,D8)
+
+      Change this to:
+
+   =PRODUCT(A9,D9)
+
+      These cell numbers represent the quantity and price for the current row.
+
+   If you need to add more rows, repeat steps 9 through 15, incrementing the
+   bookmark number for all form fields for each consecutive row.
+
+16. If you do not want to add more rows, select the last row that you created,
+   and click Borders And Shading on the Format menu.
+
+17. In the Borders folder, use the Borders diagram to select the bottom border.
+
+18. Use the appropriate procedure for the template you are using.
+
+   For the Invoice template:
+
+   a. Double-click the Total Due form field.
+
+   b. Modify the calculation by adding the number of rows that have been added
+      to the existing values. If you added two rows, then add two to the
+      numbers, for example:
+
+   =SUM(D11,D12,D13)
+
+   For the Purchase Order template:
+
+   a. Double-click the Total Due form field.
+
+   b. Modify the calculation by adding the number of rows that have been added
+      to the existing values. If you added two rows, then add two to the
+      numbers, for example:
+
+   =SUM(E11,E12,E13,E14)
+
+19. On the Tools menu, click Protect Document. In the Protect Document For area,
+   click Forms. Click OK.
+
+20. Click the Save button. Close the file.
+
+The template will contain additional rows.
+
+Additional query words: bad parameter wordbasic error err msg templates wizards winword kbhowto 8.0 8.00
+
+======================================================================
+Keywords          : kbdta kbtemplate word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

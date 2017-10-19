@@ -1,0 +1,78 @@
+DOCUMENT:Q149402  11-DEC-1999  [foxpro]
+TITLE   :PRB: F1 Key Does Not CLEAR READ in Visual FoxPro for Windows
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a READ command is in effect in FoxPro 2.x for Windows or FoxPro 2.x for
+MS-DOS at the time the F1 key is pressed, the READ command clears. Otherwise, by
+default, pressing the F1 key invokes Help. The F1 key doesn't perform a CLEAR
+READ command in Visual FoxPro for Windows under the same circumstances.
+
+WORKAROUND
+==========
+
+You'll need to modify applications written in FoxPro 2.x for Windows or FoxPro
+2.x for MS-DOS that depend on the F1 function key to perform a CLEAR READ
+command to make them do the same thing in Visual FoxPro for Windows.
+
+Use an ON KEY LABEL assignment to force the F1 key to perform a CLEAR READ
+command. For example, add the following line to the beginning of the program
+listed in the "More Information" section, and run the program again:
+
+      ON KEY LABEL F1 CLEAR READ
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create and run the following program:
+
+      cMytest=""
+      DEFINE WINDOW test FROM 1,1 TO 10,20
+      ACTIVATE WINDOW test
+      @ 2,1 GET cMytest SIZE 1,10
+      READ
+
+2. Press the F1 key, and Help will pop up.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

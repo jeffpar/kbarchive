@@ -1,0 +1,75 @@
+DOCUMENT:Q281444  12-NOV-2001  [msnetwork]
+TITLE   :How to use Instant Messaging with MSN Companion
+PRODUCT :The Microsoft Network
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The customer wants to download AOL Instant Messenger chat and use it to chat
+with others. MSN Companion does not currently support file downloads of
+applications--including AOL Instant Messenger. Customers can instead use MSN
+Messenger from within the MSN Companion interface.
+
+MORE INFORMATION
+================
+
+ - Customers can use MSN Messenger and MSN Companion to communicate with others
+   by following the below procedure.
+
+ - To use Messenger with MSN Companion
+
+1. Log on to MSN Companion.
+
+2. Click the Messenger button at the bottom of the page.
+   The instant messaging conversation page appears.
+
+3. Click the open address book link.
+
+4. On the my address book page, select add a new person.
+
+5. Type the new person's name and e-mail address, select set this person up for
+   instant messaging and then click add.
+   The helper prompt will appear and ask the customer to "please wait while the
+   person is added to the address book". Next, the "set up for instant messaging
+   page" appears.
+
+6. Click the send invitation button.
+   The new contact has been added and the my address book page appears. The
+   customer can now proceed elsewhere in MSN Companion. The customer will be
+   notified when the new person becomes available for instant messaging; at this
+   time a pop-up message will appear stating that the contact is online.
+
+
+Additional query words: kbimu
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbMSNSearch kbMSNCompanion
+Version           : :1.0,2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

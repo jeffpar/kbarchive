@@ -1,0 +1,53 @@
+DOCUMENT:Q103546  18-MAY-2001  [msdos]
+TITLE   :Interactive Boot Displays AUTOEXEC.BAT Messages Twice
+PRODUCT :Microsoft Disk Operating System
+PROD/VER::6.2,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+You can use the /Y parameter with MS-DOS 6.2 COMMAND.COM to interactively
+process any batch file. (The /Y parameter is ON by default for AUTOEXEC.BAT
+when performing an interactive boot). The following list includes some of
+the behaviors that using the /Y parameter produces:
+
+ - If you have ECHO ON, each line is displayed twice. To avoid this, add ECHO
+   OFF as the first line of your AUTOEXEC.BAT file and press Y when you are
+   prompted to process that line.
+
+ - When a batch file line is displayed for prompting, replaceable parameters
+   (%1, %2, and so forth) and environment variables are already replaced with
+   their values. This can be useful for debugging batch files.
+
+ - You can easily prompt for user input without using the CHOICE command. For
+   example, if a batch file includes "command /y /c scandisk /all," you are
+   prompted with "scandisk /all (Y/N)?"
+
+Additional query words: 6.20 tcpip netbt
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620
+Version           : :6.2,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,73 @@
+DOCUMENT:Q236434  22-JUN-2001  [exchange]
+TITLE   :XCLN: You Do Not Have a Valid Microsoft Exchange Offline Store
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 98 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use Outlook 98, you may not be able to configure offline folders. If you
+click Services on the Tools menu, click Exchange Server Service, click Advanced,
+and then click the Offline Folders tab to configure the offline folders, the
+following error message is displayed:
+
+   You do not have a valid Microsoft Exchange Offline store provider.
+
+CAUSE
+=====
+
+This problem can be caused by an incorrect version of the Exchange Server
+service files, specifically, the Mspst32.dll file.
+
+RESOLUTION
+==========
+
+To resolve this problem, perform one of the following steps:
+
+ - Rename the Mspst32.dll file, and then reinstall Outlook 98.
+
+ - Rename the Mspst32.dll file, and then copy the file from a working computer
+   that has the same operating system as the computer that is experiencing this
+   problem. There is a version of this file for Microsoft Windows NT clients and
+   a version for Microsoft Windows 95 and Microsoft Windows 98 clients.
+
+ - Apply the Outlook 98 Archive Patch, which contains a version of the
+   Mspst32.dll file. The updated file is not necessary to resolve this problem,
+   but the patch contains the affected file and may be more convenient to
+   install. The patch is available for download at the following Web address:
+
+   http://office.microsoft.com/downloads/9798/arch98en.aspx
+
+Additional query words: outlook;offline folders OL98
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook98Search kbZNotKeyword3
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,59 @@
+DOCUMENT:Q93441  30-JUL-2001  [lanman]
+TITLE   :Microsoft TCP/IP 2.1a with Windows for Workgroups
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+On page E-5 of the Microsoft Windows for Workgroups "Resource Kit" version 3.1
+manual, the device driver name in the [ms$tcp] section of the PROTOCOL.INI file
+is incorrectly shown in lowercase letters:
+
+[ms$tcp]
+  ...
+  drivername=tcpip$
+
+The drivername should be uppercase, as follows:
+
+[ms$tcp]
+  ...
+  drivername=TCPIP$
+
+MORE INFORMATION
+================
+
+If you do not use uppercase letters for drivername, TCPDRV.DOS fails to
+initialize in CONFIG.SYS, with no explanation.
+
+LAN Manager 2.2 includes a protocol disk in Windows for Workgroups format, so you
+can ignore the NDIS transport protocol integration procedure described in the
+"Microsoft Windows for Workgroups Resource Kit."
+
+Reference(s):
+
+Microsoft Windows for Workgroups "Resource Kit," version 3.1, Appendix E
+
+Additional query words: wfw wfwg 2.10 doc err ntdocerr
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

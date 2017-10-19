@@ -1,0 +1,224 @@
+DOCUMENT:Q189126  18-DEC-2001  [techinfo]
+TITLE   :Microsoft's Policy Regarding Missing or Invalid Passwords
+PRODUCT :Microsoft Product Support Information
+PROD/VER::2.x,3.x,4.0,4.0a,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 2.x, 3.x 
+ - Microsoft Word 2000 
+ - Microsoft Excel 
+ - Microsoft Access 
+ - Microsoft Project 
+ - Microsoft Exchange 
+ - Microsoft PowerPoint 2000 
+ - Microsoft Outlook 2000 
+ - Microsoft Outlook 98 
+ - Microsoft Outlook 97 
+ - Microsoft SQL Server 2000 (all editions) 
+ - Microsoft Visual SourceSafe, 16-bit, for Windows, versions 4.0, 4.0a, 5.0 
+ - Microsoft Visual SourceSafe, 32-bit, for Windows versions 4.0, 4.0a, 5.0, 6.0 
+ - Microsoft Internet Explorer version 6 for Windows 2000 
+-------------------------------------------------------------------------------
+
+
+
+SUMMARY
+=======
+
+In many of the programs listed at the beginning of this article, you can prevent
+unauthorized users from opening a file by applying a password to the file. When
+you attempt to open the file, the program requests the password; if you do not
+enter the correct password, you are unable to open the file.
+
+Also, there are certain features within these programs to which you can apply
+passwords. For example, you can password-protect a project in the Visual Basic
+Editor in the programs included in Microsoft Office 97 and Microsoft Office 98
+Macintosh Edition.
+
+This article explains Microsoft's policy regarding missing or invalid passwords.
+
+MORE INFORMATION
+================
+
+
+Microsoft has added password protection to the programs listed at the beginning
+of this article so that you can prevent unauthorized access to important
+information. For this reason, if you are unable to access information because
+you do not know the correct password,
+
+MICROSOFT ENGINEERS CANNOT ASSIST, UNDER ANY CIRCUMSTANCES, IN THE BREAKING OF
+PASSWORDS APPLIED TO FILES AND FEATURES WITHIN MICROSOFT PROGRAMS.
+
+
+It is technically not possible for Microsoft engineers to break the password on a
+password-protected file or feature within a Microsoft program. The
+password-protection systems built into Microsoft programs are designed to be
+unbreakable; there would be no point in including a password-protection system
+that could be broken.
+
+If you are unable to open a file that is protected with a password, follow the
+steps in the "If Your Password Isn't Working" section, below. If you are still
+unable to open the file, Microsoft engineers cannot assist you. However, you may
+be able to obtain assistance from a third-party password breaker.
+
+Note that you may want to read the remainder of this article for suggestions
+about how to effectively use passwords in the future.
+
+If Your Password Isn't Working
+------------------------------
+
+In all of the programs listed at the beginning of this article, passwords applied
+to files are case-sensitive. For example, the following passwords are all
+different
+
+   hello
+   Hello
+   HELLO
+
+because the letters are in different cases in each password.
+
+A common problem that occurs when you enter a password is to use the incorrect
+case for one or more of the letters in the password. If your password is not
+accepted, try the following:
+
+ - Press the CAPS LOCK key, and then enter the password again. If you remember
+   holding down the SHIFT key when you originally applied the password, make
+   sure you press the SHIFT key as appropriate, even if the CAPS LOCK key has
+   been pressed.
+
+ - Enter the password using different combinations of upper- and lower- case
+   characters. For example, if the password "hello" is not working, try "Hello".
+
+ - If someone else provided you with the file, check with that person to see if
+   he or she still has the password.
+
+If none of these suggestions work, you may want to take a look at the following
+articles in the Microsoft Knowledge Base:
+
+   Q84545 WD: Can't Recover Password-Protected Document If Password Lost
+
+
+Third-Party Password Breakers
+-----------------------------
+
+There are third-party companies who claim to be able to break passwords that have
+been applied to files and features used by Microsoft programs.
+
+For legal reasons, Microsoft cannot recommend or endorse any of these companies.
+If you require assistance in the breaking of a password, you may, at your own
+risk, locate and contact a third-party company who can provide you with such
+assistance.
+
+
+Protecting Yourself Against Password Loss
+-----------------------------------------
+
+If you are finally able to open the file, you may want to apply one or more of
+the following suggestions to make sure that the problem does not occur again:
+
+ - Change your passwords so that they are easier to remember. For example,
+   "ty65dr58geT" is hard to remember. "Pyramid5" is easy to remember, but still
+   a valid password.
+
+ - If you have a secure location, such as a safe or a safety deposit box, you
+   may want to store a written copy of your passwords there.
+
+ - Also, you can save unprotected copies of your files to a floppy disk,
+   removable hard disk, or other external storage device, and then store the
+   disk in a secure location.
+
+Password Recommendations
+------------------------
+
+When you apply passwords to files or features within Microsoft programs, you may
+want to use one or more of the following suggestions to increase the security of
+your files:
+
+ - Don't use words that are in the dictionary as passwords. Instead, use two or
+   more words joined together. Or, use a combination of words and numbers. For
+   example, instead of "dog", use "dogcat" or "dog5".
+
+ - Don't use personal information, such as names of family members or pets, your
+   date of birth, social security number, or other similar information as part
+   of a password. Since such information may be public, you should not use it in
+   a password, even in combination with other characters.
+
+ - Use a combination of upper- and lower-case letters in your passwords. Since
+   passwords are case-sensitive, you may be able to prevent a break- in if
+   someone else hears, as opposed to sees, your password.
+
+ - Passwords should usually be at least six characters in length.
+
+ - Don't use obvious passwords like "password", "guest", "user", or "admin".
+
+Employees and Passwords
+-----------------------
+
+A problem occurs when either of the following are true:
+
+ - One of your employees left your company. The employee used a number of files,
+   some of which were/are password-protected. Now, the employee is gone, and you
+   do not know the passwords for the files.
+
+   -or-
+
+ - Prior to their departure/dismissal from your company, a disgruntled employee
+   applied passwords to some of your files. Now, you are unable to open the
+   files, and the employee refuses to reveal the passwords to you.
+
+If either of these problems occur, remember that Microsoft engineers cannot
+assist you in the breaking of passwords applied to the files.
+
+To help prevent these problems from occurring:
+
+ - When employees leave your company, make sure that they either remove all
+   passwords from their files or provide you with a complete list of all of
+   their passwords. Also, make sure that you maintain correct contact
+   information for the employees, so that you can get in touch with them should
+   a password not work correctly.
+
+ - To protect your files from deliberate, malicious password application, make
+   sure that you keep backup copies of all of your files. You should make backup
+   copies of critical files on a daily basis; other files may be backed up as
+   required.
+
+ - If you store your files on a Windows NT server, you can quickly suspend an
+   employee's access to the server, thereby preventing the employee from making
+   further changes to files. You can also prevent users from accessing files to
+   which they do not need access.
+
+A Note Regarding Microsoft PowerPoint
+-------------------------------------
+
+In Microsoft PowerPoint, you cannot apply a password to a presentation file; this
+feature does not exist in Microsoft PowerPoint. However, in later versions of
+Microsoft PowerPoint, you can still apply a password to a Visual Basic project.
+
+Additional query words: workbooks worksheets documents databases presentations mail storage files PST projects forms schedules offline personal folders askmaxwell office
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbOSWin2000 kbWordSearch kbSSafeSearch kbSQLServSearch kbOutlookSearch kbIEsearch kbExcelSearch kbAudDeveloper kbAccessSearch kbPowerPtSearch kbIE600Search kbWord2000Search kbWord2000 kbZNotKeyword6 kbExchangeSearch kbExchangeClientSearch kbPowerPt2000 kbSQLServ2000Search kbZNotKeyword2 kbMailSearch kbPowerPt2000Search kbProjectSearch kbOutlook2000Search kbOutlook97Search kbOutlook98Search kbZNotKeyword3 kbIE2000Search kbIE600Win2000 kbSQLServ2000 kbMail3xSearch kbMail2xSearch kbSSafe600 kbSSafe400 kbSSafe400a kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch kbExcelWinSearch
+Version           : :2.x,3.x,4.0,4.0a,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

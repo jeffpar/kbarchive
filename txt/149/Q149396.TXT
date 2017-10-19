@@ -1,0 +1,69 @@
+DOCUMENT:Q149396  25-MAR-2002  [win95x]
+TITLE   :Cannot Change Expired Windows NT Password with DUN
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2
+OPER/SYS:
+KEYWORDS:kberrmsg kbpolicy dun win95 kbDialUpkbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 95 OEM Service Release, version 2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Dial-Up Networking to connect to a Microsoft Windows NT Remote
+Access Service (RAS) server and your password has expired, you are disconnected
+without an option to change the password.
+
+RESOLUTION
+==========
+
+
+STATUS
+======
+
+This problem no longer occurs in Windows 98. To resolve this problem, install
+the current version of Windows. For information about the current version of
+Windows, visit http://www.microsoft.com/windows.
+
+MORE INFORMATION
+================
+
+When you connect to a Windows NT RAS server with an expired password, you
+receive the following error message:
+
+   Password Expired. Contact your network administrator.
+
+When you click OK, you are disconnected.
+
+This behavior is by design. The updated files add the ability to change an
+expired password using the Windows 95 Dial-Up Networking client.
+
+
+Additional query words: domain account ppp chap
+
+======================================================================
+Keywords          : kberrmsg kbpolicy dun win95 kbDialUp kbfixlist
+Technology        : kbWin95search kbOPKSearch kbZNotKeyword3 kbWin95OPKOSR2
+Version           : :2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

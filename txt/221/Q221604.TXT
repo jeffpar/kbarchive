@@ -1,0 +1,67 @@
+DOCUMENT:Q221604  11-JAN-2001  [vbwin]
+TITLE   :INFO: Known Issues with Internet Explorer 5 and Visual Basic 6.0
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbIE kbVBp kbVBp600 kbGrpDSVB kbie500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+ - Microsoft Internet Explorer (Programming) version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual Basic 6.0 may be used safely with Internet Explorer 5.0 with one
+exception, which is detailed as below.
+
+MORE INFORMATION
+================
+
+The main issue is that Internet Explorer 5 separates the typelib into a separate
+.tlb (Mshtml.tlb) file to reduce the memory footprint. This has the following
+impact:
+
+ - Developers who develop using Internet Explorer 5 can only distribute Page
+   Designer applications to systems where Internet Explorer 5 is installed.
+
+ - Developers who develop using Internet Explorer 4 can distribute Page Designer
+   applications to systems where either Internet Explorer 4 or Internet Explorer
+   5 are installed.
+
+Thus, when distributing an Internet Explorer 5 Page Designer Application using
+the Package and Deployment Wizard, you will receive a warning message stating
+that "there is no dependency information for Mshtml.tlb." This warning can
+safely be ignored and Mshtml.tlb can be removed from your distribution package.
+The application will work properly on a system with Internet Explorer 5
+installed.
+
+Additional query words: PDW
+
+======================================================================
+Keywords          : kbIE kbVBp kbVBp600 kbGrpDSVB kbie500 
+Technology        : kbVBSearch kbIEsearch kbAudDeveloper kbZNotKeyword6 kbSDKIESearch kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

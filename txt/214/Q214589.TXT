@@ -1,0 +1,49 @@
+DOCUMENT:Q214589  12-APR-2001  [homegame]
+TITLE   :Close Combat III: Difficulty Settings Slider Balances Forces
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbui kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Close Combat III: The Russian Front 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Difficulty Settings slider in Microsoft Close Combat III: The Russian Front
+also acts to balance the opposing forces. As a result, when you set the
+Difficulty Setting for the Player or the Host, the Difficulty Setting for the
+Computer or the Client is set automatically.
+
+This behavior is most evident in head-to-head play: when the Host chooses a
+Difficulty Setting of Hero, the Difficulty Setting for the Client is set
+automatically to Recruit.
+
+Additional query words: 1.00 msgame closecombat russianfront cc3 cciii
+
+======================================================================
+Keywords          : kbui kbimu msgame kbfaq
+Technology        : kbHomeProdSearch kbGamesSearch kbCloseCombatSearch kbCloseCombat3
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

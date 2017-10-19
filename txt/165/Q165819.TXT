@@ -1,0 +1,54 @@
+DOCUMENT:Q165819  13-FEB-1999  [winnt]
+TITLE   :Error 3 -- The Specified Path Could Not Be Found
+PRODUCT :Microsoft Windows NT
+PROD/VER:MSDOS:3.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbother
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Network Client for MS-DOS version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You are running Microsoft Network Client for MS-DOS on a computer running MS-DOS
+from a diskless workstation (for example, you start the computer with a disk in
+drive A), and you receive the following error message during startup:
+
+   Error 3 -- The specified path could not be found. An error occurred accessing
+   the Security-Settings file.
+
+RESOLUTION
+==========
+
+Check the System.ini file on the disk for entries that reference drive C, in
+particular lanroot= in the [network] section and devdir= in the [network
+drivers] section. Change these references to reflect drive A instead of drive C.
+Save the file and restart the computer with the disk in the drive.
+
+Additional query words: err msg errmsg
+======================================================================
+Keywords          : kbnetwork kbother 
+Technology        : kbAudDeveloper kbZNotKeyword kbNetworkClientSearch kbNetworkClient300DOS
+Version           : MSDOS:3.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

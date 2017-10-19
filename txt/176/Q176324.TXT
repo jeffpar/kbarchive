@@ -1,0 +1,75 @@
+DOCUMENT:Q176324  26-JUL-2001  [crossnet]
+TITLE   :RAS Service Disabled during H/PC Explorer Connectivity
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::1.0,4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbinterop kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE, version 1.0 
+ - Microsoft H/PC Explorer, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to connect your Microsoft Windows CE computer to a Microsoft
+Windows NT Remote Access Service (RAS) Server, you may receive the following
+error message from Microsoft H/PC Explorer:
+
+   Cannot start communications services. The Remote Access Service (RAS) is
+   failing to start for an unknown reason. Close all applications, disconnect
+   the H/PC serial cable and restart the desktop PC. If this error continues to
+   occur, consult the Communications Troubleshooter topic in the Troubleshooting
+   section of H/PC Explorer help.
+
+CAUSE
+=====
+
+The user with which you are attempting to connect does not have administrative
+rights on the local computer running Windows NT.
+
+WORKAROUND
+==========
+
+To correct the setup so you will no longer receive the above error message,
+perform one of the following:
+
+ - Give user(s) administrative privileges for their computers running Windows
+   NT.
+
+-or-
+
+ - Add domain user(s) to the Power Users group on the local workstations running
+   Microsoft H/PC Explorer.
+
+For additional information on RAS permission issues, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q153716 Permissions Required to Perform RAS Administration
+
+Additional query words: windowsce
+
+======================================================================
+Keywords          : kberrmsg kbinterop kbnetwork 
+Technology        : kbOSWinCE kbZNotKeyword kbWinCESearch kbWinCE100 kbHPCExplorer
+Version           : :1.0,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

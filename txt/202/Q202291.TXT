@@ -1,0 +1,68 @@
+DOCUMENT:Q202291  09-MAR-1999  [sms]
+TITLE   :SMS: Remote Control Agent Takes Heavy CPU Use If Logging Enabled
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms120 kbsms120bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows NT clients may notice slow response to their desktop when the SMS 2.0
+Remote Control Agent has been set up to do detailed logging to file. Turning on
+detailed-level logging for the Remote Control Agent uses significant CPU
+cycles.
+
+Note: This level of logging is not turned on by default. The default level of
+logging for the Remote Control Agent does not impact system performance.
+
+WORKAROUND
+==========
+
+Turn on logging to the Remote Control Agent only for troubleshooting purposes.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+MORE INFORMATION
+================
+
+For additional information about expected CPU utilization during a remote
+control session, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q198635 SMS: Expected CPU Utilization During a Remote Control Session
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms120 kbsms120bug 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

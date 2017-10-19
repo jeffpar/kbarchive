@@ -1,0 +1,84 @@
+DOCUMENT:Q223166  18-JUN-2001  [vbwin]
+TITLE   :PRB: "Error 7 - Out of Memory " When Loading Books Online
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:5.0,97
+OPER/SYS:
+KEYWORDS:kbCmnCtrls kbVBp500 kbVS97 kbDevStudio kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error message appears when you attempt to load Books Online:
+
+   Error 7 - Out of Memory
+
+CAUSE
+=====
+
+Books Online is attempting to use an older version of one of the following
+files:
+
+Control                                       File Name      Version Number
+---------------------------------------------------------------------------
+Windows Common Controls ActiveX Control DLL   comctl32.ocx   5.0.37.14
+Common Dialog ActiveX Control                 comdlg32.ocx   5.0.37.14
+Microsoft OLE Property Support DLL            olepro32.dll   5.0.4055.1
+
+Older versions of these files may be installed by other software programs, such
+as the software included with IOMEGA Zip drives or Jaz drives. The correct
+versions of these files should be installed in your system directory.
+
+RESOLUTION
+==========
+
+Unregister these files using REGSVR32 with the /U option and then register the
+correct versions in your system directory.
+
+MORE INFORMATION
+================
+
+To prevent ActiveX control conflicts such as this from occurring, remove all
+other copies of these files from directories other than the system directory.
+Your system directory should contain the latest versions of ActiveX controls.
+Register the versions in your system directory.
+
+REFERENCES
+==========
+
+For additional information about REGSVR32, please see the following article in
+the Microsoft Knowledge Base:
+
+Q198038 INFO: Useful Tools for Package and Deployment Issues
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCmnCtrls kbVBp500 kbVS97 kbDevStudio kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB500
+Version           : WINDOWS:5.0,97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

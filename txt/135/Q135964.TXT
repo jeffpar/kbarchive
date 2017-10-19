@@ -1,0 +1,80 @@
+DOCUMENT:Q135964  18-DEC-2000  [win95x]
+TITLE   :General Protection Fault Error Message Running ScanDisk
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run ScanDisk, you may receive the following error message:
+
+   SCANDSKW
+   This program has performed an illegal operation and will be shut down.
+
+If you click Details, you see the following information:
+
+   SCANDSKW caused a general protection fault in module KRNL386.EXE at...
+
+CAUSE
+=====
+
+This error can occur if the Dskmaint.dll file in the Windows\System folder is
+damaged.
+
+RESOLUTION
+==========
+
+To resolve this problem, extract a new copy of the Dskmaint.dll file from the
+Plus_2.cab file. To do so, follow these steps:
+
+1. Restart your computer in MS-DOS mode.
+
+2. Change to the Windows\System directory.
+
+3. Type the following line at the MS-DOS command prompt
+
+   " extract <drive>:\plus_2.cab dskmaint.dll " (without the quotation
+   marks)
+
+   where <drive> is the drive letter of the CD-ROM drive containing the
+   Microsoft Plus! CD-ROM, or of the floppy disk drive containing disk 2 of the
+   original Microsoft Plus! disks.
+
+4. Restart your computer normally.
+
+MORE INFORMATION
+================
+
+If you do not have Microsoft Plus! installed, extract the Dskmaint.dll file from
+the Precopy2.cab file on your original Windows 95 disks or CD-ROM.
+
+======================================================================
+Keywords          : kberrmsg kbtool win95 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

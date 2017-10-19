@@ -1,0 +1,80 @@
+DOCUMENT:Q174070  09-AUG-2001  [winnt]
+TITLE   :Registry Replication in Microsoft Cluster Server
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Cluster Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Cluster Server (MSCS) provides the ability to replicate designated
+registry keys as associated with a Generic Service or Generic Application
+resource types.
+
+MORE INFORMATION
+================
+
+MSCS provides the ability for Generic Service and Generic Application resource
+types to specify registry keys below HKEY_LOCAL_MACHINE that should be
+replicated to all nodes in the cluster.
+
+Some services or applications may update registry information while they are
+running by use of Win32 registry functions. MSCS provides registry checkpointing
+for noncluster aware applications that may use these functions. Registry
+checkpointing for these resources occurs under the following conditions:
+
+ - When you specify a new registry key for the resource, the specified key is
+   checkpointed.
+
+ - When the resource goes online, the registry keys are updated with the
+   previously checkpointed information.
+
+ - When the resource is brought offline, all the checkpoints associcated with
+   this resource are saved.
+
+ - When the resource is online and changes are made to the registry key which is
+   registered with the cluster server for replication, MSCS ensures that the
+   updates are written to a checkpoint maintained on the quorum device.
+
+If you manually update these registry keys while the application or service is
+offline, the changes may not be replicated or may be lost. To prevent this from
+happening, make any manual changes while the service or application resource is
+online.
+
+Cluster aware applications should make use of cluster registry functions as
+provided in the cluster API set when working with registry keys under
+HKEY_LOCAL_MACHINE\Cluster. Consult the MSCS Software Development Kit (SDK) for
+more information on this topic.
+
+Additional query words: cluster registry replication MSCS
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbAudDeveloper kbClustServSearch
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

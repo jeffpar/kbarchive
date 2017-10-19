@@ -1,0 +1,75 @@
+DOCUMENT:Q107473  29-SEP-1999  [win3x]
+TITLE   :WFWG 3.11 Err Msg: Access Denied
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive one of the following error messages when you try to copy files
+when 32-bit file access enabled:
+
+ - Access Denied
+
+   -or-
+
+ - Sharing Violation
+
+CAUSE
+=====
+
+These errors may occur when you are using 32-bit file access and trying to copy
+files in Microsoft Windows for Workgroups, especially if there is a low-memory
+situation. These errors occur because 32-bit file access is not handling the
+error messages correctly.
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+ - Disable 32-bit file access.
+
+   -or-
+
+ - Increase the amount of memory available to Windows.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows for Workgroups
+version 3.11. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 3.11 error message insufficient memory access is denied
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

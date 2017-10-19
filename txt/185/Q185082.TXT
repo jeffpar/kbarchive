@@ -1,0 +1,81 @@
+DOCUMENT:Q185082  14-NOV-2000  [word97]
+TITLE   :WD97: How to Rotate or Flip Clip Art
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbgraphic kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After you insert a Windows Metafile (.wmf) or a Computer Graphics Metafile
+(.cgm) into a Word document, the Rotate and Flip commands on the Draw menu of
+the Drawing toolbar are unavailable.
+
+CAUSE
+=====
+
+The object is not an inline, ungrouped object.
+
+RESOLUTION
+==========
+
+To resolve this problem, follow these steps:
+
+1. Follow these steps to make sure the clip art is an inline object:
+
+   a. Click to select the picture.
+
+   b. On the Format menu, click Picture, and then click Position.
+
+   c. Click to select the "Float Over Text" check box, and then click OK.
+
+2. Follow these steps to ungroup and group the elements of the picture:
+
+   a. Click to select the picture.
+
+   b. On the Drawing toolbar, click Draw.
+
+   c. Click Ungroup.
+
+   d. On the Drawing toolbar, click Draw.
+
+   e. Click Group.
+
+The Rotate and Flip commands on the Draw menu of the Drawing toolbar will be
+available.
+
+NOTE: To rotate or flip the object, make sure the object is selected. Click on
+the rotate or flip button and then hold down the left mouse button and drag the
+object.
+
+Additional query words: rotated
+
+======================================================================
+Keywords          : kbgraphic kbdta 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

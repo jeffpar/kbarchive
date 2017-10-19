@@ -1,0 +1,103 @@
+DOCUMENT:Q279147  02-MAY-2001  [msnetwork]
+TITLE   :Password Reset For MSN Explorer "msn.com" E-mail Accounts
+PRODUCT :The Microsoft Network
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article includes instructions for helping users of MSN Explorer Version 1.0
+to change the passwords on "msn.com" e-mail accounts. The article applies to the
+following types of users:
+
+ - Users have a secret question that they can use to retrieve a password.
+
+ - Users who do not have a secret question that they can use to retrieve a
+   password.
+
+MORE INFORMATION
+================
+
+ - To retrieve or change a password for MSN Explorer "msn.com" e-mail if the
+   user has a secret question
+
+1. Click the MSN Explorer icon.
+
+2. Click the "Forgot Password" option in the upper right corner of the screen.
+
+3. Type the e-mail name, state, and zip code, and then click "Continue".
+
+4. On the next screen, type the answer to the secret question.
+
+5. Type the new password in the appropriate cell.
+
+6. Type the new password again, in the "re-enter password" cell to confirm it.
+
+7. Click "Continue" to update the password information
+
+From the sign on screen, select the user and sign in with the new password.
+
+ - To retrieve or change a password for MSN Explorer "msn.com" e-mail if the
+   user does not have a secret question
+
+1. Send an e-mail message requesting help with resetting a password to:
+   ResetPword@msn.com.
+
+2. In the "Subject" box, type: PW VERIFICATION INFO ENCLOSED
+
+3. Provide the following information.
+    - Name (first and last)
+
+    - MSN Member name
+
+    - Birthdate
+
+    - Country/region
+
+    - State
+
+    - Zip or postal code
+
+    - Approximate date of the last time the MSN password was updates, or the
+      approximate date of the account registration.
+
+   If the user provides all of the requested information and the information is
+   correct, MSN will reset the password and send the password by e-mail to the
+   user.
+
+   Note: Instruct users to change their account password as soon as they get
+   access to the Internet again.
+
+
+Additional query words: kbimu; MSN Version 6.0; Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN600
+Version           : :6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

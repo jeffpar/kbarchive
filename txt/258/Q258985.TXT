@@ -1,0 +1,75 @@
+DOCUMENT:Q258985  27-OCT-2000  [msnetwork]
+TITLE   :How to Turn Off The Microsoft Network 5.x
+PRODUCT :The Microsoft Network
+PROD/VER::5.0,5.1,5.2,5.3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN versions 5.0, 5.1, 5.2, 5.3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains why MSN 5.x cannot be uninstalled, and how it can be
+turned off.
+
+MORE INFORMATION
+================
+
+MSN 5.x is built on the same codebase as Windows 98 SE and ME releases, and was
+not designed to be uninstalled like other software applications.
+
+However, when you turn MSN off, the software removes everything but the desktop
+icon and the setup and installation files. Because of this, if you want to use
+MSN again, all you need to do is double-click the desktop icon. The setup screen
+will display and you will not need the CD to reinstall.
+
+MSN 5.x is intentionally easy to disable and enable. If a you have a problem with
+a corrupted file, turning off and then reinstalling the software may fix the
+problem.
+
+To turn MSN off, use the following step:
+
+1. Click the MSN Quick View icon in the Task Tray.
+
+2. Select MSN Options.
+
+3. Then click Turn MSN Off.
+
+To reinstall or turn on MSN double-click the MSN icon on the desktop and follow
+the instructions.
+
+Note: Turning off MSN on your computer does not cancel your MSN account. To
+cancel your account go to http://memberservices.msn.com/us/uscancel.htm
+
+See also the FAQ How do I uninstall or turn off MSN? at
+http://memberservices.msn.com/supportandhelp/msnfaqs/Faq/Msnia/Tech/How/How14.htm
+
+Additional query words: uninstall kbimu
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN520 kbMSN530 kbMSN510 kbMSN500
+Version           : :5.0,5.1,5.2,5.3
+Issue type        : kbhowto kbprb kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

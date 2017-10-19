@@ -1,0 +1,62 @@
+DOCUMENT:Q170857  02-MAY-1999  [iis]
+TITLE   :Error Message: HTTP/1.0 403 Access Forbidden
+PRODUCT :Internet Information Server
+PROD/VER:WinNT:2.0,3.0
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to access the Internet Information Server (IIS) from a browser, you
+may get the following error message:
+
+   HTTP/1.0 403 Access Forbidden
+
+CAUSE
+=====
+
+If the Directory Browsing Allowed option is clear (not selected) in Internet
+Service Manager WWW Service Properties Directories, and the Enable Default
+Document option is selected, you will get the above error message.
+
+Also, the default document listed has a different name than the actual default
+document file, for example, the default document name listed is Default.htm, and
+the actual file is Default.html.
+
+WORKAROUND
+==========
+
+Select the Directory Browsing Allowed option, or modify either the default
+document name listed in Internet Service Manager or the actual default document
+file name to ensure that they match.
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbiisSearch kbiis300 kbiis200
+Version           : WinNT:2.0,3.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

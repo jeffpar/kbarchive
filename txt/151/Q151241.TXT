@@ -1,0 +1,70 @@
+DOCUMENT:Q151241  28-MAR-1999  [exchange]
+TITLE   :XCLN: How to Work with Public Folders Offline
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 3.x client, version 4.0 
+ - Microsoft Exchange Windows NT client, version 4.0 
+ - Microsoft Exchange Windows 95/98 client, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use Microsoft Exchange clients, you may have to work with Microsoft
+Exchange Public Folders in offline mode. This article describes the steps to set
+up this functionality.
+
+MORE INFORMATION
+================
+
+1. Confirm that you have Offline Folders enabled in the Microsoft Exchange
+   Windows client (Click Services on the Tools menu. Select Microsoft Exchange
+   Server and Advanced. Then select Offline Folder File Settings... and confirm
+   that Offline Use is enabled.
+
+2. Copy the Public Folder you want to use to the Favorites folder.
+
+3. Choose the properties of the folder in your Favorites folder, and select the
+   Synchronization tab.
+
+4. When you get the following dialog box
+
+      This folder is available.
+
+   Select When Offline or Online. Then select the OK button.
+
+5. Select the folder. Click Synchronize on the Tools menu. Then select This
+   Folder.
+
+The folder is now configured for offline use.
+
+Additional query words: Outlook
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT kbExchange400Win95
+Version           : WINDOWS:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

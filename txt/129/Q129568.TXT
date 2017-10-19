@@ -1,0 +1,64 @@
+DOCUMENT:Q129568  16-SEP-1999  [schedplus]
+TITLE   :PC WSPlus: Schedule+ Libraries Won't Work on 32 Bit Schedule+
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+1.00 1.00a
+WINDOWS
+kbinterop
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Libraries for Schedule+ contain several functions that are available
+in the dynamic-link library SPLUS.DLL. These libraries allow the developer to
+automate and customize Schedule+.
+
+The SPLUS.DLL file is only available in a 16-bit version suitable for Microsoft
+Schedule+ 1.0a (16-bit version).
+
+MORE INFORMATION
+================
+
+Windows NT provides a 32-bit Mail client and a 32-bit Schedule+ client. Windows
+NT does not provide a 16-bit version of SPLUS.DLL to thunk the 16- bit Schedule+
+library calls to the various 32-bit Schedule+ dynamic-link libraries. If you
+attempt to run applications that use Schedule+ Library calls (SPLUS.DLL) on a
+32-bit Schedule+ environment, it will cause unexpected results in the calling
+application.
+
+For users running Windows NT, one solution is to run the 16-bit versions of Mail
+and Schedule+ exclusively, in order for the applications that make calls to
+SPLUS.DLL to function properly.
+
+Additional query words: schedule plus 1.00 1.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100 kbSchedule100a
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

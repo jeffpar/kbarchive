@@ -1,0 +1,70 @@
+DOCUMENT:Q135337  30-AUG-2001  [foxpro]
+TITLE   :PRB: Run-Time Error R6915 - DOSX16: Unhandled Exception
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Help Compiler (HC31.EXE or HC35.EXE) that comes with Visual FoxPro and
+FoxPro for Windows version 2.6 Professional Edition can, on occasion, return an
+error not documented by the Help Compiler. The error is:
+
+   Run-Time error R6915 - DOSX16: Unhandled Exception
+
+CAUSE
+=====
+
+This error is caused by the configuration of the computer. It may be a memory
+conflict or a device driver or TSR (Terminate and Stay Resident) program.
+
+RESOLUTION
+==========
+
+The solution to the problem is to "clean boot" the computer. This means
+restarting the computer with a minimal CONFIG.SYS and AUTOEXEC.BAT and removing
+all unnecessary drivers and TSRs from the AUTOEXEC.BAT file.
+
+MORE INFORMATION
+================
+
+For more information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q111263 PRB: Causes of DX1020 or R6915 Unhandled Exception Error
+
+
+   Q95314 How to Perform a "Clean Boot" for FoxPro
+
+
+Additional query words: 3.00 VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

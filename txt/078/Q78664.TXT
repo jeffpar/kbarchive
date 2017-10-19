@@ -1,0 +1,88 @@
+DOCUMENT:Q78664  22-NOV-1999  [msdos]
+TITLE   :Generating an Updated IPX.COM File for Novell Network
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.0; WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 5.0 
+ - Microsoft Windows 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+If you are upgrading to Microsoft MS-DOS 5.0 and using Windows 3.0 with a Novell
+network, you must use IPX.COM version 3.02a and NET5.COM version 3.1. Using
+Windows 3.0 without the updated files may produce a variety of problems with
+printing, enhanced mode operation, network operation, and Windows.
+
+MORE INFORMATION
+================
+
+To generate IPX.COM version 3.02a, do the following:
+
+1. Expand and rename the IPX.OB_ and NET5.CO_ files from the MS-DOS 5.0 disks
+   (disk 6 [5.25-inch set] or disk 3 [3.5-inch set]) to the appropriate
+   directory, as follows:
+
+      expand ipx.ob_ c:\ipx.obj
+      expand net5.co_ c:\net5.com
+
+2. If the customer owns NetWare DOS/Windows Workstation update (shell kit), go
+   to step 4.
+
+3. Copy the new IPX.OBJ file to the Novell disk labeled:
+
+      SHGEN-1 (NetWare 286)
+
+   -or-
+
+      WSGEN (NetWare 386)
+
+4. Copy the new IPX.OBJ to the Novell Windows workstation update disk labeled:
+
+      NetWare   DOS/Windows WORKSTATION
+
+5. Use the SHGEN (NetWare 286) or WSGEN (NetWare 386) program on this disk to
+   generate a new IPX.COM file. For more information about creating an IPX.COM
+   file or using the NET5.COM file, see the Novell documentation.
+
+6. Restart the Novell network using the updated IPX.COM and NET5.COM files.
+
+Novell NetWare and NetWare DOS/Windows Workstation are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+REFERENCES
+==========
+
+MS-DOS 5.0 README.TXT file, pages 12-13
+
+Additional query words: 5.00 noupd 3.00 3.0a 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbMSDOSSearch kbMSDOS500
+Version           : MS-DOS:5.0; WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

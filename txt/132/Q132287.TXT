@@ -1,0 +1,69 @@
+DOCUMENT:Q132287  17-DEC-2000  [win95x]
+TITLE   :3Com 3C509B ODI Driver Fails to Load in Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to load the ODI driver for the 3Com Etherlink III 3C509B Plug
+and Play network adapter, the driver fails to load or is unable to find the
+adapter at the specified I/O address. However, if you restart Windows 95 and
+choose "Safe mode command prompt only" from the Startup menu, you can load LSL
+and 3C5X9.COM without errors.
+
+CAUSE
+=====
+
+This problem can occur if Windows 95 sets the adapter to Plug and Play mode
+before the 3C5X9.COM driver is loaded. Because the 3C509B adapter is a Plug and
+Play adapter, Windows 95 attempts to enumerate the adapter along with the other
+Plug and Play devices on the system during the boot process. The enumeration
+process sets the adapter to Plug and Play mode, causing it to no longer maintain
+its manually specified hardware settings. This causes the driver to fail to
+locate the adapter.
+
+RESOLUTION
+==========
+
+To resolve this problem, use the 3C509B configuration utility to disable support
+for Plug and Play when using an ODI driver.
+
+NOTE: You can also disable Plug and Play for the 3C509B adapter by obtaining the
+latest EtherDisk (version 4.2) for the Etherlink III and running the
+PNPDSABL.BAT file located in the root directory of the disk. For more
+information about the 3Com Etherlink III or 3Com utilities, contact 3Com.
+
+The third-party products discussed in this article are manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

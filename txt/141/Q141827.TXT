@@ -1,0 +1,76 @@
+DOCUMENT:Q141827  17-DEC-2000  [win95x]
+TITLE   :How to Install Chat in Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:Win2000:95
+OPER/SYS:
+KEYWORDS:win95kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article describes how to install the Chat tool from the Windows 95 CD-ROM.
+This tool is not installed by default when you install Windows 95.
+
+MORE INFORMATION
+================
+
+To install Chat from the Windows 95 CD-ROM, follow these steps:
+
+1. In Control Panel, double-click Add/Remove Programs.
+
+2. On the Windows Setup tab, click Have Disk.
+
+3. Click Browse, click the CD-ROM drive in the Drives box, double-click the
+   Other folder, double-click the Chat folder, click OK, and then click OK
+   again.
+
+4. Click the Chat check box in the list of components so that it is selected,
+   and then click Install.
+
+5. Click OK.
+
+6. Create a shortcut to Netdde.exe in the Windows\Startup folder. For
+   information about creating shortcuts, search for "shortcuts" by clicking the
+   Start button and then clicking Help.
+
+7. Restart your computer.
+
+The Chat tool is added to the Accessories menu.
+
+NOTE: The Chat tool is not included in the floppy disk version of Windows 95, but
+is available in the CD-ROM Extras for Microsoft Windows 95 Upgrade. For
+information about obtaining the CD-ROM Extras Upgrade, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q135315 CD-ROM Extras for Microsoft Windows 95 Upgrade
+
+Additional query words: chatfaq
+
+======================================================================
+Keywords          : win95 kbfaq
+Technology        : kbWin95search kbZNotKeyword3
+Version           : Win2000:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,440 @@
+DOCUMENT:Q186541  11-DEC-2001  [winnt]
+TITLE   :Terminal Server Error Messages: 2400 to 2499
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes Terminal Server error messages 2400 to 2499.
+
+MORE INFORMATION
+================
+
+Error 2400
+----------
+
+   The LAN adapter number is invalid.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. The LAN adapter
+number in the configuration file is incorrect.
+
+Action: A NETn entry in the [networks] section of the computer's configuration
+file needs to be corrected. See your network administrator if you need
+assistance.
+
+Error 2401
+----------
+
+   There are open files on the connection.
+
+Explanation: You tried to delete an active connection. There are open files or
+requests pending on this connection.
+
+Action: Close all files and end all programs related to the connection before you
+try to delete it.
+
+Error 2402
+----------
+
+   Active connections still exist.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. You tried to delete
+a network connection that has an active process, or you tried to log off while
+you have an active process.
+
+Action: Be sure that the processes running on a server are completed before you
+break the connection to that server, and that processes on all remote servers
+are completed before you log off.
+
+Error 2403
+----------
+
+   This share name or password is invalid.
+
+Explanation: Either the share name or password you typed is incorrect.
+
+Action: Check the spelling of the share name or password. If you still have
+problems, ask your network administrator to verify the password and the share
+name. Your administrator should also verify that you have access to the
+resource. This problem can also be caused by duplicate computer names. Do not
+give computers on different networks identical computer names if there is any
+computer that is on both networks.
+
+Error 2404
+----------
+
+   The device is being accessed by an active process.
+
+Explanation: The drive letter you specified is the current drive of a session.
+You tried to delete a drive redirection (x:) while it is in use, possibly as
+your current drive.
+
+Action: Be sure the drive you are trying to delete is not the current drive in
+any of your sessions.
+
+Error 2405
+----------
+
+   The drive letter is in use locally.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. You tried to assign
+a local drive letter to a shared resource.
+
+Action: Use a drive letter that does not correspond to a local drive.
+
+Error 2430
+----------
+
+   The specified client is already registered for the specified event.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. A program requested
+the Alerter notify it of an event for which it is already receiving
+notifications.
+
+Action: Contact technical support.
+
+Error 2431
+----------
+
+   The alert table is full.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. The number of alert
+notifications requested exceeded the number specified by the NUMALERTS entry in
+your configuration file.
+
+Action: Increase the value of the NUMALERTS entry. Then stop and restart the
+workstation service.
+
+Error 2432
+----------
+
+   An invalid or nonexistent alert name was raised.
+
+Explanation: A software error occurred.
+
+Action: Be sure the Alerter service is started. If this error occurs while the
+Alerter service is started, contact technical support.
+
+Error 2433
+----------
+
+   The alert recipient is invalid.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. A software error
+occurred.
+
+Action: Contact technical support.
+
+Error 2434
+----------
+
+   A user's session with this server has been deleted because the user's logon
+   hours are no longer valid.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. LAN Manager ended a
+user's session with this server because the user's logon time expired.
+
+Action: No action is needed. To define the times during which a user can access
+the server, type:
+
+   "NET USER username /TIMES:times" (without the quotation marks)
+
+Error 2440
+----------
+
+   The log file does not contain the requested record number.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. A software error
+occurred.
+
+Action: Contact technical support.
+
+Error 2450
+----------
+
+   The user accounts database is not configured correctly.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. The user accounts
+database is not configured properly. There may be a conflict between the
+computer's role, which defines how this server participates in logon security,
+and the server's record of the name of the primary domain controller. For
+example, the role of this computer may be set to PRIMARY while the primary
+domain controller entry names a different server.
+
+Action: Contact your network administrator.
+
+Error 2451
+----------
+
+   This operation is not permitted when the Netlogon service is running.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. You cannot perform
+this task while the Netlogon service is running.
+
+Action: To perform this task, stop the Netlogon service on the server. Retype the
+command, and then restart the Netlogon service.
+
+Error 2452
+----------
+
+   This operation is not allowed on the last administrative account.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. This is the only
+account with administrative privilege. You cannot delete it.
+
+Action: You must add another account with administrative privilege before
+deleting this one.
+
+Error 2453
+----------
+
+   Could not find domain controller for this domain.
+
+Explanation: Windows NT could not find the domain controller for this domain.
+This task cannot be completed unless the domain controller is running in this
+domain.
+
+Action: Start the Netlogon service on the domain controller.
+
+Error 2454
+----------
+
+   Could not set logon information for this user.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. The logon server
+could not update the logon or logoff information.
+
+Action: Stop and restart the Netlogon service at the server that returned this
+error.
+
+Error 2455
+----------
+
+   The Netlogon service has not been started.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. The Netlogon
+service is not running.
+
+Action: Start the Netlogon service at the server, and then type the command
+again.
+
+Error 2456
+----------
+
+   Unable to add to the user accounts database.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. The user accounts
+database cannot be enlarged because the server's hard disk is full.
+
+Action: Check the server's disk and remove unnecessary and outdated files.
+
+Error 2457
+----------
+
+   This server's clock is not synchronized with the primary domain controller's
+   clock.
+
+Error 2458
+----------
+
+   A password mismatch has been detected.
+
+Error 2460
+----------
+
+   The server identification does not specify a valid server.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. A software error
+occurred.
+
+Action: If this error persists or causes other errors, contact technical
+support.
+
+Error 2461
+----------
+
+   The session identification does not specify a valid session.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. A software error
+occurred.
+
+Action: If this error persists or causes other errors, contact technical
+support.
+
+Error 2462
+----------
+
+   The connection identification does not specify a valid connection.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. A software error
+occurred.
+
+Action: If this error persists or causes other errors, contact technical
+support.
+
+Error 2463
+----------
+
+   There is no space for another entry in the table of available servers.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. The table of
+available servers is full. You will not be able to see a complete list of
+network servers when you type the NET VIEW command or use the LAN Manager
+Screen.
+
+Action: Stopping other processes or services on the workstation may free enough
+memory to correct this problem. MS-DOS workstations have a NUMSERVERS entry in
+the configuration file, which specifies the number of servers that the
+workstation can list with NET VIEW. Increasing this value can solve this
+problem, but will also use more memory.
+
+Error 2464
+----------
+
+   The server has reached the maximum number of sessions it supports.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. The server is
+supporting the maximum number of sessions.
+
+Action: Try the command later. You will not be able to start a session with this
+server until another user's session has ended. Also, see your network
+administrator. Your administrator may want to purchase an Additional User Pak
+for the server or increase the value of the MAXUSERS entry of the server's
+configuration file.
+
+Error 2465
+----------
+
+   The server has reached the maximum number of connections it supports.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. The server is
+supporting the maximum number of connections.
+
+Action: To make another connection to the server, first end a current connection.
+If you have no connections that you can end, try your command again later. You
+will be able to make your connection once another user's connection is ended.
+Also, see your network administrator. The administrator may want to increase the
+value of the MAXCONNECTIONS entry of the server's configuration file.
+
+Error 2466
+----------
+
+   The server cannot open more files because it has reached its maximum
+
+number.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. No more files on
+the server can be opened.
+
+Action: To open another file, you will first have to close a file or stop a
+network application that has open files. Also, see your network administrator.
+Your administrator may want to increase the value of the MAXOPENS entry in the
+server's configuration file.
+
+Error 2467
+----------
+
+   There are no alternate servers registered on this server.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. This server has no
+alternate servers registered.
+
+Action: Contact your network administrator.
+
+Error 2470
+----------
+
+   Try down-level (remote admin protocol) version of API instead.
+
+Error 2480
+----------
+
+   The UPS driver could not be accessed by the UPS service.
+
+Explanation: This message should occur only on a down-level computer. Any action
+to correct the problem should be performed on that computer. The UPS service
+could not access the UPS driver (UPSDRV.OS2). The UPS driver might not be
+configured properly.
+
+Action: Be sure that your CONFIG.SYS file has a DEVICE line specifying the
+location of the UPS device driver and that the /PORT option of that line
+specifies the serial port that the UPS is connected to. This line must appear
+before any other lines that install other serial port drivers. If you make
+changes to Config.sys, you will need to reboot your system for them to take
+effect.
+
+Error 2481
+----------
+
+   The UPS service is not configured correctly.
+
+Error 2482
+----------
+
+   The UPS service could not access the specified Comm Port.
+
+Error 2483
+----------
+
+   The UPS indicated a line fail or low battery situation. Service not started.
+
+Error 2484
+----------
+
+   The UPS service failed to perform a system shut down.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

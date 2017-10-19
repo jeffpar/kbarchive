@@ -1,0 +1,77 @@
+DOCUMENT:Q128431  12-NOV-1999  [pcmail]
+TITLE   :MHS: Err Msg: Gateway Doesn't Support Gateway "{}" Originators
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to MHS, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you send mail from Microsoft Mail for PC Networks through the MHS gateway
+to CompuServe and then on to the Internet, the following error appears:
+
+   The message you sent on <date> <time> could not be delivered to:
+
+   mail @ cserve {internet:<userid>@<site>},
+
+   The MHS gateway does not support gateway "{}" originators.
+
+CAUSE
+=====
+
+The CompuServe to Internet gateway does not support curly braces ({}). When you
+send a message from MHS through CompuServe to the Internet, the CSERVE/Internet
+gateway tries to build a return address. The gateway cannot build the return
+address because the Microsoft Mail addresses are in the following format:
+
+   <user>@MSMail {<network>/<postoffice>/<user>}
+
+RESOLUTION
+==========
+
+If you have a single postoffice, you can use simple addressing, which allows you
+to send mail to <user>@MSMail. To configure the gateway for simple
+addressing, add the -SF switch to the gateway command line. This command-line
+option is configured within the MHS administrator program (MHS.EXE for version
+1.5, and NGMADM for NGM). You should still send outgoing mail using the same
+addressing; for example, [MHS:MAIL@CSERVE
+{INTERNET:<USERID>@<SITE>}. Simple addressing does not work for
+downstream postoffices.
+
+MORE INFORMATION
+================
+
+If you have multiple postoffices, the only solution is to purchase multiple
+copies of the gateway and set up each postoffice as a gateway postoffice.
+
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateMHS300
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

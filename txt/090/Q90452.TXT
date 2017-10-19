@@ -1,0 +1,77 @@
+DOCUMENT:Q90452  22-OCT-1999  [win3x]
+TITLE   :WFWG Err Msg: The Network Software Currently...LAN Manager 2.0
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While installing Windows for Workgroups over an existing Microsoft LAN Manager
+2.0 installation, you may receive following error message:
+
+   The network software currently installed on your computer cannot be used with
+   this version of Windows for Workgroups.
+
+CAUSE
+=====
+
+While you may be able to manually upgrade and use Windows for Workgroups over
+LAN Manager 2.0, Windows for Workgroups was designed to automatically upgrade
+and work best on a LAN Manager 2.1 installations only.
+
+WORKAROUND
+==========
+
+Due to differences in the PROTOCOL.INI file and other LAN Manager configuration
+files, you may have difficulty installing or updgrading Windows for Workgroups
+over LAN Manager 2.0. If you need to use Windows for Workgroups with LAN Manager
+2.0, you should follow the procedures outlined below.
+
+1. Before installing Windows for Workgroups, use an ASCII text editor (such as
+   the MS-DOS 5.0 Editor) to make the following changes:
+
+   a. Remove ALL references to LAN Manager 2.0 device drivers (that is, remove
+      DEVICE=[drive][path]PROTMAN.DOS, DEVICE=[drive][path]UBNEI.DOS, and so on)
+      from the CONFIG.SYS file.
+
+   b. Remove ALL references to LAN Manager 2.0 commands (NET START, LOAD
+      NETBEUI, NET LOGON, and so on) from the AUTOEXEC.BAT file. Also remove any
+      references to LAN Manager 2.0 in the MS-DOS PATH environment variable(s.)
+
+2. After making and saving the above changes to CONFIG.SYS and AUTOEXEC.BAT,
+   reboot the computer for the changes to take effect.
+
+You should then be able to proceed with the normal installation of Windows for
+Workgroups.
+
+Additional query words: 3.10 err msg
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

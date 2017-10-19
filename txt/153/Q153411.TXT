@@ -1,0 +1,71 @@
+DOCUMENT:Q153411  13-JUN-2001  [sna]
+TITLE   :Default APPC Are Not Resolved Correctly for OS/2 Clients
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.1,2.11
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.1, 2.11, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+APPC applications using the Microsoft SNA OS/2 client that make a call to a
+default local LU or remote LU may fail.
+
+CAUSE
+=====
+
+The TP_STARTED verb is passing a local LU alias of all zeroes. Therefore the
+APPC library goes into default LU processing, which is to query the user record
+from the SNA server. For OS/2, this is done by calling the sepdcrec()function.
+The wrong information is being returned on this call, which is causing the APPC
+library to believe that the LU alias for this user is a one byte value of 0x01.
+When the APPC library tries to use this as the local LU alias, the SNA Server
+rejects it.
+
+The OS/2 APPC library's support for extracting a local LU for a particular user
+was broken when the OS/2 DMODs sepdcrec() processing was changed to use RPC
+calls to query the server.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server versions
+2.1 and 2.11. This problem was corrected in the latest Microsoft SNA Server 2.11
+U.S. Service Pack. For information on obtaining the service pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words: OS/2 APPC TPs
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.1,2.11
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

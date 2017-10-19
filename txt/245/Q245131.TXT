@@ -1,0 +1,79 @@
+DOCUMENT:Q245131  08-AUG-2001  [winnt]
+TITLE   :GSNW Shares Appear to Be Deleted After You Restart Windows NT.
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you enable a gateway in Gateway Services for NetWare (GSNW) on a Microsoft
+Windows NT Server 4.0-based server and then restart the server, the shares that
+are located on a Novell NetWare server may appear to be deleted on the Windows
+NT Server 4.0-based server. When you perform a trace by using Network Monitor,
+the trace may show that the Windows NT Server 4.0-based server is sending out a
+'Find Name to servername' broadcast to the NetWare server, but is not receiving
+any response from the NetWare server.
+
+CAUSE
+=====
+
+This behavior can occur if you use a Cisco router and the Cisco router
+interferes with the request to find the NetWare server.
+
+RESOLUTION
+==========
+
+To resolve this issue, set the router port for 'Spantree PortFast'. For
+information about Cisco routers, visit the following Cisco Web site:
+
+   http://www.cisco.com
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+MORE INFORMATION
+================
+
+If other Windows NT Server 4.0-based servers with the GSNW service installed are
+affected in the same way, the router hardware may be the cause of the problem.
+To test this, insert a hub between the Windows NT Server 4.0-based server and
+the Cisco router to see whether the problem still occurs.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

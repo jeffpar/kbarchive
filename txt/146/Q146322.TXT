@@ -1,0 +1,79 @@
+DOCUMENT:Q146322  14-MAR-1999  [exchange]
+TITLE   :XADM: Modified Address Template Only Displays on Client
+PRODUCT :Microsoft Exchange
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use Exchange Administrator to change Address Templates on the Exchange
+server, you can see the changes only in the Test window on the server or from an
+Exchange client.
+
+If you switch to the Recipients container in Microsoft Exchange Administrator and
+select a user mailbox, you can see only the original template. This is correct
+Microsoft Exchange Administrator functionality.
+
+MORE INFORMATION
+================
+
+To Modify Address Templates in Microsoft Exchange Administrator
+---------------------------------------------------------------
+
+NOTE: If you want to be able to undo your changes, be sure to take notes of your
+modifications because there is no option to undo your changes automatically.
+
+1. From the Container window open the appropriate Site.
+
+2. Click Configuration, then Addressing, then Details Templates, and then click
+   the appropriate Language Container such as English/USA.
+
+3. From the Contents window, open any of the objects, such as Mailbox, then
+   click the Templates property page.
+
+4. Select a value that you want to modify and click Edit.
+
+5. To see the results of your modification, click Test.
+
+To Undo Your Modifications
+--------------------------
+
+Use the notes you took when you modified the values to change them back to their
+previous values.
+
+To Restore Original Default Values
+----------------------------------
+
+Click Original on the Templates property page.
+
+Additional query words: faq
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

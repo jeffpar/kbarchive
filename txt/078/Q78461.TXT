@@ -1,0 +1,60 @@
+DOCUMENT:Q78461  08-FEB-2002  [win95x]
+TITLE   :Flashing Mouse Cursor in Windows 3.0 on AST Premium Exec
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Not loading a special video driver supplied with the AST Premium Exec may
+produce a flashing Mouse cursor in Microsoft Windows 3.0.
+
+This information applies to all serial versions of the Microsoft Mouse for MS-DOS
+based systems.
+
+MORE INFORMATION
+================
+
+When using a Microsoft serial Mouse connected to the serial port of an AST
+Premium Exec, you may encounter a flashing Mouse cursor in Microsoft Windows
+3.0.
+
+The video display for the AST Premium Exec requires the installation of a video
+driver for Windows 3.0 called VGA640.DRV. This driver is included on the AST
+Utilities disk.
+
+The product included here is manufactured by a vendor independent of Microsoft;
+we make no warranty, implied or otherwise, regarding this products' performance
+or reliability.
+
+Additional query words: 3.00 8.00 8.10 flash blink blinking
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

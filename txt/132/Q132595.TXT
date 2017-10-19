@@ -1,0 +1,56 @@
+DOCUMENT:Q132595  17-DEC-2000  [win95x]
+TITLE   :Quick View Does Not Support Older Lotus 1-2-3 Versions
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using the Quick View feature of Windows 95 to view a file created
+with a version of Lotus 1-2-3 prior to version 3.0, the file does not appear
+correctly. In particular, cells containing times may not appear correctly or may
+not appear at all.
+
+CAUSE
+=====
+
+Versions of Lotus 1-2-3 prior to version 3.0 are not supported by Quick View.
+
+RESOLUTION
+==========
+
+To use Quick View to view Lotus 1-2-3 files, upgrade to Lotus 1-2-3 version 3.0
+or later. To view files created with a version of Lotus 1-2-3 prior to version
+3.0, you must use the version of Lotus 1-2-3 that was used to create the file or
+some other application that can read Lotus 1-2-3 files.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

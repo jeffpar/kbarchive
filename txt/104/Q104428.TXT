@@ -1,0 +1,79 @@
+DOCUMENT:Q104428  08-AUG-2001  [winnt]
+TITLE   :Satisfaxtion 400 Internal Modem Does Not Operate in Windows NT
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1
+OPER/SYS:
+KEYWORDS:kbhw kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+The Intel SatisFAXtion 400 Internal Modem does not work with Windows
+NT. The SatisFAXtion 400 is software-configurable only and requires
+MS-DOS-based drivers to initialize correctly.
+
+
+Because the modem has no hardware-configurable switches, it requires
+that a configuration file and a device driver be loaded when the
+system is booted. Under an MS-DOS system, these are loaded in the
+CONFIG.SYS and AUTOEXEC.BAT files.
+
+In the CONFIG.SYS file, there is usually an entry similar to the
+following:
+
+   device=c:\fax\satisfax.sys /ioaddr=xxx
+
+In the AUTOEXEC.BAT file, there is usually the following entry:
+
+   casmgr
+
+Because the device driver attempts to communicate with the hardware
+directly, it does not work under Windows NT.
+
+NOTES:
+
+   The Intel SatisFAXtion 400e external modem does not have this problem.
+   There are hardware switches on the modem that allow it to be configured,
+   so the modem should work correctly with Windows NT.
+
+   Intel has release a Class 1 Windows NT driver for the SatisFAXtion 400i
+   modem. This driver works under Windows NT versions 3.1 and 3.5 and is
+   available from the Intel (GO:INTEL) forum of CompuServe. Filename:
+   400NT.EXE.
+
+For additional information, contact Intel technical support at (503)
+629-7000.
+
+
+The SatisFAXtion 400 modem is manufactured by Intel, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise,
+regarding this products' performance or reliability.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbhw kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

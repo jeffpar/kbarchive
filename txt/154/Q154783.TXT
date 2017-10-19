@@ -1,0 +1,100 @@
+DOCUMENT:Q154783  09-AUG-2001  [winnt]
+TITLE   :Msg Sent from MSMail Windows NT Client Undeliverable
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.51 
+ - Microsoft Windows NT Server version 3.51 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you send a message from the Microsoft Mail for Windows NT Client to an
+address such as the following:
+
+   <net>/<postoffice>/<mailbox>
+
+you may receive a non-delivery message similar to the following:
+
+   From: POSTMASTER
+   To: < sender of message >
+   Subject: Mail failure
+   Date: Thursday, May 23, 1996 3:22PM
+
+   FROM: < sender of message >
+   TO: < recipient of message >                      DATE: 23-05-96
+                                                     TIME: 15:22
+
+   SUBJECT: < subject of message >
+
+  ----------------------------------------------------------------
+
+   [003] Message hop count exceeded.  Message followed the following route:
+
+      NETCAD/HBPO01
+      NETCAD/BUPO01
+      NETGRI1/RH02
+      NETGRI1/IH01
+      NETSIS/WO01
+      NETSIS/EUO01
+      NETSIS/HUB02
+      NETUFE/HUB01
+      NETUFE/HUB03
+      NETUDI/UDIPO1
+
+CAUSE
+=====
+
+The non-delivery report is generated when the number of hops reaches 10,
+regardless of the hop count setting as configured in the Administrator program.
+The Windows NT client does not pick up the administrator-set hop count from the
+postoffice. The client inserts a hop count of ten in all messages.
+
+WORKAROUND
+==========
+
+Reduce the number of mail hops (routings through postoffices) to ensure that
+mail reaches the destination postoffice in fewer than 10 hops. This is the
+preferred solution in cases where it is feasible.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51. This
+problem was corrected in the latest Windows NT 3.51 U.S. Service Pack. For
+information on obtaining the Service Pack, query on the following word in the
+Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: prodnt 3.51
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

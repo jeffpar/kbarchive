@@ -1,0 +1,103 @@
+DOCUMENT:Q75244  04-MAY-2001  [masm]
+TITLE   :FIX: Avoid externdef or proto when Initializing Data
+PRODUCT :Microsoft Macro Assembler
+PROD/VER:MS-DOS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When defining and initializing a data structure that contains an address defined
+with externdef or proto, the linker does not resolve the address correctly in
+the Microsoft Macro Assembler (MASM) version 6.0.
+
+CAUSE
+=====
+
+The example code below illustrates this problem. In the example, a function
+table is initialized to the address of four separate functions. The two
+functions defined with "externdef" and "proto far" do not cause the assembler to
+generate the correct EXTDEF (EXTernal DEFinition) record. As a result, the
+linker doesn't resolve the addresses correctly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MASM version 6.0. This problem
+was corrected in MASM version 6.0a.
+
+MORE INFORMATION
+================
+
+The following sample code can be used to demonstrate the problem.
+
+Sample Code
+-----------
+
+   ; Assemble options needed: none
+
+   .MODEL large
+
+   FN    typedef  proto far
+   PFN   typedef  far  ptr FN
+
+   ST_ST struct   1b
+              func1    PFN    ?
+              func2    PFN    ?
+              func3    PFN    ?
+              func4    PFN    ?
+   ST_ST   ends
+
+   extern         FN_1A:FN
+   externdef      FN_2A:FN
+   FN_3A   proto far
+
+   DATA  segment word public "DATA"
+
+         ST_ST    <FN_1A, \ 
+                   FN_2A, \  ; This doesn't work.
+                   FN_3A, \  ; This doesn't work either.
+                   FN_4A>
+
+   DATA  ends
+
+   _TEXT segment word public 'CODE'
+
+   FN_4A   proc    far
+         ret
+   FN_4A   endp
+
+   _TEXT   ends
+   END
+
+Additional query words: 6.00 buglist6.00 fixlist6.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600
+Version           : MS-DOS:6.0
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

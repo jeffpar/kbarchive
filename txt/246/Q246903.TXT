@@ -1,0 +1,96 @@
+DOCUMENT:Q246903  30-MAY-2002  [homegame]
+TITLE   :Zone Err Msg: An Incomplete Zone Install Was Detected
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup igz kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Zone.com 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you connect to a game room or lobby on the Zone, you may receive the
+following error message:
+
+   An incomplete Zone installation was detected.
+
+CAUSE
+=====
+
+This behavior can occur if Zone.com software is not installed properly.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following methods in the order in which they are
+presented.
+
+Remove and then Reinstall the Heartbeat ActiveX Control
+-------------------------------------------------------
+
+For additional information about how to remove and then reinstall the Heartbeat
+ActiveX control, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+   Q225041 Zone: How to Remove the Heartbeat ActiveX Control
+
+After removing the ActiveX Control, visit the following Zone.com Web site to
+reinstall the Zone software:
+
+   http://zone.msn.com/services/install.asp
+
+If the issue continues to occur, proceed to the next method.
+
+Remove and then Reinstall the Zone Software
+-------------------------------------------
+
+To remove and then reinstall the Zone software:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. Click MSN Gaming Zone, and then click Add/Remove.
+
+4. Follow the instructions on the screen to remove the Zone software.
+
+5. Visit the following Zone.com Web site to reinstall the Zone software:
+
+   http://zone.msn.com/services/install.asp
+
+For additional information about how to remove and reinstall the Zone software,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q186161 Zone: How to Remove and Reinstall the Zone Software
+
+Additional query words: msgame igz msngz installs
+
+======================================================================
+Keywords          : kberrmsg kbsetup igz kbimu msgame 
+Technology        : kbGamesSearch kbMSNSearch kbZone
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

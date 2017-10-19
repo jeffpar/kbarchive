@@ -1,0 +1,91 @@
+DOCUMENT:Q163586  10-AUG-2001  [frontpg]
+TITLE   :FP: Can't Insert Blank Line Above or Below Table
+PRODUCT :Word Front Page
+PROD/VER:windows:1.1,97
+OPER/SYS:
+KEYWORDS:kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for Windows, versions 95, 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In FrontPage Editor, when you attempt to insert a blank line above or below a
+table, a hard carriage return is inserted in the cell and the row height
+increases.
+
+RESOLUTION
+==========
+
+To insert a blank line above a table, choose the appropriate method:
+
+Method 1: Press CTRL+ENTER
+--------------------------
+
+Place the insertion point in front of the text or graphic in the top left cell of
+the table, and then press CTRL+ENTER.
+
+NOTE: This method will not work if the cell does not contain any text or graphic
+or if the insertion point is not positioned before the text.
+
+Method 2: Use Cut and Paste Operation to Move the Table
+-------------------------------------------------------
+
+1. With the insertion point in any cell in the table, click Select Table on the
+   Table menu.
+
+2. On the Edit menu, click Cut.
+
+3. Press ENTER.
+
+4. On the Edit menu, click Paste.
+
+To insert a blank line below a table, use the appropriate method:
+
+Method 1: Press CTRL+ENTER
+--------------------------
+
+Place the insertion point after the text or graphic in the bottom right cell of
+the table, and then press CTRL+ENTER.
+
+Method 2: Use the Right Arrow Key and Press ENTER
+-------------------------------------------------
+
+1. Place the insertion point in the last cell of the table.
+
+2. Press the Right Arrow key.
+
+3. Press ENTER.
+
+NOTE: Press ENTER for each blank line you want to insert.
+
+Additional query words: 97 insert blank line table
+
+======================================================================
+Keywords          : kbusage kbdta 
+Technology        : kbFrontPageSearch kbFrontPage1xSearch kbFrontPage97Search kbZNotKeyword3 kbFrontPage110
+Version           : windows:1.1,97
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

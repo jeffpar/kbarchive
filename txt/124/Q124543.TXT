@@ -1,0 +1,63 @@
+DOCUMENT:Q124543  08-AUG-2001  [winnt]
+TITLE   :Resource Conflict in Event Viewer with Diamond Viper Video Card
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have a Diamond Viper VLB video card (BIOS revision 2) installed, the card
+does not initialize with the Diamond Viper driver. Event Viewer reports a
+resource conflict.
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+1. In the Control Panel window, choose the Display icon.
+
+2. Choose the Change Display Type button.
+
+3. In the Adapter Type box, choose the Change button.
+
+4. Select the Weitek P9000 Graphics Adapter (not one of the Diamond devices).
+
+5. Set the hex memory to 80 000 000 (not the first choice of 04 000 000).
+
+6. Install one of the following BIOS revisions: 3.09, 2.04, or 1.14.
+
+The Diamond Viper video card discussed here is manufactured by Diamond Computer
+Systems, a vendor independent of Microsoft; we make no warranty, implied or
+otherwise, regarding this product's performance or reliability.
+
+Additional query words: prodnt rev
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

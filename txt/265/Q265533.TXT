@@ -1,0 +1,73 @@
+DOCUMENT:Q265533  06-AUG-2002  [winnt]
+TITLE   :Explanation of Chkdsk Status Codes in Cluster Log
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000,4.0
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows 2000 Advanced Server 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+When you run Cluster services with cluster logging enabled, you may see the
+following error message:
+
+   FixCorruption: CHKDSK returned status of <error code>.
+
+The following error codes may be displayed:
+
++---------------------------------------------------------------------------------------+
+| Code       | Meaning                                                                  | 
++---------------------------------------------------------------------------------------+
+| 0          | Success, no errors found.                                                | 
++---------------------------------------------------------------------------------------+
+| 1          | Success, CHKDSK has detected and fixed major errors.                     | 
++---------------------------------------------------------------------------------------+
+| 2          | Success, CHKDSK has detected and fixed minor inconsistencies.            | 
++---------------------------------------------------------------------------------------+
+| 3          | Error, CHKDSK could not complete.                                        | 
++---------------------------------------------------------------------------------------+
+| 3221225786 | CHKDSK was aborted. 3221225786 is C000013A(hex) or STATUS_CONTROL_C_EXIT | 
++---------------------------------------------------------------------------------------+
+
+MORE INFORMATION
+================
+
+For additional information about this issue, click the article numbers below to
+view the articles in the Microsoft Knowledge Base:
+
+   Q198513 Clustering Cannot Determine If a Shared Disk Is Working Properly
+
+   Q168801 How to Enable Cluster Logging in Microsoft Cluster Server
+
+Additional query words: MSCS
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbWinNTsearch kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbwin2000Search kbWinAdvServSearch
+Version           : :2000,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

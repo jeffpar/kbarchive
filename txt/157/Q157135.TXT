@@ -1,0 +1,76 @@
+DOCUMENT:Q157135  07-SEP-2001  [word97]
+TITLE   :WD97: Newsletter Footer Doesn't Print Using Default Settings
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbprint kbtemplate word97 kblayout kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you print a newsletter that you created using the Newsletter Wizard, the
+footer and/or the bottom border does not print.
+
+CAUSE
+=====
+
+This problem occurs when you click Page Setup on the File menu, click the
+Margins tab, and type a value in the Footer box that is outside the printable
+range for the printer.
+
+For example, this problem occurs when you type a value of .24 inch in the Footer
+box, and then print to a Hewlett-Packard DeskJet printer. The position is
+outside of the printable range because the Hewlett-Packard DeskJet printer
+cannot print a footer that is positioned lower than .67 inch from the edge of
+the paper.
+
+WORKAROUND
+==========
+
+To work around this problem, increase the value in the Footer box. To do this,
+use the following steps:
+
+1. On the File menu, click Page Setup.
+
+2. Click the Margins tab.
+
+3. In the Footer box under From Edge, type a larger value and click OK.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprint kbtemplate word97 kblayout kbPrinting 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

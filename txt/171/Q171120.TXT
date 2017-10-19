@@ -1,0 +1,79 @@
+DOCUMENT:Q171120  09-AUG-2001  [winnt]
+TITLE   :Useful Links to HCL Storage Device Configuration Information
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:kbhw kbsetup kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following manufacturers contain products that are found on the Hardware
+Compatibility List (HCL) for Windows NT 4.0, under Storage Devices and Hard
+Drives. You can use the following links to assist in configuring these devices
+to work properly in Windows NT.
+
+This information is helpful when you do not have jumper settings or other
+configuration information about your hard drive(s).
+
+Storage Configuration Information Locations
+-------------------------------------------
+
+Fujitsu:
+
+   http://www.fcpa.com/supmenuhd.html
+
+Seagate and Conner:
+
+   http://www.seagate.com/support/disc/specs/specfind.shtml
+
+Hewlett Packard:
+
+   http://www.hp.com/cposupport/nonjsnav/informatio10165.html
+
+I.B.M:
+
+   http://www.storage.ibm.com/storage/techsup/hddtech/hddtech.htm
+
+Maxtor:
+
+   http://www.maxtor.com/technology/index.html
+
+Quantum:
+
+   http://www.quantum.com/support/support.htm
+
+Western Digital:
+
+   http://www.wdc.com/acrobat/welcome.html
+
+Additional query words: jumper settings termination scsi ID
+
+======================================================================
+Keywords          : kbhw kbsetup kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : winnt:3.5,3.51,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

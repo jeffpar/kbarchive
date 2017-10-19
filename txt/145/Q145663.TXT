@@ -1,0 +1,84 @@
+DOCUMENT:Q145663  30-OCT-1999  [pcmail]
+TITLE   :PC NTMMTA: Using the NT MMTA and RAS on the Same Server
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.5; :3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.5 
+ - Microsoft Mail Multitasking MTA for Windows NT, version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can run both Remote Access Server (RAS) and the Multitasking MTA for Windows
+NT (NT MMTA) from the same Microsoft Windows NT version 3.51 server, using
+asynchronous communication, RAS for network connections, and the NT MMTA for
+Mail delivery.
+
+MORE INFORMATION
+================
+
+When you configure a Windows NT version 3.51 Server as a RAS server, the COM
+ports that the RAS server will be using are configured through Networks under
+the Control Panel.
+
+The COM ports that the NT MMTA will be using are set, during the configuration,
+by the AsyncCommPort parameter of the EXTERNAL.INI file. The /AsyncCommPort
+parameter will be read by the MMTA application when it runs as a service or from
+the CDM line. For example,
+
+EXTERNAL.INI
+------------
+
+   [External - Async1]
+   AsyncCommPort=Com2
+
+Command line
+------------
+
+   EXTERNAL -Dm /AsyncCommPort=Com2
+
+Notes:
+
+ - Additional EXTERNAL.INI parameters and External command line options are
+   required. Refer to Appendix A "External Program Options" in the Multitasking
+   MTA for Windows NT "Administrator's Guide" for more information.
+
+ - The RAS server and the NT MMTA can not specify the same COM ports. For
+   example, if you are using RAS on COM1, you would specify COM2 for the NT
+   MMTA.
+
+
+When the NTMMTA starts as a service or as an application from the CMD line, both
+of its instances (Services) will start, and data will be transfered. The
+starting of the services occures regardless of being set up as automatic or
+manual startup, or the order of the services.
+
+Additional query words: 3.50 us
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailPCN350 kbMailMMTA350NT
+Version           : WINDOWS:3.5; :3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,68 @@
+DOCUMENT:Q155370  04-AUG-2001  [visualc]
+TITLE   :FIX: Wizards May Display Invalid Table Names for CRecordset
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbwizard kbVC420bug kbVC500fix kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The AppWizard, included with:
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When selecting ODBC database support in the AppWizard or ClassWizard, the list
+of table names contains entries that are invalid.
+
+CAUSE
+=====
+
+AppWizard and ClassWizard incorrectly handle table names.
+
+RESOLUTION
+==========
+
+A possible workaround to this problem is to create your recordsets using an
+alternate datasource, such as an Access MDB file, which contains the same table
+and column definitions as your original datasource. Then change your code to
+access the correct datasource instead.
+
+If your table names contain 30 characters or more, it may help to rename them to
+have fewer than 30 characters.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Microsoft Visual C++,
+version 5.0.
+
+Additional query words: SQL Server
+
+======================================================================
+Keywords          : kbwizard kbVC420bug kbVC500fix kbGrpDSTools 
+Technology        : kbVCsearch kbAudDeveloper kbAppWizard
+Version           : winnt:
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

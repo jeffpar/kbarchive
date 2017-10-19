@@ -1,0 +1,51 @@
+DOCUMENT:Q76835  05-DEC-1999  [homemm]
+TITLE   :General Multimedia Information: MPC Marketing Council
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - All Microsoft Multimedia Products 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+For information regarding multimedia personal computers, multimedia titles, and
+other general multimedia topics of interest, please refer to the Multimedia PC
+Marketing Council at the following location:
+
+   Multimedia PC Marketing Council, Inc.
+   1703 M Street Suite 700
+   Washington, DC 20036
+   (202) 452-1600
+
+For information regarding a specific multimedia product, contact the manufacturer
+of that product.
+
+Additional query words: multimedia multi media multi-media standard standardization specifications MPC kbmm
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

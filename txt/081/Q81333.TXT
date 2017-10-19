@@ -1,0 +1,71 @@
+DOCUMENT:Q81333  09-DEC-1999  [win16sdk]
+TITLE   :MousHook.exe Demonstrates Windows 3.1 WH_MOUSE Hook
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kbfile kbsample kb16bitonly kbHook kbGrpDSUser kbOSWin310
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MousHook.exe is a sample that demonstrates how to install and use a WH_MOUSE
+mouse message hook. The mouse message hook in MousHook.exe disables the right
+mouse button for all applications in the system by discarding WM_RBUTTONDOWN and
+WM_NCRBUTTONDOWN messages. The mouse hook function beeps each time it discards a
+message.
+
+MousHook.exe contains the source to an application program, TESTAPP, and a
+dynamic-link library (DLL), MousHook.dll, that implements the mouse hook. The
+MousHook.dll uses the new hook functions provided by Windows 3.1:
+SetWindowsHookEx(), UnhookWindowsHookEx(), and CallNextHookEx().
+
+TESTAPP calls MOUSHOOK to install the mouse hook. When TESTAPP is closed, it
+removes the mouse hook from the system.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+MousHook.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbsample kb16bitonly kbHook kbGrpDSUser kbOSWin310 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

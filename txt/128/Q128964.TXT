@@ -1,0 +1,81 @@
+DOCUMENT:Q128964  16-SEP-1999  [schedplus]
+TITLE   :PC WSPlus: Mailbox Change Creates New Calendar Files
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+1.00 1.00a
+WINDOWS
+kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you modify the Microsoft Mail for Windows user's mailbox, the modifications
+will force Microsoft Schedule+ to create new calendar files (.CAL) because of
+the login IDs have been changed.
+
+MORE INFORMATION
+================
+
+When you log into Schedule+, the \MAILDATA\CAL\SCHEDULE.KEY is accessed to
+determine if the user's login ID (mailbox) already has an existing hexid number
+assigned to it. Because the login ID is different, a new HEXID.CAL will be
+created along with a new USERNAME.CAL on the local workstation.
+
+
+To retrieve the information from the user's original calendar file, do the
+following steps:
+
+1. Add StartupOffline=1 to the SCHDPLUS.INI file.
+
+2. Launch Schedule+ using the old username and password.
+
+   This should bring the information from the users original USERNAME.CAL file on
+   the local workstation.
+
+3. From the File menu, choose Export Appointments.
+
+   You should export the appointments to the USERNAME.SCH file.
+
+4. Log out of Schedule+.
+
+5. Remove the StartupOffline=1 parameter from the SCHDPLUS.INI file.
+
+6. Launch Schedule+ using the new username and password.
+
+   This should bring up the blank calendar file information.
+
+7. From the File menu, choose Import Appointments. You should import the
+   appointments from the USERNAME.SCH file created in step 3.
+
+Additional query words: 1.00 1.00a changes
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100 kbSchedule100a
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,63 @@
+DOCUMENT:Q130989  15-FEB-2000  [foxpro]
+TITLE   :How to Make an Array Protected
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbcode
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The PROTECTED keyword of the DEFINE CLASS command can be used to protect the
+Properties, methods, and objects in a class definition. You may want to use the
+PROTECTED keyword to protect an array.
+
+MORE INFORMATION
+================
+
+To protect an array property, use the keywords PROTECTED and DIMENSION on
+separate lines. For example, the following code would prevent the array from
+being changed outside of the CLASS:
+
+      PROTECTED myarray[2]
+      DIMENSION myarray[2]
+
+The following code appears to work, but the array isn't protected:
+
+      PROTECTED DIMENSION myarray[2]
+
+REFERENCES
+==========
+
+For more information about the PROTECTED clause, search the Visual FoxPro Help
+menu.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

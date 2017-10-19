@@ -1,0 +1,75 @@
+DOCUMENT:Q140482  21-MAY-2001  [powerpt]
+TITLE   :PPT7: Help Index Shows What's New in Word 95 Topic
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0; Win95:7.0
+OPER/SYS:
+KEYWORDS:kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you choose the topic called What's New in the PowerPoint Help index, Help
+incorrectly displays What's New in Word 95 instead of What's New in PowerPoint
+95.
+
+CAUSE
+=====
+
+This index entry points to the file Wdvisex.exe, which is the Word for Windows
+95 What's New Help file.
+
+RESOLUTION
+==========
+
+To see the What's New in PowerPoint 95 Help topic instead of the What's New in
+Word 95 topic, do the following:
+
+1. On the Help menu, click Answer Wizard.
+
+2. Type the following in the Type Your Request box, and then click Search:
+
+   "what's new" (without the quotation marks)
+
+3. Click the topic called
+
+   What's new in PowerPoint 95
+
+   and click Display.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 7.00 ppt95 ppt7 what's new index help wrong powerpnt powerpoint w_powerpt
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbOfficeSearch kbPowerPtSearch kbSQLServ700 kbZNotKeyword2 kbOffice95Search kbZNotKeyword3 kbPowerPt700Search
+Version           : WINDOWS:7.0; Win95:7.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

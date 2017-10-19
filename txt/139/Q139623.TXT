@@ -1,0 +1,73 @@
+DOCUMENT:Q139623  03-OCT-1999  [win95x]
+TITLE   :System Hangs When You Quit Windows with Heavy Network Traffic
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:win31kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using a real-mode network client, such as the Novell VLM or NETX
+network client, or the Banyan Vines real-mode network client, the screen may
+turn black and leave the pointer flashing in the upper-left corner when you
+attempt to quit Windows. After several minutes, you may receive the following
+error message:
+
+   General failure reading device NETWORK
+
+This problem occurs independent of the type of computer and network interface
+card you are using and independent of the real-mode network client you are
+using.
+
+CAUSE
+=====
+
+This is a known problem with Windows and Windows for Workgroups version 3.1 and
+later that occurs when network traffic is unusually heavy.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows versions 3.1 and 3.11
+and Windows for Workgroups versions 3.1 and 3.11. We are researching this
+problem and will post new information here in the Microsoft Knowledge Base as it
+becomes available.
+
+MORE INFORMATION
+================
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: hang compaq drop
+
+======================================================================
+Keywords          : win31 kbbuglist
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

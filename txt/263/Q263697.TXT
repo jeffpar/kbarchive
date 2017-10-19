@@ -1,0 +1,67 @@
+DOCUMENT:Q263697  28-DEC-2001  [homegame]
+TITLE   :AoE II: How To Use the Map Editor to Place Natural Resources
+PRODUCT :Microsoft Home Games
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbtool kbui kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Age of Empires II: The Age of Kings, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use the Map Editor in Microsoft Age of Empires II:
+The Age of Kings to place natural resources on a map.
+
+MORE INFORMATION
+================
+
+To use the Map Editor to place natural resources on a map:
+
+1. Start Age of Empires II: The Age of Kings.
+
+2. On the startup screen, click Map Editor.
+
+3. Click Create Scenario.
+
+4. Click Units.
+
+5. In the Player 1 box near the lower-left corner of the screen, click Gaia.
+
+6. Click Other.
+
+7. In the list of units, click the natural resource unit that you want to place
+   on the map (for example, Crater), and then click the position on the map
+   where you want to place the resource.
+
+8. Repeat step 7 for each natural resource unit that you want to place on the
+   map.
+
+Additional query words: 2.00 msgame aoe2 aok stone food gold wood scenario editor
+
+======================================================================
+Keywords          : kbtool kbui kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbAOESearch kbAOE2Kings
+Version           : :2.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

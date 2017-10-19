@@ -1,0 +1,73 @@
+DOCUMENT:Q196672  14-NOV-2000  [word97]
+TITLE   :WD97: Background Repagination Cannot Be Turned Off
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Background Repagination option is selected and is unavailable (dimmed) for
+you to clear (turn off).
+
+To locate this option, on the Tools menu, click Options and select the General
+tab.
+
+CAUSE
+=====
+
+This behavior occurs because you are viewing the current document in page layout
+view. By design, page layout view requires that Background Repagination be
+turned on, because Word must show the page breaks correctly.
+
+RESOLUTION
+==========
+
+To turn off Background Repagination, change the document view to normal,
+outline, or master document view.
+
+MORE INFORMATION
+================
+
+Repagination in Word cannot be totally turned off. This is because Word has to
+repaginate the document in page layout view and in print preview in order to
+correctly display the document.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q119943 WD: Actions That Invoke Repagination
+
+
+Additional query words: grey greyed gray grayed check box checked paginate cannot 8.0 8.00
+
+======================================================================
+Keywords          : word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

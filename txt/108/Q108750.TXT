@@ -1,0 +1,69 @@
+DOCUMENT:Q108750  18-NOV-1999  [msdos]
+TITLE   :You Must Use "DBLSPACE /FORMAT A:" to Format That Drive
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you unmount a compressed volume file (CVF) on a floppy disk drive and then
+try to use the MS-DOS FORMAT command to format a floppy disk, you may receive
+the following message
+
+   You must use "DBLSPACE /FORMAT <X>:" to format that drive.
+
+where <X> is the floppy disk drive letter.
+
+CAUSE
+=====
+
+This message is caused by the new Automount feature in MS-DOS 6.2. Any command
+that attempts to access a floppy disk drive containing a disk with a CVF mounts
+that CVF.
+
+RESOLUTION
+==========
+
+To work around this problem:
+
+1. Change to the drive letter that contains the compressed floppy disk (usually
+   A: or B:) by typing "A:" (without the quotation marks) or "B:" (without the
+   quotation marks).
+
+2. Type "dblspace /unmount <x>:" (without the quotation marks) where
+   <x> is the floppy disk drive letter.
+
+3. Type "format <x>:" (without the quotation marks) where <x> is the
+   floppy disk drive letter.
+
+Additional query words: 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS620
+Version           : MS-DOS:6.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

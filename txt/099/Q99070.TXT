@@ -1,0 +1,71 @@
+DOCUMENT:Q99070  06-DEC-1999  [win95x]
+TITLE   :CalComp Plotter Driver for Windows
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+This article lists the plotters supported by the CalComp Plotter Driver for
+Microsoft Windows.
+
+MORE INFORMATION
+================
+
+Plotter family name            Model number
+   ---------------------------------------------------------
+   Artisan                        1023, 1025, 1026
+   Desktop ColorMaster +          6603VRC, 6613VRC
+   ColorView                      5912, 5913
+   Drawing Master                 52224, 52236, 52424, 52436
+   Electrostatic Plotters         5725, 5735, 5745,
+                                  5825, 5835, 5845,
+                                  57424, 57436, 57444,
+                                  58424, 58434, 58444,
+                                  67436, 68436, 68444
+   PaceSetter                     2036, 2074
+   Color Printer - PlotMaster     5902A, 5902G
+   Pen Plotters                   1040, 1041, 1042,
+                                  1043, 1044, 1075,
+                                  1076, 1077
+   DesignMate                     3024
+
+You can download this driver from the CalComp bulletin board service (BBS). For
+more information, call CalComp Technical Support.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+
+Additional query words: 3.00 3.10 3.00a 3.11 3rd party third-party third plotter
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

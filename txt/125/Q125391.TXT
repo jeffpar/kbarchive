@@ -1,0 +1,80 @@
+DOCUMENT:Q125391  13-JUN-2001  [winmisc]
+TITLE   :Voice Pilot Err Msg: "Cannot Access the File at This Time..."
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, versions 2.0, 2.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to activate a program item in your personal group using a Switch To
+macro created with the Voice Pilot feature of the Windows Sound System, the
+following error message may be displayed:
+
+   Cannot access the file at this time. Make sure the file is not in use by
+   another program, and is a valid program file.
+
+CAUSE
+=====
+
+The Command Line field of the program item you are trying to start does not
+contain a valid program filename (program files have names with .EXE, .COM,
+.BAT, or .PIF extensions).
+
+RESOLUTION
+==========
+
+To activate a non-program file (such as a document file) using the Switch To
+command, follow these steps:
+
+1. In Program Manager, select the item that you want to activate from your
+   personal group.
+
+2. From the File menu, choose Properties.
+
+3. Edit the Command Line field so that the program file associated with the item
+   precedes the item's name. For example, to activate the README.TXT file with
+   the Notepad program, the Command Line field would read:
+
+      NOTEPAD.EXE README.TXT
+
+MORE INFORMATION
+================
+
+You use the Switch To command to start applications or switch to running
+applications. When Voice Pilot encounters this command, it loads the program
+items that are located in the Program Manager group with the same name as the
+current user into the active words list. You can then verbally select the
+program item you want to activate or switch to. This program group, known as
+your personal group, is created automatically when a new user is created, and it
+is maintained in Program Manager.
+
+Additional query words: 2.00 2.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys200 kbWinSoundSys200a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

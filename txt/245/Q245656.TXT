@@ -1,0 +1,72 @@
+DOCUMENT:Q245656  10-AUG-2001  [winnt]
+TITLE   :INFO: Where to Obtain Cluster Automation Server
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:1.0,1.1
+OPER/SYS:
+KEYWORDS:kbClustServSearch kbClustServ100 kbClustServ110 kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Cluster Server, version 1.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to obtain Cluster Automation Server for Windows NT
+4.0 and Windows 2000. Cluster Automation Server (CAS) is a set of ActiveX
+objects that can be used from scripting languages and Visual Basic to query and
+control a Cluster programmatically. CAS ships in the form of Msclus.dll.
+
+MORE INFORMATION
+================
+
+There are two versions of CAS:
+
+ - A Windows NT 4.0 version
+ - A more feature-rich version for Windows 2000
+
+The Windows NT 4.0 version of CAS can be obtained from the Platform SDK that
+ships with Windows 2000 under the Redist\Cluster\NT4\i386 (or alpha) directory.
+Please read the Readme.txt file in that directory before installing the DLL.
+
+NOTE: A copy of Atl.dll may need to be added to your system. For a list of
+Microsoft applications that Atl.dll ships with, please refer to the following
+Web site:
+
+   Microsoft File Version Information Center
+
+CAS is installed by default in Windows 2000. No additional actions need to be
+taken. The DLL is also available in the Windows 2000 Admin Pack.
+
+REFERENCES
+==========
+
+   Microsoft File Version Information Center
+
+Additional query words:
+
+======================================================================
+Keywords          : kbClustServSearch kbClustServ100 kbClustServ110 kbDSupport 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbAudDeveloper kbClustServSearch kbClustServ110
+Version           : winnt:1.0,1.1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

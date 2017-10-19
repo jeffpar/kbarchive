@@ -1,0 +1,84 @@
+DOCUMENT:Q149479  02-NOV-1999  [fortran]
+TITLE   :BUG: Cannot Scroll to End of Last Field in Format Editor
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbFortranPS kbLangFortrankbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran PowerStation for Windows 95 and Windows NT, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You cannot scroll to or view the end of a long character string constant in the
+Format Editor when the field containing the character constant is the last in
+the FORMAT descriptor, the string length is greater than a single line, and the
+cursor has moved out of the custom field's client area. You can only scroll the
+client area to the end of the field when a new field is inserted at the end of
+the descriptor.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a source file using the sample code in Developer Studio.
+
+2. Highlight the FORMAT statement, and then start the Format Editor by selecting
+   Fortran Format Editor from the Edit menu.
+
+3. Select the last field in the descriptor list containing the string, "Really
+   long character Character String."
+
+4. At the end of the character string, begin and continue typing in the letter
+   "x" (without the quotation marks) until the screen is scrolled out of the
+   custom field area.
+
+NOTE: Attempting to scroll to the end of the field using the scroll bar will not
+work. To view the end of the character string constant, you must insert a new
+field after it. This causes the custom field client area to be scrolled beyond
+the character string constant to the new field.
+
+Sample Code
+-----------
+
+   C Compile options needed: none
+
+   110   FORMAT( i4, 'Character String', G10.2, E10.2,
+        + 'Really long character Character String')
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbFortranPS kbLangFortran kbbuglist
+Technology        : kbAudDeveloper kbPTProdChange kbFortranSearch kbFORTRANPower400NT
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

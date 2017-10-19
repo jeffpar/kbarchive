@@ -1,0 +1,224 @@
+DOCUMENT:Q157670  02-MAY-2002  [visualc]
+TITLE   :INFO: STL Sample for the Pair Logical Operator Functions
+PRODUCT :Microsoft C Compiler
+PROD/VER::4.2,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbcode kbtemplate kbSTL kbVC420 kbVC500 kbVC600 kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Standard C++ Library, used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0, 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0, 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+    - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+NOTE: Microsoft Visual C++ NET (2002) supported both the managed code model that is provided by the .NET Framework and the unmanaged native Windows code model. The information in this article applies to unmanaged Visual C++ code only.
+
+SUMMARY
+=======
+
+The sample code below illustrates how to use the pair logical operator STL
+functions in Visual C++.
+
+MORE INFORMATION
+================
+
+Required Header
+---------------
+
+      < utility >
+
+Prototype
+---------
+
+It is interesting to note that only the < and == operators are necessary in
+order to define all of the logical operators.
+
+      template<class _T1, class _T2> inline
+
+         bool operator==(const pair<_T1, _T2>& _X,
+            const pair<_T1, _T2>& _Y)
+         {return (_X.first == _Y.first && _X.second == _Y.second); }
+
+      template<class _T1, class _T2> inline
+
+         bool operator<(const pair<_T1, _T2>& _X,
+            const pair<_T1, _T2>& _Y)
+         {return (_X.first < _Y.first ||
+            !(_Y.first < _X.first) && _X.second < _Y.second); }
+
+NOTE: The class/parameter names in the prototype may not match the version in the
+header file. Some have been modified to improve readability.
+
+Description
+-----------
+
+The functions are described in the comments section of the sample.
+
+Sample Code
+-----------
+
+   ///////////////////////////// 
+   // Compile options needed: none
+   // 
+   // paircomp.cpp : Illustrates several comparison
+   //                operators used to compare two
+   //                pair objects.
+   // 
+   // Functions:
+   // 
+   //    operator== - returns true if two pair objects are identical.
+   // 
+   //    operator!= - returns true if two pair objects are not identical.
+   // 
+   //    operator<  - returns true for (A < B) if pair object A is less
+   //                 than pair object B.
+   // 
+   //    operator<= - returns true for (A <= B) if pair object A is less
+   //                 than or equal to pair object B.
+   // 
+   //    operator>  - returns true for (A > B) if pair object A is greater
+   //                 than pair object B.
+   // 
+   //    operator>= - returns true for (A >= B) if pair object A is greater
+   //                 than or equal to pair object B.
+   // 
+   // Written by Mark Hagen
+   // of Microsoft Technical Support
+   // Copyright (c) 1996 Microsoft Corporation.
+   // All rights reserved.
+   ///////////////////////////// 
+
+   #include <iostream>
+   #include <utility>
+
+   #if _MSC_VER > 1020   // if VC++ version is > 4.2
+      using namespace std;  // std c++ libs implemented in std
+      #endif
+
+   /* STL pair data type containing int and float */ 
+
+   typedef struct pair<int, float> PAIR_IF;
+
+   void main(void)
+
+   {
+     PAIR_IF A(10,3.14);
+     PAIR_IF B(18,3.14);
+     PAIR_IF C(10,6.28);
+     PAIR_IF D(10,3.14);
+
+   /* show pair values */ 
+
+     cout << "A = ( " << A.first << " , " << A.second << " )" << endl;
+     cout << "B = ( " << B.first << " , " << B.second << " )" << endl;
+     cout << "C = ( " << C.first << " , " << C.second << " )" << endl;
+     cout << "D = ( " << D.first << " , " << D.second << " )" << endl;
+
+   /* operator== */ 
+
+     if (A==D)
+
+       cout << "A and D are equal" << endl;
+
+     else
+
+       cout << "A and D are not equal" << endl;
+
+   /* operator!= */ 
+
+     if (B!=C)
+
+       cout << "B and C are not equivalent" << endl;
+
+     else
+
+       cout << "B and C are equivalent" << endl;
+
+   /* operator> */ 
+
+     if (A>C)
+
+       cout << "A is greater than C" << endl;
+
+     else
+
+       cout << "A is not greater than C" << endl;
+
+   /* operator>= */ 
+
+     if (A>=C)
+
+       cout << "A is greater than or equal to C" << endl;
+
+     else
+
+       cout << "A is not greater than or equal to C" << endl;
+
+   /* operator< */ 
+
+     if (C<D)
+
+       cout << "C is less than D" << endl;
+
+     else
+
+       cout << "C is not less than D" << endl;
+
+   /* operator<= */ 
+
+     if (C<D)
+
+       cout << "C is less than or equal to D" << endl;
+
+     else
+
+       cout << "C is not less than or equal to D" << endl;
+
+   }
+
+Program Output is:
+
+A = ( 10 , 3.14 )
+B = ( 18 , 3.14 )
+C = ( 10 , 6.28 )
+D = ( 10 , 3.14 )
+A and D are equal
+B and C are not equivalent
+A is not greater than C
+A is not greater than or equal to C
+C is not less than D
+C is not less than or equal to D
+
+REFERENCES
+==========
+
+Visual C++ Books On Line: Visual C++ Books:C/C++:Standard C++ Library Reference.
+
+Additional query words: STL STLSample operator pair comparison logical boolean
+
+======================================================================
+Keywords          : kbcode kbtemplate kbSTL kbVC420 kbVC500 kbVC600 kbDSupport 
+Technology        : kbVCsearch kbAudDeveloper kbVCNET kbVCLibrary
+Version           : :4.2,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

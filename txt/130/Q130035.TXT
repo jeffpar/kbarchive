@@ -1,0 +1,100 @@
+DOCUMENT:Q130035  04-NOV-1999  [pcmail]
+TITLE   :PC Win: Troubleshooting Segment Load Failures in Mail
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If an application attempts to access a segment of code that is not in memory,
+Microsoft Windows will load it from the hard disk. If the segment cannot be
+loaded into memory the following error message will be generated:
+
+   Segment Load Failure
+
+CAUSE
+=====
+
+Segment Load Failures can be the result of any of the following:
+
+1. A discarded code segment has been damaged or moved.
+
+2. Windows has insufficient resources to load the file.
+
+3. Insufficient MS-DOS file handles.
+
+4. Corrupt binary files.
+
+RESOLUTION
+==========
+
+1. A discarded code segment has been damaged or moved.
+
+   Put a fresh copy of the appropriate file on the hard disk. You can find the
+   file on the Install diskettes, and then expand it, if necessary.
+
+2. Windows has insufficient resources to load the file.
+
+   Make sure that there are no other Windows applications running when you start
+   Mail. Ensure you do not have anything on the following lines of the WIN.INI:
+
+   LOAD=
+   RUN=
+
+   Also remove all items from the startup group, or suppress it on startup by
+   pressing and holding the SHIFT key.
+
+3. Insufficient MS-DOS file handles.
+
+   Ensure you have following minimum setting in the CONFIG.SYS:
+
+   FILES=60
+
+4. Corrupt binary files.
+
+   You may need to reinstall Windows.
+
+MORE INFORMATION
+================
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q94380 Troubleshooting 'Segment Load Failure' Errors
+
+   Q82710 Causes of General Protection Faults
+
+   Q107471 WFWG 3.11 Err Msg: Segment Load Failure
+
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

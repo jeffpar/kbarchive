@@ -1,0 +1,68 @@
+DOCUMENT:Q238897  04-MAY-2001  [visualc]
+TITLE   :HOWTO: Preset the Win CE Computer Name
+PRODUCT :Microsoft C Compiler
+PROD/VER:N\A:2.11,2.12; WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Embedded Toolkit for Visual C++ 5.0 
+ - Microsoft Windows CE 2.10 Enhancement Pack for Windows CE Embedded Toolkit for Visual C++ 5.0 
+ - Microsoft Windows CE Platform Builder, versions 2.11, 2.12 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Windows CE device name can be set in the base registry file by editing a
+.reg file (that is, Project.reg) to include the following:
+
+      [HKEY_LOCAL_MACHINE\Ident]
+      "OrigName"="WinCE"
+      "Name"="MyCEPC"
+
+Where "MyCEPC" can be a value of your choosing.
+
+Without this change, the default device name is "WinCE" and you must change the
+value in the Control Panel Communications applet.
+
+Adding a preset computer name is useful for testing on the sample CEPC platform
+which cannot be warm-booted to activate changes to the registry.
+
+MORE INFORMATION
+================
+
+The Windows CE Server Message Block (SMB) redirector requires that a unique
+computer name be set before network file system services can be activated. The
+network redirector checks for the existence of the "OrigName" value, and also
+checks that it is not set to the same value as "Name".
+
+Until a name is set, accessing network resources using the UNC naming convention
+(\\ServerName\ShareName) is not possible.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSDKSearch kbWinCEETKSearch kbWinCESDKSearch kbWinCESearch kbWinCESDK211 kbWinCESDK212 kbWinCEEnh210ETKVC500 kbWinCEETKVC500
+Version           : N\A:2.11,2.12; WINDOWS:
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

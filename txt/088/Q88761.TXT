@@ -1,0 +1,54 @@
+DOCUMENT:Q88761  12-OCT-1999  [win95x]
+TITLE   :HP Mouse Stops in Windows
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+A Hewlett-Packard HP-HIL mouse may stop in Windows 3.0 and 3.1 for one
+of two possible reasons:
+
+ - The HP-HIL mouse may connect to the computer keyboard on some Hewlett-Packard
+   (HP) Vectra machines and will not move while disk I/O is taking place. This
+   is a hardware limitation of this mouse model and is not a Windows problem.
+   The problem may be less evident outside of Windows because normal MS-DOS is
+   not a multitasking environment.
+
+ - Using an older Hewlett-Packard (HP) MS-DOS mouse driver (MOUSE.COM or
+   MOUSE.SYS) with Windows versions 3.0 and 3.1 can cause the HP-HIL Mouse to
+   freeze when switching between MS-DOS-based applications.
+
+   The Microsoft MS-DOS mouse drivers will NOT recognize the HP HIL Mouse. The HP
+   mouse driver must be used. Use the MOUSEHP.CO_ and MOUSEHP.SY_ from the
+   Windows disks, and use the EXPAND utility to expand them into MOUSEHP.SYS and
+   MOUSEHP.COM.
+
+Additional query words: 3.00 3.00a 3.10 3.11 hang crash stop freeze lock 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

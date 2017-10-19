@@ -1,0 +1,77 @@
+DOCUMENT:Q174229  01-JAN-2001  [winnt]
+TITLE   :Control Panel Date/Time Tool Changes the Date
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:win95 win98
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 98 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you change the date in the Date/Time tool in Control Panel, the change is
+effective without having to click Apply or OK. This can cause problems for
+programs that record or use the date for logging purposes.
+
+CAUSE
+=====
+
+Changes to the Date/Time tool in Control Panel are effective immediately for
+date operations.
+
+RESOLUTION
+==========
+
+To work around this behavior, it is recommended that you synchronize your date
+with a computer on your network. To do this, type the following command at the
+command prompt, and then press ENTER:
+
+net time [\\computername | /domain[:domainname]] [/set]
+
+Alternatively, make sure that any services that record data along with date
+information are paused or stopped while the date is changed.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+For additional information about this issue on Windows NT, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q194078 System Date Reflects Changes Immediately
+
+Additional query words: cpanel
+
+======================================================================
+Keywords          : win95 win98 
+Technology        : kbWin95search kbWin98search kbZNotKeyword3 kbWin98
+Version           : WINDOWS:95
+Hardware          : ALPHA PPC x86
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,77 @@
+DOCUMENT:Q153003  26-OCT-2000  [foxpro]
+TITLE   :How To Perform a Screen Capture Programmatically
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,6.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbvfp300 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is not possible to use the KEYBOARD command in FoxPro to stuff the keyboard
+buffer with PrintScrn or Alt+PrintScrn to copy the whole screen or the active
+window to the clipboard. This article describes how you can call the Win32 API
+function, keybd_event, to get this functionality under Windows 95 and Windows
+NT. This functionality, however, is not available under Windows 3.1 or Windows
+for Workgroups since the Win32s subsystem does not contain these API functions.
+
+MORE INFORMATION
+================
+
+The following commands register the keybd_event function and set up a variable
+that will be passed each time to the function:
+
+      DECLARE INTEGER keybd_event IN Win32API ;
+         INTEGER, INTEGER, INTEGER, INTEGER
+      VK_SNAPSHOT = 44    && from the winuser.h
+      VK_LMENU = 164
+      KEYEVENTF_KEYUP = 2
+      KEYEVENTF_EXTENDEDKEY = 1
+
+The following commands copy the full windows desktop to the clipboard (the
+equivalent of PrintScrn):
+
+   DOEVENTS
+   keybd_event(VK_SNAPSHOT, 1, 0, 0 )
+   keybd_event(VK_SNAPSHOT, 1, KEYEVENTF_KEYUP, 0 )
+   DOEVENTS
+
+The following commands copy the active application window to the clipboard (the
+equivalent of ALT+PrintScrn):
+
+   DOEVENTS
+   keybd_event( VK_LMENU,    0, KEYEVENTF_EXTENDEDKEY, 0 )  && key down
+   keybd_event( VK_SNAPSHOT, 0, KEYEVENTF_EXTENDEDKEY, 0 )
+   keybd_event( VK_SNAPSHOT, 0, KEYEVENTF_EXTENDEDKEY + KEYEVENTF_KEYUP, 0 )
+   keybd_event( VK_LMENU,    0, KEYEVENTF_EXTENDEDKEY + KEYEVENTF_KEYUP, 0 )  
+   DOEVENTS
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kb3rdparty kbvfp300 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP600
+Version           : WINDOWS:3.0,3.0b,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,83 @@
+DOCUMENT:Q152922  21-JUL-1999  [exchange]
+TITLE   :XGEN: SMTP Addresses Don't Extract from MAC Mail to Exchange PAB
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbusage exc4
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+SMTP addresses are not extracted when migrating MAC Mail personal address list
+(PAL) entries to Microsoft Exchange Windows client personal address book (PAB).
+The following is an example of what occurs with a valid SMTP address:
+
+   entry,User 1,user1@company.com
+
+Note that the SMTP address type is not specified.
+
+CAUSE
+=====
+
+The extractor does not attempt to recognize SMTP addresses and tag them as such.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. This problem was corrected in Service Pack o4 Microsoft Exchange
+Server 4.0. For information on obtaining the Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+MORE INFORMATION
+================
+
+Service Pack 2 is required to create a Windows PAB from the MAC PAL. It is not
+possible to create an Exchange MAC PAB from a MAC PAL. For more information,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q152895 XADM: Unable to Migrate PABs for Appletalk Mail Users
+
+SMTP addresses are the only address types that are correctly migrated. X.400, PC
+Mail, and Exchange addresses are not migrated although they might appear to be
+after the migration. After you import the PAB (the Migrate.pab file is created
+by running the Appletalk Mail Source Extractor) into a Microsoft Exchange
+Windows client, the only names that are valid are the ones with SMTP addresses.
+All other addresses will give the following undeliverable message from the
+System Administrator:
+
+   No transport provider was available for delivery to this recipient.
+
+Additional query words: 2397 Q152895
+
+======================================================================
+Keywords          : kbusage exc4 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

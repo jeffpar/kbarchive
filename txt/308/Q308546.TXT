@@ -1,0 +1,81 @@
+DOCUMENT:Q308546  06-AUG-2002  [homegame]
+TITLE   :Err Msg: Link to the Room You Have Clicked on Is Out of Date
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Zone.com 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click a link to a game room or lobby on the Microsoft Zone.com Web
+site, you may receive the following error message:
+
+   The link to the room that you have clicked on is out of date. Please refresh
+   the current Web page in your Web browser, and then try to reconnect.
+
+CAUSE
+=====
+
+This behavior can occur if the game room or lobby links on the Zone.com Web site
+have recently changed, and your browser is still pointing to the old links.
+
+RESOLUTION
+==========
+
+To resolve this issue, wait for the links to be updated in your Web browser, or
+try clicking a different game room or lobby for the particular game that you
+want to play.
+
+To ensure that outdated Zone pages are not stored on your computer, use the
+following for your Web browser.
+
+Microsoft Internet Explorer 4.x and Later
+-----------------------------------------
+
+1. On the View menu (Internet Explorer 4.<x>) or Tools menu (Internet
+   Explorer 5.0), click Internet Options.
+
+2. Under Temporary Internet Files, click Delete Files, and then click Yes or OK.
+
+3. Click Settings.
+
+4. Under "Check for newer versions of stored pages," click "Every time you start
+   Internet Explorer."
+
+5. Click OK twice.
+
+6. Quit and then restart Internet Explorer.
+
+7. Connect to the Zone.
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbGamesSearch kbMSNSearch kbZone
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

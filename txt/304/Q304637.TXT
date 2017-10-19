@@ -1,0 +1,85 @@
+DOCUMENT:Q304637  12-SEP-2001  [iis]
+TITLE   :IIS: Problems Using SSL with AuthentiX ISAPI Filter
+PRODUCT :Internet Information Server
+PROD/VER::3.0,4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 3.0, 4.0 
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are browsing with Microsoft Internet Explorer version 5.0 or later and
+you have Secure Sockets Layer (SSL) enabled while you are using a Flicks
+Software AuthentiX Internet Server API (ISAPI) filter, you may receive the
+following error message:
+
+   Page Cannot Be Displayed
+
+CAUSE
+=====
+
+Normally AuthentiX sends a Pragma: no-cache header with each file that is served
+in a cookie-protected folder; if you have cookie timeouts set, this ensures that
+a page is not cached in the browser and is not available for viewing after the
+timeout has expired. When you attempt to download a file with SSL and Internet
+Explorer, the Pragma: no-cache header causes an error.
+
+NOTE: With SSL, the default setting for all browsers is not to cache pages from
+SSL encrypted sites, so the Pragma: no-cache header is unnecessary.
+
+WORKAROUND
+==========
+
+To turn off Pragma: no-cache headers, follow these steps:
+
+1. In the registry, add the following REG_DWORD value with the name
+   CookieStopNoCache. Set its value to 1 to stop the Pragma: no-cache headers.
+
+   HKEY_LOCAL_MACHINE/Software/Flicks Software/AuthentiX/1.0/AuthentiXConfig
+
+NOTE: If you want to stop the Cache-Control: private header, use
+CookieStopPrivate. If you want to stop Expires: 0, use CookieStopExpires.
+
+2. Use Control Panel to stop and restart the IIS Admin Service (if you are
+   running IIS versions 4.0 or 5.0) or the World Wide Web Publishing Service (if
+   you are running IIS 3.0).
+
+REFERENCES
+==========
+
+For more information, see the following Web site:
+
+   http://www.flicks.com/prod.htm#authnx
+
+Additional query words: kbiisSearch, iis 5, AuthentiX, SSL
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500 kbiis400 kbiis300
+Version           : :3.0,4.0,5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

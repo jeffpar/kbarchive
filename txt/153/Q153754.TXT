@@ -1,0 +1,67 @@
+DOCUMENT:Q153754  31-MAR-1999  [exchange]
+TITLE   :XADM: Misleading NDR When Recipient has Incoming Size Limit
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you sent a message a Microsoft Exchange account that has a Maximum Incoming
+Message Size limit and the message exceeds this limit, you will receive
+Non-Delivery Report (NDR) similar to the following:
+
+   Your message did not reach some or all of the intended recipients:
+   Subject: test
+   Sent: 7/16/96 2:23:23 PM
+   The following recipient(s) could not be reached:
+   Curley on 7/16/96 2:23:23 PM
+   Either the size of this message exceeds your maximum allowed message size or
+   you have exceeded the storage limit on your mailbox.
+   [MSEXCH:MSExchangeIS:MARVEL:XMEN]"
+
+MORE INFORMATION
+================
+
+Notice that the NDR seems to imply that the sender has exceeded a quota or
+message size limit although the sender does not have any restrictions and the
+restrictions are on the intended recipient.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

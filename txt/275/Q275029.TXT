@@ -1,0 +1,63 @@
+DOCUMENT:Q275029  12-NOV-2001  [homegame]
+TITLE   :AoE: Villagers Stand in Building Foundation and Do Nothing
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Age of Empires Expansion: The Rise of Rome, version 1.0 
+ - Microsoft Age of Empires, Gold Edition 
+ - Microsoft Age of Empires II: The Age of Kings, version 2.0 
+ - Microsoft Age of Empires II Expansion: The Conquerors 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you send villagers to construct a building in Microsoft Age of Empires, the
+villagers may stand in the building foundation and do nothing.
+
+CAUSE
+=====
+
+This behavior can occur if either of the following conditions is true:
+
+ - A new villager who is created by a Town Center is directed to a gather point
+   that is placed on an abandoned foundation.
+
+ - A villager who is instructed to start a building is redirected after the
+   foundation is placed.
+
+MORE INFORMATION
+================
+
+To prevent this issue from occurring, do not place gather points in building
+foundations.
+
+Additional query words: 1.00 2.00 msgame rise of rome expansion pack aoe aok idle idly lazy
+
+======================================================================
+Keywords          : kbimu msgame 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbAOESearch kbAOEExpRome kbAOE2ExpConquerors kbAOE2Kings
+Version           : :1.0,2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,70 @@
+DOCUMENT:Q264972  18-SEP-2001  [winnt]
+TITLE   :Event ID 5072 and Error 5216 Appear When You Restart Cluster Ser
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you restart Node A of a cluster, the Cluster Service does not start, and
+Event Viewer records Event ID 5072 and Error 5216.
+
+CAUSE
+=====
+
+This behavior can occur when the startup type of the Internet Information
+Service (IIS) Admin Service is set to Manual.
+
+RESOLUTION
+==========
+
+To resolve this behavior, set the startup type of the IIS Admin Service to
+Automatic; the cluster starts normally.
+
+MORE INFORMATION
+================
+
+Follow these steps:
+
+1. Start Control Panel, and then double-click Services.
+
+2. In the Service list, click IIS Admin Service.
+
+3. Click Startup.
+
+4. In the Startup Type group, click Automatic, and then click OK.
+
+5. Click Close, and then quit Control Panel.
+
+Additional query words: mscs
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

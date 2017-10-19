@@ -1,0 +1,77 @@
+DOCUMENT:Q244716  07-MAY-2002  [homegame]
+TITLE   :FS 2000: Pointing Device Does Not Function on Second Monitor
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbdisplay kbenv fsim kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 2000 Professional Edition 
+ - Microsoft Flight Simulator 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use multiple monitors to display Microsoft Flight Simulator 2000, you
+may be unable to use your pointing device to click elements in the program that
+are displayed the second monitor.
+
+CAUSE
+=====
+
+This behavior can occur if the program window on the second computer is in
+full-screen mode.
+
+RESOLUTION
+==========
+
+To resolve this issue, undock the window in Flight Simulator 2000 and drag it to
+the second monitor screen. To do this:
+
+1. Right-click anywhere on the Flight Simulator 2000 screen, and then click
+   Undock Window.
+
+2. Drag the window to the second monitor screen.
+
+3. Resize the window on the second monitor to the size you want.
+
+MORE INFORMATION
+================
+
+For additional information about Multiple Display support, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q182708 Hardware Requirements for Multiple Display Support in Windows 98
+
+For additional information about how to enable Multiple Display support, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q179602 How to Enable Multiple Display Support Using Windows 98
+
+Additional query words: fsim2000 fsim2k flightsim multimon mouse cursor
+
+======================================================================
+Keywords          : kbdisplay kbenv fsim kbimu msgame 
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim2000 kbSimSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

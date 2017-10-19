@@ -1,0 +1,180 @@
+DOCUMENT:Q154666  11-JAN-2001  [vbwin]
+TITLE   :HOWTO: Create a Private Data Collection for an MDI Child Form
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A form can contain public and private properties similar to the properties found
+in the Properties window of a form or component. You can associate data with
+individual forms by creating a property procedure. Property procedures allow
+individual forms to hold unique data sets.
+
+This article demonstrates how to create property procedures with an MDI
+application containing a child form template. As a result of using this
+technique, each instance of the child form can then contain a unique data set.
+
+MORE INFORMATION
+================
+
+Steps to Create Sample Program
+------------------------------
+
+1. Start Visual Basic. Form1 is created by default.
+
+2. Add an MDI form to the project by completing the following steps:
+
+   a. From the Project Menu, choose Add MDI Form. In Visual Basic 4.0, choose
+      MDI Form from the Insert menu.
+
+   b. Add a PictureBox control to the MDIForm1 form.
+
+   c. Add a Command button to the PictureBox control.
+
+   d. Copy the following code to the Code window of the MDIForm1 form:
+
+            Private Sub MDIForm_Load()
+               Command1.Caption = "New Child Form"
+            End Sub
+
+            Private Sub Command1_Click()
+               Dim F As New Form1
+               F.Caption = "Child " & Forms.Count
+               F.Show
+            End Sub
+
+   e. Make the MDIForm1 form the startup form by completing the following
+      steps:
+
+      1. From the Project menu, choose Project1 Properties. In Visual Basic 4.0,
+         choose Options from the Tools menu, and select the Project tab.
+
+      2. Select MDIForm1 from the Startup Object dropdown. In Visual Basic 4.0,
+         select MDIForm1 from the Startup Form dropdown. In the Startup Form
+         combo box, click MDIForm1.
+
+      3. Click OK to close the dialog box.
+
+3. Add another form to the project by completing the following steps:
+
+   a. Choose Add Form from the Project Menu. In Visual Basic 4.0, choose Form
+      from the Insert menu.
+
+   b. Add two command buttons and two text box controls to the Form2 form.
+
+   c. Copy the following code to the Code window of the Form2 form:
+
+            Private Sub Form_Load()
+               Text1.Text = ""
+               Text2.Text = ""
+               Command1.Caption = "Set Property"
+               Command2.Caption = "Get Property"
+            End Sub
+
+            Private Sub Command1_Click()
+               With MDIForm1.ActiveForm
+                  .FirstName = Text1.Text
+                  .LastName = Text2.Text
+               End With
+            End Sub
+
+            Private Sub Command2_Click()
+               With MDIForm1.ActiveForm
+                  Text1.Text = .FirstName
+                  Text2.Text = .LastName
+               End With
+            End Sub
+
+   d. Make the following changes to the Form1 form.
+
+      a. Change the MDIChild property to True.
+
+      b. Add a command button.
+
+      c. Copy the following code to the Code window of the Form1 form:
+
+            Private TempFirstName As String
+            Private TempLastName As String
+
+            Private Sub Form_Load()
+               Command1.Caption = "Show Dialog Box"
+            End Sub
+
+            Private Sub Command1_Click()
+               Form2.Show
+            End Sub
+
+            Public Property Get FirstName()
+               FirstName = TempFirstName
+            End Property
+
+            Public Property Let FirstName(vNewValue)
+               TempFirstName = vNewValue
+            End Property
+
+            Public Property Get LastName()
+               LastName = TempLastName
+            End Property
+
+            Public Property Let LastName(vNewValue)
+               TempLastName = vNewValue
+            End Property
+
+   e. Save the project.
+
+   f. Run the sample program by completing the following steps:
+
+      a. On the Run menu, click Start or press the F5 key to start the program.
+
+      b. Create two child forms by clicking the New Child Form button twice.
+
+      c. For each child form, click the Show Dialog button to display a Form2
+         form.
+
+      d. For each Form2 form, enter a different first and last name in the text
+         boxes and click the Set Property button.
+
+      e. From each child form, click the Show Dialog button again to display the
+         Form2 form created from the child form. Click the Get Property button.
+         Each Form2 form should contain its own first and last name data items
+         in the text boxes.
+
+Additional query words: kbVBp400 kbVBp500 kbVBp600 kbVBp kbdsd kbDSupport kbNoKeyWord
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbVB16bitSearch
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

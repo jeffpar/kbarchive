@@ -1,0 +1,79 @@
+DOCUMENT:Q159597  23-AUG-2001  [winnt]
+TITLE   :Windows Messaging Setup Wizard Error: "Path ... Is Not Valid"
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While you run the Windows Messaging Setup Wizard, you may receive one of the
+following error messages:
+
+   Windows Messaging Setup Wizard
+   The path specified for the file C:\Mail\Mailbox.pst is not valid.
+
+   -or-
+
+   Path does not exist. Please verify the correct path was given.
+
+   -or-
+
+   Windows Messaging Setup Wizard
+   The path specified for this personal address book file is not valid. Type the
+   path and filename of the personal address book you want to use,or choose
+   Browse to select a location.
+
+NOTE: The path specified in the preceding error messages is given as an example;
+the path may vary depending on your specific path.
+
+CAUSE
+=====
+
+You typed in a new path for the personal folder file (PST file) or the personal
+address book (PAB file), and one or more folders in the path you specified does
+not exist. The Windows Messaging Setup Wizard will only create new folders for
+you when you are using Browse.
+
+RESOLUTION
+==========
+
+To resolve this problem, you must either specify a path that contains an
+existing folder or create the folder with Browse before continuing with the
+Windows Messaging Setup Wizard.
+
+NOTE: Do not confuse the term "folder" (referring to the term currently used to
+represent directories on your hard disk drive) with "personal folder file" (the
+file containing your Windows Messaging folders, where mail messages are stored).
+
+Additional query words: prodnt exchange
+
+======================================================================
+Keywords          : kberrmsg kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

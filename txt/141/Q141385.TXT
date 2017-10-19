@@ -1,0 +1,68 @@
+DOCUMENT:Q141385  08-AUG-2001  [crossnet]
+TITLE   :Cogent EM110 PCI and MS-DOS client 3.0
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:MS-DOS:3.0; winnt:3.5,3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+ - Microsoft MS-DOS operating system version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use the MS-DOS client 3.0 with the Cogent EM110 PCI network card,
+TCPIP, NWLINK or NetBEUI does not work. However, the network interface card
+(NIC) works fine with Windows NT.
+
+MORE INFORMATION
+================
+
+The Drvlib (currently Windows NT 3.51) does not have a driver for the Cogent
+EM110 PCI network card. The one off the distribution disk that was shipped with
+the Lan card must be used for the MS-DOS client. When using the three protocols
+listed above, you will see the following symptoms:
+
+   NetBEUI - Binds and loads, but is not be able to connect to anyone
+
+   NWLink - Same symptoms as NetBEUI
+
+   TCPIP - Hangs when loading TCPTSR.EXE.
+
+WORKAROUND
+==========
+
+Cogent Tech support has a new NDIS2 driver on their BBS and CompuServe forum (GO
+Cogent) that fixes this problem with their NDIS2 driver.
+
+EM110 is manufactured by and is a trademark of Cogent Corporation, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search kbMSDOSSearch kbMSDOS300
+Version           : MS-DOS:3.0; winnt:3.5,3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

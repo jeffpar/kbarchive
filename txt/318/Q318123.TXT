@@ -1,0 +1,79 @@
+DOCUMENT:Q318123  06-AUG-2002  [sna]
+TITLE   :Setup Does Not Recognize .inf File During Unattended HIS Install
+PRODUCT :Microsoft SNA Server
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you specify an .inf setup file for an unattended install of either the Host
+Integration Server (HIS) 2000 clients (HIAdmin.msi/HIClient.msi) or server
+(HIServer.msi), the Setup program does not recognize the values in the .inf
+setup file. As a result, the HIS clients/HIS server software is installed with
+default settings.
+
+CAUSE
+=====
+
+You did not specify the path to the .inf file in the command line. For example,
+the following command line performs an unattended install, but the specialized
+.inf file HIServer.inf will be ignored:
+
+   MSIExec /I hiserver.msi UNATTENDED_INSTALL_FILENAME=hiserver.inf /q
+
+RESOLUTION
+==========
+
+Specify the path to the .inf file by changing the command line to appear as
+follows:
+
+   MSIExec /I hiserver.msi UNATTENDED_INSTALL_FILENAME=<path>\hiserver.inf
+   /q
+
+MORE INFORMATION
+================
+
+For more information about automating setup of Host Integration Server, refer to
+the following TechNet Web site:
+
+   Automating Setup and Using the MSIEXEC Application
+   http://www.microsoft.com/technet/treeview/default.asp?url=/TechNet/prodtechnol/host/proddocs/install/instch08.asp
+   (http://www.microsoft.com/technet/treeview/default.asp?url=/TechNet/prodtechnol/host/proddocs/install/instch08.asp)
+
+For additional information about installation on HIS clients, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q307819 Problems with Automated Installation of Host Integration Server
+   Clients
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbHostIntegServ2000
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

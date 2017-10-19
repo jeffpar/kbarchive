@@ -1,0 +1,61 @@
+DOCUMENT:Q169468  27-JUL-2001  [odbc]
+TITLE   :BUG: SQL Server ODBC Driver AVs When Inserting from a Remote SP
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:2.65
+OPER/SYS:
+KEYWORDS:kbprogramming kbBug kbISS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft ODBC Driver for SQL Server, version 2.65 
+-------------------------------------------------------------------------------
+
+BUG #: 16924 (SQL)
+
+SYMPTOMS
+========
+
+The SQL Server ODBC driver may generate an access violation (AV) error if an
+application is inserting data from a remote stored procedure that contains ORDER
+BY clause. The access violation occurs when the application calls SQLExecDirect
+or SQLPrepare/SQLExecute to execute the INSERT statement.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft SQL Server ODBC
+driver version 2.65. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+WORKAROUND
+==========
+
+To work around this problem, remove the ORDER BY clause from the remote stored
+procedure.
+
+Additional query words: SQLFetch SQLExecDirect 2.65.240
+
+======================================================================
+Keywords          : kbprogramming kbBug kbISS 
+Technology        : kbSQLServSearch kbAudDeveloper kbODBCSearch kbODBCSQLServ265
+Version           : WINDOWS:2.65
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

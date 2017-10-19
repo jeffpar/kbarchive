@@ -1,0 +1,75 @@
+DOCUMENT:Q272543  08-MAY-2002  [winnt]
+TITLE   :Network Segment Object in Performance Monitor Has Limitations
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses some limitations of the Network Segment object in the
+Performance Monitor utility.
+
+MORE INFORMATION
+================
+
+Unlike other objects, the Network Segment object does not start the collection
+of counter values at system startup. You have to start the collection and
+restrict its context to a process. The effects of the preceding behavior are
+summarized in the following list:
+
+ - If you call the network segment counters in a program, the collection must be
+   started by calling the 1110 object, waiting for a short period of time, and
+   then calling "1110" or "Global" to obtain network statistics.
+
+ - The raw values of the network segment counters are collected by the Bhmon.dll
+   tool (the Microsoft Windows NT version of Network Monitor) or the NmPerf.dll
+   tool (the Microsoft Systems Management Server, SMS, version of Network
+   Monitor).
+
+   Both tools (providers) do not have a provision to accumulate data between
+   runs. There is no preserved context and no service runs to accumulate data on
+   a ongoing basis; unlike the network interface provider, which always runs and
+   merely takes numbers from the Browser.dll tool.
+
+   In a process, the counters are accumulative, but as the process is stopped,
+   the counter values are lost. A program that runs in a different process can
+   start the cycle if it first starts the collection process, and then reads a
+   new set of counter values.
+
+   The preceding behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : :4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

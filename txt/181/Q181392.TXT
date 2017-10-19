@@ -1,0 +1,88 @@
+DOCUMENT:Q181392  11-DEC-1999  [foxpro]
+TITLE   :PRB: Some Keywords Are Not Highlighted
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a
+OPER/SYS:
+KEYWORDS:kbvfp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Some Visual FoxPro keywords, like Release in ThisForm.Release, do not show up
+has highlighted words in the object's code window or the Command window.
+
+RESOLUTION
+==========
+
+The color of text in Visual FoxPro code can be changed using the Syntax Coloring
+tab of the Options dialog box that is accessed from the Tools menu. The Area
+drop-down list box in the Syntax color settings section is used to select
+different parts of the Visual FoxPro language for setting syntax coloring.
+
+To get keywords such as RELEASE and WHATSTHISHELP to use the same color as other
+Visual FoxPro keywords, set the Area to Variables and set the Foreground to Blue
+or to the color that the Keywords area is using.
+
+NOTE: After setting the Variables item to the specified color, all custom
+variables that are created will be the same color as the keywords and commands.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a form and add a command button.
+
+2. Double-click the command button to open the code window for the Click event.
+
+3. Type the following commands:
+
+         thisform.RELEASE
+         thisform.WHATSTHISHELP
+         thisform.WHATSTHISBUTTON
+         thisform.REFRESH
+         thisform.ACTIVATE
+
+4. The properties or events of the first three commands are not properly
+   highlighted in the code window. However, the last two commands are properly
+   highlighted.
+
+5. Close and do not save the form.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

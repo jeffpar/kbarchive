@@ -1,0 +1,57 @@
+DOCUMENT:Q134533  17-DEC-2000  [win95x]
+TITLE   :Micron Pentium 90 with Phoenix BIOS Hangs on Shutdown
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Shut Down command to shut down Windows 95 on a Micron Pentium
+90-MHz computer, the computer may stop responding (hang).
+
+CAUSE
+=====
+
+This problem occurs because the computer contains an outdated BIOS. The problem
+occurs with BIOS revision number 4.04 M54Pi-N14p.
+
+RESOLUTION
+==========
+
+To correct this problem, Micron recommends that you upgrade the ROM BIOS to
+revision 19. You can obtain the ROM BIOS flash upgrade from Micron, or from
+Micron's Web site at:
+
+   http://www.mei.micron.com
+
+Download the 90_PM_19.ZIP file from Micron's Web site.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

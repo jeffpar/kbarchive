@@ -1,0 +1,123 @@
+DOCUMENT:Q127974  25-JUN-2002  [accother]
+TITLE   :ADT/ODE: Error Msg: Could Not Open the File Named <File Name>
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER:WINDOWS:2.0,7.0,97
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Access Developer's Toolkit, versions 2.0, 7.0 
+ - Microsoft Office 97 Developer Edition 
+-------------------------------------------------------------------------------
+
+
+Novice: Requires knowledge of the user interface on single-user computers.
+
+SYMPTOMS
+========
+
+When you are running the Setup program for an application that was created with
+the Microsoft Office 97 Developer Edition Tools (ODE) or the Microsoft Access
+Developer's Toolkit (ADT), you may receive the following error message:
+
+   In Microsoft Office 97 Developer Edition Tools and Microsoft Access
+   Developer's Toolkit version 7.0:
+
+   Setup could not open the file '<filename>'.
+
+   In Microsoft Access Developer's Toolkit version 2.0:
+
+   Could not open the file named: '<filename>'.
+
+The specified file has a name with an extension that contains one or two letters
+(for example, READ.ME).
+
+CAUSE
+=====
+
+The Setup Wizard requires three-letter file extensions (for example, MYDB.MDB).
+This is a limitation of the Setup Wizard.
+
+NOTE: Microsoft Access 97 and Microsoft Access version 7.0 allows files that have
+no extensions, for example, README.
+
+RESOLUTION
+==========
+
+To work around this problem, you can use either of the following methods:
+
+ - Make sure all the files included with your application have three-letter
+   extensions.
+
+ - Use the Network Setup (Flat) option when you are prompted "What kind of
+   distribution disks do you wish to create?" This option does not create
+   compressed files for distribution on floppy disks, but places all the files
+   in one folder. This option is useful for creating a Setup program that will
+   be run from a file server or a CD-ROM image.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft Office 97
+Developer Edition Tools (ODE), and the Microsoft Access Developer's Toolkit
+version 2.0 and 7.0.
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a text file called READ.ME.
+
+2. Run the ODE or ADT Setup Wizard and specify the READ.ME file as the only file
+   to include. When you are prompted "What kind of distribution disks do you
+   wish to create?" select:
+
+   In Microsoft Office 97 Developer Edition Tools and Microsoft Access
+   Developer's Toolkit version 7.0:
+
+   Either the 1.44-MB Disks or the Compressed Network Setup option.
+
+   In Microsoft Access Developer's Toolkit version 2.0:
+
+   Either the 1.2 MB Disks or 1.44 MB Disks option.
+
+3. When the Setup Wizard is finished, run the new Setup program. Note that you
+   receive the error message mentioned earlier in this article.
+
+REFERENCES
+==========
+
+For more information about creating disk images using the Setup wizard, search
+the Help Index for "Setup wizard," or ask the Microsoft Access 97 Office
+Assistant.
+
+Additional query words: ext suffix
+
+======================================================================
+Keywords          : kberrmsg kbsetup 
+Technology        : kbOfficeSearch kbAudDeveloper kbAccessSearch kbOffice97Search kbAccessDevTK200 kbOffice97 kbZNotKeyword3 kbAccessDevTK700 kbOffice97DevSearch
+Version           : WINDOWS:2.0,7.0,97
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

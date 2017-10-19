@@ -1,0 +1,69 @@
+DOCUMENT:Q195129  14-NOV-2000  [word97]
+TITLE   :WD97: WordPerfect Table Formulas Are Not Retained in Word
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta kbconversion winword word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+In Microsoft Word 97, when you open a WordPerfect 5.1 for MS-DOS or WordPerfect
+5.1 or 5.2 for Windows document containing tables with formulas (table math),
+only the latest recalculated results of the formulas are retained as normal
+text. The formulas themselves are lost.
+
+CAUSE
+=====
+
+This is a current design limitation of the WordPerfect converters supplied with
+the Word family of products.
+
+WORKAROUND
+==========
+
+Word for Windows does support performing calculations within table cells. To
+restore mathematical relationships among table cells, re-enter the formulas
+after the conversion is complete.
+
+MORE INFORMATION
+================
+
+WordPerfect's Table Math option allows you to define math formulas that add,
+subtract, multiply, and divide the values you put into referenced cells in much
+the same way you can in Word.
+
+WordPerfect's Table Formulas are separate from WordPerfect Equations, which Word
+versions 2.0b and later do retain during conversion.
+
+Additional query words: conversion converted converts transfer transfers translation translate calculate perfect
+
+======================================================================
+Keywords          : kbdta kbconversion winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

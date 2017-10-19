@@ -1,0 +1,76 @@
+DOCUMENT:Q234888  17-DEC-2000  [win95x]
+TITLE   :Cannot Install "Character Map" in Add/Remove Programs
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbsetup kbtool kbui win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install the Character Map tool from the Add/Remove Programs
+tool in Control Panel, Character Map is not on the list of installable tools.
+The following tools may also be missing:
+
+ - Mouse Pointers
+
+ - Net Watcher
+
+ - Quick View
+
+ - System Monitor
+
+ - Windows 95 Tour
+
+ - Multilanguage Support
+
+CAUSE
+=====
+
+This issue can occur if you installed Windows 95 from floppy disk. The tools
+listed earlier in this article are available on the Windows 95 CD-ROM, but not
+on the floppy disks.
+
+RESOLUTION
+==========
+
+To work around this issue, follow the instructions listed in the following
+article in the Microsoft Knowledge Base:
+
+   Q135315 CD-ROM Extras for Microsoft Windows 95 Upgrade
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbtool kbui win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

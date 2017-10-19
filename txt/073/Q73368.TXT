@@ -1,0 +1,75 @@
+DOCUMENT:Q73368  06-MAY-2001  [masm]
+TITLE   :BUG: H2INC 1.0 Does Not Support _syscall or _stdcall
+PRODUCT :Microsoft Macro Assembler
+PROD/VER:MS-DOS:6.0,6.0a,6.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 6.0, 6.0a, 6.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft C to MASM Include file Translator (H2INC) version 1.0 that ships
+with the Microsoft Macro Assembler (MASM) version 6.0 does not support function
+prototypes using _syscall or _stdcall. The H2INC version 1.0 that ships with
+MASM version 6.0b supports _stdcall, but not _syscall.
+
+RESOLUTION
+==========
+
+Page 448 of the "Microsoft Macro Assembler Programmer's Guide" states that
+_syscall and _stdcall are accepted, but H2INC generates errors when it
+encounters prototypes containing these keywords. The _cdecl, _fortran, and
+_pascal language types are supported as documented.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in H2INC version 1.0. We are
+researching this problem and will post new information here as it becomes
+available.
+
+MORE INFORMATION
+================
+
+The following sample prototype demonstrates this problem:
+
+      void _syscall sysfunc(void);
+
+When this prototype is processed by H2INC, the following errors are generated:
+
+   warning HI4820: ignoring function definition : _syscall()
+   error HI2061: syntax error : identifier 'sysfunc'
+
+   -or-
+
+   error HI2143: syntax error: missing ';' before 'stdcall'
+
+Additional query words: 1.00 6.00 buglist6.00 s_utility buglist6.00a buglist6.00b
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600 kbMASM600a kbMASM600b
+Version           : MS-DOS:6.0,6.0a,6.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

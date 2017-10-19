@@ -1,0 +1,93 @@
+DOCUMENT:Q142368  13-JUN-2001  [sna]
+TITLE   :ERD Fails on SNA Directory Entries in SETUP.LOG
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.11; winnt:3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 2.11, on platform(s):
+    - the operating system: Microsoft Windows NT 
+ - the operating system: Microsoft Windows NT 3.51 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you reboot the Windows NT Server and try to perform an emergency repair by
+booting up with the Setup disks, selecting all repair options, and providing the
+Emergency Repair Disk, Setup reports that it is checking the SETUP.LOG file and
+returns the following error message:
+
+   Line xxxx contains a syntax error
+
+If SETUP.LOG is examined with a text editor, one of the following entries will be
+found at the line number stated:
+
+   \SNA\system\hwsetup\snaclasp\3270 Logon Demo.dem = "3270log.scr", ...
+   \SNA\system\hwsetup\snaclasp\AS400 Demo.dem = "5250log.scr", ...
+   \SNA\system\hwsetup\snaclasp\3270 Continuous Demo.dem = "3270flsh.scr",
+   ...\SNA\system\3270 File Transfer Demo.dem = "3270 File Transfer Demo.dem",
+   ...
+
+CAUSE
+=====
+
+SNA Server Demo Scripts directory entries in SETUP.LOG have spaces within them,
+and lack quotation marks around the text for the actual entry.
+
+
+RESOLUTION
+==========
+
+To work around this problem:
+
+1. Open SETUP.LOG using a text editor.
+
+2. Place quotation marks (") around the string preceding the "=" sign.
+
+   For example:
+
+   "\SNA\system\hwsetup\snaclasp\3270 Logon Demo.dem" = "3270log.scr", ...
+   "\SNA\system\hwsetup\snaclasp\AS400 Demo.dem" = "5250log.scr", ...
+   "\SNA\system\hwsetup\snaclasp\3270 Continuous Demo.dem" ="3270flsh.scr",...
+   "\SNA\system\3270 File Transfer Demo.dem" = "3270 File Transfer Demo.dem", ...
+
+3. Save the file, and retry the operation.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 3.51. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+
+Additional query words: prodsna 2.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.11; winnt:3.51
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

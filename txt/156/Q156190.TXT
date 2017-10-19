@@ -1,0 +1,132 @@
+DOCUMENT:Q156190  30-JUL-2001  [visualc]
+TITLE   :FIX: LNK1170 Building Project's Makefile from Command Line
+PRODUCT :Microsoft C Compiler
+PROD/VER:4.0 4.1 4.2
+OPER/SYS:
+KEYWORDS:kbVC500fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Program Maintenance Utility (NMAKE.EXE), included with:
+    - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the NMAKE utility to build a large project created in Visual C++, you
+may encounter the following error:
+
+   fatal error LNK1170: line in command file contains 16383 or more characters
+
+CAUSE
+=====
+
+Visual C++ generates the project makefile such that all of the object modules
+are placed on one line in an inline response file for LINK. LINK cannot accept
+more than 16383 characters on one line.
+
+WORKAROUND
+==========
+
+There are two workarounds:
+
+Workaround 1: A New Makefile
+----------------------------
+
+Copy the project makefile and edit the copy. The object modules are listed in the
+LINK32_OBJS macro. To work around the problem, use macro substitution to insert
+newline charaters after each object module so that each object module is
+specified on a separate line. You need to use the following macro substitution
+in your project makefile: "
+
+      $(LINK32_OBJS:"  "="^
+      ")
+
+" (without the quotation marks) For example, a typical link line in a makefile
+looks similar to the following:
+
+      "$(OUTDIR)\anapp.exe" : "$(OUTDIR)" $(DEF_FILE) $(LINK32_OBJS)
+          $(LINK32) @<<
+       $(LINK32_FLAGS) $(LINK32_OBJS)
+      <<
+
+Change the third line of the above sample to the following: "
+
+      "$(OUTDIR)\anapp.exe" : "$(OUTDIR)" $(DEF_FILE) $(LINK32_OBJS)
+          $(LINK32) @<<
+       $(LINK32_FLAGS) $(LINK32_OBJS:"  "="^
+      ")
+      <<
+
+" (without the quotation marks)NOTE: Two white spaces between the initial set of
+quotes.
+
+You need to use the workaround for both the debug build and the release build of
+your project. If you have any other project configurations, you need to apply
+the workaround to those as well.
+
+Then use NMAKE on the new makefile to build your project.
+
+Workaround 2: Static Libraries
+------------------------------
+
+Break up your project into a main top-level project and several static libraries
+as sub-projects. Static libraries are simply a collection of object modules. You
+can organize your project into several such collections, but you must have at
+least one module in your top-level project--the one containing the entry point
+of your program.
+
+STATUS
+======
+
+Microsoft has confirmed this to be an issue in the Microsoft products listed at
+the beginning of this article. This bug was corrected in Visual C++ version 5.0.
+
+REFERENCES
+==========
+
+Visual C++ version 4.2, Visual C++ Books Online; click Visual C++ Books, User's
+Guides, Visual C++ User's Guide, Working with Projects, Using Projects, and then
+click the "Inserting and Deleting Projects" topic.
+
+Visual C++ version 4.2, Visual C++ Books Online; click Visual C++ Books, User's
+Guides, Visual C++ User's Guide, NMAKE Reference, and then the "NMAKE Reference"
+topic.
+
+Visual C++ version 4.2, Visual C++ Books Online; click Visual C++ Books, User's
+Guides, Visual C++ User's Guide, Working with Projects, Managing Project
+Workspaces, Creating a Project Workspace, and the "Project Types" topic.
+
+Visual C++ version 4.2, Visual C++ Books Online; click Visual C++ Books, User's
+Guides, Visual C++ User's Guide, NMAKE Reference, Macros and NMAKE, Using an
+NMAKE Macro, and then click the "Macro Substitution" topic.
+
+Additional query words: kbVC400bug 1.61.6038
+
+======================================================================
+Keywords          : kbVC500fix 
+Technology        : kbAudDeveloper kbNMAKESearch
+Version           : 4.0 4.1 4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

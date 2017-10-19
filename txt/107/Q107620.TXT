@@ -1,0 +1,53 @@
+DOCUMENT:Q107620  08-DEC-1999  [homemm]
+TITLE   :MAC Dinosaurs: Unable to Cancel Introductory Audio
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dinosaurs for the Macintosh 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When Microsoft Dinosaurs for the Macintosh is started, the introductory audio
+cannot be canceled by clicking the mouse on the active window.
+
+The only way to cancel the introductory audio is by pressing the COMMAND and
+PERIOD keys simultaneously.
+
+MORE INFORMATION
+================
+
+Microsoft Dinosaurs for the Macintosh is based on the original Windows version
+of Dinosaurs. Unlike the Macintosh version, when the Windows version of
+Dinosaurs is started, the introductory audio can be canceled by clicking the
+mouse on the active window.
+
+Additional query words: kbhowto mac 1.0 macmm dinosaurs multi media multimedia multi-media
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbDinosaurs100Mac
+Version           : MACINTOSH:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

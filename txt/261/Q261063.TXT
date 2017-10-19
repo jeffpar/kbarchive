@@ -1,0 +1,87 @@
+DOCUMENT:Q261063  01-JUN-2001  [homegame]
+TITLE   :MCM2: Game Detects Disabled Built-in Video Adapter
+PRODUCT :Microsoft Home Games
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbui kbimu msgame kbgraphxlinkcriticalkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Motocross Madness 2, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Motocross Madness 2 on a computer in which a video adapter is
+built in to the motherboard, the built-in video adapter may be listed in the
+"Select a 3-D Renderer" dialog box, even if the built-in video adapter is
+disabled.
+
+CAUSE
+=====
+
+This behavior can occur if the built-in video adapter is not disabled properly.
+
+RESOLUTION
+==========
+
+To resolve this issue, contact your hardware manufacturer to inquire about how
+to configure the jumpers on the motherboard or change the BIOS settings for the
+computer to properly disable the built-in video adapter.
+
+For information about how to contact your hardware manufacturer, click the
+appropriate article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+MORE INFORMATION
+================
+
+If you do not receive the "Select a 3-D Renderer" dialog box when you start
+Motocross Madness 2:
+
+1. On the Motocross Madness 2 startup screen, click Options ([GRAPHIC:the three
+   gears]).
+
+2. Click Advanced.
+
+3. Click to select the "Show 3-D Renderer Selector at Startup" check box.
+
+4. Click Back ([GRAPHIC:the pointing hand]) until you return to the Motocross
+   Madness 2 startup screen.
+
+5. Click the X button to quit Motocross Madness 2.
+
+6. Restart Motocross Madness 2.
+
+Additional query words: 2.00 msgame integrated cmos mainboard main mother board kbgraphx
+
+======================================================================
+Keywords          : kbdisplay kbui kbimu msgame kbgraphxlinkcritical kbfaq
+Technology        : kbGamesSearch kbMotocrossSearch kbMotocrossM2
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

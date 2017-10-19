@@ -1,0 +1,70 @@
+DOCUMENT:Q154343  08-NOV-2001  [homekids]
+TITLE   :MSB Ocean: Background Music Stops Playing on Macintosh
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:kbmm kbsoundkbfaq
+
+======================================================================
+1.00
+MACINTOSH
+kbsound kbprb buglist1.0
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Scholastic's Magic School Bus series: Explores the Ocean for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Magic School Bus Explores the Ocean for Macintosh (MSB Ocean), while you play
+the Open Ocean puzzle game, the background music stops playing. Although you can
+hear other sounds as you move and rotate puzzle pieces, the ambient music does
+not play.
+
+RESOLUTION
+==========
+
+The background music resumes when you do one of the following:
+
+ - Quit the Open Ocean puzzle, then restart it again.
+
+   -or-
+
+ - Finish the current animal you are working on and proceed to the next animal.
+
+MORE INFORMATION
+================
+
+The background music stops playing when you either ask for a clue by pressing
+the question mark or you begin to move pieces of the puzzle.
+
+Microsoft has confirmed this to be a problem in MSB Ocean for the Macintosh,
+version 1.0.
+
+Additional query words: msbsea frizz kbmm msbocean macmsbocean multimedia multi-media multi media sound gone
+
+======================================================================
+Keywords          : kbmm kbsound kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kbScholasticOceanMac kbMSBSearch
+Version           : MACINTOSH:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

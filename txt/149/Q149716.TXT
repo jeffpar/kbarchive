@@ -1,0 +1,77 @@
+DOCUMENT:Q149716  17-DEC-2000  [win95x]
+TITLE   :New Hardware Is Added to All Hardware Profiles
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you add new hardware on a docking station with the Add New Hardware
+Wizard, Windows 95 may become unstable or generate hardware-oriented error
+messages when the computer is undocked.
+
+CAUSE
+=====
+
+This behavior can occur if Windows 95 has installed the new hardware in all
+configurations (both docked and undocked).
+
+RESOLUTION
+==========
+
+Use either method:
+
+ - If the hardware was added in the docked state and the hardware is not present
+   in the undocked state, remove the device in Device Manager. If the hardware
+   was added in the undocked state, remove the device from the docked
+   configuration.
+
+   NOTE: Disabling the device in the unwanted configuration in Device Manager may
+   not resolve the conflicts. Be sure to click the missing device and click
+   Remove, and then confirm which hardware profile you want to modify.
+
+ - Boot the computer in the docked configuration first. Run the Add New Hardware
+   Wizard, and allow it to detect the devices. Then, boot in the undocked
+   configuration, and run the Add New Hardware Wizard again.
+
+   Windows 95 will detect that the device is not present in the alternate
+   configuration and prompt you to remove the device from that configuration.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: profiles
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

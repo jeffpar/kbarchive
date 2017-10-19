@@ -1,0 +1,77 @@
+DOCUMENT:Q156674  08-NOV-2001  [homekids]
+TITLE   :Magic School Bus: Black Screen Before Microsoft Logo with SB 16
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbhw kbsound kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Scholastic's Magic School Bus series: Explores in the Age of Dinosaurs for Windows, version 1.0 
+ - Scholastic's Magic School Bus series: Explores the Human Body for Windows, version 1.0 
+ - Scholastic's Magic School Bus series: Explores Inside the Earth for Windows, version 1.0 
+ - Scholastic's Magic School Bus series: Explores the Ocean for Windows, version 1.0 
+ - Scholastic's Magic School Bus series: Explores the Rainforest for Windows, version 1.0 
+ - Scholastic's Magic School Bus series: Explores the Solar System for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Explores In the Age of Dinosaurs, your system may stop responding
+(hang) on the black screen prior to the Microsoft logo if you are running with a
+SoundBlaster 16 and the SoundBlaster 16 version 4.0 sound drivers included with
+Microsoft Windows 95.
+
+CAUSE
+=====
+
+The following versions of the SoundBlaster 16 sound drivers cause this problem:
+
+   SB16SND.DRV   -   4.00
+   SB16.VXD      -   4.00.493
+
+RESOLUTION
+==========
+
+To resolve this problem, update to the latest version of the SoundBlaster 16
+drivers from Creative Labs:
+
+ - Creative Labs Web Site: http:// www.soundblaster.com
+
+ - Creative Labs Technical Support: (405) 742-6655
+
+
+MORE INFORMATION
+================
+
+If you continue to experience this problem, please see the following article(s)
+in the Microsoft Knowledge Base:
+
+   Q154321 MSB Dinosaurs: Hangs at a Black Screen on Startup
+
+Additional query words: kids mskids msb frizz kbmm multimedia multi- media multi msbearth
+
+======================================================================
+Keywords          : kbhw kbsound kbHardware 
+Technology        : kbHomeProdSearch _IKkbbogus kbZNotKeyword kbKidsSearch kbScholasticHuman kbScholasticOcean kbScholasticSolar kbScholasticDinosaurs kbScholasticEarth kbScholasticRainForest kbMSBSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

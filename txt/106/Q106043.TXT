@@ -1,0 +1,57 @@
+DOCUMENT:Q106043  05-NOV-1999  [win3x]
+TITLE   :Windows for Workgroups 3.11 Hangs with 09-07-93 EXP16ODI.COM
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If Windows for Workgroups version 3.11 is configured to run using ODI drivers
+with the Intel Ether Express 16 network adapter, Windows for Workgroups may stop
+responding (hang) at the logo screen.
+
+CAUSE
+=====
+
+This problem can be caused by using the EXP16ODI.COM driver dated 09-07-93.
+
+RESOLUTION
+==========
+
+To correct this problem, update the EXP16ODI.COM driver to a version more recent
+than 09-07-93. EXP16ODI.COM can be downloaded from the Intel bulletin board
+service (BBS) at (503) 645-6275 or from the Intel support forum on CompuServe
+[type "go intelforum" (without the quotation marks)]. For more information,
+contact Intel Technical Support at (800) 628-8686.
+
+Additional query words: 3.11 EE16
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

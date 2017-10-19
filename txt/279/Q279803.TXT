@@ -1,0 +1,72 @@
+DOCUMENT:Q279803  26-JUN-2001  [homegame]
+TITLE   :DirectX Diagnostic Tool Lists Debug Version of Files
+PRODUCT :Microsoft Home Games
+PROD/VER::7.0
+OPER/SYS:
+KEYWORDS:kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft DirectX Software Development Kit, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the DirectX Diagnostic Tool (Dxdiag.exe), the following files may
+be listed as the "Debug" version of the files on the DirectX Files tab:
+
+ - D3d8d.dll
+ - D3dx8d.dll
+ - Dinput8d.dll
+ - Dmbandd.dll
+ - Dmcompod.dll
+ - Dmimed.dll
+ - Dmloaded.dll
+ - Dmscripd.dll
+ - Dmstyled.dll
+ - Dmsynthd.dll
+ - Dmusicd.dll
+ - Dswaved.dll
+
+CAUSE
+=====
+
+This behavior occurs if you uninstall the Microsoft DirectX Software Development
+Kit (SDK), and then install the Microsoft DirectX Runtime program.
+
+MORE INFORMATION
+================
+
+The Notes section on the DirectX Files tab contains a recommendation that you
+reinstall DirectX to correct the issue. However, if you reinstall DirectX, the
+files are not updated. In addition, the "Debug" files function correctly after
+you install the DirectX Runtime program.
+
+NOTE: Most of the "Debug" files are not used by the retail version of DirectX.
+
+Additional query words: direct-x dxdiag dx7 dxsdk
+
+======================================================================
+Keywords          : kbenv kbimu 
+Technology        : kbSDKDirectXsearch kbAudDeveloper kbSDKDirectX700
+Version           : :7.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

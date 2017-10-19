@@ -1,0 +1,367 @@
+DOCUMENT:Q272234  27-JUN-2001  [exchange]
+TITLE   :XADM: Overview of Maintenance, Backup, and Disaster Recovery for
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides a general overview of best practices for maintenance,
+backup strategy, and disaster recovery for Exchange server.
+
+MORE INFORMATION
+================
+
+Hardware Management and Maintenance
+-----------------------------------
+
+Planning for your Exchange Server system involves several issues. Among these
+issues are server selection, disk configuration, and disk management and
+maintenance.
+
+Planning and Configuring Servers:
+
+Because Exchange databases must be capable of fast access to large amounts of
+information, server performance and reliability must be your primary concerns
+when you select hardware for your databases. High-quality components minimize
+the likelihood of data loss. Hardware that is too slow to support the load on
+your server slows down your entire system.
+
+Note that you should be skeptical of manufacturers' performance benchmarks.
+Original equipment manufacturers typically use RAID 0 when they test. You should
+use RAID 5 or RAID 1 for database partitions to ensure the greatest
+reliability.
+
+Use RAID controllers that have write caching with ECC memory protection and
+battery backup.
+
+Optimizing Database Access:
+
+For servers that support large information stores--stores that are 50 to 100
+gigabytes (GB) in size--it is especially important to follow these guidelines.
+
+ - Place transaction log files and database files on separate disks.
+
+ - Use a dedicated high-performance spindle for the transaction logs.
+
+ - Use a dedicated partition for the databases. As servers get bigger, the
+   database partition starts to experience much more input/output (I/O)
+   activity. This is especially true for RAID 5 partitions because of the added
+   overhead. As a result, it is a good idea to put only database files on the
+   database partition.
+
+ - Put the message transfer agent (MTA) database and tracking logs on the system
+   disk (if you don't have a spare spindle), not on the database partition.
+
+ - Use the NTFS file system instead of a file allocation table (FAT) system for
+   all Exchange Server database partitions, including partitions that contain
+   the information store databases and transaction log files.
+
+The following sample disk configuration is recommended for typical large
+servers:
+
+ - Mirror set 1: System disk; includes binaries, the swap file, and the MTA
+   database
+
+ - Mirror set 2: Transaction files only, RAID 5 partition, Exchange information
+   store, and directory databases only
+
+Managing Disk Capacity:
+
+When you are planning your Exchange Server system, one important issue is
+determining how much disk space you need to allow for the information stores.
+Unless you take a conscientious approach to capacity management, the size of
+your information store databases can quickly get out of control.
+
+Set a maximum information store size, and then manage the information store
+within those limits. You can get a good idea of how big your databases will grow
+by setting mailbox quotas and then tracking the growth of the information store
+over time. Allow enough free space to support the messaging needs of the users
+on the server, but set mailbox storage limits so that users do not consume
+excessive amounts of disk resources.
+
+Also, plan for how you would handle an oversize information store if that
+situation arises, including contingency plans for reclaiming disk space or
+adding extra disks to support your server's load. Allow enough space on the
+system to let you run the Eseutil and Isinteg utilities if you need to. As a
+general rule, plan to have approximately 25 to 30 percent extra disk space for
+these utilities.
+
+Defragmenting the Database:
+
+One of the most important functions that the information store performs during
+regular online maintenance is reclaiming unused disk space by defragmenting the
+database.
+
+This feature has been fine-tuned since Exchange 5.0. Exchange 5.5 Service Pack 1
+includes a reporting tool that provides, in the event log, an estimate of how
+much free space is available in the information store after online
+defragmentation. This makes it much easier to estimate how much disk space is
+needed.
+
+The event log shows when online defragmentation starts, stops, resumes, and
+finishes. When you back up the information store or perform an offline
+defragmentation, check the event log to make sure you are not overlapping with
+an online defragmentation. (However, note that if online defragmentation is
+interrupted, the information store resumes the process as soon as possible.)
+
+Online defragmentation does everything that you need it to do except shrink the
+size of the database files on the disk. If you make major changes to the
+Exchange Server computer (for example, if you move or delete a large number of
+mailboxes or remove a large number of newsgroups), consider performing an
+offline defragmentation by running the Eseutil utility with the /d option.
+
+Generally, however, avoid offline defragmentation because it is an expensive
+procedure. When offline defragmentation runs, it creates a new database file and
+then copies all the data in the old file to the new file, which can take a long
+time. On average, it takes about one hour to defragment 5 to 10 GB of disk
+space. Also, you need enough free space for the offline defragmentation process
+to hold the new file. As a general rule, you should have 100 percent more free
+space than the amount you are defragmenting.
+
+Backup Strategy
+---------------
+
+Design a backup strategy that consists of simple procedures that have as few
+steps as possible so that you can easily perform those same steps whenever you
+need to restore data on a server.
+
+The recommended backup strategy for Exchange Server is to perform full online
+backups every day. Performing a full backup only once a week and then performing
+only differential backups the rest of the time has definite drawbacks. For
+example, if your Exchange Server computer stops responding (crashes) sometime
+before your scheduled full backup, and you cannot restore your latest
+differential backup because of a problem with the backup tape, you must use the
+full backup from the previous week, and you will almost certainly lose data.
+
+Optimizing Backup and Restore Performance:
+
+The real limiting factor when it comes to building large servers is, how fast can
+you back up data, and more important, how fast can you restore it? To get the
+best performance from the backup and restore process, use high-performance
+backup software along with the fastest backup hardware you can get.
+
+The following list identifies a few of the many vendors who provide
+high-performance backup software that works with Exchange Server:
+
+ - Cheyenne ARCserve
+
+ - Legato NetWorker
+
+ - Seagate BackupExec
+
+Your backup hardware should consist of the following components:
+
+ - Tape backup equipment that supports streaming and striping.
+
+ - Fast-Wide SCSI bus communication. You should have seven or eight disks in an
+   array if you are using more than one Digital Linear Tape (DLT) drive in
+   parallel.
+
+If you outfit your system with quality components, what kind of performance can
+you expect? If the system is properly configured, you should be able to reach
+the following speeds:
+
+ - Backup to a single DLT 35/70 tape drive: Approximately 30 GB per hour (or 8.5
+   MB per second) with hardware compression.
+
+ - Backup to a RAID 5 array of four DLT 35/70 tape drives: Approximately 40 GB
+   per hour.
+
+ - Restore to RAID 5 disk partition: Approximately 20 to 25 GB per hour with
+   write-back caching. If write-back caching is disabled, restoring takes twice
+   as long.
+
+Maintenance Routine:
+
+Implement a maintenance routine that enhances the likelihood of successful data
+recovery in the event of an emergency.
+
+As part of this routine, store your backup tapes in a safe place. Clean the tape
+drives regularly, as recommended by the tape drive manufacturer, and discard old
+backup tapes according to the manufacturer's recommended cycles. Regularly test
+your backup procedures and verify the quality of your backups to make sure that
+you are backing up the system accurately.
+
+Practice your backup and restore procedures regularly:
+
+ - Use a full backup from your normal backup set to restore the database files
+   to a test server, and then make sure that the log files replay the way you
+   expect them to.
+
+ - Restore any incremental or differential backups that are built from the full
+   backup to make sure that they restore correctly.
+
+ - Run some basic tests. For example, log on to a mailbox or access a public
+   folder to make sure that the restored database is functioning properly.
+
+It is useful to run the following test before you deploy Exchange Server in a
+production environment:
+
+1. Back up the Exchange Server databases to tape.
+
+2. Generate load on the system so that the log files record some activity. You
+   can do this by running the Loadsim or Mailstorm utility.
+
+3. Simulate a crash.
+
+4. Restore the database files from your tape backup, and then make sure that the
+   log files replay as you expect them to.
+
+5. Run some basic tests. For example, log on to a mailbox or access a public
+   folder to make sure that the restored database is functioning properly.
+
+Disaster Recovery
+-----------------
+
+If a system crash causes loss of data that is in memory or if software or
+hardware failure causes corruption in the contents of a database, you may need
+to recover data. Typically, you can repair damage from a system crash by
+performing a "soft recovery" when you restart the server. Software or hardware
+failure can require a restore from backup.
+
+Soft Recovery:
+
+A soft recovery is a process that runs automatically when you try to start the
+information store after a system failure. Soft recovery uses the log files and
+database files on the disk instead of using tape backup.
+
+If your server crashes and the contents of memory are lost, the database file on
+disk is flagged as inconsistent. Before you can restart the Exchange Server
+computer, the database must be consistent. Exchange Server simulates a clean
+shutdown by replaying pages from the log files on disk into the information
+store databases. This process involves the following steps:
+
+1. The database engine checks to see if the Edb.log file exists.
+
+2. The database engine reads the Checkpoint file to determine which log file to
+   start replaying.
+
+3. At the end of the operation, the database is effectively consistent again and
+   the information store can start normally.
+
+Restoring from Online Backup:
+
+If soft recovery does not work or if there is a more serious problem within the
+system, you need to restore from backup.
+
+The process for restoring from an online backup is similar to soft recovery.
+Exchange Server makes sure that all of the files are put in the right place and
+brings the database up to a consistent state. The following steps describe the
+process:
+
+1. When you restore data from tape backup, the restore process returns to disk
+   all of the files that were backed up.
+
+2. The system attendant starts the information store.
+
+3. The information store checks the RestoreInProgress key in the registry and
+   determines that the database has been restored from an online backup.
+
+4. The RestoreInProgress key tells the information store where to start
+   replaying the transaction logs. It does not check for the Edb.log.
+
+5. The information store writes pages in the .pst file into the database files,
+   replays the log files that are specified by the RestoreInProgress key, and
+   plays through any other logs that are on disk.
+
+6. If you need to restore a corrupted information store, a full recovery
+   includes fixing the problem, restoring the database, and rolling forward all
+   transaction log files
+
+The most time-consuming aspect of doing a restore is not copying the database
+files back to the disk but replaying the log files. Depending on how often you
+perform full backups, it can take several hours to replay log files on large
+servers during a restore. This is because the database engine must run through
+every transaction that has occurred since the last backup.
+
+Typically, replaying a transaction log file takes between 30 seconds and four
+minutes. The replay speed varies according to the type of transactions that must
+be replayed. For example, it takes the information store longer to replay log
+files that have a lot of small delete operations or attachments. You can test
+your log files to get a more accurate estimate of how long it takes to roll
+forward the transaction log files on your system.
+
+Restoring Individual Items in a Mailbox:
+
+Sometimes users delete messages but later realize that they should not have
+deleted them. Because Exchange Server handles backup and restore procedures at
+the physical page layer, not at the mailbox level, you cannot easily restore
+individual messages in a mailbox from backup. Some third-party backup programs
+do allow you to do a "brick backup"; however, they do not use the Exchange
+Server backup and restore application programming interfaces (APIs) and
+typically do not perform as well as backups at the physical page layer do.
+
+However, there is a way for users to recover messages that they have deleted from
+a mailbox without having to resort to backups. The Recover Deleted Items feature
+that comes with Exchange Server 5.5 lets a user retrieve messages from the
+Deleted Items folder in Outlook if you enable the feature on the server. Note
+that if you do enable the Recover Deleted Items feature, the server will require
+additional disk resources to store the deleted items.
+
+In a future release, Exchange Server will be extended to allow applications to
+recover messages even after they have been permanently deleted from the system.
+
+Managing and Maintaining Your Databases:
+
+You may already know that the information store in Exchange Server 5.5 is
+designed to run almost forever. For this reason, you rarely need to turn off
+your server to perform regular maintenance.
+
+Except for performing backups, Exchange Server automatically takes care of all
+database maintenance while the server is online. Most of these activities occur
+as background processes during regular information store maintenance. The
+information store typically runs online maintenance at night and performs
+important tasks such as Deleted Item cache processing, general cleanup, and
+online defragmentation.
+
+Key Messages
+------------
+
+These are the key messages that you should take away from this white paper:
+
+ - Do online (or copy) backups regularly, preferably every night.
+
+ - Monitor your backups, track the status of the database engine and the
+   information store, and do not ignore error messages!
+
+ - Decide how big you will allow your information store to grow, and manage it
+   at that level.
+
+ - Trust Exchange Server 5.5 to take care of internal database management,
+   including database defragmentation.
+
+ - Test and practice your backup and restore procedures.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

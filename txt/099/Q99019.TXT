@@ -1,0 +1,73 @@
+DOCUMENT:Q99019  19-NOV-1999  [msdos]
+TITLE   :Undelete Err Msg: Cannot Load with UNDELETE Already Resident
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you configure Microsoft Undelete for Windows by choosing the Configure
+Delete Protection command from the Options menu, it adds the following line to
+the end of your AUTOEXEC.BAT file:
+
+   " undelete /load " (without the quotation marks)
+
+This occurs even if a LOADHIGH (LH) statement for UNDELETE /LOAD already appears
+in the AUTOEXEC.BAT file. To correct this problem, remark out (by using the REM
+command) or delete the second occurrence of UNDELETE /LOAD.
+
+MORE INFORMATION
+================
+
+If you have previously configured Undelete and then run MemMaker on your system
+to optimize memory, or if you manually installed the LOADHIGH line in your
+AUTOEXEC.BAT file for UNDELETE /LOAD, the modification shown above is still
+added to the AUTOEXEC.BAT file the next time Undelete is configured in Windows.
+The AUTOEXEC.BAT file then contains both lines as follows:
+
+   lh /l:[region,size] undelete /load
+   undelete /load
+
+When you restart the machine and execute the AUTOEXEC.BAT file, the following
+message appears:
+
+   Cannot load with UNDELETE already resident.
+
+To eliminate this message, open the AUTOEXEC.BAT file in a text editor (such as
+MS-DOS Editor) and remark out the second occurrence of UNDELETE /LOAD or delete
+the second line entirely.
+
+NOTE: This second instance of UNDELETE /LOAD does not occur in the AUTOEXEC.BAT
+file if an Undelete command appears without the LOADHIGH (LH) specification.
+
+Additional query words: 6.22 6.00 tracking sentry purge 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

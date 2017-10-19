@@ -1,0 +1,75 @@
+DOCUMENT:Q153772  16-DEC-1999  [homemm]
+TITLE   :Bookshelf Err Msg: ACME Setup Caused a GP Fault in VER.DLL
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 1996-97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Microsoft Bookshelf '96-'97, you receive the
+following error message:
+
+   ACME Setup caused a General Protection Fault in module VER.DLL
+
+CAUSE
+=====
+
+The Ver.dll file may be the incorrect version, damaged, or missing.
+
+RESOLUTION
+==========
+
+To resolve this problem, copy the Ver.dll file from the Aamsstp\System16 folder
+located on the Bookshelf compact disc into the Windows\System folder on your
+hard drive.
+
+To copy the file, do the following:
+
+1. Click the Start button, point to Programs, and then click MS-DOS prompt:
+
+2. At the MS-DOS command prompt, type the following command:
+
+   "copy d:\aamsstp\system16\ver.dll c:\windows\system" (without the quotation
+   marks)
+
+where D is your CD-ROM drive letter, C is the letter of your hard drive.
+
+NOTE: If asked to overwrite this file, type Y, then press ENTER.
+
+MORE INFORMATION
+================
+
+The VER.DLL file is a dynamic-link library (.dll) that is used to verify file
+versions in the Windows environment.
+
+Additional query words: 96-97 multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1996 kbBookShelf1997
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

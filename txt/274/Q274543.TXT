@@ -1,0 +1,99 @@
+DOCUMENT:Q274543  12-NOV-2001  [msnetwork]
+TITLE   :MSN Companion E-mail: Hotmail appears to be temporarily unavail
+PRODUCT :The Microsoft Network
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+E-mail functionality in MSN Companion does not work. This issue may occur at any
+point in the MSN Companion interface when you use e-mail, including the Setup
+sequence or "out of box experience" (OOBE).
+
+CAUSE
+=====
+
+This problem is caused by one of two events:
+
+ - The Hotmail e-mail servers are down.
+
+ - The Hotmail distributed authoring and versioning (DAV) service that allows
+   MSN Companion to access the mailbox is down.
+
+RESOLUTION
+==========
+
+To determine whether Hotmail outage is affecting your ability to access e-mail
+in MSN Companion, attempt to access Hotmail using Outlook Express.
+ 
+To determine whether Hotmail outage is affecting your ability to access e-mail in
+MSN Companion
+
+1. Identify an existing Hotmail account you can use to test this issue,
+   preferably a test account.
+
+2. In Outlook Express, click Tools, and then click Accounts.
+
+3. Click Add, click Mail, enter the Hotmail e-mail address in the test box, and
+   then click Next.
+
+4. Click Next again, and then enter the password for the Hotmail account in the
+   text box.
+
+5. Click Next, and then click Finish.
+   Now you can see your Hotmail mailbox in Outlook Express.
+
+6. Click Tools, click Account, and set this account as the default mail account,
+   so that all new mail you send will get sent from this specific Hotmail
+   account.
+
+7. Go to the Inbox for the Hotmail account you specified.
+   If there is an error, Hotmail may be temporarily down.
+
+8. Send an e-mail message to yourself.
+   If the message does not get sent and an error appears, Hotmail is temporarily
+   down.
+
+9. If Hotmail is down, try again in a few minutes or hours.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MSN Companion Version#1.0.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbMSNSearch kbMSNCompanion
+Version           : :1.0,2.0
+Issue type        : kbprb kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

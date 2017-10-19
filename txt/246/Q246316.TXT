@@ -1,0 +1,68 @@
+DOCUMENT:Q246316  24-OCT-2000  [winnt]
+TITLE   :Information About Interix and Filenames
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.2.1,2.2.2,2.2.3,2.2.4
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Interix versions 2.2.1, 2.2.2, 2.2.3, 2.2.4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Currently, the Interix system does not have a single-rooted file system. In
+Microsoft Windows NT, multiple volumes are available by using drive letters. To
+use Interix to obtain access to these volumes, you must use the syntax "//L"
+(where L must be an uppercase letter).
+
+This requirement directly affects your code porting process. Configure scripts,
+makefiles, and objects such as file selection boxes in X programs do not make
+allowances for the "special" volume prefix.
+
+There are two scenarios where this is an issue:
+
+ - Configure scripts assume the absolute locations of certain utilities ->
+   /bin/rm or /bin/sh. On an Interix system, sh is located in $Interix_ROOT/bin
+   ($OPENNT_ROOT deprecated). In shell scripts of pathnames passed to functions
+   /bin/sh will not work.
+
+ - Even if absolute locations (such as //C/Interix/bin) are defined for the
+   current installation, these will not be correct on systems where Interix is
+   installed on a different volume.
+
+MORE INFORMATION
+================
+
+For additional information, see the "Porting Applications in C" Tech Note at the
+following Interix Web site:
+
+   http://www.interix.com/newinterix/main_technotes.htm
+
+Additional query words: depricated
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbInterixSearch kbUNIXSearch kbInterix221 kbInterix222 kbInterix223 kbInterix224
+Version           : :2.2.1,2.2.2,2.2.3,2.2.4
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

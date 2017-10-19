@@ -1,0 +1,86 @@
+DOCUMENT:Q119578  07-SEP-2001  [powerpt]
+TITLE   :PPT: Error 340 Printing CorelDRAW! 4.0 Objects to Genigraphics
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:4.0,4.0a,4.0c,7.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbgraphic kbprint kbdta kbconversion kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows, versions 4.0, 4.0a, 4.0c 
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you try to print a PowerPoint 4.0 presentation that contains embedded objects
+created in CorelDRAW! versions 4.0 or 5.0 to the Genigraphics driver, you may
+receive the following message:
+
+   Sorry, there was an error (340) accessing the file.
+
+This error will occur if you do not have CorelDRAW! installed on your computer.
+
+This error will not occur if you print the presentation to an actual printer
+(such as a LaserJet or dot-matrix printer.)
+
+WORKAROUND
+==========
+
+You can get your presentation to print correctly by performing the following
+steps:
+
+1. Open the presentation in PowerPoint.
+
+2. For each embedded CorelDRAW! object, do the following:
+   a. Click the object once to select it.
+
+   b. From the Draw menu, choose Ungroup. You will see the following warning:
+
+   This is an imported object, not a group. Converting it to PowerPoint objects
+   will permanently discard any embedded data or linking information it may
+   contain. Convert to PowerPoint objects?
+
+   c. Choose the OK button.
+
+MORE INFORMATION
+================
+
+When you print a presentation to the Genigraphics driver, you create a
+compressed copy of that presentation. The compression process saves information
+about the embedded objects in the presentation. If there is no information about
+CorelDRAW! in your computer's registration database (REG.DAT), the Genigraphics
+driver will not know how to compress CorelDRAW! objects.
+
+Many OLE source applications include additional information in their objects.
+This information may allow the Genigraphics driver to correctly compress those
+objects even if the application that created them is not registered in REG.DAT.
+CorelDRAW! objects lack this additional information.
+
+Additional query words: Photo-paint corell coral coreldraw corel draw 7.00 ppt95 winppt 4.00c
+
+======================================================================
+Keywords          : kb3rdparty kbgraphic kbprint kbdta kbconversion kbPrinting 
+Technology        : kbPowerPtSearch kbPowerPt95 kbZNotKeyword2 kbPowerPt95Search kbPowerPt400 kbPowerPt400c kbPowerPt400a
+Version           : WINDOWS:4.0,4.0a,4.0c,7.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

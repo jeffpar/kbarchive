@@ -1,0 +1,85 @@
+DOCUMENT:Q154045  31-JUL-2001  [visualc]
+TITLE   :INFO: Setup Cannot Access the Source File ..\include\ALGORITHM
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINNT:4.2;
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When installing Visual C++ 4.2, you may get several missing file/directory
+messages. The first message usually is:
+
+   "Setup cannot access the source file X:\MSDEV\include\ALGORITHM"
+
+where X is the CD-ROM drive letter or a network mapped CD-ROM drive letter.
+
+Other messages include missing files such as EXCEPTION, FUNCTIONAL, STDEXCEPT,
+STREAMBUF, and STRSTREAM. All of them are in X:\MSDEV\include directory.
+
+MORE INFORMATION
+================
+
+The error messages are generated if a real-mode CD-ROM driver is used to install
+Visual C++ 4.2 in Windows 95. Real-mode CD-ROM drivers cannot access long file
+names. You may also see these error messages if you run the Visual C++ setup
+program across the network and the network driver does not support long file
+names.
+
+The file names listed above are more than eight characters long. These files are
+the header files for the Standard C++ Library. In order to make these files
+available on your system, you may want to copy them manually from CD-ROM to the
+\msdev\include directory on your hard drive. Note that you are able to see only
+the abbreviated file names if the driver you are using supports only 8.3 file
+names. You can rename the files after you copy them to your hard drive. Below is
+a table that lists the abbreviated file names and the full file names:
+
+   05/28/96  01:04a            47,951 ALGORI~1        algorithm
+   06/04/96  07:03p             1,860 EXCEPT~1        exception
+   05/28/96  01:05a             9,656 FUNCTI~1        functional
+   05/28/96  01:05a             2,970 STDEXC~1        stdexcept
+   05/28/96  01:05a             6,087 STREAM~1        streambuf
+   05/28/96  01:05a             3,813 STRSTR~1        strstream
+
+REFERENCES
+==========
+
+This information is also available in the VCREAD.WRI file located in the MSDEV
+directory of the Visual C++ CD, which reads as follows:
+
+   "If you are running Windows 95 and are using real-mode CD-ROM drivers, you
+   will not be able to access long filenames from the Visual C++ CD. This may
+   cause errors during Setup."
+
+Additional query words: Standard Library
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbVCsearch kbAudDeveloper kbVC420 kbVC32bitSearch
+Version           : WINNT:4.2;
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

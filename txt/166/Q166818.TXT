@@ -1,0 +1,59 @@
+DOCUMENT:Q166818  28-MAY-2002  [powerpt]
+TITLE   :PPT: Unable to Change the ActivePrinter Property With VBA
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:MACINTOSH:98; WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbcode kberrmsg kbProgramming kbdtacode KbVBA _IK11573
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint 98 Macintosh Edition 
+ - Microsoft PowerPoint 97 for Windows 
+ - Microsoft Visual Basic for Applications 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to change the ActivePrinter property using Microsoft Visual Basic
+for Applications code, you receive the following error message:
+
+   Run-Time error '450'
+   Wrong number of arguments or invalid property assignment
+
+If you click Debug, the Visual Basic Editor highlights the line with which you
+are trying to assign a new printer.
+
+CAUSE
+=====
+
+The ActivePrinter property is read-only in the PowerPoint object library and
+cannot be changed programmatically.
+
+
+Additional query words: OFF97 ppt97 8.0 8.00 ppt8 VBA VBE macppt programmatically
+
+======================================================================
+Keywords          : kbcode kberrmsg kbProgramming kbdtacode KbVBA _IK11573 
+Technology        : kbHWMAC kbOSMAC kbPowerPtSearch kbZNotKeyword6 kbPowerPt97 kbPowerPt97Search kbPowerPt98Search kbPowerPt98 kbVBASearch kbZNotKeyword3
+Version           : MACINTOSH:98; WINDOWS:97
+Hardware          : MAC x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

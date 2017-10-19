@@ -1,0 +1,69 @@
+DOCUMENT:Q155190  14-DEC-1999  [foxpro]
+TITLE   :PRB: Functions of the VC++ WPL May Not Respond as Expected
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When building a library of C functions to access with Visual FoxPro for
+Macintosh (with the SET LIBRARY Command), you may choose to use the Microsoft
+Visual C++ (VC++) compiler, which offers a set of functions (the Windows
+Portability Library, or WPL) that may be ported to the Macintosh. These
+functions may not work as expected or desired when loaded under Visual FoxPro
+for Macintosh.
+
+CAUSE
+=====
+
+Visual FoxPro for Macintosh was not designed to work with the functions of the
+Windows Portability Library. Many of these functions allocate memory outside of
+FoxPro, which is something that is not recommended within a library that will be
+loaded from FoxPro.
+
+WORKAROUND
+==========
+
+Use functions provided in the FoxPro API Library or the Mac Toolbox.
+
+You may also be able to create a stand-alone application, using the functions of
+the Windows Portability library, that may be run from Visual FoxPro via
+AppleScript, using the FoxPro RUNSCRIPT command.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post more information in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: kbdsd VFoxMac
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+Version           : MACINTOSH:3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

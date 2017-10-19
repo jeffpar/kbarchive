@@ -1,0 +1,82 @@
+DOCUMENT:Q156633  14-DEC-1999  [foxpro]
+TITLE   :PRB: Wizards Echo Commands to the FoxPro Desktop
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After starting any Visual FoxPro wizard, commands echo to the desktop.
+
+CAUSE
+=====
+
+The wizards are not setting the TALK to OFF before execution.
+
+WORKAROUND
+==========
+
+Issue the command SET STATUS BAR ON before running a wizard. However, since the
+default value of STATUS BAR is ON, this is only necessary if the command's value
+is changed in a program or interactively.
+
+If the command SET STATUS BAR OFF is necessary, you must issue the command SET
+TALK OFF. This also prevents the wizard from echoing commands to the desktop.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The wizards are sensitive to the settings of STATUS BAR and TALK. SET STATUS BAR
+OFF allows any Visual FoxPro wizard to echo commands to the desktop if TALK on
+ON. In FoxPro, the default value of TALK is ON. If STATUS BAR must be set to
+OFF, setting TALK to OFF before running a wizard prevents commands from
+appearing on the desktop.
+
+In the situation below, STATUS BAR is set OFF and TALK remains at its default
+value of ON. Therefore, commands appear.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In the Command window, type:
+
+      SET STATUS BAR OFF
+
+2. Run any FoxPro wizard, and note that commands echo on the FoxPro desktop.
+
+Additional query words: kbdsd VFoxWin
+
+======================================================================
+Keywords          : kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

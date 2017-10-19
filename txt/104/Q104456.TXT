@@ -1,0 +1,56 @@
+DOCUMENT:Q104456  08-DEC-1999  [homemm]
+TITLE   :Dinosaurs: GP Fault When Using ATI Card with Mach32 Chip Set
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dinosaurs for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error message if you run Dinosaurs with an ATI
+video card that uses the Mach32 chip set:
+
+   MSDINOS caused a General Protection Fault in module MACH32.DRV at 0006:2333
+
+This error is caused by a problem in the Mach32 driver.
+
+RESOLUTION
+==========
+
+To run Dinosaurs successfully with ATI video cards that use the Mach32 chip set,
+set the 256 Color Palette option to On. This option is in the Advanced Features
+section of the ATI Control Panel.
+
+For more information on ATI video cards or drivers, contact ATI Technologies Inc.
+at (905) 882-2626.
+
+Additional query words: multi media multimedia multi-media display screen gpf gp fault lock hang error monitor board mach 32 mach-32 dinos Animation Dev/Drv Video C
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbDinosaurs100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

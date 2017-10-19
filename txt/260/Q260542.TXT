@@ -1,0 +1,138 @@
+DOCUMENT:Q260542  06-AUG-2002  [automap]
+TITLE   :MapPoint 2001: How to Import Pushpins from Previous Versions
+PRODUCT :Microsoft Automap
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbtool kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2001 
+ - Microsoft Streets and Trips 2001 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to import pushpins from previous versions of
+Microsoft Expedia Streets and Trips into Microsoft MapPoint 2001 or Microsoft
+Streets and Trips 2001.
+
+MORE INFORMATION
+================
+
+To import pushpins into MapPoint 2001 or Streets and Trips 2001, use the
+appropriate method to export the pushpins from the previous version of the
+program, and then import the pushpins into MapPoint 2001 or Streets and Trips
+2001.
+
+NOTE: You cannot export pushpins from Microsoft MapPoint 2000.
+
+Export Pushpins from Microsoft Expedia Streets and Trips 2000
+-------------------------------------------------------------
+
+To export pushpins from Expedia Streets and Trips 2000:
+
+1. Start Expedia Streets and Trips 2000.
+
+2. On the File menu, click Export Pushpins.
+
+3. Click the pushpin set that you want to export, and then click Export.
+
+4. In the "File name" box, type the following line, and then click Save
+
+   <filename>.stp
+
+   where <filename> is the name of the pushpin set.
+
+5. Quit Expedia Streets and Trips 2000.
+
+Export Pushpins from Microsoft Expedia Streets 98 or Microsoft Expedia Trip Planner 98
+--------------------------------------------------------------------------------------
+
+You cannot directly import pushpins that were created in Expedia Streets 98 or
+Expedia Trip Planner 98 into MapPoint 2001 or Streets and Trips 2001.
+
+If you have Streets & Trips 2000, then use the Pushpin Conversion tool to
+convert pushpins from the Expedia Streets 98 or Expedia Trip Planner 98 format
+to the format used by Expedia Streets and Trips 2000.
+
+You can only use the Pushpin Conversion tool if you have Streets & Trips 2000
+installed.
+
+The Pushpin Conversion tool converts Expedia Streets 98 or Expedia Trip Planner
+98 pushpin files to Streets and Trips 2000 pushpin files that you can import
+into MapPoint 2001 or Streets and Trips 2001.
+
+The following file is available for download from the Microsoft Download Center:
+
+   PushpinConversionTool.exe
+   (http://download.microsoft.com/download/expediastreets98/Utility/1.0/W9XNT4/EN-US/PushpinConversionTool.exe)
+
+Release Date: Jun-29-1999
+
+For additional information about how to download Microsoft Support files, click
+the following article number to view the article in the Microsoft Knowledge
+Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft scanned this file for viruses. Microsoft used the most current
+virus-detection software that was available on the date that the file was
+posted. The file is stored on secure servers that prevent any unauthorized
+changes to the file.
+
+For additional information about the Pushpin Conversion Tool, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q241101 Streets and Trips: Description of the Pushpin Conversion Tool
+
+After you convert your pushpins from Expedia Streets 98 or Expedia Trip Planner
+98, proceed to the next method to import the pushpin file into MapPoint 2001 or
+Streets and Trips 2001.
+
+Import Pushpins into MapPoint 2001 or Streets and Trips 2001
+------------------------------------------------------------
+
+To import pushpins into MapPoint 2001 or Streets and Trips 2001:
+
+1. Start MapPoint 2001 or Streets and Trips 2001.
+
+2. On the File menu, click Import Data.
+
+3. In the "Files of type" box, click "Streets and Trips Pushpins (*.stp)".
+
+4. Click the file that you created in step 4 of the "Export Pushpins from
+   Microsoft Expedia Streets and Trips 2000" method, and then click Open.
+
+The Pushpin Explorer feature is no longer included in MapPoint 2001 and Streets
+and Trips 2001. These programs now save pushpins in a map file. To save imported
+pushpins in MapPoint 2001 and Streets and Trips 2001, save the map that contains
+the imported pushpins. To use the imported pushpins at a later time, open the
+map that contains them.
+
+Additional query words: mp2001 st2001 map point push pins auto-map amap
+
+======================================================================
+Keywords          : kbtool kbui kbimu 
+Technology        : kbHomeProdSearch kbExpediaSearch kbMapptSearch kbMapPoint2001 kbExpediaStreets2001
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

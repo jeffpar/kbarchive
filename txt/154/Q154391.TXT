@@ -1,0 +1,100 @@
+DOCUMENT:Q154391  13-FEB-2002  [macsys]
+TITLE   :Flashing Question Mark During Startup
+PRODUCT :Microsoft Tips for the Macintosh System
+PROD/VER::7.x
+OPER/SYS:
+KEYWORDS:kb3rdparty kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Apple Macintosh Operating System 7.x, version 7.x 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start your Macintosh, a picture of a flashing question mark in a disk
+appears.
+
+CAUSE
+=====
+
+The Macintosh cannot locate a startup disk (it is asking "Where is the startup
+disk?").
+
+WORKAROUND
+==========
+
+To work around this problem, use the following troubleshooting steps.
+
+IMPORTANT: Try these solutions in the order in which they are presented (some
+problems may be fixed by using just one procedure while others may require
+several).
+
+This article assumes that you have Disk Tools/First Aid or disk maintenance
+software.
+
+WARNING: Before using these solutions, remember these procedures may exceed
+normal Microsoft support boundaries. Microsoft is not responsible for the
+performance of the Macintosh operating system. Also, as added protection against
+lost data, please ensure that you have your system disks available and that all
+important files are archived to a backup media.
+
+This may be the cause               Try this troubleshooting method
+-------------------------------------------------------------------
+
+The power or data cable for the     1. Check the power and data cable
+external startup drive is not         connections.
+properly connected.
+
+Start blocks on the startup disk    2. Use Disk Tools/First Aid your disk
+are damaged.                           maintenance software.
+
+The Volume Information Block is     3. Use Disk Tools/First Aid or your
+damaged.                               disk maintenance software.
+
+Parameter RAM is corrupted.         4. Zap the "PRAM."
+
+                                    For information about "Zapping the
+                                    PRAM," please see the following
+                                    article in the Microsoft Knowledge
+                                    Base:
+
+                                    ARTICLE-ID: Q140445
+
+                                    TITLE: "Troubleshooting Power 
+                                           Macintosh
+                                           Type 11 Errors"
+
+The device driver for the disk is   5. Replace the SCSI device driver, and
+damaged.                               use Disk Tools/First Aid or your
+                                       disk maintenance software.
+
+The System or Finder files are      6. Replace damaged system files.
+damaged or missing
+
+
+Additional query words: MACSYS mac m_works
+
+======================================================================
+Keywords          : kb3rdparty kbenv 
+Technology        : kbHWMAC kbOSMAC kbMSNonProductSearch kbMac7xSearch
+Version           : :7.x
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

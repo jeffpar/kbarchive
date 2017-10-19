@@ -1,0 +1,78 @@
+DOCUMENT:Q173969  21-SEP-1999  [msnetwork]
+TITLE   :How to Sign Up for an MSN Account
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.5,2.51,2.52,2.6
+OPER/SYS:
+KEYWORDS:kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.5, 2.51, 2.52, 2.6 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to sign up for an MSN, The Microsoft Network, account
+if you are not prompted to do so while you are installing MSN.
+
+MORE INFORMATION
+================
+
+The installation program for MSN will normally take you through the steps
+necessary for setting up an MSN account, if it should fail then follow the
+procedures below.
+
+To sign up for an MSN account, use the following steps:
+
+Windows 95
+----------
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type inetwiz, and then click OK.
+
+3. When the the Internet Connection Wizard screen appears, select either the
+   Connect using my phone line or Connect using my local area network (LAN) as
+   appropiate, and then click Next.
+
+4. Follow the instructions on the screen.
+
+Windows 98
+----------
+
+1. Click Start, point to Programs, point to Online Services, and then click The
+   Microsoft Network.
+
+2. Follow the instructions on the screen to set up The Microsoft Network.
+
+3. If this fails follow the Windows 95 instructions.
+
+You can also sign up for an MSN account over the telephone by calling MSN Member
+Services at (800) 386-5550.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbmsn 
+Technology        : kbMSNSearch kbMSN252 kbMSN251 kbMSN260 kbMSN250
+Version           : WINDOWS:2.5,2.51,2.52,2.6
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

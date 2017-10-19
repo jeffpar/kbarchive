@@ -1,0 +1,83 @@
+DOCUMENT:Q238251  03-JUL-2001  [win95x]
+TITLE   :How to Install Windows Messaging After Removing Outlook 2000
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbenv kbtool win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Office 2000 (Setup) 
+ - Microsoft Outlook 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install or remove Microsoft Outlook 2000 or Office 2000, Microsoft
+Windows Messaging is no longer stored in the same location.
+
+CAUSE
+=====
+
+When you install Outlook 2000 or Office 2000, Windows Messaging is relocated.
+
+If you remove Outlook 2000 or Office 2000, the original Windows Messaging
+locations and configurations are not restored.
+
+RESOLUTION
+==========
+
+To resolve this problem, reinstall Windows Messaging:
+
+1. Use Windows Explorer to copy the Msmail.inf file from the \Windows\Inf folder
+   to your desktop.
+
+   For information about how to copy a file, click Start, click Help, click the
+   Index tab, type "copying" (without the quotation marks), and then
+   double-click the "Copying Files, Folders" topic.
+
+2. Click Start, point to Settings, and then click Control Panel.
+
+3. Double-click Add/Remove Programs, and then click the Windows Setup tab.
+
+4. Click Have Disk, and then click Browse.
+
+5. Browse through the folder list to the Msmail.inf file that you saved on your
+   desktop.
+
+6. Click OK, and then click OK.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+
+Additional query words: fax
+
+======================================================================
+Keywords          : kbenv kbtool win95 
+Technology        : kbOutlookSearch kbOfficeSearch kbWin95search kbZNotKeyword6 kbZNotKeyword4 kbOffice2000Search kbOutlook2000Search kbZNotKeyword3 kbZNotKeyword5 kbOffice2000SetupSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

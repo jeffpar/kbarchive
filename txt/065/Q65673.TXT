@@ -1,0 +1,54 @@
+DOCUMENT:Q65673  29-OCT-2000  [win95x]
+TITLE   :Explanation of Device Development Kit (DDK)
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:Win2000:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The Microsoft Windows Device Development Kit (DDK) is a retail package that can
+assist you in writing device drivers for printers, video display cards, and
+networks for Microsoft Windows. It may be ordered through software dealers, or
+directly from Microsoft by calling (800)426-9400.
+
+The Microsoft Windows Device Development Kit includes the following manuals:
+
+   "Installation and Update Guide"
+   "Printers and Fonts Kit"
+   "Device Driver Adaptation Guide"
+   "Virtual Device Adaptation Guide"
+
+If you order the Device Development Kit, please specify the disk format required.
+
+Additional query words: 3.00 3.0 3.0a 3.00a win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : Win2000:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

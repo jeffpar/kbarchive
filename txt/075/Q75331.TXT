@@ -1,0 +1,69 @@
+DOCUMENT:Q75331  31-OCT-1999  [win95x]
+TITLE   :HP LaserJet III Driver Version 3.77 Does Not Save Changes
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Changes made to the printer setup of the Hewlett-Packard (HP) LaserJet III
+driver version 3.77 configuration in the Control Panel are not saved when you
+restart Windows.
+
+When the Paper Source and Copies field settings are changed and Windows is closed
+and restarted, the changes revert back to the default settings.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. From the Control Panel, select the Printers icon.
+
+2. From the main Printers dialog box choose the Add Printer button.
+
+3. Install the 3.77 driver available from HP.
+
+4. Choose the Configure and then Setup buttons.
+
+5. Change all default settings in the Setup window and choose OK all the way
+   out.
+
+6. Exit Windows and restart.
+
+7. From the Control Panel, select the Printer icon.
+
+8. View the changes you have made.
+
+Additional query words: 3.00 win30 Windrvr 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

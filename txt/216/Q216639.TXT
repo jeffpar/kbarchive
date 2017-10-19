@@ -1,0 +1,67 @@
+DOCUMENT:Q216639  10-AUG-2001  [winnt]
+TITLE   :Controlling Password Synchronization in Services for UNIX
+PRODUCT :Microsoft Windows NT
+PROD/VER::; winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Services for UNIX Add-On Pack 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can control which users' passwords are synchronized to the UNIX pods by the
+Password Synchronization service. This is done by creating and populating the
+PasswordPropAllow and PasswordPropDeny local user groups on the Windows NT-based
+computer that is running the Password Synchronization service.
+
+MORE INFORMATION
+================
+
+The Password Synchronization service uses the PasswordPropAllow and
+PasswordPropDeny groups to determine whether a user's password change should be
+propagated to the configured UNIX pods. If a user is in the PasswordPropAllow
+group and not in the PasswordPropDeny group, the user's password change is
+propagated to the UNIX pods.
+
+By default, the PasswordPropAllow and PasswordPropDeny groups do not exist, and
+all users' password changes are propagated. Once one of these groups is created,
+password changes are propagated only for those users in the PasswordPropAllow
+group and not in the PasswordPropDeny group.
+
+The PasswordPropAllow group should contain users or user groups for which
+password changes should be propagated to the UNIX pods.
+
+The PasswordPropDeny group should contain users or user groups for which password
+changes should not be propagated to the UNIX pods.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTServicesUnix
+Version           : :; winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,82 @@
+DOCUMENT:Q134547  17-DEC-2000  [win95x]
+TITLE   :Arcada Backup Exec Error Message: Drive Not Responding
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Microsoft Client for NetWare Networks and Arcada Backup Exec
+Windows Workstation version 3.58 in Windows 95, you may receive one of the
+following error messages:
+
+   - There are no more connections available for this device.
+
+   -or-
+
+   - Drive not responding.
+
+CAUSE
+=====
+
+There is a LASTDRIVE=Z statement in the Config.sys file.
+
+RESOLUTION
+==========
+
+Remove the LASTDRIVE statement from the Config.sys file.
+
+If you must have a LASTDRIVE statement in the Config.sys file for compatibility
+with an MS-DOS-based program, change the LASTDRIVE statement to a last-drive
+letter less than Z. For example, the Config.sys file can contain the following
+line:
+
+   LASTDRIVE=Y
+
+This leaves at least one drive letter at the end of the alphabet that Arcada
+Backup Exec can use for temporary drive mappings.
+
+MORE INFORMATION
+================
+
+The Microsoft Client for NetWare Networks handles drive mappings in protected
+mode properly when there is no LASTDRIVE statement in the Config.Sys file, but
+is bound to use the LASTDRIVE setting in the Config.Sys file if it is present.
+This affects the operation of Backup Exec in the Microsoft Client for NetWare
+Networks.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

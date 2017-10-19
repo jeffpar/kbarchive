@@ -1,0 +1,152 @@
+DOCUMENT:Q182252  02-APR-2000  [sna]
+TITLE   :HPLJ 4000N Printer Name Missing from Properties Printing Window
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you configure a host printer session in SNA Server Manager, the name of the
+printer entered on the Printing tab of the Print Session dialog box may not be
+retained after you close the Printing tab or after you save the changes. This
+has been observed when adding the printer name of Hewlett-Packard LaserJet (HP
+LJ) 4000N, and with the HP8100 series and LexMark Optra printers.
+
+NOTE: This symptom may occur with other types of printers as well.
+
+
+CAUSE
+=====
+
+SNA Server's host print service stores printer setting information in the SNA
+Server configuration file (COM.CFG), in the same format that Windows NT uses.
+This format has a fixed size part and a variable size part that is printer
+dependent. SNA Server reserves 256 bytes for the variable size part. Print
+drivers that use more than 256 bytes of data for the variable data overwrite
+other information contained in the SNA Server configuration file. In this case,
+the printer name is being overwritten; this is the reason it is not retained in
+the print session setting.
+
+PCL6 printer drivers exceed the 256-byte limit that is reserved for the variable
+printer data by a large margin. Printers using a PCL6 print driver will
+experience this problem. Other print drivers may exceed the 256-byte limit as
+well.
+
+RESOLUTION
+==========
+
+SNA Server 3.0
+--------------
+
+To resolve this problem, obtain the latest service pack for SNA Server version
+3.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q184307 How to Obtain the Latest SNA Server Version 3.0 Service Pack
+
+
+
+SNA Server 4.0
+--------------
+
+Microsoft has confirmed this to be a problem in SNA Server version 4.0. This
+problem has been corrected in the latest U.S. Service Pack for SNA Server
+version 4.0. For information on obtaining the Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+WORKAROUND
+==========
+
+To work around this problem, you can use the SNACFG utility to add the printer
+session name to the SNA Server configuration.
+
+The command line must be modified to reflect the following parameters:
+
+   "prtsessname" must be replaced with the APPC print session name.
+   "svrname" must be replaced with the name of the SNA Server.
+   "printername" must be replaced with the name of the print device.
+   Note that this can also be a network share name.
+
+Open a command prompt. At the command prompt, enter the following line:
+
+   SNACFG PRINTSESSIONAPPC prtsessname /SERVER:svrname
+   DEVICENAME:"printername"
+
+Doing this should correctly add the APPC print session name to the SNA Server
+configuration.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server, versions 3.0, 3.0
+SP1, 3.0 SP2, 4.0. This problem was first corrected in SNA Server 3.0 Service
+Pack 4.
+
+
+MORE INFORMATION
+================
+
+To print to the HP LJ 4000N, you can use other applications running on the
+Windows NT Server computer that SNA Server is installed on.
+
+This was resolved by installing the PCL 5E driver for the HPLJ 4000N from the
+Hewlett-Packard Web site.
+
+
+
+For information about how to contact Hewlett-Packard, query in the Knowledge Base
+for one of the following articles:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+The Laser Jet 4000N is manufactured by Hewlett-Packard, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+
+Additional query words: HPLJ 4000N 4000n
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

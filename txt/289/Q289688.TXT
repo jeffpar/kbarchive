@@ -1,0 +1,79 @@
+DOCUMENT:Q289688  08-AUG-2001  [winnt]
+TITLE   :WINS Settings Are Missing on VPN Client
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbtool kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you establish a virtual private network (VPN) connection to a Windows NT
+4.0-based server that is running the Routing and Remote Access Service (RRAS),
+the client's primary or secondary WINS server settings may be missing.
+
+CAUSE
+=====
+
+This issue can occur if you have more than 105 VPN ports defined in RRAS, and
+you set the ports to "Dial out and receive calls", instead of setting them to
+"Receive calls only".
+
+RESOLUTION
+==========
+
+To resolve this issue, use RRAS to set the VPN ports to "Receive Calls Only".
+
+MORE INFORMATION
+================
+
+To determine if the client's primary or secondary WINS server settings are
+missing, run the ipconfig /all command on the client.
+
+In general, servers do not need 105 outgoing VPN connections. A server that is
+running Windows NT can handle several hundred incoming VPN connections without
+trouble (depending on memory and other resources). The issue described in this
+article results from the number of outgoing ports.
+
+RRAS includes the following options:
+
+ - "Dial out as a RAS client"
+
+ - "Receive calls as a RAS server"
+
+ - "Dial out and receive calls as a demand dial router"
+
+This issue occurs if you select "Dial out as a RAS client", and there are more
+than 105 ports.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool kbui 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

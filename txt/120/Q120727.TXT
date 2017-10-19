@@ -1,0 +1,71 @@
+DOCUMENT:Q120727  25-NOV-1999  [msdos]
+TITLE   :Err Msg: DRVSPACE.SYS Is Not the Same Internal Revision as...
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error message is displayed:
+
+   DRVSPACE.SYS is not the same internal revision as DRVSPACE.BIN
+
+CAUSE
+=====
+
+This error occurs when a DriveSpace system contains an older version of the
+DBLSPACE.BIN file from MS-DOS 6.0 in the root directory and the DRVSPACE.SYS
+file is being referenced from the CONFIG.SYS file. (The error should actually
+read "DRVSPACE.SYS is not the same internal revision as DBLSPACE.BIN.")
+
+The older version of DBLSPACE.BIN exists if the upgrade from MS-DOS 6.0 to 6.22
+didn't correctly update this file (or if the 6.0 version was somehow restored).
+
+RESOLUTION
+==========
+
+To correct this problem, replace the older DBLSPACE.BIN file with the
+DBLSPACE.BIN file from the MS-DOS 6.22 disks. (Expand DBLSPACE.BI# from Disk 1
+of the MS-DOS 6.22 disk set. The file date is 5-31-94.)
+
+MORE INFORMATION
+================
+
+If the DBLSPACE.BIN file from MS-DOS 6.0 is used to mount DoubleSpace compressed
+volume files (CVFs) on an MS-DOS 6.22 system, DBLSPACE.BIN does not generate an
+error. However, when the CONFIG.SYS file references DRVSPACE.SYS, the
+aforementioned error occurs at startup.
+
+
+
+Additional query words: 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622
+Version           : MS-DOS:6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

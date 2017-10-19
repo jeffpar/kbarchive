@@ -1,0 +1,285 @@
+DOCUMENT:Q80843  11-JUN-1999  [win16sdk]
+TITLE   :INFO: Possible Causes of Dialog Box Creation Failure
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly kbDlg kbSDKPlatform
+
+======================================================================
+3.00 3.10
+WINDOWS
+kbprg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The dialog box creation routines (CreateDialog(), CreateDialogParam(),
+CreateDialogIndirect(), CreateDialogIndirectParam(), DialogBox(),
+DialogBoxParam(), DialogBoxIndirect(), and DialogBoxIndirectParam() can fail for
+several reasons. When one of these functions fails, the dialog box is not
+displayed on the screen. Of the causes for dialog box creation failure, this
+article discusses nine, which are listed below, and provides a resolution or
+explanation:
+
+ - Application runs out of file handles.
+
+ - One or more text strings in a dialog resource starts with the character
+   represented by the value 255 (0xFF).
+
+ - Several small compiled resource (RES) files are combined using the MS-DOS
+   command "COPY /b".
+
+ - A dialog box with an edit control cannot be created when at least ten dialog
+   boxes, each with one or more edit controls, are open simultaneously.
+
+   NOTE: The above statement is not correct for Windows 3.1 because this is a
+   problem relating to real mode and Windows 3.1 does not run in real mode.
+
+ - The dialog resource is not included in the RC file.
+
+ - Insufficient system resources.
+
+ - In a dialog registered with a private dialog class, the dialog procedure does
+   not return the value returned from DefDlgProc as its return value.
+
+ - Wrong HINSTANCE value used.
+
+ - A dialog box with an edit control or a combo box with an edit control must
+   have a HEAPSIZE statement with a value > 0 in the .DEF file.
+
+MORE INFORMATION
+================
+
+The order in which the causes are listed below does not provide any indication
+of how often each cause occurs.
+
+Cause 1
+-------
+
+Application runs out of file handles.
+
+Resolution 1
+------------
+
+Use the SetHandleCount() function to open more file handles. For more information
+on this procedure, query this Knowledge Base on the words:
+
+   resources and SetHandleCount
+
+
+
+Explanation 1
+-------------
+
+Windows requires a file handle to load a resource. Because each dialog box
+creation routine loads dialog resources, an application must have at least one
+file handle available for that purpose.
+
+Cause 2
+-------
+
+One or more text strings in a dialog resource start with the character
+represented by the value 255 (0xFF).
+
+Resolution 2
+------------
+
+For an explanation of two methods to work around this cause, query this Knowledge
+base on the words:
+
+   string and resource and 255
+
+
+
+Explanation 2
+-------------
+
+Windows uses the number 255 to indicate that a resource is represented by an
+ordinal value instead of by a string name. During the process of parsing the
+resource that contains one of these characters, Windows incorrectly skips the
+next two bytes and treats the new position in the resource as the next piece of
+data.
+
+Cause 3
+-------
+
+Several small compiled resource (RES) files are combined using the MS-DOS command
+"COPY /b".
+
+Resolution 3
+------------
+
+Use the #include directive to combine the files at the source level. If the
+Windows Resource Compiler cannot handle the large RC file, consider storing the
+resources in a resource-only DLL. For more information, query this knowledge
+base on the words:
+
+   combined and res
+
+
+
+Explanation 3
+-------------
+
+The Resource Compiler shipped with version 3.0 of the Windows Software
+Development Kit (SDK) has been enhanced to handle resource files much larger
+than its Windows 2.x counterpart. The format of the compiled resource files in
+Windows 3.0 does not support concatenation of RES files.
+
+Cause 4
+-------
+
+A dialog box with an edit control cannot be created when at least ten dialog
+boxes, each with one or more edit controls, are open simultaneously.
+
+Resolution 4
+------------
+
+Specify the DS_LOCALEDIT style in the dialog box template, or create the edit
+control explicitly with the CreateWindow() function.
+
+Explanation 4
+-------------
+
+For more information, query this Knowledge Base on the words:
+
+   dialog and GlobalAlloc and fails
+
+
+
+Cause 5
+-------
+
+The dialog resource is not included in the RC file.
+
+Resolution 5
+------------
+
+Use RCINCLUDE to include the dialog resource in the RC file.
+
+Explanation 5
+-------------
+
+Include the DLG file created by the Dialog Editor into the RC file so the
+Resource Compiler can add the dialog resource to the executable file.
+
+Cause 6
+-------
+
+Insufficient system resources.
+
+Resolution 6
+------------
+
+Verify that system resources are not lost because an application does not delete
+objects that it creates. For more information, query this Knowledge Base on the
+words:
+
+   lost and heapwalk
+
+
+
+The article "Careful Windows Resource Allocation and Cleanup Improves Application
+Hygiene," in the September 1991 issue of the "Microsoft Systems Journal"
+discusses this issue further.
+
+Explanation 6
+-------------
+
+Unless each application frees all the resources that it allocates, eventually
+Windows does not have enough memory to create the controls and/or the dialog box
+itself.
+
+Cause 7
+-------
+
+In a dialog registered with a private dialog class, the dialog procedure does not
+return the value returned from DefDlgProc() as its return value.
+
+Resolution 7
+------------
+
+Whenever the private-class dialog procedure passes an unprocessed message to
+DefDlgProc(), the dialog procedure must propagate the value returned by
+DefDlgProc().
+
+Explanation 7
+-------------
+
+When a private-class dialog procedure passes an unprocessed message to
+DefDlgProc(), it must return the value returned from DefDlgProc(). This behavior
+differs from that of a default-class dialog procedure, which usually returns
+FALSE outside the message switch when it does not process a message. If a
+private-class dialog procedure is implemented in this way, and the procedure
+does not process the WM_NCCREATE message, it will return FALSE. The
+CreateWindow() function sends the WM_NCCREATE message to create the non- client
+area of the dialog window. treats a response CreateWindow() of FALSE from the
+dialog procedure as failure and returns a NULL handle to the application.
+
+Cause 8
+-------
+
+Wrong HINSTANCE value used.
+
+Resolution 8
+------------
+
+Specify the application's instance handle.
+
+Explanation 8
+-------------
+
+The dialog box creation routine must specify the application's instance because
+the dialog template is stored in the application instance.
+
+Cause 9
+-------
+
+A dialog box with an edit control or a combo box with an edit control must have a
+HEAPSIZE statement with a value > 0 in the .DEF file.
+
+Resolution 9
+------------
+
+Set the value of HEAPSIZE to > 0 in your .DEF file.
+
+Explanation 9
+-------------
+
+Windows allocates memory for edit controls out of your local heap. If you do not
+have a HEAPSIZE statement, it cannot create the edit control.
+
+REFERENCES
+==========
+
+ 
+
+Additional query words: fails modal modeless 3.00 3.10 no32bit
+
+======================================================================
+Keywords          : kb16bitonly kbDlg kbSDKPlatform 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

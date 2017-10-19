@@ -1,0 +1,80 @@
+DOCUMENT:Q120443  04-AUG-2000  [foxpro]
+TITLE   :BUG: SET SYSMENU TO _MWINDOW Doesn't Disable Window Menu
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5x,2.6a,3.0b
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Macintosh, versions 2.5x, 2.6a 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The SET SYSMENU TO _MWINDOW command does not disable the Window menu in FoxPro
+for Macintosh.
+
+This behavior differs from FoxPro for Windows, which disables the Window menu
+when running the same code.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+Create and run the following program:
+
+      SET TOPIC TO TRAN
+      SET SYSMENU TO _MWINDOW
+      SET SKIP OF MENU _MSYSMENU .T.
+      DEFINE PAD help OF _MSYSMENU PROMPT "\<Help" COLOR SCHEME 3 ;
+        KEY F1, "F1"
+      ON SELECTION PAD help OF _MSYSMENU HELP
+      SET MACHELP DISABLE
+      SET MACDESKTOP OFF
+      SET APLABOUT DISABLE
+      MODIFY WINDOW screen NOCLOSE NOZOOM
+      ZOOM WINDOW screen MAX
+      SET STATUS BAR ON
+
+Note that the Window menu is not disabled. Moreover, although none of the
+commands on the Window menu are disabled, they do not actually run.
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by Kevin
+Zollman, Microsoft Corporation.
+
+
+Additional query words: VFoxMac FoxMac buglist2.50b buglist2.50c buglist2.60a 2.50b 2.50c buglist3.00b akz
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260aMac kbVFP300bMac
+Version           : MACINTOSH:2.5x,2.6a,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

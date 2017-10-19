@@ -1,0 +1,52 @@
+DOCUMENT:Q38390  10-NOV-1999  [macmail]
+TITLE   :Mac DOS: Notifier Should Not Be Started from a MS-DOS Shell
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:1.37,2.0,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, versions 1.37, 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Some applications allow you to exit to a MS-DOS shell without quitting the
+program. In these cases, do not attempt to start the Notifier for version 1.37,
+2.0, and 3.0 of Microsoft Mail for AppleTalk Networks, MS-DOS workstation. The
+Notifier is designed to be executed from the original command level only.
+
+MORE INFORMATION
+================
+
+For example, if a user tries to start the Notifier within Microsoft Chart using
+the Run command, the Notifier will be installed, the machine will beep, and the
+message "Program stayed resident. Press any key to quit Chart" will appear. The
+system will then lock up, and must be rebooted by the user.
+
+Additional query words: 2.00 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN200
+Version           : WINDOWS:1.37,2.0,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

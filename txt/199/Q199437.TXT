@@ -1,0 +1,63 @@
+DOCUMENT:Q199437  07-SEP-2001  [word97]
+TITLE   :WD97: Text in Return Address Is Obscured by Graphic
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbprint kbenvelope word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A graphic saved as the EnvelopeExtra1 AutoText entry may be superimposed over
+the return address text.
+
+CAUSE
+=====
+
+The address frame is set with an exact vertical size. When you use the
+EnvelopeExtra1 AutoText entry to insert a graphic, the entry causes
+repositioning of the return address text if the graphic is too large. This
+causes the text to disappear or be repositioned so that it is not visible. The
+large graphic pushes the line spacing down in the address frame. Because the
+address frame is formatted with an exact vertical size, Word must crop the
+return address.
+
+
+WORKAROUND
+==========
+
+To work around this problem, use a smaller graphic so Word does not reposition
+the return address.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprint kbenvelope word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,96 @@
+DOCUMENT:Q100183  06-NOV-1999  [win16sdk]
+TITLE   :BUG: UngetCommChar() Causes Character Loss or GP Faults
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An application that uses the UngetCommChar() function in Microsoft Windows
+version 3.1 loses characters or experiences general protection (GP) faults.
+
+CAUSE
+=====
+
+The ReadComm() function does not correctly account for a character buffered by
+UngetCommChar().
+
+RESOLUTION
+==========
+
+There are two methods to avoid this problem:
+
+ - Modify the application to provide its own implementation of the
+   UngetCommChar() function.
+
+-or-
+
+ - Use version 3.0 of the Windows communications (comm) driver. This method
+   should be used only if an existing application cannot be modified to work
+   around this problem in Microsoft Windows version 3.1.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in Microsoft Windows version 3.1. We
+are researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The UngetCommChar() function places a character into a single character- holding
+variable. When ReadComm() is subsequently called, the character is copied from
+the holding variable to the application's buffer before any new characters are
+read from the comm driver.
+
+If version 3.0 of the comm driver is installed, ReadComm() transfers the
+remaining characters from the comm driver one character at a time by calling the
+comm driver exported function RECCOM. During this process, the application
+buffer pointer and character count variables are correctly incremented and
+decremented, respectively.
+
+However, if version 3.1 of the comm driver is installed, ReadComm() transfers the
+remaining characters from the comm driver by a single call to the comm driver
+exported function READCOMMSTRING. During this process, the application buffer
+pointer is correctly incremented after copying the character from the
+UngetCommChar() holding variable, but the character count is not correctly
+decremented. This results in one extra character being copied from the comm
+driver into the application's buffer. The extra character is "lost" because the
+application is not aware that an extra character has been read. This can also
+cause a GP fault if copying an extra character to the application's buffer
+exceeds the buffer segment limit. This problem occurs only on the first ReadComm
+call that follows an UngetCommChar() call. This problem never occurs if
+UngetCommChar() is never called.
+
+Additional query words: buglist3.10 3.10 gpf gp-fault
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

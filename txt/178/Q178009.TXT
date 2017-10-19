@@ -1,0 +1,253 @@
+DOCUMENT:Q178009  09-AUG-2001  [winnt]
+TITLE   :Renaming a Domain: Process and Side Effects
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+WARNING: The information in this article has not been confirmed or tested
+by Microsoft. ANY USE BY YOU OF THE INFORMAITON PROVIDED IN THIS ARTICLE IS
+AT YOUR OWN RISK. Microsoft provides this information "as is" without
+warranty of any kind, either express or implied, including but not limited
+to the implied warranties of merchantability and/or fitness for a
+particular purpose.
+
+SUMMARY
+=======
+
+In Windows NT, a domain is uniquely identified by both a NetBIOS name and by a
+Security Identifier (SID). Most Access Control Lists (ACLs) and other security
+features of Windows NT identify the domain by a SID; therefore, it is possible
+to change the name of the domain with little disruption to network services.
+
+The following procedure describes how to safely rename a Windows NT domain. This
+will work for a single domain, or for an accounts domain or resource domain in a
+network using the master domain model.
+
+Please read this article in its entirety before attempting to rename your domain.
+Some BackOffice products are adversely affected by renaming a domain; these
+products are detailed later in this article.
+
+Microsoft cannot guarantee that any third-party software that is installed will
+function after changing the domain name. You should work with third-party
+application vendors to ensure you understand how their product will react to a
+domain name change.
+
+Microsoft strongly recommends that you thoroughly test, outside of a production
+environment, the effects of renaming your domain, before you actually change the
+domain name on your production computers. This article does not attempt to
+address every issue that might arise as a consequence of renaming your domain.
+
+Use this procedure at your own risk.
+
+Important notes:
+
+ - Do not install any primary domain controller (PDC) or backup domain
+   controller (BDC) during this procedure, under either the old or new domain
+   name.
+
+ - Do not promote any BDC to PDC during this procedure.
+
+ - This procedure should only be undertaken during a time when ALL network
+   services related to this domain can be disrupted. All clients should log off
+   and remain logged off until the rename is complete and all computers involved
+   have been restarted.
+
+ - Perform a full backup on all computers involved immediately before beginning
+   this process.
+
+ - Create separate, updated Emergency Repair Disks for each computer involved
+   immediately before and after the update.
+
+ - Have a copy of the Windows NT Server compact disc, the latest service pack,
+   and Windows NT boot disks (appropriate to your version of Windows NT)
+   available during the procedure.
+
+ - The NETDOM utility in the Windows NT Server Resource Kit, Supplement 2, can
+   be used to change the domain name remotely on some computers, preventing a
+   visit to each computer involved.
+
+
+
+MORE INFORMATION
+================
+
+To change a domain name, follow these steps:
+
+1. Document and then break all trust relationships between the domain whose name
+   you will be changing and all other domains. Be sure to remove the trust entry
+   on both sides of the trust (in User Manager for Domains for both domains in
+   the trust).
+
+2. Stop all BackOffice services such as Microsoft Exchange Server, SQL Server,
+   and Internet Information Server. Set startup to manual on all these services.
+
+3. Change the domain name on the PDC.
+
+4. Restart the PDC. This will cause the <1Bh> entry for the new domain to
+   appear in the WINS server.
+
+5. If you are using WINS for NetBIOS over TCP/IP name resolution, force
+   replication from the PDC's primary WINS server to all other WINS servers to
+   propagate the <1Bh> entry for the new domain. Name resolution to the
+   PDC is necessary for each BDC to successfully change to the new domain name.
+   If you are using TCP/IP without using WINS, create an LMHOSTS file with a
+   <1Bh> entry for the new domain and put it on each BDC.
+
+6. On each BDC, change the domain name and restart. The restart is necessary for
+   the BDC to correctly register its <1Ch> entry with WINS.
+
+   For additional information about what to do if the BDC refuses the domain name
+   change, please see the following article in the Microsoft Knowledge Base:
+
+   Q139471 Unable to Change Domain Name of Windows NT BDC
+
+7. Force replication from all WINS servers to propagate the <1Ch> entry.
+
+8. Re-establish the trust relationships. Using Server Manager, synchronize both
+   domains involved in each trust.
+
+9. In the Services tool in Control Panel, re-enter the service account for each
+   of the BackOffice services that were stopped in step 2. Pick the account by
+   using the Startup button rather than typing in the account name. Set the
+   services back to Automatic startup, if appropriate. Restart the services in
+   the correct order.
+
+10. Make any necessary service-specific changes, as detailed elsewhere in this
+   article.
+
+11. Change the domain name on each member server or workstation. For downlevel
+   clients such as Windows 95 or Windows for Workgroups, change the workgroup
+   name to the new domain name.
+
+12. Synchronize the entire domain.
+
+Troubleshooting
+---------------
+
+If you encounter errors on any of the BDCs after the name change is completed,
+the most likely causes will be either name resolution or accounts database
+synchronization problems. The first thing you should do to troubleshoot is to
+open Server Manager on the computer that has problems and synchronize it with
+the PDC. For name resolution issues, make sure that WINS has replicated or that
+your LMHOSTS files are correct.
+
+You may encounter some errors in batch files and so on, with the old domain name
+embedded. For this reason, you should check all such files. They are likely to
+be found in the NETLOGON share on your domain controllers, referenced by the
+Scheduler service where it is installed, and in any other scripting or
+automation tools that you use.
+
+You can find out more information about specific error events by searching the
+Microsoft Knowledge Base for "event id XXXX" where XXXX is the event id number
+of the error event. The Microsoft Knowledge Base is available on the World Wide
+Web at:
+
+   http://msdn.microsoft.com/support
+
+If you encounter any problems after the domain name change, they are likely
+related to the name change, especially if you see any of the following errors:
+
+   Network name not found
+
+-or-
+
+   Error 53
+
+Typically, these are name resolution issues that are specific to one computer.
+Check for the COMPUTERNAME<00h>, COMPUTERNAME<03h>, and
+COMPUTERNAME<20h> entries in WINS, and replicate if necessary.
+
+   A domain controller for this domain could not be found.
+
+-or-
+
+   Unable to contact the domain controller for this domain.
+
+Typically, these are name resolution issues specific to the domain. Look for the
+DOMAIN<1Bh> and DOMAIN<1Ch> entries in WINS, and replicate if
+necessary.
+
+   The trust relationship failed.
+
+Typically, this is either a trust relationship with another domain that was not
+re-established, or an invalid machine account. Reestablish the trust, or delete
+and re-create the machine account for the computer and remove and re-add the
+computer to the domain.
+
+Possible Side Effects of a Domain Name Change
+---------------------------------------------
+
+ - Service accounts are stored textually, not as SIDs, in the Service Control
+   Manager database. Therefore, any services, on any computer, that use domain
+   user accounts as their service account will have to be manually adjusted. The
+   Sc.exe utility from the Windows NT Server Resource Kit may be useful for
+   making this change on remote computers.
+
+ - If you are using integrated security in SQL Server, you will need to reset
+   the "Default Domain" field in SQL Security Manager. Additionally, if the
+   users are not part of the "Default Domain" you may need to remove and re-add
+   users and groups from the renamed domain or local groups containing groups
+   from the renamed domain.
+
+ - Microsoft Exchange Server service accounts will need to be reassociated with
+   the new domain name, as described earlier. Additionally, in the Exchange
+   Administrator program, select Tools, select Options, and then click the
+   Permissions tab, you will need to change the default Windows NT domain name
+   to the new domain name.
+
+ - Security settings on all Exchange Server public folders will be lost. Before
+   renaming the domain, use the command line utility Pfadmin.exe to export the
+   public folder security settings to a text file to make reconstruction of the
+   permissions easier. This utility can be downloaded as part of the Microsoft
+   Exchange Server Resource Kit from the following Web site:
+
+   http://www.microsoft.com/servers
+
+
+ - If Systems Management Server primary or secondary sites exist in the domain
+   that is being renamed, Systems Management Server will have to be uninstalled
+   and then reinstalled with the new domain name. You will not be able to
+   restore the existing Systems Management Server database after reinstallation;
+   you will have to start with a clean database.
+
+ - If the domain being renamed is part of an Systems Management Server site but
+   has no primary or secondary sites located in it (only logon servers and
+   clients), the domain should be removed from the site prior to the name change
+   and added back into the site after the change. Please refer to the Systems
+   Management Server Installation and Configuration Manual, Chapter 3, "Adding
+   Domains, Servers, and Clients."
+
+ - If you are running Internet Information Server, you may need to change the
+   account specified in virtual paths.
+
+Additional query words: ntfaqdom
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

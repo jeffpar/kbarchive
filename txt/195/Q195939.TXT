@@ -1,0 +1,53 @@
+DOCUMENT:Q195939  14-MAY-1999  [exchange]
+TITLE   :XFOR: Behavior of Notes, SNADS, and PROFS Log Files
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If an Exchange site with Notes, SNADS, and PROFS connectors is extremely busy,
+large number of logs could accumulate. The log files are stored in the
+<exchsrvr>\Connect\Exchconn\logs directory. All three (Notes, SNADS and
+PROFS) connectors share the same files and directory for logging.
+
+After the last log file is reached for a particular day, say 980220ZZ.log, this
+file will grow infinitely. This will continue until there is no disk space left,
+at which point the connector will crash. The crash occurs because the Notes mail
+Connector is currently incapable of detecting the lack of sufficient disk space.
+
+MORE INFORMATION
+================
+
+Microsoft has confirmed this to be a problem in Exchange Server 5.5.
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

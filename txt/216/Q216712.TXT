@@ -1,0 +1,74 @@
+DOCUMENT:Q216712  07-SEP-2001  [win95x]
+TITLE   :Error Message in SPOOLER(03) Printing from MS-DOS Window
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbprint osr2 win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, versions 2.0, 2.1, 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print to an LPT port from a command prompt, you may receive the
+following error message:
+
+   Performed an illegal operation
+   Fault Location: 0028:C0296A08
+   Faulty Component: SPOOLER(03) + 00000380
+
+CAUSE
+=====
+
+This behavior occurs only on Windows 95-based computers that have the Universal
+Serial Bus (USB) supplement added.
+
+RESOLUTION
+==========
+
+To work around this issue:
+
+1. Click Start, point to Settings, and then click Printers.
+
+2. Right-click the printer connected to the LPT port, and then click Properties.
+
+3. Click the Details tab.
+
+4. Click Port Settings.
+
+5. Click to clear the "Spool MS-DOS print jobs" check box.
+
+6. Click OK.
+
+NOTE: The printer must have at least as much buffer memory as the print job is
+long for the entire document to be printed. Otherwise, some of the text may not
+be printed.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbprint osr2 win95 
+Technology        : kbWin95search kbOPKSearch kbWin95OPKOSR25 kbWin95OPKOSR210
+Version           : WINDOWS:95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

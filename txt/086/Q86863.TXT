@@ -1,0 +1,76 @@
+DOCUMENT:Q86863  30-JUL-2001  [lanman]
+TITLE   :Maximum Hard Drive Partitions with MS OS/2 1.3 for Server
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+Microsoft OS/2 version 1.3 for Servers provides large drive translations, which
+allows drives with a physical geometry over 1024 cylinders, 63 sectors/cylinder,
+and 256 heads. For hard drives such as ESDI, IDE, MFM, and RLL, this is
+accomplished by a logical translation via the disk-type-specific driver
+(DISK.TSD).
+
+MORE INFORMATION
+================
+
+To conform to IBM BIOS standards, all disk I/O requests are returned in CHS
+(cylinder, head, sector) format, which is limited to 1024 cylinders, 63
+sectors/cylinder, and 256 heads. Because cylinder addressing is limited to 10
+bits (1024), heads to 8 bits (256), and sectors to 6 bits (64) minus 1 (because
+sector addressing is 1-based), this gives a maximum addressable disk size of:
+
+   1024*256*(64-1)*512 = 7.8 gigabytes
+
+(Note: OS/2 sector size is 512 bytes.)
+
+This is the maximum physical size of a hard disk that will be recognized. The
+maximum partition size that can be addressed is limited to 2 gigabytes for HPFS
+and for FAT partitions. HPFS386 partitions can address a 7.8 gigabyte
+partition.
+
+Under Microsoft OS/2 1.3 for Servers, with LADDR support installed, it is
+possible to circumvent the restriction that a hard drive have no more than the
+maximum allowed physical dimensions. This is accomplished by presenting OS/2 an
+apparent drive geometry of acceptable limits. The apparent geometry is computed
+by DISK.TSD, in the case of ESDI, IDE, RLL, and MFM drives. The translation
+method basically takes any parameter that is outside of the allowed maximum,
+divides it by 2, and doubles the number of one of the remaining parameters,
+until the apparent geometry fits within the allowed maximum, or no further
+translation can be accomplished. For example, if a drive has 1764 cylinders, 124
+sectors, and 32 heads, it will be translated as follows:
+
+               Original           Translation      Translation
+               --------           -----------      -----------
+   Cylinder     1764                882              882
+   Sector        124                124               62
+   Head           32                 64              128
+
+The final geometry that DISK.TSD presents to OS/2 is that of a drive of 882
+cylinders, 62 sectors, and 128 heads. DISK.TSD then performs the necessary
+translation for reads and writes to the disk.
+
+Additional query words: 2.10 1.30
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

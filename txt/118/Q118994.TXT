@@ -1,0 +1,60 @@
+DOCUMENT:Q118994  15-NOV-1999  [pcmail]
+TITLE   :FAX: ErrMsg: Cannot Find or Open M:\FAX\*.ICX file
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to Fax, versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When an incoming fax image is received, the Microsoft Mail Gateway to FAX may
+generate the error message "Cannot find or open *.ICX" if you are using the
+spool printing option on a Novell Netware network. (The option sends the fax
+image to the printer on receipt. When it is on, the PROFILE.GLB file has the
+FAXIn Mode set to SPOOL orVIEW+SPOOL.)
+
+CAUSE
+=====
+
+The FAX Gateway spawns the program MAKEDCX.EXE and generates the *.ICX file,
+which the PPB.EXE program uses to print the fax image. The error indicates that
+the MAKEDCX.EXE program is failing to create or open the *.ICX file because the
+network operating system is not finding the file.
+
+RESOLUTION
+==========
+
+Use the Novell MAP ROOT command to define the Microsoft Mail database and
+executables drives and directories to be at the root level.
+
+
+Additional query words: 3.00 3.00a Novell
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateFax300 kbMailGateFax300a
+Version           : MS-DOS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,276 @@
+DOCUMENT:Q149594  30-JUL-2001  [visualc]
+TITLE   :HOWTO: Calling DAO Directly from MFC to Change a User's Password
+PRODUCT :Microsoft C Compiler
+PROD/VER:4.0 4.1
+OPER/SYS:
+KEYWORDS:kbcode kbprogramming kbDAOsearch kbDatabase kbMFC kbVC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), included with:
+    - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+The MFC DAO database classes offer a subset of the Data Access Object Hierarchy.
+It is possible to manipulate the entire hierarchy with the help of OLE DAO
+interfaces available within the MFC Library. This article offers a demonstration
+of how to manipulate these interfaces in order to change the password of a user
+object found in the Users collection.
+
+NOTE: Beginning with Visual C++ version 4.2, you will find this information and
+more in MFC Technical Note #54 in the Visual C++ online documentation.
+
+MORE INFORMATION
+================
+
+The OLE interfaces for each object in the DAO Access Object Hierarchy are
+defined in the file found in the \Msdev\Include directory. These interfaces
+provide methods that allow you to manipulate the entire DAO Hierarchy. For many
+of the methods in the DAO Interfaces, you will need to manipulate a BSTR object
+(a length-prefixed string used in OLE Automation). The BSTR object typically is
+encapsulated within the VARIANT data type. The MFC class COleVariant itself
+inherits from the VARIANT data type.
+
+Depending on whether you build your project for ANSI or UNICODE, the DAO
+interfaces will return ANSI or UNICODE BSTRs. There are two macros (V_BSTR and
+V_BSTRT) that are useful for assuring that the DAO interface gets the BSTR of
+the expected type.
+
+V_BSTR will extract the bstrVal member of a COleVariant. This macro is typically
+used when you need to pass the contents of a COleVariant to a method of a DAO
+interface. The following code fragment shows both the declarations and actual
+use for two methods of DAOUser that take advantage of the V_BSTR macro:
+
+     COleVariant varOldName;
+     COleVariant varNewName( _T("NewUser"), VT_BSTRT );
+
+     // Code to assign pUser to a valid value omitted
+     DAOUser *pUser = NULL;
+
+     // These method declarations were taken from Dbdaoint.h
+     // STDMETHOD(get_Name) (THIS_ BSTR FAR* pbstr) PURE;
+     // STDMETHOD(put_Name) (THIS_ BSTR bstr) PURE;
+
+     DAO_CHECK( pUser->get_Name ( &V_BSTR(&varOldName) ) );
+     DAO_CHECK( pUser->put_Name ( V_BSTR (&varNewName) ) );
+
+NOTE: VT_BSTRT is required in the constructor of COleVariant as described in the
+following article in the Microsoft Knowledge Base:
+
+   Q140599 PRB: MFC DAO Functions Accepting COleVariant Strings May Fail
+
+V_BSTRT will extract either a ANSI or UNICODE bstrVal member of COleVariant
+depending on the type of build (ANSI or UNICODE). The following code
+demonstrates how to extract the BSTR value from a COleVariant into a CString:
+
+     COleVariant varName( _T( "MyName" ), VT_BSTRT );
+     CString str = V_BSTRT( &varName );
+
+The V_BSTRT macro, along with other tricks to crack open other types stored
+within COleVariant, is demonstrated in the DAOView sample (DAOView is included
+with Visual C++ 4.x). Specifically, this translation is performed in the
+CCrack::strVARIANT method. This method, where possible, translates the value of
+a COleVariant into an instance of CString.
+
+The "Sample Code" section of this article uses these techniques to demonstrate
+calling the DAO OLE interfaces to change a user's password. This is done by
+manipulating two interfaces in particular: DAOUser and DAOUsers. DAOUsers is a
+collection of user objects, and like many of the collections inherits from the
+_DAODynaCollection interface. This interface offers two methods:
+
+ - Append
+
+ - Delete
+
+In addition, the _DAODynaCollection inherits from _DAOCollection. This interface
+offers three methods:
+
+ - get_Count
+
+ - Refresh
+
+ - _newEnum
+
+This provides a common set of methods for DAO collection interfaces.
+
+Finally, in order to change the user's password in this example, you will need to
+create a user named NewUser with a password of PassWord. The easiest way to do
+this is to use Microsoft Access. Note that the default password for a newly
+created user in Microsoft Access is blank. You will need to log in as that user
+in order to set the password. For more information, please see the Microsoft Jet
+Database Engine Programmer's Guide, Chapter 10, "Managing Security."
+
+Sample Code
+-----------
+
+      // The following code presents several functions you can use to manage
+      // MFC DAO classes in a way that allows you to call the DAO interfaces.
+      // It then shows how to use those functions within InitInstance().
+
+      // Set the system database that the DAO database engine will use:
+      void AfxDaoSetSystemDB(CString & strSystemMDB)
+      {
+        COleVariant varSystemDB(strSystemMDB,VT_BSTRT );
+
+        // Initialize DAO for MFC:
+        AfxDaoInit();
+        DAODBEngine* pDBEngine = AfxDaoGetEngine();
+
+        ASSERT(pDBEngine != NULL);
+
+        // Call put_SystemDB method to set the system database for DAO engine:
+        DAO_CHECK( pDBEngine->put_SystemDB( varSystemDB.bstrVal ) );
+      }
+
+      void AfxDaoSetDefaultUser(CString & strUserName, CString & strPassword)
+      {
+        COleVariant varUserName( strUserName, VT_BSTRT );
+        COleVariant varPassword( strPassword, VT_BSTRT );
+
+        DAODBEngine* pDBEngine = AfxDaoGetEngine();
+        ASSERT(pDBEngine != NULL);
+
+        // Set default user:
+        DAO_CHECK( pDBEngine->put_DefaultUser(varUserName.bstrVal));
+
+        // Set default password:
+        DAO_CHECK( pDBEngine->put_DefaultPassword(varPassword.bstrVal));
+      }
+
+      void AfxDaoChangePassword(CString & strUserName, CString &
+      strOldPassword, CString & strNewPassword)
+      {
+
+          // Create(Open) Workspace:
+          CDaoWorkspace   wsp;
+          CString         strWspName     = _T("Temp Workspace");
+
+          wsp.Create( strWspName, strUserName, strOldPassword );
+          wsp.Append();
+
+          // Determine how many objects there are in the Users collection:
+          short       nUserCount;
+          short       i;
+          DAOUser     *pUser  = NULL;
+          DAOUsers    *pUsers = NULL;
+
+          // Side-effect is implicit OLE AddRef() on DAOUser object:
+          DAO_CHECK( wsp.m_pDAOWorkspace->get_Users( &pUsers ) );
+
+          // Side-effect is implicit OLE AddRef() on DAOUsers object:
+          DAO_CHECK( pUsers->get_Count( &nUserCount ) );
+
+      TRACE( "# of users in collection = %d\n", nUserCount );
+
+          // Traverse through the list of users and change password for userid
+          // used to create/open the workspace:
+          for( i = 0; i < nUserCount; i++ )
+          {
+              COleVariant varIndex( i, VT_I2 );
+              COleVariant varName;
+
+              // Retrieve information for user i
+              DAO_CHECK( pUsers->get_Item( varIndex, &pUser ) );
+
+              // Retrieve name for user i
+              DAO_CHECK( pUser->get_Name( &V_BSTR(&varName)) );
+
+              TRACE( "User # %d Name = %s\n", i, V_BSTRT(&varName) );
+
+              CString strTemp = V_BSTRT(&varName);
+
+              // If there is a match, change the password:
+              if( strTemp == strUserName )
+              {
+                  COleVariant varOldPwd( strOldPassword, VT_BSTRT );
+                  COleVariant varNewPwd( strNewPassword, VT_BSTRT );
+
+                  DAO_CHECK( pUser->NewPassword( V_BSTR( &varOldPwd ),
+                                                 V_BSTR( &varNewPwd ) ) );
+
+                  TRACE( "\t Password is changed\n" );
+              }
+          }
+
+          // Clean up: decrement the usage count on the OLE objects:
+          pUser->Release();
+          pUsers->Release();
+
+          wsp.Close();
+      }
+
+      BOOL CMyApp::InitInstance()
+      {
+        // Specify path to the Microsoft Access system database:
+        CString strSystemDB =
+           _T("c:\\Program Files\\MSOffice\\access\\System.mdw");
+
+        // Set system database before MFC initilizes DAO:
+        AfxDaoSetSystemDB(strSystemDB);
+
+        // User name and password manually added by using Microsoft Access:
+        CString strUserName = _T("NewUser");
+        CString strOldPassword = _T("Password");
+        CString strNewPassword = _T("NewPassword");
+
+        // Set default user so that MFC will be able to log in by default
+        // using the user name and password from the system database:
+        AfxDaoSetDefaultUser(strUserName,strOldPassword);
+
+        // Change the password. You should be able to call this function from
+        // anywhere in your MFC application:
+        ChangePassword(strUserName,strOldPassword,strNewPassword);
+
+      // Remainder of your InitInstance code:
+      ...
+
+      }
+
+REFERENCES
+==========
+
+Microsoft Jet Database Engine Programmer's Guide
+ISBN# 1-55615-877-7
+Chapter 10 "Managing Security"
+
+ - Tech Note #54, "Calling DAO Directly While Using MFC DAO Classes."
+
+ - DAOVIEW Sample that ships with Visual C++ 4.x.
+
+ - The following articles in the Microsoft Knowledge Base:
+
+   Q146876 PRB: DAO Error 3028 When Creating a DAO Workspace
+
+   Q140599 PRB: MFC DAO Functions Accepting COleVariant Strings May Fail
+
+   Q143408 BUG: Assertion Failure After Using CDaoWorkspace::Create()
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbprogramming kbDAOsearch kbDatabase kbMFC kbVC 
+Technology        : kbAudDeveloper kbMFC
+Version           : 4.0 4.1
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

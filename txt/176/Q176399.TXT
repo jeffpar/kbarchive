@@ -1,0 +1,207 @@
+DOCUMENT:Q176399  11-JAN-2001  [vbwin]
+TITLE   :PRB: OLE Automation Error - 2147418107 (80010005)
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kberrmsg kbole kbVBp500 kbVBp600 kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a compiled Visual Basic application makes calls to an ActiveX server via a
+timer event, the following error may occur:
+
+   Run-time error '-2147418107 (80010005)': Automation error
+
+CAUSE
+=====
+
+After the first WM_TIMER event is fired, subsequent WM_TIMER events cannot be
+processed until the first event is completed. The error message equates to:
+
+   It is illegal to call out while inside message filter.
+
+RESOLUTION
+==========
+
+Three workarounds have been implemented with success:
+
+Workaround 1
+------------
+
+Set a boolean flag in the timer event (see code listed in the Steps to Reproduce
+Behavior section below).
+
+1. Select Project .Add Module and add a standard module
+
+2. Type the following code into the module:
+
+         Public flag As Boolean
+
+3. Change the Timer1_Timer event code to read as follows:
+
+         Private Sub Timer1_Timer()
+              If Not flag Then
+                 flag = True
+                 RetStr = t.Test(100000)
+                 flag = False
+              End If
+              Text1.Text = RetStr
+         End Sub
+
+By doing this, the timer can't call the server until the previous call is
+completed.
+
+Workaround 2
+------------
+
+Create the server as a DLL, not an EXE. ActiveX DLLs are in-process servers. An
+in-process server would not use Remote Procedure Call engine (RPC). (See the
+MORE INFORMATION below.)
+
+Workaround 3
+------------
+
+Place error handling in effect to ignore the error:
+
+      Private Sub Timer1_Timer()
+         On Error Resume Next
+         RetStr = t.Test(100000)
+      End Sub
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Timers in Microsoft Windows are fired by Windows placing WM_TIMER messages in a
+windows message queue. For example, an application receives the first timer's
+WM_TIMER message in its window proc. This causes Visual Basic to fire the first
+timer's Timer event, which calls the ActiveX server through the Remote Procedure
+Call engine (RPC) because ActiveX EXE servers run in a separate process.
+
+While the Visual Basic application is waiting for the RPC call to complete, the
+RPC engine allows the Visual Basic application to sit and poll its message
+queue. This is allowed primarily for screen redraw (if WM_PAINT messages come in
+because the user was switching around windows), so the application can update
+its windows while it is waiting for the RPC call to complete.
+
+If, while Visual Basic waits for the first RPC call to complete, it processes a
+second WM_TIMER message coming in through the RPC message filter, this causes
+Visual Basic to fire the second timer's Timer event, which attempts to call the
+ActiveX server again through the RPC engine. However, the RPC engine explicitly
+does not allow an application to make an RPC call when it is in the RPC message
+filter, so it returns an error that Visual Basic returns to the user.
+
+At the point at which Visual Basic gets the WM_TIMER message, there is no way for
+Visual Basic to know whether firing the Timer event will cause an RPC call to be
+made. In fact, because ActiveX servers can be transparently remote, there is no
+way for Visual Basic to know, when it is calling an object method, whether that
+method will be routed through the RPC engine. Thus, there is no way for Visual
+Basic to know ahead of time that the RPC engine is going to throw an error.
+
+Steps to Reproduce Behavior
+---------------------------
+
+NOTE: The error will not reproduce unless you have compiled the projects.
+
+Server
+------
+
+1. Start a new ActiveX EXE project.
+
+2. Change the following properties:
+
+      Project Name:TestDelayServer
+      Class Name: cTestClass
+
+3. Place the following code into cTestClass:
+
+         Option Explicit
+
+         Public Function Test(Optional delay As Long = 1000) as String
+            Dim index As Long
+            Dim Y As String
+            Dim X As String
+            Y = "a;lskdjf;laksdjf;lkasjd;flkajsmd;lfkjma;sldkfj;laskdj"
+            For index = 1 To delay
+                X = Right(Y, CInt(Len(Y) / 2))
+                X = ""
+            Next
+            Test = "I'm here"
+         End Function
+
+4. Compile the EXE.
+
+5. Run the EXE to register it.
+
+Client
+------
+
+1. Start a new Standard EXE.
+
+2. Select TestDelayServer from the Project - References menu.
+
+3. Insert a Command Button, Timer Control and TextBox Control.
+
+4. Place the following code into Form1's code window:
+
+         Option Explicit
+
+         Dim t As New TestDelayServer.cTestClass
+         Dim f As Form
+         Public RetStr As String
+
+         Private Sub Command1_Click()
+             Set f = New Form1
+             f.Show
+         End Sub
+
+         Private Sub Form_Load()
+             Timer1.Interval = 1000
+             Timer1.Enabled = True
+         End Sub
+
+         Private Sub Timer1_Timer()
+            RetStr =  t.Test(100000)
+            Text1.Text = RetStr
+         End Sub
+
+5. Save the project.
+
+6. Compile the EXE.
+
+7. Run the compiled EXE. Note that the Automation error occurs.
+
+======================================================================
+Keywords          : kberrmsg kbole kbVBp500 kbVBp600 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

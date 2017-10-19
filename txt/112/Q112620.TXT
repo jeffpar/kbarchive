@@ -1,0 +1,75 @@
+DOCUMENT:Q112620  22-NOV-1999  [accother]
+TITLE   :Incorrect Network Card Detected During Setup with Novell ODI
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER:MS-DOS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Workgroup Add-On for MS-DOS, version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During setup of Workgroup Add-On for MS-DOS version 3.11, network card detection
+may select the incorrect adapter if Novell ODI drivers are installed. In this
+situation, the card is detected as an IPX/SPX support driver instead of the
+correct driver (the ODI/NDIS support driver). If the driver is not changed to
+the ODI/NDIS support driver, no validation occurs on the domain and no access to
+the network through Workgroup Add-On for MS-DOS is available.
+
+RESOLUTION
+==========
+
+You can correct this problem by running the maintenance mode of Setup for
+Workgroup Add-On for MS-DOS.
+
+1. Change to the Workgroup Add-On for MS-DOS directory and type "setup" (without
+   the quotation marks).
+
+2. Use the arrow keys to select Change Network Configuration and press ENTER.
+
+3. Use the arrow keys to select Remove and press ENTER. This removes the
+   incorrect network card driver.
+
+4. Select "Add driver for Network adapter" and press ENTER. This displays a list
+   of available drivers.
+
+5. Select ODI/NDIS Support Driver and press ENTER.
+
+6. Make certain that Network Configuration Correct and "ODI/NDIS Support Driver
+   will be installed" are selected and press ENTER to accept the configuration.
+
+7. Select "The listed options are correct" option and press ENTER.
+
+8. Setup now prompts you for the Novell ODINSUP.COM file. This file must be
+   obtained from Novell or a Novell vendor.
+
+9. Restart your computer.
+
+Additional query words: wgao wfw wfwg add on 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311DOS
+Version           : MS-DOS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

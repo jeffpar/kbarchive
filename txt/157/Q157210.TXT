@@ -1,0 +1,74 @@
+DOCUMENT:Q157210  06-APR-1999  [exchange]
+TITLE   :XCLN: Invalid Procedure Call from Mefbrows.exe
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbenv kbinterop kbprogramming kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows NT client, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to run the Microsoft Electronic Forms Designer for Microsoft
+Mail for PC Networks e-form Mefbrows.exe from a Microsoft Exchange Windows NT
+client, the following error may occur.
+
+   Invalid procedure call
+
+CAUSE
+=====
+
+This error can occur because Microsoft Exchange Windows NT client uses the
+Msmail32.ini and Shared32.ini initialization files exclusively. Mefbrows.exe is
+designed to search only the Msmail.ini and Shared.ini files for Microsoft Mail
+Forms Designer e-forms.
+
+WORKAROUND
+==========
+
+You can work around this problem by modifying and regenerating an executable
+file for Mefbrows.exe.
+
+The Visual Basic Project for Mefbrows.exe contains a Constants.bas file that
+includes the following declarations.
+
+      Global Const SHARED_INI$ = "SHARED.INI"
+      Global Const LOCAL_INI$ = "MSMAIL.INI
+
+1. Replace the "SHARED.INI" declaration with "SHARED32.INI".
+
+2. Replace "MSMAIL.INI" with "MSMAIL32.INI".
+
+3. Create a new executable file for the project using either Microsoft Visual
+   Basic 3.0 or Microsoft Visual Basic 4.0 16-bit. The source code for
+   Mefbrows.exe can be found on the Microsoft Electronic Forms Designer
+   installation disks.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbinterop kbprogramming kbusage 
+Technology        : kbExchangeSearch kbExchangeClientSearch kbZNotKeyword2 kbZNotKeyword3 kbExchange400NT
+Version           : WINDOWS:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

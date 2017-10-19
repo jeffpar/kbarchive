@@ -1,0 +1,78 @@
+DOCUMENT:Q185681  14-NOV-2000  [word97]
+TITLE   :WD97: Error Msg. Selecting Button on Inactive Style Box
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you have the Format list in the Modify Style dialog box open (on the Format
+menu, click Style, and then click Modify), and you click the Organizer, Apply,
+or Cancel button on the inactive Style dialog box, Word quits without giving you
+the choice of saving your work.
+
+In Windows 95 and Windows 98, the following error message appears:
+
+   This program has performed an illegal operation and will be shut down.
+
+   If the problem persists, contact the program vendor.
+
+When you click Details, Word displays the following message:
+
+   WINWORD caused an invalid page fault in module MSO97.DLL at <address>.
+
+In Windows NT 4.0, the following error message appears:
+
+   An application error has occurred and an application error log is being
+   generated.
+
+   Winword.exe
+
+   Exception: access violation (0xc0000005), Address: <address>
+
+WORKAROUND
+==========
+
+When you have the Format list box open, make sure that you select an item in the
+Modify Style dialog box rather than in the Style dialog box.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+This problem has been corrected in Word 2000.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

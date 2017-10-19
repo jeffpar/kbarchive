@@ -1,0 +1,75 @@
+DOCUMENT:Q87213  07-NOV-1999  [pcmail]
+TITLE   :PROFS: What Is HUB Mail, and What Are Its Advantages?
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to IBM PROFS and OfficeVision, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+HUB mail enables you to send mail from one MS Mail postoffice to another, by
+means of the PROFS gateway. This effectively uses your mainframe computer as a
+"backbone" for mail traveling between two or more local area networks (LANs).
+
+MORE INFORMATION
+================
+
+To define a HUB mail connection, select the Ext-Admin/Create function in the
+Admin program. Create the new postoffice definition. Select "Indirect" as the
+routing type, and enter the direct PROFS gateway name when prompted for the
+network name.
+
+The new postoffice must also be defined in the PWACSI DATA file on the gateway VM
+ID's 191 "A" disk, and a REROUTE statement must be added in the MS-RSCS
+configuration file. This ensures that the HUB mail travels through one gateway
+to MS-RSCS, and then from MS-RSCS down through another gateway to the
+destination postoffice.
+
+There are two main advantages to using HUB mail:
+
+ - With HUB mail, only one item is created on the host side of the gateway for
+   each message with attachments sent from the LAN. A message with multiple
+   attachments is encapsulated into one item, and forwarded directly to the
+   destination gateway.
+
+ - The External program is not involved in the delivery of the message (between
+   two direct gateways). This frees External to handle other tasks, such as
+   servicing Remote Mail users.
+
+REFERENCES
+==========
+
+"Microsoft Mail Gateway to IBM PROFS and OfficeVision LAN Administrator's
+Guide"
+
+
+Additional query words: 3.00 pcmail profslan HUB
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateIBMPROFS300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

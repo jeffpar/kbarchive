@@ -1,0 +1,73 @@
+DOCUMENT:Q131915  31-OCT-1999  [pcmail]
+TITLE   :PC Ext: Using External and Dynamic Drives on Novell NetWare
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2,3.2a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.2, 3.2a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In versions 3.2 and 3.2a of Microsoft Mail for PC Networks, when you use the
+EXTERNAL.EXE program to connect dynamically to a Novell server, and that server
+is the Novell server that validates the user account on your network, the server
+will not disconnect the session that EXTERNAL.EXE creates.
+
+MORE INFORMATION
+================
+
+The workstation that runs EXTERNAL.EXE connects to the Novell network, and the
+workstation shell then sends out a NetWare Core Protocol Language (NCP) request
+for an active Novell server to validate the user account.
+
+When a server responds, the shell establishes a Not Logged In connection on that
+server. If EXTERNAL.EXE dynamically connects to the server to deliver messages
+to a postoffice there, the connection changes to the account name used by the
+workstation. When EXTERNAL.EXE subsequently dynamically disconnects from the
+server, the connection at the workstation is terminated (the drive letter used
+by EXTERNAL.EXE is unmapped) but the server keeps the connection open with the
+account name, not Not Logged In.
+
+This is normal behavior for Novell, because the server must maintain a connection
+in order to continue to validate the user account.
+
+NOTE: The shell and Novell NetWare communicate using a language called NetWare
+Core Protocol (NCP). NCP is used for all client requests for service and for the
+responses to those requests. NCP is the single most important application layer
+protocol that NetWare provides. Without NCP, none of the file services offered
+by NetWare would be possible.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q92369 Novell NetWare and NCP Calls -- General Information
+
+Additional query words: 3.20 novell external dynamic drives
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a
+Version           : WINDOWS:3.2,3.2a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

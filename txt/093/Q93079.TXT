@@ -1,0 +1,46 @@
+DOCUMENT:Q93079  30-JUL-2001  [lanman]
+TITLE   :How to Interpret Userlevel Output from READCFG.EXE
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+READCFG.EXE will display information about LAN Manager resources and
+configuration information. One entry is "userlevel" under the Auxilary data
+field. The number that follows userlevel can be interpreted as follows:
+
+   0 - Unlimited server
+   2 - 10-user server
+   4 - 20-user server
+   6 - 30-user server
+   8 - 40-user server
+   10 - 50-user server
+   12 - 60-user server
+
+Any server that has more than five Additional User Paks on it will automatically
+become an unlimited server, so userlevel will never be greater than 12.
+
+Additional query words: 2.10
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

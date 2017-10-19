@@ -1,0 +1,96 @@
+DOCUMENT:Q195627  16-JUN-1999  [foxpro]
+TITLE   :FIX: Right-Clicking Item in Find Results View Fails in Gallery
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbservicepack kbvfp600 kbvfp600fix kbVS600sp2 kbVS600SP1 kbVS600sp3fix kbMiscTools1098f
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Right-clicking an item, found by using the Find button of the Component Gallery,
+causes the following error message to occur:
+
+   OSHARED is not a function, procedure or program.
+
+   Browser: classbrowers1
+   Object: classbrower1
+   Error: 1992
+   Method: setmenu
+   Line: 6
+
+   IF !THIS.oShared.CheckItem(THIS,.T.)
+
+RESOLUTION
+==========
+
+The October 1998 Visual FoxPro 6.0 Gallery and FoxPro Foundation Classes (FFC)
+update addresses this problem. You can download the update from the following
+Web address:
+
+   http://msdn.microsoft.com/vfoxpro/downloads/updates.asp
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in the October 1998 Visual FoxPro 6.0 Gallery and FFC
+updates.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3. For more information
+about Visual Studio service packs, please see the following articles in the
+Microsoft Knowledge Base:
+
+Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Open the Component Gallery and click catalogs.
+
+2. Double-click the "VFP Main" folder in the right-hand window pane.
+
+3. Press the Find button (the binoculars icon) that is on the toolbar. The Find
+   Component window appears. Type "buttons" (without the quotation marks) in the
+   Containing text box and then click the Find button.
+
+4. Right-click any item appearing in the right-hand window and the error occurs.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbservicepack kbvfp600 kbvfp600fix kbVS600sp2 kbVS600SP1 kbVS600sp3fix kbMiscTools1098fix 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

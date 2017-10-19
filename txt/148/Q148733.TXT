@@ -1,0 +1,63 @@
+DOCUMENT:Q148733  17-DEC-2000  [win95x]
+TITLE   :Qfecheck.hlp Not Found After Installing MS Exchange Update
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click Help in the Qfecheck.exe tool installed with Microsoft Windows 95
+Service Pack 1, you may receive the following error message:
+
+   Cannot find the QFECHECK.HLP file.
+
+   Do you want to try to find this file yourself?
+
+RESOLUTION
+==========
+
+To correct this situation, copy the Qfecheck.hlp file from the Admin\
+Components\Updates\Netsetup folder on the Windows 95 Service Pack 1 CD-ROM to
+the Windows\Help folder on your hard disk. Or, if you installed Windows 95
+Service Pack 1 from floppy disks, copy the Qfecheck.hlp from the folder listed
+above on your hard disk to the Windows\Help folder on your hard disk.
+
+MORE INFORMATION
+================
+
+Note that this behavior does not occur if you install the full version of
+Windows 95 Service Pack 1. It occurs only if you install the Microsoft Exchange
+Update component separately.
+
+
+Additional query words: sp1
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

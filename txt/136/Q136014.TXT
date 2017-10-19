@@ -1,0 +1,73 @@
+DOCUMENT:Q136014  17-DEC-2000  [win95x]
+TITLE   :PCMCIA Card Does Not Work After Running PCMCIA Wizard
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you run the PC Card (PCMCIA) Wizard to install protected-mode socket
+services for a PCMCIA card, you are instructed to shut down Windows 95 and then
+turn your computer off and back on. If you restart your computer by pressing
+CTRL+ALT+DEL, instead of turning the computer off and back on, you may receive
+an error message stating that the PCMCIA drivers are not working correctly.
+
+CAUSE
+=====
+
+The protected-mode drivers for the PCMCIA controller may not initialize
+correctly when you restart your computer by pressing CTRL+ALT+DEL because the
+real-mode drivers still have control of the device.
+
+RESOLUTION
+==========
+
+Shut down Windows 95 and then turn your computer off and back on.
+
+MORE INFORMATION
+================
+
+The real-mode drivers may remain in memory after a "soft" reset. You must turn
+the computer off and back on to completely remove the real-mode drivers from
+memory.
+
+This issue is known to affect Databook controllers.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+REFERENCES
+==========
+
+Microsoft Windows 95 "Resource Kit," pages 614-617
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

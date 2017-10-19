@@ -1,0 +1,63 @@
+DOCUMENT:Q182505  04-APR-1999  [exchange]
+TITLE   :XADM: Memory Usage of Store.exe Is Higher in Exchange 5.5
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you run Microsoft Exchange Server version 5.5, memory usage of Store.exe as
+viewed from Task Manager Processes may be considerably higher than in previous
+versions of Microsoft Exchange Server.
+
+MORE INFORMATION
+================
+
+In versions earlier than Microsoft Exchange Server 5.5, memory over 256 MB was
+not used. With version 5.5, memory up to 3 GB can be used and is used, as is
+evident in the Task Manager Processes.
+
+Exchange Server 5.5 uses all available RAM for the best performance possible,
+unless memory usage is limited by using the Exchange Performance Optimizer.
+Exchange Server will release memory to other applications as required to
+increase system performance.
+
+As per the Exchange Server 5.5 Readme.doc:
+
+   Significant changes were made to the database engine allowing Microsoft
+   Exchange Server to better use large memory and multiple processor
+   servers. In particular, Performance Optimizer will set the maximum
+   number of information store and directory database buffers to much
+   higher values than before (approximately the amount of available RAM
+   divided by 4K).
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WINDOWS:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

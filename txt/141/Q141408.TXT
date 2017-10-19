@@ -1,0 +1,73 @@
+DOCUMENT:Q141408  14-DEC-1999  [homemm]
+TITLE   :Mac Bookshelf 94: Pop-up Menu Does Not Find Atlas Articles
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994 edition
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for the Macintosh 1994 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In an article in Bookshelf 1994 for the Macintosh, if you use an "advanced"
+click keystroke (Command + click) on a word to bring up the Find In pop-up menu
+for a particular word, you are able to find all articles containing the word,
+except for articles included in the Atlas.
+
+RESOLUTION
+==========
+
+To find an article in the Atlas containing a particular word, do the following:
+
+1. On the Books Menu, click Atlas.
+
+2. On the Tools Menu, click Find.
+
+3. Type in the word you want to Find.
+
+4. Click the "Find!" button.
+
+All articles in the Atlas containing the selected word will be found.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Bookshelf 1994.
+
+The problem was corrected in Bookshelf 1995.
+
+MORE INFORMATION
+================
+
+When you are in a Bookshelf 1994 article, hold down the Apple key and click on a
+word. This opens a pop-up menu that brings up the Find In option you can use to
+instruct Bookshelf to find the word in "All Books," or in an individual book.
+
+Additional query words: 1994multi media multimedia multi-media mmtitles kbmm mac pop up popup
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHWMAC kbOSMAC kbHomeMMsearch kbBookshelfSearch kbBookShelf1994Mac
+Version           : :1994 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

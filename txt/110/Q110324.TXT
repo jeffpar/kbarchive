@@ -1,0 +1,90 @@
+DOCUMENT:Q110324  26-FEB-2002  [homekids]
+TITLE   :Writer: Spelling Checker Does Not Recognize All Caps
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for Windows, version 1.0 
+ - Microsoft Creative Writer for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Spelling Bee in Creative Writer 1.0 doesn't find misspellings you have typed
+in all capital letters. It also does not find misspellings if the beginning of
+the word is capitalized and not at the beginning of the sentence.
+
+The manner of spell checking was changed in Creative Writer, version 1.1 and 1.1a
+on CD-ROM. Versions 1.1 and 1.1a spell check all words, capitalized or not.
+
+RESOLUTION
+==========
+
+To avoid this problem, type your text in lowercase characters first, and then
+check the spelling. After checking the spelling, change to uppercase characters
+the words you want to appear in capital letters.
+
+EXAMPLES
+--------
+
+1. In Creative Writer, enter the Writing Studio. On separate lines, type the
+   following:
+
+   "APLE" (without the quotation marks)
+
+   "aple" (without the quotation marks)
+
+   "Aple" (without the quotation marks)
+
+   "Aple Aple" (without the quotation marks)
+
+2. Choose the Bee on the toolbar.
+
+3. Choose Spell.
+
+4. The Creative Writer spelling checker will find that:
+
+   APLE is not misspelled
+
+   aple is misspelled
+
+   Aple is misspelled
+
+   Aple Aple - the first Aple is misspelled, but not the second.
+
+MORE INFORMATION
+================
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q107669 Creative Writer: Speller Does Not Spell Check Document
+
+Additional query words: 1.00 kbhowto Spelling Bee incorrect miss kids speller spellchecker skips omits find spell check checker win mac letters upper case lower upper-case lower-case bumblebee mczee mskids 1.10a 1.10
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbZNotKeyword8 kbCreativeWriter100 kbCreativeWriter100Mac
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

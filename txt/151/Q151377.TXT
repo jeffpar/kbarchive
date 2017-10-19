@@ -1,0 +1,65 @@
+DOCUMENT:Q151377  24-JUL-2001  [sms]
+TITLE   :Incorrect Path for UINFO.XNF in Administrator's Guide
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbdocerr smsdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+In the "Modifying the Default Form" section of Appendix G in the Systems
+Management Server Administrator's Guide, Step 6 states the following:
+
+1. In the Directories box, select the following path:
+
+      SITE.SRV\MAINCFG.BOX\CLIENT.SRC\X86.BIN
+
+This is incorrect. The correct path for UINFO.XNF is as follows:
+
+   SITE.SRV\MAINCFG.BOX\CLIENT.SRC\X86.BIN\00000409
+
+NOTE: The directory path may be different depending on the following
+configuration settings:
+
+   SITE.SRV\MAINCFG.BOX\<Platform>.bin\<Language - 8 digits>
+
+For example, the <Platform> is one of the following: = X86, MIPS or ALPHA;
+For <Language - 8 digits>, 00000409 is the default language used by
+Systems Management Server. Please refer to Appendix E in the Systems Management
+Server Administrator's Guide for additional Language mapping information.
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.0 and 1.1. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbdocerr smsdocerr 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

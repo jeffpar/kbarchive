@@ -1,0 +1,62 @@
+DOCUMENT:Q295063  06-APR-2001  [iis]
+TITLE   :CodePage Set to UTF-8 Generates Output w/ Mismatched Characters
+PRODUCT :Internet Information Server
+PROD/VER::1.0,2.0,3.0,4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 1.0, 2.0, 3.0, 4.0 
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you set the code page in an ASP script to UTF-8 (either by using
+@CodePage=65001 or Session.CodePage=65001), the characters may be mismatched and
+the output does not match the expected results.
+
+CAUSE
+=====
+
+The encoding format of the ASP file page must be the same as the @CodePage used
+in the page.
+
+RESOLUTION
+==========
+
+Save the file with the UTF-8 encoding setting. The version of Notepad that is
+included in Windows 2000 or later has the option to specify an encoding format
+when you save a file. For example, if @CodePage is set to 65001, which indicates
+UTF-8, you need to save the ASP file with UTF-8 encoding. If @CodePage is set to
+1252, which indicates English or German, you need to save the ASP file with ANSI
+encoding.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500 kbiis400 kbiis300 kbiis200 kbiis100
+Version           : :1.0,2.0,3.0,4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

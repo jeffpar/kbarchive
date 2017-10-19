@@ -1,0 +1,68 @@
+DOCUMENT:Q124046  28-JUL-2001  [win95x]
+TITLE   :WordPerfect Always Prompts for Net Login ID in Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:msnets win95 appscomp kbAppCompatibility
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you perform a WordPerfect 6.0a or 6.1 network workstation setup, you are
+presented with a dialog box prompting you to enter the Network Login ID.
+Entering the Network Login password allows setup to be completed. Each
+subsequent attempt to start WordPerfect results in the same behavior. The
+Network Login password must be entered each time you start WordPerfect, even
+though you are already logged on to the network.
+
+CAUSE
+=====
+
+WordPerfect 6.0a or 6.1 cannot determine the "USER ID" using the standard
+Windows application programming interface (API).
+
+RESOLUTION
+==========
+
+To resolve this behavior you must add a setting to a WordPerfect ENV file. For
+information on the steps to perform, please contact WordPerfect product
+support.
+
+
+MORE INFORMATION
+================
+
+WordPerfect is manufactured by WordPerfect Corporation, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+
+Additional query words: 3rdparty WP network setup installation install word perfect
+
+======================================================================
+Keywords          : msnets win95 appscomp kbAppCompatibility 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,68 @@
+DOCUMENT:Q161413  26-SEP-2001  [frontpg]
+TITLE   :FP97: How to Install the FrontPage Personal Web Server
+PRODUCT :Word Front Page
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbsetup kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 98 version of this article, see Q194101.
+
+SUMMARY
+=======
+
+The FrontPage Personal Web Server is installed when you perform a custom
+installation of FrontPage (select the Custom option during FrontPage Setup).
+
+MORE INFORMATION
+================
+
+To Install the FrontPage Personal Web Server
+--------------------------------------------
+
+1. In FrontPage Setup, click Custom.
+
+2. Click to select the "Personal Web Server" check box.
+
+If you have already installed FrontPage and you did not install the FrontPage
+Personal Web Server, you must reinstall FrontPage and follow steps 1 and 2.
+
+To Install the Server Extensions
+--------------------------------
+
+1. Start FrontPage Setup.
+
+2. Click Custom.
+
+3. Click to select the Server Extensions check box.
+
+Additional query words: 97
+
+======================================================================
+Keywords          : kbsetup kbdta 
+Technology        : kbFrontPageSearch kbFrontPage97 kbZNotKeyword2 kbFrontPage97Search
+Version           : :
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

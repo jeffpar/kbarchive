@@ -1,0 +1,57 @@
+DOCUMENT:Q155369  28-JUL-2001  [win95x]
+TITLE   :Error Formatting Seagate Drive Using Adaptec Controller
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:diskmem win95 kbDiskMemory
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to format a Seagate ST31051N hard disk using an Adaptec AHA-1740a
+or AHA-1742a controller with the Format.com tool from Microsoft MS-DOS 6.22 or
+Windows 95, you may receive one or more of the following error messages:
+
+   - Drive not ready.
+
+   - Cannot write directory, format failed.
+
+RESOLUTION
+==========
+
+To work around this problem, use either of the following methods:
+
+ - Use the Adaptec 1740/42a EISA configuration tool to reduce the drive
+   throughput speed to 5.0 MB/sec. Please refer to the Adaptec controller
+   documentation for additional information about this process.
+
+ - Use a different controller.
+
+
+======================================================================
+Keywords          : diskmem win95 kbDiskMemory 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

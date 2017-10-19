@@ -1,0 +1,69 @@
+DOCUMENT:Q165688  31-JUL-2001  [visualc]
+TITLE   :INFO: Visual C++ 5.0 Readme, Visual SourceSafe Issues
+PRODUCT :Microsoft C Compiler
+PROD/VER:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual SourceSafe Issues
+------------------------
+
+Converting a Project Directly From Source Control Using Visual SourceSafe With
+Keyword Expansion Disables the Ability to Check In Multiple Files
+
+MORE INFORMATION
+================
+
+Converting a Project Directly From Source Control
+-------------------------------------------------
+
+Visual C++ no longer allows you to open an old project from source control and
+convert it to the new project format from within Visual C++. Use the SourceSafe
+Explorer (or equivalent source control interface) to get the files to a local
+disc, then open the project in Visual C++ to do the conversion, and then check
+the files back in to source control. After this you may open the project out of
+source control as usual from Visual C++.
+
+Using Visual SourceSafe With Keyword Expansion Disables the Ability to
+
+Check In or Add Multiple Files
+------------------------------
+
+The keyword expansion feature of Visual SourceSafe disables multiple-file actions
+for the Check In and Add commands. Using either of these commands with keyword
+expansion enabled causes only one file to be operated on. The other files are
+ignored.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : 5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

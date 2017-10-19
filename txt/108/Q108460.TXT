@@ -1,0 +1,78 @@
+DOCUMENT:Q108460  24-MAR-2000  [fortran]
+TITLE   :FIX: Carriage Control 1 Prints an Ankh Symbol to Screen
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbFortranPS kbLangFortrankbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran Powerstation 32 for Windows NT, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using a carriage control of 1 when writing to the screen prints an Ankh symbol.
+The appropriate output should be a blank line.
+
+CAUSE
+=====
+
+The ASCII form-feed character (decimal 12) is displayed as an Ankh symbol. The
+symbol is not being backspaced over as documented.
+
+RESOLUTION
+==========
+
+The 1 carriage control is not supposed to function when writing to the screen
+(see page 99 of the "Programmer's Guide"). Because it performs no function,
+don't use it.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft FORTRAN PowerStation
+32 for Windows NT, version 1.0. This problem was fixed in Fortran PowerStation
+for Windows NT, Version 1.0 with the release of Windows NT, Version 3.51, and in
+Fortran PowerStation 32, version 4.0.
+
+MORE INFORMATION
+================
+
+The following sample code illustrates the symptoms described above:
+
+Sample Code
+-----------
+
+   C Compile options needed: none
+
+         write (6, "(A)") "1"
+         end
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          : kbFortranPS kbLangFortran kbbuglist kbfixlist
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbFORTRANPower32100NT
+Version           : :1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

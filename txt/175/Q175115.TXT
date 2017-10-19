@@ -1,0 +1,52 @@
+DOCUMENT:Q175115  11-MAR-1999  [exchange]
+TITLE   :XADM: Err Msg: There is Something Wrong with the INI File
+PRODUCT :Microsoft Exchange
+PROD/VER:5.5
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+When you run the Microsoft Exchange Server Setup program in batch mode using:
+
+   Setup /q [batchfile]
+
+the following error may be displayed:
+
+   There is something wrong with the INI file. Make sure the command line
+   specifies a full path to a valid INI file.
+
+This error occurs when the batch file contains PerServer licensing information.
+Licensing mode was changed to only allow PerSeat mode for Exchange Server. To
+correct this problem, edit the batch file and change the licensing mode to be
+PerSeat and remove the PerServer information.
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : 5.5
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

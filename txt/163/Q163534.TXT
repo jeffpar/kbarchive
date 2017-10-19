@@ -1,0 +1,76 @@
+DOCUMENT:Q163534  25-JUN-2002  [accother]
+TITLE   :ODE97: MSDN Sampler What's New and Whats32 Help Topics Empty
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Office 97 Developer Edition 
+-------------------------------------------------------------------------------
+
+
+Novice: Requires knowledge of the user interface on single-user computers.
+
+SYMPTOMS
+========
+
+When you open the MSDN Sampler What's New Help topic from the Start menu, from
+Windows Explorer, or from the Microsoft Office 97, Developer Edition Tools
+compact disc, only a title is displayed on the Contents page. No other
+information appears in the Help topic.
+
+The same behavior occurs when you open the Whats32.hlp file from Windows Explorer
+or from the Microsoft Office 97 Developer Edition compact disc.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Office 97, Developer
+Edition Tools.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Run the MSDN Setup program from the Microsoft Office 97 Developer Edition
+   (ODE) compact disc to install the MSDN Sampler.
+
+2. Start the What's New shortcut from the Start menu.
+
+3. A Windows Help Contents page opens displaying "Office Developer Edition
+   Sampler presented by Microsoft Developer Network" on the first page.
+
+4. Click Contents.
+
+   Note that the Help topic is empty and nothing appears when you click the
+   Contents button.
+
+Additional query words: what's new help topic
+
+======================================================================
+Keywords          : kbui 
+Technology        : kbOfficeSearch kbAudDeveloper kbOffice97Search kbOffice97 kbOffice97DevSearch
+Hardware          : x86
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

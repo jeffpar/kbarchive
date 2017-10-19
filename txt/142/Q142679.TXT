@@ -1,0 +1,88 @@
+DOCUMENT:Q142679  08-AUG-2001  [winnt]
+TITLE   :Windows NT Fails to Locate the NE2000 Compatible Drivers
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbhw kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you attempt to install an NE2000 compatible network adapter from the
+Microsoft Windows NT Server version 4.0 compact disc, you are prompted to insert
+the Microsoft Windows NT Workstation version 4.0 compact disc.
+
+CAUSE
+=====
+
+The Oemsetup.inf in the Drvlib\Netcard\X86\Ne2k.isa has been hard-coded to refer
+to the source media as below:
+
+[Source Media Descriptions]
+
+   1 = "Windows NT Workstation DRVLIB"
+   2 = "Windows NT Workstation CD-ROM" , TAGFILE = cdrom.w
+
+The following adapter cards are affected by this problem:
+
+   IBM ISA Ethernet Adapter
+   D-Link DE-220 ISA Ethernet Adapter
+   Linksys Ether16 LAN Card
+   Any other ISA NE2000 Compatible Adapter
+
+RESOLUTION
+==========
+
+Use the following steps to work around the problem.
+
+1. Copy the files from \DRVLIB\NETCARD\X86\NE2K.ISA to a floppy.
+
+2. Remove the Read-only attributes of the files on the floppy.
+
+3. Edit the OEMSETUP.INF file on the floppy.
+
+4. Change the following lines:
+
+   [Files-NE2000]
+   2, NE2000.SYS , SIZE=999
+
+   to read:
+
+   [Files-NE2000]
+   1, NE2000.SYS , SIZE=999
+
+5. From the Network Control Panel, add the adapter driver again, this time
+   choosing the "Have Disk" option.
+
+The driver should install normally now.
+
+
+Additional query words: prodnt IBM ISA D-Link DE-220
+======================================================================
+Keywords          : kb3rdparty kbhw kbHardware 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,314 @@
+DOCUMENT:Q191138  24-MAY-2000  [iis]
+TITLE   :How to Install the NTOP on Cluster Server
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to install the Windows NT Option Pack (NTOP) on a
+Microsoft Cluster Server computer to allow fail-over of the WWW and FTP
+services.
+
+If the Dtcsetup.exe file in Windows NT Service Pack 4, SQL Server 6.5a, or SQL
+Server 7.0 has been installed on the Cluster Server computer, please read the
+following Microsoft Knowledge Base article before running the installation of
+the NTOP on the Cluster Server computer. Failure to do so will result in
+numerous errors during the install on Node B and failure of the IIS, MTS, and
+MSDTC to function on Node B.
+
+   Q223258 How to Install the Windows NT Option Pack on MSCS 1.0 with SQL Server
+   6.5 or 7.0
+
+MORE INFORMATION
+================
+
+Before you begin the installation of the Windows NT Option Pack (NTOP), you must
+create a cluster resource group that contains a physical disk, IP address, and
+Network Name resource. After you create the resource group, move the resource
+group to Node A. This is required for the installation of Microsoft Transaction
+Server.
+
+NOTE: Windows NT must reside in the same location on both Node A and Node B. For
+example, if you install Windows NT to C:\Winnt on Node A, then you need to have
+Windows NT installed to C:\Winnt on Node B as well. If the Windows NT
+%SystemRoot% folder is not identical on both Node A and Node B, you will not be
+able to perform fail-over of IIS.
+
+Installation Sequence for Multiple Nodes
+----------------------------------------
+
+1. Move all cluster resource groups to Node A.
+
+2. Start the Windows NT Option Pack installation on Node A. On the "Microsoft
+   Internet Information Server" setup screen, accept the default location for
+   the WWW, FTP, and the Application Installation Point settings. During the
+   installation of Transaction Server, on the "Microsoft Transaction Server 2.0"
+   screen, the Windows NT Option Pack Setup program attempts to locate the MSDTC
+   transaction log on a cluster disk resource in any resource groups currently
+   owned by that node.
+
+   NOTE: If SQL Server 6.5 is not installed on the Cluster Server computer,
+   accept the default location for the MSDTC Virtual Server and Log file
+   location. If SQL Server 6.5 is installed on the Cluster Server computer, then
+   the MSDTC Resource should reside in the resource group that SQL Server is
+   currently in. When you are prompted for the resource group to install the
+   MSDTC log to and the location for the MSDTC log file, if SQL Server 6.5 is
+   installed, choose the SQL Server Resource Group Network Name you have created
+   from the drop-down list and place the MSDTC Log directory on the disk
+   resource that belongs to that SQL Resource Group. (For example, if your SQL
+   Server Resource Group Network Name is called "SQLGroup" and the disk resource
+   assigned to that group is assigned drive letter S:, you would specify
+   "SQLGroup" in the virtual server drop-down list, and S:\MSDTCLog as the path
+   to the MSDTC Log directory.)
+
+   DO NOT INSTALL ANYTHING INTO THE DEFAULT CLUSTER GROUP.
+
+3. At the end of the Windows NT Option Pack installation, a dialog box is
+   displayed that instructs you to start the installation on Node B and to click
+   OK when that setup is complete. Leave this dialog box on the screen and start
+   the Windows NT Option Pack installation on Node B.
+
+   NOTE: Do not move the resource group from Node A to Node B. Leave the resource
+   group on Node A.
+
+4. Start the Windows NT Option Pack installation on Node B. On the "Microsoft
+   Internet Information Server" setup screen, accept the default location for
+   the WWW, FTP, and the Application Installation Point settings. This
+   installation does not prompt for the transaction log location. When this
+   installation is complete, restart Node B.
+
+5. If Windows NT Service Pack 4 is installed on Node B, the cluster service will
+   not start after the NTOP is installed and the computer is restarted. This is
+   a known issue. Please see the following Knowledge Base article for details:
+
+   Q218922 Installing NTOP on Cluster Server with SP4 Causes Event IDs 1009 and
+   1058
+
+   You must re-apply SP4 on Node B and restart the computer again before the
+   Microsoft Cluster Server Service will start.
+
+6. After Node B has completely restarted, return to Node A and click OK. When
+   prompted to restart Node A, choose Yes.
+
+7. If Windows NT Service Pack 4 is installed on Node A, then the Cluster Server
+   service will not start after the NTOP is installed and the computer is
+   restarted. This is a known issue. Please see Q218922 for details. You must
+   re-apply SP4 on Node A and restart the computer again before the Microsoft
+   Cluster Server Service will start.
+
+8. After the computers have restarted, the Web or FTP fail-over sites need to be
+   created. Internet Information Server (IIS) virtual servers in this
+   configuration require a resource group with an IP address at minimum, though
+   it is recommended that you also have a drive resource to identify file
+   location.
+
+   DO NOT USE THE DEFAULT CLUSTER GROUP.
+
+9. Move the target cluster resource to Node A.
+
+10. In the Microsoft Management Console (MMC) on Node A, expand the Internet
+   Information Server tree, right-click on the computer name, and choose to
+   create a new Web (or FTP) server.
+
+11. In the properties for this new site, set the IP address to the IP addresses
+   in the resource group that this resource will fail over in.
+
+12. Select the directory, Universal Naming Convention (UNC) connection, or
+   redirection that the site should use as the home directory. If selecting a
+   drive, it should be a drive in the resource group that the IP address is in.
+
+13. Repeat Steps 10 through 12 for each WWW of FTP site you want to provide
+   fail-over capabilities to.
+
+Synchronize the IIS User Accounts
+---------------------------------
+
+1. An anonymous account (IUSR_CLUSTER) and a Windows Access Method account
+   (IWAM_CLUSTER) need to be created as domain accounts on the domain that these
+   computers are members of. These accounts need "logon locally" and "access
+   this computer from the network" user rights on both nodes of the cluster. It
+   is recommended that these accounts also be set to "cannot change their
+   password" and "password never expires." Add both accounts to the Guests Local
+   Group on both Nodes as well. Add both accounts to Dcom Default Access group
+   with Allow Access Permission and the Dcom Default Launch Group with Allow
+   Launch Permission. Add the IWAM_CLUSTER account to the MTS Trusted
+   Impersonators (or may be named MTS Impersonators) Local Group on each Node.
+
+2. After these two accounts have been created, go into the MMC for IIS 4.0 and
+   set the IUSR_CLUSTER account as the anonymous account.
+
+3. In the MMC, expand the Internet Information Server tree, and then right-click
+   the entry for the computer name.
+
+4. Select Properties. On the Internet Information Server tab, select WWW Service
+   in the Master Properties drop-down list.
+
+5. Select Edit, and then click the Directory Security tab. Select the top edit
+   button associated with Anonymous Access and Authentication Control.
+
+6. In the Authentication Methods dialog box, select the edit button to the right
+   of the Account used for Anonymous access. This dialog box allows you to
+   select the anonymous user domain account that you created (IUSR_CLUSTER
+   account).
+
+7. Select the IUSR_CLUSTER account, and then click OK until you are back to the
+   MMC main screen.
+
+   NOTE: If the cluster server you are on is not a domain controller, you cannot
+   use "Enable Automatic Password Synchronization." You need to manually input
+   the password for the IUSR_CLUSTER account.
+
+8. Repeat these steps for the FTP service "Master Properties." In this case,
+   click the Security Accounts tab, and then set the anonymous user account to
+   the IUSR_CLUSTER account.
+
+9. Click the Apply button to save your changes, and then click OK until you
+   return to the MMC main screen.
+
+Set the IWAM Account Information
+--------------------------------
+
+The IWAM_CLUSTER account only needs to be set if you are using the WWW service.
+
+NOTE: To set the IWAM account, make sure you have installed Windows Script Host
+from the Windows NT Option Pack. If the Script Host is not installed, you can
+install it by running Add/Remove Programs from Control Panel, and then choosing
+Windows NT 4.0 Option Pack.
+
+1. Start a command prompt, and then go to the following folder:
+
+   C:\Winnt\System32\Inetsrv\Adminsamples
+
+   Type the following command, and then press ENTER:
+
+   "adsutil enum w3svc" (without the quotation marks)
+
+2. If this is the first time you have run this script, or if your script
+   interpreter is set to wscript, you will be prompted to associate this script
+   with cscript. Click OK to associate the script with cscript and run the
+   command again.
+
+3. The correct output from this command should be the contents of the IIS 4.0
+   computer's metabase scrolling past in the command prompt window. If this is
+   working properly, you must set the IWAM account information into the
+   metabase. To do so, type the following:
+
+   "adsutil set W3SVC/WAMUserName domain_name\IWAM_CLUSTER " (without the
+   quotation marks)
+
+   where domain_name is the name of the domain that the user account IWAM_CLUSTER
+   exists in. This sets the account to use the correct domain in order to
+   authenticate the account.
+
+4. Type the following:
+
+   "adsutil set W3SVC/WAMUserPass IWAM_Password" (without the quotation marks)
+
+   where IWAM_Password is the password for the IWAM_CLUSTER account as created
+   earlier. This should correctly set this account for use by IIS 4.0.
+
+Note that the IUSR_CLUSTER account is only used for anonymous access, and the
+IWAM_CLUSTER account is only used by the WWW service. If you are interested only
+in FTP usage, or do not need anonymous access, you do not need to make either of
+these changes in the metabase.
+
+Create and Configure the New Server Instance
+--------------------------------------------
+
+1. To create a new server instance, use the Cluster Server Administrator to
+   create a new IIS server instance. This instance should depend on the IP
+   address resource and disk resource.
+
+   NOTE: An IIS server instance can not be created using a Remote Cluster
+   Administrator. You have to be on the cluster server to create the IIS server
+   instance.
+
+2. One of the last steps in the creation of the IIS server instance is to
+   determine whether this is a Web site or an FTP site and to select the site.
+   Be sure to select the Web site created for this resource group.
+
+   NOTE: If your FTP or Web site does not appear in the list, close the Cluster
+   Administrator, and then reopen the Cluster Administrator.
+
+3. After the IIS virtual server instance has been created, it will be displayed
+   as offline. Right-click the resource in Cluster Server Administrator and set
+   it to online.
+
+Configuring MTS and IIS for Replication
+---------------------------------------
+
+1. Open the Internet Service Manager.
+
+2. Double-click the Microsoft Transaction Server.
+
+3. Double-click the Computers folder.
+
+4. Right-click My Computer, and then click Properties.
+
+5. Click the Option tab.
+
+6. In the Replication Windows, complete the two entries as follows:
+
+   Replication Share = any available share on the other cluster node where the
+   Administrator has full rights to the share.
+   (You can use the c$ share, for example.)
+
+   Remote Server Name = the name of the other cluster node.
+
+7. Click Apply, and then click OK.
+
+8. Repeat steps 1 through 7 on the second node.
+
+   WARNING: The MTS replication must be configured on both Nodes A and B before
+   you run the IISSYNC utility or irreparable damage could be done to your IIS
+   installation, requiring a complete uninstall and reinstall of IIS.
+
+9. At a command prompt on Node A, go to the System32\Inetsrv folder and type the
+   following command:
+
+   "iissync nodeb" (without the quotation marks)
+
+   where nodeb is the actual computer name of Node B. This duplicates the
+   metabase information and MTS related packages from Node A to Node B, so that
+   the clustered Web sites can be moved between computers.
+
+10. After this last step has been performed, you should be able to successfully
+   move the IIS resource groups between nodes.
+
+For more information, please see the following Web page:
+
+   http://www.microsoft.com/ntserver/ntserverenterprise/deployment/planguide/ntoption.asp
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,55 @@
+DOCUMENT:Q192113  17-DEC-2000  [win95x]
+TITLE   :Order In Which Programs in the Startup Folder Are Processed
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbui win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the order in which items in the Startup folder are
+processed.
+
+MORE INFORMATION
+================
+
+In earlier versions of Windows, you can control the load order of the Startup
+group by the order in which the icons are placed in the Startup group. Windows
+3.x loads Windows-based programs starting from left to right. After loading all
+the Windows-based programs, Windows 3.x then continues loading MS-DOS-based
+programs from left to right. In Windows 95, the order in which programs in the
+Startup folder are loaded is determined by the names of the programs. Programs
+in the Startup folder are loaded in alphabetical order.
+
+To control the load order in the Startup folder, you can rename the icons so that
+they are arranged in the order in which you want them to load.
+
+======================================================================
+Keywords          : kbui win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

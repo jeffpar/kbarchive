@@ -1,0 +1,310 @@
+DOCUMENT:Q122178  05-FEB-2002  [sms]
+TITLE   :Systems Management Server Event Log Codes 100 Through 199
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbDatabase kbInventory smsinv smsdatabase
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+This article details Systems Management Server event log codes 100 through
+199.
+
+Event Log Codes 100 - 199
+-------------------------
+
+Code   Description
+----   -----------
+
+100    Machine classes: There is an error in the records of a varfile.
+
+101    Machine classes: Exception <X> occurred for file <Y>.
+
+102    Cannot find the site server for site X.
+
+103    Cannot connect to the registry on site server X in site Y.
+
+104    The component is unable to delete registry key X.
+
+105    The component is unable to create registry key X.
+
+106    Failed to remove package X from Y. Verify the package server is up
+       and running and no one is currently using the package.
+
+107    Failed to remove directory X. Verify there is no active process
+       access the directory.
+
+108    Failed to install package to X. Verify the package server is up and
+       running and has sufficient disk space. The SMS service account must
+       exist on the package server and has the same password as the
+       siteserver, and the service account must have admin privilege. If
+       the package server is a Netware server, verify the volume exists.
+
+109    Failed to install package. There isn't sufficient disk space on
+       package server X. Disk space available on that server is Y
+       megabytes, space required is Z megabytes.
+
+110    Failed to create directory on server X. Verify the server is up and
+       running, The SMS service account must exist on the server and has
+       the same password as the site server, and the service account must
+       have admin privilege.
+
+111    Failed to create share X on server Y using local path Z. Verify the
+       server is up and running. The SMS service account must exist on the
+       server and has the same password as the site server, and the service
+       account must have admin privilege.
+
+112    Failed to create mac volume X on server Y using local path Z. Verify
+       the server is up and running. The SMS service account must exist on
+       the server and has the same password as the site server, and the
+       service account must have admin privilege.
+
+113    There isn't any NTFS drive on server X, which is needed by the
+       despooler to decompress or install the package.
+
+114    Failed to decompress package X to Y. Verify there is enough disk
+       space on the destination drive.
+
+115    Failed to store the compressed package as X. Verify there is enough
+       disk space on the SMS site installation drive.
+
+116    Failed to perform replication on server X. Please check various
+       inbox settings for this server in the site server registry. Please
+       also check if this server is on the network. If the server is an
+       OS/2 1.3 LanMan server, this could be that the local NT machine has
+       already used up the two sessions that allowed to connect to an OS/2
+       1.3 server. If the server is a NetWare machine, this could be that
+       the NetWare server has run out of user connections.
+
+117    Failed to detect the AppleTalk zone for SFM server X. This means
+       SMS_INVENTORY_AGENT_NT on that server hasn't been started or failed
+       to find that server's AppleTalk zone. Verify AppleTalk service is
+       running on that server.
+
+118    Cannot compile the package rule file X for site Y.
+
+119    Workstation installation MIF file from Package Command Manager has
+       an invalid format or is too large (>64 kBytes).
+
+120    Cannot write a JobDetails MIF file for Workstation installation job.
+
+121    Could not read from file: <X>
+
+122    Could not allocate memory.
+
+123    Could not flush machine map.
+
+124    Bad ISV MIF file: <X>
+
+125    Bad MIF file: <X>
+
+126    Could not get local SMS.INI for current machine.
+
+127    Could not open history file in directory: <X>
+
+128    Bad header on Inventory Agent output file: <X>
+
+129    Inventory Agent output file had an incompatible version stamp: <X>
+
+130    Bad trailer on Inventory Agent output file: <X>
+
+131    Unknown ID in Inventory Agent output file: <X>
+
+132    Length of data given in Inventory Agent output file does not match
+       expected length: <X>
+
+133    Unknown error in Inventory Agent output file: <X>
+
+134    Could not enumerate ISV MIF files in: <X>
+
+135    Could not enumerate Inventory Agent output files in: <X>
+
+136    Open failed: <X>
+
+137    Could not process inventory for current machine.
+
+138    Unknown group type in history file; unable to delete.
+
+139    Error finding relationship to history in group: <X>
+
+140    Unknown error attempting to find relationship to history: <X>
+
+141    Machine Configuration: Could not access machine map: <X>
+
+142    Machine Configuration: Could not create unique file in: <X>
+
+143    Machine Configuration: Could not open machine map file: <X>
+
+144    Machine Configuration: Could not allocate memory.
+
+145    History: Could not allocate memory.
+
+146    History: Could not open history file: <X>
+
+147    History: Could not get unique file name in: <X>
+
+148    History: Could not add new key to key table.
+
+149    History: Could not find key in key table.
+
+150    History: Could not find history key table in file, deleting file.
+
+151    Could not allocate memory.
+
+152    Could not create unique file in: <X>
+
+153    Could not open file: <X>
+
+154    Could not validate Systems Management Server path on local
+       workstation:<X>
+
+155    Could not validate Standalone ISV MIF path: <X>
+
+156    Could not validate Machine ISV MIF path: <X>
+
+157    Could not open history file in: <X>
+
+158    Could not gather inventory on workstation.
+
+159    Could not scan for ISV MIF files on workstation.
+
+160    Bad ISV MIF file: <X>
+
+161    Error reading from file: <X>
+
+162    Could not enumerate ISV MIF files in: <X>
+
+163    Unknown group type in history file; unable to delete.
+
+164    Could not allocate memory.
+
+165    Delta: Could not get unique name: <X>
+
+166    Delta: Could not allocate memory.
+
+167    Delta: Could not open file: <X>
+
+168    Delta: Bad Delta file: <X>
+
+169    Delta: Could not get objects from file: <X>
+
+170    Delta: Variables were NULL: <X>
+
+171    Delta: Could not append record: <X>
+
+172    Delta: Could not init delta file. Too many sharing violations.
+
+173    SHICNT: Could not open or create history file: <X>
+
+174    SHICNT: Could not allocate memory.
+
+175    SHICNT: Length in command history file inconsistent with known
+       command history length.
+
+176    SHICNT: Error reading data from command file: <X>
+
+177    Cannot remove package <X> from Y.
+
+178    Cannot set the max use for share X on server Y.
+
+179    Machine classes: Could not initialize the Delta file.
+
+180    A new machine is being entered into the database. Some of the
+       identification attributes for the machine being added overlap with
+       another machine in the database. Current Machine: <X> Overlapping
+       Machine: <Y>
+
+181    A match has been made on a machine being processed. Some of the
+       identification attributes for the machine overlap with a separate
+       machine in the database. Current Machine: <X> Overlapping Machine:
+       <Y>
+
+182    A machine match has been made based on the SMS ID of the machine
+       being processed. The machine that matched had some attributes that
+       were different. The old machine will be updated to have the
+       attributes of the current machine. Current Machine: <X> Old Machine
+       (will change): <Y>
+
+183    Machine classes: Several machines were found in the database that
+       matched the identification attributes of the machine currently being
+       entered in the database. All machines in the database with these
+       attributes were deleted and a resync command was sent to the machine
+       being added. Identification information: <X>
+
+184    Machine classes: Couldn't delete the list of machines from the
+       database.
+
+185    Machine classes: Several machines were found in the database with
+       the same SMS ID as the machine currently being entered into the
+       database. All machines with the this SMS ID were deleted from the
+       database and are sync command was sent to the machine being entered.
+       SMS ID: <X>
+
+186    Machine classes: A resync command was sent to the Following machine.
+       Site: Domain X SMS ID: Y
+
+187    Machine classes: A MIF contained an attribute with a type different
+       from that already defined in the database for the same attribute.
+       The MIF was not processed. Group: X Attribute: Y
+
+188    Error reading configuration information in path: <X>
+
+189    Cannot find the Package Command Manager instruction for machine (X)
+       to remove.
+
+190    Command not specified in Inventory Agent re-synchronize instruction.
+       Re-synchronization will not take place.
+
+191    Invalid command in Inventory Agent re-synchronize instruction or
+       corrupted instruction file. Re-synchronization will not take place.
+
+192    Machine not specified in Inventory Agent re-synchronize instruction.
+       Re-synchronization will not take place.
+
+193    Domain not specified in Inventory Agent re-synchronize instruction.
+       Re-synchronization will not take place.
+
+194    Invalid domain (X) in Inventory Agent re-synchronize instruction.
+       Re-synchronization will not take place.
+
+195    Cannot write file for domain (X) Inventory Agent re-synchronize
+       instruction. Re-synchronization will not take place.
+
+196    Delta: Could not write; disk full.
+
+197    The registry is not set up properly for the Site Reporter to run.
+       Sitecode, site server, or site server domain are missing.
+
+198    Insufficient memory to run the Site Reporter. Close one or more
+       other applications and restart.
+
+199    The registry is not set up properly for Inventory Data Loader to
+       run.
+
+Additional query words: sms prodsms
+
+======================================================================
+Keywords          : kbnetwork kbDatabase kbInventory smsinv smsdatabase 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : :1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

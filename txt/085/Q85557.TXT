@@ -1,0 +1,199 @@
+DOCUMENT:Q85557  13-AUG-2001  [win3x]
+TITLE   :File Manager Shows Garbled Date for Year 2000 or Later
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER::3.1,3.11
+OPER/SYS:
+KEYWORDS:kbfile kbtool kbYear2000 win31 kbgraphxlinkcritical
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Windows File Manager displays an incorrect date if the file is created
+with a date of 01-01-2000 or later.
+
+RESOLUTION
+==========
+
+Windows for Workgroups 3.11
+---------------------------
+
+An updated version of Winfile.exe is available from Microsoft for the following
+languages. Click the language to download the file:
+
+   DownloadDownload US English (Wfwy2kup.exe) now
+
+   DownloadDownload Danish (Wfwy2kda.exe) now
+
+   DownloadDownload Dutch (Wfwy2knl.exe) now
+
+   DownloadDownload Finnish (Wfwy2kfi.exe) now
+
+   DownloadDownload French (Wfwy2kfr.exe) now
+
+   DownloadDownload German (Wfwy2kde.exe) now
+
+   DownloadDownload Italian (Wfwy2kit.exe) now
+
+   DownloadDownload Norwegian (Wfwy2kno.exe) now
+
+   DownloadDownload Portuguese - Brazilian (Wfwy2kbr.exe) now
+
+   DownloadDownload Spanish (Wfwy2kes.exe) now
+
+   DownloadDownload Swedish (Wfwy2ksv.exe) now
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Winfile.exe for Windows for Workgroups 3.11 should have the following file
+attributes or later:
+
+   Date       Time     Size      File name     Language
+   ------------------------------------------------------------------
+    3/17/97   3:12pm   170,496   Winfile.exe   English
+    7/09/97   2:08pm   169,824   Winfile.exe   Danish
+    7/09/97   2:08pm   172,192   Winfile.exe   Dutch
+    7/09/97   2:08pm   169,680   Winfile.exe   Finnish
+    7/09/97   2:08pm   173,008   Winfile.exe   French
+   12/08/97   5:54pm   173,728   Winfile.exe   German
+    7/09/97   2:08pm   170,688   Winfile.exe   Italian
+    7/09/97   2:08pm   169,504   Winfile.exe   Norwegian
+    7/09/97   2:08pm   172,208   Winfile.exe   Portuguese (Brazilian)
+    7/09/97   2:08pm   172,832   Winfile.exe   Spanish
+    7/09/97   2:08pm   169,952   Winfile.exe   Swedish
+
+Windows 3.1 and Windows 3.11
+----------------------------
+
+An updated version of Winfile.exe is available from Microsoft for the following
+languages. Click the language to download the file:
+
+   DownloadDownload US English (W31y2kup.exe) now
+
+   DownloadDownload Simplified Chinese (W31y2kcn.exe) now
+
+   DownloadDownload Traditional Chinese (W31y2ktw.exe) now
+
+   DownloadDownload Czech (W31y2kcs.exe) now
+
+   DownloadDownload Danish (W31y2kda.exe) now
+
+   DownloadDownload Dutch (W31y2knl.exe) now
+
+   DownloadDownload Finnish (W31y2kfi.exe) now
+
+   DownloadDownload French (W31y2kfr.exe) now
+
+   DownloadDownload German (W31y2kde.exe) now
+
+   DownloadDownload Hungarian (W31y2khu.exe) now
+
+   DownloadDownload Italian (W31y2kit.exe) now
+
+   DownloadDownload Korean (W31y2kko.exe) now
+
+   DownloadDownload Norwegian (W31y2kno.exe) now
+
+   DownloadDownload Polish (W31y2kpl.exe) now
+
+   DownloadDownload Portuguese - Brazilian (W31y2kbr.exe) now
+
+   DownloadDownload Russian (W31y2kru.exe) now
+
+   DownloadDownload Spanish (W31y2kes.exe) now
+
+   DownloadDownload Swedish (W31y2ksv.exe) now
+
+   DownloadDownload Turkish (W31y2ktr.exe) now
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Winfile.exe for Windows 3.1 and Windows 3.11 should have the following file
+attributes or later:
+
+   Date       Time      Size      File name     Language
+   -------------------------------------------------------------------
+   10/14/97   10:59am   146,864   Winfile.exe   English
+    5/21/98    5:05pm   146,048   Winfile.exe   Chinese (Simplified)
+    5/21/98    4:44pm   146,064   Winfile.exe   Chinese (Traditional)
+   12/02/97    3:03pm   147,659   Winfile.exe   Czech
+   12/02/97    3:03pm   147,507   Winfile.exe   Danish
+   12/02/97    3:03pm   149,031   Winfile.exe   Dutch
+   12/02/97    3:03pm   148,055   Winfile.exe   Finnish
+   12/02/97    3:03pm   149,119   Winfile.exe   French
+    1/21/98    3:14pm   149,347   Winfile.exe   German
+   12/08/97    6:05pm   148,463   Winfile.exe   Hungarian
+   12/02/97    3:03pm   147,424   Winfile.exe   Italian
+    5/21/98    4:49pm   150,224   Winfile.exe   Korean
+   12/02/97    3:03pm   146,355   Winfile.exe   Norwegian
+   12/02/97    3:03pm   147,775   Winfile.exe   Polish
+   12/02/97    3:03pm   148,207   Winfile.exe   Portuguese (Brazilian)
+   12/02/97    3:04pm   147,147   Winfile.exe   Russian
+   12/02/97    3:04pm   149,591   Winfile.exe   Spanish
+   12/02/97    3:04pm   146,551   Winfile.exe   Swedish
+   12/02/97    3:04pm   146,819   Winfile.exe   Turkish
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+NOTE: You do not need to install this version of Winfile.exe if you have already
+applied W31filup.exe or Wfwfilup.exe.
+
+With the original Winfile.exe, any date beyond 2000 is displayed as (11/10/:0).
+The date after the File Manager update appears like this (11/10/00).
+
+For information about a similar issue with Microsoft Windows 95, see the
+following article in the Microsoft Knowledge Base:
+
+   Q172707 File Manager Shows Incorrect Date For Year 2000 or Later
+
+Additional query words: 3.10 3.11 y2k wfw wfwg
+
+======================================================================
+Keywords          : kbfile kbtool kbYear2000 win31 kbgraphxlinkcritical 
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : :3.1,3.11
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,61 @@
+DOCUMENT:Q184022  04-OCT-2001  [frontpg]
+TITLE   :FP: Changing Size of Text Changes Line Spacing
+PRODUCT :Word Front Page
+PROD/VER:MACINTOSH:1.0; WINDOWS:1.1,97
+OPER/SYS:
+KEYWORDS:kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for Windows 1.1 
+ - Microsoft FrontPage for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 2000 version of this article, see Q198156.
+
+For a Microsoft FrontPage 98 version of this article, see Q194272.
+
+SYMPTOMS
+========
+
+If you change the font size of a letter, word, or line of text in a series of
+lines, the line spacing between the line you are formatting and the one below it
+will also change.
+
+CAUSE
+=====
+
+This behavior occurs when you change the font size by using the Font dialog box
+(on the Format menu, click Font) or the Increase Text Size or Decrease Text Size
+buttons on the Formatting toolbar. It is a function of the user interface. This
+allows space for character descenders, such as lower case "j", "y", or "g". The
+line spacing adjusts to accommodate these characters.
+
+
+Additional query words: 97
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbHWMAC kbOSMAC kbFrontPageSearch kbZNotKeyword8 kbFrontPage1xSearch kbFrontPage97Search kbFrontPageMac kbZNotKeyword3 kbFrontPage110
+Version           : MACINTOSH:1.0; WINDOWS:1.1,97
+Hardware          : MAC x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

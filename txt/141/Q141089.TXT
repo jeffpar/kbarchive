@@ -1,0 +1,52 @@
+DOCUMENT:Q141089  29-NOV-1999  [homekids]
+TITLE   :Artist: Oval Drawing Tool Produces Extra Lines or Ovals
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0,1.1,1.1a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fine Artist for Windows, versions 1.0, 1.1, 1.1a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you draw ovals in the Painting Studio, there may be lines and/or ovals that
+appear to the left of the finished oval. It is actually a small oval or an oval
+on its edge, which makes it appear as a line on the screen.
+
+RESOLUTION
+==========
+
+To resolve this problem, erase the objects using the vacuum tool.
+
+Microsoft has confirmed this to be a problem in Fine Artist for Windows, versions
+1.0, 1.1, and 1.1a. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: kids mczee kbmm lines line video screen display extra drawing draws homekids homekid
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbZNotKeyword2 kbFineArtist100 kbFineArtist110 kbFineArtist110a
+Version           : WINDOWS:1.0,1.1,1.1a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

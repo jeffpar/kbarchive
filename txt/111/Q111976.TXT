@@ -1,0 +1,76 @@
+DOCUMENT:Q111976  26-FEB-2002  [win3x]
+TITLE   :Help Files on Current Windows for Workgroups 3.11 Issues
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER::3.11
+OPER/SYS:
+KEYWORDS:kbfile kbgraphxlinkcritical
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft PSS Knowledge Base group regularly extracts the most current
+articles from the Windows for Workgroups database and creates a Windows Help
+file that we then post to the appropriate forum and the Microsoft Download
+Center. We also update these files as new information becomes available.
+
+The files listed below are available to download from the Microsoft Download
+Center. For information about downloading these files, please see the
+"Instructions for Downloading" section at the end of this article.
+
+FILES AVAILABLE FROM ONLINE SERVICES
+------------------------------------
+
+For Windows for Workgroups issues WFW12.EXE contains a collection of 100 of the
+articles most frequently used by PSS Support Engineers as of January 1995.
+
++-------------------------------------------------+
+| Item ID | File name | Description               | 
++-------------------------------------------------+
+| S14766  | WFW12.EXE | 100 Top articles for WFWG | 
++-------------------------------------------------+
+
+INSTRUCTIONS FOR DOWNLOADING
+----------------------------
+
+The following file is available for download from the Microsoft Download Center:
+
+   DownloadDownload Wfw12.exe now
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Additional query words: 3.11 CIS forum winhelp
+
+======================================================================
+Keywords          : kbfile kbgraphxlinkcritical 
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : :3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,51 @@
+DOCUMENT:Q195378  17-JUL-2001  [visualc]
+TITLE   :DOC: Release Notes Incorrectly State that IStorage Is Broken
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbdocerr kbOAK kbVC500 kbOSWinCE210
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE 2.10 Enhancement Pack for Windows CE Embedded Toolkit for Visual C++ 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Release Notes for the product described above incorrectly state that the
+IStorage and OLE Storage API for Windows CE version 2.1 are broken.
+
+In fact, these functions are available in Windows CE version 2.1.
+
+REFERENCES
+==========
+
+Release Notes: Istorage and OLE Storage APIs
+
+Additional query words: kbDSupport kbWinCE210
+
+======================================================================
+Keywords          : kbdocerr kbOAK kbVC500 kbOSWinCE210 
+Technology        : kbAudDeveloper kbWinCESearch kbWinCEEnh210ETKVC500
+Version           : WINDOWS:
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

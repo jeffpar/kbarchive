@@ -1,0 +1,62 @@
+DOCUMENT:Q303112  29-JAN-2002  [homegame]
+TITLE   :Pandora's Box: Run-Time Error When You Attempt to Start Game
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Pandora's Box, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to start Microsoft Pandora's Box, you receive one of the following
+error messages:
+
+   Microsoft Visual C++ Runtime Library: C:\Program Files\Microsoft
+   Games\Pandora's Box\pandora.icd. Abnormal program termination
+
+-or-
+
+   Unable to create DirectDraw surface. Make sure that DirectX is installed, and
+   then try again.
+
+RESOLUTION
+==========
+
+To resolve this issue, download and install the Pandora's Box Update Patch Set
+1.0 from the following Microsoft Web site:
+
+   http://www.microsoft.com/games/pandorasbox/downloads.htm
+
+NOTE: If you do not receive these error messages upon startup, there is no need
+to download the patch.
+
+Additional query words: msgame
+
+======================================================================
+Keywords          : kbimu 
+Technology        : _IKkbbogus kbGamesSearch kbPandoraSearch kbPandorasBox
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,91 @@
+DOCUMENT:Q259958  06-AUG-2002  [homegame]
+TITLE   :StarLancer: How to Preserve Saved Games
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbsetup kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft StarLancer, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to preserve your saved games when you uninstall and
+then reinstall Microsoft StarLancer.
+
+MORE INFORMATION
+================
+
+To preserve your saved games when you uninstall StarLancer:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. Click Microsoft Starlancer, and then click Add/Remove.
+
+4. Click Uninstall, and then click OK.
+
+   NOTE: Do not click to select the "Remove saved games?" check box.
+
+5. Click OK.
+
+To load a saved game after you reinstall StarLancer:
+
+1. Start StarLancer.
+
+2. On the End User License Agreement screen, click Accept.
+
+3. When you are prompted to let StarLancer detect your hardware, click OK.
+
+4. On the StarLancer startup screen, click Single Player.
+
+5. In the Call Sign (Alpha 2) box, type the call sign for the saved game that
+   you want to load, and then click Load Game.
+
+6. In the list of saved games, click the game that you want to load, and then
+   click Load Game.
+
+To find the call signs for your saved games, look at the names of the saved game
+files in the following folder on your hard disk
+
+   <drive>:\Program Files\Microsoft Games\Starlancer\Saves
+
+where <drive> is the drive letter of the hard disk on which you installed
+StarLancer.
+
+Saved game files are named in the following format
+
+   <callsign>GAME<###>.iff
+
+where <callsign> is the call sign for the saved game, and <###> is a
+three-digit number.
+
+Additional query words: 1.00 msgame star lancer setup savegame delete remove
+
+======================================================================
+Keywords          : kbsetup kbimu msgame 
+Technology        : _IKkbbogus kbGamesSearch kbStarlancerSearch kbStarlancer
+Version           : :1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

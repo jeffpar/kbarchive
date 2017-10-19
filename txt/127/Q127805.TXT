@@ -1,0 +1,71 @@
+DOCUMENT:Q127805  27-JUL-2001  [win3x]
+TITLE   :Err Msg: "Problem Loading or Executing the NetWare..."
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11,95
+OPER/SYS:
+KEYWORDS:3rdpartynet win95 kb3rdPartyNetClient
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using Windows for Workgroups version 3.11 or Windows 95 in
+conjunction with the Novell NetWare shell version 4.x, you may receive the
+following error message:
+
+   NetWare Error: NWDrv-3.00-20: Problem loading or executing the NetWare
+   directory services support libraries. All NetWare directory services and
+   functions are disabled.
+
+CAUSE
+=====
+
+The Netware.drv file cannot find the library files it requires to operate. This
+problem can occur if you do not run the INSTALL program provided with Novell's
+NWCLIENT after you set up the network in Windows for Workgroups or Windows 95.
+This information applies to the NWCLIENT version dated 11/8/94 that is shipped
+with Novell NetWare version 4.1.
+
+RESOLUTION
+==========
+
+Please contact Novell to determine the proper procedure for installing the
+NWCLIENT components.
+
+
+MORE INFORMATION
+================
+
+During Setup, both Windows for Workgroups version 3.11 and Windows 95 copy only
+the NetWare components Netware.drv, Vnetware.386, and Vipx.386. Setup does not
+copy the NetWare library files that Netware.drv looks for when it loads.
+
+Additional query words: 3.11
+
+======================================================================
+Keywords          : 3rdpartynet win95 kb3rdPartyNetClient 
+Technology        : kbAudDeveloper kbWin95search kbWFWSearch kbZNotKeyword3 kbWFW311
+Version           : WINDOWS:3.11,95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

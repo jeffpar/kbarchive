@@ -1,0 +1,134 @@
+DOCUMENT:Q294735  27-FEB-2002  [iis]
+TITLE   :SAMPLE: Override the Server Name in the Response Header Field
+PRODUCT :Internet Information Server
+PROD/VER::3.0,4.0,5.0
+OPER/SYS:
+KEYWORDS:kbfile kbGrpDSSIE kbDSupport kbIIS kbiis300 kbiis400 kbiis500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 3.0, 4.0 
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Section 14 of the World Wide Web Consortium's Request for Comments (RFC) for
+HTTP (RFC 2616) describes the header field definitions that are returned by an
+HTTP/1.1-compliant server. Section 14.38 of RFC 2616 discusses the server header
+that is sent by the HTTP 1.1-compliant Web server. It includes a note abut
+making this a configurable setting within the server software.
+
+Internet Information Server/Services does not allow this to be a configurable
+option, but this can be altered through an ISAPI filter.
+
+ServerHeader.exe provides a sample Microsoft Visual C++ project (including sample
+code) for an ISAPI filter that provides this functionality.
+
+MORE INFORMATION
+================
+
+Internet Server API (ISAPI) is a programming interface for Internet servers, in
+this case Internet Information Server/Services (IIS). ISAPI filters are able to
+intercept events during the retrieval, processing, and returning of a request
+sent to a Web server, thus giving the developer a way to handle these events
+before the server has the opportunity to.
+
+In the sample code available through this article, the filter intercepts the
+headers before they are sent to the client and changes the server header to the
+string that exists in a registry key.
+
+The filter does this by requesting notification of the SF_NOTIFY_SEND_RESPONSE
+event, and when that event occurs, it retrieves the string that you have
+configured for the ServerType.
+
+The ServerType REG_SZ registry key is implemented solely for the purposes of this
+filter.
+
+This is the registry key that is checked:
+
+   [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W3SVC\Parameters]
+   "ServerType"="Custom Server String"
+
+If is value is empty or does not exist, the filter does not alter the server
+string and just allows the server to continue to process the request.
+
+Once the value is read from the registry, the SetHeader() API is used to override
+the server string.
+
+The following file is available for download from the Microsoft Download Center:
+
+   ServerHeader.exe
+   (http://download.microsoft.com/download/iis50/sample2/1.0/NT45/EN-US/ServerHeader.exe)
+
+Release Date: Mar-28-2001
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+The file ServerHeader.exe contains the following:
+
++---------------------------------+
+| Serverheader.def | 145 bytes    | 
++---------------------------------+
+| ServerHeader.cpp | 4,236 	bytes | 
++---------------------------------+
+| ReadMe.txt       | 1,649 bytes  | 
++---------------------------------+
+| ServerHeader.dsp | 4,458 bytes  | 
++---------------------------------+
+| ServerHeader.dsw | 547 bytes    | 
++---------------------------------+
+| ServerHeader.ncb | 33,792 bytes | 
++---------------------------------+
+| ServerHeader.opt | 48,640 bytes | 
++---------------------------------+
+| ServerHeader.plg | 913 bytes    | 
++---------------------------------+
+| servertype.reg   | 330 bytes    | 
++---------------------------------+
+| StdAfx.cpp       | 229 bytes    | 
++---------------------------------+
+| StdAfx.h         | 802 bytes    | 
++---------------------------------+
+
+REFERENCES
+==========
+
+RFC2 616 is available from the following URL:
+
+   ftp://ftp.isi.edu/in-notes/rfc2616.txt
+
+
+Additional query words: ServerHeader
+
+======================================================================
+Keywords          : kbfile kbGrpDSSIE kbDSupport kbIIS kbiis300 kbiis400 kbiis500 
+Technology        : kbiisSearch kbiis500 kbiis400 kbiis300
+Version           : :3.0,4.0,5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

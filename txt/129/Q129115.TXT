@@ -1,0 +1,61 @@
+DOCUMENT:Q129115  08-AUG-2001  [winnt]
+TITLE   :PRLNTSS.SYS Error After Applying Compaq SSD
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.50 3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51 
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Compaq Support Software Diskette (SSD) version 1.13 or later,
+a Service Control Manager error may appear indicating a service or device failed
+to start. The system log may contain Event ID 7022 or 7026 referencing
+PRLNTSS.SYS. The error may state: The following boot-start or system-start
+driver failed to load. Source PRLNTSS
+
+
+CAUSE
+=====
+
+This error occurs when you inadvertently install PRLNTSS.SYS when you run Compaq
+SETUP.CMD. PRLNTSS.SYS allows the Compaq Fast SCSI-2 controller to run the
+Compaq external disk array. You do not need it unless you are using an external
+disk array.
+
+RESOLUTION
+==========
+
+To correct this problem, run Control Panel, choose Devices, and disable (stop)
+Compaq Proliant Storage Subsystem.
+
+
+Additional query words: 1.14 cpq prodnt eda
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.50 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

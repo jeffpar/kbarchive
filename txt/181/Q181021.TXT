@@ -1,0 +1,72 @@
+DOCUMENT:Q181021  09-AUG-2001  [winnt]
+TITLE   :RRAS ErrMsg: Setup Failed to Copy Oemnsvra.inf to Your...
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Routing and Remote Access Service Update for Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to reinstall Routing and Remote Access Service (RRAS) to
+upgrade or repair your existing installation, you may receive the following
+error message:
+
+   Routing and Remote Access Service
+   Setup failed to copy OEMNSVRA.INF to your system32 directory. Make sure
+   this file is present in the directory you copied Routing and Remote
+   Access Service files to and the version of OEMNSVRA.INF in your system32
+   directory is not a read only file.
+
+CAUSE
+=====
+
+The source file location that you specified contains a trailing backslash (\).
+For example:
+
+   "C:\Program Files\Routing\Mprsetup.exe" "C:\Program Files\Routing\"
+
+NOTE: The last backslash (\) may cause the error.
+
+
+
+RESOLUTION
+==========
+
+To resolve this issue, when you are prompted for the source location of the RRAS
+files, do not specify a trailing backslash as follows:
+
+   "C:\Program Files\Routing\Mprsetup.exe" "C:\Program Files\Routing"
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbAudDeveloper kbRRASNTSearch kbRRASNT400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

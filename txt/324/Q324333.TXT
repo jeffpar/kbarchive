@@ -1,0 +1,83 @@
+DOCUMENT:Q324333  18-JUL-2002  [iis]
+TITLE   :Error if User Not Included in Bypass Traversal Checking Policy
+PRODUCT :Internet Information Server
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server version 4.0 
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft Internet Information Services version 5.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you connect to any page on an Internet Information Services (IIS) Web site,
+you may receive the following error message:
+
+   401.3 Unauthorized due to ACL on resource
+
+CAUSE
+=====
+
+This can occur if the account that is trying to access resources on the server
+does not have enough NTFS file system permissions on the resource.
+
+RESOLUTION
+==========
+
+Do not remove the Everyone group from the Bypass Traverse Checking policy. If
+the Everyone group must be removed from the policy for security reasons, make
+sure that the IUSR account is listed in the policy.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Behavior
+-------------------------------
+
+1. Tighten the NTFS permissions on the resource.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q271071 Minimum NTFS Permissions Required for IIS 5.0 to Work
+
+2. Remove Everyone from the local Bypass Traverse Checking security policy.
+
+3. Try to access a simple HTML page on IIS. You receive the 401.3 error message.
+
+
+Additional query words: 401.3 access denied
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500 kbiis400 kbiis510
+Version           : :4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

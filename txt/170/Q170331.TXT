@@ -1,0 +1,64 @@
+DOCUMENT:Q170331  21-FEB-1999  [winnt]
+TITLE   :Automatic Dialog Box Appears During ZAK Setup
+PRODUCT :Microsoft Windows NT
+PROD/VER:1.0
+OPER/SYS:
+KEYWORDS:kbsetup kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Zero Administration Kit for Windows NT Workstation 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you insert the Windows NT 4.0 and Service Pack CD-ROMs during Zero
+Administration Kit (ZAK) Setup, the dialog boxes that run automatically for
+these products appear and must be closed manually before you can click OK in the
+dialog box that prompted you to insert the CD-ROM.
+
+RESOLUTION
+==========
+
+To resolve this problem, follow these steps:
+
+1. Close the dialog box by clicking the Close button in the upper right corner
+   of the box.
+
+2. Click OK in the dialog box that prompted you to insert the CD-ROM to continue
+   ZAK setup.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Zero Administration
+Kit for Windows NT Workstation 4.0. We are researching this problem and will
+post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+
+Additional query words: 1.00 autorun
+
+======================================================================
+Keywords          : kbsetup kbtool 
+Technology        : kbWinNTWsearch kbAudDeveloper kbZAWNTW400
+Version           : 1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

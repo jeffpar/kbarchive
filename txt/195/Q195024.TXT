@@ -1,0 +1,64 @@
+DOCUMENT:Q195024  01-MAY-2001  [ssafe]
+TITLE   :INFO: Visual SourceSafe Creates a VSSVer.scc File
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbSSafe600 kbSSExplorer
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual SourceSafe operations that copy files from the Visual SourceSafe database
+to another location, such as a project's working folder, shadow folder, or
+deploy location create a file named VSSVer.scc.
+
+MORE INFORMATION
+================
+
+Visual SourceSafe 6.0 uses the VSSVer.scc to speed up the GET process (Fast GET)
+on any database, even one that is not in the new format supported by Visual
+SourceSafe 6.0. There is no way to prevent Visual SourceSafe from creating this
+file when performing an explicit or implicit GET operation. Setting the file's
+Hidden attribute, however, does not affect performance and can be used to
+prevent the file from appearing in Windows Explorer.
+
+REFERENCES
+==========
+
+For additional information about , please see the following article in the
+Microsoft Knowledge Base:
+
+   Q169257 INFO: Actions that Perform an Implicit GET
+
+Visual SourceSafe Help, "Fast GET" topic.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe600 kbSSExplorer 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600
+Version           : WINDOWS:6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

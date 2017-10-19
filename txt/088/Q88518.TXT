@@ -1,0 +1,43 @@
+DOCUMENT:Q88518  30-JUL-2001  [homegame]
+TITLE   :Barton Creek-Fazio Has Steep Trough on Holes 12 and 13
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+In the golf course by Access Software called Barton Creek-Fazio, there is an
+extremely steep trough located near holes 12 and 13.
+
+When you are located in this steep trough, the screen may appear unusual due to
+the steep incline. You can hit out of it, usually by hitting with a straight
+loftwedge or sandwedge. You may experience difficulty getting out of the trough
+if using the Chip feature as your shot type. Therefore, it is recommended that
+you use the Straight shot type using a sandwedge or loftwedge.
+
+This course is designed according to the actual Barton Creek-Fazio course in
+Barton Creek, Texas, the site of the Liberty Mutual Legends of Golf Tournament.
+
+Additional query words: 1.00 strange view
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

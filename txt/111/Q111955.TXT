@@ -1,0 +1,50 @@
+DOCUMENT:Q111955  15-DEC-2000  [winnt]
+TITLE   :Description of Networking Diagram Inaccurate in Resource Kit
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1
+OPER/SYS:
+KEYWORDS:kbother
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Windows NT Resource Kit, version 3.1 
+-------------------------------------------------------------------------------
+
+The Windows NT Resource Guide, Volume 1 of the Windows NT Resource Kit,
+incorrectly describes a technical diagram of the Windows NT networking
+model in Chapter 15, titled "Windows NT Networking Architecture." In the
+first and second paragraph on page 572, it states:
+
+   ...Figure 15.5 includes network adapter cards to illustrate that you can
+   use multiple network adapter cards on a computer running Windows NT.
+
+   The model also shows a serial driver and serial card.
+
+These statements are incorrect because figure 15.5 on page 571 does not
+show network adapter cards nor serial cards. It illustrates only the
+physical layer.
+
+Additional query words: prodnt ras com port
+
+======================================================================
+Keywords          : kbother 
+Technology        : kbMSPressSearch kbZNotKeyword6 kbZNotKeyword2
+Version           : 3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

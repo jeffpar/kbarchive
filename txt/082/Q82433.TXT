@@ -1,0 +1,59 @@
+DOCUMENT:Q82433  15-OCT-1999  [win95x]
+TITLE   :Meaning of the [compatibility] Section in SETUP.INF
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Windows has a SETUP.INF file that it uses as a script during the setup
+procedure. There is a [compatibility] section in the SETUP.INF file that the
+Setup program compares with the CONFIG.SYS file to see if any entries in the
+CONFIG.SYS file contain a driver that is on the list in the [compatibility]
+section. If so, Setup deletes the entry in the CONFIG.SYS file without warning
+the user. Setup does not attempt to unload the driver from memory. Consequently,
+you should restart your computer after running Setup.
+
+MORE INFORMATION
+================
+
+The [compatibility] list is similar to the following:
+
+   icache.sys
+   ibmcache.sys
+   cache.sys
+   cache.exe
+   mcache.sys
+   fast512.sys
+
+Additional query words: 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

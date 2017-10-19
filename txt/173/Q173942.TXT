@@ -1,0 +1,62 @@
+DOCUMENT:Q173942  10-AUG-2001  [winnt]
+TITLE   :WINS Replication Triggered Incorrectly
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you view or edit the settings in the Replication Partners dialog box of
+WINS Manager, clicking OK may cause replication to start, even though it is not
+the scheduled time for replication to occur. This does not happen if you click
+Cancel or Close.
+
+MORE INFORMATION
+================
+
+WINS replication should only occur when you click Replicate Now in the
+Replication Partners dialog box, or at the scheduled time specified in the Push
+and Pull properties.
+
+This may occur if the "Initial replication" check box is selected in the WINS
+Server Configuration dialog box. Per the Help topic, this option causes the WINS
+server to replicate with partners on startup, and when replication options or
+partners are changed.
+
+In this case, clicking OK causes the replication configuration dialog box to
+think that some changes may have been made and replication is triggered.
+Clicking Cancel avoids this.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

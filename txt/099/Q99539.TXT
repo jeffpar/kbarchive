@@ -1,0 +1,57 @@
+DOCUMENT:Q99539  23-OCT-1999  [foxmisc]
+TITLE   :Third-Party Books on FoxBASE+/Mac
+PRODUCT :Microsoft Fox Miscellaneous Products
+PROD/VER:MACINTOSH:2.01
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxBASE+ for Macintosh, version 2.01 
+-------------------------------------------------------------------------------
+
+This article lists third-party books on FoxBASE+/Mac. The books are
+listed in alphabetical order by title.
+
+   Dynamics of FoxBASE+/Mac Programming
+   George F. Goley IV
+   Dow Jones-Irwin
+   Homewood, Illinois 60430
+   Copyright 1990 Richard D. Irwin, Inc.
+
+   FoxBASE+/Mac Simplified
+   Michael Masterson
+   Windcrest Books
+   Imprint of TAB Books
+   Blue Ridge Summit, PA 17294-0850
+   Copyright 1990 By Michael Masterson
+
+The books included here have been authored by writers independent of
+Microsoft; we make no warranty, implied or otherwise, regarding the
+information contained in these books.
+
+
+Additional query words: 2.01 Manuals code coding examples
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbFoxproSearch kbFoxBASE201Mac kbFoxBASESearch
+Version           : MACINTOSH:2.01
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

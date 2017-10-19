@@ -1,0 +1,65 @@
+DOCUMENT:Q197382  10-AUG-2001  [winnt]
+TITLE   :HOWTO: Keep Cluster Administrator from Reconnecting to a Cluster
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:kbClustServ100 kbEEdition kbOSWinNT400 kbSDKPlatform
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you start Cluster Administrator, the default behavior is to reconnect to
+the last cluster that Cluster Administrator was previously connected to. In
+certain circumstances, this may not be the desired action.
+
+MORE INFORMATION
+================
+
+You can use a command line switch to run Cluster Administrator without having it
+reconnect to previously connected clusters.
+
+From the command line execute one of the following commands:
+
+ - cluadmin /noreconnect
+
+ - cluadmin /norecon
+
+NOTE: In this case "/norecon" is an abbreviated version of "noreconnect".
+
+Cluster Administrator starts and prompts the user with the Open Connection to
+Cluster dialog box.
+
+NOTE: The dialog box shows the last cluster or server name that the Cluster
+Administrator was connected to as the first option.
+
+Additional query words: mscs admin
+
+======================================================================
+Keywords          : kbClustServ100 kbEEdition kbOSWinNT400 kbSDKPlatform 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search
+Version           : WINNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

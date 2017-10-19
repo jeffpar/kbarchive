@@ -1,0 +1,91 @@
+DOCUMENT:Q108079  17-DEC-2000  [win3x]
+TITLE   :32-Bit File Access Maximum Cache Size
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+3.11
+
+WINDOWS
+
+kbenv
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+When you use Microsoft Windows for Workgroups 3.11 with 32-bit file access, the
+maximum amount of memory that can be set in the 386 Enhanced dialog box in
+Control Panel is 24 megabytes (MB)(or 24,576 kilobytes [K]).
+
+Microsoft Windows 95 does not provide a user interface to change the 32-bit file
+access cache size.
+
+MORE INFORMATION
+================
+
+Although the user interface is limited to 24 MB, the theoretical maximum size of
+the cache is actually 2GB. This cache size is using physical RAM; therefore, the
+cache size is limited to the amount of RAM on your computer. Setting the cache
+size greater than the physical amount of RAM available results in the following
+error message when re-entering the Virtual Memory settings in the 386 Enhanced
+dialog box:
+
+   32-bit file access was unable to run. Your hard disk(s) may not be compatible
+   with 32-bit file access.
+
+Steps to Manually Increase or Decrease the Cache Size
+for Windows for Workgroups 3.11 and Windows 95
+----------------------------------------------------------------------------------------------------
+
+1. Open the System.ini file in a text editor, such as Microsoft Windows Notepad.
+
+2. Go to the [VCache] section.
+
+3. Change the MinFileCache= and the MaxFileCache= settings to the desired
+   value.
+
+   NOTE: The value for these settings are in kilobytes. For example, if you want
+   to create a 50-MB cache that cannot exceed 55 MB, the lines would be as
+   follows:
+
+         [VCache]
+         MinFileCache=51200
+         MaxFileCache=56320
+
+Please note that Microsoft's testing did not include cache sizes greater than
+40MB. Microsoft makes no guarantees that the cache size will operate correctly
+when increased above the user interface. Microsoft is not responsible for data
+loss or data corruption due to a cache size larger than the user interface.
+
+Additional query words: 3.11 vfat vcache vcache.386 max limit amount
+
+======================================================================
+Keywords          : win95 
+Technology        : kbAudDeveloper kbWin95search kbWFWSearch kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

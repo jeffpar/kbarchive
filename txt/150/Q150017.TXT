@@ -1,0 +1,88 @@
+DOCUMENT:Q150017  08-NOV-2001  [homemm]
+TITLE   :Multimedia Err Msg: "The File Wing32.dll open...,"
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dogs for Windows, version 1.0 
+ - Microsoft Oceans for Windows, version 1.0 
+ - Microsoft World of Flight for Windows, version 1.0 
+ - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start or install the products listed at the top of this
+article for the first time, you may receive the following error:
+
+   The file <full path to the Windows System folder>\wing32.dll open,
+   which <product name> needs to modify. Please close all other programs
+   or restart Windows.
+
+Where <full path to the Windows System folder> is the path to your system
+folder and <product name> is the name of the multimedia program you are
+trying to install.
+
+CAUSE
+=====
+
+The file Wing32.dll located in the Windows\System folder is set to Read- only.
+
+RESOLUTION
+==========
+
+To resolve this problem, do the following:
+
+1. Click the Start button, point to Programs, and then click Windows Explorer.
+
+2. Locate the file Wing32.dll in the Windows\System folder.
+
+3. Select Wing32.Dll.
+
+4. On the File menu, click Properties.
+
+5. On the General tab of the Properties window, clear the check in the Read-only
+   box
+
+6. Click OK.
+
+NOTE: This behavior may occur with other files located in the Windows\System
+folder. Check if the file name mentioned in the error message is set to
+Read-only. If so, substitute that file name and use the steps listed above to
+correct the setting.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the products listed at the top
+of this article. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: multi media multimedia multi-media mmtitles kbmm HP startup install installation initial
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbOSWin95 kbOSWinSearch kbHomeProdSearch kbZNotKeyword kbKidsSearch kbDogs100 kbWorldofFlight kbOceans
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

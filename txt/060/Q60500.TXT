@@ -1,0 +1,57 @@
+DOCUMENT:Q60500  04-NOV-1999  [utilities]
+TITLE   :How to Abort Compilation When Using PWB
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:1.0,1.1; OS/2:1.0,1.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Programmer's Workbench for MS-DOS, versions 1.0, 1.1 
+ - Microsoft Programmer's Workbench for OS/2, versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+This article discusses how to a compile that is in progress when using the
+Programmer's WorkBench (PWB).
+
+ - Under MS-DOS (or the OS/2 3.x compatibility box), use CTRL+C to abort.
+
+ - Under OS/2, use "Arg Meta Compile" to abort a compilation taking place in the
+   background.
+
+   The default keystrokes for Arg Meta Compile are ALT+A F9 CTRL+F3.
+
+ - You can also create a macro and assign it to a key to abort the compile
+   process. Below is a sample macro that you could place in your TOOLS.INI file
+   under the [pwb] tag.
+
+      [pwb]
+      Abort:=Arg Meta Compile
+      Abort:Ctrl+F5
+
+NOTE: In either OS/2 or MS-DOS, the ESC key will not abort a compilation.
+
+Additional query words: kbinf 1.00 1.10
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbPWBSearch kbZNotKeyword3 kbPWB100DOS kbPWB110DOS kbPWB100OS2 kbPWB110OS2
+Version           : MS-DOS:1.0,1.1; OS/2:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

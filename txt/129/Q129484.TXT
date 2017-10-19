@@ -1,0 +1,58 @@
+DOCUMENT:Q129484  08-AUG-2001  [winnt]
+TITLE   :Renaming User Account Does Not Keep Permissions in LAN Manager
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+ - Microsoft LAN Manager, version 2.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you rename a user account on a Windows NT Server primary domain controller
+(PDC) and the user account has specific permissions on a Microsoft LAN Manager
+Server backup domain controller (BDC), the new user account does not have the
+same permissions on the LAN Manager BDC's network share.
+
+
+RESOLUTION
+==========
+
+To correct this problem:
+
+1. Change the access control lists (ACLs) of all files on the LAN Manager Server
+   to reference groups rather than individual users before you rename the user
+   account.
+
+2. After you rename the user account, change the ACLs of the files to include
+   the new user name.
+
+Additional query words: prodnt 2.2b 2.2c user name
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search kbAudDeveloper kbLanManSearch kbLanMan220
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,68 @@
+DOCUMENT:Q86390  25-OCT-1999  [win95x]
+TITLE   :Aldus PageMaker 4.0 Stack Fault w/ Aldus Clipart Import Filter
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error message if you use Aldus PageMaker version
+4.0 with Microsoft Windows version 3.1:
+
+   PM4 has caused a Stack Fault in module ARTIMP.FLT at 0005:000E.
+
+CAUSE
+=====
+
+The Clipart Import filter that comes with PageMaker 4.0 causes this problem.
+
+RESOLUTION
+==========
+
+Aldus Technical support has confirmed that the import filter (ARTIMP.FLT, size
+130432, date 2/8/91) needs to be upgraded to work with Windows 3.1.
+
+An updated version of this filter is available from Aldus. Ask for Filter Pack
+#5.
+
+MORE INFORMATION
+================
+
+Once this error has occurred, you should exit Windows because the system
+resources will drop dramatically.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 3.1 3.10 4.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

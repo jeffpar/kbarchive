@@ -1,0 +1,59 @@
+DOCUMENT:Q143272  17-DEC-2000  [win95x]
+TITLE   :How to Restart Windows Without Restarting the Computer
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+NOTE: This article contains information about using Windows in a
+configuration that has not been tested and is not supported by Microsoft.
+If the steps described in this article do not function properly, do not
+use this method.
+
+SUMMARY
+=======
+
+This article describes how to restart Windows without restarting your computer.
+
+MORE INFORMATION
+================
+
+To restart Windows without restarting your computer, follow these steps:
+
+1. Click Start, and then click Shut Down.
+
+2. Press and hold down the SHIFT key while you click Restart The Computer, and
+   then click Yes.
+
+3. As soon as the screen clears, release the SHIFT key.
+
+NOTE: If you hold the SHIFT key too long, Windows restarts in Safe mode.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

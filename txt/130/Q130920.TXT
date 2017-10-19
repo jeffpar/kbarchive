@@ -1,0 +1,60 @@
+DOCUMENT:Q130920  08-AUG-2001  [winnt]
+TITLE   :Windows NT 3.5 Setup on Compaq LTE Elite Hangs
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.50
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Windows NT version 3.5 on a Compaq LTE Elite notebook computer,
+Windows NT Setup stops responding (hangs).
+
+CAUSE
+=====
+
+This problem occurs if the ROM BIOS on the computer is dated prior to October
+1994.
+
+RESOLUTION
+==========
+
+To correct this problem, obtain SP1191.EXE from Compaq's Bulletin Board Service
+(BBS) at (713) 378-1418 or the CPQFORUM on CompuServe. For more information,
+contact Compaq Technical Support at (800) 652-6672.
+
+The LTE Elite computer is manufactured by Compaq Computer Corp., a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+the product's performance or reliability.
+
+Additional query words: prodnt setup boot
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : 3.50
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

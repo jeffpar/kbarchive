@@ -1,0 +1,56 @@
+DOCUMENT:Q159235  27-JUL-2001  [win95x]
+TITLE   :APM Drive Spin Down Supported on IDE Devices Only
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:osr2 diskmem win95 kbDiskMemory
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+With Windows 95 OEM Service Release 2 (OSR2), the drive spin down feature works
+only with IDE hard disks. It does not work, for example, with SCSI hard disk.
+
+CAUSE
+=====
+
+The drive spin down feature is only supported on IDE devices.
+
+MORE INFORMATION
+================
+
+Although SCSI hard disks do support the drive spin down feature natively,
+Windows 95 does not support this feature with SCSI drives.
+
+The IDE driver (Esdi_506.pdr) does support this feature.
+
+
+Additional query words: 95
+
+======================================================================
+Keywords          : osr2 diskmem win95 kbDiskMemory 
+Technology        : kbWin95search kbOPKSearch
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

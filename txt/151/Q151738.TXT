@@ -1,0 +1,96 @@
+DOCUMENT:Q151738  31-OCT-2000  [msnetwork]
+TITLE   :Known Issues Concerning E-Mail on MSN
+PRODUCT :The Microsoft Network
+PROD/VER::2.6,5.0,5.1,5.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.6, 5.0, 5.1, 5.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists known issues concerning e-mail on MSN, The Microsoft Network.
+
+MORE INFORMATION
+================
+
+Bcc Addresses Shown on To Line
+------------------------------
+
+Addresses from the Bcc line of a mail message may appear on the To line if you
+leave the To line blank.
+
+
+Long Attached File Name Causes GP Fault
+---------------------------------------
+
+If you receive a message that contains a file with a name that contains more than
+255 characters, you receive the following error message when you attempt to open
+the message:
+
+   This program has performed an illegal operation and will be shut down.
+
+
+Mismatched Quotation Marks
+--------------------------
+
+If you reply to a message that has the addressees' friendly names in quotation
+marks and there is a mismatched set of quotation marks, your reply message may
+not be delivered to some of the addressees.
+
+
+GP Fault Attempting to Check Member Properties Offline
+------------------------------------------------------
+
+If you are not connected to MSN, open an MSN mail message, attempt to view the
+member's properties by double-clicking the name in the From field, and then
+click Cancel on the Sign In screen, a blank User Properties dialog box appears.
+You may also receive the following error message:
+
+   GUIDE caused an invalid page fault in module KERNEL32.DLL at 0137:bff9a07c
+
+
+Inaccurate Non-Delivery Message
+-------------------------------
+
+If you send mail to an invalid Internet address, you may receive a non- delivery
+message that states you sent mail to an invalid MSN account.
+
+
+Cannot Cancel Mail Delivery
+---------------------------
+
+Clicking the Cancel button while e-mail messages are being delivered does not
+stop delivery of messages. Clicking Cancel also does not stop the updating of
+headers when you are using Remote Mail.
+
+
+Additional query words: msn exchange email gpf kbimu
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN520 kbMSN510 kbMSN500 kbMSN260
+Version           : :2.6,5.0,5.1,5.2
+Issue type        : kbprb kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

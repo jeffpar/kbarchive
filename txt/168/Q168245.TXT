@@ -1,0 +1,74 @@
+DOCUMENT:Q168245  23-APR-1999  [exchange]
+TITLE   :XFOR: POP3 Clients Unable to Download All Msgs
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+You may experience this problem if you applied version 5.0.1458.10 of Store.exe
+for Microsoft Exchange version 5.0, to resolve the problem described in the
+following article in the Microsoft Knowledge Base:
+
+   Q166562 XFOR: Store.exe GPFs When POP3 Client Submits Bad Message Header
+
+You may have POP3 clients that cannot download all of their mail. Typically, they
+will see the following errors in the event log:
+
+   12802
+   MSExchange Pop3
+   Error 0x8004010f during stream configuration
+
+   11310
+   MSExchange Pop3
+   The following error occurred: The requested item could not be found.
+
+If you telnet to port 110 and attempt to retrieve the message, the following
+error message appears:
+
+   The requested item could not be found.
+
+Not all messages are affected, only some. Usually the rejected messages are all
+of the same type, such as Microsoft Mail messages, or messages with attachments,
+and so on.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.0. More information will be posted in the Microsoft Knowledge Base as
+it becomes available.
+
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : WinNT:5.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,162 @@
+DOCUMENT:Q96829  17-DEC-2000  [msdos]
+TITLE   :Explanation of the WINA20.386 File
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The WINA20.386 file is a read-only file that is copied to the root directory on
+your hard disk (startup) drive when you set up MS-DOS 5 Upgrade, MS-DOS 6
+Upgrade, or MS-DOS 6.2 Upgrade on a computer that is capable of running
+Microsoft Windows in 386 enhanced mode. Microsoft Windows version 3.0 cannot run
+in 386 enhanced mode without this file.
+
+NOTE: You do not need the WINA20.386 file if you run any other version of
+Microsoft Windows, or if you do not run Microsoft Windows version 3.0 in 386
+enhanced mode. For a discussion on running the 386 enhanced, standard, and real
+modes in Microsoft Windows, see the Microsoft Windows "User's Guide."
+
+MORE INFORMATION
+================
+
+If you do not have the WINA20.386 file and you try to run Windows version 3.0 in
+386 enhanced mode, the following message is displayed:
+
+   You must have the file WINA20.386 in the root of your boot drive to run
+   Windows in Enhanced Mode
+
+Installing the File
+-------------------
+
+If you see this message, use the EXPAND command to expand and copy this file from
+your MS-DOS installation disk to the root directory of your startup drive. The
+file is located on the following disks:
+
+   MS-DOS Version        3.5-inch Disks   5.25-inch Disks
+   ------------------------------------------------------
+
+   MS-DOS 5.0 Upgrade          3                 5
+   MS-DOS 6.0 Upgrade          1                 2
+   MS-DOS 6.2 Upgrade          1                 2
+   MS-DOS 6.21 Upgrade         1                 2
+
+To install the file, insert your installation disk in your floppy disk drive,
+type the following at the MS-DOS command prompt, and press ENTER
+
+   " expand <drive>:\wina20.38_ <startupdrive>:\wina20.386" (without
+   the quotation marks)
+
+where <drive> is the floppy disk drive containing your MS-DOS installation
+disk and <startupdrive> is your startup drive (usually drive C). For
+example if your floppy disk drive is drive A and your startup drive is drive C,
+type the following command:
+
+   " expand a:\wina20.38_ c:\wina20.386" (without the quotation marks)
+
+Deleting the WINA20.386 File
+----------------------------
+
+You can delete the WINA20.386 file from your hard disk if you do not use
+Microsoft Windows version 3.0 in 386 enhanced mode.
+
+To delete the file:
+
+1. Remove the read-only attribute by typing the following at the MS-DOS command
+   prompt and pressing ENTER:
+
+   " attrib -r <startupdrive>:\wina20.386" (without the quotation marks)
+
+2. Delete the file by typing the following command:
+
+   " del <startupdrive>:\wina20.386" (without the quotation marks)
+
+Moving the WINA20.386 File
+--------------------------
+
+You can move the WINA20.386 file to a new directory as follows:
+
+1. Copy WINA20.386 to the new location. Type the following at the MS-DOS command
+   prompt and press ENTER
+
+   " copy <startupdrive>:\wina20.386 <path>:\wina20.386 " (without
+   the quotation marks)
+
+   where <path> is the drive and directory to which you are moving
+   WINA20.386. For example, if you are moving WINA20.386 to your Windows SYSTEM
+   subdirectory on drive C, type the following at the MS-DOS command prompt and
+   press ENTER:
+
+   " copy c:\wina20.386 c:\windows\system\wina20.386 " (without the quotation
+   marks)
+
+   NOTE: If you have MS-DOS 6 or 6.2 Upgrade, substitute MOVE for COPY in the
+   command shown above and skip to step 4.
+
+2. Use a text editor, such as MS-DOS Editor, to open your CONFIG.SYS file. If
+   you want to use MS-DOS Editor, type the following at the MS-DOS command
+   prompt and press ENTER:
+
+   " edit <startupdrive>:\config.sys" (without the quotation marks)
+
+3. Add the following command on a line of its own at the end of your CONFIG.SYS
+   file:
+
+   " switches=/w" (without the quotation marks)
+
+4. Save your CONFIG.SYS file. If you are using MS-DOS Editor, choose Exit from
+   the File menu. When MS-DOS Editor displays a dialog box prompting you to save
+   your file, choose the Yes button or press ENTER.
+
+5. Use the text editor to open your Windows SYSTEM.INI file. (This file should
+   be in your Windows directory.)
+
+6. Find the section that begins with the header [386Enh].
+
+7. Add this command under the [386Enh] heading
+
+   " device=<path>\wina20.386" (without the quotation marks)
+
+   where <path> specifies the new location of the WINA20.386 file. For
+   example, if you want to move the file to your WINDOWS directory, add the
+   following command to your Windows SYSTEM.INI file:
+
+   " device=c:\windows\wina20.386" (without the quotation marks)
+
+8. Save your SYSTEM.INI file. If you're using MS-DOS Editor, choose Exit from
+   the File menu. When MS-DOS Editor displays a dialog box prompting you to save
+   your file, choose the Yes button or press ENTER.
+
+9. Restart your computer by pressing CTRL+ALT+DEL.
+
+Additional query words: 6.22 6.00 5.00 6.20 dos
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

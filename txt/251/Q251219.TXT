@@ -1,0 +1,83 @@
+DOCUMENT:Q251219  18-FEB-2000  [iis]
+TITLE   :IIS Reserves the ".map" File Extension for Image Maps
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000 kbDSupport kbiis400 kbiis500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The ".map" extension is reserved and intended for association with server-side
+image maps in Internet Information Server (IIS). Altering the mime type is not
+recommended by Microsoft and is ignored in Internet Information Server 4.0.
+
+If a file is larger than 128 KB in size, has the .map extension, and is not an
+image map, then you may receive one or more of the following error messages in
+the browser:
+
+   HTTP 500 - Internal server error
+
+   -or-
+
+   HTTP/1.1 500 Server Error
+
+   -or-
+
+   Network request is not supported
+
+CAUSE
+=====
+
+Internet Information Server assumes all files that have a file extension of .map
+are image maps.
+
+RESOLUTION
+==========
+
+This is by design.
+
+WORKAROUND
+==========
+
+Use a file type other than ".map".
+
+MORE INFORMATION
+================
+
+Other ASCII files that are over 128 KB in size are not effected. If you have a
+file with another extension, such as "a01", that is larger than 128 KB, you will
+not have problems changing the mime type or viewing it in the browser.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOSWin2000 kbDSupport kbiis400 kbiis500 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : winnt:4.0,5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

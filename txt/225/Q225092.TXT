@@ -1,0 +1,76 @@
+DOCUMENT:Q225092  28-MAY-2001  [winnt]
+TITLE   :Evicting a Node in a Cluster Can Cause Problems in SQL
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:1.0,4.0,6.5,7.0
+OPER/SYS:
+KEYWORDS:kbenv kbinterop kbFAQ
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It may seem easy to troubleshoot a node in a cluster by evicting the node and
+reinstalling the cluster service. This process can be disastrous to the SQL
+Virtual Machine and make you reinstall SQL 6.5 or 7.0.
+
+MORE INFORMATION
+================
+
+Normally evicting a cluster node is not a problem. Reinstalling the cluster and
+joining the other node typically replicates the proper entries. However, when an
+SQL virtual machine is involved, it becomes complex.
+
+Before you evict a Cluster Node running SQL, you must uninstall the SQL Virtual
+Machine first. The process is to run the cluster Wizard for SQL Virtual machine
+(not the SQL install) and uncluster SQL on both nodes. The path on the SQL
+CD-ROMs are:
+
+   SQL 6.5 = \i386\cluster
+   SQL 7.0 = \x86\cluster
+
+For Alpha computers, it would be in the Alpha folders.
+
+Changing the name of the computer forces an eviction and has a similar effect
+because after the computer name is changed, it does not communicate with the
+other node.
+
+The evict a node, follow these steps:
+
+1. In Cluster Administrator, right-click the node name.
+
+2. Click Evict Node.
+
+NOTE: If you evict a node like this while running an SQL Virtual cluster, you
+need to completely reinstall SQL.
+
+Additional query words: MSCS SQL 6.5 7.0
+
+======================================================================
+Keywords          : kbenv kbinterop kbFAQ 
+Technology        : kbWinNTsearch kbWinNT400xsearch kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400xsearch
+Version           : winnt:1.0,4.0,6.5,7.0
+Hardware          : ALPHA x86
+Issue type        : kbinfo
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,102 @@
+DOCUMENT:Q101525  30-JUL-2001  [odbc]
+TITLE   :INF: How to Use the SQL_DRIVER_HSTMT Option in SQLGetInfo()
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+An ODBC application uses handles in all its calls to the driver. These calls are
+typically made first to the Driver Manager which then routes them to the
+appropriate driver. However, the handles that are passed between the application
+and the Driver Manager are not the same as the handles passed between the Driver
+Manager and the driver. That is why the SQLGetInfo() ODBC API function has three
+fInfoTypes, SQL_DRIVER_HENV, SQL_DRIVER_HDBC and SQL_DRIVER_HSTMT, which enable
+an application to get the handles used by the driver. This article discusses how
+such handles are managed by the Driver Manager and how they can be used by an
+application to call a driver directly.
+
+MORE INFORMATION
+================
+
+The role of the Driver Manager (DM) as discussed in the ODBC SDK "Programmer's
+Reference" is to load drivers, provide entry points to an application for
+eventual calls to the driver, to validate arguments passed by an application,
+and to check state transitions. To deliver this functionality, the DM uses
+internal structures to manage all connections and statements used by an
+application.
+
+For example, when an application calls SQLAllocStmt() with the address of a
+statement handle, the DM allocates memory to manage this new hstmt. It then
+stores the far pointer to the DM-allocated memory in the statement handle of the
+application. The DM then calls SQLAllocStmt() in the Driver and uses a different
+handle variable to pass to the Driver. The Driver allocates memory to manage the
+statement, and can store its 32-bit pointer in the handle address passed to it
+by the DM. The following example demonstrates a simplified version of this
+process. It does not show how the DM associates an application's handle
+(hstmtApp) with the driver's handle (hstmtDrv). Also note that a similar process
+applies to the hdbc and henv handles.
+
+   Application                DM                               Driver
+   -----------------------------------------------------------------------
+   SQLAllocStmt      ----> *hstmtApp =
+   (hdbc, &hstmtApp)       GlobalAlloc(memory)
+                           SQLAllocStmt(hdbc, &hstmtDrv)--->
+                                                            *hstmtDrv=
+                                                            GlobalAlloc()
+
+   SQLExecDirect     ----> Map hstmtApp to hstmtDrv.
+   (hstmtApp, "select")    SQLExecDirect                --->To Driver
+                           (hstmtDrv, "select")
+
+   SQLGetInfo        ---->
+   (SQL_DRIVER_HSTMT)<---- DM returns hstmtDrv
+
+   // Windows API calls
+   hLib = GetModuleHandle("driver.dll")
+   procPvtDriverFunc = GetProcAddress(hLib, "PvtDriverFunc")
+
+   // Call to ODBC Driver
+   *procPvtDriverFunc
+   (hstmtDrv,"do something")------------------------------->To Driver
+
+An application, after connecting to a data source, may want to bypass the DM and
+communicate directly with the driver. This is not recommended because it assumes
+a good deal of familiarity between the application and the driver, and thus
+impedes interoperability.
+
+In cases where this needs to be done, an application can first call the ODBC
+SQLGetInfo() function and pass one of the following values for the fInfoType
+argument depending on what driver handle it wants to retrieve: SQL_DRIVER_HENV,
+SQL_DRIVER_HDBC, SQL_DRIVER_HSTMT. When using 1.0 ODBC drivers, the application
+can then make the GetModuleHandle() call (For drivers that comply with the ODBC
+2.0 specification, the application can call SQLGetInfo [SQL_DRIVER_HLIB] instead
+of GetModuleHandle to get the handle of the Driver DLL) and the GetProcAddress()
+call to the Windows API if does not already have the handle to the loaded driver
+DLL and the entry points into the driver respectively. Now, the application can
+call the driver directly with these ODBC driver handles and bypass the Driver
+Manager.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

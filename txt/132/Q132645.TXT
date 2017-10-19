@@ -1,0 +1,64 @@
+DOCUMENT:Q132645  17-DEC-2000  [win95x]
+TITLE   :Setting Up a Printer with Banyan VINES (Real Mode)
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to set up a printer with real-mode Banyan VINES
+connectivity. You must be familiar with the Banyan VINES network print service
+to use the information in this article. If you have questions about your Banyan
+VINES network, please consult your network administrator.
+
+MORE INFORMATION
+================
+
+To set up a printer to work with a Banyan VINES print service, follow these
+steps:
+
+1. Click the Start button, point to Settings, then click Printers.
+
+2. Double-click the Add Printer icon, then click Next.
+
+3. Click the Network Printer option button, then click Next.
+
+4. In the Network Path Or Queue Name box, type the StreetTalk name of the print
+   service you want to use, then click Next.
+
+5. If the print service is mapped by your user profile, the printer is set up
+   for the service. If the print service is not mapped by your user profile,
+   click the Map Port button and assign an appropriate port to the print
+   service.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

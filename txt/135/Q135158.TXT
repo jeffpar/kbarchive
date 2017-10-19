@@ -1,0 +1,76 @@
+DOCUMENT:Q135158  17-DEC-2000  [win95x]
+TITLE   :Titanium Seal Menu Program Does Not Run Properly
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to run a program from the MS-DOS-based menu program Titanium Seal,
+rather than running the program, Titanium Seal exits.
+
+CAUSE
+=====
+
+The Titanium Seal program does not work properly if you try to run it by
+double-clicking the program's icon or by clicking the Start button, clicking
+Run, and then typing its name in the Run dialog box.
+
+RESOLUTION
+==========
+
+To ensure that the Titanium Seal program runs properly, run it from an MS- DOS
+prompt. To do so, follow these steps:
+
+1. Click the Start button, point to Programs, and then click MS-DOS Prompt on
+   the menu that appears.
+
+2. At the MS-DOS prompt, type "seal" (without the quotation marks).
+
+NOTE: You may also have to type the path to the program. For example, you may
+have to type "c:\seal\seal" (without the quotation marks).
+
+MORE INFORMATION
+================
+
+Titanium Seal assumes that Command.com is present to accept keystrokes that are
+left behind by the program when it terminates. If you run the program from the
+Windows 95 interface instead of from the MS-DOS Prompt, Command.com is not
+present to handle the leftover keystrokes; therefore, the program is unable to
+run other programs from its menu.
+
+The product discussed here is manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding this product's performance
+or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

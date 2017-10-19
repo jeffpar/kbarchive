@@ -1,0 +1,69 @@
+DOCUMENT:Q84421  17-OCT-1999  [win95x]
+TITLE   :High Granularity Setting May Cause Problems Moving Windows
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If the Granularity option in the Desktop section of Control Panel is set too
+high, windows that are moved may shake erratically in Program Manager. A high
+granularity setting can also result in the inability to move a window in Program
+Manager once it has been placed somewhere on the desktop.
+
+MORE INFORMATION
+================
+
+Granularity defines the coarseness of an invisible grid that objects are placed
+upon on the desktop. This invisible grid could be compared to a piece of graph
+paper. Each intersection on the graph paper represents the point at which the
+window can rest. The larger the squares on the grid of the graph paper, the
+greater the jump the window must take between resting points. The Sizing Grid
+Granularity option has a range of 0 to 49. Setting the granularity to any number
+greater than zero can cause the window to jump when resized or moved, or may
+prevent it from being moved.
+
+RESOLUTION
+==========
+
+To correct this problem:
+
+1. Select Control Panel from the Main Group in Program Manager.
+
+2. Choose the Desktop icon.
+
+3. From the Sizing Grid section of the Desktop dialog box, reduce the number
+   value representing Granularity.
+
+
+Additional query words: 3.00 3.00a 3.10 3.11 windows move erratic Access forms objects jump jumps jumping granularity jerky shaky
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

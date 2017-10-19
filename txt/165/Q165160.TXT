@@ -1,0 +1,76 @@
+DOCUMENT:Q165160  26-MAY-2001  [word97]
+TITLE   :WD97: Items Missing from Message Using "Send To Mail Recipient"
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Send To Mail Recipient in Microsoft Word, the following items
+will be not be sent as part of the e-mail message:
+
+ - OLE Objects
+
+ - Tables
+
+ - Document Formatting
+
+ - Clipart
+
+NOTE: The text of the Word document is sent to the mail recipient.
+
+WORKAROUND
+==========
+
+To work around this problem, use the following steps:
+
+1. Save and close your Word document.
+
+2. In Microsoft Outlook, ensure that Word is selected as your e-mail editor.
+
+   NOTE: If you do not have Microsoft Outlook installed, you will need to run
+   Office 97 setup to install Outlook.
+
+   For additional information, please see the following article(s) in the
+   Microsoft Knowledge Base:
+
+   Q159476 How to Enable, Disable Microsoft Word as the E-Mail Editor
+
+3. Start a new mail message and place the insertion point in the message area.
+   Then, on the Insert menu, click File.
+
+4. Click the document you saved in Word, clear the "As attachment" check box,
+   and then click OK.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

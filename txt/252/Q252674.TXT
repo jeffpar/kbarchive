@@ -1,0 +1,132 @@
+DOCUMENT:Q252674  23-OCT-2000  [sms]
+TITLE   :SMS: How to Set Up a Help Desk Administrator
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP1,2.0 SP2
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After Microsoft Systems Management Server (SMS) 2.0 is installed and configured,
+the local administrator and user who installed SMS have full access to the SMS
+database through the SMS Administrator console. SMS is a program that can be
+very useful for a help desk. For SMS to have help-desk functionality,
+appropriate permissions must be assigned.
+
+MORE INFORMATION
+================
+
+SMS creates the SMS Admins local user group on the site server when it is
+installed. If the SMS site database and SMS provider are on another computer,
+SMS also creates the SMS Admins group on that computer. The SMS Administrator
+console runs only on a Microsoft Windows NT-based computer.
+
+To set up an SMS Administrator console for a help-desk administrator, make sure
+that you perform all of the following tasks:
+
+ - Create a Help Desk Administrator global group with Windows NT User Manager
+   for Domains.
+
+ - Add help-desk staff to this global group.
+
+ - Add the Help Desk Administrator global group to the SMS Admins local group on
+   both the site server and on the site database server.
+
+   This allows the SMS Administrator console to connect to the SMS database.
+   Windows NT User Manager for Domains is used to add a help-desk administrator
+   to the SMS Admins local group. If the Help Desk Administrator global group is
+   not added to the SMS Admins local group, the SMS Administrator console
+   displays the following message:
+
+   Connection Failed
+
+ - Ensure that appropriate security rights to SMS security objects (collection,
+   package, advertisement, site, query, and status) are assigned to view data in
+   the details pane of the SMS Administrator console. If not, those security
+   objects cannot be expanded.
+
+Each security object is divided into two categories, such as Classes and
+Instances. Each class consists of many instances. For example, collection is a
+class. Microsoft Windows 98 computer collection is an instance. The Security
+Rights menu in the SMS Administrator console is used to grant class and instance
+rights.
+
+There are 12 different permissions that can apply to classes and instances:
+
+    - Create
+
+ - Administrator
+
+ - Delete
+
+ - Distribute
+
+ - Use Remote Tools
+
+ - Advertise
+
+ - Read Read Resource
+
+ - Modify
+
+ - Modify Resource
+
+ - Delete Resource
+
+ - View Collected Files
+
+Create and Administrator apply only to classes. Most permissions apply to both
+classes and instances.
+
+By default, the SMS snap-in offers you access to the full range of SMS
+functionality. You can create a customized Microsoft Management Console (MMC) to
+meet your organization's needs. By combining a customized console with the
+security permissions mentioned earlier in this section, appropriate help-desk
+security and functionality can be implemented.
+
+REFERENCES
+==========
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+   Q200670 Customizing the Systems Management Server Administrator Console
+
+   Q230263 How to Create Custom MMC Snap-in Tools Using Microsoft Management
+   Console
+
+   Q199869 SMS: Assigning Class and Instance Security Rights with the SMS User
+   Wizard
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : :2.0,2.0 SP1,2.0 SP2
+Hardware          : x86
+Issue type        : kbhowto kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

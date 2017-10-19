@@ -1,0 +1,58 @@
+DOCUMENT:Q123476  11-DEC-2001  [ssafe]
+TITLE   :PRB:SoureSafe "Error locking file" on Windows NT or Multi-User
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbnetwork kbSSafe400 kbSSafe500 kbSSafe600 kbSSafe300 kbSSafe200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+ - Microsoft Visual SourceSafe, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual SourceSafe, 32-bit, for Windows 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error can occur when running SourceSafe on Windows NT or in a
+multi-user environment:
+
+   Error locking file
+
+RESOLUTION
+==========
+
+Correct this behavior by changing a setting in the SRCSAFE.INI. In version 3.0
+or later, edit the SRCSAFE.INI, which is located in the SS directory, to add:
+
+   lock_mode = lockfile
+
+In version 2.x, edit the SYSTEM.INI file in the SS directory to add:
+
+   lock_mode = pedantic
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbSSafe400 kbSSafe500 kbSSafe600 kbSSafe300 kbSSafe200 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

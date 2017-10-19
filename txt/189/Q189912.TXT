@@ -1,0 +1,75 @@
+DOCUMENT:Q189912  11-DEC-1999  [foxpro]
+TITLE   :BUG: RELEASE CLASSLIB in App or EXE Requires Use of ALIAS
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Attempting to release a class library that is contained in an APP or an EXE will
+fail with a Class library file not found error.
+
+RESOLUTION
+==========
+
+The ALIAS clause must be used in the SET CLASSLIB and RELEASE CLASSLIB
+commands.
+
+      * Set the class library using an ALIAS
+      SET CLASSLIB TO WizCtrl.vcx IN HOME()+"Wizard.app" ALIAS MyWizClass
+      * Release the class library using the ALIAS from above
+      RELEASE CLASSLIB ALIAS MyWizClass
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Run the following commands from the command window or from within a program:
+
+      SET CLASSLIB TO WizCtrl IN HOME()+"Wizard.app"
+      RELEASE CLASSLIB WizCtrl IN HOME()+"Wizard.app"
+
+Note: The Class library not found error occurs.
+
+Additional query words: kbVFp500a kbVFp500 kbVFp600 kbXBase
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

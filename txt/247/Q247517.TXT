@@ -1,0 +1,69 @@
+DOCUMENT:Q247517  16-MAY-2002  [homegame]
+TITLE   :Asheron's Call Err Msg: Failed to Execute
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Asheron's Call, version 1.0 
+ - Microsoft Asheron's Call: Dark Majesty, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you enter an Asheron's Call game room on Zone.com, you may receive the
+following error message:
+
+   Failed to execute.
+
+After this error message is displayed, the Zone downloads and installs the
+ACD3DSetup.exe file.
+
+CAUSE
+=====
+
+This behavior can occur if Microsoft DirectDraw is not properly installed on the
+computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, reinstall Microsoft DirectX. The latest version of
+DirectX is available from the following Microsoft Web site:
+
+   http://www.microsoft.com/directx/homeuser/downloads/default.asp
+
+For more information about how to obtain the latest version of DirectX, please
+see the following article in the Microsoft Knowledge Base:
+
+   Q179113 How to Download and Install DirectX
+
+Additional query words: 1.00 msgame ac msngz asherons
+
+======================================================================
+Keywords          : kberrmsg kbimu msgame 
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbMSNSearch kbAsheronSearch kbAsheron100 kbAsheronDarkMaj
+Version           : :1.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

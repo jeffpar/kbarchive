@@ -1,0 +1,64 @@
+DOCUMENT:Q75205  19-OCT-2000  [pcmail]
+TITLE   :PC DOS: Graphics Screen Corruption When Using Micro & Monitor
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:2.1e,3.0,3.0b,3.2,3.2a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 2.1e, 3.0, 3.0b, 3.2, 3.2a, on platform(s):
+    - the operating system: MS-DOS 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you use Micro and Monitor with Microsoft Mail for PC Networks while you are
+running an MS-DOS application in graphics mode, screen garbage will appear upon
+mail notification.
+
+For example, if you load Micro and Monitor prior to running an MS-DOS application
+such as Word Perfect or Microsoft Word for MS-DOS in graphics mode, the MS-DOS
+application graphics screen will become corrupted when mail is received;
+however, the mail notification dialog box will appear correctly.
+
+CAUSE
+=====
+
+Micro and Monitor are terminate-and-stay-resident (TSR) programs used with
+Microsoft Mail for PC Networks that notify the user of incoming mail. Running
+any MS-DOS application in graphics mode causes conflicts with Micro and Monitor,
+which are text mode TSR applications.
+
+RESOLUTION
+==========
+
+After you press the ENTER key to close the notification dialog box, you can do a
+screen redraw to regain the correct screen appearance of the MS-DOS application
+in graphics mode.
+
+Additional query words: 2.10e 3.00 3.00b 3.20 3.20a graphics micro monitor
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:2.1e,3.0,3.0b,3.2,3.2a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

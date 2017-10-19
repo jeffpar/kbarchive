@@ -1,0 +1,73 @@
+DOCUMENT:Q212793  09-DEC-1999  [sms]
+TITLE   :SMSINST: Increment Variable Operation Does Not Work as Expected
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbsmsInst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server Installer version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using Set Variable Action with the Increment Operation in a Systems
+Management Server Installer script, the numeric variable will not increment as
+expected. It will remain at "1" and might never exit a loop if that value is
+being evaluated as the loop's conditional.
+
+CAUSE
+=====
+
+When writing a script for a loop in which a variable is needed to increment
+through each iteration of the loop, only the increment operation and the
+variable should be selected. This will not work properly unless a new value is
+given to increment. This can be thought of as a typical X = X + 1 type of
+operation where the first X is the variable and the second X is the new value.
+
+WORKAROUND
+==========
+
+To work around this problem, simply set the new value to your variable name
+surrounded with "%" symbols. The following is an example of such a script:
+
+   Set Variable COUNTER to
+
+   While COUNTER Less Than "10" do
+     Display Message "Counter"
+   Set Variable COUNTER to %COUNTER%
+   End Block
+
+Note that %COUNTER% should be defined as the message text in the display message
+script item. Also, the operation value within "Set Variable COUNTER to
+%COUNTER%" should be defined as increment.
+In this example COUNTER is the variable and %COUNTER% is the new variable inside
+the Set Variable dialog box.
+
+Additional query words: prodsms smsinst
+
+======================================================================
+Keywords          : kbsmsInst 
+Technology        : kbSMSSearch kbSMSI200
+Version           : WINDOWS:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,60 @@
+DOCUMENT:Q155318  14-DEC-1999  [foxpro]
+TITLE   :HOWTO: Hide a Form at Startup Using the DO FORM Command
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbDesigner kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Visual FoxPro 5.0 DO FORM command now has a NOSHOW clause, which specifies
+that the Show method of the form is not called when the form is run. When you
+include NOSHOW and run the form, the form is not visible until you set the
+Visible property to true (.T.) or call the Show method.
+
+MORE INFORMATION
+================
+
+The NOSHOW clause allows you to manipulate an .scx form before it appears on the
+screen. To do this, insert code between the DO FORM and the
+<formname>.Show or <formname>.Visible commands. In the example
+below, the form's caption is set to "Test" and the form is centered before it
+appears. Type the following example into a program file or type each line into
+the Command window:
+
+      DO FORM <formname> NOSHOW
+      <formname>.AutoCenter=.T.
+      <formname>.Caption ="Test"
+      <formname>.Show
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDesigner kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

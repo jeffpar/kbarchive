@@ -1,0 +1,115 @@
+DOCUMENT:Q139214  11-FEB-2000  [foxpro]
+TITLE   :How to Store Numeric Values that Come from a Combo Box
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When the ControlSource property of a combo box or list box evaluates to a
+numeric variable and the list box displays numeric data, the ControlSource
+stores the index number (position) in the list, not the data that is displayed.
+This article shows by example how to store the numeric value listed in a combo
+box in a numeric variable.
+
+MORE INFORMATION
+================
+
+The RowSource property of a combo box or list box specifies the source of the
+values; that is, it indicates where the data is coming from.
+
+The ControlSource property of a combo box specifies the data that is modified
+when a selection is made. It indicates where the data is going to.
+
+When a combo box is bound to a character variable, the expression displayed in
+the list is stored to the ControlSource. When the object is bound to a numeric
+variable, the index order of the expression is stored to the ControlSource. For
+example, say the list displays the following elements:
+
+   ------
+   | 10 |
+   | 20 |
+   | 30 |
+   | 40 |
+   ------
+
+If the number 30 is selected when the data is bound to a numeric variable, the
+variable stored in the ControlSource property will evaluate to 3, because 30 is
+the third element in the list. If the data originates from a table, this index
+can correspond to a record number.
+
+When a combo box or a list box is not bound to any data, ControlSource is empty.
+The Value property stores the character string that is currently selected. Using
+the previous example, the Value property is equal to 30 if the list box is not
+bound to data.
+
+The Visual FoxPro Help file indicates that once the ControlSource property is set
+to a field or variable, the Value property always has the same data value and
+the same data type as the variable or field to which the ControlSource property
+is set.
+
+To store the numeric selection of a combo box to a numeric variable, you can
+assign the value of the combo box to the variable in the Interactive Change
+event handler. This assumes that the object is not bound to data. The following
+step-by-step example illustrates this procedure.
+
+Step-by-Step Example
+--------------------
+
+1. Create a new form.
+
+2. Right-click the form, and then click Data Environment.
+
+3. In the Data Environment, open the Orders table located in the Samples\Data
+   directory.
+
+4. Select the form, and place a combo box on the form.
+
+5. Change the following properties for the combo box:
+
+      RowSourceType: 2-Alias
+      RowSource    : Orders.order_amt  && Numeric field
+
+      Do not assign a ControlSource to the combo box.
+
+6. Create a new property for the form, and name it nSelectData.
+
+7. In the InteractiveChange event handler for Combo1, type:
+
+      THISFORM.nSelectData=VAL(THIS.Value)
+
+8. Save and run the form. To verify the value of the nSelectData variable, open
+   the Debug window and type <Form>.nSelectData, where <Form> is the
+   name of the form.
+
+Additional query words: combobox listbox
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

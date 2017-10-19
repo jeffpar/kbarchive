@@ -1,0 +1,61 @@
+DOCUMENT:Q246760  10-AUG-2001  [winnt]
+TITLE   :Connection to Internet Sporadic Using Cable Modem
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:2.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Proxy Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you connect to the Internet through a cable modem on a computer running both
+Microsoft Windows NT Server 4.0 and Microsoft Proxy Server 2.0, you may
+experience interruptions in your service shortly after connecting. You are able
+to identify remote sites by IP (Internet Protocol) address (PING), but not by
+host name. The DNS (Domain Name Server) has been configured properly.
+
+CAUSE
+=====
+
+This behavior may occur if the signal strength on your cable modem is too low.
+The signal's strength may be diminished if the length of the cable from your
+cable modem to your cable company's connection point exceeds the recommended
+length for the cable transmitting the signal.
+
+RESOLUTION
+==========
+
+To resolve this issue, contact your cable company and request to have signal
+repeaters added to the line to amplify the signal.
+
+Additional query words: fail lose
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbAudDeveloper kbProxyServSearch kbProxyServ200
+Version           : winnt:2.0,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

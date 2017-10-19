@@ -1,0 +1,59 @@
+DOCUMENT:Q134844  17-DEC-2000  [win95x]
+TITLE   :Windows 95 Cannot Detect EtherExpress 16/16TP on Pentium PC
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows 95 Setup may fail to detect the Intel EtherExpress 16/16TP network
+adapter in your computer.
+
+CAUSE
+=====
+
+This problem can occur if you are installing Windows 95 on a Pentium-based
+computer. There is a known incompatibility between the Intel EtherExpress
+16/16TP network adapter and Pentium-based computers with a Phoenix 4.04 BIOS.
+
+RESOLUTION
+==========
+
+Please contact Intel for information about resolving this problem.
+
+MORE INFORMATION
+================
+
+Windows 95 cannot detect or set up an EtherExpress 16/16TP network adapter on
+Pentium-based computers with a Phoenix 4.04 BIOS. If you run the Softset tool
+from Intel, the network adapter diagnostics test fails.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

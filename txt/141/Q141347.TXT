@@ -1,0 +1,83 @@
+DOCUMENT:Q141347  17-DEC-2000  [win95x]
+TITLE   :Err Msg: No Transport Provider Was Available for Delivery...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you send an e-mail message using Microsoft Exchange, it may be returned
+immediately as undeliverable. Opening the message generates the following error
+message:
+
+   No transport provider was available for delivery to this recipient.
+
+CAUSE
+=====
+
+This behavior can occur for either of the following reasons:
+
+ - You specified a service that is not installed in the message's address. For
+   example, this behavior can occur if you specify an address such as
+   "Fax:John@555-1212" when the Microsoft Fax service is not installed.
+
+ - You replied to an address that has not been added to your local copy of the
+   address book.
+
+RESOLUTION
+==========
+
+To send the message, use the appropriate method:
+
+ - If you specified a service that is not installed, install the service and
+   then send the message again.
+
+ - If you are using a local copy of the address book, either use the address
+   book on the server, or update your copy of the address book.
+
+   To use the address book on the server, follow these steps:
+
+   1. In Control Panel, double-click Mail And Fax.
+
+   2. Click Microsoft Mail, and then click Properties.
+
+   3. On the LAN Configuration Tab, click the Use Local Copy check box to clear
+      it, and then click OK.
+
+   To update your local copy of the address book, follow these steps:
+
+   1. Start Microsoft Exchange.
+
+   2. On the Tools menu, click Microsoft Mail Tools.
+
+   3. Click Download Address List.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,59 @@
+DOCUMENT:Q128150  12-FEB-2000  [foxpro]
+TITLE   :DOC: Help File Incorrectly States SYS(1037) Ignored by Windows
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:2.6,2.6a
+OPER/SYS:
+KEYWORDS:kbdocfix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Windows, versions 2.6, 2.6a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Help file that ships with Microsoft FoxPro versions 2.6 and 2.6a states that
+the function SYS(1037) is for use in FoxPro for Macintosh only. It claims that
+SYS(1037) will be ignored by FoxPro for MS-DOS and FoxPro for Windows. This is
+incorrect.
+
+This documentation error has been fixed in Visual FoxPro 5.0 for Windows.
+
+MORE INFORMATION
+================
+
+The SYS(1037) function may be used on the Macintosh to display the Page Setup
+dialog. It may also be used in FoxPro for Windows to display the Print Setup
+dialog box. SYS(1037) is ignored in FoxPro for MS-DOS. The following two-step
+procedure demonstrates the functionality of SYS(1037) in Windows:
+
+1. Open Microsoft FoxPro version 2.6 or 2.6a for Windows.
+
+2. Type "?SYS(1037)" (without the quotation marks) in the Command window, and
+   press ENTER. The Windows Printer Setup dialog box appears.
+
+Additional query words: VFP5.00 docerr 2.60 2.60a
+
+======================================================================
+Keywords          : kbdocfix 
+Technology        : kbAudDeveloper kbFoxproSearch kbFoxPro260 kbFoxPro260a
+Version           : WINDOWS:2.6,2.6a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

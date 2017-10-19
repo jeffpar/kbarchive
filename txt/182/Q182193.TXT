@@ -1,0 +1,78 @@
+DOCUMENT:Q182193  10-AUG-2001  [winnt]
+TITLE   :PRB: Err: Cluster Resource Dependency Can Not Be Found
+PRODUCT :Microsoft Windows NT
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to select the "Use Network Name as Computer Name" check box for a
+resource, you may receive the following error:
+
+   The Cluster resource dependency can not be found.
+
+This error may be generated even if your resource depends on a resource, that in
+turn depends on a network name resource.
+
+For example, if the resource being configured above is called "A" and it depends
+on a resource called "B", "B" would be the resource that depends on the network
+name resource:
+
+   A --> B --> Network Name
+
+CAUSE
+=====
+
+An indirect dependency, such as that shown above, will not be recognized by the
+Cluster Administrator.
+
+RESOLUTION
+==========
+
+If one resource uses another, there should be a direct dependency between them.
+Note that it is not necessary to add a dependency for something a resource does
+not directly use. For example, extending the illustration from above:
+
+   A --> B --> Network Name --> IP Address
+
+B does not need a dependency on the IP Address unless it uses the IP address
+directly.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: mscs
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch
+Version           : :
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

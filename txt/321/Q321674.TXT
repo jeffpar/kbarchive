@@ -1,0 +1,96 @@
+DOCUMENT:Q321674  06-AUG-2002  [iis]
+TITLE   :HOW TO: Configure IISReset to Wait Longer than the Default Time
+PRODUCT :Internet Information Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbHOWTOmaster
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft Internet Information Services version 5.1 
+-------------------------------------------------------------------------------
+
+
+IN THIS TASK
+------------
+
+ - SUMMARY
+
+    - Change the IISReset Timeout Value
+
+ - REFERENCES
+
+SUMMARY
+=======
+
+This step-by-step article describes how to change the IISReset timeout value to
+wait longer than the default time to reset Internet Information Services (IIS).
+
+Change the IISReset Timeout Value
+---------------------------------
+
+1. On the Web server, open a command prompt. To do this, click Start, click Run,
+   type "CMD" (without the quotation marks), and then click OK.
+
+2. At the command prompt, type "IISRESET /TIMEOUT:<val>" (without the
+   quotation marks), where <val> is a numeric value that is measured in
+   seconds.
+
+The following screen shot from the command prompt provides more information:
+
+   /TIMEOUT:val        Specify the timeout value (in seconds) to wait for
+                       a successful stop of Internet services. On expiration
+                       of this timeout the computer can be rebooted if
+                       the /REBOOTONERROR parameter is specified.
+                       The default value is 20s for restart, 60s for stop,
+                       and 0s for reboot.
+
+An example of what you can expect to see in the command prompt window is as
+follows:
+
+   C:\>iisreset /timeout:45
+
+   Attempting stop...
+   Internet services successfully stopped
+   Attempting start...
+   Internet services successfully restarted
+
+   C:\>
+
+NOTE: To view a complete listing of the parameters that can be used with
+IISReset, type "IISRESET /?" (without the quotation marks) at the command
+prompt.
+
+3. Type "Exit" (without the quotation marks) to close the command prompt window.
+
+REFERENCES
+==========
+
+For more information, see the IIS Help files and online documentation.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHOWTOmaster 
+Technology        : kbiisSearch kbiis500 kbiis510
+Version           : :5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

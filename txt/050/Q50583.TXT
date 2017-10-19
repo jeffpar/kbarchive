@@ -1,0 +1,79 @@
+DOCUMENT:Q50583  29-OCT-1999  [utilities]
+TITLE   :PRB: L1092: Cannot Open Module-Definition File
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:5.03,5.15
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft LINK for MS-DOS, versions 5.03, 5.15 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An attempt to link an application fails and Microsoft LINK generates the
+following message:
+
+   Link: fatal error L1092: cannot open module-definition file
+
+CAUSE
+=====
+
+Incorrect or unintentional input is given on the Definitions File prompt during
+linking, or a response file incorrectly feeds input to the Definitions File
+prompt.
+
+RESOLUTION
+==========
+
+Specify the correct name for a module-definition (DEF) file on the linker
+command line or accept the default, NUL.DEF.
+
+MORE INFORMATION
+================
+
+A module-definition file is a text file that describes the name, attributes,
+exports, imports, system requirements and other characteristics of an
+application or dynamic-link library (DLL) for the Microsoft Windows or OS/2
+operating system. This file is required to build a dynamic-link library (DLL)
+and is optional (but desirable) for an application. By default, LINK assumes
+that no definition file is required. To link an application for MS-DOS, use a
+semicolon character to terminate the command line before the definition file
+field or accept NUL.DEF at the Definitions File prompt.
+
+When you use commas to separate the names of libraries in a response file, LINK
+assumes that the first comma separates the list of libraries from the
+module-definition file field. The L1092 error occurs because LINK assumes that
+the plus sign (+) is the name of the DEF file.
+
+When you use semicolons to separate the names of libraries in a response file,
+LINK does not read any data after the first semicolon. LINK ignores all
+specified options when a semicolon is the first character encountered in the
+libraries field.
+
+Additional query words: def file
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbZNotKeyword3 kbLINKSearch kbLINK503DOS kbLINK515DOS
+Version           : MS-DOS:5.03,5.15
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

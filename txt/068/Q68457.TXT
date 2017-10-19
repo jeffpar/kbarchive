@@ -1,0 +1,70 @@
+DOCUMENT:Q68457  09-NOV-1999  [win95x]
+TITLE   :Ground Hog Graphics VGA Card Screen Capture Problem
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You cannot copy graphics from MS-DOS applications to the Clipboard when you use
+the Ground Hog Graphics 1 MB Shadow VGA card with Microsoft Windows version 3.0.
+Pressing either ALT+PRINT SCREEN or PRINT SCREEN does NOT copy VGA, EGA, or CGA
+graphics to the Clipboard. You can capture text to the Clipboard.
+
+This problem occurs with all Ground Hog drivers, regardless of the video mode.
+
+CAUSE
+=====
+
+This problem occurs because of a limitation of the driver.
+
+WORKAROUND
+==========
+
+Use the standard Microsoft VGA driver.
+
+STATUS
+======
+
+Graphics is researching this limitation and is working on solutions to this
+problem. Any questions regarding updates to the drivers should be made to Ground
+Hog Graphics.
+
+MORE INFORMATION
+================
+
+The product included here is manufactured by a vendor independent of Microsoft;
+we make no warranty, implied or otherwise, regarding this product's performance
+or reliability.
+
+Additional query words: 3rdparty 3.0 3.00 3.0a 3.00a KBHW
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

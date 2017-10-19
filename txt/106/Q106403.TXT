@@ -1,0 +1,74 @@
+DOCUMENT:Q106403  06-MAY-2001  [masm]
+TITLE   :FIX: DUP Operator Must Be Preceded by White Space
+PRODUCT :Microsoft Macro Assembler
+PROD/VER::6.0,6.0a,6.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 6.0, 6.0a, 6.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The DUP operator must be preceded by white space. The number of items and the
+DUP operator must be separated by spaces or tabs. In MASM 6.0, no error message
+is given, but space for only one data item is allocated if the white space is
+missing. MASM 6.1 and later issue the error message:
+
+   error A2206: missing operator in expression
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MASM versions 6.0x. The problem
+was corrected in MASM 6.1.
+
+Sample Code
+-----------
+
+   ; Assemble options needed: /Fl
+   ; View the listing file to see the error in MASM 6.0 for data item b
+
+   .MODEL SMALL
+   .STACK
+
+   .DATA
+   a        db 4 dup(0)
+   size_a   db SIZEOF a
+   b        db 4dup(?)    ; A2206 here in MASM 6.1
+   size_b   db SIZEOF b
+
+   .CODE
+   start:
+      mov   ax,4C00H
+      int   21H    ;Terminate Process
+   END start
+
+Additional query words: 6.00 6.00a 6.00b buglist6.00 buglist6.00a buglist6.00b fixlist6.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600 kbMASM600a kbMASM600b
+Version           : :6.0,6.0a,6.0b
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

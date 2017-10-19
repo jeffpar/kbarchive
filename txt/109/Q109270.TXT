@@ -1,0 +1,81 @@
+DOCUMENT:Q109270  24-DEC-1999  [utilities]
+TITLE   :PRB: CK1024 Error May Be Caused by Modules in Library
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:5.5,5.6; winnt:1.0,2.5,2.55
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft LINK for MS-DOS, versions 5.5, 5.6 
+ - Microsoft LINK for Windows NT, versions 1.0, 2.5, 2.55 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When building a project, the following error occurs during the link stage:
+
+   CVPACK Fatal Error CK1024
+   <modulename> cannot use program database <pdbfile> : signatures do
+   not match
+
+   -or-
+
+   LINK: error LNK1202: "<path>\vc20.pdb" is missing debugging information
+   for referencing module.
+
+RESOLUTION
+==========
+
+The online help states the following:
+
+   The .OBJ file modulename uses the .PDB file pdbfile, but the internal
+   signature in pdbfile does not match the internal signature in modulename.
+   Delete modulename, recompile, and relink. If a makefile is used, check the
+   makefile dependencies.
+
+The error can occur when a library contains debug information. When a library is
+generated and built with debug information using the /Zi compiler option, the
+debug information contained in the library references a .PDB file (by default
+MSVC.PDB) on the computer where the library is built. A project that uses the
+library on another computer has its own .PDB file. During the linking phase when
+modules from the library are linked into the application, the linker checks to
+make sure that the PDB file it finds is the same one that was used when the
+library was built. Because the PDB file for the project is not the same one used
+when building the library, the error occurs.
+
+To resolve the problem, re-build the library using the /Z7 compiler option. This
+will place all debugging information for the library modules into the modules
+themselves. A .PDB file will not be referenced.
+
+For additional information on the CK1024 error, please see the following
+article(s) in the Microsoft Knowledge Base:
+
+   Q109269 PRB: Cause of Error CK1024
+
+Additional query words: 1.00 5.50 5.60
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbZNotKeyword kbZNotKeyword3 kbLINKSearch kbLINK550DOS kbLINK560DOS kbLINK100NT kbLINK250NT kbLINK255NT
+Version           : MS-DOS:5.5,5.6; winnt:1.0,2.5,2.55
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

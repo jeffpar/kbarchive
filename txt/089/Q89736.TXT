@@ -1,0 +1,79 @@
+DOCUMENT:Q89736  08-OCT-1999  [win95x]
+TITLE   :Sharing Violation with Norton Desktop Smart Erase
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use version 1.0 of American Heritage Dictionary for Windows, SHARE.EXE,
+and version 2.0 of Norton Desktop for Windows, the following error message is
+generated:
+
+   Sharing Violation on Drive C:
+
+CAUSE
+=====
+
+This error message is caused by the Smart Erase utility from Norton Desktop for
+Windows.
+
+Smart Erase is a utility that works in conjunction with a terminate-and-
+stay-resident (TSR) program called SmartCan. Together they provide the ability
+to delete files, recover deleted files, and to protect files from being
+overwritten or permanently deleted by placing them in a hidden directory called
+SMARTCAN.
+
+By default, Smart Erase protects all unarchived files on your hard drive except
+*.TMP and *.SWP.
+
+WORKAROUND
+==========
+
+ - Specify that Smart Erase not protect the *.SYS files. Refer to your Norton
+   manual for more information.
+
+   -or-
+
+ - Run the application without SHARE.EXE loaded.
+
+MORE INFORMATION
+================
+
+For more information, contact Symantec technical support.
+
+The American Heritage Dictionary and Desktop products included here are
+manufactured by vendors independent of Microsoft; we make no warranty, implied
+or otherwise, regarding these products' performance or reliability.
+
+Additional query words: 3.10 3.11 3rdparty ndw 4print
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

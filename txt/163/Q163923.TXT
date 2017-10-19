@@ -1,0 +1,89 @@
+DOCUMENT:Q163923  09-AUG-2001  [winnt]
+TITLE   :HOST Name Resolution Returns Last IP Addr on Multihomed Computer
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On a computer running Windows NT with multiple IP addresses assigned to the same
+network interface card, resolving the computer's HOST or NetBIOS name will
+return the last IP address listed in the Network Control Panel Advanced TCP/IP
+Properties, rather than the first address listed. All other computers on the
+network that resolve this name will correctly get the first IP address listed.
+
+This can cause problems with applications that are running on a computer that
+performs a lookup of its own HOST name. One example of this is when you use
+Microsoft FrontPage and Internet Information Server (IIS) with multiple virtual
+servers.
+
+WORKAROUND
+==========
+
+If you are using DNS for name resolution, you can add an additional A record for
+the same computer, with a different name. For example, if your computer name is
+listed in DNS as WEBSERVER, you may also want to add an entry in DNS for WWW
+that refers to the same IP address. In this case, when you type "PING WWW"
+(without the quotation marks), the name is not resolved locally, but rather at
+the DNS server, and the correct IP address will be indicated in the reply.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. This
+problem was corrected in the latest Microsoft Windows NT 4.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+The following is an example of this configuration:
+
+   HOST name = MACHINE1
+   Assigned IP Addresses #1= 192.168.1.1
+   Assigned IP Addresses #2= 192.168.1.2
+   Assigned IP Addresses #3= 192.168.1.3
+
+If you are at MACHINE1 and type "PING MACHINE1" (without the quotation marks),
+your reply will indicate the 192.168.1.3 address.
+
+If you are at another computer on the network and type "PING MACHINE1" (without
+the quotation marks), your reply will indicate the 192.168.1.1 address.
+
+Additional query words: internet information server
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

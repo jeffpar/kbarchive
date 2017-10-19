@@ -1,0 +1,65 @@
+DOCUMENT:Q96839  09-NOV-1999  [macmail]
+TITLE   :Mac Srv: Upgrade from Version 2.0 to 3.1 Does Not Work
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:2.0,3.0,3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, versions 2.0, 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After upgrading from version 2.0 Microsoft Mail for AppleTalk Networks to
+version 3.1, the following symptoms may occur:
+
+ - Two copies of the server icon may appear at startup, both icons will be
+   crossed out, and the following error message is displayed twice:
+
+   Microsoft mail server could not be loaded because update servers may only be
+   used with an existing Microsoft mail data file.
+
+ - The mail icon appears once and the Macintosh locks up with no error message.
+
+CAUSE
+=====
+
+Version 2.0 of Microsoft Mail for AppleTalk Networks data files will not upgrade
+directly to version 3.1. You must first upgrade from version 2.0 to version 3.0,
+then upgrade to version 3.1.
+
+RESOLUTION
+==========
+
+To obtain version 3.0 of Microsoft Mail for AppleTalk Networks, contact
+Microsoft Inside Sales at (800) 227-4679 in the U.S. or contact your local
+Microsoft subsidiary.
+
+
+Additional query words: 2.00 3.00 3.10 macmail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN310 kbMailATN200
+Version           : WINDOWS:2.0,3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

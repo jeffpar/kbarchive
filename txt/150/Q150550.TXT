@@ -1,0 +1,73 @@
+DOCUMENT:Q150550  03-AUG-2000  [foxpro]
+TITLE   :HOWTO: Obtain Windows 3.1/Windows 95 Btrieve ODBC Interface
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:2.5,3.0,3.0b,5.0,6.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbinterop kbvfp300 kbvfp500 kbvfp600 kbMDAC250
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 6.0 
+ - Microsoft Data Access Components version 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to get the Btrieve ODBC Interface for Windows 3.1,
+and the Btrieve ODBC Interface for Windows 95.
+
+MORE INFORMATION
+================
+
+NOTE: Btrieve ODBC Interface for Windows 3.1, Btrieve ODBC Interface for Windows
+95, and Btrieve 6.15 are manufactured by Btrieve Technologies, Inc., a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+The Btrieve ODBC Interface for Windows 3.1 is currently available from Btrieve
+Technologies. It is packaged with the following products:
+
+ - Btrieve Engine for Windows 3.1 - Single Workstation License
+ - Scalable SQL for Windows 3.1 - Single Workstation License
+ - ODBC Interface Commercial Deployment Kit for Windows 3.1/Windows 95
+
+The Btrieve ODBC Interface for Windows 95 is available from Btrieve Technologies.
+It is packaged with the following products:
+
+ - Btrieve Engine for Windows NT/Windows 95 - Single Workstation License
+ - ODBC Interface Commercial Deployment Kit for Windows 3.1/Windows 95
+
+To run client/server applications taking advantage of Btrieve database engines
+and the Btrieve ODBC Interface, use the Btrieve server engine for Windows NT or
+NetWare, version 6.15 or higher.
+
+To receive further information, or to order the Btrieve ODBC Interface for
+Windows 3.1 or the Btrieve ODBC Interface for Windows 95, please contact Btrieve
+Technologies at 800-BTRIEVE (800-287-4383), or 512-794-1719.
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kbinterop kbvfp300 kbvfp500 kbvfp600 kbMDAC250 
+Technology        : kbVFPsearch kbAudDeveloper kbMDACSearch kbMDAC250 kbVFP300 kbVFP300b kbVFP500 kbVFP600
+Version           : WINDOWS:2.5,3.0,3.0b,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

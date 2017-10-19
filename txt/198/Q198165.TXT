@@ -1,0 +1,80 @@
+DOCUMENT:Q198165  19-DEC-1999  [homemm]
+TITLE   :Virtual Globe 99 Err Msg: Unable to Load the Resource.dll
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Virtual Globe 99, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click Organize Favorites on the Favorites menu in Encarta Virtual Globe
+99 and then right-click a shortcut in the Favorites folder, a preview of the
+Favorite may be displayed as a black square, and you may receive the following
+error message:
+
+   Unable to load the resource.dll.
+
+If you right-click the shortcut again, you do not receive the error message.
+
+CAUSE
+=====
+
+This behavior can occur if you attempt to display a preview of a shortcut to an
+Encarta Virtual Globe 99 map.
+
+RESOLUTION
+==========
+
+To resolve this issue, disable the View As Web Page feature in the Encarta
+Virtual Globe 99 Favorites folder. To do this, follow these steps:
+
+1. On the Favorites menu in Encarta Virtual Globe 99, click Organize Favorites.
+
+2. When the Favorites window opens, click the As Web Page command on the View
+   menu to remove the check mark from beside the command.
+
+3. Close the Favorites window.
+
+MORE INFORMATION
+================
+
+In Encarta Virtual Globe 99, you can add shortcuts to articles, images, maps,
+and other content to the Favorites menu. Microsoft Windows Explorer can display
+previews of shortcuts to Encarta Virtual Globe 99 articles and images in the
+Favorites folder, but it cannot display a preview of a shortcut to an Encarta
+Virtual Globe 99 map.
+
+If you double-click a shortcut in the Encarta Virtual Globe 99 Favorites folder,
+Encarta Virtual Globe starts automatically.
+
+Additional query words: multi multi-media media mm msworld atlas evg
+
+======================================================================
+Keywords          : kbenv kberrmsg kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaVirtGlobe99
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

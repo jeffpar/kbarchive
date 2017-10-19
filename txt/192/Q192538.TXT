@@ -1,0 +1,57 @@
+DOCUMENT:Q192538  21-JUL-2001  [visualc]
+TITLE   :DOC: Cursor Functions Not Included in Winuser.h for Windows CE
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbdocerr kbVC500 kbVC600 kbOSWinCE200 kbOSWinCE210 kbOSWinCE211
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Toolkit for Visual C++ 6.0 
+ - Microsoft Windows CE version 2.0 for the Handheld PC 
+ - Microsoft Windows CE version 2.0 for the Palm-size PC 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The cursor functions SetCursorPos, GetCursorPos, ShowCursor, and ClipCursor are
+not included in Winuser.h for the Handheld PC and Palm-size PC Platform SDK
+because mouse cursors are not supported on these platforms. The online
+documentation is not complete in this regard. These functions are available only
+on platforms where mouse cursors are supported; for example, the Embedded
+Toolkit PC-Based Hardware Development Platform. You will get a compile error if
+you use these functions in an application that targets a Windows CE platform
+that doesn't have mouse cursor support.
+
+Do not use the SetCursorPos, GetCursorPos, ShowCursor and ClipCursor functions
+with Windows CE platforms that don't have mouse cursor support.
+
+This behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocerr kbVC500 kbVC600 kbOSWinCE200 kbOSWinCE210 kbOSWinCE211 
+Technology        : kbVCsearch kbAudDeveloper kbWinCETKVCSearch kbWinCESearch kbWinCE200HPC kbWinCE200PalmsizePC kbWinCETK600VC
+Version           : WINDOWS:2.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

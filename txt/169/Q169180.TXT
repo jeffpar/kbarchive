@@ -1,0 +1,63 @@
+DOCUMENT:Q169180  26-SEP-2001  [frontpg]
+TITLE   :FP97: Setup Requires 2-4 MB More Free Disk Space than Indicated
+PRODUCT :Word Front Page
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 98 version of this article, see Q194470.
+
+SYMPTOMS
+========
+
+During FrontPage Setup, you receive a message indicating that you do not have
+sufficient disk space. Specifically, the disk space required may be only
+slightly more--about 2 to 4 megabytes (MB)--than what you have available.
+
+CAUSE
+=====
+
+The FrontPage Setup program sets aside some extra buffer space in its
+calculation of required disk space. This allows FrontPage Setup to reserve space
+for temporary files that are required during Setup. The FrontPage Setup program
+also reserves extra space because some larger hard disks use a larger cluster
+size that requires more physical space to store the same amount of data as a
+hard disk with a smaller cluster size.
+
+RESOLUTION
+==========
+
+To resolve this problem, make sure you have at least 2 to 4 MB of additional
+free hard disk space than indicated by the FrontPage Setup program.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbsetup kbdta 
+Technology        : kbFrontPageSearch kbFrontPage97 kbZNotKeyword2 kbFrontPage97Search
+Version           : :
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,109 @@
+DOCUMENT:Q147201  03-AUG-2000  [foxpro]
+TITLE   :PRB: Header Files Ignored by Recompile All & Build Process
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Issuing a Recompile All from the Project Manager does not force a recompile of
+program (.prg) files if the program has not been altered. As a result, header
+(.h) files that are referenced in the program file are ignored by the Recompile
+All and Build processes. Therefore, if changes are made to a header file that is
+referenced in a program file, the new changes are not automatically redefined.
+
+NOTE: This behavior applies only to header files that are referenced in unchanged
+program files. In other words, header files referenced in forms and classes are
+reprocessed by a Recompile All.
+
+CAUSE
+=====
+
+Each .prg file has an associated .fxp file after the first Build process. If the
+.fxp and .prg file datetime stamps are the same, then it is assumed that the
+.prg file hasn't changed, so it's left out of any subsequent recompile
+processes.
+
+RESOLUTION
+==========
+
+There are two ways to force a recompile of .prg files:
+
+ - Delete all corresponding .fxp files before starting the build process from
+   within the Project Manager.
+
+-or-
+
+ - Issue a COMPILE *.PRG command from the Command window.
+
+It is the presence of the .fxp file that prevents the Project Manager from
+recompiling all files.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a simple project, and add a .prg file that contains a #INCLUDE
+   statement that references a header (.h) file. Also include a WAIT WINDOW
+   statement that will display the contents of a constant variable that is
+   declared in the header file.
+
+2. Add the header file to the Text File section of Project Manager.
+
+3. In the header file, insert a #DEFINE command that places a value into the
+   constant referenced by the WAIT WINDOW.
+
+4. Build the project, and run it noting the value displayed from the constant.
+   Then change the value for the constant in the header file.
+
+5. Rebuild the project with the Recompile All Files check box selected.
+
+6. Rerun the application, and note that the displayed value does not reflect the
+   new value in the header file. The value is the same as the previously stored
+   value.
+
+7. Delete the .fxp file that corresponds to the .prg file.
+
+8. Rebuild the project with the Recompile All Files check box selected.
+
+9. Rerun the application, and note that the displayed value now reflects the
+   value in the header file.
+
+Additional query words: VFoxWin re-compile akz
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

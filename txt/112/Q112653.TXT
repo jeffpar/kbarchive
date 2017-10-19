@@ -1,0 +1,69 @@
+DOCUMENT:Q112653  08-OCT-1999  [win3x]
+TITLE   :WFWG 3.11 Err Msg: Network Modules Not Loaded
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Running FTP.EXE from TCP Utilities after installing that software package under
+Windows for Workgroups may generate the following error message:
+
+   Network modules not loaded. Program aborted.
+
+CAUSE
+=====
+
+A number of the utilities in the TCP Utilities package (for example, FTP.EXE)
+parse the CONFIG.SYS file for the following device statement:
+
+        DEVICE=C:\LANMAN.DOS\DRIVERS\PROTMAN\PROTMAN.DOS /I:C:\WINDOWS
+
+If this statement does not exist, FTP.EXE does not load and displays the
+aforementioned error. FTP.EXE is hard coded to search for the location of the
+TCPUTILS.INI file using the "/I:C:\Windows" part of the PROTMAN.DOS device
+statement. TCPUTILS.INI must reside at the location specified by the /I: switch
+on the PROTMAN.DOS line.
+
+RESOLUTION
+==========
+
+To correct this problem, create the following device statement in the CONFIG.SYS
+file:
+
+   DEVICE=C:\PROTMAN\PROTMAN.DOS /I:C:\WINDOWS
+
+This modification results in a "Bad or missing C:\PROTMAN\PROTMAN.DOS error" when
+you start your computer; however, it is safe to ignore this error.
+
+Additional query words: 3.11 tcp ip protocol manager
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,70 @@
+DOCUMENT:Q222584  01-AUG-2001  [win95x]
+TITLE   :BUG: Blue Screen Occurs When Disabling a USB Controller
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95; Win95:
+OPER/SYS:
+KEYWORDS:kbDDK kbKMode kbOSWin95OSR210 kbOSWin95OSR250 kbVideo kbOSWin95 kbVideoTech
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 95 Driver Development Kit (DDK) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When running on Windows 95 OSR 2.1 or OSR 2.5, a blue screen appears when
+manually or programmatically disabling a USB host controller.
+
+CAUSE
+=====
+
+This problem occurs because of a fault in the USB host controller driver.
+
+RESOLUTION
+==========
+
+There is no workaround for Windows 95 OSR 2.1 or 2.5. The problem does not occur
+under Windows 98. A USB controller can be successfully disabled using Device
+Manager, or programmatically via DiChangeState.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+If a user tries to disable a USB host controller via Device Manager or via a
+DiChangeState call, a blue screen occurs because of a fault in the USB host
+controller driver (Uhcd.sys or Openhci.sys).
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDDK kbKMode kbOSWin95OSR210 kbOSWin95OSR250 kbVideo kbOSWin95 kbVideoTech 
+Technology        : kbAudDeveloper kbWin95search kbWin95DDKSearch kbWinDDKSearch kbZNotKeyword3 kbWin95DDK
+Version           : WINDOWS:95; Win95:
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

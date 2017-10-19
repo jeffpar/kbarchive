@@ -1,0 +1,67 @@
+DOCUMENT:Q194129  10-AUG-2001  [winnt]
+TITLE   :Microsoft DNS Fails to Acquire Zone Transfer from BIND Primary
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Changes made to a BIND primary DNS zone file are not being seen by a Microsoft
+DNS server configured as a secondary.
+
+CAUSE
+=====
+
+BIND does not automatically update the serial number in the SOA record. DNS
+secondaries determine if a zone transfer (AXFR) is required by querying for the
+SOA from the primary zone. If the serial number in the primary's SOA is
+identical to the serial number in the secondary, the zone data is assumed not to
+have changed and a zone transfer is not requested.
+
+RESOLUTION
+==========
+
+With a BIND primary, it will be necessary to manually update the SOA serial
+number (sometimes called the magic number) so that automatic zone transfers can
+be performed between the BIND server and a Microsoft DNS server.
+
+MORE INFORMATION
+================
+
+For more information, see RFC1034 paragraph 4.3.5: Zone Maintenance and
+Transfers.
+
+Additional query words: DNS Bind zone
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,99 @@
+DOCUMENT:Q143380  02-SEP-1999  [exchange]
+TITLE   :XGEN: Exchange Server Services and Their Dependencies
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbother exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the services created and used by Microsoft Exchange Server,
+the files executed when the service starts, and the service dependencies.
+
+MORE INFORMATION
+================
+
+MSExchangeSA - Microsoft Exchange System Attendant
+File:          EXCHSRVR\BIN\MAD.EXE
+Depends on:    EventLog
+               OLE (%windir%\system32\scm.exe)
+               NtLmSsp (NT LM Security Support Provider - Services.exe)
+               RPCLocator (%windir%\system32\locator.exe)
+               RPCSS (RPC Server Service - %windir%\system32\rpcss.exe)
+               LanmanWorkstation
+               LanmanServer
+
+MSExchangeDS - Microsoft Exchange Directory Service
+File:          EXCHSRVR\BIN\DSAMAIN.EXE
+Depends on:    MSExchangeSA
+
+MSExchangeIS - Microsoft Exchange Information Store
+File:          EXCHSRVR\BIN\STORE.EXE
+Depends on:    MSExchangeDS
+
+MSExchangeMTA - Microsoft Exchange Message Transfer Agent
+File:           EXCHSRVR\BIN\EMSMTA.EXE
+Depends on:     MSExchangeDS
+
+MSExchangeDX - Microsoft Exchange Directory Synchronization
+File:          EXCHSRVR\BIN\DXA.EXE
+Depends on:    MSExchangeMTA
+
+MSExchangeFB - Microsoft Exchange Schdplus Free/Busy Connector
+File:          EXCHSRVR\CONNECT\MSFBCONN\MSFBCONN.EXE
+Depends on:    MSExchangeDS
+               MSExchangeIS
+               EventLog
+
+MSExchangeIMC - Microsoft Exchange Internet Mail Connector
+File:           EXCHSRVR\CONNECT\MSEXCIMC\MSEXCIMC.EXE
+Depends on:     MSExchangeIS
+                MSExchangeMTA
+                TCPIP (%windir%\system32\drivers\tcpip.sys)
+
+MSExchangeMSMI - Microsoft Exchange Mail Connector Interchange
+File:            EXCHSRVR\CONNECT\MSMCON\BIN\MT.EXE
+Depends on:      MSExchangeDS
+                 EventLog
+
+MSExchangeKMS - Microsoft Exchange Key Management Server
+File:           SECURITY\BIN\KMSERVER.EXE
+Depends on:     MSExchangeDS
+
+MSExchangeATMTA - Microsoft Exchange Mail Connector(Apple Talk) MTA
+File:             EXCHSRVR\CONNECT\MSMCON\BIN\MACGATE.EXE
+Depends on:       EventLog
+                  MSExchangeMSMI
+                  LanmanServer
+
+Additional query words:
+
+======================================================================
+Keywords          : kbother exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

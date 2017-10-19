@@ -1,0 +1,122 @@
+DOCUMENT:Q160039  20-FEB-2002  [homegame]
+TITLE   :Hellbender: How to Play a Multiplayer Game
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+1.00
+WINDOWS
+kbusage kbhowto
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Hellbender for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article explains how to play Hellbender with other players.
+
+SETTING UP INTERNET GAMES
+-------------------------
+
+Due to high Internet traffic, it is recommended that you limit multiplayer
+Hellbender Internet games to three players. Four-player Hellbender Internet
+games are possible, but it is highly recommended that all four players use the
+same Internet service provider and 28.8 Kbps modems.
+
+You can play Hellbender Internet games with three players, regardless of the
+Internet service providers the players are using, if all players are using 28.8
+Kbps modems. Players with 14.4 Kbps modems may experience latency problems in
+three-player games.
+
+If you access the Internet via a proxy, you will not be able to participate in a
+multiplayer Internet game.
+
+To host a multiplayer Internet game, you need to tell the players joining the
+game what your IP address is before they can join. To join a multiplayer
+Internet game, you need to obtain the IP address of the player hosting the game
+before you can join.
+
+To confirm your IP address:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "winipcfg" (without the quotation marks).
+
+3. In the IP Configuration dialog box, click your server type in the drop-down
+   list box. For example, click PPP Adapter. The number now listed in the IP
+   Address box is your IP address. When you are hosting a Hellbender Internet
+   game, you need to give this address to other players before they can join the
+   game.
+
+To start a multiplayer Internet game:
+
+1. Start Microsoft Hellbender.
+
+2. On the Quick Configuration screen, click Multiplayer.
+
+3. In the Available Connections box in the Multiplayer Connection Setup dialog
+   box, click Internet (TCP/IP) connection.
+
+4. In the Game Sessions dialog box, type your callsign (10-character maximum).
+
+5. To host a game, click Start A New Game.
+
+   -or-
+
+   If you want to join a game someone else is hosting, click Specify An IP
+   Address in the Select Existing Game box, click Next, and then type the IP
+   address of the host in the Specify Host Name or IP Address dialog box.
+
+INTERNET TROUBLESHOOTING
+------------------------
+
+If you are not running a double-byte character set (DBCS) supported version of
+Hellbender, but are playing a multiplayer game with someone who is running a
+DBCS supported version of the game, you will receive ASCII text from that player
+in the Game Sessions and Gathering Players dialog boxes.
+
+To communicate with players who are using a DBCS supported version of the game,
+use a different method for chatting.
+
+If you are the host of an Internet game and you click Back at the Gathering
+Players dialog box, and then click Next at any time in the Game Sessions dialog
+box, you will receive the message "Connection failed."
+
+If this occurs:
+
+1. Click OK, and then click Back in the Game Sessions dialog box. You will
+   return to the Multiplayer Connection Setup dialog box.
+
+2. Click Internet (TCP/IP) Connection again, and then click OK.
+
+3. Continue creating a new game.
+
+Additional query words: 1.00 multi-player online gaming how to world wide web play games other players friends against over
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbZNotKeyword kbHellBender
+Version           : :1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

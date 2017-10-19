@@ -1,0 +1,71 @@
+DOCUMENT:Q150313  08-NOV-2001  [pcmail]
+TITLE   :Renaming or Deleting Microsoft Phone Voice Commands
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:msphone1
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Phone, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After deleting or renaming a voice command or category, you may find that it is
+restored to its original name after you restart Microsoft Phone.
+
+Microsoft Phone is designed to prevent the deleting and modifying of command
+categories and certain voice commands.
+
+Only voice commands in the SpeedDialTabs category may be deleted and renamed.
+
+Voice commands in the following categories may be renamed, but not deleted.
+
+ - After entering a phone number
+
+ - After recording a greeting
+
+ - After reviewing e-mail
+
+ - After reviewing voice messages
+
+ - Changing a greeting
+
+ - Get Phone Number
+
+ - Main Menu
+
+ - Recording a greeting
+
+Voice commands listed in the Messages category as well as the categories
+themselves cannot be renamed or deleted.
+
+If one of the above situations occurs, Microsoft Phone will reload the entire
+category affected with the default names.
+
+Additional query words: 1.00 win95
+
+======================================================================
+Keywords          : msphone1 
+Technology        : _IKkbbogus kbMSHardwareSearch kbPhone
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

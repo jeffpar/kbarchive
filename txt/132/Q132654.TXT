@@ -1,0 +1,62 @@
+DOCUMENT:Q132654  17-DEC-2000  [win95x]
+TITLE   :Setup Error Message: You Need to Run Setup from MS-DOS Mode
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Windows 95 Setup from within Windows 95, you may receive the
+following error message:
+
+   In order to upgrade this version of Windows, you must run Setup in MS-DOS
+   mode. To do this, click Start, click Shut Down, and choose Restart The
+   Computer In MS-DOS Mode. Then run Setup from the MS-DOS prompt.
+
+CAUSE
+=====
+
+Setup has determined that the Plug and Play BIOS in the computer is no longer
+supported. Setup cannot disable the Plug and Play BIOS from within Windows 95,
+so you are prompted to run Setup from MS-DOS mode.
+
+RESOLUTION
+==========
+
+Exit Setup, restart your computer in MS-DOS mode, and then run Setup again. Or,
+run Setup from an earlier version of Windows (such as Windows version 3.1).
+
+MORE INFORMATION
+================
+
+You may want to contact your computer manufacturer about obtaining a more recent
+Plug and Play BIOS that is supported in Windows 95.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

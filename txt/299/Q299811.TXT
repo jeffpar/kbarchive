@@ -1,0 +1,55 @@
+DOCUMENT:Q299811  07-MAY-2002  [homegame]
+TITLE   :Train Simulator: Shortcuts Not Removed When You Cancel Reinstall
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbhw kbimu kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Train Simulator, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the reinstall option in Microsoft Train Simulator Setup, and then
+you cancel the reinstall operation in progress, the program files are removed.
+However, the desktop and Start menu shortcuts are not removed as expected.
+
+RESOLUTION
+==========
+
+To work around this issue, manually remove these shortcuts. To do this,
+right-click a given shortcut, and then click Delete.
+
+MORE INFORMATION
+================
+
+These shortcuts are no longer functional.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbhw kbimu kbHardware 
+Technology        : kbHomeProdSearch kbGamesSearch kbTrainSim
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

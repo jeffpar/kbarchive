@@ -1,0 +1,72 @@
+DOCUMENT:Q112490  08-NOV-2001  [homemm]
+TITLE   :Schubert: Incorrect Fonts When Running Under Windows NT
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Multimedia Schubert for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you run Schubert under Microsoft Windows NT, some of the Schubert dialog
+boxes or screens may display with incorrect fonts. The items that display with
+incorrect fonts under Windows NT include the following:
+
+ - Subtitles in Help
+
+ - Titles and picture captions in A Classical Background
+
+ - Titles and picture captions in Inside Schubert
+
+ - Page 31 of A Classical Background
+
+The following two display problems also may occur:
+
+ - If you click the Transition In Exposition play button, text will appear in
+   the wrong font.
+
+   -and-
+
+ - If there are quotation marks in any of the controls, they will appear as
+   squares.
+
+Microsoft has confirmed this to be a problem in Schubert version 1.0 when running
+under Windows NT. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+RESOLUTION
+==========
+
+To eliminate this problem, use Schubert with Windows version 3.1. This is the
+recommended configuration for Schubert.
+
+
+Additional query words: 1.0 multi media multimedia multi-media text monitor video
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbZNotKeyword kbMMSchubert
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

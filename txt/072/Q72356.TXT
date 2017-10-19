@@ -1,0 +1,63 @@
+DOCUMENT:Q72356  09-OCT-1999  [win95x]
+TITLE   :Windows Err Msg: Cannot Find the Specified File...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You attempt to run non-Windows applications from the File Manager or Program
+Manager and the following error message is displayed:
+
+   Cannot find the specified file; check to ensure the path and filename are
+   correct.
+
+You check your path statement in Program Item Properties (as the message
+instructs you to do), and it is correct. If you attempt to run non-Windows
+applications from the MS-DOS Executive, Windows does not respond.
+
+This error occurs in enhanced mode only. You can run the application(s) in
+standard and real modes.
+
+CAUSE
+=====
+
+The number of FILES= handles in your CONFIG.SYS file is less than 17.
+
+WORKAROUND
+==========
+
+To solve the problem, in the CONFIG.SYS file, set FILES=30. You can use Notepad
+or any ASCII text editor to edit the CONFIG.SYS file.
+
+Additional query words: 3.00 3.0 err msg 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,57 @@
+DOCUMENT:Q110612  11-NOV-1999  [pcmail]
+TITLE   :FFAPI: Slow PUT of Large Messages or Attachments
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::2.1c
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Software Development Kit (FFAPI), version 2.1c 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Version 2.1c and earlier of Microsoft Mail Software Development Kit (FFAPI),
+COURPUT.EXE may slowly deliver large mail messages or messages with large
+attachments.
+
+CAUSE
+=====
+
+COURPUT.EXE used a buffered I/O routine, but with a small buffer. The 3.0
+version increased that buffer and now the speed has greatly increased (basically
+like the MS-DOS client).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 2.1c and earlier of
+Microsoft Mail Software Development Kit (FFAPI). This problem in corrected in
+version 3.0 of Microsoft Mail Software Development Kit (FFAPI).
+
+Additional query words: 2.10c
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbMailSearch kbSDKSearch
+Version           : :2.1c
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

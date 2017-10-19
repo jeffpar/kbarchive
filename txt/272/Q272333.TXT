@@ -1,0 +1,58 @@
+DOCUMENT:Q272333  12-NOV-2001  [homegame]
+TITLE   :Plus! Game Pack: Second Copy of Puzzle Collection Is Installed
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0; :
+OPER/SYS:
+KEYWORDS:kbsetup kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Entertainment Pack: The Puzzle Collection, version 1.0 
+ - Microsoft Plus! Game Pack: Cards and Puzzles 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Microsoft Plus! Game Pack: Cards & Puzzles on a computer on
+which Microsoft Entertainment Pack: The Puzzle Collection is already installed,
+Setup installs a second copy of The Puzzle Collection in the Plus! Game Pack
+folder.
+
+CAUSE
+=====
+
+This behavior occurs because Plus! Game Pack Setup does not attempt to detect an
+installed copy of Entertainment Pack: The Puzzle Collection.
+
+RESOLUTION
+==========
+
+To work around this issue, uninstall the stand-alone copy of The Puzzle
+Collection.
+
+Additional query words: 1.00 msgame plusgp bicycle wep pep duplicate extra
+
+======================================================================
+Keywords          : kbsetup kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbZNotKeyword kbPlusSearch kbWinEntPkPuzzleSearch kbWinEntPkPuzzle kbPlusGamePk
+Version           : WINDOWS:1.0; :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

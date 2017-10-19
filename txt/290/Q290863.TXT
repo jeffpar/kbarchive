@@ -1,0 +1,58 @@
+DOCUMENT:Q290863  16-OCT-2001  [mspress]
+TITLE   :Microsoft Enterprise Learning Library: Step by Step Interactive
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Enterprise Learning Library: Step by Step Interactive Version 3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments and information related to error "Can't load
+L1_Aa.CBZ" for Microsoft Enterprise Learning Library Step by Step Interactive
+Version 3 Network Installations.
+
+MORE INFORMATION
+================
+
+A share has not been correctly set to give users access to the content files.
+The following steps are required to correct this error:
+
+1. Locate the content folder on the server. Default installation location is
+C:\Program Files\MSPress\MPItraining
+2. There are several folders at this location: Admin and Database are for all
+products.
+
+3. The remaining folder(s) contain the content files. 4. All remaining folders
+need to be shared with read access for Everyone.
+
+Additional query words: MELL Enterprise Learning Library Version3
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

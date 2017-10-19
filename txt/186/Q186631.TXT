@@ -1,0 +1,93 @@
+DOCUMENT:Q186631  11-DEC-2001  [winnt]
+TITLE   :Modifying Terminal Server Clients Default Windows Directory Name
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it if
+a problem occurs. For information about how to do this, view the "Restoring
+the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+Help topic in Regedt32.exe.
+
+SUMMARY
+=======
+
+By default, each Terminal Server user gets a system directory in the user's home
+directory, called Windows. This is the recommended name. However, it is
+sometimes useful to use a different name. For instance, users migrating .ini
+file and .grp file settings to Terminal Server from computers that do not use
+Windows as the system directory name might find it useful to specify a different
+name.
+
+MORE INFORMATION
+================
+
+This will be a global change and will affect all users.
+
+To use a directory name other than Windows, perform the following steps:
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it. If
+you are running Windows NT, you should also update your Emergency Repair Disk
+(ERD).
+
+1. Start Registry Editor (Regedt32.exe), and go to the following subkey:
+
+      HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion
+         \Terminal Server
+
+   NOTE: The above registry key is one path; it has been wrapped for readability.
+
+2. On the Edit menu, click Add Key, and type the following information:
+
+   Key Name: Windows
+
+3. On the Edit menu, click Add Value, and type the following information:
+
+   Value Name: UserDirectoryName
+   Data Type: REG_SZ
+
+   With the value being the new Windows directory name. For example:
+
+         HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion
+         \Terminal Server\Windows\UserDirectoryName = WIN31
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

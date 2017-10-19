@@ -1,0 +1,71 @@
+DOCUMENT:Q231857  21-MAY-1999  [homegame]
+TITLE   :Midtown Madness: Game Is Not Displayed on the Correct Monitor
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbenv kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Midtown Madness, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Midtown Madness on a computer configured to use multiple
+monitors, the game may not be displayed on the correct monitor.
+
+CAUSE
+=====
+
+This behavior can occur because Midtown Madness is displayed by default using
+the last video adapter detected by Microsoft Windows.
+
+RESOLUTION
+==========
+
+To resolve this issue, change the Renderer setting in Midtown Madness to display
+the game using the video adapter for the monitor you want to use. To do this,
+follow these steps:
+
+1. On the Midtown Madness startup screen, click Options.
+
+2. Click Graphics Options.
+
+3. Under Renderer, click the display adapter you want to use.
+
+4. Click Done.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Midtown Madness,
+version 1.0.
+
+Additional query words: 1.00 mm multimon multidisplay multimonitors card screen
+
+======================================================================
+Keywords          : kbdisplay kbenv kbimu msgame kbfaq
+Technology        : kbHomeProdSearch kbGamesSearch kbMidtownMadSearch kbMidtownMadness
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

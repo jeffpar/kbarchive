@@ -1,0 +1,61 @@
+DOCUMENT:Q175693  29-OCT-1999  [pcmail]
+TITLE   :MTG: Err Msg: Unknown Error Code 914:F8
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:winnt:3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Server 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+External fails to dynamically connect to a postoffice to delivery mail. The
+postoffice server is a computer running Novell NetWare. The Session.log records
+the following error:
+
+   unknown error code 914:F8
+
+CAUSE
+=====
+
+This problem may be because IPXRTR on the NetWare server has been loaded.
+
+RESOLUTION
+==========
+
+If IPXRTR is the problem, on the server at the command prompt, type:
+
+   "Unload IPXRTR" (without the quotation marks)
+
+NOTE: Rebooting the server may cause the problem to return due to IPXRTR being
+loaded in the boot process.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailServ350
+Version           : winnt:3.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

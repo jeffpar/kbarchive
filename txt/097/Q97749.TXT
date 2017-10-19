@@ -1,0 +1,67 @@
+DOCUMENT:Q97749  30-JUL-2001  [lanman]
+TITLE   :Adjusting PRINTSTA Parameters to Enhance Printer Speed
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+You can set several parameters from the command line to speed up network
+printing on MS-DOS workstations when using PRINTSTA.EXE. Type "PRINTSTA"
+(without the quotation marks) at the command line to see which parameters it is
+currently using, or "PRINTSTA /?" (without the quotation marks) for a brief
+description of each parameter.
+
+MORE INFORMATION
+================
+
+Some parameters that are most useful for enhancing printing speed are are:
+
+/T:1 Timer Priority   This sets the priority for PRINTSTA as to how
+                      often it can use the system's processor. Setting
+                      this to 1 gives PRINTSTA its highest priority.
+
+/B:20                 Number of network buffers for use with PRINTSTA.
+                      20 is the maximum. Each buffer uses 128 bytes.
+
+/I:50 Timer Loop      This sets the number of processing cycles PRINTSTA
+Iterations            uses before relinquishing control. You can assign
+            whatever value you want to this, but setting it too
+            high can cause problems. If you change it and
+            problems develop, look to it first as a probable
+            cause.
+
+/O:1024 Number of     This should be matched to the value set for the /M
+Characters to Print   parameter.
+in Each Pass
+
+/M:1024        The amount of cache memory to be reserved for
+                      each permitted spool file.
+
+Giving your protocol stack more NCBs seems to help. You need at least 8 for the
+stack to function properly, 12 is better, and if a lot of people are trying to
+connect at the same time you may want even more.
+
+Additional query words: 2.20
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

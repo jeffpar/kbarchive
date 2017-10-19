@@ -1,0 +1,85 @@
+DOCUMENT:Q123666  04-MAY-2001  [masm]
+TITLE   :BUG: LINK Error L1101 with Public Weak Extern
+PRODUCT :Microsoft Macro Assembler
+PROD/VER::6.1,6.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 6.1, 6.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The linker produces the following error:
+
+   fatal error L1101: invalid object module
+
+when you assemble and link the following code, which contains a public weak
+extern:
+
+      .model small
+      .data
+      y=1
+      public y
+      extern x(y):abs
+      END
+
+CAUSE
+=====
+
+An incomplete record is placed in the object file:
+
+   COMENT Weak External Pairs
+   Weak External : Default Resolution
+   "x" :
+
+Notice the abscence of the alternate weak name y.
+
+RESOLUTION
+==========
+
+To work around the problem, use an external weak extern:
+
+      extern y:abs
+      extern x(y):abs   ; extern x(y):abs same results as extern x(y):proc
+
+This places the correct coment record is placed in the .OBJ file:
+
+   COMENT Weak External Pairs
+   Weak External : Default Resolution
+   "x" : "y"
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 6.10 6.11 buglist6.10 buglist6.11
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM610 kbMASM611
+Version           : :6.1,6.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

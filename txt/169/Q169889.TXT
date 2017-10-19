@@ -1,0 +1,68 @@
+DOCUMENT:Q169889  07-DEC-2000  [winnt]
+TITLE   :XGEN: Help File for Mailbox Migration Tool Has Wrong Bitmap
+PRODUCT :Microsoft Windows NT
+PROD/VER::Part 1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Resource Kit Part 1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft BackOffice Resource Kit includes a Mailbox Migration Tool. The
+documentation included for this tool is incomplete. In addition, the help file
+does not include the correct bitmap for the user interface.
+
+MORE INFORMATION
+================
+
+The purpose of the tool is to make a complete copy of the mailbox content from
+one server to another when the servers are in different sites or organizations.
+A help file, Exchtool.hlp is included with the BackOffice Resource Kit that
+documents the Mailbox Migration Tool and the other tools included in the
+Resource Kit.
+
+The help file (Exchtool.hlp) section "Running the Mailbox Migration Tool" does
+not include the correct bitmap for the user interface. The released Migrate.exe
+includes a Log File option that allows you to choose the path to the log file or
+to allow you to append an existing log file. This option is missing from the
+help file and the description for the option is also missing from the help file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: ERK BORK
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch kbZNotKeyword2
+Version           : :Part 1
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

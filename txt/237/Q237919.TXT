@@ -1,0 +1,61 @@
+DOCUMENT:Q237919  22-JUN-2001  [exchange]
+TITLE   :XCLN: Newprof Only Supports Variable Names under Windows NT
+PRODUCT :Microsoft Exchange
+PROD/VER::; WINDOWS:95,98
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 97, on platform(s):
+    - the operating system: Microsoft Windows 95 
+    - the operating system: Microsoft Windows 98 
+ - Microsoft Outlook 98, on platform(s):
+    - the operating system: Microsoft Windows 95 
+    - the operating system: Microsoft Windows 98 
+ - Microsoft Outlook 2000, on platform(s):
+    - the operating system: Microsoft Windows 95 
+    - the operating system: Microsoft Windows 98 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Newprof.exe version 5.5.2505.0 or later doesn't support variable names under
+Microsoft Windows 95 or Microsoft Windows 98.
+
+MORE INFORMATION
+================
+
+Newprof.exe 5.5.2505.0, which is included with Microsoft Outlook 2000 does use
+variable names when executing a .prf file. Variable names such as %username% are
+only available in a Windows NT environment. In a Windows 95 or Windows 98
+environment, even if the environment variable is manually set using the SET
+command, the variable name is not used in the .prf file.
+
+Additional query words: replaceable parameter 8.0 8.01 8.02 8.03 8.04 8.5 9.0
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook97Search kbZNotKeyword3
+Version           : :; WINDOWS:95,98
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

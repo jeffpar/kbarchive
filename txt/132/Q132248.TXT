@@ -1,0 +1,80 @@
+DOCUMENT:Q132248  24-JUL-2001  [sms]
+TITLE   :SMS Fails To Create Jobs On Non-US SQL Server 4.21a
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbConfig smsconfig
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Systems Management Server fails to create jobs on site servers using a non- U.S.
+version of Microsoft SQL Server version 4.21a and the following appears in the
+Systems Management Server event log:
+
+   323 The job has been failed without performing any actions, because the
+   generated list of target workstations was empty. The provided query, machine
+   group, or machine path, along with any site limiting, resulted in zero
+   machines being targeted. Therefore, the job has nothing to do.
+
+CAUSE
+=====
+
+The time and date format used for SQL Server do not match the required formats
+used for Systems Management Server. For example, if you install a French version
+of SQL Server on a U.S. version of Windows NT, French is the default language
+for the SQL Server.
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+1. Run SQL Administrator and connect to SQL Server.
+
+2. Choose Logins to open the System Logins Management window.
+
+3. Double-click on the SMS account used for SQL operations to open the System
+   Logins Properties window for that account.
+
+4. From the Language scroll box, select "us_english".
+
+5. Restart SQL Server.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.0. This problem was corrected in Systems Management Server version
+1.1.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbnetwork kbConfig smsconfig 
+Technology        : kbSMSSearch kbSMS100
+Version           : winnt:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

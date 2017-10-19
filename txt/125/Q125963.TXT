@@ -1,0 +1,73 @@
+DOCUMENT:Q125963  17-DEC-2000  [crossnet]
+TITLE   :IPCONFIG Shows Leftover DHCP Parameters On Non-DHCP Clients
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft TCP/IP-32 for Windows for Workgroups, version 3.11 
+ - Microsoft Windows for Workgroups 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you configure your TCP/IP-32 client to use DHCP and then re-configure it not
+to use DHCP, when you execute the command, "IPCONFIG /ALL", it will show old
+(DHCP supplied) values for certain parameters. Although, the client will ignore
+these values and use the local configuration, this may be confusing.
+
+Parameters which may appear incorrectly in IPCONFIG include:
+
+ - Primary WINS server
+
+ - Secondary WINS server
+
+ - Node Type
+
+CAUSE
+=====
+
+IPCONFIG is looking at values in the hidden file, DHCP.BIN, which is not updated
+when the client is switched from being DHCP-configured to manually configured.
+
+WORKAROUND
+==========
+
+To work around this problem, remove the hidden file, DHCP.BIN, found in the
+Windows directory.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in TCP/IP-32 and TCP/IP-32a. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: prodtcp32 prodtcp 3.11 wfw wfwg
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbTCPIPSearch kbWFWSearch kbZNotKeyword3 kbTCPIP311
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

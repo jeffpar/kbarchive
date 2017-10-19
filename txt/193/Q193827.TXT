@@ -1,0 +1,139 @@
+DOCUMENT:Q193827  12-FEB-2000  [sna]
+TITLE   :FMH Bit Not Set in Query Reply with Function Management Header
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1
+OPER/SYS:
+KEYWORDS:kbbuglist kbfaq kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0SP1, 3.0SP2, 3.0SP3, 4.0, 4.0SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+SNA Print Server may generate an endless stream of blank pages. The following
+error message may be logged in the host CICS log:
+
+   Event DFH8510I - SNA Protocol Violation Detected in Query Response.
+
+CAUSE
+=====
+
+If a host sends a Read Partition Query command in an RU containing a
+
+   Function Management Header (FMH), the reply sent by the SNA Print
+   Server
+
+does not have the FMH bit set, even though the reply contains a Function
+Management Header. The host responds to this with a SHUTD command, and then an
+UNBIND, and then automatically starts the cycle again with a new bind. Each
+cycle results in a blank page being ejected by the printer.
+
+The following trace excerpt shows a Read Partition Query in an RU with a
+
+   Function Management Header, followed by an improperly formatted
+   response.
+
+Read Partition Query with Function Management Header:
+
+   DLC   01160000->03020101 DLC DATA
+   DLC                      DAF:20 OAF:01 ODAI:off Normal
+   DLC                      RQE FMD FI BC EC DR1 PI BB CD
+   DLC
+   DLC   ---- Header  at address 010D42AC, 1 elements ----
+   DLC   00000000 00002C00 20010002 0100EA00     <......,........>
+   DLC
+   DLC   ---- Element at address 015CF900, start 10, end 23 ----
+   DLC   0B91A006 01000B60 00000501 FF02 <.j.....`......  >
+
+Note that byte 0, bit 4 of the RH is set, indicating the present of an FMH in an
+FMD frame. The FMH is 0601000B6000.
+
+Query Reply sent by SNA Print Server:
+
+   DLC   03020101->01160000 DLC DATA
+   DLC                      DAF:01 OAF:20 ODAI:off Normal
+   DLC                      RQE FMD BC EC DR1 CD
+   DLC
+   DLC   ---- Header  at address 010D44E8, 1 elements ----
+   DLC   00020B6F 62002C00 01200001 0100EA00     <...ob.,........>
+   DLC
+   DLC   ---- Element at address 015CF900, start 10, end 137 ----
+   DLC   03902006 01008B60 00000C81 80808185     <......`...a..ae>
+   DLC   86878895 A6001781 811F0000 50001800 <fghnw..aa...P...>
+   DLC   00010064 0002008C 0A0807B0 00148185 <...d..........ae>
+   DLC   82000A08 04000000 07000000 00000000 <b...............>
+   DLC   00168186 400800F7 F100F200 F300F400 <..af@..71.2.3.4.>
+   DLC   F500F600 F700000D 81870400 F0F100F2 <5.6.7...ag..01.2>
+   DLC   00F40000 0C819500 00080008 00010100 <.4...an.........>
+   DLC   1181A600 000B0300 000007B0 000007B0 <.aw.............>
+
+Note that in the reply, byte 0, bit 4 is not set. However, the FMH is still
+present.
+
+RESOLUTION
+==========
+
+SNA Server version 3.0
+----------------------
+
+To resolve this problem, obtain the latest service pack for SNA Server version
+3.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q184307 How to Obtain the Latest SNA Server Version 3.0 Service Pack
+
+
+
+SNA Server version 4.0
+----------------------
+
+This problem was corrected in the latest SNA Server version 4.0 U.S. Service
+Pack. For information on obtaining this Service Pack, query on the following
+word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+WORKAROUND
+==========
+
+There is a parameter called "query" in the CICS Terminal Control Table (TCT). If
+this parameter is set to ALL, the problem occurs. Setting the parameter to NONE
+works around the problem.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 3.0, 3.0
+SP1, 3.0 SP2, 3.0 SP3, 4.0, and 4.0 SP1 . This problem was first corrected in
+SNA Server 3.0 Service Pack 4.
+
+Additional query words:
+
+======================================================================
+Keywords          :  kbbuglist kbfaq kbfixlist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400
+Version           : WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

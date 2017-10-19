@@ -1,0 +1,65 @@
+DOCUMENT:Q175893  09-AUG-2001  [winnt]
+TITLE   :LexMark Monitor Hangs Spoolss and Creates 100 Percent CPU Usage
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOM
+
+When you use LexMark TCP/IP print monitor with a computer running Windows
+NT 4.0, you may experience very slow printing and Spoolss.exe seems to stop
+responding (hang).
+
+CAUSE
+=====
+
+The problem has been experienced using 80 LexMark computers to connect printers
+to a Token Ring network.
+
+A user-mode dump of Spoolss shows 85 spooler threads, of which 28 run in a tight
+loop in LexMark print monitor. The threads looping in LexMark monitor wait for
+20 minutes on an incoming printer message and compete for CPU cycles during this
+time. This slows down the Spoolss process. The problem increases when adding
+LexMark computers to the network.
+
+RESOLUTION
+==========
+
+There is a new LexMark print monitor (version 3.03) available on LexMark's Web
+site. If you need help on setup of the new print monitor, call LexMark's
+Technical Support Center.
+
+
+The LexMark products discussed here are manufactured by LexMark Corporation, a
+vendor independent of Microsoft; we make no warranty, implied or otherwise,
+regarding these products' performance or reliability.
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

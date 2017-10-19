@@ -1,0 +1,72 @@
+DOCUMENT:Q84941  17-DEC-2000  [msdos]
+TITLE   :Abnormal FORMAT Termination Yields Invalid Media
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you use the MS-DOS FORMAT command to reformat a fixed disk drive and you
+terminate the command by pressing CTRL+C (or CTRL+BREAK) at the "Proceed with
+Format (Y/N)?" prompt, later attempts to access the drive produce the following
+error, even if the drive was properly formatted before the abnormal
+termination:
+
+   Invalid media type reading drive X
+   Abort, Retry, Fail?
+
+WORKAROUND
+==========
+
+To regain access to the drive, do the following:
+
+1. Issue the FORMAT command again, and press N (for No) at the "Proceed with
+   format (Y/N)?" prompt.
+
+2. Reboot the machine.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MS-DOS versions 5.0, 5.0a, and
+6.0. This problem was corrected in later versions of MS-DOS.
+
+MORE INFORMATION
+================
+
+This condition is caused by an error in the MS-DOS FORMAT CTRL+C handler. When
+FORMAT is terminated at any point by pressing CTRL+C (or CTRL+BREAK), it assumes
+that the disk is only partially formatted and therefore unusable; therefore, the
+disk is marked as such.
+
+Additional query words: 5.00 5.00a 6.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

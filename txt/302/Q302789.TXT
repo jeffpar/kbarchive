@@ -1,0 +1,58 @@
+DOCUMENT:Q302789  30-JUL-2001  [msnetwork]
+TITLE   :When You Sort Address Book Entries By A Criteria Other than "Nic
+PRODUCT :The Microsoft Network
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+You sign in to MSN Explorer and click the E-mail icon in the top toolbar. You
+click the Address Book tab, and then you sort the entries in the address book by
+another criteria (for example, by e-mail address) by clicking on the heading for
+a particular column. You sign out of MSN Explorer and sign back in. You start
+the Address Book as described above. The entries in the Address Book are once
+again sorted by nickname.
+
+CAUSE
+=====
+
+This is a known issue.
+
+RESOLUTION
+==========
+
+By default, MSN Explorer sorts the address book entries by the Nickname. If you
+wish to view the entries sorted by another field, click the heading for that
+particular column (clicking once will sort in ascending order and place an
+upwards arrow by the field, and clicking again will sort in descending order and
+place a downwards arrow by the field). You must do this procedure each time you
+sign in.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu; MSN Explorer
+
+======================================================================
+Keywords          :  
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

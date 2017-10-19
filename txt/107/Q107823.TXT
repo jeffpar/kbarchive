@@ -1,0 +1,57 @@
+DOCUMENT:Q107823  01-NOV-1999  [win95x]
+TITLE   :Incorrect Sort Order in File Manager with Some Languages
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have the Swedish, Norway, Finnish, or Icelandic keyboard drivers
+installed for Windows, you may see an incorrect sort order in File Manager.
+
+CAUSE
+=====
+
+The incorrect sort order is caused by a problem with the LANGSCA.DLL file in
+Windows and Windows for Workgroups. (The LANGSCA.DLL file is the Finnish,
+Icelandic, Norwegian, and Swedish language driver used in Windows and Windows
+for Workgroups.)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows versions 3.1 and 3.11.
+This problem was corrected in Windows for Workgroups version 3.11.
+
+Additional query words: 3.10 3.11 list winfile
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

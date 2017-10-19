@@ -1,0 +1,66 @@
+DOCUMENT:Q121885  08-NOV-2001  [homegame]
+TITLE   :Mac Arcade: Centipede Stops Responding When You Start Game
+PRODUCT :Microsoft Home Games
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:kbenv kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Arcade for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play the Centipede game in Microsoft Arcade, the computer may stop
+responding (hang).
+
+CAUSE
+=====
+
+This behavior can occur on some 68040-based Macintosh computers if 32-bit
+addressing is disabled.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. On the Apple menu, point to Control Panels, and then click Memory.
+
+2. Under 32-bit Addressing, click On.
+
+3. On the Special menu, click Restart.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Arcade, version 1.0
+for the Macintosh.
+
+Additional query words: M_Arcade 1.00 lock hung freeze bomb msgame kbfaq
+
+======================================================================
+Keywords          : kbenv kbimu msgame kbfaq
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbGamesSearch kbZNotKeyword kbArcadeSearch kbArcadeMac
+Version           : MACINTOSH:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

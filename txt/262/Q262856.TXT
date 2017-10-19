@@ -1,0 +1,102 @@
+DOCUMENT:Q262856  30-JUL-2000  [sms]
+TITLE   :SMS: Invalid Pointer Causes Low-rights Client Install to Fail
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsetup kbClient kbsms200 kbDiscovery
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a non-administrative user installs the Systems Management Server 2.0 client
+on a Windows NT 4.0 system via the logon installation method, installation fails
+and no client components are installed. When this behavior occurs, the following
+error is present in the Wn_logon.log:
+
+   ASSIGNMENT ***************************************
+   Before adding new sites, there are 1 site keys and 0 sites in the site list
+      Site Key #0: "XXX"
+   Some sites in the registry are not assigned
+   Assessing assignment state from "\SITES\XXX"
+   Calling GetAccessiblePath with \SITES\XXX\ 
+   GetAccessiblePath failed for NAL path \SITES\XXX\. Error = 0x80004003
+   Warning: Unable to Check Assignment for site "XXX" - Invalid pointer
+   After adding any new sites, there are 1 site keys and 0 sites in the site list
+      Site Key #0: "XXX" 
+   Not writing Site List data back to the registry (no new sites)
+   Client is not assigned to any sites - finished.
+    STATUS CALLBACK -  -
+   ReWriteSitesRegistry returning 28931
+   Finished CliEx processing.
+   Unloading CliEx.
+
+CAUSE
+=====
+
+This behavior occurs because the logged on user is not able to create registry
+entries under the HKEY_CLASSES_ROOT registry hive. As a result, Network
+Abstraction Layer (NAL) components are not installed correctly and the client
+installation cannot be completed.
+
+RESOLUTION
+==========
+
+On the system experiencing this problem, verify the Interactive Group has the
+following permissions on HKEY_CLASSES_ROOT and all its subkeys:
+
+ - Query Value
+
+ - Set Value
+
+ - Create Subkey
+
+ - Enumerate Subkeys
+
+ - Notify
+
+ - Delete
+
+ - Read Control
+
+NOTE: These are the default permissions for the Interactive Group, but may have
+been changed by an administrator for security purposes.
+
+MORE INFORMATION
+================
+
+When the Systems Management Server client core components are installed, several
+Nal.dll files must be registered under the HKEY_CLASSES_ROOT registry hive. If
+these files are not registered, NAL is unable to resolve paths on behalf of
+System Management Server client components, resulting in failure to install the
+client.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsetup kbClient kbsms200 kbDiscovery 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

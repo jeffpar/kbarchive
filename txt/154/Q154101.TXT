@@ -1,0 +1,67 @@
+DOCUMENT:Q154101  18-DEC-1999  [schedplus]
+TITLE   :XCLN: Importing 3rd Party Schedules into Schedule+
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+, version 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you are converting to Microsoft Exchange from other mail systems, you might
+wish to bring over scheduling data. You can put your information into the proper
+Microsoft Schedule+ 7.0 file format and then import the file into Schedule+ 7.0.
+In order to accomplish this task, you will need to know the essential fields and
+the formats required by Schedule+ 7.0. The essential fields are the minimum
+fields required by Schedule+.
+
+RESOLUTION
+==========
+
+The following are the essential fields and their formats as needed by Schedule+
+in order to function:
+
+   FIELDS:
+
+    - Description
+    - Start Date
+    - Start Time
+    - End Date
+    - End Time
+
+   FORMATS:
+
+    - The "description" field will hold 32K worth of input.
+    - The "date" fields must be in MM-DD-YYYY format.
+    - The "time" fields format are subject to the current settings in the
+      user's Control Panel-Date/Time applet.
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbScheduleSearch kbSchedule700
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

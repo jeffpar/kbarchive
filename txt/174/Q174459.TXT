@@ -1,0 +1,69 @@
+DOCUMENT:Q174459  09-AUG-2001  [winnt]
+TITLE   :Windows NT DNS Server Remote Administration
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+As with most of the Windows NT services, you can administer a Windows NT Domain
+Name Service (DNS) Server remotely from a computer running Windows NT that is
+not running the DNS Server. This article discusses the method for accomplishing
+this.
+
+MORE INFORMATION
+================
+
+To remotely administer a Windows NT DNS Server, you will need to copy the DNS
+Manager, Dnsadmin.exe, to the %SystemRoot%\System32 folder of the target
+computer where you will do the administration. Dnsadmin.exe can be found in one
+of the following locations:
+
+ - In the %SystemRoot%\System32 folder of your current Windows NT DNS Server.
+
+   -or-
+
+ - In the <platform> folder of your original Windows NT CD. To expand the
+   DNS Manager from this CD, you will need to insert your Windows NT CD into
+   your CD-ROM drive, type the following at a command prompt, and then press
+   Enter:
+
+      expand D:\<platform>\Dnsadmin.ex_ C:\Winnt\System32\Dnsadmin.exe
+
+   where D: is the letter of your CD drive and C:\Winnt is the folder your target
+   Windows NT installation is located.
+
+NOTE: The computer that you wish to run Dnsadmin.exe from must have the TCP/IP
+protocol installed and configured correctly and you must have local
+Administrative privileges at the DNS Server that you wish to administer.
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

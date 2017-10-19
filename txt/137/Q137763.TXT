@@ -1,0 +1,76 @@
+DOCUMENT:Q137763  07-SEP-2001  [homemm]
+TITLE   :Cannot Print from 500 Nations if Using Spooler in Windows 95/98
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0,95
+OPER/SYS:
+KEYWORDS:kbenv kbprint kbimu kbPrintingkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft 500 Nations, version 1.0 
+ - the operating system: Microsoft Windows 95 
+ - the operating system: Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print from 500 Nations on systems running Microsoft Windows 95/98, the
+print job or output may not be printed.
+
+RESOLUTION
+==========
+
+To work around this issue, use the Print Directly To The Printer option to print
+documents from 500 Nations.
+
+To set the Print Directly To The Printer option, follow these steps:
+
+1. Click Start, point to Settings, and then click Printers.
+
+2. Right-click your default printer, and then click Properties.
+
+3. On the Details tab, click Spool Settings.
+
+4. Click the Print Directly To The Printer option, and then click OK.
+
+5. Click OK, and then close the Printers window.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft 500 Nations, version
+1.0.
+
+MORE INFORMATION
+================
+
+
+When you use the Print Directly To The Printer option, you may need to wait for
+the print job to finish before you can perform other tasks in the program.
+
+Additional query words: kbmm multi multi-media media mmtitles
+
+======================================================================
+Keywords          : kbenv kbprint kbimu kbPrinting kbfaq
+Technology        : kbOSWin98 kbOSWin95 kbOSWinSearch kbHomeProdSearch kb500Nations100
+Version           : WINDOWS:1.0,95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

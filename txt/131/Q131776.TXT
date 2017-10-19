@@ -1,0 +1,60 @@
+DOCUMENT:Q131776  08-AUG-2001  [winnt]
+TITLE   :How To Compile MIB.BIN With DHCP and WINS MIB Files Using MIBCC
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+To compile a Simple Network Management Protocol (SNMP) Management
+Information Base (MIB) file with the Windows Internet Name Service (WINS)
+and Dynamic Host Configuration Protocol (DHCP) MIB files, use MIBCC.EXE
+(included in the Windows NT Resource Kit version 3.5). For example:
+
+   MIBCC -oOUT.BIN SMI.MIB LMMIB2.MIB MIB_II.MIB WINS.MIB DHCP.MIB
+
+The order of the MIB files is important. In this example, you need to copy
+OUT.BIN to MIB.BIN and place it in the %SYSTEMROOT%\SYSTEM32 directory. If
+you compile without the -o option, MIBCC.EXE overwrites the MIB.BIN file
+that is already in your %SYSTEMROOT%\SYSTEM32 directory.
+
+To print each node as it is added, and print the MIB tree when
+finished, compile with -n and -t, respectively. For example:
+
+   MIBCC -n -oOUT.BIN -t SMI.MIB LMMIB2.MIB MIB_II.MIB WINS.MIB DHCP.MIB
+
+NOTE:  For Microsoft Windows 2000 to compile SNMP MIB files with WINS and DHCP MIB files, use MIBCC.EXE with the following syntax:
+
+MIBCC -oOUT.BIN ACCSERV.MIB ACS.MIB AUTHSERV.MIB WINS.MIB DHCP.MIB FTP.MIB GOPHERD.MIB HOSTMIB.MIB HTTP.MIB IGMPV2.MIB INETSRV.MIB IPFORWD.MIB LMMIB2.MIB MCASTMIB.MIB MIB_II.MIB MIPX.MIB MRIPSAP.MIB MSFT.MIB PRINTMIB.MIB WINS.MIB DHCP.MIB
+
+Please note that with MIBCC.EXE version 2 you not need to include SMI.MIB because MIBCC.EXE recognizes SMI.MIB internally. In this example, you need to copy OUT.BIN to MIB.BIN and place it in the %SYSTEMROOT%\SYSTEM32 directory. If you compile without the -o option, MIBCC.EXE overwrites the MIB.BIN file that is already in your %SYSTEMROOT%\SYSTEM32 directory.
+
+Additional query words: prodnt snmp mib
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : :3.5,3.51,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

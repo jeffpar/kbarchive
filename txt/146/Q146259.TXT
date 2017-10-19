@@ -1,0 +1,59 @@
+DOCUMENT:Q146259  14-MAR-1999  [exchange]
+TITLE   :XADM: Field Help Dialog Doesn't List Fields Alphabetically
+PRODUCT :Microsoft Exchange
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Electronic Forms Designer, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Field Help... dialog box in Microsoft Exchange Electronic Forms Designer
+(EFD) does not list the fields that have been added to the canvas in
+alphabetical order. Instead, the fields are listed in the order in which they
+were added to the canvas. This behavior is not as expected and may make it
+difficult to find the desired field in the list.
+
+The field on the canvas that has the focus when the Field Help... dialog is
+triggered is the default field that shows up in the Field listbox.
+
+MORE INFORMATION
+================
+
+The Field Help... dialog is accessed by double-clicking on one of the objects
+that has been added to the canvas and then clicking on the Field Help... button.
+This feature is used only at design time and will not affect the end users of
+the forms.
+
+This issue should not drastically affect the designer of the form unless he has
+added many objects to the canvas. In this case, it may be most efficient to
+double-click on each object separately and go into that object's Field Help, by
+default, and add the help information.
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbZNotKeyword kbExchangeEForms kbExchangeEForms400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

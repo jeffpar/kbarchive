@@ -1,0 +1,67 @@
+DOCUMENT:Q174298  22-OCT-2000  [exchange]
+TITLE   :XADM: Customizing the Moderator Address in Moderated Newsgroup
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the procedure to customize or change the moderator for a
+newsgroup in Exchange Server.
+
+MORE INFORMATION
+================
+
+When a moderated newsgroup public folder is created, the default moderator
+address is determined by rules specified in the Moderatr.txt file, located in
+the Exchsrvr\Add-ins\Ins folder. You can customize the default moderator address
+by editing the rules in this file by using a text editor such as Notepad.
+
+Each entry in the Moderatr.txt file is the Simple Network Management Protocol
+(SMTP) address of the newsgroup moderator in the format of newsgroup:address,
+where the newsgroup is a newsgroup name or a wildcard pattern that matches
+multiple names. The rules are processed from top to bottom, and the first match
+that is found is used.
+
+The special value "%s" in the address causes all dots in the newsgroup name to be
+replaced with dashes. For example, the default rule in the moderator file is
+*:%s@uunet.uu.net. The asterisk (*) matches all newsgroup names, and the %s
+substitutes the newsgroup name in the address. If a moderated newsgroup called
+news.day is created, the default moderator address is news-day@uunet.uu.net.
+
+After a newsgroup public folder has been created, the public folder owner can
+change the moderator address with the Microsoft Exchange Client or Microsoft
+Outlook by editing the moderator rule in the folder properties.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

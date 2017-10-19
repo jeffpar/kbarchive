@@ -1,0 +1,83 @@
+DOCUMENT:Q170377  30-APR-1999  [exchange]
+TITLE   :XADM: Removing SMTP Addresses for All Mailboxes
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In some cases, the Microsoft Exchange Server Administrator may need to delete
+all SMTP proxy addresses for all users in the Microsoft Exchange Server site. By
+default, SMTP addresses are created for every user based on the Organization,
+Site, and Server name.
+
+This article describes the different procedures for deleting SMTP addresses for
+all users in Microsoft Exchange Server versions 4.0 and 5.0.
+
+MORE INFORMATION
+================
+
+Exchange 4.0
+------------
+
+Microsoft Exchange Server version 4.0 allows an administrator using the
+Administrator program to delete the SMTP addresses for the entire site or
+server.
+
+To do this using the Administrator program, perform the following steps:
+
+1. In the Administrator menu, click Site, and then click Configuration.
+
+2. In the Site Addressing properties dialog box, click the Site Addressing tab,
+   and then click Remove.
+
+3. When you are prompted for the e-mail address type to delete, enter SMTP and
+   click Yes in the Warning dialog box.
+
+NOTE: By doing the above procedure, you remove ALL instances of SMTP proxy
+addresses for a user on the site or server. You also disable Site Addressing to
+regenerate SMTP addresses for the site or server even though the SMTP option
+remains in the Site Addressing properties. This only reflects changes for new
+users created after you have selected to delete the addresses.
+
+Exchange 5.0
+------------
+
+Exchange 5.0 does not allow the deletion of SMTP addresses on the Site
+Configuration level. The only way to remove SMTP addresses is to delete them
+manually for each user.
+
+NOTE: It is possible to remove all SMTP addresses without removing the SMTP
+attribute for all users by blanking the address instead of deleting. Refer to
+the Microsoft Knowledge Base article Q170378, XADM: Blanking SMTP Addresses for
+All Users.
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbZNotKeyword2
+Version           : WinNT:5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

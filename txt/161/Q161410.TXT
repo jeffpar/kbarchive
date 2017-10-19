@@ -1,0 +1,94 @@
+DOCUMENT:Q161410  10-AUG-2001  [winnt]
+TITLE   :How to Set Up a Private Network Over the Internet Using PPTP
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbnetworkkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article describes how to set up a private network connection over the
+Internet using the Point-to-Point Tunneling protocol (PPTP).
+
+MORE INFORMATION
+================
+
+You can establish secure, multiple-protocol Virtual Private Network (VPN)
+connections over public data networks such as the Internet using PPTP. By
+dialing into your Internet service provider's point of presence (POP), you can
+access your corporate networks and programs without dialing directly into the
+company's network. PPTP connects directly to the target server by creating a
+virtual network for each remote client. A Windows NT 4.0 Server administrator
+can monitor and manage such a virtual network just like any other remote access
+port.
+
+To use PPTP to connect to a server securely across the Internet, you must first
+install the PPTP protocol. To do so, follow these steps:
+
+1. In Control Panel, double-click Network, and then click the Protocols tab.
+
+2. Add Point To Point Tunneling Protocol.
+
+3. After the protocol is loaded, Remote Access Services Setup is invoked. You
+   must add at least one VPN port as a port in RAS Setup. You may need to
+   configure the newly created VPN adapter to "Dial out and receive calls." The
+   default setting is "Receive calls only."
+
+4. Specify the protocols to run for the VPN port. You can install up to 256 VPN
+   ports. Each VPN can be connected to a network.
+
+5. If you have Service Pack 3 or later installed, reapply the service pack, and
+   then restart the computer.
+
+To make a PPTP connection to a target server over the Internet, follow these
+steps:
+
+1. In Dial-Up Networking, make a new phone book entry for the target server. For
+   the phone number, specify the IP address or host name of the server. Make
+   sure to specify the VPN port you want to use.
+
+   NOTE: After you have a phone book entry set up, you can check and modify phone
+   book settings by clicking More, and then clicking Edit Entry And Modem
+   Properties. In the Phone Book Entry dialog box, verify that the Dial Using
+   box specifies a VPN port. Click the Server tab, and verify that a protocol
+   that the target server uses is selected. You can specify the security you
+   want on the Security tab.
+
+2. Dial your ISP and make your connection to the Internet.
+
+3. When you are connected to your ISP, dial the target server to establish the
+   PPTP connection.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbfaq
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

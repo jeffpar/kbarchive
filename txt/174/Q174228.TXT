@@ -1,0 +1,84 @@
+DOCUMENT:Q174228  09-AUG-2001  [winnt]
+TITLE   :STOP Cx0000009A After Trying to Regain Multiprocessor Support
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you apply a service pack and follow the procedures to edit the
+%SystemRoot%\Repair\Setup.log file to force the service pack update and copy the
+multiprocessor kernel and hal, you restart the computer and get the following
+stop screen:
+
+   Stop 0xC0000009A SYSTEM_LICENSE_VIOLATION
+   (0x00000004,?????????,????????,????????)
+
+The first parameter is always 0x00000004, the next three may vary.
+
+This error occurs even after you follow the procedures such as those found in the
+following Microsoft Knowledge Base article:
+
+ARTICLE-ID: Q168132
+TITLE : After Applying Service Pack NT Reports Single Processor
+
+CAUSE
+=====
+
+This is because of mixed service pack levels in the ntoskrnl and Hal.dll caused
+by an error in the Setup.log file.
+
+RESOLUTION
+==========
+
+To resolve this problem, perform one of the following:
+
+ - If the system is FAT, boot to DOS or other installation of Windows NT.
+
+   -or-
+
+ - If the system is NTFS, boot to another installation of Windows NT or do a
+   parallel installation of Windows NT if dual boot is not an available option.
+
+Then, manually copy the proper kernel file and .dlls from the appropriate service
+pack and restart your computer.
+
+For more information, please see the following Microsoft Knowledge Base article:
+
+ARTICLE-ID: Q156358
+TITLE : How to Manually Add Support for a Second Processor
+
+Additional query words: blue screen multi processor multi-processor
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : WinNT:3.5,3.51,4.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

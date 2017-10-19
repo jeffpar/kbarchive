@@ -1,0 +1,74 @@
+DOCUMENT:Q184765  24-FEB-2000  [exchange]
+TITLE   :XADM: Setting up the Organization Forms Library
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Forms that are installed into the Organization Forms Library are available to
+the entire Organization. The following steps summarize how to setup the
+Organization Forms Library for forms to be installed:
+
+1. In the Exchange Administrator program click Forms Administrator on the Tools
+   menu.
+
+2. If Organization Forms is not defined, click New to create the Organization
+   Forms library, and set the proper language.
+
+3. Expand Organization, Folders, System Folders, Forms Registry.
+
+4. Double-click on the Organization Forms object to open the properties and
+   click Client Permissions.
+
+5. Give a person or a group the Owner role to allow the user or group to install
+   forms in the organization forms library.
+
+MORE INFORMATION
+================
+
+A user who is trying to install a form must have Owner permission to that
+library or folder, including public folders.
+
+Forms installed in the organization forms are available to anybody in the
+organization through the client by selecting New Forms from the Compose menu.
+Forms installed in the folder, including a public folder, are available when a
+user selects that particular folder.
+
+For additional information on managing and installing forms, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q147604 XGEN: Managing Forms Installed on Exchange Server
+
+Additional query words: organizational e-forms e-form
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

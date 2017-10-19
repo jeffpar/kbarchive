@@ -1,0 +1,69 @@
+DOCUMENT:Q94011  12-NOV-1999  [win95x]
+TITLE   :Zenith MasterSport SL/SLE BIOS Update Required
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:win31
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Windows for Workgroups with a Xircom Pocket Ethernet I adapter on a
+Zenith Mastersport SL/SLE using MFM-300 Monitor BIOS versions earlier than 4.1c,
+you may receive the following error:
+
+   Pocket Ethernet Adapter missing, not powered or malfunctioned.
+   Press any key to continue...
+
+CAUSE
+=====
+
+According to Xircom technical support, you may encounter problems initializing
+the Pocket Ethernet I on Zenith Mastersport SL and SLE computers with Windows
+for Workgroups if the BIOS version is earlier than 4.1c and NDIS driver version
+1.27 (PENDIS.DOS) is being used.
+
+Other drivers (such as Artisoft's Lantastic AI drivers) initialize the adapter
+without error using this BIOS revision, but the NDIS driver version 1.27 fails
+to recognize the card.
+
+RESOLUTION
+==========
+
+To obtain an update to version 4.1c of the Zenith MFM-300 Monitor BIOS, contact
+Zenith technical support. This BIOS update may also be downloaded from the
+Zenith forum on CompuServe.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 3.10 3rdparty
+
+======================================================================
+Keywords          : win31 
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

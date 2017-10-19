@@ -1,0 +1,69 @@
+DOCUMENT:Q145661  17-JUN-2002  [iis]
+TITLE   :PRB: Specified CGI Application Misbehaved
+PRODUCT :Internet Information Server
+PROD/VER::1.0,3.0,4.0,5.0
+OPER/SYS:
+KEYWORDS:kbCGI
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 1.0, 3.0, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use a Common Gateway Interface (CGI) application with Microsoft
+Internet Information Server (IIS), the following error message appears:
+
+   CGI Error:
+   The specified CGI application misbehaved by not returning a complete set of
+   HTTP headers. The headers it did return are:
+
+CAUSE
+=====
+
+This error is caused by the return of an incomplete or incorrect set of headers
+by the CGI application. The CGI application may be written incorrectly. As well,
+logic errors, API failures, or anything that causes the CGI application
+malfunction can also cause this error.
+
+RESOLUTION
+==========
+
+Modify the source code for the CGI application header output. The following is
+an example of a correct header:
+
+      print "HTTP/1.0 200 OK\n";
+      print "Content-Type: text/html\n\n\n";
+
+If the CGI is written in C++, it is possible to debug the application and
+ascertain the problem. Instructions can be found in following article:
+
+   Q238788 How to Debug CGI Applications Running Under IIS
+
+Additional query words: prodiis
+
+======================================================================
+Keywords          : kbCGI 
+Technology        : kbiisSearch kbiis500 kbiis400 kbiis300 kbiis100
+Version           : :1.0,3.0,4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

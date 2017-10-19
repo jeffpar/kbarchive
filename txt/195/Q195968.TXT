@@ -1,0 +1,71 @@
+DOCUMENT:Q195968  28-APR-1999  [exchange]
+TITLE   :XADM: Unable to Install Internet News Service
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install the Newsfeed Connector for the first time, the Setup Wizard may
+fail when you click Next after you try to select the Administrator account. The
+following error message is then displayed:
+
+   Client operation failed.
+   Microsoft Exchange Server Information Store
+   ID no: 80070057-0501-80070057
+
+If you click OK, you will return you to the wizard but will be unable to
+progress. Clicking Cancel will stop the Wizard and remove the Internet News
+Service.
+
+CAUSE
+=====
+
+The public information store has been removed from this Exchange Server
+computer.
+
+WORKAROUND
+==========
+
+To work around this problem and successfully install the Internet News Service,
+perform the following steps:
+
+1. Start the Microsoft Exchange Server Administrator program.
+
+2. On the File menu, click New Other, then click Information Store.
+
+3. Select Public in the Information Store type section of the New Information
+   Store dialog box, and then click OK.
+
+Additional query words: NNTP, Newsfeed, newsgroups
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

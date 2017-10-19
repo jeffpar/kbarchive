@@ -1,0 +1,87 @@
+DOCUMENT:Q199057  13-FEB-2002  [visualc]
+TITLE   :BUG: Expansion of __LINE__ Macro Is Incorrect When Using /ZI
+PRODUCT :Microsoft C Compiler
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbVC600bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+ - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The results of the __LINE__ macro are incorrect when you use Debug Information
+for Edit and Continue (/ZI). The problem may manifest itself as compiler,
+linker, or run-time errors.
+
+RESOLUTION
+==========
+
+To work around this problem, use the Program Database option (/Zi) instead of
+Edit and Continue (/ZI).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The following sample code demonstrates the problem:
+
+      // TEST.CPP - Compile with /GX and /Zi or /ZI.
+      #include <iostream>
+      using namespace std;
+
+      #define CONCAT(s1,s2) #s1 ## #s2
+      #define MSG(n) cout << CONCAT(Message at line\x20,n) << endl;
+
+      int main()
+      {
+      MSG(__LINE__);
+      return 0;
+      }
+
+When compiled with the /Zi option, output is correct:
+
+   Message at line 10
+
+When compiled with the /ZI option, output is incorrect:
+
+   Message at line (__LINE__Var+1)
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCompiler kbVC600bug 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

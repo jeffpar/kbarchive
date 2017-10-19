@@ -1,0 +1,71 @@
+DOCUMENT:Q101137  29-OCT-1999  [pcmail]
+TITLE   :PC DirSync: Possible Failure of Directory Synchronization
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Directory Synchronization (Dir-Sync) can appear to fail under the conditions
+described below.
+
+Using a modem connection, a hub External with the Dir-Sync server is set to call
+out to the Requestor postoffice's External, which is configured NOT to call the
+hub External. (Calling is often restricted in order to control long-distance
+costs.)
+
+If the T1 time is reached and no mail is queued for the Requestor postoffice from
+the Server postoffice, the Server External does not call the Requestor
+postoffice to retrieve the Dir-Sync mail now waiting to be delivered to the
+Server.
+
+If the T2 time is reached and the hub External has received no mail for the
+Requestor postoffice, then the Dir-Sync process has no updates from the
+Requestor. Mail is not queued for the Requestor until after T2, at which time
+External calls the Requestor, sends the update, and retrieves the pending
+Dir-Sync mail.
+
+This sequence of events is likely to occur because Dir-Sync is normally scheduled
+to run late at night when activity on the postoffice is low and there may be no
+mail queued for the Requestor.
+
+The result is that Requestor updates are 24 hours late and Dir-Sync appears to
+have failed on the Requestor postoffice.
+
+RESOLUTION
+==========
+
+Configure the Requestor External to call the Server External, so that the
+Dir-Sync mail is transmitted before the T2 time occurs.
+
+Additional query words: 3.00 3.20 DirSync
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300
+Version           : WINDOWS:3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

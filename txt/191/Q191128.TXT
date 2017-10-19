@@ -1,0 +1,110 @@
+DOCUMENT:Q191128  17-JUL-2001  [visualc]
+TITLE   :BUG: GetItem and SetItem Do Not Have an Indent Parameter
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.2,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbcode kbnokeyword kbCtrl kbListView kbMFC kbVC420bug kbVC500bug kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+CListCtrl member functions GetItem and SetItem lack an Indent parameter.
+
+CAUSE
+=====
+
+The LVITEM structure was modified with version 4.70 of ComCtrl32.dll to include
+an indent parameter. This parameter specifies how many image widths to indent an
+item. However, there is no place to specify this parameter in the form of the
+CListCtrl member function SetItem that takes a list view item's attributes.
+
+RESOLUTION
+==========
+
+You can set the value of the iIndent member of the LVITEM structure by using the
+form of the CListCtrl member function SetItem that accepts a pointer to a
+LV_ITEM structure. For example:
+
+      void CMyCListCtrl::SetItemIndent( int nItem, int nIndent )
+      {
+         LV_ITEM lvi;
+
+         lvi.iItem = nItem;
+         lvi.iSubItem = 0;
+         lvi.mask = LVIF_INDENT;
+         lvi.iIndent = nIndent;
+
+         VERIFY( SetItem( &lvi ) );
+      }
+
+Likewise, to obtain the indentation of an item in a CListCtrl, use the form of
+the CListCtrl member function GetItem that accepts a pointer to a LV_ITEM
+structure:
+
+      int CMyCListCtrl::GetItemIndent( int nItem )
+      {
+         LV_ITEM lvi;
+
+         lvi.iItem = nItem;
+         lvi.iSubItem = 0;
+         lvi.mask = LVIF_INDENT;
+
+         VERIFY( GetItem( &lvi ) );
+
+         return lvi.iIndent;
+      }
+
+Note that because iIndent specifies the number of image widths to indent the
+item, you must associate an image list of small images with the items.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+CListCtrl::SetItem has two forms: one that takes a pointer to an LV_ITEM
+structure and one that takes individual parameters. The second form does not
+have a parameter representing the number of image widths to indent an item.
+
+Additional query words: LVITEM LV_ITEM LVM_SETITEM LVM_GETITEM CListView
+
+======================================================================
+Keywords          : kbcode kbnokeyword kbCtrl kbListView kbMFC kbVC420bug kbVC500bug kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.2,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

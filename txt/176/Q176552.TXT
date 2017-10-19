@@ -1,0 +1,64 @@
+DOCUMENT:Q176552  10-JUN-2002  [visualc]
+TITLE   :HOWTO: Set Initial Default Size of ActiveX (ATL) Control
+PRODUCT :Microsoft C Compiler
+PROD/VER::2.0,2.1,3.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbnokeyword kbActiveX kbATL200 kbATL210 kbCOMt kbCtrlCreate kbATL300 kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Active Template Library (ATL), versions 2.0, 2.1, 3.0, used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, versions 5.0, 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+    - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows how to set the default size of an Active Template Library
+(ATL) control when it is first inserted into a container. The default width and
+height of an ATL control is stored in a variable called m_sizeExtent, which is
+normally initialized to 5080x5080 himetric units in the constructor for
+CComControlBase from which CComControl is derived. You can set your own
+preferred default size in your control's constructor, as follows:
+
+      CTestControl()
+      {
+         // width = 100 pixels, height = 25 pixels
+         SIZE sz = { 100, 25 };
+         // convert pixels to himetric
+         AtlPixelToHiMetric (&sz, &m_sizeExtent);
+         // store natural extent
+         m_sizeNatural = m_sizeExtent;
+      }
+
+(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Samsom
+Tanrena, Microsoft Corporation
+
+Additional query words: kbVC500 kbVC600 kbATL200 kbATL210 kbATL300 kbctrl
+
+======================================================================
+Keywords          : kbnokeyword kbActiveX kbATL200 kbATL210 kbCOMt kbCtrlCreate kbATL300 kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch
+Version           : :2.0,2.1,3.0,5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

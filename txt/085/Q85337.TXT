@@ -1,0 +1,67 @@
+DOCUMENT:Q85337  05-NOV-1999  [pcmail]
+TITLE   :FAX: Hardware Required of the Fax Gateway PC
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to Fax, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Mail Gateway to Fax program requires this hardware:
+
+ - Its own workstation on the network
+
+ - A network connection to the MS Mail database
+
+ - A fax board installed
+
+For more information on compatible fax boards, query on these words in the
+Microsoft Knowledge Base:
+
+   "fax" (without the quotation marks) and "boards" (without the quotation
+   marks) and "Fax Gateway" (without the quotation marks)
+
+If you are using one of the Intel fax boards, the gateway needs a dedicated IBM
+PC/XT/AT or 100-percent compatible with at least 512K of memory. If you are
+using the GammaLink GammaFax board, the gateway needs an IBM PC or compatible
+386 with a minimum 2 MB of memory.
+
+The gateway also needs an outside telephone line.
+
+REFERENCES
+==========
+
+The "System Requirements" chapter of the "Microsoft Mail Gateway to Fax
+Administrator's Guide"
+
+
+Additional query words: 3.00 2.1a pcmail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateFax300
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,46 @@
+DOCUMENT:Q66338  30-JUL-2001  [homegame]
+TITLE   :Flight Simulator: Proper Display Option for VGA LCD Display
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+When running Flight Simulator 3.x or 4.x on a system with a liquid- crystal VGA
+display, choose option D [Liquid Crystal Display (CGA)] when you're asked what
+display type is being used in the Flight Simulator start-up menus.
+
+Currently, CGA is the highest resolution supported by Flight Simulator on
+liquid-crystal displays (LCDs).
+
+MORE INFORMATION
+================
+
+For example, when Flight Simulator is run on an NEC ProSpeed 386 laptop with VGA
+LCD display, and option M (VGA 16 color 640 x 350 Enhanced) is chosen, pull-down
+menu options are not visible in Flight Simulator, and the sky will appear black.
+Using display option D corrects these problems.
+
+Additional query words: Monochrome EGA VGA
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

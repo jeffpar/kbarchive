@@ -1,0 +1,64 @@
+DOCUMENT:Q85448  14-DEC-1999  [win95x]
+TITLE   :Word for Windows Icon Displays When Pasting Text to Paintbrush
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When copying text from Word for Windows version 2.0 and pasting into Windows
+Paintbrush, the icon for Word for Windows is displayed instead of the text.
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+1. In Word for Windows, highlight the text. From the Edit menu, choose Copy (or
+   Cut).
+
+2. Open Write, and from the Edit menu, choose Paste Special.
+
+3. In the Data Type box, select Text, then choose the Paste button.
+
+4. In Write, highlight the text. From the Edit menu, choose Copy (or Cut).
+
+5. Open Paintbrush. Select the Text tool from the Toolbox.
+
+6. Click the mouse at the insertion point in the Paintbrush image.
+
+7. From the Edit menu, choose Paste.
+
+The text will be displayed in Paintbrush.
+
+Additional query words: 3.10 3.1 3.11 paint cutting
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

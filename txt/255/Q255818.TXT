@@ -1,0 +1,72 @@
+DOCUMENT:Q255818  10-MAY-2000  [winnt]
+TITLE   :Err Msg: 19033-ERROR: $multi_valued() Subscript Goes Beyond...
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services, version 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The management agent (MA) log may incorrectly report the following error
+message:
+
+   19033-ERROR: $multi_valued() subscript goes beyond range 12121 in template []
+   in the statement starting at line XX
+
+Both the range (512) value and the line number are reported incorrectly. The line
+number is reported incorrectly if the $multi_valued function follows comments in
+the template.
+
+CAUSE
+=====
+
+The error message occurs with the $multi_valued function. If the first parameter
+contains all numbers, it is assumed to be a subscript number rather than a
+string value to search for. If the first parameter contains letters, it is
+considered a string and you do not receive the error message.
+
+RESOLUTION
+==========
+
+A partial resolution is to remove the double comments before the function to
+have the correct line reported. The range value continues to be incorrectly
+reported.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+
+Additional query words: Zoomit Via MA zscript genlogs
+
+======================================================================
+Keywords          : kberrmsg kbtool 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

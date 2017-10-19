@@ -1,0 +1,76 @@
+DOCUMENT:Q235355  03-MAY-2001  [visualc]
+TITLE   :PRB: CMonthCalCtl::GetCurSel(CTime) Returns Wrong Value
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:6.0
+OPER/SYS:
+KEYWORDS:kbCmnCtrls kbCtrl kbDateTime kbMFC kbMonthCalCtrl kbVC600 kbDSupport kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), included with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the CMonthCalCtrl::GetCurSel(CTime) to get the date selected from
+the Month Calendar Common control, the date in the CTime class is incorrect.
+
+CAUSE
+=====
+
+MFC's implementation of CMonthCalCtrl::GetCurSel() for the CTime class calls
+SendMessage(MCM_GETCURSEL, &sysTime) where sysTime is a SYSTEMTIME
+structure. The MCM_GETCURSEL message does not fill in the hours, minutes, and
+seconds part of the sysTime Structure with valid values. However, the
+constructor for CTime class takes these values into consideration, so the date
+in CTime class is incorrect.
+
+RESOLUTION
+==========
+
+The workaround is to use the CMonthCalCtrl::GetCurSel(SYSTEMTIME*) version of
+GetCurSel for this class to get the correct date. The code will look like the
+following example:
+
+      SYSTEMTIME sysTime;
+
+      m_MonthCal.GetCurSel(&sysTime);
+
+      sysTime.wHour = sysTime.wMinute = sysTime.wSecond =    sysTime.wMilliseconds = 0;
+     
+      CTime l_time(sysTime);
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCmnCtrls kbCtrl kbDateTime kbMFC kbMonthCalCtrl kbVC600 kbDSupport kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

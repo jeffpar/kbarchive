@@ -1,0 +1,85 @@
+DOCUMENT:Q128238  07-DEC-2001  [ssafe]
+TITLE   :BUG: SourceSafe Update Command Fails on Large Binary File
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbSSafe310bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SourceSafe for Windows, version 3.1 
+ - Microsoft SourceSafe for MS-DOS, version 3.1 
+ - Microsoft SourceSafe for Macintosh, version 3.1 
+ - Microsoft SourceSafe for UNIX, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A large binary file cannot be updated in SourceSafe.
+
+CAUSE
+=====
+
+Insufficient resources to create the difference file.
+
+RESOLUTION
+==========
+
+If it is not possible to increase the HMA by decreasing the number of drivers
+necessary for a given system, try putting all binary files in a subproject, and
+put the following line in the project header for that subproject:
+
+   Store_Deltas = No
+
+This will turn off the calculation of differences (storing the entire file) for
+this subproject only.
+
+For example, you may want to organize your projects as shown in the documentation
+(User Guide Chapter 2 Overview), with a subproject containing the binary files:
+
+        $/-
+          |
+          TESTDATA
+             |
+              -BINARIES
+
+Such that:
+
+   [$/TESTDATA/BINARIES]
+
+would be a subproject header. Put this line under the subproject header in the
+SS.INI file for each user:
+
+   Store_Deltas = No
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the products listed at the
+beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe310bug 
+Technology        : kbHWMAC kbOSMAC kbSSafeSearch kbAudDeveloper kbZNotKeyword2 kbZNotKeyword3 kbSSafe310 kbSSafe310DOS kbSSafe310Mac kbSSafe300UNIX
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

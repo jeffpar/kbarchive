@@ -1,0 +1,105 @@
+DOCUMENT:Q136537  03-DEC-1999  [homekids]
+TITLE   :How the Leopard Got His Spots: Minimum System Requirements
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbenv kbsetupkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft P.J.'s Reading Adventures:, included with:
+    - Microsoft How the Leopard Got His Spots, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following are the minimum system requirements to successfully run How the
+Leopard Got His Spots:
+
+Computer
+--------
+
+A Multimedia PC or compatible with a 486/33 or higher microprocessor.
+
+Memory (RAM)
+------------
+
+Minimum of 4 megabytes (MB) RAM (8 MB recommended for better performance).
+
+NOTE: On machines with 8 MB RAM or less, a 6 MB swapfile is required.
+
+Hard Disk Space
+---------------
+
+6 MB of free hard disk space. An additional 6MB of hard disk space if the system
+has less than 8 MB of physical RAM (see above).
+
+CD-ROM Drive
+------------
+
+Double-speed CD-ROM: The CD-ROM drive should transfer data from the CD-ROM at 300
+KB per second while using less than 40 percent of the CPU bandwidth and has an
+average seek time of less than 400 milliseconds.
+
+MS-DOS CD-ROM Extension (MSCDEX) version 2.2 or later. Check the documentation
+for your CD-ROM drive.
+
+Video
+-----
+
+Super VGA display capable of displaying 256 colors at 640 x 480 resolution. A
+local bus video card is recommended.
+
+Operating System Requirements
+-----------------------------
+
+MS-DOS 5.0 or later and Microsoft Windows 3.1 or later.
+
+Sound Requirements
+------------------
+
+Windows Sound Blaster-compatible sound card.
+
+Other Requirements
+------------------
+
+Microsoft Mouse or compatible pointing device.
+
+MORE INFORMATION
+================
+
+In addition to the above system requirements, for the best performance use the
+following recommendations:
+
+ - Do not use Windows "Hot Keys" while running Leopard.
+
+ - For faster performance, make sure the system has a permanent swapfile.
+
+ - Set your display to 256 colors for best display and performance.
+
+Additional query words: kbhowto 1.00 kids mskids leo pj rabbit ears homekids requires recommendations limitations minimum system requirements mandatory kbmm multimedia multi-media multi media
+
+======================================================================
+Keywords          : kbenv kbsetup kbfaq
+Technology        : kbKidsSearch
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

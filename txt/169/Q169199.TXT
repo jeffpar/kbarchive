@@ -1,0 +1,63 @@
+DOCUMENT:Q169199  31-OCT-1999  [exchange]
+TITLE   :XADM: Purpose of Hierarch.dat in the DSADATA Directory
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0,5.5
+OPER/SYS:
+KEYWORDS:exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When the Microsoft Exchange directory service shuts down, it writes the basic
+hierarchy structure to a file called Hierarch.dat in the Dsadata folder. This
+file is used by the directory service on startup to quickly load the hierarchy
+structure information and shorten startup time without having to read the entire
+directory database again.
+
+MORE INFORMATION
+================
+
+This file can be safely deleted at any time. The only adverse effect is that the
+directory service may take longer to start if the file is deleted while the
+service is stopped.
+
+The Hierarch.dat file is used to keep the number of objects in a container
+between stops and starts of the directory service. Exchange Server writes it out
+when shutting down, and reads it back in when starting up. Note that with
+hierarchy calculation, finding out what containers there are is easy;
+calculating the number of objects in a container is expensive. Normally, if you
+press F5 in the Exchange Server Administrator program, you cause the hierarchy
+to be recalculated. Shutting down the directory and deleting the Hierarch.dat
+file also causes the hierarchy to be recalculated at start up, often leading to
+long startup times for the directory.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

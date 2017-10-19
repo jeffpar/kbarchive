@@ -1,0 +1,61 @@
+DOCUMENT:Q84573  06-DEC-1999  [win95x]
+TITLE   :Epson ESC/P2 Incorrectly Advances User Defined Paper Size
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+In Microsoft Windows version 3.1, when you print to continuous fanfold paper as
+a User Defined Size while using the Epson ESC/P 2 version 1.0 printer driver,
+the paper advances after the first page as if you had selected the
+8.5-by-11-inch paper size.
+
+
+WORKAROUND
+==========
+
+To work around this problem, install and use the EPSON24.DRV printer driver.
+Select the model closest to the ESC/P2 model, for example, if you are using the
+LQ-870, select LQ-850.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows version 3.1. We are
+researching this problem and will post new information here as it becomes
+available.
+
+
+Additional query words: 3.10 fan fold fan-fold LQ-570 870 1070 1170 Action Printer ActionPrinter 5000 5500 2.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

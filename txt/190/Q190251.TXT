@@ -1,0 +1,73 @@
+DOCUMENT:Q190251  11-JAN-2001  [vbwin]
+TITLE   :BUG: Option Explicit Statement is Not Added by a DHTML Page
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbInternet kbPageDesigner kbVBp600bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The DHTML Page Designer does not add an Option Explicit statement to code by
+default. With this statement, Visual Basic requires you to declare variables
+before you use them.
+
+RESOLUTION
+==========
+
+To add Option Explicit to your DHTML Page Designer pages:
+
+1. Right-click on DHTML page in the Visual Basic Project window.
+
+2. Select View Code from the pop-up menu.
+
+3. Insert the text "Option Explicit" as the very first line.
+
+4. Repeat this process for all DHTML pages in the project and every time you
+   create a new DHTML page.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+REFERENCES
+==========
+
+Please see the following Microsoft Knowledge Base article for more information
+on the DHTML Page Designer:
+
+   Q190249 INFO: VB 6.0 Readme Part 9: DHTML Page Designer Issues
+
+Additional query words:
+
+======================================================================
+Keywords          : kbInternet kbPageDesigner kbVBp600bug 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

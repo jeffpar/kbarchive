@@ -1,0 +1,254 @@
+DOCUMENT:Q321599  15-AUG-2002  [iis]
+TITLE   :MS02-028: Heap Overrun in HTR Chunked Encoding Weakens Web Srv
+PRODUCT :Internet Information Server
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:kbSecurity kbCOMIS kbWinNT400PreSP7Fix kbWin2000PreSP3Fix KbSECVulnerability KbSECBulle
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft Internet Information Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A buffer overrun vulnerability exists in Internet Information Services (IIS) 5.0
+and Internet Information Server (IIS) 4.0. By sending a specially-chosen request
+to an affected Web server, an attacker might either disrupt Web services or gain
+the ability to run a program on the server. Such a program would run with
+full-system rights in IIS 4.0, and with fewer (but nevertheless significant)
+rights in IIS 5.0.
+
+Microsoft recommends that you remove the functionality that contains the
+vulnerability unless there is a business-critical reason for retaining it, and
+customers who do so are at no risk from this vulnerability. By default, the IIS
+Lockdown Tool disables this functionality. Customers who have retained the
+functionality but deployed the URLScan tool as discussed in Microsoft Security
+Bulletin MS02-018 are also protected against the vulnerability.
+
+CAUSE
+=====
+
+This vulnerability occurs because of an arithmetic error in the ISAPI extension
+that implements the HTR functionality. Specifically, the error lies in a
+function that enables data to be uploaded to a Web server through chunked
+encoding, and it causes IIS to allocate a buffer of the wrong size to hold
+incoming data, with the result that the data can overrun the end of the buffer.
+
+RESOLUTION
+==========
+
+ - Internet Information Services 5.0
+ - Internet Information Server 4.0
+
+Internet Information Services 5.0
+---------------------------------
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, click the following article number to view the article
+in the Microsoft Knowledge Base:
+
+   Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+Download Information:
+
+The following file is available for download from the Microsoft Download Center:
+
+   DownloadDownload the Q321599 package now
+   (http://www.microsoft.com/windows2000/downloads/security/q321599/default.asp)
+
+Release Date: June 12, 2002
+
+For additional information about how to download Microsoft Support files, click
+the following article number to view the article in the Microsoft Knowledge
+Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft scanned this file for viruses. Microsoft used the most current
+virus-detection software that was available on the date that the file was
+posted. The file is stored on secure servers that prevent any unauthorized
+changes to the file.
+
+You do not have to restart your computer after you apply this update. This update
+supports the following setup switches:
+
+   -?
+   Display the list of installation switches.
+
+   -u
+   Unattended mode.
+
+   -f
+   Force other programs to quit when the computer shuts down.
+
+   -n
+   Do not back up files for uninstallation.
+
+   -o
+   Overwrite OEM files without prompting.
+
+   -z
+   Do not restart when installation is complete.
+
+   -q
+   Quiet mode (no user interaction).
+
+   -l
+   List installed hotfixes.
+
+   -x
+   Extracts the files without running Setup.
+
+For example, to install the update without any user intervention, and then to not
+force the computer to restart, use the following command line:
+
+   q321599_w2k_sp4_x86_en -u -q -z
+
+File Information:
+
+The English version of this fix has the file attributes (or later) that are
+listed in the following table. The dates and times for these files are listed in
+coordinated universal time (UTC). When you view the file information, it is
+converted to local time. To find the difference between UTC and local time, use
+the Time Zone tab in the Date and Time tool in Control Panel.
+
+   Date         Time   Version        Size    File name and path
+   ----------------------------------------------------------------------------
+   16-May-2002  11:54  5.0.2195.5671  46,352  %Windir%\System32\inetsrv\Ism.dll
+
+NOTE: Because of file dependencies, this update may contain additional files.
+This update requires Windows 2000 Service Pack 2 (SP2) or Service Pack 1 (SP1).
+
+
+Internet Information Server 4.0
+-------------------------------
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem that is described in this article. Apply it only to
+computers that you determine are at risk of attack. Evaluate your computer's
+physical accessibility, network and Internet connectivity, and other factors to
+determine the degree of risk to your computer. See the associated Microsoft
+Security Bulletin
+(http://www.microsoft.com/technet/security/bulletin/ms02-028.asp) to help
+determine the degree of risk. This fix may receive additional testing. If your
+computer is sufficiently at risk, Microsoft recommends that you apply this fix
+now.
+
+To resolve this problem immediately, download the fix by clicking the download
+link later in this article or contact Microsoft Product Support Services to
+obtain the fix. For a complete list of Microsoft Product Support Services phone
+numbers and information about support costs, please visit the following
+Microsoft Web site:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are ordinarily incurred for support calls
+may be canceled, if a Microsoft Support Professional determines that a specific
+update will resolve your problem. The usual support costs will apply to
+additional support questions and issues that do not qualify for the specific
+update in question.
+
+Download Information:
+
+The following file is available for download from the Microsoft Download Center:
+
+   DownloadDownload the Q321599 package now
+   (http://www.microsoft.com/ntserver/nts/downloads/security/q321599/default.asp)
+
+Release Date: June 12, 2002
+
+For additional information about how to download Microsoft Support files, click
+the following article number to view the article in the Microsoft Knowledge
+Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft scanned this file for viruses. Microsoft used the most current
+virus-detection software that was available on the date that the file was
+posted. The file is stored on secure servers that prevent any unauthorized
+changes to the file.
+
+Installation Options:
+
+Follow these steps to avoid having to restart your computer:
+
+NOTE: Although you can avoid the need to restart your computer after applying
+this patch, the computer will not be considered patched and protected until
+after you restart the computer. Unlike in Windows 2000 (IIS 5), in Windows NT
+4.0 (IIS 4), the earlier DLLs are not automatically updated. Only take the steps
+to avoid a restart if you want to apply more than one patch before restarting,
+and you have to always perform a restart after these steps.
+
+1. Stop all IIS services.
+
+2. Install the patch with the hotfix by using the /z switch.
+
+3. Restart the IIS services.
+
+For additional information about the switches that you can use to apply this
+update, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q184305 How to Install and Remove Hotfixes with Hotfix.exe
+
+For example, the following command line installs the update without any user
+intervention, and then it does not force the computer to restart:
+
+   q321599i -q -m -z
+
+File Information:
+
+The English version of this fix has the file attributes (or later) that are
+listed in the following table. The dates and times for these files are listed in
+coordinated universal time (UTC). When you view the file information, it is
+converted to local time. To find the difference between UTC and local time, use
+the Time Zone tab in the Date and Time tool in Control Panel.
+
+   
+
+   Date         Time   Version    Size    File name and path
+   --------------------------------------------------------------------------
+   30-Apr-2002  07:34  4.2.776.1  54,560  %Windir%\System32\inetsrv\Ism.dll
+
+NOTE: Because of dependencies, this update may contain additional files. This
+update requires Windows NT 4.0 Service Pack 6a (SP6a).
+
+
+
+STATUS
+======
+
+Microsoft has confirmed that this problem may cause a degree of security
+vulnerability in the Microsoft products that are listed at the beginning of this
+article. This problem was first corrected in Windows 2000 Service Pack 3.
+
+Additional query words: kbIISCom
+
+======================================================================
+Keywords          : kbSecurity kbCOMIS kbWinNT400PreSP7Fix kbWin2000PreSP3Fix KbSECVulnerability KbSECBulletin KbSECHack kbWin2000sp3fix 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

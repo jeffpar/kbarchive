@@ -1,0 +1,64 @@
+DOCUMENT:Q132228  15-FEB-2000  [foxpro]
+TITLE   :Why Combobox Style Properties Have Discontinous Values
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Combo box Style property presets have discontinuous numeric values.
+
+MORE INFORMATION
+================
+
+Choices are "0 - Dropdown Combo" and "2 - Dropdown List" when you might expect
+"0 - Dropdown Combo" and "1 - Dropdown List" instead.
+
+This is by design. Microsoft did this for Visual Basic compatibility. Visual
+Basic has three settings for this value. The Simple Combo, which is setting 1 in
+Visual Basic, is not available in Visual FoxPro.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Place a combo box control on a form.
+
+2. Double-click the Style property to cycle through the preset options.
+
+REFERENCES
+==========
+
+For more information about The Style Property, search for Style Property in the
+Visual FoxPro Help menu.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

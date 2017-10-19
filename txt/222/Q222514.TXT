@@ -1,0 +1,73 @@
+DOCUMENT:Q222514  08-MAY-1999  [winnt]
+TITLE   :Errors Running Federal Express FedEx Ship Program
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.5
+OPER/SYS:
+KEYWORDS:kb3rdparty kbenv kberrmsg kbnetwork kbtool kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Small Business Server version 4.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to use the Federal Express FedEx Ship program on your Microsoft
+Windows 95-based client computer, you may receive the following error message:
+
+   Registration failed.
+   Communication error:
+   Protocol or network error.
+
+However it has been reported, that when used on a Windows 95 client that has
+Modem Sharing installed, it will generate an error that states the following
+when it attempts to dial out:
+
+CAUSE
+=====
+
+This problem can occur if you try to use the Federal Express FedEx Ship program
+on a Windows 95-based client using modem sharing in a Small Business Server
+(SBS) environment.
+
+RESOLUTION
+==========
+
+To work around this problem, use the FedEx Ship program with Windows NT-based
+clients in the SBS environment, not on the actual SBS server.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+Federal Express makes an automated shipping program called "FedEx Ship", used to
+automate the shipping process.
+
+Additional query words: smallbiz
+
+======================================================================
+Keywords          : kb3rdparty kbenv kberrmsg kbnetwork kbtool kbui 
+Technology        : kbAudDeveloper kbSBServSearch kbSBServ450
+Version           : winnt:4.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

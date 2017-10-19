@@ -1,0 +1,75 @@
+DOCUMENT:Q120464  12-DEC-1999  [homemm]
+TITLE   :Scenes 2.0: SPACEBAR plus ENTER Causes GP Fault
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Scenes (all collections), version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Scenes 2.0 may generate the following error message when you hold down the
+SPACEBAR and press ENTER to edit a collection in the "Edit an existing
+collection" Wizard:
+
+   Application Error: SCENES caused a General Protection Fault in module
+   MSSCMN.DLL at 0004:7CB4.
+
+RESOLUTION
+==========
+
+Microsoft has confirmed this to be a problem in Scenes version 2.0. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Launch Scenes.
+
+2. Choose Scenes Wizards.
+
+3. Select Edit an existing collection.
+
+4. Tab over to Edit this collection.
+
+5. Hold down the SPACEBAR and press ENTER.
+
+6. Two Scenes Wizard windows will appear. Close both.
+
+This behavior occurs in other Windows-based applications. For example, in Control
+Panel, holding down the SPACEBAR and pressing ENTER on the Edit pattern button
+causes two windows to pop up.
+
+Additional query words: close gp gpf msscenes screen save screensaver tab space
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbScenesSearch kbScenes200
+Version           : WINDOWS:2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

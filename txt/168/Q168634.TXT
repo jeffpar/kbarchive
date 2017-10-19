@@ -1,0 +1,76 @@
+DOCUMENT:Q168634  04-DEC-2001  [ssafe]
+TITLE   :INFO: When -d Switch of Analyze Deletes Files
+PRODUCT :Microsoft SourceSafe
+PROD/VER::4.0,4.0a,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbSSafe400 kbSSafe500 kbSSafe600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+ - Microsoft Visual SourceSafe, 16-bit, for Windows, versions 4.0, 4.0a 
+ - Microsoft Visual SourceSafe, 32-bit, for Windows versions 4.0, 4.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can use the -d switch on Analyze.exe to delete unnecessary files from the
+database. This switch will not delete all unnecessary files, only those that
+meet a certain condition.
+
+MORE INFORMATION
+================
+
+Under most circumstances, when you delete a file from a SourceSafe project it
+will delete the associated file pair from the SourceSafe database (usually the
+VSS\DATA directory.)
+
+However, if a file is branched to another project and then deleted, SourceSafe
+does not delete the associated file pair from the database because it needs
+those files to maintain the history of the branched version.
+
+Even when the branched version is subsequently deleted, its associated file pair
+is not deleted.
+
+The only time the -d switch on Analyze will delete files from the SourceSafe
+database is when it detects a file that was involved in a branch at one point,
+and no branched versions of the file are now active (not deleted) in the project
+tree.
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q190881 SAMPLE: Analyze6.exe Utility for Visual SourceSafe
+
+(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by David de
+Groot, Microsoft Corporation
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400 kbSSafe500 kbSSafe600 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600 kbSSafe400 kbSSafe400a kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch
+Version           : :4.0,4.0a,5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

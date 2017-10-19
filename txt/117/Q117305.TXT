@@ -1,0 +1,68 @@
+DOCUMENT:Q117305  10-NOV-1999  [win3x]
+TITLE   :Err Msg: TCP Unloaded with Madge Smart Ringnode Driver
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You receive the following message during the boot process before starting
+Windows for Workgroups version 3.11 with the Madge 16/4 Smart Ringnode Token
+Ring adapter installed:
+
+   TCP Unloaded
+
+CAUSE
+=====
+
+This problem occurs when running the LOAD TCPIP line in the AUTOEXEC.BAT file.
+Several versions of Madge drivers for the 16/4 Smart Ringnode Token Ring adapter
+are available. The SMARTND.DOS driver versions 1.25 and 1.37 may have problems
+running MS-TCP/IP stack in Windows for Workgroups 3.11.
+
+RESOLUTION
+==========
+
+To correct this problem, use the SMARTND.DOS driver version 1.5. To obtain this
+driver file, connect to the Madge bulletin board service (BBS) at (408)
+955-0262, or contact Madge Technical Support.
+
+
+MORE INFORMATION
+================
+
+The products included here are manufactured by Madge Networks, Inc., a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product s performance or reliability.
+
+Additional query words: 3.11 setup ring node
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

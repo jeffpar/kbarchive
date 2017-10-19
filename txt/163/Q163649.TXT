@@ -1,0 +1,63 @@
+DOCUMENT:Q163649  07-SEP-2001  [word97]
+TITLE   :WD97: Mailing Label Wizard Prints Only in Column 1
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbprint kbualink97 kbtemplate
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When use the Mailing Label Wizard to print a single label, Word prints the label
+in column 1 (not in the row and column of the label sheet you specified).
+
+WORKAROUND
+==========
+
+Do not use the Mailing Label Wizard when you want to print just one label.
+Instead, use the following procedure to print a single label:
+
+1. On the Tools menu, click Envelopes And Labels.
+
+2. Click the Labels tab.
+
+3. Under Address, type the label address.
+
+4. Click Options and select the label type you are printing to, and then click
+   OK.
+
+5. On the Labels tab, under Print, click Single Label. Set the Row and Column
+   settings to the correct label on your label sheet you want to print.
+
+6. Click Print.
+
+Additional query words: 8.0 word8 word97
+
+======================================================================
+Keywords          : kbprint kbualink97 kbtemplate 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

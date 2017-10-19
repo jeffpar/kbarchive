@@ -1,0 +1,55 @@
+DOCUMENT:Q250770  13-SEP-2001  [crossnet]
+TITLE   :Problems Viewing Web Page that Starts a New Instance of Browser
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:WINDOWS:5,5.01; :
+OPER/SYS:
+KEYWORDS:kbinterop msient
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Explorer versions 5, 5.01 for Windows NT 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you view a Web page that starts another instance of Internet Explorer, your
+computer may stop responding (hang).
+
+CAUSE
+=====
+
+This problem can occur if you previously installed the Microsoft Script Editor
+component of Microsoft FrontPage during Office 2000 Setup, and the Script Editor
+debugger is enabled.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Explorer 5.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop msient 
+Technology        : kbIEsearch kbZNotKeyword2 kbIENT400Search kbIE500Search kbZNotKeyword3 kbIE500WinNT400 kbIE501WinNT400
+Version           : WINDOWS:5,5.01; :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

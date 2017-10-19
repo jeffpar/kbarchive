@@ -1,0 +1,58 @@
+DOCUMENT:Q197203  14-NOV-2000  [word97]
+TITLE   :WD97: Can't Recover Password-Protected Document If Password Lost
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbpolicy kbdta word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+In Microsoft Word, a password-protected document cannot be recovered if the
+password for that document is lost or forgotten. Microsoft does not offer a
+service to retrieve documents to which passwords have been added, nor does it
+offer any information regarding such services or processes.
+
+MORE INFORMATION
+================
+
+This policy is to prevent any damages to Microsoft Word users who rely on the
+security that their passwords provide. To recover a password-protected document,
+you must remember the assigned password.
+
+NOTE: Remember that passwords are case sensitive. If you used a combination of
+uppercase and lowercase letters when you set up your password, you need to use
+the same combination when you use the password to access your document. Also,
+before you type your password, verify that CAPS LOCK is not active.
+
+Additional query words: protect protection policy
+
+======================================================================
+Keywords          : kbpolicy kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

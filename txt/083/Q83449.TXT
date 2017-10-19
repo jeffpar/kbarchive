@@ -1,0 +1,208 @@
+DOCUMENT:Q83449  09-JAN-2000  [win95x]
+TITLE   :Windows 3.1 Serial Communications Q & A Part 1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains specific questions and answers regarding the Microsoft
+Windows operating system version 3.1.
+
+MORE INFORMATION
+================
+
+1. Q. How does Windows 3.1 improve serial communications over Windows 3.0?
+
+   A. Most of the serial communications problems experienced by users of Windows
+   3.0 were corrected in Windows 3.1. The following is a summary of the
+   changes:
+
+   a. COM port addresses and IRQs are configurable in the Control Panel. Windows
+      3.0 uses preset address values for serial ports. Windows 3.1 allows any
+      port address and IRQ. This corrects problems using ports COM3 and COM4
+      (Windows 3.0 uses non-standard default values).
+
+      NOTE: If the communication settings in Terminal do not match those
+      specified in Control Panel, Terminal's settings take precedence. The
+      Advanced port settings, however, affect all applications including
+      Terminal. Therefore, if you experiencing problems when using Terminal,
+      verify the I/O base address and IRQ settings in Control Panel.
+
+   b. Faster bit rates. Windows-based applications can now set speeds higher
+      than 19.2 kilobits per second (Kbps) and up to 57.6 Kbps. Contact the
+      application manufacturer for an update to support this new feature.
+
+   c. Reduced system overhead. Windows 3.1 is fine tuned for better overall
+      performance, including faster throughput and fewer errors during serial
+      communications. A new driver interface allows Windows to pass data in
+      blocks to the driver, rather than one character at a time. See the Windows
+      3.1 Device Development Kit (DDK) for details.
+
+   d. 16550 UART support for Windows-based applications. This is described in
+      detail below.
+
+   e. EnableCommNotification API. Windows-based applications can register to be
+      notified by a window message when serial port events occur, rather than
+      performing constant polling. (Constant polling reduces overall system
+      performance.)
+
+   f. Serial ports on the same IRQ can be used in rotation. On most personal
+      computers, serial ports that use the same IRQ cannot be used
+      simultaneously; however, Windows 3.0 sometimes prevented them from being
+      used in rotation, one after another. This problem was corrected in Windows
+      3.1.
+
+   g. Full duplex improvements. Some users experienced lockups during
+      full-duplex transfers at fast bit rates with Windows 3.0. These problems
+      were corrected in Windows 3.1.
+
+2. Q. How many serial ports does Windows support?
+
+   A. The Windows 3.1 communications driver provides access to standard MS-DOS
+   serial ports (COM1, COM2, COM3, and COM4). Third- party serial adapters with
+   more than four ports can be used in Windows with special drivers available
+   from their manufacturers. Windows allows a maximum of nine serial ports
+   (COM1-COM9).
+
+3. Q. What base addresses and IRQs does Windows use for serial ports?
+
+   A. Windows must know the base I/O addresses and interrupt request lines (IRQs)
+   of the serial ports on a personal computer. Windows determines this as
+   follows:
+
+   a. Windows looks in the BIOS data area (40:0) first for port base addresses.
+      Most personal computers specify address values here for built-in COM
+      ports, but not for add-in adapters. If Windows finds an address here, it
+      uses this, rather than any other defaults or settings.
+
+   b. Serial ports commonly use the following base I/O address and IRQ values:
+
+         Port     Address  IRQ
+         ----     -------  ---
+         COM1 *    03F8      4
+         COM2      02F8      3
+         COM3      03E8      4
+         COM3(PS/2)3220      3
+         COM4      02E8      3
+
+      *If the BIOS data area specifies the COM1 address as 02F8, Windows uses
+      IRQ3 instead of IRQ4.
+
+   c. Control Panel Ports Advanced dialog box. The addresses and IRQs of ports
+      can be identified, although they are not specified, in the BIOS data area.
+      Addresses and IRQs are modified by opening the Control Panel, choosing the
+      Ports icon, and selecting the Advanced button. Here you can set the
+      COMxBase and COMxIRQ values in the [386Enh] section of SYSTEM.INI file.
+      IRQ values 8-15 are allowable entries. Setting the port address in this
+      dialog box does not override a BIOS data area value.
+
+      For more information on COMxBase and other SYSTEM.INI file switches, refer
+      to the SYSINI.WRI file in the WINDOWS directory.
+
+4. Q. Windows 3.0 did not recognize the COM3 and the COM4 ports. The COM3Base
+   and COM4Base settings in SYSTEM.INI have been changed; however, this has not
+   helped. Is this problem fixed in Windows 3.1?
+
+   A. Yes. The problem in Windows 3.0 is that the communications driver
+   (COMM.DRV) and virtual communications device (VCD) weren't using the same
+   values. Now, both modules use the specified values. The SYSTEM.INI file
+   should no longer be modified manually. Instead, use the Advanced dialog box
+   in the Control Panel (accessed through the Ports icon). These settings apply
+   to both standard and 386 enhanced modes.
+
+5. Q. When can the same IRQ be used for different serial ports?
+
+   A. In general, two devices should not be used simultaneously with the same
+   IRQ. For example, if COM1 and COM3 ports both use IRQ4 (the common value),
+   problems arise if a serial mouse is on COM1 and a modem is on COM3.
+
+   Some personal computers and serial port adapters support IRQ sharing (the
+   ability to have multiple ports using the same IRQ). This is common on
+   MicroChannel (MCA) bus architecture computers, such as IBM PS/2s and some
+   EISA bus computers. Windows 3.1 fully supports IRQ sharing serial adapters.
+   To use them correctly, be sure that the IRQ values have been set correctly in
+   the Advanced dialog box. Also, if the computer does not have MCA or EISA
+   architecture, the setting "COMIrqSharing=TRUE" must be set in the [386Enh]
+   section of the SYSTEM.INI file. For more information on COMIrqSharing and
+   other SYSTEM.INI switches, refer to the SYSINI.WRI file in the WINDOWS
+   directory.
+
+6. Q. Problems occur when using COM4. What's wrong?
+
+   A. Check the settings in the Advanced dialog box in the Control Panel
+   (accessed through the Ports icon) to make sure that Windows knows the correct
+   port address value and IRQ settings for the COM4 port. The address for COM4
+   is not usually specified in the BIOS data area of most computers because it
+   is not a standard port.
+
+   Many serial adapters use a COM4 default base address of 02E8. Unfortunately,
+   this address value conflicts with some peripherals, including 8514/A video
+   adapters and certain network adapters. To work around this problem,
+   reconfigure one of the peripheral adapters to use a different address. If the
+   COM4 address is changed, be sure to reset the address value for COM4 in the
+   Advanced dialog box.
+
+7. Q. What is "device contention"?
+
+   A. As a multitasking operating system, Windows must handle simultaneous
+   requests for devices, such as COM ports, from different applications. "Device
+   contention" refers to the rules Windows uses to determine how applications
+   receive control of a device. The 386 Enhanced dialog of the Control Panel
+   allows the specification of how COM ports are allocated to applications.
+
+   The Always Warn option means that Windows displays a dialog box asking whether
+   or not an MS-DOS application should receive control of a COM port that it
+   detects may be currently in use by another application.
+
+   The Never Warn option means that Windows always provides COM port access to
+   MS-DOS applications, even if it detects that this port may currently be in
+   use by another application.
+
+   The Idle (in sec.) option means that Windows displays a dialog asking whether
+   or not an MS-DOS application should receive control of a COM port that it
+   detects was in use as recently as the number of seconds specified. Otherwise,
+   Windows provides COM port access without a warning.
+
+8. Q. With Windows 3.0, use of different serial ports on the same IRQ in
+   rotation was not possible. Was this problem corrected in Windows 3.1?
+
+   A. Yes. Serial ports that use the same IRQ (for example, COM1/3 on IRQ4 and
+   COM2/4 on IRQ3) may be used one after the other, but not at the same time
+   (unless the serial adapter supports IRQ sharing). However, some MS-DOS
+   communication applications may leave a serial port in a state that prevents
+   Windows from using its IRQ for other ports. The "stuck" communication IRQ may
+   be reset by opening and closing the original COM port with a Windows
+   communication application, such as Terminal.
+
+Additional query words: 3.10 COMMQ&A winfest
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

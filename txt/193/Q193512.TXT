@@ -1,0 +1,149 @@
+DOCUMENT:Q193512  03-MAY-2001  [visualc]
+TITLE   :PRB: Can Not Initialize the Debugging Subsystem
+PRODUCT :Microsoft C Compiler
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbide kbOAK kbVC500 kbOSWinCE210
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE 2.10 Enhancement Pack for Windows CE Embedded Toolkit for Visual C++ 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Attempting to debug a Windows CE 2.1 application using the CE Shell utility with
+the Developer Studio IDE debugger causes the following error:
+
+   Cannot Initialize the Debugging System
+
+CAUSE
+=====
+
+The debugger can not communicate with the Cemon.exe process on the target
+device.
+
+RESOLUTION
+==========
+
+When using the IDE to debug through the CE Shell utility, the IDE verifies and
+downloads the application and the Cemon.exe module to the target device, and
+starts them. The IDE then communicates with the Cemon.exe process via a TCP/IP
+connection. This additional connection is required regardless of the connection
+type being used for the CE Shell utility.
+
+To determine the cause of the problem, troubleshoot your system by using these
+steps:
+
+1. Ensure that the system's _FLATRELEASEDIR environment variable is pointing to
+   the release directory that contains the operating system files. The CE Shell
+   utility must use the same directory.
+
+2. Ensure that there is plenty of disk space on the disk volume containing the
+   _FLATRELEASEDIR directory. The application and Cemon.exe must be copied into
+   this directory in order for the debug session to be established.
+
+3. Ensure that the CE Shell connection is up. The command window that contains
+   the CE Shell utility session should be showing Windows CE> if a connection
+   has been established. If this is not working, some possible problems are:
+
+    - Bad, incorrect, or loose cable.
+    - Cable on wrong port.
+    - Incorrect or misconfigured target device hardware.
+    - Incorrect CE Shell command line.
+
+   See the online documentation for proper configuration of hardware and use of
+   the CE Shell command line.
+
+4. Ensure the CE Shell utility is communicating properly with the target device.
+   This can be done by executing a simple command that requires communications
+   with the target device. An example is "gi proc" (without the quotation
+   marks), which lists all of the running processes on the target device. If the
+   command does not return a response, then you may have one of the following
+   problems:
+
+    - Bad or loose cabling.
+    - Operating system hang.
+
+   The demonstration operating system projects should operate reliably. If you
+   experience operating system hangs on your own project, use the kernel
+   debugging tools to resolve the problem before using the IDE debugger.
+
+5. Verify that the CE Shell utility is referencing the release directory
+   correctly. This can be done by verifying that Cemon.exe is in the release
+   directory, then running Cemon.exe from the CE Shell with the following
+   command line: s cemon.exe. If this runs successfully, kill the process before
+   continuing. If this fails, double-check all of the preceding steps.
+
+   a. For Serial TCP/IP Connection:
+
+   Ensure that a Remote Networking connection has been established. If this
+   connection is established, the target device will have a "Connected to..."
+   program window for the connection showing "Connected" status. With
+   shell-enabled samples, you can press CTRL+ESC on the target device to get a
+   list of program windows. If you can not establish a connection, it may be due
+   to one of the following problems:
+
+       - Bad, incorrect, or loose cable.
+       - Cable on wrong port.
+       - Incorrect or misconfigured hardware (target or device).
+       - Incorrect Remote Networking parameters.
+       - Incorrect Windows CE Services parameters.
+
+   b. For Ethernet TCP/IP Connection:
+
+   Ensure that the target device and host can communicate by attaching via the
+   Windows CE Network Redirector or one of the sample client/server TCP/IP
+   programs. If you can not establish a connection, it may be due to one of the
+   following problems:
+
+       - Cable on wrong adapter.
+       - Incorrect or misconfigured hardware (target or device).
+       - Incorrect TCP/IP parameters.
+       - General network failure.
+
+6. For ethernet, ensure that the following registry key contains the name of the
+   host machine:
+
+   [HKEY_CURRENT_USER]\Software\Microsoft\Cemon
+
+7. Ensure that Cemon.exe is not already running on the target device. By
+   executing the "gi proc" (without the quotation marks) command from the CE
+   Shell utility, you can determine whether Cemon.exe is running; it should not
+   be running when a debugger session has not been established. If Cemon.exe is
+   running, use the kp command to kill the process(s).
+
+If all of these items verify correct, the IDE should be able to establish a
+debugging session.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbide kbOAK kbVC500 kbOSWinCE210 
+Technology        : kbAudDeveloper kbWinCESearch kbWinCEEnh210ETKVC500
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,99 @@
+DOCUMENT:Q234973  22-APR-2001  [vbwin]
+TITLE   :PRB: Error 80042114 Web Server Doesn't Support Selected Provider
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbDeployment kbVBp600 kbWebClasses kbGrpDSASP kbDSupport kbiis400 kbiis500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+ - Microsoft Internet Information Server 4.0 
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When deploying to a Web server using the Package and Deployment Wizard (PDW),
+you see the following error:
+
+   Unexpected error number 80042114 has occurred: The Web server you selected
+   does not indicate support for the service provider you selected.
+
+CAUSE
+=====
+
+This error occurs for one or more of the following reasons:
+
+ - You have not installed Microsoft Posting Acceptor 2.0. This is the most
+   common reason.
+
+ - You have selected FTP as the Web publishing protocol when you are using an
+   HTTP address as a destination URL.
+
+ - You are missing a <META> tag at the top of your default document
+   specified for your root Web. The PDW requests the default document for your
+   root Web and looks for the <META> tag in order to determine where your
+   PostInfo.asp file is located.
+
+RESOLUTION
+==========
+
+Take the following actions, as necessary:
+
+ - Install Posting Acceptor 2.0.
+
+ - Make sure that the destination URL protocol matches the selected Web
+   publishing protocol.
+
+ - Check your default document to see that it contains the <META> tag
+   shown below and that it is the first line in your document:
+
+   <META name="postinfo" content="/scripts/postinfo.asp">
+
+STATUS
+======
+
+This behavior is by design.
+
+REFERENCES
+==========
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+   Q242767 INFO: Deploying WebClasses with the Package and Deployment Wizard
+   (PDW)
+
+   Q194296 HOWTO: Debug PDW Internet Deployment Issues
+
+   Q199017 HOWTO: Deploy Visual Basic IIS Applications with PDW
+
+Additional query words: webclass
+
+======================================================================
+Keywords          : kbDeployment kbVBp600 kbWebClasses kbGrpDSASP kbDSupport kbiis400 kbiis500 
+Technology        : kbVBSearch kbiisSearch kbAudDeveloper kbZNotKeyword6 kbiis500 kbiis400 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :4.0,5.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

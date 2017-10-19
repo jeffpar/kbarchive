@@ -1,0 +1,58 @@
+DOCUMENT:Q198783  25-APR-1999  [exchange]
+TITLE   :XCON: Receipt Behavior with Message Journaling
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Message Journaling is a feature included with Exchange Server 5.5 Service Pack
+1. The behavior is documented in the Readme file included with the service pack.
+The documentation is not very clear about the behavior of this feature with
+read, non-read, delivery, and non-delivery receipts.
+
+Message Journaling will journal read receipts but not delivery receipts. When an
+Exchange Server mailbox or public folder is used as the journal recipient, no
+read or delivery receipts will be generated to the original sender from the
+journal recipient.
+
+MORE INFORMATION
+================
+
+This is by product design. For customers that use a custom recipient (SMTP,
+X.400, MS Mail, and so on) for the journal recipient, that foreign system may
+generate receipt notification to the user, and as such, may be alarming to the
+user.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

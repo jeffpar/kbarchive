@@ -1,0 +1,70 @@
+DOCUMENT:Q127073  31-JUL-2001  [sms]
+TITLE   :Access 2.0 Err Msg with SMS: Can't Find Wizard, or There is...
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbDatabase smsdatabase
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you install Microsoft Access 2.0 as a Shared Application package in
+Microsoft Systems Management Server version 1.0 using the supplied ACS200.PDF,
+the Access Wizards are not installed. If you choose a Wizard, the following
+error message appears:
+
+   Can't find Wizard, or there is a system error in the Declarations section of
+   an Access Basic module. Check the [libraries] section of msacc20.ini for
+   required libraries, and compile all Access Basic modules in the database.
+
+WORKAROUND
+==========
+
+To work around this problem, use a text editor such as Notepad and add the
+following entries to the [LIBRARIES] section of the MSACC20.INI file:
+
+   " wzlib.mda=rw
+   wzTable.mda=rw
+   wzQuery.mda=rw
+   wzfrmrpt.mda=rw
+   wzbldr.mda=rw " (without the quotation marks)
+
+NOTE: You must add the above entries for each client installation.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.0. This problem was corrected in Systems Management Server version
+1.1.
+
+Additional query words: prodsms sms
+
+======================================================================
+Keywords          : kbnetwork kbDatabase smsdatabase 
+Technology        : kbSMSSearch kbSMS100
+Version           : winnt:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

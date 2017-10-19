@@ -1,0 +1,95 @@
+DOCUMENT:Q43993  06-MAY-2001  [utilities]
+TITLE   :How to Flush the Keyboard Typeahead Buffer
+PRODUCT :Microsoft Programming Utilities
+PROD/VER::1.0,1.5,5.1,6.0,6.0a,6.0ax; MS-DOS:7.0
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft C for OS/2, versions 5.1, 6.0, 6.0a 
+ - Microsoft C/C++ for MS-DOS, version 7.0 
+ - Microsoft Visual C++, versions 1.0, 1.5 
+ - Microsoft C for MS-DOS, versions 5.1, 6.0, 6.0a, 6.0ax 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To flush the BIOS keyboard typeahead buffer, the MS-DOS Interrupt 21 Function
+0CH may be used. This function clears the keyboard typeahead buffer and then
+invokes a reading function specified in the AL register. The AL register can be
+0x01, 0x06, 0x07, 0x08, or 0x0A to specify a valid reading function. If you do
+not intend to read after flushing the buffer, you may specify an invalid number
+in AL.
+
+Another method of flushing the BIOS buffer is to call the console I/O function
+getch() until the function kbhit() becomes false. This method is demonstrated in
+the program below and has the advantage of being usable under OS/2 as well as
+MS-DOS.
+
+MORE INFORMATION
+================
+
+The buffer implemented by the C run-time functions for the stream "stdin" is
+different from the BIOS keyboard typeahead buffer. To clear the buffer for
+stdin, use the function fflush(). However, this method will not flush the BIOS
+buffer. To be totally flushed, you must both flush the BIOS buffer as described
+above AND call fflush for stdin.
+
+The following sample program is an example:
+
+Sample Code
+-----------
+
+   /* Compile options needed: none
+   */ 
+   #include <stdio.h>
+   #include <time.h>
+   #include <conio.h>
+   #include <dos.h>
+   void main (void)
+   {
+   time_t start, work ;
+   char str [50] ;
+   puts ("type for getchar(). Go to stdin's buffer.") ;
+   // user can type more than one character and an Enter.
+   getchar () ;
+   puts ("Type fast, 5 seconds. Go to BIOS buffer.") ;
+   // user can type anything including multiple Enters.
+   time (&start) ;
+   work = start ;
+   while ( (work - start) < 5 ) time (&work) ;
+   bdos (0xC, 0, 0) ;       // clear BIOS keyboard buffer
+   //  Alternative method:
+   //  while (kbhit()) getch();
+   fflush (stdin) ;         // clear stdin's buffer
+   puts ("Should be waiting again.") ;
+   gets (str) ;
+   puts (str) ;
+   }
+
+Additional query words: kbinf 5.10 6.00 6.00a 6.00ax 7.00 1.00 1.50
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbVCsearch kbAudDeveloper kbPTProdChange kbvc150 kbvc100 kbCCompSearch kbZNotKeyword3 kbCComp510DOS kbCComp600DOS kbCComp600aDOS kbCComp600axDOS kbCComp510OS2 kbCComp600OS2 kbCComp600aOS2 kbCVC700DOS
+Version           : :1.0,1.5,5.1,6.0,6.0a,6.0ax; MS-DOS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

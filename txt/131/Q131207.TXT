@@ -1,0 +1,65 @@
+DOCUMENT:Q131207  08-AUG-2001  [winnt]
+TITLE   :WINS Manager Fails to Add Static Entries
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Windows NT 3.5 WINS Manager on a computer running Windows NT
+Workstation 3.51, you cannot add or edit static entries and cannot enter any IP
+addresses.
+
+CAUSE
+=====
+
+The files are incompatible.
+
+This situation occurs when you copied the files required to do WINS
+administration from the Windows NT 3.5 Server compact disc to the computer
+running Windows NT Workstation 3.5, and then subsequently upgraded to Windows NT
+3.51. The WINS manager files are not upgraded when you upgrade a computer
+running Windows NT Workstation.
+
+RESOLUTION
+==========
+
+To correct this problem, manually expand and copy the following files from the
+Windows NT Server 3.51 compact disc to the %SYSTEMROOT%\SYSTEM32 directory:
+
+   winsadmn.exe
+   winsrpc.dll
+   winsadmn.hlp
+   ipadrdll.dll
+
+Additional query words: prodnt admin mappings
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNTW351search kbWinNTW351
+Version           : 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

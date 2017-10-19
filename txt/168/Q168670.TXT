@@ -1,0 +1,85 @@
+DOCUMENT:Q168670  19-DEC-1999  [exchange]
+TITLE   :XFOR: Err Msg: cc:Mail Connector Event ID 59
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are running the Microsoft Exchange Connector for Lotus cc:Mail, you may
+find that messages are stuck in MTS-OUT queue of the connector store. As a
+result, messages destined to cc:Mail do not go through, but messages flow fine
+from cc:Mail to Exchange Server. In the application log, you receive the
+following error message:
+
+   Event ID: 59 Source: MSExchangeCCMC Category: General
+   Lotus cc:Mail IMPORT from file *.ccm returned result code 1. Program
+   did not complete successfully.
+
+This is a generic error message from the cc:Mail import program. You may notice
+there are files in the Exchsrvr\Ccmcdata\Submit directory.
+
+CAUSE
+=====
+
+The Exchange service account does not have sufficient permission to access the
+cc:Mail Post Office database. If the cc:Mail Post Office database is located on
+a Novell NetWare server and Microsoft Gateway Services for NetWare (GSNW) is not
+enabled, you must created service account on the NetWare server with the
+identical account information and password. The service account should also has
+supervisor equivalent right on the database.
+
+To verify whether the issue is due to permission, you can move the cc:Mail Post
+Office database to the Windows NT computer where Exchange Server is running.
+
+RESOLUTION
+==========
+
+To resolve this problem:
+
+ - Grant appropriate trustee right for Exchange Service Account from NetWare.
+
+MORE INFORMATION
+================
+
+Inbound mail (from cc:MAIL to Exchange) works fine because Exchange Server only
+reads files and writes to Windows NT. But for outbound mail (when Exchange
+Server writes to cc:Mail on netWare), the service account does not have
+sufficient rights.
+
+cc:Mail is manufactured by Lotus, a vendor independent of Microsoft; we make no
+warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

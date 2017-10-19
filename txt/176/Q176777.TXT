@@ -1,0 +1,101 @@
+DOCUMENT:Q176777  18-JUN-1999  [foxpro]
+TITLE   :FIX: Multi-Use OLE .Exe File Not Releasing Memory
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a
+OPER/SYS:
+KEYWORDS:kbole kbvfp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use a multi-use OLE out-of-process server (.exe), memory is not
+released in the process until all of the objects have been released.
+
+RESOLUTION
+==========
+
+When an OLE .exe file is going to be used for long periods of time without the
+release of the last object you can use the following workaround:
+
+1. Build two OLE .exe files with different GUIDs and place them on the computer.
+   NOTE: To generate a different GUID for the second instance of the OLE .exe,
+   select the "Regenerate OLE Server Ids" option when you build the Visual
+   FoxPro project.
+
+2. In the client, have a procedure that runs before instantiating the object
+   that checks the current system date and time.
+
+3. When you switch from one server to the other, you release all instances of
+   the OLE server you are switching from. Perform this switch at regular
+   increments to minimize the effect of the OLE server holding the memory.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+In a multi-use out-of-process OLE server, memory usage increases with each
+additional instantiation of an object or class in the server. When you release
+these class instantiations, memory usage does not decrease until the last object
+is released. Memory then decreases incrementally and the .exe file unloads from
+memory.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create and build an out-of-process (.exe) multi-use OLE server in Microsoft
+   Visual FoxPro.
+
+   NOTE: To create a Multi-Use OLE server, click the Servers tab in the Project
+   Information dialog box and select Multi Use for the Instance option.
+
+2. In Microsoft Visual FoxPro create an instance of the OLE server.
+
+3. Using a tool like Microsoft Windows NT Task Manager, view the memory usage
+   for the OLE .exe file. In Microsoft Windows NT, this is located on the
+   Processes tab of the Task Manager.
+
+4. Create additional instances of the object and note the increased memory usage
+   of the OLE .exe file.
+
+5. Release instances of the object one by one and note that the memory usage
+   does not decrease.
+
+6. Release the last instance of the OLE server. Notice the memory decreases and
+   the .exe file exits from the Processes list.
+
+Additional query words: COM DCOM
+
+======================================================================
+Keywords          : kbole kbvfp 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP500a
+Version           : WINDOWS:5.0,5.0a
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

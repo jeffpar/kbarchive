@@ -1,0 +1,55 @@
+DOCUMENT:Q123180  12-JUN-2001  [sna]
+TITLE   :Large File Download Fails Over Eicon WAN Services
+PRODUCT :Microsoft SNA Server
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server for Windows NT 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Downloading a 30MB host file fails after 96,000 records when you use the
+Passport Communications RJE Print Manager product (either the MS-DOS or Windows
+NT versions) over SNA Server 2.0.
+
+SNA Server is configured with an SDLC link supported by Eicon WAN Services for
+Windows NT version 3 release 1. The RJE download problem coincides with the
+Eicon SDLC connection being dropped.
+
+RESOLUTION
+==========
+
+Upgrade to Eicon WAN Services for Windows NT version 3 release 1a (v3r1a).
+
+NOTE: Eicon has a separate update for Windows NT 3.5.
+
+Additional query words: prodsna 2.00 2.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : winnt:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

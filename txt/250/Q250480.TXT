@@ -1,0 +1,103 @@
+DOCUMENT:Q250480  30-MAR-2000  [winnt]
+TITLE   :Performance Counters Provided with Metadirectory Services
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services, version 2.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the performance counters provided by Microsoft Metadirectory
+Services (MMS) to be used with Performance Monitor in Microsoft Windows NT
+4.0-based computers, and with System Monitor in Microsoft Windows 2000-based
+computers.
+
+MORE INFORMATION
+================
+
+The following performance counters are provided by MMS:
+
+ - Monitor all client connections.
+
+ - HTTP client connection.
+
+ - HTTP searches.
+
+ - LDAP client connections.
+
+ - LDAP searches.
+
+ - Outgoing LDAP messages.
+
+ - TCP bytes received.
+
+ - TCP bytes sent.
+
+ - Total HTTP searches.
+
+ - Total outgoing LDAP messages and Zoomit Services Development Environment
+   (ZSDE) client connections.
+
+To view the performance counters provided by MMS:
+
+Using Performance Monitor in Windows NT 4.0-Based Computers
+-----------------------------------------------------------
+
+1. Click Start, click Run, type "perfmon" (without the quotation marks), and
+   then click OK.
+
+2. On the Edit menu, click "Add to Chart".
+
+3. On the Objects dialog box, click Zoomit VIA.
+
+   NOTE: The MMS counters are listed in the Counter dialog box.
+
+Using System Monitor in Windows 2000-Based Computers
+----------------------------------------------------
+
+1. Click Start, click Run, type "perfmon" (without the quotation marks), and
+   then click OK.
+
+2. Click System Monitor, right-click on the graph, and then click Add Counters.
+
+3. Click All Counters, and then click Zoomit VIA in the Performance Object
+   dialog box.
+
+For additional information about using Performance Monitor in Windows NT
+4.0-based computers, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+   Q150934 How to Create a Performance Monitor Log for NT Troubleshooting
+
+
+Additional query words: perfmon
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

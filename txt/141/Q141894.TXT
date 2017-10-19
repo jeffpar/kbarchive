@@ -1,0 +1,66 @@
+DOCUMENT:Q141894  14-DEC-1999  [homemm]
+TITLE   :Cinemania 1996 for the Macintosh System Requirements
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1996 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Cinemania for the Macintosh 1996 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the minimum system requirements to run the 1996 edition of
+Microsoft Cinemania for the Macintosh.
+
+MORE INFORMATION
+================
+
+The minimum system requirements to run Cinemania 1996 for the Macintosh are:
+
+ - Any Apple Macintosh computer supporting a 256-color, 640x480 resolution
+   (13-inch), or higher resolution monitor.
+
+ - System 7 or later
+
+ - Minimum 8 MB RAM memory
+
+ - Double-speed CD-ROM: The CD-ROM drive should be able to transfer data from
+   the CD-ROM at 300k per second while using less than 40% of the CPU bandwidth
+   and has an average seek time of less than 400 milliseconds.
+
+The minimum system requirements to use the Cinemania Monthly Updates are:
+
+ - Hayes or Hayes-compatible modem
+
+ - Access to the Internet
+
+ - Minimum 6 MB of hard disk space to download all 12 monthly update files
+
+Additional query words: 1996 multi media multimedia multi-media mmtitles kbmm cd cdrom compact disc
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbHomeMMsearch kbCineManiaSearch kbCinemania1996Mac
+Version           : :1996 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

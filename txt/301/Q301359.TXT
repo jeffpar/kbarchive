@@ -1,0 +1,123 @@
+DOCUMENT:Q301359  17-AUG-2001  [vbwin]
+TITLE   :INFO: Cannot Use WebBrowser Control Directly in eVB
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:kbActiveX kbCtrl kbInternet kbOSWinCEsearch kbGrpDSVB kbDSupport kbVBM300
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft eMbedded Visual Basic, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Currently, you cannot use the WebBrowser control directly in eMbedded Visual
+Basic (eVB) 3.0.
+
+MORE INFORMATION
+================
+
+There are several reasons why you cannot use the WebBrowser control directly in
+eMbedded Visual Basic (eVB) 3.0:
+
+ - You cannot use the Pocket Internet Explorer browser component as an ActiveX
+   control in eMbedded Visual Basic nor can you use Declare statements to access
+   functions in the component to call the Pocket Internet Explorer browser
+   component. This browser is essentially a dynamic-link library (DLL) that
+   interprets HTML. The Pocket Internet Explorer browser component does not have
+   any interfaces that allow it to be used from eVB and does not have
+   functionality similar to the desktop WebBrowser control.
+
+ - You can only use the Internet Explorer for Windows CE WebBrowser component on
+   operating systems that are built with Platform Builder 3.0. In addition, the
+   Internet Explorer for Windows CE WebBrowser component only ships with
+   Platform Builder 3.0. Thus, you cannot use the Internet Explorer for Windows
+   CE WebBrowser ActiveX control/DLL on the Pocket PC version of Windows CE.
+   Even if you could use the Internet Explorer for Windows CE WebBrowser ActiveX
+   control/DLL from eVB, you could not use the control (or the application) on
+   the Pocket PC.
+
+   NOTE: HPC 2000 uses Internet Explorer for Windows CE, and the WebBrowser
+   component is available on that operating system. However, you cannot use the
+   control/DLL from eVB.
+
+ - There is no desktop version of Internet Explorer for Windows CE WebBrowser
+   component that can be used in the eVB design environment. In Windows CE,
+   there is a binary version of each ActiveX control/DLL for each supported
+   processor type. Thus, the ActiveX control/DLL "MyControl" would have a binary
+   version for an SH4 processor, a MIPS 4000 processor, and so on.
+
+   In addition, if the ActiveX control/DLL is to appear in the eVB design
+   environment, it requires a version of the ActiveX control that is compiled
+   specifically for the desktop Windows operating system. This version is used
+   to allow developers to place the control on a form, resize it, and so on. If
+   the ActiveX control/DLL does not have this desktop version, it must be used
+   as an object at run time through the CreateObject function, or you must write
+   a discrete container application because there is no desktop version of the
+   control to insert into the project.
+
+ - There are at least two reasons why you cannot use the Internet Explorer for
+   Windows CE WebBrowser control directly in eVB. First, and most importantly,
+   there is a documented limitation of the CreateObject function. You cannot use
+   CreateObject to create visible ActiveX controls (for example, graphical
+   controls such as the PictureBox, ListView, or Grid control) at run time. This
+   limitation extends to the CreateObjectWithEvents function.
+
+   The second reason is also a limitation of these two functions. Both
+   CreateObject and CreateObjectWithEvents require the ProgID parameter.
+   However, a ProgID for the WebBrowser control does not occur in the registry,
+   only a ClassID. There is no other way to access the WebBrowser control
+   directly from eMbedded Visual Basic.
+
+The WebBrowser control does, however, implement the IDispatch interface. If you
+use the IESAMPLE eMbedded Visual C++ source code (which is located at
+\WINCE300\Public\IE\Oak\IESample\Mainwnd.cpp) as a starting point, you can
+create an ActiveX control that you can use in eVB. To create the desktop
+design-time version of the control, which is really a dummy control, you must
+implement only a few design-time properties such as Top, Left, Width, and Height
+to position the control on a form. For more information about how to create an
+ActiveX control that you can use in eVB, see the following Microsoft white
+paper:
+
+   Building ActiveX Controls for Microsoft Windows CE Using the Active Template
+   Library
+   http://msdn.microsoft.com/library/techart/atlce.htm
+
+REFERENCES
+==========
+
+For more information on how to create ActiveX controls for the Internet Explorer
+on Pocket PC, see the following Microsoft Web site:
+
+   http://www.microsoft.com/mobile/developer/technicalarticles/atl_pie.asp
+
+
+Additional query words: PIE
+
+======================================================================
+Keywords          : kbActiveX kbCtrl kbInternet kbOSWinCEsearch kbGrpDSVB kbDSupport kbVBM300 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword2 kbVBeMbSearch kbVBeMb300
+Version           : :3.0
+Hardware          : WinCE
+Issue type        : kbinfo
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

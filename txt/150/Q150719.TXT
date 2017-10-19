@@ -1,0 +1,88 @@
+DOCUMENT:Q150719  05-MAY-1999  [homemm]
+TITLE   :Mac Bookshelf 96-97 Error: Bookshelf Requires AppleScriptLib
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+MACINTOSH
+kbmm kberrmsg kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 98 for Macintosh 
+ - Microsoft Bookshelf 1996-97 for Macintosh 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Bookshelf, you receive the following error message:
+
+   Bookshelf requires the AppleScriptLib extension in order to use Apple Guide.
+   The installer on the CD can install Apple Guide properly.
+
+If you click Continue, Bookshelf starts successfully, but you are not be able to
+use Bookshelf Guide.
+
+After running the Bookshelf installation as the message indicates, you may
+continue to receive the error message.
+
+CAUSE
+=====
+
+The file AppleScriptLib version 1.1 is not in the active Extensions folder.
+
+RESOLUTION
+==========
+
+To end the error message, do the following:
+
+1. If you have the error message on the screen, click Quit.
+
+2. On the Bookshelf 1996-97 compact disc, double-click Installer.
+
+3. At the Easy Install window, click Customize.
+
+4. Select the Apple Guide option appropriate for your computer and version of
+   the system software.
+
+5. Click the Install button.
+
+When the installation completes, restart your computer and start Bookshelf.
+
+MORE INFORMATION
+================
+
+The AppleScriptLib is not installed if Apple Guide version 2.02 or later is
+already installed on the computer.
+
+Bookshelf Guide is accessed from the Help menu (the question mark in the upper
+right corner of the window, or from certain sub-screens in Bookshelf (such as
+the Address Builder).
+
+Additional query words: multi-media mmtitles kbmm macmm
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHWMAC kbOSMAC kbHomeMMsearch kbBookshelfSearch kbBookShelf1996Mac kbBookShelf1997Mac kbBookShelf1998Mac
+Version           : MACINTOSH:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,70 @@
+DOCUMENT:Q119638  01-MAY-2001  [foxpro]
+TITLE   :ERR: Unexpected Error; File Too Large to Compress...
+PRODUCT :Microsoft FoxPro
+PROD/VER::2.5b,2.5c; MACINTOSH:3.0b
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro Distribution Kit for Macintosh, versions 2.5b, 2.5c 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are running the Setup Wizard to create a set of disks for distribution,
+the following error appears:
+
+   Unexpected error; file too large to compress onto two disks.
+
+
+CAUSE
+=====
+
+One of the files in the folder to be compressed has a name with too many
+periods.
+
+RESOLUTION
+==========
+
+Rename any files that have more than one period in their filename.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Create a folder called DISTRIB.
+
+2. Create a simple text file or a FoxPro application and call it MYEXE.1.42.
+   Place this file in the DISTRIB folder.
+
+3. Run the Setup Wizard, specifying DISTRIB as the source folder.
+
+Additional query words: VFoxMac FoxMac 2.50b 2.50c errmsg err msg dk setupwizard
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxProDK250bMac kbFoxProDK250cMac kbVFP300bMac
+Version           : :2.5b,2.5c; MACINTOSH:3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

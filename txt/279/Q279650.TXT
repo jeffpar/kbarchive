@@ -1,0 +1,60 @@
+DOCUMENT:Q279650  12-NOV-2001  [homegame]
+TITLE   :Microsoft Casino: Dealer Incorrectly States Two of a Kind
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Casino, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Caribbean Stud in the Bellagio casino in Microsoft Casino, the
+dealer's voice may incorrectly state that the dealer's hand contains two of a
+kind.
+
+CAUSE
+=====
+
+This behavior occurs when the dealer's hand contains two pairs.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Casino, version 1.0.
+
+MORE INFORMATION
+================
+
+Despite this incorrect statement, the dealer pays out correctly at the end of
+the hand. This issue does not affect game play in any way.
+
+Additional query words: 1.00 msgame mscasino poker
+
+======================================================================
+Keywords          : kbimu msgame 
+Technology        : _IKkbbogus kbHomeMMsearch kbGamesSearch kbCasino
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

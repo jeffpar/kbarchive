@@ -1,0 +1,84 @@
+DOCUMENT:Q160149  09-AUG-2001  [winnt]
+TITLE   :FreeHand 4.0 Does not Print Properly with EMF Spooling
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Aldus FreeHand does not print properly when using enhanced metafile (EMF)
+spooling on a computer running Windows NT Server 4.0. The job only partially
+spools to the Print server.
+
+CAUSE
+=====
+
+Windows NT 4.0 implements EMF spooling by recording the graphic device interface
+(GDI) function calls that produce the application's graphic object on the
+specified printer. This record is an EMF-format file, called a print spool file.
+Windows NT builds the spool file quickly, and then returns control to the
+application. In the background, the spool file is spooled to the server, and the
+server converts the EMF data into a format suitable for the output device.
+Freehand 4.0 does not work Properly when using EMF. This behavior will occur by
+default in PCL Mode.
+
+RESOLUTION
+==========
+
+To resolve the Print Issue described above, do one of the following:
+
+NOTE: Any of the three steps below can be used to resolve the issue mentioned
+above.
+
+1. Disable EMF Spooling on the Server
+
+   a. In the Printers folder, click the printer whose properties you want to
+      change.
+
+   b. From the File menu, click Properties.
+
+   c. Click PrintProcessor.
+
+   d. Click the Always Spool RAW Datatype option.
+
+2. Upgrade to FreeHand 5.0
+
+3. Print to the Server using Postscript (EMF Turned off by Default)
+
+MORE INFORMATION
+================
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,77 @@
+DOCUMENT:Q168057  07-SEP-2001  [word97]
+TITLE   :WD97: Maximum Number of Printers Visible in Word
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:7.0,7.0a,97
+OPER/SYS:
+KEYWORDS:kbenv kbprint word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+ - Microsoft Word for Windows 95, versions 7.0, 7.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Word, the maximum number of printers that will be available in the Print
+dialog box is approximately 26.
+
+CAUSE
+=====
+
+The variable in Word that contains the string for all of the printers is limited
+to 512 characters.
+
+WORKAROUND
+==========
+
+If you shorten the printer names, more printers will be available in the Print
+dialog box in Word.
+
+To shorten the length of a printer name:
+
+1. Click the Start button, point to Settings, and then click Printers.
+
+2. Right-click a printer shortcut, and click Rename.
+
+3. Type the new name, and press ENTER.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+REFERENCES
+==========
+
+For more information about changing printer settings, see your Windows printed
+documentation or online Help.
+
+Additional query words: 8.0 word97 limit limitation
+
+======================================================================
+Keywords          : kbenv kbprint word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbWord95Search kbZNotKeyword2 kbWord95 kbWord95a
+Version           : WINDOWS:7.0,7.0a,97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

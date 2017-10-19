@@ -1,0 +1,103 @@
+DOCUMENT:Q237597  11-JUN-2002  [winnt]
+TITLE   :The Spoolss.exe Service Shows Increased Processor Usage
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0,4.0 SP4,4.0 SP5,4.0 SP6
+OPER/SYS:
+KEYWORDS:kbenv kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 4.0, 4.0 SP4, 4.0 SP5, 4.0 SP6, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+If you use Performance Monitor to track Private Bytes and Virtual Bytes on a
+Terminal Services-based server, the Spoolss.exe service may show increased
+memory usage, and may use from roughly 75 percent to 100 percent of the
+processor power.
+
+CAUSE
+=====
+
+This issue may occur if Citrix Metaframe Independent Computing Architecture
+(ICA) clients connect to your Terminal Services-based server. If you run Citrix
+with an ICA client in a Terminal Services environment, printers such as a
+Hewlett-Packard DeskJet 895cxi are automatically created. This causes the
+symptoms that are described earlier in this article to occur.
+
+RESOLUTION
+==========
+
+To work around this issue, use either of the following methods.
+
+Use an Earlier Driver from the Windows NT Server 4.0, Terminal Server Edition, CD-ROM
+-------------------------------------------------------------------------------------
+
+1. Create a local printer, install a Hewlett-Packard DeskJet 550 driver from the
+   Base Windows NT Terminal Server Edition CD-ROM, and then delete the printer.
+   The driver remains installed on the computer.
+
+2. Modify the Wtsuprn.txt file, and then rename it with an .inf file name
+   extension.
+
+Turn Off the Ability for Users to Automatically Create Printers If the Driver Is Not Installed
+----------------------------------------------------------------------------------------------
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+1. Use Registry Editor (Regedt32.exe) to view the following registry key:
+
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Providers\LanManPrintServices\Servers
+
+2. Add the following registry value:
+
+   Value name: AddPrinterDrivers
+   Value type: REG_DWORD
+   Value data: 1
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q221509 How to Set a Default Autocreated Printer with Windows Terminal Server
+   Using Metaframe ICA Client
+
+MORE INFORMATION
+================
+
+Contact the printer manufacturer to inquire about obtaining updated drivers.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServ400sp4 kbNTTermServ400sp5 kbNTTermServ400sp6 kbNTTermServSearch
+Version           : :4.0,4.0 SP4,4.0 SP5,4.0 SP6
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

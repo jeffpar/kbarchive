@@ -1,0 +1,78 @@
+DOCUMENT:Q93148  07-DEC-1999  [winprint]
+TITLE   :Panasonic KX-P4420 May Not Print Large Documents
+PRODUCT :Microsoft Windows Printing Issues
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you use the Panasonic KX-P4420 laser printer with a third-party memory board,
+you may experience problems printing large print jobs from Microsoft Windows
+version 3.1.
+
+Microsoft Word for Windows, Aldus PageMaker, and Microsoft Windows Write may be
+unable to print more than five pages, and graphics may be printed partially or
+not at all.
+
+CAUSE
+=====
+
+This behavior may be caused by an incorrect jumper setting on a third-party
+memory expansion board installed on the printer. In this case, there is no
+indication of an error from the printer, and the printer memory appears to be
+used normally by the Windows printer driver. However, the printer cannot
+actually use the memory, and large print jobs cause the printer to jam.
+
+WORKAROUND
+==========
+
+Remove the memory board from the printer. This should allow the large documents
+to print normally. This may also help determine if the memory board is the
+source of the problem.
+
+For instructions on removing the memory board, contact your memory board
+manufacturer.
+
+
+MORE INFORMATION
+================
+
+For more information, call Panasonic Technical Support.
+
+The products included here are manufactured by a vendor independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+
+Additional query words: 3.10 win31 kxp4420 kxp-4420 kxp 4420 kx p4420 k x p 3rdParty 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

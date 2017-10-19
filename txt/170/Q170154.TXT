@@ -1,0 +1,235 @@
+DOCUMENT:Q170154  11-JAN-2001  [vbwin]
+TITLE   :INFO: VB 6.0 Readme Part 10: Extensibility Issues
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbreadme kbAddIn kbRegistry kbVBp kbVBp600 kbVS600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The information below includes the documentation and workarounds for Visual
+Basic 6.0. This information can also be found in the README.htm file that ships
+with Visual Basic 6.0 on the Visual Basic 6.0 CD-ROM. Please see the REFERENCES
+section of this article for a list of the Microsoft Knowledge Base articles
+relating to the Visual Basic 6.0 readme.
+
+Following is a list of all parts of the readme file:
+
+Part 1.  Important Issues - Please Read First!
+Part 2.  Data Access Issues and DataBinding Tips
+Part 3.  Control Issues
+Part 4.  Language Issues
+Part 5.  Samples Issues
+Part 6.  Wizard Issues
+Part 7.  Error Message Issues
+Part 8.  WebClass Designer Issues
+Part 9.  DHTML Page Designer Issues
+Part 10. Extensibility issues
+Part 11. Miscellaneous Issues
+Part 12. Microsoft Transaction Server (MTS) Issues
+Part 13. Dictionary Object
+Part 14. Visual Component Manager
+Part 15. Application Performance Manager
+
+MORE INFORMATION
+================
+
+"Command-Line Safe" Add-In Behavior
+-----------------------------------
+
+You can use the Load Behavior box in the Add-In Manager to control how and when
+an add-in loads in Visual Basic:
+
+ - Loaded/Unloaded -- either loads or unloads a selected add-in when the box is
+   checked or unchecked.
+
+ - Load On Startup -- indicates whether the selected add-in should load when the
+   Visual Basic IDE is started.
+
+ - Command Line -- indicates whether an add-in should load when Visual Basic is
+   started from a command line, either through a DOS prompt or a script.
+
+When you select Command Line load behavior for an add-in, you may get the
+following warning message:
+
+   "The selected add-in has not been confirmed to be 'command-line safe', and
+   may require some user intervention (possible UI). Do you wish to proceed?"
+
+This occurs when you select an add-in for Command Line load behavior that was not
+declared by the author of the add-in to be "command line safe" when it was
+created. (This can be indicated with the Add-In Designer through a checkbox.)
+
+"Command-line safe" means that the add-in is registered in a way to indicate that
+it contains no user interfaces that require user input when Visual Basic is
+invoked through a command-line. A user interface can interfere with the
+operation of unattended processes (such as build scripts).
+
+If you don't indicate that an add-in is command-line safe (even if it is
+command-line safe), when a user selects your add-in and then Command Line in the
+Load Behavior box, they'll receive the warning message. This isn't a serious
+problem, but merely a warning to the user that the selected add-in might
+possibly contain UI elements that can pop up unexpectedly and halt their
+automated scripts by pausing for user input.
+
+Manually Setting Add-In Registry Values
+---------------------------------------
+
+You can also manually set the command-line safe flag (as well as the other
+values) for an add-in through the Windows registry.
+
+NOTE: You should not attempt to directly manipulate any Windows registry entries
+unless you are familiar with doing so. Setting an invalid registry entry can
+cause problems with Windows, even preventing you from being able to load
+Windows.
+
+In Visual Basic 6.0, the key that holds add-in information is located in:
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Visual Basic\6.0\Addins\<add-
+in.name>.
+
+For Visual Basic 6.0, the LoadBehavior DWord values are:
+
+ - None = 0
+
+ - Startup = 1
+
+ - Command Line = 4
+
+ - Command Line / Startup = 5
+
+There is also an additional DWord value that indicates whether the add-in is
+command-line safe: CommandLineSafe. A value of 1 indicates the add-in is
+command-line safe, while a value of 0 (the default) indicates that it is not
+command-line safe. A value of 0 is implied if you forget to check the
+command-line safe box in the Add-In Designer since the default value of 0 is
+assumed, and the add-in isn't considered command-line safe.
+
+So, to demonstrate how to use these values to indicate that a fictitious add-in
+(My.Addin) is command-line safe and to have it load when Visual Basic is started
+by command-line, you would set the following registry values, using a tool such
+as RegEdit:
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Visual Basic\6.0\Addins\My.Addin
+
+   "FriendlyName"="A friendly name for your add-in"
+   "Description"="This value describes the add-in"
+   "LoadBehavior"=dword:4
+   "CommandLineSafe"=dword:1
+
+Using the Add-In Designer
+-------------------------
+
+Visual Basic 6.0 includes a new tool, called the Add-In designer, to aid you in
+creating add-ins. To open it:
+
+ - Create a new add-in project.
+
+ - In the Project Explorer, under Designers, is a designer called Connect.
+   Double-click it to activate the Add-In designer.
+
+Unfortunately, context-sensitive help currently isn't available for the Add- In
+designer. Help topics are available, however. You can find the appropriate
+topics by searching for Add-In Designer in the MSDN index. You should see a list
+of three associated topics:
+
+ - "Using the Add-In Designer"
+
+ - "General Tab (Add-In Designer)"
+
+ - "Advanced Tab (Add-In Designer)"
+
+For more information, search online, with Search titles only selected, for
+"Registering Add-Ins" in the MSDN Library Visual Studio 6.0 documentation.
+
+Add-In Designer: More Information About Specifying Satellite DLL
+----------------------------------------------------------------
+
+When creating an add-in with the Add-In designer, you can specify a DLL on the
+Advanced tab. Be sure, however, to type only the name of the DLL file, and not
+its fully-qualified path. For example:
+
+   MyAddinName.DLL
+
+not:
+
+   Addins\MyAddinName\MyAddinName.DLL
+
+Localized Satellite DLLs
+------------------------
+
+If you create a localized satellite DLL, you should also create a resources
+directory and a locale ID directory for the satellite DLL and install the DLL in
+the appropriate directory. The schematic for such a path is:
+
+   <AddIn Directory>\Resources\<Locale ID>\<MySatellite.DLL>
+
+For example, a satellite DLL for the German version (Locale ID = 1031) would go
+into the directory:
+
+   C:\Program Files\MyAddin\Resources\1031\MyAddinName.DLL
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q170164 : INFO: VB 6.0 Readme Part 1: Important Issues - Read First!
+
+   Q170163 : INFO: VB 6.0 Readme Part 2: Data Access/Databinding Issues
+
+   Q170162 : INFO: VB 6.0 Readme Part 3: Control Issues
+
+   Q170161 : INFO: VB 6.0 Readme Part 4: Language Issues
+
+   Q170160 : INFO: VB 6.0 Readme Part 5: Samples Issues
+
+   Q190046 : INFO: VB 6.0 Readme Part 6: Wizard Issues
+
+   Q170158 : INFO: VB 6.0 Readme Part 7: Error Message Issues
+
+   Q189539 : INFO: VB 6.0 Readme Part 8: WebClass Designer Issues
+
+   Q190249 : INFO: VB 6.0 Readme Part 9: DHTML Page Designer Issues
+
+   Q170154 : INFO: VB 6.0 Readme Part 10: Extensibility Issues
+
+   Q170157 : INFO: VB 6.0 Readme Part 11: Miscellaneous Issues
+
+   Q170156 : INFO: VB 6.0 Readme Part 12: Transaction Server (MTS) Issues
+
+   Q191792 : INFO: VB 6.0 Readme Part 13: Dictionary Object
+
+   Q191791 : INFO: VB 6.0 Readme Part 14: Visual Component Manager
+
+   Q191790 : INFO: VB 6.0 Readme Part 15: Application Performance Explorer
+
+======================================================================
+Keywords          : kbreadme kbAddIn kbRegistry kbVBp kbVBp600 kbVS600 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

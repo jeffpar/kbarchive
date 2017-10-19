@@ -1,0 +1,56 @@
+DOCUMENT:Q148896  08-NOV-2001  [homegame]
+TITLE   :Return of Arcade: List of Supported Sound Cards
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbhw kbsound kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Return of Arcade for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Return of Arcade uses DirectSound. DirectSound supports the following
+sound cards:
+
+ - Sound Blaster 8-bit cards, 16-bit cards and the AWE32.
+
+ - ESS 488, 688, 1488, 1688
+
+ - Media Vision PAS 16, PAS Studio, PAS Plus, Pro 3D and Blue Lite Special
+
+ - Aztech Nova 16, Washington 16, Rocky 2
+
+ - Microsoft Windows Sound System
+
+If your sound card is not listed above, you might experience problems ranging
+from poor performance to sound delays and page faults when you play the games.
+
+Additional query words: 1.00 roa sounds supported supports
+
+======================================================================
+Keywords          : kb3rdparty kbhw kbsound kbHardware 
+Technology        : kbGamesSearch kbArcadeRet kbZNotKeyword kbArcadeSearch kbZNotKeyword3
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

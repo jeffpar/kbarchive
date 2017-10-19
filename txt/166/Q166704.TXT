@@ -1,0 +1,66 @@
+DOCUMENT:Q166704  07-SEP-2001  [winnt]
+TITLE   :Err Msg: Not Enough Storage Is Available to Complete This...
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbprint
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click the Start button, point to Settings, and then click Printers, or
+when you double-click Printers in Control Panel, you may receive the following
+error message:
+
+   Not Enough Storage is Available to Complete this Operation
+
+CAUSE
+=====
+
+The Printui.dll file in the Winnt\System32 folder is missing or damaged.
+
+RESOLUTION
+==========
+
+Extract a new copy of the Printui.dll file from your Windows NT CD-ROM. To do
+so, follow these steps:
+
+1. At a command prompt, change to the <cd-rom>:\<platform> folder,
+   where <cd-rom> is your CD-ROM drive and <platform> is the
+   computer platform you are using. Use the I386 folder for Intel-based
+   computers.
+
+2. Type the following line:
+
+   expand printui.dl_ winnt\system32\printui.dll
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kberrmsg kbprint 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

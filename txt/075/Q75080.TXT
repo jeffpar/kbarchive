@@ -1,0 +1,76 @@
+DOCUMENT:Q75080  17-DEC-2000  [msdos]
+TITLE   :Installing MS-DOS 5.x or 6.x on Tandy 2500XL2 or 1000RLX
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Before you install MS-DOS version 5.0 or later on a Tandy 2500XL2 or Tandy
+1000RLX computer, you must follow the procedure outlined below to disable the
+ROM DOS functionality of the Tandy.
+
+MORE INFORMATION
+================
+
+1. Insert the original floppy disk labeled MS-DOS/GW-BASIC into drive A.
+
+2. At the A prompt, type "SETUPXL2" (without the quotation marks) for the
+   2500XL2 model or "SETUPRLX" (without the quotation marks) for the 1000RLX
+   model, then press ENTER.
+
+3. The BIOS/ROM DOS Setup program loads, displaying a menu of options. Use the
+   ARROW keys to select options. Press the SPACEBAR to change settings (the
+   current settings are the only ones that are displayed).
+
+4. Use the RIGHT ARROW key to select the START-UP PROGRAM option. The available
+   settings are MS-DOS and DESKMATE, with DESKMATE being the default.
+
+5. Press the SPACEBAR once to change the setting from DESKMATE to MS-DOS.
+
+6. Use the DOWN ARROW and LEFT ARROW keys to select the START-UP DEVICE option.
+   The choices are ROM and DISK, with ROM being the default.
+
+7. Press the SPACEBAR once to change the setting from ROM to DISK.
+
+8. Press F2 to update the EEPROM and restart the computer.
+
+9. Install MS-DOS 5.0 or 6.0. Note that you need to install MS-DOS 6.0 manually.
+   (Refer to Chapter 8 in your "Microsoft MS-DOS User's Guide" for version 6.0
+   for instructions.)
+
+The Tandy products included here are manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+Additional query words: 6.22 5.00 3rdparty 6.00 5.00a 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

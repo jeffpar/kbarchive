@@ -1,0 +1,77 @@
+DOCUMENT:Q164223  25-MAR-2002  [win95x]
+TITLE   :PC Cards May Not Be Recognized in Docking Station
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2,2.1
+OPER/SYS:
+KEYWORDS:kbhw osr2 win95 kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, versions 2, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On certain laptop computers running Windows 95 OEM Service Release 2 (OSR2),
+when a PC Card is inserted into a slot in the docking station, the card may not
+be recognized.
+
+CAUSE
+=====
+
+This symptom has been observed with certain docking stations that use the TI
+1130 PCI-to-CardBus bridge, and occurs only when the PC Card is inserted in a
+CardBus slot connected through this bridge (that is, in the docking station).
+
+RESOLUTION
+==========
+
+
+STATUS
+======
+
+This problem no longer occurs in Windows 98. To resolve this problem, install
+the current version of Windows. For information about the current version of
+Windows, visit http://www.microsoft.com/windows.
+
+MORE INFORMATION
+================
+
+
+If you are experiencing this behavior, contact your computer manufacturer for a
+possible remedy.
+
+If the TI 1130 PCI-to-CardBus bridge is configured as a "positive decode" bridge,
+CardBus cards will be recognized but non-CardBus PC Cards (type R2 PCMCIA cards)
+may not be recognized.
+
+If the TI 1130 PCI-to-CardBus bridge is configured as a "subtractive decode"
+bridge, non-CardBus PC Cards (type R2 PCMCIA cards) will be recognized but
+CardBus cards will not be.
+
+Additional query words: 95 Texas Instruments TI1130
+
+======================================================================
+Keywords          : kbhw osr2 win95 kbHardware 
+Technology        : kbWin95search kbOPKSearch kbWin95OPKOSR2 kbWin95OPKOSR210
+Version           : :2,2.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

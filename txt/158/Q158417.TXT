@@ -1,0 +1,55 @@
+DOCUMENT:Q158417  16-JUN-2001  [msnetwork]
+TITLE   :Some Drivers Do Not Read Long File Names on MSN CD-ROM
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.0,2.5,95
+OPER/SYS:
+KEYWORDS:kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.0, 2.5 
+ - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you install MSN, The Microsoft Network, the cache files for some shows may
+not be installed on computers that use real-mode drivers for the CD-ROM drive.
+This causes longer download times when first viewing shows and content on MSN.
+
+MORE INFORMATION
+================
+
+The show files on the MSN CD-ROM use long file names. CD-ROM drives that use
+real-mode drivers cannot view long file names and do not install the show files.
+This has no adverse effect on installing other MSN program files.
+
+You can work around this problem by using Windows 95 drivers, if available, for
+the CD-ROM drive.
+
+Additional query words: msn
+
+======================================================================
+Keywords          : kbmsn 
+Technology        : kbOSWin95 kbOSWinSearch kbMSNSearch kbMSN200 kbMSN250
+Version           : WINDOWS:2.0,2.5,95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

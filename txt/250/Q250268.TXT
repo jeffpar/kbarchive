@@ -1,0 +1,71 @@
+DOCUMENT:Q250268  08-AUG-2001  [winnt]
+TITLE   :Domain Name Server Generates Event ID 156
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you check Event Viewer, you may notice that it reports the following event
+logged by your Domain Name Server (DNS):
+
+   Event ID 156:
+   DNS Server does not have a cache (or database) entry for root name server. The
+   cache file MUST have at least one NS record, indicating a root DNS server and
+   a corresponding A record for that root DNS server. Otherwise the DNS server
+   will be unable to contact the root DNS server on startup and will be unable
+   to answer queries for names outside of its own authoritative zones.
+
+CAUSE
+=====
+
+This behavior can occur when the Cache.dns file is corrupted or contains invalid
+entries.
+
+RESOLUTION
+==========
+
+To resolve this behavior, follow these steps:
+
+1. Stop the DNS service.
+
+2. Rename the existing Cache.dns file in the %SystemRoot%\System32\Dns folder to
+   Cache.old.
+
+3. Copy the Cache.dns file from the %SystemRoot%\System32\Dns\Backup folder into
+   the %SystemRoot%\System32\Dns folder.
+
+4. Restart the DNS service.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,67 @@
+DOCUMENT:Q140504  17-DEC-2000  [win95x]
+TITLE   :Err Msg: Error Happened While Writing to Msbatch.inf
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are creating a server-based Windows 95 Setup folder on a network server
+using Netsetup.exe, you may receive the following error message:
+
+   Error happened while writing one or more entries to Msbatch.inf. It is not
+   possible to continue the Server-based Windows 95 Setup install process.
+
+CAUSE
+=====
+
+This error can occur when the files already exist in the destination folder due
+to a previous installation using Netsetup.exe.
+
+RESOLUTION
+==========
+
+Remove all files from the server folder and perform the server-based Windows 95
+Setup process again.
+
+MORE INFORMATION
+================
+
+For additional information about creating a server-based Windows 95 Setup,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q133221 Installing a Server-based Windows 95 Setup
+
+Note that Netsetup.exe is included only in the CD-ROM version of Windows 95. It
+is not included in the floppy disk version of Windows 95.
+
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

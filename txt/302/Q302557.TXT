@@ -1,0 +1,71 @@
+DOCUMENT:Q302557  21-JUN-2001  [msnetwork]
+TITLE   :Help Page Content Supported Media (Bug ID 3783)
+PRODUCT :The Microsoft Network
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The published information about available types of streaming media is incorrect.
+
+MORE INFORMATION
+================
+
+Supported Plug-ins
+
+ - Windows Media Player (including these formats: MP3 and Windows Media audio
+   and video)
+
+ - Macromedia Flash
+
+ - QuickTime 2.0 and 3.0
+
+ - Java
+
+MSN Companion does not support any other plug-ins, including the following:
+
+ - Downloadable ActiveX controls
+
+ - RealPlayer (RealAudio, RealVideo)
+
+ - Shockwave
+
+ - QuickTime 4.0 and above
+
+ - Several other media formats
+
+If you visit pages that use unsupported formats, features related to unsupported
+formats will be respond.
+
+Additional query words: kbimu; MSN Companion
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSNCompanion
+Version           : :2.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

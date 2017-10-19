@@ -1,0 +1,79 @@
+DOCUMENT:Q197757  14-NOV-2000  [word97]
+TITLE   :WD97: Conditional MERGEFIELD Lost When Converted to MacWord
+PRODUCT :Word 97 for Windows
+PROD/VER::97
+OPER/SYS:
+KEYWORDS:kbfield kbmerge
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you save a mail merge main document containing conditional MERGEFIELD
+statements as a Word for the Macintosh 4.0 or 5.x document, the information in
+the conditional MERGEFIELD statement is lost.
+
+WORKAROUND
+==========
+
+Re-create the conditional MERGEFIELD statement after you open the mail merge
+main document in Word.
+
+NOTE: You may need to reattach the data document when you open the mail merge
+main document.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+The conversion process does not correctly handle the conditional MERGEFIELD
+statement. For example, if the statement in Word 97 is
+
+      {IF {MERGEFIELD LastName}="Jones" "yes" "no"}
+
+the same statement after opening the converted document in Word for the Macintosh
+5.1 appears as:
+
+      <<IF=>><<ENDIF>>
+
+When you reopen the converted document back into Word, the conditional MERGEFIELD
+statement shows as:
+
+         {IF= "" ""}
+
+Additional query words: conditional print constructs field 8.0 8.00
+
+======================================================================
+Keywords          : kbfield kbmerge 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

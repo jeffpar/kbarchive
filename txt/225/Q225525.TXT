@@ -1,0 +1,68 @@
+DOCUMENT:Q225525  11-DEC-2001  [winnt]
+TITLE   :Users Cannot Change System Time
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to use the "net time" command, you may receive the following error
+message:
+
+   A required privilege is not held by the client.
+
+CAUSE
+=====
+
+This issue can occur if you do not have permissions to alter time on a specific
+computer. In User Manager, Change the System Time is a permission that can be
+assigned to users. By default on a server, Administrators and Server Operators
+have this permission. If this permission is granted to any other users or groups
+on a domain controller, then when that user logs on to the domain, the user can
+only change the time for domain controllers on that domain. On the workstation,
+permissions are granted by default to Administrators and Power Users. If this
+permission is granted to any other users or groups, then those users or groups
+have the ability to change the system time only on that computer.
+
+MORE INFORMATION
+================
+
+For additional information about the "net time" command, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q120944 Using NET TIME for all Workstations and Servers
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kberrmsg kbtool kbui 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

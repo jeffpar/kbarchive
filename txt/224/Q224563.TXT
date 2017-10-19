@@ -1,0 +1,83 @@
+DOCUMENT:Q224563  09-JUN-1999  [homemm]
+TITLE   :Bookshelf 99 Err Msg: Bshelf99 Caused an Invalid Page Fault...
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 99 
+ - Microsoft Bookshelf 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft Bookshelf 99 for the first time, you may be prompted to
+accept the End User License Agreement (EULA). If you click Decline or the Close
+(X) button, you may receive the following error message:
+
+   Bshelf99 caused an invalid page fault in module Bshelf99.exe
+
+CAUSE
+=====
+
+This behavior can occur if an OEM version of Bookshelf 99 is installed in your
+computer.
+
+RESOLUTION
+==========
+
+To prevent this issue from occurring, do not click Decline or the Close (X)
+button in the EULA dialog box when you start Bookshelf 99 for the first time.
+
+If you do not accept the terms of the EULA, remove Bookshelf 99. To do this,
+follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. On the Install/Uninstall tab, click Bookshelf 99, and then click Add/Remove.
+
+4. Follow the instructions on the screen to remove Bookshelf 99.
+
+5. Click OK, and then close Control Panel.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Bookshelf 99.
+
+MORE INFORMATION
+================
+
+This problem does not occur in Microsoft Bookshelf 2000.
+
+Additional query words: multi multi-media media mm bs99
+
+======================================================================
+Keywords          : kberrmsg kbsetup kbimu 
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf2000 kbBookShelf1999
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

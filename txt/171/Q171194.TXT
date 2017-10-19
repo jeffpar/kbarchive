@@ -1,0 +1,69 @@
+DOCUMENT:Q171194  28-JUL-2001  [win95x]
+TITLE   :Components Added to Network Properties by DUN 1.2 for Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbnetwork dun win95 kbDialUp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the components installed by Dial-Up Networking (DUN)
+version 1.2 for Windows 95.
+
+MORE INFORMATION
+================
+
+The following components are added to Network properties:
+
+ - Dial-Up Adapter #2 (VPN Support)
+
+ - Microsoft virtual private network Adapter
+
+ - NDISWAN -> Microsoft virtual private network Adapter
+
+Also, each installed protocol gains an additional entry. For example, if you have
+the NetBEUI, TCP/IP, and IPX/SPX protocols installed, the following entries are
+added:
+
+ - NetBEUI -> Dial-Up Adapter #2 (VPN Support)
+
+ - TCP/IP -> Dial-Up Adapter #2 (VPN Support)
+
+ - IPX/SPX-Compatible Protocol -> Dial-up Adapter #2 (VPN Support)
+
+virtual private network is a new networking technology that you can use to
+connect to corporate networks securely across the Internet or a LAN. virtual
+private network uses a tunneling protocol such as Point-to- Point Tunneling
+Protocol (PPTP). You set up a virtual private network connection using Dial-Up
+Networking.
+
+Additional query words: ras 1.20
+
+======================================================================
+Keywords          : kbnetwork dun win95 kbDialUp 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

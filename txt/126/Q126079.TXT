@@ -1,0 +1,50 @@
+DOCUMENT:Q126079  08-NOV-2001  [automap]
+TITLE   :Destination Ski Disk Contents (3.5 Inch, 720K)
+PRODUCT :Microsoft Automap
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Automap Destination Ski, version 1.0 
+-------------------------------------------------------------------------------
+
+The following is the contents of the Automap Destination Ski 3.5-inch,
+720K disk set.
+
+Disk 1:
+Volume Label: AMSKI1
+
+DECOMP.EXE            10930 bytes       09-29-93
+INSTALL.DAT             232 bytes       09-29-93
+INSTALL.EXE          132688 bytes       09-29-93
+INSTALL.INF             547 bytes       09-29-93
+USASKI.GAZ            12172 bytes       09-29-93
+USASKI.GIN           269025 bytes       09-29-93
+USASKI.WPD             3568 bytes       09-29-93
+
+Additional query words: auto auto-map automap reference KBPRIORITY3
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbHomeMMsearch kbAutomapSearch kbAutomapDestinationSki
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

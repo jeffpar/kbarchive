@@ -1,0 +1,61 @@
+DOCUMENT:Q137640  17-DEC-2000  [win95x]
+TITLE   :BACKSPACE Removes Only Half of Character in HyperTerminal
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use HyperTerminal to connect to a bulletin board system (BBS), the
+BACKSPACE and DELETE keys may remove only half of some characters.
+
+CAUSE
+=====
+
+This behavior can occur if the BACKSPACE and DELETE keys are handled as SBCS
+(Single-Byte Characters Set) characters and the BBS is using DBCS (Double-Byte
+Character Set) characters.
+
+The BACKSPACE key may delete only half of a DBCS character if the BACK- SPACE key
+is interpreted as a single-space character.
+
+MORE INFORMATION
+================
+
+Whether or not this behavior occurs depends on how the BBS handles SBCS
+BACKSPACE and DELETE keys.
+
+Some BBSs handle BACKSPACE and DELETE keys in a manner that works properly in
+HyperTerminal.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

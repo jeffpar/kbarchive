@@ -1,0 +1,80 @@
+DOCUMENT:Q164260  08-AUG-2001  [winnt]
+TITLE   :Compressing and Uncompressing Files Cause File Cache to Grow
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you compress or uncompress big files, the performance of the interactive
+processes may suffer. This happens when the files are bigger than the physical
+memory of the computer.
+
+All three of the following utilities capable of compressing or uncompressing
+files in Windows NT show this behavior:
+
+   COMPACT utility (Compact.exe)
+   File Manager (Winfile.exe)
+   Windows NT Explorer (Explorer.exe)
+
+When you run performance monitor during compression you will see that the cache
+(Memory: Cache Bytes) is very large (between 50 and 90 percent of the physical
+memory) and the working sets of the processes (Process: Working Set, Instance
+_Total) are reduced.
+
+MORE INFORMATION
+================
+
+The CreateFile API has a flag FILE_FLAG_SEQUENTIAL_SCAN that is especially
+useful when working on files in a sequential manner. It tells Cache Manager not
+to grow the file cache when requests for this handle arrive. Therefore, Memory
+Manager does not have to shrink the application's working set to accommodate the
+bigger cache.
+
+None of the three utilities used this flag when opening the files for compression
+or decompression.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. This
+problem was corrected in the latest Microsoft Windows NT 4.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: prodnt virtual memory
+
+======================================================================
+Keywords          :  kbbuglist kbfixlist
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

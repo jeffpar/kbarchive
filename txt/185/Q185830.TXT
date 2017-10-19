@@ -1,0 +1,72 @@
+DOCUMENT:Q185830  18-DEC-2000  [crossnet]
+TITLE   :Small Business Server Fax Ignores Retry Delay
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:WINDOWS:95; winnt:4.0,4.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Small Business Server versions 4.0, 4.0a 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you set up the fax on the server to be available only at certain hours, the
+fax server ignores the retry delay value and retries immediately if the target
+fax is busy.
+
+RESOLUTION
+==========
+
+Set the fax printer to be always available.
+
+For Windows NT clients, a workaround is to configure the Discount rate period in
+Control Panel, Fax Server Tool. Select the Send tab instead, and then at the
+client choose to send the fax at discount rates (in Control Panel, Fax client).
+Then the retry characteristics will be used. This selection is not supported on
+Windows 95 or Windows 98 clients, however.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Small Business Server
+version 4.0 and 4.0a. We are researching this problem and will post additional
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+This problem only occurs if you set up the fax on the server to be available
+only at certain hours. When sending a fax from a Windows 95 client and the
+number called is busy, the server keeps retrying with no delay although you have
+configured the fax service to wait a certain time between the retries.
+
+Additional query words: smallbiz
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin95search kbSBServSearch kbZNotKeyword3 kbSBServ400 kbSBServ400a
+Version           : WINDOWS:95; winnt:4.0,4.0a
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

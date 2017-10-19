@@ -1,0 +1,58 @@
+DOCUMENT:Q95017  05-NOV-1999  [pcmail]
+TITLE   :SNADS: Two Message Headers Viewing Loop Around Message
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to SNADS, version 2.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If Microsoft Mail sends a loopback message through the Soft*Switch SNADS or
+LinkAge SNADS Gateway and Microsoft Mail for Windows displays the message, two
+message headers appear in the message body. Microsoft Mail for MS-DOS displays
+the message correctly.
+
+
+A Microsoft Mail loopback message is a message sent to the gateway to be routed
+back to the sender or it is a message composed by another Microsoft Mail user at
+the other end of the SNADS gateway.
+
+REFERENCES
+==========
+
+For more information on the Soft*Switch SNADS gateway to Microsoft Mail, please
+contact Soft*Switch at (215) 640-9600.
+
+For more information on the LinkAge SNADS gateway to Microsoft Mail, please
+contact LinkAge Office Information Solutions, Inc., at (416) 862-7148.
+
+Additional query words: 2.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSNADS210
+Version           : :2.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,94 @@
+DOCUMENT:Q191713  11-JAN-2001  [vbwin]
+TITLE   :INFO: Type Declaration Character to Data Type Chart
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article shows you the type declaration characters and corresponding data
+types. A Type Declaration Character is a character appended to a variable name
+indicating the variable's data type. For example, the variable name MyString$
+has a dollar sign appended to the variable name and is dimensioned as a String
+data type.
+
+MORE INFORMATION
+================
+
+The following table shows the type declaration characters and corresponding data
+types.
+
+Type Declaration Character  Data Type
+--------------------------  ---------
+<BLOCKQUOTE>
+          %                 Integer
+          &                 Long
+          !                 Single
+          #                 Double
+          $                 String
+          @                 Currency
+
+Even when using type declaration characters, you still need to declare your
+variables when you have Option Explicit at the beginning of the Module. Using
+Option Explicit is recommended to prevent problems due to misspelled variable
+names. When "Require Variable Declaration" is checked in the Editor Tab of the
+Options dialog box from the Tools Menu, Option Explicit is added to new Modules
+automatically. If you use Option Explicit, but you do not declare your
+variables, you will receive the following error message at run-time:
+
+   Compile Error
+   Variable Not Defined
+
+To prevent this error from occurring, you can either remove Option Explicit or
+explicitly declare your variables. Using type declaration characters allows you
+to shorten these statements. For example, you can use this:
+
+      Dim MyVar$
+
+instead of this:
+
+      Dim MyVar As String
+
+Both statements declare MyVar to be a memory variable of type String.
+
+Additional query words: kbDSupport kbDSD kbVBp kbVBp400 kbVBp500 kbVBp600 kbVBA kbNoKeyWord
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500Search kbVBA600 kbVB500 kbVB600 kbVB400Search kbVB400 kbZNotKeyword3 kbVB16bitSearch
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

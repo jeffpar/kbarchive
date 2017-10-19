@@ -1,0 +1,80 @@
+DOCUMENT:Q295812  16-JUL-2001  [exchange]
+TITLE   :XFOR: Messages from Exchange to CC:Mail Remain Queued
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:kbExchange550
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to send messages from Exchange Server to Lotus cc:Mail by using the
+Microsoft Exchange Connector for Lotus cc:Mail, the Connector for cc:Mail
+Service starts but the messages may remain queued in the
+\Exchsrvr\Ccmcdata\Submit folder instead of going to the Lotus cc:Mail users. No
+error message appears in the Application Event log.
+
+CAUSE
+=====
+
+This behavior can occur if the \Exchsrvr\Ccmcdata\Import folder is damaged.
+
+WORKAROUND
+==========
+
+To work around this behavior, recreate the subfolders and .ini files that are in
+the \Exchsrvr\Ccmcdata folder:
+
+1. Under Services in Control Panel, stop the Connector for cc:Mail Service, and
+   then move all of the subfolders and files from the \Exchsrvr\Ccmcdata folder
+   to a temporary folder.
+
+2. Under Services in Control Panel, restart the Connector for cc:Mail Service to
+   recreate all of the subfolders and .ini files that are in the
+   \Exchsrvr\Ccmcdata folder.
+
+3. Stop the Connector for cc:Mail Service again, and then move all of the files
+   from the temporary folder back to the \Exchsrvr\Ccmcdata\Submit folder.
+
+4. Restart the Connector for cc:Mail Service to send the files that are in the
+   Submit folder to the cc:Mail post office.
+
+MORE INFORMATION
+================
+
+When the Connector for cc:Mail finishes the conversion process, the messages are
+written to the \Exchsrvr\Ccmcdata\Submit folder. The cc:Mail Import program then
+writes the files to the \Exchsrvr\Import folder. However, if the
+\Exchsrvr\Import folder is damaged, the messages remain queued in the
+\Exchsrvr\Ccmcdata\Submit folder.
+
+Additional query words: ccmail stuck directory
+
+======================================================================
+Keywords          : kbExchange550 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

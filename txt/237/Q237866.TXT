@@ -1,0 +1,65 @@
+DOCUMENT:Q237866  14-AUG-1999  [exchange]
+TITLE   :XADM: Event ID 5004 Generating Offline Address Book
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to generate an offline Address Book (OAB), the following error
+message may be displayed:
+
+   An error occurred while generating the offline Address Book. To view details,
+   see the application event log in the Windows NT Event Viewer on the offline
+   Address Book Server. Microsoft Exchange Administrator ID no. c1031662
+
+In addition, the following event appears in the event log:
+
+   Event ID: 5004
+   Description: Generation of the offline Address Book is complete.
+   Result: An error occurred.
+
+CAUSE
+=====
+
+The default permissions of Full Control for the Everyone group has changed on
+the Winnt folder and all subfolders.
+
+RESOLUTION
+==========
+
+Change the permissions of the Everyone group to Full Control on the Winnt folder
+and all subfolders. Regenerate the offline Address Book.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

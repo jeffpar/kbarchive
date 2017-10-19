@@ -1,0 +1,65 @@
+DOCUMENT:Q132673  17-DEC-2000  [win95x]
+TITLE   :NET VIEW /DOMAIN: <domainname> Command Fails
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:msnets win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In real mode, the command "net view /domain: <domainname>" fails and you
+receive the following error message:
+
+   Error 6118: The computer(s) sharing resources in this workgroup cannot be
+   located. The computer(s) might have been restarted. Wait a few minutes, and
+   then try again. If the problem persists, make sure your network-adapter
+   settings are correct.
+
+CAUSE
+=====
+
+This problem occurs because the Basic redirector included in Net.exe does not
+support viewing LAN Manager and Windows NT domains.
+
+RESOLUTION
+==========
+
+Because the Basic redirector does support the viewing of workgroups, the command
+"net view /domain" functions in an MS-DOS Command window.
+
+
+MORE INFORMATION
+================
+
+Note that the /DOMAIN (or abbreviated /D) switch is not documented in online
+Help for the NET VIEW command. If you type "net view /?" this switch is not
+listed.
+
+======================================================================
+Keywords          : msnets win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

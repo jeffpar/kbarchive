@@ -1,0 +1,99 @@
+DOCUMENT:Q164674  27-OCT-2000  [iis]
+TITLE   :How to Use a .CMD or .BAT File as a CGI Script
+PRODUCT :Internet Information Server
+PROD/VER:winnt:2.0,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it
+if a problem occurs. For information on how to do this, view the "Restoring
+the Registry" online Help topic in Regedit.exe or the "Restoring a Registry
+Key" online Help topic in Regedt32.exe.
+
+SUMMARY
+=======
+
+Internet Information Server 1.0 (IIS) can use .cmd or .bat files as CGI scripts.
+In IIS 2.0 and 3.0, this capability has been removed by default.
+
+MORE INFORMATION
+================
+
+You can enable the use of .cmd and .bat files with IIS by adding a script
+mapping to the registry.
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall Windows. Microsoft cannot guarantee that problems
+resulting from the incorrect use of Registry Editor can be solved. Use Registry
+Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" online Help topic in Registry Editor (Regedit.exe) or the "Add and
+Delete Information in the Registry" and "Edit Registry Data" online Help topics
+in Regedt32.exe. Note that you should back up the registry before you edit it.
+
+1. Start Registry Editor (Regedt32.exe) and locate the following registry subkey
+   in the HKEY_LOCAL_MACHINE subtree:
+
+      \SYSTEM\CurrentControlSet\Services\W3SVC\Parameters\Script Map
+
+2. On the Edit menu, click Add Value.
+
+3. Enter the following for .cmd files:
+
+      Value Name: .CMD
+      Data Type: REG_SZ
+      String:
+     "\Winnt\system32\cmd.exe /c %s %s" (Leave off the quotation marks)
+
+   For .BAT files, repeat this process and substitute .BAT for .CMD in the value
+   name.
+
+Sample Script
+-------------
+
+Use any text editor to create the following script and save it as myscript.cmd.
+
+      @echo off
+      echo Content-Type: text/plain
+      echo.
+      echo Hello World!!
+      echo.
+      echo.
+
+The above test script can be placed in the IIS server \scripts directory. You can
+run this script from the following URL, for example:
+
+   http://servername/scripts/myscript.cmd
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis300 kbiis200
+Version           : winnt:2.0,3.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

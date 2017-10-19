@@ -1,0 +1,66 @@
+DOCUMENT:Q194824  07-MAY-2002  [homegame]
+TITLE   :Combat Flight Simulator: Movie Unavailable for Training Mission
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbsound kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start a Training Mission in Combat Flight Simulator, you may
+be unable to play the introductory movie for the mission, and you may not hear
+any verbal instructions while you fly the mission.
+
+CAUSE
+=====
+
+This behavior can occur if both of the following conditions are true:
+
+ - You selected the Typical option when you installed Combat Flight Simulator,
+   or you selected the Custom option, and then clicked to clear the Training
+   Mission Media check box.
+
+ - The Combat Flight Simulator CD-ROM is not in the CD-ROM drive.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. Insert the Combat Flight Simulator CD-ROM into the CD-ROM drive.
+
+2. Press X to end the Training Mission.
+
+3. Restart the Training Mission.
+
+Additional query words: 1.00 msgame combatfs cfs kbfaq
+
+======================================================================
+Keywords          : kbdisplay kbsound kbimu msgame kbfaq
+Technology        : _IKkbbogus kbGamesSearch kbCombatFlightSim kbCombatFlightSimSearch kbSimSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

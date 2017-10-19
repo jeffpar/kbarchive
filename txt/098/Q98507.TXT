@@ -1,0 +1,60 @@
+DOCUMENT:Q98507  08-NOV-1999  [win95x]
+TITLE   :HP PaintJet XL Prints from Paper Tray with Manual Feed Option
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have configured your printer driver for manual feed and you print to a
+Hewlett-Packard (HP) PaintJet XL, the printer takes the paper from the paper
+tray if you issue the Print command before you place a piece of paper in the
+manual feeder.
+
+CAUSE
+=====
+
+If you issue the Print command and no paper has been placed in the manual
+feeder, the printer draws paper from the paper tray and pauses. The Manual Feed
+Mode light comes on, and Print Manager prompts you to insert paper. When you
+choose OK (even after placing paper in the manual feeder), the output is printed
+on the page taken from the paper tray.
+
+WORKAROUND
+==========
+
+To work around this situation, place a piece of paper in the manual feeder
+before you issue the Print command. When Print Manager asks for paper to be
+inserted, choose OK; the page will be manually fed to the printer.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

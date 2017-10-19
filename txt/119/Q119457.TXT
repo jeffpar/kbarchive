@@ -1,0 +1,61 @@
+DOCUMENT:Q119457  11-FEB-2002  [visualc]
+TITLE   :FIX: Visual C++ Setup Program Prompts "Insert dis
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,2.0,2.1,4.0,4.1
+OPER/SYS:
+KEYWORDS:kbsetup kbVC500fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 1.0, 2.0, 2.1, 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Copy the MSVC directory tree from the CD to a floptical drive, a Bernoulli
+drive, or another drive that the system considers a removable drive. When you
+run the setup program, you are given the following prompt, as though you are
+installing from floppy disks:
+
+   Insert disk <N>
+
+RESOLUTION
+==========
+
+You must install from the CD or from a fixed drive. You can lock certain
+removable drives so that the system will treat them as fixed drives. Refer to
+the documentation for your drive for more details.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ version 5.0.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup kbVC500fix 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbvc100 kbVC410 kbVC200 kbVC210
+Version           : :1.0,2.0,2.1,4.0,4.1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

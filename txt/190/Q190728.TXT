@@ -1,0 +1,82 @@
+DOCUMENT:Q190728  22-SEP-1999  [exchange]
+TITLE   :XADM: FDoMaintenance Halted Due to Error 0xfffffc15
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you apply an information store hotfix, you may see the following error
+message in the application event log of a computer running Exchange Server
+version 5.5:
+
+   Event ID: 7200
+   Source: MSExchangeIS Public
+   Type: Error
+   Category: General
+   Description:
+   Background thread FDoMaintenance halted due to error code 0xfffffc15.
+
+CAUSE
+=====
+
+This error message appears after you apply a hotfix for Store.exe (build numbers
+between 2191 and 2217).
+
+This message only appears during the scheduled information store maintenance (by
+default between 1:00A.M. and 6:00A.M.)
+
+WORKAROUND
+==========
+
+To work around this problem, apply the latest U.S. service pack for Microsoft
+Exchange Server version 5.5. For information on obtaining the service pack,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q191014 How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Exchange Server version 5.5.
+
+MORE INFORMATION
+================
+
+Note this issue is only relevant to customers reporting the exact error message
+above. If the error code is other than 0xfffffc15, it may be a different issue.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

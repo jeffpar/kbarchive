@@ -1,0 +1,77 @@
+DOCUMENT:Q239627  25-JUN-2000  [homemm]
+TITLE   :Encarta Interactive World Atlas Is Unable to Continue Running...
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kberrmsg kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Interactive World Atlas 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to add a favorite in Microsoft Encarta World Atlas 2000, a
+Multimedia Map may open, and then Media Viewer may open in front of the map.
+
+If you click a hyperlink in the Media Viewer article or on the map behind Media
+Viewer, or click the close button to close Media Viewer, you receive an error
+message similar to the following:
+
+   Encarta Interactive World Atlas is unable to continue running. The problem
+   may be the result of low system resources such as memory or disk space. Try
+   closing other running applications or freeing up disk space before restarting
+   Encarta Interactive World Atlas.
+
+When you click OK, Encarta World Atlas 2000 quits unexpectedly.
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true when you click OK
+in the Add A Favorite dialog box:
+
+ - A Multimedia Map is open.
+
+ - Media Viewer is open.
+
+RESOLUTION
+==========
+
+To work around this issue, restart Encarta World Atlas 2000. When you want to
+add a favorite, make sure that Media Viewer is closed.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta World Atlas
+2000.
+
+Additional query words: multi multi-media media mm ewa2k crash
+
+======================================================================
+Keywords          : kberrmsg kbui kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaWorldAtlas2000
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

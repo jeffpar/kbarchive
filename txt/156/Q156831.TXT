@@ -1,0 +1,54 @@
+DOCUMENT:Q156831  08-NOV-2001  [homegame]
+TITLE   :Full Court Press: How to Shoot from the Free Throw Line
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+1.0
+WINDOWS
+kbusage kbhowto
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NBA Full Court Press for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To shoot the ball from the free throw line, you need to hold the shoot button
+down, or tap it several times. In game play each time you tap the shoot button
+the player pump fakes, but from the free throw line there is no pump fake and
+the player will not release the ball.
+
+If you release the shoot button at just the right moment, the player shoots the
+ball. The shot ranges for players in Full Court Press vary by player skill
+level. The shot range for good shooters is much larger than the shot range for
+bad shooters, and therefore gives you a much greater margin for error.
+
+Additional query words: 1.00 NBA full court press free throw shot shoot
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbZNotKeyword kbNBAFullCourtPress
+Version           : WINDOWS:1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,66 @@
+DOCUMENT:Q316442  15-JAN-2002  [msnetwork]
+TITLE   :Accessing MSN E-mail at Hotmail.com
+PRODUCT :The Microsoft Network
+PROD/VER::6.0,6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 6.0, 6.1 
+ - The Microsoft Network Version 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article includes instructions for accessing your e-mail messages at
+http://www.hotmail.com if you are a current MSN Internet Access and MSN Explorer
+user. :
+
+MORE INFORMATION
+================
+
+To access e-mail from http://www.hotmail.com from the MSN Explorer home page
+
+1. Type www.hotmail.com in the Search box, and then press Go.
+   A message appears stating ?Would you like to read your mail in MSN Explorer or
+   go to Hotmail.com Web site??
+
+2. Click ?Go to Hotmail Web site?.
+
+To access e-mail from http://www.hotmail.com from outside of the MSN Explorer
+home page
+
+1. Type www.hotmail.com in the Search box.
+   The Hotmail.com sign-in page appears.
+
+2. Type your MSN user name, and then select msn.com on the menu.
+
+3. Type your MSN account password, and then select Sign In.
+
+Additional query words: kbimu; MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN600 kbMSN610 kbMSN700
+Version           : :6.0,6.1
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

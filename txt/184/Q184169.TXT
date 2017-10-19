@@ -1,0 +1,71 @@
+DOCUMENT:Q184169  09-SEP-1999  [sms]
+TITLE   :SMS: SMSEXEC Dr. Watson Error During Package Distribution
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:smsinst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Systems Management Server Executive service (Smsexec.exe) a Dr.
+Watson occurs on the primary site server during a package distribution, if a
+NetWare logon and/or distribution server has insufficient disk space to receive
+the package.
+
+The Systems Management Server site server Event Log will log Event ID 109:
+
+      Component = SMS_Despooler
+      Operation = Install
+      Object = Package
+      Error Code = 1
+      Note: Failed to install package. There isn't sufficient disk space
+      available on that server. Disk space available on that server is Y
+      megabytes, space required is Z megabytes.
+
+WORKAROUND
+==========
+
+To prevent the error from occurring, you must make sufficient space available on
+each target NetWare server. Sufficient disk space is required for the package to
+be successfully distributed.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. We are researching this problem and will post new information in
+the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : smsinst 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

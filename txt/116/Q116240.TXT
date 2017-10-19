@@ -1,0 +1,108 @@
+DOCUMENT:Q116240  11-FEB-2002  [visualc]
+TITLE   :FIX: Compiler Errors Initializing const Reference to an Array
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5,2.0,4.0,4.1,4.2,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbCPPonly kbVC kbVC100bug kbVC150bug kbVC200bug kbVC400bug kbVC410bug kbVC42
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), used with:
+    - Microsoft C/C++ for MS-DOS 
+    - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5 
+    - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 4.0, 4.1, 4.2, 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Initializing a "const" reference to an array with a "non-const" array causes
+incorrect compiler errors to be generated. Two such errors are C2607 and C2561.
+
+CAUSE
+=====
+
+The C++ compiler does not properly handle initialization of a "const T&",
+where T is an array. For example, you should be able to initialize a variable of
+type "const float (&ref)[3][2]" with a variable of type "float [3][2]", but
+the compiler does not handle this case. Furthermore, interactions between const
+declarations and typedefs of arrays do not work in all circumstances.
+
+RESOLUTION
+==========
+
+To work around the problem, either do not use the const specifier or add
+explicit casts to the appropriate const types.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This problem was corrected in Microsoft Visual C++ .NET.
+
+MORE INFORMATION
+================
+
+The sample code below demonstrates the problem. Compiling it yields at least one
+of the following error messages:
+
+   error C2607: 'initializing' : cannot implicitly convert a 'int [3][2]' to a
+   'int __near &[3][2]' that is not const
+
+   error C2561: 'getMtx' : function must return a value
+
+To work around the problem, use each commented line in the program to replace the
+line immediately above it.
+
+Note: Simply removing the const specifier from the getMtx function's return type
+eliminates the problem.
+
+Sample Code
+-----------
+
+   /* Compile options needed: none
+   */ 
+   typedef int Matrix[3][2];
+
+   class Data
+   {
+       Matrix Mtx;
+       const Matrix& getMtx();
+       // const int (&getMtx() const)[3][2];
+   };
+
+   inline const Matrix& Data::getMtx()
+   // inline const int (&Data::getMtx() const)[3][2]
+   {
+       return Data::Mtx;
+       // return (const int (&)[3][2])Data::Mtx[0][0];
+   }
+
+Additional query words: kbVC400bug 8.00 8.00c 9.00
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbVC kbVC100bug kbVC150bug kbVC200bug kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600bug kbNoUpdate 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :1.0,1.5,2.0,4.0,4.1,4.2,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,76 @@
+DOCUMENT:Q162809  27-JUL-2001  [win95x]
+TITLE   :How to Make a Hands-Free Dial-Up Connection in Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:dun osr2 win95 kbDialUp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 95 OEM Service Release, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can use the updated Dial-Up Networking components included with the Dial-Up
+Networking 1.3 Upgrade to create a hands-free or single-click Dial-Up Networking
+connection.
+
+For additional information about the Dial-Up Networking 1.3 Upgrade, please see
+the following article in the Microsoft Knowledge Base:
+
+   Q191494 Dial-Up Networking 1.3 Upgrade Available
+
+NOTE: ISDN is not required to install the updated Dial-Up Networking components.
+Files specific to ISDN are installed only if ISDN is present and detected by the
+Setup program.
+
+MORE INFORMATION
+================
+
+To create a hands-free or single-click Dial-Up Networking connection once the
+Dial-Up Networking 1.3 Upgrade has been installed, follow these steps:
+
+1. In My Computer, double-click Dial-Up Networking.
+
+2. Click one of the Dial-Up Networking connection icons.
+
+3. On the Connections menu, click Settings.
+
+4. On the General tab, make sure the Prompt For Information Before Dialing check
+   box is cleared.
+
+   NOTE: If the server being connected to requires a user name and password, the
+   user name and password must already be entered, and the Save Password check
+   box must be selected.
+
+5. Click OK.
+
+After following these steps you can complete a connection simply by
+double-clicking the connection icon, or by clicking the connection with the
+right mouse button and then clicking Connect.
+
+======================================================================
+Keywords          : dun osr2 win95 kbDialUp 
+Technology        : kbWin95search kbOPKSearch kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

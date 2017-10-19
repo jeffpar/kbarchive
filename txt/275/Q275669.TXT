@@ -1,0 +1,71 @@
+DOCUMENT:Q275669  08-DEC-2000  [odbc]
+TITLE   :ODBC Driver for DB2 Truncates Binary Data Flow That Includes NUL
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER::4.0 SP2,4.0 SP3
+OPER/SYS:
+KEYWORDS:kbGrpDSVCDB kbDSupport kbsna400sp2 kbsna400sp3 kbSNA400sp4fix kbSNA400PreSP4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft ODBC Driver for DB2, versions 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the Microsoft Open Database Connectivity (ODBC) Driver for DB2 is used to
+retrieve data from a DB2 table that contains a binary field that has NULLs
+(0x00), then the data is truncated at the first NULL.
+
+For example, if a DB2 table is created and populated with data as follows
+
+   CREATE TABLE OWNER.TABLE (COL1 CHAR (5), COL2 VARCHAR (40))
+   INSERT INTO OWNER.TABLE ('00001', '00x100x200x000x3')
+
+then when you select the COL2, just '00x100x2' is returned.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for SNA Server 4.0. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft SNA Server version 4.0
+Service Pack 2 (SP2) and 4.0 SP3.
+
+This problem was first corrected in SNA Server 4.0 Service Pack 4.
+
+Additional query words: MSDB2OLE AS/400 OS/400 OS/390 Mainframe DB2/MVS DB2/NT sp2 sp3 null's
+
+======================================================================
+Keywords          : kbGrpDSVCDB kbDSupport kbsna400sp2 kbsna400sp3 kbSNA400sp4fix kbSNA400PreSP4fix 
+Technology        : kbAudDeveloper kbODBCSearch kbODBCDB2400SP2 kbODBCDB2400SP3
+Version           : :4.0 SP2,4.0 SP3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

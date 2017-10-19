@@ -1,0 +1,60 @@
+DOCUMENT:Q145922  07-AUG-1999  [exchange]
+TITLE   :XADM: Configuring Permissions for Windows NT Accounts
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains information on configuring permissions for Windows NT
+accounts in the Administrator program of Microsoft Exchange Server, version 4.0.
+
+MORE INFORMATION
+================
+
+Use the Permissions property page to specify the rights that users or groups
+have on the Configuration container.
+
+Permissions that you set on the Configuration container are inherited by all
+objects and containers within the Configuration container. For example, a user
+with Modify Permissions rights on the Configuration container is able to modify
+permissions on all subordinate containers and objects of the Configuration
+container.
+
+If permissions are set on the Site container, they are only inherited by the
+recipients container. This is useful for allocating permissions for Admin
+Operators who are only required to add/modify user mailboxes and not change any
+of the Connectors, Directory Replication, and Server configurations.
+
+Additional query words: faq
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

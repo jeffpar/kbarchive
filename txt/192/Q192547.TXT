@@ -1,0 +1,99 @@
+DOCUMENT:Q192547  09-AUG-2001  [winnt]
+TITLE   :WINSADMIN Writes Invalid SP Time to Registry
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbWinNT400sp4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you apply the hotfix described in the following article in the Microsoft
+Knowledge Base
+
+   Q187555 WINS Incorrect Version ID Assigned During Scavenging
+
+you encounter the following event in the event log when the WINS service starts:
+
+   4183 - WINS_EVT_WRONG_TIME_FORMAT
+   ---------------------------------
+   The format of time should be hh:mm:ss. Check value of "SpTime" in the
+   Registry.
+
+CAUSE
+=====
+
+You only see this event if you have the Log Detailed Events option selected in
+the Advanced Configuration dialog box via WinsAdmin UI.
+
+When the SpTime is 0 (the empty string), the internal time class writes out the
+string as "--". The old code never wrote out the string if the time was 0, so
+this wouldn't happen. The fix is to delete the value if it is 0.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+Service Pack 4.
+
+MORE INFORMATION
+================
+
+SpTime
+------
+
+   Data Type: REG_SZ
+   Default: None
+   Path: ..\SYSTEM\CurrentControlSet\Services\Wins\Partners\Pull
+          \<Ip Address>
+
+Specifies the start time for replication. For SpTime, WINS replicates at the set
+time if it is in the future for that day. After that, it replicates every number
+of seconds specified by TimeInterval. If SpTime is in the past for that day,
+WINS replicates every number of seconds specified by TimeInterval, starting from
+the current time (if InitTimeReplication is set to 1).
+======================================================================
+Keywords          : kbWinNT400sp4fix 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

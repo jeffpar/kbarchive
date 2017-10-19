@@ -1,0 +1,73 @@
+DOCUMENT:Q154907  10-AUG-2001  [win95x]
+TITLE   :How to Enable or Disable Quick View
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:4.0 95
+OPER/SYS:
+KEYWORDS:kbtool win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use the right mouse button to click a file in Windows Explorer or My
+Computer, some files have a Quick View option and some do not. This article
+describes how to enable or disable Quick View for a particular file type.
+
+
+MORE INFORMATION
+================
+
+To enable or disable Quick View for a particular file type, follow these steps:
+
+1. In Windows Explorer, click Options on the View menu.
+
+2. Click the File Types tab.
+
+3. Click the type of file you want to modify, and then click Edit.
+
+4. Enable or disable Quick View.
+
+Note that not all items are displayed as you expect when you are using Quick
+View. For example, when you view a binary file such as an animated cursor
+(*.ani) file using Quick View, you see the binary contents and not a picture of
+the cursor.
+
+
+NOTE: Quick View is included in the CD-ROM version of Windows 95, but not in the
+floppy disk version. If you are using the floppy disk version of Windows 95 and
+want to use Quick View, please see the following article in the Microsoft
+Knowledge Base for information about the availability of Quick View:
+
+   Q135315 CD-ROM Extras for Microsoft Windows 95 Upgrade
+
+Additional query words: quickview winnt
+
+======================================================================
+Keywords          : kbtool win95 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : 4.0 95
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

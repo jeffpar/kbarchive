@@ -1,0 +1,69 @@
+DOCUMENT:Q183958  31-JUL-2001  [sms]
+TITLE   :SMS: Access Violation in Wuser32.exe/Security.dll
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::1.2 SP3
+OPER/SYS:
+KEYWORDS:kbtshoot smsremtshoot kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When running a remote control session with a client computer running Windows NT,
+Wuser32.exe may fail with an access violation C0000005.
+
+The fault occurs in Security.dll, function DeleteSecurityContext(). The caller is
+Wuser32.exe (the Systems Management Server Remote Control Agent).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. This problem has been corrected in the latest U.S. service pack for
+Systems Management Server version 1.2. For information on obtaining the service
+pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+WORKAROUND
+==========
+
+To resolve this problem, obtain the following fix or wait for the next Systems
+Management Server service pack.
+
+This fix should have the following time stamp:
+
+      03/27/98   09:12p               170,208 Wuser32.exe (Intel)
+      03/27/98   09:11p               345,872 Wuser32.exe (Alpha)
+
+Additional query words: prodsms gpf drwtsn32 av
+
+======================================================================
+Keywords          : kbtshoot smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS120SP3
+Version           : :1.2 SP3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

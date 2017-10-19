@@ -1,0 +1,62 @@
+DOCUMENT:Q272166  22-OCT-2000  [sms]
+TITLE   :SMS: Smsclreg.dll Generates Error When Running 20clicln.bat
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0 SP2
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run a 20clicln.bat file to remove System Management Server (SMS) Client
+Components, you might receive the following error message:
+
+   Dialog Title: Error
+   Dialog Message: Could not load the DLL library C:\TEMP\smsclreg.dll
+
+CAUSE
+=====
+
+There are several versions of the 20clicln.bat file. When you use the
+20clicln.bat file (02/18/1999, 6:50 AM) from the SMS 2.0 Service Pack 1 to clean
+the SMS 2.0 Service Pack 2 client, you receive the error message shown in the
+"Symptoms" section of this article.
+
+WORKAROUND
+==========
+
+When you remove the SMS 2.0 Service Pack 2 clients, be sure to use the same
+version of the 20clicln.bat file (03/22/2000, 12:56 PM). You can get the
+20clicln.bat file by running Support.exe from the Support Directory of your SMS
+2.0 Service Pack 2 CD-ROM.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200SP2
+Version           : :2.0 SP2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,74 @@
+DOCUMENT:Q306500  16-OCT-2001  [foxpro]
+TITLE   :PRB: "Foxcode Script '' Failure" Error with Intellisense
+PRODUCT :Microsoft FoxPro
+PROD/VER::7.0
+OPER/SYS:
+KEYWORDS:kbvfp kbGrpDSFox kbDSupport kbvfp700
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you uninstall a beta version of Visual FoxPro 7.0 and then install the
+release version, when Intellisense tries to display the syntax of a command or
+function, the following error may occur:
+
+   Foxcode Script '' Failure
+
+CAUSE
+=====
+
+The Visual FoxPro 7.0 beta uninstall program does not remove information in the
+Windows registry used by Intellisense. This information has pathing data that
+changed between the beta and release versions of the product.
+
+RESOLUTION
+==========
+
+Run VFPClean.app from the Command window of Visual FoxPro. VFPClean.app is
+installed in the home folder of Visual FoxPro 7.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Install a beta version of Visual FoxPro 7.0.
+
+2. Uninstall the beta version.
+
+3. Install the release version of Visual FoxPro 7.0 on the same computer.
+
+4. Start Visual FoxPro 7.0 and in the Command window type a command to invoke
+   Intellisense. The error mentioned in the "Symptoms" section may occur.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbGrpDSFox kbDSupport kbvfp700 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP700
+Version           : :7.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

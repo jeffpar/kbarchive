@@ -1,0 +1,74 @@
+DOCUMENT:Q150684  10-AUG-2001  [frontpg]
+TITLE   :FP: "No Server on Port ..." Error Opening, Creating Web Page
+PRODUCT :Word Front Page
+PROD/VER:windows:1.1,97
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for Windows 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to create a new Web or open an existing Web in FrontPage
+Explorer, the following message appears:
+
+   There is no server on port <port number> at '<Server name>'
+
+where <port number> is the port to which your server is connected.
+
+CAUSE
+=====
+
+The auto-launch feature of the FrontPage Personal Web Server functions only when
+the server is running from port 80.
+
+WORKAROUND
+==========
+
+If your FrontPage Personal Web Server is installed on a port other than 80,
+start the Personal Web Server before you work with FrontPage Explorer.
+
+MORE INFORMATION
+================
+
+If you are using FrontPage 1.0 and you choose the full installation of FrontPage
+1.1 (as opposed to the upgrade), the FrontPage Personal Web Server 1.1 is
+installed to port 8080.
+
+FrontPage 98 expanded the auto-launch feature so it will work with the FrontPage
+Personal Web Server if it is configured to use port 8080. However, other
+possible port configurations, such as port 8088, still require you to manual
+launch the server (Vhttpd32.exe) from the appropriate folder.
+
+
+Additional query words: automatic auto-start startup start up 98
+
+======================================================================
+Keywords          : kberrmsg kbsetup kbdta 
+Technology        : kbFrontPageSearch kbFrontPage1xSearch kbFrontPage97Search kbZNotKeyword3 kbFrontPage110
+Version           : windows:1.1,97
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,86 @@
+DOCUMENT:Q183555  14-APR-2001  [sna]
+TITLE   :Size Of Dynamic Output Array Always Set to Maximum
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:1.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft COM Transaction Integrator for CICS and IMS, version 1.0, used with:
+    - Microsoft SNA Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a Visual Basic programmer uses the UBound function to obtain a count of the
+actual number of elements returned in an array, the result always indicates the
+maximum possible value, even though fewer elements may actually have been
+returned in the first (or only) array dimension.
+
+CAUSE
+=====
+
+The COM Transaction Integrator creates the safe array that is returned to the
+Visual Basic program. The dimension(s) of the returned array will always be set
+to the maximum, because the COMTI runtime component has no means of determining
+the actual number of elements returned without incurring excessive processing
+overhead.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft COM Transaction
+Integrator for CICS and IMS version 1.0 included with SNA Server version 4.0.
+
+This problem was corrected in the latest SNA Server version 4.0 U.S. Service
+Pack. For information on obtaining this Service Pack, query on the following
+word in the Microsoft Knowledge Base (without the spaces):
+
+   " S E R V P A C K " (without the quotation marks)
+
+MORE INFORMATION
+================
+
+Steps to Reproduce:
+
+1. In Component Builder (CB), declare a method for which there is a parameter
+   declared as an output array.
+
+2. The parameter is the final output field returned.
+
+3. The method's advanced properties specify that the "Final field from host is
+   bounded." (Specifying the property, "Final field from host is bounded" for
+   the method indicates that the number of values returned in the first array
+   dimension can vary up to a specified maximum number.)
+
+4. The front-end client program written in Visual Basic declares this array as a
+   dynamic array.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbCOMTISearch
+Version           : WINDOWS:1.0,4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,68 @@
+DOCUMENT:Q121688  10-JUN-1999  [homegame]
+TITLE   :Using the ThrustMaster WCS with Space Simulator
+PRODUCT :Microsoft Home Games
+PROD/VER:MS-DOS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+kb3rdparty
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Space Simulator for MS-DOS, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you have a ThrustMaster Mark II Weapons Control System (WCS), you can use the
+SPACESIM.ADV file found in your Space Simulator directory to configure your
+hardware for use with Space Simulator. This assigns many frequently used
+features in Space Simulator to controls on the WCS.
+
+MORE INFORMATION
+================
+
+To use the SPACESIM.ADV file to configure your Mark II WCS, you must have the
+updated chip and microcode from ThrustMaster. To determine if you have the
+updated chip and microcode, type the following at the C:\MARK2 prompt and press
+ENTER:
+
+   dir *.exe
+
+If MK2LOAD.EXE is included in the list of files reported, you have the updated
+chip and microcode. If you do not have the updated chip and microcode, you can
+obtain it by contacting ThrustMaster at (503) 639-3200.
+
+Consult the Mark II WCS documentation for information about using the MK2LOAD.EXE
+file to download configuration files to the Mark II WCS.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 1.00 Spacesim sim dos ss1 D_SpaceSim
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbZNotKeyword3 kbSpaceSim100DOS
+Version           : MS-DOS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

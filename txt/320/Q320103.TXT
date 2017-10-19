@@ -1,0 +1,126 @@
+DOCUMENT:Q320103  15-MAY-2002  [vbwin]
+TITLE   :BUG: Conditionally Compiled Public Events Cause Access Violation
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbActivexEvents
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use conditionally compiled public events, you may receive an access
+violation in the Microsoft Visual Basic development environment. This error may
+occur during compilation or when you shut down the development environment.
+
+CAUSE
+=====
+
+This problem can occur if you use an Object Browser attribute to define and
+apply a public variable after the conditionally compiled public events.
+
+RESOLUTION
+==========
+
+To work around this problem, move any variables that have Object Browser
+attributes before any conditionally compiled public events.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Problem
+------------------------------
+
+1. Create a new ActiveX.dll project, and then paste the following code in the
+   Class1 module:
+
+   Option Explicit
+
+   'Move L here and everything will be fine!
+   'Public L As Long
+
+   #Const switch = False
+
+   Public Event ev1()
+   Public Event ev2()
+
+   #If switch Then
+       Public Event Ev3()
+       Public Event Ev4()
+   #End If
+
+   Public Event ev5()
+
+   'L has had HelpID and Description attributes set with the Object Browser.
+   'Find L for your class in the Object Browser, and then select "Properties."
+
+   Public L As Long
+
+   Public Event ev6()
+
+2. On the Tools menu, click Procedure Attributes.
+
+3. In the Name dialog box, click L.
+
+4. In the Description dialog box, type "Test" (without the quotation marks).
+
+5. In the Help Context ID dialog box, type "1" (without the quotation marks).
+
+6. On the File menu, click Save, and then click "Make the dll".
+
+7. Create a new Standard Exe project. By default, Form1 is created.
+
+8. On the Project menu, click References, select the reference to the ActveX.dll
+   project that you just created, and then click OK.
+
+9. Place a Command Button control on Form1.
+
+10. Open the form in code view, and then paste the following code:
+
+   Private Sub Command1_Click()
+       'Change Project1 to the name of the ActiveX.dll project that you just created.
+       Dim x As Project1.Class1
+       Set x = New Class1
+       x.L = 5
+       MsgBox x.L
+   End Sub
+
+11. Run the project and you will receive the access violation.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbActivexEvents 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,87 @@
+DOCUMENT:Q223125  11-JAN-2001  [vbwin]
+TITLE   :FIX: "Addins VB6.EXE - Application Error" in Data Project
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbservicepack kbide kbVBp600bug kbIDEProject kbGrpDSVB kbVS600sp2 kbVS600SP1 kbVS600sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An application error occurs in a Data Project when the toolbox is not visible
+and the default form is clicked.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3.
+
+For more information about Visual Studio 6.0 Service Packs, please see the
+following articles in the Microsoft Knowledge Base:
+
+Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new Data Project in Visual Basic 6.0.
+
+2. Make sure that the Visual Basic toolbox is NOT visible within the IDE when
+   Visual Basic loads. If it is, close the toolbox, exit Visual Basic, start it
+   up again, and repeat step 2.
+
+3. From the Project window, double-click the "frmDataEnv" form to view its
+   design.
+
+4. Click on the form.
+
+   This causes an Access Violation in VB6.exe.
+
+NOTE:
+
+ - There is no problem with clicking on the form if the toolbox is shown in the
+   IDE.
+
+ - This occurs only in the Visual Basic 6.0 IDE and not at run-time.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbservicepack kbide kbVBp600bug kbIDEProject kbGrpDSVB kbVS600sp2 kbVS600SP1 kbVS600sp3fix 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

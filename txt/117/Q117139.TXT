@@ -1,0 +1,58 @@
+DOCUMENT:Q117139  22-NOV-1999  [msdos]
+TITLE   :Hard Disk Access Disappears with Ultrastor 34F Local Bus
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.0,5.0a,6.0,6.2,6.21
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you add the line DOS=UMB to the CONFIG.SYS file, only one MS-DOS command
+can be executed before hard disk access is lost on a SCSI hard disk drive
+controlled by a Ultrastor 34F local bus SCSI controller.
+
+CAUSE
+=====
+
+This behavior occurs if DOS=UMB appears in the CONFIG.SYS file before the
+Ultrastor SCSI device driver, USPI14.SYS.
+
+RESOLUTION
+==========
+
+To correct this problem, edit the CONFIG.SYS file and add USPI14.SYS before the
+line DOS=UMB.
+
+If the USPI14.SYS file is not currently available, remark out the DOS=UMB line in
+the CONFIG.SYS until the file can be loaded.
+
+Additional query words: 5.00 5.00a 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.0,5.0a,6.0,6.2,6.21
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

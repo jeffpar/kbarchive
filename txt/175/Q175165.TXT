@@ -1,0 +1,60 @@
+DOCUMENT:Q175165  11-MAR-1999  [exchange]
+TITLE   :XADM: Changes to Internet Mail Service Wizard Cannot Be Saved
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Microsoft Exchange Administrator program may allow the Internet Mail Wizard
+to run, but you may not be allowed to save changes to the Microsoft Exchange
+Directory. The Internet Mail Wizard will give you the option of waiting until
+replication completes, but after it is finished, the only option within the
+Internet Mail Wizard is Cancel. This deletes the Internet Mail Service that you
+are trying to create.
+
+CAUSE
+=====
+
+After you add a Microsoft Exchange Server computer to an existing Microsoft
+Exchange site and start the directory replication process to update the
+directory on the new Exchange Server computer, the process may take a long time
+and you will not be allowed to make certain directory modifications in the
+Microsoft Exchange Administrator program.
+
+RESOLUTION
+==========
+
+You need to wait until directory replication is complete before running the
+Internet Mail Wizard. This may take some time, depending on the amount of
+information that needs to be replicated.
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

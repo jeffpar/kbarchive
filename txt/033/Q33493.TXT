@@ -1,0 +1,61 @@
+DOCUMENT:Q33493  18-DEC-2000  [win95x]
+TITLE   :Ventura Publisher 1.1 Freezes Serial Mouse
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:2.x,3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 2.03, 2.1, 2.11, 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Ventura Publisher version 1.1 uses the GEM operating system as its own windowing
+environment. This operating system takes over port usage in some cases. This
+problem has also been reported with Ventura Publisher version 2.0.
+
+MORE INFORMATION
+================
+
+When using a Microsoft Mouse with a serial interface, if you follow the steps
+below, your mouse pointer becomes frozen on the screen because Windows has no
+way of reinitializing the port:
+
+1. Execute Ventura from Windows.
+
+2. Exit Ventura to the MS-DOS Executive.
+
+At the beginning of the Ventura documentation is the note recommending that if
+you use Ventura version 1.1 with Windows, you should use a mouse with a bus
+interface.
+
+This information applies to Microsoft Windows 2.03, 2.1, 2.11, 3.0, and 3.0a.
+This does not apply to later versions of Windows.
+
+Additional query words: 2.03 2.10 3.00 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin203 kbWin210 kbWin211 kbWin300 kbWin300a
+Version           : WINDOWS:2.x,3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

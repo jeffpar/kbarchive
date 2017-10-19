@@ -1,0 +1,90 @@
+DOCUMENT:Q237506  25-JUN-2000  [homemm]
+TITLE   :Encarta 2000: Previous Version of Research Organizer Starts
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you attempt to open a Sample Project included with Microsoft Encarta Research
+Organizer 2000 from Windows Explorer, you may experience one or more of the
+following symptoms:
+
+ - A previous version of Encarta Research Organizer may start and open the
+   Sample Project.
+
+ - You may receive the following error message:
+
+   You need a new version of Research Organizer to open this file.
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true:
+
+ - You install Encarta Research Organizer 2000 without removing a previous
+   version of Encarta Research Organizer.
+
+ - The most recent instance of Encarta Research Organizer you started is the
+   previous version of Encarta Research Organizer that is still installed on
+   your computer.
+
+ - You attempt to open the Sample Project from Windows Explorer.
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+1. Start Encarta Research Organizer 2000.
+
+2. Under Get Started, click View Sample Projects.
+
+3. Click a sample project, and then click Open.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta Encyclopedia
+2000.
+
+MORE INFORMATION
+================
+
+To prevent this issue from occurring, remove any previous versions of Encarta
+Research Organizer installed on your computer after you install Encarta
+Encyclopedia 2000.
+
+Additional query words: multi multi-media media mm ero2k ee2k
+
+======================================================================
+Keywords          : kberrmsg kbtool kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc2000
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,74 @@
+DOCUMENT:Q180022  25-JUL-2001  [homekids]
+TITLE   :MSB Solar: Sound Suddenly Stops After You Click an Object
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbenv kbhw kbsound kbimu kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Scholastic's Magic School Bus series: Explores the Solar System for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click an object in Magic School Bus series: Explores the Solar System,
+sound may be played initially, and then suddenly stop and not start again.
+
+CAUSE
+=====
+
+This issue can occur if you are using a Creative Labs Sound Blaster AWE 64, a
+Sound Blaster 16, or a Sound Blaster AWE 32 PnP audio adapter.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following steps:
+
+1. Quit Magic School Bus series: Explores the Solar System.
+
+2. Click Start, point to Settings, and then click Control Panel.
+
+3. Double-click System.
+
+4. Click the Device Manager tab.
+
+5. Double-click the Sound, Video And Game Controllers branch to expand it.
+
+6. Click Creative AWE64, and then click Properties.
+
+7. Click the Settings tab.
+
+8. Click the Allow Full-Duplex Operation check box to select it.
+
+9. Click the Use Creative 3D Stereo Enhancement check box to select it.
+
+10. Click OK, and then click OK.
+
+Additional query words: mskids msbss frizz kbmm multimedia sb64 sbawe64 wav card
+
+======================================================================
+Keywords          : kbenv kbhw kbsound kbimu kbHardware 
+Technology        : kbHomeProdSearch kbKidsSearch kbScholasticSolar kbMSBSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

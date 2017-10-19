@@ -1,0 +1,121 @@
+DOCUMENT:Q165515  14-NOV-2000  [word97]
+TITLE   :WD97: Run-Time Error '4605': Command Not Available
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta kbdtacode kbmacroexample word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you close a document protected for forms, you receive the error:
+
+   Run-time error '4605': Command not available
+
+After receiving the error, you cannot close or save your document.
+
+CAUSE
+=====
+
+This problem occurs when you:
+
+ - Create a document and protect it for Forms (click Protect Document on the
+   Tools menu).
+
+   -and-
+
+ - While the protected document is open, create a Web page using the Web Page
+   Wizard.
+
+If you close the Web page you just created and attempt to save or close the
+protected document, the error will occur and you will be unable to save or close
+the protected document. Also, the UnProtect menu command is missing from the
+Tools menu.
+
+This problem occurs because the underlying template add-in, Html.dot, for the Web
+Page Wizard is still active and all menu commands reflect the menus of the
+Html.dot template. When you choose one of the menu commands, such as Close on
+the File menu, a call is made to the Html.wll add-in. Because the Web Page has
+been closed, the call fails.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, create and run the following macro:
+
+The following macro unprotects the active document, removes the HTML.Dot as an
+Add-In and then re-protects the active document.
+
+      Sub RestoreMenus()
+         Dim sDefPath As String
+         ' Unprotect the document.
+         If ActiveDocument.ProtectionType <> wdNoProtection Then
+            ActiveDocument.Unprotect
+         End If
+         ' Remove the HTML.Dot as an add-in.
+         ' (To restore the default menus.)
+         sDefPath = Options.DefaultFilePath(Path:=wdProgramPath)
+         AddIns(sDefPath & "\HTML.Dot").Installed = False
+         ' Reprotect the document preserving form field contents.
+         If ActiveDocument.ProtectionType = wdNoProtection Then
+            ActiveDocument.Protect Type:=wdAllowOnlyFormFields, NoReset:=True
+         End If
+      End Sub
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q173707 OFF97: How to Run Sample Code from Knowledge Base Articles
+
+
+REFERENCES
+==========
+
+For more information about getting help with Visual Basic for Applications,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q163435 VBA: Programming Resources for Visual Basic for Applications
+
+Additional query words: vb vba vbe
+
+======================================================================
+Keywords          : kbdta kbdtacode kbmacroexample word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

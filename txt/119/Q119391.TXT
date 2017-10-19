@@ -1,0 +1,56 @@
+DOCUMENT:Q119391  10-JUN-1999  [homegame]
+TITLE   :Must Restart to Get Some Scenery Options to Reappear
+PRODUCT :Microsoft Home Games
+PROD/VER:MS-DOS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Space Simulator for MS-DOS, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If Space Stations or Other Spacecraft is disabled from the Options, Preferences,
+Scenery menu, the commands cannot be enabled until you exit and restart Space
+Simulator.
+
+MORE INFORMATION
+================
+
+Once the options for Space Stations or Other Spacecraft are disabled, Space
+Simulator completely disables the rendering of all space stations or spacecraft
+other than the active craft. Even though the check boxes for the options can be
+reselected, Space Simulator will not enable the rendering for those objects. To
+enable rendering for Space Stations or Other Spacecraft, exit and restart Space
+Simulator.
+
+This is a limitation of Microsoft Space Simulator version 1.0.
+
+Additional query words: 1.00 spacesim dos Space Simulator 1.0 ss1
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbZNotKeyword3 kbSpaceSim100DOS
+Version           : MS-DOS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

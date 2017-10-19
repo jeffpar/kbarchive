@@ -1,0 +1,98 @@
+DOCUMENT:Q299898  29-AUG-2001  [foxpro]
+TITLE   :FIX: Coverage Profiler Fails when Procedure Contains &&
+PRODUCT :Microsoft FoxPro
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbvfp kbvfp600 kbvfp600bug KbDBFDBC kbGrpDSFox kbCodeSnippet tslic_tslic kbvfp700fix kb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use a procedure that has an inline comment on the same line as the
+procedure name when you mark a line in the Coverage Profiler, you may receive
+the following error message:
+
+   Problem:
+   "Command contains unrecognized phrase/keyword"
+   MarkTargetCoverage
+
+STATUS
+======
+
+This problem was corrected in Microsoft Visual FoxPro version 7.0 for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. In Visual FoxPro (VFP) 6.0, paste the following code in a new program.
+
+   *!* Q299898 FIX: Coverage Profiler Fails When Procedure Contains && On Procedure  Name Line
+   #DEFINE lMakeData .T.
+   #DEFINE CRLF  CHR(13)+CHR(10)
+
+   CLOSE DATA ALL
+
+   IF lMakeData
+   	DELETE FILE testdb.DBC
+   	DELETE FILE testtab1.DBF
+   	DELETE FILE testxx.txt
+   	CREATE DATA testdb
+   	CREATE TABLE testtab1 (f1 c(5) DEFAULT defval())
+   	=STRTOFILE("procedure defval "+ "&"+"&"+" this is the problem"+ CRLF+ ;
+   		"RETURN SUBSTR(sys(2015),6)"+CRLF + "ENDPROC", "testxx.txt")
+   	APPEND PROCEDURE FROM testxx.txt OVERWRITE
+   ENDIF
+
+   CLOSE DATABASES ALL
+   COMPILE DATABASE testdb
+
+   CLOSE ALL
+   SET COVERAGE TO cvglog
+
+   USE testtab1
+   APPEND BLANK
+
+   SET COVERAGE TO
+   CLOSE DATABASES ALL
+   DO (_COVERAGE) WITH 'cvglog'
+   RETURN
+
+2. Save and run the code (the name is unimportant).
+
+3. When the Coverage Profiler appears, click the line just below the toolbar
+   buttons and press the DOWN ARROW key.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp kbvfp600 kbvfp600bug KbDBFDBC kbGrpDSFox kbCodeSnippet tslic_tslic kbvfp700fix kbvfp700 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

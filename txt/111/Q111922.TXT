@@ -1,0 +1,89 @@
+DOCUMENT:Q111922  25-AUG-1999  [foxpro]
+TITLE   :How to Import ASCII Files with Nonstandard Delimiters
+PRODUCT :Microsoft FoxPro
+PROD/VER:2.00 2.5x 2.6x | 2.5x 2.6x 3.00
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft FoxPro for MS-DOS, versions 2.0, 2.5x, 2.6x 
+ - Microsoft FoxPro for Windows, versions 2.5x, 2.6x 
+ - Microsoft FoxPro for Macintosh, versions 2.5x, 2.6a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you are importing an ASCII text file that has delimiters other than a comma
+or a tab, specify the delimiter in the APPEND FROM command.
+
+MORE INFORMATION
+================
+
+Example (using FoxPro 2.x Sample Tables)
+----------------------------------------
+
+1. Create an ASCII text file by typing the following command in the Command
+   window:
+
+         MODIFY COMMAND test.txt
+
+2. In the TEST.TXT window, type in the following:
+
+         |4444|,|44444|,|12/01/93|,|444.44|,|444|
+         |5555|,|55555|,|12/02/93|,|555.55|,|555|
+         |6666||666666||12/03/93||666.66||666|
+         |7777||777777||12/04/93||777.77||777|
+         8888,|44444|,19931217,444.44,|444|
+         9999,|55555|,19931215,555.55,|555|
+         4545,45454,|12/01/93|,444.45,454
+         5656,56565,19931202,565.65,565
+
+   Notes
+
+    - To create the pipe character ("|"), press SHIFT+BACKSLASH (\).
+
+    - In this example, the pipe character is used as a field delimiter and the
+      comma is used as a field separator. Using DELIMITED WITH TAB yields tab
+      field delimiters and DELIMITED WITH BLANK yields space field delimiters.
+      The field delimiter characters are used only to surround the field data,
+      and the field separator characters will remain commas.
+
+3. Save the file.
+
+4. From the File menu, choose Open. Under List Files Of Type, select Table/DBF,
+   and then select INVOICES.DBF from the TUTORIAL subdirectory.
+
+5. In the Command window, type the following:
+
+         APPEND FROM TEST.TXT TYPE DELIMITED WITH |
+
+   Eight records should be added to the database.
+
+
+Additional query words: VFoxWin FoxMac FoxDos FoxWin 2.50 2.50a 2.50b 2.50c 2.60 import
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro260aMac kbFoxPro200DOS kbVFP300
+Version           : 2.00 2.5x 2.6x | 2.5x 2.6x 3.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

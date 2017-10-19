@@ -1,0 +1,88 @@
+DOCUMENT:Q122300  24-JUN-2002  [visualc]
+TITLE   :FIX: C1001 Error for typedef Within the Class Declaration
+PRODUCT :Microsoft C Compiler
+PROD/VER::2.0,6.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbCPPonly kbVCkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Editions, versions 2.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Compiling the code that uses a class declaration with a typedef of itself, as
+demonstrated by the sample code in the More Information section, produces this
+error:
+
+   fatal error C1001: INTERNAL COMPILER ERROR
+   (compiler file 'msc1.cpp', line 1056)
+   Please choose the Technical Support command on the Visual C++ Help menu, or
+   open the Technical Support help file for more information
+
+RESOLUTION
+==========
+
+Use a forward declaration for the class, and place the typedef line before the
+class declaration:
+
+      class A;
+      typedef A B;
+
+Alternatively, enclose the returned typedef name in parentheses to indicate that
+the constructor is used to return the value (see AltRetB in the sample code).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Microsoft Visual C++,
+32-bit Edition, version 4.0.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+   /* Compile options needed: none
+   */ 
+
+   class A
+   {
+      typedef A B;
+
+      B RetB() { return B(*this); }      // this causes the error
+
+      B AltRetB() { return (B)(*this); } // this line is OK
+   };
+
+
+Additional query words: 2.00 9.00 buglist2.00
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbVC kbbuglist kbfixlist
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC200 kbVC32bitSearch
+Version           : :2.0,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

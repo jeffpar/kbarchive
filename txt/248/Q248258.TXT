@@ -1,0 +1,82 @@
+DOCUMENT:Q248258  12-NOV-2001  [homegame]
+TITLE   :Games: <Program> Caused an Invalid Page Fault in Module Unknown
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kberrmsg kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NBA Inside Drive 2000, version 1.0 
+ - Microsoft NFL Fever 2000, version 1.0 
+ - Microsoft Pandora's Box, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start one of the products listed at the beginning of this
+article, you may receive one of the following error messages:
+
+    - NBA2000 caused an invalid page fault in module unknown.
+
+    - Nflfever caused an invalid page fault in module unknown.
+
+    - Pandora caused an invalid page fault in module unknown.
+
+CAUSE
+=====
+
+This behavior can occur if Earthlink or Mindspring Internet software is
+installed on your computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, quit the Earthlink or Mindspring Internet software before
+you start the program.
+
+1. Press CTRL+ALT+DEL to open the Close Program dialog box.
+
+2. In the Close Program window, click Armon32, and then click End Task.
+
+   If you receive a message that the program is busy or not responding, click End
+   Task again.
+
+3. Start the program.
+
+NOTE: The Earthlink or Mindspring Internet software starts automatically when you
+restart the computer.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 1.00 msgame nba2k nflfever nfl2k panbox fastlane gpf ipf
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg kbimu msgame 
+Technology        : _IKkbbogus kbGamesSearch kbNFLFever2000 kbNFLSearch kbPandoraSearch kbPandorasBox kbNBAInsideDrive2000
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

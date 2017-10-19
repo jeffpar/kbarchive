@@ -1,0 +1,116 @@
+DOCUMENT:Q154941  07-MAR-2002  [exchange]
+TITLE   :XADM: How to Determine Which Public Folder Replica is Used
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:kbusage exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Microsoft Exchange Server, replicas of public folders can be present on
+several Exchange Server computers in different Exchange Server sites of the
+Exchange Server organization.
+
+This article describes the algorithm that is used to determine which public
+folder replica is accessed when a user tries to open the contents of a public
+folder.
+
+MORE INFORMATION
+================
+
+The algorithm is as follows:
+
+ - If an instance of the public folder exists on the user's Public Folder
+   Server, that instance is used. The Public Folder Server is determined by the
+   Public Folder field on the General property page for the client's private
+   information store.
+
+ - If there is an instance of the public folder on any server with the same
+   "Server Location" as the Public Folder Server.
+
+ - Next, any server in the server location * is checked.
+
+ - If the client has an existing remote procedure call (RPC) connection to a
+   server, it is tried next.
+
+ - If there are several instances in the site, the information store uses a
+   per-computer random number (called a connection modulus) to determine which
+   server in the site it will connect to. This specifies a per-computer method
+   of determining the connection. In other words, two different users on the
+   same computer will connect to the same server to view the public folder.
+
+   Because the connection modulus is random per computer, this method will
+   distribute connections across all the available instances in the site. This
+   provides load balancing to servers within the site.
+
+   NOTE: The connection-modulus server may not be the same for a client for all
+   public folders. For example, if SERVER1 is the user's Public Folder Server,
+   and SERVER2 and SERVER3 are other Public Folder Servers in the same site that
+   contain replicas of a public folder, FOLDER1. The user's connection-modulus
+   server could be SERVER3. Now, suppose there is another public folder,
+   FOLDER2, for which SERVER2, SERVER3, and SERVER4 are Public Folder Servers
+   containing replicas of this folder. In this case, the user's
+   connection-modulus for FOLDER2 might be SERVER2.
+
+ - If the connection modulus server cannot be connected to, the remaining
+   servers in the site with the replicas are tried.
+
+ - If no instances are available in the site, but there is at least one site
+   available with instances, the affinity to the sites is used to rank the order
+   in which connections to the sites will be attempted. The affinity is set on
+   the site public folder Affinity page. It allows an administrator to set a
+   cost to each of the other sites in the enterprise.
+
+   The cost ranks the order in which the client will attempt connection, and the
+   lowest cost site is attempted first. After the site is determined, its
+   servers are tried in random order. If two sites have the same cost, the
+   servers in those sites are pooled together and tried in a random order.
+   Connections to servers in sites without an affinity setting are not
+   attempted.
+
+   NOTE: Clients must have RPC connectivity to the servers in the affinity sites.
+   Otherwise, the clients will not be able to access the public folders in the
+   other sites, even though the affinity has been correctly set.
+
+The cost ranks the order the client will attempt connection and the lowest cost
+site is attempted first. After the site is determined, its servers are tried in
+random order. If two sites have the same cost, the servers in those sites are
+pooled together and tried in a random order. Connections to servers in sites
+without an affinity setting are not attempted.
+
+NOTE: Clients must have RPC connectivity to the servers in the affinity sites.
+Otherwise, the clients will not be able to access the public folders in the
+other sites, even though the affinity has been correctly set.
+
+
+Additional query words: hang
+
+======================================================================
+Keywords          : kbusage exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

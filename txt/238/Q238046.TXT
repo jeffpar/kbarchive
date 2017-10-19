@@ -1,0 +1,80 @@
+DOCUMENT:Q238046  25-JUN-2000  [homemm]
+TITLE   :Reference Suite 2000: Error Messages When You Restart Computer
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kb3rdparty kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Reference Suite 2000 
+ - Microsoft Encarta Interactive World Atlas 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Microsoft Encarta Reference Suite 2000 or Microsoft Encarta
+World Atlas 2000 on your computer, you may receive one or more error messages
+similar to the following when you restart the computer:
+
+   Unable to call the function "DeleteIE3Cache" in Wininet.dll.
+
+   Error loading Thumbvw.dll.
+
+   Error loading Occache.dll.
+
+   Error loading Iepeers.dll.
+
+   Unable to call the function "Dllinstall" in Wininet.dll.
+
+   Error loading Iedks32.dll.
+
+CAUSE
+=====
+
+This behavior can occur if Norton Crashguard 3.0 is installed on your computer
+when you install Encarta Reference Suite 2000 or Encarta World Atlas 2000.
+
+RESOLUTION
+==========
+
+To work around this issue, click OK to dismiss any error messages you receive.
+You do not need to take any other action.
+
+MORE INFORMATION
+================
+
+If you need to reinstall Encarta Reference Suite 2000 or Encarta World Atlas
+2000, remove Norton Crashguard 3.0 before you reinstall the program to prevent
+this issue from occurring.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: multi multi-media media mm errors reboot ers2k ewa2k
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaReference2000 kbEncartaWorldAtlas2000
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,63 @@
+DOCUMENT:Q60109  24-NOV-1999  [macmail]
+TITLE   :Mac Hyp: Listing All Recipients of a Mail Message
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER::2.0,2.0a,2.0b,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Software Development Kit (SDK) for HyperCard, versions 2.0, 2.0a, 2.0b, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Using the HyperCard Software Development Kit (SDK) for Microsoft Mail, you can
+obtain a list of all recipients of a particular mail message. This can be done
+as follows:
+
+1. Use the getMessageList command to obtain a list of all messages for the
+   currently logged on user.
+
+   The first field returned in the message list is the 4-character message type
+   for each message (for example, "Mess").
+
+   The second field returned in the message list is the ID number of each
+   message.
+
+2. Use the getMessage command, with the message type and ID as the first and
+   second arguments, to obtain the message reference number.
+
+3. Use the getRecipients command, with the message reference number as an
+   argument, to obtain a list of all recipients of that message.
+
+The getRecipients command returns a list of recipients, with one name per line.
+Carbon-copy recipient's names have a Cc: in front of them. Blind carbon-copy
+recipients are not returned by this or any other command in the HyperCard SDK or
+Microsoft Mail.
+
+Additional query words: 2.00 2.00a 2.00b 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbMailSearch kbSDKSearch kbSDKMailHypercard200 kbSDKMailHypercard300
+Version           : :2.0,2.0a,2.0b,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

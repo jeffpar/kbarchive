@@ -1,0 +1,69 @@
+DOCUMENT:Q78265  31-OCT-1999  [win95x]
+TITLE   :Toshiba T1200XE Screen Choices and the 7.04 Mouse Driver
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you select the Olivetti/AT&T Monochrome or PVC Display in Windows Setup
+(from the Options menu choose Change System Settings) and you load the Microsoft
+Mouse driver version 7.04, Microsoft Windows version 3.0 does not run in
+standard mode on a Toshiba T1200XE laptop computer.
+
+This problem occurs in Microsoft Windows version 3.0 and 3.0a. It does not occur
+in later versions of Windows.
+
+WORKAROUND
+==========
+
+To use standard mode while the version 7.04 driver is being used, select either
+the CGA or COMPAQ Portable Plasma display depending on the resolution required.
+
+MORE INFORMATION
+================
+
+The Toshiba T1200XE accepts several different screen choices, including CGA
+COMPAQ Portable Plasma, and Olivetti/AT&T Monochrome or PVC Display. All of
+these choices work with real mode while the Microsoft Mouse driver version 7.04
+is loaded.
+
+The COMPAQ Portable Plasma display choice is recommended by Toshiba and gives the
+best resolution. For more information, contact Toshiba technical support.
+
+REFERENCES
+==========
+
+"Microsoft Windows User's Guide," pages, 7-8, 559-561
+
+Additional query words: 3.00 3.00a 3.0a 3.0 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

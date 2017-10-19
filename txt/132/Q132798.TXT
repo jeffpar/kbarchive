@@ -1,0 +1,64 @@
+DOCUMENT:Q132798  05-APR-2001  [win95x]
+TITLE   :Font Assistant Does Not Show All Fonts on Computer
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Microsoft Font Assistant in Windows 95, you see no fonts or only a
+few of the fonts installed on the computer.
+
+CAUSE
+=====
+
+Windows 95 has moved the installed font list from the [fonts] section of the
+Win.ini file to the registry HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\
+CurrentVersion\Fonts and moved the font files to the C:\Windows\Fonts folder.
+
+RESOLUTION
+==========
+
+Use the Fonts folder in Windows 95 to manage your fonts or contact your
+third-party Font Manager vendor for a version compatible with Windows 95.
+
+To use the Windows 95 Font Manager, follow these steps:
+
+1. Click the Start button, point to Settings, and then click Control Panel on
+   the menu that appears.
+
+2. Double-click the Fonts folder.
+
+3. Double-click the Font icon to view that font.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

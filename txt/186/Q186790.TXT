@@ -1,0 +1,72 @@
+DOCUMENT:Q186790  02-MAY-1999  [exchange]
+TITLE   :XFOR: Performance Issues after Installing Chat Server Extension
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After implementing chat-specific server extensions to a chat server, the chat
+server's performance may decline, or it may stop responding altogether. Such
+server extensions were developed using the Microsoft Exchange Chat Service
+Software Development Kit (SDK). This kit is available with Exchange Server 5.5
+Service Pack 1 (SP1) or with Microsoft Commercial Information Server (MCIS) 2.0.
+
+CAUSE
+=====
+
+Implementing a chat server extension that has not been fully tested into a
+production environment can result in a decrease in chat server performance. In
+some cases, the chat server may stop responding completely.
+
+WORKAROUND
+==========
+
+It is recommended to test any decrease in performance by first temporarily
+removing any manually-created chat server extensions.
+
+MORE INFORMATION
+================
+
+The Microsoft Exchange Chat Service in Exchange Server 5.5 SP1 and MCIS 2.0
+include two sample server extensions, Channel Transcription, and Profanity
+Filter. Activating any server extensions on the chat server will result in some
+decrease in server performance. The sample server extensions that were shipped
+with Microsoft Exchange Chat Service were thoroughly tested for optimized
+performance. Consequently, they may only cause minimal decrease in performance.
+
+Using the Microsoft Exchange Chat Service SDK, you have the ability to develop
+your own server extensions.
+
+Additional query words: xfor; mcis; chat
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

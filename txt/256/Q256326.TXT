@@ -1,0 +1,74 @@
+DOCUMENT:Q256326  08-AUG-2001  [winnt]
+TITLE   :Cluster Server Cannot Use Disk Beyond Device Number 25
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:1.0
+OPER/SYS:
+KEYWORDS:kbWinNT400PreSP7Fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using an array of 30 disks, Disk Administrator can access,
+partition, format, and assign drive letters to any drive in the system. With
+Microsoft Cluster Server installed, you can use any disk provided that the disk
+has a device number in the range of from 0 to 25.
+
+CAUSE
+=====
+
+This limitation is caused by a hard-coded value for the disk resource DLL, which
+should be set to maximum disks (which equates to 100).
+
+RESOLUTION
+==========
+
+To resolve this issue, apply the hotfix described in the following Microsoft
+Knowledge Base article:
+
+   Q251007 Some Cluster Disks Are Not Available After Installing SP6
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Windows NT 4.0.
+
+MORE INFORMATION
+================
+
+This fix also includes the modifications described in the following Microsoft
+Knowledge Base article:
+
+   Q252974 Error Message: System Process - Lost Delayed-Write Data
+
+Additional query words:
+
+======================================================================
+Keywords          : kbWinNT400PreSP7Fix 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search
+Version           : winnt:1.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

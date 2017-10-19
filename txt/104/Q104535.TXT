@@ -1,0 +1,75 @@
+DOCUMENT:Q104535  22-NOV-1999  [msdos]
+TITLE   :DoubleSpace Maintenance Program Does Not Display All Drives
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+This information applies to both Microsoft DoubleSpace and Microsoft DriveSpace.
+For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands and filenames.
+
+When you compress an existing drive or create a new compressed drive using the
+DoubleSpace maintenance program, some of your drives may not appear in the list
+of available drives.
+
+CAUSE
+=====
+
+The DoubleSpace maintenance program does not display drives that do not have
+sufficient free space to be compressed.
+
+RESOLUTION
+==========
+
+To work around this problem, ensure the disk you want to compress has enough
+free disk space. To determine how much space is required, refer to the following
+table:
+
+   Disk Type                                     Free Space Required
+   ---------                                     -------------------
+
+   Non-Boot Disk (compressed from command line)        1.13 MB
+   Non-Boot Disk (compressed from                      1.13 MB
+                  DoubleSpace Manager)
+   Boot Disk (compressed from command line)            1.45 MB
+   Boot Disk (compressed from command line)            1.63 MB
+   Floppy Disk                                         1.10 MB
+
+NOTE: MS-DOS 6.2 Help contains incorrect numbers for free space required if you
+are attempting to compress a boot disk.
+
+For more information, type "help dblspace /compress" (without the quotation
+marks) at the MS-DOS command prompt and then press ENTER.
+
+Additional query words: 6.20 docerr
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

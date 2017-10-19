@@ -1,0 +1,71 @@
+DOCUMENT:Q199036  03-FEB-1999  [pcmail]
+TITLE   :Error When Deleting External Post Office - Notice 1
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2,3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.2, 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you delete an external postoffice definition in the Admin program, you will
+see the following error:
+
+   Notice 1 - Reserved Network Name.
+
+This also may be observed when you try to modify the same postoffice definition.
+
+CAUSE
+=====
+
+If the postoffice you are trying to delete was created by a third-party gateway,
+you must use the third-party gateway to remove the definition.
+
+
+RESOLUTION
+==========
+
+Uninstall the postoffice definition for the gateway by following the
+instructions included with the third-party gateway.
+
+
+MORE INFORMATION
+================
+
+
+REFERENCES
+==========
+
+For more information, please refer to "File Format API for Gateways and
+Applications Microsoft Mail Software Development Kit".
+
+Additional query words: FFAPI Gateway
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN350
+Version           : WINDOWS:3.2,3.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

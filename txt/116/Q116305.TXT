@@ -1,0 +1,68 @@
+DOCUMENT:Q116305  29-OCT-1999  [utilities]
+TITLE   :BUG: LINK Creates Zero-Size File if Insufficient Disk Space
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:5.5,5.60.22
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft LINK for MS-DOS, versions 5.5, 5.60.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Attempting to link an executable file and place the resulting file on a disk
+that does not have enough free space available causes Microsoft LINK to create
+an executable file with a size of 0 bytes. LINK does not issue any warnings or
+error messages when this happens.
+
+RESOLUTION
+==========
+
+Make sure there is enough available space on the target disk for the executable
+file being built.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Visual C++ for Windows, versions
+1.0 and 1.5. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+This is not a problem in Visual C++ 32-bit Edition.
+
+MORE INFORMATION
+================
+
+The version of LINK provided with Visual C++ 32-bit Edition issues the following
+error message when it is unable to create an executable because of insufficient
+disk space:
+
+   error LNK1108: cannot write file at 0x1000
+
+Additional query words: 5.50
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbZNotKeyword3 kbLINKSearch kbLINK550DOS
+Version           : MS-DOS:5.5,5.60.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

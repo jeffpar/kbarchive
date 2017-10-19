@@ -1,0 +1,94 @@
+DOCUMENT:Q250476  24-FEB-2002  [vbwin]
+TITLE   :PRB: VBCE: Process Won't End When MsgBox is in Terminate Event
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbToolkit kbVBp600 kbOSWinCEsearch kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Toolkit for Visual Basic 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a project is executed for the second time from the development environment,
+the following error can occur:
+
+   The file \Project1.vb is locked by another process and can not be copied.
+   (ErrorCode=0x80030020)
+
+This occurs when the application is run on the remote device.
+
+CAUSE
+=====
+
+A message box that is executed in the Terminate event of a form is not visible
+on the remote device. Although the application appears to have terminated, the
+process is still in memory because the message box has not been dismissed.
+
+RESOLUTION
+==========
+
+Kill the process for the application by following these steps:
+
+1. Launch the Process Viewer from the Windows CE menu in the development
+   environment. The Windows CE Remote Process Viewer appears.
+
+2. Locate and select the pvbload.exe file in the process list.
+
+3. Click the Terminate Process button on the toolbar and wait for the
+   pvbload.exe file to disappear from the list.
+
+MORE INFORMATION
+================
+
+This behavior only occurs in the Windows CE Platform.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Windows CE Project in Visual Basic. Form1 is created by default.
+
+2. In the Project Properties dialog box, make sure that the target to run on is
+   the default device.
+
+3. Add the following code in Form1's code module:
+
+   Private Sub Form_Terminate()
+       MsgBox "Terminate"
+   End Sub
+
+4. Press the F5 key to run the program.
+
+5. Close Form1 on the remote device.
+
+6. Press F5 to run the program again. The error message described in the
+   "Symptoms" section appears.
+
+Additional query words: wince vbce vbce6
+
+======================================================================
+Keywords          : kbToolkit kbVBp600 kbOSWinCEsearch kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbWinCETKVBSearch kbWinCESearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

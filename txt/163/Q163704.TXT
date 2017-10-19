@@ -1,0 +1,105 @@
+DOCUMENT:Q163704  01-JUL-2002  [ssafe]
+TITLE   :ACC97: Some Access Commands Don't Prompt to Check Out VSS Module
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:4.0,4.0a,5.0,97
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Access 97 
+ - Microsoft Visual SourceSafe for Windows, versions 4.0, 4.0a, 5.0 
+-------------------------------------------------------------------------------
+
+Moderate: Requires basic macro, coding, and interoperability skills.
+
+SYMPTOMS
+========
+
+When you open a module from the Debug window, from the Object Browser, or with
+the Find or Replace commands on the Edit menu, Microsoft Access does not prompt
+you to check out the module, and you cannot save your changes.
+
+This article assumes that you are familiar with using the client-side
+capabilities of Visual SourceSafe. For more information about Visual SourceSafe,
+please refer to the "Visual SourceSafe User's Guide" or the Help topics
+available from the Visual SourceSafe Help menu.
+
+RESOLUTION
+==========
+
+Check out any object in your database before you make changes to it.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Access 97. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new database and add it to Microsoft Visual SourceSafe.
+
+2. Create a module and type the following procedure:
+
+         Function NoCheckOut()
+            Msgbox "Hello"
+         End Function
+
+3. Save the module as VSSTest and add it to SourceSafe.
+
+4. Press CTRL+G to open the Debug window.
+
+5. In the Debug window, type NoCheckOut, and then press SHIFT+F2. The VSSTest
+   module opens in Design view, but Microsoft Access does not prompt you to
+   check it out.
+
+6. Type the following comment in the module: ' This is a test.
+
+7. Note that the Save icon on the toolbar and the Save command on the File menu
+   are both dimmed. Close the module and note that you are not prompted to save
+   it.
+
+8. Open VSSTest in Design view. Whether you check it out or not when prompted,
+   your changes are not there.
+
+The same behavior is exhibited if you open a module from the Object Browser, or
+if you use the Find or Replace commands on the Edit menu.
+
+REFERENCES
+==========
+
+For more information about the Object Browser, search the Help Index for "Object
+Browser."
+
+Additional query words: ACCSCC VSS SCC source safe
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbSSafeSearch kbAudDeveloper kbAccessSearch kbAccess97 kbAccess97Search kbSSafe400 kbSSafe400a kbSSafe500
+Version           : WINDOWS:4.0,4.0a,5.0,97
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

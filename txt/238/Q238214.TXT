@@ -1,0 +1,63 @@
+DOCUMENT:Q238214  16-MAY-2002  [homegame]
+TITLE   :Asheron's Call: How to Enable or Disable 3D Acceleration
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbui kbimu msgame kbFAQ
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Asheron's Call, version 1.0 
+ - Microsoft Asheron's Call: Dark Majesty, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to enable or disable 3D Acceleration in Microsoft
+Asheron's Call. Enabling 3D Acceleration improves both the quality and the
+performance of graphics in Asheron's Call.
+
+If you experience display problems when you play Asheron's Call, you may be able
+to work around these problems by disabling 3D Acceleration.
+
+MORE INFORMATION
+================
+
+To enable or disable 3D Acceleration in Asheron's Call:
+
+1. Click Start, point to Programs, point to Microsoft Games, point to Asheron's
+   Call, and then click Asheron's Call.
+
+2. Click Settings, and then click 3D Settings.
+
+3. Click to clear or select the Enable 3D Acceleration check box, and then click
+   OK.
+
+4. Click OK, and then click Exit.
+
+Additional query words: 1.00 msgame ac msngz images video asherons
+
+======================================================================
+Keywords          : kbdisplay kbui kbimu msgame kbFAQ 
+Technology        : kbHomeProdSearch kbGamesSearch kbMSNSearch kbAsheronSearch kbAsheron100 kbAsheronDarkMaj
+Version           : :1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

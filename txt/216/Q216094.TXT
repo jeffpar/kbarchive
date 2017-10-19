@@ -1,0 +1,76 @@
+DOCUMENT:Q216094  07-MAY-2002  [homegame]
+TITLE   :Combat FS: Display Is Choppy or Blinks Intermittently
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbenv kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start a flight in Microsoft Combat Flight Simulator: WWII Europe
+Series, version 1.0, the video may be choppy, blink or flash intermittently, or
+otherwise be displayed improperly.
+
+CAUSE
+=====
+
+This behavior can occur if unnecessary audio device drivers are installed on
+your computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, remove the audio device drivers installed on your
+computer, and then redetect your hardware. To do this, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click System.
+
+3. Double-click Sound, Video And Game Controllers to expand the branch.
+
+4. Click to select each device listed in the Sound, Video And Game Controllers
+   branch, and then click Remove. Continue until the Sound, Video And Game
+   Controllers branch is empty.
+
+   NOTE: You can only remove one device at a time.
+
+5. Shut down and turn off your computer.
+
+6. Turn on your computer. Windows automatically redetects your hardware and
+   installs the appropriate device drivers.
+
+   NOTE: You may be prompted to insert your Microsoft Windows 95 or Windows 98
+   CD-ROM.
+
+Additional query words: 1.00 msgame combatfs cfs blinking flashing broken
+
+======================================================================
+Keywords          : kbdisplay kbenv kbimu msgame 
+Technology        : _IKkbbogus kbGamesSearch kbCombatFlightSim kbCombatFlightSimSearch kbSimSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

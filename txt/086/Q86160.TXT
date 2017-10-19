@@ -1,0 +1,56 @@
+DOCUMENT:Q86160  05-NOV-1999  [pcmail]
+TITLE   :PROFS: How to Increase Virtual Storage and Disk Space
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to IBM PROFS and OfficeVision, version 3.2 
+-------------------------------------------------------------------------------
+
+The amount of virtual storage and disk space allocated to the Microsoft
+Mail gateway VM ID may have to be increased to handle larger messages and
+files. This is usually something that is handled by the VM administrator
+in charge of the gateway.
+
+Microsoft recommends at least 2 MB of virtual storage for the gateway VM
+ID. This can be increased to 3 MB, for example, by typing the following
+at the CMS prompt, then pressing ENTER:
+
+   " CP DEF STOR 3M" (without the quotation marks)
+
+ 
+After the command has completed, you must re-IPL CMS to have the change
+take effect.
+ 
+
+Only the VM administrator should increase disk space for the gateway
+disks.
+
+
+Additional query words: 3.20 pcmail profsvm virtual storage disk space
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateIBMPROFS320
+Version           : :3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

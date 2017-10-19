@@ -1,0 +1,55 @@
+DOCUMENT:Q134462  15-APR-2000  [powerpt]
+TITLE   :Fonts May Be Listed Twice in Contents Tab of Properties
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbFont
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click Properties on the File menu in PowerPoint for Windows 95, version
+7.0, and look at the Contents tab, you may see a single font listed several
+times in the Fonts Used section.
+
+CAUSE
+=====
+
+This occurs when you have a font in the presentation that is present in several
+variations. Times New Roman Bold, Times New Roman Italic, and Times New Roman
+Bold Italic are all variations of Times New Roman and are actually different
+fonts. If you use, for example, the Bold and Bold Italic variations of Arial in
+your presentation, Arial will be listed twice on the Contents tab of the
+properties for that presentation.
+
+Additional query words: 7.00 ppt95 ppt7 typefaces family families duplicate twice double
+
+======================================================================
+Keywords          : kbFont 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

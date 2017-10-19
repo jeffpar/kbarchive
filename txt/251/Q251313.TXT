@@ -1,0 +1,106 @@
+DOCUMENT:Q251313  13-JUN-2001  [sna]
+TITLE   :How to Configure SNA Server for PU Passthrough
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article provides step-by-step instructions for configuring SNA Server for
+PU Passthrough connections. An SNA node can access a host through the
+connections available on a computer running SNA Server using the PU Passthrough
+Service. This service causes SNA Server to work like an IBM 3174 cluster
+controller, allowing display, printer, and LU6.2 sessions from the downstream
+device. The downstream node does not have to be an SNA Server. PU Passthrough is
+useful when a downstream device cannot connect directly to the mainframe or
+AS/400 computer.
+
+MORE INFORMATION
+================
+
+Configuring SNA Server for PU Passthrough Connections
+
+1. On the SNA Server computer, configure two connections. The connection to the
+   host can be any supported host connection type, including SDLC and channel
+   adapters. The downstream connection must be an Ethernet or Token Ring
+   connection. For this example, "connection A" will refer to the host
+   connection and "connection B" will refer to the downstream connection.
+
+2. Specify the MACADDR of the host as the Remote Network Address on connection
+   A, and then specify the MACADDR of the downstream device as the Remote
+   Network Address on connection B.
+
+3. Select PU Passthrough as the remote end for both connections. The allowed
+   direction and activation fields cannot be changed.
+
+4. In the properties of one connection, select the other connection for
+   Passthrough via Connection. This will notify SNA Server that data arriving on
+   one connection should be passed to the other connection.
+
+5. Before you configure the downstream SNA node, you may want to change the
+   Remote End of connection A (connection to the host) to Host System, and then
+   verify that the connection will activate successfully. Before you configure
+   the downstream node, change the connection back to PU Passthrough.
+
+6. On the downstream SNA device, the connection type is either Token Ring or
+   Ethernet. The Remote Network Address for this connection should be the
+   address of the SNA Server handling the PU Passthrough. You can obtain this
+   address by typing ipconfig /all at a command prompt on the SNA Server
+   computer. All LUs should be configured on the downstream node. This includes
+   LU6.2 sessions, display, and printer sessions. Refer to the SNA Server online
+   documentation for additional information about configuring display, printer,
+   and LU6.2 sessions.
+
+Note: If the host connection is to an AS/400 computer, you need to delete any
+existing controller descriptions for the SNA Server computer handling PU
+Passthrough. If the AS/400 Autocreate feature is enabled, a new controller
+description should be created on the AS/400 computer when the downstream device
+connects to the AS/400 computer for the first time. This new controller will
+have the name of the downstream device and the MACADDR of the SNA Server.
+
+Troubleshooting hint: Because the SNA Server computer may have other host DLC
+connections defined, you may need to adjust the Service Access Point (SAP)
+addresses before this will work properly. This is required when two or more
+connections communicate with the same host destination. For additional
+information about SAPs, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q107192 Multiple Connections to the Same Host Over 802.2
+
+REFERENCES
+==========
+
+For more information about the SNA Server PU Passthrough feature, please refer
+to the online documentation.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ400 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3
+Version           : WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

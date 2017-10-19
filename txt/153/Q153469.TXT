@@ -1,0 +1,70 @@
+DOCUMENT:Q153469  15-MAR-2002  [win95x]
+TITLE   :Policy Editor Causes Page Fault in Comctl32.dll
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2
+OPER/SYS:
+KEYWORDS:kberrmsg kbpolicy kbtool osr2 win95kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 95 OEM Service Release, version 2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Policy Editor (Poledit.exe) and add numerous programs to the list
+of allowed programs, you may receive the following error message:
+
+   PAGEFAULT at <address> in comctl32.dll
+
+CAUSE
+=====
+
+This problem occurs because the list box is being updated even if there is no
+change to the information.
+
+RESOLUTION
+==========
+
+To work around this issue in Microsoft Windows 95 OSR version 2.1 with Microsoft
+Internet Explorer 4.0 installed, disable support for Universal Serial Bus (USB)
+if it is not required. To do so, use the following steps:
+
+1. Click Start, point to Settings, click Control Panel, and then double-click
+   System.
+
+2. On the Device Manager tab, double-click Universal Serial Bus, double-click
+   Universal Host Controller, and then click the Disable In This Profile check
+   box to select it.
+
+STATUS
+======
+
+This issue is resolved in Microsoft Windows 98.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbpolicy kbtool osr2 win95 kbfixlist
+Technology        : kbWin95search kbOPKSearch kbZNotKeyword3 kbWin95OPKOSR2
+Version           : :2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

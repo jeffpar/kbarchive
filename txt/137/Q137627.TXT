@@ -1,0 +1,130 @@
+DOCUMENT:Q137627  06-AUG-1999  [foxpro]
+TITLE   :HOWTO: Change the Mouse Pointer to Any .CUR or .ANI File
+PRODUCT :Microsoft FoxPro
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbcode kbvfp300 kbvfp500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The ability to change the mouse pointer to a cursor file other than one of the
+default system cursors is available to Visual FoxPro through the Windows API.
+This feature set is available under both Windows 95 and Windows NT.
+
+Visual FoxPro allows you to change the MousePointer property to specify one of
+the pointer shape available in the default 12 system pointers, and the DragIcon
+property allows you to set the pointer to any monochrome .cur file. However, in
+some cases, you might want a colored pointer or an animated pointer (.ani file).
+You can use the Windows API to do this.
+
+The example in this article shows a method using LoadCursorFromFile() and
+SetSystemCursor(). There are other functions that may be useful as well such as
+CopyIcon(), ClipCursor(), GetCursor(), and so on. See the Win32api.hlp file for
+more information on these functions.
+
+MORE INFORMATION
+================
+
+The following code demonstrates a form with two command buttons. The upper
+button changes the pointer to an animated cursor and the lower button resets the
+pointer to the original cursor. The sample code is designed to run under Windows
+NT. It requires slight modification to run under Windows 95; instructions are
+given in comments.
+
+Sample Code
+-----------
+
+   PUBLIC oform1
+
+   oform1=CREATEOBJECT("form1")
+   oform1.Show()
+   RETURN
+
+   DEFINE CLASS form1 AS form
+        Caption = "Form1"
+        Name = "Form1"
+
+        ADD OBJECT command1 AS commandbutton WITH ;
+             Top = 72, ;
+             Left = 96, ;
+             Height = 29, ;
+             Width = 94, ;
+             Caption = "SetCursor", ;
+             Name = "Command1"
+
+        ADD OBJECT command2 AS commandbutton WITH ;
+             Top = 144, ;
+             Left = 96, ;
+             Height = 29, ;
+             Width = 94, ;
+             Caption = "ResetCursor", ;
+             Name = "Command2"
+
+        PROCEDURE Init
+             public currenthcurs,tempcurs,newhcurs,OCR_NORMAL
+             OCR_NORMAL=32512  &&from winuser.h
+        ENDPROC
+
+        PROCEDURE command1.Click
+             MyDir=space(255)
+             declare Integer GetWindowsDirectory in Win32Api String @, Integer
+             declare Integer CopyIcon in Win32Api Integer
+             declare Integer LoadCursorFromFile in Win32Api String
+             declare Integer SetCursor in Win32Api Integer
+             declare SetSystemCursor in Win32Api Integer, Integer
+             declare Integer GetCursor in Win32Api
+
+             currenthcurs=GetCursor()
+             tempcurs=CopyIcon(currenthcurs)
+             len=GetWindowsDirectory(@MyDir,255)
+             MyDir=left(MyDir,len)+"\System32\dinosaur.ani"  && WindowsNT
+   *  Uncomment the next line and comment the previous line if running under
+   *  Windows 95, or set MyDir to the path to a valid .cur or .ani file.
+   *         MyDir=left(MyDir,len)+"\cursors\dinosaur.ani"  && Windows95
+             newhcurs=LoadCursorFromFile(MyDir)
+             =SetSystemCursor(newhcurs,OCR_NORMAL)
+        ENDPROC
+
+        PROCEDURE command2.Click
+             =SetSystemCursor(tempcurs,OCR_NORMAL)
+        ENDPROC
+   ENDDEFINE
+
+REFERENCES
+==========
+
+For more details, you can find a reference to these cursor functions in the
+Win32Api.hlp Help file and in the Win32 SDK. The creation of cursor files is
+supported by Imagedit.exe, and the Windows NT utility Aniedit.exe can be used to
+create animated cursors.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbvfp300 kbvfp500 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP500
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

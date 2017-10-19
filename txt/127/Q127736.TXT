@@ -1,0 +1,80 @@
+DOCUMENT:Q127736  11-NOV-1999  [pcmail]
+TITLE   :PC Win : Err Msg: Microsoft Tutorial - File Error
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2,3.2a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.2, 3.2a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you run the demonstration program in versions 3.2 and 3.2a of Microsoft Mail
+for Windows, you may get the following error message:
+
+   Microsoft Tutorial - File Error
+
+RESOLUTION
+==========
+
+NOTE: Running the demo does not require an existing postoffice installation.
+
+If you receive the above error message, follow these steps:
+
+1. Make sure that you are running PLAY.EXE from the MAILEXE directory.
+
+2. If the error still occurs, you will need to create a separate directory and
+   copy the following files from the MAILEXE directory into the new directory:
+
+   PLAY.EXE
+   MSMAIL.LES
+   CBTLIB3.DLL
+   CLKLIB.DEX
+
+   NOTE: If CLKLIB.DEX is not present, an out of memory error will occur.
+
+MORE INFORMATION
+================
+
+In order to run the demonstration program, do the following steps:
+
+ - From the Help Menu, choose Demos,
+
+-or-
+
+ - Start File Manager. From the File menu, choose Run. Type PLAY MSMAIL.LES in
+   the Command Line box.
+
+   NOTE: You must be in the MAILEXE directory. PLAY.EXE is a file that ships with
+   Microsoft Mail and is used for running the Mail demo program and must be run
+   under Windows.
+
+
+Additional query words: 3.20 3.20a mail demo error
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail320 kbMail320a
+Version           : WINDOWS:3.2,3.2a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

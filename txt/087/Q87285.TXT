@@ -1,0 +1,70 @@
+DOCUMENT:Q87285  21-SEP-1999  [win95x]
+TITLE   :Windows Err Msg: One of the Library Files Needed...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.10 3.11
+
+WINDOWS
+
+kbother kbdisplay kberrmsg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When running Windows 3.1, you may receive the following error message:
+
+   One of the library files needed to run this application is damaged. Please
+   reinstall this application.
+
+This error message may be caused by one of the following reasons:
+
+ - A corrupt .DLL file exists.
+
+   -or-
+
+ - A corrupt video grabber file exists. Grabber files have the extension .2GR or
+   .3GR, and are located in the WINDOWS\SYSTEM subdirectory.
+
+MORE INFORMATION
+================
+
+If the error occurs when you are running MS-DOS Prompt from Windows, then the
+error is probably caused by a corrupt video grabber file. To replace the video
+grabber files, reinstall the video driver.
+
+If the error occurs when running a Windows-based application, then the error may
+be caused by a damaged .DLL file. You need to find which .DLL file is causing
+the error and replace the file.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

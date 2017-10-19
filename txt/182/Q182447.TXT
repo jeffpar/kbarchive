@@ -1,0 +1,87 @@
+DOCUMENT:Q182447  19-DEC-1999  [homemm]
+TITLE   :Encarta 98 Research Organizer: How to Determine Language Version
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 98 Research Organizer, version 1.0 
+ - Microsoft Encarta 98 Encyclopedia for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Encarta 98 Research Organizer is available in the following language versions:
+
+ - English (United States English)
+
+ - English (World English)
+
+MORE INFORMATION
+================
+
+To determine which language version of Encarta Research Organizer is installed
+on your computer, follow these steps:
+
+1. Click Start, point to Find, and then click Files Or Folders.
+
+2. In the Named box, type "org98.exe" (without the quotation marks).
+
+3. In the Look In box, click the hard disk on which Encarta Research Organizer
+   is installed, and then click Find Now.
+
+4. In the list of found files, right-click the Org98.exe file, and then click
+   Properties.
+
+5. You can determine the language version by checking the Modified line on the
+   General tab. The following table lists the version number for each language
+   version.
+
+      Modified     Language version        File version
+      -------------------------------------------------------------------
+
+      08/07/1997   United States English   1.0.44.1 (patch not installed)
+      08/22/1997   World English           1.0.44.1 (patch not installed)
+      09/25/1997   United States English   1.0.47.1 (patch installed)
+      09/25/1997   World English           1.0.47.1 (patch installed)
+
+It is possible install more than one language version of Encarta Research
+Organizer on a single computer.
+
+NOTE: On the Version tab, the value displayed for Language Version is English
+(United States) for both the United States English and the World English
+versions of the Org98.exe file.
+
+For more information about the Encarta Research Organizer patch, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q174204 Research Organizer: Error Message When Moving Cards/Sections
+
+Additional query words: multi multi-media media mm ro
+
+======================================================================
+Keywords          : kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1998 kbEncartaResearchOrg98
+Version           : WINDOWS:1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

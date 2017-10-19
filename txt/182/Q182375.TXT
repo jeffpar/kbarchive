@@ -1,0 +1,94 @@
+DOCUMENT:Q182375  02-APR-2000  [sna]
+TITLE   :API or Message Tracing May Cause SNA Server Process to Hang
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you do API or Message tracing on an SNA Server process (such as the Shared
+Folders Gateway Service), the process may hang in certain conditions, causing
+other problems such as a loss of network connectivity to the SNA Server
+computer.
+
+The SNA Server service or Win32 SNA application may hang unexpectedly if Message
+tracing or API tracing is enabled. This problem does not affect internal
+tracing. When the process hangs, the SNA session status may continue to indicate
+an active status and the SNA data flow on the session will be suspended.
+
+This problem can cause the SNA Server service to hang while message tracing is
+enabled. The types of message tracing that can cause this problem to occur are
+Server Data Link Control (DLC), LU 6.2, and 3270. An SNA Server link service may
+also hang when enabling DLC message traces. If this occurs, the SNA Server
+service or SNA link service will become unresponsive (for example, existing
+clients will lose their sessions), and any attempt to stop the SNA Server
+service will show a perpetual "Stopping" status.
+
+This problem can also cause a Win32 SNA application to hang while API or message
+tracing is enabled. If this occurs, the SNA Application traces will not have
+been flushed to disk; therefore, the API or message traces will not indicate the
+last API call issued by the application. The trace file size may have reached
+its maximum configured size when this problem occurs. SNA Application full
+internal traces will indicate that it is still responding to SNA Server
+"keepalive" messages.
+
+This problem may occur more frequently when a small trace file size is
+configured, or if there is a large amount of message activity that causes the
+trace files to fill quickly.
+
+CAUSE
+=====
+
+The tracing mechanism within SNA Server is not properly flushing the trace
+statements to the file.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server 3.0 and 4.0. This
+problem was corrected in the latest SNA Server versions 3.0 and 4.0 U.S. Service
+Packs. For information on obtaining these Service Packs, query on the following
+word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+MORE INFORMATION
+================
+
+With this update applied, the Trace utility functions correctly.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP1 kbSNAServ300SP2
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

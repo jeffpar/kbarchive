@@ -1,0 +1,84 @@
+DOCUMENT:Q320949  15-AUG-2002  [winnt]
+TITLE   :PRB: 1394 Devices Stop Responding During Isochronous Transfers
+PRODUCT :Microsoft Windows NT
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbOSWin2000fix kbWin2000sp3fix kbWinXPsp1fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 2000 
+ - Microsoft Windows XP Home Edition 
+ - Microsoft Windows XP Professional 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a 1394 device performs an isochronous transfer, this operation may be
+unsuccessful if certain non-page aligned data buffers are used.
+
+CAUSE
+=====
+
+If a 1394 device driver passes non-page aligned data buffers at
+REQUEST_ISOCH_ATTACH_BUFFERS time and uses the DESCRIPTOR_SYNCH_ON_SY flag in
+the attached isoch descriptors, you may receive an error message on a blue
+screen. Note that not all non-page aligned buffers cause this behavior. This
+behavior occurs if Ohci1394.sys does not correctly map the ScatterGather DMA
+array.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, click the following article number to view the article
+in the Microsoft Knowledge Base:
+
+   Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+The English-language version of this fix should have the following file
+attributes or later:
+
+   
+
+   Date         Time   Version        Size    File name     Operating system
+   -------------------------------------------------------------------------
+   07-Mar-2002  10:51  5.0.2195.5040  37,712  OHCI1394.SYS  Windows 2000
+   11-Mar-2002  12:18  5.1.2600.34    55,552  OHCI1394.SYS  Windows XP
+
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article. This problem was first corrected in
+Windows 2000 Service Pack 3.
+
+Additional query words: kbAppCompat kbBaseOS bluescreen fail crash
+
+======================================================================
+Keywords          : kbOSWin2000fix kbWin2000sp3fix kbWinXPsp1fix 
+Technology        : kbWinXPHome kbWinXPPro kbWinXPProSearch kbWinXPHomeSearch kbWinXPSearch
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

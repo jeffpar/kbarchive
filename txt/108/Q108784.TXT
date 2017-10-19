@@ -1,0 +1,56 @@
+DOCUMENT:Q108784  30-JUL-2001  [lanman]
+TITLE   :Net Statistics Workstation Incorrectly Refers to Reqbuf
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+
+SYMPTOMS
+========
+
+Under the category "Times Buffers Exhausted," Net Statistics Workstation
+indicates that it is reporting on how many times work buffers were exhausted on
+the server, but it actually is reporting on request buffers.
+
+CAUSE
+=====
+
+NetStatisticsGet2 API data structure (workstation) has a parameter for
+stw0_reqbufneed.
+
+The OS/2 redirector uses a server message block heap buffer composed of
+(basically) numworkbuf*sizworkbuf. The redirector allocates out of this buffer,
+and increments the reqbufneed statistic when the buffer gets exhausted. It
+should increment the workbufneed statistic, since only the server uses reqbufs.
+
+RESOLUTION
+==========
+
+Tune NumWorkBuf in the [workstation] section of LANMAN.INI.
+
+STATUS
+======
+
+
+Additional query words: 2.20 2.2 reqbuf workbuf
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

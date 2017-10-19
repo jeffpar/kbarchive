@@ -1,0 +1,102 @@
+DOCUMENT:Q122306  29-JUL-2001  [visualc]
+TITLE   :PRB: Error C4226 and Defining WIN32
+PRODUCT :Microsoft C Compiler
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbprb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Compiling a source file that includes WINDOWS.H generates many C4226 errors,
+such as:
+
+   C:\MSVC20\INCLUDE\olebase.h (8954) : error C4226: nonstandard extension used
+   : '__export' is an obsolete keyword
+
+   ...
+
+   C:\MSVC20\INCLUDE\oleauto.h(293) : error C4226: nonstandard extension used :
+   '__huge' is an obsolete keyword
+
+   ...
+
+   C:\MSVC20\INCLUDE\ole2.h(4818) : error C4226: nonstandard extension used :
+   '__export' is an obsolete keyword
+
+Including these header files individually causes the same problem.
+
+CAUSE
+=====
+
+A number of the OLE header files that are included in the WINDOWS.H file require
+WIN32 to be defined. While _WIN32 is defined for you, WIN32 is not. Because
+WIN32 is not defined, the header file logic assumes that the definitions are for
+16-bit Windows-based applications and uses the __export and __huge keywords.
+
+RESOLUTION
+==========
+
+Here are three possible way to define WIN32:
+
+ - Define WIN32 before the WINDOWS.H file is included.
+
+      #define WIN32
+      #include <windows.h>
+
+ - Define WIN32 in a compiler switch. From the command line, use /DWIN32. In the
+   development environment, follow these following steps:
+
+   1. Choose Settings from the Projects menu, and click the C/C++ tab.
+
+   2. Select the Preprocessor category.
+
+   3. Add WIN32 to the Preprocessor Definitions field of the dialog box.
+
+ - Add the following lines to the beginning of the WINDOWS.H file:
+
+      #if( defined (_WIN32) && !defined (WIN32) )
+      #define WIN32
+      #endif
+
+   NOTE: This will not take care of the case where individual OLE header files
+   are included in an application.
+
+MORE INFORMATION
+================
+
+This problem will most likely occur when building console applications.
+
+NOTE: Although this was by design, this behavior was changed in Microsoft Visual
+C++, 32-bit Edition, version 4.0.
+
+Additional query words: 2.00
+
+======================================================================
+Keywords          : kbprb 
+Technology        : kbVCsearch kbAudDeveloper kbVC200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

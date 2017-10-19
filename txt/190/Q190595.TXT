@@ -1,0 +1,60 @@
+DOCUMENT:Q190595  18-JUN-2001  [vbwin]
+TITLE   :INFO: Visual Modeler 2.0: Where Is the ORDERSYS Sample?
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0; winnt:6.0
+OPER/SYS:
+KEYWORDS:kbVBp600 kbVC600 kbVS600 kbGrpDSVBDB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Visual Modeler 2.0 Order System sample, referenced in Online Help, is not
+installed from the MSDN setup. However, you can navigate in MSDN to the Visual
+Modeler section (type "ORDERSYS" as search keyword), and select the links
+associated with the sample. This will copy the sample to the hard drive.
+
+You can also manually copy the ORDERSYS sample from the MSDN CD-ROM. It is
+located under the folder:
+
+   \Samples\VM\VMOrder\
+
+In addition, the following sample models are provided:
+
+   \Samples\VM\VMAdo\
+   \Samples\VM\VMEnroll\
+   \Samples\VM\VMMTS\
+   \Samples\VM\VMRdo\
+
+Additional query words: kbVBp600 kbVC600 kbdse kbDSupport kbVBp kbNoKeyWord
+
+======================================================================
+Keywords          : kbVBp600 kbVC600 kbVS600 kbGrpDSVBDB 
+Technology        : kbVCsearch kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600 kbVC600 kbVC32bitSearch
+Version           : WINDOWS:6.0; winnt:6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

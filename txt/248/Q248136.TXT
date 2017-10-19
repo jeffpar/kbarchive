@@ -1,0 +1,68 @@
+DOCUMENT:Q248136  22-DEC-1999  [iis]
+TITLE   :An Error Occurred Reading or Setting a Configuration Parameter
+PRODUCT :Internet Information Server
+PROD/VER:winnt:2.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+ - Microsoft Transaction Server 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create a Web application or change the settings of a Web application
+from a remote computer using the Microsoft Management Console (MMC), the
+following error message may occur:
+
+   An error occurred reading or setting a configuration parameter (80080005).
+
+CAUSE
+=====
+
+This error occurs when the identity of the Transaction Server Package is set to
+"Interactive User." The interactive user is the user that is currently logged on
+to the server (that is, the computer that hosts the Transaction Server Package).
+When this user logs off, the components in the Transaction Server Package cannot
+be created and executed, and an error message is returned.
+
+This behavior is by design.
+
+RESOLUTION
+==========
+
+Set the package identity to a specific user with the necessary access rights.
+
+REFERENCES
+==========
+
+   Q241057 PRB: Server Execution Failed when calling MTS COM Component from ASP
+
+Additional query words: IIS MTS MMC transaction server management console 80080005 remote administration
+
+======================================================================
+Keywords          :  
+Technology        : kbMTSsearch kbiisSearch kbAudDeveloper kbiis400 kbMTS200
+Version           : winnt:2.0,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,54 @@
+DOCUMENT:Q199235  06-MAR-1999  [sms]
+TITLE   :SMS: NetWare TCP/IP support in SMS 2.0
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbBindery kbOSNovell
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Systems Management Server version 2.0 now includes support for Novell
+NDS and Bindery emulation.
+
+Recently, Novell has introduced its own version of the Internet Protocol TCP/IP.
+Microsoft's Systems Management Server is not designed with network connectivity
+using Novell's version of TCP/IP.
+
+It is not recommended that this protocol be used because Systems Management
+Server systems will become unstable and functionality may be greatly hampered.
+
+Microsoft has not done any testing of TCP/IP other than its own for support and
+use with the Systems Management Server product. Microsoft Systems Management
+Server has not been tested and will not be supported under this configuration.
+
+Additional query words: prodsms cli32nw
+
+======================================================================
+Keywords          : kbsms200 kbBindery kbOSNovell 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

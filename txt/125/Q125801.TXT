@@ -1,0 +1,80 @@
+DOCUMENT:Q125801  08-AUG-2001  [winnt]
+TITLE   :Disabling Execute Permission Causes Irrelevant Error Messages
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run a program under File Manager from a Windows NT file system (NTFS)
+partition, and the program has the Execute permission disabled, the following
+error message appears:
+
+   Cannot Run Program
+   Not enough memory to start the specified application.
+   Quit one or more applications, and then try again.
+
+When you run the program from Program Manager, the following error message
+appears:
+
+   Application Execution Error
+   Insufficient memory to run this application; close one or more Windows
+   applications and try again.
+
+When you run the program from the MS-DOS Command Prompt (CMD.EXE), the following
+error message appears:
+
+   Access is denied.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.5. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Start File Manager and highlight an executable file (*.EXE) on an NTFS
+   partition.
+
+2. From the Security menu, choose Permissions.
+
+3. In the Type of Access box choose select Special Access.
+
+4. Select all options except for Execute.
+
+5. Run the program from File Manager, Program Manager, or the MS-DOS Command
+   Prompt.
+
+Additional query words: prodnt winfile
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

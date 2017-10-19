@@ -1,0 +1,156 @@
+DOCUMENT:Q200374  21-MAR-1999  [sms]
+TITLE   :SMS: SMSINST: Automatic Rollback With the SMS Installer
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbRegistry kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server Installer version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The SMS Installer contains the ability to update an existing application
+installation, such as Modify the installation (make INI and registry changes)
+and to install updated executables and data files. With this ability comes the
+facility to backup the changes made during an update to an existing
+installation. The SMS Installer can provide the framework to automatically
+backup replaced files, registry and INI file changes during an installation. It
+is then possible at a later point to roll back the installation to the
+previously installed state.
+
+MORE INFORMATION
+================
+
+To enable rollback support, the SMS Installer must have the following options
+enabled:
+
+ - Uninstall Support - Enabled from the Script Editor through the Run-time
+   Support, Run-time Options, and Uninstall Support.
+
+   This option adds an Include Script item to the script that copies the
+   uninstall support executable to the installation directory (Uninstal.exe or
+   Uninst32.exe) and adds uninstall support to the registry for Windows 9x and
+   Windows NT client.
+
+ - Backup Replaced Files - Enabled from the Script Editor through Installation
+   Interface, Wizard Dialogs, and Backup Replaced Files.
+
+   This option adds a new custom dialog to the wizard block within the script
+   called Select Backup Directory. During an installation, the user is prompted
+   for a directory in which to place previous versions of files that the current
+   installation will modify. During a rollback, the previous versions of the
+   files held in the backup directory will replace the current versions of the
+   files for the application.
+
+When Rollback support is enabled, the BACKUP script variable stores the location
+of the backup directory used to store original files changed by the
+installation. The default script sets the BACKUP variable to %MAINDIR%\BACKUP
+(the directory BACKUP is created underneath the main installation directory). If
+the installation is performed in interactive mode, the user is prompted to
+select a backup directory in which to place original files (only files that will
+be replaced/modified by files contained within the SMS Installer package are
+placed in the backup directory). The DOBACKUP variable is set to A, and the
+BACKUPDIR variable is set to the contents of the BACKUP variable
+(%MAINDIR%\BACKUP is the default). The SMS Installer uses the BACKUPDIR variable
+as the path to move files about to be replaced.
+
+Support for Multiple Builds and Incremental Rollback:
+-----------------------------------------------------
+
+If the installed package is updated more than once with rollback support enabled,
+the install.log is appended with the set of changes by each installation. When
+files are replaced by updated versions, the copy to be replaced is moved to the
+BACKUP directory. If the file has been updated in a previous installation, a
+file with that name will already exist in the BACKUP directory, and the file
+being moved is automatically given the extension 001. As more updates occur,
+replaced files are moved to the BACKUP directory and the extension incremented
+(file.001, file.002, etc.).
+
+It is therefore possible to roll back an installation to the previous build and
+then to a build prior to that, if it exists. If a rollback is performed on an
+installation that contains no backups, the rollback is treated as a
+deinstallation (the application is removed).
+
+If the SMS Installer package is executed with the /S (Silent) command line
+option, then custom dialogs are not displayed. The default contents of the
+BACKUP variable (%MAINDIR%\BACKUP) are used as the backup path for rollback
+support. Original files that are about to be replaced are copied to the backup
+directory automatically.
+
+Performing a rollback:
+----------------------
+
+If rollback support is available when the user selects to uninstall an
+application (either via Control Panel,Add/Remove Programs or through
+Uninstal.exe/Uninst32.exe), the SMS Installer uninstall program will ask the
+user if the installation should be rolled back. Upon selecting Yes (perform a
+rollback), information about files, registry, and INI file changes will be
+obtained from the install.log and a rollback performed (files from the backup
+directory will be copied back to their original location to replace the prior
+versions).
+
+Performing rollbacks automatically:
+-----------------------------------
+
+The uninstall programs Uninstal.exe/Uninst32.exe support a number of command line
+parameters that affect their functionality. When an uninstall is performed
+without any command line parameters, multiple dialogs can be presented to the
+user depending upon the installation type performed initially. The first dialog
+produced is the Uninstall Method preferred by the user.
+
+This can be Automatic or Custom:
+
+ - Automatic affects all files included in the installation.
+
+ - Custom requests the user to select files files for removal.
+
+A second dialog "Perform Rollback" is presented if the installation supports
+rollback (a prior installation had rollback support enabled). This gives the
+choice of Yes or No:
+
+ - Yes - Rolls back the installation to the previous build if it exists. Changes
+   to files and the registry are rolled back to the previous installation.
+
+ - No - The installation is removed in its entirety.
+
+Command line options for Uninstal.exe/Uninst32.exe are as follows :
+/A Perform and automatic uninstall
+/S Perform a silent uninstall
+/R Perform a rollback
+
+e.g. UNINSTAL.EXE /S /A /R x:\path\install.log
+
+The path to the install.log is optional. This does not need to be supplied if the
+install.log is in the same directory as the uninstal.exe program.
+
+The above command line performs a silent, automatic rollback of the installation.
+
+Additional query words: prodsms installer rollback
+
+======================================================================
+Keywords          : kbRegistry kbsms200 
+Technology        : kbSMSSearch kbSMSI100
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

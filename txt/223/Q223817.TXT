@@ -1,0 +1,66 @@
+DOCUMENT:Q223817  17-APR-1999  [exchange]
+TITLE   :XWEB: POST w/ Long URLs May Fail; 2-KB Limit in Exchfilt.dll
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Active Server Components, version 5.0 
+ - Microsoft Outlook Web Access, version 5.5 
+ - Microsoft Outlook Web Access, version 5.5 Service Packs 1, 2, 3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use the POST command in an application with an URL over 2 KB in size
+(2048 characters), the POST command returns an error code instead of
+successfully posting.
+
+MORE INFORMATION
+================
+
+The Microsoft Exchange Server Outlook Web Access (OWA) component installs a
+global ISAPI filter, Exchfilt.dll, which will not pass URLs over 2 KB in length.
+There is a fixed buffer size in Exchfilt.dll of 2048 characters.
+
+If OWA is installed on your Microsoft Internet Information Server (IIS) computer,
+the ISAPI filter limitation on Exchfilt.dll may also affect other applications
+trying to pass a long URL.
+
+For additional information on ISAP filters see the following article in the
+Microsoft Knowledge Base:
+
+   Q150312 How to Install an Isapi Filter DLL
+
+   -and-
+
+   Windows NT 4.0 Options Pack online documents
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbZNotKeyword6 kbExchangeSearch kbZNotKeyword2 kbOWASearch kbOWA550 kbOWA550SP1 kbOWA550SP2 kbOWA550SP3 kbExchangeActiveServComp500
+Version           : WINDOWS:5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

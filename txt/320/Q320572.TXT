@@ -1,0 +1,59 @@
+DOCUMENT:Q320572  29-MAR-2002  [msnetwork]
+TITLE   :How to Locate Your Version of MSN Explorer
+PRODUCT :The Microsoft Network
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network Version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The correct number of email messages may not appear on the MSN Explorer E-mail
+button when you have the E-mail window displayed.
+
+RESOLUTION
+==========
+
+To resolve this issue
+
+1. On the MSN Explorer navigation bar, click More Choices and then click About
+   MSN Explorer.
+   You'll see a box that lists the version number of the MSN Explorer you have
+   installed.
+
+2. On the box, click More Info.
+   A new page opens.
+
+3. Click Update MSN Explorer now.
+   The issue should be resolved.
+
+Additional query words: kbimu msn explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN700
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

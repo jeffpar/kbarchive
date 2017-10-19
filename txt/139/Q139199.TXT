@@ -1,0 +1,72 @@
+DOCUMENT:Q139199  09-MAR-2000  [mastering]
+TITLE   :PRB: Mastering Visual FoxPro CD Gives Choppy Video Performance
+PRODUCT :Microsoft Mastering Series
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbmm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Mastering Microsoft Visual FoxPro 3.0, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When playing videos in Mastering Microsoft Visual FoxPro, you may experience
+choppy videos.
+
+CAUSE
+=====
+
+The choppy video playback is usually the result of a slow transfer rate from the
+CD-ROM drive. This can be caused by one of the following three factors.
+
+ - There may be a terminate-and-stay resident (TSR) program or disk-caching
+   program that is slowing the transfer rate from the drive. Remove unnecessary
+   TSRs from your Autoexec.bat and Config.sys files and from the LOAD= and RUN=
+   lines in your Win.ini file.
+
+ - The CD-ROM drive may not be Multimedia PC (MPC) compliant and may not meet
+   the transfer rate requirement. Upgrading to an MPC-compatible CD-ROM drive
+   will eliminate this problem.
+
+ - A lack of available memory (RAM) can cause choppy playback. Adding additional
+   RAM speeds up the playback.
+
+RESOLUTION
+==========
+
+Identify and eliminate the cause of the problem.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 1995 multi media multimedia multi-media mmtitles
+
+======================================================================
+Keywords          : kbmm 
+Technology        : kbMSPressSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

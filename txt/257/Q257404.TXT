@@ -1,0 +1,109 @@
+DOCUMENT:Q257404  15-AUG-2002  [winnt]
+TITLE   :DOS Command Line Is Missing the First Character
+PRODUCT :Microsoft Windows NT
+PROD/VER::2000,2000 SP1,2000 SP2
+OPER/SYS:
+KEYWORDS:kbOSWin2000 kbDSupport kbWin2000PreSP3Fix kbAppCompatibility kbWin2000sp3fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 2000, 2000 SP1, 2000 SP2 Professional 
+ - Microsoft Windows versions 2000, 2000 SP1, 2000 SP2 Server 
+ - Microsoft Windows versions 2000, 2000 SP1, 2000 SP2 Advanced Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+MS-DOS programs that use command-line arguments may work improperly and may
+indicate that they are receiving a command line that is missing the first
+character.
+
+CAUSE
+=====
+
+The command-line tail length is at offset 0x80 in the MS-DOS program segment
+prefix (PSP). Offset 0x81 has a blank in it. The actual content of the tail
+starts at offset 0x82. Some old MS-DOS compilers, including the Microsoft
+Fortran for MS-DOS version 5.1 compiler and the Microsoft Pascal compiler,
+assume that offset 0x81 is the initial character of the command-line tail
+instead of offset 0x82.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, click the following article number to view the article
+in the Microsoft Knowledge Base:
+
+   Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Date         Time      Size     File name
+   -------------------------------------------
+   03-DEC-2001  19:09     50,620   Command.com
+
+
+WORKAROUND
+==========
+
+To work around this problem, change the routine that gets the command-line tail
+so that it starts with offset 0x81 from the PSP instead of offset 0x82.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article. This problem was first corrected in
+Windows 2000 Service Pack 3.
+
+MORE INFORMATION
+================
+
+For additional information about how to obtain a hotfix for Microsoft Windows
+2000 Datacenter Server, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q265173 The Datacenter Program and Windows 2000 Datacenter Server Product
+
+For additional information about how to install multiple hotfixes with only one
+reboot, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q296861 Use QChain.exe to Install Multiple Hotfixes with One Reboot
+
+For additional information about how to install Microsoft Windows 2000 and
+Windows 2000 hotfixes at the same time, click the article number below to view
+the article in the Microsoft Knowledge Base:
+
+   Q249149 Installing Microsoft Windows 2000 and Windows 2000 Hotfixes
+
+Additional query words: kbAppCompatability kbAppCompatibility
+
+======================================================================
+Keywords          : kbOSWin2000 kbDSupport kbWin2000PreSP3Fix kbAppCompatibility kbWin2000sp3fix 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbWinAdvServSearch kbWin2000AdvServSP2 kbWin2000AdvServSP1 kbWin2000ProSP2 kbWin2000ProSP1 kbwin2000ServSP1 kbwin2000ServSP2
+Version           : :2000,2000 SP1,2000 SP2
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

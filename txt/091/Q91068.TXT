@@ -1,0 +1,65 @@
+DOCUMENT:Q91068  13-OCT-1999  [win3x]
+TITLE   :After Installing Novell Netware Support, NET.CFG Ignored
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After installing Novell NetWare support, settings that you entered into the
+NET.CFG file for customizing your NetWare configuration may be ignored.
+
+CAUSE
+=====
+
+NETX.COM is running from the Windows for Workgroups directory and is not able to
+find NET.CFG.
+
+WORKAROUND
+==========
+
+To avoid this problem, copy NET.CFG to the Windows for Workgroups directory.
+Also, make sure all NetWare commands in the AUTOEXEC.BAT file are run from the
+Windows for Workgroups directory. For example:
+
+   C:
+   CD \WINDOWS
+   C:\WINDOWS\NET START
+   C:\WINDOWS\MSIPX
+   C:\WINDOWS\NETX
+
+The NetWare product included here is manufactured by Novell, a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding this
+product's performance or reliability.
+
+Additional query words: 3.10 net ware
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

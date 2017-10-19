@@ -1,0 +1,63 @@
+DOCUMENT:Q230110  04-AUG-2000  [iis]
+TITLE   :Default Newsgroups Installed with NNTP Server
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following newsgroups are automatically installed with the NNTP server:
+
+ - Control.cancel
+ - Control.newgroup
+ - Control.rmgroup
+ - Microsoft.public.ins
+
+The Microsoft.public.ins newsgroup is a sample newsgroup that contains a welcome
+message. It can be used to immediately test if messages can successfully be
+posted and read on the NNTP Server. You can delete this newsgroup if you want.
+
+The control.* newsgroups work in conjunction with the control messages generated
+by NNTP client software, NNTP utilities, and NNTP servers. Deleting these
+newsgroups will interfere with the proper operation of these control messages.
+
+MORE INFORMATION
+================
+
+For more information about control messages, see the "Processing Control
+Messages" topic in the online product documentation at this example URL:
+
+   http://localhost/iishelp/news/noc05%5F14.htm
+
+Additional query words: remove uninstall akz
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

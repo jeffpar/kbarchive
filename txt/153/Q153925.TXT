@@ -1,0 +1,45 @@
+DOCUMENT:Q153925  31-JUL-2001  [ssafe]
+TITLE   :FAQ: How Can I Find Out if My VSS Database Has Been Upgraded?
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbSSafe600 kbAnalyze kbSSafeAnalyzekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Q. How can I find out if my Visual SourceSafe database has been upgraded to the
+new format?
+
+A. To determine if your Visual SourceSafe 6.0 database has been upgraded to the
+new database format, check your Visual SourceSafe data directory for a file
+named Crcs.dat and a subdirectory named Labels.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe600 kbAnalyze kbSSafeAnalyze kbfaq
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,70 @@
+DOCUMENT:Q142983  17-DEC-2000  [win95x]
+TITLE   :"Error Loading SETUPX.DLL" Error Msg Running Netsetup.exe
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Netsetup.exe from a non-Windows 95-based computer, you receive the
+following error message:
+
+   Error loading SETUPX.DLL
+
+For example, if you run Netsetup.exe from Windows for Workgroups 3.1x, Windows NT
+3.5x, or Windows NT 4.0, you receive the above error message.
+
+CAUSE
+=====
+
+You can run Netsetup.exe to create an administrative or network installation of
+Windows 95 only from a Windows 95-based computer.
+
+RESOLUTION
+==========
+
+Run Netsetup.exe from a Windows 95-based computer.
+
+MORE INFORMATION
+================
+
+Before you receive the error message stated above, you see the following
+incomplete message:
+
+   To set the default environment for computers that are setup from this
+   directory, run Windows 95.  Use "Make Script" to create ba
+
+This message is stating that you need to run Netsetup.exe from a Windows 95-based
+computer to create a Msbatch.inf file or a network setup folder.
+
+Additional query words: dirctory
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

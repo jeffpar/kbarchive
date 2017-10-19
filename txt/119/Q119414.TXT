@@ -1,0 +1,62 @@
+DOCUMENT:Q119414  07-NOV-1999  [pcmail]
+TITLE   :PC WRmt: Mail Remote for Windows Address List Creation
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Remote for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Version 3.2 of Microsoft Mail Remote for Windows derives all of its addressing
+information from one file, RNETWORK.GLB. This file is created by the Microsoft
+Mail administrator and is placed on the user's data disk during the Remote,
+Init_Disk process. When the remote user requests an update of address lists, an
+updated version of this file is downloaded from the postoffice.
+
+During the installation of the data disk:
+
+ - The remote client parses RNETWORK.GLB and creates a pseudo postoffice in the
+   WINDOWS\MSMAIL\MSRMT subdirectory. The pseudo postoffice consists of the ATT,
+   GLB, INF, KEY, MAI, MBG, NME, P1, TPL, USERINFO, USR, and XTN directories.
+
+ - Once RNETWORK.GLB has been converted to the postoffice addressing scheme, a
+   REBUILD routine (a modified version of Dir-Sync GAL REBUILD) is invoked to
+   build the GAL comprising of GAL.NME, GALINDEX.GLB, and GALNETPO.GLB.
+
+MORE INFORMATION
+================
+
+If EXTERNAL.EXE is active around 4 A.M., it will regenerate the default view for
+the remote users (for example, RNETWORK.GLB). External will not regenerate
+custom views that are stored in xxxxxxxx.GLB.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailRemote320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

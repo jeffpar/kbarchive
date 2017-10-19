@@ -1,0 +1,58 @@
+DOCUMENT:Q117933  24-MAY-2001  [homemm]
+TITLE   :Encarta: White Line Prints Across Graphics on LaserWriter
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 1994 The Complete Multimedia Encyclopedia 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print a graphic from Encarta to a LaserWriter, you may find that a
+thin, white line appears horizontally across your printout. This is most likely
+to occur when you print a 256-color fractal with the Black & White option
+selected.
+
+NOTE: The Black & White or Color/Grayscale options are selected in the
+LaserWriter dialog box. This dialog box appears when you click the Printer
+button at the bottom of a picture and choose to print the image.
+
+RESOLUTION
+==========
+
+This problem occurs when printing with the LaserWriter 7.1.2 printer driver. To
+eliminate this problem, upgrade to version 8.1.1 or later of the LaserWriter
+printer driver.
+
+To obtain the updated printer driver, contact your local Apple dealer or call
+Apple at (408) 996-1010.
+
+Additional query words: 1994 multi media multimedia multi-media encarta mac pho pikes pike's peak b&w b/w irregular pattern shapes
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1994
+Version           : :1994 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

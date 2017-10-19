@@ -1,0 +1,72 @@
+DOCUMENT:Q91004  02-OCT-1999  [win3x]
+TITLE   :Cannot Install More than One Network Adapter of Same Type
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+Some network adapters do not allow you to use more than one per
+machine under Windows for Workgroups version 3.1. This is not due to
+any problems in the adapters, but to their driver names. The following
+adapters exhibit this behavior:
+
+ - SMC ArcNET Cards (and compatibles) [SMC_ARC.DOS]
+
+ - SMC 3000 Series Cards [SMC_ETH.DOS]
+
+ - Proteon 1390 Series Cards [NDIS39XR.DOS]
+
+ - Cabletron E2000 Series Cards [E20NDIS.DOS]
+
+ - Cabletron E2100 Series Cards [E21NDIS.DOS]
+
+ - Cabletron E3000 Series Cards [E30NDIS.DOS]
+
+ - Cabletron E3100 Series Cards [E31NDIS.DOS]
+
+ - Cabletron T2000 Series Cards [T20NDIS.DOS]
+
+ - Cabletron T3000 Series Cards [T30NDIS.DOS]
+
+
+All network device drivers must have a unique, eight character name
+including a trailing dollar sign ($). If there are multiple adapters
+of the same type, each driver instance receives a numerical suffix.
+For example:
+
+   EE16$ - first adapter driver
+   EE162$ - second adapter driver
+
+When the driver name contains seven or more characters, the indexing
+process does not work, keeping you from configuring more than one
+network adapter.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

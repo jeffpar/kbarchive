@@ -1,0 +1,63 @@
+DOCUMENT:Q162392  29-OCT-2000  [exchange]
+TITLE   :XCLN: Exchange Server Service Not Available in Outlook
+PRODUCT :Microsoft Exchange
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbsetup kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 95/98 client, version 4.0 
+ - Microsoft Exchange Windows NT client, version 4.0 
+ - Microsoft Outlook 97 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install Microsoft Office 97 and Outlook, the Microsoft Exchange Server
+service is not available. The Microsoft Exchange Server service is required to
+connect to a computer running Microsoft Exchange Server.
+
+CAUSE
+=====
+
+A typical installation of Office 97 does not install the Microsoft Exchange
+Server service.
+
+RESOLUTION
+==========
+
+To install the Microsoft Exchange Server service:
+
+1. Run Office 97 Setup in maintenance mode and click Add/Remove Components.
+
+2. Select Microsoft Outlook and click change option.
+
+3. Select Microsoft Exchange Server Support and finish the setup. The Microsoft
+   Exchange Server service can now be added to the profile.
+
+Additional query words: Exchange Server Service unavailable
+
+======================================================================
+Keywords          : kbsetup kbusage 
+Technology        : kbOutlookSearch kbExchangeSearch kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbOutlook97Search kbZNotKeyword3 kbExchange400NT kbExchange400Win95
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

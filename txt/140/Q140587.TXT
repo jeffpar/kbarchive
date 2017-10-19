@@ -1,0 +1,84 @@
+DOCUMENT:Q140587  06-MAY-2001  [visualc]
+TITLE   :HOWTO: How to Change Default Button on CPropertySheet
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbMFC kbPropSheet KbUIDesign kbVC kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, 32-bit Editions, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When a modal CPropertySheet is created, the default button is the OK button. To
+change the default to a different button, derive a class from CPropertySheet,
+override OnInitDialog(), and send a message of DM_SETDEFID to the sheet with the
+ID of the new button.
+
+MORE INFORMATION
+================
+
+The IDs of the buttons that are created in a modal CPropertySheet are:
+
+   IDOK            - OK button
+   IDCANCEL        - Cancel button
+   ID_APPLY_NOW    - Apply button
+   IDHELP          - Help button
+
+Before you can set the focus to a button, the button must exist and be enabled.
+By default, the Apply button on a modal CPropertySheet is not enabled; it has to
+be explicitly enabled as shown in the sample code in this article.
+
+If you want a button other than these default buttons to have the default focus,
+you have to create the button, say IDC_MYBUTTON, and set focus to that button
+using:
+
+      SendMessage (DM_SETDEFID, IDC_MYBUTTON);
+
+Sample Code
+-----------
+
+   // This code sets the Apply button as the default
+   // CMySheet is derived from CPropertySheet
+
+   BOOL CMySheet::OnInitDialog()
+   {
+           CPropertySheet::OnInitDialog();
+
+           // Enable the Apply button
+           GetPage(0)->SetModified ();
+           // Set the Apply button as the default button
+           SendMessage (DM_SETDEFID, ID_APPLY_NOW);
+
+           return TRUE;
+   }
+
+Additional query words: kbinf 4.00
+
+======================================================================
+Keywords          : kbMFC kbPropSheet KbUIDesign kbVC kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

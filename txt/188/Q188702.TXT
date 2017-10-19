@@ -1,0 +1,53 @@
+DOCUMENT:Q188702  09-AUG-2001  [winnt]
+TITLE   :Epson Stylus 800 Not Compatible with Epson Stylus COLOR 800
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0,4.0a
+OPER/SYS:
+KEYWORDS:sbs
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft BackOffice Small Business Server versions 4.0, 4.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Print jobs sent to an Epson Stylus Color 800 printer using an Epson Stylus 800
+ESC/P 2 printer driver on a Windows NT machine result in incorrect output.
+
+CAUSE
+=====
+
+The Epson Stylus 800 ESC/P 2 printer driver is not compatible with the Epson
+Stylus Color 800 printer. The Stylus 800 ESC/P 2 uses InkJet technology where
+the Stylus Color 800 uses Color InkJet technology.
+
+Additional query words: smallbiz
+
+======================================================================
+Keywords          : sbs 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbAudDeveloper kbSBServSearch kbSBServ400 kbSBServ400a
+Version           : winnt:4.0,4.0a
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,123 @@
+DOCUMENT:Q112881  04-NOV-1999  [pcmail]
+TITLE   :PC Adm: Err Msg: Notice 58 PO Address List Already Has...
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:2.1x,3.0,3.0b,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 2.1x, 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In versions 2.1, 3.0, 3.0a, and 3.2 of Microsoft Mail for PC Networks, when you
+add new users to the postoffice address list (POL), the following error may
+occur:
+
+   Notice 58
+   PO Address List Already has Alias With this Name
+
+CAUSE
+=====
+
+You may have a user defined with the same alias (full name). Although the
+mailbox name may be different, you may be using a "generic" alias (for example,
+Test User).
+
+If the alias is original to the postoffice, file corruption can also be the
+cause. The Access files (ACCESS.GLB, ACCESS.GLB, and ACCESS3.GLB) should be
+checked and divided using the following figures:
+
+NOTE: Even if the files divide to a whole number, it does not guarantee that they
+are not corrupt.
+
+   ACCESS.GLB      divide by      586
+   ACCESS2.GLB     divide by       69
+   ACCESS3.GLB     divide by      512
+
+The ADMIN.NME and ADMINSHD.NME files can be checked; they should be the same size
+and date stamp. The ADMIN.NME file should be divisible by 45.
+
+RESOLUTION
+==========
+
+If corruption exists with any of the three Access files, restore from backup.
+The complete list of files to restore are:
+
+ - ACCESS.GLB
+
+ - ACCESS2.GLB
+
+ - ACCESS3.GLB
+
+ - ADMIN.NME
+
+ - ADMINSHD.NME
+
+ - ADMIN.GRP
+
+ - ADMINSHD.GRP
+
+All the files should be restored from the most recent valid backup. If users have
+been added to the mail system since the last backup, these users will have to be
+redefined after the restoration.
+
+For Mail for PC Networks, MS-DOS workstation:
+
+   Users should make an archive of their mail folders and Inbox prior to
+   restoring the files that can be unarchived upon recreation of the mailbox.
+
+For Mail for Windows:
+
+   Users should make a backup of their MMF file prior to restoring the files
+   that can be re-imported using the Import Folders option upon recreation of
+   their mailbox.
+
+If the ADMIN.NME file is corrupt, you can run ACCTONME.EXE to regenerate it. The
+corrupt ADMIN.NME file will need to be "zeroed out" using the following method:
+
+   Delete the file, and use the following command:
+
+   " type AAA > ADMIN.NME " (without the quotation marks)
+
+This will create a zero length ADMIN.NME file.
+
+ACCTONME can then be run from the root of the mail database. Copy the newly
+generated ADMIN.NME file to ADMINSHD.NME.
+
+MORE INFORMATION
+================
+
+For additional information on how the external users and groups in the
+postoffice address list might be salvaged before running ACCTONME, please see
+the following article in the Microsoft Knowledge Base:
+
+   Q125252 Rebuilding the Postoffice Address List
+
+Additional query words: 3.00 3.0a 3.20 admin
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN300b kbMailPCN21xSearch
+Version           : WINDOWS:2.1x,3.0,3.0b,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

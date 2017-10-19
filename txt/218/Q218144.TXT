@@ -1,0 +1,67 @@
+DOCUMENT:Q218144  22-OCT-2000  [winnt]
+TITLE   :Cannot Apply Licenses or Windows NT Upgrade
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.5
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Small Business Server version 4.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you are running a not-for-resale (NFR) or Microsoft Developer Network (MSDN)
+version of BackOffice Small Business Server, you cannot apply a Client Add Pack
+or Windows NT Upgrade disk. When you start License Manager (Llsmgr.exe) or start
+the Licensing tool (Liccpa.cpl) in Control Panel, you receive the following
+message:
+
+   Not available in Microsoft BackOffice Small Business Server. To add client
+   licenses, choose Manage Server from the Start Menu and select About Small
+   Business Server.
+
+This message may seem to imply that you can then use the console to add
+additional licenses or apply upgrade disks. This is not the case; you are
+excluded from increasing the number of users with either method.
+
+MORE INFORMATION
+================
+
+When you attempt to apply an actual Client Add Pack or Windows NT Upgrade disk,
+you receive one of the following messages:
+
+    - This version of the Microsoft Small Business Server cannot have additional
+   client licenses added.
+
+    - This version of the Microsoft Small Business Server cannot be upgraded to the
+   full version on Windows NT Server.
+
+
+Additional query words: smallbiz sbs 4.5 add pack MSDN CAL license upgrade NFR 4.0 4.0a 4.0x
+
+======================================================================
+Keywords          : kbenv kberrmsg 
+Technology        : kbAudDeveloper kbSBServSearch kbSBServ450
+Version           : winnt:4.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

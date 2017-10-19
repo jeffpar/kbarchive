@@ -1,0 +1,66 @@
+DOCUMENT:Q189447  24-MAY-2001  [homemm]
+TITLE   :Virtual Globe 98: How to Submit Comments on Geographical Errors
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbref kbimukbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Virtual Globe 1998 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The map data used in Microsoft Encarta Virtual Globe 98 is licensed from many
+sources to create as complete and accurate a map as possible. Because
+geographical data can change rapidly, some information presented in this program
+may be outdated or inaccurate.
+
+MORE INFORMATION
+================
+
+To inform Microsoft of geographical errors in Encarta Virtual Globe 98, please
+send your comments to the following address:
+
+   Map Editor
+   Microsoft Corporation
+   One Microsoft Way
+   Redmond, WA 98052
+   FAX: (425) 936-7329
+   Internet: mapedit@microsoft.com
+
+Please include the following details:
+
+ - A detailed description of the current geographical data in Encarta Virtual
+   Globe 98.
+ - A detailed description of the correct geographical data.
+ - The titles and locations of specific sources that contain the updated
+   geographical data.
+
+Additional query words: world atlas evg multi multi-media media mmtitles bad wrong
+
+======================================================================
+Keywords          : kbref kbimu kbfaq
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaVirtGlobe98
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

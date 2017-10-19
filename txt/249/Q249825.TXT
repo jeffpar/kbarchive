@@ -1,0 +1,66 @@
+DOCUMENT:Q249825  22-JUN-2001  [exchange]
+TITLE   :XWEB: Calendar Date Doesn't Change if Date Selected w/Scroll Bar
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 Service Packs 1, 2, 3 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use Outlook Web Access (OWA) to gain access to your Calendar folder,
+the date in the drop-down box below the calendar does not change if you use the
+scroll bar to scroll to a different month. The two dates aren't synchronized.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+When you use a browser, such as Microsoft Internet Explorer 4.0 or later to
+access the calendar information on the server, you see a daily or weekly view of
+the calendar in the center pane, and two monthly views of the calendar in the
+right pane. Below these monthly views is a drop-down box into which you can
+enter a specific day, month, and year. When you click Go, the calendar view
+above this box changes. However, the reverse is not true. That is, if you use
+the scroll bars on the calendars themselves to move to a different date, the box
+does not reflect the new date. The daily and weekly view of the calendar in the
+middle pane, however, does change to reflect the new date.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOWASearch kbOWA550SP1 kbOWA550SP2 kbOWA550SP3
+Version           : WINDOWS:5.5
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,76 @@
+DOCUMENT:Q129307  12-FEB-2000  [foxpro]
+TITLE   :PRB: Project Manager Can't Be Docked at Bottom of Desktop
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You cannot dock the Project Manager Window at the Bottom or Side of the Visual
+FoxPro Desktop.
+
+CAUSE
+=====
+
+The Project Manager Window is not dockable at the bottom or sides of the Visual
+FoxPro Desktop.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+A 'true' toolbar is 'dockable in all locations on the screen. The Project
+Manager is not a 'true' Toolbar, so it is not 'dockable' in all locations of the
+screen. The Project Manager is classified more as a Window than a Toolbar.
+Because of this limitation, you can sometimes move the Project Manager window to
+locations where it cannot be retrieved with the mouse.
+
+For example, the Project Manager Window may become positioned off the bottom of
+the screen to a spot where it is not visible or where it is barely visible but
+not moveable with the mouse. In these situations, use the "MOVE WINDOW
+<W_name> CENTER" command to put the Project Manager back in a useable
+location.
+
+The name of the Project Manager Window is as follows:
+
+   "PROJECT MANAGER - "+<Project Name>
+
+and a Project named "Test" would be re-centered like this:
+
+   MOVE WINDOW "Project Manager - Test" CENTER
+
+Additional query words: 3.00 VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFoxproSearch
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

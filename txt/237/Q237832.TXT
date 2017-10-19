@@ -1,0 +1,133 @@
+DOCUMENT:Q237832  16-MAY-2002  [homegame]
+TITLE   :Asheron's Call: Objects in Game Appear White
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbdisplay igz kbimu msgame kbgraphxlinkcriticalkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Asheron's Call, version 1.0 
+ - Microsoft Asheron's Call: Dark Majesty, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Asheron's Call in 3D Accelerated mode, you may encounter one of
+the following symptoms:
+
+ - Items, characters, or landscape objects may appear white.
+
+ - You receive the following message in a chat windows:
+
+   Low 3D texture memory detected, which may result in white textures in the
+   view window. Go to the Sound/Graphics Options panel and try lowering the
+   texture resolution settings.
+
+CAUSE
+=====
+
+This behavior can occur if your video adapter does not have enough video memory
+to display all of the textures correctly.
+
+RESOLUTION
+==========
+
+To resolve this issue, reduce the level of texture detail in the game. To do
+this:
+
+1. On the Asheron's Call game screen, click Options ([GRAPHIC:the green triangle
+   with two check boxes]) in the lower right corner of the screen.
+
+2. Click the Sound/Graphics tab.
+
+3. Select lower values for the Landscape, ClipMap, RGBA, and Indexed settings.
+
+   The following table lists the recommended texture detail settings for video
+   adapters with different amounts of video memory.
+
+   +-----------------------------------------------------+
+   | Video Memory | Landscape | ClipMap | RGBA | Indexed | 
+   +-----------------------------------------------------+
+   | 32 MB        | Full      | Full    | Full | Full    | 
+   +-----------------------------------------------------+
+   | 16 MB        | 1/2       | Full    | Full | 1/2     | 
+   +-----------------------------------------------------+
+   | 12 MB        | 1/2       | Full    | 1/2  | 1/2     | 
+   +-----------------------------------------------------+
+   | 8 MB         | 1/4       | 1/2     | 1/2  | 1/2     | 
+   +-----------------------------------------------------+
+   | 6 MB         | 1/4       | 1/2     | 1/2  | 1/4     | 
+   +-----------------------------------------------------+
+   | 4 MB         | 1/4       | 1/4     | 1/4  | 1/4     | 
+   +-----------------------------------------------------+
+
+   NOTE: Some video adapters such as 3Dfx Voodoo-based video adapters can reserve
+   as much as 4 megabytes (MB) of video memory as a frame buffer. This reduces
+   the amount of video memory available for textures. As an example, if a video
+   adapter with 12 MB of video memory reserves 4 MB of memory as a frame buffer,
+   only 8 MB of video memory is available for textures.
+
+4. Click Apply.
+
+5. If the issue continues to occur, repeat these steps to select lower texture
+   settings.
+
+MORE INFORMATION
+================
+
+To determine how much video memory is installed on your video adapter, use the
+DirectX Diagnostic Tool:
+
+1. Click Start, and then click Run.
+
+2. In the Open box, type "dxdiag.exe" (without the quotation marks), and then
+   click OK.
+
+3. Click the Display tab.
+
+4. Under Device, look at the Approx. Total Memory line to determine the total
+   amount of memory installed on your video adapter.
+
+5. Click Exit.
+
+Install the Latest Version of Microsoft DirectX
+-----------------------------------------------
+
+Download and install the latest version of DirectX from the following Microsoft
+Web site:
+
+   http://www.microsoft.com/directx/homeuser/downloads/default.asp
+
+For additional information about how to obtain and install the latest version of
+DirectX, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q179113 How to Download and Install DirectX
+
+Additional query words: 1.00 msgame ac textured people kbgraphx asherons
+
+======================================================================
+Keywords          : kbdisplay igz kbimu msgame kbgraphxlinkcritical kbfaq
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbMSNSearch kbAsheronSearch kbAsheron100 kbAsheronDarkMaj
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

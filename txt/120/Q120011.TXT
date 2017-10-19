@@ -1,0 +1,81 @@
+DOCUMENT:Q120011  01-OCT-1999  [win3x]
+TITLE   :Err Msg with WinLAN Card: The Device Does Not Exist on the...
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11; :3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+ - Microsoft Workgroup Add-On for MS-DOS, version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to connect to a network resource using a WinLAN network card by
+Apexx Technology, the following error message is displayed:
+
+   The device does not exist on the network.
+
+CAUSE
+=====
+
+The network resource that you are trying to connect to does not have a unique
+network address. WinLAN cards require that a unique network address be set
+through Network Setup.
+
+RESOLUTION
+==========
+
+To correct the error message, do the following:
+
+1. Open the Network Setup icon.
+
+2. Choose the Drivers button, then choose the Setup button.
+
+3. Choose the Advanced button, then choose the Configuration button. (This opens
+   the Network Address dialog box.)
+
+4. Make sure that the Network Address setting is unique for the network.
+
+   All cards default to address 4 during the setup process; therefore, you need
+   to change the number. Valid selections are from 4 to 254. Save your selection
+   and then restart your computer.
+
+MORE INFORMATION
+================
+
+WinLAN cards are manufactured by Apexx Technology, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+
+KBCategory: kbnetwork kb3rdparty kbhw
+KBSubcategory: wfw wfwg wgao
+
+Additional query words: 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311 kbWFW311DOS
+Version           : WINDOWS:3.11; :3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,60 @@
+DOCUMENT:Q81823  08-AUG-2001  [winnt]
+TITLE   :ALT+ENTER Switches Between Window and Full Screen
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1 4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you run an application in a console window, you can press ALT+ENTER to
+switch the console into full screen view. The application running in the console
+window is displayed in full screen.
+
+NOTE: ALT+ENTER only switches to full screen on x86 machines.
+
+MORE INFORMATION
+================
+
+A console is a window that appears to run character-based applications from
+Windows NT, MS-DOS, or OS/2. When you start a character-based application in a
+console (for example, CMD.EXE), the application runs in the current console
+(unless you start it with the "start" command). If you start a Windows 32-bit or
+16-bit application, it starts on the desktop.
+
+To switch back and forth between a console and a full screen, press ALT+ENTER
+when the application has the focus.
+
+Additional query words: prodnt hot key mode change
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.1 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

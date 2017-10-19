@@ -1,0 +1,76 @@
+DOCUMENT:Q116439  29-OCT-1999  [utilities]
+TITLE   :BUG: NMAKE Gives Incorrect Line Number for Include File Error
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:1.0,1.01,1.11,1.12,1.13,1.2,1.3,1.4; OS/2:1.01,1.11,1.12,1.21
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NMAKE Utility for MS-DOS, versions 1.0, 1.01, 1.11, 1.12, 1.13, 1.2, 1.3, 1.4 
+ - Microsoft NMAKE Utility for OS/2, versions 1.01, 1.11, 1.12, 1.21 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You can include files in an NMAKE makefile by using the !INCLUDE directive.
+However, if an error is found by NMAKE in an included file, an incorrect line
+number is reported by NMAKE.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug with NMAKE for MS-DOS, versions 1.0,
+1.01, 1.11, 1.12, 1.13, 1.2, 1.3, and 1.4, and NMAKE for OS/2, versions 1.01,
+1.11, 1.12, and 1.21. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The sample code below for the two files, TEST.NMK and TEST1.NMK, can be used to
+illustrate this problem. Make sure these two files are in the same directory.
+The error message produced is:
+
+   TEST1.NMK(2) : fatal error U1001: syntax error : illegal character
+   '$' in macro
+
+Sample Code
+-----------
+
+   /* NMAKE options needed: /f test.nmk
+   */ 
+
+      TEST.NMK
+      --------
+      !include test1.nmk
+
+      TEST1.NMK
+      ---------
+      test = $($(XXX))
+
+Additional query words: 1.00 1.20 1.30 1.40
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbVCsearch kbAudDeveloper kbNMAKESearch kbNMAKE100DOS kbNMAKE101DOS kbNMAKE111DOS kbNMAKE112DOS kbNMAKE113DOS kbNMAKE120DOS kbNMAKE130DOS kbNMAKE140DOS kbNMAKE101OS2 kbNMAKE111OS2 kbNMAKE112OS2 kbNMAKE121OS2
+Version           : MS-DOS:1.0,1.01,1.11,1.12,1.13,1.2,1.3,1.4; OS/2:1.01,1.11,1.12,1.21
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

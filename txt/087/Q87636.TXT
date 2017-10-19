@@ -1,0 +1,73 @@
+DOCUMENT:Q87636  01-APR-2002  [visualc]
+TITLE   :PRB: C2660
+PRODUCT :Microsoft C Compiler
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbnokeyword kbMFC kbGrpDSMFCATL
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition 
+    - Microsoft Visual C++, 32-bit Professional Edition 
+    - Microsoft Visual C++, 32-bit Learning Edition 
+    - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the Microsoft Foundation Classes (MFC), the following error may occur
+when making a Windows application programming interface (API) call from within a
+member function of a window class:
+
+   C2660: 'function' : function does not take 'number' parameters
+
+CAUSE
+=====
+
+Many of the Windows API calls are accessed in the Microsoft Foundation Classes
+through member functions of the same name as the API calls. This means that the
+name will be recognized, but because most member functions require fewer
+parameters than their API counterparts, the C2660 error occurs.
+
+RESOLUTION
+==========
+
+Either of the following two methods eliminates the error:
+
+ - Adjust the function call to conform to the format of the member:
+
+      function call.
+
+      -or-
+
+ - Use the scope resolution operator (::) to tell the compiler to look for the
+   function name in the global name space.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnokeyword kbMFC kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

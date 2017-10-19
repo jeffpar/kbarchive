@@ -1,0 +1,88 @@
+DOCUMENT:Q190352  17-JUL-2001  [visualc]
+TITLE   :PRB: Cannot Load EM.dll on Win98 with WinCE Toolkit for VC5.0
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbide kbVC500 kbOSWinCEsearch kbOSWin98
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Toolkit for Visual C++, on platform(s):
+    - the operating system: Microsoft Windows 98 
+ - Microsoft Windows CE Embedded Toolkit for Visual C++ 5.0, on platform(s):
+    - the operating system: Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Windows CE Toolkit for Visual C++ 5.0 or the Windows CE
+Embedded Toolkit for Visual C++ 5.0 on Windows 98, you might get the following
+error when opening or debugging a project in Developer Studio:
+
+   Microsoft Developer Studio
+   EM.DLL
+   This required file cannot be loaded.
+   Please re-install Microsoft Developer Studio
+
+This might result in Developer Studio crashing with the following error:
+
+   MSDEV caused an invalid page fault in module DEVDBG.PKG at
+   015f:50c4fc9a.
+
+CAUSE
+=====
+
+Windows 98 installs an older version of ImageHlp.dll (file version 4.00) in the
+System directory.
+
+RESOLUTION
+==========
+
+Copy the ImageHlp.dll (file version 5.00.1418.1) from the
+DevStudio\SharedIDE\bin directory into the Windows System directory to overwrite
+the older ImageHlp.dll.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Windows 98 ships ImageHlp.dll, file version 4.00 with a May 1998 date. The
+Windows CE Toolkit for Visual C++ 5.0 ships ImageHlp.dll file version
+5.00.1418.1. This newer DLL contains functions that the older DLL does not have.
+The Visual C++ debugger as modified by the Windows CE Toolkit uses some of these
+new functions. The debugger cannot function without the newer functions, so
+Developer Studio is terminated.
+
+The Windows CE Toolkit for Visual C++ 5.0 and Windows CE Embedded Toolkit for
+Visual C++ 5.0 product requirements state that Windows NT 4.0 is needed,
+therefore toolkit features are not guaranteed to work under Windows 95 and
+Windows 98.
+
+======================================================================
+Keywords          : kberrmsg kbide kbVC500 kbOSWinCEsearch kbOSWin98 
+Technology        : kbVCsearch kbAudDeveloper kbWinCETKVCSearch kbWinCESearch
+Version           : WINDOWS:5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

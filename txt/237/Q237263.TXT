@@ -1,0 +1,72 @@
+DOCUMENT:Q237263  25-JUN-2000  [homemm]
+TITLE   :Encarta 2000: Shortcut Menu Transparent When You Play Video Clip
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdisplay kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you right-click the screen when you play a video clip in Microsoft Encarta
+Encyclopedia 2000, the shortcut menu may appear transparent and be difficult to
+read.
+
+NOTE: This issue occurs only with the DVD-ROM version of Encarta Encyclopedia
+2000.
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true:
+
+ - The video adapter installed in your computer uses hardware overlay.
+
+   NOTE: To determine if the video adapter installed in your computer uses
+   hardware overlay, contact the manufacturer of your video adapter.
+
+ - You play the video clip in Full Screen Video mode.
+
+RESOLUTION
+==========
+
+To prevent this issue from occurring, do not play video clips in Full Screen
+Video mode.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta Encyclopedia
+2000.
+
+Additional query words: multi multi-media media mm ee2k invisible movie
+
+======================================================================
+Keywords          : kbdisplay kbui kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc2000
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

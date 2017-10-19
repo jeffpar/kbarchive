@@ -1,0 +1,76 @@
+DOCUMENT:Q213009  22-OCT-2000  [sms]
+TITLE   :Cannot Create Program for Existing Package Using Wizard
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP1,2.0 SP2
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbAdvertisement kbPackage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Distribute Software Wizard to distribute a package that does
+not have a program, you are unable to create a program for the package. Although
+the wizard includes an "Advertise a Program" option, the Yes button and the
+programs list are unavailable.
+
+CAUSE
+=====
+
+The current Distribute Software Wizard does not include an option to create a
+program for an existing package.
+
+WORKAROUND
+==========
+
+To work around this issue, you can do either of the following methods:
+
+ - Use the Distribute Software Wizard to create both the package and the
+   program.
+
+   -or-
+
+ - Create a program for the package before you use the Distribute Software
+   Wizard. To do this, follow these steps:
+
+   1. Click to expand Package.
+
+   2. Right-click Programs, click New, and then click Program.
+
+   3. Enter the program properties.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0 SP2.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbAdvertisement kbPackage 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : :2.0,2.0 SP1,2.0 SP2
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

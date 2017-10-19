@@ -1,0 +1,59 @@
+DOCUMENT:Q146961  19-MAR-1999  [exchange]
+TITLE   :XCLN: Outbox on Win16 Client Does Not Change Color
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a message is sent from the Microsoft Exchange client for Windows 3.x,
+running WIN 16 TCP/IP, on a Microsoft LAN Manager network, the Outbox will
+change color indicating that a message is waiting to be sent. Once the message
+has been sent, the Outbox will not revert back to its original (empty) color
+until another folder has been selected.
+
+CAUSE
+=====
+
+This occurs because Microsoft Exchange does not support "push" notification on
+LAN Manager networks.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange version 4.0
+Windows client. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: push outbox lanman
+
+======================================================================
+Keywords          : kbui 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword3
+Version           : WINDOWS:4.0,5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

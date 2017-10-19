@@ -1,0 +1,57 @@
+DOCUMENT:Q157193  09-AUG-1999  [foxpro]
+TITLE   :DOCERR: ActiveX Controls Help Topic Lists Incorrect File
+PRODUCT :Microsoft FoxPro
+PROD/VER:5.00
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The "ActiveX Controls Overview" topic in the Visual FoxPro 5.0 Help and Online
+Documentation incorrectly lists Comctl32.ocx as one of the .ocx files shipped
+with Visual FoxPro. The file name should be Comctl32.ocx.
+
+MORE INFORMATION
+================
+
+Issue the following command from the Visual FoxPro Command window to locate the
+topic in Help:
+
+      HELP ActiveX Controls Overview
+
+For Online and hard-copy Documentation, go to the "ActiveX Controls Overview"
+section under the "Programming" chapter of the Technical Reference.
+
+In the topic, look at the very first file in the table that lists the .ocx files
+that ship with Visual FoxPro. This file should be Comctl32.ocx.
+
+Additional query words: kbdse VFoxwin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+Version           : 5.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

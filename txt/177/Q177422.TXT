@@ -1,0 +1,79 @@
+DOCUMENT:Q177422  10-MAY-2001  [visualc]
+TITLE   :BUG: Invalid Directory Path Encountered During Install
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:1.0,2.0
+OPER/SYS:
+KEYWORDS:kbVC kbVC100bug kbVC200bug kbOSWinCEsearch kbOSWinCE100
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++ for Windows CE, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While installing the product listed above, the Setup program may display an
+invalid folder name, such as "/:/Program Files," and state that the folder
+cannot be created.
+
+CAUSE
+=====
+
+The Microsoft Visual C++ version 5.0 registry keys are missing contents or are
+corrupted.
+
+RESOLUTION
+==========
+
+You can resolve this problem by setting up the Microsoft Visual C++ registry
+correctly. One of the following methods can be used to resolve this problem:
+
+ - Microsoft Visual C++ was not installed with the current user profile. If you
+   originally installed Microsoft Visual C++ version 5.0 using a different user
+   account/domain, use the same one when installing Microsoft Visual C++ for
+   Windows CE version 1.0.
+
+ - Microsoft Visual C++ version 5.0 may not be installed. If you have only
+   installed other Microsoft Developer Studio based products such as Microsoft
+   Visual J++ or Microsoft Visual InterDev, you may experience this problem. You
+   must install Microsoft Visual C++ version 5.0 to use Microsoft Visual C++ for
+   Windows CE version 1.0.
+
+ - The Microsoft Developer Studio registry keys may be corrupted. To resolve
+   this problem, uninstall Microsoft Visual C++ version 5.0, reboot and then
+   re-install Microsoft Visual C++ version 5.0.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft product listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: kbwince100bug
+
+======================================================================
+Keywords          : kbVC kbVC100bug kbVC200bug kbOSWinCEsearch kbOSWinCE100 
+Technology        : kbVCsearch kbAudDeveloper kbZNotKeyword3 kbVC100WinCE kbVC200WinCE
+Version           : WINDOWS:1.0,2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,100 @@
+DOCUMENT:Q176011  29-OCT-1999  [pcmail]
+TITLE   :Recommended MMF size
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.2,3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0, 3.2, 3.5 
+ - Microsoft Mail Remote for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In general, there is no one maximum size limit for an MMF.
+
+MMF Size Limit Recommendation
+-----------------------------
+
+The considerations that must be taken into account when determining the maximum
+recommended size are wide and varied. Therefore, there can be no one
+recommendation for every environment. Therefore, using experience as the basis
+for our recommendation, the following recommendation is being offered. Base size
+limit of MMF file should not exceed 30 MB. This figure should be further reduced
+based upon the following variables.
+
+Local-Based or Server-Based MMF File:
+
+ - Local-based files do not use the network for opens and closes and, therefore,
+   have less corruption because of networking issues. Server based files have
+   greater chances for bad opens and closes, network traffic, and so on.
+
+ - Generally we find that the hardware on local computers (hard disk drive and
+   controller) is often a much lower quality than that on the server. Using
+   these two items as a consideration.
+
+Additional Considerations:
+
+ - Network Traffic
+
+    - If you have a busy network, with lots of network traffic.
+
+    - How many routers, hubs, and so on do users go through to access their MMF?
+
+    - How many users are on the same network server computer?
+
+    - Is there a RAID box or are we simply using a server and hard drive?
+
+    - How much activity does this server have?
+
+    - What is the usage of this server?
+
+    - What is the quality of the hardware in the server itself?
+
+    - Is this server computer on the HCL (for Windows NT)?
+
+ - Postoffice
+
+    - How many users are on this postoffice?
+
+    - Is this a busy postoffice (send and receive over 1,000 messages per day)?
+
+    - How many postoffices are on the same server computer?
+
+Using the above variables, we find the average size recommendations to be between
+15 MB and 25 MB.
+
+MORE INFORMATION
+================
+
+For additional information regarding the Microsoft Mail client for Windows and
+MMF files, see p.127 in the Microsoft Mail Resource Kit.
+
+Additional query words: Maximum
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail350 kbMail320 kbMailRemote320
+Version           : WINDOWS:3.0,3.2,3.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

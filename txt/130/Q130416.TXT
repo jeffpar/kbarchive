@@ -1,0 +1,78 @@
+DOCUMENT:Q130416  08-NOV-2001  [homegame]
+TITLE   :List of and Location of Files Installed by Arcade 1.0
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+1.00
+WINDOWS
+kbother kbref
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Arcade for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is a list of files and the location of those files installed by
+Arcade.
+
+C:\ARCADE
+
+AMDSPIN  DLL
+ARCADEVF DLL
+ARCCTL   DLL
+ARCFONTS FON
+ASTEROID EXE
+ASTEROID HLP
+BZ       EXE
+BZ       HLP
+BZ10     WAV
+CENTIPED HLP
+CENTLIFE WAV
+CP       EXE
+CPFONTS  FON
+MC       EXE
+MC       HLP
+MC8      WAV
+MCFONTS  FON
+README   TXT
+TEMPEST  EXE
+TEMPEST  HLP
+TM7      WAV
+WAVEMIX  DLL
+
+C:\WINDOWS
+
+HELPHLPR.DLL
+WAVEMIX.INI
+ARCADE.INI
+
+Additional query words: 1.00 kbhowto contents content listing
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbGamesSearch kbZNotKeyword kbArcadeSearch kbArcade
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

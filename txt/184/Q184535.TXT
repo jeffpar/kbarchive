@@ -1,0 +1,62 @@
+DOCUMENT:Q184535  10-APR-1999  [exchange]
+TITLE   :XADM: Removing a Site from an Organization
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You will be unable to delete a Site container using the Microsoft Exchange
+Server Administrator program. If you highlight the object and click the Edit
+menu, the Delete command is dimmed (unavailable).
+
+CAUSE
+=====
+
+Sites cannot be deleted from the Exchange Administrator program. Other sites in
+the Organization must lose knowledge of the site that you wish to remove.
+
+WORKAROUND
+==========
+
+If you are removing the servers in the site that you wish to delete, first
+uninstall the Exchange servers using Exchange Setup program.
+
+For other sites to lose knowledge of the site that is being deleted, you should
+remove the replication and messaging connectors.
+
+The addresses and other objects related to the site you wish to delete will be
+removed from the directory.
+
+Additional query words: grey greyed out gray grayed out
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,155 @@
+DOCUMENT:Q198520  13-FEB-2002  [visualc]
+TITLE   :BUG: ATL OLE DB Provider Fails When Called from SQL 7.0 Query
+PRODUCT :Microsoft C Compiler
+PROD/VER::6.0,7.0
+OPER/SYS:
+KEYWORDS:kbfile kbpatch kbDatabase kbOLEDB kbSQL kbVC600bug kbATL300bug kbConsumer kbDSupport kb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++.NET (2002) 
+ - Microsoft SQL Server version 7.0 
+ - Microsoft SQL Server 2000 (all editions) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+SQL Server 7.0 and SQL Server 2000 provide a mechanism for performing
+distributed queries against an OLE DB provider. This can be done by using the
+new OpenQuery or OpenRowset function. For example, the following SQL statement
+performs a query against an OLE DB provider called MyProv by using the command
+"Select * from table1":
+
+   Select * from OpenRowset('MyProv', '', 'Select * from table1')
+
+If an ATL wizard-generated OLE DB Provider is queried by using the following
+command, an error occurs:
+
+   select * from openrowset ('MyProv.MyProv', '','c:\*.*')
+
+The error message is:
+
+   Server: Msg 7399, Level 16, State 1, Line 1 OLE DB Provider 'atlprov'
+   reported an error. The provider ran out of memory
+
+CAUSE
+=====
+
+There are a couple of fixes that must be made to the Atldb.h header file. The
+fundamental problem exists in two areas:
+
+ - The ATL IRowsetImpl::GetColumnInfo method fails to return information
+   correctly.
+
+ - The IRowsetImpl::GetData method doesn't handle provider-owned memory
+   correctly.
+
+RESOLUTION
+==========
+
+Atldbfix.h, provided below, is a revised copy of the Atldb.h file included with
+Visual Studio Service Pack 5. Search the Atldbfix.h header file for "Fix:" to
+find where the changes have been made.
+
+Instead of including the Atldb.h header file in your project, you can replace it
+with the Atldbfix.h file, which is provided below in this article. Once you do
+that, you will encounter the next error message:
+
+   Server: Msg 7347, Level 16, State 1, Line 1 OLE DB Provider 'Atlprov'
+   returned an unexpected data length for the fixed-length column '[].FileName'.
+   The expected data length is 260, while the returned data length is 12.
+
+This error is caused by a bug in the ATL wizard-generated code, which returns a
+fixed-length string when it should be returning a variable length string of type
+DBTYPE_STR.
+
+In the ATL wizard-generated sample provider, change the following two lines in
+the provider column map from the following
+
+   PROVIDER_COLUMN_ENTRY("FileName", 4, cFileName)
+      PROVIDER_COLUMN_ENTRY("AltFileName", 5, cAlternateFileName)
+
+to the following:
+
+   PROVIDER_COLUMN_ENTRY_STR("FileName", 4, cFileName)
+      PROVIDER_COLUMN_ENTRY_STR("AltFileName", 5, cAlternateFileName)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+For Visual C++ 6.0, use:
+
+   Atldbfix.exe
+   (http://download.microsoft.com/download/vc60pro/Patch/1/WIN98/EN-US/atldbfix.exe)
+
+Release Date: Jan-07-2002
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create an ATL project using the ATL COM AppWizard.
+
+2. Create an ATL OLE DB Provider. On the Insert menu, click New ATL Object, and
+   then select Data Access for the category and Provider for the object.
+
+3. Build the ATL OLE DB Provider.
+
+4. Register the provider on a machine with SQL Server 7.0 installed.
+
+5. Run a query against the provider by using the command:
+
+   Select * from OpenRowset('YourProviderName', '', 'c:\*.*')
+
+REFERENCES
+==========
+
+For additional information, see the Support WebCast at the following location:
+
+   http://support.microsoft.com/servicedesks/webcasts/wc102699/WC102699.asp
+
+Additional query words: atldbfix
+
+======================================================================
+Keywords          : kbfile kbpatch kbDatabase kbOLEDB kbSQL kbVC600bug kbATL300bug kbConsumer kbDSupport kbGrpDSOLEDB kbMDACNoSweep kbSQLProg 
+Technology        : kbVCsearch kbSQLServSearch kbAudDeveloper kbSQLServ700 kbSQLServ2000Search kbVC600 kbSQLServ2000 kbVC32bitSearch
+Version           : :6.0,7.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,85 @@
+DOCUMENT:Q157509  19-FEB-2002  [homegame]
+TITLE   :Basketball: How to View Player Statistics During Play
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft NBA Full Court Press for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You can view the player statistics while playing NBA Full Court Press if your
+display option is set to 800 x 600, 1024 x 768, or 1280 x 1024.
+
+MORE INFORMATION
+================
+
+To view the player statistics while playing NBA Full Court Press, select a
+screen resolution higher than 640 x 480 in the display screen.
+
+STEPS TO CHANGE THE RESOLUTION IN THE GAME
+------------------------------------------
+
+1. Start NBA Full Court Press.
+
+2. Click Options.
+
+3. Click Display.
+
+4. Click 800 x 600, 1024 x 768, or 1024 x 1280.
+
+NOTE: These resolutions may not be available with your current Windows display
+settings. If these settings are not available, see the "Changing Your Resolution
+in Windows" section below.
+
+CHANGING YOUR RESOLUTION IN WINDOWS
+-----------------------------------
+
+To change your Windows resolution settings:
+
+1. Click Start.
+
+2. Click Help.
+
+3. Click the Index tab.
+
+4. Type "Resolution" (without the quotation marks).
+
+5. Click Monitor.
+
+6. Click Display.
+
+7. Click Change Your Screen Resolution.
+
+8. Click Display and follow the instructions.
+
+Additional query words: stats info fcp nba 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbZNotKeyword kbNBAFullCourtPress
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

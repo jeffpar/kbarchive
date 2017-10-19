@@ -1,0 +1,334 @@
+DOCUMENT:Q162583  08-DEC-2000  [accother]
+TITLE   :ODE97: Upgrading Distributed Run-Time Applications in Access 97
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbusagekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Office 97 Developer Edition 
+-------------------------------------------------------------------------------
+
+Advanced: Requires expert coding, interoperability, and multiuser skills.
+
+SUMMARY
+=======
+
+This article discusses techniques for upgrading run-time applications from
+Microsoft Access 2.0 or 7.0 to Microsoft Access 97. It discusses these topics:
+
+ - Upgrading an Application That Uses Split Database Design
+
+ - Upgrading an Application That Uses Single Database Design
+
+ - Upgrading a Secure Application
+
+ - Upgrading a Replicated Application
+
+ - Upgrading an Application in a Mixed Version Environment
+
+Your situation may require procedures that are not covered in this article; the
+purpose of the article is to present tips for successfully upgrading your
+application, and to start you thinking about how to implement an upgrade
+strategy.
+
+Before you convert any database in Microsoft Access 97, familiarize yourself with
+the conversion process. You can find sources of conversion information in the
+following article in the Microsoft Knowledge Base:
+
+   Q160949 ACC97: Where to Find Conversion Information for MS Access 97
+
+
+MORE INFORMATION
+================
+
+One of the most important steps in upgrading any application is to create an
+upgrade plan that addresses the issues you will encounter, such as timing the
+upgrade, testing the application, and training users. A well thought-out upgrade
+plan is key to successful deployment. For information about common
+considerations when you install or upgrade a run-time application, please see
+the following article in the Microsoft Knowledge Base:
+
+   Q162584 ADT/ODE: Developing a Plan to Deploy Run-Time Applications
+
+
+The following sections present suggestions for upgrading and redistributing
+run-time applications using the Microsoft Office 97 Developer Edition Tools
+(ODE).
+
+UPGRADING AN APPLICATION THAT USES SPLIT DATABASE DESIGN
+--------------------------------------------------------
+
+This section suggests a method for upgrading your split database application. A
+split database is one where you store the data (tables and relationships) in one
+database on a file server computer, and the rest of the application (queries,
+forms, reports, macros and modules) in another database on each user's hard
+disk.
+
+When your application uses split database design, you have the flexibility of
+upgrading users over a period of time instead of all at once; you can mix
+multiple versions of Microsoft Access in the application database (front end)
+without having to convert the data database (back end). Because you can mix
+Microsoft Access versions in the application database, this design also lends
+itself well to pilot testing and stress testing of your upgrade in a production
+environment.
+
+When you are ready to upgrade a split database application, use the steps in the
+following sections.
+
+Convert and Distribute the Application Database
+-----------------------------------------------
+
+1. Obtain a recent backup copy of both the application and data databases.
+
+   This ensures that the databases you convert will most closely emulate the
+   production environment.
+
+2. Convert the application database to Microsoft Access 97 and resolve any
+   issues that arise when you convert the database. Make necessary design
+   changes to the objects in the database. Leave the data database unconverted
+   for now.
+
+3. Test the features of the converted application database, and make necessary
+   changes to the database design. Also create and test your Setup program with
+   the ODE Setup Wizard to be sure it works correctly; if possible, you should
+   run the Setup program on a computer that has your application's earlier
+   version already installed.
+
+4. Run the ODE Setup Wizard to create the setup files for your run-time
+   application. Add the converted application database to your setup, and set it
+   as your application's main file. Add any other support files you need to
+   include with your setup. Do not include the data database in these setup
+   files.
+
+   When you create your setup with the Setup Wizard, pay careful attention to the
+   Overwrite Existing File box in the Add The Files screen of the Setup Wizard.
+   Remember that you will run this Setup program on a computer that already has
+   an earlier version of your application; set the options in the Overwrite
+   Existing File box accordingly.
+
+5. Distribute the upgraded application for pilot testing and stress testing as
+   determined by your upgrade plan. You may choose to conduct these tests in a
+   production environment.
+
+6. Distribute the upgraded application to your users. You can distribute the
+   application to all users at once or you can distribute it to a few people at
+   a time.
+
+Convert the Data Database
+-------------------------
+
+1. While users are upgrading to the new version of the application database, try
+   converting a copy of the data database in Microsoft Access 97. Carefully
+   document any changes you make to the design of the tables in your database.
+
+2. After all users have upgraded to the new version of the application database,
+   you can convert the data database in the full version of Microsoft Access 97.
+   Always create a backup of the database before you convert it. There are
+   several ways you can convert the data database:
+
+    - If the data database was converted easily and did not require modification
+      when you tested it, you can instruct an administrator or a user to type a
+      command line to convert the data database.
+
+      If your application uses security, the user who converts the database must
+      have permission in Microsoft Access to open the database exclusively, and
+      all users must quit the program before you can convert the data database.
+      Also, the user who converts the database must have permission on the
+      network to create a new file in the folder on the network server that
+      contains the data database.
+
+      Use a command line similar to the following sample to convert a data
+      database in Microsoft Access 97. The underscore (_) at the end of the line
+      is used as a line-continuation character. Remove the underscore when you
+      type the command, and type the entire command on a single line:
+
+   C:\MyApp\Msaccess.exe /runtime \\MyServer\MyFolder\Data.mdb _
+             /convert \\MyServer\MyFolder\Data97.mdb
+
+      In this example, Data.mdb is the database you are converting and Data97.mdb
+      is the name of the new database after conversion. After the data database
+      is successfully converted, rename Data.mdb to Data.old, and then rename
+      Data97.mdb to Data.mdb.
+
+    - You can convert a copy of the data database directly in a full version of
+      Microsoft Access 97. If you convert the database this way, you must
+      prevent users from changing data in your application until you finish
+      converting the data database. One way to ensure that users cannot change
+      data is to set the read-only attribute of the data database file. Convert
+      a copy of the data database and use it to replace the copy on the file
+      server. You must remove the read- only attribute on the unconverted
+      database before you can replace it.
+
+    - You can convert a copy of the data database and create setup files for it
+      using the ODE Setup Wizard. Obtain a copy of the database and ensure that
+      users will not change any data in the application while you convert it.
+      Then use the Setup Wizard to create setup files for the converted data
+      database only, and reinstall it on the network server. Be sure to set the
+      Overwrite Existing File box in the Add The Files screen of the Setup
+      Wizard to Older or Always for your data database file so it replaces the
+      older version when you install it.
+
+UPGRADING AN APPLICATION THAT USES SINGLE DATABASE DESIGN
+---------------------------------------------------------
+
+In single database design, all database objects are stored in the same database
+file. If your application uses single database design, you may encounter some
+challenges timing and delivering the upgrade. In order to preserve the existing
+data in the application, you must include a current copy of the database with
+your setup files. That means you must establish a cut-off date when users will
+stop using the application, arrange to receive a backup copy of the live
+database, and then distribute the upgrade to all users before they can begin to
+use the application again.
+
+Follow these suggestions to minimize disruption to users when you are ready to
+convert a database that contains all of your application's data:
+
+1. Obtain a recent backup copy of the application's database so you can convert
+   a database that closely matches the data you will ultimately use.
+
+2. Convert the backup copy of the database in Microsoft Access 97 and resolve
+   any issues that arise when you convert the database. Make necessary design
+   changes to the query, form report, macro and module objects in the database.
+   If you make any changes to the design of your tables, which is rarely
+   necessary, be sure to carefully document the changes.
+
+3. Test the features of the converted database and make more changes to the
+   design of the database if necessary. Also, create and test your Setup program
+   to be sure it works correctly; if possible, you should test the Setup program
+   on a computer that has your application's earlier version already installed.
+
+4. When you are ready to distribute the upgrade, arrange for users to stop using
+   the application, and then obtain a backup of the most recent copy of the
+   production database.
+
+5. Delete the data from all the tables in the database you converted and tested,
+   and then append the data from the most recent backup of the unconverted
+   database. You can link to the tables in the unconverted database, and then
+   use append queries to append the data to the tables in the converted
+   database. When you perform this step, consider the following:
+
+    - Referential integrity rules in the database may require you to delete or
+      append the table data in a particular order. You may even have to
+      temporarily remove some of the table relationships, and then restore them
+      after you have appended the data.
+
+    - If you made changes to the design of your tables in the converted
+      database, determine if those changes will affect the data you are
+      importing and take the necessary steps to import the data correctly.
+
+   When you are finished with this step, the data in the converted database will
+   match the data in the most recent backup. The converted database now becomes
+   the production database.
+
+6. Create a backup copy of the converted database as soon as you have
+   successfully appended all of the data.
+
+7. Run the ODE Setup Wizard to create the setup files for your run-time
+   application. Be sure to use the converted database with current data as your
+   application's main file. When you create your setup files, pay careful
+   attention to the Overwrite Existing File box in the Add The Files screen of
+   the Setup Wizard. Remember that you will run this Setup program on a computer
+   that already has an earlier version of your application; set the options in
+   the Overwrite Existing File box accordingly.
+
+8. Use the Setup program to distribute your upgrade, and then instruct users to
+   begin using the application again.
+
+UPGRADING A SECURE APPLICATION
+------------------------------
+
+If your run-time application uses Microsoft Access user-level security, you must
+decide whether to include an upgraded workgroup information file (System.mdw or
+System.mda) when you distribute your upgraded application. The workgroup
+information file contains all of the user and group account information that
+your application uses to implement security.
+
+As with any Microsoft Access database, after you create the workgroup information
+file in Microsoft Access 97 it will be inaccessible to users of earlier
+Microsoft Access versions. If your users will be running mixed versions of
+Microsoft Access, you must leave the workgroup information file in the earliest
+version of Microsoft Access that any user has. For example, as long as one user
+of your application is using Microsoft Access 2.0, the workgroup information
+file must remain a version 2.0 file.
+
+If all users are upgrading to a Microsoft Access 97 run-time application at the
+same time, the decision whether to upgrade the workgroup information file
+depends on the Microsoft Access version of that file.
+
+If your workgroup information file is a Microsoft Access 1.x or 2.0 file,
+re-create the workgroup information file in Microsoft Access 97 to take
+advantage of new security and performance features. For more information about
+converting a workgroup information file, search the Microsoft Access 97 Help
+Index for "converting workgroup information files."
+
+If your workgroup information file is a Microsoft Access 7.0 file, you do not
+need to convert it when you convert your application in Microsoft Access 97.
+However, you should compact the workgroup information file in Microsoft Access
+97 before you redistribute it. For more information about how to compact the
+workgroup information file, search the Microsoft Access 97 Help Index for
+"converting databases," and then "Convert a secured database from a previous
+version of Microsoft Access." Scroll to the bottom of the topic and click the
+link called "Convert a Microsoft Access 95 secured database when all users are
+upgrading to Microsoft Access 97."
+
+UPGRADING A REPLICATED APPLICATION
+----------------------------------
+
+You must exercise some caution when you upgrade a replicated application. All it
+takes to convert a replica database to a Microsoft Access 97 database is to
+synchronize with a Microsoft Access 97 Design Master. For this reason, if one
+user in a replica set upgrades to Microsoft Access 97, all users in a replica
+set must upgrade also.
+
+When you want to test conversion on a replicated application, be sure to make a
+copy of the Design Master database and test conversion on the copy. That way you
+minimize the risk of accidentally upgrading other members in the replica set by
+synchronizing with them.
+
+For more information about a converting a replica set in Microsoft Access 97,
+search the Help Index for "converting replicas."
+
+UPGRADING AN APPLICATION IN A MIXED VERSION ENVIRONMENT
+-------------------------------------------------------
+
+Often you cannot upgrade all users to the latest version of Microsoft Access at
+the same time. Sometimes the issue is timing, and you are unable to upgrade all
+users at the same time. Sometimes the issue is hardware or software, and one or
+more users do not have the system requirements to run Microsoft Access 97.
+
+Whatever the reason for the mixed environment, your application must use a split
+database design if you plan to support multiple users in more than one version
+of Microsoft Access at a time. With split database design, the application
+database that resides on each user's hard disk can be a Microsoft Access 2.0,
+7.0, or 97 database. The data database that resides on the network file server
+must remain in the earliest version of Microsoft Access that any user has. For
+example, if you have only one user with a Microsoft Access 2.0 application
+database, the data database must remain a version 2.0 database.
+
+Additional query words: ODE
+
+======================================================================
+Keywords          : kbusage kbfaq
+Technology        : kbOfficeSearch kbAudDeveloper kbOffice97Search kbOffice97 kbOffice97DevSearch
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,76 @@
+DOCUMENT:Q150548  08-NOV-2001  [homemm]
+TITLE   :Complete Gardening Err Msg: Out of Memory
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Complete Gardening for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create a new list in List Maker, you receive the following error
+message:
+
+   Out of memory. Please free some memory, then choose Retry.
+
+If you click Retry, the message reappears on the screen. If you click Abort or
+Ignore, the List Maker closes without saving your list.
+
+You may also receive the error when you are Saving changes to a previously
+created list.
+
+CAUSE
+=====
+
+This problem can occur if there is insufficient memory available to save your
+list or if virtual memory has been disabled.
+
+RESOLUTION
+==========
+
+To increase the amount of available memory, close down other running programs,
+then click Retry.
+
+To use virtual memory, do the following:
+
+1. Click the Start button, point to Settings, and then click Control Panel.
+
+2. Double-click the System icon.
+
+3. On the Performance tab, click Virtual Memory.
+
+4. Select the Let Windows Manage My Virtual Memory Settings (Recommended)
+   option. (If you must use your own virtual memory settings, allow as much
+   space as possible for the maximum size.)
+
+5. Click OK.
+
+Additional query words: 1.00 multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword kbCompleteGardening
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,53 @@
+DOCUMENT:Q218438  23-DEC-1999  [msdos]
+TITLE   :COPY Command Doesn't Work Correctly with More Than 255 Files
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:2.11
+OPER/SYS:
+KEYWORDS:msdos
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 2.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When copying more than 255 files to another directory, COPY reports the wrong
+number of files copied, with the 255th file not copied.
+
+CAUSE
+=====
+
+This is a problem with COMMAND.COM.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 2.11.
+
+Additional query words:
+
+======================================================================
+Keywords          : msdos 
+Technology        : kbMSDOSSearch kbMSDOS211
+Version           : MS-DOS:2.11
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

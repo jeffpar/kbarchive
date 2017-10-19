@@ -1,0 +1,360 @@
+DOCUMENT:Q177861  08-NOV-2001  [homegame]
+TITLE   :Age of Empires: Contents of the Stratsmp.doc File
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbmm aoe
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Age of Empires, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The information in this article is a copy of the contents of the Age of Empires
+Stratsmp.doc file, located in the Docs folder on the Age of Empires CD-ROM.
+
+This file is formatted for Microsoft Word 97 and you cannot open it with WordPad.
+For more information about this issue, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q177787 Age of Empires: WordPad Cannot Read Stratsmp.doc or Strattyp.doc
+
+MORE INFORMATION
+================
+
+Sample Strategy File
+September, 1997
+(c) Microsoft Corporation, 1997
+
+Overview of .ai (artificial intelligence) file creation
+
+You may modify this file to create new computer player strategies. To do
+so, follow the instructions below and save the file as a text file with an
+.ai extension.
+
+.ai files contain the units, buildings and research that will be performed
+by the computer player in the general order listed. The computer will try
+to progress through the list and maintain what has been built. For example,
+when a unit or building in the list is destroyed, it will generally be
+replaced before a new unit or building further down on the list will be
+created.
+
+The sample list below contains one of every item to be trained, built, or
+researched in Age of Empires. Storage Pits, Houses, and Granaries (although
+included in the list) can be handled completely by the computer player
+(if the appropriate strategic number is set for the computer player). In
+other words, these need not be placed in the list at all; the computer
+player will build them when they are needed.
+
+The sequence of items in this list is important. For example, the Market
+must be built before a Farm, etc. As long as the game rules are respected
+by maintaining the prerequisite order, items in the list can be
+resequenced. The technology tree foldout is a good reference source for the
+prerequisites.
+
+Items on the list that cannot be built or researched (for any reason) are
+eventually skipped (the skipping can be controlled by setting strategic
+numbers in the computer player's .per file).
+
+If there are already units on the board that are also in the Strategy list,
+these units will be counted as already created and will not be rebuilt.
+
+Notes on .per (personality) files
+
+The computer player is really controlled by two files: This .ai file
+and another file called a .per file. The .per file contains strategic
+numbers that the computer player users to control the actual execution of
+the strategy contained in a given .ai file. The default strategic number
+system should work well for most of the strategies that you write. If you
+need or want to modify the strategic numbers, see the persnlty.doc
+file in the Docs folder of your Age of Empires directory.
+
+Item descriptions
+
+Some of the names contained in this file do not correspond directly with
+the game names. They are as follows:
+
+Description           Actual
+-----------           ------
+Soldier-Chariot2      Chariot Archer
+Soldier-Chariot1      Chariot
+Composite_Bow         Research Improved bow
+Longbow               Research Composite bow
+Boat-War4             Catapult Trireme
+R73 Legion            Research Phalanx
+R77 Legion            Research Legion
+Soldier-Catapult1     Stone Thrower
+R54 Heavy_Catapult    Research Catapult
+R36 Massive_Catapult  Research Heavy Catapult
+
+Hints & Tips
+
+Here are some tips for creating your own .ai files. The sample file at the
+bottom of this document does not necessarily adhere to the principles that
+follow. Instead, this list is placed in an order that makes the items easy
+to find so that you may create your own list.
+
+Keep the quantity field down to 1 or 2. Higher quantities will cause the
+   computer player to pause on that item until the quantity is fulfilled.
+
+Do not research or build an item from a building directly after
+   constructing that building. Example: Don't place the Bowman after the
+   Archery Range. Doing so may cause the computer to pause on the Bowman
+   until the Archery Range construction is complete. Instead, put another
+   item between the Archery Range and the Bowman.
+
+Do not place two or more items in a row that come from the same
+   building. Example: Priest, followed by Polytheism, Mysticism, and
+   Astrology. Instead, stagger items from multiple buildings to ensure
+   that production at one building does not slow progress through the
+   rest of the list. Good example:
+
+      Priest
+      Man
+      Polytheism
+      Man
+      Mysticism
+      Market1
+      Astrology
+
+Limit retrains (see below) of early-age infantry and archers.
+   This ensures that when they are killed they will not be retrained.
+   This frees slots (under the population cap) for them to be replaced
+   by higher-level soldiers. The same concept applies to villagers and
+   fishing boats.
+
+Limit the number of units trained to approximately 50. When the
+   computer reaches its population cap of 50, its advance through the
+   remainder of the list will slow down. If your list calls for 30
+   villagers and 30 military units, do the following:
+
+    - Put 10 villagers, or early-age soldiers on limited retrain. This
+      will open slots for 10 superior replacements later.
+
+    - Put the last 2-10 units you want to have trained in the very last
+      line of the file. This way, if you exceed the population cap, you
+      will do so on the last item and not interrupt the progress of the
+      list.
+
+Start by modifying an .ai file that is already close in content to
+   the file you want to create. If that list is missing certain items,
+   copy them from the list below and paste them into your .ai file.
+
+In the Stone Age, the computer must be able to quickly locate
+   forage bushes, trees, and/or water. Failure to do so will cause
+   the computer not to place a Granary, Storage Pit, and/or a Dock.
+   This may prevent your .ai file from reaching the Tool Age, since
+   these buildings are necessary prerequisites for reaching the
+   Tool Age.
+
+Test! After you have completed your .ai file, put it into a scenario,
+   give the computer unlimited resources, and observe the build process
+   on x2 speed. Insure that all items are correctly built. Delete items
+   that have limited retrains and ensure that they are replaced with other
+   units. This technique will greatly accelerate your .ai design and
+   development process.
+
+Legend for the prefix to the ID number
+
+Each object in the game has a unique ID number. In the strategy file,
+that ID number is preceded by a qualifying prefix. The prefixes are listed
+below:
+
+B - Building - Will be rebuilt if destroyed.
+
+A - Building - Will be rebuilt up to to the number of times
+               specified in the "Limited Retrains" column.
+
+R - Research - Item will be researched if possible. If not possible,
+               it will be skipped according to the strategic numbers.
+
+C - Research - Item will be researched if possible. If not possible,
+               the computer player will progress no further until
+               this critical research is done. For example, if the
+               computer player does not have enough food to advance to
+               the Tool Age, it will wait to collect enough food and
+               will not skip the Tool Age).
+
+U - Unit     - Will always be replaced if killed.
+
+T - Unit     - Will be trained up to the number of times specified
+               in the "Limited Retrains" column. Example: 1 indicates
+               that this unit will be created once. Once killed, this
+               unit will not be created again.
+
+                                                     Limited
+ID        Description               Qty      Parent  Retrains
+--        -----------               ---      ------  --------
+B109      Town_Center1               1        -1
+U83       Man                        6        109
+B12       Barracks1                  1        -1
+T73       Soldier-Inf1               2        12       1
+U83       Man                        6        109
+C101      Tool_Age                   1        109
+B87       Range1                     1        -1
+U83       Man                        2        109
+U4        Soldier-Archer1            2        87
+B101      Stable1                    1        -1
+U83       Man                        2        109
+U299      Soldier-Scout              1        101
+R40       Leather_Armor_-_Soldier    1        103
+U83       Man                        1        109
+R41       Leather_Armor_-_Archer     1        103
+U83       Man                        1        109
+R42       Leather_Armor_Mounted      1        103
+U83       Man                        1        109
+R46       Tool_Working               1        103
+U83       Man                        2        109
+B70       House                      3        -1
+R11       Stone_Wall                 1        68
+B45       Dock_1                     1        -1
+R16       Watch_Tower                1        68
+B79       Watch_Tower                1        -1
+U13       Boat-Fishing1              1        45
+B72       Wall_Small                 5        -1
+U15       Boat-Trade1                1        45
+B84       Market1                    1        -1
+U19       Boat-War1                  1        45
+U17       Boat-Transport1            1        45
+B72       Wall_Small                 5        -1
+R107      Wood_Working               1        84
+R108      Gold_Mining                1        84
+R109      Stone_Mining               1        84
+U83       Man                        2        109
+B50       Farm                       2        -1
+R81       Domestication              1        84
+R63       Axe                        1        12
+U73       Soldier-Inf1               1        12
+C102      Bronze_Age                 1        109
+T83       Man                        2        109       2
+U41       Soldier-Chariot2           1        87
+R5        Medium_War_Ship            1        45
+U19       Boat-War1                  1        45
+R6        Merchant_Ship              1        45
+U15       Boat-Trade1                1        45
+R4        Fishing_Ship               1        45
+U13       Boat-Fishing1              1        45
+R32       Artisanship                1        84
+R28       Wheel                      1        84
+B104      Temple1                    1        -1
+T83       Man                        1        109       2
+U125      Priest                     1        104
+B70       House                      3        -1
+R21       Mysticism                  1        104
+R22       Astrology                  1        104
+R24       Polytheism                 1        104
+R23       Jihad                      1        104
+R43       Scale_Armor_-_Soldiers     1        103
+R44       Scale_Armor_-_Archers      1        103
+R45       Scale_Armor_-_Cavalry      1        103
+R51       Metal_Working              1        103
+R47       Bronze_Shield              1        103
+R13       Medium_Wall                1        68
+R12       Sentry_Tower               1        68
+B101      Stable1                    1        -1
+U37       Soldier-Cavalry1           1        101
+U40       Soldier-Chariot1           1        101
+B0        Academy                    1        -1
+U93       Soldier-Phal1              1        0
+R64       Short_Sword                1        12
+U75       Soldier-Inf3               1        12
+R65       Broad_Sword                1        12
+U75       Soldier-Inf3               1        12
+U41       Soldier-Chariot2           1        87
+R56       Improved_bow               1        87
+B70       House                      3        -1
+U5        Soldier-Archer2            1        87
+R57       Composit_bow               1        87
+U5        Soldier-Archer2            1        87
+B82       Government_Center          1        -1
+B49       Siege_Workshop             1        -1
+U35       Soldier-Catapult1          1        49
+R34       Nobility                   1        82
+R112      Architecture               1        82
+R31       Plow                       1        84
+B103      Storage_Pit1               1        -1
+C103      Iron_Age                   1        109
+U39       Soldier-Cavalry3_Arc       1        87
+R80       Irrigation                 1        84
+R7        Trireme                    1        45
+R8        Heavy_Transport            1        45
+R9        Trireme_with_Catapult      1        45
+U250      Boat-War4                  1        45
+R19       Monotheism                 1        104
+R20       Fanaticism                 1        104
+R18       Afterlife                  1        104
+R30       Coinage                    1        84
+R110      Craftmanship               1        84
+R111      Siege_Craft                1        84
+R37       Alchemy                    1        82
+R114      Writing                    1        82
+R35       Engineering                1        82
+R113      Aristocracy                1        82
+R106      Balistics                  1        82
+R15       Guard_Tower                1        68
+B79       Watch_Tower                1        -1
+R14       Fortifications             1        68
+B72       Wall_Small                 1        -1
+R48       Chain_Mail_-_Soldiers      1        103
+R49       Chain_Mail_-_Archers       1        103
+R50       Chain_Mail_-_Cavalry       1        103
+R52       Metalurgy                  1        103
+R117      Iron_Shield                1        103
+R54       Heavy_Catapult             1        49
+U11       Soldier-Balista            1        49
+U25       Soldier-El_Archer          1        87
+R66       Long_Sword                 1        12
+U75       Soldier-Inf3               1        12
+R71       Heavy_Cavalry              1        101
+U37       Soldier-Cavalry1           1        101
+U46       Soldier-Elephant           1        101
+R73       Phalanx                    1        0
+U93       Soldier-Phal1              1        0
+R25       Juggernaught               1        45
+U277      Boat-War5                  1        45
+R2        Catapult_Tower             1        68
+B79       Watch_Tower                1        -1
+R27       Helepolis                  1        49
+U11       Soldier-Balista            1        49
+R36       Massive_Catapult           1        49
+U35       Soldier-Catapult1          1        49
+R79       Centurion                  1        0
+U291      Soldier-Phal3              1        0
+R38       Heavy_Horse_Archer         1        87
+U39       Soldier-Cavalry3_Arc       1        87
+R78       Cataphracts                1        101
+U37       Soldier-Cavalry1           1        101
+R77       Legion                     1        12
+U282      Soldier-Inf6               1        12
+B276      Wonder                     1        -1
+
+End
+
+Additional query words: 1.00 contents age aoe ages empire ageofempires
+
+======================================================================
+Keywords          : kbmm aoe 
+Technology        : kbHomeProdSearch kbAOE kbGamesSearch kbZNotKeyword kbAOESearch
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

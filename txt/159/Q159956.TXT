@@ -1,0 +1,105 @@
+DOCUMENT:Q159956  04-AUG-2001  [visualc]
+TITLE   :FIX: Dirty Flag Not Cleared During Edit() or Update()
+PRODUCT :Microsoft C Compiler
+PROD/VER:4.2 4.2b
+OPER/SYS:
+KEYWORDS:kbDatabase kbMFC kbODBC kbVC kbVC500fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), included with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2b 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 4.2b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Microsoft Foundation Classes (MFC) ODBC to update a record that
+has not been modified since the last call to CRecordset::Update(), the fields
+within the record show up as dirty.
+
+CAUSE
+=====
+
+Neither the CRecordset::Edit() function nor the CRecordset::Update() function
+clear the dirty flag.
+
+RESOLUTION
+==========
+
+Override CRecordset::Update() and clear the dirty flags for your recordset after
+calling the base class CRecordset::Update().
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual C++ version 5.0.
+
+MORE INFORMATION
+================
+
+The following sample code displays the problem. The second sample shows how to
+implement the workaround:
+
+Sample Code 1
+-------------
+
+      // m_pSet is a pointer to a CRecordset derived class, called CMySet,
+      // that has a text member variable called m_Name.
+
+      m_pSet->Edit();
+      m_pSet->m_Name = "NewName";
+      m_pSet->Update();
+
+      m_pSet->Edit();
+      if( m_pSet->IsFieldDirty( &(m_pSet->m_Name) ) )
+          TRACE( "Name is dirty\n" );
+      // The next call will update the record, even though the data has
+      // not changed.
+      m_pSet->Update();
+
+Sample Code 2
+-------------
+
+      // Override CRecordset::Update and clear the dirty flags:
+      BOOL CMySet::Update()
+      {
+         BOOL bReturn = CRecordset::Update();
+         if (m_bCheckCacheForDirtyFields &&
+            !(m_dwOptions & optimizeBulkAdd))
+         {
+            SetFieldDirty(NULL, FALSE);
+         }
+         return bReturn;
+      }
+
+Additional query words: kbVC420bug kbDSupport
+
+======================================================================
+Keywords          : kbDatabase kbMFC kbODBC kbVC kbVC500fix 
+Technology        : kbAudDeveloper kbMFC
+Version           : 4.2 4.2b
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,88 @@
+DOCUMENT:Q173780  21-SEP-1999  [msnetwork]
+TITLE   :Err Msg: A Fatal Exception Error 06 Has Occurred
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:1.3,2.0,2.5,2.51,2.52,2.6
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 1.3, 2.0, 2.5, 2.51, 2.52, 2.6 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you connect to MSN, The Microsoft Network, you may receive the following
+error message:
+
+   A fatal exception error 06 has occurred.
+
+CAUSE
+=====
+
+This behavior can occur if you are using an Everex StepNote laptop computer with
+a NeoMagic MagicGraph video adapter.
+
+RESOLUTION
+==========
+
+To resolve this behavior, contact your computer manufacturer to determine if
+there is a newer video driver available. This error message may occur with
+version 4.03.00.2526 of the NeoMagic MagicGraph128ZV video driver.
+
+WORKAROUND
+==========
+
+To work around this behavior, configure your computer to not use the hardware
+acceleration feature. To do so, follow these steps:
+
+Windows 95
+----------
+
+1. Right-click My Computer on the desktop, and then click Properties.
+
+2. On the Performance tab, click Graphics.
+
+3. Move the Hardware Acceleration slider to None.
+
+4. Click OK, click Close, and then click Yes to restart your computer.
+
+Windows 98
+----------
+
+1. Right-click My Computer on the desktop, and then click Properties.
+
+2. On the Settings tab, click Advanced.
+
+3. On the Performance tab, move the Hardware Acceleration slider to None.
+
+4. Click OK, click OK again and then click Yes if you are prompted to restart
+   your computer.
+
+
+Additional query words: 1.20 msn
+
+======================================================================
+Keywords          : kbenv kberrmsg kbmsn 
+Technology        : kbMSNSearch kbMSN200 kbMSN252 kbMSN130 kbMSN251 kbMSN260 kbMSN250
+Version           : WINDOWS:1.3,2.0,2.5,2.51,2.52,2.6
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

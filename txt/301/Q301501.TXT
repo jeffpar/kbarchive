@@ -1,0 +1,59 @@
+DOCUMENT:Q301501  12-JUN-2001  [msnetwork]
+TITLE   :MSN Explorer 6.1 freezes if you click "Put in Folder" button whi
+PRODUCT :The Microsoft Network
+PROD/VER::6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 6.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+This is the current situation:
+
+1. Sign in to MSN Explorer 6.1.
+
+2. Click on the E-mail icon.
+
+3. While Explorer is downloading and synchronizing e-mail, click the "Put in
+   Folder" button. This can cause MSN Explorer to freeze. The only way to shut
+   MSN Explorer is by using the Windows Task Manager (CTRL+ALT+DELETE).
+
+4. In Task Manager, select Inbox- My E-mail and click the End Task button.
+
+RESOLUTION
+==========
+
+Upgrading from Internet Explorer 5.0 to Internet Explorer 5.5 may resolve this
+issue. You can obtain Internet Explorer 5.5 for free by downloading from
+http://www.microsoft.com/windows/ie/http://www.microsoft.com/windows/ie/.
+
+Additional query words: kbimu; MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN610 kbMSNExplorer
+Version           : :6.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

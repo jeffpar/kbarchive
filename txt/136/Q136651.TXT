@@ -1,0 +1,72 @@
+DOCUMENT:Q136651  17-DEC-2000  [win95x]
+TITLE   :Shutdown Hangs After "Please Wait While..." Screen
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you click the Shut Down The Computer option in the Shut Down Windows
+dialog box and then click OK, your computer may stop responding (hang) or
+display a black screen after you see the "Please wait while your computer shuts
+down" screen.
+
+CAUSE
+=====
+
+This problem can be caused by an incompatibility between the Windows 95 Advanced
+Power Management (APM) system and the APM-capable BIOS in your computer. If the
+BIOS in your computer instructs the system to suspend, rather than shut down,
+Windows 95 cannot shut down correctly.
+
+RESOLUTION
+==========
+
+As a temporary workaround, disable APM support. To do so, double-click the Power
+icon in Control Panel, and set the Power Management setting to Off.
+
+
+To resolve the problem, contact your computer manufacturer to inquire about a
+BIOS upgrade that resolves the problem.
+
+MORE INFORMATION
+================
+
+For additional information about how to resolve issues with shutting down
+Windows 95, please see the following article in the Microsoft Knowledge Base:
+
+Q145926 How to Troubleshoot Windows 95 Shutdown Problems
+
+
+Additional query words: fail fails exit
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

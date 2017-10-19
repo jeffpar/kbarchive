@@ -1,0 +1,51 @@
+DOCUMENT:Q121134  08-AUG-2001  [winnt]
+TITLE   :Doc Error: NT Workstation Inbound Connections Not Unlimited
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.50
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.50
+
+WINDOWS
+
+kbnetwork
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+-------------------------------------------------------------------------------
+
+On page 94 of the Windows NT 3.5 "Workstation System Guide," both step 3
+and the picture of the Shared Directory dialog box are incorrect. Under
+the heading User Limit, Unlimited is not an option for Windows NT 3.5
+Workstation. The dialog box has been changed in the product to reflect
+the accurate option of Maximum Allowed, which under Windows NT 3.5
+Workstation is 10. Under step 3, the reference to Unlimited should also be
+Maximum Allowed. Windows NT 3.5 Workstation is limited to 10 inbound
+connections.
+
+
+Additional query words: prodnt docerr kbdocerr
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search
+Version           : 3.50
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

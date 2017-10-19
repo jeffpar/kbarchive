@@ -1,0 +1,60 @@
+DOCUMENT:Q169096  08-NOV-2001  [frontpg]
+TITLE   :FP: FrontPage Ships on Compact Disc Only
+PRODUCT :Word Front Page
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:kbsetup kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 2000 version of this article, see Q196113.
+
+For a Microsoft FrontPage 98 version of this article, see Q194238.
+
+SUMMARY
+=======
+
+The versions of Microsoft FrontPage listed at the beginning of this article are
+available on compact disc only. They are not available on floppy disk.
+
+If you purchased FrontPage, but you do not have a system that meets the minimum
+requirements listed on the product box, you can either upgrade your computer or
+return the product to the retailer. You may also contact the Microsoft Sales
+Information Center for information about how to return the product and obtain a
+refund. You can reach the Microsoft Sales and Information Center by calling
+(800) 426-9400. If you are outside the United States, contact your local
+subsidiary. To locate your subsidiary, see the Microsoft World Wide Offices Web
+site at:
+
+   http://www.microsoft.com/worldwide/default.htm
+
+Additional query words: 97 floppy
+
+======================================================================
+Keywords          : kbsetup kbdta 
+Technology        : kbHWMAC kbOSMAC kbFrontPageSearch kbZNotKeyword8 kbZNotKeyword kbFrontPage97Search kbFrontPageMac kbZNotKeyword3
+Version           : MACINTOSH:1.0
+Hardware          : MAC x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

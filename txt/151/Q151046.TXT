@@ -1,0 +1,60 @@
+DOCUMENT:Q151046  16-APR-2000  [powerpt]
+TITLE   :Errors Opening "PowerPoint Step by Step" Presentations
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to open a PowerPoint presentation from the "PowerPoint for
+Windows 95 Step by Step" Practice Files disk, you may receive one of the
+following errors:
+
+   Sorry, PowerPoint cannot read the outline from "Filename.ppt". No text
+   converter is installed for this file type.
+
+   -or-
+
+   Sorry, this type of file cannot be opened by PowerPoint.
+
+RESOLUTION
+==========
+
+In order to open these presentations, you must first run the installation
+program for the Practice Files disk. For instructions on installing these files,
+please read "Install the Practice Files" in the "Getting Ready" section of the
+"PowerPoint for Windows 95 Step by Step" book.
+
+Additional query words: powerpnt ppt powerpt setup
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

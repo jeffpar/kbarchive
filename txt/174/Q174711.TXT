@@ -1,0 +1,64 @@
+DOCUMENT:Q174711  23-APR-2000  [exchange]
+TITLE   :XCLN: Item Retention Only Available in 32-bit Outlook 8.03
+PRODUCT :Microsoft Exchange
+PROD/VER:MACINTOSH:8.0; WINDOWS:5.5; :8.03
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Macintosh client, version 5.5 
+ - Microsoft Outlook for Macintosh, Exchange Server Edition, version 8.0 
+ - Microsoft Outlook 97, version 8.03 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Item Retention feature available with Microsoft Exchange Server, version
+5.5, can only be accessed by users running Microsoft Outlook for Windows 95 or
+Windows NT, version 8.03 or higher. With these 32-bit clients, users will have
+the Recover Deleted Items option on the Tools menu. This option is available
+when Item Retention is enabled on the Exchange Server by the Microsoft Exchange
+administrator.
+
+This option is not available to the following versions of Microsoft Exchange and
+Microsoft Outlook:
+
+ - Microsoft Exchange for Macintosh
+
+ - Microsoft Exchange for Windows (Windows 3.1x, Windows 95, Windows NT)
+
+ - Microsoft Outlook for Macintosh, Exchange Server Edition, version 8.0
+
+ - Microsoft Outlook for Windows 3.x, Exchange Server Edition, version 8.0
+
+ - Microsoft Outlook for Windows, versiona 8.0, 8.01, and 8.02
+
+This is by product design.
+
+Additional query words: dumpster purge recover
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbOutlookSearch kbExchangeSearch kbExchangeClientSearch kbOutlook97Search kbZNotKeyword3 kbOutlookMacSearch kbOutlook803 kbOutlook800Mac
+Version           : MACINTOSH:8.0; WINDOWS:5.5; :8.03
+Issue type        : kbprb kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

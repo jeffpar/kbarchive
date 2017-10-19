@@ -1,0 +1,129 @@
+DOCUMENT:Q268022  27-JUL-2001  [foxpro]
+TITLE   :PRB: SELECT Returns NULL Rows Filtering Join on Child Table
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbDatabase kbSQL kbvfp500 kbvfp500a kbvfp600 KbDBFDBC kbGrpDSFox kbDSupport kbCodeSnipp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The SELECT - SQL command may return .NULL. records in a left-outer join when you
+filter the child table for EMPTY() records. This is not the way that SQL Server
+handles identical data and statements.
+
+RESOLUTION
+==========
+
+If you want to filter on the child table and only see matching records, you
+should use an INNER JOIN. However, if you want to see all parent records but
+only those children that match the filter, you should include the filter
+condition in the JOIN clause. For more information, see the Microsoft Knowledge
+Base article in the "References" section to follow.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the following code in Visual FoxPro:
+
+   CREATE TABLE PTable ( PKey C(5), ID_Field_p C(5) )
+
+   ** Create the child table.
+   CREATE TABLE CTable ( PKey C(5), ID_Field_c C(5), TestField C(5) )
+
+   ** Insert records into the parent table.
+   INSERT INTO PTable VALUES ( "00001", "prec1" )
+   INSERT INTO PTable VALUES ( "00002", "prec2" )
+   INSERT INTO PTable VALUES ( "00003", "prec3" )
+   INSERT INTO PTable VALUES ( "00004", "prec4" )
+   INSERT INTO PTable VALUES ( "00005", "prec5" )
+
+   ** Insert records into the child table.
+   ** Note that parent record two has two children, and
+   **  parent record three has no children.
+   INSERT INTO CTable VALUES ( "00001", "crec1", "ONE" )
+   INSERT INTO CTable VALUES ( "00002", "crec2", "" )
+   INSERT INTO CTable VALUES ( "00002", "crec3", "TWO" )
+   INSERT INTO CTable VALUES ( "00004", "crec4", "THREE" )
+   INSERT INTO CTable VALUES ( "00005", "crec5", "" )
+
+   SELECT * ;
+      FROM PTable ;
+      LEFT OUTER JOIN CTable ON PTable.PKey == CTable.PKey ;
+      WHERE CTable.TestField = "     "
+
+This should only match parent records 2 and 5. Because parent record 3 has no
+children, it should not be returned.
+
+2. Run the following code in the SQL Server Query Analyzer for comparison:
+
+   CREATE TABLE PTable ( PKey Char(5), ID_Field_p Char(5) )
+
+   CREATE TABLE CTable ( PKey Char(5), ID_Field_c Char(5), TestField Char(5) )
+
+   INSERT INTO PTable VALUES ( "00001", "prec1" )
+   INSERT INTO PTable VALUES ( "00002", "prec2" )
+   INSERT INTO PTable VALUES ( "00003", "prec3" )
+   INSERT INTO PTable VALUES ( "00004", "prec4" )
+   INSERT INTO PTable VALUES ( "00005", "prec5" )
+
+   INSERT INTO CTable VALUES ( "00001", "crec1", "ONE" )
+   INSERT INTO CTable VALUES ( "00002", "crec2", "" )
+   INSERT INTO CTable VALUES ( "00002", "crec3", "TWO" )
+   INSERT INTO CTable VALUES ( "00004", "crec4", "THREE" )
+   INSERT INTO CTable VALUES ( "00005", "crec5", "" )
+
+   SELECT * 
+      FROM PTable 
+      LEFT OUTER JOIN CTable ON PTable.PKey = CTable.PKey
+      WHERE CTable.TestField = "     "
+
+REFERENCES
+==========
+
+For additional information about filtering in JOIN clauses, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q268906 HOWTO: Filter in a JOIN Condition
+
+For additional information about the SELECT command, see the Visual FoxPro
+Language Reference and the SQL Server Books Online.
+
+(c) Microsoft Corporation 2000, All Rights Reserved.
+Contributions by Garrett Fitzgerald, Microsoft Corporation
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbSQL kbvfp500 kbvfp500a kbvfp600 KbDBFDBC kbGrpDSFox kbDSupport kbCodeSnippet kbSQLProg 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,91 @@
+DOCUMENT:Q137514  28-JUL-2001  [win95x]
+TITLE   :Older ESS Sound Tools Incompatible with Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95 appscomp kbAppCompatibility
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Certain programs, such as Talking Calculator, are preinstalled on computers
+containing an ESS Technologies ESS688 sound card. These programs may produce any
+of the following symptoms in Windows 95:
+
+ - Sounds do not work.
+
+ - Programs stop responding (hang).
+
+ - System sounds may be disabled after you run one of these programs.
+
+CAUSE
+=====
+
+The 16-bit ESS Technologies programs listed below are not compatible with
+Windows 95.
+
+RESOLUTION
+==========
+
+Contact ESS Technologies for information about upgrading these programs to
+versions that are compatible with Windows 95.
+
+MORE INFORMATION
+================
+
+The following ESS Technologies programs are known to cause the problems
+described in this article:
+
+ - Audio Clip Library
+
+ - Talking Calculator (Tcalc.exe, 7/5/94)
+
+ - Chime (Chime.exe, 7/5/94)
+
+ - Talking Clock (Tclock.exe, 7/15/94)
+
+ - Reminder (Reminder.exe, 7/5/94)
+
+ - Setup (Setup.exe 10/15/94)
+
+ - Stop Watch (Stpwatch.exe, 7/5/94)
+
+ - Talking Timer (Ttimer.exe, 7/12/94)
+
+Many of these programs use a proprietary waveform format. These files have an
+.aud extension. Windows 95 cannot recognize this format.
+
+
+The third-party products discussed in this article are manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: presario
+
+======================================================================
+Keywords          : win95 appscomp kbAppCompatibility 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

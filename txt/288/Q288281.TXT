@@ -1,0 +1,74 @@
+DOCUMENT:Q288281  12-NOV-2001  [msnetwork]
+TITLE   :Changing The Name That Appears On E-mail And Instant Messages
+PRODUCT :The Microsoft Network
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Subscribers want to change the friendly name that displays when they send e-mail
+or instant messages. For example, a subscriber might want to change from "Robert
+Smith" to "Bob Smith".
+
+CAUSE
+=====
+
+The name that appears in e-mail and instant messages is set by default when
+subscribers sign up for accounts. The billing name the subscriber provides is
+the default e-mail name that MSN Companion will use.
+
+RESOLUTION
+==========
+
+1. Click start, and then click settings.
+
+2. Click my account, and then click change information.
+
+3. Type in the first name (e-mail) and last name (e-mail) boxes to change the
+   information as needed.
+
+4. Click the done button.
+
+5. After the page reloads and shows your newly chosen display name, click start.
+
+6. Press the power button to turn the device off, and then press the power
+   button again to restart MSN Companion.
+   Your e-mail and instant messaging display names will now be updated with your
+   changes.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbMSNSearch kbMSNCompanion
+Version           : :1.0,2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

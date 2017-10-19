@@ -1,0 +1,56 @@
+DOCUMENT:Q87426  16-NOV-1999  [pcmail]
+TITLE   :PROFS: Class of Machine Required for Gateway PC
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to IBM PROFS and OfficeVision, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The minimum requirement for the PC running the Microsoft Mail Gateway to IBM
+PROFS and OfficeVision is an IBM-compatible PC/XT/AT computer with 640K of RAM.
+A higher class of machine, such as a 286 or 386, increases performance and
+throughput marginally.
+
+The slowest component of the message transfer between the LAN and the host is the
+3270 file transfer with the host. Although a faster PC reduces the transfer time
+slightly, the speed of the communications link is usually the limiting factor
+when trying to increase message throughput.
+
+The Gateway software is not designed to use extended or expanded memory; the
+gateway program (HostDisp or VMGATE) must be loaded into conventional memory.
+Therefore, there should be at least 215K of conventional memory free before
+loading the gateway program. To ensure that this is possible, you may have to
+load MS-DOS and/or your network drivers into high memory.
+
+
+Additional query words: 3.00 pcmail profslan
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateIBMPROFS300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

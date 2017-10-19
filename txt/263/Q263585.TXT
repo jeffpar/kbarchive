@@ -1,0 +1,76 @@
+DOCUMENT:Q263585  17-DEC-2000  [win95x]
+TITLE   :How to Type International Characters on an English Keyboard
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 98 
+ - Microsoft Windows 98 Second Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to type international characters and symbols on an
+English keyboard.
+
+MORE INFORMATION
+================
+
+To type international characters with an English keyboard, you need to change
+the keyboard layout. To change the Windows keyboard layout, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Keyboard.
+
+3. Click the Language tab, and then select your current keyboard layout (which
+   you want to change).
+
+   Note: If your keyboard is not listed, click the Add button to install a
+   different language.
+
+4. Click the Properties tab, and then click United States-International for the
+   keyboard layout.
+
+5. Click OK, and then click "Set as Default".
+
+6. Click Apply, and when prompted, insert your Windows CD-ROM.
+
+7. Click OK to close Keyboard Properties, and then close Control Panel.
+
+When you want to type an international character, hold down the ALT key, and then
+press the character you would like to accent.
+
+If you want to disable this feature, change the keyboard layout back to its
+original setting.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbWin98search kbWin98SEsearch kbZNotKeyword3 kbWin98 kbWin98SE
+Version           : :95
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

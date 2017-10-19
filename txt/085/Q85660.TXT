@@ -1,0 +1,66 @@
+DOCUMENT:Q85660  31-OCT-1999  [win95x]
+TITLE   :Setting and Saving the Terminal Screen Buffer
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to save text in the Terminal window and how to set
+the screen buffer.
+
+MORE INFORMATION
+================
+
+Choosing Save from the Terminal File menu will not save the text on the screen.
+To save the text on the screen, the text must first be selected and copied into
+the Clipboard. This text may then be pasted into a text editor such as Write or
+Notepad and saved for later use.
+
+To save text on a Terminal screen, do the following:
+
+1. Highlight the desired text.
+
+2. From the Edit menu, choose Copy.
+
+3. Open a text editor such as Write or Notepad.
+
+4. From the Edit menu, choose Paste.
+
+5. From the File menu, choose Save.
+
+To set the buffer size for Terminal, choose Terminal Preferences from the
+Settings menu. The valid range for the Buffer Lines setting is between 25-399
+lines of text.
+
+Additional query words: 3.00 3.0 3.0a 3.1 3.11 3.10 echo
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

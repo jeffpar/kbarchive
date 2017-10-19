@@ -1,0 +1,75 @@
+DOCUMENT:Q89526  05-NOV-1999  [win95x]
+TITLE   :Setup Errors With Productivity Pack on Removable Media
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you install the Windows Productivity Pack 3.1 on removable media, such as a
+Bernoulli or SyQuest drive, you receive the following error message:
+
+   The location you have chosen to install Microsoft Productivity Pack is
+   invalid or not allowed. Please check the drive and/or directory name.
+
+This message appears even if Windows is installed on the removable drive and
+there is sufficient disk space.
+
+MORE INFORMATION
+================
+
+Setup only allows you to install on a fixed disk. When you install Windows
+Productivity Pack 3.1 on removable media, such as a Bernoulli or Syquest drive,
+SETUP.EXE fails. Setup incorrectly assumes that you are installing to a floppy
+disk, and determines that there is insufficient disk space for the
+installation.
+
+This was tested with the Bernoulli driver RCD.SYS 7.0 and 7.04.
+
+WORKAROUND
+==========
+
+1. Install Productivity Pack to a directory on a fixed disk.
+
+2. Create a new ProdPack directory on the removable drive and copy the files
+   from the fixed disk directory to the new directory.
+
+3. Change Program Item Properties to reflect the new program location. You
+   receive this message:
+
+   The specified path points to a file that may not be available during later
+   Windows sessions. Do you want to continue?
+
+4. Choose OK to dismiss this message.
+
+Additional query words: 3.10 3.11 3rdparty err msg Hardcard
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,52 @@
+DOCUMENT:Q87340  11-MAR-2000  [miscsdk]
+TITLE   :PRB: Chinese Windows Setup Prompts for Printer Driver Disk
+PRODUCT :Miscellaneous Software Development Kits
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Far East Software Development Kit (FESDK) for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During the process of installing the Chinese version of Microsoft Windows 3.0
+from the Far East Software Development Kit (FESDK) CD-ROM (compact-disk
+read-only memory), after the user selects a printer to install, the Chinese
+Windows Setup program prompts for disk #5 or the disk that contains the
+corresponding driver.
+
+RESOLUTION
+==========
+
+These drivers are on the CD-ROM. Specify the Chinese Windows Setup program
+directory on the CD-ROM and the Setup procedure continues.
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSDKSearch kbSDKFESearch kbWinSDKSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

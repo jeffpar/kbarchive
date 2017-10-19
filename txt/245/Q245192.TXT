@@ -1,0 +1,85 @@
+DOCUMENT:Q245192  10-AUG-2001  [winnt]
+TITLE   :Blank Logon Dialog Box Appears After You Change Drive Letter.
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you restart a computer running Microsoft Windows NT Server 4.0, and then
+press CTRL+ALT+Delete to log on to the computer, you may receive a blank dialog
+box.
+
+CAUSE
+=====
+
+This behavior can occur if you install a new hard disk on your computer and
+change the drive letter of the hard disk, and the Winlogon.exe, Samsrv.dll, or
+Samlib.dll files are damaged, or the Security Accounts Manager (SAM) database is
+damaged.
+
+RESOLUTION
+==========
+
+To resolve this issue, use an Emergency Repair Disk (ERD) to restore the damaged
+system files, and then restore the SAM and Security registry hives from the most
+recent tape backup.
+
+MORE INFORMATION
+================
+
+Though restoring the registry hives from the most recent tape backup is the
+preferred method, you can also restore the SAM and Security registry hives from
+the ERD.
+
+CAUTION: The ERD method restores the hives only to how they were when you created
+the ERD. All the user account and user group information is lost. Updating an
+ERD does not update the SAM and Security hives.
+
+For more information about updating the SAM and Security hives, please refer to
+the following article in the Microsoft Knowledge Base:
+
+   Q126464 Repair Disk Utility Does Not Update SAM and Security Hives
+
+For more information about using an ERD, please refer to the following article in
+the Microsoft Knowledge Base:
+
+   Q103280 Using an Emergency Repair Disk Created by Windows NT
+
+For more information about restoring the registry from a tape backup, please
+refer to the following Microsoft Knowledge Base article:
+
+   Q101229 How to Restore Windows NT Over an Existing Installation
+
+Additional query words: domain missing
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

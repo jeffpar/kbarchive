@@ -1,0 +1,60 @@
+DOCUMENT:Q101942  08-AUG-2001  [winnt]
+TITLE   :Err Msg: Network Error 2240 from Windows for Workgroups
+PRODUCT :Microsoft Windows NT
+PROD/VER::1.0,3.1
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Advanced Server, version 3.1 
+ - Microsoft Windows for Workgroups version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While attempting to log onto a Windows NT Advanced Server domain from a Windows
+for Workgroups workstation, the following error message may be displayed:
+
+   Network Error 2240
+
+CAUSE
+=====
+
+This error message is generated because the user's Windows for Workgroups
+workstation is not listed as a possible workstation in the "User May Log On To
+These Workstations:" dialog in the profile for that user on the Windows NT
+Advanced Server.
+
+RESOLUTION
+==========
+
+To allow the user to log onto the domain, the user's Windows for Workgroups
+workstation name must me added to the list in Windows NTAS User Manager - User
+Properties - Logon From dialog box.
+
+Additional query words: wfw wfwg prodnt err msg alert interoperability (os/2 lm 2.x, novell, unix, nfs)
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbWinNTsearch kbWinNTAdvSerSearch kbWinNTAdvServ310 kbAudDeveloper kbWinNT310Search kbWFWSearch
+Version           : :1.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,73 @@
+DOCUMENT:Q214911  07-MAR-1999  [sms]
+TITLE   :SMSINST: Change Window Hides Buttons When Using Repackage
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:1.0,2.0; winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms120 kbsmsInst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server Installer versions 1.0, 2.0 
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After clicking the Change button at the beginning of a Repackage, the OK,
+Cancel, Apply, and Help buttons may become hidden by the Task Bar on machines
+running the Windows 95/Windows NT 4.0 desktop shell.
+
+CAUSE
+=====
+
+This can occur when the machine used to compile the Installer script is running
+a display resolution of 640 x 480. Many of the configuration screens used in
+Systems Management Server Installer are designed to accommodate large amounts of
+information and options. This can result in Installer configuration dialog boxes
+using a large portion of the viewing area when the display is less than 800 x
+600.
+
+WORKAROUND
+==========
+
+It is recommended that you increase the display resolution to 800 x 600 or
+higher to allow for maximum viewing.
+
+You may also be able to access these buttons by hiding the Task Bar on the
+machine. For information on how to hide the Task Bar on machines running Windows
+95/98 or Windows NT 4.0, please refer to the following article in the Microsoft
+Knowledge Base:
+
+   Q135893 Windows 95 Tips.txt File Contents
+
+MORE INFORMATION
+================
+
+
+Additional query words: prodsms smsinst
+
+======================================================================
+Keywords          : kbsms200 kbsms120 kbsmsInst 
+Technology        : kbSMSSearch kbSMS200 kbSMSI100 kbSMSI200
+Version           : WINDOWS:1.0,2.0; winnt:2.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,81 @@
+DOCUMENT:Q209483  01-JUN-2001  [word97]
+TITLE   :WD97: Printing Slow When Printing Text Boxes Under Windows NT 4
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97; winnt:4.0
+OPER/SYS:
+KEYWORDS:kbdta word8 word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+ - the operating system: Microsoft Windows NT 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print a Word document containing text in text boxes on a
+Hewlett-Packard LaserJet printer, the document print file may be very large and
+the document prints slowly.
+
+CAUSE
+=====
+
+This is a known problem with the Hewlett-Packard LaserJet printer drivers
+shipped with Microsoft Windows NT 4.0.
+
+RESOLUTION
+==========
+
+To resolve this problem, download and install the latest Hewlett-Packard
+LaserJet printer driver available for your printer. To download the latest
+Hewlett-Packard printer driver, please visit the following Hewlett-Packard Web
+address:
+
+   http://www.hp.com
+
+For information about how to contact Hewlett-Packard, click the appropriate
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+MORE INFORMATION
+================
+
+When you print using a Hewlett-Packard LaserJet printer driver, font information
+for the text is usually downloaded to the printer. However, the shipped
+Hewlett-Packard LaserJet printer drivers cannot understand a text box, so the
+printer driver converts it to a bitmap. The bitmap causes the increased file
+size and the slower than normal printing of the document.
+
+
+Additional query words: hp hplj laser jet
+
+======================================================================
+Keywords          : kbdta word8 word97 
+Technology        : kbWordSearch kbOSWinSearch kbWord97 kbWord97Search kbOSWinNT400 kbZNotKeyword2 kbOSWinNTSearch
+Version           : WINDOWS:97; winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

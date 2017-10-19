@@ -1,0 +1,64 @@
+DOCUMENT:Q93328  02-FEB-2000  [foxpro]
+TITLE   :FoxPro Commands That Create Backup (.BAK & .TBK) Files
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5b,2.5c,2.6a; MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft FoxPro for MS-DOS, versions 2.0, 2.5, 2.5a 
+ - Microsoft FoxPro for Windows, versions 2.5, 2.5a 
+ - Microsoft FoxPro for Macintosh, versions 2.5b, 2.5c, 2.6a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+FoxPro creates backup files prior to performing certain operations that can
+corrupt the database if the operation fails. The backup file is created in the
+same directory as the original file and has the .BAK extension.
+
+FoxPro creates a backup file before performing any of the following operations:
+
+   APPEND FROM
+   MODIFY STRUCTURE
+   PACK
+   UPDATE ON
+
+If the database has an associated memo file, the backup copy of the memo file has
+the .TBK extension.
+
+The PACK command deletes the backup file once the operation has been completed
+successfully.
+
+To restore information from a backup file, delete or rename the .DBF file with
+the same name, then rename the backup file so that is has the .DBF file
+extension. The .BAK file may also be used as a database if the user specifies
+the complete filename (including the extension) in the USE command.
+
+Additional query words: VFoxWin FoxDos FoxWin table FoxMac
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro250bMac kbFoxPro260aMac kbFoxPro250cMac kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250 kbFoxPro250a kbVFP300
+Version           : MACINTOSH:2.5b,2.5c,2.6a; MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

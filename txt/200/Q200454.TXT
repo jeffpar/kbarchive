@@ -1,0 +1,64 @@
+DOCUMENT:Q200454  24-OCT-2000  [vbwin]
+TITLE   :BUG: Visual Basic Does Not Receive Some OSP Notifications
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbDataBinding kbMDAC kbOSP kbGrpDSVBDB kbMDAC260
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Errors may be reported by Visual Basic controls, such as the DataGrid, if schema
+changes occur in the underlying data source where that data source is an OLE DB
+Simple Provider (OSP). A schema change is not a change to the data provided, but
+a change to the structure of that data. For example, adding or removing a column
+from a table constitutes a schema change.
+
+CAUSE
+=====
+
+Visual Basic controls, such as the DataGrid, do not receive the OLE DB
+notifications required to process schema changes.
+
+RESOLUTION
+==========
+
+There are no known workarounds at this time.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+Additional query words: kbDSupport kbdse
+
+======================================================================
+Keywords          : kbDataBinding kbMDAC kbOSP kbGrpDSVBDB kbMDAC260 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

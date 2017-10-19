@@ -1,0 +1,58 @@
+DOCUMENT:Q258667  31-MAR-2000  [homegame]
+TITLE   :Baseball 2001: Cannot Use Mouse to Play or Pause Instant Replay
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbui kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Baseball 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click the Play or the Pause button during an instant replay in
+Microsoft Baseball 2001, the instant replay is not played or paused.
+
+RESOLUTION
+==========
+
+To work around this issue, use your game controller to play or pause the instant
+replay.
+
+On the keyboard, press ENTER to toggle between playing and pausing the instant
+replay.
+
+On a game pad, press button 1 to toggle between playing and pausing the instant
+replay.
+
+For additional information about instant replays, please see the "Instant
+Replays" topic in the Baseball 2001 online Player's Guide.
+
+Additional query words: 1.00 msgame bb2001 bball replays stop
+
+======================================================================
+Keywords          : kbui kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbBaseballSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

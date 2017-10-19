@@ -1,0 +1,71 @@
+DOCUMENT:Q201370  29-AUG-1999  [exchange]
+TITLE   :XFOR: Notes Advanced Rich Text Not Supported by App Connector
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Exchange Server and MAPI do not support several rich text items handled by Lotus
+Notes. This results in unexpected behavior when synchronizing messages between
+Exchange Server public folders and Lotus Notes discussion databases using the
+Microsoft Notes Application Connector.
+
+MORE INFORMATION
+================
+
+Rich text items handled by Lotus Notes which may cause problems include:
+
+ - Page breaks
+
+ - Buttons
+
+ - Hotspot popup text
+
+ - Table gridlines
+
+ - Keyword radio buttons
+
+ - Keyword check boxes
+
+ - Margins
+
+ - Line spacing
+
+ - Certain tab and justification settings
+
+These items are not included in the message structure when converted to Exchange
+Server.
+
+Additional query words: MESA CXA
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

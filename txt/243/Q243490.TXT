@@ -1,0 +1,65 @@
+DOCUMENT:Q243490  16-MAY-2002  [homegame]
+TITLE   :Asheron's Call: Other Players Cannot See Monster on Your Screen
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbimu msgame kbgraphxlinkcriticalkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Asheron's Call, version 1.0 
+ - Microsoft Asheron's Call: Dark Majesty, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play Microsoft Asheron's Call, you may see a monster on your screen,
+but other players you are playing with do not see the monster.
+
+In addition, you cannot examine or attack this monster.
+
+CAUSE
+=====
+
+This behavior occurs if the server is not updating your computer with current
+game data.
+
+RESOLUTION
+==========
+
+To resolve this issue, leave and then reenter the Asheron's Call game world:
+
+1. On the Asheron's Call game screen, click Options ([GRAPHIC:the green triangle
+   with two check boxes]) in the lower right corner of the screen.
+
+2. Click Leave World, and then click Yes.
+
+3. Click your character's name, and then click Enter Game.
+
+Additional query words: 1.00 msgame ac msngz invisible monsters kbgraphx asherons
+
+======================================================================
+Keywords          : kbdisplay kbimu msgame kbgraphxlinkcritical kbfaq
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbMSNSearch kbAsheronSearch kbAsheron100 kbAsheronDarkMaj
+Version           : :1.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

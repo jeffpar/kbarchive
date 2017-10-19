@@ -1,0 +1,56 @@
+DOCUMENT:Q168594  21-AUG-1999  [foxpro]
+TITLE   :HOWTO: Use a Date Filter in an Oracle Remote View
+PRODUCT :Microsoft FoxPro
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kb3rdparty kbinterop kbDatabase kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use a date field as a filter criteria in a remote view to an Oracle
+table, the date value must be specified using the following format:
+
+   'YYYY-MM-DD HH:MM:SS'
+
+MORE INFORMATION
+================
+
+The following example filter criteria returns all records from the table where
+the date field contains a date later than January 1, 1996:
+
+      Date_Field > '1996-01-01 00:00:00'
+
+NOTE: The time portion of this date must be included. If the time is not needed,
+use 00:00:00 as the time portion of the datetime expression as in the above
+example.
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kbinterop kbDatabase kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

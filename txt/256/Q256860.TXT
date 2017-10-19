@@ -1,0 +1,83 @@
+DOCUMENT:Q256860  16-AUG-2001  [exchange]
+TITLE   :XFOR: Lotus Notes Users Unable to View Exchange Users' Free Busy
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5 SP3,SP1
+OPER/SYS:
+KEYWORDS:exc55sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP3 
+ - Microsoft Exchange 2000 Server SP1 
+ - Microsoft Exchange 2000 Enterprise Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to view the free and busy times of Exchange Server users by using the
+Lotus Notes client, the free and busy times are only displayed as a gray bar
+when you click Find Free Time in the invitation to perform a free time search.
+Exchange Server users can view the free and busy times of the Notes users. No
+events are written to Windows NT Event Viewer and no definitive errors are
+reported if debugging is enabled in the Exchange Calendar Connector (excalcon)
+task on the Notes server.
+
+MORE INFORMATION
+================
+
+This issue can occur because of a Lotus Notes limitation. When a Notes user
+queries the calendar of another Notes user, Notes Schedule Manager attempts to
+supply the data. It checks the Notes primary public Names and Address Book
+(NAB), the Names.nsf file, to determine if the target user is on the local Notes
+server or not. If the target user is on the local Notes server, the free and
+busy times of the user are stored in the local instance of the Busytimes.nsf
+file. Schedule Manager simply looks up the information and returns it to the
+requestor.
+
+If the target user is on a different server in either the same or a different
+Notes domain, or if the user is in a different system altogether, Schedule
+Manager passes the request to a second task that is called Calendar Connector.
+The Calendar Connector task reroutes the request to the appropriate Notes or
+foreign domain, specifically to a Calendar Connector task in that other domain.
+In the case of the Exchange Server foreign domain, the Calendar Connector task
+is a new task called Calendar Connector (or Exch Calconn), which is added to the
+Notes server as part of the Exchange Calendar Connector installation process.
+When the data is returned, the Notes Calendar Connector task returns the data to
+the requesting client.
+
+By default, the Schedule Manager task that runs on the Notes server only queries
+the primary Names and Address Book (the Names.nsf file) for the invitees person
+document, even when cascading address books have been configured. If you perform
+a directory synchronization of the Exchange Server recipients to a different NAB
+(for example, the Exchange.nsf file) the Notes clients cannot view the free and
+busy times of the Exchange Server users.
+
+Lotus Notes support has documented this issue.
+
+
+Additional query words: calcon, troubleshooting, notescal
+
+======================================================================
+Keywords          : exc55sp3 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange2000Search kbExchange2000Serv kbExchange2000EntServ kbExchange550SP3 kbExchange2000ServSP1
+Version           : :5.5 SP3,SP1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

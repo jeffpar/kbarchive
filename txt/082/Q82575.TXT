@@ -1,0 +1,63 @@
+DOCUMENT:Q82575  15-OCT-1999  [win95x]
+TITLE   :Windows Programs Rely on BIOS to Detect Coprocessor
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Strange behavior with applications that use math coprocessors (Microsoft Excel,
+for instance) can be due to the BIOS reporting the presence of a math
+coprocessor when one does not exist. For example, if you have a 486SX machine
+with a BIOS designed for a 486DX and you type a number in Microsoft Excel, an
+incorrect floating-point number is displayed.
+
+MORE INFORMATION
+================
+
+Windows issues an INT 11h (equipment check) function call to determine whether a
+math coprocessor is present.
+
+Do the following to determine test whether there is a coprocessor detection
+problem on a computer:
+
+1. Run Microsoft Diagnostics (MSD).
+
+2. Choose the Computer option.
+
+3. If a coprocessor is detected, and the machine does not have one, the BIOS
+   will need to be replaced with a BIOS that does not incorrectly report a
+   non-existent coprocessor.
+
+
+Additional query words: 3.10 3.11 3.00 3.00a excel
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

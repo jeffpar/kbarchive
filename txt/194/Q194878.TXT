@@ -1,0 +1,89 @@
+DOCUMENT:Q194878  27-DEC-2001  [winnt]
+TITLE   :Error: "No Transport Provider" Trying to Send Mail
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0,8.0,8.01,8.02,8.03,8.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 97, versions 8.0, 8.01, 8.02, 8.03, used with:
+    - the operating system: Microsoft Windows 98 
+    - the operating system: Microsoft Windows 95 
+ - Microsoft Outlook 98, version 8.5, used with:
+    - the operating system: Microsoft Windows 98 
+    - the operating system: Microsoft Windows 95 
+ - the operating system: Microsoft Windows NT 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Outlook 98 and Outlook 97
+-------------------------
+
+When Outlook is configured for Internet mail, sending mail with this service you
+will receive a non-delivery report (NDR) stating, "No transport provider was
+available for delivery to this recipient. The service is installed but doesn't
+show up in Tools/Check for new mail on..."
+
+CAUSE
+=====
+
+Outlook clients need to create an RHC file in the %systemroot%\system32
+directory. The complete filename for the RHC file is:
+
+   MSIN****RHC
+
+where **** is going to be a different number for each user.
+
+The default permission on the System32 directory is:
+
+   Everyone Read (RX)
+
+Change this to:
+
+   Everyone Change
+
+and uncheck:
+
+   Replace permissions on Subdirectories and Replace permissions on
+   existing files.
+
+RESOLUTION
+==========
+
+Changing the permissions on the System32 directory to Everyone Change (RWX)(RWX)
+will allow users when running Outlook to create these files.
+
+STATUS
+======
+
+This behavior is by design.
+
+
+Additional query words: Windows NT Terminal Server kbDSupport terminalsrv
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOutlook97Search kbZNotKeyword3
+Version           : :4.0,8.0,8.01,8.02,8.03,8.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

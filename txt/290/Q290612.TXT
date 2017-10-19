@@ -1,0 +1,75 @@
+DOCUMENT:Q290612  13-JUN-2001  [iis]
+TITLE   :BUG: Event ID: 5 "Error While Reading Default Settings"
+PRODUCT :Internet Information Server
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:kbWinDNA kbGrpDSSIE kbDSupport kbiis400 kbiis500 kbWin2000PreSP2Fix kbWin2000SP2Fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you restart the computer or the IISAdmin service, the following event
+appears in the event log:
+
+   Event Type: Error
+   Event Source: Active Server Pages
+   Event Category: None
+   Event ID: 5
+   Description:
+   Error: Error while reading default settings. please do regsvr32 asp.dll..
+
+CAUSE
+=====
+
+This event is logged because the installed version of the Asp.dll file is
+searching for a metabase key that does not exist. However, the metabase key does
+not need to exist because Asp.dll uses a default value. Asp.dll logs this event
+log entry to recommend that you reregister Asp.dll as an overly precautious
+troubleshooting step.
+
+RESOLUTION
+==========
+
+This event log entry is completely harmless and can be ignored.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+This problem was first corrected in Windows 2000 Service Pack 2.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbWinDNA kbGrpDSSIE kbDSupport kbiis400 kbiis500 kbWin2000PreSP2Fix kbWin2000SP2Fix 
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : :4.0,5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

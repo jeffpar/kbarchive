@@ -1,0 +1,67 @@
+DOCUMENT:Q169140  09-AUG-2001  [winnt]
+TITLE   :Using DHCP to Assign IP Addresses to Secondary Networks
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to use Dynamic Host Configuration Protocol (DHCP) to
+lease IP addresses for routers configured to use secondary IP addressing.
+
+MORE INFORMATION
+================
+
+Some routers can be configured with primary and secondary addresses that allows
+one port on a router to listen to multiple (logical) subnets.
+
+Windows NT 4.0 Service Pack 2 and later introduced Superscoping support for DHCP.
+This allows a DHCP server with one network interface card to assign leases for
+multiple logical subnets.
+
+To setup Superscopes in DHCP Manager, perform the following steps:
+
+1. Create a new scope in DHCP Manager that corresponds with the primary subnet
+   on the router.
+
+2. Create the Superscopes that will be a part of the secondary address(es)
+   configured on the router.
+
+3. Use the DHCP Manager to define the Superscope to include all the subnets.
+
+For complete steps on how to setup DHCP Superscoping, please refer to the
+following article in the Microsoft Knowledge Base:
+
+   Q161571 Using DHCP Superscopes to Serve Multiple Logical Subnets
+
+Additional query words: secondary router nt4sp2 ntdhcp
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

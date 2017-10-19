@@ -1,0 +1,59 @@
+DOCUMENT:Q85949  01-NOV-1999  [win95x]
+TITLE   :Windows 3.1 Notepad Can Open Any File Type
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Windows Notepad opens any file type, including executable files, and
+saves them in Notepad format. Saving a file type that Notepad does not directly
+support can make that file unreadable by its native application.
+
+MORE INFORMATION
+================
+
+Windows 3.1 Notepad was enhanced to be enable it to open files containing a
+CTRL+Z (end-of-file) character. This enhancement allows it to open any file that
+will fit in Notepad. Opening an .EXE file and saving it will make the file
+unusable because it will be in Notepad format, not in the format of an
+executable file. It may still have the same file size.
+
+Attempting to run an executable file viewed and saved from Notepad may result in
+the following error message:
+
+   Insufficient memory to run application; quit one or more applications, or
+   free up disk space to increase available memory and try again.
+
+Additional query words: 3.10 file type
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

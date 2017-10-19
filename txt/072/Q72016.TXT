@@ -1,0 +1,162 @@
+DOCUMENT:Q72016  03-DEC-1999  [msdos]
+TITLE   :Loading Networks into UMBs with MS-DOS 5.0
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Network programs tend to use a lot of lower memory. If you have sufficient space
+for the programs in UMBs (upper memory blocks), you can achieve substantial
+memory savings. The following sections describe how to load some of the major
+networks into UMBs. If your network is not listed here, please contact your
+network vendor for information on how to load the network into a UMB.
+
+NOTE: It is assumed in all of the following sections that you have read the
+"Running Programs in the Upper Memory Area" section in the version 5.0
+"Microsoft MS-DOS User's Guide and Reference."
+
+MORE INFORMATION
+================
+
+MS-NET Based Networks
+---------------------
+
+Most MS-NET based redirectors are loaded with the NET command. Look in your
+AUTOEXEC.BAT file (or other file that you use to start the network) for a
+command similar to the following:
+
+      net start <other>
+
+where <other> is other text following START. Add the word LOADHIGH to the
+beginning of the line, as follows:
+
+      loadhigh net start <other>
+
+Reboot your computer and check to make sure that the network loads without
+problems. You can use the MEM command to see how much memory you now have
+available.
+
+LAN Manager 1.x/2.x Based Redirectors
+-------------------------------------
+
+These redirectors are of two types: basic and enhanced. If you start the network
+with the command "NET START WORKSTATION," you are running the enhanced version.
+If you start the redirector with a command similar to "NET START RDR," you are
+running the basic version. Look in your AUTOEXEC.BAT file (or other file that
+you use to start the network) to see which command is used.
+
+LAN Manager 1.x/2.x Basic Redirectors
+-------------------------------------
+
+These redirectors will often fit into a UMB. To load them high, add the word
+LOADHIGH before the NET START command:
+
+      loadhigh net start <other>
+
+Reboot your computer and check to make sure that the network loads without
+problems. You can use the MEM command to see how much memory you now have
+available.
+
+LAN Manager 1.x/2.x Enhanced Redirectors
+----------------------------------------
+
+Best memory savings with LAN Manager enhanced redirectors (versions 2.0b and
+earlier) is achieved by instructing the network to use LIM memory.
+
+1. Use the RAM option on EMM386 to specify that both UMB and EMS memory be
+   provided. For example, if the line to load EMM386.EXE is
+
+         device=c:\dos\emm386.exe 1024
+
+   then change the line to the following:
+
+         device=c:\dos\emm386.exe 1024 ram
+
+2. Locate the LANMAN.INI file by typing the following at the MS-DOS prompt:
+
+   " c:
+   cd \
+   dir /s /b lanman.ini " (without the quotation marks)
+
+   If more than one LANMAN.INI file is found, use the one that appears first in
+   the PATH (use the PATH command to see the path).
+
+3. Edit the LANMAN.INI file. For example, if the file is in C:\LM.DOS, then use
+   the following command:
+
+         edit c:\lm.dos\lanman.ini
+
+   This command invokes the MS-DOS Editor.
+
+4. Use the SEARCH command to find the LIM option (ALT+S means hold down the ALT
+   key while pressing S):
+
+   " ALT+S F " (without the quotation marks)
+
+   A dialog box asking to "Find What" will be displayed. Type "LIM" (without the
+   quotation marks) and press ENTER.
+
+5. If the line has a semicolon (;) at the beginning, remove the semicolon.
+   Ensure that the line now reads:
+
+         lim = yes
+
+LAN Manager 2.0c
+----------------
+
+Microsoft LAN Manager version 2.0c is the first version of LAN Manager with the
+ability to load itself high with Microsoft MS-DOS version 5.0. The LAN Manager
+2.0c redirector is loaded high automatically if there is enough room in the
+upper memory area (UMA). Other network services can be loaded high using the
+MS-DOS LOADHIGH (LH) command.
+
+Loading Novell Networks into UMBs
+---------------------------------
+
+When you start your network, specify LOADHIGH before the Novell startup command.
+For example, if you are using NET5.EXE to start Novell, add LOADHIGH before
+NET5.
+
+REFERENCES
+==========
+
+"Microsoft MS-DOS User's Guide and Reference," version 5.0
+
+"Microsoft MS-DOS Getting Started," version 5.0
+
+The Novell products included here are manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+Additional query words: 2.00b 2.00c 5.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500
+Version           : MS-DOS:5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

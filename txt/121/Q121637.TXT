@@ -1,0 +1,68 @@
+DOCUMENT:Q121637  06-FEB-2002  [msdos]
+TITLE   :Summary List of MS-DOS 6.22 Confirmed Bugs
+PRODUCT :Microsoft Disk Operating System
+PROD/VER::6.22
+OPER/SYS:
+KEYWORDS:msdoskbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is a list of confirmed bugs in MS-DOS version 6.22. For more
+information about each issue, query in the Microsoft Knowledge Base on the
+article identifier (ID).
+
+Summary Listing for MS-DOS Version 6.22
+---------------------------------------
+
+Article ID  Article Title
+
+   Q72412 Math Coprocessor Detection Hangs System in QBasic
+   Q76242 Error Message During MS-DOS 6.x Setup Due to Invalid PATH
+   Q82216 Command Piped in Root Directory May Hang Machine
+   Q82270 ATTRIB Command May Inadvertently Remove File Attributes
+   Q94356 CMOS Access Causes Some Machines to Hang with EMM386.EXE
+   Q95819 MS-DOS DEFRAG Err Msg: "Insufficient Memory..."
+   Q96180 VSafe Err Msg: Program Is Trying to Write to Hard Disk
+   Q97595 Getting Past the 128-Character PATH Limit
+   Q100742 Problems Running MSAV While MIDI File Is Playing
+   Q100992 Incorrect Message Displayed When Retrieving Catalog Files
+   Q102646 REPLACE.EXE Checks and Copies Only 255 Files
+   Q105062 MS-DOS Err Msg with DiscTec: Unrecoverable Disk Error
+   Q105255 Err Msg with Removable Media: Dblspace Cannot Mount Drive...
+   Q105927 MS-DOS 6.x Backup Err Msg: "...Catalog File Is Corrupt"
+   Q106124 Microsoft 6.x Backup Doesn't Back Up Empty Subdirectories
+   Q106427 MS-DOS 6.2x ScanDisk Fails to Correct MDBPB Problem
+   Q115178 Drive Access Problems with Dual-Capacity Bernoulli Drive
+   Q119072 DoubleSpace/DriveSpace Limits on 1028-MB to 1153-MB Partitions
+   Q120768 Creating Single Startup Disk with MS-DOS 6.22 Upgrade Setup /F
+
+Additional query words: 6.22 comprehensive
+
+======================================================================
+Keywords          : msdos kbbuglist
+Technology        : kbMSDOSSearch kbMSDOS622
+Version           : :6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

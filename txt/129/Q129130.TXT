@@ -1,0 +1,51 @@
+DOCUMENT:Q129130  08-AUG-2001  [winnt]
+TITLE   :Services for Macintosh and Preexisting Novell Appletalk Zones
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.50
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+If you attempt to integrate NT into a preexisting Novell network, Novell
+requires that one of it's servers act as seed routers. The function of
+Novell seed routers is much different from the function of seed routers
+familiar to Windows NT users. The initial difference is the Zone Range.
+A legal Novell zone range would be 1000-1000. This would also be a legal
+range for Windows NT. This would preclude anyone from getting into this
+zone range since it has a length of zero. However, Novell allows an
+indeterminate number of members in that zone since additions are demand
+driven rather than hard coded. Zones can be added from any Novell server
+and are not based on a single seed router (as it would be on a hardware
+based or Windows NT-based router). A Windows NT machine will not be able to
+generate its own zone but will be able to insert itself into one of the
+existing Novell zones.
+
+Additional query words: prodnt sfm
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : 3.50
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

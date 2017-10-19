@@ -1,0 +1,61 @@
+DOCUMENT:Q256171  11-DEC-2001  [winnt]
+TITLE   :Group Policy Custom Shell Entry Overrides ICA Published Program
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0,4.0 SP4,4.0 SP5
+OPER/SYS:
+KEYWORDS:kbenv kbWinNT4sp6fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 4.0, 4.0 SP4, 4.0 SP5, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a system policy that uses the Custom Shell option is defined and you use an
+Independent Computing Architecture (ICA) client to connect to a published
+program, you receive the custom shell instead of the published program.
+
+The system policy entry is:
+
+   Default User, Windows NT Shell, Custom User Interface, Custom Shell
+
+CAUSE
+=====
+
+This behavior can occur if you choose the custom shell before checking for the
+existence of a published program or initial program.
+
+STATUS
+======
+
+This problem was first corrected in Windows NT Server version 4.0, Terminal
+Server Edition Service Pack 6.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbWinNT4sp6fix 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServ400sp4 kbNTTermServ400sp5 kbNTTermServSearch
+Version           : winnt:4.0,4.0 SP4,4.0 SP5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

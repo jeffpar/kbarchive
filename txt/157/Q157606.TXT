@@ -1,0 +1,62 @@
+DOCUMENT:Q157606  21-FEB-2002  [winnt]
+TITLE   :Using NWCONV with Duplicate Group Names
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.51,4.0
+OPER/SYS:
+KEYWORDS:kbnetworkkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Before you perform a migration, a group on a Novell NetWare server, for example
+GROUP1, is a member of "print server operator." On the computer running Windows
+NT, which is the migration destination, a group with a duplicate name already
+exists. When you choose the "add prefix: nw" option for duplicated group names
+using the Migration Tool for NetWare, after migration GROUP1 belongs to the
+"print operator" group, but NWGROUP1 does not belong to the "print operator"
+group.
+
+RESOLUTION
+==========
+
+To work around this problem, add the prefix "NW" (without quotation marks) to
+the group on the NetWare server before you begin the migration process. For
+example, if the group is named GROUP1 on both the NetWare server and the
+computer running Windows NT, rename the group on the NetWare server to NWGROUP1.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT versions 3.51 and
+4.0.
+
+Additional query words: NWCONV 4.00 migrate convert
+
+======================================================================
+Keywords          : kbnetwork kbfaq
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : :3.51,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

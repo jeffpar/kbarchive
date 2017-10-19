@@ -1,0 +1,72 @@
+DOCUMENT:Q90421  22-OCT-1999  [win3x]
+TITLE   :WFWG Err Msg: Error Loading MMTLHI.DRV... with ET 4000 Video
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After installing Microsoft Windows for Workgroups (and selecting the "ET 4000 1
+MB, 1024x768 256 color (Large Fonts)" or the "ET 4000 1 MB, 800 x 600 256-color
+(Large Fonts)" display driver, you receive one of the following error messages:
+
+   Error loading MMTLHI.DRV
+
+   -or-
+
+   Cannot Load MMTLHI.DRV
+
+WORKAROUND
+==========
+
+To work around this problem, try one of the following steps. (Note that these
+suggestions may not work in all cases.)
+
+ - Install the corresponding ET 4000 (Small Fonts) display driver.
+
+   -or-
+
+ - Obtain and install the ET 4000 (Large Fonts) display driver.
+
+ - Install another display driver supported by your display configuration, such
+   as the Windows for Workgroups VGA, or Super VGA (800 x 600, 16 colors)
+   display driver.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows for Workgroups version
+3.1. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

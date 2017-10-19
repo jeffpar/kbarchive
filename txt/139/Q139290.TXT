@@ -1,0 +1,78 @@
+DOCUMENT:Q139290  11-MAR-2000  [odbc]
+TITLE   :PRB: 32-Bit Cursor Library Creates Temp Files in Current Dir
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:2.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The 32-bit ODBC Cursor library (ODBCCR32.DLL) creates temporary files in the
+current directory from which the application is launched. The 32-bit cursor
+library creates temporary files of the form CTTXXX.TMP in the current directory
+of the application. As a result, applications using the cursor library may
+encounter errors when they switch the current directory in their application
+while cursors are still active.
+
+For example, while closing the application you might see the error message:
+
+   [Microsoft ][ODBC Cursor library] Unable to close file buffer.
+
+32-bit Microsoft Foundation Class (MFC) applications that use snapshots fall into
+the above class of applications.
+
+WORKAROUND
+==========
+
+1. If feasible, close all open cursors and switch the current directory.
+
+2. If you are using File Dialogs, monitor the current directory using the Win32
+   API call GetCurrentDirectory() and reset the path using
+   SetCurrentDirectory().
+
+   For example:
+
+      main()
+      {
+       ..
+      GetCurrentDirectory(...);
+      ...
+        /* open cursors  */ 
+      ...
+        /* open file dialog */ 
+      SetCurrentDirectory(..);
+        /* close the cursors */ 
+      ..
+      }
+
+Additional query words: 2.50.3006 odbc
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbODBCSearch kbODBC250
+Version           : WINDOWS:2.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,56 @@
+DOCUMENT:Q311913  30-JUL-2002  [msdn]
+TITLE   :PRB: Problem When Send Notification Contains Less Than (<) Chara
+PRODUCT :Microsoft Developer Network
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft.NET Alerts 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to send notifications which contain the less than (<) character,
+the section within the less than (<) and greater than (>) characters is
+blank.
+
+CAUSE
+=====
+
+When you do not encode the less than (<) and greater than (>) characters,
+the less than (<) character throws off the XML, and the error occurs.
+
+RESOLUTION
+==========
+
+Encode the less than (<) and greater than (>) characters before they reach
+the nrouter.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbNETAlerts
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

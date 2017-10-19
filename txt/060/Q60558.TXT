@@ -1,0 +1,50 @@
+DOCUMENT:Q60558  30-JUL-2001  [homegame]
+TITLE   :Flight Simulator: Getting Color on IBM PS/2 25-004
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+The IBM PS/2 Model 25 computer has a video card built in. Different video cards
+are available. The video card is identified by a number on the front left bottom
+of the monitor right above the serial number.
+
+For example:
+
+   25-001  Identifies a black and white system that can display
+           16 different shades of gray.
+
+   25-004  Identifies a CGA version that can produce colors.
+
+To run Flight Simulator version 3.00 or 4.00 in color with the 25-004 display,
+you must select video option "C. RGB Monitor (CGA)" when starting the program.
+If option "A. Color Composite Monitor (CGA)" is selected, only black and white
+will be available on the screen.
+
+Microsoft has not tested Flight Simulator with the IBM PS/2 25-004, and
+therefore, cannot guarantee proper results.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

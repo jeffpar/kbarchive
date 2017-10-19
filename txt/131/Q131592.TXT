@@ -1,0 +1,49 @@
+DOCUMENT:Q131592  18-JUL-2001  [homemm]
+TITLE   :Mac Encarta: Cannot Check Spelling
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1995 edition; MACINTOSH:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia for Macintosh 
+ - Microsoft Encarta 96 Encyclopedia for Macintosh 
+ - Microsoft Encarta 97 Encyclopedia for Macintosh 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Encarta for the Macintosh does not include a spelling checker.
+
+MORE INFORMATION
+================
+
+This feature is under review and will be considered for inclusion in a future
+release.
+
+Additional query words: kbhowto mac 1995 multi media multimedia multi- 1996 1997 95 96 97 mmtitles
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbEncartaSearch kbEncartaEnCyc1995Mac kbEncartaEnCyc1996Mac kbEncartaEnCyc1997Mac
+Version           : :1995 edition; MACINTOSH:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

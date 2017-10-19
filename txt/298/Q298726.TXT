@@ -1,0 +1,62 @@
+DOCUMENT:Q298726  08-MAY-2002  [sms]
+TITLE   :SMS: Backup Status Message 5013 Has Missing Insertion String
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP2,2.0 SP3
+OPER/SYS:
+KEYWORDS:kbenv kbtool kbsms200 kbsms200bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP2, 2.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Systems Management Server (SMS) Backup service status message 5013 that
+signals a successful database dump of SQL Server databases during the SMS Backup
+process may be missing an insertion string in the status message description. In
+the following example, database names and locations are examples:
+
+   SMS Site Backup successfully backed up master database
+   C:\backups\test\SiteDBServer\SMSbkSQLDBmaster.dat to.
+
+The description should appear as:
+
+   SMS Site Backup successfully backed up site database master to
+   C:\backups\test\SiteDBServer\SMSbkSQLDBmaster.dat
+
+Note that the string site database is missing.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: prodsms sms backup process
+
+======================================================================
+Keywords          : kbenv kbtool kbsms200 kbsms200bug 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP2 kbSMS200SP3
+Version           : :2.0,2.0 SP2,2.0 SP3
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

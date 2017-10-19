@@ -1,0 +1,65 @@
+DOCUMENT:Q123722  11-FEB-2000  [foxpro]
+TITLE   :RUN Command Not Available in FoxPro for Macintosh
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.6a,3.0b
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Macintosh, version 2.6a 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The FoxPro RUN command is not implemented in FoxPro for Macintosh. The Macintosh
+operating system does not have the equivalent of an MS-DOS command prompt; so it
+isn't possible to run an external program.
+
+MORE INFORMATION
+================
+
+Equivalent functionality can often be programmed through use of the FoxPro
+RUNSCRIPT command to run an AppleScript to launch the external program.
+
+To use this feature, perform these steps:
+
+1. Use the AppleScript Script Editor to record or write a script that launches
+   the desired application.
+
+2. Save the newly created script.
+
+3. In your FoxPro program, add the following command to run the AppleScript:
+
+      RUNSCRIPT <script name>
+
+NOTE: AppleScript is manufactured by a vendor independent of Microsoft; we make
+no warranty, implied or otherwise, regarding AppleScript's performance or
+reliability.
+
+Additional query words: VFoxMac FoxMac
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260aMac kbVFP300bMac
+Version           : MACINTOSH:2.6a,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,62 @@
+DOCUMENT:Q257653  30-MAY-2002  [homegame]
+TITLE   :Zone Err Msg: Failed to Write Settings to Registry
+PRODUCT :Microsoft Home Games
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup igz kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Zone.com 
+ - the operating system: Microsoft Windows NT 4.0 
+ - the operating system: Microsoft Windows 2000 
+ - the operating system: Microsoft Windows XP 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install or use the Microsoft Zone software on a Microsoft
+Windows NT 4.0-, a Microsoft Windows 2000-, or a Microsoft Windows XP-based
+computer, you may receive the following error message:
+
+   Failed to write settings to registry.
+
+CAUSE
+=====
+
+This behavior can occur if you are not logged on to the computer as an
+Administrator.
+
+RESOLUTION
+==========
+
+To resolve this issue, log off the computer, and then log on to the computer as
+a user with Administrator rights.
+
+Additional query words: msgame igz msngz winnt
+
+======================================================================
+Keywords          : kberrmsg kbsetup igz kbimu msgame 
+Technology        : kbOSWin2000 kbOSWinSearch kbOSWinNT400 kbGamesSearch kbOSWinXP kbMSNSearch kbOSWinNTSearch kbZone kbOSWinXPSearch
+Version           : :4.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

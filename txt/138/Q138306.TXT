@@ -1,0 +1,99 @@
+DOCUMENT:Q138306  17-DEC-2000  [win95x]
+TITLE   :Setup Changes Date and Time Stamp of Installed Files
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Windows 95 Setup program changes the date and time stamp of some installed
+Windows 95 files.
+
+MORE INFORMATION
+================
+
+Setup changes the date and time stamp of the following files so that they match
+the date and time of installation:
+
+Windows folder:
+
+ - Setver.exe
+
+ - Smartdrv.exe
+
+Windows\Command folder:
+
+ - Extract.exe
+
+ - Scandisk.exe
+
+Windows\System folder:
+
+ - Commctrl.dll
+
+ - Commdlg.dll
+
+ - Dskmaint.dll
+
+ - Lzexpand.dll
+
+ - Mini.cab
+
+ - Msprint.dll
+
+ - Mstcp.dll
+
+ - Netapi.dll
+
+ - Netdi.dll
+
+ - Netos.dll
+
+ - Rnasetup.dll
+
+ - Setupx.dll
+
+ - Shell.dll
+
+ - Sysdetmg.dll
+
+ - Ver.dll
+
+When you upgrade an earlier version of Windows to Windows 95, Setup stamps the
+.dll files listed above as the earlier version of Windows. When Setup is
+finished, it stamps these files as Windows 95 versions (4.0).
+
+The other files listed above are copied directly from the Windows 95 disks or
+CD-ROM and not from cabinet files. The file copy process does not preserve the
+date and time stamp.
+
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

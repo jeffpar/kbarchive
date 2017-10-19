@@ -1,0 +1,76 @@
+DOCUMENT:Q158563  09-AUG-2001  [winnt]
+TITLE   :Cannot Open HKEY_DYN_DATA Key with Regedit.exe
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using Regedit.exe, clicking the HKEY_DYN_DATA key yields the
+following error message:
+
+   Cannot open HKEY_DYN_DATA: Error while opening key.
+
+CAUSE
+=====
+
+You are using the Windows 95 version of Registry Editor.
+
+Note that this key is not currently used in Windows NT.
+
+RESOLUTION
+==========
+
+Use Regedt32.exe instead of Regedit.exe when searching is not required.
+
+MORE INFORMATION
+================
+
+Windows NT Setup installs two versions of Registry Editor. Regedt32.exe is the
+Windows NT version of Registry Editor; Regedit.exe is either the Windows 3.x or
+Windows 95 version.
+
+The Windows 95 version of Registry Editor contains all the features and
+limitations of the Windows NT version. It is primarily included in Windows NT
+4.0 for its ability to search for keys and values. You can use the Windows 95
+version to make changes in the Windows NT 4.0 registry, but not all functions
+and types are available.
+
+You should use Regedit.exe only for its search capabilities. Use Regedt32.exe to
+edit the registry.
+
+For more information about the registry editors included with Windows NT 4.0,
+please see the NT 4.0 Readme.wri file.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,242 @@
+DOCUMENT:Q97881  30-JUL-2001  [lanman]
+TITLE   :LAN Manager LANAs on MS-DOS Workstations
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+This article explains how protocol-driver/network-adapter pairs are numbered and
+how sending, receiving, and processing orders are determined using these numbers
+and network operational methods. The information is categorized under subheads;
+it includes examples and suggestions for enhancing performance.
+
+MORE INFORMATION
+================
+
+LANA Numbers
+------------
+
+LANA #:
+
+LANA numbers provide the LAN Manager redirector a way to identify a unique
+combination of one protocol driver and one network adapter (NIC) MAC driver.
+LANA numbers are assigned automatically, and are based on LANA bases.
+
+LANA Base:
+
+A LANA base is a unique number assigned to a protocol stack. It serves as the
+starting LANA number for the first protocol\MAC combination, and each subsequent
+protocol\MAC binding combination is numbered in sequence starting from it. LANA
+bases are specified in the PROTOCOL.INI file.
+
+          NetBEUI           TCP/IP
+LANA base   (0)              (2)
+           |   \             / 
+           |     \         / 
+           |       \     / 
+           |         \ / 
+           |         / \ 
+           |       /     \ 
+           |     /         \ 
+           |   /             \ 
+LANA #:    (0)(2)             (1)
+          Ethernet         Token Ring
+
+Example:
+
+NetBEUI has a LANA base of 0. It is bound to two NICs--Ethernet and token ring.
+The first protocol\MAC combination of NetBEUI\Ethernet has a LANA number of 0.
+The second combination of NetBEUI\token ring is a number in sequence starting
+from 0, which gives it a LANA number of 1. If NetBEUI is bound to a third NIC it
+would have a LANA Number of 2, and so on. NetBEUI only responds to LANAs 0 and
+1.
+
+TCP/IP has a LANA base of 2. It is bound to one NIC, and that combination is
+uniquely identified by the LANA number of 2. TCP/IP responds only to LANA 2.
+
+Note: In LAN Manager, TCP/IP can be bound only to one NIC at a time.
+
+
+Sending Order
+-------------
+
+Once again, this information only applies to MS-DOS LAN Manager workstations with
+multiple protocols. During discovery (the NCB_Call for NET USE command), the
+redirector specifies the LANA number to try in the NCB [NetBIOS Control Block].
+The NCB is a command destined for the protocol driver. The sequence in which the
+redirector specifies the LANA numbers is determined by one of two methods.
+
+Method 1--WRKNETS:
+
+This parameter is found in the LANMAN.INI [WORKSTATION] section. It allows you to
+specify to the redirector the order in which LANA numbers are to be attempted
+when sending frames. Sending order is most important when doing discovery (the
+NCB_Call) for a new resource NetBIOS name\physical network address. After a
+resource is found and a session is established, future frames are sent directly
+to this LANA number. Values for WRKNETS are the actual LANA numbers.
+
+Example:
+
+WRKNETS=2,0,1
+
+Following the previous example, a frame is sent out in this order: on
+TCP/IP\Ethernet (LANA 2); NetBEUI\Ethernet (LANA 0); and NetBEUI\token ring
+(LANA 1). When a proper response (Name_Recognized) is received over one of the
+LANAs, the remaining LANAs are not attempted.
+
+Method 2--No WRKNETS:
+
+If WRKNETS is not specified, the redirecter fills in the LANA field in the NCB
+with the actual LANA numbers--lowest to highest.
+
+The INT 5c Factor - Load Order
+------------------------------
+
+When protocol drivers are loaded, they hook Int 5c. If more drivers are loaded,
+they will be chained on this interrupt. After the redirector builds the NCB and
+specifies the first LANA number (see example above) to send the frame on, it
+calls Int 5C with a pointer to the NCB. The last driver loaded will take a look
+at the LANA number. If it does not own that number, it will pass it down the
+chain to the next previously loaded protocol, which checks the LANA number and
+so on until a match is found. The protocol that owns the LANA then process the
+NCB and submits the frame on the wire.
+
+                           Redirector <<-------- LANMAN.INI WRKNETS = 1,0,2
+                           |      |
+            ---------------|      |
+            |                     |
+            V                     V
+          INT 5c                 NCB - [... SMB, LANA#, ...]
+          ------
+[reverse]  TCP/IP (LANA# 2)
+[load   ]  NetBEUI(LANA# 1,0)
+[order  ]
+
+In this example:
+
+ - NetBEUI is loaded first by the LOAD NETBEUI command in AUTOEXEC.BAT.
+
+ - TCP/IP is loaded via the LOAD TCPIP command in AUTOEXEC.BAT.
+
+ - Note: Chain is FILO--first in last out--so TCP is first in chain.
+
+ - Redirector builds NCB with SMB, NCB command, etc. and LANA number.
+
+ - LANA number order is supplied from WRKNETS so the first number is 1.
+
+ - Redir calls Int 5c with a pointer to the NCB structure.
+
+ - TCP/IP driver is the last driver loaded, so it gets first chance to look at
+   the LANA number.
+
+ - TCP knows that its LANA is 2. LANA Base <= LANA # <= (LANA base +
+   number of TCP bindings).
+
+ - NCB LANA is 1, so the TCP driver passes control to the next protocol in the
+   chain, which is NetBEUI.
+
+ - NetBEUI recognizes that LANA 1 is one of his LANAs, so it processes the NCB
+   and submits the frame on the wire.
+
+Tuning:
+
+For the best performance:
+
+ - Place the LANA of your most used protocol first in the WRKNETS parameter.
+   This factor is the most important one.
+
+ - Load your most used protocol driver last so that it will be first to look at
+   the LANA number in the INT 5c chain.
+
+Receiving Order - One MAC Driver:
+---------------------------------
+
+For this example, assume one MAC driver (one NIC). Incoming frames are passed to
+each protocol driver until recognized. If a TCP frame arrives, it may be first
+passed to NetBEUI, which does not recognize the frame and rejects it. The frame
+may then be passed to the TCP/IP stack that recognizes it, and there be
+processed. There are two ways to determine which protocol receives an incoming
+frame in a particular order.
+
+User Defined - PRIORITY:
+
+The PRIORITY parameter in the PROTOCOL.INI (PROTMAN) section can be used to
+hardcode the receive order. For example:
+
+      PRIORITY = NETBEUI, XNS, TCPIP
+
+Incoming frames are passed to NetBEUI first, XNS second, and TCP/IP last.
+
+Programmed Default:
+
+If no PRIORITY is specified, the default mechanism takes effect. This algorithm
+attempts to give a frame to the protocol stack most likely to assign ownership
+quickly. The order is:
+
+1. Non LLC frames--looks at DIX type.
+
+   TCP/IP (optional frame type)
+
+2. LLC frames with specific LSAPs--DSAP field contains protocol type.
+
+   NetBEUI, DLC
+
+3. LLC frames with non-specific LSAPs--DSAP contains "AA." Type will follow
+   later in frame.
+
+   NBP
+
+Each frame type must look further into the frame to determine protocol type, so
+the protocol that has to look the least distance into the frame is the fastest.
+
+The vector module component manages passing the frame to multiple protocol
+stacks. The vector module is loaded by PROTMAN.
+
+Receiving Order - Multi MAC Drivers:
+------------------------------------
+
+In a multi protocol/multi MAC driver configuration, a vector module is loaded for
+each MAC driver (NIC). The receiving mechanism can now be derived from the
+previous discussion.
+
+
+Other Notes:
+------------
+
+ - LAN Manager supports up to a theoretical maximum of 12 networks (LANAs).
+
+ - NetBEUI can be bound to a theoretical maximum of eight MAC drivers.
+
+ - TCP/IP can be bound to only one MAC driver.
+
+Reference(s):
+
+For more information, query on the following words in the Microsoft Knowledge
+Base:
+
+   MS-DOS and NET and LOGON and LANAs and Validation
+
+Additional query words: 2.20
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,78 @@
+DOCUMENT:Q97854  19-FEB-2002  [homekids]
+TITLE   :Encarta: MindMaze Allows Two Players with the Same Name
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::1993 edition,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta for Windows 1993 edition 
+ - Microsoft Multimedia Viewer, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Encarta MindMaze game allows you to give more than one player the same name.
+This can lead to the loss of the first player's .sav file (the file where the
+player's scores are kept).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MindMaze version 1.0. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+Steps to Reproduce the Problem
+------------------------------
+
+1. Start MindMaze by selecting MindMaze Game from the Menu.
+
+2. Enter a first name (for example, "Zeke") in the First Name box.
+
+3. Enter a last name (for example, "Smith") in the Last Name box.
+
+4. Click the Done button.
+
+5. Answer one question.
+
+6. From the File menu, select Add A Player.
+
+7. Enter the same first name (Zeke) in the First Name box.
+
+8. Enter the same last name (Smith) in the Last Name box.
+
+9. Click the Done button.
+
+If you look at the score card, you will see that there are two players listed
+with the same name and different scores. This can be a problem, because the
+scores of the second player can overwrite the scores of the first player. This
+occurs because the .SAV files have the same name (in this case, ZEKESMIT.SAV).
+
+
+Additional query words: 3.00 multimedia multi media multi-media mind maze usage
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbMMViewer200 kbEncarta1993
+Version           : :1993 edition,2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

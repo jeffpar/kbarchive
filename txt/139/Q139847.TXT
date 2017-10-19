@@ -1,0 +1,81 @@
+DOCUMENT:Q139847  28-JUL-2001  [win95x]
+TITLE   :Cannot Connect Using NET Command with Dial-Up Networking
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:3rdpartynet msnets win95 kb3rdPartyNetClient
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Dial-Up Networking to connect to a computer that is running Windows
+95 and the "File and printer sharing for NetWare Networks" network service, you
+may be unable to use the NET command to browse or connect to shared resources on
+that computer.
+
+CAUSE
+=====
+
+This problem occurs when the following conditions are met:
+
+ - Your computer and the computer that you connected to using Dial-Up Networking
+   are not physically connected.
+
+ - The computer you connected to is not running Novell NetWare.
+
+RESOLUTION
+==========
+
+To resolve this situation, use one of the following methods:
+
+ - Use Network Neighborhood to browse or connect to shared resources on the
+   computer you connected to (instead of using the NET command).
+
+
+ - Disconnect your computer from the network it is connected to.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+If your computer and the computer you connected to using Dial-Up Networking are
+physically connected, you do not need to use the Dial-Up Networking connection
+to browse or connect to shared resources on that computer. When you attempt to
+use the NET command, the LAN connection is used instead of the Dial-Up
+Networking connection.
+
+Additional query words: dun
+
+======================================================================
+Keywords          : 3rdpartynet msnets win95 kb3rdPartyNetClient 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

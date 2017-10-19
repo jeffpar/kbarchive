@@ -1,0 +1,64 @@
+DOCUMENT:Q231502  14-SEP-2001  [automap]
+TITLE   :MP2000: Cannot Start Under Windows NT 4.0 on Dual Boot Computer
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbenv kbsetup kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If your computer is configured to dual boot Microsoft Windows 95/98 and
+Microsoft Windows NT 4.0, you may be unable to start MapPoint 2000 under Windows
+NT 4.0.
+
+CAUSE
+=====
+
+This behavior can occur if the following conditions are true:
+
+ - You installed MapPoint 2000 under both Windows 95/98 and Windows NT 4.0
+
+ - You removed MapPoint 2000 under Windows 95/98.
+
+RESOLUTION
+==========
+
+To resolve this issue, reinstall MapPoint 2000 under Windows NT 4.0.
+
+MORE INFORMATION
+================
+
+When you remove MapPoint 2000 under Windows 95/98, you remove the path to the
+program from the Windows registry.
+
+Additional query words: mp2000 dual-boot winnt uninstall
+
+======================================================================
+Keywords          : kbenv kbsetup kbimu 
+Technology        : kbHomeProdSearch kbMapptSearch kbMapPoint2000
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

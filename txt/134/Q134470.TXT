@@ -1,0 +1,64 @@
+DOCUMENT:Q134470  17-DEC-2000  [win95x]
+TITLE   :Setup May Damage FAT on Primary 1 GB Internal SCSI Drive
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start your computer from a network boot disk with no special settings
+for Emm386.exe and then run Windows 95 Setup from a network drive, Setup may not
+finish correctly. When this occurs, you may find that the file allocation table
+(FAT) on drive C is damaged when you restart your computer with a startup floppy
+disk.
+
+CAUSE
+=====
+
+The damage occurs because the network boot disk loads Emm386.exe without any
+exclude ranges for the network card and Windows 95 Setup starts Smartdrv.exe.
+When SmartDrive puts its buffer into the high memory area (HMA), it overlaps the
+memory area the network card is using. During the file copy process, this data
+is damaged and gets written to the hard disk.
+
+RESOLUTION
+==========
+
+To avoid this problem, use one of the following methods:
+
+ - Use the correct exclude range for the installed network card.
+
+ - Start Setup with the following command to avoid starting SmartDrive:
+
+   setup /c
+
+ - Do not use Emm386.exe or any other memory manager.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

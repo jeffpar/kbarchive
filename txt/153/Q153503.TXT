@@ -1,0 +1,67 @@
+DOCUMENT:Q153503  06-JUL-2001  [ssafe]
+TITLE   :BUG: Fonts are Corrupt or Extremely Large in Windows 95
+PRODUCT :Microsoft SourceSafe
+PROD/VER::4.0,5.0,95
+OPER/SYS:
+KEYWORDS:kbSSafe400bug kbSSafe500bug kbOSWin95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe, 16-bit, for Windows, versions 4.0, 5.0, 95 
+ - Microsoft Visual SourceSafe, 32-bit, for Windows versions 4.0, 95 
+ - Microsoft Visual SourceSafe for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the Windows 95 operating system, Visual SourceSafe fonts look
+corrupted or extremely large.
+
+WORKAROUND
+==========
+
+The ideal workaround is to install the Service Pack 1 for Windows 95 on the
+computer that is running Windows 95. Please refer to the following article in
+the Microsoft Knowledge Base for information on how to obtain the Service Pack:
+
+   Q142794 Availability of Microsoft Windows 95 Service Pack 1
+
+
+Otherwise, from the Start menu, choose Settings. Then choose Control Panel. In
+the Control Panel, choose Fonts. From the View Menu, choose Options. When the
+window comes up, choose the TrueType tab. Clear the "Show only True Type fonts
+in the programs on my computer" option. Windows 95 will prompt you to restart
+the system.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe400bug kbSSafe500bug kbOSWin95 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe400 kbSSafe500 kbSSafe16bitSearch kbSSafe32bitSearch
+Version           : :4.0,5.0,95
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

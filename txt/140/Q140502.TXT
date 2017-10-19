@@ -1,0 +1,91 @@
+DOCUMENT:Q140502  09-MAY-2001  [visualc]
+TITLE   :FIX: ClassView Cannot Find Function That Has Been Moved
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbcode kbide kbVC400bug kbVC500bug kbVC600fix kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, version 4.0 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a function definition is moved to a different place in a source file,
+navigating to that function from ClassView will no longer work. ClassView will
+jump to the line in the source file where the function used to be defined.
+
+CAUSE
+=====
+
+ClassView uses bookmarks to determine where to jump to in the file. The
+bookmarks are not updated until the file is saved.
+
+RESOLUTION
+==========
+
+Save the source file.
+
+Visual C++ 6.0 dynamically updates the information in ClassView, so saving the
+source file is unnecessary for the updated location to be recognized.
+
+STATUS
+======
+
+This problem was corrected in Microsoft Visual C++, version 6.0.
+
+MORE INFORMATION
+================
+
+To observe this behavior, save the following sample file. Move one of the
+function definitions to a different line, and then attempt to use ClassView to
+navigate to that function
+
+Sample Code
+-----------
+
+      /* Compile options needed: none
+      */ 
+
+      class TestClass {
+      public:
+         void FuncA( void );
+         void FuncB( void );
+         void FuncC( void );
+         TestClass(){;}
+         ~TestClass(){;}
+      };
+      void TestClass::FuncA( void ){}
+      void TestClass::FuncB( void ){}
+      void TestClass::FuncC( void ){}
+
+Additional query words: Class View VwbIss
+
+======================================================================
+Keywords          : kbcode kbide kbVC400bug kbVC500bug kbVC600fix kbGrpDSTools 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : winnt:4.0,5.0
+Issue type        : kbbug kbprb
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

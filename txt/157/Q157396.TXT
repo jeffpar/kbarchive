@@ -1,0 +1,69 @@
+DOCUMENT:Q157396  14-NOV-2000  [word97]
+TITLE   :WD97: WordPerfect Help Topic Incomplete, Truncated
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The last line in the WordPerfect Help topic is truncated. This problem appears
+when you access the topic by pressing the F4 key when the Help for WordPerfect
+Users check box is selected. (To locate this option, click Options on the Tools
+menu and then click the General tab.)
+
+Text is missing from the last paragraph in the WordPerfect Help topic for the F4
+key (CTRL+T and CTRL+M). This problem is seen when you view the topic from the
+Help for WordPerfect Users dialog box. (To locate this topic, double-click WPH
+in the status bar. In the Command Keys list, click the Indent-> >>
+topic.)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+
+
+WORKAROUND
+==========
+
+To work around this problem and view information about indentation, click the
+Index tab in Microsoft Word 97 Help, and type the following text:
+
+   "indentation" (without the quotation marks)
+
+Double-click the selected text to display a list of topics.
+
+Additional query words: 8.0 word8 word97
+
+======================================================================
+Keywords          :  
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

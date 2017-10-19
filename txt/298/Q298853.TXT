@@ -1,0 +1,84 @@
+DOCUMENT:Q298853  13-MAY-2001  [msnetwork]
+TITLE   :Using MSN Explorer After DSL Installation
+PRODUCT :The Microsoft Network
+PROD/VER::6.0,6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 6.0, 6.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have installed and then removed MSN HighSpeed DSL service and now want to
+use MSN Explorer, you may have difficulty connecting.
+
+CAUSE
+=====
+
+This is a known issue and the product team is currently evaluating solutions.
+
+RESOLUTION
+==========
+
+To resolve this issue
+
+1. Start MSN Explorer.
+
+2. Click Connection Settings, select Other, and then click Continue.
+
+3. Close MSN Explorer.
+
+4. Follow the steps in Q294853 to create a connection file manually.
+
+5. On your desktop, create a shortcut for the connection file.
+
+6. Double click the shortcut to the manual connection.
+
+7. Type your user name and password, and then click Connect.
+
+8. Start MSN Explorer, and then sign in with the MSN Internet Access user tile.
+
+9. Click Help and Settings, click Accounts, click Remove Users, and then follow
+   the directions to remove all existing user tiles.
+
+10. Close MSN Explorer.
+
+11. Start MSN Explorer.
+
+12. When prompted, select MSN using a modem as your preferred connection method.
+
+13. Follow the instructions to complete Setup.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu; MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN600 kbMSN610
+Version           : :6.0,6.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

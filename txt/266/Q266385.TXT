@@ -1,0 +1,67 @@
+DOCUMENT:Q266385  27-JUL-2000  [iis]
+TITLE   :Err Msg: The Stub Received Bad Data
+PRODUCT :Internet Information Server
+PROD/VER:winnt:3.0,4.0,5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 3.0, 4.0 
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Internet Service Manager on a computer running Internet
+Information Server (IIS) version 3.0 to remotely administer Internet Information
+Server (IIS) version 4.0 or Internet Information Services (IIS) version 5.0, you
+may receive the following error message:
+
+   The stub received bad data
+
+CAUSE
+=====
+
+This error message appears because IIS 3.0 was not designed to administer IIS
+4.0 or IIS 5.0. It is possible to do this on a Windows NT 4.0-based computer
+that has IIS 3.0 Service Pack 4 or earlier installed; however, with later
+service packs, the option is no longer available and does not function.
+
+RESOLUTION
+==========
+
+To resolve this problem, upgrade the computer running IIS 3.0 to IIS 4.0 by
+installing the Windows NT Option Pack (NTOP), and then re-applying the latest
+Windows NT Service Pack. You can then use the Microsoft Management Console (MMC)
+to administer other computers running IIS 4.0 or IIS 5.0.
+
+
+
+Additional query words: iis 5 4 3 ntop mmc
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbiisSearch kbiis500 kbiis400 kbiis300
+Version           : winnt:3.0,4.0,5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,81 @@
+DOCUMENT:Q101367  09-NOV-1999  [pcmail]
+TITLE   :PC WRmt: Err Msg: Mail Remote Driver Not Compatible...
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Remote for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In version 3.2 of Microsoft Mail Remote for Windows, with the option Connect on
+Exit of Mail selected, the following incorrect error message may appear if you
+do not have mail to send in your Outbox when you exit:
+
+   This Microsoft Mail Remote driver is not compatible with your messaging
+   system.
+
+This message is incorrect and misleading.
+
+If you have mail waiting in your Outbox, this error message does not appear.
+
+This problem is also documented in the README.TXT file under section 2J. The
+README.TXT file is located on Disk 1.
+
+NOTE: To find the Connect on Exis option, click Session Setup on the Mail menu.
+Then slect Connection Times.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 3.2 of Microsoft Mail
+Remote for Windows. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+If there is mail in the Outbox, the error message does not appear. Instead, this
+message appears:
+
+   There is unsent mail in your Outbox. Do you wish to send it?
+
+If you select Yes, the connection occurs and mail exits. If you select No, Mail
+exits with no error message. This behavior is the same whether or not the
+Connect At Exit option has been selected.
+
+If you are using the Microsoft Mail System Selector and have an active mail
+session in which you have selected the Connect On Exit Of Mail option, the
+selector appears to stop responding to mouse input after the incorrect error
+message appears. If you select OK with the keyboard (by pressing the ENTER key),
+the selector closes as it should.
+
+Additional query words: 3.20 hang err msg errmsg alert
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailRemote320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

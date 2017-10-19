@@ -1,0 +1,179 @@
+DOCUMENT:Q197667  20-FEB-2002  [winnt]
+TITLE   :Installing Windows NT on a Large IDE Hard Disk
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0,4.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+ - Microsoft BackOffice Small Business Server versions 4.0, 4.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+During the installation of Microsoft Windows NT to an 8 gigabyte (GB) or larger
+IDE hard drive, the computer may stop responding (hang) during the format
+portion of setup. If the drive was previously formatted as file allocation table
+(FAT) and designated to be converted to NTFS file system (NTFS), the computer
+may hang during the conversion process. Other symptoms include the drive taking
+an extremely long time to format or Windows NT not recognizing the entire size
+of the drive.
+
+CAUSE
+=====
+
+The Microsoft supplied generic IDE driver (Atapi.sys) may not be fully
+compatible with drives larger that 8GB. This issue only affects IDE-based drives
+8 GB and larger.
+
+RESOLUTION
+==========
+
+Windows NT 4.0 Service Pack 4 (SP4) has a new Atapi.sys file that allows the
+drive to be formatted during setup of Windows NT. SP4's Atapi.sys can also
+access space beyond 8GB on these IDE drives.
+
+The system partition (boot partition) is still limited to 7.8GB whether an
+updated version of the Atapi.sys file is installed or not.
+
+For more information, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q114841 Windows NT Boot Process and Hard Disk Constraints
+
+NOTE: The system board basic input/output system (BIOS) must support and
+recognize drives larger than 8GB before Windows NT can access the entire drive.
+You can verify this ability by entering into the BIOS or contacting your system
+board manufacturer.
+
+If you are using Windows NT 4.0 Workstation, Server, or Terminal Server, follow
+these instructions:
+
+1. Download the updated Atapi.sys from Microsoft's FTP server:
+
+   ftp://ftp.microsoft.com/bussys/winnt/winnt-unsup-ed/fixes/nt40/atapi/ATAPI.EXE
+
+   and copy the file to a blank floppy disk. Run Atapi.exe on the disk and the
+   new Atapi.sys file is extracted to the disk. Label the disk "Microsoft ATAPI
+   Service Pack 4 IDE Driver."
+
+2. Restart from the three setup disks supplied with Windows NT Server.
+
+3. When asked if you would like setup to detect your mass storage devices, press
+   "S" so that detection is skipped and you specify a mass storage device.
+
+4. When setup list devices found, which should list <none>, press "S"
+   again and insert the Microsoft ATAPI Service Pack 4 IDE Driver disk and press
+   ENTER twice.
+
+5. After setup reads the disk and list the Microsoft ATAPI Service Pack 4 IDE
+   driver, press ENTER to accept the driver.
+
+6. Setup now lists Microsoft ATAPI Service Pack 4 IDE Driver as an installed
+   driver. If you have additional drivers for other mass storage devices, press
+   S; if not, press ENTER to continue through setup.
+
+7. Setup should continue through normally but, it prompts you to insert the disk
+   labeled "Microsoft ATAPI Service Pack 4 IDE Driver Support Disk" at the copy
+   phase after you have chosen or formatted a partition on a hard drive.
+
+If you are using Microsoft Small Business Server 4.0 or 4.0a, follow these
+instructions:
+
+1. Download the updated ATAPI.SYS from Microsoft's FTP server:
+
+   ftp://ftp.microsoft.com/bussys/winnt/winnt-unsup-ed/fixes/nt40/atapi/ATAPI.EXE
+
+   and copy the file to a blank floppy disk. Run Atapi.exe on the disk and the
+   new Atapi.sys file is extracted to the disk. Label the diskette "Microsoft
+   ATAPI Service Pack 4 IDE Driver."
+
+2. Copy an updated file to Small Business Server (SBS) disk 2. To do this,
+   rename the file Winnt.sif to Winnt.bak on disk 2. Then copy the Winnt.sif
+   from the I386 folder on SBS CD 1 to SBS disk 2.
+
+   NOTE:
+
+   If a set of NT setup disks have been created from the SBS CD1 I386 directory
+   by running the command winnt /ox or winnt32 /ox, the file winnt.sif will not
+   be included on SBS disk 2. In this case, copy winnt.sif file from the SBS CD
+   1 I386 directory to SBS Disk 2. It will not be necessary to rename an
+   existing winnt.sif on the disk before doing so.
+
+3. Restart from the modified SBS setup disks. When the computer is restarting
+   off of disk 1 and the message "Setup is inspecting your hardware
+   configuration..." is displayed, press F6 on the keyboard.
+
+   NOTE: This is at a black screen and no visible indicators occur when you press
+   F6.
+
+4. When prompted, insert the modified disk 2 into the computer.
+
+5. The next screen that appears prompts you to specify a mass storage drivers.
+   To do that, press the S key and then arrow down to the listing of OTHER.
+   Insert the Microsoft ATAPI Service Pack 4 IDE Driver disk and press ENTER
+   twice.
+
+6. After setup reads the disk and list the Microsoft ATAPI Service Pack 4 IDE
+   driver, press ENTER to accept the driver.
+
+7. Setup now lists "Microsoft ATAPI Service Pack 4 IDE Driver" as a installed
+   driver. If you have any more drivers for other mass storage devices, press S;
+   if not, press ENTER to continue through setup.
+
+   NOTE: You are prompted to insert disks 2 and 3 several times, because you are
+   using a modified version of Winnt.sif. Make sure you format or convert the
+   partition to NTFS as SBS requires it.
+
+8. Setup should continue through normally but it prompts you to insert the disk
+   labeled "Microsoft ATAPI Service Pack 4 IDE Driver Support Disk" at the copy
+   phase after you have chosen or formatted a partition on a hard drive.
+
+STATUS
+======
+
+Microsoft has confirmed this to be an issue in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+For related issues that this article addresses, please see the following
+articles in the Microsoft Knowledge Base:
+
+   Q177257 STOP 0x0000000A or Difficulty Recognizing IDE CD-ROM Drives
+
+   Q183654 IBM DTTA-351010 10.1 GB Drive Capacity Is Inaccurate
+
+
+Additional query words: sbsfaqtop 8gb 10gb dell poweredge SBS45 sbsfaq large hdisk hard drive disk winnt atapi atapi.sys ide 0x0000007b INACCESSIBLE_BOOT_DEVICE 0x7B
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch kbAudDeveloper kbSBServSearch kbSBServ400 kbSBServ400a
+Version           : :4.0,4.0a
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

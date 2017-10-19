@@ -1,0 +1,65 @@
+DOCUMENT:Q216837  20-FEB-1999  [sna]
+TITLE   :SFGW Performance Improvements in SNA Server 4.0 SP2
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0SP2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, version 4.0SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+SNA Server 4.0 Service Pack 2 (SP2) includes some performance improvements that
+result in faster file access when using SNA Server's Shared Folders Gateway
+(SFGW) feature.
+
+MORE INFORMATION
+================
+
+The internal cache sizes used by the SFGW feature have been increased in SNA
+Server 4.0 SP2, which accounts for some of the performance improvements when
+accessing AS/400 and S/36 shared folder files.
+
+
+SNA Server 4.0 SP2 also includes other performance enhancements that benefit all
+Advanced Program-to-Program Communications/Common Programming Interface for
+Communications (APPC/CPI-C). Because SFGW is an APPC application, it also
+benefits from these performance improvements.
+
+For additional information about the other APPC performance enhancements in SNA
+Server 4.0 SP2, please see the following articles in the Microsoft Knowledge
+Base:
+
+   Q193814 Performance Improvements for APPC/CPIC Applications
+
+   Q193815 Improved APPC/CPIC Performance on SNA Client Computer
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:4.0SP2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

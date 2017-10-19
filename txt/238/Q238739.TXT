@@ -1,0 +1,60 @@
+DOCUMENT:Q238739  14-AUG-1999  [iis]
+TITLE   :Cannot Administer Index Server 2.0 from the MMC
+PRODUCT :Internet Information Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+It is not possible to administer Index Server 2.0 from the Microsoft Management
+Console (MMC) on a computer running Windows NT Workstation 4.0.
+
+CAUSE
+=====
+
+There is no supported way to administer Index Server 2.0 on a computer running
+Windows NT Workstation 4.0 other than using the HTML Admin.
+
+MORE INFORMATION
+================
+
+ - The only way to administer through the MMC is through the Index Server
+   snap-in.
+
+ - Index Server must be installed for the snap-in to be present.
+
+ - Index Server 2.0 will not install on Windows NT Workstation 4.0.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ200
+Version           : winnt:2.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

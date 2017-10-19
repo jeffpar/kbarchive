@@ -1,0 +1,111 @@
+DOCUMENT:Q231517  14-SEP-2001  [automap]
+TITLE   :MapPoint 2000: Graphics in Legend Are Jagged When You Print Map
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kb3rdparty kbprint kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print a map from Microsoft MapPoint 2000, the graphics in the legend on
+the printed map may appear coarse or jagged.
+
+CAUSE
+=====
+
+This behavior can occur if the Hewlett-Packard (HP) LaserJet 4Si is your default
+printer.
+
+RESOLUTION
+==========
+
+To resolve this issue, use one of the following methods.
+
+Install and Use the HP LaserJet 4Si MX Printer Driver
+-----------------------------------------------------
+
+To do this:
+
+1. Click Start, point to Settings, and then click Printers.
+
+2. Double-click Add Printer, and then click Next.
+
+3. Click "Local printer," and then click Next.
+
+4. In the Manufacturers box, click HP.
+
+5. In the Printers box, click HP LaserJet 4Si MX, and then click Next.
+
+6. In the "Available ports" box, click the port your printer is connected to,
+   and then click Next.
+
+7. Under "Do you want your Windows-based programs to use this printer as the
+   default printer," click No, and then click Next.
+
+8. When you are prompted to print a test page, click "Yes (recommended)," and
+   then click Finish.
+
+9. When the test page is finished printing, click Yes.
+
+10. Close the Printers window.
+
+11. Use the HP LaserJet MX printer driver to print from MapPoint 2000. To do
+   this:
+
+   a. On the File menu, click Print.
+
+   b. In the Name box, click HP LaserJet MX, and then click OK.
+
+Disable Dithering on the HP LaserJet 4Si Printer
+------------------------------------------------
+
+To do this:
+
+1. Click Start, point to Settings, and then click Printers.
+
+2. Right-click the HP LaserJet 4Si printer, and then click Properties.
+
+3. Click the Graphics tab.
+
+4. Under Dithering, click None.
+
+5. Click OK, and then close the Printers window.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: mp2000 pixelated dithered
+
+======================================================================
+Keywords          : kb3rdparty kbprint kbimu 
+Technology        : kbHomeProdSearch kbMapptSearch kbMapPoint2000
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

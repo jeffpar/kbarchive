@@ -1,0 +1,52 @@
+DOCUMENT:Q238797  30-JUL-2001  [winnt]
+TITLE   :DNS Server Installation and Configuration Document Available
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+A document that describes how to install and configure a Microsoft DNS server is
+available for download from the Microsoft Windows NT FTP Web site.
+
+MORE INFORMATION
+================
+
+This document contains graphic images that show the user interface and describe
+the options available during Setup. Other topics described in this document
+include:
+
+ - Installing a DNS server
+
+ - Configuring a DNS server
+
+ - Setting up zones for name resolution
+
+The document is available as Dnsinstall.exe at the following Microsoft Web site:
+
+   ftp://ftp.microsoft.com/bussys/winnt/winnt-docs/papers/
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

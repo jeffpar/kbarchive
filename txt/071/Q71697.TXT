@@ -1,0 +1,60 @@
+DOCUMENT:Q71697  19-OCT-2000  [pcmail]
+TITLE   :PC DOS: Creating Action Field Items for the Operator Program
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:2.1e,3.0,3.0b,3.2a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 2.1e, 3.0, 3.0b, 3.2a, on platform(s):
+    - the operating system: MS-DOS 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Operator program (OPERATOR.EXE) looks in the GLB directory of the Microsoft
+Mail database for a text file named OPERATOR.GLB. The OPERATOR.GLB file contains
+a list of action items you will be able to choose from the Action field in
+Operator.
+
+Action items should be separated by hard carriage returns.
+
+For example, create a text file with the following information:
+
+   Telephoned
+   Returned your call
+   Please call
+   Will call again
+   Wants to see you
+   Left package
+
+The list of action items will be sorted when it is viewed from within the
+Operator program. This feature is not explained in the Microsoft Mail for PC
+Networks documentation.
+
+Additional query words: 2.10e 3.00 3.00b 3.20 3.20a
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3
+Version           : WINDOWS:2.1e,3.0,3.0b,3.2a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

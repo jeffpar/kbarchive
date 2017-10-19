@@ -1,0 +1,61 @@
+DOCUMENT:Q156896  22-DEC-1999  [exchange]
+TITLE   :XCON: Cannot Send to DL if Sender Does not have X.400 Address
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you attempt send a message to a Microsoft Exchange Distribution List (DL),
+you might receive the following error:
+
+   Unable to deliver the message due to a recipient problem.
+
+This error will occur if you do not have an X.400 address. To add an X.400
+address, the Microsoft Exchange administrator will need to follow these steps:
+
+1. Start the Microsoft Exchange Administrator program.
+
+2. Select the sender's mailbox.
+
+3. Open the File menu, click Properties, click E-mail Addresses, click New,
+   click X.400 Address, and add the X.400 address.
+
+MORE INFORMATION
+================
+
+Mail can be sent to other users without any problem if an X.400 address is not
+present. However, when mail is sent to a DL, the Microsoft Exchange Message
+Transfer Agent (MTA) requires that the sender have an X.400 address.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

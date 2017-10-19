@@ -1,0 +1,60 @@
+DOCUMENT:Q210497  09-FEB-1999  [homegame]
+TITLE   :Golf 99: Incorrect Distance Stated in Flyby Commentary Script
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbui kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf 1999 Edition, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play the thirteenth hole in the Medalist Golf Club course in Microsoft
+Golf 1999 Edition, the distance to the hole displayed on the screen and listed
+on the scorecard may not match the distance to the hole stated in the flyby
+commentary script for the hole.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Golf 1999 edition,
+version 1.0.
+
+MORE INFORMATION
+================
+
+If you edit a player to use the black tee, a distance of 663 yards to the
+thirteenth hole is displayed on the screen, matching the distance to the hole
+listed on the scorecard for the black tee. However, the flyby commentary script
+states that the distance is only 614 yards.
+
+Additional query words: 1.00 msgame golf99 yardage wrong movie video
+
+======================================================================
+Keywords          : kbui kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbGolf99 kbGolfSearch
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

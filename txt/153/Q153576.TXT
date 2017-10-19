@@ -1,0 +1,74 @@
+DOCUMENT:Q153576  27-JUL-2001  [sms]
+TITLE   :Despooler Fails to Retry After Package Distribution Errs
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1
+OPER/SYS:
+KEYWORDS:smsgeneral kbArtTypeINF
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+If you send packages to multiple distribution servers and the job fails to one of
+them (for example, because its network cable was unplugged), the despooler
+service will fail to resend the package.
+
+CAUSE
+=====
+
+After its initial failure to install the package, the despooler service creates
+a new instruction file to contain only the failed server. However, when
+despooler processes this instruction, it finds that no distribution servers are
+listed and deletes the instruction as complete.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce
+------------------
+
+1. Create a site with two distribution servers.
+
+2. Disconnect one distribution server from the network.
+
+3. Distribute a package to both distribution servers.
+
+Result: The jobs will complete; however, the package will only be distributed to
+one server.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.1. It has been fixed in Systems Management Server version 1.2.
+
+Additional query words: prodsms despool
+
+======================================================================
+Keywords          : smsgeneral kbArtTypeINF 
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

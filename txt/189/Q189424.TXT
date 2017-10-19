@@ -1,0 +1,67 @@
+DOCUMENT:Q189424  07-APR-2000  [sna]
+TITLE   :BUG: No Warning, Recordset Row Count Not Equal Length-specifier
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:1.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft COM Transaction Integrator for CICS and IMS, version 1.0, used with:
+    - Microsoft SNA Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+No warning or error is issued when a method is invoked and the number of rows in
+an input recordset does not agree with the length-specifier (count parameter).
+
+For example, a method has two input parameters: a count parameter and a
+recordset. The purpose of the count parameter is to indicate the number of rows
+in the recordset. Although upon execution the actual number of rows in the
+recordset does not equal the value of the count parameter, no error or warning
+is issued.
+
+This usage results from importing a COBOL table or group item that contains the
+OCCURS DEPENDING ON clause. The OCCURS DEPENDING ON clause specifies another
+variable, which is the length-specifier.
+
+Using Component Builder, you can view the properties of the recordset input
+parameter and click the Recordsets tab to see that the "Occurs depending on"
+option is selected. The "Occurs depending on" option specifies the count
+parameter mentioned above as the length-specifier of the OCCURS DEPENDING ON
+clause in the imported COBOL.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in COM Transaction Integrator for
+CICS and IMS version 1.00.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbCOMTISearch
+Version           : WINDOWS:1.0,4.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,56 @@
+DOCUMENT:Q90180  30-JUL-2001  [lanman]
+TITLE   :NCB Performance and Piggybackacks
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+On file servers and workstations that are heavily used, be sure that
+PIGGYBACKACKS is set to 1 (default value, ON). When "piggybacked"
+acknowledgments are used, a computer that receives a request for data can send
+an acknowledgment of the request and the data itself in the same frame, cutting
+down on network traffic overhead. Using piggybacked acknowledgments increases
+file-transfer performance.
+
+MORE INFORMATION
+================
+
+Tests indicate poor performance when you send data in one direction only or do a
+very simple send-wait-receive ping-pong with piggybackack turned on. This occurs
+because the receiving NetBEUI stack does not send its acknowledgment until the
+T2 timer pop, thus slowing the network traffic.
+
+By turning PIGGYBACKACKS off, these tests perform as expected.
+
+In real-world scenarios, PIGGYBACKACKS should be left on. In most cases, data is
+transferred in both directions and is not contingent on the completion of an
+earlier request.
+
+
+Turning PIGGYBACKACKS off will result in higher network traffic and degraded
+performance.
+
+Additional query words: 2.0 2.00 2.1 2.10
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

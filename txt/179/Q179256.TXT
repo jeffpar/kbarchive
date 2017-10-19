@@ -1,0 +1,72 @@
+DOCUMENT:Q179256  14-NOV-2000  [word97]
+TITLE   :WD97: Word Mail Merge Hangs Using Access Parameter Query
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:word97 kbmerge
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Word may appear to stop responding when you do a mail merge using a Microsoft
+Access parameter query.
+
+NOTE: A Microsoft Access parameter query prompts you to enter certain criteria
+each time the query runs.
+
+CAUSE
+=====
+
+This behavior occurs because Word is waiting for you to type information into
+the Microsoft Access parameter query input box.
+
+WORKAROUND
+==========
+
+Press ALT+TAB to switch to the Microsoft Access parameter query input box, type
+the required text, and then click OK.
+
+NOTE: If you save your mail merge main document as a template, and then create a
+new document based on the template, the Microsoft Access parameter query will
+prompt you without requiring you to press ALT+TAB.
+
+MORE INFORMATION
+================
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q155487 WD: Mail Merge Using a Microsoft Access Parameter Query
+
+   Q110653 WD: Queries Tab Not Available When Using Access via ODBC
+
+Additional query words:
+
+======================================================================
+Keywords          : word97 kbmerge 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

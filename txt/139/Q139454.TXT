@@ -1,0 +1,75 @@
+DOCUMENT:Q139454  17-DEC-2000  [win95x]
+TITLE   :"Rundll32" Error After Viewing Properties for Network Adapter
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you view the properties for a network adapter both in Device Manager and
+Network properties at the same time, you may receive the following error message
+after you close the System Properties or Network dialog box:
+
+   Rundll32
+
+   An error has occurred in your program. To keep working anyway, click Ignore
+   and save your work in a new file. To quit this program, click Close. You will
+   lose information you entered since your last Save.
+
+If you click Close, the following error message is displayed:
+
+   This program has performed an illegal operation and will be shut down.
+
+   If the problem persists, contact the program vendor.
+
+RESOLUTION
+==========
+
+If you must view the properties for a network adapter both in Device Manager and
+Network properties at the same time, you may be able to work around this problem
+by closing the dialog box that you opened second before you close the dialog box
+you opened first.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+If you open Device Manager first, and then open Network properties, the problem
+occurs if you close Device Manager first and then close Network properties. If
+you open Network properties and then open Device Manager, the problem occurs if
+you close Network properties first and then close Device Manager.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,94 @@
+DOCUMENT:Q247408  08-MAY-2002  [winnt]
+TITLE   :Error Message or Spooler Hangs When You Pause or Resume Printing
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:2000; winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv kbprint kbtoolkbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows 2000 Professional 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Advanced Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you pause or resume print jobs frequently, the Windows NT Spooler Service
+may stop responding (hang) or generate an access violation error message.
+
+CAUSE
+=====
+
+This problem can occur because there is a synchronization problem with a
+function in the Localspl.dll file.
+
+
+RESOLUTION
+==========
+
+Windows 2000
+------------
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+STATUS
+======
+
+Windows 2000
+------------
+
+Microsoft has confirmed this to be a problem in Windows 2000. This problem was
+first corrected in Windows 2000 Service Pack 1.
+
+Windows NT 4.0
+--------------
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0.Microsoft is
+researching this problem and will post more information here in the Microsoft
+Knowledge Base when it becomes available.
+
+Windows NT Server 4.0, Terminal Server Edition
+----------------------------------------------
+
+Microsoft has confirmed this to be a problem in Windows NT Server 4.0, Terminal
+Server Edition.Microsoft is researching this problem and will post more
+information here in the Microsoft Knowledge Base when it becomes available.
+
+
+Additional query words: spooler spoolss dr watson crash
+
+======================================================================
+Keywords          : kbenv kbprint kbtool kbfixlist
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbNTTermServ400 kbNTTermServSearch kbWinAdvServSearch
+Version           : WINDOWS:2000; winnt:4.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

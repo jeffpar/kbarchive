@@ -1,0 +1,227 @@
+DOCUMENT:Q281092  13-DEC-2001  [mspress]
+TITLE   :MCSE Training Kit Windows 2000 Accelerated Comments and Correcti
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS MCSE Training Kit, Microsoft Windows 2000 Accelerated ISBN 0-7356-1249-8 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book MCSE Training Kit Microsoft Windows 2000
+Accelerated, ISBN 0-7356-1249-8.
+
+The following topics are covered:
+
+ - Page lxi: Incorrect Reference About Glossary
+
+ - Page 11: Reference To Missing Appendix B
+
+ - Page 20: Winnet.exe And Winnet32.exe Should Be Winnt.exe And Winnt32.exe
+
+ - Page 466: Incorrect Path
+
+ - Page 572: Incorrect Arrow Directions In Figure 10.1
+
+ - Page 625: Duplicate Entries For "044 WINS/NBNS Servers"
+
+ - Page 629: Incorrect Steps In "Follow these steps to allow dynamic updates for
+   DHCP clients that do not support Dynamic DNS updates"
+
+ - Page 1055: Incorrect Term For AGP
+
+ - Page 1071: Incorrect Lesson Reference
+
+ - Pages 1182 and 1183: Incorrect Path For Installing Terminal Services Client
+
+MORE INFORMATION
+================
+
+Page lxi: Incorrect Reference About Glossary
+--------------------------------------------
+
+On page lxi, in the second bulleted item,
+
+Change:
+"The glossary (presented only in the e-book version, located on the Supplemental
+Materials CD-ROM) provides definitions for..."
+
+To:
+"The glossary provides definitions for..."
+
+
+Page 11:  Reference To Missing Appendix B
+-----------------------------------------
+
+On page 11, the Note in Exercise 1 indicates that "If you need to create the
+Setup disks, see Appendix B, 'Creating Setup Boot Disks.'" However, Appendix B
+is not included in the book.
+
+The self-extracting archive file, W2kAAppB.exe, contains an AppendixB.txt file.
+
+The following file is available for download from the Microsoft Download Center:
+
+   W2kAAppB.exe
+   (http://download.microsoft.com/download/win2000platform/mspress/1.0/NT5/EN-US/W2kAAppB.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+Page 20: Winnet.exe And Winnet32.exe Should Be Winnt.exe And Winnt32.exe
+------------------------------------------------------------------------
+
+On page 20, in step 3,
+
+Change:
+"Use Winnet.exe for an installation using Windows 3.x on the source system, and
+use Winnet32.exe for an installation using Windows 95, 98, NT4.0..."
+
+To:
+"Use Winnt.exe for an installation using Windows 3.x on the source system, and
+use Winnt32.exe for an installation using Windows 95, 98, NT4.0..."
+
+
+Page 466: Incorrect Path
+------------------------
+
+On page 466, in step 21, change:
+"\chapt03\"
+
+To:
+"\chapt08\"
+
+
+Page 572: Incorrect Arrow Directions In Figure 10.1
+---------------------------------------------------
+
+In Figure 10.1 on page 572, the arrow directions for step 1 and step 8 are
+transposed.
+
+These arrows should be reversed, with step 1 pointing upward to the Local Name
+Server, and step 8 pointing downward to the DNS Client.
+
+
+Page 625: Duplicate Entries For "044 WINS/NBNS Servers"
+-------------------------------------------------------
+
+On page 625, in Table 11.3, there are duplicate entries for "044 WINS/NBNS
+servers". The first entry should be ignored.
+
+
+Page 629: Incorrect Steps In "Follow these steps to allow dynamic updates for DHCP clients that do not support Dynamic DNS updates"
+-----------------------------------------------------------------------------------------------------------------------------------
+
+On page 629, in the bulleted section, there is a list of the steps for enabling
+the "dynamic update for DHCP clients that do not support dynamic DNS updates"
+option through the DNS management console. This is incorrect, as this option is
+enabled through the DHCP, not DNS, management console.
+
+Change:
+"1. Click Start, point to Program, point to Administrative Tools, then click
+DNS.
+2. In the console tree, click the applicable zone."
+...
+
+"5. Select Only Secure Updates If Your Zone Type is Active
+Directory-Integrated."
+
+To:
+"1. Click Start, point to Program, point to Administrative Tools, then click
+DHCP.
+2. In the console tree, click the applicable server."
+...
+
+"5. Click Start, point to Program, point to Administrative Tools, then click
+DNS.
+6. In the console tree, click the applicable zone.
+7. In the General property tab, select Only Secure Updates if your zone type is
+Active Directory-integrated."
+
+
+Page 1055: Incorrect Term For AGP
+---------------------------------
+
+On page 1055 in the bottom-right "Solution" column, change:
+
+".. Accelerated Graphics Port (AGP) permission is ..."
+
+To:
+".. Apply Group Policy (AGP) permission is ..."
+
+
+Page 1071: Incorrect Lesson Reference
+-------------------------------------
+
+On page 1071, in the "Important" note,
+
+Change:
+"Refer to the "RIS Server and Client Requirements" section in Lesson 6,
+"Implementing RIS," before attempting to set up RIS."
+
+To:
+"Refer to the "RIS Server and Client Requirements" section in Lesson 5 before
+attempting to set up RIS."
+
+
+Pages 1182 and 1183: Incorrect Path For Installing Terminal Services Client
+---------------------------------------------------------------------------
+
+On pages 1182 and 1183, steps 11 and 15 are identical.
+
+On page 1182, remove step 11.
+
+On page 1183,
+
+Change:
+"15. In the Open text box, type \\server01\c$\ProgramFiles\terminalServicesClient
+and then click OK"
+
+To:
+"15. In the Open text box, type
+\\server01\c$\WINNT\system32\clients\tsclient\win32\disks\disk1 and then click
+OK"
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: WIN2000 TKBOOK 0-7356-1249-8
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,194 @@
+DOCUMENT:Q172847  10-AUG-1999  [foxpro]
+TITLE   :HOWTO: Cut and Paste from General Field into a Word Document
+PRODUCT :Microsoft FoxPro
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbinterop kbAutomation kbvfp500 kbvfp600 kbWord
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article illustrates how to "Select All" and "Cut and Paste" an embedded
+Word Document from a general field into another Word document using code and OLE
+automation.
+
+MORE INFORMATION
+================
+
+The following example consists of two sections. The first section is to create a
+mail merge Word document with bookmarks.
+
+NOTE: This example only works in Microsoft Word 97.
+
+Create a Word 97 merge document
+-------------------------------
+
+1. Create a new Word document in Word 97, and format the document as follows:
+
+   Dear NAME,
+
+       CONTENT
+
+   Sincerely,
+
+   John Smith
+
+2. Create a bookmark for CONTENT and NAME (the names of the bookmarks are
+   CONTENT and NAME, respectively).
+
+   To create these bookmarks, follow these steps:
+
+   a. Highlight the items in the document (for example, CONTENT).
+
+   b. Click the Insert menu option and select Bookmark.
+
+   c. In the Bookmark dialog box, type in the bookmark's name and click Add.
+
+   d. Repeat steps a through c for the NAME bookmark.
+
+3. Save the Word document as "mytest.doc."
+
+Visual FoxPro-Specific Items
+----------------------------
+
+1. Create a table named "mydoc" with the following structure:
+
+
+      Field name    Type       Size
+      -----------------------------
+      Content       General     8
+      Content       General     4
+      Name          Character   10
+
+2. There should be only one record in this table. In the general field, paste in
+   any existing Word document. In the Name field, place a ten character
+   expression.
+
+3. Close the table.
+
+4. Create a form called mail.scx in Visual FoxPro that only has a Command
+   button.
+
+5. Place the following code in the 'Click' method of the Command button:
+
+         LOCAL oWordObj
+         *   Open table
+         IF !USED("mydoc")
+           USE mydoc
+         ELSE
+           SELECT mydoc
+         ENDIF
+
+         *   Open a Word Object
+         oWordObj = CREATEOBJECT("Word.Application")
+
+         *   Next open the original document in a second window
+         oWordObj.Documents.Open("C:\VFP50\mytest.doc")
+
+         *   Retrieve the number of bookmarks defined in DOC
+         pnCountMarks = oWordObj.ActiveDocument.Bookmarks.Count
+
+         *   Store bookmarks in an array
+         DIMENSION aMark[pnCountMarks]
+
+         FOR pnCount = 1 TO pnCountMarks
+           aMark[pnCount] = oWordObj.ActiveDocument.Bookmarks(pnCount).Name
+         ENDFOR
+
+         *   Loop through all the bookmarks in the document
+         FOR pnCount = 1 TO pnCountMarks
+           pcMarkName = UPPER(aMark[pnCount])
+
+        *     Move to the next bookmark
+           WITH oWordObj.ActiveDocument.Bookmarks(pcMarkName).Range
+
+             DO CASE
+                CASE pcMarkName = "ANAME"
+                  .text = ALLTRIM(Name)
+                CASE pcMarkName = "CONTENT"  && goes to bookmark
+                  oWordObj.WordBasic.ww7_editgoto("CONTENT")
+           *         Starts Word
+                  oWord=GETOBJECT(,"WORD.basic")
+           *         Creates Form in VFP
+                  frmWord=CREATEOBJECT("FORM")
+           *         Adds OLE object to form
+                  frmWord.ADDOBJECT("OBJWORDDOC","OLEBOUNDCONTROL")
+           *         Sets the control source
+                  frmWord.OBJWORDDOC.CONTROLSOURCE="mydoc.content"
+           *         frmWord.show
+                  frmWord.OBJWORDDOC.DoVerb(0) && Default Word doc is 'Edit'
+                  oWord.EditSelectAll
+                  oWord.EditCopy
+                  oWordObj.WordBasic.editpaste
+             ENDCASE
+           ENDWITH
+         ENDFOR
+         * Release the Word.Basic object that edits the General field
+         * contents, and close the Form that was opened to access the VFP
+         * table with that General field.
+
+         Release oWord
+         Release frmWord
+
+         *    Save and Print the document
+         oWordObj.WordBasic.FilePrint(0) && Turn background printing off
+         WAIT WINDOW "Printing in Progress" TIMEOUT 3
+
+         oWordObj.WordBasic.FileSaveAs("c:\VFP50\DEMO1.DOC")
+
+         *    Close Word
+         oWordObj.WordBasic.DocClose
+
+         *    Quit Word, release the object and clear the desktop
+         oWOrdObj.Quit
+         Release oWordObj
+         Thisform.release
+
+6. Save, and run the form. Click on the command button, and Word prints out the
+   document with the Name and the Content of the mail merge.
+
+NOTE: With the GetObject() command, Word 97 looks for a document with the desired
+name. If you want to refer to an already launched instance containing your word
+document, you should leave the first parameter empty instead of using an empty
+string, otherwise you can launch a new (invisible) instance of Word containing a
+NEW document.
+
+NOTE: On random occasions this solution can cause an unexplained OLE error at the
+following line of code:
+
+         WITH oWordObj.ActiveDocument.Bookmarks(pcMarkName).Range
+
+The error message follows:
+
+   OLE IDispatch exception Code 0 from Microsoft Word. The requested member of
+   the collection does not exist.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbAutomation kbvfp500 kbvfp600 kbWord 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

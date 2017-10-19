@@ -1,0 +1,70 @@
+DOCUMENT:Q169646  08-JAN-2000  [exchange]
+TITLE   :XADM: Simeon 4.1.1 Does Not Support Multipart/Related Messages
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+The Simeon Mail client version 4.1.1 does not support multipart/related messages
+delivered by an Exchange Server computer. The Simeon user will see a message
+indicating that this will be supported in a future release.
+
+WORKAROUND
+==========
+
+To work around this problem:
+
+Administrators of Exchange Server should configure the mailbox of a Simeon user
+for plain text:
+
+1. In the Exchange Server Administrator program, bring up the mailbox of the
+   Simeon client user and select the Protocols tab.
+
+2. Select IMAP4 (Mail) and clear the from "Use Protocol Defaults" check box.
+   Under MIME Encoding, select the "Provide Message Body as Plain Text" check
+   box
+
+When future versions of Simeon support multipart/related messages, these settings
+can be changed.
+
+MORE INFORMATION
+================
+
+Simeon Mail client version 4.1.1 is manufactured by Simeon, a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding this
+product's performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

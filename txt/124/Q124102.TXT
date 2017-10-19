@@ -1,0 +1,59 @@
+DOCUMENT:Q124102  07-SEP-2001  [win95x]
+TITLE   :"Out of Paper" Message After DeskJet 560c Tray Is Refilled
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kbprint win95 kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you receive an "Out of paper" message and refill the paper tray on a
+Hewlett-Packard (HP) DeskJet 560c, the printer still does not print. Clicking
+Retry in the message box does not restart the printer; instead, the message is
+repeated.
+
+CAUSE
+=====
+
+This behavior is caused by the capabilities of the DeskJet 560c printer. This
+printer does not automatically start after the paper tray is refilled.
+
+RESOLUTION
+==========
+
+To start the printer, press the Load/Eject button on the printer. The job, and
+any subsequent jobs, then prints.
+
+MORE INFORMATION
+================
+
+This behavior has also been reported to occur with the HP LaserJet 5MP.
+
+======================================================================
+Keywords          : kbprint win95 kbPrinting 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

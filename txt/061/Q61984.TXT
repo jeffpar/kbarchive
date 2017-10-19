@@ -1,0 +1,75 @@
+DOCUMENT:Q61984  30-JUL-2001  [lanman]
+TITLE   :LAN Manager 2.0 Network API Library Information
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+LAN Manager applications should be linked with libraries that contain the LAN
+Manager API functions. These functions reside in static-link or dynamic-link
+libraries (DLLs). The type of link library used depends on the operating system
+used by the application (MS-DOS, Microsoft Windows version 3.0, or Microsoft
+OS/2 version 1.1, 1.2, or 1.3).
+
+LAN Manager operates in similar ways with OS/2, MS-DOS, and Windows, although the
+operating system allows more functionality when LAN Manager operates with
+Microsoft OS/2. OS/2 supports multiple program threads and all LAN Manager
+services; when installed with HPFS, OS/2 also supports long filenames. MS-DOS
+and Windows support only one program thread, FAT "8.3" filenames, and the
+Messenger, Netpopup, and Workstation services.
+
+In systems with MS-DOS, the LAN Manager API functions reside in the static-link
+library DOSLAN.LIB. MS-DOS applications are linked with static-link libraries in
+one step at link time. Only one library is needed.
+
+In systems with OS/2 and Windows, the LAN Manager API functions reside in the DLL
+file. More than one link library may be needed for these operating-system
+platforms, depending on the platform and the LAN Manager API functions called by
+the application. The Print category API functions reside in the PMSPL library;
+all other API functions reside in the LAN library. The following is a list of
+the link libraries:
+
+   Platform       Import Library      Dynamic-Link Library
+   --------       --------------      --------------------
+
+   MS OS/2 1.2+   LAN.LIB             MAILSLOT.DLL, NETOEM.DLL
+                  PMSPL.LIB           PMSPL.DLL, NETAPI.DLL
+
+   MS OS/2 1.1    LAN.LIB             MAILSLOT.DLL, NETOEM.DLL
+                  NETSPOOL.LIB        NETSPOOL.DLL, NETAPI.DLL
+
+   Windows 3.0    LAN.LIB             NETAPI.DLL
+                  PMSPL.LIB           PMSPL.DLL
+
+   MS-DOS         DOSLAN.LIB
+
+Note: Microsoft OS/2 and Windows do not use the same PMSPL and LAN files.
+
+Reference(s):
+
+"Microsoft LAN Manager Programmer's Reference," version 2.0, pages 13-14
+
+Additional query words: 2.00 2.10 2.10a 2.20 DOSCALL0.LIB
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

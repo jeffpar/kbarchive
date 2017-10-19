@@ -1,0 +1,65 @@
+DOCUMENT:Q253563  08-MAY-2002  [exchange]
+TITLE   :XFOR: How to Enable SSL for Exchange Server 5.5 on Windows 2000
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:2000; winnt:5.5
+OPER/SYS:
+KEYWORDS:kbenv kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+ - the operating system: Microsoft Windows 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To enable Secure Socket Layer (SSL) for Exchange Server running on Windows 2000,
+you must have Service Pack 3 or later for Exchange Server installed.
+
+MORE INFORMATION
+================
+
+Service Pack 3 automatically installs Key Manager from Microsoft Windows NT 4.0
+on the Exchange Server computer. You can find Keyring.exe along with its
+supporting binary files in the following folder by default:
+
+   %SystemRoot%\System32\Inetsrv
+
+NOTE: %SystemRoot% is usually C:\Winnt.
+
+To finish the configuration, use the instructions in the following Microsoft
+Knowledge Base article:
+
+   Q175439 XFOR: Enabling SSL For Exchange Server
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q235452 XGEN: Updates to the Exchange Server 5.5 SP3 Release Notes
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbinterop 
+Technology        : kbOSWin2000 kbOSWinSearch kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WINDOWS:2000; winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

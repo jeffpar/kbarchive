@@ -1,0 +1,65 @@
+DOCUMENT:Q197440  14-NOV-2000  [word97]
+TITLE   :WD97: "Find Whole Words Only" Option Unavailable
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The "Find whole words only" option is unavailable (dimmed) when you type more
+than one word in the Find what box of the Find and Replace dialog box (on the
+Edit menu).
+
+CAUSE
+=====
+
+The use of the plural "words" in "Find whole words only" refers to finding
+multiple instances of a word in the document.
+
+WORKAROUND
+==========
+
+Select the Use wildcards check box when you want to find whole words and you are
+searching for more than one word.
+
+MORE INFORMATION
+================
+
+"Find whole words only" instructs Word to find complete words only, and not to
+find words that only contain what you type. For example, if you type the word
+"boat" in the Find what box and do not select "Find whole words only", Word
+finds "boat", "boathouse", and "sailboat".
+
+Additional query words:
+
+======================================================================
+Keywords          : word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

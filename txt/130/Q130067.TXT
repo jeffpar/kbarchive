@@ -1,0 +1,71 @@
+DOCUMENT:Q130067  05-NOV-1999  [pcmail]
+TITLE   :PC Ext: Err Msg: Unable to Access :XTN\xxxxxxxx.XTN...
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+EXTERNAL.EXE reports the following when it tries to deliver a mail message:
+
+   Unable to access <drive>:XTN\xxxxxxxx.XTN. Check the access rights.
+
+With the verbose (-v) parameter enabled, this line is added after the error:
+
+   Statistics update failed.
+
+in the SESSION.LOG and on the screen. However, Mail is still delivered to the
+destination postoffice.
+
+CAUSE
+=====
+
+This error can occur if the xxxxxxxx.XTN file has a read-only attribute
+assigned, or if the network does not allow write access. After delivering mail,
+External attempts to update the month-to-date (MTD) and year-to-date (YTD)
+totals in the .XTN file on the postoffice. If this fails due to network rights,
+the above errors occur.
+
+RESOLUTION
+==========
+
+Remove the read-only attribute and make it RW. If it is network related, give
+the xxxxxxxx.XTN file RW access.
+
+You may also get the error if this XTN file is locked open by another process. If
+the postoffice is on a Windows NT Server, in File Manager, select the .XTN file
+in question. Press ALT+ENTER, and select Open By and close the file. If the
+postoffice in on Novell NetWare, then use Monitor or Rconsole to release the
+lock.
+
+Additional query words: 3.2x MTA
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

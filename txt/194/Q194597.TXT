@@ -1,0 +1,83 @@
+DOCUMENT:Q194597  14-NOV-2000  [word97]
+TITLE   :WD97: IF Fields Not Visible in Mail Merge Documents
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta kbfield winword word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you open a Microsoft Word for the Macintosh version 5.1 print merge
+document in Word 97, and the document contains IF and ENDIF fields, a blank line
+appears in place of the IF fields.
+
+CAUSE
+=====
+
+Word97 converts these fields to IF fields, which do not require ENDIF fields.
+The conditional fields are still part of the document; however, by default, they
+may not be visible.
+
+RESOLUTION
+==========
+
+View the conditional IF fields by showing field codes. To turn on display of
+field codes, follow these steps:
+
+1. On the Tools menu, click Options.
+
+2. Click the View tab.
+
+3. Click to select (put a check in) the Field Codes check box.
+
+4. Click OK.
+
+The conditional statements should now be visible in the document.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+
+MORE INFORMATION
+================
+
+For more information about creating conditional statements, please see the
+following articles in the Microsoft Knowledge Base:
+
+   Q105888 WD97: How to Merge Conditional Number of Records to the Same Page
+
+   Q90393 WD97: How to Use Nested IF Fields in a Print Merge Document
+
+Additional query words: mail
+
+======================================================================
+Keywords          : kbdta kbfield winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

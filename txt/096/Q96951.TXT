@@ -1,0 +1,63 @@
+DOCUMENT:Q96951  07-DEC-1999  [win95x]
+TITLE   :Short Tear-Off Feature Doesn't Work on Epson 9-Pin Printers
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The short tear-off feature does not work on Epson 9-pin printers if you set a
+user-defined paper size. This problem occurs with any application that prints
+from Windows version 3.1 using the EPSON9.DRV printer driver.
+
+CAUSE
+=====
+
+This feature does not work because the Epson 9-pin printers wait for a formfeed
+(FF) character to signal the end of a print job. For user- defined paper sizes,
+the printer driver does not send an FF character at the end of print jobs.
+Instead, the driver uses vertical positioning to determine the actual length of
+the paper and feeds the paper based on that length.
+
+MORE INFORMATION
+================
+
+For example, the short tear-off feature does not work when you print checks from
+Microsoft Money on the Epson LX-810 because the check blanks require a
+user-defined paper size.
+
+This problem occurs with the EPSON9.DRV printer driver supplied with Windows
+version 3.1 and with version 2.21 of the driver.
+
+Additional query words: 3.00 3.10 w4wprint winppt macppt
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

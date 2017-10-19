@@ -1,0 +1,95 @@
+DOCUMENT:Q76217  04-MAY-2001  [masm]
+TITLE   :FIX: Nested Structures May Hang Macro Assembler 6.0
+PRODUCT :Microsoft Macro Assembler
+PROD/VER:MS-DOS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Nested structures may cause the Microsoft Macro Assembler (MASM) version 6.0 to
+hang when one structure contains a field of the type of another structure and it
+is initialized. The code below demonstrates the problem more clearly.
+
+RESOLUTION
+==========
+
+Pad the initializer to make it the size declared. In the sample code below,
+padding the initializer for the member called People to three characters
+corrects the problem.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MASM version 6.0. This problem
+was corrected in MASM version 6.0a.
+
+MORE INFORMATION
+================
+
+In the sample code, notice that the structure member Nme has a length of three
+bytes. However, the structure called People initializes its Nme member to 'R',
+which is one character instead of three. This produces the problem.
+
+Under MS-DOS, the assembler logo will appear, and the system will hang. Under
+OS/2, the following message appears:
+
+   The process has stopped.
+   The software diagnostic code (trap number) is 013.
+
+Sample Code
+-----------
+
+   ; Assemble options needed: /c
+
+   .MODEL small
+
+   aStruct STRUCT
+       Nme BYTE 3 DUP (?)
+   aStruct ENDS
+
+   bStruct STRUCT
+       People aStruct <'R'>
+
+   ; Replace above line with the following line to work around problem.
+   ;
+   ;   People aStruct <'R  '>    ; 'R' is followed by two spaces
+
+   bStruct  ENDS
+
+   .DATA
+       Crash bStruct { }
+
+   END
+
+Additional query words: LOCK HANG STRUCT buglist6.00 fixlist6.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600
+Version           : MS-DOS:6.0
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

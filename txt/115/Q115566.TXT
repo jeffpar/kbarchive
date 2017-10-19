@@ -1,0 +1,91 @@
+DOCUMENT:Q115566  04-DEC-1999  [win16sdk]
+TITLE   :Open Multiple AVIs, Use of MCI_PUT Command
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kbfile kbmm kbsample kb16bitonly kbOSWin310 kbOSWin300
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The AVIWIN sample demonstrates how you can open and close AVI files in the
+background while playing another AVI file. This sample also demonstrates the
+MCI_WINDOW and MCI_PUT commands.
+
+NOTE: The Open command takes 1 to 2 seconds to complete. On slower machines, the
+playback of one AVI is slightly disrupted if you try to open another AVI file in
+the background. This disruption might cause some video frames to be dropped or
+skipped.
+
+When you run the AVIWIN.EXE file, remember that you can only play an AVI if you
+have already opened it. The menu items are always enabled, even when the command
+should not be run. For example, the Play menu commands are always enabled, even
+when the MCI_PLAY command would fail. If you try to play an AVI before you open
+it, you get the following message box:
+
+   Reminder: Did you Open the first/second AVI? [Yes] [No]
+
+If you click "Yes," you see the error message that returned from the
+mciSendCommand() function. If you click "No," the focus returns to the
+AVIWIN.EXE file, and you are then able to open an AVI file.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+Aviwin.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+This sample was written in Microsoft Visual C++ version 1.5. The source files of
+the AVIWIN are listed below and are contained in the archive file AVIWIN.EXE.
+
+   ABOUT.C
+   AVIWIN.C
+   AVIWIN.DEF
+   AVIWIN.H
+   AVIWIN.MAK
+   AVIWIN.RC
+   DIGITALV.H
+   README.TXT
+   RESOURCE.H
+
+Additional query words: MCI_PUT MCI_WINDOW softlib AVIWIN.EXE
+
+======================================================================
+Keywords          : kbfile kbmm kbsample kb16bitonly kbOSWin310 kbOSWin300 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

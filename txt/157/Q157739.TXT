@@ -1,0 +1,82 @@
+DOCUMENT:Q157739  10-AUG-2001  [winnt]
+TITLE   :Winbm2fv.exe Does Not Work in Windows NT
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to use the Windows Bookmarks to Favorites utility
+(Winbm2fv.exe) inside Windows NT 4.0 to convert Netscape Navigator bookmarks to
+Internet Explorer Favorites, the conversion program returns the following
+message and fails:
+
+   Internet Explorer Not Found
+
+CAUSE
+=====
+
+The WINBM2FV utility is provided on the Microsoft BBS and ftp site, and does not
+come with a readme file. The utility was designed to run with Windows 95. When
+run from within Windows NT, the utility is unable to locate the Favorites folder
+in the Winnt\Profiles\<USER> directory; therefore, it fails. There is no
+browse capability in the utility to locate the Favorites folder.
+
+WORKAROUND
+==========
+
+To work around this issue, perform one of the following steps:
+
+ - Use Internet Explorer 3.0 to open the Bookmark.htm file created in Netscape
+   Navigator, which contains the Navigator bookmarks. In Internet Explorer, on
+   the Favorites menu, click Add to Favorites. This will make all of the
+   Navigator bookmarks easily accessible on one HTM page.
+
+   -or-
+
+ - Manually add the bookmarks to the favorites list.
+
+MORE INFORMATION
+================
+
+For additional information, please see the following article(s) in the Microsoft
+Knowledge Base:
+
+   ARTICLE-ID: Q152681
+   TITLE : How to Use Netscape Navigator Bookmarks in Internet Explorer
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products performance or reliability.
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kb3rdparty kbtool 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

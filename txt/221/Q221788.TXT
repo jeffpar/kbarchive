@@ -1,0 +1,90 @@
+DOCUMENT:Q221788  11-JAN-2001  [vbwin]
+TITLE   :HOWTO: Get Localized Microsoft Components for Your Applications
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbVBp kbVBp500 kbVBp600 kbLocalization kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you need to distribute a localized version of an application developed
+using Visual Basic, you need to know which localized files need to be added to
+your localized distribution package, and where are they located.
+
+MORE INFORMATION
+================
+
+If a Microsoft component has localized resources, these are stored in a separate
+resource DLL for each language. You can find a list of resource DLLs (often
+called satellite DLLs) in the component's dependency (.dep) file. To view the
+contents of a .dep file, open it with a text editor such as Notepad as a normal
+text file.
+
+Once you know which satellite DLLs you need, you can download them from the Web.
+The easiest way to do this is as follows:
+
+1. Open the dependency file for an ActiveX control. This example uses
+   comctl32.dep.
+
+2. Determine the location of your language's information. This example uses
+   German.
+
+3. In the Localized Dependencies section you will find:
+
+    - The name of the satellite DLL: CmCtlDE.dll
+
+    - The cab file where it is stored: CmCtlDE.cab
+
+    - The URL of the cab file: http://activex.microsoft.com/controls/vb6
+
+4. Point your Web browser to the URL you create by concatenating the URL and cab
+   file above, with a forward slash ( / ) between them:
+
+   http://activex.microsoft.com/controls/vb6/CmCtlDE.cab
+
+   This allows you to download the cab file to your machine.
+
+5. Once you have downloaded the cab file, you can extract the file you need and
+   add it to your distribution package.
+
+REFERENCES
+==========
+
+For additional information about extracting a file from a cab file, please see
+the following article in the Microsoft Knowledge Base:
+
+Q198038 Useful Tools for Package and Deployment Issues
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVBp kbVBp500 kbVBp600 kbLocalization kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

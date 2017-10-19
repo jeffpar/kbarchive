@@ -1,0 +1,90 @@
+DOCUMENT:Q240638  27-OCT-2000  [homemm]
+TITLE   :World Atlas 2000: Character in Favorite Name Appears As a Dash
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbdisplay kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Interactive World Atlas 2000 
+ - Microsoft Encarta Interactive World Atlas 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use any of the following characters in a favorite name when you add a
+favorite in Microsoft Encarta World Atlas 2000, the character appears as a dash
+in the list of favorites on the Favorites menu:
+
+ - $
+ - &
+ - %
+ - \
+ - /
+ - _
+ - @
+ - {
+ - }
+ - ~
+ - '
+ - !
+ - #
+ - ^
+ - ;
+ - ?
+ - *
+ - |
+ - :
+ - "
+ - <
+ - >
+
+NOTE: You do not receive a warning message stating that you cannot use one of
+these characters in a favorite name.
+
+CAUSE
+=====
+
+The characters listed in the "Symptoms" section of this article are not valid
+characters for a favorite name.
+
+RESOLUTION
+==========
+
+Do not use any of the characters listed in the "Symptoms" section of this
+article when you add a favorite in Encarta World Atlas 2000.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta World Atlas
+2000.
+
+Additional query words: multi multi-media media mm ewa2k hyphen minus
+
+======================================================================
+Keywords          : kbdisplay kbui kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaWorldAtlas2001 kbEncartaWorldAtlas2000
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

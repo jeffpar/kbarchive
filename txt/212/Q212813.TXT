@@ -1,0 +1,60 @@
+DOCUMENT:Q212813  09-DEC-1999  [sms]
+TITLE   :SMS: Comment Text Not Inserted With "Insert line into Text File"
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:1.0,2.0
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server Installer versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When using the Insert Line into Text File, Add to Autoexec.bat, or Add to
+Config.sys script items and setting the insert action within the script item
+dialog to Replace Line Containing Text, the comment text specified is not
+inserted into the target file.
+
+MORE INFORMATION
+================
+
+This action is by design. When using the Replace Line Containing text insert
+action for the Insert Line Into Text File script item or any other script items
+that uses the same interface such as Add to Autoexec.bat or Add to Config.sys,
+the Replace Line Containing Text insert action does not preserve the previous
+line. Thus, there is nothing to comment.
+
+To have lines inserted while maintaining the replaced lines in the file as
+comments, use the Insert Before Line Containing Text or Insert After Line
+Containing Text insert actions. These actions will prepend the previous line
+with the comment text specified in the script item and then insert the new line
+accordingly.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMSI100 kbSMSI200
+Version           : WINDOWS:1.0,2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,68 @@
+DOCUMENT:Q299752  13-MAY-2002  [msdn]
+TITLE   :Problems Occur with Site After You Edit the CCD
+PRODUCT :Microsoft Developer Network
+PROD/VER::1.3,1.4,1.99,2.0,2.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Passport, versions 1.3, 1.4, 1.99, 2.0, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you edit the Component Configuration Document (CCD), your site functions
+incorrectly.
+
+MORE INFORMATION
+================
+
+The CCD is used by the Microsoft Passport Nexus to make sure that your site has
+all of the latest configuration updates. At the heart of the Microsoft Passport
+network is the Passport Nexus, which facilitates synchronization of Passport
+participant sites to ensure that each site has the latest details on network
+configuration and other issues. Each Passport component (for example, Passport
+Manager, Login servers, and Update servers) periodically communicates with the
+Nexus to retrieve the information it needs to locate, and to properly
+communicate with, the other components in the Passport network.
+
+Do not edit the CCD. Editing the CCD causes your site to function incorrectly and
+with unpredictable results. The CCD document is designed to receive updates from
+the Passport Nexus only. Do not set the CCD to read-only or set file permissions
+that prevent it from being overwritten.
+
+REFERENCES
+==========
+
+For additional information about the Component Configuration Document, browse to
+the following Microsoft Developer Network (MSDN) Web site:
+
+   Component Configuration Document
+
+Additional query words: CCD Component Configuration Document XML
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbPassport140 kbPassport130 kbPassport199 kbPassport200 kbPassportSearch
+Version           : :1.3,1.4,1.99,2.0,2.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

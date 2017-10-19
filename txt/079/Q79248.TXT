@@ -1,0 +1,64 @@
+DOCUMENT:Q79248  17-DEC-2000  [msdos]
+TITLE   :COREtape Light Backup System Incompatible with DOSKEY
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+CORE International has confirmed that their COREtape Light backup system is
+incompatible with the MS-DOS 5.0 or later DOSKEY utility.
+
+To successfully complete a tape backup with the COREtape Light system, DOSKEY
+should not be loaded.
+
+MORE INFORMATION
+================
+
+COREtape Light is a QIC-80 workstation tape backup system. When DOSKEY is
+loaded, the COREtape Light system may hang or return a communication time out
+error.
+
+The MS-DOS DOSKEY.COM program is a utility included with the MS-DOS 5 or later
+Upgrade. The DOSKEY utility allows MS-DOS commands to be recalled and edited.
+DOSKEY may also be used to develop command macros (DOSKEY macros).
+
+To ensure compatibility, CORE International suggests that customers with MS- DOS
+5.0 or later should not load DOSKEY or any other terminate-and-stay- resident
+(TSR) programs before attempting to use the COREtape Light system.
+
+The product included here, COREtape Light, is manufactured by vendors independent
+of Microsoft. We make no warranty, implied or otherwise, regarding this
+product's performance or reliability.
+
+Additional query words: 6.22 5.00 5.00a 6.00 6.20 Lock Up
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

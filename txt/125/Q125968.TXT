@@ -1,0 +1,82 @@
+DOCUMENT:Q125968  15-NOV-1999  [utilities]
+TITLE   :Notepad Reduced to Icon in Productivity Pack Demonstration
+PRODUCT :Microsoft Programming Utilities
+PROD/VER::3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Productivity Pack, version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Copy And Paste demonstration in the Sharing Information Between
+Documents lesson in the Working With Applications section of the Microsoft
+Productivity Pack for Windows, the Notepad application becomes a minimized icon.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Start the Microsoft Productivity Pack for Windows.
+
+2. Choose the Tutorial button.
+
+3. Choose the Working With Applications button.
+
+4. Choose the Sharing Information Between Documents button.
+
+5. Choose the Go To button and then choose the Next Section button. Note that
+   Notepad opens in the background and displays the SPEECH.TXT file.
+
+6. Choose the Go To button and then choose Next Section. Note that Cardfile
+   opens in the background and displays the ADDRESS.CRD file, the Cleopatra-like
+   image is in the foreground, and that Notepad is minimized to an icon. If you
+   click the Notepad icon, you receive a message stating:
+
+   Click the Next button [->] to go on, or click the Go To button to see the
+   Go To menu.
+
+Expected Behavior
+-----------------
+
+When you choose the Next Section button in step 6, you expect Notepad and
+Cardfile to be tiled in the background with the Cleopatra-like image in the
+foreground. Two buttons, Go To and [->], should be available. When you choose
+the [->] button, the tutorial should continue.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbWinProdPack100 kbWinProdPack310
+Version           : :3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

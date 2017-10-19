@@ -1,0 +1,85 @@
+DOCUMENT:Q145884  08-AUG-2001  [winnt]
+TITLE   :FindFirstFile Returns Error "The Network Name Was Deleted"
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbenv kbnetwork kbProgramming
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you programmatically add a share (NetShareAdd) and directly after this run
+FindFirstFile on the directory just shared, the following error is returned:
+
+   The network name was deleted.
+
+This only happens if the share was created on the local computer.
+
+CAUSE
+=====
+
+The message "Invalid UID or TID" is returned internally because the SMBs
+SrvSmbSessionSetupAndX and SrvSmbTreeConnectAndX haven't occurred yet.
+
+WORKAROUND
+==========
+
+After doing the NetShareAdd, call FindFirstFile more than once. After the first
+call, the error is not returned.
+
+MORE INFORMATION
+================
+
+With the correct SHARE_INFO_502 structure, the following code would cause this
+error:
+
+   ret = NetShareAdd(TEXT("\\\\SERVER"),502, (LPBYTE)&si_502,NULL);
+
+   if ( ret != 0)
+   {
+      wprintf(TEXT("NetShareAdd() error!"));
+      return;
+   }
+
+   if((fh=FindFirstFile(TEXT("\\\\SERVER\\TEST\\*"),&wfd))==
+   INVALID_HANDLE_VALUE){
+      ErrorHandler(TEXT("FindFirstFile() failed!"));}
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT Server and
+Workstation version 4.0. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbenv kbnetwork kbProgramming 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

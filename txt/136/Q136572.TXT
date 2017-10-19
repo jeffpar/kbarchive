@@ -1,0 +1,53 @@
+DOCUMENT:Q136572  13-JUN-2001  [homegame]
+TITLE   :Golf Setup Message: Some disks may not be required
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:2.0a,95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+2.00a
+WINDOWS
+kbenv kbsetup kberrmsg kbprb
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf for Windows, version 2.0a 
+ - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you run Golf Setup with Windows 95, the dialog box prompt that asks you to
+insert disk 2 and 3 also says the following:
+
+   Some disks may not be required for the selected installation option.
+
+This message is incorrect. The only Setup option, a Complete Installation,
+requires all disks. Setup will continue as expected.
+
+Additional query words: w_golf 2.00a Setup option selected Windows95
+
+======================================================================
+Keywords          :  
+Technology        : kbOSWin95 kbOSWinSearch kbHomeProdSearch kbGamesSearch kbGolfSearch
+Version           : WINDOWS:2.0a,95
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

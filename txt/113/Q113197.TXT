@@ -1,0 +1,57 @@
+DOCUMENT:Q113197  09-JUN-1999  [homegame]
+TITLE   :GP Fault in Chip's Challenge When Playing at Level 104
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Entertainment Pack, volume 4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In level 104 of Chips Challenge, "The Jailer", Chip is surrounded by four
+colored keys. Once Chip is moved, pink balls start rolling across the screen. If
+Chip is moved onto a square that displays a key, and a pink ball moves onto the
+same square at the same time, an application error will occur followed by a
+general protection (GP) fault. Once the error message occurs, the Chip's
+Challenge game closes.
+
+MORE INFORMATION
+================
+
+Avoid moving Chip onto a square that displays a key if, at the same time, a pink
+ball moves onto that square.
+
+Microsoft has confirmed this to be a problem in Windows Entertainment Pack volume
+4.
+
+Additional query words: gp fault gpf wep chips.exe
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbGamesSearch kbWinEntPkSearch kbWinEntPk400
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

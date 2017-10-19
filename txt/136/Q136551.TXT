@@ -1,0 +1,70 @@
+DOCUMENT:Q136551  17-DEC-2000  [win95x]
+TITLE   :Accessibility Options Require Program Compatibility
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbenable kbEnableSight kbEnableHear kbEnableLearn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you select either of the following Accessibility options, the option may
+not seem to have any effect:
+
+ - Show Extra Keyboard Help in Programs
+
+ - Use ShowSounds
+
+CAUSE
+=====
+
+The program you are using was not written to support these options.
+
+
+RESOLUTION
+==========
+
+Please contact the program's manufacturer for information about the
+compatibility of the program with these Windows 95 options.
+
+MORE INFORMATION
+================
+
+In Windows 95, you can specify a keyboard preference option that informs
+programs that you prefer to use the keyboard rather than the mouse. Programs
+written to support this feature change their appearance to graphically display
+keyboard-related items.
+
+The Use ShowSounds option instructs programs that normally convey information
+only with sounds to also provide information visually, such as by displaying
+text captions or informative icons.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenable kbEnableSight kbEnableHear kbEnableLearn 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

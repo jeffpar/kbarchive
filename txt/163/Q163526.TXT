@@ -1,0 +1,59 @@
+DOCUMENT:Q163526  31-JUL-2001  [sms]
+TITLE   :SMS: Polycenter/Assetworks and SMS Support Policy
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kb3rdparty kbinterop kbpolicy kbsmsUtil smsgeneral smsutil kbArtTypeINF
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Computer Associates Polycenter/AssetWORKS (formerly DEC Polycenter/AssetWORKS)
+is an extension product installed on top of Microsoft Systems Management
+Server.
+
+For technical support issues, contact:
+
+ - Microsoft Technical Support if the issue involves the basic fuctionality of
+   Microsoft Systems Management Server (for example, if you are having
+   difficulty installing the Systems Management Server client software on a
+   client computer running Windows 95).
+
+ - Computer Associates or other third-party technical support if the issue
+   involves the AssetWORKS extended functionality (for example, if you are
+   having difficulty managing UNIX resources).
+
+For a period of time, Digital did market a Systems Management Server 1.0 and
+AssetWORKS 1.x as a "bundle" (a two-disc compact disc set).
+
+
+Additional query words: prodsms Pathworks
+
+======================================================================
+Keywords          : kb3rdparty kbinterop kbpolicy kbsmsUtil smsgeneral smsutil kbArtTypeINF 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,69 @@
+DOCUMENT:Q172494  12-OCT-1999  [msnetwork]
+TITLE   :Err Msg: Connection Manager Needs More Files to Install.
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.5 (OEM Release)
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 2.5 (OEM Release) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to connect to MSN, The Microsoft Network, you may receive the
+following error message:
+
+   Connection Manager needs more files to install.
+
+CAUSE
+=====
+
+The MSN software may not be fully installed.
+
+RESOLUTION
+==========
+
+To resolve this issue, you must complete the installation of the MSN software.
+To do so, insert the MSN 2.5 CD-ROM into the CD-ROM drive. At this point, if the
+MSN installation screen does not open automatically, follow these steps:
+
+1. Click Start, point to Find, and then click "Files or Folders".
+
+2. In the Named box, type msnstart.exe.
+
+3. In the Look In box, click the CD-ROM drive, and then click Find Now.
+
+4. Double-click the Msnstart.exe file in the list of found files.
+
+5. Follow the installation instructions on the screen.
+
+6. When you are prompted to restart the computer, click Yes.
+
+Additional query words: 2.50 msnet msnetwork microsoft-net m.s.n.
+
+======================================================================
+Keywords          : kberrmsg kbsetup kbmsn 
+Technology        : kbMSNSearch kbMSN250OEM
+Version           : WINDOWS:2.5 (OEM Release)
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

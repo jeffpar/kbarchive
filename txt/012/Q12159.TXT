@@ -1,0 +1,77 @@
+DOCUMENT:Q12159  10-MAY-2001  [visualc]
+TITLE   :HOWTO: Use malloc() and _fmalloc() in an Application
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:1.0,2.0,4.0
+OPER/SYS:
+KEYWORDS:kbCRT kbVC kbhowto
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C Run-Time (CRT), included with:
+    - Microsoft C for MS-DOS, versions 5.1, 6.0, 6.0a, 6.0ax 
+    - Microsoft C for OS/2, versions 5.1, 6.0, 6.0a 
+    - Microsoft C/C++ for MS-DOS, version 7.0 
+    - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5 
+    - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The text below provides information about using the _fmalloc() and malloc()
+functions in an application.
+
+An application can use both the malloc() and _fmalloc() functions without
+restriction. Each function separately tracks its memory allocations. The
+application must use the free() and _ffree() functions, respectively, to free
+memory allocated by these functions.
+
+The malloc() functions do not perform any "garbage collection" activity to
+reclaim free memory between allocations. The application must explicitly free
+memory when appropriate.
+
+The malloc() functions can fragment memory. However, when an application frees a
+block of memory that is adjacent to another block of free memory, the
+appropriate free() function consolidates the blocks to reduce the damage caused
+by fragmentation.
+
+The _fmalloc() function does not allocate memory that crosses a segment boundary
+and fails any allocation request for more than 64K of memory. To allocate a
+larger memory block, use the halloc() function (the huge memory model memory
+allocation function). Your application must deal with segment boundaries in a
+huge memory block.
+
+Windows NT uses a flat 32-bit memory model; every address requires 32 bits.
+Because Windows NT does not use segments, far and huge versions of malloc() and
+free() are not required. Therefore, the C runtime library that supports Windows
+NT does not include the _fmalloc(), _ffree(), halloc(), and _hfree() functions.
+The elimination of segments also removes the 64K maximum allocation limit; an
+application can request up to 2 GB with malloc().
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCRT kbVC kbhowto 
+Technology        : kbVCsearch kbAudDeveloper kbCRT
+Version           : winnt:1.0,2.0,4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

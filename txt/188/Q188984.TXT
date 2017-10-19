@@ -1,0 +1,63 @@
+DOCUMENT:Q188984  13-JUN-2001  [crossnet]
+TITLE   :Office 97/2000 Is Not Supported in a Clustered Environment
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::2000,4.0,97
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - the operating system: Microsoft Windows NT 4.0 
+ - Microsoft Cluster Server 
+ - Microsoft Office 97 Professional Edition for Windows 
+ - Microsoft Office for Windows 95 Professional edition 
+ - Microsoft Office for Windows 95, Standard edition 
+ - Microsoft Office 97 Standard Edition for Windows 
+ - Microsoft Office 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Cluster Server does not support the ability to fail over Microsoft
+Office products. These products are not cluster-aware, although it is possible
+to install Office into the shared small computer system interface (SCSI) drive
+they do not fail over correctly and are not supported as a failover application.
+
+MORE INFORMATION
+================
+
+The commercially reasonable effort to make this work in a limited fashion on a
+Windows 95 client is to disable Osa.exe and Findfast.exe from the Startup group
+on the client computer. This lets the client quit the application and restart
+the application if need be. On a computer running Windows NT Workstation or
+Windows NT Server, you can quit the process by going to the Processes tab in
+Task Manager, and then by clicking End Process on the Osa.exe application.
+
+
+Additional query words: reboot mscs w2000mscs osa exe
+
+======================================================================
+Keywords          :  
+Technology        : kbOfficeSearch kbAudDeveloper kbClustServSearch kbOSWinSearch kbOSWinNT400 kbOffice2000Search kbOffice2000 kbOffice97Search kbOffice95Search kbOffice97 kbZNotKeyword3 kbOSWinNTSearch
+Version           : :2000,4.0,97
+Hardware          : ALPHA x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

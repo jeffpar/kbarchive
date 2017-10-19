@@ -1,0 +1,70 @@
+DOCUMENT:Q177962  10-AUG-2001  [winnt]
+TITLE   :SBS Client Add Pack Cannot Be Reused to Upgrade SBS Licenses
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbnetwork sbs
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft BackOffice Small Business Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft BackOffice Small Business Server Client Add Pack can only be used
+once to increase the number of client licenses. If the License Add Pack is used
+to bring the server up from a 5 user license to a 10 user license, it will only
+bring the server up to 10 user license and cannot be reused to increase the
+number of user licenses. The disk can, however, be reused if the server has to
+be reinstalled and the number of client licenses needs to be increased to the
+original number.
+
+
+
+MORE INFORMATION
+================
+
+If an attempt is made to reuse the Add Pack (for example, to upgrade from 10
+licenses to 15 licenses), the following message will be displayed:
+
+   This Microsoft Small Business Server Client Add Pack disk was already
+   used to increase client licenses from 5 to 10. This disk can only be
+   reused to restore licenses from 5 to 10 users.
+
+The Microsoft BackOffice Small Business Server has a maximum of 25 user licenses.
+Furthermore, if a customer buys a pack with 25 licenses or upgrades the server
+licenses, using SBS Client Add Packs, to a total of 25 licenses, when he or she
+attempts to apply a new SBS Client Add Pack, the customer will receive a message
+informing the customer that the maximum number of licenses has been exceeded and
+the process will not complete successfully.
+
+
+Additional query words: bumppack
+
+======================================================================
+Keywords          : kbnetwork sbs 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbAudDeveloper kbSBServSearch kbSBServ400
+Version           : :4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

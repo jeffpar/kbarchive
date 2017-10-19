@@ -1,0 +1,64 @@
+DOCUMENT:Q132812  17-DEC-2000  [win95x]
+TITLE   :Cannot Use Quickstart in Dynacomm Elite
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are running Dynacomm Elite's Quickstart application, the automated
+script does not choose Connect on the menu. Instead, it misses and chooses
+Transfer or the Scripts menu.
+
+CAUSE
+=====
+
+The font used in menus in Windows 95 is different from the font used in menus in
+earlier versions of Windows. Dynacomm relies on the font size used in the menus,
+but the font size in Windows 95 is different.
+
+RESOLUTION
+==========
+
+To correct this problem, change the menu font in Windows 95 from Arial to
+System. To do so, follow these steps:
+
+1. Use the right mouse button to click the desktop, then click Properties on the
+   menu that appears.
+
+2. On the Appearance tab, click Menu in the Item box, and then click System in
+   the Font box.
+
+3. Click OK.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

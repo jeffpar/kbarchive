@@ -1,0 +1,70 @@
+DOCUMENT:Q58343  01-NOV-1999  [win95x]
+TITLE   :Windows 3.0 SYSTEM.INI [nonwindowsapp] Section
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information is contained in the Microsoft Windows version 3.0
+SYSINI.TXT readme file. The Windows Setup program copies this file to the
+Windows 3.0 directory.
+
+MORE INFORMATION
+================
+
+[NONWINDOWSAPP] SECTION
+-----------------------
+
+The [NonWindowsApp] section contains settings that affect the
+performance of non-Windows applications.
+
+The [NonWindowsApp] section can contain the following settings:
+
+------------------------------------------------------------
+ScreenLines=<number>
+Default: 25
+Purpose: Specifies the number of lines per screen that will be
+         displayed when a non-Windows application is run. An
+         application that specifies a different screen mode can
+         override this setting.
+To change: Use Notepad to edit the SYSTEM.INI file.
+------------------------------------------------------------
+SwapDisk=<drive-colon-directory>
+Default: (the Windows directory)
+Purpose: Provides the name of the disk drive and directory to which
+         Windows sends temporary files for applications in standard
+         mode.
+To change: Use Notepad to edit the SYSTEM.INI file.
+
+Additional query words: 3.00 3.0 3.0a 3.00a win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

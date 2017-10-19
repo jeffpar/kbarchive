@@ -1,0 +1,83 @@
+DOCUMENT:Q185490  10-AUG-2001  [winnt]
+TITLE   :Explorer Expands System Drive by Default
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When Windows NT Explorer is started, it automatically expands the drive C (or
+System drive).
+
+RESOLUTION
+==========
+
+To start Explorer without expanding any drives, perform the following steps:
+
+1. Click start, and then click run.
+
+2. Type the following line and then press ENTER:
+
+   %systemroot%\explorer.exe /e,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+You can use the following steps to modify the Windows NT Explorer shortcut on
+the Start Menu to open with no drives expanded:
+
+1. Right-click the taskbar, and then select Properties.
+
+2. Click the Start Menu Programs tab, and then click Advanced.
+
+3. In the right pane, double-click Programs.
+
+4. Right-click Windows NT Explorer, click Properties, and then click the
+   Shortcut tab.
+
+5. For target, type the following command line:
+
+   %systemroot%\explorer.exe /e,::{20D04FE0-3AEA-1069-A2D8-08002B30309D}
+
+6. Click OK.
+
+Additional query words: launches starts runs drives c folder plus open opened
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

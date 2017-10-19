@@ -1,0 +1,99 @@
+DOCUMENT:Q123650  11-NOV-1999  [pcmail]
+TITLE   :X400: Err Msg: ERROR 1 (RTS): Failed to Decode PAccept
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to X.400, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Version 3.2 of Microsoft Mail Gateway to X.400 may display the following error
+when a message has been sent:
+
+   DEBUG (RT_decode_CData): cpynstr() failed
+   ERROR 1 (RTS): Failed to decode PAccept
+
+CAUSE
+=====
+
+The other message transfer agent (MTA) does not have complete configuration
+information for the Microsoft Mail X400 Gateway. It is returning an ACCEPT
+session layer packet without an MTA name in it.
+
+RESOLUTION
+==========
+
+Ensure the MTA configuration is correct. Pay particular attention to the NSAP
+address defined on the other MTA for the Microsoft Mail X400 Gateway.
+
+MORE INFORMATION
+================
+
+The following will be in the X400xxxx.LOG.
+
+NOTE: To ensure that the user will see all the information, make sure the
+following is on the command line:
+
+   X400gate -lvd
+
+15:37:25 Requesting connection to MTA: MSGWSUP
+15:37:25 DEBUG (RTS): Opening...
+15:37:25 DEBUG (Session): Opening...
+15:37:25 DEBUG (Transport): Opening...
+15:37:25 Outgoing Transport connect request on connection 1.
+15:37:25 Incoming Transport connect confirm on connection 1.
+15:37:25 Outgoing CN SPDU on connection 1:
+ xm[101] 0D63011B 0A041402 4D530B13 17113934 31303134  .c......MS....941014
+         31353337 32352D30 37303005 09130100 1601011A  153725-0700.........
+         01001402 02493402 5348C131 312FA003 800100A1  .....I4.SH.11/......
+         28800100 81010382 01008401 01A31AA0 18A11680  (...................
+         106A6761 72636961 2D783430 302D6D74 61A10216  .johndoe-x400-mta...
+         00                                            .
+15:37:25 Incoming AC SPDU on connection 1:
+ rv[ 93] 0E5B011B 09041402 4D530B13 17113934 31303134  .[......MS....941014
+         31353337 32352D30 37303005 09130100 1601011A  153725-0700.........
+         01001402 02493402 5348C129 3180A080 80010000  .....I4.SH.)1.......
+         00A18080 01008101 03A280A0 80A18080 00A18016  ....................
+         00000000 00000000 00000000 00                 .............
+15:37:25 DEBUG (RT_decode_CData): cpynstr() failed
+15:37:25 ERROR 1 (RTS): Failed to decode PAccept
+15:37:25 ERROR 1 (RTS): Protocol error occurred in state 1
+15:37:25 ERROR 3 (RTS): Association aborted
+15:37:25 Outgoing AB SPDU on connection 1:
+ xm[ 12] 190A1101 03C10531 03800104                    .......1....
+15:37:25 Incoming Transport disconnect indication on connection 1.
+15:37:25 Transport disconnect reason: 128 (normal disconnect).
+15:37:25 DEBUG (Transport): Closed
+15:37:25 DEBUG (Session): Closed
+15:37:25 DEBUG (RTS): Closed
+
+Additional query words: 3.20 NSAP x400 errmsg PAccept
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGatex400320
+Version           : MS-DOS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

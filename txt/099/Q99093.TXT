@@ -1,0 +1,52 @@
+DOCUMENT:Q99093  05-FEB-2000  [foxpro]
+TITLE   :Some Options Not Fully Displayed in RQBE List Boxes
+PRODUCT :Microsoft FoxPro
+PROD/VER:MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+ - Microsoft FoxPro for Windows, versions 2.5, 2.5a 
+ - Microsoft FoxPro for MS-DOS, versions 2.0, 2.5, 2.5a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Some list boxes in the Relational Query By Example (RQBE) Expression Builder are
+too narrow to completely display options that are the maximum length, for
+example, ALIASNME.FIELD_NAME.
+
+The Group By Fields list in the Group By dialog box will not display the entire
+option name if the name of the table is the maximum eight characters and the
+name of the field is the maximum ten characters.
+
+This problem also occurs with the Selected Output list box in the Select Fields
+dialog box and the Field Name list box in the Having dialog box.
+
+Additional query words: FoxDos VFoxWin FoxWin RQBE INTERFACE objects partial show appear visible complete truncate cut off whole
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbFoxproSearch kbZNotKeyword3 kbFoxPro200DOS kbFoxPro250DOS kbFoxPro250aDOS kbFoxPro250 kbFoxPro250a kbVFP300
+Version           : MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

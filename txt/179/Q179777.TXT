@@ -1,0 +1,78 @@
+DOCUMENT:Q179777  21-DEC-2001  [homemm]
+TITLE   :Encarta 98: Lookup Reference Feature Not Available in Word
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbfile kbinterop kbmm kbimukbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 98 Encyclopedia for Windows 
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Encarta 98 Encyclopedia, you cannot access the Lookup Reference
+feature from inside Microsoft Word.
+
+CAUSE
+=====
+
+The behavior occurs because the required files and files and settings are not
+added by the Encarta 98 Encyclopedia installation program.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, download and install the Enc98lur.exe patch file.
+
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+   Enc98lur.exe
+   (http://download.microsoft.com/download/encarta98encdlx/Update/1/WIN98/EN-US/Enc98lur.exe)
+
+Release Date: Jan-22-1998
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+Additional query words: multi media multimedia multi-media mmtitles look up integrate integration
+
+======================================================================
+Keywords          : kbfile kbinterop kbmm kbimu kbfaq
+Technology        : kbWordSearch kbHomeProdSearch kbWord97 kbWord97Search kbHomeMMsearch kbEncartaSearch kbZNotKeyword2 kbEncartaEncycSearch kbEncartaEnCyc1998
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

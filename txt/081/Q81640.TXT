@@ -1,0 +1,58 @@
+DOCUMENT:Q81640  16-OCT-1999  [win95x]
+TITLE   :256-Color Bitmap in Paintbrush Causes Wallpaper Change
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you display a 256-color bitmap in Microsoft Windows Paintbrush, the
+wallpaper color may change to a different shade. In addition, the wallpaper
+color behind some icons may change significantly when you run Windows with a
+256-color display driver.
+
+CAUSE
+=====
+
+This behavior is caused by rotating color palettes. The color of the wallpaper
+changes somewhat because Paintbrush realizes a palette that conflicts with the
+one required by the wallpaper. Windows performs a "best match" to match the
+colors after the palette has changed.
+
+Some icons on the desktop may have background colors that do not match the
+background at all. Control Panel and Program Manager icons, for example, may
+display with incorrect background colors. Dr. Watson, however, displays the
+correct background color. Dr. Watson repaints its icon when the new palette is
+selected by Paintbrush; however, Control Panel and Program Manager do not.
+
+Additional query words: 3.00 3.00a 3.10 3.11 d 3d paint brush drwatson
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

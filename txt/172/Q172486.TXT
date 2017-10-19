@@ -1,0 +1,85 @@
+DOCUMENT:Q172486  08-NOV-2001  [homemm]
+TITLE   :Bookshelf: "Click Image..." Text Is Copied or Printed with Image
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:; WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbprint kbimukbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 2000 
+ - Microsoft Bookshelf 99 
+ - Microsoft Bookshelf 98 for Windows 
+ - Microsoft Bookshelf 98 for Macintosh 
+ - Microsoft Bookshelf 1996-97 for Windows 
+ - Microsoft Bookshelf 1996-97 for Macintosh 
+ - Microsoft Bookshelf Intro Edition, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you copy an image from an article, or print the contents of an article
+containing an image from one of the products listed earlier in this article, the
+text describing how to enlarge the image accompanies the image.
+
+RESOLUTION
+==========
+
+To work around this issue, copy or print the enlarged image. To do this, follow
+these steps:
+
+1. Open the article which contains the image you wish to copy or print.
+
+2. Click the image to enlarge it to full size.
+
+3. Copy the image to the clipboard. To do this, use the appropriate method for
+   your computer.
+
+   Windows
+   -------
+
+   If you are using a Microsoft Windows-based computer, press CTRL+C key.
+
+   Macintosh
+   ---------
+
+   If you are using a Macintosh computer, click Copy on the Edit menu.
+
+4. Start or switch to the program into which you want to copy the image, and
+   then click Paste (or equivalent) on the Edit menu.
+
+5. If you want to print the image, you can now do so from within this program.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: 1.00 multi-media printing copying extra
+
+======================================================================
+Keywords          : kbprint kbimu kbfaq
+Technology        : kbHWMAC kbOSMAC kbHomeMMsearch kbZNotKeyword kbBookshelfSearch kbBookShelf1996Mac kbBookShelf1997Mac kbBookShelf1998Mac kbBookShelf1996 kbBookShelf1997 kbBookShelf1998 kbBookShelf1995Intro kbBookShelf2000 kbBookShelf1999
+Version           : MACINTOSH:; WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

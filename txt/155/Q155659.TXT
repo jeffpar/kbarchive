@@ -1,0 +1,174 @@
+DOCUMENT:Q155659  08-NOV-2001  [homegame]
+TITLE   :Monster Truck Madness: Optimizing Performance
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+1.0
+WINDOWS
+kbusage kbreadme kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Monster Truck Madness, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article discusses ways to optimize Monster Truck Madness
+Performance.
+
+RUNNING MONSTER TRUCK MADNESS ON A 486DX-66
+
+Although Monster Truck Madness will run on a 486DX-66 with 16 MB
+or more of memory, it is not recommended because performance
+(particularly the frame rate) may not be sufficient for a
+satisfying gaming experience.
+
+To improve frame rate on slower computers, there are several things
+you can try (see below).
+
+QUIT UNNECESSARY PROGRAMS
+
+To increase the amount of available system resources, quit all unnecessary
+programs that are running on your computer before you start Motocross Madness 2.
+
+To quit all unnecessary programs, use the appropriate method for your version of Microsoft Windows.
+
+Windows 95/98:
+
+1. Press CTRL+ALT+DELETE.
+
+2. In the Close Program dialog box, click any program except Explorer or Systray (which are components of Microsoft Windows), and then click End Task.
+
+   If you receive a message stating that the program is busy or not responding, click End Task again.
+
+3. Repeat steps 1 and 2 to quit all unnecessary programs that are running on your computer.
+
+Windows 2000:
+
+1. Press CTRL+SHIFT+ESC.
+
+2. On the Applications tab, click any program, and then click End Task.
+
+   Repeat this step to quit all unnecessary programs that are running on your computer.
+
+3. Close Windows Task Manager.
+
+NOTE: Some programs start automatically every time you restart your computer. For information about how to disable these programs, see the printed or online
+documentation for the program.
+
+INSTALL THE LATEST VERSION OF MICROSOFT DIRECTX
+
+Download and install the latest version of DirectX from the following Microsoft
+Web site:
+
+   http://www.microsoft.com/directx/homeuser/downloads/default.asp
+
+For additional information about how to obtain and install the latest version of DirectX, click the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q179113 How to Download and Install DirectX
+
+CHANGING GRAPHICS RESOLUTION
+
+In Monster Truck Madness, on the Options menu, click Graphics,
+and then make the following adjustments:
+
+Select 320 x 200 Simulation Resolution.
+
+Select Image Quality = Low.
+
+Select Texture = Low.
+
+Select Shadow = None.
+
+Select Tire = None.
+
+Select Scenery = Sparse.
+
+Clear Textured Sky.
+
+Clear Horizon.
+
+Select Automatic Full Screen.
+
+Clear Smoke Effects.
+
+Select Dashboard.
+
+Clear Steering Wheel.
+
+Click OK.
+
+CLEARING OPTIONS
+
+On the Options menu, click Game, and then make the following
+adjustments:
+
+Clear Show Commentary.
+
+Clear Hear Commentary.
+
+Clear View Intro Movie.
+
+Clear View Clip Scenes.
+
+Clear Automatic Attract Mode.
+
+Set the Number of Default Opponents to 1.
+
+   NOTE: The fewer opponents you have, the faster the game runs.
+   It is possible to race without any opponents (set the Number of
+   Default Opponents to 1). This gives you the experience of racing
+   a time trial.
+
+Click OK.
+
+TURNING OFF SOUND
+
+On the Options menu, click Sound, and then make the following
+adjustments:
+
+Select Playback Format = Mono.
+
+Click OK.
+
+NOTE: Turning off sound completely increases speed, but because
+sound is an integral part of playing the game, turn it off as
+a last resort.
+
+IF YOU ARE USING A 3-D HARDWARE ACCELERATOR
+
+Some hardware accelerators slow down when you select the Smoothing
+check box (On the Options menu, click Graphics). Monster Truck
+Madness may run faster if you clear this check box. If you don't
+detect a performance difference with the check box cleared, clear it
+or select it to suit your needs.
+
+Additional query words: 1.00 Monster Truck Madness improve performance increase slow machine system computer lag delay skips skipping skip
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbGamesSearch kbZNotKeyword kbMonsterTMSearch kbMonsterTM
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

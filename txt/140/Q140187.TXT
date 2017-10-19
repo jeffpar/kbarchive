@@ -1,0 +1,64 @@
+DOCUMENT:Q140187  28-JUL-2000  [schedplus]
+TITLE   :Setting Recurring Monthly Appointments to Day 31
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you set recurring monthly appointments to day 31, you will find appointments
+scheduled only for months that have 31 days.
+
+CAUSE
+=====
+
+This is by product design.
+
+MORE INFORMATION
+================
+
+If you want to set a recurring monthly appointment for the last day of each
+month, follow the steps below:
+
+1. Open Schedule+, version 7.0.
+
+2. From the Insert menu, select Recurring Appointment.
+
+3. Select the When tab, then click Monthly. In the interval and day lists,
+   choose Last and Day (of every 1 month, which is the default).
+
+
+4. When you focus on the Planner view, the last day of every month will have the
+   appointment scheduled.
+
+Additional query words: exch schedule plus
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule700
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

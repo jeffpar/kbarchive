@@ -1,0 +1,56 @@
+DOCUMENT:Q145609  01-JUN-2001  [homemm]
+TITLE   :Pregnancy & Child Care: Setup Does Not Start
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Pregnancy and Child Care, Preview on MSN 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Pregnancy and Child Care requires that you have MSN, the Microsoft
+Network online service version 1.2 installed. If this version is not installed,
+then Pregnancy and Child Care Setup does not start.
+
+MORE INFORMATION
+================
+
+Use one of the following two methods for downloading version 1.2 of MSN:
+
+1. MSN 1.2 can be downloaded from MSN Today at no additional charge.
+
+2. On the Edit menu in MSN, click Go To and, and then click Other Location.
+
+3. Type "MSN12" (without the quotation marks) and click OK.
+
+4. Double-click the MSN 1.2 Updates folder to download MSN version 1.2.
+
+Additional query words: msn multi media multimedia multi-media mmtitles kbmm installation install initiate startup start up doesn't run
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

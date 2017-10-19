@@ -1,0 +1,67 @@
+DOCUMENT:Q187443  11-DEC-2001  [winnt]
+TITLE   :Unable to Reconnect at Maximum Number of Sessions
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+MORE INFORMATION
+================
+
+The Maximum Connection Count defines the number of active (connected) sessions.
+Disconnected sessions do not belong to any connection type. While disconnected,
+it does not make sense to charge the session against any connection type. If the
+desire is to prevent a large number of disconnected sessions, disconnect-access
+can be restricted, or you can set the disconnect timeout to a small value (this
+is the time during which a session can remain disconnected before a reset is
+forced). However, disconnected sessions are typically not doing any active work,
+thus their CPU usage is usually zero, and their physical memory use will shrink
+toward zero as they are paged out over a short time because pages are not
+referenced.
+
+
+SYMPTOMS
+========
+
+When you attempt to connect to a previously disconnected session and you reached
+the maximum number of sessions, you may receive the following error message:
+
+   The Terminal Server has ended the connection.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT Server version 4.0,
+Terminal Server Edition.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : WinNT:4.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

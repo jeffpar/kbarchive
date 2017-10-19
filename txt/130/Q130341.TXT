@@ -1,0 +1,66 @@
+DOCUMENT:Q130341  17-DEC-2000  [win95x]
+TITLE   :Twilight Zone Screen Saver Causes GP Fault
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using the Twilight Zone screen saver from Sound Source Interactive,
+you may receive the following error message when the screen saver activates:
+
+   An error has occurred in your program and it will be terminated. If the
+   problem persists, contact the program vendor.
+
+If you click the Details button, you see the following information:
+
+   IMAGECAR caused a general protection fault in module DECO.DLL at
+   0006:00004692.
+
+CAUSE
+=====
+
+The screen saver is using an outdated DECO.DLL file.
+
+RESOLUTION
+==========
+
+To correct this problem, obtain an updated DECO.DLL file. An updated DECO.DLL
+file (dated 8/18/94, with a size of 139,264 bytes) is available on the Iterated
+Systems BBS at (401) 767-3931 as a file named TZONE.ZIP.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

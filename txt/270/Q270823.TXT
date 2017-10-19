@@ -1,0 +1,69 @@
+DOCUMENT:Q270823  28-OCT-2000  [homemm]
+TITLE   :ELL: Dictation Score Incorrect When You Return to Previous Level
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbtool kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Language Learning French 
+ - Microsoft Encarta Language Learning French Deluxe 
+ - Microsoft Encarta Language Learning Spanish 
+ - Microsoft Encarta Language Learning Spanish Deluxe 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you score the Dictation exercises in one of the Encarta Language Learning
+programs listed at the beginning of this article, you may see an incorrect score
+if you return to a previously scored level.
+
+For example, the score may be 1 of 7 instead 7 of 7.
+
+NOTE: The answers may also disappear from the answer cells in previously scored
+levels.
+
+RESOLUTION
+==========
+
+If you return to a previously scored level and the answers are still displayed
+in the answer cells, use the TAB key to tab through the answer cells and then
+rescore the exercise. The score is then correct.
+
+If you return to a previously scored level and the answers are no longer
+displayed in the answer cells, you must repeat the exercise.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: multi multi-media media mm scores fields wrong missing
+
+======================================================================
+Keywords          : kbtool kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbHLangSpanish kbHLangFrench
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

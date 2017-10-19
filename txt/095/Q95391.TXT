@@ -1,0 +1,55 @@
+DOCUMENT:Q95391  12-DEC-1999  [win16sdk]
+TITLE   :BUG: Superclassed Scroll Bar's Parent Not Sent WM_CTLCOLOR Msg
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly kbCtrl kbScrollBar kbGrpDSUser kbOSWin310 kbOSWin300
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Controls normally send WM_CTLCOLOR messages to their parents so applications can
+modify the control background color. However, under Windows 3.0 and 3.1, when a
+scroll bar is superclassed, its parent is not sent WM_CTLCOLOR messages.
+
+RESOLUTION
+==========
+
+Applications that want to receive the WM_CTLCOLOR message must subclass the
+scroll bar rather than superclassing its window class.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in Windows versions 3.0 and 3.1.
+
+Additional query words: scrollbar
+
+======================================================================
+Keywords          : kb16bitonly kbCtrl kbScrollBar kbGrpDSUser kbOSWin310 kbOSWin300 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300 kbWinSDK310
+Version           : WINDOWS:3.0,3.1
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

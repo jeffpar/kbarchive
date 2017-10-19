@@ -1,0 +1,67 @@
+DOCUMENT:Q139363  24-MAR-2000  [foxpro]
+TITLE   :FIX: Setup Wizard Creates Disk Images That Are Too Big
+PRODUCT :Microsoft FoxPro
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:kbvfp kbvfp500fixkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, Professional Edition, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Disk images created by the Setup Wizard do not fit on floppy disks. The total
+file size is a few hundred or thousand bytes over what a floppy disk can hold.
+This behavior occurs randomly.
+
+CAUSE
+=====
+
+At times, the Setup Wizard underestimates the actual size of the files it is
+creating because part of the file is still in memory. The actual size of the
+files is therefore bigger than the size the Setup Wizard estimates.
+
+WORKAROUND
+==========
+
+By disabling disk caching, you can prevent the Setup Wizard from miscalculating
+the total size of the files. To disable caching, comment the lines in your
+system files that load caching software.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem has been fixed in Visual FoxPro 5.0
+for Windows.
+
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          : kbvfp kbvfp500fix kbbuglist kbfixlist
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : :3.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

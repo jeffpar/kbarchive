@@ -1,0 +1,117 @@
+DOCUMENT:Q170817  09-AUG-2001  [winnt]
+TITLE   :Windows NT Causes APC Smart UPS Battery to Discharge
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbsetup kbWinNT400sp4fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If, when Windows NT starts, an American Power Conversions (APC) Smart UPS is
+installed, its battery may be discharged or the UPS function may be shut down if
+the UPS has been placed in Smart Signaling Mode.
+
+CAUSE
+=====
+
+During the boot sequence, Windows NT sends configuration and detection code to
+the COM port to determine baud rate and FIFO information, and for mouse
+detection. The string sent to the port may contain the letter D, which the Smart
+UPS interprets as a command for Calibration Mode.
+
+The Smart UPS interprets the string incorrectly only if it has already been
+placed in Smart Mode prior to starting Windows NT. The user must have already
+placed the UPS in Smart Mode using the software supplied by American Power
+Conversions; otherwise, the Smart UPS will be unaffected by the signal Windows
+NT sends to the COM ports.
+
+WORKAROUND
+==========
+
+To work around this problem, perform either of the following:
+
+ - The adding of the /noserialmice:COMx switch, where x equals the comport
+   number, stops the detection process of a mouse on that port. Also, the latest
+   version of the APC PowerChute Software adds the switch automatically to the
+   Boot.ini file.
+
+   During the installation of a new copy of Windows NT or an upgrade using a
+   compact disc on a local CD-ROM drive and the three boot disks, the only
+   option, when using current retail media, is to disconnect the cable from the
+   system. After Windows NT is installed, reconnect the cable and add the
+   NOSERIALMICE:COMx switch to both lines of the Boot.ini.
+
+      multi(0)disk(0)rdisk(0)partition(1)\WINNT="Windows NT"
+      /NOSERIALMICE:COM1
+
+      multi(0)disk(0)rdisk(0)partition(1)\WINNT="Windows NT
+      [VGA mode]" /basevideo /sos /NOSERIALMICE:COM1
+
+   -or-
+
+ - To install the fixed version of Ntdetect.com on a currently installed
+   version, remove the attributes from Ntdetect.com on the root system
+   partition. Copy the new version of Ntdetect.com over and reset the
+   attributes. The default attributes of Ntdetect.com are read-only, archive,
+   and hidden.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0 or
+Windows NT Server 4.0, Terminal Server Edition. For additional information,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+
+If installations or upgrades are done across the network for a version of Windows
+NT shared on a hard drive, copy the replacement Ntdetect.com over the original.
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0 and Windows NT
+Server 4.0, Terminal Server Edition. This problem was first corrected in Windows
+NT 4.0 Service Pack 4.0 and Windows NT Server 4.0, Terminal Server Edition
+Service Pack 4.
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kbsetup kbWinNT400sp4fix 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

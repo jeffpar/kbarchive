@@ -1,0 +1,82 @@
+DOCUMENT:Q103234  08-AUG-2001  [winnt]
+TITLE   :Windows NT Err Msg: MSWORD/PP3 Caused Segment Load Failure...
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error message when running Microsoft Word for
+Windows 2.0 or PowerPoint for Windows 3.0:
+
+   MSWORD caused a segment load failure in module OLESVR.DLL
+
+   -or-
+
+   PP3 caused a segment load failure in module OLESVR.DLL
+
+CAUSE
+=====
+
+This error is caused by a damaged or corrupt OLESVR.DLL located in the
+%SYSTEMROOT%\SYSTEM32 directory, where SYSTEMROOT is the directory that contains
+your Windows NT system files.
+
+RESOLUTION
+==========
+
+To correct this problem, rename OLESVR.DLL in the %SYSTEMROOT%\SYSTEM32
+directory and expand the original file from the compact disc (CD) by doing the
+following:
+
+1. At the command prompt, change to the CD-ROM drive.
+
+2. Change to the I386 directory.
+
+3. Type
+
+   expand olesvr.dl_ %systemroot%\system32\olesvr.dll
+
+To expand from the floppy disks:
+
+1. Insert disk 22 in the disk drive.
+
+2. At the command prompt change to the appropriate drive.
+
+3. Type
+
+   expand olesvr.dl_ %systemroot%\system32\olesvr.dll
+
+Additional query words: prodnt PowerPoint Winword cdg power point macppt winppt
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

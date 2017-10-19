@@ -1,0 +1,76 @@
+DOCUMENT:Q190655  05-DEC-1999  [word97]
+TITLE   :WD97: Error Creating New Image in Photo Editor
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Photo Editor 97 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create a new image in Microsoft Photo Editor, you receive the following
+error message:
+
+   The image is too large (too many bytes).
+
+CAUSE
+=====
+
+There is a 32 megabyte (MB) memory allocation limitation when creating a new
+image.
+
+WORKAROUND
+==========
+
+Change the options for the image so that it requires fewer than 32 megabytes
+(MB) of memory. For example, the following options will require 34278 kilobytes
+(KB) of memory which will produce the error message:
+
+   
+
+ - Image Type: True Color (24 Bit)
+ - Resolution: 300 DPI
+ - Width:      10 Inches
+ - Height:     13 Inches
+
+Changing the height to 12 inches will require 31641 kilobytes (KB) of memory, and
+you will be able to create the image.
+
+MORE INFORMATION
+================
+
+When you create a new image in Photo Editor, you enter the image type,
+resolution, width, and height of the image. The memory allocation is determined
+by the options you set for the image. The options must not exceed the 32 MB
+limitation.
+
+Additional query words: err msg
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbWordSearch kbHomeProdSearch kbPowerPtSearch kbWord97Search kbPowerPt97Search kbPhotoEd97
+Version           : WINDOWS:97
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

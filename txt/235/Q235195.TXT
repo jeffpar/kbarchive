@@ -1,0 +1,77 @@
+DOCUMENT:Q235195  08-DEC-2000  [sms]
+TITLE   :SMS: Shared SQL Server Backup Can Corrupt Backup Files
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbinterop kbConfig kbDatabase kbServer kbsms200 kbsms200bug kbsmsUtil
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to restore the SQL database for a Microsoft Systems Management
+Server (SMS) site, the restore process may not be successfully completed.
+
+CAUSE
+=====
+
+This behavior can occur if the primary site's SQL database is on a shared
+Microsoft SQL Server computer also used by other primary sites. The SMS backup
+process begins by getting a directory list of *.tmp files in the root folder of
+the system where the SQL Server computer is installed. It then generates a
+unique file name for temporary files used during backup. There is a delay
+between the generation of this unique file name and the actual creation of the
+temporary file in the SQL Server root folder. Meanwhile, another site server,
+which is also using that same SQL Server computer, is running the same process.
+It also generates the same temporary file name for use during its site database
+backup because the other site process has not yet created the new *.tmp file.
+One of these temporary files overwrites the other, corrupting the backup for the
+other site server.
+
+WORKAROUND
+==========
+
+To work around this issue, be sure to stagger the backup of SMS sites that share
+a common SQL Server computer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+MORE INFORMATION
+================
+
+By staggering the SMS site backups, you also have the advantage of spreading the
+SQL database dump load on the SQL Server computer.
+
+Additional query words: prodsms recovery restore
+
+======================================================================
+Keywords          : kbinterop kbConfig kbDatabase kbServer kbsms200 kbsms200bug kbsmsUtil 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

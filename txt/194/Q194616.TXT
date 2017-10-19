@@ -1,0 +1,98 @@
+DOCUMENT:Q194616  04-MAY-2001  [visualc]
+TITLE   :FIX: error CBE7002: Failed assertion "lab" ascoff.cpp, line 769
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbVC500 kbOSWinCE200bug kbOSWinCE210fix kbfix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Toolkit for Visual C++, on platform(s):
+    - the hardware: SH3 processor 
+    - the hardware: SH4 processor 
+ - Microsoft Windows CE Embedded Toolkit for Visual C++ 5.0, on platform(s):
+    - the hardware: SH3 processor 
+    - the hardware: SH4 processor 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You might get the following error when compiling for the Windows CE SHx
+platform.
+
+   
+
+     fatal internal error CBE7002: Failed assertion "lab" (cbe
+     .\asm\ascoff.cpp, line 769)
+     Error executing shcl.exe.
+
+RESOLUTION
+==========
+
+Use on of the following resolutions:
+
+ - Do not use the virtual keyword for member functions.
+
+ - Do not export the class derived from an imported class.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual C++ compilers
+for Windows CE version 2.01 and later.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Create a Windows project in Developer Studio for the SH platform. Add the
+following file to the project. Compile the file and the error described in the
+SYMPTOMS section occurs.
+
+Sample Code
+-----------
+
+      // test.cpp
+      #define DLLExport  __declspec(dllexport)
+      #define DLLImport  __declspec(dllimport)
+
+      class DLLImport BClass
+      {
+      public:
+      virtual int Func(void) {return(0);}
+      };
+
+      class  DLLExport AClass : public BClass
+      {
+      };
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVC500 kbOSWinCE200bug kbOSWinCE210fix kbfix 
+Technology        : kbVCsearch kbAudDeveloper kbWinCETKVCSearch kbWinCESearch
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,122 @@
+DOCUMENT:Q137074  13-JUN-2001  [sna]
+TITLE   :SNA Server: Undocumented TPSTART Command Line Options
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.1,2.11,3.0,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbprogramming sna4
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.1, 2.11, 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To support automatic startup of Windows NT programs, the TPSTART program
+included with SNA Server must be running. This is documented in Appendix B of
+the SNA Server APPC Programmer's Guide and Appendix A of the SNA Server CPIC
+Programmer's Guide.
+
+Automatic startup of invokable transaction programs:
+
+ - that are written as Windows NT programs is supported by:
+    - SNA Server 2.1
+
+    - SNA Server 2.11
+
+    - SNA Server 3.0
+
+    - SNA Server 4.0
+
+ - that are written as Windows NT services is supported by:
+    - SNA Server 2.0
+
+    - SNA Server 2.1
+
+    - SNA Server 2.11
+
+    - SNA Server 3.0
+
+    - SNA Server 4.0
+
+The More Information section of this article describes undocumented parameters of
+the TPSTART program.
+
+MORE INFORMATION
+================
+
+The TPSTART program supports the following command line options that are not
+documented:
+
+
+/QSIZE=<number>
+
+   Replace <number> with the number of dynamic load requests that can be
+   queued by the TPSTART program. MIN = 16; MAX = 256; DEFAULT = 64.
+
+/HIDE
+
+   This parameter causes the TPSTART icon, which usually appears during startup,
+   to be hidden.
+
+The following options can be used to control internal tracing within the TPSTART
+program:
+
+/TRACE
+
+   This parameter enables internal tracing. The default is no tracing.
+
+/FILE=<filename>
+
+   Replace <filename> with the path to and name of the trace file that
+   should log the traces. By default, tracing is disabled, so you must specify a
+   trace file if you use the /TRACE option.
+
+/FSIZE=<size>
+
+   Replace <size> with the number that is the maximum size in bytes that
+   you want the TPSTART internal trace file to grow to. MIN=10000;
+   MAX=0xFFFFFFFF; DEFAULT=500K. When the trace file grows to the maximum size,
+   it is renamed to <filename>.BAK.
+
+/LEVEL=<tracelevel>
+
+   Replace <tracelevel> with a number between 0 and 10. Smaller numbers
+   mean more detailed internal tracing. For example, 0 indicates maximum detail
+   collection, which is the recommended setting to use if you need internal
+   tracing. The default of 10 turns off tracing.
+
+For example, to get full internal tracing, start the TPSTART program with the
+following command line options:
+
+   "tpstart /trace /file=c:\sna\traces\tpstart.trc /level=0" (without the
+   quotation marks)
+
+To turn off internal tracing and unlock the internal trace file, quit TPSTART.
+
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbnetwork kbprogramming sna4 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ211 kbSNAServ400 kbSNAServ210
+Version           : WINDOWS:2.1,2.11,3.0,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

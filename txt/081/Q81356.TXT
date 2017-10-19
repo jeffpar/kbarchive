@@ -1,0 +1,63 @@
+DOCUMENT:Q81356  05-NOV-1999  [utilities]
+TITLE   :BUG: QuickHelp /t Option Is Not Implemented
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:1.7,1.83
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft QuickHelp for MS-DOS, versions 1.7, 1.83 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the Microsoft QuickHelp Utility versions 1.7 and 1.83, the /t command
+line option does not work correctly. This option allows the user to directly
+paste the Help information requested into the specified paste file. However, the
+option has not been implemented.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in QuickHelp versions 1.7 and 1.83.
+We are researching this problem and will post new information here as it becomes
+available.
+
+MORE INFORMATION
+================
+
+To duplicate this problem, enter the following command at the command prompt:
+
+   " QH /t printf " (without the quotation marks)
+
+This should copy the Help screen for printf into the default paste file (PASTE.QH
+in the directory that the TMP environment variable is pointing to). However,
+when viewing that directory, the file will not exist (this file will not be
+changed if it already existed in that directory).
+
+Additional query words: QH quick help
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbQBASICSearch kbQuickHelpSearch kbQuickHelp170DOS kbQuickHelp183DOS
+Version           : MS-DOS:1.7,1.83
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

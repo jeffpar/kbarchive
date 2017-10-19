@@ -1,0 +1,57 @@
+DOCUMENT:Q259718  12-DEC-2000  [mspress]
+TITLE   :Windows 2000 Resource Kit Setup Hangs
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Windows 2000 Professional Resource Kit ISBN 1-57231-808-2 
+ - MSPRESS Microsoft Windows 2000 Server Resource Kit ISBN 1-57231-805-8 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Windows 2000 Resource Kit setup may hang under remote conditions for a
+period of approximately 5-10 minutes. Setup will continue when the process times
+out and the installation will complete successfully.
+
+WORKAROUND
+==========
+
+The only workaround for this problem at this time is to wait, or to cancel setup
+and then restart it.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post more information in this
+article when the information becomes available.
+
+Additional query words: ResKit Resource Kit W2K Pro RKBook
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

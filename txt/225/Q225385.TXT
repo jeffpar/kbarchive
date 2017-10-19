@@ -1,0 +1,61 @@
+DOCUMENT:Q225385  31-MAR-2000  [winnt]
+TITLE   :New Intranet Kit Calendar Events Not Displayed
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.5
+OPER/SYS:
+KEYWORDS:kbenv kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Server 4.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you add an event to the Calendar component of the BackOffice 4.5 Intranet
+kit, the event is successfully entered and accepted, but may not be displayed in
+the View Events section of the Calendar page. This occurs whether you access the
+page locally or over the network.
+
+CAUSE
+=====
+
+Changing the time separator by using the Regional Settings tool in Control Panel
+can cause new events not to be added to the Itranet kit calendar. Localizations
+are not supported for this feature of the Intranet kit. To use the Events
+calendar in BackOffice 4.5, you must change the time separator to the standard
+colon separator (:).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Back Office Server 4.5.
+
+
+Additional query words: smallbiz bo4.5
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbAudDeveloper kbBackOfficeSearch kbBackOfficeServ450
+Version           : winnt:4.5
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

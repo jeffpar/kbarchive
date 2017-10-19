@@ -1,0 +1,58 @@
+DOCUMENT:Q150790  15-DEC-1999  [foxpro]
+TITLE   :How To Know if VFP for Mac Uses PPC or 68K ODBC Driver
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:3.0b
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Visual FoxPro for the Macintosh development environment is designed to
+run on a Macintosh PowerPC. However, the professional edition of Visual FoxPro
+for Macintosh allows development of applications that run on a Macintosh with a
+68k processor. When developing applications that access remote data via ODBC, it
+is important to understand which versions of the ODBC drivers are required by
+both the development environment and distributed applications.
+
+MORE INFORMATION
+================
+
+Because the Visual FoxPro development environment only runs on a Macintosh
+PowerPC, the appropriate PowerPC ODBC driver must be installed to access remote
+data.
+
+When distributing a PowerPC version of an application, the same ODBC driver used
+during development is used with the distributed application. However, when
+distributing a 68k version of an application, a separate 68k ODBC driver must be
+used.
+
+Additional query words: VFoxMac
+
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac
+Version           : MACINTOSH:3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

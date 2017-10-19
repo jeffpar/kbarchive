@@ -1,0 +1,91 @@
+DOCUMENT:Q127072  27-JUL-2001  [sms]
+TITLE   :Installing SMS Client to Drive Other Than Most Free Disk Space
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbsetup smssetup smshowto
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By default, Microsoft Systems Management Server client software is installed on
+the drive with the most amount of free disk space. This article discusses the
+steps necessary to allow SMS client software (Windows NT, MS-DOS, and OS/2) to
+be installed on a drive other than the drive with the most free disk space.
+
+MORE INFORMATION
+================
+
+For Windows NT and MS-DOS Clients
+---------------------------------
+
+1. Make a backup copy of the SMSLS.BAT file.
+
+2. Use a text editor such as Notepad to modify the SMSLS.BAT file. For login
+   scripts and manual execution of SMSLS.BAT, find the following and add the
+   appropriate switches according to the syntax below.
+
+   Login Scripts:
+
+         CLI_DOS.EXE -pa:/p:%%SMS_UNC%%\ -pa:/d:<another drive>:
+         CLI_NT.EXE -pa:/p:%%SMS_UNC%%\ -pa:/d:<another drive>:
+
+         CLI_DOS.EXE -pa:/d:<another drive>:
+         CLI_NT.EXE -pa:/d:<another drive>:
+
+Manual Execution of SMSLS.BAT:
+
+         CLI_DOS.EXE -pa:/d:<another drive>:
+         CLI_NT.EXE -pa:/d:<another drive>:
+
+For OS/2 Clients
+----------------
+
+1. Make a backup copy of the SMSLS.CMD file.
+
+2. Use a text editor such as Notepad to modify the SMSLS.CMD file. For login
+   scripts and manual execution of SMSLS.CMD, find the following and add the
+   appropriate switches according to the syntax below.
+
+   Login Scripts:
+
+         CLI_OS2.EXE -pa:/d:<another drive>:
+
+Manual Execution of SMSLS.CMD:
+
+         CLI_OS2 /d:<another drive>:
+
+NOTE: If the above additions are not made to the SMSLS.BAT or SMSLS.CMD file,
+only manual execution of the file works. All variables must be proceeded by
+"-pa" (without quotes). It is not possible to combine variables following a
+single "-pa" in the command line.
+
+Additional query words: prodsms sms
+
+======================================================================
+Keywords          : kbnetwork kbsetup smssetup smshowto 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

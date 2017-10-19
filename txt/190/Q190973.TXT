@@ -1,0 +1,87 @@
+DOCUMENT:Q190973  17-JUL-2001  [visualc]
+TITLE   :PRB: IntelliSense Does Not Display Enumerated Elements
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Enumerated elements are not displayed in the Members list.
+
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In a Visual C++ project, add the following code to a source file:
+
+         enum TestEnum
+         {
+            Test_One,
+            Test_Two,
+            Test_Three
+         };
+
+2. On a blank line in the source file, press CTRL+SPACEBAR.
+
+3. The global Members list should appear.
+
+4. Scroll through the list and notice that IntelliSense does not display
+   Test_One, Test_Two, or Test_Three.
+
+REFERENCES
+==========
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q153284 Limitations of IntelliSense in Visual C++ 6.0
+
+"About Automatic Statement Completion"; Visual C++ Documentation, Using Visual
+C++, Visual C++ Users Guide, Text Editor, Overview: Text Editor, About Automatic
+Statement Completion.
+
+"Automatically Completing Statements;" Visual C++ Documentation, Using Visual
+C++, Visual C++ Users Guide, Text Editor, How do I ... Topics: Text Editor,
+Automatically completing Statements.
+
+Additional query words: kbvc600
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

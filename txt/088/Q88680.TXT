@@ -1,0 +1,93 @@
+DOCUMENT:Q88680  11-JUN-1999  [win16sdk]
+TITLE   :DOC: ControlData Structure Not Completely Documented
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kbdocfix kb16bitonly kbCtrl kbResource kbSDKPlatform
+
+======================================================================
+3.10
+WINDOWS
+kbtoolkbtoolg kbdocerr
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The ControlData structure documented on page 92 of the "Programmer's Reference,
+Volume 4: Resources" manual that comes with the Microsoft Windows version 3.1
+Software Development Kit (SDK) is not complete. This structure is also not
+complete in the online Help file (under the heading "Dialog Box Resource").
+
+The correct structure is:
+
+      struct ControlData {
+
+      WORD  x;
+      WORD  y;
+      WORD  cx;
+      WORD  cy;
+      WORD  wID;
+      DWORD lStyle;
+      union
+      {
+          BYTE class;     /* if (class & 0x80) */ 
+          char szClass[]; /* otherwise         */ 
+      } ClassID;
+      char szText[];
+      BYTE cbCreateInfo;  /* added */ 
+      char CreateInfo[];  /* added */ 
+
+       };
+
+cbCreateInfo specifies the number of bytes of additional data that follows this
+item's description and precedes the next item's description (that is, it
+specifies the length of CreateInfo).
+
+CreateInfo also specifies additional data that the CreateWindow function passes
+to the WM_CREATE handler of the control (through the lpCreateParams field of the
+CREATESTRUCT data structure). This field is zero length if cbCreateInfo is zero.
+
+MORE INFORMATION
+================
+
+When you are using the Windows 3.1 SDK Dialog Editor and Resource Compiler to
+create dialog box templates that are bound to .EXE files, the cbCreateInfo field
+is initialized to 0. The only way for an application to use these fields is to
+create a dialog box template on the fly and call one of the following functions:
+CreateDialogIndirect, CreateDialogIndirectParam, DialogBoxIndirect, or
+DialogBoxIndirectParam.
+
+Note that the Windows 3.1 Dialog Manager passes a pointer to the item following
+the cbCreateInfo field in the dialog template even if cbCreateInfo is 0. This
+means that controls that rely on the lpCreateParams field in the CREATESTRUCT
+being NULL when there is no extra creation information will NOT function
+properly when using a standard Windows dialog resource.
+
+Additional query words: 3.10 docerr
+
+======================================================================
+Keywords          : kbdocfix kb16bitonly kbCtrl kbResource kbSDKPlatform 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,95 @@
+DOCUMENT:Q260349  06-JAN-2001  [exchange]
+TITLE   :INFO: What Does "Terminate 0 1" Mean in the Routing Process?
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5,5.5 SP1,5.5 SP2,5.5 SP3
+OPER/SYS:
+KEYWORDS:kbExchange kbExchange550 kbMsg kbGrpDSMsg kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 5.5 SP1, 5.5 SP2, 5.5 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Exchange Server routing objects have six intrinsic actions:
+
+ - AndSplit
+ - Goto
+ - New
+ - OrSplit
+ - Wait
+ - Terminate
+
+A Microsoft Developer Network (MSDN) document describes the Terminate action as
+follows:
+
+   
+
+   Action        Parameter   Description
+   Terminate     (None)      Ends the currently executing process instance.
+
+This means that Terminate action ends the currently running process instance,
+takes no parameters, and can occur anywhere in your routing map.
+
+However, these examples show different ways to use Terminate action:
+
+   Terminate 0   0
+
+-and-
+
+   Terminate 0   1
+
+What do these examples mean? What is the difference for the parameter 0/1 that is
+passed to the Terminate action?
+
+MORE INFORMATION
+================
+
+This is a documentation error in MSDN. Terminate action can take one parameter:
+0 (which is the same as the default no parameter) or 1.
+
+The parameter
+
+   Terminate 0
+
+-or-
+
+   Terminate 0   0
+
+means that the routing ends the currently executing process instance.
+
+The parameter
+
+   Terminate 0   1
+
+means that the routing ends the currently executing process instance and deletes
+the currently running process instance from the folder where the message is
+posted for routing.
+
+Additional query words: Event Scripting Agent Routing Objects
+
+======================================================================
+Keywords          : kbExchange kbExchange550 kbMsg kbGrpDSMsg kbDSupport 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange550SP1 kbExchange550SP2 kbExchange550SP3
+Version           : :5.5,5.5 SP1,5.5 SP2,5.5 SP3
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,80 @@
+DOCUMENT:Q232154  24-FEB-2002  [iis]
+TITLE   :IIS: Export Private Key Opt Gray Exporting Server Certificate
+PRODUCT :Internet Information Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbIIS kbiis500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Using the Certificates snap-in in Windows 2000, you can do many tasks regarding
+certificates and certificate management. One of these tasks is exporting server
+certificates for use in an Internet Information Services 5.0 web server. In
+order for a server certificate to be used by the web server, you must export the
+private key along with the certificate. Without the private key, data encryption
+(and therefore secure communications) is not possible.
+
+When exporting the server certificate from the server's personal certificate
+store, you may not have the option to export the private key. If this is the
+case, when the certificate was imported, the option to allow the private key to
+be exported may have been unchecked. This is a security measure to prevent a
+possible compromise of the server's private key. Since this could be a potential
+security risk, the option to mark the private key as exportable is not checked
+by default.
+
+RESOLUTION
+==========
+
+In order to correct this problem, you will need access to the original
+certificate backup (.pfx) file. To ensure this problem does not happen in the
+future (should you want to export the private key again) make sure during the
+import process that you select the box "mark the private key as exportable."
+
+MORE INFORMATION
+================
+
+For additional information about importing server certificates, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q232137 HOW TO: Import a Server Certificate in Internet Information Services
+   5.0
+
+For additional information about exporting (backing up) server certificates,
+click the article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q232136 HOW TO: Back Up a Server Certificate in Internet Information Services
+   5.0
+
+Additional query words: iis
+
+======================================================================
+Keywords          : kbIIS kbiis500 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

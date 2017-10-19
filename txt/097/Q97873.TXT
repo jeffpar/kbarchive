@@ -1,0 +1,80 @@
+DOCUMENT:Q97873  30-JUL-2001  [lanman]
+TITLE   :LAN Man NetBEUI Cannot Accommodate More than 256 Sessions
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+You cannot configure a LAN Manager server running NetBEUI (even with multiple
+net cards) to overcome the 256-session limit.
+
+MORE INFORMATION
+================
+
+LAN Manager NetBEUI cannot accommodate more than 256 sessions. That is an
+absolute limit. NetBEUI can distribute up to 256 sessions across multiple
+network adapters, but the total on the network still cannot exceed 256.
+
+LAN Manager can deal with more than 256 sessions if you install multiple protocol
+drivers, each of which can accommodate up to 256 sessions. This requires
+different protocols, however, because NetBEUI will not tolerate multiple
+instances of itself loaded on the same station.
+
+
+If a station is configured with two (or more) net cards, each card must be
+attached to a physically separate network. If there is a path for NetBEUI
+packets between Adapter A and Adapter B, you will receive "Error 52: Duplicate
+Name on Network."
+
+So that means you can do this:
+
+                  __________
+                 |  Server  |
+                 |__|____|__|
+
+--------------------|    |----------------------
+
+But not this:
+
+                  __________
+                 |  Server  |
+                 |__|____|__|
+
+--------------------|----|
+
+Nor this:
+
+                  ___________
+                 |  Server  |
+                 |__|____|__|
+
+------|-------------|    |----------------|-----
+  /---|--\                            /---|--\ 
+  |Bridge|                            |Bridge|
+  \---|--/                            \---|--/ 
+------|-----------------------------------|-----
+
+Additional query words: 2.00 2.10 2.10a 2.20
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

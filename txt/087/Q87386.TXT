@@ -1,0 +1,65 @@
+DOCUMENT:Q87386  31-OCT-1999  [pcmail]
+TITLE   :PC DB: Symptoms of a Missing CONTROL.GLB File
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:2.1e,3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 2.1e, 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Three main areas of the Microsoft Mail system will be affected if there is a
+problem with the CONTROL.GLB file, and the following errors will occur:
+
+ - Unable to create mail
+
+ - Unable to create a local user
+
+ - Unable to create an External postoffice or Gateway Node
+
+MORE INFORMATION
+================
+
+The process to generate a new filename is as follows:
+
+1. Open the CONTROL.GLB file in read/write mode.
+
+2. Read the current value of the next mailbag or mail filename.
+
+3. Create the new filename with appropriate extension.
+
+4. If the filename is created successfully, increment the new filename and write
+   it back to the CONTROL.GLB file. Otherwise, display an error message.
+
+5. Close the CONTROL.GLB file.
+
+
+Additional query words: 2.10e 3.00 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300 kbMailPCN210e
+Version           : WINDOWS:2.1e,3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

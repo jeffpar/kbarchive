@@ -1,0 +1,75 @@
+DOCUMENT:Q186597  11-DEC-2001  [winnt]
+TITLE   :Registering OCX and DLL files as System Globals
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You may receive an error when installing or running an application stating that
+an OCX file or a DLL file needs to be registered as system global. Make a note
+of the file that needs to be registered.
+
+MORE INFORMATION
+================
+
+OCX Files
+---------
+
+1. Start your server in VGA mode.
+
+2. You will need to use the Regsvr.exe, Regsvr16.exe (16-bit), or Regsvr32.exe
+   (32-bit) command to register the OCX file as system global. These commands
+   are included in the development kit when Visual Basic or Visual FoxPro is
+   installed.
+
+Depending on the application, you may have to register several OCX files this
+way.
+
+DLL Files
+---------
+
+To register a DLL as a system global, go to the SYSTEM32 directory and locate the
+DLL mentioned in the error message. The command to register a file called
+Sample.dll is:
+
+   REGISTER /S SAMPLE.DLL
+
+Registration data for a program is recognized only when the program is loaded.
+Therefore, if you issue a REGISTER command for a program that is already loaded,
+the changes will not take effect until the next time the program is loaded.
+
+Also note that only administrators can run REGISTER.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

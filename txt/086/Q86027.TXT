@@ -1,0 +1,74 @@
+DOCUMENT:Q86027  27-SEP-1999  [win95x]
+TITLE   :Err Msg: Cannot Start Windows in Standard Mode (Low Memory)
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Windows may display the following error messages when available XMS
+memory is below the requirement for standard mode and a UMB provider (for
+example, EMM386.EXE) is loaded in the CONFIG.SYS file:
+
+   Cannot Start Windows in Standard Mode
+
+   Make sure you are not running other protected-mode software or try starting
+   Windows in 386 Enhanced mode by typing WIN /3.
+
+After typing "win /3" (without the quotation marks), the following message is
+displayed:
+
+   Insufficient extended memory available to run Windows
+
+   Quit one or more applications to increase available memory or restart your
+   computer.
+
+CAUSE
+=====
+
+Standard mode Windows 3.1 is VCPI-compliant. VCPI is an industry protocol to
+allow 386-based memory managers such as EMM386 to coexist with 286- protected
+mode MS-DOS extenders. However, under low-memory situations where available XMS
+is less than the Windows 3.1 standard mode requirement, UMB providers (for
+example, EMM386) cause Windows to generate the above error message.
+
+Specifically with MS-DOS or the Windows 3.1 EMM386, the error message only
+appears with the NOEMS switch (and DOS=UMB). When EMM386 is loaded with either
+the RAM switch (to also provide expanded memory) or with no switch (to only
+provide expanded memory), Windows 3.1 will execute in standard mode.
+
+To avoid this (low memory) error message, Windows will need more available XMS
+memory. If drivers for an external disk cache and/or RAMDrive are loaded, either
+reduce the extended memory allocated to these drivers or remove them entirely.
+
+Additional query words: 3.10 3.11 err msg
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

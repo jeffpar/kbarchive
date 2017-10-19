@@ -1,0 +1,70 @@
+DOCUMENT:Q198042  14-NOV-2000  [word97]
+TITLE   :WD97: Spelling and Grammar Checkers Do Not Flag Single Letters
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbproof winword word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Neither the Spelling command nor the Grammar command flags a single letter as a
+misspelled word, regardless of case. For example, in the following sentence
+
+   Now is the time f R all good men to come to the aid...
+
+the spelling and grammar checkers do not flag either character (f or R) as a
+spelling or grammar error.
+
+CAUSE
+=====
+
+Word does not flag a single letter, because it is considered an intentional
+action (for example, a heading of an index section). However, if you have two
+single letters, such as f and f (separated by a space), Word flags the second
+letter, regardless of case, because Word flags duplicate (repeated) words.
+
+WORKAROUND
+==========
+
+The AutoCorrect feature can be used to change an entry if it is a typical
+misspelling. For example, an entry of "t" can be automatically changed to "to"
+from the Tools menu by selecting AutoCorrect and adding "t" to the "Replace Text
+as You Type" dialog box.
+
+NOTE: In the example of this article, you can create an AutoCorrect entry to
+insert the word "for" instead of the f and a space; however, Word does not flag
+"R" as a misspelling or grammatical error. There is no good workaround for this
+type of problem.
+
+Additional query words: CD speller checking misses missed caught catch squiggly red wavy line proofing alphabet spellcheck single letters tools
+
+======================================================================
+Keywords          : kbproof winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

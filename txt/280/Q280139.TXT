@@ -1,0 +1,57 @@
+DOCUMENT:Q280139  12-JUN-2001  [sna]
+TITLE   :TN3270 Print Session Connection Fails on Non-default Port
+PRODUCT :Microsoft SNA Server
+PROD/VER::3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+OPER/SYS:
+KEYWORDS:kbDSupport _IK sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbhis2000
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0 SP1, 3.0 SP2, 3.0 SP3, 3.0 SP4, 4.0, 4.0 SP1, 4.0 SP2, 4.0 SP3 
+ - Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The session properties page for a TN3270 Logical Unit (LU) allows the LU to be
+configured for a port other than the default of 23. If the session is configured
+for a type of "Display," the connection works as expected. If the session is
+configured for a type of "Printer," the session connects only if it is set to
+use the default port. If the TN3270 server is set for another port, a printer
+session will connect on that, and only that, configured port.
+
+MORE INFORMATION
+================
+
+This is by design.
+
+In Host Integration Server (HIS) 2000, which is the successor to Microsoft SNA
+Server, the option to choose another port is unavailable (gray) if a type of
+Printer is selected.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport _IK sna4 kbsna400sp1 kbsna400sp2 kbsna400sp3 kbhis2000 
+Technology        : kbAudDeveloper kbSNAServSearch kbHostIntegServ2000 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ400SP2 kbSNAServ400SP3 kbSNAServ300SP2 kbSNAServ300SP4
+Version           : :3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

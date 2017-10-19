@@ -1,0 +1,88 @@
+DOCUMENT:Q173648  09-JAN-2000  [vbwin]
+TITLE   :HOWTO: Updating an Oracle Table Using DBGrid and RDO
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:kbVBp500 kbGrpDSVBDB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+One way to set up a connection to Oracle and modify the data is by using the
+Microsoft Data Bound Grid. The steps listed below allow the user to accomplish
+this task. This example uses a DSN-less connection.
+
+MORE INFORMATION
+================
+
+1. Create a new Standard EXE project in Visual Basic.
+
+2. On the Project menu, click Components and select "Microsoft Data Bound Grid
+   Control." Also, click "Microsoft RemoteData Control 2.0." (NOTE: This adds
+   two new icons to the toolbar for the RemoteData Control and DBGrid.)
+
+3. On the Project menu, click References, and click "Microsoft Remote Data
+   Object 2.0."
+
+4. Place a DBGrid, RemoteData Control, and a command button on the form.
+
+5. Select the DBGrid, and set the DataSource property to "MSRDC1", which is the
+   default name of the RemoteData Control. Also ensure the AllowUpdate property
+   is True (default), and if adding new records set AllowAddNew property to True
+   (default is False).
+
+6. Add the following code to the click event of the command button:
+
+         Dim myenv as rdoEnvironment
+         Dim mycn as rdoConnection
+         Dim mydsnless as String
+         Dim mysql as String
+
+         mydsnless = "driver={Microsoft ODBC Driver for Oracle};" _
+            "Uid=pss; Pwd=pss;ConnectString=tns:ncoracle73;" _
+
+         Set myenv = rdoEnvironments(0)
+         Set mycn = myenv.OpenConnection("",false,rdDriverPrompt,mydsnless)
+
+         mysql = "Select * from demo.customer"
+
+         Set Form1.MSRDC1.Resultset = mycn.OpenResultset(mysql,rdOpenKeyset, _
+             rdConcurRowVer)
+
+         Debug.Print mycn.Connect  ' Display the connection string
+
+7. Run the form, change a value in the Grid, and move off the row to update.
+
+In the steps above, the driver being used is the Microsoft Oracle driver. You
+need to modify Uid, Pwd, and ConnectString to fit your ODBC setup.
+
+Additional query words: remote data
+
+======================================================================
+Keywords          : kbVBp500 kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB500
+Version           : WINDOWS:5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

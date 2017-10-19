@@ -1,0 +1,187 @@
+DOCUMENT:Q231454  11-JUN-2002  [winnt]
+TITLE   :Installing Windows NT If You Receive "Out of Memory" Errors
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+When you install multiple programs during an unattended Setup of Windows NT, you
+may receive an "out of virtual memory" error message.
+
+CAUSE
+=====
+
+The graphical user interface (GUI) mode portion of the installation is running a
+32-bit kernel. When a batch file is run in this environment, the behavior is
+different than under MS-DOS. In MS-DOS, each command within the batch file runs
+in sequence, with each command completing before the next begins. In a 32-bit
+operating system, all commands run in parallel, which means a command runs even
+if a previous command is not finished running.
+
+You can use a batch file to start Setup to install programs. You can initiate the
+batch file from the Cmdlines.txt file during the GUI mode portion of Setup. When
+run in parallel, these installation programs can use up all available memory and
+virtual memory, which may result in "out of virtual memory" error messages
+during GUI-mode Setup.
+
+These error messages stop the unattended installation and an operator must clear
+them. Windows NT Setup usually continues and finishes after these error messages
+are cleared. However, it is possible that the entire unattended installation may
+not work, or that one of the programs may not be set up correctly.
+
+During an unattended installation, the Windows NT kernel is operating with a
+default pagefile size of 15 MB. If necessary, you can change this value before
+you start the unattended installation by editing the default system registry
+hive included in the Windows NT source files. By increasing this value, you may
+prevent the "out of virtual memory" error messages.
+
+RESOLUTION
+==========
+
+You can easily eliminate this problem by using the start and /wait options in
+your batch file in front of each program. This ensures that events happen in a
+specific order and finish before the next event starts. For example:
+
+   my_app.bat
+
+   start /wait my_application1
+   start /wait my_application2
+
+The start command syntax is shown in the following example:
+
+   start ["title"] [/dpath] [/i] [/min] [/max] [/separate | /shared]
+   [/low | /normal | /high | /realtime] [/wait] [/b] [command/program]
+
+Parameters
+----------
+
+   "title" - Title to display in the title bar.
+
+   path - Starting directory.
+
+   i - The new environment is the original environment passed to Cmd.exe and not
+   the current environment.
+
+   min - Start window is minimized.
+
+   max - Start window is maximized.
+
+   separate - Start 16-bit Windows program in separate memory space.
+
+   shared - Start 16-bit Windows program in shared memory space.
+
+   low - Start program in the Idle priority class.
+
+   normal - Start program in the Normal priority class.
+
+   high - Start program in the High priority class.
+
+   realtime - Start program in the Realtime priority class.
+
+   wait - Start program and wait for it to stop.
+
+If the start and /wait options do not completely resolve the problem, use the
+following steps to increase the amount of virtual memory available during
+unattended Setup.
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+NOTE: This workaround does not work if you are using the CD-ROM as a distribution
+share because you cannot edit the file on the CD-ROM.
+
+1. In the source files folder on your computer running Windows NT 4.0 Server or
+   Windows NT 4.0 Workstation, click to clear the read-only attribute on the
+   System file.
+
+   NOTE: If you are installing Windows NT Server 4.0, Terminal Server Edition,
+   this file is compressed and is named "System._". Use the following steps to
+   decompress and use the file:
+
+   a. At a command prompt, type the following command:
+
+   expand system._ system
+
+   b. Rename the System._ file to System.old.
+
+2. Click Start, click Run, type "regedt32" (without the quotation marks), and
+   then click OK.
+
+3. Click the HKEY_LOCAL_MACHINE registry key.
+
+4. On the Registry menu, click Load Hive.
+
+5. In the Open File box, point to the System file in your source files folder,
+   and then click Open.
+
+6. When you are prompted, type a unique, temporary name for this hive (for
+   example, Temp), and then click OK.
+
+7. Locate the following registry key:
+
+   HKEY_LOCAL_MACHINE\Temp\ControlSet001\Control\Session Manager\Memory
+   ManagementPagingFiles:REG_MULTI_SZ:?:\pagefile.sys 15 60
+
+8. Change the key to read what you want your default installation pagefile size
+   to be (in other words, 32 MB). For example:
+
+   HKEY_LOCAL_MACHINE\Temp\ControlSet001\Control\Session Manager\Memory
+   ManagementPagingFiles:REG_MULTI_SZ:?:\pagefile.sys 32 60
+
+9. Click the Temp key.
+
+10. On the Registry menu, click Unload Hive.
+
+11. Quit Registry Editor.
+
+12. Proceed with your unattended installation.
+
+REFERENCES
+==========
+
+For additional information about loading and unloading hives, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q165748 How to Disable a Service or Device that Prevents NT from Booting
+
+Additional query words: fail fails page file
+
+======================================================================
+Keywords          : kbenv kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

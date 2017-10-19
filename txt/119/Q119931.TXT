@@ -1,0 +1,59 @@
+DOCUMENT:Q119931  10-JUN-1999  [homegame]
+TITLE   :Space: Setup Fails on Disk 2
+PRODUCT :Microsoft Home Games
+PROD/VER:MS-DOS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Space Simulator for MS-DOS, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Setup program for Microsoft Space Simulator may fail when requesting Disk 2.
+
+MORE INFORMATION
+================
+
+The Setup program may continue prompting for Disk 2 even after it has been
+inserted properly.
+
+This will occur if SHARE.EXE is loaded on the system and Microsoft Space
+Simulator Disk 1 is write protected.
+
+To correct this problem, disable the write protection on Space Simulator Disk 1.
+
+During the Microsoft Space Simulator installation process, the Setup program
+writes information to the SETUP.INI file on Disk 1. If Disk 1 is write
+protected, the Setup program is not able to write changes to the SETUP.INI file,
+and it leaves the file with an Open status. If a file on a floppy disk has an
+Open status, SHARE.EXE will not allow the disk change to occur properly.
+
+Additional query words: 1.00 spacesim ssim ss1 dos
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbZNotKeyword3 kbSpaceSim100DOS
+Version           : MS-DOS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

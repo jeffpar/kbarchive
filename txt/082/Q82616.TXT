@@ -1,0 +1,55 @@
+DOCUMENT:Q82616  30-JUL-2001  [win3x]
+TITLE   :SoundBlaster Pro Card Emits Noise Upon Windows Exit
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+When the Microsoft Windows operating system version 3.1 is exited, the
+SoundBlaster Pro card sometimes emits a screeching noise.
+
+The noise can be temporarily stopped by running the FMOrgan program that comes
+with the SoundBlaster card. FMOrgan is an MS-DOS application utilizing the
+synthesizer that comes with the SoundBlaster card.
+
+To ensure proper use of the SoundBlaster Pro card, do not use the Ad Lib driver.
+
+MORE INFORMATION
+================
+
+The noise is caused by setting the Ad Lib chip into "Wave-Select" mode.
+
+
+The Ad Lib driver will set the synthesizer in Wave-Select mode each time a
+"warm-reset" is issued. This occurs each time the Ad Lib driver is enabled and
+opened. On some machines (Gateway 486/33 with the SoundBlaster Pro), the Ad Lib
+chip causes random voices to make noise.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 3.10 3.11 3.1
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

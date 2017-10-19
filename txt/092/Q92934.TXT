@@ -1,0 +1,81 @@
+DOCUMENT:Q92934  20-NOV-1999  [accother]
+TITLE   :Installing Workgroup Connections to a Floppy Disk
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Workgroup Connections, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is possible to install Microsoft Workgroup Connections, without Microsoft
+Mail, to a 1.2-megabyte (MB) or 1.44-MB floppy disk. Workgroup Connections and
+the required MS-DOS files necessary to make the disk bootable require
+approximately 1.1 MB. On a 1.2-MB disk, you have approximately 50K free disk
+space after installing Workgroup Connections.
+
+MORE INFORMATION
+================
+
+Contents AUTOEXEC.BAT File Created
+----------------------------------
+
+SET PATH=A:\DOS
+A:\DOS\net start
+
+Contents CONFIG.SYS File Created
+--------------------------------
+
+device=A:\DOS\protman.dos /i:A:\DOS
+device=A:\DOS\workgrp.sys
+device=A:\DOS\<driver>.dos
+LASTDRIVE=Z
+
+Files Put in the \DOS Directory on Drive A
+------------------------------------------
+
+CONNECT  TXT
+<driver> DOS
+NCDINFO  INI
+NET      EXE
+NET      MSG
+NETH     MSG
+NETWORK  INF
+PROTMAN  DOS
+PROTMAN  EXE
+PROTOCOL 001
+PROTOCOL INI
+SETUP    EXE
+SETUP    INF
+SYSTEM   INI
+WORKGRP  SYS
+
+Additional query words: 1.0 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWFWSearch kbWFW310
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

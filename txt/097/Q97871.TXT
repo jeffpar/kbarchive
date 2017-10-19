@@ -1,0 +1,41 @@
+DOCUMENT:Q97871  30-JUL-2001  [lanman]
+TITLE   :LAN Manager Limits Number of ACLs on a FAT Partition
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+With LAN Manager 1.01, there is a limit on the number of ACLs which can be
+created on a FAT partition. LAN Manager 2.x addresses this problem by providing
+HPFS386 and ACLs stored in the file system, rather than in NET.ACC, but you can
+encounter the LAN Manager 1.x limit with non-HPFS386 ACLs in version 2.x also.
+
+
+You can work around this by using default (drive) permissions to set up the most
+common access permissions, then using ACLs only for exceptions to these default
+permissions. Drive permissions are not available for HPFS386 drives.
+
+Additional query words: 2.00 2.10 2.10a 2.20
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

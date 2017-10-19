@@ -1,0 +1,68 @@
+DOCUMENT:Q262982  20-OCT-2000  [exchange]
+TITLE   :XCON: In Multiple Domain Setups NDRs All Originate from 1 Domain
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Exchange Server Organizations with multiple domains set up, Non Delivery
+Receipts (NDRs) may appear to originate from a single domain. If this is
+unacceptable, you can apply Least Cost Routing, but in some cases this does not
+work as expected.
+
+CAUSE
+=====
+
+The Least Cost Routing feature is only enabled in Exchange Server Service Pack 3
+or later.
+
+RESOLUTION
+==========
+
+To resolve this problem, apply Exchange Server SP 3. If you are already running
+SP 3 or later and you are still experiencing the same problem, follow these
+steps:
+
+1. Stop all services.
+
+2. Reapply Exchange Server SP 3, unless subsequent service packs have been
+   applied, at which point these will need to be removed before reapplying
+   Exchange Server SP 3.
+
+3. Reapply subsequent service packs if you need to.
+
+4. Restart services.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

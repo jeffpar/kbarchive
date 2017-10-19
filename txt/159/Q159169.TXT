@@ -1,0 +1,79 @@
+DOCUMENT:Q159169  31-JUL-2001  [sms]
+TITLE   :SMS: Quick Viewer Hotkey Causes Keyboard Problems on Client
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbtshoot smsremtshoot kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If the hotkey sequence 'Left SHIFT+ESC' is used to quit the Quick Windows Viewer
+when you remotely control a client computer running Windows NT, the client
+computer will act as if the SHIFT key is depressed. The following types of
+symptoms may be seen on the client:
+
+ - Typing at a command prompt displays uppercase letters.
+
+ - Clicking on desktop icons on a client computer running Windows NT 4.0 causes
+   multiple icons to be highlighted.
+
+ - The Exit command on an application's File menu does not function.
+
+ - The Logoff command on Program Manager's File menu does not function.
+
+ - Pressing CTRL+ALT+DEL does not bring up the Windows NT Security dialog box.
+
+Depressing the SHIFT key once on the client computer's keyboard returns the
+client to normal.
+
+CAUSE
+=====
+
+Although the key sequence Left SHIFT+ESC was only meant for the Quick Windows
+Viewer on the Administrator computer, it is also put into the keyboard buffer on
+the client computer running Windows NT. This causes the symptoms listed above.
+
+WORKAROUND
+==========
+
+Do not use the 'Left SHIFT+ESC' hotkey sequence; instead, use the Close command
+on the Control menu of the Quick Windows Viewer to quit the Viewer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodsms shortcut desktop sticking stuck
+
+======================================================================
+Keywords          : kbnetwork kbtshoot smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

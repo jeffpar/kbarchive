@@ -1,0 +1,66 @@
+DOCUMENT:Q127728  10-NOV-1999  [pcmail]
+TITLE   :X400: TP4 Stack Not Compatible with WFWG MS-DOS Client
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to X.400, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Mail Gateway to X.400 may hang upon startup and display the
+following:
+
+   Gateway initializing...
+
+CAUSE
+=====
+
+The TP4 stack provided by the Microsoft Mail Gateway to X.400 is not compatible
+with the Windows for Workgroups MS-DOS client drivers.
+
+RESOLUTION
+==========
+
+Use the Microsoft LAN Manager version 2.2c drivers with TP4. These drivers are
+supplied with Windows NT version 3.5 (CD).
+
+MORE INFORMATION
+================
+
+The MS-DOS client drivers use IFSHLP.SYS to load network software. This assumes
+that the drivers will be loaded when NET START is called.
+
+For the TP4 stack to work properly, it needs to load a Data Link Interface
+(DLI.DOS) driver in CONFIG.SYS. Then TP4 requires the TP4 stack (TP4.EXE) to get
+loaded before a NET START.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGatex400320
+Version           : MS-DOS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

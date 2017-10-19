@@ -1,0 +1,65 @@
+DOCUMENT:Q156518  13-JUN-2001  [crossnet]
+TITLE   :Minimized Internet Explorer Remains on Taskbar
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::3.0,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Explorer version 3.0 for Windows NT 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+With Internet Explorer 3.0, if you load an HTML page that contains frames and
+then click a hyperlink to a Microsoft Word Document and the file loads inside
+one of the frames, if you then minimize IE to the Taskbar and try to click it to
+bring it back to a windowed view it will remain on the Taskbar.
+
+RESOLUTION
+==========
+
+When the item is on the Taskbar, right-click the item and select either Restore
+or Maximize. Internet Explorer will expand to a window view. You can also use
+Alt+Tab to bring Internet Explorer to the foreground.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Explorer version 3.0.
+We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+This problem does not occur with Internet Explorer 3.0 running on Windows95.
+This occurs only if frames are used on the HTML page.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbIEsearch kbZNotKeyword2 kbIENT400Search kbZNotKeyword3 kbIE300WinNT400
+Version           : :3.0,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

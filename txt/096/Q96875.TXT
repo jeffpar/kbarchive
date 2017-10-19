@@ -1,0 +1,58 @@
+DOCUMENT:Q96875  19-NOV-1999  [msdos]
+TITLE   :Backup Not Compatible with Norton Backup Sets
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft does not support retrieving and comparing data created with Norton
+Backup.
+
+
+MORE INFORMATION
+================
+
+Microsoft Backup uses Microsoft DoubleSpace compression technology developed
+specifically for MS-DOS 6.0. This compression engine replaces the compression
+engine technology in Norton Backup, making the two backup sets incompatible.
+
+Microsoft Backup complies with the Microsoft Real Time Compression Interface
+(MRCI), which allows it (without further modification) to use a hardware
+implementation of the DoubleSpace compression server (if one is present).
+
+Although it is possible to create backups without compression, Microsoft does not
+support exchanging backup sets with the Norton Backup program.
+
+
+Additional query words: 6.00 msbackup mwbackup
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

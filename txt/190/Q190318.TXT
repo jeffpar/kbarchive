@@ -1,0 +1,77 @@
+DOCUMENT:Q190318  17-APR-2001  [foxpro]
+TITLE   :PRB: BINTOC() Fails with SET COLLATE TO "GENERAL"
+PRODUCT :Microsoft FoxPro
+PROD/VER::5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When creating an index using the BINTOC() function, with the COLLATE set to
+GENERAL, the following error occurs:
+
+   Uniqueness of index <index name> is violated.
+
+RESOLUTION
+==========
+
+When you create an index using BINTOC, use "SET COLLATE TO MACHINE". In
+addition, when you create an index based on a NOCPTRANS field (binary character
+field), use "SET COLLATE TO MACHINE" or the same problem described earlier
+occurs.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Run the following sample code:
+
+      CREATE TABLE test (id I, other I)
+      FOR lni = 1 TO 10
+         INSERT INTO test (id ) VALUE (lni)
+      ENDFOR
+      SET COLLATE TO ""
+      INDEX ON BINTOC(id) TAG id CANDIDATE  && Index successful.
+      SET COLLATE TO "GENERAL"
+      INDEX ON BINTOC(id) TAG idG CANDIDATE && Index fails.
+
+The last line of code fails with the error message described previously.
+
+Additional query words: kbvfp600
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : :5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

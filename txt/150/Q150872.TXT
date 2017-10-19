@@ -1,0 +1,71 @@
+DOCUMENT:Q150872  31-JUL-2001  [win95x]
+TITLE   :Setup Does Not Run ScanDisk from Windows 3.1 Standard Mode
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:scandisk win95 kbScanDisk
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Windows 95 Setup from Microsoft Windows 3.1 in standard mode,
+ScanDisk is not invoked.
+
+CAUSE
+=====
+
+Windows 95 Setup cannot start ScanDisk in a virtual machine from Windows 3.1
+running in standard mode.
+
+RESOLUTION
+==========
+
+To ensure that Windows 95 Setup invokes ScanDisk, use either of the following
+methods:
+
+ - Start Windows 3.1 in 386 enhanced mode, then start Windows 95 Setup
+
+ - Quit Windows 3.1 and run Windows 95 Setup from MS-DOS.
+
+MORE INFORMATION
+================
+
+Even though ScanDisk is not invoked by Windows 95 Setup when Setup is run from
+Windows 3.1 in standard mode, Windows 95 Setup still checks for cross-linked
+files.
+
+Windows 95 can successfully upgrade a computer running Windows 3.1 in standard
+mode. However, you may experience instability or the inability to run Windows 95
+if there is pre-existing file or disk damage. Note that the computer may not be
+able to run Windows 95 due to hardware limitations if it cannot run Windows 3.1
+in 386 enhanced mode.
+
+Additional query words: corruption
+
+======================================================================
+Keywords          : scandisk win95 kbScanDisk 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

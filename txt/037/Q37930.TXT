@@ -1,0 +1,57 @@
+DOCUMENT:Q37930  09-NOV-1999  [macmail]
+TITLE   :Mac DOS: Printing Mail Messages from the Mailbox
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER::3.0,3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, MS-DOS workstation, versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Mail MS-DOS workstation allows you to print your Mail messages to
+a local printer connected to your computer or to an Apple LaserWriter on the
+AppleTalk network. To print a mail message, do the following:
+
+1. From the File menu, choose Printer Setup.
+
+2. In the Connect To: dialog box, select the communications port to which your
+   printer is connected or select the appropriate LaserWriter printer within a
+   given zone. Communications ports currently available will be displayed in
+   dark type. Press ENTER or choose the OK button to run the command.
+
+3. From the Summary window, select the message and choose Print from the File
+   menu.
+
+   -or-
+
+   From the Read Message window, choose the Print button.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailATN300DOS kbMailATN310DOS
+Version           : :3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

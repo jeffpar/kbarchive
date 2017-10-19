@@ -1,0 +1,146 @@
+DOCUMENT:Q222947  08-MAY-2002  [sna]
+TITLE   :COMTI: Allow Use Of Already Verified and Application Override
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:4.0,4.0 SP2,4.0SP1,4.0SP2
+OPER/SYS:
+KEYWORDS:kbsna400sp3fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft COM Transaction Integrator for CICS and IMS, version 4.0 SP2 
+ - Microsoft SNA Server, versions 4.0, 4.0SP1, 4.0SP2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you enable user or package-level security in the Remote Environment on the
+Security tab within the COM Transaction Integrator Manager, the following
+security options may be selected, but are not currently designed to function
+together:
+
+ - Allow application to override selected authentication
+
+ - Use Already Verified or Persistent Verification authentication
+
+Because of a non-trusted domain architecture, a customer was unable to deploy the
+SNA Server Host Security Integration feature, and wanted their application to
+supply the host user ID and password credentials. This is possible by selecting
+the "Allow application override" option. But, if this option is selected along
+with "Already Verified or Persistent Verification", the application-supplied
+credentials are ignored, and the user ID and password are sent to the host. It
+was requested that both options to be allowed to work together. Prior to this
+update, the use of the COMTI "Already Verified or Persistent Verification" check
+box required that the SNA Server Host Security Integration feature had been
+deployed.
+
+CAUSE
+=====
+
+These security options were not designed to work together, because this would
+allow a user application to provide any arbitrary host user ID on a host
+request, which the host would accept if the CICS region is defined with
+Attachsec=Identify. By allowing "Identify" security, CICS will accept requests
+with only the host user ID being provided in the user request, without requiring
+host verification of the host password.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for SNA Server version
+4.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q215838 How to Obtain the Latest SNA Server Version 4.0 Service Pack
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server 4.0, 4.0 SP1 and 4.0
+SP2. This problem was first corrected in SNA Server version 4.0 Service Pack 3.
+
+MORE INFORMATION
+================
+
+When COM Transaction Integrator is configured to support both of these security
+options and this update is applied, the following behavior occurs.
+
+If the host is configured to accept "Already Verified" security:
+
+1. Within the CICS region, "Attachsec=Identify" allows CICS to accept requests
+   with only the user ID provided by the application.
+
+2. The COM application provides a user ID when invoking the COM object
+   associated with their host transaction.
+
+3. COMTI accepts the user ID, converts it to EBCDIC, and calls MC_ALLOCATE with
+   the user ID and security=AP_SAME. The Wappc32.dll detects that the host BIND
+   allows FMH-5 Attach requests with the "already verified" indicator set
+   (within byte 23 of the BIND request), and formats the FMH-5 with the "already
+   verified" indicator and the user ID security vector (but no password vector).
+
+4. The host accepts the user ID only, and executes the transaction.
+
+If the host is configured to accept "Persistent Verification" security:
+
+ - Within the CICS region, "Attachsec=Persistent" is configured. See the
+   following article in the Microsoft Knowledge Base for other host
+   configuration settings required to enable persistent verification:
+
+   Q222565 SNA Server Caches User in PV Signed-On List if Attach Fails
+
+ - The COM application provides a user ID and password when invoking the COM
+   object associated with their host transaction.
+
+ - COMTI accepts the user ID and password, converts it to EBCDIC, and calls
+   MC_ALLOCATE with the user ID and password, with security=AP_SAME. The
+   Wappc32.dll detects that the host BIND allows FMH-5 Attach requests with
+   "persistent verification" (within byte 23 of the BIND request), and formats
+   the FMH-5 with the "PV sign-on requested" bit along with both the user ID and
+   password security vectors.
+
+ - SNA Server accepts the FMH-5 Attach from the Wappc32.dll, and checks the SNA
+   Server internal PV signed-on cache to determine if the user has previously
+   signed on to the host using persistent verification. If not, the FMH-5 Attach
+   is provided to the host, with the "PV sign-on requested" bit set, and the
+   user is added to the SNA Server PV signed-on list. If the user has previously
+   signed on using persistent verification, the password is removed from the
+   FMH-5 Attach, and the "PV already signed-on" bit is set, then the FMH-5 is
+   sent to the host.
+
+ - The host accepts the FMH-5 Attach, containing the PV indicator and security
+   credential.
+
+NOTE: For more information about persistent verification, see the following
+article in the Microsoft Knowledge Base:
+
+   Q198179 Enabling an APPC/CPIC Program to Use Persistent Verification
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsna400sp3fix 
+Technology        : kbAudDeveloper kbSNAServSearch kbCOMTISearch kbCOMTI400SP2 kbSNAServ400
+Version           : WINDOWS:4.0,4.0 SP2,4.0SP1,4.0SP2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

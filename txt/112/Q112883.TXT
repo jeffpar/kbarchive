@@ -1,0 +1,73 @@
+DOCUMENT:Q112883  10-NOV-1999  [macmail]
+TITLE   :CONN: MACGATE Needs Separate Mappings for DATA and EXE
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER::1.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Connection Gateway, version 1.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Successfully running MACGATE.EXE requires separate drives or drive mapping to
+the postoffice database (..\MAILDATA) and the executable directory (..\MAILEXE)
+containing the four MS-DOS executables needed by the Microsoft Mail Connection
+version 1.0b (MACGATE.EXE, MACGET.EXE, MACPUT.EXE, and IMPORT.EXE).
+
+When you run MACGATE.EXE, the executable directory must be the current
+directory.
+
+If you attempt to run MACGATE.EXE from a directory other than the executable
+directory or if you do not have a separate drive mapping for the data and
+executables you get an error similar to this:
+
+   Error running FFAPI program: No such file or directory
+   Bad parameter value. (110)
+   : 74
+   exiting on (date time) with status 74 (118)
+
+Or if the executable directory is pathed:
+
+   IMPORT.EXE not found. Check executable path or copy from distribution
+   diskette.
+   exiting on (date time) with status 81 (118)
+
+If you have only one drive mapping and try to run MACGATE.EXE with all other
+parameters and settings correct, your current directory would change to
+..\MAILDATA and you would get one of the above errors. For example,
+
+   M:\MAILEXE> macgate
+
+would result in one the above errors followed by:
+
+   M:\MAILDATA>
+
+
+Additional query words: 1.00b
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailConn100b
+Version           : :1.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

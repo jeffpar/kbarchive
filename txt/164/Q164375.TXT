@@ -1,0 +1,62 @@
+DOCUMENT:Q164375  20-DEC-1999  [homemm]
+TITLE   :Cinemania/Music Central 97: Connections Link Fails To Download
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1997 edition
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Cinemania for Windows 1997 edition 
+ - Microsoft Music Central for Windows 1997 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click the Connections link to manually download the connections file,
+you see a Web page filled with numbers and codes. You are not given the option
+to download the file.
+
+CAUSE
+=====
+
+The file extension used by Connections (.M7W or .C7W) is a registered file type.
+Microsoft Internet Explorer 3.0 recognizes this as a data file and displays the
+contents of the file.
+
+RESOLUTION
+==========
+
+To download the file, use your right mouse button to click the Connections link,
+and then click Save Target As.
+
+To avoid this problem, use the "Bring Me Up to Date" feature instead of manually
+downloading the Connections file. This feature is available in the program, or
+via a link on the Web site.
+
+Additional query words: 97 multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbCineManiaSearch kbCinemania1997 kbMusicCentral kbMusicCentral1997
+Version           : :1997 edition
+Hardware          : x86
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

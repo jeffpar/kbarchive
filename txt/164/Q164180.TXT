@@ -1,0 +1,66 @@
+DOCUMENT:Q164180  25-FEB-2002  [iis]
+TITLE   :Full App Event Log Prevents Virtual Root Enumeration & Indexing
+PRODUCT :Internet Information Server
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server version 1.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If the Application Event Log is full when the W3SVC service is started, Index
+Server may not enumerate and index virtual roots.
+
+CAUSE
+=====
+
+Index Server adds an event to the Application Event Log when it adds a virtual
+root to the list to be indexed. If the Event Log is full, Index Server will not
+add the root to the list to be indexed. Therefore, the catalog will not get
+updated, and the queries will return incorrect results.
+
+
+WORKAROUND
+==========
+
+To fix this issue, clear out the Application Event Log in Event Viewer.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Index Server version
+1.0. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ100
+Version           : :1.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,75 @@
+DOCUMENT:Q247784  11-JUN-2002  [visualc]
+TITLE   :INFO: '80020101' Returned From Some ActiveX Scripting Methods
+PRODUCT :Microsoft C Compiler
+PROD/VER::5.0,5.0sp1,5.0sp2,5.0sp3,6.0
+OPER/SYS:
+KEYWORDS:kbAXScript kbVC500 kbVC600 kbGrpDSO kbDSupport kbActiveXScript
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Professional Edition, versions 5.0, 5.0sp1, 5.0sp2, 5.0sp3, 6.0 
+ - Microsoft Visual C++.NET (2002) 
+-------------------------------------------------------------------------------
+
+NOTE: Microsoft Visual C++ NET (2002) supported both the managed code model that is provided by the .NET Framework and the unmanaged native Windows code model. The information in this article applies to unmanaged Visual C++ code only.
+
+SUMMARY
+=======
+
+When using the ActiveX Scripting interfaces to host an ActiveX Script Engine,
+the following methods may return an undocumented error code 0x80020101:
+
+ - IActiveScriptParse::ParseScriptText
+
+-and
+
+ - IActiveScript::InterruptScriptThread
+
+The HRESULT 0x80020101 translates to SCRIPT_E_REPORTED. This error can be
+observed when a scripting component fails under MTS.
+
+MORE INFORMATION
+================
+
+When an ActiveX Script Engine, such as VBScript or JScript, encounters an error
+it attempts to report the error to its script host by calling the following
+methods:
+
+ - IActiveScriptSite::OnScriptError
+
+-or
+
+ - IActiveScriptSiteDebug::OnScriptErrorDebug
+
+After one of these methods is called, the script engine must also return an
+HRESULT from the method that was called when the error occurred. To warn the
+script host that the error has already been reported, and to ensure that a
+single error does not result in more than one notification, the script engine
+returns SCRIPT_E_REPORTED. This indicates that the error has already been
+handled and the host need not take further action.
+
+Additional query words: 0x80020101
+
+======================================================================
+Keywords          : kbAXScript kbVC500 kbVC600 kbGrpDSO kbDSupport kbActiveXScript 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC600 kbVC32bitSearch kbVC500SP1 kbVC500SP2 kbVC500SP3 kbVCNET kbVC500Search
+Version           : :5.0,5.0sp1,5.0sp2,5.0sp3,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

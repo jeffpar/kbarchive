@@ -1,0 +1,67 @@
+DOCUMENT:Q141426  08-NOV-2001  [homemm]
+TITLE   :Dangerous Creatures: Sound Distortion When You Click Back
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dangerous Creatures for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Dangerous Creatures, you hear a slight sound distortion prior to hearing new
+sounds and narration when you click Back after you have made jumps to new
+articles.
+
+The sound distortion is minor and does not affect all articles.
+
+RESOLUTION
+==========
+
+To resolve this problem, do the following:
+
+1. On the main article menu, click Options. The option is located at the bottom
+   of the screen.
+
+2. Click Sounds.
+
+3. Remove the check mark from the Sound Effects box. The check mark indicates
+   Sound Effects are active.
+
+   NOTE: Removing the check mark turns off all the Dangerous Creatures background
+   sound effects. This does not affect the narrations associated with different
+   articles, however, the sound effects are a major portion of the program. It
+   is recommended that you leave the option turned on.
+
+4. Click OK.
+
+5. Close the Options dialog box.
+
+Additional query words: multi media multimedia multi-media mmtitles kbmm fuzzy blurry blurred buzz noise washed-out garbled silent quiet none black focus
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbZNotKeyword kbDangerousCreaturesMac
+Version           : MACINTOSH:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,74 @@
+DOCUMENT:Q141478  30-JUL-2001  [visualc]
+TITLE   :FIX: Floating Toolbars Disappear in Developer Studio
+PRODUCT :Microsoft C Compiler
+PROD/VER::4.0,4.1,4.2
+OPER/SYS:
+KEYWORDS:kbui kbide kbVC kbVC400bug kbVC410bug kbVC420bug kbVC500fix kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 4.0, 4.1, 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An undocked or floating toolbar may disappear when you minimize and restore
+Developer Studio.
+
+RESOLUTION
+==========
+
+On the View menu, click Toolbars. In the Toolbars dialog box, clear the
+selections and then reselect the toolbar you want to restore it.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ version 5.0.
+
+MORE INFORMATION
+================
+
+This problem has primarily been reported on Risc platforms. One way to
+demonstrate the problem on an Intel platform is to follow these steps:
+
+1. Using a default AppWizard-generated application, set a breakpoint in the
+   OnAppAbout() message handler.
+
+2. Start debugging by pressing F5.
+
+3. Make sure you have the Debug toolbar visible and floating.
+
+4. Minimize Visual C++.
+
+5. On your application's Help menu, click About. When Visual C++ is restored the
+   Debug toolbar will not be visible.
+
+Additional query words: kbVC400bug
+
+======================================================================
+Keywords          : kbui kbide kbVC kbVC400bug kbVC410bug kbVC420bug kbVC500fix kbGrpDSTools 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420
+Version           : :4.0,4.1,4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

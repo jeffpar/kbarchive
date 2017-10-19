@@ -1,0 +1,84 @@
+DOCUMENT:Q304607  18-FEB-2002  [vbwin]
+TITLE   :PRB: Visual Basic Doesn't Load .ocx When Starting Visual Basic
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to open a new Visual Basic 6.0 project (such as a Standard EXE
+project), you receive the following error message:
+
+   Failed to load control image list mscomctl.ocx
+
+When you click Continue in the dialog box, the Visual Basic integrated
+development environment (IDE) closes the application.
+
+CAUSE
+=====
+
+When the Visual Basic IDE is being loaded, the control image list file
+Mscomctl.ocx does not load. This problem can occur when the the default
+temporary folder contains a large number of files (for example, more than 65,000
+files).
+
+RESOLUTION
+==========
+
+Delete all temporary files in the default temporary file folder.
+
+To locate your default temporary files, and then delete them, follow these
+steps:
+
+1. On the Start menu, click Run.
+
+2. In the Run dialog box, type "%TEMP%" (without the quotation marks), and then
+   click OK.
+
+3. A window opens that displays your temporary files; select the files you want
+   to delete.
+
+4. Press the DELETE key, click Yes to confirm the deletion, and then close the
+   Temp window.
+
+NOTE: You may receive a warning that any files that another program uses will not
+be deleted until you close the program that uses these files.
+
+MORE INFORMATION
+================
+
+Other files also may not load when Visual Basic IDE is being loaded, depending
+on the available space in the %Temp% folder.
+
+Additional query words: closure
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

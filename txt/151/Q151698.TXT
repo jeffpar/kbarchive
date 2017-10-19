@@ -1,0 +1,66 @@
+DOCUMENT:Q151698  12-JUN-2001  [sna]
+TITLE   :APPC DISPLAY Verb May Return Incorrect LU6.2 Session Info
+PRODUCT :Microsoft SNA Server
+PROD/VER::2.0,2.1,2.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server for Windows NT, versions 2.0, 2.1, 2.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When an Advanced Program-to-Program Communications (APPC) application calls the
+DISPLAY function and requests information on active LU6.2 sessions (using the
+sess_info structure), SNA Server may return incorrect Request/Response Unit (RU)
+sizes or pacing window sizes.
+
+CAUSE
+=====
+
+The SNA Server APPC DISPLAY function implements sess_info formatting incorrectly
+in some cases, namely, where the LU-SSCP session properties are returned with
+the mode name from the PLU-SLU session. This could cause the APPC application to
+retrieve RU sizes or pacing window sizes that do not match the actual values
+negotiated on the PLU-SLU BIND.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server 2.11 and 2.11 Service
+Pack 1. This problem was corrected in the latest Microsoft SNA Server 2.11 U.S.
+Service Pack. For information on obtaining the service pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ200NT kbSNAServ210NT kbSNAServ211NT
+Version           : :2.0,2.1,2.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

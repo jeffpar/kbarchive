@@ -1,0 +1,232 @@
+DOCUMENT:Q163425  11-JAN-2001  [word97]
+TITLE   :WD97: Macro Programming Resources
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbusage word8 kbwordvba word97kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains information about available resources for creating custom
+solutions using Visual Basic for Applications and Microsoft Word 97.
+
+MORE INFORMATION
+================
+
+Record a Macro and Examine the Code
+-----------------------------------
+
+The best resource for learning more about programming by using Visual Basic for
+Applications is to record a macro, and then to examine the code.
+
+To record a macro, follow these steps:
+
+1. On the Tools menu, point to Macro, and click Record New Macro.
+
+2. Enter a name for the macro in the Macro Name text box, and then click OK.
+
+3. Perform the actions that you want to learn more about.
+
+4. When you have completed the actions that you want to record, on the Stop
+   Recording toolbar, click the Stop Recording button.
+
+To view a recorded macro, follow these steps:
+
+1. On the Tools menu, point to Macro, and then click Macros.
+
+2. Find and select your recorded macro in the list of available macros.
+
+3. Click Edit.
+
+Available Web Site Resources
+----------------------------
+
+Microsoft Office Developer Web Site:
+
+   http://msdn.microsoft.com/office
+
+Microsoft Office Developer Support:
+
+   http://support.microsoft.com/support/officedev/
+
+Microsoft Public Newsgroups:
+
+   microsoft.public.word.word6-7macros microsoft.public.word.word97vba
+
+NOTE: For more information, please see the following Microsoft World Wide Web
+site:
+
+   http://www.microsoft.com/support
+
+Other Internet Web sites:
+
+WOW-Woody's Office Watch
+
+   http://www.wopr.com/
+
+   http://www.windowatch.com/wordbas.html
+
+   http://www.baarns.com/
+
+   http://www.primeconsulting.com/faqs
+
+   http://factt.utsa.edu/training/guide.htm
+
+Available Consultant Line Resources
+-----------------------------------
+
+Office Development Consulting (ODC):
+
+   Phone: (800) 936-5200 Microsoft Technical Support Office Developer Consult
+   Line provides extended custom support to customers for a one hour minimum
+   charge and an hourly rate thereafter. Office Developer Consulting provides
+   customers with access to extended custom support when the requirements exceed
+   the boundaries of product support.
+
+
+Microsoft Solution Providers:
+
+   Microsoft Solution Providers are independent organizations that have teamed
+   up with Microsoft to use technology to solve business problems for companies
+   of all sizes and industries.
+
+   To locate a Microsoft Solution Provider in your area, in the U.S. and Canada
+   call the Microsoft Sales Information Center at (800) 426-9400. If you are
+   outside the United States, contact your local subsidiary. To locate your
+   subsidiary, see the Microsoft World Wide Offices Web site at:
+
+   http://www.microsoft.com/worldwide/default.htm
+
+
+Microsoft Consulting Services (MCS):
+
+   Phone: (800) 426-9400 or (905) 712-0333 Technology Consulting Blueprints
+   provide flexible but well-defined road maps that you can follow to adopt
+   Microsoft products to meet your business needs. They help you determine the
+   scope for a project and provide you with details on the how best to
+   accomplish your objective (for instance, planning for Microsoft Exchange).
+
+   Custom Consulting helps you plan, build, and manage client-server solutions
+   based on Microsoft technology. If you are migrating to a client-server
+   environment from a host-based system, developing a mission-critical
+   application, or redesigning your network, MCS custom consultants work with
+   your IT staff and third parties to oversee Microsoft-based client-server
+   projects from design through implementation, providing quality assurance,
+   team management, and knowledge transfer.
+
+   Enterprise Program Managers, or EPMs, are senior level MCS consultants who
+   work long-term at your site, combining knowledge of your business with a
+   detailed understanding of Microsoft vision, technologies, and organization to
+   help you achieve a close fit between your systems environment and Microsoft
+   technology. The combination of extensive experience with close cooperation
+   puts EPMs in a unique position to create effective custom solutions that meet
+   your information technology and business goals.
+
+
+Books
+-----
+
+The Microsoft Office 97/Visual Basic Programmer's Guide:
+
+   Available with Office Developers Edition (ODE)
+
+   Bookstores
+
+   Through MS Press
+
+The Microsoft Office 97/Visual Basic Reference:
+
+   Bookstores
+
+   MS Press
+
+The Microsoft Office Object Model Guide:
+
+   Available with the Office Developers Edition (ODE)
+
+   http://www.microsoft.com/mspress/
+
+Online Help
+-----------
+
+For more information about Visual Basic for Applications, in Office Assistant,
+type "visual basic for applications" (without the quotation marks), and then
+click Search.
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If Office Help is not installed on your computer, please see
+the following article in the Microsoft Knowledge Base:
+
+   Q120802 Office: How to Add/Remove a Single Office Program or Component
+
+For information specific to Visual Basic for Applications, while in the Visual
+Basic for Applications Editor, click the Office Assistant, type the Visual Basic
+for Applications topic that you want, and then click Search.
+
+For information about the relationships of one object to another, use the Object
+Browser. In the Visual Basic or Applications Editor, click Object Browser on the
+View menu.
+
+For information about the Word Object Model, in the Visual Basic for Applications
+Editor, click the Office Assistant, type "object model" (without the quotation
+marks), and then click Search.
+
+The Microsoft Knowledge Base
+----------------------------
+
+For Visual Basic for Applications questions not relating to the Word object
+model, do not limit your query to Word. Many Microsoft Access, Microsoft Excel,
+or Visual Basic articles may apply to Visual Basic for Applications in Word.
+
+For information about Office 97 Visual Basic for Applications, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q163435 VBA: Programming Resources for Visual Basic for Applications
+
+The Knowledge Base is available from the following sources:
+
+   Internet Web site:
+
+   http://www.microsoft.com/support
+
+   MSN (The Microsoft Network)
+
+   MSDN (Microsoft Developers Network) CD
+
+
+The third-party contact information included in this article is provided to help
+you find the technical support you need. This contact information is subject to
+change without notice. Microsoft in no way guarantees the accuracy of this
+third-party contact information.
+
+Additional query words: wordcon 97
+
+======================================================================
+Keywords          : kbusage word8 kbwordvba word97 kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

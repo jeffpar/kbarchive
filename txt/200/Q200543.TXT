@@ -1,0 +1,80 @@
+DOCUMENT:Q200543  10-MAR-1999  [sms]
+TITLE   :SMS: PGC Status Setter - PGCSET32.EXE
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Pgcset32.exe is available in the BackOffice Resource Kit, and sets the Program
+Group Control (PGC) status in a batch file under Windows NT Workstation, Windows
+NT Server or Windows 95. It does this by setting the following registry key:
+
+HKEY_CLASSES_ROOT
+  \SMS
+    \APPLICATIONS
+      \regname
+        \CONFIGURATION
+          \STATUS=status
+
+MORE INFORMATION
+================
+
+Pgcset32 sets the MS-DOS error level to one of the following values:
+
+ - 0 = Success
+
+ - 1 = Wrong number of arguments
+
+ - 2 = Unused (used only by 16-bit version)
+
+ - 3 = Cannot create or open the registry key
+
+ - 4 = Cannot set the value of the registry key
+
+Runs On: Alpha, MIPS, x86
+
+PGCSET32 Syntax
+---------------
+
+ - Pgcset32 program_item_registry status.
+
+ - Program_item_registry - Specifies the name used in the application's package
+   definition file for the application's program item.
+
+ - Status - Specifies the status of the configuration as Success or Fail.
+
+ - /? - Provides a usage statement.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

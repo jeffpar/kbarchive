@@ -1,0 +1,71 @@
+DOCUMENT:Q123074  08-NOV-2001  [homekids]
+TITLE   :MSB Human: MIDI Mapper Does Not Appear in Control Panel
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+1.0
+WINDOWS
+kbsound kbenv kbmm kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Scholastic's Magic School Bus series: Explores the Human Body for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Magic School Bus Explores The Human Body uses MIDI sound, which requires that
+the MIDI Mapper be correctly configured. Sometimes, the MIDI Mapper icon does
+not appear in the Control Panel group, and it is not started when you run MIDI
+Mapper in the Bus Stop utility for Explores The Human Body.
+
+CAUSE
+=====
+
+This behavior occurs if the sound drivers for the sound card are not installed,
+or are incorrectly installed.
+
+The MIDI Mapper icon will also not be present in Control Panel if the [Don't
+Load] section of the CONTROL.INI file has the Midi Mapper=1 entry. If Midi
+Mapper=1 is in the [Don't Load] section of CONTROL.INI, change the =1 to =2.
+
+MORE INFORMATION
+================
+
+The MIDI Mapper Control Panel is present in the Control Panel group only if a
+sound board and the correct sound drivers have been installed. It is not a .CPL
+file installed by Windows; it is a Control Panel installed by the sound drivers
+upon installation.
+
+Contact the manufacturer of your sound card for more information regarding the
+specific drivers for your sound card, and the correct installation of the sound
+card software.
+
+Additional query words: 1.0 audio CPL missing absent msbhb sound gone empty msb-hb frizz frizzle magicbus liz winmsbhuman msbhuman schoolbus magic_bus
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kbScholasticHuman kbMSBSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

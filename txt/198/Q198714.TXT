@@ -1,0 +1,65 @@
+DOCUMENT:Q198714  27-JUL-2001  [sms]
+TITLE   :SMS: Enabling Power Management May Cause Remote Control to Fail
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2,2.0
+OPER/SYS:
+KEYWORDS:kbRemote kbsms200 kbsms120 kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.2, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Systems Management Server versions 1.2 and 2.0, if you enable Power
+Management, remote control may fail. Windows 95 and Windows 98 clients that use
+remote control over TCP/IP may experience problems if they are idle for an
+extended period.
+
+CAUSE
+=====
+
+This problem occurs when power management is enabled through CMOS or software on
+Windows 95 and Windows 98 computers. This can occur on either portable or
+desktop systems that have power management enabled.
+
+When the timeout value is reached, the BIOS enables power management on the
+system. On some systems running TCP/IP, this causes Windows 95 and Windows 98
+clients to send a DHCP release of its IP address, causing all TCP/IP sessions to
+lose connectivity. If the systems are using TCP/IP as the remote access
+protocol, the Remote Control Agent (Wuser.exe) no longer listens on the released
+IP address.
+
+WORKAROUND
+==========
+
+To work around this problem, disable power management through either CMOS or
+software.
+
+Additional query words: prodsms sms200
+
+======================================================================
+Keywords          : kbRemote kbsms200 kbsms120 kbRemoteProg 
+Technology        : kbSMSSearch kbSMS120 kbSMS200
+Version           : winnt:1.2,2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

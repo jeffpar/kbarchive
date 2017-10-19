@@ -1,0 +1,70 @@
+DOCUMENT:Q212788  09-APR-1999  [exchange]
+TITLE   :XFOR: Connector for cc:Mail Stops, No Errors Appear in Event Log
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Exchange Connector for Lotus cc:Mail may stop unexpectedly. No
+errors appear in the Windows NT Application Event log, even with maximum logging
+enabled. If you restart the connector, it may start delivering messages again
+for a short period of time, but then stop delivering messages.
+
+CAUSE
+=====
+
+This problem can occur when one or more .und files exist in the
+Exchsrvr\Ccmcdata\Import or Exchsrvr\Ccmcdata\Export folder. These files are
+associated with messages that could not be delivered when they were originally
+sent.
+
+RESOLUTION
+==========
+
+To resolve this problem, remove the .und files associated with the undeliverable
+e-mail messages. To do so, follow these steps:
+
+1. Stop the Exchange Connector for Lotus cc:Mail, if it is started.
+
+2. Copy the .und files from the Exchsrvr\Ccmcdata\Import or
+   Exchsrvr\Ccmcdata\Export folder to a different folder, and then delete the
+   .und files in the Exchsrvr\Ccmcdata\Import or Exchsrvr\Ccmcdata\Export
+   folder.
+
+3. Restart the Exchange Connector for Lotus cc:Mail.
+
+The connector should then start delivering messages again.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

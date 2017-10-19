@@ -1,0 +1,68 @@
+DOCUMENT:Q82732  25-OCT-1999  [win95x]
+TITLE   :Meaning of the SETUP.INF's "noclobber" Entries
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The "noclobber" and "rename" items in the [ini.upd.31] section of the SETUP.INF
+are operators used to tell Setup to either rename a .INI entry or not to remove
+(clobber) an existing .INI entry.
+
+MORE INFORMATION
+================
+
+The following is a sample of the [ini.upd.31] section of the SETUP.INF:
+
+   [ini.upd.31]
+   ;
+   ; File,section,Line to be removed,Line to be added,Optional operator
+   ;
+   system.ini,386Enh, "device=vpicda.386","device=*vpicd"
+   system.ini,drivers,"midi4=adlib.drv",  "midi4=msadlib.drv",rename
+   system.ini,386Enh, "keyboard=" ,       "keyboard=*vkd",    noclobber
+
+The first line causes Setup to remove the line device=vpicda.386 from the
+[386Enh] section of SYSTEM.INI and add the line "device=*vpicd" to the same
+section in SYSTEM.INI.
+
+The second line causes Setup to replace the line "midi4=adlib.drv" with the line
+"midi4=msadlib.drv." Note: the replacement is done only if the line to be
+replaced exists; therefore, this has the effect of renaming.
+
+The third line causes Setup to replace the line "keyboard=" with "keyboard=*vkd"
+only if the line "keyboard=" does not exist in the [386Enh] section of
+SYSTEM.INI.
+
+Additional query words: 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

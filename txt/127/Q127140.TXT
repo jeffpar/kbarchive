@@ -1,0 +1,65 @@
+DOCUMENT:Q127140  17-DEC-2000  [win95x]
+TITLE   :Hardware Detection Hangs with Relialogic SCSI Card Installed
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are running the hardware detection portion of Setup, or when you select
+the Automatically Detect Installed Hardware option in the Add New Hardware
+Wizard, the computer stops responding (hangs).
+
+CAUSE
+=====
+
+This problem can occur if you have a Relialogic XL-220 or XL-221 SCSI card
+installed in the computer. The hardware detection routine detects these cards as
+a Mitsumi CD-ROM controller card and then receives incorrect information from
+the card.
+
+RESOLUTION
+==========
+
+Select the Install Specific Hardware option in the Add New Hardware Wizard or
+Setup, and then do not choose to detect SCSI cards or CD-ROM controllers.
+
+MORE INFORMATION
+================
+
+Relialogic has been notified of this problem. They are working on BIOS revisions
+and Windows 95 drivers for these cards.
+
+
+The third-party products discussed here are manufactured by a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

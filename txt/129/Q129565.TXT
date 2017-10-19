@@ -1,0 +1,59 @@
+DOCUMENT:Q129565  19-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: Change of Status Not Always Reflected in POF File
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The access control list (.POF file) can become out of date when you change an
+assistant's status (friendly name change, delete the user, etc.) in the Admin
+program.
+
+CAUSE
+=====
+
+When you select an assistant, the selection will be accurately recorded in the
+access control list. However, if the assistant's status is subsequently changed,
+the access control list will not be updated and will be out of date.
+
+It is unreasonable to periodically check the access control list for accuracy;
+therefore, it will not be updated in future releases.
+
+
+The POF files contain Assistant routing information in the specific user's
+record, if one is designated by the user and information about free/busy times
+for users on the local postoffice. There is also a POF file for each external PO
+defined.
+
+Additional query words: schedule plus 1.00 POF
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

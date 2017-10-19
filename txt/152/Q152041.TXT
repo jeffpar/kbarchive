@@ -1,0 +1,84 @@
+DOCUMENT:Q152041  04-AUG-2001  [visualc]
+TITLE   :FIX: C1001 Error in 'msc1.cpp' on Template Function Parameter
+PRODUCT :Microsoft C Compiler
+PROD/VER:4.0 4.1 4.2
+OPER/SYS:
+KEYWORDS:kbCompiler kbCPPonly kbLangCPP kbVC kbVC500fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 4.0, 4.1 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The following error is generated for template function with a parameter of
+scoped template member type:
+
+   
+
+   fatal error C1001: INTERNAL COMPILER ERROR
+    (compiler file 'msc1.cpp', line 899)
+    Please choose the Technical Support command on the Visual C++
+    Help menu, or open the Technical Support help file for more information
+   Error executing cl.exe.
+
+Under Visual C++ 4.1, the error will occur at line 1090 instead of line 899.
+Under Visual C++ 4.2, the error will occur at line 1089. The sample code in the
+More Information section of this article demonstrates the presence of this
+error.
+
+CAUSE
+=====
+
+The reason for this error is the second parameter, Container::typA, in the
+template function funcA in the sample code. The compiler is unable to
+distinguish the scoped template parameter.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ version 5.0.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+      /* Compile options needed: none
+      */ 
+
+      template<class Container>
+      void funcA(Container * , Container::typA *apTarget) { }
+
+Additional query words: kbVC400bug template
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbLangCPP kbVC kbVC500fix 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC410 kbVC420 kbVC32bitSearch
+Version           : 4.0 4.1 4.2
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

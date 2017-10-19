@@ -1,0 +1,70 @@
+DOCUMENT:Q97630  23-OCT-1999  [foxmisc]
+TITLE   :Using the Report Writer with ImageWriter or LaserWriter
+PRODUCT :Microsoft Fox Miscellaneous Products
+PROD/VER:MACINTOSH:2.01
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxBASE+ for Macintosh, version 2.01 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you are printing a report on both an Apple ImageWriter and a LaserWriter and
+are using any version of the Apple System software, including System versions
+7.0 and later, you must create two different reports.
+
+To create the reports:
+
+1. Select the LaserWriter printer through the Chooser, and create a report.
+
+2. Save the report.
+
+3. Use the Save As command to save a copy of the report with a name appropriate
+   to the ImageWriter.
+
+4. Use the Chooser to select the ImageWriter printer. Reformat the report as
+   required.
+
+Another option is to create a report for the ImageWriter and print it on the
+LaserWriter at 96 percent, but this method is not always feasible.
+
+MORE INFORMATION
+================
+
+This behavior occurs because FoxBASE+/Mac uses Apple's printer drivers. Apple's
+printers expect a header file (which FoxBASE+/Mac prepares with the creation of
+a report) to be sent along with any text sent to the printer. The format of this
+header file has changed since the evolution of the LaserWriter.
+
+Therefore, if an ImageWriter receives a header file prepared for the LaserWriter,
+it will not automatically use the default printer settings. The same is true for
+sending an ImageWriter header file to the LaserWriter.
+
+Additional query words: 2.01 report
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbFoxproSearch kbFoxBASE201Mac kbFoxBASESearch
+Version           : MACINTOSH:2.01
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,89 @@
+DOCUMENT:Q197010  14-NOV-2000  [word97]
+TITLE   :WD97: Drop Cap (Framed Paragraph) Causes Unwanted Behavior
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A dropped capital letter ("drop cap") can cause problems with envelope
+addressing or table of contents creation.
+
+Because many functions in Word for Windows operate on a paragraph level, and
+because the Drop Cap command creates an additional paragraph in the document,
+many paragraph-based operations in Word may be affected.
+
+WORKAROUND
+==========
+
+The two most common problems associated with drop caps concern envelope
+addressing and table of contents creation.
+
+Envelope Addressing
+-------------------
+
+When you create envelopes, Word searches in the current document for a possible
+mailing address. If you have formatted a drop cap at the beginning of the
+mailing address in your document, Word does not correctly choose the entire
+mailing address for the Envelope dialog box. If you do not select anything, Word
+"guesses" the address minus the first letter (the one with drop cap
+formatting).
+
+The easiest workaround for this situation is to accept the guess that Word makes
+and then type the appropriate first letter. If you select the drop cap and the
+rest of the address, Word chooses just the letter with the drop cap formatting
+as the mailing address.
+
+Tables of Contents
+------------------
+
+A common way to create a table of contents (TOC) is to build it from styles. If
+your drop cap paragraph is formatted with a heading style and you create a TOC
+based on heading styles, the drop cap letter appears by itself as a TOC entry,
+and the rest of the original paragraph appears as a second TOC entry.
+
+To work around this problem, use Table of Contents Entry (TC) fields to mark the
+TOC entries instead of using the heading styles.
+
+MORE INFORMATION
+================
+
+Word includes the Drop Cap command on the Format menu to allow easy creation of
+a dropped capital letter ("drop cap") at the beginning of a sentence. When you
+use this feature, Word inserts a new framed paragraph in the document. Because
+the drop cap is in a separate paragraph, it behaves as a separate paragraph and
+may cause unwanted behavior in some situations.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

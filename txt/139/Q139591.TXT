@@ -1,0 +1,68 @@
+DOCUMENT:Q139591  25-JUL-2001  [sms]
+TITLE   :Packages Not Detected By Inventory Agent
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.1
+OPER/SYS:
+KEYWORDS:kbnetwork kbInventory smsinv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you set the Hardware and Software Scan intervals from Site Properties
+Inventory such that the Software scan be performed more often than the hardware
+scan, the software scan fails to report packages.
+
+CAUSE
+=====
+
+The Software Scan scans each local disk installed, but if the Hardware Scan is
+not performed, the Software Scan does not have a valid list of installed disks
+to scan. The Software Scan should perform a minimal drive detection so that it
+knows what drives to scan.
+
+WORKAROUND
+==========
+
+To work around this problem, ensure that both the Hardware and Software Scan
+intervals are set to the same frequency.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.1. A fix to this problem is in development, but has not been
+regression-tested and may be destabilizing in production environments. Microsoft
+does not recommend implementing this fix at this time. Contact Microsoft Product
+Support Services for more information on the availability of this fix.
+
+
+Additional query words: prodsms inventory agent
+
+======================================================================
+Keywords          : kbnetwork kbInventory smsinv 
+Technology        : kbSMSSearch kbSMS110
+Version           : winnt:1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

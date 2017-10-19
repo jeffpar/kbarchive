@@ -1,0 +1,78 @@
+DOCUMENT:Q252852  28-OCT-2000  [sms]
+TITLE   :SMS: Admin Console Doesn't Display Local SMS Version Installed
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbConfig kbMMC kbServer kbsms200 kbsms200bug kbsmsAdmin
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you check for the version of the Microsoft Systems Management Server (SMS)
+Administrator Console that is currently installed on a remote administrative
+computer, the Administrator Console reveals only the version of SMS installed on
+the site server. This does not help you determine if a computer needs to update
+the installed version of the SMS Administrator Console.
+
+WORKAROUND
+==========
+
+To check the remote SMS Administrator Console version on a local computer,
+follow these steps:
+
+1. Use Regedtd32.exe to open the computer's registry.
+
+2. Navigate to the following folder:
+
+   HKEY_LOCAL_MACHINE\Software\Microsoft\SMS\Setup\UI Version
+
+NOTE: If the version in this registry key is different from the version build
+number of the site, the SMS Administrator Console software should be updated.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+
+MORE INFORMATION
+================
+
+For additional information about how to determine the build number of the site
+and client components, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+   Q213410 SMS: Determining Version and Build Number
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbConfig kbMMC kbServer kbsms200 kbsms200bug kbsmsAdmin 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

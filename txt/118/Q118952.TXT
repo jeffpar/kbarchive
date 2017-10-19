@@ -1,0 +1,66 @@
+DOCUMENT:Q118952  28-JUL-2001  [win95x]
+TITLE   :"Cannot Open File" Error Occurs When Trying to Start Falcon 3
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95 appscomp kbAppCompatibility
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to start the Spectrum Holobyte game Falcon 3.0 in an MS-DOS window
+in Windows 95, you receive the following error message:
+
+   Cannot Open File
+
+This error occurs even when the FALCON3 directory is in your PATH statement, and
+it still occurs when you provide the complete path to the FALCON3.EXE file.
+
+CAUSE
+=====
+
+When Falcon 3 is loading, it expects to find the necessary support files in the
+currently active directory.
+
+RESOLUTION
+==========
+
+To start Falcon 3.0, you must be in the FALCON3 directory. When you create a
+shortcut for Falcon 3, the working directory must be FALCON3.
+
+MORE INFORMATION
+================
+
+Falcon 3 is manufactured by a vendor independent of Microsoft; we make no
+warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words: err msg 3rdparty
+
+======================================================================
+Keywords          : win95 appscomp kbAppCompatibility 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

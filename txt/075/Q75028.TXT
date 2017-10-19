@@ -1,0 +1,90 @@
+DOCUMENT:Q75028  01-NOV-1999  [win95x]
+TITLE   :Novell RPRINTER 1.21 Is Windows 3.0 Compatible
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+RPRINTER is a Novell utility that allows the sharing of printers connected to
+workstations. According to Novell, RPRINTER version 1.21 works with Microsoft
+Windows 3.0.
+
+MORE INFORMATION
+================
+
+RPRINTER versions earlier than 1.21 do not work correctly with Windows 3.0.
+RPRINTER version 1.21 is not included with Novell 386 versions 3.11 and earlier
+or Novell 286 versions 2.2 and below. It can be obtained through CompuServe or
+directly from Novell.
+
+To order the RPRINTER utility from Novell, call (800) NETWARE.
+
+ - For Novell 286, ask for file PSV121.ZIP.
+
+ - For Novell 386, ask for files PSV121.ZIP and PSV121B.ZIP.
+
+To download the files from CompuServe:
+
+1. Connect to CompuServe.
+
+2. Type "go nova" (without the quotation marks) and press ENTER.
+
+3. For Novell 286 versions, select library number 6 and download PSV121.ZIP.
+
+   For Novell 386 versions, select library 6 and download PSV121.ZIP. Then select
+   library number 7 and download PSV121B.ZIP.
+
+4. After you download the files, you need to use the PKUNZIP.EXE utility to
+   decompress them.
+
+   If you do not have PKUNZIP.EXE, you can download it as follows:
+
+   a. Type "go ibmnew" (without the quotation marks) to go to the IBM New Users
+      Forum.
+
+   b. Type "down" (without the quotation marks) to request that a file be
+      downloaded.
+
+   c. Type "PKZ110.EXE" (without the quotation marks) to download the file.
+
+   d. Select the appropriate transfer protocol.
+
+5. Decompress the files and install them. There should be a file called
+   README.DOC that describes the proper installation procedures.
+
+RPRINTER is manufactured by Novell, a vendor independent of Microsoft; we make no
+warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+Additional query words: 3.00 3.00a 3.0a 3.0 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,48 @@
+DOCUMENT:Q122257  29-JUL-2001  [visualc]
+TITLE   :DOC: Description of Compiler Error C2712 is Incorrect
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr kbCompiler kbCPPonly kbVC
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), included with:
+    - *EDITOR Please do not choose this product*Microsoft Visual C++ 32-bit Edition* use 241, 265, 225, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The online Help for compiler error C2712 ("cannot use __try in func with object
+unwinding") states:
+
+   To avoid this error message, compile using /GX option.
+
+This is incorrect. It should read that the workaround is to compile with /GX-,
+which instructs the compiler to disable C++ exception handling unwinding.
+
+Additional query words: 2.00 9.00
+
+======================================================================
+Keywords          : kbdocfix kbdocerr kbCompiler kbCPPonly kbVC 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : winnt:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

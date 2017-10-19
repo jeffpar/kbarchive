@@ -1,0 +1,84 @@
+DOCUMENT:Q85748  24-OCT-1999  [win95x]
+TITLE   :Windows Err Msg: I/O Address Cannot Be Found in SYSTEM.INI
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error message when you start Control Panel:
+
+   I/O address cannot be found in SYSTEM.INI
+
+CAUSE
+=====
+
+This problem occurs when the SoundBlaster Mixer icon from Multimedia Extensions
+version 1.0 is present in Control Panel.
+
+MORE INFORMATION
+================
+
+This icon is an audio-mixing board for the Creative Labs SoundBlaster Pro sound
+cards.
+
+To determine if the icon is from version 1.0 of the Multimedia Extensions, do the
+following:
+
+1. At a MS-DOS command prompt, type:
+
+   cd\windows\system
+
+2. Type:
+
+   dir sbpmixer.cpl
+
+3. If the directory shows the following, you have Multimedia Extensions version
+   1.0:
+
+     SBPMIXER  CPL   25504      10/17/91
+
+RESOLUTION
+==========
+
+To correct this problem:
+
+ - Update the SoundBlaster drivers.
+
+   -or-
+
+ - Remove the SBPMIXER.CPL file from the WINDOWS\SYSTEM directory.
+
+The updated SoundBlaster Drivers are available from Creative Labs.
+
+Additional query words: 3.10 3.1
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

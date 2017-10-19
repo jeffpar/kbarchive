@@ -1,0 +1,83 @@
+DOCUMENT:Q161192  12-JUN-2001  [sna]
+TITLE   :Cannot Load Lucida Typewriter Font
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1,2.11,3.0
+OPER/SYS:
+KEYWORDS:kbsna
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, 2.11, 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start the SNA Server Windows NT 3270 applet, the following message
+appears:
+
+   Cannot load Lucida Typewriter font. Please ensure that ltype.ttf is in the
+   windows system directory.
+
+CAUSE
+=====
+
+There are three known causes of this error.
+
+1. A client setup problem in SNA Server 2.11 that resulted in the font not being
+   installed under certain conditions. If the Ltype.ttf file is missing from the
+   <ntroot>\system32 directory, refer to the following article in the
+   Microsoft Knowledge Base:
+
+   Q139379 SNA Server Error: Cannot Load Lucida Typewriter Font
+
+   This problem was fixed in SNA Server, version 2.11 Service Pack 1 (SP1).
+
+2. If you are running a copy of Windows from a network share. When a 3270
+   emulator is started, it dynamically creates the Lucida TrueType header file,
+   Ltype.fot, on the server (assuming you have write-access to the share) and
+   removes this file when exiting the emulator. If the Ltype.fot file is not
+   present on the server and you don't have write access to it, you will get the
+   error above.
+
+3. Corrupt TrueType header file, Ltype.fot or a conflicting Raster Font file,
+   Ltype.fon.
+
+RESOLUTION
+==========
+
+1. For the setup problem, apply SP1 or follow the workaround in the Microsoft
+   Knowledge Base article listed above.
+
+2. When using a shared copy of Windows, install the Lucida TrueType font (via
+   the Font control panel program), and then set Ltype.fot to be a read- only
+   file on the server sharepoint.
+
+3. If Ltype.ttf is installed and a shared copy of the operating system is not
+   being used, rename or remove both Ltype.fot and Ltype.fon.
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbsna 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ200 kbSNAServ211 kbSNAServ210
+Version           : WINDOWS:2.0,2.1,2.11,3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

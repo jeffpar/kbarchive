@@ -1,0 +1,76 @@
+DOCUMENT:Q247484  25-JUN-2000  [sms]
+TITLE   :SMS: Advertisement with Future Date May Run Immediately
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbtool kbsms200fix kbsms200sp2fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You can set an advertisement to expire on a certain date in Systems Management
+Server (SMS) 2.0. If you create an advertisement with a start date in the future
+and then send that advertisement to a client with an expired advertisement for
+the same program, the new advertisement may begin to execute immediately and run
+on the schedule of the expired advertisement.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, please see the following article
+in the Microsoft Knowledge Base:
+
+   Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0. This problem was first corrected in Systems Management Server
+version 2.0 Service Pack 2.
+
+WORKAROUND
+==========
+
+To work around this problem, delete expired advertisements, or create a new
+program for the package when you re-advertise it.
+
+MORE INFORMATION
+================
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0. This problem was first corrected in Systems Management Server
+version 2.0 Service Pack 2.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbtool kbsms200fix kbsms200sp2fix 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

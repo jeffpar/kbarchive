@@ -1,0 +1,68 @@
+DOCUMENT:Q99264  08-DEC-1999  [homemm]
+TITLE   :Bookshelf: Extraneous Scrolling Region on 1024 x 768 Display
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1993 edition,2.0
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows 1993 edition 
+ - Microsoft Multimedia Viewer, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you are using Bookshelf, a small (approximately 25-pixels high) scrolling
+region may appear at the bottom of your Bookshelf window. This extra scrolling
+region displays a second copy of the title graphic.
+
+This problem only occurs the first time a graphic is displayed. The extraneous
+scrolling region appears on each title screen as well as on the "books" screen.
+
+Microsoft has confirmed this to be a problem in Microsoft Multimedia Viewer
+version 2.0. We are researching this problem and will post new information here
+as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Set your monitor to 1024 x 768 resolution.
+
+2. Run Bookshelf.
+
+3. Move the title bar of the Bookshelf opening screen to the upper edge of the
+   screen.
+
+4. Move the vertical edge of the pane to the lower edge of the screen
+
+The extraneous scrolling region appears.
+
+Additional query words: multimedia multi media multi-media bad corrupted corruption video display garbage screen usage
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHomeProdSearch kbHomeMMsearch kbBookshelfSearch kbBookShelf1993 kbMMViewer200
+Version           : :1993 edition,2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,177 @@
+DOCUMENT:Q107808  25-SEP-1999  [win3x]
+TITLE   :Installing Novell NetWare 3.12 and 4.0x Support for Windows
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+This article contains information about using Windows for Workgroups
+with a third-party product that has not been tested and is not supported
+by Microsoft.
+
+If the steps or procedures described in this article do not function
+properly, contact the manufacturer of the third-party product for
+more information.
+
+SYMPTOMS
+========
+
+After you install Novell NetWare version 3.12 or 4.0x client software to a
+shared copy of Windows or Windows for Workgroups, you may receive the following
+error message:
+
+   NetWare shell incompatible
+
+   Cannot use a device specified in the SYSTEM.INI file. The device may be
+   necessary to run Windows in 386 enhanced mode.
+
+   If you experience problems, run the Setup program again.
+
+   C:\WINDOWS\vnetware.386
+
+CAUSE
+=====
+
+The Novell NetWare client install for versions 3.12 and 4.0x uses VLM.EXE in
+place of NETX.EXE. If you are using VLM.EXE, the Novell NetWare client software
+does not properly update a shared copy of Windows (SETUP /A and SETUP /N);
+therefore, you must add the new Windows support files provided by Novell
+NetWare.
+
+RESOLUTION
+==========
+
+To correctly install the NetWare client software to both the shared copy of
+Windows on the NetWare server and to all user directories, perform the steps
+below.
+
+NOTE: These steps assume that you have run SETUP /A on the server and SETUP /N to
+a user directory that has not been modified by the NetWare 4.0x client install:
+
+1. Create an empty subdirectory on the local drive.
+
+2. Create two blank files in this directory named WIN.INI and SYSTEM.INI.
+
+3. Run the Novell NetWare client install utility. This utility is provided by
+   Novell and will add the files needed for Windows. During the NetWare client
+   install process, step 3 gives the option to install support for Windows and
+   to provide the location of the Windows directory. You must choose Yes to
+   install support for Windows, and point it to the empty subdirectory created
+   in Step 1.
+
+4. Once the installation is finished, delete all *.INI files in the subdirectory
+   specified in step 1.
+
+5. Change to the mapped drive and directory in which the shared Windows
+   directory (SETUP /A) is located, and remove the read-only attribute from all
+   files in the shared Windows directory.
+
+6. The NetWare client install creates the following two subdirectories under the
+   subdirectory created in step 1:
+
+   NLS and SYSTEM
+
+7. Copy the files from the SYSTEM subdirectory to the shared Windows directory
+   on the NetWare server (where the SETUP /A was installed). This should copy
+   the following five files:
+
+   NETWARE.DRV
+   NETWARE.HLP
+   VNETWARE.386
+   VIPX.386
+   NWPOPUP.EXE
+
+8. Delete these files in the SYSTEM subdirectory and remove the SYSTEM
+   subdirectory.
+
+9. Copy the remaining files in the subdirectory created in step 1, along with
+   the entire NLS subdirectory, to the shared Windows directory on the NetWare
+   server.
+
+10. Delete the NLS subdirectory and the subdirectory created in step 1.
+
+11. You then need to mark all files in the shared Windows directory with the
+   read-only attribute. This can be done by typing
+
+   attrib *.* +r
+
+   in the subdirectory in which the shared copy of Windows was installed.
+
+12. Add the following lines to the [386Enh] section of the SYSTEM.INI file in
+   the Windows user directory for all workstations that will be running either
+   the NetWare 3.12 or 4.0x client:
+
+   TimerCriticalSection=10000
+   ReflectDOSInt2A=TRUE
+   UniqueDOSPSP=TRUE
+   PSPIncrement=5
+   OverlappedIO=OFF
+
+   NOTE: With Windows for Workgroups 3.11, these lines should already exist if
+   support for Novell NetWare 4.x was installed during Setup.
+
+13. You can then run the client install to all other workstations on the network
+   running Novell NetWare version 3.12 or 4.0 as needed. When the install
+   utility asks if you want to install support for Windows, choose No. Each
+   workstation will use the updated Novell files in the shared Windows
+   directory.
+
+   NOTE: Novell NetWare install adds a group to Windows Program Manager for the
+   Novell Utilities. If you want to install this group after following the
+   above steps, continue with the following steps; otherwise, you can stop
+   here.
+
+14. Copy the NWUTILS.GRP file from the shared Windows directory to each Windows
+   user directory on all workstations to which you want to add the group.
+
+15. From each workstation, run Windows.
+
+16. In Program Manager, choose New from the File menu.
+
+17. Select the Program Group option button, then choose OK.
+
+18. In the Description box, type "NetWare" (without the quotation marks).
+
+19. In the Group File box, type "NWUTILS.GRP" (without the quotation marks).
+
+20. Choose OK.
+
+NOTE: The above steps do not work properly with Windows for Workgroups 3.1
+because that version does not support connectivity with Novell NetWare using
+Novell's ODI specification.
+
+The Novell products included here are manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+Additional query words: 3.10 3.11 nw4 nw wfw wfwg install setup configure configuration winshare winuser err msg 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

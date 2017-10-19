@@ -1,0 +1,59 @@
+DOCUMENT:Q100792  06-NOV-1999  [win3x]
+TITLE   :WFWG: Schedule+ Prompts to Archive and Delete Old Appointments
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By default, at six-month intervals, Schedule+ in Windows for Workgroups 3.1
+displays a message asking if you want to archive and delete old appointment
+information. The message reads as follows:
+
+   There is information stored in your schedule file which is older than the
+   limit set for discarding data. Would you like to delete it?
+
+There is no way to disable this message. The message continues to display at the
+start of Schedule+ until you archive and delete the old information.
+
+MORE INFORMATION
+================
+
+The full retail version of Schedule+ has an administrator utility that allows
+variable time periods for archiving old appointment information.
+
+After you archive the Schedule+ data, the data doesn't appear in Schedule+
+anymore. However, you can access this data by selecting the File menu option,
+then selecting Open Archive, and then opening the correct archived data file.
+
+Additional query words: 3.10 schedule plus error 6 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

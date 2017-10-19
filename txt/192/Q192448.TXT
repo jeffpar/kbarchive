@@ -1,0 +1,185 @@
+DOCUMENT:Q192448  14-NOV-2000  [word97]
+TITLE   :WD97: Errors Saving and Opening Files on a Novell 4.11 Server
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta word97
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to save or open a document on a Novell 4.11 server, the
+document may fail to save or open, and you may receive an error message.
+
+NOTE: In the following two cases, assume that you have mapped the root of drive H
+to the following Novell network server folder:
+
+   \\srctc_ss-d\sys\it\alliance\product conversion\project\teamwork\attribution
+
+Case 1
+------
+
+When you attempt to open a document (for example, Test Methodology.doc) on a
+mapped root drive, error messages similar to the following may be displayed:
+
+   The document name or path is not valid. Try one or more of the following:
+
+   * Check the path to make sure it was typed correctly. * On the File menu,
+   click Open, search for the file using this dialog box.
+   (H:\It\Alliance\Productc\Project\........\Test)
+
+NOTE: The folder names and file names in the path may be truncated as in this
+example error message. This is due to Novell OS/2 Namespace truncating the names
+to eight (8) characters.
+
+When you click OK, the following error message is displayed:
+
+   This file could not be found. Try one or more of the following:
+   * Check the spelling of the name of the document. * Try a different filename.
+   (Methodology.doc)
+
+For example, you open a document that contains spaces in the folder name or in
+the file name, and the document is located in a subfolder several levels under
+the map root of the drive.
+
+NOTE: The document may open from Windows Explorer or when you browse to the root
+of the NetWare volume and then browse down to the folder that contains the
+document.
+
+Case 2
+------
+
+When you attempt to save a document to a subfolder located on a map root drive,
+an error message may be displayed and the document may not be saved.
+
+For example, when you try to save a document with an 8.3 file name (such as
+Test.doc) to the "Qa\Qafiles\Planning" folder, the following error message may
+be displayed:
+
+   The folder H:\Qa\Qafiles\Planning\Test.doc isn't accessible. The folder may
+   be located on an unavailable volume or protected with a password.
+
+NOTE: The "Qa\Qafiles\Planning" folder is a subfolder of the map root drive.
+
+CAUSE
+=====
+
+These problems may occur in Windows 95 and Windows NT 4.0 when you are using
+Novell Server 4.11 and the Novell IntraNetWare 2.2 client.
+
+NOTE: The Novell IntraNetWare client is the replacement for Novell NetWare Client
+32.
+
+RESOLUTION
+==========
+
+To correct this problem, install the Novell Netware 4.11 server patch
+(Mixmod4.exe).
+
+For more information about this patch, please refer to the Novell Technical
+Support Knowledge Base article titled "Error saving files in MS Word" (Document
+#2952055).
+
+For information about how to contact Novell Technical Support, click the
+appropriate article number below to view the article in the Microsoft Knowledge
+Base:
+
+   Q65416 Hardware and Software Third-Party Vendor Contact List, A-K
+
+   Q60781 Hardware and Software Third-Party Vendor Contact List, L-P
+
+   Q60782 Hardware and Software Third-Party Vendor Contact List, Q-Z
+
+WORKAROUND
+==========
+
+To Open a Document
+------------------
+
+Use one of the following methods as appropriate for your situation to open a
+document on a Novell 4.11 server:
+
+Method 1: Map Root to Only One Long File Name Folder:
+
+Map root only one Long File Name (LFN) connection in your login script, or use a
+map root connection that contains 8-character folder and file names.
+
+NOTE: Multiple LFN map root connections seem to cause this problem; however, map
+root connections that contain a path of eight or fewer character folder and file
+names do not seem to have this problem.
+
+Method 2: Use Microsoft Client for NetWare Networks:
+
+Uninstall Novell IntraNetWare 2.2 client and install the Microsoft Client for
+NetWare Networks.
+
+For additional information about how to install the Microsoft Client for NetWare
+Networks, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q150925 How to Uninstall Novell's 32-Bit Network Client
+
+To Save a Document
+------------------
+
+Use one of the following methods as appropriate for your situation to save a
+document on a Novell 4.11 server.
+
+Method 1: Navigate to the Subfolder:
+
+Before you save a document with an 8.3 file name, browse to the root of the map
+root drive, and then browse down through the subfolders. Then save the
+document.
+
+Method 2: Save to Local Drive:
+
+Save your 8.3 file to your local drive, and then copy the file to the server
+folder.
+
+STATUS
+======
+
+This problem occurs when you use Microsoft Word 97 for Windows and Novell
+IntraNetWare 2.2 client.
+
+MORE INFORMATION
+================
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+   Q122379 WD97: Error Saving Document: "Network or File Permission Error..."
+
+   Q163367 WD97: "Network or File Permission Error" Saving Document
+
+Additional query words: maproot
+
+======================================================================
+Keywords          : kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

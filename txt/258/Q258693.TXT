@@ -1,0 +1,76 @@
+DOCUMENT:Q258693  15-APR-2001  [iis]
+TITLE   :CLUSTER:IIS Server Instance Resources Offline After NNTP Install
+PRODUCT :Internet Information Server
+PROD/VER::2000,5.0
+OPER/SYS:
+KEYWORDS:kbOSWin2000
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+ - Microsoft Windows 2000 Advanced Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After the setup of the Network News Transport Protocol (NNTP) service is
+complete, the services in the Service Control Manager are restarted, but the
+Internet Information Services (IIS) Server Instance resources (as listed in
+Cluster Administrator) are not brought back online.
+
+CAUSE
+=====
+
+Like other new cluster resources, the IIS Server Instance resources have a
+persistent state of 1 after they are created.
+
+WORKAROUND
+==========
+
+To bring the services back online, select Bring Online in Cluster Administrator.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Install Windows 2000 with Cluster service and default (WWW) IIS services.
+
+2. Configure the server cluster with IIS Server Instance resources for each of
+   the IIS services.
+
+3. From Add/Remove Windows Components, add NNTP IIS service.
+
+During installation, the currently configured IIS Server Instance resources
+(listed in Cluster Administrator) are taken offline. After the NNTP service is
+installed, the services in the Service Control Manager are restarted, but the
+IIS Server Instance resources are not brought back online.
+
+Additional query words: iis5 kbiisSearch
+
+======================================================================
+Keywords          : kbOSWin2000 
+Technology        : kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Search kbiisSearch kbiis500 kbWinAdvServSearch
+Version           : :2000,5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

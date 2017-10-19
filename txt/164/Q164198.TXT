@@ -1,0 +1,56 @@
+DOCUMENT:Q164198  15-MAY-2001  [win95x]
+TITLE   :Sound Recorder Saves Renamed File with Previous Name
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::95
+OPER/SYS:
+KEYWORDS:kbenv kbtool osr2 win95 win98
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, versions 2, 2.1 
+ - Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you rename a file that is currently open in Sound Recorder and then save
+the file, the file is saved with the previous name.
+
+CAUSE
+=====
+
+Sound Recorder does not look for the specified file in its original location.
+
+MORE INFORMATION
+================
+
+MFC programs (such as WordPad) open a Save As dialog box when a file is not
+found in its original location. Sound Recorder does not do this; it simply saves
+the file with the original name instead.
+
+Additional query words: 95
+
+======================================================================
+Keywords          : kbenv kbtool osr2 win95 win98 
+Technology        : kbWin95search kbWin98search kbOPKSearch kbWin98 kbWin95OPKOSR2 kbWin95OPKOSR210
+Version           : :95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

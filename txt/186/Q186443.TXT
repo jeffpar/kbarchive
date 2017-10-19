@@ -1,0 +1,61 @@
+DOCUMENT:Q186443  22-JUN-2001  [exchange]
+TITLE   :XWEB: Large Out of Office Message Causes Client to Stop Respondi
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 Service Pack 1 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you are using the Outlook Web Access client, if you paste a very large
+message into the Text area of the Out of Office dialog box, the computer may
+stop responding. Eventually, a blank window appears. If you try to close the
+window by clicking the X in the upper-right corner of the window, the window
+will close, but none of the other functions of the client, such as viewing
+messages, will work.
+
+
+WORKAROUND
+==========
+
+To work around this problem, do not paste a large amount of message text into
+your Out of Office text box.
+
+MORE INFORMATION
+================
+
+Your pointer will display an hourglass shape, which will eventually turn into a
+blank window, or if you add a large Out of Office text, a message will appear
+that says the operation timed out. You may also see a script timeout message.
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOWASearch kbOWA550SP1
+Version           : WinNT:5.5
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

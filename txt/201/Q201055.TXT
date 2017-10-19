@@ -1,0 +1,51 @@
+DOCUMENT:Q201055  13-MAY-1999  [sms]
+TITLE   :SMS: Resource Manager Does Not Use Domain Names
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsmsMeterkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Systems Management Server 2.0, administrators have the ability to limit users
+of licensed software by adding or importing Windows NT users and groups from
+Windows NT domain controllers. This is a function of software metering and is
+done in Resource Manager. When you add a Windows NT user or group in Resource
+Manager, you do not specify Windows NT domains. Therefore, you cannot add a user
+or group with the same name from two different Windows NT domains.
+
+Resource Manager does not distinguish between user or group names from different
+domains. This is by design.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsmsMeter kbfaq
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

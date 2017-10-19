@@ -1,0 +1,62 @@
+DOCUMENT:Q138875  11-FEB-2000  [foxpro]
+TITLE   :DOC: READ EVENTS Command Not Documented in the Language Ref
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbdocfix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Visual FoxPro Language Reference manual does not document the READ EVENTS
+command. This is a new Visual FoxPro command that should have been listed in the
+Language Reference.
+
+This documentation error has been fixed in Visual FoxPro 3.0b and 5.0 for
+Windows.
+
+MORE INFORMATION
+================
+
+The Visual FoxPro Help file references READ EVENTS. For more information about
+the READ EVENTS command, search for "READ," and then select the "EVENTS" clause
+in the Visual FoxPro Help menu.
+
+NOTE: In Visual FoxPro 3.0b, search for READ EVENTS in the Visual FoxPro Help
+file.
+
+The READ EVENTS command starts event processing. In particular, READ EVENTS can
+activate a menu system by pausing code execution after a menu is displayed. READ
+EVENTS handles events until a CLEAR EVENTS is issued. For more information about
+FoxPro's event processing, please see the Visual FoxPro Developer's Guide,
+Chapter 4, "Understanding the Event Model."
+
+Additional query words: docerr VFoxWin 3.00b 5.00
+
+======================================================================
+Keywords          : kbdocfix 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

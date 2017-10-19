@@ -1,0 +1,64 @@
+DOCUMENT:Q230725  11-DEC-2001  [winnt]
+TITLE   :Err Msg: GRPCONV.EXE Is Not a Valid Windows NT Application
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you enable the Application Security (Appsec.exe) tool and a new user logs
+on to Windows NT Terminal Server for the first time, you may receive the
+following error message:
+
+   GRPCONV.EXE is not a valid Windows NT application.
+
+CAUSE
+=====
+
+This issue can occur if the authorized application list for the Application
+Security tool does not contain an entry for the Grpconv.exe tool.
+
+RESOLUTION
+==========
+
+To resolve this issue, add the following entry for the Windows Program Group
+Converter (Grpconv.exe) tool to the authorized application list in the
+Application Security tool
+
+   <drive>:\wtsrv\system32\grpconv.exe
+
+where <drive> is the letter of the drive where you installed Windows NT
+Terminal Server.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kberrmsg kbtool 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

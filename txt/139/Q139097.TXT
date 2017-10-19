@@ -1,0 +1,80 @@
+DOCUMENT:Q139097  08-NOV-2001  [miscsdk]
+TITLE   :HOWTO: How to Clean Up DirectDraw Using Release()
+PRODUCT :Miscellaneous Software Development Kits
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbDirectDraw KbDirectX kbFAQ kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Game Software Development Kit (SDK), version 1.0 
+ - Microsoft Windows XP Home Edition 
+ - Microsoft Windows XP Professional 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The DirectDraw object creates DirectDrawSurface, DirectDrawPalette, and
+DirectDrawClipper objects. Typically, an application or game will create the
+following at initialization time:
+
+ - The main DirectDraw object.
+
+ - A primary DirectDrawSurface with one or more back buffers that are attached
+   to the primary surface and are DirectDrawSurfaces.
+
+ - Other miscellaneous DirectDrawSurface(s) as needed.
+
+ - DirectDrawPalette(s) to attach to a surface as needed.
+
+ - DirectDrawClipper(s) to attach to a surface as needed.
+
+At clean-up time, the application or game should call Release() to release each
+object in reverse order of creation. A typical procedure to cleanup DirectDraw
+would follow this order:
+
+ - Release all DirectDrawClipper(s).
+
+ - Release all DirectDrawPalette(s).
+
+ - Release all miscellaneous DirectDrawSurface(s).
+
+ - Release the primary DirectDrawSurface.
+
+ - Release the main DirectDraw object.
+
+You don't need to release backbuffers explicitly because back buffers are
+attached to the primary surface, so they would be released with the primary
+buffer.
+
+An application or game can also clean up DirectDraw using a single call to
+Release() on the main DirectDraw object. The DirectDraw object, when released,
+will release all its associated surfaces, palettes, and clipper objects before
+going away.
+
+Additional query words: 1.00 kbinf DDraw
+
+======================================================================
+Keywords          : kbDirectDraw KbDirectX kbFAQ kbDSupport 
+Technology        : kbWinXPHome kbWinXPPro kbAudDeveloper _IKkbbogus kbSDKSearch kbSDKGame kbWinXPProSearch kbWinXPHomeSearch kbWinXPSearch
+Version           : :1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

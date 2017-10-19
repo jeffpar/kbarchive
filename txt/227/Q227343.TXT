@@ -1,0 +1,70 @@
+DOCUMENT:Q227343  01-FEB-2001  [win95x]
+TITLE   :Connection Manager Stops Responding When Canceling VPN Dialing
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When Connection Manager is dialing a virtual private network (VPN) server and
+you click Cancel, Connection Manager may stop responding. This may occur on a
+Microsoft Windows 95-based computer with Microsoft Windows 95 Dial-Up Networking
+Upgrade 1.2c (MSDUN).
+
+WORKAROUND
+==========
+
+To work around this behavior, upgrade to MSDUN 1.3.
+
+1. Use Task Manager to end the task.
+
+2. Restart the computer.
+
+3. Install MSDUN 1.3 from the Microsoft Download Center.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+For additional information on MSDUN 1.3 and how to install it, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q191494 Dial-Up Networking 1.3 Upgrade Available
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

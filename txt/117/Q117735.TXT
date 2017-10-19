@@ -1,0 +1,67 @@
+DOCUMENT:Q117735  22-JUL-2001  [visualc]
+TITLE   :Technical Support for the Chinon CD-ROM Drive
+PRODUCT :Microsoft C Compiler
+PROD/VER::1.0,1.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, version 1.5 
+ - Microsoft Visual C++, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Visual C++ after version 1.5 are available exclusively on CD-ROM. The
+versions listed above can be bought bundled with a Chinon 535 Series CD- ROM
+drive and Future Domain SCSI interface card in case you do not have your own
+CD-ROM drive. The drive and interface card are shipped from Chinon when the
+coupon enclosed with the product is returned to Chinon.
+
+Problems encountered during installation of the Chinon CD-ROM drive should be
+directed to Chinon Technical Support (see numbers below). Problems encountered
+with the Future Domain SCSI interface card should be directed to Future Domain
+Customer Support (see numbers below). Contact Microsoft Product Support for
+problems with the Microsoft Visual C++ products, at (425) 635-7007. (Check your
+"Getting Started" manual for additional details.)
+
+Chinon America, Inc.
+Information Equipment Division
+615 Hawaii Ave.
+Torrance, CA 90503
+Phone: (310) 533-0274 or (800) 441-0222
+Fax: (310) 533-1727
+BBS: (310) 320-4160 300-9600 baud 8-1-N
+
+Future Domain Corporation
+2801 McGaw Ave.
+Irvine, CA 92714
+Phone: (714) 253-0440
+Fax: (714) 253-0429
+
+Additional query words: kbinf 1.50 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbvc150 kbvc100
+Version           : :1.0,1.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

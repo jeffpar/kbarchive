@@ -1,0 +1,76 @@
+DOCUMENT:Q251143  22-JAN-2000  [winnt]
+TITLE   :Problems Installing Proxy Server 2.0 Update in Windows 2000
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS:2000; winnt:4.5
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Server 4.5 
+ - Microsoft Windows 2000 Server 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+For Microsoft Proxy Server 2.0 to function properly on a Windows 2000-based
+server, you must update it by using the Microsoft BackOffice Server 4.5
+Readiness Kit for Windows 2000. When you install this update, Setup stops and
+later restarts the World Wide Web Publishing (WWW) service. Setup may seem to
+stop responding (hang) while it is stopping and restarting the WWW service,
+while displaying either of following messages:
+
+   Setup is stopping the WWW services
+
+   -or-
+
+   Setup is starting the WWW services
+
+RESOLUTION
+==========
+
+The Setup program is not actually hung; the services do eventually stop and
+restart. There are two options:
+
+ - Wait for the WWW service to stop and start. This may take a long time.
+
+ - Manually stop and start the WWW service. Click Start, point to Programs,
+   point to Administrative Tools, and then click Services. When Setup is
+   attempting to stop the WWW service, manually stop the World Wide Web
+   Publishing service. After the update is complete and Setup is attempting to
+   restart the WWW service, manually restart the World Wide Web Publishing
+   service.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with installing BackOffice Server
+4.5 in Windows 2000.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbsetup 
+Technology        : kbwin2000Serv kbwin2000ServSearch kbwin2000Search kbAudDeveloper kbBackOfficeSearch kbBackOfficeServ450
+Version           : WINDOWS:2000; winnt:4.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

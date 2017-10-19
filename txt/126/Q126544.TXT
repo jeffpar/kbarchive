@@ -1,0 +1,81 @@
+DOCUMENT:Q126544  24-OCT-1999  [win3x]
+TITLE   :NOINT Virus Causes Unusual Network Error Messages in WFWG
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Windows for Workgroups, you receive the following error
+messages:
+
+   Windows File Server
+   Unable to initialize server services.
+
+Followed by the error message
+
+   You cannot run this application in a window or in the background
+
+or:
+
+   You cannot run this application while other high-resolution applications are
+   running fullscreen. The application will be suspended until a low-resolution
+   or text application is running fullscreen. Check the PIF settings to ensure
+   they are correct.
+
+Windows then continues to load with server services disabled.
+
+CAUSE
+=====
+
+These error messages can be caused by the NOINT virus.
+
+RESOLUTION
+==========
+
+Microsoft Anti-Virus (MSAV) can properly detect and remove this virus. To run
+MSAV, boot your computer from a clean floppy disk (such as the MS-DOS Setup
+disk) and then type MSAV at the command prompt.
+
+MORE INFORMATION
+================
+
+The NOINT virus is a boot-sector virus that is 512 bytes in size. It infects
+diskette boot sectors and hard disk partition tables. This virus remains
+resident in memory. This virus can also cause damaged file linkages, changes to
+system run-time operation, and changes to the boot sector.
+
+kbcategory: kberrmsg
+kbsubcategory: wfwg winboot
+
+Additional query words: 3.11 msav
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

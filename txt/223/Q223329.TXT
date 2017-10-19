@@ -1,0 +1,71 @@
+DOCUMENT:Q223329  06-AUG-2002  [exchange]
+TITLE   :XADM: Setting Server Monitor to Monitor Remote Computers
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It is possible to monitor and control the services of a server in a site
+(Monitored) using the Server Monitor program of another site (Monitoring).
+However, you cannot add or remove services for the monitored Exchange Server
+computer while it is connected to the monitoring site. This gives you the
+impression that services on the remote computer cannot be monitored or
+controlled. This article details the steps to set Server Monitor to monitor
+remote computers.
+
+MORE INFORMATION
+================
+
+To monitor and control the services of a remote computer from another site:
+
+1. On the server to be monitored, start the Microsoft Exchange Administrator
+   program. Click to expand the Configuration object, click to expand the
+   Servers object, and click <servername> (where <servername> is the
+   name of the monitored computer). On the File menu, click Properties, and
+   click Services, then add all of the services you want the Server Monitor to
+   monitor.
+
+2. Open the properties of the Server Monitor in the monitoring site. On the
+   right side of the Servers tab, add the remote server.
+
+3. Specify any actions you want Server Monitor to perform. To fully control each
+   of the actions offered within Server Monitor, such as Restart the Service,
+   the Windows NT account that is currently logged on to the monitoring server
+   needs to be a member of the Server Operators group on the remote server.
+
+4. When a service on the monitored server stops, the monitoring server recieves
+   an "Alert," if it is configured to.
+
+Additional query words: monitor, remote
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,77 @@
+DOCUMENT:Q245700  23-OCT-2000  [sms]
+TITLE   :Software Inventory Does Not Report All Files
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP1
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbsms200fix kbsms200preSP3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When Microsoft Systems Management Server (SMS) collects software inventory of
+.exe files, some files may not be listed in the Manufacturer or Unknown Files
+section in Resource Explorer.
+
+CAUSE
+=====
+
+If the Company Name box (found in the file's properties) does not contain data,
+the file is not reported during software inventory.
+
+To check if the Company Name box is blank, right-click the file, click
+Properties, and then click the Version tab. Then view the Company Name box.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, please see the following article
+in the Microsoft Knowledge Base:
+
+   Q236325 How to Obtain and Install Systems Management Server 2.0 Service Pack
+   2.0
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Microsoft Systems Management Server 2.0 Service Pack 2 (SP2) has corrected this
+issue by adding files that do not contain all the data necessary to the Software
+Inventory Unknown Files section in Resource Explorer.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsms200fix kbsms200preSP3 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1
+Version           : :2.0,2.0 SP1
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,83 @@
+DOCUMENT:Q126658  31-OCT-1999  [pcmail]
+TITLE   :PC MAPI: Sample C Code for MAPIAddress Function Call
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.0, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The simple messaging application program interface (MAPI) for Microsoft Mail for
+PC Networks includes a function that allows developers to access the address
+list user interface.
+
+The following C code illustrates a successful call to this function. This example
+allows address browsing only. The code was compiled, linked, and ran
+successfully using Microsoft Visual C++, version 1.5.
+
+MORE INFORMATION
+================
+
+      /* start code for MAPIAddress() call */ 
+      #include <stdio.h>
+      #include <windows.h>
+      #include <mapi.h>
+
+      lpMapiRecipDesc lppNewRecips;
+
+      int main(void)
+   {
+        LHANDLE lhSession;
+        ULONG rc, lpnNewRecips = 0;
+
+        rc = MAPILogon(0L, "", "", MAPI_LOGON_UI, 0L, &lhSession);
+
+        rc = MAPIAddress(lhSession, 0L, NULL, 0L, NULL, 0L, NULL, 0L, 0L, \ 
+        &lpnNewRecips, &lppNewRecips);
+
+        if( rc != SUCCESS_SUCCESS )
+           printf("MAPIAddress failed with %d", rc);
+
+        rc=MAPIFreeBuffer(lppNewRecips);/* free the memory used by MAPIAddress
+      */ 
+
+        rc = MAPILogoff(lhSession, 0L, 0L, 0L);
+
+       return (0);
+
+      }
+      /* end code */  
+
+For more information, please see the Microsoft Mail "Technical Reference," pages
+96-98.
+
+Additional query words: 3.00 3.20 MAPI address function
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN300
+Version           : WINDOWS:3.0,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

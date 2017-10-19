@@ -1,0 +1,68 @@
+DOCUMENT:Q30421  06-MAY-2001  [masm]
+TITLE   :FIX: Extra Line-Feed Char Generated in Four-Digit Listing File
+PRODUCT :Microsoft Macro Assembler
+PROD/VER::5.1,5.1a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 5.1, 5.1a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the current date consists of four digits (e.g. 1/2/88), Microsoft Macro
+Assembler (MASM) versions 5.10 and 5.10a will produce an assembly-listing file
+with extra blank lines in the page headings.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MASM versions 5.1 and 5.1a. This
+problem was corrected in MASM version 6.0.
+
+MORE INFORMATION
+================
+
+The following assembly-listing files were generated from the same source code.
+The only difference is the date on which they were created. Note the extra blank
+line between the data and the page number on the first listing.
+
+Listing 1
+---------
+Microsoft (R) Macro Assembler Version 5.10          1/2/88 19:55:07
+
+                                                    Page    1-1
+
+Listing 2
+---------
+Microsoft (R) Macro Assembler Version 5.10          1/23/88 19:55:07
+                                                    Page    1-1
+
+Additional query words: 5.10 5.10a buglist5.10 buglist5.10a fixlist6.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM510 kbMASM510a
+Version           : :5.1,5.1a
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

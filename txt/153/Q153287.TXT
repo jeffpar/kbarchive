@@ -1,0 +1,69 @@
+DOCUMENT:Q153287  27-JUL-2001  [sms]
+TITLE   :SMS Client Files Not Removed After Upgrade
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbsetup smssetup smsgeneral kbArtTypeINF
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+A client deinstall does not remove all of the SMS client files.
+
+CAUSE
+=====
+
+If the client has been upgraded the old cl_xx.txt and cl_xx.mod files are not
+removed. When a deinstall is initiated SMS may find the old .txt and .mod files
+and use those to remove the client files. SMS should instead use the new
+client's .txt and .mod files to remove any client files.
+
+For instance, if the client was upgraded from Windows 95 to Windows NT, the
+\Ms\Sms\Data directory will still have the CL_W95.txt and CL_W95.mod files along
+with the CL_NT.txt and CL_NT.mod files. If the client is then deinstalled SMS
+may use the CL_W95.txt and CL_W95.mod for the remove file list instead of
+CL_NT.txt and CL_NT.MoD.
+
+RESOLUTION
+==========
+
+Manually delete the old client's .txt and .mod files. This has been fixed in
+1.2. The client upgrade will now delete the old .txt and .mod files as part of
+the upgrade.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.1. It has been fixed in Systems Management Server version 1.2.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbnetwork kbsetup smssetup smsgeneral kbArtTypeINF 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

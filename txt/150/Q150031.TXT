@@ -1,0 +1,60 @@
+DOCUMENT:Q150031  08-AUG-2001  [winnt]
+TITLE   :Use of SSL Creates Performance Overhead for Browsers
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.0,2000,3.0,4.0,5
+OPER/SYS:
+KEYWORDS:kbnetwork kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Advanced Server, version 4.0 
+ - Microsoft Windows 2000 Advanced Server 
+ - Microsoft Windows 2000 Server 
+ - Microsoft Windows 2000 Professional 
+ - Microsoft Internet Information Server versions 2.0, 3.0, 4.0 
+ - Microsoft Internet Explorer version 5 for Windows 2000 
+ - Microsoft Internet Explorer versions 4.0, 5 for Windows NT 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The use of the Secure Sockets Layer (SSL) will slow performance between HTTP
+servers and browsers.
+
+MORE INFORMATION
+================
+
+If two HTTP web servers are developed with identical HTML, and SSL is applied to
+only one of the servers, the client browsers will experience a noticeable
+performance degradation when you browse the SSL web server.
+
+NOTE: Use encryption sparingly. The use of large bitmaps behind an SSL site
+should be used with discretion.
+
+
+Additional query words: prodiis iis implementation
+
+======================================================================
+Keywords          : kbnetwork kbusage 
+Technology        : kbWinNTsearch kbWinNT400search kbwin2000AdvServ kbwin2000AdvServSearch kbwin2000Serv kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTAdvSerSearch kbWinNTAdvServ400 kbwin2000ServSearch kbwin2000Search kbwin2000ProSearch kbwin2000Pro kbiisSearch kbIEsearch kbiis400 kbiis300 kbiis200 kbZNotKeyword2 kbIENT400Search kbIE500Search kbWinAdvServSearch kbZNotKeyword3 kbIE2000Search kbIE500Win2000 kbIE400WinNT400 kbIE500WinNT400 kbZnotKeyword7
+Version           : :2.0,2000,3.0,4.0,5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

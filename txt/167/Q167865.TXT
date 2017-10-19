@@ -1,0 +1,64 @@
+DOCUMENT:Q167865  17-DEC-2000  [win95x]
+TITLE   :Err Msg: Error 6117: The Workgroup Name Cannot Be the Same as...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetwork win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to log on to a Windows 95-based computer, you may receive the
+following error message:
+
+   The following error occurred while loading protocol number 0.
+   Error 6117: The workgroup name cannot be the same as the name of a computer.
+   Please specify a different workgroup name.
+
+CAUSE
+=====
+
+This behavior can occur when the workgroup name you entered matches a computer
+name on the network and not the established workgroup name.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the following steps:
+
+1. In Control Panel, double-click Network.
+
+2. Click the Identification tab.
+
+3. Verify that the name in the Workgroup box is the correct name for your
+   workgroup and not the same as the name of a computer on the network.
+
+4. Click OK. When you are prompted to restart the computer, do so.
+
+======================================================================
+Keywords          : kberrmsg kbnetwork win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

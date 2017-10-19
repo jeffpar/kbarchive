@@ -1,0 +1,79 @@
+DOCUMENT:Q123072  05-NOV-1999  [win16sdk]
+TITLE   :How to Use ToAscii() in Eastern European Windows
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+KEYBOARD.DRV in Eastern European versions of Windows version 3.1 has additional
+virtual keys. The ToAscii() function is modified in these versions of Windows to
+support the dual mode keyboard driver.
+
+MORE INFORMATION
+================
+
+Here's the syntax for ToAxcii():
+
+      ToAscii(UINT uVirtKey, UINT uScanCode, BYTE FAR* lpbKeyState,
+         DWORD FAR* lpdwTransKey, UINT fuState)
+
+In Eastern European versions of Windows version 3.1, uVirtKey has a few
+additional values specifically intended for these Windows.
+
+   VK_GETSTATUS    0x8A
+   VK_SET_PRI      0x88
+   VK_SET_SEC      0x89
+
+By using these Eastern European specific virtual keycodes, the application can
+check the current keyboard status, or set the keyboard mode.
+
+To Check keyboard status, use this code:
+
+      uiStatus = ToAscii(VK_GETSTATUS,....);
+      if(uiStatus == VK_SET_PRI)
+         MessageBox(hWnd, "Primary Mode"...);
+      else if(uiStatus == VK_SET_SEC)
+         MessageBox(hWnd, "Secondary Mode"...);
+      else
+         MessageBox(hWnd, "You use non-EE KEYBOARD.DRV"...);
+
+To set Primary mode, use this code:
+
+      ToAscii(VK_SET_PRI,...);
+
+To set Secondary mode, use this code:
+
+      ToAscii(VK_SET_SEC,...);
+
+Additional query words: 3.10 WM_KEYBOARDCHANGE
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

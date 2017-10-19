@@ -1,0 +1,69 @@
+DOCUMENT:Q114336  06-NOV-1999  [win3x]
+TITLE   :Missing MS At Work PC Fax Address Option in WFWG 3.11 Mail
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to create a new address entry in the Windows for Workgroups 3.11
+Mail program, the Microsoft At Work PC Fax address option is missing.
+
+NOTE: Even when this option is missing, you should not encounter any problems
+receiving or sending faxes.
+
+CAUSE
+=====
+
+This situation can be caused by a missing FAXNSP entry in the MSMAIL.INI file or
+a corrupted FAXNSP.DLL file in the Windows SYSTEM subdirectory.
+
+RESOLUTION
+==========
+
+Edit the MSMAIL.INI file located in the Windows directory and verify that the
+NAME= entry under the [Providers] section contains Faxnsp. Below is an example
+of how this section should look.
+
+      [Providers]
+      Name=Pabnsp MSSFS Faxnsp
+
+If the [Providers] section appears to be correct, it is possible that FAXNSP.DLL
+is corrupted. Expand a new FAXNSP.DLL from Disk 6 (of the 3.5- inch set) or Disk
+8 (of the 5.25-inch set) of Windows for Workgroups 3.11. For example, to expand
+a new copy of the file from a disk located in the A drive to a Windows directory
+located on the drive C, you would use the following:
+
+   expand a:\faxnsp.dl_ c:\windows\system\faxnsp.dll
+
+Additional query words: 3.11 dos not connected
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

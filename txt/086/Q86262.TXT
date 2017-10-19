@@ -1,0 +1,57 @@
+DOCUMENT:Q86262  06-NOV-1999  [vbwin]
+TITLE   :DOC: PENWIN.DLL Requires Windows 3.1
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Pen Computing, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In version 3.1 of the Microsoft Windows Software Development Kit (SDK), the
+section of the TIPS.HLP online help file that describes the contents of the
+redistributable files directory incorrectly states that all the dynamic- link
+libraries (DLLs) in the directory operate under Microsoft Windows versions 3.0
+and 3.1.
+
+PENWIN.DLL implements the Pen Extensions under Microsoft Windows 3.1. The Pen
+Extensions to Windows, and the OEM product Microsoft Windows for Pen Computing,
+each require the Windows 3.1 environment. Applications based solely on the Pen
+Extensions will not run under Windows 3.0. An application that uses the Pen
+Extensions should do one of the following:
+
+ - Use the Resource Compiler /31 switch to prevent the application from running
+   under Windows 3.0.
+
+ - Code the application to dynamically configure itself according to the
+   installed version of Windows.
+
+Additional query words: 1.00 no32bit
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbWinPenSearch kbZNotKeyword3 kbWinPen100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

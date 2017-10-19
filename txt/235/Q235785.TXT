@@ -1,0 +1,89 @@
+DOCUMENT:Q235785  01-NOV-2000  [sms]
+TITLE   :SMS: SMS Backup Schedule Is Updated Only Once a Day
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP1,2.0 SP2
+OPER/SYS:
+KEYWORDS:kbConfig kbServer kbsms200 kbsms200bug kbsmsUtil
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The schedule for the Backup SMS Site Server task can be changed at any time;
+however, the process that reads the schedule and performs all changes operates
+only once each day. Therefore, any changes made to the backup schedule can
+require as long as 24 hours to take effect.
+
+WORKAROUND
+==========
+
+To immediately start the Backup SMS Site Server task in Microsoft Systems
+Management Server (SMS) 2.0 Service Pack 1, manually start the SMS_SITE_BACKUP
+service. Doing so forces the process to cycle through the instructions in the
+SMSbkup.ctl file. The service then automatically shuts down. The SMSbkup.ctl
+file can be found in the SMS\inboxes\smsbkup.box folder.
+
+In both SMS 2.0 and SMS 2.0 Service Pack 1, to force SMSdbmon to reread the
+backup schedule and, if appropriate, start an immediate backup, follow these
+steps:
+
+1. In Notepad, open the following file:
+
+   \Sms\Bin\I386\Sqlmon.dat
+
+2. Locate the following string:
+
+   Backup SMS Site Server
+
+3. Change the date located directly after the backup string to a date more than
+   one week old.
+
+4. In the Service Manager, stop and restart the SMS_SQL_MONITOR (SMSdbmon)
+   service.
+
+Regardless of how the backup schedule is configured, this process forces SMSdbmon
+to read the schedule and run the backup process.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Systems Management
+Server version 2.0.
+
+MORE INFORMATION
+================
+
+Please refer to the SMS Administrator's Guide for additional information on how
+to stop and start SMS components, including the Backup service
+(SMS_SITE_BACKUP).
+
+Additional query words: prodsms recovery
+
+======================================================================
+Keywords          : kbConfig kbServer kbsms200 kbsms200bug kbsmsUtil 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : :2.0,2.0 SP1,2.0 SP2
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

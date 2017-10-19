@@ -1,0 +1,68 @@
+DOCUMENT:Q196786  08-MAY-2001  [msdn]
+TITLE   :PRB: MSDN Libraries 6.0 and October 1998 Fail to Coexist
+PRODUCT :Microsoft Developer Network
+PROD/VER:winnt:6.0
+OPER/SYS:
+KEYWORDS:kbHTMLHelp kbMSDN kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Developer Network (MSDN) 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the MSDN Library asks you to specify the location of a CD-ROM and you
+specify a network or shared drive, one of the following error messages appears:
+
+   Hh : The program has performed an illegal operation and will be shut down. If
+   the problem persists, contact the program vendor.
+
+   -or-
+
+   hh.exe - Application Error : The instruction at "0x5d34543c" referenced
+   memory at "0x0000000c". The memory could not be "read".
+
+CAUSE
+=====
+
+Sometimes installing another version of the MSDN Library corrupts the
+Hhcolreg.dat file. This has been known to happen more frequently when the MSDN
+Library is installed from a network location.
+
+RESOLUTION
+==========
+
+For additional information about manually uninstalling the MSDN Library, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q240350 HOWTO: Manually Uninstall the MSDN Library
+
+Then only reinstall the most recent version of the MSDN Library.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHTMLHelp kbMSDN kbGrpDSTools 
+Technology        : kbMSDNSearch kbZNotKeyword2
+Version           : winnt:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

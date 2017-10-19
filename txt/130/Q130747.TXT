@@ -1,0 +1,67 @@
+DOCUMENT:Q130747  13-JUN-2001  [winmisc]
+TITLE   :WSS Setup Does Not Load TASKMAN.EXE
+PRODUCT :Miscellaneous Windows Products
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you choose the Task Manager button to close applications during the
+installation of the Microsoft Windows Sound System, your computer beeps and does
+not open the Task Manager program specified in the [BOOT] section of the
+SYSTEM.INI file.
+
+CAUSE
+=====
+
+The Windows Sound System tries to open TASKMAN.EXE from the Windows directory
+instead of using the TASKMAN= line in the [BOOT] section of the SYSTEM.INI file
+to locate the Task Manager program.
+
+RESOLUTION
+==========
+
+Make sure that the TASKMAN.EXE file is present in the Windows directory, or
+press CTRL+ESC to load the task manager specified in the SYSTEM.INI file.
+
+MORE INFORMATION
+================
+
+When you install the Windows Sound System, Setup prompts you to close all other
+applications before continuing. Setup displays a Task Manager button so that you
+can use Task Manager to close the other applications. However, choosing this
+button does not open the task manager specified in the SYSTEM.INI file. Instead,
+Setup tries to load the TASKMAN.EXE file from the Windows directory. If this
+file is not present, your computer beeps and Task Manager is not loaded.
+
+Additional query words: 2.00
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys200
+Version           : :2.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

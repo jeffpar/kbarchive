@@ -1,0 +1,58 @@
+DOCUMENT:Q174254  11-JAN-2002  [exchange]
+TITLE   :XADM: GroupWise Users must Grant Access Rights to be Migrated
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+To migrate Novell GroupWise users, the Microsoft Exchange Migration Wizard
+requires that each user grant read and write access rights to Mail/Phone,
+Appointments, Notes, Tasks, and select Read Items Marked Private.
+
+MORE INFORMATION
+================
+
+If none of these access rights are selected, an error is detected and recorded
+in the Windows NT Server Event Viewer Application log. If partial access rights
+are granted (for example, read and write access to Mail/Phone and Appointments
+are granted, but no rights are granted to Notes and Tasks), the migration
+completes without reporting an error accessing Note and Task information. Only
+Mail/Phone and Appointment data is migrated.
+
+Due to GroupWise implementation issues, Exchange Server cannot detect and report
+on access rights to individual mail types.
+
+Additional query words: migwiz xbeta gwise
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

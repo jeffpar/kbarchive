@@ -1,0 +1,87 @@
+DOCUMENT:Q173099  11-NOV-1999  [pcmail]
+TITLE   :MTG: OS2 Causes a GP Fault in Async.ovl.exe
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When processing mail with the Microsoft Mail Multitasking MTA for Windows NT (NT
+MMTA) external program, NT MMTA crashes with a system error message:
+
+   OS/2 caused a General Protection Fault in ASYNC.OVL.EXE
+
+CAUSE
+=====
+
+This error will occur when the external program encounters a mailbag that
+contains a message which is corrupted. This corrupted message could be in an
+external postoffice outbound mailbag, directory synchronization mailbag, gateway
+mailbag, or the inbound mailbag. When more details are enabled for logging mta
+activity, the Session.log may end with an entry similar to the following
+example:
+
+   m:\mai\ma.\001.net!agate!biosci!news.stanford..mai error code = 2
+
+Because there is no MAI subdirectory named "MA.", this is the corrupted message
+causing the NT MMTA to fail.
+
+RESOLUTION
+==========
+
+The mailbag containing the corrupted message must be reset or rebuilt. A manual
+reset using MS-DOS Debug or the Mailq16 utility can be used to fix the mailbag
+files. In some cases, identification of the affected mailbag may not be
+possible.
+
+MORE INFORMATION
+================
+
+Use the Mailq16.exe utility that ships in the Microsoft Mail for PC Networks
+Resource Kit to reset or rebuild the KEY and MBG files for the user. Mailq16.exe
+is also found on the TechNet CD.
+
+For additional information on how to run Mailq16.exe, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q130285 PC Adm: Resetting or Rebuilding Mailbags with MAILQ16.EXE
+
+For additional information how to use MS-DOS Debug to reset mailbags, please see
+the following article in the Microsoft Knowledge Base:
+
+   Q104279 PC DB: Creating or Resetting a .KEY and .MBG Pair
+
+NOTE: Resetting a mailbag will result in a loss of all messages it contains.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN350
+Version           : WINDOWS:3.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,77 @@
+DOCUMENT:Q175212  11-JAN-2001  [vbwin]
+TITLE   :SAMPLE: CHRTSAMP.EXE Visual Basic 5.0 MSChart Sample
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbfile kbsample kbchart kbVBp500 kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The MSChart control sample project demonstrates how you can use the MSChart
+control to graphically display numeric information. This control allows you to
+display several different 2D and 3D charts in a variety of ways by controlling
+the appropriate properties. This sample also includes a supplemental Help file
+that contains additional information about the MSChart control.
+
+The sample is available for download from the Visual Basic Owner's site at:
+
+   http://premium.microsoft.com/download/vbasic/ChrtSamp.exe (181Kb).
+
+Note that you have to register to enter this site.
+
+When you run the self-extracting executable, the following files are expanded
+into the VBWebSamples directory of your Visual Basic installation:
+
+ - ChrtSamp.vbp 2Kb
+
+ - frmchart.frm 13Kb
+
+ - frmchart.frx 11Kb
+
+ - gas.xls 17Kb
+
+ - modchart.bas 8Kb
+
+ - mschart.cnt 1Kb
+
+ - mschart.hlp 296Kb
+
+ - Readme.txt 2Kb
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Arsenio Locsin, Microsoft Corporation
+
+
+Additional query words: ms chart charting example graph
+
+======================================================================
+Keywords          : kbfile kbsample kbchart kbVBp500 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500
+Version           : :5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

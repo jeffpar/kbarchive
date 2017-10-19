@@ -1,0 +1,64 @@
+DOCUMENT:Q89875  19-FEB-2002  [winmisc]
+TITLE   :Changes Made to SYSTEM.INI File During Sound System Setup 1.0
+PRODUCT :Miscellaneous Windows Products
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Sound System, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Windows Sound System Setup program makes the following changes to the
+SYSTEM.INI file located in the Windows directory:
+
+ - The following line is added to the [386Enh] section:
+
+   Device=VSNDSYS.386
+
+ - The following lines are added to the [drivers] section:
+
+   wave=SNDSYS.DRV aux=SNDSYS.DRV midi=SNDSYS.DRV WaveMapper=MSACM.DRV
+
+ - The following line is added to the [mciseq.drv] section:
+
+   disablewarning=true
+
+ - The following section is added:
+
+   [SNDSYS.DRV] DmaBufferSize=32 EnableAutoAcquireOPL3=1 DMADAC=0 DMAADC=0
+   Interrupt=11 IOAddress=530
+
+ - The [386Enh] section is moved to the end of the file.
+
+ - Lines that are commented out in the [386Enh] section (lines that have a
+   semicolon [;] in front of them) are reproduced, and the entire set of
+   commented out lines is placed at the beginning of the [386Enh] section.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinSoundSysSearch kbWinSoundSys100 kbWinSoundSys100a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

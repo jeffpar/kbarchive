@@ -1,0 +1,80 @@
+DOCUMENT:Q238158  25-JUN-2000  [homemm]
+TITLE   :Reference Suite 2000: Locations of Network Administrator's Guide
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::; WINDOWS:
+OPER/SYS:
+KEYWORDS:kbnetwork kbref kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia 2000 
+ - Microsoft Encarta Reference Suite 2000 
+ - Microsoft Encarta Interactive World Atlas 2000 
+ - Microsoft Encarta World English Dictionary 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the name of the Network Administrator's Guide file as well as
+the folder in which it is located for each of the programs listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The following table lists the file name of the Network Administrator's Guide
+file and the folder in which it is located on the program CD-ROM or DVD-ROM for
+each of the programs listed at the beginning of this article.
+
++------------------------------------------------------------+
+| Program                              | File name | Folder  | 
++------------------------------------------------------------+
+| Encarta Encyclopedia 2000            | Nag.doc   | Support | 
++------------------------------------------------------------+
+| Encarta Encylopedia 2000 DVD-ROM     | Nag.doc   | Support | 
++------------------------------------------------------------+
+| Encarta Reference Suite 2000         | Nag.doc   | Support | 
++------------------------------------------------------------+
+| Encarta Reference Suite 2000 DVD-ROM | Nag.doc   | Support | 
++------------------------------------------------------------+
+| Encarta World English Dictionary     | Nag.doc   | Support | 
++------------------------------------------------------------+
+
+NOTE: The file name and the contents of the Network Administrator's Guide file
+are both different for Microsoft Bookshelf 2000.
+
+REFERENCES
+==========
+
+For additional information about the Network Administrator's Guide for Bookshelf
+2000, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q225211 Location of the Network Administrator's Guide
+
+Additional query words: multi multi-media media mm ers2k ee2k ewa2k
+
+======================================================================
+Keywords          : kbnetwork kbref kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc2000 kbEncartaReference2000 kbEncartaWorldAtlas2000
+Version           : :; WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,73 @@
+DOCUMENT:Q111045  08-AUG-2001  [winnt]
+TITLE   :Boot Partition Size Limit with Compaq SmartSCSI Controller
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1 3.5
+OPER/SYS:
+KEYWORDS:kb3rdparty kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The boot partition on a Compaq computer with Compaq's SmartSCSI disk controller
+is limited to 7.9 gigabytes (GB).
+
+For information on size limits of the Windows NT boot partition, please see the
+following article in the Microsoft Knowledge Base:
+
+   ARTICLE-ID: Q119497
+   TITLE : Boot Partition Created During Setup Limited to 4 Gigabytes
+
+MORE INFORMATION
+================
+
+The Compaq Smart Controller allows you to create logical drives up to 14 GB.
+However, if you set the boot partition to anything larger than 7.9 GB, Windows
+NT Setup fails immediately, and an error message appears stating that the
+bootable partition is too large.
+
+This error message appears because no miniport driver is loaded to initialize the
+Compaq controller. Consequently, the drive geometry is reported to the system
+through the BIOS. Therefore, the limitation is a result of the 7.9 GB limit
+imposed by the SmartSCSI BIOS.
+
+Compaq uses the SmartSCSI controllers on both Proliant and SystemPro models.
+
+You can call Compaq technical support at (800) 652-6672.
+
+The Compaq products included here are manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+Additional query words: prodnt gigabyte
+
+======================================================================
+Keywords          : kb3rdparty kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW310 kbWinNTSsearch kbWinNTS350 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS350search kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : 3.1 3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

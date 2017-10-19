@@ -1,0 +1,70 @@
+DOCUMENT:Q174809  17-JUL-2001  [visualc]
+TITLE   :FIX: Developer Studio Crashes Randomly When Navigating Workspace
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbVC500bug kbVisID100bug kbVisID600fix kbVJ110bug kbVS97bug kbVS600fix kbVS97sp3fix kbG
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+ - Microsoft Visual J++, version 1.1 
+ - Microsoft Visual InterDev, version 1.0 
+ - Microsoft Visual Studio 97 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Developer Studio crashes randomly while navigating in the Workspace's FileView
+or ClassView window and trying to activate different operations with right-mouse
+click, dragging objects, etc. The crash may also occur when using "Open
+Workspace" from the File menu to open a makefile. The crash is accompanied by an
+access violation dialog box. When debugged, the access violation usually points
+to the IsAlpha() function.
+
+CAUSE
+=====
+
+The cause of this access violation was due to uninitialized and invalid
+pointers.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Studio 97 Service
+Pack 3.
+
+For more information, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+Additional query words: Visual C++ visualc J++ Interdev
+
+======================================================================
+Keywords          : kbVC500bug kbVisID100bug kbVisID600fix kbVJ110bug kbVS97bug kbVS600fix kbVS97sp3fix kbGrpDSTools 
+Technology        : kbVCsearch kbVSsearch kbVJsearch kbVisIDsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVisID100 kbVJ110 kbVS97 kbVS97Search kbVC500Search
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

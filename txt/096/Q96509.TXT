@@ -1,0 +1,65 @@
+DOCUMENT:Q96509  19-FEB-2002  [lanman]
+TITLE   :Installing OS/2 on EISA Gateway 486 with Ultrastore 24F
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+After getting the right bid file from Ultrastore and putting it on the OS/2
+Install Disk, a Gateway 486/33 machine hangs after the initial OS/2 operating
+system banner.
+
+CAUSE
+=====
+
+The EISA configuration program for the Gateway computer incorrectly detects the
+amount of memory that is in the system.
+
+RESOLUTION
+==========
+
+To correct the problem, specify the amount of memory in the system in EISA
+Config, then reboot.
+
+MORE INFORMATION
+================
+
+The Ultrastore 24F is an unsupported SCSI controller for Microsoft OS/2 1.30.1.
+However, Ultrastore has a .BID file for it on their bulletin board. The bulletin
+board phone number is (510) 623-9091.
+
+You must obtain the ULTRA24.BID file from the Ultrastore BBS. You must rename
+this file to BOOTBID.BID and place it on the OS/2 Install A disk. After doing
+this, you can boot with this disk and proceed with the rest of the OS/2
+installation.
+
+You will need to use the EISA configuration utility from Gateway to configure the
+Ultrastore controller since it is an EISA device. At this time, manually insert
+the correct amount of memory to avoid the "hanging" problem.
+
+This is an unsupported configuration, and thus should be used with caution.
+
+Additional query words: 2.10
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

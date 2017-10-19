@@ -1,0 +1,66 @@
+DOCUMENT:Q262673  27-OCT-2000  [exchange]
+TITLE   :XADM: Modified Deferred Delivery Messages Are Never Sent
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5; :
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+ - Microsoft Outlook 2000 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Outlook 2000 allows you to send a message marked for deferred
+delivery. This message remains in your Outbox folder until the delivery time has
+expired, at which point the message is sent. If you modify and then simply close
+the message, the message is not sent. For deferred delivery to be successful,
+you must click Send after you make any modifications to the message.
+
+MORE INFORMATION
+================
+
+In the Outlook 2000 Outbox, a deferred delivery message is represented by a
+sealed envelope icon, and its title is displayed in italics. After the message
+is opened, the icon changes to an open letter and the message title is no longer
+italicized. These changes indicate that the message has been either read or
+modified and then closed. This message is not sent when the deferred delivery
+time expires.
+
+To send this message, you must re-open it and then click Send. After you do this,
+the message title is italicized and the sealed envelope icon returns. This
+message is sent when the deferred delivery time expires.
+
+If the deferred delivery time expires while the message is marked with an
+open-letter icon, you must update the delivery time to a future time value
+before clicking Send.
+
+
+Additional query words: deferred delivery submission
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOutlook2000Search kbZNotKeyword3
+Version           : winnt:5.5; :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

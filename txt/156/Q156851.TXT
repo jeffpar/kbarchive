@@ -1,0 +1,75 @@
+DOCUMENT:Q156851  15-FEB-2002  [visualc]
+TITLE   :PRB:Run to Cursor and Breakpoints Don't Work After Debug.Break
+PRODUCT :Microsoft C Compiler
+PROD/VER::4.2
+OPER/SYS:
+KEYWORDS:kbProgramming kbtool kbDebug kbEEdition kbSQL kbVC kbSQLProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, version 4.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+"Run to cursor" and breakpoints do not work after Debug.Break when debugging a
+SQL Server stored procedure on Windows 95.
+
+
+RESOLUTION
+==========
+
+Debug.Break is not supported when debugging a SQL stored procedure. This is by
+design.
+
+When debugging a SQL stored procedure, the debugger always stops on the first
+line of executable code in the stored procedure. You can then set breakpoints
+and use the "Run to cursor" feature.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Start debugging a SQL Server stored procedure and immediately select Break
+   from the Debug menu.
+
+
+2. Right-click the stored procedure window and select the option "Run to
+   Cursor".
+
+The stored procedure will run to completion. It will not stop at cursor. If there
+are additional breakpoints, these will not be hit.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbProgramming kbtool kbDebug kbEEdition kbSQL kbVC kbSQLProg 
+Technology        : kbVCsearch kbAudDeveloper kbVC420
+Version           : :4.2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

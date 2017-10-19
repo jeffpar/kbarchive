@@ -1,0 +1,70 @@
+DOCUMENT:Q243694  16-MAY-2002  [homegame]
+TITLE   :Asheron's Call: Play Button Is Unavailable
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbsetup kbui igz kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Asheron's Call, version 1.0 
+ - Microsoft Asheron's Call: Dark Majesty, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you connect to the Microsoft Zone.com and enter a game room for Microsoft
+Asheron's Call, the Play button may be unavailable or the Play button may be
+replaced with a Downloading button.
+
+CAUSE
+=====
+
+This behavior can occur for any of the following reasons:
+
+ - The Microsoft Asheron's Call servers are not on line.
+
+ - The software necessary to play Asheron's Call is not installed on your
+   computer.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the appropriate method:
+
+ - Wait until the Asheron's Call servers are available.
+
+   When the servers are available, the Play button becomes available.
+   Additionally, information concerning the status of the Asheron's Call servers
+   may be displayed in the game room window.
+
+ - Wait until the necessary Asheron's Call software is finished being installed
+   on your computer. When the software is installed, the Play button becomes
+   available.
+
+Additional query words: 1.00 ac msngz greyed out dimmed asherons
+
+======================================================================
+Keywords          : kbsetup kbui igz kbimu msgame kbfaq
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbMSNSearch kbAsheronSearch kbAsheron100 kbAsheronDarkMaj
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

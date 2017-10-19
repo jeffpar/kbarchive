@@ -1,0 +1,213 @@
+DOCUMENT:Q112847  22-OCT-1999  [win3x]
+TITLE   :WFWG 3.11 Disk 8 Directory Listing (5.25 Inch, 1.2 MB)
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+This article contains the directory listing of Disk 8 of the Windows for
+Workgroups version 3.11 1.2-megabyte 5.25-inch disk set dated 11/1/93.
+
+MORE INFORMATION
+================
+
+Disk 8
+------
+
+   Volume in drive A is MSWFW8
+   Volume Serial Number is 531D-2B0F
+   Directory of A:\
+
+40291730 WP_         1,035 11-01-93   3:11a
+40293930 WP_         1,627 11-01-93   3:11a
+ARCADE   BM_           344 11-01-93   3:11a
+ARGYLE   BM_           240 11-01-93   3:11a
+AWCLASS1 DL_         7,883 11-01-93   3:11a
+AWCLASS2 DL_         8,342 11-01-93   3:11a
+AWFXPROT DL_         6,867 11-01-93   3:11a
+AWT30    DL_         7,574 11-01-93   3:11a
+CANON10E DR_         2,393 11-01-93   3:11a
+CANON130 DR_         2,630 11-01-93   3:11a
+CANON330 DR_         4,909 11-01-93   3:11a
+CAN_ADF  EX_        33,823 11-01-93   3:11a
+CHIMES   WA_         8,713 11-01-93   3:11a
+CIT24US  DR_         7,323 11-01-93   3:11a
+CIT9US   DR_         6,006 11-01-93   3:11a
+CLOCK    EX_         9,094 11-01-93   3:11a
+CONTROL  SR_         1,132 11-01-93   3:11a
+COURE    FO_         7,503 11-01-93   3:11a
+DEC1150  WP_         1,752 11-01-93   3:11a
+DEC2150  WP_         1,714 11-01-93   3:11a
+DEC2250  WP_         1,834 11-01-93   3:11a
+DEC3250  WP_         1,873 11-01-93   3:11a
+DECCOLOR WP_         1,252 11-01-93   3:11a
+DECLPS20 WP_         1,432 11-01-93   3:11a
+DICONIX  DR_         1,999 11-01-93   3:11a
+DING     WA_         4,960 11-01-93   3:11a
+DISK8                    8 11-01-93   3:11a
+DLLSCHED DL_         4,262 11-01-93   3:11a
+DMCOLOR  DL_        12,956 11-01-93   3:11a
+EFAXDRV  DR_         5,475 11-01-93   3:11a
+EGYPT    BM_           221 11-01-93   3:11a
+EPL75523 WP_         1,466 11-01-93   3:11a
+EPSON24  DR_         5,100 11-01-93   3:11a
+EPSON9   DR_         6,857 11-01-93   3:11a
+ESCP2    DR_         4,002 11-01-93   3:11a
+EXECJET  DR_         5,123 11-01-93   3:11a
+FAXCODEC DL_         8,147 11-01-93   3:11a
+FAXMGR   EX_         4,671 11-01-93   3:11a
+FAXNSP   DL_         8,646 11-01-93   3:11a
+GENDRV   DL_        44,284 11-01-93   3:11a
+HONEY    BM_           338 11-01-93   3:11a
+HPDSKJET DR_        24,456 11-01-93   3:11a
+HPELI523 WP_         1,487 11-01-93   3:11a
+HPIID522 WP_         1,468 11-01-93   3:11a
+HPIII522 WP_         1,453 11-01-93   3:11a
+HPIIP522 WP_         1,462 11-01-93   3:11a
+HPPLOT   DR_        31,689 11-01-93   3:11a
+HP_3D522 WP_         1,534 11-01-93   3:11a
+HP_3P522 WP_         1,480 11-01-93   3:11a
+IBM17521 WP_           976 11-01-93   3:11a
+IBM39521 WP_         1,571 11-01-93   3:11a
+IBM4019  DR_        26,747 11-01-93   3:11a
+IBM5204  DR_         4,140 11-01-93   3:11a
+IFSHLP   SY_         3,343 11-01-93   3:11a
+KEYVIEW  EX_         1,513 11-01-93   3:11a
+L100_425 WP_         1,529 11-01-93   3:11a
+L200230& WP_         1,601 11-01-93   3:11a
+L300_471 WP_         1,725 11-01-93   3:11a
+L300_493 WP_         1,604 11-01-93   3:11a
+L330_52& WP_         1,607 11-01-93   3:11a
+L500_493 WP_         1,681 11-01-93   3:11a
+L530_52& WP_         1,667 11-01-93   3:11a
+L630_52& WP_         1,644 11-01-93   3:11a
+LBPII    DR_        23,523 11-01-93   3:11a
+LBPIII   DR_        32,129 11-01-93   3:11a
+LM21DRV  UP_           525 11-01-93   3:11a
+LPT      38_         2,678 11-01-93   3:11a
+MCICDA   DR_         7,458 11-01-93   3:11a
+MIDIMAP  CF_         5,093 11-01-93   3:11a
+MMTASK   TS_           755 11-01-93   3:11a
+MODERN   FO_         3,711 11-01-93   3:11a
+MPU401   DR_         4,731 11-01-93   3:11a
+MSD      IN_           341 11-01-93   3:11a
+MSHEARTS HL_         7,521 11-01-93   3:11a
+MT_TI101 WP_         1,328 11-01-93   3:11a
+N2090522 WP_         1,395 11-01-93   3:11a
+N2290520 WP_         1,308 11-01-93   3:11a
+N2990523 WP_         1,427 11-01-93   3:11a
+N890X505 WP_         1,347 11-01-93   3:11a
+N890_470 WP_         1,345 11-01-93   3:11a
+NCM40519 WP_           662 11-01-93   3:11a
+NCM80519 WP_         1,194 11-01-93   3:11a
+NDDEAPI  DL_         9,022 11-01-93   3:11a
+NEC24PIN DR_         9,374 11-01-93   3:11a
+NETAPI   DL_        59,968 11-01-93   3:11a
+NOTEPAD  HL_         7,269 11-01-93   3:11a
+O5241503 WP_         1,418 11-01-93   3:11a
+O5242503 WP_         1,399 11-01-93   3:11a
+OKI24    DR_         4,920 11-01-93   3:11a
+OKI9     DR_         3,669 11-01-93   3:11a
+OKI9IBM  DR_         3,367 11-01-93   3:11a
+OL840518 WP_         1,487 11-01-93   3:11a
+P4455514 WP_         1,528 11-01-93   3:11a
+PAINTJET DR_         2,637 11-01-93   3:11a
+PANSON24 DR_         3,865 11-01-93   3:11a
+PANSON9  DR_         4,172 11-01-93   3:11a
+PBRUSH   DL_         4,423 11-01-93   3:11a
+PHIIPX   WP_         1,169 11-01-93   3:11a
+PROPRINT DR_         3,150 11-01-93   3:11a
+PROPRN24 DR_         3,126 11-01-93   3:11a
+PRTUPD   INF        15,855 11-01-93   3:11a
+PS1      DR_         3,269 11-01-93   3:11a
+PSCRIPT  DR_       125,229 11-01-93   3:11a
+Q2200510 WP_         1,529 11-01-93   3:11a
+Q820_517 WP_         1,443 11-01-93   3:11a
+QWIII    DR_         4,119 11-01-93   3:11a
+RAMDRIVE SY_         3,295 11-01-93   3:11a
+RASSTART EX_         5,705 11-01-93   3:11a
+RECORDER DL_         7,001 11-01-93   3:11a
+REDBRICK BM_           371 11-01-93   3:11a
+REGEDITV HL_         9,444 11-01-93   3:11a
+RINGIN   WA_         7,892 11-01-93   3:11a
+RINGOUT  WA_         2,546 11-01-93   3:11a
+RIVETS   BM_           154 11-01-93   3:11a
+RMM      D3_         5,026 11-01-93   3:11a
+ROMAN    FO_         5,423 11-01-93   3:11a
+SCRIPT   FO_         4,695 11-01-93   3:11a
+SCRNSAVE SC_         2,317 11-01-93   3:11a
+SEIKO_04 WP_         1,312 11-01-93   3:11a
+SEIKO_14 WP_         1,391 11-01-93   3:11a
+SENDFILE DL_         3,511 11-01-93   3:11a
+SERIAL   38_         5,955 11-01-93   3:11a
+SETUP    RE_         1,257 11-01-93   3:11a
+SF4019   EX_        30,999 11-01-93   3:11a
+SIGVIEW  EX_         3,048 11-01-93   3:11a
+SND      CP_         4,434 11-01-93   3:11a
+SOL      HL_         6,996 11-01-93   3:11a
+SOUNDREC HL_         8,752 11-01-93   3:11a
+SQUARES  BM_           161 11-01-93   3:11a
+SSFLYWIN SC_         8,648 11-01-93   3:11a
+SSMARQUE SC_         8,609 11-01-93   3:11a
+SSSTARS  SC_         8,287 11-01-93   3:11a
+TASKMAN  EX_         2,029 11-01-93   3:11a
+THATCH   BM_           211 11-01-93   3:11a
+THINKJET DR_         2,094 11-01-93   3:11a
+TIM17521 WP_           994 11-01-93   3:11a
+TIM35521 WP_         1,491 11-01-93   3:11a
+TKPHZR21 WP_         1,417 11-01-93   3:11a
+TKPHZR31 WP_         1,503 11-01-93   3:11a
+TOOLHELP DL_         9,232 11-01-93   3:11a
+TRNOFF   DL_         2,497 11-01-93   3:11a
+TRNSCHED DL_         8,002 11-01-93   3:11a
+TTY      DR_        14,795 11-01-93   3:11a
+TTY      HL_         7,549 11-01-93   3:11a
+VCACHE   38_         2,587 11-01-93   3:11a
+VCOMM    38_         2,590 11-01-93   3:11a
+VPMTD    38_         1,626 11-01-93   3:11a
+VSHARE   38_         7,651 11-01-93   3:11a
+VXDLDR   38_         3,256 11-01-93   3:11a
+WFWNET   DR_       167,247 11-01-93   3:11a
+WFWNET   HL_        32,308 11-01-93   3:11a
+WFWNETCP CP_         2,365 11-01-93   3:11a
+WIN386   PS_           419 11-01-93   3:11a
+WIN87EM  DL_         7,917 11-01-93   3:11a
+WINMINE  HL_         6,118 11-01-93   3:11a
+WINVER   _           1,639 11-01-93   3:11a
+ZIGZAG   BM_           205 11-01-93   3:11a
+      157 file(s)      1,173,036 bytes
+                           3,072 bytes free
+
+Additional query words: wfw wfwg 3.11 dirwfw list
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

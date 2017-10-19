@@ -1,0 +1,75 @@
+DOCUMENT:Q185619  17-DEC-2000  [win95x]
+TITLE   :Windows 95 Accesses the Floppy Disk Drive at Startup
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbusage win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Windows 95 normally or in Safe mode, the floppy disk drive may be
+accessed.
+
+CAUSE
+=====
+
+This behavior can occur when a file type has an action associated with it that
+refers to the floppy disk drive.
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. Double-click My Computer, and then click Options on the View menu.
+
+2. Click the File Types tab.
+
+3. In the Registered File Types box, click each file type until the floppy disk
+   drive is accessed.
+
+4. Click Edit.
+
+5. In the Actions box, click an action, and then click Edit.
+
+6. In the Application Used To Perform Action box, change the path to a program
+   located on the hard disk drive, instead of a program located on the floppy
+   disk drive, and then click OK.
+
+7. Repeat steps 5-6 for each action that refers to a program located on the
+   floppy disk drive.
+
+8. Click Close, and then click Close again.
+
+Additional query words: desktop polling access polls
+
+
+======================================================================
+Keywords          : kbusage win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

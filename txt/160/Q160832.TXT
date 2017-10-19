@@ -1,0 +1,80 @@
+DOCUMENT:Q160832  08-NOV-2001  [frontpg]
+TITLE   :FP: "Center" Alignment Not Supported for ActiveX Objects
+PRODUCT :Word Front Page
+PROD/VER::; MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the Properties dialog box for an ActiveX object, the Alignment box does not
+include the Center option.
+
+RESOLUTION
+==========
+
+To work around this problem, select the Middle option.
+
+"Middle" has the same effect as "Center" when you view the page in a Web browser.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Microsoft FrontPage
+98 for Windows.
+
+MORE INFORMATION
+================
+
+The Align="Center" parameter of the <Object> tag does not center the
+object horizontally. It only centers surrounding text vertically alongside the
+object.
+
+If you want to center an object horizontally, use either of the following
+methods.
+
+Method 1
+--------
+
+Select the object and click Paragraph on the Format menu. In the Paragraph
+Alignment list, select Center, and then Click OK.
+
+Method 2
+--------
+
+Select the object and click the Center button on the Standard toolbar.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage kbdta 
+Technology        : kbHWMAC kbOSMAC kbFrontPageSearch kbZNotKeyword8 kbZNotKeyword kbFrontPage97Search kbFrontPageMac kbZNotKeyword3
+Version           : :; MACINTOSH:1.0
+Hardware          : MAC x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

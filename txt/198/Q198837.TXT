@@ -1,0 +1,79 @@
+DOCUMENT:Q198837  18-DEC-2000  [iis]
+TITLE   :Connection Manager No Longer Works after Upgrade to Windows 98
+PRODUCT :Internet Information Server
+PROD/VER:WINDOWS:95; winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+ - Microsoft Windows 98 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Connection Manager profiles no longer work properly after you upgrade from
+Windows 95 to Windows 98 in DOS mode or from a previous version of DOS.
+
+CAUSE
+=====
+
+DOS does not understand long file names. The Windows 98 upgrade determines that
+the c:\progra~1\connec~1 directory where Connection Manager is located is
+actually the Internet Connection Wizard included with Windows 98. The upgrade
+process incorrectly modifies several files and directory locations in the
+registry. The previously configured connectoid will no longer work and may be
+removed from the Desktop.
+
+WORKAROUND
+==========
+
+To work around this problem, do one of the following:
+
+ - When you upgrade from Windows 95 to Windows 98, upgrade from Windows instead
+   of a DOS prompt or previous version of DOS.
+
+-OR-
+
+ - If you must upgrade from DOS, you will need to reinstall the Connection
+   Manager connectiod that you created in Connection Manager Administration Kit
+   (CMAK). In most cases you can simply re-run the *.exe file you created. If
+   you no longer have the executable file, you may need to contact your
+   Corporate IT department or ISP who created the file. If you created the
+   profile from the IIS 4.0 CMAK, you will need to rebuild the profile by
+   running the CMAK Wizard.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows 98.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbWin95search kbWin98search kbiis400 kbZNotKeyword3 kbWin98
+Version           : WINDOWS:95; winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

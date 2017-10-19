@@ -1,0 +1,56 @@
+DOCUMENT:Q231826  15-JUN-2001  [msnetwork]
+TITLE   :Turning Off MSN Removes MSN User Settings
+PRODUCT :The Microsoft Network
+PROD/VER::5.0,5.1,5.2,5.3
+OPER/SYS:
+KEYWORDS:win98se
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 5.0, 5.1, 5.2, 5.3 
+ - the operating system: Microsoft Windows 98 Second Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the MSN Connection Settings Wizard, you may be prompted to enter
+your user settings, even though you have entered them before.
+
+CAUSE
+=====
+
+This issue can occur if you click Turn MSN Off on the MSN Quick View menu, to
+disable MSN, The Microsoft Network, version 5.x.
+
+MORE INFORMATION
+================
+
+When you turn off MSN, you delete the MSN settings for your modem, user name,
+password, and MSN access phone numbers.
+
+Additional query words: kbimu
+
+======================================================================
+Keywords          : win98se 
+Technology        : kbOSWin98SE kbOSWinSearch kbMSNSearch kbMSN520 kbMSN530 kbMSN510 kbMSN500
+Version           : :5.0,5.1,5.2,5.3
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

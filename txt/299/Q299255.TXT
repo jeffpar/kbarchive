@@ -1,0 +1,79 @@
+DOCUMENT:Q299255  09-JUL-2001  [exchange]
+TITLE   :XADM: Error Message Using the Check Name Option
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:kbExchange550
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you create a profile in Outlook 2000, when you try to use the Check Name
+option to verify the name of the Exchange Server and the mailbox, you may
+receive the following error message:
+
+   The name could not be resolved. The name could not be matched to a name in
+   the address list.
+
+This error message does not appear if you are logged in as the System
+Administrator or if you are using an account that has Administrator rights.
+
+CAUSE
+=====
+
+This behavior can occur if the Exchange service account has Search permission
+for the organizational object level.
+
+RESOLUTION
+==========
+
+To resolve this behavior, remove the Search permission from the Exchange service
+account:
+
+1. Start Exchange Administrator.
+
+2. Click the organizational object, and then click Properties.
+
+3. On the Permissions tab, remove the Search permission for the service account.
+
+WORKAROUND
+==========
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+   Q168753 Microsoft Exchange Roles, Rights, and Permissions
+
+   Q126518 XGEN: Tech Resource Kit: Understanding Permissions
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbExchange550 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

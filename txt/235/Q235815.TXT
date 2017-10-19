@@ -1,0 +1,63 @@
+DOCUMENT:Q235815  08-DEC-2000  [sms]
+TITLE   :SMS: How To Resend Assigned Programs
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbClient kbConfig kbMMC kbsms200 kbsms200bug kbAdvertisement kbCollections kbPackage kb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you resend advertisements to clients, the current time is not automatically
+updated. To resend an assigned (mandatory) advertised program, you must first
+update the time in the advertisement's properties. When the time has been
+updated, the advertisement is automatically resent. To update the time and
+resend the advertisement, follow these steps:
+
+1. In the Microsoft Systems Management Server (SMS) Administrator Console,
+   navigate to the Advertisements folder, right-click the advertisement that you
+   want to resend, and then click Properties.
+
+2. In the Advertisement Properties dialog box, click the Schedule tab.
+
+3. On the Schedule tab, in the Mandatory Assignments section, click the asterisk
+   (*) to create a new assignment.
+
+4. Click OK again.
+
+For the resend operation to be successful, a new assignment must be created. The
+existing assignment should not be edited. Also, the assignment must have a full
+schedule, not configured to occur after an event (As soon as possible, Logon,
+Logoff).
+
+Additional query words: prodsms readvertise re-advertise
+
+======================================================================
+Keywords          : kbClient kbConfig kbMMC kbsms200 kbsms200bug kbAdvertisement kbCollections kbPackage kbsmsAdmin kbSoftwareDist 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbinfo
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

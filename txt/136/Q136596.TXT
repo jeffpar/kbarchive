@@ -1,0 +1,68 @@
+DOCUMENT:Q136596  17-DEC-2000  [win95x]
+TITLE   :Curves And Colors Screen Saver Takes Long Time to Clear Screen
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you clear the Clear Screen check box in the settings for the Curves And
+Colors screen saver, the screen saver may take a long time to clear the corners
+of the screen.
+
+CAUSE
+=====
+
+The Curves And Colors screen saver uses Bezier curves to draw the lines that
+clear the screen. Because of the way in which Bezier curves are generated, it
+may take a long time for these lines to reach the corners of the screen.
+
+RESOLUTION
+==========
+
+To work around this behavior, use either of the following methods:
+
+ - Configure the screen saver to clear the screen before it begins generating
+   the Bezier curve lines. To do so, follow these steps:
+   1. Use the right mouse button to click an empty area on the desktop, and then
+      click Properties on the menu that appears.
+
+   2. On the Screen Saver tab, make sure that the Curves And Colors screen saver
+      is selected, and then click the Settings button.
+
+   3. Click the Clear Screen check box to select it.
+
+   4. Click OK.
+
+ - Use a different Windows 95 screen saver. The Curves And Colors screen saver
+   is the only screen saver included with Windows 95 that behaves in this
+   manner.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

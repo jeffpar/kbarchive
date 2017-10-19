@@ -1,0 +1,62 @@
+DOCUMENT:Q151273  26-SEP-2001  [exchange]
+TITLE   :XGEN: Definitions of Folder Design Conflict Messages
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+ - Microsoft Exchange 2000 Server 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There are two types of folder conflict messages that can be generated: folder
+design conflict messages and folder item conflict messages.
+
+MORE INFORMATION
+================
+
+A folder DESIGN conflict message will be generated if two folder owners are
+modifying the design of a folder from different replicas and their modifications
+are completed within the same replication interval. Design changes include
+permissions, forms, and views of a folder. Design conflicts will also be
+generated if the folder replication list changes in multiple ways during a
+replication interval. This can be done by Microsoft Exchange Administrator's
+changing the replicas. These are purely informational and no action is
+required.
+
+A folder ITEM conflict message will be generated if two or more people modify the
+same item in a folder on different replicas and they conflict or collide. The
+owner of the folder will need to decide which version of the item should be
+saved, which should be deleted, or whether to keep both versions.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage exc4 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2 kbExchange2000Search kbExchange2000Serv
+Version           : :4.0,5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

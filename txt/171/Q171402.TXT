@@ -1,0 +1,69 @@
+DOCUMENT:Q171402  09-AUG-2001  [winnt]
+TITLE   :Help/About Does Not Report More Than 2 GB of RAM
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you select About Windows NT from the Help menu of a Windows NT Explorer
+interface window, memory available to Windows NT only reports 2 GB of RAM even
+though more than 2 GB of memory is installed. Windows NT Task Manager's
+Performance tab and Windows NT Diagnostics Memory tab both report the correct
+amount of RAM. This only appears after installing Windows NT 4.0 Service Pack 3.
+
+CAUSE
+=====
+
+This is a known problem and is simply a reporting error. Windows NT is accessing
+and using all of the memory installed in the computer, as seen by Windows NT
+Task Manager's Performance tab and Windows NT Diagnostics' Memory tab.
+
+MORE INFORMATION
+================
+
+During testing, it was found that some applications functioned incorrectly when
+having access to more than 2 GB of memory. The incorrect reporting of the amount
+of RAM installed over 2 GB was intentionally implemented to allow applications,
+which were written for a maximum of 2 GB of RAM, to function properly.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0 Service
+Pack 3. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+======================================================================
+Keywords          : kbui 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,79 @@
+DOCUMENT:Q160733  08-NOV-2001  [homekids]
+TITLE   :MSB Ocean: Macintosh System Error After Driver's License
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+1.00
+MACINTOSH
+kbother kberrmsg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Scholastic's Magic School Bus series: Explores the Ocean for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Magic School Bus Explores the Ocean for the Macintosh, you may get
+a system error after exiting the Diver's License. This requires you to restart
+your computer.
+
+CAUSE
+=====
+
+This behavior occurs when 32-bit Memory Addressing has been disabled.
+
+RESOLUTION
+==========
+
+To resolve this problem, use the following steps:
+
+1. On the Apple menu, click Control Panels.
+
+2. Open the Memory Control Panel.
+
+3. Turn 32-Bit Addressing On.
+
+4. Restart your computer.
+
+After following these steps, you should be able to run Magic School Bus Explores
+the Ocean successfully.
+
+
+MORE INFORMATION
+================
+
+You may be able to continue if you do not enter a name or age in the Diver's
+license fields.
+
+The Magic School Bus Ocean for Macintosh ReadMe file contains additional
+information on how to improve the application's performance.
+
+Additional query words: msbhb msbss frizz kbmm multimedia multi-media mac freeze hang sound music cut-off restart system 7.1 7.5 magicbus schoolbus frizzle liz crash stop slow frozen lock up lockup crashes hangs bombs bombed macmsbocean msbocean
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kbScholasticOceanMac kbMSBSearch
+Version           : MACINTOSH:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

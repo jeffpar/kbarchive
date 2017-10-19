@@ -1,0 +1,69 @@
+DOCUMENT:Q131116  08-NOV-1999  [pcmail]
+TITLE   :PC Ext: Err Msg: Mail Was Received...Addressed to Unknown...
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you send a mail message on one postoffice to a new user on another
+postoffice, the mail message is returned with the following error:
+
+   [002] Mail was received that was addressed to unknown address
+
+This error occurs when you address the mail from either the Global Address List
+(GAL) or the Network List.
+
+CAUSE
+=====
+
+The problem may be due to mail being sent to a new external user before the
+External program has a chance to poll the postoffice for address list and
+network information updates.
+
+RESOLUTION
+==========
+
+Adjust the IntervalUpdate parameter in the EXTERNAL.INI or command line:
+
+1. Wait for the IntervalUpdate period to expire and try again. The default is
+   five minutes; however, another period may be specified on the command line or
+   the EXTERNAL.INI file.
+
+2. Verify that the IntervalUpdate period is not set to zero. This will prevent
+   updates from occurring. If this parameter is necessary, then follow step 3.
+
+3. Exit and restart the External program. This will force External to reload the
+   network lists into memory.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

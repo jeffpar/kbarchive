@@ -1,0 +1,80 @@
+DOCUMENT:Q136646  08-NOV-2001  [homekids]
+TITLE   :Leopard: Audio Breaks Up
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft How the Leopard Got His Spots, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run How the Leopard Got His Spots, you have sound problems. Sounds are
+choppy and seem to "break up."
+
+CAUSE
+=====
+
+You may experience this behavior if the sound buffer is set too low in the
+LEOPARD.INI file.
+
+RESOLUTION
+==========
+
+Use the following instructions to change the sound buffer setting:
+
+1. Open Notepad.
+
+2. On the File menu, click Open.
+
+3. Locate the \MSKids\Leopard folder. Then, find the Leopard.ini file.
+
+4. Double-click Leopard.ini to open the file.
+
+5. In the Audio16 section, change the following setting
+
+   BufferTime=1000
+
+   to
+
+   "BufferTime=1500" (without the quotation marks)
+
+.
+
+6. On the File menu, click Save.
+
+7. On the File menu, click Close.
+
+8. Restart How the Leopard Got His Spots.
+
+Sounds should now play normally.
+
+
+Additional query words: 1.00 fuzzy blurry buzz noise washed-out garbled silent quiet none black focus kids mskids leo spot pj rabbit ears sound skips skipping skip kbmm multimedia multi-media multi media
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword kbKidsSearch kbPJLeopard
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

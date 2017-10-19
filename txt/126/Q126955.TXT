@@ -1,0 +1,65 @@
+DOCUMENT:Q126955  12-FEB-2000  [foxpro]
+TITLE   :PRB: Where to Put EXTERNAL ARRAY in a Form
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you build a PROJECT or APPLICATION in Visual FoxPro, you may get a warning
+box that says 'Unable to find unknown <array name>.'
+
+CAUSE
+=====
+
+One cause of this error is an array being used in a screen or other program.
+
+RESOLUTION
+==========
+
+This is only a compile time warning and will not prevent your application from
+building or executing correctly.
+
+To prevent this warning from appearing In Visual FoxPro, put the EXTERNAL ARRAY
+command in the Load Event of the Form or FORMSET with a #REGION 1 before
+anything else, as in this example:
+
+      #REGION 1
+      EXTERNAL ARRAY <array name>
+
+This prevents the warning and allows you to continue building the application.
+
+NOTE: Make sure you issue a READ EVENTS command after the DO FORM command or you
+will get the error "Variable not found" when executing the form.
+
+Additional query words: VFoxWin 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFoxproSearch
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

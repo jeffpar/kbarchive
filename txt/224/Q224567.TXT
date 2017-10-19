@@ -1,0 +1,196 @@
+DOCUMENT:Q224567  26-MAY-2001  [word97]
+TITLE   :WD97: Word Macro Virus Alert "Melissa Macro Virus"
+PRODUCT :Word 97 for Windows
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+ - Microsoft Outlook 98 
+-------------------------------------------------------------------------------
+
+For a Microsoft Word 2000 version of this article, see Q224506.
+
+SUMMARY
+=======
+
+This article contains important information about the Word macro virus called
+"Melissa". The following topics are covered in this article:
+
+ - Whom can the virus affect?
+ - What is the "Melissa" macro virus?
+ - Will Office 97 protect my computer from this and other macro viruses?
+ - How do I ensure the Office macro virus protection is turned on?
+ - How do I ensure my computer will not be infected?
+ - What should I do if my computer has been infected by this virus, or I think
+   it has been infected?
+ - What if I have more questions about macro viruses?
+
+MORE INFORMATION
+================
+
+On March 26, 1999, Microsoft was made aware of a Word macro virus W97M/Melissa.A
+(dubbed "Melissa") that has affected a number of users and companies. As with
+all security issues, Microsoft takes this very seriously, and because of the
+widespread nature of this particular virus, Microsoft is taking steps to
+proactively notify our customers to help minimize its impact. By taking the
+necessary precautions, you can ensure it does not affect your computer.
+
+Whom can the virus affect?
+--------------------------
+
+This virus can affect people who are using Word with Outlook 98 or 2000. If you
+do not use this software, this particular virus does not affect your computer.
+
+What is the "Melissa" macro virus?
+----------------------------------
+
+It is a Word macro virus delivered via e-mail in an attached Word document. The
+e-mail message contains the subject line "Important Message From "UserName"
+and/or contains the message body "Here is that document you asked for ... don't
+show anyone else ;-)". If the attached Word document is opened and the macro
+virus is enabled (that is, it is allowed to run), it can propagate itself by
+sending e-mail with the infected document to a number of recipients. The virus
+reads the list of members from each Outlook Address Book and sends an e-mail
+message to the first 50 recipients programmatically.
+
+The name of the original infected Word document is List.doc, but this could be
+changed to any name. After the virus has been enabled and allowed to run, it can
+infect your default template (Normal.dot). New documents are based on the
+Normal.dot template, so they too can become infected. In this scenario, you
+could create a new document, send or give the file to someone, and their
+computer could then become infected. The virus would then attempt to send your
+document (instead of the original infected List.doc file) out to 50 recipients
+from each Outlook Address Book.
+
+This virus does not appear to destroy data. If the current day of the month
+equals the minute value of the current time, and the infected document is
+opened, the following text is inserted at the current insertion point position:
+
+   Twenty-two points, plus triple-word-score, plus fifty points for using all my
+   letters. Game's over. I'm outta here.
+
+
+Will Office 97 protect my computer from this and other macro viruses?
+---------------------------------------------------------------------
+
+Yes. Word 97 will protect your computer from macro viruses, including this one,
+provided the macro virus protection is turned on (this is the default setting).
+With the macro virus protection turned on, every time you receive a Word
+document that contains macros, a dialog box opens and allows you to choose
+whether to enable the macros. You should always disable macros when you are not
+certain of their purpose or functionality. By choosing to disable the macros,
+you will prevent this and any macro virus from running, rendering them harmless.
+The virus is only activated if you open the attached Word document and choose to
+enable the macros or if your macro virus protection settings have been turned
+off.
+
+How do I ensure the Office macro virus protection is turned on?
+
+---------------------------------------------------------------
+
+In Word 97, do the following:
+
+1. On the Tools menu, click Options.
+
+2. On the General tab, select Macro Virus Protection.
+
+IMPORTANT NOTE: If you are not able to follow the steps above because you cannot
+find the menu items, your computer may already be infected. If so, run
+anti-virus software containing the latest update and scan your system often.
+Support for this particular virus is already available from a number of
+anti-virus vendors. If you are not able to run anti-virus software, it will be
+necessary to delete or rename your Normal.dot file. This is the Word global
+template that is automatically recreated after Word is started. After this is
+done, repeat the steps above.
+
+For additional information about deleting or renaming the Normal.dot template,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q181079 WD97: What to Do If You Have a Macro Virus
+
+How do I ensure my computer will not become infected?
+-----------------------------------------------------
+
+Ensure the Office macro virus protection is turned on as described above. Always
+choose "disable macros" when asked, if you are unsure of the purpose of the
+macro in the document. Doing so will still allow you to open the document and
+read its contents. Once you are certain the macro is safe, and only if you need
+to run that macro, you can then re-open the document and enable the macro.
+
+Run the latest anti-virus software, and scan often. This is how you can ensure
+that the macros in documents are safe. Disinfectors for this particular virus
+are already available from a number of anti-virus companies. Also remember to
+keep your anti-virus software up to date by installing the latest signature
+files for that company. (Most companies creating anti-virus applications release
+a new signature file each month.) For additional information about anti-virus
+software, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q49500 List of Antivirus Software Vendors
+
+What should I do if my computer has been infected by this virus, or I think it has been infected?
+-------------------------------------------------------------------------------------------------
+
+Run anti-virus software containing the latest update, and scan your system often.
+Support for this particular virus is already available from a number of
+anti-virus companies.
+
+Ensure your Office virus protection is turned on. After the virus has been
+allowed to run, it will disable the virus protection in Word. Remember to make
+sure Office macro virus protection is turned on by performing the steps listed
+above.
+
+What if I have more questions on macro viruses?
+-----------------------------------------------
+
+For additional information about macro viruses, the "Melissa" virus, and vendors
+of anti-virus software, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q163932 WD97: Frequently Asked Questions About Word Macro Viruses
+
+Or try the following Web sites:
+
+   Tools on the Web - Word Macro Virus Alert
+   (http://office.microsoft.com/assistance/9798/MacroAlert.aspx )
+
+   CERT - Computer Emergency Response Team
+   (http://www.cert.org/advisories/CA-99-04-Melissa-Macro-Virus.html)
+
+   FBI - Federal Bureau of Investigation
+   (http://www.fbi.gov/nipc/w97melissa.htm)
+
+   CIAC - Computer Incident Advisory Capability
+   (http://www.nipc.gov/nipc/w97melissa.htm)
+
+   NIPC - National Infrastructure Protection Center, and the FBI.
+   (http://www.ciac.org/ciac/bulletins/j-037.shtml)
+
+Additional query words: infected disinfect protect protected infect prank w97m melissa.a email
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbWordSearch kbOutlookSearch kbWord97 kbWord97Search kbZNotKeyword2 kbOutlook98Search kbZNotKeyword3
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

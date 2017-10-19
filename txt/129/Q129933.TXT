@@ -1,0 +1,122 @@
+DOCUMENT:Q129933  11-JAN-2001  [vbwin]
+TITLE   :PRB: Comparing Bookmarks Generates Type Mismatch Error
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbcode
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you attempt to use the Bookmark property in a compare operation with another
+bookmark, you receive the following error if the bookmarks are not first stored
+in string variables:
+
+   Run-time error 13 - Type Mismatch
+
+CAUSE
+=====
+
+This is by design. Bookmarks in Visual Basic version 4.0 are stored in byte
+arrays. Arrays cannot be directly compared to each other.
+
+RESOLUTION
+==========
+
+Before accessing the Bookmark property, copy the bookmark values to string
+variables, and make all comparisons using the string variables. The following
+code compares two bookmarks correctly.
+
+Step-by-Step Example
+--------------------
+
+1. Start a new project in Visual Basic. Form1 is created by default.
+
+2. In the click event for Form1, place the following code:
+
+      Private Sub Form_Click()
+         Dim Db As Database
+         Dim Rs As Recordset
+         Dim Cs As Recordset
+         Dim sBook1 as String
+         Dim sBook2 as String
+
+         Set Db = DBEngine.Workspaces(0).OpenDatabase("biblio.mdb")
+         Set Rs = Db.OpenRecordset("authors", dbOpenDynaset)
+         Set Cs = Rs.Clone()
+
+         sBook1 = Rs.Bookmark
+         sBook2 = Cs.Bookmark
+
+         If sBook1 = sBook2 Then
+            MsgBox "Match"
+         Else
+            MsgBox "No Match"
+         End If
+      End Sub
+
+3. Run the program by pressing the F5 key.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+Use the above example, but replace the code in the Form_Click procedure with this
+code:
+
+      Private Sub Form_Click()
+         Dim Db As Database
+         Dim Rs As Recordset
+         Dim Cs As Recordset
+
+         Set Db = DBEngine.Workspaces(0).OpenDatabase("biblio.mdb")
+         Set Rs = Db.OpenRecordset("authors", dbOpenDynaset)
+         Set Cs = Rs.Clone()
+
+         If Rs.Bookmark = Cs.Bookmark Then  'Error 13 - Type Mismatch
+            MsgBox "Match"
+         else
+            MsgBox "No Match"
+         End If
+      End Sub
+
+Additional query words: 4.00 vb4win vb4all
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : WINDOWS:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

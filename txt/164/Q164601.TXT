@@ -1,0 +1,68 @@
+DOCUMENT:Q164601  08-AUG-2001  [winnt]
+TITLE   :How to Enable PPTP Port for Network Monitor
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0 1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you use Network Monitor in Systems Management Server version 1.2 or Network
+Monitor from the Windows NT Server version 4.0 compact disc, you will not be
+able to view Point-to-Point Tunneling Protocol (PPTP) or General Routing
+Encapsulation (GRE) packets. At the time these products were released, it was
+not known what port would be used for PPTP.
+
+MORE INFORMATION
+================
+
+To view PPTP and GRE packets, follow these steps:
+
+1. In the parsers directory created by Network Monitor, edit the Tcpip.ini file.
+
+2. In this file, find the [TCP_HandoffSet] section.
+
+3. At the bottom of this section, find:
+
+   5678 = PPTP
+
+4. Change 5678 to 1723.
+
+5. Save the file.
+
+When you run Network Monitor, you will now see PPTP session packets, and GRE
+packets initiated by PPTP.
+
+Additional query words: SMS netmon
+
+======================================================================
+Keywords          : kbnetwork kbusage 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWin95search kbZNotKeyword3
+Version           : 4.0 1.2
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

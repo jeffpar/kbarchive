@@ -1,0 +1,56 @@
+DOCUMENT:Q98259  18-NOV-1999  [pcmail]
+TITLE   :PC WFW: 1.0a Microsoft Schedule+ Disk 4 [3.5, 720K]
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail and Schedule+ Extensions for Windows for Workgroups, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is the directory of the version 1.0a Microsoft Schedule+ for
+Windows Disk 4 - Program 3, 3.5-inch format.
+
+ Volume in drive B is DISK3
+ Volume Serial Number is 0E31-3310
+ Directory of B:\ 
+
+CBTLIB3  DL_     10098 10-06-92  12:00a
+COMMDLG  DL_     46406 10-06-92  12:00a
+DEMOFX   DE_      8856 10-06-92  12:00a
+PLAY     EX_     64251 10-06-92  12:00a
+SCHDPLUS HL_    184877 10-06-92  12:00a
+SCHDPLUS LE_    221162 10-06-92  12:00a
+SHELL    DL_     23293 10-06-92  12:00a
+        7 file(s)     558943 bytes
+
+
+Additional query words: 3.00 dirmail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbScheduleSearch kbWFWSearch kbZNotKeyword3 kbMailScheduleX300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

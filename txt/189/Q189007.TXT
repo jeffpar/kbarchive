@@ -1,0 +1,87 @@
+DOCUMENT:Q189007  09-AUG-2001  [winnt]
+TITLE   :DNS: RPC Server or EndPoints not available.
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When choosing a remote Domain Name Service(DNS) server in DNS Manager, you may
+receive one of the following errors:
+
+   The RPC server is unavailable.
+
+   -or-
+
+   There are no more endpoints available from the endpoint mapper.
+
+These error messages will appear in the DNS Manager's Statistics Panel.
+
+CAUSE
+=====
+
+The remote DNS Server whose name or IP address is chosen from DNS Manager is not
+yet started.
+
+RESOLUTION
+==========
+
+Start the remote DNS Server using the following steps:
+
+1. Click Start, point to Programs, point to Administrative Tools (Common), and
+   then click Server Manager.
+
+2. In the server list in Server Manager, click the DNS server that you are
+   trying to administer.
+
+3. Click server and then select Services.
+
+4. Select the Microsoft DNS Server and click start to start the service.
+
+5. Click close and then close Server Manager.
+
+MORE INFORMATION
+================
+
+When you choose a DNS server listed by its name in DNS Manager, and the service
+is not started, you will receive the error:
+
+   The RPC server is unavailable.
+
+When you choose a DNS server listed by its IP address, and the service is not
+started, you will receive the error:
+
+   There are no more endpoints available from the endpoint mapper.
+
+Additional query words: DNSADMIN EndPoint
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

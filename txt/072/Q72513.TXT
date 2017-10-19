@@ -1,0 +1,65 @@
+DOCUMENT:Q72513  01-NOV-1999  [win95x]
+TITLE   :Cursor Disappears in an MS-DOS Window
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you maximize a windowed MS-DOS prompt and press RETURN until you move the
+cursor to the last line in the window, the flashing cursor disappears. The
+Window is completely functional and any text you type is visible. The flashing
+underscore cursor is below the bottom edge of the MS-DOS prompt window.
+
+This problem occurs only in enhanced mode.
+
+CAUSE
+=====
+
+This problem is known to occur using the Microsoft Windows version 3.0 display
+drivers, Video Seven VGA with 512K, and VGA with monochrome display. Other video
+drivers, including third-party drivers, may also exhibit this problem.
+
+RESOLUTION
+==========
+
+To solve the problem, use a Windows 3.0 display driver other than the Video
+Seven VGA with 512K or the VGA with monochrome display.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 3.00 win30 xga 3rdparty 3.00a windrvr
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

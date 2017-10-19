@@ -1,0 +1,112 @@
+DOCUMENT:Q327153  12-AUG-2002  [iis]
+TITLE   :PRB: ASP Pages Do Not Process and DCOM Event 10010 Appears
+PRODUCT :Internet Information Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to browse Active Server Pages (ASP) pages, you may receive the
+following error message in the browser:
+
+   HTTP 500 - Internal server error
+
+If you clear the Show Friendly HTTP Error Messages check box in the browser, you
+receive the following error message in the browser:
+
+   Server Application Error
+   The server has encountered an error while loading an application during the
+   processing of your request. Please refer to the event log for more detail
+   information. Please contact the server administrator for assistance
+
+You receive an error message like the following in the system event log:
+
+   Source: DCOM
+   Event ID: 10010
+   User: NT AUTHORITY\SYSTEM
+   Description: The server {3D14228D-FBE1-11D0-995D-00C04FD919C1} did not
+   register with DCOM within the required timeout.
+
+This error message is followed in the event log by a warning message like the
+following:
+
+   Source: W3SVC
+   Event ID: 36
+   User: N/A
+   Description: The server failed to load application 'AppPath'. The error was
+   'Server execution failed'.
+
+You may also see entries like the following in your %SystemRoot%\Iis5.log file:
+
+   OC_ABOUT_TO_COMMIT_QUEUE:Unreg iis_core:FindModules: FindProcessByNameW
+   failed!
+
+CAUSE
+=====
+
+The NT AUTHORITY\Authenticated Users or NT AUTHORITY\INTERACTIVE entries have
+been removed from the Users group.
+
+RESOLUTION
+==========
+
+Add these users back to the Users group, and then restart Internet Information
+Services (IIS):
+
+1. Click Start, click Programs, click Administrative Tools, and then click
+   Computer Management to open the Computer Management console.
+
+2. In the left pane, expand Local Users and Groups, and then click the Groups
+   folder.
+
+3. In the right pane, right-click the Users group, and then click Properties.
+
+4. Click Add.
+
+5. In the Select Users or Groups dialog box, locate the Look in drop-down box,
+   and then select the local computer.
+
+6. Select Authenticated Users, and then click Add. Select INTERACTIVE, and then
+   click Add. Click OK, click Apply, and then click Close to close the
+   properties for the Users group.
+
+7. In the left pane, expand Services and Applications, and then click Services.
+
+8. In the right pane, right-click IIS Admin Service, and then click Restart.
+
+9. In the Restart Other Services confirmation dialog box, click Yes.
+
+
+Additional query words: iis 5 dcom
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

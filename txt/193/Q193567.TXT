@@ -1,0 +1,96 @@
+DOCUMENT:Q193567  21-APR-1999  [exchange]
+TITLE   :XADM: KMS Database Conversion Fails During Exchange 5.5 Upgrade
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.5
+OPER/SYS:
+KEYWORDS:exc55sp2fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When upgrading from Exchange 5.0 to Exchange 5.5, the Key Management server
+(KMS) database is converted. During the KMS conversion phase of the Exchange 5.5
+upgrade, the upgrade process may report the following error message:
+
+   An unexpected, unknown error has occurred.
+
+   MAPI or an unspecified service provider.
+   ID no: 00000000-0000-00000000
+
+After the error message appears, the only option is to click OK. After you click
+OK, the upgrade is terminated.
+
+CAUSE
+=====
+
+When the database is converted, all user certificates are moved to the new
+database. Next, the original database is scanned for revoked certificates and a
+transaction is built to mark these certificates as revoked in the new database.
+If there are more revoked certificates than will fit in a single database
+transaction, the above error message will appear.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For more information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+
+The English version of this fix should have the following file attributes or
+later:
+
+   Component: KMS
+
+   File Name      Version
+   -------------------------
+   Kmsupgrd.dll   5.5.2418.0
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5. This problem was first corrected in Exchange Server 5.5 Service
+Pack 2.
+
+
+MORE INFORMATION
+================
+
+To apply this fix, copy the contents of the Exchange Server 5.5 CD to disk.
+Next, replace the file Server\Setup\<platform>\Bin\KMSUpgrd.dll. Finally,
+run the Setup from the updated disk tree.
+
+Additional query words: KMS Upgrade Conversion
+======================================================================
+Keywords          : exc55sp2fix 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,64 @@
+DOCUMENT:Q165339  07-MAY-1999  [iis]
+TITLE   :Non-administrator Users Cannot Remotely Monitor IIS
+PRODUCT :Internet Information Server
+PROD/VER:Winnt:2.0
+OPER/SYS:
+KEYWORDS:kbtshoot
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are a non-administrative user, you cannot administrate Internet
+Information Server (IIS) on a remote computer.
+
+WORKAROUND
+==========
+
+Please see the following article for instructions on how you can see the
+counters for the FTP service:
+
+   Q153183 : How to Restrict Access to NT Registry from a Remote Computer
+
+NOTE: The other counters for the HTTP and GOPHER service will still be absent.
+
+WARNING: Using Registry Editor incorrectly can cause serious, system-wide
+problems that may require you to reinstall Windows NT to correct them. Microsoft
+cannot guarantee that any problems resulting from the use of Registry Editor can
+be solved. Use this tool at your own risk.
+
+In regedt32 go to the following key:
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\W3SVC\Performance
+
+Click Security, then Permissions. Add in the users that will access this server
+with performance monitor.
+
+======================================================================
+Keywords          : kbtshoot 
+Technology        : kbiisSearch kbiis200
+Version           : Winnt:2.0
+Hardware          : ALPHA x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

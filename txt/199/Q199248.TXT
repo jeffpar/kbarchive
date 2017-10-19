@@ -1,0 +1,61 @@
+DOCUMENT:Q199248  18-FEB-1999  [sms]
+TITLE   :SMS: Limited Support for Dual Boot Clients
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsetup kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Dual boot support in System Management Server 2.0 is limited to computer that
+have a System Management Server role of client. This is supported only on 32-bit
+Windows clients, that is, Windows 95, Windows 98, and Windows NT, or multiple
+instances of Windows NT. The default location for the MS\SMS tree will be under
+%Windir%.
+
+MORE INFORMATION
+================
+
+The same System Management Server unique identifier (ID) is used for all
+operating system instances on a computer. System Management Server scans the
+hard disk to determine whether another installation of System Management Server
+2.0 exists. If it does, the same unique ID is used and the computer appears only
+once in the database.
+When distributing software to this machine, each operating system instance
+attempts to process the advertisement. This can be limited by changing the
+package properties to support only Windows 95, Windows 98, or Windows NT. Note
+that a specific instance of Windows NT on a computer cannot be targeted.
+If all instances run the advertisement the next time they are started, the status
+is reported without any detail about which instance ran the program.
+
+Additional query words: sms20 setup prodsms
+
+======================================================================
+Keywords          : kbsetup kbsms200 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

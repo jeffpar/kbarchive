@@ -1,0 +1,95 @@
+DOCUMENT:Q263637  03-MAY-2001  [visualc]
+TITLE   :BUG: Class Access Specifier Ignored When Creating Temp Objects
+PRODUCT :Microsoft C Compiler
+PROD/VER::5.0,6.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbCPPonly kbVC500 kbVC500bug kbVC600 kbVC600bug kbDSupport kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), included with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The compiler incorrectly uses private or protected constructors when temporary
+class objects are created.
+
+NOTE: The compiler generates a C4248 warning if compiled with the /W3 or /W4
+compiler switch.
+
+Please refer to the sample code in the "More Information" section for details.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+The following sample code demonstrates the bug:
+
+   // Test.cpp
+   // Compiler option needed: /GX
+   class A
+   {
+   protected:
+       A(int i) : m_i(i) {}
+   private:
+       int m_i;
+   };
+
+   int main()
+   {
+    //A a(8); // Error C2248 here, as expected.
+    A(8);	// No error here. 
+           // Produces warning C4248 with compiler switch /W3 or /W4.    
+
+       try
+       {
+           throw A(8); // No error here also. 
+                  // Produces warning C4248 with compiler switch /W3 or /W4.
+       }
+       catch (A& a)
+       {
+       }
+
+       return 0;
+   }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCompiler kbCPPonly kbVC500 kbVC500bug kbVC600 kbVC600bug kbDSupport kbGrpDSTools 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : :5.0,6.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,72 @@
+DOCUMENT:Q151648  27-JUL-2001  [sms]
+TITLE   :Future Date Causes Access Violations in SMS Services
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2,2.0
+OPER/SYS:
+KEYWORDS:smssetup smsgeneral kbArtTypeINF
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+You may receive "Access violation" error messages in Systems Management Server
+(SMS) services if the date of the server is set to the year 2037 or later. Some
+examples of error messages include:
+
+   Siteins.exe
+   Exception: access violation (0c00000005), Address: 0x1f328327.
+
+   preinst.exe
+   Exception: access violation (0c00000005), Address: 0x1f328327
+
+   smsexec.exe
+   Exception: access violation (0c00000005), Address: 0x1f328327
+
+   pcmwin32.exe
+   Exception: access volation (0c00000005), Address: 0x0040ec87
+
+The memory address will be consistent.
+
+RESOLUTION
+==========
+
+
+Change the system date, either from within Windows NT or in the system's BIOS,
+back to the appropriate date.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : smssetup smsgeneral kbArtTypeINF 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120 kbSMS200
+Version           : winnt:1.0,1.1,1.2,2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

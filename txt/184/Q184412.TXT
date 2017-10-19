@@ -1,0 +1,85 @@
+DOCUMENT:Q184412  05-OCT-2001  [frontpg]
+TITLE   :FP: How to Find a Web Presence Provider for Your FrontPage Web
+PRODUCT :Word Front Page
+PROD/VER::1.0,1.1
+OPER/SYS:
+KEYWORDS:kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for Windows 1.1 
+ - Microsoft FrontPage for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 98 version of this article, see Q194105.
+
+SUMMARY
+=======
+
+This article describes how to find a Web Presence Provider (WPP) to host your
+FrontPage Web on the Internet.
+
+MORE INFORMATION
+================
+
+Several features of your FrontPage Web require that FrontPage Server Extensions
+be installed on the server hosting your Web. Some features may not function if
+they are hosted on a server that does not support the FrontPage Server
+Extensions.
+
+Microsoft keeps a list of all Web Presence Providers (WPPs) that support the
+FrontPage Server Extensions. For more information, please visit the following
+Microsoft World Wide Web site:
+
+   Locate a Web Presence Provider for FrontPage 2000
+   (http://www.microsoftwpp.com/wppsearch)
+
+You can also see the latest list of WPP referrals, by following these steps:
+
+1. Open a Web in FrontPage Explorer.
+
+2. On the File menu, click Publish.
+
+3. Click More Webs.
+
+4. Click the Connect to Microsoft FrontPage Web Site button.
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q161414 FP: How to Publish a FrontPage Web to the Internet, Intranet
+
+   Q143101 FP: Using FrontPage Without the Server Extensions
+
+   Q151725 FP: How to Import Web Content from a Server w/o FP Extensions
+
+Additional query words: wpp publish extensions
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbHWMAC kbOSMAC kbFrontPageSearch kbZNotKeyword8 kbFrontPage1xSearch kbFrontPage97Search kbFrontPageMac kbZNotKeyword3 kbFrontPage110
+Version           : :1.0,1.1
+Hardware          : MAC x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

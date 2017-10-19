@@ -1,0 +1,67 @@
+DOCUMENT:Q121911  28-JUL-2001  [win95x]
+TITLE   :The Close Button Does Not Appear or Is Disabled
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95 appscomp kbAppCompatibility
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you start your application, the Close button (the button displaying an "x"
+in the upper-right corner of the window) is either dim or does not appear at
+all.
+
+Applications known to exhibit this behavior include:
+
+ - Microsoft FoxPro for Windows, versions 2.5 and 2.6
+
+
+CAUSE
+=====
+
+Some applications draw their own caption and title bars. This prevents the
+Windows 95 Close button from appearing or being enabled.
+
+WORKAROUND
+==========
+
+Microsoft FoxPro for Windows
+----------------------------
+
+The Close button is dim in FoxPro for Windows because FoxPro deletes all the
+items in the System menu. It then enters its own items into the System menu,
+thus preventing Windows 95 from properly executing the Close button detection
+code.
+
+Currently, no workaround is available for this behavior.
+
+Additional query words: 3rdparty gray grayed grey dimmed
+
+======================================================================
+Keywords          : win95 appscomp kbAppCompatibility 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

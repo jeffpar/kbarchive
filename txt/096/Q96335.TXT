@@ -1,0 +1,51 @@
+DOCUMENT:Q96335  05-DEC-1999  [homemm]
+TITLE   :Bookshelf Atlas: Inconsistent National Anthem Titles
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1991 edition,1992 edition,1993 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows versions 1991 edition, 1992 edition, 1993 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Country Info dialog boxes of Bookshelf, the text next to the audio icon
+states either "National Anthem" or the song title of the national anthem.
+
+MORE INFORMATION
+================
+
+This is by design, the text next to the audio icon represents the song title if
+there is one; otherwise, it simply states "National Anthem."
+
+Some examples of countries with "National Anthem" listed include Mongolia,
+Taiwan, Poland, and Germany.
+
+Additional query words: 1.00 incorrect missing country multimedia multi media multi-media
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1991 kbBookShelf1992 kbBookShelf1993
+Version           : :1991 edition,1992 edition,1993 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

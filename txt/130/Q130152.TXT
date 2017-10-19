@@ -1,0 +1,60 @@
+DOCUMENT:Q130152  17-DEC-2000  [crossnet]
+TITLE   :Windows Applications Fail When Using LMHosts File with NetBIOS
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups 
+ - Microsoft TCP/IP-32 for Windows for Workgroups, version 3.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Client Windows-based applications may be unable to connect to server
+applications over routers using TCP/IP, even though LMHOSTS entries exist for
+the servers. For example, you may be able to use the NET USE command to connect
+to a remote machine from the MS-DOS Command Prompt, but cannot connect from file
+manager.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in TCP/IP-32 for Windows for
+Workgroups, version 3.11a. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+WORKAROUND
+==========
+
+To work around this problem, use the #PRE flag for each entry in LMHOSTS to
+ensure they are preloaded into the NetBIOS name cache.
+
+Additional query words: 3.11 prodtcp32 wfw wfwg
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbTCPIPSearch kbWFWSearch kbZNotKeyword3 kbTCPIP311
+Version           : WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,66 @@
+DOCUMENT:Q126158  24-JUL-2001  [sms]
+TITLE   :SMS Administrator Err Msg: Socket () failed, 10047
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbsmsAdmin smsadmin
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to use Systems Management Server Administrator to remotely
+control a NetWare client, the following error message appears and remote control
+is not available for any NetWare clients:
+
+   Socket () failed, 10047
+
+CAUSE
+=====
+
+Although remote control of NetWare clients uses IPX sockets, SMS Administrator
+requires the NetBIOS NWBLINK driver.
+
+MORE INFORMATION
+================
+
+NetBIOS support for NWLINK (NWBLINK) is installed under Windows NT when you
+install NWLINK. However, if you install a Windows NT service that requires
+NWLINK, and you have not yet installed NWLINK support, NWBLINK is not installed.
+This happens when you install Gateway Services for Netware (GSNW) on a Windows
+NT server.
+
+RESOLUTION
+==========
+
+To correct this problem, remove and reinstall NWLINK so that NWBLINK is
+installed, and then install the other software that depends on NWLINK.
+
+Additional query words: sms prodsms administrators
+
+======================================================================
+Keywords          : kbnetwork kbsmsAdmin smsadmin 
+Technology        : kbSMSSearch kbSMS100
+Version           : winnt:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

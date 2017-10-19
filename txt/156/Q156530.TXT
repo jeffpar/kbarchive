@@ -1,0 +1,87 @@
+DOCUMENT:Q156530  08-AUG-2001  [winnt]
+TITLE   :Setup Stops When Inspecting Computer Hardware Configuration
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbsetupkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you run Windows NT 4.0 Setup from the three Setup floppy disks, or when you
+run Setup using the WINNT /B command, your computer may stop responding while
+the following message is displayed:
+
+   Setup is inspecting your computer's hardware configuration.
+
+
+CAUSE
+=====
+
+The Windows NT 4.0 installation compact disc meets the El Torito specification
+using Non-Emulation mode regarding bootable CD-ROM media. Some newer computers
+support the El Torito specification but adhere to Emulation-mode
+specifications.
+
+
+Some system BIOSes that support the El Torito specification in Emulation mode
+interfere with Windows NT Setup and cause the computer to hang during the
+hardware detection process. It seems that the BIOS grabs the CD-ROM device
+during the Power On System Test (POST) and causes Windows NT hardware detection
+to hang. This can also happen if you leave CD-ROM drive in the boot sequence
+(drive C, CD-ROM drive, drive A).
+
+RESOLUTION
+==========
+
+The system BIOS may display that it recognizes a bootable CD-ROM during POST.
+There are usually CMOS options that allow you to select which boot devices to
+try and in what order. We recommend disabling the option to boot from the CD-ROM
+drive in the CMOS settings.
+
+We also recommend that you not leave the Windows NT CD-ROM in the CD-ROM drive
+until after the computer configuration detection is finished. Or, contact the
+manufacturer of your computer or system BIOS for an updated BIOS to correct the
+problem.
+
+Note that this is only one cause of the problem. Other causes include IRQ
+conflicts, an incorrect HAL, external caching, and shadowing options in the CMOS
+settings.
+
+
+For additional information, see the following article in the Microsoft Knowledge
+Base:
+
+   ARTICLE-ID: Q103659
+   TITLE : Setup Hangs While Inspecting Hardware; How to Use Ntdetect.com
+
+Additional query words: 4.00 hang hangs lock up DEC
+======================================================================
+Keywords          : kbsetup kbfaq
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

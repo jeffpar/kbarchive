@@ -1,0 +1,94 @@
+DOCUMENT:Q191521  11-DEC-1999  [foxpro]
+TITLE   :FIX: DROP TABLE Case Sensitive if Table in Persistent Relation
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you attempt to issue a DROP TABLE command to remove a table from a Database
+Container (DBC), and the table is involved in a persistent relation in the DBC,
+the manner in which the DROP TABLE command is processed depends on the case of
+the table name passed to the command. If the table name is in mixed or lower
+case, the following error occurs:
+
+   Table test2 is referenced in a relation.
+
+If the table name is in upper case, the table is deleted.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+Expected behavior is that the error is generated regardless of the case of the
+table name in the DROP TABLE command.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Run the following code from a program (.prg) file:
+
+         CLOSE DATA ALL
+         CREATE DATABASE Testdb
+
+         CREATE TABLE Test2 (cField C(5) PRIMARY KEY)
+         CREATE TABLE Test1 (cField C(5) references Test2 TAG cField )
+         DROP TABLE test2  && Fails with error 1577.
+         DROP TABLE TEST2  && Works.
+
+2. Press Ignore when the following error occurs:
+
+   Table test2 is referenced in a relation.
+
+DROP TABLE test2 gives the error. DROP TABLE TEST2 works without error and the
+table is deleted.
+
+The REMOVE TABLE had a similar issue and it has also been resolved in Visual
+FoxPro 6.0.
+
+REFERENCES
+==========
+
+(c) Microsoft Corporation 1998, All Rights Reserved.
+Contributions by Jim Saunders, Microsoft Corporation
+
+
+Additional query words: kbVFp300bbug kbVFp500abug kbVFp600fix KbDBFDBC kbDatabase kbXBase
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,92 @@
+DOCUMENT:Q251292  11-JAN-2001  [vbwin]
+TITLE   :PRB: Closing a Modal Form Raises an Application Error
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbCtrl kbListView kbVBp kbVBp600bug kbGrpDSVB kbDSupport kbControl
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An application error occurs when a modal dialog or form is closed after being
+shown from the ItemClick event of a ListView control in Microsoft Visual Basic.
+The error only occurs if the ListView control is cleared in the ItemClick event
+and an item other than the first item in the ListView was clicked.
+
+RESOLUTION
+==========
+
+To work around this behavior, the ListView control must be disabled before it is
+cleared. Once the ListView is cleared, the control can then be enabled.
+
+   Private Sub ListView1_ItemClick(ByVal Item As MSComctlLib.ListItem)     ListView1.Enabled = False
+      ListView1.ListItems.Clear
+      ListView1.Enabled = True
+      MsgBox "Cleared"
+   End Sub
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start a new Visual Basic Standard EXE project. Form1 is created by default.
+
+2. On the Project menu, select Components. In the Components dialog box, select
+   the Microsoft Windows Common Controls 6.0 component and click OK.
+
+3. Add a ListView control to Form1.
+
+4. Add the following code to the General Declarations section of Form1:
+
+   Private Sub Form_Load()
+      ListView1.ListItems.Add , , "First"
+      ListView1.ListItems.Add , , "Second"
+   End Sub
+
+   Private Sub ListView1_ItemClick(ByVal Item As MSComctlLib.ListItem)
+      ListView1.ListItems.Clear
+      MsgBox "Cleared"
+   End Sub
+
+5. Press the F5 key to run the program.
+
+6. Click on the word "Second" that is contained within the ListView control.
+   Notice that the message box dialog is displayed.
+
+7. Close the dialog box and note that an Application Error occurs.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbCtrl kbListView kbVBp kbVBp600bug kbGrpDSVB kbDSupport kbControl 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,69 @@
+DOCUMENT:Q104994  21-NOV-1999  [msdos]
+TITLE   :DBLSPACE /UNCOMPRESS Points to Zero-Byte DBLSPACE.LOG File
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.2,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+This information applies to both Microsoft DoubleSpace and Microsoft DriveSpace.
+For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands and filenames.
+
+When you have duplicate files or directories on your compressed drive and host
+drive, you receive a message instructing you to read a DBLSPACE.LOG file when
+you attempt to uncompress a drive. The DBLSPACE.LOG file may be a zero-byte
+file.
+
+CAUSE
+=====
+
+If the host drive has zero bytes free, the DBLSPACE.LOG file is created as a
+zero-byte file when DoubleSpace tries to write the DBLSPACE.LOG file.
+
+NOTE: If the host drive is write protected, the DBLSPACE.LOG file cannot be
+created.
+
+RESOLUTION
+==========
+
+To work around this problem:
+
+ - Run DoubleSpace, decrease the size of the DoubleSpace-compressed drive, and
+   then run DBLSPACE /UNCOMPRESS.
+
+-or-
+
+ - Free up some space on the host drive by moving files to another drive and
+   then running DBLSPACE /UNCOMPRESS.
+
+Additional query words: 6.20 double space
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620
+Version           : MS-DOS:6.2,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

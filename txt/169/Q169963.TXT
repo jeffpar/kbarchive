@@ -1,0 +1,111 @@
+DOCUMENT:Q169963  15-NOV-2000  [powerpt]
+TITLE   :OFF97: Copy To from Bookshelf Starts Program Not Binder
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint 97 for Windows 
+ - Microsoft Word 97 for Windows 
+ - Microsoft Excel 97 for Windows 
+ - Microsoft Office 97 Professional Edition for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you start Microsoft Bookshelf Basics from within Microsoft Office Binder 97,
+and then use the Copy To command to copy selected text, the program associated
+with the section is started, and the selected text is not pasted into the active
+section. This behavior occurs in Microsoft Excel 97, PowerPoint 97 and Word 97
+sections.
+
+WORKAROUND
+==========
+
+To work around this problem, use the Copy command instead of the Copy To
+command, and then paste the selection into the active section.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Microsoft Bookshelf is a multimedia reference collection with online books and
+materials you can use to look up and cite information. To find information, you
+can search for titles in a table of contents, or you can search for contents in
+a single reference or in all references at once.
+
+When Microsoft Bookshelf 1996-97 (or earlier) or Microsoft Bookshelf Basics is
+installed with Microsoft Office 97, special Bookshelf commands are added to
+PowerPoint, Word, and Microsoft Excel. You can click Look Up Reference on the
+Tools menu to look up information in Bookshelf without ever leaving a
+presentation. You can also right-click a word in a presentation, and then click
+Define on the shortcut menu to quickly find a definition. You can copy entire
+articles or selected text and images from Bookshelf directly to a new or
+existing file, and Bookshelf automatically includes copyright information in the
+file.
+
+Bookshelf Basics is included with Microsoft Office 97 Professional Edition.
+
+Steps to Copy and Paste a Selection
+-----------------------------------
+
+You can copy an address, media, or text from Bookshelf articles and use them in
+another program, such as a word processor. To do this, follow these steps:
+
+1. To select an image, click the image and drag the pointer over it until a
+   black border appears.
+
+   Enlarged images cannot be selected; press CTRL+C to copy enlarged images to
+   the Clipboard.
+
+2. To copy Bookshelf text or images to the Clipboard, right-click the text or
+   image you want to copy, and then click Copy.
+
+3. To copy pronunciations to the Clipboard, right-click the audio icon, and then
+   click Copy.
+
+4. To copy selected text directly into Microsoft Excel, Word, or PowerPoint,
+   right-click the text, point to the Copy To command, and then select the
+   program to which you want to copy the text.
+
+   NOTE: If you're copying and pasting a table into Word, it may be necessary to
+   reformat the text using the Text To Table command.
+
+5. To paste text from the Clipboard, move the insertion point to the location
+   where you want to place the text or media, and then click Paste on the Edit
+   menu.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbWordSearch kbOfficeSearch kbExcelSearch kbPowerPtSearch kbWord97 kbWord97Search kbPowerPt97 kbZNotKeyword2 kbExcel97Search kbPowerPt97Search kbZNotKeyword3
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

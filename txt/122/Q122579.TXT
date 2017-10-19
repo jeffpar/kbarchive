@@ -1,0 +1,64 @@
+DOCUMENT:Q122579  16-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: Dynamic Connections Not Released
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When dynamic connections are used in version 1.0 of Schedule+ for Windows to
+open appointment books on other servers, the connection to the other server is
+not released until you Exit and Sign Out of Schedule+. This is true for
+Microsoft LAN Manager, Windows NT, and Windows for Workgroups networks.
+
+This problem can also cause the following error to appear in Schedule+ when you
+try to open an Appointment Book:
+
+   The Schedule file could not be opened. You may not have the necessary access
+   privileges or the file may be unavailable.
+
+RESOLUTION
+==========
+
+To work around this problem, increase the value of the SESSION entry in the
+PROTOCOL.INI file. This does not correct the problem, but it allows the
+workstation to connect to additional servers.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 1.0 of Schedule+ for
+Windows. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: schedule plus 1.00 dynamic
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

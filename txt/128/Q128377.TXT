@@ -1,0 +1,71 @@
+DOCUMENT:Q128377  12-FEB-2000  [foxpro]
+TITLE   :FoxPro Information Stored in the Registry or REG.DAT
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbenv kbvfp300
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual FoxPro writes information about interoperability issues (such as DDE and
+OLE) and FoxPro settings to the registry (under Windows 95 or Windows NT) or to
+REG.DAT (under Windows or Windows for Workgroups).
+
+MORE INFORMATION
+================
+
+The following information is stored in the registry. Run REGEDIT/V to view the
+data.
+
+ - The name and location of the Visual FoxPro executable (.EXE) file.
+
+ - If you have the Pro version of Visual FoxPro, the name and location of the
+   .ESL file.
+
+ - Associations with the Visual FoxPro .EXE file. Visual FoxPro is loaded when
+   you double-click a file with the following extensions: APP, FXP, PRG.
+
+ - FoxPro is registered as an Object Linking and Embedding (OLE) client.
+
+ - Options and preferences exposed in the Options dialog. The Options dialog
+   provides a way to centralize FoxPro settings such as system memory variables,
+   various SET commands, information about remote data, and registered classes.
+   These are called user settings. When Visual FoxPro is first installed, the
+   system memory variables are written to the registry, but there are no other
+   user settings in the registry or REG.DAT. The settings are written in the
+   registry or REG.DAT the first time you access the Options dialog and click
+   the Save as Default button.
+
+For more information about the Options dialog, please refer to Chapter 3,
+Configuring FoxPro, in the Installation Guide.
+
+Additional query words: VFoxWin 3.00
+
+======================================================================
+Keywords          : kbenv kbvfp300 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

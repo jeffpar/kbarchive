@@ -1,0 +1,71 @@
+DOCUMENT:Q297371  05-MAY-2001  [iis]
+TITLE   :Unexpected High Memory Usage When You Use Index Server
+PRODUCT :Internet Information Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use third party IFilter components with Index Server, the Cidaemon
+process may consume a large amount of memory. This may cause a low memory
+situation on the server, and the server processing may slow down.
+
+CAUSE
+=====
+
+The Cidaemon process is designed as a sandbox for IFilter components, which
+means that every IFilter is loaded into this process. Thus, if an IFilter is
+poorly designed or coded, the IFilter can cause Cidaemon to consume a large
+amount of memory.
+
+RESOLUTION
+==========
+
+To resolve this problem, contact the IFilter vendor, and request a fixed IFilter
+component.
+
+WORKAROUND
+==========
+
+Index Service 3.0 (Microsoft Windows 2000) introduces a new mechanism that
+limits the memory usage of the Cidaemon process. The Cisvc process monitors the
+memory consumption of the Cidaemon process. If the Cidaemon exceeds 40 megabytes
+(MB) of memory usage, the Cisvc process automatically ends and restarts the
+Cidaemon process. This mechanism prevents the server from reaching a low memory
+situation and a slow down in server processing.
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ200
+Version           : :2.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

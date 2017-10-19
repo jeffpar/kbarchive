@@ -1,0 +1,69 @@
+DOCUMENT:Q114996  30-JUL-2001  [lanman]
+TITLE   :NET.ACC Timestamp Not Accurate Indicator of PDC Backups
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+The timestamp on a backup domain controller's NET.ACC file doesn't accurately
+reflect updates sent from the primary domain controller.
+
+MORE INFORMATION
+================
+
+The user accounts database (UAS) is contained in the NET.ACC file, located in
+the \LANMAN\ACCOUNTS subdirectory. Changes to the domain's master UAS database
+are made only at the primary domain controller (PDC), then copied to the backup
+domain controllers (BDCs) and member servers by the Netlogon service.
+
+Changes to user passwords are sent immediately to the BDCs and member servers.
+Other updates are made at intervals based on the pulse parameter in the
+[netlogon] section of the LANMAN.INI file. The default value for pulse is 300
+(seconds).
+
+The NET.ACC file timestamp does not accurately indicate synchronization between
+the PDC and BDC: it merely indicates the last time Netlogon closed the file. For
+instance, if NET ADMIN is running on the BDC, the timestamp on the NET.ACC file
+does not change until you exit NET ADMIN, although updates have occurred in the
+interim.
+
+One quick test is to enable auditing at the BDC:
+
+1. In LAN Manager Setup, select Configuration/Server.
+
+2. Select Settings/Auditing/All Events.
+
+This logs updates in the audit log.
+
+Another option is to use the DOMAINVU utility, which shows differences, if any,
+between update versions of the NET.ACC files on the servers in the domain.
+
+DOMAINVU is available from Microsoft Product Support Services or on the Internet
+on Microsoft's FTP server, FTP.MICROSOFT.COM. Logon as anonymous and use your
+e-mail name as the password. The utility is in the
+\bussys\lanman\unsup-ed\utils\os2 subdirectory.
+
+Additional query words: bdc domainvu syncstat 2.20 2.2
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

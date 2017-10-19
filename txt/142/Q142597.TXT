@@ -1,0 +1,57 @@
+DOCUMENT:Q142597  09-OCT-1999  [msnetwork]
+TITLE   :TCP/IP Required for LAN or Third-Party Internet Connection
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:1.2,1.3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 1.2, 1.3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MSN, The Microsoft Network, version 1.2 offers the options of connecting to MSN
+using either a third-party Internet access provider or a corporate local area
+network (LAN). To use either of these options, you must have the TCP/IP network
+protocol installed.
+
+MORE INFORMATION
+================
+
+If you do not have TCP/IP installed, the options are still available on the
+Connection Settings screen for MSN. However, if you select one of these options,
+you cannot connect to MSN.
+
+REFERENCES
+==========
+
+For additional information about TCP/IP, click the Index tab in Windows 95 Help,
+type "tcp/ip" (without the quotation marks), and then view a topic.
+
+Additional query words: msn
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN130 kbMSN120
+Version           : WINDOWS:1.2,1.3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

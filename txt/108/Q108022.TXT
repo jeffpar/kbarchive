@@ -1,0 +1,85 @@
+DOCUMENT:Q108022  07-MAY-2002  [homegame]
+TITLE   :Autopilot Flies to the Wrong Station
+PRODUCT :Microsoft Home Games
+PROD/VER:MACINTOSH:4.0,4.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator for the Macintosh, versions 4.0, 4.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When the NAV1 navigation radio is set to a VOR frequency and the autopilot is
+set to follow the heading from NAV1, the aircraft may appear to be flying toward
+the wrong station.
+
+MORE INFORMATION
+================
+
+The signal transmitted by a VOR is line-of-sight, which means that it can be
+blocked by high terrain. VORs also have a limited range. Because of this,
+several stations may, in the real world, be assigned the same frequency. For
+example, Oakland and Seattle both operate on 116.8kHz. For example, if you are
+in Red Bluff, CA, (north of Oakland) and set your NAV1 to 116.8kHz, your
+autopilot may take you south to Oakland when you may have wanted to go north to
+Seattle.
+
+To use the autopilot to fly to a station that is farther away than another
+station on the same VOR frequency, do the following:
+
+1. From the NavCom menu, click Set Autopilot.
+
+2. Turn on the autopilot master switch.
+
+3. Turn on Heading Lock. You may also want to use the Wing Leveler and Altitude
+   Lock, but these are not necessary for navigation purposes. For more
+   information about using the autopilot, see page 14 in the Microsoft Flight
+   Simulator User's Guide.
+
+4. Enter a heading to your desired station.
+
+5. Click OK.
+
+6. Take off and engage the autopilot by pressing COMMAND-T. The aircraft should
+   assume the altitude and headings you have assigned.
+
+7. Fly on the assigned heading until you are closer to your destination station
+   than you are to the other station on the same frequency.
+
+8. From the NavCom menu, click Set Autopilot.
+
+9. Click NAV 1 Lock.
+
+10. Click OK.
+
+Additional query words: 4.00 4.00a flightsim fltsim mac auto- pilot auto
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbGamesSearch kbFlightSimSearch kbFlightSim400Mac kbSimSearch
+Version           : MACINTOSH:4.0,4.0a
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

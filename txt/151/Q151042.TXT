@@ -1,0 +1,56 @@
+DOCUMENT:Q151042  04-OCT-2001  [frontpg]
+TITLE   :FP: FrontPage Personal Web Server Supports Standard CGI Only
+PRODUCT :Word Front Page
+PROD/VER:windows:1.0,1.1,97
+OPER/SYS:
+KEYWORDS:kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for Windows, versions 1.0, 1.0a, 1.1 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 98 version of this article, see Q194225.
+
+SUMMARY
+=======
+
+FrontPage Personal Web Server supports only the standard Common Gateway
+Interface (CGI) stdin/stdout method. FrontPage Personal Web Server does not
+support the DLL-, WIN-, or DOS-based CGI.
+
+MORE INFORMATION
+================
+
+For additional information about standard CGI and NCSA HTTPD, please see the
+NCSA HTTPd Development Team World Wide Web site:
+
+   http://hoohoo.ncsa.uiuc.edu
+
+Additional query words: 97
+
+======================================================================
+Keywords          : kbusage kbdta 
+Technology        : kbFrontPageSearch kbFrontPage1xSearch kbFrontPage97Search kbZNotKeyword3 kbFrontPage100 kbFrontPage100a kbFrontPage110
+Version           : windows:1.0,1.1,97
+Hardware          : x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

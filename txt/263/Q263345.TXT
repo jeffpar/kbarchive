@@ -1,0 +1,108 @@
+DOCUMENT:Q263345  20-OCT-2000  [sms]
+TITLE   :SMS: Client Installation Is Prevented if Logon Point Has Changed
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0,2.0 SP2
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbsms200preSP3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Microsoft Systems Management Server (SMS) 2.0, you may not be able
+to install clients.
+
+CAUSE
+=====
+
+This behavior can occur because the logon point that the SMS 2.0 clients are
+installing from has changed. The Copylog.tcf file on the logon point incorrectly
+directs clients to an SMS site that no longer uses the same logon point.
+
+WORKAROUND
+==========
+
+To work around this behavior, perform one of the following methods:
+
+ - Upgrade your existing SMS site(s) in the domain to a newer version of SMS
+   2.0. If a site that presently uses the logon point upgrades to Service Pack 2
+   (SP2) for SMS 2.0, the Copylog.tcf file is updated with the correct site
+   information.
+
+ - Remove the domain from Logon Discovery and Logon Installation for all sites
+   presently using the logon point, and then add the domain again, so that the
+   Copylog.tcf file is updated correctly. You may have to remove any remaining
+   SMS files in the SMSLogon point before re-enabling the logon points.
+
+ - Enable the original site that created the logon points to use them again.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+MORE INFORMATION
+================
+
+Each SMSLogon share has a file, Copylog.tcf, that lists each file on the logon
+point and the site responsible for copying it. The client restart (bootstrap)
+code uses this information to determine which site copied the Core Client
+Installation file (Clicore.exe) to the logon point, and uses that site's
+configuration information in the core client installation process.
+
+For example, if site AAA is configured to install logon points in a domain, and
+the Copylog.tcf file shows that site AAA copied the Clicore.exe file to the
+client, then site BBB (the same SMS version as site AAA) is configured to
+install logon points in the same domain. This creates shared logon points. Site
+BBB does not need to do any file copying aside from copying its site-specific
+files, so the Copylog.tcf file shows site AAA for most files.
+
+If site AAA's administrator decides site AAA cannot participate in that logon
+point domain, then site AAA removes the domain from Logon Discovery and Logon
+Installation. The Sites\AAA directory is removed from the logon point. However,
+the Copylog.tcf file still shows site AAA as the site that supplied the
+Clicore.exe file. Subsequent site BBB domain updates cannot change that, because
+site BBB does not have reason to copy over the existing core client components,
+unless site BBB is upgraded.
+
+When a new client logs on to that domain, the restart (bootstrap) code looks to
+see what site supplied the Clicore.exe file from the Copylog.tcf file, and
+discovers site AAA. It tries to look for Sites\AAA\Cli_inst.cfg to obtain the
+configuration information. But since site AAA is no longer using the logon
+point, that directory and file no longer exist. Therefore, the client restart
+(bootstrap) cannot continue.
+
+NOTE: The above example deals with sites from the same SMS version. However, if
+the sites are not the same version, other issues can occur.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsms200preSP3 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP2
+Version           : winnt:2.0,2.0 SP2
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

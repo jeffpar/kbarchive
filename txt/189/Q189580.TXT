@@ -1,0 +1,189 @@
+DOCUMENT:Q189580  20-OCT-2001  [visualc]
+TITLE   :BUG: Print Preview Scroll Bar Disappears After Zoom In, Zoom Out
+PRODUCT :Microsoft C Compiler
+PROD/VER::4.0,4.1,4.2,5.0
+OPER/SYS:
+KEYWORDS:kbprint kbGDI kbMFC kbPrinting kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600fix k
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, versions 4.2, 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, versions 4.2, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In MFC's Print Preview, there is a toolbar that contains zoom-in and zoom- out
+buttons, and there may be a vertical scroll bar. The scroll bar allows the user
+to scroll within a page when zoomed in, or it can be used to move between pages
+when zoomed out. When completely zoomed out, the arrow buttons on the scroll bar
+allow the user to move from one page to another. If the user presses the zoom-in
+button, and then zooms out completely, the scroll bar disappears and does not
+reappear until the user exits Print Preview and starts it up again from the
+menu.
+
+CAUSE
+=====
+
+The scroll bars are not being re-enabled after zooming out.
+
+RESOLUTION
+==========
+
+There is no easy workaround, but an approximate workaround below allows the user
+to scroll through pages using the up/down arrows of the scroll bars, but the
+"thumbs" will not appear proportionally.
+
+Derive a class from CPreviewView (you need to include Afxpriv.h) and override
+PositionPage(). You can use code similar to the following:
+
+Sample Code
+-----------
+
+      //MyPreviewView.h
+
+      #include <afxpriv.h>
+
+      class CMyPreviewView : public CPreviewView
+      {
+
+      private:
+         DECLARE_DYNCREATE(CMyPreviewView)
+
+      protected:
+         virtual void PositionPage(UINT nPage);
+      };
+
+      =======================================================
+
+      //MyPreviewView.cpp
+      #include "stdafx.h"
+      #include "MyPreviewView.h"
+
+      IMPLEMENT_DYNCREATE(CMyPreviewView, CPreviewView )
+
+      /////////////////////////////////////////////////////////////////// 
+      void  CMyPreviewView::PositionPage(UINT nPage)
+      {
+         CPreviewView::PositionPage(nPage);
+
+         if(m_nZoomState == ZOOM_OUT)
+            EnableScrollBarCtrl(SB_VERT, TRUE);
+      }
+      ================================================================
+
+Add OnFilePrintPreview() to your application's view class, and put your
+CPreviewView-derived class name in the call to DoPrintPreview:
+
+Sample Code
+-----------
+
+      void CScribbleView::OnFilePrintPreview()
+      {
+         // In derived classes, implement special window handling here.
+         // Be sure to Unhook Frame Window close if hooked.
+         // Must not create this on the frame. Must outlive this function.
+
+         CPrintPreviewState* pState = new CPrintPreviewState;
+
+         // DoPrintPreview's return value does not necessarily indicate that
+         // Print Preview succeeded or failed, but rather what actions are
+         // necessary at this point. If DoPrintPreview returns TRUE, it means
+         // that OnEndPrintPreview will be (or has already been) called and
+         // the pState structure will be/has been deleted.
+         // If DoPrintPreview returns FALSE, it means that OnEndPrintPreview
+         // WILL NOT be called and that cleanup, including deleting pState,
+         // must be done here.
+
+         if (!DoPrintPreview(AFX_IDD_PREVIEW_TOOLBAR, this,
+            RUNTIME_CLASS(CMyPreviewView), pState))
+         {
+            // In derived classes, reverse special window handling here for
+            // Preview failure case.
+
+            TRACE0("Error: DoPrintPreview failed.\n");
+            AfxMessageBox(AFX_IDP_COMMAND_FAILURE);
+            delete pState; // Preview failed to initialize, delete State now.
+         }
+      }
+      ==============================================================
+
+Change your view's message map so that it has OnFilePrintPreview() in it:
+
+      ON_COMMAND(ID_FILE_PRINT_PREVIEW, OnFilePrintPreview)
+
+Add the appropriate #include to your applications's view class, such as:
+
+      #include "MyPreviewView.h"
+
+Add the following line to your view class's header file:
+
+      void OnFilePrintPreview();
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual C++ version 6.0 and
+later.
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+To reproduce this behavior:
+
+1. Run the SCRIBBLE sample application (specifically, step 7). (From the Visual
+   C++ Help menu, click Search, and type "scribble" in the Index Tab of the
+   Search dialog box.)
+
+2. Draw a scribble in the view.
+
+3. On the File menu, click Print Preview. Notice that there is a vertical scroll
+   bar that allows you to go through the pages.
+
+4. Select "Zoom in" from the toolbar.
+
+5. Select "Zoom out" from the toolbar. Notice that the vertical scroll bar no
+   longer exists.
+
+REFERENCES
+==========
+
+For more information on Print Preview, see the MFC Technote in the Visual C++
+documentation:
+
+TN030: "Customizing Printing and Print Preview"
+
+Additional query words: scrollbar
+
+======================================================================
+Keywords          : kbprint kbGDI kbMFC kbPrinting kbVC400bug kbVC410bug kbVC420bug kbVC500bug kbVC600fix kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : :4.0,4.1,4.2,5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

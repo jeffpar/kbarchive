@@ -1,0 +1,84 @@
+DOCUMENT:Q193765  30-JUL-1999  [foxpro]
+TITLE   :HOWTO: Using Visual FoxPro Online Help Without Installing MSDN
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbHTMLHelp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Previous versions of Visual FoxPro used a WinHelp implementation for online
+help. Since WinHelp is included as part of the operating system, it is possible
+to simply copy a Windows help file (*.hlp) to the system and expect to be able
+to view the contents of the help file. Visual FoxPro 6.0 uses the HTML Help
+system for online context-sensitive help. In order to be able to view the HTML
+Help file for Visual FoxPro (FoxHelp.chm), the correct version of the HTML Help
+engine must be present. This article describes how to configure a system with
+the necessary version of the HTML Help engine without having to install the
+Microsoft Developer Network (MSDN).
+
+MORE INFORMATION
+================
+
+Configuring the System with the HTML Help Engine
+------------------------------------------------
+
+1. Insert the Visual FoxPro 6.0 CD or Visual Studio 6.0 Disk 1 CD.
+
+2. Open the HTMLHelp folder on the CD.
+
+3. Double-click the Htmlhelp.exe file.
+
+4. Proceed through the HTML Help Workshop Setup.
+
+5. Choose Custom Setup when given the option.
+
+6. Choose only HTML Help in the Custom Setup options dialog box.
+
+7. Complete the installation.
+
+Once you have installed the HTML Help engine, you can view HTML Help files on
+this system. You can configure Visual FoxPro to use the help file directly from
+the CD, or you can copy the help file (FoxHelp.chm) to your Visual FoxPro
+directory. Use the Visual FoxPro Options dialog box to configure the location of
+the help file.
+
+It is important to recognize that this method of installing online help for
+Visual FoxPro 6.0 is far from complete. This method enables you to view the
+Visual FoxPro help topics contained in the Foxhelp.chm file, but it does not
+provide online help for common components, such as ActiveX controls, Win32 API
+functions, and so forth. To ensure that you have installed all the documentation
+for the various components, it is recommended that you install the Microsoft
+Developer Network.
+
+Additional query words: kbVFp600 kbDocs
+
+======================================================================
+Keywords          : kbHTMLHelp 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

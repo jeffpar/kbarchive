@@ -1,0 +1,69 @@
+DOCUMENT:Q137884  17-DEC-2000  [crossnet]
+TITLE   :Workgroups and Windows 95 Clients Not Validated with DNS
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Windows 95 and Windows for Workgroups 3.11 clients are not validated across a
+router on a domain using DNS.
+
+CAUSE
+=====
+
+The clients send out numerous DNS Standard Query packets to resolve the Domain
+name defined during logon. They receive the correct IP address for the domain
+controller if it is correctly defined in DNS, but do not send a Query for PDC
+packet until after the following error has already been received:
+
+   No Domain Server was available to validate your password. You may not be able
+   to gain access to some network resources.
+
+Even if an LMHOSTS file is correctly defined, the logon validation fails.
+
+WORKAROUND
+==========
+
+Use a WINS server for NetBIOS name resolution, or do not use DNS.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows 95 and Windows for
+Workgroups version 3.11. We are researching this problem and will post new
+information herein the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin95search kbWFWSearch kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

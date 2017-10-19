@@ -1,0 +1,79 @@
+DOCUMENT:Q191289  01-MAY-2001  [ssafe]
+TITLE   :HOWTO: Enable Event Error Logging for FrontPage 98 & SourceSafe
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:5.0,6.0,98
+OPER/SYS:
+KEYWORDS:kbFrontPage kbSSafe500 kbSSafe600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, versions 5.0, 6.0 
+ - Microsoft FrontPage 98 for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+With FrontPage 97, errors relating to the SourceSafe integration automatically
+display in the Web Server NT Event Log, usually on the Application tab. However,
+this behavior must be enabled in FrontPage 98 or FrontPage 2000.
+
+MORE INFORMATION
+================
+
+Front Page 98 Server Extensions
+-------------------------------
+
+Adding the following entry to the Frontpg.ini file on the Web server, allows you
+to see the error messages that are causing the SourceSafe integration in
+FrontPage to fail:
+
+      LogInitialSourceControlErrors=1
+
+The preceding line should be placed in the "[FrontPage 3.0]" section of the
+Frontpg.ini file.
+
+Front Page 2000 Server Extensions (version 4.0.2.2717 or later)
+---------------------------------------------------------------
+
+Add the following registry entry as a String Value:
+
+   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\Web Server Extensions\All Ports \LogInitialSourceControlErrors
+
+with the value "1"
+
+NOTE: All errors logged by FrontPage regarding SourceSafe integration are logged
+at the server end of the transaction. On a Windows NT system, the errors are
+logged in the "Windows NT Event Viewer Application" log. On a computer running
+Windows 95 or Windows 98, the errors are logged in the Frontpg log file located
+in the root of the drive to which Windows is installed. The errors are not
+logged to the client computer.
+
+In both cases you may want to set the value to zero once all errors have been
+resolved to avoid unnecessary activity in the Event log.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbFrontPage kbSSafe500 kbSSafe600 
+Technology        : kbSSafeSearch kbFrontPageSearch kbAudDeveloper kbZNotKeyword4 kbFrontPage98Search kbZNotKeyword3 kbSSafe600 kbSSafe500
+Version           : WINDOWS:5.0,6.0,98
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

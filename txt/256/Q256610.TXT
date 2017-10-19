@@ -1,0 +1,64 @@
+DOCUMENT:Q256610  02-JUL-2001  [sms]
+TITLE   :Flashed BIOS Version Is Not Updated by Hardware Inventory
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0,2.0 SP1
+OPER/SYS:
+KEYWORDS:kbWBEM kbsms200 kbsms200bug kbInventory
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you upgrade the computer BIOS on an existing SMS client with hardware
+inventory enabled, the upgraded BIOS is not reflected in the SMS database. To
+cause the new BIOS to be reflected in the SMS database, you must resynchronize
+the client.
+
+CAUSE
+=====
+
+Windows Management Instrumentation (WMI) queries the registry for BIOS
+information. This information is not updated except when you install the
+operating system.
+
+WORKAROUND
+==========
+
+Force a hardware inventory resynchronization by using the Inventory Synchronizer
+Tool (Invsync.exe) from the Microsoft BackOffice Resource Kit.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbWBEM kbsms200 kbsms200bug kbInventory 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1
+Version           : winnt:2.0,2.0 SP1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

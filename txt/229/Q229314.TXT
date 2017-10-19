@@ -1,0 +1,94 @@
+DOCUMENT:Q229314  30-SEP-1999  [exchange]
+TITLE   :XFOR: cc:Mail Migration Fails; PO Name Has Non-AlphaNumeric Char
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55 EXC55SP3Fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When attempting to migrate a Lotus cc:Mail Post Office using the Microsoft
+Exchange Migration Wizard, messages are not migrated properly and the following
+error message is visible in Event Viewer:
+
+   EventID: 1004
+   Source: MSExchangeMig
+   Description:
+   ccMail Export.exe error exporting user 'username' bad parameters on the
+   command line. Error with call to the ms-dos version of cc:mailexport.exe. See
+   document 'Migrating from lotus ccmail' for more information about Command
+   line 'export /P ******** /BATCH /N "username" /Dpath of ccdata directory
+   /DATE /1 /files /macbin2 /itemsize /folder /msgs /all /atc:\temp\s5k.2
+
+CAUSE
+=====
+
+The Lotus cc:Mail Post Office name contains one or more non-alphanumeric
+characters. Microsoft Exchange Migration Wizard uses the name of the Lotus
+cc:Mail Post Office when creating a directory to hold migration files. Because
+some non-alphanumeric characters are valid under Win32 naming conventions, but
+invalid under standard 16-bit naming conventions, Lotus cc:Mail Import.exe and
+Export.exe utilities are unable to access the directory created using the Lotus
+cc:Mail Post Office name.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Exchange Server
+version 5.5. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+The English version of this fix should have the following file attributes or
+later:
+
+Component: Migration
+
++--------------------------+
+| File name   | Version    | 
++--------------------------+
+| Mlmig32.dll | 5.5.2606.0 | 
++--------------------------+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5. This problem was first corrected in Exchange Server 5.5 Service
+Pack 3.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 EXC55SP3Fix 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,55 @@
+DOCUMENT:Q87203  08-NOV-1999  [pcmail]
+TITLE   :PROFS: Why the Gateway PC Needs the Correct Date/Time
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to IBM PROFS and OfficeVision, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The LAN administrator of the Microsoft Mail Gateway to IBM PROFS and
+OfficeVision must make sure that the gateway PC always has the correct
+date/time, as this information is used to "stamp" every mail item passing
+through the gateway.
+
+For mail coming from the host to the LAN, this date/time stamp determines where
+the item is displayed in your mailbag. For example, if a host mail item was
+delivered to your mailbag, but it was date-stamped incorrectly, it could end up
+at the bottom of your mailbag. If you have many items in your mailbag, you may
+never see the new piece of host mail.
+
+The same scenario is possible when sending a message from MS Mail to a host user.
+The host user may not be aware of the receipt of a new PROFS note or a new file
+in the Reader.
+
+
+Additional query words: 3.00 pcmail profslan date time
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateIBMPROFS300
+Version           : :3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

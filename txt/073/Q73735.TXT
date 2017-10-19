@@ -1,0 +1,52 @@
+DOCUMENT:Q73735  17-DEC-2000  [msdos]
+TITLE   :LDRIVE.SYS Incompatible with MS-DOS 5.0 or Later
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The device driver LDRIVE.SYS provided with some Future Domain hard drive
+controllers is incompatible with MS-DOS versions 5.0 and later. To install
+MS-DOS 5.0 and later onto the hard drive, it is necessary to back up the hard
+drive, repartition and reformat the drive under MS-DOS 5.0 or later, and restore
+backups. The device=LDRIVE.SYS line should be removed from CONFIG.SYS.
+
+LDRIVE.SYS is intended to provide greater than 32 MB logical drives under MS-DOS
+3.3 and earlier. It provides this service by using a technique called logical
+sectoring in which sector sizes greater than 512 bytes are used. Without a
+driver such as LDRIVE.SYS, MS-DOS is not capable of reading these disks. This
+necessitates reformatting the disk using MS-DOS FORMAT to make the disk usable
+without special drivers.
+
+Additional query words: 6.22 5.00 5.00a 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

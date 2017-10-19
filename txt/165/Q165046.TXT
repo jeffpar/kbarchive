@@ -1,0 +1,75 @@
+DOCUMENT:Q165046  16-MAY-1999  [exchange]
+TITLE   :XCLN: How to Open a Hidden User's Schedule
+PRODUCT :Microsoft Exchange
+PROD/VER:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 95/98 client, version 5.0 
+ - Microsoft Exchange Windows NT client, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You cannot view a hidden user's schedule even if you are given permissions,
+unless you have created a Personal Address Book (PAB) entry for the hidden user.
+This is by product design.
+
+MORE INFORMATION
+================
+
+To view a hidden user's Schedule+ information, the Exchange administrator must
+un-hide the mailbox from the Global Address List (GAL). Then, users must create
+a PAB entry for the hidden user. Once there is a PAB entry for the hidden user's
+mailbox that needs to be viewed, the mailbox can be re-hidden by the Exchange
+administrator. The hidden user will have to grant permissions as normal for you
+to see their Schedule+ information.
+
+To do this, administrators should follow these steps:
+
+1. Start the Microsoft Exchange Administrator program, select the hidden
+   recipient, and from the Advanced property page, uncheck the Hide from Address
+   Book option.
+
+2. Tell the users to add this address to their PAB by starting their client
+   and:
+
+   a. Selecting Address Book from the Tools Menu.
+
+   b. Opening the Global Address List.
+
+   c. Selecting the user that you intend to hide.
+
+   d. From the File menu, selecting Add to Personal Address Book.
+
+3. Repeat step 2 for all users who may need to open the hidden user's Schedule.
+
+4. From the Administrator program, select the user you want to hide from the
+   recipient container and from the Advanced property page, check the Hide from
+   Address Book option.
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbZNotKeyword3 kbExchange500NT kbExchange500Win95
+Version           : 5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

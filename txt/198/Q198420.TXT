@@ -1,0 +1,64 @@
+DOCUMENT:Q198420  07-MAY-2002  [homegame]
+TITLE   :Combat FS: Converted FS98 Aircraft Use Incorrect Flap Sounds
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbsound kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+ - Microsoft Combat Flight Simulator 2: WWII Pacific Theater, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use converted Microsoft Flight Simulator 98 aircraft in Microsoft Combat
+Flight Simulator or Microsoft Combat Flight Simulator 2, you may hear incorrect
+flap sounds when you raise or lower the flaps of the converted aircraft.
+
+CAUSE
+=====
+
+This behavior can occur because Combat Flight Simulator is incompatible with
+Flight Simulator 98 aircraft flap sounds that use three cross-faded files.
+
+NOTE: To determine if Flight Simulator 98 aircraft flap sounds use three
+cross-faded files, use a text editor to open the Sound.cfg file for that
+aircraft. If the file contains three [flaps] sections, the aircraft flap sounds
+use three cross-faded files.
+
+MORE INFORMATION
+================
+
+If Flight Simulator 98 aircraft flap sounds use three cross-faded files, Combat
+Flight Simulator or Combat Flight Simulator 2 plays the default flap sounds for
+the Messerschmitt Bf 109E aircraft when you raise or lower the flaps of the
+converted aircraft.
+
+Additional query words: 1.00 msgame combatfs cfs
+
+======================================================================
+Keywords          : kbsound kbimu 
+Technology        : _IKkbbogus kbGamesSearch kbCombatFlightSim2 kbCombatFlightSim kbCombatFlightSimSearch kbSimSearch
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

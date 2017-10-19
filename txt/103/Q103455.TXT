@@ -1,0 +1,80 @@
+DOCUMENT:Q103455  09-NOV-1999  [pcmail]
+TITLE   :PC Win: Err Msg: Message Too Large to Fit Into Mem. All At Once
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0b,3.1,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0, 3.0b, 3.1, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In versions 3.0, 3.0b, 3.1, and 3.2 of Microsoft Mail for Windows, and version
+3.1 of Microsoft Mail for Windows for Workgroups, when you try to read a message
+that is the maximum size possible, the following warning appears and the last
+two characters of the message are truncated:
+
+   The message is too large to fit into memory all at once.
+   Some of it will not be displayed.
+
+A related problem occurs if the message contains an attachment as the last
+character. When the message is saved or sent, and then read again by the sender,
+Mail experiences a general protection (GP) fault.
+
+RESOLUTION
+==========
+
+Although too large to display in the Windows client, the message can be saved as
+a text file or printed in order to read the entire text.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in versions 3.0, 3.0b, 3.1, and 3.2
+of Microsoft Mail for Windows. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+To save the message as a text file:
+
+1. From the File menu, choose Save As...
+
+2. Name the file and choose the directory. The file can now be opened in a word
+   processor or text editor.
+
+To print the entire message:
+
+1. Select the message in the Inbox.
+
+2. From the File menu, choose Print...
+
+Additional query words: 3.00 3.00b 3.10 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail310 kbMail300 kbMail320 kbMail300b
+Version           : WINDOWS:3.0,3.0b,3.1,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

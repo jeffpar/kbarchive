@@ -1,0 +1,58 @@
+DOCUMENT:Q129100  11-DEC-1999  [homemm]
+TITLE   :Bookshelf 93: Scrolling Off Screen Causes Audio to Stop Playin
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1993 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows 1993 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you play an audio clip, and your window contains a scroll bar to allow
+viewing of the complete article, the audio ceases if you scroll far enough right
+to move the audio controller out of the window.
+
+MORE INFORMATION
+================
+
+Microsoft has confirmed this to be a problem in Microsoft Bookshelf for Windows,
+1993 edition. This problem was corrected in Microsoft Bookshelf for Windows,
+1994 and 1995 editions.
+
+WORKAROUND
+==========
+
+The problem can sometimes be resolved if you change the size of the your viewing
+window. Resizing the window brings the entire article into view, making the
+scroll bar unnecessary. This method only works if the current window is not full
+screen.
+
+Additional query words: 1.00 mmtitles kbmm CDs player Compact Disc Disk viewer controls sound
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1993
+Version           : :1993 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

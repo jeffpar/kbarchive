@@ -1,0 +1,130 @@
+DOCUMENT:Q255664  23-OCT-2000  [sms]
+TITLE   :Installation Problem Due to SQL 7.0 Quoted_Identifier Attribute
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP1,2.0 SP2
+OPER/SYS:
+KEYWORDS:kbsms200
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your attempt to install Microsoft Systems Management Server (SMS) did not
+succeed. The SMS Installation Wizard may cause the following error message to be
+displayed on your computer screen:
+
+   Systems Management Server Setup cannot continue because of the following
+   error.
+
+   Setup cannot create the required database tables. Contact your SQL
+   Administrator.
+
+Also, the Smssetup.log file may contain the following error message:
+
+   2-21-2000 11:54:46 SqlExecute IF NOT EXISTS (select * from NextIds where
+   IdName = "NextCollectionID") BEGIN IF NOT EXISTS (select CollectionID from
+   Collections) BEGIN insert NextIds (IdName, IdValue) values
+   ('NextCollectionID', 13) END ELSE BEGIN insert NextIds (IdName, IdValue)
+   select 'NextCollectionID', max(CollectionID) + 1 from Collections END END
+   02-21-2000 11:54:47
+
+   Cannot execute sql command IF NOT EXISTS (select * from NextIds where IdName =
+   "NextCollectionID")
+
+CAUSE
+=====
+
+This behavior can occur because of the double quotation of "NextCollectionID"
+located in the preceding select statement. If the Quoted_Identifier attribute is
+selected, SQL misinterprets "NextCollectionID" in the SMS installation script as
+a SQL column name.
+
+WORKAROUND
+==========
+
+To work around this behavior, you must change the setting of the
+Quoted_Identifier attribute. By default, this attribute is not enabled. To
+change the setting of this attribute, perform the following steps:
+
+1. Run SQL Enterprise Manager.
+
+2. Right-click SQL Server, and then click Properties.
+
+3. On the Connection tab, locate the Quoted_Identifier attribute and set it to
+   Off.
+
+4. After SMS is installed successfully, the Quoted_Identifier attribute can be
+   set to On.
+
+MORE INFORMATION
+================
+
+The setting of the Quoted_Identifier attribute determines what meaning Microsoft
+SQL Server gives to double quotation marks ("). When the Quoted_Identifier
+attribute is set to Off, double quotation marks delimit a character string, just
+as single quotation marks do. When the Quoted_Identifier attribute is set to On,
+double quotation marks delimit an identifier, such as a column name.
+
+An identifier must be enclosed in double quotation marks (for example, if its
+name contains characters that are restricted in an identifier, including spaces
+and punctuation, or if the name conflicts with a reserved word in Transact-SQL).
+Regardless of the setting of the Quoted_Identifier attribute, an identifier can
+also be delimited by square brackets.
+
+The meaning of the following statement, for example, depends on whether the
+Quoted_Identifier attribute is set to On or Off:
+
+   SELECT "x" FROM T
+
+If the Quoted_Identifier attribute is set to On, "x" is interpreted to mean the
+column named x. If it is set to Off, "x" is the constant string x and is
+equivalent to the letter x.
+
+If the preceding Select statement example had been part of a stored procedure
+created when the Quoted_Identifier attribute had been set to On, "x" would
+always mean the column named x. Even if the setting of the Quoted_Identifier
+attribute was later switched to Off, the stored procedure would behave as if it
+had been set to On and treat "x" as the column named x.
+
+When the SQL Server Upgrade Wizard re-creates database objects in SQL Server
+version 7.0, the setting of the Quoted_Identifier attribute determines how all
+of these objects behave. If all database objects had been created in SQL Server
+6.x with the same setting of the Quoted_Identifier attribute, click that
+setting, either On or Off. If objects had been created in SQL Server 6.x with a
+mix of the two settings, or if you are unsure of the settings used, click
+Mixed.
+
+With the Mixed option, the SQL Server Upgrade Wizard first converts all objects
+containing double quotation marks with the Quoted_Identifier attribute set to
+On. The SQL Server Upgrade Wizard then converts any objects that could not be
+created with the Quoted_Identifier attribute set to Off.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : :2.0,2.0 SP1,2.0 SP2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

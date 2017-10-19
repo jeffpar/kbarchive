@@ -1,0 +1,76 @@
+DOCUMENT:Q176409  13-MAR-1999  [exchange]
+TITLE   :XADM: Internet Newsgroup Public Folder Becomes Visible
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Internet Newsgroup public folder may become visible to clients in the
+organization after making the folder not visible from the Client Permission
+Property page inside of the Microsoft Exchange Administrator program.
+
+MORE INFORMATION
+================
+
+This can be caused either by:
+
+   Introducing an Exchange Server 5.0 site to the organization through directory
+   replication with the Internet Newsgroups public folder configured to be
+   visible, which is the default.
+
+   - or -
+
+   Installing an Exchange Server 5.0 computer into an existing Exchange Server
+   4.0 site which participates in directory replication with the organization.
+
+RESOLUTION
+==========
+
+Follow these steps to make the Internet Newsgroups public folder not visible to
+Exchange Clients:
+
+1. Connect to the new Exchange Server 5.0 computer from the Exchange
+   Administrator program.
+
+2. Expand the Folders object to expose the Public Folders hierarchy.
+
+3. Expand the Public Folders hierarchy and view the properties of the Internet
+   Newsgroups public folder.
+
+4. Click on the Client Permissions button and clear the "Folder Visible" check
+   box for the role of "Nonediting Author."
+
+This will hide the Internet Newsgroups public folder from your Exchange Clients
+in this site and other sites to which it replicates to throughout the
+organization.
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : WinNT:5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

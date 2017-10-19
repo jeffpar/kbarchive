@@ -1,0 +1,98 @@
+DOCUMENT:Q162700  14-NOV-2000  [word97]
+TITLE   :WD97: "All Active Templates and Documents" Missing Macros
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbwordvba
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you display the Macros dialog box, you have the option to list available
+macros from different sources in the "Macros in" box. One of the options to
+choose is "All Active Templates and Documents." When you select this option, you
+may not see the macros you expect.
+
+CAUSE
+=====
+
+The "All Active Templates and Documents" option lists macros available in:
+
+ - Templates or documents placed in the Office Start Up folder.
+
+ - Templates or documents made available when you click "Templates and Add- Ins"
+   on the Tools menu.
+
+ - The currently active document and its attached template.
+
+The "All Active Templates and Documents" option does NOT show:
+
+ - Macros in non-active but currently open documents or templates
+
+ - New, Open, or Close events for any document.
+
+ - Visual Basic for Applications code placed in UserForm event procedures and
+   subroutines or functions.
+
+ - Subroutines or functions that expect arguments, as in the following
+   examples:
+
+         Sub MySub (MyString As String)
+
+   -and-
+
+         Function MyFunction (MyString As String)
+
+ - Subroutines or Functions declared as Private, as in the following examples:
+
+         Private Sub MySub ()
+
+   -and-
+
+   Private Function MyFunction ()
+
+WORKAROUND
+==========
+
+Activate the document or template containing the macros you want to see before
+you display the Macros dialog box.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: wordcon vba vb vbe
+
+======================================================================
+Keywords          : kbwordvba 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

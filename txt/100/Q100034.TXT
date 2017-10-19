@@ -1,0 +1,62 @@
+DOCUMENT:Q100034  24-NOV-1999  [macmail]
+TITLE   :MAC Wkst: Pasting Sounds into the Voice Form
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Versions 3.0 and 3.1 of Microsoft Mail for AppleTalk Networks include a feature
+that allows you to paste pre-recorded sounds directly into the sound form.
+
+To use this feature, perform the following steps:
+
+1. Copy the sound using a sound editor.
+
+2. Log in to Microsoft Mail.
+
+3. Select the form labeled Sound.
+
+4. Select the message recipients and click the Close button.
+
+5. Click between the words Size: and Length: (a border should appear around the
+   Size: and Length: fields).
+
+6. From the Edit menu, choose Paste. The sound is now included in the mail
+   message.
+
+Microsoft Mail 3.0 refers to the Sound form as the Voice form. This form is not
+installed automatically with Microsoft Mail version 3.0; the Voice form is
+included on the Forms disk in the Voice Form folder.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,82 @@
+DOCUMENT:Q170940  24-MAY-2002  [word97]
+TITLE   :WD97: Password Not Prompted with First Expansion of Sub-document
+PRODUCT :Word 97 for Windows
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdta word8 word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The first time you collapse and expand a password-protected sub-document within
+a Microsoft Word 97 master document, you are not prompted for a password. After
+the first time, you are prompted for the password.
+
+RESOLUTION
+==========
+
+To correct this problem, install Microsoft Word 97 for Windows, Service Release
+1 (SR-1).
+
+WORKAROUND
+==========
+
+After you have inserted a password-protected sub-document in a master document,
+before you collapse and expand the sub-documents, save and close the master
+document. When you open (expand) the sub-documents, Word correctly prompts you
+for the password.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This problem was corrected in Microsoft
+Word 97 for Windows Service Release 1 (SR-1).
+
+MORE INFORMATION
+================
+
+To save a Microsoft Word 97 document with a Password To Modify security, do the
+following:
+
+1. On the File menu, click Save As.
+
+2. Click Options, and under Password To Modify, type a password and then click
+   OK.
+
+3. You will be asked to confirm your password. Retype the password in the
+   "Reenter password to modify" area and then click OK.
+
+4. Type the name of your document in the File name box and then click Save.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdta word8 word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

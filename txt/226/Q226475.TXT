@@ -1,0 +1,89 @@
+DOCUMENT:Q226475  04-AUG-2000  [iis]
+TITLE   :Setup Choices Vary Depending on Previous Installation of IIS/NTO
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The choices displayed during the setup of the Windows NT 4.0 Option Pack (NTOP),
+which includes Internet Information Server (IIS) 4.0, vary depending upon
+whether IIS is already installed on the computer, and if so, which version is
+installed.
+
+MORE INFORMATION
+================
+
+IIS is not installed
+--------------------
+
+If IIS is not installed, the choices presented by the Setup program are as
+follows:
+
+ - Minimum: Requires the least amount of disk space. Provides the basic
+   functionality to deploy Web site.
+
+ - Typical: The recommended configuration. Includes all of the Minimum
+   components, along with the basic documentation and additional components to
+   allow you to build and deploy Web applications.
+
+ - Custom: For advanced Web site developers. Provides the option to choose and
+   customize all components. All options included in the Typical installation
+   are pre-selected.
+
+Existing IIS version is 3.0 or earlier
+--------------------------------------
+
+If IIS version 3.0 or earlier is already installed, the choices presented by the
+Setup program are as follows:
+
+ - Upgrade Only: Choose "Upgrade Only" to upgrade existing components only.
+
+ - Upgrade Plus: Choose "Upgrade Plus" to upgrade existing components and to add
+   new components.
+   Note: the previously installed components will remain unchecked, you are not
+   allowed to uncheck them.
+
+IIS version 4.0 is already installed
+------------------------------------
+
+If IIS 4.0 is already installed, the choices presented by the Setup program are
+as follows:
+
+ - Add/Remove: Add new components or remove installed components from the
+   current installation.
+
+ - Remove All: Remove all previously installed components.
+
+Additional query words: nt4op ntop setup set up install installation buttons akz
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

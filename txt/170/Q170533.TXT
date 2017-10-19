@@ -1,0 +1,52 @@
+DOCUMENT:Q170533  25-DEC-1999  [exchange]
+TITLE   :XADM: Exchange 5.0 SP1 No Setup.exe in \Support Directory
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 Service Packs 1, 2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Part 2.0 of the "Installation Instructions for Microsoft Exchange Server Service
+Pack 1" incorrectly states:
+
+   7. Switch to the Support directory; and type "Setup" (without the quotation
+   marks). Follow the instructions displayed on the screen.
+
+The Setup.exe file that the Readme.txt and Readme.wri files refer to is located
+in the \Support\Symbols directory. Item number 7 should read:
+
+   7. Switch to the Support\Symbols directory; and type "Setup" (without the
+   quotation marks). Follow the instructions displayed on the screen.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword8 kbExchangeSearch kbZNotKeyword2 kbExchange500SP1
+Version           : winnt:5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,66 @@
+DOCUMENT:Q314588  29-JUN-2002  [exchange]
+TITLE   :XADM: Err Msg Running Backup Against a Clustered Exchange Server
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to perform an Exchange Server-aware backup against a clustered
+Exchange Server installation (one with two or more network interfaces), the
+backup software package may fail to communicate with the Exchange Server
+installation, and you may subsequently receive any of the following error
+messages:
+
+   RPC_S_SERVER_UNAVAILABLE
+
+   -or-
+
+   0x6ba
+
+   -or-
+
+   1722
+
+CAUSE
+=====
+
+Although you can specify and create additional IP address resources within the
+Cluster Administrator, Exchange Server binds only to a single IP address
+resource. As a result, Exchange Server does not register its remote procedure
+call (RPC) endpoints for these additional IP address resources and/or
+interfaces. Therefore, you may receive an error message when you attempt to
+perform Exchange Server operations against these additional network interfaces.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange2000Search kbExchange2000Serv
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

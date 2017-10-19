@@ -1,0 +1,86 @@
+DOCUMENT:Q246173  18-MAY-2001  [iis]
+TITLE   :FTP Server Does Not Allow FTP Server-to-Server Connection
+PRODUCT :Internet Information Server
+PROD/VER::4.0,5.0
+OPER/SYS:
+KEYWORDS:kbWin2000PreSP1Fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+RFC 959 allows for the use of the PORT command, a remote connection to another
+TCP\IP over a passive connections, to be established based on the port address
+given by client. This is commonly done with FTP server-to-server transfers. This
+behavior was made optional to provide added security to the FTP service.
+
+The FTP service compares the IP address that makes the connection and the address
+issuing the PASV command. If they are different, the FTP service does not allow
+the connection. When you attempt to do this on the Microsoft FTP Server, this
+operation fails, regardless of the settings. For additional information, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q147621 IIS FTP Service Registry Parameters
+
+RESOLUTION
+==========
+
+Windows 2000
+------------
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+
+
+STATUS
+======
+
+Windows 2000
+------------
+
+Microsoft has confirmed this to be a problem in Internet Information Services
+5.0. This problem was first corrected in Windows 2000 Service Pack 1.
+
+Windows NT 4.0
+--------------
+
+Microsoft has confirmed this to be a problem in Internet Information Server
+4.0.Microsoft is researching this problem and will post more information here in
+the Microsoft Knowledge Base when it becomes available.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbWin2000PreSP1Fix 
+Technology        : kbiisSearch kbExchange400 kbGraph500
+Version           : :4.0,5.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

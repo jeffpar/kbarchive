@@ -1,0 +1,154 @@
+DOCUMENT:Q142495  20-MAY-2000  [msj]
+TITLE   :Microsoft Systems Journal: February 1996
+PRODUCT :Miscrosoft Systems Journal
+PROD/VER::for February 1996
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Journal (MSJ) for February 1996 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+NOTE: "Microsoft Systems Journal" does not make any representation or warranty,
+expressed or implied, with respect to any code or other information herein.
+"Microsoft Systems Journal" disclaims any liability whatsoever for any use of
+such code or other information.
+
+Microsoft grants to you a royalty-free right to use and modify the source code
+version and to reproduce and distribute the object code version of the sample
+code, icons, cursors, and bitmaps provided within the Sample Code bin/folder on
+the SOFTWARE ("Sample Code") provided that you: (a) distribute the Sample Code
+only in conjunction with and as a part of your software product that adds
+primary and significant functionality to the sample code; (b) do not use
+Microsoft's name, logo, or trademarks to market your software product; and (c)
+agree to indemnify, hold harmless, and defend Microsoft and its suppliers from
+and against any claims or lawsuits, including attorneys' fees, that arise or
+result from your distribution of your software product and (d) all Microsoft
+Systems Journal (MSJ) code used within your program(s) must be flagged:
+Copyright <year>, Microsoft Systems Journal.
+
+This article lists the file names and Snumbers for files available from online
+services that contain the source code described in articles published in the
+February 1996 issue of the "Microsoft Systems Journal."
+
+FILES AVAILABLE FROM ONLINE SERVICES
+------------------------------------
+
+S15728      MFCPART7.EXE          The MFCPART7.EXE file contains the source
+                                  code for the article named "Programming
+                                  Windows 95 with MFC, Part VII: The
+                                  Document/View Architecture," by Jeff
+                                  Prosise.
+
+                                  The document/view architecture of
+                                  Visual C++ 4.0 really simplifies
+                                  the development process. Code to
+                                  perform routine chores is provided
+                                  by the framework. So is code to
+                                  transform your app's documents into
+                                  OLE container, simplify printing, and
+                                  more.
+
+S15729      WEBSTER.EXE           The WEBSTER.EXE file contains the source
+                                  code for the article named "Write a
+                                  Simple HTTP-based Server Using MFC and
+                                  Windows Sockets," by David Cook.
+
+                                  You may be surprised at how easy it is
+                                  to write a World Wide Web server. Our
+                                  sample server, Webster, is without
+                                  question a bare-bones "baby" server,
+                                  but it does demonstrate some of the
+                                  basic techniques of Internet
+                                  programming.
+
+S15730      GAMESPT2.EXE          The GAMESPT2.EXE file contains the source
+                                  code for the article named "Get World-
+                                  Class Noise and Total Joy from Your Games
+                                  with DirectSound and DirectImput" by
+                                  Dave Edson.
+
+                                  DirectSound ensures that you'll get
+                                  swell audio with wave mixing from
+                                  your games, while DirectInput is a
+                                  much needed standard for handling
+                                  the joystick. Both are components of
+                                  the new Game SDK for Windows 95.
+
+S15731      UNDR0296.EXE          The UNDR0296.EXE file contains the code
+                                  sample for the column, "Under the Hood,"
+                                  by Matt Pietrek, page 85.
+
+S15732      CPPQ0296.EXE          The CPPQ0296.EXE file contains the code
+                                  sample for the column, "C/C++ Q & A,"
+                                  by Paul DiLascia, page 107.
+
+S15734      VISL0296.EXE          The VISL0296.EXE file contains the code
+                                  sample for the column, "The Visual
+                                  Programmer," by Joshua Trupin, page 93.
+
+S15733      OLEQ0296.EXE          The OLEQ0296.EXE file contains the code
+                                  sample for the column, "OLE Q & A,"
+                                  by Don Box, page 99.
+
+INSTRUCTIONS FOR DOWNLOADING
+----------------------------
+
+You can download any of these self-extracting files from the following services:
+
+ - Microsoft's World Wide Web Site on the Internet
+   On the www.microsoft.com home page, click the Support icon.
+   Click Knowledge Base, and select the product.
+   Enter kbfile <FILENAME>.EXE, and click GO!
+   Open the article, and click the button to download the file.
+
+ - Internet (anonymous FTP)
+   ftp ftp.microsoft.com
+   Change to the Softlib/Mslfiles directory.
+   Get <FILENAME>.EXE
+
+ - The Microsoft Network
+   On the Edit menu, click Go To, and then click Other Location.
+   Type "mssupport" (without the quotation marks).
+   Double-click the MS Software Library icon.
+   Find the appropriate product area.
+   Download <FILENAME>.EXE.
+
+ - Microsoft Download Service (MSDL)
+   Dial (425) 936-6735 to connect to MSDL
+   Download <Filename>.exe
+
+
+For additional information about downloading, please see the following article in
+the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Additional query words: msj Feb
+
+======================================================================
+Keywords          :  
+Technology        : kbMSJSearch
+Version           : :for February 1996
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

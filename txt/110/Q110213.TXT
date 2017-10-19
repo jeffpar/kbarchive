@@ -1,0 +1,76 @@
+DOCUMENT:Q110213  07-SEP-2001  [winnt]
+TITLE   :HP 1200C PostScript Color Printer Prints Black-and-White
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbhw kbprint kbPrinting kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print from an Apple Macintosh with Windows NT Services for Macintosh
+(SFM) to a shared PostScript color printer that does not have a Windows NT
+driver and includes a PostScript Printer Definition (PPD) file, such as the
+Hewlett-Packard (HP) DJ1200C, it prints in black-and-white or grayscale.
+
+CAUSE
+=====
+
+The cause of this problem is that the Macintosh client queries the server for
+information about the printer. If the printer being used is PostScript and has a
+PPD file, the file is read for printer capabilities. However, if there is not a
+corresponding PPD file, this prompts the server to return default information to
+the Macintosh client. The default information returned is set up for a
+black-and-white printer.
+
+If you set up your printer with a non-PostScript driver, the Macintosh Services
+checks the default non-PostScript device. The default is set to Color=False in
+this device; therefore, you cannot work around this problem by setting up the
+driver with a non-PostScript version for the same printer.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT Advanced Server
+version 3.1. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+The Hewlett-Packard product included here is manufactured by a vendor independent
+of Microsoft; we make no warranty, implied or otherwise, regarding this
+product's performance or reliability.
+
+REFERENCES
+==========
+
+Windows NT Advanced Server, "Services for Macintosh"
+
+
+Additional query words: prodnt gray scale HP1200c HPDJ1200c SFMPSPRT.DLL
+
+======================================================================
+Keywords          : kbhw kbprint kbPrinting kbHardware 
+Technology        : kbWinNTsearch kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNT310Search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

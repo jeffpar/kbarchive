@@ -1,0 +1,65 @@
+DOCUMENT:Q151896  25-AUG-1999  [automap]
+TITLE   :Automap Streets: Only One Go To Pointer to City Name Allowed
+PRODUCT :Microsoft Automap
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Automap Streets for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Maps only show one Go To pointer for city names, but allow multiple pointers for
+addresses.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Automap Streets for
+Windows, version 4.0. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Streets for Windows Streets allows you to look up street addresses, cities, zip
+codes and other natural features with the Go To command.
+
+If you enter a street address, Automap Streets displays a pointer consisting of
+the address inside a blue box at its proper location on the map. If you enter
+the name of a city, Automap Streets displays a pointer consisting of the city
+name inside a blue box at the location of the city center.
+
+Although you can display pointers to multiple street addresses on the same map,
+this is not true for city names. Only one pointer to a city name can be
+displayed on the map. If you enter a second city name, the pointer to the first
+city name disappears.
+
+Additional query words: auto auto-map automap reference kbmm multimedia multi-media multi media map
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbAutomapSearch kbAutomapStreets400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

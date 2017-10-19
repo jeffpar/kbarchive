@@ -1,0 +1,109 @@
+DOCUMENT:Q196732  11-JUN-2002  [winnt]
+TITLE   :HOWTO: Set a User's Default Local Printer with a Logon Script
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+When a user connects to a Terminal Server computer in a client session, he or
+she may be locked down to only one application. If this application does not
+allow for selecting the default printer, the user will not be able to specify a
+printer other than the default. To make it possible for all users to specify the
+printer closest to them, the default printer must be set using a regini script.
+
+NOTE: Regini.exe is available in the Windows NT Resource Kit.
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+1. In Terminal Server, run Regedt32 and go to the following key:
+
+   HKEY_CURRENT_USER/Software/Microsoft/WindowsNT/Currentversion/Devices
+
+   Here you will see a list of your existing printers. An example of one of the
+   key values may look like this:
+
+   HP LaserJet 5Si : REG_SZ: winspool,Ne00
+
+   NOTE: This is a local printer, NOT a network printer.
+
+   The first text string is the text name of the printer, and the last two
+   numbers in Ne00 will be the order in which the printer was added to the
+   server for a TCP/IP printer. It could be, for example, LPT1: for a direct
+   connected printer. Take note of all the printers listed here. These printer
+   would have had to been installed by a local administrator.
+
+2. Create a text file and name it SomeFileName.ini. One of theses files will be
+   needed for each printer you need to assign as default. The file should look
+   like this:
+
+   HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows
+      Device = DELETE
+
+   HKEY_CURRENT_USER\Printers
+      DeviceOld = DELETE
+
+   HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows
+      Device = "[text name of printer],winspool,Nexx:"
+
+   HKEY_CURRENT_USER\Printers
+      DeviceOld = "[text name of printer],winspool,Nexx:"
+
+   NOTE: Do not forget the colon (:).
+
+   NOTE: xx is the Ne number for the specific printer you would like to use with
+   this file.
+
+   NOTE: Device = "[text name of printer],winspool,Nexx:" is case sensitive.
+
+3. After all your files have been created for each printer, you must add the
+   following line to the logon script of each user:
+
+   regini [path]\SomeFileName.ini > Nul:
+
+MORE INFORMATION
+================
+
+By default, only printers that are attached to a local port on the server will
+be pushed to all users logging on to the Terminal Server computer. This includes
+printers connected through TCP/IP printing.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServSearch
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

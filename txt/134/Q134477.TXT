@@ -1,0 +1,67 @@
+DOCUMENT:Q134477  17-DEC-2000  [win95x]
+TITLE   :Lion King 1.0: ESS AudioDrive Hardware Not Responding
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install The Lion King version 1.0 on a computer that has an ESS 488
+sound card and is running Windows 95, you may receive the following error
+message:
+
+   The ESS AudioDrive hardware is not responding properly. Sound playback and
+   recording will not be available.
+
+CAUSE
+=====
+
+There is an incompatibility between the ESS 488 16-bit driver and the 16- bit
+file architecture that The Lion King employs. Although Windows Audio Compression
+Manager is capable of translating 16-bit files and playing them correctly, The
+Lion King does not recognize the translation and incorrectly states that the
+sound card is not responding properly.
+
+RESOLUTION
+==========
+
+Contact the manufacturer for an upgrade of The Lion King.
+
+MORE INFORMATION
+================
+
+This problem does not occur if The Lion King version 1.0 is installed in Windows
+version 3.x, and then later upgraded to Windows 95.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,82 @@
+DOCUMENT:Q196765  14-NOV-2000  [word97]
+TITLE   :WD97: "Cannot Open File" Error in INCLUDETEXT Field
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta kbfield word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you insert an INCLUDETEXT field in a Microsoft Word document, the following
+error message appears in place of the field results:
+
+   Error! Cannot open file.
+
+CAUSE
+=====
+
+When you manually insert an INCLUDETEXT field in your document, one of the
+following may be causing the error message:
+
+ - The file path has a space in the folder or file name.
+
+   For example:
+
+   {INCLUDETEXT c:\\my<space>documents\\test.doc}
+
+   -or-
+
+ - The file path does not include double-backslashes separating the folders
+   and/or file name.
+
+   For example:
+
+   {INCLUDETEXT "c:\my documents\test.doc"}
+
+RESOLUTION
+==========
+
+You must enclose the path and file name in quotation marks if there are spaces
+in any part of the path or file name and you must use double-backslashes in the
+path to separate the folder and/or file name in an INCLUDETEXT field.
+
+For example:
+
+   {INCLUDETEXT "C:\\My Documents\\Test.doc"}
+
+   -or-
+
+   {INCLUDETEXT C:\\Documents\\Word\\Test.doc}
+
+Additional query words: fields documentation error
+
+======================================================================
+Keywords          : kbdta kbfield word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

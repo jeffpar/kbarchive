@@ -1,0 +1,65 @@
+DOCUMENT:Q130651  28-JUL-2001  [win95x]
+TITLE   :PC-NFS and Client for Microsoft Networks Cannot Connect
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:3rdpartynet msnets win95 kb3rdPartyNetClient
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Windows 95 computer running SunSoft's PC-NFS version 5.x and the Microsoft
+Client for Microsoft Networks may not be able to see shared resources on a
+PC-NFS server or an SMB server running the NetBEUI protocol.
+
+CAUSE
+=====
+
+This problem occurs because of a conflict between the NDISHLP.SYS driver used by
+VREDIR and the PCNFS.SYS driver supplied by SunSoft for their PC-NFS client. The
+conflict causes network packets to be forwarded incorrectly, so no packets are
+broadcast on the network.
+
+This problem affects only certain PCMCIA and Cabletron network adapters. The
+following network adapters are known to exhibit this behavior:
+
+ - Xircom PCMCIA network adapters
+
+ - IBM Ethernet PCMCIA network adapters
+
+ - Cabletron Ethernet network adapters
+
+
+STATUS
+======
+
+We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+======================================================================
+Keywords          : 3rdpartynet msnets win95 kb3rdPartyNetClient 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

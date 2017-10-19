@@ -1,0 +1,57 @@
+DOCUMENT:Q189284  20-MAY-2002  [win95x]
+TITLE   :Entering Suspend Mode While in Standby Mode Hangs USB Computer
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::2.1,2.5
+OPER/SYS:
+KEYWORDS:kbenv kbhw win95 kbHardwarekbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, versions 2.1, 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using Windows 95 OEM Service Release 2.1 or 2.5 with Universal
+Serial Bus (USB) support, your computer may stop responding (hang) if you put
+the computer in Standby mode and then immediately put the computer in Suspend
+mode by pressing a function key or closing the lid of your laptop computer.
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95 OEM Service
+Release 2.1 and 2.5. This problem no longer occurs in Windows 98. To resolve
+this problem, install the current version of Windows. For information about the
+current version of Windows, visit the following Microsoft Web site:
+
+   http://www.microsoft.com/windows
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbhw win95 kbHardware kbfixlist
+Technology        : kbWin95search kbOPKSearch kbWin95OPKOSR25 kbWin95OPKOSR210
+Version           : :2.1,2.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

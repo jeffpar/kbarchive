@@ -1,0 +1,57 @@
+DOCUMENT:Q94612  05-NOV-1999  [win16sdk]
+TITLE   :DOCERR: Name of Standard Help Menu Incorrect for InsertItem
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An "Unable to add menu item" error message occurs when trying to add a menu item
+to the Windows Help engine's Help menu with InsertItem().
+
+CAUSE
+=====
+
+MNU_HELPON is being used as the Help menu identifier in the InsertItem() macro.
+
+RESOLUTION
+==========
+
+Page 318 of Microsoft Windows version 3.1 SDK "Programmer's Reference, Volume 4:
+Resources" incorrectly lists MNU_HELPON as the Help menu identifier for the Help
+engine. The correct identifier for the Help menu is MNU_HELP. Using the
+incorrect identifier does not cause an error when the Help file is compiled, but
+does cause an "Unable to add menu item" error when the macro is executed by the
+Windows Help engine.
+
+Additional query words: 3.10 winhelp hc docerr
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

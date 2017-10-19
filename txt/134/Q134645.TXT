@@ -1,0 +1,70 @@
+DOCUMENT:Q134645  13-DEC-1999  [homemm]
+TITLE   :Mac Bookshelf 1995: Words from WordPerfect not Found
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1995 edition
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for the Macintosh 1995 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If Microsoft Bookshelf is started after you select a word from Word Perfect
+version 3.1, Microsoft Bookshelf does not find the selected word in any of its
+books.
+
+RESOLUTION
+==========
+
+Before you start Bookshelf, copy the word from Word Perfect. To copy the word
+from Word Perfect, do the following:
+
+1. Open the Word Perfect document.
+
+2. Select the word you want to look up in Bookshelf.
+
+3. Choose Copy from the Edit menu.
+
+4. Start Microsoft Bookshelf from the Quickshelf Menu.
+
+Bookshelf locates the word you have selected and copied from Word Perfect.
+
+MORE INFORMATION
+================
+
+Microsoft has confirmed this to be a problem in Bookshelf version 1995. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: mac 1995 multi media multimedia multi-media mmtitles kbmm wordperfect wperfect wp51
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHWMAC kbOSMAC kbHomeMMsearch kbBookshelfSearch kbBookShelf1995Mac
+Version           : :1995 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,55 @@
+DOCUMENT:Q180770  16-NOV-2001  [vbwin]
+TITLE   :BUG: Check Boxes Always Appear Three-Dimensional (3D)
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::2.0,2.11,3.0
+OPER/SYS:
+KEYWORDS:kbToolkit kbVBp500bug kbVBp600bug kbOSWinCE100 kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Toolkit for Visual Basic 6.0 
+ - Microsoft eMbedded Visual Basic, version 3.0, used with:
+    - Microsoft Windows CE versions 2.0, 2.11 for the Handheld PC 
+    - Microsoft Windows CE version 2.11 for the Palm-size PC 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the Appearance property of a check box is set to "0 - Flat," the check box
+always appears as three-dimensional or "1 - 3D." The backcolor of the check box
+still behaves normally when the Appearance property is set to "0 - Flat," and
+defaults to the window background color of the system.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+Additional query words: wce wince vbce evb vbce6
+
+======================================================================
+Keywords          : kbToolkit kbVBp500bug kbVBp600bug kbOSWinCE100 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword2 kbVBeMbSearch kbWinCETKVBSearch kbWinCESearch
+Version           : :2.0,2.11,3.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

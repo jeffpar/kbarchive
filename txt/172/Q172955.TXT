@@ -1,0 +1,84 @@
+DOCUMENT:Q172955  26-JUN-2001  [visualc]
+TITLE   :FIX: ATL Service Causes Random Asserts in Run Member Function
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:1.1,2.1
+OPER/SYS:
+KEYWORDS:kbATL210bug kbServer kbService kbVC600fix kbATL300fix kbATL100bug kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Active Template Library (ATL), versions 1.1, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Random asserts occur in the ATL services CComModule derived classes Run member
+function.
+
+CAUSE
+=====
+
+In the first line of the member function an HRESULT variable is declared, hr.
+This variable is used throughout the function except in the call to
+CoInitialize(). Right after the call to CoInialize() is an assert on the value
+of hr. Since hr has not yet been initialized, the assert will fail at the point
+where the uninitialized value of hr is negative.
+
+RESOLUTION
+==========
+
+Change the CoInitailize() call to assign its return value to the hr variable,
+not hRes variable. Remove the hRes variable from the following code:
+
+      HRESULT hr;
+
+      _Module.dwThreadID = GetCurrentThreadId();
+
+      HRESULT hRes = CoInitialize(NULL);
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Visual C++ version 6.0
+for Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+Create an ATL service. If the hr uninitialized value is negative, the first
+assert in the Run function fails.
+
+(c) Microsoft Corporation 1997, All Rights Reserved. Contributions by Chuck Bell,
+Microsoft Corporation
+
+Additional query words: kbatl110bug kbatl210bug kbvc600fix kbserver
+
+======================================================================
+Keywords          : kbATL210bug kbServer kbService kbVC600fix kbATL300fix kbATL100bug kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbATLsearch kbATL110 kbATL210
+Version           : WINDOWS:1.1,2.1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

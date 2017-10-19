@@ -1,0 +1,52 @@
+DOCUMENT:Q159258  08-NOV-2001  [homekids]
+TITLE   :Spike's World: How Do I Get My High Score Uploaded?
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Spike's World, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Some of the featured games in Spike's World have a high score upload ability
+built into the game. When you play the game, even offline, the game keeps track
+of your highest score.
+
+MORE INFORMATION
+================
+
+The next time you come back to Spike's World, we can tell if you have a high
+score and we'll ask if you want to upload it to the space. If you say yes, the
+score is uploaded to the Spike's World site. You can view it at the High Scores
+Page.
+
+Additional query words: kids spikes spikeswld
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : _IKkbbogus kbGamesSearch kbSpikesWorld
+Version           : :1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

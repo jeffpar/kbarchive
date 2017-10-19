@@ -1,0 +1,75 @@
+DOCUMENT:Q234361  11-JUN-1999  [exchange]
+TITLE   :XFOR: Notes Application Connector Prompts for Password with Pas
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After you configure the Microsoft Exchange Application Connector for Lotus
+Notes, the connector continues to prompt for the password of the Lotus Notes ID,
+even though you have configured the password in the "Set Notes Password" option
+through the Administrator program of the Application Connector.
+
+CAUSE
+=====
+
+This behavior occurs when the Lotus Notes database is not a "Local" database.
+
+WORKAROUND
+==========
+
+1. On the server running the Application Connector, start the Notes Client.
+
+2. Create a new replica of the Notes Server database locally.
+
+3. Configure replication between the Notes Server and new local replica of the
+   database file.
+
+4. Run the Application Connector against the new local replica database.
+
+5. Do not use a password on the Notes ID file.
+
+6. Run the Application Connector from the Notes Server that contains the
+   database that will be replicated to Exchange Server.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.5.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

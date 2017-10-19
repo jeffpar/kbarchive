@@ -1,0 +1,84 @@
+DOCUMENT:Q158755  24-MAR-2000  [foxpro]
+TITLE   :FIX: CLEAR ALL with Object References Causes Page Fault
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If there are objects that reference each other, Visual FoxPro displays the
+following error message when CLEAR ALL is carried out:
+
+   This Program has performed an illegal operation and will be shut down.
+
+Visual FoxPro terminates due to an Invalid Page Fault.
+
+WORKAROUND
+==========
+
+Delete object references before carrying out CLEAR ALL.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This has been corrected in Visual FoxPro 6.0.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create and run a program containing the following code:
+
+         oform = CreateObject( "Form" )
+         oform.AddObject("X", "CB")
+         oform.AddObject("Y", "CB")
+         oform.y.pointer=oform.x
+         oform.x.pointer=oform.y
+         CLEAR ALL  && This causes an Invalid Page Fault and
+                    && shuts down Visual FoxPro.
+
+         DEFINE CLASS CB as CommandButton
+           pointer= .NULL.
+         ENDDEFINE
+
+Object references for "X" and "Y" above can be cleared by doing the following:
+
+         oform.removeobject("X")
+         oform.removeobject("Y")
+
+Additional query words: vfoxwin kbdsd kbvfp500 kbvfp600fix
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

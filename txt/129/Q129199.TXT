@@ -1,0 +1,74 @@
+DOCUMENT:Q129199  08-AUG-2001  [winnt]
+TITLE   :File Sharing Problem with Open Lotus Approach File
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.11,3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you are running Lotus Approach under Windows NT, and Approach is accessing a
+database file on your computer, the following error message appears on a Windows
+for Workgroups 3.11 client when it attempts to access the database file over the
+network:
+
+   Cannot open the database "<DBF filename>.APR" because it is open
+   exclusively.
+
+CAUSE
+=====
+
+The proper file sharing options are not specified for dBASE files that are being
+used in Lotus Approach.
+
+RESOLUTION
+==========
+
+To correct this problem on the Windows NT computer:
+
+1. Run Lotus Approach and select Open from the File menu.
+
+2. For List File Of Type:, select either dBASE III+ (*.DBF) or dBASE IV (*.DBF)
+   to list the *.DBF files that will be accessed by multiple users.
+
+3. Choose the Connect button.
+
+4. Select all three check boxes, including Local Databases Are Shared.
+
+5. Choose OK.
+
+Chapter 18 of the Lotus Approach Release 3.0 User's Guide discusses the file
+sharing options available in Lotus Approach.
+
+Additional query words: prodnt locking exclusive
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search kbAudDeveloper kbWFWSearch kbWFW311
+Version           : :3.11,3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

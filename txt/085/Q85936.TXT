@@ -1,0 +1,72 @@
+DOCUMENT:Q85936  12-DEC-1999  [win95x]
+TITLE   :Real World Accounting Software and Windows 3.1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you attempt to run Real World Accounting Software versions earlier than 6.0
+under Windows version 3.1, the following error message is displayed:
+
+   Repairing path, please wait
+
+At this point, the system usually stops (hangs). It has also been reported that
+the system may drop out of Windows and back to the MS-DOS command prompt.
+
+MORE INFORMATION
+================
+
+Versions 5.O1 and earlier of Real World Accounting Software are not designed to
+run under Windows.
+
+LOADWIN.COM, a software patch written by SKI, allows Real World Accounting
+Software to run under Windows versions 3.0 and 3.0a. However, this patch DOES
+NOT WORK with Windows version 3.1.
+
+Real World Accounting Software version 6.0 is compatible with Windows 3.1. It
+will run unassisted (that is, without the need for a .PIF) under Windows 3.1.
+
+NOTE: If you are running Real World over a Novell network you must run in
+enhanced mode, not standard mode, since Novell's working directory doesn't work
+in Windows standard mode.
+
+REFERENCES
+==========
+
+Real World Software: (603) 228-3433
+
+SKI: (708) 966-0400
+
+
+Additional query words: 3.10 err msg 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

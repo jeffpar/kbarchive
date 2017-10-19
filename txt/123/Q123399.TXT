@@ -1,0 +1,99 @@
+DOCUMENT:Q123399  13-JUN-2001  [accother]
+TITLE   :ADT2: Uninstalling ADT Does Not Unregister Custom Controls
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Access Developer's Toolkit, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Moderate: Requires basic macro, coding, and interoperability skills.
+
+When you uninstall the Microsoft Access Developer's Toolkit (ADT) by choosing the
+Remove All button in the ADT Setup program, the custom controls are not
+recognized as shared components and are not removed from the registration
+database.
+
+RESOLUTION
+==========
+
+After you uninstall the ADT, manually remove the custom controls from the
+registration database by following these steps:
+
+1. In Program Manager, choose Run from the File menu.
+
+2. In the Command Line box, type "regedit.exe" (without the quotation marks),
+   and then choose OK.
+
+3. In the Registered File Types box, select the custom control you want to
+   remove.
+
+4. From the Edit menu, choose Delete File Type.
+
+5. Repeat steps 3-4 for each custom control you want to remove.
+
+6. When you are finished, quit and then restart Microsoft Windows.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+CAUTION: Following these steps will remove the ADT from your computer.
+
+1. Start the ADT Setup program by double-clicking the MS ADT Setup icon in the
+   ADT program group.
+
+2. Choose the Remove All button. When you are prompted "Are you sure you want to
+   remove this application?" choose Yes.
+
+3. When Setup is finished, start Microsoft Access and then open the sample
+   database NWIND.MDB.
+
+4. Create a blank, new form.
+
+5. From the Edit menu, choose Insert Object.
+
+6. Select the Insert Control option button. Note that the custom controls (the
+   calendar, data outline, and scroll bar controls) appear as if they are
+   available because they have not been removed from the registration database.
+
+REFERENCES
+==========
+
+Microsoft Access Developer's Toolkit "Advanced Topics," version 2.0,
+"Introduction to the Developer's Toolkit," page xi
+
+Additional query words: un-install uninstall remove removing
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbAudDeveloper kbAccessSearch kbAccessDevTK200 kbZNotKeyword3
+Version           : WINDOWS:2.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

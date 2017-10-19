@@ -1,0 +1,82 @@
+DOCUMENT:Q302720  24-JUN-2001  [msnetwork]
+TITLE   :Primary Account Cannot Be Deleted When Child Accounts Are Presen
+PRODUCT :The Microsoft Network
+PROD/VER::6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 6.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You sign in to MSN Explorer 6.1 on a computer with one "account manager" account
+(an account associated with an MSN Internet Access subscriber) and one or more
+"child" accounts (non-paying accounts). You sign in using the user tile for the
+account manager. You click Help and Settings, click Accounts, and then click
+Remove Users. The Remove link for the primary account is not active, and this
+prevents you from deleting the account.
+
+CAUSE
+=====
+
+You cannot delete the primary account in MSN Explorer 6.1 until all child
+accounts have been deleted.
+
+RESOLUTION
+==========
+
+Delete all child accounts before attempting to delete the primary account.
+To delete all child accounts
+
+1. Using the account manager account, start MSN Explorer 6.1.
+
+2. In the upper-right corner, click Help and Settings.
+
+3. In the menu on the left, click Accounts, and then click Remove Users.
+   You should now see a list of all users on the machine, and the Remove link
+   next to the account manager account is not active.
+
+4. Click the Remove link next to any of the child accounts.
+
+5. Click OK, and then click OK again.
+   You will now be taken back to the list of accounts, minus the one that was
+   just removed.
+
+6. Repeat steps 4-5 for each child account on the machine.
+   After all of the child accounts have been removed, the Remove link next to the
+   account manager account will be active.
+
+7. Click the Remove link.
+
+8. Click OK, and then click OK again.
+   You will now be taken to the Welcome screen of MSN Explorer.
+
+Additional query words: kbimu; MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN610 kbMSNExplorer
+Version           : :6.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,63 @@
+DOCUMENT:Q167630  20-FEB-2002  [sms]
+TITLE   :SMS: Office 97 Contains Incorrect PDF Format
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::1.2
+OPER/SYS:
+KEYWORDS:kbenv kbinterop kbnetwork kbInventory smsinv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The cyclic redundancy check (CRC) number listed in the Office 97 package
+definition file (PDF) for the Off97std.ini file is:
+
+      Off97std.ini      =  0 222 47535
+
+When you import the PDF to create a package, the CRC number listed in the package
+is different:
+
+      Off97std.ini      =  0 527152781 257776
+
+It is different because the PDF format is wrong. It needs commas, as in the
+following example:
+
+      Off97std.ini      =  0,222,47535
+
+
+MORE INFORMATION
+----------------
+
+Because of this problem with the PDF, software inventory will be unable to
+determine whether Office 97 is installed on your clients until you make the
+necessary changes to the CRC data in the PDF file itself.
+
+Additional query words: sms prodsms pdf
+
+======================================================================
+Keywords          : kbenv kbinterop kbnetwork kbInventory smsinv 
+Technology        : kbSMSSearch kbSMS120
+Version           : :1.2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

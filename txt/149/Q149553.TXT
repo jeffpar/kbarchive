@@ -1,0 +1,67 @@
+DOCUMENT:Q149553  08-NOV-2001  [pcmail]
+TITLE   :Greeting and Disconnect Problems Using Microsoft Phone
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:win95 msphone1
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Phone, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using the Microsoft Phone software, you may experience one or more
+of the following symptoms:
+
+ - Incoming calls are answered, but no greetings are heard.
+
+ - Hangups at the remote end are not detected.
+
+ - Hanging up by clicking Hang Up does not work.
+
+CAUSE
+=====
+
+These symptoms can occur if the wrong modem driver is installed.
+
+RESOLUTION
+==========
+
+Install the correct modem driver. To do so, follow these steps:
+
+1. In Control Panel, double-click Modems.
+
+2. Click the current modem, and then click Remove.
+
+3. Click Add, and then let Windows 95 detect the modem.
+
+If Windows 95 detects the modem but installs the same driver, remove the driver
+and add the modem manually.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          : win95 msphone1 
+Technology        : _IKkbbogus kbMSHardwareSearch kbPhone
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

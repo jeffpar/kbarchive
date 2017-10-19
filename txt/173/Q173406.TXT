@@ -1,0 +1,60 @@
+DOCUMENT:Q173406  13-OCT-1999  [msnetwork]
+TITLE   :Connection Terminated by News Server When Posting Large Messages
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.0,2.5
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool kbmsn
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.0, 2.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you post very large messages to Internet newsgroups while you are using
+MSN, The Microsoft Network, you may receive the following error message:
+
+   Internet News
+   The connection was unexpectedly terminated by the news server. Please try
+   again. If this persists, contact your LAN administrator or Internet provider.
+
+When you click OK, you are disconnected from the news server or from MSN.
+
+CAUSE
+=====
+
+This behavior may be caused by an authentication problem on secure servers.
+
+RESOLUTION
+==========
+
+To resolve this issue, break the messages into smaller components to avoid
+authentication problems.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbtool kbmsn 
+Technology        : kbMSNSearch kbMSN200 kbMSN250
+Version           : WINDOWS:2.0,2.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

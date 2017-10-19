@@ -1,0 +1,65 @@
+DOCUMENT:Q140686  18-DEC-1999  [schedplus]
+TITLE   :PC WSPlus Win: Err Msg: Your Message File Could Not Be Located
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0,3.x
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 1.0 
+ - Microsoft Mail for Windows, version 3.x 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run Microsoft Mail for Windows, you may get the following error:
+
+   Your message file could not be located.
+
+If you select the OK button, Mail for Windows will try to locate a MSMAIL.MMF
+file. If it does not locate one, you can create a new mail message file (MMF)
+and continue into Mail. However, the Mail client will be offline with the broken
+network icon in the lower right corner.
+
+CAUSE
+=====
+
+This occurs when you run Schedule+ 1.0 before Mail, and you have the
+StartupOffline option enabled.
+
+RESOLUTION
+==========
+
+Check the SCHDPLUS.INI file and see if it has the following entry:
+
+      [Microsoft Schedule+]
+      STARTUPOFFLINE=1
+
+If the entry is there, disable it by changing the entry to STARTUPOFFLINE=0.
+
+Additional query words: 1.00 message corrupt schedule plus
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbScheduleSearch kbZNotKeyword3 kbSchedule100 kbMail3xSearch
+Version           : WINDOWS:1.0,3.x
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

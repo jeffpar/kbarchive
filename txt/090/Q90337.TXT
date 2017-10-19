@@ -1,0 +1,84 @@
+DOCUMENT:Q90337  29-SEP-1999  [win3x]
+TITLE   :Where Windows for Workgroups Setup Places Network Files
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In some instances, Windows for Workgroups version 3.1 Setup may install certain
+network files to the root directory of a startup drive. This article explains
+why.
+
+MORE INFORMATION
+================
+
+In Windows for Workgroups (Windows 3.1 running on a network), the personal
+WINDOWS directory contains all files with .INI, .GRP, and .PIF extensions, as
+well as REG.DAT, WIN.COM, WINVER.EXE, and any MS-DOS device drivers. The
+personal WINDOWS directory may also contain the MS-DOS network device drivers
+and the NET.EXE, MSIPX.COM, and NETX.COM files. (These files may also be copied
+to the root directory of a startup drive.) The shared WINDOWS directory contains
+all other Windows files.
+
+The NETWORK.INF file uses the keywords "windir," "sysdir," "netdir," and "devdir"
+to classify the different Windows files. These files are placed in the WINDOWS
+directory, SYSTEM directory or root directory of the startup drive, depending on
+the type of installation you perform.
+
+Real-mode network device drivers are classified as devdir files. These include
+PROTMAN.DOS, PROTOCOL.INI, and WORKGRP.SYS. The device drivers in this directory
+must be correctly referenced in the CONFIG.SYS file.
+
+Real-mode network utilities and terminate-and-stay-resident (TSR) programs are
+classified as netdir files. These include NET.EXE, MSIPX.COM, NETX.COM, and
+ROUTE.COM. These utilities and TSRs must be correctly referenced in the
+AUTOEXEC.BAT file.
+
+The following table illustrates how Setup determines where to place the files
+classified as Netdir and Devdir.
+
+Location of Windows Installation          Netdir      Devdir
+-------------------------------------------------------------
+
+Windows installed on a fixed drive        WINDOWS     WINDOWS
+Windows installed on a compressed drive   WINDOWS     Root
+Windows installed on a removable drive    Root        Root
+ (for example, SCSI)
+Shared network installation of Windows    Root        Root
+ (using the SETUP /N command)
+
+KBCategory: kbnetwork kbsetup
+KBSubcategory: wfw wfwg
+
+Additional query words: 3.10 syquest stacker stack electronics double disk super stor superstor setup /n /a net netsetup bernouli external outside auxiliary wfwg bernoulli
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

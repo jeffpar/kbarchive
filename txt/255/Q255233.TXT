@@ -1,0 +1,66 @@
+DOCUMENT:Q255233  10-AUG-2001  [crossnet]
+TITLE   :Windows NT 4.0 Enterprise Edition Domain Controllers May Hang
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your Microsoft Windows NT 4.0 Enterprise Edition-based domain controllers may
+stop responding (hang) intermittently.
+
+CAUSE
+=====
+
+This behavior can occur when you upgrade from a beta version of the operating
+system but the beta versions of Mfc42.dll and Ntlgdsca.exe still remain in the
+Smslogon\I386 folder.
+
+RESOLUTION
+==========
+
+To resolve this behavior, replace Mfc42.dll and Ntlgdsca.exe with the final
+version of those files, from the Windows NT Server 4.0 Enterprise Edition
+CD-ROM. Then either disable and re-enable Logon Discovery to replicate the
+changes out to all Logon Points, or manually copy the files to each Logon Point
+(which requires manually stopping the service on each Logon Point).
+
+MORE INFORMATION
+================
+
+The Smslogon\I386 folder appears only when Logon Discovery is enabled. The
+folder does not appear if the Windows NT 4.0 client installation option is
+enabled.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

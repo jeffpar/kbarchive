@@ -1,0 +1,82 @@
+DOCUMENT:Q166049  19-JUL-2001  [word97]
+TITLE   :WV: Relative Links Don't Work in Word Viewer
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbinterop kbusage kbviewer
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word Viewer 97-2000 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you click to follow a relative hyperlink that was created with Internet
+Assistant, Microsoft Word Viewer 97-2000 is unable to parse the link information
+and open the document.
+
+Instead, the URL Open dialog box from Internet Explorer is displayed.
+
+CAUSE
+=====
+
+This problem occurs when both of the following conditions are true:
+
+ - The hyperlink was created in Internet Assistant, an Internet add-in that you
+   can use to create Web pages in earlier versions of Microsoft Word (versions
+   earlier than Word 97).
+
+ - The link is a relative link. That is, rather than having a full path to the
+   link, the location of the link is relative to the current directory.
+
+WORKAROUND
+==========
+
+Use the Internet Explorer URL Open dialog box that is displayed to go to the
+linked document.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+REFERENCES
+==========
+
+For more information about Word Viewer 97-2000, please see the following
+Knowledge Base article:
+
+   
+
+   Q165908 WV: How to Obtain Microsoft Word Viewers
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbusage kbviewer 
+Technology        : kbWordViewerSearch kbViewerSearch kbWordViewer97
+Version           : WINDOWS:
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,82 @@
+DOCUMENT:Q75520  17-DEC-2000  [msdos]
+TITLE   :Changes to Code in QBasic Disappear After Pressing CTRL+BREAK
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In QBasic, if you interrupt a program with the CTRL+BREAK key combination and
+you make a change to nonexecutable code, the following message is displayed:
+
+   You will have to restart your program after the edit. Proceed anyway?
+
+If you did not press ENTER on the line where you changed the code, a problem
+occurs. After you acknowledge the "Proceed anyway?" message (by pressing ENTER
+or clicking OK), your editing changes seem to disappear, and the code reverts
+back to its earlier appearance. Despite the appearance, the code actually has
+changed, and you can successfully use the Start, Restart, or Continue command
+from the Run menu.
+
+Refreshing the code window (as described below) updates the code's appearance.
+
+STATUS
+======
+
+Microsoft has confirmed this to be problem in Microsoft QBasic version 1.0 and
+1.1 provided with Microsoft MS-DOS version 5.x, 6.0, 6.2, and 6.21. We are
+researching this problem and will post new information in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Note: This problem only applies to changes made to nonexecutable code; it does
+not apply to comment lines. Most changes made in executable code do not prompt
+the warning, and the changes are correctly displayed (without reverting to the
+pre-edited appearance). Changes made to a DIM statement that appear after a
+$DYNAMIC metacommand (which is an executable instruction) will prompt the
+warning and behave as described above.
+
+To work around this appearance problem and correctly update the screen to show
+the code changes, you can use any of the following methods:
+
+ - Move the cursor back to the changed line and press the ENTER, DELETE,
+   BACKSPACE, TAB, or SPACEBAR key.
+
+ - Scroll the screen so the changed line is no longer visible, then scroll back.
+
+ - Press F4 to switch to the output screen, then switch back by pressing any
+   key.
+
+Additional query words: 6.22 1.00 5.00 5.00a 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,84 @@
+DOCUMENT:Q261947  16-JUL-2000  [exchange]
+TITLE   :XADM: How to Determine if Eseutil /p Has Been Run on a Database
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to determine if your database has been repaired by
+using the "Eseutil /p" command.
+
+MORE INFORMATION
+================
+
+To see if your database has been repaired by using the "Eseutil /p" command,
+dump the header using one of the following commands for the private information
+store:
+
+   ESEUTIL /mh x:\exchsrvr\mdbdata\priv.edb |more
+
+   -or-
+
+   ESEUTIL /mh x:\exchsrvr\mdbdata\pub.edb |more
+
+The output looks similar to the following example:
+
+   Microsoft(R) Windows NT(TM) Server Database Utilities
+   Version 5.5
+   Copyright (C) Microsoft Corporation 1991-1999. All Rights Reserved.
+
+   Initiating FILE DUMP mode...
+   Database: d:\exchsrvr\mdbdata\priv.edb
+
+   Format ulMagic: 0x89abcdef
+   Engine ulMagic: 0x89abcdef
+   Format ulVersion: 0x620,2
+   Engine ulVersion: 0x620,2
+   DB Signature: Create time:4/5/2000 17:48:52 Rand:769046 Computer:
+   cbDbPage: 4096
+   dbtime: 556457
+   State: Consistent
+   Shadowed: Yes
+   Last Objid: 184
+   Scrub Dbtime: 0
+   Scrub Date: 00/00/1900 00:00:00
+   Repair Count: 1
+   Repair Date: 2/20/2000 10:48:50
+
+If the database has not been repaired, the repair count is zero and the repair
+date is 1/1/1900 00:00.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,83 @@
+DOCUMENT:Q139896  08-AUG-2001  [winnt]
+TITLE   :IPX Type 0x14 Packets Propagated Even if Disabled
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.51 4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+IPX Type 0x14 packets are propagated even if you disable forwarding of IPX Type
+0x14 packets in the registry by setting the Internet entry to 0.
+
+
+CAUSE
+=====
+
+Browser announcements over an IPX host link are broadcast because the browser
+requests a 0x14 packet type. Setting Internet under the NWLNKNB registry key to
+0 only affects the NetBIOS broadcasts.
+
+RESOLUTION
+==========
+
+You cannot prevent this symptom because the software design purposely causes
+this to happen.
+
+Even if the Internet entry in the registry is set to 0 (use packet type 0x04),
+Windows NT propagates a few type 0x14 frames.
+
+However, to disable all type 0x14 broadcasts you must disable the binding for
+IPX/SPX compatible transport under the server service. This will make many
+Registry modifications, so if this needs to be automated SYSDIFF.EXE will
+capture all these differences and allow you to apply them on many machines.
+
+
+MORE INFORMATION
+================
+
+The Internet registry key under the subtree HKEY_LOCAL_MACHINE under the
+following subkey controls the forwarding of IPX Type 0x04 and 0x14 packets:
+
+   SYSTEM\CurrentControlSet\services\NWLNKNB\parameters
+
+Value Name: Internet
+Data: 1 or 0
+Default: 1 (1 means forward IPX Type 0x14 [decimal 20] packets)
+
+The 0x14 packet type matches Novell WAN broadcast message type.
+
+Type 0x04 specifies forwarding of IPX packets; routers do not forward them.
+Type 0x14 is a Novell Wan Broadcast Packet; routers do forward them.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : 3.51 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

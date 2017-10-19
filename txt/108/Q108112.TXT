@@ -1,0 +1,80 @@
+DOCUMENT:Q108112  07-MAY-2001  [visualc]
+TITLE   :HOWTO: View the Call Stack After an MFC ASSERT
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:1.0,2.0,2.1,4.0
+OPER/SYS:
+KEYWORDS:kbDebug kbMFC kbVC100 kbVC150 kbVC200 kbVC400 kbDSupport kbGrpDSMFCATL
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft C/C++ for MS-DOS, version 7.0 
+    - Microsoft Visual C++ for Windows, 16-bit edition, versions 1.0, 1.5, 1.51, 1.52 
+    - Microsoft Visual C++, 32-bit Editions, versions 1.0, 2.0, 2.1, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When debugging an application using the Microsoft Foundation Classes (MFC),
+incorrect code may cause an ASSERT to be hit in either the developer's code or
+the MFC libraries. Although the ASSERT gives the file and line number it is
+located at, determining how the code got to the assertion is often more
+important. This can be done by examining the call stack after the ASSERT is hit.
+
+MORE INFORMATION
+================
+
+An ASSERT gives you three choices: Abort, Retry, or Ignore. Choosing Abort
+aborts the program; choosing Ignore ignores the assertion and continues. Neither
+of these two choices activates a debugger, so there is no way to examine the
+call stack.
+
+If you are running underneath a debugger and choose Retry, an Interrupt 3
+embedded in your source code will cause a break, which activates the debugger.
+The debugger will also be activated if you are using Visual C++, 32-bit Edition,
+version 2.0 or later, and have enabled Just-in-Time debugging. Now, you can
+examine the call stack. In the Visual C++ IDE debugger, you can do this by
+choosing the Show Call Stack option on the Debug menu, or by pressing CTRL+K (in
+Visual C++ version 4.0, press ALT+7). At this point, you can jump quickly to the
+offending source line by choosing OK at the INT 3 dialog box and then pressing
+SHIFT+F7. This will bring you to the line after the ASSERT() that failed.
+
+Another way to catch an MFC assertion is by setting a breakpoint on the opening
+brace of the AFXASERT.CPP in the MFC\SRC sub-directory of your Visual C++
+installation directory.
+
+The AfxAssertFailedLine() function is called if an ASSERT fails. By setting a
+breakpoint on the opening brace of this function, your debugger will
+automatically come up when you hit an ASSERT in your code, or in the MFC library
+code. At this point, you can examine the call stack.
+
+Remember that many operations can be caused by Windows messages that you can't
+use a call stack to trace back through.
+
+Additional query words: debug debugging find catch trace assert_valid assertvalid verify
+
+======================================================================
+Keywords          : kbDebug kbMFC kbVC100 kbVC150 kbVC200 kbVC400 kbDSupport kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:1.0,2.0,2.1,4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

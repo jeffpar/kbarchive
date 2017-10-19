@@ -1,0 +1,67 @@
+DOCUMENT:Q273755  31-JUL-2001  [iis]
+TITLE   :Access Violation in Mmc.exe Starting Server Certificate Wizard
+PRODUCT :Internet Information Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbiis500prod2web kbProd2Web
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to start the Web Server Certificate Wizard in the Internet
+Information Services (IIS) 5.0 snap-in, the following error message occurs in
+Mmc.exe:
+
+   Program Error
+   Mmc.exe has generated errors and will be closed by Windows. You will need to
+   restart the program. An error log is being created.
+
+CAUSE
+=====
+
+The Xenroll.dll file is unregistered.
+
+RESOLUTION
+==========
+
+To register the Xenroll.dll file, type the following from the command line:
+
+   "regsvr32 xenroll.dll" (without the quotation marks)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Services
+version 5.0.
+
+Additional query words: IIS 5 MMC Access Violation Server Certificate Wizard
+
+======================================================================
+Keywords          : kbiis500prod2web kbProd2Web 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

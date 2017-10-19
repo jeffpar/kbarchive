@@ -1,0 +1,87 @@
+DOCUMENT:Q140586  06-MAY-2001  [visualc]
+TITLE   :HOWTO: How to Add Buttons to a Modeless CPropertySheet
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbcode kbMFC kbPropSheet KbUIDesign kbVC400 kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, 32-bit Editions, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+By default, a modeless CPropertySheet doesn't have any buttons. To add buttons,
+derive a class from CPropertySheet and override OnInitDialog(). In
+OnInitDialog(), you'll have to resize the CPropertySheet and add your buttons.
+You can also add additional buttons to a modal CPropertySheet using this method.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+   // This code shows how to resize a modeless CPropertySheet to add a button.
+   // CMySheet is derived from CPropertySheet
+
+   BEGIN_MESSAGE_MAP(CMySheet, CPropertySheet)
+             //{{AFX_MSG_MAP(CMySheet)
+             //}}AFX_MSG_MAP
+             ON_COMMAND(IDC_MYBUTTON, OnMyButton)
+   END_MESSAGE_MAP()
+
+   BOOL CMySheet::OnInitDialog()
+   {
+             CPropertySheet::OnInitDialog();
+
+             RECT rc;
+             GetWindowRect (&rc);
+             // Increase the height of the CPropertySheet by 30
+             rc.bottom += 30;
+             // Resize the CPropertySheet
+             MoveWindow (rc.left, rc.top, rc.right-rc.left, rc.bottom-rc.top);
+             // Convert to client coordinates
+             ScreenToClient (&rc);
+             // m_Button is of type CButton and is a member of CMySheet
+             m_Button.Create ("&MyButton", WS_CHILD | WS_VISIBLE | WS_TABSTOP,
+                                 CRect (5, rc.bottom-30, 80, rc.bottom-5),
+                                 this, IDC_MYBUTTON);
+
+             return TRUE;
+   }
+
+   // Handler for button click of IDC_MYBUTTON
+   void CMySheet::OnMyButton ()
+   {
+             AfxMessageBox ("MyButton was clicked!");
+   }
+
+Additional query words: kbinf 4.00
+
+======================================================================
+Keywords          : kbcode kbMFC kbPropSheet KbUIDesign kbVC400 kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

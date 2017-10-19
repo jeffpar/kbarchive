@@ -1,0 +1,62 @@
+DOCUMENT:Q156467  12-JUN-2001  [homekids]
+TITLE   :Writer 2: GPF in GDI with Virtual Memory Disabled
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Creative Writer for Windows, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you run Windows 95/98 with Virtual Memory disabled, Creative Writer 2
+displays the following error message when started
+
+   Writer caused a GPF in module GDI.EXE at...
+
+then the system stops responding (hangs).
+
+RESOLUTION
+==========
+
+Creative Writer requires Virtual Memory to run. To enable Virtual Memory, do the
+following:
+
+1. Click the Start button, point to Settings, and click Control Panel.
+
+2. Double-click System.
+
+3. Click the Performance tab, and then click Virtual Memory.
+
+4. Click "Let Windows Manage My Virtual Memory Settings," click OK, click OK,
+   and then close Control Panel.
+
+Additional query words: 2.00 mskids artist maggie max writer cw2 cw2.0 hang locks up freezes
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbCreativeWriter200
+Version           : WINDOWS:2.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

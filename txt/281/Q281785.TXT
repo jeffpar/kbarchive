@@ -1,0 +1,78 @@
+DOCUMENT:Q281785  12-NOV-2001  [homegame]
+TITLE   :Golf 2001: Game Hangs If You Decline EULA
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf 2001 Edition, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you click Decline when the EULA (End User License Agreement) is displayed,
+Microsoft Golf may stop responding.
+
+CAUSE
+=====
+
+This problem occurs because the Installation Launcher does not quit after you
+click Decline, instead of quitting back to the desktop.
+
+RESOLUTION
+==========
+
+To return to the desktop, use the appropriate method for your version of
+Microsoft Windows.
+
+Microsoft Windows 95, Microsoft Windows 98, or Microsoft Windows Millennium:
+
+1. Press CTRL+ALT+DELETE.
+
+2. In the Close Program dialog box, click Microsoft Golf 2001 (not responding),
+   and then click End Task.
+
+   If you receive a message that the program is busy or not responding, click End
+   Task again.
+
+Microsoft Windows 2000:
+
+1. Press CTRL+SHIFT+ESC.
+
+2. On the Applications tab, click Microsoft Golf 2001 (not responding), and then
+   click End Task.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Golf 2001.
+
+Additional query words: kbimu homegame msgame hang hangs eula golf 2001 cancel end user license agreement
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch _IKkbbogus kbGamesSearch kbGolf2001 kbGolfSearch
+Version           : :1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

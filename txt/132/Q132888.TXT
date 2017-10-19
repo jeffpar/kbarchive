@@ -1,0 +1,72 @@
+DOCUMENT:Q132888  26-MAY-2001  [homekids]
+TITLE   :Encarta 95: GP Fault When Using Dictionary or Thesaurus
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::1995 edition
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia for Macintosh 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you look up a word in the Encarta 1995 Dictionary or Thesaurus, you may
+receive the following error message:
+
+   Dict caused a general protection fault in module Redllwin.dll.
+
+If you click Close, you quit Encarta and cannot restart the program.
+
+If you use the Encarta 1995 Thesaurus in Microsoft Windows 95/98, you may receive
+the following error message:
+
+   This program has performed an illegal operation and will be shut down. If the
+   problem persists, contact the program vendor.
+
+If you click Close, you quit the Thesaurus but Encarta remains running.
+
+If you click Details, you receive the following error message:
+
+   Dict caused a general protection fault in module Redllwin.dll.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta for Windows,
+1995 edition.
+
+WORKAROUND
+==========
+
+To work around this issue, exit Windows (if you are using Microsoft Windows
+3.x), and then restart the computer. You can now restart Encarta.
+
+
+Additional query words: 1995 kbmm multi multi-media media mm mmtitles gpf
+
+======================================================================
+Keywords          : kberrmsg kbtool kbimu 
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbEncartaSearch kbEncartaEnCyc1995Mac
+Version           : :1995 edition
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

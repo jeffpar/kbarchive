@@ -1,0 +1,67 @@
+DOCUMENT:Q216952  18-NOV-2000  [winnt]
+TITLE   :ERROR 12035 on SFM Volume Creation After Installing SP4
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0 SP4
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create a new volume after installing Windows NT 4.0 Service Pack 4, you
+get the following message in the error log:
+
+   Event ID: 12035
+   Source: MacFIle
+   Error description: "Volume information for "volume name" could not be loaded.
+   Setting defaults."
+
+CAUSE
+=====
+
+This problem occurs because error checking for volume information was enhanced
+in the Windows NT SP4 release and, because the volume has not yet been created,
+the Services for Macintosh service cannot find this information.
+
+RESOLUTION
+==========
+
+To work around this problem, do a controlled restart of the computer and you
+will see that no errors are posted to the event log and that the volume is
+functioning normally.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT 4.0.
+
+Additional query words: sfm regression
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400xsearch kbWinNTSsearch kbWinNTS400sp4 kbWinNTS400xsearch
+Version           : winnt:4.0 SP4
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

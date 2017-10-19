@@ -1,0 +1,71 @@
+DOCUMENT:Q309132  12-MAR-2002  [mspress]
+TITLE   :Minimal installation fails for Swedish Retail version of Microso
+PRODUCT :Microsoft Press
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft OfficeXP Professional Step By Step Interactive, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When trying to launch the Swedish retail version of Microsoft (r) Office XP
+Professional Step by Step Interactive Training (CD 3 in Swedish Office XP retail
+box) and logging in after a MINIMAL installation was performed, the user is
+presented with a dialog box stating that the CD is not available.
+
+CAUSE
+=====
+
+The product is looking for an entry in the setup.ini file located on the CD.
+This entry is missing, causing the product to behave as if the CD is not
+present.
+
+WORKAROUND
+==========
+
+The workaround for this issue requires that the user modify the Affinity key in
+the lrun32.ini file which is found in the Windows folder (typically c:\windows
+or c:\winnt). To modify this key, do the following: 1. Open the lrun32.ini in a
+text editor (e.g. Notepad). 2. Find the section called o10r (sections are
+delimited by braces so the relevant section would look like this: [o10r]). 3.
+Underneath that section, find the Affinity key. It should have a value of 1
+(where Affinity=1). 4. Change the value of the Affinity key to 0 (zero) where
+Affinity=0. 5. Save the file. 6. Launch the training application from the
+desktop shortcut.
+The training should now open and read the data from the CD-ROM drive.
+
+STATUS
+======
+
+Known issue.
+
+Additional query words: SBS Interactive;interaktiv;Training; minimal installation; SBSI;setup;Swedish; Office XP;OfficeXP Training;MSPress
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch
+Version           : :3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

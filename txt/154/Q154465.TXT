@@ -1,0 +1,275 @@
+DOCUMENT:Q154465  13-JUN-2001  [homemm]
+TITLE   :Cinemania 97 and Music Central 97: INTERNET.TXT Contents
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1997 edition; WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Cinemania for Windows 1997 edition 
+ - Microsoft Music Central for Windows 1997 edition 
+ - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+
+The following article contains a copy of the complete text of the Internet.txt
+file located in the root folder on the Cinemania and Music Central compact
+discs.
+
+MORE INFORMATION
+================
+
+Finding and Choosing an ISP For Your Internet Account
+
+by Daniel P. Dern (ddern@world.std.com)
+
+To access Internet resources and services, you will need an account with an
+Internet Service Provider (ISP). You may already have an ISP through your
+employer or academic institution. However, if you want to use the Internet for
+activities not appropriate or available from such accounts (such as Usenet news
+reading, MUD playing, or Web browsing), you need to find an ISP that sells
+Internet access to the general public. There are many to choose from, including
+national ISPs like Alternet, MCI, NetCom, and PSI; hundreds of
+metropolitan/regional ISPs; national online consumer services like America
+Online(r), CompuServe(r), The Microsoft Network(TM), and Prodigy(r); and, many
+bulletin board systems and local freenets.
+
+To select an ISP, you must:
+
+ - Evaluate your user profile (your needs and constraints).
+
+ - Identify and choose an ISP that matches your needs.
+
+ - Identify the type of account you'd like (PPP, shell, etc.) and a service with
+   access numbers in your local dialing area.
+
+You should have a list of two to ten ISPs offering the type of account you want
+with POPs you can dial into at minimal or zero per-minute cost.
+
+Evaluating your needs: Your Computer and Internet User Profiles
+
+Your Computer User Profile
+
+This determines what Internet software you can and can't use, and may rule out
+some providers. At minimum, you'll need to know:
+
+ - What type of computer you have, including processor type/speed
+ - What operating system and version you're running
+ - How many megabytes of RAM you've got
+ - Disk space available (roughly) for Internet programs
+ - Modem speed
+ - Whether you already have TCP/IP software
+ - How computer-savvy you are
+
+Also, will you usually be using the same computer, or different ones? Will you
+have access to the computer when you want to use the Internet? Will other people
+be sharing your computer, or your account?
+
+Your Internet User Profile
+
+This identifies your Internet-specific needs, concerns and desires. You'll need
+to know:
+
+ - Your main purpose in using the Net: business or social
+ - Your start-up budget
+ - Your monthly budget for Internet account and telephone service. In
+   metropolitan areas, estimate $20-30/month for 20-30 hours of use. Try to set
+   up access to a local phone number, or your phone service may cost more than
+   the account itself! Some ISPs may have "free" or inexpensive accounts and
+   accounts for students, but expect restricted calling times and frequent busy
+   signals. Avoid "free Internet access" coupled with specific telephone calling
+   plans.
+ - Time you expect to spend online.
+ - Internet services you want to use. Unless you're positive you only want
+   e-mail and maybe Usenet access, you need Web and FTP access. You may also
+   want access to MUDs (multi-user games), RealAudio(r), etc.
+
+Types of Accounts and Connections
+
+SLIP and PPP Accounts
+
+These accounts let you run graphical "Internet programs" that work just like
+Windows applications should - like Internet Explorer, Netscape Navigator,
+Mosaic, and Eudora. If your computer has enough memory, you can use several
+Internet programs concurrently.
+
+Whether you will use SLIP or PPP depends on what software you have and which
+protocol your ISP supports. Most Windows users we know get Internet access with
+a PPP account using Windows 95's built-in connectivity and software applets.
+
+Shell Accounts
+
+Here you use a telecom program, like Hilgraeve HyperTerminal that comes with
+Windows 95, to access an ISP's computer on the Internet. When you log in, you
+typically get a text-only UNIX "shell," hence the name. You probably can't use
+your mouse, or browse multimedia documents directly. Harder to use than SLIP
+accounts, and not necessarily much cheaper. This is not recommended for users
+who like Windows' graphical interface or who want to surf the World Wide Web.
+
+Accounts with Special User Software
+
+Some ISPs have proprietary accounts based on their own software (e.g., Netcom's
+NetCruiser accounts or PSI's Pipeline accounts). Increasingly, you'll also be
+able to use popular Internet programs like Internet Explorer, Mosaic, Netscape
+Navigator, etc., "on top of" these accounts, and their software. But you may
+find yourself limited to the software they supply.
+
+Commercial Online Services and BBSs
+
+Increasingly, national online consumer services and bulletin board systems (BBS)
+offer Internet access (Usenet, the Web) as part of their services.
+
+Nixpubs, Freenets, UUCP, and other types of providers
+
+Some types of accounts offer more limited Internet access, primarily to some
+mixture of electronic mail, Usenet newsgroups, and file transfer requests,
+including nixpubs, freenets, electronic mail services, and UUCP.
+
+Software: What to Get? Where to Get It?
+
+To access your Internet account, you'll need the appropriate software. This may
+be standard, proprietary, or licensed/customized versions of standard programs,
+or a mix. Start with the software recommended/provided by your ISP. Once you're
+on the Internet, you can learn about alternatives and find them more easily.
+
+For PPP or SLIP accounts: if your ISP does require proprietary software, they
+should provide this to you when you sign up; if you're using Microsoft Windows
+95 but not Microsoft Plus! for Window 95, or Microsoft Windows NT 3.51, you'll
+need to get software that let's you access your ISP while using the built-in
+TCP/IP stack. This software is available commercially and can be found at most
+computer stores.
+
+If your ISP doesn't require proprietary software and you're running Microsoft
+Plus! for Windows 95, you should configure your computer for your ISP by running
+the Internet Setup Wizard. Here's how:
+
+ - From the Start button, select Settings and then Control Panel.
+
+ - Double click the Internet icon and answer the questions. You'll need to know:
+   whether you are connecting over a phone line or an internal network on which
+   your computer is a workstation; whether or not you want to receive e-mail
+   using Microsoft Exchange; your ISP's phone number and IP address; and, the
+   name of your ISP's mail server.
+
+You'll also need to scrounge up some Internet clients, high quality freeware,
+shareware or commercial software. Here are some places to find Internet
+software:
+
+ - as disks enclosed with magazines, books and software
+ - for sale in stores and catalogs
+ - from booths at trade shows
+ - in the mail
+ - on the Internet (Be sure to register any shareware packages you end up using
+   regularly!)
+
+For SLIP/PPP accounts, you'll need:
+
+ - Networking software, included with both Microsoft Windows 95 and Microsoft
+   Windows NT 3.51.
+ - Internet applications such as a Web browser, e-mail reader, Usenet
+   newsreader, FTP and telnet. Popular Web browsers include Microsoft Internet
+   Explorer, Netscape Navigator, and NCSA Mosaic. Microsoft Exchange is a dandy
+   e-mail client and Internet mail capability is included with Microsoft Plus!
+   for Windows 95.
+ - "Helper" and "player" applications to display/output document and multimedia
+   files that your Internet applications don't automatically handle. These can
+   be found on the Internet and downloaded as you discover a need for their
+   specialty.
+
+For ISPs and online services with proprietary access methods and interfaces,
+you'll need a copy of their package. Increasingly, you'll be able to use
+alternative Web browsers and other Internet applications with these accounts and
+through the proprietary packages. Contact your ISP for current information.
+
+Locating an ISP
+
+There are many ways to locate an ISP. Some of the most common are as follows:
+
+Searchable Lists on the Internet.
+
+Some let you search by telephone exchange, area code, city or state. None are, in
+my opinion, good or authoritative, but they are much better than nothing. Here
+are a few lists to start with (most sites will include pointers to other
+lists):
+
+ - POCIA (Providers of Commercial Internet Access), http://www.celestin.com,
+   searchable by area codes.
+ - The List, http://thelist.com, searchable by area code or state, clickable
+   area code map.
+ - The U.S. Internet Service Providers List, http://www.primus.com
+
+Lists posted to Usenet.
+
+Regionally-oriented listings are often found in a "local hierarchy," such as
+ny.general for New York; also try *.answers Newsgroups and FAQ archive sites.
+These lists will probably will be the most complete and useful.
+
+Your telephone directory.
+
+Look in the Yellow Pages (try "Computer Networks," "Internet" and also "Online"),
+and also see what's listed in the White Pages starting with "Internet."
+
+Friends.
+
+You may know somebody who's got an account already.
+
+Evaluating Internet Service Providers
+
+Once you've found potential ISPs in your free/least-cost dialing area, look for
+matches based on your user profile, paying particular attention to pricing, what
+restrictions there are on free hours, and whether you can use your computer with
+whatever software they require.
+
+There is no one "best" answer for everyone. Rather, there will be an account type
+and provider(s) that are most appropriate for each user.
+
+Final Comments
+
+Many ISPs and online services let you try them for a few hours for free. There
+are also ways to get temporary access to the Internet without even having a
+computer or account of your own! And don't worry about being locked in by what
+you do now; you can always get a new account.
+
+In general, I believe you will get the most comprehensive access to Internet
+services and resources through a local ISP, and probably the best mix of price
+and customer support.
+
+Keep in mind that quality service may only cost a few dollars more than mediocre
+service - if using the Internet (and using YOUR TIME productively) is important,
+trying to save those few dollars is a bad bargain.
+
+- Daniel P. Dern (ddern@world.std.com; URL=http://www.dern.com) is an Internet
+consultant, author and speaker based in Newton Centre, MA. He is the author of
+THE INTERNET GUIDE FOR NEW USERS (McGraw-Hill) and a columnist for NetGuide
+magazine.
+
+Edited by the Microsoft Cinemania Team.
+
+Additional query words: 1997 multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  
+Technology        : kbOSWin95 kbOSWinSearch kbHomeProdSearch kbHomeMMsearch kbCineManiaSearch kbCinemania1997 kbMusicCentral kbMusicCentral1997
+Version           : :1997 edition; WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

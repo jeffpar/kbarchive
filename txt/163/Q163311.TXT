@@ -1,0 +1,72 @@
+DOCUMENT:Q163311  13-JUN-2001  [sna]
+TITLE   :Number of Active Users Exceeds Number of Active Sessions
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.1,2.11,2.11 SP1
+OPER/SYS:
+KEYWORDS:kbnetworkkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.1, 2.11, 2.11 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The Server Properties in the SNA Server Administrator program show that the
+number of active users exceeds the number of active sessions and over time
+continues to increase. When the number of active users increases past 2,000, SNA
+Server starts to reject requests for new sessions. It will still continue to
+provide sponsors connections.
+
+CAUSE
+=====
+
+This problem is related to the TN3270 service included with SNA Server 2.11
+SP1.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, apply the updated TN3270 service referenced below.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server version 2.11 Service
+Pack 1 (SP1).
+
+
+A supported fix is now available, but has not been fully regression-tested and
+should be applied only to systems experiencing this specific problem. Unless you
+are severely impacted by this specific problem, Microsoft recommends that you
+wait for the next Service Pack that contains this fix. Contact Microsoft
+Technical Support for more information.
+
+
+Additional query words: Clicount prodsna
+
+======================================================================
+Keywords          : kbnetwork kbbuglist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ211 kbSNAServ210 kbSNAServ211SP1
+Version           : WINDOWS:2.1,2.11,2.11 SP1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

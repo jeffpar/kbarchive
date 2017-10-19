@@ -1,0 +1,67 @@
+DOCUMENT:Q148864  17-DEC-2000  [win95x]
+TITLE   :File Conflict Installing IrDA with OEM Service Release 1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 OEM Service Release, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install the Microsoft Windows 95 Infrared Driver (IrDA) version 1.0 in
+a Windows 95 OEM Service Release 1 installation, a version conflict is reported
+with the Infrared.dll file and you are prompted to keep the existing file.
+
+CAUSE
+=====
+
+Windows 95 OEM Service Release 1 installations already have infrared support
+included. The version number of the Infrared.dll file was changed for OEM
+purposes.
+
+RESOLUTION
+==========
+
+You can safely keep the existing file or overwrite it. Because infrared support
+is already included, there is no difference in functionality.
+
+
+MORE INFORMATION
+================
+
+If Windows 95 was preinstalled on your computer and you have not installed
+Windows 95 Service Pack 1, you can determine whether you have Windows 95 OEM
+Service Release 1 by using the right mouse button to click My Computer and then
+clicking Properties on the menu that appears. If the version number reported is
+4.00.950a, you are using OEM Service Release 1 and you do not need to install
+IrDA or any of the other Windows 95 Service Pack 1 updates or components.
+
+Additional query words: 95
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbOPKSearch
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

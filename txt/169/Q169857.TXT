@@ -1,0 +1,64 @@
+DOCUMENT:Q169857  13-JUN-2001  [sna]
+TITLE   :Print Service Ignores Bytes in LU3 Datastream
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0 SP1
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you print an LU3 print job through the SNA Server Print service, characters
+that are not ASCII printable characters or printer definition file (PDF) codes
+are ignored. In the following example, the characters 5F 4DF1F0E4 (in the first
+line) will be ignored. (These characters are the escape sequence designating the
+printer symbol set [PC-8]).
+
+   F5C8405F 4DF1F0E4 5F4DA2F0 97F1F64B
+   F6F788F8 4BF5A5F0 A2F082F0 E35F5093
+   F0D35F50 93F34BF1 F0C34040 40404040
+   40404040 40404040 40404040 40404040
+   40404040 40404040 40404040 40404040
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 3.0 and 3.0
+SP1. This problem was corrected in the latest SNA Server version 3.0 U.S.
+Service Pack. For information on obtaining this Service Pack, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ300SP1
+Version           : WINDOWS:3.0,3.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

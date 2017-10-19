@@ -1,0 +1,49 @@
+DOCUMENT:Q103450  15-NOV-1999  [pcmail]
+TITLE   :PC Win: Maximum Size of Inserted File is 32,655 Bytes
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0b,3.1,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0, 3.0b, 3.1, 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In versions 3.0, 3.0b, 3.1, and 3.2 of Microsoft Mail for Windows, the maximum
+size of a sent message is 33,580 bytes. However, the maximum size of a file
+inserted in a new message or text that is added or pasted from another message
+is 32,655 bytes.
+
+You cannot insert a saved message that contains the maximum amount of text into
+another message, unless you first edit the saved message so that it contains
+32,655 bytes or less.
+
+
+Additional query words: 3.00 3.00b 3.10 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail310 kbMail300 kbMail320 kbMail300b
+Version           : WINDOWS:3.0,3.0b,3.1,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

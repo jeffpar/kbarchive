@@ -1,0 +1,621 @@
+DOCUMENT:Q314220  30-JUL-2002  [mspress]
+TITLE   :Microsoft Visual C# .NET Step by Step Comments and Corrections
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Visual C#.NET Step by Step ISBN 0-7356-1289-7 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Microsoft Visual C# .NET Step by Step, ISBN
+0-7356-1289-7.
+
+The following topics are covered:
+
+ - Page xi: Incorrect System Requirements
+
+ - Page 25: Your Name Should Be Enter Your Name In Step 8
+
+ - Page 43: Error In Second Bullet Item
+
+ - Page 46: Error In methodName Bullet
+
+ - Page 60: "getInt" Should Be "readInt"
+
+ - Page 51: Incorrect Text Regarding Variables
+
+ - Page 57: readDouble Should Be readInt
+
+ - Page 128: Typographical Error
+
+ - Page 140: Missing Statement Regarding Const Field
+
+ - Page 141: 'public static field' Should Be 'public static method'
+
+ - Page 160: Incorrect Statement About Unboxing
+
+ - Page 161: Incorrect Graphic
+
+ - Pages 184 & 185: Lines Incorrectly Formatted As Code
+
+ - Pages 193 And 194: Correction To ArrayList Code Sample
+
+ - Page 199: Image Incorrectly Shows 12 Cards Per Player
+
+ - Page 202: Correction In Step 3
+
+ - Page 254: Incorrect Statement About Sealed Class
+
+ - Page 268: Incorrect Statement About Initializing Properties
+
+ - Page 275: "namespace Windows.Drawing" Should Be "namespace
+   System.Windows.Drawing"
+
+ - Page 282: Incorrect Use of Vertical Ellipses In Code Sample
+
+ - Page 292: "Declare a read-only property" Should Be "Declare a read-only
+   indexer"
+
+ - Page 305: Error In 'important' Block
+
+ - Page 307: "Ticker" Should Be "Ticker Class"
+
+ - Page 307: "Attach and Remove" Should Be "Attach and Detach"
+
+ - Page 319: Error In Struct Vs. Class Box
+
+ - Page 323: Error In Code Sample
+
+ - Page 326: Error In Quick Reference Code Sample
+
+ - Page 332: Incorrect Image
+
+ - Page 333: Incorrect Image
+
+ - Page 337: Incorrect Image
+
+ - Page 414: Image Should Not Include Cancel Button
+
+ - Page 426: UserName Property Is Not Read-Only
+
+ - Page 441: Duplicate Bullet In How To Box
+
+ - Page 487: "XSD" Tags Should Be Changed To "XS"
+
+ - Page 512: Label7 "Label" Property Should Be "Text"
+
+ - Page 522: Typographical Error
+
+ - Page 537: Correction In Step 7
+
+ - Page 538: Authentication Mode Should Be Windows
+
+ - Page 539: "important" Box Needs Additional Text
+
+ - Page 565: Typographical Error
+
+MORE INFORMATION
+================
+
+Page xi: Incorrect System Requirements
+--------------------------------------
+
+Page xi includes Windows XP Home Edition as part of the minimum system
+requirements. Windows XP Home does not include IIS, so does not meet the minimum
+requirements for this book. Windows XP Home Edition should be removed from page
+xi.
+
+
+Page 25: Your Name Should Be Enter Your Name In Step 8
+------------------------------------------------------
+
+There is an error in step 8 at the top of page 25.
+
+Change:
+"Type your name and then press Enter."
+
+To:
+"Type Enter your name then press Enter."
+
+
+Page 43: Error In Second Bullet Item
+------------------------------------
+
+On page 43, in the second bullet,
+
+Change:
+"If the 3 binds to the * operator, the result of the multiplication (3 * 4) forms
+the right hand operand of the / operator and the result of the whole expression
+is 2 / 12."
+
+To:
+"If the 3 binds to the * operator, the result of the multiplication (3 * 2) forms
+the right hand operand of the / operator and the result of the whole expression
+4 / (3 * 2), which is 0 (again integer division)."
+
+
+Page 46: Error In methodName Bullet
+-----------------------------------
+
+There is an error at the end of the second bullet on page 46.
+
+Change:
+"start with a noun,"
+
+To:
+"start with a verb,"
+
+
+Page 57: readDouble Should Be readInt
+-------------------------------------
+
+On page 57, change step 5:
+
+"As before, verify that the readDouble method you have declared compiles without
+error."
+
+To:
+"As before, verify that the readInt method you have declared compiles without
+error."
+
+
+Page 60: "getInt" Should Be "readInt"
+-------------------------------------
+
+On page 60, in steps 8 and 11,
+
+Change:
+"getInt"
+
+To:
+"readInt"
+
+
+Page 51: Incorrect Text Regarding Variables
+-------------------------------------------
+
+There is an error on page 51 regarding variables. Change:
+"Other statements in the method that come afterwards can use it when the method
+has finished, even though the variable disappears."
+
+To:
+"The variable is created at the statement that defines it, and other statements
+in the method that come afterwards can use it. Once the method has finished,
+though, the variable disappears."
+
+
+Page 128: Typographical Error
+-----------------------------
+
+There is an error in the Abstract Data Types block. Change:
+"You cannot abstract these fields or methods..."
+
+To:
+"You cannot access these fields or methods..."
+
+
+Page 140: Missing Statement Regarding Const Field
+-------------------------------------------------
+
+On page 140, the "Creating a Static Field..." section is missing a statement.
+
+Change:
+"... is nevertheless static. For example ..."
+
+To:
+"... is nevertheless static. However, for reasons beyond the scope of this book,
+you can only declare const field when the field is an enum, a primitive type, or
+a string. For example ..."
+
+
+Page 141: 'public static field' Should Be 'public static method'
+----------------------------------------------------------------
+
+There is an incorrect reference to a 'public static field' on page 141. Change:
+"Finally, you will write a public static field"
+
+To:
+"Finally, you will write a public static method"
+
+
+Page 160: Incorrect Statement About Unboxing
+--------------------------------------------
+
+There is an error in the first paragraph under Unboxing.
+
+Change:
+"However, if you try this syntax, you'll get a compiletime error. Instead, you
+need to use the syntax object o = 42; where o refers to a boxed int containing
+the value 42. Here are examples:"
+
+To:
+"However, if you try this syntax, you'll get a compiletime error. For example:"
+
+
+Page 161: Incorrect Graphic
+---------------------------
+
+On page 161, the graphic at the top is missing some elements.
+
+The arrow leading to the "42" box should come from a square "@" box with the
+label "object o" (exactly like the box at the bottom of page 159).
+
+The arrow leading out of the "42" box should lead to a square "42" box with the
+label "int i" (exactly like the the box at the bottom of page 159).
+
+
+Pages 184 & 185: Lines Incorrectly Formatted As Code
+----------------------------------------------------
+
+The last line on page 184, and the first two lines on 185 are incorrectly
+formatted as code. These lines are not part of the code sample at the bottom of
+page 184.
+
+
+Pages 193 And 194: Correction To ArrayList Code Sample
+------------------------------------------------------
+
+On pages 193 and 194, in the code sample for ArrayList,
+
+Change:
+
+   ArrayList countdown = new ArrayList();
+   ...
+   countdown.Remove(7);
+   ...
+   countdown.RemoveAt(8);
+   ...
+   (the 4th element, index 5)
+   ...
+   the 7th element, index 8
+
+To:
+
+   ArrayList numbers = new ArrayList();
+   ...
+   numbers.Remove(7);
+   ...
+   numbers.RemoveAt(8);
+   ...
+   (the 4th element, index 3)
+   ...
+   the 7th element, index 6
+
+
+Page 199: Image Incorrectly Shows 12 Cards Per Player
+-----------------------------------------------------
+
+The image on page 199 shows 12 cards per player. This image should show 13 cards
+per player.
+
+
+Page 202: Correction In Step 3
+------------------------------
+
+On page 202, in step 3,
+
+Change:
+"A foreach statement is okay here because you do need..."
+
+To
+"A foreach statement is okay here because you do not need..."
+
+
+Page 254: Incorrect Statement About Sealed Class
+------------------------------------------------
+
+On page 254, in the first bulleted item under "Notice that:",
+
+Change:
+"(The extension would also be valid if TextReader were a sealed class.)"
+
+To:
+"(The extension would also be invalid if TextReader were a sealed class.)"
+
+
+Page 268: Incorrect Statement About Initializing Properties
+-----------------------------------------------------------
+
+On page 268, in the first bullet,
+
+Change:
+?You can?t initialize a property through a set accessor..."
+
+To:
+?You can?t initialize a property of a struct using a set accessor...?
+
+
+Page 275: "namespace Windows.Drawing" Should Be "namespace System.Windows.Drawing"
+----------------------------------------------------------------------------------
+
+On page 275, in the code sample,
+
+Change:
+"namespace Windows.Drawing"
+
+To:
+"namespace System.Windows.Drawing"
+
+
+Page 282: Incorrect Use of Vertical Ellipses In Code Sample
+-----------------------------------------------------------
+
+On page 282, the code sample incorrectly uses vertical ellipses. Change these two
+instances to horizontal ellipses (...).
+
+The code sample should appear as follows:
+
+   {
+   	...
+   	public bool this [ int index ]
+   	{
+   		get { ... }
+   		set { ... }
+   	}
+   	...
+   }
+
+
+Page 292: "Declare a read-only property" Should Be "Declare a read-only indexer"
+--------------------------------------------------------------------------------
+
+On page 292,
+
+Change:
+"Declare a read-only property"
+
+To:
+"Declare a read-only indexer"
+
+
+Page 305: Error In 'important' Block
+------------------------------------
+
+There is an error in the 'important' block on page 305.
+
+Change:
+"when a delegate is attached to it by using the -=operator."
+
+To:
+"when a delegate is attached to it by using the +=operator."
+
+
+Page 307: "Ticker" Should Be "Ticker Class"
+-------------------------------------------
+
+There is an error in step 2 on page 307.
+
+Change:
+"locate the Ticker in the"
+
+To:
+"locate the Ticker class in the"
+
+
+Page 307: "Attach and Remove" Should Be "Attach and Detach"
+-----------------------------------------------------------
+
+There is an error in step 4 on page 307.
+
+Change:
+"delete the Attach and Remove methods"
+
+To:
+"delete the Attach and Detach methods"
+
+
+Page 319: Error In Struct Vs. Class Box
+---------------------------------------
+
+On page 319, there is an error at the bottom of the Struct vs. Class box. The
+last line, "This is for efficiency reasons...", should be deleted entirely.
+
+
+Page 323: Error In Code Sample
+------------------------------
+
+There is an error in the code sample at the bottom of page 323.
+
+Change:
+
+   public static implicit operator int (Hour from)
+   {
+        return from.value;
+   }
+
+To:
+
+   public static implicit operator Hour (int from)
+   {
+        return new Hour(from);
+   }
+
+
+Page 326: Error In Quick Reference Code Sample
+----------------------------------------------
+
+There is an error in the "Declare an operator" section on page 326.
+
+Change:
+"public static operator==(Hour lhs, Hour rhs)"
+
+To:
+"public static bool operator==(Hour lhs, Hour rhs)"
+
+
+Page 332: Incorrect Image
+-------------------------
+
+The image on page 332 is incorrect. It should show a system Color Picker panel.
+
+
+Page 333: Incorrect Image
+-------------------------
+
+The image on page 333 is incorrect. It should show an empty project window with
+the Bell Ringers logo background.
+
+
+Page 337: Incorrect Image
+-------------------------
+
+The image on page 337 is incorrect. It should show a code overview window.
+
+
+Page 414: Image Should Not Include Cancel Button
+------------------------------------------------
+
+The image on page 414 is incorrect. It should not include a Cancel button.
+
+
+Page 426: UserName Property Is Not Read-Only
+--------------------------------------------
+
+There is an error at the end of Step 5 on page 426.
+
+Change:
+"You do not want the UserName property to appear because it is read-only."
+
+To:
+"You do not want the UserName property to appear because it is write-only."
+
+
+Page 441: Duplicate Bullet In How To Box
+----------------------------------------
+
+The first and second bullet items at the top of page 441 are duplicates.
+
+The second bullet should read:
+"Retrieve data from a database and browse it graphically in Visual Studio.NET"
+
+
+Page 487: "XSD" Tags Should Be Changed To "XS"
+----------------------------------------------
+
+All "XSD" tags in the Step 15 code sample should be changed to "XS".
+
+
+Page 512: Label7 "Label" Property Should Be "Text"
+--------------------------------------------------
+
+There is an error in the table at the bottom of page 512. The Properties for
+Label 7 should be changed from:
+
+"Label
+Height
+Width
+(ID)"
+
+To:
+
+"Text
+Height
+Width
+(ID)"
+
+
+Page 522: Typographical Error
+-----------------------------
+
+There is a typographical error in the second Quick Reference item.
+
+Change:
+"definitoin"
+
+To:
+"definition"
+
+
+Page 537: Correction In Step 7
+------------------------------
+
+On page 537, in step 7, change:
+
+   private void loginClick(object sender, System.EventArgs e)
+   {
+
+To:
+
+   private void loginButtonClick(object sender, System.EventArgs e)
+   {
+
+
+Page 538: Authentication Mode Should Be Windows
+-----------------------------------------------
+
+There is an error in Step 2 on page 538.
+
+Change:
+
+"Locate the <authentication> tag.  It will indicate that security has not
+yet been implemented:
+<authentication mode="None" />"
+
+To:
+
+"Locate the <authentication> tag.  It will indicate that Windows authentication
+is being used:
+<authentication mode="Windows" />"
+
+
+Page 539: "important" Box Needs Additional Text
+-----------------------------------------------
+
+The "important" box on page 539 needs to have the following text added to the
+end:
+
+"If you have installed and configured the QuickStart samples, the account used by
+ASP.NET will already have been granted access to the Northwind database. If you
+have not already installed the QuickStart samples you can grant access to the
+ASP.NET service using the steps shown below."
+
+
+Page 565: Typographical Error
+-----------------------------
+
+There is a typographical error in step 4 on page 565.
+
+Change:
+"Cick the Auto Format hyperlink ..."
+
+To:
+"Click the Auto Format hyperlink ..."
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: 0-7356-1289-7 SHARP JAGGER EUBOOK EUSBS VSTUDIO .NET VC
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

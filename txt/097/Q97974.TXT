@@ -1,0 +1,67 @@
+DOCUMENT:Q97974  26-JUN-2001  [utilities]
+TITLE   :PRB: CV1053 Warning: TOOLS.INI Not Found
+PRODUCT :Microsoft Programming Utilities
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kb16bitonly kbCodeView kbDebug kbVC kbprb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft CodeView for MS-DOS 
+ - Microsoft CodeView for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft CodeView displays the following message when it first starts up:
+
+   CV1053 Warning: TOOLS.INI not found
+
+CAUSE
+=====
+
+Unlike Microsoft Programmer's WorkBench (PWB), CodeView searches for the
+TOOLS.INI file in only the first directory listed in the INIT environment
+variable. If TOOLS.INI is not in this directory, CodeView generates the warning
+above.
+
+RESOLUTION
+==========
+
+Because CodeView does not always require the TOOLS.INI file, you can typically
+ignore this warning. If you have a TOOLS.INI file, modify your MS-DOS INIT
+environment variable to specify only the directory that contains the file.
+
+If you have more than one TOOLS.INI file that you want PWB to load, you can avoid
+this warning by concatenating distinctly named sections from the files into one
+TOOLS.INI file. Each section begins with the section name in square brackets,
+such as [pwb-main]. You can use a text editor such s PWB or MS-DOS EDIT to
+create this file. Then place the resulting file into the one directory specified
+in the INIT environment variable.
+
+Additional query words: 3.00 3.50 4.00 4.10
+
+======================================================================
+Keywords          : kberrmsg kb16bitonly kbCodeView kbDebug kbVC kbprb 
+Technology        : kbAudDeveloper kbCodeView kbZNotKeyword3
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

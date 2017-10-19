@@ -1,0 +1,107 @@
+DOCUMENT:Q195386  17-JUL-2001  [visualc]
+TITLE   :PRB: C4786 After Porting from Version 5.0 to Version 6.0
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINNT:6.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbSTL kbVC600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When building a project with Visual C++ 6.0 that compiles without a C4786
+warning in Visual C++ 5.0, you may receive C4786 warnings, sometimes followed
+by:
+
+   Fatal Error C1033: cannot open program database 'vc60.pdb'.
+
+RESOLUTION
+==========
+
+In Visual C++ 5.0, using the following
+
+      #pragma warning (disable : 4786)
+
+after including STL headers, disables the warning:
+
+   C4786:'identifier' : identifier was truncated to 'number' characters in the
+   debug information.
+
+However, this method does not disable all such warnings in Visual C++ version
+6.0. The occurrence of many C4786 warnings may result in the following:
+
+   C1033 error: cannot open program database 'vc60.pdb'.
+
+Use the pragma directive before you include any STL headers to disable the
+warnings.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+      // compile options required: /Zi /GX
+      #include <iostream>
+      #include <string>
+      #include <map>
+
+      // move this pragma before the includes above to disable the
+      //C4786 warnings
+      #pragma warning (disable : 4786)
+
+      int main () {
+         using namespace std;
+         map<int,string> m;
+         m[0] = "hello world";
+         cout << m[0] << endl;
+
+         return 0;
+      }
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q122539 BUG: C4786 or C1067 Caused by Long Identifier and /Zi
+
+   Q167355 BUG: C4786 Warning Is Not Disabled with #pragma Warning
+
+Additional query words: kbDSupport
+
+======================================================================
+Keywords          : kbCompiler kbSTL kbVC600 
+Technology        : kbVCsearch kbAudDeveloper kbVC32bitSearch kbVCPE600 kbVCEE600 kbVCLE600
+Version           : WINNT:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

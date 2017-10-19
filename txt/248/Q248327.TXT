@@ -1,0 +1,58 @@
+DOCUMENT:Q248327  05-NOV-2000  [exchange]
+TITLE   :XADM: Public Folder Conflict Notification Message
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
+OPER/SYS:
+KEYWORDS:exc55 exc55sp1 exc55sp2 exc55sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 5.5 SP1, 5.5 SP2, 5.5 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If two users save changes to the same item in a public folder replica,
+notification messages are not sent to the owner of the folder or to the
+mailboxes that created the conflict.
+
+A conflict icon is displayed in the public folder, but no notification messages
+are generated. This behavior is different than the behavior that occurs if the
+conflict originates on the home server of the public folder. For additional
+information about this behavior, click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+   Q173555 XADM: Exchange Generates A Conflict for Same Public Folder Replica
+
+MORE INFORMATION
+================
+
+This behavior is by design.
+
+
+Additional query words: pf
+
+======================================================================
+Keywords          : exc55 exc55sp1 exc55sp2 exc55sp3 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange550SP1 kbExchange550SP2 kbExchange550SP3
+Version           : winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

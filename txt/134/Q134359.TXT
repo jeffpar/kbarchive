@@ -1,0 +1,74 @@
+DOCUMENT:Q134359  17-DEC-2000  [win95x]
+TITLE   :Starting Media Player Plays Audio CD
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:Win2000:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Media Player, an audio CD in the CD-ROM drive may begin playing.
+
+CAUSE
+=====
+
+This problem can occur with older NEC CD-ROM drives connected to a Trantor SCSI
+adapter. These CD-ROM drives have a BIOS revision that is not completely
+compatible with the Windows 95 Trantor driver.
+
+
+RESOLUTION
+==========
+
+To work around this problem, use one of the following methods:
+
+ - Upgrade the CD-ROM drive to a firmware revision of 2.2 or later. Please
+   contact the drive manufacturer for information about a firmware upgrade.
+
+ - Prevent Windows 95 from playing audio CDs automatically. For information
+   about this method, please see the following article in the Microsoft
+   Knowledge Base:
+
+   Q126025 Preventing Windows 95 from Playing Audio CDs Automatically
+
+ - Load the real-mode driver that came with the CD-ROM drive.
+
+   To use a real-mode driver instead of the Windows 95 protected-mode driver,
+   load the driver in the Config.sys file, and load the Mscdex.exe file included
+   with Windows 95 in the Autoexec.bat file following the manufacturer's
+   instructions.
+
+   NOTE: If these drivers were already installed when you installed Windows 95,
+   they may still be in the Config.sys and Autoexec.bat files, but be remarked
+   out.
+
+Additional query words: cdrom mplayer.exe wmptop
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : Win2000:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

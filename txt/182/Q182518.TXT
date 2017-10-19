@@ -1,0 +1,68 @@
+DOCUMENT:Q182518  04-APR-1999  [exchange]
+TITLE   :XADM: Exchange Server Setup.log File Is Unreadable In Wordpad
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you attempt to open the Exchange Server Setup.log file in any other word-
+processing application other than Notepad, the file will appear unreadable.
+
+CAUSE
+=====
+
+The format of the Exchange Server Setup.log file was intended to be opened in
+Notepad with the Fixedsys font.
+
+WORKAROUND
+==========
+
+To make the Exchange Server Setup.log file partially readable, you can change
+the font to a non-true type font (such as System or Fixedsys) by following these
+steps:
+
+1. In Wordpad (Write.exe), choose Select All from the Edit menu.
+
+2. From the Format menu, select Font.
+
+3. In the Font dialog box, choose the System font.
+
+MORE INFORMATION
+================
+
+If the Exchange Server Setup.log file is too large to be opened in Notepad, the
+system will default to open the file in Wordpad if it is installed.
+
+Additional query words: word boxes write.exe wordpad.exe notepad.exe
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : WINDOWS:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

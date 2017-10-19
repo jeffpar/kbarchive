@@ -1,0 +1,70 @@
+DOCUMENT:Q134236  31-OCT-1999  [pcmail]
+TITLE   :PC WRmt: Mail in the Outbox May Not Be Sent
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Remote for Windows, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use version 3.2 of Microsoft Mail Remote for Windows, the messages may
+not leave the Outbox when you choose Connect Now with the send messages option
+selected.
+
+NOTE: The messages may leave the Outbox on subsequent attempts.
+
+If you enable extended logging with Windows Remote, you will see the following
+message in the log, even though the Send option has been selected, and there is
+mail in the Outbox:
+
+   No mail to send to postoffice or requested
+
+CAUSE
+=====
+
+This is caused if the MAI directory pointed to by CONTROL.GLB in
+WINDOWS\MSMAIL\MSRMT\GLB is missing.
+
+RESOLUTION
+==========
+
+Make sure that there are 16 subdirectories MA0 through MAF under
+WINDOWS\MSMAIL\MSRMT\MAI.
+
+MORE INFORMATION
+================
+
+After a failed attempt, the CONTROL.GLB is incremented to point to the next MAI
+directory. If this directory is available, mail in the Outbox will get sent
+correctly.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailRemote320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

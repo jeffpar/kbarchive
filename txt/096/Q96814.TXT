@@ -1,0 +1,54 @@
+DOCUMENT:Q96814  08-NOV-2001  [homemm]
+TITLE   :Microsoft SoundBits Browser Does Not Run Minimized
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SoundBits version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft SoundBits Browser does not run minimized if you select the Run
+Minimized check box in the Program Item Properties dialog box, if you press
+SHIFT+ENTER, or if you press SHIFT and double-click the mouse on the Browser
+icon.
+
+MORE INFORMATION
+================
+
+To minimize the SoundBits Browser, run the program first, then minimize it using
+either the Control menu (-) or the Minimize button.
+
+Microsoft has confirmed this to be a problem in SoundBits. We are researching
+this problem and will post new information here in the Microsoft Knowledge Base
+as it becomes available.
+
+Additional query words: 1.00 startup launch sound bits multimedia multi-media multi media Hanna-Barbera classic hollywood movies mgm musical instruments world
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbSoundBitsSearch kbSoundBits
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

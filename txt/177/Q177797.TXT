@@ -1,0 +1,288 @@
+DOCUMENT:Q177797  11-JUN-2002  [word97]
+TITLE   :WD97: Word 6.0/95 Not in "Save As Type" in Save As Dialog Box
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbinterop kbdta kbconversion
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SYMPTOMS
+========
+
+When you try to save a file as the file type of Word 6.0/95 (*.doc), the choice
+does not appear in the Save As Type list in the Save As dialog box (click Save
+As on the File menu), even when the converter is installed properly.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain and install Microsoft Office 97 Service Release
+2. For additional information, click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+   Q151261 OFF97: How to Obtain and Install MS Office 97 SR-2
+
+WORKAROUND
+==========
+
+To work around this problem, try methods 1 and 2 first. Use method 3 only as a
+last resort.
+
+Method 1: Check for the Converter
+---------------------------------
+
+To work around this problem, follow these steps:
+
+1. Close Microsoft Word.
+
+2. Right-click Start, and then click Explore to start the Explorer.
+
+3. Find the following folder:
+
+   C:\Program Files\Common Files\Microsoft Shared\Textconv
+
+   NOTE: This is the default setting; this may be different if you changed the
+   default location of Word.
+
+4. Look for the Wrd6ex32.cnv file.
+
+   If the file is not there, then you probably have not installed it. You will
+   need to add the converter. Use the following article to help you in that
+   process.
+
+   Q120802 Office: How to Add/Remove a Single Office Program or Component
+
+   If WRD6EX32.CNV is located in the proper place, then proceed to step 5.
+
+5. Start Microsoft Word and type some text in the new blank document.
+
+6. On the File menu, click Save As. In the Save As Type box, select Text Only,
+   name the file, and then click Save.
+
+7. Close the file.
+
+8. On the Tools menu, click Options, select the General tab, click to select
+   Confirm Conversion At Open, and then click OK.
+
+9. Re-open the Text Only file as a text file. On the File menu, click Save As
+   and check to see if the File As Type of Word 6.0/95 is displayed.
+
+Step 2: Rename and Re-Install the Converter
+-------------------------------------------
+
+Rename Wrd6ex32.cnv and then reinstall the converter. There are many ways that
+this converter could have been installed. If you have the Microsoft Office CD,
+you can copy the converter from the following location on the CD:
+
+   <CD Drive>\OS\MSAPPS\TEXTCONV
+
+It should be copied to the following folder:
+
+   C:\Program Files\Common Files\Microsoft Shared\Textconv
+
+Step 3: Check the Microsoft Windows 95 Registry for Proper Settings
+-------------------------------------------------------------------
+
+If steps 1 and 2 do not work, you need to look at a registry key called
+MSWord6Exp, which governs this particular Save As Type option. This key is found
+in two places within the Microsoft Windows 95 Registry.
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+To review, change, or add the settings for MSWord6Exp, do the following:
+
+1. Quit all instances of Word, including WordMail.
+
+2. On the Windows taskbar, click Start and then click Run.
+
+3. In the Open box, type "regedit" (without the quotation marks), and click OK.
+
+4. Locate the following key by clicking the plus signs in front of the
+   appropriate folders.
+
+      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\MSWord6Exp
+
+5. Click MSWORD6EXP once to select and to open its folder. To export this
+   registry key to the desktop, follow these steps:
+
+   a. On the Registry menu, click Export Registry File.
+
+   b. Beside File Name, type your name, note the location of the Save In
+      (default is desktop), and then click Save. A file named,
+      <Yourname>.reg, will now appear on the desktop for recovery
+      purposes, if necessary.
+
+6. On the right side of the Registry Editor, under Name, there should be a
+   (Default) and Path setting. Under Data, the (Default) item will read (value
+   not set.). The Path item should read:
+
+   "C:\Program Files\Common Files\Microsoft Shared\Textconv\WRD6EX32.CNV"
+
+   NOTE: This is the default setting; this may be different if you changed the
+   default location of Word.
+
+7. If the Path is incorrect, double-click Path (under Name) and under the Value
+   Data, change the path to point to where the file WRD6Ex32.CNV is located.
+
+8. Click OK.
+
+9. Locate the second entry for the MSWord6Exp key location by clicking the plus
+   sign in front of the appropriate folders.
+
+      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\Text Converters
+       Export\MSWord6Exp
+
+10. On the right side of the Windows 95 Registry Editor, under Name, you should
+   see the following entries:
+
+   Name                  Data
+
+   Extensions            "doc"
+   Name                  "Word 6.0/95"
+   Path                  "C:\Program Files\Common Files\Microsoft Shared
+                          Textconv\WRD6EX32.CNV"
+
+   NOTE: This is the default setting; this may be different if you changed the
+   default location of Word.
+
+11. Correct or add the registry keys by doing one of the following:
+
+   If the entry is incorrect:
+
+   Select the incorrect Name string, and then, on the Edit menu, click Modify.
+   Under Value Data, type in the correct data as stated in step 9.
+
+   -or-
+
+   If the entry is missing:
+
+   If these settings are missing, then the entries within the registry will have
+   to be created. To do this within the Microsoft Windows 95 Registry, follow
+   the steps in the "How To Add a Microsoft Windows 95 Registry Key," section
+   later in this document.
+
+12. Click OK.
+
+13. Close Registry Editor.
+
+How to Add a Microsoft Windows 95 Registry Key
+----------------------------------------------
+
+To add a registry key, follow these steps:
+
+1. Select the already existing key under which the new key is to be created (for
+   example, select Export).
+
+2. On the Edit menu, point to New and then click Key. Enter MSWord6Exp as the
+   name and then press Enter.
+
+3. Select the new key (MSWord6Exp) and on the Edit menu, point to New and then
+   click String Value.
+
+4. On the right side of the Registry Editor, select the New Value #x and type in
+   any of the missing items and then press ENTER. The missing items will be any
+   of the following:
+
+   Extensions
+   Name
+   Path
+
+5. Select the newly named string and then on the Edit menu click Modify. Under
+   Value Data, type in the correct data as indicated follows for the appropriate
+   key and then click OK.
+
+      For this key               Type this
+   ---------------------------------------------------------------------
+      Extensions            doc
+      Name                  Word 6.0/95
+      Path                  C:\Program Files\Common Files
+            Microsoft Shared\Textconv\WRD6EX32.CNV
+
+   NOTE: The path listed here is the default setting; this may be different If
+   you changed the default location of Word.
+
+6. Repeat steps 3-5 until all of the proper string items have been put in place
+   under the proper keys.
+
+7. On the Registry menu, click Exit.
+
+NOTE: You may still have to force the converter to work by saving a file as a
+Text Only document, closing it, and then re-opening it with Confirm Conversions
+turned. To do this, follow these steps:
+
+1. On the Tools menu, click Options and then select the General tab.
+
+2. Click to select Confirm Conversion At Open.
+
+3. Click OK.
+
+This will initialize the converters and force them to work properly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+This problem has become more prevalent since the release of SR-1.
+
+For additional information about how to back up or modify the Windows Registry,
+please see the following articles in the Microsoft Knowledge Base:
+
+   Q132332 How to Back Up the Registry
+
+
+   Q136393 How to Modify the Windows Registry
+
+
+For additional information about saving in earlier Word formats, please see the
+following articles in the Microsoft Knowledge Base:
+
+   Q177289 WD97: Why Are Two Word 6.0/95 Converters Listed in Save As Type?
+
+   Q171684 WD97: Differences Between RTF and Binary Export Converter
+
+   Q162602 WD97: Questions About Saving in the Word 6.0/95 File Format
+
+   Q157091 WD97: How to Import Documents into an Earlier Version of Word
+
+Additional query words: word8 word97
+
+======================================================================
+Keywords          : kbinterop kbdta kbconversion 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

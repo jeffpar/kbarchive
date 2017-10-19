@@ -1,0 +1,75 @@
+DOCUMENT:Q148284  27-JUN-2002  [exchange]
+TITLE   :XCON: When and How to Use the Mtacheck Utility
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+The Message Transfer Agent check utility (Mtacheck) is designed to provide a
+soft recovery of a corrupted MTA database. It is automatically installed when
+Microsoft Exchange Server is installed and can be found in the
+%Exchange_Root%\Bin directory. This utility should be used when the MTA service
+will not start due to corruption or suspected corruption in the MTA database.
+
+MORE INFORMATION
+================
+
+Mtacheck must be run from a DOS VDM on the Microsoft Exchange Server. It is very
+simple to use and only has 2 parameter, /v and /f. The parameters and the
+results of their use are as follows:
+
+Mtacheck.                  minimum logging.
+Mtacheck /v                verbose logging.
+Mtacheck /f <filename>     minimum logging that is saved to a text file.
+Mtacheck /v /f <filename>  verbose logging that is saved to a text file.
+
+For more information about the Mtacheck utility, please see pages 614-617 of the
+Microsoft Exchange Administrator's Guide and the following article in the
+Microsoft Knowledge Base:
+
+   Q149017 XCON: MTACheck Event IDs and Command Line Syntax
+
+In Microsoft Exchange version 4.0 Service Pack 4 and Microsoft Exchange version
+5.0, two switches were added to Mtacheck.
+
+Mtacheck /rd            removes directory replication messages.
+Mtacheck /rp            removes public folder replication messages.
+
+
+In Microsoft Exchange version 5.0, another switch was added:
+
+Mtacheck /RL            removes unwanted Link Monitor messages
+
+Additional query words: 4.00 corrupt mtadata db dat
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

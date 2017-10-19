@@ -1,0 +1,67 @@
+DOCUMENT:Q153292  06-MAY-2001  [visualc]
+TITLE   :FIX: Compiler Errors with COleDateTime::Format
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.0,4.1
+OPER/SYS:
+KEYWORDS:kbAutomation kbDateTime kbMFC kbVC400bug kbVC410bug kbVC420fix kbDSupport kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When calling the COleDateTime::Format member function with VAR_DATEVALUEONLY or
+VAR_TIMEVALUEONLY, you will get the following compiler error:
+
+   
+
+   error C2668: 'Format' : ambiguous call to overload function (new
+                           behaviour; please see help)
+
+CAUSE
+=====
+
+The problem is caused by not defining VAR_DATEVALUEONLY and VAR_TIMEVALUEONLY as
+DWORD in Oleauto.h.
+
+RESOLUTION
+==========
+
+The workaround is to type cast these constants to DWORD.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Visual C++ version 4.2.
+
+Additional query words: kbVC400bug vcfixlist420 MfcOLE
+
+======================================================================
+Keywords          : kbAutomation kbDateTime kbMFC kbVC400bug kbVC410bug kbVC420fix kbDSupport kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,74 @@
+DOCUMENT:Q157730  20-MAR-2002  [homegame]
+TITLE   :Determining DirectX Version Using the DirectX Diagnostic Tool
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbtool kbimu msgame kbFAQ kbWinMEkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - the operating system: Microsoft Windows 95 
+ - the operating system: Microsoft Windows 98 
+ - the operating system: Microsoft Windows 2000 
+ - the operating system: Microsoft Windows Millennium Edition 
+ - the operating system: Microsoft Windows XP 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to determine the version of Microsoft DirectX
+installed on your computer using the DirectX Diagnostic Tool.
+
+MORE INFORMATION
+================
+
+To use the DirectX Diagnostic Tool to determine the version of DirectX that is
+installed on your computer, follow these steps:
+
+1. Click Start, and then click Run.
+
+2. Type "dxdiag" (without the quotation marks), and then click OK.
+
+3. On the System tab, note the version of DirectX displayed on the DirectX
+   Version line.
+
+4. On the DirectX Files tab, check the version information for each DirectX
+   file.
+
+5. When you are finished checking file versions, click Exit.
+
+If Windows cannot find the dxdiag program, DirectX version 5.0 or earlier is
+installed on your computer. If this is the case, download and install the
+current version of DirectX.
+
+For additional information about how to download and install DirectX, click the
+article number below to view the article in the Microsoft Knowledge Base:
+
+   Q179113 How to Download and Install DirectX
+
+Additional query words: msgame direct-x win95x win98x dx5 dx6
+
+======================================================================
+Keywords          : kbtool kbimu msgame kbFAQ kbWinME kbfaq
+Technology        : kbOSWin2000 kbOSWin98 kbOSWin95 kbOSWinME kbOSWinSearch kbOSWinXP kbOSWinXPSearch
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

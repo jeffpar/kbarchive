@@ -1,0 +1,277 @@
+DOCUMENT:Q324201  23-JUL-2002  [foxpro]
+TITLE   :PRB: Object Browser Generates Incorrect Interface Code
+PRODUCT :Microsoft FoxPro
+PROD/VER::7.0
+OPER/SYS:
+KEYWORDS:kbAutomation kbCOMt kbXBase kbGrpDSFox kbDSupport kbvfp700
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Visual FoxPro 7.0 includes a new tool that is named the Object
+Browser. You can use the Object Browser to automatically generate class code
+when your class definition inherits the interface (class definition) of another
+Component Object Model (COM) component through the IMPLEMENTS statement. To do
+this, select a specific interface from the Classes and Members pane of the
+Object Browser, and then drag the interface into an empty program (.prg) file.
+
+Depending on the class that is referenced, the code that the Object Browser
+generates when it performs this operation may be code for an interface other
+than the interface that you selected.
+
+RESOLUTION
+==========
+
+The source code for the Object Browser application is included with Visual
+FoxPro 7.0. The source code is included in a file that is named Xsource.zip. By
+default, Xsource.zip is installed in the Tools\Xsource subdirectory of the
+Visual FoxPro root directory.
+
+To resolve this problem, you must extract, modify, and then rebuild the Object
+Browser application. To do this, follow these steps:
+
+1. Use WinZip, Windows Compressed Folders (in Microsoft Windows XP), or another
+   archive reader that can read .zip files to extract the OBrowser directory
+   from the Xsource.zip file.
+
+2. Right-click the OBrowser directory in Windows Explorer, click Properties, and
+   then click to clear the Read-only check box. You can also use the attrib
+   command to do this from a command prompt.
+
+3. Start Visual FoxPro, and then use the cd command to change the directory to
+   the expanded OBrowser directory.
+
+4. Run the following command from the Visual FoxPro 7.0 Command window:
+
+   modify command patchobrowser
+
+5. Paste the following code into the program window that appears:
+
+   *-----------------------------------
+   * PatchOBrowser.prg
+   * ABSTRACT: Updates the Visual FoxPro Object Browser application to
+   *           resolve problem that is outlined in Microsoft Knowledge Base *           article Q324201.
+   *-----------------------------------
+   #DEFINE CR CHR(13) + CHR(10)
+
+   CD JUSTPATH(SYS(16))
+   *~ Verify the correct location. If not, exit.
+   IF !FILE("OBJECTBROWSER.PJX")
+       MESSAGEBOX("The update .prg does not appear to be in the correct DIR." + CR + ;
+       "See the Microsoft Knowledge Base article Q324201 for details." + CR + CR + ;
+       "Exiting.",0,"MSKB Q324201")
+       RETURN .F.
+   ENDIF
+
+   CLOSE DATABASES ALL
+   RELEASE ALL
+   CLEAR ALL
+
+   WAIT WINDOW "Q324201 is patching the Object Browser. Please wait..." NOWAIT NOCLEAR
+
+   LOCAL lcNewCode AS STRING, ;
+   	lcOriginalLoop1 AS STRING, ;
+   	lcOriginalLoop1 AS STRING, ;
+   	lcNewLoop1 AS STRING, ;
+   	lcNewLoop2 AS STRING
+
+   lcNewCode = ""
+
+   *~~ First loop that needs replacing in objectbrowser::createinterfacecode
+   lcOriginalLoop1 = ;
+   	'FOR i = 1 TO loTli.CoClasses.Count' + CR + ;
+   	'	IF loTli.CoClasses(m.i).DefaultInterface.Name = ALLTRIM(lcIntName)' + CR + ;
+   	'		lcProgID = loTli.Name + "." + loTli.CoClasses(m.i).Name' + CR + ;
+   	'	ENDIF' + CR + ;
+   	'ENDFOR'
+
+   *~~ Second loop that needs replacing in objectbrowser::createinterfacecode
+   lcOriginalLoop2 = ;
+   	'lnIntCount = loTli.Interfaces.Count' + CR + ;
+   	'FOR i = 1 TO lnIntCount ' + CR + ;
+   	'	IF UPPER(loTli.Interfaces(m.i).Name) = UPPER(loNode.Text)' + CR + ;
+   	'		lnIntRef = m.i' + CR + ;
+   	'		EXIT' + CR + ;
+   	'	ENDIF' + CR + ;
+   	'ENDFOR'
+
+   *~~ Update First loop
+   TEXT TO lcNewLoop1 NOSHOW TEXTMERGE
+   *~~~ CODE INSERTED BY Microsoft Knowledge Base Article Q324201
+   LOCAL lcExact
+   lcExact = Set("Exact")
+   Set Exact On
+   *~~~~~~~
+   <<lcOriginalLoop1>>
+   *~~~ CODE INSERTED BY Microsoft Knowledge Base Article Q324201
+   Set Exact &lcExact
+   *~~~~~~~
+   ENDTEXT
+
+   *~~ Update Second loop
+   TEXT TO lcNewLoop2 NOSHOW TEXTMERGE
+   *~~~ CODE INSERTED BY MSKB Article Q324201
+   LOCAL lcExact
+   lcExact = Set("Exact")
+   Set Exact On
+   *~~~~~~~
+   <<lcOriginalLoop2>>
+   *~~~ CODE INSERTED BY Microsoft Knowledge Base Article Q324201
+   Set Exact &lcExact
+   *~~~~~~~
+   ENDTEXT
+
+   *~ Open the ObjectBrowser class library as a table.
+   USE objectbrowser.VCX IN 0 ALIAS "LIB"
+   SELECT LIB
+   GO TOP
+   *~ See if this program previously patched the .vcx file.
+   *~ If so, exit.
+   IF "PATCHED BY Q324201" $ UPPER(LIB.USER)
+   	WAIT CLEAR
+   	MESSAGEBOX("It appears OBJECTBROWSER.VCX has already been patched." + CR + ;
+   		"Expand a fresh copy of the Object Browser source before you try to patch it again." + CR + ;
+   		"See Microsoft Knowledge Base article Q324201 for details." + CR + CR + "Exiting.",0,"Microsoft Knowledge Base Q324201")
+   	RELEASE ALL
+   	CLOSE DATABASES ALL
+   	RETURN .F.
+   ENDIF
+
+   *~ Locate the correct record. The shipped version of this library had some deleted 
+   *~ records that were not cleaned out, therefore, the DELETED() clause in the LOCATE command.
+   LOCATE FOR ("objectbrowser" $ objname AND "createinterfacecode" $ methods) AND !DELETED()
+
+   *~ Update the code, and then write the update back to the table.
+   lcNewCode = STRTRAN(LIB.methods, lcOriginalLoop1, lcNewLoop1)
+   lcNewCode = STRTRAN(lcNewCode, lcOriginalLoop2, lcNewLoop2)
+   REPLACE LIB.methods WITH lcNewCode
+
+   *~ Update the USER field of the first record to indicate that the the .vcx file has been patched.
+   *~ Read this at the start of THIS program to make sure that it is not patched
+   *~ more than one time.
+   GO TOP IN LIB
+   REPLACE LIB.USER WITH LIB.USER + ;
+   	CR + CR + "PATCHED BY Q324201 - " + TRANSFORM(DATETIME())
+   USE IN LIB
+
+   *~ Recompile the ClassLib to make sure that the changes take effect.
+   COMPILE CLASSLIB objectbrowser.VCX
+
+   *~ Rebuild ObjectBrowser.app
+   *~
+   *~ A file that is named Vssver.scc is included in the project, but the
+   *~ physical file does not exist. This is a Microsoft Visual SourceSafe file
+   *~ and is not part of the Object Browser code. Manipulating the PJX as a table
+   *~ here removes the reference to prevent an error when the project opens and
+   *~ cannot find this file. The Home Directory project property is also updated.
+   USE objectbrowser.PJX IN 0 ALIAS "OBPJX"
+   SELECT OBPJX
+   GO TOP
+   REPLACE OBPJX.HOMEDIR WITH ADDBS(JUSTPATH(SYS(16))) + CHR(13)
+   LOCATE FOR "vssver.scc" $ OBPJX.name
+   IF !RECCOUNT("OBPJX") = RECNO("OBPJX")
+   	DELETE
+   ENDIF	
+   USE IN OBPJX
+   MODIFY PROJECT OBJECTBROWSER NOWAIT
+
+   *~ Rename the old (original) ObjectBrowser.app file, replace this file, and then cleanup.
+   RENAME HOME() + "OBJECTBROWSER.APP" TO HOME() +"OBJECTBROWSER.APP.ORIGIONAL"
+   _VFP.ACTIVEPROJECT.BUILD(HOME() + "OBJECTBROWSER.APP",2,.T.,.T.)
+   CLOSE ALL
+   WAIT CLEAR
+   MESSAGEBOX("Object Browser Updated!",0,"Microsoft Knowledge Base Q324201")
+
+6. Save the program, and then run the program:
+
+   NOTE: This program must be located in the OBrowser root directory to run
+   correctly.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce the Behavior
+-------------------------------
+
+NOTE: You must install The Microsoft SOAP Toolkit before you follow these steps.
+The Microsoft SOAP Toolkit is included with the Visual FoxPro 7.0 CD. To
+download an updated version of the Microsoft SOAP Toolkit, visit the following
+Microsoft Web site:
+
+   Microsoft SOAP Toolkit
+
+1. Start Visual FoxPro 7.0.
+
+2. Clean up the Object Browser cache by deleting its working table. To do this,
+   run the following command from the Visual FoxPro 7.0 Command window:
+
+   erase home() + "wizards\objectbrowser.*" recycle
+
+A fresh copy of the cache is created the next time that the Object Browser is
+started.
+
+3. On the Tools menu, click Object Browser, and then click Open Type Library.
+
+4. Click the COM Libraries tab, click Microsoft SOAP Type Library, and then
+   click OK.
+
+5. In the left pane, click the MSSOAPLib drop-down list box, click Interfaces,
+   and then click the ISOAPTypeMapper interface.
+
+6. In the right pane, click the Methods drop-down list. Note that there are four
+   methods:
+
+    - INIT
+    - READ
+    - WRITE
+    - VARTYPE
+
+7. Run the following command in the Command window to open a new .prg file.
+
+   modify command test
+
+8. Drag the ISOAPTypeMapper interface to the Code Editor window.
+
+Notice that the methods that are listed in the right pane of the Object Browser
+for the interface that you selected do not match the code in the editor. The
+interface code is for the ISoapTypeMapperFactory interface instead.
+
+REFERENCES
+==========
+
+For additional information about the Microsoft SOAP Toolkit, visit the following
+Microsoft Developer Network (MSDN) Web site:
+
+   Microsoft SOAP Toolkit
+   (http://msdn.Microsoft.com/downloads/default.asp?URL=/code/sample.asp?url=/msdn-files/027/001/580/msdncompositedoc.xml)
+
+Additional query words:
+
+======================================================================
+Keywords          : kbAutomation kbCOMt kbXBase kbGrpDSFox kbDSupport kbvfp700 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP700
+Version           : :7.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

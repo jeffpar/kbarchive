@@ -1,0 +1,81 @@
+DOCUMENT:Q156344  08-AUG-2001  [winnt]
+TITLE   :Plug and Play Devices Not Detected or Installed
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbenv kbhw kbsetup kbHardwarekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you install Windows NT 4.0, Plug and Play devices in your computer are not
+detected and installed.
+
+CAUSE
+=====
+
+Windows NT 4.0 does not support Plug and Play.
+
+RESOLUTION
+==========
+
+The driver library on the Windows NT 4.0 CD-ROM includes the PnP ISA Enabler
+driver, which may allow the detection and installation of Plug and Play devices
+in Windows NT 4.0. Install the PnP ISA Enabler driver (PNPISA) using the
+following steps:
+
+NOTE: Although Windows NT includes PNPISA to detect Plug and Play devices, Plug
+and Play devices are not supported in Windows NT 4.0. PNPISA is provided as a
+"use at your own risk" tool.
+
+1. Locate the Pnpisa.inf file in the Drvlib\Pnpisa\<processor-type> folder
+   on the Windows NT 4.0 CD-ROM.
+
+2. Right-click the Pnpisa.inf file, and then click Install on the menu that
+   appears.
+
+3. Restart your computer.
+
+After you restart your computer, you may receive a message that Windows NT has
+detected your Plug and Play device(s).
+
+MORE INFORMATION
+================
+
+Note that PNPISA is not enabled by default.
+
+For more information on installing and potential problems review the following
+file on the Windows NT 4.0 CD-ROM:
+
+   <CD-ROM drive>:\Drvlib\Audio\Sbpnp\Readme.txt
+
+
+======================================================================
+Keywords          : kbenv kbhw kbsetup kbHardware kbfaq
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

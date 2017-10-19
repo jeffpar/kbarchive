@@ -1,0 +1,63 @@
+DOCUMENT:Q265797  22-FEB-2001  [vbwin]
+TITLE   :INFO: Use of User-Defined Data Types in eMbedded Visual Basic
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:kbGrpDSVB kbDSupport kbVBM300
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft eMbedded Visual Basic, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+User-defined data types (UDTs) are not supported in eMbedded Visual Basic (eVB).
+The only data type provided by eVB is a Variant, which do not explicitly support
+user-defined data types.
+
+Calling Windows CE APIs that use structures is also not supported from eMbedded
+Visual Basic. Although it is possible to use structures, Microsoft recommends
+that you avoid using Declare statements that include structures.
+
+For illustration purposes only, the following resources may be helpful:
+
+   http://www.vbce.com/articles/udt/index.asp
+   (http://www.vbce.com/articles/udt/index.asp)
+
+   Q265793 HOWTO: Use the CreateProcess API from eMbedded Visual Basic
+
+REFERENCES
+==========
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q241530 HOWTO: Call an API That Uses Structures from VBCE6
+
+Additional query words:
+
+======================================================================
+Keywords          : kbGrpDSVB kbDSupport kbVBM300 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword2 kbVBeMbSearch kbVBeMb300
+Version           : :3.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

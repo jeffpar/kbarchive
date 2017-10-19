@@ -1,0 +1,60 @@
+DOCUMENT:Q95576  02-OCT-1999  [win3x]
+TITLE   :WFWG: Network Card Detection Hangs Machine During Setup
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you disable hardware detection during Windows for Workgroups Setup because
+network card detection (NCD) has made your machine stop responding (hang), Setup
+doesn't perform any hard disk drive and video adapter detection either. This
+results in 32-bit disk access support not being installed.
+
+RESOLUTION
+==========
+
+Microsoft recommends that you not use the /I switch to avoid NCD because Windows
+for Workgroups automatically skips NCD the second time you run Setup if it
+failed before. The following line is added to the [boot] section of the
+SYSTEM.INI file before NCD takes place:
+
+        ignore_hw_detect=true
+
+If this switch is present in the SYSTEM.INI file, Setup skips NCD, but continues
+to check your hard disk drive and video adapter.
+
+NOTE: If you run Setup a second time and your computer hangs again, use the /I
+switch.
+
+Additional query words: netcard 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

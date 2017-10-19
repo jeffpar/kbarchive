@@ -1,0 +1,65 @@
+DOCUMENT:Q260556  26-OCT-2000  [winnt]
+TITLE   :Can't Associate NT Accounts with Exchange Mailboxes with LDAP MA
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:kberrmsg kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services, version 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to associate a Microsoft Windows NT 4.0 account with a
+Microsoft Exchange mailbox by means of the Lightweight Directory Access Protocol
+(LDAP) Management Agent (MA), a mailbox is created and the Assoc-NT-Account
+attribute is populated. However, the mailbox is not created correctly. When you
+try to view the mailbox properties, the following error message is displayed on
+your computer screen:
+
+   The parameter is incorrect. Microsoft Windows NT ID no. 0xc0020057.
+
+CAUSE
+=====
+
+This behavior may occur because the Exchange LDAP Management Agent does not have
+the built-in option that can associate an Exchange mailbox with a Windows NT
+account. This feature is only available for the MAPI Management Agent.
+
+RESOLUTION
+==========
+
+To resolve this behavior, use the Exchange MAPI Management Agent instead of the
+Exchange LDAP Management Agent.
+
+
+Additional query words: 0xc0020057 MMS Metadirectory
+
+======================================================================
+Keywords          : kberrmsg kbtool 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Hardware          : x86
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

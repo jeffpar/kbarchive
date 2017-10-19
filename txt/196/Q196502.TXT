@@ -1,0 +1,71 @@
+DOCUMENT:Q196502  14-NOV-2000  [word97]
+TITLE   :WD97: Sort Order Appears to Be Incorrect
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Microsoft Word appears to sort items in the wrong order. Any named items that
+contain numbers in their names, such as bookmarks, macros, or AutoText entries,
+may appear to be sorted incorrectly.
+
+For example, if you have three bookmarks named Test1, Test2, and Test11, they
+appear in the Bookmark Name list in the following order:
+
+   Test1
+   Test11
+   Test2
+
+CAUSE
+=====
+
+Word sorts numbers in the same way that it sorts words, that is, one character
+at a time. For example, Word places all numbers that begin with 1 (such as 12,
+156, or 1147) before all numbers that begin with 2 (such as 22, 256, or 2276).
+If two or more items begin with the same character, Word evaluates subsequent
+characters in each item to determine which item should come first. For example,
+Word places 124 before 19, based on the second digit (2 is less than 9, so 124
+comes before 19).
+
+WORKAROUND
+==========
+
+If you have named items that include numbers, change each name to include a
+leading 0 (zero). If the Bookmark names are Test1 and Test2 (and one of the
+items on the list has a two-digit number, like Test11), change the names to
+Test01 and Test02. Word now sorts them in the expected order.
+
+Additional query words:
+
+======================================================================
+Keywords          : word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

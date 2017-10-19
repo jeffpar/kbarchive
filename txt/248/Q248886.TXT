@@ -1,0 +1,74 @@
+DOCUMENT:Q248886  17-DEC-2000  [win95x]
+TITLE   :"Fatal Exception 0E" Error in IFSMGR When Starting Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbnetwork win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start your Windows 95-based computer, you may receive the following
+error message:
+
+   A Fatal Exception 0E has occurred at 0028:C0026416 in VXD IFSMGR (01) +
+   00003672
+
+CAUSE
+=====
+
+This behavior can occur if your network contains only Windows 95-based computers
+and several log on attempts occur at the same time.
+
+RESOLUTION
+==========
+
+To resolve this behavior, disable the browse server duties on all but one of the
+computers in your network:
+
+1. Right-click Network Neighborhood, and then click Properties.
+
+2. On the Configuration tab, click the File And Printer Sharing For Microsoft
+   Networks component, and then click Properties.
+
+3. In the Property box, click Browse Master, and then click Disabled in the
+   Value box.
+
+4. Click OK.
+
+NOTE: At least one computer in each workgroup must have the ability to become
+themaster browse server. If browse server capability is disabled on all the
+computers in a network, browse functionality is disabled. A network storm will
+ensue as clients will be unable to locate the browse master and will force an
+election.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

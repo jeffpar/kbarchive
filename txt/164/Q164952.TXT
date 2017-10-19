@@ -1,0 +1,85 @@
+DOCUMENT:Q164952  05-MAY-2001  [visualc]
+TITLE   :INFO: Fixes and Features of Visual C++ 4.0a RISC Edition
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.0,4.0a
+OPER/SYS:
+KEYWORDS:kbVC kbVC400kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 4.0, 4.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is a list of potential issues with the Visual C++ version 4.0 RISC
+Edition that are solved with fixes and features in Visual C++ Version 4.0a. Note
+that from within Developer Studio, the 4.0a RISC edition release is identified
+as version 4.1. Current owners of Visual C++ RISC Edition version 4.0 can obtain
+a no-charge 4.0a update (not including shipping, handling and tax) by ordering
+Customer Service kit, part number 048-00017. More information for obtaining the
+4.0a update can be found at:
+
+http://msdn.microsoft.com/visualc.asp
+
+or by calling your local Microsoft subsidiary.
+
+MORE INFORMATION
+================
+
+Symptoms: Applications that build with Visual C++ version 4.1 for Intel have
+compile or link errors when built with Visual C++ version 4.0 RISC Edition.
+
+ - Problem: Visual C++ version 4.0 RISC Edition is incompatible with Visual C++
+   version 4.1 for Intel.
+
+ - Solution: Use Visual C++ version 4.0a RISC Edition (Visual C++ version 4.1
+   for RISC).
+
+Symptoms: Users of Visual C++ version 4.0 RISC Edition cannot use Open Inventor
+3D Tools and IVF AppWizard from Template Graphics.
+
+ - Problem: Visual C++ version 4.0 RISC Edition does not have Open Inventor
+   support.
+
+ - Solution: Use Visual C++ version 4.0a RISC Edition (Visual C++ version 4.1
+   for RISC).
+
+Symptoms: Users of Visual C++ version 4.0 RISC Edition cannot use internet server
+classes, AppWizard for Internet applications, and World Wide Web access.
+
+ - Problem: Visual C++ version 4.0 RISC Edition does not have internet support.
+
+ - Solution: Use Visual C++ version 4.0a RISC Edition (Visual C++ version 4.1
+   for RISC). Note that users with applications built with Visual C++ version
+   4.0 InstallShield must rebuild their applications with Visual C++ version 4.1
+   InstallShield.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbVC kbVC400 kbfixlist
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbVC400a
+Version           : winnt:4.0,4.0a
+Hardware          : ALPHA MIPS PPC
+Issue type        : kbinfo
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,45 @@
+DOCUMENT:Q49749  30-JUL-2001  [lanman]
+TITLE   :NetWkstaSetUid() Returns ERROR_INVALID_PARAMETER in Error
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOM
+=======
+
+The NetWkstaSetUid() function returns an error message of
+"ERROR_INVALID_PARAMETER" for any server name other than NULL.
+
+CAUSE
+=====
+
+The NetWkstaSetUid() api is obsolete and exists only for compatibility with LAN
+Manager 1.x.
+
+RESOLUTION
+==========
+
+Use NetWkstaSetUid2() if LAN Manager 2.x is runnning.
+
+Additional query words: 1.00 1.01 2.00 api
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,62 @@
+DOCUMENT:Q58551  09-NOV-1999  [macmail]
+TITLE   :Mac DOS: Running Mail with the 3Com EtherLink II Card
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER::2.0,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, MS-DOS workstation, versions 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To run Microsoft Mail version 2.0 or 3.0 (PC Client) on a computer that has a
+3Com EtherLink II Card and AppleShare PC version 2.00 software, you must load
+the following software modules:
+
+Module                          Description
+------                         -----------
+
+LSL.COM                        Link support layer driver
+
+ENET3CII.COM                   Link interface driver for 3Com
+                               EtherLink II card
+
+AARP.COM                       Apple address resolution protocol
+
+ATALK.COM                      AppleTalk protocol stack
+
+PAP_WS.COM                     Printer access protocol for workstation
+
+COMPAT.COM                     Provides compatibility for AppleShare
+                               versions 1.x applications
+
+The total amount of memory (RAM) used by these modules is 68K.
+
+Additional query words: 2.00 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailATN200DOS kbMailATN300DOS
+Version           : :2.0,3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

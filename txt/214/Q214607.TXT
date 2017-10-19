@@ -1,0 +1,115 @@
+DOCUMENT:Q214607  27-JUL-2001  [ssafe]
+TITLE   :BUG: Cannot Add a Secured VBA Module to SourceSafe.
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:6.0; :
+OPER/SYS:
+KEYWORDS:kbinterop kbAccess kbSSafe600 kbSSafe600bug kbOffice2000 kbDSupport kbBug kbGrpDSSSafe
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, version 6.0 
+ - Microsoft Office 2000 Developer 
+-------------------------------------------------------------------------------
+
+
+Moderate: Requires basic macro, coding, and interoperability skills.
+
+SYMPTOMS
+========
+
+When adding a password protected Visual Basic for Applications (VBA) project to
+SourceSafe, you will see one of the following errors. The error you see depends
+on whether the VBA project is part of an Access 2000 database or one of the
+other Office 2000 applications.
+
+ - When adding an Access 2000 module to SourceSafe the following error message
+   appears:
+
+   Failed to export <object name> to a file.
+
+ - When adding an Office 2000 VBA project (non-Access) to SourceSafe the
+   following error message appears.:
+
+   The addin was unable to retrieve information about the current project and
+   cannot continue.
+
+   If you attempt to add to SourceSafe again, the following error message
+   appears:
+
+   50289: Can't perform operation since the project is protected.
+
+CAUSE
+=====
+
+SourceSafe cannot display the Password dialog box for the project. Therefore,
+the project can not be opened for insertion into the VSS database.
+
+RESOLUTION
+==========
+
+Manually open the project in the Visual Basic Editor (VBE) and supply the
+password when prompted. Once the project has been opened, you will be able to
+add the project to the VSS database.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+NOTE: The following steps reproduce this behavior in Microsoft Access 2000.
+
+1. Create a .mdb database in Microsoft Access 2000.
+
+2. Add a module to the database and type some code in the module.
+
+3. Save the module.
+
+4. Add a password to the project by choosing Tools - <database name>
+   Properties and then selecting the Protection tab. Select "Lock project for
+   viewing" and type a password.
+
+5. Save the module.
+
+6. Quit VBE and return to Microsoft Access 2000.
+
+7. Exit Microsoft Access 2000.
+
+8. Open Microsoft Access 2000 and choose that database.
+
+9. Add a database to SourceSafe (Tools - SourceSafe - Add Database to
+   SourceSafe) making sure the module is selected. The error message listed in
+   the SYMPTOMS section will appear.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbAccess kbSSafe600 kbSSafe600bug kbOffice2000 kbDSupport kbBug kbGrpDSSSafe kbISS 
+Technology        : kbSSafeSearch kbOfficeSearch kbAudDeveloper kbOffice2000Search kbOffice2000 kbSSafe600 kbOffice2000DevSearch
+Version           : WINDOWS:6.0; :
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

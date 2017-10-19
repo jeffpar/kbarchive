@@ -1,0 +1,65 @@
+DOCUMENT:Q175530  17-DEC-2000  [win95x]
+TITLE   :Windows Computer Is Unable to View a Network Share
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbnetwork kbui win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 98 
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to view a network share using a Windows 95 or Windows 98-based
+computer, you may be unable to do so. Also, if you try to use the NET VIEW
+command to view a network share, you may receive the following error message:
+
+   Error 234: Additional data is available
+
+CAUSE
+=====
+
+This behavior can occur because Windows 95/98 is unable to recognize a network
+share name of more than 12 characters in length.
+
+RESOLUTION
+==========
+
+To work around this problem, rename any network shares you want to view to 12
+characters or less. For information about how to do this, click Start, click
+Help, type "renaming" (without quotation marks), click Folders, and then click
+Display.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95/98.
+
+Additional query words: 98
+
+======================================================================
+Keywords          : kbnetwork kbui win95 
+Technology        : kbWin95search kbWin98search kbZNotKeyword3 kbWin98
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

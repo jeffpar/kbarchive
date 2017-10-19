@@ -1,0 +1,61 @@
+DOCUMENT:Q45628  09-NOV-1999  [macmail]
+TITLE   :Mac Wkst: Graphic Images Not Saved as a File
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:3.0,3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After you save a graphic message from Microsoft Mail using the Save As button in
+the Read Image window, the graphic does not appear in the resulting document
+when it is opened in a word processor.
+
+The graphic does not appear because Microsoft Mail saves files in text format;
+that is, only alphanumeric characters are saved. Because a graphic is not a text
+character, it is lost when the mail message is saved. This is true for the
+default Mail Image form or for any other customized form that contains graphic
+objects.
+
+To save a graphic, copy it into the Clipboard, then paste the Clipboard contents
+into the Scrapbook or into an application that accepts the graphic. Microsoft
+Word, Microsoft Works, Microsoft File, Microsoft PowerPoint, and Microsoft Write
+will accept a graphic from the Clipboard.
+
+MORE INFORMATION
+================
+
+Mail messages are saved in text format because this format can be read by a
+large number of word-processing programs. This feature makes Mail compatible
+with a large software base.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN300 kbMailATN310
+Version           : WINDOWS:3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

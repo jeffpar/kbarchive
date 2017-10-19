@@ -1,0 +1,75 @@
+DOCUMENT:Q182557  13-FEB-2000  [exchange]
+TITLE   :XADM: NDR Occurs When Sending To A Mailbox With Receive Limits
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive a non-delivery report (NDR) similar to the following:
+
+   Your message did not reach some or all of the intended recipients.
+
+      Subject:   Subject of the Message
+      Sent:   3/10/98 11:40 PM
+
+   The following recipient(s) could not be reached:
+
+      RecipientName on 3/10/98 11:40 PM
+      The recipient was unavailable to take delivery of the message
+      MSEXCH:MSExchangeIS:SITENAME:SERVERNAME
+
+CAUSE
+=====
+
+This problem can occur when you send a message to a mailbox that has receive
+restrictions.
+
+WORKAROUND
+==========
+
+Verify the Properties of the the recipient's mailbox. If there are restrictions,
+the administrator can either remove or decrease the restictions; the recipient
+can also be notified to clean out his/her mailbox.
+
+To check receive restrictions, perform the following steps:
+
+1. Start Exchange Administrator.
+
+2. Get Properties on the mailbox to which you are sending the message.
+
+3. Click the Limits tab to configure the Prohibit Send and Receive (K)
+   restriction.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

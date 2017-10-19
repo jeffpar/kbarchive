@@ -1,0 +1,85 @@
+DOCUMENT:Q197616  07-JAN-2000  [mspress]
+TITLE   :Running Windows 98 Corrections and Comments
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Running Microsoft Windows 98 ISBN 1-57231-681-0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains comments, corrections, and information about known errors
+relating to the Microsoft Press book Running Microsoft Windows 98, ISBN
+1-57231-681-0.
+
+The following topics are covered:
+
+ - Page 12: Choose Create Shortcut to add folder to desktop
+
+ - Page 620: Typo in step 1
+
+MORE INFORMATION
+================
+
+Page 12: Choose Create Shortcut to add folder to desktop
+--------------------------------------------------------
+
+Page 12: In the first Tip under "My Documents"
+
+Change last sentence:
+"If you change your mind later, right-click the My Documents folder in Windows
+Explorer and choose Add Item To The Desktop."
+
+To:
+"If you change your mind later, right-click the My Documents folder in Windows
+Explorer and choose Create Shortcut."
+
+
+Page 620: Typo in step 1
+------------------------
+
+Page 620, Step 1:
+Typographical error. 25-11 should be 25-10.
+
+Change:
+"...the Add Favorite dialog box shown in Figure 25-11, on the previous page."
+
+To:
+"...the Add Favorite dialog box shown in Figure 25-10, on the previous page."
+
+
+Microsoft Press is committed to providing informative and accurate books. All
+comments and corrections listed above are ready for inclusion in future
+printings of this book. If you have a later printing of this book, it may
+already contain most or all of the above corrections.
+
+Additional query words: ms_press 1-57231-681-0
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

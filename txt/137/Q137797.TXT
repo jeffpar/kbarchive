@@ -1,0 +1,66 @@
+DOCUMENT:Q137797  30-JUL-2001  [sms]
+TITLE   :PCM Cannot Connect to NetWare 3.12 Servers
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbnetwork kbPCM smspcm
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+When you run Systems Management Server on a computer running Windows 3.1 and
+NetWare 3.12, you do not receive any jobs in Package Command Manager. Although
+Package Command Manager is unable to connect to the NetWare server, you can make
+connections to the server manually. Manual connections to NetWare server
+applications share work fine. The SYSTEM.INI file has the correct
+NETWORK.DRV=NETWARE.DRV mapping. When you run Package Command Manager with the
+/DEBUG option, the following two errors appear while PCM is activating:
+
+   Error connecting to current logon server:
+   Error connecting to server:
+
+This problem does not occur when you use Windows for Workgroups 3.11 and NetWare
+3.12.
+
+CAUSE
+=====
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.0, 1.1 and 1.2. We are researching this problem and will post new
+information in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: prodsms sms pcmwin
+
+======================================================================
+Keywords          : kbnetwork kbPCM smspcm 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

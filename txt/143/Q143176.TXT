@@ -1,0 +1,71 @@
+DOCUMENT:Q143176  06-MAY-1999  [iis]
+TITLE   :How to Compile IIS MIB Files
+PRODUCT :Internet Information Server
+PROD/VER:1.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Internet Information Server (IIS) contains four Management Information Base
+(MIB) files. You can compile the four MIB files with the existing MIB files
+using MIBCC.EXE in Windows NT.
+
+MORE INFORMATION
+================
+
+The following MIB files are available in IIS CD-ROM in the SDK directory:
+
+   INETSRV.MIB    ( InetSrvCommon )
+   FTP.MIB        ( FtpServer )
+   GOPHERD.MIB    ( GopherServer )
+   HTTP.MIB       ( HttpServer )
+
+To compile a Simple Network Management Protocol (SNMP) Management Information
+Base (MIB) file with the Windows Internet Name Service (WINS) and Dynamic Host
+Configuration Protocol (DHCP) MIB files, use MIBCC.EXE (included in the Windows
+NT Resource Kit version 3.5). For example:
+
+   MIBCC -oOUT.BIN SMI.MIB LMMIB2.MIB MIB_II.MIB WINS.MIB DHCP.MIB
+   INETSRV.MIB FTP.MIB GOPHERD.MIB HTTP.MIB
+
+The order of the MIB files is important. In this example, you need to copy
+OUT.BIN to MIB.BIN and place it in the %SYSTEMROOT%\SYSTEM32 directory. If you
+compile without the -o option, MIBCC.EXE overwrites the MIB.BIN file that is
+already in your %SYSTEMROOT%\SYSTEM32 directory.
+
+To print each node as it is added, and print the MIB tree when finished, compile
+with -n and -t, respectively. For example:
+
+   MIBCC -n -oOUT.BIN -t SMI.MIB LMMIB2.MIB MIB_II.MIB WINS.MIB DHCP.MIB
+
+Additional query words: prodiis
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbiisSearch kbiis100
+Version           : 1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,70 @@
+DOCUMENT:Q159224  22-FEB-2002  [winnt]
+TITLE   :Stop 0x0000000A Nwlnkrip.sys RAS Server w/2 Token Ring Cards
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A Windows NT Server configured as a RAS Server with two token ring cards on the
+same computer may stop with the following message:
+
+   STOP: 0x0000000A (0x00000030, 0x00000002, 0x00000000, 0xf8fb3695)
+   IRQL_NOT_LESS_OR_EQUAL
+
+NOTE: The first will appear exactly as shown on the x86 platform. The fourth
+parameters will fall within Nwlnkrip.sys.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, complete one of the following steps:
+
+ - Connect the Token Ring Cards to different nets.
+
+ - Remove a Token Ring Card from the system.
+
+ - Remove the RAS Server Service.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. We are
+researching this problem and will post new information in the Microsoft
+Knowledge Base as it becomes available.
+
+Additional query words: 0xA
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

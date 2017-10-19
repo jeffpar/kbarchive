@@ -1,0 +1,76 @@
+DOCUMENT:Q195179  07-MAY-1999  [iis]
+TITLE   :Cannot Disable HTTP KeepAlives for HTTP/1.1 Clients
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+HTTP/1.1 client connections are not closed, even if the Allow HTTP KeepAlives
+check box is not selected in the Web site's properties in Microsoft Management
+Console (MMC).
+
+CAUSE
+=====
+
+This behavior occurs because the Allow HTTP KeepAlives check box applies only to
+HTTP/1.0 clients that connect to the IIS server.
+
+RESOLUTION
+==========
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+The "Section 8.1.2.1 Negotiation" section of RFC2068 states the following:
+
+   In case the client does not want to maintain a connection for more than
+   that request, it SHOULD send a Connection header including the
+   connection-token close.
+
+Sections 8.1.2.1 and 19.7.1 both discuss backwards compatibility for previous
+HTTP versions and state that persistent connections must be explicitly
+negotiated.
+
+The AllowKeepAlives feature is only valid in the following scenarios:
+
+If you clear the Allow HTTP KeepAlives check box on the server and use an
+HTTP/1.0 client that tries to establish a persistent connection, the server
+sends a close.
+
+If you select the Allow HTTP KeepAlives check box on the server and use an
+HTTP/1.0 client that tries to establish a persistent connection, the server
+honors the request for persistence.
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis400
+Version           : WINNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

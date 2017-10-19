@@ -1,0 +1,65 @@
+DOCUMENT:Q272919  12-NOV-2001  [msnetwork]
+TITLE   :How to add, rename, or delete Favorites in MSN Companion
+PRODUCT :The Microsoft Network
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Favorites give you the ability to go to Web pages you found interesting or
+informative. You can rename, add, or remove your favorites. Thumbnails of the
+pages are displayed on the favorites page as well, to provide easy
+identification of the page.
+
+MORE INFORMATION
+================
+
+To view favorites, see the favorites list on the Start page, or view thumbnails
+of them by pressing the favorites button (a star) on your keyboard.
+
+To add a favorite, navigate to the Web page you want to add, click Page Options
+on the toolbar, and then click add this page to my favorites. Either leave the
+default name for this page or type your own label for your favorite's list in
+the input box, and then click add to favorites.
+
+To rename or delete a favorite, press the favorites button (a star) on your
+keyboard, click rename or delete favorites. Scroll through the list to find the
+favorite you want to change and click either rename or delete. If you click
+rename, you are given an input box in which you can type a new name and than
+click done.
+
+Note: You can have only 30 favorites at one time.
+
+
+Additional query words: kbimu msn companion favorites
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbMSNSearch kbMSNCompanion
+Version           : :1.0,2.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

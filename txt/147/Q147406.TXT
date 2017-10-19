@@ -1,0 +1,79 @@
+DOCUMENT:Q147406  08-NOV-2001  [homemm]
+TITLE   :Stravinsky: Minimum System Requirements
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Multimedia Stravinsky for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article contains a copy of the minimum system requirements listed
+on the Microsoft Multimedia Stravinsky for Windows program package.
+
+NOTE: Some of these requirements have changed since package printing. For a list
+of requirement changes, please see the "System Requirement Changes" section at
+the end of this article.
+
+MORE INFORMATION
+================
+
+Printed System Requirements
+---------------------------
+
+The minimum system requirements for running Stravinsky are:
+
+ - A Multimedia PC or compatible with a 386SX or higher microprocessor.
+
+ - MS-DOS operating system 3.1 or later.
+
+ - Microsoft Windows operating system version 3.1 or later.
+
+ - Double-speed (2x) or better CD-ROM drive.
+
+ - 2 MB of RAM.
+
+ - 30-MB hard disk.
+
+ - VGA display.
+
+ - Windows-compatible sound card.
+
+ - Speakers or headphones.
+
+ - Microsoft Mouse or compatible pointing device.
+
+System Requirement Changes
+--------------------------
+
+Multimedia Stravinsky only requires 3 MB of hard disk space.
+
+Additional query words: multi media multimedia multi-media mmtitles kbdocerr kbmm requires
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbZNotKeyword kbMMStravinsky
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

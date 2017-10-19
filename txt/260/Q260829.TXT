@@ -1,0 +1,51 @@
+DOCUMENT:Q260829  09-FEB-2001  [exchange]
+TITLE   :XFOR: Date Empty in Meeting Request Sent from Exchange to Notes
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5,5.5 SP1,5.5 SP2,5.5 SP3
+OPER/SYS:
+KEYWORDS:exc55 exc55sp1 exc55sp2 exc55sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 5.5 SP1, 5.5 SP2, 5.5 SP3 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When a meeting request is sent from Exchange Server to Lotus Notes 4.x and the
+meeting is accepted, the date field is blank in Notes.
+
+WORKAROUND
+==========
+
+To work around this issue, users must find the date of the item in the calendar
+to open the item. Under the detailed description in the item, the date is
+specified.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 exc55sp1 exc55sp2 exc55sp3 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange550SP1 kbExchange550SP2 kbExchange550SP3
+Version           : :5.5,5.5 SP1,5.5 SP2,5.5 SP3
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

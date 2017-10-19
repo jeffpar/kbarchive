@@ -1,0 +1,66 @@
+DOCUMENT:Q102060  08-AUG-2001  [winnt]
+TITLE   :Increasing the Performance of MS-DOS-Based Applications
+PRODUCT :Microsoft Windows NT
+PROD/VER::; winnt:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server 
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+If you are not satisfied with the performance of your MS-DOS-based
+applications on Windows NT, try the following:
+
+Windows NT 4.0 keeps the same setting in the property (right click) of
+the MS-DOS-based applications.
+
+ - If the application is in a window and the video display performance is slow,
+   try full-screen mode. Windows NT 4.0 screen folder provides this setting.
+
+ - Disable the Compatible Timer Hardware feature in the _DEFAULT.PIF or the
+   application's program information file (PIF) under the NT-specific section of
+   PIF Editor. Since this feature causes a decrease in performance, it should be
+   used only if it is required to make an application to run with Windows NT.
+   Windows NT program folder under Windows NT section provides this setting.
+
+ - If the application is in a window and seems to pause periodically, try
+   disabling Idle Detection in the Advance section of that application's PIF.
+   Windows NT misc folder provides this setting in a form of a slider bar called
+   idle sensitivity.
+
+ - If the MS-DOS-based application can be configured for printing, choose LPT1,
+   LPT2 over parallel port. Most of the applications use Int17 to print when
+   configured for LPT<x>. If you select parallel port mode, these
+   applications print directly to printer ports. Parallel mode is significantly
+   slower in Windows NT compared to Windows 3.1.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kb3rdparty kbinterop 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTW310 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS310 kbWinNTAdvSerSearch kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+Version           : :; winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

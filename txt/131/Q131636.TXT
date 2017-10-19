@@ -1,0 +1,60 @@
+DOCUMENT:Q131636  19-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: Last Update Received/Sent Is Never
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Schedule+ Administrator (Admin) program (ADMINSCH.EXE) title screen always
+shows Last Update Received and Last Update Sent as Never.
+
+CAUSE
+=====
+
+This is set by default with the installation of the Schedule+ Admin program.
+
+RESOLUTION
+==========
+
+1. Change Sending Times from the Distribution Settings dialog box from the
+   default of Never, or change the Sending Times from the Modify Distribution
+   Frequency dialog box from the default Sending Times of Send at Default Times.
+
+2. Run the Schedule Distribution program (SCHDIST.EXE) with drives mapped to the
+   root of the postoffices participating in schedule distribution.
+
+3. Wait the timeframe specified in step 1. The minimum timeframe available is 15
+   minutes. At this point, the time should be updated.
+
+Additional query words: schedule plus 1.00 dynamic connections
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100 kbSchedule100a
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

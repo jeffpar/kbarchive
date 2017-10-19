@@ -1,0 +1,61 @@
+DOCUMENT:Q178115  19-DEC-1999  [homemm]
+TITLE   :Encarta 98: Conversion of Miles to Feet Is Incorrect
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbtool kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 98 Encyclopedia for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use the Measurement Equivalents InterActivity "How many millimeters in a
+mile?" in Microsoft Encarta 98 Encyclopedia for Windows, when you type a number
+in the Miles box, the equivalent measurement in the Feet box is incorrect.
+
+For example, when you type "1" in the Miles box, "5,820" is displayed in the Feet
+box. There are actually 5,280 feet in a mile.
+
+NOTE: When you type a number in the Feet box, the equivalent measurement in the
+Miles box is correct.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta 98
+Encyclopedia for Windows. Microsoft is researching this problem and will post
+new information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+
+Additional query words: 98 multi multi-media media mm
+
+======================================================================
+Keywords          : kbtool kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1998
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

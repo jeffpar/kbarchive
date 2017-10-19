@@ -1,0 +1,67 @@
+DOCUMENT:Q94229  30-JUL-2001  [lanman]
+TITLE   :HPFS.386 Returns Wrong Error for File Creation
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+Many applications use Int 21 to create unique temporary files. However, a
+problem has been discovered with HPFS.386 that can result in an infinite loop
+within this process.
+
+PROBLEM ID: PR9301001
+
+SYMPTOMS
+========
+
+If you attempt to create a new file in an HPFS386 directory that is read-only,
+the error returned is "file exists." If Int 21 is trying to create a temporary
+file and it receives that error, it will increment the temporary file name by
+one and repeat the request.
+
+There are two symptoms this creates. First, the client PC will hang or go into
+"beeping death." Second, the server will slow down as it is processing repeated
+attempts to create the file. Typically the disk light will stay on, and you will
+notice performance degradation with other clients until the offending client PC
+is rebooted. This behavior has been observed by users of Microsoft Word and
+PowerPoint, but the potential for problems extends to any application that
+creates temporary files on LAN Manager 2.1 servers.
+
+CAUSE
+=====
+
+This problem is caused by an incorrect return code from HPFS.386.
+
+RESOLUTION
+==========
+
+HPFS.386 should return extended error 65 (access denied). It has been modified
+to correct this problem. If you are hanging while attempting to save documents
+to read-only directories, replace HPFS.386. Replace
+<lanroot>\NETPROG\HPFS.386 with a patched version dated 7/23/92, available
+from Microsoft PSS (CSD00.050).
+
+Additional query words: 2.10 hang
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

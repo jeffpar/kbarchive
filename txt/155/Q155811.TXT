@@ -1,0 +1,59 @@
+DOCUMENT:Q155811  08-MAY-1999  [iis]
+TITLE   :IIS 2.0 Reinstall Option Restores Default Publication Settings
+PRODUCT :Internet Information Server
+PROD/VER:2.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Internet Information Server (IIS) will restore the publication
+service default settings when executing the Setup Reinstall option.
+
+MORE INFORMATION
+================
+
+When upgrading your installation of IIS from version 1.0 to version 2.0, your
+customized system settings (such as a modification to the WWW password
+authentication), will be maintained.
+
+When executing the IIS 2.0 Reinstall feature to reinstall your current selection
+of publication tools, your customized settings (such as a modification to the
+WWW password authentication), will be removed.
+
+The Reinstall feature is designed to restore a publication server to the default
+settings to assist in troubleshooting.
+
+For more information on IIS 2.0 Setup, please see Chapter 1, Installing Internet
+Information Server, in the online HTML documentation.
+
+Additional query words: prodiis
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbiisSearch kbiis200
+Version           : 2.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

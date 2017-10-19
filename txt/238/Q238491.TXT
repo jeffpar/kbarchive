@@ -1,0 +1,102 @@
+DOCUMENT:Q238491  06-AUG-2002  [exchange]
+TITLE   :XCON: Exchange MTA MIMEInternet X.400 Enhanced Relay - MIXER
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5,5.5 SP3
+OPER/SYS:
+KEYWORDS:kbFEA exc55 exc55sp3 EXC55SP3Fea
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 5.5 SP3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There is a large community using RFC 822-based protocols, Simple Mail Transfer
+Protocol (SMTP), for mail services, who may want to communicate with users of
+the Interpersonal Messaging System (IPMS) provided by X.400 systems. The
+Multipurpose Internet Mail Extensions (MIME) Internet X.400 Enhanced Relay
+(MIXER) defines a method for mapping message formats between RFC 822/MIME and
+X.400.
+
+MORE INFORMATION
+================
+
+Possible Configurations
+-----------------------
+
+ - A "gateway" between X.400 and SMTP networks. It is not a requirement that
+   custom recipients be set up to map recipient addresses.
+
+ - Routing X.400 messages over an Internet connection, or SMTP messages over an
+   X.400 Connector.
+
+ - Inter-working with other mail systems that use the RFC 822 Domain Defined
+   Attribute (DDA) to encapsulate SMTP addresses. The MIXER message transfer
+   agent (MTA) understands this DDA type, and also uses it (in place of the SMTP
+   DDA type) when sending a message out of the site.
+
+Address Mapping
+---------------
+
+The MTA MIXER supports four types of address mapping:
+
+ - GAL: Use of the Exchange Server global address list (the current method). If
+   a custom recipient or a mailbox exists that can map the address, then this
+   mapping is taken, and MIXER is not invoked.
+
+ - Encapsulation: An SMTP address can be provided by adding the DDA type RFC 822
+   to the site's X.400 address. The value of the DDA is the SMTP address. For
+   example, c=co; a=admd, p=Org,
+   dda:rfc-822=<user>@<internet_address>.com. An X.400 address can
+   be encapsulated in an SMTP address, as in the current product.
+
+ - MCGAM Mapping: This is the MIXER Conformant Global Address Mapping. It is
+   implemented in Exchange Server as a plain text file called Mcgam.in.txt,
+   which is placed in the MTA's run directory (normally Mtadata). In this file,
+   the administrator specifies exactly how addresses are to be mapped, by
+   specifying domains and subdomains, and indicating how they are mapped to the
+   Country, ADMD, PRMD, Organization, and OrgUnit values, and vice versa.
+
+ - Algorithmic Mapping: RFC 2156/MIXER also specifies how SMTP address strings
+   can be automatically mapped to X.400 addresses, for example, c=de; a=admd;
+   p=microsoft; o=pss; s= <user_alias> is automatically mapped to
+   <user_alias>@pss.microsoft.admd.de. If this mapping is not the one you
+   want, then the administrator must define one in the MCGAM File.
+
+For additional information, please refer to RFC 2156. This feature is available
+in the latest service pack for Exchange Server version 5.5. For additional
+information, click the following article number to view the article in the
+Microsoft Knowledge Base:
+
+   Q191014 XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
+
+This feature was first included in Exchange Server 5.5 Service Pack 3.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbFEA exc55 exc55sp3 EXC55SP3Fea 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2 kbExchange550SP3
+Version           : winnt:5.5,5.5 SP3
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

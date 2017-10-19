@@ -1,0 +1,102 @@
+DOCUMENT:Q154684  20-MAY-2002  [win95x]
+TITLE   :Token Ring Server-Based Setup May Not Work Properly
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbhw kbnetwork kbsetup 3rdpartynet win95 kbHardware kb3rdPartyNetClientkbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may not be able to run a server-based setup of Windows 95 from a Novell
+NetWare 3.1x or 4.x server if you are using locally administered addresses (LAA)
+on your Token Ring network adapter.
+
+CAUSE
+=====
+
+Net.exe contains the real-mode Microsoft NetWare redirector (Nwredir.exe).
+Nwredir.exe attempts to use the burned-in Token Ring address instead of the LAA,
+causing the server not to recognize the workstation's attempt to connect.
+
+RESOLUTION
+==========
+
+A supported fix for Windows 95 and OEM Service Release 2 that corrects this
+problem is now available from Microsoft, but has not been fully regression
+tested and should be applied only to computers experiencing this specific
+problem. To resolve this problem immediately, contact Microsoft Technical upport
+to obtain the fix.
+
+For a complete list of Microsoft Technical Support phone numbers and information
+on support costs, please go to the following address on the World Wide Web:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+This fix for Windows 95 and OEM Service Release 2 should have the following file
+attributes (or later):
+
+   File name     Version    Date      Time     Size
+   ---------------------------------------------------------
+   Net.exe       n/a        6/3/96    2:38pm   375,930 bytes
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95 and
+Microsoft Windows 95 OEM Service Release 2 (OSR2).
+
+This issue is not resolved in Microsoft Windows 98. Microsoft does not support
+running Windows 98 from a network server.
+
+MORE INFORMATION
+================
+
+For workstations that have already been set up to run Windows 95 from a NetWare
+3.1x or 4.x server, replace the existing Net.exe file in the Windows folder with
+this updated file.
+
+For workstations that have not already been set up, replace all copies of the
+Net.exe file on the server-based setup server so that Windows 95 Setup uses the
+updated Net.exe file during Setup.
+
+For additional information about issues resolved by updates to this component,
+please see the following article in the Microsoft Knowledge Base:
+
+   Q132807 Enhanced Encryption for Windows 95 Password Cache
+
+For additional information about Windows 95 updates, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q161020 Implementing Windows 95 Updates
+
+Additional query words:
+
+======================================================================
+Keywords          : kbhw kbnetwork kbsetup 3rdpartynet win95 kbHardware kb3rdPartyNetClient kbfixlist
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

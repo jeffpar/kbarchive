@@ -1,0 +1,92 @@
+DOCUMENT:Q69687  21-SEP-1999  [win95x]
+TITLE   :Unable to Start the Windows Task List
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.00 3.00a 3.10 3.11
+
+WINDOWS
+
+kbenv kbtshoot
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows Task Manager does not work if the SYSTEM.INI file entry for the Windows
+Task Manager is incorrect, or the file TASKMAN.EXE is damaged or missing.
+
+If the following line appears in the [BOOT] section of the SYSTEM.INI file, the
+Windows Task Manager (TASKMAN.EXE) does not load:
+
+         taskman.exe=
+
+MORE INFORMATION
+================
+
+For the Windows Task Manager to function correctly, either remove the above line
+from the SYSTEM.INI file or change the line to:
+
+   taskman.exe=taskman.exe
+
+If the TASKMAN.EXE file is not in the search path or if it has been removed,
+deleted, or renamed, the Task List will not appear when you double-click the
+Desktop or press CTRL+ESC.
+
+Verify that the TASKMAN.EXE file is located in the WINDOWS directory. TASKMAN.EXE
+can be expanded from the original Windows disks into the WINDOWS directory using
+the EXPAND.EXE utility.
+
+Windows 3.0, 3.0a: Expanding TASKMAN.EXE
+----------------------------------------
+
+For Windows 3.0, copy the EXPAND.EXE program from disk 1 to your WINDOWS
+directory and use the following command:
+
+   expand a:taskman.exe c:\windows\taskman.exe
+
+Windows 3.1: Expanding TASKMAN.EXE
+----------------------------------
+
+For Windows 3.1, use the following command:
+
+   expand a:taskman.ex_ c:\windows\taskman.exe
+
+By default, Windows loads the Task Manager. The TASKMAN.EXE= line in the
+SYSTEM.INI file was designed to allow the use of other Task Managing programs in
+Windows. If the above line exists, Task Switching capabilities still function by
+pressing ALT+TAB if the following line is in the [WINDOWS] section of the
+WIN.INI file:
+
+   COOLSWITCH=1
+
+Additional query words: tshoot 3.10 control escape ctrl esc 3.11 task list
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

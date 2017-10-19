@@ -1,0 +1,89 @@
+DOCUMENT:Q151668  19-DEC-1999  [exchange]
+TITLE   :XFOR: An Error Occurred While Processing an E-mail Address
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When attempting to create a New Dirsync Requestor object on an Exchange Server,
+the administrator receives the following error:
+
+   "An error occurred while processing an e-mail address. To view details of the
+   error, see the application event log in the Windows NT Event Viewer on the
+   Microsoft Exchange Server computer.
+
+   Microsoft Exchange Administrator ID No: c1030b35"
+
+This error indicates that more information can be found in the Event Viewer;
+however, the application log in Event Viewer reveals no information related to
+this error.
+
+CAUSE
+=====
+
+There is already a Hidden Recipient, $SYSTEM, in the Directory that corresponds
+to the Dirsync Server that has been selected. For instance, when a New Dirsync
+Requestor object is created, the administrator is asked to specify the Dirsync
+Server (must choose "Non MSMail Dirsync Server" or the correct MS Mail PO from a
+list). If the administrator chooses the MS Mail PO called "NETWORK1/PO1" from
+the list, completes the configuration, accepts the default for Dirsync Address
+on the General tab, and clicks "OK", then the error above will occur if there is
+already a Hidden Recipient with a Directory Name of MS:Network1/PO1/$System in
+the Directory on that Exchange Server.
+
+RESOLUTION
+==========
+
+These Hidden Recipients may be viewed by selecting the Recipients container and
+then clicking on View-Hidden Recipients. The Hidden Recipient can be deleted,
+and the error should no longer occur.
+
+MORE INFORMATION
+================
+
+There are a couple of scenarios where this error is known to occur:
+
+ - If a Dirsync Requestor object pointing to the same Dirsync Server had already
+   been added and then deleted on this Exchange Server, or
+
+ - If the PO that has been specified as the Dirsync Server has already been
+   specified as a Requestor in the organization. In other words, if a Remote
+   Requestor object has already been created on an Exchange Server that has a
+   DXA Server object, then a $SYSTEM Hidden Recipient would already exist. Note:
+   This is not a valid configuration, since there should only be a single
+   Exchange Server in the Organization with either a DXA Server or Dirsync
+   Requestor object.
+
+Additional query words: c1030b35
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

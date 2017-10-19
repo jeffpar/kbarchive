@@ -1,0 +1,76 @@
+DOCUMENT:Q127898  27-JUL-2001  [odbc]
+TITLE   :BUG: Err Msg: Control Caused Stack Fault in Module XBS200.DLL
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbBug kbISS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 2.0 
+-------------------------------------------------------------------------------
+
+BUG# QJET: 2000 (2.00.2317)
+
+SYMPTOMS
+========
+
+When you set up or modify a Microsoft FoxPro or Dbase data source using the ODBC
+Administrator icon in the Microsoft Windows Control Panel, and you use the
+Select Indexes... dialog box, the following error may occur:
+
+   Control caused a Stack Fault in module XBS200.DLL at <xxxx:xxxx>
+
+MORE INFORMATION
+================
+
+For additional information, please see the README.WRI included with ODBC Desktop
+Database Drivers version 2.0.
+
+WORKAROUND
+==========
+
+Use the ODBC Administrator to set up your Dbase and FoxPro ODBC data sources.
+The executable to run the ODBC Administrator is ODBCADM.EXE.
+
+Notes:
+
+ - If you do not have the ODBC Administrator installed as an icon in one of your
+   Program Manager groups, you can create one.
+
+ - If you do not have the ODBC Administrator executable, it can be installed
+   from the latest version of the ODBC Software Development Kit, available with
+   the Microsoft Developer Network Level 2 CDs.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in ODBC Dbase and FoxPro Drivers
+version 2.00.2317. We are researching this problem and will post new information
+here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 2.00.2317 Desktop Database
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC200
+Version           : WINDOWS:2.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

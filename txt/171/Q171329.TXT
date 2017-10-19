@@ -1,0 +1,78 @@
+DOCUMENT:Q171329  25-JUL-2001  [sms]
+TITLE   :SMS: <Unknown> NetcardID When a Different OS Is Detected
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2 SP2
+OPER/SYS:
+KEYWORDS:kbenv kbInventory smsinv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a computer is installed as a Windows 95 Systems Management Server client, the
+[SMS] section of the Sms.ini file will report OS=5. If the computer is then
+installed as a Windows NT client without having removed the Systems Management
+Server client, the following message will appear, and inventory should not be
+taken on the client:
+
+   A different OS was detected than that under which Systems Management Server
+   was installed. Operating System reported by SMS.INI does not match current
+   operating system.
+   Exiting
+   [SMS 100%]
+
+However, Systems Management Server continues and inventory is taken anyway. One
+result of this is that the NetcardID is not detected correctly. The NetcardID
+changes from the proper value (inventoried under Windows 95) to
+<unknown>.
+
+This problem only occurs if the computer's Sms.ini file was created when the
+computer is running Windows 95, and then the computer is started to Windows NT.
+A dual-boot computer installed as a Windows NT Systems Management Server client,
+then started to Windows 95 works as expected. Note that Systems Management
+Server does not support dual-boot computers at this time.
+
+WORKAROUND
+==========
+
+To work around this problem, run Upgrade.bat from the SMS_SHR share on the
+Systems Management Server logon server for those clients affected when started
+to Windows NT.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2 Service Pack 2. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: prodsms machine deinstall deinstalled uninstall uninstalled booted sp sp2
+
+======================================================================
+Keywords          : kbenv kbInventory smsinv 
+Technology        : kbSMSSearch kbSMS120SP2
+Version           : winnt:1.2 SP2
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

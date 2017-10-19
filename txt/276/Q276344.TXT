@@ -1,0 +1,51 @@
+DOCUMENT:Q276344  12-NOV-2001  [homegame]
+TITLE   :Classic Board Games: Game Selection Screen Distorted
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Classic Board Games, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you minimize the game selection window for Microsoft Classic Board Games,
+change the screen resolution or color palette in Microsoft Windows, and then
+restore the game selection window for Classic Board Games, the screen may be
+distorted.
+
+RESOLUTION
+==========
+
+To prevent this issue from occurring, quit Classic Board Games before you change
+the screen resolution or color palette in Windows.
+
+Additional query words: 1.00 msgame boardgames cbg corrupted
+
+======================================================================
+Keywords          : kbdisplay kbimu msgame 
+Technology        : kbHomeProdSearch _IKkbbogus kbHomeMMsearch kbGamesSearch kbClassicBoardGames
+Version           : :1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

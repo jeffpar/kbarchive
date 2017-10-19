@@ -1,0 +1,54 @@
+DOCUMENT:Q129200  06-NOV-1999  [win16sdk]
+TITLE   :Who Provides Support for the Arabic and Hebrew SDK?
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kbpolicy kbIntlDev
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the U.S., all Arabic and Hebrew Windows version 3.1 SDK support issues are
+being handled by GlyphSystems:
+
+   GlyphSystems:
+   phone number: 508-470-1317
+   fax number: 508-474-8087
+
+Outside of the U.S., all Arabic and Hebrew Windows version 3.1 SDK support issues
+are being handled by Microsoft Middle East, located in Dubai, U.A.E. (United
+Arab Emirates).
+
+   Microsoft Middle East
+   phone number: (971)(4)513-888
+   fax number: (971)(4)527-444
+
+Additional query words: 3.10 Hindi ME
+
+======================================================================
+Keywords          : kbpolicy kbIntlDev 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

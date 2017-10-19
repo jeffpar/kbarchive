@@ -1,0 +1,67 @@
+DOCUMENT:Q135172  17-DEC-2000  [win95x]
+TITLE   :CableTron T2015 Token Ring Adapter Fails on 4 Mbps Ring Speed
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install and configure a CableTron T2015 Token Ring network adapter in
+a Windows 95-based computer to work with a 4 Mbps Token Ring network using the
+T2015.dos NDIS 2 driver, you find that you cannot access the network after you
+restart the computer.
+
+CAUSE
+=====
+
+Setup places a parameter for ring speed in both the registry and the
+Protocol.ini file. The NDIS 2 driver does not read the Protocol.ini file for
+this parameter correctly and remains set at the factory-default speed of 16
+Mbps.
+
+RESOLUTION
+==========
+
+Use any text editor (such as Notepad) to edit the Protocol.ini file. Change the
+line that reads
+
+   BANDWIDTH=1
+
+to read:
+
+   " BANDWIDTH=4 " (without the quotation marks)
+
+After you make this change, save and close the Protocol.ini file, and then
+restart your computer.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

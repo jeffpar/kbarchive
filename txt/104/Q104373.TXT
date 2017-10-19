@@ -1,0 +1,65 @@
+DOCUMENT:Q104373  08-NOV-1999  [pcmail]
+TITLE   :3COM: Installation Stops If There Is a Space in Server Name
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to 3Com 3+Mail, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Version 1.0 of the Microsoft Mail Gateway to 3Com installation process prompts
+you for the three-part 3Com XNS name for the mail server used on your network.
+If you have added a legal space in the name portion of the three-part name, the
+installation process stops.
+
+NOTE: The installation may not provide an error message; it may simply stop
+installing the gateway.
+
+CAUSE
+=====
+
+A space is a legal character in a 3Com XNS name, but the installation program
+does not handle the space correctly.
+
+RESOLUTION
+==========
+
+Add an alias to the three-part 3Com XNS name for a server that does NOT contain
+a space in its name, then reinstall the gateway.
+
+After installing the gateway, you can remove the 3Com alias and edit the
+GATEWAY.INI file with the correct name.
+
+NOTE: To add an alias, use the 3Com 3N.EXE utility and use the ADD ALIAS option.
+Make sure the alias you add does NOT contain any spaces in its name.
+
+Additional query words: 1.00 Error Err Msg ErrMsg
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGate3COM3Plus100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

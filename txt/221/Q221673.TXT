@@ -1,0 +1,88 @@
+DOCUMENT:Q221673  08-JUL-1999  [foxpro]
+TITLE   :FIX: Black Cursor in ControlSource Not Supported in Korean VFP
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbvfp500 kbvfp500a kbvfp600 kbVS600sp3fix kbGrpDSFox
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The cursor does not work correctly, when typing Korean characters into a
+textbox's ControlSource property.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3.
+
+For more information about Visual Studio service packs, please see the following
+articles in the Microsoft Knowledge Base:
+
+   Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+   Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+Running Visual FoxPro 6.0 on a Korean Operating system, such as Korean version
+of Windows 95, when Korean characters are typed, the cursor changes to a solid
+black square for certain characters. For example, when typing Korean Characters
+in the command window, the cursor will change to a solid black square for some
+of the characters. But, when Korean characters are typed in a TextBox's
+ControlSource, the cursor does not change into a solid black square for any of
+the characters.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new form.
+
+2. Add a textbox into the form.
+
+3. Go to the Properties windows and select the textbox's ControlSource property.
+
+4. Type Korean characters into the ControlSource box, on the Properties window.
+   For example, type "RK SK EK FK" (without the quotation marks) (without
+   spaces).
+
+Note that as you type the characters, the cursor in the ControlSource box on the
+Properties window does not turn to a solid black square. If you type the same
+characters in the command window, then the cursor will change to a solid black
+square.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp500 kbvfp500a kbvfp600 kbVS600sp3fix kbGrpDSFox 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

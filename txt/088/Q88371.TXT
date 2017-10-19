@@ -1,0 +1,75 @@
+DOCUMENT:Q88371  15-NOV-1999  [pcmail]
+TITLE   :PC Win: Change Default Printer in Windows Not Changed in Mail
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0b,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Changing the default printer driver for version 3.1 of Microsoft Windows does
+not change the printer driver for version 3.0, 3.0b, or 3.2 of Microsoft Mail
+for Windows. To update Mail, choose Print from the File menu, select the Setup
+button, then choose the OK button.
+
+CAUSE
+=====
+
+Changing or replacing the default printer using Windows Control Panel or Print
+Manager updates entries in the WIN.INI file. Mail stores its default printer
+designation as "Printer=" in the [Microsoft Mail] section of the MSMAIL.INI
+file. Mail assumes that the default printer remains the same unless you specify
+otherwise through the Windows client. To reset the Windows client, Mail must
+read the WIN.INI file and find out which printer is now the default.
+
+WORKAROUND
+==========
+
+To reset the default printer in the Windows client, you can:
+
+ - Choose Print from the File menu and select the Setup button, then choose the
+   OK button.
+
+-or-
+
+ - Choose Print from the File menu and select the Setup button, then select the
+   new default printer and choose OK.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Mail for Windows
+versions 3.0, 3.0b, and 3.2. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: 3.00 3.00b 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320 kbMail300b
+Version           : WINDOWS:3.0,3.0b,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

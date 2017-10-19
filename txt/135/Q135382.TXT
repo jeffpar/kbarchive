@@ -1,0 +1,69 @@
+DOCUMENT:Q135382  13-JUN-2001  [accother]
+TITLE   :ADT/ODE: File Compression Ratio Less Than Other Programs
+PRODUCT :Microsoft Access Distribution Kit
+PROD/VER:WINDOWS:2.0,7.0,97; :
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Access Developer's Toolkit, versions 2.0, 7.0 
+ - Microsoft Office 97 Developer Edition 
+ - Microsoft Office 97 Developer Edition 
+-------------------------------------------------------------------------------
+
+
+Novice: Requires knowledge of the user interface on single-user computers.
+
+SYMPTOMS
+========
+
+When you create disk images for a custom application using the Microsoft Office
+97 Developer Edition Tools (ODE) Setup Wizard or the Microsoft Access
+Developer's Toolkit (ADT) Setup Wizard, the file compression ratio is less than
+some third-party compression utility programs. For example, the ODE or ADT Setup
+Wizard may compress a database from 1.7 megabytes (MB) to 1.06MB. In comparison,
+a third party compression utility may compress the same 1.7 MB database to 420
+kylobytes (KB).
+
+
+STATUS
+======
+
+This behavior is by design.
+
+REFERENCES
+==========
+
+For more information about custom setup in the ODE, search the Microsoft Access
+97 Help Index for "Setup Wizard, distributing."
+
+For more information about custom setup in the ADT, search for "ADT," and then
+"Creating setup programs" using the Microsoft Access for Windows 95 Help Index.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbOfficeSearch kbAudDeveloper kbAccessSearch kbOffice97Search kbAccessDevTK200 kbOffice97 kbZNotKeyword3 kbAccessDevTK700
+Version           : WINDOWS:2.0,7.0,97; :
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

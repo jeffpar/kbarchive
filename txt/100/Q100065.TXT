@@ -1,0 +1,73 @@
+DOCUMENT:Q100065  06-DEC-1999  [win95x]
+TITLE   :Setting the Unprintable Region for Windows Printer Drivers
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The unprintable regions of a page are regions where the printer cannot print
+because they are outside the margins allowed by a particular Windows printer
+driver. These regions are set either automatically (by design) or manually (by
+the user) in the printer driver.
+
+MORE INFORMATION
+================
+
+If the unprintable region is set automatically, it cannot be changed. If the
+unprintable region is set manually, some printer drivers allow you to set the
+margins allowed as follows:
+
+Windows 3.1 and 3.11
+--------------------
+
+1. In the Printer Setup dialog box, choose Options, then choose Margins.
+
+2. Adjust the margins as necessary and choose OK.
+
+Windows 3.0 and 3.0a
+--------------------
+
+1. In the Printer Setup dialog box, choose Setup, select the appropriate printer
+   model, and choose Margins.
+
+2. Adjust the margins as necessary and choose OK.
+
+For information about finding and using unprintable regions, query on the
+following words in the Microsoft Knowledge Base:
+
+   "unprintable" (without the quotation marks) and "region" (without the
+   quotation marks)
+
+
+Additional query words: 2.00 2.0a area label mailing loose invalid edge edges paper 3.00 3.00a 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,67 @@
+DOCUMENT:Q63744  31-OCT-1999  [win95x]
+TITLE   :Macro Recorder Macros Take Priority Over Application Macros
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If you have more than one macro with the same key sequence, and one of the
+macros was created in the Recorder program packaged with Microsoft Windows
+version 3.0, Windows replays the Recorder-created macro instead of a macro
+created from other Windows-based applications.
+
+For example, if you write a macro in Microsoft Excel that is activated by the
+CTRL+A key sequence, and you also have a macro created for the Recorder
+application that uses CTRL+A, the Recorder macro is activated when you press
+CTRL+A. This occurs if Recorder is running in a window or as an icon.
+
+If the Recorder macro is set to play back into Any Application, the macro
+keystrokes are sent to the application that is running. If the Recorder macro is
+set to play back into Same Application, the Recorder attempts to switch control
+to the application where the macro was recorded and then play back into THAT
+application. If the application is not running, Recorder terminates with an
+error message.
+
+WORKAROUND
+==========
+
+To change Recorder's playback, do the following:
+
+1. From the Options menu, choose Preferences.
+
+2. The Default Preferences dialog box appears. Under Playback To, select Any
+   Application or Same Application.
+
+Additional query words: 3.00 3.00a 3.0 3.0a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

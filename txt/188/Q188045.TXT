@@ -1,0 +1,74 @@
+DOCUMENT:Q188045  25-JUL-2001  [sms]
+TITLE   :SMS: Smsls.ini Fails If Used in a Domain with Multiple Sites
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:kbInventory smsinv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Smsls.ini file can be used to map clients to specific sites in a Systems
+Management Server hierarchy. This may fail when using Smsls.ini within a domain
+that contains more than one site. For example, a primary site resides in a
+resource domain. A secondary site is then created in the same domain. The
+Smsls.ini file is created and modified to map the clients from the primary site
+to the new secondary site. The clients are not moved to the secondary site.
+
+CAUSE
+=====
+
+During the client login process, the Setlsxx.exe program is called. SETLS is
+coded to determine whether it needs to check the Smsls.ini file or depend on the
+Sms.ini file. This code compares the Sms.ini domain, filename, and time against
+the current domain, filename, and time. If they match, then only the Sms.ini
+file is used.
+
+WORKAROUND
+==========
+
+Instead of using Smsls.ini, use a batch file that maps a drive to the SMS_SHR
+share of a server belonging to the new site. This batch file can then execute
+Runsms.bat from that server. This will result in the client reporting to the new
+site.
+
+For existing clients, the "Invalid Site/Domain combination" message may be
+displayed. This will occur for three login attempts before the client is added
+to the new site.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server 1.2.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbInventory smsinv 
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

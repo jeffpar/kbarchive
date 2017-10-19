@@ -1,0 +1,55 @@
+DOCUMENT:Q135937  04-SEP-1999  [win95x]
+TITLE   :DriveSpace 3 Compression May Change Filenames
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use DriveSpace 3 to compress a drive on a computer that had OS/2 or a
+Beta version of Windows 95 installed, DriveSpace 3 may change short filenames
+(8.3 filenames) to the Windows 95 format. The Windows 95 format omits spaces and
+places "~1" at the end of the filename.
+
+CAUSE
+=====
+
+DriveSpace renames files to adhere to the default naming convention in Windows
+95.
+
+RESOLUTION
+==========
+
+You can leave the files as they are named, or you can rename them to the
+original names.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbPlusSearch kbPlus95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

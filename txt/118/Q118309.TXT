@@ -1,0 +1,62 @@
+DOCUMENT:Q118309  01-DEC-1999  [macmail]
+TITLE   :CONN: Mail Conn 3.2 Installer Incompatible with PowerTalk
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER::3.1c,3.1d
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway for Appletalk Networks, versions 3.1c, 3.1d 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to install the Microsoft Mail Connection 3.2 Gateway on a Macintosh
+running the PowerTalk Extension, the Installer launches but you cannot get past
+the initial screen.
+
+CAUSE
+=====
+
+There is an INIT conflict between the Installer program and the PowerTalk
+Extension.
+
+RESOLUTION
+==========
+
+Move the PowerTalk Extension from the Extensions Folder and onto the Desktop,
+then restart the Macintosh. After installing the Gateway, you can move the
+PowerTalk Extension back to the Extensions folder.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailATN310c kbMailATN310d
+Version           : :3.1c,3.1d
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,58 @@
+DOCUMENT:Q128322  08-NOV-1999  [pcmail]
+TITLE   :PC WFW: EXTEND.EXE Not in Mail & Schedule+ Extensions 3.2
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2,3.2a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, versions 3.2, 3.2a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Scenario 3 of the Microsoft Mail Technical Configuration Primer, located on the
+Microsoft TechNet CD, incorrectly states the following:
+
+   Upgrading the Windows for Workgroups Postoffice
+
+   To upgrade a Windows for Workgroups postoffice to a Mail 3.2 postoffice, run
+   the Extend program (EXTEND.EXE). The Extend program installs a new set of
+   executable files to run the enhanced administration and communication
+   features, and will update the Mail data files.
+
+In version 3.2 of Microsoft Mail and Schedule+ Extensions, the Extend program
+does not exist. The EXTEND.EXE program is now called SETUP.EXE.
+
+MORE INFORMATION
+================
+
+The Extend program should be used when upgrading a Windows for Workgroup
+postoffice to a version 3.0 of Microsoft Mail for PC Networks postoffice.
+
+Additional query words: 3.20 EXTEND.EXE
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320 kbMailPCN320a
+Version           : WINDOWS:3.2,3.2a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

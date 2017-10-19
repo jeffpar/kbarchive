@@ -1,0 +1,55 @@
+DOCUMENT:Q155351  17-DEC-1999  [homemm]
+TITLE   :Cinemania 96 Update Contents: August 96
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1996 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Cinemania for Windows 1996 edition 
+ - Microsoft Cinemania for the Macintosh 1996 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article lists the movie titles included in the August 96 update of
+Cinemania 1996:
+
+Movie Titles
+------------
+
+The Adventures of Pinocchio (1996) - August (1996) - Basquiat (1996) - Celestial
+Clockwork (1993) - Cold Fever (1994) - Courage Under Fire (1996) - Emma (1996) -
+Fled (1996) - The Frighteners (1996) - Guimba the Tyrant (1995) - Harriet the
+Spy (1996) - Heavy (1995) - Homage (1995) - House Arrest (1996) - Jack (1996) -
+Joe's Apartment (1996) - Kazaam (1996) - Kingpin (1996) - Manny & Lo (1996)
+- Matilda (1996) - Maybe ... Maybe Not (1994) - Me and My Matchmaker (1996) -
+Multiplicity (1996) - Stonewall (1996) - Time To Kill, A (1996) - Trainspotting
+(1996) - The Visitors (1993) - Walking and Talking (1996)
+
+Additional query words: 1996 multi media multimedia multi-media mmtitles kbmm updates movies films film information infomation udate muscen96 mc96
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbHomeMMsearch kbCineManiaSearch kbCinemania1996 kbCinemania1996Mac
+Version           : :1996 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

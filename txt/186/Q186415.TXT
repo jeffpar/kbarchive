@@ -1,0 +1,159 @@
+DOCUMENT:Q186415  09-SEP-1999  [sms]
+TITLE   :SMS: Status MIF Creator, Ismif32.exe Is Available
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+ISMIF, a tool available in the BackOffice Resource Kit, writes a generic status
+MIF file from information provided when you run it from a command prompt.
+Ismif32.exe is a 32-bit application that does not have a dialog box. All
+information must be specified when you run it from a command prompt.
+
+MORE INFORMATION
+================
+
+The command can be run on Alpha, MIPS, and x86.
+
+ISMIF32 Syntax
+--------------
+
+      ismif32 [-f Filename] [-c Manufacturer] [-p Product] [-v Version] [-l
+      Locale] [-n Serial_Number] [-d Description] [-s Success] [-q] [-?]
+
+      -f Filename - Specifies the name of the MIF file that will be created. A
+      MIF extension is automatically appended. The default file name is
+      Setup.mif.
+
+      -c, -p, -v, -l, -n, -d - Each of these options can specify a text
+      string. Strings containing spaces must be surrounded by quotation marks.
+
+      -s status - 0 or 1. The 1 means success.
+
+      -q - Quiet mode. No output is displayed on the screen.
+
+      -? - Provides a usage statement.
+
+ISMIF32 Example
+---------------
+
+      ismif32 -c Microsoft -p SMS -v 1.2 -d "The most effective multi-site
+      management system that provides integrated desktop management for
+      customers with medium to large Windows environments."
+
+The preceding command creates a file in your Windows directory called Setup.mif
+that contains the following:
+
+      START COMPONENT
+        NAME = "WORKSTATION"
+        START GROUP    NAME = "ComponentID"
+          ID = 1
+          CLASS = "DMTF|ComponentID|1.0"
+          START ATTRIBUTE
+            NAME = "Manufacturer"
+            ID = 1
+            ACCESS = READ-ONLY
+            STORAGE = SPECIFIC
+            TYPE = STRING(64)
+            VALUE = "Microsoft"
+          END ATTRIBUTE
+          START ATTRIBUTE
+            NAME = "Product"
+            ID = 2
+            ACCESS = READ-ONLY
+            STORAGE = SPECIFIC
+            TYPE = STRING(64)
+            VALUE = "SMS"
+          END ATTRIBUTE
+          START ATTRIBUTE
+            NAME = "Version"
+            ID = 3
+            ACCESS = READ-ONLY
+            STORAGE = SPECIFIC
+            TYPE = STRING(64)
+            VALUE = "1.2"
+          END ATTRIBUTE
+          START ATTRIBUTE
+            NAME = "Locale"
+            ID = 4
+            ACCESS = READ-ONLY
+            STORAGE = SPECIFIC
+            TYPE = STRING(16)
+            VALUE = ""
+          END ATTRIBUTE
+          START ATTRIBUTE
+            NAME = "Serial Number"
+            ID = 5
+            ACCESS = READ-ONLY
+            STORAGE = SPECIFIC
+            TYPE = STRING(64)
+            VALUE = ""
+          END ATTRIBUTE
+          START ATTRIBUTE
+            NAME = "Installation"
+            ID = 6
+            ACCESS = READ-ONLY
+            STORAGE = SPECIFIC
+            TYPE = STRING(64)
+            VALUE = "DateTime"
+          END ATTRIBUTE
+        END GROUP
+        START GROUP
+          NAME = "InstallStatus"
+          ID = 2
+          CLASS = "MICROSOFT|JOBSTATUS|1.0"
+          START ATTRIBUTE
+            NAME = "Status"
+            ID = 1
+            ACCESS = READ-ONLY
+            STORAGE = SPECIFIC
+            TYPE = STRING(32)
+            VALUE = "Failed"
+          END ATTRIBUTE
+          START ATTRIBUTE
+            NAME = "Description"
+            ID = 2
+            ACCESS = READ-ONLY
+            STORAGE = SPECIFIC
+            TYPE = STRING(148)
+            VALUE = "The most effective multi-site management system that
+      provides integrated desktop management for customers with
+      medium to large Windows environments."
+          END ATTRIBUTE
+        END GROUP
+      END COMPONENT
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbSMSSearch kbSMS120
+Version           : winnt:1.2
+Hardware          : ALPHA MIPS x86
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

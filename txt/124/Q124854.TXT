@@ -1,0 +1,63 @@
+DOCUMENT:Q124854  19-NOV-1999  [msdos]
+TITLE   :XCOPY Results in Data Loss When Copying Extremely Large Files
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.0,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Running the XCOPY command results in data loss when you try to copy a
+15-megabyte (MB) or larger file, such as a compressed volume file (CVF) or
+Microsoft Mail folder (MMF).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in MS-DOS versions 5.00, 6.00,
+6.20, 6.21, and 6.22. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+When you use XCOPY to copy a file 15 MB or larger to another location on the
+same drive and that drive has insufficient disk space to do so, XCOPY eventually
+reports that there is insufficient disk space, and that no files were copied.
+However, the results of a DIR command indicate a new file was created--and that
+it takes up approximately the amount of free disk space that existed before you
+ran XCOPY. The directory listing also shows that the original file was deleted
+and that the system now has the same amount of free disk space as the original
+file occupied before running XCOPY.
+
+
+Additional query words: 5.0 6.0 6.20 6.2 6.21 6.22 5.x 6.x
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500
+Version           : MS-DOS:5.0,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

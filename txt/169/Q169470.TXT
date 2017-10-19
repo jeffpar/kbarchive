@@ -1,0 +1,213 @@
+DOCUMENT:Q169470  05-SEP-2001  [odbc]
+TITLE   :INFO: Frequently Asked Questions About ODBC Connection Pooling
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER::1.5,2.0,2.1,2.5,2.6,2.7,3.0
+OPER/SYS:
+KEYWORDS:kbusage kbDatabase kbODBC kbOLEDB kbVBp kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbMDAC250 kb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 3.0 
+ - Microsoft Data Access Components versions 1.5, 2.0, 2.1, 2.5, 2.6, 2.7 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article covers some of the most frequently asked questions about ODBC
+connection pooling.
+
+MORE INFORMATION
+================
+
+1. Q. What is ODBC connection pooling?
+
+   A. Connection pooling is one the new features introduced in ODBC 3.0.
+   Connection pooling enables an ODBC application to reuse a connection from a
+   pool of connections. Once a connection has been created and placed in the
+   pool, an ODBC application can reuse the same driver and the connection within
+   the same shared environment (henv) without performing the complete connection
+   process. However, a connection can never be reused between different henv or
+   different drivers.
+
+2. Q. Can I use connection pooling with 2.x ODBC drivers?
+
+   A. Connection pooling is implemented in the ODBC driver manager version 3.0 or
+   later. The driver version does not matter.
+
+3. Q. Can I enable connection pooling with the Microsoft Access driver because
+   the connection pooling is implemented in the driver manager?
+
+   A. You can enable connection pooling for Microsoft Access driver. Microsoft
+   Access uses Jet, and Jet is thread safe starting from Jet 4.0. From MDAC 2.1
+   and later, you can have connection pooling for Access ODBC driver.
+
+4. Q. How do I enable connection pooling in an ODBC application?
+
+   A. An ODBC application can call SQLSetEnvAttr with the
+   SQL_ATTR_CONNECTION_POOLING attribute to enable connection pooling. For more
+   information about how to enable connection pooling in an ODBC application,
+   please see the following article in the Microsoft Knowledge Base:
+
+   Q164221 How to Enable Connection Pooling in an ODBC Application
+
+5. Q. How do I enable connection pooling if the application is written in Visual
+   Basic?
+
+   A. A Visual Basic or ODBC application can call the SQLSetEnvAttr function to
+   enable connection pooling. Connection pooling is a process-level attribute,
+   so any subsequent connection made through the ODBC driver manager in the
+   Visual Basic application will use connection pooling. A Visual Basic
+   application can use the function declaration and code to enable connection
+   pooling.
+
+         Declare Function SQLSetEnvAttr Lib "odbc32.dll" (ByVal henv As Long,
+         ByVal Attribute As Long, ByVal Value As Long, ByVal StringLength As
+         Long) As Integer
+
+         ' env attribute
+         Public Const SQL_ATTR_CONNECTION_POOLING = 201
+         Public Const SQL_ATTR_CP_MATCH = 202
+
+         ' values for SQL_ATTR_CONNECTION_POOLING
+         Public Const SQL_CP_ONE_PER_DRIVER = 1
+         Public Const SQL_IS_UINTEGER = -5
+
+         nstatus = SQLSetEnvAttr(0, SQL_ATTR_CONNECTION_POOLING,
+         SQL_CP_ONE_PER_DRIVER, SQL_IS_UINTEGER)
+         SQLAllocEnv...
+         SQLAllocConnect...
+         SQLConnect...
+         SQLDisConnect...
+         SQLFreeConnect...
+         SQLFreeEnv...
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+   Q237844 HOWTO: Enable ODBC Connection Pooling in VB ADO Application
+
+   Q228843 HOWTO: Implement Session Pooling from Visual Basic ADO Program
+
+6. Q. How do I enable connection pooling in an OLE DB application?
+
+   A. An OLE DB application can call SQLSetEnvAttr to enable connection pooling.
+
+   For more information about how to enable connection pooling in an OLE DB
+   application, please see the following article in the Microsoft Knowledge
+   Base:
+
+   Q166083 How to Enable Connection Pooling in an OLE DB Application
+
+7. Q. How do I enable connection pooling for Active Server Pages (ASP) or
+   ActiveX Data Objects (ADO)?
+
+   A. Microsoft Internet Information server (IIS) version 3.0 with Active Server
+   Pages takes advantage of connection pooling. You can enable connection
+   pooling for IIS users by changing the value of StartConnectionPool to 1. The
+   StartConnectionPool is located under
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\W3SVC\ASP \Parameters.
+
+For additional information on how to enable connection pooling for IIS 4.0, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q189410 HOWTO: Enable or Disable Connection Pooling in IIS 4.0
+
+8. Q. How do I limit the number of connections in the pool?
+
+   A. The number of connections in the pool is controlled by the ODBC driver
+   manager. ODBC applications cannot control it.
+
+9. Q. How do I monitor how many connections are in the pool?
+
+   A. You can monitor the connections in the connection pool.
+
+For additional information, click the article numbers below to view the articles
+in the Microsoft Knowledge Base:
+
+   Q216950 How to Enable ODBC Connection Pooling Performance Counters
+
+   Q238442 ODBC Connection Pooling Object Disappears from PerfMon
+
+   Q245543 INFO: ODBC Connection Pooling Counters in Performance Monitor
+
+10. Q. How do I clear out the connections in the pool?
+
+   A. How long a connection remains in the pool depends on the CPTimeout
+   property of the ODBC driver. When the timeout expires, the connection will
+   be closed and removed from the pool. The ODBC application can use
+   SQLConfigDriver to change the value of CPTimeout, and this value applies to
+   all the ODBC applications that are using the specified ODBC driver. The
+   default value for the CPTimeout is 60 seconds.
+
+
+11. Q. Do I have to explicitly enable connection pooling if my application is
+   running in Microsoft Transaction Server?
+
+   A. If you are going through an ODBC driver to an ODBC data source, Microsoft
+   Transaction Server will enable connection pooling; you do not have to
+   explicitly enable connection pooling.
+
+12. Q. What if a connection in the pool goes bad? Will the ODBC driver manager
+   be able to detect it ?
+
+   A. ODBC 3.0 hands over a bad connection without checking whether the
+   connection is bad or not. With Service Pack 1, the driver manager will
+   detect a bad connection. If a connection in the pool is bad, the driver
+   manager will detect it and return a good connection. If the driver manager
+   is not able to create a good connection, it will return an error message.
+
+13. Q. With ODBC 3.0 Service Pack 1, will the ODBC driver manager try to connect
+   to the database server repeatedly when the server is not available?
+
+   A. ODBC 3.0 Service Pack 1 introduced a new API, ODBCSetTryWaitValue, to
+   prevent the ODBC driver manager from connecting to an unavailable server
+   repeatedly. ODBCSetTryWaitValue takes a DWORD parameter and saves the
+   information in the registry at the following location:
+
+   HKEY_LOCAL_MACHINE\Software\Odbc\Odbcinst.ini \ODBC Connection Pooling\Retry
+   Wait
+
+   Once the diver manager detects a bad database server, it returns an error
+   message and marks the connection with the time. From that point until the
+   RetryWait value expires, the driver manager returns a failure without trying
+   to reconnect to the database server.
+
+   For more information about how to use the ODBCSetTryWaitValue ODBC API, see
+   the following article in the Microsoft Knowledge Base:
+
+   Q168250 IIS Performance Degrades with a Bad Connection
+
+REFERENCES
+==========
+
+For more information about connection pooling and session pooling, see the
+following Microsoft Web site:
+
+   http://msdn.microsoft.com/library/techart/pooling2.htm#pooling2_topic2
+
+Additional query words: FAQ FAQs
+
+======================================================================
+Keywords          : kbusage kbDatabase kbODBC kbOLEDB kbVBp kbGrpDSVCDB kbGrpDSMDAC kbDSupport kbMDAC250 kbMDAC260 kbmdac270 
+Technology        : kbAudDeveloper kbODBCSearch kbMDACSearch kbMDAC150 kbMDAC200 kbMDAC210 kbMDAC250 kbMDAC260 kbODBC300 kbMDAC270
+Version           : :1.5,2.0,2.1,2.5,2.6,2.7,3.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

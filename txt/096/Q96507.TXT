@@ -1,0 +1,51 @@
+DOCUMENT:Q96507  30-JUL-2001  [lanman]
+TITLE   :Installing OS/2 on a Compaq Prosignia
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+The new Compaq Prosignia line of computers uses a "Fast SCSI-II" interface for
+their drive systems. A special .BID file is needed to install OS/2 1.3.1 on
+these machines.
+
+If this file is not present during installation, the following error message is
+displayed:
+
+   Cannot locate fixed disk drive
+
+MORE INFORMATION
+================
+
+Compaq supplies the proper .BID file (CPQC710.BID) on the Software Support Disk
+#1 (1.01 or later) supplied with their machines. CPQC710.BID can also be
+retrieved from CompuServe in the Compaq forum or from Compaq's BBS
+(713-378-1418: 9600,n,8,1). Once the correct .BID has been retrieved, make a
+copy of your Install A disk, delete all the *.BID files from the copy, copy the
+CPQC710.BID file to the disk as BOOTBID.BID, and the use the disk to install
+OS/2 onto the Prosignia.
+
+Additional query words: 2.10
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

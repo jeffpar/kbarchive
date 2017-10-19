@@ -1,0 +1,128 @@
+DOCUMENT:Q169968  14-NOV-2000  [word97]
+TITLE   :WD97: How to Copy Custom Label Information to Another Computer
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, you should first make a backup copy of the
+registry files (System.dat and User.dat). Both are hidden files in the
+Windows folder.
+
+SUMMARY
+=======
+
+Microsoft Word 97 does not have a built-in method of copying a custom label
+definition from one computer to another, but this may be accomplished by copying
+the registry key for the definition to another computer.
+
+MORE INFORMATION
+================
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall Windows 95. Microsoft cannot guarantee that problems
+resulting from the incorrect use of Registry Editor can be solved. Use Registry
+Editor at your own risk.
+
+For information about how to edit the registry, view the Changing Keys And Values
+online Help topic in Registry Editor (Regedit.exe). Note that you should make a
+backup copy of the registry files (System.dat and User.dat) before you edit the
+registry.
+
+To share your custom label settings, follow these steps.
+
+Export Your Custom Label Settings
+---------------------------------
+
+This procedure exports a registry setting so that you can add it to the registry
+of another computer.
+
+1. Click the Start button, and then click Run.
+
+2. In the Open box, type "regedit" (without the quotation marks) and then click
+   OK to start the Windows registry editor.
+
+3. Browse to the following registry setting:
+
+     HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Custom Labels
+
+4. In the window on the left, click to select the Custom Labels key.
+
+5. On the Registry menu, click Export Registry File.
+
+6. In the Export Registry File dialog box, enter the file name and location in
+   which to save the registry key and click Save.
+
+   NOTE: The registry key is saved in a *.reg file with the name and location you
+   specified.
+
+7. Copy the registry file you created in step 6 to a floppy disk or to a network
+   location.
+
+Import Your Custom Label Settings to Another Computer
+-----------------------------------------------------
+
+This procedure imports the registry key you exported earlier into the registry of
+a different computer.
+
+On the computer to which you want to import the custom label settings, use
+Windows Explorer to locate the *.reg file you created in step 6 earlier, and
+then double-click the *.reg file. The following message is displayed:
+
+   Information in <path\filename.reg> has been successfully entered into
+   the registry.
+
+The custom label settings are now stored in the registry of the other computer,
+making the custom label settings available in Microsoft Word.
+
+REFERENCES
+==========
+
+For additional information about creating custom labels, please see the
+following articles in the Microsoft Knowledge Base:
+
+   Q142965 WD: How to Create and Save Custom Labels in Word
+
+   Q141992 How to Create Mailing Labels Using the Mail Merge Feature
+
+For more information about creating custom labels, click the Office Assistant,
+type "creating custom labels" (without the quotation marks), click Search, and
+then click to view the "Change the size of a mailing label" topic.
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If Word Help is not installed on your computer, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q120802 Office: How to Add/Remove a Single Office Program or Component
+
+Additional query words: 8.0
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

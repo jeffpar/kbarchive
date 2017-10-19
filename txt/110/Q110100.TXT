@@ -1,0 +1,56 @@
+DOCUMENT:Q110100  08-NOV-1999  [pcmail]
+TITLE   :PC Gen: PODIAG.EXE NETPO.GLB Error 117
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Post Office Diagnostics Utility, version 3.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Mail Postoffice Diagnostics Utility (PODIAG.EXE) displays the
+following error message when it detects that the delete chain pointer in the
+NETPO.GLB file is corrupted:
+
+   Error 117 Detected an incorrect value in file
+   (NETPO.GLB). The value will be reset to its
+   default. Do you want it corrected?
+
+The delete chain will then be reset to zero, resolving a problem that is most
+often apparent when you try to add external addresses to a Personal Address
+List. The error message that is displayed in the MS-DOS client is:
+
+   Notice 53
+   Error creating user address
+   in Personal Address List.
+   Press Enter to continue
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbMailSearch kbMailPODiagnostic320
+Version           : :3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

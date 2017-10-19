@@ -1,0 +1,69 @@
+DOCUMENT:Q100776  28-JUL-2001  [visualc]
+TITLE   :PRB: Using Windows NT PDK Header Files in Visual C++
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:1.0,2.0,4.0,5.0
+OPER/SYS:
+KEYWORDS:kbGenInfo kbVC kbVC100 kbVC200 kbVC400 kbVC500 kbDSupport kbArtTypeINF
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, versions 1.0, 2.0, 4.0 
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An attempt to use the header files provided with the Microsoft Windows NT
+Pre-Release Development Kit (PDK) in Visual C++, 32-bit Edition, can cause
+problems ranging from incorrect results to General Protection Faults(GPF).
+
+CAUSE
+=====
+
+Several data structures changed between the Windows NT Pre-Release and the code
+that Visual C++, 32-bit Edition supports. Most of the changes converted data
+from type short to type int or from type unsigned short to type unsigned int.
+Code developed with the PDK header files passes incorrectly sized items to the
+functions in the C run-time library.
+
+RESOLUTION
+==========
+
+Verify that the version of the header files used to build your application match
+the version of the library.
+
+MORE INFORMATION
+================
+
+To determine which directories are in the compiler search path for files and
+libraries, type "SET" (without quotation marks) at the Windows NT system prompt
+or choose the System icon in Control Panel.
+
+Additional query words: 1.00 2.00 gpfault 4.00
+
+======================================================================
+Keywords          : kbGenInfo kbVC kbVC100 kbVC200 kbVC400 kbVC500 kbDSupport kbArtTypeINF 
+Technology        : kbVCsearch kbVC400 kbAudDeveloper kbvc100 kbVC500 kbVC200 kbVC32bitSearch kbVC500Search
+Version           : winnt:1.0,2.0,4.0,5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

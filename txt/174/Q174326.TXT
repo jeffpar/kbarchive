@@ -1,0 +1,73 @@
+DOCUMENT:Q174326  14-NOV-2000  [word97]
+TITLE   :WD97: Error Expanding Subdocuments If Network Connection Lost
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kberrmsg kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you lose your network connection, Microsoft Word 97 cannot find or expand any
+subdocuments until you restart the Expand Subdocuments command (by clicking the
+Expand Subdocuments button on the Master Document toolbar). If a master document
+and its subdocuments are located on a network drive and you lose your network
+connection, when you reestablish the connection, Word displays the following
+message for each subdocument to be expanded:
+
+   The subdocument \\<path name>\<file name> is missing. Do you want
+   to expand the master document without this document?
+
+If you click No, the Expand Subdocuments command stops running. If you click Yes,
+Word attempts to expand the next collapsed subdocument, and displays the same
+error message again.
+
+WORKAROUND
+==========
+
+To prevent this error message after losing your network connection, end the
+Expand Subdocuments command to prevent expanding the remaining collapsed
+subdocuments. To do this, click No in the error message described earlier.
+
+NOTE: The Expand Subdocuments command will also end after the last collapsed
+subdocument in the master document receives the error.
+
+After ending the Expand Subdocuments command, you must reestablish your network
+connection before restarting the Expand Subdocuments command. The remaining
+collapsed subdocuments should now expand correctly.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+
+Additional query words: 8.0 8.00
+
+======================================================================
+Keywords          : kberrmsg kbnetwork 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

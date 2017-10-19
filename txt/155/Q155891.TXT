@@ -1,0 +1,58 @@
+DOCUMENT:Q155891  09-AUG-1999  [foxpro]
+TITLE   :INFO: VFP 5.0 Compatible with Oracle's SQL*Net and ODBC Drivers
+PRODUCT :Microsoft FoxPro
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbinterop kbAutomation kbvfp500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The client/server features of Visual FoxPro 5.0 are compatible with any version
+of Oracle's SQL*Net and any Oracle ODBC driver, although some functionality may
+be limited by the capabilities of the driver.
+
+MORE INFORMATION
+================
+
+Visual FoxPro 5.0 was tested with SQL*Net version 1.0 on Windows NT using the
+Visigenics Oracle ODBC driver that ships with Visual FoxPro. The Visigenics
+Oracle ODBC driver works on Windows NT only.
+
+SQL*Net is Oracle's network communication software. The client/server features of
+Visual FoxPro (including the Upsizing Wizard) work with any version of Oracle
+SQL*Net.
+
+Refer to Oracle's documentation for instruction on installing SQL*Net. To verify
+that SQL*Net has installed correctly and is working from the client, use an
+Oracle client tool, such as SQL*DBA, to connect to the Oracle server.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbAutomation kbvfp500 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

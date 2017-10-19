@@ -1,0 +1,85 @@
+DOCUMENT:Q168957  07-MAY-2001  [visualc]
+TITLE   :FIX: C1001, file 'msc1.cpp', line 1188, Caused by Name Hiding
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbcode kbtool kbCompiler kbCPPonly kbLangCPP kbVC kbVC500bug kbVS97sp3fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Name hiding caused by similar-named variables and user-defined types in the same
+scope may cause the compiler to generate the following error:
+
+   C1001: INTERNAL COMPILER ERROR
+   (compiler file 'msc1.cpp', line 1188)
+
+RESOLUTION
+==========
+
+Use the elaborated type specifier to name the user-defined type. For example,
+use "class a::b" instead of "b" to identify the class b nested in class a.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Studio 97 Service
+Pack 3.
+
+For more information, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+MORE INFORMATION
+================
+
+The sample below demonstrates the problem and the workaround.
+
+SAMPLE
+------
+
+      /*
+      Compile Options: None
+      */ 
+      struct a
+      {
+         struct b;
+         int b;
+         a::b* x; //C1001 here
+         //Workaround: Comment the line above
+         //Uncomment the line below
+         //struct a::b* x;
+      };
+
+======================================================================
+Keywords          : kbcode kbtool kbCompiler kbCPPonly kbLangCPP kbVC kbVC500bug kbVS97sp3fix 
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

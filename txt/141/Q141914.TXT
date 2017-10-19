@@ -1,0 +1,96 @@
+DOCUMENT:Q141914  08-FEB-2000  [foxpro]
+TITLE   :PRB: Record Number is Not Refreshed in Status Bar
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Changes to the current record number are not reflected in the status bar while
+using the outline control.
+
+WORKAROUND
+==========
+
+Click outside the outline control to refresh the status bar.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new form, and drop an OLE Container Control onto it. Select Insert
+   Control for the OLE Container, and select Outline Control for the Control
+   Type.
+
+2. Add Vfp\Samples\Data\Employee.dbf to the Data Environment, and set the Order
+   property of the Employee cursor to L_NAME.
+
+3. Place the following code in the form's Init event:
+
+      SELECT Employee
+      GO TOP
+      FOR lnI=1 to RECCOUNT()
+        THISFORM.OLECONTROL1.ADDITEM(last_name,lnI)
+        THISFORM.OLECONTROL1.INDENT(lnI)=1
+        SKIP
+      ENDFOR
+      THISFORM.REFRESH
+
+4. Inside the Outline Control's DBLCLICK event, type the following:
+
+       =SEEK(THISFORM.OLECONTROL1.LIST(THISFORM.OLECONTROL1.LISTINDEX))
+
+5. Open the Debug Window and type the following on the left side:
+
+      RECNO()
+
+6. In the Command window, type:
+
+      SET STATUS BAR ON
+
+7. Run the form.
+
+8. Double-click any item in the outline control. The Debug Window correctly
+   displays the current record number. The Status Bar isn't updated with the
+   current record number. For the status bar to be updated, place the focus
+   outside the outline control.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

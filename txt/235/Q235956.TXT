@@ -1,0 +1,66 @@
+DOCUMENT:Q235956  07-MAY-2001  [visualc]
+TITLE   :DOC: /OPT:NOWIN98 Linker Option Missing in Linker Reference
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:6.0
+OPER/SYS:
+KEYWORDS:kbdocfix kbLinker kbVC kbVC600 kbDSupport kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Visual C++ 6.0 introduces two new linker optimization options --
+/OPT:WIN98, which is set by default, and /OPT:NOWIN98. The default sets the file
+alignment at 4K instead of the previous 512 bytes. This results in a larger
+module size, but one which loads faster on Windows 98 with reduced file
+swapping. A release build of an AppWizard-generated MDI application is
+approximately 14K larger than when the /OPT:NOWIN98 option is used, and a
+ReleaseMinSize build of a standard ATL DLL with no objects added is
+approximately 17K larger.
+
+MORE INFORMATION
+================
+
+The default WIN98 optimization for file alignment places the base of sections in
+the portable executable image on Windows 98's page boundary, resulting in
+decreased load times and reduced need for file swapping. The percentage increase
+in module size is less for larger applications, and the benefits normally
+justify the increase in size. However, if module size is a critical factor,
+/OPT:NOWIN98 can be used to revert to the original 512-byte alignment.
+
+NOTE: The /ALIGN:512 option also has this effect, but will produce linker warning
+4108, as this option is normally reserved for drivers.
+
+The Visual C++ ReadMe file (READMEVC.htm) has further information on these linker
+options.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdocfix kbLinker kbVC kbVC600 kbDSupport kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : winnt:6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

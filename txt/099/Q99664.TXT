@@ -1,0 +1,69 @@
+DOCUMENT:Q99664  08-NOV-2001  [pcmail]
+TITLE   :PC Forms: Err Msg: MAPI Failure
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Electronic Forms Designer, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you read a message from a shared folder that was created using a Microsoft
+Electronic Forms Designer form, you may receive the following error message:
+
+   MAPI Failure
+
+CAUSE
+=====
+
+This error can occur when you use version 3.0b of Microsoft Mail for Windows
+with the E-Form Cache turned on. This is a known problem with custom message
+types and shared folders in the Windows client.
+
+RESOLUTION
+==========
+
+Upgrade to version 3.2 of Microsoft Mail for Windows.
+
+To read the message with version 3.0b of the Windows client, you can turn off the
+E-Form Cache by modifying the [E-Form Cache] section of the MSMAIL.INI file, as
+follows:
+
+   [E-Form Cache]
+   Maximum=0
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem with version 3.0b of Microsoft Mail
+for Windows. This problem was corrected in version 3.2.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbEForms
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

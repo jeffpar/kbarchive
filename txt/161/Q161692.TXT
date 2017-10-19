@@ -1,0 +1,87 @@
+DOCUMENT:Q161692  14-NOV-2000  [word97]
+TITLE   :WD97: Problems With Float Over Text Objects
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbgraphic kbole kbualink97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you try to break, display, or edit a linked object, you receive one or more
+of the following symptoms:
+
+ - ALT+F9 or SHIFT+F9 does not display the link field code.
+
+ - CTRL+SHIFT+F9 does not break the link of the selected linked object.
+
+ - The Links command is not available (dimmed) on the Edit menu.
+
+CAUSE
+=====
+
+The object was inserted with the Float Over Text property. It is not an inline
+object.
+
+WORKAROUND
+==========
+
+To work around this problem, convert the Float Over Text object to an inline
+object using the following steps:
+
+1. With the right mouse button, click the object.
+
+2. Click Format Picture.
+
+3. Click the Position tab.
+
+4. Click to clear the Float Over Text check box, and then click OK.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+
+MORE INFORMATION
+================
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q157465 Word 97: Can't See Field Codes for Some Objects
+
+   Q155802 Word Doesn't Find "Float Over Text" Objects
+
+Additional query words: 8.0 word8 word97
+
+======================================================================
+Keywords          : kbgraphic kbole kbualink97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

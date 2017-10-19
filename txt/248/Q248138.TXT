@@ -1,0 +1,64 @@
+DOCUMENT:Q248138  05-MAR-2000  [exchange]
+TITLE   :XADM: Applying Exchange 5.5 SP to a Clustered Exchange Server
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article outlines the procedure to successfully install an Exchange Server
+version 5.5 service pack on a computer running clustering services.
+
+MORE INFORMATION
+================
+
+To install an Exchange Server version 5.5 service pack on a computer running
+clustering services:
+
+1. Install the service pack on the primary (active) node by using the Update.exe
+   program from the Exchange Server 5.5 service pack CD-ROM.
+
+   IMPORTANT: Do not failover (move) the Exchange Server group to the secondary
+   node.
+
+2. Install the service pack on the secondary node by using the Update.exe
+   program from the Exchange Server 5.5 service pack CD-ROM.
+
+NOTE: If you update an earlier version of Exchange Server on clustered computers,
+the installation program stops the Exchange Server services. When the update
+installation is finished, the installation program restarts the services. This
+causes an interruption for users, because they cannot connect to the server
+during this time.
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

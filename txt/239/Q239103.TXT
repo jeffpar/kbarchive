@@ -1,0 +1,95 @@
+DOCUMENT:Q239103  11-JAN-2001  [vbwin]
+TITLE   :PRB: Synonyms of DBLinked Tables Do Not Show in Data View Window
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbDatabase kbDataview kbOracle kbVBp600 kbGrpDSVBDB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Oracle synonyms used to connect to DBLinked tables do not show up in the Data
+View window of Visual Basic version 6.0.
+
+RESOLUTION
+==========
+
+Use a View of the DBLinked table instead of a Synonym or use Visual C++'s
+Database Project.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create the following table on one Oracle Server (OracleServer1).
+
+   CREATE TABLE mytable (fld1 number(3,0) PRIMARY KEY, fld2 varchar2(20))
+   INSERT INTO mytable values (100, 'test')
+   INSERT INTO mytable values (200, 'test')
+
+2. Use the following code to create a Data Linked Table and a Synonym to the
+   linked table on another Oracle Server.
+
+   CREATE DATABASE LINK mylink CONNECT TO demo IDENTIFIED BY demo USING 'OracleServer1';
+   CREATE SYNONYM mysynonym FOR mytable@mylink;
+
+   NOTE: "demo" is a global Oracle user name and password.
+
+3. Start Visual Basic 6.0 and open the Data View window.
+
+4. Make the appropriate connections within the Data View Window to the Oracle
+   Server containing the Synonym.
+
+5. Go to the Synonyms folder in the Data View Window and note that the Synonym
+   does not show up.
+
+REFERENCES
+==========
+
+Oracle Online Help
+
+(c) Microsoft Corporation 1999, All Rights Reserved.
+Contributions by Matthew Hofacker, Microsoft Corporation
+
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbDataview kbOracle kbVBp600 kbGrpDSVBDB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,76 @@
+DOCUMENT:Q104982  08-DEC-1999  [homemm]
+TITLE   :Cinemania: GP Fault When Playing Video on Orchid Fahrenheit
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Cinemania for Windows 1994 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you play AVI video or animation clips on an Orchid Fahrenheit 1280 (S3) video
+card in Cinemania, you may receive one of the following error messages:
+
+   MMTASK caused a General Protection Fault in ICCVID.DRV at 0001:2392 (or
+   0002:29D7).
+
+   -or-
+
+   MMTASK caused a General Protection Fault in MCIAVI.DRV at 0001:4392.
+
+The error may not occur until you have played the video or animation clip a few
+times.
+
+RESOLUTION
+==========
+
+To play AVI video and animation clips with an Orchid Fahrenheit 1280 (S3) video
+card, install the Windows VGA driver (VGA.DRV).
+
+In Windows 95 you can use the VGA driver or the SVGA driver.
+
+For more information about how to perform this task in Windows, see your Windows
+printed documentation or online Help.
+
+MORE INFORMATION
+================
+
+For more information about Orchid cards and drivers, contact Orchid Technology
+at (510) 683-0323.
+
+AVI (Audio Visual Interleave) is the technology that allows animation and video
+clips to be played on a PC under Microsoft Windows.
+
+The third-party product discussed here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 1994 gpf gpfault action profile profiling gp fault Viewer 2.0 2.00 Video
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbCineManiaSearch kbCinemania1994
+Version           : :1994 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

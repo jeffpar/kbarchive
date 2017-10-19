@@ -1,0 +1,92 @@
+DOCUMENT:Q217168  07-MAY-2001  [visualc]
+TITLE   :FIX: Application Crashes When Run in Debugger
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:6.0
+OPER/SYS:
+KEYWORDS:kbservicepack kbVC600 kbVS600sp2 kbVS600SP1 kbVS600sp3fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+ - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An application runs as expected outside of the debugger but causes an
+application error like this when run in the debugger:
+
+   System Process - Application Error
+   The Application failed to initialize properly (0xc00000005)
+
+Another symptom appears if the reserve value specified for the HEAP linker option
+is smaller than the commit value: The reserve value is silently increased to the
+commit value.
+
+CAUSE
+=====
+
+The heap reserve size is smaller than the commit size. This means that
+applications that rely on these values (such as the debugger) are not able to
+load the binary image.
+
+RESOLUTION
+==========
+
+The heap reserve size should always be greater than or equal to the commit size.
+The linker provided in Service Pack 3 checks these values. If the reserve value
+is less than the commit value, the linker generates a fatal error. For example,
+linking with the option /HEAP:0x400,0x1000 causes this error:
+
+   LNK1229: Commit size greater than the reserve size in "/HEAP"
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3. For more information
+about Visual Studio service packs, please see the following articles in the
+Microsoft Knowledge Base:
+
+   Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+   Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+To view the reserve and commit values for an executable, use the dumpbin
+utility:
+
+   dumpbin /headers filename.exe
+
+Additional query words:
+
+======================================================================
+Keywords          : kbservicepack kbVC600 kbVS600sp2 kbVS600SP1 kbVS600sp3fix 
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : winnt:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

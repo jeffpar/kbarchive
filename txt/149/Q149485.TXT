@@ -1,0 +1,79 @@
+DOCUMENT:Q149485  02-NOV-2001  [vbwin]
+TITLE   :FIX: Scale Method Causes Error When Scale Is a Large Value
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Executing the Scale method of a PictureBox control using large numbers for the
+arguments results in an run-time error with the following message:
+
+   Run-time error "5". Invalid procedure call.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Basic 6.0.
+
+MORE INFORMATION
+================
+
+This following sample code represents the minimum conditions where this issue
+may occur. This issue can affect programs created in Visual Basic version 3.0
+that are ported to version 4.0
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start 16-bit or 32-bit Visual Basic 4.0, or if it is already running, click
+   New Project on the File menu.
+
+2. Add a PictureBox control and a Command button to the Form1 form.
+
+3. Copy the following code to the Code window of the Form1 form:
+
+         Option Explicit
+         Private Sub Command1_Click()
+            Picture1.Scale (14000005, 14000005)-(10000005, 10000005)
+         End Sub
+
+4. On the Run menu, click Start or press the F5 key to start the program. An
+   'Invalid Procedure Call' error occurs.
+
+Additional query words: kbVBp400bug kbVBp600fix kbVBp kbdsd kbDSupport kbControl
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB400Search kbVB400
+Version           : :4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

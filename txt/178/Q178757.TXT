@@ -1,0 +1,83 @@
+DOCUMENT:Q178757  22-MAR-1999  [exchange]
+TITLE   :XADM: Store Logs Error 1203 When You Delete a Mailbox
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you delete a mailbox that was created but never used, the Microsoft
+Exchange Server Information Store (IS) service logs the following error to the
+event log:
+
+   Event ID: 1203
+   Source:    ExchangeIS Private
+   Type: Error
+   Category: General
+
+   Failed to delete the mailbox of
+    /o=Microsoft/ou=DOMAIN/cn=Recipients/cn=MyMailBox  with    error
+    0x8004010f.
+
+NOTE: Error 0x8004010f is Mapi Error MAPI_E_NOT_FOUND
+
+CAUSE
+=====
+
+Because a user never logged on to the mailbox and never received mail, the
+database entries for the user were never created. When Exchange Server attempts
+to delete the mailbox, the system attempts to locate the database entries, but
+no records are found and the MAPI_E_NOT_FOUND error is reported. This error was
+not logged previously.
+
+WORKAROUND
+==========
+
+When the symptoms occur as described above, the error can safely be ignored.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.0.
+
+This problem has been corrected in the latest U.S. Service Pack for Microsoft
+Exchange Server version 5.0. For information on obtaining the Service Pack,
+query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : WinNT:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

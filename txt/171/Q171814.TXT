@@ -1,0 +1,106 @@
+DOCUMENT:Q171814  11-JAN-2001  [vbwin]
+TITLE   :FIX: System Menu Appears When MouseDown Event Invokes a Drag
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:5.0
+OPER/SYS:
+KEYWORDS:kbVBp500 kbVS97sp2fix kbGrpDSVB kbvbp500sp2fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the MouseDown event of a FileListBox control invokes a Drag method on a
+right click, the system menu for the Form appears.
+
+CAUSE
+=====
+
+This problem will only occur with certain combinations of the FileListBox's
+location and the display setting for the Font.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been fixed in Visual Studio 97 Service
+Pack 2.
+
+For more information on the Visual Studio 97 Service Pack 2, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q170365 INFO: Visual Studio 97 Service Packs - What, Where, and Why
+
+For a list of the Visual Basic 5.0 bugs that were fixed in the Visual Studio 97
+Service Pack 2, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q171554 INFO: Visual Basic 5.0 Fixes in Visual Studio 97 Service Pack 2
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. To set your font to "Large Fonts," right-click the desktop.
+
+2. Select "Properties."
+
+3. Click the "Settings" tab.
+
+4. In the "Font Size" combobox, select "Large Fonts."
+
+5. Click "OK." (This may require that you reboot your system.)
+
+6. Open a new "Standard EXE" project.
+
+7. Add a FileListBox control (File1) to Form1.
+
+8. Set the following properties for File1:
+
+      Property       Value
+      --------       -----
+      Left           2520
+      Top            1080
+
+9. Add the following code to the MouseDown event of File1:
+
+         If Button = 2 Then File1.Drag vbBeginDrag
+
+10. Press the F5 key to run the application.
+
+11. Right-click File1. Note that the system menu of Form1 appears.
+
+Additional query words: FileList ListBox
+
+======================================================================
+Keywords          : kbVBp500 kbVS97sp2fix kbGrpDSVB kbvbp500sp2fix 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500 kbVB500
+Version           : 5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

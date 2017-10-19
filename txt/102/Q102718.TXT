@@ -1,0 +1,57 @@
+DOCUMENT:Q102718  22-NOV-1999  [msdos]
+TITLE   :MS-DOS Err Msg: ERROR D601US - System Failed
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you you receive the following error message when booting your system with the
+MS-DOS 6 Setup Disk 1, it is likely that you are using the Data Expert original
+equipment manufacturer (OEM) version of MS-DOS 6:
+
+   ERROR: D601US
+   System failed
+
+MORE INFORMATION
+================
+
+As an OEM, Data Expert exercised its right to change the method in which the
+MS-DOS 6 operating system functions. Data Expert changed the boot functionality
+so that Data Expert MS-DOS looks specifically for the Data Expert computer BIOS
+signature. If its BIOS is not found, Data Expert MS-DOS refuses to boot.
+
+If you boot from Data Expert MS-DOS 6 Setup Disk 1 on a system that uses a Data
+Expert motherboard, you should not receive the error mentioned above.
+
+Additional query words: 6.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

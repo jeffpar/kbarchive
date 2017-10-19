@@ -1,0 +1,73 @@
+DOCUMENT:Q151828  19-MAY-2001  [automap]
+TITLE   :Automap Streets: Locator Box Missing from Overview Window
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdisplay kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Automap Streets for Windows, version 4.0 
+ - the operating system: Microsoft Windows 95 
+ - the operating system: Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The red locator box may be missing from the Overview window in Microsoft Automap
+Streets.
+
+CAUSE
+=====
+
+This behavior can occur if an STB PowerGraphics 64 display adapter is installed
+in the computer and is configured to use a High Color (16-bit) color palette.
+
+RESOLUTION
+==========
+
+To resolve this issue, change the color palette to 256 colors. To do so, follow
+these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click the Display.
+
+3. Click the Settings tab.
+
+4. In the Color Palette box, click 256 Colors.
+
+   NOTE: If you are using Windows 98, click 256 Colors in the Colors box.
+
+5. Click OK. If you are prompted to restart the computer, click Yes.
+
+The third-party product discussed here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: kbmm auto map automap auto-map mmtitles
+
+======================================================================
+Keywords          : kb3rdparty kbdisplay kbenv kbimu 
+Technology        : kbOSWin98 kbOSWin95 kbOSWinSearch kbHomeMMsearch kbAutomapSearch kbAutomapStreets400
+Version           : WINDOWS:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

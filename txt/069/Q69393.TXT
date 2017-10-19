@@ -1,0 +1,72 @@
+DOCUMENT:Q69393  10-DEC-1999  [win95x]
+TITLE   :Margins Omitted When Printing to HP with Adobe Cartridge
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+Printing a text file from File Manager to a Hewlett-Packard (HP) LaserJet Series
+printer with an Adobe PostScript Cartridge installed produces a document with
+the left margin set to zero. This truncates text on the left margin by 3/8 of an
+inch.
+
+WORKAROUND
+==========
+
+Print the file from Notepad.
+
+STATUS
+======
+
+This is a known problem with the Adobe PostScript Cartridge; Adobe is
+researching this problem.
+
+MORE INFORMATION
+================
+
+For more information, contact Adobe.
+
+To obtain the phone numbers for Adobe, query in the Microsoft Knowledge Base for
+the following words:
+
+   "Adobe" (without the quotation marks) and "phonebook" (without the quotation
+   marks) and "pss" (without the quotation marks)
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+
+Additional query words: 3.00 win30 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,180 @@
+DOCUMENT:Q312512  06-AUG-2002  [sms]
+TITLE   :SMS: Network Discovery Cannot Connect Anonymously to Client
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbtool kbui kbsms200 kbsms200bug kbsms120 kbsms120bug
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After a Systems Management Server (SMS) 2.0 client is discovered with Network
+Discovery and installed by using a Microsoft Windows NT Remote Client
+installation, any later discovery by using Network Discovery creates the
+following error in the Netdisc.log on the site server:
+
+   ADM: NtBrowser: Failed to create an anonymous connection to device
+   <sms-client> , error <0x4c3>.
+
+RESOLUTION
+==========
+
+A supported fix is now available from Microsoft, but it is only intended to
+correct the problem that is described in this article. Only apply it to systems
+that are experiencing this specific problem. This fix may receive additional
+testing. Therefore, if you are not severely affected by this problem, Microsoft
+recommends that you wait for the next Systems Management Server service pack
+that contains this fix.
+
+To resolve this problem immediately, contact Microsoft Product Support Services
+to obtain the fix. For a complete list of Microsoft Product Support Services
+phone numbers and information about support costs, visit the following Microsoft
+Web site:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS
+
+NOTE: In special cases, charges that are ordinarily incurred for support calls
+may be canceled if a Microsoft Support Professional determines that a specific
+update will resolve your problem. The usual support costs will apply to
+additional support questions and issues that do not qualify for the specific
+update in question.
+
+The English post-SP3 version of this fix should have the following file
+attributes or later:
+
+   Date         Time   Version        Size     File name     Platform
+   ------------------------------------------------------------------
+   01-Mar-2001  22:50  2.0.1493.3222  202,512  Ad_adm.dll    Alpha
+   01-Mar-2001  22:50  2.0.1493.3222  125,712  Ad_cntrl.dll  Alpha
+   01-Mar-2001  22:50  2.0.1493.3222  125,200  Ad_sim.dll    Alpha
+   01-Mar-2001  22:50  2.0.1493.3222  346,384  Ad_utils.dll  Alpha
+   01-Mar-2001  22:50  2.0.1493.3222   77,584  Netdisc.dll   Alpha
+
+   01-Mar-2001  22:50  2.0.1493.3222  120,160  Ad_adm.dll    Intel
+   01-Mar-2001  22:50  2.0.1493.3222   69,440  Ad_cntrl.dll  Intel
+   01-Mar-2001  22:50  2.0.1493.3222   76,128  Ad_sim.dll    Intel
+   01-Mar-2001  22:50  2.0.1493.3222  205,776  Ad_utils.dll  Intel
+   01-Mar-2001  22:50  2.0.1493.3222   48,112  Netdisc.dll   Intel
+
+NOTE: Because of file dependencies, the most recent hotfix or feature that
+contains these files may also contain additional files.
+
+
+
+WORKAROUND
+==========
+
+To work around this problem, stop, and then restart the SMS_Executive service on
+the site server.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article. This problem was first corrected in
+the Systems Management Server 2.0 Service Pack 4 Hotfix Rollup Package (HRP).
+
+For additional information about the SMS 2.0 SP4 HRP, click the article number
+below to view the article in the Microsoft Knowledge Base:
+
+   Q323206 SMS: List of Bugs Fixed in the Systems Management Server 2.0 SP4 HRP
+
+MORE INFORMATION
+================
+
+SMS now uses the existing connection if the anonymous connection does not work,
+which is typically either the SMS Service Account or the SMS Client Remote
+Installation account. The connection is made during a remote client
+installation.
+
+Also, if anonymous connections are turned off on the target computer, SMS uses
+the SMS service account to connect during Network Discovery. For additional
+information about a related topic, click the article number below to view the
+article in the Microsoft Knowledge Base:
+
+   Q311257 SMS: Resources Are Not Discovered if Anonymous Connections Are Turned
+   Off
+
+Hotfix Installation Instructions
+--------------------------------
+
+Apply the fix in this article to all sites in the SMS hierarchy. After the fix is
+installed, update the collections that are affected by the problem at the site
+where it was created. To install the fix, use one of the following methods.
+
+How to Use the Hotfix Installer:
+
+NOTE: You can use this method only on Intel-based computers.
+
+1. Copy the hotfix folder structure to a share on your network. Note that
+   Q312512.exe is a Microsoft SMS Installer file that updates specific files on
+   your site server.
+
+2. Log on to the site server by using an account with administrative rights.
+
+3. On the site server, quit the SMS Administrator console.
+
+4. Run the Q312512.exe tool, and then follow the directions in the wizard. You
+   can run the file in Quiet mode by using the /s switch.
+
+How to Manually Install the Hotfix:
+
+1. On the site server, quit the SMS Administrator console.
+
+2. Stop the SMS Site Component Manager, SMS Executive, and SMS SQL Monitor
+   services on the site server.
+
+3. Replace the Ad_adm.dll file in the
+   <Sms_root_folder>\Bin\<Platform> folder with the version of the
+   file that is included with the hotfix.
+
+4. Replace the Ad_cntrl.dll file in the
+   <Sms_root_folder>\Bin\<Platform> folder with the version of the
+   file that is included with the hotfix.
+
+5. Replace the Ad_sim.dll file in the
+   <Sms_root_folder>\Bin\<Platform> folder with the version of the
+   file that is included with the hotfix.
+
+6. Replace the Ad_utils.dll file in the
+   <Sms_root_folder>\Bin\<Platform> folder with the version of the
+   file that is included with the hotfix.
+
+7. Replace the Netdisc.dll file in the
+   <Sms_root_folder>\Bin\<Platform> folder with the version of the
+   file that is included with the hotfix.
+
+8. Restart the SMS Site Component Manager, SMS Executive, Windows Management,
+   and SMS SQL Monitor services.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbenv kberrmsg kbtool kbui kbsms200 kbsms200bug kbsms120 kbsms120bug 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

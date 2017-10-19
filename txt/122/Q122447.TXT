@@ -1,0 +1,71 @@
+DOCUMENT:Q122447  08-AUG-2001  [winnt]
+TITLE   :Token Ring Network Startup Disk, Error 53: Network not found
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.50
+
+WINDOWS
+
+kbnetwork kbenv
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+To make a Token Ring Network Installation Startup Disk using NWLink IPX
+Compatible Protocol with the Network Client Administrator utility, the
+frame type has to be manually changed in the PROTOCOL.INI (or NET.CFG) file
+because the network startup disk uses Ethernet 802.2 as the default frame
+type. In a Token Ring environment, this may cause an error when you try to
+use the NET USE or NET VIEW commands:
+
+   Error 53: Network not found
+
+Following are the required Token Ring frame type syntaxes for workstations
+that need PROTOCOL.INI modifications:
+
+Network Client version 3.0 for MS-DOS and Windows:
+
+   FRAME=TOKENRING
+
+Windows for Workgroups 3.11:
+
+    FRAME=TOKEN-RING
+
+NetWare (modify NET.CFG):
+
+   FRAME=TOKEN-RING and TOKEN-RING_SNAP
+
+Other frame types include the following:
+
+   ETHERNET_802.2  (Default)
+   ETHERNET_802.3
+   ETHERNET_II
+   ETHERNET_SNAP
+
+Additional query words: wfw wfwg prodnt 3.11 wfwg
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

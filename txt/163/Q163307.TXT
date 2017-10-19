@@ -1,0 +1,104 @@
+DOCUMENT:Q163307  19-DEC-1999  [exchange]
+TITLE   :XCON: How to Identify Most MTA Queues by Object Id
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Exchange Message Transfer Agent (MTA) logs information related to
+its various queues by object ids, beginning with 01 and followed by 6 more
+hexidecimal digits.
+
+To identify the queue that an object id corresponds to, you can check a recent
+Mtacheck.log for secured queues (queues written to disk).
+
+For queues that are created in computer memory (unsecured) each time the MTA is
+started a careful inspection of detailed logs can often be used to identify the
+queue's name and purpose.
+
+MORE INFORMATION
+================
+
+Knowing the purpose and name of a queue associated with one or more errors may
+help narrow the problem during troubleshooting.
+
+The following procedure may help if you get an error on one or more objects where
+the error refers to a queue that doesn't show up when you check the latest
+Mtacheck.log or you get several errors each on a different message object but
+always on the same queue object.
+
+Often a description of the queue or its purpose can be determined with the
+following procedure.
+
+Preliminary Requirement:
+
+The Application log must still contain the MTA startup sequence with logging for
+Field Engineering at Maximum or higher. If the log does not contain the
+information, you will need to verify the logging level and restart the MTA.
+
+Methodology:
+
+1. Note the full object id for the queue, for example: 01000034.
+
+2. Highlight the oldest event in the application log.
+
+3. Perform a Find from the View menu with the following criteria:
+
+       Event ID: 2164
+       Description: 01000034   (use whatever the id you noted in step 1)
+       Search Direction: Up
+
+4. Look for the first 285 Field Engineering event written after the 2164 you
+   found above.
+
+   Be careful of the sequence. Often, several 2164's and 285's are written back
+   to back. For each pair, the 2164 is written first and then the 285.
+
+5. Look in the Description of the 285 event for the queue's name and purpose.
+
+   In some cases it may appear that 3 queues are created for the same purpose. If
+   you look closely you will see that there are different queues to the same
+   location for priority 0, 1, and 2 messages.
+
+   For example:
+
+    A priority 1 held-for-delivery/transfer queue for
+    /O=MICROSOFT/OU=BOND007/CN=CONFIGURATION/CN=SERVERS/CN=DRNO/ 
+    CN=MICROSOFT PRIVATE MDB was created and given the 52 identifier.
+    [MTA MAIN BASE 1 213] (8)
+
+   While 285 events are the most common, they are not always present. If you
+   don't find a 285, look for any 3535 or 3536 events in place of the 285s.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

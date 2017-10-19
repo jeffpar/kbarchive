@@ -1,0 +1,65 @@
+DOCUMENT:Q170277  27-JUN-1999  [exchange]
+TITLE   :XCLN: Setup Repeatedly Prompts for the Same Diskette
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Macintosh client, version 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+After creating a floppy disk Setup from the Microsoft Exchange Macintosh client
+5.0 CD and starting Setup from the newly created installation disk 1, the Setup
+program may prompt for installation disk 3 or 4. After inserting the requested
+disk, Setup will again prompt for the same disk. The only option available is to
+cancel Setup.
+
+WORKAROUND
+==========
+
+From the Macintosh client, run Setup for the Exchange Client from the Macintosh
+Exchange client 5.0 CD.
+
+-or-
+
+From the Macintosh client, copy the Setup files to a MacFile volume on a Windows
+NT Server and run Setup over the network.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Macintosh
+client, version 5.0.
+
+Additional query words: Disk System Apple XCLNMac
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbExchangeClientSearch kbExchange500Mac
+Version           : WINDOWS:5.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

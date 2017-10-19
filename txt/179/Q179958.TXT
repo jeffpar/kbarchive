@@ -1,0 +1,86 @@
+DOCUMENT:Q179958  05-APR-2000  [sna]
+TITLE   :When to Use "Already Verified Authentication"
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft COM Transaction Integrator for CICS and IMS, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Already Verified Authentication option is specified on the Security tab of
+the COM Transaction Integrator (COMTI) Remote Environment (RE) Properties dialog
+box.
+
+Under certain circumstances when you select that option, only a user ID is sent
+to the mainframe; no password is sent. The mainframe determines that this user
+ID has already been authenticated and does not require a password. This is
+possible when COMTI uses Microsoft Transaction Server (MTS) package credentials
+or Windows NT user credentials for authentication.
+
+However, if the COMTI security override is being used instead, the transport
+always insists on having both the user ID and the password. Both are sent to the
+host. If the Already Verified Authentication indicator is set on the RE, it is
+ignored in this case.
+
+MORE INFORMATION
+================
+
+Rationale for Using "Already Verified Authentication"
+-----------------------------------------------------
+
+When using integrated host security with MTS package credentials or Windows NT
+user credentials, mainframe credentials cannot be ascertained by COMTI or the
+client application.
+
+COMTI and SNA Server act as a trusted entity, verifying the user's identity
+first. Therefore, there is no need to send a password to the mainframe, which
+would waste more cycles to check it on the mainframe side.
+
+Rationale for Ignoring "Already Verified Authentication" When Using COMTI
+
+Security Override
+-----------------
+
+In this case, COMTI has direct access to the mainframe credentials. If COMTI
+would send only the user ID, an application could easily guess at one or another
+user ID, because user IDs are similar in most installations. Without having to
+know a password, the application could do things on the mainframe using the
+pilfered user ID.
+
+Identify security (ATTACHSEC=IDENTIFY in the CICS Connection definition) implies
+that the local logical unit (LU) on the computer has already verified the
+identity of the user, so the host can trust you. However, in the case of the
+application override, that is not true; COMTI is unable to determine who the
+user is.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbCOMTISearch kbCOMTI100
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,57 @@
+DOCUMENT:Q131741  17-DEC-2000  [win95x]
+TITLE   :Interrupted Disk Defragmenter Causes Lost Clusters
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If your computer loses power, is shut down, or is reset while you are running
+the Windows 95 Disk Defragmenter tool, lost clusters may be left on the hard
+disk.
+
+CAUSE
+=====
+
+During defragmentation, Disk Defragmenter duplicates files and moves them to
+unused clusters on the hard disk before writing the files to contiguous
+clusters. If Disk Defragmenter is interrupted, space designated to receive files
+during the move process remains improperly allocated and unusable.
+
+Note that this problem is limited to lost clusters and does not result in data
+loss.
+
+RESOLUTION
+==========
+
+Use the Windows 95 ScanDisk tool (or another disk repair program that is
+compatible with Windows 95) to repair the hard disk.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,90 @@
+DOCUMENT:Q152187  07-SEP-2001  [win95x]
+TITLE   :Add Printer Wizard Does Not Run
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kbprint kbtool win95 kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you double-click the Add Printer icon in the Printers folder, nothing may
+happen.
+
+CAUSE
+=====
+
+This behavior can occur if either or both of the following files are missing or
+damaged:
+
+ - Msprint.dll
+
+ - Msprint2.dll
+
+RESOLUTION
+==========
+
+If these files exist on the hard disk, rename them. Then, extract new copies of
+these files from your original Windows 95 disks or CD-ROM to the Windows\System
+folder. The Msprint.dll file and the Msprint2.dll file are located in the
+Precopy1.cab cabinet file.
+
+For additional information about using the Extract tool, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q129605 How to Extract Original Compressed Windows Files
+
+MORE INFORMATION
+================
+
+This behavior can also occur if the Windows\Inf folder is missing or damaged. To
+resolve this issue, extract all the .inf files from the Precopy2.cab file to the
+Windows\Inf folder. For information about using the Extract tool, see the
+following article in the Microsoft Knowledge Base:
+
+   Q129605 How to Extract Original Compressed Windows Files
+
+Other files that are accessed when you activate the Add Printer Wizard include:
+
+ - Setupx.dll
+
+ - Setup4.dll
+
+ - Mmci.dll
+
+ - Iosclass.dll
+
+ - Rundll32.exe
+
+ - Sysclass.dll
+
+
+Additional query words: hangs
+
+======================================================================
+Keywords          : kbprint kbtool win95 kbPrinting 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

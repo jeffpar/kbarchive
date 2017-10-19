@@ -1,0 +1,83 @@
+DOCUMENT:Q123728  04-MAY-2001  [masm]
+TITLE   :FIX: EXTERNDEF on PROC Labels Does Not Make Them Public
+PRODUCT :Microsoft Macro Assembler
+PROD/VER::6.0,6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 6.0, 6.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using MASM version 5.1 compatibility mode, adding an EXTERNDEF to a PROC
+label does not make it public.
+
+RESOLUTION
+==========
+
+Add PUBLIC to the procedures that need to be made public.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in MASM version 6.11.
+
+MORE INFORMATION
+================
+
+The following sample code can be used to demonstrate the problem. The result is
+"error L2029: 'PROCA' unresolved external."
+
+Sample Code
+-----------
+
+   ; TEST1.ASM
+
+      externdef proca:near
+      _text segment word public 'CODE'
+      call proca
+      _text ends
+      end
+
+-----------
+
+   ; TEST2.ASM
+
+      externdef proca:near
+      _text segment word public 'CODE'
+      proca proc near
+      ret
+      proca endp
+      _text ends
+      end
+
+Additional query words: 6.10 6.00 buglist6.00 buglist6.10 fixlist6.11
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM600 kbMASM610
+Version           : :6.0,6.1
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

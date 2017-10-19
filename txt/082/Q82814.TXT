@@ -1,0 +1,70 @@
+DOCUMENT:Q82814  24-SEP-1999  [win95x]
+TITLE   :Re-Registering .REG Files
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+3.10 3.11
+
+WINDOWS
+
+kbenv kbdisplay kbole
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Shell (for example, Program Manager) and OLE registration information is stored
+in .REG files that are used by the Registration Editor (REGEDIT.EXE) to add
+information to the registration database, REG.DAT. There is no difference
+between the way the Microsoft Windows version 3.1 Setup program originally
+registers this information and the way an application can be re- registered.
+
+MORE INFORMATION
+================
+
+The Windows 3.1 Setup program calls WinExec("REGEDIT /S /U SETUP.REG", ...).
+This executes REGEDIT.EXE under Windows. This is the same as choosing Run from
+the File menu of either Program Manager or File Manager and typing the following
+line in the Command Line box:
+
+   REGEDIT SETUP.REG
+
+Therefore, if your registration information for Windows 3.1 accessory
+applications (ONLY those applications that ship with Windows 3.1, such as
+Paintbrush and Write) has been lost, you can restore it by typing the above line
+in the Command Line box as described above.
+
+
+KBCategory: kbenv kbdisplay kbole
+KBSubcategory: win31 winshell
+
+Additional query words: 3.10 3.1
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

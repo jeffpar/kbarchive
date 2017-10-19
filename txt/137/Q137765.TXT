@@ -1,0 +1,73 @@
+DOCUMENT:Q137765  13-DEC-1999  [homemm]
+TITLE   :Bookshelf 1995: Help Lists Incorrect Shortcut to Move Page
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1995 edition
+OPER/SYS:
+KEYWORDS:kbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows 1995 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Bookshelf Help instructions for Keyboard Shortcuts incorrectly lists steps
+for moving a page forward and back.
+
+NOTE: The error does not occur with Bookshelf '95 for Microsoft Windows 95.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the 1995 edition of Bookshelf
+for Windows. This problem was corrected in Bookshelf '95 for Windows 95.
+
+RESOLUTION
+==========
+
+The correct shortcuts are the following:
+
+   Press          To
+   -----          --
+
+   CTRL+SHIFT+<   <Page button
+   CTRL+SHIFT+>   >Page button
+
+
+MORE INFORMATION
+================
+
+The incorrect Bookshelf 1995 Help instructions state:
+
+   Press          To
+   -----          --
+
+   Ctrl+<         <Page Forward
+   Ctrl+>         >Page Backward
+
+Additional query words: 1995 multi media multimedia multi-media mmtitles kbmm
+
+======================================================================
+Keywords          :  kbbuglist kbfixlist
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1995
+Version           : :1995 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

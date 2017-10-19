@@ -1,0 +1,70 @@
+DOCUMENT:Q164878  08-AUG-2001  [winnt]
+TITLE   :E21xx Cabletron Network Cards Do Not Work Properly in MPS
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbhw kbnetwork kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Cabletron E21xx series network adapters do not work in multiprocessor
+computers, including multiprocessor capable computers.
+
+In the event log, you will get the entry:
+
+   Event ID: 7000
+      Source: Service control manager
+      Type: Error
+      Description:  A Device attached to the system is not functioning.
+
+CAUSE
+=====
+
+The driver does not work properly with a multiprocessor capable computer as
+stated in the Help file on the Windows NT Workstation or Server CD-ROM in the
+Drvlib\Netcard\X86\Cte21 folder.
+
+RESOLUTION
+==========
+
+Use a network card that will work in a multiprocessor capable computer. Or
+contact Cabletron for a possible fix.
+
+
+MORE INFORMATION
+================
+
+Cabletron is a vendor independent of Microsoft; we make no warranty, implied or
+otherwise, regarding this companies product's performance or reliability.
+
+Additional query words: NIC netcard fibernet
+======================================================================
+Keywords          : kbhw kbnetwork kbHardware 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

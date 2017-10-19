@@ -1,0 +1,55 @@
+DOCUMENT:Q163462  08-NOV-2001  [homekids]
+TITLE   :Kids Plus!: Fonts Installed with Microsoft Plus! For Kids
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Plus! for Kids, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Plus! For Kids installs 33 new fonts on your computer. The following
+is a list of those fonts:
+
+Alger, Arial, Arial Bold, Arial Italics, Arial Narrow, Arial Narrow Bold Italics,
+Arial Narrow Italics, Comic Sans, Comic Sans Bold, Curlz, Gothic, Gothic Bold,
+Gothic Bold Italics, Gothic Italics, Haettenschweiler, Lucida Handwriting
+Italics, Lucida Sans, Matisse, Mercurius Script Bold, OCR A Extended, Ransom,
+Ransom Bold, Ransom Bold Italics, Ransom Italics, Snap ITC, Stop, Tempus Sans
+ITC, Viner Hand ITC, Vladimir, Westminster, Western, Wingdings 2, Wingdings 3.
+
+MORE INFORMATION
+================
+
+It may not appear that Microsoft Plus! For Kids installed 33 new fonts, because
+some of the fonts may have already been installed on your computer.
+
+Additional query words: kids kidsplus kidsplus! pack plus plus! font
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbGamesSearch kbPlusKids kbPlusSearch
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

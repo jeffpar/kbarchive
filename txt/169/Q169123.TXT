@@ -1,0 +1,72 @@
+DOCUMENT:Q169123  09-AUG-2001  [winnt]
+TITLE   :Error Message: Installation Failed While Installing from .INF
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a user, who does not belong to the Administrators local group, tries to run
+an INF file by right-clicking the INF file and choosing the Install Context menu
+item, the following error message appears:
+
+   Installation failed
+
+CAUSE
+=====
+
+The Setupapi.dll that processes the INF files [DefaultInstall] section needs to
+write to the registry key HKLM\Software\Microsoft\Windows\
+CurrentVersion\RunOnce to prepare the launch of Grpconv.exe when the
+installation script is completed. Because a user, not belonging to the
+Administrators local group, does not have full control permission to this
+registry key, the according API function, RegOpenKeyEx(), returns an error 5
+(access denied). This error occurs when the Setupapi.dll attempts to open the
+key using the KEY_ALL_ACCESS flag. The Setupapi.dll in turn generates the error
+message "Installation failed."
+
+RESOLUTION
+==========
+
+To prevent the error message described above, either log on with an
+administrative account or give the user in question (or the Users local group)
+full control permission to the HKLM\Software\Microsoft\Windows\
+CurrentVersion\RunOnce registry key.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0.
+
+Additional query words: inf installation runonce prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

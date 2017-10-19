@@ -1,0 +1,105 @@
+DOCUMENT:Q135910  07-MAY-2002  [homegame]
+TITLE   :Flight Simulator: List of Sound Options
+PRODUCT :Microsoft Home Games
+PROD/VER:MS-DOS:5.0,5.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator for MS-DOS, versions 5.0, 5.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article contains a list of the sound options in Microsoft Flight
+Simulator.
+
+MORE INFORMATION
+================
+
+To change the current Sound option, do the following:
+
+1. Start Microsoft Flight Simulator.
+
+2. Click Options (or press the ALT+O key combination).
+
+3. Click Preferences.
+
+4. Click Sound.
+
+Flight Simulator 5.0
+--------------------
+
+PC Speaker
+Adlib/PC Speaker
+Adlib/Covox LPT1
+Adlib/Covox LPT2
+Sound Blaster
+Thunderboard
+ATI Stereo F/X
+Sound Blaster Pro
+Pro Audio Spectrum
+Microsoft Windows Sound System
+No Sound Device
+
+Flight Simulator 5.0a
+---------------------
+
+PC Speaker
+Adlib/PC Speaker
+Adlib/Covox LPT1
+Adlib/Covox LPT2
+Sound Blaster/Sound Blaster Pro
+Thunderboard
+ATI Stereo F/X
+Sound Blaster Universal
+Pro Audio Spectrum
+Microsoft Windows Sound System
+No Sound Device
+Gravis Ultrasound (SBOS)
+
+Flight Simulator 5.1
+--------------------
+
+No Sound Device
+PC Speaker
+Adlib/PC Speaker
+Adlib/Covox LPT1
+Adlib/Covox LPT2
+Sound Blaster Universal
+Sound Blaster Pro/16/AWE 32
+Microsoft Windows Sound System
+Thunderboard
+Media Vision-Pro Audio Spectrum
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 5.00 5.00a 5.10 kbhowto flightsim fltsim dos d_fltsim Display Options
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim500DOS kbFlightSim510DOS kbSimSearch
+Version           : MS-DOS:5.0,5.1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

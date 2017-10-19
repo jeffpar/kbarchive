@@ -1,0 +1,80 @@
+DOCUMENT:Q241270  12-MAY-2000  [sna]
+TITLE   :PRB: Foreign Connected Network Not Available with MQSeries Bridg
+PRODUCT :Microsoft SNA Server
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbMSMQ kbMQSeriesBridge
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSMQ - MQSeries Bridge 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you configure the MSMQ - MQSeries Bridge, the foreign connected network may
+not be available.
+
+CAUSE
+=====
+
+Because Microsoft Message Queue Server (MSMQ) only supports the use of foreign
+connected networks and foreign computers on Windows NT Server Enterprise
+Edition, this problem occurs when you do not complete the Windows NT Server
+Enterprise Edition setup by installing Service Pack 3. If you skip the
+installation of Service Pack 3 and go directly to Service Pack 4 (or later),
+this problem occurs.
+
+RESOLUTION
+==========
+
+To resolve this problem, you must reinstall Windows NT Server Enterprise, and
+then install Service Pack 3 when you are prompted. The following is from the
+Readme.txt file included with Windows NT Server Enterprise Edition:
+
+   
+
+   New Windows NT Server/E Installations:
+
+   Installing a new copy of Windows NT Server/E is a two step process:
+
+ - First, install Windows NT Server/E in the same way that you install Windows
+   NT Server.
+
+ - After you install Windows NT Server/E, install Service Pack 3. (A prompt
+   reminds you to do this each time you log in, until you have done so.)
+
+   Both steps are required to have a functioning Windows NT Server, Enterprise
+   Edition system.
+
+STATUS
+======
+
+This behavior is by design.
+
+Additional query words: MSMQ MQSeries Bridge
+
+======================================================================
+Keywords          : kbMSMQ kbMQSeriesBridge 
+Technology        : kbAudDeveloper kbMSMQSearch kbMSMQ100
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

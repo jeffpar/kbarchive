@@ -1,0 +1,62 @@
+DOCUMENT:Q135629  15-FEB-2000  [foxpro]
+TITLE   :HOWTO: Use the Find & Search Options on a Form Wizard Form
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbwizard kbDesigner kbvfp300 kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains the functionality of the Find and Search buttons on a Form
+Wizard-generated form to clarify what the search is actually doing.
+
+
+MORE INFORMATION
+================
+
+When you click the Find button on a Form Wizard-generated form, the Search
+dialog box appears so you can select the field and operator, and then insert a
+value for the search criteria. If the search criteria produces at least one
+matching record, a filter is set to that criteria and the record(s) available
+will be limited by that filter.
+
+The availability of the navigational controls Top, Prev, Next, and Bottom is also
+affected. If the search criteria produces a single match, these controls will be
+disabled. Enabling and disabling of these controls will be performed depending
+on the location of the record pointer within the filter.
+
+To clear the search criteria filter and regain access to all of the table
+records, click the Find Button, and then click the All button in the Search
+dialog box.
+
+Additional query words: Navigate Disable Seek
+
+======================================================================
+Keywords          : kbwizard kbDesigner kbvfp300 kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

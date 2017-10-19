@@ -1,0 +1,337 @@
+DOCUMENT:Q173404  14-NOV-2000  [word97]
+TITLE   :WD97: General Information About Cross-reference Fields
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta kbfield word97 kbnumberingkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+
+SUMMARY
+=======
+
+This article describes what cross-references are, how to create them, how to
+edit them, how to update them. It also describes how cross-references are
+enhanced in Microsoft Word 97 for Windows.
+
+MORE INFORMATION
+================
+
+What Is a Cross-reference?
+--------------------------
+
+The cross-reference feature in Word allows you to create a cross-reference that
+refers to an item in either the same document or a different document, for
+example, "See Table 6 on page 22." If the item in the cross-reference changes,
+for example, if Table 6 becomes Table 5, or Table 6 moves to page 23, you can
+update the cross-reference field without retyping it.
+
+What You See in the Cross-reference Dialog Box
+----------------------------------------------
+
+This section defines the items that you see when you click Cross-reference on the
+Insert menu.
+
+Reference Type:
+
+The Reference Type list lets you select the type of item you want to cross-
+reference. Word allows you to cross-reference the following items:
+
+   Item                    Description
+   ------------------------------------------------------------------------
+
+   Numbered Item           If your document contains numbered paragraphs
+                           (numbered headings or list items), as in a
+                           legal document that contains outline numbered
+                           list items or ListNum fields, you can create
+                           a cross-reference to the paragraph number.
+
+   Heading                 Text that is formatted with one of the nine
+                           heading styles that come with Word.
+
+   Bookmark                Text that is marked by using the Bookmark
+                           command on the Edit menu.
+
+   Footnote                Footnote reference marks inserted in a document
+                           by using the Footnote command on the Insert
+                           menu.
+
+   Endnote                 Endnote reference marks inserted in a document
+                           by using the Footnote command on the Insert
+                           menu.
+
+   Figure/Table/Equation   A caption inserted with one of the preceding
+                           labels by using the Caption command on the
+                           Insert menu.
+
+Insert Reference To:
+
+The Insert Reference To list lets you identify the information you want to appear
+in the cross-reference. These choices depend on your selection in the Reference
+Type list. All of the possible choices are listed below.
+
+   Item                    Description
+   ------------------------------------------------------------------------
+
+   Heading Text            Inserts the text of the heading.
+
+   Heading Number          Inserts the number of the heading.
+
+   Page Number             Inserts the number of the page containing the
+                           item.
+                           NOTE: For footnotes and endnotes, the page
+                           number that appears in the cross-reference is
+                           the location of the footnote or endnote text,
+                           not the location of the note reference mark.
+
+   Paragraph Number        Inserts the paragraph number of a bookmark.
+                           See the "More About Paragraph Number" section
+                           later in this Article for more details.
+
+   Bookmark Text           Inserts text marked with a bookmark.
+
+   Footnote Number         Inserts a footnote reference mark.
+
+   Footnote Number         Inserts a formatted footnote reference mark.
+   (formatted)
+
+   Endnote Number          Inserts an endnote reference mark.
+
+   Endnote number          Inserts a formatted endnote reference mark.
+   (formatted)
+
+   Entire Caption          Inserts the label, number, and any additional
+                           text of a caption, for example, Table 1:
+                           International Air Distances. Applies only to
+                           Equations, Figures, and Tables.
+
+   Only Label And Number   Inserts only the label and number of a caption,
+                           for example, Table 1. Applies only to Equations,
+                           Figures, and Tables.
+
+   Only Caption Text       Inserts only the additional text you have added
+                           to a caption, for example, International Air
+                           Distances. Applies only to Equations, Figures,
+                           and Tables.
+
+   Above/Below             Inserts the words Above or Below as appropriate,
+                           for example, See Table: Above.
+
+Insert As Hyperlink:
+
+If you select this check box, Word creates a cross-reference that is a hyperlink.
+That is, if you click the cross-reference, Word scrolls to the referenced item
+in the document. You can also use the navigation buttons on the Web toolbar to
+move between related paragraphs.
+
+For Which <Reference Type>:
+
+This area lets you select the specific item you want to refer to. For example, if
+you select Footnote in the Reference Type box, this area is called "For which
+footnote," and displays all of the footnotes in the document.
+
+Insert:
+
+Inserts the cross-reference at the insertion point in the document. The
+cross-reference dialog box remains open so that you can insert additional
+cross-references.
+
+Close:
+
+Closes the cross-reference dialog box.
+
+More About Paragraph Number
+---------------------------
+
+This section describes the three different types of paragraph number references
+you can insert from the Insert Reference To list.
+
+Paragraph Number:
+
+Displays the paragraph number and its relative position in an outline numbered
+list.
+
+Example 1:
+
+A cross-reference in 1.(a)(i) to paragraph 1.(a)(ii) appears as "(ii)" because
+both paragraphs are under 1.(a)
+
+Numbered List 1
+      (a) Second Level under Numbered List 1
+             (i)  SEE REFERENCE:  (ii)
+             (ii) Second Item in Third Level of Numbered List 1
+
+Example 2:
+
+A cross-reference 2.(a)(i) to 1.(a)(i) appears as "1.(a)(i)," because no context
+is shared between the paragraphs; that is, they are in completely different
+sections.
+
+Numbered List 1
+     (a) Second Level under Numbered List 1
+            (i) Third Level, under Numbered List 1
+Numbered List 2
+     (a) Second Level under Numbered List 2
+            (i) SEE REFERENCE:  1.(a)(i)
+
+Paragraph Number (No Context):
+
+Displays the paragraph number without its relative position in the outline
+numbered list.
+
+For example, a cross-reference in Paragraph 2.(a)(i) to paragraph 1.(a)(ii)
+appears as "(ii)", regardless of the context of the reference.
+
+Numbered List 1
+      (a) Second Level under Numbered List 1
+             (i)  Third Level, under Numbered List 1
+             (ii) Third Level, under Numbered List 1
+Numbered List 2
+      (a) Second Level under Numbered List 2
+             (i) SEE REFERENCE:  (ii)
+
+Paragraph Number (Full Context):
+
+Displays the complete paragraph number from anywhere in the document.
+
+For example, a cross-reference from anywhere in a document to paragraph 1.(a)(ii)
+appears as "1.(a)(ii)" in the cross-reference.
+
+Numbered List 1
+      (a) Second Level under Numbered List 1
+             (i)  SEE REFERENCE:  1.(a)(ii)
+             (ii) Second Item in Third Level of Numbered List 1
+
+NOTE: This is similar to what WordPerfect versions 6.1 and earlier use.
+
+How to Create a Cross-reference in the Same Document
+----------------------------------------------------
+
+If the item you want to refer to is located in the current document, follow these
+steps.
+
+NOTE: For this example, your document must contain at least one of the following:
+a table with a caption, a footnote, an endnote, an equation with a caption, a
+bookmark, a figure with a caption, or a paragraph formatted with a heading or a
+numbering style.
+
+1. In the document, type the introductory text that begins the cross-reference.
+   For example, type the following: " For more information, see:" (without the
+   quotation marks)
+
+2. On the Insert menu, click Cross-reference.
+
+3. In the Reference type list, click the type of item you want to refer to, for
+   example, a Heading or Table.
+
+4. In the Insert reference to list, click the information you want to insert
+   into the document, for example, Heading Text.
+
+5. In the For Which <Reference Type> list, click the specific item you
+   want to refer to. For example, if you click Heading in the Reference type box
+   and the document has six headings, click the heading that you want to refer
+   to.
+
+6. Click Insert and then click Close.
+
+NOTE: If you see an entry that looks something like {REF _Ref249586 \*
+MERGEFORMAT} instead of text, Word is displaying field codes instead of field
+results. To see the field results, press ALT+F9.
+
+How to Create a Cross-reference to Another Document
+---------------------------------------------------
+
+If the item you want to refer to is located in another document, follow these
+steps.
+
+NOTE: Both documents must be subdocuments in the same master document.
+
+1. Open the master document that contains both subdocuments.
+
+2. Click the Expand Subdocuments button on the Master Document toolbar.
+
+3. On the View menu, click Normal.
+
+4. Follow the steps outlined in "How to Create a Cross-reference in the Same
+   Document" section earlier in this article.
+
+For additional information about cross-references in master documents, please
+click the article number(s) below to view the article(s) in the Microsoft
+Knowledge Base:
+
+   Q119514 WD: Errors in Cross-References in Master Document or Subdocument
+
+How to Edit What a Cross-reference Refers To
+--------------------------------------------
+
+1. Select the cross-reference in the document, for example, "Figure 1."
+
+   NOTE: Do not select the introductory text; for example, do not select "For
+   more information, see." To modify the introductory text in a Cross-
+   reference, edit the text in the document.
+
+2. On the Insert menu, click Cross-reference.
+
+3. Make sure the Reference Type list contains the type of cross-reference you
+   are editing, and make sure the For Which <Reference Type> list contains
+   the correct item.
+
+4. Under Insert Reference To, click the new item you want to refer to.
+
+5. Click Insert and then click Close.
+
+How to Update a Cross-reference
+-------------------------------
+
+To update cross-references, use either of the following methods.
+
+Method 1: Update All Cross-references:
+
+To update all cross-references in a document, click Select All on the Edit menu
+and then press F9.
+
+Method 2: Update One Cross-reference:
+
+To update a single cross-reference in a document, select the cross- reference and
+press F9.
+
+REFERENCES
+==========
+
+For additional information about , please click the article number(s) below to
+view the article(s) in the Microsoft Knowledge Base:
+
+   Q112542 WD: Text Added to End of Line Not Included in Cross-Reference
+
+   Q116225 Wrong Formatting Appears in Cross-References
+
+Additional query words: 8.0 8.00
+
+======================================================================
+Keywords          : kbdta kbfield word97 kbnumbering kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

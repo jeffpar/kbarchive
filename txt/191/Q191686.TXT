@@ -1,0 +1,81 @@
+DOCUMENT:Q191686  11-AUG-1999  [foxpro]
+TITLE   :BUG: Focus Changes Even Though Grid Text Box Valid Returns .F.
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In a grid, focus leaves the text box control to go to the control you are
+clicking even though the Valid method of the text box returns .F. or 0. However,
+the focus remains unchanged in the text box control when you are tabbing out to
+move to a different control.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new form, named mytest.
+
+2. Add a one column grid to the form and two Command buttons.
+
+3. In the Load event of the form, insert the following code:
+
+         SET SAFETY OFF
+         CREATE TABLE xyz (name C(10))
+         INSERT INTO xyz VALUES ("test")
+
+4. In the Valid method of the text box in the grid, place the following code:
+
+         RETURN .F.
+
+5. Save and run the form.
+
+After you open the form, click Command button 1. The "Invalid input" message
+appears and then the focus shifts from the text box in the grid to the Command
+button. At the same time, the grid's text box also has a black border indicating
+that it also has focus. At this point, if you press the Tab key, the focus moves
+to the other command button. Apparently, the focus is no longer with the text
+box even though the Valid method in the text box is returning false.
+
+Additional query words: kbVFp600bug kbVFp500abug kbVFp300bbug kbCtrl kbContainer
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:3.0,3.0b,5.0,5.0a,6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

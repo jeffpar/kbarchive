@@ -1,0 +1,83 @@
+DOCUMENT:Q246782  08-AUG-2001  [winnt]
+TITLE   :STOP C000021a When Upgrading Compaq Computer to Windows NT 4.0
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+ - Microsoft Windows NT Workstation versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you upgrade your Compaq computer from Microsoft Windows NT 3.51 to
+Microsoft Windows NT 4.0, you may receive the following error message after you
+install the Compaq Software Support Disk (SSD) and Service Pack 3 for Windows NT
+4.0:
+
+   STOP:C000021a 0x00000080
+
+CAUSE
+=====
+
+This cause is unknown.
+
+RESOLUTION
+==========
+
+To resolve this behavior, follow these steps:
+
+1. Install a parallel copy of Windows NT 4.0 on the computer that previously ran
+   Windows NT 3.51.
+
+2. Install the Compaq SSD and Service Pack 3 for Windows NT 4.0 to the folder
+   that contains the parallel installation.
+
+3. Copy all files from the original \Winnt35\System32 folder to a shared network
+   drive.
+
+4. Delete all files in the \Winnt35\System32 folder on the computer.
+
+5. Copy all files in the \Winnt\System32 folder of the parallel installation to
+   the original \Winnt35\System32 folder.
+
+6. Copy the backup files from the network shared drive to the original
+   \Winnt35\System32 folder.
+
+7. At the prompt about overwriting existing files, click No To All.
+
+8. Restart to the original installation.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

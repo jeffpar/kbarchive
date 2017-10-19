@@ -1,0 +1,80 @@
+DOCUMENT:Q83075  05-OCT-1999  [win95x]
+TITLE   :Running MEM /D Under Windows
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+With the Microsoft Windows operating system version 3.1, the free memory
+reported by the MEM /D command is defined by the following items:
+
+1. The PIF file that was used for running the MS-DOS virtual machine.
+
+2. The free conventional memory available when Windows was started.
+
+3. The load location of the Windows applications programming interface (API)
+   translation buffers (in 386 enhanced mode only).
+
+MORE INFORMATION
+================
+
+The KB Required and KB Desired setting of the DOSPRMPT.PIF file is, by default,
+-1 for KB desired and -1 for KB required. This is a special setting that means
+the memory settings for the MS-DOS virtual machine must be set to a maximum.
+Settings must be as high as possible and cannot be smaller. If there is room for
+a 572K MS-DOS virtual machine on a system, then it will be 572K, and will not be
+less than 572K.
+
+Note: This maximum virtual machine size is not determined by available memory, it
+is determined by the amount of available address space. Available address space
+is determined by the amount of free conventional memory when Windows is
+started.
+
+In order to free a greater amount of available conventional memory before going
+into Windows, it may be necessary to limit the number of device drivers that
+load into conventional memory. This may be done by either not allowing those
+drivers to load, or if the drivers do load, loading them into the UMB (upper
+memory block) area.
+
+The API Translation buffers also affect the available memory in an MS-DOS virtual
+machine. The API Translation buffers allow protected mode and real mode to
+communicate. These buffers will load into the UMB area if space is available. If
+space is not available, then the API buffers will load into conventional memory
+and will use between 4K and 16K.
+
+Note: Due to memory rounding, the numbers reported by the MEM command may often
+differ slightly because the allocated settings are translated into KB Required
+and KB Desired PIF settings.
+
+Additional query words: 3.10 win386.exe Why the File Size Changes
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,68 @@
+DOCUMENT:Q150809  06-MAY-1999  [iis]
+TITLE   :Commenting an Internet Database Connector (IDC) File
+PRODUCT :Internet Information Server
+PROD/VER:1.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Internet Database Connector (IDC) files are used in the Internet Information
+Server (IIS) to specify an ODBC data source, username, template, and SQL
+statements to exchange data with a database.
+
+To place comments in an IDC file, begin a line with either the pound sign (#) or
+semi-colon (;).
+
+MORE INFORMATION
+================
+
+Here is an example IDC file with comments:
+
+   ; this is a comment
+   Datasource: Web SQL
+   Username: sa
+   Password:
+   Template: ctguestb.htx
+   SQLStatement:
+   +CREATE TABLE "Guests" (
+   +"FirstName" varchar(40),
+   +"LastName" varchar(40),
+   +"Email" varchar(40),
+   +"Homepage" varchar(80),
+   +"Comment" text,
+   +"WebUse" varchar(40)
+   +)
+   # This is also a comment
+
+Additional query words: prodiis
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbiisSearch kbiis100
+Version           : 1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

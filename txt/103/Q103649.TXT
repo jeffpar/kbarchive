@@ -1,0 +1,85 @@
+DOCUMENT:Q103649  07-SEP-2001  [winnt]
+TITLE   :Missing Network Printers on Macintosh Choosers
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.1 4.0
+OPER/SYS:
+KEYWORDS:kbprint kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Advanced Server, version 3.1 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+While running Windows NT Advanced Server with Services for Macintosh
+(SFM) installed, network printers may disappear from the Chooser on
+the Macintosh client.
+
+If you use a printer such as the Apple Laserwriter on the network and
+then capture it with the Windows NT Advanced Server computer, it will
+no longer show up in Chooser. Capturing a printer changes the printer
+type from Apple Laserwriter to the name of the Windows NT Advanced
+Server computer. For this reason, the Chooser no longer recognizes the
+printer as a valid printer type.
+
+NOTE: It is normally recommended for the printer to be captured by the
+Windows NT Advanced Server. Consult the Services for Macintosh manual
+for additional information.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Start Print Manager on the Windows NT Advanced Server computer.
+
+2. Choose Create Printer from the Printer menu.
+
+3. Give the printer a name and select the Apple Laserwriter II driver.
+
+4. In the Print To dialog box, choose Network Printer.
+
+5. Select Appletalk Printing Devices in the Available Print Destination dialog
+   box.
+
+6. Open an Appletalk Zone that contains a printer.
+
+7. Select a printer and choose OK.
+
+A dialog box appears, asking if you want to capture the printer. If
+you choose Yes, the printer will disappear from the Chooser on the
+Macintosh computer and reappear as the name of the Windows NT Advanced
+Server computer.
+
+NOTE: The printer will not disappear or reappear immediately. It may
+take a few minutes for Chooser to update itself.
+
+To prevent this from happening, after you capture the printer with
+Windows NT Advanced Server, immediately share the printer on the
+network. In Print Manager, select the Apple Laserwriter printer and
+choose Properties from the Printer menu. Choose the Share This Printer
+on the Network box. Give the printer a share name. Now the printer
+should reappear in the Chooser application.
+
+Additional query words: 3.10 mac
+
+======================================================================
+Keywords          : kbprint kbPrinting 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS351search kbWinNTS350search kbWinNT310Search
+Version           : 3.1 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

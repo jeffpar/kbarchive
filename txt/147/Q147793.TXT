@@ -1,0 +1,64 @@
+DOCUMENT:Q147793  27-JUL-2001  [sms]
+TITLE   :Specifying User Logon Servers
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1,1.2
+OPER/SYS:
+KEYWORDS:kbenv SMSINFO kbArtTypeINF
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+It may be beneficial for you to specify which Microsoft Systems Management
+Server Windows NT Server logon server a Systems Management Server client user
+logs on to. This is especially true when domain controllers for the same domain
+span multiple Systems Management Server sites. The ability to specify logon
+servers ensures that inventory shows up in the proper site databases. This can
+be accomplished by substituting a specified logon server (or servers) for the
+domain entry in the [workgroup] section of the Smsls.ini file (located in the
+Sms\Site.srv\Maincfg.box directory of the site server).
+
+MORE INFORMATION
+================
+
+A sample [workgroup] section specifying that all users in WorkgroupA use logon
+server ServerA or ServerB, and that users in WorkgroupB use the logon server
+ServerC would look like this:
+
+      [workgroup]
+      WorkgroupA=\\ServerA
+      WorkgroupA=\\ServerB
+      WorkgroupB=\\ServerC
+
+For related information about mapping clients in Smsls.ini, see page 92 of the
+"Microsoft Systems Management Server Administrator's Guide."
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbenv SMSINFO kbArtTypeINF 
+Technology        : kbSMSSearch kbSMS100 kbSMS110 kbSMS120
+Version           : winnt:1.0,1.1,1.2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

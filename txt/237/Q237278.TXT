@@ -1,0 +1,77 @@
+DOCUMENT:Q237278  08-MAY-2002  [word97]
+TITLE   :WD97: AV When Programmatically Applying ListTemplate
+PRODUCT :Word 97 for Windows
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you programmatically apply a ListTemplate that does not exist, you receive
+an access violation similar to the following:
+
+   The instruction at "0xXXXXXXXX" referenced memory at "0x00000000". The memory
+   could not be "read".
+
+
+RESOLUTION
+==========
+
+To resolve the problem described in this article, obtain and install the latest
+Microsoft Word 97 update from the following Microsoft Web site:
+
+   http://office.microsoft.com/downloads/9798/Wd97mcrs.aspx
+
+IMPORTANT NOTE: Microsoft Word 97 post-service release fixes are cumulative. The
+latest update contains all of the fixes since Service Release 2. If you install
+the latest update for Word 97, you do not need to install any other updates
+after Service Release 2.
+
+For additional information about the fixes included in the latest update for Word
+97, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q265374 WD97: Post Service Release Fixes for Word 97
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+
+
+
+Additional query words: wd97 vba listtemplate applylisttemplate av crash gpf violation hotfix QFE
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

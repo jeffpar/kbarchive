@@ -1,0 +1,94 @@
+DOCUMENT:Q163333  09-AUG-2001  [winnt]
+TITLE   :Autosynch Compatible COM Applications May Fail w/ FIFO Enabled
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+The released version of the Windows NT 4.0 serial port driver (Serial.sys) does
+not delimit data in a manner compatible with the Hayes AutoSynch standard when
+FIFO is enabled on the COM port. For example, IBM PCOMM implements the Hayes
+AutoSynch standard and requires that data to be delimited be compliant with the
+AutoSynch standard to operate reliably.
+
+CAUSE
+=====
+
+The Hayes AutoSynch standard requires that data be delimited with an escape
+character followed by a line status error with data. The last part of an
+AutoSynch frame is indicated by line status error data with the parity error bit
+enabled followed by 02. In this case, FIFO was enabled, buffering data on the
+COM port, and Serial.sys would return only part of the data delimited
+correctly.
+
+For example the following data
+
+   FF BF FB BD
+
+should return from Serial.sys as
+
+   7D 01 E1 FF 7D 01 E1 BF 7D 01 E1 FB 7D 01 E1 BD 7D 01 E5 02
+
+where 7D is an escape character, 01 indicates a line status error, and E1 is the
+line status error data (E5 is line status error data with the parity error bit
+enabled). The released version of the Windows NT 4.0 Serial.sys driver returns
+the following unusable stream:
+
+   FF 7D 01 E1 BF FB 7D 01 E1 BD 02
+
+RESOLUTION
+==========
+
+The file Serial.sys was modified to correctly insert an escape character
+followed by a line status error with data when returning buffered data from
+FIFO.
+
+The updated file has been posted to the following Internet location:
+
+   ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/NT40/hotfixes-postSP2/serial-fix
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. This
+problem was corrected in the latest Microsoft Windows NT 4.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          : kbenv kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

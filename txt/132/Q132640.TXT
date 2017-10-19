@@ -1,0 +1,70 @@
+DOCUMENT:Q132640  17-DEC-2000  [win95x]
+TITLE   :Error Message: Rundll32 Caused a GPF in Apmext.dll
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click the Power icon in Windows 95 Control Panel on a NEC Versa
+computer, you may receive the following error message:
+
+   Rundll32 Caused a General Protection Fault in Apmext.dll
+
+CAUSE
+=====
+
+NEC includes a custom power management dynamic-link library (dll) file named
+Apmext.dll with Windows 3.x on some of its Versa laptops. This dll is hard-coded
+to the Microsoft-supplied Windows 3.x Power applet in Control Panel. The
+Apmext.dll file is not compatible with Windows 95.
+
+RESOLUTION
+==========
+
+To work around this behavior, remove the following line from the [Power.drv]
+section of the System.ini file:
+
+   OptionsDll=apmext.dll
+
+MORE INFORMATION
+================
+
+The Apmext.dll file tries to dynamically add a second battery meter status bar
+to the Power applet display in Control Panel. The Windows 95 Power applet is
+different from the Windows 3.x version, causing the Apmext.dll file to cause a
+general protection fault when it tries to modify the dialog.
+
+Versa computers are manufactured by NEC, a vendor independent of Microsoft; we
+make no warranty, implied or otherwise, regarding this product's performance or
+reliability.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

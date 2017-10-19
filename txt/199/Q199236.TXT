@@ -1,0 +1,65 @@
+DOCUMENT:Q199236  27-JUL-2001  [sms]
+TITLE   :INFO: Extended Hercules Checking and Accelerated Mode
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbRemote kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Extended Hercules and Accelerated mode are the two options available during a
+remote control troubleshooting session. Both of these options are for MS-DOS
+client support only and are provided for backward compatibility when performing
+remote troubleshooting on Systems Management Server version 1.2 sites.
+
+MORE INFORMATION
+================
+
+You can set various parameters during a remote control session that determine
+how the Systems Management Server Administrator computer controls a remote
+computer. For example, you can specify whether the system key sequences CTRL+
+and ALT+ on the Systems Management Server Administrator computer are processed
+locally at the Systems Management Server Administrator computer or passed
+through to the remote client.
+
+ - Select Extended Hercules Checking to monitor a Hercules-based client for
+   graphics mode or text mode. Hercules checking slows down program execution
+   but is required for controlling a client with a Hercules graphics card.
+
+If you select Accelerated Mode, then the selected client sends screen refreshes
+to the Systems Management Server Administrator computer as fast as the network
+allows. Accelerated mode dramatically improves the refresh rate on the Systems
+Management Server Administrator computer but slows down program execution on the
+remote client.
+
+Additional query words: video slow msdos herc herculese prodsms rc16
+
+======================================================================
+Keywords          : kbRemote kbRemoteProg 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

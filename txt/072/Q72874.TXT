@@ -1,0 +1,74 @@
+DOCUMENT:Q72874  03-OCT-1999  [win95x]
+TITLE   :Windows: Do Not Install for No Network if Network Exists
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft recommends that you DO NOT install for "No Network" if a
+Windows-supported network is actually installed.
+
+MORE INFORMATION
+================
+
+The VNETBIOS and DOSNET devices automatically detect if they are necessary, and
+do not load if a network is not installed. They are always specified as a
+default in case Windows is installed for No Network, but a network is actually
+present.
+
+A case in which this could occur is when Windows 3.0 is installed while the
+network is not loaded. Windows Setup does not detect a network, so it installs
+for No Network. When the network is later activated, VNETBIOS and DOSNET detect
+the network presence and prevent compatibility problems. However, no network
+functionality is present without a Windows network driver installed.
+Additionally, the system cannot print through a network- redirected printer port
+if Windows is not specifically installed for a network.
+
+Files Installed When No Network Is Selected
+-------------------------------------------
+
+   *vnetbios  The Enhanced-Mode Virtual NetBios Driver
+   *dosnet    The Enhanced-Mode Virtual Redirector Driver
+
+Switches Added When No Network Is Selected
+------------------------------------------
+
+     SYSTEM.INI  [386Enh]  network=*nvetbios, *dosnet
+
+REFERENCES
+==========
+
+"Windows Resource Kit," version 3.0, page 128.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

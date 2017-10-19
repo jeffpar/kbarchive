@@ -1,0 +1,65 @@
+DOCUMENT:Q198511  10-AUG-2001  [winnt]
+TITLE   :Error 629 with ISDN Multilink
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When connecting to a RAS server using multilink ISDN, you get the following
+error message when trying to bring up the second ISDN channel:
+
+   Error 629: the data link has been terminated by the remote machine
+
+The second ISDN channel fails to come up. The first ISDN channel continues to
+work, but the connection speed is only 64 Kbps.
+
+CAUSE
+=====
+
+Multilink is not enabled on the RAS server. Multilink needs to be enabled on
+both the RAS server and the RAS client.
+
+RESOLUTION
+==========
+
+To work around this problem, enable multilink on the RAS server:
+
+1. In Control Panel, double-click Network.
+
+2. On the Services tab, select Remote Access Service and then click Properties.
+
+3. Select the ISDN adapter, click Network, and then click Enable Multilink.
+
+4. Restart the RAS server.
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

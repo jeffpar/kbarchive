@@ -1,0 +1,64 @@
+DOCUMENT:Q116247  17-DEC-2000  [win95x]
+TITLE   :Computers in Docking Stations May Not Provide APM Support
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+ - When you run Windows 95 on a computer with Advanced Power Management (APM),
+   the Suspend command does not appear on the Start menu, and/or the APM item
+   does not appear in Control Panel.
+
+   -or-
+
+ - The Windows 95 Setup program does not detect the APM support on an
+   APM-capable computer.
+
+The MS-DOS real-mode APM support (POWER.EXE) may function properly.
+
+CAUSE
+=====
+
+If your computer disables APM functionality while it is in a docking station
+(such as the Zenith 420s and 425s computers do), you do not have access to the
+APM features in Windows 95.
+
+
+WORKAROUND
+==========
+
+APM support on these computers is not available while they are docked. After you
+remove the machine from the docking station, add the APM support back into
+Windows 95.
+
+Additional query words: 3rdparty power.exe powercfg.cpl 420 425 docking-station
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

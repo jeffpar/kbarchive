@@ -1,0 +1,56 @@
+DOCUMENT:Q256336  12-NOV-2001  [homemm]
+TITLE   :Encarta Virtual Globe: You Must Log On with Administrator Rights
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0; :
+OPER/SYS:
+KEYWORDS:kbenable kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Virtual Globe 1998 edition 
+ - Microsoft Encarta Virtual Globe 99, version 1.0 
+ - Microsoft Encarta 96 World Atlas for Windows 
+ - Microsoft Encarta Interactive World Atlas 2000 
+ - Microsoft Encarta Interactive World Atlas 2001 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To properly install and run the programs listed at the beginning of this article
+on a Microsoft Windows NT 4.0-based computer, you must must log on with
+Administrator rights.
+
+MORE INFORMATION
+================
+
+Microsoft Encarta Virtual Globe and Microsoft Encarta World Atlas make changes
+to certain areas of the Windows Registry that require you to log on with
+Administrator rights to install or run these programs on a Windows NT 4.0-based
+computer.
+
+Additional query words: multi multi-media media mm evg98 evg99 ewa2k winnt
+
+======================================================================
+Keywords          : kbenable kbimu 
+Technology        : kbHomeProdSearch _IKkbbogus kbHomeMMsearch kbEncartaSearch kbEncartaVirtGlobe98 kbEncartaVirtGlobe99 kbEncartaWorldAtlas2001 kbEncartaWorldAtlas2000 kbEncartaWorldAtlas1996
+Version           : WINDOWS:1.0; :
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

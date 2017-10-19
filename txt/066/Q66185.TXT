@@ -1,0 +1,51 @@
+DOCUMENT:Q66185  30-JUL-2001  [homegame]
+TITLE   :Flight Simulator: Airport in the Sky in Tower and Track View
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+If the altitude of the control tower is set below ground level, the airport may
+appear to be floating in the sky.
+
+To correct the problem, set the altitude of the control tower higher than the
+altitude of the airport. Do the following to change the altitude of the control
+tower:
+
+1. Choose option 5, Nav/Com.
+
+2. Choose option A, Position Set.
+
+3. Choose option 8, Control Tower Altitude, and enter an altitude above ground
+   level.
+
+MORE INFORMATION
+================
+
+Airport altitudes can be found in Appendix A of the "Information Manual and
+Flight Handbook."
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

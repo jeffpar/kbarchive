@@ -1,0 +1,124 @@
+DOCUMENT:Q282442  06-AUG-2002  [exchange]
+TITLE   :XADM: Error Message Occurs When You Run Offline Defragmentation
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run an offline defragmentation command for a database that is larger
+than 96 gigabytes (GB), you may receive an error message.
+
+CAUSE
+=====
+
+This issue can occur because Windows NT Server 4.0 has a copy limitation of 96
+GB. If you exceed this limit, Windows NT Server 4.0 cannot finish copying
+Tempdfrg.edb back to Priv.edb.
+
+For additional information, click the article number below to view the article in
+the Microsoft Knowledge Base:
+
+   Q259837 You May Not Be Able to Copy Large Files on Computers That Are Running
+   Windows NT 4.0 or Windows 2000
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+1. Start a command prompt, navigate to the Exchsrvr\Bin folder, and then run the
+   following command:
+
+   eseutil /d /ispriv /p
+
+When you run this command, a Tempdfrg.edb database is created in the Exchsrvr\Bin
+folder. This database is a more compact version of Priv.edb.
+
+NOTE: To create the new Tempdrfg.edb file, the free space on this drive must be
+equal to the size of your Priv.edb file, for example, if your Priv.edb file is
+100 GB, you need an extra 100 GB of free space.
+
+2. At this point, Priv.edb and Tempdfrg.edb exist in the same folder. Move
+   Priv.edb to another location or back it up.
+
+3. Rename Tempdfrg.edb to Priv.edb, and then start the Information Store
+   service.
+
+WORKAROUND
+==========
+
+If there is no space on the current hard disk, you can create Tempdfrg.edb in a
+Temp folder, and then use Esefile.exe to copy the file back to the original
+folder. To do so, use the workaround described in this section.
+
+NOTE: Esefile.exe does not use the Windows NT 4.0 copyFile() API call.
+
+1. Start a command prompt, navigate to the Exchsrvr\Bin folder, and then run the
+   following command, where <x> is the drive letter:
+
+   eseutil /d /ispriv /t<x>:\<temp_folder_path>\tempdfrg.edb /p
+
+NOTE: You may not need to type <temp_folder_path> if you are placing this
+file in the root of a drive. You need to name the database, but you do not have
+to name it "Tempdfrg.edb".
+
+2. Use the Esefile.exe utility that is located in the Eng\Server\Support\Esefile
+   folder on the Exchange Server 5.5 Service Pack 3 (SP3) CD-ROM to copy the
+   Tempdfrg.edb file back to the original Mdbdata folder. For example:
+
+   esefile /c <source_path><destination_path>
+
+NOTE: In this example, <source_path> is
+<X>:\<Temp_folder_path>\Tempdfrg.edb (you must include the file
+name), and <destination_path> is Y:\Exchsrvr\Mdbdata\Priv.edb (you must
+include the file name).
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+For additional information, click the article number below to view the article
+in the Microsoft Knowledge Base:
+
+   Q248406 XADM: Esefile Support Utility for Exchange Server 5.5 and Exchange
+   2000
+
+Additional query words: offline defrag defragmentation
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :4.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,54 @@
+DOCUMENT:Q123358  24-OCT-1999  [crossnet]
+TITLE   :When TCP/IP-32 Under Stress, MS-DOS Command Prompt GP Faults
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::3.11; WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft TCP/IP-32 for Windows for Workgroups, version 3.11 
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+If you open an MS-DOS command prompt during a period when TCP/IP-32 is under
+extreme stress, the command prompt window may terminate with a general
+protection (GP) fault.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in TCP/IP-32. This problem has been
+corrected in an updated TCP/IP-32 version 3.11a. For information on the
+availability of TCP/IP-32 3.11a, see article Q122544 in the Microsoft Knowledge
+Base.
+
+Additional query words: wfw wfwg prodtcp32 3.11 3.11a
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbTCPIPSearch kbWFWSearch kbZNotKeyword3 kbWFW311 kbTCPIP311
+Version           : :3.11; WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,125 @@
+DOCUMENT:Q199835  10-AUG-2001  [winnt]
+TITLE   :ERD Recovery Process Halted - Insert Compaq SSD in Drive A
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:3.51,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+ - Microsoft Windows NT Workstation versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you restore system files by using the emergency repair disk (ERD) that has
+been run on a Compaq system on which Compaq Support Software Disks (SSDs) have
+been applied prior to running RDISK, you may receive the following message:
+
+   Insert Compaq NT Support Software Disk into Drive A:
+
+There is not an option to redirect the location in which to find the file or
+files in question. If you insert a Compaq Support Software Disk (SSD) into drive
+a, the message still occurs and the files cannot be located.
+
+The ERD process is trapped in a loop and the only option at the time is to
+prematurely end system recovery.
+
+CAUSE
+=====
+
+During the installation and upgrade of Compaq SSDs, the Setup.log file is
+annotated. In most cases, the Netflx3.sys line is as follows:
+
+   \WINNT4\System32\drivers\NetFlx3.sys="netflx3.sys","13604","\","Compaq NT
+   Support Software Disk",""
+
+If the Compaq Management CD, which contains the Compaq Insights Agents, has been
+applied, the Sysmgmt.sys argument has been changed as described below:
+
+   \WINNT4\System32\Drivers\Sysmgmt.sys="SYSMGMT.SYS","21008","\SYSMGMT","Compaq
+   Support Software 1.20 for Microsoft Windows NT(TM), Diskette #1","CPQNTSSD"
+
+NOTE: The above lines should be continuous and have been wrapped for readability.
+Also, there can be additional lines that also include "Compaq Support
+Software..."
+
+After you apply the Compaq SSD and then run RDISK, the Setup.log file on the ERD
+will be annotated with the changes.
+
+Unfortunately, there is not a corresponding .inf file for the drivers. After the
+ERD recovery process parses the Setup.log, it prompts for a Compaq Windows NT
+Support Software Disk; however, the information needed to install the drivers
+does not exist.
+
+RESOLUTION
+==========
+
+To work around this problem, follow these steps:
+
+1. Delete or remark the following lines in the Setup.log file and then save
+   changes:
+
+   \WINNT4\System32\drivers\NetFlx3.SYS="netflx3.sys","13604","\","Compaq NT
+   Support Software Disk",""
+
+   \WINNT4\System32\Drivers\Sysmgmt.sys="SYSMGMT.SYS","21008","\SYSMGMT","Compaq
+   Support Software 1.20 for Microsoft Windows NT(TM), Diskette #1","CPQNTSSD"
+
+2. Remove the hidden, system, and read-only attributes on the Setup.log file on
+   the ERD (either at a command prompt using "attrib -r -h -s" (without the
+   quotation marks) or through Windows NT Explorer).
+
+3. Go through the ERD restore process again; it should complete successfully.
+
+To resolve this problem in the future, you can edit the Setup.log file on the
+local hard drive of the system in question. The Setup.log file resides on
+%systemroot%\WINNT\repair and also has the hidden, system, and read-only
+attributes.
+
+MORE INFORMATION
+================
+
+If you have additional problems while running the ERD restore process and it
+continues to ask:
+
+   Insert Compaq NT Support Software Disk into Drive A:
+
+please contact Compaq Technical Support at 1-800-386-2172.
+
+The third-party products discussed in this article are manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Information regarding Compaq SSDs for Windows NT platforms is available from
+Compaq's Web site:
+
+   http://www.compaq.com/support/files/server/WINNT/index.html
+
+Additional query words: compaq ssd support software disk nt 4.0
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : winnt:3.51,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

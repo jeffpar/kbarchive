@@ -1,0 +1,79 @@
+DOCUMENT:Q201169  14-NOV-2000  [word97]
+TITLE   :WD97: Tabs May Be Removed Running Spelling and Grammar Check
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta word8 word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you change the spelling of a word within the Spelling and Grammar dialog
+box (in the Not in Dictionary box) and then click Change, tabs at the beginning
+of the sentence that contains the misspelling are removed.
+
+NOTE: To check the spelling of your document, click Spelling and Grammar on the
+Tools menu.
+
+
+WORKAROUND
+==========
+
+Make the correction to the misspelling using one of the following methods:
+
+Method 1: Use Suggestions
+-------------------------
+
+1. On the Tools menu, click Spelling and Grammar.
+
+2. In the Spelling and Grammar dialog box, click to select the correct spelling
+   of the misspelled word in the Suggestions box.
+
+3. Click Change.
+
+Method 2: Use the Shortcut Menu
+-------------------------------
+
+After Word flags a misspelled word with the wavy red underline, right-click the
+misspelled word. On the shortcut menu that appears, click to select the correct
+spelling of your word.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article. This problem was corrected in Microsoft
+Word 2000.
+
+Additional query words: richedit delete tabs
+
+======================================================================
+Keywords          : kbdta word8 word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

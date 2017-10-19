@@ -1,0 +1,62 @@
+DOCUMENT:Q121916  10-NOV-1999  [macmail]
+TITLE   :CONN: Space After User=Admin in MSGATE.INI Causes Error
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER::1.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Connection Gateway, version 1.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Attempting to launch version 1.0b of the Microsoft Mail Connection MACGATE.EXE
+program when the administrative mailbox name on the User = line in the
+MSGATE.INI file is followed by one or spaces will result in an error similar to
+the following:
+
+   2 - Cannot verify logon user/admin ID. Authorization failure.
+   Bad parameter value. (110): 158
+   exiting on 06-15-94 06:25:53 with status 158 (118)
+
+RESOLUTION
+==========
+
+Edit the MSGATE.INI file to remove the trailing space(s). A trailing space will
+not show up on a visual inspection of the MSGATE.INI file so you should double
+check this when editing the file.
+
+MORE INFORMATION
+================
+
+The above error can also result from using an invalid or non-administrator
+mailbox name on the User = line of the MSGATE.INI or from attempting to access a
+postoffice where the Enhanced Security feature is installed.
+
+Additional query words: 1.00b
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailConn100b
+Version           : :1.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

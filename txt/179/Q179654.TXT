@@ -1,0 +1,63 @@
+DOCUMENT:Q179654  04-MAR-2002  [exchange]
+TITLE   :XADM: Current Log Files Are Lost After Incomplete Restore
+PRODUCT :Microsoft Exchange
+PROD/VER::4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you don't restore all of your incremental backups, the process of restoring
+Microsoft Exchange Server databases will cause your current log files to be
+deleted.
+
+Any existing log files will also be deleted if an older backup set is restored
+and the service started. For example, if a full online backup is made on Sunday
+and Monday, and then on Tuesday the backup from Sunday is restored, when the
+service is started any logs generated on Tuesday will be deleted.
+
+Therefore, it is very important to backup any existing log files before restoring
+from backup.
+
+CAUSE
+=====
+
+After the restore of the online backup, if ALL the incremental backups are not
+restored before the information store is started, Exchange Server will replay
+the log files to the point where the log file numbers are skipped, and then
+delete the remaining log files. Unless the current log files are copied to
+another location before the restore, they are permanently lost, along with all
+the messages contained in those log files. This is by product design.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : :4.0,5.0,5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

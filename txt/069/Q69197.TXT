@@ -1,0 +1,70 @@
+DOCUMENT:Q69197  11-OCT-1999  [win95x]
+TITLE   :SysEdit Err Msg: List of SysEdit Error Messages
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Below is a list of the possible error messages you may receive from the SysEdit
+application (SYSEDIT.EXE) included with Microsoft Windows version 3.0.
+
+NOTE: The "(null)" symbol in a message indicates a variable string used by the
+application.
+
+MORE INFORMATION
+================
+
++---------------------------------------------------------+
+| 1  | (null) has been changed. Save file before closing? | 
++---------------------------------------------------------+
+| 2  | Can't create backup of file "(null)"               | 
++---------------------------------------------------------+
+| 3  | Can't create the file "(null)"                     | 
++---------------------------------------------------------+
+| 4  | Can't find "(null)"                                | 
++---------------------------------------------------------+
+| 5  | Can't load Windows Help application                | 
++---------------------------------------------------------+
+| 6  | Can't open the file "(null)"                       | 
++---------------------------------------------------------+
+| 7  | Can't read the file "(null)"                       | 
++---------------------------------------------------------+
+| 8  | Can't write the file "(null)"                      | 
++---------------------------------------------------------+
+| 9  | Cannot print (null)!                               | 
++---------------------------------------------------------+
+| 10 | Invalid filename: "(null)"                         | 
++---------------------------------------------------------+
+
+Additional query words: 3.00 3.0 3.0a 3.00a win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

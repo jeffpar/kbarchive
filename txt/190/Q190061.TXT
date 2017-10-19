@@ -1,0 +1,75 @@
+DOCUMENT:Q190061  11-DEC-1999  [foxpro]
+TITLE   :BUG: SCC Error Occurs When Opening a VSS5 Project Under VSS
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you open a Visual SourceSafe (VSS) 5.0 project in Visual FoxPro 6.0 using
+Visual SourceSafe 6.0 as the current source code control provider, a Source Code
+Control (SCC) error occurs. The project is added to Visual SourceSafe 6.0, but
+the following error message appears:
+
+   SCC API error 'Project created' occurred. The project will be opened without
+   source control.
+
+The next time you open the project, the error does not occur. The project is
+under source control without explicitly adding it to source control.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this bug and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a project in Visual FoxPro 5.0 and place it under Visual SourceSafe
+   5.0 source control.
+
+2. Modify the project in Visual FoxPro 6.0 using Visual SourceSafe 6.0 source
+   control.
+
+RESULT: When you initially open the project in Visual FoxPro 6.0, the error
+occurs. When you modify the project in Visual FoxPro 6.0 with Visual SourceSafe
+6.0 as the source code control provider, the error will not occur.
+
+Additional query words: vss kbVFp600 kbInterOp
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

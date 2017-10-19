@@ -1,0 +1,68 @@
+DOCUMENT:Q229878  10-AUG-2001  [winnt]
+TITLE   :SBS DHCP Server Shutdown After Upgrade to Full Windows NT
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0,4.0 SP4
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft BackOffice Small Business Server version 4.0 
+ - Microsoft Windows NT Server versions 4.0, 4.0 SP4 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you upgrade BackOffice Small Business Server (SBS) version 4.0 or 4.0a to
+the full Windows NT 4.0 product, the DHCP server continues to shut down when it
+detects another DHCP server on the network. However, the DHCP server from
+Windows NT does not shut down when another DHCP server is detected.
+
+CAUSE
+=====
+
+The DHCP server in Windows NT does not correctly recognize that SBS has been
+upgraded to the full retail Windows NT product.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows NT 4.0. For
+additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+   Q152734 How to Obtain the Latest Windows NT 4.0 Service Pack
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in BackOffice Small Business
+server. This problem was first corrected in Windows NT 4.0 Service Pack 5.
+
+Additional query words: smallbiz
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400sp4 kbWinNTS400search kbWinNTS400 kbAudDeveloper kbSBServSearch kbSBServ400
+Version           : winnt:4.0,4.0 SP4
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

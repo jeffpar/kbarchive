@@ -1,0 +1,75 @@
+DOCUMENT:Q157591  19-MAY-1999  [homegame]
+TITLE   :Golf: Improving Performance on Machines with 8 MB of RAM
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+3.0
+WINDOWS
+kbusage kbfaq
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Golf for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses improving Golf performance on machines with 8 MB of RAM.
+
+MORE INFORMATION
+================
+
+If performance is slow on your computer with 8 MB of RAM, the following tips may
+help:
+
+ - Close some of the Golf windows (for example, if both Main View and Green View
+   are displayed, then close Green View).
+ - Reduce the size of Main View.
+ - Modify options in the Display Options dialog box such as:
+
+   1. Click No for Draw Shadows.
+
+   2. Click No for Texture Terrain.
+
+   3. Set the Terrain Details to all minimums.
+
+   When you turn off Texture Terrain and reduce the Terrain Detail levels, you
+   affect the appearance of the course. Do this only if speed is more important
+   than appearance.
+
+NOTE: On some machines, having all the graphic and sound features turned on may
+cause a significant delay in task-switching from one application to another.
+This delay may adversely affect time- critical applications such as
+communications and e-mail packages. It is highly recommended to close
+time-critical applications before playing Golf. To improve task-switching from
+Golf, you can turn off the Background, Ambient, and Commentary Sounds, as well
+as lower the Terrain/Texture Display settings.
+
+Additional query words: 1.00 3.00 golf improve speed faster slow slower too pause hangs wait
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbGamesSearch kbGolfSearch kbGolf300
+Version           : WINDOWS:3.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

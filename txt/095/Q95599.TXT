@@ -1,0 +1,67 @@
+DOCUMENT:Q95599  22-NOV-1999  [msdos]
+TITLE   :DblSpace Err Msg: DoubleSpace Cannot Convert Your...
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error message when you try to convert a Stacker
+volume to a DoubleSpace volume:
+
+   DoubleSpace cannot convert your Stacker drives because they have a cluster
+   size other than 8K. To convert your Stacker drives to DoubleSpace format,
+   follow the instructions in the DoubleSpace section of the README.TXT file.
+
+CAUSE
+=====
+
+When you convert a Stacker volume to a DoubleSpace volume, your Stacker
+compressed volume file (CVF) must have 8K clusters. If it does not, you receive
+the error message.
+
+When you install Stacker version 2.0 or 3.0, you have the option of using cluster
+sizes other than the 8K default.
+
+ - Stacker 2.0 supports 4K and 8K clusters
+
+ - Stacker 3.0 supports 4K, 8K, 16K, and 32K clusters
+
+Since the conversion of a Stacker volume is done cluster by cluster, and
+DoubleSpace uses 8K clusters, DoubleSpace cannot convert Stacker volumes if they
+don't have 8K clusters.
+
+NOTE: This error occurs regardless of the Stacker volume file cluster size if the
+Stacker volume file has never been mounted.
+
+Additional query words: 6.00 6.20 err msg errmsg
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

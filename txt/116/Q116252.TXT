@@ -1,0 +1,66 @@
+DOCUMENT:Q116252  17-DEC-2000  [win95x]
+TITLE   :3/2 Currency Grouping Not Available in Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows 95 supports various currency grouping options in the Regional Settings
+utility in Control Panel. However, it does not currently provide functionality
+for "3/2" currency grouping.
+
+MORE INFORMATION
+================
+
+Some countries (such as the United States) use three digits to group currency.
+For example:
+
+   $123,456,789.00
+
+Some countries (such as India and Pakistan) use three digits in the first group,
+and two digits in all subsequent groups. For example:
+
+   $12,34,56,789.00
+
+Windows 95 provides support for grouping digits in groups of 0, 1, 2, 3, 4, 5, 6,
+7, 8, 9, or 10. It does not currently provide a secondary grouping option.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows 95. We are researching
+this problem and will post new information here in the Microsoft Knowledge Base
+as it becomes available.
+
+Additional query words: intl.cpl international
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

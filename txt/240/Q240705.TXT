@@ -1,0 +1,50 @@
+DOCUMENT:Q240705  21-OCT-1999  [msnetwork]
+TITLE   :Server Size Limits for MSN E-mail Accounts
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.5,2.51,2.52,2.6,4.0,5,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.5, 2.51, 2.52, 2.6, 5.0 
+ - Microsoft Outlook Express versions 4.0, 5 for Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains the server size limits for an MSN e-mail account.
+
+MORE INFORMATION
+================
+
+10 megabytes (MB) of data can be stored on the MSN e-mail servers at any given
+time for an individual MSN e-mail account. This does not, however, include data
+that has been downloaded. Once an e-mail is downloaded, it is no longer stored
+on the server and therefore clears up space on the server.
+
+Additional query words: size limit msnmail kbmsn
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbOutlookExpressSearch kbZNotKeyword3 kbOutlookExpress95Search kbOutlookExpress500Win95 kbOutlookExpress400Win95 kbMSN500 kbMSN252 kbMSN251 kbMSN260 kbMSN250
+Version           : WINDOWS:2.5,2.51,2.52,2.6,4.0,5,5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

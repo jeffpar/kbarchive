@@ -1,0 +1,52 @@
+DOCUMENT:Q142713  08-MAY-1999  [iis]
+TITLE   :IIS v1.0 May Fail on Windows NT Shell Technology Preview/Update
+PRODUCT :Internet Information Server
+PROD/VER:1.00
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article comments on the advisability of running the Microsoft Internet
+Information Server version 1.0 on the Windows NT Shell Technology
+Preview/Update.
+
+MORE INFORMATION
+================
+
+The Microsoft Internet Information Server 1.0 has not been thoroughly tested for
+use on the Microsoft Windows NT Shell Technology Preview/Update. Microsoft does
+not recommend the use of the Internet Information Server 1.0 running on the
+Microsoft Windows NT Shell Technology Preview/Update in a production
+environment.
+
+Additional query words: prodiis1
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis100
+Version           : 1.00
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

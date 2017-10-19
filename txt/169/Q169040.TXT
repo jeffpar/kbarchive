@@ -1,0 +1,49 @@
+DOCUMENT:Q169040  18-MAY-1999  [homegame]
+TITLE   :Puzzle: Game Music Won't Play if Media Player is in Background
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbinterop kbmm kbsoundkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Entertainment Pack: The Puzzle Collection 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you launch a Puzzle Collection game, you don't hear any music from the game
+if Media Player is playing an audio file in the background.
+
+RESOLUTION
+==========
+
+To hear music in the game, close the game, switch to and close Media Player, and
+then restart the game. You should now be able to hear music in the game.
+
+Additional query words: 1.00 wep w_wep entertainment puzzle collection pac sound
+
+======================================================================
+Keywords          : kbinterop kbmm kbsound kbfaq
+Technology        : kbHomeProdSearch kbWinEntPkPuzzleSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

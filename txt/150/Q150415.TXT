@@ -1,0 +1,67 @@
+DOCUMENT:Q150415  07-SEP-2001  [winnt]
+TITLE   :FPNW Printing Causes File Cache to Grow
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbprint kbPrinting
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft File and Print Services for NetWare version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you transfer large print jobs from Novell NetWare clients to a server running
+File and Print Services for NetWare (FPNW,) you notice a user interface
+performance degradation. The jobs need to have about the size of the physical
+memory of the machine.
+
+If you look at performance counters while this happens, you find that the counter
+for the file cache (Memory: Cache Bytes) is very high while the process working
+sets decline (Process: Working Set, instance _Total.)
+
+CAUSE
+=====
+
+While writing spool files the FPNW printing does not use the flag
+FILE_FLAG_SEQUENTIAL_SCAN to open the files. Thus cache manager increases the
+cache size when data is read or written since it expects the application to need
+it again.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in File and Print Services for
+Netware 4.0. A supported fix is now available, but is not fully regression-
+tested and should be applied only to systems experiencing this specific problem.
+Unless you are severely impacted by this specific problem, Microsoft recommends
+that you wait for the next Service Pack that contains this fix. Contact
+Microsoft Product Support Services for more information.
+
+
+Additional query words: 4.00 prodnt
+
+======================================================================
+Keywords          : kbprint kbPrinting 
+Technology        : kbServicesNetwareSearch kbFPNW400
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

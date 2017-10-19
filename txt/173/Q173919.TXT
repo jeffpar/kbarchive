@@ -1,0 +1,55 @@
+DOCUMENT:Q173919  13-OCT-1999  [msnetwork]
+TITLE   :How to Access Internet Sites with MSN Program Viewer
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.0,2.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.0, 2.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to view Web sites with MSN Program Viewer.
+
+MORE INFORMATION
+================
+
+To view Web sites, use the following steps:
+
+1. In the upper-left corner of MSN Program Viewer, click the Click To Show
+   Internet Toolbar button. Note that the Click To Show Internet Toolbar button
+   looks like a small white triangle with a bar above it.
+
+2. In the Address box, type the Web address that you want to view, and then
+   press ENTER.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN200 kbMSN250
+Version           : WINDOWS:2.0,2.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

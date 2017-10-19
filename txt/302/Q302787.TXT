@@ -1,0 +1,64 @@
+DOCUMENT:Q302787  25-JUN-2001  [msnetwork]
+TITLE   :No Error Message When POP Account Is Set Up Incorrectly In MSN E
+PRODUCT :The Microsoft Network
+PROD/VER::6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 6.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You sign in to MSN Explorer. Next, you go to http://www.hotmail.com and click
+the POP mail option in the menu on the left. You set up a POP e-mail account
+incorrectly (wrong password or wrong POP server name). You sign out and then
+sign back in to MSN Explorer using the same account. You click the E-mail icon
+on the top toolbar, click the More button, and then click Check Pop Mail. The
+POP account is not configured correctly, but no error messages appear.
+
+CAUSE
+=====
+
+This is a known issue.
+
+RESOLUTION
+==========
+
+To check e-mail for the POP account in MSN Explorer
+
+ - Go to http://www.hotmail.com, click the POP e-mail option in the menu on the
+   left, and then correct the settings for the POP account.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu; MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN610 kbMSNExplorer
+Version           : :6.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

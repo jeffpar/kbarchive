@@ -1,0 +1,81 @@
+DOCUMENT:Q295016  06-AUG-2002  [sms]
+TITLE   :SMS: Cannot Save .mif Files Created by the MIF Entry Tool in Win
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbConfig kbSecurity kbsms200 kbsms200bug kbsms200fix kbsmsUtil KbSECTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the MIF Entry tool (MifWin.exe) that is included in the Back Office
+4.5 Resource Kit to extend a Systems Management Server (SMS) client computer
+inventory, a Windows 2000 user may be unable to save the .mif file that is
+created by Mifwin.exe.
+
+CAUSE
+=====
+
+This issue can occur if the Windows 2000 user does not have the appropriate
+permissions to save the file. The Mifwin.exe tool saves the .mif file to the
+<Windows_folder>\Ms\Sms\Noidmifs folder on the client by default. The
+Windows 2000 default permissions on this folder prevent a user who has low-level
+permissions from writing files to this folder.
+
+WORKAROUND
+==========
+
+To work around this issue, use either of the following methods:
+
+ - Modify permissions on the <Windows_folder>\Ms\Sms\Noidmifs folder so
+   that users who have low-level permissions can write files to this folder.
+
+   -or-
+
+ - Use SMS software distribution to configure the program to run with
+   Administrative rights. To do so, open Program properties, and then click "Run
+   with Administrative Rights".
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+MORE INFORMATION
+================
+
+For more information, refer to the "Discovery and Inventory Tools" topic in the
+Back Office 4.5 Resource Kit.
+
+Additional query words: prodsms mifwin mifgen uinfo.xnf
+
+======================================================================
+Keywords          : kbConfig kbSecurity kbsms200 kbsms200bug kbsms200fix kbsmsUtil KbSECTools 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

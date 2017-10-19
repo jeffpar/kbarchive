@@ -1,0 +1,62 @@
+DOCUMENT:Q143276  17-DEC-2000  [win95x]
+TITLE   :DriveSpace Reboot Fails When Compressing Large Hard Disk
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are trying to compress a large hard disk with DriveSpace, Windows 95
+may not restart successfully in mini-Windows mode.
+
+CAUSE
+=====
+
+Some large hard disks require that drivers be loaded from the Config.sys file.
+These drivers may call overlay (.ovl) files. Since the .ovl files are not
+directly listed in the Config.sys file, they are not copied into the
+Failsafe.drv folder on the host drive.
+
+RESOLUTION
+==========
+
+Copy any necessary .ovl files to the Failsafe.drv folder on the host drive. Run
+DriveSpace and try the compression operation again.
+
+MORE INFORMATION
+================
+
+For information about .ovl files called by your hard disk's driver, please refer
+to the documentation included with your hard disk.
+
+Additional query words: dblspace ez drive rocket
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

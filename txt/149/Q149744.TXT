@@ -1,0 +1,73 @@
+DOCUMENT:Q149744  08-NOV-2001  [homekids]
+TITLE   :3D Movie Maker: Copy, Paste Path Varies by Actor or Prop Used
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft 3D Movie Maker for Windows, version 1.0 
+ - Microsoft Nickelodeon 3D Movie Maker for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In 3D Movie Maker, the Copy and Paste Path function copies and pastes the
+position and orientation in space that the actor follows. In most instances,
+copying a path from one actor to another causes the second actor to follow the
+same route that the original actor followed. There are instances, however, when
+this does not occur.
+
+MORE INFORMATION
+================
+
+In some cases, the Copy and Paste Path function may be used for the actors to
+follow the same path, but one arrives at the end sooner than the other. In these
+instances, actors may have a different action or a different step size.
+
+For example, lets say Actor 1 is running and Actor 2 is walking. The running
+actor takes larger steps than the walking actor and covers a longer distance in
+the same number of steps or the same amount of time. If Actor 1 is placed next
+to Actor 2 and they are given the same path with the Copy Path function, they
+will start off together, but the running actor will pull ahead and finish the
+path before the walking actor.
+
+The same situation occurs if the actors are both performing the same action, but
+are of different size. The larger actor, who is taking larger steps, covers the
+path faster than the smaller actor. A similar situation occurs with props and 3D
+words when an actor's path is copied and pasted to them.
+
+If you want to have actors follow the same path in the same amount of time:
+
+ - Make sure that they are performing the same action.
+
+ - Make sure that the actors are the same size.
+
+Doing so ensures that the Copy and Paste Path function keeps them synchronized.
+
+Additional query words: kids mczee kbmm director animated movies melanie 3-d three dimensional 3d 3dmm synchronize in-step in sync homekids homekid
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kb3dMovieMaker
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

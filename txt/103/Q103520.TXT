@@ -1,0 +1,63 @@
+DOCUMENT:Q103520  19-NOV-1999  [msdos]
+TITLE   :MS-DOS 6.2 Defrag Uses XMS Memory When Available
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft MS-DOS 6.0 Defragmenter (Defrag) relies exclusively on conventional
+memory to hold all drive file allocation table (FAT) data and the disk directory
+structure.
+
+Both MS-DOS 6.0, 6.2, and 6.21 Defrag use a 12,000-byte upper memory block (UMB)
+for data storage if it is available. MS-DOS 6.2 Defrag uses up to 384 kilobytes
+(K) of extended (XMS) memory, when available, to hold the FAT data for the
+drive. If you receive "out of memory" errors with MS-DOS 6.2 Defrag, increase
+conventional memory and/or XMS memory up to 384K.
+
+NOTE: If /SKIPHIGH is specified, the 12,000-byte UMB and the 384K free XMS memory
+are not used.
+
+If you have 384K of XMS memory and Defrag still does not run, free more
+conventional memory. If you cannot free more conventional memory by using a
+memory manager (such as EMM386.EXE) or by removing optional device drivers, you
+must reduce the number of files and directories on your drive to allow Defrag to
+run. This requires transferring, orbacking up and removing, files from your disk
+drive.
+
+MORE INFORMATION
+================
+
+
+Additional query words: 6.22 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

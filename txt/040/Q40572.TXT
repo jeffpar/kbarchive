@@ -1,0 +1,49 @@
+DOCUMENT:Q40572  06-MAY-2001  [masm]
+TITLE   :Versions of MASM Prior to 6.0 Do Not Support Flat Model
+PRODUCT :Microsoft Macro Assembler
+PROD/VER::4.0,5.0,5.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Macro Assembler (MASM), versions 4.0, 5.0, 5.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Macro Assembler (MASM) versions 5.1 and earlier do not support
+programming in the flat model. They support only the small, medium, compact, and
+large memory models. The flat model was introduced in MASM version 6.0 to
+support OS/2 2.0.
+
+The flat model is a memory model based on the Intel 80386 chip which supports
+full 32-bit addressing and segments greater than 64K. For more information on
+the flat model, consult the MASM 6.0 "Programmer's Guide" or Intel's "80386
+Programmer's Reference Manual."
+
+Additional query words: kbinf 4.00 5.00 5.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMASMsearch kbAudDeveloper kbMASM510 kbMASM400 kbMASM500
+Version           : :4.0,5.0,5.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

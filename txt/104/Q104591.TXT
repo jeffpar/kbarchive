@@ -1,0 +1,53 @@
+DOCUMENT:Q104591  30-JUL-2001  [lanman]
+TITLE   :Executing REXX CMD Files with the LAN Manager AT Utility
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+REXX was originally a VM/SP batch language used on IBM Virtual Machine (VM)
+systems. It is shipped with LAN Manager for OS/2. Command files written in REXX
+can be executed by the LAN Manager AT utility or can be run manually.
+
+Here are suggestions for porting REXX applications to NT.
+
+
+1. Copy the OS/2 1.3 (not OS/2 2.0) CMD.EXE file to a directory on your NT
+   machine.
+
+2. Copy the OS/2 1.3 (not OS/2 2.0) OS2\DLL\REXX*.DLL DLLs to a directory in the
+   Os2LibPath statement on your NT machine.
+
+3. Run the OS/2 1.3 CMD.EXE file.
+
+4. Run a REXX script. The REXX file should be named *.CMD and its first two
+   characters must be slash asterisk (/*). The first REXX file you run won't
+   work. Re-run it and it should run correctly.
+
+NOTE: Testing has determined that the PUSH and PULL commands generate error
+messages.
+
+Additional query words: 2.00 2.10 2.10a 2.20 2.0 2.1 2.1a 2.2
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

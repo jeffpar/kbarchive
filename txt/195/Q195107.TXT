@@ -1,0 +1,76 @@
+DOCUMENT:Q195107  22-JUN-2001  [exchange]
+TITLE   :XCLN: Comma Separator if Contact is Listed by Only First Name
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 Service Pack 1 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+When a new contact is created in Outlook Web Access (OWA) and only the first name
+is entered for the contact, on viewing the contacts using Outlook, the entry
+will be preceded by a comma. For example, ", John".
+
+To understand the behavioral difference, note that the entry is markedly
+different if the contact was created in Outlook. In this case, the contact will
+appear as expected - without the unnecessary comma separator. For example,
+"John".
+
+CAUSE
+=====
+
+The problem was traced to a bug in OWA parsing whereby it would put a comma even
+when the last name is a blank.
+
+STATUS
+======
+
+Microsoft recognizes the need for the removal of this extra separator. We have
+modified OWA component so that it does not add this extra separator when the
+last name is a blank.
+
+This supported feature is now available, but has not been fully regression tested
+and should be applied only to systems having a specific need for it. Unless you
+are severely impacted by the lack of this feature, Microsoft recommends that you
+wait for the next service pack that contains this feature. Contact Microsoft
+Technical Support for more information.
+
+
+MORE INFORMATION
+================
+
+
+Additional query words: OWA
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOWASearch kbOWA550SP1
+Version           : WINDOWS:5.5
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

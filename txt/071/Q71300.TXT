@@ -1,0 +1,80 @@
+DOCUMENT:Q71300  15-OCT-1999  [win95x]
+TITLE   :LAN Manager Pop-up Messages While Running MS-DOS Applications
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you have Microsoft Windows 3.0 configured for a Microsoft LAN Manager 2.0
+enhanced (or 100-percent-compatible) network, and the network is currently
+loaded, you can receive pop-up messages from a server or from other users on the
+network. These messages are displayed in a Windows pop-up panel titled
+"WinPopup," whose associated executable is WINPOPUP.EXE. This executable is
+typically on the LOAD= line in the WIN.INI file.
+
+You cannot receive pop-up messages if you are currently running an MS-DOS
+application and any of the following conditions is true:
+
+ - You are running Windows in real mode.
+
+ - You are running Windows in standard mode.
+
+ - You are running the MS-DOS application with full-screen and exclusive display
+   and tasking options settings in Windows enhanced mode.
+
+You can receive pop-up messages while running the MS-DOS application in Windows
+enhanced mode if the application is running in a window and/or the exclusive
+tasking option for the application is unchecked.
+
+NOTE: If you are running a full-screen, nonexclusive MS-DOS application in
+Windows enhanced mode and you receive a pop-up message, the MS-DOS application
+will minimize to allow the pop-up message to be displayed.
+
+MORE INFORMATION
+================
+
+The Messenger service receives the messages and passes them to NetPopup.
+However, if NetPopup detects that Windows is running, then it simply queues the
+messages (to prevent the messages from crashing Windows). WinPopup polls
+NetPopup every three seconds or so to determine if there are any messages.
+However, because WinPopup is running in the background,if you are running in
+real or standard mode or are running a full-screen exclusive MS-DOS session in
+enhanced mode, WinPopup is not able to respond. The message(s) will be displayed
+once you switch back to Windows or quit the MS-DOS application.
+
+NOTE: In IBM's DOS LAN Requester, NETPOPUP.EXE is called MSGPOPUP.EXE. Also
+MSGPOPUP.EXE is loaded into memory when the /POP parameter is included in the
+NET START command.
+
+Additional query words: 3.0 3.00 3.00a win30
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

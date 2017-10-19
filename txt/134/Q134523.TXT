@@ -1,0 +1,58 @@
+DOCUMENT:Q134523  17-DEC-2000  [win95x]
+TITLE   :Talking Solitaire and Minesweeper Do Not Work in Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+CD Mania's Talking Solitaire and Talking Minesweeper programs do not work
+correctly in Windows 95, and none of their talking features function.
+
+CAUSE
+=====
+
+Talking Solitaire and Talking Minesweeper modify the standard Windows games to
+add speech to various events, such as winning the game. To make these
+modifications, they look for specific data inside the standard Windows games.
+Because Windows 95 has added new features to Solitaire and Minesweeper, they
+fail to make the modifications.
+
+RESOLUTION
+==========
+
+Contact the program manufacturer to inquire about obtaining an updated version
+of the programs.
+
+Or, run the Windows 3.1 versions of Solitaire and Minesweeper in Windows 95. CD
+Mania can add its talking features to the Windows 3.1 versions of these
+programs.
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

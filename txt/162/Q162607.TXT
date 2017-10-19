@@ -1,0 +1,75 @@
+DOCUMENT:Q162607  13-JUN-2001  [sna]
+TITLE   :If 1st Thunked LUA App Is Closed, Other LUA Calls Not Processed
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.11,2.11 SP1
+OPER/SYS:
+KEYWORDS:kbnetworkkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.11, 2.11 SP1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+In a case where two or more 16-bit LUA applications are using the thunked LUA
+library, the library no longer processes any LUA verbs once the first
+application to start is closed (where WinSliCleanup() or WinRuiCleanup() was
+issued).
+
+CAUSE
+=====
+
+This is because the thunked library creates a window for processing asynchronous
+messages in the first API call, and when the first application is closed, that
+window is closed. However, all asynchronous notification messages are still sent
+to that (now non-existent) window handle.
+
+RESOLUTION
+==========
+
+Apply the fix referenced below.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 2.11 and
+2.11 Service Pack 1 (SP1).
+
+
+A supported fix is now available for SNA Server 2.11 SP1, but has not been fully
+regression-tested and should be applied only to systems experiencing this
+specific problem. Unless you are severely impacted by this specific problem,
+Microsoft recommends that you wait for the next Service Pack that contains this
+fix. Contact Microsoft Technical Support for more information.
+
+
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbnetwork kbbuglist
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ211 kbSNAServ211SP1
+Version           : WINDOWS:2.11,2.11 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

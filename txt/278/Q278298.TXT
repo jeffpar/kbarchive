@@ -1,0 +1,83 @@
+DOCUMENT:Q278298  06-AUG-2002  [sms]
+TITLE   :Clients Are Not Detected When Network Discovery Is Used
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0,2.0 SP1,2.0 SP2
+OPER/SYS:
+KEYWORDS:kbsms200 kbDiscovery
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1, 2.0 SP2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Systems Management Server (SMS), when you use Network Discovery, it populates
+the IsClient fields in the database with a <Null> value.
+
+For example, when you view an individual computer in the All Systems collection,
+the information for the computer may indicate that the value for
+SMSUniqueIdentifier is Null. However, Smscfg.ini and the system_data table
+indicate that the computer has been assigned a global universal identifier
+(GUID).
+
+Additionally, when you check the membership of collections that are based on
+client computers in the SMS site, the collection does not return any members.
+When you run a query to locate computers that are installed as SMS clients, the
+query does not return any results.
+
+When you double-click Systems Management in Control Panel in the workstation, the
+client may be displayed. However, the SMS site reports that the client does not
+exist. Therefore, installed clients cannot be managed by the SMS site.
+
+CAUSE
+=====
+
+This issue can occur because Network Discovery does not attempt to determine if
+resources that it discovers are clients of the SMS site.
+
+When Network Discovery is configured as the only discovery method in your SMS
+site, computers may install the client components. However, SMS is unaware that
+the clients are present.
+
+RESOLUTION
+==========
+
+To resolve this issue, reenable the Heartbeat Discovery option (which is enabled
+by default) and wait for the specified polling interval to pass. When the
+clients send up new discovery data, the database is updated to reflect the
+correct values.
+
+MORE INFORMATION
+================
+
+SMS provides several different ways to discover potentially manageable
+resources. Network Discovery is one of these methods, and it is used to discover
+both the computer and non-computer resources on the network.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbDiscovery 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1 kbSMS200SP2
+Version           : :2.0,2.0 SP1,2.0 SP2
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

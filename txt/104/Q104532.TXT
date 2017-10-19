@@ -1,0 +1,64 @@
+DOCUMENT:Q104532  22-NOV-1999  [msdos]
+TITLE   :Norton Speed Disk May Not Recognize DoubleSpace Floppy Disk
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.2,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+This information applies to both Microsoft DoubleSpace and Microsoft DriveSpace.
+For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands and filenames.
+
+When you run Symantec Norton Utilities Speed Disk (SPEEDISK.EXE) and choose to
+optimize a previously unmounted DoubleSpace-compressed floppy disk, Speed Disk
+does not display the floppy disk as a DoubleSpace-compressed disk.
+
+The DoubleSpace-compressed floppy disk is automatically mounted, but Speed Disk
+does not update its display correctly. Also, the DoubleSpace-compressed floppy
+disk's host drive is not displayed.
+
+RESOLUTION
+==========
+
+To make Speed Disk correctly display the DoubleSpace-compressed floppy disk and
+its host drive:
+
+ - Access the floppy disk before you run Speed Disk. For example, type "dir a:"
+   (without the quotation marks) at the MS-DOS command prompt and then press
+   ENTER before you run Speed Disk.
+
+-or-
+
+ - Exit Speed Disk and then restart it.
+
+Additional query words: 6.20 speedisk speeddisk sd.exe
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620
+Version           : MS-DOS:6.2,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

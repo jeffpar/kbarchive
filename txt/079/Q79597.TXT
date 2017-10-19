@@ -1,0 +1,114 @@
+DOCUMENT:Q79597  02-NOV-2001  [vbwin]
+TITLE   :PRB:Parameter Mismatch Error When Pass Properties by Reference
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::1.0,2.0,3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, versions 2.0, 3.0 
+ - Microsoft Visual Basic Standard Edition for Windows, versions 1.0, 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When trying to pass a control property value by reference to a Sub or Function
+procedure, you receive a "Parameter Mismatch" error.
+
+CAUSE
+=====
+
+Control property values in Visual Basic are stored in a formatted form whose
+location is periodically changed as part of Windows memory management. The
+values are accessed by handles, not addresses. Although the values behave as
+their prescribed types when used directly, they cannot be passed by reference to
+a Sub or Function procedure. Any attempt to do so will generate a "Parameter
+Mismatch" error.
+
+Passing by reference, the default parameter passing method in Visual Basic,
+places the address of the variable on the stack. The Sub or Function procedure
+then accesses the address on the stack and uses it to refer to that variable.
+
+Sending a control property as a parameter to a Sub or Function procedure will
+place its handle on the stack instead of an address. Because the handle uses a
+different form from an address, the Sub or Function procedure finds a value that
+it is not expecting, and will generate a "Parameter Mismatch" error.
+
+RESOLUTION
+==========
+
+Pass the property by value instead of by reference. To pass by value, place a
+set of parentheses around the property variable in the Sub or Function call.
+This syntax will place the actual value of the property on the stack and tell
+the Sub or Function procedure to treat it as such. Because an actual memory
+location is not transferred to the Sub or Function procedure, any changes to the
+value of the property are localized to that Sub or Function procedure.
+
+As an alternative resolution, assign the property value to a temporary variable.
+The temporary variable has an actual address and can be passed to a Sub or
+Function procedure in the usual manner. Because an actual address is sent, any
+change to the temporary variable will be permanent. In order for the actual
+property variable to reflect this change, you must assign the value of the
+temporary variable to the property variable upon return from the Sub or Function
+procedure.
+
+Step-by-Step Example
+--------------------
+
+1. Start a new project in Visual Basic. Form1 is created by default.
+
+2. Place two command buttons (Command1 and Command2), and one text box (Text1)
+   on Form1.
+
+3. Add the two command Click events as follows:
+
+      Sub Command1_Click ()
+         Text1.text = "passed by value"
+         CALL Mysub ((Text1.text))
+         ' Notice Text1.text did not change.
+      End Sub
+
+      Sub Command2_Click()
+         Text1.text = "passed temporary variable"
+         temp$ = Text1.text
+         CALL Mysub (temp$)
+         Text1.text = temp$
+         ' Notice Text1.text did change when assigned to temp$.
+      End Sub
+
+4. In the General section of Form1, add the following:
+
+      Sub Mysub(A$)
+         A$ = "Changed"
+      End Sub
+
+5. Run the program by pressing the F5 key. Click the command buttons to observe
+   the behavior.
+
+Additional query words: 2.00 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB300Search kbVB300 kbVB200
+Version           : :1.0,2.0,3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

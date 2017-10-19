@@ -1,0 +1,75 @@
+DOCUMENT:Q121360  13-JUN-2001  [sna]
+TITLE   :Setting Remote Logging in SNA Server Causes RPC Busy Error
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.0,2.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.0, 2.1, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you set one SNA Server in a domain to log events to a remote SNA Server in
+that domain, the remote system becomes unstable. After any remote logging is
+done, the following error message appears on the remote SNA Server when any
+RPC-aware process runs:
+
+   The RPC service is too busy to service this request.
+
+This problem may occur when SNA Server runs under Windows NT or Windows NT
+Advanced Server version 3.1 with U.S. Service Pack 2 for Windows NT and Windows
+NT Advanced Server installed.
+
+CAUSE
+=====
+
+
+RESOLUTION
+==========
+
+To avoid this problem, upgrade the local SNA Server computer to Windows NT
+Server or Windows NT Workstation version 3.5.
+
+WORKAROUND
+==========
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT and Windows NT
+Advanced Server version 3.1. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodsna 2.10 3.10 rpc busy
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.0,2.1
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

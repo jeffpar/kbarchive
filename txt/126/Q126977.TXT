@@ -1,0 +1,67 @@
+DOCUMENT:Q126977  08-AUG-2001  [winnt]
+TITLE   :Audit Policy Not Replicating Correctly to BDC
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.50
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you make changes to the audit policy between the primary domain controller
+(PDC) and backup domain controller (BDC), some changes are not replicated to the
+BDC. For example, audit events set up on the PDC are set up on the BDC, but
+audit events cleared on the PDC are not cleared on the BDC.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.5. This
+problem was corrected in Windows NT Workstation or Server version 4.0.
+
+MORE INFORMATION
+================
+
+Through auditing you can track certain user activities. The Audit policy
+determines the amount and type of security logging Windows NT performs.
+
+Windows NT can record a range of event types, from a system-wide event such as a
+user logging on, to an attempt by a particular user to read a specific file.
+Both successful and unsuccessful attempts to perform an action can be recorded.
+
+When administering domains, the Audit policy applies to the security log of the
+PDC and the BDC in the domain because they share the same Audit policy. When you
+administer a computer running Windows NT Workstation or Server that is not a
+domain controller, this policy applies only to the security log of that
+computer.
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : 3.50
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

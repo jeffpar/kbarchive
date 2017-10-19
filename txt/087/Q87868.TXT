@@ -1,0 +1,70 @@
+DOCUMENT:Q87868  05-DEC-1999  [homemm]
+TITLE   :Copy Picture and Copy Audio Unavailable After Search
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1992 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows 1992 edition 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When performing a Search in Microsoft Bookshelf for Windows 1992 Edition, all
+references found are displayed in a xxx Topics Found Window (where xxx is the
+number of topics). If any of the topics include the American Heritage Dictionary
+or the Concise Columbia Encyclopedia, the Copy Picture and Copy Audio command
+under the Edit menu are disabled.
+
+Workaround
+----------
+
+Use the Browse button to browse forward/backward and then backward/forward to the
+original article. At this point, the Copy Picture and Copy Audio options are
+enabled.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Load the Books Screen.
+
+2. Search for Cabot.
+
+3. From the Topics Found Window double-click the item labeled
+
+   Dict92:Cabot -Biography
+
+   to move to this topic.
+
+4. Open the Edit menu. The Copy Picture and Copy Audio options are disabled.
+
+Additional query words: 1992 1.00 usage viewer 1.0 win
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1992
+Version           : :1992 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

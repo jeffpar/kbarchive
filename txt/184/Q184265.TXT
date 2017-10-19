@@ -1,0 +1,193 @@
+DOCUMENT:Q184265  23-AUG-2001  [vbwin]
+TITLE   :HOWTO: Distribute ADO with the VB5 Application Setup Wizard
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::2.0,2.1 SP2,2.5,2.6,5.0
+OPER/SYS:
+KEYWORDS:kbADO200 kbDatabase kbMDAC kbVBp500 kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbADO210sp2 kbAD
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+ - ActiveX Data Objects (ADO), versions 2.0, 2.1 SP2, 2.5, 2.6, 2.7 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Redistributing ADO, Remote Data Services (RDS), and other Microsoft Data Access
+Components correctly and safely with the Visual Basic 5.0 Application Setup
+Wizard is done by SHELLing out and running the MDAC_TYP.exe.
+
+You can download the latest version of MDAC_TYP.exe from the following Microsoft
+Web site:
+
+   http://www.microsoft.com/data/download.htm
+
+MORE INFORMATION
+================
+
+This article assumes you have ADO is already installed on your computer.
+
+The MDAC_TYP.exe setup includes only the binaries necessary to redistribute the
+components; it doesn't include documentation. This file can then be called from
+Setup1.frm's QueryUnload method.
+
+Note that in addition to MDAC_TYP.exe, you may need to distribute DCOM95 for your
+Windows 95 clients. DCOM must be installed prior to the installation of MDAC.
+Note that Windows 2000, Windows NT 4.0, and Windows 98 have DCOM built in. You
+can download the latest version of DCOM95 from the following Microsoft Web
+site:
+
+   http://www.microsoft.com/com
+
+Note that DCOM must be installed separately and before MDAC_TYP.exe and your
+Setup program. DCOM cannot be installed from within your Setup program.
+
+How ADO and the Application Setup Wizard Interact
+-------------------------------------------------
+
+Currently, it is not possible to correctly install ADO/DB components with the
+Visual Basic Setup Wizard for Visual Basic 5.0 applications. This is due to
+several limitations in both ADO/DB required components and the Visual Basic
+Setup Wizard described below:
+
+ - ADO and OLE-DB components, for future compatibility, must be registered in
+   specific locations, for example:
+
+      \program files\common files\system\ado
+      \program files\common files\system\ole db
+  
+
+ - The Visual Basic Setup Wizard, when registering a DLL, does not change the
+   directory to the location of the DLL being registered.
+
+ - The OLE-DB DLL, Msdatl.dll, which is required for other OLE-DB components
+   that ADO uses to register, is not self-registering. When Visual Basic
+   attempts to register those DLLs, Msdatl.dll is not found in the "...\OLE DB"
+   directory. Because the DLLs fail to register, ADO also fails to register.
+
+The MDAC Setup may have to restart the system, depending on what the user has
+loaded in memory when setup is started. Thus, the Shell command is used to spawn
+the MDAC setup. Using SHELL allows for Setup1 and Setup to exit properly and to
+clean up after themselves.
+
+Distributing ADO with the Application Setup Wizard
+--------------------------------------------------
+
+To redistribute your own ADO/DB-based project, complete each of the following
+steps: (You can safely ignore warnings about no dependency information for
+ADODB.)
+
+1. The MDAC redistribution file is MDAC_TYP.exe, which includes the OLE DB
+   providers for SQL Server, Access, and Oracle; the ODBC drivers for SQL
+   Server, Access, and Oracle; ADO; and RDS.
+
+2. Make a copy of the ..VB\Setupkit\Setup1 folder.
+
+3. Open the Setup1.vbp file in the ..VB\Setupkit\Setup1 folder.
+
+4. Add the following code and comments to frmSetup1.frm's QueryUnload method:
+
+         'Variable used to string path and EXE together.
+         Dim progname As String
+         'Global gstrDestDir As String      'dest dir for application files
+         'gstrDestDir is defined earlier in basSetup1.bas
+         'Uncommenting the line below hides the file on the user's machine.
+         'This may be desired if it will be left on the user's machine after
+         'the install. Note, the application's Uninstall routine will remove
+         'this file, though.
+
+          SetAttr gstrDestDir & "MDAC_TYP.exe", vbHidden
+
+         'All the calls below invoke MDAC Setup in a Quiet mode, meaning no
+         'choices or options for the user to select or choose, "Setup.exe /Q".
+
+         'The first two methods provide a minimum of a standard setup
+         'background and thermometer bar window showing the progress of the
+         'install. The first install methods are the most user-friendly.
+
+         'When setup is called with "/Q0" it exits with a Message box
+         'notifying the user it completed successfully. It also tells the
+         'user if it is necessary to reboot the system to complete the
+         'installation and gives the choice to reboot now or later.
+
+   SetAttr gstrDestDir & "MDAC_TYP.exe", vbHidden
+
+         
+
+         'Setup called with "/Q1" is the same as "/Q0" but exits without any
+         'notification to the user that it installed successfully. It also
+         'does not provide any notification that it is about to reboot the
+         'system - if necessary.
+
+         'progname = gstrDestDir & "mdacrdst.exe /q /c:" & Chr(34) & _
+                     "setup.exe /Q1" & Chr(34) & ""
+
+         'When called with "/QT", almost everything is hidden and almost zero
+         'feedback is given to the user that an install is occurring or when
+         'it is finished. This method is probably the least favorable.
+
+         'progname = gstrDestDir & "mdac_typ.exe /q /c:" & Chr(34) & _
+                        "setup.exe /QT" & Chr(34) & ""
+
+         'Spawns the MDAC installation.
+         Shell progname, vbNormalFocus
+
+5. Save the project and rebuild the Setup1.EXE.
+
+6. Start the Application Setup Wizard and point it toward the desired project.
+
+7. By default, in the "ActiveX Server Components" step, Msado15.dll is checked.
+   Uncheck it. This is because mdac_typ.exe will install and register all the
+   necessary components for ADO to run.
+
+8. In the File Summary step, add "file: MDAC_TYP.exe" if a "Floppy disk" or
+   "Disk Directories" was the chosen method for distribution. If "Single
+   Directory" method was chosen, it may be desirable not to add MDAC_TYP.exe. By
+   not adding the file in "Single Directory" method, the mdacrdst.exe is run
+   from the install directory and not copied to the application's install
+   directory. This is useful for CD distributions or net installs where it is
+   not desirable to have a copy of the MDAC_TYP.exe on the client machine.
+
+9. In the final step, save as a template, and then go ahead and generate the
+   distribution.
+
+10. Before running your application's Setup program, you should ensure that your
+   Windows 95-based clients have DCOM installed. DCOM must be installed prior
+   to installing MDAC_TYP.EXE. Note that Windows 2000, Windows NT 4.0, and
+   Windows 98 have DCOM built in.
+
+REFERENCES
+==========
+
+For additional information on MDAC and DCOM, please see the following article in
+the Microsoft Knowledge Base:
+
+   Q191704 PRB:Unable to Load File to Register It During Setup
+
+Additional query words:
+
+======================================================================
+Keywords          : kbADO200 kbDatabase kbMDAC kbVBp500 kbGrpDSVBDB kbGrpDSMDAC kbDSupport kbADO210sp2 kbADO250 kbMDAC260 kbADO260 kbATM kbmdac270 kbado270 
+Technology        : kbVBSearch kbAudDeveloper kbADOsearch kbADO200 kbADO210sp2 kbADO250 kbADO260 kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB500 kbADO270
+Version           : :2.0,2.1 SP2,2.5,2.6,5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,67 @@
+DOCUMENT:Q104154  08-NOV-2001  [homemm]
+TITLE   :Stravinsky: Can't Run from Second Chained CD-ROM Drive
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Multimedia Stravinsky for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you try to run Stravinsky from the second chained CD-ROM (CD) drive, the
+following error message will appear
+
+   Please insert the correct CD into drive <drive>:
+
+where <drive> is the drive letter of the first CD-ROM drive.
+
+By default, Stravinsky expects the CD to be in the first CD-ROM drive.
+
+RESOLUTION
+==========
+
+You can force Stravinsky to read the CD from the second chained CD-ROM drive as
+follows:
+
+1. In Notepad or another text editor, open the file STRAV.INI.
+
+2. Add the following line
+
+   "CDDrive=<drive>:" (without the quotation marks)
+
+   where <drive> is the drive letter of the drive you want to use.
+
+3. Save and close the STRAV.INI file.
+
+When you restart Stravinsky, it should be able to read the CD in the second
+CD-ROM drive.
+
+Additional query words: 1.0 multi media multimedia multi-media wrong read
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbZNotKeyword kbMMStravinsky
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

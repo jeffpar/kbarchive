@@ -1,0 +1,59 @@
+DOCUMENT:Q164421  12-SEP-1999  [schedplus]
+TITLE   :XCLN: Behavior of Schedule+ 7.0 Synchronize on Exit
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+, version 7.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes one criteria that Microsoft Schedule+ 7.0 uses to
+determine whether or not to synchronize your local schedule file with the
+schedule file on the network when you exit Microsoft Schedule+.
+
+MORE INFORMATION
+================
+
+Microsoft Schedule+ will only synchronize on exit if the time interval you
+specified in the "Synchronize Every n Minutes" has expired. For example, if you
+set this interval to five minutes, start and then exit Microsoft Schedule+
+before five minutes has elapsed, the schedules are not synchronized. In
+contrast, if you leave Microsoft Schedule+ open for five minutes or longer, the
+schedules will be synchronized. This is done to optimize the Schedule+ process
+of logging on and off of the mail system. If you need to synchronize your
+schedule before the elapsed time, click the Synchronize Now button on the
+Synchronize tab in the Options dialog box (Tools menu).
+
+
+Additional query words: SYNCHRONIZE EXIT XCLNSCH XCLN XSCH
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbScheduleSearch kbSchedule700
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

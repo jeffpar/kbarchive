@@ -1,0 +1,66 @@
+DOCUMENT:Q175085  25-MAR-2002  [win95x]
+TITLE   :Programs That Use RPC Cannot Connect to the RPC Server
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbnetwork win95 kbAPI kbRPC kbSDKPlatform kbGrpDSNetkbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Windows 95 programs that use Remote Procedure Calls (RPCs), such as the Remote
+Registry or System Monitor tool, may be unable to connect to an RPC server.
+
+CAUSE
+=====
+
+This problem can occur if all of the following conditions exists:
+
+ - Transmission Control Protocol/Internet Protocol (TCP/IP) is the only protocol
+   installed.
+
+ - Domain Name Service (DNS) name resolution is enabled.
+
+ - The Fully Qualified Domain Name (the DNS host name plus the DNS domain name)
+   contains more than 31 characters.
+
+RESOLUTION
+==========
+
+
+STATUS
+======
+
+This problem no longer occurs in Windows 98. To resolve this problem, install
+the current version of Windows. For information about the current version of
+Windows, visit http://www.microsoft.com/windows.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork win95 kbAPI kbRPC kbSDKPlatform kbGrpDSNet kbfixlist
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

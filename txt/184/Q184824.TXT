@@ -1,0 +1,65 @@
+DOCUMENT:Q184824  09-AUG-2001  [winnt]
+TITLE   :NTReskit Supp 3: Printmig.exe v1.02 Hangs When Starting Spooler
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Resource Kit utility Microsoft Printer Migrator ver 1.02 stops responding
+(hangs) when it tries to start the Spooler Service. The only way to exit the
+application is to terminate the process.
+
+CAUSE
+=====
+
+If the Microsoft Printer Migrator version 1.02 is started from a sub directory
+that has a long file name (LFN), the application will stop responding (hang).
+This behavior will occur with Windows NT Explorer or File Manager.
+
+RESOLUTION
+==========
+
+Run the application from a sub directory that follows the 8.3 naming convention.
+Or run the application from an MS-DOS command prompt.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Printer Migrator
+version 1.02. We are researching this problem and will post additional
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: reskit printmig printmig.exe pm
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

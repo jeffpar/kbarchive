@@ -1,0 +1,61 @@
+DOCUMENT:Q260108  26-MAY-2001  [vbwin]
+TITLE   :PRB: Restart Option Is Only Available on Windows CE 3.0
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:kbOSWinCEsearch kbGrpDSVB kbDSupport kbVBM300 kbOSWinCE300 kbgrpdsvc
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft eMbedded Visual Basic, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Restart option on the Run menu is only available on eMbedded Visual Basic
+(eVB) projects that target Windows CE 3.0-based devices or emulation. You can
+only stop Handheld PC Pro and Palm-size PC projects once they are running.
+
+CAUSE
+=====
+
+Support for the restart functionality is only available for devices that are
+running Windows CE 3.0.
+
+MORE INFORMATION
+================
+
+After the application is running either in the emulator (PocketPC only) or on a
+remote device, on the Run menu, click Restart to stop the currently running
+application, and start a new emulator session to run the application again. You
+can also press the SHIFT+F5 key combination to restart the application.
+
+However, if you build a Palm-Size PC or Handheld PC Pro project, this menu option
+is not available.
+
+Additional query words: wince evb restart pvbkill wce unavailable
+
+======================================================================
+Keywords          : kbOSWinCEsearch kbGrpDSVB kbDSupport kbVBM300 kbOSWinCE300 kbgrpdsvc 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword2 kbVBeMbSearch kbVBeMb300
+Version           : :3.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

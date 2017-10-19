@@ -1,0 +1,109 @@
+DOCUMENT:Q128205  12-AUG-1999  [foxpro]
+TITLE   :HOWTO: Set Buffering Mode in Visual FoxPro
+PRODUCT :Microsoft FoxPro
+PROD/VER:3.0,6.0
+OPER/SYS:
+KEYWORDS:kbHWMAC kbvfp kbvfp300 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 6.0 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Data buffering is used in Visual FoxPro to enable edits to be made and verified
+in memory before they are applied to a .DBF file and to handle some record
+contention issues in a multiuser environment. There are several ways to use
+buffering within Visual FoxPro. This article gives you an overview.
+
+MORE INFORMATION
+================
+
+There are two ways to set the buffereing mode. Issue a SET MULTILOCKS ON, or
+choose the Multiple Record Locks check box in the Data Tab of the Tools, Options
+dialog to begin buffering data. Use one of the following methods to set the
+buffering mode.
+
+Setting the Buffering Mode Through the Visual FoxPro Interface
+--------------------------------------------------------------
+
+Use any one of the following methods to set the buffering mode through the Visual
+FoxPro user interface:
+
+ - To set the buffering mode for an open table, you can use the Properties
+   button in the View Window. This method sets the buffering properties for the
+   currently selected table only.
+
+   -or-
+
+ - To set the buffering mode for subsequently opened tables, you can use the
+   Buffering list box in the Data tab of the Tools, Options dialog.
+
+   -or-
+
+ - In the form designer, you can set the form.BufferMode property to 1 for
+   Pessimistic Buffering, or to 2 for Optimistic Buffering. If BufferMode is set
+   to 1 or 2, table buffering is enabled for any cursor used by a grid control.
+   Any other control bound to data uses row buffering. This property sets the
+   default buffering mode for all tables used in the form.
+
+   -or-
+
+ - In the form designer, you can set the default buffering mode for individual
+   cursors in the Data Environment by setting the BufferModeOverride property.
+   The default for this property is 1 (Use the default buffering mode of the
+   form).
+
+NOTE: You cannot set a default buffering mode for a table through the Database
+Designer.
+
+Setting the Buffering Mode Programatically
+------------------------------------------
+
+To set the buffering mode programatically, you can use the CURSORSETPROP()
+function to enable or disable buffering on an open table. The following line of
+code sets Optimistic Row buffering:
+
+      SET MULTILOCKS ON
+      =CURSORSETPROP("Buffering",3)
+
+You must issue this line of code for each open table on which you wish to enable
+buffering. This command overrides the default BufferMode property on a form, or
+the default BufferModeOverride property for a cursor in the Data Environment for
+the Form.
+
+REFERENCES
+==========
+
+For more information on the properties and functions used in this article,
+please see the Visual FoxPro Language Reference. For information on using the
+Forms Designer, please see the Visual FoxPro User's Guide.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbHWMAC kbvfp kbvfp300 kbvfp600 
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbVFP300bMac kbVFP300 kbVFP600
+Version           : 3.0,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

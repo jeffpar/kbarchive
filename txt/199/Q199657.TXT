@@ -1,0 +1,69 @@
+DOCUMENT:Q199657  28-FEB-1999  [sms]
+TITLE   :SMS: 1.2 and 2.0 Site Server Cannot Share SQL Server on 1.2 Site
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.2,2.0
+OPER/SYS:
+KEYWORDS:kbinterop kbsms200 kbsms120
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 1.2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A System Management Server 1.2 site using a SQL Server that is installed on the
+same computer, cannot also host a Systems Management Server 2.0 database. The
+System Management Server 1.2 site server will not recognize the SMS_SQL_Monitor
+service from the Systems Management Server 2.0 site as a valid component and the
+service will be removed from the registry.
+
+The SMS_SQL_Monitor service is a component that monitors the Systems Management
+Server 2.0 site database on a SQL Server computer for changes and notifies
+related components when a change occurs. When an event occurs, SQL Monitor
+either writes a file to the related Systems Management Server inbox or notifies
+the component by named pipe. SMS_SQL_Monitor is also responsible for executing
+periodic database maintenance. The SMS_SQL_Monitor includes two threads:
+
+ - Trigger Monitor notifies Systems Management Server components, such as
+   discovery data manager (DDM), when database events have occurred.
+
+ - Task Manager runs scheduled database maintenance tasks.
+
+MORE INFORMATION
+================
+
+SQL Server is used to store and manage the site database. SQL Server can be
+installed on a separate computer running Windows NT Server. If SQL Server is
+installed on a computer other than the version 1.2 site server, SQL Server can
+be used for the site databases for a mix of version 1.2 and version 2.0 sites.
+This SQL Server can also be a client to the version 2.0 site, as well as a full
+participant in any Systems Management Server 2.0 component server roles, as long
+as version 1.2 uses it only for its database storage.
+
+Additional query words: prodsms smsinterop
+
+======================================================================
+Keywords          : kbinterop kbsms200 kbsms120 
+Technology        : kbSMSSearch kbSMS120 kbSMS200
+Version           : winnt:1.2,2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

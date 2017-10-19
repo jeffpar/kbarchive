@@ -1,0 +1,92 @@
+DOCUMENT:Q88442  27-SEP-1999  [win95x]
+TITLE   :Windows Err Msg: Cannot Find File...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When installing or running Microsoft Windows you may receive one of the
+following error messages:
+
+   Cannot Find File; Check to Ensure Path and Filename Are Correct
+
+   -or-
+
+   Application Execution Error: Cannot Find File; Check to Ensure Path and
+   Filename Are Correct
+
+MORE INFORMATION
+================
+
+Cannot Find File; Check to Ensure Path and Filename Are Correct
+---------------------------------------------------------------
+
+This error is generated for one of the following reasons:
+
+ - You may receive this error when running a PIF, if the Program Filename field
+   in the PIF file does not contain a valid path and filename for the program. A
+   full pathname should be specified -- for example, C:\MYDIR\MYPROG.EXE. For
+   more information, consult the PIF Editor online help.
+
+ - The FILES= statement in the CONFIG.SYS is set too low. The FILES= should be
+   set to at least 45. This can happen when installing Windows and when running
+   MS-DOS-based applications from Windows.
+
+Cannot Find File; Check to Ensure Path and Filename Are Correct
+---------------------------------------------------------------
+
+This message is caused when Windows tries to execute applications listed on the
+Run= or Load= lines in the WIN.INI file.
+
+The above error can be caused by one of the following situations:
+
+ - The path to the executable file is invalid (it is misspelled or does not
+   exist).
+
+ - The file has been deleted.
+
+ - Either the Load= or Run= line has exceeded the 128-character limit. In
+   Windows 3.1, you can use the StartUp group feature to avoid this limitation.
+
+ - There is more than one space between the items on the Load= or Run= line. For
+   example, there are two spaces between the applications on the following Load=
+   line:
+
+         Load=c:\windows\AppOne.exe  AppTwo.exe
+                                   ^^
+
+   If this last situation is the cause, Windows loads the applications after
+   displaying the message.
+
+Additional query words: 3.11 3.10 3.00 3.00a err msg
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

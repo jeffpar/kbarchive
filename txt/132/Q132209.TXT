@@ -1,0 +1,62 @@
+DOCUMENT:Q132209  19-DEC-1999  [schedplus]
+TITLE   :PC WSPlus: Viewing Free/Busy on Remote Postoffice Via Async
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+With Schedule+, you can View Free/Busy times on a remote postoffice via modem or
+an asynchronous connection if the Schedule Distribution program (SCHDIST.EXE) is
+used on both sides of the asynchronous connection.
+
+MORE INFORMATION
+================
+
+SCHDIST.EXE processes the Free/Busy information into .POF files. SCHDIST.EXE
+then prepares the .POF files for distribution as it converts them into
+attachments within Mail messages. The External Mail program (EXTERNAL.EXE) is
+then responsible for delivering the messages to the other postoffices.
+
+If users on a postoffice are defined via the External-Admin option of the Mail
+Administrator program (ADMIN.EXE) as direct (or indirect) via modem, the
+following access privileges do not work:
+
+ - View Free/Busy times with dynamic connections.
+
+ - Access privileges of Read Appointments and Tasks or higher.
+
+These access privileges require a persistent network connection.
+
+
+Additional query words: schedule plus 1.00 1.00a async modify create assistant
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule100 kbSchedule100a
+Version           : WINDOWS:1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

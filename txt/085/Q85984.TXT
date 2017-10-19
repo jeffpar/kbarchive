@@ -1,0 +1,68 @@
+DOCUMENT:Q85984  08-DEC-1999  [win95x]
+TITLE   :Epson LQ-950 Prints Jagged Characters or Vertical Lines
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you print from Microsoft Windows 3.1 to an Epson LQ-950, jagged vertical
+lines or characters may result.
+
+CAUSE
+=====
+
+This problem may be caused by the bidirectional printing option within the Epson
+LQ-950 printer.
+
+RESOLUTION
+==========
+
+On the motherboard of the Epson LQ-950 printer, there are two banks of switches.
+To correct this problem, on bank 1, turn switch 5 to "On" to set the printer to
+unidirectional mode instead of bidirectional mode.
+
+MORE INFORMATION
+================
+
+The jagged lines and character problem usually occurs with specific characters
+or vertical lines within the document, not randomly. The problem is in the way
+the LQ-950 interfaces with different drivers used to emulate it, such as the
+Epson LQ-2500 or LQ-2550. It will print these graphics in a bidirectional
+pattern, that is, it is approaching the area from a different direction every
+other time. This creates the appearance of a jagged edge because graphical
+characters are printed out of alignment.
+
+
+Additional query words: 3rdparty 3.10 Setup Mode Directional 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

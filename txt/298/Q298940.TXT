@@ -1,0 +1,73 @@
+DOCUMENT:Q298940  06-AUG-2002  [exchange]
+TITLE   :Err Msg: Won't Route Until the Admin Installs Handler
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install the Routing Wizard, you may receive the following
+error message:
+
+   The Route Map was successfully installed but won't run until a Route Agent is
+   installed.
+
+The following error message then appears:
+
+   The handler assigned to this agent is not present on this server, your agent
+   will not run until an administrator installs it.
+
+RESOLUTION
+==========
+
+To resolve this issue, check the following issues:
+
+ - Make certain that the Event Service is installed on both the server that
+   contains the user's mailbox and the server that contains the folder to be
+   routed.
+
+ - Make certain that the mailbox that creates the folder to be routed has Owner
+   permissions on eventConfig_<servername>.
+
+ - View the following log file to determine the status of the Event Service
+   installation:
+
+   "<drive>:\Program Files\Microsoft Exchange Routing Wizard\St5unst.log"
+   (without the quotation marks)
+
+If the Event Service is not properly installed, reinstall the Event Service from
+the Exchange Server 5.5 compact disc, and then reapply the relevant service
+pack.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : :5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

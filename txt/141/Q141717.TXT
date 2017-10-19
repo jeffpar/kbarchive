@@ -1,0 +1,171 @@
+DOCUMENT:Q141717  06-MAY-2001  [visualc]
+TITLE   :DAOTable Uses DAO Classes to Create Database Objects
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.0,4.1,4.2 4.2b,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbcode kbfile kbsample kbusage kbDAOsearch kbDatabase kbMFC kbVC kbVC400 kbVC410 kbVC42
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, 32-bit Editions, versions 4.0, 4.1 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 4.2 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 4.2b 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 4.2b 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The DAOTable sample (Daotbl.exe) demonstrates how to use the MFC DAO classes to
+create the following common database objects: databases, tables, queries,
+fields, and indexes. This dialog-based application maps the properties of these
+objects to controls the user can set or view. The program source code is
+organized so that most database interaction is isolated from the user interface
+code to ease finding examples of how to use MFC DAO.
+
+In addition to demonstrating the use of the MFC DAO classes, this sample can be a
+useful tool for creating simple Microsoft Access databases. You can create .mdb
+files from scratch, create and delete tables and queries, add and delete fields
+and indexes in the tables, and modify existing queries.
+
+The following files contain the code that performs the database operations.
+Additional files in the project provide the user interface and high level
+database manipulation.
+
+   QUERYDEF.CPP, .H -- functions to create and use queries
+   TABLEDEF.CPP, .H -- functions to create and use tables
+   FIELD.CPP, .H    -- functions to create and use fields
+   INDEX.CPP, .H    -- functions to create and use indexes
+   DATABASE.CPP, .H -- functions to create and use databases
+
+To use this code and the MFC DAO classes, you must have Visual C++ 4.0 or later.
+
+NOTE: Beginning with Visual C++ 4.1, the DAOTable sample is included with the
+Visual C++ CD.
+
+Special Note for Visual C++ 4.1 Users
+-------------------------------------
+
+The DAOTABLE sample that shipped with Visual C++ 4.1 contains a bug that will
+prevent you from creating fields that are of any type other than text. To
+correct this problem, you can download the fixed sample as directed below or
+make the following correction to the ADDTBDLG.CPP file:
+
+Replace this line
+
+      m_FI.m_bAllowZeroLength = TRUE;
+
+with this line:
+
+      m_FI.m_bAllowZeroLength = FALSE;
+
+This change will disable a workaround that was necessary to avoid a bug in Visual
+C++ 4.0. In the download files (DAOTBL.EXE), the workaround code is
+conditionally compiled depending on which version you are using to build the
+sample. If you do not make the correction given in this section and you run the
+application using the Visual C++ 4.1 DLLs, the following exception will be
+thrown when you try to create nontext fields:
+
+   Couldn't create field--Exception: Invalid Operation.
+
+MORE INFORMATION
+================
+
+The following files are available for download from the Microsoft Download
+Center:
+
+Daotbl.exe
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+
+NOTE: The file must be decompressed by typing "DAOTBL.EXE -d" to re-create the
+directory structure.
+
+The MFC DAO classes provide a way to directly use the Microsoft Jet Database
+Engine. Although Visual C++ wizards automatically generate code that will create
+and open recordsets for you based on implicitly created database and workspace
+objects, the code they provide does not demonstrate creating and manipulating
+MFC DAO objects directly. With MFC DAO classes, you can create the majority of
+DAO objects and set their properties.
+
+This sample demonstrates using the MFC DAO classes to create and use the
+following DAO objects: databases, tables, queries, fields, and indexes.
+Exception handling with both MFC exception macros and the C++ exception
+mechanism is also shown. Further, DAO exceptions are put to use in detecting the
+existence of objects in the DAO collections.
+
+Listed below are all the files in the project (except those that are common to
+all Visual C++ projects). Each file is shown with the type of components it
+contains and a brief description.
+
+   ADDQYDLG.CPP         - USER INTERFACE - query definition dialog
+   ADDQYDLG.H
+   DAOTABLE.CPP         - APPLICATION - main application objects
+   DAOTABLE.H
+   DAOTDLG.CPP          - USER INTERFACE - main dialog
+   DAOTDLG.H
+   DATABASE.CPP         - MFC DAO - database specific functions
+   DATABASE.H
+   ADDIXDLG.CPP         - USER INTERFACE - add indexes dialog
+   ADDIXDLG.H
+   ADDTBDLG.CPP         - USER INTERFACE - table definition dialog
+   ADDTBDLG.H
+   FIELD.CPP            - MFC DAO - field specific functions
+   FIELD.H
+   LISTCTRL.CPP         - USER INTERFACE - derived CListCtrl class
+   LISTCTRL.H
+   INDEX.CPP            - MFC DAO - index specific functions
+   INDEX.H
+   QUERYDEF.CPP         - MFC DAO - querydef specific functions
+   QUERYDEF.H
+   TABLEDEF.CPP         - MFC DAO - tabledef specific functions
+   TABLEDEF.H
+   ADDDBDLG.CPP         - USER INTERFACE - database definition dialog
+   ADDDBDLG.H
+
+REFERENCES
+==========
+
+For more information about the MFC DAO classes, please see the Visual C++ Help
+file. For additional documentation on DAO, please see the help files in the DAO
+SDK that is provided on the Visual C++ 4.0 CD-ROM.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbfile kbsample kbusage kbDAOsearch kbDatabase kbMFC kbVC kbVC400 kbVC410 kbVC420 kbVC500 kbVC600 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0,4.1,4.2 4.2b,5.0,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,90 @@
+DOCUMENT:Q190994  06-APR-2000  [exchange]
+TITLE   :XADM: How to Save Organizational Forms to a PST File
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 4.0, 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You may need to save the Organizational forms to a mailbox folder or a personal
+folder (PST), particularly if you use GUIDGEN to rebuild the System folders in
+accordance with Knowledge Base article Q152960 or Q177763.
+
+MORE INFORMATION
+================
+
+You must have Owner permissions on the Organizational Forms Folder before you
+are allowed to copy the data to a .pst file.
+
+To save the forms to a PST in Microsoft Outlook 97 and Microsoft Outlook 98:
+
+1. Log on to Exchange Server by using Outlook 97 or Outlook 98.
+
+2. On the Tools menu, click Options.
+
+3. Click the Manage Forms tab.
+
+4. Click Manage Forms.
+
+5. In the left column, click Set, and then click Organization Forms.
+
+6. In the right column, click Set, and then click to select a folder in the
+   mailbox or PST.
+
+7. Click to select all of the forms in the left column, and then click Copy.
+
+To save the forms to a PST in Microsoft Outlook 2000:
+
+1. Log on to Exchange Server by using Outlook 2000.
+
+2. On the Tools menu, click Options, and then click the Other tab.
+
+3. Click Advanced Options, click Custom Forms, and then click the Custom Forms
+   tab.
+
+4. Click Manager Forms
+
+5. In the left column, click Set, and then click Organization Forms.
+
+6. In the right column, click Set, and then click to select a folder in the
+   mailbox or PST.
+
+7. Click to select all of the forms in the left column, and then click Copy.
+
+After you perform these steps, the forms are in the folder that you selected in
+step 6. To restore the forms to the Organizational Forms library after the
+GUIDGEN process finishes, repeat the steps above, but in step 7, click to select
+the forms on the right, and then click Copy.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

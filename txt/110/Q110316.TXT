@@ -1,0 +1,430 @@
+DOCUMENT:Q110316  07-MAY-2002  [homegame]
+TITLE   :Flight Simulator: FS5.INI Line by Line Description
+PRODUCT :Microsoft Home Games
+PROD/VER:MS-DOS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+kbsetup
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator for MS-DOS, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following is a line by line description of the FS5.INI file. Some devices
+listed do not have variables.
+
+MORE INFORMATION
+================
+
+G2D=???               Graphics Adapter
+                      [VGB.GRA for VGA Adapter]
+                      [SVGA.GRA for SVGA Adapter]
+
+G3D=FSOG3D.FSO        Video Graphics Routines (Required)
+
+KBD=???               Keyboard Type
+                      [KBD1.FSO=On left]
+                      [KBD2.FSO=On top]
+
+MOUSE=???             Mouse Enabled
+                      [ON=On]
+                      [OFF=Off]
+
+SVGA_BOARD=???        SVGA Board Maker
+                      [000=Vesa 1.2 Compatible]
+                      [001=ATI VGA Wonder +/XL]
+                      [002=Video 7]
+                      [003=Tseng 4000]
+                      [004=Trident 8900]
+                      [005=Paradise SVGA]
+                      [006=S3 86C911]
+                      [007=Cirrus Logic 542X]
+                      [008= Trident 8900 Alternate]
+
+ADF_500_HZ=???        500Hz ADF Frequency Adjustability
+                      [ON=On]
+                      [OFF=Off]
+
+AIRCRAFT_TEXTURE=???  Aircraft Texture
+                      [000=Off]
+                      [001=On]
+
+AIRCRAFT_SHAD=???     Aircraft Shadows
+                      [ON=On]
+                      [OFF=Off]
+
+ASLAT=???             Latitude
+                      [000=Northern]
+                      [001=Southern]
+
+ASLON=???             Longitude
+                      [000=Eastern]
+                      [001=Western]
+
+CLOCK_FREEZE=000      (Ignored)
+
+COM_RATE=???          Communication Rate
+                      [Range from 000 - 026]
+
+DEMO=???              Status At Start Up
+                      [000=Normal Flight]
+                      [001=Demo. Flight]
+
+DYNAMIC=???           Dynamic Scenery At Start Up
+                      [ON=On]
+                      [OFF=Off]
+
+FLICKER=???           Flicker/Speed
+                      [000=No Flicker/Slow]
+                      [001=Some Flicker/Medium]
+                      [002=Much Flicker/Fast]
+
+GRAD_HORIZ=???        Gradient Horizon
+                      [000=No]
+                      [001=Yes]
+
+GROUND_SHAD=???       Ground Scenery Shadows
+                      [ON=On]
+                      [OFF=Off]
+
+GUGSPD=???            Gauge Update Rate
+                      [000=Low]
+                      [001=Medium]
+                      [002=High]
+
+GUGSTL=???            Panel Display
+                      [000=Photo-realistic]
+                      [001=Enhanced Readability]
+
+HEAR_COCKPIT=???      Cockpit Sounds
+                      [OFF=No]
+                      [ON=Yes]
+
+HEAR_ENGINE=???       Engine Sounds
+                      [OFF=No]
+                      [ON=Yes]
+
+HEAR_NAVIGATION=???   Navigation Sounds
+                      [OFF=No]
+                      [ON=Yes]
+
+IMAGE_QUALITY=???     Image Quality/Speed
+                      [000=Low/Fast]
+                      [001=Medium/Medium]
+                      [002=High/Slow]
+
+INDASPD=???           Display Indicated Airspeed
+                      [OFF=No]
+                      [ON=Yes]
+
+KBDAIL=???            Keyboard Aileron Sensitivity
+                      [Range from 001 - 127]
+
+KBDELEV=???           Keyboard Elevator Sensitivity
+                      [Range from 001 - 127]
+
+KBDRUD=???            Keyboard Rudder Sensitivity
+                      [Range from 001 - 127]
+
+LANDING_LIGHTS=???    Landing Lights Available
+                      [OFF=No]
+                      [ON=Yes]
+
+LOADSIM=???           Load Aircraft Saved With Situation
+                      [OFF=No]
+                      [ON=Yes]
+
+LOADSCN=???           Load Scenery Saved With Situation
+                      [OFF=No]
+                      [ON=Yes]
+
+LOG_FILE=???          Logbook File
+                      [PILOTS\LOGBOOK.LOG]
+
+LOG_TIME=???          Log Flight Time At Start Up
+                      [OFF=No]
+                      [ON=Yes]
+
+MAP_ORIENTATION=???   Map Display
+                      [000=North Oriented]
+                      [001=Aircraft Oriented]
+                      [002=North At High Alt.]
+
+MCSJOY=???            Load Joystick Sensitivities Saved With Situation
+                      [ON=Yes]
+                      [OFF=No]
+
+MCSKBD=???            Load Keyboard Sensitivities Saved With Situation
+                      [ON=Yes]
+                      [OFF=No]
+
+MCSMOU=???            Load Mouse Sensitivities Saved With Situation
+                      [ON=Yes]
+                      [OFF=No]
+
+MEASURE=???           Units of Measure
+                      [000=U.S. System]
+                      [001=Metric (ALT feet)]
+                      [002=Metric (ALT meters)]
+
+MOU_AIL=???           Mouse Aileron Sensitivity
+                      [Range from 001 - 127]
+
+MOU_ELEV=???          Mouse Elevator Sensitivity
+                      [Range from 001 - 127]
+
+MOU_CURS=???          Mouse Sensitivity
+                      [Range from 001 - 127]
+
+MOU_NUL=???           Mouse Yoke Null Zone
+                      [Range from 001 - 127]
+
+MP_ANSWER_STRING=???  Modem Answer String
+                      [AT&F&C1&D2X4Q0=2]
+
+MP_BAUD_RATE=???      Baud Rate
+                      [000=300bps]
+                      [001=1200bps]
+                      [002=2400bps]
+                      [003=4800bps]
+                      [004=9600bps]
+                      [005=38400bps]
+                      [006=57600bps]
+
+MP_BUSY_DELAY=???     Pause Between Retries
+                      [Range from 01 - 99]
+
+MP_BUSY_RETRY=???     Busy Retry Times
+                      [Range from 01 - 99]
+
+MP_COM_PORT=???       Com Port
+                      [000=Com 1]
+                      [001=Com 2]
+                      [002=Com 3]
+                      [003=Com 4]
+
+MP_DIAL_STRING=???    Dial Command String
+                      [ATDT]
+
+MP_DIAL_WAIT=???      Wait for Connection
+                      [Range from 01 - 99]
+
+MP_INIT_STRING=???    Modem Initialization String
+                      [AT&F&C1&D2X4Q0V1S0=0]
+
+MP_TEL_NUMBER=???     Telephone Number to Dial
+
+MP_WAIT_FOR_RING=???  Wait for Ring
+                      [OFF=No]
+                      [ON=Yes]
+
+PROPELLER_VISIBLE=??? See Propeller
+                      [OFF=No]
+                      [ON=Yes]
+
+RADIOS_25_KHZ=???     25mHz COM Frequency Adjustability
+                      [OFF=No]
+                      [ON=Yes]
+
+SAVDYNSCN=???         Save Dynamic Scenery with Situation
+                      [OFF=No]
+                      [ON=Yes]
+
+SAVPANL=???           Save Instrument Panel and View with Situation
+                      [OFF=No]
+                      [ON=Yes]
+
+SAVPLN=???            Save Aircraft with Situation
+                      [OFF=No]
+                      [ON=Yes]
+
+SAVSCN=???            Save Scenery with Situation
+                      [OFF=No]
+                      [ON=Yes]
+
+SAVWEATHER=???        Save Weather with Situations
+                      [OFF=No]
+                      [ON=Yes]
+
+SEE_SELF=???          See Own Aircraft from Cockpit
+                      [OFF=No]
+                      [ON=Yes]
+
+SETUP=???             Initialization Mode
+                      [OFF=Runs in Flight Mode]
+                      [ON=Runs in Setup Mode]
+
+SITUATION=???         Startup Situation
+                      [SITUATIO\FS5.STN]
+
+SKY_TYPE=???          Textured Sky
+                      [OFF=No]
+                      [ON=Yes]
+
+SLEW_DIG_WINDOW=???   Slew Mode Coordinate Window
+                      [001=Map View]
+                      [002=View 1]
+
+SMOOTH_VIEW=???       Smooth Transition View
+                      [OFF=No]
+                      [ON=Yes]
+
+SOUND=???             Sound Enabled
+                      [000=No]
+                      [001=Yes]
+
+SOUND_ADDRESS=???     Sound Card Address
+                      [000=210]
+                      [001=220]
+                      [002=230]
+                      [003=240]
+                      [004=250]
+                      [005=260]
+                      [006=530]
+                      [007=604]
+                      [008=E80]
+                      [009=F40]
+
+SOUND_BOARD=???       Sound Board
+                      [000=PC Speaker]
+                      [001=ADLIB/PC Speaker]
+                      [002=ADLIB/Covox LPT1]
+                      [003=ADLIB/Covox LPT2]
+                      [004=SoundBlaster]
+                      [005=Thunderboard]
+                      [006=ATI Stereo F/X]
+                      [007=SoundBlaster Pro]
+                      [008=Pro Audio Spectrum]
+                      [009=Microsoft Windows SS]
+                      [010=No Sound Device]
+
+SOUND_DMA=???         Sound Card DMA Channel
+                      [000=0]
+                      [001=1]
+                      [002=2]
+                      [003=3]
+                      [004=4]
+                      [005=5]
+                      [006=6]
+                      [007=7]
+
+SOUND_ENGINE=???      Engine Sounds
+                      [000=Digitized]
+                      [001=Synthesized]
+
+SOUND_INTERRUPT=???   Sound Card Interrupt
+                      [000=0]
+                      [001=1]
+                      [002=2]
+                      [003=3]
+                      [004=4]
+                      [005=5]
+                      [006=6]
+                      [007=7]
+                      [008=8]
+                      [009=9]
+                      [010=10]
+                      [011=11]
+                      [012=12]
+                      [013=13]
+                      [014=14]
+                      [015=15]
+
+SOUND_VOLUME=???      Volume
+                      [Range=000 - 255]
+
+SOUND_XMS=???         Use XMS Memory
+                      [000=No]
+                      [001=Yes]
+
+STARTUP_DEMO=???      Startup Demo
+                      [VIDEOS\FS5.VID]
+
+STICK_A=???           Joystick One
+                      [000=Off]
+                      [001=Aileron and Elevator]
+
+STICK_AIL=???         Joystick One Aileron Sensitivity
+                      [Range from 001 - 127]
+
+STICK_B=???           Joystick Two
+                      [000=Off]
+                      [001=Throttle Only]
+                      [002=Throttle and Brakes]
+                      [003=Rudder Only]
+                      [004=Rudder and Rudder]
+
+STICK_BRAKE=???       Joystick Two Brake/Rudder Sensitivity
+                      [Range from 001 - 127]
+
+STICK_ELEV=???        Joystick One Elevator Sensitivity
+                      [Range from 001 - 127]
+
+STICK_NUL1=???        Joystick One Null Zone Sensitivity
+                      [Range from 001 - 127]
+
+STICK_NUL2=???        Joystick Two Null Zone Sensitivity
+                      [Range from 001 - 127]
+
+STICK_THROT=???       Joystick Two Throttle Sensitivity
+                      [Range from 001 - 127]
+
+SYSCLOCK=???          Time At Start Up
+                      [OFF=Use Situation Time]
+                      [ON=Use System Time]
+
+TEXTURE_BLDG=???      Textured Buildings
+                      [000=No]
+                      [001=Yes]
+
+TEXTURE_GND=???       Textured Ground
+                      [000=No]
+                      [001=Yes]
+
+TEXT_SCROLL=???       Text Presentation Display
+                      [000=Continuous]
+                      [001=Single Line]
+
+WEATHER=???           Automatic Weather Generation At Start Up
+                      [OFF=No]
+                      [ON=Yes]
+
+INCLUDE=FSO001.FSO
+INCLUDE=UTIL.FSO
+INCLUDE=APL001.FSO
+INCLUDE=WEATHER.FSO
+INCLUDE=BGLFE.FSO
+INCLUDE=LESSONS.FSO
+INCLUDE=U2D.FSO
+DEVICE=ASDPLAY.FSO
+
+Additional query words: 5.00 flightsim fltsim dos FS5 startup
+
+======================================================================
+Keywords          :  
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim500DOS kbSimSearch
+Version           : MS-DOS:5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

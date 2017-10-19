@@ -1,0 +1,74 @@
+DOCUMENT:Q167272  09-AUG-2001  [winnt]
+TITLE   :HP NetServer Running Redundant Power Supply Agent Restarts
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+HP NetServer running NetServer Assistant software version 2.51 may restart
+itself periodically for no apparent reason.
+
+CAUSE
+=====
+
+The HP NetServer system is running HP Netserver Assistant software with the
+Redundant Power Supply agent enabled, but only one power supply is installed in
+the system.
+
+RESOLUTION
+==========
+
+To resolve this problem, disable the Redundant Power Supply agent. To identify
+whether this service is enabled, check Control Panel Services for the HP
+Redundant Power Supply service. If the HP Redundant Power Supply service is
+there and it is enabled, disable the service if you have only one power supply
+installed.
+
+STATUS
+======
+
+This problem occurs when you use Microsoft Windows NT version 4.0 and HP
+NetServer Assistant software version 2.51.
+
+MORE INFORMATION
+================
+
+Typically, there will be no error or any events in Event Viewer.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+Additional query words: prodnt reboot reboots
+======================================================================
+Keywords          : kb3rdparty 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WINNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

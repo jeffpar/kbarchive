@@ -1,0 +1,57 @@
+DOCUMENT:Q152736  30-MAR-1999  [exchange]
+TITLE   :XCLN: No Read Receipts Sent When Auto-Accepting Meetings
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0,7.0
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+ - Microsoft Schedule+, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you request a Read Receipt and send a Microsoft Schedule+ meeting request to
+a user who has set Microsoft Schedule+ to Automatically Accept Meeting Requests,
+you will not receive the Read Receipt.
+
+MORE INFORMATION
+================
+
+This also happens with cancel meeting requests.
+
+RESOLUTION
+==========
+
+This is by design of Microsoft Schedule+ 7.0. Read Receipts will not be
+generated when auto-processing of meeting requests is performed.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbZNotKeyword2 kbScheduleSearch kbSchedule700 kbZNotKeyword3 kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+Version           : WINDOWS:4.0,5.0,7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

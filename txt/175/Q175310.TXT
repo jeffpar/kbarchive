@@ -1,0 +1,56 @@
+DOCUMENT:Q175310  10-MAR-1999  [exchange]
+TITLE   :XCLN: 16-bit Exchange Client Startup Problem
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 3.x client, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When starting 16-bit Exchange Client for Windows 3.x, the user may get the
+following error message:
+
+   The MAPI spooler could not be started. Close and restart all mail-enabled
+   applications. MAPI 1.0[000004c7]
+
+WORKAROUND
+==========
+
+Modify the [Exchange Provider] section of the Exchng.ini file located in the
+Windows directory to move the protocol in use to the first in the order. For
+example, if TCP/IP is being used, list ncacn_ip_tcp first for RPC binding.
+
+For more information about general troubleshooting of the above error due to
+memory issues, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q162670 16-Bit Exchange Client Memory Issue
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbExchangeClientSearch kbZNotKeyword3
+Version           : WINDOWS:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

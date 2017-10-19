@@ -1,0 +1,68 @@
+DOCUMENT:Q132669  17-DEC-2000  [win95x]
+TITLE   :Canon Printers Printing Blue Objects as Purple Objects
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:kb3rdparty win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Text or brush objects that print as blue on a Canon printer in Windows version
+3.1, print as purple in Windows 95.
+
+CAUSE
+=====
+
+Several models in the Canon Bubble Jet series use CMY inks that, when mixed in
+the conventional proportions (equal parts cyan and magenta) do not produce the
+expected blue color. Instead they produce a definite purple color.
+
+The Canon printer driver that shipped with Windows 3.1 has a special color
+setting (Match Screen Colors) that causes the driver to remap the specified
+color to a new color that, when printed, appears to be more blue. This new color
+uses only 40% magenta instead of the normal 100%. The Canon driver default color
+setting also prints blue text and brushes as purple.
+
+The Unidrv.dll does not currently provide color adjustment functionality.
+
+RESOLUTION
+==========
+
+Contact Canon for an updated printer driver for Windows 95.
+
+
+MORE INFORMATION
+================
+
+Canon printers are manufactured by Canon USA, Inc., a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+======================================================================
+Keywords          : kb3rdparty win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

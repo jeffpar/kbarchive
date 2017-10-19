@@ -1,0 +1,71 @@
+DOCUMENT:Q265227  23-JUL-2000  [exchange]
+TITLE   :XADM: Setup Won't Work w. "The Required Privilege..." Err. Mssg.
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to install Exchange Server 5.5, Setup may not work and you may
+receive the following error message:
+
+   The required privilege is not held by the client.
+
+The only option available is to click OK. When you click OK, you quit Setup.
+
+CAUSE
+=====
+
+This issue can occur if the Exchange Server Setup program is trying to write to
+the Microsoft Windows NT Event Viewer application event log. To determine if
+Setup is writing to the application event log, look at the Exchange Server
+Setup.log file (located by default at the root of the drive).
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+1. Stop the Event Log service.
+
+2. Navigate to the Winnt\System32\Config folder.
+
+3. Rename the *.evt files.
+
+4. Restart the server to re-create the *.evt log files.
+
+After you perform these steps, the Exchange Server Setup program should run
+properly.
+
+Additional query words: 7022, 7023, client
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

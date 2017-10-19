@@ -1,0 +1,80 @@
+DOCUMENT:Q180148  02-APR-2000  [sna]
+TITLE   :French Support for Host Security
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Permission has been granted by the French Government for use of Microsoft SNA
+Host Security in France. 128 bit data encryption is now permissible for the
+French version of Microsoft SNA Server.
+
+CAUSE
+=====
+
+Special permission is required under French law. Data encryption is prohibited
+within France.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in SNA Server versions 3.0, 3.0
+SP1, 3.0 SP2, and 4.0.
+
+This problem was corrected in the latest SNA Server versions 3.0 and 4.0 U.S.
+Service Packs. For information on obtaining these Service Packs, query on the
+following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+To apply the hotfix, perform the following steps.
+
+1. Stop all SNA Services (including host security).
+
+2. Rename the existing snaudb.exe to snaudb.sp2 and snarpc.dll to snarpc.sp2.
+
+3. Copy the new snaudb.exe and snarpc.dll in place. Also, replace the existing
+   symbol versions with the new files. These are named as
+   <winnt>\symbols\dll\snaprc.dbg and
+   <winnt>\symbols\exe\snaudb.dbg.
+
+4. Restart all SNA Services.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400
+Version           : WINDOWS:3.0,4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

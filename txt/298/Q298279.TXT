@@ -1,0 +1,59 @@
+DOCUMENT:Q298279  18-OCT-2001  [crossnet]
+TITLE   :"Form Load Failed" Error Message When You Try to Choose a Form
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kbinterop kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows XP Home Edition 
+ - Microsoft Outlook 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click Choose Form in Outlook 98, you may not receive any form choices.
+If you then click OK, the correct library opens, but no forms are listed, and
+you may receive the following error message:
+
+   Form Load Failed.
+
+CAUSE
+=====
+
+This behavior can occur when you are using a restricted user account with your
+Windows XP-based computer.
+
+STATUS
+======
+
+This behavior is by design.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbinterop kbtool 
+Technology        : kbWinXPHomeSearch kbWinXPSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

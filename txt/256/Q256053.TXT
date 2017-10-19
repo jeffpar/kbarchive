@@ -1,0 +1,76 @@
+DOCUMENT:Q256053  22-JUN-2001  [exchange]
+TITLE   :XCLN: How to Create Rule to Change Task Color Based on Due Date
+PRODUCT :Microsoft Exchange
+PROD/VER::; WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook 2000 
+ - Microsoft Outlook 98 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Outlook, you can create a rule to have a task with a due date of "today"
+change color when the condition is met.
+
+NOTE: This rule only applies to folder list views such as the Simple List view or
+the Detailed List view.
+
+MORE INFORMATION
+================
+
+To create this rule:
+
+1. In the Folder List pane, click Tasks.
+
+2. On the View menu, point to Current View, and then click Define Views.
+
+3. Click Simple List (or create a new view based on the Simple List view).
+
+4. Click Modify, and then click Automatic Formatting.
+
+5. Create a new rule, and then set the criteria as follows:
+
+   a. Click the Font button, and choose the color, font type, and so on, that
+      you want, and then click OK.
+
+   b. Click Condition, and then click the Advanced tab.
+
+   c. Click the Fields menu.
+
+   d. In the Date/Time fields, click Due Date.
+
+   e. In the Condition field, click "today", and then click "Add to list".
+
+   f. Click OK in each dialog box.
+
+Additional query words: TASKS RULE
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange550 kbZNotKeyword2 kbOutlook2000Search kbOutlook98Search kbZNotKeyword3
+Version           : :; WINDOWS:
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,72 @@
+DOCUMENT:Q272495  26-JUL-2002  [msnetwork]
+TITLE   :How to change account information with MSN Companion
+PRODUCT :The Microsoft Network
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:kbFAQ kbPubTypeMSN
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+How to change account information on the MSN Companion system.
+
+MORE INFORMATION
+================
+
+To change MSN Companion account information
+
+1. From the MSN Companion start page, click settings in the upper-right corner.
+
+2. On the change my MSN Companion settings page click all settings.
+
+3. On the right side of the page select MSN Internet Access support services and
+   billing under the my personal account information category.
+
+4. To change your information, click change information at the top of the page.
+
+5. When you have made the changes:
+    - Click the done button to save any changes you made on this page.
+
+    - Click the cancel button to discard any changes you made on this page.
+
+NOTE: When you navigate to the change my account information page, all of your
+current information will be filled in, except for your credit card number. For
+security reasons, only the last six (6) digits of your credit card will be
+displayed.
+
+
+REFERENCES
+==========
+
+   Q153806 Accounts and Billing Questions and Answers
+
+Additional query words: kbimu MSN Companion Account information
+
+======================================================================
+Keywords          : kbFAQ kbPubTypeMSN 
+Technology        : _IKkbbogus kbMSNSearch kbMSNCompanion
+Version           : :1.0,2.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

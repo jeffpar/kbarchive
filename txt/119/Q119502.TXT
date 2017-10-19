@@ -1,0 +1,68 @@
+DOCUMENT:Q119502  29-JUL-2001  [visualc]
+TITLE   :PRB: PView Sample Does Not Behave Correctly
+PRODUCT :Microsoft C Compiler
+PROD/VER:1.00
+OPER/SYS:
+KEYWORDS:kbprb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Build and run the PView sample included with Visual C++ 32-bit Edition. The box
+labeled "Process, CPU Time, Privileged, and User" is not filled with the
+expected strings. When you select the button titled "Memory Detail", the
+following error dialog box displays:
+
+   
+
+    -------------------------------------------
+   |              Memory Detail                |
+   |-------------------------------------------|
+   |                                           |
+   |     Unable to retrieve memory detail.     |
+   |                                           |
+    -------------------------------------------
+
+CAUSE
+=====
+
+The system performance monitor APIs return UNICODE strings. For the strings to
+be displayed properly, UNICODE must be defined when you compile the sample
+program.
+
+RESOLUTION
+==========
+
+Modify the makefile compiler options to include /DUNICODE. This has been done
+for you in Visual C++ version 2.0.
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          : kbprb 
+Technology        : kbVCsearch kbAudDeveloper kbvc100
+Version           : 1.00
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

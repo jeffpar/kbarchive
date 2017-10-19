@@ -1,0 +1,68 @@
+DOCUMENT:Q40797  07-NOV-1999  [macmail]
+TITLE   :Mac DOS: Connect/Access AppleTalk Networks at Remote Sites
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER::3.0,3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, MS-DOS workstation, versions 3.0, 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Many companies make products that enable a Macintosh to operate as a remote
+AppleTalk node by accessing an AppleTalk network from a distant location. There
+are also products available for connecting remote AppleTalk networks. These
+products enable the remote sending and receiving of electronic mail, such as
+Microsoft Mail.
+
+NOTE: The products included here are manufactured by vendors independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability.
+
+
+The following is a list of some of the companies that make products for remote
+AppleTalk network access:
+
+1. Hayes Microcomputer Products, Inc.
+   (800) 635-1225
+   (404) 441-1617
+
+2. Farallon
+   (415) 596-9000
+
+3. Shiva Corporation
+   (800) 458-3550
+   (617) 864-8500
+
+4. Solana Electronics
+   (619) 566-1701
+
+
+Additional query words: 3.00 3.10 modem
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbMailSearch kbZNotKeyword3 kbMailATN300DOS kbMailATN310DOS
+Version           : :3.0,3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

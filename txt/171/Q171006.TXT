@@ -1,0 +1,88 @@
+DOCUMENT:Q171006  15-SEP-1999  [schedplus]
+TITLE   :XCLN: ErrMsg When Attemtping to Import Another Schedule File
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0,7.5
+OPER/SYS:
+KEYWORDS:kberrmsg kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+, versions 7.0, 7.5 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, you should first make a backup copy of the
+registry files (System.dat and User.dat). Both are hidden files in the
+Windows folder.
+
+SYMPTOMS
+========
+
+When you try to import another Microsoft Schedule+ file into Schedule+ you may
+receive the following error message:
+
+   The file you selected is either not valid or has an older Version number.
+
+CAUSE
+=====
+
+This error message may occur when the registry contains a missing or invalid
+value.
+
+WORKAROUND
+==========
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall Windows 95. Microsoft cannot guarantee that problems
+resulting from the incorrect use of Registry Editor can be solved. Use Registry
+Editor at your own risk.
+
+For information about how to edit the registry, view the Changing Keys And Values
+online Help topic in Registry Editor (Regedit.exe). Note that you should make a
+backup copy of the registry files (System.dat and User.dat) before you edit the
+registry.
+
+To work around this problem, follow these steps:
+
+1. Quit all programs.
+
+2. Click the Start button, and then click Run.
+
+3. In the Open box, type "regedit" (without the quotation marks), and click OK.
+
+4. Locate the following key:
+
+KEY_LOCAL_MACHINE\Software\Microsoft\Schedule+\Application
+
+5. In the Name list, double-click the ScheduleInterfaces key.
+
+6. In the Value Data box, type "msscd mscal" (without the quotation marks), and
+   click OK.
+
+7. On the Reigstry menu, click Exit to close the Registry Editor.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbusage 
+Technology        : kbZNotKeyword2 kbScheduleSearch kbSchedule700 kbSchedule750
+Version           : WINDOWS:7.0,7.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

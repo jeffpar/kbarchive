@@ -1,0 +1,103 @@
+DOCUMENT:Q168446  14-NOV-2000  [word97]
+TITLE   :WD97: Word 2.0 Templates Such as Letblock, Memo2, Not Supported
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kberrmsg kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you attempt to open or use a Word for Windows 2.x template, you may receive
+the following message:
+
+   The macros in this template are in WinWord 2.0 format and will not be
+   converted. Do you want to continue to open the template?
+
+If you click Yes, Word will convert the template, but all macros and glossary
+entries will be lost.
+
+CAUSE
+=====
+
+Word for Windows version 2.x templates are not supported in Microsoft Word 97
+for Windows.
+
+
+MORE INFORMATION
+================
+
+The following is a list of templates that were shipped with Microsoft Word for
+Windows, versions 2.0, 2.0a, 2.0a-CD, 2.0b, and 2.0c:
+
+   Article2.dot
+   Datafile.dot
+   Dissert2.dot
+   Fax.dot
+   Letblock.dot
+   Letmdsem.dot
+   Letmodbk.dot
+   Letpersn.dot
+   Maillabl.dot
+   Memo2.dot
+   Overhead.dot
+   Press.dot
+   Proposal.dot
+   Repland.dot
+   Repside.dot
+   Repstand.dot
+   Term2.dot
+
+
+The following is a list of the Word 2.x templates that were modified for use in
+Microsoft Word for Windows, versions 6.0, 6.0a, and 6.0c:
+
+   Article2.dot
+   Dissert2.dot
+   Fax.dot
+   Memo2.dot
+   Press.dot
+   Proposal.dot
+   Repland.dot
+   Repside.dot
+   Repstand.dot
+   Term2.dot
+
+Some of these templates contain address book, distribution list, and macro
+functionality for Word 2.0. These templates were updated for Word 6.0, but were
+not updated for Word 97.
+
+For address book and distribution list functionality, you can use the Address
+Book feature in Word 97.
+
+Additional query words: 8.0 word8 word97 glossary memo letter Wexler WexTech
+
+======================================================================
+Keywords          : kberrmsg kbusage 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

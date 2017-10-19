@@ -1,0 +1,47 @@
+DOCUMENT:Q98141  30-JUL-2001  [lanman]
+TITLE   :Replacing a Corrupted NET.ACC with Its Backup
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+There is no utility that can fix a corrupted NET.ACC file, but you can replace a
+corrupted one with its uncorrupted backup copy.
+
+Note: DON'T copy a NET.ACC file directly from a backup primary domain controller
+(PDC) to the primary; it can cause problems. Instead, follow this procedure:
+
+1. Change the primary PDC role to backup.
+
+2. Promote a backup PDC to primary.
+
+3. Bring the PDCs back up.
+
+The NET.ACC is copied from the new primary to the new backup, making a NET.ACC
+with all your accounts intact. You can then swap PDC roles again and be back in
+business.
+
+Additional query words: 2.00 2.10 2.10a 2.20
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

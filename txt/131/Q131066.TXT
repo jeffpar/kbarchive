@@ -1,0 +1,111 @@
+DOCUMENT:Q131066  29-JUL-2001  [visualc]
+TITLE   :PRB: C2922 Error for Class Template Containing Friend Function
+PRODUCT :Microsoft C Compiler
+PROD/VER:2.00 2.10
+OPER/SYS:
+KEYWORDS:kberrmsg kbCompiler kbCPPonly kbVC kbprb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), included with:
+    - Microsoft Visual C++, 32-bit Editions, versions 2.0, 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The compiler generates the following error message when the friend function in a
+template class is not prototyped:
+
+   
+
+   Error C2922: 'symbol' a friend function of a template
+                 class must have been previously defined
+
+CAUSE
+=====
+
+Friend functions must be declared before they are used in a template class. You
+cannot have a friend function defined within a class definition. This is a
+Microsoft Specific requirement. Templates are not officially standardized and,
+as a result, different C++ compiler vendors have implemented them differently,
+so this requirement may change in future versions of the compiler.
+
+
+RESOLUTION
+==========
+
+Declare the friend function before using it in the template definition.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+For more information about the Microsoft-specific implementations on the
+templates, please see the Books Online under C/C++, C++ Language Reference,
+Chapter 6 Declarations, Template Specifications, Differences from Other
+Implementations.
+
+Sample Code to Demonstrate Behavior
+-----------------------------------
+
+   /* Compile options : /Ze ( default option )
+   */ 
+
+   #include <iostream.h>
+
+   template <class T> class A;   // Forward declaration
+
+   // Change the following line from a comment into an executed line to
+   // prevent the compiler error with Visual C++, 32-bit edition, version 2.0
+   // or 2.1:
+
+   // template <class T> ostream& operator<< (ostream &s, const A<T> &b);
+
+   template <class T>
+   class A {
+   public:
+      friend ostream & operator << (ostream &s, const A<T> &b);
+   };
+
+   template <class T> ostream& operator<< (ostream &s, const A<T> &b)
+   {
+      return s << "testing";
+   }
+
+   void main()
+   {
+      A<int> fa;
+      cout << fa;
+   }
+
+
+Additional query words: 2.00 2.10 8.0 8.00 8.0c 8.00c 9.0 9.00 9.1 9.10
+
+======================================================================
+Keywords          : kberrmsg kbCompiler kbCPPonly kbVC kbprb 
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : 2.00 2.10
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

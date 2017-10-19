@@ -1,0 +1,73 @@
+DOCUMENT:Q93735  03-OCT-1999  [win3x]
+TITLE   :WFWG Err Msg: The NetWare Shell Has Not Been Loaded...
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When Novell NetWare connectivity is installed and subsequently removed from
+Windows for Workgroups, NetWarn=1 is NOT removed from the [Windows] section of
+the WIN.INI file.
+
+Normally if the value of NetWarn= is 1, and if Novell NetWare connectivity is
+installed, and if MSIPX and NETX are not loaded, the following warning message
+appears when Windows for Workgroups is started:
+
+   The NetWare Shell has not been loaded.
+   All Network functions will be disabled.
+
+If Novell NetWare connectivity is removed, the warning message does not appear
+when Windows for Workgroups is started.
+
+MORE INFORMATION
+================
+
+Some applications, such as Fifth Generation Systems FastBack Plus Windows
+version 1.0, may cause Windows for Workgroups to display the above warning
+message, indicating that the NetWare shell has not been loaded, even though the
+message may be invalid because Novell NetWare connectivity may not be installed.
+This error may also cause the system to stop responding (hang).
+
+Workaround
+----------
+
+To work around the problem, use a text editor to change the NetWarn= value to 0
+in the [Windows] section of the WIN.INI file or remove the NetWarn= line
+entirely.
+
+The products included here are manufactured by vendors independent of Microsoft;
+we make no warranty, implied or otherwise, regarding these products' performance
+or reliability.
+
+Additional query words: 3.10 net ware novell 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

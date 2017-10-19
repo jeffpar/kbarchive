@@ -1,0 +1,121 @@
+DOCUMENT:Q180905  14-NOV-2000  [word97]
+TITLE   :WD97: Errors Saving File with Low Hard Disk Space
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta word97 kbSysSettings
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you save a document, Microsoft Word may stop responding or you may receive
+one of the following error messages:
+
+ - There is not enough memory or disk space to complete the operation.
+
+   -or-
+
+ - There is insufficient memory or disk space. Close extra windows and save your
+   work.
+
+   -or-
+
+ - There is insufficient memory or disk space. Close an application.
+   (<path>\<file name>)
+
+   -or-
+
+ - This program has performed an illegal operation and will be shut down.
+
+   If this problem persists, contact the program vendor.
+
+   When you click Details, the following message is displayed:
+
+   WINWORD caused an invalid page fault in module WINWORD.EXE
+
+
+CAUSE
+=====
+
+There is insufficient disk space available for Word to save the file. When
+working with Word (and other programs for Microsoft Windows), the Windows swap
+file (Win386.swp) increases in size. This increase can be large and can use up
+most or all of the available disk space.
+
+Note that this problem has also been reported to occur if you are running certain
+versions of anti virus software programs.
+
+RESOLUTION
+==========
+
+To prevent this problem from occurring, add more hard disk space, either by
+adding a larger disk drive or by using a disk compression utility.
+
+NOTE: If you are running anti virus software, try disabling it. If this corrects
+the problem, contact the manufacturer of your anti virus software for an update
+or workaround.
+
+To work around this problem in the short-term, use any of the following methods:
+
+ - You may be able to recover some disk space by quitting unneeded programs.
+   After quitting the other programs, it may take a few minutes before Windows
+   changes the size of the swap file.
+
+   -or-
+
+ - You can free disk space by deleting unneeded files.
+
+   -or-
+
+ - You may be able to save your file to a floppy disk drive or network drive.
+
+
+
+REFERENCES
+==========
+
+For additional information, please see the following articles in the Microsoft
+Knowledge Base:
+
+   Q173908 WD97: Errors Opening File If Low Memory or Low Disk Space
+
+   Q135887 OFF: Cannot Start Office Programs If Available Disk Space Low
+
+
+   Q173908 WD97: Errors Opening File If Low Memory or Low Disk Space
+
+   Q160068 WD97: Optimizing Microsoft Word 97
+
+   Q168198 WD97: Troubleshooting Invalid Page Faults in Word 97
+
+Additional query words: hang hung crash crashed locks locked frozen freezes crashing quit quits stopped crashes auto lockup freeze break won't respond waiting near memory stops responding hangs lock up fail
+
+======================================================================
+Keywords          : kbdta word97 kbSysSettings 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

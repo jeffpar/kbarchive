@@ -1,0 +1,118 @@
+DOCUMENT:Q191310  14-NOV-2000  [word97]
+TITLE   :Cannot Create List with Multiple Bullets on One Line
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+You cannot create a bulleted outline list in Word 97 with multiple bullets on
+some lines.
+
+This behavior is different from earlier versions of Word. For example, in Word
+for Windows 95, version 7.0, you can create a bulleted outline list by replacing
+numbers with bullets in multilevel numbering and by then setting the Include
+From Previous Level option to Numbers with the end result being one bullet on
+level 1, two bullets on level 2, and so on. The resulting text resembles the
+following:
+
+   .
+   ..
+   ...
+
+   -or-
+
+   .  Some text.
+
+     ..  Some text.
+
+      ...  Some text.
+
+However, in Word 97, you can have only one bullet per line for each level of your
+outline. The standard multilevel bulleted list in Word 97 uses a different
+bullet or indentation to distinguish each level of the list.
+
+CAUSE
+=====
+
+The Include From Previous Level option is not available in the Customize Outline
+Numbered List dialog box in Word 97. (It is available in the Modify Multilevel
+List dialog box in Word 7.0.)
+
+WORKAROUND
+==========
+
+In Word 97, if you open a document that was formatted in Word 7.0, if the list
+includes a multiple-bullet bulleted list, you will see a custom multilevel
+bulleted list available in Word 97 that has multiple bullets on some lines.
+
+To duplicate this functionality in Word 97, you must start with a document that
+has a bulleted list that is formatted with multiple bullets on some lines. You
+can then create a template that will include this formatting by deleting all of
+the unneeded text in the document with the exception of one or more paragraphs
+that are formatted with the multi-bulleted list and save that document in Word
+97 as a document template.
+
+To save the document as a template, follow these steps:
+
+1. On the File menu, click Save As.
+
+2. In the Save As Type list, select Document Template (*.dot).
+
+3. Change the file name if necessary, and click Save.
+
+To use the multi-bulleted list, open a new document based on the new template. To
+open a new document based on a template, follow these steps:
+
+1. On the File menu, click New.
+
+2. Click to select the template.
+
+3. Click OK.
+
+NOTE: You must have at least one line formatted with the bulleted list in your
+document at all times. If you delete the last paragraph with this formatting or
+remove the list formatting, you will lose the custom bulleted list option.
+
+STATUS
+======
+
+This behavior is by design of Microsoft Word 97.
+
+MORE INFORMATION
+================
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdta 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

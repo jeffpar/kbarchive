@@ -1,0 +1,84 @@
+DOCUMENT:Q68860  05-OCT-1999  [win95x]
+TITLE   :Unable to Move Icons Within Program Groups with Keyboard
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Program icons within program groups in Program Manager cannot be rearranged
+within the group window using a keyboard. This can only be accomplished using a
+mouse.
+
+MORE INFORMATION
+================
+
+You can move a program icon from one program group to another using the
+keyboard, but it is not possible to rearrange an icon within the group window
+using the keyboard.
+
+Use the following keyboard procedure to move a program icon from one program
+group to another:
+
+1. Using the arrow keys, highlight the icon to be moved.
+
+2. Press ALT+F to open the File menu.
+
+3. Press M to choose Move.
+
+4. Press ALT+DOWN ARROW to expand the To-group destination and select the
+   program group you want to move the icon to.
+
+5. Press ENTER.
+
+To simulate the reorganization of icons within a group:
+
+1. From the Options menu choose Auto Arrange.
+
+2. Create a new group.
+
+3. Copy the icons to the new group (using the F8 key) in the order you want them
+   arranged.
+
+4. Delete the original icons and group.
+
+5. Rename the new group if desired.
+
+You can also work around this problem by installing the Trace Access Pack for
+Windows. You can then use the number pad to control the mouse. For more
+information about obtaining the Trace Access Pack for Windows, query on the
+following words in the Microsoft Knowledge Base:
+
+   trace and access and pack and windows
+
+Additional query words: 3.0 win30 3.00a 3.10 3.11 key keypad numpad num pad
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,60 @@
+DOCUMENT:Q88779  05-NOV-1999  [pcmail]
+TITLE   :SMTP: Examples of Typical SMTP Addresses
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to SMTP, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Here are some examples of SMTP address syntax:
+
+ - USER@COMPANY.COM
+
+ - USER@UNIVERSITY.EDU
+
+ - USER@GOVERNMENT.APPS.GOV
+
+ - USER@US.NAVY.MIL
+
+The "USER" portion is mapped to the mailbag name when the gateway receives the
+message. This name can be no longer than 10 characters--something you should
+consider when planning your naming conventions if an SMTP gateway will be used
+in the environment.
+
+The gateway maps everything after the @ sign to a network and postoffice name.
+For more information on this topic, see the "Mapping Microsoft Mail Addresses to
+SMTP Addresses" section in Chapter 3 of the "Microsoft Mail Administrator's
+Guide."
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGateSMTP300
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

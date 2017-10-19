@@ -1,0 +1,82 @@
+DOCUMENT:Q114227  22-NOV-1999  [msdos]
+TITLE   :Err Msg: Invalid Setting in DBLSPACE.INI: FIRSTDRIVE=...
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You receive the following error message when you start your machine from the
+hard disk drive
+
+   Invalid setting in the DBLSPACE.INI file: FIRSTDRIVE=<*>
+
+where <*> is ASCII character 25 (decimal), which is the down-arrow
+character.
+
+In addition, your compressed drives do not mount at startup.
+
+CAUSE
+=====
+
+This problem can occur if the DBLSPACE.BIN file is not in memory (for example,
+because you pressed CTRL+F5 or CTRL+F8 at startup) and you run any of the
+following DoubleSpace commands and then reboot.
+
+   DBLSPACE /AUTOMOUNT=0|1
+   DBLSPACE /DOUBLEGUARD=0|1
+   DBLSPACE /ROMSERVER=0|1
+   DBLSPACE /SWITCHES=F|N|FN
+
+
+RESOLUTION
+==========
+
+To correct this problem, manually mount your DoubleSpace drive(s) by using the
+DBLSPACE /MOUNT command. You must do this for each compressed drive. For more
+information about this command, type "help dblspace /mount" (without the
+quotation marks) at an MS-DOS command prompt.
+
+NOTE: The DBLSPACE.EXE command should be on your uncompressed drive if you were
+able to execute the DoubleSpace commands listed under in the "Cause" section of
+this article. However, if it is not there, you must manually expand it from the
+original MS-DOS disks.
+
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: dblguard 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS620
+Version           : MS-DOS:6.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

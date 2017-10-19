@@ -1,0 +1,63 @@
+DOCUMENT:Q111882  29-OCT-1999  [win3x]
+TITLE   :TI MicroLaser w/EXP16ODI.COM Driver May Cause 15-Second Delay
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print a document to a Texas Instruments (TI) MicroLaser PS35 or TI
+MicroLaser Plus using the PS35 printer driver, the local computer stops
+responding (hangs) for approximately 15 seconds when the final pages print.
+Control of the machine returns after the print job is completed.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows for Workgroups version
+3.11. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+WORKAROUND
+==========
+
+If you are using a TI MicroLaser Plus and PS35 printer driver, you can work
+around this problem by changing the emulation mode to HP LaserJet II, and using
+the HP LaserJet II printer driver.
+
+MORE INFORMATION
+================
+
+
+Additional query words: 3.11 hang lock freeze texas instruments micro laser micro-laser
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

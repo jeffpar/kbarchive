@@ -1,0 +1,71 @@
+DOCUMENT:Q90481  10-OCT-1999  [win3x]
+TITLE   :File Manager Err Msg: An Error Occurred Reading Drive x:
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error message while running Microsoft Windows for
+Workgroups File Manager for version 3.1:
+
+   Error occurred reading drive <x>:
+
+CAUSE
+=====
+
+If you receive this message, check the By File Type setting for invalid
+characters. You can access the By File Type dialog box by choosing By File Type
+from the View menu.
+
+NOTE: This does not apply to Microsoft Windows File Manager version 3.1.
+
+The By File Type dialog box permits invalid MS-DOS characters such as commas and
+square brackets. Using these as search characters returns an MS-DOS error to the
+File Manager and causes the error message above.
+
+WORKAROUND
+==========
+
+Type
+
+   *.*
+
+(asterisk-period-asterisk) in the By File Type dialog box.
+
+If this doesn't correct the problem, there is likely a true disk error.
+
+NOTE: The search string *,* (asterisk-comma-asterisk) can look like *.*
+(asterisk-period-asterisk) on a fuzzy monitor or in a small type face.
+
+Additional query words: 3.10 err msg
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

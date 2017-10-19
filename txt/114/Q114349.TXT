@@ -1,0 +1,62 @@
+DOCUMENT:Q114349  08-AUG-2001  [winnt]
+TITLE   :File and Dir. Names with Caps Show Both 8.3 and Long Filenames
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.5
+OPER/SYS:
+KEYWORDS:kbother
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+On a FAT disk partition, file and directory names containing uppercase
+characters (for example, Test, teSt, and TEST) show up in File Manager as both a
+long filename and a DOS 8.3 filename. The DOS 8.3 filename is visible when the
+DOS Filename option is enabled from the Partial File Details option of the View
+menu or when the All File Details option is chosen from the View menu.
+
+MORE INFORMATION
+================
+
+The MS-DOS FAT file system normally only stores names in uppercase. When you
+create a file or directory with mixed case, Windows NT stores that name in the
+long name space to preserve the case. This necessitates the creation of a short
+name. To illustrate, from a command prompt, type:
+
+   copy con TeSt.TXT
+   This is a test file. <Ctrl-Z>
+   dir /x
+
+you will see:
+
+   ..............  TEST.TXT         TeSt.TXT
+
+Additional query words: lfn prodnt
+
+======================================================================
+Keywords          : kbother 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : 3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

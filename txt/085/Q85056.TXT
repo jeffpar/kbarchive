@@ -1,0 +1,82 @@
+DOCUMENT:Q85056  10-NOV-1999  [pcmail]
+TITLE   :FFAPI: Floppy Disk Layouts
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:MS-DOS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Software Development Kit: FFAPI for Gateways and Applications, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following are lists of the files contained on the Microsoft Mail for PC
+Networks Gateway to FFAPI floppy disks:
+
+Gateway FFAPI
+-------------
+
+   GTWCFG.EXE
+   GTWPUT.EXE
+   GTWGET.EXE
+   README.TXT
+
+Application FFAPI
+-----------------
+
+   APPDIR.EXE
+   APPPUT.EXE
+   APPGET.EXE
+   README.TXT
+
+Remote Application
+------------------
+
+   RMTGET.EXE
+   RMTPUT.EXE
+   README.TXT
+
+REFERENCES
+==========
+
+"Microsoft Mail for PC Networks Software Development Kit Application File Format
+API"
+
+"Microsoft Mail for PC Networks Software Development Kit Gateway File Format
+API"
+
+For more information, query on the following words in the Microsoft Knowledge
+Base (depending on the topic of your interest):
+
+   " Gateway and FFAPI and components
+
+   Application and FFAPI and components " (without the quotation marks)
+
+
+Additional query words: 3.00 pcmail
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbMailSearch kbSDKSearch
+Version           : MS-DOS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

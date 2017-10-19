@@ -1,0 +1,68 @@
+DOCUMENT:Q83514  02-OCT-1999  [win95x]
+TITLE   :Windows Err Msg: Inadequate DPMI Server
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error message after you upgrade your Microsoft
+Windows installation:
+
+   Inadequate DPMI server
+
+CAUSE
+=====
+
+This error can be caused by one of the following:
+
+ - A failed upgrade attempt from Windows 3.0 to Windows version 3.1 or to
+   Windows for Workgroups version 3.1 or 3.11, or a combination of Windows 3.0
+   and 3.1 files in the same directory.
+
+   This error message is displayed when KRNL386.EXE and WIN386.EXE are mismatched
+   (one from Windows 3.0 and the other from Windows 3.1). This can happen if
+   KRNL386.EXE is expanded into the Windows\SYSTEM directory during
+   installation, but WIN386.EXE is not.
+
+ - An incorrect memory configuration. An example of an incorrect memory
+   configuration would be a machine that does not have the correct value
+   specified for the RAM installed.
+
+ - A third party 32-Bit Disk Access driver that conflicts with 32-Bit File
+   Access. To work around this problem either disable 32-Bit Disk Access or
+   32-Bit File Access.
+
+
+Additional query words: 3.1 3.10 3.11 invalid fastdisk vfat
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

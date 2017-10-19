@@ -1,0 +1,69 @@
+DOCUMENT:Q307821  27-SEP-2001  [sna]
+TITLE   :Permissions Lost When Shared Folders Service Is Restarted
+PRODUCT :Microsoft SNA Server
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Host Integration Server 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Any share permissions set through Windows Explorer on a drive that is mapped to
+an AS/400 shared folder by using the Microsoft Host Integration Server 2000
+(HIS) Shared Folders Service are lost when the Shared Folders Service is
+restarted.
+
+CAUSE
+=====
+
+The Shared Folders Service deletes all AS/400 shared folder drive mappings when
+the Service is stopped and recreates the AS/400 shared folder drive mappings
+when the service is started. When the drive mappings are recreated, the Shared
+Folders Service sets the permissions from information that it previously
+stored.
+
+When share permissions are set through the Folder Definition dialog box in SNA
+Manager, the Shared Folders Service stores these permissions for future use.
+
+When share permissions are set through Windows Explorer, Shared Folders is unable
+to detect those changes and does not store the new permissions for future use.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Host Integration
+Server 2000.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDSupport 
+Technology        : kbAudDeveloper kbHostIntegServ2000
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

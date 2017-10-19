@@ -1,0 +1,103 @@
+DOCUMENT:Q185887  11-JAN-2001  [vbwin]
+TITLE   :DOC: Incomplete Documentation for SelPrint Method
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The SelPrint Function of the RichTextBox Control now has an optional second
+parameter that is not documented in the Online Help. The information below can
+also be found in the Readmevb.htm on the Visual Basic 6.0 CD.
+
+MORE INFORMATION
+================
+
+RichTextBox Control: SelPrint Method Has New Argument
+-----------------------------------------------------
+
+The SelPrint method now features a second, optional argument. The syntax and part
+descriptions are shown below:
+
+Syntax object.SelPrint(lHDC As Long, [vStartDoc])
+
+The SelPrint method syntax has these parts:
+
+Part          Description
+---------------------------------------------------------------------------
+object        An object expression that evaluates to a RichTextbox control.
+
+lHDC          Long. The device context of the device you plan to use to
+              print the contents of the control.
+
+vStartDoc     Boolean. Specifies the behavior of the control regarding
+              startdoc and enddoc printer control operations, as shown in
+              settings.
+
+Settings
+
+The settings for vStartDoc are:
+
+Constant        Value           Description
+-----------------------------------------------------------------------------
+True            -1              (Default) The control retains its original
+                                behavior and sends startdoc and enddoc
+                                commands to the printer.
+
+False            0              The control does not send startdoc and
+                                Enddoc commands, but sends only startpage
+                                and endpage commands to the printer.
+
+Remarks:
+
+The argument was added to remedy situations when printers do not print with the
+default behavior. When the SelPrint method is invoked, both Visual Basic and the
+RichTextBox control send startdoc and enddoc commands to the printer resulting
+in a nested pair of startdoc/enddoc commands. Some printers respond only to the
+first pair of commands and thereby become disabled when the RichTextbox control
+sends the second pair. In that case, setting the vStartDoc argument to False
+prevents the second pair of commands from being sent.
+
+REFERENCES
+==========
+
+Readmevb.htm, Visual Basic 5.0, Visual Basic CD
+
+If you execute an EndDoc after a SelPrint method, you may receive the run- time
+error 482 'Printer Error'. For more information, please see the following
+article in the Microsoft Knowledge Base:
+
+   Q184899 : PRB: SelPrint Method Issues an EndDoc When Printing
+
+Additional query words: kbDSupport kbDSD kbCtrl kbPrinting kbVBp600
+
+======================================================================
+Keywords          : kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

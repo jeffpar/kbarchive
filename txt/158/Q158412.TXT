@@ -1,0 +1,70 @@
+DOCUMENT:Q158412  16-JUN-2001  [msnetwork]
+TITLE   :Cannot Install MSN with Proxy Server Set Up
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:2.0,2.5,95
+OPER/SYS:
+KEYWORDS:kbsetup kbmsnkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 2.0, 2.5 
+ - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install the new MSN, The Microsoft Network, you may receive
+the following error message:
+
+   Could not connect to download server, or could not complete the download.
+   Setup is not complete; you must run Setup again to complete the installation.
+
+CAUSE
+=====
+
+This behavior can occur if you have Microsoft Internet Explorer configured to
+connect using a proxy server.
+
+RESOLUTION
+==========
+
+To resolve this behavior, configure Internet Explorer to not use a proxy server.
+To do so, follow these steps:
+
+1. Right-click the Internet Explorer icon on the desktop, and then click
+   Properties.
+
+2. Click the Connection tab.
+
+3. Click the "Access the Internet using a proxy server" check box to clear it.
+
+4. Click OK.
+
+You can now install MSN.
+
+Additional query words: msn
+
+======================================================================
+Keywords          : kbsetup kbmsn kbfaq
+Technology        : kbOSWin95 kbOSWinSearch kbMSNSearch kbMSN200 kbMSN250
+Version           : WINDOWS:2.0,2.5,95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

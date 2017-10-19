@@ -1,0 +1,73 @@
+DOCUMENT:Q199844  07-MAY-2002  [homegame]
+TITLE   :FS98/2000: No Lessons Are Displayed in the Lessons List
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbsetup kbui fs98 kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 2000 
+ - Microsoft Flight Simulator 2000 Professional Edition 
+ - Microsoft Flight Simulator 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Microsoft Flight Simulator 98 or Microsoft Flight Simulator 2000, when you
+click Learn to Fly and then click Lessons, no lessons may be displayed in the
+Lessons list.
+
+CAUSE
+=====
+
+This behavior can occur if you selected the Custom installation option and did
+not choose to install the lessons.
+
+RESOLUTION
+==========
+
+To resolve this issue, remove and reinstall Flight Simulator 98 or Microsoft
+Flight Simulator 2000 using the Typical installation option. To do this:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. On the Install/Uninstall tab, click Microsoft Flight Simulator 98 or
+   Microsoft Flight Simulator 2000, and then click Add/Remove.
+
+4. When you are prompted to remove Microsoft Flight Simulator, click OK.
+
+5. Reinstall Flight Simulator 98 or Flight Simulator 2000. When you are prompted
+   to select an installation option, click Typical.
+
+6. Follow the instructions on the screen to install the program.
+
+
+Additional query words: msgame fs98 flightsim fsim fltsim
+
+======================================================================
+Keywords          : kbsetup kbui fs98 kbimu msgame 
+Technology        : kbGamesSearch kbFlightSimSearch kbFlightSim2000 kbFlightSim98 kbSimSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,59 @@
+DOCUMENT:Q302534  21-JUN-2001  [msnetwork]
+TITLE   :Broadband User Wants To Use Dial-up Access
+PRODUCT :The Microsoft Network
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+You have been using a broadband connection and have decided to change to dial-up
+access. You start MSN Companion using your broadband connection, and then click
+connection settings at the top of the page. You then click the link "I do not
+want to use my broadband connection anymore." Then, the next time you start MSN
+Companion, the device attempts to connect via broadband.
+
+MSN Companion is detecting the Universal Serial Bus (USB) to Ethernet component,
+and there is no message telling the customer to use this method.
+
+MORE INFORMATION
+================
+
+To resolve this issue
+
+ - Remove the USB to Ethernet device, plug in the phone line, and then restart
+   MSN Companion.
+   MSN Companion will attempt to detect the USB to Ethernet device and fail. As a
+   result, MSN Companion will attempt to connect via the available phone line.
+
+Additional query words: kbimu; MSN Companion
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSNCompanion
+Version           : :2.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

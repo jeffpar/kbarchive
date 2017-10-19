@@ -1,0 +1,98 @@
+DOCUMENT:Q316807  18-FEB-2002  [foxpro]
+TITLE   :FIX: Fatal Error When You Select Properties from the Table Menu
+PRODUCT :Microsoft FoxPro
+PROD/VER::6.0,7.0
+OPER/SYS:
+KEYWORDS:KbDBFDBC kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700 _IK283
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 7.0, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you click Properties on the Table menu in Visual FoxPro while a Browse window
+is open, and the table does not belong to the current data session, the
+following errors may occur:
+
+   Fatal error: Exception code=C0000005
+
+   followed by:
+
+   The instruction at "0x77e6e5dc" referenced memory at "0x00000000". The memory
+   could not be "written".
+
+Note that these errors do not occur if another table receives focus before you
+click Properties.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Visual FoxPro for
+Windows 7.0. For additional information, please see the following article in the
+Microsoft Knowledge Base:
+
+   Q316964 How to Obtain the Latest Visual FoxPro for Windows 7.0 Service Pack
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Visual FoxPro for
+Windows 7.0. This problem was first corrected in Visual FoxPro for Windows 7.0
+Service Pack 1.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Paste the following code in a program file and then run the file:
+
+   CREATE TABLE mytable (fld1 C(10))
+   INSERT INTO mytable (fld1) VALUES ("Record one")
+   USE
+
+   PUBLIC oForm
+
+   oForm = NEWOBJECT("myform")
+
+   DEFINE CLASS myform AS FORM
+   	DATASESSION=2
+
+   PROCEDURE INIT
+   	USE mytable  
+   	BROWSE NOWAIT 
+
+   ENDDEFINE
+
+2. When the Browse window appears, click Properties on the Table menu.
+
+Additional query words: kbVFP700sp1fix
+
+======================================================================
+Keywords          : KbDBFDBC kbGrpDSFox kbDSupport kbCodeSnippet kbvfp700 _IK283 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600 kbVFP700
+Version           : :6.0,7.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

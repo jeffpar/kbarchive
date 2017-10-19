@@ -1,0 +1,90 @@
+DOCUMENT:Q130755  05-NOV-1999  [pcmail]
+TITLE   :PC Adm: Err Msg: Notice 9 Error File Not Accessible
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you add an external postoffice definition using the Mail Administrator
+program (ADMIN.EXE), you may get one of the following messages:
+
+   Notice 9
+   Error file not accessible
+   Check server connection
+   Press Enter to continue
+
+   -or-
+
+   Notice 51
+   Error File not accessible
+   Check Server connection
+   Press enter to continue
+
+CAUSE
+=====
+
+The Notice 9 error occurs when the ADMIN.EXE program is unable to access the
+following two error message files, which are usually located in the GLB
+subdirectory of the postoffice database:
+
+   ERRORADM.GLB
+   ERRORDYN.GLB
+
+The Notice 51 error occurs when you try to go into Admin-Queue, and the following
+files are missing from the \GLB directory:
+
+   ENGMAI.GLB
+   ENGMON.GLB
+   ERRORADM.GLB
+   ERRORDYN.GLB
+
+RESOLUTION
+==========
+
+NOTE: The following is the resolution for both of the above error messages.
+
+Check the GLB subdirectory for the existence of these files. If they do not
+exist, the administrator can replace these files in one of the following ways:
+
+ - Find another postoffice in the Mail system that contains these files and copy
+   them from that postoffice to the GLB subdirectory of the problem postoffice.
+
+ - Use the complete set of Setup disks for version 3.2 of Microsoft Mail for PC
+   Networks, and install a complete temporary postoffice on a local workstation
+   hard drive. Be careful to install the complete client software (for both
+   MS-DOS and Windows) as well. The temporary postoffice will contain the
+   missing files in the GLB subdirectory. Copy the files to the problem
+   postoffice's GLB subdirectory.
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN320
+Version           : WINDOWS:3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

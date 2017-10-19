@@ -1,0 +1,83 @@
+DOCUMENT:Q145671  01-JUN-2001  [homemm]
+TITLE   :How to Uninstall Microsoft Pregnancy and Child Care Program
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Pregnancy and Child Care, Preview on MSN 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article tells how to remove the Microsoft Pregnancy and Child Care program
+files from your computer. This makes available 4 MB of hard disk space.
+
+MORE INFORMATION
+================
+
+To uninstall Microsoft Pregnancy and Child Care from your hard drive, do the
+following:
+
+1. Click the Start button, point to Settings, and then click Control Panel.
+
+2. Double-click Add/Remove Programs.
+
+3. On the Install/Uninstall tab, click Microsoft Pregnancy and Child Care, and
+   then click Add/Remove.
+
+4. Click OK.
+
+5. When the following message appears, click OK.
+
+   Some files and/or directories could not be deleted
+
+6. When you are told the program has been removed, click OK.
+
+Manually Removing the Program
+-----------------------------
+
+If you have problems using the Add/Remove Programs feature, manually remove the
+program from your hard drive:
+
+1. Open the following folder:
+
+   C:\Program Files\The Microsoft Network\Custom Applications
+
+   Where C is the letter of your hard drive where you installed Windows.
+
+2. Delete the Pregnancy And Child Care folder and its contents.
+
+For more information about this topic related issues, see the Microsoft Knowledge
+Base (KB). The KB contains thousands of articles that include answers to common
+questions about using Microsoft applications. To access the Knowledge Base,
+return to the container where you found this document and click the Microsoft
+Knowledge Base icon.
+
+Additional query words: kbhowto 1.00 multi media multimedia multi-media mmtitles kbmm online on line on-line msnet microsoft network
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

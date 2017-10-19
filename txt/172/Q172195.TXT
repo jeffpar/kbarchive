@@ -1,0 +1,78 @@
+DOCUMENT:Q172195  09-AUG-2001  [winnt]
+TITLE   :Service Control Manager Reports Error But No Event ID Is Listed
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINDOWS NT:4.0
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Workstation version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Windows NT 4.0, you may receive the following error message:
+
+   At Least One Service or Driver Failed During System Startup. Use Event Viewer
+   to Examine the Event Log for Details.
+
+When you check Event Viewer, there are no error messages.
+
+CAUSE
+=====
+
+This behavior can occur if a driver does not start correctly but does not report
+errors to the Event Log service.
+
+One driver that exhibits this behavior is the UMAX scanner driver (UMAXDRV). If
+the scanner is turned off, the driver does not load, which causes the error
+message. However, the driver does not report the failure to the Event Log
+service.
+
+RESOLUTION
+==========
+
+Either resolve the issue that caused the driver not to load successfully (for
+example, turn on the scanner before booting) or disable the driver by following
+these steps:
+
+1. In Control Panel, double-click Devices.
+
+2. Click the driver, and then click Startup.
+
+3. Click Disabled, and then click OK.
+
+4. Click Close.
+
+MORE INFORMATION
+================
+
+The third-party product discussed in this article is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WINDOWS NT:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

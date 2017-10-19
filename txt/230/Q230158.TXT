@@ -1,0 +1,69 @@
+DOCUMENT:Q230158  10-AUG-2001  [winnt]
+TITLE   :Err: "The Network Path Was Not Found" When Using Server Manager
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0,4.0a,4.5
+OPER/SYS:
+KEYWORDS:kberrmsg kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Windows NT Server version 4.0, Terminal Server Edition 
+ - Microsoft Windows NT Server, Enterprise Edition version 4.0 
+ - Microsoft BackOffice Small Business Server versions 4.0, 4.0a, 4.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click commands from menus in Server Manager, the following error
+message may be displayed:
+
+   The network path was not found.
+
+CAUSE
+=====
+
+This problem occurs when the selected computer is offline or not available.
+Computers that are offline are represented with a dimmed or grayed-out icon.
+
+RESOLUTION
+==========
+
+To resolve this problem, click the name of the computer you wish to administer
+that is online. Then click commands from the Computer, MacFile, or FPNW menus.
+
+MORE INFORMATION
+================
+
+The menu commands act on the computer selected in the list. When you start
+Server Manager, it defaults to administering the domain of the currently logged
+on user. Furthermore, the default computer selected is the first computer in the
+list, not the local computer. This default computer might be unavailable or
+offline.
+
+Additional query words: grey gray
+
+======================================================================
+Keywords          : kberrmsg kbui 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400 kbWinNTS400search kbWinNTS400 kbNTTermServ400 kbNTTermServSearch kbAudDeveloper kbSBServSearch kbSBServ400 kbSBServ400a kbSBServ450
+Version           : winnt:4.0,4.0a,4.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,66 @@
+DOCUMENT:Q77448  17-DEC-2000  [msdos]
+TITLE   :Generic CADD Does Not Run from MS-DOS 5.0 Shell
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Generic Software has confirmed that running Generic CADD Level 3 Revision 4 from
+MS-DOS version 5.0 Shell may result in missing or garbled characters when you
+load or print drawings.
+
+Generic Software does not recommend running Generic CADD with any other
+memory-resident software or from MS-DOS Shell.
+
+MORE INFORMATION
+================
+
+Generic Software recommends running Generic CADD directly from the command
+prompt. Generic Software also recommends that no memory-resident software be
+active when executing Generic CADD, including MS-DOS Shell.
+
+Executing Generic CADD with memory resident software may result in incomplete
+drawings or unnecessary characters when you load a file to print or view from
+the screen.
+
+Generic CADD requires 585K of conventional memory to run. To invoke Generic CADD
+from the command prompt, type "cadd" (without the quotation marks) from the CADD
+subdirectory.
+
+The Generic Software product included here is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+
+Additional query words: 5.00 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

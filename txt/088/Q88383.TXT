@@ -1,0 +1,58 @@
+DOCUMENT:Q88383  13-DEC-1999  [win95x]
+TITLE   :Windows Err Msg: Problem Drawing or Printing Object
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11; :3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows Resource Kit, version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Write to open or print the MOUSEQA.WRI file packaged with the
+Microsoft Windows Resource Kit for operating system 3.1, the following error
+message may appear:
+
+   Problem Drawing or Printing Object
+
+WORKAROUND
+==========
+
+Install the standard VGA video driver that comes with Windows 3.1, or install
+any compatible 16-color driver.
+
+MORE INFORMATION
+================
+
+This error message is generated when you are using a 256-color video driver, and
+you attempt to open MOUSEQA.WRI, which contains a 16-color mouse image.
+
+Additional query words: 3.10 3.11 err msg icon
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11; :3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

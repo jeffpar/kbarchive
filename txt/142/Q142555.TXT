@@ -1,0 +1,66 @@
+DOCUMENT:Q142555  08-AUG-2001  [winnt]
+TITLE   :Installing IIS FTP over Microsoft Windows NT FTP Service
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:1.0,4.0
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft Internet Information Server 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article discusses installing the Internet Information Server (IIS) FTP
+service when the Microsoft Windows NT FTP service is already installed.
+
+MORE INFORMATION
+================
+
+Microsoft recommends that you remove the installation of Microsoft Windows NT
+FTP service before you install the IIS FTP service.
+
+However, if you try to install IIS over Microsoft Windows NT FTP service, the IIS
+Setup program detects the Windows NT FTP service and gives you the following
+option message:
+
+   Setup has detected Microsoft Windows NT FTP service in the system. In order
+   for Microsoft Internet Information Server's FTP service to function properly
+   you need to disable the Microsoft Windows NT FTP Service. Do you wish to
+   disable the service now?
+
+If you select Yes, the Microsoft Windows NT FTP service is disabled, and the IIS
+FTP service is enabled. If you select No, the Microsoft Windows NT FTP service
+remains enabled, and the IIS FTP service is disabled.
+
+If you select Yes and later want to re-enable the original Microsoft Windows NT
+FTP service, you must first remove the IIS FTP service and re-enable the
+Microsoft Windows NT FTP service from Control Panel, Services, Startup.
+
+Additional query words: prodiis1
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbiisSearch kbiis100
+Version           : winnt:1.0,4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,208 @@
+DOCUMENT:Q255790  21-JUL-2000  [foxpro]
+TITLE   :HOWTO: Use a DataCombo ActiveX Control in Visual FoxPro
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbActiveX kbADO kbContainer kbCtrl kbDatabase kbvfp600 kbVS600sp3 kbGrpDSFox kbGrpDSMDA
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft DataCombo control (Msdatlst.ocx) cannot directly use Microsoft
+Visual FoxPro tables as a data source. The DataCombo control can, however, be
+bound to an ActiveX Data Objects (ADO) recordset. This article illustrates how
+to bind a DataCombo ActiveX control to an ADO recordset from within a Visual
+FoxPro application.
+
+The code in this article requires installation of Microsoft Visual Studio Service
+Pack 3.
+
+MORE INFORMATION
+================
+
+NOTE: The Microsoft DataCombo control has not been tested with and is not
+supported by Microsoft Visual FoxPro.
+
+In order to bind a DataCombo ActiveX control to an ADO recordset, a recordset
+that can be bookmarked or a client-side ADO recordset must first be created.
+After this ADO recordset has been created, the DataCombo.BoundColumn,
+DataCombo.ListField, and DataCombo.RowSource properties are used to bind the
+control with the ADO recordset, as follows:
+
+   WITH THISFORM.DataCombo1
+      .BOUNDCOLUMN = myrs.FIELDS(0).NAME  && Source Field being bound to
+      .ListField = myrs.FIELDS(0).NAME    && Source Display Field
+      .ROWSOURCE = myrs                   && Source Recordset
+   ENDWITH
+
+1. Create a program file named "DataCombo.prg" (without the quotation marks)
+   using the following code:
+
+   oX = CREATEOBJECT('MYFORM')
+   oX.SHOW()
+
+   READ EVENTS
+
+   DEFINE CLASS myform AS FORM
+   	CAPTION = "DataCombo Control Form"
+   	HEIGHT = 250
+   	LEFT = 0
+   	TOP = 0
+   	WIDTH = 375
+   	NAME = "myform"
+
+   	ADD OBJECT DataCombo1 AS OLECONTROL WITH ;
+   		OLECLASS = "MSDataListLib.DataCombo.1",;
+   		TOP		 = 25, ;
+   		LEFT	 = 25, ;
+   		HEIGHT   = 22, ;
+   		WIDTH	 = 175, ;
+   		NAME     = "DataCombo1"
+
+   	ADD OBJECT textBox1 AS TEXTBOX WITH ;
+   		TOP     = 65, ;
+   		LEFT    = 25, ;
+   		HEIGHT  = 25, ;
+   		WIDTH   = 150, ;
+   		NAME    = "textBox1", ;
+   		CONTROLSOURCE = "demo.cCustName"
+
+   	ADD OBJECT commandButton2 AS COMMANDBUTTON WITH ;
+   		TOP     = 225, ;
+   		LEFT    = 275, ;
+   		HEIGHT  = 25, ;
+   		CAPTION = "\<Close", ;
+   		NAME    = "commandButton2"
+
+   	PROCEDURE LOAD
+   		#DEFINE adUseClient 3
+   		#DEFINE adLockOptimistic 3
+   		WITH THIS
+   *!*		 Create an ADO Connection to the FoxPro Samples
+   			.ADDPROPERTY("oConn")
+   			.oConn = CREATEOBJECT("ADODB.CONNECTION")
+
+   *!* 	Need a Client Side Cursor for this
+   			.oConn.CursorLocation = adUseClient
+
+   *!* 	Open the data source - make sure the Samples directory is correctly
+   *!* 	set in Tools:Options:File Locations
+   			.oConn.OPEN("DRIVER=Microsoft Visual FoxPro Driver;" + ;
+   				"SourceType=DBC;SourceDB=" + HOME(2) + "DATA\TESTDATA.DBC;" + ;
+   				"Exclusive=NO;BackGroundFetch=NO;NULL=NO;Collate=MACHINE")
+
+   *!* 	Create an ADO Recordset to be used as the datasource for the DataCombo control
+   			.ADDPROPERTY("oRS")
+   			.oRS = CREATEOBJECT("ADODB.RECORDSET")
+
+   *!* 	Set the connection property of the recordset
+   			.oRS.ActiveConnection = THISFORM.oConn
+
+   *!*		The recordset inherits the cursorlocation of the connection
+   			.oRS.LockType = adLockOptimistic
+   			.oRS.OPEN("SELECT contact FROM CUSTOMER",,,, 1)
+   		ENDWITH
+
+   		IF !FILE('demo.dbf')
+   			CREATE TABLE demo (cCustName c(30))
+   			APPEND BLANK
+   		ENDIF
+
+   		IF !USED('demo')
+   			USE demo
+   		ENDIF
+   	ENDPROC
+
+   	PROCEDURE INIT
+   		LOCAL loField
+
+   *!* 	Set properties for the DataCombo control
+   		WITH THIS.DataCombo1
+   			loField = THISFORM.oRS.FIELDS(0)
+
+   			.TEXT = loField.VALUE		 && Display value
+   			.BOUNDCOLUMN = loField.NAME  && Source Field being bound to
+   			.ListField = loField.NAME	 && Source Display Field
+   			.ROWSOURCE = THISFORM.oRS	 && Source Recordset
+   		ENDWITH
+   	ENDPROC
+
+   	PROCEDURE DataCombo1.DBLCLICK
+   		LPARAMETERS area
+
+   		SELECT demo
+   		IF RECCOUNT() = 0
+   			INSERT INTO demo VALUES (THIS.TEXT)
+   		ELSE
+   			UPDATE demo SET cCustName = THIS.TEXT
+   		ENDIF
+   		THISFORM.REFRESH
+   	ENDPROC
+
+   	PROCEDURE commandButton2.CLICK
+   		THISFORM.RELEASE
+   	ENDPROC
+
+   	PROCEDURE UNLOAD
+   		WITH THIS
+   			.oRS.CLOSE
+   			.oConn.CLOSE
+   			.oRS = .NULL.
+   			.oConn = .NULL.
+   		ENDWITH
+   		
+   		CLOSE TABLES ALL
+   		CLEAR EVENTS
+   	ENDPROC
+   ENDDEFINE
+
+2. Save and run DataCombo.prg.
+
+3. Click on the DataCombo control to expand the drop-down box.
+
+4. Double-click the DataCombo control and note that the text box value has been
+   set to the value displayed in the DataCombo control.
+
+(c) Microsoft Corporation 2000, All Rights Reserved. Contributions by John Desch,
+Microsoft Corporation.
+
+
+REFERENCES
+==========
+
+For additional information regarding ActiveX Controls supported with Microsoft
+Visual FoxPro 6.0, click the article number below to view the article in the
+Microsoft Knowledge Base:
+
+   Q191222 INFO: ActiveX Controls Supported by Visual FoxPro 6.0
+
+Additional query words:
+
+======================================================================
+Keywords          : kbActiveX kbADO kbContainer kbCtrl kbDatabase kbvfp600 kbVS600sp3 kbGrpDSFox kbGrpDSMDAC kbDSupport kbMDAC260 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

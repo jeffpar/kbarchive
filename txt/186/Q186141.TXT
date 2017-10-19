@@ -1,0 +1,79 @@
+DOCUMENT:Q186141  24-MAY-2002  [word97]
+TITLE   :WD97: Bullets/Numbering Removed Opening WordPerfect 5.x Document
+PRODUCT :Word 97 for Windows
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kb3rdparty kbdta word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you open a Word 97 document containing bullets and/or numbers that you
+saved in the WordPerfect 5.x for Windows format, the bullets and numbers are not
+retained.
+
+CAUSE
+=====
+
+This behavior occurs if Microsoft FrontPage 98 is installed on the same computer
+as Microsoft Word 97.
+
+RESOLUTION
+==========
+
+To resolve this problem, upgrade to Microsoft Word 97 for Windows Service
+Release 1 (SR-1).
+
+You can work around this problem without upgrading to Microsoft Word Service
+Release 1 (SR-1). To do this, perform a custom installation of FrontPage 98 and
+do not do not install the Proofing Tools and Converters (in the Components
+section).
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Microsoft Word 97
+Service Release 1 (SR-1).
+
+MORE INFORMATION
+================
+
+For additional information about SR-1, please see the following articles in the
+Microsoft Knowledge Base:
+
+
+   Q150613 OFF97: Microsoft Office 97 Service Release 1 Patch
+
+Additional query words: 8.0
+
+======================================================================
+Keywords          : kb3rdparty kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

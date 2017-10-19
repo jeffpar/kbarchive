@@ -1,0 +1,72 @@
+DOCUMENT:Q139726  18-DEC-2000  [win95x]
+TITLE   :Hang or Power Loss During DriveSpace Operation
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Your computer stops responding (hangs) or loses power during one of the
+following DriveSpace operations:
+
+ - Compressing an existing drive
+
+ - Uncompressing a DoubleSpace or DriveSpace drive
+
+ - Creating a new, empty DriveSpace drive
+
+ - Changing the size of a DoubleSpace or DriveSpace drive
+
+ - Changing the estimated compression ratio (ECR) for a DoubleSpace or
+   DriveSpace drive
+
+ - Mounting a DoubleSpace or DriveSpace drive
+
+ - Upgrading (converting) a DoubleSpace or DriveSpace drive to DriveSpace 3
+   format
+
+RESOLUTION
+==========
+
+To resolve this situation, try restarting your computer. Many DriveSpace
+operations are "restartable." That is, the DriveSpace operation that was being
+performed can restart automatically when you restart your computer.
+
+For additional information about troubleshooting DriveSpace problems, please see
+the following articles in the Microsoft Knowledge Base:
+
+   Q133175 Troubleshooting DriveSpace in Windows 95
+
+   Q136899 DriveSpace Restartability in Windows 95 and Microsoft Plus!
+
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

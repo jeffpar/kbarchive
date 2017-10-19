@@ -1,0 +1,75 @@
+DOCUMENT:Q156545  19-DEC-1999  [exchange]
+TITLE   :XFOR: How to Set Up a 2nd MS-type Proxy Address for MSMail Users
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0,5.0,5.5
+OPER/SYS:
+KEYWORDS:kbenv exc4 exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+To set up a secondary Microsoft Mail proxy address for Microsoft Mail users to
+send mail to:
+
+1. In the Microsoft Exchange Server Administrator program, bring up the
+   properties of the mailbox you want a to add a new proxy address for.
+
+2. Click the "E-mail Addresses" tab.
+
+3. Click New and click Microsoft Mail Address.
+
+4. Enter the information requested and apply.
+
+   This new proxy address must now be defined as an external postoffice on all
+   Microsoft Mail Postoffices that are indirect via the Microsoft Mail Connector
+   Interchange Connector postoffice.
+
+MORE INFORMATION
+================
+
+Example:
+
+Bob needs a secondary proxy address. So we give Bob a new proxy address with his
+old NET/PO: OLDNET/OLDPO/BOB. Now Bob has two MS-type addresses:
+
+   MS:ORG/SITE/BOB
+   MS:OLDNET/OLDPO/BOB
+
+Now you need to go to the Microsoft Mail server and use the Microsoft Exchange
+Server Administrator program to create a new postoffice definition for
+OLDNET/OLDPO as indirect via ORG/SITE. This will allow Microsoft Mail users to
+mail to this address.
+
+NOTE: Exchange users will receive non-delivery reports (NDRs) when sending mail
+messages to this address. This procedure only allows foreign mail systems to use
+the second proxy address.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv exc4 exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0,5.0,5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

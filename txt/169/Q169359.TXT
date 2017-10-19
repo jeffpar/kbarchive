@@ -1,0 +1,66 @@
+DOCUMENT:Q169359  16-APR-2000  [powerpt]
+TITLE   :PPT7: Error Editing PowerPoint 4.0 Object in Word 6.0 Document
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:kberrmsg kbinterop kbole kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you open a Microsoft Word for Windows, version 6.0, document in Microsoft
+Word for Windows 95, version 7.0, and double-click an embedded PowerPoint slide
+or presentation, you receive one of the following error messages:
+
+   Word cannot edit the Microsoft PowerPoint Slide
+
+-or-
+
+   Word cannot edit the Microsoft PowerPoint Presentation.
+
+This error may occur if you create the document on a computer running Microsoft
+Word, version 6.0, and PowerPoint, version 4.0, and open it on a computer
+running Microsoft Word, version 7.0 and PowerPoint, version 7.0.
+
+CAUSE
+=====
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. This problem was corrected in Microsoft
+PowerPoint 97.
+
+Additional query words: 7.00 ppt7 ppt7.0 powerpnt embedded linked source file server application cannot be found kberrmsg
+
+======================================================================
+Keywords          : kberrmsg kbinterop kbole kbdta 
+Technology        : kbPowerPtSearch kbPowerPt700 kbZNotKeyword2 kbPowerPt700Search
+Version           : WINDOWS:7.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

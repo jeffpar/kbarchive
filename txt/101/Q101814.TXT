@@ -1,0 +1,76 @@
+DOCUMENT:Q101814  29-OCT-1999  [pcmail]
+TITLE   :PC Win: Network File Locking Problems
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0,3.0b,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0, 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Some peer-to-peer networks may have difficulty locking files in versions 3.0 and
+3.2 of Microsoft Mail for Windows. Common error messages caused by insufficient
+file locks are:
+
+   Your message file could not be opened. To access your message file in its
+   current location, mail requires that the MS-DOS utility SHARE.EXE be run
+   before Windows is started.
+
+   -or-
+
+   You do not have the proper access to the postoffice. Please contact your
+   system administrator.
+
+   -or-
+
+   Another machine is already signed in with the user name you have entered.
+   Sign out from the other machine and try again.
+
+CAUSE
+=====
+
+Some possible causes of the above errors are as follows:
+
+ - Allocated file space for SHARE.EXE is insufficient.
+
+ - The number of files that can be locked at one time is insufficient.
+
+RESOLUTION
+==========
+
+To remedy this problem, load SHARE.EXE on the server storing the postoffice with
+the following command-line options:
+
+   share /F:16384 /L:255
+
+For more information on SHARE.EXE, see your Microsoft MS-DOS documentation.
+
+Additional query words: 3.00 3.00b 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300 kbMail320 kbMail300b
+Version           : WINDOWS:3.0,3.0b,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

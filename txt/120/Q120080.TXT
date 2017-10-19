@@ -1,0 +1,67 @@
+DOCUMENT:Q120080  03-AUG-2000  [foxpro]
+TITLE   :BUG: CTRL+Q Doesn't Exit from a READ
+PRODUCT :Microsoft FoxPro
+PROD/VER:MACINTOSH:2.5x,2.6a,3.0b
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxPro for Macintosh, versions 2.5x, 2.6a 
+ - Microsoft Visual FoxPro for Macintosh, version 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+FoxPro does not exit from a READ when the CTRL+Q key combination is pressed.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article.
+
+MORE INFORMATION
+================
+
+In other FoxPro products, the CTRL+Q key combination exits from a READ without
+saving any changes.
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Type the following code in the Command window:
+
+         x = 'TEST'
+         @ 1,1 SAY x GET x
+         READ
+
+2. Press CTRL+Q to exit from the READ.
+
+Note that nothing happens. To exit successfully, press ESC or CTRL+W.
+
+Additional query words: VFoxMac FoxMac 2.50b 2.50c quit control key shortcuts escape buglist2.50b buglist2.50c buglist2.60a buglist3.00b akz
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHWMAC kbOSMAC kbVFPsearch kbAudDeveloper kbFoxproSearch kbFoxPro260aMac kbVFP300bMac
+Version           : MACINTOSH:2.5x,2.6a,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

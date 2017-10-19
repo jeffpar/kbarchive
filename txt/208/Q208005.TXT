@@ -1,0 +1,80 @@
+DOCUMENT:Q208005  04-MAY-2001  [visualc]
+TITLE   :FIX: Page Table Initialization Missing in x86 OAL
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbETK kbVC500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows CE Embedded Toolkit for Visual C++ 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An x86-based implementation of the Windows CE operating system does not boot
+when a custom physical memory layout is used.
+
+CAUSE
+=====
+
+The Windows CE x86 OAL code supplied in the Windows CE Embedded Toolkit for
+Visual C++ 5.0 lacks an OEM customizable routine to preset entries into the page
+table. This prevents the OEM from building a proper initial virtual memory
+address space during system initialization.
+
+RESOLUTION
+==========
+
+To correct this problem, the Windows CE kernel component NK.LIB has been updated
+to call a new OAL function, OEMInitPageTable(). A new OAL sample file has been
+added (Oeminit.asm) to implement this new OAL function. By modifying the
+OEMInitPageTable() function an OEM can properly build the initial page table to
+match the physical memory layout of the platform.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug has been corrected in the Windows CE 2.1
+Enhancement Pack for the Embedded Toolkit, and is also available as a patch for
+Windows CE 2.0 from Microsoft Developer support.
+
+MORE INFORMATION
+================
+
+The Windows CE x86 kernel contains an initial page table that maps memory
+resources for a x86 development platform. This page table may not be appropriate
+for all other x86 platform implementations.
+
+Flash memory, additional DRAM, and ROM address space may not be a part of the
+built-in page table and will cause the system to halt when the switch from
+physical addressing to virtual addressing takes place.
+
+Additional query words: wceoem
+
+======================================================================
+Keywords          : kbETK kbVC500 
+Technology        : kbAudDeveloper kbWinCEETKSearch kbWinCESearch kbWinCEETKVC500
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

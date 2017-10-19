@@ -1,0 +1,79 @@
+DOCUMENT:Q168805  14-NOV-2000  [word97]
+TITLE   :WD97: Creating Large Numbers of Styles Creates Huge Scratch File
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive one of the following error messages when trying to save, open,
+or close a document in Word, or while performing other Windows functions while
+Word is running:
+
+   The disk is full trying to write to <drive>. Free some space on this
+   drive, or save the document on another disk.
+
+   -or-
+
+   The disk is full or too many files are open.
+
+   -or-
+
+   Saving the AutoRecovery file is postponed for <file name>.
+
+CAUSE
+=====
+
+When you add a large number of styles to a document (or to several documents),
+the Word temporary scratch file, ~Wrs0001.tmp may become extremely large.
+Closing the original document has no effect on the scratch file.
+
+These error messages may occur if the ~Wrs0001.tmp file becomes too large,
+causing your computer to run out of disk space.
+
+WORKAROUND
+==========
+
+To work around this problem, quit and restart Microsoft Word. Quitting Word will
+remove the scratch file.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word 97. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kberrmsg word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

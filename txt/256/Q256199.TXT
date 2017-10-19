@@ -1,0 +1,82 @@
+DOCUMENT:Q256199  17-MAR-2000  [exchange]
+TITLE   :XFOR: Migration Wizard May Not Work w. Events 8074, 8124, 8002
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you migrate users from other e-mail systems (such as Lotus cc:Mail or Lotus
+Notes) to Exchange Server by using the Exchange Server Migration Wizard, the
+following error messages may be logged in Windows NT application event log:
+
+   Event Type: Error
+   Event Source: MSExchangeMig
+   Event ID: 8074
+   Description:
+   MAPI Section
+   C:\Misc\Temp\TestMig\Notes.002\00000001.PRI
+   Line: 2
+   Failed to connect to the Mailbox.
+
+   Event Type: Error
+   Event Source: MSExchangeMig
+   Event ID: 8124
+   Description:
+   Parser Error C:\Misc\Temp\TestMig\Notes.002\00000001.PRI Line: 4
+   Bad section encountered. The remainder of this section will be skipped.
+
+   Event Type: Error
+   Event Source: MSExchangeMig
+   Event ID: 8002
+   Description:
+   Errors occurred during the Migration Process. A recovery file has been created
+   called C:\TEMP\00000012.PRI.
+
+MORE INFORMATION
+================
+
+This problem can occur if you use the two-step migration process and, during the
+first step, you click to clear the "Information to create mailboxes" check box.
+If you do this, the second step of the two-step migration process does not work
+unless you already have an existing mailbox or custom recipient for the users in
+the Exchange Directory that you want to migrate.
+
+To ensure that you have an entry in the Exchange Server directory before
+migration, either manually create a mailbox for the user or create a custom
+recipient by using the directory synchronization process. Alternatively, allow
+the migration process to create a mailbox by clicking to select the "Information
+to create mailboxes" check box.
+
+Additional query words: two-step mailmig
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

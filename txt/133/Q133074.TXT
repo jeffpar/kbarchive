@@ -1,0 +1,69 @@
+DOCUMENT:Q133074  25-JUN-2001  [win95x]
+TITLE   :Cannot Connect to Windows NT Share with Extended Character
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 98 Second Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may be unable to connect to a share on a Microsoft Windows NT-based
+computer.
+
+CAUSE
+=====
+
+This problem can occur if the share name on the Windows NT-based computer
+contains extended characters that have no uppercase equivalent.
+
+RESOLUTION
+==========
+
+To allow Windows 95-based computers to connect to the share on the Windows
+NT-based computer, use either of the following methods:
+
+ - Change the share name so that it contains no extended characters.
+
+ - Change the share name so that it contains characters that have an uppercase
+   equivalent.
+
+MORE INFORMATION
+================
+
+To see a sample extended lowercase character, follow these steps:
+
+1. Start Notepad.
+
+2. Press down and hold the ALT key while you type 131 on the numeric keypad.
+
+Additional query words: winnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbWin95
+Version           : :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

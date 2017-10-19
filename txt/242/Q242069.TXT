@@ -1,0 +1,66 @@
+DOCUMENT:Q242069  10-AUG-2001  [winnt]
+TITLE   :Err Msg: Error Invoking the Security Editor
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you click Permissions on the Sharing tab of a folder property dialog box, a
+Sharing dialog box may appear with the following error message:
+
+   Error invoking the security editor
+
+Also, if you click Permissions, Auditing, and Ownership on the Security tab,
+nothing may happen.
+
+CAUSE
+=====
+
+This issue can occur if the Acledit.dll file is missing from the
+%SystemRoot%\System32 folder.
+
+RESOLUTION
+==========
+
+Restore the Acledit.dll file to the %SystemRoot%\System32 folder.
+
+To resolve this issue, restore the Acledit.dll file to the %SystemRoot%\System32
+folder by using the Expand tool, and then reinstall any Microsoft Windows NT
+Service Packs on your computer.
+
+For information about the Expand tool, type "EXPAND \?" (without the quotation
+marks) at a command prompt.
+
+Additional query words: sharing
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

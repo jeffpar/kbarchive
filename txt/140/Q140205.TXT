@@ -1,0 +1,84 @@
+DOCUMENT:Q140205  11-JAN-2001  [vbwin]
+TITLE   :BUG: Status of Project Window Is Not Saved with .vbp File
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 16-bit, for Windows, version 4.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When the location or size of the project window changes, these changes are
+sometimes not reflected in the .vbp file.
+
+The dimensions are always saved in Visual Basic 3.0.
+
+RESOLUTION
+==========
+
+Saving the project by clicking Save Project As on the File menu retains all
+changes in size and location of the project window.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in Visual Basic version 4.0. We are
+researching this bug and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start Visual Basic.
+
+2. On the File menu, click New Project.
+
+3. On the File menu, click Save Project to save the default form and project.
+
+4. Resize and/or move the project window to a different location on screen.
+
+5. On the File menu, click Save Project to save the project again.
+
+6. On the File menu, click New Project to remove the previous project from
+   memory.
+
+7. Reopen the previously saved project. The project window has the size and
+   location it did before it was modified and saved the second time.
+
+Additional query words: 4.00 vb4all vb4win buglist4.00
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbVBSearch kbAudDeveloper kbVB400Search kbVB400 kbVB16bitSearch
+Version           : WINDOWS:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

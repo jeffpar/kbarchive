@@ -1,0 +1,71 @@
+DOCUMENT:Q151718  17-DEC-2000  [win95x]
+TITLE   :Managing Memory in MS-DOS Mode
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to configure an MS-DOS-mode shortcut in Windows 95
+for optimal memory management.
+
+MORE INFORMATION
+================
+
+To manage each MS-DOS-mode shortcut separately, configure the MS-DOS shortcuts
+to use custom configuration files.
+
+To enable the use of the High Memory Area (HMA) and Upper Memory Blocks (UMBs) in
+the Upper Memory Area (UMA), add the following lines to the custom Config.sys
+file:
+
+   Device=C:\WINDOWS\HIMEM.SYS
+   Device=C:\WINDOWS\EMM386.EXE NOEMS ; or RAM to use Expanded Memory
+   DOS=HIGH,UMB
+
+To load device drivers high from the Config.sys file, use the following syntax:
+
+   DeviceHigh=C:\WINDOWS\COMMAND\DRVSPACE.SYS /MOVE ; loads DRVSPACE high
+
+Other Config.sys commands that help preserve conventional memory include:
+
+   BuffersHigh=
+   FCBSHigh=
+   FilesHigh=
+   InstallHigh=
+   LastDriveHigh=
+   StacksHigh=
+
+To load TSRs high from the custom Autoexec.bat file, use the following syntax:
+
+   LoadHigh=C:\WINDOWS\COMMAND\DOSKEY.COM ; loads DOSKey high
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

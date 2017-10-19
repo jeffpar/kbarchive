@@ -1,0 +1,67 @@
+DOCUMENT:Q103388  22-NOV-1999  [msdos]
+TITLE   :Corrupted DBLSPACE.EXE May Cause a "CVF Is Damaged" Error
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system version 6.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If the DBLSPACE.EXE file is corrupted, the error message "A CVF Is Damaged" may
+appear during startup. This may also cause CHKDSK to hang during execution.
+
+RESOLUTION
+==========
+
+To correct this problem:
+
+1. Insert the disk containing DBLSPACE.EX_ into the floppy disk drive.
+
+2. From the DOS directory of the hard disk drive, type the following:
+
+   " expand <floppy drive>:\DBLSPACE.EX_ c:\DOS\DBLSPACE.EXE " (without
+   the quotation marks)
+
+3. Reboot the computer using <Ctrl> <Alt> <Del>
+
+DBLSPACE.EX_ resides on the following disks:
+
+   Format     Disk Number
+   ----------------------
+
+   1.44 MB    3
+   1.2  MB    4
+   720K       5
+   360K       10
+
+Additional query words: 6.00 hangs compressed volume file files trouble shooting troubleshooting tshoot
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600
+Version           : MS-DOS:6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,74 @@
+DOCUMENT:Q133277  01-JAN-2001  [homemisc]
+TITLE   :Windows 95/98: How to Copy a File
+PRODUCT :Microsoft Home Miscellaneous Products
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to copy files in Windows 95/98.
+
+To copy files, use one of the following methods:
+
+Method 1
+--------
+
+1. Locate the file you want to copy.
+
+2. Use the right mouse button to click the file and click Copy.
+
+3. Locate the folder (called the destination folder) into which you would like
+   to copy the file.
+
+4. Use the right mouse button to click the destination folder and click Paste.
+   Depending on the size of the file, the time it takes to copy the file may
+   vary.
+
+Method 2
+--------
+
+1. Locate the file you want to copy.
+
+2. Press CTRL+C (this copies the file).
+
+3. Locate the folder (called the destination folder) into which you want to copy
+   the file.
+
+4. Press CTRL+V (this places a copy of the file into the new location).
+
+After completing the above steps, the file is copied to the destination folder
+while the original file remains in the source folder.
+
+
+Additional query words: kbhowto Duplicate paste move copies
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbWin98search kbZNotKeyword3 kbWin98
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

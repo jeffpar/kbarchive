@@ -1,0 +1,71 @@
+DOCUMENT:Q130974  27-JUL-2001  [win3x]
+TITLE   :WFW Err Msg: Unable to Contact IP Driver, Error Code 0
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:3rdpartynet msnets kb3rdPartyNetClient
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install TCP/IP-32 3.11a, you may experience the following problems:
+
+ - When you use the PING utility, you receive the following error message:
+
+   Unable to contact IP driver, error code 0
+
+ - When you use the IPCONFIG utility, you receive the following error message:
+
+   Error: Failed to retrieve required information from TCP/IP
+
+CAUSE
+=====
+
+These errors can occur for either of the following reasons:
+
+ - You are using the TCP/IP-32 3.11a and NetBEUI protocols together on an IPXODI
+   support driver (Ethernet, Token Ring, or ArcNet).
+
+ - The TCP/IP protocol is not configured correctly.
+
+RESOLUTION
+==========
+
+To work around this problem, remove the NetBEUI protocol, or configure the
+TCP/IP protocol correctly.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 3.11 tcpip
+
+======================================================================
+Keywords          : 3rdpartynet msnets kb3rdPartyNetClient 
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

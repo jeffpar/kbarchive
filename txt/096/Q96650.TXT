@@ -1,0 +1,63 @@
+DOCUMENT:Q96650  18-NOV-1999  [pcmail]
+TITLE   :PC DB: 3.0b Server Disk 2 [3.5, 720K; 5.25, 1.2 MB]
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following are the directory listings of the version 3.0b Microsoft Mail for
+PC Networks Server Disk 2. Both the 3.5-inch and 5.25-inch disks contain the
+same files.
+
+ Volume in drive B is MSMAIL30A
+ Volume Serial Number is 301A-07CF
+
+Directory of B:\ 
+
+ADMIN        <DIR>     09-09-92  12:00a
+        1 file(s)          0 bytes
+
+Directory of B:\ADMIN
+
+.            <DIR>     09-09-92  12:00a
+..           <DIR>     09-09-92  12:00a
+ADMIN    EXE    515064 09-09-92  12:00a
+ERRORADM GLB     22272 09-09-92  12:00a
+        4 file(s)     537336 bytes
+
+Total files listed:
+        5 file(s)     537336 bytes
+
+
+Additional query words: 3.00b dirmail
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN300b
+Version           : WINDOWS:3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

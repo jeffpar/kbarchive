@@ -1,0 +1,99 @@
+DOCUMENT:Q259296  27-JUL-2001  [foxpro]
+TITLE   :HOWTO: Display a Progress Bar in a Status Bar
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbDatabase kbSQL kbvfp500 kbvfp500a kbvfp600 KbDBFDBC kbGrpDSFox kbCodeSnippet kbSQLPro
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article illustrates how to create a progress bar to display in a status bar
+when a SQL query is performed.
+
+MORE INFORMATION
+================
+
+Sample Code 
+-----------
+
+1. Create a program (.prg) file in Visual FoxPro.
+
+2. Put the following code into the .prg file:
+
+   PUBLIC obar
+   **Open table
+   cTable = GETFILE("dbf")
+   IF EMPTY(cTable)
+      RETURN .T.
+   ENDIF   
+
+   **Create the Progress bar object
+   obar = CREATEOBJECT("POnStatus")
+   obar.pIndicatorStyle = "||"
+   SELECT * FROM (cTable) WHERE obar.DrawStatus(RECNO(), RECCOUNT())
+   SET MESSAGE TO
+   CLOSE ALL
+   RELEASE ALL
+
+   ** Class definition for the Progress bar object
+   DEFINE CLASS POnStatus AS Custom
+       pIndicatorStyle = ""
+        
+       PROCEDURE DrawStatus
+       LPARAMETER nRecno, nReccount
+       LOCAL nPtr, cIndicator
+       
+           nPtr = INT(nRecno*100/nReccount)
+           cIndicator = REPLICATE(THIS.pIndicatorStyle, nPtr) + ;
+              SPACE(2) + STR(nPtr)+"%"
+           SET MESSAGE TO LEFT(cIndicator, LEN(cIndicator))
+           RETURN .T.
+       ENDPROC
+
+   ENDDEFINE     
+
+3. Save and run the .prg file.
+
+4. When prompted with the Open dialog box, select a table such as the Customer
+   table in the Samples directory. While the query runs, you can see the
+   progress bar updating in the status bar.
+
+REFERENCES
+==========
+
+For additional information on creating a thermometer bar, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q139388 HOWTO: Create a Thermometer Bar in Visual FoxPro
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbSQL kbvfp500 kbvfp500a kbvfp600 KbDBFDBC kbGrpDSFox kbCodeSnippet kbSQLProg 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : WINDOWS:5.0,5.0a,6.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

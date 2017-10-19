@@ -1,0 +1,64 @@
+DOCUMENT:Q317179  25-JAN-2002  [msnetwork]
+TITLE   :Cannot Set MSN Explorer as Default E-mail Client
+PRODUCT :The Microsoft Network
+PROD/VER::
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network Version 7.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you select MSN Explorer as Default E-mail Client and attempt to send an
+e-mail from the Internet Explorer Mail link, you receive the following error:
+
+   "Either there is no default mail client or the current mail client cannot
+   fulfill the messaging request. Please run Microsoft Outlook and set it as the
+   default mail client".
+
+CAUSE
+=====
+
+MSN Explorer is not a simple Messaging Application Programming Interface (MAPI)
+client and cannot be used as the default e-mail client in all cases.
+
+RESOLUTION
+==========
+
+Send e-mail directly from MSN Explorer. To prevent the alert from occurring
+again, set the default e-mail client to another program such as Microsoft
+Outlook Express.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSNExplorer kbMSN700
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

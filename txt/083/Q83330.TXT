@@ -1,0 +1,79 @@
+DOCUMENT:Q83330  13-DEC-1999  [win95x]
+TITLE   :System Error with HP NewWave under Windows 3.1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When using Hewlett-Packard (HP) NewWave version 3.0 or earlier with Microsoft
+Windows operating system version 3.1, you will receive the following error
+message:
+
+   System error: Incorrect System version: reinstall 386 using Setup.
+
+HP NewWave is invoked with a batch file that detects the version of the Windows
+video drivers being used. It does not copy the correct video drivers.
+
+This problem does not occur with HP NewWave version 4.0.
+
+MORE INFORMATION
+================
+
+HP technical support suggests editing the "NewWave batch file" and deleting
+everything from the beginning of the file to the line that says:
+
+   :std
+
+This will skip the version detection portion of the batch file. WARNING: This
+workaround might cause some problems concerning driver versions with some
+applications.
+
+Alternatively, you can replace the display driver and video grabber by replacing
+the existing Display= line in the [386 Enh] section of the SYSTEM.INI file
+with:
+
+      Display=VDDVGA30.386
+
+In addition, you will need to replace the existing 386Grabber= line in the [boot]
+section of the SYSTEM.INI file with:
+
+      386Grabber=VGA30.3GR
+
+For additonal information on HP NewWave, please contact Hewlett-Packard.
+
+The HP product included here is manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 3.10 3.11 new wave
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

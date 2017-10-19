@@ -1,0 +1,82 @@
+DOCUMENT:Q183549  14-APR-2001  [sna]
+TITLE   :DBCS Parameters Not Allowed When Importing COBOL
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:1.0,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft COM Transaction Integrator for CICS and IMS, version 1.0, used with:
+    - Microsoft SNA Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Importing a COBOL source file will fail when the COBOL data declaration section
+contains an item that is USAGE DISPLAY-1. This COBOL usage defines an item as a
+Double Byte Character Set (DBCS) string. The following error is displayed in a
+message box when you click the Next button on the COBOL Source File
+Specification page in the COMTI Import COBOL Wizard:
+
+   Text: Invalid syntax was found near:
+   * 05 <variable-name> PIC G(n) USAGE IS DISPLAY-1.
+
+After you click the OK button, the next wizard page is displayed and you can
+choose either to cancel the Import process or to continue. If you choose to
+continue, the unsupported COBOL statement is not displayed.
+
+CAUSE
+=====
+
+PIC G USAGE IS DISPLAY-1 (DBCS) is not supported in this version of the COM
+Transaction Integrator.
+
+WORKAROUND
+==========
+
+If the unsupported statement is not part of the interface being defined, you can
+continue the import and ignore the error message. If the unsupported statement
+is part of the interface, then you will need to apply the supported fix
+described below. It is not possible to send or receive DBCS characters with the
+COM Transaction Integrator version 1.0.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft COM Transaction
+Integrator for CICS and IMS version 1.0.
+
+This problem was corrected in the latest SNA Server version 4.0 U.S. Service
+Pack. For information on obtaining this Service Pack, query on the following
+word in the Microsoft Knowledge Base (without the spaces):
+
+   " S E R V P A C K " (without the quotation marks)
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbCOMTISearch
+Version           : WINDOWS:1.0,4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

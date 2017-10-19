@@ -1,0 +1,58 @@
+DOCUMENT:Q156822  09-AUG-2001  [winnt]
+TITLE   :Tseng Labs ET4000-W32I Chipset Only Supports 65K Colors
+PRODUCT :Microsoft Windows NT
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Any Video card using the Tseng Labs ET4000-W32I chipset under Windows NT 4.0
+will only be able to support 65K colors. This is a change from Windows NT 3.5x,
+which allowed for 16.7M colors using the same chip set.
+
+
+The W32I chipset uses a banked video memory system. The 16.7M color mode requires
+24 bits per pixel, which is difficult to implement on a banked video system.
+Windows NT 3.51 emulated a linear (non-banked) video system by using a
+page-fault driven banking scheme. In Windows NT 4.0, the Graphics Device
+Interface (GDI) and the video drivers were moved into the kernel. This move
+makes it impossible to implement non-banked emulation and, therefore, can only
+support 65K colors.
+
+MORE INFORMATION
+================
+
+Full 24-bit, 16.7M color is supported with video cards using the Tseng Labs
+ET6000 chipset.
+
+Additional query words: prodnt
+======================================================================
+Keywords          : kbsetup 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,56 @@
+DOCUMENT:Q146202  24-JUL-2001  [win95x]
+TITLE   :AT&T Globalyst TPC Modems Not Detected Properly
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95,98
+OPER/SYS:
+KEYWORDS:kbhw win95 win98 kbHardware
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Windows 98 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+TPC modems in certain AT&T Globalyst computer models are not detected
+properly in Windows 95/98.
+
+RESOLUTION
+==========
+
+Contact AT&T Technical Support for updated drivers for the TPC modem.
+
+MORE INFORMATION
+================
+
+All AT&T Globalyst computers with model numbers in the "3348-23xx-xxxx"
+series require updated drivers to operate correctly with Windows 95/98.
+
+
+Additional query words: 98
+
+======================================================================
+Keywords          : kbhw win95 win98 kbHardware 
+Technology        : kbWin95search kbWin98search kbWin95 kbWin98
+Version           : WINDOWS:95,98
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

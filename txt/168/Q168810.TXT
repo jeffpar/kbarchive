@@ -1,0 +1,83 @@
+DOCUMENT:Q168810  14-NOV-2000  [word97]
+TITLE   :WD97: Cannot Type in Floating Text Box with Protected Document
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbtool kbui kbdta word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you insert an ActiveX Text Box control as a floating object in a document
+that is protected for forms, one of the following symptoms occurs:
+
+ - You cannot type text into the text box.
+
+   -or-
+
+ - You can type some text immediately upon clicking in the text box, but then
+   the text box becomes unavailable.
+
+WORKAROUND
+==========
+
+To work around this problem, use the following steps to convert the ActiveX Text
+Box control to an inline object:
+
+1. If the document is protected, click Unprotect Document on the Tools menu.
+
+2. If the Control Toolbox is not visible, point to Toolbars on the View menu,
+   and then click Control Toolbox.
+
+3. In the Control Toolbox, click Design Mode.
+
+4. Right-click the ActiveX Text Box Control.
+
+5. On the shortcut menu, point to Text Box Object, and then click Convert.
+
+6. In the Convert dialog box, clear the Float Over Text check box.
+
+7. Click OK.
+
+8. In the Control Toolbox, click Exit Design Mode.
+
+When you reprotect the document, you can enter text into the ActiveX Text Box
+control.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word 97 for Windows.
+
+This problem has been corrected in Word 2000.
+
+Additional query words: 8.0
+
+======================================================================
+Keywords          : kbtool kbui kbdta word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

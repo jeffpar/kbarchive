@@ -1,0 +1,114 @@
+DOCUMENT:Q259032  02-MAY-2000  [winnt]
+TITLE   :Understanding Attribute Flow in Microsoft Metadirectory Services
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:kbtool MMS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Metadirectory Services 2.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Attribute flow is utilized in Microsoft Metadirectory Services (MMS) to flow
+attributes between the connector space, the hologram, and the metaverse.
+Attribute flow scripts have five vectors available. These vectors provide MMS
+with the ability to co-manage attributes from different source directories to a
+single joined metaverse object.
+
+The following list contains the five vectors that are available in attribute flow
+scripts:
+
+ - CD: Used to specify the Connected Directory.
+
+ - CSP: Used to specify the potential value for the Connector Space built by the
+   connector space construction template.
+
+ - MVP: Used to specify the potential value for the metaverse built by the
+   metaverse construction template.
+
+ - CS: Used to specify the Connector Space.
+
+ - MV: Used to specify the metaverse.
+
+Also, there are four kinds of assignments available in the attribute flow
+scripts:
+
+    
+     =    This assignment replaces the attribute.
+    +=    This assignment appends additional values to a multivalued attribute.
+    -=    This assignment removes a specific value from the attribute.
+    <<    This assignment merges all values in one multivalued attribute.  
+
+MORE INFORMATION
+================
+
+These operators are especially important for managing multivalued attribute
+ownership, for example:
+
+John Doe's $mv.colors has 4 values:
+
+ - Purple
+
+ - Red
+
+ - Orange
+
+ - Green
+
+John Doe's $cd.colors has 3 values:
+
+ - Blue
+
+ - Yellow
+
+ - Purple
+
++------------------------------------------------------------------------------------+
+| Flow Rules                | Result                                                 | 
++------------------------------------------------------------------------------------+
+| 
+$mv.colors += $cd.colors | 
+$mv.colors = Purple, Red, Orange, Green, Blue, Yellow | 
++------------------------------------------------------------------------------------+
+| 
+$mv.colors -= $cd.colors | 
+$mv.colors = Red, Orange, Green                       | 
++------------------------------------------------------------------------------------+
+| 
+$cd.Colors = $mv.Colors  | 
+$cd.colors = Blue, Yellow, Purple                     | 
++------------------------------------------------------------------------------------+
+| 
+$mv.colors << $cd.colors | 
+$cd.colors = Purple, Red, Orange, Green, Blue, Yellow | 
++------------------------------------------------------------------------------------+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool MMS 
+Technology        : kbMMSSearch kbMMS210
+Version           : :2.1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

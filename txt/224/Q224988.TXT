@@ -1,0 +1,83 @@
+DOCUMENT:Q224988  20-MAY-1999  [foxpro]
+TITLE   :FIX: CREATE FROM Command Incorrectly Assumes .dbf Extension
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbservicepack kbDatabase kbvfp600 kbvfp600bug kbXBase KbDBFDBC kbVS600sp2 kbVS600SP1 kb
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The CREATE FROM command incorrectly assumes that the table used to create a new
+table needs a .dbf extension. For example, when using the following syntax:
+
+CREATE [Table1] FROM [Table2]
+
+Visual FoxPro mistakenly assumes that Table2 needs a .dbf extension added to it.
+If the file already has an extension, Visual FoxPro 6.0 appends the .dbf
+extension to the end of the table name; therefore, an error appears.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+This bug was corrected in Visual Studio 6.0 Service Pack 3. For more information
+about Visual Studio service packs, please see the following articles in the
+Microsoft Knowledge Base:
+
+Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+Q194295 HOWTO: Tell That Visual Studio 6.0 Service Packs Are Installed
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a program that contains the following code:
+
+   USE HOME(2)+"\data\customer"
+   COPY STRUCTURE EXTENDED TO test.STR
+   USE
+   CREATE customer2 FROM test.STR
+
+2. Run the program.
+
+   The last line of code causes the error:
+
+   File Test.str.dbf does not exist.
+
+Additional query words: KBDSE
+
+======================================================================
+Keywords          : kbservicepack kbDatabase kbvfp600 kbvfp600bug kbXBase KbDBFDBC kbVS600sp2 kbVS600SP1 kbVS600sp3fix kbGrpDSFox 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP600
+Version           : WINDOWS:6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

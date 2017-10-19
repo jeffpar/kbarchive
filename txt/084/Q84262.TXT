@@ -1,0 +1,62 @@
+DOCUMENT:Q84262  05-DEC-1999  [homemm]
+TITLE   :Undocumented Keyboard Commands in Beethoven
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1.0,1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Multimedia Beethoven, versions 1.0, 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Multimedia Beethoven application contains a set of undocumented navigation
+keys that can be used within the program. These are a ToolBook feature.
+
+MORE INFORMATION
+================
+
+Below is a list of the undocumented key combinations and a description of their
+functions:
+
+1. SHIFT+F2 - (Back) Returns to the previous screen
+
+2. CTRL+F2 - (History) Displays a dialog box containing a sequential history of
+   commands since Beethoven was started
+
+3. ALT+F2 - (Page Select) This key combination updates the Beethoven window to
+   include a reference to the current page in the lower-left corner overlapping
+   the Exit and a portion of the Help button. By clicking the label, you are
+   prompted to input a page number to go to.
+
+4. CTRL+RIGHT ARROW Key - (Next Page)
+
+5. CTRL+LEFT ARROW Key - (Previous Page)
+
+Additional query words: 1.00 usage 1.0 Toolbook Tbook Microsoft
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbMMBeethoven100 kbMMBeethoven100a
+Version           : :1.0,1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

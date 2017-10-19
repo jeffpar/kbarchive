@@ -1,0 +1,77 @@
+DOCUMENT:Q78847  24-NOV-1999  [msdos]
+TITLE   :SHIFT+F9 Gives MS-DOS Prompt, "Command Prompt" Item Disabled
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MS-DOS version 5.0 or later Shell allows you to access the command prompt
+several ways without exiting Shell. For example, you can:
+
+ - Execute the Command Prompt item in the main group.
+
+ - Use the SHIFT+F9 key combination.
+
+ - Highlight COMMAND.COM in the file list and press ENTER (or just double-click
+   on the file with a mouse)
+
+If pressing SHIFT+F9 shells to a command prompt but the Command Prompt item
+doesn't work, either change the entry in the Program Item Properties Commands
+text box from COMMAND to %COMSPEC%, or use the full drive, path, and filename of
+COMMAND.COM in the Commands text box.
+
+MORE INFORMATION
+================
+
+In Shell, SHIFT+F9 runs the copy of COMMAND.COM referenced by the COMSPEC
+environment variable. This variable is set when loading the initial copy of
+COMMAND.COM on bootup. If the Command Prompt item is changed to run %COMSPEC%
+instead of COMMAND, the Command Prompt item will also execute the COMMAND.COM
+referenced by COMSPEC.
+
+By default, the Commands text box in the Program Item Properties dialog box for
+the Command Prompt item is a single word: COMMAND. When the item is executed,
+the word gets changed to "@command", and placed into a batch file that is then
+run. If multiple releases of COMMAND.COM exist on the disk, the COMMAND.COM file
+accessed may be a non MS-DOS 5.0 release and therefore unusable. If COMMAND.COM
+is not in a directory included in the PATH environment variable, a COMMAND.COM
+file may not be found.
+
+Periodically, COMMAND.COM needs to be reloaded into memory. MS-DOS uses the
+COMSPEC variable to determine where to reload COMMAND.COM. For more information
+on this process, see the section titled "Transient and resident memory" on page
+385 of the version 5.0 "Microsoft MS-DOS 5.0 User's Guide and Reference."
+
+
+Additional query words: 5.00 5.00a 6.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.0,5.0a,6.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

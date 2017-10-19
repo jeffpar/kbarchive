@@ -1,0 +1,156 @@
+DOCUMENT:Q128325  04-AUG-2000  [exchange]
+TITLE   :XADM: Reclaiming Disk Space for the Information Store
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If the Information Store does not start due to lack of disk space, an
+application event is logged in the Windows NT Event Viewer. The source is EDB
+and the error test includes the Jet Blue error ID -1808. This article describes
+how to free up disk space so that the Information Store can restart, and how to
+use Windows NT Performance Monitor to track disk space usage in the future.
+
+MORE INFORMATION
+================
+
+Monitoring Disk Space
+---------------------
+
+An Administrator can observe disk space usage on the drive containing the
+Information Store by using the Windows NT Performance Monitor. The LogicalDisk
+object along with the "% Free Space" and "Free Megabytes" counters are used to
+monitor and trigger alerts when disk space is low.
+
+Recovering Space Used by Log Files
+----------------------------------
+
+Increasing log files can cause the Information Store or Directory Store to run
+out of operating space. To prevent this, do one of the following:
+
+ - Write the log files to a different drive.
+
+ - To change the location where the Information Store or Directory Store
+   Transaction logs are written, select the Server object properties page and
+   choose the Database Paths tab. Change the path for the Information Store and
+   Directory Store transaction logs and click OK.
+
+ - Backup the Exchange Server.
+
+ - Use the Windows NT Backup utility that ships with Exchange Server to perform
+   either a Normal (full) or Incremental Online backup of the server. The Backup
+   utility automatically deletes transaction logs that are no longer needed
+   (they have been committed to disk). If you never run the Backup utility, log
+   files continue to grow.
+
+ - Correctly delete log files periodically.
+
+ - When the Information and Directory stores run, you find log files of the
+   EDB*.LOG form in both the EXCHSRVR\DSADATA and EXCHSRVR\MDBDATA directories.
+   Microsoft Exchange uses these log files to commit data to disk. In addition,
+   these log files are necessary to perform Incremental and Differential type
+   backup using the Windows NT Backup utility.
+
+ - The EDB*.LOG files can be deleted after the Directory and Information Store
+   services have been shut down. If the log files are deleted when the services
+   are still running, you can jeopardize data integrity. When the services are
+   stopped, the transactions in these log files are committed to the main
+   database file on disk (DIR.EDB for the directory and PRIV.EDB and PUB.EDB for
+   the Information Store). When this data is committed, the log files are no
+   longer needed. Follow the steps below to correctly delete log files:
+
+   1. In Control Panel Services, select the Microsoft System Attendant Service
+      and click STOP. This stops all Microsoft Exchange Services.
+
+   2. Make a backup copy of the EDB*.LOG files in both the EXCHSRVR\DSADATA and
+      the EXCHSRVR\MDBDATA directories. Copy them to an alternate location on
+      the hard drive or to the tape backup.
+
+   3. Delete all the EDB*.LOG files in both the EXCHSRVR\DSADATA and
+      EXCHSRVR\MDBDATA directories.
+
+   4. Restart all the Microsoft Exchange Server Services (in particular, the
+      Directory and Information Store services).
+
+   5. If these services do not start, restore the DSADATA and MDBDATA
+      sub-directories from tape or hard disk. Restart the services again.
+
+   6. If the services start, delete the backup copy of the DSADATA and MDBDATA
+      sub-directories.
+
+NOTE: If you delete the EDB*.LOG files in the manner described above, Incremental
+and Differential backups of the Exchange Directory Store and Information Store
+are no longer valid or possible. You can only perform a Normal type (full)
+backup.
+
+Circular Logging (which is enabled, by default - Advanced tab of the server
+object's property page) writes log files, but once the checkpoint has been
+advanced, the inactive portion of the transaction logs are discarded. Typically,
+this represents the majority of the potential log data. The total size of the
+active transactions are less than the total amount of RAM on a given computer.
+Therefore, with circular logging enabled, the system has complete
+recoverability, with respect to hard and soft crashes. The element that is
+sacrificed is the protection against media failure. These methods are not
+supported on servers, where Circular logging is enabled, because the transaction
+logs are used for incremental and differential backups. An error message in
+Windows NT Backup appears.
+
+Checking a Database for Consistency
+-----------------------------------
+
+A Microsoft Exchange Server database is considered consistent only after normal
+shut down. At all other times, including during normal operation, a flag in the
+database marks it as inconsistent. Thus, if the database service is terminated
+abnormally, Exchange Server detects something wrong on the next startup.
+Exchange then initiates "soft recovery" steps to back out or commit necessary
+transactions to the database and to restore its integrity.
+
+You can check a database for consistency with the following command:
+
+   eseutil /mh <database path and name> | more
+
+The State line in the screen output from this command will contain Consistent or
+Inconsistent.
+
+You should not move inconsistent databases. Log files need to be played into that
+database to make it consistent. Because the path is encoded into the log files
+header information for the database, replay will not occur if you move the
+databases.
+
+For additional information on how to resolve a full transaction log drive, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q259751 XADM: How to Recover from a Full Transaction Log File Drive
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,732 @@
+DOCUMENT:Q181471  11-JUN-2002  [word97]
+TITLE   :WD97: How to Reset User Options and Registry Settings
+PRODUCT :Word 97 for Windows
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdta word8 word97kbfaq
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about modifying the registry. Before you modify the registry, make sure to back it up and make sure that you understand how to restore the registry if a problem occurs. For information about how to back up, restore, and edit the registry, click the following article number to view the article in the Microsoft Knowledge Base:
+
+   Q256986 Description of the Microsoft Windows Registry
+
+SUMMARY
+=======
+
+This article describes various methods for resetting user options and registry
+settings in Microsoft Word.
+
+MORE INFORMATION
+================
+
+There are two basic kinds of options that the user can define in Word. The first
+kind affects the way the program operates. The information for this kind of
+option is usually stored in the Windows registry. The second kind of option
+affects the formatting or appearance of one or more documents. The information
+for this option is stored in templates or documents.
+
+When you troubleshoot odd behavior in the program or in a document, first
+eliminate the possibility that the problem is caused by a combination of options
+and formatting. If the behavior occurs in multiple documents, it may be useful
+to reset the user settings to the "factory" defaults either temporally or
+permanently. To do this, use one of the methods listed in the following table.
+
+   Method                                                   Result
+   ---------------------------------------------------------------------
+
+   Hold SHIFT to prevent automatic macros from starting.    Temporary
+
+   Start Word with the /a switch.                           Temporary
+
+   Rename the Normal template.                              Temporary or
+                                                            Permanent
+
+   Edit or delete registry entries.                         Permanent
+
+Holding the Shift Key
+---------------------
+
+Word reserves special names for macros that you can create to automatically alter
+the way Word behaves. These are called "auto" macros. The auto macros in
+Microsoft Word are listed in the following table.
+
+   Macro      Storage location                Automatically Runs
+   ---------------------------------------------------------------------
+
+   AutoExec   In the Normal template          When Word is started
+              or in a global add-in
+
+   AutoNew    In a template                   When a new document that is
+                                              based on the template is
+                                              created
+
+   AutoOpen   In document or template         When a document that is
+                                              based on the template or that
+                                              contains the macro is opened
+
+   AutoClose  In document or template         When a document that is
+                                              based on the template or that
+                                              contains the macro is closed
+
+   AutoExit   In the Normal template          When Word is quit
+              or a global add-in
+
+Word recognizes a macro with a name that begins with "Auto" as a macro that
+automatically runs when the situation to which it applies occurs. You can
+prevent an auto macro from running by holding down the SHIFT key while
+performing the action that causes the macro to run.
+
+Starting Word Using /A
+----------------------
+
+Starting Word by using /a on a command line causes Word to use the default
+settings for all options and prevents add-ins from being loaded.
+
+The /a switch allows you to start Word without loading the following components:
+
+ - The global template (Normal.dot)
+
+ - Any add-in templates in the Startup folder
+
+ - Any add-in libraries (.wll files)
+
+ - User settings stored in the Data key in the Windows registry.
+
+NOTE: When you start Word with the /a switch, changes you make in Word that
+affect any of these components are not written to the hard disk when you quit
+Word, and the changes are lost.
+
+For the following example, assume that Word is located in the C:\Program
+Files\Microsoft Office\Office folder.
+
+To start Word 97 by using /a, follow these steps:
+
+NOTE: Because there are several versions of Windows, the following steps may be
+different on your computer. If they are, please see your product documentation
+to complete these steps.
+
+1. Click Run on the Start menu.
+
+2. In the Run dialog box, click Browse.
+
+3. Use the Look In box to locate Winword.exe, and then select it. Then click
+   Open. This step fills in the Open box in the Run dialog box.
+
+4. In the Open box, move the insertion point after Winword.exe.
+
+   NOTE: The path to the Winword.exe in the Run dialog box is enclosed in
+   quotation marks. Be sure to move the insertion point to the right of the
+   closing quotation mark.
+
+5. Type a space, and then type "/a" (without the quotation marks).
+
+   The statement in the Open box should resemble the following:
+
+   "C:\PROGRAM FILES\MICROSOFT OFFICE\OFFICE\WINWORD.EXE" /A
+
+If starting the program with the /a switch corrects the problem, use the
+following methods to further isolate the problem.
+
+Renaming the Normal Template
+----------------------------
+
+To prevent formatting, AutoText, and macros that are stored in the Normal
+template (Normal.dot) from affecting behavior of the program and documents that
+are opened, rename Normal.dot. Renaming allows you to quickly determine whether
+the Normal template is causing the problem or behavior.
+
+NOTE: Renaming the Normal.dot template resets several options back to the default
+settings, including custom styles, custom toolbars, macros, and AutoText
+entries. For this reason, Microsoft strongly recommends that you rename the
+Normal.dot file.
+
+Certain kinds of configurations may create more than one Normal.dot file. These
+situations include cases in which multiple versions of Word are running on the
+same computer or cases in which several workstation installations exist on the
+same computer. In these situations, be sure to rename the correct copy of
+Normal.dot.
+
+To rename the Normal.dot file, follow these steps:
+
+NOTE: Because there are several versions of Windows, the following steps may be
+different on your computer. If they are, please see your product documentation
+to complete these steps.
+
+1. Quit all instances of Word, including WordMail.
+
+2. On the Windows taskbar, click Start, point to Find, and click Files or
+   Folders.
+
+3. In the Named box, type "Normal.dot" (without the quotation marks).
+
+4. In the Look In box, select your local hard disk drive (or an alternate user
+   template location if you are running Word from a network server).
+
+5. Click Find Now to search for the file.
+
+6. For each occurrence of Normal.dot that appears in the Find dialog box,
+   right-click the file. Click Rename on the shortcut menu. Type a new file
+   name, such as OldNormal.dot or Normal-1.dot and press ENTER.
+
+7. Quit the find dialog box and restart Word normally (without using the /a
+   switch).
+
+If Word starts correctly, you have resolved the problem. In this case, the
+problem is a damaged Normal.dot template. You may need to change a few settings
+to restore your favorite options. If the Normal.dot file you renamed contains
+customizations, such as styles, macros, or AutoText entries that cannot be
+easily recreated, you may be able to copy those customizations from the old
+Normal.dot file to the new Normal.dot file by using the Organizer.
+
+For more information about using the Organizer, click the Office Assistant, type
+"using the Organizer," click Search, and then click "Use settings from another
+document or template."
+
+Deleting Registry Entries
+-------------------------
+
+WARNING: If you use Registry Editor incorrectly, you may cause serious problems
+that may require you to reinstall your operating system. Microsoft cannot
+guarantee that you can solve problems that result from using Registry Editor
+incorrectly. Use Registry Editor at your own risk.
+
+Deleting the Data Key:
+----------------------
+
+NOTE: Deleting the Data key resets several options back to the default settings,
+including the File menu most recently used file list, and many settings you
+customize in the Options dialog boxes.
+
+Most common options (click Options on the Tools menu) are stored in the Data key.
+One troubleshooting step is to delete the Data key. Word rebuilds this Data key
+by using the default settings the next time the program is started.
+
+To delete the Data key, follow these steps:
+
+NOTE: Because there are several versions of Windows, the following steps may be
+different on your computer. If they are, please see your product documentation
+to complete these steps.
+
+1. Quit all instances of Word, including WordMail.
+
+2. On the Windows taskbar, click the Start button and click Run.
+
+3. In the Open box, type "regedit" (without the quotation marks), and click OK.
+
+4. Locate the following key by double-clicking the appropriate folders.
+
+   
+   HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Data
+
+5. With the Data folder selected (on the left), click Delete on the Edit menu to
+   delete the key.
+
+6. Click Yes when you are prompted to confirm the deletion.
+
+7. Quit the registry editor and restart Word normally (without using the /a
+   switch).
+
+If Word starts correctly, you have resolved the problem. The problem is a damaged
+Data key. You may need to change a few settings to restore your favorite
+options.
+
+To edit or delete other registry entries:
+
+Use the preceding steps but substitute the correct registry key in step 4, and
+then use Modify or Delete in step 5.
+
+NOTE: Some keys are automatically rebuilt when you run Word. To rebuild other
+keys, you must reinstall the program by using the /y switch on the command line
+to recreate the correct entry. For more information see the following section.
+
+USING SETUP /Y
+--------------
+
+The /y switch prevents Setup from copying files. Setup proceeds normally,
+including setting registry entries; however, it does not copy any files to the
+computer. Use this switch to restore registry entry values or to track down
+process problems without copying files.
+
+This switch may be used when running Microsoft Office 97 Setup in maintenance
+mode, for example:
+
+   \setup.exe /y
+
+Where Settings Are Stored in the Registry
+-----------------------------------------
+
+Word 97 stores all of its settings in the Windows registry; Word 97 no longer
+stores information in an *.ini file or in the Winword.opt file as do Word 2.x
+and 6.x.
+
+
+This section lists the settings in the registry that pertain to Word 97. The
+locations are organized into the following sections:
+
+ - Main locations of Word settings
+
+ - Settings in HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word
+
+ - Settings in HKEY\CURRENT_USER\Software\Microsoft\Office\8.0\Common
+
+ - Settings in HKEY\CURRENT_USER\Software\Microsoft\MS Setup (ACME)
+
+ - Settings in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools
+
+ - Miscellaneous settings
+
+ - Using the RegOptions macro
+
+Main Locations of Word Settings
+-------------------------------
+
+Most settings in Word are stored in the following key:
+
+   
+   HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word
+
+Changes made to this HKEY_CURRENT_USER key are mirrored in the following key:
+
+   
+   HKEY_USERS\Default\Software\Microsoft\Office\8.0\Word
+
+The difference between the two locations is that first one applies only to the
+current user of the system while the other one is the default for all users.
+However, Word entries are the same for both; so, any change made to one is
+automatically reflected in the other.
+
+NOTE: For the remainder of this section, all references to the HKEY_CURRENT_USER
+key apply also to the HKEY_USERS key except where noted.
+
+Settings in HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word
+----------------------------------------------------------------
+
+The settings that you may need to examine during troubleshooting are located in
+this key. The Data key and the Options key are the most frequently changed
+areas.
+
+Data Key
+--------
+
+   
+   HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Data
+
+The Word 97 for Windows equivalent to the Word 6.x Winword.opt file is the Data
+key. This key contains binary information for most recently used lists,
+including the most recently used file list and the most recently used address
+book list. It also contains the same information that is stored in the
+Winword.opt file in Word for Windows 6.x, such as Track Changes settings
+(Revision settings in Word 6.x) and Edit settings.
+
+Default Save Key
+----------------
+
+   
+   HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Default Save
+
+This key sets the default format for saving documents. You can change the default
+format Word 97 uses by changing the Save Word Files As setting in Word. To
+locate this option in Word, click Options on the Tools menu, and then click the
+Save tab.
+
+Options Key
+-----------
+
+   
+   HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Options
+
+This key stores the options that you can set from Word either by changing menu
+options or by running the RegOptions macro. These are the editable options.
+
+The settings fall into two groups: default settings and optional settings.
+Default settings are established during Setup. You can change them by modifying
+options in Word. Optional settings are not created during Setup; to add them you
+must run the RegOptions macro.
+
+These default settings are the following:
+
+   AutoSpell              Turns Automatic spell checking on or
+                          off
+
+   AutoGrammar            Turns Automatic grammar checking on or
+                          off
+
+   AutoSave-Path          Sets default folder for "autosave"
+                          documents
+
+   BackgroundPrint        Turns background printing on or off
+
+   BackgroundSave         Turns background saving on or off
+
+   EnableMacroVirus       Turns macro warning on or off
+
+   NoEditTime             Turns on and off recording of edit time
+                          in statistics
+
+   Picture-Path           Sets the path for clip art
+
+   PlainTextAutoFormat    Sets Autoformat for WordMail documents
+
+   ProgramDir             Sets the Word program folder
+
+   Startup-Path           Sets the path for the startup folder
+
+   StartWhatIsNew         Turns What Is New screen on and off at
+                          startup
+
+   Tools-Path             Sets alternative locations for proofing
+                          tools
+
+   Wordmail-Path          Sets WordMail directory path
+
+   WPHelp                 Turns WordPerfect Help on or off
+
+The optional settings are the following:
+
+   Bak-Extension          Sets default extension for backup files
+
+   BitMapMemory           Sets memory for internal graphics cache
+
+   CacheSize              Sets internal document text cache for
+                          Word
+
+   DateFormat             Sets the default date format for Word
+
+   Doc-Extension          Sets the default extension for Word
+                          documents
+
+   Doc-Path               Sets the default path for documents
+                          saved in Word
+
+   Dot Extension          Sets the default extension for templates
+                          in Word
+
+   OleDot                 Sets the default template used to create
+                          document objects in Word or other OLE
+                          applications
+
+   SlowShading            For printers with special drawing
+                          function, allows shading of graphics
+
+   TimeFormat             Sets the default time format for Word
+
+   UpdateDictionaryNumber Sets the default order for custom
+                          dictionaries
+
+   User Dot Path          Sets the default path for User
+                          templates
+
+   Workgroup Dot Path     Sets the default path for Workgroup
+                          templates
+
+Help Key
+--------
+
+   
+   HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Help\Files
+
+This key contains the paths for the Word Help files. Word Help, WordPerfect Help,
+and Visual Basic Help paths are found here.
+
+HTML Key
+--------
+
+   
+   HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\HTML
+
+This key contains the default settings for the Web Authoring feature. The default
+settings are the following:
+
+   AutoUpDate           Sets the date to check the Web for updates
+
+   AutoUpdateAddress    Sets the Web address to check for Web
+                        updates
+
+   Bullet Path          Sets the path for Web graphical bullets
+
+   Clipart URL          Sets the Web address for new Web clipart
+
+   Dlg Bullet Path      Sets the path for basic Web bullets
+
+   Dlg HorizontalLine   Sets the path for basic Web lines
+
+   HorizontalLine Path  Sets the path for Web graphical lines
+
+   LocalContent         Sets the location for documents containing
+                        default content used by the Web page
+                        wizard
+
+   LocalPageStyles      Sets the location for .gif files, backgrounds,
+                        and templates used by the Web page wizard
+
+   WebArt Path          Sets the path for local clipart
+
+Stationery Key
+--------------
+
+   
+   HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Stationery
+
+This key contains the default location for the template for WordMail and the
+links to find the template.
+
+The four settings are the following:
+
+   Cfg File Location    Sets the path to the WordMail folder
+
+   Default Template     Sets the path to the template (by default,
+                        Email.dot)
+
+   DlgDefTpl            Shows a link to the default template
+
+   Option               Shows a link to the default template
+
+Text Converters Key
+-------------------
+
+   
+   HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Text Converters
+
+This key contains registration information for text converters for Word. It
+includes the keys for import and export converters. Each converter registers its
+extension, name, and path in this key.
+
+NOTE: Three uncommon converters registered in this key are the Schedule Plus
+converter, the MSPAB converter, and the Microsoft Outlook converter. These
+converters allow you to import contact lists through an Address book.
+
+The paths are the following:
+
+   
+   HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Text Converters\Import\Splus
+
+   
+   HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Text Converters\Import\MSPAB
+
+   
+   HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Text Converters\Import\OUTLOOK
+
+Wizards Key
+-----------
+
+   
+   HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\Wizards
+
+This key replaces the Wordwiz.ini file from earlier versions of Word. All wizard
+defaults are stored here. These setting are created the first time you run a
+wizard.
+
+WordMail Key
+------------
+
+   
+   HKEY_CURRENT_USER\Software\Microsoft\Office\8.0\Word\WordMail
+
+This key contains the window position information for WordMail.
+
+Settings in: HKEY\CURRENT_USER\Software\Microsoft\Office\8.0\Common
+-------------------------------------------------------------------
+
+This key is used by other Microsoft programs, such as the Office programs.
+Likewise, these settings are shared between programs. Changes made in one
+program's settings also appear in the other programs' settings.
+
+   Assistant    Sets information about the chosen Office Assistant
+
+   AutoCorrect  Sets the path to the .ACL file (which contains the
+                AutoCorrect list) and lists the current settings for
+                AutoCorrect
+
+   FileNew      Sets paths for local and shared templates
+
+   Internet     Stores settings for File Transfer Protocol (FTP) sites and
+                icons
+
+   Open Find    Stores default setting for Open and Save dialog boxes in
+                Microsoft Word, including current view and file name and
+                most recently used lists
+
+   Toolbars     Turns ToolTips on or off and sets button sizes for toolbars
+
+   Userinfo     Sets user information including address, name, and initials
+
+Settings in: HKEY\CURRENT_USER\Software\Microsoft\MS Setup (ACME)
+-----------------------------------------------------------------
+
+This setting refers to the user's name, which you are prompted to fill in during
+Setup.
+
+   User Info      Sets the user name and company name for Setup usage
+
+Settings in: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools
+---------------------------------------------------------------
+
+This key contains paths for all Windows applets (programs such as Equation,
+WordArt, and MSGraph). Paths for graphics filters and text converters are also
+registered in this location. There are two keys that pertain to Word. One is the
+Graphics Filters key, which registers the import and export filters, and the
+other is the Text Converters key, which registers import and export converters.
+In addition, each filter and converter is registered individually. A list of
+clients that use a filter, converter, or applet is listed under each tool.
+
+Miscellaneous Settings
+----------------------
+
+The .doc file name extension is registered in HKEY_CLASSES_ROOT in several ways.
+
+Class Ids are in HKEY_CLASSES_ROOT and in HKEY_LOCAL_MACHINE.
+
+Equation Editor options outlined in the RegOptions Macro are registered in the
+following key:
+
+   
+   HKEY_CURRENT_USER\Software\Microsoft\Equation Editor\3.0\Options\General
+
+Note that the Options\General folders do not appear unless options are set.
+
+Using the RegOptions Macro
+--------------------------
+
+The RegOptions macro can be used to examine the Windows registry or to make
+changes to Word settings stored there. To run the macro, follow these steps:
+
+1. On the File menu, click Templates and Add-ins.
+
+2. Click Add.
+
+3. Select the "Program Files\Microsoft Office\Office\Macros" folder.
+
+4. Select the Support8.Dot file and click OK. This step adds the Support8
+   template to the "Global Templates and Add-ins" box. Click OK.
+
+5. On the Tools menu, click Macro.
+
+6. In the Macros In list, click Support8.dot (Template).
+
+7. In the Macros list, click RegOptions, and then click Run.
+
+Alphabetical List of Options and Where They Are Stored
+------------------------------------------------------
+
+NOTE: In the following table, "Template" refers to either the Normal.dot template
+or to a custom template. The "Qxxxxxx" reference refers to a Microsoft Knowledge
+Base (KB) article where you can find additional information about the setting.
+
+   Setting name                    Storage location         KB Article Q#
+   ----------------------------------------------------------------------
+
+   Active Window Prop              Registry Data            Q157464
+   AutoCorrect-Cap info            Registry Data            Q157464
+   AutoCorrect-Formatted text      Normal.dot
+   AutoCorrect-Path                Registry Data            Q157464
+   AutoCorrect-Shared Entries     .ACL files <user>.acl
+   AutoSave Path                   Registry Data            Q140097
+   AutoText                        Template
+   Bullets & Numbering Palette     Registry Data            Q157464
+   Common Office                   Registry                 Q157464
+   Company Name                    Winword.exe
+   Confirm Conversion Options      Registry Data            Q157464
+   Custom Keystroke Assignments    Template
+   Custom Label                    Registry Data            Q157464
+   Default View Mode               Registry Data            Q157464
+   Default View Zoom               Registry Data            Q157464
+   Drawing Object Prop             Registry Data            Q157464
+   Edit                            Registry Data            Q157464
+   Envelope                        Registry Data            Q157464
+   File Locations                  Registry Data            Q157464
+   File Routing Slip               Registry Data            Q157464
+   Font Substitution               Registry                 Q163813
+   Format Style List               Registry Data            Q157464
+   General                         Registry Data            Q157464
+   Grammar                         Registry                 Q157464
+   Help File                       Registry Data            Q157464
+   Help for WP                     Registry Options         Q135872
+   HTML                            Registry Data            Q157464
+   Macros                          Template/Document
+   Mailing Address Name, Initials  Registry Data            Q157464
+   Most Recently Used File List    Registry Data            Q157464
+   Most Recently Used Font List    Registry Data            Q157464
+   Picture Editing                 Registry                 Q112199
+   Print                           Registry Data            Q157464
+   Print data forms                Document
+   Proofing Tools                  Registry Data            Q157464
+   Revisions(Track Changes)        Registry Data            Q157464
+   Save                            Registry Data            Q157464
+   Screen Location                 Registry Data            Q157464
+   Shared Tools                    Registry                 Q157464
+   Show Tips                       Registry Data            Q157464
+   Snap to Grid                    Registry
+   Sort Options                    Registry Data            Q157464
+   Spelling                        Registry Data            Q157464
+   Styles                          Template/Document
+   Table of Authorities            Registry Data            Q157464
+   Templates and Add-ins           Registry Data            Q157464
+   Text Converters                 Registry Data            Q157464
+   Toolbar Docking                 Registry Data            Q157464
+   Toolbars                        Template/Document
+   Tools/Options View              Registry Data            Q157464
+   User Info                       Registry
+   View Options                    Registry Data            Q157464
+   View Toolbars                   Template
+   View/Ruler                      Registry Data            Q157464
+   View/Toolbar                    Template
+   Virus Protection                Registry                 Q157464
+   Wizards                         Registry                 Q157464
+   WordMail                        Registry                 Q157464
+
+AutoCorrect lists are shared between Office programs. Any changes you make to the
+AutoCorrect entries and settings while in one program are immediately available
+to the other programs. In addition, Word can store AutoCorrect items that
+consist of formatted text and graphics.
+
+Information pertaining to AutoCorrect is stored in various locations. These
+locations are listed in the following table.
+
+   This AutoCorrect information                Is stored here
+   ---------------------------------------------------------------------
+
+   AutoCorrect entries shared by all           .acl file in the location
+   programs                                    specified in the registry
+
+   AutoCorrect entries used only by            Normal.dot
+   Word (formatted text and graphics)
+
+   AutoCorrect settings (correct two initial   Registry
+   capitals, capitalize names of days,
+   replace text as you type)
+
+   AutoCorrect settings used only by           Registry
+   Word (Correct accidental usage of CAPS
+   LOCK key, Capitalize first letter of
+   sentences)
+
+Additional query words:
+
+======================================================================
+Keywords          : kbdta word8 word97 kbfaq
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

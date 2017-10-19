@@ -1,0 +1,103 @@
+DOCUMENT:Q142385  06-MAY-2001  [visualc]
+TITLE   :FIX: Using CString::operator+= May Cause an Access Violation
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbnokeyword kbMFC kbVC kbVC400bug kbVC410fix kbGrpDSMFCATL kbNoUpdate
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, 32-bit Editions, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An access violation may result after using CString::operator+= where the string
+on the right hand side of the operator is an empty string. If the debug CRT
+libraries are installed, an Assertion Failure in Dbgheap.c line 1017 will occur.
+The "Sample Code" section in this article gives an example that demonstrates
+this problem.
+
+CAUSE
+=====
+
+The CString implementation has been optimized in Visual C++ 4.0 to use reference
+counting in order to minimize duplication in allocation of memory. When
+operator+= is used to append an empty string, the code in
+CString::ConcatInPlace() incorrectly decrements the reference count. If more
+than one CString is pointing at this data, the call to delete in the CString
+destructor causes an access violation.
+
+RESOLUTION
+==========
+
+To work around this problem, avoid using the += operator with an empty string of
+the form:
+
+      str1 += _T("");
+
+Check for empty CStrings prior to appending:
+
+      if (!str2.IsEmpty())
+         str1 += str2;
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This bug was corrected in Visual C++ 4.1.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+   /* Compile options needed: default
+   */ 
+
+   {
+     CString str1, str2;
+
+     str1  = _T("allocspace");  // length of RHS > 0, allocate memory
+                            // str1 += str2 will otherwise do a fast copy
+                            // if both CStrings are uninitialized
+
+     str1  = _T("");        // make str1 NULL
+                            // operator= will put '\0' at m_pchData[0]
+
+     str2  = str1;          // str1 and str2 share the same m_pchData.
+                            // m_pchData now has ref count of 2
+
+     str1 += _T("");        // m_pchData has ref count of 1 but both str1
+                            // and str2 use this data.
+   }
+
+Additional query words: kbVC400bug 4.00 4.10
+
+======================================================================
+Keywords          : kbnokeyword kbMFC kbVC kbVC400bug kbVC410fix kbGrpDSMFCATL kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

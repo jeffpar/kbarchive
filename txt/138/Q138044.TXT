@@ -1,0 +1,70 @@
+DOCUMENT:Q138044  03-AUG-2000  [foxpro]
+TITLE   :How to Add an Existing Form to a FormSet
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you create a FormSet, there is no obvious way to add an existing form to
+the FormSet. This article shows you how to do it.
+
+MORE INFORMATION
+================
+
+To add MyForm to the FormSet, follow these steps:
+
+1. Open MyForm.
+
+2. On the File menu, click Save As Class, and click Save Form.
+
+3. Give the new class a name and a file to be stored in.
+
+4. Close MyForm.
+
+5. With the FormSet active, click View Classes on the Form Designer toolbar, and
+   then click Add.
+
+6. Select the .VCX file you saved the MyForm class in, and click Open.
+
+7. Select the toolbar representation of MyForm, and drop the form onto the
+   FormSet.
+
+This adds a class instance of MyForm to the FormSet.
+
+REFERENCES
+==========
+
+Developer's Guide pages 260 and 271.
+
+Additional query words: VFoxWin akz
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

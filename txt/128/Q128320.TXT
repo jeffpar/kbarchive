@@ -1,0 +1,61 @@
+DOCUMENT:Q128320  07-DEC-2000  [schedplus]
+TITLE   :Mac MSPlus: Viewing Other Users' Appointments
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER::1.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for the Apple Macintosh, version 1.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In version 1.0a of Schedule+ for Macintosh, the only appointments visible are
+those of users on the same local server. Any user that wishes to have
+appointments made viewable to users on other servers needs to do the following:
+
+1. From the Schedule+ menu, select Preferences.
+
+2. Select Complete Text (except Notes).
+
+By default, this is set to Appointment Boxes Only, which allows other users to
+only view Free/Busy Times. There is also an option under Preferences called
+Nothing, which allows the user to deny all other users the ability to view
+Free/Busy Times and Complete Text.
+
+MORE INFORMATION
+================
+
+Only local users can view the complete text of an appointment. If Distribute my
+Appointment Boxes to Other Servers (default) is selected under Preferences,
+users on other AppleTalk Mail servers can only view Free/Busy Times, even though
+the user whose schedule they are trying to view has selected Complete Text in
+the ...local server: section described above.
+
+Additional query words: schedule plus 1.00a sched+ can't see
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbScheduleSearch kbSchedule100a
+Version           : :1.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,93 @@
+DOCUMENT:Q263710  28-OCT-2000  [exchange]
+TITLE   :XADM: Exchange replication fails with 1102 s and 1103 s between
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5 SP3
+OPER/SYS:
+KEYWORDS:exc55sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP3 
+-------------------------------------------------------------------------------
+
+NOTE: If the Exchange Server computer that performs directory replication in your system does not have an anti-virus application
+programming interface (API) mode virus scanner installed, this article does not apply.
+
+SYMPTOMS
+========
+
+Replication between sites may stop working sporadically and the following event
+IDs may be logged on the directory replication bridgehead servers:
+
+   Source: MSexchangeDS
+   MessageId=1102
+   Severity=Warning
+   During intersite replication, the directory replication agent (DRA) closed the
+   connection to the mail service in response to error %1. Will attempt to
+   connect again later.
+
+   Source: MSexchangeDS
+   MessageId=1103
+   Severity=Warning
+   During intersite replication, the directory replication agent (DRA) received a
+   non-delivery report (NDR) for messages submitted for the directory at %1. The
+   diagnostic is %2. The reason is %3.
+
+CAUSE
+=====
+
+This issue can occur because Exchange Server 5.5 Service Pack 3 makes
+virus-scanning APIs available to speed up attachment scanning.
+
+
+Because of this, certain replication problems can occur if the replication
+messages contain attachments. For additional information, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q259163 XADM: Recipients Cannot Open Attachments If Virus Scanning Interfaces
+   Are Enabled
+
+RESOLUTION
+==========
+
+To resolve this issue, temporarily uninstall the anti-virus application
+programming interface (API) scanner and apply the information store fix, build
+5.5.2652.42, that is described in the following Microsoft Knowledge Base
+article:
+
+   Q262491 XADM: Information Store Crashes When Using Antivirus Application
+   Programming Interface
+
+That fix includes the fix that is described in the following Knowledge Base
+article:
+
+   Q259163 XADM: Recipients Cannot Open Attachments If Virus Scanning Interfaces
+   Are Enabled
+
+Then reinstall anti-virus application programming interface (API) scanner.
+
+Additional query words: VAPI
+
+======================================================================
+Keywords          : exc55sp3 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+Version           : winnt:5.5 SP3
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

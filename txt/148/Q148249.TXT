@@ -1,0 +1,63 @@
+DOCUMENT:Q148249  08-FEB-2000  [foxpro]
+TITLE   :DOC: Help File Example for SELECT SQL UNION Does Not Work
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:kbdocfix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual FoxPro's Help information for SELECT - SQL gives an incorrect example of
+how to use the UNION clause. It will return the following error if you try to
+run it:
+
+   SELECTs are not UNION compatible
+
+This documentation error has been fixed in Visual FoxPro 5.0 for Windows.
+
+MORE INFORMATION
+================
+
+The placeholders for orders.order_id and orders.emp_id in the second SELECT are
+for the wrong data type. The placeholders are for numeric fields and they should
+be for character fields. The example should read as follows:
+
+      SELECT customer.company, orders.order_id, orders.emp_id ;
+         FROM customer, orders ;
+         WHERE customer.cust_id = orders.cust_id ;
+      UNION ;
+         SELECT customer.company, '', '' ;
+         FROM customer ;
+         WHERE customer.cust_id NOT IN ;
+         (SELECT orders.cust_id FROM orders)
+
+Additional query words: docerr VFoxWin 5.00
+
+======================================================================
+Keywords          : kbdocfix 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

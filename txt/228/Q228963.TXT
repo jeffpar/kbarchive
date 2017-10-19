@@ -1,0 +1,63 @@
+DOCUMENT:Q228963  23-MAY-1999  [homegame]
+TITLE   :Midtown Madness: Finish Line Does Not Appear in Checkpoint Race
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbui kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Midtown Madness, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run a Checkpoint Race in Microsoft Midtown Madness, the finish line may
+not appear on the screen, even though your opponents are stopped where the
+finish line should be displayed.
+
+CAUSE
+=====
+
+This behavior can occur if you miss a checkpoint in the race.
+
+RESOLUTION
+==========
+
+To resolve this issue, use the directional arrow that is displayed on the
+upper-middle portion of the game screen to drive to the checkpoint you missed,
+and then return to the finish line.
+
+MORE INFORMATION
+================
+
+Because you do not have to follow a specific route in Midtown Madness Checkpoint
+Races, you can pass the race checkpoints in any order you want. However, you are
+not notified if you miss a particular checkpoint.
+
+Additional query words: 1.00 midmad mid-town missing end finishline check-point
+
+======================================================================
+Keywords          : kbui kbimu msgame 
+Technology        : kbHomeProdSearch kbGamesSearch kbMidtownMadSearch kbMidtownMadness
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

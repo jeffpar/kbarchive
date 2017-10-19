@@ -1,0 +1,72 @@
+DOCUMENT:Q301493  21-AUG-2001  [msnetwork]
+TITLE   :Dialing: User has Moved
+PRODUCT :The Microsoft Network
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You are an MSN Customer, you have moved, and you need to change your local
+access numbers.
+
+RESOLUTION
+==========
+
+To change local access numbers
+
+1. Turn on the MSN Companion device and click "connection settings".
+
+2. The "Dialup Troubleshooting Page" will open. Click "I heard an operator's
+   error."
+
+3. On the new page, click "I have moved to a different residence, and I need to
+   choose new MSN access numbers."
+
+4. Select one of the following options:
+
+    - "I want to choose new MSN access numbers"
+
+       - Type in your new home phone number. The option will dials you in and
+         executes POP lite.
+
+    - "I want to contact Technical support"
+
+       - Contacts technical support. Technical Support can use the dialing
+         command to walk the customer through changing phone numbers.
+
+    - "Never mind - I want to try again without making any changes"
+
+       - Allows you to try again without making any changes
+
+Additional query words: kbimu; MSN Companion
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSNCompanion
+Version           : :2.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,71 @@
+DOCUMENT:Q164884  01-MAY-1999  [iis]
+TITLE   :Err Msg: Connection with Server Could Not Be Established
+PRODUCT :Internet Information Server
+PROD/VER:Winnt:1.0,2.0,3.0
+OPER/SYS:
+KEYWORDS:kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server versions 1.0, 2.0, 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you apply a new Secure Sockets Layer (SSL) key, and you use HTTPS, you may
+get the following error message:
+
+   Cannot open Internet site https://< sightname >.
+   A connection to the server could not be established.
+
+WORKAROUND
+==========
+
+1. Open the Key Manager under Internet Service Manager, click Export Key to copy
+   the key to a backup file.
+
+2. Click Delete to remove the key.
+
+3. Select Commit Changes Now to register the changes in Key Manager.
+
+4. Stop and Restart the WWW Service.
+
+5. In Key Manager, click WWW, and click Import Key to install the key from the
+   backup file.
+
+6. Again select Commit Changes Now to register the changes.
+
+7. Stop and restart the WWW Service.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Internet Information Server
+versions 1.0, 2.0 and 3.0. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+======================================================================
+Keywords          : kberrmsg 
+Technology        : kbiisSearch kbiis300 kbiis200 kbiis100
+Version           : Winnt:1.0,2.0,3.0
+Hardware          : ALPHA x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

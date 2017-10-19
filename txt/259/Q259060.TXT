@@ -1,0 +1,109 @@
+DOCUMENT:Q259060  03-MAY-2000  [winnt]
+TITLE   :Err Msg: Invalid Addition Response: 19 - CONSTRAINT VIOLATION...
+PRODUCT :Microsoft Windows NT
+PROD/VER::2.1
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Zoomit VIA, version 2.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you write custom recipients to Microsoft Exchange with the LDAP Exchange
+management agent, the Zscript.log file may contain the following error message:
+
+   Invalid addition response: 19 - CONSTRAINT VIOLATION for object
+
+CAUSE
+=====
+
+This issue occurs because Exchange is rejecting attributes based on their
+length. In Zoomit VIA 2.1, the attribute lengths are not correctly trimmed.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Zoomit VIA 2.1.
+
+Microsoft has corrected this issue in Microsoft Metadirectory Services (MMS) 2.1.
+
+MORE INFORMATION
+================
+
+In MMS 2.1, the following updates have been made to the ADD, MODIFY, and
+CONSTRUCTION templates.
+
+ADD and MODIFY Templates
+------------------------
+
+Replaced
+
+   MAPI-Recipient:
+
+with
+
+   (MAPI-Recipient: $v_MapiRecipient)
+
+Foreign Users OUTPUT CONSTRUCTION Template
+------------------------------------------
+
+Added either to the end of template, or immediately after the $v_oc assignment):
+
+   if $embedded("Remote-Address",$v_oc) = T
+   then
+   $v_MapiRecipient = 0
+   endif
+
+Added the following lines to the end of the foreign users OUTPUT CONSTRUCTION
+template:
+
+   $v_rdn = $trim($v_rdn,70)
+   $v_AccountName = $trim($v_AccountName, 64)
+   $v_AdminDisplayNameRdn = $trim($v_AdminDisplayNameRdn, 256)
+   $v_AliasName = $trim($v_AliasName, 64)
+   $v_company = $trim($v_company, 64)
+   $v_department = $trim($v_department , 64)
+   $v_description = $trim($v_description, 1024)
+   $v_facsimileTelephoneNumber = $trim($v_facsimileTelephoneNumber, 64)
+   $v_givenName = $trim($v_givenName, 64)
+   $v_homePhone = $trim($v_homePhone, 64)
+   $v_initials = $trim($v_initials, 6)
+   $v_mail = $trim($v_mail, 256)
+   $v_mobile = $trim($v_mobile, 64)
+   $v_pager = $trim($v_pager, 64)
+   $v_postalCode = $trim($v_postalCode, 40)
+   $v_sn = $trim($v_sn, 64)
+   $v_st = $trim($v_st, 128)
+   $v_targetaddress = $trim($v_targetaddress, 1123)
+   $v_telephoneNumber = $trim($v_telephoneNumber, 32)
+
+Additional query words: ma
+
+======================================================================
+Keywords          : kbenv kberrmsg 
+Technology        : kbZoomitSearch kbMSNonProductSearch kbZoomit210
+Version           : :2.1
+Issue type        : kbprb
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

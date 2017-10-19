@@ -1,0 +1,59 @@
+DOCUMENT:Q133368  08-NOV-2001  [homemm]
+TITLE   :Julia Child: Extra Characters Print with Recipe
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbgraphic kbmm kbprint kbimu kbPrintingkbbuglist kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Julia Child: Home Cooking with Master Chefs for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print from Microsoft Julia Child, special characters, such as a letter
+T in a square box, print with recipe instructions.
+
+STATUS
+======
+
+Microsoft has confirmed this problem in Julia Child: Home Cooking with Master
+Chefs for Windows, version 1.0.
+
+MORE INFORMATION
+================
+
+These characters are printed images of screen hot spots that provide additional
+recipe information when they are clicked. These spots open a window where
+techniques or steps are explained. The spots cannot be removed or prevented from
+printing.
+
+
+
+Additional query words: multi media multimedia multi-media mmtitles kbmm special character square julia box
+
+======================================================================
+Keywords          : kbgraphic kbmm kbprint kbimu kbPrinting kbbuglist kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword kbJuliaChild
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

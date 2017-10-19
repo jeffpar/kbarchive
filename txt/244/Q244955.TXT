@@ -1,0 +1,72 @@
+DOCUMENT:Q244955  18-JUN-2002  [visualc]
+TITLE   :PRB: MinDependency Project May Need to Include Atl.dll
+PRODUCT :Microsoft C Compiler
+PROD/VER::3.0,6.0
+OPER/SYS:
+KEYWORDS:kbCOMt kbContainer kbRegistry kbVC600 kbATL300 kbDSupport kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Active Template Library (ATL) 3.0, used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+ATL projects built for MinDependency will still need Atl.dll if they use ATL
+control containment code.
+
+CAUSE
+=====
+
+ATL's control containment implements interfaces that are described by the type
+library in Atl.dll.
+
+RESOLUTION
+==========
+
+Include the Atl.dll file.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+ATL's control containment implements two dual interfaces,
+IDocHostUIHandlerDispatch and IAxWinAmbientDispatch, as a part of the control
+container. Because the dual interfaces are implemented using IDispatchImpl, they
+delegate to the type library for implementation of IDispatch methods. This
+requires the type library describing these interfaces to be registered. This
+type library exists in Atl.dll.
+
+Additional query words: IDocHostUIHandlerDispatch, IAxWinAmbientDispatch IDispatchImpl static
+
+======================================================================
+Keywords          : kbCOMt kbContainer kbRegistry kbVC600 kbATL300 kbDSupport kbGrpDSMFCATL 
+Technology        : kbVCsearch kbAudDeveloper kbATLsearch
+Version           : :3.0,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,62 @@
+DOCUMENT:Q158774  18-DEC-2000  [win95x]
+TITLE   :Sage.dat Files Do Not Match When Compared After Backup
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+ - Microsoft Plus! for Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you compare files after performing a backup operation, the Sage.dat files
+may not match.
+
+CAUSE
+=====
+
+System Agent accesses this file when it runs an event (such as a check for low
+disk space notification). If this occurs after the Sage.dat file is backed up,
+but before the comparison is completed, the date and time stamps differ.
+
+RESOLUTION
+==========
+
+To work around this behavior, disable System Agent before you perform a backup
+operation. To disable System Agent, use the right mouse button to click the
+System Agent icon on the taskbar, and then click Suspend System Agent on the
+menu that appears.
+
+When the backup operation is finished, activate System Agent again by using the
+right mouse button to click the System Agent icon on the taskbar, and then
+clicking Suspend System Agent on the menu that appears.
+
+Additional query words: sage
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbGamesSearch kbPlusSearch kbZNotKeyword3 kbPlus95
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

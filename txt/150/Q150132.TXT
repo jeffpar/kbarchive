@@ -1,0 +1,92 @@
+DOCUMENT:Q150132  02-NOV-1999  [fortran]
+TITLE   :PRB: Undefined Pointer Assignment Causes Application Error
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbFortranPS kbLangFortrankbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran PowerStation for Windows 95 and Windows NT, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Attempting to assign a pointer result to an undefined pointer causes one of the
+following application errors at run time:
+
+Under Windows NT version 3.51:
+
+   The instruction at "0x00000000" referenced memory at "0x 00000000".
+   The memory could not be "written".
+
+Under Windows 95:
+
+   This program has performed an illegal operation and will be shut down.
+   If the problem persists, contact the program vendor.
+
+   Details:
+
+   <program> caused an invalid page fault in module <filename.exe> at
+   0137:00401022
+
+CAUSE
+=====
+
+The pointer variable is undefined at the time of assignment.
+
+RESOLUTION
+==========
+
+The pointer must be defined by either a pointer assignment or an allocate
+statement.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+Sample Code to Illustrate Problem
+---------------------------------
+
+   ! Compile options needed: none
+
+         integer, target :: i = 1
+         integer, pointer :: p
+   ! comment the following line for work-around
+         p = i        ! undefined pointer
+   ! uncomment the following line for work-around
+   !      p => i      ! definition and assignment
+         print *, p
+         end
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          : kbFortranPS kbLangFortran kbbuglist
+Technology        : kbAudDeveloper kbPTProdChange kbFortranSearch kbFORTRANPower400NT
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,120 @@
+DOCUMENT:Q108461  24-MAR-2000  [fortran]
+TITLE   :FIX: DO Loop/Computed GOTO Errors with /Ox and /4Yb
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran Powerstation 32 for Windows NT, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+DO loops may not function properly when compiled with both optimization for time
+(/Ox) and extended error handling (/4Yb or $DEBUG). A similar problem exists
+using computed GOTO statements.
+
+RESOLUTION
+==========
+
+Do not compile with /Ox and /4Yb at the same time. Use the Visual Workbench
+debugger to track down run-time errors that occur when using /Ox.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft FORTRAN PowerStation
+32 for Windows NT, version 1.0. This problem was fixed in FORTRAN PowerStation,
+version 4.0.
+
+MORE INFORMATION
+================
+
+The following code illustrates the DO loop problem when compiling with /Ox and
+/4Yb:
+
+Sample Code #1
+--------------
+
+   c FORTRAN Compile options needed: /Ox /4Yb
+         ieof = 0
+         DO i = 1, 4
+           IF ( i .EQ. 4 )  ieof = 999
+           i1 = i + 1
+           WRITE (*,1000) i, i1, ieof
+         ENDDO
+   1000  FORMAT (3i6)
+         END
+
+Output
+------
+
+Expected results:
+
+   1     2     0
+   2     3     0
+   3     4     0
+   4     5   999
+
+Results with -Ox -4Yb:
+
+   1     2     0
+   1     2     0
+   2     3     0
+   3     4     0
+
+The sample program below executes in an infinite loop when compiling with /Ox and
+/4Yb:
+
+Sample Code #2
+--------------
+
+   c FORTRAN Compile options needed: /Ox /4Yb
+         J = 0
+       1 CONTINUE
+         WRITE(*,*) 'Label 1'
+         WRITE(*,*) 'J = ', J
+
+         J = J + 1
+         IF (J.EQ.2) THEN
+        K = 1
+         ELSE
+        K = 1
+         ENDIF
+
+         WRITE(*,*) 'J = ', J
+         GOTO(1,2), J        ! Computed GOTO always branches to label 1
+
+       2 CONTINUE
+         WRITE(*,*) 'Label 2'
+         END
+
+Additional query words: 1.00
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbFORTRANPower32100NT
+Version           : :1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,92 @@
+DOCUMENT:Q75471  04-JUL-1999  [win16sdk]
+TITLE   :INFO: Basics of Banding Printing in Windows
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:kb16bitonly kbOSWin310 _IK kbOSWin300 kbSDKWin16
+
+======================================================================
+3.00 3.10
+WINDOWS
+kbprg
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Banding is a technique used to implement the full functionality of the Windows
+Graphics Device Interface (GDI) in printer drivers that can only print bitmaps
+for graphics. An application that is aware of the banding process can enhance
+its printing performance.
+
+MORE INFORMATION
+================
+
+Most dot-matrix printers and many laser printers cannot print graphics such as
+polygons and lines. They can print only bitmaps and text. These printers require
+special support in GDI to implement the full range of GDI functionality.
+
+When an application prints to such a device, the printer driver does not send
+output directly to the printer. Rather, the printer driver generates a bitmap in
+memory. When all graphics have been rendered into the bitmap, the bitmap itself
+is printed.
+
+For most printers, the bitmap can be very large. For example, a 300 dots-per-inch
+(dpi) laser printer requires nearly a megabyte to render a single letter-size
+page. To reduce memory requirements, the image is broken into a sequence of
+smaller rectangles, called bands, which cover the page. Each of these individual
+rectangles is rendered and downloaded to the printer separately.
+
+There are two ways that the graphics calls can be duplicated on each band. If the
+application is unaware of the banding process, GDI will capture all graphics
+calls for a page into a metafile. When the application calls the NEWFRAME (next
+page) escape, GDI plays the entire metafile into each band. Alternatively, the
+application may request a band from the printer driver and produce the output
+itself. A significant optimization results since GDI will not need to create,
+write, and reread a disk-based metafile.
+
+Whether GDI or the application requests the band from the driver, the process is
+very similar. Banding printer drivers implement an escape called NEXTBAND. The
+escape causes the printer driver to download the previous band to the printer
+(if any) and to initialize itself to render the new band. It also returns a
+rectangle defining the bounds of the band bitmap relative to the whole page.
+Output calls made to the driver's Device Context (DC) after NEXTBAND go directly
+to the printer driver.
+
+GDI, or the banding application, calls NEXTBAND after each band is rendered to
+download the band and also to retrieve the next band from the driver. When all
+bands have been printed, NEXTBAND causes the printer driver to eject the page
+and return an empty rectangle to indicate the end of a page.
+
+For more information on how to implement banding, query on the following words:
+
+   prod(winsdk) and banding
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          : kb16bitonly kbOSWin310 _IK kbOSWin300 kbSDKWin16 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK310
+Version           : WINDOWS:3.1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

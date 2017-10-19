@@ -1,0 +1,77 @@
+DOCUMENT:Q118324  15-NOV-1999  [win3x]
+TITLE   :Choosing Network Icon Hangs System with Access 1.1 Installed
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you double-click the Network icon in Control Panel, your system stops
+responding (hangs).
+
+CAUSE
+=====
+
+This problem can occur if Microsoft Access version 1.1 has been installed after
+Windows for Workgroups version 3.11.
+
+Microsoft Access 1.1 ships with an older version of the WFWNET.DRV file (dated
+5/28/93), which replaces the Windows for Workgroups WFWNET.DRV file during the
+Access Setup. This version does not support the dialog boxes used in Windows for
+Workgroups 3.11.
+
+RESOLUTION
+==========
+
+Follow the steps below to reinstall the Windows for Workgroups 3.11 version of
+the WFWNET.DRV file.
+
+1. Exit Windows for Workgroups.
+
+2. At the MS-DOS prompt, change to the Windows SYSTEM subdirectory.
+
+3. Use the MS-DOS RENAME command to rename the WFWNET.DRV file dated 5/28/93 to
+   WFWNET.OLD:
+
+   rename wfwnet.drv wfwnet.old
+
+4. Use the MS-DOS or Windows for Workgroups EXPAND.EXE command to expand the
+   Windows for Workgroups WFWNET.DR_ file to the Windows SYSTEM subdirectory.
+   (WFWNET.DR_ is located on Disk 7 of the 3.5-inch disk set and Disk 8 of the
+   5.25-inch disk set.) For example, if the disk containing WFWNET.DR_ is in
+   drive A and drive C contains your Windows directory, type the following
+   command:
+
+   expand a:\wfwnet.dr_ c:\windows\system\wfwnet.drv
+
+Additional query words: icon hourglass freeze freezes froze frozen hung hangs 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

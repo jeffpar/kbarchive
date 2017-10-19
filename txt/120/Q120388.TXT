@@ -1,0 +1,76 @@
+DOCUMENT:Q120388  17-DEC-2000  [win95x]
+TITLE   :Windows 95 Setup Err Msg: Warning SU-0014...
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+During the installation of Windows 95, you receive the following error message:
+
+   Setup Detection Warning
+   Warning SU-0014
+   Setup has found a hardware device on your computer that is not responding.
+   Click Continue to try this device again.
+
+   If problems persist, click Exit Setup, quit all programs, remove floppy disks
+   from their drives, and turn your computer off. Then, turn your computer on
+   and run Setup again (choose Safe Recovery when prompted).
+
+CAUSE
+=====
+
+This error message can be caused by any of the following conditions:
+
+ - The network has stopped responding.
+
+ - The CD-ROM has stopped responding.
+
+ - The floppy disk drive has stopped responding.
+
+ - You no longer have access to the hard disk to complete the installation
+   process.
+
+ - An unsupported device has been detected.
+
+
+WORKAROUND
+==========
+
+Following the recommendation in the error message (that is, turning off your
+computer, turning on your computer, and then rerunning Setup selecting Safe
+Recovery) may correct this problem. If it does not, you must determine which of
+the above conditions exists and then correct the problem (or problems).
+
+
+Additional query words: hang err msg SafeRecovery
+
+======================================================================
+Keywords          :  
+Technology        : kbWin95search kbZNotKeyword3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,66 @@
+DOCUMENT:Q139474  17-DEC-2000  [win95x]
+TITLE   :Cannot Access Floppy Drive When Backup Program Is Running
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you are running Microsoft Backup (or another 32-bit Windows-based backup
+program) you may receive the following error message if you try to access a
+floppy disk drive from My Computer or Windows Explorer:
+
+   <drive>:\ is not accessible
+
+You may also receive the following error message:
+
+   device is not ready
+
+These error messages can occur even if there is a formatted disk in the drive.
+
+In addition, if you are performing a backup, restore, or compare operation, the
+operation may be canceled if you try to access the floppy disk drive from a
+command prompt.
+
+MORE INFORMATION
+================
+
+This behavior occurs when you have a tape drive connected to the same floppy
+disk drive controller as the floppy disk drive you are trying to access.
+
+When a 32-bit Windows-based program is accessing one of the drives connected to
+the floppy disk drive controller, all other drives on the controller are
+unavailable. When you attempt to access a floppy disk drive from a command
+prompt, any active backup, restore, or compare operation is canceled because
+Windows 95 cannot prevent floppy disk drive access from occurring when the drive
+is accessed from a command prompt.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

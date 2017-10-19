@@ -1,0 +1,76 @@
+DOCUMENT:Q207416  16-NOV-2000  [sms]
+TITLE   :SMS: Distribution Manager Does Not Process a New Package
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbPackage kbSoftwareDist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Systems Management Server (SMS) Distribution Manager may not process the
+source files for a Software Distribution package as expected; in this scenario,
+the Distmgr.log file may log the following error:
+
+   Error 32: The process cannot access the file because it is being used by
+   another process.
+
+CAUSE
+=====
+
+This behavior can occur if the directory chosen for the source is frequently
+used by the system or other applications -- for example, the TEMP directory. If
+the source directory is being used by another program or process, the source
+files for the package may become locked, thereby preventing the Distribution
+Manager from gaining access to the file.
+
+This behavior can also occur if a file window (using My Computer) or Microsoft
+Windows Explorer is currently viewing the directory.
+
+WORKAROUND
+==========
+
+To work around this issue, ensure that the source directory is not in use when
+you create the package. Also, create a separate source and ensure that all
+source files for the new package are copied to that directory. SMS considers all
+files and sub-folders within this location to be source files for the package.
+
+MORE INFORMATION
+================
+
+Log entries in the Distmgr.log and status messages in the Distribution Manager
+component status node of the Administrator console indicate the number of
+retries already attempted and the latest status of the operation. Distribution
+Manager retries the operation if it triggers an error 32.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbPackage kbSoftwareDist 
+Technology        : kbSMSSearch kbSMS200
+Version           : :2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

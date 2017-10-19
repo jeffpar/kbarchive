@@ -1,0 +1,66 @@
+DOCUMENT:Q185833  10-AUG-2001  [winnt]
+TITLE   :Memory Leak in Rasman.exe on Compaq Systems
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On Compaq systems where the Remote Insight Board (RIB) is installed, the Remote
+Access Connection Manager Service (Rasman.exe) progressively consumes available
+memory at the rate of 4 KB approximately every two seconds.
+
+CAUSE
+=====
+
+The Compaq Remote Insight Board device (RIBWAN) is configured to accept incoming
+calls when it should be configured for "Dial out only" operation.
+
+RESOLUTION
+==========
+
+In Remote Access Service properties (Remote Access Setup), configure the RIBWAN
+device for "Dial out only" operation.
+
+MORE INFORMATION
+================
+
+The Remote Insight Board can be installed on Compaq Proliant and Prosignia
+systems (with the exception of the Prosignia 200). This device is not used to
+accept incoming RAS calls, and so should not be configured to accept them.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+Hardware          : x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

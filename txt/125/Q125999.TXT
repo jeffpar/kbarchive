@@ -1,0 +1,70 @@
+DOCUMENT:Q125999  08-AUG-2001  [winnt]
+TITLE   :System Log Event ID 7003: The Microsoft Windows Internet Name...
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.50 3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After you start Windows NT Server, the following error message may appear in the
+Event Viewer System Log:
+
+   Event ID: 7003
+   Source: Service Control Manager
+   Description: MDI service
+   The Microsoft Windows Internet Name Service service
+   depends on the following non-existent service NTLMSSP.
+
+CAUSE
+=====
+
+This error message occurs when the RPC Configuration service is not installed or
+is disabled. Several services, such as DHCP and Windows Internet Name Service
+(WINS), rely on this service. If the RPC configuration service is removed they
+fail with the Event ID 7003 error message.
+
+
+RESOLUTION
+==========
+
+To correct this problem:
+
+ - Run Control Panel, choose Services, and change the service to a type other
+   than disabled.
+
+   -or-
+
+ - Run Control Panel, choose Network, and reinstall the RPC Configuration
+   service.
+
+Additional query words: domain domains prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.50 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

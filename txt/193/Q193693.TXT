@@ -1,0 +1,102 @@
+DOCUMENT:Q193693  30-DEC-1999  [iis]
+TITLE   :Queries Return Documents That No Longer Exist
+PRODUCT :Internet Information Server
+PROD/VER:winnt:1.0,1.1,2.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Index Server versions 1.0, 1.1, 2.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it
+if a problem occurs. For information about how to do this, view the
+"Restoring the Registry" Help topic in Regedit.exe or the "Restoring a
+Registry Key" Help topic in Regedt32.exe.
+
+SYMPTOMS
+========
+
+After you remove files, queries against Index Server still return links to the
+deleted files.
+
+CAUSE
+=====
+
+When Index Server catalogs a document, if the document has both a long filename
+and a short (8.3) filename, both filename entries are indexed. However, when you
+delete a file from the file system, only a notification to remove the short
+filename from the catalog occurs. The entries for the long filename stay in the
+catalog.
+
+RESOLUTION
+==========
+
+To resolve this problem, upgrade to Windows 2000 Indexing Service.
+
+WORKAROUND
+==========
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk.
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it. If
+you are running Windows NT, you should also update your Emergency Repair Disk
+(ERD).
+
+To work around this problem, change the value of
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Filesystem\DisableNTFS
+8dot3NameCreation to 1. This disables the creation of 8.3 (short) filename
+entries for long filename entries. Be aware that this may have a negative effect
+on Legacy applications.
+
+STATUS
+======
+
+This problem has been corrected in Windows 2000 Indexing Service.
+
+MORE INFORMATION
+================
+
+WARNING: Legacy clients (particularly Windows 95 SR1 and earlier) will stop
+responding when accessing a network share on the server where the
+Disablentfs8dot3namecreation registry change has been applied. For more
+information, please see the following article in the Microsoft Knowledge Base:
+
+   
+
+   Q181866 Fatal Exception Error Accessing Windows NT Share From Windows 95
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbIdxServSearch kbAudDeveloper kbIdxServ100 kbIdxServ110 kbIdxServ200
+Version           : winnt:1.0,1.1,2.0
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

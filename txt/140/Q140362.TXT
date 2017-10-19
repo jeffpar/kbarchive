@@ -1,0 +1,59 @@
+DOCUMENT:Q140362  18-JUL-2001  [ssafe]
+TITLE   :BUG: PVCS_SS Does Not Work with PVCS for Windows NT
+PRODUCT :Microsoft SourceSafe
+PROD/VER:WINDOWS:4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbSSafe400bug kbSSafe500bug kbFAQ kbDSupport kbSsafe600FAQkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe, 32-bit, for Windows versions 4.0, 5.0, 6.0, on platform(s):
+    - the operating system: Microsoft Windows NT 
+    - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When running the PVCS_SS conversion utility, you may receive an error telling
+you that a PVCS log file may be corrupt. PVCS_SS then causes the MS-DOS session
+to hang (stop responding to input).
+
+CAUSE
+=====
+
+PVCS for Windows NT uses a different data/time scheme in the log files. The
+PVSC_SS utility was written to accept the date from the old PVCS log files.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+Additional query words: 4.00 5.00
+
+======================================================================
+Keywords          : kbSSafe400bug kbSSafe500bug kbFAQ kbDSupport kbSsafe600FAQ kbbuglist
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe32bitSearch
+Version           : WINDOWS:4.0,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

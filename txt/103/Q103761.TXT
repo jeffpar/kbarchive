@@ -1,0 +1,48 @@
+DOCUMENT:Q103761  30-JUL-2001  [lanman]
+TITLE   :Adaptec 1742 Controller Traps when LM Install is Restarted
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SYMPTOMS
+========
+
+A machine with an Adaptec 1742 controller traps when you try to continue a LAN
+Manager installation after installing OS/2.
+
+CAUSE
+=====
+
+The Adaptec 1742 controller comes with a utility that you use to build an
+alternate installation disk A and install OS/2. When you finish installing OS/2
+and reboot the machine to continue installing LAN Manager, the machine traps
+because the alternate disk A fails to copy its BID file to C:\.
+
+RESOLUTION
+==========
+
+Copy the BID file from the alternate disk A to C:\ before continuing to install
+LAN Manager.
+
+Additional query words: 2.20 2.10 2.1 2.10a 2.1a 2.2 adaptec 1742 scsi
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

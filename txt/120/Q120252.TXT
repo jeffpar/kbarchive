@@ -1,0 +1,63 @@
+DOCUMENT:Q120252  09-MAR-2000  [miscsdk]
+TITLE   :PRB: Viewer Title Setup Error in INICM.C Line 185
+PRODUCT :Miscellaneous Software Development Kits
+PROD/VER::2.0,2.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Multimedia Viewer Publishing Toolkit, versions 2.0, 2.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When running the following Microsoft Multimedia Viewer Publishing Toolkit Setup
+command to install a title, you encounter this error: "Setup has encountered a
+problem. Please report File='INSTALL\INICM.C', Line='185' to Microsoft Product
+Support Services."
+
+   \MVPUBKIT\MVSAMPLE\PROGSAMP\SETUP\USA\SETUP.EXE
+
+CAUSE
+=====
+
+SETUP.EXE uses the TITLE.MST file in the same directory for directions on how to
+install the title. TITLE.MST has seven variables. The values for all seven
+variables must be set by the author of the Viewer title. These variables contain
+information such as the name of the Viewer title and the destination directory
+for the title. If any of these variables are not initialized, SETUP.EXE will
+report an error in INICM.C.
+
+RESOLUTION
+==========
+
+The first 85 lines of TITLE.MST contain comments with instructions on how to
+initialize the seven variables.
+
+Additional query words: 2.00 setup mssetup toolkit
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbHomeMMsearch kbMMViewer200 kbMMViewer200a
+Version           : :2.0,2.0a
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

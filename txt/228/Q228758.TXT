@@ -1,0 +1,61 @@
+DOCUMENT:Q228758  09-DEC-2000  [mspress]
+TITLE   :Office 97 Small Business Edition Starts Here States Publisher 97
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocfix kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Office 97 Small Business Edition Starts Here 1-57231-607-1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When starting Microsoft Office 97 Small Business Edition Starts Here, you may
+receive an error stating that Microsoft Publisher 97 is not installed.
+
+CAUSE
+=====
+
+This error occurs when you have any version of Microsoft Publisher other than
+Publisher 97.
+
+WORKAROUND
+==========
+
+Click OK. This will not affect any of the exercises.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Office 97 Small
+Business Edition Starts Here.
+
+Additional query words: 1-57231-607-1 off97sh mpi
+
+======================================================================
+Keywords          : kbdocfix kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

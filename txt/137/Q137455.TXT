@@ -1,0 +1,73 @@
+DOCUMENT:Q137455  17-DEC-2000  [win95x]
+TITLE   :MS Exchange Err Msg: Groups Deleted from CompuServe Mail
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you send a message from Microsoft Exchange to a distribution list from a
+CompuServe address book, you may receive the following undeliverable mail
+message from the Microsoft Exchange System Administrator:
+
+   Your message did not reach some or all of the intended recipients.
+   The following recipients could not be reached. Group deleted from
+   CompuServe address book.
+
+CAUSE
+=====
+
+This error can be caused by an empty distribution list from a new CompuServe
+address book. When this error occurs, the empty distribution list is displayed.
+
+RESOLUTION
+==========
+
+Check all the groups in the CompuServe address book to make sure that each one
+contains valid entries. If a group does not contain valid entries, remove it
+from the list in Microsoft Exchange and then send the message again.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Windows 95. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+The message is not sent if any of the addresses are invalid, even if the rest of
+the addresses are good.
+
+Additional query words: cis
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

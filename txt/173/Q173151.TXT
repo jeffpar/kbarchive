@@ -1,0 +1,59 @@
+DOCUMENT:Q173151  18-NOV-1999  [pcmail]
+TITLE   :MDG: MS Mail to NGW Conversion Utility Written by Novell
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, version 3.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Novell has written a conversion utility to copy mail from a Microsoft Mail .mmf
+file to Novell GroupWise. This utility uses the Novell GroupWise API gateway to
+process a text file created from the .mmf file. Additional options are added to
+the File menu of the Microsoft Mail Windows client that creates this text file
+and copies the text file to the appropriate subdirectory of the NGW API gateway.
+The text file is converted to messages and are transmitted from the NGW API post
+office to the users mailbox on GroupWise.
+
+MORE INFORMATION
+================
+
+This utility is written and supported by Novell. The utility can be obtained
+from the Novell Web site at:
+
+   http://www.support.novell.com/
+
+Search for "MCU" (without the quotation marks) and "MS Mail" (without the
+quotation marks). The article discussing this utility is titled "GroupWise 4.1
+Conversion Utility for MS Mail."
+
+Additional query words: MCU Conversion Utility
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail350
+Version           : WINDOWS:3.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

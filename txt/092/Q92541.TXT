@@ -1,0 +1,92 @@
+DOCUMENT:Q92541  07-JAN-2000  [win3x]
+TITLE   :WFWG and Novell Netware Connectivity Configuration Files
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Windows for Workgroups (WFWG) provides the functionality to work with Novell
+NetWare networks versions 2.1 and later. This allows a Novell NetWare client
+workstation to become a Windows for Workgroups workstation, thereby providing
+access to Novell NetWare servers and/or Windows for Workgroups servers.
+
+MORE INFORMATION
+================
+
+The following additions are made when Novell NetWare connectivity is enabled in
+Windows for Workgroups:
+
+AUTOEXEC.BAT
+------------
+
+MSIPX
+NETX
+
+CONFIG.SYS
+----------
+
+LASTDRIVE=P
+DEVICE=C:\<WFW 3.1 dir>\MSIPX.SYS
+
+PROTOCOL.INI
+------------
+
+[network.setup]
+ transport=ms$ipx,MS$IPX
+ lana0=ms$ee16,1,ms$ipx (I.E. ms$ee16 is used for the INTEL
+EtherExpress 16 NIC.)
+[ms$ipx]
+ drivername=IPX$
+ mediatype=Novell/Ethernet (depending on the NetWare configuration)
+
+SYSTEM.INI
+----------
+
+[boot]
+ secondnet.drv=netware.drv
+[386Enh]
+ secondnet=vipx.386,vnetware.386
+[network]
+ multinet=netware
+[netware]
+ nwsharehandles=false
+ restoredrives=true
+
+If LAN Manager connectivity is installed as well as Novell, then the following
+line changes in the SYSTEM.INI file:
+
+   [network]
+     multinet=lanman,netware
+
+Additional query words: 3.10 3.1
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,69 @@
+DOCUMENT:Q62152  30-JUL-2001  [homegame]
+TITLE   :Gates Learjet 25G Performance Specifications
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+The following is a summary of the performance specifications for the Gates
+Learjet 25G in Flight Simulator version 4.00:
+
+   Feature                        Specification
+   -------                        -------------
+
+   Type designation               LR-25G
+   Engines                        General Electric CJ610-8A,
+                                     2950 pounds each
+   Seats                          10
+   Length                         47 feet 7 inches
+   Height                         12 feet 3 inches
+   Wing span                      35 feet 7 inches
+   Wing area                      247 square feet
+   Wing aspect ratio              5.5
+   Maximum ramp weight            16,200 pounds
+   Maximum takeoff weight         16,200 pounds
+   Standard empty weight          8250 pounds
+   Empty weight as tested         8616 pounds
+   Maximum useful load            8550 pounds
+   Zero-fuel weight               11,400 pounds
+   Maximum landing weight         13,700 pounds
+   Wing loading                   66 pounds per square foot
+   Maximum altitude               51,000 feet
+   Power loading                  12.8 pounds per pound
+   Maximum usable fuel            6638 pounds
+   Maximum pressurization
+      differential                9.4 pounds per square inch
+   8000-foot cabin altitude at    51,000 feet
+   Normal cruise at 45,000 feet   445 knots
+   High speed cruise at
+      41,000 feet                 464 knots
+   Fuel flow at normal cruise
+      (as tested)                 1370 pounds per hour
+   Stall speed clean              118 knots (14,500 pounds)
+   Stall speed full flaps         102 knots (14,500 pounds)
+   Stall speed flaps/gear down    99 knots
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

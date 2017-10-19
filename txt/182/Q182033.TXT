@@ -1,0 +1,110 @@
+DOCUMENT:Q182033  11-JAN-2001  [vbwin]
+TITLE   :HOWTO: Use BeforeNavigate2 in VB to Get an Event from HTML
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbVBp400 kbVBp500 kbhowto kb32bitOnly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Control Creation Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 5.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In an HTML page displayed in the WebBrowser control, you can trigger an event in
+the Visual Basic application by using the BeforeNavigate2 event in the
+WebBrowser control. For example, you can have a command button in the HTML page
+that closes the Visual Basic application when clicked.
+
+MORE INFORMATION
+================
+
+1. Create a Standard EXE project from Visual Basic. Form1 is created by default.
+   Add Microsoft Internet Controls to your Project Components.
+
+2. Add a WebBrowser Control from to Form1.
+
+3. Add code for Form1 Load event as follows:
+
+         Private Sub Form_Load()
+             WebBrowser1.Navigate "c:\mytest.htm"
+         End Sub
+
+4. Add code for WebBrowser1 BeforeNavigate2 event as follows:
+
+         Private Sub WebBrowser1_BeforeNavigate2(ByVal pDisp As Object, _
+              URL As Variant, Flags As Variant, _
+              TargetFrameName As Variant, PostData As Variant, _
+              Headers As Variant, Cancel As Boolean)
+
+             Dim Ev As String
+
+             If UCase$(Left$(URL, 6)) = "EVENT:" Then
+                 'this is our event, process it and cancel navigation
+                 Ev = UCase$(Mid$(URL, 7))
+                 Select Case Ev
+                     Case "HELLO"
+                         MsgBox "Hello from VB App"
+                         'set a field on HTML page
+                         WebBrowser1.Document.All("field1").Value = _
+                             "Hello from VB"
+
+                     Case "CLOSE"
+                         If MsgBox("Are you sure you want to exit?", _
+                     vbYesNo) = vbYes Then
+                             End
+                         End If
+                 End Select
+                 Cancel = True
+             End If
+         End Sub
+
+5. From Notepad, type in the following text and save it as c:\mytest.htm or
+   another location (be sure to use the same location in step 3):
+
+       <HTML><BODY>
+
+         <INPUT type=text name=field1><p>
+         <INPUT type=button name=Hello value="Hello World">
+         <INPUT type=button name=Close value="Close App">
+
+         <SCRIPT LANGUAGE="VBScript">
+         Sub Close_OnClick()
+            location.href = "Event:Close"
+         End Sub
+
+         Sub Hello_OnClick()
+            location.href = "Event:Hello"
+         End Sub
+         </SCRIPT>
+         </BODY></HTML>
+
+6. Run your project from Visual Basic.
+
+======================================================================
+Keywords          : kbVBp400 kbVBp500 kbhowto kb32bitOnly 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVBA500Search kbVBA500 kbVB500 kbVB400Search kbVB400 kbZNotKeyword3
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

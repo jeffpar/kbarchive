@@ -1,0 +1,78 @@
+DOCUMENT:Q197471  14-NOV-2000  [word97]
+TITLE   :WD97: Options That Are Unavailable in Print Preview
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+Although you can edit your document in print preview, it is an "exclusive" mode,
+so you are unable to perform any action that switches focus out of print
+preview.
+
+For example, you cannot click New on the File menu while in print preview. You
+must click Close on the File menu before clicking New.
+
+MORE INFORMATION
+================
+
+The following options are unavailable (dimmed) while in print preview:
+
+   Menu      Commands unavailable
+   --------------------------------------------------
+
+   File      New
+             Open
+             Versions
+             Send To: Mail Recipient
+                      Routing Recipient
+                      Exchange Folder
+                      Fax Recipient
+             MRU list (Most recently used file list)
+
+   Edit      Paste As Hyperlink
+             Object
+
+   Tools     Mail Merge
+             Merge Documents
+             Templates and Add-Ins
+   Table     (Show) Gridlines
+
+   Window    Everything
+
+In addition, if you click Envelopes And Labels on the Tools menu, the New
+Document button is unavailable on the Labels tab.
+
+Additional query words: grey gray
+
+======================================================================
+Keywords          : word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

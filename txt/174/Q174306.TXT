@@ -1,0 +1,68 @@
+DOCUMENT:Q174306  17-DEC-1999  [exchange]
+TITLE   :XADM: Cannot Delete the Internet Newsgroups Public Folder
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+
+When you attempt to delete the Internet Newsgroups public folder, while logged on
+to an Exchange Server mailbox that has the role of owner for that folder, you
+may receive the following error message:
+
+   An item could not be deleted. You do not have sufficient permission to
+   perform this operation on this object. See the folder contact of your system
+   administrator.
+
+WORKAROUND
+==========
+
+The Internet Newsgroups public folder cannot be deleted; however, it can be made
+not visible or renamed by a mailbox with the role of owner. To make the Internet
+Newsgroups public folder not visible, do the following:
+
+1. From the Exchange Administrator program, look at the properties of the
+   Internet Newsgroups public folder.
+
+2. On the General Tab, click the Client Permissions button.
+
+3. Highlight default and anonymous names, and uncheck the Folder Visible option
+   for both.
+
+4. Click OK to apply changes on the client permissions for the public folder.
+
+The Internet Newsgroups public folder will no longer be visible to clients
+accessing the Microsoft Exchange Server computer.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : winnt:5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,124 @@
+DOCUMENT:Q171781  09-AUG-2001  [winnt]
+TITLE   :DNS Server Fails to Start Due to Unavailable RPC Server Error
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, make sure you understand how to restore it if
+a problem occurs. For information about how to do this, view the "Restoring
+the Registry" Help topic in Regedit.exe or the "Restoring a Registry Key"
+Help topic in Regedt32.exe.
+
+SYMPTOMS
+========
+
+After your Microsoft Windows NT Domain Name Service (DNS) server starts, you may
+receive one or more of the following event log error messages:
+
+   Event ID: 157
+   Source: DNS
+   Description: DNS Server is not root authoritative and no cache file specified.
+   A cache file must be specified when the DNS server is not authoritative for
+   the root domain. The cache file must contain NS record(s) for root DNS
+   servers and corresponding A record(s) for the root DNS servers. Otherwise,
+   the DNS server will be unable to contact the root DNS server on startup and
+   will be unable to answer queries for names outside of its own authoritative
+   zones.
+
+   Event ID: 7023
+   Source: Service Control Manager
+   Description: The Microsoft DNS Server service terminated with the following
+   error: The system cannot find the file specified.
+
+   Event ID: 3
+   Source: DNS
+   Description: The DNS Server has shutdown.
+
+You may also see your DNS server in the server list of the DNS Manager with a red
+X on it, indicating that the DNS service is unavailable, and you may see the
+following message in the DNS Manager:
+
+   The RPC Server is unavailable.
+
+CAUSE
+=====
+
+This behavior can occur when the registry key that determines whether your DNS
+server initializes from a boot file or from the registry has not been updated
+properly.
+
+RESOLUTION
+==========
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall your operating system. Microsoft cannot guarantee that
+problems resulting from the incorrect use of Registry Editor can be solved. Use
+Registry Editor at your own risk
+
+For information about how to edit the registry, view the "Changing Keys And
+Values" Help topic in Registry Editor (Regedit.exe) or the "Add and Delete
+Information in the Registry" and "Edit Registry Data" Help topics in
+Regedt32.exe. Note that you should back up the registry before you edit it.
+
+To resolve this issue, follow these steps:
+
+1. Start Registry Editor (regedt32.exe) and locate the following subkey:
+
+   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Dns\Parameters
+
+2. Edit the following value as appropriate:
+
+   Value Name: EnableRegistryBoot
+   Value Type: REG_DWORD
+   Data:       1 or 0  (1 for registry boot, 0 for boot file)
+
+3. Quit Registry Editor.
+
+This value is set to 1 when the first zone is created, and by default the boot
+file's information is then migrated into the registry. When resetting this
+registry value back to zero, it disables the DNS server from booting or
+initializing from the registry. If the DNS Server does not boot from the
+registry, then it must initialize from a boot file. A backup boot file can be
+found in the following location:
+
+   %SystemRoot%\System32\Dns\Backup
+
+Copy the backup boot file to the %SystemRoot%\System32\Dns folder, and then
+restart the DNS service.
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. We are
+researching this problem and will post new information here in the Microsoft
+Knowledge Base as it becomes available.
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : WinNT:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

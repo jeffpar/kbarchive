@@ -1,0 +1,80 @@
+DOCUMENT:Q91042  29-OCT-1999  [pcmail]
+TITLE   :PC WFW: Postoffice Administration Not Available from Windows
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for PC Networks, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you use Extensions for Windows for Workgroups to upgrade a Windows version
+3.1 for Workgroups postoffice to a version 3.0 Microsoft Mail for PC Networks
+postoffice, it is not possible to access the Mail Administrator program from
+within Mail for Windows.
+
+Before the Windows for Workgroups postoffice was upgraded, the Mail Administrator
+program could be accessed from the Mail menu within Mail for Windows. After the
+upgrade, if you select the Postoffice Manager command from the Mail menu, the
+following error message appears:
+
+   The ServerPath entry in your MSMAIL.INI file is missing or doesn't contain
+   the pathname of a valid Workgroup Postoffice.
+
+CAUSE
+=====
+
+As in the retail version of Microsoft Mail, it is expected that the Mail
+administrator log in from MS-DOS, using ADMIN.EXE.
+
+RESOLUTION
+==========
+
+You can remove the Postoffice Manager command from the Mail menu by completing
+the following steps:
+
+1. From the File menu in Microsoft Mail, choose Exit And Sign-Out.
+
+2. Open the MSMAIL.INI file with any text editor.
+
+3. Place a semi-colon before the following lines:
+
+   WGPOMgr1=3.0;Mail;;13
+   WGPOMgr2=3.0;Mail;&Postoffice Manager...;14;WGPOMGR.DLL;
+   0;;Manage Workgroup Postoffice;MSMAIL.HLP;2870
+
+4. Save the changes to the MSMAIL.INI file.
+
+5. Exit out of the text editor.
+
+6. Restart Mail.
+
+Additional query words: 3.00 3.10
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailPCN300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

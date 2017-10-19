@@ -1,0 +1,111 @@
+DOCUMENT:Q166719  04-MAY-2001  [visualc]
+TITLE   :FIX: Wrong Exception Rethrown with Global Optimization
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbcode kbtool kbVC500bug kbVC600fixkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The C/C++ Compiler (CL.EXE), used with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The wrong exception is rethrown when global optimization (/Og) is enabled. For
+example, in the following sample, the correct output is:
+
+   A 1st throw
+   B 2nd throw
+   C 1st throw
+
+However, if global optimization (/Og) is enabled, the output is:
+
+   A 1st throw
+   B 2nd throw
+   C 2nd throw
+
+RESOLUTION
+==========
+
+To work around the problem, disable the global optimization on the command line
+or use the optimize pragma to disable the optimization for the function where
+the problem occurs. For example:
+
+       #pragma optimize("g", off)
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.This problem was corrected in Microsoft
+Visual C++ version 6.0.
+
+MORE INFORMATION
+================
+
+Sample Code
+-----------
+
+       //test.cpp
+       /* Compiler options needed : /GX  */ 
+       #include <iostream>
+       using namespace std;
+       #pragma optimize("g", on)
+       void main() {
+           try
+           {
+               char* pStr = NULL;
+               try
+               {
+                   throw "1st throw\n";
+               }
+               catch( char* str )
+               {
+                   cout << "A " << str;
+                   try
+                   {
+                       throw "2nd throw\n";
+                   }
+                   catch( char* str )
+                   {
+                       cout <<"B "<< str;
+                   }
+                   throw;
+               }
+           }
+           catch ( char* str )
+           {
+               cout <<"C "<< str;
+           }
+       }
+
+Additional query words:
+
+======================================================================
+Keywords          : kbcode kbtool kbVC500bug kbVC600fix kbbuglist
+Technology        : kbVCsearch kbAudDeveloper kbCVCComp
+Version           : winnt:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

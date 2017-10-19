@@ -1,0 +1,77 @@
+DOCUMENT:Q85685  05-OCT-1999  [win95x]
+TITLE   :MS-DOS Err Msg: Not Ready Reading Drive A
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you use Sysgen's Omnibridge controller card driver ONMIBRG.SYS version 3.3 or
+earlier with Windows version 3.1, the following MS-DOS error message is
+displayed after you type "win" (without the quotation marks) to execute
+Windows:
+
+   Not ready reading drive A
+   Abort, Retry, Fail
+
+Same problem was reported with Sysgen driver named BRIDGE_B.DRV
+
+CAUSE
+=====
+
+
+RESOLUTION
+==========
+
+You can either updated the driver to version 3.5 or later (updates are available
+from Sysgen), or you can follow this procedure:
+
+1. Insert a disk in drive A.
+
+2. Retry several times.
+
+3. Remark out the OMNIBRG.SYS driver.
+
+MORE INFORMATION
+================
+
+The Sysgen Omnibridge is a floppy drive controller card that allows high-density
+floppy support on XTs and above for up to four floppy drives. It can be the
+primary or secondary controller.
+
+The Sysgen products included here are manufactured by vendors independent of
+Microsoft; we make no warranty, implied or otherwise, regarding these products'
+performance or reliability. KBCategory: kbhw kberrmsg kb3rdparty
+KBSubcategory: win31 winboot
+
+Additional query words: 3.1 3.11 3.10 omni disk Sisgen
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

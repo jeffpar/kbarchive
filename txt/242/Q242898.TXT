@@ -1,0 +1,118 @@
+DOCUMENT:Q242898  25-NOV-1999  [iis]
+TITLE   :IIS Log File Naming Syntax
+PRODUCT :Internet Information Server
+PROD/VER:winnt:4.0,5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Internet Information Server (IIS) version 4.0 and Internet Information Services
+version 5.0 support the following three log file formats:
+
+ - Microsoft IIS Log Format
+
+ - National Center for Supercomputing Applications (NCSA) Common Log File Format
+
+ - World Wide Web Consortium (W3C) Extended Log File Format
+
+This article describes the naming syntax used when Internet Information Services
+creates log files.
+
+MORE INFORMATION
+================
+
+The following tables list the log file intervals and file names for each
+available for each log file format using the following syntax:
+
+ - nn = Sequential Digits
+
+ - yy = Year
+
+ - mm = Month
+
+ - ww = Week
+
+ - dd = Day
+
+ - hh = Hour (24-hour format)
+
+Microsoft IIS Log Format:
+
+   
+   +---------------------------------+
+   | Log Interval | Filename Pattern | 
+   +---------------------------------+
+   | File Size    | inetsvnn.log     | 
+   +---------------------------------+
+   | Hourly       | inyymmddhh.log   | 
+   +---------------------------------+
+   | Daily        | inyymmdd.log     | 
+   +---------------------------------+
+   | Weekly       | inyymmww.log     | 
+   +---------------------------------+
+   | Monthly      | inyymm.log       | 
+   +---------------------------------+
+
+NCSA Common Log File Format:
+
+   
+   +----------------------------+
+   | File Size | ncsann.log     | 
+   +----------------------------+
+   | Hourly    | ncyymmddhh.log | 
+   +----------------------------+
+   | Daily     | ncyymmdd.log   | 
+   +----------------------------+
+   | Weekly    | ncyymmww.log   | 
+   +----------------------------+
+   | Monthly   | ncyymm.log     | 
+   +----------------------------+
+
+W3C Extended Log File Format:
+
+   
+   +----------------------------+
+   | File Size | extendnn.log   | 
+   +----------------------------+
+   | Hourly    | exyymmddhh.log | 
+   +----------------------------+
+   | Daily     | exyymmdd.log   | 
+   +----------------------------+
+   | Weekly    | exyymmww.log   | 
+   +----------------------------+
+   | Monthly   | exyymm.log     | 
+   +----------------------------+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500 kbiis400
+Version           : winnt:4.0,5.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

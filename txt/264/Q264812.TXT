@@ -1,0 +1,63 @@
+DOCUMENT:Q264812  11-JUN-2002  [winnt]
+TITLE   :Client Add Pack Does Not Recognize Small Business Server
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0,4.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+ - Microsoft BackOffice Small Business Server versions 4.0, 4.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are installing Small Business Server 4.0 (SBS) on a computer running
+Microsoft Windows NT Server 4.0, and you try to install the Client Add Pack, you
+may not be able to do so and you may receive the following error message:
+
+   Your computer is not running Microsoft BackOffice Small Business Server. You
+   can only add licenses to a computer running Small Business Server.
+
+CAUSE
+=====
+
+This behavior is by design. You cannot install the SBS Client Add Pack on a
+Windows NT Server 4.0 that was not initially installed as an SBS Server.
+
+
+RESOLUTION
+==========
+
+If the SBS install was converted to full Windows NT Server, you cannot apply
+additional SBS Client Add Packs. You can only install SBS Client Add Pack on a
+valid SBS Server.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbAudDeveloper kbSBServSearch kbSBServ400 kbSBServ400a
+Version           : :4.0,4.0a
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,78 @@
+DOCUMENT:Q118963  23-OCT-1999  [win3x]
+TITLE   :WFWG Err Msg: Shell-332-21: Network Server Could Not Be Found
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error message after configuring Microsoft Windows
+for Workgroups 3.11 to use Novell connectivity with VLM or NETX:
+
+   Shell-332-21: a network server could not be found
+
+CAUSE
+=====
+
+The frame type used by the workstation is different from the default frame type
+used on the server. This problem also occurs if either of the following
+conditions exists:
+
+ - NETX is loading on the workstation and bindery services are not set up on the
+   NetWare 4.x server.
+
+ - On a system loading VLM, Windows for Workgroups added ETHERNET_802.2 as the
+   default frame type when it configured NET.CFG. The workstation was previously
+   configured for ETHERNET_802.3.
+
+RESOLUTION
+==========
+
+To correct this problem, use the appropriate method below.
+
+ - Change the frame type of the workstation to match the frame type of the
+   server. To determine the frame type being used by the server, type "config"
+   (without the quotation marks) at the server prompt on the NetWare server. The
+   default frame type on the workstation is the first frame type listed in the
+   LINK DRIVER section of the NET.CFG file.
+
+ - Use VLM instead of NETX as the shell. Double-click the Network Setup icon in
+   the Network group to configure Windows for Workgroups to use Novell NetWare
+   (Workstation Shell Version 4.0 and above).
+
+ - Verify that the network card settings are correct in the LINK DRIVER section
+   of the Net.cfg file. For example, verify that the INT, PORT, and MEM entries
+   are present and correct.
+
+
+Additional query words: 3.11 frame err msg netx vlm shell shell-332-21
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW311
+Version           : WINDOWS:3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

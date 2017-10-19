@@ -1,0 +1,63 @@
+DOCUMENT:Q155639  08-NOV-2001  [homegame]
+TITLE   :Monster Truck Madness: Setup Notes and Troubleshooting
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbmm kbreadm kbsetupkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Monster Truck Madness, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article contains information from the Setup Notes and Troubleshooting
+section of the Monster Truck Madness Readme.txt file.
+
+Monster Truck Madness Can't Play Videos in Windows NT 4.0
+
+You must have administrative-level permissions on your system to
+correctly and completely install Monster Truck Madness on a
+Windows NT 4.0 machine.
+
+Log on as the Administrator, or talk to your system administrator
+to change your permissions. Then, run Indeo setup from the compact
+disc. Indeo setup is located on the Monster Truck Madness CD-ROM in:
+
+   \Setup\Indeo\Setup.exe
+
+Compact Install Requires the Monster Truck Madness CD
+
+If you chose the Compact option during Setup, you will need to run
+Monster Truck Madness with the compact disc in your CD-ROM drive.
+If you eject the compact disc while running Monster Truck Madness,
+the game stops responding (hangs). Please quit Monster Truck Madness
+before ejecting the Monster Truck Madness compact disc.
+
+Additional query words: 1.00 Monster Truck Madness Min set up install mtm installation crash freeze hang freezes stops m.t.m.
+
+======================================================================
+Keywords          : kbmm kbreadm kbsetup kbfaq
+Technology        : kbGamesSearch kbZNotKeyword kbMonsterTMSearch kbMonsterTM
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,53 @@
+DOCUMENT:Q115063  09-DEC-1999  [homemm]
+TITLE   :Dinosaurs May Have Poor Printed Output
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dinosaurs for Windows, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Printed output from Dinosaurs (for example, a fact box) may have a lower
+resolution than expected, even with print quality set to high.
+
+MORE INFORMATION
+================
+
+All text and pictures in Dinosaurs are 96 DPI (dots per inch) bitmaps and are
+designed to be viewed best on the screen. The fonts are anti-aliased for a
+"smoother" on-screen look. When the text and pictures are printed at any DPI
+resolution, the quality will not improve beyond 96 DPI. This is a design
+restriction of bitmapped text. Images are always printed in the resolution they
+display.
+
+
+Additional query words: kbhowto multi media multimedia multi-media dino print out put
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbDinosaurs100
+Version           : WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

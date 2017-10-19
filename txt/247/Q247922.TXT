@@ -1,0 +1,65 @@
+DOCUMENT:Q247922  10-AUG-2001  [winnt]
+TITLE   :Server Logs Netlogon Event 5719 When Starting
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start a server running Microsoft Windows NT Server 4.0, Event Viewer
+may record the following event:
+
+   Netlogon Event ID 5719:
+   No Windows NT Domain Controller is available for domain <domain_name>.
+   The following error occurred:
+   This event is expected and can be ignored when booting with the No Network
+   Hardware Profile.
+
+After the server logs this event at startup, you can log on to the domain
+normally. The event only occurs when you start the computer.
+
+CAUSE
+=====
+
+This behavior can occur when your server is connected to a switch that has the
+spanning tree 'portfast' setting disabled.
+
+RESOLUTION
+==========
+
+To work around this behavior, enable the spanning tree 'portfast' setting on the
+switch. For information about the proper use of the spanning tree 'portfast'
+setting, consult the documentation provided with the switch.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

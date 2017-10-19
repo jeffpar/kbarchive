@@ -1,0 +1,73 @@
+DOCUMENT:Q151359  22-JUN-2001  [exchange]
+TITLE   :XCLN: Out of Memory Errors Starting Schedule+ After Exchange
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+, version 7.0 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You might see Out of Memory error messages when you start Microsoft Schedule+
+after a Microsoft Exchange client for Windows 3.x has been started and vice
+versa. In some cases, Out of Memory or Insufficient Memory error messages might
+also occur in other applications after the Microsoft Exchange client for Windows
+3.x has been started, particularly in networked applications.
+
+CAUSE
+=====
+
+This is caused by one of the following three conditions:
+
+ - You have not yet edited the Net.cfg file to include the entries suggested in
+   the Readme.wri file on the Microsoft Exchange Server CD.
+
+ - You have improperly configured the Net.cfg file.
+
+ - The Net.cfg file that you edited is not the one being used by the Netware
+   Real mode networking components.
+
+RESOLUTION
+==========
+
+1. Verify that the following lines are present in the net.cfg file
+
+      [PROTOCOL IPXODI]
+      IPX SOCKETS 50
+      SPX CONNECTIONS 50
+
+2. Reboot the computer and either manually load the Netware components or step
+   through the lines in the Autoexec.bat file. After loading Ipxodi, the screen
+   should acknowledge that Ipxodi has been loaded with the above parameters.
+
+
+Additional query words: 4.00
+
+======================================================================
+Keywords          :  
+Technology        : kbZNotKeyword2 kbScheduleSearch kbSchedule700
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

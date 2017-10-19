@@ -1,0 +1,118 @@
+DOCUMENT:Q250321  03-MAY-2001  [visualc]
+TITLE   :BUG: CString::Delete() Does Not Return the Correct Value
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:6.0
+OPER/SYS:
+KEYWORDS:kbMFC kbString kbVC600bug kbDSupport kbGrpDSMFCATL
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), included with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 6.0 
+    - Microsoft Visual C++, 32-bit Learning Edition, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The CString::Delete function returns the length of the original string instead
+of the length of the modified string.
+
+CAUSE
+=====
+
+The CString::Delete function initializes a local variable (nNewLength) with the
+length of the original string and does not change this variable to reflect the
+length of the changed string.
+
+Here is the source code for the Delete method of the CString class (reproduced
+from the Strex.cpp file, which is located in the Mfc/Src folder):
+
+   int CString::Delete(int nIndex, int nCount /* = 1 */)
+   {
+   	if (nIndex < 0)
+   		nIndex = 0;
+   	int nNewLength = GetData()->nDataLength;
+   	if (nCount > 0 && nIndex < nNewLength)
+   	{
+   		CopyBeforeWrite();
+   		int nBytesToCopy = nNewLength - (nIndex + nCount) + 1;
+
+   		memcpy(m_pchData + nIndex,
+   			m_pchData + nIndex + nCount, nBytesToCopy * sizeof(TCHAR));
+   		GetData()->nDataLength = nNewLength - nCount;
+   	}
+
+   	return nNewLength;
+   }
+
+RESOLUTION
+==========
+
+To work around this problem, call the GetLength method on the modified CString
+class to get its length:
+
+   CString str2 = "Hockey is best!";
+   str2.Delete(6, 3);
+   int n = str2.GetLength();
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a dialog box-based application by using MFC AppWizard.
+
+2. Place a button on the dialog box and create a handler for it. Copy the
+   following code to the button's handler:
+
+      //The following example demonstrates the use of CString::Delete:
+      CString str2 = "Hockey is best!";
+      TRACE("Length of the original string: %d\n", str2.GetLength());
+      int n = str2.Delete(6, 3);
+      TRACE("Actual length of the modified string: %d\n", str2.GetLength());
+      TRACE("Return value from Delete method: %d\n",n);   
+
+3. Compile and run the application under the Visual C++ debugger by pressing F5.
+   Click the button.
+
+You should see in the output window that the return value from the Delete method
+is the length of the original string, not the length of modified string.
+(c) Microsoft Corporation 2000, All Rights Reserved.
+Contributions by Sreedhar Pelluru, Microsoft Corporation
+
+
+Additional query words: CString delete length return
+
+======================================================================
+Keywords          : kbMFC kbString kbVC600bug kbDSupport kbGrpDSMFCATL 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

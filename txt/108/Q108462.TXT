@@ -1,0 +1,83 @@
+DOCUMENT:Q108462  24-MAR-2000  [fortran]
+TITLE   :FIX: Concatenation in Parentheses Produces Blank Output
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FORTRAN PowerStation for MS-DOS, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Concatenation in assignment statements fail when the character expression is
+surrounded by parentheses. The result is a blank string.
+
+RESOLUTION
+==========
+
+Because parentheses have no affect on the results of expressions involving
+concatenation, do not use parentheses when performing string concatenation.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in FORTRAN PowerStation version 1.0
+for MS-DOS. This problem has been resolved with FORTRAN PowerStation maintenance
+release version 1.0a for MS-DOS.
+
+MORE INFORMATION
+================
+
+FORTRAN PowerStation version 1.0 can be differentiated from the maintenance
+release version 1.0a by invoking the linker. Typing "link32 | more" (without the
+quotation marks) from \F32\BIN directory will show version 2.8 for FORTRAN
+PowerStation version 1.0, and it will show version 1.0f for the maintenance
+release version 1.0a.
+
+To reproduce the problem create a program using the sample code When run, the
+sample code below displays the following:
+
+   <cat dogs> < >
+
+Sample Code
+-----------
+
+   Compile options: None
+         character a*4,b*4,c*8,d*8
+         a = "cat"
+         b = "dogs"
+         c = a//b
+         d = (a//b)
+         print *, "<",c,">  <",d,">"
+         end
+
+Additional query words: buglist1.00 fixlist1.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword3 kbFORTRANPower100DOS
+Version           : :1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

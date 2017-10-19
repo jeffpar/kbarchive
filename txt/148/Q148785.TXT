@@ -1,0 +1,90 @@
+DOCUMENT:Q148785  13-AUG-1999  [foxpro]
+TITLE   :New Functions Included in Foxtools.fll
+PRODUCT :Microsoft FoxPro
+PROD/VER:3.00 3.00b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following functions were added to the version of Foxtools.fll that ships
+with Visual FoxPro. This includes versions 3.0 and later as displayed with the
+FoxToolVer() function. The version included with 2.6a was the 1.02 version.
+
+MORE INFORMATION
+================
+
+GETPROSTRG
+----------
+
+This function is used to call the GetProfileString() Windows API. The function
+allows you to read entries in the Win.ini file. The preferred method would be to
+call that function with DECLARE - DLL in Visual FoxPro.
+
+For example:
+
+      x=space(100)
+      len=getprostrg('Desktop','Wallpaper','',@x,100)
+      ?left(x,len)
+
+PUTPROSTRG
+----------
+
+This function calls the WriteProfileString() Windows API function to write data
+into the Win.ini file. The function can also be called directly from
+Kernel32.dll with the DECLARE - DLL function.
+
+For example:
+
+      success=putprostrg('Timo','Test','Mytest')
+
+RGBCOMP
+-------
+
+This function returns the Red, Green, and Blue component values of the
+corresponding composite RGB color value, which is a single number. It is the
+opposite of the RGB() command from the Visual FoxPro language.
+
+For example:
+
+      R=0
+      G=0
+      B=0
+      success=RGBCOMP(16777215,@R,@G,@B)
+      ?R,B,G
+
+The FoxTools.hlp file in the \Vfp\Tools\ directory discusses the commands that
+are exposed in the FLL. These are functions used by FoxPro internally and are
+only exposed as a courtesy; their use is not directly supported. Foxtools is
+accessed like any other FLL with the SET LIBRARY command.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b kbVFP600
+Version           : 3.00 3.00b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

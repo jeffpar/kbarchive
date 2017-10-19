@@ -1,0 +1,78 @@
+DOCUMENT:Q150131  08-OCT-1999  [msnetwork]
+TITLE   :"Windows: A Fatal Exception" Error Message When Opening BBS
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:1.2,1.3
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 1.2, 1.3 
+-------------------------------------------------------------------------------
+
+IMPORTANT: This article contains information about editing the registry.
+Before you edit the registry, you should first make a backup copy of the
+registry files (System.dat and User.dat). Both of these files are hidden
+in the Windows folder.
+
+SYMPTOMS
+========
+
+When you open a bulletin board (BBS) on MSN, The Microsoft Network, you may
+receive the following error message:
+
+   - Windows: A Fatal Exception 0E has occurred @ 0028:c025 a0a0 n-vxd vmm(06)x
+   00010a0
+
+CAUSE
+=====
+
+Registry values may be damaged.
+
+RESOLUTION
+==========
+
+NOTE: For information about how to edit the registry, view the Changing Keys And
+Values online Help topic in Registry Editor (Regedit.exe). Note that you should
+make a backup copy of the registry files (System.dat and User.dat) before you
+edit the registry.
+
+WARNING: Using Registry Editor incorrectly can cause serious problems that may
+require you to reinstall Windows 95. Microsoft cannot guarantee that problems
+resulting from the incorrect use of Registry Editor can be solved. Use Registry
+Editor at your own risk.
+
+
+Navigate to the following Registry key and delete the Articles folder and the BBS
+Viewer folder:
+
+   HKEY_CURRENT_USER\Software\Microsoft\MOS
+
+These folders should be rebuilt when you sign in to MSN. Note that deleting the
+Articles folder causes you to see all the BBS messages that you have already
+read.
+
+Additional query words: msn
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN130 kbMSN120
+Version           : WINDOWS:1.2,1.3
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

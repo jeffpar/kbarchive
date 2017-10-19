@@ -1,0 +1,120 @@
+DOCUMENT:Q213410  02-JUL-2001  [sms]
+TITLE   :SMS: Determining Version and Build Number
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbClient kbConfig kbServer kbWBEM kbsms200 kbsmsUtil kbUpgrade
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to determine the version number of Systems Management
+Server; related service packs, international client packs (ICP), and hotfixes;
+the Microsoft Management Console (MMC); and Windows Management Interface (WMI)
+dependent components.
+
+Server Components
+-----------------
+
+To determine the version number of the server software, right-click the Site Name
+in the Site Hierarchy node of the SMS Administrator Console and click
+Properties.
+
+Determine the MMC version number by viewing the Version tab of Properties for the
+file %windir%\System32\Mmc.exe. Alternatively, view About Help after starting in
+author mode.
+
+To determine WMI version number, view the Version tab of Properties for
+%windir%\system32\wbem\winmgmt.exe.
+
+Client Components
+-----------------
+
+You can determine the client version, also known as "base components," by viewing
+Compver.ini, which is located in the ..\SMS\Inboxes\Clicomp.src\Base directory
+on the site server. Or, you can run the Systems Management utility in Control
+Panel and select the Components tab on the client computer.
+
+To determine versions of client components on the server, examine the Compver.ini
+file located at ..\SMS\inboxes\clicomp.src\comp_dir, where comp_dir is the
+directory for the component, such as hinv for hardware inventory. The Components
+tab in the Systems Management utility in Control Panel displays the number of
+the version running on the client. You can also view the version number of the
+Windows Management Interface (WMI) in Control Panel on the client.
+
+Note that the \Clicomp.src directories are replicated at all client access points
+and logon points for the site.
+
+To determine the version number of specific files, right-click the file name in
+Windows Explorer and click Properties.
+
+MORE INFORMATION
+================
+
+United States Version Number:
+For U.S. Systems Management Server 2.0 version 2.00.1239.0000, the first 2 is the
+primary version number and 1239 is the build number.
+
+The WMI version included with Systems Management Server 2.00.1239.0000 is version
+1.10.698.0000 (build 698).
+
+The MMC version included with Systems Management Server 2.00.1239.0000 is version
+1.1 (build 5.00.1920.1).
+
+
+Higher version and build numbers are always later and will not be overwritten
+with earlier version and build numbers during a Systems Management Server
+Service Pack installation or upgrade.
+
+You can also identify service pack, international client pack, and hotfix numbers
+from the version number. These minor releases and revisions are reflected in the
+last four digits of the Systems Management Server version number, as described
+below.
+
+Service Pack:
+The leftmost digit, .x000, is the service pack release number (for example,
+2.00.1239.2000 denotes Service Pack 2).
+
+International Client Packs:
+The ICP version number is represented by the second digit, which can range from 4
+to 9 (.0400, .0500, .0600, .0700, .0800, .0900).
+
+Hotfixes:
+The last three digits are the hotfix version number (which can range from .0001
+to .0399).
+
+
+NOTE: A service pack version will overwrite the ICP version until the new service
+pack ICP build is released.
+
+
+Additional query words: prodsms ver. revision qfe bld sms20
+
+======================================================================
+Keywords          : kbClient kbConfig kbServer kbWBEM kbsms200 kbsmsUtil kbUpgrade 
+Technology        : kbSMSSearch kbSMS200
+Version           : winnt:2.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,66 @@
+DOCUMENT:Q146950  18-MAR-1999  [exchange]
+TITLE   :XFOR: No NDR When IMCDATA/OUT Directory Is Deleted
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbother
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If the IMCDATA\OUT directory is removed while the Internet Mail Connector (IMC)
+runs, messages disappear and the user is not informed that the messages are not
+delivered. However, the IMC administrator receives the "Notification: Outbound
+Mail Failure" error message.
+
+In addition, the following appears in the Event Viewer:
+
+   The following non-delivery report could not be delivered because the message
+   could not be saved From: UserX Subject: Test Message Submit Time:
+   <date> <time>
+
+CAUSE
+=====
+
+If you remove the IMCDATA\OUT directory when the IMC is running, the directory
+is re-created. The symptom above occurs if the IMCDATA\OUT directory is removed
+after the IMC has successfully started. The "Notification: Outbound Mail
+Failure" error message and the event log above indicates that the IMCDATA\OUT
+directory is missing.
+
+RESOLUTION
+==========
+
+To correct the problem, the administrator must restart the IMC only. Notify the
+users that they must send the messages again.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbother 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : winnt:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

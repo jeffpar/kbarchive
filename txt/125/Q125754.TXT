@@ -1,0 +1,57 @@
+DOCUMENT:Q125754  08-AUG-2001  [winnt]
+TITLE   :Cannot Use Multiple Instances of Some Adaptec Controllers
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.50
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 3.5 
+ - Microsoft Windows NT Server version 3.5 
+-------------------------------------------------------------------------------
+
+You cannot use two or more SCSI adapters that use the SPARROW.SYS device
+driver under Windows NT version 3.5.
+
+The Adaptec AHA-1510, AHA-1520, and AHA-1522 adapters use the SPARROW.SYS
+device driver under Windows NT. Since the Windows NT 3.5 SPARROW.SYS device
+driver requires that the SCSI adapter be configured for interrupt (IRQ) 11,
+there will be IRQ conflicts, if you use more than one adapter.
+
+NOTE: See section 15.6 of the Windows NT 3.5 README.TXT file for more
+information.
+
+This was not true under Windows NT version 3.1. Therefore, when you upgrade
+from version 3.1 to version 3.5, you may experience hardware problems that
+did not exist under your previous installation of Windows NT.
+
+To work around these issues, make sure all your Adaptec adapters (AHA-1510,
+AHA-1520, and AHA-1522) are configured for IRQ 11 and remove multiple
+instances of these adapters from your Windows NT configuration.
+
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTSsearch kbWinNTS350 kbWinNTS350search
+Version           : 3.50
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

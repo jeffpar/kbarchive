@@ -1,0 +1,72 @@
+DOCUMENT:Q148743  13-OCT-1999  [msnetwork]
+TITLE   :Cannot Complete MSN 1.2 Upgrade If Msnver.txt File Is Missing
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:1.0,1.05
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network versions 1.0, 1.05 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install the version 1.2 upgrade for MSN, The Microsoft
+Network, you may receive the following error message:
+
+   Cannot complete the upgrade. There is not enough disk space available to
+   complete this upgrade. To free disk space, try emptying the Recycle Bin or
+   removing unneeded files from your hard disk.
+
+CAUSE
+=====
+
+If you have sufficient disk space, the Msnver.txt file may be missing. This file
+contains the version number of MSN, which is 5399 for MSN 1.0 and 5699 for MSN
+1.05.
+
+RESOLUTION
+==========
+
+Create the missing Msnver.txt file. To do so, follow these steps:
+
+1. Start an MS-DOS session.
+
+2. Change to the \progra~1\themic~1 folder.
+
+3. Type the following line, and then press ENTER:
+
+   "copy con:msnver.txt" (without the quotation marks)
+
+4. Type "5399" (without the quotation marks) for MSN 1.0 or "5699" (without the
+   quotation marks) for MSN 1.05. Press CTRL+Z and then press ENTER.
+
+After you create the Msnver.txt file, try upgrading to MSN 1.2 again.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN105
+Version           : WINDOWS:1.0,1.05
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

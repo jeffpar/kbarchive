@@ -1,0 +1,122 @@
+DOCUMENT:Q194815  07-MAY-2002  [homegame]
+TITLE   :Combat Flight Simulator: How to Start Your Aircraft Engines
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbui kbimu msgamekbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Combat Flight Simulator: WWII Europe Series, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to start your aircraft engines in Combat Flight
+Simulator.
+
+MORE INFORMATION
+================
+
+To start your aircraft engines in Combat Flight Simulator, use one of the
+following methods:
+
+Automatically Starting the Engine (Pointing Device)
+---------------------------------------------------
+
+To use your pointing device to automatically start the engine, click the Starter
+switch and hold down the left mouse button.
+
+The Prop Control, Mixture Control, Throttle, Magnetos, and Starter switches
+automatically move to their proper positions, the engine is started, and then
+the Starter switch automatically moves to the Off position.
+
+Automatically Starting the Engine (Keyboard)
+--------------------------------------------
+
+To use the keyboard to automatically start the engine, press and hold down the E
+key. The Prop Control, Mixture Control, Throttle, Magnetos, and Starter switches
+automatically move to their proper positions, the engine is started, and then
+the Starter switch automatically moves to the Off position.
+
+Manually Starting the Engines
+-----------------------------
+
+To manually start the engines, follow these steps:
+
+1. Press SHIFT+2 to open the engine controls window.
+
+2. Set the Prop Control to the Max. R.P.M. position. To use your pointing device
+   to do this, drag the Prop Control lever all the way forward. To use the
+   keyboard to do this, press CTRL+F4.
+
+3. Set the Mixture Control to the Full Rich position. To use your pointing
+   device to do this, drag the Mixture Control lever all the way forward. To use
+   the keyboard to do this, press CTRL+SHIFT+F4.
+
+   NOTE: The Messerschmitt 109E and 109G only have throttle and prop control
+   levers. The mixture is controlled automatically.
+
+4. Set the Throttle Control to a position just above Minimum. To use the
+   pointing device to do this, drag the Throttle Control lever all the way back
+   (the Idle position), and then move it forward a small amount.
+
+   To use the keyboard to do this, press the F3 key repeatedly until the Throttle
+   Control lever moves all the way back (the Idle position), and then press the
+   F4 key once to move the Throttle Control lever forward a small amount.
+
+   To use the joystick to do this, turn the throttle control on your joystick all
+   the way down, and then turn it up a small amount.
+
+   NOTE: The Focke-Wulf 190 has a single lever that controls throttle, propeller,
+   and mixture at the same time. Move this lever all the way back.
+
+5. Activate the magnetos. The following table lists the appropriate methods for
+   doing this for the different nationalities of aircraft.
+
+      Aircraft
+      Nationality            Method
+      -----------------------------------------------------------------
+
+      United Kingdom (RAF)   Click the Magneto switches to move them
+                             both to the On position.
+
+      Germany (Luftwaffe)*   Click the Magneto switch to move it to the
+                             M1+M2 position.
+
+      USA (USAAF)            Click the Magneto switch to move it to the
+                             Both position.
+
+   * The Focke-Wulf 190 does not have a Magneto switch.
+
+6. Click the Starter switch and then hold the left mouse button down until the
+   engine starts.
+
+NOTE: You cannot use the Starter switch to turn off the engine.
+
+Additional query words: 1.00 msgame combatfs cfs kbfaq
+
+======================================================================
+Keywords          : kbui kbimu msgame kbfaq
+Technology        : _IKkbbogus kbGamesSearch kbCombatFlightSim kbCombatFlightSimSearch kbSimSearch
+Version           : WINDOWS:1.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

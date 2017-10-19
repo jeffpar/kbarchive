@@ -1,0 +1,59 @@
+DOCUMENT:Q227611  04-FEB-2000  [iis]
+TITLE   :IIS 5.0 "Site Operators Can Administer This Site Remotely"
+PRODUCT :Internet Information Server
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Services version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you set up a new Web site using the HTMLA Web Administration Forms, you are
+presented with the new Site operators can administer this site remotely option,
+which is not available in the MMC. If this option is checked, it will create an
+IISADMIN virtual directory (like the one under the Default Web Site) in order
+for the site operator to use the HTMLA Web Administration Forms on the site.
+
+MORE INFORMATION
+================
+
+To access the HTMLA Web Administration Forms, the operator can go to a Web
+browser and simply type "http://sitename/IISADMIN." This only allows the
+operator to administer their own site.
+
+The administrator (or Web admin) of the Internet Information Services (IIS) 5.0
+computer can still administer the site via the Administration Site set up when
+IIS is installed.
+
+Note: This option is not available for new virtual directories.
+
+Additional query words: HTMLA Operators iis
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbiis500
+Version           : winnt:5.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

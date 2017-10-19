@@ -1,0 +1,55 @@
+DOCUMENT:Q112480  23-OCT-1999  [foxmisc]
+TITLE   :How to Find the Hard Disk Drive Name Using FoxBASE+/Mac
+PRODUCT :Microsoft Fox Miscellaneous Products
+PROD/VER:MACINTOSH:2.01
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxBASE+ for Macintosh, version 2.01 
+-------------------------------------------------------------------------------
+
+Using the sample program below, you can programmatically determine the name
+of the current hard disk drive for functions such as SET DEFAULT TO in
+situations where you will not know this information ahead of time.
+
+WARNING: ANY USE BY YOU OF THE CODE PROVIDED IN THIS ARTICLE IS AT YOUR OWN
+RISK. Microsoft provides this code "as is" without warranty of any kind,
+either expressed or implied, including but not limited to the implied
+warranties of merchantability and/or fitness for a particular purpose.
+
+      *Procedure to determine the hard drive name
+      SET TALK OFF     && stop echo to screen
+      PRIVATE x
+      x=LEFT(SYS(1033,SYS(16)),AT(":",SYS(1033,SYS(16))))
+      *Now set the default directory to the Data Folder inside
+      *the FoxBase folder in the main folder
+      x=x+"FoxBase:Data:"
+      SET DEFAULT TO "&x"
+      SET TALK ON
+
+Additional query words: 2.01 volume SYS(1033) SYS(16)
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbAudDeveloper kbFoxproSearch kbFoxBASE201Mac kbFoxBASESearch
+Version           : MACINTOSH:2.01
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

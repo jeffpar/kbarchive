@@ -1,0 +1,77 @@
+DOCUMENT:Q149753  03-NOV-1999  [fortran]
+TITLE   :How to Determine the Size of a User-Defined Data Type
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kbcode kbFortranPS kbLangFortran
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran PowerStation for Windows 95 and Windows NT, version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Fortran Run-Time Library included with Microsoft Fortran PowerStation
+version 4.0 does not include an intrinsic function or subroutine that can return
+the number of bytes in use by a single user-defined data type variable. You can,
+however, use the LOC() intrinsic function to obtain the starting addresses of
+two user-defined data type variables, contiguous in memory, and subtract their
+addresses resulting in the number of bytes used by one variable of this type.
+
+MORE INFORMATION
+================
+
+Do the following to calculate the number of bytes in use by a single user-
+defined data type variable:
+
+1. Create a two-element array variable of any user-defined data type.
+
+2. Use the LOC() intrinsic function to obtain the starting memory addresses for
+   both user-defined data type array elements.
+
+3. Subtract these addresses from each other. This will yield the number of bytes
+   used in memory by this type of user-defined variable.
+
+Sample Code to Illustrate Technique
+-----------------------------------
+
+   C Compile options needed: none
+         type udt
+             integer a
+             real b
+         end type
+         type (udt) myt(2)
+         print *, 'Number of bytes used: ', loc(myt(2)) - loc(myt(1))
+         end
+
+Program Output
+--------------
+
+Number of bytes used: 8
+
+Additional query words: 4.00 kbinf
+
+======================================================================
+Keywords          : kbcode kbFortranPS kbLangFortran 
+Technology        : kbAudDeveloper kbPTProdChange kbFortranSearch kbFORTRANPower400NT
+Version           : :4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

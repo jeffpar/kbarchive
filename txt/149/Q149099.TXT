@@ -1,0 +1,71 @@
+DOCUMENT:Q149099  08-NOV-2001  [homekids]
+TITLE   :MSN Interactive Teen: Minimum System Requirements
+PRODUCT :Microsoft Home Kids Products
+PROD/VER::1.0; WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MSN Interactive Teen, version 1.0 
+ - the operating system: Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the minimum system configuration required to use the
+special MSN Interactive Teen features.
+
+MORE INFORMATION
+================
+
+The minimum system requirements to run MSN Interactive Teen are:
+
+ - Personal computer with a 386DX processor.
+
+ - Microsoft Windows 95 operating system.
+
+ - 8 MB of RAM memory.
+
+ - 5 MB of additional hard disk space (beyond the standard Windows 95
+   requirements).
+
+ - Super VGA, 256-color monitor.
+
+ - Modem (9600 baud minimum, 14,400 baud strongly recommended).
+
+ - Microsoft Mouse or compatible pointing device.
+
+ - Account with MSN, The Microsoft Network online service.
+
+ - MSN version 1.2 installed and running.
+
+Optional:
+
+ - Sound card and speakers/headphones.
+
+Additional query words: Current msn 1.2 microsoft network msnkids least need needed require msnetwork requires
+
+======================================================================
+Keywords          :  
+Technology        : kbOSWin95 kbOSWinSearch _IKkbbogus kbMSNSearch kbMSNTeen
+Version           : :1.0; WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

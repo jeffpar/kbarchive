@@ -1,0 +1,66 @@
+DOCUMENT:Q72767  14-NOV-2000  [word97]
+TITLE   :WD97: Setting Sequence Numbering Using a Bookmark
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbdta winword
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+You can use the {SET} statement to set the sequence numbering in a {SEQ \r}
+statement in a Microsoft Word document.
+
+MORE INFORMATION
+================
+
+The \r switch used in a sequence field resets the sequence number to the number
+following the \r. You can also use a bookmark with a numeric value in this
+field. The SET variable is considered a bookmark after the SET field is updated.
+(The field can be updated by pressing F9 while the field is selected.) In the
+following example, the bookmark {year} is set to 1992 at the beginning of the
+document. The {SEQ} field starts the sequence number at {year}, which results in
+1992.
+
+Note that the variable {year} becomes a bookmark that must be contained in field
+code brackets when used.
+
+Example                 Result
+-------                 ------
+
+{set year 1992}
+{SEQ yr \r{year}}       1992
+{SEQ yr}                1993
+{SEQ yr}                1994
+
+Additional query words: anual sequences numerical series
+
+======================================================================
+Keywords          : kbdta winword 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,98 @@
+DOCUMENT:Q256888  08-MAY-2002  [iis]
+TITLE   :Internet Information Service Returns Source of ASP File
+PRODUCT :Internet Information Server
+PROD/VER::5.0
+OPER/SYS:
+KEYWORDS:kbWin2000PreSP1Fix kbWin2000sp1Fix kbgraphxlinkcritical
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server version 5.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+If an Internet Information Services (IIS) server receives a file request that
+contains a specialized header as well as one of several particular characters at
+the end, the expected ISAPI extension processing may not occur. The result is
+that the source code of the file would be sent to the browser.
+
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Windows 2000. For
+additional information, click the following article number to view the article
+in the Microsoft Knowledge Base:
+
+   Q260910 How to Obtain the Latest Windows 2000 Service Pack
+
+
+The following file is available for download from the Microsoft Download Center:
+
+US English:
+
+   DownloadDownload Q256888_w2k_sp1_x86_en.exe now
+   (http://www.microsoft.com/Downloads/Release.asp?ReleaseID=23769)
+
+For additional information about how to download Microsoft Support files, click
+the following article number to view the article in the Microsoft Knowledge
+Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft scanned this file for viruses. Microsoft used the most current
+virus-detection software that was available on the date that the file was
+posted. The file is stored on secure servers that prevent any unauthorized
+changes to the file.
+
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in Internet Information Server
+5.0. This problem was first corrected in Windows 2000 Service Pack 1.
+
+
+MORE INFORMATION
+================
+
+For related information about this problem, please visit the following Microsoft
+Web site:
+
+   http://www.microsoft.com/technet/security/bulletin/ms00-058.asp
+
+For additional security-related information about Microsoft products, please
+visit the following Microsoft Web site:
+
+   http://www.microsoft.com/security/
+
+Additional query words:
+
+======================================================================
+Keywords          : kbWin2000PreSP1Fix kbWin2000sp1Fix kbgraphxlinkcritical 
+Technology        : kbiisSearch kbiis500
+Version           : :5.0
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

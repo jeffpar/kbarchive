@@ -1,0 +1,75 @@
+DOCUMENT:Q69829  13-DEC-1999  [win95x]
+TITLE   :Running Windows in Enhanced Mode with Tandy 4000 with SCSI
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Tandy Corporation recommends the following settings to run Microsoft Windows 3.0
+in 386 enhanced mode on a Tandy 4000 computer with a SCSI hard drive:
+
+ - The /b- switch should be used when loading SMARTDrive in the CONFIG.SYS file.
+   Most of the SCSI hard drives with Tandy 4000 computers have Adaptec
+   controllers. The /b- switch turns off double buffering.
+
+   NOTE: The /b- switch would come after the Normal and Minimum Cache size
+   settings. An example of this is:
+
+   Device=C:\Windows\Smartdrv.Sys 2048 1024 /B-
+
+ - The line for HIMEM.SYS must be the first device line in the CONFIG.SYS file:
+
+   Device=C:\Himem.Sys
+
+ - The following line must be added to the [386Enh] section of the SYSTEM.INI:
+
+   VirtualhdIrq=False
+
+MORE INFORMATION
+================
+
+If the ROM BIOS for the SCSI hard drive is version 2.0, 2.0c or earlier, then
+the device driver SCSIHA.SYS must be loaded through the CONFIG.SYS file. This is
+needed for proper operation in enhanced mode. If the ROM BIOS is version 4.05s,
+5.05s, or later, then no additional device driver needs to be loaded.
+
+For further information on SCSI-type drive and controllers, query on:
+
+   Windows and Adaptec and SCSI
+
+The Tandy products included here are manufactured by a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 3.00 3.0 3.0a 3.00a KBHW 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

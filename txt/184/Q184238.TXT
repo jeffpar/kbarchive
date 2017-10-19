@@ -1,0 +1,66 @@
+DOCUMENT:Q184238  17-JUL-2001  [visualc]
+TITLE   :INFO: LNK4108: /ALIGN Specified Without /DRIVER or /VXD;
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINNT:5.0sp3
+OPER/SYS:
+KEYWORDS:kberrmsg kbVC600 kbVC500SP3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Linker (LINK.EXE), included with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0sp3 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0sp3 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following warning was introduced in the linker shipped with Visual Studio 97
+Service Pack 3:
+
+   Warning LNK4108:
+   /ALIGN specified without /DRIVER or /VXD; image may not run
+
+MORE INFORMATION
+================
+
+The /ALIGN option has been specified without also specifying either the /DRIVER
+or /VXD option.
+
+Bad alignment can prevent the operating system from loading the final image. Do
+not use the /ALIGN option unless building a driver or virtual device driver
+(VxD).
+
+This warning occurs even when you specify the documented default value for the
+/ALIGN option.
+
+
+You might see this warning when you use the linker included with Visual Studio 97
+Service Pack 3 to build a makefile created in a Visual C++ 4.x project because
+the Win32.mak supplied with Visual C++ 4.x contains the /ALIGN switch.
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbVC600 kbVC500SP3 
+Technology        : kbVCsearch kbAudDeveloper kbLINKSearch kbLINK100
+Version           : WINNT:5.0sp3
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

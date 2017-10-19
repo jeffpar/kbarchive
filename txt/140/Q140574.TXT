@@ -1,0 +1,67 @@
+DOCUMENT:Q140574  17-DEC-2000  [win95x]
+TITLE   :How to Set Global Environment Variables in Windows 95
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes how to set global environment variables within Windows
+95.
+
+MORE INFORMATION
+================
+
+The CD-ROM version of Windows 95 includes a tool called Winset.exe. This tool is
+designed to set environment variables in Microsoft Windows NT login scripts, but
+you can also use it to set global environment variables in Windows 95. The
+syntax for Winset.exe is the same as for the SET command.
+
+For example, to set a global TEMP environment variable within Windows 95, follow
+these steps:
+
+1. Copy the Winset.exe file from the Admin\Apptools\Envvars folder on the
+   Windows 95 CD-ROM to the Windows folder on your hard disk.
+
+2. Click the Start button, and then click Run.
+
+3. Type the following line in the Open box, and then click OK:
+
+   " winset temp=c:\temp " (without the quotation marks)
+
+Note that running the Winset.exe tool at a command prompt has no effect in the
+current instance of the command prompt. A new command prompt must be launched
+before the change is apparent.
+
+For additional information, please see the Readme.txt file in the
+Admin\Apptools\Envvars folder on the Windows 95 CD-ROM.
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

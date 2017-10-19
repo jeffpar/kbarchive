@@ -1,0 +1,61 @@
+DOCUMENT:Q259204  10-AUG-2001  [winnt]
+TITLE   :"Access Is Denied" Error Message Running Winntup.exe
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+OPER/SYS:
+KEYWORDS:kberrmsg kbsetup
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server, Enterprise Edition versions 4.0 SP4, 4.0 SP5, 4.0 SP6, 4.0 SP6a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to upgrade to Windows NT Server 4.0, Enterprise Edition, by running
+Winntup.exe, you may receive an "Access is denied" error message.
+
+CAUSE
+=====
+
+This error message is caused by Setup finding a newer Msvbvm50.DLL file than
+exists on the Enterprise Edition CD-ROM. Msvbvm50.DLL is installed by Microsoft
+Internet Explorer 4.0 or later. This file is marked with the Read Only attribute
+and cannot be replaced.
+
+RESOLUTION
+==========
+
+To resolve this issue, remove the Read Only attribute from the Msvbvm50.DLL
+file, and then run Winntup.exe again. To remove the Read Only attribute, start
+Windows Explorer, right-click the Msvbvm50.DLL file in the %SystemRoot%\System32
+folder, click Properties, click to clear the Read Only check box, and then click
+OK.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbsetup 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTSEntSearch kbWinNTSEnt400sp6 kbWinNTSEnt400sp5 kbWinNTSEnt400sp4 kbWinNTS400search kbWinNTSEnt400SP6a
+Version           : :4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

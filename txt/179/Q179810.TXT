@@ -1,0 +1,67 @@
+DOCUMENT:Q179810  07-MAY-1999  [homemm]
+TITLE   :Encarta 98 Standard Edition: Minimum System Requirements
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbmm kbSysSettingskbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 98 Encyclopedia for Windows 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the minimum system requirements to run the 1998 Standard
+edition of Encarta Encyclopedia for Windows.
+
+MORE INFORMATION
+================
+
+The minimum system requirements to run Encarta 98 Standard edition are:
+
+ - A multimedia computer with a 486DX/50-MHz or higher processor.
+ - Microsoft Windows 95 operating system or Windows NT Workstation operating
+   system version 4.0 or later.
+ - 8 megabytes (MB) of memory (RAM) for Windows 95; 16 MB for Windows NT
+   Workstation.
+ - 30 MB of available hard disk space for Windows 95 or Windows NT Workstation.
+ - A double-speed or faster CD-ROM drive.
+ - A Super VGA, 256-color monitor supporting 640 x 480 or higher resolution.
+ - A local-bus video adapter with 1 MB or more of video memory.
+ - A Microsoft Mouse, Microsoft IntelliMouse, or compatible pointing device.
+ - An audio adapter with speakers or headphones.
+
+To use Encarta Yearbook, Web links, and monthly online updates, you need:
+
+ - A 9600-bits-per-second (bps) or faster modem.
+ - Access to the Internet.
+ - 4 MB of additional hard disk space, plus 1 MB for each monthly installment.
+ - A Web browser.
+
+Additional query words: multimedia mmtitles requires
+
+======================================================================
+Keywords          : kbmm kbSysSettings kbfaq
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1998
+Version           : WINDOWS:
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

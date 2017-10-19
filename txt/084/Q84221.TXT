@@ -1,0 +1,65 @@
+DOCUMENT:Q84221  06-DEC-1999  [win95x]
+TITLE   :Problem Running DOS Applications with CompuAdd 325TFX, 325NX
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+After installing Microsoft Windows operating system version 3.1 onto a CompuAdd
+325TFX or 325NX laptop, you may experience a problem running MS-DOS-based
+applications such as the MS-DOS Prompt.
+
+According to CompuAdd technical support, you can work around this problem by
+installing Windows 3.1 for the VGA (version 3.0) display driver.
+
+MORE INFORMATION
+================
+
+After installing or upgrading to Windows version 3.1's standard VGA video
+driver, you may experience a problem when running MS-DOS-based applications,
+where the screen on the 325NX displays a reversed black video and lock or hang,
+and the 352TFX does the same thing, but with a reversed white screen.
+
+This situation may be corrected by installing the VGA (version 3.0) driver
+available in Setup. Do the following:
+
+1. Exit Windows and change to the WINDOWS directory.
+
+2. Type "setup" (without the quotation marks) and press ENTER.
+
+3. Select the Display option and press ENTER.
+
+4. Select the VGA (version 3.0) display option and press ENTER.
+
+Additional query words: 3.10 3.11 3rdparty VGA
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

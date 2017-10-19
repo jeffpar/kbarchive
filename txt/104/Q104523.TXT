@@ -1,0 +1,74 @@
+DOCUMENT:Q104523  22-NOV-1999  [msdos]
+TITLE   :Backup for MS-DOS Err Msg: CONTROL.FIL Cannot Be Read by DOS
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you back up an entire hard disk drive using Microsoft Backup for MS-DOS
+(MSBACKUP.EXE), you may receive the following error message:
+
+   CONTROL.FIL cannot be read by DOS. Use DOS CHKDSK to correct the problem,
+   then retry backup.
+
+NOTE: This error does not occur if you are using Microsoft Backup for Windows
+(MWBACKUP.EXE).
+
+CAUSE
+=====
+
+This error is generated if you are backing up the SENTRY directory while Delete
+Sentry is resident in memory.
+
+WORKAROUND
+==========
+
+To work around this problem, do one of the following:
+
+ - Remove UNDELETE from memory by typing "UNDELETE /U" (without the quotation
+   marks), at the MS-DOS command prompt.
+
+-or-
+
+ - Avoid backing up the SENTRY directory by not including this directory in the
+   file-selection process in Backup.
+
+MORE INFORMATION
+================
+
+When this error appears, Backup gives you the options Continue (the default) and
+Cancel Backup. If you choose Continue, the remaining files are backed up.
+Choosing Cancel returns you to the first Backup screen.
+
+Additional query words: 6.00 6.20 6.22 undelete sentry
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

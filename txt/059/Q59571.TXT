@@ -1,0 +1,53 @@
+DOCUMENT:Q59571  30-JUL-2001  [homegame]
+TITLE   :Flight Simulator: Kraft High-Speed Joystick Adapter Card
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+The Kraft high-speed Joystick Adapter Card has a unique six-position switch that
+allows you to match the clock speed of the IBM PC, XT, and AT, the IBM PS/2
+Models 25 and 30, or any IBM-compatible computer. The six-position switch allows
+you to select clock speeds from 4.77 to 16 MHz. The following chart is a guide
+to correctly configure the card to match the computer's clock speed.
+
+     Computer               Suggested
+   Clock Speed            Switch Position
+   -----------            ---------------
+
+    4.77 MHz                   1
+    6 MHz                      2
+    8 MHz                      3
+
+   10 MHz                      4
+   12 MHz                      5
+   16 MHz                      6
+
+For additional information concerning the Kraft high-speed Joystick Adapter Card,
+refer to the Kraft user's manual or call Kraft Product support at (619)
+724-7146.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

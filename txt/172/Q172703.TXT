@@ -1,0 +1,102 @@
+DOCUMENT:Q172703  14-NOV-2000  [word97]
+TITLE   :WD97: Letter Wizard Second Page Header Contains Date/Page Number
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:winword word97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you add a page to your letter so that it includes two or more pages, a page
+number and date are added to the header of your document beginning on page two.
+
+CAUSE
+=====
+
+This problem occurs if you used the Letter Wizard, selected either the
+Contemporary, Elegant, or Professional Page design, and cleared the "Include
+header and footer with page design" check box. You cannot add or modify the
+header while running the Letter Wizard.
+
+NOTE: This problem may also occur when you use a custom page design or when you
+use the Letter Wizard to modify an existing letter.
+
+WORKAROUND
+==========
+
+NOTE: View the document in Page Layout to see the header of your letter.
+
+To remove the page number and date information contained in the header, follow
+these steps:
+
+1. Move the insertion point to page two of your letter.
+
+2. On the View menu, click Header And Footer. The insertion point should now be
+   in the header of your letter.
+
+3. On the Edit menu, click Select All.
+
+4. On the Edit menu, click Cut.
+
+5. Click the Close button on the Header And Footer toolbar.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products listed at
+the beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+For additional information about problems with the Letter Wizard, please see the
+following articles in the Microsoft Knowledge Base:
+
+   Q157381 WD97: Known Problems with Letter Wizard Contemporary Page Design
+
+   Q172704 WD97: Company Name Not Added to Header w/Letter Wizard
+
+For more information about "using the letter wizard," click the Office Assistant,
+type "letter wizard" (without the quotation marks), click Search, and then click
+one of the topics.
+
+NOTE: If the Assistant is hidden, click the Office Assistant button on the
+Standard toolbar. If Word Help is not installed on your computer, please see the
+following article in the Microsoft Knowledge Base:
+
+   Q120802 Office: How to Add/Remove a Single Office Program or Component
+
+Additional query words:
+
+======================================================================
+Keywords          : winword word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Hardware          : x86
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

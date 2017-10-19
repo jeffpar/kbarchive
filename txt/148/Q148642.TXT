@@ -1,0 +1,82 @@
+DOCUMENT:Q148642  10-FEB-2000  [foxpro]
+TITLE   :How to Perform In-Place Activation on an OLE Control
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:kbcode
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you add an OLE control to a Visual FoxPro form, you can force the control
+to have the focus and immediately be the object that receives keystrokes. This
+is called in-place activation. This article demonstrates two methods you can use
+to activate an OLE container control in this manner.
+
+MORE INFORMATION
+================
+
+Two Techniques to Activate an OLE Control
+-----------------------------------------
+
+1. Determine if the object will respond to the OLE DOVERB activation method. If
+   the object will respond, fire the DOVERB("EDIT") method. This technique has
+   the advantage of activating the object without placing any keystrokes in the
+   keyboard buffer.
+
+2. If the object does not respond to the DOVERB method of activation, stuff the
+   keyboard with an ENTER keystroke, and move the focus to the object.
+
+Step-by-Step Example to Demonstrate Both Techniques
+---------------------------------------------------
+
+1. Create a new form. Place an OLE container control with an object of your
+   choice on the form.
+
+2. Place a command button on the form with the following code in the click
+   event:
+
+      IF ThisForm.OleControl1.DoVerb('')
+         * The vast majority of modern applications fall into this category
+         =MESSAGEBOX("This object responded to activation",0)
+         ThisForm.OleControl1.DoVerb("Edit")
+      ELSE
+      * To test the validity of this process, change the previous lines of
+      * code into comments and run the three lines listed below.
+
+         =MESSAGEBOX("This object must be activated with the Enter key",0)
+         KEYBOARD '{ENTER}'
+         ThisForm.OleControl1.SetFocus()
+      ENDIF
+
+3. Save and run the form.
+
+Additional query words: inplace in-place
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,89 @@
+DOCUMENT:Q125386  08-AUG-2001  [winnt]
+TITLE   :SFM Files Lose Long Filenames When Backed Up & Restored
+PRODUCT :Microsoft Windows NT
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 3.1 
+ - Microsoft Windows NT Workstation version 3.1 
+ - Microsoft Windows NT Advanced Server, version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Services for Macintosh (SFM) files with names containing characters illegal
+under Windows NT lose their long names when backed up and restored using Windows
+NT Backup.
+
+CAUSE
+=====
+
+The legal SFM characters, but illegal Windows NT characters, are supported by
+Services for Macintosh by translating the characters to an unused area of the
+Unicode character set. Prior to Service Pack 2, Windows NT Backup did not
+support Unicode. When a version of Windows NT Backup that is not Unicode aware
+backs one of these files it is unable to record the correct long filename. In
+instead uses a traditional 8.3 character filename. As a result, the long
+filename is unrecoverable.
+
+NOTE: Tapes created by Windows NT Backup from Service Pack 2 or later record the
+long filenames correctly.
+
+RESOLUTION
+==========
+
+This problem has been corrected in Windows NT version 3.5 and the most current
+builds of Windows NT version 3.1. Because the data recorded to the tape from
+earlier versions of Windows NT Backup does not contain the full file names,
+there is no way to recover from the loss of this information; the files must be
+renamed from the Macintosh client to regain their original names.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.1. This
+problem was corrected in the latest US Service Pack for Windows NT. For
+information on obtaining this update, query on the following word in the
+Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+MORE INFORMATION
+================
+
+The following are characters are allowed by SFM but not by Windows NT:
+
+   *
+   / 
+   \ 
+   :
+
+Also, Windows NT does not allow filenames with trailing periods or trailing
+spaces.
+
+Additional query words: 3.10 lfn long name prodnt
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW310 kbWinNTSsearch kbWinNTS310 kbWinNTAdvSerSearch kbWinNTAdvServ310 kbWinNTS310search kbWinNT310Search kbWinNTW310Search
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

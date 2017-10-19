@@ -1,0 +1,109 @@
+DOCUMENT:Q244630  25-JUN-2000  [sms]
+TITLE   :SMS: Site Status Node May Take a Long Time to Open
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:2.0,2.0 SP1
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug kbsmsAdmin kbsms200sp2fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0, 2.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The sp_GetSummarizers_SiteDetail stored procedure may be very slow, especially
+when there are many site systems in the site. As a result, the Site Status node
+in the Systems Management Server Administrator console may take an extremely
+long time to open.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the latest service pack for Systems Management
+Server version 2.0. For additional information, please see the following article
+in the Microsoft Knowledge Base:
+
+   Q236325 How to Obtain the Latest Systems Management Server 2.0 Service Pack
+
+
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0. This problem was first corrected in Systems Management Server
+version 2.0 Service Pack 2.
+
+MORE INFORMATION
+================
+
+To install the hotfix, use the appropriate method.
+
+Method 1: Using the Hotfix Installer
+------------------------------------
+
+NOTE: This method is only for I386-based computers.
+
+1. Copy the hotfix folder structure to a share on your network. Q244630.exe is a
+   Microsoft Windows Installer file that updates specific files on your site
+   server.
+
+2. Log on to your site server using an account with administrative privileges.
+
+3. On the site server, close the Systems Management Server Administrator
+   console.
+
+4. Run Q244630.exe and follow the directions in the wizard. You can run the file
+   in Quiet mode using the /s switch.
+
+Method 2: Manual Installation
+-----------------------------
+
+1. From the Systems Management Server site server, stop the
+   SMS_SITE_COMPONENT_MANAGER and the SMS_EXECUTIVE services.
+
+2. At the Systems Management Server site database server, load the 57972.sql
+   script using a Microsoft SQL Server query tool (for example, Query Analyzer
+   or Isql/w).
+
+3. From within the SQL Server query tool, select the Systems Management Server
+   database.
+
+4. Run the script.
+
+5. Restart the SMS_SITE_COMPONENT_MANAGER and SMS_EXECUTIVE services on the
+   Systems Management Server site server.
+
+For best performance, you should use this hotfix in conjunction with the hotfix
+described in the following article in the Microsoft Knowledge Base:
+
+   Q244633 SMS: Site Status Node is Slow
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug kbsmsAdmin kbsms200sp2fix 
+Technology        : kbSMSSearch kbSMS200 kbSMS200SP1
+Version           : winnt:2.0,2.0 SP1
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

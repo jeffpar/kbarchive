@@ -1,0 +1,72 @@
+DOCUMENT:Q194714  10-AUG-2001  [winnt]
+TITLE   :Noise Signals Interpreted As Keystroke During Boot Display
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.51,4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+ - Microsoft Windows NT Workstation versions 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+ 
+
+MORE INFORMATION
+================
+
+Windows NT's boot option display has a feature whereby one can stop the
+countdown timer by pressing a key on the keyboard other than the enter key. The
+result of this action is that Windows NT will then wait indefinitely until the
+user makes the preferred selection and presses the enter key to continue loading
+an operating system.
+
+Some keyboards, switch boxes, and BIOSs can mistakenly send random electronic
+noise signals that NTLDR interprets as a keystroke and, thereby, determines that
+the user has instructed it to not display or process the time-out countdown.
+
+SYMPTOMS
+========
+
+When Windows NT boots, it displays the boot options available in the boot.ini.
+
+Normal function of this display is to offer options to the user while counting
+down a preset number of seconds before loading a default operating system.
+
+Occasionally, the display will not indicate a countdown in progress and will not
+load an operating system by default but will wait indefinitely until a user
+selects an operating system option and presses the enter key.
+
+RESOLUTION
+==========
+
+To work around this problem, upgrade the offending BIOS or attach different
+keyboards or switch boxes and test for symptom recurrence.
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search
+Version           : WinNT:3.51,4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

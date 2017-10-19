@@ -1,0 +1,61 @@
+DOCUMENT:Q170592  23-DEC-1999  [exchange]
+TITLE   :XCLN: Client Appears to Hang When Using Check Names Command
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.0; Win95:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 3.x client, version 5.0 
+ - Microsoft Exchange Windows NT client, version 5.0 
+ - Microsoft Exchange Client for Windows 95, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Check Names command in the Microsoft Exchange client, the
+Exchange Client computer may appear to hang. This can occur when you use a
+reserved address type for the address name space (such as SMTP, X400, or MS),
+the global address list (GAL) is of significant size (for example, thousands of
+addresses), and a recipient or distribution list (DL) does not exist with the
+same name. Eventually, the operation will fail with the following error:
+
+   The table requested by this operation contains too many names and cannot be
+   accessed.
+
+CAUSE
+=====
+
+This behavior is by design. The behavior and subsequent error occur because the
+Exchange client is actually attempting to return the entire list of all
+addresses available (SMTP, X400, MS, and so on). In a large GAL, this list of
+addresses can be in the thousands.
+
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchangeClientSearch kbZNotKeyword2 kbZNotKeyword3 kbExchange500NT
+Version           : WINDOWS:5.0; Win95:5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

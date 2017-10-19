@@ -1,0 +1,55 @@
+DOCUMENT:Q152320  28-MAR-1999  [exchange]
+TITLE   :XCLN: How to Display the Secondary Mouse Menu
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0
+OPER/SYS:
+KEYWORDS:kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Macintosh client, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Because the Apple Macintosh does not have a "secondary" mouse button, you must
+use a key combination (Shift+F10) to display the secondary mouse menu.
+
+For example, select the Deleted Items folder. Press Shift+F10. You can now "empty
+the folder" without having to select and delete all messages in the folder.
+
+When using the Exchange Client for the Macintosh version 5.0, you may also hold
+the CONTROL key down while clicking an object to access the secondary menu.
+
+Note: For Shift+F10 or CONTROL click to work you must be at a point where you can
+insert text. For example: to add a series of addresses to the Personnal Address
+Book (PAB) you need to perform a Reply All to a message and Shift+F10 or CONTROL
+click on each address that you want to add to the PAB.
+
+Additional query words: 4.00 5.00 right click mouse button
+
+======================================================================
+Keywords          : kbui 
+Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbExchangeClientSearch kbExchange500Mac kbExchange400Mac
+Version           : WINDOWS:4.0,5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,95 @@
+DOCUMENT:Q270225  09-MAR-2001  [word97]
+TITLE   :WD97: Error Message: "Run-time Error '5'" When You Start Word
+PRODUCT :Word 97 for Windows
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdta word8 word97
+
+======================================================================
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you start Microsoft Word, you receive the following error message:
+
+   Run-time error '5': Invalid Procedure Call or Argument.
+
+CAUSE
+=====
+
+This error message may appear when the _stamps.dot template, which is provided
+by Stamps.com, is located in your Office Startup folder.
+
+The default location of the Office Startup folder is:
+
+   C:\Program Files\Microsoft Office\Office\Startup
+
+RESOLUTION
+==========
+
+To resolve this problem, upgrade to version 2.2.2 or later of the Stamps.com
+Internet Postage software.
+
+WORKAROUND
+==========
+
+To work around this problem, delete or move the _stamps.dot template from your
+Startup folder. To do this, follow these steps:
+
+1. Quit Microsoft Word.
+
+2. In Office Startup folder, click to select _stamps.dot.
+
+3. Do one of the following:
+
+    - To delete _stamps.dot, click Delete on the Edit menu.
+
+      -or-
+
+    - To move _stamps.dot to a different folder, click Cut on the Edit menu.
+      Select the folder where you want to move _stamps.dot, and then click Paste
+      on the Edit menu.
+
+4. Restart Microsoft Word.
+
+MORE INFORMATION
+================
+
+The _stamps.dot template is installed by a third-party add-in that lets you use
+Internet postage from Stamps.com in Microsoft Word. For more information, please
+browse to the Stamps.com Web site at http://www.Stamps.com
+(http://www.Stamps.com).
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: runtime error 5 run time
+
+======================================================================
+Keywords          : kbdta word8 word97 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

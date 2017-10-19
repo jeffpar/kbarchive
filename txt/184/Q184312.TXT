@@ -1,0 +1,57 @@
+DOCUMENT:Q184312  02-MAY-1999  [iis]
+TITLE   :Microsoft Management Console Fails to Function Correctly
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+ - Microsoft Management Console 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+ 
+
+SYMPTOMS
+========
+
+When using the Microsoft Management Console (MMC) included with Microsoft
+Internet Information Server 4.0 and the Windows NT Option Pack, you may
+experience problems using the console if your available disk space is less than
+2 MB on the system partition.
+
+WORKAROUND
+==========
+
+To restore normal functionality of the MMC, you must free up additional disk
+space on the system partition where Windows NT is installed.
+
+Additional query words: IIS NTOP 4.0 MMC
+
+======================================================================
+Keywords          :  
+Technology        : kbiisSearch kbAudDeveloper kbiis400 kbMMCSearch
+Version           : WINNT:4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

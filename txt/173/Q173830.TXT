@@ -1,0 +1,59 @@
+DOCUMENT:Q173830  20-NOV-1999  [mspress]
+TITLE   :Office 97/VB Programmer's Guide Does Not Cover Macintosh
+PRODUCT :Microsoft Press
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdocerr
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Office 97/Visual Basic Programmer's Guide ISBN 1-57231-340-4 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The front cover of the first two printings of "Microsoft Office 97/Visual Basic
+Programmer's Guide" states that the book covers Microsoft Office 97 for the
+Apple Macintosh. However, the book does not cover any planned version of
+Microsoft Office for the Apple Macintosh.
+
+MORE INFORMATION
+================
+
+Correction:
+Remove Macintosh logo Front Cover, Spine, and Back Cover.
+
+Front Cover:
+Change: "Covers Microsoft Office 97 for Windows 95, Windows NT, and the Apple
+Macintosh"
+
+To: "Covers Microsoft Office 97 for Windows 95 and Windows NT"
+
+
+Additional query words: mspress ms_press press bookbug off97 mac 1-57231- 340-4
+
+======================================================================
+Keywords          : kbdocerr 
+Technology        : kbMSPressSearch
+Version           : :
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

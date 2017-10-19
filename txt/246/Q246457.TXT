@@ -1,0 +1,78 @@
+DOCUMENT:Q246457  17-DEC-1999  [mastering]
+TITLE   :PRB: Cannot find location of main media view file
+PRODUCT :Microsoft Mastering Series
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Mastering Products, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After installing a Mastering Series title and starting the application, the
+following message appears:
+
+   Can not find the location of the main media view file.
+
+CAUSE
+=====
+
+The media view files are on the Mastering CD.
+
+RESOLUTION
+==========
+
+Insert the Mastering CD into the CD-ROM drive and try again.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+To not be prompted for a CD when viewing media files you can do the following:
+
+1. Create a new folder on a drive with over 650 MB of available hard disk space
+   and label it "Mastering".
+
+2. Copy the entire contents of the Mastering CD to the folder "Mastering".
+
+3. In the Control Panel select Add/Remove Programs and choose to uninstall the
+   Mastering Series.
+
+4. Run Setup.exe from the folder "Mastering".
+
+The Registry entries will now point to the files on the hard disk rather than the
+CD for the media view files.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch
+Version           : WINDOWS:1.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

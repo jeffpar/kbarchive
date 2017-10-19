@@ -1,0 +1,72 @@
+DOCUMENT:Q88886  23-OCT-1999  [foxmisc]
+TITLE   :Using ON KEY Command in FoxBASE+
+PRODUCT :Microsoft Fox Miscellaneous Products
+PROD/VER:MS-DOS:1.21,2.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FoxBASE+ for MS-DOS, versions 1.21, 2.1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Only one ON KEY command can be active at one time. It is active only during a
+READ or when a full-screen editing command is in effect.
+
+This restriction applies to all ON commands in FoxBASE+ (ON ERROR, ON ESCAPE, and
+ON KEY). Once issued, an ON command remains in effect until another ON command
+of the same type is issued or the application ends.
+
+MORE INFORMATION
+================
+
+The following program illustrates that when an application issues a second ON
+KEY command, it replaces the first ON KEY command:
+
+      CLEAR
+      mvarname = "                    "
+      ON KEY = 315 DO prg1
+      ON KEY = 316 DO prg2
+      @ 3,5 SAY "This is a test of on key"
+      @ 4,5 SAY "Please enter a string when finished"
+      @ 5,5 GET mvarname
+      @ 6,5 SAY "F1 = prg1   F2 = prg2"
+      READ
+
+      ** PROCEDURE file prg1 **
+      PROCEDURE prg1
+      @7,5 SAY "This won't display"
+      RETURN
+
+      ** PROCEDURE file prg2 **
+      PROCEDURE prg2
+      @8,5 SAY "This will display"
+      RETURN
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbFoxproSearch kbFoxBASE210DOS kbFoxBASE121DOS kbFoxBASESearch
+Version           : MS-DOS:1.21,2.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

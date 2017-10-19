@@ -1,0 +1,70 @@
+DOCUMENT:Q96884  31-OCT-1999  [pcmail]
+TITLE   :PC Win: Can't Repair MMF on Novell Without File Scan Privilege
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0b,3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, versions 3.0b, 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+An attempt to repair the Mail message file (MMF) fails, and Mail generates the
+following message:
+
+   An inconsistency has been detected in the mail message file.
+
+After you choose the OK button, Mail generates the following message:
+
+   Inconsistencies in your message file could not be repaired.
+
+After you choose the OK button, Mail generates the following message:
+
+   Your message file could not be found.
+
+CAUSE
+=====
+
+The MMF repair utility, which you can invoke by holding down the SHIFT key when
+you start Mail, cannot locate the MMF because the Novell File Scan right is
+disabled.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Mail for Windows,
+versions 3.0b and 3.2. This problem was corrected in version 3.2a.
+
+For information on obtaining this update, query on the following word in the
+Microsoft Knowledge Base:
+
+   mailupd
+
+Additional query words: 3.00b 3.20 kbbug3.00b checkmmf
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail320 kbMail300b
+Version           : WINDOWS:3.0b,3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,172 @@
+DOCUMENT:Q97650  30-JUL-2001  [lanman]
+TITLE   :Installing TCP/IP Protocol for Remoteboot Workstations
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+SUMMARY
+=======
+
+To run the Microsoft TCP/IP protocol and utilities on remoteboot MS-DOS
+workstations, you must make some changes to the setup files. The printed
+documentation and release notes for LAN Manager 2.1, 2.1a, and 2.2 have some
+errors in the instructions for changing these files: this article provides the
+correct procedure.
+
+MORE INFORMATION
+================
+
+Although the NetBEUI protocol is by default statically loaded and bound on
+remotely booted workstations, you can set up the remote boot service so that
+users at remoteboot MS-DOS workstations can dynamically load and unload other
+protocols.
+
+To use TCP/IP in addition to NetBEUI, your remoteboot server's LAN Manager root
+directory must have the subdirectory:
+
+   \RPL\RPLFILES\BINFILES\LANMAN.DOS\DRIVERS\PROTOCOL\TCPIP.
+
+Create any directories in this path that do not exist. Then follow these steps
+(before running RPLINST):
+
+1. Copy all files from the \DRIVERS\PROTOCOL\TCPIP subdirectory on the LAN
+   Manager MS-DOS Drivers disk to the
+   \RPL\RPLFILES\BINFILES\LANMAN.DOS\DRIVERS\PROTOCOL\TCPIP subdirectory of the
+   server's LAN Manager root directory. Type
+
+   " DECOMP input_file output_file" (without the quotation marks)
+
+   to decompress the files with extensions ending in "$."
+
+    - All .EX$ files should be decompressed to .EXE files, and UNLOAD.EXE should
+      then be renamed UNLOADT.EXE.
+
+    - All .86$ files should be decompressed to .86 files.
+
+    - All .CO$ files should be decompressed to .COM files.
+
+    - All .DO$ files should be decompressed to .DOS files.
+
+2. After the files are decompressed, you may delete all files ending in "$" to
+   recover disk space. If you have already run RPLINST, run it again to set the
+   protections for these files.
+
+3. Edit the configuration files for the remoteboot profile.
+
+   You may want to create a separate profile for workstations that need TCP/IP,
+   because the drivers consume approximately 80K of memory. If so, use the
+   Remoteboot Manager to create a new profile with the appropriate hardware
+   configuration. Use the default configuration for all supported adapters that
+   are not listed separately in the possible configurations.
+
+    - Edit the profile's AUTOEXEC.BAT file found in the RPL\RPLFILES\<PROFILE
+      NAME> directory, uncommenting or adding the following lines:
+
+   UMB.COM
+   LOAD TCPIP
+   NMTSR.EXE
+
+    - Edit the profile's CONFIG.SYS file in the same directory removing REM from
+      the beginning of the DEVICE=NEMM.DOS line.
+
+    - Edit the DOSBB.CNF file for the specific adapter
+      rpl\bblock\netbeui\<adapter name>\dosbb.cnf to uncomment TCPDRV.DOS
+
+      If there are any changes to network card configuration details, edit
+      RPL\BBLOCK\NETBEUI\<ADAPTER NAME>\PROTOCOL.INI.
+
+      Examples of modified configuration files for a 3Com Etherlink II and
+      profile named elnktcp are given below.
+
+C:\LANMAN\RPL\RPLFILES\PROFILES\ELNKTCP\AUTOEXEC.BAT
+----------------------------------------------------
+
+@ECHO OFF
+REM **************************************************************
+REM **         Microsoft LAN Manager       **
+REM **         Copyright(c) Microsoft Corp., 1990  **
+REM **************************************************************
+SET COMSPEC=C:\DOS\COMMAND.COM
+SET PATH=C:\LANMAN.DOS\NETPROG;C:\DOS;C:\BINR;C:\BINB;
+SET PROMPT=$P$G
+SET TMP=C:\TMP
+SET TEMP=C:\TMP
+SET DOSSHELL=C:\WKSTA
+VER
+@ECHO ON
+C:\LANMAN.DOS\DRIVERS\PROTOCOL\TCPIP\UMB.COM
+NET START RDR /RPL:YES /FIT:YES /COMPUTERNAME:(COMPUTER_NAME)
+/HIMEM:YES
+@RPLLINK
+@FIXMEM
+LOAD TCPIP
+C:\LANMAN.DOS\DRIVERS\PROTOCOL\TCPIP\NMTSR.EXE
+
+C:\LANMAN\RPL\RPLFILES\PROFILES\ELNKTCP\CONFIG.SYS
+--------------------------------------------------
+
+SHELL=C:\DOS\COMMAND.COM C:\DOS /P
+LASTDRIVE=Z
+BUFFERS=10
+FILES=30
+STACKS=0,0
+DEVICE=C:\DOS\HIMEM.SYS
+rem DEVICE=C:\DOS\EMM386.EXE NOEMS X=9380-9FFF
+DOS=HIGH,UMB
+rem -- Uncommented this existing line
+DEVICE=C:\LANMAN.DOS\DRIVERS\PROTOCOL\TCPIP\NEMM.DOS
+
+C:\LANMAN\RPL\BBLOCK\NETBEUI\ELNKII\DOSBB.CNF
+---------------------------------------------
+
+; DOS on 3Com Etherlink II
+RPL BBLOCK\RPLBOOT.SYS
+LDR BBLOCK\RPLSTART.COM ~
+DAT BBLOCK\NETBEUI\ELNKII\PROTOCOL.INI
+DRV BBLOCK\RPLDISK.SYS ~ 4 M
+EXE BBLOCK\RPLPRO1.COM ~ 2 ~
+EXE BBLOCK\RPLBIND2.EXE ~ ~
+EXE BBLOCK\PROTMAN.EXE ~ ~
+EXE BBLOCK\RPLBIND1.EXE ~ ~
+;DRV BBLOCK\IPXNDIS.DOS ~ ~ ~
+; Uncommented this line to enable tcp driver
+DRV BBLOCK\TCPDRV.DOS /I:C:\LANMAN.DOS ~ ~
+EXE BBLOCK\NETBEUI\NETBEUI.EXE ~ 10 ~
+DRV BBLOCK\NDIS\ELNKII.DOS ~ ~ ~
+DRV BBLOCK\PROTMAN.DOS /I:C:\LANMAN.DOS ~ M
+
+Now use Remoteboot Manager to edit the properties of a workstation as follows:
+
+1. Select the workstation and choose Properties from the remoteboot menu.
+
+2. Set the workstation's profile to the profile modified above.
+
+3. Fill in the IP address parameters for this workstation.
+
+4. Choose OK to save the changes in RPL.MAP.
+
+This workstation is now configured to load the TCP/IP and RFC NetBIOS drivers at
+boot time.
+
+Additional query words: 2.10 2.1 2.20 2.10a 2.2 rpl ripl tcp ip doc err
+
+======================================================================
+Keywords          : kbnetwork 
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

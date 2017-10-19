@@ -1,0 +1,68 @@
+DOCUMENT:Q258919  12-NOV-2001  [homegame]
+TITLE   :Description of the Pandora's Box Cheat Code
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Pandora's Box, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article describes the cheat code that is available in Microsoft Pandora's
+Box.
+
+You can use this cheat code to receive extra hints and wildcards, or to move to
+another level in the game.
+
+MORE INFORMATION
+================
+
+While you are playing Pandora's Box, press and hold down the ALT key, and then
+type "CHISLER" (without the quotation marks).
+
+The Pandora Cheat dialog box appears in the upper-left corner of of the screen.
+This dialog box contains the following spin boxes:
+
+ - Level
+
+ - WildCards
+
+ - Hints
+
+You can increase the value in each spin box to increase the number of available
+hints and wildcards, or to move to another level in the game. Click OK to apply
+the changes.
+
+NOTE: To move to another level in the game after you increase the value in the
+Level spin box, you must quit and then restart Pandora's Box.
+
+Additional query words: 1.00 msgame pb panbox enhancement codes
+
+======================================================================
+Keywords          : kbimu msgame 
+Technology        : _IKkbbogus kbGamesSearch kbPandoraSearch kbPandorasBox
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

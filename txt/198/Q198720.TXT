@@ -1,0 +1,67 @@
+DOCUMENT:Q198720  22-OCT-2000  [sms]
+TITLE   :SMSINST: Script Item Text Must be Defined for Every Language
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::1.0,2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms120 kbsmsInst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server Installer versions 1.0, 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When multiple languages are defined in Systems Management Server Installer, all
+custom text labels for script items may be blank even though they were defined
+within the script. This may happen if a script item with custom text is created
+in one language, and then another language is selected. The text that was
+defined for the script item may now be blank in the newly selected language.
+
+CAUSE
+=====
+
+If you have not clicked to select the Copy Default check box on the Languages
+tab in Installation Properties, SMS Installer does not populate the default,
+custom text values to the other languages selected, and these custom text values
+have to be entered in manually for all other languages.
+
+If you have clicked to select the Copy Default check box, all of the script item
+text, from the language in which they were created, are used in the script items
+for the other languages.
+
+MORE INFORMATION
+================
+
+To manually enter custom text values in the other languages, in the script
+editor, click the desired language in the Language box, open the script item,
+and then type in the text values. Do this for all script items that contain
+custom text.
+
+Additional query words: prodsms smsinst
+
+======================================================================
+Keywords          : kbsms200 kbsms120 kbsmsInst 
+Technology        : kbSMSSearch kbSMSI100 kbSMSI200
+Version           : :1.0,2.0
+Issue type        : kbprb
+Solution Type     : kbnofix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

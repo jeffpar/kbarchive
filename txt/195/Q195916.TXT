@@ -1,0 +1,62 @@
+DOCUMENT:Q195916  22-APR-1999  [exchange]
+TITLE   :XADM: Setting Network Connection Logging for Exchange Server
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.0,5.5
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.0, 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article states how to monitor Exchange Server Directory connections when
+you suspect heavy loads, security violations, or clients are not being connected
+or verified.
+
+MORE INFORMATION
+================
+
+By enabling logging in the Exchange Server Administration program, it is
+possible to determine which protocols and/or ports users of Exchange Server are
+connecting to the Directory with.
+
+To set this, perform the following steps:
+
+1. Start the Exchange Server Administrator program, click Configuration, click
+   Servers, click the <servername>, and then click Directory Service.
+
+2. Click on the Diagnostic Logging tab, and set the Logging level for MAPI
+   Interface to "Maximum".
+
+As clients connect to the directory, Events from Source: MSExchangeDS and
+Category: MAPI Interface will logged in the Windows NT Event Viewer Application
+log. Common events are 1170 and 1136. The User column of the Event Viewer will
+list the user that made the connection.
+
+======================================================================
+Keywords          :  
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : WinNT:5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,272 @@
+DOCUMENT:Q170356  10-JAN-2001  [vbwin]
+TITLE   :BUG: Cannot Reference Excel 8.0 Object Library from VB 4.0x
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0,4.0a,4.1,4.1a,4.2,4.2b,4.2c,4.3,4.3c,5.0,5.0a,5.0c,98; Win95:7.0,7.0a,7.0b;
+OPER/SYS:
+KEYWORDS:kberrmsg kbinterop kbAutomation kbExcel kbProject kbVBp400bug kbGrpDSVB kbExcel97
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Standard Edition for Windows, versions 4.0, 4.0a, on platform(s):
+    - the operating system: Microsoft Windows NT 
+    - the operating system: Microsoft Windows 95 
+ - Microsoft Visual Basic Professional Edition for Windows, versions 4.0, 4.0a, on platform(s):
+    - the operating system: Microsoft Windows NT 
+    - the operating system: Microsoft Windows 95 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 4.0, 4.0a, on platform(s):
+    - the operating system: Microsoft Windows NT 
+    - the operating system: Microsoft Windows 95 
+ - Microsoft Excel for Windows, versions 5.0, 5.0a, 5.0c 
+ - Microsoft Excel for Windows NT, version 5.0 
+ - Microsoft Excel for Windows 95, versions 7.0, 7.0a 
+ - Microsoft Excel 97 for Windows 
+ - Microsoft Office for Windows, versions 4.2, 4.2b, 4.2c, 4.3, 4.3c 
+ - Microsoft Office for Windows NT, version 4.2 
+ - Microsoft Office for Windows 95, versions 7.0, 7.0a, 7.0b 
+ - Microsoft Office 97 for Windows 
+ - Microsoft Project 98 for Windows 
+ - Microsoft Project for Windows 95, versions 4.1, 4.1a 
+ - Microsoft Project for Windows, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Microsoft Visual Basic 4.0x does not allow addition of the Microsoft Excel 8.0
+Object Library via Tools/References when the Microsoft Excel 5.0 Object Library
+is listed there.
+
+CAUSE
+=====
+
+When adding a new version of an object (or type) library to its Tools/Reference
+list, Microsoft Visual Basic 4.0x, in spite of the distinctly different version
+numbers of the old and new object libraries, insists, via an internal
+string-comparison routine, that the new library's Locale/Country ID (LCID) be
+identical to the old library's LCID. Because the Microsoft Excel 5.0 Object
+Library has an LCID of 9 (English) and the Microsoft Excel 8.0 Object Library
+has an LCID of 0 (Default Language), this test fails; Microsoft Visual Basic
+4.0x then displays the error:
+
+   "Object library's language setting incompatible with current project"
+
+and does not add the new library to the Tools/Reference list.
+
+RESOLUTION
+==========
+
+There are two workarounds: one affects all newly created projects; the other,
+the current project only.
+
+NOTE 1: The underscore character (_) below is used as a line-continuation
+character and should not be typed. There should be no spaces between the
+character preceding the underscore and the letter on the next line.
+
+NOTE 2: The references below presume that the directory containing Microsoft
+Office 97 for Windows is C:\OFFICE97 and that the pertinent Microsoft Excel 8.0
+Object Library file, EXCEL8.OLB, is located in the directory
+C:\OFFICE97\OFFICE.
+
+Method 1
+--------
+
+This approach modifies Microsoft Visual Basic 4.0x's default project file so that
+the Microsoft Excel 8.0 Object Library will be available to all newly-created
+projects.
+
+1. In a text editor such as NOTEPAD.EXE, open the AUTO32LD.VBP project file,
+   located in the Microsoft Visual Basic 4.0x directory. The file's contents
+   will resemble the following:
+
+      Object={F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.0#0; comdlg32.ocx
+      Object={BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.0#0; tabctl32.ocx
+      Object={3B7C8863-D78F-101B-B9B5-04021C009402}#1.0#0; richtx32.ocx
+      Object={6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.0#0; comctl32.ocx
+      Object={FAEEE763-117E-101B-8933-08002B2F4F5A}#1.0#0; dblist32.ocx
+      Object={00028C01-0000-0000-0000-000000000046}#1.0#0; DBGRID32.OCX
+      Object={F6125AB1-8AB1-11CE-A77F-08002B2F4E98}#1.0#0; msrdc32.ocx
+      Reference=*\G{BEF6E001-A874-101A-8BBA-00AA00300CAB}#2.0#0#C:\WINDOWS\_
+         SYSTEM32\OLEPRO32.DLL#Standard OLE Types
+      Reference=*\G{EE008642-64A8-11CE-920F-08002B369A33}#1.0#0#C:\WINDOWS\_
+         SYSTEM32\MSRDO32.dll#Microsoft Remote Data Object 1.0
+      Name="Project1"
+
+2. Add the line below:
+
+      Reference=*\G{00020813-0000-0000-C000-000000000046}#1.2#0#C:\OFFICE97\_
+         OFFICE\EXCEL8.OLB#Microsoft Excel 8.0 Object Library
+
+   so that the file appears as follows:
+
+      Object={F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.0#0; comdlg32.ocx
+      Object={BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.0#0; tabctl32.ocx
+      Object={3B7C8863-D78F-101B-B9B5-04021C009402}#1.0#0; richtx32.ocx
+      Object={6B7E6392-850A-101B-AFC0-4210102A8DA7}#1.0#0; comctl32.ocx
+      Object={FAEEE763-117E-101B-8933-08002B2F4F5A}#1.0#0; dblist32.ocx
+      Object={00028C01-0000-0000-0000-000000000046}#1.0#0; DBGRID32.OCX
+      Object={F6125AB1-8AB1-11CE-A77F-08002B2F4E98}#1.0#0; msrdc32.ocx
+      Reference=*\G{BEF6E001-A874-101A-8BBA-00AA00300CAB}#2.0#0#C:\WINDOWS\_
+         SYSTEM32\OLEPRO32.DLL#Standard OLE Types
+      Reference=*\G{EE008642-64A8-11CE-920F-08002B369A33}#1.0#0#C:\WINDOWS\_
+         SYSTEM32\MSRDO32.dll#Microsoft Remote Data Object 1.0
+      Reference=*\G{00020813-0000-0000-C000-000000000046}#1.2#0#C:\OFFICE97\_
+         OFFICE\EXCEL8.OLB#Microsoft Excel 8.0 Object Library
+      Name="Project1"
+
+3. Save the AUTO32LD.VBP file and close the text editor.
+
+4. Start Microsoft Visual Basic 4.0x and select Tools, then References.
+
+5. The Microsoft Excel 5.0 Object Library no longer appears in the list.
+   Instead, the Microsoft Excel 8.0 Object Library is available and checked for
+   use.
+
+Method 2
+--------
+
+This technique modifies a given project's VBP file to include the Microsoft Excel
+8.0 Object Library just for that project.
+
+1. Save and close the project with the Microsoft Excel 5.0 Object Library
+   reference.
+
+2. In a text editor such as NOTEPAD.EXE, open the project's VBP file and change
+   the reference to Microsoft Excel from:
+
+      Reference=*\G{00020813-0000-0000-C000-000000000046}#1.0#9#C:\OFFICE97\_
+         OFFICE\XL5EN32.OLB#Microsoft Excel 5.0 Object Library
+
+   to:
+
+      Reference=*\G{00020813-0000-0000-C000-000000000046}#1.2#0#C:\OFFICE97\_
+         OFFICE\EXCEL8.OLB#Microsoft Excel 8.0 Object Library
+
+3. Save the project's VBP file and close the text editor.
+
+4. Start Microsoft Visual Basic 4.0x, and then load and save the project.
+
+5. Select Tools, then References. The Microsoft Excel 5.0 Object Library no
+   longer appears in the list. Instead, the Microsoft Excel 8.0 Object Library
+   is available and checked for use with this project. Newly- created projects
+   will revert to the Microsoft Excel 5.0 Object Library.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the versions of Microsoft Visual
+Basic listed at the beginning of this article.
+
+MORE INFORMATION
+================
+
+Microsoft Visual Basic 4.0x requires LCID consistency for a given object
+library's Globally Unique Identifier (GUID), even if the incoming object
+library's version number is different from the existing object library's version
+number. Both the Microsoft Excel 5.0 Object Library and the Microsoft Excel 8.0
+Object Library share the same GUID, so this arbitrary LCID rule is enforced.
+
+The behavior is particularly noticeable after installing Microsoft Office 97 to a
+machine containing both Microsoft Visual Basic 4.0x and one of the
+aforementioned earlier versions of Microsoft Office for Windows; the Microsoft
+Excel 8.0 Object Library is conspicuously absent from Microsoft Visual Basic
+4.0x's Tools/Reference list, yet all of the other Microsoft Office 97 Object
+Libraries are shown (namely, those for Microsoft Office 8.0, Microsoft Access
+8.0, Microsoft Binder 8.0, Microsoft Graph 8.0, Microsoft PowerPoint 8.0, and
+Microsoft Word 8.0).
+
+Steps to Reproduce Problem
+--------------------------
+
+NOTE: The following presumes that Microsoft Visual Basic 4.0x, Microsoft Excel
+for Windows (5.0x or 7.0x), and Microsoft Excel 97 for Windows 8.0 have been
+installed.
+
+1. Start Microsoft Visual Basic 4.0x.
+
+2. For the new, default project, select Tools, then References, and choose the
+   Microsoft Excel 5.0 Object Library. Click OK.
+
+3. On a Microsoft Visual Basic 4.0x form, create a CommandButton and type the
+   code below into its click event:
+
+         Private Sub cmdMakeMyChart_Click()
+            Dim xlchart As Chart
+            Set xl = CreateObject("Excel.Application")
+            xl.Visible = True
+            xl.Workbooks.Add
+            xl.Range("a1").Value = 1
+            xl.Range("a2").Value = 2
+            xl.Range("a3").Value = 3
+            xl.Range("a4").Formula = "=sum(a1:a3)"
+            xl.Range("A1").CurrentRegion.Select
+            Set xlchart = xl.Charts.Add()
+            xlchart.Type = xl3DColumn
+            'xlchart.ChartType = xlPyramidCol
+         End Sub
+
+4. Run the code, click the CommandButton, and observe the instantiation of
+   Microsoft Excel for Windows (5.0x or 7.0x) as an OLE automation server. A
+   three-dimensional column chart of four values is created.
+
+5. Close Microsoft Excel without saving the resultant workbook.
+
+6. Now, move the apostrophe in the above code so that:
+
+         xlchart.Type = xl3DColumn
+         'xlchart.ChartType = xlPyramidCol
+
+   becomes:
+
+         'xlchart.Type = xl3DColumn
+         xlchart.ChartType = xlPyramidCol
+
+Because the pyramid chart is unique to Microsoft Excel 97 for Windows, a
+reference to the Microsoft Excel 8.0 Object Library is needed.
+
+1. Select Tools, then References, and note that even if you had done a complete
+   install of Microsoft Office 97 for Windows (or Microsoft Excel 97 for
+   Windows) subsequent to installing Microsoft Excel for Windows (5.0x or 7.0x)
+   completely, the Microsoft Excel 8.0 Object Library is not listed (although
+   the object libraries for Microsoft Office 8.0, Microsoft Access 8.0,
+   Microsoft Binder 8.0, Microsoft Graph 8.0, Microsoft PowerPoint 8.0, and
+   Microsoft Word 8.0 are listed).
+
+2. Click Browse and navigate to Microsoft Office 97's OFFICE directory
+   (typically C:\OFFICE97\OFFICE).
+
+3. Double-click EXCEL8.OLB and note the error:
+
+   "Object library's language setting incompatible with current project"
+
+4. Click OK. Deselecting "Microsoft Excel 5.0 Object Library" and trying to
+   deselect "Visual Basic for Applications" does not allow EXCEL8.OLB to be
+   added. The latter attempt produces the error:
+
+   "Can't remove control or reference: in use"
+
+Additional query words: OLE object type library automation server registry GUID LCID
+
+======================================================================
+Keywords          : kberrmsg kbinterop kbAutomation kbExcel kbProject kbVBp400bug kbGrpDSVB kbExcel97 
+Technology        : kbVBSearch kbAudDeveloper
+Version           : WINDOWS:4.0,4.0a,4.1,4.1a,4.2,4.2b,4.2c,4.3,4.3c,5.0,5.0a,5.0c,98; Win95:7.0,7.0a,7.0b; winnt:5.0; :4.2,8.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

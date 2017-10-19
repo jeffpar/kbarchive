@@ -1,0 +1,162 @@
+DOCUMENT:Q302994  27-JUN-2001  [msnetwork]
+TITLE   :E-mail Folder(s) Appear At www.hotmail.com But Not in MSN Explor
+PRODUCT :The Microsoft Network
+PROD/VER::6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 6.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You can view your list of e-mail folders when using Hotmail at
+http://www.hotmail.com, but one or more of these folders do not show up when you
+gain access to the same account using MSN Explorer.
+
+CAUSE
+=====
+
+This can be caused by a temporary issue with Hotmail, or by a corrupt .dbx file
+on your computer.
+
+RESOLUTION
+==========
+
+Sign out and then sign back in to MSN Explorer. This causes MSN Explorer to
+resynchronize folder settings with those in Hotmail.
+
+If this does not resolve the issue and the issue persists, you may need to rename
+or delete a file named folders.dbx from your computer and sign out and sign back
+in to MSN Explorer.
+
+Warning: Renaming the folders.dbx file can result in losing archived e-mail
+stored locally on your computer. We recommend that you move to a server-side
+folder any e-mail messages stored in the Archived e-mail folder (or other
+folders on your hard disk drive) that you want to save before renaming the
+folders.dbx file.
+
+To move archived e-mail
+
+1. Sign in to MSN Explorer.
+
+2. On the horizontal navigation bar, click the E-mail icon.
+
+3. If you do not see a list of folders, click the Show Folders button.
+
+4. In the list of folders, under on My Computer, click Archived Mail.
+   A list of messages in the Archived Mail folder appears.
+
+5. Select each message that you want to save.
+   If all messages in the folder do not fit on one screen, you may need to repeat
+   this process to select all messages.
+
+6. Click the Put in Folder button and, from the drop-down list, click a folder
+   under on MSN (such as Saved Messages).
+   The selected messages are now moved to the folder that you chose.
+
+7. If the Archived Mail folder still contains messages that you want to move
+   (for instance, if the messages did not fit on one screen), repeat the above
+   steps until all messages have been moved.
+
+8. You can repeat the steps above to save any messages that are in other folders
+   under on My Computer by clicking the desired folder instead of Archived Mail
+   in step 3.
+
+Now you can rename the folders.dbx file.
+
+Warning: Before doing so, make sure that you have moved all messages that you
+want to save to a server-side folder (on MSN) to prevent losing them. Otherwise,
+the messages are lost after you rename the folders.dbx file.
+
+1. Sign out of MSN Explorer and close the program.
+
+2. Right-click the Start button and click Explore.
+
+3. On the View menu, click Folder Options.
+   The Folder Options dialog box appears.
+
+4. On the View tab, under Hidden files, select the Show all files check box.
+
+5. Click the Apply button, and then click OK.
+
+6. Close Windows Explorer by clicking the "X" in the upper-right corner.
+
+7. In Windows 98 and earlier, click the Start button, point to Find, and then
+   click Files or Folders. In Windows Me and 2000, click the Start button, point
+   to Search, and then click Files or Folders.
+   The "Find All Files" dialog box appears.
+
+8. In the Named box, type hotmail.ini.
+
+9. In the Containing text box, type your e-mail address (such as
+   username@msn.com).
+
+10. In the Look in box, make sure the hard drive is selected (usually C:).
+
+11. Click the Find now button.
+
+12. After the search is completed, select the file that was found (if more than
+   one file is found, select the one with the most recent modified date).
+
+13. On the File menu, click Open Containing Folder.
+
+14. Right-click the file named folders.dbx, and then click Rename.
+
+15. Type folders.old, and press the ENTER key.
+
+16. Close the folder by clicking the "X" in the upper-right corner.
+
+17. Start MSN Explorer and sign in.
+
+18. On the horizontal navigation bar, click the E-mail icon.
+   MSN Explorer now resynchronizes its folder settings with the Hotmail
+   settings.
+
+19. Click the Show Folders button.
+   You should now see all folders that are visible at the hotmail.com Web site.
+
+20. Right-click the Start button and click Explore.
+
+21. On the View menu, click Folder Options.
+   The Folder Options dialog box appears.
+
+22. On the View tab, under Hidden files, select the Do not show hidden or system
+   files check box.
+
+23. Click the Apply button, and then OK.
+
+24. Close Windows Explorer by clicking the "X" in the upper-right corner.
+
+MORE INFORMATION
+================
+
+
+Additional query words: kbimu; MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN610
+Version           : :6.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

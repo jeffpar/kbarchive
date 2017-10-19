@@ -1,0 +1,137 @@
+DOCUMENT:Q145891  05-FEB-2000  [foxpro]
+TITLE   :PRB: Combo Box Moves Record Pointer When No Selection Was Made
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0,3.0b
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 3.0, 3.0b 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a form contains a combo box that has its RowSource set to the same table
+that other controls on the form are using as their ControlSource, the record
+pointer may move to a different record when the user activates the combo box.
+There are two different scenarios where this unwanted moving of the record
+pointer can occur. This article outlines both scenarios.
+
+WORKAROUND
+==========
+
+Use an SQL statement for the RowSource of the combo box.
+
+STATUS
+======
+
+Microsoft is researching this behavior and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+If you are not familiar with the Form Designer or with the different form
+controls, please see Chapters 9 and 11 in the Developer's Guide.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a new form and add the Customer table (found in the Samples\Data
+   directory) to the form's Data Environment.
+
+2. Drag the cust_id and company fields from the Customer table in the Data
+   Environment onto the form.
+
+3. Add a combo box (Combo1) to the form and set these properties:
+
+      RowSourceType = 6 - Fields
+      RowSource = Customer.Cust_id
+
+4. Add the following code to the following indicated Combo1 events:
+
+   Init event:
+
+         This.Value = Cust_id
+
+   GotFocus event:
+
+         SET ORDER TO Cust_id
+
+   InteractiveChage event:
+
+         ThisForm.Combo2.Value = This.Value
+
+5. Add a second combo box (Combo2) to the form and set these properties:
+
+      RowSourceType = 6 - Fields
+      RowSource = Customer.Company,Cust_id
+      BoundColumn = 2
+      ColumnCount = 2
+      ColumnWidths = 200,0
+
+6. Add the following code to the following indicated Combo2 events:
+
+   Init Event:
+
+         This.Value = Cust_id
+
+   GotFocus Event:
+
+         SET ORDER TO Company
+
+   InteractiveChage Event:
+
+         ThisForm.Combo1.Value = This.Value
+
+7. Save and run the form.
+
+8. After the form is up and running, click Debug on the Tools Menu. In the Debug
+   window, enter RECNO().
+
+Scenario Number One
+-------------------
+
+Activate the drop down list in Combo1, and select BERGS. Look in the Debug window
+to see what record number you are on. Then click in the text area of Combo2 to
+place your mouse pointer in it. Look in the Debug window, and you will see that
+the record number has changed. Now place your mouse pointer back in Combo1, and
+you will see in the Debug window that the record number has moved back to what
+it was when you first made the selection in Combo1.
+
+Scenario Number Two
+-------------------
+
+Activate the drop down list in Combo1, and move your mouse pointer down the list
+until the last item in the visible list is highlighted. Without making a
+selection, click in one of the text boxes on the form. Look in the Debug Window,
+and you will see that the record pointer has moved. In both scenarios, if you
+were to activate one of the text boxes, you would see the value of the text box
+change to match what is stored in the record.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300 kbVFP300b
+Version           : WINDOWS:3.0,3.0b
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

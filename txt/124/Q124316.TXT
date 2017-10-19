@@ -1,0 +1,70 @@
+DOCUMENT:Q124316  27-JUL-2001  [odbc]
+TITLE   :BUG: Use of Vertical Bar (|) Generates Syntax Error
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbBug kbISS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 2.0 
+-------------------------------------------------------------------------------
+
+BUG# QJET: 11 (2.00.2317)
+
+SYMPTOMS
+========
+
+When you execute a SELECT, INSERT, UPDATE or DELETE queries with a vertical bar
+(|) contained in a character string, you receive an error that there is a syntax
+error in string in query expression.
+
+For example, consider table test created like:
+
+   CREATE TABLE test (t text(20))
+
+Then executing any of the following,
+
+   INSERT INTO test VALUES('|')
+
+   DELETE FROM test WHERE t='|'
+
+   UPDATE test SET t='|'
+
+will return an error, with
+
+   SQLSTATE=S1010 and szErrorMsg="[Microsoft][ODBC Access 2.0 Driver]Syntax
+   error in string in query expression"
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in ODBC Access Driver version
+2.00.2317. We are researching this problem and will post new information here in
+the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 2.00.2317 ODBC MFC MSVC VISUAL C++ Windows NT
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC200
+Version           : WINDOWS:2.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

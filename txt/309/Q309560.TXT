@@ -1,0 +1,71 @@
+DOCUMENT:Q309560  08-OCT-2001  [msnetwork]
+TITLE   :Unable To Send Or Receive E-mail In Windows XP
+PRODUCT :The Microsoft Network
+PROD/VER::6.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 6.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You cannot send or receive e-mail after installing Windows XP.
+
+CAUSE
+=====
+
+The firewall is active in the connection.
+
+RESOLUTION
+==========
+
+Disable the firewall in the connection file or "connectoid".
+
+To disable the firewall in the connection file or "connectoid"
+
+1. Click Start.
+
+2. Point to Connect to.
+
+3. Right click the connection that you use to connect.
+
+4. Click Properties.
+
+5. Click the Advanced tab.
+
+6. Clear the Protect my computer and Network by limiting or preventing access to
+   this computer from the Internet check box.
+
+7. Click OK.
+   This will deactivate the firewall on the computer and allow you to send and
+   receive e-mail.
+
+Additional query words: kbimu; MSN Explorer
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN610
+Version           : :6.1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

@@ -1,0 +1,255 @@
+DOCUMENT:Q158839  04-AUG-1999  [foxpro]
+TITLE   :INFO: Updated Readme.txt file for VFP FoxIsapi Sample
+PRODUCT :Microsoft FoxPro
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbinterop kbnetwork kbsetup kbAutomation kbvfp500
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The FoxIsapi sample demonstrates how you can take Visual FoxPro forms and deploy
+them over the Internet or an intranet.
+
+NOTE: This sample code is provided to show the capabilities and flexibility of
+Visual FoxPro as an OLE Automation Server. Any modification made to this code
+will not be supported.
+
+MORE INFORMATION
+================
+
+In the FoxIsapi sample the main class library is named Isapi.vcx. In this
+library the Employee class inherits the ability to generate HTML code from the
+base class ISFORM. The ability to generate the HTML code gives you a way to
+display data or forms in a Web page on the Internet. It also gives you a way to
+deploy an easy-to-maintain application on four different platforms:
+
+1. Use the following code to run the application from within Visual FoxPro:
+
+   
+
+         SET CLASSLIB TO isapi
+         ox = CreateObject("employee")
+         ox.show
+
+2. Use the following code to run the application as an independent executable:
+
+   
+
+         BUILD EXE foxis FROM foxis
+
+   This creates a Foxis.exe file, which is a Windows program that can be added to
+   the Start menu, started from the Explorer, and so forth.
+
+3. Use the following code to run the application as an OLE Server from any OLE
+   client (Excel, Word, Visual Basic, Visual FoxPro 3.0, and so forth):
+
+   
+
+         ox = CreateObject("foxis.employee")
+         ox.show
+
+4. Use the following code to run the application an Internet Browser, which
+   could be on another machine, such as a 286 running MS-DOS, a UNIX machine, a
+   Macintosh, or a Personal Digital Assistant.
+
+Requirements
+------------
+
+This sample is supported only on Windows NT 3.51 Server with Service Pack 4 or
+Windows NT 4.0 Server release 1.0 or higher running Microsoft's Internet
+Information Server (IIS). IIS is included with Windows NT 4.0 Server, and may be
+added to Windows NT 3.51 Server. During the fourth quarter of 1996, and possibly
+longer, you can download, free, Microsoft's IIS version 1.0 at
+
+   http://www.microsoft.com/windows/common/IISArchive.htm.
+
+The Windows NT Server and IIS should be configured and working properly before
+running this sample.
+
+If you are using a machine that's running Windows NT 4.0, you have to configure
+the DCOMCNFG utility to grant rights to the Web service to instantiate an OLE
+object. For example, if your machine name is Mymach, you have to add
+\Mymach\Iusr_mymach as a user with full rights for "Default Access Permissions,"
+"Default Launch Permissions."
+
+NOTE: If you are using Windows NT 4.0 you must follow the steps in the following
+article in the Microsoft Knowledge Base before proceeding to the next step:
+
+   Q158838 How To Setup the FoxIsapi Sample on Windows NT 4.0
+
+Setup of FoxIsapi
+-----------------
+
+The steps below assume that you have not installed Visual FoxPro on your Windows
+NT IIS server. These steps get the OLE server working on a development machine
+and then use the Setup Wizard to distribute the files to your server.
+
+To get things started, you need to follow all of the steps below:
+
+1. Copy Testdata.dbc, Testdata.dct, and Testdata,dcx and all of the associated
+   files (Customer.*, Employee.*, Orders.*, Orditems.*, and Products.*) from the
+   Vfp\Samples\Data directory into the Vfp\Samples\Servers\Foxisapi directory.
+
+2. From the \Vfp\Samples\Servers\Foxisapi folder, open the Foxis project and
+   change the user-defined property "cScriptDir" of the EMPLOYEE form in the
+   class library, Isapi.vcx, to point to the
+   <driveletter>:\Vfp\Samples\Servers\Foxisapi directory.
+
+   This is a temporary setting for testing purposes. Later on, you will change it
+   to the Inetsrv\Scripts folder when you have the final build.
+
+3. Build the .exe file with the name Foxis. Once the initial build is complete,
+   change the server option to be "Multi Use" by selecting from the menu
+   "Project/Project Info." Click the Servers tab and change Instancing to Multi
+   Use. Once this is done, build the .exe file again.
+
+4. Test if the OLE Automation Server works by issuing the following commands
+   from the Command window:
+
+   
+
+         ox= CreateObject("foxis.employee")
+         ox.show           && see if it works as a custom server
+         ?ox.startup()     && see if it returns HTML
+
+   It is much easier to debug OLE Automation servers from an OLE client (like
+   Visual FoxPro) before instantiating it in Foxisapi.
+
+   If the Server worked, you are ready to make the distribution build.
+
+5. Edit the EMPLOYEE form class in Isapi.vcx again and change the cScriptDir
+   property to be the Inetsrv\Scripts directory on the Windows NT server. Be
+   sure to include the drive letter of the actual physical hard drive, not a
+   drive mapping from the workstation.
+
+   (If your Internet Server is running on Windows NT 4.0, the path is to
+   <drive>:\Windows\System32\Inetsrv\Scripts, or wherever the \Scripts
+   folder is located.)
+
+6. Create a folder under FoxIsapi called "Final." Rebuild the project one last
+   time, this time pointing the Foxis.exe to the Final folder. You should see
+   three files in this folder:
+
+   Foxis.exe
+   Foxis.tlb
+   Foxis.vbr
+
+7. From the FoxIsapi folder copy the following files into the Final folder:
+
+   Testdata.dbc
+   Testdata.dct
+   Testdata.dcx
+   Customer.dbf
+   Customer.cdx
+   Employee.dbf
+   Employee.fpt
+   Employee.cdx
+   Orders.dbf
+   Orders.cdx
+   Orditems.dbf
+   Orditems.cdx
+   Products.dbf
+   Products.cdx
+   Html.dbf
+   Html.cdx
+   Html.fpt
+   Foxisapi.dll
+   *.gif - (These are .gif files containing photos for each employee.)
+
+8. Run the Setup Wizard and point it to the Final folder. Make sure you check
+   the OLE Server check box in Setup Wizard step 2 and select the Foxis.exe in
+   the Final folder. All files should be installed to the Appdir in Setup Wizard
+   step 6.
+
+9. On the Windows NT Server, you need an HTML page that contains a reference to
+   a URL. For example, take the following code and put it in the
+   Wwwroot\default.htm file:
+
+         <A HREF="/scripts/foxisapi.dll/FoxIS.employee.startup">
+         <I>VFP OLE CUSTOM SERVER DEMO PAGE</I> </A>
+
+10. In the same HTML file cut and paste the following HTML code:
+
+         <FORM ACTION= "/scripts/foxisapi.dll/foxis.employee.cmd">
+         <INPUT NAME="Cmd" value = "Reset">
+         <input type="submit" value="Dos Command">
+         </FORM>
+
+   This code creates a button on the page that tells the server to execute any
+   MS-DOS command, such as DIR, and it returns a page with the results of the
+   command. If the command is "Reset" (default), then it makes the OLE
+   Automation server release the first instance of the server as well as its
+   own, thus releasing the OLE Automation server completely.
+
+   Also add the following HTML code:
+
+         <FORM ACTION = "/scripts/foxisapi.dll/foxis.employee.cmd?FOXCMD">
+         <INPUT NAME="Cmd"><input type="submit"
+         value="Fox Expression"> For example try: "today is "+ cdow(date()) or
+         45 * 3 or SYS(2004)
+         </FORM>
+
+   This code creates a button on the page that tells the server to execute any
+   FoxPro command and return a page with the results of the command.
+
+   WARNING: A Windows NT Service has no Desktop, so results of any commands or
+   functions that produce user interface objects (UI) such as a MessageBox do
+   not appear on the server machine and the commands hang the server machine if
+   you attempt to execute them. This means you should debug your server
+   applications before deploying them. The sample shows that if an error
+   occurs, you can generate an HTML page to return to the client's browser.
+
+11. Now run the setup program created in step 8 on the Windows NT Server.
+   Install all files to the Inetsvr\Scripts folder. Once setup has completed
+   move the .gif files into the Wwwroot folder.
+
+12. You are now ready to run FoxIS.employee.startup from a browser. From the
+   server machine connect to your NT server's machine name. Your default.htm
+   page should display and if you click the URL jump (hypertext), it should
+   return a page that shows you the data from the Employee table plus a
+   grid-like HTML table on the server.
+
+REFERENCES
+==========
+
+For information on debugging Foxisapi.dll and for comments on the design of that
+program, see the Online Documentation for Visual FoxPro 5.0 by clicking
+Documentation on the Visual FoxPro Help menu. The Visual FoxPro Online
+Documentation form normally opens with the Find panel at the left. If not, click
+Find on the View menu. In the Find combo box enter the string "ISAIP OLE Server
+Sample" and press Enter.
+
+Scroll down to the subject "Debugging the Server." (This is about half way down
+the scrollbar.) Here you will see a collection of information about the server's
+design, and tracing the server in Microsoft Visual C++.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbinterop kbnetwork kbsetup kbAutomation kbvfp500 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,73 @@
+DOCUMENT:Q105260  22-NOV-1999  [msdos]
+TITLE   :Err Msg After Uncompressing: You Cannot Access Any...
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.2,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.2, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This information applies to both Microsoft DoubleSpace and Microsoft DriveSpace.
+For MS-DOS 6.22, use DRVSPACE in place of DBLSPACE for commands and filenames.
+
+SYMPTOMS
+========
+
+After removing MS-DOS DoubleSpace, you may receive the following error message:
+
+   You cannot access any DoubleSpace drives because the DoubleSpace driver,
+   DBLSPACE.BIN, is not installed.
+
+CAUSE
+=====
+
+This error is generated if DoubleSpace fails to remove any
+DEVICE=C:\DOS\DBLSPACE.SYS commands from your CONFIG.SYS file. This situation
+typically occurs if you have followed the sequence below.
+
+1. Installed MS-DOS 6.0.
+
+2. Installed DoubleSpace.
+
+3. Installed MS-DOS 6.2.
+
+4. Uncompressed your DoubleSpace drives.
+
+5. Removed MS-DOS 6.2.
+
+RESOLUTION
+==========
+
+To work around this situation, edit your CONFIG.SYS file and remove all
+DEVICE=C:\DOS\DBLSPACE.SYS commands.
+
+Additional query words: 6.20 uninstalling
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS622 kbMSDOS620
+Version           : MS-DOS:6.2,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

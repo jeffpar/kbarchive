@@ -1,0 +1,151 @@
+DOCUMENT:Q249962  11-JAN-2001  [vbwin]
+TITLE   :INFO: Differences in Padding UDTs Between VB 5.0 and VB 6.0
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:5.0,6.0
+OPER/SYS:
+KEYWORDS:kbinterop kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, versions 5.0, 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The amount of memory allocated for a UDT in Visual Basic can be different in
+Visual Basic 6.0 and Visual Basic 5.0 depending on the data types used in the
+UDT and their order.
+
+MORE INFORMATION
+================
+
+Both Visual Basic 5.0 and Visual Basic 6.0 use an alignment factor of 4. This
+means that every element of a UDT must start on a byte which is a multiple of
+the size of the element itself or a multiple of the alignment factor, whichever
+is less. For example, an element of type Integer must start on a byte address
+that is a multiple of 2, while an element of type Double must start on a byte
+address that is a multiple of 4.
+
+In addition, some compilers add padding bytes at the end of the UDT to make the
+size of the UDT a multiple of the alignment factor or a multiple of the largest
+data size used in the structure, whichever is less. For example, a UDT in which
+the largest data type is an Integer should have the total size of the UDT a
+multiple of 2 while an UDT in which the largest data type is a Double should
+have a size multiple of 4.
+
+The difference between Visual Basic 5.0 and Visual Basic 6.0 is that the Visual
+Basic 5.0 compiler only adds the required padding if you use an array of UDTs
+while the Visual Basic 6.0 compiler (and the C compiler) always do it regardless
+of whether or not you are using an array of structures. The Visual Basic 6.0
+approach is consistent with the C approach.
+
+Programmers who use only Visual Basic, or who don't pass UDTs to functions
+written in other languages don't have to take this into consideration. However,
+programmers passing UDTs to functions written in other languages should
+understand this difference and evaluate how this can affect their applications.
+
+The following sample project demonstrates this difference:
+
+1. Create a new Standard EXE project. Form1 is created by default
+
+2. In the Project menu, select Add Module. Module1 will be created.
+
+3. In Module1, add the following code:
+
+   Option Explicit
+   Type Type1
+   	m as Long
+   	i as Integer
+   End Type
+
+   Type Type2
+   	m as Long
+   	t1 as Type1
+   	i as Integer
+   End Type
+
+   Type Type3
+   	t1(0) as Type1
+   End Type
+
+4. On Form1, add a CommandButton.
+
+5. On the Command1_Click event, add the following code:
+
+   Dim t1 as Type1
+   Dim t2 as Type2
+   Dim t3 as Type3
+
+   MsgBox "Size of Type1 is: " & LenB(t1) 
+   MsgBox "Size of Type2 is: " & LenB(t2) 
+   MsgBox "Size of Type3 is: " & LenB(t3) 
+
+Run the project to see the size of each structure. You should see the following
+results:
+
++-------------------+
+| Type  | VB5 | VB6 | 
++-------------------+
+| Type1 | 6   | 8   | 
++-------------------+
+| Type2 | 12  | 16  | 
++-------------------+
+| Type3 | 8   | 8   | 
++-------------------+
+
+Potential problems:
+
+The problem arises in Visual Basic 5.0 when you pass a structure of Type2 to a
+function written in C because the C compiler assumes Type1 as being of size 8
+while Visual Basic 5.0 assumes size 6. The problem in this case is with the 3rd
+member of the structure (element i). In Visual Basic this member starts at the
+11th byte of the structure while the C compiler assumes it to start at the 13th
+byte.
+
+Workaround:
+
+One possible workaround is to add filler elements at the end of the structure to
+make the size in Visual Basic match the size in C. In the preceeding case you
+could define the UDTs as follows:
+
+   Type Type1
+   	m as Long
+   	i as Integer
+   	filler as Integer ' added to match UDT's size
+   End Type
+
+    Type Type2
+   	m as Long
+   	t1 as Type1
+   	i as Integer
+   	filler as Integer ' added to match UDT's size
+   End Type
+
+Additional query words: UDType
+
+======================================================================
+Keywords          : kbinterop kbVBp kbVBp500 kbVBp600 kbGrpDSVB kbDSupport 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB500Search kbVB600Search kbVBA500 kbVBA600 kbVB500 kbVB600
+Version           : WINDOWS:5.0,6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

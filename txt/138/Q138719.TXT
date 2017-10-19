@@ -1,0 +1,74 @@
+DOCUMENT:Q138719  17-DEC-2000  [win95x]
+TITLE   :Win95 Error Message: Error: 0003 Setting the Registry File
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:msnets win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Setmdir command, you may receive the the following error
+message:
+
+   Error: 0003 Setting the Registry File.
+   An error occurred booting this server based workstation.
+   You will need to contact the system administrator for help.
+
+CAUSE
+=====
+
+The Setmdir command is not correctly reading the mapping line after the
+sysdatpath line in the Machines.ini file.
+
+RESOLUTION
+==========
+
+A normal Machines.ini entry would look something like:
+
+   [000000000000]
+   sysdatpath=h:\user1
+   h=\\server\share\dir1
+
+Reverse the order of the lines in the Machines.ini file, so that the entry reads
+as follows:
+
+   [000000000000]
+   h=\\server\share\dir1
+   sysdatpath=h:\user1
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows 95. We are researching
+this problem and will post new information here in the Microsoft Knowledge Base
+as it becomes available.
+
+======================================================================
+Keywords          : msnets win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

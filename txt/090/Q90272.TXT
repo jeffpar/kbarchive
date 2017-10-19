@@ -1,0 +1,55 @@
+DOCUMENT:Q90272  17-DEC-2000  [win3x]
+TITLE   :Print Manager Error Indications in Windows for Workgroups
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In Windows for Workgroups, Print Manager notifies the user of printing errors
+differently than in earlier versions of Windows.
+
+MORE INFORMATION
+================
+
+Most errors, such as "printer out of paper," no longer are displayed in a dialog
+box. This is so print spooling doesn't halt. Instead of a dialog box, the print
+queue is marked as being in an "error state." A descriptive error message
+displays in the Print Manager status bar. When the error is corrected, the print
+queue can be restarted by choosing Resume Printing Document from the Document
+menu.
+
+The options for error notification in the Background Printing dialog box refer to
+driver specific situations such as a plotter requiring a pen change. These
+messages are displayed as configured in the dialog box.
+
+Additional query words: 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310 kbWFW311
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

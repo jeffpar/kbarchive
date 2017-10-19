@@ -1,0 +1,72 @@
+DOCUMENT:Q150309  13-JUN-2001  [homemm]
+TITLE   :Bookshelf 96-97 Installed Before Word Will Not Integrate
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:3.x,6.x
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 1996-97 for Windows 
+ - Microsoft Word for Windows, versions 6.0, 6.0a, 6.0c 
+ - the operating system: Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On a computer using Windows 3.x, if Bookshelf 96-97 is installed before
+Microsoft Word 6.0, the Word Integration feature is not available.
+
+NOTE: The only Word Integration feature is a Word shortcut menu for "Define."
+This is accessed in Word by clicking on a word with your right mouse button.
+
+Reinstalling Bookshelf does not add the integration.
+
+CAUSE
+=====
+
+This is by design in the 16-bit version of Bookshelf. The Word
+Integration"option is added in a Typical installation, whether you have Word or
+not.
+
+Reinstalling Bookshelf will not add the integration since the option has already
+been added.
+
+RESOLUTION
+==========
+
+1. Run Bookshelf Setup and use the Add/Remove option to remove "Word
+   Integration."
+
+2. Run Bookshelf Setup again and use the Add/Remove option to add "Word
+   Integration." This time Setup will find Word 6.0 and correctly add the
+   integration feature.
+
+For information about how to run Setup, please see the CD-ROM jewel-case insert
+(liner notes).
+
+Additional query words: 1995 '96 96 multi media multimedia multi-media mmtitles kbmm set-up set up
+
+======================================================================
+Keywords          :  
+Technology        : kbWordSearch kbOSWinSearch kbHomeMMsearch kbZNotKeyword6 kbZNotKeyword2 kbBookshelfSearch kbWord600 kbWord600a kbWord600c kbBookShelf1996 kbBookShelf1997 kbOSWin310 kbOSWin311 kbOSWin300 kbOSWin300a
+Version           : WINDOWS:3.x,6.x
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

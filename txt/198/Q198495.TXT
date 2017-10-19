@@ -1,0 +1,53 @@
+DOCUMENT:Q198495  22-JUN-2001  [exchange]
+TITLE   :XWEB: "Failed To Open This Message" Error After Applying SP1
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:5.5SP1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 Service Pack 1 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may receive the following error message in the Microsoft Outlook Web Access
+(OWA) client when you attempt to open a message:
+
+   Failed to open this message.
+   Your message does not exist in this folder. It may have been deleted.
+
+WORKAROUND
+==========
+
+If Microsoft Internet Information Server (IIS) is on a different system than the
+Exchange Server computer, Exchange Server 5.5 Service Pack 1 (SP1) will also
+need to be installed on the IIS server. The OWA component installed on the IIS
+server will then be upgraded to SP1.
+
+======================================================================
+Keywords          :  
+Technology        : kbOutlookSearch kbOWASearch kbOWA550SP1
+Version           : WINDOWS:5.5SP1
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

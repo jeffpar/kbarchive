@@ -1,0 +1,73 @@
+DOCUMENT:Q260047  07-MAY-2002  [homegame]
+TITLE   :FS2000: Interior View Is Distorted in Hairy Carrier Adventure
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbenv kbgraphic kbui kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 2000 Professional Edition 
+ - Microsoft Flight Simulator 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you fly in the Hairy Carrier Adventure in Microsoft Flight Simulator 2000
+or Microsoft Flight Simulator 2000 Professional Edition, the interior views may
+be distorted.
+
+RESOLUTION
+==========
+
+To resolve this issue, resize the interior view window:
+
+1. Start the Hairy Carrier Adventure in Flight Simulator 2000.
+
+2. Make sure that the Num Lock light on your keyboard is lit.
+
+   If the Num Lock light is not lit, press the NUM LOCK key to turn on the Num
+   Lock setting on the numeric keypad.
+
+3. Press and hold down the 2 key on the numeric keypad.
+
+   Note that the interior view is only displayed on the top half of the screen.
+
+4. While you continue to hold down the 2 key on the numeric keypad, drag the
+   bottom edge of the interior view in order to resize the window to use the
+   full screen.
+
+5. Release the 2 key on your numeric keypad.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+Additional query words: msgame flightsim fltsim fs2k crunched squashed
+
+======================================================================
+Keywords          : kbenv kbgraphic kbui kbimu 
+Technology        : kbGamesSearch kbFlightSimSearch
+Version           : WINDOWS:
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

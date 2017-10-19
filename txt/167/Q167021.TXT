@@ -1,0 +1,63 @@
+DOCUMENT:Q167021  09-AUG-2001  [winnt]
+TITLE   :INFO: 3Com 3c900 Card Does Not Install During Unattended Setup
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbnetwork kbsetup kbOPK kbSBK
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you use the unattended setup option to install Windows NT on a computer
+that uses a 3Com 3c900 EtherLink adapter, you may get the following message
+during the graphical user interface (GUI) mode portion of network setup:
+
+   Network Card not Present in the system
+
+This message is produced when the Oemsetup.inf file of the netcard does not
+return a proper value. The following command string returns an empty list:
+
+      <B>Shell $(UtilityInf), GetPCIInformation, $(Vendor) $(CFID)</B>
+
+MORE INFORMATION
+================
+
+This is a known problem between Windows NT and this 3Com card. Contact 3Com for
+a workaround to this problem.
+
+The EtherLink product discussed here is manufactured by 3Com Corporation, a
+vendor independent of Microsoft; we make no warranty, implied or otherwise,
+regarding this product's performance or reliability.
+
+
+Additional query words: automated Unattended Setup
+
+======================================================================
+Keywords          : kb3rdparty kbnetwork kbsetup kbOPK kbSBK 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

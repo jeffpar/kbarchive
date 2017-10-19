@@ -1,0 +1,67 @@
+DOCUMENT:Q313945  29-JAN-2002  [homemm]
+TITLE   :Encarta 2001: IPF Err Msg When Program Reads CD-ROM
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Reference Suite 2001 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When your installation of Microsoft Encarta Reference Suite 2001 attempts to
+read data from the Encarta Reference Suite CD-ROM, you may receive an error
+message similar to the following:
+
+   Enc2001 performed an Illegal Operation and will be shut down.
+
+When you click the Details button, you receive the following error message:
+
+   Invalid page fault in module MVTL53N.DLL at 015f:
+
+You typically receive the first error message after the CD-ROM speeds up and then
+slows down repeatedly.
+
+CAUSE
+=====
+
+This behavior occurs when your Encarta installation is unable (for a variety of
+possible reasons) to read from the CD-ROM.
+
+RESOLUTION
+==========
+
+For additional information about how to troubleshoot CD-ROM read issues, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q218617 How to Troubleshoot CD-ROM Read Errors
+
+Additional query words:
+
+======================================================================
+Keywords          : kberrmsg kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaReference2001
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,67 @@
+DOCUMENT:Q235196  11-JAN-2001  [sms]
+TITLE   :SMS: Illegal Settings Can Be Set for Software Distribution
+PRODUCT :Microsoft Systems Management Server
+PROD/VER::2.0 SP1,2.0 SP2,2.0 SP3
+OPER/SYS:
+KEYWORDS:kbClient kbConfig kbMMC kbsms200 kbsms200bug kbAdvertisement kbPackage kbsmsAdmin kbSof
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 2.0 SP1, 2.0 SP2, 2.0 SP3 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you configure Software Distribution, it is possible to set configuration
+combinations for Advertisements and Packages in the Microsoft Systems Management
+Server Administrator Console, resulting in the failure of Software Distribution
+to clients.
+
+The following settings cause a conflict, and as a result, the client does not run
+the advertisement as expected:
+
+ - Package: The program environment "Program can run" setting is configured to
+   "Only when a user is logged on".
+
+ - Advertisement: The advertisement schedule has a mandatory assignment, with
+   the "Assign immediately after this event" item configured for logoff.
+
+- or -
+
+ - The program is set to run "Only when no user is logged on".
+
+ - The advertisement is set to Run at logon.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 2.0.
+
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbClient kbConfig kbMMC kbsms200 kbsms200bug kbAdvertisement kbPackage kbsmsAdmin kbSoftwareDist 
+Technology        : kbSMSSearch kbSMS200SP1 kbSMS200SP2 kbSMS200SP3
+Version           : :2.0 SP1,2.0 SP2,2.0 SP3
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

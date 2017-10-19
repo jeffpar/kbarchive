@@ -1,0 +1,77 @@
+DOCUMENT:Q161422  08-NOV-2001  [frontpg]
+TITLE   :FP: How to Change the Color of a Marquee
+PRODUCT :Word Front Page
+PROD/VER:windows:97; macintosh:1.0
+OPER/SYS:
+KEYWORDS:kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 2000 version of this article, see Q198020.
+
+For a Microsoft FrontPage 98 version of this article, see Q194160.
+
+SUMMARY
+=======
+
+This article describes how to change the color of an item within a Marquee tag.
+To create a Marquee, click Marquee on the Insert menu.
+
+The Marquee tag is supported by Microsoft Internet Explorer versions 2.0 and
+later; it is not supported by Netscape Navigator.
+
+
+MORE INFORMATION
+================
+
+The Marquee Properties dialog box contains a drop-down box for selecting the
+marquee color.
+
+ - To show the Marquee Properties dialog box in FrontPage Editor, right-click
+   the marquee and click Marquee Properties on the shortcut menu.
+
+   If you select Default for the marquee background color, the marquee background
+   will be the same color as the page background.
+
+ - To change the color of the text in a marquee, select the marquee and click
+   the Text Color button. Or, select the marquee and click Font on the Format
+   menu. Change the font color using the Color drop-down box in the Font dialog
+   box.
+
+It is not possible to place a background image in a marquee or to make a marquee
+transparent.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: 97
+
+======================================================================
+Keywords          : kbusage kbdta 
+Technology        : kbHWMAC kbOSMAC kbFrontPageSearch kbZNotKeyword8 kbZNotKeyword kbFrontPage97Search kbFrontPageMac kbZNotKeyword3
+Version           : windows:97; macintosh:1.0
+Hardware          : MAC x86
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

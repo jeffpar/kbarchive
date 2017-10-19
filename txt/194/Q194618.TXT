@@ -1,0 +1,70 @@
+DOCUMENT:Q194618  01-MAY-2001  [ssafe]
+TITLE   :INFO: Fast Get Only Works When Compare = Checksum
+PRODUCT :Microsoft SourceSafe
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbSSafe600 kbSSExplorer
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual SourceSafe for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Visual SourceSafe version 6.0 database format has a new Fast Get feature,
+but this feature only works when files are compared by Checksum.
+
+MORE INFORMATION
+================
+
+In the Visual SourceSafe Explorer, you can set "Compare files by" (go to the
+Tools menu, click Options, and click the Local Files tab) to Checksum, Contents,
+or Time. If "Compare files By" is set to Checksum, the fast Get uses a mechanism
+that speeds up comparing files by checksum. It stores the checksum for every
+file in a directory in the VssVer.scc file in that directory and compares it
+with the checksum information stored in the Crcs.dat file in the Visual
+SourceSafe data directory. If "Compare files By" is set to Contents or Time, the
+fast Get does not work.
+
+If you are not using the new database format, comparing by Checksum might not be
+the fastest method for comparing files. For more information on comparing files
+with the old 5.0 database format, see the following articles in the Knowledge
+Base:
+
+   Q131773 INFO: Setting Compare to Time Increases Speed of GET Command
+
+   Q131772 INFO: Setting Compare to Checksum Speeds GET Command
+
+   Q123473 HOWTO: Increase Performance in SourceSafe
+
+REFERENCES
+==========
+
+Visual SourceSafe Help: Local Files Options Tab; Compare Initialization Variable
+
+Additional query words:
+
+======================================================================
+Keywords          : kbSSafe600 kbSSExplorer 
+Technology        : kbSSafeSearch kbAudDeveloper kbSSafe600
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

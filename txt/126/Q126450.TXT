@@ -1,0 +1,75 @@
+DOCUMENT:Q126450  28-JUL-2001  [win95x]
+TITLE   :Lemmings 3: Error 55.53: Unable to Calibrate Timer
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:win95 appscomp kbAppCompatibility
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to start the MS-DOS-based game Lemmings 3, you receive the
+following error message:
+
+   error 55.53: unable to calibrate timer
+
+When you try to run the L3.BAT file in an MS-DOS window, your computer stops
+responding (hangs) and you must restart the computer.
+
+CAUSE
+=====
+
+Lemmings 3 cannot start or run in a windowed MS-DOS environment. Lemmings 3
+requires a full-screen MS-DOS environment.
+
+RESOLUTION
+==========
+
+To correct this problem, set the Screen Usage settings for Lemmings 3 as
+follows:
+
+1. Use the right mouse button to click the Lemmings 3 icon and then click
+   Properties on the menu that appears.
+
+2. Click the Screen tab.
+
+3. Under Usage, click the Full-Screen option button.
+
+4. Click the Apply button and then click the OK button.
+
+MORE INFORMATION
+================
+
+Lemmings 3 is manufactured by Psygnosis Ltd., a vendor independent of Microsoft;
+we make no warranty, implied or otherwise, regarding this product's performance
+or reliability.
+
+Additional query words:
+
+======================================================================
+Keywords          : win95 appscomp kbAppCompatibility 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

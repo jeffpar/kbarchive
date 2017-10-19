@@ -1,0 +1,75 @@
+DOCUMENT:Q136848  15-FEB-2000  [foxpro]
+TITLE   :PRB: Class Browser: "Unable to Display Class Hierarchy" Error
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a Class library is browsed in the Class Browser and a class that has
+subclasses is removed, the error "Unable to Display Class Hierarchy" is
+displayed when the Class Browser form is refreshed.
+
+CAUSE
+=====
+
+A class contains an explicit reference to its parent in a .vcx file. If the
+parent class is removed, the derived class cannot find its parent, and the class
+hierarchy is incorrect.
+
+RESOLUTION
+==========
+
+Remove the child classes first, and then delete the parent class.
+
+STATUS
+======
+
+This behavior is by design.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start the Class Browser (On the Tools menu, click Class Browser).
+
+2. Open a class that has some child classes. For example, open the Tsbase.vcx
+   file located in the Vfp\Mainsamp\Libs directory.
+
+3. Click the Remove button to delete a class that has derived classes. For
+   example, delete TSBASEFORM. The error "Unable to Display class hierarchy" is
+   displayed.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          :  
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

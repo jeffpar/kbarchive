@@ -1,0 +1,66 @@
+DOCUMENT:Q93646  04-OCT-1999  [win95x]
+TITLE   :HP Laserjet 4 Driver May Cause GP Fault in Windows 3.1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:win31
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may experience a general protection (GP) fault when printing from Windows
+Calendar to a Hewlett-Packard (HP) LaserJet 4 or an IBM 4039. The error message
+displayed may be similar to the following:
+
+   CALENDAR caused a General Protection Fault in module CALENDAR.EXE at
+   0002:0CFA.
+
+CAUSE
+=====
+
+This problem occurs if your page setup is incorrect or if your printer driver is
+set to 600 dpi.
+
+WORKAROUND
+==========
+
+To fix this error, use the appropriate method below:
+
+ - Prior to printing, change the Calendar Page Setup to use left and right
+   margins of at least 1 inch.
+
+ - If your printer driver is set to 600 dpi, change it to 300 dpi.
+
+KBCategory: kbprint kbtool kberrmsg
+KBSubcategory: win30 win31 wfw wfwg gpf
+
+Additional query words: 3.10 WinLaser iv iiii lexmark win95 win95x
+
+======================================================================
+Keywords          : win31 
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

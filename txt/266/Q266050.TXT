@@ -1,0 +1,57 @@
+DOCUMENT:Q266050  24-OCT-2000  [exchange]
+TITLE   :XADM: Upgrading to Exchange Server 5.5 WP
+PRODUCT :Microsoft Exchange
+PROD/VER::5.5 SP2
+OPER/SYS:
+KEYWORDS:exc55sp2
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP2 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+There is a white paper available that compliments the technical information
+included in the Microsoft Exchange Server 5.5 Readme file. It outlines the
+procedures needed to ensure a successful upgrade of Microsoft Exchange Server
+4.0 or 5.0 to Exchange Server 5.5 Service Pack 2 (SP2), running on Microsoft
+Windows NT Server 4.0 Service Pack 4 (SP4).
+
+MORE INFORMATION
+================
+
+This white paper contains procedures for ensuring a successful upgrade of
+Exchange Server 4.0 or 5.0 to Exchange Server 5.5 SP2, running on Microsoft
+Windows NT Server 4.0 SP4. To view the "Upgrading to Exchange Server 5.5" white
+paper, click the following link:
+
+   http://support.microsoft.com/support/exchange/content/whitepapers/upgradev27a.doc
+   (http://support.microsoft.com/support/exchange/content/whitepapers/upgradev27a.doc)
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55sp2 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP2
+Version           : :5.5 SP2
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

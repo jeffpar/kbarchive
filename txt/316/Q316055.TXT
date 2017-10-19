@@ -1,0 +1,75 @@
+DOCUMENT:Q316055  30-JUL-2002  [winnt]
+TITLE   :Password Synchronization from UNIX Does Not Work with Yppasswd
+PRODUCT :Microsoft Windows NT
+PROD/VER::3.0
+OPER/SYS:
+KEYWORDS:kbenv kbtool kbui
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Services for UNIX, version 3.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When a UNIX user tries to change their password on a UNIX platform that is
+configured to use the UNIX NIS component for password validation, the user
+cannot do so. This occurs when the user uses the "yppasswd" (without the
+quotation marks) command. Under these conditions, the password is not replicated
+to the Windows computer by using the Windows Services for UNIX 3.0 password
+synchronization component.
+
+CAUSE
+=====
+
+If the Windows Services for UNIX Password Authentication Module (PAM) is
+installed on a UNIX NIS Master, the "yppasswd" (without the quotation marks)
+command does not use the pam_sso infrastructure.
+
+RESOLUTION
+==========
+
+To make password synchronization work in an NIS/NIS+ environment:
+
+1. Link yppasswd to the passwd command.
+
+2. On all the NIS UNIX clients (whether the "NIS Master" is a Windows Services
+   for UNIX NIS Server or a UNIX NIS server), edit the Etc/Nsswitch.conf file
+   and set it to use NIS / NIS+.
+
+3. If the "user" is not present in the local /etc/password | shadow files, the
+   passwd|yppasswd command that was run on the UNIX client (NIS client) computer
+   changes the NIS password for the user on the NIS master database.
+
+STATUS
+======
+
+Microsoft has confirmed that this is a problem in the Microsoft products that
+are listed at the beginning of this article.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbtool kbui 
+Technology        : kbWinServiceUNIXSearch kbWinServiceUNIX300
+Version           : :3.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

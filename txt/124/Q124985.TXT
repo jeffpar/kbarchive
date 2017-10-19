@@ -1,0 +1,64 @@
+DOCUMENT:Q124985  10-DEC-1999  [homemm]
+TITLE   :Bookshelf: Double-clicking Book Title Screen Causes GPF
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994 edition
+OPER/SYS:
+KEYWORDS:kbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows 1994 edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+As soon as you double-click the title page (splash screen) of any of the
+Bookshelf Books after you view a map in the Atlas, you see the following error
+message:
+
+   BS94APP caused a general protection fault in BS94.EXE at 0004:5D79
+
+The location of the general protection (GP) fault may also be 0004:5D80.
+
+A similar error occurs under Windows 95:
+
+   This program has performed an illegal operation and will be shut down.
+   If the problem persists, contact the program vendor.
+
+If you expand the details section, you see the following additional information:
+
+   BS94APP caused a general protection fault in module BS94.EXE at
+   0004:00005d79.
+
+MORE INFORMATION
+================
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words: msn_bookshelf gpf mmtitles 1994 1995 94 95
+
+======================================================================
+Keywords          :  kbbuglist
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1994
+Version           : :1994 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

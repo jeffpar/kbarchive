@@ -1,0 +1,69 @@
+DOCUMENT:Q124644  08-NOV-2001  [homemm]
+TITLE   :ATI Phone Number Incorrect in README.TXT Files
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::'94-'95 edition,1.0; WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Isaac Asimov's The Ultimate Robot for Windows, version 1.0 
+ - Microsoft Complete Basketball, version '94-'95 edition 
+ - Microsoft Multimedia Strauss for Windows, version 1.0 
+ - Microsoft The Ultimate Frank Lloyd Wright, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The phone number for ATI Technical Support is incorrectly listed in the
+README.TXT file included with each of the programs listed above.
+
+MORE INFORMATION
+================
+
+The phone number listed in the README.TXT file is (416) 756-0711. This phone
+number is no longer in service. The correct contact information for ATI
+Technologies is:
+
+   Address:
+
+   33 Commerce Valley Drive East
+   Thornhill, Ontario
+   Canada L3T 7N6
+
+   Phone Numbers:
+
+      Main:            (905) 882-2600
+      User Support:    (905) 882-2626
+      FAX:             (905) 882-2620
+      BBS:             (905) 764-9404
+
+   CompuServe Forum:
+
+   GO ATITECH
+
+Additional query words: kbhowto multi media multimedia multi-media mmtitles 1994 1995
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch _IKkbbogus kbHomeMMsearch kbGamesSearch kbZNotKeyword kbZNotKeyword3 kbCompleteBasketballSearch kbMMStrauss kbAsimovSearch kbCompleteBasketball1994 kbCompleteBasketball1995 kbAsimovUltimateRobot kbUltimateFLW
+Version           : :'94-'95 edition,1.0; WINDOWS:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

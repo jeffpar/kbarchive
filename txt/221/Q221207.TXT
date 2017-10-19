@@ -1,0 +1,78 @@
+DOCUMENT:Q221207  20-MAY-2002  [vbwin]
+TITLE   :INFO: Getting Visual Basic 4.0 or 5.0 After Purchasing VB 6.0
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:6.0
+OPER/SYS:
+KEYWORDS:kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Learning Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you require a previous version of Microsoft Visual Basic, you may purchase
+version 6.0 and then downgrade to a prior version.
+
+In order to acquire the correct license:
+
+1. Purchase Microsoft Visual Basic 6.0 from an authorized reseller.
+
+2. If you have access to existing licensed software you may use it, or you can
+   request the software media only for a small fee (around $20US/$25CDN) plus
+   shipping and handling from the Microsoft Supplemental and Replacement Parts
+   Center at 800-360-7561. Outside the United States and Canada, please contact
+   your local Microsoft subsidiary.
+
+For additional information please see:
+
+Visual Basic Downgrade Information
+
+MORE INFORMATION
+================
+
+The following editions are available as a downgrade to Visual Basic 6.0:
+
+ - Visual Basic 5.0
+
+    - Enterprise Edition
+    - Professional Edition
+    - Learning Edition
+
+ - Visual Basic 4.0
+
+    - Enterprise Edition
+    - Professional Edition
+    - Standard Edition
+
+For more information on your support options for this product, please refer to
+Support Options by Product online at:
+
+   http://support.microsoft.com/default.aspx?scid=fh;EN-US;CNTACTMS"
+======================================================================
+Keywords          : kbVBp400 kbVBp500 kbVBp600 kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVB600
+Version           : WINDOWS:6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

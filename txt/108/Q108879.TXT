@@ -1,0 +1,60 @@
+DOCUMENT:Q108879  15-NOV-1999  [pcmail]
+TITLE   :PC Gen: PODIAG.EXE Reports GAL Missing on Version 2.1 PO
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::3.2
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Post Office Diagnostics Utility, version 3.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Mail Postoffice Diagnostics Utility (PODIAG.EXE) Address &
+Group Check displays a "GAL Missing" error message when the utility is run on a
+version 2.1 postoffice. In addition, the Address & Group Preferences dialog
+box displays "PO addresses, PO groups, and GAL" as an option under the Depth of
+Check section, regardless of the version of the postoffice.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 3.2 of the Microsoft
+Mail Postoffice Diagnostics Utility. We are researching this problem and will
+post new information here in the Microsoft Knowledge Base as it becomes
+available.
+
+MORE INFORMATION
+================
+
+The Global Address List (GAL) was an additional feature added in version 3.0 and
+later postoffices and did not exist in Microsoft Mail version 2.1.
+
+
+Additional query words: 3.20
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbMailSearch kbMailPODiagnostic320
+Version           : :3.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

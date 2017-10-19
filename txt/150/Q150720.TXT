@@ -1,0 +1,87 @@
+DOCUMENT:Q150720  09-NOV-2001  [homemm]
+TITLE   :Macintosh Multimedia: Cannot Access Program Guide
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kberrmsg kbmm kbimukbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf 98 for Macintosh 
+ - Microsoft Bookshelf 1996-97 for Macintosh 
+ - Microsoft Encarta 98 Encyclopedia for Macintosh 
+ - Microsoft Encarta 97 Encyclopedia for Macintosh 
+ - Microsoft Cinemania for Macintosh, 1994, 1995, 1996, 1997 editions 
+ - Microsoft Music Central for the Macintosh, 1996, 1997 editions 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+On the Help menu, the guide does not start. Nothing happens, or you receive the
+an error message. Possible error messages include the following:
+
+   Apple Guide Extension was not found!
+
+   One or more files required for Apple Guide are missing. To correct this
+   problem, run the Installer on the Bookshelf 1996-97 CD.
+
+CAUSE
+=====
+
+The problems occur because at least one of the following files is missing from
+the active extensions folder:
+
+ - Apple Guide
+ - AppleScriptLib
+ - AppleScript
+
+RESOLUTION
+==========
+
+To resolve this issue, follow these steps:
+
+1. Quit the program if it is running.
+
+2. On the program compact disc, double-click Installer.
+
+3. At the Easy Install window, click Customize.
+
+4. Select the Apple Guide option appropriate for your computer and version of
+   system software.
+
+5. Click Install.
+
+When the installation has completed, restart your computer and then start
+Bookshelf.
+
+MORE INFORMATION
+================
+
+The Help menu is the question mark in the upper-right corner of the menu bar.
+
+Additional query words: multi-media mmtitles kbmm macmm
+
+======================================================================
+Keywords          : kberrmsg kbmm kbimu kbfaq
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbBookshelfSearch kbEncartaEncycSearch kbCineManiaSearch kbBookShelf1996Mac kbBookShelf1997Mac kbBookShelf1998Mac kbMusicCentralMacSearch kbEncartaEnCyc1997Mac kbEncartaEnCyc1998Mac kbMusicCentralMac1996
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

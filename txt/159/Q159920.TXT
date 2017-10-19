@@ -1,0 +1,78 @@
+DOCUMENT:Q159920  08-NOV-2001  [frontpg]
+TITLE   :FP: Part of the Data Transferred with "Publish Web" Command
+PRODUCT :Word Front Page
+PROD/VER:windows:1.0,1.1,97; macintosh:1.0
+OPER/SYS:
+KEYWORDS:kbusage kbdta
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft FrontPage 97 for Windows with Bonus Pack 
+ - Microsoft FrontPage for Windows, versions 1.0, 1.1 
+ - Microsoft FrontPage for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+For a Microsoft FrontPage 98 version of this article, see Q194307.
+
+SYMPTOMS
+========
+
+Canceling the Publish FrontPage Web command in FrontPage 97 and FrontPage 1.0
+for the Macintosh, (or the Copy Web command in FrontPage for Windows, versions
+1.0 and 1.1) may result in a partial transfer of the FrontPage web to the
+destination server.
+
+CAUSE
+=====
+
+The HyperText Transport Protocol (HTTP) maintains no information about the state
+of the connection between the server and the client. The Publish FrontPage Web
+operation creates the directories on the destination Web and then copies files
+into them. There is no way for FrontPage to efficiently delete files that were
+transferred during the earlier moments of the Publish Web operation.
+
+RESOLUTION
+==========
+
+To copy any files that were missed during the initial transfer, republish your
+Web to the same destination Web and allow it to copy all files to the
+destination Web. Note that if you want to delete files on the destination
+server, switch to Folder view (in FrontPage 97) or Summary view (in FrontPage
+1.x) and delete the files you want to remove from your Web. If you are not sure
+which files were transferred, publish your Web. When it has completed copying
+the files to the destination server, open the Web as a separate entity and
+delete it.
+
+MORE INFORMATION
+================
+
+FrontPage does not partially update files. All files are either completely
+updated or not updated at all.
+
+
+Additional query words: 97 copy web
+
+======================================================================
+Keywords          : kbusage kbdta 
+Technology        : kbHWMAC kbOSMAC kbFrontPageSearch kbZNotKeyword8 kbZNotKeyword kbFrontPage1xSearch kbFrontPage97Search kbFrontPageMac kbZNotKeyword3 kbFrontPage100 kbFrontPage110
+Version           : windows:1.0,1.1,97; macintosh:1.0
+Hardware          : MAC x86
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

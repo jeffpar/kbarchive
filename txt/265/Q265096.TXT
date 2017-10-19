@@ -1,0 +1,69 @@
+DOCUMENT:Q265096  10-AUG-2001  [winnt]
+TITLE   :"Stop 41" Error Message Occurs and Event 2000 Is Logged
+PRODUCT :Microsoft Windows NT
+PROD/VER::4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kberrmsg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use Windows NT Server, you may receive the following error message:
+
+   Stop 00000041 (0x00001000 0x00007924 0x00000420 0x00038f53)
+
+NOTE: The parameters may vary.
+
+In addition, event ID 2000 messages with error codes of C000009A are reported in
+the system event log, with the following message:
+
+   STATUS_INSUFFICIENT_RESOURCES ((NTSTATUS)0xC000009AL).
+
+CAUSE
+=====
+
+Both the event message and the error message occur because the non-paged pool
+memory resource is depleted. (Windows NT 4.0 contains a maximum of 128 MB of
+non-paged pool memory, and Windows 2000 has a maximum of 256 MB.) The non-paged
+pool leak is caused by the Emulex Fiber SCSI controller driver (Elxsli2.sys).
+
+MORE INFORMATION
+================
+
+Emulex is in the process of addressing this issue.
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kb3rdparty kberrmsg 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : :4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

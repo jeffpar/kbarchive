@@ -1,0 +1,80 @@
+DOCUMENT:Q94752  12-OCT-1999  [win95x]
+TITLE   :Problems Running Windows 3.1 and Novell NetWare Lite 1.1
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+You may find one or more of the following problems if you run Microsoft Windows
+on a Novell NetWare Lite version 1.1 workstation:
+
+ - Print jobs may not begin printing until you exit Windows.
+
+ - Other workstations may appear to lock up until you exit Windows on the
+   workstation that is running Windows.
+
+CAUSE
+=====
+
+NetWare Lite is not a supported network for Microsoft Windows versions 3.0 and
+3.1. For further information on integrating Windows 3.1 and NetWare Lite,
+contact Novell.
+
+WORKAROUND
+==========
+
+Novell has suggested the following interim solutions for these problems:
+
+ - Make sure that the Exclusive in Foreground setting is NOT selected in the 386
+   Enhanced section of the Control Panel.
+
+ - Remove any references to programs in the LOAD or RUN settings of the WIN.INI
+   file.
+
+ - Remove any programs that are in the Startup group in Program Manager.
+
+NOTE: The above information may or may not work in each specific case. Novell is
+aware of the problem and is currently working on this issue. The preceding
+information is to be regarded as a temporary workaround.
+
+The Novell NetWare Lite product included here is manufactured by a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+REFERENCES
+==========
+
+NetWare Lite Automated Fax System Document 204
+
+Additional query words: light 3.1 3.10 3rdparty win31 hangs locks freezes personal netware
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin310 kbWin311
+Version           : WINDOWS:3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

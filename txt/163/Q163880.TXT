@@ -1,0 +1,82 @@
+DOCUMENT:Q163880  08-AUG-2001  [winnt]
+TITLE   :COPY Command Causes File Cache to Grow
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation version 4.0 
+ - Microsoft Windows NT Server version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you use the COPY command of Cmd.exe to copy files that are significantly
+larger than the physical memory, Windows NT appears to slow down and user
+interface performance decreases.
+
+When you look at this in performance monitor, the cache is very large (from 50 to
+90 percent of physical memory) and the process working sets have shrunk.
+
+MORE INFORMATION
+================
+
+The CreateFile API has a flag (FILE_FLAG_SEQUENTIAL_SCAN) that is useful when
+copying files. It tells Cache Manager to not grow the file cache when requests
+for this handle arrive. Therefore, Memory Manager does not have to shrink the
+application's working set to accommodate the larger cache. The CopyFile and
+CopyFileEx APIs make use of this flag.
+
+Although the COPY command uses the CopyFile API, it opens the file without the
+mentioned flag first to inspect the source and destination files.
+
+WORKAROUND
+==========
+
+Use XCOPY, File Manager or Windows Explorer to copy large files.
+
+RESOLUTION
+==========
+
+To resolve this problem, obtain the hotfix mentioned below.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 4.0. This
+problem was corrected in the latest Microsoft Windows NT 4.0 U.S. Service Pack.
+For information on obtaining the service pack, query on the following word in
+the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400
+Version           : winnt:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

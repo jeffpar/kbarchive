@@ -1,0 +1,80 @@
+DOCUMENT:Q101347  08-OCT-1999  [win3x]
+TITLE   :WFWG Err Msg: The Postoffice Is Already Being Managed By...
+PRODUCT :Microsoft Windows 3.x Retail Product
+PROD/VER:WINDOWS:3.1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows for Workgroups version 3.1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run the Workgroup Mail application included in Windows for Workgroups
+3.1 for the first time, you may receive the following message
+
+   The postoffice is already being managed by <XXX>. Try again later.
+
+where <XXX> is the name of the actual Workgroup Postoffice administrator.
+
+WORKAROUND
+==========
+
+Close the Postoffice Manager and then try again.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Workgroup Mail application
+included with Windows for Workgroups version 3.1.
+
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Problem
+--------------------------
+
+1. Open the Postoffice Manager.
+
+2. Select a user and choose Details.
+
+3. Go to another machine that has not started Workgroup Mail and start it the
+   application.
+
+4. When asked whether to connect to an existing postoffice or to create a new
+   Workgroup Postoffice, choose to connect to an existing postoffice.
+
+5. Select the correct postoffice and choose OK.
+
+6. When asked if you have an account on the postoffice, choose No.
+
+7. Enter your account details and choose OK.
+
+Additional query words: 3.10 3.1 wgpo post office administrator
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWFWSearch kbWFW310
+Version           : WINDOWS:3.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

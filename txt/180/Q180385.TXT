@@ -1,0 +1,92 @@
+DOCUMENT:Q180385  17-JUL-2001  [visualc]
+TITLE   :FIX: AppWizard Sometimes Fails to Display the Platforms Option
+PRODUCT :Microsoft C Compiler
+PROD/VER:WINNT:5.0;win95:5.0
+OPER/SYS:
+KEYWORDS:kbwizard kbide kbVC kbVC500bug kbVC600fix kbGrpDSTools
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The AppWizard, included with:
+    - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+    - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In the New Projects dialog box, the Platforms box is empty both initially and
+after you click Back from the next step in the wizard.
+
+RESOLUTION
+==========
+
+1. Select another project type. The appropriate platform options will appear.
+
+2. Re-select the project type you wish to use.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in Visual C++ version 6.0.
+
+MORE INFORMATION
+================
+
+By default, the AppWizard creates a project configured for the Win32 platform.
+The platform type for project configurations specifies the operating
+environment. It also specifies the default settings required by the selected
+platform, including settings that the compiler uses for the source files, the
+default locations for output files, and so on. And, it specifies the tools
+required to build the final output files for that platform.
+
+After creating a new project with the wizard, the active configuration will be
+Win32 Debug. Select Settings from the Project menu to change the configuration
+settings. Select Set Active Configuration from the Build menu to choose the
+default configuration for the build.
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. In Visual C++ select New from the File menu.
+
+2. Click on the Projects tab.
+
+   NOTE: The Platforms box is empty. (The first wizard, ATL COM AppWizard, is
+   selected by default).
+
+3. Choose MFC AppWizard(exe).
+
+4. Type a project name.
+
+5. Click Ok.
+
+6. Click Back.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbide kbVC kbVC500bug kbVC600fix kbGrpDSTools 
+Technology        : kbVCsearch kbAudDeveloper kbAppWizard
+Version           : WINNT:5.0;win95:5.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

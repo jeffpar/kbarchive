@@ -1,0 +1,61 @@
+DOCUMENT:Q239081  26-SEP-1999  [exchange]
+TITLE   :XADM: Event 1016 Logged During Mailbox Manager Cleanup
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5 SP3
+OPER/SYS:
+KEYWORDS:exc55sp3
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 SP3 
+-------------------------------------------------------------------------------
+
+
+SUMMARY
+=======
+
+When Microsoft Exchange Mailbox Manager performs the cleanup, you may see
+several 1016 events similar to the following in the event log:
+
+   1016
+   NT User ExchService logged on to ExUser1 mailbox, and is not the Primary
+   Windows NT Account on this mailbox.
+
+MORE INFORMATION
+================
+
+This is by design. An event with the ID 1016 is logged when you attempt to
+access another user's mailbox or schedule. Mailbox Manager does not disable this
+security logging.
+
+For additional information about 1016 events, click the article number below to
+view the article in the Microsoft Knowledge Base:
+
+   Q173692 XADM: Event 1016 Generated When You Open Mailbox or Schedule of
+   Another User
+
+Additional query words:
+
+======================================================================
+Keywords          : exc55sp3 
+Technology        : kbExchangeSearch kbZNotKeyword2 kbExchange550SP3
+Version           : winnt:5.5 SP3
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

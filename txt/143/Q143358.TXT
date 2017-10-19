@@ -1,0 +1,69 @@
+DOCUMENT:Q143358  01-JAN-2001  [winprint]
+TITLE   :Canon BJC-800 Prints Slowly in Windows 95
+PRODUCT :Microsoft Windows Printing Issues
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print to a Canon BJC-800 printer in Windows 95 using the Canon
+BubbleJet BJC-800 printer driver, printing seems slow.
+
+CAUSE
+=====
+
+The Canon BJC-800 printer is designed to print on coated paper. When you use
+coated paper, the printer can use its fast "A" printing mode. When you use plain
+paper with this printer, the printer uses its slower "D" printing mode. The
+Windows 95 driver mentioned above defaults to using the slower "D" printing
+mode.
+
+RESOLUTION
+==========
+
+Set the printer driver to use the faster "A" printing mode. To do so, follow
+these steps:
+
+1. Click the Start button, point to Settings, and then click Printers.
+
+2. Use the right mouse button to click the Canon BubbleJet BJC-800 printer
+   driver, and then click Properties on the menu that appears.
+
+3. Click the Paper tab.
+
+4. In the Media Choice box, click "Coated Paper (Mode A)."
+
+5. Click OK.
+
+
+Additional query words: 95
+
+======================================================================
+Keywords          : win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

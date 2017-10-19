@@ -1,0 +1,62 @@
+DOCUMENT:Q281786  12-NOV-2001  [homegame]
+TITLE   :Plus! Game Pack: Players Voices Pause During Game Play
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Plus! Game Pack: Cards and Puzzles, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Players voices in Go Fish may pause for 4 or 5 seconds before they finish their
+sentences, for example: "Do you happen to have any............nines?"
+
+CAUSE
+=====
+
+This behavior results from the way the program caches the sound files in
+synchronization with the game.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Plus! Game Pack: Go
+Fish.
+
+MORE INFORMATION
+================
+
+After the sounds have played through once and are cached in memory, the sounds
+are played without pauses during that same game.
+
+Additional query words: kbimu homegame msgame go fish plus! game pack sounds voices players
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbGamesSearch kbPlusSearch kbPlusGamePk
+Version           : :1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

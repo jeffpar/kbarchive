@@ -1,0 +1,82 @@
+DOCUMENT:Q307490  26-SEP-2001  [crossnet]
+TITLE   :Authoring MOM Reports With Access 2002 Is Not Recommended
+PRODUCT :Windows for Workgroups and Windows NT Networking Issues
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbenv kbtool
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Operations Manager 2000 
+ - Microsoft Access 2002 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you author any new Microsoft Operations Manager (MOM) reports by using
+Microsoft Access 2002, MOM reporting may not work on Access 2000 due to
+compilation errors.
+
+CAUSE
+=====
+
+This behavior occurs because MOM reporting is developed by using Access 2000
+which also works on Access 2002. However, after reporting is opened by using
+Access XP, the corresponding Access database automatically changes all of its
+OLB references to revert to Access 2002 files. When the same Access database is
+used again in Access 2000, some of the OLB references do not change to refer to
+Access 2000 files. Because some referenced objects are not available, the
+compilation error occurs.
+
+WORKAROUND
+==========
+
+To work around this behavior:
+
+1. Start MOM reporting.
+
+2. On the File menu, click Enter Design Mode. When you do this, the design mode
+   of the Access database is displayed.
+
+3. On the View menu, click Code to open a Microsoft Visual Basic for
+   Applications (VBA) project for the Access database.
+
+4. On the Tools menu, click References to view a list of objects that are
+   referenced by the Access database.
+
+5. Click to clear the "Microsoft Graph 10.0 object library" check box.
+
+6. In the list of references, click to select the "Microsoft Graph 9.0 object
+   library" check box.
+
+7. Close the VBA project, and then quit Access.
+
+8. Start MOM reporting. Note that the feature works correctly.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kbtool 
+Technology        : kbAccessSearch kbAccess2002 kbOpMan2000 kbOpMansearch kbAccess2002Search
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

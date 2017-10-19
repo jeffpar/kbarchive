@@ -1,0 +1,57 @@
+DOCUMENT:Q155955  18-APR-2000  [powerpt]
+TITLE   :PowerPoint Animation Doesn't Play After Player Download
+PRODUCT :Microsoft PowerPoint for Windows
+PROD/VER:WINDOWS:7.0; :
+OPER/SYS:
+KEYWORDS:kbinterop
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft PowerPoint for Windows 95, version 7.0 
+ - Microsoft PowerPoint Animation Player for ActiveX 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you view a Web page that contains a PowerPoint Animation, the PowerPoint
+Animation Player for ActiveX installs itself if you don't already have it. After
+the Animation Player Setup program finishes, the PowerPoint Animation may not
+play. Instead, it may display your browser's error icon.
+
+RESOLUTION
+==========
+
+Click your browser's Refresh button to reload the Web page. The PowerPoint
+Animation will now play as expected.
+
+STATUS
+======
+
+Microsoft is researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: ActiveX PPZ ppt7 powerpt w_powerpt powerpnt red x
+
+======================================================================
+Keywords          : kbinterop 
+Technology        : kbPowerPtSearch kbPowerPt95 kbZNotKeyword2 kbPowerPt95Search kbZNotKeyword5
+Version           : WINDOWS:7.0; :
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

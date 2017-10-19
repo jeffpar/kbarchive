@@ -1,0 +1,83 @@
+DOCUMENT:Q92937  05-OCT-1999  [win95x]
+TITLE   :PC Tools Drivers May Cause Windows to Stop Responding (Hang)
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+After you install PC Tools for MS-DOS, your mouse and/or keyboard behave
+erratically in Microsoft Windows, or Windows stops responding (hangs) after the
+logo screen is displayed.
+
+CAUSE
+=====
+
+During installation, PC Tools for MS-DOS, version 7.0, 7.1, or 8.0, may make the
+following changes to the [boot] section of the SYSTEM.INI file:
+
+      mouse.drv=C:\PCTOOLS\SYSTEM\COMMMOU.DRV
+      keyboard.drv=C:\PCTOOLS\SYSTEM\COMMKBD.DRV
+      display.drv=C:\PCTOOLS\SYSTEM\COMMDIS.DRV  (version 8.0 only)
+      cpdisplay.drv=<original display driver>
+
+NOTE: The paths to these files may vary.
+
+The entry for <original display driver> is the driver filename for the
+active display drive as shown in Windows Setup.
+
+These modifications can change mouse and/or keyboard behavior in Windows, or
+cause Windows to hang.
+
+WORKAROUND
+==========
+
+To work around these problems, deactivate (comment) the lines shown above by
+inserting a semicolon (;) at the beginning of each line. Then, add the following
+lines to the [boot] section of the SYSTEM.INI file:
+
+      mouse.drv=MOUSE.DRV
+      keyboard.drv=KEYBOARD.DRV
+      display.drv=<original display driver>
+
+These are the standard settings for the Microsoft mouse, enhanced 101- or 102-key
+keyboard, and current display driver. If you are using a different mouse, or
+keyboard, run Setup to reinstall the appropriate driver(s).
+
+NOTE: This workaround disables the PC Tools Commute application.
+
+PC Tools for MS-DOS is manufactured by Central Point Software, a vendor
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+this product's performance or reliability.
+
+Additional query words: 3.10 commute 8.00 8.0 PCTOOLS
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

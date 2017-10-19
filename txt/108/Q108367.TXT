@@ -1,0 +1,70 @@
+DOCUMENT:Q108367  24-MAR-2000  [fortran]
+TITLE   :FIX: Columns 72 to 80 Not Displayed in Source Listing File
+PRODUCT :Microsoft Fortran Compiler
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:kbCompiler kbFL32 kbFortranPSkbbuglist kbfixlist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Fortran Powerstation 32 for Windows NT, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When compiling with /Fs to produce a source listing file, characters in columns
+72 and beyond are not propagated to the list file. Column 72 can always contain
+a valid character. Columns 73 to 80 are valid columns for characters when using
+$FREEFORM formatting.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft FORTRAN PowerStation
+32 for Windows NT, version 1.0. This problem was fixed in FORTRAN PowerStation
+32, version 4.0.
+
+MORE INFORMATION
+================
+
+The listing file produced by compiling the program below will not display the
+closing quotation mark of PRINT*, line:
+
+Sample Code
+-----------
+
+   C Compile options needed: -Fs, also remove the continuation line so
+   C the string constant is on the same line as the PRINT statement.
+   C Knowledge Base articles cannot use columns past 70.
+
+         print*,
+        + 'the last single quote is trimmed off in the listing.....'
+         end
+
+Additional query words: 1.00 .LST
+
+======================================================================
+Keywords          : kbCompiler kbFL32 kbFortranPS kbbuglist kbfixlist
+Technology        : kbAudDeveloper kbFortranSearch kbZNotKeyword2 kbFORTRANPower32100NT
+Version           : :1.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

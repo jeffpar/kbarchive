@@ -1,0 +1,65 @@
+DOCUMENT:Q152663  17-DEC-1999  [schedplus]
+TITLE   :Monthly View Print Out Will Not Wrap Appointment Text
+PRODUCT :Microsoft Schedule+ for Windows
+PROD/VER:WINDOWS:7.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Schedule+ for Windows, version 7.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you print details in the monthly view with Microsoft Schedule+ version
+7.0a, the text does not wrap around to a new line. The appointment will be
+truncated with "...".
+
+This behavior is by design. There is no way to make the text wrap.
+
+WORKAROUND
+==========
+
+If you change the font size associated with the stySmallApptText attribute for
+small, medium, and large in the normal.fmt file located in the Microsoft
+Exchange client directory, more characters can be printed in the allocated
+space.
+
+For example, line #33 in the normal.fmt file is:
+
+   stySmallApptText,,      "Arial",SWISS,6,8,10......
+
+Change it to:
+
+   stySmallApptText,,      "Arial",SWISS,4,6,8.....
+
+This will increase the number of characters that can be seen when you print a
+monthly view for each of the associated font sizes.
+
+Additional query words: 7.00
+
+======================================================================
+Keywords          :  
+Technology        : kbScheduleSearch kbSchedule700
+Version           : WINDOWS:7.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

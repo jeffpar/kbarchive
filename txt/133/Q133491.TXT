@@ -1,0 +1,131 @@
+DOCUMENT:Q133491  08-AUG-2001  [winnt]
+TITLE   :How to Add an IDE Drive and Controller to SCSI Windows NT System
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.5 3.51 4.0
+OPER/SYS:
+KEYWORDS:kbenv
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article explains how to add an IDE drive and controller to an computer,
+with SCSI hardware, running Windows NT. This procedure may vary with your
+particular system configuration. This article covers the following:
+
+ - Create a New Windows NT Boot Disk
+
+ - Set Up The New IDE Drive
+
+ - Install Windows NT Boot Files On The New IDE Drive
+
+ - Enable IDE Disk Support in Windows NT
+
+MORE INFORMATION
+================
+
+Create a New Windows NT Boot Disk
+---------------------------------
+
+1. Under Windows NT, format a floppy disk.
+
+2. Copy NTLDR, NTDETECT.COM, and BOOT.INI from your normal boot drive to the
+   floppy disk. (These files may have the read-only, system, and hidden
+   attributes).
+
+3. Locate the driver for the SCSI controller that you currently boot from and
+   copy it to the floppy disk as NTBOOTDD.SYS. For example, type the following
+   for an Adaptec 1542 controller:
+
+   copy %systemroot%\system32\drivers\aha154x.sys a:\ntbootdd.sys
+
+4. Edit the BOOT.INI file on the floppy disk. Change each occurrence of multi to
+   scsi.
+
+5. Turn off the computer, install the IDE drive and controller, and restart the
+   computer.
+
+6. Make sure to change the CMOS settings to include the new drive. You should be
+   able to boot from the floppy disk and have it boot the installation of
+   Windows NT that is already on your SCSI drive.
+
+Set Up The New IDE Drive
+------------------------
+
+1. Boot with a MS-DOS system disk.
+
+2. Run FDISK.EXE and examine the partition information for the drive.
+
+3. Create a partition on the IDE drive if necessary. Be careful to only make
+   changes to the partition table on the IDE drive.
+
+4. Quit FDISK and reboot. Format the drive as follows:
+
+   FORMAT C: /S
+
+5. Perform any additional setup of other media devices that may be required for
+   MS-DOS to access your Windows NT installation media.
+
+Install Windows NT Boot File On The New IDE Drive
+-------------------------------------------------
+
+1. Run Windows NT Setup. If you have the Windows NT CD-ROM and can access it
+   from MS-DOS, run WINNT /B from the MS-DOS command prompt. This performs a
+   floppyless installation.
+
+2. When asked to reboot the computer, do so with an MS-DOS boot disk in Drive A.
+
+3. Copy the BOOT.INI and NTBOOTDD.SYS files from the Windows NT Boot disk to the
+   new IDE drive.
+
+4. Delete the temporary Windows NT installation directory (if any) on the new
+   IDE drive.
+
+5. Remove the disk from the floppy drive and reboot the computer.
+
+Enable IDE Disk Support In Windows NT
+-------------------------------------
+
+1. Copy the ATDISK.SYS file from the Windows NT installation media to the
+   %SYSTEMROOT%\SYSTEM32\DRIVERS directory.
+
+2. In Windows NT, run Control Panel and choose Devices. Set the startup mode for
+   ATDISK to System. If you want the newly added drive to be first in the order
+   as they appear in Disk Administrator, change the startup mode to Boot.
+
+3. Start the ATDISK driver from Control Panel.
+
+4. Start Disk Administrator and make any changes necessary to the drive letter
+   assigned to the new drive. If you do not choose a drive letter for the new
+   drive, Windows NT will select a drive at the next reboot. This may cause
+   existing drive letter assignments to change.
+
+5. Shutdown and restart Windows NT.
+
+======================================================================
+Keywords          : kbenv 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.5 3.51 4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

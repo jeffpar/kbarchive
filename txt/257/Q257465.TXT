@@ -1,0 +1,63 @@
+DOCUMENT:Q257465  11-DEC-2001  [winnt]
+TITLE   :First Character Typed After Logon Is Ignored in 16-Bit Programs
+PRODUCT :Microsoft Windows NT
+PROD/VER:winnt:4.0,4.0 SP4,4.0 SP5
+OPER/SYS:
+KEYWORDS:kbtool kbWinNT4sp6fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 4.0, 4.0 SP4, 4.0 SP5, Terminal Server Edition 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The first character you type after logging on to a Terminal Server session may
+be ignored if you type it in a 16-bit program or a Windows NT Virtual DOS
+Machine (NTVDM).
+
+This problem can also occur if the NUM LOCK state is changed and the Terminal
+Server Client session window is not the active window. This affects only NTVDMs
+or programs running within an NTVDM.
+
+CAUSE
+=====
+
+When you are logging on to a Terminal Server session, a simulated NUM LOCK
+keystroke is generated to synchronize the keyboard state with that of the client
+computer. This simulated keystroke does not have the Extended Keyboard flag set,
+causing NTVDMs to lose the next keystroke.
+
+STATUS
+======
+
+This problem was first corrected in Windows NT Server version 4.0, Terminal
+Server Edition Service Pack 6.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbtool kbWinNT4sp6fix 
+Technology        : kbWinNTsearch kbWinNT400search kbWinNTSsearch kbWinNTS400search kbNTTermServ400 kbNTTermServ400sp4 kbNTTermServ400sp5 kbNTTermServSearch
+Version           : winnt:4.0,4.0 SP4,4.0 SP5
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

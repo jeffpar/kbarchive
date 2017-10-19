@@ -1,0 +1,124 @@
+DOCUMENT:Q173013  14-NOV-2000  [word97]
+TITLE   :WD97: Symbol in Heading Removes Heading Numbering from TOC
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbfield winword word97 kbnumbering
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you create or update the table of contents, Microsoft Word may not include
+heading numbers for all items.
+
+CAUSE
+=====
+
+This problem occurs when the table of contents contains an item based on a
+document heading with Auto Numbering, and that item contains an equation or a
+symbol in a font other than Normal Text as the first character.
+
+WORKAROUND
+==========
+
+To work around this problem, use either of the following methods.
+
+Method 1: Replace Symbols with Normal Text
+------------------------------------------
+
+Remove all symbols that are the first characters of document headings, or replace
+the symbols with similar ones in the Normal Text font. To do this, follow these
+steps:
+
+1. In the main document, select the symbol that is first character of the
+   document heading.
+
+2. On the Insert menu, click Symbol.
+
+3. Click the Symbols tab, and then click (Normal Text) in the Font list.
+
+4. Click to select a similar symbol in Normal Text, to replace the existing
+   symbol.
+
+5. Click Insert, and then click Close.
+
+6. Update the Table of Contents. To do this, follow these steps:
+
+   a. On the Insert menu, click Index and Tables.
+
+   b. Click the Table of Contents tab.
+
+   c. Click OK.
+
+   d. Click OK when you are prompted with the message:
+
+   Do you want to replace the selected table of contents?
+
+7. Repeat steps 1-6 for all document headings that are not numbered in the table
+   of contents.
+
+NOTE: After the heading numbers are properly displayed in the table of contents,
+you can lock the table of contents field by pressing CTRL+F11. When the field is
+locked, you cannot modify the table of contents. If you later need to modify it,
+place the insertion point in the table of contents, and press CTRL+SHIFT+F11 to
+unlock the field.
+
+Method 2: Unlink the Table of Contents
+--------------------------------------
+
+You can also change the table of contents from a field to ordinary text, and then
+modify the table of contents manually. To do this, follow these steps:
+
+NOTE: You cannot automatically update the table of contents after this
+procedure.
+
+1. Remove the symbols that are the first characters of any document headings.
+
+2. Place the insertion point in the table of contents, and press F9 to update
+   the table. All heading numbers should now be displayed in the table of
+   contents.
+
+3. Press CTRL+SHIFT+F9. This unlinks the table of contents, so that it is no
+   longer a field, but ordinary text you can edit.
+
+4. Type the symbols back into the document headings, and the table of contents
+   manually.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.This problem was corrected in Microsoft
+Word 2000.
+
+Additional query words: 8.0 8.00
+
+======================================================================
+Keywords          : kbfield winword word97 kbnumbering 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

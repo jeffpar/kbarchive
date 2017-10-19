@@ -1,0 +1,75 @@
+DOCUMENT:Q101511  26-NOV-1999  [msdos]
+TITLE   :FILES=11 or Greater Needed to run NetWare 4.0 NETADMIN
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If the FILES= statement in the CONFIG.SYS file is set to fewer than 11, one of
+three different error messages may be displayed when you try to run the NETADMIN
+utility included with Novell NetWare version 4.0. These error messages vary
+depending on the FILES= setting.
+
+To avoid these errors, increase FILES= 11 or greater.
+
+MORE INFORMATION
+================
+
+FILES=10 returns:
+
+   Error Report : NETADMIN-4.00-970
+   The attempt to open the unicode table files failed.
+   The current operation cannot be completed.
+   Press <Enter> to continue.
+
+FILES=9 returns:
+
+   Error Report : NETADMIN-4.00-999
+   This utility can't find the message file NWDSBRWS.MSG.
+   The current operation cannot be completed.
+   Press <Enter> to continue.
+
+FILES=8 returns:
+
+   Error Report : NETADMIN-4.00-91
+   The system could not locate the Help Librarian data file
+   TEXTUTIL.HEP and will not be able to provide help for this utility.
+
+   The program should continue normally Press <Enter> to continue.
+
+The above message that occurs with FILES=8 is followed by the same message
+displayed with FILES=9.
+
+
+Additional query words: 6.22 6.00 6.20
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600
+Version           : MS-DOS:6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

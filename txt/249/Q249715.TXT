@@ -1,0 +1,73 @@
+DOCUMENT:Q249715  12-NOV-2001  [homegame]
+TITLE   :Soccer 2000: Minimum System Requirements
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft International Soccer 2000, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article lists the minimum system requirements needed to run Microsoft
+International Soccer 2000.
+
+MORE INFORMATION
+================
+
+To run International Soccer 2000, you need:
+
+ - A Multimedia PC with a Pentium 133 MHz or faster processor (Pentium 200 MHz
+   or faster processor recommended)
+
+ - Microsoft Windows 95/98 operating system
+
+ - 32 megabytes (MB) of RAM (64 MB of RAM recommended)
+
+ - 100 MB of available hard disk space for minimum installation or 500 MB of
+   available hard disk space for maximum installation (50 MB of additional hard
+   disk space required for the DirectX 6.1 installation and Windows swap file)
+
+ - A quad-speed or faster CD-ROM drive
+
+ - A PCI video adapter with 2 MB or more of video memory (DirectX 6.1-compatible
+   3D video adapter with 4 MB of video RAM or greater recommended)
+
+ - A DirectX 6.1-compatible sound card
+
+ - Speakers or headphones required for audio
+
+ - A Microsoft mouse or compatible pointing device
+
+ - Optional: A compatible game pad device (Microsoft Sidewinder game pad
+   recommended)
+
+Additional query words: 1.00 msgame is2k sysreqs requires
+
+======================================================================
+Keywords          : kbimu msgame 
+Technology        : _IKkbbogus kbGamesSearch kbIntlSoccer2000
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

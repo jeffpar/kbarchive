@@ -1,0 +1,77 @@
+DOCUMENT:Q239629  25-JUN-2000  [homemm]
+TITLE   :World Atlas: Setup Quits Unexpectedly During CD-ROM Verification
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kb3rdparty kbsetup kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Interactive World Atlas 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install Microsoft Encarta World Atlas 2000, the installation program
+may quit unexpectedly immediately after you receive the following message:
+
+   Verification in progress. This could take a few minutes. Please wait.
+
+CAUSE
+=====
+
+This behavior can occur if Mindspring Internet software is installed on your
+computer.
+
+Mindspring Internet software includes the Armon32.exe program that can interfere
+with the Encarta World Atlas 2000 CD-ROM verification process.
+
+RESOLUTION
+==========
+
+To resolve this issue, quit Armon32.exe before you install Encarta World Atlas
+2000:
+
+1. Press CTRL+ALT+DELETE.
+
+2. In the Close Program dialog box, click Armon32, and then click End Task.
+
+   If you receive a message that the program is busy or not responding, click End
+   Task again.
+
+3. Install Encarta World Atlas 2000.
+
+MORE INFORMATION
+================
+
+The third-party products discussed in this article are manufactured by vendors
+independent of Microsoft; we make no warranty, implied or otherwise, regarding
+these products' performance or reliability.
+
+Additional query words: multi multi-media media mm ewa2k mind spring crash
+
+======================================================================
+Keywords          : kb3rdparty kbsetup kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaWorldAtlas2000
+Version           : WINDOWS:
+Issue type        : kbprb
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

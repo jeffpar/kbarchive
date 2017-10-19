@@ -1,0 +1,154 @@
+DOCUMENT:Q285221  23-JAN-2001  [foxpro]
+TITLE   :PRB: "There is Not Enough Memory" with Menu in Defined Window
+PRODUCT :Microsoft FoxPro
+PROD/VER::5.0,5.0a,6.0
+OPER/SYS:
+KEYWORDS:kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 5.0a, 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a menu in a defined window is activated more than once, the following error
+may occur:
+
+   There is not enough memory to complete this operation.
+
+NOTE: This problem does not occur in Visual FoxPro 3.0.
+
+RESOLUTION
+==========
+
+There are two ways to work around this problem:
+
+ - Display the menu in the main Visual FoxPro Window instead of defining a
+   window. See the two comments in the code labeled "workaround 1" in the "More
+   Information" section".
+
+ - Define the window before the loop, and instead of releasing the window,
+   deactivate it. See the three comments in the code labeled "workaround 2".
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Create a program file containing the following code:
+
+   CLEAR ALL
+   SET DEVICE TO SCREEN
+   CLEAR WINDOWS
+
+   PUBLIC  cLastPad, nLastKey, cLastBar
+   LOCAL cTest  && Variable used for the READ
+
+   cLastPad = 'PADONE'		&& Record which pad was chosen
+   cLastBar = 1			&& Record which bar was chosen
+   cTest = SPACE(20)
+
+   DEFINE MENU TestMenu COLOR BG/W,N/W,N/W,B/W,W+/B,N/BG,W+/W,N+/N,B/W,W/N,+
+      DEFINE PAD PadOne OF TestMenu PROMPT 'Pad One'    AT 03,05
+      DEFINE PAD PadTwo OF TestMenu PROMPT 'Leave Test' AT 03,20
+
+   DEFINE POPUP PopOne FROM 04,05 SHADOW
+      DEFINE BAR 1 OF PopOne PROMPT 'Causes Error'
+
+   DEFINE POPUP PopTwo FROM 04,20 SHADOW
+      DEFINE BAR 1 OF PopTwo PROMPT 'Exit To FoxPro'
+
+      ON PAD PadOne OF TestMenu ACTIVATE POPUP PopOne
+      ON PAD PadTwo OF TestMenu ACTIVATE POPUP PopTwo
+       
+      ON SELECTION POPUP PopOne DO mainproc WITH PAD(), BAR()
+      ON SELECTION POPUP PopTwo DO mainproc WITH PAD(), BAR()
+
+      * Workaround 2. Uncomment the next 2 lines and be sure to
+      * comment out the lines for the window definition inside the 
+      * WHILE loop
+   *   DEFINE WINDOW Main FROM 0,0 to 24,79 NONE NOCLOSE NOFLOAT;
+   *      NOGROW NOSHADOW NOZOOM COLOR W/B
+
+   DO WHILE .T.
+      IF cLastPad # 'PADTWO' 
+         * Comment out the next 3 lines for a workaround 1 to the problem.
+         * If you are trying workaround 2 only comment out the next
+         * 2 lines
+         DEFINE WINDOW Main FROM 0,0 to 24,79 NONE NOCLOSE NOFLOAT;
+         NOGROW NOSHADOW NOZOOM COLOR W/B
+         ACTIVATE WINDOW Main    && Window for main menu
+         DO WHILE .T.
+            nLastKey  = 0                 && Initialize LASTKEY()
+            ACTIVATE MENU TestMenu PAD &cLastPad
+            * Check to see if no key was pressed or the ESC key
+            IF nLastKey = 0  OR nLastKey = 27  THEN 
+               LOOP                
+            ELSE
+       	    EXIT
+            ENDIF
+         ENDDO
+      ENDIF
+
+   * This point is reached when a choice is made on the menu and it is deactivated.    
+      DO CASE
+      CASE cLastPad = 'PADONE'
+         * Comment out next line for both workarounds to the problem.
+         RELEASE WINDOW Main
+         * Uncomment the next line for workaround 2.
+         *DEACTIVATE WINDOW Main
+         @ 2,4 SAY "Press ESC Or ENTER To Go Cause Error" GET cTest
+         READ
+         CLEAR
+      CASE cLastPad = 'PADTWO'   && Return to Fox
+         EXIT
+      ENDCASE
+   ENDDO
+   CLEAR ALL
+   RETURN
+
+   PROCEDURE mainproc
+   * This procedure stores the selection, and then deactivates the menu to
+   * trigger the CASE structure for branching. Note that the passed value
+   * of BAR() is zero if the ESC key was pressed.
+   PARAMETERS mpad, mbar
+
+      nLastkey = LASTKEY()
+      cLastPad = mpad           && Store selection in public var
+      cLastBar = mbar           &&   "       "      "    "    "
+      DEACTIVATE MENU TestMenu  && Go to CASE to process selection
+   RETURN
+
+2. Run the code and then select the first menu option. Press ESC or ENTER to
+   return to the menu.
+
+   The error message described in the "Symptoms" section is displayed.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbvfp500 kbvfp500a kbvfp600 kbGrpDSFox kbDSupport kbCodeSnippet 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600 kbVFP500a
+Version           : :5.0,5.0a,6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

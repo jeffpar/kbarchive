@@ -1,0 +1,120 @@
+DOCUMENT:Q153616  19-FEB-2002  [homegame]
+TITLE   :Contents of Close Combat Trouble.doc
+PRODUCT :Microsoft Home Games
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Close Combat for Windows 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following information is contained in the Microsoft Close Combat Trouble.doc
+file. This file is copied into the Close Combat folder by Setup. This text has
+been slightly modified. To view file in the original format, please open the
+file on your hard drive.
+
+MORE INFORMATION
+================
+
+TROUBLE.DOC FILE
+----------------
+
+Troubleshooting
+
+Sound Problems:
+
+If you are experiencing sound problems please use the following list of
+troubleshooting steps.
+
+ - Be sure you are using the latest Direct X compatible sound drivers. Contact
+   the sound card manufacturer for the latest sound drivers. Right click on the
+   Close Combat CD in My Computer, select Install DirectX, and when the DirectX
+   installer appears it lists your current drivers, their version information,
+   and if they are DirectX compliant.
+
+ - Verify that your speaker and volume control are enabled and turned up.
+
+ - Make sure that Windows95 still has sound.
+
+   1. Click Start.
+
+   2. Click Setting, click Control Panel.
+
+   3. Double-Click on the Sounds Icon.
+
+   4. Play a .wav file.
+
+ - If Windows95 is not able to play a .wav file. Check to see that a sound
+   driver is enabled.
+
+   1. Click Start.
+
+   2. Click Settings, click Control Panel.
+
+   3. Double-Click the System icon.
+
+   4. Click the Device Manager tab.
+
+   5. Click the Plus sign on Sound, Video and Game Controllers.
+
+   If there is no "Sound, Video and Game Controllers" or you have no Sound card
+   listed, contact the manufacturer of the computer or sound card and have them
+   reinstall the sound card drivers.
+
+ - If Windows95 can play .wav files. Verify that your sound card is a supported
+   by DirectSound. (See List of Supported Sound Cards)
+
+   1. Click Start.
+
+   2. Click Settings, click Control Panel.
+
+   3. Double-Click the System icon.
+
+   4. Click the Device Manager tab.
+
+   5. Click the Plus sign on Sound, Video and Game Controllers.
+
+   If your sound card is not supported, contact the manufacturer of the Sound
+   Card for Direct X compatible sound drivers.
+
+Video Problems:
+
+If you are experiencing video problems or have booted into safe mode please
+consult the following troubleshooting suggestions.
+
+ - Some video drivers that are incompatible with Direct X may boot to Safe Mode.
+   If this occurs you can change your Display Adapter back to the original video
+   drivers and your system will boot normally. To replace your Display Adapter
+   right click on the Close Combat CD in My Computer, select Install DirectX,
+   and when the DirectX installer appears chose "Restore Windows 95 Drivers"
+
+Additional query words: 1.00 CC video audio sound troubleshoot troubleshooting directx kbusage
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeProdSearch kbGamesSearch kbZNotKeyword kbCloseCombatSearch kbCloseCombat
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

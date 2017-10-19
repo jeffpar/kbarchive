@@ -1,0 +1,76 @@
+DOCUMENT:Q136469  28-JUL-2001  [win95x]
+TITLE   :Cannot Install WordPerfect Presentations 2.0
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:win95 appscomp kbAppCompatibility
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install WordPerfect Presentations version 2.0, you may receive the
+following error message:
+
+   System Error
+
+   The file you are trying to open is already in use by another program. Quit the
+   other program, and then try again.
+
+If you click Cancel, you receive the following message:
+
+   Error
+   File installation error: Unable to open c:\<windows>\system\ddeml.dll.
+
+CAUSE
+=====
+
+This error occurs because Windows 95 prevents the WordPerfect Presentations
+Setup program from replacing the Windows 95 Ddeml.dll file.
+
+RESOLUTION
+==========
+
+Please contact WordPerfect for information about resolving this problem.
+
+Note that WordPerfect Presentations 2.0 works correctly if it was installed in
+your previous version of Windows and you then upgraded to Windows 95.
+
+STATUS
+======
+
+This situation is most likely caused by design changes in Windows 95. Microsoft
+has confirmed that it is not caused by a problem in Windows 95.
+
+MORE INFORMATION
+================
+
+This problem does not occur with WordPerfect Presentations version 3.0.
+
+
+======================================================================
+Keywords          : win95 appscomp kbAppCompatibility 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

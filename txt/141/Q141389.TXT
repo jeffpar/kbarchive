@@ -1,0 +1,63 @@
+DOCUMENT:Q141389  11-DEC-1999  [foxpro]
+TITLE   :DOCERR: Incorrect SET PRINTER Command Syntax for Net Printers
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In the Visual FoxPro Version 3.0 Help file, the syntax given for connecting to a
+network printer is incorrect.
+
+MORE INFORMATION
+================
+
+The incorrect syntax:
+
+      SET PRINTER TO [\\MachineName\PrinterName = Destination]
+
+The correct syntax:
+
+      SET PRINTER TO NAME [\\ServerName\PrinterName]
+
+This syntax is valid only in Windows NT. It does not work under Windows 95 or
+Win32s. Unlike Windows NT, neither Windows 95 nor Win32s supports automatic
+driver downloading. Without automatic driver downloading, the user must select a
+printer driver in the control panel to go along with the network address.
+
+This documentation error was corrected in Visual FoxPro 3.0b for Windows.
+
+For additional information on the SET PRINTER command, please see the "SET
+PRINTER" topic in the Help file.
+
+Additional query words: VFoxWin
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

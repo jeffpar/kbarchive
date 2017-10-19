@@ -1,0 +1,70 @@
+DOCUMENT:Q166956  14-NOV-2000  [word97]
+TITLE   :WD97: Many Page Breaks with "First Page Footer" Causes Problems
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbusage word97 kblayout
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you work with a Word 97 document that contains many page breaks, the
+following may occur:
+
+ - When you add a "Different First Page" footer to your document, some of the
+   footer text may bleed into the first page footer.
+
+   -and-
+
+ - When you save your document as "Rich Text Format (*.rtf)," the following
+   error message will be displayed:
+
+   This program has caused an illegal operation and will be shut down.
+
+   If the problem persists, contact the program vendor.
+
+   When you click Details, the following message is displayed:
+
+   WINWORD caused an invalid page fault in module WINWORD.EXE at 0137:30080f6c.
+
+NOTE: This problem has occurred with as few as 10 page breaks.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft products that are
+listed at the beginning of this article.
+
+This problem has been corrected in Word 2000.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage word97 kblayout 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

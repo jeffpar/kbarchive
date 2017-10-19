@@ -1,0 +1,132 @@
+DOCUMENT:Q177204  10-AUG-2001  [winnt]
+TITLE   :DHCP Does Not Offer Addresses in Numerical Sequence
+PRODUCT :Microsoft Windows NT
+PROD/VER:WinNT:3.5,3.51,4.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbinfo kbArtTypeINF
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Server versions 3.5, 3.51, 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft Windows NT Dynamic Host Configuration Protocol (DHCP) server offers IP
+lease information to DHCP clients on the network. Your DHCP Server may appear to
+be randomly selecting addresses to offer to DHCP clients. This article discusses
+the method that DHCP server uses to assign addresses.
+
+MORE INFORMATION
+================
+
+DHCP server maintains two lists of address blocks as follows:
+
+ - partially filled in-use
+
+ - totally used
+
+Each of the above type of block consists of 32 addresses.
+
+For additional information, please see the following article in the Microsoft
+Knowledge Base:
+
+ARTICLE-ID: Q151696
+TITLE : Extending DHCP Start Address
+
+Partially filled in-use, or in-use blocks, provide addresses for the next DHCP
+request from DHCP clients. If this block runs out of addresses (no more
+addresses available to lease), a new block is created and added to the front of
+the in-use list with one address taken off for the currently requesting client.
+
+Totally used, or used blocks, are blocks that have no IP addresses available to
+be leased.
+
+NOTE: Exclusion ranges and reservations will always be in either the in- use
+blocks or the used blocks.
+
+When an in-use block gets completely leased, it is added to the end of the used
+list. If all the addresses of a used block get released so that the block is
+totally free, the block is deleted from the used list. A block that is not
+present in either of the lists is assumed to be totally free.
+
+For example, a scope of 200.10.10.0, which has a range from 200.10.10.1 to
+200.10.10.254 is used in the following manner:
+
+1. The first block would have the following addresses:
+
+   200.10.10.1 - 200.10.10.32
+
+2. When the first address is requested, this block is considered an in- use
+   block. When the block is completely leased out, it is considered a used
+   block.
+
+3. When the next address is requested, a second block, 200.10.10.33 -
+   200.10.10.64, is created. 200.10.10.33 is handed out and the block is added
+   to the front of the in-use list.
+
+4. When this second block gets completely leased, it is moved to the end of the
+   used list (after the first used block).
+
+5. Upon another request, the 200.10.10.65 - 200.10.10.96 block is created,
+   handing out 200.10.10.65 and adding the new block to the front of the in-use
+   list.
+
+   At this point, the in-use and used lists appear similar to the following:
+
+   in-use                                       used (completely leased)
+   ------                                       ------------------------
+   200.10.10.65 - 200.10.10.96 (.65 leased)     200.10.10.1  - 200.10.10.32
+                                                200.10.10.33 - 200.10.10.64
+
+6. If 200.10.10.63 is released, the .33 - .64 block is moved back to the in-use
+   list and the lists look similar to the following:
+
+   in-use                                       used (completely leased)
+   ------                                       ------------------------
+   200.10.10.65 - 200.10.10.96 (.65 leased)     200.10.10.1 - 200.10.10.32
+   200.10.10.33 - 200.10.10.64 (.63 available)
+
+7. If all the addresses from 200.10.10.33 - 200.10.10.64 are released except .64
+   and all the addresses from 200.10.10.1 - 200.10.10.32 are released except
+   .32, the lists look similar to the following:
+
+   in-use                                       used (completely leased)
+   ------                                       ------------------------
+   200.10.10.65 - 200.10.10.96 (.65 leased)
+   200.10.10.33 - 200.10.10.64 (.64 leased)
+   200.10.10.1  - 200.10.10.32 (.32 leased)
+
+   Now the following ranges or addresses are free:
+
+   200.10.10.1  - 200.10.10.31
+   200.10.10.33 - 200.10.10.63
+   200.10.10.66 - 200.10.10.254
+
+   Looking at the in-use blocks above, you can see that the next address that
+   will be offered from this DHCP server will be 200.10.10.66.
+
+======================================================================
+Keywords          : kbnetwork kbinfo kbArtTypeINF 
+Technology        : kbWinNTsearch kbWinNT351search kbWinNT350search kbWinNT400search kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : WinNT:3.5,3.51,4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

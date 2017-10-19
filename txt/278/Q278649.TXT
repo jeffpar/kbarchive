@@ -1,0 +1,68 @@
+DOCUMENT:Q278649  12-NOV-2001  [msnetwork]
+TITLE   :Verify Phone Number in MSN Web Companion
+PRODUCT :The Microsoft Network
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSN Companion, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+MSN Web Companion uses your home phone number in order to configure the settings
+properly and it can be changed at any time.
+
+MORE INFORMATION
+================
+
+Phone Number Set-up
+-------------------
+
+When you first connect to MSN, The Microsoft Network, using the Web Companion,
+MSN Web Companion asks for your home phone number in order to configure the
+settings properly. When asked, type your area code and phone number in the boxes
+provided.
+
+Phone Number Change
+-------------------
+
+To change the phone number on your MSN Companion
+
+1. On the Start page click settings.
+
+2. Click my account and on the my account page verify your phone number.
+
+3. If you need to change your phone number, click change information.
+
+4. In area code box and/or the phone number box delete the old information, type
+   the correct information, and then click done.
+
+Additional query words: kbimu
+
+======================================================================
+Keywords          :  
+Technology        : _IKkbbogus kbMSNSearch kbMSNCompanion
+Version           : :1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

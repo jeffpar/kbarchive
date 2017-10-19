@@ -1,0 +1,94 @@
+DOCUMENT:Q195726  19-DEC-1999  [homemm]
+TITLE   :Virtual Globe 99: Current Speed Not Displayed in Virtual Flights
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbdisplay kbenv kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Virtual Globe 99, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Virtual Flights feature of Encarta Virtual Globe 99, the bottom
+of the screen may be cut off. This behavior may prevent you from being able to
+see the current speed at which you are travelling.
+
+CAUSE
+=====
+
+This behavior can occur if your screen resolution is set to 640 x 480 pixels.
+
+RESOLUTION
+==========
+
+To resolve this issue, use one of the following methods:
+
+Increase Screen Resolution
+--------------------------
+
+Increase your screen resolution to a setting of 800 x 600 pixels or higher. To do
+this, follow these steps:
+
+1. Click Start, point to Settings, and then click Control Panel.
+
+2. Double-click Display.
+
+3. Click the Settings tab.
+
+4. Move the Display Area or Screen Area slider to the right until the screen
+   resolution shown underneath the slider is 800 x 600 pixels or higher.
+
+5. Click OK, and then click OK again.
+
+6. When you are prompted to keep the new desktop setting, click Yes.
+
+7. Close Control Panel.
+
+Enable Auto Hide Taskbar Setting
+--------------------------------
+
+Enable the Auto Hide taskbar setting. To do this, follow these steps:
+
+1. Click Start, point to Settings, and then click Taskbar or Taskbar & Start
+   Menu.
+
+2. On the Taskbar Options tab, click to select the Auto Hide check box.
+
+3. Click OK.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta Virtual Globe
+99, version 1.0.
+
+Additional query words: multi multi-media media mm world atlas evg
+
+======================================================================
+Keywords          : kbdisplay kbenv kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaVirtGlobe99
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,167 @@
+DOCUMENT:Q221101  11-JAN-2001  [vbwin]
+TITLE   :BUG: Visual Basic App Crashes Passing UDT w/ String & Enum
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER:WINDOWS:4.0,5.0,6.0
+OPER/SYS:
+KEYWORDS:kbDLL kbVBp400bug kbVBp500bug kbVBp600bug kbVC kbGrpDSVB
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Standard Edition, 32-bit, for Windows, versions 4.0, 5.0 
+ - Microsoft Visual Basic Professional Edition, 32-bit, for Windows, versions 4.0, 5.0 
+ - Microsoft Visual Basic Enterprise Edition, 32-bit, for Windows, versions 4.0, 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If a Visual Basic application retrieves a User Defined Type (UDT) containing
+String and Enum fields from a C++ DLL, the Visual Basic application crashes on
+the call to the DLL file. No error message is displayed.
+
+RESOLUTION
+==========
+
+Use the Long data type instead of Enum in the Type declaration of the Visual
+Basic UDT.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+Steps to Reproduce Behavior
+---------------------------
+
+1. Start Visual C++ 6.0. From the File menu, choose New.
+
+2. Select the Projects tab. Select Win32 Dynamic-Link Library from the list, and
+   then enter MyDll in the Project Name field. Click OK.
+
+3. In the Win32 Dynamic-Link Library dialog box, select the An empty DLL project
+   option, and click Finish. Click OK in the following dialog box.
+
+4. From the File menu, choose New. Select the Files tab, choose C++ Source File
+   from the list, and then enter MyDll.cpp in the File Name field. Click OK.
+
+5. Paste the following code in the MyDll.cpp pane:
+
+      #include <windows.h>
+      // the UDT declaration
+
+      enum VBenum
+      {
+         wf1 = 1,
+         wf8 = 8,
+         wf1e = 0x1E
+      };
+
+      typedef struct
+      {
+   	char	cArray[30];
+   	VBenum	lformat;
+      } mUDT; 
+
+      // dll's export method
+      int _stdcall passUDT(mUDT* pU)
+      {
+   	char* cp="hello, world!";
+   	strncpy(pU->cArray, cp, 14);
+   	pU->lformat = wf1e;
+   	return 30;
+      }
+
+6. From the File menu, click New. Select the Files tab, and then choose Text
+   File from the list. Enter MyDll.def in the File Name field.
+
+   Paste the following code in the MyDll.def pane:
+
+      ; The DEF File
+      LIBRARY MyDll
+
+      EXPORTS
+   	passUDT	@1
+
+7. From the Build menu, choose Rebuild All. Exit Visual C++.
+
+8. Start a new Visual Basic project. Form1 is created by default.
+
+9. Add two CommandButtons to Form1.
+
+10. Copy the following code into the General Declarations section of Form1:
+
+      Private Enum MyEnum
+         wf1 = &H1&
+         wf8 = &H8&
+         wf1e = &H1E&
+      End Enum
+
+      Private Type MyUDT1
+          myStr As String * 30
+          mL As MyEnum
+      End Type
+
+      Private Type MyUDT2
+          myStr As String * 30
+          mL As Long
+      End Type
+
+      Private Declare Function passUDT1 Lib "c:\MyDll\Debug\MyDll.dll" _
+           Alias "passUDT" (myU As MyUDT1) As Long
+      Private Declare Function passUDT2 Lib "c:\MyDll\Debug\MyDll.dll" _
+           Alias "passUDT" (myU As MyUDT2) As Long
+
+      ' Visual Basic crashes on the call to passUDT1.
+      Private Sub Command1_Click()
+          Dim mU As MyUDT1
+          MsgBox passUDT1(mU)
+          MsgBox mU.myStr
+      End Sub
+
+      ' Visual Basic works correctly on the call to passUDT2.
+      Private Sub Command2_Click()
+          Dim mU As MyUDT2
+          MsgBox passUDT2(mU)
+          MsgBox mU.myStr
+      End Sub
+
+11. Modify the two Declare statements in the preceding code example so that they
+   point to the location of the MyDll.dll file on your system.
+
+12. Run the project and click Command2. Two Message Boxes display to confirm
+   that no error occurred.
+
+13. Click Command1 and Visual Basic crashes without an error message.
+
+Additional query words: Structure
+
+======================================================================
+Keywords          : kbDLL kbVBp400bug kbVBp500bug kbVBp600bug kbVC kbGrpDSVB 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600 kbVB400Search kbVB400
+Version           : WINDOWS:4.0,5.0,6.0
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

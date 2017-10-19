@@ -1,0 +1,97 @@
+DOCUMENT:Q156548  14-AUG-1999  [foxpro]
+TITLE   :HOWTO: Use the Object Property to Reference Methods/Properties
+PRODUCT :Microsoft FoxPro
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbOOP kbvfp500 kbvfp600
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, versions 5.0, 6.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+A new Application property has been added to all objects in Visual FoxPro
+version 5.0. This includes both the OLE Bound control and the OLE Container
+control. If you have OLE Automation code that does not use the Object property
+(.object) to reference the various properties and methods of the object, a
+conflict occurs between the Visual FoxPro Application property and the
+Application property of the OLE object.
+
+MORE INFORMATION
+================
+
+If you have OLE Automation code in which you have not used the Object property
+(.object) to reference the properties and methods of the OLE object, then Visual
+FoxPro 5.0 assumes the references are for the Visual FoxPro Application object
+properties and methods.
+
+For example, create an OLE object with the following commands:
+
+      PUBLIC frmMyForm
+      frmMyForm = CREATEOBJECT("form")
+      frmMyForm.AddObject("oleTest","OLEControl","Excel.Chart")
+      frmMyForm.Visible=.T.
+
+After the code runs, a form appears, but you do not see the Excel chart.
+
+Now enter the following command:
+
+      WAIT WINDOW frmMyForm.oleTest.Application.Name
+
+The message that appears is "Microsoft Visual FoxPro" in Visual FoxPro version
+5.0 and "Microsoft Excel" in Visual FoxPro version 3.x.
+
+To make the Excel chart object appear, issue the following command:
+
+      frmMyForm.oleTest.Object.Application.Visible=.t.
+
+If you use the following Quit method:
+
+      frmMyForm.oleTest.application.quit
+
+Visual FoxPro version 5.0 calls the Quit method of Visual FoxPro, instead of the
+Quit method of the OLE object as in Visual FoxPro version 3.x.
+
+In order to reference the properties and methods of the OLE object, you need to
+update your code to use the Object property as in the following line of code:
+
+      WAIT WINDOW frmMyForm.oleTest.Object.Application.Name
+      frmMyForm.oleTest.Object.Application.Quit
+
+REFERENCES
+==========
+
+Visual FoxPro 5.0 Help; search on "Application property"
+Visual FoxPro 6.0 Help; search on "Application property"
+
+NOTE: In Visual FoxPro 5.0, this help topic incorrectly lists only Application
+Object and _VFP System Variable in the applies to list. This property is exposed
+to all Visual FoxPro base classes.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbOOP kbvfp500 kbvfp600 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP500 kbVFP600
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,61 @@
+DOCUMENT:Q201781  25-NOV-1999  [sms]
+TITLE   :SMS: Clients with Static IP Addresses Not Network Discovered
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:2.0; winnt:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbDiscovery smsinstkbfaq
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 2.0 
+ - Microsoft Systems Management Server Installer version 2.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When Systems Management Server tries to discover devices through network
+discovery by querying the DHCP server, it is able to find devices with dynamic
+IP addresses, but not those with static addresses.
+
+MORE INFORMATION
+================
+
+If static IP addresses are used in your environment, there are two ways to
+discover these devices:
+
+ - Use network discovery and leave the computer on the network constantly. As a
+   result, it should appear in the NetToMediaTable of its local router. When the
+   router is detected, it will be added to SNMP devices and the computer with
+   the static address will be discovered.
+
+ - Use domain discovery in the computer's domain. Domain discovery will
+   enumerate the client machines through the domain master browser and will
+   discover machines regardless of how they receive their IP address.
+
+
+Additional query words: prodsms netdisc
+
+======================================================================
+Keywords          : kbsms200 kbDiscovery smsinst kbfaq
+Technology        : kbSMSSearch kbSMS200 kbSMSI200
+Version           : WINDOWS:2.0; winnt:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

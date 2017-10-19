@@ -1,0 +1,67 @@
+DOCUMENT:Q154476  02-APR-1999  [exchange]
+TITLE   :XCLN: System 11 Error w/Cleared "Show Rules for All Profiles"
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Macintosh client, version 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you clear the Show Rules for all Profiles checkbox on the Microsoft
+Exchange Client for Macintosh, a System 11 error occurs. This only occurs when
+an Alert Inbox rule has been created using a Microsoft Exchange client for
+Windows and only on PowerMac computers.
+
+WORKAROUND
+==========
+
+1. Delete all rules with "alerts" from the Windows client. (that is, in Tools,
+   Inbox Assistant, highlight any rule with "alert" and delete.)
+
+2. Click OK and save the Inbox Rules from the Windows client.
+
+3. Re-create rules from the Mac client(that is, in Tools, Inbox Assistant,
+   Add...).
+
+4. Click OK to save the Inbox Rules from the Mac client.
+
+NOTE: This workaround does not apply for sound rules.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange version 4.0.
+We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbHWMAC kbOSMAC kbExchangeSearch kbExchangeClientSearch kbExchange400Mac
+Version           : WINDOWS:4.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

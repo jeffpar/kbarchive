@@ -1,0 +1,83 @@
+DOCUMENT:Q178415  07-MAY-2002  [homegame]
+TITLE   :FS98: Installation Under Microsoft Windows NT Workstation 4.0
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:; winnt:4.0
+OPER/SYS:
+KEYWORDS:kbsetup kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Flight Simulator 98 
+ - the operating system: Microsoft Windows NT 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Microsoft Flight Simulator 98 Setup screen is different in Microsoft Windows
+NT 4.0 than it is in Microsoft Windows 95.
+
+MORE INFORMATION
+================
+
+When you install Flight Simulator 98 under Windows 95, the Setup screen presents
+you with the following six options:
+
+ - Run Demos
+ - Web Page
+ - Set up Microsoft Flight Simulator 98
+ - Install DirectX 5.0
+ - ReadMe
+ - Exit
+
+When you install Flight Simulator 98 under Windows NT Workstation 4.0, you
+receive the following message:
+
+   Certain features that require hardware driver support may not be available
+   when running under Windows NT 4.0.
+
+When you click OK, the Setup screen presents you with the following six options:
+
+ - Run Demos
+ - Web Page
+ - Set up Microsoft Flight Simulator 98
+ - Install DirectPlay 5.0
+ - ReadMe
+ - Exit
+
+Windows NT 4.0 does not support all the DirectX 5.0 functions of Flight Simulator
+98. DirectPlay is the only DirectX 5.0 component supported by Windows NT 4.0.
+
+The most recent version of DirectX that is supported on Windows NT 4.0 is DirectX
+3.0 DirectX 3.0 is part of Windows NT Service Pack 3.0. More information on
+Windows NT Service Pack 3.0 can be found at:
+
+   http://backoffice.microsoft.com/downtrial/moreinfo/nt4sp3.asp
+
+NOTE: Flight Simulator 98 is not supported in Windows NT Server 4.0.
+
+Additional query words: 4.00 fs98 flightsim fltsim flt sim
+
+======================================================================
+Keywords          : kbsetup kbimu 
+Technology        : kbOSWinSearch kbOSWinNT400 kbGamesSearch kbFlightSimSearch kbFlightSim98 kbOSWinNTSearch kbSimSearch
+Version           : WINDOWS:; winnt:4.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,63 @@
+DOCUMENT:Q244462  28-JUL-2001  [win95x]
+TITLE   :Err Msg: Cannot Start Verifying User Name and Password
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbtool dun kbDialUp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to establish a Dial-Up Networking connection, you may receive
+the following error message:
+
+   Cannot start verifying user name and password.
+
+CAUSE
+=====
+
+This error message can occur if some of the Dial-Up Networking components are
+not installed correctly.
+
+RESOLUTION
+==========
+
+To resolve this issue, remove and reinstall all the networking components in the
+Network properties, and remove and reinstall the Dial-Up Networking components.
+
+For additional information about removing the networking and Dial-Up Networking
+components, click the article number below to view the article in the Microsoft
+Knowledge Base:
+
+   Q181599 How to Remove and Reinstall Dial-Up Networking and TCP/IP Files
+
+Additional query words:
+
+======================================================================
+Keywords          : kbenv kberrmsg kbtool dun kbDialUp 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : WINDOWS:95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

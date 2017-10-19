@@ -1,0 +1,65 @@
+DOCUMENT:Q73291  17-DEC-2000  [msdos]
+TITLE   :Gibson Research Spinrite II and MS-DOS 5.x/6.x
+PRODUCT :Microsoft Disk Operating System
+PROD/VER:MS-DOS:5.x,6.0,6.2,6.21,6.22
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MS-DOS operating system versions 5.0, 5.0a, 6.0, 6.2, 6.21, 6.22 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Gibson Research produces a low-level formatting utility called Spinrite II.
+Spinrite II versions 1.1 and 2.0 are compatible with MS-DOS 5.x, 6.0, 6.2, and
+6.21 in most cases.
+
+According to Gibson Research, Spinrite II version 2.0 is essentially the same as
+version 1.1, but it contains fixes for a few obscure hard drive controllers.
+Version 2.0 was released in March of 1991, and can be identified by a serial
+number on the opening screen starting with the letter D or a subsequent letter
+(that is, D-Z).
+
+Spinrite II version 1.0 is not compatible with MS-DOS 5.0 and later. This version
+can be identified by serial numbers beginning with the letter B or C.
+
+MORE INFORMATION
+================
+
+Spinrite II version 2.0 is available from Gibson Research as a free upgrade for
+customers with earlier Spinrite II versions.
+
+For information on appropriate means to low-level format your drive, contact your
+hardware manufacturer or drive manufacturer.
+
+Spinrite II is manufactured by Gibson Research, a vendor independent of
+Microsoft; we make no warranty, implied or otherwise, regarding this product's
+performance or reliability.
+
+Additional query words: 6.22 1.00 1.10 2.00 5.00 5.00a 6.00 6.20 3rdparty
+
+======================================================================
+Keywords          :  
+Technology        : kbMSDOSSearch kbMSDOS621 kbMSDOS622 kbMSDOS620 kbMSDOS600 kbMSDOS500 kbMSDOS500a
+Version           : MS-DOS:5.x,6.0,6.2,6.21,6.22
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

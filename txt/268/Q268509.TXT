@@ -1,0 +1,55 @@
+DOCUMENT:Q268509  27-OCT-2000  [homegame]
+TITLE   :WEP2K: Incorrect Scores Are Displayed for Saved Hearts Game
+PRODUCT :Microsoft Home Games
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kbdisplay kbimu msgame
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Plus! Game Pack: Cards and Puzzles 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you load a saved game of Hearts from Microsoft Plus! Entertainment Pack:
+Cards & Puzzle Edition, incorrect scores may be displayed for the saved
+game.
+
+CAUSE
+=====
+
+This behavior can occur if you load the saved game from the main menu.
+
+RESOLUTION
+==========
+
+To prevent this issue from occurring, load saved games of Hearts from the game
+screen rather than the main menu.
+
+Additional query words: 1.00 msgame millions billions bicycle wrong
+
+======================================================================
+Keywords          : kbdisplay kbimu msgame 
+Technology        : kbGamesSearch kbPlusSearch
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

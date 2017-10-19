@@ -1,0 +1,63 @@
+DOCUMENT:Q190532  07-APR-2000  [sna]
+TITLE   :Import COBOL Wizard Cannot Select LL, ZZ, TRANCODE (IMS)
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:1.0,4.0 SP1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft COM Transaction Integrator for CICS and IMS, version 1.0, used with:
+    - Microsoft SNA Server, version 4.0 SP1 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+While using the Component Builder's Import COBOL Wizard, the user is asked to
+select the IMS-related variables for the LL, ZZ, and TRANCODE fields for
+exclusion from the parameter list. However, the Select control button is not
+enabled.
+
+WORKAROUND
+==========
+
+To work around this problem, skip the steps of the Import COBOL Wizard for
+excluding the LL, ZZ, and TRANCODE fields. Perform all the other steps. After
+the wizard is finished, while still in the Component Builder, go to the
+parameter list created for each IMS method and manually remove the parameters
+specified for these IMS-related variables, the LL, ZZ, and TRANCODE fields.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the Microsoft COM Transaction
+Integrator for CICS and IMS version 1.0 included with SNA Server version 4.0
+Service Pack 1.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbCOMTISearch
+Version           : WINDOWS:1.0,4.0 SP1
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

@@ -1,0 +1,84 @@
+DOCUMENT:Q87790  29-OCT-1999  [utilities]
+TITLE   :DOCERR: Incorrectly States /PACKC Is Off by Default
+PRODUCT :Microsoft Programming Utilities
+PROD/VER:MS-DOS:5.1,5.11,5.13,5.15,5.2; OS/2:5.1,5.11,5.13,5.15
+OPER/SYS:
+KEYWORDS:kb16bitonly
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft LINK for MS-DOS, versions 5.1, 5.11, 5.13, 5.15, 5.2 
+ - Microsoft LINK for OS/2, versions 5.1, 5.11, 5.13, 5.15 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+According to the printed and online documentation for versions of Microsoft LINK
+earlier than version 5.3, the default setting for the /PACKC[ODE] linker option
+switch is off. This statement is incorrect.
+
+The documentation for LINK version 5.3 includes the following correct statement:
+
+   Code-segment packing is on by default for segmented executable files and for
+   DOS programs created with overlays or with the /TINY option.
+
+The /NOPACKC[ODE] switch turns code-segment packing off.
+
+MORE INFORMATION
+================
+
+To see how code packing changes the executable file, examine the map file that
+LINK creates. In the two partial map files below, each logical segment has a
+distinct physical segment address when the file is linked with /NOPACKCODE but
+the logical segments share a physical segment when /PACKCODE is on (the default
+behavior).
+
+   Start      Length      Name
+   0001:0000  0114CH      _TEXT
+   0002:0000  00972H      MOD_TEXT      //  code packing off /NOPACKCODE
+   0003:0000  0137DH      MOD2_TEXT
+   0004:0000  0021EH      MOD3_TEXT
+
+   Start      Length      Name
+   0001:0000  00934H      _TEXT
+   0001:0934  01354H      MOD_TEXT      // code packing on   (default)
+   0001:1C88  00ADAH      MOD2_TEXT
+   0001:2762  014ABH      MOD3_TEXT
+
+The /PACKCODE switch is documented incorrectly in the following four locations:
+
+ - Microsoft C "Reference" manual for version 6.0, page 31
+
+ - Microsoft FORTRAN "Environment and Tools" manual for version 5.1, version 379
+
+ - Microsoft Macro Assembler (MASM) "Programmer's Guide" manual for version 6.0,
+   page 354
+
+ - Microsoft QuickC for Windows (QC/Win) "Toolkit" manual for version 1.0, page
+   219
+
+Additional query words: 5.10 5.11 5.13 5.15 5.20
+
+======================================================================
+Keywords          : kb16bitonly 
+Technology        : kbAudDeveloper kbZNotKeyword3 kbLINKSearch kbLINK510DOS kbLINK511DOS kbLINK513DOS kbLINK515DOS kbLINK520DOS kbLINK510OS2 kbLINK511OS2 kbLINK513OS2 kbLINK515OS2
+Version           : MS-DOS:5.1,5.11,5.13,5.15,5.2; OS/2:5.1,5.11,5.13,5.15
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

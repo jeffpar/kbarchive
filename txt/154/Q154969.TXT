@@ -1,0 +1,90 @@
+DOCUMENT:Q154969  28-JUL-2001  [win95x]
+TITLE   :Problem Installing Rnaplus.inf File
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:95
+OPER/SYS:
+KEYWORDS:dun win95 kbDialUp
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to install SLIP and Scripting for Dial-Up Networking by using the
+right mouse button to click the Rnaplus.inf file and then clicking Install, it
+may not be installed.
+
+CAUSE
+=====
+
+The Rnaplus.inf file included on the Windows 95 CD-ROM does not include the
+[DefaultInstall] section required for installing programs using the context
+menu.
+
+
+RESOLUTION
+==========
+
+To install SLIP and Scripting for Dial-Up Networking, use either of the
+following methods:
+
+Method 1
+--------
+
+1. In Control Panel, double-click Add/Remove Programs.
+
+2. On the Windows Setup tab, click Have Disk.
+
+3. Type the path for the Rnaplus.inf file, and then click OK.
+
+   NOTE: If you are using the Windows 95 CD-ROM, the path is
+
+   <drive>:\Admin\Apptools\Dscript
+
+   where <drive> is the letter for the CD-ROM drive.
+
+4. Click the "SLIP and Scripting for Dial-Up Networking" check box to select it,
+   and then click Install.
+
+Method 2
+--------
+
+1. Click the "SLIP and Scripting Support" link on the following Microsoft Web
+   page:
+
+   http://www.microsoft.com/windows/software/admintools.htm
+
+2. Download the Dscript.exe file to an empty folder on your hard disk.
+
+3. Double-click the Dscript.exe file you downloaded to extract the files it
+   contains.
+
+4. Use the right mouse button to click the Rnaplus.inf file extracted in step 3,
+   and then click Install on the menu that appears.
+
+======================================================================
+Keywords          : dun win95 kbDialUp 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : 95
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

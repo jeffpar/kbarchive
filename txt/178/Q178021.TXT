@@ -1,0 +1,55 @@
+DOCUMENT:Q178021  21-JUL-2000  [exchange]
+TITLE   :XFOR: Many DAT Files in the Mtadata Directory
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you look in the Microsoft Exchange Server Mtadata directory, you may find a
+large number of .dat files, for example, DB000123.DAT. Many of these files are
+only 1 byte in size. This is also true, even if the Exchange Server message
+transfer agent (MTA) does not have any messages in the queues held for delivery.
+
+CAUSE
+=====
+
+This is by product design. In Microsoft Exchange Server 5.5, the MTA creates DAT
+files for all messages. After the messages have been delivered, instead of
+deleting the DAT files themselves, the data is deleted from the DAT files and
+the files are reset to 1 byte. The DAT files can be reused for future messages.
+This is done to enhance the performance of the MTA because creating and deleting
+files is a time consuming process. The number of .dat files will reflect the
+maximum number of messages in the queue at any one time.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

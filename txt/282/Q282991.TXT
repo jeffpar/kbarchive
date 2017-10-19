@@ -1,0 +1,66 @@
+DOCUMENT:Q282991  06-AUG-2002  [win95x]
+TITLE   :You Cannot Browse IP Addresses by Using a UNC switch in Windows
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::
+OPER/SYS:
+KEYWORDS:kburl win95
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows 95 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to access another computer from a Windows 95-based computer by
+using the \\<IP_Address> Uniform Naming Convention (UNC) switch (for
+example, if you run the following command from a command prompt: \\192.168.1.2),
+you may receive the following error message:
+
+   \\<IP Address>
+   The Network Name can not be found
+
+This error message occurs even if there is connectivity between the computers.
+For example, they are able to use a ping command to find each other in Network
+Neighborhood.
+
+CAUSE
+=====
+
+This error message occurs because of a problem with the Windows 95 Winsock
+files.
+
+RESOLUTION
+==========
+
+To resolve this issue, download and install the Winsock2 update from the
+following Microsoft Web site:
+
+   http://www.microsoft.com/windows95/downloads/contents/wuadmintools/s_wunetworkingtools/w95sockets2/default.asp
+
+Additional query words:
+
+======================================================================
+Keywords          : kburl win95 
+Technology        : kbWin95search kbZNotKeyword3
+Version           : :
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

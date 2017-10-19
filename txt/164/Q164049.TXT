@@ -1,0 +1,86 @@
+DOCUMENT:Q164049  14-MAY-1999  [exchange]
+TITLE   :XCON: MTA: Remote X.400 MTA Fails to Decode NDR from Exchange
+PRODUCT :Microsoft Exchange
+PROD/VER:4.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 4.0 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When sending a message from a remote X.400 MTA through Microsoft Exchange Server
+to the Internet, the remote X.400 MTA may fail to decode a Non Delivery Report
+(NDR). The Non Delivery Report is created by the Microsoft Exchange Server.
+
+CAUSE
+=====
+
+In the Non Delivery Report the "ReportTransferEnvelopeExtension" is empty. This
+field is in the "ReportTransferEnvelopeExtensionsFields," which is in the
+"ReportTransferEnvelope." This is a violation of the P1 encoding as described in
+the X.411 Blue Book specification.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 4.0. This problem has been corrected in the latest U.S. Service Pack for
+Microsoft Exchange Server version 4.0. For information on obtaining the Service
+Pack, query on the following word in the Microsoft Knowledge Base (without the
+spaces):
+
+   S E R V P A C K
+
+
+MORE INFORMATION
+================
+
+A message sent using the following route may cause a Non Delivery Report:
+
+    X.400 MTA -> 1988 X.400 Connector -> Microsoft Exchange Server -> Internet
+    Mail Connector -> Internet
+
+The user on the X.400 MTA sends to an Internet recipient. The address of the
+Internet recipient is included in the DDA Type and DDA value fields.
+
+For Example:
+
+c=US;a=ADMD;p=PRMD;o=ORG;dda.type=SMTP;dda.value=USER(A)DOMAIN
+
+If the user sends to an incorrect address, for example:
+
+c=US;a=ADMD;p=PRMD;o=ORG;s=TEST;dda.type=SMTP;dda.value=USER(A)DOMAIN
+
+Microsoft Exchange Server creates a Non Delivery Report for this message, which
+is correct behavior. The remote X.400 MTA may not be able to decode this Non
+Delivery Report.
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange400 kbZNotKeyword2
+Version           : 4.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,55 @@
+DOCUMENT:Q66824  30-JUL-2001  [homegame]
+TITLE   :Flight Simulator: Score Window Disappears in Crop Duster Mode
+PRODUCT :Microsoft Home Games
+PROD/VER:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+SUMMARY
+=======
+
+The following procedure causes the Crop Duster score window to disappear in
+Flight Simulator version 4.00:
+
+Steps to Reproduce Problem
+--------------------------
+
+1. From the Mode menu, select option 5, Entertainment.
+
+2. Select option 3, Crop Duster.
+
+3. Take off and crash the airplane.
+
+4. Press the SPACEBAR to restart Crop Duster entertainment mode.
+
+The score window has now disappeared.
+
+Pressing PRINT SCREEN or choosing Reset Mode from the Mode menu does NOT make the
+score window reappear. The only way to make the menu reappear is to exit
+entertainment mode and reenter.
+
+Microsoft has confirmed this to be a problem in Flight Simulator version 4.00. We
+are researching this problem and will post new information here as it becomes
+available.
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

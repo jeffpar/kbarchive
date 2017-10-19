@@ -1,0 +1,61 @@
+DOCUMENT:Q255882  25-JUN-2000  [exchange]
+TITLE   :XFOR: Migrating Double-Byte Character Set Messages from cc:Mail
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.5
+OPER/SYS:
+KEYWORDS:exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you migrate messages from Lotus cc:Mail, the language of the operating
+system that the Migration Wizard runs on determines the CODEPAGE switch of the
+Import and Export processes that the Migration Wizard starts.
+
+Therefore, if you migrate messages from cc:Mail that contain double-byte
+character set (DBCS) characters, you need to run the Migration Wizard on an
+operating system of that particular language.
+
+For example, if you migrate messages that contain Chinese characters, run the
+Migration Wizard on the Chinese version of Microsoft Windows NT Server. US-ASCII
+characters are migrated correctly because they are a subset of DBCS.
+
+MORE INFORMATION
+================
+
+If the incorrect CODEPAGE switch is used to extract messages from cc:Mail, the
+Migration Wizard does not migrate DBCS characters correctly, even when you use
+the two-step migration process and modify the CodePage header in the .pkl file.
+The DBCS characters in the migration files are already corrupted.
+
+
+Additional query words: Japanese Korean
+
+======================================================================
+Keywords          : exc55 
+Technology        : kbExchangeSearch kbExchange550 kbZNotKeyword2
+Version           : winnt:5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

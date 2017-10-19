@@ -1,0 +1,61 @@
+DOCUMENT:Q175841  18-DEC-1999  [exchange]
+TITLE   :XFOR: SMTP Header Discarded with No Message Content
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0,5.5
+OPER/SYS:
+KEYWORDS:exc5 exc55
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, versions 5.5, 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When the Microsoft Exchange Server Internet Mail Service receives an inbound
+Simple Mail Transfer Protocol (SMTP) message, the message is formatted according
+to the header information defined in the Data section of the message (that is,
+Subject:, To:, From:).
+
+If the last header line is not followed by a null line, plus a carriage
+return/line feed (CR/LF), the last header field will not be displayed to the
+recipient of the message.
+
+Some SMTP hosts may send out mail in this format when there is no message
+content, and therefore, the above behavior is expected.
+
+The following excerpt from RFC 822 explains the proper header formatting, so that
+the message content is separated from the header content consistently.
+
+   3.1. GENERAL DESCRIPTION
+   A message consists of header fields and, optionally, a body. The body is
+   simply a sequence of lines containing ASCII characters. It is separated from
+   the headers by a null line (i.e., a line with nothing preceding the CRLF).
+
+
+Additional query words:
+
+======================================================================
+Keywords          : exc5 exc55 
+Technology        : kbExchangeSearch kbExchange500 kbExchange550 kbZNotKeyword2
+Version           : winnt:5.0,5.5
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

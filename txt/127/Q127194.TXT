@@ -1,0 +1,98 @@
+DOCUMENT:Q127194  06-MAY-2001  [visualc]
+TITLE   :FIX: CMap Template Class Leaks Non-Primitive KEY Objects
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:2.0
+OPER/SYS:
+KEYWORDS:kbcode kbnokeyword kbtemplate kbMFC kbVC200 kbVC200fix kbGrpDSMFCATL kbCollectionClass
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Foundation Classes (MFC), used with:
+    - Microsoft Visual C++, 32-bit Editions, version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When using the CMap template class, users may notice a memory leak when using
+non-primitive objects as KEY values (for example, CString).
+
+CAUSE
+=====
+
+The CMap class does not call the destructor for its KEYs when it does a
+RemoveAll().
+
+RESOLUTION
+==========
+
+Because the CMap class is implemented in AFXTEMPL.H, users can add a single line
+to the CMap::RemoveAll() member function in this file to correct this problem.
+The new line is marked with a //NOTE: in the following code:
+
+   template<class KEY, class ARG_KEY, class VALUE, class ARG_VALUE>
+   void CMap<KEY, ARG_KEY, VALUE, ARG_VALUE>::RemoveAll()
+   {
+       ASSERT_VALID(this);
+
+       if (m_pHashTable != NULL)
+       {
+           // destroy elements (values and keys)
+           for (UINT nHash = 0; nHash < m_nHashTableSize; nHash++)
+           {
+               CAssoc* pAssoc;
+               for (pAssoc = m_pHashTable[nHash]; pAssoc != NULL;
+                 pAssoc = pAssoc->pNext)
+               {
+                   DestructElements(&pAssoc->value, 1);
+
+                   //NOTE: Additional call to destruct the keys!
+                   DestructElements(&pAssoc->key, 1);
+               }
+           }
+       }
+
+       // free hash table
+       delete[] m_pHashTable;
+       m_pHashTable = NULL;
+
+       m_nCount = 0;
+       m_pFreeList = NULL;
+       m_pBlocks->FreeDataChain();
+       m_pBlocks = NULL;
+   }
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. This problem was corrected in the Microsoft
+Foundation Classes version 3.1 included with Microsoft Visual C++, 32-bit
+Edition, version 2.1.
+
+Additional query words: CString CMap 3.00 KEY 2.00
+
+======================================================================
+Keywords          : kbcode kbnokeyword kbtemplate kbMFC kbVC200 kbVC200fix kbGrpDSMFCATL kbCollectionClass kbNoUpdate 
+Technology        : kbAudDeveloper kbMFC
+Version           : winnt:2.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

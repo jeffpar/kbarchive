@@ -1,0 +1,63 @@
+DOCUMENT:Q126053  02-FEB-2002  [winnt]
+TITLE   :NTDETECT.COM and INSTALLD.CMD Do Not Exist in Resource Kit
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.5 3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - MSPRESS Microsoft Windows NT Resource Kit, version 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOM
+-------
+
+The Resource Kit Tools for Microsoft Windows NT Help file (RKTOOLS.HLP)
+lists a tool called "NTDETECT.COM: Startup Hardware Detector" in the Setup
+and Troubleshooting Tools section. When you choose it to find more
+information, the following two statements are displayed:
+
+ - At the command prompt, switch to the \RESKIT directory where the Resource
+   Guide utilities are installed, and type INSTALLD.
+
+ - Files required for NTDetect:
+
+   INSTALLD.CMD
+   NTDETECT.COM
+
+The two files, INSTALLD.CMD and NTDETECT.COM, do not exist in the RESKIT
+directory. They also do not exist in the source compact disc or disks of
+the Windows NT 3.51 Resource Kit.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Windows NT version 3.51 Resource
+Kit. We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodnt reskit
+
+======================================================================
+Keywords          :  
+Technology        : kbMSPressSearch kbZNotKeyword6 kbZNotKeyword2 kbZNotKeyword5
+Version           : 3.5 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

@@ -1,0 +1,66 @@
+DOCUMENT:Q140017  06-NOV-1999  [win16sdk]
+TITLE   :BUG: RasDial() Fails with Error 87 in 16-bit App in Windows 95
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:4.0
+OPER/SYS:
+KEYWORDS:kbnetwork kbAPI kbRAS kbSDKPlatform kbOSWin95 kbGrpDSNet
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 4.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A function call to the RasDial() API from a 16-bit Windows-based application
+that is running in Windows 95 fails with error 87 in Windows 95 if the
+hWndNotifier parameter of the RasDial() API is initialized to a NULL value.
+
+RESOLUTION
+==========
+
+An application should always provide a window handle for this parameter even if
+it will not be processing the messages posted by the RAS DLLs to this window.
+
+MORE INFORMATION
+================
+
+Specifying a NULL value for window handle in the RasDial() API call is common
+for a Visual Basic application. In such a scenario, the application makes
+repetitive calls to RasGetConnectStatus() to get the status of the connection.
+However, calling RasDial() in this fashion causes it to fail on Windows 95 with
+error 87.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbnetwork kbAPI kbRAS kbSDKPlatform kbOSWin95 kbGrpDSNet 
+Technology        : kbWinNT400xsearch kbAudDeveloper kbSDKSearch kbWinSDKSearch kbWinSDK400
+Version           : WINDOWS:4.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,62 @@
+DOCUMENT:Q58243  09-OCT-1999  [win95x]
+TITLE   :Cannot Run Real Mode Under Enhanced with SHARE
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you run SHARE, run Microsoft Windows 3.0 in 386 enhanced mode, start an
+MS-DOS prompt, and run real mode Windows 3.0 in the virtual machine, you receive
+the following error:
+
+   Sharing Violation error reading drive C:
+
+CAUSE
+=====
+
+This behavior is by design. With SHARE running, the different virtual machines
+running act just like different network workstations.
+
+MORE INFORMATION
+================
+
+This problem is exactly the same problem as two workstations on a network trying
+to run the same installed version of Windows from a network server. You must set
+things up properly for this to work. All of the files that Windows opens (*.INI,
+*.DLL, *.EXE, *.DRV) must be marked read-only with the MS-DOS ATTRIB command or
+you will get sharing violations. The ATTRIB syntax for read-only is as follows:
+
+      ATTRIB <filename> +r
+
+Additional query words: 3.00 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : WINDOWS:3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

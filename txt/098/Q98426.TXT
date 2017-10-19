@@ -1,0 +1,53 @@
+DOCUMENT:Q98426  30-JUL-2001  [lanman]
+TITLE   :Full Sync on LAN Manager 2.1a/2.2 Servers
+PRODUCT :Microsoft LAN Manager
+PROD/VER:
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+SUMMARY
+=======
+
+To initiate a "full sync" of the Netlogon service on all of the backup and
+member servers under LAN Manager 2.1a or 2.2, the old trick of adding then
+deleting a user no longer works.
+
+MORE INFORMATION
+================
+
+Here is how to accomplish a full sync on the PDC:
+
+1. Stop the server.
+
+2. Change a user (fullname, comment, something trivial).
+
+3. Delete (or rename) $(lanroot)\ACCOUNTS\UASCHG.LOG.
+
+4. Start Netlogon.
+
+When the primary comes back up, it broadcasts a new serial number that is at
+least one higher than that of all the other servers. The other servers ask for
+the changes, and the primary responds with a NERR_SyncRequired because it has no
+record of that one change.
+
+Additional query words: 2.10a 2.1a 2.20 2.2
+
+======================================================================
+Keywords          : kbnetwork 
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

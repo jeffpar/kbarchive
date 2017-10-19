@@ -1,0 +1,57 @@
+DOCUMENT:Q100026  12-NOV-1999  [pcmail]
+TITLE   :3COM: DocErr: 3ComGateDomain Incorrectly Listed as PO1:NET1
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER::1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail Gateway to 3Com 3+Mail, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The documentation for version 1.00 of the Microsoft Mail Gateway to 3Com 3+Mail
+contains an error that can disrupt gateway installation.
+
+Page 22 of the "Administrator's Guide" states that the 3ComGateDomain entry is
+PO1:NET1, when it would more commonly be entered as MSMAIL:MS, as follows:
+
+   3ComGateDomain=MSMAIL:MS
+
+Although PO1:NET1 is a legal 3+ name and may work, it is an unlikely name for a
+new 3+Mail domain.
+
+In keeping with the example on page 19, the new domain for the example on page 22
+is MSMAIL and the original organization is MS, so the entry should be MSMAIL:MS.
+This would log the computer on to the 3Com XNS Name/Mail service as:
+
+   _GATEWAY:MSMAIL:MS.
+
+
+Additional query words: 1.00 err
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbMailGateSearch kbZNotKeyword3 kbMailGate3COM3Plus100
+Version           : :1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

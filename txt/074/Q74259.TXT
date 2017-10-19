@@ -1,0 +1,69 @@
+DOCUMENT:Q74259  09-OCT-1999  [win95x]
+TITLE   :Windows Err Msgs: Compressed Windows Utilities
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+ - Microsoft Windows for Workgroups versions 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you run a compressed Windows-based application without any other
+applications running, you receive one of the following error messages:
+
+   Insufficient Memory to Run Application; Close one or more Applications to
+   Increase Available Memory and try again.
+
+   -or-
+
+   This Application has Violated System Integrity and will be terminated. Close
+   all applications, exit Windows, and reboot your computer.
+
+The first error may occur when there is ample memory available and other
+applications run without error. The screen may blink once before returning the
+error message.
+
+An MS-DOS icon generally appears at the bottom of the screen, indicating that an
+MS-DOS-based application has been minimized.
+
+CAUSE
+=====
+
+This problem can occur when the application's .EXE file is corrupted.
+
+RESOLUTION
+==========
+
+To correct this problem, expand a new copy of the .EXE file from your original
+Windows or Windows for Workgroups disks.
+
+Additional query words: 3.00 3.00a 3.10 3.11 unexpanded uncompressed utility filename file name compressed expanded size calculator calc.exe calendar calendar.exe cardfile cardfile.exe clipboard clipbrd.exe clock clock.exe control panel control.exe notepad notepad.exe paintbrush pbrush.exe pif editor pifedit.exe print manager printman.exe recorder recorder.exe reversi reversi.exe solitaire sol.exe system sysedit.exe task taskman.exe terminal terminal.exe
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbWin3xSearch kbWFWSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311 kbWFW310 kbWFW311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

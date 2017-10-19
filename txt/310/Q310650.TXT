@@ -1,0 +1,113 @@
+DOCUMENT:Q310650  24-DEC-2001  [vbwin]
+TITLE   :Known Issues w/ Visual Basic T-SQL Debugger and SQL Server 2000
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbDatabase kbTSQL kbGrpDSVBDB kbDSupportkbbuglist
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+ - Microsoft SQL Server 2000 (all editions) 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Since the release of SQL Server 2000, Microsoft has identified a number of
+issues between SQL Server 2000 and the Visual Basic 6.0 T-SQL Stored Procedure
+Debugger add-in, which originally released in 1998. This article lists the most
+significant issues.
+
+MORE INFORMATION
+================
+
+For additional information about any of the issues that are listed, please
+consult the referenced Microsoft Knowledge Base articles:
+
+ - In Visual Basic Service 6.0 Pack 4 (SP4) and earlier, the debugger does not
+   correctly parse the SQL Server 2000 @RETURN_VALUE parameter, which has been
+   renamed from RETURN_VALUE. As a result, stored procedure parameters are
+   listed incorrectly in the debugger window, and the procedure will not execute
+   correctly. Visual Basic 6.0 SP5 resolves this issue.
+
+   Q272074 FIX: T-SQL Debugger Parses SQL Server 2000 Return Value Incorrectly
+
+ - The SQDBG_SS folder on CD 2 of Microsoft Visual Studio or Visual Basic
+   Enterprise Edition contains a setup program for the automated installation of
+   the debugging components that are required on the SQL Server. However, this
+   setup program fails on SQL Server 2000, and you must install the components
+   manually.
+
+   Q281644 BUG: SQL Debugging Does Not Install Automatically on SQL Server 2000
+
+ - The debugger does not work with SQL Server 2000 Service Pack 1. This problem
+   has been fixed in SQL Server 2000 Service Pack 2.
+
+   Q303324 FIX: SQL Server 2000 Service Pack 1 Breaks Visual Basic T-SQL
+   Debugger
+
+ - The debugger does not work with a named instance of SQL Server 2000.
+
+   Q310647 BUG: Visual Basic 6.0 T-SQL Debugger Fails Against SQL Server 2000
+   Named Instance
+
+REFERENCES
+==========
+
+For additional information about the T-SQL Debugger add-in and other known
+issues, click the article numbers below to view the articles in the Microsoft
+Knowledge Base:
+
+   Q166280 DOC: T-SQL Debugger Server Setup Provides Incorrect Location
+
+   Q170496 INF: Tips for Debugging Stored Procedures from Visual Basic
+
+   Q172099 PRB: T-SQL - Running Remote and Local SQL Debugging
+
+   Q175868 BUG: T-SQL Debugger Does Not Run on NT with User Account
+
+   Q179023 FIX: T-SQL Debugger Hangs When User Has No Execute Permission
+
+   Q190211 PRB: Problems When Visual Basic 5.0 and 6.0 Are Installed on the Same
+   System
+
+   Q190212 BUG: Add-Ins Only Visible to the User Who Installs VB
+
+   Q190451 BUG: Exiting VB While T-SQL Debugger Is Running Causes Hang
+
+   Q191513 BUG: T-SQL Debugger Is Not Invoked Calling Second Stored Procedure
+
+   Q200888 PRB: Cannot Invoke T-SQL Debugger to Automatically Appear Using ADO
+
+   Q223060 FIX: T-SQL Shows Incorrect Parameters in Local Variables Window
+
+   Q254464 PRB: Can't Add the T-SQL Debugger to the Visual Basic Add-in Manager
+
+   Q281297 FIX: Visual Studio 6.0 T-SQL Debugger Buffer Overflow
+
+Additional query words:
+
+======================================================================
+Keywords          : kbDatabase kbTSQL kbGrpDSVBDB kbDSupport kbbuglist
+Technology        : kbVBSearch kbSQLServSearch kbAudDeveloper kbZNotKeyword6 kbSQLServ2000Search kbZNotKeyword2 kbVB600Search kbVB600 kbSQLServ2000
+Version           : :6.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

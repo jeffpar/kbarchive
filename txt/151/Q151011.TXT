@@ -1,0 +1,71 @@
+DOCUMENT:Q151011  01-JUN-2001  [homemm]
+TITLE   :Pregnancy: Text, "Click here..." Prints at Bottom of Articles
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:95
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Pregnancy and Child Care, Preview on MSN 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you print an entire article from Microsoft Pregnancy and Child Care, the
+following text message prints at the bottom of the article.
+
+   Click here for Extra information
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Pregnancy and Child
+Care, Preview on MSN. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+WORKAROUND
+==========
+
+To print the article contents without the text message, copy the article into a
+word processor (such as Microsoft WordPad), edit the article to remove the
+unwanted text. Then, print the article from the word processor.
+
+To accomplish this process, do the following:
+
+1. On the toolbar, click the Options button on the toolbar, and then click Copy.
+
+2. Click the All Text button, then click OK.
+
+3. Open a word processor such as Microsoft WordPad (provided with Windows 95).
+
+4. On the Edit menu, click Paste to paste the article into the word processor.
+
+5. Edit the article to remove the unwanted text, and then print the article from
+   the word processor.
+
+Additional query words: preview multi media multimedia multi-media mmtitles kbmm childcare msnet kbhowto
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch
+Version           : WINDOWS:95
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

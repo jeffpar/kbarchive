@@ -1,0 +1,233 @@
+DOCUMENT:Q162133  13-JUN-2001  [sna]
+TITLE   :SNA Server 3.0 Supports Multiple Connections to Same AS/400
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 3.0, 3.0 SP1, 3.0 SP2, 3.0 SP3, 4.0, 4.0 SP1 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft SNA Server version 3.0 and later can be configured to have multiple
+APPN-capable connections to the same AS/400. Previous versions of SNA Server did
+not support multiple APPN-capable connections to the same AS/400.
+
+For additional information on why SNA Server 2.x did not support multiple
+APPN-capable connections to the same AS/400, please see the following article in
+the Microsoft Knowledge Base:
+
+   Q131625 Multiple APPN-capable Connections to Same AS/400 Not Supported
+
+MORE INFORMATION
+================
+
+For SNA Server to connect to an AS/400, an APPC controller definition must exist
+for SNA Server's local control point name. The APPC controller may be
+autocreated by the AS/400 or manually created by the AS/400 administrator.
+
+The AS/400 allows only a single APPC controller, with a given control point name,
+over any line it supports. Previous versions of SNA Server can only be
+configured with one local control point name. SNA Server versions 3.0 and later
+allow the local control point name to be overridden for each connection defined
+for a particular SNA Server. This allows multiple APPC controllers to be created
+for a single SNA Server.
+
+The following is an example of two 802.2 connections to the same AS/400:
+
+1. Install two DLC 802.2 Link Services via SNA Server Manager and configure each
+   to use a different Local Service Access Point (SAP). The first DLC 802.2 Link
+   Service can be setup to use the default local SAP of 0x4 and the second can
+   be setup to use a local SAP of 0x8. For this example, we will call them
+   SnaDlc1 and SnaDlc2.
+
+   Note: SNA Server 3.0 Service Pack 2 (SP2) added a new Multi-SAP DLC Link
+   Service feature. This feature allows a single DLC 802.2 Link Service to use
+   multiple Local SAPs without requiring a new link service to be installed to
+   use additional Local SAPs for DLC connecting to the same remote network
+   address. If a DLC 802.2 Link Service is installed and configured for
+   Multi-SAP support, there is no need to install additional DLC 802.2 link
+   services to support multiple connections to the same AS/400. The link service
+   is configured for Multi-SAP support by unchecking the "Use Fixed SAP" option
+   in the DLC 802.2 Link Service Properties page. If this option is unchecked,
+   the Local SAP for each connection is configured in the Connection Properties
+   under the Address tab. Please refer to the SNA Server Online help for more
+   information on the Multi-SAP DLC Link Service feature if using SNA Server 3.0
+   SP2 or later.
+
+2. Create and configure an 802.2 connection for the first connection to the
+   AS/400 by selecting Insert -> Connection -> 802.2 from the Menu Bar in
+   Manager. The AS/400 Wizard can also be used to create and configure the
+   connection.
+
+   Note: SNA Server versions 3.0 and later do not create connections for
+   installed link services by default like the previous versions of SNA Server
+   did. SNA Server Manager can be configured to automatically create connections
+   when link services are installed by checking the Automatically Create
+   Connections for New Link Services checkbox under View -> Options.
+
+   Name = Enter a 1 to 8 character connection name.
+   Link Service = SnaDlc1 (or the name of one of the link
+   services added in Step 1)
+   Remote End = Peer System
+   Allowed Directions = Outgoing Calls. Check Incoming Calls if
+   you want the AS/400 to activate the link.
+   Activation = If set to "On Server Startup" (default), then the
+   Switched disconnect (SWTDSC) value on the AS/400
+   controller definition should be set to NO. This
+   causes the underlying link to stay active even if
+   there are no active sessions. Otherwise, if
+   SWTDSC is YES, then SNA Server should be set to
+   "On Demand" activation.
+
+   Select the Address tab:
+
+   Remote Network Address = The Ethernet or Token Ring MAC address of the
+   AS/400.
+
+   Remote SAP Address = 0x4
+
+   Note: If using the Multi-SAP DLC feature available with SNA Server 3.0 SP2 and
+   later, set the Local SAP Address to 0x4.
+
+   Select the System Identification tab:
+
+   Local Node Name:
+
+   Network Name = APPN (or Remote Network ID, RMTNETID value on the
+   AS/400).
+   Control Point Name = This is the remote control point name (RMTCPNAME)
+   value in the AS/400 APPC controller definition.
+   This is set to the local Windows NT machine name
+   by default for all connections that are created.
+   For this connection use the default value, which
+   will be SNASERV1 for this example.
+   Local Node ID = EXCHID value on the AS/400 controller description (if
+   not specified on the AS/400, leave at default - 05D
+   FFFFF).
+
+   Remote Node Name:
+
+   Note: The parameters in the Remote Node Name do not need to be
+   specified for 802.2 connections.
+
+   Network Name = APPN (or remote network ID RMTNETID value on the
+   AS/400).
+   Control Point Name = AS/400 local control point name, configured in the
+   AS/400 Display Network Attributes screen.
+   Remote Node ID = Not used (leave blank).
+
+   Settings in the 802.2 DLC tab can be left at their default settings.
+
+3. Create and configure the second 802.2 connection that will be used to
+   communicate with the AS/400.
+
+   Name = Enter a 1 to 8 character connection name. The name must
+   be different from all other connections names on this
+   SNA Server.
+   Link Service = SnaDlc2 (The other link service that was
+   installed in Step 1).
+   Remote End = Peer System
+   Allowed Directions = Outgoing Calls. Check Incoming Calls if
+   you want the AS/400 to activate the link.
+   Activation = If set to "On Server Startup" (default), then the
+   Switched disconnect (SWTDSC) value on the AS/400
+   controller definition should be set to NO. This
+   causes the underlying link to stay active even if
+   there are no active sessions. Otherwise, if
+   SWTDSC is YES, then SNA Server should be set to
+   "On Demand" activation.
+
+   Select the Address tab:
+
+   Remote Network Address = The Ethernet or Token Ring MAC address of the
+   AS/400.
+   Remote SAP Address = 0x4
+
+   Note: If using the Multi-SAP DLC feature available with SNA Server 3.0 SP2 and
+   later, set the Local SAP Address to 0x8.
+
+   Select the System Identification tab:
+
+   Local Node Name:
+
+   Network Name = APPN (or Remote Network ID, RMTNETID value on the
+   AS/400).
+   Control Point Name = SNASERV2 (Specify a value different than the one
+   used for the previous connection. Note: *** This
+   is the key parameter for allowing multiple APPN-
+   capable connections from a SNA Server to the same
+   AS/400. *** )
+
+   Local Node ID = EXCHID value on the AS/400 controller description (if
+   not specified on the AS/400, leave at default - 05D
+   FFFFF).
+
+   Remote Node Name:
+
+   Note: The parameters in the Remote Node Name do not need to be
+   specified for 802.2 connections.
+
+   Network Name = APPN (or remote network ID RMTNETID value on the
+   AS/400).
+   Control Point Name = AS/400 local control point name, configured in the
+   AS/400 Display Network Attributes screen.
+   Remote Node ID = Not used (leave blank).
+
+   Settings in the 802.2 DLC tab can be left at their default settings.
+
+4. Create two Local APPC LUs for the SNA Server by selecting Insert -> APPC
+   -> Local LU from the SNA Server Manager menu bar.
+
+   Note: If only one Local APPC LU is created, there will be device conflicts
+   when users try to get sessions over each Remote APPC LU if the APPC Device
+   Name is left blank in the 5250 Emulator configuration. This occurs because
+   the default Device Names are generated from the Local APPC LU Name (in other
+   words, LOCALS1, LOCALS2, and so on). If every 5250 Emulator is configured to
+   use a unique device name, this conflict will not occur.
+
+5. Create a Remote APPC LU for each connection to the AS/400 by selecting Insert
+   -> APPC -> Remote LU from the SNA Server Manager menu bar. The Remote
+   LU Alias will be different for each Remote LU, but the Remote LU Name will be
+   the same for both Remote LUs.
+
+For additional information on configuring an SNA Server to communicate with an
+AS/400 over 802.2, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q112158 Configuring SNA Server to Talk to AS/400 Over 802.2
+
+For additional information on configuring an SNA Server to communicate with an
+AS/400 over SDLC, please see the following article in the Microsoft Knowledge
+Base:
+
+   Q112159 Configuring SNA Server to Talk to AS/400 Over SDLC
+
+Additional query words: prodsna cp cpname
+
+======================================================================
+Keywords          :  
+Technology        : kbAudDeveloper kbSNAServSearch kbSNAServ300 kbSNAServ400 kbSNAServ300SP3 kbSNAServ300SP1 kbSNAServ400SP1 kbSNAServ300SP2
+Version           : WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

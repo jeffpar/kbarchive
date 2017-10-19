@@ -1,0 +1,58 @@
+DOCUMENT:Q166876  31-JUL-2001  [sms]
+TITLE   :SMS: Remote Control Stops Win95 Client Using STB Lightspeed
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:1.2
+OPER/SYS:
+KEYWORDS:kb3rdparty kbnetwork kbtshoot smsremtshoot kbRemoteProg
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server version 1.2 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you try to load the remote control agent on a computer running Windows 95
+with an STB Lightspeed 128 graphics card and STB drivers (without Vision 95,
+STB's graphics manager), the screen blacks out and the monitor goes into power
+save mode. You must restart the system to recover.
+
+With Vision 95 loaded, the failure occurs when you exit the remote control agent.
+
+WORKAROUND
+==========
+
+To work around this problem, use the Tseng ET-4000 driver with the STB card.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+version 1.2. We are researching this problem and will post new information here
+in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: prodsms black lock lock-up hang hung freeze
+
+======================================================================
+Keywords          : kb3rdparty kbnetwork kbtshoot smsremtshoot kbRemoteProg 
+Technology        : kbSMSSearch kbSMS120
+Version           : 1.2
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

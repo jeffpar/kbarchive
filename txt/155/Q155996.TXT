@@ -1,0 +1,68 @@
+DOCUMENT:Q155996  08-NOV-2001  [homegame]
+TITLE   :Deadly Tide: Minimum System Requirements
+PRODUCT :Microsoft Home Games
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbfaq
+
+======================================================================
+1.0
+WINDOWS
+kbsetup kbref kbusage kbfaq kbfasttip
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Deadly Tide for Windows 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following article lists the minimum system requirements to run Microsoft
+Deadly Tide.
+
+MORE INFORMATION
+================
+
+The minimum system requirements for Deadly Tide are:
+
+ - A Multimedia PC with Pentium 75 MHz processor or higher processor
+
+ - Microsoft Windows 95 operating system
+
+ - 8 MB of memory (RAM)
+
+ - 25 MB of available hard-disk space
+
+ - Quad-speed CD-Rom drive
+
+ - Super VGA, 256-color monitor with 1 MB VRAM
+
+ - Microsoft Mouse or compatible pointing device; joystick recommended
+
+ - Audio board with speakers or headphones
+
+Additional query words: 1.00 deadly tide system requirements requires cdrom cd rom compact disc disk
+
+======================================================================
+Keywords          :  kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword kbDeadlyTide
+Version           : WINDOWS:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

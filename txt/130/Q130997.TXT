@@ -1,0 +1,175 @@
+DOCUMENT:Q130997  15-FEB-2000  [foxpro]
+TITLE   :How to Use the Caption Fields of a Table in a Form
+PRODUCT :Microsoft FoxPro
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbcode
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual FoxPro for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Visual FoxPro's database offers some nice enhancements for developers. One such
+enhancement is the ability to use a table's caption property to hold the name of
+a field. Then you can reference the field caption property by using DBGETPROP to
+display the field description or name in a label on a form instead of having to
+enter this information manually in the caption property of the label.
+
+MORE INFORMATION
+================
+
+The premise behind this concept is this: Each field in a table has an associated
+caption property. This caption property can hold whatever text you would like to
+put in it, including the English text describing or naming the field.
+
+Sample Code
+-----------
+
+The following code demonstrates the behavior outlined in this article. The code
+has been documented so you can follow along when it executes.
+
+   **========================================================**
+   ** Program name: CAPTEST                                  **
+   ** Purpose     : This program demonstrates how to pro-    **
+   **               gramatically use the caption property of **
+   **               a field in a table                       **
+   **========================================================**
+   SET SAFETY OFF
+   CLOSE ALL
+   CLEAR
+   CREATE DATABASE captest
+   CREATE TABLE cust (Cust_ID C(5), Cust_Name C(20))
+   INSERT INTO cust (Cust_ID, Cust_Name) Values ("00001","Acme Inc")
+   CLOSE ALL
+   OPEN DATABASE captest
+   USE cust
+
+   **--------------------------------------------------------**
+   ** This code is setting the caption property for the 2    **
+   ** fields in the cust table.                              **
+   **--------------------------------------------------------**
+   =DBSETPROP("Cust.Cust_ID","FIELD","CAPTION","Customer ID")
+   =DBSETPROP("Cust.Cust_Name","FIELD","CAPTION","Customer Name")
+
+   **--------------------------------------------------------**
+   ** This block of code creates the form for the display.   **
+   **--------------------------------------------------------**
+   frmMyForm = CREATEOBJECT('Form')
+   frmMyForm.Width      = 450
+   frmMyForm.Height     = 100
+   frmMyForm.Caption    = "Caption Test"
+   frmMyForm.AutoCenter =.T.
+
+   **-------------------------------------------------------**
+   ** This code adds the label and text box objects for the **
+   ** customer id information.                              **
+   **-------------------------------------------------------**
+   frmMyForm.AddObject('lblCustID','lblCust_ID')
+   frmMyForm.AddObject('fldCustID','fldCust_ID')
+
+   **-------------------------------------------------------**
+   ** This code adds the label and text box objects for the **
+   ** customer name information.                            **
+   **-------------------------------------------------------**
+   frmMyForm.AddObject('lblCustName','lblCust_Name')
+   frmMyForm.AddObject('fldCustName','fldCust_Name')
+
+   **-------------------------------------------------------**
+   ** Add a quit button                                     **
+   **-------------------------------------------------------**
+   frmMyForm.AddObject('cmdQuit','cmdQuitButton')
+
+   frmMyForm.SHOW                   && Display the form
+   READ EVENTS                      && Start event processing
+   CLOSE ALL
+   ERASE Cust.dbf
+   ERASE Captest.dbc
+   ERASE Captest.dbt
+   SET SAFETY ON
+
+   **-------------------------------------------------------**
+   ** This is the class definition for the customer ID in-  **
+   ** formation. The caption for the label should be de-    **
+   ** rived from the table itself. This is the example re-  **
+   ** ferred to in the article. The name of the field and   **
+   ** its definition are stored together in the table. This **
+   ** way, if you decide to change the name of the field in **
+   ** the table, you can also just change the caption while **
+   ** you're there and that change will be reflected on your**
+   ** form.                                                 **
+   **-------------------------------------------------------**
+   DEFINE CLASS lblCust_ID as label
+     Width   = 80
+     Left    = 10
+     Top     = 22
+     Visible = .T.
+     Caption = DBGETPROP("Cust.Cust_id","FIELD","CAPTION")
+   ENDDEFINE
+
+   DEFINE CLASS fldCust_ID as textbox
+     Visible = .T.
+     Left    = 100
+     Top     = 20
+     Width   = 20
+     ControlSource=Cust.Cust_ID
+   ENDDEFINE
+
+   **-------------------------------------------------------**
+   ** Class definition for the customer name information.   **
+   **-------------------------------------------------------**
+   DEFINE CLASS lblCust_Name as label
+     Width   = 100
+     Left    = 140
+     Top     = 22
+     Visible = .T.
+     Caption = DBGETPROP("Cust.Cust_Name","FIELD","CAPTION")
+   ENDDEFINE
+
+   DEFINE CLASS fldCust_Name as textbox
+     Visible = .T.
+     Left    = 260
+     Top     = 20
+     Width   = 140
+     ControlSource=Cust.Cust_Name
+   ENDDEFINE
+
+   DEFINE CLASS cmdQuitButton AS CommandButton  && Create command button
+       Caption = '\<Quit'       && Caption on the command button
+       Cancel  = .T.            && Default Cancel command button (Esc)
+       Left    = 175            && Command button column
+       Top     = 60             && Command button row
+       Height  = 25             && Command button height
+       Visible = .T.
+
+       PROCEDURE Click
+         CLEAR EVENTS           && Stop event processing, close Form
+   ENDDEFINE
+
+Additional query words: VFoxWin Caption DBC
+
+======================================================================
+Keywords          : kbcode 
+Technology        : kbVFPsearch kbAudDeveloper kbVFP300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

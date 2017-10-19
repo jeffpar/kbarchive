@@ -1,0 +1,69 @@
+DOCUMENT:Q224182  25-JUN-2000  [homemm]
+TITLE   :Encarta 99: Cannot Play Some Animations Listed in the Pinpointer
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbui kburl kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta Encyclopedia 99 
+ - Microsoft Encarta Reference Suite 99 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you click a topic marked with an animation icon in the Pinpointer in
+Microsoft Encarta Encyclopedia 99, the animation may not be played.
+
+CAUSE
+=====
+
+This behavior can occur if the topic is not located on the Encarta CD-ROM.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Encarta Encyclopedia
+99.
+
+MORE INFORMATION
+================
+
+Any media topic that is not located on the Encarta CD-ROM is marked with an
+animation icon in the Pinpointer. However, most topics marked with an animation
+icon in the Pinpointer are located on the Encarta CD-ROM.
+
+If you want to report a specific topic with which this issue occurs, use the form
+located on the following Microsoft Web site:
+
+   http://support.microsoft.com/support/feedback
+
+
+Additional query words: multi multi-media media mm filmstrip find list index enc99
+
+======================================================================
+Keywords          : kbui kburl kbimu 
+Technology        : kbHomeProdSearch kbHomeMMsearch kbEncartaSearch kbEncartaEncycSearch kbEncartaEnCyc1999 kbEncartaReference99
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

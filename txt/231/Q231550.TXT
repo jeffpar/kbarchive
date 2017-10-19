@@ -1,0 +1,94 @@
+DOCUMENT:Q231550  14-SEP-2001  [automap]
+TITLE   :Err Msg: Microsoft MapPoint 2000 GB Was Previously Installed...
+PRODUCT :Microsoft Automap
+PROD/VER:WINDOWS:
+OPER/SYS:
+KEYWORDS:kbenv kberrmsg kbsetup kbimu
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft MapPoint 2000 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install Microsoft MapPoint 2000 United States (US), you may
+receive the following error message:
+
+   Microsoft MapPoint 2000 GB was previously installed on this system. You
+   cannot install Microsoft MapPoint 2000 without first removing Microsoft
+   MapPoint 2000 GB.
+
+CAUSE
+=====
+
+This behavior can occur if you manually remove Microsoft MapPoint 2000 Great
+Britain (GB) before you attempt to install MapPoint 2000 US.
+
+RESOLUTION
+==========
+
+To resolve this issue:
+
+1. Reinstall MapPoint 2000 GB.
+
+2. Click Start, point to Settings, and then click Control Panel.
+
+3. Double-click Add/Remove Programs.
+
+4. Click Microsoft MapPoint 2000 GB, and then click Add/Remove.
+
+5. Follow the instructions on the screen to remove MapPoint 2000 GB. If you are
+   prompted to restart your computer, do so.
+
+6. Click Start, point to Find, and then click "Files or Folders."
+
+7. In the Named box, type "Newmap.ptt" (without the quotation marks).
+
+8. In the "Look in" box, click My Computer, and then click Find Now.
+
+9. In the list of found files, right-click the Newmap.ptt file, and then click
+   Delete.
+
+10. When you are prompted to confirm the file deletion, click Yes.
+
+11. Install MapPoint 2000 US.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft MapPoint 2000.
+
+MORE INFORMATION
+================
+
+When you manually remove MapPoint 2000 GB, registry entries that only recognize
+MapPoint 2000 GB are not removed from the registry.
+
+Additional query words: mp2000 uninstall united kingdom uk europe
+
+======================================================================
+Keywords          : kbenv kberrmsg kbsetup kbimu 
+Technology        : kbHomeProdSearch kbMapptSearch kbMapPoint2000
+Version           : WINDOWS:
+Issue type        : kbbug
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

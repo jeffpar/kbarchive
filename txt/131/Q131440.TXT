@@ -1,0 +1,60 @@
+DOCUMENT:Q131440  26-MAY-2001  [homemm]
+TITLE   :Mac Encarta 1995: Fonts Not Installed to Non-Startup Drive
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1995 edition
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Encarta 95 The Complete Interactive Multimedia Encyclopedia for Macintosh 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If you install Encarta 1995 on a hard drive that does not contain the active
+system folder (non-startup drive), the installation may not install all the
+files to the appropriate locations.
+
+The problem is most noticeable on machines running System 7.0 or System 7.0.1
+system software.
+
+MORE INFORMATION
+================
+
+On System 7.0 and 7.0.1, installing Encarta to a drive without the active system
+folder doesn't properly install some necessary fonts. In some cases, the install
+program may not install Encarta at all to such a drive.
+
+To resolve these problems, install Encarta to your start-up hard drive. If you
+want Encarta on another hard drive, drag the Encarta folder to that drive when
+the install process is complete.
+
+For more information about this issue, see section six of the Encarta ReadMe
+file.
+
+Additional query words: kbhowto mac 1995 multi media multimedia multi- mmtitles
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbEncartaSearch kbEncartaEnCyc1995Mac
+Version           : :1995 edition
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

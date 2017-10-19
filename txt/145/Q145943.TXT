@@ -1,0 +1,236 @@
+DOCUMENT:Q145943  13-JUN-2001  [sna]
+TITLE   :How To Set Up ODBC Connectivity To An AS/400
+PRODUCT :Microsoft SNA Server
+PROD/VER:WINDOWS:2.11,2.11 SP1
+OPER/SYS:
+KEYWORDS:kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft SNA Server, versions 2.11, 2.11 SP1, on platform(s):
+    - the operating system: Microsoft Windows NT 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Microsoft SNA Server 2.11 includes the StarSQL ODBC/DRDA drivers for Windows 3.x
+and Windows NT client computers. The drivers allow applications that are
+designed to use the ODBC interface and SQL access to databases on IBM host
+computers and AS/400 without a host-based database gateway.
+
+NOTE: SNA Server 2.11 and SNA Server 2.11 Service Pack 1 include a single license
+of the StarSQL ODBC/DRDA driver. Therefore, the driver can only be used on a
+single client computer. If you want to install the driver on multiple client
+computers, make sure you have a valid SNA Server Client Access License (CAL).
+You can purchase additional licenses for the ODBC/DRDA driver from StarWare at
+(510) 704-2000.
+
+The SNA Server 2.11 includes the following informational ODBC files:
+
+   ADVOPTS.TXT
+   APPLICS.TXT
+   DBSMVS.TXT
+   HINTS.TXT
+   README.TXT
+
+SNA Server 2.11 Service Pack 1 includes the following ODBC files:
+
+   ADVOPTS.TXT
+   APPLICS.TXT
+   AS400.TXT
+   CMNSRVR.TXT
+   HINTS.TXT
+   JAPANESE.TXT
+   README.TXT
+
+MORE INFORMATION
+================
+
+The configuration procedure of ODBC connection to an AS/400 varies. It depends
+on the StarSQL driver and OS/400 version on the AS/400. The following
+information is in AS400.TXT:
+
+One Time Setup for StarSQL to AS/400
+------------------------------------
+
+The following instructions detail the latest setup procedure for StarSQL on an
+IBM AS/400. On v3r05 & earlier all steps must be carried out by a user with
+QSECOFR authority or the equivalent. Please read all instructions carefully and
+take special note of Isolation Level considerations and of differences between
+installation procedures for OS/400 v3r1 and OS/400 v3r05 & earlier.
+
+StarSQL v1.05 and later:
+
+Upon successful completion the user should be able to access all physical files
+(journaled and non-journaled) on an AS/400 running any version of OS/400.
+
+StarSQL pre-v1.05:
+
+Upon successful completion the user should be able to access all physical files
+(journaled and non-journaled) on an AS/400 running OS/400 v3r1.
+
+NOTE: For access to journaled physical files on OS/400 v3r05 and earlier, follow
+StarSQL instructions for creating a datasource which uses collections (see
+"CREATING COLLECTION ON THE AS/400" IN "HINTS.TXT").
+
+Begin Installation:
+
+1. Create a new library (using a 5250 terminal session) where the SQL packages
+   used by StarSQL will be created. This library does not need to be a SQL
+   collection, but it should be accessible to all StarSQL users.
+
+   Example:
+
+   Create a new library STARSQL:
+
+   "CRTLIB STARSQL" (without the quotation marks)
+
+2. Determine the RDB (Relational Database) name of the AS/400, creating an entry
+   if one does not already exist. This name will be used in Step 2 for the
+   "Database Server Name" in StarSQL data source setup.
+
+   From the AS/400 command line, work with Relational Database Directory Entries
+   by typing:
+
+   "WRKRDBDIRE" (without the quotation marks)
+
+   Look for an entry with the value of Remote Location set to *LOCAL. If such an
+   entry does not exist, create it with the 1=Add option. A suggested convention
+   is to use the same name as the AS/400 system name.
+
+3. Create a new StarSQL data source through Control Panel | ODBC Administrator
+   and specify:
+
+   Database Server Name= <Database Server Name> (specified in Step 2)
+   Catalog Qualifier = QSYS (v3r01 and earlier) or QSYS2 (v3r1)
+   Package Collection = <library> (created in Step 1)
+
+   Example:
+   Create a StarSQL data source:
+
+   (v3r05 & earlier)
+   Catalog Qualifier = QSYS
+   Package Collection = STARSQL
+
+   (v3r1)
+   Catalog Qualifier=QSYS2
+   Package Collection=STARSQL
+
+   IMPORTANT NOTE:
+
+   Using QSYS or QSYS2 in the Catalog Qualifier field will cause the StarSQL
+   driver to return a list of all physical files on the AS/400. If there are a
+   large number of tables on the AS/400 you may want to use the filtering
+   capability available in StarSQL version 1.04.19.19 or later. This will allow
+   users to filter the table and view names returned when you retrieve a list of
+   available tables (views and physical files) to what is available in a single
+   AS/400 collection or library.
+
+   To filter table and view names returned from the list, change the Catalog
+   Qualifier to QSYS.library_name (v3r05 & before) or QSYS2.library_name
+   (v3r1).
+
+   MSSNA 2.11 RELEASE CUSTOMERS:
+
+   The above filtering option is not available with the version of StarSQL that
+   is included in the Microsoft SNA 2.11 Release.
+
+4. Connect to the AS/400 using the data source specified in Step 2. When you
+   connect to the AS/400, SQL packages are created in the library specified in
+   the data source. These packages are named QSYS and either SWRC0000, SWRU0000
+   or SWNC0000 (depending on the isolation level used). Creation of the packages
+   may take several minutes.
+
+5. Grant *USE authority to PUBLIC on the packages that were created Step 4 using
+   one of the following methods:
+   a. From the AS/400 command line:
+
+      WRKLIB STARSQL
+      12  (work with objects)
+      2  (edit authority on each object one at a time)
+      change PUBLIC *EXCLUDE to PUBLIC *USE
+
+   b. Use the GRTOBJAUT command (using a 5250 terminal session) to grant *USE
+      authority for the library and execute authority for the packages to all
+      StarSQL users.
+
+      Example:
+
+      GRTOBJAUT OBJ(STARSQL) OBJTYPE(*LIB) USER(*PUBLIC) AUT(*USE)
+      GRTOBJAUT OBJ(STARSQL/*ALL) OBJTYPE(*ALL) USER(*PUBLIC)
+      AUT(*USE)
+
+   c. Use SQL/400 or SQL commands sent from an ODBC-enabled application:
+
+   "GRANT EXECUTE ON PACKAGE STARSQL/QSYS, STARSQL/SWRC0000 TO PUBLIC" (without
+   the quotation marks)
+
+ACCESSING NON-JOURNALED PHYSICAL FILES ON OS/400 V3R1 (PRE-STARSQL V1.05):
+
+To access non-journaled physical files on OS/400 v3r1, edit WINDOWS\ODBC.INI (16
+bit) or NT Registry (32 bit). Add the following to the StarSQL data source
+description:
+
+   IsolationLevel=0
+
+Example:
+
+For WINDOWS or WFW (16bit):
+
+   [STARSQL]
+   Driver=C:\WINDOWS\SYSTEM\swodbc16.dll
+   Description=example for v3r1
+   Server=RDBELLE
+   CatQual=QSYS2
+   PkgColId=STARSQL
+   Netlib=SWWAPPC.DLL
+   ReadOnly=No
+   LocalLU=SISYPHUS
+   RemoteLU=ELLE
+   ModeName=QPCSUPP
+   AutoTypDefNam=QTDSQL400
+   AutoTypDefOvr=37,0,0
+   UID=PETER
+   IsolationLevel=0
+
+For Windows NT (32 bit):
+
+The NT registry is found in WINNT35\SYSTEM32\REGEDT32.EXE. To edit data sources,
+go to HKEY_CURRENT_USER. On Local Machine, go to SOFTWARE | ODBC | ODBC.INI |
+<data source name>. Highlight the appropriate StarSQL data source name. To
+add IsolationLevel:
+
+Go to EDIT | Add Value. Enter "IsolationLevel" with a Data Type of REG_SZ. Select
+OK, then Enter, and add the appropriate number (0) for the Value.
+
+The third-party products discussed here are manufactured by vendors independent
+of Microsoft; we make no warranty, implied or otherwise, regarding these
+products' performance or reliability.
+
+
+Additional query words: prodsna
+
+======================================================================
+Keywords          : kbnetwork 
+Technology        : kbAudDeveloper kbSNAServSearch
+Version           : WINDOWS:2.11,2.11 SP1
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

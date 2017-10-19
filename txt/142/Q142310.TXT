@@ -1,0 +1,66 @@
+DOCUMENT:Q142310  08-AUG-2001  [winnt]
+TITLE   :How to Redirect Print Jobs If Print Device Is Not Available
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.50 3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51 
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+If a print device is temporarily out of service or it is not available for an
+extended period of time, print jobs that are submitted to the printer are on
+hold. Windows NT does not include a feature that automatically redirects print
+jobs to another printer of the same type. This article explains how you can
+redirect print jobs to another printer.
+
+MORE INFORMATION
+================
+
+To redirect print jobs of a specific printer, do one of the following:
+
+ - If Windows NT recognizes either a local or network printer, change the Print
+   To entry in Print Manager to the new printer.
+
+   -or-
+
+ - If Windows NT does not recognize a network printer, but you do know the share
+   name of the network printer, type the following at the MS-DOS command
+   prompt:
+
+   "net use LPTx: \\<Computer name>\<Printer name>" (without the
+   quotation marks)
+
+   In Print Manager, change the Print To entry to the redirected port LPTx (where
+   x is the printer port number).
+
+Additional query words: prodnt
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.50 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

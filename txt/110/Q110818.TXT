@@ -1,0 +1,60 @@
+DOCUMENT:Q110818  09-NOV-1999  [macmail]
+TITLE   :Mac Adm: Failure to Insert User into Group with Long Name
+PRODUCT :Microsoft Mail For Appletalk Networks
+PROD/VER:WINDOWS:3.1d
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for AppleTalk Networks, version 3.1d 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you use the Mail Network Administrator program in version 3.1d of Microsoft
+Mail for AppleTalk Networks to move a user who belongs to a group whose name is
+longer than 127 characters, the following error message will be displayed:
+
+   <username> could not be added to the group: <groupname> A Server
+   error occurred.
+
+RESOLUTION
+==========
+
+The Move User utility cannot insert a user into a group definition with a name
+whose length exceeds 127 characters. For successful insertion, manually add the
+user to the group or shorten the group name to fewer than 127 characters.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in version 3.1d of Microsoft Mail
+for AppleTalk Networks. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 3.10d
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMailATN310d
+Version           : WINDOWS:3.1d
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

@@ -1,0 +1,68 @@
+DOCUMENT:Q125240  10-DEC-1999  [homemm]
+TITLE   :Bookshelf: Error Message During Search Using Word "Near"
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER::1994 edition; WINDOWS:
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Bookshelf for Windows 1994 edition 
+ - Microsoft Bookshelf '95 for Windows 95 
+ - Microsoft Bookshelf for Windows, 1995 Intro Edition 
+ - Microsoft Bookshelf 1996-97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+In Bookshelf for Windows, 1994 edition and in Bookshelf for Windows, 1995 Intro
+Edition, when you attempt to query on the word "near" (without the quotation
+marks) while the Find tab is selected, you receive the following error message:
+
+   The search query or a subexpression within parentheses begins or ends with a
+   search operator.
+
+In Bookshelf '95 for Windows 95 and Bookshelf '96-'97 for Windows, the error
+message is:
+
+   A part of the search query contains stop words or begins or ends with a
+   search operator.
+
+RESOLUTION
+==========
+
+To avoid this problem, perform the search after you select the Contents tab or
+enclose the word in quotes ("near").
+
+MORE INFORMATION
+================
+
+The error is generated because the Find search query uses 'near' as a Boolean
+operator in searches. Searching on this word alone is not a valid query.
+
+
+Additional query words: 1.00 '94 1994 95 1995 introedition msn web msweb msnet net
+
+======================================================================
+Keywords          :  
+Technology        : kbHomeMMsearch kbBookshelfSearch kbBookShelf1994 kbBookShelf1995 kbBookShelf1996 kbBookShelf1997 kbBookShelf1995Intro
+Version           : :1994 edition; WINDOWS:
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

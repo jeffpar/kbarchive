@@ -1,0 +1,56 @@
+DOCUMENT:Q96455  05-NOV-1999  [pcmail]
+TITLE   :PC Win: Mail Useful Life Cannot Be Configured by User
+PRODUCT :Microsoft Mail For PC Networks
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Mail for Windows, version 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The Useful Life option in version 3.0 of Microsoft Mail for PC Networks is the
+amount of time a mail message will be held at a postoffice before being sent
+back to the originator if delivery could not be completed. The default for this
+option in version 3.0 of Microsoft Mail for MS-DOS and version 3.0 of Microsoft
+Mail for Windows is 24 hours.
+
+The user can configure this option in the MS-DOS client of Microsoft Mail.
+Changing the default in the MS-DOS client has no impact on the Windows client.
+The user cannot change the 24-hour default in Mail for Windows.
+
+MORE INFORMATION
+================
+
+In version 2.1 of Mail for PC Networks, all clients had the ability to change
+the Useful Life setting. However, in version 3.0, the Windows client cannot set
+per message transport specific options.
+
+Additional query words: 3.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMailSearch kbZNotKeyword3 kbMail300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

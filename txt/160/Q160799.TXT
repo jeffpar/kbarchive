@@ -1,0 +1,139 @@
+DOCUMENT:Q160799  23-APR-2000  [exchange]
+TITLE   :XCLN: How to Add the Read Receipt Property in a Folder View
+PRODUCT :Microsoft Exchange
+PROD/VER:WINDOWS:4.0,5.0; :8.0,8.01,8.02
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Windows 3.x client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows 95/98 client, versions 4.0, 5.0 
+ - Microsoft Exchange Windows NT client, versions 4.0, 5.0 
+ - Microsoft Outlook 97, versions 8.0, 8.01, 8.02 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+This article tells you how to add the Read Receipt MAPI property that is
+associated with each message to a Microsoft Exchange or Outlook client Folder
+view.
+
+MORE INFORMATION
+================
+
+To add the Read Receipt MAPI property:
+
+1. Cut and paste the .cfg portion of this document (see text below) into an
+   ASCII text editor and save the file to your Windows\Forms\Configs directory
+   as Mesnote2.cfg.
+
+2. From the Microsoft Exchange or Outlook client, install the .cfg file using
+   the Forms Manager. On the Tools menu, click Options; on the Microsoft
+   Exchange Server page, click the Manage Forms button. Click Set to designate
+   the folder to be customized (typically the Inbox). Click Install and locate
+   the Mesnote2.cfg file. Install the Mesnote2.cfg file, and then close all
+   dialog boxes.
+
+3. From the Microsoft Exchange or Outlook client, create the view. To do this,
+   click View, click Define Views, and click New View. Call the new view
+   Current+. Click Columns and add RRR from the available columns list.
+
+You should now have a view that will tell you who is sending messages with read
+request notification.
+
+You can use this property now to set rules and sort messages in folders.
+Ultimately, many MAPI properties can be exposed this way. The following is an
+example of exposing one such property.
+
+   ;**********The CFG file**********
+   [Description]
+   MessageClass=IPM.Note
+   CLSID={00020D31-0000-0000-C000-000000000046}
+   DisplayName=Standard message form
+   Category=Standard
+   Subcategory=Form
+   Comment=This form is used to send messages to other people.
+   LargeIcon=mapif1l.ico
+   SmallIcon=mapif1s.ico
+   Version=1.0
+   Locale=enu
+   Hidden=1
+   Owner=Microsoft
+   Contact=Your Administrator
+
+   [Platforms]
+   Platform1=Win16
+   Platform2=NTx86
+   Platform9=Win95
+
+   [Platform.Win16]
+   CPU=ix86
+   OSVersion=Win3.1
+
+   [Platform.NTx86]
+   CPU=ix86
+   OSVersion=WinNT3.5
+
+   [Platform.Win95]
+   CPU=ix86
+   OSVersion=Win95
+
+   [Properties]
+   Property01=ReplyTo
+   Property02=ReadReceipt
+
+   [Property.ReplyTo]
+   Type=30
+   NmidInteger=0x0050
+   DisplayName=ReplyTo
+
+   [Property.ReadReceipt]
+   Type=11
+   NmidInteger=0x0029
+   DisplayName=RRR
+
+   [Verbs]
+   Verb1=1
+
+   [Verb.1]
+   DisplayName=&Open
+   Code=0
+   Flags=0
+   Attribs=2
+
+   [Extensions]
+   Extensions1=1
+
+   [Extension.1]
+   Type=30
+   NmidPropset={00020D0C-0000-0000-C000-000000000046}
+   NmidInteger=1
+   Value=1000000000000000
+   ;**********END CFG
+
+Additional query words: MAPI 1.0 SDK, Microsoft
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbOutlookSearch kbExchangeSearch kbExchange500 kbExchange400 kbExchangeClientSearch kbZNotKeyword kbOutlook97 kbZNotKeyword2 kbOutlook97Search kbZNotKeyword3 kbOutlook801 kbOutlook802 kbExchange400NT kbExchange500NT kbExchange400Win95 kbExchange500Win95
+Version           : WINDOWS:4.0,5.0; :8.0,8.01,8.02
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

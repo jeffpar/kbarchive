@@ -1,0 +1,91 @@
+DOCUMENT:Q153103  31-MAR-1999  [exchange]
+TITLE   :XCON: MTA Terminates Unexpectedly in Large Nested DL Expansion
+PRODUCT :Microsoft Exchange
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Exchange Server, version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+The Microsoft Exchange Message Transfer Agent (MTA) version 5.0 may terminate
+unexpectedly when performing distribution list (DL) expansion on a large, nested
+DL. An event similar to the following may be logged in the application event
+log:
+
+   Event ID:9405
+   Source:MSExchangeMTA
+   Type:Error
+   Category:Field Engineering
+   Description:
+   An unexpected error has occurred which may cause the MTA to terminate. Error:
+   Access violation (0xc0000005) at Address 0x775e5a50 reading from 0xc. [BASE
+   DISP:FANOUT 15] (16)
+
+MORE INFORMATION
+================
+
+This problem may occur if, for example, there are 26 DLs nested beneath a single
+DL where the number of members to any one of the nested DLs may range from 0 to
+600 or more. When a message is sent to the DL that contains the 26 nested DLs,
+the MTA may terminate unexpectedly with the 9405 event ID.
+
+The following event may occur and the MTA may stop before logging a 9405 event:
+
+   message NMI2171: Internal Processing Error, severity 14
+
+   (DB Server DISP:FANOUT(12) Proc 26) 04-18-97 02:13:47pm
+   Error reading attribute
+   Called from MTA Proc 223
+   Database error code     ODXOINIU - Object does not exist
+   Object at fault         06000000
+   Attribute identifier    28
+   Value number            44
+   Referenced object       00000000     (00000000 => N/A)
+   Referenced object error 0
+
+The DISP:FANOUT indicates a problem expanding an object, in this case, a large
+distribution list that contains a number of other distribution lists. The
+presence of the 06000000 as the Object at Fault is another indication of this
+particular issue.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Exchange Server
+version 5.0. This problem was corrected in the latest Microsoft Exchange 5.0
+Server U.S. Service Pack. For information on obtaining the service pack, query
+on the following word in the Microsoft Knowledge Base (without the spaces):
+
+   S E R V P A C K
+
+
+Additional query words:
+
+======================================================================
+Keywords          : kbusage 
+Technology        : kbExchangeSearch kbExchange500 kbZNotKeyword2
+Version           : winnt:5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

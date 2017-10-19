@@ -1,0 +1,114 @@
+DOCUMENT:Q279764  25-JUL-2001  [vbwin]
+TITLE   :PRB: Multiple System Files Errors w/ VB 6.0 App on Windows 2000
+PRODUCT :Microsoft Visual Basic for Windows
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:kbwizard kbAppSetup kbDeployment kbVBp600 kbDSupport kbVS600sp4fix kbVS600sp5fix
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual Basic Professional Edition for Windows, version 6.0 
+ - Microsoft Visual Basic Enterprise Edition for Windows, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you install a Microsoft Visual Basic version 6.0 application that was
+created with the Package and Deployment Wizard onto a computer that is running
+Microsoft Windows 2000, you may receive the following error message:
+
+   Setup cannot continue because some system files are out of date on your
+   system. Click OK if you would like setup to update these files for you now.
+   You will need to restart Windows before you can run setup again. Click cancel
+   to exit setup without updating system files.
+
+After Windows 2000 restarts and you begin the installation again, you receive the
+error message again.
+
+CAUSE
+=====
+
+The Package and Deployment Wizard uses a restart to update in-use system files.
+In Windows 2000, system files are protected and are not updated on the restart.
+Each subsequent attempt to install the application results in the same error
+message, and the application cannot complete its installation.
+
+The normal procedure to update Windows 2000 system files is to install the latest
+service pack. However, in certain situations, the development computer may
+contain specific system files that have a later version number than those found
+on Windows 2000. For example, if the setup package was created on a Windows
+Millennium Edition (Me)-based system or a Windows 2000-based system with a
+service pack that is later than the target, the PDW may package a higher version
+than is on the target Windows 2000 system. When this happens, the application
+setup detects that it needs to install the new system files, and it prompts you
+to restart the computer. Because Windows 2000 does not allow application
+installations to replace system files, the application setup detects the old
+system files again when it restarts.
+
+The file that causes this problem is Oleaut32.dll.
+
+RESOLUTION
+==========
+
+There are two ways to resolve this problem:
+
+ - Use a Windows 2000 Service Pack to update the version of Oleaut32.dll on the
+   target computer to one that is equal to or later than the version of the
+   Oleaut32.dll file in the package.
+
+ - Include a version of Oleaut32.dll in the package that is equal to or earlier
+   than the version that shipped with Windows 2000. One way to accomplish this
+   is to install Visual Studio 6.0 Service Pack 4 (SP4) or later. Visual Studio
+   6.0 SP4 installs three files (Olepro32.dll, Oleaut32.dll, and Stdole2.tlb) in
+   the Redist folder. The file versions that SP4 installs are earlier than the
+   versions that shipped with Windows 2000. The Package and Deployment Wizard
+   then distributes the Oleaut32.dll from the Redist folder instead of the
+   System folder.
+
+REFERENCES
+==========
+
+For additional information on other causes for this behavior, click the article
+number below to view the article in the Microsoft Knowledge Base:
+
+   Q191096 PRB: Multiple 'System Files Are Out of Date' Errors
+
+For additional information about Visual Studio service packs, click the article
+numbers below to view the articles in the Microsoft Knowledge Base:
+
+   Q194022 INFO: Visual Studio 6.0 Service Packs, What, Where, Why
+
+   Q194295 HOWTO: Tell That a Visual Studio Service Pack Is Installed
+
+You can download the latest Visual Studio service pack from the following
+Microsoft Web site:
+
+   Visual Studio Product Updates
+   (http://msdn.microsoft.com/vstudio/downloads/updates.asp)
+
+Additional query words:
+
+======================================================================
+Keywords          : kbwizard kbAppSetup kbDeployment kbVBp600 kbDSupport kbVS600sp4fix kbVS600sp5fix 
+Technology        : kbVBSearch kbAudDeveloper kbZNotKeyword6 kbZNotKeyword2 kbVB600Search kbVBA600 kbVB600
+Version           : :6.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

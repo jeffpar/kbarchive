@@ -1,0 +1,75 @@
+DOCUMENT:Q252831  06-AUG-2002  [sms]
+TITLE   :SMSINST: Iterative Use Of Get Temporary Filename Can Cause Error
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:WINDOWS:2.0
+OPER/SYS:
+KEYWORDS:kbsms200 kbsms200bug smsinst
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server Installer version 2.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you are using Systems Management Server (SMS) Installer Script Editor to
+assign a temporary file name (Get Temporary Filename into <variablename>),
+the generated SMS Installer program can cause an "Access violation" error
+message similar to:
+
+   The instruction at <xxx> referenced memory at <yyy>. The memory
+   could not be "read".
+
+CAUSE
+=====
+
+This behavior can occur if the Get Temporary Filename script action is used
+within a loop. For example, the following sample script generates the error
+message:
+
+   Set Variable COUNT to 1
+   While COUNT Not Equal 200 do
+      Get Temporary Filename into MYFILE
+      Set variable COUNT to %COUNT% (Increment)
+   End Block
+
+For small loop iterations (less than 130), the problem does not occur.
+
+WORKAROUND
+==========
+
+Do not use the Get Temporary Filename script action in a loop that is likely to
+iterate beyond 130 times.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+Installer version 2.0.91.
+
+Additional query words: prodsms
+
+======================================================================
+Keywords          : kbsms200 kbsms200bug smsinst 
+Technology        : kbSMSSearch kbSMSI200
+Version           : WINDOWS:2.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

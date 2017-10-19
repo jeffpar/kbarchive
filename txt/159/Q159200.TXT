@@ -1,0 +1,76 @@
+DOCUMENT:Q159200  09-AUG-2001  [winnt]
+TITLE   :Setpass.exe May Not Change a NetWare Password
+PRODUCT :Microsoft Windows NT
+PROD/VER:WINNT:3.51 4.0
+OPER/SYS:
+KEYWORDS:kb3rdparty kbnetwork
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.51, 4.0 
+ - Microsoft Windows NT Server versions 3.51, 4.0 
+ - Microsoft File and Print Services for NetWare 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you have a client that is running both a Microsoft Client Server Message
+Block (SMB) and Novell NetWare, NetWare Core Protocol (NCP) redirectors, the
+Setpass.exe utility provided with File and Print Services for NetWare (FPNW)
+will only change the password on the SMB network.
+
+You may see either of the following errors when attempting to change your
+Password:
+
+   Error Getting PDC Name
+
+-or-
+
+   Error Changing Password
+
+CAUSE
+=====
+
+Setpass.exe checks to see what type of client it is running on, and sets the
+corresponding password. It checks for the SMB client first. If both an SMB and
+NCP redirector are loaded, Setpass.exe will detect the SMB redirector, and only
+change the password on the SMB network.
+
+RESOLUTION
+==========
+
+To resolve this problem, run Setpass.exe with the -N switch. Doing this forces
+Setpass.exe to change the password on the NCP network. You can also use the -S
+switch to force Setpass.exe to change the password on the SMB network.
+
+The following are some examples on the use of Setpass.exe:
+
+   SETPASS -N <-- Changes the password on an NCP network.
+
+   SETPASS -S <-- Changes the password on an SMB network.
+
+Additional query words: prodnt redirector chgpass
+======================================================================
+Keywords          : kb3rdparty kbnetwork 
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNTW400 kbWinNTW400search kbWinNT351search kbWinNT400search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS400search kbWinNTS400 kbWinNTS351 kbWinNTS351search kbServicesNetwareSearch
+Version           : WINNT:3.51 4.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

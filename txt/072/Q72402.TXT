@@ -1,0 +1,64 @@
+DOCUMENT:Q72402  31-JAN-2002  [win95x]
+TITLE   :Copying Files from or to the Same Drive with File Manager
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+In File Manager, if you click and drag files from one directory to a directory
+located on the same drive, the following message is displayed:
+
+   Are you sure you want to move the selected files into <DIRECTORY NAME>?
+
+File Manager moves the file(s); it does not give the option to copy the file(s).
+(Note that this occurs only on hard drives, not on floppy drives.)
+
+MORE INFORMATION
+================
+
+If you want to copy files or directories from one location to another on the
+same drive, press and hold down the CTRL key while you click and drag the
+selection to the destination directory. By doing this, you should get the
+following message:
+
+   Are you sure you want to copy the selected files into <DIRECTORY NAME>?
+
+Choose OK to create a copy of the file(s) in the destination directory.
+
+REFERENCES
+==========
+
+"Microsoft Windows User's Guide," version 3.0, page 130
+
+Additional query words: 3.0 win30 3.00a
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : :3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

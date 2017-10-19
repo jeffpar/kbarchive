@@ -1,0 +1,79 @@
+DOCUMENT:Q75910  25-DEC-1999  [win16sdk]
+TITLE   :TimeSmp.exe - High-Resolution Timing Services
+PRODUCT :Microsoft Windows Software Development Kit
+PROD/VER:WINDOWS:3.0
+OPER/SYS:
+KEYWORDS:kbfile kbmm kbsample kb16bitonly kbTimer
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows Software Development Kit (SDK) 3.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+TimeSmp.exe is a file that demonstrates how to use the high-resolution timer
+services provided by the Microsoft Multimedia Windows graphical environment.
+
+MORE INFORMATION
+================
+
+The following file is available for download from the Microsoft Download
+Center:
+
+   TimeSmp.exe
+   (http://download.microsoft.com/download/platformsdk/sample74/3.1/W31/EN-US/TimeSmp.exe)
+
+For additional information about how to download Microsoft Support files, click
+the article number below to view the article in the Microsoft Knowledge Base:
+
+   Q119591 How to Obtain Microsoft Support Files from Online Services
+
+Microsoft used the most current virus detection software available on the date of
+posting to scan this file for viruses. Once posted, the file is housed on secure
+servers that prevent any unauthorized changes to the file.
+
+The timer services provided by Multimedia Windows allow an application to
+schedule timed periodic interrupts or one-time interrupt events at a higher
+resolution than is available through the standard Windows timer services.
+
+Unlike the Windows timer services, the Multimedia timer services are
+interrupt-based. Rather than posting WM_TIMER messages to a message queue, the
+Multimedia service calls a specified function at interrupt time. Because the
+callback code is accessed at interrupt time, it must adhere to strict
+programming guidelines. In particular, only a very limited set of system
+function calls may be made, and the callback function must reside in a
+fixed-code dynamic-link library (DLL).
+
+The Multimedia timer services are useful for applications that demand
+high-resolution timing, such as a MIDI sequencer. For less demanding
+synchronization tasks, use the SetTimer function provided by Windows.
+
+The sample application TIMESMP demonstrates using the timer services and a
+callback function residing in a fixed code DLL.
+
+Additional query words:
+
+======================================================================
+Keywords          : kbfile kbmm kbsample kb16bitonly kbTimer 
+Technology        : kbAudDeveloper kbWin3xSearch kbSDKSearch kbWinSDKSearch kbWinSDK300
+Version           : WINDOWS:3.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

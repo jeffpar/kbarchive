@@ -1,0 +1,63 @@
+DOCUMENT:Q243598  13-OCT-1999  [msnetwork]
+TITLE   :Err Msg: Setup Is Unable to Continue Due to an Error on the...
+PRODUCT :The Microsoft Network
+PROD/VER:WINDOWS:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - The Microsoft Network version 5.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to install the MSN 5.0 CD-ROM you may receive this error
+message:
+
+   Setup is unable to continue due to an
+   error on the MSN Internet Access CD-ROM.
+
+   Please click OK and then reinsert the MSN
+   Internet Access CD. If you continue to see
+   this message, please order a new MSN
+   Internet Access CD at the following Web
+   site: http://free.msn.com.
+
+CAUSE
+=====
+
+The CD-ROM you are trying to install may be damaged.
+
+RESOLUTION
+==========
+
+To resolve this issue, please go to http://free.msn.com and order a new CD
+online or call MSN Member Support at 1-800-386-5550.
+
+Additional query words: msnetwork kbmsn 5.00
+
+======================================================================
+Keywords          :  
+Technology        : kbMSNSearch kbMSN500
+Version           : WINDOWS:5.0
+Issue type        : kbprb
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.

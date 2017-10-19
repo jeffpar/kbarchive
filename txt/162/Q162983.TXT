@@ -1,0 +1,57 @@
+DOCUMENT:Q162983  14-NOV-2000  [word97]
+TITLE   :WD97: Background Sound Continues to Play
+PRODUCT :Word 97 for Windows
+PROD/VER:WINDOWS:97
+OPER/SYS:
+KEYWORDS:kbole
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Word 97 for Windows 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you open a Web page that contains a background sound object, the sound
+object continues to play until the sound file is finished, even though you may
+have jumped to another Web page.
+
+RESOLUTION
+==========
+
+To stop the sound object, return to the Web page that contains the background
+sound object, click Background Sound on the Insert menu, and then click Stop.
+
+NOTE: You must be on the Web page that contains the background sound object. If
+you are on another Web page, clicking Stop has no effect.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Microsoft Word version 97.
+
+Additional query words: 97 internet web infinite 8.0 word97 word8
+
+======================================================================
+Keywords          : kbole 
+Technology        : kbWordSearch kbWord97 kbWord97Search kbZNotKeyword2
+Version           : WINDOWS:97
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2000.

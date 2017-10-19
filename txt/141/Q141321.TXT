@@ -1,0 +1,81 @@
+DOCUMENT:Q141321  08-NOV-2001  [homemm]
+TITLE   :Dangerous Creatures: Pop-ups Stop and Reset Movies
+PRODUCT :Microsoft Home Multimedia Titles
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Dangerous Creatures for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+If you open a pop-up window when Dangerous Creatures is playing a movie clip,
+the movie may stop and reset.
+
+CAUSE
+=====
+
+Some pop-up windows contain sound. When the pop-up window opens, the sound
+associated with the window is played automatically. The computer is not capable
+of playing both the movie and the sound at the same time, so it stops and resets
+the movie to play the sound.
+
+RESOLUTION
+==========
+
+To avoid this problem, do one of the following:
+
+1. On the button bar located on the bottom of the screen, click Options.
+
+2. On the Options window, click Sounds.
+
+3. In the Sounds window, remove the check mark from Narration.
+
+   -or-
+
+Avoid opening a pop-up window until the movie has finished playing.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Dangerous Creatures version 1.0.
+We are researching this problem and will post new information here in the
+Microsoft Knowledge Base as it becomes available.
+
+MORE INFORMATION
+================
+
+When you remove the check mark from the Narration option, sound will not play if
+a pop-up window is activated, but the movie will continue playing.
+
+Even if the Narration feature has been turned off, you can play the Narration in
+the pop-up window at any time by clicking the speaker icon.
+
+Additional query words: 1.0 multi media multimedia multi-media mmtitles kbmm mac pop up
+
+======================================================================
+Keywords          :  
+Technology        : kbHWMAC kbOSMAC kbHomeProdSearch kbZNotKeyword kbDangerousCreaturesMac
+Version           : MACINTOSH:1.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

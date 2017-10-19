@@ -1,0 +1,94 @@
+DOCUMENT:Q304497  13-MAY-2002  [visualc]
+TITLE   :BUG: _wsetlocale Is Not Threadsafe
+PRODUCT :Microsoft C Compiler
+PROD/VER::6.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Editions, version 6.0 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+A heap corruption can occur if _wsetlocale is called simultaneously from
+multiple threads.
+
+CAUSE
+=====
+
+_wsetlocale does not synchronize access to a local static variable, outwlocale.
+
+RESOLUTION
+==========
+
+To work around this, you must synchronize calls to _wsetlocale.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a bug in the Microsoft products listed at the
+beginning of this article.
+
+MORE INFORMATION
+================
+
+The C Runtime locale mechanism in Microsoft Visual C++ is distinct from the
+locale mechanism in Microsoft Windows. Though Windows supports per-thread
+locales, C Runtime supports only a single global locale for any program.
+
+If multiple threads call _wsetlocale, then no thread's locale can be trusted. For
+example, if one thread calls _wsetlocale for French and tries to use that locale
+for _wcslwr, and another thread calls _wsetlocale for English before the first
+thread executes the _wcslwr function call, then the first thread uses the
+English locale instead of the French locale.
+
+Steps to Reproduce the Behavior
+-------------------------------
+
+   #define _UNICODE
+   #include <stdio.h>
+   #include <locale.h>
+   #include <process.h>
+
+   void __cdecl test(void *i) {
+   	_wsetlocale(LC_ALL, L"English");
+   	_wsetlocale(LC_ALL, L"French");
+   	_wsetlocale(LC_ALL, L"German");
+   	_wsetlocale(LC_ALL, L"English");
+   	printf("%d exit\n",i);
+   }
+
+   void wmain () {
+   	for (int i=0; i<30; ++i) _beginthread(test,0,(void*)i);
+   	getchar();
+   }
+
+Additional query words:
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbVC600 kbVC32bitSearch
+Version           : :6.0
+Issue type        : kbbug
+Solution Type     : kbfix
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

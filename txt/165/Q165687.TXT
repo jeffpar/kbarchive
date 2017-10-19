@@ -1,0 +1,480 @@
+DOCUMENT:Q165687  13-MAY-2001  [visualc]
+TITLE   :INFO: Visual C++ 5.0 Readme, Compiler, Linker and Utilities
+PRODUCT :Microsoft C Compiler
+PROD/VER:winnt:5.0
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Visual C++, 32-bit Enterprise Edition, version 5.0 
+ - Microsoft Visual C++, 32-bit Professional Edition, version 5.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+Compiler, Linker, Debugger, and MIDL Compiler Issues
+----------------------------------------------------
+
+ - Windbg Cannot Use Visual C++ 5.0 Debugging Information.
+
+ - _declspec(novtable)
+
+ - _ATL_MIN_CRT and Link Error "unresolved external symbol _main"
+
+ - DCOM95 Available for Distributed Applications
+
+ - /WS:AGGRESSIVE (Aggressively Trim Process Memory)
+
+ - /FD (Generate File Dependencies)
+
+ - _MSC_EXTENSIONS Compiler Macro
+
+ - Option Precedence and the CL Environment Variable
+
+ - /Zm (Specify Memory Allocation Limit)
+
+ - Compiler Now Documents Type Library Dependencies
+
+ - Keywords _emul and _emulu Not Documented
+
+ - New Linker Error: Linker Tools Error LNK1189
+
+ - Benefit of Using the Linker's /OPT:ICF Option
+
+ - Debugging Windows API Functions with NT Symbols Loaded
+
+ - If Screen Flashes During Build or the Wrong Code Page Is Used When
+
+ - Debugging a Console Application
+
+ - Incorrect Documentation for the Clean Menu Command
+
+ - MIDL2020: error generating type library: save all changes failed
+
+ - Error RC2104 : undefined keyword or key name: MFT_STRING
+
+ - Error Command Line Warning MIDL1009:unknown argument ignored
+
+ - Additional Information on the C2065 Compiler Error
+
+ - Documentation for Error C2712 Incomplete
+
+ - Compiler Warning (level 4) C2498
+
+ - Compiler Warning (level 4) C4238
+
+ - Compiler Warning (level 3) C4800
+
+ - Compiler Warning (level 1) C4804
+
+ - Compiler Warning (level 1) C4805
+
+ - Compiler Warning (level 1) C4806
+
+ - Compiler Warning (level 1) C4807
+
+ - Compiler Warnings (level 1) C4808
+
+ - Compiler Warning (level 1) C4809
+
+MORE INFORMATION
+================
+
+Windbg Cannot Use Visual C++ 5.0 Debugging Information
+------------------------------------------------------
+
+Because of changes to the format of debugging information in Visual C++ 5.0, you
+will not be able to use any version of Windbg prior to 5.0.1719. The Windbg
+debugger (distributed in the Win32 SDK) to do source level debugging of programs
+created with Visual C++ 5.0.
+
+_declspec(novtable)
+-------------------
+
+This form of _declspec can be applied to any class declaration, but should only
+be applied to pure interface classes, i.e. classes that will never be
+instantiated on their own. The _declspec stops the compiler from generating code
+to initialize the vfptr in the constructor(s) and destructor of the class. In
+many cases, this removes the only references to the vtable that are associated
+with the class and, thus, the linker will remove it. Using this form of
+_declspec can result in a significant reduction in code size.
+
+_ATL_MIN_CRT and Link Error "unresolved external symbol _main"
+--------------------------------------------------------------
+
+When you build a Release version of an ATL project, you can get the following
+link error:
+
+   LIBCMT.LIB(crt0.obj) : error LNK2001: unresolved external symbol _main
+
+This error occurs if you are using CRT functions that require CRT startup code.
+The Release configuration defines _ATL_MIN_CRT, which excludes CRT startup code
+from your EXE or DLL.
+
+To avoid this error, do one of the following:
+
+ - Remove _ATL_MIN_CRT from the list of preprocessor defines to allow CRT
+   startup code to be included. On the Project menu, click Settings. In the
+   Settings For: drop down list, choose Multiple Configurations. In the Select
+   project configuration(s) to modify dialog box that appears, click the check
+   boxes for all Release versions, and then click OK. On the C/C++ tab, choose
+   the General category. Remove _ATL_MIN_CRT from the Preprocessor definitions
+   edit box.
+
+ - If possible, remove calls to CRT functions that require CRT startup code.
+   Instead, use their Win32 equivalents. For example, use lstrcmp instead of
+   strcmp. Known functions that require CRT startup code are some of the string
+   and floating point functions.
+
+DCOM95 Available for Distributed Applications
+---------------------------------------------
+
+The Microsoft Distributed COM (DCOM) files for Windows 95 are useful for creating
+distributed applications. Some Visual C++ 5.0 samples require DCOM. You can find
+DCOM95 in the \dcom95 directory on the disc that includes "Microsoft Visual C++"
+on the label. (Disc 1 if you purchased Visual C++; Disc 3 if you purchased
+Visual Studio.) Check out the Visual C++ 5.0 Compiler COM support and Active
+Template Library ( ATL) with DCOM95.
+
+/WS:AGGRESSIVE (Aggressively Trim Process Memory)
+-------------------------------------------------
+
+Use this linker option to add the WS_AGGRESSIVE attribute to your application's
+image. The Windows NT 4.0 loader will recognize this attribute and aggressively
+trim the working set of the process when it is not active. Using this option is
+similar to adding the following call throughout your application:
+
+      SetProcessWorkingSetSize(hThisProcess, -1, -1)
+
+/WS:AGGRESSIVE can be used for applications that must have a low impact on the
+system's memory pool.
+
+If the speed of your application is important, do not use /WS:AGGRESSIVE without
+testing the resulting performance implications. Ideal candidates are processes
+that tend to operate in the background, such as services and screen savers.
+
+/FD (Generate File Dependencies)
+--------------------------------
+
+The development environment's build system uses the /FD option to ensure that the
+most reliable dependency information is used when it builds your project.
+
+_MSC_EXTENSIONS Compiler Macro
+------------------------------
+
+This macro is defined unless you compile with /Za for ANSI compatibility. Its
+value, when defined, is 1.
+
+Option Precedence and the CL Environment Variable
+-------------------------------------------------
+
+Compiler options are processed "left to right", and when a conflict is detected,
+the last (right-most) option wins. The CL environment variable is processed
+before the command line, so in any conflicts between CL and the command line,
+the command line takes precedence.
+
+/Zm (Specify Memory Allocation Limit)
+-------------------------------------
+
+The compiler uses a number of discrete heaps, each of which has a finite limit.
+The total of the size limits for all heaps is about 105 MB, but when any one
+heap is exhausted, the compiler cannot continue. Memory is allocated only as
+needed; the 105 MB limit is just to keep from using too much memory. Exceeding
+any one of the discrete-heap size limits occurs only in rare circumstances
+involving very large or very complex programs. Should your program exceed one of
+these limits, use /Zm to scale the total size of all the limits. For example,
+when /Zm200 is specified, the total of all heap size limits is 210MB.
+
+Compiler Now Documents Type Library Dependencies
+------------------------------------------------
+
+The compiler provides the full path to any typelib dependency required by the
+typelib it is currently processing. The path is written, in the form of
+comments, into the typelib header (.TLH) that the compiler generates for each
+processed typelib.
+
+If a typelib includes references to types defined in other typelibs, then the
+.TLH file will include comments of the following sort:
+
+      // 
+
+      // Cross-referenced type libraries:
+
+      // 
+
+      //  #import "c:\path\typelib0.tlb"
+
+      // 
+
+The actual filename in the #import comment is the full path of the cross-
+referenced typelib, as stored in the registry. If you encounter errors that are
+due to missing type definitions, check the comments at the head of the .TLH to
+see which dependent typelibs may need to be imported first. Likely errors are
+syntax errors (e.g. C2143, C2146, C2321), C2501 (missing decl- specifiers), or
+C2433 ('inline' not permitted on data declaration) while compiling the .TLI
+file.
+
+You must determine which of the dependency comments are not otherwise provided
+for by system headers and then provide an #import directive at some point before
+the #import directive of the dependent typelib in order to resolve the errors.
+
+Keywords _emul and _emulu Not Documented
+----------------------------------------
+
+Syntax:
+
+      _int64 _emul(long, long);
+
+      unsigned _int64 _emulu(unsigned long, unsigned long);
+
+Use these keywords to efficiently multiply two 32-bit integer numbers, which
+return a 64-bit result.
+
+New Linker Error: Linker Tools Error LNK1189
+--------------------------------------------
+
+      LIBTOOMANYMEMBERS:: library limit of number objects exceeded
+
+The limit of 65535 objects or members in a library has been exceeded.
+
+Benefit of Using the Linker's /OPT:ICF Option
+---------------------------------------------
+
+The /OPT:ICF[,iterations] option removes identical COMDAT records in order to
+reduce the size of the executable produced by the linker. The iterations value
+specifies the number of times to repeat the search for identical COMDAT records.
+If /OPT:REF is specified, /OPT:ICF is on by default unless you specify
+/OPT:NOICF as well.
+
+Debugging Windows API functions with NT Symbols Loaded
+------------------------------------------------------
+
+If you have the NT symbols loaded and you want to debug Windows API functions,
+you need to enter the decorated name of the function while setting a breakpoint
+on the function. For example, if you want to set breakpoint on the MessageBeep
+function, use the decorated name _MessageBeep@4. The decorated name can be
+obtained in the map file created through linker options.
+
+If Screen Flashes During Build or the Wrong Code Page is used When Debugging a
+Console Application
+
+If you are using Windows 95, delete any of the following files from your
+computer:
+
+ - _DEFAULT.PIF
+
+ - DEFAULT.PIF
+
+ - CONAGENT.PIF
+
+These files were used by Windows 3.x, and are not needed by Windows 95. If they
+are used, while you are debugging a console application, the country settings
+associated with the PIF files will be used, and could result in the wrong code
+page being loaded. A result of their use on Windows 95 may be screen flashing
+during a Build, if you have specified console windows to be full screen.
+
+Incorrect Documentation for the Clean Menu Command
+--------------------------------------------------
+
+The Clean command is incorrectly documented in the "Remove Intermediate Files"
+topic as follows:
+
+   You can remove all files from the intermediate directories in any
+   project configuration in your project workspace.
+
+In actuality, the Clean command will not remove precompiled header (.PCH) files.
+This is by design, as the initial generation of .PCH files is time consuming. If
+the project is a server project that has been registered on the system, the
+registry entries will not be cleaned up. The final result of the of using the
+Clean command is to delete all executable (.EXE), dynamic link library (.DLL),
+and Control (.OCX) files.
+
+MIDL2020: error generating type library: save all changes failed
+----------------------------------------------------------------
+
+This error can result if the path to the .IDL file is longer than 126 characters,
+which is because oleaut32.dll does not currently support path names that are
+greater than 126 characters. The workaround is to reduce the path to the .IDL
+file so that it is less than 126 characters.
+
+Error RC2104 : undefined keyword or key name: MFT_STRING
+--------------------------------------------------------
+
+If you encounter this error, open MCL\MFC\Include\AfxRes.h and add the following
+include directive:
+
+      #include <winresrc.h>
+
+Error Command Line Warning MIDL1009 : unknown argument ignored
+--------------------------------------------------------------
+
+MIDL.exe version 3.01.75 generates this error if its arguments are passed in a
+response file and one of the arguments is an MBCS-character file name that
+contains a space.
+
+Workarounds:
+
+ - Use a batch file to invoke MIDL with its arguments.
+
+ - Delete the space from the MBCS file name.
+
+Additional Information on the C2065 Compiler Error
+--------------------------------------------------
+
+The following information belongs in the tips section of the C2065 compiler
+error:
+
+Make sure you're using proper namespace scope. For example, in order to properly
+resolve ANSI C++ Standard Library functions and operators, you must state that
+you're using the std namespace with the using directive.
+
+For example, unless the using directive is uncommented, the following sample will
+fail to compile because the cout stream is defined in the std namespace:
+
+      #include <iostream>
+
+      // using namespace std;
+
+      void main()
+
+      {
+        cout << "Hello" >> endl;
+      }
+
+Documentation for Error C2712 Incomplete
+----------------------------------------
+
+The documentation for this error should also contain the following information:
+
+The error can be avoided when using the /GX option by not having local variables
+or parameters with types that have destructors in a function that uses
+structured exception handling (SEH). Furthermore, SEH cannot be used in
+constructors or destructors if using /GX. Code that requires SEH can also be
+moved to another function in order to avoid the error.
+
+Compiler Warning C2498
+----------------------
+
+   C2498 : "%$S' 'novtable' can only be applied to class declarations"
+
+For example, using __declspec(novtable) with a function, as follows, is illegal:
+
+      void __declspec(novtable) f() {
+      }
+
+Compiler Warning (level 4) C4238
+--------------------------------
+
+   nonstandard extension used : class rvalue used as lvalue
+
+This error occurs when you are using Microsoft language extensions (/Ze) and use
+a class type as is an rvalue in a context that implicitly or explicitly takes
+its address. For example:
+
+      struct C
+      {
+        C();
+      };
+
+      C * pC = &C(); // yields C4238
+
+This usage is not permitted by the C++ Working Paper, and in some cases (such as
+the example above) can be quite dangerous. This usage is being permitted under
+/Ze for compatibility with previous versions of the compiler, which did not flag
+this error. This usage is not permitted under /Za.
+
+Compiler Warning (level 3) C4800
+--------------------------------
+
+   'type' : forcing value to bool 'true' or 'false' (performance warning)
+
+This warning is generated when some non-bool value is assigned or coerced into
+type bool. Typically, this message is caused by assigning int variables to bool
+variables where the int variable contains only values true and false, and could
+be redeclared as type bool. If you can't rewrite the expression to use type
+bool, then you can add "!=0" to the expression, which gives the expression type
+bool. Casting the expression to type bool will not disable the warning, which is
+by design.
+
+Compiler Warning (level 1) C4804
+--------------------------------
+
+   '%$L' : unsafe use of type 'bool' in operation
+
+This warning is for unary operations and is generated when you used a bool
+variable or value in an unexpected way. For example, if you use operators such
+as the negative unary operator (-) or the complement operator (~).
+
+Compiler Warning (level 1) C4805
+--------------------------------
+
+   '%$L' : unsafe mix of type 'type' and type 'type' in operation
+
+This message is similar to C4804, and it is limited to binary operations. It is
+generated for operations such as b &= i, b+=i, b/=b, b%=i, etc., where b and
+i are bool and int respectively .
+
+Compiler Warning (level 1) C4806
+--------------------------------
+
+   '%$L' : unsafe operation: no value of type 'type' promoted to type
+   'type' can equal the given constant
+
+This message warns against serious errors such as b == 3, where b has type bool.
+The promotion rules cause bool to be promoted to int. This is legal according to
+the ANSI C++ Working Paper, but it can never be true.
+
+Compiler Warning (level 1) C4807
+--------------------------------
+
+   '%$L' : unsafe mix of type 'type' and signed bitfield of type 'type'
+
+This warning is generated when comparing a one-bit signed bit field to a bool
+variable. Since a one-bit signed bit field can only contain the values -1 or 0,
+it is dangerous to compare it to bool. No warnings are generated about mixing
+bool and one-bit unsigned bitfields since they are identical to bool and can
+only hold 0 or 1.
+
+Compiler Warnings (level 1) C4808
+---------------------------------
+
+   case '%d' is not a valid value for switch condition of type 'bool'
+
+This warning occurs if a switch condition is of type bool and one of the case
+values is outside the range of bool (that is, true and false). Only true, false,
+1, 0, and default are valid case values if the switch condition is of type
+bool.
+
+Compiler Warning (level 1) C4809
+--------------------------------
+
+   switch statement has redundant 'default' label; all possible 'case'
+   labels are given
+
+This message is generated in places where you have both 'true' and 'false' cases
+in addition to a default label.
+
+======================================================================
+Keywords          :  
+Technology        : kbVCsearch kbAudDeveloper kbVC500 kbVC32bitSearch kbVC500Search
+Version           : winnt:5.0
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

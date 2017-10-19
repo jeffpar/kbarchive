@@ -1,0 +1,71 @@
+DOCUMENT:Q151497  08-NOV-2001  [homekids]
+TITLE   :MSB Ocean: Minimum System Requirements for Macintosh
+PRODUCT :Microsoft Home Kids Products
+PROD/VER:MACINTOSH:1.0
+OPER/SYS:
+KEYWORDS:kbmm kbrefkbfaq
+
+======================================================================
+1.00
+MACINTOSH
+kbusage
+
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Scholastic's Magic School Bus series: Explores the Ocean for the Macintosh, version 1.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+The following are the minimum system requirements to successfully run
+Scholastic's the Magic School Bus Explores the Ocean (MSB Ocean):
+
+ - Macintosh LC 550 or higher (68030 33Mhz).
+
+ - 8 MB of RAM.
+
+ - 8 MB of free hard disk space.
+
+ - Double-speed CD-ROM: The CD-ROM drive can transfer data from the CD-ROM at
+   300 KB per second while using less than 40% of the CPU bandwidth and has an
+   average seek time of less than 400 milliseconds.
+
+ - 13 inch Color monitor or larger.
+
+ - System 7.1 or later.
+
+ - 32-Bit Addressing should be turned on for MSB Ocean to run.
+
+ - Printer is optional.
+
+MORE INFORMATION
+================
+
+You may experience performance problems if Virtual Memory is turned on. To
+improve performance, turn Virtual Memory off.
+
+Additional query words: 1.00 frizz kbmm multimedia multi-media multi media msbocean msbsea macmsbocean mac
+
+======================================================================
+Keywords          : kbmm kbref kbfaq
+Technology        : kbHomeProdSearch kbZNotKeyword kbKidsSearch kbScholasticOceanMac kbMSBSearch
+Version           : MACINTOSH:1.0
+Issue type        : kbinfo
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

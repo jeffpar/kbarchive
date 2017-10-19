@@ -1,0 +1,69 @@
+DOCUMENT:Q189410  22-APR-2001  [iis]
+TITLE   :HOWTO: Enable or Disable Connection Pooling in IIS 4.0
+PRODUCT :Internet Information Server
+PROD/VER:WINNT:4.0
+OPER/SYS:
+KEYWORDS:kbGrpDSASP
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Internet Information Server 4.0 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+ODBC connection pooling is enabled by default for ODBC drivers installed with
+Microsoft Option Pack 4.0. In Internet Information Server (IIS) 4.0 this setting
+is handled on a driver-by-driver basis. This article describes how to enable or
+disable this setting for any given ODBC driver.
+
+MORE INFORMATION
+================
+
+ODBC connection pooling is configured through a registry setting saved with the
+ODBC driver information. This can be found in the Windows registry at the
+following location:
+
+   \HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBCINST.INI\<drivername>
+
+Where <drivername> is the name of the ODBC driver in question. Connection
+pooling is configured by setting the STRING value CPTIMEOUT to a non-zero value.
+This value is the number of seconds a connection is held in the pool before
+being discarded. Setting CPTIMEOUT to 0 disables connection pooling. If the
+CPTIMEOUT value does not exist, connection pooling will be disabled for that
+driver.
+
+REFERENCES
+==========
+
+For information on setting this value programmatically, see the following
+articles in the Microsoft Knowledge Base:
+
+   Q164221 INF: How to Enable Connection Pooling in an ODBC Application
+
+   Q166083 INF: How to Enable Connection Pooling in an OLE DB Application
+
+======================================================================
+Keywords          : kbGrpDSASP 
+Technology        : kbiisSearch kbiis400
+Version           : WINNT:4.0
+Issue type        : kbhowto
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

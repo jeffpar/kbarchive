@@ -1,0 +1,117 @@
+DOCUMENT:Q82230  04-FEB-2002  [win95x]
+TITLE   :Windows Err Msg: Invalid HIMEM.SYS
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER::3.0,3.0a
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+When you attempt to load Microsoft Windows 3.0 in standard mode or 386 enhanced
+mode, you may receive the following error message:
+
+   Invalid HIMEM.SYS;
+   Install HIMEM.SYS from your Windows Setup disks
+
+CAUSE
+=====
+
+This error message can be caused by the following problems:
+
+ - Wrong version of HIMEM.SYS
+
+ - Corrupted HIMEM.SYS
+
+ - Trying to run Windows from an MS-DOS prompt inside Windows
+
+RESOLUTIONS
+
+Each of these problems and their resolutions is described in detail below.
+
+Wrong Version of HIMEM.SYS
+--------------------------
+
+The CONFIG.SYS file contains the line "DEVICE=drive:\path\HIMEM.SYS." If the
+HIMEM.SYS being loaded is from versions of Windows prior to Windows 3.0 or
+versions of MS-DOS prior to MS-DOS 5.0, these error messages may appear.
+
+The versions of HIMEM.SYS that you can use with Windows 3.0 are listed below.
+
+ - Version 2.60 Supplied with Windows 3.0 and 3.0a File Size 11,304 bytes
+
+To restore HIMEM.SYS, use the EXPAND.EXE utility to expand the file HIMEM.SY$ to
+HIMEM.SYS in the directory that is specified in the CONFIG.SYS file.
+
++-----------------------------------------------------+
+| File       | 3.5-Inch Disk Set | 5.25-Inch Disk Set | 
++-----------------------------------------------------+
+| EXPAND.EXE | Disk 2            | Disk 2             | 
++-----------------------------------------------------+
+| HIMEM.SY$  | Disk 5            | Disk 3             | 
++-----------------------------------------------------+
+
+ - Version 2.77 Supplied with the MS-DOS 5.0 and 5.0a Upgrades File Size 11,552
+   bytes
+
+To restore HIMEM.SYS, use the EXPAND.EXE utility to expand the file HIMEM.SY_ to
+HIMEM.SYS in the directory that is specified in the CONFIG.SYS file.
+
++-----------------------------------------------------+
+| File       | 3.5-Inch Disk Set | 5.25-Inch Disk Set | 
++-----------------------------------------------------+
+| EXPAND.EXE | Disk 3            | Disk 6             | 
++-----------------------------------------------------+
+| HIMEM.SY_  | Disk 1            | Disk 2             | 
++-----------------------------------------------------+
+
+The syntax for the EXPAND utility is "EXPAND source destination". The following
+is an example:
+
+C:\>EXPAND A:HIMEM.SY_ C:\HIMEM.SYS
+
+Corrupted HIMEM.SYS
+-------------------
+
+If the HIMEM.SYS being loaded in the CONFIG.SYS file is the right version but has
+been corrupted (or is otherwise invalid and not operating properly with Windows
+3.0), the aforementioned error messages may appear. Restore the file from your
+Windows 3.0 or MS-DOS 5.0 Upgrade disks using the above instructions.
+
+Trying to Run Windows from an MS-DOS Prompt Inside Windows
+----------------------------------------------------------
+
+If you attempt to run Windows after switching to MS-DOS from within Windows by
+choosing the MS-DOS Prompt icon, the aforementioned error messages may occur.
+Type "exit" (without the quotation marks) at the MS-DOS prompt to return to
+Windows.
+
+Additional query words: 3.0 3.00 3.0a 3.00a \* NOUPD
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a
+Version           : :3.0,3.0a
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2002.

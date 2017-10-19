@@ -1,0 +1,71 @@
+DOCUMENT:Q122225  24-JUL-2001  [sms]
+TITLE   :Sub-directory and File Permissions Not Set on Macintosh Volume
+PRODUCT :Microsoft Systems Management Server
+PROD/VER:winnt:1.0,1.1
+OPER/SYS:
+KEYWORDS:kbsmsAdmin smsadmin
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Systems Management Server versions 1.0, 1.1 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When Microsoft Systems Management Server creates a Macintosh volume (SMS_SHR for
+example), it does not create file-level permissions for any sub-directories.
+This results in Macintosh systems having write privileges for the
+LOGON.SRV\MAC.BIN and other sub-directories.
+
+CAUSE
+=====
+
+The SMS_MAINTENANCE_MANAGER service does not set the Macintosh file permissions
+on the ..\LOGON.SRV directory on servers where Windows NT Services for Macintosh
+have been installed. Macintosh directory permissions (which are similar but not
+the same as Windows NT file and directory permissions) default to write access
+on ..\LOGON.SRV and its sub- directories. This creates a security leak, since
+some user could replace executable files in the ".BIN" directories.
+
+WORKAROUND
+==========
+
+Once the Macintosh volume is created by the SMS_SITE_CONFIG_MANAGER service, the
+SMS_MAINTENANCE_MANANGER service ignores permissions if it updates these
+directories during the normal maintenance cycle. This allows the Systems
+Management Server administrator to configure the sub-directory and file
+permissions manually to deny Macintosh users write privileges.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in Systems Management Server
+versions 1.0 and 1.1. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: sms sfm prodsms 1.00 1.10
+
+======================================================================
+Keywords          : kbsmsAdmin smsadmin 
+Technology        : kbSMSSearch kbSMS100 kbSMS110
+Version           : winnt:1.0,1.1
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

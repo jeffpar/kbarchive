@@ -1,0 +1,84 @@
+DOCUMENT:Q109486  25-SEP-2001  [odbc]
+TITLE   :BUG: Oracle Driver Fails to Find Delimited Identifiers
+PRODUCT :Open Database Connectivity (ODBC)
+PROD/VER:WINDOWS:1.0
+OPER/SYS:
+KEYWORDS:kbBug kbISS
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Open Database Connectivity, version 1.0 
+-------------------------------------------------------------------------------
+
+BUG# ODBCORA: 580 (1.00.3112)
+
+SYMPTOMS
+========
+
+When delimited tablenames are passed to the Oracle driver in an escape clause,
+the delimiters are removed by the driver. Oracle needs the delimiters to find
+the table in cases where the table was originally created with the delimiters as
+part of the tablename. The following error will result when the non-delimited
+tablenames are passed down:
+
+   [PageAhead][ODBC Oracle Driver][Oracle OCI]ORA-00942: table or view does not
+   exist.
+
+The following query:
+
+      select  "Categories"."Category_Name", "Products"."Product_Name" from
+        { oj "Categories" left outer join "Products" on
+      "Categories"."Category_ID" = "Products"."Category_ID" }
+
+produces the ORA-00942 error. But when the query is formed without using an
+escape clause, it works:
+
+      select  "Categories"."Category_Name" , "Products"."Product_Name" from
+      "Categories" ,"Products" where "Categories"."Category_ID" (+)=
+      "Products"."Category_ID"
+
+This behavior impacts Access users in that Oracle tables created using the Export
+function of Access cannot be queried on later when the query involved the Access
+database engine generating Access SQL queries that involve outer joins.
+
+WORKAROUND
+==========
+
+Not using ODBC escape clauses when using delimited identifiers will avoid the
+problem. Also, you can use native Oracle SQL syntax as demonstrated above.
+
+Users of Microsoft Access experiencing this problem will need to use the SQL
+Passthrough DLL.
+
+STATUS
+======
+
+Microsoft has confirmed this to be a problem in the ODBC Oracle Driver versions
+1.00.3112 and 1.00.2816. We are researching this problem and will post new
+information here in the Microsoft Knowledge Base as it becomes available.
+
+Additional query words: 1.00.2816 1.00.3112 VB DRIVERS 1.0 FULFILLMENT
+
+======================================================================
+Keywords          : kbBug kbISS 
+Technology        : kbAudDeveloper kbODBCSearch kbODBC100
+Version           : WINDOWS:1.0
+Issue type        : kbbug
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

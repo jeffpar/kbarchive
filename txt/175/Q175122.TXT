@@ -1,0 +1,57 @@
+DOCUMENT:Q175122  22-JUN-2001  [exchange]
+TITLE   :XWEB: Error Msg: Failed to Get Inbox in Outlook Web Access
+PRODUCT :Microsoft Exchange
+PROD/VER:WinNT:5.5
+OPER/SYS:
+KEYWORDS:kbusage
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Outlook Web Access, version 5.5 
+ - Microsoft Exchange Server, version 5.5 
+-------------------------------------------------------------------------------
+
+
+SYMPTOMS
+========
+
+When you log on to Outlook Web Access (OWA), a Failed to Get Inbox error message
+may appear, even though the mailbox information you entered was correct.
+
+CAUSE
+=====
+
+The error may occur if you bypass the authenticated domain logon by pressing the
+Escape key. Additionally, the error may occur if you have logged on to Outlook
+Web Access, logged off, and then logged on as a different user. This is because
+the browser caches the original logon credentials.
+
+WORKAROUND
+==========
+
+Restart the client browser or clear the browser cache.
+
+Additional query words: exfaqclnt
+======================================================================
+Keywords          : kbusage 
+Technology        : kbOutlookSearch kbOWASearch kbOWA550
+Version           : WinNT:5.5
+Solution Type     : kbpending
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

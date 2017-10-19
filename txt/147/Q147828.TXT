@@ -1,0 +1,61 @@
+DOCUMENT:Q147828  09-AUG-2001  [winnt]
+TITLE   :Dell OptiPlex XMT BIOS Upgrade Changes Video Refresh Modes
+PRODUCT :Microsoft Windows NT
+PROD/VER:3.50 3.51
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows NT Workstation versions 3.5, 3.51 
+ - Microsoft Windows NT Server versions 3.5, 3.51 
+-------------------------------------------------------------------------------
+
+SYMPTOMS
+========
+
+Dell OptiPlex XMT 5xx systems with BIOS rev. A09 and earlier support 1024x768
+w/65535 colors at 75 Hz and lower. Dell OptiPlex XMT 5xx BIOS revisions A10 and
+later only support 1024x768 w/65535 at 70 Hz and lower.
+
+WORKAROUND
+==========
+
+If a customer requires a BIOS rev. of A10 or later, using a refresh rate of 70
+Hz or lower with this screen resolution/color combination is currently the only
+option. Otherwise, remaining at BIOS rev. A09 and earlier will allow the use of
+the 75 Hz or lower refresh rate.
+
+Customers should contact Dell technical support at (800)624-9896 for any further
+BIOS updates regarding this problem.
+
+MORE INFORMATION
+================
+
+Dell OptiPlex XMT BIOS upgrades can be obtained on the Internet at
+http://www.us.dell.com/filelib/262_3.htm or at their BBS (512)728-8528.
+
+Additional query words: dell
+
+======================================================================
+Keywords          :  
+Technology        : kbWinNTsearch kbWinNTWsearch kbWinNT351search kbWinNT350search kbWinNTW350 kbWinNTW350search kbWinNTW351search kbWinNTW351 kbWinNTSsearch kbWinNTS351 kbWinNTS350 kbWinNTS351search kbWinNTS350search
+Version           : 3.50 3.51
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 2001.

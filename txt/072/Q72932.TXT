@@ -1,0 +1,68 @@
+DOCUMENT:Q72932  15-OCT-1999  [win95x]
+TITLE   :No "Output Filename" Prompt Printing to a File with PostScript
+PRODUCT :Microsoft Windows 95.x Retail Product
+PROD/VER:WINDOWS:3.0,3.0a,3.1,3.11
+OPER/SYS:
+KEYWORDS:
+
+======================================================================
+-------------------------------------------------------------------------------
+The information in this article applies to:
+
+ - Microsoft Windows versions 3.0, 3.0a, 3.1, 3.11 
+-------------------------------------------------------------------------------
+
+SUMMARY
+=======
+
+When you print to a file using the PostScript driver with Windows, the File
+Print command may not produce an Output Filename box.
+
+MORE INFORMATION
+================
+
+The absence of an Output Filename box results when a filename has already been
+supplied in the Options section of the printer setup process (see below).
+
+To verify the existence of a filename, do the following:
+
+1. From Control Panel, select Printers. The installed printers box will list:
+
+   Postscript Printer on File: Active
+
+2. If you are using Windows version 3.0, choose Configure. If you are using
+   Windows 3.1, skip this step.
+
+3. Choose Setup.
+
+4. Choose Options. In the Print To section, Encapsulated Postscript File is
+   selected and a filename is in the File box. Removing the assigned filename
+   will restore the Output Filename box. Also, make sure there are no spaces in
+   this file box. Spaces will produce a
+
+   Cannot Print
+
+   message.
+
+Additional query words: 3.0 3.00 3.0a 3.00a 3.1 3.10 3.11
+
+======================================================================
+Keywords          :  
+Technology        : kbWin3xSearch kbZNotKeyword3 kbWin300 kbWin300a kbWin310 kbWin311
+Version           : WINDOWS:3.0,3.0a,3.1,3.11
+
+=============================================================================
+
+THE INFORMATION PROVIDED IN THE MICROSOFT KNOWLEDGE BASE IS
+PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.  MICROSOFT DISCLAIMS
+ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  IN NO
+EVENT SHALL MICROSOFT CORPORATION OR ITS SUPPLIERS BE LIABLE FOR
+ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF
+MICROSOFT CORPORATION OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE EXCLUSION
+OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+SO THE FOREGOING LIMITATION MAY NOT APPLY.
+
+Copyright Microsoft Corporation 1999.
